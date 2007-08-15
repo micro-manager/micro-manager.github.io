@@ -1,0 +1,6 @@
+== AOTF adapter ==
+
+'''Summary:''' Controls NEOS AOTF through PCs parallel port 
+'''Author:''' Nenad Amodaj 
+'''License:'''BSD License 
+'''Platforms:''' Windows only
