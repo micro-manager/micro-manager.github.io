@@ -1,0 +1,9 @@
+== ASI FW1000 adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Controls ASI Filter wheels and shutters</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+</table>
