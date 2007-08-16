@@ -11,10 +11,21 @@ Here, we will maintain as much information as possible about Micro-Manager devic
    [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[DemoCamera]] - Virtual, emulated equipment for testing
    [[DemoStreamCamera]] - Virtual, emulated fast camera
-   [[Hamamatsu]] - Hamamatsu cameras (through PVCAM library)
-   
-
-
-
-
+   [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
+   [[Ludl]] - Ludl stages, shutters and filter wheels 
+   [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
+   [[NikonTE2000]] - Nikon TE2000 motorized microscope
+   [[PVCAM]] - Roper/Photometrics cameras
+   [[ParallelPort]] - TTLs on parallel port (Windows only)
+   [[Prior]] - Prior stages, shutters, and filter wheels
+   [[QCam]] - QImaging cameras
+   [[Sensicam]] - PCO/Cooke Sensicam camera
+   [[SerialManager]] - Serial Ports on Windows
+   [[SerialManagerUnix]] - Serial Ports on Mac and Linux
+   [[SutterLambda]] - Sutter hardware
+   [[Vincent]] - Vincent Uniblitz controllers
+   [[Yokogawa]] - Yokogawa CSU22
+   [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes
+   [[ZeissMTB]] - Zeiss MTB (not MTB2004) compatible microscopes
+   [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and LInux only)
 --[[User:Nico|Nico]] 09:04, 15 August 2007 (PDT)
