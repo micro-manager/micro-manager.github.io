@@ -8,6 +8,7 @@ Here, we will maintain as much information as possible about Micro-Manager devic
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
    [[Andor]] - Andor EM cameras
    [[Conix]] - Conix Filter Changer
+   [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
    [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[DemoCamera]] - Virtual, emulated equipment for testing
    [[DemoStreamCamera]] - Virtual, emulated fast camera
@@ -27,5 +28,5 @@ Here, we will maintain as much information as possible about Micro-Manager devic
    [[Yokogawa]] - Yokogawa CSU22
    [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes
    [[ZeissMTB]] - Zeiss MTB (not MTB2004) compatible microscopes
-   [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and LInux only)
+
 --[[User:Nico|Nico]] 09:04, 15 August 2007 (PDT)
