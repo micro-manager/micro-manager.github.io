@@ -1,0 +1,10 @@
+== Andor ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contribution by Jizhen Zhao and Daigang</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows only (Andor only has a driver on the Windows platform)</td></tr>
+<tr><td>'''Devices:'''</td><td>Ixon (camera), and Ixon shutter</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
