@@ -6,5 +6,5 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only (Andor only has a driver on the Windows platform)</td></tr>
 <tr><td>'''Devices:'''</td><td>Ixon (camera), and Ixon shutter</td></tr>
-<tr><td>'''Example Config File:'''</td><td></td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_andor.cfg]]</td></tr>
 </table>
