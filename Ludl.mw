@@ -17,3 +17,5 @@ All communications to devices take place through the Controller device (i.e., th
 There can be up to 5 'devices' (i.e., controller cards) per controller, and each controller card can have 3 shutters and 2 filter wheels.  You will therefore need to specify for each Wheel and Shutter a device number (1-5 and WheelNumber (1-2) or ShutterNumber (1-3).
 
 The XYStage will let you set some parameters concerning the speed of the stage (Speed, StartSpeed, Acceleration).  See the [http://www.ludl.com/DocLib.aspx manual] for definition of these terms.
+
+--[[User:Nico|Nico]] 13:43, 25 August 2007 (PDT)
