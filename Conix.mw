@@ -1,0 +1,14 @@
+== Conix filter changer ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Adapter for Conix Quad Filter Changer.  Never finished.</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Not working.  Should work on all platforms (serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>Quad filter changer</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+</table>
+
+This adapter for the Conix Quad filter changer ([http://www.conixresearch.com/products/filter/quadfilt.html]) was never finished due to lack of interest.  If anyone is interested, let me know, it should be straight forward to make this work.
+
+--[[User:Nico|Nico]] 10:18, 25 August 2007 (PDT)
