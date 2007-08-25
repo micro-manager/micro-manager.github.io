@@ -1,0 +1,17 @@
+== Nikon miscellaneous devices ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with various devices from Nikon</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj (Z-drive), Nico Stuurman (TIRF shutter and IntensiLight)</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>Z-drive, TIRF-Shutters, Intensilight shutter</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+
+Each of these Nikon devices is a completely independent devices, so each of these devices will need to be controlled through their own serial port. 
+
+The Z-drive is an add-on 'cup' fitting on the Nikon manual focus drive. The TIRF shutter is the T-LUSU.
+
+--[[User:Nico|Nico]] 14:33, 25 August 2007 (PDT)
