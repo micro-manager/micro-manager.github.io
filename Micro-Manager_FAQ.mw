@@ -4,6 +4,6 @@
 
 
 === Something does not work.  What do I do? ===
-Send an email describing your problem to the Micro-Manager mailing list ([micro-manager-general@lists.sourceforge.net]).  Describe your system in as much detail as possible (OS, attached hardware), and describe the steps that lead to the problem you encounter as well as the error message you see. Include the configuration file that you are using (the *.cfg file you select on startup).  
+Send an email describing your problem to the Micro-Manager mailing list ([https://lists.sourceforge.net/lists/listinfo/micro-manager-general]).  Describe your system in as much detail as possible (OS, attached hardware), and describe the steps that lead to the problem you encounter as well as the error message you see. Include the configuration file that you are using (the *.cfg file you select on startup).  
 
 If the problem is not resolvable by email, you will need to send more debug information. To do so, go to the 'Tools' menu in Micro-Manager and select 'Options...'. Click the 'Clear log file' button and make sure that the 'Debug log enabled' checkbox is checked.  Now repeat the steps that cause the error and then email the file 'CoreLog.txt' (in your Micro-Manager directory) to info@micro-manager.org together with your config file and a description of the problem. We will likely need your help to test some code modifications to deal with your problem.
