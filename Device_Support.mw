@@ -1,6 +1,6 @@
 == Device Adapters in Micro-Manager ==
 
-Here, we will maintain as much information as possible about Micro-Manager device adapters.  This will help you to configure and understand your Micro-Manager system.  We hope that the authors of the device adapters will maintain this information, but please feel free to update the information here with your own experiences.  The information here will be applicable to the most recent Micro-Manager release (currently version 1.1).
+How well Micro-Manager works depends on how well the device adapters work.  All device adapters have their own peculiarities and specific issues (in large part cause by the peculiarities of the devices being controlled by the adapters).  On these pages we try to maintain as much information as possible about Micro-Manager device adapters.  This will help you to configure and understand your Micro-Manager system.  We hope that the authors of the device adapters will maintain this information, but please feel free to update the information here with your own experiences.  The information here will be applicable to the most recent Micro-Manager release (currently version 1.1).
 
 '''Device Adapters:'''
    [[AOTF]] - AOTF control through parallel port
