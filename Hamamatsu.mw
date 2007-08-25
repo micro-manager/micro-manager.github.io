@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X</td></tr>
 <tr><td>'''Devices:'''</td><td>Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Hamamatsu.cfg]]</td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
 </table>
 
 This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu cameras.  You will need to download and install a recent version of the [http://sales.hamamatsu.com/index.php?id=13188404 DCAM driver].
