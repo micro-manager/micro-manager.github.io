@@ -1,5 +1,7 @@
 '''Micro-Manager, Frequently Asked Questions'''
 
+Something does not work.  What do I do?
+
 
 === Something does not work.  What do I do? ===
 Send an email describing your problem to the Micro-Manager mailing list ([micro-manager-general@lists.sourceforge.net]).  Describe your system in as much detail as possible (OS, attached hardware), and describe the steps that lead to the problem you encounter as well as the error message you see. Include the configuration file that you are using (the *.cfg file you select on startup).  
