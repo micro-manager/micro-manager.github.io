@@ -9,6 +9,6 @@
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>
 
-Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and their reflection based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) need to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
+Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and the reflection-based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) needs to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
 
 The logic of the CRIF is a bit funky. The CRIF [http://www.asiimaging.com/criff.html] cycles through a number of states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle button on the controller for 6 seconds (see the CRIF manual [http://www.asiimaging.com/pdfs/CRIFF_Manual.pdf]).  Some of these state changes are implemented in the CRIF adapter.  In general, it is best to first calibrate the CRIF by hand and then let the software lock and unlock the CRIF.
