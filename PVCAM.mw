@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Interfaces with Roper and Photometrics cameras that work with the PVCAM driver</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested)</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_pvcam_simple.cfg]]</td></tr>
 </table>
