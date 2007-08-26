@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Linux, Mac OS X (anywhere libdc1394 [http://damien.douxchamps.net/ieee1394/libdc1394/] functions)</td></tr>
 <tr><td>'''Devices:'''</td><td>Firewire cameras that adhere to the IIDC specs[http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php]</td></tr>
-<tr><td width=15% valign='top'>'''Example Config File:'''</td><td>Simple config: [[Media:MMConfig_Firewire.cfg]], config for Sony XCD (includes integrations presets): [[Media:MMConfig_Firewire_Sony.cfg]]</td></tr>
+<tr><td width=20% valign='top'>'''Example Config File:'''</td><td>Simple config: [[Media:MMConfig_Firewire.cfg]], config for Sony XCD (includes integrations presets): [[Media:MMConfig_Firewire_Sony.cfg]]</td></tr>
 </table>
 
 This adapter is an interface to the libdc1394 library [http://damien.douxchamps.net/ieee1394/libdc1394/] (included), which interfaces to firewire cameras that adhere to the IIDC specifications [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php].  Damien Douxchamps maintains a list [http://damien.douxchamps.net/ieee1394/cameras/index.php] of compatible cameras.
