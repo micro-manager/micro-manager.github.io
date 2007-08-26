@@ -4,14 +4,14 @@
 '''Summary:'''</td><td>Interfaces to firewire cameras that adhere to the IIDC1394 specifications</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman, with contributions from Gregory Jefferis</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Linux, Mac OS X (anywhere libdc1394 [http://damien.douxchamps.net/ieee1394/libdc1394/] functions)</td></tr>
-<tr><td>'''Devices:'''</td><td>Firewire cameras that adhere to the IIDC specs[http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php]</td></tr>
+<tr><td>'''Platforms:'''</td><td>Linux, Mac OS X (anywhere  [http://damien.douxchamps.net/ieee1394/libdc1394/ libdc1394] functions)</td></tr>
+<tr><td>'''Devices:'''</td><td>Firewire cameras that adhere to the [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php IIDC specs]</td></tr>
 <tr><td width=20% valign='top'>'''Example Config File:'''</td><td>Simple config: [[Media:MMConfig_Firewire.cfg]], config for Sony XCD (includes integrations presets): [[Media:MMConfig_Firewire_Sony.cfg]]</td></tr>
 </table>
 
 This adapter is an interface to the libdc1394 library [http://damien.douxchamps.net/ieee1394/libdc1394/] (included), which controls firewire cameras that adhere to the IIDC specifications [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php].  Damien Douxchamps maintains a list [http://damien.douxchamps.net/ieee1394/cameras/index.php] of compatible cameras.
 
-The adapter was developed using an Apple iSight camera and a Sony XCD-700, so these will likely work decently whereas your mileage might varywith other cameras.  Gregory Jefferis put some work in to make this work with Format 7 cameras (the most powerful video mode format supported by the standard), but I am not exactly sure where that stands.
+The adapter was developed using an Apple iSight camera and a Sony XCD-700, so these will likely work decently whereas your mileage might vary with other cameras.  Gregory Jefferis put some work in to make this work with Format 7 cameras (the most powerful video mode format supported by the standard), but I am not exactly sure where that stands.
 
 Many of the IIDC-compatible cameras do not allow you to set an exposure time expressed in msec.  Therefore, the 'shutter' function is being used, the number of which relates in a camera specific way to exposure time. A more elegant solution would be great! 
 
