@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X</td></tr>
 <tr><td>'''Devices:'''</td><td>All (?) QImaging cameras</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_QImaging.cfg]]</td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_QCam.cfg]]</td></tr>
 </table>
 
 This adapter was contributed by Matt Austin from QImaging.  It should work with all QImaging cameras.  We tested it with a Retiga ??? on both Windows and Mac.  
