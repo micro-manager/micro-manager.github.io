@@ -8,7 +8,7 @@
 This annoyance is fixed in version 1.1.  [http://micro-manager.org/downloads.php Download] version 1.1 or higher and install. 
 
 === Does Micro-Manager work with ... camera/microscope/etc? ===
-Check the list of supported hardware at the [http://micro-manager.org/support Micro-Manager website] and in this [[DeviceAdapters wiki]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
+Check the list of supported hardware at the [http://micro-manager.org/support Micro-Manager website] and in this [[Device_Support wiki]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
 
 === Something does not work.  What do I do? ===
 Send an email describing your problem to the Micro-Manager mailing list ([https://lists.sourceforge.net/lists/listinfo/micro-manager-general]).  Describe your system in as much detail as possible (OS, attached hardware), and describe the steps that lead to the problem you encounter as well as the error message you see. Include the configuration file that you are using (the *.cfg file you select on startup).  
