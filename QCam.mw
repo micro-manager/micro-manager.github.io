@@ -11,7 +11,7 @@
 
 This adapter was contributed by Matt Austin from QImaging.  It should work with all QImaging cameras.  We tested it with a Retiga 4000R on both Windows and Mac and a Retiga EXi on a Mac.  
 
-To use this adapter, you must have version 2.0.4 or higher of the [[http://www.qimaging.com/support/downloads/index.php QCam driver]] installed. Use the example config file (or use the hardware config wizard to make one yourself) to get the camera to work.  Note that QImaging cameras have a default value of 0 for the gray-scale value offset.  This will result in many pixels with a value of zero (due to clipping of negative values).  It is best to set this value to something like 100.  Also, the camera will start up in 8-bit, if your camera is capable, you will want to set this to 12-bit.  You can do so by making a Configuration Preset Group called 'System' and making a Configuration Preset called 'Startup' in which you set these camera parameters.
+To use this adapter, you must have version 2.0.4 or higher of the [[http://www.qimaging.com/support/downloads/index.php QCam driver]] installed. Use the example config file (or use the hardware config wizard to make one yourself) to get the camera to work.  Note that QImaging cameras have a default value of 0 for the gray-scale value offset.  This will result in many pixels with a value of zero (indicating clipping of negative values).  It is best to set this value to something like 100.  Also, the camera will start up in 8-bit, if your camera is capable, you will want to set this to 12-bit.  You can do so by making a Configuration Preset Group called 'System' and making a Configuration Preset called 'Startup' in which you set these camera parameters.
  
 
 --[[User:Nico|Nico]] 21:29, 1 September 2007 (PDT)
