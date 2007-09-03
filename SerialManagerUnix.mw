@@ -1,0 +1,13 @@
+<table><tr><td>
+'''Summary:'''</td><td>Interface to Serial ports on Unix</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman.  Uses code from [http://libserial.sourceforge.net/mediawiki/index.php/Main_Pagel libserial]</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Mac/Linux</td></tr>
+<tr><td>'''Devices:'''</td><td>Unix Serial Ports</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+
+Micro-Manager adapter to serial ports on Mac and Linux. Works with 'real' serial ports, and USB-serial converters.  Lists available serial ports on Mac.
+
+--[[User:Nico|Nico]] 16:21, 3 September 2007 (PDT)
