@@ -1,8 +1,8 @@
 '''Micro-Manager, Frequently Asked Questions'''
 
 
-=== When I Press Acquire I need to define a Channel?? ===
-This annoyance is fixed in version 1.1.  [http://micro-manager.org/downloads.php Download] version 1.1 or higher and install. 
+=== When I Press Acquire I need to define a Channel??? ===
+This annoyance is fixed in version 1.1.  [http://micro-manager.org/downloads.php Download] version 1.1 or higher and install.
 
 === Does Micro-Manager work with ... camera/microscope/etc? ===
 Check the list of supported hardware at the [http://micro-manager.org/support Micro-Manager website] and in this [[Device Support|wiki]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
