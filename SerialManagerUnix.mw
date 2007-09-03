@@ -1,6 +1,6 @@
 <table><tr><td>
 '''Summary:'''</td><td>Interface to Serial ports on Unix</td></tr>
-<tr><td>'''Author:'''</td><td>Nico Stuurman.  Uses code from [http://libserial.sourceforge.net/mediawiki/index.php/Main_Pagel libserial]</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman.  Uses code from [http://libserial.sourceforge.net/mediawiki/index.php/Main_Page libserial]</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Mac/Linux</td></tr>
 <tr><td>'''Devices:'''</td><td>Unix Serial Ports</td></tr>
