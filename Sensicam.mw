@@ -1,12 +1,12 @@
-== PCO/Cooke Sensicam camear ==
+== PCO/Cooke Sensicam camera ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls PCO/Cooke Sensicam camera</td></tr>
+'''Summary:'''</td><td>Controls [[http://pco.orange8.ch/ PCO/Cooke Sensicam camera]]</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj (with bugfixes by Liisa Hervonen)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>PCO/Cooke Sensicam</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Sensicam.cfg]]</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
 This adapter was developed for the original Sensicam camera (but might work with the QE as well).  You will need to have the [[http://pco.orange8.ch/cooke/php/support/drivers_1-en__01040201.html Sensicam driver]] for your platform to be installed.  
