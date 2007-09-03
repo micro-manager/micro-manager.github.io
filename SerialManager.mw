@@ -1,0 +1,13 @@
+<table><tr><td>
+'''Summary:'''</td><td>Interface to Serial ports on Windows</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj.  Uses code by Ramon de Klein (Ramon.de.Klein@ict.nl)</td></tr>
+<tr><td>'''License:'''</td><td>BSD and LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Devices:'''</td><td>Windows Serial Port</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+
+Micro-Manager adapter to serial ports on Windows. Works with 'real' serial ports, and USB-serial converters.  There are two limitations that we are aware of: You can not use more than 9 serial ports, and on older computers the serial port adapter causes problems with the Hardware config wizard.
+
+--[[User:Nico|Nico]] 16:18, 3 September 2007 (PDT)
