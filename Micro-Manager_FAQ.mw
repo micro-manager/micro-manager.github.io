@@ -1,9 +1,5 @@
 '''Micro-Manager, Frequently Asked Questions'''
 
-[[Micro-Manager FAQ#When I Press Acquire I need to define a Channel??|When I Press Acquire I need to define a Channel??]]<br>
-[[Micro-Manager FAQ#Does Micro-Manager work with ... camera/microscope/etc?|Does Micro-Manager work with ... camera/microscope/etc?]]<br>
-[[Micro-Manager FAQ#I have some hardware that is not supported by Micro-Manager.  How do I make it work?|I have some hardware that is not supported by Micro-Manager.  How do I make it work?]]<br>
-[[Micro-Manager FAQ#Something does not work.  What do I do?|Something does not work.  What do I do?]]
 
 === When I Press Acquire I need to define a Channel?? ===
 This annoyance is fixed in version 1.1.  [http://micro-manager.org/downloads.php Download] version 1.1 or higher and install. 
