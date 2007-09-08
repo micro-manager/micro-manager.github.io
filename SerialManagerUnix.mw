@@ -8,6 +8,6 @@
 </table>
 
 
-Micro-Manager adapter to serial ports on Mac and Linux. Works with 'real' serial ports, and USB-serial converters.  Lists available serial ports on Mac.
+Micro-Manager adapter to serial ports on Mac and Linux. Works with 'real' serial ports, and USB-serial converters.  Lists available serial ports on Mac.  The behavior of this adapter is exactly the same as the one on Windows since Micro-Manager version 1.1.36.  However, this adapter also exposes the property: ''DelayBetweenCharsMs''.  This specifies the time (in ms) that the computer waits in between sending a character to the serial device.  Set this low (0) for newer fast devices.  You might need to increase the value for older devices that cannot buffer serial input adequately.
 
 --[[User:Nico|Nico]] 16:21, 3 September 2007 (PDT)
