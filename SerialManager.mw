@@ -8,6 +8,6 @@
 </table>
 
 
-Micro-Manager adapter to serial ports on Windows. Works with 'real' serial ports, and USB-serial converters.  There are two limitations that we are aware of: You can not use more than 9 serial ports, and on older computers the serial port adapter causes problems with the Hardware config wizard.
+Micro-Manager adapter to serial ports on Windows. Works with 'real' serial ports, and USB-serial converters.  There are two limitations that we are aware of: You can not use more than 9 serial ports, and on older computers the serial port adapter causes problems with the Hardware config wizard (when starting the Hardware Config wizard, the serial ports are not release properly and cannot be reused until you restart the computer.  Only known workaround is to write the config file by hand).
 
 --[[User:Nico|Nico]] 16:18, 3 September 2007 (PDT)
