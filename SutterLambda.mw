@@ -9,6 +9,6 @@
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-This adapter controls the Sutter DG4 and other hardware through the lambda 10 family of controllers.  Currently, only the serial interface to these devices (not parallel port) has been implemented.
+This adapter controls the [http://www.sutter.com/ Sutter] [http://www.sutter.com/products/product_sheets/Lambda_DG-4.html DG4] and [http://www.sutter.com/products/imaging.html other hardware] through the lambda 10 family of controllers.  Currently, only the serial interface to these devices (not parallel port) has been implemented.
 
 --[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
