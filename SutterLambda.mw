@@ -1,0 +1,14 @@
+== Sutter hardware adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces to Sutter lambda 10 controllers and DG4</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>Wheel A, Wheel B, Wheel C (10-3 only), Shutter A, Shutter B, DG4 Shutter, DG4 filter changer</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+This adapter controls the Sutter DG4 and other hardware through the lambda 10 family of controllers.  Currently, only the serial interface to these devices (not parallel port) has been implemented.
+
+--[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
