@@ -1,45 +1,14 @@
-{| style="text-align: left"
-!Summary:
-|Interfaces to Sutter Lambda 10 controllers, Lambda SC controller, and DG4
-|- valign="top"
-!Authors:
-| Nenad Amodaj
-|- valign="top"
-!Maintainers:
-|Arthur Edelstein
-|-
-!License:
-|BSD
-|-
-!Platforms:
-|Windows, Mac OS X and Linux (only serial port, no parallel port or USB)
-|- valign="top"
-!Devices:
-|[http://sutter.com/IMAGING/lambdasc.html Lambda SC]<br/>[http://sutter.com/IMAGING/lambda10b.html Lambda 10-B]<br/>[http://sutter.com/IMAGING/lambda102.html Lambda 10-2]<br/>[http://sutter.com/IMAGING/lambda103.html Lambda 10-3]<br/>[http://sutter.com/IMAGING/lambdadg4.html Lambda DG-4]
-|}
-----
+== Sutter hardware adapter ==
 
-== Device Configuration ==
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces to Sutter lambda 10 controllers and DG4</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>Wheel A, Wheel B, Wheel C (10-3 only), Shutter A, Shutter B, DG4 Shutter, DG4 filter changer</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
 
-=== Serial port issues ===
-Sutter devices use a straight through (i.e., not null modem) DB9 serial cable.  The default baud rates are 9600 for serial ports and 128000 for USB ports (which use a build-in USB-serial converter, drivers can be found [http://www.sutter.com/SOFTWARE/imaging.html here])
+This adapter controls the Sutter DG4 and other hardware through the lambda 10 family of controllers.  Currently, only the serial interface to these devices (not parallel port) has been implemented.
 
-=== Wheel speed ===
-95% of the time speed <code>#1</code> works best (<code>#0</code> being the fastest, which only works with an empty wheel). If speed <code>#1</code> does not work you can try the slowest (speed <code>#7</code> IIRC).  Best practice is to [[Micro-Manager_Configuration_Guide#Startup_Presets|set the desired wheel speed during startup]], i.e. in your <code>Startup</code> Preset of the <code>System</code> Group.
-
-=== Lambda SC ===
-For the Lambda SC Smart shutter controller, select the "Shutter-A|Lambda 10 shutter A" in the Hardware Configuration Wizard.
-
-== Troubleshooting ==
-
-=== Wheel re-homing during imaging ===
-
-You need to optimize the filter speed setting if you ever encounter the dreaded re-homing sound due to the wheel failing to move to a filter position during Multi-Dimensional Acquisition. The wheel itself has a resonance frequency associated with the load of filters. Practically one finds the ideal speed by empirically checking which speed introduces the least vibration.
-
-See the Operation Manual (available at http://www.sutter.com/) section "Helpful Tips about Filter Wheel Movement Errors".
-
-
-=== Note ===
-Newer devices from Sutter are supported in the [[SutterLambda2]] adapter. If you would like to add support for a Sutter device that is currently unsupported please add your code to the newer adapter.
-
-{{Devices_Sidebar}}
+--[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
