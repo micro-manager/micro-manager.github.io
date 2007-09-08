@@ -1,0 +1,15 @@
+== Vincent shutter controller adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces to Vincent shutter controllers</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>Vincent controllers VMM-D1/T1, D122, D3/D4</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+
+This adapter controls the [http://www.uniblitz.com Vincent] shutter controllers [http://www.uniblitz.com/products/driveunits.asp D1, T1, D3, D4] and D122 (not available anymore).  
+
+--[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
