@@ -2,31 +2,37 @@
 
 Most difficulties in working with Micro-Manager arise from configuring the system and from problems/issues with specific devices.  In both of these cases you are interacting mainly with device adapters.  These device adapters have been written by several different authors, all behave slightly differently, and interact with specific hardware that has its own peculiarities.  On these pages we will maintain as much information as possible about Micro-Manager device adapters.  This will help you configure and understand your Micro-Manager system.  We hope that the authors of the device adapters will maintain this information, but please feel free to update the information here with your own experiences.  The information here will refer to the most recent Micro-Manager release (currently [http://micro-manager.org/downloads.php version 1.1]).
 
-'''Device Adapters:'''
-   [[AOTF]] - AOTF control through parallel port
-   [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
-   [[ASIStage]] - ASI XY (and Z) stage and CRIF
+''Motorized Microscopes''
+   [[NikonTE2000]] - Nikon TE2000 motorized microscope
+   [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes
+   [[ZeissMTB]] - Zeiss MTB (not MTB2004) compatible microscopes
+''Cameras''
    [[Andor]] - Andor EM cameras
-   [[Conix]] - Conix Filter Changer
    [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
    [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[DemoCamera]] - Virtual, emulated equipment for testing
    [[DemoStreamCamera]] - Virtual, emulated fast camera
    [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
-   [[Ludl]] - Ludl stages, shutters and filter wheels 
-   [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
-   [[NikonTE2000]] - Nikon TE2000 motorized microscope
    [[PVCAM]] - Roper/Photometrics cameras
-   [[ParallelPort]] - TTLs on parallel port (Windows only)
-   [[Prior]] - Prior stages, shutters, and filter wheels
    [[QCam]] - QImaging cameras
    [[Sensicam]] - PCO/Cooke Sensicam camera
-   [[SerialManager]] - Serial Ports on Windows
-   [[SerialManagerUnix]] - Serial Ports on Mac and Linux
+   non-Open Source adapters are available for [http://www.dvcco.com/ DVC] and [http://www.scioncorp.com/ Scion] cameras.  Contact these companies directly.
+''Stages, filter wheels, shutters''   
+   [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
+   [[ASIStage]] - ASI XY (and Z) stage and CRIF
+   [[Ludl]] - Ludl stages, shutters and filter wheels 
+   [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
+   [[Prior]] - Prior stages, shutters, and filter wheels
    [[SutterLambda]] - Sutter hardware
    [[Vincent]] - Vincent Uniblitz controllers
+''Communication ports, TTLs, DAQs, etc..''
+   [[SerialManager]] - Serial Ports on Windows
+   [[SerialManagerUnix]] - Serial Ports on Mac and Linux
+   [[ParallelPort]] - TTLs on parallel port (Windows only)
+''Other devices''  
+   [[AOTF]] - NEOS AOTF control through parallel port
+   [[Conix]] - Conix Filter Changer
    [[Yokogawa]] - Yokogawa CSU22
-   [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes
-   [[ZeissMTB]] - Zeiss MTB (not MTB2004) compatible microscopes
+ 
 
 --[[User:Nico|Nico]] 09:04, 15 August 2007 (PDT)
