@@ -1,12 +1,12 @@
 == Zeiss CAN adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls Zeiss microscopes that use the ''CAN'' protocol (Axiovert 100m, Axiovert200m, Axioplan2, Axioplan2+</td></tr>
+'''Summary:'''</td><td valign="top">Controls Zeiss microscopes that use the ''CAN'' protocol (Axiovert 100m, Axiovert200m, Axioplan2, Axioplan2+</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive</td></tr>
-<tr><td>'''Example Config File:'''</td><td></td></tr>
+<tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive</td></tr>
+<tr><td width=20%>'''Example Config File:'''</td><td></td></tr>
 </table>
 
 
