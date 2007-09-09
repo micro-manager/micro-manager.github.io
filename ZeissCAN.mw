@@ -11,3 +11,4 @@
 
 
 This adapter controls Zeiss microscopes that use the (older) CAN bus interface, but does not control the newer Zeiss microscopes (like the AxioObserver) that uses the CAN29 protocol.  The adapter directly communicates to the microscope through the serial port (i.e., it does not use the MTB library provided by Zeiss) and therefore works on all platforms.  No additional software is needed.   You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself and it also does not use the information you might have entered in the Axioset program).  In any case, you will need to define the 'ZeissScope' device as this tells to which serial port the scope is attached.  Serial port settings are standard (9600 baud).
+--[[User:Nico|Nico]] 17:23, 8 September 2007 (PDT)
