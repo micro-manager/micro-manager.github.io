@@ -28,10 +28,10 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[SerialManager]] - Serial Ports on Windows
    [[SerialManagerUnix]] - Serial Ports on Mac and Linux
    [[ParallelPort]] - TTLs on parallel port (Windows only)
+   [[DTOpenLayer]] - DT OpenLayer Digital IO boards
 ''Other devices''  
    [[AOTF]] - NEOS AOTF control through parallel port
    [[Conix]] - Conix Filter Changer
-   [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[Yokogawa]] - Yokogawa CSU22
  
 
