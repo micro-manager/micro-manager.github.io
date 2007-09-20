@@ -9,7 +9,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 ''Cameras''
    [[Andor]] - Andor EM cameras
    [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
-   [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[DemoCamera]] - Virtual, emulated equipment for testing
    [[DemoStreamCamera]] - Virtual, emulated fast camera
    [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
@@ -32,6 +31,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 ''Other devices''  
    [[AOTF]] - NEOS AOTF control through parallel port
    [[Conix]] - Conix Filter Changer
+   [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[Yokogawa]] - Yokogawa CSU22
  
 
