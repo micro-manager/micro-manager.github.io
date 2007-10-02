@@ -1,6 +1,6 @@
 == Autofocus Setup ==
 
-Micro-Manager needs to be told which image-based autofocus mechanism to use (even though there is currently only one;).  To do so, save the following in a text file called MMStartup.bsh and save it in your Micro-Manager folder:
+Micro-Manager needs to be told which image-based autofocus mechanism to use (even though there is currently only one;).  To do so, save the following in a text file called MMStartup.bsh [[Media:MMStartup.bsh]] and save it in your Micro-Manager folder:
 
 --------------- Cut Here ---------------
 mmc.logMessage("Processing startup script...");
