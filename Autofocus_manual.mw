@@ -1,31 +1,8 @@
-== Autofocus setup ==
-
-Micro-Manager needs to be told which autofocus device or plugin to use. To do so, click on the Autofocus Options button on the main window.
-
-See also [[SimpleAutofocus|Simple Autofocus Manual]].
-
-The following are autofocus plugins available in Micro-Manager:
-
-== OughtaFocus ==
-The OughtaFocus plugin uses [http://en.wikipedia.org/wiki/Brent_method Brent's algorithm] for finding a maximum of a function. The plugin acquires images at different z positions to iteratively search for maximimum image focus quality.
-
-The plugin has a number of settings, available in the autofocus options menu:
-
-* '''SearchRange_um''': OughtaFocus will search over z range specified, centered at the current z position.
-* '''Tolerance_um''': Search will stop when the z position's distance from maximum focus quality is estimated to be within the tolerance specified.
-* '''CropFactor''': The plugin will apply a camera ROI to the center of the field of view during autofocus, to reduce the time required to read out each image. A CropFactor of 1 means that the entire field will be used.
-* '''Exposure''' specifies how long the plugin will expose each image during the autofocus routine.
-* '''ShowImage''' determines whether images will be displayed in the Live Window during the autofocus routine.
-* '''Maximize''' determines what property of the autofocusing image series will be used to evaluate the quality of focus. You can choose Mean, Standard Deviation, or Edges (a function that looks at the variance of the first derivative). Experiment with different methods to find the best one for your sample.
-* '''Channel''' allows you to select a channel preset to be used for autofocus -- if no Channel is selected, then the current hardware settings will be used.
-
-== AutoFocus JAF(H&P) manual ==
+== AutoFocus Manual ==
 
 Pakpoom (Tom) Substoontorn provided the following explanation of the various settings in the autofocus dialog:
 
-[[Image:AutoFocusDialog.gif]]
-
-Auto Focus Channel is the channel with which the autofocussing will be carried out.  Currently, the plugin uses the configuration preset group 'Channels', and you will need to type in the exact name of the channel to be used.
+[[Image:AutoFocusDialog]]
 
 StepNumber is the number of planes used in focusing above and below the current plane. For instance, if my current zdistance at the beginning of autofocus routine is 11um and I set the parameter as the following
 
@@ -69,5 +46,3 @@ at 9 um   sharpNess  = 36
    11  um                      21--> the program stop coarse search here as 21< 59*0.5 
     
 I'm not quite confident about this threshold trick. sometimes the single bell-shape is not perfect. I would recommend setting high Threshold for now.
-
-{{Documentation_Sidebar}}
