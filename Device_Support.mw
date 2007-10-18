@@ -22,6 +22,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[Ludl]] - Ludl stages, shutters and filter wheels 
    [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
    [[Prior]] - Prior stages, shutters, and filter wheels
+   [[Marzhauser]] - Marzhauser stages, controller
    [[SutterLambda]] - Sutter hardware
    [[Vincent]] - Vincent Uniblitz controllers
 ''Communication ports, TTLs, DAQs, etc..''
