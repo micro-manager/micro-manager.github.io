@@ -1,6 +1,15 @@
---[[User:Dettmar|Dettmar]] 09:30, 18 October 2007 (PDT)
-[http://www.marzhauser.com Marzhauser] stages and [http://www.tango-pci.de controllers] are tested successfully.
 
-----
+== Marzhauser adapter ==
+'''Summary:'''             Interfaces with [http://www.marzhauser.com Marzhauser] [http://www.tango-pci.de controllers] controllers and associated hardware
+'''Author:'''              Falk Dettmar (based on a version by Nenad Amodaj)
+'''License:'''             BSD
+'''Platforms:'''           All (uses serial interface, Windows also tested for Tango-PCI or Tango-DT with USB intefrace)
+'''Devices:'''             Controller, Shutter, XY Stage, Z Axis
+'''Example Config File:''' [[Media:MMConfig_Tango.cfg]]
 
-"How to" intructions:
+This adapter controls equipment through the Marzhauser TANGO family of controllers. It is tested with Tango-DT and Tango-PCI. To configure Micro-Manager to work with Marzhauser Tango you need to do the following steps:
+1. Install the TANGO and verify that it works.
+2. Switch TANGO to Ludl MAC5000 compatible mode.
+3. Download the MMConfig_Tango.cfg example configuration file.
+
+--[[User:Dettmar|Dettmar]] 23:26, 18 October 2007 (PDT)
