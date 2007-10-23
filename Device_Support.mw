@@ -31,7 +31,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[SerialManagerUnix]] - Serial Ports on Mac and Linux
    [[ParallelPort]] - TTLs on parallel port (Windows only)
 ''Other devices''  
-   [[AOTF]] - NEOS AOTF control through parallel port
+   [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
    [[Conix]] - Conix Filter Changer
    [[Yokogawa]] - Yokogawa CSU22
  
