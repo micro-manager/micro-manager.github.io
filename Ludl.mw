@@ -10,12 +10,14 @@
 </table>
 
 
-This adapter controls equipment through the [http://www.ludl.com/ Ludl] MAC family of controllers.  It has mainly been tested with the [http://www.ludl.com/pageDisplay.aspx?menumode=BIO&PageReq=MAC5000 MAC5000] controller but might  work with previous versions as well. 
+This adapter controls equipment through the [http://www.ludl.com/ Ludl] MAC family of controllers.  It has been developed for the [http://www.ludl.com/pageDisplay.aspx?menumode=BIO&PageReq=MAC5000 MAC5000] controller but also works with MAC2000 controllers. 
 
-All communications to devices take place through the Controller device (i.e., the MAC5000). Set the Serial port to use 9600 baud and 2 stopbits.  The adapter uses the 'high level' command interface (is there anyone who feels like implementing the low level interface?) Currently, you can only use one controller.  You can set the serial port for communcation with the controller, and you can define the 'transmissiondelay' (0.5 msec between chars send by the controller to the computer).  It is probably safe to set this value to 1 (the lowest) with modern computers.  
+All communications to devices take place through the Controller device (i.e., the MAC5000). Set the Serial port to use 9600 baud and 2 stopbits.  For the MAC5000 you can set the serial port property 'DelayBetweenCharsMs' to 0 to increase speed, however, for the MAC2000 controllers you will need to set this property to 10 or higher.  You might also want to increase the AnswerTimeout of the serial port to 2 sec.  
+
+The adapter uses the 'high level' command interface (is there anyone who feels like implementing the low level interface?) Currently, you can only use one controller.  You need to set the serial port for communication with the controller, and you can define the 'transmissiondelay' (0.5 msec between chars send by the controller to the computer).  It is probably safe to set this value to 1 (the lowest) with modern computers.  
 
 There can be up to 5 'devices' (i.e., controller cards) per controller, and each controller card can have 3 shutters and 2 filter wheels.  You will therefore need to specify for each Wheel and Shutter a device number (1-5 and WheelNumber (1-2) or ShutterNumber (1-3).
 
-The XYStage will let you set some parameters concerning the speed of the stage (Speed, StartSpeed, Acceleration).  See the [http://www.ludl.com/DocLib.aspx manual] for definition of these terms.
+The XYStage will let you set some parameters concerning the speed of the stage (Speed, StartSpeed, Acceleration).  See the [http://www.ludl.com/DocLib.aspx manual] for definitions of these terms.
 
 --[[User:Nico|Nico]] 13:43, 25 August 2007 (PDT)
