@@ -1,19 +1,19 @@
-== Marzhauser adapter ==
+== Marzhauser TANGO controller through Ludl adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with [http://www.marzhauser.com Marzhauser] [http://www.tango-pci.de TANGO] controllers and associated hardware</td></tr>
-<tr><td>'''Author:'''</td><td>Falk Dettmar (based on a version by Nenad Amodaj)</td></tr>
+'''Summary:'''</td><td>Interfaces with [http://www.marzhauser.com Marzhauser] [http://www.tango-pci.de TANGO] controllers and associated hardware through the [[Ludl | Ludl adapter]]</td></tr>
+<tr><td>'''Author:'''</td><td>Interface instructions: Falk Dettmar (Ludl adapter by Nenad Amodaj)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Controller, Shutter, XY Stage, Z Axis</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Tango.cfg]]</td></tr>
 </table>
 
-This adapter controls equipment through the Marzhauser TANGO family of controllers. It is tested for Tango-DT with serial interface. Windows is also tested for Tango-PCI and Tango-DT with USB intefrace. To configure Micro-Manager to work with Marzhauser Tango you need to do the following steps:
+The Marzhauser TANGO family of controllers can be controlled using the [[Ludl | Ludl adapter]]. It is tested using the Tango-DT with serial interface. The Tango-PCI and Tango-DT were also tested on Windows using the USB interface. To configure Micro-Manager to work with the Marzhauser Tango you need to do the following:
 <table><tr><td>
 <tr><td>1.</td><td>Install the TANGO and verify that it works.</td></tr>
 <tr><td>2.</td><td>Switch TANGO to Ludl MAC5000 compatible mode.</td></tr>
-<tr><td>3.</td><td>Download the MMConfig_Tango.cfg example configuration file.</td></tr>
+<tr><td>3.</td><td>Download the MMConfig_Tango.cfg example configuration file and use it in Micro-Manager.</td></tr>
 </table>
 
 --[[User:Dettmar|Dettmar]] 23:41, 18 October 2007 (PDT)
