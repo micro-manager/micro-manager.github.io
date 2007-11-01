@@ -1,0 +1,6 @@
+== Monochrome Only ?! ==
+I have a QICAM Fast RGB camera that runs in monochrome at 2x2 binning.  I have v2.0.5 of the QCam driver installed.  µManager returns:
+
+Error code 22: Device QCamera. Only monochrome cameras are supported in uManager.
+
+Is there a way around this?
