@@ -1,40 +1,42 @@
-Download ACE (from [http://download.dre.vanderbilt.edu/ here]) version 5.6.1 (be sure to get the 'full' version, you only need ACE), or possibly later.
+Download  [http://download.dre.vanderbilt.edu/ ACE] version 5.6.1, or possibly later (be sure to get the 'full' version, you only need ACE, no TAO).
 
-Unpack in a logical place (for instance: /usr/local/src, use bunzip2 and tar -xvf to unpack a .tar.bz2 file)
+Unpack in a logical place (for instance: /usr/local/src) use bunzip2 and tar -xvf to unpack the .tar.bz2 file.
 
-Follow the build instructions ([http://www.dre.vanderbilt.edu/~schmidt/DOC_ROOT/ACE/ACE-INSTALL.html#aceinstall download here]) for a traditional build.  The autotools build is heavily broken on the Mac.
+ACE has an autotools build mechanism, and a 'traditional' build.  The autotools build worked with ACE version 5.5 on the Mac, but has been broken since.  To use the 'traditional' build follow the  [http://www.dre.vanderbilt.edu/~schmidt/DOC_ROOT/ACE/ACE-INSTALL.html#aceinstall build instructions].
 
 For example:
 
-cd into ACE_Wrappers
+cd into ACE_Wrappers and type:
 
-<nowiki>ACE_ROOT=`pwd`; export ACE_ROOT</nowiki>ACE_ROOT=`pwd`; export ACE_ROOT
+<code>ACE_ROOT=`pwd`; export ACE_ROOT</nowiki>ACE_ROOT=`pwd`; export ACE_ROOT</code>
 
 
 Create and edit $ACE_ROOT/ace/config.h
 On Tiger (10.4) it should read:
 
-<nowiki>
-#define ACE_HAS_NONSTATIC_OBJECT_MANAGER
 
-#include "ace/config-macosx-tiger.h"
-</nowiki>
+<code>
+<nowiki>#define ACE_HAS_NONSTATIC_OBJECT_MANAGER</nowiki><br>
+<nowiki>#include "ace/config-macosx-tiger.h"M</nowiki><br>
+</code>
+
 
 Create a build configuration file, $ACE_ROOT/include/makeinclude/platform_macros.GNU
 On Tiger (10.4) it should read:
 
-<nowiki>
-debug = 1
-shared_libs = 0
-static_libs = 1
+<code>
+debug = 1<br>
+shared_libs = 0<br>
+static_libs = 1<br>
 include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU<br>
-</nowiki>
+</code>
+
 
 If you wish to build ACE as a shared library, you would need to change this and also define DYLD_LIBRARY_PATH to include $(ACE_ROOT)/lib
 
-Now cd into $(ACE_ROOT)/ace and type make
+Now cd into $(ACE_ROOT)/ace, type make and pray no errors will occur.
 
 To make the library available to your system, place a symbolic link in /usr/local/include that points to the $(ACE_ROOT)/ace directory:<br>
-sudo ln -s $(ACE_ROOT)/ace /usr/local/include/ace
+<code>sudo ln -s $(ACE_ROOT)/ace /usr/local/include/ace</code>
 
 Copy libACE.a to /usr/local/lib
