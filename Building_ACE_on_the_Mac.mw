@@ -14,22 +14,21 @@ cd into ACE_Wrappers and type:
 Create and edit $ACE_ROOT/ace/config.h
 On Tiger (10.4) it should read:
 
-
-<code>
-<nowiki>#define ACE_HAS_NONSTATIC_OBJECT_MANAGER</nowiki><br>
-<nowiki>#include "ace/config-macosx-tiger.h"M</nowiki><br>
-</code>
+<code><pre>
+#define ACE_HAS_NONSTATIC_OBJECT_MANAGER
+#include "ace/config-macosx-tiger.h"M
+</pre></code>
 
 
 Create a build configuration file, $ACE_ROOT/include/makeinclude/platform_macros.GNU
 On Tiger (10.4) it should read:
 
-<code>
-debug = 1<br>
-shared_libs = 0<br>
-static_libs = 1<br>
-include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU<br>
-</code>
+<code><pre>
+debug = 1
+shared_libs = 0
+static_libs = 1
+include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU
+</pre></code>
 
 
 If you wish to build ACE as a shared library, you would need to change this and also define DYLD_LIBRARY_PATH to include $(ACE_ROOT)/lib
