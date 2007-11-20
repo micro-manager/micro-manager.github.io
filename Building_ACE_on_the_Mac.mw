@@ -1,4 +1,4 @@
-Download ACE (from [http://download.dre.vanderbilt.edu/ here]) version 5.6.1 (be sure to get the 'full' version, you only need ACE.
+Download ACE (from [http://download.dre.vanderbilt.edu/ here]) version 5.6.1 (be sure to get the 'full' version, you only need ACE), or possibly later.
 
 Unpack in a logical place (for instance: /usr/local/src, use bunzip2 and tar -xvf to unpack a .tar.bz2 file)
 
@@ -8,28 +8,33 @@ For example:
 
 cd into ACE_Wrappers
 
-ACE_ROOT=`pwd`; export ACE_ROOT
+<nowiki>ACE_ROOT=`pwd`; export ACE_ROOT</nowiki>ACE_ROOT=`pwd`; export ACE_ROOT
 
 
 Create and edit $ACE_ROOT/ace/config.h
 On Tiger (10.4) it should read:
 
+<nowiki>
 #define ACE_HAS_NONSTATIC_OBJECT_MANAGER
+
 #include "ace/config-macosx-tiger.h"
+</nowiki>
 
 Create a build configuration file, $ACE_ROOT/include/makeinclude/platform_macros.GNU
 On Tiger (10.4) it should read:
 
+<nowiki>
 debug = 1
 shared_libs = 0
 static_libs = 1
-include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU
+include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU<br>
+</nowiki>
 
 If you wish to build ACE as a shared library, you would need to change this and also define DYLD_LIBRARY_PATH to include $(ACE_ROOT)/lib
 
 Now cd into $(ACE_ROOT)/ace and type make
 
-To make the library available to your system, place a symbolic link in /usr/local/include that points to the $(ACE_ROOT)/ace directory:
+To make the library available to your system, place a symbolic link in /usr/local/include that points to the $(ACE_ROOT)/ace directory:<br>
 sudo ln -s $(ACE_ROOT)/ace /usr/local/include/ace
 
 Copy libACE.a to /usr/local/lib
