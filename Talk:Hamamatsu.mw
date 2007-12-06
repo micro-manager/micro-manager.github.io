@@ -3,3 +3,5 @@ Hi,
   I was wondering if there was a way to use the micromanager at the MMcore/c++ level without having to buy the Hamamatsu/DCAMSDK (costs $1500).
 
 Haig
+
+Just do not compile the Micro-Manager DCAM adapter, but instead use the one included in the binary distribution.
