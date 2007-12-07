@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
 <tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive</td></tr>
-<tr><td width=20%>'''Example Config File:'''</td><td></td></tr>
+<tr><td width=20%>'''Example Config File:'''</td><td>[[Media:MMConfig_ZeissCAN29.cfg]]</td></tr>
 </table>
 
 
