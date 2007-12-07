@@ -1,0 +1,13 @@
+== Zeiss CAN29 adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td valign="top">Controls Zeiss microscopes that use the ''CAN29'' protocol (AxioObserver D1 and Z1, upright and Stereo)</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
+<tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive</td></tr>
+<tr><td width=20%>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+
+This adapter controls Zeiss microscopes that use the CAN29 bus interface. The adapter directly communicates to the microscope through the serial port (i.e., it does not use the MTB library provided by Zeiss) and therefore works on all platforms.  No additional software is needed.   You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself for devices present).  In any case, you will need to define the 'ZeissScope' device as this defines the serial port to which the scope is attached.  The serial port should be set to run at 57600 baud and have a delay between chars of 0 (other settings are standard).  Most labels (reflectors, objectives, sideport) will be read from the controller, so you do not need to set those in the Hardware Config Wizard.
