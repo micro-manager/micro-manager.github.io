@@ -15,7 +15,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[PVCAM]] - Roper/Photometrics cameras
    [[QCam]] - QImaging cameras
    [[Sensicam]] - PCO/Cooke Sensicam camera
-   non-Open Source adapters are available for [http://www.dvcco.com/ DVC] and [http://www.scioncorp.com/ Scion] cameras.  Contact these companies directly.
+   non-Open Source adapters are available for [http://www.dvcco.com/ DVC], [http://www.scioncorp.com/ Scion] and [http://www.stanfordphotonics.com/ Stanford Photonics] cameras.  Contact these companies directly.
 ''Stages, filter wheels, shutters''   
    [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
