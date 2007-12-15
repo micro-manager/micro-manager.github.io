@@ -2,25 +2,25 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen.  Maintenance taken over by Daigang Wen (Andor) as of September 2007</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only (No Mac driver available, it might be possible to build this on Linux)</td></tr>
 <tr><td>'''Devices:'''</td><td>Ixon (camera), and Ixon shutter</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_andor.cfg]]</td></tr>
 </table>
 
+Andor has greatly reworked this adapter (as of Micro-Manager version 1.1.44) and tested the adapter with iXon, Luca-S and Luca-R cameras.  They have also added support for the 'traditional' (non-EM) read-out mode and for iCam features in the camera, which allows for much more rapid switching of exposure times than previously possible. To use the iCam features, you will need a relatively recent camera and you might need to upgrade the firmware of your camera and the PCI card.  Information on how to do this can be found where?
 
-This adapter defines two devices: the actual camera (Ixon) and the shutter in front of the camera (IxonShutter).  For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups.
+This adapter defines two devices: the actual camera (Ixon) and the shutter in front of the camera (IxonShutter).  The shutter device is depreciated and there is no need to define it in your configuration file.  The shutter can now be controlled as a property of the camera.  For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups.
 
-The adapter needs to know the location of the Andor driver.  Regretfully, the Hardware/Config wizard does not deal with the path very well, making it impossible to set up an Andor camera configuration using the wizard.  Rather, you will need to edit the config file manually.  It is best to first configure all the other hardware in your system and then manually add the Andor camera (for instance using the example config file provided above).
+The adapter needs to know the location of the Andor driver.  Type in the full path to the Andor directory (default: C:\Program Files\Andor) in the Hardware configuration wizard.
 
 The offset in the Ixon camera only rises higher than 0 when the temperature is lower than -50C (I am not sure if this is the case for all cameras), so make sure that the temperature of the camera (a read-only property that can be seen in the device/property browser) is below -50C (or preferably at -70C or lower).  
 
 Other software packages take care to bring up the temperature of the camera gradually after shutting down the software.  We have been told by Andor that this is not necessary and do not have provisions for gradual warmup back to RT.
 
-This camera has two gains, EM and 'normal' gain.  Currently, the gain in the front panel is strangely wired to both of these gains.  This issue will need to be resolved.
+This camera has two gains, EM and 'normal' gain.  EM gain is currently called 'gain', as opposed to 'amplifier-gain'.
 
-The Andor cameras can use both an EM and a non-EM readout register.  The current adapter only supports the EM read-out register.    
-
+  
 
 --[[User:Nico|Nico]] 22:50, 17 August 2007 (PDT)
