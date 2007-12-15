@@ -4,10 +4,11 @@
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows only (Andor only has a driver on the Windows platform)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows only (No Mac driver available, it might be possible to build this on Linux)</td></tr>
 <tr><td>'''Devices:'''</td><td>Ixon (camera), and Ixon shutter</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_andor.cfg]]</td></tr>
 </table>
+
 
 This adapter defines two devices: the actual camera (Ixon) and the shutter in front of the camera (IxonShutter).  For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups.
 
