@@ -6,5 +6,8 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [[Autofocus setup]] - Making Micro-Manager use image-based autofocus
    [[Autofocus manual]] - Configure the image-based autofocus
 
+''Scripting in Micro-Manager''
+   [[example Beanshell scripts]] - A few example scripts with minimal annotation
+
 ''Building the software (developers only)''
    [[Building ACE on the Mac]] - How to build ACE on the Mac
