@@ -2,6 +2,8 @@ These beanshell scripts can be run by loading them into the 'Scripting Console' 
 
 [[Media:Init.bsh]] - Shows how to configure the sytem programmatically, i.e. without using configurationf files. The GUI changes will not be visible until you manually run the command 'Rebuild GUI' or 'Refresh GUI' (Tools menu).
 
+[[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.
+
 [[Media:camera_test.bsh]] - Example camera test.
 
 [[Media:config_test.bsh]] - Shows how to define config groups programmatically.  Will work with the demo-configuration.
