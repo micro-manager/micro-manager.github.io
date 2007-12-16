@@ -13,5 +13,11 @@ The adapter uses a modified version of libk8055 (by Sven Lindberg and others) an
 
 Please note that to use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board.
 
+To use this adapter you will need to have [[http://libusb.sourceforge.net/ libusb version 0.1.12]] installed in /usr/local/lib.  On Mac OS X you will also need to download and unpack [[Media:k8055-utbm-osx-kext.tar.gz]], open a terminal, cd into the directory k8055-utbm-osx-kext, issue the commands below, and reboot:
+<pre>
+sudo cp -r k8055.kext /System/Library/Extensions/k8055.kext
+sudo touch /System/Library
+</pre>
+
 
 --[[User:Nico|Nico]] 18:21, 15 December 2007 (PST)
