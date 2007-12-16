@@ -4,7 +4,7 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Mac/Linux</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.velleman.be/ot/en/product/view/?id=351346 Velleman K8055/VM110]</td></tr>
-<tr><td>'''Example Config File:'''</td><td></td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_K8055.cfg]]</td></tr>
 </table>
 
 The Velleman K8055 (VM110 for a pre-assembled board) is a low cost digital IO board.  It provides 8 digital out and 2 analogue out channels (as well as analogue and digital in - which are not used here) that can be used for things like  TTLs or AOTF control.  A drawback of this board is its relatively slow switching time (~10 ms).  
