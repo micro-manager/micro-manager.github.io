@@ -11,7 +11,7 @@ The Velleman K8055 (VM110 for a pre-assembled board) is a low cost digital IO bo
 
 The adapter uses a modified version of libk8055 (by Sven Lindberg and others) and libusb.  The adapter provides a switch, a shutter, and 2 DAC outputs.  Each of the 2 DACs can be set to a voltage between 0 and 5.0 V.  The switch determines which of the 8 output channels will be active. The switch is a single byte, each bit in this byte sets the corresponding channel (for instance, the value '3' will set channels 1 and 2).  The shutter will switch the active channels on and off.
 
-Please note that to use the digital outs, one need to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board.
+Please note that to use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board.
 
 
 --[[User:Nico|Nico]] 18:21, 15 December 2007 (PST)
