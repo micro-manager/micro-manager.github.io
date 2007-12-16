@@ -19,3 +19,5 @@ These beanshell scripts can be run by loading them into the 'Scripting Console' 
 [[Media:sdemo1.bsh]] - Hello World
 
 [[Media:sdemo2.bsh]] - Shows how to use ImageJ functionality within the Beanshell environment
+
+--[[User:Nico|Nico]] 21:04, 15 December 2007 (PST)
