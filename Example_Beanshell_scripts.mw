@@ -1,0 +1,19 @@
+These beanshell scripts can be run by loading them into the 'Scripting Console' (in the 'Tools' menu).  In the Scripting Console, use 'File -> Open' to load the scripts.
+
+[[Media:Init.bsh]] - Shows how to configure the sytem programmatically, i.e. without using configurationf files. The GUI changes will not be visible until you manually run the command 'Rebuild GUI' or 'Refresh GUI' (Tools menu).
+
+[[Media:camera_test.bsh]] - Example camera test.
+
+[[Media:config_test.bsh]] - Shows how to define config groups programmatically.  Will work with the demo-configuration.
+
+[[Media:image_snap_example.bsh]] - Shows how to snap (but not display) an image
+
+[[Media:image_snap_example_2.bsh]] - Shows how to snap and display an image.   The image window must already be open (Snap an image once manually before running the plugin).
+
+[[Media:live_demo.bsh]] - Shows how to process an image during acquisition.  Needs the DemoStreamingCamera to work.
+
+[[Media:multi.bsh]] - Shows how to acquire a multi-channel image.  Will need editing to match current channel definitions.
+
+[[Media:sdemo1.bsh]] - Hello World
+
+[[Media:sdemo2.bsh]] - Shows how to use ImageJ functionality within the Beanshell environment
