@@ -1,7 +1,7 @@
 == Zeiss CAN29 adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td valign="top">Controls Zeiss microscopes that use the ''CAN29'' protocol (AxioObserver D1 and Z1, upright and Stereo)</td></tr>
+'''Summary:'''</td><td valign="top">Controls Zeiss microscopes that use the ''CAN29'' protocol (AxioObserver/Imager D1 and Z1)</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
