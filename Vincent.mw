@@ -10,6 +10,6 @@
 </table>
 
 
-This adapter controls the [http://www.uniblitz.com Vincent] shutter controllers [http://www.uniblitz.com/products/driveunits.asp D1, T1, D3, D4] and D122 (not available anymore). Connect the controller through a serial port and configure the port as specified in the manual to your controller (the D122 uses a baudrate of 300, others are 9600). Multiple controllers can be daisy changed as the adapter can address these dasiy-changed controllers (Property ''Address'', use ''x'' to address all daisy-chained controllers). 
+This adapter controls the [http://www.uniblitz.com Vincent] shutter controllers [http://www.uniblitz.com/products/driveunits.asp D1, T1, D3, D4] and [http://www.uniblitz.com/resources/dl.asp?id=29 D122] (not available anymore). Connect the controller through a serial port and configure the port as specified in the manual to your controller (the D122 uses a baudrate of 300, others are 9600). Multiple controllers can be daisy changed as the adapter can address these dasiy-changed controllers (Property ''Address'', use ''x'' to address all daisy-chained controllers). 
 
 --[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
