@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen.  Maintenance taken over by Daigang Wen (Andor) as of September 2007</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen.  Maintenance and further development taken over by Daigang Wen (Andor) as of September 2007</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only (No Mac driver available, it might be possible to build this on Linux)</td></tr>
 <tr><td>'''Devices:'''</td><td>Andor cameras: IXon, Luca-S and Luca-R</td></tr>
