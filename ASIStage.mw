@@ -11,6 +11,8 @@
 
 Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and the reflection-based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) needs to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
 
+The ASI controller can control two different Z stages, a normal one ("Z"), and a piezo Z stage which can either be called "Z", or - if a normal motorized S stage is installed "F".  AS of Micro-Manager version 1.2.7, you can instantiate multiple ASI Z-stages, which will take a pre-initialization property 'Axis' that can be set to either"Z' or "F" (do not instantiate the same axis twice!).
+
 The logic of the CRIF is a bit funky. The CRIF [http://www.asiimaging.com/criff.html] cycles through a number of states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle button on the controller for 6 seconds (see the CRIF manual [http://www.asiimaging.com/pdfs/CRIFF_Manual.pdf]).  Some of these state changes are implemented in the CRIF adapter.  In general, it is best to first calibrate the CRIF by hand and then let the software lock and unlock the CRIF.
 
 AS of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB connection is actually a USB to serial converter.  You can find Windows drivers for this converter at the [http://www.asiimaging.com/wk_usb_support.html ASI] website and drivers for Mac OS X and linux at the [http://www.silabs.com/tgwWebApp/public/web_content/products/Microcontrollers/USB/en/mcu_vcp.htm Silabs] website. The dipswitches on the back now control the baudrate settings for both the real serial and the USBto serial ports on the controller.
@@ -18,13 +20,13 @@ AS of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB con
 The following properties are currently implemented in the Micro-Manager ASI stage adapter:
 <table>
 <tr><th>Property</th><th>Description</th></tr>
-<tr><td>Stepsize (for X and Y in um)</td><td>  Read-only property.</td></tr>
-<tr><td>WaitCycles</td><td>  Sets how long the controller will wait after reaching a position before clearing its 'busy' signal</td></tr>
-<tr><td>Speed (for both X and Y)</td><td>&nbsp;</td></tr>
-<tr><td>Backlash (for both X and Y)</td><td></td></tr>
-<tr><td>Error (for both X and Y, in nm)</td><td></td></tr>
-<tr><td>Finish Error (for both X and Y in nm)</td><td></td></tr>
-<tr><td>OverShoot (for both X and Y)</td><td></td></tr>
-<tr><td>MotorOnOff (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
-<tr><td>NrMOveRepetition</td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
+<tr><td><b>Stepsize</b> (for X and Y in um)</td><td>  Read-only property.</td></tr>
+<tr><td><b>WaitCycles</b></td><td>  Sets how long the controller will wait after reaching a position before clearing its 'busy' signal.  Number equals the number of 'servo' cycles (80 ms per cycle on XYstage, 120 ms per cycle on XYZ stages, etc..).  Range: 0-255</td></tr>
+<tr><td><b>Speed</b> (for both X and Y)</td><td>Sets the maximum speed at which the stage will move in mm/sec.  Hardware maximum is 7.5 mm/s for 6.5 mm pitch leadscrews</td></tr>
+<tr><td><b>Backlash</b> (for both X and Y, in nm)</td><td>Makes the controller approach the target always from the same direction, starting the set number of nm away from the target position</td></tr>
+<tr><td><b>Error</b> (for both X and Y, in nm)</td><td>When the difference between the current position (as read from the encoders) is larger than this number, the controller will re-engage the motors to reach the target position</td></tr>
+<tr><td><b>Finish Error</b> (for both X and Y in nm)</td><td>This setting controls at what difference between the target and current position the controller will stop trying to get closer to the target.  Similar to Error, but this one applies to ongoing movements.</td></tr>
+<tr><td><b>OverShoot</b> (for both X and Y)</td><td>Inverse of Backlash.  Setting this might help to increase stability of the stage after a movement</td></tr>
+<tr><td><b>MotorOnOff</b> (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
+<tr><td><b>NrMoveRepetition</b></td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
 </table>
