@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Controls ASI XY, Z stages and CRIF</td></tr>
-<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIF by Nico Stuurman</td></tr>
+<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIF by Nico Stuurman.  Currently maintained by Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage, ZStage, CRIF</td></tr>
@@ -12,3 +12,19 @@
 Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and the reflection-based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) needs to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
 
 The logic of the CRIF is a bit funky. The CRIF [http://www.asiimaging.com/criff.html] cycles through a number of states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle button on the controller for 6 seconds (see the CRIF manual [http://www.asiimaging.com/pdfs/CRIFF_Manual.pdf]).  Some of these state changes are implemented in the CRIF adapter.  In general, it is best to first calibrate the CRIF by hand and then let the software lock and unlock the CRIF.
+
+AS of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB connection is actually a USB to serial converter.  You can find Windows drivers for this converter at the [http://www.asiimaging.com/wk_usb_support.html ASI] website and drivers for Mac OS X and linux at the [http://www.silabs.com/tgwWebApp/public/web_content/products/Microcontrollers/USB/en/mcu_vcp.htm Silabs] website. The dipswitches on the back now control the baudrate settings for both the real serial and the USBto serial ports on the controller.
+
+The following properties are currently implemented in the Micro-Manager ASI stage adapter:
+<table>
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td>Stepsize (for X and Y in um)</td><td>  Read-only property.</td></tr>
+<tr><td>WaitCycles</td><td>  Sets how long the controller will wait after reaching a position before clearing its 'busy' signal</td></tr>
+<tr><td>Speed (for both X and Y)</td><td>&nbsp;</td></tr>
+<tr><td>Backlash (for both X and Y)</td><td></td></tr>
+<tr><td>Error (for both X and Y, in nm)</td><td></td></tr>
+<tr><td>Finish Error (for both X and Y in nm)</td><td></td></tr>
+<tr><td>OverShoot (for both X and Y)</td><td></td></tr>
+<tr><td>MotorOnOff (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
+<tr><td>NrMOveRepetition</td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
+</table>
