@@ -16,3 +16,4 @@ In the configuration wizard you will need to add the LMM5-Hub object, and at lea
 In the first case (multiple shutters, one for each line that you want to use), assign which lines are controlled by which shutters in the startup group (in the main Micro-Manager panel, create a group 'System', in that group make the preset 'Startup', in this group assign the desired label to each shutter). In the second case, you should change the 'Label property of your single shutter in each of your Channel definitions.
 
 The adapter also lets you set the intensity of the individal laser lines, and has some provisions for trigger out configurations (not well tested).
+--[[User:Nico|Nico]] 11:05, 12 February 2008 (PST)
