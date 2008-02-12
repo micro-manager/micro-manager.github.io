@@ -4,23 +4,15 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.spectralappliedresearch.com/products/mergemodule/ Spectral LMM5]</td></tr>
-<tr><td>'''Since Version:'''</td><td>1.2.6, USB support since version 1.4.15 (9/6/2013)</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
 The Spectral LMM5 is a controller that can control (shutter as well as set intensity) of up to 8 laser lines.  The lasers are physically controlled with either an AOTF, or shutters and ND filters, however, the LMM5 provides a uniform interface in all these situations.
 
-The LMM5 comes with either a serial or USB interface port (newer models will have both). {{Note|As of Micro-Manager version 1.4.15 (9/6/2013), you can use the USB interface.  No driver installation is needed.  In the Hardware Configuration Wizard, select the LMM5-Hub device.  The drop-down menu in the "Value" column next to the "Port" pre-initialization property should contain the value "LMM5-HID".  Select this port and you should be good to go.}}
+The LMM5 comes with either a serial or USB interface port (newer models will have both). Regretfully, the USB interface does not work with our USB port driver so you will need to use the serial port (set at 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms).  
 
-If this does not work, you can also connect to the device using a serial cable.  Set the port to 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms.  
-
-In the configuration wizard you will need to add the LMM5-Hub object, and at least one LMM5-Shutter object.  You have the choice to either set up multiple LMM5-Shutters (for instance, one for each laser line as well as laser line combinations that you intend to use) or to set up a single one (in that case, you can change which physical line this shutter will control by changing the 'Label' property of this shutter).
+In the configuration wizard you will need to add the LMM5-Hub object, and at least one LMM5-Shutter object.  You have the choice to either set up multiple LMM5-Shutters (for instance, one for each laser line as well as laser line combinations that you intend to use) or to set up a single one (in that case, you can change which physical line this shutter will control by changing the 'Label' property of this shtter).
 
 In the first case (multiple shutters, one for each line that you want to use), assign which lines are controlled by which shutters in the startup group (in the main Micro-Manager panel, create a group 'System', in that group make the preset 'Startup', in this group assign the desired label to each shutter). In the second case, you should change the 'Label property of your single shutter in each of your Channel definitions.
 
-The adapter also lets you set the intensity of the individual laser lines, and has some provisions for trigger out configurations (not well tested).
-
---[[User:Nico|Nico]] 11:05, 12 February 2008 (PST)
-
-
-{{Devices_Sidebar}}
+The adapter also lets you set the intensity of the individal laser lines, and has some provisions for trigger out configurations (not well tested).
