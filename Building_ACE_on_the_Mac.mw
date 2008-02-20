@@ -8,7 +8,7 @@ For example:
 
 cd into ACE_Wrappers and type:
 
-<code>ACE_ROOT=`pwd`; export ACE_ROOT</nowiki>ACE_ROOT=`pwd`; export ACE_ROOT</code>
+<code>ACE_ROOT=`pwd`; export ACE_ROOT</code>
 
 
 Create and edit $ACE_ROOT/ace/config.h
@@ -16,7 +16,7 @@ On Tiger (10.4) it should read:
 
 <code><pre>
 #define ACE_HAS_NONSTATIC_OBJECT_MANAGER
-#include "ace/config-macosx-tiger.h"M
+#include "ace/config-macosx-tiger.h"
 </pre></code>
 
 
