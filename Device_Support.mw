@@ -31,7 +31,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[SerialManager]] - Serial Ports on Windows
    [[SerialManagerUnix]] - Serial Ports on Mac and Linux
    [[ParallelPort]] - TTLs on parallel port (Windows only)
-   [[Velleman K8055]] - Digital IO board (Mac and Linux)
+   [[Velleman K8055]] - Digital IO board (all platforms)
+   [[Velleman K8061]] - DIgital IO board (all platforms)
 ''Other devices''  
    [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
    [[Conix]] - Conix Filter Changer
