@@ -9,6 +9,14 @@
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>
 
-This adapter for the Conix Quad filter changer ([http://www.conixresearch.com/products/filter/quadfilt.html]) was never finished due to lack of interest.  If anyone is interested, let me know, it should be straight forward to make this work.
+This adapter for the Conix Quad filter changer ([http://www.conixresearch.com/products/filter/quadfilt.html]) was finally finished and is included in version 1.2.6.  
+
+The following serial port settings are important:  <br>
+AnswerTimeout: Set to 2000 msec<br>
+DelayBetweenCharsMs: I had to set it to 5 msec for the device to work reliably<br>
+Baudrate: 9600<br>
+StopBits: 1<br>
+DataBts 8<br>
+
 
 --[[User:Nico|Nico]] 10:18, 25 August 2007 (PDT)
