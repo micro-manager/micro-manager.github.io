@@ -1,15 +1,15 @@
 == Conix filter changer ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for Conix Quad Filter Changer.  Never finished.</td></tr>
+'''Summary:'''</td><td>Adapter for Conix Quad Filter Changer. </td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Not working.  Should work on all platforms (serial interface)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Should work on all platforms (serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Quad filter changer</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>
 
-This adapter for the Conix Quad filter changer ([http://www.conixresearch.com/products/filter/quadfilt.html]) was finally finished and is included in version 1.2.6.  
+This adapter for the Conix Quad filter changer ([http://www.conixresearch.com/products/filter/quadfilt.html]) was finally finished and is included in Micro-Manager version 1.2.6.  
 
 The following serial port settings are important:  <br>
 AnswerTimeout: Set to 2000 msec<br>
