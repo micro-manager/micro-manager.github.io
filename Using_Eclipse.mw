@@ -6,4 +6,4 @@ Create a new Java Project (File->New).
 
 Select 'Create project from existing source' and specifiy the 'mmstudio' directoy in the Micro-Manager source.  Name the project (for instance: 'Micro-Manager1.2').  Click 'Next'.
 
-In the Java settings screen, add the following external jars under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar.  These can be found in an existing Micro-Manager installation.
+In the Java settings screen, add the following external jars under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar.  These can be found in an existing Micro-Manager installation. Also add MMCoreJ.jar.  This can be found in the 'bin' directory of your Micro-Manager source on Windows, or in the MMCoreJ_wrap directory on Mac and Linux.
