@@ -1,7 +1,7 @@
 == DA Z Stage ==
 
 <table><tr><td>
-'''Summary:'''</td><td>For Stages that can be controlled with an analogue voltage.  Needs a DA device</td></tr>
+'''Summary:'''</td><td>For stages that can be controlled with an analogue voltage.  Needs a DA device</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms</td></tr>
