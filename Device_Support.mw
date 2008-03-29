@@ -20,6 +20,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 ''Stages, filter wheels, shutters''   
    [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
+   [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
    [[Ludl]] - Ludl stages, shutters and filter wheels 
    [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
    [[Prior]] - Prior stages, shutters, and filter wheels
