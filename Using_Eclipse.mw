@@ -1,9 +1,17 @@
-Download and install [http://http://www.eclipse.org/ Eclipse]
+1. Download and install [http://http://www.eclipse.org/ Eclipse]
 
-Start Eclipse, when prompted set the workspace to a new directory (NOT the Micro-Manager source).
+2. Start Eclipse, when prompted set the workspace to a new directory (NOT the Micro-Manager source).
 
-Create a new Java Project (File->New).
+3. Create a new Java Project (File->New).
 
-Select 'Create project from existing source' and specifiy the 'mmstudio' directoy in the Micro-Manager source.  Name the project (for instance: 'Micro-Manager1.2').  Click 'Next'.
+4. Select 'Create project from existing source' and specifiy the 'mmstudio' directoy in the Micro-Manager source.  Name the project (for instance: 'Micro-Manager1.2').  Click 'Next'.
 
-In the Java settings screen, add the following external jars under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar.  These can be found in an existing Micro-Manager installation. Also add MMCoreJ.jar.  This can be found in the 'bin' directory of your Micro-Manager source on Windows, or in the MMCoreJ_wrap directory on Mac and Linux.
+5. In the Java settings screen, add the following external jars under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar.  These can be found in an existing Micro-Manager installation. Also add MMCoreJ.jar.  This can be found in the 'bin' directory of your Micro-Manager source on Windows, or in the MMCoreJ_wrap directory on Mac and Linux.
+
+6. The source code should now compile without errors (but with warnings).
+
+7. Setup the runtime environment: Open the project's properties (Project->Properties), select the 'Run/Debug Settings' and click 'New'.  Select 'Java Application'.  For 'Main Class' select 'MMStudioMainFrame'.  Under 'Arguments', set the Working directory' to the bin folder in your Micro-Manager source directory. 
+
+8. When all is good, you can start Micro-Manager (without ImageJ window) by pressing the green arrow in Eclipse.
+
+9. To debug C++ code, attach your debugger to the running javaw instance.  In Visual Studio: Debug->Attach to Process, select the appropriate javaw process.  On Unix, use top or ps to find the process and start gdb: gdb Jave processID.
