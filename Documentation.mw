@@ -11,3 +11,4 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 
 ''Building the software (developers only)''
    [[Building ACE on the Mac]] - How to build ACE on the Mac
+   [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
