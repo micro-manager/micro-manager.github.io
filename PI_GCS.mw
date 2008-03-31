@@ -1,0 +1,36 @@
+== PI GCS Z Stage ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with [http://ww.pi.ws Physik Instrumente (PI)] GCS controllers and associated hardware</td></tr>
+<tr><td>'''Author:'''</td><td>Steffen Rau (PI) (based on code by Nico Stuurman and Nenad Amodaj)
+</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>Stage</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>>=1.2.7</td></tr>
+</table>
+
+This adapter controls stages connected to PI GCS Controllers. It has been tested with E-816-based controllers (E-665, E-621, E-625), as well as with the E-753, E-712 and C-848 but should work also with all PI controllers that support the GCS (General Command Set) and can be connected via a serial interface (C-880, C-702, ...).
+
+The PI adapter is available since version 1.2.07. 1.2 will be brought very soon in beta. In the meantime, version 1.2 alpha can be accessed here: http://valelab.ucsf.edu/~nenad/micro-manager1.2. Or contact the developers of Micro-Manager.
+
+All communications to devices take place through serial ports. Currently micro-manager only supports baudrates up to 57600 baud. Many PI controllers have 115200 baud as default. This must be changed (only once) in order to connect with Micro-Manager. Use the provided software from PI or a terminal program to connect with the controller and change the default baudrate. For E-816 based controllers this can be done with the "BDR" command:
+
+ BDR 57.6
+ BDR?
+ WPA 100
+ RST
+
+For controllers supporting GCS2 (E-753, E-712) use "IFS":
+ IFS 100 RSBAUD 57600
+ IFS?
+ RBT
+
+To use the PI Adapter, select "PI_GCS" as library and "PIZStage" as adapter in the Hardware Configuration Wizard. The PIZStage has two properties:
+* '''Axis''' is the axis to be controlled by Micro-Manager. For E-816 based controllers this is "A", for E-753 use "1" (see the User Manual of your controller for available axes and their identifiers)
+* '''Port''' is the serial port to be used, which needs to be configured earlier in the Hardware Configuration Wizard. The default values are OK for PI controllers (AnswerTimeout = 500, DelayBetweenCharsMs = 0, StopBits = 1).
+
+The PIZstage can be synchronized with image acquisiton, which is only neccassary for motorized stages. There is no "Homing" for ZStages in micro-manager (yet). So if you need to initialize the stage with "Auto Zero" or by moving to a reference, you need to start the provided PI software or a terminal application to do this once after power on. (This does not affect E-816 based controllers (E-665, E-621, E-625) which do not need to be referenced)
+
+--[[User:Steffen|Steffen]] 31 March 2008
