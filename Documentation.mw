@@ -7,6 +7,7 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [[Autofocus manual]] - Configure the image-based autofocus
 
 ''Scripting in Micro-Manager''
+   [[Script Panel GUI]] - Introduction to the Script Panel GUI
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
 ''Building the software (developers only)''
