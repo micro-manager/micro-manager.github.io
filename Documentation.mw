@@ -8,6 +8,7 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 
 ''Scripting in Micro-Manager''
    [[Script Panel GUI]] - Introduction to the Script Panel GUI
+   [[gui object]] - Functionality of the GUI scripting object
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
 ''Building the software (developers only)''
