@@ -1,4 +1,4 @@
-These beanshell scripts can be run by loading them into the 'Scripting Console' (in the 'Tools' menu).  In the Scripting Console, use 'File -> Open' to load the scripts.
+These beanshell scripts can be run loading from to the 'Script Panel' (in the 'Tools' menu).  Either load the script in the Script Button Panel (using the 'add' button), or open the script in the editor (using the 'open' button. 
 
 [[Media:sdemo1.bsh]] - Hello World
 
