@@ -1,12 +1,12 @@
 These beanshell scripts can be run by loading them into the 'Scripting Console' (in the 'Tools' menu).  In the Scripting Console, use 'File -> Open' to load the scripts.
 
-[[Media:Init.bsh]] - Shows how to configure the sytem programmatically, i.e. without using configurationf files. The GUI changes will not be visible until you manually run the command 'Rebuild GUI' or 'Refresh GUI' (Tools menu).
+[[Media:sdemo1.bsh]] - Hello World
 
-[[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.
+[[Media:sdemo2.bsh]] - Shows how to use ImageJ functionality within the Beanshell environment
+
+[[Media:setZoom.bsh]] - Utility that sets the zoom level of the current ImageJ image window
 
 [[Media:camera_test.bsh]] - Example camera test.
-
-[[Media:config_test.bsh]] - Shows how to define config groups programmatically.  Will work with the demo-configuration.
 
 [[Media:image_snap_example.bsh]] - Shows how to snap (but not display) an image
 
@@ -14,10 +14,13 @@ These beanshell scripts can be run by loading them into the 'Scripting Console' 
 
 [[Media:live_demo.bsh]] - Shows how to process an image during acquisition.  Needs the DemoStreamingCamera to work.
 
-[[Media:multi.bsh]] - Shows how to acquire a multi-channel image.  Will need editing to match current channel definitions.
+[[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.
 
-[[Media:sdemo1.bsh]] - Hello World
+[[Media:testAcq.bsh]] - Demonstrates how to perform 5D image acquisition using the gui object. 
 
-[[Media:sdemo2.bsh]] - Shows how to use ImageJ functionality within the Beanshell environment
+[[Media:Init.bsh]] - Shows how to configure the sytem programmatically, i.e. without using configuration files. The GUI changes will not be visible until you manually run the command 'Rebuild GUI' or 'Refresh GUI' (Tools menu).
+
+[[Media:config_test.bsh]] - Shows how to define config groups programmatically.  Will work with the demo-configuration.
+
 
 --[[User:Nico|Nico]] 21:04, 15 December 2007 (PST)
