@@ -1,8 +1,10 @@
 Micro-Manager has build-in scripting capabilities.  Scripts are written in [http://www.beanshell.org/ Beanshell], which is an interpreted language with a syntax very similar to Java. Scripts are edited and run from the ScriptPanel (in the Tools menu):
 [[Image:ScriptPanel.png]]
 
-Scripts (files) can be added to the Script Button Panel.  They can be run with the 'Run' button or by double clicking the script name.  This will run the script as it is save in the filesystem, i.e., changes made in the editor will not be run (use the right-most run button for that purpose).  This allows you to edit scripts in an external editor but still conveniently run them within Micro-Manager.
+Scripts (files) can be added to the Script-Button Panel.  They can be run with the 'Run' button or by double clicking the script name.  This will run the script as it is saved in the filesystem, i.e., changes made in the editor will not be run (use the right-most run button for that purpose).  This allows you to edit scripts in an external editor but still conveniently run them within Micro-Manager.
 
 Single lines of script can be executed in the 'Immediate Pane'.  The immediate pane has a history, use the up and down arrows to scroll through the executed script lines.  
 
 The editor pane contains a decent editor with syntax color highlighting and copy-paste capabilities.
+
+Scripts have access to two Micro-Manager specific objects: the Micro-Manager Core (mmc) and the Micro-Manager GUI (gui).  The [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] allows for relatively low level access to Micro-Manager functionality, whereas the gui object makes it easy to accomplish more complicated tasks.  A number of example scripts is available.
