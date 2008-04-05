@@ -12,6 +12,6 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] - Documentation of the mmc Micro-Manager core object
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
-''Building the software (developers only)''
+''Building the software (for developers)''
    [[Building ACE on the Mac]] - How to build ACE on the Mac
    [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
