@@ -6,6 +6,6 @@ Scripts (files) can be added to the Script-Button Panel.  They can be run with t
 
 Single lines of script can be executed in the 'Immediate Pane'.  The immediate pane has a history, use the up and down arrows to scroll through the executed script lines.  
 
-The editor pane contains a decent editor with syntax color highlighting and copy-paste capabilities.
+The editor pane contains an editor with syntax color highlighting and copy-paste capabilities.
 
-Scripts have access to two Micro-Manager specific objects: the Micro-Manager Core (mmc) and the Micro-Manager GUI (gui).  The [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] allows for relatively low level access to Micro-Manager functionality, whereas the [http://valelab.ucsf.edu/~nico/ScriptInterface.html gui object] makes it easy to accomplish more complicated tasks.  A number of example scripts is available.
+Scripts have access to two Micro-Manager specific objects: the Micro-Manager Core (mmc) and the Micro-Manager GUI (gui).  The [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] allows for relatively low level access to Micro-Manager functionality, whereas the [http://valelab.ucsf.edu/~nico/ScriptInterface.html gui object] makes it easy to accomplish more complicated tasks.  A number of [[Example Beanshell scripts]] is available.
