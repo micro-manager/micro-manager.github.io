@@ -11,7 +11,7 @@
 <tr><td>'''Micro-Manager version:'''</td><td>>=1.2.7</td></tr>
 </table>
 
-This adapter controls stages connected to PI SCPI Controllers. The SCPI command set was discontinued about 5 years ago and has been replaced by the GCS command set, so this adapter will only work with older controllers.  It has been tested with the E-662 controller but should work with all PI controllers that support SCPI and can be connected via a serial interface.  For current PI controller use the PI_GCS adapter instead. 
+This adapter controls stages connected to PI SCPI Controllers. The SCPI command set was discontinued about 5 years ago and has been replaced by the GCS command set, so this adapter will only work with older controllers.  It has been tested with the E-662 controller but should work with all PI controllers that support SCPI and can be connected via a serial interface.  For current PI controller use the [[PI_GCS]] adapter instead. 
 
 The PI adapter is available since version 1.2.08. 
 
