@@ -20,6 +20,8 @@ These beanshell scripts can be run loading from to the 'Script Panel' (in the 'T
 
 [[Media:manualAcq.bsh]] - Executes 5D acquisition, prompting the user to change the filters/dichroics between channel changes
 
+[[Media:PositionList.bsh]] - Shows how to build a positionList programmatically
+
 [[Media:Init.bsh]] - Shows how to configure the sytem programmatically, i.e. without using configuration files. The GUI changes will not be visible until you manually run the command 'Rebuild GUI' or 'Refresh GUI' (Tools menu).
 
 [[Media:config_test.bsh]] - Shows how to define config groups programmatically.  Will work with the demo-configuration.
