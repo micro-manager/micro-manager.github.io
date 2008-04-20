@@ -18,4 +18,5 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
 
 ''Building the software (for developers)''
    [[Building ACE on the Mac]] - How to build ACE on the Mac
+   [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
    [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
