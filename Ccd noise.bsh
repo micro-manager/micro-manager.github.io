@@ -1,0 +1,101 @@
+import ij.*;
+import ij.gui.*;
+import ij.process.*;
+import ij.measure.*;
+//------------------------------------------------------------------------------------
+// Determine CCD noise
+// The script determines the CCD readout noise in the following way
+// (1) - record two dark frames with zero exposure
+// (2) - calculate the difference image of these two frames
+// (3) - calculate the stdDev of the difference image
+// (4) - divide result by sqrt(2) to obtain noise for a single dark frame
+//
+// I do not guarantee for correct results using this method! For further informatiom
+// use th internet. Feel free to modify and improve it.
+// By Sebastian Rhode (Sebastian.Rhode@gmx.de), 2008-04-28
+//------------------------------------------------------------------------------------
+
+// clear all previous acquisitions
+gui.closeAllAcquisitions();
+gui.clearMessageWindow();
+
+mmc.setExposure(0); // Zero-Exposure --> No light conditions required for noise calculation !!!
+
+// record 2 dark images with Zero-Exposure
+dp0 = mmc.getImage(); // snap dark picture 0
+dp1 = mmc.getImage(); // snap dark picture 1
+
+// get image dimensions
+width = mmc.getImageWidth();
+height = mmc.getImageHeight();
+byteDepth = mmc.getBytesPerPixel();
+
+// create image processors
+if (mmc.getBytesPerPixel() == 1) {
+   // 8-bit grayscale
+	ip_dp0 = new ByteProcessor((int)width, (int)height);
+	ip_dp1 = new ByteProcessor((int)width, (int)height);
+	ip_diff = new ByteProcessor((int)width, (int)height);
+} else if (mmc.getBytesPerPixel() == 2) {
+	// 16-bit grayscale
+	ip_dp0 = new ShortProcessor((int)width, (int)height);
+	ip_dp1 = new ShortProcessor((int)width, (int)height);
+	ip_diff = new ShortProcessor((int)width, (int)height);
+}
+
+// create required ImageJ objects for display
+imp_dp0 = new ImagePlus("Dark Picture dp0", ip_dp0);
+imc_dp0 = new ImageCanvas(imp_dp0);
+imwin_dp0 = new ImageWindow(imp_dp0, imc_dp0);
+// set pixels, rescale and update the display
+imwin_dp0.getImagePlus().getProcessor().setPixels(dp0);
+imwin_dp0.getImagePlus().getProcessor().resetMinAndMax();
+imwin_dp0.getImagePlus().updateAndDraw();
+// -----------------------------------------------------------------------
+imp_dp1 = new ImagePlus("Dark Picture dp1", ip_dp1);
+imc_dp1 = new ImageCanvas(imp_dp1);
+imwin_dp1 = new ImageWindow(imp_dp1, imc_dp1);
+// set pixels, rescale and update the display
+imwin_dp1.getImagePlus().getProcessor().setPixels(dp1);
+imwin_dp1.getImagePlus().getProcessor().resetMinAndMax();
+imwin_dp1.getImagePlus().updateAndDraw();
+// -----------------------------------------------------------------------
+
+// create a new difference image
+ImagePlus imp_diff = new ImagePlus("Difference Image", ip_diff);
+
+// calculate difference image
+for (int x=0; x<width; x++) {  
+	for (int y=0; y<height; y++) {
+		// subtraction darkc picture 0 - dark picture 1
+		double v = ip_dp0.getPixel(x, y) - ip_dp1.getPixel(x, y);
+		ip_diff.putPixelValue(x, y, v);
+	}
+}
+imc_diff = new ImageCanvas(imp_diff);
+imwin_diff = new ImageWindow(imp_diff, imc_diff);
+// set pixels and update the display
+imwin_diff.getImagePlus().getProcessor().resetMinAndMax();
+imwin_diff.getImagePlus().updateAndDraw();
+		
+// do the statistics
+ImageStatistics st0		= imp_dp0.getStatistics();
+ImageStatistics st1		= imp_dp1.getStatistics();
+ImageStatistics st_diff = imp_diff.getStatistics();
+double[]min = new double[3];
+double[]max	= new double[3];
+double[]mean= new double[3];
+double[]std	= new double[3];
+
+min[0]	= st0.min;		min[1]	= st1.min;		min[2]	= st_diff.min;
+max[0]	= st0.max;		max[1]	= st1.max;		max[2]	= st_diff.max;
+mean[0]	= st0.mean;		mean[1]	= st1.mean;		mean[2]	= st_diff.mean;
+std[0]	= st0.stdDev;	std[1]	= st1.stdDev;	std[2]	= st_diff.stdDev;
+
+//-------- Results for StdDev for one image --> Readout Noise of CCD in counts
+double readout_noise			= std[2]/Math.sqrt(2);
+
+gui.message("DARK Frame 1  --> MIN: " + min[0] + "  MAX: " + max[0] + "  MEAN: " + mean[0]);
+gui.message("DARK Frame 2  --> MIN: " + min[1] + "  MAX: " + max[1] + "  MEAN: " + mean[1]);
+gui.message("DIFF Frame    --> MIN: " + min[2] + "  MAX: " + max[2] + "  MEAN: " + mean[2]);
+gui.message("Readout Noise: " + readout_noise + "[cts]");
