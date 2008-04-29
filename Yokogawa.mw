@@ -9,6 +9,6 @@
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-This adapter interfaces to the [http://www.yokogawa.co.jp Yokogawa] [http://www.yokogawa.co.jp/SCANNER/english/products/csu22e.html CSU22].  There is no additional software needed.  Connect the CSU22 to an available serial port on your computer (you will need a special adapter for this at the CSU22 end, I guess it comes with the confocal).  Serial port settings are standard (9600 baud).  You will need to defined the ''Hub'' device, and assign the right serial port to it. I do not know whether this adapter will work with the newer CSU-X1.
+This adapter interfaces to the [http://www.yokogawa.co.jp Yokogawa] [http://www.yokogawa.co.jp/SCANNER/english/products/csu22e.html CSU22].  There is no additional software needed.  Connect the CSU22 to an available serial port on your computer (you will need a special adapter for this at the CSU22 end, I guess it comes with the confocal).  Serial port settings are standard (9600 baud).  You will need to defined the ''Hub'' device, and assign the right serial port to it. 
 
 --[[User:Nico|Nico]] 17:10, 8 September 2007 (PDT)
