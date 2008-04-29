@@ -7,6 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>Yokogawa CSUX Hub, Filter Wheel, Dichroic, Shutter, DriveSpeed</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>1.2.11</td></tr>
 </table>
 
 This adapter interfaces to the [http://www.yokogawa.co.jp Yokogawa] [http://www.yokogawa.com/scanner/products/csuX1e.htm CSUX] family of spinning disk confocal scanheads.  There is no additional software needed.  Connect the CSUX controller to an available serial port on your computer.  Serial port settings are standard (115200 baud).  You will need to defined the ''Hub'' device, and assign the right serial port to it. 
