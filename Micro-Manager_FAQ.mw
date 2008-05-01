@@ -14,3 +14,11 @@ First, contact the manufacturer of the hardware and express your interest in a M
 Send an email describing your problem to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Micro-Manager mailing list].  Describe your system in as much detail as possible (OS, attached hardware), and describe the steps that lead to the problem you encounter as well as the error message you see. Include the configuration file that you are using (the *.cfg file you select on startup).  
 
 If the problem is not resolvable by email, you will need to send more debug information. To do so, go to the 'Tools' menu in Micro-Manager and select 'Options...'. Click the 'Clear log file' button and make sure that the 'Debug log enabled' checkbox is checked.  Now repeat the steps that cause the error and then email the file 'CoreLog.txt' (in your Micro-Manager directory) to [mailto::info@micro-manager.org info@micro-Manager.org] together with your config file and a description of the problem. We will likely need your help to test some code modifications to deal with your problem.
+
+=== Citing Micro-Manager ===
+You can cite either:<br>
+Stuurman, N., Amodaj N., Vale, R.D. (2007). Micro-Manager: Open Source software for light microscope imaging. Microscopy Today. 15(3):42-43.<br>
+and/or the website:<br>
+µManager (http://www.micro-manager.org)
+
+Also, please update  "[[Papers citing Micro-Manager]]" with a reference to your paper. We will need this information to secure future funding.
