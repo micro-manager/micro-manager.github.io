@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Controls ASI XY, Z stages and CRIF</td></tr>
-<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIF by Nico Stuurman.  Currently maintained by Nico Stuurman</td></tr>
+<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIF and AZ100 Turret by Nico Stuurman.  Currently maintained by Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage, ZStage, CRIF, AZ100 Turret</td></tr>
