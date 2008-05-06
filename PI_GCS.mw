@@ -13,9 +13,7 @@
 
 This adapter controls stages connected to PI GCS Controllers. It has been tested with E-816-based controllers (E-665, E-621, E-625), as well as with the E-753, E-712 and C-848 but should work also with all PI controllers that support the GCS (General Command Set) and can be connected via a serial interface (C-880, C-702, ...).
 
-The PI adapter is available since version 1.2.07. 1.2 will be brought very soon in beta. In the meantime, version 1.2 alpha can be accessed here: http://valelab.ucsf.edu/~nenad/micro-manager1.2. Or contact the developers of Micro-Manager.
-
-All communications to devices take place through serial ports. Currently micro-manager only supports baudrates up to 57600 baud. Many PI controllers have 115200 baud as default. This must be changed (only once) in order to connect with Micro-Manager. Use the provided software from PI or a terminal program to connect with the controller and change the default baudrate. For E-816 based controllers this can be done with the "BDR" command:
+All communications to devices take place through serial ports. For some controllers you may need to set the serial port to 'hardware handshaking'.  The baudrate of the controller can be changed (defaults to 115.200 baud). Use the provided software from PI or a terminal program to connect with the controller and change the default baudrate. For E-816 based controllers this can be done with the "BDR" command:
 
  BDR 57.6
  BDR?
