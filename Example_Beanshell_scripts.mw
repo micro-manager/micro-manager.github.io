@@ -12,6 +12,8 @@ These beanshell scripts can be run loading from to the 'Script Panel' (in the 'T
 
 [[Media:image_snap_example_2.bsh]] - Shows how to snap and display an image.   The image window must already be open (Snap an image once manually before running the plugin).
 
+[[Media::snapAndMeasure.bsh]] - Shows how to use the ImageJ 'Measure' command that updates with every new image snapped.
+
 [[Media:live_demo.bsh]] - Shows how to process an image during acquisition.  Needs the DemoStreamingCamera to work.
 
 [[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.
