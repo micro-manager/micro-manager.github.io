@@ -10,3 +10,5 @@
 
 This adapter controls Pecon TempControl device. No additional software is needed and should work on all platforms (so far tested only on Windows). Port commands were generously provided by PeCon GmbH.
 Serial port settings are 300 baud, 8 data bits, 2 stop bits, no parity, no handshaking. You will need to define the 'Pecon' device and assign it to the correct port. More devices are planned to be supported by this adapter soon.
+
+--[[User:Peto|Peter]] 16:41, 30 May 2008 (CET)
