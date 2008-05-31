@@ -12,6 +12,10 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] - Documentation of the mmc Micro-Manager core object
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
+''Coordinates and Directionality in Micro-Manager''
+   [[Coordinates-Overview]]
+
+
 ''User contributed adapters and notes''
 
 Some of the Micro-Manager users have written adapters that have not (yet) been incorporated into the Micro-Manager distribution.  We'll keep information on these adapters right here.
