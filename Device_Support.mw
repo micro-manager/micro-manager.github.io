@@ -4,9 +4,10 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 
 ''Motorized Microscopes''
    [[NikonTE2000]] - Nikon TE2000 motorized microscope
+   [[NikonTI]] - Nikon TI microscope
+   [[NikonAZ100]] - Nikon AZ100 Zoom microscope
    [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
    [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
-   [[ZeissMTB]] - Zeiss MTB (not MTB2004) compatible microscopes
 ''Cameras''
    [[Andor]] - Andor EM cameras
    [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
