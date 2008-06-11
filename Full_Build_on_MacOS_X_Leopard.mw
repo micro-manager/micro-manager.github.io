@@ -21,11 +21,11 @@ cd ace
 cat > config.h <<EOF
 #include "ace/config-macosx-leopard.h"
 EOF
-cat > $ACE_ROOT/include/makeinclude/platform_macros.GNU <<EOF
+cat > ${ACE_ROOT}/include/makeinclude/platform_macros.GNU <<EOF
 debug = 1
 shared_libs = 0
 static_libs = 1
-include $(ACE_ROOT)/include/makeinclude/platform_macosx_leopard.GNU
+include ${ACE_ROOT}/include/makeinclude/platform_macosx_leopard.GNU
 EOF
 # Make (NB inside ace dir, so not whole tree)
 make 
