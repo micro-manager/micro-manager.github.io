@@ -5,6 +5,20 @@ but I would recommend cut/paste into terminal chunk by chunk.  Note that for lib
 (firewire cameras on macosx/linux and perhaps PC)  I have provided both a build from SVN and a 
 build from the current stable tarball (2.0.1).
 
+Finally to build Micro-manager you will need an up to date [http://www.gnu.org/software/autoconf/ gnu autotools].  From my experience MacOS X Leopard works out of the box, but on Tiger you will need to update.  
+
+Here are download links for versions I have.
+
+ - [http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.tar.gz autoconf 2.59] installed on my Tiger system seems to be fine 
+ - [ftp://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz automake 1.10.1] NB automake 1.9.6 fails
+ - [http://ftp.gnu.org/gnu/libtool/libtool-1.5.22.tar.gz libtool 1.5.22] later versions presumably ok
+
+Once you are done, make quite sure that you are using the latest versions that you have installed:
+
+  autoconf --version
+  libtool --version
+  automake --version
+
 Hope it works for you! Greg Jefferis <jefferis@gmail.com>
 
 <code><pre>
