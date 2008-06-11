@@ -12,7 +12,7 @@ Hope it works for you! Greg Jefferis <jefferis@gmail.com>
 
 # Download ACE
 curl -O http://download.dre.vanderbilt.edu/previous_versions/ACE-5.6.3.tar.bz2
-tar bxvf ACE-5.6.3.tar.bz2
+tar jxvf ACE-5.6.3.tar.bz2
 # Get started
 cd ACE_wrappers
 export ACE_ROOT=`pwd`
