@@ -9,6 +9,6 @@
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-This adapter controls the [http://www.sutter.com/ Sutter] [http://www.sutter.com/products/product_sheets/Lambda_DG-4.html DG4] and [http://www.sutter.com/products/imaging.html other hardware] through the lambda 10 family of controllers.  Currently, only the serial interface to these devices (not parallel port) has been implemented.
+This adapter controls the [http://www.sutter.com/ Sutter] [http://www.sutter.com/products/product_sheets/Lambda_DG-4.html DG4] and [http://www.sutter.com/products/imaging.html other hardware] through the Lambda 10 family of controllers.  This includes the Lambda 10-2 (Wheels A and B and Shutters A and B), 10-3 (Wheels A, B, and C and Shutters A and B), and SC (Shutter A). Currently, only the serial interface to these devices (not parallel port or USB) has been implemented.
 
 --[[User:Nico|Nico]] 09:36, 8 September 2007 (PDT)
