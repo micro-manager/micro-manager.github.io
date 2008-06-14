@@ -1,7 +1,7 @@
 == Sutter hardware adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces to Sutter lambda 10 controllers and DG4</td></tr>
+'''Summary:'''</td><td>Interfaces to Sutter Lambda 10 controllers, Lambda SC controller, and DG4</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
