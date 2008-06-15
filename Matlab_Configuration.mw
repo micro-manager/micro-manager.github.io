@@ -11,9 +11,9 @@ Example configurations from Roy Wollman:
 
 I'm not sure why, but the new version of Micro-Manager requires an additional import step:
 
->> import mmcorej.*;
->> mmc=CMMCore; 
->> mmc.loadSystemConfiguration ('my_config.cnf');
+>> import mmcorej.*;<br>
+>> mmc=CMMCore;<br> 
+>> mmc.loadSystemConfiguration ('my_config.cnf');<br>
 
 If that doesn't work, I would try to create a simple HelloWorld.jar 
 file and see if you can create a object of the HelloWorld class first. 
