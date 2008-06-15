@@ -12,6 +12,10 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] - Documentation of the mmc Micro-Manager core object
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
+''Matlab and Micro-Manager''
+   [[Matlab Configuration]] - Setting up Matlab to run Micro-Manager
+   [[Roboscope project]] - Roy Wollman's Roboscope project
+
 ''Coordinates and Directionality in Micro-Manager''
    [[Overview]] - 
 
