@@ -9,9 +9,4 @@ The toolbox includes other features such as the ability of the rS object  to dec
 Anyway, I will post again when it will be a 'real' release, but I figured since there were a discussion on scripting and micro-manager I should post this update.
 
 The code can be accessed at:
-http://microscopytoolbox.googlecode.com<br>
-Use:<br>
-svn checkout http://microscopytoolbox.googlecode.com/svn/trunk/ microscopytoolbox-read-only
-<br> to checkout the code.
-
-{{Programming_Sidebar}}
+http://microscopytoolbox.googlecode.com
