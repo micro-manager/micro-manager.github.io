@@ -11,5 +11,5 @@ Anyway, I will post again when it will be a 'real' release, but I figured since 
 The code can be accessed at:
 http://microscopytoolbox.googlecode.com<br>
 Use:<br>
-"svn checkout http://microscopytoolbox.googlecode.com/svn/trunk/ microscopytoolbox-read-only"
+svn checkout http://microscopytoolbox.googlecode.com/svn/trunk/ microscopytoolbox-read-only
 <br> to checkout the code.
