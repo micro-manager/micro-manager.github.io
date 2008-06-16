@@ -6,44 +6,21 @@ On Windows, the native library file is MMCoreJ_wrap.dll and it must reside eithe
 
 MMCore can be used in Matlab through its Java interface. After setting up the Java environment as described above, MMCoreJ.jar must be added to Matlab Java class path and the directory for the MMCore dynamic libraries (including MMCoreJ_wrap) must be added to the system path.
 
+The following recipe has worked in the past:
 
-Example configurations from Roy Wollman:
+Matlab has an extensive Java support which makes things easy, just do the following: 
 
-I'm not sure why, but the new version of Micro-Manager requires an additional import step:
+1. Install Micro-Manager in a path without any spaces. 
+2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable. 
+3. In command prompt
+ >> edit classpath.txt 
+Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end. 
+4. In command prompt
+ >> edit librarypath.txt 
+Add the location of the dll files. 
+5. Restart Matlab 
+6. create a java object of class MMCcore
 
 >> import mmcorej.*;<br>
 >> mmc=CMMCore;<br> 
 >> mmc.loadSystemConfiguration ('my_config.cnf');<br>
-
-If that doesn't work, I would try to create a simple HelloWorld.jar 
-file and see if you can create a object of the HelloWorld class first. 
-
-Below are snippets from different files on my scope: 
-
-
-The classpath.txt 
-
-==============
-...
-$matlabroot/java/jarext/xml-apis.jar
-glnxa64=$matlabroot/java
-/jarext/jogl.a64.jar
-$matlabroot/java/jarext/jogl.jar 
-mac=/System/Library/Java
-C:/Micro-Manager/plugins/Micro-Manager/MMCoreJ.jar
-C:/Micro-Manager/plugins/Micro-Manager/HelloWorld.jar
-
-Notice that I tested the config with a HelloWorld.jar
-
-The librarypath.txt
-===============
-...
-$matlabroot/bin/$arch
-C:\Micro-Manager\
-
-The Scope initialization code:
-=====================
-...
-import mmcorej.*;
-rS.mmc=CMMCore;
-rS.mmc.loadSystemConfiguration (config_file);
