@@ -29,6 +29,7 @@ Add the location of the dll files, for instance:
 C:\Micro-Manager1.2
 
 5. Restart Matlab 
+
 6. create a java object of class MMCcore
 
 >> import mmcorej.*;<br>
