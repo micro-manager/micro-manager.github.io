@@ -1,4 +1,4 @@
-Using Micro-Manager from your Matlab environment.
+'''Using Micro-Manager from your Matlab environment.'''
 
 The Micro-Manager Core Java API is contained in the file MMCoreJ.jar.  Any Java program (including Matlab) that wants to use the Micro-Manager API needs to put MMCoreJ.jar in its ClassPath.  When CMMCore Java object is first created in the calling program it will automatically attempt to load native library MMCoreJ_wrap. This library must be visible to the Java run-time. Default locations and exact names of libraries are platform dependent.
 
@@ -6,12 +6,14 @@ On Windows, the native library file is MMCoreJ_wrap.dll and it must reside eithe
 
 MMCore can be used in Matlab through its Java interface. After setting up the Java environment as described above, MMCoreJ.jar must be added to Matlab Java class path and the directory for the MMCore dynamic libraries (including MMCoreJ_wrap) must be added to the system path.
 
-The following recipe has worked in the past:
 
+'''The following recipe has worked in the past:'''
 Matlab has an extensive Java support which makes things easy, just do the following: 
 
 1. Install Micro-Manager in a path without any spaces. 
+
 2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable. 
+
 3. In command prompt
  >> edit classpath.txt 
 Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end. 
