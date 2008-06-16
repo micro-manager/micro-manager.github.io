@@ -11,9 +11,9 @@ MMCore can be used in Matlab through its Java interface. After setting up the Ja
 
 Matlab has an extensive Java support which makes things easy, just do the following: 
 
-1. Install Micro-Manager in a path without any spaces. 
+1. Install Micro-Manager in a path without any spaces (for instance: C:\Micro-Manager1.2). 
 
-2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable. 
+2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable (Start->Settings->Control Panel->System->Advanced->Environment Variables, make a new 'User variable for Administrator named 'PATH' and set it to the location of Micro-Manager (for instance: C:\Micro-Manager1.2). 
 
 3. In Matlab command prompt
  >> edit classpath.txt 
@@ -23,7 +23,7 @@ C:/Micro-Manager1.2/plugins/Micro-Manager/MMCoreJ.jar
 
 C:/Micro-Manager1.2/plugins/Micro-Manager/MMJ_.jar
 
-4. In command prompt
+4. In Matlab command prompt
  >> edit librarypath.txt 
 Add the location of the dll files, for instance:
 C:\Micro-Manager1.2
