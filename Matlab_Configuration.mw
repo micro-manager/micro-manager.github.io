@@ -36,4 +36,21 @@ C:\Micro-Manager1.2
 >> mmc.loadSystemConfiguration ('C:\Micro-Manager1.2\MMConfig_demo.cfg');<br>
 
 
-The Micro-Manager API is described here: [http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html
+The Micro-Manager API is described here: http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html
+
+
+The following simple script will snap an image and display it in matlab:
+
+>> mmc.snapImage();
+
+>> img=mmc.getImage();
+
+>> width=mmc.getImageWidth();
+
+>> height=mmc.getImageHeight();
+
+>> img2=typecast(img,'uint8');
+
+>> img2=reshape(img2,[height,width]);
+
+>> imshow(img2);
