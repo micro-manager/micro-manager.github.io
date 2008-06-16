@@ -8,6 +8,7 @@ MMCore can be used in Matlab through its Java interface. After setting up the Ja
 
 
 '''The following recipe has worked in the past:'''
+
 Matlab has an extensive Java support which makes things easy, just do the following: 
 
 1. Install Micro-Manager in a path without any spaces. 
