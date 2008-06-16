@@ -33,4 +33,7 @@ C:\Micro-Manager1.2
 
 >> import mmcorej.*;<br>
 >> mmc=CMMCore;<br> 
->> mmc.loadSystemConfiguration ('my_config.cnf');<br>
+>> mmc.loadSystemConfiguration ('C:\Micro-Manager1.2\MMConfig_demo.cfg');<br>
+
+
+The Micro-Manager API is described here: [http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html
