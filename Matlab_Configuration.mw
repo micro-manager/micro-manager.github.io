@@ -15,12 +15,19 @@ Matlab has an extensive Java support which makes things easy, just do the follow
 
 2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable. 
 
-3. In command prompt
+3. In Matlab command prompt
  >> edit classpath.txt 
-Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end. 
+Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end, for instance:
+
+C:/Micro-Manager1.2/plugins/Micro-Manager/MMCoreJ.jar
+
+C:/Micro-Manager1.2/plugins/Micro-Manager/MMJ_.jar
+
 4. In command prompt
  >> edit librarypath.txt 
-Add the location of the dll files. 
+Add the location of the dll files, for instance:
+C:\Micro-Manager1.2
+
 5. Restart Matlab 
 6. create a java object of class MMCcore
 
