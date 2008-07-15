@@ -16,4 +16,4 @@ This adapter does not work with all cameras that are DCAM compatible.  All firew
 ''For developers:'' To compile this code you will need the DCAM-SDK from Hamamatsu.  We cannot provide this SDK.  Contact your Hamamatsu dealer if you wish to build this code yourself.
 
 
---[[User:Nico|Nico]] 12:38, 25 August 2007 (PDT)
+--[[User:Nico|Nico]] 12:38, 15 July 2008 (PDT)
