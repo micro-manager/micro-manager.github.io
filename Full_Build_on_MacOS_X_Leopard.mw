@@ -45,7 +45,7 @@ EOF
 make 
 # Install
 sudo ln -s $ACE_ROOT/ace /usr/local/include/ace
-sudo ln -s /Users/jefferis/dev/video/ACE_wrappers/ace/libACE.a /usr/local/lib/
+sudo ln -s $ACE_ROOT/ace/libACE.a /usr/local/lib/
 
 # swig NB more recent versions fail (including Leopard's 1.3.31)
 curl -O http://kent.dl.sourceforge.net/sourceforge/swig/swig-1.3.24.tar.gz
