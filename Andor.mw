@@ -11,7 +11,7 @@
 
 Andor has greatly reworked this adapter (as of Micro-Manager version 1.1.44) and tested the adapter with iXon+ EMCCD range and the Luca-S/Luca-R USB2.0 EMCCD cameras. They have also added support for the 'traditional' (non-EM) read-out mode of iXon+, as well as for iCam features across the cameras, which allows for much more rapid switching of exposure times than previously possible. More information on iCam features can be found: http://www.andor.com/products/software/?app=686. To use the iCam features, you may need to upgrade the firmware of your camera and the PCI card. Information on how to do this can be found at http://www.andor.com/products/software/?app=687.
 
-This adapter of previous versions defines two devices: the actual camera (Ixon+) and the shutter in front of the camera (IxonShutter). The shutter device has been removed and you will need to remove it from your configuration file. The shutter can now be controlled as a property of the camera. For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups. 
+In previous Micro-Manager versions two devices were defined by this adapter: the actual camera (Ixon+) and the shutter in front of the camera (IxonShutter). The shutter device has been removed and you will need to remove it from your configuration file. The shutter can now be controlled as a property of the camera. For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups. 
 
 The adapter needs to know the location of the Andor driver if the camera in use is relatively old. Type in the full path to the Andor directory (default: C:\Program Files\Andor) in the Hardware configuration wizard. 
 
@@ -21,5 +21,7 @@ Other software packages take care to bring up the temperature of the camera grad
 
 This camera has two ‘gains’, EM gain and Pre-Amp gain. EM gain is currently called 'gain', as opposed to 'Pre-Amplifier-Gain'.
   
+A detailed description (including configuration file) on how to set up an Andor camera in Micro-Manager is available at the [http://www.neutronoptics.com/andor.html neutronoptics] website.
+
 
 --[[User:Nico|Nico]] 22:50, 20 December 2007 (PDT)
