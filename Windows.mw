@@ -1,4 +1,4 @@
-Although there are easier to use terminal programs in existance, Windows comes standard with 'Hyperterminal' that can be used to communicate through a serial port to devices.  Setting up Hyperterminal to this purpose is highly confusing.  The following step-by-step guide might help:
+Although there might be easier to use terminal programs out there, Windows comes standard with 'Hyperterminal' that can be used to communicate through a serial port to devices.  Setting up Hyperterminal to this purpose is highly confusing.  The following step-by-step guide might help:
 
 1. Start Hyperterminal (Start>All Programs>Accessories>Communications>Hyperterminal).
 
@@ -14,9 +14,7 @@ Although there are easier to use terminal programs in existance, Windows comes s
 
 7. You are now presented with a 'connect to' dialog.  Select the COM port that is attached to your device and click 'OK'
 
-8. On the 'COMx Properties' page, select the appropriate settings for your COM port (baud rate, data bits, parity, stop bits and flow control).  These settings can be found in the manual to your device.  Also, the Micro-Manager web site's Device Adapter pages sometimes contain some of this information.  Click 'OK'.
-
-[[Image:Hyperterminal.gif]]
+8. On the 'COMx Properties' page, select the appropriate settings for your COM port (baud rate, data bits, parity, stop bits and flow control).  These settings can be found in the manual to your device.  Also, the Micro-Manager Device Adapter wiki pages sometimes contain some of this information.  Click 'OK'.
 
 9. From the Menu, select File>Properties.  Click on the 'Settings' tab and the ASCII Setup button.  In that dialog, check 'Send line ends with line feeds', Echo typed characters locally', and 'Append line feeds to incoming line ends'.  Click 'OK', and 'OK'.  Save the settings you just created (File>Save).
 
