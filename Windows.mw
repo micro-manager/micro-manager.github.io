@@ -16,6 +16,8 @@ Although there might be easier to use terminal programs out there, Windows comes
 
 8. On the 'COMx Properties' page, select the appropriate settings for your COM port (baud rate, data bits, parity, stop bits and flow control).  These settings can be found in the manual to your device.  Also, the Micro-Manager Device Adapter wiki pages sometimes contain some of this information.  Click 'OK'.
 
+[[Image:Hyperterminal.gif]]
+
 9. From the Menu, select File>Properties.  Click on the 'Settings' tab and the ASCII Setup button.  In that dialog, check 'Send line ends with line feeds', Echo typed characters locally', and 'Append line feeds to incoming line ends'.  Click 'OK', and 'OK'.  Save the settings you just created (File>Save).
 
 10.  You can now open and close the COM port connection using the little phone icon in the menu bar, so that you can re-use this connection right away the next time you startup Hyperterminal.
