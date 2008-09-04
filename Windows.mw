@@ -1,4 +1,4 @@
-Although there might be easier to use terminal programs out there, Windows comes standard with 'Hyperterminal' that can be used to communicate through a serial port to devices.  Setting up Hyperterminal to this purpose is highly confusing.  The following step-by-step guide might help:
+Although there are easier to use terminal programs in existance, Windows comes standard with 'Hyperterminal' that can be used to communicate through a serial port to devices.  Setting up Hyperterminal to this purpose is highly confusing.  The following step-by-step guide might help:
 
 1. Start Hyperterminal (Start>All Programs>Accessories>Communications>Hyperterminal).
 
