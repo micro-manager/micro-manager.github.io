@@ -7,6 +7,8 @@ build from the current stable tarball (2.0.1).
 
 Finally to build Micro-manager you will need an up to date [http://www.gnu.org/software/autoconf/ gnu autotools].  From my experience MacOS X Leopard works out of the box, but on Tiger you will need to update.  
 
+Some optional steps are included that will make you build run on Mac OS X 10.4 (Tiger) as well (NS, 9/11/2008).
+
 Here are download links for versions I have.
 
  - [http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.tar.gz autoconf 2.59] installed on my Tiger system seems to be fine 
@@ -31,6 +33,8 @@ tar jxvf ACE-5.6.3.tar.bz2
 cd ACE_wrappers
 export ACE_ROOT=`pwd`
 cd ace
+# (Optional) To build a version compatible with Tiger (10.4) add:
+export CFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
 # Configure for MacOS X Leopard
 cat > config.h <<EOF
 #include "ace/config-macosx-leopard.h"
@@ -46,6 +50,11 @@ make
 # Install
 sudo ln -s $ACE_ROOT/ace /usr/local/include/ace
 sudo ln -s $ACE_ROOT/ace/libACE.a /usr/local/lib/
+# (Optional) To make you build compatible with Tiger (10.4):
+cd /Developer/SDKs/MacOSX10.4u.sdk/usr/local
+sudo ln -s /usr/local/include
+cd lib
+sudo ln -s /usr/local/lib/libACE.a
 
 # swig NB more recent versions fail (including Leopard's 1.3.31)
 curl -O http://kent.dl.sourceforge.net/sourceforge/swig/swig-1.3.24.tar.gz
@@ -79,6 +88,8 @@ cd micromanager1.2
 autoreconf -i -s
 export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 ./configure --with-imagej=/Applications/ImageJ/
+# (Optional) To make your build compatible with Tiger (10.4) use:
+./configure --with-imagej=/Applications/ImageJ/ CXXFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
 #./configure --with-imagej=/Applications/ImageJ/ --enable-static
 make -j 2
 cd MMDevice && make && cd ..
