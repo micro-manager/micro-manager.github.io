@@ -23,6 +23,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
    [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
    [[Ludl]] - Ludl stages, shutters and filter wheels 
+   [[MCL-MicroDrive]] - Mad City Labs MicroDrive
+   [[MCL-NanoDrive]] - Mad City Labs NanoDrive
    [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
    [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
    [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
