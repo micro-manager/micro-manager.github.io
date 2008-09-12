@@ -1,0 +1,11 @@
+== Mad City Labs NanoDrive adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Mad City Labs NanoDrive adapter</td></tr>
+<tr><td>'''Author:'''</td><td>Greg Sawyer (Mad City Labs)</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Devices:'''</td><td>Mad City Labs MicroDrive</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+<tr><td width=20%>'''Since version'''</td><td>1.2.36</td></tr>
+</table>
