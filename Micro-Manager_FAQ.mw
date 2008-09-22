@@ -17,10 +17,15 @@ If the problem is not resolvable through the email list, you will need to send m
 
 In some cases, even more debug output can be obtained by running Micro-Manager from a command terminal.  On the Mac:<br>
 1. open a terminal (Applications/Utilities/Terminal)<br>
-2. Type: 'cd /Applications/Micro-Manager1.2'<br>
-3. Start Micro-Manager by typing: 'java -cp ij.jar ij.ImageJ'<br>
+2. Type: cd /Applications/Micro-Manager1.2<br>
+3. Start Micro-Manager by typing: java -cp ij.jar ij.ImageJ<br>
 4. Copy relevant output from the terminal into your email.<br>
 
+On Windows:<br>
+1. open a terminal (Start->Run..., type 'cmd', click 'OK')<br>
+2. Type: cd "C:\Program Files\Micro-Manager1.2"<br>
+3. Start Micro-Manager by typing: jre\bin\java -cp ij.jar ij.ImageJ<br>
+4. Copy relevant output from the terminal into your email.<br>
 
 === Citing Micro-Manager ===
 You can cite either:<br>
