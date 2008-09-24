@@ -1,11 +1,29 @@
-== Mad City Labs NanoDrive adapter ==
+== Mad City Labs Nano-Drive&trade; adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Mad City Labs NanoDrive adapter</td></tr>
-<tr><td>'''Author:'''</td><td>Greg Sawyer (Mad City Labs)</td></tr>
+'''Summary:'''</td><td>Controls [http://www.madcitylabs.com/ Mad City Labs (MCL)] Nano-Drive&trade; XY(Z) and Z stages</td></tr>
+<tr><td>'''Author:'''</td><td>Mad City Labs</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>Mad City Labs MicroDrive</td></tr>
-<tr><td>'''Example Config File:'''</td><td></td></tr>
-<tr><td width=20%>'''Since version'''</td><td>1.2.36</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows 2000/XP/Vista (32 bit)</td></tr>
+<tr><td>'''Devices:'''</td><td>XY Stage, Z Stage</td></tr>
+<tr><td>'''Example Config File:'''</td><td>
+[[http://valelab.ucsf.edu/~nico/MMwiki/images/e/e0/MMConfig_MCL_NanoDrive.cfg Example Config File]] Sets up the Nano-Drive &trade; with the DemoCamera.</td></tr>
+</table>
+
+Controls the XY(Z) and Z stages of Mad City Lab's [http://www.madcitylabs.com/nanodrive.html Nano-Drive&trade;] series of controllers with USB digital interface installed.
+<br>
+<br>
+The Nano-Drive&trade; series of controllers are a complete electronic solution for precision positioning using Mad City Labs nanopositioners.  All controllers are closed-loop feedback enabled, which is essential for high-repeatability and sub-nanometer resolution for a nanopositioner. 
+
+The following properties are currently implemented in the Micro-Manager MCL Nano-Drive&trade; adapter:
+<br>
+<table>
+<tr><th>Property</th><th>Description</th></tr>
+
+<tr><td><b>Settling Time</b></td><td>
+<br>
+This value can be changed for each axis to set the time (in ms) the Nano-Drive&trade; waits after moving before reading the current position.  The default time is 100ms.  Please note that choosing an unreasonably small settling time will result in measurement errors.  Mad City Labs nanopositioner settling times are typically 1ms or greater, depending on system model and calibration settings.  Please contact MCL if you are unsure what are safe settling time values to input for your particular system model.</td></tr><br>
+<tr><td><b>Set Origin</b></td><td>
+<br>
+Sets the current position as the origin.  Please note that after setting the origin, you must exit the Device/Property Browser and then re-enter it to make sure the position slidebar takes the new origin into account.  In order to set the origin to the original orgin, click on the "Calibrate" button on the XY(Z) Position List.</td></tr>
 </table>
