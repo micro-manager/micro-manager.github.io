@@ -8,6 +8,7 @@
 <tr><td>'''Devices:'''</td><td>XY Stage, Z Stage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>
 [[http://valelab.ucsf.edu/~nico/MMwiki/images/e/e0/MMConfig_MCL_NanoDrive.cfg Example Config File]] Sets up the Nano-Drive &trade; with the DemoCamera.</td></tr>
+<tr><td width=20%>'''Since version'''</td><td>1.2.36</td></tr>
 </table>
 
 Controls the XY(Z) and Z stages of Mad City Lab's [http://www.madcitylabs.com/nanodrive.html Nano-Drive&trade;] series of controllers with USB digital interface installed.
