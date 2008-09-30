@@ -39,6 +39,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[ParallelPort]] - TTLs on parallel port (Windows only)
    [[Velleman K8055]] - Digital IO board (all platforms)
    [[Velleman K8061]] - DIgital IO board (all platforms)
+   [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers 
+   [[DAZStage]] - Connect a Z-stage to an analogue output and use this adapter to drive the stage position
 ''Other devices''  
    [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
    [[Conix]] - Conix Filter Changer
