@@ -1,4 +1,4 @@
-These beanshell scripts can be run loading from to the 'Script Panel' (in the 'Tools' menu).  Either load the script in the Script Button Panel (using the 'add' button), or open the script in the editor (using the 'open' button. 
+These beanshell scripts can be run from the 'Script Panel' (in the 'Tools' menu).  Either load the script in the Script Button Panel (using the 'add' button), or open the script in the editor (using the 'open' button. 
 
 [[Media:sdemo1.bsh]] - Hello World
 
@@ -22,7 +22,7 @@ These beanshell scripts can be run loading from to the 'Script Panel' (in the 'T
 
 [[Media:manualAcq.bsh]] - Executes 5D acquisition, prompting the user to change the filters/dichroics between channel changes
 
-[[Media:multiFastZStackASI.bsh]] - Script used at the ASCB meeting to synchronize Arduino, camera, AOTF and piezo stage to do fast multi-channel Z-stack acquistion
+[[Media:multiFastZStackASI.bsh]] - Script used at the ASCB meeting 2008 to synchronize Arduino, camera, AOTF and piezo stage to do fast multi-channel Z-stack acquistion
 
 [[Media:PositionList.bsh]] - Shows how to build a positionList programmatically
 
