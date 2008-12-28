@@ -1,0 +1,3 @@
+This page supplements the very helpful [http://www.micro-manager.org/raw_content/build_win_Liisa.htm instructions by Liisa.]
+
+* To build the ACE static libraries with Visual C++ 2008 Express (which is VC9.0), download ACE 5.6.7 and open ACE_vc9_Static.sln. Building ACE 5.4.7 with VC2008EE generates errors.
