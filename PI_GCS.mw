@@ -1,7 +1,7 @@
-== PI GCS Z Stage ==
+== PI GCS Driver for High-Speed Piezo Z Motion ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with [http://ww.pi.ws Physik Instrumente (PI)] GCS controllers and associated hardware</td></tr>
+'''Summary:'''</td><td>Interfaces with [http://www.pi.ws Physik Instrumente (PI)] GCS Piezo Controllers for fast Z motion stages</td></tr>
 <tr><td>'''Author:'''</td><td>Steffen Rau (PI) (based on code by Nico Stuurman and Nenad Amodaj)
 </td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
@@ -11,7 +11,9 @@
 <tr><td>'''Micro-Manager version:'''</td><td>>=1.2.7</td></tr>
 </table>
 
-This adapter controls stages connected to PI GCS Controllers. It has been tested with E-816-based controllers (E-665, E-621, E-625), as well as with the E-753, E-712 and C-848 but should work also with all PI controllers that support the GCS (General Command Set) and can be connected via a serial interface (C-880, C-702, ...).
+PI GCS driver is designed for high speed piezo Z motion and is compatible with all current PI piezo controllers.  PI piezo controllers are also compatible with analog input (via analog DAC board driver in uManager).  Piezo-Z motion is used for faster step times than motor-Z - typically about 10X faster.
+
+The adapter has been tested with E-816-based controllers (E-665, E-621, E-625), as well as with the E-753, E-712 and C-848 but should work also with all PI controllers that support the GCS (General Command Set) and can be connected via a serial interface (C-880, C-702, ...).
 
 All communications to devices take place through serial ports. For some controllers you may need to set the serial port to 'hardware handshaking'.  The baudrate of the controller can be changed (defaults to 115.200 baud). Use the provided software from PI or a terminal program to connect with the controller and change the default baudrate. For E-816 based controllers this can be done with the "BDR" command:
 
@@ -31,4 +33,4 @@ To use the PI Adapter, select "PI_GCS" as library and "PIZStage" as adapter in t
 
 The PIZstage can be synchronized with image acquisiton, which is only neccassary for motorized stages. There is no "Homing" for ZStages in micro-manager (yet). So if you need to initialize the stage with "Auto Zero" or by moving to a reference, you need to start the provided PI software or a terminal application to do this once after power on. (This does not affect E-816 based controllers (E-665, E-621, E-625) which do not need to be referenced)
 
---[[User:Steffen|Steffen]] 31 March 2008
+--[[User:Steffen|Steffen]] 15 January 2009
