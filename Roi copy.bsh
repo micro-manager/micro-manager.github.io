@@ -1,0 +1,35 @@
+import java.lang.Math;
+
+getROI() {
+	a = new int[4][1];
+	mmc.getROI(a[0],a[1],a[2],a[3]);
+	int[] roiRect = {a[0][0],a[1][0],a[2][0],a[3][0]};
+	return roiRect;
+}
+
+setROI(roiRect) {
+	mmc.setROI(roiRect[0],roiRect[1],roiRect[2],roiRect[3]);
+}
+
+// Set relative offset between cameras:
+int [] offset2 = {100,100};
+
+// Get current pixel size and ROI for first camera:
+mmc.setCameraDevice("Camera-1");
+double pixelSize1 = mmc.getPixelSizeUm();
+roi1 = getROI();
+
+// Get current pixel size for second camera:
+mmc.setCameraDevice("Camera-2");
+double pixelSize2 = mmc.getPixelSizeUm();
+
+// Compute ROI for second camera:
+
+ratio = pixelSize2 / pixelSize1;
+int [] roi2 = { offset2[0],
+					 offset2[1],
+					 Math.round(roi1[2] * ratio),
+					 Math.round(roi1[3] * ratio) };
+
+// Set ROI for second camera:
+setROI(roi2);
