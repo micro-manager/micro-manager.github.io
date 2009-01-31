@@ -1,0 +1,12 @@
+== ABS Camera adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Adapter for cameras from [http://www.kameras.abs-jena.de/produkte_de.html ABS]</td></tr>
+<tr><td>'''Author:'''</td><td>Michael Himmelreich</td></tr>
+<tr><td>'''License:'''</td><td>?</td></tr> 
+<tr><td>'''Platforms:'''</td><td>WindowsX</td></tr>
+<tr><td>'''Devices:'''</td><td>ABS cameras</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.3.18</td>
+</table>
+
+The code for this adapter was written by Micheal Himmelreich and donated to the Micro-Manager source code repository.
