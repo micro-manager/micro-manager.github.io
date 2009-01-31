@@ -10,7 +10,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
    [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
 ''Cameras''
-   [[ABSCameras]] - 
+   [[ABSCameras]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
    [[Andor]] - Andor EM cameras
    [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
    [[DemoCamera]] - Virtual, emulated equipment for testing
