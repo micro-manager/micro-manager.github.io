@@ -1,7 +1,7 @@
 == PCO/Cooke Sensicam camera ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [[http:// www.pco.de/sensitive-cameras/ PCO/Cooke Sensicam camera]]</td></tr>
+'''Summary:'''</td><td>Controls [http://www.pco.de/sensitive-cameras/ PCO/Cooke Sensicam camera]</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj (with bugfixes by Liisa Hervonen)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
@@ -9,6 +9,6 @@
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-This adapter was developed for the original Sensicam camera (but might work with the QE as well).  You will need to have the [[www.pco.de/drivers/sensicam-qe/ Sensicam driver]] to be installed.  
+This adapter was developed for the original Sensicam camera (but might work with the QE as well).  You will need to have the [http://www.pco.de/drivers/sensicam-qe/ Sensicam driver] to be installed.  
 
 --[[User:Nico|Nico]] 11:52, 3 September 2007 (PDT)
