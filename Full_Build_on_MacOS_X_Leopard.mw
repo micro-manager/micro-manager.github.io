@@ -56,14 +56,6 @@ sudo ln -s /usr/local/include
 cd lib
 sudo ln -s /usr/local/lib/libACE.a
 
-# swig NB more recent versions fail (including Leopard's 1.3.31)
-curl -O http://kent.dl.sourceforge.net/sourceforge/swig/swig-1.3.24.tar.gz
-tar zxvf swig-1.3.24.tar.gz 
-cd SWIG-1.3.24
-./configure
-make
-sudo make install
-
 # EITHER libdc1394 v2.0.1 (release version)
 VERSION="2.0.1"
 LIBDC="libdc1394-$VERSION"
