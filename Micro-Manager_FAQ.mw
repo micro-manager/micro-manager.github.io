@@ -5,7 +5,7 @@
 This annoyance is fixed in version 1.1.  [http://micro-manager.org/downloads.php Download] version 1.1 or higher and install.
 
 === Does Micro-Manager work with ... camera/microscope/etc? ===
-Check the list of supported hardware at [[here|wiki]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
+Check the list of supported hardware [[Device Support|here]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
 
 === I have some hardware that is not supported by Micro-Manager.  How do I make it work? ===
 First, contact the manufacturer of the hardware and express your interest in a Micro-Manager adapter.  We simply do not have the resources to work on every piece of hardware out there and we made an open interface so that everyone can write support for any piece of hardware.  We strongly encourage companies producing hardware to take care of Micro-Manager support themselves (and quite a few have already done so).  The company might be persuaded if they hear from enough customers.  Alternatively, you can write the adapter yourself, or find a friend with experience writing code in C++  (there are quite a few examples so it will not be extremely difficult).  There is a [http://micro-manager.org/downloads.php?object=devkit device developer's kit], and providing support to people writing device adapters is one of our top priorities.  Lastly, post your request to the  [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Micro-Manager mailing list].  We or others might be persuaded to work on this if we hear that people need it.
