@@ -2,7 +2,7 @@ Micro-Manager has build-in scripting capabilities.  Scripts are written in [http
 
 [[Image:ScriptPanel.png]]
 
-Scripts (files) can be added to the Script-Button Panel.  They can be run with the 'Run' button or by double clicking the script name.  The latter method will run the script as it is saved in the filesystem, i.e., changes made in the editor will not be run (use the right-most run button for that purpose).  This allows you to edit scripts in an external editor but still conveniently run them within Micro-Manager.
+Scripts (files) can be added to the Script-Button Panel.  They can be run with the 'Run' button or by double-clicking the script name.  The latter method will run the script as it is saved in the filesystem, i.e., changes made in the editor will not be run (use the right-most run button for that purpose).  This allows you to edit scripts in an external editor but still conveniently run them within Micro-Manager.
 
 Single lines of script can be executed in lower right panel, which is an interactive Beanshell interpreter (a read-evaluate-print loop).  The Beanshell interpreter has a history: use the up and down arrows to scroll through the executed Beanshell lines.
 
