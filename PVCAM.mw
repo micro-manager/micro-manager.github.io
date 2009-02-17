@@ -7,9 +7,10 @@
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested)</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_pvcam_simple.cfg]]</td></tr>
+<tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php PVCAM software]</td></tr>
 </table>
 
-This adapter should work with all PVCAM compatible camera on all platforms.  To use it, you will need to have the PVCAM software ([http://www.photomet.com/software/ download here]) installed and working. At the very least, the pvcam test application should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap and Cascade II cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Some properties are relatively hard-coded, so you will find a property for EM gain even if your camera does not have it (we are working on this).  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of the PVCAM adapter (older versions will lock up your Mac).  
+This adapter should work with all PVCAM compatible camera on all platforms.  To use it, you will need to have the  ([http://www.photomet.com/support/downloads/index.php PVCAM software]) installed and working. At the very least, the pvcam test application (included with PVCAM) should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap and Cascade II cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Some properties are relatively hard-coded, so you will find a property for EM gain even if your camera does not have it (we are working on this).  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of the PVCAM adapter (older versions will lock up your Mac).  
 
 
 If you encounter the following error message on startup:
