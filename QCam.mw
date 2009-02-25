@@ -18,3 +18,7 @@ To use this adapter, you must have version 2.0.4 or higher of the [[http://www.q
 Note: As of 11/25/08 the link provided above does not give the right driver version. You need to download the [[http://www.qimaging.com/support/downloads/legacy_qcamdriver.php legacy drivers]].
 
 --Hernan Garcia
+
+Note: The 2.0.0.4 version of the driver does not appear to have a link on the site but can still be got from the website at this [[http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe link]] (Tested on 25th Feb 2009).
+
+--Prashanth
