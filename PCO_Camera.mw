@@ -1,50 +1,36 @@
 == PCO generic camera interface ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO Cameras]</td></tr>
-<tr><td>'''Author:'''</td><td>Franz Reitner PCO AG (adapter), Thomas Bauersachs PCO AG (comments), Thomas Hartmann (comments)</td></tr>
+'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO/Cooke cameras]</td></tr>
+<tr><td>'''Author:'''</td><td>Franz Reitner, pco AG</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>
-           pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000, Sensicam, Pixelfly,</td></tr>
-<tr><td>'''New:'''</td><td>Camera Link HS interface, Lightsheet mode</td></tr>
-
-<tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
-
-
-This adapter has been developed for all PCO camera systems (B/W and color versions).
-
-Installation:<BR>
-a) download and install latest Micro-Manager Nightly build version<BR>
-b) add PCO camera specific dll files to your Micro-Manager directory<BR> 
-_______________________________________________________________
-
-Files needed for all PCO cameras:
-  pco_conv.dll
-  pco_cdlg.dll
-  sc2_cam.dll
-
-In case of Camera Link HS (CLHS) interface you also need:
-  sc2_clhs.dll
-
-In case of Camera Link (CL) interface you also need:
-  Silicon Software ME3: sc2_cl_me3.dll
-  Silicon Software ME4: sc2_cl_me4.dll
-  Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
-  National Instruments: sc2_cl_nat.dll
-
-Please copy the corresponding dll files into your Micro-Manager directory. These files should be found on your computer under C:\Program files\Digital Camera Toolbox\Camware. In case your system is 64bit see C:\Program files (x86)\Digital Camera Toolbox\Camware for the 32bit dlls and C:\Program files\Digital Camera Toolbox\Camware for the 64bit dlls (32/64 depends on your installation). If you are not administrator when installing the PCO camera software, it may install to C:\Users\(Your username)\AppData\Roaming, so you may need to look there as well.
-_______________________________________________________________
-
-Please refer to the following Installation Guide for further help:
-[File:[https://www.pco.de/fileadmin/user_upload/pco-manuals/MA_MICROMANAGER_200.pdf Installation Guide]]
-
---Thomas H 21 September 2017 (EDT)
---Thomas 10:50pm, 27 April 2012 (EDT)
-
-{{Listserv_Search|PCO}}
-
-{{Devices_Sidebar}}
+<tr><td>'''Devices:'''</td><td>PCO/Cooke Sensicam, PixelFly,
+           pco.camera (1600, 2000, 4000, 1200h(s), dimax)</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.3.24</td>
+</table>
 
 
-{{Devices_Sidebar}}
+This adapter was developed for all pco cameras. To run the adapter with a SensiCam or PixelFly, please install the [http://www.pco.de/de/treiber appropriate windows driver]. In case of a pco.camera please install the driver and copy the interface dll into the MicroManager directory.
+
+For all cameras (SensiCam, PixelFly, pco.camera) please copy the following file into the MicroManager folder:
+ pcocnv.dll
+
+In case you've got a pco.camera (<link to pco driver>http://www.pco.de/de/treiber/) series you'll have to copy the interface dll files to the MicroManager folder.
+This file is needed for all pco.camera interfaces:
+ sc2_cam.dll
+
+Additionally for the Matrox Cameralink interface:
+ sc2_cl_mtx.dll
+ clsermtx.dll
+ mtxclsermil.dll
+
+Additionally for the National Cameralink interface:
+ sc2_cl_nat.dll
+
+Additionally for the USB interface:
+ sc2_usb.dll
+
+All files mentioned above can be found either in the CamWare folder, or the sdk.
+
+--Franz 09:00, 23 February 2009 (CET)
