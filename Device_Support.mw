@@ -38,6 +38,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[SutterLambda]] - Sutter hardware
    [[Vincent]] - Vincent Uniblitz controllers
 ''Communication ports, TTLs, DAQs, etc..''
+   [[Arduino]] - Open Source Programmable Digital/Analogue IO board
    [[DTOpenLayer]] - DT OpenLayer Digital IO boards
    [[SerialManager]] - Serial Ports on Windows
    [[SerialManagerUnix]] - Serial Ports on Mac and Linux
