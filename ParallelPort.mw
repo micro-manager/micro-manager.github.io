@@ -11,7 +11,7 @@
 This adapter makes the parallel port availabel as a digital output device, i.e., it provides a way of setting TTLs.  It uses [http://www.logix4u.net/inpout32.htm inpout.dll] to talk to the parallel port. The pins in the parallel port are set using a single binary value, where each position in the number corresponds to a pin in the port.   
 
 For instance: <br>
-1024 (1111111111)  will set pins 1 through 10 high<br>
+1023 (1111111111)  will set pins 1 through 10 high<br>
 0    (0000000000) will set pins 1 through 10 low<br>
 6    (0110000000) will set pins 2 and 3 high and all others low.<br>
 
