@@ -16,7 +16,7 @@ This adapter was developed for all pco cameras. To run the adapter with a SensiC
 For all cameras (SensiCam, PixelFly, pco.camera) please copy the following file into the MicroManager folder:
  pcocnv.dll
 
-In case you've got a pco.camera (<link to pco driver>http://www.pco.de/de/treiber/) series you'll have to copy the interface dll files to the MicroManager folder.
+In case you've got a pco.camera (http://www.pco.de/de/treiber/) series you'll have to copy the interface dll files to the MicroManager folder.
 This file is needed for all pco.camera interfaces:
  sc2_cam.dll
 
@@ -25,12 +25,9 @@ Additionally for the Matrox Cameralink interface:
  clsermtx.dll
  mtxclsermil.dll
 
-Additionally for the National Cameralink interface:
+Additionally for the National Semiconductor Cameralink interface:
  sc2_cl_nat.dll
-
-Additionally for the USB interface:
- sc2_usb.dll
 
 All files mentioned above can be found either in the CamWare folder, or the sdk.
 
---Franz 09:00, 23 February 2009 (CET)
+--Franz 09:40, 11 March 2009 (CET)
