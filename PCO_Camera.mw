@@ -16,7 +16,7 @@ This adapter was developed for all pco cameras. To run the adapter with a SensiC
 For all cameras (SensiCam, PixelFly, pco.camera) please copy the following file into the MicroManager folder:
  pcocnv.dll
 
-In case you've got a pco.camera (http://www.pco.de/de/treiber/) series you'll have to copy the interface dll files to the MicroManager folder.
+In case you've got a pco.camera (driver: http://www.pco.de/de/treiber/) series you'll have to copy the interface dll files to the MicroManager folder.
 This file is needed for all pco.camera interfaces:
  sc2_cam.dll
 
