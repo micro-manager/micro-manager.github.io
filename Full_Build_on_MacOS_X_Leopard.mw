@@ -81,7 +81,8 @@ autoreconf -i -s
 export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 ./configure --with-imagej=/Applications/ImageJ/
 # (Optional) To make your build compatible with Tiger (10.4) use:
-./configure --with-imagej=/Applications/ImageJ/ CXXFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
+#./configure --with-imagej=/Applications/ImageJ/ CXXFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -mmacosx-version-min=10.4"
+# and for statically-linked components use:
 #./configure --with-imagej=/Applications/ImageJ/ --enable-static
 make -j 2
 cd MMDevice && make && cd ..
