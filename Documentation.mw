@@ -8,7 +8,7 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 
 ''Scripting in Micro-Manager''
    [[Script Panel GUI]] - Introduction to the Script Panel GUI
-   [http://valelab.ucsf.edu/~nico/ScriptInterface.html gui object] - Documentation of the GUI scripting object
+   [http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/ScriptInterface.html gui object] - Documentation of the GUI scripting object
    [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] - Documentation of the mmc Micro-Manager core object
    [[example Beanshell scripts]] - A few example scripts with minimal annotation
 
