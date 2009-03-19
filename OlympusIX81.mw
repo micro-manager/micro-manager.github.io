@@ -1,0 +1,10 @@
+== Olympus IX81 adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td valign="top">Controls Olympus IX81 microscope</td></tr>
+<tr><td>'''Author:'''</td><td>Jeff Kuhn and Arthur Edelstein</td></tr>
+<tr><td>'''License:'''</td><td>not Open Source</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X (through serial port)</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.3.22</td>
+<tr><td>'''Serial Port settings:'''</td><td></td>
+</table>
