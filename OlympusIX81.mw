@@ -1,6 +1,6 @@
 == Olympus IX81 adapter ==
 
-<table><tr><td>
+<table cellspacing=3><tr><td>
 '''Summary:'''</td><td valign="top">Controls Olympus IX81 microscope</td></tr>
 <tr><td>'''Author:'''</td><td>Jeff Kuhn and Arthur Edelstein</td></tr>
 <tr><td>'''License:'''</td><td>not Open Source</td></tr> 
@@ -9,13 +9,18 @@
 
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
-{|
+{| cellspacing="2" border="0" cellpadding=3
+|-AnswerTimeout||500
 |-
-|Baud rate:||19200
+|BaudRate||19200
 |-
-|Parity:||Even
+|DelayBetweenCharsMs||0
 |-
-|Stop bits:||2
+|Handshaking||Off
+|-
+|Parity||Even
+|-
+|StopBits||2
 |}
 
 </td>
