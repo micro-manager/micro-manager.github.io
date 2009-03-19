@@ -1,7 +1,7 @@
-== PI Z Stage ==
+== PrecisExcite LED illuminator ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with [http://ww.pi.ws Physik Instrumente (PI)] controllers and associated hardware using the SCPI command set</td></tr>
+'''Summary:'''</td><td>Device adapter for the PrecisExcite LED illuminator ([http://www.precisexcite.com  http://www.precisExcite.com])</td></tr>
 <tr><td>'''Author:'''</td><td>Arthur Edelstein
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows (uses virtual serial interface over USB)</td></tr>
