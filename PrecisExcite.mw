@@ -1,1 +1,27 @@
-#REDIRECT [[CoolLED]]
+== PI Z Stage ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with [http://ww.pi.ws Physik Instrumente (PI)] controllers and associated hardware using the SCPI command set</td></tr>
+<tr><td>'''Author:'''</td><td>Arthur Edelstein
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows (uses virtual serial interface over USB)</td></tr>
+<tr><td>'''Devices:'''</td><td>Shutters</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>>=1.3.34</td></tr>
+</table>
+
+<br>
+To use a precisExcite, first make sure the USB-serial driver is
+installed, the USB cable is connected, and that the module is powered up. Then in the Hardware
+Configuration Wizard (under the Micro-Manager Tools menu), choose the
+appropriate Com Port in Step 2 and add the PrecisExcite device in Step
+3.
+
+The precisExcite can be chosen as the default Shutter. This means that
+when "Auto shutter" is selected in the main window, it will
+automatically turn on (with the current channel and intensity
+settings) during a "Snap" or "Acquisition" and turn off immediately
+afterwards.
+
+The Trigger and TriggerSequence properties can be used for external triggering by TTL pulses.
+In the trigger sequence, channels are labeled "A","B","C","D", and a pause is denoted by "0" (zero).
