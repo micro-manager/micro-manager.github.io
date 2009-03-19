@@ -34,6 +34,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
    [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
    [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
+   [[PrecisExcite]] - LED illuminator (usable as a shutter device)
    [[Prior]] - Prior stages, shutters, and filter wheels
    [[Marzhauser]] - Marzhauser XY stages and Z
    [[SutterLambda]] - Sutter hardware
