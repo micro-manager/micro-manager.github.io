@@ -33,6 +33,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
    [[Configuration options]] - Build options on Mac OS X and Linux
    [[Building MM on Windows]] - Different environments and options
+   [[Debugging MM on MacOSX and Unix]]
 
 ''Papers citing and/or acknowledging the use of Micro-Manager''
    [[Papers citing Micro-Manager]] - Add your own paper to the list!
