@@ -33,9 +33,9 @@ include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU
 
 If you wish to build ACE as a shared library, you would need to change this and also define DYLD_LIBRARY_PATH to include $(ACE_ROOT)/lib
 
-Now cd into $(ACE_ROOT)/ace, type make and pray no errors will occur.
+Now cd into $ACE_ROOT/ace, type make and pray no errors will occur.
 
 To make the library available to your system, place a symbolic link in /usr/local/include that points to the $(ACE_ROOT)/ace directory:<br>
-<code>sudo ln -s $(ACE_ROOT)/ace /usr/local/include/ace</code>
+<code>sudo ln -s $ACE_ROOT/ace /usr/local/include/ace</code>
 
 Copy libACE.a to /usr/local/lib
