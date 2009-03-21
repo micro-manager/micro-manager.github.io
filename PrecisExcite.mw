@@ -4,18 +4,18 @@
 '''Summary:'''</td><td>Device adapter for the PrecisExcite LED illuminator ([http://www.precisexcite.com  http://www.precisExcite.com])</td></tr>
 <tr><td>'''Author:'''</td><td>Arthur Edelstein
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows (uses virtual serial interface over USB)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X (Linux?) (uses virtual serial interface over USB)</td></tr>
 <tr><td>'''Devices:'''</td><td>Shutters</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 <tr><td>'''Micro-Manager version:'''</td><td>>=1.3.34</td></tr>
 </table>
 
 <br>
-To use a precisExcite, first make sure the USB-serial driver is
-installed, the USB cable is connected, and that the module is powered up. Then in the Hardware
-Configuration Wizard (under the Micro-Manager Tools menu), choose the
-appropriate Com Port in Step 2 and add the PrecisExcite device in Step
-3.
+On Windows, first make sure the driver is installed (precisExcite.inf).
+(Mac OS X already has a driver that will recognize the virtual serial port.)
+Next, make sure the USB cable is connected, and that the module is powered up.
+Then in the Hardware Configuration Wizard (under the Micro-Manager Tools menu),
+choose the appropriate Com Port in Step 2 and add the PrecisExcite device in Step 3.
 
 The precisExcite can be chosen as the default Shutter. This means that
 when "Auto shutter" is selected in the main window, it will
