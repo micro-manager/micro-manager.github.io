@@ -11,3 +11,12 @@ The editor pane contains an editor with syntax color highlighting and copy-paste
 Scripts have access to three Micro-Manager specific objects: the Micro-Manager Core (mmc), the Micro-Manager GUI (gui), and the Micro-Manager Acquisition Engine (acq).  The [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc object] allows for relatively low level access to Micro-Manager functionality, whereas the [http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/ScriptInterface.html gui object] makes it easy to accomplish more complicated tasks.  A number of [[Example Beanshell scripts]] is available.
 
 An extensive user's guide for Beanshell is [http://beanshell.org/manual/bshmanual.html#Table_of_Contents available on the Beanshell website.]
+
+A few additional commands have been added to the Beanshell environment in Micro-Manager to make scripting more efficient:
+
+<pre>
+  clear("y"); // Remove method "y" (name in quotes) from the current namspace (i.e., from memory)
+  doc(x); // Get javadocs API for class or object x
+  update("y"); // Make sure Beanshell uses the most recent definition of method "y"
+  update(); // Update all methods in the current namespace
+</pre>
