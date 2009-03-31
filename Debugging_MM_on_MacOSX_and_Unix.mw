@@ -10,7 +10,7 @@ Start gdb debugging java:
 
 Now tell java on gdb to run ImageJ:
 
-   (gdb) r -cp ij.jar ImageJ
+   (gdb) r -cp ij.jar ij.ImageJ
 
 Control-C can interrupt execution.
 
