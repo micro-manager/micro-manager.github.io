@@ -5,10 +5,10 @@
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, with (small) contributions from Nico Stuurman (TTLs)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X and linux (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage, Zstage, filter wheel, shutter, TTL, LumenPro</td></tr>
+<tr><td>'''Devices:'''</td><td>ProScan and OptiScan controllers, XYStage, Zstage, filter wheel, shutter, TTL, LumenPro</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-This adapter interfaces with Prior hardware through the ProScan controller.  It communicates with the controller through the serial port so that no further software is needed.  It works with the Prior XYStage, Zstage, filter wheels, shutters, the LumenPro and can also control the TTLs on the Proscan controller.  
+This adapter interfaces with Prior hardware through the ProScan and OptiScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with the Prior XYStage, Zstage, filter wheels, shutters, the LumenPro and can also control the TTLs on the Proscan controller.  
 
 --[[User:Nico|Nico]] 21:24, 1 September 2007 (PDT)
