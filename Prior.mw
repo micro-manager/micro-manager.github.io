@@ -1,7 +1,7 @@
 == Prior ProScan adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces Prior hardware through the ProScan controller</td></tr>
+'''Summary:'''</td><td>Interfaces Prior hardware through ProScan and OptiScan controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, with (small) contributions from Nico Stuurman (TTLs)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X and linux (serial port)</td></tr>
