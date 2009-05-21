@@ -27,4 +27,4 @@
 </tr>
 </table>
 <br>
-The serial port settings given above may require changes if the DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) have been changed.
+The serial port settings given above may require all DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) to be off (zero).
