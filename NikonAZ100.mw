@@ -16,7 +16,7 @@ To update the driver, open up the Windows Device Manager (Start->Control Panels-
 
 When running the Hardware Config Wizard with the AZ100 connected to the PC (and the correct driver installed), the Nikon AZ100 should appear on the COM ports page (page 2 of the wizard).  Selected this port.  Then add the AZ100Hub, Nosepiece (which is read-only, i.e. it is not motorized only encoded), Focus and Zoom.  Add the NikonAZ100 port as a pre-initialization property to the AZ100Hub, and you should be set to go.  
 
-If you provide magnification information to the system for each of your objectives, (http://micro-manager.org/documentation.php?object=NewGuide) MicroManager will automatically calculate the correct pixel size based on the current zoom settings.
+If you provide magnification information to the system for each of your objectives, (http://micro-manager.org/documentation.php?object=Configguide#Calibration) MicroManager will automatically calculate the correct pixel size based on the current zoom settings.
 
 Note that to the AZ100 has two modes: 'mouse' control, and computer control.  To switch to computer control mode, the Focus drive will re-initialize which causes it to go all the way to the top and back down where it was.  Currently, there is nothing that can be done about this.  
 
