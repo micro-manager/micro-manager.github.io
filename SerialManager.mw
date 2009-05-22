@@ -12,4 +12,10 @@ Micro-Manager adapter to serial ports on Windows. Works with 'real' serial ports
 
 We have seen a number of instances in which USB-Serial adapters worked unreliably.  Especially in cases of heavy serial communication, these devices regularly cause errors that will stop image acquisition. This is something we will look into further, however, whenever possible use a  serial port build into your computer, or - when this is not available - a PCI-based serial port. 
 
+The following experiences of users with PCI Serial-expansion cards were reported on the Micro-Manager mailing list:<br>
+StarTech PEX4S552 - does not work (does not appear in Hardware Configuration Wizard)<br>
+Lava Quattro-PCI Quad 16550 DB9 Serial Card PCI 4-Port  - works<br>
+SIIG Quartet Serial PCI+DOS card (JJ-P04411-S6) - works<br>
+Keyspan USA-49WG - works (but see note above on USB-serial adapters)<br>
+
 --[[User:Nico|Nico]] 16:18, 3 September 2007 (PDT)
