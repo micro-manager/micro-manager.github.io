@@ -1,0 +1,26 @@
+== Thorlabs FilterWheel adapter ==
+
+<table cellspacing=3><tr><td>
+'''Summary:'''</td><td valign="top">Interface to Thorlabs FilterWheel</td></tr>
+<tr><td>'''Author:'''</td><td>Brian Ashcroft, ashcroft at physics.leidenuniv.nl</td></tr>
+<tr><td>'''License:'''</td><td></td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X, Linux</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.3.38</td>
+
+<tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3
+|-AnswerTimeout||
+|-
+|BaudRate||
+|-
+|DelayBetweenCharsMs||
+|-
+|Handshaking||Off
+|-
+|Parity||None
+|-
+|StopBits||1
+|}
+</td></tr>
+</table>
