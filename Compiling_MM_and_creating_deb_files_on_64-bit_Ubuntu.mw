@@ -1,126 +1,83 @@
-{{Note|These instructions refer to very old versions of Micro-Manager source code.}}
-
+Building Micro-manager on debian and creating 64-bit deb files:
+---------------------------------------------------------------
 This note was written using Revision: 2580 (https://valelab.ucsf.edu/trac/micromanager/timeline) that contained fixes to linux build by Nico and debian-specific scripts by Johan. Following notes are a log of things I needed to do for building the deb packages successfully and running micro-manager. Suggestions were provided by Martin and Johan. Search "non-hardware micro-manager setup on linux" thread in micro-manager-general list. These steps will be out-of-date sooner rather than later, but should provide an idea of overall process.
 
 OS was Ubuntu jaunty.
 
---[[User:Sanguine|Shalin]] 12:44, 2 June 2009 (UTC)
-== Pre-requisite packages ==
-
+* Pre-requisite packages 
 
 - ImageJ (either debian package or uncompress tar.gz from ImageJ website in /usr/local/ImageJ/). The debs on launchpad are version 1.41n whereas you can get the latest from the ImageJ website. Micro-manager plugin requires ImageJ version 1.42n and above.
-
 - sun-java6-jdk
-
 -libtool
-
 -libace-5.6.3
-
 -libace-dev 
-
 -libswingx-java (ver. 0.9.2) 
-
 -libusb-0.1-4 
-
 -libusb-dev
-
 -autoconf
-
 -automake
-
 -swig
-
 -g++
-
 -bsh
-
-
 More or less packages may be required. Above was what I needed to install.
 
-== After all is setup, cd to directory of choice and get SVN copy of micro-manager ==
-
+* After all is setup, get SVN copy of micro-manager
 $svn co   https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 
-
 I received Revision 2580.
 
-== Bootstrap the autobuild tools. ==
+* This script bootstraps the autobuild tools.
 $./mmUnixBuild.sh 
 
-== Configure and build ==
+* Configure and build
 $./configure  --with-imagej=/usr/local/ImageJ (Replace the path suitably)
-
 $make
 
-* Errors encountered during make:
-
+Errors encountered during make:
 1. In USBManager.
-
-<nowiki>
+----------------------------------
 *** Warning: Linking the shared library libmmgr_dal_USBManager.la against the
-
 *** static library /usr/lib/libusb.a is not portable!
-
 libtool: link: g++ -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.3.3/crtbeginS.o  .libs/USBManager.o   ../../MMDevice/.libs/libMMDevice.a /usr/lib/libusb.a -L/usr/lib/gcc/x86_64-linux-gnu/4.3.3 -L/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.3.3/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib/crtn.o    -Wl,-soname -Wl,libmmgr_dal_USBManager.so.0 -o .libs/libmmgr_dal_USBManager.so.0.0.0
-
 /usr/bin/ld: /usr/lib/libusb.a(usb.o): relocation R_X86_64_32 against `a local symbol' can not be used when making a shared object; recompile with -fPIC
-
 /usr/lib/libusb.a: could not read symbols: Bad value
-
 collect2: ld returned 1 exit status
-
 make[2]: *** [libmmgr_dal_USBManager.la] Error 1
-
 make[2]: Leaving directory `/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters/USBManager'
-
 make[1]: *** [all-recursive] Error 1
-
 make[1]: Leaving directory `/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters'
-
 make: *** [all-recursive] Error 1
+--------------------------------
+Resolved by deleting references to USBManager in DIST_SUBDIR variable inside DeviceAdapters/Makefile.
 
-</nowiki>
+* Compilation succeded!!
 
-* Resolved by deleting references to USBManager in DIST_SUBDIR variable inside DeviceAdapters/Makefile.
+* If not making debian packages, do $make install and you should be fine. I haven't tried it yet.
 
-* Compilation succeded!! 
+* Making debian packages. The path I chose for easy management of files.
+-Modify newImageJ script inside portdebian directory.
+   ij_path=/usr/local/ImageJ 
+  all references to /usr/share/imagej by /usr/local/ImageJ in mkdebian.sh and in newImageJ script.
 
-== If not making debian packages, do $make install and you should be fine. I haven't tried it yet. ==
+-Modify debiancontrol.port inside portdebian directory.
+Architecture: amd64 in debiancontrol.port .
 
-== Making debian packages. The path I chose for easy management of files.==
-* Modify newImageJ script inside portdebian directory.
-  ij_path=/usr/local/ImageJ 
-
-  Substitute all references to /usr/share/imagej by /usr/local/ImageJ 
-
-* Modify debiancontrol.port inside portdebian directory.
-  Architecture: amd64 in debiancontrol.port .
-
-* Modify mkdebian.sh inside portdebian
-  Substitute all references to /usr/share/imagej by /usr/local/ImageJ   
-
-  Include configuration, html, and xml acquisition samples inside the package.
-  <nowiki> ##### Programs </nowiki>
-  mkdir -p $ROOTBIN/usr/bin/
-  cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/
-  strip $ROOTBIN/usr/bin/*
-  <nowiki> ##### And configuration files </nowiki>
-  cp bin/*.cfg $ROOTBIN/usr/bin/
-  cp bin/*.html $ROOTBIN/usr/bin/
-  cp bin/*.xml $ROOTBIN/usr/bin/
+-Modify mkdebian.sh inside portdebian
+Include configuration, html, and xml acquisition samples inside the package.
+##### Programs
+mkdir -p $ROOTBIN/usr/bin/
+cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/
+strip $ROOTBIN/usr/bin/*
+##### And configuration files
+cp bin/*.cfg $ROOTBIN/usr/bin/
+cp bin/*.html $ROOTBIN/usr/bin/
+cp bin/*.xml $ROOTBIN/usr/bin/
 
 
-
-
-* Then do $./portdebian/mkdebian.sh
+-Then do $./portdebian/mkdebian.sh
 
 Got error: cp: cannot stat `Tracking/Tracker_.jar': No such file or directory
-
 Error resolved by $cd Tracking, $make. Somehow earlier make had missed it.
 
-* Two packages micromanager.deb and micromanager-ij.deb are created in top directory of the source tree. Install them.
-
+- Two packages micromanager.deb and micromanager-ij.deb are created in top directory of the source tree. Install them.
 $ dpkg -i micromanager micromanager-ij worked.
-
-* imagejmm script created by micromanager-ij works, however doesn't bring up micro-manager. You need to invoke it from Plugins-> Micro-manager -> Micro-manager Studio.
-
-{{Programming_Sidebar}}
+imagejmm script created by micromanager-ij works, however doesn't bring up micro-manager. You need to invoke it from Plugins-> Micro-manager -> Micro-manager Studio.
