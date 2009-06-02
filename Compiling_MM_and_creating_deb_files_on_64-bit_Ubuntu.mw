@@ -93,7 +93,6 @@ make: *** [all-recursive] Error 1
 
 * Modify mkdebian.sh inside portdebian
   Include configuration, html, and xml acquisition samples inside the package.
-
   <nowiki> ##### Programs </nowiki>
   mkdir -p $ROOTBIN/usr/bin/
   cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/
