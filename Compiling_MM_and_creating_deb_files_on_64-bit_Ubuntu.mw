@@ -87,12 +87,15 @@ make: *** [all-recursive] Error 1
 == Making debian packages. The path I chose for easy management of files.==
 * Modify newImageJ script inside portdebian directory.
   ij_path=/usr/local/ImageJ 
-  all references to /usr/share/imagej by /usr/local/ImageJ in mkdebian.sh and in newImageJ script.
+
+  Substitute all references to /usr/share/imagej by /usr/local/ImageJ 
 
 * Modify debiancontrol.port inside portdebian directory.
   Architecture: amd64 in debiancontrol.port .
 
 * Modify mkdebian.sh inside portdebian
+  Substitute all references to /usr/share/imagej by /usr/local/ImageJ   
+
   Include configuration, html, and xml acquisition samples inside the package.
   <nowiki> ##### Programs </nowiki>
   mkdir -p $ROOTBIN/usr/bin/
