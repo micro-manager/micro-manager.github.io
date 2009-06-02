@@ -7,18 +7,32 @@ OS was Ubuntu jaunty.
 * Pre-requisite packages 
 
 - ImageJ (either debian package or uncompress tar.gz from ImageJ website in /usr/local/ImageJ/). The debs on launchpad are version 1.41n whereas you can get the latest from the ImageJ website. Micro-manager plugin requires ImageJ version 1.42n and above.
+
 - sun-java6-jdk
+
 -libtool
+
 -libace-5.6.3
+
 -libace-dev 
+
 -libswingx-java (ver. 0.9.2) 
+
 -libusb-0.1-4 
+
 -libusb-dev
+
 -autoconf
+
 -automake
+
 -swig
+
 -g++
+
 -bsh
+
+
 More or less packages may be required. Above was what I needed to install.
 
 * After all is setup, get SVN copy of micro-manager
