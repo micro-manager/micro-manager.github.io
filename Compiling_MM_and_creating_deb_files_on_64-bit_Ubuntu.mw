@@ -95,19 +95,12 @@ make: *** [all-recursive] Error 1
   Include configuration, html, and xml acquisition samples inside the package.
 
   <nowiki> ##### Programs </nowiki>
-
   mkdir -p $ROOTBIN/usr/bin/
-
   cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/
-
   strip $ROOTBIN/usr/bin/*
-
   <nowiki> ##### And configuration files </nowiki>
-
   cp bin/*.cfg $ROOTBIN/usr/bin/
-
   cp bin/*.html $ROOTBIN/usr/bin/
-
   cp bin/*.xml $ROOTBIN/usr/bin/
 
 
