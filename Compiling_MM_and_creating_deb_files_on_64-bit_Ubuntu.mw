@@ -34,13 +34,13 @@ OS was Ubuntu jaunty.
 
 More or less packages may be required. Above was what I needed to install.
 
- == After all is setup, cd to directory of choice and get SVN copy of micro-manager ==
+== After all is setup, cd to directory of choice and get SVN copy of micro-manager ==
 
 $svn co   https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 
 
 I received Revision 2580.
 
-== This script bootstraps the autobuild tools. ==
+== Bootstrap the autobuild tools. ==
 $./mmUnixBuild.sh 
 
 == Configure and build ==
@@ -66,7 +66,7 @@ make: *** [all-recursive] Error 1
 --------------------------------
 Resolved by deleting references to USBManager in DIST_SUBDIR variable inside DeviceAdapters/Makefile.
 
-== Compilation succeded!! ==
+* Compilation succeded!! 
 
 == If not making debian packages, do $make install and you should be fine. I haven't tried it yet. ==
 
