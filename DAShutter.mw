@@ -7,7 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>All platforms</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td>>=1.2.39</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>>=1.2.39.  In 1.3 an higher, this code can be found in the Utilities adapter</td></tr>
 </table>
 
 Some diode lasers can be controlled with an analogue voltage, i.e. the lightoutput is equivalent to the applied voltage.  Digital Analogue (DA) devices supported by Micro-manager (currently [[DTOpenLayer]], the [[Velleman K8055]] and the [[Velleman K8061]]) can provide computer control of lightoutput.  However, to make the DA device appear as a shutter in Micro-Manager you will need this adapter.  .
