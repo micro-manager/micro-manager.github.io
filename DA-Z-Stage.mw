@@ -7,7 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>All platforms</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td>>=1.2.8</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>>=1.2.8. In 1.3 and higher, this code can be found in the Utilities adapter</td></tr>
 </table>
 
 Some (piezo) stages can be controlled with an analogue voltage. The position of the stage relates linearly to the voltage applied to the stage.  Micro-Manager can control such a stage using this adapter and a DA (digital-analogue) device. Currently, three DA devices are support by Micro-Manager, the [[DTOpenLayer]], the [[Velleman K8055]] and the [[Velleman K8061]].
