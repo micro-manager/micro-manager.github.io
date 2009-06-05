@@ -1,6 +1,6 @@
 <table><tr><td>
 '''Summary:'''</td><td>Cobolt Laser Controller</td></tr>
-<tr><td>'''Author:'''</td><td>Karl Bellve.  </td></tr>
+<tr><td>'''Author:'''</td><td>Karl Bellve  </td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.cobolt.se/]</td></tr>
@@ -10,7 +10,7 @@
 
 The Cobolt laser controller controls compact solid-state lasers.
 
-Before adding this device adapter, confirm that you have serail communication with the laser controller by using a terminal. The serial port should be set at set at 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms. The laser controller should respond to the following commands: l?, p?, hrs? (Laser on/off, power, hours). If you do not get a response then the Cobolt device adapter will not work.
+Before adding this device adapter, confirm that you have serial communication with the laser controller by using a terminal. The serial port should be set at set at 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms. The laser controller should respond to the following commands: l?, p?, hrs? (Laser on/off, power, hours). If you do not get a response then the Micro-Manager Cobolt device adapter will not work.
 
 In the configuration wizard you will need to add one Cobolt object for every Cobolt laser you would like to control. 
 
@@ -26,7 +26,7 @@ The following commands are available with this device adapter:
     <li>Errors (Read only)
 </ul>
 
-    '''NOTE: Lasers will automatically be shut off when Micromanager closes (power remains on).'''
+    '''NOTE: Lasers will automatically be shut off when Micro-Manager closes but power remains on.'''
 
 
 
