@@ -1,0 +1,33 @@
+<table><tr><td>
+'''Summary:'''</td><td>Cobolt Laser Controller</td></tr>
+<tr><td>'''Author:'''</td><td>Karl Bellve.  </td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All</td></tr>
+<tr><td>'''Devices:'''</td><td>[http://www.cobolt.se/]</td></tr>
+<tr><td>'''Since Version:'''</td><td>Future</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
+</table>
+
+The Cobolt laser controller controls compact solid-state lasers.
+
+Before adding this device adapter, confirm that you have serail communication with the laser controller by using a terminal. The serial port should be set at set at 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms. The laser controller should respond to the following commands: l?, p?, hrs? (Laser on/off, power, hours). If you do not get a response then the Cobolt device adapter will not work.
+
+In the configuration wizard you will need to add one Cobolt object for every Cobolt laser you would like to control. 
+
+The following commands are available with this device adapter:
+<ul>
+    <li>Laser Power (Read/Write)
+    <li>Laser On/Off (Read/Write)
+    <li>Laser Status (Read only)
+    <li>Hours (Read only)
+    <li>Serial Number (Read only)
+    <li>Interlock state (Read only)
+    <li>Current (Read only)
+    <li>Errors (Read only)
+</ul>
+
+    '''NOTE: Lasers will automatically be shut off when Micromanager closes (power remains on).'''
+
+
+
+--[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 15:51, 5 June 2009 (UTC)
