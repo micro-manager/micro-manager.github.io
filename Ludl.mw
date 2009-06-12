@@ -6,7 +6,6 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Controller, Shutter, Filter Wheel, XY Stage</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Ludl.cfg]]</td></tr>
 </table>
 
 
