@@ -1,27 +1,97 @@
-== Andor ==
-
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen.  Maintenance and further development taken over by Daigang Wen (Andor) as of September 2007</td></tr>
+<tr><td valign=top>'''Author:'''</td><td>Pariksheet Nanda (Andor product support)
+Previous document by Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen (Andor). Maintenance and development by Daigang Wen from Sep 2007 to Nov 2008.
+Francis McCoy is the current Andor Developer</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only (No Mac driver available, it might be possible to build this on Linux)</td></tr>
-<tr><td>'''Devices:'''</td><td>Andor cameras: IXon, Luca-S and Luca-R</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_andor.cfg]]</td></tr>
+<tr><td>'''Devices:'''</td><td>Andor cameras: iXon, Luca-S, Luca-R and Clara</td></tr>
+<tr><td valign=top >'''Example Config Files:'''</td><td>
+* [[Media:MMConfig_andor.cfg|iXon .cfg]]
+* [[Media:MMConfig_andor_Clara.cfg|Clara .cfg]]</td></tr>
 </table>
 
-Andor has greatly reworked this adapter (as of Micro-Manager version 1.1.44) and tested the adapter with iXon+ EMCCD range and the Luca-S/Luca-R USB2.0 EMCCD cameras. They have also added support for the 'traditional' (non-EM) read-out mode of iXon+, as well as for iCam features across the cameras, which allows for much more rapid switching of exposure times than previously possible. More information on iCam features can be found: http://www.andor.com/products/software/?app=686. To use the iCam features, you may need to upgrade the firmware of your camera and the PCI card. Information on how to do this can be found at http://www.andor.com/products/software/?app=687.
 
-In previous Micro-Manager versions two devices were defined by this adapter: the actual camera (Ixon+) and the shutter in front of the camera (IxonShutter). The shutter device has been removed and you will need to remove it from your configuration file. The shutter can now be controlled as a property of the camera. For any normal work you likely will want to open the shutter on startup and possibly close it again on program shutdown, this is most easily accomplished by setting this property in the 'System'-'Startup' and 'System'-'Shutdown' configuration groups. 
-
-The adapter needs to know the location of the Andor driver if the camera in use is relatively old. Type in the full path to the Andor directory (default: C:\Program Files\Andor) in the Hardware configuration wizard. 
-
-The offset in the Ixon+ camera only rises higher than 0 when the temperature is lower than -50C (I am not sure if this is the case for all cameras), so make sure that the temperature of the camera (a read-only property that can be seen in the device/property browser) is below -50C (or preferably at -70C or lower) before you start imaging.
-
-Other software packages take care to bring up the temperature of the camera gradually after shutting down the software. We have been told by Andor that this is not necessary. 
-
-This camera has two ‘gains’, EM gain and Pre-Amp gain. EM gain is currently called 'gain', as opposed to 'Pre-Amplifier-Gain'.
-  
-A detailed description (including configuration file) on how to set up an Andor camera in Micro-Manager is available at the [http://www.neutronoptics.com/andor.html neutronoptics] website.
+== Supported Andor cameras ==
+*iXon / iXon+
+*Luca-R 
+*Luca-S 
+*Clara
 
 
---[[User:Nico|Nico]] 22:50, 20 December 2007 (PDT)
+== Installation for Windows XP ==
+Before you proceed, you must have a copy of the Andor's SDK package already installed since it contains the necessary files to recognize the camera.
+
+When you first power on and plug in your camera and Windows tries to recognize it, select to "Install from a list or specific location (Advanced)" > "Search for the best driver in these locations" > "Include this location in the search" > C:\Program Files\(Your Andor Directory)
+
+Clara support is introduced in SDK v2.84
+
+=== (Clara Only) DLL file from Andor SDK ===
+For Clara only, in the Micro-Manager 1.3.39 beta release (May 15, 2009), the 32-bit Andor driver file (atmcd32d.dll) is not new enough to support the Clara. 
+The file version is 2.82, whereas Clara support is introduced in 2.84.  Therefore you need to copy the "atmcd32d.dll" file from your Andor installation to your Micro-Manager directory.  e.g. If you have the Andor SDK, copy and overwrite C:\Program Files\Andor Clara\Drivers\atmcd32d.dll to C:\Program Files\Micro-Manager-1.3\atmcd32d.dll
+
+=== Add to your configuration ===
+Open Micromanager.  You will be prompted to load a configuration file; there are 2 options in this case: 
+: Option 1: Use "Tools" > "Hardware Configuration Wizard..." to manually add the device. 
+: Option 2: Use the preloaded configuration at the top of this page.
+
+
+== Working with your Andor camera ==
+Set camera properties under "Tools" > "Device/Property Browser..."
+
+Micromanager does not offer every feature available in Andor Cameras.
+
+TODO: List camera features not available in Micro-Manager. 
+
+However for the Clara overlap mode, Extended NIR and the variable pre amp gains are available.
+
+=== All EMCCDs (iXon, iXon+, Luca-R and Luca-S) ===
+
+==== EMgain slew rate ====
+* EM gain levels should be kept same between channels during an acquisition (because EM gain levels should not be immediately switched)
+* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
+* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
+* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
+* Thus it is better to vary exposure times rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
+
+==== iXon/iXon+ ====
+===== Cooling =====
+* iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
+* Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
+* Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
+* No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
+* Full gain will not be achievable without cooling. 
+* EMgain is temperature compensated for RealGain cameras. 
+===== EMgain range =====
+* EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
+* The actual EM gain range depends on the model of your camera: it can be 255, 4096, or RealGain 1000 
+===== Pre-Amplifier Gain (PAG) =====
+* PAG is ironically named since it is really post-readout gain of your sensor signal, which affects sensitivity. 
+* The PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each EMCCD chip. 
+===== Conventional or EM =====
+* With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting 
+===== iCam =====
+* Allows for rapid switching of exposure times in multi-channel acquisitions 
+* For more information please see Andor website at http://www.andor.com/software/icam/
+
+=== Clara ===
+==== Cooling ====
+* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
+BUG: Under "Tools" > "Device/Property Browser...", Clara-FanMode does NOT support low.  The camera hardware does not support it; the option should not be populated in the drop-down list.
+
+BUG: Clara-Output_Amplifier enabling "Extended NIR" with Overlap mode raises an exception using Live.  The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
+
+These bugs will be fixed with the next MicroManager release.
+
+
+== Resources ==
+
+=== Camera questions ===
+For contacting Andor product support regarding any questions, see under "Support" for your location -
+http://www.andor.com/contact_us/default.aspx
+
+=== Development support ===
+Please liaison with Micro-Manager developers to contact our software team
+
+
+Last edited: [[User:P.nanda|P.nanda]] 02:09, 13 June 2009 (UTC)
