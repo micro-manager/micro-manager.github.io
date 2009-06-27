@@ -9,7 +9,7 @@
 <tr><td>'''Available since version:'''</td><td>1.3.18</td>
 </table>
 
-The code for this adapter was written by Micheal Himmelreich and donated to the Micro-Manager source code repository.
+The code for this adapter was written by Michael Himmelreich and donated to the Micro-Manager source code repository.
 
 Changes in 1.3.40:<br>
 • Support of API version 31 <br>
