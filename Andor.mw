@@ -1,11 +1,13 @@
-<table><tr><td>
+<table><tr><td  valign=top >
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
 <tr><td valign=top>'''Author:'''</td><td>Pariksheet Nanda (Andor product support)
 Previous document by Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen (Andor). Maintenance and development by Daigang Wen from Sep 2007 to Nov 2008.
-Francis McCoy is the current Andor Developer</td></tr>
-<tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows only (No Mac driver available, it might be possible to build this on Linux)</td></tr>
-<tr><td>'''Devices:'''</td><td>Andor cameras: iXon, Luca-S, Luca-R and Clara</td></tr>
+Francis McCloy is the current Andor Developer</td></tr>
+<tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
+<tr><td  valign=top >'''Platforms:'''</td><td>Windows and Linux (No Mac driver available)
+[http://invitro.umassmed.edu/dokuwiki/doku.php?id=micromanager1.2 Wiki: Building MM on Linux]
+[http://sourceforge.net/mailarchive/forum.php?thread_name=4A1D4CA0.80103@gmail.com&forum_name=micro-manager-general ANN: Andor driver on Linux]</td></tr>
+<tr><td  valign=top >'''Devices:'''</td><td>Andor cameras: iXon, Luca-S, Luca-R and Clara</td></tr>
 <tr><td valign=top >'''Example Config Files:'''</td><td>
 * [[Media:MMConfig_andor.cfg|iXon .cfg]]
 * [[Media:MMConfig_andor_Clara.cfg|Clara .cfg]]</td></tr>
@@ -77,11 +79,9 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 === Clara ===
 ==== Cooling ====
 * Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
-BUG: Under "Tools" > "Device/Property Browser...", Clara-FanMode does NOT support low.  The camera hardware does not support it; the option should not be populated in the drop-down list.
+BUG: (Closed - now fixed in forthcoming release) Under "Tools" > "Device/Property Browser...", Clara-FanMode does NOT support low.  The camera hardware does not support it; the option should not be populated in the drop-down list.
 
 BUG: Clara-Output_Amplifier enabling "Extended NIR" with Overlap mode raises an exception using Live.  The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
-
-These bugs will be fixed with the next MicroManager release.
 
 
 == Resources ==
@@ -94,4 +94,4 @@ http://www.andor.com/contact_us/default.aspx
 Please liaison with Micro-Manager developers to contact our software team
 
 
-Last edited: [[User:P.nanda|P.nanda]] 02:09, 13 June 2009 (UTC)
+Last edited: [[User:P.nanda|P.nanda]] 21:12, 30 June 2009 (UTC)
