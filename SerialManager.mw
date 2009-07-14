@@ -16,6 +16,8 @@ The following experiences of users with PCI Serial-expansion cards were reported
 StarTech PEX4S552 - does not work (does not appear in Hardware Configuration Wizard)<br>
 Lava Quattro-PCI Quad 16550 DB9 Serial Card PCI 4-Port  - works<br>
 SIIG Quartet Serial PCI+DOS card (JJ-P04411-S6) - works<br>
-Keyspan USA-49WG - works (but see note above on USB-serial adapters)<br>
+Keyspan USA-49WG - works 
+* note above on USB-serial adapters 
+* [http://big.umassmed.edu The Biomedical Imaging Group] uses this adapter, but they don't rely on it as the primary means that is used to communicate with their serial devices. It might not work under heavy load. --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 16:00, 14 July 2009 (UTC)<br>
 
 --[[User:Nico|Nico]] 16:18, 3 September 2007 (PDT)
