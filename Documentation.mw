@@ -36,6 +36,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Building MM on Windows]] - Different environments and options
    [[Debugging MM on MacOSX and Unix]] - How to use gdb with Micro-Manager
    [[Compiling MM and creating deb files on 64-bit Ubuntu ]] - A log of things I needed to do to build 64-bit version of MM.
+   [[Linux installation from source (Ubuntu)]]
 
 ''Papers citing and/or acknowledging the use of Micro-Manager''
    [[Papers citing Micro-Manager]] - Add your own paper to the list!
