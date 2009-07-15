@@ -21,31 +21,54 @@ In addition, note that:
 
 == Steps ==
 
-1. '''Installing ImageJ'''</p>
+1. '''Installing ImageJ'''
+
 Get the Linux version of ImageJ from http://rsb.info.nih.gov/ij/download.html, move it to "/usr/local" and unpack it as described in http://rsb.info.nih.gov/ij/docs/install/linux.html. You will have a directory "/usr/local/ImageJ" with everything needed to run ImageJ (you can start ImageJ from the terminal: "cd /usr/local/ImageJ", followed by "./run").
+
 2. '''Get Micro-Manager from the repository'''
-   Make a directory somewhere (e.g. "~/src"), move to it ("cd ~/src") and get Micro-Manager with the command "svn checkout htpps://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3". This will download all the necessary files from the repository into "~/src/micromanager1.3/".
+
+Make a directory somewhere (e.g. "~/src"), move to it ("cd ~/src") and get Micro-Manager with the command "svn checkout htpps://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3". This will download all the necessary files from the repository into "~/src/micromanager1.3/".
+
 3. '''Beanshell and swingx'''
-   Move to the new directory ("cd micromanager1.3") and copy beanshell and swingx from "~/src/micromanager1.3/classext" to the "plugins" directory of your ImageJ installation: "sudo cp classext/bsh-2.0b4.jar /usr/local/ImageJ/plugins" and "sudo cp classext/swingx-0.9.5.jar /usr/local/ImageJ/plugins".
+
+Move to the new directory ("cd micromanager1.3") and copy beanshell and swingx from "~/src/micromanager1.3/classext" to the "plugins" directory of your ImageJ installation: "sudo cp classext/bsh-2.0b4.jar /usr/local/ImageJ/plugins" and "sudo cp classext/swingx-0.9.5.jar /usr/local/ImageJ/plugins".
+
 4. '''Create a new micro-manager directory in /usr/lib'''
-   "sudo mkdir /usr/lib/micro-manager"
+
+"sudo mkdir /usr/lib/micro-manager"
+
 5. '''mmUnixBuild.sh'''
-   From within "~/src/micromanager1.3", type "./mmUnixBuild.sh".
+
+From within "~/src/micromanager1.3", type "./mmUnixBuild.sh".
+
 6. '''Run configure'''
-   "./configure --with-imagej=/usr/local/ImageJ". You have to add the option (--with-imagej), because the default assumes a different localisation of ImageJ.
+
+"./configure --with-imagej=/usr/local/ImageJ". You have to add the option (--with-imagej), because the default assumes a different localisation of ImageJ.
+
 7. '''Run make'''
-   "make"
+
+"make"
+
 8. '''Install as superuser'''
-   "sudo make install"
+
+"sudo make install"
+
 9. Run '''ldconfig'''
-   "ldconfig"
+
+"ldconfig"
+
 10. '''The starting script'''
-    Starting ImageJ with the scripts provided in the ImageJ directory (run, script, see 1 above) will start ImageJ, but Micro-Manager, although now in the plugins directory, will not work properly because the path to /usr/lib/micro-manager is missing. Write your own script containing the 4 lines given below ("mmscript"), save and move it to /usr/local/ImageJ.
-11. Running Micro-Manager cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &"). In the plugins menu of ImageJ, start Micro-Manager –> Micro-Manager Studio.
 
-mmscript:
+Starting ImageJ with the scripts provided in the ImageJ directory (run, script, see 1 above) will start ImageJ, but Micro-Manager, although now in the plugins directory, will not work properly because the path to /usr/lib/micro-manager is missing. Write your own script containing the 4 lines given below ("mmscript"), save and move it to /usr/local/ImageJ.
 
-#!/bin/bash
-cd /user/local/ImageJ
-export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
-java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ -Dplugins.dir=/usr/local/ImageJ -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
+11. '''Running Micro-Manager'''
+
+cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &"). In the plugins menu of ImageJ, start Micro-Manager –> Micro-Manager Studio.
+
+
+== mmscript: ==
+
+ #!/bin/bash
+ cd /user/local/ImageJ
+ export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
+ java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ -Dplugins.dir=/usr/local/ImageJ -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
