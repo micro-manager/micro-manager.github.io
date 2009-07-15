@@ -8,7 +8,21 @@
 <tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter, Halogen Lamp, Reflected light module, Objective Nosepiece, Z-drive, Aperture diaphragm, Field diaphragm</td></tr>
 <tr><td width=20%></td><td></td></tr>
 <tr><td>'''Available since version:'''</td><td>1.3.40</td>
-<tr><td>'''Serial Port settings:'''</td><td>9600 baud, Answer=TimeoutMs 5000 ms, DelayBetweenCharsMs 0 ms</td>
+<tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3
+|-AnswerTimeout||5000
+|-
+|BaudRate||9600
+|-
+|DelayBetweenCharsMs||0
+|-
+|Handshaking||Hardware
+|-
+|Parity||None
+|-
+|StopBits||1
+|}
 </table>
 
 This adapter controls Leica DMR microscopes through a direct serial interface.  It was build for and tested with a DMRXA, but likely works with other DMR models (DMRXE, DMRME, DMRBE, DMRA and DMIRBE) as well.  
