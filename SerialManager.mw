@@ -22,6 +22,6 @@ SYBA PCI 32-Bit Quad (9 pin) 4 Port Serial Card, Model SY-PCI9845-PR4 - only fir
 SIIG CyberSerial 4S Card Model JJ-P45012-S6 - works
 
 * note above on USB-serial adapters 
-* [http://big.umassmed.edu The Biomedical Imaging Group] uses this adapter, but they don't rely on it as the primary means that is used to communicate with their serial devices. It might not work under heavy load. --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 16:00, 14 July 2009 (UTC)<br>
+* [http://big.umassmed.edu The Biomedical Imaging Group] uses this adapter but they advise against using it since they don't rely on it as the primary means to communicate with their serial devices. --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 16:00, 14 July 2009 (UTC)<br>
 
 --[[User:Nico|Nico]] 16:18, 3 September 2007 (PDT)
