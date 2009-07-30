@@ -19,6 +19,13 @@ On Tiger (10.4) it should read:
 #include "ace/config-macosx-tiger.h"
 </pre></code>
 
+For ACE version 5.7.2 with Tiger (10.4), I found it necessary to also add the following to the config.h file:
+
+<code><pre>
+#define ACE_LACKS_UNSETENV
+#define ACE_LACKS_ISCTYPE
+#define ACE_NEEDS_DL_UNDERSCORE
+</pre></code>
 
 Create a build configuration file, $ACE_ROOT/include/makeinclude/platform_macros.GNU
 On Tiger (10.4) it should read:
