@@ -25,7 +25,7 @@
 |}
 </table>
 
-This adapter controls Leica DMR microscopes through a direct serial interface.  It was build for and tested with a DMRXA, but likely works with other DMR models (DMRXE, DMRME, DMRBE, DMRA and DMIRBE) as well.  
+This adapter controls Leica DMR microscopes through a direct serial interface.  It was build for and tested with a DMRXA, but likely works with other DMR models (DMRXE, DMRME, DMRBE, DMRA and DMIRBE) as well. This adapter does not support DM LA, DM LFSA, DM IRE2, DM RA2, or DM RXA2.
 
 To use this adapter, connect the microscope using a null modem DB9 serial cable to a serial port connected to your computer.  In the Hardware Configuration Wizard you will  need to 'Add' the LeicaDM Microscope device (and have it use the serial port you just configured).
 
