@@ -80,3 +80,43 @@ cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &")
  cd /user/local/ImageJ
  export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
  java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ -Dplugins.dir=/usr/local/ImageJ -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
+
+
+== script for Gentoo ==
+
+Edit '/usr/bin/imagej' according to this:
+<code><pre>
+#!/bin/bash
+
+export LD_LIBRARY_PATH=.:/usr/lib/micro-manager
+IJ_LIB=/usr/share/imagej/lib
+
+if !([ "${IJ_HOME}" ]) ; then
+	IJ_HOME=${HOME}
+fi
+if [ -d ${IJ_HOME}/plugins ] ; then
+	IJ_PLG=${IJ_HOME}
+else
+	IJ_PLG=/usr/share/imagej/lib
+fi
+if !([ "$IJ_MEM" ]) ; then
+	IJ_MEM=128
+fi
+if !([ "$IJ_CP" ]) ; then
+	IJ_CP=$(java-config -p imagej):$(java-config -O)/lib/tools.jar
+else
+	IJ_CP=$(java-config -p imagej):$(java-config -O)/lib/tools.jar:${IJ_CP}
+fi
+$(java-config --java) \
+	-Xmx${IJ_MEM}m -Dswing.aatext=true \
+	-Dawt.useSystemAAFontSettings=on\
+	-cp ${IJ_CP} \
+	-Duser.home=${IJ_HOME} \
+	-Dplugins.dir=${IJ_PLG} \
+	-Djava.library.path=/usr/lib/micro-manager \
+	ij.ImageJ "$@"
+</pre>
+</code>
+
+You could run the Micro-Manager in one go by issuing:
+  imagej -run "Micro-Manager Studio"
