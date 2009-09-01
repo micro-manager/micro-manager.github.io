@@ -1,7 +1,7 @@
-== Olympus IX81/IX71/BX61/BX51 adapter ==
+== Olympus IX81/ BX61 adapter ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Controls Olympus IX81, IX71, BX61, BX51 microscopes</td></tr>
+'''Summary:'''</td><td valign="top">Controls Olympus IX81/ BX61 microscope</td></tr>
 <tr><td>'''Author:'''</td><td>Jeff Kuhn and Arthur Edelstein, BX61 support added by Shalin Mehta</td></tr>
 <tr><td>'''License:'''</td><td>not Open Source</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X (through serial port)</td></tr>
@@ -9,8 +9,8 @@
 
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
-{| cellspacing="2" border="0" cellpadding=3 
-|AnswerTimeout||500
+{| cellspacing="2" border="0" cellpadding=3
+|-AnswerTimeout||500
 |-
 |BaudRate||19200
 |-
@@ -26,31 +26,7 @@
 </td>
 </tr>
 </table>
+<br>
+These serial port settings require all DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) to be in their default position: off (zero).
 
-== Installation ==
-
-=== Cabling and DIP switches ===
-
-Olympus microscopes generally require straight-through (not null-modem) RS-232 cables (confirmed with an IX2-UCB).
-
-These serial port settings require all '''DIP switches''' on the front of the "Frame Control Unit" (the box connected to the serial cable) to be in their default position: off (zero). Switching of these DIP switches must be done while the unit is turned off.
-
-=== BSW Software ===
-
-The IX-81 seems to require the Olympus BSW software to be installed and configured otherwise Micro-Manager complains about "Error in device OlympusHub: Error code 17 (11 Hex)".  Make sure you can connect successfully in BSW, i.e. "Log in".
-
-=== Hardware Configuration Wizard ===
-
-Add an Olympus Hub device to your hardware configuration and choose its serial port. Other devices (stage, filter wheel, etc) then communicate to the hardware through the (software) Hub.
-
-== Device Configuration ==
-
-There are two modes of Control: Computer and "Manual + Computer". The former is faster, but disables the manual controls. The latter is slower, but allows you to manually control the turret positions, focus drive, etc.
-
-If you are using the Olympus ZDC unit (Z-drift correction), you will need to set two properties: the ObjectiveTypeSetting and the SearchRange (a size in microns). Choose MeasureOffset->Now to fix your current z offset, and then running autofocus will return the focus drive to that offset.
-
-{{Note|For the BX61, currently only one filter wheel is supported, which is connected to FW1 port on the controller.}}
-
-{{Listserv_Search|Olympus}}
-
-{{Devices_Sidebar}}
+BX61 specific notes: Currently only one filter wheel is supported (connected to FW1 port on the controller). If there is a need to add support for more filter-wheels please email.
