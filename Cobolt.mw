@@ -28,6 +28,7 @@ The following commands are available with this device adapter:
 
     '''NOTE: Lasers will automatically be shut off when Micro-Manager closes but power remains on.'''
     '''NOTE: Lasers will ignore the power setting for a few minutes while they start up. Reset after warm up is over'''
+    '''NOTE: This driver works best with laser controller firmware version 13'''
 
 
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 15:51, 5 June 2009 (UTC)
