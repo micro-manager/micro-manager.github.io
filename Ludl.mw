@@ -19,4 +19,6 @@ There can be up to 5 'devices' (i.e., controller cards) per controller, and each
 
 The XYStage will let you set some parameters concerning the speed of the stage (Speed, StartSpeed, Acceleration).  See the [http://www.ludl.com/DocLib.aspx manual] for definitions of these terms.
 
+To use a Z-drive (focus drive), you will need to specify the letter under which it is known by the Ludl controller as a pre-initialization property.  Confusingly, this is often not "Z", but "B".  If you can not figure it out, open the file "Corelog.txt" in your Micro-Manager directory.  It contains some output from the Ludl controller that you can use to deduce the drive letter.
+
 --[[User:Nico|Nico]] 13:43, 25 August 2007 (PDT)
