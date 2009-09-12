@@ -4,7 +4,7 @@
 
 
 === Does Micro-Manager work with ... camera/microscope/etc? ===
-Check the list of supported hardware [[Device Support|here]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
+Check the list of [[Device Support|supported hardware]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
 
 === There is an ImageJ driver for my camera.  Can I use the camera with Micro-Manager? ===
 Not necessarily.  Micro-Manager provides an identical interface to all cameras, which means that scripts and applications written using Micro-Manager will work with all supported cameras.  ImageJ camera drivers do not work that way (i.e., they are all different, and Micro-Manager has no way of operating with them), so whether or not there is an ImageJ driver for a device has no bearing on it working with Micro-Manager.  In technical terms, to make a camera work in Micro-Manager, you will need a Micro-Manager device adapter (written in C++), which is very different from an ImageJ camera driver.  Check the list of [[Device Support|supported hardware]] to see if there is a Micro-Manager device adapter for your camera.
