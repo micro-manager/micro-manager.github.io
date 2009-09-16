@@ -15,7 +15,7 @@ An extensive user's guide for Beanshell is [http://beanshell.org/manual/bshmanua
 A few additional commands have been added to the Beanshell environment in Micro-Manager to make scripting more efficient:
 
 <pre>
-  clear("y"); // Remove method "y" (name in quotes) from the current namspace (i.e., from memory)
+  clear("y"); // Remove method "y" (name in quotes) from the current namespace (i.e., from memory)
   doc(x); // Get javadocs API for class or object x
   inspect(x); // Look at member methods and fields of object x
   update("y"); // Make sure Beanshell uses the most recent definition of method "y"
