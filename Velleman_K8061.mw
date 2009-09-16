@@ -8,7 +8,7 @@
 <tr><td>'''Micro-Manager version:'''</td><td>1.2.6</td></tr>
 </table>
 
-The Velleman K8061 is a low cost digital IO board (~$120 unassembled, ~$50 more assembled).  It provides 8 digital out and 8 analogue out channels (as well as analogue and digital in) that can be used for things like  TTLs or AOTF control.  The board has a  switching time of ~4 ms.  Since this board has 8 rather than 2 analogue out and is significantly faster than the Velleman K8055, it will often be a better choice than the K8055 (but it needs a whole lot more soldering).   
+The Velleman K8061 is a low cost digital IO board (~$120 unassembled, ~$50 more assembled - part nr.: VM140).  It provides 8 digital out and 8 analogue out channels (as well as analogue and digital in) that can be used for things like  TTLs or AOTF control.  The board has a  switching time of ~4 ms.  Since this board has 8 rather than 2 analogue out and is significantly faster than the Velleman K8055, it will often be a better choice than the K8055 (but it needs a whole lot more soldering).   
 
 The Micro-Manager adapter was based on the source code for the Windows DLL posted by Velleman.  The adapter provides a switch, a shutter, and DAC outputs.  You will need to define the 'Hub' device.  The 'Hub' takes one parameter, which is the name of the (USB) port that belongs to the K8061.  Simply select the K8061 port (which you also need to select on page 2 of the hardware config wizard). 
 
