@@ -4,7 +4,7 @@ To assure that movement of stages and the orientation of images is as you expect
 
 '''XYStages:''' It is the task of the stage adapter to guarantee that this coordinate system is imposed.  However, this is not guaranteed to work yet for all stages.  Also, user input concerning directionality of the stage might be needed, since this information cannot always be learned from the hardware. To check that the stage moves in the correct orientation, you can execute the following (one line) script in the Micro-Manager script panel:<br>
 mmc.setRelativeXYPosition(mmc.getXYStageDevice(), 1000, 1000);<br>
-This should move the stage by 1 mm to the left, away from the observer. Note that it will also be important to check that the 'pitch' of the stage is correct, i.e., the stage really moves by 1 mm.   
+This should move the stage by 1 mm to the left and 1 mm to the top, away from the observer. Note that it will also be important to check that the 'pitch' of the stage is correct, i.e., the stage really moves by 1 mm.   
 
 '''Z-Stages''' (Focus stages) will have their lowest values away from the sample (at the lowest point for inverted scopes and the highest point of upright scopes).  Movement in the positive direction will move the objective lens towards the sample.  This directionality should be guaranteed by the device adapter, however, as of now (version 1.2.15) this has not been verified for any focus drive adapter.  The following script should move the focus drive by 1 mm towards the sample (make sure that the objective is far enough away from the sample before executing this command!):<br>
 mmc.setRelativePosition(mmc.getFocusDevice(), 1000);
