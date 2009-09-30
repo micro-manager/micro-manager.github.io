@@ -1,7 +1,7 @@
 == Roper/Photometrics PVCAM adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with Roper and Photometrics cameras that work with the PVCAM driver</td></tr>
+'''Summary:'''</td><td>Interfaces with Roper, Photometrics, and PI cameras that work with the PVCAM driver</td></tr>
 <tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested)</td></tr>
