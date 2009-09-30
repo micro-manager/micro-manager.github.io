@@ -2,12 +2,12 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Roper and Photometrics cameras that work with the PVCAM driver</td></tr>
-<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties)</td></tr>
+<tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested)</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_pvcam_simple.cfg]]</td></tr>
-<tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php PVCAM software]</td></tr>
+<tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php Roper/Photometrics PVCAM] or [http://www.princetoninstruments.com/support/software.aspx Princeton Instruments PVCAM]</td></tr>
 </table>
 
 This adapter should work with all PVCAM compatible camera on all platforms.  To use it, you will need to have the  ([http://www.photomet.com/support/downloads/index.php PVCAM software]) installed and working. At the very least, the pvcam test application (included with PVCAM) should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap, Cascade II, and Evolve cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of PVCAM (older versions will lock up your Mac). 
