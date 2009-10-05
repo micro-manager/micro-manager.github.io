@@ -9,7 +9,7 @@ Francis McCloy is the current Andor Developer</td></tr>
 [http://sourceforge.net/mailarchive/forum.php?thread_name=4A1D4CA0.80103@gmail.com&forum_name=micro-manager-general ANN: Andor driver on Linux]</td></tr>
 <tr><td  valign=top >'''Devices:'''</td><td>Andor cameras: iXon, Luca-S, Luca-R and Clara</td></tr>
 <tr><td valign=top >'''Example Config Files:'''</td><td>
-* [[Media:MMConfig_andor.cfg|iXon .cfg]]
+* [[Media:MMConfig_iXon.cfg|iXon .cfg]]
 * [[Media:MMConfig_andor_Clara.cfg|Clara .cfg]]</td></tr>
 </table>
 
