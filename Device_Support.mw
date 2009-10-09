@@ -39,6 +39,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[PrecisExcite]] - LED illuminator (usable as a shutter device)
    [[Prior]] - Prior stages, shutters, and filter wheels
    [[SutterLambda]] - Sutter hardware
+   [[Thorlabs DCxxxx]] - Thorlabs LED drivers
    [[Thorlabs FilterWheel]] - Thorlabs Filter Wheel
    [[Thorlabs SC10]] - Thorlabs shutter controller
    [[Vincent]] - Vincent Uniblitz controllers
