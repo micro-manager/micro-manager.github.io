@@ -23,6 +23,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[Piper]] - Stanford Photonics cameras
    [[QCam]] - QImaging cameras
    [[Sensicam]] - PCO/Cooke Sensicam camera<br>
+   [[Spot]] - Diagnostic Instruments Spot cameras<br>
+   [[Twain]] - Cameras fully implementing Twain Imaging Standard<br>
    non-Open Source adapters are available for [http://www.dvcco.com/ DVC], [http://www.scioncorp.com/ Scion] and [http://www.stanfordphotonics.com/ Stanford Photonics] cameras.<br>  Contact these companies directly.
 ''Stages, filter wheels, shutters''   
    [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
