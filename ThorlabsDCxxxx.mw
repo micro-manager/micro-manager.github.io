@@ -26,6 +26,6 @@
 </table>
 
 
-The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2100 - High Power LED Driver], the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2010 - Universal LED Driver], the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC3100 - FLIM LED Driver] and the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC4100 - 4 Channel LED Driver]
+The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2100 - High Power LED Driver], the DC2010 - Universal LED Driver, the DC3100 - FLIM LED Driver and the DC4100 - 4 Channel LED Driver.
 
 This adapter makes the shutter usable as a normal shutter in Micro-Manager.  On startup, the adapter will switch the controller to mode=1 operation ("normal" operation").  The adapter has an "OnCommand" property that can be used to send commands to the controller (see the SC10 documentation).  Note that the above mentioned serial port settings are the default but that they can be changed through software commands.
