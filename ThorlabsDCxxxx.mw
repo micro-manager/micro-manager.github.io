@@ -1,7 +1,7 @@
 == Thorlabs DCxxxx adapter ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Interface to Thorlabs DCxxxx LED driver series</td></tr>
+'''Summary:'''</td><td valign="top">Interface to Thorlabs DCxxxx LED driver series (DC2100, DC2010, DC3100, DC4100)</td></tr>
 <tr><td>'''Author:'''</td><td>Olaf Wohlmann</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X, Linux</td></tr>
