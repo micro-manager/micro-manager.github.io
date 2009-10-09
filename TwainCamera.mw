@@ -1,7 +1,7 @@
 == Spot Camera adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for cameras that support [http://www.twain.org]</td></tr>
+'''Summary:'''</td><td>Adapter for cameras that support imaging standard of twain.org  [http://www.twain.org]</td></tr>
 <tr><td>'''Author:'''</td><td>Karl Hoover, UCSF</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
