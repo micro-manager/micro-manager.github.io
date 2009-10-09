@@ -1,6 +1,6 @@
 == Spot Camera adapter ==
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for cameras from [http://www.diaginc.com/cameraSoftwareMatrix.shtml]</td></tr>
+'''Summary:'''</td><td>Adapter for cameras from www.diaginc.com [http://www.diaginc.com/cameraSoftwareMatrix.shtml]</td></tr>
 <tr><td>'''Author:'''</td><td>Karl Hoover, UCSF</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
@@ -16,7 +16,7 @@ Changes in 1.3.41:<br>
 
 == Spot Camera adapter ==
 '''Summary:'''
-Adapter for cameras from [http://www.diaginc.com/cameraSoftwareMatrix.shtml]
+Adapter for cameras from www.diaginc.com [http://www.diaginc.com/cameraSoftwareMatrix.shtml]
 '''Author:'''Karl Hoover
 '''License:'''LGPL
 '''Platforms:'''Windows
