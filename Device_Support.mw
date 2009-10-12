@@ -3,7 +3,7 @@
 Most difficulties in working with Micro-Manager arise from configuring the system and from problems/issues with specific devices.  In both of these cases you are interacting mainly with device adapters.  These device adapters have been written by several different authors, all behave slightly differently, and interact with specific hardware that has its own peculiarities.  On these pages we will maintain as much information as possible about Micro-Manager device adapters.  This will help you configure and understand your Micro-Manager system.  We hope that the authors of the device adapters will maintain this information, but please feel free to update the information here with your own experiences.  The information here will refer to the most recent Micro-Manager release (currently [http://micro-manager.org/downloads.php version 1.3]).
 
 ''Motorized Microscopes''
-   [[LeicaDMI]] - Leica DMI microscopes
+   [[LeicaDMI]] - Leica DMI and DM microscopes
    [[LeicaDMR]] - Leica DMR microscopes (and DMIRBE)
    [[NikonTE2000]] - Nikon TE2000 motorized microscope
    [[NikonTI]] - Nikon TI microscope
@@ -22,10 +22,11 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
    [[Piper]] - Stanford Photonics cameras
    [[QCam]] - QImaging cameras
+   [[Scion]] - Scion cameras
    [[Sensicam]] - PCO/Cooke Sensicam camera
    [[Spot]] - Diagnostic Instruments Spot cameras
    [[Twain]] - Cameras fully implementing Twain Imaging Standard
-   non-Open Source adapters are available for [http://www.dvcco.com/ DVC], [http://www.scioncorp.com/ Scion] and [http://www.stanfordphotonics.com/ Stanford Photonics] cameras.<br>  Contact these companies directly.
+   a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
 ''Stages, filter wheels, shutters''   
    [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
