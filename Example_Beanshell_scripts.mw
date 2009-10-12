@@ -32,5 +32,8 @@ These beanshell scripts can be run from the 'Script Panel' (in the 'Tools' menu)
 
 [[Media:Roi_copy.bsh]] - Demonstrates copying of ROI from one camera to another.
 
+[[Media:RatiometricImaging_main.bsh]] - Beanshell for ratiometric Imaging (J. Husson).
+
+[[Media:RatiometricImaging_singleImage.bsh]] - Beanshell for ratiometric Imaging. Takes only one image, can be useful as a control before starting a whole acquisition with main beanshell above (J. Husson).
 
 --[[User:Nico|Nico]] 21:04, 15 December 2007 (PST)
