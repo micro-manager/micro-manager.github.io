@@ -17,6 +17,9 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
    [[Matlab Configuration]] - Setting up Matlab to run Micro-Manager
    [[Roboscope project]] - Roy Wollman's Roboscope project
 
+''Python and Micro-Manager''
+   [[Using the Micro-Manager python library]]   
+
 ''Communicating through serial ports using a terminal application''
    [[Windows]] - Configuring HyperTerminal
 
