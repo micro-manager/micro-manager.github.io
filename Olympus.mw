@@ -9,8 +9,8 @@
 
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
-{| cellspacing="2" border="0" cellpadding=3
-|-AnswerTimeout||500
+{| cellspacing="2" border="0" cellpadding=3 
+|AnswerTimeout||500
 |-
 |BaudRate||19200
 |-
