@@ -1,0 +1,359 @@
+//Beanshell for ratiometric measurements
+//----------------------------------------------------------------------
+//Julien Husson
+//julien.husson@curie.fr
+//permanent: julien.husson@free.fr
+//
+//Macromolécules et Microsystèmes en Biologie et en Médecine
+//Laboratoire Physico Chimie Curie - UMR 168
+//Institut Curie
+//11 rue P. et M. Curie, 75231 PARIS Cedex 05, FRANCE
+//Tel : (33) (0) 1 56 24 67 75
+//Fax : (33) (0) 1 40 51 06 36
+//http://www.curie.fr/equipe/69/lang/_gb
+//----------------------------------------------------------------------
+//								Comments and tips
+//----------------------------------------------------------------------
+//									- channels -
+//Runs with a configuration file having "channels" defined.
+//Channels are defined on my set-up as
+//channels = {"FITC","340","380","closed"};
+//Please adapt to relevant configuration.
+//									- paths -
+//Beanshell saves by default in C:/Data/acqName_0 where acqName is
+//chosen by user in menu opening when beanshell starts.
+//Beware that if you run various acquisitions under same "acqName", ratio
+//images are always saved in C:/Data/foldername_0, whereas
+//other channels will be saved C:/Data/acqName_i xhere i>=1.
+//									- ratio computation -
+//multiplicationFactor=10000 is the factor multiplied with fluorescence at
+//340nm (F340) after background level (Bg340) has been substracted prior
+//to division by (following obvious notation) (F380-B380).
+//Only reason is to handle integers. Optimal multiplicationFactor depends on
+//the system (typical fluorescence level) and type of data handled (8 or 16 bits).
+//Finally ratio = multiplicationFactor*(F340-B340)/(F380-B380)
+//									- after acquisition -
+//Tip: After one acquisition, if no new window opens when hitting live,
+//first close all windows (in Image5D/Close All).
+//Having trouble with metadata, I made the beanshell export an adhoc
+//acqName_times.txt file with acquisition time (in ms) for each channel.
+//									- shutter names for my set-up -//I use two shutters, transmission light shutter "SC10" and filter wheel shutter "LudlShutter"
+//									- LUT range -//change setMinAndMax(500,3500) to relevant range for your system 
+//									- window selection during acquisition
+//It is not possible to move the ratio window during acquisition without taking
+//the risk of stopping loop, or loosing ratio image calculation.
+//However you may select, move and change contrast of the Acquisition window where
+//all channels appear, I left it at this stage although this could be improved.
+//----------------------------------------------------------------------
+
+import ij.*;
+import ij.gui.*;
+import org.micromanager.api.AcquisitionOptions;
+import java.lang.System;
+import ij.process.*;
+import ij.ImagePlus;
+import ij.plugin.*;
+import java.lang.Math;
+import java.awt.image.*;
+import ij.measure.*;
+import ij.text.*;
+import ij.plugin.filter.*;
+///////////////////////////////////////////////////
+// 		intitialization and parameters
+///////////////////////////////////////////////////
+gui.closeAllAcquisitions();
+gui.clearMessageWindow();
+ij.WindowManager.closeAllWindows();
+String[] channels = {"FITC","340","380","closed"};//here change to relevant names
+                                                  // i.e. "channels", and channel names "FITC","340", and "380"
+Color[] colors = {Color.GREEN, Color.BLUE, Color.CYAN, Color.WHITE};
+//adapt at will
+String[] fluolevel = {"1","2","3","4"};//that level is simply an info saved acqName_times.txt
+												   //to remind me the fluorescence lamp setting I used
+String[] binningtable = {"1","2","4"}; //same remark as above, just an info to save
+numSlices = 1; 
+								//that would be for Z slices, non relevant here
+channelGroup = "Filter wheel";//change to corresponding channel name
+boolean show = true;							//shows/hides gui acquisition window leave show=true
+													//unless you will need some tweeking of the code
+String LUT = "Fire";							//change at will
+String label = "final ratio stack";
+//////////////////////////////////////////////////
+//////////////////////////////
+///////////////////////////////////////////////////
+double multiplicationFactor = 10000;//see comment at beginning
+acqName = "test";							//default name
+rootDirName = "090000";					//I am used to name folders with dates
+
+GenericDialog gd = new GenericDialog("Ratio Imaging, Julien Husson, Institut Curie, Paris (2009)");
+gd.addStringField("rootDirName: ", rootDirName);
+gd.addStringField("acqName: ", acqName);
+gd.addNumericField("number of frames:", 1, 0);
+gd.addNumericField("time interval (ms):", 2000, 0);
+gd.addNumericField("exposure time for 340&380 (ms):", 200, 0);
+gd.addNumericField("exposure time for FITC (ms):", 200, 0);
+gd.addNumericField("exposure time for transmitted light (ms):", 10, 0);
+gd.addChoice("fluo level", fluolevel, fluolevel[0]);
+gd.addChoice("binning", binningtable, binningtable[1]);
+
+gd.setOKLabel("start"); 
+gd.showDialog();
+int indexfirstsnap = 2;	//i.e. channel = 380, with highest fluorescence
+								//level, is used for first snap
+rootDirName = "C:/Data/"+gd.getNextString();
+acqName = gd.getNextString();
+timeFileName = rootDirName+"/"+acqName+"_0/"+acqName+"_times.txt";
+numFrames = (int)gd.getNextNumber();
+intervalMs = (int)gd.getNextNumber(); ///time for one loop (in ms)
+double expTime340380 = gd.getNextNumber();
+double expTimeFITC = gd.getNextNumber();
+double expTimeTrans = gd.getNextNumber();
+String fluolevel1 = gd.getNextChoice();
+String binning1 = gd.getNextChoice();
+double multiplicationFactor = 10000;
+	//default Multiplication factor is 10000
+times340 = new long[numFrames];
+times380 = new long[numFrames];
+timesFITC = new long[numFrames];
+timesTrans = new long[numFrames];
+mmc.setExposure(expTime340380);
+mmc.setConfig(channelGroup, channels[indexfirstsnap]);
+mmc.waitForConfig(channelGroup, channels[indexfirstsnap]);
+
+mmc.setShutterDevice("SC10");
+mmc.setShutterOpen(false);
+mmc.setShutterDevice("LudlShutter");
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices, show);
+for (int i=0; i<colors.length; i++) gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++) gui.setChannelName(acqName, i, channels[i]);
+
+int[] xROI={1};int[] yROI={1};int[] wROI={1};int[] hROI={1};
+int[] xROIbg={1};int[] yROIbg={1};int[] wROIbg={1};int[] hROIbg={1};
+gui.snapSingleImage();
+mmc.getROI(xROI,yROI,wROI,hROI);
+//this is actual ROI defined by user before starting acquisition
+auximg=new ImagePlus();
+auximg=IJ.getImage();
+int byteDepth1 = auximg.getBytesPerPixel();
+///////////////////////////////////////////////////
+///////////		background Roi setting
+ /////////////
+///////////////////////////////////////////////////
+new WaitForUserDialog("Select backgroung Roi, clik on µ-Manager ROI button, then click OK").show();
+mmc.getROI(xROIbg,yROIbg,wROIbg,hROIbg);
+//that defines background ROI
+if ((wROIbg[0]>200)||(hROIbg[0]>200)) new WaitForUserDialog("Do it again strangely large background ROI").show();
+
+//I noticed that bug, happens when user tries a too small ROI
+mmc.setROI(xROIbg[0],yROIbg[0],wROIbg[0],hROIbg[0]);
+gui.snapSingleImage();
+firstimg=new ImagePlus();
+firstimg=IJ.getImage();
+if (byteDepth1==1) ip0 = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+if (byteDepth1==2) ip0 = new ShortProcessor((int)wROI[0], (int)wROI[0]);
+ip0 = firstimg.getProcessor();
+ip0.setRoi(xROIbg[0],yROIbg[0],wROIbg[0],hROIbg[0]);
+ImageStatistics roi0stats = firstimg.getStatistics();
+int background0=Math.round(roi0stats.mean);
+mmc.setROI(xROI[0],yROI[0],wROI[0],hROI[0]);
+gui.snapSingleImage();
+sndimg=new ImagePlus();
+sndimg=IJ.getImage();
+if (byteDepth1==1) ip01 = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+if (byteDepth1==2) ip01 = new ShortProcessor((int)wROI[0], (int)wROI[0]);
+ip01 = sndimg.getProcessor();
+ip01.setRoi(xROI[0],yROI[0],wROI[0],hROI[0]);
+ip01.add(-background0);
+ip01converted = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+ip01converted =ip01.convertToByte(false);
+firstimg.setProcessor("converted to 8bits",ip01converted);
+		//important to use false as argument in ip01.convertToByte(false)
+		//implying no rescaling, levels are low so rescaling implies loosing all info
+ip01.setRoi(xROI[0],yROI[0],wROI[0],hROI[0]);
+ij.IJ.run("Select None");
+ij.IJ.run("Threshold...");
+////////////////////////////////////////////////
+////////////// THRESHOLDING MENU////////////////
+////////////////////////////////////////////////
+new WaitForUserDialog("Just set background but please do not press apply").show();
+double clippingvalue=ip01converted.getMinThreshold();//clippingvalue = lower threshold value
+double clippingvalue2=ip01converted.getMaxThreshold();//clippingvalue2 = higher threshold value, the important one
+
+////////////////////////////////////////////////
+///////////////creating mask
+////////////////////
+////////////////////////////////////////////////
+mask = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+maskaux = new FloatProcessor((int)wROI[0], (int)hROI[0]);
+double factor = 0.00392156827;			//factor=1/255
+IJ.getImage().getWindow().setVisible(false);
+////////////////////////////////////////////////
+/////////////some initilalizations
+//////////////
+////////////////////////////////////////////////
+img1=new ImagePlus();
+img2=new ImagePlus();
+ipsubstracted1 = new FloatProcessor((int)wROI[0], (int)hROI[0]);
+ipsubstracted2 = new FloatProcessor((int)wROI[0], (int)hROI[0]);
+ipratio = new ShortProcessor((int)wROI[0], (int)hROI[0]);
+// change here eventually to Byte/Short if 8/16 bits needed
+ipratioaux = new FloatProcessor((int)wROI[0], (int)hROI[0]);
+
+ipratiolive = new FloatProcessor((int)wROI[0], (int)hROI[0]);
+ipratiolive.setColor(Color.blue);
+ipratiolive.fill();
+ImagePlus imgratio=new ImagePlus("",ipratiolive);//first dummy live ratio image
+imgratio.show();
+ij.IJ.run(LUT);//apply LUT
+ColorModel cmLUT = ipratiolive.getCurrentColorModel();
+ij.IJ.run("Grays");//apply LUT
+ColorModel cmdefault = ipratiolive.getDefaultColorModel();
+winratio=imgratio.getWindow();
+winratio.pack();
+/////////////////////////////////////////////
+////// zooming defined by 	zoomLevel/////////
+////left code by I don't use it anmore //////
+/////////////////////////////////////////////
+if (show==true)
+	{
+	zoomLevel = 1.0;
+	gui.snapAndAddImage(acqName, 0, 0, 0);
+	winacq=IJ.getImage().getWindow();
+	newWidth = (int) (zoomLevel * winacq.getImagePlus().getWidth());
+	newHeight = (int) (zoomLevel * winacq.getImagePlus().getHeight());
+	newSize = new Dimension(newWidth, newHeight);
+	winacq.getCanvas().setDrawingSize(newWidth, newHeight);
+	winacq.getCanvas().setMagnification(zoomLevel);
+	winacq.pack();
+	};
+/////////////////////////////////////////////
+////////////////  LUT scale//////////////////
+/////////////////////////////////////////////
+
+ipLUT = new FloatProcessor(120, 250);
+ipLUT.setColor(Color.black);
+ipLUT.fill();
+ipLUT.setMinAndMax(500,3500);
+//please adapt to relevant values to your system
+imgLUT=new ImagePlus();
+imgLUT.setProcessor("LUT",ipLUT);
+imgLUT.show();
+ij.IJ.run(LUT);
+ij.IJ.run("Calibration Bar...", "location=[Upper Right] fill=None label=White number=5 decimal=0 font=20 zoom=1.0");
+ij.IJ.save(IJ.getImage(), rootDirName+"/"+acqName+"_0/"+"LUTbar.tif");
+imgLUT.close();
+
+new WaitForUserDialog("Move acquisition Window").show();
+//move acquisition Window away from ratio window
+
+mmc.setShutterDevice("SC10");
+initTime=System.currentTimeMillis();
+ij.IJ.append("Julien Husson, Institut Curie Paris, France", timeFileName);
+ij.IJ.append("fluo level: "+fluolevel1, timeFileName);
+ij.IJ.append("binning: "+binning1, timeFileName);
+ij.IJ.append("exposure time for FITC (ms):"+expTimeFITC, timeFileName);
+ij.IJ.append("exposure time for 340&380 (ms):"+expTime340380, timeFileName);
+ij.IJ.append("exposure time for transmitted light (ms):"+expTimeTrans, timeFileName);
+ij.IJ.append("frame#	FITC	340	380	trans", timeFileName);
+
+///////////////////////////////////////////
+//////////////start loop///////////////////
+
+///////////////////////////////////////////
+
+for (int i=0; i<numFrames; i++) {
+
+      now = System.currentTimeMillis();
+
+		//New transmission shutter introduced, open asap after fluo snaps
+		mmc.setShutterOpen(false);
+		mmc.setShutterDevice("LudlShutter");
+		mmc.setAutoShutter(true);
+
+		//             FITC
+		mmc.setExposure(expTimeFITC);
+		mmc.setConfig(channelGroup, channels[0]);
+		mmc.waitForConfig(channelGroup, channels[0]);
+		timesFITC[i] = (long) System.currentTimeMillis()-initTime;
+		gui.snapAndAddImage(acqName, i, 0, 0);
+
+		//             340
+      mmc.setExposure(expTime340380);
+      mmc.setConfig(channelGroup, channels[1]);
+      mmc.waitForConfig(channelGroup, channels[1]);
+		times340[i] = (long) System.currentTimeMillis()-initTime;
+		gui.snapAndAddImage(acqName, i, 1, 0);
+		if (byteDepth1==1) ip1 = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+      if (byteDepth1==2) ip1 = new ShortProcessor((int)wROI[0], (int)hROI[0]);
+		ip1 = IJ.getImage().getProcessor();
+		ip1.setRoi(xROIbg[0],yROIbg[0],wROIbg[0],hROIbg[0]);
+		ImageStatistics roi1stats = IJ.getImage().getStatistics();
+		int background1=Math.round(roi1stats.mean);
+		gui.message("background1: "+background1);
+		mmc.setROI(xROI[0],yROI[0],wROI[0],hROI[0]);
+
+		//              380
+		mmc.setExposure(expTime340380);
+      mmc.setConfig(channelGroup, channels[2]);
+      mmc.waitForConfig(channelGroup, channels[2]);
+		times380[i] = (long) System.currentTimeMillis()-initTime;
+		gui.snapAndAddImage(acqName, i, 2, 0);
+		if (byteDepth1==1) ip2 = new ByteProcessor((int)wROI[0], (int)hROI[0]);
+      if (byteDepth==2) ip2 = new ShortProcessor((int)wROI[0], (int)hROI[0]);
+		ip2 = IJ.getImage().getProcessor();
+		ip2.setRoi(xROIbg[0],yROIbg[0],wROIbg[0],hROIbg[0]);
+		ImageStatistics roi2stats = IJ.getImage().getStatistics();
+		int background2=Math.round(roi1stats.mean);
+		gui.message("background2: "+background2);
+		mmc.setROI(xROI[0],yROI[0],wROI[0],hROI[0]);
+
+		//             transmitted light
+		mmc.setShutterDevice("SC10");
+		mmc.setAutoShutter(false);
+		mmc.setShutterOpen(true);	//New transmission shutter introduced, open asap after fluo snaps
+		mmc.setExposure(expTimeTrans);
+      mmc.setConfig(channelGroup, channels[3]);//close fluo
+      mmc.waitForConfig(channelGroup, channels[3]);
+		timesTrans[i] = (long) System.currentTimeMillis()-initTime;
+		gui.snapAndAddImage(acqName, i, 3, 0);
+	
+
+		//              Calculate Ratio
+
+		ipsubstracted1.copyBits(ip1, 0, 0, Blitter.COPY);
+		ipsubstracted1.add(-background1);
+		maskaux=ipsubstracted1.duplicate();
+		mask = maskaux.convertToByte(false);
+	//important to use false as argument, to
+															//be consistent with clippingvalue2 setting
+															//on ip0 converted to 8 bits (see before loop)
+		mask.threshold((int)clippingvalue2);
+		mask.multiply(factor);//now we have a 0 or 1 mask
+		ipsubstracted1.multiply(multiplicationFactor);
+		ipsubstracted2.copyBits(ip2, 0, 0, Blitter.COPY);
+		ipsubstracted2.add(-background2);
+		ipsubstracted1.copyBits(ipsubstracted2, 0, 0, Blitter.DIVIDE);
+		ipsubstracted1.copyBits(mask, 0, 0, Blitter.MULTIPLY);
+		ipratioaux=ipsubstracted1.duplicate();
+		ipratio = ipratioaux.convertToShort(false);// change here eventually to Byte/Short if 8/16 bits needed 
+		ipratio.setMinAndMax(500,3500);
+//adapt to relevant values for your system
+		ipratio.setColorModel(cmLUT);
+		imgratio.setProcessor("live ratio frame#"+i,ipratio);		
+		int j = i+1;
+		ij.IJ.save(imgratio, rootDirName+"/"+acqName+"_0/ratio"+acqName+"_"+j+".tiff");
+		imgratio.flush();
+		itTook = System.currentTimeMillis() - now;
+   	if (intervalMs>=itTook) gui.sleep(intervalMs - itTook);
+//if time is out Beanshell
+																				//just does as fast as it can
+		ij.IJ.append(i+"	"+Long.toString(timesFITC[i])+"	"+Long.toString(times340[i])+"	"+Long.toString(times380[i])+"	"+Long.toString(timesTrans[i]), timeFileName);
+
+}
+
+imgratio.close();
+mmc.setROI(xROI[0],yROI[0],wROI[0],hROI[0]);
+mmc.setShutterDevice("SC10");
+mmc.setAutoShutter(true);
+mmc.setShutterDevice("LudlShutter");
+mmc.setAutoShutter(true);
