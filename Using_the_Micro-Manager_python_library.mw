@@ -1,0 +1,35 @@
+(The python wrapper for Micro-Manager will be released soon...)
+
+<!-- A python wrapper for the Micro-Manager core is available on Mac and Windows. -->The python wrapper does not include the Java GUI -- only the C++ core can be controlled. After Micro-Manager has been installed on your machine, MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. To use the MMCorePy library, you will need to install the latest versions of:
+
+* [http://python.org/ python2.6.x] (python 3.x is not yet supported)
+* [http://numpy.org/ numpy]
+* [http://scipy.org/ scipy] (optional)
+* [http://matplotlib.sourceforge.net/ matplotlib] (optional)
+
+You can make the Micro-Manager python wrapper library generally available by adding your micro-manager directory to the [http://docs.python.org/using/cmdline.html#envvar-PYTHONPATH PYTHONPATH] environment variable.
+
+Images returned by calls to the Micro-Manager core object ([http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html CMMCore]) are stored in numpy arrays for convenience, and can be easily displayed by pylab (matplotlib) commands. Here is a short example that demonstrates use of the python wrapper to acquire and display an image.
+
+<code><pre>
+# Create a Micro-Manager core object:
+import MMCorePy
+mmc = MMCorePy.CMMCore()
+
+#  Load and initialize the demo camera device:
+mmc.loadDevice("cam","DemoCamera","DCam")
+mmc.initializeDevice("cam")
+
+# Snap and retrieve an image:
+mmc.snapImage()
+im1 = mmc.getImage()
+
+# Display the image:
+from pylab import *
+ion() # Activate interactive mode
+figure()
+imshow(im1,cmap = cm.gray)
+</pre>
+</code>
+
+A longer example script, MMCoreWrapDemo.py, is available in the Micro-Manager root directory.
