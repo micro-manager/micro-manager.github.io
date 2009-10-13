@@ -1,4 +1,4 @@
-'''MMCorePy''' is a python library that wraps the Micro-Manager C++ core (on both Mac and Windows). The library allows you to control microscope hardware from python scripts or the command line. 
+'''MMCorePy''' is a python library that wraps the Micro-Manager C++ core (on both Mac and Windows). The library allows you to control microscope hardware from python scripts or a python command line. 
 
 Here is how to get started with the Micro-Manager python library:
 
