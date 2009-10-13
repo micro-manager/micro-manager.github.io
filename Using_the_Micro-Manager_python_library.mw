@@ -13,7 +13,7 @@ Here is how to get started with the Micro-Manager python library:
 #* [http://www.pythonware.com/products/pil/ PIL (Python Imaging Library)] (optional, image processing and file saving)
 # MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. You can make the Micro-Manager python wrapper library work from any directory by adding your micro-manager directory to the [http://docs.python.org/using/cmdline.html#envvar-PYTHONPATH PYTHONPATH] environment variable.
 
-Images returned by calls to the Micro-Manager core object ([http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html CMMCore]) are stored in numpy arrays for convenience, and can be easily displayed by pylab (matplotlib) commands. Here is a short example (using matplotlib) that demonstrates use of the python wrapper to acquire and display an image.
+Images returned by calls to an instance of the pythonized Micro-Manager core class ([http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html CMMCore]) are stored in numpy arrays for convenience, and can be easily displayed by pylab (matplotlib) commands. Here is a short example (using matplotlib) that demonstrates use of the python wrapper to acquire and display an image.
 
 <code><pre>
 # Create a Micro-Manager core object:
