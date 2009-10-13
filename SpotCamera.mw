@@ -8,17 +8,9 @@
 <tr><td>'''Available since version:'''</td><td>1.3.41</td>
 </table>
 
+To use a SPOT camera with Micro-Manager on Windows or Mac, you will need to download and install the driver from the  [http://www.diaginc.com/downloads.php SPOT website] under the heading "Spot Camera DLL".
+
 The code for this adapter was written by Karl Hoover.
 
 Changes in 1.3.41:<br>
 • Initial implementation tested with Flex 15.2, Idea 28.2, and RT Slider 2.3.0 cameras on Windows XP SP3 <br>
-
-
-== Spot Camera adapter ==
-'''Summary:'''
-Adapter for cameras from www.diaginc.com [http://www.diaginc.com/cameraSoftwareMatrix.shtml]
-'''Author:'''Karl Hoover
-'''License:'''LGPL
-'''Platforms:'''Windows
-'''Devices:'''Spot cameras
-'''Available since version:'''1.3.41
