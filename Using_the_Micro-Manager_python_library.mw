@@ -1,13 +1,19 @@
-A python wrapper for the Micro-Manager core is available on Mac and Windows, allowing you to control hardware from python scripts or the command line. Currently, the python wrapper does not include the Micro-Manager Java GUI or ImageJ -- instead, only the C++ core can be controlled. After Micro-Manager has been installed on your machine, MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. To use the MMCorePy library, you will need to install the latest versions of:
+'''MMCorePy''' is a python library that wraps the Micro-Manager C++ core (on both Mac and Windows). The library allows you to control microscope hardware from python scripts or the command line. 
 
-* [http://python.org/ python2.6.x] (python 3.x is not yet supported)
-* [http://numpy.org/ numpy]
-* [http://scipy.org/ scipy] (optional)
-* [http://matplotlib.sourceforge.net/ matplotlib] (optional)
+Here is how to get started with the Micro-Manager python library:
 
-You can make the Micro-Manager python wrapper library generally available by adding your micro-manager directory to the [http://docs.python.org/using/cmdline.html#envvar-PYTHONPATH PYTHONPATH] environment variable.
+# [http://micro-manager.org/downloads.php Download] and install Micro-Manager on your computer.
+# Familiarize yourself with Micro-Manager and learn how to connect it to your hardware by using the existing Java-based GUI (graphical user interface).
+# Install the latest versions of:
+#* [http://python.org/ python 2.6.x] (required; python 3.x is not yet supported)
+#* [http://numpy.org/ numpy] (required)
+#* [http://scipy.org/ scipy] (optional, good for advanced image processing)
+#* [http://matplotlib.sourceforge.net/ matplotlib] (optional, useful for displaying images)
+#* [http://ipython.scipy.org/moin/ ipython] (optional, a nice interactive python environment) 
+#* [http://www.pythonware.com/products/pil/ PIL (Python Imaging Library)] (optional, image processing and file saving)
+# MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. You can make the Micro-Manager python wrapper library work from any directory by adding your micro-manager directory to the [http://docs.python.org/using/cmdline.html#envvar-PYTHONPATH PYTHONPATH] environment variable.
 
-Images returned by calls to the Micro-Manager core object ([http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html CMMCore]) are stored in numpy arrays for convenience, and can be easily displayed by pylab (matplotlib) commands. Here is a short example that demonstrates use of the python wrapper to acquire and display an image.
+Images returned by calls to the Micro-Manager core object ([http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html CMMCore]) are stored in numpy arrays for convenience, and can be easily displayed by pylab (matplotlib) commands. Here is a short example (using matplotlib) that demonstrates use of the python wrapper to acquire and display an image.
 
 <code><pre>
 # Create a Micro-Manager core object:
