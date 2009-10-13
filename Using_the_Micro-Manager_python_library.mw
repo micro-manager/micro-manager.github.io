@@ -1,6 +1,4 @@
-(The python wrapper for Micro-Manager will be released soon...)
-
-<!-- A python wrapper for the Micro-Manager core is available on Mac and Windows. -->The python wrapper does not include the Java GUI -- only the C++ core can be controlled. After Micro-Manager has been installed on your machine, MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. To use the MMCorePy library, you will need to install the latest versions of:
+A python wrapper for the Micro-Manager core is available on Mac and Windows, allowing you to control hardware from python scripts or the command line. Currently, the python wrapper does not include the Micro-Manager Java GUI or ImageJ -- instead, only the C++ core can be controlled. After Micro-Manager has been installed on your machine, MMCorePy.py will be located in the main Micro-Manager directory; it requires many library files in that directory (with suffixes like .dll, .so, .pyd) to operate. To use the MMCorePy library, you will need to install the latest versions of:
 
 * [http://python.org/ python2.6.x] (python 3.x is not yet supported)
 * [http://numpy.org/ numpy]
