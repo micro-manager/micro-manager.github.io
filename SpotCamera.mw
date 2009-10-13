@@ -8,7 +8,7 @@
 <tr><td>'''Available since version:'''</td><td>1.3.41</td>
 </table>
 
-To use a SPOT camera with Micro-Manager on Windows or Mac, you will need to download and install the driver from the  [http://www.diaginc.com/downloads.php SPOT website] under the heading "Spot Camera DLL".
+To use a SPOT camera with Micro-Manager on Windows or Mac, you will need to download and install the driver from the  [http://www.diaginc.com/downloads.php Diagnostic website] under the heading "SPOT Camera DLL".
 
 The code for this adapter was written by Karl Hoover.
 
