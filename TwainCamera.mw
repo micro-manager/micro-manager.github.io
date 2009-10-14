@@ -1,4 +1,4 @@
-== Spot Camera adapter ==
+== Twain Camera adapter ==
 
 <table><tr><td>
 '''Summary:'''</td><td>Adapter for cameras that support imaging standard of twain.org  [http://www.twain.org]</td></tr>
@@ -13,13 +13,3 @@ The code for this adapter was written by Karl Hoover.
 
 Changes in 1.3.41:<br>
 • Initial release. Leica DFC cameras are operational <br>
-
-
-== Spot Camera adapter ==
-'''Summary:'''
-Adapter for cameras from [http://www.twain.org]
-'''Author:'''Karl Hoover
-'''License:'''LGPL
-'''Platforms:'''Windows
-'''Devices:'''Spot cameras
-'''Available since version:'''1.3.41
