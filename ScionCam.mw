@@ -6,7 +6,6 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac</td></tr>
 <tr><td>'''Devices:'''</td><td>Scion Firewire Cameras</td></tr>
-<tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
-Install the drivers and Shared Library Update for your platform from the [http://www.scioncorp.com/pages/downloads_camera.htm Scion download page].  Then make a configuration file using the Micro-Manager hardware configuration wizard.
+'''Instructions:'''<br>Install the drivers and Shared Library Update for your platform from the [http://www.scioncorp.com/pages/downloads_camera.htm Scion download page].  Then make a configuration file using the Micro-Manager hardware configuration wizard.
