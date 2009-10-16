@@ -35,7 +35,7 @@ Get the Linux version of ImageJ from http://rsb.info.nih.gov/ij/download.html, m
 
 2. '''Get Micro-Manager from the repository'''
 
-Make a directory somewhere (e.g. "~/src"), move to it ("cd ~/src") and get Micro-Manager with the command "svn checkout htpps://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3". This will download all the necessary files from the repository into "~/src/micromanager1.3/".
+Make a directory somewhere (e.g. "~/src"), move to it ("cd ~/src") and get Micro-Manager with the command "svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3". This will download all the necessary files from the repository into "~/src/micromanager1.3/".
 
 3. '''Beanshell and swingx'''
 
@@ -72,7 +72,6 @@ Starting ImageJ with the scripts provided in the ImageJ directory (run, script, 
 11. '''Running Micro-Manager'''
 
 cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &"). In the plugins menu of ImageJ, start Micro-Manager –> Micro-Manager Studio.
-
 
 == mmscript: ==
 
