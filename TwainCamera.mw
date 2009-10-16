@@ -14,6 +14,8 @@ The code for this adapter was written by Karl Hoover. Notes: You'll need to inst
 [[Image:Twain_TWAINDSM.DLL_MISSING.GIF]]
 
 Also please double check that the camera has a 'controllable' UI. Use twain.org's "Twain2 Sample App" program select your camera, press "Connect to Data Source" Your camera must report CAP_UICONTROLLABLE  = true.
+
+
 [[Image:TWAIN_CAP_UICONTROLLABLE.GIF]]
 
 Changes in 1.3.41:<br>
