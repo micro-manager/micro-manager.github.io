@@ -63,7 +63,7 @@ From within "~/src/micromanager1.3", type "./mmUnixBuild.sh".
 
 9. Run '''ldconfig'''
 
-"ldconfig"
+"sudo ldconfig"
 
 10. '''The starting script'''
 
