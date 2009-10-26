@@ -30,6 +30,7 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 ''User contributed adapters and notes''
 
 Some of the Micro-Manager users have written adapters that have not (yet) been incorporated into the Micro-Manager distribution.  We'll keep information on these adapters right here.
+   [http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start Firewire camera/LED synchronization] - A Micro-Manager plugin by Alex Hodge synchronizing multi-color LED illumination with a Firewire camera
 
 ''Building the software (for developers)''
    [[Building ACE on the Mac]] - How to build ACE on the Mac
