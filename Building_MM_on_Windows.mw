@@ -79,8 +79,6 @@ Java layer of the Micro-Manager can be build using the standard ANT utility with
 
 To build the entire Micro-Manager source code with a single command, you can use mmbuild.bat. You can modify this file to switch between Debug and Release builds, specify different paths for ANT and MSDEV tools, etc. Required MSDEV paths for command-line compilation are located in vsvars32.bat file in the MSDEV installation package.
 
- 
-
 ==ACE Installation notes==
 
 Create a file called config.h in the <root>\3rdparty\ACE_Wrappers\ace directory that contains following line:
