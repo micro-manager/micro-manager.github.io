@@ -1,3 +1,94 @@
-This page supplements the very helpful [http://www.micro-manager.org/raw_content/build_win_Liisa.htm instructions by Liisa.]
+=Instructions for building Micro-Manager on Windows=
 
-* To build the ACE static libraries with Visual C++ 2008 Express (which is VC9.0), download ACE 5.6.7 and open ACE_vc9_Static.sln. Building ACE 5.4.7 with VC2008EE generates errors.
+==Preparation==
+
+First make sure you have enough hard disk space. I don't know how much you will need but I would think if you have about 5GB you should be fine.
+
+====Directory structure for the source code====
+When you unzip the source code, the default directory for the entire source code is "projects/micromanager1.3". This directory should reside in the parent directory root of your choice. The root directory will be referred to as <root>. In the root directory you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware.
+
+====Required tools and applications====
+
+To build the entire application from the source code, you will need to install the following tools:
+
+# Microsoft Developer Studio 2003 (7.1) or 2005 (8.0) with Visual C++ . If you have the 2005 version, you might need to convert some solution files later from the older format but that should work without problems.
+# JDK (Java developer's kit) standard edition, version 1.4 or later (Download from http://java.sun.com/j2se/1.4.2/download.html.)
+# ImageJ 1.37v or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
+# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
+# Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
+
+From the command line, write:
+
+<code><pre>
+set ANT_HOME=c:\ant
+set JAVA_HOME=c:\jdk-1.5.0.05
+set PATH=%PATH%;%ANT_HOME%\bin
+</pre></code>
+ 
+or follow installation instructions in Documentation ->Manual ->Installing Ant. (Need to do this every time Windows is restarted.)
+
+====Required open source libraries====
+
+In addition to software tools you will need to install the following software packages in the <root>/3rdparty directory:
+
+SWIG version 1.3.24 and place it in "<root>/3rdparty/SWIG-1.3.24" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
+
+ACE version 5.4.7 and place it in the "<root>3rdparty/ACE_Wrappers" subdirectory (Download from http://download.dre.vanderbilt.edu/previous_versions/previous_versions/ and extract to <root>/3rdparty, which will create ACE_wrappers directory. Then you need to build library files for ACE. This is not simple and can take long time, follow the instructions in the web page or below.
+
+INPOUT32 library and place it in "<root>/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micro-manager-1.0/bin, because this dll is required at run-time.)
+ 
+====Device libraries and SDK's====
+
+Some device adapter require the installation of manufacturer's SDKs in order to build. All SDKs should be installed in the <root>/3rdparty directory. The actual names of SDK directories should match the paths in the corresponding header files in the Micro-manager source code for device adapters.
+
+If you don't want to build one or more device adapters (because you don't have the SDK), you should remove corresponding projects from the master solution: MMCoreJ_wrap.sln.
+
+==Setting up library paths==
+
+SDK and open source library paths should be set in MSDEV before launching a build. All 3rdparty static and dynamic libraries required for linking are referred in project files without absolute paths - therefore the paths must be set though the usual project settings for default libraries in MSDEV.
+
+Go to Tools|Options menu and expand "Projects and Solutions". Select "VC++ Directories" and use the drop-down in the top right ("Show directories for..") to be "Include Files". Add the following directories (if <root> = c:\Micro-Manager and Java sdk was installed in C:\ directory):
+
+C:\Micro-Manager\3rdparty\ACE_wrappers
+
+C:\j2sdk1.4.2_13\include\
+
+C:\j2sdk1.4.2_13\include\win32
+
+[Default library paths must be set for ACE, JDK, INPOUT32 (?) and optionally for required device dependent SDK's.]
+
+==Building the C++ layer: MMCore and device adapters==
+
+You can build C++ part of the project by opening MMCoreJ_wrap.sln in MSDEV and running the full build. This will build the MMCore, Java wrappers and all device adapters. You can remove any device adapter project from the solution if you don't have the corresponding SDK or if you don't need to build it.
+
+==Building the Java layer: Micro-Manager Studio==
+
+Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/micro-manager-1.0/mmStudio directory. Before running the build the project file build.xml must be modified to specify paths for external libraries: ImageJ and BeanShell.
+
+<code><pre>
+<!-- EDIT PATHS BELOW TO MATCH YOUR SYSTEM -->
+
+<!-- Specify the system path to the ImageJ root directory -->
+<property name="ImageJPath" value="C:/Program Files/ImageJ"/>
+
+<!-- Specify the system path to the beanshell jar -->
+<property name="beanshell" value="C:/projects/3rdparty/BeanShell/bsh-2.0b4.jar"/>
+
+<!-- DO NOT MODIFY FROM THIS POINT ON -->
+</pre></code>
+
+==Building the full source in one step==
+
+To build the entire Micro-Manager source code with a single command, you can use mmbuild.bat. You can modify this file to switch between Debug and Release builds, specify different paths for ANT and MSDEV tools, etc. Required MSDEV paths for command-line compilation are located in vsvars32.bat file in the MSDEV installation package.
+
+ 
+
+==ACE Installation notes==
+
+Create a file called config.h in the <root>\3rdparty\ACE_Wrappers\ace directory that contains following line:
+
+<code><pre>#include "ace/config-win32.h"</pre></code>
+
+Then open the project in Visual Studio and open the ACE-Static.sln solution to build static libraries: ACEs.lib (release) and ACEsd.lib (debug). They only have this file for VS7.1 but there should not be problems converting to VS8.0. Then just build the solution (which takes a long time).
+
+To build the ACE static libraries with Visual C++ 2008 Express (which is VC9.0), download ACE 5.6.7 and open ACE_vc9_Static.sln. Building ACE 5.4.7 with VC2008EE generates errors.
