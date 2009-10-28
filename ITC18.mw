@@ -2,13 +2,10 @@
 '''Summary:'''</td><td>Controls Heka ITC18</td></tr>
 <tr><td>'''Author:'''</td><td>Karl Bellve</td></tr>
 <tr><td>'''License:'''</td><td>LGPL License</td></tr> 
-<tr><td>'''Platforms:'''</td><td>32 bit or 64 bit Linux, 32 bit Windows</td></tr>
+<tr><td>'''Platforms:'''</td><td>Linux now, 32bit Windows soon to follow</td></tr>
 </table>
 
-
-== Description ==
-
-The ITC18 is an external DA/AD/TTL data acquisition device from Heka. It has the benefit that it can run asynchronously from the host computer, as well as being electrically isolated. 
+The ITC18 from Heka is a 16bit data acquisition device. It has the benefit that it can run asynchronously from the host computer, as well as being electrical isolated. 
 
 It has the following ports:
 
@@ -22,61 +19,16 @@ On the front panel:
 
 In addition, more TTL inputs and outputs can be found on the back panel.
 
-The ITC18 can be controlled with two different devices attached to the host computer, PCI18 and the USB18. The PCI18 comes as a 5V or a 3.3V PCI card. The USB18 needs a 2.0 USB port.
+Linux implementation is limited to using the USB18 to control the ITC18.
+32 bit windows version should work with either the USB18 or the PCI18. It will '''not''' be compatible with 64 bit Windows.
 
-Linux implementation is limited to using the USB18.
+The ITC18 can be used to control anything that either needs ±10Volts or a TTL signal, including shutters, triggering cameras, pifocs, etc...and everything can be done synchronously with high accuracy.
 
-32 bit windows version should work with either the USB18 or the PCI18 but has only been tested with the USB18. Unlike the Linux driver, the ITC18 windows driver is '''not''' compatible with 64 bits.
+The ITC18 can be used in two modes. The normal mode is to use it to open or close shutters, or setting or reading a voltage on one of the DA/AD ports. In this mode, it acts like any other device adapter.
 
-The ITC18 can be used to control anything that either needs ±10Volts or a TTL signal, including shutters, filter wheels, triggering cameras, pifocs, etc...and everything can be done synchronously with high accuracy (<1ms) and speed (>10kHz, but usually at 1Khz).
+The second mode is used by preloading the ITC18 with an imaging protocol, via Micro-Manager, to drive devices. A example script will be posted soon on how to do this.
 
-The ITC18 can be used in two modes. The normal mode is to use it to open or close shutters, or setting or reading a voltage on one of the DA/AD ports. In this mode, it acts like any other device adapter. 
-
-The second mode is used by preloading the ITC18 with an imaging protocol by using Micromanager's bean shell scripting engine. 
-
-More information about the ITC18 can be found here:
+More information can be found here:
 [http://www.heka.com/physio/equipment/interfaces/itc18.html ITC18]
 
-== ITC18 Device Adapter ==
-<ul>
-<li>ITC18-Hub: This device must be loaded. It is the core device that opens the ITC18 hardware</li>
-<li>ITC18-Shutter: This device controls TTL-controllable shutter attached to any of the TTL Outputs (0-15)</li>
-<li>ITC18-DAC: Sets a voltage on a DA port (0-3)</li>
-<li>ITC18-ADC: Reads a voltage on a AD port (0-7)</li>
-<li>ITC18-Protocol: This device loads an external imaging protocol- '''should only be used by very advanced users'''</li>
-</ul>
-
-== Example Scripts for ITC18-Protocol module ==
-<ol>
-<li>Create a protocol by running [[Media:ITC18.csh]]</li>
-<li>Run that protocol inside Micromanager with [[Media:TESM.bsh]]</li>
-</ol>
-
-{{Note|The above protocols are very complicated and are designed for a very specific microscope. You need to modify them to suit your needs.}}
-
-The ITC18.csh script was written for a very specific microscope developed by the Biomedical Imaging Group at the University of Massachusetts. That microscope has 2 VMM-D3 shutter controllers (5 total shutters), a Sutter 10-2 filter wheel, 3 Lasers, and two pifocs. The ITC18.csh script is designed to control everything but the two pifocs. An additional script controls the two pifocs. ITC18.csh assumes TTL Out 0 is triggering a camera, TTL Out 1-5 are controlling shutters. The ITC18.csh also controls a Sutter 10-2 connected to the ITC18 via TTL Out 8-15 to its parallel port.
-
-The TESM.bsh is a bean shell script that is loaded into micromanager. It loads an imaging protocol produced by the ITC18.csh, and then executes that imaging protocol. The TESM.bsh is designed for a specific microscope system but can be modified for other microscopes.
-
-== Linux udev Rule ==
-
-As root, create a file called /etc/udev/rules.d/99-itc18.rules with the following content:
-  <blockquote>ATTRS{idVendor}=="1482", ATTRS{idProduct}=="0011", MODE="0660", GROUP="users"</blockquote>
-
-== Files ==
-
-=== Windows dll driver ===
-[http://www.heka.com/download/windows/itc_vista.zip itc_vista.zip]
-
-or
-
-[[Media:itc_vista.zip]]
-
-=== Windows and Linux ITC18 driver source code ===
-
-[[Media:ITC18.zip]]
-
---[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 17:15, 10 November 2009 (UTC)
-
-
-{{Devices_Sidebar}}
+--[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 19:36, 28 October 2009 (UTC)
