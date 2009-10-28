@@ -1,0 +1,34 @@
+<table><tr><td>
+'''Summary:'''</td><td>Controls Heka ITC18</td></tr>
+<tr><td>'''Author:'''</td><td>Karl Bellve</td></tr>
+<tr><td>'''License:'''</td><td>LGPL License</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Linux now, 32bit Windows soon to follow</td></tr>
+</table>
+
+The ITC18 from Heka is a 16bit data acquisition device. It has the benefit that it can run asynchronously from the host computer, as well as being electrical isolated. 
+
+It has the following ports:
+
+On the front panel:
+<ul>
+<li>4 DA</li>
+<li>8 AD</li>
+<li>4 TTL Out</li>
+<li>4 TTL In</li>
+</ul>
+
+In addition, more TTL inputs and outputs can be found on the back panel.
+
+Linux implementation is limited to using the USB18 to control the ITC18.
+32 bit windows version should work with either the USB18 or the PCI18. It will '''not''' be compatible with 64 bit Windows.
+
+The ITC18 can be used to control anything that either needs ±10Volts or a TTL signal, including shutters, triggering cameras, pifocs, etc...and everything can be done synchronously with high accuracy.
+
+The ITC18 can be used in two modes. The normal mode is to use it to open or close shutters, or setting or reading a voltage on one of the DA/AD ports. In this mode, it acts like any other device adapter.
+
+The second mode is used by preloading the ITC18 with an imaging protocol, via Micro-Manager, to drive devices. A example script will be posted soon on how to do this.
+
+More information can be found here:
+[http://www.heka.com/physio/equipment/interfaces/itc18.html ITC18]
+
+--[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 19:36, 28 October 2009 (UTC)
