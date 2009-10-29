@@ -30,6 +30,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 ''Stages, filter wheels, shutters''   
    [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
    [[ASIStage]] - ASI XY (and Z) stage and CRIF
+   [[Conix]] - Conix Filter Changer
    [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
    [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
    [[Ludl]] - Ludl stages, shutters and filter wheels 
@@ -49,17 +50,16 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 ''Communication ports, TTLs, DAQs, etc..''
    [[Arduino]] - Open Source Programmable Digital/Analogue IO board
    [[DTOpenLayer]] - DT OpenLayer Digital IO boards
+   [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
    [[SerialManager]] - Serial Ports on Windows
    [[SerialManagerUnix]] - Serial Ports on Mac and Linux
    [[ParallelPort]] - TTLs on parallel port (Windows only)
    [[Velleman K8055]] - Digital IO board (all platforms)
    [[Velleman K8061]] - DIgital IO board (all platforms)
 ''Other devices''  
-   [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
    [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
    [[Cobolt]] - Cobolt laser controller
    [[Coherent Cube]] - Coherent Cube laser controller
-   [[Conix]] - Conix Filter Changer
    [[Yokogawa]] - Yokogawa CSU22
    [[Yokogawa CSUX]] - Yokogawa CSUX, all models
    [[Spectral LMM5]] - Spectral laser line controller
