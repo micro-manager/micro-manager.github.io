@@ -1,0 +1,300 @@
+import java.lang.Math;
+import ij.gui.GenericDialog;
+import java.util.Calendar;
+
+// Variables to set
+acqName = "test";
+newBinning = "2";
+newFrameTransfer = "On";
+newVerticalSpeed = "1.02";
+newVerticalVoltage = "+4";
+newTrigger = "External";
+newPower491 = "0.075";
+newPower561 = "0.075";
+newGain = "10";
+newTemperature = "-50";
+newExposure = 50;
+
+int[] conMin = {200,200,200,200,200,200,200,200,200,200,200,200};
+int[] conMax = {6000,6000,6000,6000,6000,6000,6000,6000,6000,6000,6000,6000};
+
+// DO NOT MODIFY BELOW HERE!!!!
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Functions
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+getROI() {
+	a = new int[4][1];
+	mmc.getROI(a[0],a[1],a[2],a[3]);
+	int[] roiRect = {a[0][0],a[1][0],a[2][0],a[3][0]};
+	return roiRect;
+}
+
+setROI(roiRect) {
+	mmc.setROI(roiRect[0],roiRect[1],roiRect[2],roiRect[3]);
+}
+
+Restore() {
+//Restore original settings
+
+	print ("\nReturning to old settings\n");
+
+	// restore autoShutter status
+	if (autoShutter)
+		mmc.setAutoShutter(true);
+
+	mmc.setExposure(oldExposure);
+	print ("Exposure: " + oldExposure);
+
+	mmc.setProperty("Ixon 885","Trigger",triggerMode);
+   print ("Trigger: " + triggerMode);
+	
+	mmc.setProperty("Ixon 885","VerticalSpeed",verticalShiftSpeed);
+ 	print ("Vertical Shift Speed: " + verticalShiftSpeed);
+
+	mmc.setProperty("Ixon 885","VerticalClockVoltage",verticalClockVoltage);
+	print ("Vertical Voltage: " + verticalClockVoltage);
+	
+	mmc.setProperty("Ixon 885","FrameTransfer",frameTransfer);
+	print ("Frame Transfer: " + frameTransfer);
+
+	mmc.setProperty(mmc.getCameraDevice(), "Binning",binningMode);
+	print ("Binning: " + binningMode);
+
+	mmc.setProperty("Ixon 885","Gain",Gain);
+	print ("Gain: " + Gain);
+
+	mmc.setProperty("Ixon 885","CCDTemperatureSetPoint",Temperature);
+	print ("Temperature: " + Temperature);	
+
+ 	// set ROI
+	setROI(roi);
+
+	gui.refreshGUI();
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Start of main script
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// clear all previous acquisitions
+	gui.closeAllAcquisitions();
+	gui.clearMessageWindow();
+
+
+// Load protocol file that we will be driving the ITC18
+	String protocolName = mmc.getProperty("ITC18-Protocol", "ProtocolFile");
+
+	if (protocolName.equals("undefined")) {
+   	gui.message("Undefined protocol, please set");
+		GenericDialog dlg = new GenericDialog("protocol", null);
+		dlg.addMessage("Please select a protocol from the Configuration Presents Menu!");	
+		dlg.showDialog();
+		return false;
+	} 
+
+	/////////////////////////////////////////////////////////////////////////////////////
+	////Save settings, and then set to what we would like
+	
+	// switch off autoshutter but remember its state so that it can be restored
+	boolean autoShutter = false;
+	if (mmc.getAutoShutter()) {
+		autoShutter = true;
+		mmc.setAutoShutter(false);
+	}
+
+	roi = getROI();
+
+	// for some reason, exposure setting has an impact on whether the camera can keep up with the protocol
+	// save the exposure 
+	oldExposure = mmc.getExposure();	
+	
+ 	// save and then set the trigger mode 
+	String triggerMode = mmc.getProperty("Ixon 885","Trigger");
+	mmc.setProperty("Ixon 885","Trigger",newTrigger);
+   print ("Trigger: " + newTrigger);	
+
+	// save and then set Vertical Shift Speed mode
+	String verticalShiftSpeed = mmc.getProperty("Ixon 885","VerticalSpeed");
+	mmc.setProperty("Ixon 885","VerticalSpeed",newVerticalSpeed);
+	print ("Vertical Shift Speed: " + newVerticalSpeed);
+
+	// save and then set Vertical Voltage mode
+	String verticalClockVoltage = mmc.getProperty("Ixon 885","VerticalClockVoltage");
+	mmc.setProperty("Ixon 885","VerticalClockVoltage",newVerticalVoltage);
+	print ("Vertical Voltage: " + newVerticalVoltage);
+	
+	// save  and then set Frametransfer mode
+	String frameTransfer = mmc.getProperty("Ixon 885","FrameTransfer");
+	mmc.setProperty("Ixon 885","FrameTransfer",newFrameTransfer);
+	print ("Frame Transfer: " + newFrameTransfer);
+	
+	// save  and then set Gain
+	String Gain = mmc.getProperty("Ixon 885","Gain");
+	mmc.setProperty("Ixon 885","Gain",newGain);
+	print ("Gain: " + newGain);
+
+	// save  and then set Temperature
+	String Temperature = mmc.getProperty("Ixon 885","CCDTemperatureSetPoint");
+	mmc.setProperty("Ixon 885","CCDTemperatureSetPoint",newTemperature);
+	print ("Temperature " + newTemperature);
+	
+	// save and then set the binning mode
+	binningMode = mmc.getProperty(mmc.getCameraDevice(), "Binning");
+	mmc.setProperty(mmc.getCameraDevice(), "Binning",newBinning);
+	print ("Binning: " + newBinning);
+	
+	// set ROI
+	setROI(roi);
+   //mmc.setROI(0,0,256,256);
+
+	// save and then set the 491 Laser Power
+	//Power491 = mmc.getProperty("Cobolt-491", "Power");
+	//mmc.setProperty("Cobolt-491", "Power",newPower491);
+	//print ("Cobolt-491 Power: " + newPower491); 
+
+	// save and then set the 561 Laser Power
+	//Power561 = mmc.getProperty("Cobolt-561", "Power");
+	//mmc.setProperty("Cobolt-561", "Power",newPower561);
+   //print ("Cobolt-561 Power: " + newPower561 + "\n");
+
+	//
+	gui.sleep(500);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+	GenericDialog dlg = new GenericDialog("Basic Experiment Settings", null);	
+	dlg.addStringField("Experiment: ", acqName);
+
+	dlg.addNumericField("Exposure: ", oldExposure,0);
+
+	dlg.showDialog();
+	if (dlg.wasCanceled()) {
+		  Restore();	 
+        return false;
+	}
+	acqName = dlg.getNextString();
+	if (acqName.length() == 0) 
+	{
+		gui.message("Experiment name was empty");
+		GenericDialog dlg = new GenericDialog("Experiment", null);
+		dlg.addMessage("I can't run without an Experiment name!");	
+		dlg.showDialog();
+		Restore();
+		return false;
+	}
+
+	newExposure = (int)dlg.getNextNumber();
+	if (newExposure < 10) 
+	{
+		print ("Please set exposure to 10 or greater\n");
+	   Restore();
+		return false;
+	}
+	
+	mmc.setExposure(newExposure);
+   print ("\nExposure: " + newExposure);
+
+	gui.refreshGUI();
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	String User = mmc.getUserId();
+	Calendar today = Calendar.getInstance();
+	if (today.get(Calendar.MONTH) < 9) 
+	{
+		Date = today.get(Calendar.YEAR) + "0" + (today.get(Calendar.MONTH) + 1) + today.get(Calendar.DAY_OF_MONTH);
+	}
+	else Date = today.get(Calendar.YEAR) +  (today.get(Calendar.MONTH) + 1) + today.get(Calendar.DAY_OF_MONTH);
+
+	dirName = "/storage/big0/" + User + "/tesm/" +  Date;
+	print ("dirName: " + dirName);
+
+
+	int nrFrames   = Integer.valueOf(mmc.getProperty("ITC18-Protocol", "Frames")).intValue();
+	int nrChannels = Integer.valueOf(mmc.getProperty("ITC18-Protocol", "Channels")).intValue();
+	int nrSlices   = Integer.valueOf(mmc.getProperty("ITC18-Protocol", "Slices")).intValue();
+	print("\nFrames: " +nrFrames + "\nChannels: " + nrChannels + "\nSlices: " + nrSlices + "\n");
+
+   nrImages = nrFrames * nrChannels * nrSlices;
+	if (nrImages == 0 ) {
+		print("No images in the protocol\n");
+      Restore();
+		return false;
+	}
+
+	gui.openAcquisition(acqName, dirName, nrFrames, nrChannels, nrSlices);
+	long width = mmc.getImageWidth();
+	long height = mmc.getImageHeight();
+	long depth = mmc.getBytesPerPixel();
+
+
+	if (nrChannels == 2) 
+	{
+		String[] channels = {"491", "561"};
+		Color[] colors = {Color.GREEN, Color.RED};
+
+		for (int i=0; i<colors.length; i++)
+		   gui.setChannelColor(acqName, i, colors[i]);
+		for (int i=0; i<channels.length; i++)	
+	  		gui.setChannelName(acqName, i, channels[i]);
+	}
+
+	if (nrChannels == 3) 
+	{
+		String[] channels = {"491", "561", "660"};
+		Color[] colors = {Color.GREEN, Color.RED, Color.BLUE};
+
+		for (int i=0; i<colors.length; i++)
+		   gui.setChannelColor(acqName, i, colors[i]);
+		for (int i=0; i<channels.length; i++)	
+	  		gui.setChannelName(acqName, i, channels[i]);
+	}
+
+	if (nrChannels == 12) 
+	{
+		String[] channels = {"491-TIRF","491-0","491-1","491-2","561-TIRF","561-0","561-1","561-2","660-TIRF","660-0","660-1","660-2"};
+		Color[] colors = {Color.GREEN, Color.GREEN,Color.GREEN,Color.GREEN,Color.RED, Color.RED,Color.RED,Color.RED,Color.BLUE,Color.BLUE,Color.BLUE,Color.BLUE};
+		for (int i=0; i<channels.length; i++)	
+  			gui.setChannelName(acqName, i, channels[i]);
+
+		for (int i=0; i<colors.length; i++)
+		   gui.setChannelColor(acqName, i, colors[i]);
+
+	}
+
+	gui.initializeAcquisition(acqName, (int) width, (int) height, (int) depth);
+	
+	mmc.startSequenceAcquisition(nrFrames * nrChannels * nrSlices, 0, true);
+	
+	mmc.setProperty("ITC18-Protocol", "Script", "Run");
+
+	int channel = 0;
+	int slice = 0;
+	int frame = 0;
+	rightNow = System.currentTimeMillis();
+
+	while (mmc.getRemainingImageCount() > 0 || mmc.isSequenceRunning()) {
+		if (mmc.getRemainingImageCount() > 0) {
+			img = mmc.popNextImage();
+			gui.addImage(acqName,img,frame,channel,slice);
+			itTook = System.currentTimeMillis() - rightNow;
+			print("frame: "+frame + " channel: " + channel + " Time: "+itTook);
+			if ( frame == 0 ) gui.setChannelContrast(acqName,channel,conMin[channel],conMax[channel]);
+			channel++;
+			if (channel >= nrChannels) {
+				channel = 0;
+				frame++;
+			}
+	   }
+	}   
+
+	mmc.stopSequenceAcquisition();
+
+	Restore();
+
+
