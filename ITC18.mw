@@ -32,6 +32,9 @@ More information can be found here:
 [http://www.heka.com/physio/equipment/interfaces/itc18.html ITC18]
 
 
+== Example Scripts ==
+[[Media:TESM.bsh]]
+
 == Windows driver ==
 [http://www.heka.com/download/windows/itc_vista.zip itc_vista.zip]
 
