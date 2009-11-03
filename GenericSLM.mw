@@ -8,7 +8,7 @@
 
 The GenericSLM device adapter controls any spatial light modulator that can be driven by a computer video output port (typically the VGA or DVI port of a graphics card).  Some graphics cards have a secondary video output port; other computers will require an additional graphics card to be installed.
 
-The GenericSLM requires the GraphicsPort property to be selected. In Step 4 of the Hardware Configuration Wizard ("Edit pre-Initialization settings"), a list of available "Display ports" will be given. You may need to experiment to identify the correct display port connected to your SLM device.
+In Step 4 of the Hardware Configuration Wizard ("Edit pre-initialization settings"), you will be presented with available "Display Ports" in the GraphicsPort property of the GenericSLM. You may need to experiment to identify the correct display port connected to your SLM device.
 
 An example Beanshell script, in the Micro-Manager <code>scripts</code> directory, shows how you can display an image on one SLM or multiple SLMs.
 
