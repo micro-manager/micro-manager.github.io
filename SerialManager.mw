@@ -12,13 +12,13 @@ Micro-Manager adapter to serial ports on Windows. Works with 'real' serial ports
 
 We have seen a number of instances in which USB-Serial adapters worked unreliably.  Especially in cases of heavy serial communication, these devices regularly cause errors that will stop image acquisition. This is something we will look into further, however, whenever possible use a  serial port build into your computer, or - when this is not available - a PCI-based serial port. 
 
-The following experiences of users with PCI Serial-expansion cards were reported on the Micro-Manager mailing list:<br>
-* StarTech PEX4S552 - does not work (does not appear in Hardware Configuration Wizard)<br>
-* Lava Quattro-PCI Quad 16550 DB9 Serial Card PCI 4-Port  - works<br>
-* SIIG Quartet Serial PCI+DOS card (JJ-P04411-S6) - works<br>
-* Keyspan USA-49WG - works <br>
-* Rosewill 2x Serial & 1x Parallel Port PCI card Model RC303 - works<br>
-* SYBA PCI 32-Bit Quad (9 pin) 4 Port Serial Card, Model SY-PCI9845-PR4 - only first 2 ports work<br>
+The following experiences of users with PCI Serial-expansion cards and USB-serial adapters were reported on the Micro-Manager mailing list:
+* StarTech PEX4S552 - does not work (does not appear in Hardware Configuration Wizard)
+* Lava Quattro-PCI Quad 16550 DB9 Serial Card PCI 4-Port  - works
+* SIIG Quartet Serial PCI+DOS card (JJ-P04411-S6) - works
+* Keyspan USA-49WG - works
+* Rosewill 2x Serial & 1x Parallel Port PCI card Model RC303 - works
+* SYBA PCI 32-Bit Quad (9 pin) 4 Port Serial Card, Model SY-PCI9845-PR4 - only first 2 ports work
 * SIIG CyberSerial 4S Card Model JJ-P45012-S6 - works
 
 * [http://big.umassmed.edu The Biomedical Imaging Group] uses the Keyspan USA-49WG adapter but they advise against using it since they don't rely on it as the primary means to communicate with their serial devices and they have detected some issues with it. --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 16:00, 14 July 2009 (UTC)<br>
