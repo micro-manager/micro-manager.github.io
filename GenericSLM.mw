@@ -16,7 +16,7 @@ An example Beanshell script, in the Micro-Manager <code>scripts</code> directory
 '''Supported Devices'''
 
 SLMs that can be driven by video output ports include (no endorsement is implied):
-<ul><li>Liquid-crystal arrays from Holoeye, Boulder Nonlinear Systems and Cambridge Correlators</li>
-<li>A Digital Mirror Device (DMD) from Texas Instruments, using Digital Light Innovations' DLP4100 digital mirror controller with the D2D (DVI to DMD) interface card).</li>
+<ul><li>Liquid-crystal arrays (those supporting DVI or VGA input) from [http://www.bnonlinear.com/products/xyslm/XY.htm Boulder Nonlinear Systems], [http://www.cambridgecorrelators.com/products.html Cambridge Correlators], [http://jp.hamamatsu.com/products/other/1013/1010/X10468/index_en.html Hamamatsu] and [http://www.holoeye.com/spatial_light_modulators-technology.html Holoeye]</li>
+<li>A [http://en.wikipedia.org/wiki/Digital_micromirror_device Digital Mirror Device] (DMD) from Texas Instruments, using Digital Light Innovations' [http://www.dlinnovations.com/products/d4100.html DLP4100] digital mirror controller with the [http://www.dlinnovations.com/products/D2D.html D2D] (DVI to DMD) interface card).</li>
 <li>Almost any digital video projector (a.k.a. a computer projector)</li>
 </ul>
