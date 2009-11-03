@@ -1,0 +1,22 @@
+<table>
+<tr><td>'''Summary:'''</td><td>Generic Spatial Light Modulator controller</td></tr>
+<tr><td>'''Author:'''</td><td>Arthur Edelstein</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Since Version:'''</td><td>1.3.42</td></tr>
+</table>
+
+The GenericSLM device adapter controls any spatial light modulator that can be driven by a computer video output port (typically the VGA or DVI port of a graphics card).  Some graphics cards have a secondary video output port; other computers will require an additional graphics card to be installed.
+
+The GenericSLM requires the GraphicsPort property to be selected. In Step 4 of the Hardware Configuration Wizard ("Edit pre-Initialization settings"), a list of available "Display ports" will be given. You may need to experiment to identify the correct display port connected to your SLM device.
+
+An example Beanshell script, in the Micro-Manager <code>scripts</code> directory, shows how you can display an image on one or multiple SLMs.
+
+
+'''Supported Devices'''
+
+SLMs that can be driven by video output ports include (no endorsement is implied):
+<ul><li>Liquid-crystal arrays from Holoeye, Boulder Nonlinear Systems and Cambridge Correlators</li>
+<li>A Digital Mirror Device (DMD) from Texas Instruments, using Digital Light Innovations' DLP4100 digital mirror controller with the D2D (DVI to DMD) interface card).</li>
+<li>Almost any digital video projector (a.k.a. a computer projector)</li>
+</ul>
