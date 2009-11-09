@@ -43,7 +43,7 @@ More information about the ITC18 can be found here:
 <li>ITC18-Protocol: This device loads an external imaging protocol</il>
 </ul>
 
-== Example Scripts for Second Mode ==
+== Example Scripts for ITC18-Protocol module ==
 <ol>
 <li>Create a protocol by running [[Media:ITC18.csh]]</li>
 <li>Run that protocol inside Micromanager with [[Media:TESM.bsh]]</li>
