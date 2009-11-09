@@ -34,6 +34,14 @@ The second mode is used by preloading the ITC18 with an imaging protocol by usin
 More information about the ITC18 can be found here:
 [http://www.heka.com/physio/equipment/interfaces/itc18.html ITC18]
 
+== ITC18 Device Adapter ==
+<ul>
+<li>ITC18-Hub: This device must be loaded. It is the core device that opens the ITC18 hardware</il>
+<li>ITC18-Shutter: This device controls TTL-controllable shutter attached to any of the TTL Outputs 0-15</il>
+<li>ITC18-DAC: Sets a voltage on a DA port</il>
+<li>ITC18-ADC: Reads a voltage on a AD port</il>
+<li>ITC18-Protocol: This device loads an external imaging protocol</il>
+</ul>
 
 == Example Scripts for Second Mode ==
 <ol>
