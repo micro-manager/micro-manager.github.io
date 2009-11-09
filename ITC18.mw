@@ -38,9 +38,9 @@ More information about the ITC18 can be found here:
 <ul>
 <li>ITC18-Hub: This device must be loaded. It is the core device that opens the ITC18 hardware</il>
 <li>ITC18-Shutter: This device controls TTL-controllable shutter attached to any of the TTL Outputs 0-15</il>
-<li>ITC18-DAC: Sets a voltage on a DA port</il>
-<li>ITC18-ADC: Reads a voltage on a AD port</il>
-<li>ITC18-Protocol: This device loads an external imaging protocol</il>
+<li>ITC18-DAC: Sets a voltage on a DA port</li>
+<li>ITC18-ADC: Reads a voltage on a AD port</li>
+<li>ITC18-Protocol: This device loads an external imaging protocol- '''should only be used by very advanced users'''</il>
 </ul>
 
 == Example Scripts for ITC18-Protocol module ==
