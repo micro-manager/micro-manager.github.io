@@ -23,7 +23,7 @@ The ITC18 can be controlled with two different devices attached to the host comp
 
 Linux implementation is limited to using the USB18.
 
-32 bit windows version should work with either the USB18 or the PCI18 but has only been tested with the USB18. Unlike Linux driver, the ITC18 windows driver is '''not''' be compatible with 64 bits.
+32 bit windows version should work with either the USB18 or the PCI18 but has only been tested with the USB18. Unlike the Linux driver, the ITC18 windows driver is '''not''' compatible with 64 bits.
 
 The ITC18 can be used to control anything that either needs ±10Volts or a TTL signal, including shutters, filter wheels, triggering cameras, pifocs, etc...and everything can be done synchronously with high accuracy (<1ms) and speed (>10kHz, but usually at 1Khz).
 
