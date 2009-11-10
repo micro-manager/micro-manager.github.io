@@ -56,9 +56,17 @@ The ITC18.csh script was written for a very specific microscope developed by the
 The TESM.bsh is a bean shell script that is loaded into micromanager. It loads an imaging protocol produced by the ITC18.csh, and then executes that imaging protocol. The TESM.bsh is designed for a specific microscope system but can be modified for other microscopes.
 
 
-== Windows driver ==
+== Files ==
+
+=== Windows dll driver ===
 [http://www.heka.com/download/windows/itc_vista.zip itc_vista.zip]
+
+or
 
 [[Media:itc_vista.zip]]
 
---[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 19:36, 28 October 2009 (UTC)
+=== Windows and Linux ITC18 driver source code ===
+
+[[Media:ITC18.zip]]
+
+--[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 17:15, 10 November 2009 (UTC)
