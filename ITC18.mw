@@ -5,6 +5,9 @@
 <tr><td>'''Platforms:'''</td><td>32 bit or 64 bit Linux, 32 bit Windows</td></tr>
 </table>
 
+
+== Description ==
+
 The ITC18 is an external DA/AD/TTL data acquisition device from Heka. It has the benefit that it can run asynchronously from the host computer, as well as being electrically isolated. 
 
 It has the following ports:
