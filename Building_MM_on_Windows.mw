@@ -67,14 +67,7 @@ If you don't want to build one or more device adapters (because you don't have t
 
 ==Setting up library paths==
 
-SDK and open source library paths should be set in MSDEV before launching a build. All 3rdparty static and dynamic libraries required for linking are referred in project files without absolute paths - therefore the paths must be set though the usual project settings for default libraries in MSDEV.
-
-Go to Tools|Options menu and expand "Projects and Solutions". Select "VC++ Directories" and use the drop-down in the top right ("Show directories for..") to be "Include Files". Add the following directories (if <root> = c:\Micro-Manager and Java sdk was installed in C:\ directory):
-*C:\Micro-Manager\3rdparty\ACE_wrappers
-*C:\j2sdk1.4.2_13\include\
-*C:\j2sdk1.4.2_13\include\win32
-
-[Default library paths must be set for ACE, JDK, INPOUT32 (?) and optionally for required device dependent SDK's.]
+SDK and open source library paths should be set in MSDEV before launching a build. All 3rdparty static and dynamic libraries required for linking are referred in project files without absolute paths - therefore the paths must be set though the usual project settings for default libraries in MSDEV. The project files in the repository should have the correct path settings.
 
 ==Building the C++ layer: MMCore and device adapters==
 
