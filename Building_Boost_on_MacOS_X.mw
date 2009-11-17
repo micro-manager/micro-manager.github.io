@@ -1,1 +1,28 @@
-1.
+As of this writing, MM is using the Boost 1.40 release. Download Boost and place it
+in your usual third party working directory as follows:  (for example)
+
+/Users/karl/projects/3rdparty
+
+1. Start a terminal session, if this directory is not already a subversion working copy, issue the following command
+        svn co -N http://svn.boost.org/svn/boost/tags/release .
+
+2. Create a text file called externals_value.definition
+
+3. In that text file put exactly this key + URL: 
+
+         boost http://svn.boost.org/svn/boost/tags/release/Boost_1_40_0/
+
+4. In order to create an uncomitted 'externals' definition in your working directory, type exactly the following command
+
+         svn propset svn:externals . -F externals_value.definition
+ 
+5. Still in the 3rdparty directory issue:
+         svn up
+
+6. After boost has been downloaded, to build the bjam tool, in the 3rdparty/boost directory issue:
+         ./bootstrap.sh
+
+7. Ensure that you've got write access to /usr/local. Then after the bjam.exe tool is built issue:
+         ./bjam 
+
+8. The result should be a set of headers in /usr/local/include/boost and a set of libraries in /usr/local/lib/boost
