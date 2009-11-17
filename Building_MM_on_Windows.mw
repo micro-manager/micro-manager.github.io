@@ -19,7 +19,7 @@ Assuming you've installed Java JDK 6.0 update 17, set the following "environment
 
 <code><pre>
 ANT_HOME=c:\ant
-JAVA_HOME=c:\jdk-1.5.0.05
+JAVA_HOME=c:\jdk1.6.0.17
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
 
