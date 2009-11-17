@@ -15,12 +15,12 @@ To build the entire application from the source code, you will need to install t
 # Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
 # Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
 
-From the command line, write:
+Assuming you've installed Java JDK 6.0 update 17, set the following "environment variables" goto My Computer / Properties / Advanced / Environment Variables / System variables and ad the following new entries  :
 
 <code><pre>
-set ANT_HOME=c:\ant
-set JAVA_HOME=c:\jdk-1.5.0.05
-set PATH=%PATH%;%ANT_HOME%\bin
+ANT_HOME=c:\ant
+JAVA_HOME=c:\jdk-1.5.0.05
+PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
  
 or follow installation instructions in Documentation ->Manual ->Installing Ant. (Need to do this every time Windows is restarted.)
