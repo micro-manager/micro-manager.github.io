@@ -3,7 +3,7 @@
 First make sure you have enough hard disk space. I don't know how much you will need but I would think if you have about 5GB you should be fine.
 
 ====Directory structure for the source code====
-When you unzip the source code, the default directory for the entire source code is "projects/micromanager1.3". This directory should reside in the parent directory root of your choice. The root directory will be referred to as <root>. In the root directory you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware.
+When you unzip the source code or download from the repository, the default directory for the entire source code should be "projects/micromanager1.3". This directory should reside in the parent directory root of your choice. The root directory will be referred to as <root>. In the root directory you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware.
 
 ====Required tools and applications====
 
