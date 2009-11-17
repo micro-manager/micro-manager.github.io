@@ -26,4 +26,7 @@ As of this writing, MM is using the Boost 1.40 release. There are reasonably com
 7. Ensure that you've got write access to /usr/local. Then after the bjam.exe tool is built issue:
          ./bjam 
 
-8. The result should be a set of headers in /usr/local/include/boost and a set of libraries in /usr/local/lib/boost
+8. Then
+         ./bjam install
+
+9. The result should be a set of headers in /usr/local/include/boost and a set of libraries in /usr/local/lib/boost
