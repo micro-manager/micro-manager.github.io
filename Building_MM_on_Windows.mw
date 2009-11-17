@@ -11,7 +11,7 @@ To build the entire application from the source code, you will need to install t
 
 # Microsoft Developer Studio 2008 or 2010 Visual C++.
 # JDK (Java developer's kit) standard edition, version 1.4 or later (Download from http://java.sun.com/j2se/1.4.2/download.html.)
-# ImageJ 1.37v or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
+# ImageJ 1.43j or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
 # Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
 # Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
 
