@@ -40,18 +40,16 @@ As of this writing, MM is using the Boost 1.40 release. Download Boost and place
 
          boost http://svn.boost.org/svn/boost/tags/release/Boost_1_40_0/
 
-4. Type exactly the following command (assuming you've got subversion in your command path)
+4. In order to create an uncomitted 'externals' definition in your 3rdparty directory, type exactly the following command (assuming you've got subversion in your command path):
 
          svn propset svn:externals . -F externals_value.definition
-  This creates an uncomitted 'externals' definition in your 3rdparty directory
+ 
 5. Still in the 3rdparty directory issue:
          svn up
 6. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
          bootstrap
 7. After the bjam.exe tool is build, assuming you've got VS 2008 issue:
          .\bjam toolset=msvc-9.0 --build-type=complete 
-8. The build step will be somewhat time consuming, after it's complete issue:
-         .\bjam install
 
 
 
