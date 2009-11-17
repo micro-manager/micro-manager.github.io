@@ -93,13 +93,3 @@ Java layer of the Micro-Manager can be build using the standard ANT utility with
 ==Building the full source in one step==
 
 To build the entire Micro-Manager source code with a single command, you can use mmbuild.bat. You can modify this file to switch between Debug and Release builds, specify different paths for ANT and MSDEV tools, etc. Required MSDEV paths for command-line compilation are located in vsvars32.bat file in the MSDEV installation package.
-
-==ACE Installation notes==
-
-Create a file called config.h in the <root>\3rdparty\ACE_Wrappers\ace directory that contains following line:
-
-<code><pre>#include "ace/config-win32.h"</pre></code>
-
-Then open the project in Visual Studio and open the ACE-Static.sln solution to build static libraries: ACEs.lib (release) and ACEsd.lib (debug). They only have this file for VS7.1 but there should not be problems converting to VS8.0. Then just build the solution (which takes a long time).
-
-To build the ACE static libraries with Visual C++ 2008 Express (which is VC9.0), download ACE 5.6.7 and open ACE_vc9_Static.sln. Building ACE 5.4.7 with VC2008EE generates errors.
