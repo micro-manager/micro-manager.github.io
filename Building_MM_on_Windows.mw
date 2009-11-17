@@ -67,7 +67,7 @@ If you don't want to build one or more device adapters (because you don't have t
 
 ==Setting up library paths==
 
-SDK and open source library paths should be set in MSDEV before launching a build. All 3rdparty static and dynamic libraries required for linking are referred in project files without absolute paths - therefore the paths must be set though the usual project settings for default libraries in MSDEV. The project files in the repository should have the correct path settings.
+The project files in the repository should have the correct path settings.
 
 ==Building the C++ layer: MMCore and device adapters==
 
