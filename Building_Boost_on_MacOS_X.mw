@@ -1,5 +1,6 @@
-As of this writing, MM is using the Boost 1.40 release. Download Boost and place it
-in your usual third party working directory as follows:  (for example)
+As of this writing, MM is using the Boost 1.40 release. There are reasonably complete instructions here: http://www.boost.org/doc/libs/1_40_0/more/getting_started/unix-variants.html But here is what I recommend:
+
+0. Download Boost and place it in your usual third party working directory as follows:  (for example)
 
 /Users/karl/projects/3rdparty
 
