@@ -22,8 +22,6 @@ ANT_HOME=c:\ant
 JAVA_HOME=c:\jdk-1.5.0.05
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
- 
-or follow installation instructions in Documentation ->Manual ->Installing Ant. (Need to do this every time Windows is restarted.)
 
 ====Required open source libraries====
 
