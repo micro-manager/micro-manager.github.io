@@ -29,10 +29,12 @@ In addition to software tools you will need to install the following software pa
 
 SWIG version 1.3.24 and place it in "<root>/3rdparty/SWIG-1.3.24" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
 
-ACE version 5.4.7 and place it in the "<root>3rdparty/ACE_Wrappers" subdirectory (Download from http://download.dre.vanderbilt.edu/previous_versions/previous_versions/ and extract to <root>/3rdparty, which will create ACE_wrappers directory. Then you need to build library files for ACE. This is not simple and can take long time, follow the instructions in the web page or below.
+Download Boost and place it in the "<root>3rdparty/boost" subdirectory. The easy way to do this is as follows:
+
+
 
 INPOUT32 library and place it in "<root>/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micro-manager-1.0/bin, because this dll is required at run-time.)
- 
+
 ====Device libraries and SDK's====
 
 Some device adapter require the installation of manufacturer's SDKs in order to build. All SDKs should be installed in the <root>/3rdparty directory. The actual names of SDK directories should match the paths in the corresponding header files in the Micro-manager source code for device adapters.
