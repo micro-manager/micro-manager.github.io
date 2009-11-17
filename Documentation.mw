@@ -35,6 +35,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Media:RatiometricImaging_singleImage.bsh]] - Beanshell for ratiometric Imaging. Takes only one image, can be useful as a control before starting a whole acquisition with main beanshell above (J. Husson).
 
 ''Building the software (for developers)''
+   [[Building Boost on MacOS X]]
    [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
    [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
    [[Configuration options]] - Build options on Mac OS X and Linux
