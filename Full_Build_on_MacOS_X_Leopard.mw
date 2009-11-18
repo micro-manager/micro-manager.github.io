@@ -26,35 +26,8 @@ Hope it works for you! Greg Jefferis <jefferis@gmail.com>
 <code><pre>
 #!/usr/bin/env bash
 
-# Download ACE
-curl -O http://download.dre.vanderbilt.edu/previous_versions/ACE-5.6.3.tar.bz2
-tar jxvf ACE-5.6.3.tar.bz2
-# Get started
-cd ACE_wrappers
-export ACE_ROOT=`pwd`
-cd ace
-# (Optional) To build a version compatible with Tiger (10.4) add:
-export CFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
-# Configure for MacOS X Leopard
-cat > config.h <<EOF
-#include "ace/config-macosx-leopard.h"
-EOF
-cat > ${ACE_ROOT}/include/makeinclude/platform_macros.GNU <<EOF
-debug = 1
-shared_libs = 0
-static_libs = 1
-include ${ACE_ROOT}/include/makeinclude/platform_macosx_leopard.GNU
-EOF
-# Make (NB inside ace dir, so not whole tree)
-make 
-# Install
-sudo ln -s $ACE_ROOT/ace /usr/local/include/ace
-sudo ln -s $ACE_ROOT/ace/libACE.a /usr/local/lib/
-# (Optional) To make you build compatible with Tiger (10.4):
-cd /Developer/SDKs/MacOSX10.4u.sdk/usr/local
-sudo ln -s /usr/local/include
-cd lib
-sudo ln -s /usr/local/lib/libACE.a
+# Download and build boost - see the separate Wiki page for that task.
+
 
 # EITHER libdc1394 v2.0.1 (release version)
 VERSION="2.0.1"
@@ -75,9 +48,10 @@ make
 sudo make install
 
 # Micro-Manager from SVN
-svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2/
-cd micromanager1.2
+svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
+cd micromanager1.3
 autoreconf -i -s
+### N.B. here Johan found that he needed to run autoconf --install on Debian
 export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 ./configure --with-imagej=/Applications/ImageJ/
 # (Optional) To make your build compatible with Tiger (10.4) use:
@@ -85,6 +59,11 @@ export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 # and for statically-linked components use:
 #./configure --with-imagej=/Applications/ImageJ/ --enable-static
 make -j 2
-cd MMDevice && make && cd ..
-cd DeviceAdapters/dc1394/ && make 
+cd MMDevice
+make
+cd ..
+cd DeviceAdapters/dc1394/
+make 
+cd ../..
+make install
 </pre></code>
