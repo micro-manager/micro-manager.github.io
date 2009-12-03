@@ -52,6 +52,8 @@ As of this writing, MM is using the Boost 1.40 release. Download Boost and place
          bootstrap
 7. After the bjam.exe tool is built, assuming you've got VS 2008 issue:
          .\bjam toolset=msvc-9.0 --build-type=complete 
+or if you are using Visual Studio Express 2008 use:
+         .\bjam toolset=msvc-9.0express --build-type=complete 
 
 8. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\3rdparty\boost\boost and the libraries will be  in <root>\3rdparty\boost\stage\lib
 
