@@ -25,7 +25,10 @@ then Micro-Manager was most likely not terminated in a graceful way during the p
 
 From the Photometrics website:
 
- In recent updates, Microsoft released two hotfixes which updated their FireWire stack file. However, these updates cause performance drops in the  functionality of Texas Instruments (TI) FireWire Controllers which ship with Photometrics cameras. These performance drops manifest with the following symptoms:
+ In recent updates, Microsoft released two hotfixes which updated their FireWire stack file.
+ However, these updates cause performance drops in the  functionality of Texas Instruments
+ (TI) FireWire Controllers which ship with Photometrics cameras. These performance drops
+ manifest with the following symptoms:
  * Image Tearing
  * Interference Lines
  * Black Images
