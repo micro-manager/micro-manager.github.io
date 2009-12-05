@@ -21,5 +21,18 @@ If you encounter the following error message on startup:
 ''Device Undefined. Duplicate property names are not allowed.<br>''
 then Micro-Manager was most likely not terminated in a graceful way during the previous session.  Simply quit Micro-Manager, reboot your camera (by switching it off and back on again) and try again.  
 
+'''Firewire issues'''
+
+From the Photometrics website:
+
+ In recent updates, Microsoft released two hotfixes which updated their FireWire stack file. However, these updates cause performance drops in the  functionality of Texas Instruments (TI) FireWire Controllers which ship with Photometrics cameras. These performance drops manifest with the following symptoms:
+ * Image Tearing
+ * Interference Lines
+ * Black Images
+ * Reduced Frames-per-second
+ Installing the Thesycon 1394 stack fixes these problems by replacing the default Microsoft stack. This remedies any problems caused by the updates.
+ The Thesycon FireWire stack has been thoroughly tested and does not cause any other conflicts or problems with any devices.
+
+The Thesycon stack installer can be downloaded [http://www.photomet.com/support/downloads/index.php here].
 
 --[[User:Nico|Nico]] 11:33, 31 August 2007 (PDT)
