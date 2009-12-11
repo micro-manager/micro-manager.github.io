@@ -38,7 +38,7 @@
 org.micromanager.utils.ReportingUtils is a static Java class that contains methods to simplify reporting Java errors and exceptions to the user and logging them in the CoreLog. The class methods ReportingUtils.showError(...) or ReportingUtils.logError(...) should be used in catch blocks. ReportingUtils.showError(...) is useful for infreqent exceptions, while ReportingUtils.logError(...) should be used in loops so that the user is not force to acknowledge a whole series of errors.
 
 You can automate generation of such catch blocks in Eclipse by going to:
- Preferences > Java > Code Templates > Code > Catch block body > Pattern:
+ Preferences > Java > Code Templates > Code > Catch block body > Edit...
 and change the Pattern to:
  // ${todo} Auto-generated catch block
  ReportingUtils.showError(${exception_var});
