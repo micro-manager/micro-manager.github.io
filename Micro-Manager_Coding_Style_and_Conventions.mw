@@ -1,3 +1,5 @@
+==Micro-Manager Coding Style==
+
 '''Formatting and style'''
 
 * All indents are 3 spaces (no tab characters).
@@ -28,3 +30,15 @@
 * Work incrementally. Make small changes and make sure the code compiles. Check-in after every major step to retain revision history.
 * Check-in at least once each day, unless there is a strong reason not to…and there aren’t any.
 * If there is a danger of destabilizing the main application, open a branch and work in it for a while, but still check in at least once each day.
+
+
+==Micro-Manager Coding Conventions==
+
+===Exceptions in mmstudio===
+org.micromanager.utils.ReportingUtils is a static Java class that contains methods to simplify reporting Java errors and exceptions to the user and logging them in the CoreLog. The class methods ReportingUtils.showError(...) or ReportingUtils.logError(...) should be used in catch blocks. ReportingUtils.showError(...) is useful for infreqent exceptions, while ReportingUtils.logError(...) should be used in loops so that the user is not force to acknowledge a whole series of errors.
+
+You can automate generation of such catch blocks in Eclipse by going to:
+ Preferences > Java > Code Templates > Code > Catch block body > Pattern:
+and change the Pattern to:
+ // ${todo} Auto-generated catch block
+ ReportingUtils.showError(${exception_var});
