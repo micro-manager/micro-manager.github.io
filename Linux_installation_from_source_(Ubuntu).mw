@@ -7,8 +7,7 @@ We assume installation of ImageJ in "/usr/local/ImageJ". In addition to ImageJ a
 * autoconf
 * automake
 * swig
-* libace (>= 5.6.3)
-* libace-dev
+* boost
 * g++
 * libtool
 
@@ -19,11 +18,6 @@ In addition, note that:
 * Permissions of the new ImageJ directory might have to be set properly.
 
 == General remarks (Gentoo) ==
-
-Currently the dev-libs/ace (>=5.6.3) package is masked. Unmask the package by issuing:
-
-  $ sudo echo "dev-libs/ace" >>  /etc/portage/package.keywords
-  $ sudo emerge dev-libs/ace
 
 The ImagaJ ebuild can be downloaded from http://bugs.gentoo.org/112275. Digest and install the ebuild (see http://linuxreviews.org/gentoo/ebuilds/).
 
