@@ -2,7 +2,7 @@
 '''Summary:'''</td><td>Velleman K8055 digital IO board adapter</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman.  </td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Mac/Linux</td></tr>
+<tr><td>'''Platforms:'''</td><td>Mac/Linux, Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.velleman.be/ot/en/product/view/?id=351346 Velleman K8055/VM110]</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_K8055.cfg]]</td></tr>
 </table>
