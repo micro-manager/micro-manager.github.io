@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, with (small) contributions from Nico Stuurman (TTLs)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X and linux (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>ProScan and OptiScan controllers, XYStage, Zstage, filter wheel, shutter, TTL, LumenPro</td></tr>
+<tr><td>'''Devices:'''</td><td>ProScan and OptiScan controllers, XYStage, Zstage, NanoZStage, filter wheel, shutter, TTL, LumenPro</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
@@ -24,7 +24,7 @@
 |}
 </table>
 
-This adapter interfaces with Prior hardware through the ProScan and OptiScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with the Prior XYStage, Zstage, filter wheels, shutters, the LumenPro and can also control the TTLs on the Proscan controller. No 'hub' device is defined in this adapter.  Specify the same serial port for all devices. 
+This adapter interfaces with Prior hardware through the ProScan, OptiScan or NanoZScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with the Prior XYStage, Zstage, filter wheels, shutters, the LumenPro and can also control the TTLs on the Proscan controller. No 'hub' device is defined in this adapter.  Specify the same serial port for all devices. 
 
 Special properties of the XYStage (since 1.3.40):<br>
 <table valign='left'>
