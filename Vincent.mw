@@ -1,7 +1,7 @@
 == Vincent shutter controller adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces to Vincent shutter controllers</td></tr>
+'''Summary:'''</td><td>Interfaces to Vincent (Uniblitz) shutter controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
