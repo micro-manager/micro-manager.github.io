@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>[http://100ximaging.com 100ximaging]</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and Linux (serial port)</td></tr>
-<tr><td valign="top">'''Devices:'''</td><td>DMI4000, DMI5000, DMI6000, DM4000, DM5000, and DM6000 microscopes. Also works with all microscopes using the CTR MIC control box (DMLA100, DMLALED, DMLFSA, DMRXA2, DMRA2, and DMIRE2).  <br> Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Z-drive, XY-stage, DIC-turret</td></tr>
+<tr><td valign="top">'''Devices:'''</td><td>DMI4000, DMI5000, DMI6000, DM4000, DM5000, and DM6000 microscopes. Some success (and failures) have been reported with microscopes using the CTR MIC control box (DMLA100, DMLALED, DMLFSA, DMRXA2, DMRA2, and DMIRE2).  <br> Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Z-drive, XY-stage, DIC-turret</td></tr>
 <tr><td width=20%></td><td></td></tr>
 <tr><td>'''Available since version:'''</td><td>1.3.18</td>
 <tr><td valign=top>'''Serial port settings:'''</td><td valign=top>
