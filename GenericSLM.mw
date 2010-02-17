@@ -10,7 +10,7 @@ The GenericSLM device adapter controls any spatial light modulator that can be d
 
 In Step 4 of the Hardware Configuration Wizard ("Edit pre-initialization settings"), you will be presented with available "Display Ports" in the GraphicsPort property of the GenericSLM. You may need to experiment to identify the correct display port connected to your SLM device.
 
-An example Beanshell script, in the Micro-Manager <code>scripts</code> directory, shows how you can display an image on one SLM or multiple SLMs.
+An example Beanshell script in the Micro-Manager <code>scripts</code> directory, [http://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/scripts/slm_demo.bsh slm_demo.bsh], shows how you can display an image on one SLM or multiple SLMs.
 
 
 '''Supported Devices'''
