@@ -1,19 +1,20 @@
-== Marzhauser TANGO controller through Ludl adapter ==
+== Marzhauser TANGO controller ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with [http://www.marzhauser.com Marzhauser] [http://www.tango-pci.de TANGO] controllers and associated hardware through the [[Ludl | Ludl adapter]]</td></tr>
-<tr><td>'''Author:'''</td><td>Interface instructions: Falk Dettmar (Ludl adapter by Nenad Amodaj)</td></tr>
-<tr><td>'''License:'''</td><td>BSD</td></tr> 
+'''Summary:'''</td><td>Interfaces with [http://www.marzhauser.com Marzhauser] TANGO controllers and associated hardware</td></tr>
+<tr><td>'''Author:'''</td><td>Interface instructions: Falk Dettmar</td></tr>
+<tr><td>'''License:'''</td><td>GNU lesser</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
-<tr><td>'''Devices:'''</td><td>Controller, Shutter, XY Stage, Z Axis</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Tango.cfg]]</td></tr>
+<tr><td>'''Devices:'''</td><td>Controller, Shutter, Lamps, XY Stage, Z Axis, and ADC</td></tr>
 </table>
 
-The Marzhauser TANGO family of controllers can be controlled using the [[Ludl | Ludl adapter]]. It is tested using the Tango-DT with serial interface. The Tango-PCI and Tango-DT were also tested on Windows using the USB interface. To configure Micro-Manager to work with the Marzhauser Tango you need to do the following:
+The Marzhauser TANGO family of controllers can be controlled now using the native marzhauser adapter.
+It is tested using the Tango-DT with USB interface on Windows 7.
+The Tango with PCI and PCIe connector were also tested successfully on Windows 7.
+To configure Micro-Manager to work with the Marzhauser Tango you need to do the following:
 <table><tr><td>
-<tr><td>1.</td><td>Install the TANGO and verify that it works.</td></tr>
-<tr><td>2.</td><td>Switch TANGO to Ludl MAC5000 compatible mode.</td></tr>
-<tr><td>3.</td><td>Download the MMConfig_Tango.cfg example configuration file and use it in Micro-Manager.</td></tr>
+<tr><td>1.</td><td>Please refer the CD shipped with the Tango and follow the usual installation procedure.</td></tr>
+<tr><td>2.</td><td>Use the MM hardware configuration wizard for selection of required Marzhauser components.</td></tr>
 </table>
 
---[[User:Dettmar|Dettmar]] 23:41, 18 October 2007 (PDT)
+--[[User:Dettmar|Dettmar]] 24:24, 19 February 2010 (PDT)
