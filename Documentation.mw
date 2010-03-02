@@ -45,6 +45,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Linux installation from source (Ubuntu)]]
    [[Building ACE on the Mac]] - How to build ACE on the Mac (only for MicroManager versions before 1.3.42)
    [[Micro-Manager Coding Style and Conventions]]
+   [[Writing plugins for Micro-Manager]]
 
 ''Papers citing and/or acknowledging the use of Micro-Manager''
    [[Papers citing Micro-Manager]] - Add your own paper to the list!
