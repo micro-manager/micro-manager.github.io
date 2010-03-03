@@ -38,6 +38,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Building Boost on MacOS X]]
    [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
    [[Using Eclipse]] - How to configure Eclipse to compile and debug Micro-Manager
+   [[Using Netbeans]] - How to configure Netbeans to compile and debug Micro-Manager
    [[Configuration options]] - Build options on Mac OS X and Linux
    [[Building MM on Windows]] - Different environments and options
    [[Debugging MM on MacOSX and Unix]] - How to use gdb with Micro-Manager
