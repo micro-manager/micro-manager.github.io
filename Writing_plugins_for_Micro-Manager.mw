@@ -11,7 +11,8 @@ Micro-Manager's classpath is set up so that Micro-Manager plugins can import cla
 In addition, you have access to the GUI and core instances (objects) already created by Micro-Manager startup. Micro-Manager will call
 <code>public void setApp(ScriptInterface app);</code>
 you can get the GUI object and core objects thus:
+<pre>
 MMStudioMainFrame gui_ = (MMStudioMainFrame) app;
 CMMCore core_ = gui_.getMMCore();
-
+</pre>
 Micro-Manager distribution includes swing-layout-*.*.jar so that you can use the free Netbeans GUI Builder for your plugin. Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
