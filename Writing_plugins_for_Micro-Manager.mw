@@ -20,7 +20,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 <ol>
 <li>Set up your project so that Micro-Manager's jars are on the classpath.</li>
 <li>Create a MMStartup.bsh file as described above.</li>
-<li>Set your IDE's run command to start up ImageJ, by calling the <code>main</code> function in ij.ImageJ in your Micro-Manager root directory.</li>
+<li>Set your IDE's run command to start up ImageJ, by calling the <code>main</code> function in <code>ij.ImageJ</code> in your Micro-Manager root directory.</li>
 <li>Build and run</li>
 </ol>
 As long as your plugin is placed on the classpath by the IDE (as is done by both Eclipse and Netbeans), the MMStartup.bsh script will properly load your nascent plugin in the plugins menu.
