@@ -1,0 +1,39 @@
+== Marzhauser CORVUS controller ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with [http://www.marzhauser.com Marzhauser] ITK Corvus Controllers and associated hardware</td></tr>
+<tr><td>'''Author:'''</td><td>Johan Henriksson</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>Contoller, XY Stage and Z Axis</td></tr>
+</table>
+
+'''Serial settings:'''
+
+{| cellspacing="10"
+|AnswerTimeout||500.0000
+|-
+|DataBits||8
+|-
+|DelayBetweenCharsMs||0.0000
+|-
+|Handshaking||Off
+|-
+|StopBits||1
+|-
+|}
+
+
+'''BaudRate depends on the DIP switches:'''
+{| border="0" width="250" 
+!DIP 1!!DIP2!!BaudRate
+|- align="center"
+|down||down||9600||
+|- align="center"
+|down||up||19200
+|- align="center"
+|up||down||57600
+|- align="center"
+|up||up||115200
+|- align="center"
+|}
