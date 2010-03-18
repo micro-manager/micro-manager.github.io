@@ -17,6 +17,6 @@ To configure Micro-Manager to work with the M&auml;rzh&auml;user Tango you need 
 <tr><td>2.</td><td>Use the MM hardware configuration wizard for selection of required M&auml;rzh&auml;user components.</td></tr>
 </table>
 
-See also: M&auml;rzh&auml;user [[Corvus]] device adapter.
+'''See also:''' M&auml;rzh&auml;user [[Corvus]] device adapter.
 
 --[[User:Dettmar|Dettmar]] 24:24, 19 February 2010 (PDT)
