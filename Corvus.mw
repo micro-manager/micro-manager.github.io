@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Johan Henriksson</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
-<tr><td>'''Devices:'''</td><td>Contoller, XY Stage and Z Axis</td></tr>
+<tr><td>'''Devices:'''</td><td>Controller, XY Stage and Z Axis</td></tr>
 </table>
 
 '''Serial settings:'''
