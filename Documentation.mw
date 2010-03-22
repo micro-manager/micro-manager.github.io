@@ -4,7 +4,7 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 
 ''Autofocus configuration''
    [[Autofocus setup]] - Making Micro-Manager use image-based autofocus
-   [[Autofocus manual]] - Configure the image-based autofocus
+   [[Autofocus manual]] - Configure the image-based autofocus implemented in Java
 
 ''Scripting in Micro-Manager''
    [[Script Panel GUI]] - Introduction to the Script Panel GUI
