@@ -18,5 +18,7 @@ Please note that to use the digital outs, one needs to provide input voltage (5-
 
 On Windows, you will need to install a driver for the K8061 (which is different from the driver provided by Velleman).  It is located in the 'Driver' directory in the Micro-Manager folder.  On the Mac and linux no driver is needed.  
 
+Also see Austin Blanco's [http://austinblanco.com/blog/?p=209 blog].
+
 
 --[[User:Nico|Nico]] 18:21, 2 March 2008 (PST)
