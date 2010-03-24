@@ -9,7 +9,7 @@
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
 </table>
 
-This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu cameras.  You will need to download and install a recent version of the [http://sales.hamamatsu.com/index.php?id=13188404 DCAM driver].
+This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu cameras.  You will need to download and install a recent version of the [http://www.dcamapi.com/ DCAM driver].
 
 If Micro-Manager reports: "No camera found" while configuring Micro-Manager with a Hamamatsu camera, make sure that it works with the software provided by Hamamatsu.  On Windows, you can launch it by starting the Hamamatsu installer, click the "Others" button, and select "ExCap".  Make sure that Excap finds your camera and that you can "Snap" an image in ExCap.  If ExCap does not find the camera, it is likely that the wrong driver is installed for your Firewire Hamamatsu camera.  Open the Windows Device Manager (Start->Control Panel->System->Hardware->Device Manager). Find the Hamamatsu camera (it can be under "Imaging Devices").  Right click and select "Properties".  Make sure that the driver is from Hamamatsu.  If it is not (most likely alternative is that the driver is from Microsoft), uninstall the driver, and re-install, making sure that the Hamamatsu driver is installed this time.
 
