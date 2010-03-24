@@ -10,6 +10,7 @@ We assume installation of ImageJ in "/usr/local/ImageJ". In addition to ImageJ a
 * boost
 * g++
 * libtool
+* libboost 1.2 or newer
 
 In addition, note that:
 
