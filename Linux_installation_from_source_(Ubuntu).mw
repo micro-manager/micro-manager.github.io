@@ -71,10 +71,9 @@ cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &")
 == mmscript: ==
 
  #!/bin/bash
- cd /user/local/ImageJ
+ cd /usr/local/ImageJ
  export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
  java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ -Dplugins.dir=/usr/local/ImageJ -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
-
 
 == script for Gentoo ==
 
