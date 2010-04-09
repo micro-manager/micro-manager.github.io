@@ -7,47 +7,32 @@ Francis McCloy is the current Andor Developer</td></tr>
 <tr><td  valign=top >'''Platforms:'''</td><td>Windows and Linux (No Mac driver available)
 [http://invitro.umassmed.edu/dokuwiki/doku.php?id=micromanager1.2 Wiki: Building MM on Linux]
 [http://sourceforge.net/mailarchive/forum.php?thread_name=4A1D4CA0.80103@gmail.com&forum_name=micro-manager-general ANN: Andor driver on Linux]</td></tr>
-<tr><td  valign=top >'''Devices:'''</td><td>Andor cameras: iXon, Luca-S, Luca-R and Clara</td></tr>
-<tr><td valign=top >'''Example Config Files:'''</td><td>
-* [[Media:MMConfig_iXon.cfg|iXon .cfg]]
-* [[Media:MMConfig_andor_Clara.cfg|Clara .cfg]]</td></tr>
+<tr><td  valign=top >'''Devices:'''</td><td>Andor cameras: iXon/iXon+, Luca-S, Luca-R and Clara</td></tr>
 </table>
 
+== Installation ==
 
-== Supported Andor cameras ==
-*iXon / iXon+
-*Luca-R 
-*Luca-S 
-*Clara
-
-
-== Installation for Windows XP ==
+=== Windows ===
 Before you proceed, you must have a copy of the Andor's SDK package already installed since it contains the necessary files to recognize the camera.
 
 When you first power on and plug in your camera and Windows tries to recognize it, select to "Install from a list or specific location (Advanced)" > "Search for the best driver in these locations" > "Include this location in the search" > C:\Program Files\(Your Andor Directory)
 
 Clara support is introduced in SDK v2.84
 
-=== (Clara Only) DLL file from Andor SDK ===
+==== (Clara Only) DLL file from Andor SDK ====
 For Clara only, in the Micro-Manager 1.3.39 beta release (May 15, 2009), the 32-bit Andor driver file (atmcd32d.dll) is not new enough to support the Clara. 
 The file version is 2.82, whereas Clara support is introduced in 2.84.  Therefore you need to copy the "atmcd32d.dll" file from your Andor installation to your Micro-Manager directory.  e.g. If you have the Andor SDK, copy and overwrite C:\Program Files\Andor Clara\Drivers\atmcd32d.dll to C:\Program Files\Micro-Manager-1.3\atmcd32d.dll
 
-== Installation for Linux ==
+=== Linux ===
 Before you proceed, you must have a copy of the Andor's '''Linux''' SDK package already installed since it contains the necessary files to recognize the camera. The Linux Andor Kernel driver must be compiled and installed.  When Micro-Manager is compiled, it looks for "/usr/local/include/atmcdLXd.h" before it compiles and installs the Andor device adapter. 
 
 == Add to your configuration ==
-Open Micromanager.  You will be prompted to load a configuration file; there are 2 options in this case: 
-: Option 1: Use "Tools" > "Hardware Configuration Wizard..." to manually add the device. 
-: Option 2: Use the preloaded configuration at the top of this page.
-
+Open Micromanager.  You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
 
 == Working with your Andor camera ==
 Set camera properties under "Tools" > "Device/Property Browser..."
-
 Micromanager does not offer every feature available in Andor Cameras.
-
 TODO: List camera features not available in Micro-Manager. 
-
 However for the Clara overlap mode, Extended NIR and the variable pre amp gains are available.
 
 === All EMCCDs (iXon, iXon+, Luca-R and Luca-S) ===
@@ -57,44 +42,52 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 * EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
 * Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
 * This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
-* Thus it is better to vary exposure times rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
+* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
 
 ==== iXon/iXon+ ====
+
 ===== Cooling =====
+
 * iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
 * Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
 * Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
 * No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
 * Full gain will not be achievable without cooling. 
 * EMgain is temperature compensated for RealGain cameras. 
+
 ===== EMgain range =====
 * EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
-* The actual EM gain range depends on the model of your camera: it can be 255, 4096, or RealGain 1000 
+* The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
+
 ===== Pre-Amplifier Gain (PAG) =====
+
 * PAG is ironically named since it is really post-readout gain of your sensor signal, which affects sensitivity. 
-* The PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each EMCCD chip. 
+* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each EMCCD chip.
+* PAG can affect the saturation limit of your chip.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
+
 ===== Conventional or EM =====
-* With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting 
+* With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
+* EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
+* Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
+
 ===== iCam =====
 * Allows for rapid switching of exposure times in multi-channel acquisitions 
 * For more information please see Andor website at http://www.andor.com/software/icam/
 
 === Clara ===
+
 ==== Cooling ====
 * Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
-BUG: (Closed - now fixed in forthcoming release) Under "Tools" > "Device/Property Browser...", Clara-FanMode does NOT support low.  The camera hardware does not support it; the option should not be populated in the drop-down list.
 
-BUG: Clara-Output_Amplifier enabling "Extended NIR" with Overlap mode raises an exception using Live.  The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
-
+== Known bugs ==
+* Clara-Output_Amplifier enabling "Extended NIR" with Overlap mode raises an exception using Live.  The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
 
 == Resources ==
 
 === Camera questions ===
 For contacting Andor product support regarding any questions, see under "Support" for your location -
 http://www.andor.com/contact_us/default.aspx
-
 === Development support ===
-Please liaison with Micro-Manager developers to contact our software team
+Please liaison with Micro-Manager developers to contact the Andor software team
 
-
-Last edited: [[User:P.nanda|P.nanda]] 21:12, 30 June 2009 (UTC)
+Last edited: [[User:P.nanda|P.nanda]] 17:13, 9 April 2010 (UTC)
