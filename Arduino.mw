@@ -17,25 +17,14 @@ In Micro-Manager, use the hardware configuration wizard to add the Arduino.  Set
 
 The Arduino 'Switch' sets the digital output pattern using a single byte.  Bit 1 corresponds to Arduino ouput pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  So, setting the switch to value '5', will set output pins 8 and 10 high and the others low.
 
-You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. 
+You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
-
-bit     pin     nr when high
-0       8       1
-1       9       2
-2       10      4
-3       11      8
-4       12      16
-5       13      32
 
 When used directly (not via trigger more) the Ardiuno Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
 
 Troubleshooting tip: In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the Arduino-Switch state to 32 in the device/property browser and than chose Arduino as your shuter and just open/close it in the main MM window. and opening and closing the Arduino-shutter. You should see the built-in LED light changes when you close / open the arduino shutter. 
 
 
-
-
-
-To use the Arduino directly as a USB / voltage 
-
 --[[User:Nico|Nico]] 02:20, 27 February 2009 (UTC)
+
+additions by: --[[User:rwollman|Roy]] 12:43, April 12 2010 (UTC)
