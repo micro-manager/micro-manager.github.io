@@ -59,6 +59,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[Velleman K8055]] - Digital IO board (all platforms)
    [[Velleman K8061]] - DIgital IO board (all platforms)
 ''Other devices''  
+   [[AndorLaserCombiner]] - Andor laser launch
    [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
    [[Cobolt]] - Cobolt laser controller
    [[Coherent Cube]] - Coherent Cube laser controller
@@ -67,8 +68,3 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
    [[Spectral LMM5]] - Spectral laser line controller
    [[Yokogawa]] - Yokogawa CSU22
    [[Yokogawa CSUX]] - Yokogawa CSUX, all models
-
-
-
-
---[[User:Nico|Nico]] 09:04, 15 August 2007 (PDT)
