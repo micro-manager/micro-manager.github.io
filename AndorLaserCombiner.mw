@@ -1,0 +1,70 @@
+<table><tr><td  valign=top >
+'''Summary:'''</td><td>Interfaces with Andor laser combiner</td></tr>
+<tr><td valign=top>'''Author:'''</td><td>Pariksheet Nanda (Andor product support)<br>
+Glenn Jolleys is the Andor Laser Combiner Developer</td></tr>
+<tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
+<tr><td  valign=top >'''Platforms:'''</td><td>Windows (No Mac or Linux driver available)</td></tr>
+<tr><td  valign=top >'''Devices:'''</td><td>Andor laser combiners: ALC-401, ALC-501, ALC-601</td></tr>
+</table>
+
+----
+
+== Driver Installation (for non-Andor computers) ==
+
+NOTE: Andor completes the steps below in their factory.
+If you are setting up an Andor laser combiner on a new computer, only then do you need to follow this document.
+
+The tested platform for installing the Andor laser launch driver is Windows XP Professional 32-bit.
+It may be possible to use Windows 7 32-bit, but using it at the moment is beyond the scope of this document.
+
+Specific driver versions are required.
+Since the manufacturer websites offer later versions of these drivers, please instead use your Andor iQ CD-ROM and install only in the following order.
+
+When you start Windows XP, ignore the Found New Hardware Wizard.
+Also when installing, ignore the driver requests to restart your computer.
+
+* Dongle Driver
+
+* Andor iQ 1.10.2
+** iQ installs the driver to recognize the DeVaSys microcontroller in the combiner.
+** It would also serve as to test that communication and control of the combiner is possible.
+
+* Measurement Computing DAC card driver
+** Recognizes the Andor Precision Control Unit (PCU) box which controls the laser combiner Acousto-Optic Tunable Filter (AOTF).
+
+* Prolific USB to RS232 driver
+
+* Restart your PC
+
+* Let Windows Found New Hardware wizard finish for all hardware
+
+* Start menu > Measurement Computing > InstalCal, to register the PCU DAC card
+** Running InstaCal creates a new configuration file which is used by iQ
+** Simply running the program once and closing it creates the file
+** Do not delete the DEMO board.
+** Two boards should exist, the DEMO board #0 and your installed board #1
+
+* Start Menu > Andor Bioimaging > ConfigurationManager
+** Create a new configuration with a Kinetic Dummy Camera and the Andor laser combiner
+
+* Remap the USB-to-Serial COM ports in your Device Manager to 201-204
+** iQ reserves these specific port numbers for the combiner
+** See screenshots below
+
+SS-1
+[[Image:AB-1-com-ports.png]]
+
+SS-2
+[[Image:AB-2-reassign-com-port.png]]
+
+SS-3
+[[Image:AB-3-reassigned-scan.png]]
+
+SS-4
+[[Image:AB-4-new-ports.png]]
+
+* Now start iQ with your new laser combiner configuration and test
+
+* Get the latest nightly build to run the Andor laser combiner in uManager 
+
+[[User:P.nanda|P.nanda]] 15:42, 13 April 2010 (UTC)
