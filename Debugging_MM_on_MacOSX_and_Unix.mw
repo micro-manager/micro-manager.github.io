@@ -1,3 +1,5 @@
+==Using gdb==
+
 Debugging of the C++ code on Mac and Unix can proceed as follows:
 
 cd to your ImageJ directory that contains a self-starting Micro-Manager plugin:
@@ -15,3 +17,19 @@ Now tell java on gdb to run ImageJ:
 Control-C can interrupt execution.
 
 Please refer to the [http://sourceware.org/gdb/current/onlinedocs/gdb_toc.html gdb documentation] for debugging commands.
+
+==Using NetBeans with gdb for C++ debugging==
+
+# Install NetBeans for C++ or install the C/C++ plugin for in your existing NetBeans installation.
+# Choose File > New Project... . Select Categories=C/C++, Projects=C/C++ Project with Existing Sources.
+# Specifiy the folder that contains existing sources (e.g., /projects/micromanager/) and press "Finish."
+# Right-click the new project and select "Properties".
+# Under Build...Make, Set Build Command to "make all; make install" and "Clean Command" to "make clean". Set Build Result to '''<your_ImageJ_directory>/ImageJ.app/Contents/MacOS/JavaApplicationStub''' .
+# Add the following option to the '''netbeans_default_options="..."''' line of '''/Applications/NetBeans/NetBeans\ 6.8.app/Contents/Resources/NetBeans/netbeans.conf''' :<pre>-J-Dgdb.init.enable=true</pre>
+# Create a .gdbinit file that informs gdb of the directories of all '''.cpp''' and '''.h''' source files you might wish to debug:
+<pre>directory /projects/micromanager/
+directory /projects/micromanager/MMCore
+directory /projects/micromanager/MMDevice
+directory /projects/micromanager/DeviceAdapters/DemoCamera</pre>
+# Launch ImageJ (the Micro-Manager make install)
+# Select Debug...Attach debugger.
