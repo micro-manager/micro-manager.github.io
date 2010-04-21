@@ -20,16 +20,18 @@ Please refer to the [http://sourceware.org/gdb/current/onlinedocs/gdb_toc.html g
 
 ==Using NetBeans with gdb for C++ debugging==
 
-# Install NetBeans for C++ or install the C/C++ plugin for in your existing NetBeans installation.
-# Choose File > New Project... . Select Categories=C/C++, Projects=C/C++ Project with Existing Sources.
-# Specifiy the folder that contains existing sources (e.g., '''/projects/micromanager/''') and press "Finish."
-# Right-click the new project and select "Properties".
-# Under Build...Make, Set Build Command to "make all; make install" and "Clean Command" to "make clean". Set Build Result to '''<your_ImageJ_directory>/ImageJ.app/Contents/MacOS/JavaApplicationStub''' .
-# Add the following option to the '''netbeans_default_options="..."''' line of '''/Applications/NetBeans/NetBeans\ 6.8.app/Contents/Resources/NetBeans/netbeans.conf''' :<pre>-J-Dgdb.init.enable=true</pre>
-# Create a '''.gdbinit''' file in '''~''' that informs gdb of the directories of all '''.cpp''' and '''.h''' source files you might wish to debug:
-<pre>directory /projects/micromanager/
+<ol>
+<li>Install NetBeans for C++ or install the C/C++ plugin for in your existing NetBeans installation.</li>
+<li>Choose File > New Project... . Select Categories=C/C++, Projects=C/C++ Project with Existing Sources.</li>
+<li>Specifiy the folder that contains existing sources (e.g., '''/projects/micromanager/''') and press "Finish."</li>
+<li>Right-click the new project and select "Properties".</li>
+<li>Under Build...Make, Set Build Command to "make all; make install" and "Clean Command" to "make clean". Set Build Result to '''<your_ImageJ_directory>/ImageJ.app/Contents/MacOS/JavaApplicationStub''' .</li>
+<li>Add the following option to the '''netbeans_default_options="..."''' line of '''/Applications/NetBeans/NetBeans\ 6.8.app/Contents/Resources/NetBeans/netbeans.conf''' :<pre>-J-Dgdb.init.enable=true</pre></li>
+<li> Create a '''.gdbinit''' file in '''~''' that informs gdb of the directories of all '''.cpp''' and '''.h''' source files you might wish to debug:<pre>directory /projects/micromanager/
 directory /projects/micromanager/MMCore
 directory /projects/micromanager/MMDevice
-directory /projects/micromanager/DeviceAdapters/DemoCamera</pre>
-# Launch ImageJ (the Micro-Manager make install)
-# Select Debug...Attach debugger.
+directory /projects/micromanager/DeviceAdapters/DemoCamera
+</pre></li>
+<li>Launch ImageJ (the Micro-Manager make install)</li>
+<li>Select Debug...Attach debugger.</li>
+</ol>
