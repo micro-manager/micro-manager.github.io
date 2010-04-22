@@ -1,6 +1,6 @@
 ==Device signals analysis==
 
-Competent hardware manufacturer provide detailed, complete documentation on how to programmatically control their devices. In some cases, when good documentation is not available, it is necessary to analyze and test signals being sent between a device and the computer, or between different software components. A number of free tools are available for this purpose:
+Competent hardware manufacturers provide detailed, complete documentation on how to programmatically control their devices. In some cases, when good documentation is not available, it is necessary to analyze and test signals being sent between a device and the computer, or between different software components. A number of free tools are available for this purpose:
 
 * [http://www.serial-port-monitor.com/ '''Free Serial Port Monitor'''] (Windows) allows you to listen in on all messages sent on COM ports.
 * [http://www.wireshark.org/ '''Wireshark'''] (Windows, Mac, Linux) allows you to monitor traffic on a large variety of communications protocols, including TCP/IP and USB.
