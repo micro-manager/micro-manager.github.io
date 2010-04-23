@@ -1,4 +1,4 @@
-Micro-Manager has a plugin system similar to ImageJ's. To write a Micro-Manager plugin, simply implement the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/MMPlugin.java <code>MMPlugin</code> interface]. Note the static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu.
+Micro-Manager has a Java-based plugin system similar to ImageJ's. To write a Micro-Manager plugin, simply implement the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/MMPlugin.java <code>MMPlugin</code> interface]. Note the static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu.
 
 Micro-Manager's classpath is set up so that Micro-Manager plugins can import classes from:
 <ol>
@@ -13,6 +13,8 @@ Once you have compiled your code into a .class file or a .jar file, drop that fi
 <pre>
 gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");
 </pre>
+
+The source code for a number of Micro-Manager plugins is publicly available [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/plugins/ here].
 
 '''Using Eclipse or Netbeans'''
 
