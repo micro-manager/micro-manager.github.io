@@ -14,13 +14,13 @@ To build the entire application from the source code, you will need to install t
 # ImageJ 1.43j or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
 # Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
 # Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
-# A subversion client, for example: http://www.open.collab.net/downloads/subversion
+# A subversion client, for example: http://www.open.collab.net/downloads/subversion or 
 
-Assuming you've installed Java JDK 6.0 update 17, set the following "environment variables" goto My Computer / Properties / Advanced / Environment Variables / System variables and ad the following new entries  :
+Assuming you've installed Java JDK 6.0 update 20, set the following "environment variables" goto My Computer / Properties / Advanced / Environment Variables / System variables and ad the following new entries  :
 
 <code><pre>
-ANT_HOME=c:\ant
-JAVA_HOME=c:\jdk1.6.0.17
+ANT_HOME=C:\ant
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_20
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
 
