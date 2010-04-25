@@ -34,7 +34,7 @@ As of this writing, MM is using the Boost 1.40 release. Download Boost and place
 
 1. In a command prompt, cd to <root>3rdparty, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
 
-        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
+        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_40_0/ .
 
 2. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
          bootstrap
