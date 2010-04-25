@@ -28,13 +28,13 @@ PATH=%PATH%;%ANT_HOME%\bin
 
 In addition to software tools you will need to install the following software packages in the <root>/3rdparty directory:
 
-SWIG version 1.3.24 and place it in "<root>/3rdparty/SWIG-1.3.24" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
+SWIG version 1.3.40 and place it in "<root>/3rdparty/SWIG-1.3.40" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
 
-As of this writing, MM is using the Boost 1.40 release. Download Boost and place it in the "<root>3rdparty/boost" subdirectory. The easy way to do this is as follows:
+As of this writing, MM is using the Boost 1.42 release. Download Boost and place it in the "<root>3rdparty/boost" subdirectory. The easy way to do this is as follows:
 
 1. In a command prompt, cd to <root>3rdparty, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
 
-        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_40_0/ .
+        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
 
 2. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
          bootstrap
