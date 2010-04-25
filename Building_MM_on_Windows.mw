@@ -41,6 +41,9 @@ As of this writing, MM is using the Boost 1.42 release. Download Boost and place
 3. After the bjam.exe tool is built, issue:
          .\bjam --build-type=complete 
 
+This step will take a while so go make yourself a cup of tea ;)
+
+
 4. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\3rdparty\boost\boost and the libraries will be  in <root>\3rdparty\boost\stage\lib
 
 
