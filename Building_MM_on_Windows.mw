@@ -34,28 +34,14 @@ As of this writing, MM is using the Boost 1.40 release. Download Boost and place
 
 1. In a command prompt, cd to <root>3rdparty, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
 
-        svn co -N http://svn.boost.org/svn/boost/tags/release .
+        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
 
-2. Create a text file called externals_value.definition
-
-3. In that text file put exactly this key + URL: 
-
-         boost http://svn.boost.org/svn/boost/tags/release/Boost_1_40_0/
-
-4. In order to create an uncomitted 'externals' definition in your 3rdparty directory, type exactly the following command (again assuming you've got subversion in your command path):
-
-         svn propset svn:externals . -F externals_value.definition
- 
-5. Still in the 3rdparty directory issue:
-         svn up
-6. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
+2. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
          bootstrap
-7. After the bjam.exe tool is built, assuming you've got VS 2008 issue:
-         .\bjam toolset=msvc-9.0 --build-type=complete 
-or if you are using Visual Studio Express 2008 use:
-         .\bjam toolset=msvc-9.0express --build-type=complete 
+3. After the bjam.exe tool is built, assuming you've got VS 2008 issue:
+         .\bjam --build-type=complete 
 
-8. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\3rdparty\boost\boost and the libraries will be  in <root>\3rdparty\boost\stage\lib
+4. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\3rdparty\boost\boost and the libraries will be  in <root>\3rdparty\boost\stage\lib
 
 
 
