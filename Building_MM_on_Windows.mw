@@ -59,6 +59,14 @@ If you don't want to build one or more device adapters (because you don't have t
 
 The project files in the repository should have the correct path settings.
 
+To deal with the flood of text in the Output window, in the Solution Explorer right-click and build one project at a time.
+
+If you get an error:
+
+        Target(FOO) does not match the Linker's OutputFile property value (BAR) ...
+
+You could right-click > properties > Linker > General > Output File and strip the leading "mmdr_dal_" from the filename to satisfy it.
+
 ==Building the C++ layer: MMCore and device adapters==
 
 You can build C++ part of the project by opening MMCoreJ_wrap.sln in MSDEV and running the full build. This will build the MMCore, Java wrappers and all device adapters. You can remove any device adapter project from the solution if you don't have the corresponding SDK or if you don't need to build it.
