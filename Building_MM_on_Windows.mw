@@ -76,7 +76,7 @@ You can build C++ part of the project by opening MMCoreJ_wrap.sln in MSDEV and r
 
 ==Building the Java layer: Micro-Manager Studio==
 
-Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/micro-manager-1.0/mmStudio directory. Before running the build the project file build.xml must be modified to specify paths for external libraries: ImageJ and BeanShell.
+Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/micro-manager-1.3/mmstudio directory. Before running the build the project file build.xml must be modified to specify paths for external libraries: ImageJ and BeanShell.
 
 <code><pre>
 <!-- EDIT PATHS BELOW TO MATCH YOUR SYSTEM -->
