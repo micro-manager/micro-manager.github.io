@@ -91,6 +91,10 @@ In the mmstudio directory from the commandline, run:
 
       ant -buildfile build.xml
 
+If you try to launch Plugins > Micro-Manager > Micro-Manager Studio and nothing happens, back in the mmstudio directory try this instead:
+
+      ant -buildfile build.xml cleanMMStudio compileMMStudio buildMMStudio
+
 ==Building the full source in one step==
 
 To build the entire Micro-Manager source code with a single command, you can use mmbuild.bat. You can modify this file to switch between Debug and Release builds, specify different paths for ANT and MSDEV tools, etc. Required MSDEV paths for command-line compilation are located in vsvars32.bat file in the MSDEV installation package.
