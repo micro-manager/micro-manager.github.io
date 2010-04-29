@@ -13,11 +13,34 @@ The adapter uses a modified version of libk8055 (by Sven Lindberg and others) an
 
 Please note that to use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board.
 
-On Windows you will need to 'replace' the HID driver with the driver provided in the driver directory in the Micro-Manager folder.  In the 'Device Manager', select the K8055 device, select "update driver" and then manually select the driver in the driver folder in the Micro-Manager application folder.  On Mac OS X you will need to download and unpack [[Media:k8055-utbm-osx-kext.tar.gz]], open a terminal, cd into the directory k8055-utbm-osx-kext, issue the commands below, and reboot:
+On Mac OS X you will need to download and unpack [[Media:k8055-utbm-osx-kext.tar.gz]], open a terminal, cd into the directory k8055-utbm-osx-kext, issue the commands below, and reboot:
 <pre>
 sudo cp -r k8055.kext /System/Library/Extensions/k8055.kext
 sudo touch /System/Library
 </pre>
+
+
+On Windows you will need to 'replace' the HID driver with the driver provided in the driver directory in the Micro-Manager folder.  To find out which device is the K8055, open the Device Manager, open the tab "Human Interface Devices" and plug in the K8055.  Two devices should appear, one named "HID-compliant device", the other called "USB Human Interface Device". [[Image:DeviceManager.png]]
+
+Double click on the "USB Human Interface Device", select the "Driver" tab and click on "Update Driver".  On the first page of the Hardware Configuration Wizard, do not let Windows connect to Windows Update.  On the next page, select "Install from a list or sepcific location(Advanced)". 
+
+[[Image:HardwareUpdate2.png]]
+
+On the next page, select "Don't search.  I will choose the driver to install".
+ 
+[[Image:HardwareUpdate3.png]]
+
+Click on the "Have Disk" button.
+
+[[Image:HwarderUpdate4.png]]
+
+Click "Browse" and go to C:\Program Files\Micro-Manager1.3\drivers.  Select the file "K8055_libusb.inf".
+
+[[Image:HardwareUpdate5.png]] 
+
+This should install the appropriate driver.  After finalizing the wizard, your Device Manager should look as follows:
+
+[[Image:DeviceManagerFinal.png]]
 
 
 --[[User:Nico|Nico]] 18:21, 15 December 2007 (PST)
