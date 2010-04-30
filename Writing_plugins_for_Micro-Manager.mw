@@ -18,7 +18,7 @@ The source code for a number of Micro-Manager plugins is publicly available [htt
 
 '''Using Eclipse or Netbeans'''
 
-The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. Here are the steps:
+The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. Here are the steps for Netbeans:
 <ol>
 <li>Install [http://netbeans.org Netbeans].</li>
 <li>Select New > New Project... > Java > Java Class Library</li>
