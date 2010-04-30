@@ -27,7 +27,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 <li>Browse to C:\Program Files\Micro-Manager-1.3\plugins\Micro-Manager and choose bsh-2.0b4.jar, commons-math-2.0.jar, MMCoreJ.jar, MMJ_.jar, swing-layout-1.0.4.jar, and swingx-0.9.5.jar.</li>
 <li>Click Add JAR/Folder again and add C:\Program Files\Micro-Manager-1.3\ij.jar</li>
 <li>Click Categories > Run and set Main Class to ij.ImageJ, working directory to C:\Program Files\Micro-Manager-1.3\ . Click OK.</li>
-<li>Now choose Debug > Debug Project from the Menu and ImageJ should launch</li>
+<li>Now choose Debug > Debug Project from the Menu and ImageJ/Micro-Manager should launch. Close it for now.</li>
 <li>Right-click your Source Packages in your project, under the Projects tab. Select New > Java Class... and give your plugin a class name and package name.</li>
 <li>Edit the class so that it implements org.micromanager.api.MMPlugin. </li>
 <li>Create a MMStartup.bsh file as described above.</li>
