@@ -13,7 +13,7 @@ Francis McCloy is the current Andor Developer</td></tr>
 == Installation ==
 
 === Windows ===
-Before you proceed, you must have a copy of the Andor's SDK package already installed since it contains the necessary files to recognize the camera.
+Before you proceed, you must have a copy of Andor software already installed since it contains the necessary files to recognize the camera.  The software could be the Andor SDK, Solis or iQ.
 
 When you first power on and plug in your camera and Windows tries to recognize it, select to "Install from a list or specific location (Advanced)" > "Search for the best driver in these locations" > "Include this location in the search" > C:\Program Files\(Your Andor Directory)
 
