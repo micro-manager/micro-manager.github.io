@@ -8,7 +8,7 @@ Micro-Manager's classpath is set up so that Micro-Manager plugins can import cla
 <li>[http://commons.apache.org/math/userguide/overview.html Apache Commons Math]</li>
 </ol>
 
-Once you have compiled your code into a .class file or a .jar file, drop that file into Micro-Manager's mmplugins directory, and it will be loaded at startup. You can also dynamically load your plugin by including a line in the MMStartup.bsh file (in the root directory of your Micro-Manager installation). For example:
+Once you have compiled your code into a .class file or a .jar file, drop that file into Micro-Manager's mmplugins directory, and it will be loaded at startup. You can also dynamically load your plugin by including a line in the MMStartup.bsh file. (This file should reside in the root directory of your Micro-Manager installation; if there isn't one yet, you can create it with any text editor program.) For example:
 
 <pre>
 gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");
@@ -30,7 +30,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 <li>Now choose Debug > Debug Project from the Menu and ImageJ/Micro-Manager should launch. Close it for now.</li>
 <li>Right-click your Source Packages in your project, under the Projects tab. Select New > Java Class... and give your plugin a class name and package name.</li>
 <li>Edit the class so that it implements org.micromanager.api.MMPlugin. </li>
-<li>Create a MMStartup.bsh file as described above.</li>
+<li>Create or edit the MMStartup.bsh file as described above.</li>
 <li>Now choose Debug > Debug Project and your plugin should appear in the Micro-Manager Plugins menu.</li>
 </ol>
 As long as your plugin is placed on the classpath by the IDE (as is done by both Eclipse and Netbeans), the MMStartup.bsh script will properly load your nascent plugin in the plugins menu.
