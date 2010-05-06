@@ -18,7 +18,7 @@ The source code for a number of Micro-Manager plugins is publicly available [htt
 
 '''Using Netbeans'''
 
-The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. Here are the steps for Netbeans:
+The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. (The Micro-Manager distribution includes swing-layout-*.*.jar so that you can use the free Netbeans GUI Builder for your plugin.) Here are the steps for Netbeans:
 <ol>
 <li>Install [http://netbeans.org Netbeans].</li>
 <li>Select New > New Project... > Java > Java Class Library</li>
@@ -43,4 +43,4 @@ you can get the GUI object and core objects thus:
 MMStudioMainFrame gui_ = (MMStudioMainFrame) app;
 CMMCore core_ = gui_.getMMCore();
 </pre>
-Micro-Manager distribution includes swing-layout-*.*.jar so that you can use the free Netbeans GUI Builder for your plugin. Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
+Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
