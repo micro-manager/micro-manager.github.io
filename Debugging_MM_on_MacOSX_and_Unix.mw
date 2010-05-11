@@ -32,6 +32,7 @@ directory /projects/micromanager/MMCore
 directory /projects/micromanager/MMDevice
 directory /projects/micromanager/DeviceAdapters/DemoCamera
 </pre></li>
-<li>Launch ImageJ (the target of make install from your micromanager source)</li>
+<li>Restart Netbeans.</li>
+<li>Launch ImageJ (the target of make install from your micromanager source).</li>
 <li>Select Debug...Attach debugger.</li>
 </ol>
