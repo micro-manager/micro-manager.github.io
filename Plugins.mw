@@ -1,0 +1,9 @@
+Micro-Manager offers a number of built-in Plugins for special applications in microscopy:
+* [[Slide Explorer Plugin|Slide Explorer]]
+* [[Pixel Calibrator Plugin|Pixel Calibrator]]
+* [[Tracker Plugin|Tracker]]
+
+In addition, plugins are available from third parties:
+
+* [[Photometrics Camera Control Plugin|Photometrics Camera Control]]
+* [[HCS Plugin|High Content Screening Plugin from 100x Imaging]]
