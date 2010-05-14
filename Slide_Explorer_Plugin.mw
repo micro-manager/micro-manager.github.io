@@ -1,6 +1,6 @@
 The Slide Explorer plugin works like Google Maps for your microscope. With this plugin you can:
 
-* Develop a map of part or all of the slide in real time.
+* Develop a map of the slide in real time.
 * Move the field of view to your desired point of interest with a single click.
 * Create multiple tiled images with irregular boundaries in 5 dimensions (X, Y, Z, Time, Channel).
 
