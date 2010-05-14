@@ -2,6 +2,6 @@ The Slide Explorer plugin works like Google Maps for your microscope. With this 
 
 * Develop a map of part or all of the slide in real time.
 * Move the field of view to your desired point of interest with a single click.
-* Create tiled images in 5 dimensions (X, Y, Z, Time, Channel).
+* Create multiple tiled images with irregular boundaries in 5 dimensions (X, Y, Z, Time, Channel).
 
 Before using the Slide Explorer, you will need to run the [[Pixel Calibrator Plugin|Pixel Calibrator plugin]]. The size and orientation of pixels measured by the Pixel Calibrator will be used to ensure that the tiles in the Slide Explorer are properly registered.
