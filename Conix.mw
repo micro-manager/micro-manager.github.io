@@ -1,8 +1,8 @@
 == Conix filter changer ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for Conix Quad Filter Changer. </td></tr>
-<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+'''Summary:'''</td><td>Adapter for Conix Quad Filter Changer and XY and Z stages. </td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman and Trevor Osborn</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Should work on all platforms (serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Quad filter changer</td></tr>
