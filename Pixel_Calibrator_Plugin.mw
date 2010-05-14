@@ -1,4 +1,4 @@
-The Pixel Calibrator Plugin measures pixel size automatically. It systematically moves the XY stage and measures the number of pixels by specimen is translated in X and Y. To use the Pixel Calibrator, you will need a camera, a pre-calibrated, motorized stage, and a nonperiodic specimen with reasonably high contrast. 
+The Pixel Calibrator Plugin measures pixel size automatically. It systematically moves the XY stage and measures the number of pixels by which the specimen is translated in X and Y. To use the Pixel Calibrator, you will need a camera, a pre-calibrated, motorized stage, and a nonperiodic specimen with reasonably high contrast. 
 
 Usage instructions:
 # Adjust your sample and microscope settings until you can Snap a high-contrast image. Make sure your specimen has lots of detail in the middle of the field of view.
