@@ -1,11 +1,7 @@
 The Slide Explorer plugin works like Google Maps for your microscope. With this plugin you can:
 
-* Develop a map of the slide in real time by panning and zooming.
-* Move the stage to your desired point of interest with a single click.
-* Acquire tiled images with arbitrary shapes, including time lapse, z stacks, and multiple channels.
+* Develop a map of part or all of the slide in real time.
+* Move the field of view to your desired point of interest with a single click.
+* Create tiled images in 5 dimensions (X, Y, Z, Time, Channel).
 
-The Slide Explorer is available in Micro-Manager 1.3.46 or later. Before using the Slide Explorer, you will need to run the [[Pixel Calibrator Plugin|Pixel Calibrator plugin]]. The size and orientation of pixels measured by the Pixel Calibrator will be used to ensure that the tiles in the Slide Explorer are properly positioned.
-
-
-
-{{Documentation Sidebar}}
+Before using the Slide Explorer, you will need to run the [[Pixel Calibrator Plugin|Pixel Calibrator plugin]]. The size and orientation of pixels measured by the Pixel Calibrator will be used to ensure that the tiles in the Slide Explorer are properly registered.
