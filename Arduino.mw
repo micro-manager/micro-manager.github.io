@@ -9,7 +9,7 @@
 <tr><td>'''Since version:'''</td><td>1.3.18</td></tr>
 </table>
 
-The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board.  It has some digital inputs and digital outputs and can communicate with the computer through a serial interface (that is hidden in a USB connection).  A very nice and simple programming language makes the Arduino very simple to program.  The Micro-Manager interface to the Arduino consists of an Arduino programn (the 'firmware') that you need to upload to the Arduino first.  The current version of the Micro-Manager has facilities to use the Arduino as a shutter, and as a shutter that only opens when a TTL is set high (for instance, when the camera is exposing).  Also, timed sequences of TTL output can be setup.  There are also facilities for programmable analogue out, however, that need connection of a DA chip and requires constructions of a 'daughterboard'.
+The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board.  It has some digital inputs and digital outputs and can communicate with the computer through a serial interface (that is hidden in a USB connection).  A very nice and simple programming language makes the Arduino very simple to program.  The Micro-Manager interface to the Arduino consists of an Arduino program (the 'firmware') that you need to upload to the Arduino first.  The current version of the Micro-Manager has facilities to use the Arduino as a shutter, and as a shutter that only opens when a TTL is set high (for instance, when the camera is exposing).  Also, timed sequences of TTL output can be setup.  There are also facilities for programmable analogue out, however, those need connection of a DA chip and requires constructions of a 'daughterboard'/'shield'.
 
 To install the Arduino Micro-Manager 'firmware', download and install the [http://arduino.cc/en/Main/Software Arduino Software] for your platform.  Establish a connection with your Arduino using the instructions that come with the Arduino software (this includes installing a driver for the USB to serial adapter build into the Arduino.. Then download the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/DeviceAdapters/Arduino/AOTFcontroller.pde firmware source code] and copy into the Arduino editor.  Send to the Arduino, and your Arduino is programmed to work with Micro-Manager.
 
@@ -19,11 +19,22 @@ The Arduino 'Switch' sets the digital output pattern using a single byte.  Bit 1
 
 You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
+<table>
+<tr><th width=40>bit</th><th width=40>pin</th><th width=40>nr when high</th></tr>
+<tr><td width=40>0</td><td width=40>8</td><td width=40>1</td></tr>
+<tr><td width=40>1</td><td width=40>9</td><td width=40>2</td></tr>
+<tr><td width=40>2</td><td width=40>10</td><td width=40>4</td></tr>
+<tr><td width=40>3</td><td width=40>11</td><td width=40>8</td></tr>
+<tr><td width=40>4</td><td width=40>12</td><td width=40>16</td></tr>
+<tr><td width=40>5</td><td width=40>13</td><td width=40>32</td></tr>
+</table>
+
 
 When used directly (not via trigger more) the Ardiuno Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
 
 Troubleshooting tip: In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the Arduino-Switch state to 32 in the device/property browser and than chose Arduino as your shuter and just open/close it in the main MM window. and opening and closing the Arduino-shutter. You should see the built-in LED light changes when you close / open the arduino shutter. 
 
+David Knecht put up a nice tutorial on how to build a box around the Arduino and use it to control LED illumination on your microscope [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html].
 
 --[[User:Nico|Nico]] 02:20, 27 February 2009 (UTC)
 
