@@ -28,7 +28,7 @@ Hope it works for you! Greg Jefferis <jefferis@gmail.com>
 
 # Download and build boost - see the separate Wiki page for that task.
 
-
+# If you want to build dc1394, instal libdc1394:
 # EITHER libdc1394 v2.0.1 (release version)
 VERSION="2.0.1"
 LIBDC="libdc1394-$VERSION"
