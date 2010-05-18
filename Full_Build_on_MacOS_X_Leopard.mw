@@ -50,7 +50,9 @@ sudo make install
 # Micro-Manager from SVN
 svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
 cd micromanager1.3
-autoreconf -i -s
+
+./mmUnixBuild.sh
+
 ### N.B. on DebianJohan found that he needed to run  autoconf --install at this point.
 export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 ./configure --with-imagej=/Applications/ImageJ/
