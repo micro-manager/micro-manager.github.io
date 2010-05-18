@@ -61,11 +61,5 @@ export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
 # and for statically-linked components use:
 #./configure --with-imagej=/Applications/ImageJ/ --enable-static
 make
-cd MMDevice
-make
-cd ..
-cd DeviceAdapters/dc1394/
-make 
-cd ../..
-make install
+sudo make install
 </pre></code>
