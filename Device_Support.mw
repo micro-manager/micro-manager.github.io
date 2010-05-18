@@ -1,70 +1,71 @@
-== Device Adapters in Micro-Manager ==
-
 Most difficulties in working with Micro-Manager arise from configuring the system and from problems/issues with specific devices.  In both of these cases you are interacting mainly with device adapters.  These device adapters have been written by several different authors, all behave slightly differently, and interact with specific hardware that has its own peculiarities.  On these pages we will maintain as much information as possible about Micro-Manager device adapters.  This will help you configure and understand your Micro-Manager system.  We hope that the authors of the device adapters will maintain this information, but please feel free to update the information here with your own experiences.  The information here will refer to the most recent Micro-Manager release (currently [http://micro-manager.org/downloads.php version 1.3]).
 
-''Motorized Microscopes''
-   [[LeicaDMI]] - Leica DMI and DM microscopes
-   [[LeicaDMR]] - Leica DMR microscopes (and DMIRBE)
-   [[NikonTE2000]] - Nikon TE2000 motorized microscope
-   [[NikonTI]] - Nikon TI microscope
-   [[NikonAZ100]] - Nikon AZ100 Zoom microscope
-   [[OlympusIX81/BX61]] - Olympus IX81 (Inverted)/BX61 (Upright)
-   [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
-   [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
-''Cameras''
-   [[ABSCameras]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
-   [[Andor]] - Andor cameras
-   [[Apogee]] - Apogee cameras
-   [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
-   [[DemoCamera]] - Virtual, emulated equipment for testing
-   [[DemoStreamCamera]] - Virtual, emulated fast camera
-   [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
-   [[PVCAM]] - Roper/Photometrics cameras
-   [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
-   [[Piper]] - Stanford Photonics cameras
-   [[QCam]] - QImaging cameras
-   [[Scion]] - Scion cameras
-   [[Sensicam]] - PCO/Cooke Sensicam camera
-   [[Spot]] - Diagnostic Instruments Spot cameras
-   [[Twain]] - Cameras fully implementing Twain Imaging Standard
-   a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
-''Stages, filter wheels, shutters''   
-   [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
-   [[ASIStage]] - ASI XY (and Z) stage and CRIF
-   [[Conix]] - Conix Filter Changer
-   [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
-   [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
-   [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
-   [[Ludl]] - Ludl stages, shutters and filter wheels 
-   [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
-   [[MCL-MicroDrive]] - Mad City Labs MicroDrive
-   [[MCL-NanoDrive]] - Mad City Labs NanoDrive
-   [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
-   [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
-   [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
-   [[PrecisExcite]] - LED illuminator (usable as a shutter device)
-   [[Prior]] - Prior stages, shutters, and filter wheels
-   [[SutterLambda]] - Sutter hardware
-   [[Thorlabs DCxxxx]] - Thorlabs LED controllers
-   [[Thorlabs FilterWheel]] - Thorlabs Filter Wheel
-   [[Thorlabs SC10]] - Thorlabs shutter controller
-   [[Vincent]] - Vincent Uniblitz controllers
-''Communication ports, TTLs, DAQs, etc..''
-   [[Arduino]] - Open Source Programmable Digital/Analogue IO board
-   [[DTOpenLayer]] - DT OpenLayer Digital IO boards
-   [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
-   [[SerialManager]] - Serial Ports on Windows
-   [[SerialManagerUnix]] - Serial Ports on Mac and Linux
-   [[ParallelPort]] - TTLs on parallel port (Windows only)
-   [[Velleman K8055]] - Digital IO board (all platforms)
-   [[Velleman K8061]] - DIgital IO board (all platforms)
-''Other devices''  
-   [[AndorLaserCombiner]] - Andor laser launch
-   [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
-   [[Cobolt]] - Cobolt laser controller
-   [[Coherent Cube]] - Coherent Cube laser controller
-   [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
-   [[Pecon]] - Pecon Incubation System
-   [[Spectral LMM5]] - Spectral laser line controller
-   [[Yokogawa]] - Yokogawa CSU22
-   [[Yokogawa CSUX]] - Yokogawa CSUX, all models
+=== Motorized Microscopes ===
+* [[LeicaDMI]] - Leica DMI and DM microscopes
+* [[LeicaDMR]] - Leica DMR microscopes (and DMIRBE)
+* [[NikonTE2000]] - Nikon TE2000 motorized microscope
+* [[NikonTI]] - Nikon TI microscope
+* [[NikonAZ100]] - Nikon AZ100 Zoom microscope
+* [[OlympusIX81/BX61]] - Olympus IX81 (Inverted)/BX61 (Upright)
+* [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
+* [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
+=== Cameras ===
+* [[ABSCameras]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
+* [[Andor]] - Andor cameras
+* [[Apogee]] - Apogee cameras
+* [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
+* [[DemoCamera]] - Virtual, emulated equipment for testing
+* [[DemoStreamCamera]] - Virtual, emulated fast camera
+* [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
+* [[PVCAM]] - Roper/Photometrics cameras
+* [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
+* [[Piper]] - Stanford Photonics cameras
+* [[QCam]] - QImaging cameras
+* [[Scion]] - Scion cameras
+* [[Sensicam]] - PCO/Cooke Sensicam camera
+* [[Spot]] - Diagnostic Instruments Spot cameras
+* [[Twain]] - Cameras fully implementing Twain Imaging Standard
+* a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
+
+=== Stages, filter wheels, shutters ===   
+* [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
+* [[ASIStage]] - ASI XY (and Z) stage and CRIF
+* [[Conix]] - Conix Filter Changer
+* [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
+* [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
+* [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
+* [[Ludl]] - Ludl stages, shutters and filter wheels 
+* [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
+* [[MCL-MicroDrive]] - Mad City Labs MicroDrive
+* [[MCL-NanoDrive]] - Mad City Labs NanoDrive
+* [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
+* [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
+* [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
+* [[PrecisExcite]] - LED illuminator (usable as a shutter device)
+* [[Prior]] - Prior stages, shutters, and filter wheels
+* [[SutterLambda]] - Sutter hardware
+* [[Thorlabs DCxxxx]] - Thorlabs LED controllers
+* [[Thorlabs FilterWheel]] - Thorlabs Filter Wheel
+* [[Thorlabs SC10]] - Thorlabs shutter controller
+* [[Vincent]] - Vincent Uniblitz controllers
+
+=== Communication ports, TTLs, DAQs, etc. ===
+* [[Arduino]] - Open Source Programmable Digital/Analogue IO board
+* [[DTOpenLayer]] - DT OpenLayer Digital IO boards
+* [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
+* [[SerialManager]] - Serial Ports on Windows
+* [[SerialManagerUnix]] - Serial Ports on Mac and Linux
+* [[ParallelPort]] - TTLs on parallel port (Windows only)
+* [[Velleman K8055]] - Digital IO board (all platforms)
+* [[Velleman K8061]] - DIgital IO board (all platforms)
+
+=== Other devices ===
+* [[AndorLaserCombiner]] - Andor laser launch
+* [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
+* [[Cobolt]] - Cobolt laser controller
+* [[Coherent Cube]] - Coherent Cube laser controller
+* [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
+* [[Pecon]] - Pecon Incubation System
+* [[Spectral LMM5]] - Spectral laser line controller
+* [[Yokogawa]] - Yokogawa CSU22
+* [[Yokogawa CSUX]] - Yokogawa CSUX, all models
