@@ -10,10 +10,11 @@ Micro-Manager's classpath is set up so that Micro-Manager plugins can import cla
 
 The MMPlugins API provides you access to the GUI and core instances (objects) already created by Micro-Manager startup. Micro-Manager will call
 <code>public void setApp(ScriptInterface app);</code>
-you can get the GUI object and core objects thus:
+you can get the GUI object, core and acquisition engine objects thus:
 <pre>
 MMStudioMainFrame gui_ = (MMStudioMainFrame) app;
 CMMCore core_ = gui_.getMMCore();
+AcquisitionEngine acq_ = gui_.getAcquisitionEngine();
 </pre>
 
 Once you have compiled your code into a .class file or a .jar file, drop that file into Micro-Manager's mmplugins directory, and it will be loaded at startup. You can also dynamically load your plugin by including a line in the MMStartup.bsh file. (This file should reside in the root directory of your Micro-Manager installation; if there isn't one yet, you can create it with any text editor program.) For example:
