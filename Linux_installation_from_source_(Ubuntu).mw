@@ -1,6 +1,6 @@
 == General remarks (Ubuntu)==
 
-We assume installation of ImageJ in "/usr/local/ImageJ". In addition to ImageJ and Micro-Manager, you need the following programmes:
+We assume installation of ImageJ in "/usr/local/ImageJ". If you have installed ImageJ using apt, replace this location with "/usr/share/imagej" wherever it appears below.  In addition to ImageJ and Micro-Manager, you need the following programmes:
 
 * svn for obtaining the repository
 * sun-java6-sdk or better/equivalent
