@@ -31,7 +31,7 @@ The source code for a number of Micro-Manager plugins is publicly available [htt
 The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. (The Micro-Manager distribution includes swing-layout-*.*.jar so that you can use the free Netbeans GUI Builder for your plugin.) Here are the steps for Netbeans:
 <ol>
 <li>Install [http://netbeans.org Netbeans].</li>
-<li>Select New > New Project... > Java > Java Class Library</li>
+<li>Select New > New Project... > Java > Java Class Library.</li>
 <li>Name your plugin project and press Finish.</li>
 <li>Under the Projects tab, right-click your plugin project and choose Properties. Then choose Compile > Libraries > Add JAR/Folder.
 <li>Browse to C:\Program Files\Micro-Manager-1.3\plugins\Micro-Manager and choose bsh-2.0b4.jar, commons-math-2.0.jar, MMCoreJ.jar, MMJ_.jar, swing-layout-1.0.4.jar, and swingx-0.9.5.jar.</li>
@@ -44,7 +44,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 <li>Now choose Debug > Debug Project and after Micro-Manager launches, MMStartup.bsh script will load your nascent plugin in the Plugins menu.</li>
 </ol>
 <br>
-For distribution: in the dist folder of your Netbeans project folder, Netbeans will automatically produce a jar every time you build the project. You can copy this jar to the Micro-Manager plugins menu and it will be loaded in the Plugins menu, even in the absence of the MMStartup.bsh script.</li>
+For distribution: in the dist folder of your Netbeans project folder, Netbeans will automatically produce a jar every time you build the project. You can copy this jar to the Micro-Manager plugins menu and it will be loaded in the Plugins menu, even in the absence of the MMStartup.bsh script.
 <br><br>
 
 Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
