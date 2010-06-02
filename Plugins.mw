@@ -7,3 +7,5 @@ In addition, plugins are available from third parties:
 
 * [[Photometrics Camera Control Plugin|Photometrics Camera Control]]
 * [[HCS Plugin|High Content Screening Plugin from 100x Imaging]]
+
+''See also [[Writing plugins for Micro-Manager]]
