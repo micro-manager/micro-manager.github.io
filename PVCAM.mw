@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Interfaces with Roper, Photometrics, and PI cameras that work with the PVCAM driver</td></tr>
 <tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode).  The adpater is currently maintained by Pat Webster (Photometrics) with help from Karl Hoover</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested), for Windows 7 see issue below</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_pvcam_simple.cfg]]</td></tr>
 <tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php Roper/Photometrics PVCAM] or [http://www.princetoninstruments.com/support/software.aspx Princeton Instruments PVCAM]</td></tr>
