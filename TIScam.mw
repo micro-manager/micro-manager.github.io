@@ -33,8 +33,8 @@ Specifically, the files you need are as follows:
 
 So, install "Imaging Control" then search your computer for TIS_UDSHL08_vc9.dll and add the directory where it is added to your 'path'
 
-You do this by going to:
- "My Computer" / Properties /Advanced / Environment Variables / System Variables 
+You do this via:
+ My Computer" / Properties /Advanced / Environment Variables / System Variables 
 
 Edit the variable "Path" to begin with that directory + a semicolon i.e. ";" such as:
  C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32;
