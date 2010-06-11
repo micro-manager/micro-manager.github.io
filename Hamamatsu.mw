@@ -15,7 +15,5 @@ If Micro-Manager reports: "No camera found" while configuring Micro-Manager with
 
 This adapter does not work with all cameras that are DCAM compatible.  All firewire cameras that we tested (AG, ERG2, and R2) work alright under Windows, some models had problems on some Intel Apple Macs (share your successes!).  Currently (MM version 1.2.31), the EM cameras (C9100-12 and C9100-13) work both on Windows and Mac.  Other cameras with the Phoenix card might also work (I am having troubles with one that does not respond to software triggers but otherwise works).  In general, try before you buy, and please provide feedback here about successes and failures.  
 
-''For developers:'' To compile this code you will need the DCAM-SDK from Hamamatsu.  We cannot provide this SDK.  Contact your Hamamatsu dealer if you wish to build this code yourself.
-
 
 --[[User:Nico|Nico]] 12:38, 15 July 2008 (PDT), last updated --[[User:Nico|Nico]] 17:09, 26 August 2009 (UTC)
