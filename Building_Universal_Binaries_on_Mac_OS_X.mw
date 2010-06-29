@@ -1,4 +1,4 @@
-We found the least painful way to build Universal Binaries (32-bit ppc, 32-bit intel, 64-bit intel) to be to build code for each platform individually and then use the lipo tool to combine these libraries into Universal Binaries.  The Micro-Manager repository contains scripts that will execute cross-compilation for the three platforms (see [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/nightlyBuildMMMac.sh nightlyBuildMMac.sh] and [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/buildMMMac.sh buildMMMac.sh]), however, the supporting libraries (currently, boost, libdc1394, libusb, and for 1.4 also libtiff) need to be build for each platform independently.  Below are some notes on how this can be accomplished:
+We found the least painful way to build Universal Binaries (32-bit ppc, 32-bit intel, 64-bit intel) to be to build code for each platform individually and then use the lipo tool to combine these libraries into Universal Binaries.  The Micro-Manager repository contains scripts that will execute cross-compilation for the three platforms (see [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/nightlyBuildMMMac.sh nightlyBuildMMac.sh] and [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/buildMMMac.sh buildMMMac.sh]), however, the supporting libraries (currently, boost, libdc1394, libusb, and for 1.4 also libtiff and zlib) need to be build for each platform independently.  Below are some notes on how this can be accomplished:
 
 '''Cross-compiling Boost for three platforms:'''
 <code><br>
@@ -18,6 +18,34 @@ make clean<br>
 make<br>
 sudo make install<br>
 ./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2"<br>
+make clean<br>
+make<br>
+sudo make install<br>
+</code><br>
+
+'''Cross-compiling zlib for three platforms:'''
+<code><br>
+export CC="gcc-4.0"<br>
+export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
+export CXX="g++-4.0"<br>
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
+./configure --prefix=/usr/local/i386<br>
+make clean<br>
+make<br>
+sudo make install<br>
+export CC="gcc-4.0"<br>
+export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"<br>
+export CXX="g++-4.0"<br>
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"<br>
+./configure --prefix=/usr/local/ppc<br>
+make clean<br>
+make<br>
+sudo make install<br>
+export CC="gcc-4.2"<br>
+export CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
+export CXX="g++-4.2"<br>
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
+./configure --prefix=/usr/local/x86_64<br>
 make clean<br>
 make<br>
 sudo make install<br>
