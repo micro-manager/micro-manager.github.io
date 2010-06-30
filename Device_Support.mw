@@ -32,7 +32,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 === Stages, filter wheels, shutters ===   
 * [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
 * [[ASIStage]] - ASI XY (and Z) stage and CRIF
-* [[Conix]] - Conix Filter Changer
+* [[Conix]] - Conix Filter Changer, XY and Z stage
 * [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
 * [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
