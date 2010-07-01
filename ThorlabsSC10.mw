@@ -27,3 +27,4 @@
 
 
 The [http://www.thorlabs.com/newgrouppage9.cfm?objectGroup_ID=927 Thorlabs SC10 shutter controller]  operates the Thorlabs SH05 beam shutter.  This adapter makes the shutter usable as a normal shutter in Micro-Manager.  On startup, the adapter will switch the controller to mode=1 operation ("normal" operation").  The adapter has an "OnCommand" property that can be used to send commands to the controller (see the SC10 documentation).  Note that the above mentioned serial port settings are the default but that they can be changed through software commands.
+Please note that the Thorlabs TSC001 shutter driver is different from the SC01 and currently not supported.
