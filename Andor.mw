@@ -20,8 +20,11 @@ When you first power on and plug in your camera and Windows tries to recognize i
 Clara support is introduced in SDK v2.84
 
 ==== (Clara Only) DLL file from Andor SDK ====
-For Clara only, in the Micro-Manager 1.3.39 beta release (May 15, 2009), the 32-bit Andor driver file (atmcd32d.dll) is not new enough to support the Clara. 
+For Clara only, in the Micro-Manager 1.3.39 beta release (May 15, 2009), the 32-bit Andor driver file (atmcd32d.dll) is not new enough to support the Clara.
+
 The file version is 2.82, whereas Clara support is introduced in 2.84.  Therefore you need to copy the "atmcd32d.dll" file from your Andor installation to your Micro-Manager directory.  e.g. If you have the Andor SDK, copy and overwrite C:\Program Files\Andor Clara\Drivers\atmcd32d.dll to C:\Program Files\Micro-Manager-1.3\atmcd32d.dll
+
+When trying to create a fresh configuration you may get error code 22, Andor error code 20006 (unable to load cof/rbf file).  This is because your particular Clara needs file version >=2.87.30002.0 because it has newer firmware.
 
 === Linux ===
 Before you proceed, you must have a copy of the Andor's '''Linux''' SDK package already installed since it contains the necessary files to recognize the camera. The Linux Andor Kernel driver must be compiled and installed.  When Micro-Manager is compiled, it looks for "/usr/local/include/atmcdLXd.h" before it compiles and installs the Andor device adapter. 
