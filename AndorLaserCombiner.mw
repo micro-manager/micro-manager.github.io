@@ -49,7 +49,7 @@ Also when installing, ignore the driver requests to restart your computer.
 * Get the Andor SDK. Email your sales representative for it, and state you'll use it for uManager. It's a zip file you should decompress to a folder on  your C: drive. Copy the address (something like C:\Andor\AND_SDK). Now, right click the My Computer icon on the desktop or start menu, click properties and on the advanced tab choose Environment variables. On the system variables list, find "Path" or "PATH" and click edit. DO NOT DELETE ANYTHING. Just add ;C:\YOURFOLDER on the end of the line on the edit window. Of course, remember to change the folder to where you unzipped the SDK. Also, remember to include the semi-colon (;) or you might break something on your windows installation.
 Now, reboot your computer.
 * Get the latest nightly build to run the Andor laser combiner in uManager.
-* When configuring your hardware setup, remember to add the AndorLaserCombiner and AndorLaserCombiner Piezostage (if you have a piezostage). Also, the configuration wizard will ask if you have a multiport unit present. If you have a FRAPPA unit or TIRF setup, you probably do and should set it to "1" (true). If you know you don't have it, set to "0" (false).
+* When configuring your hardware setup, remember to add the AndorLaserCombiner and AndorLaserCombiner Piezostage (if you have a piezostage). Also, the configuration wizard will ask if you have a multiport unit present. If you have a FRAPPA unit or TIRF setup, you do and should set it to "1" (true). Other than those cases you probably don't have it, set it to "0" (false).
 
 == Resources ==
 === Laser Combiner questions ===
