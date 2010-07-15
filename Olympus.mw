@@ -26,7 +26,9 @@
 </td>
 </tr>
 </table>
-<br>
-These serial port settings require all DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) to be in their default position: off (zero).
+
+These serial port settings require all DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) to be in their default position: off (zero).<br><br>
+To get started, first add an Olympus Hub device to your hardware configuration and choose its serial port. Other devices (stage, filter wheel, etc) then communicate to the hardware through the (software) Hub.
+<br><br>
 
 BX61 specific notes: Currently only one filter wheel is supported (connected to FW1 port on the controller).
