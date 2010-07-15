@@ -2,7 +2,8 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Controls [[http://www.qimaging.com/ QImaging]] camera</td></tr>
-<tr><td>'''Author:'''</td><td>Matt Austin (QImaging)</td></tr>
+<tr><td>'''Author:'''</td><td>Matt Austin (QImaging), Jeff Kuhn (Virginia Tech)</td></tr>
+<tr><td>'''Maintainers:'''</td><td>Pat Webster (QImaging), Jeff Kuhn, Arthur Edelstein</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X</td></tr>
 <tr><td>'''Devices:'''</td><td>All monochrome QImaging cameras</td></tr>
