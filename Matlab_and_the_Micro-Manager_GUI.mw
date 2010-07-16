@@ -1,6 +1,6 @@
 You can use Matlab to run and control the Micro-Manager gui and core. Here's how:
 
-1. In Matlab, type
+'''1.''' In Matlab, type
  >> edit classpath.txt
 and add the following lines:
  C:/Program Files/Micro-Manager-1.3/ij.jar
@@ -8,11 +8,11 @@ and add the following lines:
  C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/MMJ_.jar
  C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/bsh-2.0b4.jar
  C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/swingx-0.9.5.jar
-2. Again in Matlab, type
+'''2.''' Again in Matlab, type
  >> edit librarypath.txt
 and add the line:
  C:/Program Files/Micro-Manager-1.3
-3. Restart Matlab. Now type the following at the command prompt:
+'''3.''' Restart Matlab. Now type the following at the command prompt:
  >> cd 'c:/program files/Micro-Manager-1.3'
  >> import org.micromanager.MMStudioMainFrame;
  >> gui = MMStudioMainFrame(false);
