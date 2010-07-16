@@ -13,7 +13,7 @@ Matlab has an extensive Java support which makes things easy, just do the follow
 
 1. Install Micro-Manager in a path without any spaces (for instance: C:\Micro-Manager1.2). 
 
-2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable (Start->Settings->Control Panel->System->Advanced->Environment Variables, make a new 'User variable for Administrator named 'PATH' and set it to the location of Micro-Manager (for instance: C:\Micro-Manager1.2). 
+2. Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable (Start->Settings->Control Panel->System->Advanced->Environment Variables, make a new 'User variable for Administrator named 'PATH' and set it to the location of Micro-Manager (for instance: C:/Program Files/Micro-Manager-1.3). 
 
 3. In Matlab command prompt
  >> edit classpath.txt 
@@ -29,7 +29,7 @@ Add the location of the jar file you just installed (its in the Micro-Manager fo
  >> edit librarypath.txt 
 Add the location of the dll files, for instance:
 
- C:\Micro-Manager1.3
+ C:\Program Files\Micro-Manager-1.3
 
 5. Restart Matlab 
 
