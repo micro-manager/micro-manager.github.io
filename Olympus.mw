@@ -1,7 +1,7 @@
-== Olympus IX81/ BX61 adapter ==
+== Olympus IX81/IX71/BX61/BX51 adapter ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Controls Olympus IX81/ BX61 microscope</td></tr>
+'''Summary:'''</td><td valign="top">Controls Olympus IX81, IX71, BX61, BX51 microscopes</td></tr>
 <tr><td>'''Author:'''</td><td>Jeff Kuhn and Arthur Edelstein, BX61 support added by Shalin Mehta</td></tr>
 <tr><td>'''License:'''</td><td>not Open Source</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X (through serial port)</td></tr>
