@@ -30,9 +30,11 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 </table>
 
 
-When used directly (not via trigger more) the Ardiuno Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
+When used directly (not via trigger mode) the Arduino Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
 
 Troubleshooting tip: In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the Arduino-Switch state to 32 in the device/property browser and than chose Arduino as your shuter and just open/close it in the main MM window. and opening and closing the Arduino-shutter. You should see the built-in LED light changes when you close / open the arduino shutter. 
+
+As of version 1.3.47, the Arduino adapter can also report the digital (0 or 1) and analog (0-1023) state of the analog input pins 0-5 on the Arduino. To do so, add the "Arduino-Input" device in the Hardware Configuration Wizard. You can either have it report all analog pins or only a specific one (you set this with the "Pin" pre-initialization property).  You can also define whether or not the Arduino should use its internal 20 kohm internal pull-up resistor using a pre-initialization property.  If you want to report multiple individual pins, you can add this device multiple times.
 
 David Knecht put up a nice tutorial on how to build a box around the Arduino and use it to control LED illumination on your microscope [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html].
 
