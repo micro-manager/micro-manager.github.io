@@ -48,3 +48,6 @@ To make the library available to your system, place a symbolic link in /usr/loca
 <code>sudo ln -s $ACE_ROOT/ace /usr/local/include/ace</code>
 
 Copy libACE.a to /usr/local/lib
+
+===External links===
+[http://mackeeper.zeobit.com/mac-photo-recovery mac hard drive recovery]
