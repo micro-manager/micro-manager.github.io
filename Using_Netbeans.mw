@@ -15,7 +15,7 @@ Make sure the '''Java Platform''' matches the version of Micro-Manager you are u
 <li>Select '''Run''' under '''Categories'''. For the <default config>, set the following parameters: <ul><li>'''Main Class:'''  <code>ij.ImageJ</code></li>
 <li>'''Working Directory:''' <code><your_micromanager_installation_directory></code></li>
 <li>'''VM options:''' <code>-Xmx600M</code>.</li></ul>
-<li>Click '''OK''' and select the menu item '''Debug''' > '''Debug Project (mm)'''.
+<li>Click '''OK''', right-click your project and choose '''Debug'''.
 </li>
 
 If all is well, then Micro-Manager should launch inside ImageJ.
