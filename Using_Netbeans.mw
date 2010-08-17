@@ -18,5 +18,5 @@ Make sure the '''Java Platform''' matches the version of Micro-Manager you are u
 <li>Click '''OK''', right-click your project and choose '''Debug'''.
 </li>
 
-If all is well, then Micro-Manager should launch inside ImageJ.
+If the gods are smiling, then Micro-Manager should launch inside ImageJ.
 </ol>
