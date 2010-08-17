@@ -6,11 +6,12 @@ The following instructions for debugging Micro-Manager with Netbeans are intende
 <li>Download, install and run [http://netbeans.org Netbeans].</li>
 <li>Select '''File'''...'''Open Project...''', and choose <your_micromanager_code_root>/IDE_projects/NetBeansProjects/mm</li>
 <li>Right-click the '''mm''' project (probably at left) and select '''Properties'''.</li>
-<li>Select '''Run''' under '''Categories'''</li>
-<li>Click "New..." and create a configuration named '''imagej'''.</li>
-<li>Set the following parameters: <ul><li>'''Main Class:'''  <code>ij.ImageJ</code></li>
+<li>Select '''Run''' under '''Categories'''
+<br>For the <default config>, set the following parameters: <ul><li>'''Main Class:'''  <code>ij.ImageJ</code></li>
 <li>'''Working Directory:''' <code><your_micromanager_installation_directory></code></li>
 <li>'''VM options:''' <code>-Xmx600M</code>.</li></ul>
+<li>Select '''Libraries''' under '''Categories'''<br>
+Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 32-bit JDK 1.5).</li>
 <li>Click '''OK''' and select the menu item '''Debug'''...'''Debug Project (mm)'''.
 </li>
 
