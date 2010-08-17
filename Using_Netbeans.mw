@@ -6,7 +6,7 @@ The following instructions for debugging Micro-Manager with Netbeans are intende
 <li>Download, install and run [http://netbeans.org Netbeans].</li>
 <li>Choose '''File''' > '''New Project...''' >  [Categories] '''Java''' > [Projects] '''Java Project with Existing Sources'''. Press '''Next'''.
 <li>Give your project a name and press '''Next'''.</li>
-<li>Click '''Add Folder''' at right and browse to <code><micromanager-source-directory>/mmstudio/src</code>. Press '''Next'''.
+<li>Click '''Add Folder''' at right and browse to <code><micromanager_source_directory>/mmstudio/src</code>. Press '''Next'''.
 <li>Include all files ('''**'''). Press '''Finish'''.
 <li>Right-click your project in the '''Projects''' tab (probably at left) and select '''Properties'''.</li>
 <li>Select '''Libraries''' under '''Categories'''. Click '''Add Jar/Folder''' and add all jars in <code>3rdpartypublic/classext</code>.<br>
