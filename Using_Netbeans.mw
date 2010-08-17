@@ -2,7 +2,7 @@ The following instructions for debugging Micro-Manager with Netbeans are intende
 
 <ol>
 <li>Download and install Micro-Manager.</li>
-<li>Use [http://subversion.tigris.org/ subversion] to download a copy of the latest Micro-Manager [http://micro-manager.org/downloads.php?object=source source] (1.3 or 1.4) as well as 3rdpartypublic, at [https://valelab.ucsf.edu/svn/3rdpartypublic/ https://valelab.ucsf.edu/svn/3rdpartypublic/].<br>These two directories should reside in the same parent directory, e.g. <code>projects/micromanager/</code> and <code>projects/3rdpartypublic/</li>
+<li>Use [http://subversion.tigris.org/ subversion] to download a copy of the latest Micro-Manager [http://micro-manager.org/downloads.php?object=source source] (1.3 or 1.4) as well as 3rdpartypublic, at [https://valelab.ucsf.edu/svn/3rdpartypublic/ https://valelab.ucsf.edu/svn/3rdpartypublic/].<br>These two directories should reside in the same parent directory, e.g. <code>projects/micromanager/</code> and <code>projects/3rdpartypublic/</code></li>
 <li>Download, install and run [http://netbeans.org Netbeans].</li>
 <li>Choose '''File''' > '''New Project...''' >  [Categories] '''Java''' > [Projects] '''Java Project with Existing Sources'''. Press '''Next'''.
 <li>Give your project a name and press '''Next'''.</li>
