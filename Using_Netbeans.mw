@@ -14,7 +14,7 @@ Click '''Add Jar/Folder''' again and choose <code><your_micromanager_installatio
 Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 32-bit JDK 1.5).</li>
 <li>Select '''Run''' under '''Categories'''. For the <default config>, set the following parameters: <ul><li>'''Main Class:'''  <code>ij.ImageJ</code></li>
 <li>'''Working Directory:''' <code><your_micromanager_installation_directory></code></li>
-<li>'''VM options:''' <code>-Xmx600M</code>.</li></ul>
+<li>'''VM options:''' <code>-d32 -Xmx600M</code> (for 64 bit use <code>-d64 -Xmx3000M)</code>.</li></ul>
 <li>Click '''OK''', sacrifice a goat, and then right-click your project and choose '''Debug'''.
 </li>
 
