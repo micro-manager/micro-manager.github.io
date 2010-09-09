@@ -11,7 +11,7 @@
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
 {| cellspacing="2" border="0" cellpadding=3
-|-AnswerTimeout||5000
+|AnswerTimeoutMs||5000
 |-
 |BaudRate||9600
 |-
