@@ -40,7 +40,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
 * [[MCL-MicroDrive]] - Mad City Labs MicroDrive
 * [[MCL-NanoDrive]] - Mad City Labs NanoDrive
-* [[MT20]] - Olympus MT20 illuminatino source (Lamp/shutter/filter wheel)
+* [[MT20]] - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
 * [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
 * [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
 * [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
