@@ -21,3 +21,6 @@ Although there are easier to use terminal programs in existance, Windows comes s
 9. From the Menu, select File>Properties.  Click on the 'Settings' tab and the ASCII Setup button.  In that dialog, check 'Send line ends with line feeds', Echo typed characters locally', and 'Append line feeds to incoming line ends'.  Click 'OK', and 'OK'.  Save the settings you just created (File>Save).
 
 10.  You can now open and close the COM port connection using the little phone icon in the menu bar, so that you can re-use this connection right away the next time you startup Hyperterminal.
+
+==External links==
+[http://rozum.info rozum]
