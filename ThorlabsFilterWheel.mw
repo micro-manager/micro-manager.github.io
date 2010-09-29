@@ -31,3 +31,6 @@ This adapter controls the Thorlabs FilterWheel FW102B and FW212B.  A manual can 
 If you are finding that your filter wheel is not moving it may be due to the carriage return being incorrect.  This can be checked using a serial port monitor.  It should be "\r" (0D in Hex) not "\n\n" (0A 0A in Hex).  If this is the case replace the dll file for the ThorLabs Filter wheel with this one:
 
 http://valelab.ucsf.edu/~MM/mmgr_dal_ThorlabsFilterWheel.dll
+
+==External links==
+[http://mackeeper.zeobit.com/clean-my-mac mac scan]
