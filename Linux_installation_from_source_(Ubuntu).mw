@@ -113,6 +113,3 @@ $(java-config --java) \
 
 You could run the Micro-Manager in one go by issuing:
   imagej -run "Micro-Manager Studio"
-
-==External links==
-[http://mackeeper.zeobit.com/mac-backup how to backup mac]
