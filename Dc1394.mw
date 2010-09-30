@@ -19,7 +19,7 @@ Color images (like those from the Apple iSight) are converted to gray-scale imag
 
 The adapter also implements a software integration feature, which can be useful to improve signal/noise for noisy 8-bit cameras (when integrating the adapter will return a 16-bit image resulting from adding the specified number of consecutive 8-bit images).
 
-The adapter was developed on Mac OS X but was reported to work on linux as well.  libdc1394 is currently being ported to Windows [http://damien.douxchamps.net/ieee1394/libdc1394/news.php], so one day we might implement this adapter on Windows as well. 
+The adapter was developed on Mac OS X but was reported to work on linux as well (however, check out the [[Building Firewire camera support on Linux]] build instructions).  libdc1394 is currently being ported to Windows [http://damien.douxchamps.net/ieee1394/libdc1394/news.php], so one day we might implement this adapter on Windows as well. 
 
 There is a lot of work that can be done on the adapter to make it auto-detect capabilities of different cameras, switch on and off auto-capabilities of the cameras, etc..  However, it seems useful in many cases already.
 
