@@ -58,6 +58,3 @@ The following simple script will snap an image and display it in matlab:
 >> img2=reshape(img2,[height,width]);
 
 >> imshow(img2);
-
-==External links==
-[http://indiebands.ws indie bands]
