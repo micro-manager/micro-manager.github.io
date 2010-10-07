@@ -31,7 +31,7 @@ Make sure that you ''understand'' the Analog and Digital outputs on the Velleman
 
 
 The Velleman extended USB interface board has two types of outputs (See Figure above). The output male pins on the right are Analog outputs which will drive the TTL signals. There are digital output male pins on the left of the board. The first task at hand is to connect these pins to the correct pins on the DB-25 connector. It is best to use a 25 conductor ribbon wire and a DB25 Male IDC Crimp Connector for this job. 
-Once you have the ribbon connector attached to the DB-25 male connector, tear out the individual wires depending on which channels on the AOTF, you want to connect. For instance, if you have two laser lines, one on channel 1 and the other on channel 2, you want to connect pins 12, 25 and 13 for running and controlling Channel 1 and 24, 11 and 23 for channel 2. Let us take these settings as an example and try to set the connections up. Here is a reference figure for understanding the connections between the ribbon cable and the Digital/ Analog Female pins
+Once you have the ribbon connector attached to the DB-25 male connector, tear out the individual wires depending on which channels on the AOTF, you want to connect. For instance, if you have two laser lines, one on channel 1 and the other on channel 2, you want to connect pins 12, 25 and 13 for running and controlling Channel 1 and 24, 11 and 23 for channel 2. Let us take these settings as an example and try to set the connections up. Here is a reference figure for understanding the connections between the ribbon cable and the Digital/ Analog Female pins.
 
 
 [[Image:Circuit_Connection.jpg]]
