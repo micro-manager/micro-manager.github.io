@@ -37,7 +37,7 @@ Once you have the ribbon connector attached to the DB-25 male connector, tear ou
 [[Image:Circuit_Connection.jpg]]
 
 
-== Setting up the analog Connections ==
+== Setting up the Analog Connections ==
 
 Connect the female pins for the sockets on the Velleman board (they come with the board) on one of the analog sockets. Let’s say, you connect it on the first socket ( DA1-DA4 ). This will provide TTL inputs to the two channels. As mentioned earlier, the TTL input pins are 13 and 24. Solder two of the wires from the DA1-DA4 (its your choice, given how far apart you want the wires to be) with ribbon cable wire 1 and wire 4 respectively (See Figure). Also, for grounding, solder the blue wire (GND) with wire number 3 on the ribbon cable. Both the Analog connections and the ground for Channel 1 are set up now.
 
