@@ -3,4 +3,36 @@ The Aurora laser launch from Prairie[http://www.prairie-technologies.com/product
 
 == Before you Get started: ==
 
-There are a few things worth knowing about the integration before you get started. The Laser launch is designed to interface with other devices using a DB-25 pin connector at its back. You should find out the pins that connect to individual laser lines and control them (See Figure). The DB-25 pin will not connect to a parallel port on your computer directly. You will need an extended USB-interface board like the Velleman VM 140, which will interface with the AOTF and your computer. Thankfully, there is a Micro-Manager adapter for the Velleman interface boards (K8061) that makes life easier for this integration.
+There are a few things worth knowing about the integration before you get started. The Laser launch is designed to interface with other devices using a Gooch and Housego RF driver with DB-25 pin connector [http://www.goochandhousego.com/sites/default/files/documents/56A19539C.pdf]. You should find out the pins that connect to individual laser lines and control them as shown in the pin diagram below. The DB-25 pin will not connect to a parallel port on your computer directly. ''Never attempt to do that.'' You will need an extended USB-interface board like the Velleman VM 140[http://www.vellemanusa.com/us/enu/product/view/?id=523886], which will interface with the AOTF and your computer. Thankfully, there is a Micro-Manager adapter available for the [[Velleman_K8061]] that makes life easier for this integration.
+[[Image:DB-25Pin_Diagram.jpg‎]]
+
+
+
+== What will you need to get started ==
+
+
+1. The Velleman VM 140 extended USB interface board and Female sockets (provided with VM 140)
+
+2. DB25 Male IDC Crimp Connector 
+
+3. 25 Conductor Flat Ribbon Cable
+
+4. Soldering station, Insulation tape
+
+
+== Hardware Integration ==
+
+As you can see from the diagram of the DB-25 connector pin, there are three types of signals sent to the device through it. There is a TTL blanking signal, a positive input signal and a negative input signal. Three types of signals for each channel and one ground signal make this pin control up to 8 channels. 
+The job of the TTL blanking signal is to turn a particular channel on or off. The positive input channel can control the voltage being sent to a channel (0-10 V). Please note here that for the Prairie Aurora laser launch, we only need a maximum voltage of 5 volts. The negative input channel can serve as a Ground connector for a channel. However, you may also use the master Ground at pin #1 for grounding purposes
+Make sure that you ''understand'' the Analog and Digital outputs on the Velleman board before you proceed. For your reference, use the figure of the board below to attach cables correctly.
+
+
+[[Image:Velleman_VM140_Board.jpg]]
+
+
+The Velleman extended USB interface board has two types of outputs (See Figure above). The output male pins on the right are Analog outputs which will drive the TTL signals. There are digital output male pins on the left of the board. The first task at hand is to connect these pins to the correct pins on the DB-25 connector. It is best to use a 25 conductor ribbon wire and a DB25 Male IDC Crimp Connector for this job. 
+Once you have the ribbon connector attached to the DB-25 male connector, tear out the individual wires depending on which channels on the AOTF, you want to connect. For instance, if you have two laser lines, one on channel 1 and the other on channel 2, you want to connect pins 12, 25 and 13 for running and controlling Channel 1 and 24, 11 and 23 for channel 2. Let us take these settings as an example and try to set the connections up.
+
+== Setting up the analog Connections ==
+
+Connect the female pins for the sockets on the Velleman board (they come with the board) on one of the analog sockets. Let’s say, you connect it on the first socket ( DA1-DA4 ). This will provide TTL inputs to the two channels. As mentioned earlier, the TTL input pins are 13 and 24. Solder two of the wires from the DA1-DA4 (its your choice, given how far apart you want the wires to be) with ribbon cable wire 1 and wire 4 respectively (See Figure). Also, for grounding, solder the blue wire (GND) with wire number 3 on the ribbon cable. Both the Analog connections and the ground for Channel 1 are set up now.
