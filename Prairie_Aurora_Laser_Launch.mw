@@ -50,7 +50,9 @@ Connect the USB cable between the Velleman board and your computer. Connect an u
 
 If you already have a working configuration file, make a copy of it. When you open Micro-Manager, load your working configuration file (remember, we have a backup just in case things go wrong). Once everything loads, go to Hardware Configuration Wizard and modify the existing configuration. In Step 2 of 9, when you are to select ports the Velleman K8061 port should appear (along with any other port such as COM). Check it and move to the next step. 
 In the next step (3 of 9) you will be asked to select devices. Select the K-8061 Hub. Now select K-8061-DAC. If you are using two channels, as in the case of this example, select another K-8061-DAC and give it a different name ( For the sake of simplicity, you may call these two DACs, K-8061-DAC-Laser Line1 and K-8061-DAC-Laser Line2.).
-In Step 4 of 9, you will be required to set up the pre-initialization settings for the selected devices. Click on the value boxes and set up the values as follows:
+In Step 4 of 9, you will be required to set up the pre-initialization settings for the selected devices. Click on the value boxes in the third column and set up the values as follows:
 
 
 [[Image:Device_Property.jpg]]
+
+After this step just go through the next steps as directed and finish the setup by testing and saving the file. Make sure that you save this file with a different name. Now you are all set to use your Prairie Aurora laser launch with Micro-Manager on your computer.
