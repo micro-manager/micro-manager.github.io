@@ -52,10 +52,5 @@ If you already have a working configuration file, make a copy of it. When you op
 In the next step (3 of 9) you will be asked to select devices. Select the K-8061 Hub. Now select K-8061-DAC. If you are using two channels, as in the case of this example, select another K-8061-DAC and give it a different name ( For the sake of simplicity, you may call these two DACs, K-8061-DAC-Laser Line1 and K-8061-DAC-Laser Line2.).
 In Step 4 of 9, you will be required to set up the pre-initialization settings for the selected devices. Click on the value boxes and set up the values as follows:
 
-'''Device	                   Property	Value
-'''K8061-Hub	            Logic	Normal
-K8061-Hub	            Port	Velleman-K8061
-K8061-DAC-Laser1	    Channel	'''1'''
-K8061-DAC-Laser1	    Max Volt	'''5'''
-K8061-DAC-Laser2	    Channel	'''1'''
-K8061-DAC-Laser2	    Max Volt	'''5'''
+
+[[Image:Device_Property.jpg]]
