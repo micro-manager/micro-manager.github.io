@@ -1,17 +1,18 @@
 This page will soon contain documentation for the file formats of Micro-Manager image data sets, and a description of the Metadata system.
 
-==1.4 (subject to change)==
+==1.4 (MetadataVersion 10, subject to change)==
 
 The metadata.txt file contains a [http://json.org JSON] key-value map. The first key will be "Summary":
 
 <pre>
 	"Summary": {
 		"Image-Height": "512",
-		"Acquisition-Frames": "15",
-		"Acquisition-Slices": "1",
+		"MetadataVersion": "10",
+		"Acquisition-Frames": "4",
+		"Acquisition-Slices": "3",
 		"Image-Width": "512",
 		"Acquisition-Channels": "3",
-		"Acquisition-Positions": "5",
+		"Acquisition-Positions": "3",
 		"Image-PixelType": "GRAY8"
 	},
 </pre>
@@ -117,7 +118,6 @@ Following this are a series of "FrameKey" key-value pairs, in the order in which
 
 </pre>
 In addition, these FrameKeys are also stored as metadata in the image tiff files.
-
 
 ==1.3 (MetadataVersion 8)==
 
