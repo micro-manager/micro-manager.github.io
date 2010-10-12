@@ -29,7 +29,7 @@ Following this are a series of "FrameKey" key-value pairs, in the order in which
         "Acquisition-FrameIndex": "0",
         "Acquisition-PixelSizeUm": "1.0000",
         "Acquisition-PositionIndex": "0",
-        "Acquisition-PositionName": "Pos0"
+        "Acquisition-PositionName": "Pos0",
         "Acquisition-SliceIndex": "0",
         "Acquisition-SlicePosition": "0.0000",
         "Acquisition-Source": "Camera",
@@ -112,9 +112,8 @@ Following this are a series of "FrameKey" key-value pairs, in the order in which
         "XY-TransposeMirrorY": "0",
         "Z-Description": "Demo stage driver",
         "Z-Name": "DStage",
-        "Z-Position": "0.0000",
-
-	},
+        "Z-Position": "0.0000"
+   },
 
 </pre>
 In addition, these FrameKeys are also stored as metadata in the image tiff files.
