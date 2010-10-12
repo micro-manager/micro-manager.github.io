@@ -139,7 +139,7 @@ Here is an example of a FrameKey:
    }
 </pre>
 
-Also in the root map is a "SystemState" key, which provides the state of the system for each image: 
+Also in the root map is a "SystemState" key (not found in later versions of Micro-Manager), which provides the state of the system for each image: 
 
 <pre>
  "SystemState": {
