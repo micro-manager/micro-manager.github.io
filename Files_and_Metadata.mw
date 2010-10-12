@@ -119,7 +119,7 @@ Following this are a series of "FrameKey" key-value pairs, in the order in which
 In addition, these FrameKeys are also stored as metadata in the image tiff files.
 
 
-==1.3==
+==1.3 (MetadataVersion 8)==
 
 The metadata.txt file contains a JSON key-value map. Keys are generally in random order. Most keys in this map are "FrameKey-(Frame)-(Channel)-(Slice)" for each image.
 
