@@ -1,8 +1,127 @@
 This page will soon contain documentation for the file formats of Micro-Manager image data sets, and a description of the Metadata system.
 
+==1.4 (subject to change)==
+
+The metadata.txt file contains a [http://json.org JSON] key-value map. The first key will be "Summary":
+
+<pre>
+	"Summary": {
+		"Image-Height": "512",
+		"Acquisition-Frames": "15",
+		"Acquisition-Slices": "1",
+		"Image-Width": "512",
+		"Acquisition-Channels": "3",
+		"Acquisition-Positions": "5",
+		"Image-PixelType": "GRAY8"
+	},
+</pre>
+
+(Many more keys should be added to this Summary.)
+
+Following this are a series of "FrameKey" key-value pairs, in the order in which they were acquired (and roughly in the order they are displayed). Each FrameKey contains a number of Acquisition and Image keys, as well as all properties of the System when each image was acquired (sorted here for clarity):
+<pre>
+"FrameKey-Pos0-0-Cy5-0": {
+	"Acquisition-ChannelIndex": "0",
+        "Acquisition-ChannelName": "Cy5",
+        "Acquisition-ExposureMs": "10.0000",
+        "Acquisition-FileName": "Pos0/img_000000000_Cy5_000.tif",
+        "Acquisition-FrameIndex": "0",
+        "Acquisition-PixelSizeUm": "1.0000",
+        "Acquisition-PositionIndex": "0",
+        "Acquisition-PositionName": "Pos0"
+        "Acquisition-SliceIndex": "0",
+        "Acquisition-SlicePosition": "0.0000",
+        "Acquisition-Source": "Camera",
+        "Acquisition-TimeMs": "0.0017",
+        "Acquisition-XYRequestedXPosition": "-0.0000",
+        "Acquisition-XYRequestedYPosition": "-0.0000",
+        "Acquisition-ZPositionUm": "0.0000",
+        "Autofocus-Description": "Demo auto-focus adapter",
+        "Autofocus-Name": "DAutoFocus",
+        "Camera-Binning": "1",
+        "Camera-BitDepth": "8",
+        "Camera-CameraID": "V1.0",
+        "Camera-CameraName": "DemoCamera-MultiMode",
+        "Camera-CCDTemperature": "0.0000",
+        "Camera-Description": "Demo Camera Device Adapter",
+        "Camera-ErrorSimulation": "0",
+        "Camera-Exposure": "10.00",
+        "Camera-Gain": "0",
+        "Camera-Name": "DCam",
+        "Camera-Offset": "0",
+        "Camera-OnCameraCCDXSize": "512",
+        "Camera-OnCameraCCDYSize": "512",
+        "Camera-PixelType": "8bit",
+        "Camera-PropertyRefreshSimulation": "0",
+        "Camera-ReadoutTime": "0.0000",
+        "Camera-ScanMode": "1",
+        "Camera-TestProperty1": "0.0000",
+        "Camera-TestProperty2": "0.0000",
+        "Camera-TestProperty3": "0.0000",
+        "Camera-TestProperty4": "0.0000",
+        "Camera-TransposeCorrection": "0",
+        "Camera-TransposeMirrorX": "0",
+        "Camera-TransposeMirrorY": "0",
+        "Camera-TransposeXY": "0",
+        "Core-AutoFocus": "Autofocus",
+        "Core-AutoShutter": "0",
+        "Core-Camera": "Camera",
+        "Core-ChannelGroup": "Channel",
+        "Core-Focus": "Z",
+        "Core-ImageProcessor": "",
+        "Core-Initialize": "1",
+        "Core-Shutter": "Shutter",
+        "Core-SLM": "",
+        "Core-TimeoutMs": "5000",
+        "Core-XYStage": "XY",
+        "Dichroic-ClosedPosition": "0",
+        "Dichroic-Description": "Demo filter wheel driver",
+        "Dichroic-Label": "400DCLP",
+        "Dichroic-Name": "DWheel",
+        "Dichroic-State": "0",
+        "Emission-ClosedPosition": "0",
+        "Emission-Description": "Demo filter wheel driver",
+        "Emission-Label": "Chroma-HQ700",
+        "Emission-Name": "DWheel",
+        "Emission-State": "0",
+        "Excitation-ClosedPosition": "0",
+        "Excitation-Description": "Demo filter wheel driver",
+        "Excitation-Label": "Chroma-HQ570",
+        "Excitation-Name": "DWheel",
+        "Excitation-State": "0",
+        "Filename": "Pos0/img_000000000_Cy5_000.tif",
+        "Image-Height": "512",
+        "Image-PixelType": "GRAY8",
+        "Image-Width": "512",
+        "Objective-Description": "Demo objective turret driver",
+        "Objective-Label": "Nikon 10X S Fluor",
+        "Objective-Name": "DObjective",
+        "Objective-State": "1",
+        "Path-Description": "Demo light-path driver",
+        "Path-Label": "State-0",
+        "Path-Name": "DLightPath",
+        "Path-State": "0",
+        "Shutter-Description": "Demo shutter driver",
+        "Shutter-Name": "DShutter",
+        "Shutter-State": "0",
+        "UUID": "7d381986-35c5-4d88-af98-73ec6234a619",
+        "XY-Description": "Demo XY stage driver",
+        "XY-Name": "DXYStage",
+        "XY-TransposeMirrorX": "0",
+        "XY-TransposeMirrorY": "0",
+        "Z-Description": "Demo stage driver",
+        "Z-Name": "DStage",
+        "Z-Position": "0.0000",
+
+	},
+
+</pre>
+In addition, these FrameKeys are also stored as metadata in the image tiff files.
+
+
 ==1.3==
 
-The metadata.txt file contains a [http://json.org JSON] key-value map. Most keys in this map are "FrameKey-(Frame)-(Channel)-(Slice)" for each image.
+The metadata.txt file contains a JSON key-value map. Keys are generally in random order. Most keys in this map are "FrameKey-(Frame)-(Channel)-(Slice)" for each image.
 
 Here is an example of a FrameKey:
 
