@@ -1,1 +1,151 @@
 This page will soon contain documentation for the file formats of Micro-Manager image data sets, and a description of the Metadata system.
+
+==1.3==
+
+The metadata.txt file contains a [http://json.org JSON] key-value map. Most keys in this map are "FrameKey-(Frame)-(Channel)-(Slice)" for each image.
+
+Here is an example of a FrameKey:
+
+<pre>
+   "FrameKey-3-1-1": {
+      "Exposure-ms": "10.0",
+      "Time": "Tue Oct 12 09:38:26 PDT 2010",
+      "ElapsedTime-ms": 474,
+      "Slice": 1,
+      "Channel": "DAPI",
+      "FileName": "img_000000003_DAPI_001.tif",
+      "Y-um": "-0.0",
+      "X-um": "-0.0",
+      "Z-um": "0.0",
+      "Frame": 3
+   }
+</pre>
+
+Also in the root map is a "SystemState" key, which provides the state of the system for each image: 
+
+<pre>
+ "SystemState": {
+      "FrameKey-3-1-1": {
+         "Camera-TransposeMirrorX": "0",
+         "Core-AutoFocus": "Autofocus",
+         "Camera-Name": "DCam",
+         "Objective-Label": "Nikon 10X S Fluor",
+         "Dichroic-State": "0",
+         "Dichroic-Label": "400DCLP",
+         "Dichroic-Name": "DWheel",
+         "Camera-ErrorSimulation": "0",
+         "Camera-ReadoutTime": "0.0000",
+         "Camera-TestProperty3": "3.0470",
+         "Camera-TransposeCorrection": "0",
+         "Autofocus-Name": "DAutoFocus",
+         "XY-Description": "Demo XY stage driver",
+         "Core-Focus": "Z",
+         "Camera-Gain": "0",
+         "Objective-Name": "DObjective",
+         "Core-TimeoutMs": "5000",
+         "Camera-Offset": "0",
+         "Emission-ClosedPosition": "0",
+         "Core-XYStage": "XY",
+         "Camera-TestProperty4": "4.6789",
+         "Emission-Name": "DWheel",
+         "Core-ChannelGroup": "Channel",
+         "Z-Name": "DStage",
+         "Z-Position": "0.0000",
+         "Excitation-ClosedPosition": "0",
+         "Shutter-Description": "Demo shutter driver",
+         "Z-Description": "Demo stage driver",
+         "Camera-TransposeXY": "0",
+         "Emission-Description": "Demo filter wheel driver",
+         "Core-AutoShutter": "1",
+         "Excitation-Label": "Chroma-D360",
+         "Objective-State": "1",
+         "XY-TransposeMirrorX": "0",
+         "Camera-CameraName": "DemoCamera-MultiMode",
+         "Core-Camera": "Camera",
+         "Excitation-Description": "Demo filter wheel driver",
+         "Objective-Description": "Demo objective turret driver",
+         "Camera-TestProperty1": "1.5328",
+         "Excitation-State": "0",
+         "Shutter-Name": "DShutter",
+         "Camera-TransposeMirrorY": "0",
+         "Camera-CameraID": "V1.0",
+         "Path-Name": "DLightPath",
+         "Camera-Binning": "1",
+         "Camera-ScanMode": "1",
+         "Camera-Description": "Demo Camera Device Adapter",
+         "Core-Shutter": "Shutter",
+         "Autofocus-Description": "Demo auto-focus adapter",
+         "Shutter-State": "0",
+         "XY-TransposeMirrorY": "0",
+         "Excitation-Name": "DWheel",
+         "Path-Label": "State-0",
+         "Camera-Exposure": "10.00",
+         "Dichroic-ClosedPosition": "0",
+         "Camera-CCDTemperature": "0.0000",
+         "Camera-PixelType": "8bit",
+         "Core-Initialize": "1",
+         "Camera-TestProperty2": "2.2190",
+         "Core-SLM": "",
+         "Core-ImageProcessor": "",
+         "Emission-Label": "Chroma-HQ620",
+         "XY-Name": "DXYStage",
+         "Camera-BitDepth": "8",
+         "Emission-State": "0",
+         "Dichroic-Description": "Demo filter wheel driver",
+         "Path-State": "0",
+         "Path-Description": "Demo light-path driver"
+      },
+</pre>
+
+There is also a "Summary" key mapped to a nested JSON data structure, such as this one:
+
+<pre>
+"Summary": {
+      "z-step_um": "1.0",
+      "Time": "2010-10-12 09:38:25",
+      "Comment": "",
+      "Height": 512,
+      "Date": "2010-10-12",
+      "Channels": 4,
+      "PixelAspect": "1.0",
+      "GUID": "e99541d7b6c27820-32c4303b5f03f7ca",
+      "ChColors": [
+         -16724941,
+         -65485,
+         -16776961,
+         -6749953
+      ],
+      "Width": 512,
+      "IJType": 0,
+      "Interval_ms": 1,
+      "ChNames": [
+         "Cy5",
+         "DAPI",
+         "FITC",
+         "Rhodamine"
+      ],
+      "GridRow": "0",
+      "UserName": "arthur",
+      "Depth": 1,
+      "GridColumn": "0",
+      "ChContrastMax": [
+         22,
+         22,
+         22,
+         22
+      ],
+      "PixelSize_um": "1.0",
+      "Source": "Micro-Manager",
+      "Slices": 2,
+      "MetadataVersion": 8,
+      "ComputerName": "udp011420uds.ucsf.edu",
+      "Frames": 5,
+      "Position": "Pos0",
+      "ChContrastMin": [
+         2,
+         2,
+         2,
+         2
+      ]
+   },
+</pre>
