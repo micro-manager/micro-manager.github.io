@@ -2,6 +2,8 @@
 
 In addition to the [http://micro-manager.org/documentation.php main Micro-Manager manual], we maintain here documentation for those aspects of Micro-Manager that are still in flux and/or rapidly changing.   
 
+* ''[[Files and Metadata]]''
+
 * ''[[Device_Support|Device Adapters]]''
 
 * ''[[Plugins]]''
