@@ -41,6 +41,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start Firewire camera/LED synchronization] - A Micro-Manager plugin by Alex Hodge synchronizing multi-color LED illumination with a Firewire camera
    [[Media:RatiometricImaging_main.bsh]] - Beanshell for ratiometric Imaging (J. Husson).
    [[Media:RatiometricImaging_singleImage.bsh]] - Beanshell for ratiometric Imaging. Takes only one image, can be useful as a control before starting a whole acquisition with main beanshell above (J. Husson).
+[[Image:MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh]] - Beanshell script for acquiring stacks in 3 different channels and at 4 different fields of view. COntributed by Saumya Saurabh[[http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya]]
 
 * ''Building and Coding Micro-Manager (for developers)''
    [[Building Boost on MacOS X]]
