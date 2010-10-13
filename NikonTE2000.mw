@@ -6,7 +6,23 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
 <tr><td valign='top'>'''Devices:'''</td><td>Hub (TE2000), NosePiece, Shutter, Epi-Shutter, Uniblitz-Shutter, Optical Path, Analyzer, FilterBlock, Lamp, Focus (z-drive), PerfectFocus</td></tr>
-<tr><td width=20%>'''Example Config File:'''</td><td></td></tr>
+<tr><td valign=top>'''Serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3
+|-AnswerTimeout||500
+|-
+|BaudRate||9600
+|-
+|DelayBetweenCharsMs||0
+|-
+|Handshaking||Off
+|-
+|Parity||None
+|-
+|StopBits||1
+|}
+</tr>
+
 </table>
 
 This adapter communicates to all the devices in the TE2000 through the hub device.  Thus, to use any of these devices, you will need to first define the hub device (and the serial port behind which the hub lives).  
