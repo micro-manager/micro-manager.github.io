@@ -20,7 +20,7 @@ In addition, note that:
 
 == General remarks (Gentoo) ==
 
-The ImagaJ ebuild can be downloaded from http://bugs.gentoo.org/112275. Digest and install the ebuild (see http://linuxreviews.org/gentoo/ebuilds/).
+The ImageJ ebuild can be downloaded from http://bugs.gentoo.org/112275. Digest and install the ebuild (see http://linuxreviews.org/gentoo/ebuilds/).
 
 == Steps ==
 
