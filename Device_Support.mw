@@ -51,6 +51,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Thorlabs FilterWheel]] - Thorlabs Filter Wheel
 * [[Thorlabs SC10]] - Thorlabs shutter controller
 * [[Vincent]] - Vincent Uniblitz controllers
+* [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+
 
 === Communication ports, TTLs, DAQs, etc. ===
 * [[Arduino]] - Open Source Programmable Digital/Analogue IO board
