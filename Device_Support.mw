@@ -76,6 +76,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MeastroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
 * [[Spectral LMM5]] - Spectral laser line controller
+* [[Simple Autofocus]] - C++ Image-based autofocus controller
 * [[Yokogawa]] - Yokogawa CSU22
 * [[Yokogawa CSUX]] - Yokogawa CSUX, all models
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
