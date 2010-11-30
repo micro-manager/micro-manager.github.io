@@ -18,6 +18,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
+* [[Jenoptic]] - Jenoptik cameras (ProGres series)
 * [[Leica]] - Leica DFC (through BaumerOptronic FXLib)
 * [[PVCAM]] - Roper/Photometrics cameras
 * [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
