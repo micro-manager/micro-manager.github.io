@@ -29,6 +29,6 @@ SearchAlgorithm: Select the algorithm for finding the best sharpness measure. Th
 
 StandardDeviation/Mean: This is another popular measure of ImageSharpness which is much cheaper to calculate than the SharpnessScore. Usually SharpnessScore and StandardDeviation/Mean agree  very well.
 
-SharpnessScore: This is calculated per image-based autofocus described by Pakpoom Subsoontorn & Hernan Garcia, BUT the image is first normalized by the mean. This reduces sensativity to photo-bleaching quite a lot.
+SharpnessScore: This is calculated per image-based autofocus described by Pakpoom Subsoontorn & Hernan Garcia, however, the image is first normalized by the mean. This greatly reduces effects of photo-bleaching on the focus score.
 
 If debug log is ON, you can also see the dynamic range of the normalized image. This is also very strongly dependent on the focus.
