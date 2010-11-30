@@ -4,7 +4,7 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.coherent.com/Lasers/index.cfm?fuseaction=show.page&ID=1007 Coherent Cube Laser]</td></tr>
-<tr><td>'''Since Version:'''</td><td>Future</td></tr>
+<tr><td>'''Since Version:'''</td><td>1.3.45 20100309</td></tr>
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
 {| cellspacing="2" border="0" cellpadding=3
