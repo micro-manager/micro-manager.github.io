@@ -1,6 +1,6 @@
 == Leica Camera adapter using Baumer Optronics Libraries ==
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for DFC FX cameras from [http://www.leica-microsystems.com]</td></tr>
+'''Summary:'''</td><td>Adapter for DFC FX cameras from http://www.leica-microsystems.com [http://www.leica-microsystems.com]</td></tr>
 <tr><td>'''Author:'''</td><td>Karl Hoover, UCSF</td></tr>
 <tr><td>'''License:'''</td><td>Proprietary</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
@@ -8,7 +8,7 @@
 <tr><td>'''Available since version:'''</td><td>1.3.45 20100218</td>
 </table>
 
-To use a the Leica DFC FX cameras you'll need the Baumer Optronics software including FxLib.dll, this is available from your vendor.
+This adapter will provide higher performance that the TWAIN interface. To use a the Leica DFC FX cameras you'll need the Baumer Optronics software including FxLib.dll, this is available from your vendor.
 
 The code for this adapter was written by Karl Hoover.
 
