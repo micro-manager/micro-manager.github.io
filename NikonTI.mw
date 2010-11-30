@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Adapter for Nikon TI motorized microscopes</td></tr>
-<tr><td>'''Author:'''</td><td>Nico Stuurman and Roy Wollman</td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman and Roy Wollman<br>Karl Hoover (Matlab compatibility & maintenance></td></tr>
 <tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only (uses driver supplied by Nikon)</td></tr>
 <tr><td valign='top'>'''Devices:'''</td><td>TIScope, NosePiece, Shutter, Epi-Shutter, Optical Path, FilterBlockCassette,  Focus (z-drive), PerfectFocus, XYStage, HalogenLamp, TIRF attachment</td></tr>
