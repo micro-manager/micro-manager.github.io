@@ -1,5 +1,5 @@
 == AutoFocus Manual ==
-The C++ SimpleAutofocus Device Adapter is a higher-performance version of the image-based autofocus function. It builds on the search and sharpness measures in the Java image-based autofocus kindly provided by Pakpoom Subsoontorn & Hernan Garcia. It provides some additional conveniences, for example, the user can over-ride the current acquisition binning and exposure. Multiple search algorithms can be selected. Multiple sharpness metrics are computed.
+The C++ SimpleAutofocus Device Adapter, written by Karl Hoover, is a higher-performance version of the image-based autofocus function. It builds on the search and sharpness measures in the Java image-based autofocus kindly provided by Pakpoom Subsoontorn & Hernan Garcia. It provides some additional conveniences, for example, the user can over-ride the current acquisition binning and exposure. Multiple search algorithms can be selected. Multiple sharpness metrics are computed.
 
 Refer to Pakpoom Subsoontorn's write-up for an explanation of the Threshold and Crop Ratio parameters, as those function exactly as described there.
 
