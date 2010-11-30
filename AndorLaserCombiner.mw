@@ -1,6 +1,6 @@
 <table><tr><td  valign=top >
 '''Summary:'''</td><td>Interfaces with Andor laser combiner</td></tr>
-<tr><td valign=top>'''Author:'''</td><td>Pariksheet Nanda (Andor product support)<br>
+<tr><td valign=top>'''Author:'''</td><td>Karl Hoover, UCSF - device adapter<br>Pariksheet Nanda (Andor product support) this documentation<br>
 Glenn Jolleys is the Andor Laser Combiner Developer</td></tr>
 <tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
 <tr><td  valign=top >'''Platforms:'''</td><td>Windows (No Mac or Linux driver available)</td></tr>
