@@ -43,7 +43,7 @@ Add the location of the dll files, for instance:
 The Micro-Manager API is described here: http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html
 
 
-The following simple script will snap an image and display it in matlab:
+The following simple script will snap an image from an 8-bit camera and display it in matlab:
 
 >> mmc.snapImage();
 
@@ -55,6 +55,6 @@ The following simple script will snap an image and display it in matlab:
 
 >> img2=typecast(img,'uint8');
 
->> img2=reshape(img2,[height,width]);
+>> img2=reshape(img2,[width,height]);
 
 >> imshow(img2);
