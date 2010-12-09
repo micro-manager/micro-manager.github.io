@@ -55,6 +55,6 @@ The following simple script will snap an image from an 8-bit camera and display 
 
 >> img2=typecast(img,'uint8');
 
->> img2=reshape(img2,[width,height]);
+>> img2=reshape(img2,[height,width]);
 
 >> imshow(img2);
