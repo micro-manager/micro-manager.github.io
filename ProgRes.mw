@@ -1,6 +1,6 @@
 == Jenoptik adapter for ProGres series cameras ==
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for ProGres cameras http://www.jenoptik.com/en_home</td></tr>
+'''Summary:'''</td><td>Adapter for ProGres cameras http://www.jenoptik.com/progres</td></tr>
 <tr><td>'''Author:'''</td><td>Jenoptik with help from Karl Hoover, UCSF</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
