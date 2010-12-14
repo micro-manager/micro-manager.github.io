@@ -22,6 +22,8 @@ These beanshell scripts can be run from the '[[Script_Panel_GUI|Script Panel]]' 
 
 [[Media:manualAcq.bsh]] - Executes 5D acquisition, prompting the user to change the filters/dichroics between channel changes
 
+[[Media:acqLC.bsh]] - Example of a complicated MD acquisition including visiting multiple positions as defined in the position list, acquiring time-lapse data in individual channels.
+
 [[Media:multiFastZStackASI.bsh]] - Script used at the ASCB meeting 2008 to synchronize Arduino, camera, AOTF and piezo stage to do fast multi-channel Z-stack acquistion
 
 [[Media:PositionList.bsh]] - Shows how to build a positionList programmatically
