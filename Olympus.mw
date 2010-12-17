@@ -30,5 +30,9 @@
 These serial port settings require all DIP switches on the front of the "Frame Control Unit" (the box connected to the serial cable) to be in their default position: off (zero).<br><br>
 To get started, first add an Olympus Hub device to your hardware configuration and choose its serial port. Other devices (stage, filter wheel, etc) then communicate to the hardware through the (software) Hub.
 <br><br>
+There are two modes of Control: Computer and "Manual + Computer". The former is faster, but disables the manual controls. The latter is slower, but allows you to manually control the turret positions, focus drive, etc.
+<br><br>
+If you are using the Olympus ZDC unit (Z-drift correction), you will need to set two properties: the ObjectiveTypeSetting and the SearchRange (a size in microns). Choose MeasureOffset->Now to fix your current z offset, and then running autofocus will return the focus drive to that offset.
+<br><br>
 
 BX61 specific notes: Currently only one filter wheel is supported (connected to FW1 port on the controller).
