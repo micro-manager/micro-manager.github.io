@@ -17,7 +17,7 @@
 <tr><td>''Mac OS X''</td><td>[http://valelab.ucsf.edu/~nico/Scion/Drivers/sfwdist.pkg.tar.gz 300kB]</td></tr>
 </table>
 
-If you are using Windows 7, please read this [http://valelab.ucsf.edu/~nico/Scion/Drivers/technical_not_2.htm technical note].  You may need to download the [http://valelab.ucsf.edu/~nico/Scion/FireWireDrivers.exe FireWire Drivers]/
+If you are using Windows 7, please read this [http://valelab.ucsf.edu/~nico/Scion/Drivers/technical_note_2.htm technical note].  You may need to download the [http://valelab.ucsf.edu/~nico/Scion/FireWireDrivers.exe FireWire Drivers]/
 
 After installing the drivers, install the shared library for your platform:
 
