@@ -58,7 +58,7 @@ Some of the Micro-Manager users have written adapters that have not (yet) been i
    [[Debugging MM on MacOSX and Unix]] - How to use gdb or Netbeans to debug the Micro-Manager C++ core.
    [[Micro-Manager Coding Style and Conventions]]
    [[Writing plugins for Micro-Manager]]
-   [[(Windows) tools useful for Device Adapter Developers]]]
+   [[(Windows) tools useful for Device Adapter Developers]]
 
 * ''Papers citing and/or acknowledging the use of Micro-Manager''
    [[Papers citing Micro-Manager]] - Add your own paper to the list!
