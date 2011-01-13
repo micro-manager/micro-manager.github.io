@@ -3,7 +3,7 @@ As of this writing, MM is using the Boost 1.40 release. There are reasonably com
 Briefly:
 
 #  Download boost
-#  ./bootstrap.ch, (to build the bjam tool)
+#  ./bootstrap.sh, (to build the bjam tool)
 #  sudo ./bjam install
 
 
