@@ -39,6 +39,8 @@ Installation instructions:
 You can now use the focus drive in Micro-Manager.
 
 == Properties==
+[[Image:Kdv_focus_drive_settings.png]]
+
 The following properties are currently implemented:
 ;StepperSpeed
 :Sets the speed of the focus drive. Various settings are available from 1 revolution per minute (1 rpm) to 2 revolutions per second (2 rps). The default value is 1 rps.
