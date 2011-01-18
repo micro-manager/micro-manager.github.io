@@ -27,6 +27,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Scion]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[Spot]] - Diagnostic Instruments Spot cameras
+* [[TetheredCam]] - Canon and Nikon DSLR cameras
 * [[The Imaging Source]] - The Imaging Source (tested on USB / CCD models thus far)
 * [[Twain]] - Cameras fully implementing Twain Imaging Standard
 * a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
@@ -38,6 +39,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
 * [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
+* [[Kdv]] - kdvelectronics focus drive (z-stage) for Meiji Techno
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
 * [[MCL-MicroDrive]] - Mad City Labs MicroDrive
