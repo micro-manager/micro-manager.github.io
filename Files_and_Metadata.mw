@@ -2,7 +2,7 @@ This page will soon contain documentation for the file formats of Micro-Manager 
 
 ==1.4 (MetadataVersion 10, subject to change)==
 
-The metadata.txt file contains a [http://json.org JSON] key-value map. The first key will be "Summary". Here is an example (object keys sorted for clarity):
+The metadata.txt file contains a [http://json.org JSON] key-value map. This version is supposed to be readable from Micro-Manager 1.3. The first key is "Summary". Here is an example (object keys sorted for clarity):
 
 <pre>
 "Summary": {
