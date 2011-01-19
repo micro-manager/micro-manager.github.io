@@ -2,19 +2,45 @@ This page will soon contain documentation for the file formats of Micro-Manager 
 
 ==1.4 (MetadataVersion 10, subject to change)==
 
-The metadata.txt file contains a [http://json.org JSON] key-value map. The first key will be "Summary":
+The metadata.txt file contains a [http://json.org JSON] key-value map. The first key will be "Summary". Here is an example (object keys sorted for clarity):
 
 <pre>
-	"Summary": {
-		"Image-Height": "512",
-		"MetadataVersion": "10",
-		"Acquisition-Frames": "4",
-		"Acquisition-Slices": "3",
-		"Image-Width": "512",
-		"Acquisition-Channels": "3",
-		"Acquisition-Positions": "3",
-		"Image-PixelType": "GRAY8"
-	},
+"Summary": {
+  "Channels": 3,
+  "ChColors": [-3342592, -13382401, -39220],
+  "ChContrastMax": [-2147483648, -2147483648, -2147483648],
+  "ChContrastMin": [2147483647, 2147483647, 2147483647],
+  "ChNames": ["DAPI", "FITC", "Rhodamine"],
+  "Comment": "",
+  "ComputerName": "udp011420uds.ucsf.edu",
+  "Date": "2011-01-18",
+  "Depth": 1,
+  "Directory": "/Users/arthur/AcquisitionData",
+  "Frames": 7,
+  "GridColumn": 0,
+  "GridRow": 0,
+  "Height": 512,
+  "IJType": 0,
+  "Interval_ms": 0,
+  "KeepShutterOpenChannels": false,
+  "KeepShutterOpenSlices": false,
+  "MetadataVersion": 10,
+  "PixelAspect": 1,
+  "PixelSize_um": 1,
+  "PixelType": "GRAY8",
+  "PositionIndex": 0,
+  "Positions": 2,
+  "Prefix": "Untitled",
+  "Slices": 5,
+  "SlicesFirst": true,
+  "Source": "Micro-Manager",
+  "Time": "2011-01-18 Tue 16:52:41 -0800",
+  "TimeFirst": false,
+  "UserName": "arthur",
+  "UUID": "e47de3d2-8439-4559-9ffb-3368273b2ed5",
+  "Width": 512,
+  "z-step_um": 1,
+},
 </pre>
 
 (Many more keys should be added to this Summary.)
