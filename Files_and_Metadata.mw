@@ -43,7 +43,7 @@ The metadata.txt file contains a [http://json.org JSON] key-value map. This vers
 },
 </pre>
 
-(Many more keys should be added to this Summary.)
+(More keys will likely be added to this Summary.)
 
 Following this are a series of "FrameKey" key-value pairs, in the order in which they were acquired (and roughly in the order they are displayed). Each FrameKey contains a number of Acquisition and Image keys, a "Summary" key (as above) as well as all properties of the System when each image was acquired (sorted here for clarity):
 <pre>
