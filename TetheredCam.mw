@@ -43,9 +43,9 @@ Installation instructions:
 * In the "Set delays for devices without synchronisation capabilities" window: Click on Next.
 * In the "Select devices to synchronize with image acquisition" window: Click on Next.
 * In the "Define position labels for state devices" window: Click on Next.
-* In the "Save configuration" window: Click Save and test the new configuration. Click on Exit.
+* In the "Save configuration" window: Click "Save and test the new configuration". Click on Exit.
 
-You can now use the camera in Micro-Manager. 
+You can now use the camera in Micro-Manager.
 
 == Properties==
 [[Image:TetheredCam_settings.png]]
