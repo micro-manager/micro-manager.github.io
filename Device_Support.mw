@@ -77,6 +77,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[MeastroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
+* [[Autofocus_Device_Adapter|SimpleAutofocus]] - Image-based autofocus software "device".
 * [[Spectral LMM5]] - Spectral laser line controller
 * [[Yokogawa]] - Yokogawa CSU22
 * [[Yokogawa CSUX]] - Yokogawa CSUX, all models
