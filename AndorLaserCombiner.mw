@@ -9,7 +9,38 @@ Glenn Jolleys is the Andor Laser Combiner Developer</td></tr>
 
 ----
 
-== Andor Drivers (only required for non-Andor computers) ==
+
+== Getting Started ==
+* The Andor Laser Combiner SDK, and consequently µManager which depends on it, can control the following models:
+*# LC-401
+*# LC-501
+*# LC-601
+* These models are  '''''not''''' currently supported:
+*# LC-103 ([[#Laser Combiner questions|Request Andor]] if you want this supported)
+*# External laser control via PCUV-101 (You should investigate using the NEOS driver instead)
+* You need to download a copy of the Andor Laser Combiner SDK.  It is not publicly available.  [[#Laser Combiner questions|Request Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
+* This guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If you have a non-Andor computer which doesn't have the necessary drivers see the Appendix to install them and setup COM ports.
+
+
+== Installing the Device Adapter ==
+* The Andor Laser Combiner SDK is in a zip file.  Decompress to a folder on  your C: drive.  Copy the address (something like C:\Andor\AND_SDK). Now, right click the My Computer icon on the desktop or start menu, click properties and on the advanced tab choose Environment variables. On the system variables list, find "Path" or "PATH" and click edit. DO NOT DELETE ANYTHING. Just add ;C:\YOURFOLDER on the end of the line on the edit window. Of course, remember to change the folder to where you unzipped the SDK. Also, remember to include the semi-colon (;) or you might break something on your windows installation.
+Now, reboot your computer.
+
+* Get the latest nightly build to run the Andor laser combiner in uManager.
+
+* When configuring your hardware setup, remember to add the AndorLaserCombiner and AndorLaserCombiner Piezostage (if you have a piezostage). Also, the configuration wizard will ask if you have a multiport unit present. If you have a FRAPPA unit or TIRF setup, you do and should set it to "1" (true). Other than those cases you probably don't have it, set it to "0" (false).
+
+
+== Resources ==
+=== Laser Combiner questions ===
+For contacting Andor product support regarding any questions, use this [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Revolution%C2%AE%20XD Andor Product Support link]
+
+=== Development support ===
+Please liaison with µManager developers to contact the Andor software team
+
+
+== Appendix ==
+=== Installing Andor Drivers (only required for non-Andor computers) ===
 
 NOTE: Andor completes the steps described in this section in their factory.
 If you are setting up an Andor laser combiner on a new computer, only then do you need to follow this document.
@@ -44,18 +75,6 @@ Also when installing, ignore the driver requests to restart your computer.
 #* (Right-click) on My Computer > Manage to invoke the Device Manager
 #* See screenshots below to change COM ports.  By unplugging the USB cable from the front of the Andor combiner we know that Windows has enumerated the COM ports for the lasers from COM 7 to COM 10 (since these port numbers disappear from the Device manager when we unplug the combiner and reappear when we plug it back in) [[Image:AB-1-com-ports.png|frame|center||Step 1:  After restarting Windows with drivers freshly installed, the device manager can list the COM ports of the laser combiner out of order i.e. it orders alphabetically instead of numerically. In this case COM10 should not be made 201, but COM7 would be 201]] [[Image:AB-2-reassign-com-port.png|frame|center||Step 2:  Process of reassigning the COM port from COM 7 to COM 201.  (Right-click) on the port > Properties > Port Settings (tab) > Advanced > change the COM port number]] [[Image:AB-3-reassigned-scan.png|frame|center||Step 3:  After 201-204 have been resassigned, click on scan for hardware changes to refresh the window]] [[Image:AB-4-new-ports.png|frame|center||Step 4:  Result of COM port changes]]
 # (Optional for testing) Now start iQ with your new laser combiner configuration and test
-
-== Installing the Device Adapter ==
-* Get the Andor SDK. Email your sales representative for it, and state you'll use it for uManager. It's a zip file you should decompress to a folder on  your C: drive. Copy the address (something like C:\Andor\AND_SDK). Now, right click the My Computer icon on the desktop or start menu, click properties and on the advanced tab choose Environment variables. On the system variables list, find "Path" or "PATH" and click edit. DO NOT DELETE ANYTHING. Just add ;C:\YOURFOLDER on the end of the line on the edit window. Of course, remember to change the folder to where you unzipped the SDK. Also, remember to include the semi-colon (;) or you might break something on your windows installation.
-Now, reboot your computer.
-* Get the latest nightly build to run the Andor laser combiner in uManager.
-* When configuring your hardware setup, remember to add the AndorLaserCombiner and AndorLaserCombiner Piezostage (if you have a piezostage). Also, the configuration wizard will ask if you have a multiport unit present. If you have a FRAPPA unit or TIRF setup, you do and should set it to "1" (true). Other than those cases you probably don't have it, set it to "0" (false).
-
-== Resources ==
-=== Laser Combiner questions ===
-For contacting Andor product support regarding any questions, see under "Support" for your location - http://www.andor.com/contact_us/default.aspx
-=== Development support ===
-Please liaison with Micro-Manager developers to contact the Andor software team
 
 
 [[User:P.nanda|P.nanda]] 05:03, 14 April 2010 (UTC)
