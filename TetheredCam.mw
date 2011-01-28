@@ -31,7 +31,7 @@ Installation instructions:
 * Go to the [http://www.breezesys.com Breezesys] web site. Verify your camera is supported by [http://www.breezesys.com/PSRemote/index.htm PSRemote] if you have a Canon Powershot, [http://www.breezesys.com/DSLRRemotePro/index.htm DSLRRemote Pro] if you have a Canon DSLR, or [http://www.breezesys.com/NKRemote/index.htm NKRemote] if you have a Nikon DSLR camera.
 * Download, install and configure the program which corresponds to your camera (PSRemote, DSLRRemote, or NKRemote). Click on the "Release" button to take a picture. Check the picture is downloaded to the PC, and displayed in the PSRemote/DSLRRemote/NKRemote main window.
 * If you're planning to use raw image files, please install the [http://en.wikipedia.org/wiki/Windows_Imaging_Component#External_links Windows Imaging Component codec] for your camera's raw image format.
-* With PSRemote, DSLRRemote, or NKRemote still running, start up Micro-Manager 1.4 or later.
+* With PSRemote, DSLRRemote, or NKRemote still running, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
 * In the "Setup COM ports" window: Click on Next.
