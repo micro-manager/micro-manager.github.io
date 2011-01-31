@@ -56,6 +56,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Thorlabs SC10]] - Thorlabs shutter controller
 * [[Vincent]] - Vincent Uniblitz controllers
 * [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+* [[XCite 120PC & Exacte]] - Lumen Dynamics X-Cite 120PC and ''exacte'' adapter
 
 === Communication ports, TTLs, DAQs, etc. ===
 * [[Arduino]] - Open Source Programmable Digital/Analogue IO board
