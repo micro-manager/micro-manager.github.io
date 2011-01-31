@@ -16,6 +16,7 @@ The X-Cite® 120PC Q microscope light source provides rich spectral fluorescence
 
 The X-Cite® ''exacte'' microscope light source employs a DC-powered mercury lamp coupled with Closed-Loop Feedback technology to provide stable fluorescence illumination, for imaging protocols lasting from milliseconds to days. With the [http://www.ldgi-xcite.com/products-radiometer.php X-Cite® Radiometer] or [http://www.ldgi-xcite.com/products-xr2100-xp750.php X-Cite® Optical Power Measurement System], light output can also be calibrated in absolute power units (watts), ensuring truly repeatable fluorescence illumination for imaging experiments.
 
+
 ==Installation==
 
 Add the appropriate X-Cite device via the Hardware Configuration Manager
@@ -35,22 +36,29 @@ When using the Exacte with a Mac download the FTDI drivers for the USB-Serial ad
 
 On windows, ensure that you have installed both the USB and virtual COM port drivers. To do this, follow these steps:
 
-i.      Open Control Panel on your computer.
+         i.      Open Control Panel on your computer.
 
-ii.      Double click the “System” icon.  If you do not see the “System” icon, change your view to Classic View
+        ii.      Double click the “System” icon.  If you do not see the “System” icon, change your view to Classic View
 
-iii.      Select the “Hardware” tab.
+       iii.      Select the “Hardware” tab.
 
-iv.      Click the “Device Manager” button.
+       iv.      Click the “Device Manager” button.
 
-v.      With the X-Cite exacte plugged into your USB port and turned on…
+        v.      With the X-Cite exacte plugged into your USB port and turned on…
 
-vi.      Verify in the “Universal Serial Bus Controllers” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
+       vi.      Verify in the “Universal Serial Bus Controllers” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
 
-vii.      Verify in the “Ports (COM & LPT)” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
+     vii.      Verify in the “Ports (COM & LPT)” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
 
-viii.      If either device has a question mark on the icon, insert your X-Cite exacte CD.
+     viii.      If either device has a question mark on the icon, insert your X-Cite exacte CD.
 
-ix.      Ensure you have administrator privileges, right click on the device and select “Update Driver…”.
+      ix.      Ensure you have administrator privileges, right click on the device and select “Update Driver…”.
 
-x.      Follow the on-screen prompts.
+       x.      Follow the on-screen prompts.
+
+
+==Support==
+
+For questions or issues related to Micro-Manager and this adapter please check the Micro-Manager listserv:
+
+[http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general]
