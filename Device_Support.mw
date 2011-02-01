@@ -17,6 +17,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
+* [[GigE]] - GigE Vision- and GenICam-compliant cameras
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[Jenoptik]] - Jenoptik cameras (ProGres series)
 * [[Leica]] - Leica DFC (through BaumerOptronic FXLib)
