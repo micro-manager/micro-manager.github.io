@@ -12,8 +12,6 @@
 
 '''Example Config File:''' [[Media:GigE-test-config.cfg]]
 
-'''Last edited:'''--[[User:Davidmarshburn|Davidmarshburn]] 21:34, 1 February 2011 (UTC)
-
 
 == About ==
 This adapter should work with any GigE Vision- and GenICam-compliant cameras.  The adapter is based on an SDK from [http://www.jai.com/ JAI, Inc.].
