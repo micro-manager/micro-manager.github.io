@@ -49,7 +49,7 @@ big.jar must be installed and imported into the bsh script.
  
  xystage = mmc.getXYStageDevice();
  
- int[] position = {1,1} // 1 indexed
+ int[] position = {0,0} // 0 indexed in microns.
  mmc.setXYPosition(xystage,position[0],position[1]);
  mmc.waitForDevice(xystage);
  
@@ -61,7 +61,7 @@ big.jar must be installed and imported into the bsh script.
  
  
    // move the stage to the next well
-   position = plate.getNextPosition();
+   position = plate.getNextPosition(); // 0 indexed in mcrons
    mmc.setXYPosition(xystage,position[0],position[1]);
    mmc.waitForDevice(xystage);
  }
