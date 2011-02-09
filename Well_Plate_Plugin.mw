@@ -1,0 +1,14 @@
+== Well Plate Plugin ==
+
+Designed to handle standard SBS well plates from 24, 96, 384 and 1536 wells.
+
+The plugin will calculate the correct coordinates for each well position. You can then iterate through each well starting at the first well. Well A1's center must be at coordinates {0,0}, which is located at the top left.
+
+The plugin will move the stage down or up each column, until the last row, before moving to the next column and reversing direction. The zig-zag path chosen for moving the stage is the fastest path on an Zeiss AxioObserver Z1. 
+
+You can change the starting well, or the ending well to only work on a subregion. However, well A1 still must be at coordinates {0,0}.
+
+
+=== Functions ===
+
+SBSPlate();
