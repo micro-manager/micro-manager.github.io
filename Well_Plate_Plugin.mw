@@ -49,7 +49,7 @@ big.jar must be installed and imported into the bsh script.
  
  xystage = mmc.getXYStageDevice();
  
- int[] position = {0,0}
+ int[] position = {1,1} // 1 indexed
  mmc.setXYPosition(xystage,position[0],position[1]);
  mmc.waitForDevice(xystage);
  
