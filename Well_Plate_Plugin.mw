@@ -2,7 +2,7 @@
 
 Designed to handle standard SBS well plates from 24, 96, 384 and 1536 wells.
 
-The plugin will calculate the correct coordinates for each well position. You can then iterate through each well starting at the first well. Well A1's center must be at coordinates {0,0}, which is located at the top left.
+The plugin will calculate the correct coordinates for each well position. You can then iterate through each well starting at the first well. Well A1's center must be at coordinates {1,1}, which is located at the top left.
 
 The plugin will move the stage down or up each column, until the last row, before moving to the next column and reversing direction. The zig-zag path chosen for moving the stage is the fastest path on an Zeiss AxioObserver Z1. 
 
@@ -22,10 +22,10 @@ big.jar must be installed and imported into the bsh script.
 :Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24, 96, 384, and 1536.
 
 ;void setFirstWell(int x, int y)
-:Changes the starting position from {0,0} to {x,y}. Index is 1 based.
+:Changes the starting position from {1,1} to {x,y}. Index is 1 based.
 
 ;void setLastWell(int x, int y) 
-:Changes the ending position from {0,0} to {x,y}. Index is 1 based.
+:Changes the ending position from {1,1} to {x,y}. Index is 1 based.
 
 ;int[] getWellPosition (int x, int y) 
 :Returns the absolute position of a well compared to from well A1 in microns. Index is 1 based.
