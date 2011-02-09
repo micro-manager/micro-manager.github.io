@@ -19,7 +19,7 @@ big.jar must be installed and imported into the bsh script.
 :Initializes the plugin and uses 96 as the size of the well plate.
 
 ;SBSPlate(int size)
-:Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24,96, 384, and 1536.
+:Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24, 96, 384, and 1536.
 
 ;void setFirstWell(int x, int y)
 :Changes the starting position from {0,0} to {x,y}. Index is 1 based.
@@ -28,7 +28,7 @@ big.jar must be installed and imported into the bsh script.
 :Changes the ending position from {0,0} to {x,y}. Index is 1 based.
 
 ;int[] getWellPosition (int x, int y) ====
-:Returns the relative position from well {0,0} in microns. Index is 1 based.
+:Returns the absolute position of a well compared to from well A1 in microns. Index is 1 based.
 
 ;String getWellLabel(int well) ====
 :Returns the SBS name of the well as a String formatted as letter and number. For example, A01. If you are only using a subregion, then you only need to pass the well number of that subregion, with well 1 being the start of the subregion. The function will calculate the correct SBS label of that subregion based on where that subregion is on the well plate. 
