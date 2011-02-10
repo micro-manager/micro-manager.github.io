@@ -43,7 +43,6 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 
 == Example Micro-Manager BSH Script ==
 
- addClassPath("mmplugins/big.jar");
  import edu.umassmed.big.SBSPlate;
  
  gui.closeAllAcquisitions();
