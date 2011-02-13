@@ -60,7 +60,7 @@ The following properties are currently implemented:
 :Exposure sets the exposure time. Units are ms. Setting the exposure time in Micro-manager requires a properly initialized "ShutterSpeeds" camera property, and DSLRRemote/NKRemote/PSRemote "Exposure mode" set to "Tv" or "Manual".
 :An exposure time of 0 leaves the camera shutter speed unchanged. This allows setting the shutter speed in DSLRRemote/NKRemote/PSRemote instead of in Micro-Manager.
 ;ImageDecoder
-:Specifies the preferred decoder for raw images. If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using [http://www.libraw.org libraw], with [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component] used as fallback. If "ImageDecoder" is set to "Windows", raw images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component], with  [http://www.libraw.org libraw] used as fallback.
+:Specifies the preferred decoder for raw images. If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using [http://www.libraw.org libraw], with [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component] used as fallback. If "ImageDecoder" is set to "Windows", raw images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component], with  [http://www.libraw.org libraw] used as fallback. Allowable values are "Micro-Manager" and "Windows".
 ;KeepOriginals
 :Saves the pictures to disk. Allowable values are 0 and 1. The directory can be chosen in DSLRRemote, NKRemote or PSRemote File->Preferences. The pictures are in the format provided by the camera; typically jpeg or raw.
 ;PixelType
