@@ -55,7 +55,7 @@ The following properties are currently implemented:
 ;Binning
 :Binning groups pixels in both x and y direction. Allowable values are 1, 2, 4, 8.
 ;BitDepth
-:Specifies the bit depth or dynamic range of the pixel. Actual bit depth also depends upon the camera's sensor. Allowable values are "8" and "16".
+:Specifies the bit depth or dynamic range of the pixel. Actual bit depth depends upon the camera's sensor. Allowable values are "8" and "16".
 ;Exposure
 :Exposure sets the exposure time. Units are ms. Setting the exposure time in Micro-manager requires a properly initialized "ShutterSpeeds" camera property, and DSLRRemote/NKRemote/PSRemote "Exposure mode" set to "Tv" or "Manual".
 :An exposure time of 0 leaves the camera shutter speed unchanged. This allows setting the shutter speed in DSLRRemote/NKRemote/PSRemote instead of in Micro-Manager.
