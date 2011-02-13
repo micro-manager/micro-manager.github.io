@@ -82,3 +82,5 @@ The following properties are currently implemented:
 Note many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
 If you wish to automatically load your "Shutter Speeds" settings upon startup, create a Micro-Manager configuration group called "System". In the "System" configuration group, create a preset group called "Startup" which includes "Shutter Speeds". These settings will be applied every time you start up Micro-Manager.
+
+Raw images are decoded using [http://www.libraw.org libraw] if no suitable Windows codec is found.
