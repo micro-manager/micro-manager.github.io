@@ -60,7 +60,9 @@ The following properties are currently implemented:
 :Exposure sets the exposure time. Units are ms. Setting the exposure time in Micro-manager requires a properly initialized "ShutterSpeeds" camera property, and DSLRRemote/NKRemote/PSRemote "Exposure mode" set to "Tv" or "Manual".
 :An exposure time of 0 leaves the camera shutter speed unchanged. This allows setting the shutter speed in DSLRRemote/NKRemote/PSRemote instead of in Micro-Manager.
 ;ImageDecoder
-:Specifies the preferred decoder for raw images. If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using [http://www.libraw.org libraw], with [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component] used as fallback. If "ImageDecoder" is set to "Windows", raw images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component], with  [http://www.libraw.org libraw] used as fallback. Allowable values are "Micro-Manager" and "Windows".
+:Specifies the preferred decoder for raw images. Allowable values are "Micro-Manager" and "Windows".
+:If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. If Micro-Manager's internal decoder is not able to decode the image, [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component] is used as a fallback.
+:If "ImageDecoder" is set to "Windows", raw images are decoded using Windows Imaging Component. If Windows Imaging Component is not able to decode the image, Micro-Manager's internal decoder is used as a fallback. 
 ;KeepOriginals
 :Saves the pictures to disk. Allowable values are 0 and 1. The directory can be chosen in DSLRRemote, NKRemote or PSRemote File->Preferences. The pictures are in the format provided by the camera; typically jpeg or raw.
 ;PixelType
@@ -79,6 +81,6 @@ The following properties are currently implemented:
 :When set, rotates image. Allowable values are 0 and 1.
 
 == Notes ==
-Note many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
+Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
 If you wish to automatically load your "Shutter Speeds" settings upon startup, create a Micro-Manager configuration group called "System". In the "System" configuration group, create a preset group called "Startup" which includes "Shutter Speeds". These settings will be applied every time you start up Micro-Manager.
