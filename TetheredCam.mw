@@ -61,8 +61,8 @@ The following properties are currently implemented:
 :An exposure time of 0 leaves the camera shutter speed unchanged. This allows setting the shutter speed in DSLRRemote/NKRemote/PSRemote instead of in Micro-Manager.
 ;ImageDecoder
 :Specifies the preferred decoder for raw images. Allowable values are "Micro-Manager" and "Windows".
-:If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. If Micro-Manager's internal decoder is not able to decode the image, [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component] is used as a fallback.
-:If "ImageDecoder" is set to "Windows", raw images are decoded using Windows Imaging Component. If Windows Imaging Component is not able to decode the image, Micro-Manager's internal decoder is used as a fallback. 
+:If "ImageDecoder" is set to "Micro-Manager", raw images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. If Micro-Manager's internal decoder is not able to decode the image, Windows Imaging Component is used as a fallback.
+:If "ImageDecoder" is set to "Windows", raw images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component]. If Windows Imaging Component is not able to decode the image, Micro-Manager's internal decoder is used as a fallback. 
 ;KeepOriginals
 :Saves the pictures to disk. Allowable values are 0 and 1. The directory can be chosen in DSLRRemote, NKRemote or PSRemote File->Preferences. The pictures are in the format provided by the camera; typically jpeg or raw.
 ;PixelType
