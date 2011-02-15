@@ -16,11 +16,13 @@ Glenn Jolleys is the Andor Laser Combiner Developer</td></tr>
 *# LC-501
 *# LC-601
 * These models are  '''''not''''' currently supported:
-*# LC-103 ([[#Laser Combiner questions|Request Andor]] if you want this supported)
-*# External laser control via PCUV-101 (You should investigate using the NEOS driver instead)
+*# LC-103
+*#* Use the [[AA AOTF]] driver instead.  There is a an RS-232 connection on the front of the Andor PCU to interface to the AOTF controller.  However, switching lasers wavelengths and power using this method is much slower than using the analog interface.
+*#* If you want proper analog control supported for fastest operation, i.e. using Andor's choice of DAC card, please [[#Laser Combiner questions|request Andor]]
+*# External laser control via PCUV-101
+*#* Use the [[AOTF|NEOS]] driver instead.
 * You need to download a copy of the Andor Laser Combiner SDK.  It is not publicly available.  [[#Laser Combiner questions|Request Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
-* This guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If you have a non-Andor computer which doesn't have the necessary drivers see the Appendix to install them and setup COM ports.
-
+* This guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If you have a non-Andor computer which doesn't have the necessary drivers see the [[#Installing Andor Drivers (only required for non-Andor computers)|appendix]] to install them and setup COM ports.
 
 == Installing the Device Adapter ==
 * The Andor Laser Combiner SDK is in a zip file.  Decompress to a folder on  your C: drive.  Copy the address (something like C:\Andor\AND_SDK). Now, right click the My Computer icon on the desktop or start menu, click properties and on the advanced tab choose Environment variables. On the system variables list, find "Path" or "PATH" and click edit. DO NOT DELETE ANYTHING. Just add ;C:\YOURFOLDER on the end of the line on the edit window. Of course, remember to change the folder to where you unzipped the SDK. Also, remember to include the semi-colon (;) or you might break something on your windows installation.
