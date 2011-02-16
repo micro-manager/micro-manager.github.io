@@ -8,7 +8,7 @@
 <tr><td>'''Available since version:'''</td><td>1.3.45 20100218</td>
 </table>
 
-This device adapter was written by Karl Hoover and will provide higher performance than the TWAIN interface. To use a the Leica DFC FX cameras you'll need the Baumer Optronics software including FxLib.dll, this is available from your vendor.
+This device adapter was written by Karl Hoover and will provide higher performance than the TWAIN interface. To use Leica DFC FX cameras you'll need the Baumer Optronics software including FxLib.dll, this is available from your vendor.
 
 Changes in 1.3.45 20100228:<br>
 • Initial implementation tested with DFC345FX on Windows XP SP3 <br>
