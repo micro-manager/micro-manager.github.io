@@ -20,9 +20,9 @@
 The TetheredCam device driver provides support for Canon and Nikon cameras through third-party commercial software from [http://www.breezesys.com Breezesys]. 
 
 Incomplete list of supported cameras:
-*Canon EOS 7D, Canon EOS 60D, Canon EOS 50D, Canon EOS 5D Mark II, Canon EOS 550D/Rebel T2i, Canon EOS 500D/Rebel T1i, Canon EOS 1000D/Rebel XS, Canon EOS 450D/Rebel XSi, Canon EOS 40D, 1Ds Mark III, 1D Mark III, 1D Mark IV, and others. 
+*Canon EOS 7D, Canon EOS 60D, Canon EOS 50D, Canon EOS 5D Mark II, Canon EOS 550D/Rebel T2i, Canon EOS 500D/Rebel T1i, Canon EOS 1000D/Rebel XS, Canon EOS 450D/Rebel XSi, Canon EOS 40D, 1Ds Mark III, 1D Mark III, 1D Mark IV. 
 *Nikon D7000, Nikon D90, Nikon D5000, Nikon D300, Nikon D300s, Nikon D700, Nikon D3X, Nikon D3s, Nikon D3, Nikon D200, Nikon D80. 
-*Canon Powershot G10, G9, G7, SX110 IS, SX100 IS, S5 IS, S3 IS, A640, A620, and others.
+*Canon Powershot G10, G9, G7, SX110 IS, SX100 IS, S5 IS, S3 IS, A640, A620.
 See [http://www.breezesys.com Breezesys] for an authoritative list. Camera support may depend upon Microsoft Windows version and camera firmware version used. Camera compatibility can be tested using the trial version of the Breezesys software.
 
 == Installation ==
