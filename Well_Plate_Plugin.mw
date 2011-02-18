@@ -10,7 +10,7 @@ You can change the starting well, or the ending well to only work on a subregion
 
 == Setup ==
 big.jar must be installed and imported into the bsh script.
- addClassPath("big.jar");
+ addClassPath("Big.jar");
  import edu.umassmed.big.SBSPlate;
 
 == Class Functions ==
