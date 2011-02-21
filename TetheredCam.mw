@@ -85,6 +85,6 @@ Many algorithms in Micro-Manager require grayscale images. Feeding a color image
 
 If you wish to automatically load your "Shutter Speeds" settings upon startup, create a Micro-Manager configuration group called "System". In the "System" configuration group, create a preset group called "Startup" which includes "Shutter Speeds". These settings will be applied every time you start up Micro-Manager.
 
-The internal raw image decoder provides images without gamma-correction (gamma of 1). If raw pictures are decoded using the internal raw image decoder and you wish to see the same colors on your computer monitor as you see through the microscope eyepiece, you may have to set gamma to 0.45 in Micro-Manager's main window.
+The internal raw image decoder provides linear 16-bit images without gamma-correction (gamma of 1). If raw pictures are decoded using the internal raw image decoder and you wish to see the same colors on your computer monitor as you see through the microscope eyepiece, you may have to set gamma to 0.45 in Micro-Manager's main window.
 
 The "BitDepth" and "ImageDecoder" properties are only available in Micro-Manager 1.4.
