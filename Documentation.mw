@@ -8,6 +8,8 @@ In addition to the [http://micro-manager.org/documentation.php main Micro-Manage
 
 * ''[[Plugins]]''
 
+* ''[[Video troubleshooting]]''
+
 * ''Autofocus configuration''
    [[Autofocus setup]] - Making Micro-Manager use image-based autofocus
    [[Autofocus manual]] - Configure the image-based autofocus implemented in Java
