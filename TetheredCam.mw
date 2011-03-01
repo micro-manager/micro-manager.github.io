@@ -60,10 +60,15 @@ The following properties are currently implemented:
 :Exposure sets the exposure time. Units are ms. Setting the exposure time in Micro-manager requires a properly initialized "ShutterSpeeds" camera property, and DSLRRemote/NKRemote/PSRemote "Exposure mode" set to "Tv" or "Manual".
 :An exposure time of 0 leaves the camera shutter speed unchanged. This allows setting the shutter speed in DSLRRemote/NKRemote/PSRemote instead of in Micro-Manager.
 ;ImageDecoder
-:Specifies the preferred decoder for raw images. Allowable values are "Micro-Manager" and "Windows".
-:If "ImageDecoder" is set to "Micro-Manager", images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. The internal decoder is able to decode raw images only, not jpeg.
-:If "ImageDecoder" is set to "Windows", images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component]. The decoder is able to decode jpeg and, if [http://en.wikipedia.org/wiki/Windows_Imaging_Component#External_links Windows Imaging Component codecs] have been installed, raw images.
-:The internal raw image decoder provides linear 16-bit images without gamma-correction (gamma of 1). If you use the internal decoder and you wish to see the same colors on your computer monitor as you see through the microscope eyepiece, you may have to set gamma to 0.45 in Micro-Manager. 
+:Specifies the preferred decoder for raw images. Allowable values are "Raw", "Raw (no gamma compensation)", "Raw (no gamma compensation; no white balance)" and "Windows".
+:;Raw
+::Images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. The internal decoder is able to decode raw images only, not jpeg. Decoded images are gamma adjusted for sRGB.
+:;Raw (no gamma compensation)
+::Same as "Raw", but decoded images have a linear grayscale.
+:;Raw (no gamma compensation; no white balance)
+:: Same as "Raw", but decoded images have a linear grayscale, and have no white balance applied.
+:;Windows
+::Images are decoded using [http://en.wikipedia.org/wiki/Windows_Imaging_Component Windows Imaging Component]. The decoder is able to decode jpeg and, if [http://en.wikipedia.org/wiki/Windows_Imaging_Component#External_links Windows Imaging Component codecs] have been installed, raw images. 
 ;KeepOriginals
 :Saves the pictures to disk. Allowable values are 0 and 1. The directory can be chosen in DSLRRemote, NKRemote or PSRemote File->Preferences. The pictures are in the format provided by the camera; typically jpeg or raw.
 ;PixelType
