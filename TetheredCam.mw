@@ -63,7 +63,7 @@ The following properties are currently implemented:
 :Specifies how images are decoded. Allowable values are "Raw", "Raw (no gamma compensation)", "Raw (no gamma compensation; no white balance)" and "Windows".
 :;Raw
 ::Images are decoded using Micro-Manager's internal decoder, [http://www.libraw.org libraw]. The internal decoder is able to decode raw images only, not jpeg. Decoded images are gamma adjusted for sRGB.
-::[http://en.wikipedia.org/wiki/Demosaicing Colour interpolation] is used only if binning is 1. Colour interpolation does not take place if binning is 2 or more. If binning is 2 or more, colour samples are averaged.
+::[http://en.wikipedia.org/wiki/Demosaicing Color interpolation] is used only if binning is 1. If binning is 2 or more, color samples are averaged. Color interpolation does not take place if binning is 2 or more.
 :;Raw (no gamma compensation)
 ::Same as "Raw", but decoded images have a linear grayscale.
 :;Raw (no gamma compensation; no white balance)
