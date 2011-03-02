@@ -95,7 +95,7 @@ If you wish to automatically load your "Shutter Speeds" settings upon startup, c
 
 To get a live view display in DSLRRemote, NKRemote or PSRemote, open the "Camera" menu and select "Live View".
 
-Large images require large amounts of memory. If image acquisition fails, try increasing memory available, and reducing memory used.
+Large images require large amounts of memory. If image acquisition works in DSLRRemote/NKremote/PSRemote, but fails in micro-manager, try increasing memory available, and reducing memory used.
 *Go to ImageJ, choose Edit>Options>Memory and increase maximum memory to 1024 mb or more. Exit and restart micro-manager. See also [http://www.micro-manager.org/documentation.php?object=Userguide#mozTocId137215 memory issues].
 *If using jpeg, try choosing a smaller image size in DSLRRemote/NKremote/PSRemote.
 *If using raw images, go to Tools>Device/Property Browser, and try choosing image decoder "Raw", binning 2 or more, bit depth 8 bit, pixel type grayscale.
