@@ -89,7 +89,7 @@ The following properties are currently implemented:
 :When set, rotates image. Allowable values are 0 and 1.
 
 == Notes ==
-*Large images require large amounts of memory. If image acquisition works in DSLRRemote/NKremote/PSRemote, but fails in micro-manager, try increasing memory available, and reducing memory used.
+*Large images require large amounts of memory. If image acquisition works in DSLRRemote/NKremote/PSRemote but fails in micro-manager, try increasing memory available and reducing memory used.
 **Go to ImageJ, choose Edit > Options > Memory and increase maximum memory. See [http://www.micro-manager.org/documentation.php?object=Userguide#mozTocId137215 memory issues].
 **If using jpeg, try choosing a smaller image size in DSLRRemote/NKRemote/PSRemote.
 **If using raw images, go to Tools > Device/Property Browser in micro-manager, and try choosing image decoder "Raw", binning 2 or more, bit depth 8 bit, pixel type grayscale.
