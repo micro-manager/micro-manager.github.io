@@ -7,7 +7,7 @@ the forum, and hope that it could help some people facing the same problems,
 or help making some upstream patches. 
 
 For the context, we needed a Unix version of Micromanager to enable support
-of Firewire cameras. The packages provided according to
+of [http://www.firewirecamera.org Firewire cameras]. The packages provided according to
 http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux are
 great, but were not compiled with libdc1394, so that we had to compile it
 ourselves. The issues discussed here are based no the howto given in
