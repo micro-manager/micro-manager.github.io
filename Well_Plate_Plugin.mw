@@ -67,7 +67,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  
  // Pass the well plate type, and optionally pass the X and Y offset of well A1
  SBSPlate plate = new SBSPlate(96,startX, startY);
-
+ 
  numberOfWells = plate.getNumberOfWells();
  
  for (m = 1; m <= numberOfWells; m++) {
