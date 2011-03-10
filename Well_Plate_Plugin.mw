@@ -21,10 +21,11 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 :Initializes the plugin and uses 96 as the size of the well plate.
 
 ;SBSPlate(int size)
-:Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24, 96, 384, and 1536.
+:Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24, 96, 384, and 1536. Assumes Well A1 is at
+:coordinates 0,0.
 
 ;SBSPlate(int size, double X, double Y)
-:This also sets the X and Y stage coordinates of well A1.
+:This also sets the X and Y stage coordinates of well A1. Only use one initialization SBSPlate();
 
 ;void setFirstWell(int x, int y)
 :Changes the starting position from {1,1} to {x,y}. Index is 1 based.
@@ -42,7 +43,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 :Returns the number of wells in the entire plate, or the number of wells in a subregion.
 
 ;double[] getNextPosition() 
-:Returns the {x,y} coordinates in microns of the next well, relative to well A1. If at the last well, it will return the first well's coordinates.
+:Returns the {x,y} coordinates in microns of the next well. If at the last well, it will return the first well's coordinates.
 
 == Example Micro-Manager BSH Script ==
 
