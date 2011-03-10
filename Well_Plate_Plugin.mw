@@ -15,7 +15,7 @@ big.jar must be installed and imported into the bsh script.
 
 == Class Functions ==
 
-Most functions expect well positions in X, Y coordinates, where X is the long axis, and Y is the short axis of the well plate. X might have a range from 1 to 48 and Y might have a range from 1 to 32, depending upon plate size. Functions with Position in the name return coordinates in microns relative to well A1.
+Most functions expect well positions in X, Y coordinates, where X is the long axis, and Y is the short axis of the well plate. X might have a range from 1 to 48 and Y might have a range from 1 to 32, depending upon plate size. Functions with Position in the name return coordinates in microns relative to well A1 plus an offset. 
 
 ;SBSPlate()
 :Initializes the plugin and uses 96 as the size of the well plate.
