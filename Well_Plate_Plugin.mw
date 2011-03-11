@@ -75,7 +75,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  
  // setting first and last well is optional if you want to define a smaller region.
  setFirstWell(1,1); // can't be less than 1, or greater than setLastWell();
- setLastWell (12,8); // X = 12 and Y = 8 is maximum value for 96 well plate.
+ setLastWell (12,8); // X = 12 and Y = 8 is maximum value for 96 well plate and correspond to well H12
  
  for (m = 1; m <= numberOfWells; m++) {
    // code to take an image could be here
