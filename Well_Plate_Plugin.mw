@@ -68,7 +68,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  double startX = mmc.getXPosition(xystage);
  double startY = mmc.getYPosition(xystage);
  
- // Pass the well plate type, and optionally pass the X and Y offset of well A1
+ // Pass the well plate type, and optionally pass the X and Y micron offset of well A1
  SBSPlate plate = new SBSPlate(96,startX, startY);
  
  numberOfWells = plate.getNumberOfWells();
