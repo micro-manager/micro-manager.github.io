@@ -56,12 +56,14 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  
  double[] position = {0,0}; // 0 indexed in microns.
  //
- // Move stage to 0,0 if your stage is 0,0 at well A1
+ // Well A1 should be centered with the objective.
+ // You can zero your stage, or use the X and Y offsets for well A1
  //
+ // This assumes Well A1 is zeroed
  mmc.setXYPosition(xystage,position[0],position[1]);
  mmc.waitForDevice(xystage);
  //
- // or get your current X,Y position of well A1
+ // This assumes Well A1 has an X and Y offset
  //
  double startX = mmc.getXPosition(xystage);
  double startY = mmc.getYPosition(xystage);
