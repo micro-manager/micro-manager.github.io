@@ -28,10 +28,10 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 :This also sets the X and Y stage coordinates of well A1. Only use one initialization SBSPlate();
 
 ;void setFirstWell(int x, int y)
-:Changes the starting position from {1,1} to {x,y}. Index is 1 based.
+:Changes the starting position from {1,1} to {x,y}. Index is 1 based. X is the long dimension, and Y is the short dimension of the well plate. For example, setFirstWell(1,2) would start at well B1.  
 
 ;void setLastWell(int x, int y) 
-:Changes the ending position from {1,1} to {x,y}. Index is 1 based.
+:Changes the ending position from {1,1} to {x,y}. Index is 1 based. X is the long dimension, and Y is the short dimension of the well plate. For example, setLastWell(10,7) would finish at well G10.
 
 ;double[] getWellPosition (int x, int y) 
 :Returns the absolute position in microns relative to well A1. Calling X and Y is 1 indexed but returns X and Y 0 indexed position in microns.
