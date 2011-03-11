@@ -72,7 +72,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  SBSPlate plate = new SBSPlate(96,startX, startY);
  
  numberOfWells = plate.getNumberOfWells();
-
+ 
  // setting first and last well is optional if you want to define a smaller region.
  setFirstWell(1,1); // can't be less than 1, or greater than setLastWell();
  setLastWell (12,8); // X = 12 and Y = 8 is maximum value for 96 well plate.
