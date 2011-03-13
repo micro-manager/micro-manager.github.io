@@ -10,7 +10,7 @@
 </table>
 
 
-This adapter controls the [http://www.uniblitz.com Vincent] shutter controllers [http://www.uniblitz.com/departments/Shutter%20Control.aspx D1, T1, D3] and [http://www.uniblitz.com/resources/dl.asp?id=29 D122] (not available anymore). Connect the controller through a serial port and configure the port as specified in the manual to your controller (the D122 uses a baudrate of 300, others are 9600, for the D122 set 'DelayBetweenCharsMs' to 50-100, for other controllers this can be 0). Multiple controllers can be daisy chained as the adapter can address these daisy-chained controllers (Property ''Address'', use ''x'' to address all daisy-chained controllers). 
+This adapter controls the [http://www.uniblitz.com Vincent] shutter controllers [http://www.uniblitz.com/departments/Shutter%20Control.aspx D1, T1, D3] and [http://www.uniblitz.com/resources_filelibrary/t132_d122_user_manual_1_3.pdf D122] (not available anymore). Connect the controller through a serial port and configure the port as specified in the manual to your controller (the D122 uses a baudrate of 300, others are 9600, for the D122 set 'DelayBetweenCharsMs' to 50-100, for other controllers this can be 0). Multiple controllers can be daisy chained as the adapter can address these daisy-chained controllers (Property ''Address'', use ''x'' to address all daisy-chained controllers). 
 
 The Vincent D3 controls up to 3 shutters.  For each shutter, make a separate Vincent-D3 device, and set the "Channel #" pre-initialization property to the desired shutter number.
 
