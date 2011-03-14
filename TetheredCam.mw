@@ -34,11 +34,11 @@ Installation instructions:
 * With PSRemote, DSLRRemote, or NKRemote still running, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
-* In the "Setup COM ports" window: Click on Next.
 * In the "Add or remove devices" window: Click on Add.
 * In the "Add device" window: Select PSRemoteCamera if you use PSRemote, NKRemoteCamera if you use NKRemote, or DSLRRemoteCamera if you use DSLRRemote. Click on Add. A small window pops up with "Please type in the new device name". Click on OK. Click on Done.
 * Back in the "Add or remove devices" window: Click on Next.
 * In the "Edit pre-initialisation settings" window: Click on Next.
+* In the "Setup Serial ports" window: Click on Next.
 * In the "Select default devices" window: Choose "CanonPSCam", "NikonDSLRCam" or "CanonDSLRCam" as default camera. Click on Next.
 * In the "Set delays for devices without synchronisation capabilities" window: Click on Next.
 * In the "Select devices to synchronize with image acquisition" window: Click on Next.
