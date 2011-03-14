@@ -27,15 +27,15 @@ Installation instructions:
 * Set the camera to PTP or MTP mode. On Nikon DSLRs, this is done by pressing the "Menu" button, and selecting Setup > USB > MTP/PTP. Do not set the camera to "USB mass storage".
 * On Mac OS X, kill the PTP daemon. In a Terminal window, type:
    killall PTPcamera
-You will need to repeat this every time you switch the camera on, or connect the camera to the mac.
+* You will need to kill the PTP daemon every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
-* In the "Setup COM ports" window: Click on Next.
 * In the "Add or remove devices" window: Click on Add.
 * In the "Add device" window: Select GPhoto. Click on Add. A small window pops up with "Please type in the new device name". Click on OK. Click on Done.
 * Back in the "Add or remove devices" window: Click on Next.
 * In the "Edit pre-initialisation settings" window: Click on Next.
+* In the "Setup Serial ports" window: Click on Next.
 * In the "Select default devices" window: Choose "GPhoto" as default camera. Click on Next.
 * In the "Set delays for devices without synchronisation capabilities" window: Click on Next.
 * In the "Select devices to synchronize with image acquisition" window: Click on Next.
