@@ -24,11 +24,11 @@ Installation instructions:
 * Connect and power up the focus drive.
 * Start up Micro-Manager. Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
-* In the "Setup COM ports" window: Select the COM port the focus drive is connected to. Click on Next.
 * In the "Add or remove devices" window: Click on Add.
 * In the "Add device" window: Select "KDVZStage" from the list, then click on Add. A small window pops up with "Please type in the new device name". Click on OK. Click on Done.
 * Back in the "Add or remove devices" window: Note the list now has a new device called "KDVZStage" with as description "Focus Drive for Meiji Techno". Click on Next.
-* In the "Edit pre-initialisation settings" window: Note the COM port of the focus drive has the value "Undefined". Click on Undefined and select the COM port the focus drive is connected to. Click on Next.
+* In the "Edit pre-initialisation settings" window: Note the serial port of the focus drive has the value "Undefined". Click on Undefined and select the serial port the focus drive is connected to. Click on Next.
+* In the "Setup Serial ports" window: Select the serial port the focus drive is connected to. Click on Next.
 * In the "Select default devices" window: Choose "KDVZStage" as default focus stage. Click on Next.
 * In the "Set delays for devices without synchronisation capabilities" window: Click on Next.
 * In the "Select devices to synchronize with image acquisition" window: Click on Next.
