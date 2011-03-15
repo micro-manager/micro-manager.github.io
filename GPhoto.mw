@@ -26,7 +26,9 @@ Installation instructions:
 * Connect the camera to the computer with a USB cable. 
 * Set the camera to PTP or MTP mode. On Nikon DSLRs, this is done by pressing the "Menu" button, and selecting Setup > USB > MTP/PTP. Do not set the camera to "USB mass storage".
 * On Mac OS X, kill the PTP daemon. In a Terminal window, type:
-   killall PTPcamera
+  ps -ef | grep PTPCamera 
+  kill pid
+where pid is the process id of the PTPCamera process.
 * You will need to kill the PTP daemon every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
