@@ -56,7 +56,7 @@ The following properties are currently implemented:
 ;Binning
 :Binning groups pixels in both x and y direction. Allowable values are 1, 2, 4, 8.
 ;BitDepth
-:Specifies the bit depth or dynamic range of the pixel. Actual bit depth may be less, depending upon the camera image sensor. Allowable values are "8" and "16".
+:Specifies the bit depth or dynamic range of the pixel. Actual bit depth may be less, depending upon the camera image sensor. Allowable values are "8" and "16". When set to "16", raw images will be decoded with linear gamma.
 ;CameraName
 :On systems with more than one camera, specifies which camera is used.
 ;Exposure
