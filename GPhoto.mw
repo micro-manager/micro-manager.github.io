@@ -12,7 +12,7 @@
 |MacOSX, linux
 |-
 |'''Devices:'''
-|PTP/MTP cameras connected via USB.
+Picture Transfer Protocol (PTP) and Media Transfer Protocol (MTP) connected via USB.
 |}
 
 == Description ==
