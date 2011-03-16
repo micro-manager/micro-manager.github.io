@@ -2,6 +2,19 @@
 
 ==2011==
 
+{{Cite journal
+| doi = 10.1016/j.biomaterials.2011.01.022
+| issn = 0142-9612
+| volume = 32
+| issue = 13
+| pages = 3499-3506
+| last = Fischer
+| first = Kathleen E.
+| coauthors = Ganesh Nagaraj, R. Hugh Daniels, Esther Li, Verne E. Cowles, Jennifer L. Miller, Mark D. Bunger, Tejal A. Desai
+| title = Hierarchical nanoengineered surfaces for enhanced cytoadhesion and drug delivery
+| journal = Biomaterials
+| date = 2011-05
+}}
 
 Devrim Kilinc,  Jean-Michel Peyrin, Vanessa Soubeyre, Sebastien Magniﬁco, Laure Saias, Jean-Louis Viovy, and Bernard Brug. (2011). Wallerian-Like Degeneration of Central Neurons After Synchronized and Geometrically Registered Mass Axotomy in a Three-Compartmental Microﬂuidic Chip. '''Neurotox Res.''' 19:149-161. [http://dx.doi.org/10.1007/s12640-010-9152-8 doi:10.1007/s12640-010-9152-8]
 
@@ -23,6 +36,61 @@ Christian Conrad,	 Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher,Frank Sieckm
 
 ==2010==
 
+{{Cite journal
+| doi = 10.1371/journal.pbio.1000415
+| issn = 1544-9173
+| volume = 8
+| issue = 7
+| pages = 519-529
+| last = Pincus
+| first = D.
+| coauthors = M.W. Chevalier, T. Aragón, E. Van Anken, S.E. Vidal, H. El-Samad, P. Walter
+| title = BiP binding to the ER-stress sensor Ire1 tunes the homeostatic behavior of the unfolded protein response
+| journal = PLoS Biology
+| date = 2010
+}}
+
+{{Cite journal
+| doi = 10.1.1.158.2558
+| volume = 10
+| issue = 1.111
+| pages = 5362
+| last = Moreira
+| first = K.E.
+| coauthors = T.C. Walther, P.S. Aguilar, P. Walter, H. Hughes
+| title = Pil1 controls eisosome biogenesis
+| journal = Relation
+| date = 2010
+}}
+
+{{Cite journal
+| doi = 10.1073/pnas.1010580107
+| issn = 0027-8424
+| volume = 107
+| issue = 37
+| pages = 16113
+| last = Li
+| first = H.
+| coauthors = A.V. Korennykh, S.L. Behrman, P. Walter
+| title = Mammalian endoplasmic reticulum stress sensor IRE1 signals by dynamic clustering
+| journal = Proceedings of the National Academy of Sciences
+| date = 2010
+}}
+
+{{Cite journal
+| doi = 10.1016/j.cell.2010.10.003
+| issn = 0092-8674
+| volume = 143
+| issue = 5
+| pages = 761-773
+| last = Puthenveedu
+| first = M.A.
+| coauthors = B. Lauffer, P. Temkin, R. Vistein, P. Carlton, K. Thorn, J. Taunton, O.D. Weiner, R.G. Parton, M. von Zastrow
+| title = Sequence-Dependent Sorting of Recycling Proteins by Actin-Stabilized Endosomal Microdomains
+| journal = Cell
+| date = 2010
+}}
+
 Yanjie Zhang, Allison M. Schnoes, and Aaron R. Clapp. (2010). Dithiocarbamates as Capping Ligands for Water-Soluble Quantum Dots. '''ACS Appl. Mater. Interfaces''' 2:3384-3395 [http://dx.doi.org/10.1021/am100996g DOI: 10.1021/am100996g]
 
 Andrew D Goldsmith, Sumeet Sarin, Shawn Lockery, and Oliver Hobert. (2010). Developmental control of lateralized neuron size in the nematode ''Caenorhabditis elegans''. '''Neural development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-3 doi:10.1186/1749-8104-5-3]
@@ -40,8 +108,6 @@ Uehara R, and Goshima, G. (2010). Functional central spindle assembly requires d
 Moss, J, et al. (2010). Break-induced ATR and Ddb1–Cul4Cdt2 ubiquitin ligase-dependent nucleotide synthesis promotes homologous recombination repair in fission yeast. '''Genes & Dev.''' 24: 2705-2716 [http://dx.doi.org/10.1101/gad.1970810 doi: 10.1101/gad.1970810] 
 
 Brian Alan Ashcroft and Tjerk Oosterkamp (2010). AutoMicromanager: A microscopy scripting toolkit for LABVIEW and other programming environments. '''Rev. Sci. Instrum.''' 81:113708-113712 [http://dx.doi.org/10.1063/1.3499370 doi:10.1063/1.3499370]
-
-Manojkumar A. Puthenveedu, Benjamin Lauffer, Paul Temkin, Rachel Vistein, Peter Carlton, Kurt Thorn, Jack Taunton, Orion D. Weiner, Robert G. Parton and Mark von Zastrow (2010) Sequence-Dependent Sorting of Recycling Proteins by Actin-Stabilized Endosomal Microdomains. '''Cell''' 143:761-773 [http://dx.doi.org/10.1016/j.cell.2010.10.003 doi:10.1016/j.cell.2010.10.003]
 
 Goldsmith AD, Sarin S, Lockery S, and Hobert, O. (2010) Developmental control of lateralized neuron size in the nematode
 Caenorhabditis elegans. '''Neural Development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-33 doi:10.1186/1749-8104-5-33]
@@ -109,6 +175,61 @@ David K. Breslow, Sean R. Collins, Bernd Bodenmiller, Ruedi Aebersold, Kai Simon
 
 ==2009==
 
+{{Cite journal
+| doi = 10.1038/nature08446
+| issn = 0028-0836
+| volume = 461
+| issue = 7266
+| pages = 997-1001
+| last = Levskaya
+| first = A.
+| coauthors = O.D. Weiner, W.A. Lim, C.A. Voigt
+| title = Spatiotemporal control of cell signalling using a light-switchable protein interaction
+| journal = Nature
+| date = 2009
+}}
+
+{{Cite journal
+| doi = 10.1126/science.1167983
+| issn = 0036-8075
+| volume = 323
+| issue = 5922
+| pages = 1693
+| last = Jonikas
+| first = M.C.
+| coauthors = S.R. Collins, V. Denic, E. Oh, E.M. Quan, V. Schmid, J. Weibezahn, B. Schwappach, P. Walter, J.S. Weissman
+| title = Comprehensive characterization of genes required for protein folding in the endoplasmic reticulum
+| journal = Science
+| date = 2009
+}}
+
+{{Cite journal
+| doi = 10.1126/science.1175088
+| issn = 0036-8075
+| volume = 325
+| issue = 5939
+| pages = 477
+| last = Kornmann
+| first = B.
+| coauthors = E. Currie, S.R. Collins, M. Schuldiner, J. Nunnari, J.S. Weissman, P. Walter
+| title = An ER-mitochondria tethering complex revealed by a synthetic biology screen
+| journal = Science
+| date = 2009
+}}
+
+{{Cite journal
+| doi = 10.1083/jcb.200907074
+| issn = 0021-9525
+| volume = 187
+| issue = 4
+| pages = 525
+| last = Schuck
+| first = S.
+| coauthors = W.A. Prinz, K.S. Thorn, C. Voss, P. Walter
+| title = Membrane expansion alleviates endoplasmic reticulum stress independently of the unfolded protein response
+| journal = The Journal of Cell Biology
+| date = 2009
+}}
 
 Matula, P., Maška, M., Danek, O., Matula, P., and Kozubek, M. (2009). Acquiarium: free software for the acquisition and analysis of 3D images of cells in fluorescence microscopy. In '''Proceedings of the Sixth IEEE international Conference on Symposium on Biomedical Imaging: From Nano To Macro''' (Boston, Massachusetts, USA, June 28 - July 01, 2009). IEEE Press, Piscataway, NJ, 1138-1141 [http://www.muni.cz/research/publications/833229]
 
@@ -116,13 +237,9 @@ Jungho Ohn, Huai-Jen Tsai, and Michael Liebling (2009).  Joint dynamic imaging o
 
 A. Bernardini, C. Wotzlaw, H.-G. Lipinski, and J. Fandrey (2009). An Automated Real Time System for FRET Based Protein-Protein Interaction Analysis. '''IFMBE Proceedings''' 25/4:1056-1058 [http://dx.doi.org/10.1007/978-3-642-03882-2_281 doi:10.1007/978-3-642-03882-2_281]
 
-Sebastian Schuck, William A. Prinz, Kurt S. Thorn, Christiane Voss, and Peter Walter (2009). Membrane expansion alleviates endoplasmic reticulum stress independently of the unfolded protein response. '''The Journal of Cell Biology.''' [http://dx.doi.org/10.1083/jcb.200907074 doi:10.1083/jcb.200907074]
-
 James C. W. Locke  and  Michael B. Elowitz (2009). Using movies to analyse gene circuit dynamics in single cells. '''Nature Reviews Microbiology.''' [http://dx.doi.org/10.1038/nrmicro2056 doi:10.1038/nrmicro2056]
 
 Vedakumar Tatavarty, Eun-Ji Kim, Vladimir Rodionov, and Ji Yu (2009). Investigating Sub-Spine Actin Dynamics in Rat Hippocampal Neurons with Super-Resolution Optical Imaging. '''PLoS One.''' [http://dx.doi.org/10.1371/journal.pone.0007724 doi:10.1371/journal.pone.0007724]
-
-Kornmann B, Currie E, Collins SR, Schuldiner M, Nunnari J, Weissman JS, and Walter P. (2009). An ER-mitochondria tethering complex revealed by a synthetic biology screen. '''Science''' 325:477-481 [http://dx.doi.org/10.1126/science.1175088 10.1126/science.1175088]
 
 Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S. Grieshaber, Bently Robinson, and David J. Culp (2009). Tissue Distibution of Murine <i>Muc19/Smgc</i> Gene Products. '''J.  Histochem. and Cytochem.''' [http://dx.doi.org/10.1369/jhc.2009.954891 doi:10.1369/jhc.2009.954891]
 
@@ -164,7 +281,35 @@ Samways, D.S., Harkins, A.B. & Egan, T.M (2009). Native and recombinant ASIC1a r
 Chambers, R.D. & Santiago, J.G (2009). Imaging and Quantification of Isotachophoresis Zones Using Nonfocusing Fluorescent Tracers. '''Analytical Chemistry'''. Early publication online. [http://dx.doi.org/10.1021/ac802698a doi:10.1021/ac802698a]
 
 ==2008==
- 
+
+{{Cite journal
+| doi = doi: DOI: 10.1016/j.cell.2008.06.025
+| issn = 0092-8674
+| volume = 134
+| issue = 4
+| pages = 634-645
+| last = Schuldiner
+| first = Maya
+| coauthors = Jutta Metz, Volker Schmid, Vladimir Denic, Magdalena Rakwalska, Hans Dieter Schmitt, Blanche Schwappach, Jonathan S. Weissman
+| title = The GET Complex Mediates Insertion of Tail-Anchored Proteins into the ER Membrane
+| journal = Cell
+| date = 2008-08-22
+}}
+
+{{Cite journal
+| doi = 10.1038/nature07641
+| issn = 0028-0836
+| volume = 457
+| issue = 7230
+| pages = 736-740
+| last = Aragón
+| first = T.
+| coauthors = E. Van Anken, D. Pincus, I.M. Serafimova, A.V. Korennykh, C.A. Rubio, P. Walter
+| title = Messenger RNA targeting to endoplasmic reticulum stress signalling sites
+| journal = Nature
+| date = 2008
+}}
+
 Olivier Debeir, Ivan Adanja, Robert Kiss & Christine Decaestecker (2008). Models of cancer cell migration 
 and cellular imaging and analysis. Chapter 5 of ''The motile actin system in health and disease.'' Edited by: Lambrechts A, Ampe C. Kerala: Transworld Research Network, pp 123-156. [http://lisa.ulb.ac.be/publifiles/207/Lambrechts5_last.pdf PDF]
 
