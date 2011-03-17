@@ -22,7 +22,7 @@ sudo touch /System/Library
 
 On Windows you will need to 'replace' the HID driver with the driver provided in the driver directory in the Micro-Manager folder.  To find out which device is the K8055, open the Device Manager, open the tab "Human Interface Devices" and plug in the K8055.  Two devices should appear, one named "HID-compliant device", the other called "USB Human Interface Device". [[Image:DeviceManager.png]]
 
-Double click on the "USB Human Interface Device", select the "Driver" tab and click on "Update Driver".  On the first page of the Hardware Configuration Wizard, do not let Windows connect to Windows Update.  On the next page, select "Install from a list or sepcific location(Advanced)". 
+Double click on the "USB Human Interface Device", select the "Driver" tab and click on "Update Driver". (On Windows 7 we found that we needed to instead right click on the top node and select "Add legacy hardware" and then proceed as follows.) On the first page of the Hardware Configuration Wizard, do not let Windows connect to Windows Update.  On the next page, select "Install from a list or sepcific location(Advanced)". 
 
 [[Image:HardwareUpdate2.png]]
 
