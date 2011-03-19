@@ -25,8 +25,7 @@ See [http://gphoto.org/proj/libgphoto2/support.php] for a list of cameras.
 Installation instructions:
 * Connect the camera to the computer with a USB cable. 
 * Set the camera to PTP or MTP mode. On Nikon DSLRs, this is done by pressing the "Menu" button, and selecting Setup > USB > MTP/PTP. Do not set the camera to "USB mass storage".
-* On Mac OS X, kill the PTP daemon. In a Terminal window type, minding the backquotes:
-    kill `ps -ef | grep PTPCamera.app | awk '{print $2}'`
+* On Mac OS X, kill the PTP daemon. In a Terminal window type, minding the backquotes: <pre>kill `ps -ef | grep PTPCamera.app | awk '{print $2}'`</pre>
 * You will need to kill the PTP daemon every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
