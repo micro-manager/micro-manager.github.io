@@ -81,7 +81,7 @@ The following properties are currently implemented:
 == Notes ==
 *On Mac OS X, you have to kill the Apple PTP daemon every time after connecting your camera, after switching your camera on, and before running micro-manager. If you wish to automate this, try the following:
 ** Open Applications/AppleScript/Script Editor.
-** Create a one-line AppleScript <pre>tell application "PTPCamera" to quit</pre>.
+** Create a one-line AppleScript <pre>tell application "PTPCamera" to quit</pre>
 ** Select File > Save As... and save as application "killptpcamera".
 ** Close Script Editor.
 ** Open Applications/Image Capture.
