@@ -24,7 +24,7 @@ See [http://gphoto.org/proj/libgphoto2/support.php] for a list of cameras.
 
 Installation instructions:
 * Connect the camera to the computer with a USB cable. 
-* Depending on camera model, you may have to use PTP/MTP mode or normal mode ("USB mass storage"). See [http://www.gphoto.org/doc/remote/ gphoto documentation].
+* Depending on camera model, you may have to use PTP/MTP mode or normal mode ("USB mass storage"). If your camera appears in the list of [http://gphoto.org/proj/libgphoto2/support.php supported cameras], see if the entry says"Normal" or "PTP". Optionally, check the [http://www.gphoto.org/doc/remote/ gphoto documentation].
 * On Mac OS X, you have to kill the PTPCamera process to use PTP/MTP mode with micro-manager. Open Applications/Utilities/Activity Monitor, select "PTPCamera" and click on "Quit Process". You will need to kill the PTPCamera process every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 * Open the Tools menu, and choose Hardware Configuration Wizard.
