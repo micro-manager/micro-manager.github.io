@@ -86,4 +86,6 @@ The following properties are currently implemented:
 ** Close Image Capture.
 ** This causes PTPCamera to quit every time it starts up. To revert to normal behavior, open Image Capture and set "When a camera is connected, open:" to "No application".
 
+*Setting Nikon DSLRs to PTP mode is done by pressing the "Menu" button, and selecting Setup > USB > MTP/PTP. 
+
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
