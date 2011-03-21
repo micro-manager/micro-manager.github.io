@@ -54,7 +54,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 ;BitDepth
 :Specifies the bit depth or dynamic range of the pixel. Actual bit depth may be less, depending upon the camera image sensor. Allowable values are "8" and "16". When set to "16", raw images will be decoded with linear gamma.
 ;CameraName
-:On systems with more than one camera, specifies which camera is used.
+:Current camera. Used to select which camera is used on systems with more than one camera.
 ;Exposure
 :Exposure sets the exposure time. Units are ms.
 ;KeepOriginals
