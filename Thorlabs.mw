@@ -1,0 +1,14 @@
+== Thorlabs ==
+
+<table>
+<tr><td>
+'''Summary:'''</td><td>XY Stage - brushless DC motor controller BBD 102</td></tr>
+<tr><td>
+'''Author:'''</td><td>Nenad Amodaj</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage</td></tr>
+<tr><td>'''Example Config File:'''</td><td>See below</td></tr>
+</table>
+
+XY stage device adapter that works with BBD 102 brushless DC motor contoroller[http://www.thorlabs.us/NewGroupPage9.cfmObjectGroup_ID=5066].
