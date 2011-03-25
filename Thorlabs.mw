@@ -27,6 +27,7 @@ StopBits: 1
 (all other micro-manager port parameters can be left with defaults)
 
 The only parameter that is required for configuration of the stage is the name of the serial port (e.g. COM2) attached to the controller. If the port was correctly set and connected in the previous step, micro-manager will load the stage adapter at startup. In Device Property Browser (menu: Tools | Device Property Browser...) the stage appears as:
+
 [[Image:Property Browser 2011-03-25 16-03-56.png]]
 
 == Using the stage ==
