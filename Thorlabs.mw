@@ -34,4 +34,10 @@ If the port was correctly set and connected in the previous step, micro-manager 
 ==== Home procedure ====
 The stage needs to be homed once after each power-up. Homing is not necessary if we just exit and re-start the software without powering down. There are three ways to home the stage:
 
-'Calibrate command
+'''Using Calibrate command'''
+
+Open Stage Position List dialog and press "Calibrate" button (menu: Tools | XY List...).
+
+'''Using script'''
+
+Copy the following script, paste it into the Script Editor (menu: Tools | Script Panel...) and press "Run" button.
