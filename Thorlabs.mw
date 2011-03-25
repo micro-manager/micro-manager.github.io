@@ -56,7 +56,7 @@ This script can be saved and stored in the Script-Shortcut list for future use.
 '''Using special micro-manager startup script'''
 To automate the process of homing so that you get prompted for it each time you start micro-manager you can use startup scripts. Startup script must reside in the root directory of the micro-manager software and its name is specified in the Options dialog (menu: Tools | Options...). Add the following code to the existing startup script (or create a new one):
 
-<nowiki>
+ <nowiki>
 // startup script to home Thorlabs BBD102 XY stage
 //
 import ij.gui.GenericDialog;
