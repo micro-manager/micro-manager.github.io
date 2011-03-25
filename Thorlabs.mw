@@ -32,13 +32,13 @@ The only parameter that is required for configuration of the stage is the name o
 If the port was correctly set and connected in the previous step, micro-manager will load the stage adapter at startup. The stage uses absolute XY coordinates and any positions recorded in micro-manager will always correspond to the same physical location. However, because of this feature, each time we power-up this stage needs to be "homed" before sending any commands. If we try to move it before homing, error message will pop up. Homing is not automatic on startup because during this procedure stage moves to its limits and in may cause one of the objectives to hit the stage frame, if the objective turret is left high enough. This is an issue with any XY stage and the user always needs to make sure that objective turret is in the safe position before homing.
 
 === Home procedure ===
-The stage needs to be homed once after each power-up. Homing is not necessary if we just exit and re-start the software without powering down. There are three ways to home the stage:
+The stage needs to be homed once after each power-up. Homing is not necessary if we just exit and re-start the software without powering down. There are three alternative ways to home the stage. Choose one of the following:
 
-'''Using Calibrate command'''
+'''Calibrate command'''
 
 Open Stage Position List dialog and press "Calibrate" button (menu: Tools | XY List...).
 
-'''Using script'''
+'''Script'''
 
 Copy the following script, paste it into the Script Editor (menu: Tools | Script Panel...) and press "Run" button.
 
@@ -53,7 +53,8 @@ gui.message("Done! Home position [um]: " + x + ", " + y);</nowiki>
 
 This script can be saved and stored in the Script-Shortcut list for future use.
 
-'''Using special micro-manager startup script'''
+'''Special micro-manager startup script'''
+
 To automate the process of homing so that you get prompted for it each time you start micro-manager you can use startup scripts. Startup script must reside in the root directory of the micro-manager software and its name is specified in the Options dialog (menu: Tools | Options...). Add the following code to the existing startup script (or create a new one):
 
  <nowiki>
