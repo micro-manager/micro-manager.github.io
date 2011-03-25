@@ -14,7 +14,7 @@
 XY stage device adapter that works with BBD 102 brushless DC motor contoroller[http://www.thorlabs.us/NewGroupPage9.cfm?ObjectGroup_ID=5066] and supports high speed motorized scanning stage MLS 203 [http://www.thorlabs.us/NewGroupPage9.cfm?ObjectGroup_ID=4653].
 
 === Setup ===
-This adapter requires the following serial port parameters:
+This adapter requires only a serial serial port (RS-232). One port should be reserved for this stage and initialized with the following parameters:
 
 BaudRate: 115200
 
@@ -25,3 +25,7 @@ Parity: None
 StopBits: 1
 
 (all other micro-manager port parameters can be left with defaults)
+
+The only parameter that is required for configuration of the stage is the name of the serial port (e.g. COM2) attached to the controller.
+
+=== Using the stage ===
