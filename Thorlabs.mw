@@ -15,3 +15,8 @@ XY stage device adapter that works with BBD 102 brushless DC motor contoroller[h
 
 === Setup ===
 This adapter requires the following serial port parameters
+BaudRate: 115200
+Handshaking: Off
+Parity: None
+StopBits: 1
+(all other micro-manager port parameters can be left with defaults)
