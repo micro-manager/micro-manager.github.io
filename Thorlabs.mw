@@ -4,7 +4,7 @@
 <tr><td>
 '''Summary:'''</td><td>XY Stage - brushless DC motor controller BBD 102</td></tr>
 <tr><td>
-'''Author:'''</td><td>Nenad Amodaj</td></tr>
+'''Author:'''</td><td>Nenad Amodaj and Thorlabs Inc</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage</td></tr>
