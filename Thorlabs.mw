@@ -29,3 +29,9 @@ StopBits: 1
 The only parameter that is required for configuration of the stage is the name of the serial port (e.g. COM2) attached to the controller.
 
 === Using the stage ===
+If the port was correctly set and connected in the previous step, micro-manager will load the stage adapter at startup. The stage uses absolute XY coordinates and any positions recorded in micro-manager will always correspond to the same physical location. However, because of this feature, each time we power-up this stage needs to be "homed" before sending any commands. If we try to move it before homing, error message will pop up. Homing is not automatic on startup because during this procedure stage moves to its limits and in may cause one of the objectives to hit the stage frame, if the objective turret is left high enough. This is an issue with any XY stage and the user always needs to make sure that objective turret is in the safe position before homing.
+
+==== Home procedure ====
+The stage needs to be homed once after each power-up. Homing is not necessary if we just exit and re-start the software without powering down. There are three ways to home the stage:
+
+'Calibrate command
