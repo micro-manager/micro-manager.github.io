@@ -118,7 +118,7 @@ DecimalFormat FMT2 = new DecimalFormat("#0.0");
 for (int i=0; i<xPos.size(); i++) {
 	start = System.currentTimeMillis();
 	mmc.setXYPosition(xyStage, (double)xPos.get(i), (double)yPos.get(i));
-   mmc.waitForDevice(xyStage);
+        mmc.waitForDevice(xyStage);
 	end = System.currentTimeMillis();
 	gui.message("Reached point " + i + " at (" + xPos.get(i) + "," + yPos.get(i) + ")" + " in " + (end-start) + " ms");
 
@@ -127,3 +127,24 @@ for (int i=0; i<xPos.size(); i++) {
 	gui.message("Current position [um]: " + FMT2.format(x) + ", " + FMT2.format(y));
 }
 </nowiki>
+
+Running this script in the Script Panel (menu: Tools | Script Panel...) should produce the following output:
+
+ <nowiki>
+Starting position [um]: 70000.0, 18000.0
+bsh % 
+Reached point 0 at (0.0,0.0) in 1000 ms
+bsh % 
+Current position [um]: -0.2, -0.0
+bsh % 
+Reached point 1 at (5000.0,30000.0) in 594 ms
+bsh % 
+Current position [um]: 5000.2, 30000.4
+bsh % 
+Reached point 2 at (70000.0,18000.0) in 922 ms
+bsh % 
+Current position [um]: 69999.8, 18000.0
+bsh % 
+</nowiki>
+
+If this script does not generate any errors the stage is working properly. Timing on your system may be different, depending on the motion parameteres.
