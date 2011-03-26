@@ -8,7 +8,7 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage</td></tr>
-<tr><td>'''Example Config File:'''</td><td>See below</td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Thorlabs.cfg]]</td></tr>
 </table>
 
 XY stage device adapter that works with BBD 102 brushless DC motor contoroller[http://www.thorlabs.us/NewGroupPage9.cfm?ObjectGroup_ID=5066] and supports high speed motorized scanning stage MLS 203 [http://www.thorlabs.us/NewGroupPage9.cfm?ObjectGroup_ID=4653].
