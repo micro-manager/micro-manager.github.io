@@ -83,7 +83,7 @@ Each time you start micro-manager the script will be automatically executed and 
 === Adjusting motion parameters ===
 
 == Testing and automation ==
-For verification and testing of the stage we can load test configuration MMConfig_Thor_BBD102.cfg supplied with the micro-manager installation. This configuration file contains XYStage tied to the com port and a couple of device simulators (demo adapters) acting as demo camera and focus stage. The configuration probably won't work right away because the COM port on your system may be different. To edit the port information use Hardware Configuration Wizard (menu: Tools) as with any other device.
+For verification and testing of the stage we can load test configuration file [[Media:MMConfig_Thorlabs.cfg]]. This configuration file contains XYStage tied to the com port and a couple of device simulators (demo adapters) acting as demo camera and focus stage. The configuration probably won't work right away because the COM port on your system may be different. To edit the port information use Hardware Configuration Wizard (menu: Tools) as with any other device.
 
 After the configuration loaded without errors we can use the following script to test the stage:
 
