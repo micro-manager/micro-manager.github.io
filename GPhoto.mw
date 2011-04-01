@@ -47,14 +47,14 @@ You can now use the camera in Micro-Manager.
 == Properties==
 [[Image:SimpleCamera-Settings.png]]
 
-To access configuration settings, open the "Tools" menu and select "Device/Property Browser". The following properties are currently implemented:
+To access configuration settings, open the "Tools" menu and select "Device/Property Browser". The following settings are available:
 
 ;Binning
 :Binning groups pixels in both x and y direction. Allowable values are 1, 2, 4, 8.
 ;BitDepth
 :Specifies the bit depth or dynamic range of the pixel. Actual bit depth may be less, depending upon the camera image sensor. Allowable values are "8" and "16". When set to "16", raw images will be decoded with linear gamma.
 ;CameraName
-:Current camera. Used to select which camera is used on systems with more than one camera. Selecting an entry will (re)connect to the camera specified; this may take some time while camera settings are read.
+:Selects which camera is used on systems with more than one camera. Selecting an entry will (re)connect to the camera specified; there is a brief delay while camera settings are (re)read.
 ;Exposure
 :Exposure sets the exposure time. Units are ms.
 ;KeepOriginals
