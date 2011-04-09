@@ -64,7 +64,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 ;ShutterSpeed
 :Allows selecting the shutter speed. If "Shutter speed not set" is selected, micro-manager will not set camera shutter speed. This allows manually setting shutter speed on the camera itself. 
 ;ShutterSpeedTracksExposure
-:When set, shutter speed will change every time the exposure time is changed. The shutter speed will change to the setting closest to the exposure time, if possible.
+:When set, shutter speed will change every time the exposure time changes. The shutter speed will change to the setting closest to the exposure time, if possible.
 ;TransposeCorrection
 :When set, enables TransposeMirrorX, TransposeMirrorY, TransposeXY. Allowable values are 0 and 1. Transposing is useful if the camera image is not oriented as you would expect.
 ;TransposeMirrorX
