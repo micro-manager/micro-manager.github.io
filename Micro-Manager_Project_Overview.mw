@@ -63,7 +63,7 @@ We recognize the fact that complete platform neutrality is extremely difficult t
 
 === Cross platform Graphical User Interface ===
 
-Cross platform development is most challenging when it comes to building user interfaces. The Java GUI front-end combined with a C++ back-end has proven to be a reliable and agile solution for the ÂµManager project. By being able to rapidly prototype and deploy user interfaces in the [http://www.eclipse.org Eclipse] IDE, equipped with Windows Designer, we increased our ability to deliver new features quickly.<br /><br /> Also, taking advantage of extensive ImageJ libraries and 3-rd party plugins turned out to be crucial for the success of the project. ÂµManager can run either as a standalone application or as an ImageJ plugin. Tight integration with ImageJ enables us to switch to the ImageJ user interface whenever we need functionality that is not available in ÂµManager.<br />
+Cross platform development is most challenging when it comes to building user interfaces. The Java GUI front-end combined with a C++ back-end has proven to be a reliable and agile solution for the µManager project. By being able to rapidly prototype and deploy user interfaces in the [http://www.eclipse.org Eclipse] IDE, equipped with Windows Designer, we increased our ability to deliver new features quickly.<br /><br /> Also, taking advantage of extensive ImageJ libraries and 3rd party plugins turned out to be crucial for the success of the project. µManager can run either as a standalone application or as an ImageJ plugin. Tight integration with ImageJ enables us to switch to the ImageJ user interface whenever we need functionality that is not available in µManager.<br />
 
 === Interfaces for Multiple Dynamic Languages ===
 
