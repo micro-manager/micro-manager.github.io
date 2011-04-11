@@ -1,4 +1,4 @@
-{{Downloads_Sidebar}}
+
 <span>'''Updated on September 10, 2009'''</span><br /><br /> After you install Micro-Manager using the instructions for your platform, you can test-drive the software in demo-mode. The application will start in demo-mode by default after installation. To use Micro-Manager with an actual microscope you will need to configure the software for the specific hardware components that are part of your setup.<br /><br /> The configuration process includes editing configuration files and is described in the [documentation.php?object=Configguide Configuration Guide]. Installation includes a number of sample hardware configuration files (with extension *.cfg) provided only as an example or starting point - they need to be edited in order to use the system with any particular hardware setup.<br /><br />
 
 == Windows ==
@@ -12,3 +12,5 @@ Double click on the file MM_ImageJ.dmg. This will open a drive called 'MM_ImageJ
 == If you already use ImageJ ==
 
 Micro-Manager is packaged as an [http://rsb.info.nih.gov/ij/ ImageJ] plug-in and contains a copy of the entire ImageJ application, together with the Java run-time engine. Starting Micro-Manager will automatically start ImageJ as well. If you already use ImageJ and have it installed on your machine beforehand, the original installation will not be affected. Micro-Manager installs and uses its own copy of ImageJ. However, if you have any existing ImageJ macros or plugins that you want to use with Micro-Manager, you will have to copy them manually to the appropriate sub-folders within the root Micro-Manager folder.<br /><br /> Migrating your favorite ImageJ plugins to Micro-Manager installation should not cause any problems.
+
+{{Downloads_Sidebar}}
