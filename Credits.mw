@@ -19,6 +19,6 @@ Micro-Manager is built by extensively using other open source components and app
 
 Especially important precursor contributions for our project are from Wayne Rasband (ImageJ) and from Joachim Walter for his Image5D plugin which we extended and used for the multi-dimensional acquisition display.
 
-Development of Î¼Manager has only been possible thanks to the endurance of our early beta-testers, i.e. several members of the Vale lab (Eric Griffis, Andrew Carter, Goghta Goshima and others). Many thanks to Kurt Thorn and the [http://nic.ucsf.edu/ Nikon Imaging Center at UCSF] for help, testing, great ideas and suggestions. We are grateful for support (in the form of documentation, information, and/or use of equipment) from many microscope hardware vendors, including ASI, Andor, DVC, Stanford Photonics, Hamamatsu, Prior, Solamer, Nikon, and Zeiss.
+Development of Micro-Manager has only been possible thanks to the endurance of our early beta-testers, i.e. several members of the Vale lab (Eric Griffis, Andrew Carter, Goghta Goshima and others). Many thanks to Kurt Thorn and the [http://nic.ucsf.edu/ Nikon Imaging Center at UCSF] for help, testing, great ideas and suggestions. We are grateful for support (in the form of documentation, information, and/or use of equipment) from many microscope hardware vendors, including ASI, Andor, DVC, Stanford Photonics, Hamamatsu, Prior, Solamer, Nikon, and Zeiss.
 
 And of course, many thanks Ron for making it all happen.
