@@ -117,15 +117,15 @@ Example project files in this package are all updated with the new convention. T
 
 All adapter modules (DLL libraries) now support additional methods (see ModuleInterface.h):
 
-   extern</font> <font color="maroon">"C"</font> {
-    MODULE_API MM::Device* CreateDevice(<font color="blue">const</font> <font color="blue">char<nowiki>* name);</nowiki>
-    MODULE_API <font color="blue">void</font> DeleteDevice(MM::Device* pDevice);
-    MODULE_API <font color="blue">long</font> GetModuleVersion();
-    MODULE_API <font color="blue">long</font> GetDeviceInterfaceVersion();
-    MODULE_API <font color="blue">unsigned</font> GetNumberOfDevices();
-    MODULE_API <font color="blue">bool</font> GetDeviceName(<font color="blue">unsigned</font> deviceIndex, <font color="blue">char</font><nowiki>* name, </nowiki><font color="blue">unsigned</font> bufferLength);
-    <font color="red">MODULE_API</font> bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
-    <font color="red"> MODULE_API void InitializeModuleData();
+   extern "C" {
+    MODULE_API MM::Device* CreateDevice(const char<nowiki>* name);</nowiki>
+    MODULE_API void DeleteDevice(MM::Device* pDevice);
+    MODULE_API long GetModuleVersion();
+    MODULE_API long GetDeviceInterfaceVersion();
+    MODULE_API unsigned GetNumberOfDevices();
+    MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);
+    MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
+     MODULE_API void InitializeModuleData();
    }
 
 The only thing you need to add to your existing modules is the implementation of the method "InitializeModuleData()" (see example projects). This method will be called each time MMCore loads the adapter library. In this method we create a list of adapters available in the DLL library. For example, DemoCamera library (DemoCamera.cpp) has the following InitializeModuleData() method implementation:
