@@ -5,13 +5,13 @@ To create a device adapter you don't need access to the entire Micro-Manager sou
 
 Once you build a device adapter DLL you can just copy it in the Micro-Manager root application directory and load it either from the script (program) or from the configuration file (see Configuration Guide).
 
-= Plugin interface =
+== Plugin interface ==
 
 A device adapter is a software plugin for a specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the '''MMDevice.h'''. Device library (DLL file) can contain one or more device adapters. The library DLL must also implement plugin management functions defined in the '''ModuleInterface.h'''. In theory, these two files plus '''MMDeviceConstants.h''' (for error codes and other constants) are all you need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
 
 '''MMDevice.h, ModuleInterface.h''' and '''MMDeviceConstants.h''' essentially define the plugin interface and are also used by the MMCore module. Do not modify these files ï¿½ any discrepancy between your version and the one used to build the main application will likely result in the system crash or severe malfunction.
 
-= Utility classes and files =
+== Utility classes and files ==
 
 To make building device adapters easier, we provide a couple of additional files to use as building blocks. First, '''DeviceBase.h''' contains base class partial API implementations for all device classes. The idea is to derive your particular device adapter class from the appropriate class defined in the DeviceBase.h. This header file contains method implementations as well, so there is no corresponding cpp file.
 
@@ -29,27 +29,27 @@ DemoCamera project included in the installer is a simple example on how to creat
 
 '''DemoCamera.cpp''' includes relatively extensive comments to help you understand how the API methods should work.
 
-= Sensicam =
+== Sensicam ==
 
-Sensicam project is also included in the installer as an example of the 'real' camera driver. However, in order to build it you need to obtain Sensicam SDK (header files and libraries) from the camera manufacturer. This driver is relatively limited in functionality; code has very few comments, and should be used only as an example, mainly of how the external camera libraries are used to build the device adapter for Micro-Manager.
+Sensicam project is also included in the installer as an example of a 'real' camera driver. However, in order to build it you need to obtain Sensicam SDK (header files and libraries) from the camera manufacturer. This driver is relatively limited in functionality; code has very few comments, and should be used only as an example, mainly of how the external camera libraries are used to build the device adapter for Micro-Manager.
 
-= Nikon =
+== Nikon ==
 
 Nikon project is an example of the device adapter using serial interface. Micro-Manager adapters should not use serial ports directly, but rather by using system calls provided by the Micro-Manager device API.
 
-= Project settings for MSDEV =
+== Project settings for MSDEV ==
 
 All Micro-Manager C++ code is built with MSDEV 8.0 (Visual Studio 2005). You should use the same project settings as in the '''DemoCamera.vcproj''' or '''Sensicam.vcproj''', unless you have some really strong reason to do otherwise.
 
-= Testing and debugging device adapters =
+== Testing and debugging device adapters ==
 
-== C++ environment ==
+=== C++ environment ===
 
 Using the included project Test_MMCore_devkit, you can test and debug your device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation. Test_MMCore_devkit is also an example how you can build C++ applications with MMCore automated microscope API.
 
 Test_MMCore_devkit.cpp is a command line program which takes a configuration file and performs a simple exercise of the API functionality. It links to two pre-built libraries (included in the installation) mmcorer.lib (MMCore API module as static library) and ace.lib (ACE dynamic library).
 
-== Scripting environment ==
+=== Scripting environment ===
 
 To test devices from Micro-Manager scripting environment you can use "Scripting Console" (Tools menu). The scripting environment has a built-in reference to the main API module as "mmc" and log output as "console". Here is an example of a simple test script:
 
@@ -87,33 +87,33 @@ If you plan to actively use scripting you may want to look at the [[Micro-Manage
 
 The guide was written for standalone Java programming, but the BeanShell syntax is the same and in principle the examples are more or less applicable to the scripting environment. The main thing to keep in mind is that in Micro-Manager scripting console there is no need to instantiate the "core" module. The reference to the core API is already available as "mmc" object.
 
-= Changes from the previous releases =
+== Changes from the previous releases ==
 
-== API version 14 to 20 (1.1 release) ==
+=== API version 14 to 20 (1.1 release) ===
 
-=== New device type ===
+==== New device type ====
 
-'''Processor''' virtual device is added to the MMDevice API to enable real-time processing and closed loop control.
+'''Processor''' virtual device has been added to the MMDevice API to enable real-time processing and closed loop control.
 
-=== Continuous (burst) acquisition mode ===
+==== Continuous (burst) acquisition mode ====
 
 Camera API was extended to optionally support continuous acquisition mode. This mode allows cameras to run at full speed, under their own timing. Additional extensions were also made in the CoreCallback API to provide access to the circular buffer service.
 
-=== MMTime utility class ===
+==== MMTime utility class ====
 
 A new utility class MMTime was added to simplify cross-platform high-resolution timer functionality, for time-out loops, time stamps, etc.
 
-== API version 12 to 14 ==
+=== API version 12 to 14 ===
 
 This section is very important if you already have custom adapters for the previous API revision. Your existing adapters won't work with the newer Micro-Manager releases if you don't make changes listed below.
 
-=== DLL naming convention ===
+==== DLL naming convention ====
 
 All adapter DLL file names now have prefix "mmgr_dal_", e.g. mmgr_dal_hamamatsu.dll. However, there are no changes required for the configuration files. The prefix is internally appended by the MMCore when looking for the device adapter and it does not appear in any external naming convention.
 
 Example project files in this package are all updated with the new convention. The linker will add prefix to the output file name. You need to modify your existing projects to conform to the new file naming convention.
 
-=== Additional methods required in all adapter modules ===
+==== Additional methods required in all adapter modules ====
 
 All adapter modules (DLL libraries) now support additional methods (see ModuleInterface.h):
 
