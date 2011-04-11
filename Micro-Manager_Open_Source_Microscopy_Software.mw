@@ -1,28 +1,250 @@
-__NOTOC__
-<table cellspacing=15><tr><td>
-[[Image:NewLogo.png]]</td>
-<td>
-'''μManager is a software package for control of automated microscopes. Together with the image processing application [http://rsb.info.nih.gov/ij/ ImageJ], μManager provides a comprehensive, freely available, imaging solution.'''
-</td>
-</tr>
-</table> 
-===[[Download Micro-Manager Latest Release|Download]] the most recent version (2.0-gamma) from our website. Also check out our [[Screencasts| ScreenCast]] for a quick tour on getting started.===
-<table cellspacing=15><tr>
-<td>[[Image:MM_screenshot.png| Micro-Manager Screen Shot]]</td>
-<td>
-'''μManager has a simple and clean user interface, through which it lets you execute common microscope image acquisition tasks such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
-</td></tr></table>
+{| width="100%" align="center"
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="sbig" | WELCOME...
+|
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" valign="top" |
+Î¼Manager is a software package for control of automated microscopes. It lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. Î¼Manager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Device_Support  list of supported hardware]). Since Î¼Manager runs as a plugin to [http://rsb.info.nih.gov/ij/ ImageJ], image analysis routines are available within the application. Î¼Manager software is available for multiple platforms (Windows, Mac, and Linux) and is free. [downloads.php Download] the most recent version (1.3) from our website.
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|}
 
-=== [[Why_Micro-Manager%3F | HOW IS μMANAGER DIFFERENT?]] ===
-You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and limited device support...
-
-=== [[Who_should_use_Micro-Manager | IS μMANAGER FOR ME?]] ===
-With the help of users world-wide μManager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions.
-
-=== [[Device Support |  HARDWARE DEVICE SUPPORT]] ===
-Whether you can use μManager right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [[Device_Support|Check the current hardware list.]]
-
-=== [[Micro-Manager Programming Guide | EXTENDING μMANAGER]] ===
-Even if you are not interested in writing software code for your microscope, the open software architecture of μManager will benefit you. For instance, μManager's open device interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be executed within the GUI. Lastly, the μManager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager microscope device control.
-
-{{Main Page Sidebar}}
+{| width="100%" align="center"
+| width="273" bgcolor="#d4d4d4" valign="top" |
+{| width="100%" align="center"
+| colspan="4" bgcolor="#ffffff" |
+[[Image:a_pix.gif]]
+|- bgcolor="#358292"
+| bgcolor="#358292" |
+[[Image:a_pix.gif]]
+| class="wbig" width="235" height="29" bgcolor="#358292" | NEWS
+| bgcolor="#358292" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" bgcolor="#ffffff" |
+[[Image:a_pix.gif]]
+|}{| width="100%" align="center" bgcolor="#d4d4d4"
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[http://valelab.ucsf.edu/~nico/MMwiki/index.php/TetheredCam Support for Nikon and Canon DSLRs ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[http://valelab.ucsf.edu/~nico/MMwiki/index.php/GigE Support for GigE cameras ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[http://valelab.ucsf.edu/~nico/MMwiki/index.php/XCite_120PC_%26_Exacte Support for Lumen Dynamics XCite light sources ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[http://elegans.bio.nagoya-u.ac.jp/~tsukada/MicroManager/index.html Japanese translation of the Micro-Manager website ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[publications.html Publications making use of Micro-Manager ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[case.php?object=ASCB_2008 Î¼Manager at the 2008 ASCB meeting ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[https://valelab.ucsf.edu/~nico/MMwiki/index.php/Documentation More documementation on the Micro-Manager Wiki ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[http://valelab.ucsf.edu/~nico/MMwiki New FAQ and device support ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[support.php?object=Community Join the community ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|-
+| width="19" |
+[[Image:a_pix.gif]]
+| width="12" valign="top" |
+[[Image:arrow.gif]]
+| class="nav" width="223" |
+[case.php?object=Matlab Î¼Manager and Matlab ]
+| width="19" |
+[[Image:a_pix.gif]]
+|-
+| colspan="4" |
+[[Image:a_pix.gif]]
+|}
+|
+[[Image:a_pix.gif]]
+| width="574" valign="top" |
+{| width="100%" align="center" bgcolor="#ffffff"
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+| class="big" colspan="3" width="100%" height="29" |
+[[Image:a_pix.gif]]ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" |
+You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and proprietary drivers - [case.php?object=Why read more...]
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+| class="big" colspan="3" width="100%" height="29" align="right" |
+DECIDE IF YOU SHOULD GIVE IT A TRY[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" |
+If you like and use ImageJ, if you are new to microscopy, or if you have limited resources, Micro-Manager will be your natural first choice. But if you do have a comfortable budget, or if you are already used to another software package, you'll have to make a decision whether to invest time and energy in Î¼Manager. As with everything else, there are some pros and cons. [case.php?object=ProsAndCons Should you give it a try?]
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+| class="big" colspan="3" width="100%" height="29" |
+[[Image:a_pix.gif]]HARDWARE ISSUES
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" |
+If you are putting together or building a serious, automated microscopy system, open source solutions like this one may be a much better choice than anything else. You can use our default, ImageJ-compatible user interface, or build you own. Micro-Manager will even let you control your microscope from Matlab programs. In any case, whether you can use it right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Device_Support Check the current hardware list]
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+| class="big" colspan="3" width="100%" height="29" align="right" |
+EXTENDING Î¼MANAGER[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" |
+Even if you are not interested in writing software code for your microscope, the [http://valelab.ucsf.edu/~nico/MMweb/overview.php open software architecture] of Î¼Manager will benefit you. For instance, the [https://valelab.ucsf.edu/~arthur/mm_doc/html/class_c_device_base.html Open Device Interface] lets anyone write code to control microscope-related equipment, resulting a large and growing list of [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Device_Support supported equipment]. A [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Script_Panel_GUI scripting interface ] makes it possible to accomplish tasks that can not be execute withing the GUI. Lastly, the Î¼Manager [https://valelab.ucsf.edu/~arthur/mm_doc/html/class_c_m_m_core.html programming interface] can be used from many different environments (including Matlab) to develop new applications, all using the same Î¼Manager Microscope device control.
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+| class="big" colspan="3" width="100%" height="29" |
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|-
+|
+[[Image:a_pix.gif]]
+| class="reg" |
+|
+[[Image:a_pix.gif]]
+|-
+| colspan="3" |
+[[Image:a_pix.gif]]
+|}
+|
+[[Image:a_pix.gif]]
+|}
