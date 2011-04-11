@@ -1,43 +1,15 @@
-{{Downloads_Sidebar}}
-__NOTOC__
-The source code includes all Micro-Manager files (Java and C++) and all supporting files (project files, build scripts, etc.). However, to build the entire project a number of Open Source libraries and device SDKs must be installed. Instructions for building Micro-Manager are available for [[Full_Build_on_MacOS_X_Leopard |Mac]], [[Building_MM_on_Windows|Windows]], and [[Linux_installation_from_source_(Ubuntu)|Linux]].
+<span>'''Updated on November 16, 2009'''</span><br /><br /> The source code includes all Micro-Manager files (Java and C++) and all supporting files (project files, build scripts, etc.). However, to build the entire project a number of Open Source libraries and device SDKs must be installed. Instructions for building Micro-Manager are available for [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Full_Build_on_MacOS_X_Leopard Mac], [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Building_MM_on_Windows Windows], and [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Linux_installation_from_source_29 Linux].<br /><br />
 
 == Note about the source code licensing terms ==
 
-Micro-Manager is structured in three distinct layers: Graphical User Interface (GUI), Device Adapters and MMCore. All source files, except ones carrying a different license notice in the header, are copyright of University of California. GUI and Device adapters are distributed under the "[http://www.opensource.org/licenses/bsd-license.php BSD]" license, while MMCore is distributed under "[http://www.opensource.org/licenses/lgpl-license.php Lesser GPL]" license. License text files are included in the source package, and each file should have a header stating the exact type of license. A good starting point to learn more about the Open Source Code licensing is http://www.opensource.org/. If you have any questions or need some clarification regarding our licensing terms please let us know: [mailto:info@micro-manager.org info@micro-manager.org]
+Micro-Manager is structured in three distinct layers: Graphical User Interface (GUI), Device Adapters and MMCore. All source files, except ones carrying a different license notice in the header, are copyright of University of California. GUI and Device adapters are distributed under the "[http://www.opensource.org/licenses/bsd-license.php BSD]" license, while MMCore is distributed under "[http://www.opensource.org/licenses/lgpl-license.php Lesser GPL]" license. License text files are included in the source package, and each file should have a header stating the exact type of license. A good starting point to learn more about the Open Source Code licensing is http://www.opensource.org/. If you have any questions or need some clarification regarding our licensing terms please let us know: [mailto:info@micro-manager.org info@micro-manager.org]<br /><br />
 
-
-== Github repository for 2.0 ==
-
-The source code for 2.0-gamma is located on github at:
-
-https://github.com/micro-manager/micro-manager in the master branch. The branch "svn-mirror" is a copy of the 1.4 subversion repositoru (see below).
-
-== Subversion repository for 1.4 ==
+== Current release available through our subversion repository ==
 
 To access the subversion repository you will need a [http://subversion.tigris.org/ subversion client].
 
-https://valelab4.ucsf.edu/svn/micromanager2/trunk/ - Release 1.4<br />
-https://valelab4.ucsf.edu/svn/3rdpartypublic/ - 3rd party files needed for Release 1.4<br />
+https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4 - beta<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
 
-{{Note|There is a bug in the Subversion 1.8 client that prevents you from checking out our public repositories without a username. If Subversion asks you for a username and password, you can use the username "guest" (password "guest") as a workaround. Subversion 1.7.x clients should not experience this problem.}}
+== Previous source code releases ==
 
-{{Note|Sometimes, a fresh checkout of the 3rdpartypublic repository will fail (possibly due to the subversion server timeout settings) with <code>ra_surf: The server sent a truncated HTTP response body</code>.  To work around this, run <code>svn cleanup</code> and then <code>svn up</code> per [http://stackoverflow.com/a/33996416] (on Windows, Tortoise SVN users can right click inside the 3rdpartypublic directory > TortoiseSVN > Cleaup ... > Break locks (make sure it's checked) > OK).  Then continue with right-click, "SVN update".  This timeout will happen twice during boost checkout because of the large file sizes.}}
-
-To build Micro-Manager 1.4, you should place the micromanager2 (trunk) and 3rdpartypublic repositories in the same directory. For example, run the following from your projects directory:
-
-<code><pre>svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
-svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic</pre></code>
-
-More information on how to build Micro-Manager can be found here:
-* [[Building Micro-Manager Device Adapters]]
-* [[Building and debugging Micro-Manager source code]]
-
-== Source code for previous releases ==
-
-https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />
-https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
-
-== Code Timeline and Source Browser ==
-
-If you just want to take a look at the source code and recent development activity check without needing an SVN client see the [https://valelab.ucsf.edu/trac/micromanager/timeline timeline of recent code submissions] and the [https://valelab.ucsf.edu/trac/micromanager/browser source code browser].
+[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/micro-manager-1.1.47.tar.gz <span>'''Micro-Manager source code 1.1.47, (January 28, 2008) tar.gz package, 1.4 MB <span>''''''</span>'''</span>]<br />[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/micro-manager-1.0.69.tar.gz <span>'''Micro-Manager source code 1.0.69, (May 1, 2007) tar.gz package, 1.2 MB <span>''''''</span>'''</span>]<br />
