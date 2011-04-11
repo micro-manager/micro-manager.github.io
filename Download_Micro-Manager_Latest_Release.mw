@@ -9,8 +9,7 @@
 ** No Name Laser Combiner
 ** XCiteExacte Fluorescence Microscopy Illumination system - thanks to Mission Bay Imaging
 ** Meiji Techno EMZ focus stage - thanks to Koen De Vleeschauwer
-** Tethered Camera adapter for Canon and Nikon cameras - thanks to Koen De Vleeschauwer
-**: this uses DSLRRemote, NKRemote, or PSRemote libraries
+** Tethered Camera adapter for Canon and Nikon cameras - thanks to Koen De Vleeschauwer<br>(uses DSLRRemote, NKRemote, or PSRemote libraries)
 ** GigECamera - thanks to David Marshburn
 ** Coherent Sapphire Laser
 * Device Adapter bug fixes and improvements
