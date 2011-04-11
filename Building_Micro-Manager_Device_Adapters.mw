@@ -140,3 +140,6 @@ The only thing you need to add to your existing modules is the implementation of
    }
 
 The first parameter in "AddAvailableDeviceName", is the adapter name and the second one is a short description.
+
+
+{{Devices_Sidebar}}
