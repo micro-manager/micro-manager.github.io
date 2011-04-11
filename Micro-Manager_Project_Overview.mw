@@ -40,7 +40,9 @@ The most important design guidelines in our project were modularity and extensib
 
 === Separation of User Interface and Services ===
 
-The ÂµManager software and derived applications are designed around the client-server paradigm. In other words, the front-end GUI is strictly separated from the hardware control functionality by an abstract automated microscope API. All commands follow a simple request-response model, with the GUI sending requests and the MMCore servicing them.<br /><br /> Client-server design enables easy and robust implementation of a distributed software system where multiple clients and servers communicate with each other over the network. Client-Server design also decouples the GUI from the functional module, making development and extending much easier than with monolithic design. The current version of ÂµManager does not support network or multi-user access, but the client/server design makes such extensions possible without significant changes to the existing software.<br />
+The µManager software and derived applications are designed around the client-server paradigm. In other words, the front-end GUI is strictly separated from the hardware control functionality by an abstract automated microscope API. All commands follow a simple request-response model, with the GUI sending requests and the MMCore servicing them.
+
+Client-server design enables easy and robust implementation of a distributed software system where multiple clients and servers communicate with each other over the network. Client-Server design also decouples the GUI from the functional module, making development and extending much easier than with monolithic design. The current version of µManager does not support network or multi-user access, but the client/server design makes such extensions possible without significant changes to the existing software.
 
 === Portability ===
 
