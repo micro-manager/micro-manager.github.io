@@ -187,3 +187,5 @@ Instead of executing the initialization script or a program to load devices, cre
 <div class="source"> core.loadSystemConfiguration("MMConfig.cfg");</div>
 
 <br /> In this case MMConfig.cfg is a text file in containing a list of simple commands to build the desired system state: devices, labels, equipment, properties, and configurations. The format of this file and other topics related to configuring the system are covered in [documentation.php?object=Configguide Configuration Guide]. <br /><br /> The current system configuration can be saved by the complementary saveConfiguration() command. For example you can build-up the system by using script commands described in this Guide and when you verify that everything is working, you can save the configuration in the file so that it can be recalled in the future with the single command. <br />
+
+{{Documentation_Sidebar}}
