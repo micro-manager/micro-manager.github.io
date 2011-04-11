@@ -118,13 +118,13 @@ Example project files in this package are all updated with the new convention. T
 All adapter modules (DLL libraries) now support additional methods (see ModuleInterface.h):
 
    extern "C" {
-    MODULE_API MM::Device* CreateDevice(const char<nowiki>* name);</nowiki>
-    MODULE_API void DeleteDevice(MM::Device* pDevice);
-    MODULE_API long GetModuleVersion();
-    MODULE_API long GetDeviceInterfaceVersion();
-    MODULE_API unsigned GetNumberOfDevices();
-    MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);
-    MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
+     MODULE_API MM::Device* CreateDevice(const char<nowiki>* name);</nowiki>
+     MODULE_API void DeleteDevice(MM::Device* pDevice);
+     MODULE_API long GetModuleVersion();
+     MODULE_API long GetDeviceInterfaceVersion();
+     MODULE_API unsigned GetNumberOfDevices();
+     MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);
+     MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
      MODULE_API void InitializeModuleData();
    }
 
@@ -132,11 +132,11 @@ The only thing you need to add to your existing modules is the implementation of
 
    MODULE_API void InitializeModuleData()
    {
-   AddAvailableDeviceName(g_CameraDeviceName, "Demo camera");
-   AddAvailableDeviceName(g_WheelDeviceName, "Demo filter wheel");
-   AddAvailableDeviceName(g_ObjectiveDeviceName, "Demo objective turret");
-   AddAvailableDeviceName(g_StageDeviceName, "Demo stage");
-   AddAvailableDeviceName(g_LightPathDeviceName, "Demo light path");
+      AddAvailableDeviceName(g_CameraDeviceName, "Demo camera");
+      AddAvailableDeviceName(g_WheelDeviceName, "Demo filter wheel");
+      AddAvailableDeviceName(g_ObjectiveDeviceName, "Demo objective turret");
+      AddAvailableDeviceName(g_StageDeviceName, "Demo stage");
+      AddAvailableDeviceName(g_LightPathDeviceName, "Demo light path");
    }
 
 The first parameter in "AddAvailableDeviceName", is the adapter name and the second one is a short description.
