@@ -1,5 +1,5 @@
 __NOTOC__
-= Introduction =
+== Introduction ==
 
 To create a device adapter you don't need access to the entire Micro-Manager source code. All files required to build new device adapters for Micro-Manager on the Windows platform are included in the MMDeviceKit-win installer. For devices with special drivers and hardware boards, e.g. cameras, you will need to also install manufacturer's SDK and all required low-level drivers and libraries.
 
