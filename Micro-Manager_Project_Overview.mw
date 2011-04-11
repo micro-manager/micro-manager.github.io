@@ -33,7 +33,9 @@ Besides core module MMCore, the µManager software consists of the following com
 
 === Core Services ===
 
-The central component is the Core Services Module (MMCore) - a hardware abstraction layer providing services common to all automated microscopes. It also acts as insulation between the intricacies of particular device drivers and the user interface. MMCore provides two programming interfaces: â€œTopâ€ API (from GUI to MMCore) and â€œBottomâ€ API (from device drivers to MMCore). The "Top API" gives the designer of the GUI the ability to relatively easily implement user interfaces and entire applications that are essentially hardware independent. The "Bottom API" is a C/C++ plugin interface allowing the programmer to support particular devices with a minimal amount of coding effort and minimal understanding of how the entire system works.<br /><br /> MMCore provides the following device-independent services:
+The central component is the Core Services Module (MMCore) - a hardware abstraction layer providing services common to all automated microscopes. It also acts as insulation between the intricacies of particular device drivers and the user interface. MMCore provides two programming interfaces: a "Top" API (from GUI to MMCore) and a "Bottom" API (from device drivers to MMCore). The "Top API" gives the designer of the GUI the ability to relatively easily implement user interfaces and entire applications that are essentially hardware independent. The "Bottom API" is a C/C++ plugin interface allowing the programmer to support particular devices with a minimal amount of coding effort and minimal understanding of how the entire system works.
+
+MMCore provides the following device-independent services:
 
 * Flexible hardware configuration facilities to support defining, naming and adding new devices
 * Run-time device discovery and on-the-fly loading and unloading of devices
