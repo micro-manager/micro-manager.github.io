@@ -21,3 +21,5 @@ A few additional commands have been added to the Beanshell environment in Micro-
   update("y"); // Make sure Beanshell uses the most recent definition of method "y"
   update(); // Update all methods in the current namespace
 </pre>
+
+{{Documentation_Sidebar}}
