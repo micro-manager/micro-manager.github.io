@@ -1,0 +1,231 @@
+= Micro-Manager Version Archive =
+
+== Latest releases ==
+
+=== Micro-Manager 1.3.47 (November 1, 2010) ===
+
+- [http://valelab.ucsf.edu/~MM/MMSetup_1.3.47.exe Windows XP], 13 MB<br /> - [http://valelab.ucsf.edu/~MM/Micro-Manager1.3.47.dmg Mac OS X (Universal Binary)], 34 MB<br /> - [http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux Debian/Ubuntu Linux]
+
+* New devices:
+** Agilent Laser Combiner
+** Lumen Dynamics (Exfo) X-Cite 120PC
+** Olympus MT20 (Michael Mitchell, EMBL)
+** Pololu Maestro Servo Controller
+* Several bug fixes and improvements in device code:
+** Andor camera
+** Leica camera
+** Mad City Labs motion controller
+** NikonTI microscope
+** Olympus microscope
+** PCO camera
+** Photometrics camera
+** QImaging camera
+** Scion camera
+** Serial adapter
+** Spot camera
+** SutterLambda controller
+** TheImagingSource camera
+* Bug fixes in the user interface:
+** Contrast Panel
+** Multi-dimensional acquision
+** Slide Explorer Plugin
+
+Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limited to bug fixes.<br />New features in Micro-Manager will be introduced in version 1.4.
+
+=== Micro-Manager 1.3.43 (December 23, 2009) ===
+
+- [http://valelab.ucsf.edu/~MM/MMSetup_1_3_43.exe Windows XP, 9 MB]<br /> - [http://valelab.ucsf.edu/~MM/Micro-Manager1.3.43.dmg Mac OS X(Universal Binary), 34 MB]<br />
+
+* Newly supported devices
+** SLM/Projector support
+** Andor Laser Combiner (not yet tested!)
+** Prior NanoScanZ
+* Improved Device Support
+** Nikon Eclipse Ti microscope now works with latest driver 2.0.2 from Nikon
+** Nikon Eclipse Ti microscope: user can now select Speed and Tolerance of stage axes
+** Nikon IntensiLight Neutral Density filters
+** DemoCam now supports color image generation
+** Update to Photometrics / Roper Scientific libraries (thanks to Photometrics)
+** Fix image freezing problem seen with Hamamatsu cameras
+** Improved Support for QImaging QCam (thanks to Jeff Kuhn)
+** Improved Support for Apogee Cameras (thanks to Bob Dougherty)
+** Zeiss Definite Focus improvements
+* Configuration & GUI & Log Level
+** Improved Plugin Mechanism
+** More informative error messages, better exception handling
+** Device Properties will now be nicely sorted in drop downs
+** Fixed a problem with saving current configuration when specifying a file name
+** Image Gamma slider control
+** Improved stability of Live Mode
+** Multi-D acquisition: Added per-channel skip Z-stack option
+* Build Projects & Procedures
+** OS X packages are now Universal (PPC, x86, x64) and can be run as 64-bit applications
+** The Windows Project files now use relative paths
+** Software is built daily for both Windows and OS X
+** Boost libraries are now used for logging, Posix time, and Thread ID functions
+
+== Previous releases ==
+
+=== Micro-Manager 1.3.41 beta, (October 12, 2009) ===
+
+- [http://valelab.ucsf.edu/~MM/MMSetup_1_3_41c.exe Windows XP, 9 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.41a.dmg Mac OS X(Intel), 18 MB]<br />
+
+* New supported devices
+** Scion cameras (Douglas Remsberg, Scion)
+** Diagnostic SPOT cameras (Windows, Mac)
+** TWAIN cameras (operational on Leica cameras)
+** Leica DM6000 microscope
+** Thorlabs DCxxxx LED controllers
+** Thorlabs Filterwheel
+** Coherent Cube
+** Neos AOTF
+* A new python wrapper for the Micro-Manager core
+* Fixes to keyboard shortcuts
+* Live display of average and standard deviation of images
+* Re-orderable positions lists
+* Many fixed bugs
+
+=== Micro-Manager 1.3.40 beta, (July 21, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_40.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.40.dmg Mac OS X(Intel), 17 MB]<br /> - [http://valelab.ucsf.edu/~MM/Micro-Manager_Mac(PPC)_1_3_40.dmg Mac OS X(PPC), 16MB)]
+
+* Major upgrade to autofocus system
+** New integrated user interface for hardware and image-based autofocus
+** Support for Nikon Perfect Focus, Zeiss Definite Focus, Olympus ZDC, ASI CRIFF
+** Image-based autofocus plugins
+** New API to write your own autofocusing algorithm in Java or C++
+* Zeiss Colibri illuminator
+* Olympus BX61 support (by Shalin Mehta, National University of Singapore)
+* Andor linux patches (by Karl Bellve, UMass)
+* Thorlabs SC10
+* Improvements to configuration editing
+* Re-vamped gui for Multi-Dimensional Acquisition
+* Mouse-scroll-wheel works in scripting panel
+* NikonTI TIRF attachment support
+* Leica DMR microscope support
+
+=== Micro-Manager 1.3.39 beta, (May 15, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_39.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.39.dmg Mac OS X(Intel), 16 MB]<br />
+
+* Fixed build bugs
+* Drag stage with hand tool
+* New Mad City Stage versions
+* Improved registration dialog
+* Float property value bug fixed
+* Position list made editable
+* Andor camera freezing snap bug fixed
+* MF Shutter issues fixed
+
+=== Micro-Manager 1.3.38 beta, (April 29, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_38.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.38.dmg Mac OS X(Intel), 16 MB]<br /> - [http://endrov.net/downloadPublic/debs/micromanager/ Debian package] (maintained by Johan Henriksson)
+
+* New image-based autofocus (Contribued by 100x Imaging)
+* Extensive fixes to various PVCAM adapter bugs
+* Linux patches by Johan Henriksson and Karl Bellve
+* Improved code logging
+* Andor properties problem fixed
+* Image5D to hyperstack conversion improved
+* Adapters for NI, PI, and Thorlabs by Brian Ashcroft
+* Core API changes for multiple cameras
+
+=== Micro-Manager 1.3.37 beta, (April 9, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_37.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.37.dmg Mac OS X(Intel), 16 MB]<br />
+
+* Fixed mouse moving the stage in live mode
+* Physical ROI now visible in Image5D Snap
+* Multi-D Acquisition settings a restored after a Multi-D run
+* Fixed z-offset problem with Multi-D Acq
+* Beanshell scripts for unit testing of device adapters
+* Fixed sensicam binning problem (Franz)
+* Metadata viewer now saves contrast and colors
+* Image5D window now acquires a name when saved
+* Improved Multi-D Acquisition gui logic
+
+=== Micro-Manager 1.3.36 beta, (April 3, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_36.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.36.dmg Mac OS X(Intel), 16 MB]<br />
+
+* Olympus focusing (z stage) bug fixed
+* QCam Mac live mode hanging bug fixed
+* Fixed memory leaks in Multi-D Acquisition
+* Pixel size calibration fixed to propagate from Multi-D Acquisition
+* Quantix Photometrics Error 22 bug corrected
+* Introduced new global script methods: doc(), inspect(), update()
+* ASI Well Plate Transfer Robot adapter added
+* Internationalization bug fix
+* Histogram scaling restored
+
+=== Micro-Manager 1.3.34 beta, (March 18, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_34.exe Windows XP, 5.4 MB]<br />
+
+* PrecisExcite bug fix
+
+=== Micro-Manager 1.3.33 beta, (March 16, 2009) ===
+
+- [http://valelab.ucsf.edu/%7EMM/MMSetup_1_3_33.exe Windows XP, 5.4 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.33.dmg Mac OS X(Intel), 14.9 MB]<br />
+
+* PrecisExcite adapter
+* Made OS X 10.4 compatible again
+
+=== Micro-Manager 1.3.32 beta, (March 13, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.32.dmg Mac OS X(Intel), 14.9 MB]<br /><br />
+
+=== Micro-Manager 1.3.31 beta, (March 11, 2009) ===
+
+- [http://valelab.ucsf.edu/%7EMM/MMSetup_1_3_31.exe Windows XP, 5.4 MB]<br /> - [http://valelab.ucsf.edu/~MM/Micro-Manager_Mac(PPC)_1_3_31.dmg Mac OS X(PPC), 26 MB]<br /><br />
+
+=== Micro-Manager 1.3.30 beta, (March 4, 2009) ===
+
+- [http://valelab.ucsf.edu/%7EMM/MMSetup_1_3_30.exe Windows XP, 5.4 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.30.dmg Mac OS X(Intel), 14.9 MB]<br /><br />'''Bugs are seen in some PVCAM cameras in this release:'''<br />
+
+* Auto shutter fails to stay open during exposure
+* Burst mode sometimes stops unexpectedly
+
+'''Bug fixes in this release:'''
+
+* Andor adapter: fixes to make Luca R work
+* PCO adapter: fixed bug in binning (Franz)
+* Olympus adapter: various bug fixes
+* Leica: added control for Halogen Lamp (Prashanth, 100xImaging)
+* PVCAM: various bug fixes (various authors)
+
+=== Micro-Manager 1.3.24 beta, (February 24, 2009) ===
+
+- [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.24.dmg Mac OS X(Intel), 14.9 MB]<br />
+
+* Corrected driver complement
+
+=== Micro-Manager 1.3.23 beta, (February 17, 2009) ===
+
+- [http://valelab.ucsf.edu/%7EMM/MMSetup_1_3_23.exe Windows XP, 5.4 MB]
+
+=== Micro-Manager 1.3.22 beta, (February 13, 2009) ===
+
+- Mac OS X(Intel), 14.1 MB (Missing drivers; do not use!)<br /> - [http://valelab.ucsf.edu/~MM/micro-manager/distribution/Mac/Micro-Manager_Mac(PPC)_1.3.22.dmg Mac OS X(PPC), 26 MB]<br /><br /><br /> This new release includes:
+
+* Faster live mode (using camera sequence mode, in collaboration with [http://www.100ximaging.com/ 100XImaging])
+* New Micro-Manager plugin mechanism (provided by 100XImaging)
+* Keratocyte Tracker plugin (provided by 100XImaging)
+* New "Acquire" button collects series of still images with metadata
+* Keyboard commands to move stages
+* New autofocussing mechanism (provided by 100XImaging)
+* Improved Script Panel (new interactive Beanshell interpreter)
+* Extensions to the scripting interface
+* Many minor bugfixes in all parts of the application
+* New Devices:
+** [http://www.kameras.abs-jena.de/produkte_de.html ABSCameras] (provided by Michael HimmelReich)
+** [http://www.arduino.cc/ Arduino] digital IO board
+** Piper (Stanford Photonics cameras, provided by [http://www.stanfordphotonics.com/ Stanford Photonics])
+** Leica DMI microcopes (provided by [http://www.100ximaging.com 100XImaging])
+* Device updates:
+** Andor added external triggers and updated support for new cameras
+** Nikon TE2000 added filter wheel (100X Imaging)
+** Moved DAZStage, DAShutter and MultiShutter into adapter Utilities
+** Added StateDeviceShutter (in Utilities) that enables using a filter wheel as a shutter
+
+Previous releases: [[downloads.php?object=windows_1_2  Windows] | [downloads.php?object=mac_1_2 Mac] ]
