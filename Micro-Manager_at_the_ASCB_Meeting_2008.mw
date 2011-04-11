@@ -2,7 +2,6 @@ For the third year in a row, we presented the Micro-Manager software in a booth 
 
 {|
 | 
-</script>
 
 | <font size=-1>Drosophila S2 cell expressing GFP-histone and cherry-tubulin (from Eric Griffis). Images were taken during the ASCB meeting at 20 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 66.6 msec, total time to acquire a single time point (10 images) was less than 700 msec. Shown here is a maxmimum intensity projection at each time point. </font>
 |}
