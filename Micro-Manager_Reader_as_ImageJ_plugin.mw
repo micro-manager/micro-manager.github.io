@@ -1,5 +1,3 @@
-= Micro-Manager Reader as ImageJ plugin =
-
 With this ImageJ plugin you can read Micro-Manager acquistion files without the need to install Micro-Manager software. Copy the jar file below to your ImageJ plugins directory.<span>''''''</span>
 
 == Latest release ==
