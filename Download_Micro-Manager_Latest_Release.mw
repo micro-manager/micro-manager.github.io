@@ -14,37 +14,37 @@
 ** Coherent Sapphire Laser
 * Device Adapter bug fixes and improvements
 ** Princeton Instruments camera
-**: - correct handling of output ports
+*** correct handling of output ports
 ** Spot Camera
-**: - unified code should be running on Windows and OS X
+*** unified code should be running on Windows and OS X
 ** Sutter Lambda
-**: - some patches for various communication glitches on Lambda 10-2 and Lamdba SC
+*** some patches for various communication glitches on Lambda 10-2 and Lamdba SC
 ** DemoCamera and others
-**: - cleanup of superfluous references to boost libraries.
+*** cleanup of superfluous references to boost libraries.
 ** Andor Camera
-**: - support for iXon features such as: count convert, optacquire, various filters
-**: - support for isolated crop mode
-**: - fix bug in binning
+*** support for iXon features such as: count convert, optacquire, various filters
+*** support for isolated crop mode
+*** fix bug in binning
 ** SimpleAutofocus
-**: - fix a problem where the adapter would crash if selected as a 'synchronized' device.
-**: - performance improvement in median filter algorithm
-**: - fix a compile problem only appearing on Linux g++
+*** fix a problem where the adapter would crash if selected as a 'synchronized' device.
+*** performance improvement in median filter algorithm
+*** fix a compile problem only appearing on Linux g++
 ** NikonTI
-**: - more patches
+*** more patches
 ** DTOpenLayer
-**: - improve handling of voltage ranges
+*** improve handling of voltage ranges
 ** Yokogawa CSUX
-**: - ensure CSUX hub supports the brightfield port before creating bright field property
+*** ensure CSUX hub supports the brightfield port before creating bright field property
 ** Scion
-**: - revert to adapter from about February 2010
+*** revert to adapter from about February 2010
 ** PCO Camera
-**: - add OnEMLeftROI property
-**: - add skip frame support
+*** add OnEMLeftROI property
+*** add skip frame support
 * Bug fixes in core & acquisition:
 ** TileCreatorDlg.java
-**: - correct numbering of columns
-**: - only add Z to meta data if it's in use,
-**: - write column and row into metadata.
+*** correct numbering of columns
+*** only add Z to meta data if it's in use,
+*** write column and row into metadata.
 ** MMAcquisitionEngineMT.java - fix a problem where Autofocus was not restored after the acquisition
 ** MMCore.cpp - fix a problem where one mis-communicating device prevents user from correcting the hardware configuration.
 
