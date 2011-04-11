@@ -1,6 +1,8 @@
-You can reach Micro-Manager developers and other users at the [https://image.sc image.sc forum ].  Please use the tag "micro-manager" for all your posts. Use it to ask questions, and provide comments or suggestions.  
+Our mailing list is hosted on [http://sourceforge.net SourceForge]. You can use it to ask questions to the Micro-Manager developers and other users, and provide comments and suggestions. We also use the mailing list to announce new releases. The list has a volume of about 150 mails per month. The archives of the list might already contain the answer to your question.
 
-Archives of the mailing list that ran between 2006-2020:
-[| [http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general Browse/Search] | [http://micro-manager.3463995.n2.nabble.com/ Search at Nabble]]
+{|
+|
+[[https://lists.sourceforge.net/lists/listinfo/micro-manager-general Subscribe] | [http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general Browse] | [http://sourceforge.net/search/?group_id=167393&type_of_search=mlists Search] | [http://n2.nabble.com/Micro-Manager-f3463995.html Search at Nabble]]
+|}
 
-{{Support_Sidebar}}
+Support is also available from the company [http://missionbayimaging.com/ Mission Bay Software]. Services provided include subscription-based configuration support as well as custom software development.
