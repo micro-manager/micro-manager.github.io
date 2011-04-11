@@ -15,7 +15,7 @@ The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF is
 * Intuitive user interface and simple installation procedure
 * Maximum extensibility through support for scripting and dynamic programming languages
 * Maximum speed and efficiency in all control paths to allow for very high speed acquisition rates
-* Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automatic microscope â€“ regardless of type, manufacturer and native drivers.
+* Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automatic microscope, regardless of type, manufacturer and native drivers.
 * Programmatic interfaces to 3rd-party analysis environments (such as Matlab) to enable "intelligent data collection" -- i.e. analysis driven acquisition.
 
 == Software Architecture ==
