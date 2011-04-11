@@ -51,7 +51,7 @@ MMCore provides the following device-independent services:
 
 == General design features ==
 
-The most important design guidelines in our project were modularity and extensibility. By following these broad principles we tried to circumvent serious problems one encounters with the currently available commercial software: monolithic structure and lack of flexibility. At the same time we wanted to create a microscopy imaging application that will be easy to install and a pleasure to use for a broad range of users, especially non-programmers. Ease-of-use and flexibility are often perceived as conflicting requirements, but we think that these two goals can be achieved simultaneously without compromise. The following sections briefly touch upon the design principles and tools we used in creating the ÂµManager software.<br />
+The most important design guidelines in our project were modularity and extensibility. By following these broad principles we tried to circumvent serious problems one encounters with the currently available commercial software: monolithic structure and lack of flexibility. At the same time we wanted to create a microscopy imaging application that will be easy to install and a pleasure to use for a broad range of users, especially non-programmers. Ease-of-use and flexibility are often perceived as conflicting requirements, but we think that these two goals can be achieved simultaneously without compromise. The following sections briefly touch upon the design principles and tools we used in creating the µManager software.<br />
 
 === Separation of User Interface and Services ===
 
