@@ -1,5 +1,3 @@
-= Overview of the documentation =
-
 For a tutorial introduction for using Micro-Manager software you've just downloaded, or to get an overview of its basic capabilities, the [documentation.php?object=Userguide User's Guide] is the best starting point. Here you'll find out how to navigate through the application's menus and dialogs and how to perform basic instrument control and acquisition. The [documentation.php?object=Userguide User's Guide] assumes you are running the software either in the "demo" mode (installation default), or that you are working with a previously configured hardware setup.
 
 Configuring Micro-Manager software to work with your particular hardware setup is a separate topic, covered in detail in the [documentation.php?object=Configguide Configuration Guide]. Micro-Manager uses configuration files in textual, human-readable form to load appropriate device drivers and to adapt user interface to particular properties of your hardware setup. The [documentation.php?object=Configguide Configuration Guide] explains how to write new configuration files, how to edit existing ones, and how to troubleshoot configuration-related run-time errors.
