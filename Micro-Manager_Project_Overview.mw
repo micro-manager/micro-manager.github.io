@@ -67,7 +67,7 @@ Cross platform development is most challenging when it comes to building user in
 
 === Interfaces for Multiple Dynamic Languages ===
 
-The core µManager API is designed to be used from dynamic languages such as Python and Ruby as well as from C++ and Java. The bindings for each programming language are generated automatically from the C++ header files, using the [http://www.swig.org/ SWIG] interface generator. Practically any programming language supported by SWIG can be used for programming ÂµManager. Including support for each additional programming language in the standard software build requires a relatively small effort. ÂµManager operation outside of its standard GUI and ImageJ environment was successfully demonstrated by controlling a fully automated microscope and digital camera from Matlab, with a relatively simple set of commands.<br />
+The core µManager API is designed to be used from dynamic languages such as Python and Ruby as well as from C++ and Java. The bindings for each programming language are generated automatically from the C++ header files, using the [http://www.swig.org/ SWIG] interface generator. Practically any programming language supported by SWIG can be used for programming µManager. Including support for each additional programming language in the standard software build requires a relatively small effort. µManager operation outside of its standard GUI and ImageJ environment was successfully demonstrated by controlling a fully automated microscope and digital camera from Matlab, with a relatively simple set of commands.<br />
 
 === Installation and Configuration ===
 
