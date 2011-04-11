@@ -1,2 +1,2 @@
-<div class=sidebar><div align=center class=sidebar_title>{{{title}}}</div>
+<div style="padding:7px;position: absolute; left:0px; top:0px;width:165px;"><h2><div align=center style="font-family:Arial;letter-spacing:1px;font-size:16px;font-weight:bold;color:black;text-decoration:none;padding:3px;text-transform:lowercase;">{{{title}}}</div></h2>
 {{{content}}}</div>
