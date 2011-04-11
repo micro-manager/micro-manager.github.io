@@ -1,5 +1,4 @@
 '''Micro-Manager, Frequently Asked Questions'''
-
 === Does Micro-Manager work with ... camera/microscope/etc? ===
 Check the list of [[Device Support|supported hardware]].  If you are unsure, post your question to the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Mailing List]
 
