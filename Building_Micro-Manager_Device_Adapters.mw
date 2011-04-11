@@ -124,7 +124,8 @@ All adapter modules (DLL libraries) now support additional methods (see ModuleIn
      MODULE_API long GetDeviceInterfaceVersion();
      MODULE_API unsigned GetNumberOfDevices();
      MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);
-     MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
+     MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name,
+                                          unsigned bufferLength);
      MODULE_API void InitializeModuleData();
    }
 
