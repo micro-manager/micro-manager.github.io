@@ -28,7 +28,8 @@ The central component is the Core Services Module (MMCore) - a hardware abstract
 * Run-time device discovery and on-the-fly loading and unloading of devices
 * Automatic metadata generation and image annotation including the entire state of the hardware system at the time of acquisition
 * Device synchronization (e.g. camera acquisition with stages and filter wheels)
-* High resolution timing (for high speed sequence acquisition)<br /> â€¢ Saving image files with automatic name generation and acquisition directory management
+* High resolution timing (for high speed sequence acquisition)
+* Saving image files with automatic name generation and acquisition directory management
 * Commonly used acquisition modes such as multiple channel, Z-stack and time-lapse
 
 [[Image:core_module.gif|Core module block-diagram]]<br /> Figure 2, MMCore module block diagram<br /><br />
