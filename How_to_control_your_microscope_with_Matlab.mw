@@ -9,14 +9,17 @@
 
 Matlab has an extensive Java support which makes things easy, just do the following:
 
-# Install Micro-Manager in a path without any spaces.
-# Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable.
-# In command prompt<br /><big><span><font face="monospace"> >> edit classpath.txt</font></span> </big><br/> Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end. 
-# In command prompt<br /><big><span><font face="monospace"> >> edit librarypath.txt </font></span></big><br /> Add the location of the dll files.
-# Restart Matlab
-# Create a java object of class MMCore:<br /><pre>mmc = MMCore;</pre>
+ # Install Micro-Manager in a path without any spaces.
+ # Add the path with the drivers (all the .dll files) to the windows PATH enviromental variable.
+ # In command prompt<br /><big><span><font face="monospace"> >> edit classpath.txt</font></span> </big>
 
-That's it. Now you can call all the Micro-Manager methods through that object. <br /><br /> For more extensive interface between Matlab and Micro-Manager, please take a look at the Microscopy toolbox.
+Add the location of the jar file you just installed (its in the Micro-Manager folder), include the .jar at the end. 
+ # In command prompt<br /><big><span><font face="monospace"> >> edit librarypath.txt </font></span></big><br /> Add the location of the dll files.
+ # Restart Matlab
+ # Create a java object of class MMCore
+     mmc = MMCcore;</font></span></big>
+
+That's it. Now you can call all the Micro-Manager methods through that object. <br /><br /> For more extensive interface between Matlab and Micro-Manager, please take a look at the Microscopy toolbox. 
 
 == Microscopy toolbox for Matlab ==
 
