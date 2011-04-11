@@ -1,14 +1,5 @@
 Micro-Manager Configuration Guide <span>'''Created on July 31, 2006 by Nenad Amodaj<br /> Revised on January 31, 2007<br /> Revised on August 21, 2008 by Nico Stuurman<br />'''</span><br />
 
-= Table of Contents =
-
-* [#Introduction Introduction]
-* [#Wizard Hardware Configuration Wizard]
-* [#PresetGroups Configuration Presets]
-* [#Startup Preset Startup Presets]
-* [#Calibration Pixel Size Calibration]
-* [#Syntax Configuration File Syntax]
-
 = Introduction =
 
 In order to control a specific microscope, the Micro-Manager application needs to know what hardware is part of the microscope, load and initialize the appropriate drivers, define configuration presets, create labels for device positions, etc.. Typically, on startup the Micro-Manager application loads a configuration file containing commands configuring all aspects of the system. To start using Micro-Manager, you will first need to create a configuration file specific for your system
