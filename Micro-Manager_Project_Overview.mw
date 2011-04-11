@@ -1,5 +1,6 @@
 <span>'''August 2, 2006'''</span>
 
+__NOTOC__
 = Introduction =
 
 The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF is currently funded by the Sandler Foundation. Its main objective is to provide a universal, flexible and low-cost software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time ÂµManager project leverages other Open Source tools and components to the maximum extent possible.<br /><br /> ÂµManager software currently serves a double purpose:
