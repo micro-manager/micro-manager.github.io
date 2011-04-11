@@ -4,7 +4,7 @@ Micro-Manager Configuration Guide <span>'''Created on July 31, 2006 by Nenad Amo
 
 In order to control a specific microscope, the Micro-Manager application needs to know what hardware is part of the microscope, load and initialize the appropriate drivers, define configuration presets, create labels for device positions, etc.. Typically, on startup the Micro-Manager application loads a configuration file containing commands configuring all aspects of the system. To start using Micro-Manager, you will first need to create a configuration file specific for your system
 
-[[Image:startup.gif|Startup screen]]<br /> Figure 1. Startup screen: selection of the configuration file<br />
+[[Image:startup.gif|center|Startup screen]]<br /> Figure 1. Startup screen: selection of the configuration file<br />
 
 Upon Micro-Manager startup an introductory splash screen pops-up displaying the configuration file that is about to be loaded. By default, Micro-Manager attempts to load the file used in the previous session. You can either use that file, load another configuration file, or start Micro-Manager with no configuration file at all (simply delete the the content of the line). After pressing OK the initialization process starts and when it finishes without errors, Micro-Manager is ready for use. Configuration files can be also loaded at any time using the <span>'''Tools | Load Configuration'''</span> command from the main menu. Each time you load a configuration file, the current configuration is un-initialized (shut down) and the new one is initialized. Re-loading a configuration file has (almost) the same effect as restarting the application.
 
