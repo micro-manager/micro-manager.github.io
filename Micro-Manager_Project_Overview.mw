@@ -18,7 +18,18 @@ The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF is
 
 == Software Architecture ==
 
-The µManager software is structured in three basic layers: Graphical User Interface (GUI), Core Services (MMCore) and Device Adapters. Each layer is largely independent of other layers and the architecture relies on two public interfaces, one on the GUI side and one on the device side, to bind all components into a single application. In addition to application layers the software also incorporates a scripting environment (editor and command interpreter) to extend functionality.<br /><br /> The foundation of the software is the â€˜MMCoreâ€™ module, written in C++, which controls and synchronizes various devices (cameras, shutters, stages, etc.) using plug-in â€˜Adapterâ€™ modules. The MMCore interface exposes a generalized, abstract command set of the automated microscope that can be accessed from many different programming environments (C++, Java, Matlab, Python, Perl and others). <br /><br />[[Image:block_diagram.gif|Micro-Manage Block Diagram]]<br /> Figure 1, Block diagram of the software architecture<br /><br /> Besides core module MMCore, the ÂµManager software consists of the following components:<br /> â€¢ GUI front-end for interactive work with the integrated microscope, implemented in Java as an ImageJ plugin.<br /> â€¢ Set of independent device adapter modules for particular hardware devices<br /> â€¢ Scripting environment for writing automated procedures and executing command-line control commands
+The µManager software is structured in three basic layers: Graphical User Interface (GUI), Core Services (MMCore) and Device Adapters. Each layer is largely independent of other layers and the architecture relies on two public interfaces, one on the GUI side and one on the device side, to bind all components into a single application. In addition to application layers the software also incorporates a scripting environment (editor and command interpreter) to extend functionality.
+
+The foundation of the software is the "MMCore" module, written in C++, which controls and synchronizes various devices (cameras, shutters, stages, etc.) using plug-in "Adapter" modules. The MMCore interface exposes a generalized, abstract command set of the automated microscope that can be accessed from many different programming environments (C++, Java, Matlab, Python, Perl and others).
+
+[[Image:block_diagram.gif|Micro-Manage Block Diagram]]
+
+Figure 1, Block diagram of the software architecture
+
+Besides core module MMCore, the µManager software consists of the following components:
+* GUI front-end for interactive work with the integrated microscope, implemented in Java as an ImageJ plugin.
+* Set of independent device adapter modules for particular hardware devices
+* Scripting environment for writing automated procedures and executing command-line control commands
 
 === Core Services ===
 
