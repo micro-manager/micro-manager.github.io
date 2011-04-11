@@ -4,7 +4,7 @@
 
 == Introduction ==
 
-Before diving into Programming within Micro-Manager, it is useful to review the general [overview.php Micro-Manager architecture]. <br /><br />
+Before diving into Programming within Micro-Manager, it is useful to review the general [[Overview of the documentation|architecture]]. <br /><br />
 
 <div>Micro-Manager central component is the <span>''MMCore''</span> class encapsulating the entire automated microscope. <span>''MMCore''</span> API represents a high-level abstraction for any combination of standard components used in automated digital microscopy. A program written to the <span>''MMCore''</span> API should be able to successfully execute regardless of specific devices used, or in the worst case gracefully degrade if the minimal conditions are not satisfied. By using run-time configuration discovery features of the<span>'' MMCore''</span> API, a program can automatically determine whether minimal conditions for its execution are satisfied, e.g. if required devices are present and if they have required capabilities.</div>
 
