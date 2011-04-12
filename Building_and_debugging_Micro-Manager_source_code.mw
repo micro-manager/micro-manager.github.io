@@ -1,3 +1,4 @@
+* [[Micro-Manager Coding Style and Conventions]]
 * [[Building Boost on MacOS X]]
 * [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
 * [[Building Universal Binaries on Mac OS X]]
@@ -10,7 +11,6 @@
 * [[Using Eclipse]] - How to configure Eclipse to compile and debug the Micro-Manager GUI.
 * [[Using Netbeans]] - How to configure Netbeans to compile and debug the Micro-Manager GUI.
 * [[Debugging MM on MacOSX and Unix]] - How to use gdb or Netbeans to debug the Micro-Manager C++ core.
-* [[Micro-Manager Coding Style and Conventions]]
 * [[(Windows) tools useful for Device Adapter Developers]]
 
 {{Programming_Sidebar}}
