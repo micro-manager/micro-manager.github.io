@@ -16,3 +16,5 @@ If you are putting together or building a serious, automated microscopy system, 
 === EXTENDING μMANAGER ===
 
 Even if you are not interested in writing software code for your microscope, the open software architecture of μManager will benefit you. For instance, the Open Device Interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be execute withing the GUI. Lastly, the μManager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager Microscope device control.
+
+{{Main Page Sidebar}}
