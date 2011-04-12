@@ -39,3 +39,5 @@ These beanshell scripts can be run from the '[[Script_Panel_GUI|Script Panel]]' 
 [[Media:RatiometricImaging_singleImage.bsh]] - Beanshell for ratiometric Imaging. Takes only one image, can be useful as a control before starting a whole acquisition with main beanshell above (J. Husson).
 
 --[[User:Nico|Nico]] 21:04, 15 December 2007 (PST)
+
+{{Programming_Sidebar}}
