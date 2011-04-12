@@ -28,7 +28,7 @@ Any property that Micro-Manager knows about can be changed using the Property Br
 
 [[Image:presets.gif|Configuration Presets]]<br /> Figure 3. Example of Configuration Presets in the Main Micro-Manager window<br />
 
-Before setting up Configuration Presets, you should familiarize yourself with the [documentation.php?object=Userguide#mozTocId68367 Device/Property Browser]. It is also worthwhile to experiment with the Configuration Presets in the demo configuration.
+Before setting up Configuration Presets, you should familiarize yourself with the [[Micro-Manager User's Guide#Exploring devices: Device/Property Browser|Device/Property Browser]]. It is also worthwhile to experiment with the Configuration Presets in the demo configuration.
 
 [[Image:groupEditor.png|Preset Editor]]<br /> Figure 4. Initial Screen of the Preset Editor<br />
 
