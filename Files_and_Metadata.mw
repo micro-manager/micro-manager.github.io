@@ -1,4 +1,4 @@
-This page will soon contain documentation for the file formats of Micro-Manager image data sets, and a description of the Metadata system.
+Micro-Manager's default image data sets are in single-plane TIFF images with an accompanying metadata.txt file.
 
 ==1.4 (MetadataVersion 10, subject to change)==
 
