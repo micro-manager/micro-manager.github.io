@@ -146,7 +146,7 @@ Checking the '''Use XY list''' option will cause the acquisition to be executed 
 
 == Burst Mode (Fast Imaging) ==
 
-Time lapse sequences can be acquired using the [#mozTocId402840 Multi-dimensional acquisition] dialog. However, this causes the software to 'snap' images at each consecutive time point. Most cameras will not operate at their top speed in this mode, so if you would like to acquire fast 'streams' of images, you will need to use the Burst mode, which can be accessed by pressing the "Burst" button in the main control window.
+Time lapse sequences can be acquired using the [[#Multi-dimensional acquisition]] dialog. However, this causes the software to 'snap' images at each consecutive time point. Most cameras will not operate at their top speed in this mode, so if you would like to acquire fast 'streams' of images, you will need to use the Burst mode, which can be accessed by pressing the "Burst" button in the main control window.
 
 [[Image:burst_mode.gif|Burst Acquisition Dialog]]<br /> Figure 7. Burst Mode Acquisition dialog.
 
