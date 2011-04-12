@@ -3,12 +3,12 @@
 |content=
 * [[Micro-Manager Programming Guide|Programming Guide]]
 * [[Script Panel GUI|Scripting (Beanshell)]]
+* [[Example Beanshell scripts]] 
 * [https://valelab.ucsf.edu/~arthur/api_doc/org/micromanager/api/ScriptInterface.html GUI API Java Reference (Java/Beanshell)]
 * [https://valelab.ucsf.edu/~arthur/api_doc/org/micromanager/api/AcquisitionEngine.html Multi-Dim. Acquisition Engine API Reference (Java/Beanshell)]
 * [https://valelab.ucsf.edu/~arthur/mm_doc/html/class_c_m_m_core.html Core API Reference (C++/Java/Beanshell)]
 * [https://valelab.ucsf.edu/~arthur/mm_doc/html/class_c_device_base.html Device API Reference (C++)]
 * [[Using_the_Micro-Manager_python_library|Python]]
-
 * [[Matlab]]
-
+* [[Building Micro-Manager from source]]
 }}
