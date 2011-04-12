@@ -2,6 +2,8 @@
 
 Micro-Manager needs to be told which image-based autofocus mechanism to use (even though there is currently only one;).  To do so, save the file MMStartup.bsh [[Media:MMStartup.bsh]] in your Micro-Manager folder.
 
+See also [[SimpleAutofocus Manual]].
+
 == AutoFocus JAF(H&P) manual ==
 
 Pakpoom (Tom) Substoontorn provided the following explanation of the various settings in the autofocus dialog:
