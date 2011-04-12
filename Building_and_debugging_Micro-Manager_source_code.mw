@@ -11,7 +11,6 @@
 * [[Using Netbeans]] - How to configure Netbeans to compile and debug the Micro-Manager GUI.
 * [[Debugging MM on MacOSX and Unix]] - How to use gdb or Netbeans to debug the Micro-Manager C++ core.
 * [[Micro-Manager Coding Style and Conventions]]
-* [[Writing plugins for Micro-Manager]]
 * [[(Windows) tools useful for Device Adapter Developers]]
 
 {{Programming_Sidebar}}
