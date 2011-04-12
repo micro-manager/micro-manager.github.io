@@ -1,8 +1,14 @@
 {{sidebar
-|title=[[file:micro_back.jpg]]
-|content=
-==Welcome!==
-
-===News===
-
+|title=welcome to<br>micro-manager!
+|content=<center><br><h3>News</h3></center>
+* Support for Nikon and Canon DSLRs
+* Support for GigE cameras 	
+* Support for Lumen Dynamics XCite light sources 	
+* Japanese translation of the Micro-Manager website 	
+* Publications making use of Micro-Manager 	
+* μManager at the 2008 ASCB meeting 	
+* More documementation on the Micro-Manager Wiki 	
+* New FAQ and device support 	
+* Join the community 	
+* μManager and Matlab
 }}
