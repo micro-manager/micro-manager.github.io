@@ -32,3 +32,5 @@ StandardDeviation/Mean: This is another popular measure of ImageSharpness which 
 SharpnessScore: This is calculated per image-based autofocus described by Pakpoom Subsoontorn & Hernan Garcia, however, the image is first normalized by the mean. This greatly reduces effects of photo-bleaching on the focus score.
 
 If debug log is ON, you can also see the dynamic range of the normalized image. This is also very strongly dependent on the focus.
+
+{{Documentation_Sidebar}}
