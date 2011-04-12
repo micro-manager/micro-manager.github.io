@@ -37,3 +37,5 @@ imshow(im1,cmap = cm.gray)
 </code>
 
 A longer example script, MMCoreWrapDemo.py, is available in the Micro-Manager root directory.
+
+{{Programming_Sidebar}}
