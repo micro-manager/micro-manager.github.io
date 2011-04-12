@@ -22,4 +22,4 @@ A few additional commands have been added to the Beanshell environment in Micro-
   update(); // Update all methods in the current namespace
 </pre>
 
-{{Documentation_Sidebar}}
+{{Programming_Sidebar}}
