@@ -1,14 +1,15 @@
 {{sidebar
 |title=welcome to<br>micro-manager!
 |content=<center><br><h3>News</h3></center>
-* Support for Nikon and Canon DSLRs
-* Support for GigE cameras 	
-* Support for Lumen Dynamics XCite light sources 	
-* Japanese translation of the Micro-Manager website 	
-* Publications making use of Micro-Manager 	
-* μManager at the 2008 ASCB meeting 	
-* More documementation on the Micro-Manager Wiki 	
-* New FAQ and device support 	
-* Join the community 	
-* μManager and Matlab
+* [[Micro-Manager_Beta_Downloads|Micro-Manager 1.4 BETA Released]]
+* [[TetheredCam|Support for Nikon and Canon DSLRs]]
+* [[GigE|Support for GigE cameras]]
+* [[XCite_120PC_%26_Exacte|Support for Lumen Dynamics XCite light sources]]	
+* [[Papers_citing_Micro-Manager|Publications making use of Micro-Manager]]
+* [[Micro-Manager_at_the_ASCB_Meeting_2008|μManager at the 2008 ASCB meeting]]
+* [[Micro-Manager Community|Join the community]]
+* [[Micro-Manager and Matlab]]
+<br>
+<br>
+<center><h2>[http://elegans.bio.nagoya-u.ac.jp/~tsukada/MicroManager/index.html 한국어]</h2></center>
 }}
