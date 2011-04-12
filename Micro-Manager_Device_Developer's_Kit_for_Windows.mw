@@ -1,7 +1,7 @@
 {{Downloads_Sidebar}}
 The Device Developer's Kit contains all source code and instructions required for building Micro-Manager device adapters. The major version number corresponds to the matching Micro-Manager Device API version. Using this kit you can build device adapters completely independent of the rest of the Micro-Manager code base, i.e. without the need to set up complicated build environments, or to understand or access MMCore and user interface source code.
 
-* [[Device Adapter Development Guide]] (document included in the installation)
+* [[Building Micro-Manager Device Adapters] (document included in the installation)
 * [http://valelab.ucsf.edu/~MM/MMweb/content/doc/mmdevice_api/html/class_c_device_base.html DeviceBase.h library API] (internal interface for device adapter development - auto-generated documentation)
 
 == Latest release ==
