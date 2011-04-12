@@ -1,5 +1,5 @@
 {{sidebar
-|title=documentation
+|title=programming
 |content=
 * [[Micro-Manager Programming Guide|Programming Guide]]
 * [[Script Panel GUI|Scripting (Beanshell)]]
