@@ -48,3 +48,5 @@ For distribution: in the dist folder of your Netbeans project folder, Netbeans w
 <br><br>
 
 Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
+
+{{Programming_Sidebar}}
