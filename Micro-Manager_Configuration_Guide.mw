@@ -66,7 +66,7 @@ Again, do not forget to save the configurations after editing pizel size calibra
 
 = Configuration file syntax =
 
-A configuration is defined in a text file (with default extension *.cfg) containing a list of simple commands to build the desired system state: devices, labels, equipment, properties, and configurations. The format is as follows:<br /><
+A configuration is defined in a text file (with default extension *.cfg) containing a list of simple commands to build the desired system state: devices, labels, equipment, properties, and configurations. The format is as follows:<br />
 * Each line consists of a number of string fields separated by "," (comma) characters. No extra spaces are allowed for formatting, i.e. space characters will treated as parts of the field.
 * Lines beginning with "#" are ignored (can be used for comments).<br />
 * Each line in the file will be parsed by the system and as a result a corresponding command will be immediately executed.<br />
