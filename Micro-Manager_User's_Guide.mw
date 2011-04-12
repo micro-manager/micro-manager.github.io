@@ -128,7 +128,7 @@ There is no limit to the number of devices or number of different properties you
 
 = Recording Images =
 
-== Multi-dimensional acquistion ==
+== Multi-dimensional acquisition ==
 
 To acquire multi-image stacks, press the "Multi-D Acq." button to open the Acquisition Control dialog (this dialog can also be reached through the <span>''' Tools | Acquisition '''</span> menu entry). Micro-Manager allows you to create a stack as multi-channel (wavelength coordinate), multi-frame (time coordinate), multi-slice (Z coordinate), or any combination of the above. Such stacks will be referred to as "5D image". In addition, 5D Images can be acquired at multiple positions. <br />
 
