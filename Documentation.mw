@@ -5,9 +5,5 @@
 ** [[Autofocus manual]] - Configure the image-based autofocus implemented in Java
 ** [[Autofocus Device Adapter|SimpleAutofocus Device Adapter]] - Configure the image-based autofocus 'device' implemented in C++
 
-* ''Communicating through serial ports using a terminal application''
-** [[Windows]] - Configuring HyperTerminal
-** [[Useful terminal applications for Windows and Mac]]
-
 
 {{Documentation_Sidebar}}
