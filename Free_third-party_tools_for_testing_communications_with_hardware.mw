@@ -1,3 +1,15 @@
+== Terminal communications on Windows and Mac ==
+
+=== Windows ===
+* Hyperterminal.  Hyperterminal is included with Windows XP, but not available on Windows 7.  We have  [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Windows Instructions] for configuration of Hyperterminal
+* [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html Putty] is immensely useful for ssh communication, but can also be used to communicate through serial ports.
+* [http://realterm.sourceforge.net/ Realterm] looks very good and useful, but I have not yet tested it myself.  
+
+
+=== Mac ===
+*[http://kulesh-software.com/Software/PortTerm/index.html PortTerm] has served me well for many years.  Regretfully, there is no Intel processor native version, but it still works well under Rosetta
+
+
 ==Device signals analysis==
 
 Competent hardware manufacturers provide detailed, complete documentation on how to programmatically control their devices. In some cases, when good documentation is not available, it is necessary to analyze and test signals being sent between a device and the computer, or between different software components. A number of free tools are available for this purpose:
