@@ -1,4 +1,8 @@
-== AutoFocus Manual ==
+== Autofocus setup ==
+
+Micro-Manager needs to be told which image-based autofocus mechanism to use (even though there is currently only one;).  To do so, save the file MMStartup.bsh [[Media:MMStartup.bsh]] in your Micro-Manager folder.
+
+== AutoFocus JAF(H&P) manual ==
 
 Pakpoom (Tom) Substoontorn provided the following explanation of the various settings in the autofocus dialog:
 
@@ -48,3 +52,5 @@ at 9 um   sharpNess  = 36
    11  um                      21--> the program stop coarse search here as 21< 59*0.5 
     
 I'm not quite confident about this threshold trick. sometimes the single bell-shape is not perfect. I would recommend setting high Threshold for now.
+
+{{Documentation_Sidebar}}
