@@ -9,7 +9,7 @@ In addition, plugins are available from third parties:
 * [[Photometrics Camera Control Plugin|Photometrics Camera Control]]
 * [[HCS Plugin|High Content Screening Plugin from 100x Imaging]]
 * [[Well Plate Plugin|Well Plate plugin from the Biomedical Imaging Group]]
-
+* [http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start Firewire camera/LED synchronization, by Alex Hodge, Cambridge]
 ''See also [[Writing plugins for Micro-Manager]]
 
 {{Documentation Sidebar}}
