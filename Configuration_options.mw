@@ -12,3 +12,5 @@ Where -g signals to include debug symbols, -O2 specifies an optimization level, 
 
 Example:
 ./configure --with-imagej=/Applications/Micro-Manager1.3 CXXFLAGS="-g -O2 -mmacosx-version-min=10.4"
+
+{{Programming_Sidebar}}
