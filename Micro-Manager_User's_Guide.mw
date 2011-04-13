@@ -118,7 +118,7 @@ The main control panel provides control only of a small subset of the device pro
 
 == Grouping device properties: Configuration Presets ==
 
-Obviously, changing individual properties using the Device/Property Browser quickly becomes cumbersome. Micro-Manager therefore provides a way to generate 'shortcuts' that let you quickly set groups of device properties. Setting up these Configuration Presets is an important part of configuring Micro-Manager and is described in the [documentation.php?object=Configguide#PresetGroups Configuration Guide]. Placing the cursor over the current preset will display a tool-tip window and show which devices will be affected by the command. In the example in the configuration guide, choosing the "DAPI" channel preset command will move three filter wheels to the appropriate positions.
+Obviously, changing individual properties using the Device/Property Browser quickly becomes cumbersome. Micro-Manager therefore provides a way to generate 'shortcuts' that let you quickly set groups of device properties. Setting up these Configuration Presets is an important part of configuring Micro-Manager and is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Placing the cursor over the current preset will display a tool-tip window and show which devices will be affected by the command. In the example in the configuration guide, choosing the "DAPI" channel preset command will move three filter wheels to the appropriate positions.
 
 [[Image:presets.gif|Presets Panel]]<br /> Figure 6. Detail of the main control window: configuration preset.
 
