@@ -12,7 +12,7 @@ Imaging cells has become an essential technology in many laboratories working in
 
 After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope you will need to create a configuration file for the specific hardware components that are part of your setup.
 
-The configuration process is described in the [documentation.php?object=Configguide Configuration Guide]. Micro-Manager includes a number of sample hardware configuration files (with extension *.cfg); you will need to create a configuration file specific to your system, however.
+The configuration process is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Micro-Manager includes a number of sample hardware configuration files (with extension *.cfg); you will need to create a configuration file specific to your system, however.
 
 == Installation on Windows ==
 
