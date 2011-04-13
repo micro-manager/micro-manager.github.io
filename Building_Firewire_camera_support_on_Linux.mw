@@ -25,6 +25,7 @@ and Mac systems, where most of the code is developed to my understanding.
 therefore to ensure that static libraries were preferred to dynamic ones.
 For this we applied the following patch to $(SRCDIR)/configure.common:
 Index: configure.common
+__NOTOC__
 ===================================================================
 --- configure.common	(revision 5359)
 +++ configure.common	(working copy)
@@ -65,6 +66,7 @@ Moreover, micromanager must also link to this library to avoid linking
 problems. We therefore had to patch $(SRCDIR)/DeviceAdapters/configure.in to
 detect this library
 Index: configure.in
+
 ===================================================================
 --- configure.in	(revision 5359)
 +++ configure.in	(working copy)
