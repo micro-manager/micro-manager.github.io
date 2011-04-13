@@ -3,9 +3,8 @@ __NOTOC__
 
 === Windows ===
 * Hyperterminal.  Hyperterminal is included with Windows XP, but not available on Windows 7.  We have  [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Windows Instructions] for configuration of Hyperterminal
-* [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html Putty] is immensely useful for ssh communication, but can also be used to communicate through serial ports.
-* [http://realterm.sourceforge.net/ Realterm] looks very good and useful, but I have not yet tested it myself.  
-
+* [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html Putty] is mainly intended for ssh communication, but can also be used to communicate through serial ports. (Works on Windows 7.)
+* [http://realterm.sourceforge.net/ Realterm] looks very good and useful, but I have not yet tested it myself.
 
 === Mac ===
 *[http://kulesh-software.com/Software/PortTerm/index.html PortTerm] has served me well for many years.  Regretfully, there is no Intel processor native version, but it still works well under Rosetta
