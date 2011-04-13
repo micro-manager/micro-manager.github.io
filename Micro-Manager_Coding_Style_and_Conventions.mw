@@ -41,3 +41,5 @@ You can automate generation of such catch blocks in Eclipse by going to:
 and change the Pattern to:
  // ${todo} Auto-generated catch block
  ReportingUtils.showError(${exception_var});
+
+{{Programming_Sidebar}}
