@@ -200,7 +200,7 @@ The '''Create Grid''' button in the Position List Dialog will open the Tile Crea
 
 <br />
 
-Use the '''Set''' buttons of the Tile Creator Dialog to mark at least two of the corners of the object that you are interested in. Pressing '''OK''' will generate a Position List that covers a bounding box around the corners that you set. To do this correctly, the dialog needs to know the correct '''Pixel Size'''. If your system is [documentation.php?object=Configguide#Calibration calibrated], the correct pixel size will appear here automatically; otherwise you will have to enter the correct number. It is also possible to specify an '''overlap''' between the images generated from this position list (to specify a space between them, use a negative overlap).
+Use the '''Set''' buttons of the Tile Creator Dialog to mark at least two of the corners of the object that you are interested in. Pressing '''OK''' will generate a Position List that covers a bounding box around the corners that you set. To do this correctly, the dialog needs to know the correct '''Pixel Size'''. If your system is [[Micro-Manager Configuration Guide#Pixel Size Calibration|calibrated]], the correct pixel size will appear here automatically; otherwise you will have to enter the correct number. It is also possible to specify an '''overlap''' between the images generated from this position list (to specify a space between them, use a negative overlap).
 
 == Interactive Stage Movements ==
 
