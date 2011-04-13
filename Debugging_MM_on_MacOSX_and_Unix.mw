@@ -36,3 +36,4 @@ directory /projects/micromanager/DeviceAdapters/DemoCamera
 <li>Launch ImageJ (the target of make install from your micromanager source).</li>
 <li>Select Debug...Attach debugger.</li>
 </ol>
+{{Programming_Sidebar}}
