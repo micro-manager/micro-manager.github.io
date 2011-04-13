@@ -120,3 +120,5 @@ Error resolved by $cd Tracking, $make. Somehow earlier make had missed it.
 $ dpkg -i micromanager micromanager-ij worked.
 
 * imagejmm script created by micromanager-ij works, however doesn't bring up micro-manager. You need to invoke it from Plugins-> Micro-manager -> Micro-manager Studio.
+
+{{Programming_Sidebar}}
