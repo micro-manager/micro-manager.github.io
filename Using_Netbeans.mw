@@ -20,3 +20,5 @@ Make sure the '''Java Platform''' matches the version of Micro-Manager you are u
 
 If the gods are smiling, then Micro-Manager should launch inside ImageJ.
 </ol>
+
+{{Programming_Sidebar}}
