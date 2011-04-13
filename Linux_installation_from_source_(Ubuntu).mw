@@ -113,3 +113,5 @@ $(java-config --java) \
 
 You could run the Micro-Manager in one go by issuing:
   imagej -run "Micro-Manager Studio"
+
+{{Programming_Sidebar}}
