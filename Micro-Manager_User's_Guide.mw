@@ -42,7 +42,7 @@ If you have another installation of ImageJ on your computer, keep in mind that M
 
 On startup Micro-Manager displays a splash screen that allows you to choose a particular hardware configuration file. If you click OK without changing anything, the last successfully used configuration file will be loaded. The Demo configuration (software simulator) will appear as default the first time you start the application. This configuration can be used to explore Micro-Manager features, train novice users and as a reference point for troubleshooting.
 
-Configuring Micro-Manager to work with your specific microscope setup is a complex topic, covered in detail in [documentation.php?object=Configguide Configuration Guide]. To make configuration easier, Micro-Manager includes the Configuration Wizard utility (<span>'''Tools | Configuration Wizard'''</span>) which provides step-by-step workflow for creating and managing your hardware configuration. However, we recommend that you try out the Demo configuration for a while before attempting to set-up and control a real microscope. All examples in this guide refer to the Demo configuration.
+Configuring Micro-Manager to work with your specific microscope setup is a complex topic, covered in detail in [[Micro-Manager Configuration Guide|Configuration Guide]]. To make configuration easier, Micro-Manager includes the Configuration Wizard utility (<span>'''Tools | Configuration Wizard'''</span>) which provides step-by-step workflow for creating and managing your hardware configuration. However, we recommend that you try out the Demo configuration for a while before attempting to set-up and control a real microscope. All examples in this guide refer to the Demo configuration.
 
 <br />
 
