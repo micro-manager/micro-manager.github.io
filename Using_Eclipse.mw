@@ -15,3 +15,5 @@
 8. When all is good, you can start Micro-Manager (without ImageJ window) by pressing the green arrow in Eclipse.
 
 9. To debug C++ code, attach your debugger to the running javaw instance.  In Visual Studio: Debug->Attach to Process, select the appropriate javaw process.  On Unix, use top or ps to find the process and start gdb: gdb Jave processID.
+
+{{Programming_Sidebar}}
