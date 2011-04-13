@@ -184,7 +184,7 @@ The Multi-Dimensional Acquisition window offers integration with the autofocus s
 
 == Position List Dialog ==
 
-The Position List dialog can be reached from the menu ('''Tools | XY List'''), and from the [[Micro-Manager User's Guide#Multi-dimensional Acquisition|Multi-dimensional Acquisition]] window (button next to 'Use XY list'). The Position List is used to record the positions of stages in your system. At the bottom of the dialog is a list of available stage axes, any of which you can select to use for recording positions.
+The Position List dialog can be reached from the menu ('''Tools | XY List'''), and from the [[Micro-Manager User's Guide#Multi-dimensional acquisition|Multi-dimensional Acquisition]] window (button next to 'Use XY list'). The Position List is used to record the positions of stages in your system. At the bottom of the dialog is a list of available stage axes, any of which you can select to use for recording positions.
 
 [[Image:position_list.png|Position List Dialog]]<br /> Figure 9. Position List dialog.
 
