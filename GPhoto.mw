@@ -89,4 +89,4 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
-*A beta binary for Micro-Manager 1.4.4 on Mac OS X ([http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Mac/ nightly builds]) can be downloaded from [http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip].
+*A binary for Micro-Manager on Mac OS X can be downloaded from [http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip]. This binary is for Micro-Manager 1.4.4 or later ([http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Mac/ nightly builds]) .
