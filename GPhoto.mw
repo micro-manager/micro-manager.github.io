@@ -75,6 +75,8 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 :When set, rotates image. Allowable values are 0 and 1.
 
 == Notes ==
+*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 640x426 pixels for Nikon, and 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second.
+
 *On Mac OS X, you have to kill the Apple PTP daemon every time after connecting your camera, after switching your camera on, and before running micro-manager. If you wish to automate this, try the following:
 ** Open Applications/AppleScript/Script Editor.
 ** Create a one-line AppleScript <pre>tell application "PTPCamera" to quit</pre>
@@ -88,7 +90,5 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 *Setting Nikon DSLRs to PTP mode is done by pressing the "Menu" button, and selecting Setup > USB > MTP/PTP. 
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
-
-*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 320x240 pixels for Canon PowerShot, 640x426 pixels for Nikon DSLR, 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second.
 
 *A binary for Micro-Manager on Mac OS X can be downloaded from [http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip]. This binary is for Micro-Manager 1.4.5 or later.
