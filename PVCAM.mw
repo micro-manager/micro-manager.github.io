@@ -27,20 +27,21 @@ then Micro-Manager was most likely not terminated in a graceful way during the p
 
 From the Photometrics website:
 
- In recent updates, Microsoft released two hotfixes which updated their FireWire stack file.
- However, these updates cause performance drops in the  functionality of Texas Instruments
- (TI) FireWire Controllers which ship with Photometrics cameras. These performance drops
+<blockquote>
+In recent updates, Microsoft released two hotfixes which updated their FireWire stack file.
+However, these updates cause performance drops in the  functionality of Texas Instruments
+(TI) FireWire Controllers which ship with Photometrics cameras. These performance drops
  manifest with the following symptoms:
- * Image Tearing
- * Interference Lines
- * Black Images
- * Reduced Frames-per-second
- Installing the Thesycon 1394 stack fixes these problems by replacing the default Microsoft stack. This remedies any problems caused by the updates.
- The Thesycon FireWire stack has been thoroughly tested and does not cause any other conflicts or problems with any devices.
-
+* Image Tearing
+* Interference Lines
+* Black Images
+* Reduced Frames-per-second
+Installing the Thesycon 1394 stack fixes these problems by replacing the default Microsoft stack. This remedies any problems caused by the updates.
+The Thesycon FireWire stack has been thoroughly tested and does not cause any other conflicts or problems with any devices.
+</blockquote>
 The Thesycon stack installer can be downloaded [http://www.photomet.com/support/downloads/index.php here].
 
-
+{{Devices_Sidebar}}
 
 == Windows 7 issue ==
 
