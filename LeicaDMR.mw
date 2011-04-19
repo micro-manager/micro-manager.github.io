@@ -30,3 +30,5 @@ This adapter controls Leica DMR microscopes through a direct serial interface.  
 To use this adapter, connect the microscope using a null modem DB9 serial cable to a serial port connected to your computer.  In the Hardware Configuration Wizard you will  need to 'Add' the LeicaDM Microscope device (and have it use the serial port you just configured).
 
 You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself for devices present).
+
+{{Devices_Sidebar}}
