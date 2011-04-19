@@ -29,3 +29,6 @@ Note: The 2.0.4 version of the driver does not appear to be linked to from the s
 Note: QCam 2.0.8 and above require the firewire card's driver to be upgraded from the generic microsoft driver to the newer thesycon driver. There will be some cards that are not supported. After installation, the FW card should be recognized as a 'T1394bus OHCI' device.
 
 --Fred at PMQI 10/4/2010
+
+
+{{Devices_Sidebar}}
