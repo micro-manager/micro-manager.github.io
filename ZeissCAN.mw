@@ -15,3 +15,5 @@ This adapter controls Zeiss microscopes that use the (older) CAN bus interface, 
 For older microscopes that have the 'MF' firmware instead of the newer 'ZM' firmware (the firmware version will be a property of the Zeisscope device, in general, the AxioPlan 2 and Axiovert 100m have the MF firmware and the AxioPlan2+ and Axiovert200m have the ZM firmware) use the ZeissShutterMFFirmware instead of the ZeissShutter.  There are three types of the ZeissShutterMFFirmware shutter: 1 = incident light, 2= condenser front lens, 3 = external motorized Mirror with two lamps.  Note that with the ZM firmware the external motorized mirror is a different device (Excitation Lamp Switcher).
 
 --[[User:Nico|Nico]] 17:23, 8 September 2007 (PDT)
+
+{{Devices_Sidebar}}
