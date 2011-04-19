@@ -23,6 +23,8 @@ See [http://gphoto.org/doc/remote/] for a list of cameras which support remote c
 == Installation ==
 
 Installation instructions:
+
+*Download [http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip Micro-Manager 1.4 with GPhoto (Mac OS X)].
 * Connect the camera to the computer with a USB cable. 
 * Depending on camera model, you may have to use PTP/MTP mode or normal mode ("USB mass storage"). See if the entry for your camera in the list of [http://gphoto.org/proj/libgphoto2/support.php camera models] says "Normal" or "PTP".
 * On Mac OS X, you have to kill the PTPCamera process to use PTP/MTP mode with micro-manager. Open Applications/Utilities/Activity Monitor, select "PTPCamera" and click on "Quit Process". You will need to kill the PTPCamera process every time you switch the camera on, or connect the camera to the mac.
