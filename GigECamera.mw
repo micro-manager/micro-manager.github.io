@@ -38,3 +38,6 @@ If micro-manager exits abnormally, the camera may be left in an open state over 
 * Only monochrome image/pixel formats are implemented.  Packed, Planar, Bayer and various color image formats are not yet implemented.
 * Any ROI features requiring action on the part of the device adapter are unimplmemted.
 * When switching between cameras, no attempt is made to re-create the properties for the adapter, although existing properties should update correctly.
+
+
+{{Devices_Sidebar}}
