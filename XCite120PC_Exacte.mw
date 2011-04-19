@@ -36,26 +36,16 @@ When using the Exacte with a Mac download the FTDI drivers for the USB-Serial ad
 
 On windows, ensure that you have installed both the USB and virtual COM port drivers. To do this, follow these steps:
 
-         i.      Open Control Panel on your computer.
-
-        ii.      Double click the “System” icon.  If you do not see the “System” icon, change your view to Classic View
-
-       iii.      Select the “Hardware” tab.
-
-       iv.      Click the “Device Manager” button.
-
-        v.      With the X-Cite exacte plugged into your USB port and turned on…
-
-       vi.      Verify in the “Universal Serial Bus Controllers” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
-
-     vii.      Verify in the “Ports (COM & LPT)” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
-
-     viii.      If either device has a question mark on the icon, insert your X-Cite exacte CD.
-
-      ix.      Ensure you have administrator privileges, right click on the device and select “Update Driver…”.
-
-       x.      Follow the on-screen prompts.
-
+# Open Control Panel on your computer.
+# Double click the “System” icon.  If you do not see the “System” icon, change your view to Classic View
+# Select the “Hardware” tab.
+# Click the “Device Manager” button.
+# With the X-Cite exacte plugged into your USB port and turned on…
+# Verify in the “Universal Serial Bus Controllers” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
+# Verify in the “Ports (COM & LPT)” section that you see the “X-Cite exacte” listed without a question mark on the icon to its left.
+# If either device has a question mark on the icon, insert your X-Cite exacte CD.
+# Ensure you have administrator privileges, right click on the device and select “Update Driver…”.
+# Follow the on-screen prompts.
 
 ==Support==
 
