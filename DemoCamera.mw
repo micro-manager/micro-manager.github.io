@@ -13,3 +13,6 @@
 This adapter is useful to 'test-drive' Micro-Manager without attached hardware, and is also extremely important for developers (since it lets us develop without attached hardware). 
 
 --[[User:Nico|Nico]] 11:30, 25 August 2007 (PDT)
+
+
+{{Devices_Sidebar}}
