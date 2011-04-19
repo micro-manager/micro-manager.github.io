@@ -40,3 +40,6 @@ Then make a configuration file using the Micro-Manager hardware configuration wi
 
 There is an exposure delay enable option.  If this option is off (value of 0) then there will be no exposure
 delay of any kind. If this option is set to on (1 or any other number) - then the optimal computed delay to guarantee synchronization with the shutter is on during exposure is activated. Hope this doesn't confuse - but some people aren't going to want that delay as it will slow down full frame capture.
+
+
+{{Devices_Sidebar}}
