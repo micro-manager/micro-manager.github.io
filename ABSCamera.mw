@@ -26,3 +26,5 @@ Changes in 1.3.40:<br>
 => „ABSCam00“ also the first device <br>
 => „ABSCam01“ second device and so on <br>
 The „Hardware Configuration Wizard...“ will show all available ABS devices.<br>
+
+{{Devices_Sidebar}}
