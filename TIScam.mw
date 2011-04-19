@@ -42,3 +42,6 @@ Edit the variable "Path" to begin with that directory + a semicolon i.e. ";" suc
 IFF micromanager can find all the above library files, you'll be able to configure the camera!
 
 4.There are some caveats. When you select the camera in the Hardware Configuration Wizard in step 4 of 9, "The Imaging Source" software might pop-up a verification dialogue in the dead-center of the screen, which may be exactly behind the configuration dialog. This will look exactly like a software hangup. To avoid this, move Micro-manager Hardware configuration wizard away from the center of the screen before step 4 of 9. Then they pop up yet another dialog which asks to to pick the camera model, sometimes even if you have already selected it. Anyhow, just select your camera model and then continue configuring Micro-manager normally. Also make sure someother software or another copy of Micro-manager is not trying to access the camera at the same time.
+
+
+{{Devices_Sidebar}}
