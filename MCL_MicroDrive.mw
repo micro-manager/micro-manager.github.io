@@ -25,3 +25,5 @@ The following properties are currently implemented in the Micro-Manager MCL Micr
 <tr><td><b>Return to Origin</b></td><td> Returns the MicroStage to the position defined as the origin.</td></tr>
 <tr><td><b>Calibrate</b></td><td> Calibrates the Micro-Drive by moving the MicroStage to the X and Y forward limits, setting this position as the origin, and returning the MicroStage to the position it was when calibrate was selected.  This works exactly the same as the "Calibrate" button on the XY List but allows for calibration when positioning type is selected as relative.</td></tr>
 </table>
+
+{{Devices_Sidebar}}
