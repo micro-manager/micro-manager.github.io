@@ -6,6 +6,10 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Controller, Shutter, Filter Wheel, XY Stage</td></tr>
+
+<tr><td><b>Automated Serial Port Setup:</b></td><td>Yes</td></tr>
+
+<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
 </table>
 
 
