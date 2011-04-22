@@ -12,3 +12,6 @@
 This adapter interfaces to the [http://www.yokogawa.co.jp Yokogawa] [http://www.yokogawa.co.jp/SCANNER/english/products/csu22e.html CSU22].  There is no additional software needed.  Connect the CSU22 to an available serial port on your computer (you will need a special adapter for this at the CSU22 end, I guess it comes with the confocal).  Serial port settings are standard (9600 baud, 8 data bits, 1 stop bit, no parity, no handshaking, AnswerTimeout 6000 msec).  You will need to defined the ''Hub'' device, and assign the right serial port to it. 
 
 --[[User:Nico|Nico]] 17:10, 8 September 2007 (PDT)
+
+
+{{Devices_Sidebar}}
