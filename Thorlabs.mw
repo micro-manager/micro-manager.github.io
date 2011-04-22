@@ -158,3 +158,5 @@ bsh %
 </nowiki>
 
 If this script does not generate any errors the stage is working properly. Timing on your system may be different, depending on the motion parameteres.
+
+{{Devices_Sidebar}}
