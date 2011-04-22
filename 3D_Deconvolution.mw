@@ -1,3 +1,14 @@
+'''WARNING: This is underdevelopment and should only be considered alpha (pre-beta).'''
+'''USE AT OWN RISK'''
+== Summary ==
+<table>
+<tr><td valign=top>'''Summary:'''</td><td>3D Deconvolution</td></tr>
+<tr><td valign=top>'''Authors:'''</td><td>Karl Bellve and Kevin Fogarty</td></tr>
+<tr><td valign=top>'''Maintainers:'''</td><td>Karl Bellve</td></tr>
+<tr><td valign=top>'''License:'''</td><td>None</td></tr> 
+<tr><td valign=top>'''Platforms:'''</td><td>Linux</td></tr>
+</table>
+
 == Description ==
 <math>
 \Phi \left ( f \right ) = \sum_{i=1}^{n}\left | g-h * f \right |^{2} + \alpha \cdot \left | f \right |^{2}
@@ -5,24 +16,23 @@
 
 The algorithm is a constrained, iterative approach for solving the L2 regularization of an ill-posed  problem to determine the positive fluorescence distribution that minimizes the equation where g is the observed  3-D fluorescence data, f is the underlying 3-dimensional fluorescence distribution, h is the 3-D point-spread function and * denotes convolution. Thus, the algorithm finds the fluorescence distribution that minimizes a weighted combination of the least-squares fit to the observed data (the total squared residuals) and the total squared intensity of the distribution (a measure of "smoothness"), with α the weighting factor that determines the smoothness of the resulting distribution. The software implements an iterative conjugate-gradient  method to minimize a related function that has the same minimum, is strictly convex, and is twice differentiable, and the method is guaranteed to converge (Carrington, et al., 1995). Convergence is assumed when the (normalized) first derivative is "small" and the algorithm automatically stops. 
 
+== EPR Library ==
+EPR Library (libepr.so.0.0) does the actualy 3D deconvolution. A java wrapper is provided to access the library. EPR Library is freely available for those in academia, as long as the library is only used with &micro;Manager. If you need to use the EPR library under other terms, please contact the Biomedical Imaging Group at the University of Massachusetts.
+
+=== EPR Library Key ===
+You must obtain a key to use the EPR Library. The key is generated from a submitted email address. This is similar to &micro;Manager's request for an email address when you first use the program. This allows tracking the usage of the EPR Library for grant progress reports. 
+
+=== EPR Library Expiration ===
+The EPR Library will expire approximately 90 days after it is compiled. This will only be in place during the testing period. 
+
 == Requirements ==
 * Linux x86_64
 * CUDA capable Graphic Card > 1.1
 * EPR Library (libepr.so.0.0)
+** Obtain this from the Biomedical Imaging Group
 * Big.jar
-
-
-== EPR Library ==
-EPR Library is available for free to those in academia, as long as the library is only used with uManager. If you need to use the EPR library under other terms, please contact the Biomedical Imaging Group at the University of Massachusetts.
-
-=== EPR Library Key ===
-You must obtained a key to use the EPR Library. The key is generated from the email address.
-
-
-
-
-
-
-
+** This is included in the normal &micro;Manager distribution
+* License Key
+** Obtain this from the Biomedical Imaging Group.
 
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 10:36, 22 April 2011 (PDT)
