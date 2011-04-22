@@ -9,15 +9,15 @@ cd projects <br>
 svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3<br>
 cd micromanager1.3<br>
 </code>
-...IF you have access to a proprietary section of the the source repository, check it out explicitly thus:
+...IF you have access to a proprietary section of the the source repository, check it out explicitly thus:<br>
 <code>
 svn --username YOURNAME --password YOURPASSWORD checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/SecretDeviceAdapters
 </code>
-continuing:
+continuing:<br>
 <code>
-autoreconf -i -s --force
+autoreconf -i -s --force<br>
 </code>
-...now tell the configurator where the ImageJ jar and plugin directory is:
+...now tell the configurator where the ImageJ jar and plugin directory is:<br>
 <code>
  ./configure --with-imagej=/Applications/Micro-Manager1.3/<br>
  make<br>
