@@ -7,6 +7,8 @@
 <tr><td>'''Platforms:'''</td><td>Linux, Mac, and Windows</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 <tr><td>'''Since version:'''</td><td>1.3.18</td></tr>
+<tr><td><b>Automated Serial Port Setup:</b></td><td>Yes</td></tr>
+<tr><td><b>Peripheral device discovery:</b></td><td>No</td></tr>
 </table>
 
 The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board.  It has some digital inputs and digital outputs and can communicate with the computer through a serial interface (that is hidden in a USB connection).  A very nice and simple programming language makes the Arduino very simple to program.  The Micro-Manager interface to the Arduino consists of an Arduino program (the 'firmware') that you need to upload to the Arduino first.  The current version of the Micro-Manager has facilities to use the Arduino as a shutter, and as a shutter that only opens when a TTL is set high (for instance, when the camera is exposing).  Also, timed sequences of TTL output can be setup.  There are also facilities for programmable analogue out, however, those need connection of a DA chip and requires constructions of a 'daughterboard'/'shield'.
