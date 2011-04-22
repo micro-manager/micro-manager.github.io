@@ -25,6 +25,7 @@
 |}
 
 </td></tr>
+<tr><td><b>Peripheral device detection:</b></td><td>Supported</td></tr>
 </table>
 
 This adapter controls Leica DMI microscopes through a direct serial interface.  It was build for and tested with a DMI600B, but might work with other DMI models as well.  
