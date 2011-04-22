@@ -3,11 +3,11 @@ put it into a directory like /Applications/Micro-Manger1.3 for example
 this will install ImageJ for use below
 
 <code>
-cd 
-mkdir projects
+cd <br>
+mkdir projects<br>
 cd projects <br>
-svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3
-cd micromanager1.3
+svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3<br>
+cd micromanager1.3<br>
 </code>
 ...IF you have access to a proprietary section of the the source repository, check it out explicitly thus:
 <code>
@@ -19,7 +19,7 @@ autoreconf -i -s --force
 </code>
 ...now tell the configurator where the ImageJ jar and plugin directory is:
 <code>
- ./configure --with-imagej=/Applications/Micro-Manager1.3/
- make
- make install
+ ./configure --with-imagej=/Applications/Micro-Manager1.3/<br>
+ make<br>
+ make install<br>
 </code>
