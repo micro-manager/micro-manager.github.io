@@ -128,7 +128,9 @@ for (int i=0; i<xPos.size(); i++) {
 	mmc.setXYPosition(xyStage, (double)xPos.get(i), (double)yPos.get(i));
         mmc.waitForDevice(xyStage);
 	end = System.currentTimeMillis();
-	gui.message("Reached point " + i + " at (" + xPos.get(i) + "," + yPos.get(i) + ")" + " in " + (end-start) + " ms");
+	gui.message("Reached point " + i 
+                    + " at (" + xPos.get(i) + "," + yPos.get(i) + ")"
+                    + " in " + (end-start) + " ms");
 
 	x = mmc.getXPosition(xyStage);
 	y = mmc.getYPosition(xyStage);
