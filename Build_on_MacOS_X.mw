@@ -19,7 +19,7 @@ autoreconf -i -s --force<br>
 </code>
 ...now tell the configurator where the ImageJ jar and plugin directory is:<br>
 <code>
- ./configure --with-imagej=/Applications/Micro-Manager1.3/<br>
- make<br>
- make install<br>
+ ./configure --with-imagej=/Applications/Micro-Manager1.3/
+ make
+ make install
 </code>
