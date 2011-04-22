@@ -35,4 +35,186 @@ The EPR Library will expire approximately 90 days after it is compiled. This wil
 * License Key
 ** Obtain this from the Biomedical Imaging Group.
 
+== Example BSH Script ==
+The script below is designed to do a 3D Restoration on an open image window that contains a single channel with multiple time points. It needs a License key to be functional as well.
+
+The script also includes the I2I class. It is an internal image format from the Biomedical Imaging Group. It is used to move stacks of 2D data from &micro;Manager to 3D data used by the EPR Library.
+<pre>
+////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Karl Bellve
+// Biomedical Imaging Group
+// University of Massachusetts Medical School
+// Karl.Bellve@umassmed.edu
+//
+////////////////////////////////////////////////////////////////////////////////////////////////
+import edu.umassmed.big.I2I;
+import edu.umassmed.big.restoreImage;
+import ij.IJ;
+import ij.gui.*;
+import java.awt.*; 
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// User Setable Parameters 
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EPR license key
+String key = "";
+
+// file and directory locations;
+String psfName = "test_psf.i2i";
+String resultName = "test-restoration";
+
+String psfDirName = "/storage/big1/epr/scripts/test/";
+String resultDirName = "/storage/big1/kdb/test/";
+
+// Restoration settings
+float nAlpha = 0.001;
+float nConvergence = 0.001;	
+float nScale = 1;
+int   nMax_Iterations = 20;
+int   nChannel = 0;
+
+// The following two arrays must have size nrChannels
+
+String [] channelName = new String [] {"491","561","660"};
+Color [] channelColor = new Color [] {Color.GREEN,Color.RED,Color.BLUE};
+nrChannels = channelName.length;
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Do not edit below this line
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// clear all previous acquisitions
+gui.closeAllAcquisitions();
+gui.clearMessageWindow();
+
+win = IJ.getImage().getWindow();
+nType = 1; //0 = 8 Gray, 1 = 16 gray, 2 = 32 Gray
+if (nType != win.getImagePlus().GRAY16) {
+	print("Sorry, only working on 16 bit gray images now");
+	return;
+}
+
+nBytes = 2;
+if (nType == 0) nBytes = 1;
+if (nType == 1) nBytes = 2;
+if (nType == 2) nBytes = 4;
+
+long nWidth = win.getImagePlus().getWidth();
+long nHeight = win.getImagePlus().getHeight();
+long nChannels = win.getImagePlus().getNChannels();
+long nSlices = win.getImagePlus().getNSlices();
+long nFrames = win.getImagePlus().getNFrames();
+long nType = win.getImagePlus().getType();
+long nSize = win.getImagePlus().getStack().getSize();
+long nStackSize = win.getImagePlus().getStackSize();
+long nImageStackSize = win.getImagePlus().getImageStackSize();
+
+int columns = 15;
+
+GenericDialog dialog = new GenericDialog("3D Deconvolution, Karl Bellve, Biomedical Imaging Group");
+dialog.addStringField("resultName:",resultName,columns);
+dialog.addStringField("psfName:",psfName,columns);
+dialog.addNumericField("Channel:",nChannel,0,columns,"");
+//dialog.addSlider("Channel",1,nChannels,1);
+dialog.addNumericField("Alpha:",nAlpha,5,columns,"");
+dialog.addNumericField("Convergence:",nConvergence,5,columns,"");
+dialog.addNumericField("Scale:",nScale,2,columns,"");
+dialog.addNumericField("Iterations:",nMax_Iterations,0,columns,"");
+dialog.setOKLabel("Execute");
+dialog.showDialog();
+
+if (dialog.wasCanceled()) return;
+
+String resultName = dialog.getNextString();
+String psfName = dialog.getNextString();
+int    nChannel = dialog.getNextNumber();
+float  nAlpha = dialog.getNextNumber();
+float  nConvergence = dialog.getNextNumber();
+float  nScale = dialog.getNextNumber();
+int    nMax_Iterations = (int)dialog.getNextNumber();
+
+if (nChannel < 0) {
+	print("Please pick a channel between 0 and " + nChannels-1);
+	return;
+}
+if (nChannel > (int)(nChannels -1)) {
+	print("Please pick a channel between 0 and " + nChannels-1);
+	return;
+}
+
+print("Height:   " + nHeight);
+print("Width:    " + nWidth);
+print("Slices:   " + nSlices);
+print("Channels: " + nChannels);
+print("Frames:   " + nFrames);
+print("Type:     " + nType);
+print("Size:     " + nSize);
+print("SSize:    " + nStackSize);
+print("ISSize:   " + nImageStackSize);
+
+// Window to put restored image in. 
+gui.openAcquisition(resultName, resultDirName, (int)nFrames, (int)nChannels, (int)nSlices);
+
+//
+// i2i class to hold and create images
+//
+	
+i2iPSF = new I2I(psfDirName + psfName);
+i2iImage = new I2I((int)nWidth,(int)nHeight,(int)nSlices);
+i2iResult = new I2I((int)nWidth,(int)nHeight,(int)nSlices);
+
+//
+// End i2i
+//
+
+restoration = new restoreImage(key,1);  // Use Cuda device 1
+ImageStack = win.getImagePlus().getImageStack();
+
+gui.initializeAcquisition(resultName, (int) nWidth, (int) nHeight, (int) nBytes);
+
+for (frame=0; frame < nFrames; frame++) {
+	for (channel=0; channel < nChannels; channel++) {
+  		now = System.currentTimeMillis();
+		// order appears to be Channel,Slice,Frame
+
+		slice = 0;
+		while (slice < nSlices) {
+			//int position = (frame * nSlices) + slice + channel + 1;
+			int position = (0 * nSlices) + slice + channel + 1;
+			print ("Position: " + position + " Slice: " + slice);
+			short[] img = ImageStack.getPixels(position); // 1 indexed
+			i2iImage.addUImage(img,slice);  // 0 indexed
+	   	slice++;
+	   }
+		print("Starting Restoration for frame: " + frame + " channel: " + nChannel);
+
+		restoration.setDebug(3);
+		// Image must be set to restoration library first
+		restoration.setImage(i2iImage.getImage(),i2iImage.getX(),i2iImage.getY(),i2iImage.getZ());
+		// PSF must be set to restoration library second
+		restoration.setPSF(i2iPSF.getImage(),i2iPSF.getX(),i2iPSF.getY(),i2iPSF.getZ());
+		// Executing restoration
+		restoration.execute(i2iResult.getImage(),nAlpha,nConvergence,nScale,nMax_Iterations);
+  		// Saving restored image
+  		//i2iResult.saveImage(resultDirName +"/" + resultName + "_" + frame +".i2i");
+
+		// add restore image to new GUI window	
+		slice = 0;
+		while (slice < nSlices) {
+			img = i2iResult.getImage2D(slice); // 0 indexed
+			print ("Frame: " + frame + " Channel: " + channel + " Slice: " + slice);
+			gui.addImage(resultName, img, frame, channel, slice); // 0 indexed
+			slice++;
+		}
+	}
+}
+
+// tell garbarge collection to remove the trash
+restoration = null; 
+print ("Finished");
+</pre>
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 10:36, 22 April 2011 (PDT)
