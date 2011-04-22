@@ -65,7 +65,10 @@ To automate the process of homing so that you get prompted for it each time you 
 import ij.gui.GenericDialog;
 
 GenericDialog dlg = new GenericDialog("HOME command - XY Stage", null);
-dlg.addMessage("WARNING!!! The XY stage is about to move. Make sure objectives are out of the way.\nIf you are in doubt about what to do Cancel this command!");
+msg = "WARNING!!! The XY stage is about to move."
+      + "Make sure objectives are out of the way."
+      + "If you are in doubt about what to do Cancel this command!";
+dlg.addMessage(msg);
 dlg.showDialog();
 if (dlg.wasCanceled())
 	return false;
