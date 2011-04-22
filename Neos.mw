@@ -15,3 +15,6 @@ In general, it is a better approach to use a DAQ board to control an AOTF (since
 This adapter uses the [http://www.logix4u.net/inpout32.htm inpout.dll]to talk to the parallel port.
 
 --[[User:Nico|Nico]] 15:34, 15 August 2007 (PDT)
+
+
+{{Devices_Sidebar}}
