@@ -28,3 +28,5 @@ This value can be changed for each axis to set the time (in ms) the Nano-Drive&t
 <br>
 Sets the current position as the origin.  Please note that after setting the origin, you must exit the Device/Property Browser and then re-enter it to make sure the position slidebar takes the new origin into account.  In order to set the origin to the original orgin, click on the "Calibrate" button on the XY(Z) Position List.</td></tr>
 </table>
+
+{{Devices_Sidebar}}
