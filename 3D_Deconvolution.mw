@@ -39,6 +39,8 @@ The EPR Library will expire approximately 90 days after it is compiled. This wil
 The script below is designed to do a 3D Restoration on an open image window that contains a single channel with multiple time points. It needs a License key to be functional as well.
 
 The script also includes the I2I class. It is an internal image format from the Biomedical Imaging Group. It is used to move stacks of 2D data from &micro;Manager to 3D data used by the EPR Library.
+
+The script needs to be modified for your use. It currently loads a PSF that is in the I2I format. The script can be modified to use a &micro;Manager image for the PSF.
 <pre>
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -65,11 +67,11 @@ import java.awt.*;
 String key = "";
 
 // file and directory locations;
-String psfName = "test_psf.i2i";
-String resultName = "test-restoration";
+String psfName = "psf.i2i";
+String resultName = "image-restored";
 
-String psfDirName = "/storage/big1/epr/scripts/test/";
-String resultDirName = "/storage/big1/kdb/test/";
+String psfDirName = "<insert location of PSF>";
+String resultDirName = "<insert location to put 3D deconvolved image>";
 
 // Restoration settings
 float nAlpha = 0.001;
