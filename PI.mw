@@ -23,3 +23,5 @@ All communications to devices take place through serial ports. Check the documen
 This driver does not work with the E-750. The E-750 uses a special binary protocol over the serial line.
 
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 16:49, 1 July 2009 (UTC)
+
+{{Devices_Sidebar}}
