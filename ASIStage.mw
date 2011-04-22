@@ -30,3 +30,6 @@ The following properties are currently implemented in the Micro-Manager ASI stag
 <tr><td><b>MotorOnOff</b> (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
 <tr><td><b>NrMoveRepetition</b></td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
 </table>
+
+
+{{Devices_Sidebar}}
