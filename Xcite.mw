@@ -11,3 +11,6 @@
 
 
 This adapter controls the [http://www.hyphenated-systems.com/content/support/X-Cite120PCuserguide.pdf  X-Cite 120 PC] fluorescent lamp. Connect the device to a serial port and select the corresponding port in the Hardware Configuration Wizard.
+
+
+{{Devices_Sidebar}}
