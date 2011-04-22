@@ -2,7 +2,7 @@
 '''Summary:'''</td><td>Interfaces with Andor cameras</td></tr>
 <tr><td valign=top>'''Author:'''</td><td>Pariksheet Nanda (Andor product support)
 Previous document by Nenad Amodaj, with contributions from Jizhen Zhao and Daigang Wen (Andor). Maintenance and development by Daigang Wen from Sep 2007 to Nov 2008. Linux port by Karl Bellv&eacute;</td></tr>
-<tr><td>'''Maintainers:'''</td><td>Francis McCloy (Andor), Arthur Edelstein, Karl Bellv&eacute;(linux port)</td></tr>
+<tr><td>'''Maintainers:'''</td><td>Francis McCloy (Andor), Arthur Edelstein, Karl Bellv&eacute; (linux port)</td></tr>
 <tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
 <tr><td  valign=top >'''Platforms:'''</td><td>Windows and Linux (No Mac driver available)
 [http://invitro.umassmed.edu/dokuwiki/doku.php?id=micromanager1.2 Wiki: Building MM on Linux]
