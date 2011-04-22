@@ -5,7 +5,7 @@ this will install ImageJ for use below
 <code>
 cd 
 mkdir projects
-cd projects
+cd projects <br>
 svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3
 cd micromanager1.3
 </code>
