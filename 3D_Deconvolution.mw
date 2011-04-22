@@ -17,13 +17,13 @@
 The algorithm is a constrained, iterative approach for solving the L2 regularization of an ill-posed  problem to determine the positive fluorescence distribution that minimizes the equation where g is the observed  3-D fluorescence data, f is the underlying 3-dimensional fluorescence distribution, h is the 3-D point-spread function and * denotes convolution. Thus, the algorithm finds the fluorescence distribution that minimizes a weighted combination of the least-squares fit to the observed data (the total squared residuals) and the total squared intensity of the distribution (a measure of "smoothness"), with α the weighting factor that determines the smoothness of the resulting distribution. The software implements an iterative conjugate-gradient  method to minimize a related function that has the same minimum, is strictly convex, and is twice differentiable, and the method is guaranteed to converge (Carrington, et al., 1995). Convergence is assumed when the (normalized) first derivative is "small" and the algorithm automatically stops. 
 
 == EPR Library ==
-EPR Library (libepr.so.0.0) does the actualy 3D deconvolution. A java wrapper is provided to access the library. EPR Library is freely available for those in academia, as long as the library is only used with &micro;Manager. If you need to use the EPR library under other terms, please contact the Biomedical Imaging Group at the University of Massachusetts.
+EPR Library (libepr.so.0.0) does the actual 3D deconvolution. A java JNI class, restoreImage.java, is provided to access the library. EPR Library is freely available for those in academia, as long as the library is only used with &micro;Manager. If you need to use the EPR library under other terms, please contact the Biomedical Imaging Group at the University of Massachusetts.
 
 === EPR Library Key ===
 You must obtain a key to use the EPR Library. The key is generated from a submitted email address. This is similar to &micro;Manager's request for an email address when you first use the program. This allows tracking the usage of the EPR Library for grant progress reports. 
 
 === EPR Library Expiration ===
-The EPR Library will expire approximately 90 days after it is compiled. This will only be in place during the testing period. 
+The EPR Library will expire approximately 90 days after it is compiled. This will only be in place during the testing period.
 
 == Requirements ==
 * Linux x86_64
