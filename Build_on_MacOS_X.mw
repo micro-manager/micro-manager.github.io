@@ -1,16 +1,16 @@
-# first of all, install the current µManager from http://micro-manager.org/downloads.php
-# put it into a directory like /Applications/Micro-Manger1.3 for example
-# this will install ImageJ for use below
+first of all, install the current µManager from http://micro-manager.org/downloads.php
+put it into a directory like /Applications/Micro-Manger1.3 for example
+this will install ImageJ for use below
 
 cd 
 mkdir projects
 cd projects
 svn checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3
 cd micromanager1.3
-#IF you have access to a proprietary section of the the source repository, check it out explicitly thus:
+...IF you have access to a proprietary section of the the source repository, check it out explicitly thus:
 svn --username YOURNAME --password YOURPASSWORD checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/SecretDeviceAdapters
 autoreconf -i -s --force
-# tell the configurator where the ImageJ jar and plugin directory is:
+...tell the configurator where the ImageJ jar and plugin directory is:
  ./configure --with-imagej=/Applications/Micro-Manager1.3/
  make
  make install
