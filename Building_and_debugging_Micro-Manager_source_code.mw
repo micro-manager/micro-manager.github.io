@@ -1,6 +1,7 @@
 * [[Micro-Manager Coding Style and Conventions]]
 * [[Building Boost on MacOS X]]
 * [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
+* [[Build on MacOS X]] - How to build and install and build Micromanager 1.3 or 1.4
 * [[Building Universal Binaries on Mac OS X]]
 * [[Configuration options]] - Build options on Mac OS X and Linux
 * [[Building ACE on the Mac]] - How to build ACE on the Mac (only for MicroManager versions before 1.3.42)
