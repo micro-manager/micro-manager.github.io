@@ -29,3 +29,5 @@
 The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2100 - High Power LED Driver], the DC2010 - Universal LED Driver, the DC3100 - FLIM LED Driver and the DC4100 - 4 Channel LED Driver.
 
 This adapter makes the LED driver usable as a shutter in Micro-Manager.  On startup, the adapter will switch the LED off.  The adapter has several properties that can be used to control the LED driver.  Note that the above mentioned serial port settings are the default but that they are recommended to communicate with the device.
+
+{{Devices_Sidebar}}
