@@ -1,3 +1,13 @@
+== Summary ==
+<table>
+<tr><td valign=top>'''Summary:'''</td><td>Multiwell Plate Java Class</td></tr>
+<tr><td valign=top>'''Authors:'''</td><td>Karl Bellv&eacute;</td></tr>
+<tr><td valign=top>'''Maintainers:'''</td><td>Karl Bellv&eacute;</td></tr>
+<tr><td valign=top>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td valign=top>'''Platforms:'''</td><td>All</td></tr>
+</table>
+
+
 == Description ==
 
 Designed to handle standard SBS well plates from 24, 96, 384 and 1536 wells.
@@ -95,4 +105,4 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  mmc.waitForDevice(xystage);
 
 
---[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 20:02, 9 February 2011 (UTC)
+--[[User:Kdb|Karl Bellv&eacute;, Biomedical Imaging Group, University of Massachusetts]] 20:02, 9 February 2011 (UTC)
