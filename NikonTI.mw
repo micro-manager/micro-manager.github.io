@@ -7,6 +7,10 @@
 <tr><td>'''Platforms:'''</td><td>Windows only (uses driver supplied by Nikon)</td></tr>
 <tr><td valign='top'>'''Devices:'''</td><td>TIScope, NosePiece, Shutter, Epi-Shutter, Optical Path, FilterBlockCassette,  Focus (z-drive), PerfectFocus, XYStage, HalogenLamp, TIRF attachment</td></tr>
 <tr><td width=20%>'''Since version'''</td><td>1.2.18</td></tr>
+
+
+</td></tr>
+<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
 </table>
 
 This adapter communicates to all the devices in the TI through the TIScope.  Thus, to use any of these devices, you will need to first define the TISCopedevice.   
