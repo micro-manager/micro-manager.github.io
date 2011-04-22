@@ -13,12 +13,9 @@ cd micromanager1.3<br>
 <code>
 svn --username YOURNAME --password YOURPASSWORD checkout https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/SecretDeviceAdapters
 </code>
-continuing:<br>
+finally:<br>
 <code>
-autoreconf -i -s --force<br>
-</code>
-...now tell the configurator where the ImageJ jar and plugin directory is:<br>
-<code>
+autoreconf -i -s --force
  ./configure --with-imagej=/Applications/Micro-Manager1.3/
  make
  make install
