@@ -78,7 +78,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Cobolt]] - Cobolt laser controller
 * [[Coherent Cube]] - Coherent Cube laser controller
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
-* [[MeastroServo]] - Pololu Maestro Servo controller
+* [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
 * [[Autofocus_Device_Adapter|SimpleAutofocus]] - Image-based autofocus software 'device'.
