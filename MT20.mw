@@ -15,3 +15,5 @@ The adapter makes five devices visible in the Hardware Configuration Wizard: MT2
 After this, you can use all four devices (there should be no need to interact with the hub except to include it) normally in MicroManager. Whenever numbers are displayed rather than labels for the burner and shutter, 1 corresponds to on/open and 0 corresponds to off/closed. The MT20 is able to enter a standby mode. If it is in standby when MicroManager starts, the adapter will automatically bring it out of standby. I haven't implemented the ability to put the MT20 into standby in MicroManager since it didn't seem particularly useful, but if there is demand, this should be easy to do. It should be noted that the adapter leaves all MT20 states unchanged when MicroManager exits, so the burner must be turned off manually if that is desired.
 
 If any problems are encountered, basic error information should be visible in the core log. If more information is needed to diagnose the problem, you can run the MT20 using a dll compiled with MT20_DEBUG defined. This will cause it to create a file 'mt20_debug.txt' containing more information.
+
+{{Devices_Sidebar}}
