@@ -17,3 +17,5 @@ You will need to physically connect the output of the DA device to your device (
 The interplay with the 'DA Shutter' and the actual DA device is a bit funky.  You will first need to set the desired intensity of the light output by setting the output voltage.  You can then shutter the light with the DA Shutter device.  If you change the voltage while the shutter is closed, the light will come on again (which is counter-intuitive).
 
 --[[User:Nico|Nico]] 16:02, 30 September 2008 (PDT)
+
+{{Devices_Sidebar}}
