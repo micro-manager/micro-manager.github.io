@@ -22,7 +22,7 @@ See [http://gphoto.org/doc/remote/] for a list of cameras which support remote c
 
 == Installation ==
 
-===Installation instructions===
+Installation instructions:
 
 *Download [http://www.kdvelectronics.eu/focusdrive/Micro-Manager1.4-GPhoto.dmg.zip Micro-Manager 1.4 with GPhoto (Mac OS X)].
 * Connect the camera to the computer with a USB cable. 
@@ -30,7 +30,7 @@ See [http://gphoto.org/doc/remote/] for a list of cameras which support remote c
 * On Mac OS X, you have to kill the PTPCamera process to use PTP/MTP mode with micro-manager. Open Applications/Utilities/Activity Monitor, select "PTPCamera" and click on "Quit Process". You will need to kill the PTPCamera process every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 
-=== Add GPhoto to your hardware configuration ===
+Add GPhoto to your hardware configuration:
 * Open the Tools menu, and choose Device/Property Browser. If a GPhoto camera is already present, go to "Verify your camera has been detected".
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
@@ -45,7 +45,7 @@ See [http://gphoto.org/doc/remote/] for a list of cameras which support remote c
 * In the "Define position labels for state devices" window: Click on Next.
 * In the "Save configuration" window: Click "Save and test the new configuration". Click on Exit.
 
-=== Verify your camera has been detected ===
+Verify your camera has been detected:
 * Open the Tools menu, and choose Device/Property Browser.
 * Verify your camera appears under "GPhoto-CameraName". On systems with more than one camera, you have to manually select the correct camera by clicking on the "GPhoto-CameraName" property value.
 
