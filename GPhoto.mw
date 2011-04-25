@@ -30,7 +30,7 @@ Installation instructions:
 * On Mac OS X, you have to kill the PTPCamera process to use PTP/MTP mode with micro-manager. Open Applications/Utilities/Activity Monitor, select "PTPCamera" and click on "Quit Process". You will need to kill the PTPCamera process every time you switch the camera on, or connect the camera to the mac.
 * With the camera switched on, start up Micro-Manager.
 
-To add GPhoto to your hardware configuration:
+Add GPhoto to your hardware configuration:
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
 * In the "Add or remove devices" window: Click on Add.
@@ -43,8 +43,10 @@ To add GPhoto to your hardware configuration:
 * In the "Select devices to synchronize with image acquisition" window: Click on Next.
 * In the "Define position labels for state devices" window: Click on Next.
 * In the "Save configuration" window: Click "Save and test the new configuration". Click on Exit.
+
+Verify your camera has been detected:
 * Open the Tools menu, and choose Device/Property Browser.
-* Verify your camera appears under "CameraName". On systems with more than one camera, you have to manually select the correct camera.
+* Verify your camera appears under "GPhoto-CameraName". On systems with more than one camera, you have to manually select the correct camera.
 
 You can now use the camera in Micro-Manager.
 
