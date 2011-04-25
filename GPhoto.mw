@@ -31,6 +31,7 @@ Installation instructions:
 * With the camera switched on, start up Micro-Manager.
 
 Add GPhoto to your hardware configuration:
+* Open the Tools menu, and choose Device/Property Browser. If a GPhoto camera is already present, go to "Verify your camera has been detected".
 * Open the Tools menu, and choose Hardware Configuration Wizard.
 * In the "Select the configuration file" window: Click on Next.
 * In the "Add or remove devices" window: Click on Add.
@@ -46,7 +47,7 @@ Add GPhoto to your hardware configuration:
 
 Verify your camera has been detected:
 * Open the Tools menu, and choose Device/Property Browser.
-* Verify your camera appears under "GPhoto-CameraName". On systems with more than one camera, you have to manually select the correct camera.
+* Verify your camera appears under "GPhoto-CameraName". On systems with more than one camera, you have to manually select the correct camera by clicking on the "GPhoto-CameraName" property value.
 
 You can now use the camera in Micro-Manager.
 
