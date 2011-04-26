@@ -18,7 +18,7 @@
 == Description ==
 
 The GPhoto device driver provides support for cameras through [http://www.gphoto.org gphoto2]. In general these are cameras which connect through USB and use Picture Transfer Protocol (PTP) or Media Transfer Protocol (MTP).
-See [http://gphoto.org/doc/remote/] for a list of cameras which support remote capture.
+See [http://gphoto.org/doc/remote/] for a list of cameras which support remote capture. Cameras marked "Viewfinder" support remote Live View.
 
 == Installation ==
 
