@@ -14,7 +14,7 @@ Although there are easier to use terminal programs in existance, Windows comes s
 
 7. You are now presented with a 'connect to' dialog.  Select the COM port that is attached to your device and click 'OK'
 
-8. On the 'COMx Properties' page, select the appropriate settings for your COM port (baud rate, data bits, parity, stop bits and flow control).  These settings can be found in the manual to your device.  Also, the Micro-Manager Device Adapter wiki pages sometimes contain some of this information.  Click 'OK'.
+8. On the 'COMx Properties' page, select the appropriate settings for your COM port (baud rate, data bits, parity, stop bits and flow control).  These settings can be found in the manual to your device.  Also, the Micro-Manager Device Adapter pages sometimes contain some of this information.  Click 'OK'.
 
 [[Image:Hyperterminal.gif]]
 
