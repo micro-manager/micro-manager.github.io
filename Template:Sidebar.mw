@@ -1,2 +1,2 @@
-<div class=sidebar><h2><div align=center class=sidebar_title>{{{title}}}</div></h2>
+<div class=sidebar><div align=center class=sidebar_title>{{{title}}}</div>
 {{{content}}}</div>
