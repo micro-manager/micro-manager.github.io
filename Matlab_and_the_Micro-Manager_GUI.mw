@@ -20,3 +20,9 @@ and add the line:
  >> mmc = gui.getCore;
  >> acq = gui.getAcquisitionEngine;
 Now you have [http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/ScriptInterface.html gui], [http://micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html mmc], and [http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/AcquisitionEngine.html acq] objects that you can control from Matlab, very similar to how you would in [[Example_Beanshell_scripts|Beanshell scripts]].
+
+On Mac OS X, current versions of Matlab have a bug that causes Micro-Manager to fail on startup.  To work around this bug, issue the following command before starting the Micro-Manager GUI:
+
+>> java.lang.System.clearProperty('java.util.prefs.PreferencesFactory')
+
+(Reported by Paul Andrews, work around suggested by The Mathworks support).
