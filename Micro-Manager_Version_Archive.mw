@@ -226,6 +226,6 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 ** Moved DAZStage, DAShutter and MultiShutter into adapter Utilities
 ** Added StateDeviceShutter (in Utilities) that enables using a filter wheel as a shutter
 
-Previous releases: [[downloads.php?object=windows_1_2  Windows] | [downloads.php?object=mac_1_2 Mac] ]
+Previous releases: [[Micro-Manager 1.2 Windows (Very Old!)]] | [[Micro-Manager 1.2 Mac (Very Old!)]]
 
 {{Downloads_Sidebar}}
