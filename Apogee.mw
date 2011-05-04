@@ -2,8 +2,8 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Adapter for cameras from [http://www.ccd.com Apogee]</td></tr>
-<tr><td>'''Author:'''</td><td></td></tr>
-<tr><td>'''License:'''</td><td></td></tr> 
+<tr><td>'''Author:'''</td><td>Robert Dougherty</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>Apogee cameras</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.3.40</td>
