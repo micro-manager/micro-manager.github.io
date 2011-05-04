@@ -48,3 +48,5 @@
 ** MMCore.cpp - fix a problem where one mis-communicating device prevents user from correcting the hardware configuration.
 
 Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limited.<br />New features in Micro-Manager will be introduced in version 1.4.
+
+{{Downloads_Sidebar}}
