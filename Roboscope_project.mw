@@ -13,3 +13,5 @@ http://microscopytoolbox.googlecode.com<br>
 Use:<br>
 svn checkout http://microscopytoolbox.googlecode.com/svn/trunk/ microscopytoolbox-read-only
 <br> to checkout the code.
+
+{{Programming_Sidebar}}
