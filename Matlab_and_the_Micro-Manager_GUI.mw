@@ -26,3 +26,5 @@ On Mac OS X, current versions of Matlab have a bug that causes Micro-Manager to 
 >> java.lang.System.clearProperty('java.util.prefs.PreferencesFactory')
 
 (Reported by Paul Andrews, work around suggested by The Mathworks support).
+
+{{Programming_Sidebar}}
