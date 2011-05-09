@@ -12,7 +12,7 @@ Before diving into Programming within Micro-Manager, it is useful to review the 
 
 == Setting up the run-time environment ==
 
-MicroManage is in principle both platform independent and language neutral. But, in practice <span>''MMCore''</span> component is intended to run only on Windows, Mac OS X and Linux, and to be used from C++, Java, Matlab and Python programs. Setting up the environment is somewhat different for each language/OS combination.<br />
+Micro-Manager is in principle both platform independent and language neutral. But, in practice <span>''MMCore''</span> component is intended to run only on Windows, Mac OS X and Linux, and to be used from C++, Java, Matlab and Python programs. Setting up the environment is somewhat different for each language/OS combination.<br />
 
 === Java ===
 
