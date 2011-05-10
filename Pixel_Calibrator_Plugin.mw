@@ -6,3 +6,5 @@ Usage instructions:
 # The yellow rectangle indicates the part of the image that is being followed as the stage moves.
 # If calibration succeeds, the plugin will ask if you wish to add or update a Calibration setting.
 # Switch to a new magnification (objective/optovar) and repeat.
+
+{{Documentation_Sidebar}}
