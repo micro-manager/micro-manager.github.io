@@ -920,21 +920,513 @@ G. Goshima, M. Mayer, N. Zhang, N. Stuurman, and R.D. Vale (2008).  Augmin: a pr
 
 Griffis E.R., Stuurman N., Vale R.D. (2008). Spindly, a novel protein essential for silencing the spindle assembly checkpoint, recruits dynein to the kinetochore. '''J Cell Biol'''. 177(6):1005-1015 PMID 17576797
 
+''Papers citing and/or acknowledging the use of Micro-Manager''
+__NOTOC__
+==2011==
+
+{{Cite journal
+| doi = 10.1074/jbc.M109.031203
+| volume = 285
+| issue = 4
+| pages = 2707 -2720
+| last = Fujiwara
+| first = Ikuko
+| coauthors = Kirsten Remmert, John A. Hammer
+| title = Direct Observation of the Uncapping of Capping Protein-capped Actin Filaments by CARMIL Homology Domain 3
+| journal = Journal of Biological Chemistry
+| date = 2010
+}}
+{{PMID Link| pmid=19926785}}
+
+{{Cite journal
+| issn = 1420-682X
+| pages = 1-20
+| issue = 13
+| last = Civelekoglu-Scholey
+| first = G.
+| coauthors = J.M. Scholey
+| title = Mitotic force generators and chromosome segregation
+| journal = Cellular and molecular life sciences
+| date = 2010
+| volume = 67
+| doi = 10.1007/s00018-010-0326-6
+}}
+{{PMID Link| pmid=20221784}}
+
+Jing Li, Nima Najand, Wendy Long and Andrew Simmonds (2011). Imaging the Cellular Dynamics of Drosophila Argonaute Proteins. '''Methods in Molecular Biology.''' 725, 143-159 [http://dx.doi.org/10.1007/978-1-61779-046-1_10 doi:0.1007/978-1-61779-046-1_10] PMID 21528452.
+
+
+Looney, M.R., Thornton, E.E., Sen, D., Lamm, W.J., Glenny, R.W., and Krummel, M.F. (2011). Stabilized imaging of immune surveillance in the mouse lung. '''Nat Methods.''' 8, 91–96 [http://dx.doi.org/10.1038/nmeth.1543 doi:10.1038/nmeth.1543]
+{{PMID Link| pmid=21151136}}
+
+Debjani Paul, Laure Saias, Jean-Cedric Pedinotti, Max Chabert, Sebastien Magnifico, Antoine Pallandre, Bertrand De Lambert, Claude Houdayer, Bernard Brugg, Jean-Michel Peyrin, and Jean-Louis Viovy (2011). A “dry and wet hybrid” lithography technique for multilevel replication templates: Applications to microfluidic neuron culture and two-phase global mixing. '''BioMicrofluidics''' 5, 024102 [http://dx.doi.org/10.1063/1.3569946 doi:10.1063/1.3569946]
+
+Heather I. C. Dalgarno, Paul A. Dalgarno, Adetunmise C. Dada, Catherine E. Towers, Gavin J. Gibson, Richard M. Parton, Ilan Davis, Richard J. Warburton and Alan H. Greenaway  (2011). Nanometric depth resolution from multi-focal images in microscopy. '''Interface''' [http://dx.doi.org/10.1098/rsif.2010.0508 doi: 10.1098/​rsif.2010.0508]
+{{PMID Link| pmid=21247948}}
+
+Estrella Guarino, Marianne E. A. Shepherd, Israel Salguero, Hui Hua, Rachel S. Deegan and Stephen E. Kearsey (2011). Cdt1 proteolysis is promoted by dual PIP degrons and is modulated by PCNA ubiquitylation. '''Nucleic Acids Research''' [http://dx.doi.org/10.1093/nar/gkr222 doi: 10.1093/nar/gkr222] 
+{{PMID Link| pmid=21493688}}
+
+Andrea E. Knowlton, Heather M. Brown, Theresa S. Richards, Lauren A. Andreolas, Rahul K. Patel, Scott S. Grieshaber. (2011). Chlamydia trachomatis infection causes mitotic spindle pole defects independently from its effects on centrosome amplification. '''Traffic''' [http://dx.doi.org/10.1111/j.1600-0854.2011.01204.x doi: 10.1111/j.1600-0854.2011.01204.x]
+{{PMID Link| pmid=21477082}}
+
+Ulrich Y. Schaff1 and Greg J. Sommer (2011). Whole Blood Immunoassay Based on Centrifugal Bead Sedimentatio. '''Clinical Chemistry''' [http://dx.doi.org/10.1373/clinchem.2011.162206 doi:10.1373/clinchem.2011.162206]
+{{PMID Link| pmid=21415382}}
+
+Rosario Scalia, Yulan Gong, Brett Berzins, Brin Freund, Danielle Feather, and Gavin Landesberg Gourav Mishra (2011). A Novel Role for Calpain in the Endothelial Dysfunction Induced by Activation of Angiotensin II Type 1 Receptor Signaling.  '''Circulation Research''' [http://dx.doi.org/10.1161/CIRCRESAHA.110.229393 doi:10.1161/CIRCRESAHA.110.229393]
+{{PMID Link| pmid=21415394}}
+
+Claudia Rubio, David Pincus, Alexei Korennykh, Sebastian Schuck, Hana El-Samad, and Peter Walter (2011). Homeostatic adaptation to endoplasmic reticulum stress depends on Ire1 kinase activity. '''J Cell Biol 2011''' [http://dx.doi.org/10.1083/jcb.201007077 doi:10.1083/jcb.201007077]
+{{PMID Link| pmid=21444688}}
+
+Charles A. Harris, Joel T. Haas, Ryan S. Streeper, Scot J. Stone, Manju Kumari, Kui Yang, Xianlin Han, Nicholas Brownell, Richard W. Gross, Rudolf Zechner and Robert V. Farese Jr (2011). DGAT enzymes are required for triacylglycerol synthesis and lipid droplets in adipocytes. '''The Journal of Lipid Research''', 52 657 [http://dx.doi.org/10.1194/jlr.M013003 doi:10.1194/jlr.M013003]
+{{PMID Link| pmid=21317108}}
+
+{{Cite journal
+| @article {OMI:MOM609,
+| first = B.C.
+| last = Dickinson
+| coauthors =  Moffatt, C.E., Hagerty, D., Whitmore, S.E., Brown, T.A., Graves, D.T. and Lamont, R.J.
+| title = Interaction of oral bacteria with gingival epithelial cell multilayers
+| journal = Molecular Oral Microbiology
+| publisher = Blackwell Publishing Ltd
+| issn = 2041-1014
+| url = http://dx.doi.org/10.1111/j.2041-1014.2011.00609.x
+| doi = 10.1111/j.2041-1014.2011.00609.x
+| volume =
+| pages = 
+| keywords = {oral commensals, oral pathogens, periodontal disease, virulence},
+| date =2011
+}}
+{{PMID Link| pmid=21545698}}
+
+
+{{Cite journal
+| doi = 10.1016/j.biomaterials.2011.01.022
+| pmid = 21296409
+| issn = 0142-9612
+| volume = 32
+| issue = 13
+| pages = 3499-3506
+| last = Fischer
+| first = Kathleen E.
+| coauthors = Ganesh Nagaraj, R. Hugh Daniels, Esther Li, Verne E. Cowles, Jennifer L. Miller, Mark D. Bunger, Tejal A. Desai
+| title = Hierarchical nanoengineered surfaces for enhanced cytoadhesion and drug delivery
+| journal = Biomaterials
+| date = 2011
+}}
+{{PMID Link| pmid =  21296409}}
+
+Devrim Kilinc,  Jean-Michel Peyrin, Vanessa Soubeyre, Sebastien Magniﬁco, Laure Saias, Jean-Louis Viovy, and Bernard Brug. (2011). Wallerian-Like Degeneration of Central Neurons After Synchronized and Geometrically Registered Mass Axotomy in a Three-Compartmental Microﬂuidic Chip. '''Neurotox Res.''' 19:149-161. [http://dx.doi.org/10.1007/s12640-010-9152-8 doi:10.1007/s12640-010-9152-8]  {{PMID Link| pmid = 20162389}}
+
+Christopher M. Brown, Manisha Ray, Aura A. Eroy-Reveles, Pascal Egea, Cheryl Tajon, and Charles S. Craik. (2011). Peptide Length and Leaving-Group Sterics Influence Potency of Peptide Phosphonate Protease Inhibitors. '''Chemistry & Biology''' 18:48-57 [http://dx.doi.org/10.1016/j.chembiol.2010.11.007 doi:10.1016/j.chembiol.2010.11.007]
+{{PMID Link| pmid =  21276938}}
+
+Matthew I. Hoopes, Roland Faller, and Marjorie L. Longo. (2011). Lipid Domain Depletion at Small Localized Bends Imposed by a Step Geometry. '''Langmuir''' 27:2783-2788 [http://dx.doi.org/10.1021/la104504p doi:10.1021/la104504p]
+{{PMID Link| pmid =  21338070}}
+
+Ricardo Henriques, Caron Griffiths, E. Hesper Rego, and Musa M. Mhlanga (2011). PALM and STORM: Unlocking live-cell super-resolution. '''Biopolymers''' 95:322-331 [http://dx.doi.org/10.1002/bip.21586 doi:10.1002/bip.21586]
+{{PMID Link| pmid =  21254001}}
+
+Rachel McMullan, and Stephen J. Nurrish. (2011). The RHO-1 RhoGTPase Modulates Fertility and Multiple Behaviors in Adult C. elegans. '''PLoS ONE''' (2): e17265. [http://dx.doi.org/10.1371/journal.pone.0017265 doi:10.1371/journal.pone.0017265]
+{{PMID Link| pmid =  21387015}}
+
+Saravanan Rajan, Haig Djambazian, Huan Chu Pham Dang, Rob Sladek, and Thomas J Hudson. (2011). The living microarray: a high-throughput platform for measuring transcription dynamics in single cells. '''BMC Genomics''' 12:115. [http://dx.doi.org/10.1186/1471-2164-12-115 doi:10.1186/1471-2164-12-115]
+{{PMID Link| pmid =  21324195}}
+
+Hui Hua, and Stephen E. Kearsey (2011). Monitoring DNA replication in fission yeast by incorporation of 5-ethynyl-2′-deoxyuridine. '''Nucl. Acids Res.''' [http://dx.doi.org/10.1093/nar/gkr063 doi:10.1093/nar/gkr063]
+{{PMID Link| pmid =  21310713}}
+
+Nicolas Minc, David Burgess, and Fred Chang. (2011). Influence of Cell Geometry on Division-Plane Positioning. '''Cell''' 144: 427-438 [http://dx.doi.org/10.1016/j.cell.2011.01.016 doi:10.1016/j.cell.2011.01.016]
+{{PMID Link| pmid =  21295701}}
+
+Christian Conrad,	 Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher,Frank Sieckmann, Fatima Verissimo, Arthur Edelstein, Thomas Walter, Urban Liebel, Rainer Pepperkok & Jan Ellenberg. (2011). Micropilot: automation of fluorescence microscopy–based imaging for systems biology. '''Nature Methods''' 8:246–249  [http://dx.doi.org/10.1038/nmeth.1558 doi:10.1038/nmeth.1558]
+{{PMID Link| pmid =  21258339}}
+
+==2010==
+
+{{Cite journal
+| issn = 0950-0340
+| volume = 57
+| issue = 9
+| pages = 718-739
+| last = Mehta
+| first = Shalin B.
+| coauthors = Colin J. R. Sheppard
+| title = Using the phase-space imager to analyze partially coherent imaging systems: bright-field, phase contrast, differential interference contrast, differential phase contrast, and spiral phase contrast
+| journal = Journal of Modern Optics
+| date = 2010
+| doi = 10.1080/09500340.2010.481729
+}}
+
+Supreet S. Bahga, Moran Bercovici, Juan G. Santiago (2011). Ionic strength effects on electrophoretic focusing and separations. '''Electrophoresis''' 31:910-919 [http://dx.doi.org/10.1002/elps.200900560 DOI: 10.1002/elps.200900560]
+{{PMID Link| pmid=20191554}}
+
+Thorsten Wohland, Xianke Shi, Jagadish Sankaran, and Ernst H.K. Stelzer (2010). Single Plane Illumination Fluorescence Correlation Spectroscopy (SPIM-FCS) probes inhomogeneous three-dimensional environments. '''Optics Express''' 18: 10627-10641 [http://dx.doi.org/10.1364/OE.18.010627 doi:10.1364/OE.18.010627]
+{{PMID Link| pmid=20588915}}
+
+David F. Savage, Bruno Afonso, Anna H. Chen and Pamela A. Silver (2010). Spatially Ordered Dynamics of the Bacterial Carbon Fixation Machinery '''Science'''  327:1258-1261 [http://dx.doi.org/10.1126/science.1186090 DOI: 10.1126/science.1186090]
+{{PMID Link| pmid=20203050}}
+
+Fanjie Meng, Thams M. Suchyna, Elena Lazakovitch, Richard M. Gronostajski, and Frederick Sachs (2010). Real Time FRET Based Detection of Mechanical Stress in Cytoskeletal
+and Extracellular Matrix Proteins.  '''Cellular and Molecular Bioengineering''' published online Sept. 2010 [http://dx.doi.org/10.1007/s12195-010-0140-0 DOI: 10.1007/s12195-010-0140-0]
+
+{{Cite journal
+| doi = 10.1371/journal.pbio.1000415
+| pmid = 20625545
+| issn = 1544-9173
+| volume = 8
+| issue = 7
+| pages = 519-529
+| last = Pincus
+| first = D.
+| coauthors = M.W. Chevalier, T. Aragón, E. Van Anken, S.E. Vidal, H. El-Samad, P. Walter
+| title = BiP binding to the ER-stress sensor Ire1 tunes the homeostatic behavior of the unfolded protein response
+| journal = PLoS Biology
+| date = 2010
+}}
+{{PMID Link| pmid =  20625545}}
+
+{{Cite journal
+| doi = 10.1073/pnas.1010580107
+| pmid = 20798350
+| issn = 0027-8424
+| volume = 107
+| issue = 37
+| pages = 16113
+| last = Li
+| first = H.
+| coauthors = A.V. Korennykh, S.L. Behrman, P. Walter
+| title = Mammalian endoplasmic reticulum stress sensor IRE1 signals by dynamic clustering
+| journal = Proceedings of the National Academy of Sciences
+| date = 2010
+}}
+{{PMID Link| pmid =  20798350}}
+
+{{Cite journal
+| doi = 10.1016/j.cell.2010.10.003
+| pmid = 21111236
+| issn = 0092-8674
+| volume = 143
+| issue = 5
+| pages = 761-773
+| last = Puthenveedu
+| first = M.A.
+| coauthors = B. Lauffer, P. Temkin, R. Vistein, P. Carlton, K. Thorn, J. Taunton, O.D. Weiner, R.G. Parton, M. von Zastrow
+| title = Sequence-Dependent Sorting of Recycling Proteins by Actin-Stabilized Endosomal Microdomains
+| journal = Cell
+| date = 2010
+}}
+{{PMID Link| pmid =  21111236}}
+
+Yanjie Zhang, Allison M. Schnoes, and Aaron R. Clapp. (2010). Dithiocarbamates as Capping Ligands for Water-Soluble Quantum Dots. '''ACS Appl. Mater. Interfaces''' 2:3384-3395 [http://dx.doi.org/10.1021/am100996g DOI: 10.1021/am100996g]
+{{PMID Link| pmid =  21053924}}
+
+Andrew D Goldsmith, Sumeet Sarin, Shawn Lockery, and Oliver Hobert. (2010). Developmental control of lateralized neuron size in the nematode ''Caenorhabditis elegans''. '''Neural development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-33 doi:10.1186/1749-8104-5-33]
+{{PMID Link| pmid =  21122110}}
+
+Thomas M. Huckaba, Arne Gennerich, James E. Wilhelm, Athar H. Chishti and Ronald D. Vale. (2010. Kinesin-73 is a processive motor that localizes to Rab5-containing organelle. '''JBC''' [http://dx.doi.org/10.1074/jbc.M110.167023 doi: 10.1074/jbc.M110.167023]
+{{PMID Link| pmid =  21169635}}
+
+Liu, A.P., Aguet, F.,  Danuser, G., and Schmid, S.L. (2010). Local clustering of transferrin receptors promotes clathrin-coated pit initiation. '''JCB'''  191:1381-1393. [http://dx.doi.org/10.1083/jcb.201008117 doi: 10.1083/jcb.201008117]
+{{PMID Link| pmid =  21187331}}
+
+Razooky, B.S., and Weinberger, L.S. (2010).  Mapping the architecture of the HIV-1 Tat circuit: A decision-making circuit that lacks bistability and exploits stochastic noise. '''Methods''' [http://dx.doi.org/10.1016/j.ymeth.2010.12.006 doi:10.1016/j.ymeth.2010.12.006]
+{{PMID Link| pmid =  21167940}}
+
+Walston T, and Hardin J. (2010). Acquisition of 4D DIC Microscopic Data to Determine Cell Contacts in Caenorhabditis elegans Embryos. '''Cold Spring Harb Protoc.''' 2010:pdb.prot5541. [http://dx.doi.org/10.1101/pdb.prot5541 doi: 10.1101/pdb.prot5541]
+{{PMID Link| pmid =  21123428}}
+
+Uehara R, and Goshima, G. (2010). Functional central spindle assembly requires de novo microtubule generation in the interchromosomal region during anaphase.  '''JCB''' 191:259-267. [http://dx.doi.org/10.1083/jcb.201004150 doi:10.1083/jcb.201004150]
+{{PMID Link| pmid =  20937700}}
+
+Moss, J, et al. (2010). Break-induced ATR and Ddb1–Cul4Cdt2 ubiquitin ligase-dependent nucleotide synthesis promotes homologous recombination repair in fission yeast. '''Genes & Dev.''' 24: 2705-2716 [http://dx.doi.org/10.1101/gad.1970810 doi: 10.1101/gad.1970810] 
+{{PMID Link| pmid =  21123655}}
+
+Brian Alan Ashcroft and Tjerk Oosterkamp (2010). AutoMicromanager: A microscopy scripting toolkit for LABVIEW and other programming environments. '''Rev. Sci. Instrum.''' 81:113708-113712 [http://dx.doi.org/10.1063/1.3499370 doi:10.1063/1.3499370]
+{{PMID Link| pmid =  21133479}}
+
+Goldsmith AD, Sarin S, Lockery S, and Hobert, O. (2010) Developmental control of lateralized neuron size in the nematode
+Caenorhabditis elegans. '''Neural Development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-33 doi:10.1186/1749-8104-5-33]
+{{PMID Link| pmid =  21122110 }}
+
+Biehlmaier O, Hehl J, and Csucs G. (2010). Acquisition speed comparison of microscope software programs. '''Microsc Res Tech.''' (Epub ahead of print) [http://dx.doi.org/10.1002/jemt.20944 DOI: 10.1002/jemt.20944]
+{{PMID Link| pmid =  21086451}}
+
+Liisa M. Hirvonen, and Trevor A. Smith. (2010). Imaging on the Nanoscale: Super-Resolution Fluorescence Microscopy '''Australian Journal of Chemistry''' 64: 415-45 [http://dx.doi.org/10.1071/CH10333 doi:10.1071/CH10333]
+
+Yehonathan Bar-Yosef, Assaf Sukenik, Ora Hadas, Yehudit Viner-Mozzini and Aaron Kaplan (2010). Enslavement in the Water Body by Toxic Aphanizomenon ovalisporum, Inducing Alkaline Phosphatase in Phytoplanktons. '''Current Biology''' 20:1557-1561. [http://dx.doi.org/10.1016/j.cub.2010.07.032 doi:10.1016/j.cub.2010.07.032]
+{{PMID Link| pmid =  20705465}}
+
+Scott D. Hansen and R. Dyche Mullins (2010). VASP is a processive actin polymerase that requires monomeric actin for barbed end association. '''JCB'''  191:571-584. [http://dx.doi.org/10.1083/jcb.201003014 doi:10.1083/jcb.201003014]
+{{PMID Link| pmid =  21041447}}
+
+Nicholas W. Frost and Michael T. Bowser (2010). Using buffer additives to improve analyte stream stability in micro free flow electrophoresis. '''Lab Chip''' 10:1231-1236 [http://dx.doi.org/10.1039/B922325H doi: 10.1039/B922325H]
+{{PMID Link| pmid =  20445874}}
+
+Guangshuo Ou, Nico Stuurman, Michael D’Ambrosio, and Ronald D. Vale (2010). Polarized Myosin Produces Unequal-Size Daughters During Asymmetric Cell Division. '''Science''' 330:677-680. [http://dx.doi.org/10.1126/science.1196112 doi:10.1126/science.1196112]
+{{PMID Link| pmid =  20929735}}
+
+Benjamin S. Freedman, Kelly E. Miller, Rebecca Heald (2010). Xenopus Egg Extracts Increase Dynamics of Histone H1 on Sperm Chromatin. '''PLoS ONE''' 5(9): e13111. [http://dx.doi.org/10.1371/journal.pone.0013111 doi:10.1371/journal.pone.0013111] 
+{{PMID Link| pmid =  20927327}}
+
+Simon Blanchoud, Yemima Budirahardja, Félix Naef, Pierre Gönczy (2010). ASSET: A robust algorithm for the automated segmentation and standardization of early Caenorhabditis elegans embryos. '''Developmental Dynamics''' 239:3285-3296. [http://dx.doi.org/10.1002/dvdy.22486 doi:10.1002/dvdy.22486]
+{{PMID Link| pmid =  21089077}}
+
+Sarah S. Goodwin and Ronald D. Vale (2010.) Patronin Regulates the Microtubule Network by Protecting Microtubule Minus Ends.  '''Cell''' 143:263-274. [http://dx.doi.org/10.1016/j.cell.2010.09.022 doi:10.1016/j.cell.2010.09.022]
+{{PMID Link| pmid =  20946984}}
+
+Michael V. D'Ambrosio and Ronald D. Vale (2010). A whole genome RNAi screen of Drosophila S2 cell spreading performed using automated computational image analysis. '''J Cell Biol''' 191:471-478. [http://dx.doi.org/10.1083/jcb.201003135 doi:10.1083/jcb.201003135] 
+{{PMID Link| pmid =  21041442}}
+
+Veliz LA, Toro CA, Vivar JP, Arias LA, Villegas J, et al. (2010). Near-Membrane Dynamics and Capture of TRPM8 Channels within Transient Confinement Domains. '''PLoS ONE''' 5(10): e13290. [http://dx.doi.org/10.1371/journal.pone.0013290 doi:10.1371/journal.pone.0013290]
+{{PMID Link| pmid =  20948964}} 
+
+Douglas R. Mackay, Katharine S. Ullman, Christopher K. Rodesch (2010). Time-lapse Imaging of Mitosis After siRNA Transfection (2010) '''J Vis Exp.''' 40. [https://www.jove.com/index/details.stp?id=1878 doi: 10.3791/1878]
+{{PMID Link| pmid =  20548280}}
+
+Zhucheng Chen, Dominika Borek, Shae B. Padrick, Timothy S. Gomez, Zoltan Metlagel, Ayman M. Ismail, Junko Umetani, Daniel D. Billadeau, Zbyszek Otwinowski, and  Michael K. Rosen (2010).  Structure and control of the actin regulatory WAVE complex. '''Nature''' 468:533–538. [http://dx.doi.org/10.1038/nature09623 doi:10.1038/nature09623]
+{{PMID Link| pmid =  21107423}}
+
+C. M. Perrault, M. A. Qasaimeh, T. Brastaviceanu, K. Anderson, Y. Kabakibo, and D. Juncker (2010). Integrated microfluidic probe station. '''Rev. Sci. Instrum.''' 81:115107-115115. [http://dx.doi.org/10.1063/1.3497302 doi:10.1063/1.3497302]
+{{PMID Link| pmid =  21133501}}
+
+Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman (2010) Computer Control of Microscopes Using μManager. '''Current Protocols in Molecular Biology''' 14.20.1-14.20.17 [http://dx.doi.org/10.1002/0471142727.mb1420s92 doi:10.1002/0471142727.mb1420s92]
+{{PMID Link| pmid =  20890901}}
+
+Erin D. Goley, Aravind Rammohan, Elizabeth A. Znameroski, Elif Nur Firat-Karalar, David Sept, and Matthew D. Welch (2010). An actin-filament-binding interface on the Arp2/3 complex is critical for nucleation and branch stability. '''PNAS''' 107:8159-8164. [http://dx.doi.org/10.1073/pnas.0911668107  doi: 10.1073/pnas.0911668107] 
+{{PMID Link| pmid =  20404198}}
+
+Yu C-h, Wu H-J, Kaizuka Y, Vale RD, Groves JT (2010) Altered Actin Centripetal Retrograde Flow in Physically Restricted Immunological Synapses. '''PLoS ONE''' 5(7): e11878. [http://dx.doi.org/10.1371/journal.pone.0011878 doi:10.1371/journal.pone.0011878]
+{{PMID Link| pmid =  20686692}}
+
+Karin G. Stenkula, Vladimir A. Lizunov, 3, Samuel W. Cushman and Joshua Zimmerberg (2010). Insulin Controls the Spatial Distribution of GLUT4 on the Cell Surface through Regulation of Its Postfusion Dispersal. '''Cell Metabolism''' 12:250-259 [http://dx.doi.org/10.1016/j.cmet.2010.08.005 doi:10.1016/j.cmet.2010.08.005]
+{{PMID Link| pmid =  20816091}}
+
+Michael J. Boyle, Rachael L. French, K. Amber Cosand, Jennie B. Dorman, Daniel P. Kiehart and Celeste A. Berg (2010). Division of labor: Subsets of dorsal-appendage-forming cells control the shape of the entire tube. '''Developmental Biology''' 346:68-79 [http://dx.doi.org/10.1016/j.ydbio.2010.07.018 doi::10.1016/j.ydbio.2010.07.018]
+{{PMID Link| pmid =  20659448}}
+
+Kurt Thorn (2010). Spinning-Disk Confocal Microscopy of Yeast. '''Methods in Enzymology'''
+470:581-602 [http://dx.doi.org/10.1016/S0076-6879(10)70023-9 doi::10.1016/S0076-6879(10)70023-9]
+{{PMID Link| pmid =  20946826}}
+
+Shalin B. Mehta and Colin J. R. Sheppard (2010). Sample-less calibration of the differential interference contrast microscope. '''Applied optics''' 49: 2954-2968 [http://dx.doi.org/10.1364/AO.49.002954 doi:10.1364/AO.49.002954]
+{{PMID Link| pmid =  20490258}}
+
+Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta, Christophe Zimmer & Musa M Mhlanga (2010). QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ. '''Nature Methods''' 7:339–340 [http://dx.doi.org/10.1038/nmeth0510-339 doi:10.1038/nmeth0510-339]
+{{PMID Link| pmid =  20431545}}
+
+Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S. Grieshaber, Bently Robinson and David J. Culp (2010) Tissue Distribution of Murine Muc19/Smgc Gene Products. '''Journal of Histochemistry & Cytochemistry''' 58(2): 141-156 [http://dx.doi.org/doi:10.1369/jhc.2009.954891 doi:10.1369/jhc.2009.954891]
+{{PMID Link| pmid =  19826070}}
+
+Anindya Ghosh-Roy, Zilu Wu, Alexandr Goncharov Yishi Jin and Andrew D. Chisholm (2010) Calcium and Cyclic AMP Promote Axonal Regeneration in Caenorhabditis elegans and Require DLK-1 Kinase. '''The Journal of Neuroscience''' 30(9):3175-3183 [http://dx.doi.org/doi:10.1523/JNEUROSCI.5464-09.2010 doi:10.1523/JNEUROSCI.5464-09.2010]
+{{PMID Link| pmid =  20203177}}
+
+Shan Shan Kou, Laura Waller, George Barbastathis, and Colin J. R. Sheppard (2010) Transport-of-intensity approach to differential interference contrast (TI-DIC) microscopy for quantitative phase imaging. '''Optics Letters''' 35(3):447-449 [http://dx.doi.org/10.1364/OL.35.000447 doi:10.1364/OL.35.000447]
+{{PMID Link| pmid =  20125750}}
+
+John Oreopoulos, Raquel F. Epand, Richard M. Epand, and Christopher M. Yip (2010) Peptide-induced domain formation in supported lipid bilayers: Direct evidence by combined atomic force and polarized total internal reflection fluorescence microscopy. '''Biophysical Journal''' 98(5):815-823 [http://dx.doi.org/10.1016/j.bpj.2009.12.486 doi:10.1016/j.bpj.2009.12.486]
+{{PMID Link| pmid =  20197035}}
+
+Christian Conrad and Daniel Gerlich (2010). Automated microscopy for high-content RNAi screening. '''Journal of Cell Biology''' 188/4:453-461
+[http://dx.doi.org/10.1083/jcb.200910105 doi:10.1083/jcb.200910105]
+{{PMID Link| pmid =  20176920}}
+
+Jerome W. Breslin, Kristine M. Kurtz (2010). Lymphatic Endothelial Cells Adapt Their Barrier Function in Response to Changes in Shear Stress. '''Lymphatic Research and Biology''' 7(4):229-237
+[http://dx.doi.org/10.1089/lrb.2009.0015 doi:10.1089/lrb.2009.0015]
+{{PMID Link| pmid =  20143922}}
+
+David K. Breslow, Sean R. Collins, Bernd Bodenmiller, Ruedi Aebersold, Kai Simons, Andrej Shevchenko, Christer S. Ejsing, and Jonathan S. Weissman (2010). Orm family proteins mediate sphingolipid homeostasis. '''Nature''' 463:1048-1053 [http://dx.doi.org/10.1038/nature08787 doi:10.1038/nature08787]
+{{PMID Link| pmid =  20182505}}
+
+==2009==
+
+Thomas M Suchyna, Vladamir S Markin and Frederick Sachs (2009). Biophysics and Structure of the Patch and Gigaseal. '''Biophysical Journal''' 97: 738-747 [http://dx.doi.org/10.1016/j.bpj.2009.05.018 doi:10.1016/j.bpj.2009.05.018]
+{{PMID Link| pmid=19651032}}
+
+
+{{Cite journal
+| doi = 10.1038/nature08446
+| issn = 0028-0836
+| volume = 461
+| issue = 7266
+| pages = 997-1001
+| last = Levskaya
+| first = A.
+| coauthors = O.D. Weiner, W.A. Lim, C.A. Voigt
+| title = Spatiotemporal control of cell signalling using a light-switchable protein interaction
+| journal = Nature
+| date = 2009
+}}
+{{PMID Link|pmid=19749742}}
+
+{{Cite journal
+| doi = 10.1126/science.1167983
+| issn = 0036-8075
+| volume = 323
+| issue = 5922
+| pages = 1693
+| last = Jonikas
+| first = M.C.
+| coauthors = S.R. Collins, V. Denic, E. Oh, E.M. Quan, V. Schmid, J. Weibezahn, B. Schwappach, P. Walter, J.S. Weissman
+| title = Comprehensive characterization of genes required for protein folding in the endoplasmic reticulum
+| journal = Science
+| date = 2009
+}}
+{{PMID Link|pmid=19325107}}
+
+{{Cite journal
+| doi = 10.1126/science.1175088
+| issn = 0036-8075
+| volume = 325
+| issue = 5939
+| pages = 477
+| last = Kornmann
+| first = B.
+| coauthors = E. Currie, S.R. Collins, M. Schuldiner, J. Nunnari, J.S. Weissman, P. Walter
+| title = An ER-mitochondria tethering complex revealed by a synthetic biology screen
+| journal = Science
+| date = 2009
+}}
+{{PMID Link|pmid=19556461}}
+
+{{Cite journal
+| doi = 10.1083/jcb.200907074
+| issn = 0021-9525
+| volume = 187
+| issue = 4
+| pages = 525
+| last = Schuck
+| first = S.
+| coauthors = W.A. Prinz, K.S. Thorn, C. Voss, P. Walter
+| title = Membrane expansion alleviates endoplasmic reticulum stress independently of the unfolded protein response
+| journal = The Journal of Cell Biology
+| date = 2009
+}}
+{{PMID Link|pmid=19948500}}
+
+Matula, P., Maška, M., Danek, O., Matula, P., and Kozubek, M. (2009). Acquiarium: free software for the acquisition and analysis of 3D images of cells in fluorescence microscopy. In '''Proceedings of the Sixth IEEE international Conference on Symposium on Biomedical Imaging: From Nano To Macro''' (Boston, Massachusetts, USA, June 28 - July 01, 2009). IEEE Press, Piscataway, NJ, 1138-1141 [http://www.muni.cz/research/publications/833229]
+
+Jungho Ohn, Huai-Jen Tsai, and Michael Liebling (2009).  Joint dynamic imaging of morphogenesis and function in the developing heart. '''Organogenesis''' 5:166-173 [http://www.landesbioscience.com/journals/organogenesis/article/10568 link to pdf]
+
+A. Bernardini, C. Wotzlaw, H.-G. Lipinski, and J. Fandrey (2009). An Automated Real Time System for FRET Based Protein-Protein Interaction Analysis. '''IFMBE Proceedings''' 25/4:1056-1058 [http://dx.doi.org/10.1007/978-3-642-03882-2_281 doi:10.1007/978-3-642-03882-2_281]
+
+James C. W. Locke  and  Michael B. Elowitz (2009). Using movies to analyse gene circuit dynamics in single cells. '''Nature Reviews Microbiology.''' [http://dx.doi.org/10.1038/nrmicro2056 doi:10.1038/nrmicro2056] PMID 19369953.
+
+Vedakumar Tatavarty, Eun-Ji Kim, Vladimir Rodionov, and Ji Yu (2009). Investigating Sub-Spine Actin Dynamics in Rat Hippocampal Neurons with Super-Resolution Optical Imaging. '''PLoS One.''' [http://dx.doi.org/10.1371/journal.pone.0007724 doi:10.1371/journal.pone.0007724] PMID 19898630.
+
+Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S. Grieshaber, Bently Robinson, and David J. Culp (2009). Tissue Distibution of Murine <i>Muc19/Smgc</i> Gene Products. '''J.  Histochem. and Cytochem.''' [http://dx.doi.org/10.1369/jhc.2009.954891 doi:10.1369/jhc.2009.954891] PMID 19826070.
+
+Ronald D. Vale, James A. Spudich, and Eric R. Griffis (2009). Dynamics of myosin, microtubules, and Kinesin-6 at the cortex during cytokinesis in Drosophila S2 cells. '''J. Cell Biol.''' 186:727-738 [http://dx.doi.org/10.1083/jcb.200902083 doi:10.1083/jcb.200902083] PMID 19720876.
+
+Grossmann S, Higashiyama S, Oksche A, Schaefer M, and Tannert A (2009).  Localisation of endothelin B receptor variants to plasma membrane microdomains and its effects on downstream signalling.  '''Mol Membr Biol.''' 26:279-292.
+[http://dx.doi.org/10.1080/09687680903191682 doi:10.1080/09687680903191682] PMID 19757321.
+
+Miao-Hsueh Chen, Christopher W. Wilson, Ya-Jun Li, Kelvin King Lo Law, Chi-Sheng Lu, Rhodora Gacayan, Xiaoyun Zhang, Chi-chung Hui, and Pao-Tien Chuang (2009). Cilium-independent regulation of Gli protein function by Sufu in Hedgehog signaling is evolutionarily conserved. '''Genes & Development''' 23:1910-1928 [http://dx.doi.org/10.1101/gad.1794109 doi: 10.1101/gad.1794109 ] PMID 19684112.
+
+Christopher W. Wilson, Catherine T. Nguyen, Miao-Hsueh Chen, Jehn-Hsiahn Yang, Rhodora Gacayan, Jie Huang, Jau-Nian Chen  &  Pao-Tien Chuang (2009). Fused has evolved divergent roles in vertebrate Hedgehog signalling and motile ciliogenesis. '''Nature''' 459:98-102 [http://dx.doi.org/doi:10.1038/nature07883 doi:10.1038/nature07883]
+
+Margaret Lin Veruki and Espen Hartveit (2009). Meclofenamic Acid Blocks Electrical Synapses of Retinal AII Amacrine and ON-Cone Bipolar Cells. '''J Neurophysiol ''' 101: 2339-2347 [http://dx.doi.org/10.1152/jn.00112.2009 doi:10.1152/jn.00112.2009] PMID 19279153.
+
+Jonathan M.  Glynn, Yue  Yang, Stanislav  Vitha, Aaron J.  Schmitz, Mia  Hemmes, Shin-ya  Miyagishima, and  Katherine W.  Osteryoung (2009). PARC6, a novel chloroplast division factor, influences FtsZ assembly and is required for recruitment of PDV1 during chloroplast division in Arabidopsis. '''The Plant Journal''' 59:700-711 [http://dx.doi.org/10.1111/j.1365-313X.2009.03905.x doi:10.1111/j.1365-313X.2009.03905.x] PMID 19453460.
+
+Yoshihisa Kaizuka, Adam D. Douglass, Santosh Vardhana, Michael L. Dustin, and Ronald D. Vale (2009). The coreceptor CD2 uses plasma membrane microdomains to transduce signals in T cells. '''J. Cell Biol.''' [[http://dx.doi.org/10.1083/jcb.200809136 doi:10.1083/jcb.200809136] PMID 19398758.
+
+Guangshuo Ou, and Ronald D. Vale (2009). Molecular signatures of cell migration in C. elegans Q neuroblasts. '''J. Cell Biol.''' 185:77-85 [http://dx.doi.org/10.1083/jcb.200812077 doi:10.1083/jcb.200812077] PMID 19349580.
+
+Liisa M. Hirvonen, Kai Wicker, Ondrej Mandula and Rainer Heintzmann (2009). Structured illumination microscopy of a living cell. '''European Biophysics Journal''' 38:807-812 [http://dx.doi.org/10.1007/s00249-009-0501-6 doi:10.1007/s00249-009-0501-6] PMID 19536533.
+
+J. Bradley Zuchero, Amanda S. Coutts, Margot E. Quinlan, Nicholas B. La Thangue  &  R. Dyche Mullins (2009). p53-cofactor JMY is a multifunctional actin nucleation factor. '''Nature Cell Biology''' 11:451-459 [http://dx.doi.org/10.1038/ncb1852 doi:10.1038/ncb1852] PMID 19287377.
+
+Andrew D Straw, and Michael H Dickinson (2009). Motmot, an open-source toolkit for realtime video acquisition and analysis. '''Source Code Biol Med.''' 4:5. [http://dx.doi.org/10.1186/1751-0473-4-5 doi:10.1186/1751-0473-4-5] PMID 19624853.
+
+H. Khodja, M. Hanot, b, M. Carrièr, b, J. Hoarau, b and J.F. Angulo (2009). The single-particle microbeam facility at CEA-Saclay.  '''Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms''' 267:1999-2002. [http://dx.doi.org/10.1016/j.nimb.2009.03.040 doi:10.1016/j.nimb.2009.03.040]  
+
+Franco J. Vizeacoumar, Yolanda Chong, Charles Boone and Brenda J. Andrews (2009). A picture is worth a thousand words: Genomics to phenomics in the yeast Saccharomyces cerevisiae. '''FEBS Letters'''. 583:1656-1661. [http://dx.doi.org/10.1016/j.febslet.2009.03.068  doi:10.1016/j.febslet.2009.03.068]  PMID 19351535.
+
+X. Michalet, R.A. Colyer, J. Antelman, O.H.W. Siegmund, A. Tremsin, J.V. Vallerga, and S. Weiss (2009). Single-Quantum Dot Imaging with a Photon Counting Camera. '''Current Pharmaceutical Biotechnology''' 10:543-558 {{PMID Link| pmid = 19689323}}
+
+John Oreopoulos and Christopher M. Yip (2009). Combinatorial microscopy for the study of protein–membrane interactions in supported lipid bilayers: Order parameter measurements by combined polarized TIRFM/AFM. '''J Struct Biol'''. 168:21-36. [http://dx.doi.org/10.1016/j.jsb.2009.02.011 doi:10.1016/j.jsb.2009.02.011] PMID 19268707.
+
+Julia R. Kardon, Samara L. Reck-Peterson, and Ronald D. Vale (2009). Regulation of the processivity and intracellular localization of Saccharomyces cerevisiae dynein by dynactin. '''PNAS'''. 106:5669-5674. [http://dx.doi.org/10.1073/pnas.0900976106 doi: 10.1073/pnas.0900976106]  PMID 19293377.
+
+Samways, D.S., Harkins, A.B. & Egan, T.M (2009). Native and recombinant ASIC1a receptors conduct negligible Ca2+ entry. '''Cell Calcium'''. 45:319-325. [http://dx.doi.org/10.1016/j.ceca.2008.12.002 doi:10.1016/j.ceca.2008.12.002] PMID 19185346.
+
+Chambers, R.D. & Santiago, J.G (2009). Imaging and Quantification of Isotachophoresis Zones Using Nonfocusing Fluorescent Tracers. '''Analytical Chemistry'''. Early publication online. [http://dx.doi.org/10.1021/ac802698a doi:10.1021/ac802698a] PMID 19290665.
+
+==2008==
+
+{{Cite journal
+| doi = doi: DOI: 10.1016/j.cell.2008.06.025
+| issn = 0092-8674
+| volume = 134
+| issue = 4
+| pages = 634-645
+| last = Schuldiner
+| first = Maya
+| coauthors = Jutta Metz, Volker Schmid, Vladimir Denic, Magdalena Rakwalska, Hans Dieter Schmitt, Blanche Schwappach, Jonathan S. Weissman
+| title = The GET Complex Mediates Insertion of Tail-Anchored Proteins into the ER Membrane
+| journal = Cell
+| date = 2008-08-22
+}}
+
+{{Cite journal
+| doi = 10.1038/nature07641
+| issn = 0028-0836
+| volume = 457
+| issue = 7230
+| pages = 736-740
+| last = Aragón
+| first = T.
+| coauthors = E. Van Anken, D. Pincus, I.M. Serafimova, A.V. Korennykh, C.A. Rubio, P. Walter
+| title = Messenger RNA targeting to endoplasmic reticulum stress signalling sites
+| journal = Nature
+| date = 2008
+}}
+
+Moreira KE, Walther TC, Aguilar PS, Walter P. (2008) Pil1 Controls Eisosome Biogenesis. '''Mol. Biol. Cell.''' 20: 809-818. [http://dx.doi.org/10.1091/mbc.E08-03-0313 doi:10.1091/mbc.E08-03-0313] PMID 19037108.
+
+Olivier Debeir, Ivan Adanja, Robert Kiss & Christine Decaestecker (2008). Models of cancer cell migration 
+and cellular imaging and analysis. Chapter 5 of ''The motile actin system in health and disease.'' Edited by: Lambrechts A, Ampe C. Kerala: Transworld Research Network, pp 123-156. [http://lisa.ulb.ac.be/publifiles/207/Lambrechts5_last.pdf PDF]
+
+Bashkirov, P.V. et al (2008). GTPase Cycle of Dynamin Is Coupled to Membrane Squeeze and Release, Leading to Spontaneous Fission. '''Cell'''. 135:1276-1286. [http://dx.doi.org/10.1016/j.cell.2008.11.028 doi:10.1016/j.cell.2008.11.028] PMID 19084269.
+
+Zimberlin, J.A., Wadsworth, P. & Crosby, A.J . Living microlens arrays (2008). '''Cell Motility and the Cytoskeleton'''. 65. [http://dx.doi.org/10.1002/cm.20302 doi:10.1002/cm.20302] PMID 18615631.
+
+Aragón, T. et al (2008). Messenger RNA targeting to endoplasmic reticulum stress signalling sites. '''Nature'''. 457:736-740. [http://dx.doi.org/10.1038/nature07641 doi:10.1038/nature07641] PMID 19079237.
+
+Merksamer, P.I., Trusina, A. & Papa, F.R (2008). Real-Time Redox Measurements during Endoplasmic Reticulum Stress Reveal Interlinked Protein Folding Functions. '''Cell'''. 135:933-947. [http://dx.doi.org/10.1016/j.cell.2008.10.011 doi:10.1016/j.cell.2008.10.011] PMID 19026441.
+
+Chernomoretz, A. et al (2008). Using Cell-ID 1.4 with R for microscope-based cytometry. '''Current protocols in molecular biology'''. Unit 14.18. [http://dx.doi.org/10.1002/0471142727.mb1418s84 doi:10.1002/0471142727.mb1418s84] PMID 18972382.
+
+Ingrid C.  Koo, Chen  Wang, Sridharan  Raghavan, J. Hiroshi  Morisaki, Jeffery S.  Cox  and Eric J.  Brown (2008). ESX-1-dependent cytolysis in lysosome secretion and inflammasome activation during mycobacterial infection. '''Cellular Microbiology'''. 10(9):1866-1878 [http://dx.doi.org/10.1111/j.1462-5822.2008.01177.x doi:10.1111/j.1462-5822.2008.01177.x] PMID 18503637.
+
+Erika Rosivatz (2008). Imaging the boundaries—innovative tools for microscopy of living cells and real-time imaging. '''
+J Chem. Biol.''' [http://dx.doi.org/10.1007/s12154-008-0004-4 doi:10.1007/s12154-008-0004-4] PMID 19568794.
+
+Lili Niu and Ji Yu (2008). Investigating Intracellular Dynamics of FtsZ Cytoskeleton with Photo-activation Single-molecule Tracking. '''Biophysical J.''' 95:2009-2016 [http://dx.doi.org/10.1529/biophysj.108.128751 doi:10.1529/biophysj.108.128751] PMID 18390602.
+
+Liam J. Holt, Andrew N. Krutchinsky, and David O. Morgan (2008).  Positive feedback sharpens the anaphase switch.  '''Nature''' 454:353-357 PMID 18552837
+
+G. Goshima, M. Mayer, N. Zhang, N. Stuurman, and R.D. Vale (2008).  Augmin: a protein complex required for centrosome-independent microtubule generation within the spindle.  '''J Cell Biol.'''  181(3):421-429 PMID 18443220
+
+Griffis E.R., Stuurman N., Vale R.D. (2008). Spindly, a novel protein essential for silencing the spindle assembly checkpoint, recruits dynein to the kinetochore. '''J Cell Biol'''. 177(6):1005-1015 PMID 17576797
+
 ==2007==
 
-Christopher S. Campbell and R. Dyche Mullins (2007). In vivo visualization of type II plasmid segregation: bacterial actin filaments pushing plasmids. '''J Cell biol.''' 179(5):1059-1066 [http://dx.doi.org/10.1083/jcb.200708206 doi:10.1083/jcb.200708206]
+Christopher S. Campbell and R. Dyche Mullins (2007). In vivo visualization of type II plasmid segregation: bacterial actin filaments pushing plasmids. '''J Cell biol.''' 179(5):1059-1066 [http://dx.doi.org/10.1083/jcb.200708206 doi:10.1083/jcb.200708206] PMID 18039937.
 
-Yi Yang, Amira M. El-Ganiny, Geoffrey E. Bray, David A.R. Sanders, and Susan G.W. Kaminskyj (2007). Aspergillus nidulans hypB encodes a Sec7-domain protein important for hyphal morphogenesis.  '''Fungal Genetics and Biology''' 45(5):749-759. [http://dx.doi.org/10.1016/j.fgb.2007.11.005 doi:10.1016/j.fgb.2007.11.005]
+Yi Yang, Amira M. El-Ganiny, Geoffrey E. Bray, David A.R. Sanders, and Susan G.W. Kaminskyj (2007). Aspergillus nidulans hypB encodes a Sec7-domain protein important for hyphal morphogenesis.  '''Fungal Genetics and Biology''' 45(5):749-759. [http://dx.doi.org/10.1016/j.fgb.2007.11.005 doi:10.1016/j.fgb.2007.11.005] PMID 18248749.
 
 Stuurman, N., Amodaj N., Vale, R.D. (2007). Micro-Manager: Open Source software for light microscope imaging.  '''Microscopy Today'''. 15(3):42-43. [http://microscopy-today.com/PDFFiles/MT-2007-03-small.pdf Full Issue (pdf)]
 
-Kevin C. Slep and Ronald D. Vale (2007). Structural Basis of Microtubule Plus End Tracking by XMAP215, CLIP-170, and EB1. '''Molecular Cell''' 27(6):976-991. [http://dx.doi.org/10.1016/j.molcel.2007.07.023 doi:10.1016/j.molcel.2007.07.023]
+Kevin C. Slep and Ronald D. Vale (2007). Structural Basis of Microtubule Plus End Tracking by XMAP215, CLIP-170, and EB1. '''Molecular Cell''' 27(6):976-991. [http://dx.doi.org/10.1016/j.molcel.2007.07.023 doi:10.1016/j.molcel.2007.07.023] PMID 17889670.
 
-Liam J. Holt, Jessica E. Hutti, Lewis C. Cantley and David O. Morgan (2007). Evolution of Ime2 Phosphorylation Sites on Cdk1 Substrates Provides a Mechanism to Limit the Effects of the Phosphatase Cdc14 in Meiosis. '''Molecular Cell''' 25(5):689-702. [http://dx.doi.org/10.1016/j.molcel.2007.02.012 doi:10.1016/j.molcel.2007.02.012]
+Liam J. Holt, Jessica E. Hutti, Lewis C. Cantley and David O. Morgan (2007). Evolution of Ime2 Phosphorylation Sites on Cdk1 Substrates Provides a Mechanism to Limit the Effects of the Phosphatase Cdc14 in Meiosis. '''Molecular Cell''' 25(5):689-702. [http://dx.doi.org/10.1016/j.molcel.2007.02.012 doi:10.1016/j.molcel.2007.02.012] PMID 17349956.
 
-Tony J. Collins. (2007) ImageJ for microscopy. '''BioTechniques''' 43:S25-S30 [http://dx.doi.org/10.2144/000112517 doi 10.2144/000112517]
+Tony J. Collins. (2007) ImageJ for microscopy. '''BioTechniques''' 43:S25-S30 [http://dx.doi.org/10.2144/000112517 doi 10.2144/000112517] PMID 112517.
 
-Carpenter, A.E. (2007). Image-based chemical screening.  '''Nature Chemical Biology'''. 3:461-465.  [http://dx.doi.org/10.1038/nchembio.2007.15 doi:10.1038/nchembio.2007.15]
+Carpenter, A.E. (2007). Image-based chemical screening.  '''Nature Chemical Biology'''. 3:461-465.  [http://dx.doi.org/10.1038/nchembio.2007.15 doi:10.1038/nchembio.2007.15] PMID 17637778.
 
 Carpenter, A.E. (2007). Software opens the door to quantitative imaging.  '''Nature Methods'''. 4:120-121. PMID 17264858.
 
