@@ -81,6 +81,8 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 ;TransposeXY
 :When set, rotates image. Allowable values are 0 and 1.
 
+{{Devices_Sidebar}}
+
 == Notes ==
 *If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 640x426 pixels for Nikon, and 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second.
 
