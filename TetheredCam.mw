@@ -98,3 +98,7 @@ The following properties are currently implemented:
 *If you wish to automatically load your "Shutter Speeds" settings upon startup, create a Micro-Manager configuration group called "System". In the "System" configuration group, create a preset group called "Startup" which includes "Shutter Speeds". These settings will be applied every time you start up Micro-Manager.
 
 *To get a live view display in DSLRRemote, NKRemote or PSRemote, open the "Camera" menu and select "Live View".
+
+http://valelab.ucsf.edu/~MM/MMwiki/index.php/GPhoto
+
+{{Devices_Sidebar}}
