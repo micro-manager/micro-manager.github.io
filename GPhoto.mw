@@ -13,6 +13,9 @@
 |-
 |'''Devices:'''
 |PTP and MTP cameras connected via USB.
+|-
+|'''Example Config File:'''
+|[[Media:MMConfig_GPhoto.cfg]]
 |}
 
 == Description ==
