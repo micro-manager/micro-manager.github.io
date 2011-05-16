@@ -99,4 +99,6 @@ The following properties are currently implemented:
 
 *To get a live view display in DSLRRemote, NKRemote or PSRemote, open the "Camera" menu and select "Live View".
 
+*This driver is Windows-only. To use Canon and Nikon cameras on MacOS X and Linux systems see [[GPhoto]].
+
 {{Devices_Sidebar}}
