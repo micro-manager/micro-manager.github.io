@@ -92,7 +92,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 *On Mac OS X, you have to kill the Apple PTPCamera process every time after connecting your camera, after switching your camera on, and before running micro-manager. If you wish to automate this, try the following:
 ** Open Applications/AppleScript/Script Editor.
 ** Create a one-line AppleScript <pre>tell application "PTPCamera" to quit</pre>
-** Select File > Save As... and save as application "killptpcamera".
+** Select File > Save As... and save as "killptpcamera", file format "application".
 ** Close Script Editor.
 ** Open Applications/Image Capture.
 ** Select Preferences... and set "When a camera is connected, open:" to "killptpcamera".
