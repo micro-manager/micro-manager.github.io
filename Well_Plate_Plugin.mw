@@ -23,10 +23,6 @@ big.jar must be installed and imported into the bsh script.
  addClassPath("Big.jar");
  import edu.umassmed.big.SBSPlate;
 
-== Todo ==
-
-Currently the plugin only supports moving to the center of each well. I want to add functionally to move within a well. I haven't decided on the best way to do this yet.
-
 == Class Functions ==
 
 Most functions expect well positions in X, Y coordinates, where X is the long axis, and Y is the short axis of the well plate. X might have a range from 1 to 48 and Y might have a range from 1 to 32, depending upon plate size. Functions with Position in the name return coordinates in microns relative to well A1 plus an offset. 
@@ -129,7 +125,7 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  
  
    // move the stage to the next well
-   position = plate.getNextPosition(); // 0 indexed in mcrons
+   position = plate.getNextPlatePosition(); // 0 indexed in mcrons
    mmc.setXYPosition(xystage,position[0],position[1]);
    mmc.waitForDevice(xystage);
  }
