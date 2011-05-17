@@ -18,7 +18,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
 * [[GigE]] - GigE Vision- and GenICam-compliant cameras
-* [[GPhoto]] - Picture Transfer Protocol (PTP) and Media Transfer Protocol (MTP) cameras (Mac, Linux)
+* [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[Jenoptik]] - Jenoptik cameras (ProGres series)
 * [[Leica]] - Leica DFC (through BaumerOptronic FXLib)
