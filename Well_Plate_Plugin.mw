@@ -38,8 +38,11 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 :Initializes the plugin for use with well plate of a set size. Acceptable sizes are 24, 96, 384, and 1536. Assumes Well A1 is at
 :coordinates 0,0.
 
-;SBSPlate(int size, double X, double Y)
+;SBSPlate(int size, double x, double y)
 :This also sets the X and Y stage coordinates of well A1. Only use one initialization SBSPlate();
+
+;void SetPositionA1(double x, double y)
+:Tells the class the offset of well A1. If X, and Y can't be set to 0,0 at position A1, then you must use this function.
 
 ;void setFirstWell(int x, int y)
 :Changes the starting position from {1,1} to {x,y}, assuming 96 well plate. Index is 1 based. X is the long dimension, and Y is the short dimension of the well plate. For example, setFirstWell(1,2) would start at well B1.  
@@ -56,8 +59,38 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
 ;int getNumberOfWells() 
 :Returns the number of wells in the entire plate, or the number of wells in a subregion.
 
-;double[] getNextPosition() 
-:Returns the {x,y} coordinates in microns of the next well. If at the last well, it will return the first well's coordinates.
+;int getNumberOfWellPositions() 
+:Returns the number of positions in the current well if it exists, otherwise :returns the number of positions in the global list.
+
+;int getNumberOfWellPositions(int well) 
+:Returns the number of positions in a specific well if it exists, otherwise :returns the number of positions in the global list.
+
+;double[] getNextPosition()
+:Deprecated. Please use getNextPlatePosition()
+
+;double[] getNextPlatePosition() 
+:Returns the {x,y} coordinates in microns of the next well. If at the last :well, it will return the first well's coordinates.
+
+;double[] getNextWellPosition(int well) 
+:Returns the {x,y} coordinates in microns of the next position within a :specific well. 
+
+;void addPosition(double x, double y, double z)
+:Adds a x,y,z position to the global position list. X and Y submitted values :need to be passed relative to the center of the well. X, and Y are lated :returned as absolute positions. Z is later returned unmodified.
+
+;void addPosition(double x, double y, double z, int well)
+:Adds a x,y,z position to a specific well. Any positions stored for a specific :well overrides global position lists. X and Y submitted values need to be :passed relative to the center of the well. X, and Y are later returned as :absolute positions. Z is later returned unmodified.
+
+;void clearPositions() 
+:Clears the global position list
+
+;void clearPositions(int well)
+:Clears the position list of a specific well
+
+;void skipWell(Boolean skip)
+:Use to either to skip or not skip (default) the current well.
+
+;Boolean skipWell(int well)
+:Returns TRUE if the specific well needs to be skipped.
 
 == Example Micro-Manager BSH Script ==
 
