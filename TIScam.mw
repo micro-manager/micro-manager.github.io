@@ -1,7 +1,7 @@
 == The Imaging Source Camera Device Adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with [http://www.theimagingsource.com] Cameras</td></tr>
+'''Summary:'''</td><td>Interfaces with The Imaging Source  [http://www.theimagingsource.com] Cameras</td></tr>
 <tr><td>'''Author:'''</td><td>Falk Dettmar</td></tr>
 <tr><td>'''License:'''</td><td>GNU lesser</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows XP, also verified in µManager1.4 on Windows 7 64 bit by K.H.</td></tr>
