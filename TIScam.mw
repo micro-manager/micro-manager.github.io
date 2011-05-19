@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Interfaces with [http://www.theimagingsource.com] Cameras</td></tr>
 <tr><td>'''Author:'''</td><td>Falk Dettmar</td></tr>
 <tr><td>'''License:'''</td><td>GNU lesser</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows XP, also verified in MM 1.4 on Windows 7 64 bit by K.H.</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows XP, also verified in µManager1.4 on Windows 7 64 bit by K.H.</td></tr>
 <tr><td>'''Devices:'''</td><td>Cameras</td></tr>
 <tr><td>'''Installation Notes:'''</td><td>Karl Hoover</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.3.46</td>
@@ -12,36 +12,30 @@
 
 Setting up The Imaging Source Software.
 
-1.Install the IC Capture software that comes with the camera and verify you can capture images. This will install a camera device 'driver,' which the rest of the software uses to  control the camera.
+1.Install the IC Capture software that comes with the camera and verify you can capture images. This will install a camera device 'driver,' which the rest of the software uses to  control the camera. You might need to first uninstall any old versions of this software. 
 
-2.Install the "IC Imaging Control" v. 3.1 (or later?) from "The Imaging Source" website (I downloaded this one):
+2.Install the "IC Imaging Control" v. 3.2 (or later?) from "The Imaging Source" website (Last I checked this is still the v 3.1 version, which won't work with the latest builds of µManager, ask TIS for the 3.2 distribution):
  http://www.theimagingsource.com/downloads/icimagingcontroltrial.en_US.zip
 
-3.Ensure Micro-manager can find the library files that "The Imaging Source" installs. This is a little complicated. For some reason, on my computer "The Imaging Source" installs the necessary libraries into an unusual directory:
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\
+3.Ensure µManager can find the library files that "The Imaging Source" installs. This is a little complicated. For some reason, on my computer "The Imaging Source" installs the necessary libraries into an unusual directory:
+ C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32\
 
 This location will vary with locale and may be slightly different (I think):
 Specifically, the files you need are as follows:
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\TIS_UDSHL08_vc9.dll
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\TIS_DShowLib08.dll
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\dvdevice_Release_Win32.vda
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\gigecam_Release_Win32.vda
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\tisdcam_Release_Win32.vda
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\uvc_driver_Release_Win32.vda
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\vcc_vp_Release_Win32.vda
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32\mjpeg_Release_Win32.tca
-
+ C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32\TIS_UDSHL08_vc9.dll
+ C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32\TIS_DShowLib08.dll
+ 
 So, install "Imaging Control" then search your computer for TIS_UDSHL08_vc9.dll and add the directory where it is added to your 'path'
 
 You do this via:
  My Computer" / Properties /Advanced / Environment Variables / System Variables 
 
 Edit the variable "Path" to begin with that directory + a semicolon i.e. ";" such as:
- C:\Program Files\Common Files\IC Imaging Control 3.1\bin\Win32;
+ C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32;
 
-IFF micromanager can find all the above library files, you'll be able to configure the camera!
+IFF µManager can find all the above library files, you'll be able to configure the camera!
 
-4.There are some caveats. When you select the camera in the Hardware Configuration Wizard in step 4 of 9, "The Imaging Source" software might pop-up a verification dialogue in the dead-center of the screen, which may be exactly behind the configuration dialog. This will look exactly like a software hangup. To avoid this, move Micro-manager Hardware configuration wizard away from the center of the screen before step 4 of 9. Then they pop up yet another dialog which asks to to pick the camera model, sometimes even if you have already selected it. Anyhow, just select your camera model and then continue configuring Micro-manager normally. Also make sure someother software or another copy of Micro-manager is not trying to access the camera at the same time.
+4.There are some caveats. Triple check that you've got the the IC Imaging Control directory in your 'path.' You should get hold of IC Imaging Control 3.2, if you're using a version of µManager after 1.3.46. If you must try to get IC Imaging Control <b>3.1</b> to work with µManager 1.3.46, when you select the camera in the Hardware Configuration Wizard in step 4 of 9, "The Imaging Source" software might pop-up a verification dialogue in the dead-center of the screen, which may be exactly behind the configuration dialog. This will look exactly like a software hangup. To avoid this, move µManager Hardware configuration wizard away from the center of the screen before step 4 of 9. Then they pop up yet another dialog which asks to to pick the camera model, sometimes even if you have already selected it. Anyhow, just select your camera model and then continue configuring µManager normally. Also make sure someother software or another copy of µManager is not trying to access the camera at the same time.
 
 
 {{Devices_Sidebar}}
