@@ -30,7 +30,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[Spot]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
-* [[The Imaging Source]] - The Imaging Source (tested on USB / CCD models thus far)
+* [[The Imaging Source]] - The Imaging Source (tested on USB/CCD models and video frame Grabber )
 * [[Twain]] - Cameras fully implementing Twain Imaging Standard
 * a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
 
