@@ -95,25 +95,17 @@ In the mmstudio directory from the commandline, run:
 
 To build the entire Micro-Manager project for Windows with a single command, µManager 1.4 provides a batch file in the source repository in buildscripts. You need to have the installed tools and libraries described above: ant, Java JDK, boost, zlib and some java jar stuff.
 
-The precise versions we use can be downloaded from:
+The precise versions of the libraries we use can be downloaded from:
 
   https://valelab.ucsf.edu/svn/3rdpartypublic/
-
-except for ant (currently 1.6.5 is the version used), which can be downloaded from here:
-
-  http://archive.apache.org/dist/ant/binaries/apache-ant-1.6.5-bin.zip
- 
 
 Let's assume the following directory structure:
 
   \projects\3rdpartypublic  ---- various open source libraries
   \projects\micromanager    ---- the latest and greatest source code in the world
 
-you'll need to install ant into:
 
-  \projects\3rdparty\apache-ant-1.6.5
-
-Make sure the environment variable JAVA_HOME points to your jdk, e.g.
+Double check the environment variable JAVA_HOME points to your jdk, e.g.
 
    C:\Program Files\Java\jdk
 
