@@ -93,7 +93,25 @@ In the mmstudio directory from the commandline, run:
 
 ==Building the full source in one step==
 
-To build the entire Micro-Manager source code with a single command, you can use mmbuild.bat. You can modify this file to switch between Debug and Release builds, specify different paths for ANT and MSDEV tools, etc. Required MSDEV paths for command-line compilation are located in vsvars32.bat file in the MSDEV installation package.
+To build the entire Micro-Manager project for Window with a single command, µManager 1.4 provides a batch file in the source repository in buildscripts. You can build the 32 bit version with the free 'Express' version of Visual Studio, though per my understanding, you need at least the 'Professional' version to build the 64 bit binaries. As of this writing, we are using the 2008 version of Visual studio.
+
+Let's assume the following directory structure:
+
+  \projects\3rdpartypublic  ---- various open source libraries
+  \projects\micromanager    ---- the latest and greatest source code
+
+To build the 32 bit binary, open a command prompt and type
+
+  cd \projects\micromanager
+  buildscripts\Build 
+
+The 64 bit binary is built as follows:
+
+  buildscripts\Buildx64
+
+If you've got all the tools and libraries installed correctly, per the instruction above, these scripts will build everything and automatically install µManager onto your system. By default, the builds are incremental, if you want to clean the binaries (don't know why this is ever necessary, except perhaps in the case of virus infections) specify FULL, e.g.
+
+  buildscripts\Buildx64 FULL
 
 == Additional Info ==
 
