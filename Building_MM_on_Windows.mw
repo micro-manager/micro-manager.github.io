@@ -104,7 +104,6 @@ Let's assume the following directory structure:
   \projects\3rdpartypublic  ---- various open source libraries
   \projects\micromanager    ---- the latest and greatest source code in the world
 
-
 Double check the environment variable JAVA_HOME points to your jdk, e.g.
 
    C:\Program Files\Java\jdk
@@ -124,6 +123,10 @@ The 64 bit binary is built as follows:
 If you've got all the tools and libraries installed correctly, these scripts will build everything and automatically install µManager onto your system. By default, the builds are incremental, if you want to clean the binaries (don't know why this is ever necessary, except perhaps in the case of virus infections) specify FULL, e.g.
 
   buildscripts\Buildx64 FULL
+
+The final step of the build makes the installer using InnoSetup, the current builds scripts assume it's installed in:
+
+  \projects\3rdparty\Inno_Setup_5\iscc.exe
 
 == Additional Info ==
 
