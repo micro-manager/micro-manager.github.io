@@ -31,6 +31,6 @@ To use this adapter, connect the microscope using a null modem DB9 serial cable 
 
 You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself for devices present).
 
-{{Listserv_Search|DMI}}
+{{Listserv_Search|DMR}}
 
 {{Devices_Sidebar}}
