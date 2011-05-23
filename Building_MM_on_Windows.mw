@@ -128,8 +128,4 @@ The final step of the build makes the installer using InnoSetup, the current bui
 
   \projects\3rdparty\Inno_Setup_5\iscc.exe
 
-== Additional Info ==
-
-[http://www.mac-how.net how to restore a mac] and other useful advices
-
 {{Programming_Sidebar}}
