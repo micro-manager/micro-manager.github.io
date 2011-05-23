@@ -34,6 +34,6 @@ To use this adapter when your microscope only has a USB connector, install the d
 
 You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself for devices present).  Most labels (reflectors, objectives, sideport) will be read from the controller, so you do not need to set those in the Hardware Configuration Wizard.
 
-{{Device_Search}}
+{{Listserv_Search}}}
 
 {{Devices_Sidebar}}
