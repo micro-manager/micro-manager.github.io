@@ -37,6 +37,8 @@ On Windows:<br>
 3. Start Micro-Manager by typing: jre\bin\java -cp ij.jar ij.ImageJ<br>
 4. Copy relevant output from the terminal into your email.<br>
 
+Some problems are only due to missing .dll files required by Micro-Manager's device drivers. To find out whether that is the case, use [http://www.dependencywalker.com/ Dependency Walker] on Windows, ''otool -L'' on MacOSX or ''ldd'' on Linux to determine the status of the dependencies of the Micro-Manager driver (i.e. a file whose name starts with ''mmgr_dal_'' in the Micro-Manager directory).
+
 === Citing Micro-Manager ===
 You can cite either:<br>
 * Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman (2010) Computer Control of Microscopes Using μManager. '''Current Protocols in Molecular Biology''' 14.20.1-14.20.17<br>
