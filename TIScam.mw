@@ -16,6 +16,8 @@ Setting up The Imaging Source Software.
 
 2.Install the "IC Imaging Control" v. 3.2 (or later?) from "The Imaging Source" website (Last I checked this is still the v 3.1 version, which won't work with the latest builds of µManager, ask TIS for the 3.2 distribution):
  http://www.theimagingsource.com/downloads/icimagingcontroltrial.en_US.zip
+or for the µManager 1.4 nightly builds:
+ ftp://tis_ftp:Imaging199@ftp.theimagingsource.com/Imaging/101abc/ic3.2setup.exe
 
 3.Ensure µManager can find the library files that "The Imaging Source" installs. This is a little complicated. For some reason, on my computer "The Imaging Source" installs the necessary libraries into an unusual directory:
  C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32\
