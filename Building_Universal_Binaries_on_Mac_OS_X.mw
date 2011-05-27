@@ -64,7 +64,7 @@ make clean<br>
 make clean<br>
 make<br>
 sudo make install<br>
-./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGmin=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static --host=i386 --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/i386/include PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
+./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static --host=i386 --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/i386/include PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
 <br>
 make<br>
 sudo make install<br>
