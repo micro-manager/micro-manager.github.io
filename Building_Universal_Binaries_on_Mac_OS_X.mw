@@ -52,12 +52,12 @@ sudo make install<br>
 </code><br>
 
 '''Cross compiling gphoto2 for three platforms:'''<br>
-This worked with libgphoto 2.4.11.  Older versions had problems in some of the camera drivers and would need these to be excluded from the build. Note that ppc build is currently not possible since use of the "--host" flag causes libghoto to only build static (no dynamic) libraries.  WIthout the flag --host=ppc, cross-compile for ppc fails<br>
+This worked with libgphoto 2.4.11.  Older versions had problems in some of the camera drivers and would need these to be excluded from the build. <br>
 <code>
-//make clean<br>
-//./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0" --enable-static --host=ppc --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/ppc/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/ppc/include PKG_CONFIG_LIBDIR="/usr/local/ppc/lib/pkgconfig/"<br>
-//make<br>
-//sudo make install<br>
+make clean<br>
+./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0" --enable-static --host=ppc-darwin --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/ppc/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/ppc/include PKG_CONFIG_LIBDIR="/usr/local/ppc/lib/pkgconfig/"<br>
+make<br>
+sudo make install<br>
 make clean<br>
 ./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2" --enable-static --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/x86_64/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/x86_64/include PKG_CONFIG_LIBDIR="/usr/local/x86_64/lib/pkgconfig/"
 <br>
