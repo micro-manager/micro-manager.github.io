@@ -34,8 +34,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Twain]] - Cameras fully implementing Twain Imaging Standard
 * a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]<br>
 
-{{Listserv_Search|ABS}}
-
 === Stages, filter wheels, shutters ===   
 * [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
 * [[ASIStage]] - ASI XY (and Z) stage and CRIF
