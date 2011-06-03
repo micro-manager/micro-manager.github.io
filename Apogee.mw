@@ -13,4 +13,7 @@ To use Apogee cameras with Micro-Manager, you will need to download the [http://
 
 In the hardware configuration wizard, you will need to set the ID for CameraOne (and optionally CameraTwo). If the ID you provide is -1, then the driver will prompt you to "Find" the camera. If the ID you provide is nonnegative, then the driver should find the Camera without displaying its device search window.
 
+
+{{Listserv_Search|Apogee}}
+
 {{Devices_Sidebar}}
