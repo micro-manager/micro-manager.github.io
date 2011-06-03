@@ -104,6 +104,6 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 *The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] consists of two classes:
 **CCameraFrontend, the operating system and camera independent part
 **CSimpleCam, the operating system and camera dependent part
-:The source directory includes examples how to re-use driver code for a new camera driver.
+:The source directory includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use driver code for a new camera driver.
 
 {{Devices_Sidebar}}
