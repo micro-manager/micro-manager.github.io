@@ -41,8 +41,6 @@ The Thesycon FireWire stack has been thoroughly tested and does not cause any ot
 </blockquote>
 The Thesycon stack installer can be downloaded [http://www.photomet.com/support/downloads/index.php here].
 
-{{Devices_Sidebar}}
-
 == Windows 7 issue ==
 
 Paul Forscher reported that Micro-Manager does not find any PVCAM cameras under Windows 7.  The problem is that Micro-Manager can not find the file 'PVCAM.ini'.  To fix this, run RSConfig.exe from the Photometrics folder in the start menu. This will create the proper PVCam. Ini in the c:\windows folder.  If that fails, type 'cmd' in the "Search programs and files' box in the Start menu, and then type: 
@@ -52,3 +50,7 @@ copy C:\Users\username\AppData\Local\VirtualStore\Windows\PVCAM.ini C:\Program F
 where you should replace 'username' with your username.  Note that the directory 'Appdata' is not visible to the Windows file explorer.
 
 --[[User:Nico|Nico]] 11:33, 31 August 2007 (PDT)
+
+{{Listserv_Search|PVCAM}}
+
+{{Devices_Sidebar}}
