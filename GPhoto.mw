@@ -106,4 +106,6 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 **CSimpleCam, the operating system and camera dependent part
 :The source directory includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use driver code for a new camera driver.
 
+{{Listserv_Search|GPhoto}}
+
 {{Devices_Sidebar}}
