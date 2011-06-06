@@ -7,6 +7,7 @@
 * [[Writing plugins for Micro-Manager]]
 * [[Using_the_Micro-Manager_python_library|Python]]
 * [[Matlab]]
+* [[Building Micro-Manager Device Adapters]]
 * [[Building and debugging Micro-Manager source code]]
 
 <center><h3>APIs</h3></center>
