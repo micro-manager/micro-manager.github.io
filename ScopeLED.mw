@@ -1,11 +1,64 @@
-== DiCon Illuminators Adapter ==
-
-<table><tr><td>
-'''Summary:'''</td><td>Controls DiCon brightfield and fluorescence microsopy illuminators. </td></tr>
-<tr><td>'''Author:'''</td><td>Ryan Clark</td></tr>
-<tr><td>'''License:'''</td><td>LGPL</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows2000 and higher. 32-bit versions only.</td></tr>
+<table>
+<tr>
+  <td>'''Summary:'''</td>
+  <td>Controls DiCon LED brightfield and fluorescence microscopy illuminators. </td>
+</tr>
+<tr>
+  <td>'''Author:'''</td>
+  <td>Ryan Clark <rclark AT diconlighting dot com></td>
+</tr>
+<tr>
+   <td>'''License:'''</td>
+   <td>LGPL</td>
+</tr> 
+<tr>
+   <td>'''Platforms:'''</td>
+   <td>Windows2000 and higher. 32-bit versions only.</td>
+</tr>
 </table>
 
+
+== DiCon LED Brightfield Illuminator ==
+
+<table>
+<tr>
+  <td>'''Summary:'''</td>
+  <td>Controls DiCon brightfield microsopy illuminator.</td>
+</tr>
+<tr>
+  <td>'''Device Type:'''</td>
+  <td>Shutter</td>
+</tr>
+<tr>
+   <td></td>
+   <td></td>
+</tr> 
+<tr>
+   <td></td>
+   <td></td>
+</tr>
+</table>
+
+
+== DiCon LED Fluorescence Illuminator ==
+
+<table>
+<tr>
+  <td>'''Summary:'''</td>
+  <td>Controls DiCon fluorescence microsopy illuminator.</td>
+</tr>
+<tr>
+  <td>'''Device Type:'''</td>
+  <td>Shutter</td>
+</tr>
+<tr>
+   <td></td>
+   <td></td>
+</tr> 
+<tr>
+   <td></td>
+   <td></td>
+</tr>
+</table>
 
 This is a stub. Return soon for new content.
