@@ -17,48 +17,10 @@
 </tr>
 </table>
 
+This adapter supports two devices: DiConBrightfieldIlluminator for the brightfield illuminator, and DiConFluorescenceIlluminator for the fluorescence illuminator. 
 
-== DiCon LED Brightfield Illuminator ==
+Both devices are implemented as shutters, and both devices communicate via USB. 
 
-<table>
-<tr>
-  <td>'''Summary:'''</td>
-  <td>Controls DiCon brightfield microsopy illuminator.</td>
-</tr>
-<tr>
-  <td>'''Device Type:'''</td>
-  <td>Shutter</td>
-</tr>
-<tr>
-   <td></td>
-   <td></td>
-</tr> 
-<tr>
-   <td></td>
-   <td></td>
-</tr>
-</table>
+'''This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at info AT diconlighting DOT com.'''
 
-
-== DiCon LED Fluorescence Illuminator ==
-
-<table>
-<tr>
-  <td>'''Summary:'''</td>
-  <td>Controls DiCon fluorescence microsopy illuminator.</td>
-</tr>
-<tr>
-  <td>'''Device Type:'''</td>
-  <td>Shutter</td>
-</tr>
-<tr>
-   <td></td>
-   <td></td>
-</tr> 
-<tr>
-   <td></td>
-   <td></td>
-</tr>
-</table>
-
-This is a stub. Return soon for new content.
+For further information, please see the file [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/DiConIlluminator/Properties.doc properties.html] included with your distribution of Micro-Manager.
