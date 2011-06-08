@@ -1,26 +1,101 @@
 <table>
 <tr>
-  <td>'''Summary:'''</td>
-  <td>Controls DiCon LED brightfield and fluorescence microscopy illuminators. </td>
+  <td valign=top>'''Summary:'''</td>
+  <td>This adapter supports two [http://www.diconlighting.com/ DiCon LED illuminators]: DiConBrightfieldIlluminator for the brightfield illuminator, and DiConFluorescenceIlluminator for the fluorescence illuminator. 
+Both devices are implemented as shutters, and both devices communicate via USB. 
+ </td>
 </tr>
 <tr>
-  <td>'''Author:'''</td>
+  <td valign=top>'''Author:'''</td>
   <td>Ryan Clark <rclark AT diconlighting dot com></td>
 </tr>
 <tr>
-   <td>'''License:'''</td>
+   <td valign=top>'''License:'''</td>
    <td>LGPL</td>
 </tr> 
 <tr>
-   <td>'''Platforms:'''</td>
+   <td valign=top>'''Platforms:'''</td>
    <td>Windows2000 and higher. 32-bit versions only.</td>
+</tr>
+<tr>
+   <td valign=top>'''Dependencies:'''</td>
+   <td>This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at info AT diconlighting DOT com.</td>
 </tr>
 </table>
 
-This adapter supports two devices: DiConBrightfieldIlluminator for the brightfield illuminator, and DiConFluorescenceIlluminator for the fluorescence illuminator. 
 
-Both devices are implemented as shutters, and both devices communicate via USB. 
 
-'''This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at info AT diconlighting DOT com.'''
+=== Properties Documentation ===
+(This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/DiConIlluminator/Properties.doc available here.])
 
-For further information, please see the file [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/DiConIlluminator/Properties.doc properties.html] included with your distribution of Micro-Manager.
+'''All DiCon Illuminators'''
+<table>
+<tr>
+  <td valign=top>Property</td>
+  <td>VendorID</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric value from 0 to 65535. The DiCon USB Vendor ID is 9410 (0x24C2).</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the USB Vendor ID used to identify the target device. This property must be set before the device is instantiated.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top>Property</td>
+  <td>ProductID</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric value from 0 to 65535.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top>Property</td>
+  <td>LastError</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top>Property</td>
+  <td>LastDeviceResult</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top>Property</td>
+  <td>TxnTime</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
+</tr>
+</table>
