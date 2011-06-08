@@ -31,7 +31,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 '''All DiCon Illuminators'''
 <table>
 <tr>
-  <td valign=top>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>VendorID</td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>ProductID</td>
 </tr>
 <tr>
@@ -57,9 +57,10 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
 </table>
+
 <table>
 <tr>
-  <td valign=top>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>LastError</td>
 </tr>
 <tr>
@@ -73,7 +74,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>LastDeviceResult</td>
 </tr>
 <tr>
@@ -87,7 +88,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>TxnTime</td>
 </tr>
 <tr>
@@ -98,4 +99,130 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
 </tr>
+</table>
+
+'''DiConBrightfieldIlluminator'''
+
+Note: The ProductID for brightfield illuminators is 4867 (0x1303).
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 1. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel2Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 2. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel3Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 3. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel4Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 4. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
+</tr>
+</table>
+
+'''DiConBrightfieldIlluminator'''
+
+Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 1. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel2Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 2. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel3Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 3. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel4Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the brightness level of channel 4. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
+</tr>
+</table>
+
+
+'''Appendix A: USB Error Codes'''
+
+<table>
 </table>
