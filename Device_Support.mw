@@ -41,6 +41,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
 * [[DA-Z-Stage]] - For stages that can be contolled with analogue voltage.  Needs a DA device
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
+* [[DiCon Illuminators]] - DiCon LED-powered brigthfield and fluorescence microscopy illuminators, implemented as shutters.  
 * [[Kdv]] - kdvelectronics focus drive (z-stage) for Meiji Techno
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
