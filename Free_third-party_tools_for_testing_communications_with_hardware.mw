@@ -10,8 +10,7 @@ __NOTOC__
 
 There are several alternatives for a serial terminal on OS X.
 
-   • Use the Terminal app with a utility named [http://hints.macworld.com/article.php?story=20061109133825654 screen] (both of which are supplied with OS X). 
-     Here is a Apple Script that sets up screen.
+* Use the Terminal app with a utility named [http://hints.macworld.com/article.php?story=20061109133825654 screen] (both of which are supplied with OS X). Here is a Apple Script that sets up screen:
 
      tell application "Terminal"
         do script with command "screen /dev/tty.KeySerial1"
@@ -22,9 +21,9 @@ There are several alternatives for a serial terminal on OS X.
         set custom title of window 1 to "SerialOut"
      end tell
 
-   • [http://freeware.the-meiers.org/ CoolTerm] This is a free serial terminal emulator that works very well.
+* [http://freeware.the-meiers.org/ CoolTerm] This is a free serial terminal emulator that works very well.
 
-   • [http://syncterm.bbsdev.net/ SyncTERM] This is another free serial terminal emulator that is available for many operating systems. However is looks distinctly like a port from DOS, even when running on OS X!
+* [http://syncterm.bbsdev.net/ SyncTERM] This is another free serial terminal emulator that is available for many operating systems. However is looks distinctly like a port from DOS, even when running on OS X!
 
 ==Device signals analysis==
 
