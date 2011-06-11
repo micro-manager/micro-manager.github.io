@@ -33,6 +33,7 @@ Competent hardware manufacturers provide detailed, complete documentation on how
 
 * [http://www.serial-port-monitor.com/ '''Free Serial Port Monitor'''] (Windows) allows you to listen in on all messages sent on COM ports.
 * [http://www.wireshark.org/ '''Wireshark'''] (Windows, Mac, Linux) allows you to monitor traffic on a large variety of communications protocols, including TCP/IP and USB.
+* [http://www.wingmanteam.com/usbsnoopy/ Snoopy] monitors USB traffic and works amazingly well! Windows only.
 * [http://www.dependencywalker.com/ '''Dependency Walker'''] (Windows) lets you inspect DLLs and other binary code for function names and function calls.
 
 {{Devices_Sidebar}}
