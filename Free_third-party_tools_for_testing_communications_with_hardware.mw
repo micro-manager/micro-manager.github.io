@@ -22,9 +22,7 @@ There are several alternatives for a serial terminal on OS X.
      end tell
 
 * [http://freeware.the-meiers.org/ CoolTerm] This is a free serial terminal emulator that works very well.
-
 * [http://syncterm.bbsdev.net/ SyncTERM] This is another free serial terminal emulator that is available for many operating systems. However is looks distinctly like a port from DOS, even when running on OS X!
-
 * [http://kulesh-software.com/Software/PortTerm/index.html PortTerm] is an application for communicating with external hardware via a serial port under Mac OS X ($20, displays communication in either hex or asci, PPC only but will run under Rosetta)
 
 ==Device signals analysis==
