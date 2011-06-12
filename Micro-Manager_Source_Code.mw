@@ -10,7 +10,8 @@ Micro-Manager is structured in three distinct layers: Graphical User Interface (
 
 To access the subversion repository you will need a [http://subversion.tigris.org/ subversion client].
 
-https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4 - beta<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
+https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4 - beta<br />
+https://valelab.ucsf.edu/svn/3rdpartypublic - 3rd party files needed for Release 1.4<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
 
 == Previous source code releases ==
 
