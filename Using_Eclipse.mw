@@ -2,11 +2,11 @@
 
 2. Start Eclipse, when prompted set the workspace to a new directory (NOT the Micro-Manager source).
 
-3. Create a new Java Project (File->New).
+3. Create a new Java Project (File->New->Other).
 
-4. Select 'Create project from existing source' and specifiy the 'mmstudio' directoy in the Micro-Manager source.  Name the project (for instance: 'Micro-Manager1.2').  Click 'Next'.
+4. Select 'Create project from existing source' and specifiy the 'mmstudio' directory in the Micro-Manager source. Newer versions of Eclipse (i.e. Helios) do not have this option. Instead use the 'Java Project from Existing Ant Buildfile' option, select the 'mmstudio/build[32/64].xml' file to suit your platform. Name the project (for instance: 'Micro-Manager1.4').  Click 'Next'.
 
-5. In the Java settings screen, add the following external jars under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar.  These can be found in an existing Micro-Manager installation. Also add MMCoreJ.jar.  This can be found in the 'bin' directory of your Micro-Manager source on Windows, or in the MMCoreJ_wrap directory on Mac and Linux.
+5. In the Java settings screen, add the following external jars (if they have not been included already) under the 'Libraries' tab: ij.jar, bsh-2.0b4.jar, clojure.jar, clojure-contrib.jar, commons-math-2.0.jar, swing-layout-1.0.4.jar and swingx-0.9.5.jar.  These can be found in the '3rdpartypublic/classext' directory that must reside alongside your MM source code. Also add 'MMCoreJ.jar'.  This can be found in the 'bin' directory of your Micro-Manager source on Windows, or in the MMCoreJ_wrap directory on Mac and Linux. Expand the 'MMCoreJ.jar' entry in the 'Libraries' tab and edit the 'Native library location' such that is points to the root directory of your MM source code.
 
 6. The source code should now compile without errors (but with warnings).
 
