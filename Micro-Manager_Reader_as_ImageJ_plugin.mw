@@ -3,7 +3,8 @@ With this ImageJ plugin you can read Micro-Manager acquistion files without the 
 
 == Latest release ==
 
-[http://valelab.ucsf.edu/%7EMM/MMReader/1.3.38/MMReader_.jar <span>'''ImageJ plugin: Micro-Manager Reader 1.3.38, May 3, 2009 (MMReader_.jar)<span>''''''</span>'''</span>]<br /> This version requires ImageJ version 1.42o or higher (download the latest ImageJ [http://rsb.info.nih.gov/ij/ij.jar ij.jar] and save in your ImageJ directory, or use the command build into the ImageJ Help menu to upgrade). <br />
+[http://valelab.ucsf.edu/%7EMM/MMReader/1.3.38/MMReader_.jar <span>'''ImageJ plugin: Micro-Manager Reader 1.3.38, May 3, 2009 (MMReader_.jar)<br />
+This version requires ImageJ version 1.42o or higher (download the latest ImageJ [http://rsb.info.nih.gov/ij/ij.jar ij.jar] and save in your ImageJ directory, or use the command build into the ImageJ Help menu to upgrade).
 
 == Previous releases ==
 
