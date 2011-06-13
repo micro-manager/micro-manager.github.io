@@ -222,15 +222,15 @@ CMMCore.  Added isSequenceRunning() method which should be used instead of “Bu
 
 4.	MagnifierDevice - This is a new device that should be used by devices that effect the magnification in a predictable way.  A single method needs to be implemented for such a device: 'double GetMagnification()'
 
-==== API version 20 to 24 (1.2 release) ====
+=== API version 20 to 24 (1.2 release) ===
 
-===== New methods for the base MMDevice class =====
+==== New methods for the base MMDevice class ====
 * HasProperty() – for finding out if device supports a property before using it. This will avoid generating and handling exceptions if the desired property does not exist. Default implementation is in the DeviceBase.h, automatic and requires no overriding.
 * GetPropertyType() – returns property type. Default implementation is in the DeviceBase.h, automatic and requires no overriding.
 * UsesDelay() – Default implementation returns “false”, i.e. declaring that the device does not use “Delay” setting. If the particular adapter does use delay settings, it must override this method by returning “true”. Very few devices use this feature.
 * HasPropertyLimits(), GetPropertyLowerLimit(), GetPropertyUpperLimit() – This set of methods allows the device to specify value limits for “continuous” settings. The default implementation of these methods is automatic, but the limits (if any) must be specified in the code when particular property is declared using SetPropertyLimits(). For an example see DemoStreamingCamera.cpp.
 
-===== New device types =====
+==== New device types ====
 * ImageStreamer, ImageProcessor and SignalIO device types were added. Instances of these devices are still under development and the API is likely to change. 
 
 We do not recommend writing adapters for these device types just as yet.
