@@ -96,7 +96,7 @@ Nikon project is an example of the device adapter using serial interface. Micro-
 
 SimpleAutofocus is a image-metric based autofocus 'adapter' implemented in C++. It is configured in the demo&ImageProc.cfg configuration. This provides a concrete example of how a hardware autofocus device would be interfaced to the system.
 
-=== Project settings for MSDEV ===
+== Project settings for MSDEV ==
 
 For M.S. Windows, Micro-Manager C++ code is built with Visual Studio 2008.   Visual Studio 2010 will also work. You can build the x86 natives with the free 'Express' version of Visual Studio. In order to build the amd64 natives you'll need the Professional version of Visual Studio. You should use the same project settings as in the DemoCamera.vcproj or Sensicam.vcproj, unless you have some really strong reason to do otherwise. 
 
