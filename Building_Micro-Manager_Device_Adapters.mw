@@ -12,19 +12,19 @@ Once you build a device adapter DLL you can just copy it in the Micro-Manager ro
 1. Install the latest build of µManager, for example: http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetupx86_1.4.0_20110217.exe 
             on a path such as  \Program Files\Micro-Manager-1.4  
 2. Install the DDK in a path such as: \projects\micromanagerdevelopment  In that project you will see the following directory hierarchy: 
- * C:\projects\micromanagerdevelopment\bin_Win32  object binaries for x86
- * C:\projects\micromanagerdevelopment\bin_x64  object binaries for amd64
- * C:\projects\micromanagerdevelopment\DeviceAdapters   vendor-specific ｵManager to device driver libraries 
- * C:\projects\micromanagerdevelopment\DeviceAdapters\DemoCamera – a simple microscope simulator -several diverse devices are supported in one adapter library. 
- * C:\projects\micromanagerdevelopment\DeviceAdapters\Nikon – example microscope support
- * C:\projects\micromanagerdevelopment\DeviceAdapters\Sensicam – example digital camera support.
- * C:\projects\micromanagerdevelopment\lib_Win32 library binaries for x86
- * C:\projects\micromanagerdevelopment\lib_x64 library binaries for amd64
- * C:\projects\micromanagerdevelopment\MMCore the C++ system coordinator
- * C:\projects\micromanagerdevelopment\MMDevice base classes for all device support.
- * C:\projects\micromanagerdevelopment\scripts – Bean Shell scripts for automation and testing.
- * C:\projects\micromanagerdevelopment\Test_Programs – command line test programs for your adapter. The MMCoreTest is a reasonably extensive test. It will load a specified configuration file, and exercise the camera and other equipment in that configuration. A configuration provides the definitions this test program expect is provided in demo&ImageProc.cfg
- * Thus by way of analogy, create a directory such as  C:\projects\micromanagerdevelopment\DeviceAdapters\MyDevice and put all your source in there.    
+* C:\projects\micromanagerdevelopment\bin_Win32  object binaries for x86
+* C:\projects\micromanagerdevelopment\bin_x64  object binaries for amd64
+* C:\projects\micromanagerdevelopment\DeviceAdapters   vendor-specific ｵManager to device driver libraries 
+* C:\projects\micromanagerdevelopment\DeviceAdapters\DemoCamera – a simple microscope simulator -several diverse devices are supported in one adapter library. 
+* C:\projects\micromanagerdevelopment\DeviceAdapters\Nikon – example microscope support
+* C:\projects\micromanagerdevelopment\DeviceAdapters\Sensicam – example digital camera support.
+* C:\projects\micromanagerdevelopment\lib_Win32 library binaries for x86
+* C:\projects\micromanagerdevelopment\lib_x64 library binaries for amd64
+* C:\projects\micromanagerdevelopment\MMCore the C++ system coordinator
+* C:\projects\micromanagerdevelopment\MMDevice base classes for all device support.
+* C:\projects\micromanagerdevelopment\scripts – Bean Shell scripts for automation and testing.
+* C:\projects\micromanagerdevelopment\Test_Programs – command line test programs for your adapter. The MMCoreTest is a reasonably extensive test. It will load a specified configuration file, and exercise the camera and other equipment in that configuration. A configuration provides the definitions this test program expect is provided in demo&ImageProc.cfg
+* Thus by way of analogy, create a directory such as  C:\projects\micromanagerdevelopment\DeviceAdapters\MyDevice and put all your source in there.    
 
 3. If you've got proprietary libraries, it will be really helpful if you provide a standard way to incorporate them into the build. There are two general approaches
 A) If you can provide an installer that can define permanent system environment variables for the libraries and include paths such as MYDEVICEINCLUDES and MYDEVICELIBRARIES, then just use those paths in your project files. We don't mind installing your SDK on our build machine, if you provide it to us.
@@ -42,7 +42,7 @@ It it strongly recommended that you submit your source code to us, so that you d
       Device,TheCamera,VendorCamera,DCam	
 
 7. (It will also be instructive for you to learn how to create configurations with the micro-Manager Hardware Configuration wizard.
-8. Good Luck 
+8. Good Luck
 
 == Plugin interface ==
 
