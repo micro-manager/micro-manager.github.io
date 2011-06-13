@@ -171,25 +171,29 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 * ProgrammableIO()
 * SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
 * CommandDispatch()
-*MMDevice.h changes terminology, Channels (in the context of color cameras) become Components, hence:
-1.	GetNumberOfChannels -> GetNumberOfComponents. 
-2.	GetChannelName → GetComponentName
-====	New method signature for devices ====
+
+==== MMDevice.h changes terminology ====
+Channels (in the context of color cameras) become Components, hence:
+* GetNumberOfChannels -> GetNumberOfComponents. 
+* GetChannelName → GetComponentName
+==== New method signature for devices ====
 PrepareSequenceAcqusition()
-4.	Autofocus devices add methods:
-1.	GetOffset(double &offset)
-2.	SetOffset(double offset)
-5.	Core (in MMDevice.h) new method signatures:
-1.	OnCoordinateUpdate(const Device* caller)
-2.	GetChannelConfigs(std::vector<std::string>& groups)
-6.	CMMCore (in MMCore.h) new signatures:
-1.	   void setAutoFocusOffset(double offset) throw (CMMError);
-2.	   double getAutoFocusOffset() throw (CMMError);
-3.	   std::string getSLMDevice();
-4.	   std::string getChannelGroup();
-5.	   void setSLMDevice(const char* slmLabel) throw (CMMError);
-6.	   void setChannelGroup(const char* channelGroup) throw (CMMError);
-7.	CMMCore support for pixel size calibration and configuration group management.
+
+==== Autofocus devices add methods ====
+* GetOffset(double &offset)
+* SetOffset(double offset)
+
+==== Core (in MMDevice.h) new method signatures ====
+* OnCoordinateUpdate(const Device* caller)
+* GetChannelConfigs(std::vector<std::string>& groups)
+==== CMMCore (in MMCore.h) new signatures ====
+* void setAutoFocusOffset(double offset) throw (CMMError);
+* double getAutoFocusOffset() throw (CMMError);
+* std::string getSLMDevice();
+* std::string getChannelGroup();
+* void setSLMDevice(const char* slmLabel) throw (CMMError);
+* void setChannelGroup(const char* channelGroup) throw (CMMError);
+* CMMCore support for pixel size calibration and configuration group management.
 
 === API version 31 (1.3.17 release) ===
 
