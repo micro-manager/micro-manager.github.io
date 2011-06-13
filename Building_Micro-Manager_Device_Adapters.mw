@@ -11,7 +11,7 @@ Once you build a device adapter DLL you can just copy it in the Micro-Manager ro
 == Typical directory layout for µManager development ==
 1. Install the latest [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Nightly_Builds nightly build of µManager]
 
-2. Install the DDK in a path such as: \projects\micromanagerdevelopment  In that project you will see the following directory hierarchy: 
+2. Install the DDK in a path such as: \projects\micromanager\development  In that project you will see the following directory hierarchy: 
 
 * C:\projects\micromanagerdevelopment\bin_Win32  object binaries for x86
 * C:\projects\micromanagerdevelopment\bin_x64  object binaries for amd64
