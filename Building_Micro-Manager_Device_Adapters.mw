@@ -64,6 +64,8 @@ ImgBuffer.h and ImgBuffer.cpp provide a simple implementation of the generic ima
 
 == Device Adapter Examples ==
 
+Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
+
 === DemoCamera ===
 
 DemoCamera project included in the installer is a simple example on how to create a working device adapter.  You can use it as a starting point for building your own device adapter. DemoCamera DLL contains a simple monochrome / color camera simulator and a number of demo devices: objective turret, filter changer, stage, image processor etc. The camera adapter is able to simulate parameter read-backs. There is also an option to simulate timeout errors. Most of these devices don't really perform any actions, they just respond to commands and their main purpose is to enable testing of the main application without connecting to the hardware.
