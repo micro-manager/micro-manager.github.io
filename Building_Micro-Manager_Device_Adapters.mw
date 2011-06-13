@@ -2,20 +2,6 @@
 * Nico Sturman, 	nico@cmp.ucsf.edu
 * Karl Hoover,		karl.hoover@gmail.com
 
-* Created on: August 17, 2006
-* Updated on: November 7, 2006 for API version 14
-* Updated on: January 17, 2007 for API version 14
-* Updated on: October 1, 2007 for API version 20
-* Updated on: May 08, 2008 for API version 25
-* Updated on: May 30, 2008 for API version 26
-* Updated on: December 22, 2008 for API version 30
-* Updated on: December 22, 2008 for API version 30
-* Updated on: January 28, 2009 for API version 31
-* January 7, 2010 – API version 33
-* February 10, 2011 – API version 38 for x86 & amd64 Micro-Manager Version 1.4.3
-* March 30, 2011 – Describe MMCoreTest program.
-
-
 ==Introduction==
 
 Let's assume you're writing a device adapter, for a device called “MyDevice.” To create a device adapter you don't need access to the entire Micro-Manager source code. All files required to build new device adapters for Micro-Manager on the Windows platform are included in the MMDeviceKit-win installer. For devices with special drivers and hardware boards, e.g. cameras, you will need to also install manufacturer's SDK and all required low-level drivers and libraries.
