@@ -172,7 +172,7 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 ** SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
 ** CommandDispatch()
 * MMDevice.h changes terminology 
-Channels (in the context of color cameras) become Components, hence:
+* Channels (in the context of color cameras) become Components, hence:
 ** GetNumberOfChannels -> GetNumberOfComponents. 
 ** GetChannelName → GetComponentName
 * New method signature for devices 
