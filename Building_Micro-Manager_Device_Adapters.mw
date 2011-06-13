@@ -195,13 +195,12 @@ PrepareSequenceAcqusition()
 
 * BaseSequenceThread. Implemented basic sequence acquisition functionality in svc() method like calculating number of frames, capturing with the specified interval and etc. 
 
-* CCameraBase. 
-
+* CCameraBase
 ** Implemented virtual function IsCapturing returning true if the acquisition thread is run. If you do not use the BaseSequence thread to implement Sequence acquisition, then you will need to provide your own implementation of this function. 
 ** Added virtual  ThreadRun() method. This method is called from inside the acquisition thread and implements receiving image data from the camera.
 ** Added virtual OnThreadExiting() method called from inside the acquisition thread and implements actions necessary to finalize the sequence capturing.  
 
-* CMMCore.
+* CMMCore
 ** Added isSequenceRunning() method which should be used instead of “Busy()” method of the camera to determine if the camera adapter is executing a sequence of image capturing. Note: normally, camera adapters should not return Busy status while the sequence acquisition thread is running.
 ** Circular buffer now supports 32-bit images.
 
