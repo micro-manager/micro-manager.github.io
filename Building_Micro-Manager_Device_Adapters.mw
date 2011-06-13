@@ -212,7 +212,7 @@ CMMCore.  Added isSequenceRunning() method which should be used instead of “Bu
 
 4.	SignalIODevice – Added the functions SetGateOpen and GetGateOpen that are used to configure IO devices as shutters.  
 
-==== API version 24 to 26 (1.2.15 release) ====
+=== API version 24 to 26 (1.2.15 release) ===
 
 1.	CameraDevice - Made the functions 'int GetBinning()' and 'int SetBinning(int binSize)' mandatory.  GetBinning is used in the Core to adjust pixelSize based on binning. The function 'GetNominalPixelSize' was removed.  
 
