@@ -1,6 +1,20 @@
 == Micro-Manager 1.4 ==
 
+=== Micro-Manager 1.4.4 BETA (April 7, 2011) ===
 
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.4.exe Windows 32-bit], 17 MB<br />[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.4.exe Windows 64-bit], 34 MB<br />[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.4.dmg Mac OS X (Universal Binary)], 31 MB<br />
+
+==== New in 1.4.4 ====
+
+* Thorlabs BD102 stage (Nenad Amodaj)
+* Well plate plugin (Big.jar, Karl Bellve)
+* New libusb drivers for K8055
+* Script interface to add runnables in acquisition engine
+* SimpleCam module with GPhoto support
+* Enhanced Contrast Panels (ignore outliers)
+* Saving and display on separate threads
+* Leica AFC (Hardware Autofocus) (mostly working)
+* Numerous bug fixes
 
 === Micro-Manager 1.4.2 BETA (March 2, 2011) ===
 
