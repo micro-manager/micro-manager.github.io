@@ -128,36 +128,34 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 == Changes from the previous releases ==
 
 === API version 38 (1.4.0 release) ===
- I.	New Core API entries:
- A.	MM::DeviceDetectionStatus detectDevice(char* deviceName) – for automatic device detection 
- B.	void unloadDevice(const char* label) throw (CMMError) – unload a device adapter
- C.	Property API changes:
- i.	 int applyProperties(std::vector<PropertySetting>& props, std::string& )
- ii.	void updateCoreProperties() throw (CMMError)
- iii.	void setProperty(const char* label, const char* propName, …) new entries added which accept bool, long, float, and double.
- iv.	Property sequencing API:
- a)	bool isPropertySequenceable(const char* label, const char* propName) const throw (CMMError);
- b)	   void startPropertySequence(const char* label, const char* propName) const throw (CMMError);
- c)	   void stopPropertySequence(const char* label, const char* propName) const throw (CMMError);
- d)	   long getPropertySequenceMaxLength(const char* label, const char* propName) const throw (CMMError);
- e)	   void loadPropertySequence(const char* label, const char* propName, std::vector<std::string> eventSequence) const throw (CMMError);
- D.	 bool debugLogEnabled(void) – access the current log state
- E.	 std::string saveLogArchive(void)  &    std::string saveLogArchiveWithPreamble(char* preamble, int length)  - create a gzip of the current system log, optionally prepend some client text
- F.	 static void addSearchPath(const char *path) – add path to search for device adapters
- G.	unsigned getNumberOfCameraChannels() const – number of simulaneous channels acquired by the camera.
- H.	Extensions to metadata API:
- i.	   void* getLastImageMD(Metadata& md) const throw (CMMError);
- ii.	   void* popNextImageMD(Metadata& md) throw (CMMError);
- I.	Acquisition context API
- i.	   void acqBefore() throw (CMMError);
- ii.	   void acqAfter() throw (CMMError);
- iii.	   void acqBeforeFrame() throw (CMMError);
- iv.	   void acqAfterFrame() throw (CMMError);
- v.	   void acqBeforeStack() throw (CMMError);
- vi.	   void acqAfterStack() throw (CMMError);
- J.	template <class T> T* getSpecificDevice(const char* deviceLabel) const throw (CMMError) – retrieve device instance by name.
-
- 
+==== New Core API entries ====
+* MM::DeviceDetectionStatus detectDevice(char* deviceName) – for automatic device detection 
+* void unloadDevice(const char* label) throw (CMMError) – unload a device adapter
+==== Property API changes ====
+* int applyProperties(std::vector<PropertySetting>& props, std::string& )
+* void updateCoreProperties() throw (CMMError)
+* void setProperty(const char* label, const char* propName, …) new entries added which accept bool, long, float, and double.
+==== Property sequencing API ====
+* bool isPropertySequenceable(const char* label, const char* propName) const throw (CMMError);
+* void startPropertySequence(const char* label, const char* propName) const throw (CMMError);
+* void stopPropertySequence(const char* label, const char* propName) const throw (CMMError);
+* long getPropertySequenceMaxLength(const char* label, const char* propName) const throw (CMMError);
+* void loadPropertySequence(const char* label, const char* propName, std::vector<std::string> eventSequence) const throw (CMMError);
+* bool debugLogEnabled(void) – access the current log state
+* std::string saveLogArchive(void)  &    std::string saveLogArchiveWithPreamble(char* preamble, int length)  - create a gzip of the current system log, optionally prepend some client text
+* static void addSearchPath(const char *path) – add path to search for device adapters
+* unsigned getNumberOfCameraChannels() const – number of simulaneous channels acquired by the camera.
+==== Extensions to metadata API ====
+* void* getLastImageMD(Metadata& md) const throw (CMMError);
+* void* popNextImageMD(Metadata& md) throw (CMMError);
+==== Acquisition context API ====
+* void acqBefore() throw (CMMError);
+* void acqAfter() throw (CMMError);
+* void acqBeforeFrame() throw (CMMError);
+* void acqAfterFrame() throw (CMMError);
+* void acqBeforeStack() throw (CMMError);
+* void acqAfterStack() throw (CMMError);
+* template <class T> T* getSpecificDevice(const char* deviceLabel) const throw (CMMError) – retrieve device instance by name.
 
 === API version 33 (1.3.43 release) ===
 
