@@ -167,32 +167,29 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 
 === API version 33 (1.3.43 release) ===
 
-==== New Device categories ====
-* ProgrammableIO()
-* SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
-* CommandDispatch()
-
-==== MMDevice.h changes terminology ====
+* New Device categories 
+** ProgrammableIO()
+** SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
+** CommandDispatch()
+* MMDevice.h changes terminology 
 Channels (in the context of color cameras) become Components, hence:
-* GetNumberOfChannels -> GetNumberOfComponents. 
-* GetChannelName → GetComponentName
-==== New method signature for devices ====
-PrepareSequenceAcqusition()
-
-==== Autofocus devices add methods ====
-* GetOffset(double &offset)
-* SetOffset(double offset)
-
-==== Core (in MMDevice.h) new method signatures ====
-* OnCoordinateUpdate(const Device* caller)
-* GetChannelConfigs(std::vector<std::string>& groups)
-==== CMMCore (in MMCore.h) new signatures ====
-* void setAutoFocusOffset(double offset) throw (CMMError);
-* double getAutoFocusOffset() throw (CMMError);
-* std::string getSLMDevice();
-* std::string getChannelGroup();
-* void setSLMDevice(const char* slmLabel) throw (CMMError);
-* void setChannelGroup(const char* channelGroup) throw (CMMError);
+** GetNumberOfChannels -> GetNumberOfComponents. 
+** GetChannelName → GetComponentName
+* New method signature for devices 
+** PrepareSequenceAcqusition()
+* Autofocus devices add methods 
+** GetOffset(double &offset)
+** SetOffset(double offset)
+* Core (in MMDevice.h) new method signatures 
+** OnCoordinateUpdate(const Device* caller)
+** GetChannelConfigs(std::vector<std::string>& groups)
+* CMMCore (in MMCore.h) new signatures 
+** void setAutoFocusOffset(double offset) throw (CMMError);
+** double getAutoFocusOffset() throw (CMMError);
+** std::string getSLMDevice();
+** std::string getChannelGroup();
+** void setSLMDevice(const char* slmLabel) throw (CMMError);
+** void setChannelGroup(const char* channelGroup) throw (CMMError);
 * CMMCore support for pixel size calibration and configuration group management.
 
 === API version 31 (1.3.17 release) ===
