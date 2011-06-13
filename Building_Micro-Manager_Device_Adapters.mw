@@ -167,14 +167,15 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 
 === API version 33 (1.3.43 release) ===
 
-1.	New Device categories:
-1.	ProgrammableIO()
-2.	SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
-3.	CommandDispatch()
-2.	MMDevice.h changes terminology, Channels (in the context of color cameras) become Components, hence:
+==== New Device categories ====
+* ProgrammableIO()
+* SLM() ( Projector, Spatial Light Modulator, or Anti-Camera)
+* CommandDispatch()
+*MMDevice.h changes terminology, Channels (in the context of color cameras) become Components, hence:
 1.	GetNumberOfChannels -> GetNumberOfComponents. 
 2.	GetChannelName → GetComponentName
-3.	New method signature for devices:  PrepareSequenceAcqusition()
+====	New method signature for devices ====
+PrepareSequenceAcqusition()
 4.	Autofocus devices add methods:
 1.	GetOffset(double &offset)
 2.	SetOffset(double offset)
@@ -189,19 +190,20 @@ The guide was written for standalone Java programming, but the BeanShell syntax 
 5.	   void setSLMDevice(const char* slmLabel) throw (CMMError);
 6.	   void setChannelGroup(const char* channelGroup) throw (CMMError);
 7.	CMMCore support for pixel size calibration and configuration group management.
-API version 31 (1.3.17 release)
 
-1.	BaseSequenceThread. Implemented basic sequence acquisition functionality in svc() method like calculating number of frames, capturing with the specified interval and etc. 
+=== API version 31 (1.3.17 release) ===
 
-2.	CCameraBase. 
+* BaseSequenceThread. Implemented basic sequence acquisition functionality in svc() method like calculating number of frames, capturing with the specified interval and etc. 
 
-a.	Implemented virtual function IsCapturing returning true if the acquisition thread is run. If you do not use the BaseSequence thread to implement Sequence acquisition, then you will need to provide your own implementation of this function. 
-b.	Added virtual  ThreadRun() method. This method is called from inside the acquisition thread and implements receiving image data from the camera.
-c.	Added virtual OnThreadExiting() method called from inside the acquisition thread and implements actions necessary to finalize the sequence capturing.  
+* CCameraBase. 
 
-CMMCore.  Added isSequenceRunning() method which should be used instead of “Busy()” method of the camera to determine if the camera adapter is executing a sequence of image capturing. Note: normally, camera adapters should not return Busy status while the sequence acquisition thread is running.
-	Circuilar buffer now supports 32 bits images.
+** Implemented virtual function IsCapturing returning true if the acquisition thread is run. If you do not use the BaseSequence thread to implement Sequence acquisition, then you will need to provide your own implementation of this function. 
+** Added virtual  ThreadRun() method. This method is called from inside the acquisition thread and implements receiving image data from the camera.
+** Added virtual OnThreadExiting() method called from inside the acquisition thread and implements actions necessary to finalize the sequence capturing.  
 
+* CMMCore.
+** Added isSequenceRunning() method which should be used instead of “Busy()” method of the camera to determine if the camera adapter is executing a sequence of image capturing. Note: normally, camera adapters should not return Busy status while the sequence acquisition thread is running.
+** Circular buffer now supports 32-bit images.
 
 === API version 26 to 30 (1.3.15 release) ===
 1.	XYStageDevices.  Default implementations for the functions SetRelativePositionUm(double, double), SetPositionUm(double, double), and GetPositionUm(double) are now provided in DeviceBase.h.  You are encouraged not to override these functions but rather implement the Get and SetPostionSteps.  This allows Micro-Manager to provide a general mechanism to let the use mirror the axis and change axis orientation so that a generalized coordinate system can be used.  Although these implementations are not yet provided for single axis stages we anticipate this to happen soon and encourage you to use the 'PositionSteps' functions as the main entry point in communicating with the actual device
