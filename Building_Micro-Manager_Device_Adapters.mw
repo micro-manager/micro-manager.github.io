@@ -36,7 +36,7 @@ B) Else you can assume there is a path on the save drive \projects\3rdparty\ and
 
 4. Always setup your device project to use the $(PlatformName)\$(ConfigurationName) idiom for keeping the 32-bit and 64-bit binaries separate. See the example project property page below:
 
-It it strongly recommended that you submit your source code to us, so that you device supported is included in each build. In general, the ｵManager  source code is visible to the public, if your device adapter will contain proprietary  intellectual property, you can request to put the code into  a private view only area of the repository. It will lie in a directory parallel to the DeviceAdapters director. In either case, you'll need permission from info@micro-manager.org in order to commit the source to our repository.
+It it strongly recommended that you submit your source code to us, so that your device adapter shared library is included in each build. In general, the Micro-Manager  source code is visible to the public, if your device adapter will contain proprietary  intellectual property, you can request to put the code into  a private view only area of the repository. It will lie in a directory parallel to the DeviceAdapters director. In either case, you'll need permission from info@micro-manager.org in order to commit the source to our repository. Micro-Manager users will be very grateful for your contributions!
 
 5. We include several semi-standard C++ libraries in our system, currently these include boost and zlib  These can be expected to lie in \projects\3rdpartypublic If you've got VS2008 you'll find the bare essential boost libraries for building the test programs already included in the installer. 
 
