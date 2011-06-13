@@ -26,4 +26,8 @@ For Micro-Manager releases 1.4.5 and up.
 * C++ testbed for device development
 * Scripting examples for system testing
 
-[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMDeviceKit-win-14_0.exe <span>'''Micro-Manager Device Developer's Kit, version 14.0, (November 8, 2006)'''</span>]<br /> Works with Micro-Manager releases 1.0.47 and up.<br />[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_43.exe <span>''''''</span>][http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMDeviceKit-win-12_0.exe <span>'''Micro-Manager Device Developer's Kit, version 12.0, (August 10, 2006)'''</span>]<br /> Works with Micro-Manager releases up to 1.0.37<br />
+[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMDeviceKit-win-14_0.exe <span>'''Micro-Manager Device Developer's Kit, version 14.0, (November 8, 2006)'''</span>]<br />
+Works with Micro-Manager releases 1.0.47 and up.<br />
+
+[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMDeviceKit-win-12_0.exe <span>'''Micro-Manager Device Developer's Kit, version 12.0, (August 10, 2006)'''</span>]<br />
+Works with Micro-Manager releases up to 1.0.37.<br />
