@@ -61,7 +61,7 @@ Client-server design enables easy and robust implementation of a distributed sof
 
 === Portability ===
 
-We recognize the fact that complete platform neutrality is extremely difficult to achieve in practice and we focused our efforts on supporting three operating systems commonly used in Life Science laboratories: Windows, Linux and Mac OS X. The µManager code base is a true cross-platform system. The back-end is written in C++ and compiles with [http://www.gnu.org/ GNU] tools on Mac/Linux and Microsoft Developer Studio (MSDEV) on Windows. For system-level functionality (threads, logging, timers, etc.) we rely on the [http://www.cs.wustl.edu/~schmidt/ACE.html ACE] framework. The front-end GUI is written in Java with SWING based user interface components.<br />
+We recognize the fact that complete platform neutrality is extremely difficult to achieve in practice and we focused our efforts on supporting three operating systems commonly used in Life Science laboratories: Windows, Linux and Mac OS X. The µManager code base is a true cross-platform system. The back-end is written in C++ and compiles with [http://www.gnu.org/ GNU] tools on Mac/Linux and Microsoft Developer Studio (MSDEV) on Windows. For system-level functionality (threads, logging, timers, etc.) we rely on the [http://www.boost.org/ boost C++ libraries]. The front-end GUI is written in Java with SWING based user interface components.<br />
 
 === Cross platform Graphical User Interface ===
 
