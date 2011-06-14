@@ -1,7 +1,7 @@
 __NOTOC__
 == Introduction ==
 
-The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF is currently funded by the Sandler Foundation. Its main objective is to provide a universal, flexible and low-cost software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager project leverages other Open Source tools and components to the maximum extent possible.
+The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF (funded by the NIH) aims to provide a universal, flexible and low-cost software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager project leverages other Open Source tools and components to the maximum extent possible.
 
 µManager software currently serves a double purpose:
 
@@ -15,7 +15,7 @@ The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF is
 * Intuitive user interface and simple installation procedure
 * Maximum extensibility through support for scripting and dynamic programming languages
 * Maximum speed and efficiency in all control paths to allow for very high speed acquisition rates
-* Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automatic microscope, regardless of type, manufacturer and native drivers.
+* Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automated microscope, regardless of type, manufacturer and native drivers.
 * Programmatic interfaces to 3rd-party analysis environments (such as Matlab) to enable "intelligent data collection" -- i.e. analysis driven acquisition.
 
 == Software Architecture ==
