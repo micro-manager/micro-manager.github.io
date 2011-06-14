@@ -1,6 +1,6 @@
 {{Downloads_Sidebar}}
 __NOTOC__
-<span>'''Updated on November 16, 2009'''</span><br /><br /> The source code includes all Micro-Manager files (Java and C++) and all supporting files (project files, build scripts, etc.). However, to build the entire project a number of Open Source libraries and device SDKs must be installed. Instructions for building Micro-Manager are available for [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Full_Build_on_MacOS_X_Leopard Mac], [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Building_MM_on_Windows Windows], and [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Linux_installation_from_source_29 Linux].<br /><br />
+<span>'''Updated on June 14, 2011'''</span><br /><br /> The source code includes all Micro-Manager files (Java and C++) and all supporting files (project files, build scripts, etc.). However, to build the entire project a number of Open Source libraries and device SDKs must be installed. Instructions for building Micro-Manager are available for [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Full_Build_on_MacOS_X_Leopard Mac], [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Building_MM_on_Windows Windows], and [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Linux_installation_from_source_29 Linux].<br /><br />
 
 == Note about the source code licensing terms ==
 
