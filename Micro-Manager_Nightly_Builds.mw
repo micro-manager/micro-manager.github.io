@@ -3,7 +3,10 @@ The Micro-Manager application is built automatically every night (if changes wer
 
 == Nightly Builds ==
 
+* [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.4/Windows '''Version 1.4 (Windows)''']
+* [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.4/Mac '''Version 1.4 (Mac)''']
+
+Older nightly builds:
+
 * [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.3/Windows '''Version 1.3 (Windows)''']
 * [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.3/Mac '''Version 1.3 (Mac)''']
-* [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.4/Windows '''Version 1.4 Beta (Windows)''']
-* [http://valelab.ucsf.edu/%7EMM/nightlyBuilds/1.4/Mac '''Version 1.4 Beta (Mac)''']
