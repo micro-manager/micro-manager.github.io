@@ -55,6 +55,11 @@ Some device adapter require the installation of manufacturer's SDKs in order to 
 
 If you don't want to build one or more device adapters (because you don't have the SDK), you should remove corresponding projects from the master solution: MMCoreJ_wrap.sln.
 
+To add a device adapter to the automated build, use Visual Studio 2008 to add the device adapter project (a .vcproj file) to the MMCoreJ_wrap.sln or MMCoreJ_wrap_x64.sln. Under the device adapter's project properties, make sure the device adapter has this command under Build Events > Post-build Event:
+ copy "$(TargetPath)" ..\..\bin_$(PlatformName)
+and a Linker > General > Output File of
+ $(OutDir)/mmgr_dal_YourDeviceName.dll
+
 ==Setting up library paths==
 
 The project files in the repository should have the correct path settings.
