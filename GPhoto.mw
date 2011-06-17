@@ -101,10 +101,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
-*The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] consists of two classes:
-**CCameraFrontend, the operating system and camera independent part
-**CSimpleCam, the operating system and camera dependent part
-:The source directory includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use driver code for a new camera driver.
+*The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use the source code for a new camera driver.
 
 {{Listserv_Search|GPhoto}}
 
