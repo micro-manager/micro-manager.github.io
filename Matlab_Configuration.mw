@@ -7,7 +7,7 @@ On Windows, the native library file is MMCoreJ_wrap.dll and it must reside eithe
 MMCore can be used in Matlab through its Java interface. After setting up the Java environment as described above, MMCoreJ.jar must be added to Matlab Java class path and the directory for the MMCore dynamic libraries (including MMCoreJ_wrap) must be added to the system path.
 
 
-'''The following recipe has worked in the past:'''
+'''The following recipe has worked in the past for version <=1.3 If you are using MM of version 1.4.6 (as of 06/20/11 its the nightly build) than look for simpler instructions below:'''
 
 Matlab has an extensive Java support which makes things easy, just do the following: 
 
@@ -40,23 +40,50 @@ Add the location of the dll files, for instance:
 >> mmc.loadSystemConfiguration ('C:\Micro-Manager1.2\MMConfig_demo.cfg');<br>
 
 
+'''The following recipe has worked for versions 1.4.6 (and newer hopefully):'''
+
+1. Install Micro-Manager in a path without any spaces (for instance: C:\Micro-Manager1.4.6).
+
+2. In Matlab command prompt
+ >> edit classpath.txt 
+Add the location of all the jar files MM installed under plugins\Micro-Manager:
+
+for example:
+ C:/Micro-Manager-1.4.6/ij.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/MMAcqEngine.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/MMCoreJ.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/MMJ_.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/clojure.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/bsh-2.0b4.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/swingx-0.9.5.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/swing-layout-1.0.4.jar
+ C:/Micro-Manager-1.4.6/plugins/Micro-Manager/commons-math-2.0.jar
+
+
+3. In Matlab command prompt
+ >> edit librarypath.txt 
+Add the location of the dll files, for instance:
+
+4. Restart Matlab 
+
+5. create a java object of class MMCcore
+
+>> import mmcorej.*;<br>
+>> mmc=CMMCore;<br> 
+>> mmc.loadSystemConfiguration ('C:\Micro-Manager1.2\MMConfig_demo.cfg');<br>
+
+
 The Micro-Manager API is described here: http://www.micro-manager.org/content/doc/mmcore_api/html/class_c_m_m_core.html
 
 
 The following simple script will snap an image from an 8-bit camera and display it in matlab:
 
->> mmc.snapImage();
-
->> img=mmc.getImage();
-
->> width=mmc.getImageWidth();
-
->> height=mmc.getImageHeight();
-
->> img2=typecast(img,'uint8');
-
->> img2=reshape(img2,[height,width]);
-
->> imshow(img2);
+ >> mmc.snapImage();
+ >> img=mmc.getImage();
+ >> width=mmc.getImageWidth();
+ >> height=mmc.getImageHeight();
+ >> img2=typecast(img,'uint8');
+ >> img2=reshape(img2,[height,width]);
+ >> imshow(img2);
 
 {{Programming_Sidebar}}
