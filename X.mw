@@ -1,4 +1,31 @@
 {{Cite journal
+| issn = 1539-4794
+| volume = 22
+| issue = 24
+| pages = 1905-1907
+| last = Neil
+| first = M.A.A.
+| coauthors = R. Juskaitis, T. Wilson
+| title = Method of obtaining optical sectioning by using structured light in a conventional microscope
+| journal = Optics Letters
+| date = 1997
+| doi = 10.1364/OL.22.001905
+}}
+
+{{Cite journal
+| volume = 3
+| issue = 10
+| pages = 793-796
+| last = Rust
+| first = M.J.
+| coauthors = M. Bates, X. Zhuang
+| title = Sub-diffraction-limit imaging by stochastic optical reconstruction microscopy (STORM)
+| journal = Nature methods
+| date = 2006
+| doi = 10.1038/nmeth929
+}}
+
+{{Cite journal
 | issn = 0036-8075
 | volume = 313
 | issue = 5793
