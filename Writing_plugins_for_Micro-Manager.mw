@@ -44,7 +44,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 <li>Now choose Debug > Debug Project and after Micro-Manager launches, MMStartup.bsh script will load your nascent plugin in the Plugins menu.</li>
 </ol>
 <br>
-For distribution: in the dist folder of your Netbeans project folder, Netbeans will automatically produce a jar every time you build the project. You can copy this jar to the Micro-Manager plugins menu and it will be loaded in the Plugins menu, even in the absence of the MMStartup.bsh script.
+For distribution: in the dist folder of your Netbeans project folder, Netbeans will automatically produce a jar every time you build the project. You can copy this jar to the Micro-Manager plugins folder and it will be loaded in the Plugins menu, even in the absence of the MMStartup.bsh script.
 <br><br>
 
 Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
