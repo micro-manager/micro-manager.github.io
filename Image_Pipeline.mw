@@ -1,0 +1,9 @@
+The Micro-Manager image pipeline is some code that is designed to allow you to analyze images as they arrive.
+
+To take advantage of this, you will need to write a class (in a Java Micro-Manager plugin or Beanshell script) that overrides the "analyze" method in the [https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/TaggedImageAnalyzer.java org.micromanager.api.TaggedImageAnalyzer] abstract class.
+
+Then (for example, in Beanshell) you can provide this class to the acquisition engine:
+
+ acq.addImageProcessor(TestTaggedImageAnalyzer.class);
+
+It will analyze the images as soon as they are available, before sending them to be saved and displayed.
