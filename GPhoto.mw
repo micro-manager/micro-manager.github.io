@@ -87,7 +87,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 {{Devices_Sidebar}}
 
 == Notes ==
-*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 640x426 pixels for Nikon, and 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second.
+*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 640x426 pixels for Nikon, and 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second. An exposure time of zero provides the maximum frame rate, but Micro-Manager may become sluggish. 
 
 *On Mac OS X, you have to kill the Apple PTPCamera process every time after connecting your camera, after switching your camera on, and before running micro-manager. If you wish to automate this, try the following:
 ** Open Applications/AppleScript/Script Editor.
