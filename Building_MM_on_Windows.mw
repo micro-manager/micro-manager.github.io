@@ -70,7 +70,7 @@ If you get an error:
 
         Target(FOO) does not match the Linker's OutputFile property value (BAR) ...
 
-You could right-click > properties > Linker > General > Output File and strip the leading "mmgr_dal_" from the filename to satisfy it.
+You could right-click on the project > properties > Configuration Properties > General > Target Name and add the leading "mmgr_dal_" to the beginning of $(ProjectName) to satisfy it.
 
 ==Building the C++ layer: MMCore and device adapters==
 
