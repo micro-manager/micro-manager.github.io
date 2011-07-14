@@ -1,7 +1,6 @@
 <table><tr><td  valign=top >
 '''Summary:'''</td><td>Interfaces with Andor laser combiner</td></tr>
-<tr><td valign=top>'''Author:'''</td><td>Karl Hoover, UCSF - µManager device adapter<br>Pariksheet Nanda, Andor Support - this documentation<br>
-Glenn Jolleys, Andor Software - Andor Laser Combiner Developer</td></tr>
+<tr><td valign=top>'''Author:'''</td><td>Karl Hoover, UCSF - µManager device adapter<br>Pariksheet Nanda, Andor Support - this documentation</td></tr>
 <tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
 <tr><td  valign=top >'''Platforms:'''</td><td>Windows (No Mac or Linux driver available)</td></tr>
 <tr><td  valign=top >'''Devices:'''</td><td>Andor laser combiners: ALC-401, ALC-501, ALC-601</td></tr>
@@ -49,7 +48,10 @@ For contacting Andor product support regarding any questions, use this [http://w
 
 
 === Development support ===
-Please liaison with µManager developers to contact the Andor software team
+This driver is not actively maintained by the Andor software team.
+For feature requests or bug reports, please liaison with µManager developers on [[Micro-Manager_Community|the mailing list]]. 
+
+
 
 
 
