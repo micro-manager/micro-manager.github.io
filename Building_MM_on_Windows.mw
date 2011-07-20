@@ -41,6 +41,10 @@ In addition to software tools you will need to install the following software pa
 
 2. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
          bootstrap
+On Windows 7 64-bit this may fail with a message in bjam.log:
+         ERROR:  Cannot determine the location of the VS Common Tools folder.
+This can happen if `reg' is not found, so add C:\Windows\SysWOW64 to your PATH
+
 3. After the bjam.exe tool is built, issue:
          .\bjam --build-type=complete 
 
