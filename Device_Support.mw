@@ -85,6 +85,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
 * [[Autofocus_Device_Adapter|SimpleAutofocus]] - Image-based autofocus software 'device'.
 * [[Spectral LMM5]] - Spectral laser line controller
+* [[Stradus]] - Vortran Stradus laser driver
 * [[Yokogawa]] - Yokogawa CSU22
 * [[Yokogawa CSUX]] - Yokogawa CSUX, all models
 
