@@ -6,4 +6,22 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>?</td></tr>
+<tr>
+<td valign=top>'''Default serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3 
+|AnswerTimeout||?
+|-
+|BaudRate||?
+|-
+|DelayBetweenCharsMs||?
+|-
+|Handshaking||?
+|-
+|Parity||?
+|-
+|StopBits||?
+|}
+
+</td></tr>
 </table>
