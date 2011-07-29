@@ -27,12 +27,17 @@
 
 
 
-== Installing the ALC_SDK for the Device Adapter ==
+== Installing the Device Adapter ==
+=== Setup the ALC_SDK ===
 * The Andor Laser Combiner SDK is packaged in a zip file.  Decompress to a folder on your C: drive.  Copy the location of the `Libraries' folder (e.g. C:\Andor\0.9\ALC_REV_SDK\Libraries).
 [[Image:01- Decompress Andor SDK for Laser combiner.png|frame|center||Decompress the Andor Laser Combiner SDK from the zip file]]
 
 * Right-click the My Computer icon on the desktop or start menu, click properties and on the advanced tab choose Environment variables. On the system variables list, find "Path" or "PATH" and click edit. DO NOT DELETE ANYTHING. Just add ;C:\YOURFOLDER on the end of the line on the edit window. Of course, remember to change the folder to where you unzipped the SDK. Also, remember to include the semi-colon (;) or you might break something on your windows installation.  Now, reboot your computer.
 [[Image:02- Put Andor SDK libraries folder in Path.png|frame|center||Add the Andor Laser Combiner SDK `Libraries' folder to the Windows PATH so that MicroManager can find the DLLs]]
+
+
+
+=== Configuring Micro-Manager ===
 
 * Get the latest nightly build to run the Andor laser combiner in uManager.
 
@@ -98,4 +103,4 @@ Also when installing, ignore the driver requests to restart your computer.
 
 
 
-[[User:P.nanda|P.nanda]] 14:33, 29 July 2011 (PDT)
+[[User:P.nanda|P.nanda]] 14:39, 29 July 2011 (PDT)
