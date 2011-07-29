@@ -38,7 +38,7 @@ The following laser features and operating status may be controlled/ monitored:
 *Digital Peak Power Setting [?PP]
 *Fault Code [?FC]
 *Firmware Version [?FV]
-*Hours [?LH]
+*Operating Hours [?LH]
 *Interlock Status [?IL]
 *Laser Emission ON/OFF [LE = 1 or 0]
 *Laser ID (Serial Number, Part Number, Nom. Wavelength, Nom. Power, Circular or Elliptical Beam [?LI]
