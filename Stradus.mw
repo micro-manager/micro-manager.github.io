@@ -1,26 +1,26 @@
-== Vortran Stradus laser driver ==
+== Vortran Stradus Laser Controller ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls Vortran Stradus laser controllers</td></tr>
+'''Summary:'''</td><td>Vortran Stradus Laser Controller</td></tr>
 <tr><td>'''Author:'''</td><td>David Sweeney</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>?</td></tr>
+<tr><td>'''Devices:'''</td><td>[http://www.vortranlaser.com Vortran Stradus Laser]</td></tr>
 <tr>
 <td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
 {| cellspacing="2" border="0" cellpadding=3 
-|AnswerTimeout||?
+|AnswerTimeout||2 Seconds
 |-
-|BaudRate||?
+|BaudRate||19200
 |-
-|DelayBetweenCharsMs||?
+|DelayBetweenCharsMs||0
 |-
-|Handshaking||?
+|Handshaking||Off
 |-
-|Parity||?
+|Parity||None
 |-
-|StopBits||?
+|StopBits||1
 |}
 
 </td></tr>
