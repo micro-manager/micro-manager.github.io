@@ -73,7 +73,7 @@ Also when installing, ignore the driver requests to restart your computer.
 #* (Optional for testing) iQ would also serve to test that communication and control of the combiner is possible
 # [http://www.mccdaq.com/software.aspx Instacal] for the Measurement Computing DAC card driver
 #* Recognizes the Andor Precision Control Unit (PCU) box which controls the laser combiner Acousto-Optic Tunable Filter (AOTF)
-# Prolific PL-2303 USB to RS232 driver
+# Prolific PL-2303 USB to RS232 driver.  '''For Windows 7 do not use Prolific's public driver.  It will lock up Windows.  Use the version bundled with the ALC SDK instead'''.
 # Restart your PC
 # Let Windows Found New Hardware wizard finish for all hardware
 # Start menu > Measurement Computing > InstalCal, to register the PCU DAC card
