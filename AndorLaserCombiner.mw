@@ -2,7 +2,7 @@
 '''Summary:'''</td><td>Interfaces with Andor laser combiner</td></tr>
 <tr><td valign=top>'''Author:'''</td><td>Karl Hoover, UCSF - µManager device adapter<br>Pariksheet Nanda, Andor Support - this documentation and µManager device adapter code maintainer</td></tr>
 <tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
-<tr><td  valign=top >'''Platforms:'''</td><td>Windows XP 32-bit, 7 32-bit, 7 64-bit (No Mac or Linux driver available)</td></tr>
+<tr><td  valign=top >'''Platforms:'''</td><td>Windows XP 32bit, Windows 7 32bit and 64bit (No Mac or Linux driver available)</td></tr>
 <tr><td  valign=top >'''Devices:'''</td><td>Andor laser combiners: ALC-401, ALC-501, ALC-601</td></tr>
 </table>
 
