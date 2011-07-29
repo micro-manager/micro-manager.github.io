@@ -70,11 +70,23 @@ The project files in the repository should have the correct path settings.
 
 To deal with the flood of text in the Output window, in the Solution Explorer right-click and build one project at a time.
 
-If you get an error:
+If in Visual Studio you get an error:
 
         Target(FOO) does not match the Linker's OutputFile property value (BAR) ...
 
 You could right-click on the project > properties > Configuration Properties > General > Target Name and add the leading "mmgr_dal_" to the beginning of $(ProjectName) to satisfy it.
+
+=====Setting up 64-bit support on Visual C++ Express=====
+Visual Studio Express does not include 64-bit compiler support out of the box.  To compile x64 libraries in addition to Win32, you need to install the Windows SDK:
+http://msdn.microsoft.com/en-us/windows/bb980924
+
+After installation you should find the x64 specific libraries at a path similar to:
+
+        C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib\x64
+
+To build your x64 project you would need to make sure this is in the 'Additional Library Directories' setting in your project, specifically in Project > Properties > Configuration Properties > Linker > Additional Library Directories.  If you do not do this you will get linker errors similar to:
+
+        LINK: fatal error LNK1181: cannot open input file FOO.lib
 
 ==Building the C++ layer: MMCore and device adapters==
 
