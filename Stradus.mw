@@ -50,7 +50,9 @@ NOTE: When switching Laser Emission to “ON”, laser power and laser current i
 
 NOTE: Lasers will automatically be shut off when Micro-Manager closes but power remains on. Switching power off and on or turning laser emission ON within the Micro-Manager Device/Property Manager will restore laser emission.
 
+Below is a screenshot of a properly configured Stradus Laser:
 
+[[File:UMgrStradus.JPG]]
 
 {{Listserv_Search|Vortran}}
 
