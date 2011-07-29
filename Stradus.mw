@@ -28,7 +28,7 @@
 
 The Vortran Stradus Laser Controller controls Stradus diode lasers via a serial interface.
 
-The following laser features and operating status may be controlled/ monitored:
+The following laser features and operating status may be controlled and/or monitored:
 
 *Analog Modulation (External Power Control) ON/OFF [EPC = 1 or 0]
 *Base-Plate Temperature [?BPT]
@@ -53,6 +53,13 @@ NOTE: Lasers will automatically be shut off when Micro-Manager closes but power 
 Below is a screenshot of a properly configured Stradus Laser:
 
 [[File:UMgrStradus.JPG]]
+
+The Stradus GUI software, shown below, which is included on the software CD shipped with Stradus lasers may be helpful for initial configuration and testing of lasers in a Micro-Manager controlled system. 
+
+[[File:UMgrStradusSW.jpg]]
+
+Questions regarding the Stradus Micro-Manager device driver may be directed to: [mailto:dsweeney@vortranlaser.com Vortran uManager Driver Support]
+ 
 
 {{Listserv_Search|Vortran}}
 
