@@ -1,11 +1,41 @@
-<table><tr><td  valign=top >
-'''Summary:'''</td><td>Interfaces with Andor laser combiner</td></tr>
-<tr><td valign=top>'''Author:'''</td><td>Karl Hoover, UCSF - µManager device adapter<br>Pariksheet Nanda, Andor Support - this documentation and µManager device adapter code maintainer</td></tr>
-<tr><td  valign=top >'''License:'''</td><td>BSD</td></tr> 
-<tr><td  valign=top >'''Platforms:'''</td><td>Windows XP 32bit, Windows 7 32bit and 64bit (No Mac or Linux driver available)</td></tr>
-<tr><td  valign=top >'''Devices:'''</td><td>Andor laser combiners: ALC-401, ALC-501, ALC-601</td></tr>
-</table>
-
+{|
+|valign="top"|'''Summary:'''
+|Interfaces with Andor laser combiner
+|-
+|valign="top"|'''Author:'''
+|Karl Hoover, UCSF - µManager device adapter
+|-
+|valign="top"|'''Maintainer:'''
+|Pariksheet Nanda, Andor - this documentation and µManager device adapter
+|
+|-
+|valign="top"|'''Contributors:'''
+|Ed Simmons, ES Imaging - patch for GUI TTL outputs
+|-
+|
+|Pedro Almada, documentation fixes
+|-
+|valign="top"|'''License:'''
+|BSD
+|-
+|valign="top"|'''Platforms:'''
+|Windows XP 32bit
+|-
+|
+|Windows 7 32bit and 64bit
+|-
+|
+|(No Mac or Linux driver available)
+|-
+|valign="top"|'''Devices:'''
+|ALC-401
+|-
+|
+|ALC-501
+|-
+|
+|ALC-601
+|}
 ----
 
 
