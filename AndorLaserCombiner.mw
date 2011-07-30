@@ -64,13 +64,21 @@ For feature requests or bug reports, please liaison with µManager developers on
 
 == Appendix ==
 === Setting Micro-Manager but not iQ ===
-If you want to run Andor's iQ software as well on this computer, skip to the [[#Setting Micro-Manager alongside Andor iQ|the next section]]
+{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Note:'''
+| If you want to run Andor's iQ software as well on this computer, since iQ imposes additional restrictions on the driver versions you must use your iQ CD instead of installing the drivers from the ALC_SDK zip file.  Skip to the [[#Setting Micro-Manager alongside Andor iQ|the next section]]
+|}
 
-Specific driver versions are required.  Do not rely on the manufacturer websites for these drivers.  The ALC_SDK version 2 now bundles all the drivers you need to install to get the ALC running.  Install the drivers bundled with the ALC SDK zip file for your flavor of Windows:
+Specific driver versions are required.  Do not rely on the manufacturer websites for these drivers.  The ALC_SDK version 2 now bundles all the drivers you need to install to get the ALC running.  Install the drivers bundled for your flavor of Windows:
 
       .\ALC_REV_SDK\Drivers\
 
 === Setting Micro-Manager alongside Andor iQ ===
+{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Note:'''
+| Windows 7 32-bit users must install >=iQ 2.4.  iQ does not support Windows 7 in earlier versions
+|}
+
 Andor completes the steps described in this section in their factory.
 If you are setting up an Andor laser combiner on a new computer, only then do you need to follow this section.
 
