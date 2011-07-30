@@ -87,7 +87,7 @@ The Andor SDK installs test programs that can be used to get live images:
 #:      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 #: <br>
 #: Using UVCview:
-#: [[Image:Good_Clara_USB_Connection trimmed.JPG|frame|center||UVCview on Windows showing the Clara by itself on the USB bus]]
+#: [[Image:Good_Clara_USB_Connection cropped.JPG|frame|center||UVCview on Windows showing the Clara by itself on the USB bus]]
 
 
 
@@ -126,9 +126,18 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 * Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
 
 === Pre-Amplifier Gain (PAG) ===
-* PAG is ironically named since it is really post-readout gain of your sensor signal, which affects sensitivity. 
-* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each EMCCD chip.
-* PAG can affect the saturation limit of your chip.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
+* Pre-Amplifier Gain is a historical name since this feature predated EMCCD cameras.  The "Pre-" is in relation to the Analog-to-Digital (A2D) convertor, so PAG refers to the opamp between the sensor and the A2D convertor.
+{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Note:'''
+| On EMCCDs it is confusing to talk of PAG since one may think this "pre-" amplification happens before EM gain amplification.  However EM amplification happens on sensor, and PAG happens "post-" readout of your sensor.
+|}
+* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor.
+* PAG can affect the saturation limit of your image.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
+
+{| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Warning:'''
+| Always set PAG to maximum when using EM gain.  PAG is useful in Life Sciences only in Conventional mode
+|}
 
 === Conventional CCD or EM-CCD mode ===
 * With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
@@ -182,10 +191,10 @@ Please liaison with Micro-Manager developers to contact the Andor software team
 
 {{Listserv_Search|Andor}}
 
-{{Devices_Sidebar}}
-
 === Andor support ===
 For contacting Andor product support regarding any questions, see under "Support" for your location -
 http://www.andor.com/contact_us/default.aspx
 
-[[User:P.nanda|P.nanda]] 10:43, 30 July 2011 (PDT)
+{{Devices_Sidebar}}
+
+[[User:P.nanda|P.nanda]] 11:27, 30 July 2011 (PDT)
