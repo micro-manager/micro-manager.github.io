@@ -85,6 +85,7 @@
 === Laser Combiner questions ===
 For contacting Andor product support regarding any questions, use this [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Revolution%C2%AE%20XD Andor Product Support link]
 
+{{Listserv_Search|Andor}}
 
 === Development support ===
 This driver is not actively maintained by the Andor software team.
@@ -143,8 +144,6 @@ Also when installing, ignore the driver requests to restart your computer.
 
       .\ALC_REV_SDK\Libraries\ALC_REVTest.exe
       .\ALC_REV_SDK\Libraries\ALC_REVTest64.exe
-
-{{Listserv_Search|Andor}}
 
 {{Devices_Sidebar}}
 
