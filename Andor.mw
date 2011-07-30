@@ -40,101 +40,148 @@
 |}
 
 == Installation ==
+=== Andor SDK ===
+You must install the Andor SDK, or Andor camera application software (Solis or iQ), since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
-=== Windows ===
-Before you proceed, you must have a copy of Andor software already installed since it contains the necessary files to recognize the camera.  The software could be the Andor SDK, Solis or iQ.
+=== Disable power savings ===
+Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
 
-When you first power on and plug in your camera and Windows tries to recognize it, select to "Install from a list or specific location (Advanced)" > "Search for the best driver in these locations" > "Include this location in the search" > C:\Program Files\(Your Andor Directory)
+Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management and USB suspend] settings
 
-Clara support is introduced in SDK v2.84
+=== Test communication ===
+The Andor SDK installs test programs that can be used to get live images:
 
-For Clara only, in the Micro-Manager 1.3.39 beta release (May 15, 2009), the 32-bit Andor driver file (atmcd32d.dll) is not new enough to support the Clara.
+      C:\Program Files\Andor SOLIS\Drivers\Examples\C\
 
-The file version is 2.82, whereas Clara support is introduced in 2.84.  Therefore you need to copy the "atmcd32d.dll" file from your Andor installation to your Micro-Manager directory.  e.g. If you have the Andor SDK, copy and overwrite C:\Program Files\Andor Clara\Drivers\atmcd32d.dll to C:\Program Files\Micro-Manager-1.3\atmcd32d.dll
+'''Identifying computer bus speed bottlenecks:'''
 
-When trying to create a fresh configuration you may get error code 22, Andor error code 20006 (unable to load cof/rbf file).  This is because your particular Clara needs file version >=2.87.30002.0 because it has newer firmware.
+# iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.  For example the Dell XPS desktop 1x PCIe bus does not work with a PCIe 16x graphics card, so you have to connect the Andor PCIe card in the 8x PCIe slot instead
+#:
+# USB cameras using high bandwidth such as the Clara must be on their own PCIe bus.  On Linux you can easily check if this is the case with '''lsusb -t'''.  On Windows you need to use a utility like [ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe|UVCview].  The Linux output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+#:
+#:      $ lsusb -t
+#:      Bus#  5
+#:      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+#:      Bus#  4
+#:      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+#:        |-Dev#   2 Vendor 0x046d Product 0xc045
+#:        `-Dev#   3 Vendor 0x2341 Product 0x0001
+#:      Bus#  3
+#:      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+#:        `-Dev#   2 Vendor 0x03f9 Product 0x0100
+#:      Bus#  2
+#:      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+#:      Bus#  1
+#:      `-Dev#   1 Vendor 0x1d6b Product 0x0002
+#:        `-Dev#   6 Vendor 0x136e Product 0x000e
+#: <br>
+#:      $ lsusb
+#:      Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+#:      Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
+#:      Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+#:      Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
+#:      Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+#:      Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+#:      Bus 001 Device 006: ID 136e:000e  
+#:      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+#: <br>
+#: Using UVCview:
 
-=== Linux ===
-Before you proceed, you must have a copy of the Andor's '''Linux''' SDK package already installed since it contains the necessary files to recognize the camera. The Linux Andor Kernel driver must be compiled and installed.  When Micro-Manager is compiled, it looks for "/usr/local/include/atmcdLXd.h" before it compiles and installs the Andor device adapter. 
-
-== Test ==
-
-== PC hardware configuration ==
-=== BIOS ===
-Commercial computers like Dell, HP, etc are legally required to ship with all power savings turned on
-
-=== PCIe card ===
+== Device Configuration ==
+# Open Micromanager.
+# You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
 
 
-=== USB ===
 
-
-== Add to your configuration ==
-Open Micromanager.  You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
-
-== Working with your Andor camera ==
+== Device Settings ==
 Set camera properties under "Tools" > "Device/Property Browser..."
 Micromanager does not offer every feature available in Andor Cameras.
 TODO: List camera features not available in Micro-Manager. 
 However for the Clara overlap mode, Extended NIR and the variable pre amp gains are available.
 
-=== All EMCCDs (iXon, iXon+, Luca-R and Luca-S) ===
-
-==== EMgain slew rate ====
-* EM gain levels should be kept same between channels during an acquisition (because EM gain levels should not be immediately switched)
-* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
-* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
-* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
-* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
-
-==== iXon/iXon+ ====
-
-===== Cooling =====
-
+=== Cooling ===
 * iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
 * Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
 * Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
 * No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
 * Full gain will not be achievable without cooling. 
 * EMgain is temperature compensated for RealGain cameras. 
+* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
 
-===== EMgain range =====
+=== Electron Multiplying Gain (EM Gain) ===
+'''EMgain range'''
 * EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
 * The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
 
-===== Pre-Amplifier Gain (PAG) =====
+'''EMgain slew rate'''
+* iXon, iXon+, Luca-R and Luca-S
+* EM gain levels should be kept same between channels during an acquisition (because EM gain levels should not be immediately switched)
+* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
+* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
+* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
+* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
 
+=== Pre-Amplifier Gain (PAG) ===
 * PAG is ironically named since it is really post-readout gain of your sensor signal, which affects sensitivity. 
 * PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each EMCCD chip.
 * PAG can affect the saturation limit of your chip.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
 
-===== Conventional or EM =====
+=== Conventional CCD or EM-CCD mode ===
 * With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
 * EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
 * Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
 
-===== iCam =====
-* Allows for rapid switching of exposure times in multi-channel acquisitions 
-* For more information please see Andor website at http://www.andor.com/software/icam/
+=== iCam ===
+* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions 
 
-=== Clara ===
 
-==== Cooling ====
-* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
 
-== Known bugs ==
-* Clara-Output_Amplifier enabling "Extended NIR" with Overlap mode raises an exception using Live.  The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
+== Troubleshooting ==
+=== iXon: PCI/PCIe card not found on Windows 2000/XP ===
+If the iXon PCI/PCIe board is plugged in before you first install the 
+
+ and plug in your camera and Windows tries to recognize it, choose:
+
+    Install from a list or specific location (Advanced) >
+    Search for the best driver in these locations >
+    Include this location in the search >
+    
+    C:\Program Files\Andor SOLIS\Drivers\
+
+=== Clara: error code 22 ===
+The camera cannot be seen because either the Andor SDK version is too old.
+
+Andor introduced Clara support in their SDK v2.84
+
+When trying to create a fresh configuration you may get error code 22, Andor error code 20006 (unable to load cof/rbf file).  This is because your particular Clara needs file version >=2.87 because it has newer firmware.
+
+In either case you need to copy the library file from your Andor installation to your Micro-Manager directory.  If you have the Andor SDK, copy and overwrite:
+
+      C:\Program Files\Andor SOLIS\Drivers\atmcd32d.dll
+
+To:
+
+      C:\Program Files\Micro-Manager-1.4\atmcd32d.dll
+
+64-bit users should copy the library '''atmcd64d.dll''' instead
+
+=== Clara: Java exception using Live, Overlap mode with Clara-Output_Amplifier in "Extended NIR" mode ===
+This is a bug with the DeviceAdapter.
+
+The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
+
+
 
 == Resources ==
-
-=== Camera questions ===
-For contacting Andor product support regarding any questions, see under "Support" for your location -
-http://www.andor.com/contact_us/default.aspx
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
-
-Last edited: [[User:P.nanda|P.nanda]] 17:13, 9 April 2010 (UTC)
 
 {{Listserv_Search|Andor}}
 
 {{Devices_Sidebar}}
+
+=== Andor support ===
+For contacting Andor product support regarding any questions, see under "Support" for your location -
+http://www.andor.com/contact_us/default.aspx
+
+[[User:P.nanda|P.nanda]] 10:43, 30 July 2011 (PDT)
