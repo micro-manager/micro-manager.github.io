@@ -23,7 +23,11 @@
 *#* Use the [[AOTF|NEOS]] driver instead.
 * You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  [[#Laser Combiner questions|Request Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 * '''ALC_SDK 2.0 is the current version as of July 29, 2011'''
-* This guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If, instead, you have a non-Andor computer please read the [[#Appendix|appendix]] to install the drivers and map the COM ports.
+
+{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Note:'''
+| The rest of this guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If, instead, you have a non-Andor computer please read the [[#Appendix|appendix]] to install the drivers and map the COM ports.
+|}
 
 
 
