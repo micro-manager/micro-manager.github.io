@@ -57,7 +57,7 @@ The Andor SDK installs test programs that can be used to get live images:
 
 # iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.  For example the Dell XPS desktop 1x PCIe bus does not work with a PCIe 16x graphics card, so you have to connect the Andor PCIe card in the 8x PCIe slot instead
 #:
-# USB cameras using high bandwidth such as the Clara must be on their own PCIe bus.  On Linux you can easily check if this is the case with '''lsusb -t'''.  On Windows you need to use a utility like [ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe|UVCview].  The Linux output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+# USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus.  On Linux you can easily check if this is the case with '''lsusb -t'''.  On Windows you need to use a utility like UVCview ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe.  The Linux output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
 #:
 #:      $ lsusb -t
 #:      Bus#  5
@@ -86,6 +86,9 @@ The Andor SDK installs test programs that can be used to get live images:
 #:      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 #: <br>
 #: Using UVCview:
+#: [[Image:Good_Clara_USB_Connection trimmed.JPG|frame|center||UVCview on Windows showing the Clara by itself on the USB bus]]
+
+
 
 == Device Configuration ==
 # Open Micromanager.
