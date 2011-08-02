@@ -3,7 +3,7 @@
 First make sure you have enough hard disk space. I don't know how much you will need but I would think if you have about 5GB you should be fine.
 
 ====Directory structure for the source code====
-When you unzip the source code or download from the repository, the default directory for the entire source code should be "projects/micromanager". This directory should reside in the parent directory root of your choice. The root directory will be referred to as <root>. In the root directory you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware. You can download the development microManager source code via subversion at  https://valelab.ucsf.edu/svn/micromanager2/trunk/
+When you unzip the source code or download from the repository, the default directory for the entire source code should be "projects/micromanager". This directory should reside in the parent directory root of your choice. The directory where projects/ is found will be referred to as <root>. In the <root>/projects you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware. You can download the development microManager source code via subversion at  https://valelab.ucsf.edu/svn/micromanager2/trunk/
 
 ====Required tools and applications====
 
@@ -12,7 +12,7 @@ To build the entire application from the source code, you will need to install t
 # Microsoft Developer Studio 2008 or 2010 Visual C++.
 # JDK (Java developer's kit) standard edition, version 1.5 or later (Download from http://java.sun.com/javase/downloads/index.jsp.)
 # ImageJ 1.44n9 or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
-# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
+# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
 # Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
 # A subversion client, for example: http://www.open.collab.net/downloads/subversion or 
 
@@ -28,20 +28,20 @@ PATH=%PATH%;%ANT_HOME%\bin
 
 (See the "Building the full source in one step" section below as a faster alternative before downloading each of these separately.)
 
-In addition to software tools you will need to install the following software packages in the <root>/3rdparty directory:
+In addition to software tools you will need to install the following software packages in the <root>/projects/3rdparty directory:
 
-* SWIG (using version 2.0.0 as of 8/2/2011). Place it in "<root>/3rdparty/swig" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
+* SWIG (using version 2.0.0 as of 8/2/2011). Place it in "<root>/projects/3rdparty/swig" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/projects/3rdparty and install with swig.exe.)
 
-* The INPOUT32 library. Place it in "<root>/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micromanager1.4/bin, because this dll is required at run-time.)
+* The INPOUT32 library. Place it in "<root>/projects/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micromanager1.4/bin, because this dll is required at run-time.)
 
-* Boost 1.42. Download Boost and place it in the "<root>3rdparty/boost" subdirectory. The easy way to do this is as follows:
+* Boost 1.42. Download Boost and place it in the "<root>/projects/3rdparty/boost" subdirectory. The easy way to do this is as follows:
 
 
-1. In a command prompt, create and then cd to <root>3rdparty/boost, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
+1. In a command prompt, create and then cd to <root>/projects/3rdparty/boost, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
 
         svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
 
-2. After boost has been downloaded, to build the bjam tool, in the <root>/3rdparty/boost directory issue:
+2. After boost has been downloaded, to build the bjam tool, in the <root>/projects/3rdparty/boost directory issue:
          bootstrap
 On Windows 7 64-bit this may fail with a message in bjam.log:
          ERROR:  Cannot determine the location of the VS Common Tools folder.
@@ -53,11 +53,11 @@ This can happen if `reg' is not found, so add C:\Windows\SysWOW64 to your PATH
 This step will take a while so go make yourself a cup of tea ;)
 
 
-4. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\3rdparty\boost\boost and the libraries will be  in <root>\3rdparty\boost\stage\lib
+4. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\projects\3rdparty\boost\boost and the libraries will be  in <root>\projects\3rdparty\boost\stage\lib
 
 ====Device libraries and SDK's====
 
-Some device adapter require the installation of manufacturer's SDKs in order to build. All SDKs should be installed in the <root>/3rdparty directory. The actual names of SDK directories should match the paths in the corresponding header files in the Micro-manager source code for device adapters.
+Some device adapter require the installation of manufacturer's SDKs in order to build. All SDKs should be installed in the <root>/projects/3rdparty directory. The actual names of SDK directories should match the paths in the corresponding header files in the Micro-manager source code for device adapters.
 
 If you don't want to build one or more device adapters (because you don't have the SDK), you should remove corresponding projects from the master solution: MMCoreJ_wrap.sln.
 
@@ -96,7 +96,7 @@ You can build C++ part of the project by opening MMCoreJ_wrap.sln in MSDEV and r
 
 ==Building the Java layer: Micro-Manager Studio==
 
-Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/micro-manager-1.4/mmstudio directory. Before running the build the project file build.xml must be modified to specify paths for external libraries: ImageJ and BeanShell.
+Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/projects/micro-manager-1.4/mmstudio directory. Before running the build the project file build.xml must be modified to specify paths for external libraries: ImageJ and BeanShell.
 
 <code><pre>
 <!-- EDIT PATHS BELOW TO MATCH YOUR SYSTEM -->
