@@ -26,6 +26,8 @@ PATH=%PATH%;%ANT_HOME%\bin
 
 ====Required open source libraries====
 
+(See the "Building the full source in one step" section below as a faster alternative before downloading each of these separately.)
+
 In addition to software tools you will need to install the following software packages in the <root>/3rdparty directory:
 
 * SWIG (using version 2.0.0 as of 8/2/2011). Place it in "<root>/3rdparty/swig" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
