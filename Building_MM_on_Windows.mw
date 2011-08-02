@@ -35,7 +35,7 @@ In addition to software tools you will need to install the following software pa
 * Boost 1.42. Download Boost and place it in the "<root>3rdparty/boost" subdirectory. The easy way to do this is as follows:
 
 
-1. In a command prompt, cd to <root>3rdparty, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
+1. In a command prompt, create and then cd to <root>3rdparty/boost, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
 
         svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
 
