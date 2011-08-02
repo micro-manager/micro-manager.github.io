@@ -28,7 +28,7 @@ PATH=%PATH%;%ANT_HOME%\bin
 
 In addition to software tools you will need to install the following software packages in the <root>/3rdparty directory:
 
-* SWIG version 1.3.4. Place it in "<root>/3rdparty/SWIG-1.3.40" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
+* SWIG (using version 2.0.0 as of 8/2/2011). Place it in "<root>/3rdparty/swig" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/3rdparty and install with swig.exe.)
 
 * The INPOUT32 library. Place it in "<root>/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micromanager1.3/bin, because this dll is required at run-time.)
 
