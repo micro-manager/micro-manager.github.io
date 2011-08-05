@@ -116,8 +116,12 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 * The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
 
 '''EMgain slew rate'''
+{| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Warning:'''
+| EM gain levels should not be immediately switched.
+There is a 1-3 second delay in a new gain value coming into effect which affects data but you won't see a change in software performance.
+|}
 * iXon, iXon+, Luca-R and Luca-S
-* EM gain levels should be kept same between channels during an acquisition (because EM gain levels should not be immediately switched)
 * EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
 * Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
 * This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
