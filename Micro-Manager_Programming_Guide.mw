@@ -118,7 +118,7 @@ Many devices use serial ports for communication with the host computer. For MMCo
 
 == Using State devices ==
 
-State device is any device with a relatively small number of discrete states. Most common examples of state device are filter switchers (wheels) and objective turrets.<br /><br />
+State device is any device with a relatively small number of discrete states. The most common examples of state device are filter switchers (wheels) and objective turrets.<br /><br />
 
 <div class="source"> core.loadDevice("Emission", "DemoCamera", "DWheel");</div><div class="source"> core.loadDevice("Excitation", "DemoCamera", "DWheel");</div><div class="source"> core.loadDevice("Dichroic", "DemoCamera", "DWheel");</div><div class="source"> core.loadDevice("Objective", "DemoCamera", "DObjective");</div><div class="source"><br /> core.initializeAllDevices();</div><div class="source"><br /> // set emission filter to position 2</div><div class="source"> core.setState("Emission", 2);</div><div class="source"><br /> // verify position</div><div class="source"> core.waitForDevice("Emission"); // until it stops moving</div><div class="source"> long state = core.getState("Emission"); </div>
 
