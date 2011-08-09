@@ -156,7 +156,7 @@ This command can return an empty string if the system current state does not mat
 
 Each device loaded in MMCore reports its status by using "Busy" flag. A device declares that it is busy if it is still executing the previous command. To check the status of a single device or the entire system: <br /><br />
 
-<div class="source"> // check Z stage status</div><div class="source"> boolean ZStageBusy = core.deviceBusy("Z");</div><div class="source"><br /> // check if any of the devices in the systema are busy</div><div class="source"> boolean systemBusy = core.systemBusy();</div>
+<div class="source"> // check Z stage status</div><div class="source"> boolean ZStageBusy = core.deviceBusy("Z");</div><div class="source"><br /> // check if any of the devices in the system are busy</div><div class="source"> boolean systemBusy = core.systemBusy();</div>
 
 <br /> Very often you check the device status because you shouldn't proceed with some action until the devices stopped moving or executing previous commands. To relieve the porgrammer of the boring task of writing polling loops, we provided special commands to implement waiting for devices:<br /><br />
 
