@@ -90,11 +90,11 @@ By examining the two examples [content/code_examples/Tutorial1.java Tutorial1.ja
 
 <div class="source"> // commands which imply a single device attached to the system,</div><div class="source"> // in this case a camera.</div><div class="source"><br /> core.snapImage();</div><div class="source"> long h = core.getImageHeight();</div><div class="source"> double e = core.getExposure();</div><div class="source"><br /></div><div class="source"> // example commands which imply a specific device type</div><div class="source"> // (device label must be provided)</div><div class="source"><br /> core.setPosition("Z", 120.0); // works only for stages</div><div class="source"> core.setState("F1", 3); // works only for filter wheels, shutters, etc.</div>
 
-<br /> On the other hand, property mechanism is very general and does not assume anything about the device. In this way you can use a very flexible conceptual model in which the entire system is just a collection of various devices and each device has a number of property tags which you read or change. The property mechanism makes possible to build robust user interfaces and programs which automatically re-configure based on specific run-time configuration of the system.<br /><br />
+<br /> On the other hand, the property mechanism is very general and does not assume anything about the device. In this way you can use a very flexible conceptual model in which the entire system is just a collection of various devices and each device has a number of property tags which you read or change. The property mechanism makes possible to build robust user interfaces and programs which automatically re-configure based on specific run-time configuration of the system.<br /><br />
 
 <div class="source"> // these two commands</div><div class="source"> core.setPosition("Z", 123.0);</div><div class="source"> core.setExposure("Camera", 55.0);</div><div class="source"><br /> // have exactly the same effect as</div><div class="source"> core.setProperty("Z", "Position", "123.0");</div><div class="source"> core.setProperty("Camera", "Exposure", "55.0");</div>
 
-<br /> Also, property mechanism is allows us to control many details which are very specific to the device type. For example, some cameras will have "Offset" property available and some will not.<br />
+<br /> Also, the property mechanism allows us to control many details which are very specific to the device type. For example, some cameras will have an "Offset" property available and some will not.<br />
 
 == Working with multiple devices ==
 
