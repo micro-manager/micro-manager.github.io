@@ -118,7 +118,7 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 '''EMgain slew rate'''
 {| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
 |valign="top"| '''Warning:'''
-| Typically EM gain levels should be made to change during an experiment.
+| Typically EM gain levels should not be made to change during an experiment.
 The software and camera has no problem in changing the level, but there is a 1-3 second delay for the new gain value to come into effect which affects data.
 
 e.g. if you are imaging confocal fluorescence data and DIC, and you need lower or no EM gain for DIC, one would need a 3 second delay before and after the DIC image to allow for EM gain to slew.
