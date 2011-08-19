@@ -26,7 +26,7 @@
 
 This adapter interfaces to the [http://www.crestopt.com CrEST] [http://www.crestopt.com/html/carv2.htm CARVII] spinning Nipkow disk confocal scanhead.  Connect the CARVII to an available serial port on your computer.   You will need to define the ''Hub'' device, and assign the correct serial port to it. 
 
-Simultaneous control of the CARVII via serial (software) commands and the touchscreen can result in catastrophic crash.  To minimize this risk the device adapter locks the touchscreen at initialization, however the screen can be reactivated, at the risk of said catastrophic crash, in the Device Properties Browser.
+Simultaneous control of the CARVII via serial (software) commands and the touchscreen can result in catastrophic crash.  To minimize this risk the device adapter locks the touchscreen at initialization.  If you wish to activate the screen, at the risk of said catastrophic crash, do so in the Device Properties Browser.
 
 
 {{Devices_Sidebar}}
