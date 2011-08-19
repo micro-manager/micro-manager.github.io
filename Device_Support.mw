@@ -77,6 +77,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AA AOTF]] - AOTF controller from AA Optoelectronics
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
+* [[CARVII]] - BD/CrEST CARVII spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[Coherent Cube]] - Coherent Cube laser controller
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
