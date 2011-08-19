@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>G. Esteban Fernandez</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>CARVII Hub, shutter, excitation filter wheel, emission filter Wheel, dichroic filter wheel, FRAP (field) iris, illumination intensity iris, disk slider, disk spin motor, prism (light path) slider, touchscreen lockout</td></tr>
+<tr><td>'''Devices:'''</td><td>CARVII Hub, shutter, excitation filter wheel, emission filter wheel, dichroic filter wheel, FRAP (field) iris, illumination intensity iris, disk slider, disk spin motor, prism (light path) slider, touchscreen lockout</td></tr>
 <tr><td>'''Micro-Manager version:'''</td><td>1.4.6</td></tr>
 <tr><td valign=top>'''Serial port settings:'''</td><td valign=top>
 
