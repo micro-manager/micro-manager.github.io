@@ -35,7 +35,9 @@ You do this via:
 Edit the variable "Path" to begin with that directory + a semicolon i.e. ";" such as:
  C:\Program Files\Common Files\IC Imaging Control 3.2\bin\Win32;
 
-IFF µManager can find all the above library files, you'll be able to configure the camera!
+IF µManager can find all the above library files, you'll be able to configure the camera!
+
+Once you go through the Hardware configuration wizard and successfully create a configuration file using the TIS camera, you may encounter the problem that µManager reports "Camera is not initialized" when you press the "Snap" button.  When that happens, go to the Device/Property Browser (under the Tools menu), select  "Click here for device selection dialog" next to the "Name" property,and then select the camera on the dialog that appears. Restart µManager, and hopefully the camera now works.
 
 4.There are some caveats. Triple check that you've got the the IC Imaging Control directory in your 'path.' You should get hold of IC Imaging Control 3.2, if you're using a version of µManager after 1.3.46. If you must try to get IC Imaging Control <b>3.1</b> to work with µManager 1.3.46, when you select the camera in the Hardware Configuration Wizard in step 4 of 9, "The Imaging Source" software might pop-up a verification dialogue in the dead-center of the screen, which may be exactly behind the configuration dialog. This will look exactly like a software hangup. To avoid this, move µManager Hardware configuration wizard away from the center of the screen before step 4 of 9. Then they pop up yet another dialog which asks to to pick the camera model, sometimes even if you have already selected it. Anyhow, just select your camera model and then continue configuring µManager normally. Also make sure someother software or another copy of µManager is not trying to access the camera at the same time.
 
