@@ -2,6 +2,24 @@
 __NOTOC__
 === Micro-Manager 1.4.5 (June 13, 2011) ===
 
+<!-- 
+
+==== New in 1.4.6 ====
+
+* Hardware triggering integrated with Multi-Dimensional Acquisition
+* New device support:
+** Scientificia stages (Mattes Player)
+** Andor3 (supports new Neos camera)
+** CARVII adapter
+
+Pluggable display API (ImageCacheListener)
+* Split View Plugin restored to 1.4
+* Clojure Editor Plugin
+* Fixes to ZeissCAN29
+
+
+-->
+
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.5.exe Windows 32-bit], 17 MB<br />[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.5.exe Windows 64-bit], 35 MB<br />[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.5.dmg Mac OS X (Universal Binary)], 31 MB<br />
 
 ==== New Features in 1.4 ====
@@ -19,6 +37,7 @@ __NOTOC__
 ** a flexible metadata system for programmers
 * Support for color cameras has been substantially extended. You can now use color cameras in snap, live, acquire, and multi-dimensional acquisition.
 * Simplified hardware configuration, including auto-detection and auto-setup of a number of serial devices.
+* Data Browser plugin for quickly browsing through Micro-Manager data sets
 * Windows native 64-bit support (only some devices are supported)
 * Several new supported devices:
 ** Coherent Sapphire Laser (Karl Hoover and Paul Wiggins)
