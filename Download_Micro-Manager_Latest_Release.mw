@@ -14,10 +14,12 @@ __NOTOC__
 ** Scientificia stages (Mattes Player)
 ** Andor3 (supports new Neos camera)
 ** CARV II spinning disk confocal
+** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
 * Pluggable display API (ImageCacheListener)
 * Split View Plugin restored to 1.4
 * Clojure Editor Plugin
 * Fixes to ZeissCAN29
+* Changes in Hardware Configuration Wizard
 
 [[Micro-Manager_Version_Archive|(Click here for descriptions and downloads of previous releases.)]]
 
