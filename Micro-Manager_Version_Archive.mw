@@ -11,13 +11,15 @@ __NOTOC__
 
 * Hardware triggering integrated with Multi-Dimensional Acquisition
 * New device support:
-** Scientificia stages (Mattes Player)
+** Scientifica stages (Mathew Player)
 ** Andor3 (supports new Neos camera)
-** CARVII adapter
+** CARV II spinning disk confocal
+** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
 * Pluggable display API (ImageCacheListener)
 * Split View Plugin restored to 1.4
 * Clojure Editor Plugin
 * Fixes to ZeissCAN29
+* Changes in Hardware Configuration Wizard
 
 === Micro-Manager 1.4.5 (June 13, 2011) ===
 
