@@ -13,7 +13,7 @@ __NOTOC__
 * New device support:
 ** Scientificia stages (Mattes Player)
 ** Andor3 (supports new Neos camera)
-** CARVII adapter
+** CARV II xy-stage adapter
 * Pluggable display API (ImageCacheListener)
 * Split View Plugin restored to 1.4
 * Clojure Editor Plugin
