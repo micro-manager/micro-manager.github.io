@@ -11,7 +11,7 @@ __NOTOC__
 
 * Hardware triggering integrated with Multi-Dimensional Acquisition
 * New device support:
-** Scientificia stages (Mattes Player)
+** Scientifica stages (Mathew Player)
 ** Andor3 (supports new Neos camera)
 ** CARV II spinning disk confocal
 ** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
