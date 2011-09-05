@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Nenad Amodaj and Matthew Player(ElecSoft)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All Platforms (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage, Zstage</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage, ZStage</td></tr>
 </table>
 
 This adapter interfaces MMTP and UMS through Scientifica hardware. It communicates with the controller through the serial port so that no further software is needed but the serial port needs to be specified for all devices (Even though the XYStage and ZStage are likely to be on the same port).
