@@ -54,6 +54,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
+* [[Scientifica]] - Scientifica stages
 * [[SutterLambda]] - Sutter hardware
 * [[Thorlabs DCxxxx]] - Thorlabs LED controllers
 * [[Thorlabs FilterWheel]] - Thorlabs Filter Wheel
