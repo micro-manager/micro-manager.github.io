@@ -68,7 +68,7 @@ After the configuration file is loaded, the main control panel displays the curr
 
 To obtain a single image from the camera, press the "Snap" button. A "Live" window will pop up, displaying the acquired still image. You can use any of the available ImageJ tools to analyze, save or edit the image. In addition, at the bottom of the window there are shortcut buttons to save the image.
 
-[[Image:image_window3.jpg|Image acquisition window]] [[Image:Main4Snap.png|Image acquisition window]]<br /> Figure 3. "Live" window.
+[[Image:image_window3.jpg|Image acquisition window]] <br /> Figure 3. "Live" window.
 
 Each time you press the Snap button, the image in the "Live" window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. You can also change any of the settings in the control panel and the changes will be immediate. The bottom part of the control panel displays a histogram of the image.
 
