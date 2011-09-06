@@ -16,7 +16,7 @@ In contrast to virtually all of the available commercial solutions, Micro-Manage
 
 = Installation =
 
-After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope you will need to create a configuration file for the specific hardware components that are part of your setup.
+After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope you will need to create a configuration file for the hardware components that are part of your setup.
 
 The configuration process is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Micro-Manager includes a number of sample hardware configuration files (with extension *.cfg); you will need to create a configuration file specific to your system, however.
 
@@ -24,7 +24,7 @@ The configuration process is described in the [[Micro-Manager Configuration Guid
 
 Run the installer (MM_Setup_1_x_yy.exe) and follow the prompts. The package includes a copy of ImageJ; it may be necessary to install or update [http://java.com Java] on your computer. Besides the manufacturer's low-level drivers for your camera and possibly other equipment, no other software is required to fully use Micro-Manager. Micro-Manager will be installed in C:\Program Files\Micro-Manager1.y.
 
-There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager has been reported to work with Windows Vista.
+There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 with either 32-bit or 64-bit processor depending on which processor the drivers are compatible with and Micro-Manager has also been reported to work with Windows Vista.
 
 == Installation on Mac OS X ==
 
