@@ -97,7 +97,7 @@ Most of the cameras used for microscopy can be configured to image only a Region
 
 == Zoom ==
 
-The "Zoom" buttons apply a software zoom to the topmost image window.
+The "Zoom" buttons apply a software zoom to the topmost image window. Software zoom here implies zooming in on the captured image.
 
 == Line profile ==
 
