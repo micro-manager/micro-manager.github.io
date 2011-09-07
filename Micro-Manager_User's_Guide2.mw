@@ -65,6 +65,7 @@ Starting Micro-Manager will also start ImageJ (in fact, ImageJ starts up first a
 After the configuration file is loaded, the Main Window displays the current settings and shows the status of selected devices.
 
 == Snapping single images ==
+[[Image:Histogram.jpg|Image acquisition window]] <br /> Figure 4. Histogram in Main Window. Gamma adjustment shown in Red. Minimum (black arrow) and maximum (white arrow) intensity adjustment shown in Blue. 
 
 To obtain a single image from the camera, press the "Snap" button. A "Live" window will pop up, displaying the acquired still image. You can use any of the available ImageJ tools to analyze, save or edit the image. In addition, at the bottom of the window there are shortcut buttons to save the image.
 
