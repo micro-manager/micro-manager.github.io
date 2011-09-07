@@ -56,13 +56,13 @@ Configuring Micro-Manager to work with your specific microscope setup is a compl
 
 <br /> You can also choose to skip loading a configuration file (delete the contents of the line in the Splash screen) in which case the application starts without any devices attached. Devices can then be loaded "manually" at any time using the Micro-Manager scripting features (see the [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Script_Panel_GUI Scripting section] of the Micro-Manager wiki). A configuration file can also be loaded at any time using the menu command <span>'''Tools | Load Configuration'''</span>. <br />
 
-== The Micro-Manager main control panel ==
+== The Micro-Manager Main Window ==
 
 Starting Micro-Manager will also start ImageJ (in fact, ImageJ starts up first and runs Micro-Manager as a plugin). Both ImageJ and Micro-Manager have their own menus (on the Mac you will need to click on either window to display the menu in the main menu bar). Unless specified differently, menu commands in this manual will refer to the Micro-Manager menu. The Micro-Manager and ImageJ windows appear differently on different computer systems; examples from multiple systems are used in this manual.
 
-[[Image:MainControl_window3.png|Startup screen]]<br /> Figure 2. Main control panel displaying device controls and image histogram
+[[Image:MainControl_window3.png|Startup screen]]<br /> Figure 2. Main Window displaying device controls and image histogram
 
-After the configuration file is loaded, the main control panel displays the current settings and shows the status of selected devices.
+After the configuration file is loaded, the Main Window displays the current settings and shows the status of selected devices.
 
 == Snapping single images ==
 
@@ -70,11 +70,11 @@ To obtain a single image from the camera, press the "Snap" button. A "Live" wind
 
 [[Image:MainWSnap.jpg|Image acquisition window]] <br /> Figure 3. "Snap" window.
 
-Each time you press the Snap button, the image in the "Snap" window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. You can also change any of the settings in the control panel and the changes will be immediate. The bottom part of the control panel displays a histogram of the image.
+Each time you press the Snap button, the image in the "Snap" window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. You can also change any of the settings in the Main Window and the changes will be immediate. The bottom part of the Main Window displays a histogram of the image.
 
 == Live image mode ==
 
-To see a continuously updated, "live" view from the camera, press the "Live" button. The images will be displayed in the "Live" window. Pressing this button again, stops live mode. Settings in the control panel can be changed during live mode and the effects on images in the "Live" window will be immediate.
+To see a continuously updated, "live" view from the camera, press the "Live" button. The images will be displayed in the "Live" window. Pressing this button again, stops live mode. Settings in the Main Window can be changed during live mode and the effects on images in the "Live" window will be immediate.
 
 == Acquiring a series of images ==
 
@@ -106,7 +106,7 @@ The "Profile" button opens up a live line profile window. Unlike the regular Ima
 
 == Camera Settings ==
 
-A few settings found in all systems are directly accesible. You can set the exposure time of your camera, and apply binning ('pooling' of pixels in both x and y direction). Also, you can change the 'active shutter', i.e., the shutter that Micro-Manager will open before taking an image and close once the image is made. This behavior of automatically opening and closing the shutter can be defeated by unchecking the 'Auto shutter' checkbox. Doing so will let you open and close the active shutter with a button in the main control panel.
+A few settings found in all systems are directly accesible. You can set the exposure time of your camera, and apply binning ('pooling' of pixels in both x and y direction). Also, you can change the 'active shutter', i.e., the shutter that Micro-Manager will open before taking an image and close once the image is made. This behavior of automatically opening and closing the shutter can be defeated by unchecking the 'Auto shutter' checkbox. Doing so will let you open and close the active shutter with a button in the Main Window.
 
 <br />
 
@@ -114,7 +114,7 @@ A few settings found in all systems are directly accesible. You can set the expo
 
 == Exploring devices: Device/Property Browser ==
 
-The main control panel provides control only of a small subset of the device properties loaded in the system. To view and control all devices and all settings available in the currently loaded hardware configuration, use the "Device Browser" (menu command <span>'''Tools | Device/Property Browser'''</span>). The Device Browser displays a list of all devices and associated "properties" (settings available for each device). Since this list will often be overwhelmingly long, you can restrict the list of displayed devices using the checkboxes in the top left corner of the window. You can inspect and change any setting on any device. Read-only properties are shown as a line with a dark background. To change a setting, change it in the 'Value' column and then leave the field using the 'tab' key or by clicking the mouse elsewhere in the window.
+The Main Window provides control only of a small subset of the device properties loaded in the system. To view and control all devices and all settings available in the currently loaded hardware configuration, use the "Device Browser" (menu command <span>'''Tools | Device/Property Browser'''</span>). The Device Browser displays a list of all devices and associated "properties" (settings available for each device). Since this list will often be overwhelmingly long, you can restrict the list of displayed devices using the checkboxes in the top left corner of the window. You can inspect and change any setting on any device. Read-only properties are shown as a line with a dark background. To change a setting, change it in the 'Value' column and then leave the field using the 'tab' key or by clicking the mouse elsewhere in the window.
 
 <br />
 
@@ -142,7 +142,7 @@ To acquire multi-image stacks, press the "Multi-D Acq." button to open the Acqui
 
 After defining channels, slices and frames by using controls in the dialog, press the "Acquire" button. The acquisition starts immediately and an [[Micro-Manager User's Guide#Image5D Viewer|Image Viewer]] window will open displaying the progress. During and after acquisition you can use buttons at the bottom of the Image5D window to play-back the sequence, browse channels, slices or frames, display metadata or save the entire image stack to disk.
 
-'''Channels''' can be selected from the active 'Channel group'. Channel groups are the Configuration Preset groups that are defined in the main Micro-Manager control panel. When you switch Channel groups, all previously defined channels will be erased. You will need to set the desired exposure time for each channel. You can also set a z-offset for each channel, which can be useful when the main object in one of the channels is in a different focal plane from the other channels. Setting 'Skip Frame' to a number other than 0 will cause the acquisition to 'skip' taking an image in that channel (after taking the first image) for the indicated number of frames. The Image5D Viewer will 'fill in' these skipped frames with the previous image. In some situations it may be desirable to acquire certain channels at lower sampling rates, to reduce photo-toxicity and to save disk space. Clicking inside the 'Color' column will open up a Color selector that lets you select the color to be used for that channel in the Image5D Viewer. (You can also change colors later on in the [[Micro-Manager User's Guide#Image5D Viewer|Image Viewer]].)
+'''Channels''' can be selected from the active 'Channel group'. Channel groups are the Configuration Preset groups that are defined in the main Micro-Manager Main Window. When you switch Channel groups, all previously defined channels will be erased. You will need to set the desired exposure time for each channel. You can also set a z-offset for each channel, which can be useful when the main object in one of the channels is in a different focal plane from the other channels. Setting 'Skip Frame' to a number other than 0 will cause the acquisition to 'skip' taking an image in that channel (after taking the first image) for the indicated number of frames. The Image5D Viewer will 'fill in' these skipped frames with the previous image. In some situations it may be desirable to acquire certain channels at lower sampling rates, to reduce photo-toxicity and to save disk space. Clicking inside the 'Color' column will open up a Color selector that lets you select the color to be used for that channel in the Image5D Viewer. (You can also change colors later on in the [[Micro-Manager User's Guide#Image5D Viewer|Image Viewer]].)
 
 '''Z Slices''' can either be set as relative to the current position (you will need to type in the start and end position) or as absolute positions. Upon selecting absolute positions, the 'Set' buttons will become active. Clicking these will set the current position to start or end.
 
@@ -172,7 +172,7 @@ There are some devices on the market that can split an image into 2 (or more) wa
 
 Micro-Manager has a single, integrated user interface for hardware- and software-based autofocus. In the main window, press the '''Set autofocus options''' button to open the Autofocus Properties dialog box. Here you can choose which autofocus mechanism to use among available hardware- and software-based options. You can then edit the settings for your chosen autofocus mechanism. The '''Duo''' autofocus option allows you to combine two autofocus mechanisms, so that they operate sequentially, one after the other.
 
-The '''Autofocus Now''' button on the main window will cause the autofocus mechanism you have chosen to execute its focusing protocol once.
+The '''Autofocus Now''' button on the Main Window will cause the autofocus mechanism you have chosen to execute its focusing protocol once.
 
 == Hardware Autofocus ==
 
@@ -232,7 +232,7 @@ The button on the top left ('''Color''') lets you set the color of the selected 
 
 == Operations on Images ==
 
-To load previously saved data and open a corresponding Image5D Viewer, use the '''File | Open Acquisition Data As Image5D''' menu command from the main control panel. Since Image5D is not a data structure native to ImageJ, some of the ImageJ commands will not work on these images as expected. To alleviate this problem, Micro-Manager brings a set of functions that can help working with Image5D images. These can be found under the '''Image5D''' menu entry in the main Micro-Manager window. Of special note is the Volumeviewer, which is Kai Uwe Barthel's [http://rsb.info.nih.gov/ij/plugins/volume-viewer.html Image plugin] modified to work directly on the selected Micro-Manager Image5D window.
+To load previously saved data and open a corresponding Image5D Viewer, use the '''File | Open Acquisition Data As Image5D''' menu command from the Main Window. Since Image5D is not a data structure native to ImageJ, some of the ImageJ commands will not work on these images as expected. To alleviate this problem, Micro-Manager brings a set of functions that can help working with Image5D images. These can be found under the '''Image5D''' menu entry in the main Micro-Manager window. Of special note is the Volumeviewer, which is Kai Uwe Barthel's [http://rsb.info.nih.gov/ij/plugins/volume-viewer.html Image plugin] modified to work directly on the selected Micro-Manager Image5D window.
 
 Note that you do not need the full Micro-Manager installation to open the Micro-Manager Image5D data. Instead, you can install the [http://micro-manager.org/downloads.php?object=reader Micro-Manager ImageJ Reader plugin] that lets you open Micro-Manager files in an Image5D viewer and lets execute a number of operations on these images.
 
