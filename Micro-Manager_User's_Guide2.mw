@@ -81,6 +81,7 @@ To see a continuously updated, "live" view from the camera, press the "Live" but
 With the "Acquire" button, you can collect a series of still images (snaps) in an image series window. The first time you click the "Acquire" button, a new series window will open, with a fresh image obtained from the camera. Every time you click the "Acquire" button thereafter, a new image will be added to the series. Buttons that "Snap a new image and overwrite" and "Snap and append" are also available in the series window. Click the "Save" button to write all images in the series window to disk.
 
 == Histogram, brightness and contrast ==
+[[Image:Histogram.jpg|Image acquisition window]] <br /> Figure 4. Histogram in Main Window. Gamma adjustment shown in Red. Minimum (black arrow) and maximum (white arrow) intensity adjustment shown in Blue. 
 
 A histogram of the current ("Live" window) image's pixel intensities is alway displayed in the graph in the lower part of the main panel. The histogram is automatically updated each time a new image is received. The histogram intensity range can be adjusted, by selecting "camera", "8bit", "10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera" setting will automatically adjust the histogram range to the hardware bit depth of the image.
 
