@@ -142,7 +142,7 @@ There is no limit to the number of devices or number of different properties you
 
 To acquire multi-image stacks, press the "Multi-D Acq." button to open the Acquisition Control dialog (this dialog can also be reached through the <span>''' Tools | Acquisition '''</span> menu entry). Micro-Manager allows you to create a stack as multi-channel (wavelength coordinate), multi-frame (time coordinate), multi-slice (Z coordinate), or any combination of the above. Such stacks will be referred to as "5D image". In addition, 5D Images can be acquired at multiple positions. <br />
 
-[[Image:acq_dialog.png|Acquisition Dialog]]<br /> Figure 7. Acquisition control dialog.
+[[Image:MultiDAq.PNG|Acquisition Dialog]]<br /> Figure 7. Acquisition control dialog.
 
 After defining channels, slices and frames by using controls in the dialog, press the "Acquire" button. The acquisition starts immediately and an [[Micro-Manager User's Guide#Image5D Viewer|Image Viewer]] window will open displaying the progress. During and after acquisition you can use buttons at the bottom of the Image5D window to play-back the sequence, browse channels, slices or frames, display metadata or save the entire image stack to disk.
 
