@@ -107,8 +107,12 @@ The "Profile" button opens up a live line profile window. Unlike the regular Ima
 
 == Camera Settings ==
 
-A few settings found in all systems are directly accesible. You can set the exposure time of your camera, and apply binning ('pooling' of pixels in both x and y direction). Also, you can change the 'active shutter', i.e., the shutter that Micro-Manager will open before taking an image and close once the image is made. This behavior of automatically opening and closing the shutter can be defeated by unchecking the 'Auto shutter' checkbox. Doing so will let you open and close the active shutter with a button in the Main Window.
+A few camera settings found in all systems are directly accessible: 
 
+-Exposure Time: You can set the exposure time of your camera. 
+-Binning: Apply binning ('pooling' of pixels in both x and y direction). 
+-Active Shutter: You can change the 'active shutter', i.e., the shutter that Micro-Manager will open before taking an image and close once the image is made.
+-Deactivating Auto Shutter: This behavior of automatically opening and closing the shutter can be defeated by unchecking the 'Auto shutter' checkbox. Doing so will let you open and close the active shutter with a button in the Main Window.
 <br />
 
 = Controlling devices =
