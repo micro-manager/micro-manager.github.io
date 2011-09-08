@@ -220,13 +220,12 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 
 == Image5D Viewer ==
 
-Micro-Manager uses an image viewer derived from Joachim Walter's [http://rsb.info.nih.gov/ij/plugins/image5d.html Image5D] ImageJ plugin. The viewer has sliders for both the z and t dimensions, and can display channels as an overlay.
 
 [[Image:image_5d.gif|5D image window]]<br /> Figure 11. Acquisition data displayed in the 5D image window.
 
 <br />
 
-The button on the top left ('''Color''') lets you set the color of the selected channel. The dropdown menu below lets you switch between '''gray''' (a single channel displayed in grayscale, switch between channels using the slider), '''color''' (similar, but the channel is displayed in color), and '''overlay''' (the default: an overlay of visible channels. Make channels visible/unvisible using the checkboxes, switch the 'active' channel using the radio buttons). Buttons on the bottom of the window (left to right): '''Save''', '''Stop''' the currently running acquisition, '''Pause''' acquisition, display '''[[#Metadata|Metadata]]''', open '''Brightness/Contrast''' tool to adjust the currently selected channel, start/stop '''Playback''' of the time series. Adjust the Playback speed using the text box (set in frames/second). The bottom bar will also display the time point at which the displayed image was taken, the channel and the z-depth.
+The viewer has sliders for both the z and t dimensions, and can display channels as an overlay. The button on the top left ('''Color''') lets you set the color of the selected channel. The dropdown menu below lets you switch between '''gray''' (a single channel displayed in grayscale, switch between channels using the slider), '''color''' (similar, but the channel is displayed in color), and '''overlay''' (the default: an overlay of visible channels. Make channels visible/unvisible using the checkboxes, switch the 'active' channel using the radio buttons). Buttons on the bottom of the window (left to right): '''Save''', '''Stop''' the currently running acquisition, '''Pause''' acquisition, display '''[[#Metadata|Metadata]]''', open '''Brightness/Contrast''' tool to adjust the currently selected channel, start/stop '''Playback''' of the time series. Adjust the Playback speed using the text box (set in frames/second). The bottom bar will also display the time point at which the displayed image was taken, the channel and the z-depth.
 
 == Operations on Images ==
 
