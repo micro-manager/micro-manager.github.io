@@ -80,12 +80,19 @@ To see a continuously updated, "live" view from the camera, press the "Live" but
 
 With the "Acquire" button, you can collect a series of still images (snaps) in an image series window. The first time you click the "Acquire" button, a new series window will open, with a fresh image obtained from the camera. Every time you click the "Acquire" button thereafter, a new image will be added to the series. Buttons that "Snap a new image and overwrite" and "Snap and append" are also available in the series window. Click the "Save" button to write all images in the series window to disk.
 
-== Histogram, brightness and contrast ==
+== Histogram, Brightness and Contrast ==
 [[Image:Histogram.jpg|Image acquisition window]]<br />Figure 4. Histogram in Main Window. Brightness and contrast controls are shown in red and blue.  
 
-A histogram of the current ("Snap" window) image's pixel intensities is alway displayed in the graph in the lower part of the Main Window. The histogram is automatically updated each time a new image is received. The histogram intensity range can be adjusted, by selecting "camera", "8bit", "10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera" setting will automatically adjust the histogram range to the hardware bit depth of the image.
+A histogram of the current ("Snap" window) image's pixel intensities is alway displayed in the graph in the lower part of the Main Window. This histogram shows how many pixels of each intensity from a range of minimum to maximum values are in the original image. The histogram is automatically updated each time a new image is received. The histogram intensity range can be adjusted, by selecting "camera", "8bit", "10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera" setting will automatically adjust the histogram range to the hardware bit depth of the image.
 
-Brightness and contrast of the image display can be controlled with adjusts to the lower and upper clipping levels by moving the black and white arrows boxed in blue in figure 4. You can also make [http://en.wikipedia.org/wiki/Gamma_correction gamma corrections] to the display image by either inputting a value in the red box shown in figure 4 or moving the line function by clicking and dragging the line. The "Auto-stretch" option will adjust minimum and maximum settings automatically, based on the extreme pixel values in the image. Any settings will apply only to the image display - the actual pixel values will not be affected. Note that original image is saved and is not changed while image with adjustments is saved in a separate file. Since Micro-Manager displays images received from the camera in a standard image window, any ImageJ command can be used to adjust the appearance of the image, including the standard ImageJ Brightness and Contrast dialog.
+===Gamma Function===
+The gamma function allows you to adjust "brightness and contrast" of the displayed image, which is also known as [http://en.wikipedia.org/wiki/Gamma_correction gamma corrections]. The adjustments can be made either by inputting a value in the '''red''' box shown in figure 4 or by clicking and dragging the line function.
+
+===Lower and Upper Clipping Levels===
+You can also make adjusts to the lower and upper clipping levels, which correspond to minimum and maximum intensity levels, by moving the black and/or white arrows boxed in '''blue''' in Figure 4. The "Full" button sets the lower and upper clipping levels to your camera's full intensity range. The "Auto" button will adjust the lower and upper clipping levels automatically, based on the extreme pixel values in the image. For "Live" imaging you can perform this adjustment continuously by checking the "Auto-stretch" box; once checked you can set a percentage of outliers to ignore.
+  
+===Displayed vs. Original Image===
+Since the original image is saved separately from the displayed image any adjustments made will apply only to the displayed image - the original image with the actual pixel values will not be affected. Also since Micro-Manager displays images received from the camera in a standard image window, any ImageJ command can be used to adjust the appearance of the image, including the standard ImageJ Brightness and Contrast dialog.
 
 == Refresh ==
 
