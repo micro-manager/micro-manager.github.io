@@ -218,11 +218,13 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 
 = Image Viewer, Files and Metadata =
 
-== Image5D Viewer ==
+== 5D-Image Viewer ==
 [[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 11. Acquisition data displayed in the 5D image window.
 <br />
 
-The viewer has sliders for the Channels, Z-stack, Position and 'play and pause' of acquired images. The button on the top left ('''Color''') lets you set the color of the selected channel. The dropdown menu below lets you switch between '''gray''' (a single channel displayed in grayscale, switch between channels using the slider), '''color''' (similar, but the channel is displayed in color), and '''overlay''' (the default: an overlay of visible channels. Make channels visible/unvisible using the checkboxes, switch the 'active' channel using the radio buttons). Buttons on the bottom of the window (left to right): '''Save''', '''Stop''' the currently running acquisition, '''Pause''' acquisition, display '''[[#Metadata|Metadata]]''', open '''Brightness/Contrast''' tool to adjust the currently selected channel, start/stop '''Playback''' of the time series. Adjust the Playback speed using the text box (set in frames/second). The bottom bar will also display the time point at which the displayed image was taken, the channel and the z-depth.
+The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, Positions and Playback of acquired images. You can adjust the Playback speed using the text box (set in frames/second). The '''red''' box in Figure 11 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
+
+===Channels, Metadata, and Comments===
 
 == Operations on Images ==
 
