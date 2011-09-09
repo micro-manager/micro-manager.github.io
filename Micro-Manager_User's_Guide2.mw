@@ -229,7 +229,7 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 [[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 11. Acquisition data displayed in the 5D image window.
 <br />
 
-The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, XY-Positions and TIme points of acquired images. You can adjust the Playback speed using the text box (set in frames/second). The '''red''' box in Figure 11 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
+The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, XY-Positions and TIme points of acquired images. You can playback and adjust the speed of the Time points using the text box (set in frames/second). The '''red''' box in Figure 11 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
 
 
 ===Channels, Metadata, and Comments===
