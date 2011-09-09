@@ -86,7 +86,7 @@ With the "Acquire" button, you can collect a series of still images (snaps) in a
 A histogram of the current ("Snap" window) image's pixel intensities is alway displayed in the graph in the lower part of the Main Window. This histogram shows how many pixels of each intensity from a range of minimum to maximum values are in the original image. The histogram is automatically updated each time a new image is received. The histogram intensity range can be adjusted, by selecting "camera", "8bit", "10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera" setting will automatically adjust the histogram range to the hardware bit depth of the image.
 
 ====Gamma Function====
-The gamma function allows you to adjust "brightness and contrast" of the displayed image, which is also known as [http://en.wikipedia.org/wiki/Gamma_correction gamma corrections]. The adjustments can be made either by inputting a value in the '''red''' box shown in figure 4 or by clicking and dragging the line function.
+The gamma function allows you to adjust "brightness and contrast" of the displayed image, which is also known as [http://en.wikipedia.org/wiki/Gamma_correction gamma corrections]. The adjustments can be made either by inputting a value in the '''red''' box shown in Figure 4 or by clicking and dragging the line function.
 
 ====Lower and Upper Clipping Levels====
 You can also make adjusts to the lower and upper clipping levels, which correspond to minimum and maximum intensity levels, by moving the black and/or white arrows boxed in '''blue''' in Figure 4. The "Full" button sets the lower and upper clipping levels to your camera's full intensity range. The "Auto" button will adjust the lower and upper clipping levels automatically, based on the extreme pixel values in the image. For "Live" imaging you can perform this adjustment continuously by checking the "Auto-stretch" box; once checked you can set a percentage of outliers to ignore.
@@ -110,7 +110,7 @@ The "Zoom" buttons apply a software zoom to the topmost image window. Software z
 
 The "Profile" button opens up a live line profile window. Unlike the regular ImageJ "profile" utility, this window will update each time a new image is displayed in the Live window. The profile is computed from the currently active line drawn over the image. To draw a line profile a region, use standard line tool from the ImageJ toolbar.
 
-[[Image:profile.jpg|Line profile window]]<br /> Figure 4. Line Profile window.
+[[Image:profile.jpg|Line profile window]]<br /> Figure 5. Line Profile window.
 
 == Camera Settings ==
 
@@ -129,7 +129,7 @@ The Main Window provides control only of a small subset of the device properties
 
 <br />
 
-[[Image:device_manager.gif|Device/Property Browser Window]]<br /> Figure 5. Device/Property Browser window.
+[[Image:device_manager.gif|Device/Property Browser Window]]<br /> Figure 6. Device/Property Browser window.
 
 <br />
 
@@ -137,7 +137,7 @@ The Main Window provides control only of a small subset of the device properties
 
 Obviously, changing individual properties using the Device/Property Browser quickly becomes cumbersome. Micro-Manager therefore provides a way to generate 'shortcuts' that let you quickly set groups of device properties. Setting up these Configuration Presets is an important part of configuring Micro-Manager and is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Placing the cursor over the current preset will display a tool-tip window and show which devices will be affected by the command. In the example in the configuration guide, choosing the "DAPI" channel preset command will move three filter wheels to the appropriate positions.
 
-[[Image:presets.gif|Presets Panel]]<br /> Figure 6. Detail of the main control window: configuration preset.
+[[Image:presets.gif|Presets Panel]]<br /> Figure 7. Detail of the main control window: configuration preset.
 
 There is no limit to the number of devices or number of different properties you can include in one configuration group. You can set objectives, filters, stage positions, camera parameters in a single configuration command. The Configuration Presets shown here are just an example (used in the demo configuration). In some cases, device properties can show up as a slider, making it easy to set things like camera gain or temperature.
 
@@ -149,7 +149,7 @@ There is no limit to the number of devices or number of different properties you
 
 To acquire multi-image stacks, press the "Multi-D Acq." button to open the Acquisition Control dialog (this dialog can also be reached through the <span>''' Tools | Acquisition '''</span> menu entry). Micro-Manager allows you to create a stack as multi-channel (wavelength coordinate), multi-frame (time coordinate), multi-slice (Z coordinate), or any combination of the above. Such stacks will be referred to as "5D image". In addition, 5D Images can be acquired at multiple positions. <br />
 
-[[Image:MultiDAq.PNG|Acquisition Dialog]]<br /> Figure 7. Acquisition control dialog.
+[[Image:MultiDAq.PNG|Acquisition Dialog]]<br /> Figure 8. Acquisition control dialog.
 
 After defining channels, slices and frames by using controls in the dialog, press the "Acquire" button. The acquisition starts immediately and an [[Micro-Manager User's Guide#5D-Image Viewer|Image Viewer]] window will open displaying the progress. During and after acquisition you can use buttons at the bottom of the 5D-Image window to play-back the sequence, browse channels, slices or frames, display metadata or save the entire image stack to disk.
 
@@ -169,7 +169,7 @@ If you would like to acquire fast 'streams' of images with 0 intervals, Multi-di
 
 There are some devices on the market that can split an image into 2 (or more) wavelength components and project these side by side on a camera (examples are the [http://www.magbiosystems.com/products/DV2.php Dual View] and the [http://www.cairn-research.co.uk/Products/Fluorescence/Fluorescence20II20Splitter OptoSplit]). The SplitView plugin (under the '''Plugins | SplitView''' menu entry) will display the acquired images as a two channel Image in the 5D-Image viewer. You can set the color of each channel and use either a left-right or top-bottom split.
 
-[[Image:split_view.gif|Split View Dialog]]<br /> Figure 8. Split View dialog.
+[[Image:split_view.gif|Split View Dialog]]<br /> Figure 9. Split View dialog.
 
 <br />
 
@@ -197,17 +197,17 @@ The Multi-Dimensional Acquisition window offers integration with the autofocus s
 
 The Position List dialog can be reached from the menu ('''Tools | XY List'''), and from the [[Micro-Manager User's Guide#Multi-dimensional acquisition|Multi-dimensional Acquisition]] window (button next to 'Use XY list'). The Position List is used to record the positions of stages in your system. At the bottom of the dialog is a list of available stage axes, any of which you can select to use for recording positions.
 
-[[Image:position_list.png|Position List Dialog]]<br /> Figure 9. Position List dialog.
+[[Image:position_list.png|Position List Dialog]]<br /> Figure 10. Position List dialog.
 
 <br />
 
-Use the '''Mark''' button to record the current stage position for all stages you have selected to use. When a position is selected (as shown in Figure 9) pressing the '''Mark''' button will overwrite the selected position. Positions can be de-selected by clicking on them. You can revisit a site by selecting the position and pressing the '''Go to''' button. The  button will update the stage positions shown in the '''Current position''' pane. Position lists can be saved ('''Save As''' button) and re-used later ('''Load'''). When saving and re-using position lists, you should make sure that the coordinate systems of your stages are reproducible between invocations of the program, possibly using the '''calibrate''' button. This will drive all stages to their origin and set this as the base of their coordinate system. Be extremely careful when doing so, since it is possible to run your XY stage into one of your expensive objective lenses!
+Use the '''Mark''' button to record the current stage position for all stages you have selected to use. When a position is selected (as shown in Figure 10) pressing the '''Mark''' button will overwrite the selected position. Positions can be de-selected by clicking on them. You can revisit a site by selecting the position and pressing the '''Go to''' button. The  button will update the stage positions shown in the '''Current position''' pane. Position lists can be saved ('''Save As''' button) and re-used later ('''Load'''). When saving and re-using position lists, you should make sure that the coordinate systems of your stages are reproducible between invocations of the program, possibly using the '''calibrate''' button. This will drive all stages to their origin and set this as the base of their coordinate system. Be extremely careful when doing so, since it is possible to run your XY stage into one of your expensive objective lenses!
 
 == Tile Creator ==
 
 The '''Create Grid''' button in the Position List Dialog will open the Tile Creator Dialog. The purpose of this dialog is to quickly create a position list covering the area of an object (larger than a single image) in the microscope specimen.
 
-[[Image:tile_creator.gif|Tile Creator Dialog]]<br /> Figure 10. Tile Creator dialog.
+[[Image:tile_creator.gif|Tile Creator Dialog]]<br /> Figure 11. Tile Creator dialog.
 
 <br />
 
@@ -224,17 +224,17 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 |}
 
 = 5D-Image Viewer =
-[[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 11. Acquisition data displayed in the 5D image window.
+[[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 12. Acquisition data displayed in the 5D image window.
 <br />
 
-The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, XY-Positions and TIme points of acquired images. You can playback and adjust the speed of the Time points using the text box (set in frames/second). The '''red''' box in Figure 11 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
+The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, XY-Positions and TIme points of acquired images. You can playback and adjust the speed of the Time points using the text box (set in frames/second). The '''red''' box in Figure 12 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
 
 
 ==Channels, Metadata, and Comments==
 
 While using the 5D-Image Viewer the 'Histogram' section on the Main Window has three tabs for Channels, Metadata and Comments.
 
-[[Image:5D-ImageViewer2.PNG‎|5D image window]]<br /> Figure 11. Channels and Metadata tabs for 5D-Image View in Main Window. <br />
+[[Image:5D-ImageViewer2.PNG‎|5D image window]]<br /> Figure 13. Channels and Metadata tabs for 5D-Image View in Main Window. <br />
 
 ===Channels===
 
