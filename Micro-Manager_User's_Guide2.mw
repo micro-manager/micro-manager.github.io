@@ -246,9 +246,8 @@ Under the '''Channel''' tab you are given various options which include:
 **Grayscale- Displays a grayscale image of a single channel depending on the position of the slider in the viewer.
 
 *Histogram of Each Channel:
-**A Histogram is produced for each channel. 
 **You can choose to make adjustments a each channel as described in the [[Micro-Manager Configuration Guide|Histogram, Brightness and Contrast]] section above.
-**The only difference is that "Autostretch" in this case makes adjustments to all channels while in composite mode.  
+**The only difference is that "Autostretch" in this case makes adjustments to all channels while in composite mode.
 
 ===Metadata===
 
