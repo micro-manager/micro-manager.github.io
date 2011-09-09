@@ -258,7 +258,7 @@ In the '''Metadata''' tab you will find "Acquisition properties", which gives a 
 
 The '''Comments''' tab allows you to comment on the whole acquisition or each time point. You can choose which time point you would like to comment on using the slider in the 5D-Image Viewer.
 
-===Files on Disk ===
+==Files on Disk==
 
 Micro-Manager will store a single 5D-Image dataset in a single folder. Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
 
