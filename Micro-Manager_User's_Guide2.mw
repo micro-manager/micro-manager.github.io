@@ -29,7 +29,7 @@ There are no particular hardware or software requirements. However, for practica
 
 == Installation on Mac OS X ==
 
-Double click on the file Micro-Manager_Mac(Intel/PPC)_1_x_yy.dmg. This will open a drive called 'Micro-Manager_Mac(Intel/PPC)'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.y. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'MM_ImageJ' icon.
+Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive called 'Micro-Manager'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.y. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'ImageJ' icon to run a 32-bit version of Micro-Manager or by clicking the ImageJ64 icon to run the 64-bit version.
 
 == If you already use ImageJ ==
 
