@@ -25,7 +25,7 @@ The configuration process is described in the [[Micro-Manager Configuration Guid
 
 Run the installer (MM_Setup_1_x_yy.exe) and follow the prompts. The package includes a copy of ImageJ; it may be necessary to install or update [http://java.com Java] on your computer. Besides the manufacturer's low-level drivers for your camera and possibly other equipment, no other software is required to fully use Micro-Manager. Micro-Manager will be installed in C:\Program Files\Micro-Manager1.y.
 
-There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 with either 32-bit or 64-bit processor depending on which processor the drivers are compatible with and Micro-Manager has also been reported to work with Windows Vista.
+There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 running as either 32-bit or 64-bit.  However, some devices will only work using 32-bit drivers. Micro-Manager has also been reported to work with Windows Vista.
 
 == Installation on Mac OS X ==
 
