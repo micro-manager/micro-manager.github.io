@@ -192,7 +192,7 @@ Software-based autofocus plugins are also available in the Autofocus Properties 
 
 == Autofocus in Multi-D Acquisition ==
 
-The Multi-Dimensional Acquisition window offers integration with the autofocus system. The '''Set autofocus options''' button allows you to choose the autofocus mechanism and configure it. Click the '''Use autofocus''' checkbox to activate autofocus in the multi-dimensional acquisition. You can also specify how many frames (time points) will be skipped between autofocus events.
+The Multi-Dimensional Acquisition window offers integration with the autofocus system. The '''Set autofocus options''' button allows you to choose the autofocus mechanism and configure it. Click the '''Use autofocus''' checkbox to activate autofocus in the multi-dimensional acquisition. You can also specify how many frames (time points) will be skipped between autofocus events.  If you have a hardware autofocus, it will be activated just before image acquisition and then be switched off again.  If you rather have the hardware autofocus switched on continuously, do not check the autofocus checkbox, but be sure that the hardware autofocus is switched on before you start the acquisition.
 
 = Positioning =
 
