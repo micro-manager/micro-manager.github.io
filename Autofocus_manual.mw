@@ -12,7 +12,7 @@ The OughtaFocus plugin uses Brent's algorithm for finding a maximum of a functio
 The plugin has a number of settings, available in the autofocus options menu:
 
 * '''SearchRange_um''': OughtaFocus will search over z range specified, centered at the current z position.
-* '''Tolerance_um''': Search will stop when it is estimated to be within the tolerance specified
+* '''Tolerance_um''': Search will stop when it is estimated to be within the tolerance specified.
 * '''CropFactor''': The plugin will apply a camera ROI to the center of the field of view during autofocus, to reduce the time required to read out each image. A CropFactor of 1 means that the entire field will be used.
 * '''Exposure''' specifies how long the plugin will expose each image during the autofocus routine.
 * '''ShowImage''' determines whether images will be displayed in the Live Window during the autofocus routine.
