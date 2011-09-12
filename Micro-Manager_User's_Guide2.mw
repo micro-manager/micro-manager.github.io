@@ -190,7 +190,7 @@ Hardware-based autofocus support is provided for the Nikon Perfect Focus (PFS), 
 
 == Software Autofocus ==
 
-Software-based autofocus plugins are also available in the Autofocus Properties dialog. They should work with any camera and Z-stage. These autofocus plugins iteratively adjust the focal position and acquire images to optimize a specific image feature. For example, Pakpoom Subsoontorn & Hernan Garcia (Caltech) contributed a Java plugin module ("JAF H&P") for auto-focusing based on the relative strength of gradients in the image (edge 'sharpness'). See [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Autofocus_manual here] for further documentation of this autofocus plugin.
+Software-based autofocus plugins are also available in the Autofocus Properties dialog. They should work with any camera and Z-stage. These autofocus plugins iteratively adjust the focal position and acquire images to optimize a specific image feature. For example, Pakpoom Subsoontorn & Hernan Garcia (Caltech) contributed a Java plugin module ("JAF H&P") for auto-focusing based on the relative strength of gradients in the image (edge 'sharpness'). See [[Autofocus_manual|here]] for further documentation of this autofocus plugin.
 
 == Autofocus in Multi-D Acquisition ==
 
