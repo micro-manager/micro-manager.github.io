@@ -166,7 +166,13 @@ Checking the '''Use XY list''' option will cause the acquisition to be executed 
 
 == Fast Time Series Acquisition (Burst)==
 
-If you would like to acquire fast 'streams' of images with 0 intervals, Multi-dimensional Acquisition is intelligently designed to do so if you deactivate Z-stacks, set Time first and use one or no channel. Essentially you are removing any delay that may get in the way of the fast acquisition. In previous Micro-Manager versions this was known as Burst Mode.
+If you would like to acquire 'bursts' of images as fast as possible, Micro-Manager's Multi-dimensional Acquisition engine is designed to intelligently take care of this. You will need to:
+* Set the time interval between frames to zero
+* Deactivate Z Stacks
+* Choose Time First
+* Use no channels or a single chnanel
+
+Thus you will have removed any delay that would get in the way of the fast acquisition. In previous Micro-Manager versions this was known as Burst Mode.
 
 == Split View ==
 
