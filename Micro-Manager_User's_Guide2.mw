@@ -55,7 +55,7 @@ Configuring Micro-Manager to work with your specific microscope setup is covered
 
 [[Image:intro.gif|Startup screen]]<br /> Figure 1. Startup screen: selection of the configuration file.
 
-<br /> You can also choose to skip loading a configuration file (select "none" in the drop-down list) in which case the application starts without any devices attached. At anytime while using Micro-Manager under the '''Tools''' menu you have the options to Load, Reload, Switch and Save your '''Hardware Configuration''' files. <br />
+<br /> You can also choose to skip loading a configuration file (select "none" in the drop-down list) in which case the application starts without any devices attached. At anytime while using Micro-Manager under the '''Tools''' menu you have the options to Load, Reload, Switch and Save your '''Hardware Configuration''' files. 
 
 
 
