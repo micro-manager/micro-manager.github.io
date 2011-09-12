@@ -176,7 +176,7 @@ Thus you will have removed any delay that would get in the way of the fast acqui
 
 == Split View ==
 
-Split View functionality is now available as a [[SplitView|plugin]].
+Split View functionality (compatible with such devices as the DualView or OptoSplit) is now available as a [[SplitView|plugin]].
 
 = Autofocus =
 
