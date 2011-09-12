@@ -164,7 +164,7 @@ After defining channels, slices and frames by using controls in the dialog, pres
 
 Checking the '''Use XY list''' option will cause the acquisition to be executed at each position defined in the [[Micro-Manager User's Guide#Position List Dialog|Position List]]. [[Micro-Manager User's Guide#Autofocus|Autofocus]] options are described below. If the '''Save images''' option is selected, images will be saved to disk continuously during the acquisition. If this option is not selected, images are accumulated only in the 5D-Image window, and once the acquisition is finished,  image data can be saved to disk. However, saving files automatically during acquisition secures the acquired data against an unexpected computer failure or accidental closing of image window. Even when saving to disk, some of the acquired images are still kept in memory, facilitating fast playback.  If such behavior is not desired, check the 'Conserve RAM' option (<span>'''Tools | Options'''</span>).
 
-== Fast Time Series Acquisition ==
+== Fast Time Series Acquisition (Burst)==
 
 If you would like to acquire fast 'streams' of images with 0 intervals, Multi-dimensional Acquisition is intelligently designed to do so if you deactivate Z-stacks, set Time first and use one or no channel. Essentially you are removing any delay that may get in the way of the fast acquisition. In previous Micro-Manager versions this was known as Burst Mode.
 
