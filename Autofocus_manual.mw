@@ -4,7 +4,7 @@ Micro-Manager needs to be told which autofocus device or plugin to use. To do so
 
 See also [[SimpleAutofocus|Simple Autofocus Manual]].
 
-The following are autofocus plugins available in Micro-Manager
+The following are autofocus plugins available in Micro-Manager:
 
 == OughtaFocus ==
 The OughtaFocus plugin uses Brent's algorithm for finding a maximum of a function. The plugin acquires images at different z positions to iteratively search for maximimum image focus quality.
