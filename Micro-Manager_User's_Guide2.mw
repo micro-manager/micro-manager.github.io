@@ -79,7 +79,7 @@ To see a continuously updated, "live" view from the camera, press the "Live" but
 
 == Acquiring a series of images ==
 
-With the "Acquire" button, you can collect a series of still images (snaps) in an image series window. The first time you click the "Acquire" button, a new series window will open, with a fresh image obtained from the camera. Every time you click the "Acquire" button thereafter, a new image will be added to the series. Buttons that "Snap a new image and overwrite" and "Snap and append" are also available in the series window. Click the "Save" button to write all images in the series window to disk.
+With the "Acquire" button, you can collect a series of still images (snaps) in an image series window. The first time you click the "Acquire" button, a new series window will open, with a fresh image obtained from the camera. Every time you click the "Acquire" button thereafter, a new image will be added to the series. Click the "Save" button to write all images in the series window to disk.
 
 == Histogram, Brightness and Contrast ==
 [[Image:Histogram.jpg|Image acquisition window]]<br />Figure 4. Histogram in Main Window. Brightness and contrast controls are shown in red and blue.  
