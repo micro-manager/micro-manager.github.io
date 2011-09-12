@@ -117,7 +117,7 @@ The "Profile" button opens up a live line profile window. Unlike the regular Ima
 
 == Camera Settings ==
 
-A few camera settings found in all systems are directly accessible: 
+A few camera settings found in all systems are directly accessible from the main window: 
 
 * Exposure Time: You can set the exposure time of your camera.  
 *Binning: Apply binning ('pooling' of pixels in both x and y direction). 
