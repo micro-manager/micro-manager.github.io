@@ -2,6 +2,10 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Slide Explorer Plugin|Slide Explorer]]
 * [[Pixel Calibrator Plugin|Pixel Calibrator]]
 * [[Tracker Plugin|Tracker]]
+* [[Multi Camera]]
+* [[Live Replay]]
+* [[SplitView]]
+* [[Stage Control]]
 
 In addition, plugins are available from third parties:
 
