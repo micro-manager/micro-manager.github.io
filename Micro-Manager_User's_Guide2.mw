@@ -227,10 +227,12 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 |}
 
 = 5D-Image Viewer =
+The 5D Image Viewer is an extension of the ImageJ HyperStack.  Therefore, most ImageJ commands will work as expected on this window.
+
 [[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 12. Acquisition data displayed in the 5D image window.
 <br />
 
-The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-stacks, XY-Positions and Time points of acquired images. You can playback and adjust the speed of the Time points using the text box (set in frames/second). The '''red''' box in Figure 12 displays the position, time, z-stack, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
+The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-slices, XY-Positions and Time points of the acquired images. You can playback Time Lapse sequences and adjust the speed using the text box (set in frames/second). The '''red''' box in Figure 12 displays the position, time, z-position, and channel of the current image. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image with any adjustments to brightness and contrast.
 
 
 ==Channels, Metadata, and Comments==
@@ -247,22 +249,21 @@ Under the '''Channel''' tab you are given various options which include:
 **Composite- Displays image and histogram of all channels at the same time. You also have the option to turn off any channel by unchecking the box. 
 **Color- Displays a single channel depending on the position of the slider in the viewer.
 **Grayscale- Displays a grayscale image of a single channel depending on the position of the slider in the viewer.
-
 *Histogram of Each Channel:
 **You can choose to make adjustments a each channel as described in the [[Micro-Manager Configuration Guide|Histogram, Brightness and Contrast]] section above.
 **The only difference is that "Autostretch" in this case makes adjustments to all channels while in composite mode.
 
 ===Metadata===
 
-In the '''Metadata''' tab you will find "Acquisition properties", which gives a list of properties and values corresponding to the whole acquisition. Right below that is the "Pre-image properties", which lists all of the properties and values corresponding to a single time point. There are some properties in this list whose value you cannot change so you have the option not to show those properties by unchecking the box that says "Show unchanging properties". If you would like to make any changes to these properties you can go to '''Tools|Device/Property Browse'''. 
+In the '''Metadata''' tab you will find "Acquisition properties", which lists metadata common to the complete data set. Below are the "Per-image properties", which lists the complete state of the microscope system at the time the image was taken.  Most of these will be the same for all images, you can hide these un-checking the  box that says "Show unchanging properties". 
 
 ===Comments===
 
-The '''Comments''' tab allows you to comment on the whole acquisition or each time point. You can choose which time point you would like to comment on using the slider in the 5D-Image Viewer.
+The '''Comments''' tab allows you to comment on the whole acquisition or each time point. You can choose which time point you would like to comment on using the slider in the 5D-Image Viewer.  These comments will be automatically saved in the metadata and can be used to store your observations/annotations.
 
 ==Files on Disk==
 
-Micro-Manager will store a single 5D-Image dataset in a single folder. Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
+Micro-Manager will store a 5D-Image dataset in a single folder. Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
 
 = Credits, License and Copyright =
 
