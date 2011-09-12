@@ -17,19 +17,19 @@ In contrast to virtually all of the available commercial solutions, Micro-Manage
 
 = Installation =
 
-After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope you will need to create a configuration file for the hardware components that are part of your setup.
+After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope, you will need to create a configuration file for the hardware components that are part of your setup.
 
-The configuration process is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Micro-Manager includes a number of sample hardware configuration files (with extension *.cfg), however, you will need to create a configuration file specific to your system.
+The configuration process is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. You will need to create a configuration file specific to your system.
 
 == Installation on Windows ==
 
-Run the installer (MM_Setup_1_x_yy.exe) and follow the prompts. The package includes a copy of ImageJ; it may be necessary to install or update [http://java.com Java] on your computer. Besides the manufacturer's low-level drivers for your camera and possibly other equipment, no other software is required to fully use Micro-Manager. Micro-Manager will be installed in C:\Program Files\Micro-Manager1.y.
+Run the installer (MM_Setup_1_x_yy.exe) and follow the prompts. The package includes a copy of ImageJ; it may be necessary to install or update [http://java.com Java] on your computer. Besides the manufacturer's low-level drivers for your camera and possibly other equipment, no other software is required to fully use Micro-Manager. Micro-Manager will be installed in C:\Program Files\Micro-Manager1.x.
 
-There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 running as either 32-bit or 64-bit.  However, some devices will only work using 32-bit drivers. Micro-Manager has also been reported to work with Windows Vista.
+There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 running as either 32-bit or 64-bit. However, some devices will only work using 32-bit drivers. Micro-Manager has also been reported to work with Windows Vista.
 
 == Installation on Mac OS X ==
 
-Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive called 'Micro-Manager'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.y. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'ImageJ' icon to run a 32-bit version of Micro-Manager or by clicking the ImageJ64 icon to run the 64-bit version.
+Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive called 'Micro-Manager'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.x. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'ImageJ' icon (to run a 32-bit version of Micro-Manager) or by clicking the ImageJ64 icon (to run the 64-bit version).
 
 == If you already use ImageJ ==
 
