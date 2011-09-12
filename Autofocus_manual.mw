@@ -4,6 +4,21 @@ Micro-Manager needs to be told which autofocus device or plugin to use. To do so
 
 See also [[SimpleAutofocus|Simple Autofocus Manual]].
 
+The following are autofocus plugins available in Micro-Manager
+
+== OughtaFocus ==
+The OughtaFocus plugin uses Brent's algorithm for finding a maximum of a function. The plugin acquires images at different z positions to iteratively search for maximimum image focus quality.
+
+The plugin has a number of settings, available in the autofocus options menu:
+
+* '''SearchRange_um''': OughtaFocus will search over z range specified, centered at the current z position.
+* '''Tolerance_um''': Search will stop when it is estimated to be within the tolerance specified
+* '''CropFactor''': The plugin will apply a camera ROI to the center of the field of view during autofocus, to reduce the time required to read out each image. A CropFactor of 1 means that the entire field will be used.
+* '''Exposure''' specifies how long the plugin will expose each image during the autofocus routine.
+* '''ShowImage''' determines whether images will be displayed in the Live Window during the autofocus routine.
+* '''Maximize''' determines what property of the autofocusing image series will be used to evaluate the quality of focus. You can choose Mean, Standard Deviation, or Edges (a function that looks at the variance of the first derivative). Experiment with different methods to find the best one for your sample.
+* '''Channel''' allows you to select a channel preset to be used for autofocus -- if no Channel is selected, then the current hardware settings will be used.
+
 == AutoFocus JAF(H&P) manual ==
 
 Pakpoom (Tom) Substoontorn provided the following explanation of the various settings in the autofocus dialog:
