@@ -257,7 +257,7 @@ Under the '''Channel''' tab you are given various options which include:
 
 ===Metadata===
 
-In the '''Metadata''' tab you will find "Acquisition properties", which lists metadata common to the complete data set. Below are the "Per-image properties", which lists the complete state of the microscope system at the time the image was taken.  Most of these will be the same for all images, you can hide these un-checking the  box that says "Show unchanging properties". 
+In the '''Metadata''' tab you will find a box of "Acquisition properties", which lists metadata common to the complete data set. Below are the "Per-image properties", which lists the complete state of the microscope system at the time the image was taken.  Most of these will be the same for all images, you can hide these by un-checking the box that says "Show unchanging properties".
 
 ===Comments===
 
