@@ -261,7 +261,7 @@ In the '''Metadata''' tab you will find a box of "Acquisition properties", which
 
 ===Comments===
 
-The '''Comments''' tab allows you to comment on the whole acquisition or an individual image. You can choose which time point you would like to comment on using the slider in the 5D-Image Viewer.  These comments will be automatically saved in the metadata and can be used to store your observations/annotations.
+The '''Comments''' tab allows you to comment on the whole acquisition or an individual image. You can choose the image you would like to comment on by using the sliders in the 5D-Image Viewer.  These comments will be automatically saved in the metadata and can be used to store your observations/annotations.
 
 ==Files on Disk==
 
