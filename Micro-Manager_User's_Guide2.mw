@@ -111,7 +111,7 @@ The "Zoom" buttons apply a software zoom to the topmost image window. Software z
 
 == Line profile ==
 
-The "Profile" button opens up a live line profile window. Unlike the regular ImageJ "profile" utility, this window will update each time a new image is displayed in the Live window. The profile is computed from the currently active line drawn over the image. To draw a line profile a region, use standard line tool from the ImageJ toolbar.
+The "Profile" button opens up a live line profile window. Unlike the regular ImageJ "profile" utility, this window will update each time a new image is displayed in the Live window. The profile is computed from the currently active line drawn over the image. To draw a line, use the standard line tool from the ImageJ toolbar.
 
 [[Image:profile.jpg|Line profile window]]<br /> Figure 5. Line Profile window.
 
