@@ -22,7 +22,7 @@ Let's assume that we are writing a device adapter, for a device called “MyDevi
 * '''Driver''' – one or more software components provided by the device manufacturer to enable other software such as Micro-manager to control the device (some devices do not require drivers)
 * '''Library''' – dynamic library (e.g. dll, dylib, so, etc.) conforming Micro-manager module API and naming convention that contains one or more Device Adapters
 
-== Directory Layout ==
+== Directory layout ==
 
 Before doing anything else we should check out the latest version of micro-manager from the SubVersion repository to appropriate base directory on our computer. The checkout process is outlined in the next few steps.
 
