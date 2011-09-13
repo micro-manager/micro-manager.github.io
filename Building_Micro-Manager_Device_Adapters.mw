@@ -78,6 +78,29 @@ First open LibraryTest solution (sln) project file and launch build. If all dire
 
 Finally open the MMCamera project and examine its structure and project settings. This is a very simple example that can be used as a template or starting point for new projects.
 
+== Project Settings (Windows)
+Micro-manager Device Adapter is a C++ class residing in a Library (dynamically linked). One Library usually contains more than one DeviceAdapter. Micro-manager application does not link against any of the Device Adapter libraries at build time. Libraries are discovered by scanning the application default directory for dynamic libraries following the specific naming convention:
+
+mmgr_dal_<device name>.dll
+
+In other words it will try to load at run-time only libraries with prefix “mmgr_dal”. In our case our new adapter (once we are finished with it) should build as mmgr_dal_mydevice.dll.
+
+In terms of code generation settings, we are linking against C++ run-time multithreaded DLLs (not static ones). The project should be configured to support asynchronous exceptions (/EHa). Typically we don’t use precompiled headers.
+
+Preprocessor macros should include MODULE_EXPORTS definition. This setting is the same for all Micro-manager Libraries.
+
+“../../MMDevice” path should be a part of “Additional include directories”
+
+And finally in “post-build” step we want the target to be copied in a standard run-time location:
+
+/projects/micromanager1.4/bin_win32 (for 32-bit Windows)
+
+or 
+
+/projects/micromanager1.4/x64 (for 64-bit Windows)
+
+Settings described above are required for all Micro-manager adapters. Everything else is determined by the specific requirements of our new device, e.g.  we may have to list other “additional” include and library paths and link against other static or dynamic libraries.
+
 == Plugin interface ==
 
 A device adapter is a software plugin for a specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the MMDevice.h. Device library (DLL file) can contain one or more device adapters. The library DLL must also implement plugin management functions defined in the ModuleInterface.h. In theory, these two files plus MMDeviceConstants.h (for error codes and other constants) are all you need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
