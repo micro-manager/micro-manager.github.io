@@ -114,7 +114,7 @@ A device adapter is a C++ class for controlling one specific device, e.g. stage,
 
 '''MMDevice.h, ModuleInterface.h and MMDeviceConstants.h''' essentially define the plug-in interface and are also used by the Micro-manager application. We should never modify these files – any discrepancy between your version and the one used to build the main application will likely result in the system crash or severe malfunction
 
-== Utility classes and files ==
+=== Utility classes and files ===
 
 To make building device adapters easier, we provide a couple of additional files to use as building blocks. First, '''DeviceBase.h''' contains base class partial API implementations for all device classes. The idea is to derive our particular device adapter class from the appropriate class defined in the '''DeviceBase.h'''. This header file contains method implementations as well, so there is no corresponding cpp file.
 
