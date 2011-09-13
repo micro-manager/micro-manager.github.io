@@ -5,7 +5,7 @@ As well as downloading and installing the Device Developer's Kit (installer down
 
 == Latest release ==
 
-As of Micro-manager release 1.4.6 Device Kit is a part of the source code and there is no need to download and install stand-alone libraries and executables. All development tools and libraries can be built directly from the main source code base following a simple process described in [[Building Micro Manager Device Adapters]]. Distribution of separate Device Kit installers is therefore discontinued.
+As of Micro-manager release 1.4.6 Device Kit is a part of the source code and there is no need to download and install stand-alone libraries and executables. All development tools and libraries can be built directly from the main source code base following a simple process described in [[Building Micro-Manager Device Adapters]]. Distribution of separate Device Kit installers is therefore discontinued.
 
 Despite some minor cleanup, Device Kit functionality is unchanged: it allows developers to develop and test Device Adapters using a low-level C++ environment. No changes are required to Device Adapters developed with the previous versions of the Device Kit, except making sure that <code>MMDevice</code> directory path is now pointing to the main code base. We recommend that you delete or move old Device Kit files to avoid confusion and bugs related to different versions of the interface.
 
