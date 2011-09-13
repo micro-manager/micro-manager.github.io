@@ -68,6 +68,14 @@ In this directory we will find a very simple “skeleton” camera adapter proje
 
 <code>/programs/micro-manager1.4/TestDeviceAdapters/MyDevice</code>
 
+== Building Test Programs and Camera Adapter Example ==
+
+We have to build development tools (test programs) and example Device Adapters from source code. In this tutorial we will describe build process for Windows. Linux and Mac developers can use the same source files without any changes (*.cpp and *.h), except for having to create appropriate build files for each platform. Project files are provided only for Microsoft Developer’s Studio 2008 because Micro-manager team uses this version for release builds. We can also use version 2010 with automatic project conversion. 'Express' (free) versions of Visual Studio should also work for x86, to build amd64 native application we’ll need the Professional version of Visual Studio.
+
+First open LibraryTest solution (sln) project file and launch build. If all directories were set as described this project should build without any warnings or errors. You can repeat the same for DeviceTest and CoreTest projects. At this point all our tools are ready for use.
+
+Finally open the MMCamera project and examine its structure and project settings. This is a very simple example that can be used as a template or starting point for new projects.
+
 == Plugin interface ==
 
 A device adapter is a software plugin for a specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the MMDevice.h. Device library (DLL file) can contain one or more device adapters. The library DLL must also implement plugin management functions defined in the ModuleInterface.h. In theory, these two files plus MMDeviceConstants.h (for error codes and other constants) are all you need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
