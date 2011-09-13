@@ -28,13 +28,13 @@ Before doing anything else we should check out the latest version of micro-manag
 
 First we check out Micro-Manager source code from:
 
-[https://valelab.ucsf.edu/svn/micromanager2/trunk/]
+https://valelab.ucsf.edu/svn/micromanager2/trunk/
 
 into directory <code>/projects/micro-manager1.4</code> on our computer. Then we check out required 3rd-party libraries from:
 
-[https://valelab.ucsf.edu/svn/3rdpartypublic/]
+https://valelab.ucsf.edu/svn/3rdpartypublic/
 
-into directory <code>/projects/3rdpartypublic</code> directory on our computer.
+into directory <code>/projects/3rdpartypublic</code> on our computer.
 
 At this point we can install any proprietary drivers or SDKs that may be required by the manufacturer of our hardware. Devices that we intend to control via serial port (RS-232) do not require any drivers. It is probably a good idea to follow whatever is the default location for manufacturer’s driver or SDK and run their software demos afterwards to validate the installation. If we do have to link our code against manufacturer’s proprietary libraries we should copy required files and directories (usually header files and dynamic or static libraries) to the following location:
 
@@ -42,11 +42,11 @@ At this point we can install any proprietary drivers or SDKs that may be require
 
 Top-level directory can be called something other than “projects”, but within our top-level directory we must have three parallel sub-directories with fixed names:
 
-<code>
-/micro-manager1.4 (development source code)
-/3rdpartypublic (required open source 3rd-party libraries)
-/3rdparty (optional proprietary libraries that may be required for our hardware)
-</code>
+<code>/micro-manager1.4</code> (development source code)
+
+<code>/3rdpartypublic</code> (required open source 3rd-party libraries)
+
+<code>/3rdparty</code> (optional proprietary libraries that may be required for our hardware)
 
 == Plugin interface ==
 
