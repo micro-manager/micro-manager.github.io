@@ -78,7 +78,7 @@ First open LibraryTest solution (sln) project file and launch build. If all dire
 
 Finally open the MMCamera project and examine its structure and project settings. This is a very simple example that can be used as a template or starting point for new projects.
 
-== Project Settings (Windows) ==
+== Project settings (Windows) ==
 Micro-manager Device Adapter is a C++ class residing in a Library (dynamically linked). One Library usually contains more than one DeviceAdapter. Micro-manager application does not link against any of the Device Adapter libraries at build time. Libraries are discovered by scanning the application default directory for dynamic libraries following the specific naming convention:
 
 <code>mmgr_dal_<device name>.dll</code>
