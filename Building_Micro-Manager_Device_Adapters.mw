@@ -68,7 +68,7 @@ In this directory we will find a very simple “skeleton” camera adapter proje
 
 <code>/programs/micro-manager1.4/TestDeviceAdapters/MyDevice</code>
 
-== Building test Programs and examples ==
+== Building test programs and examples ==
 
 In contrast to previous versions of the Device Kit we now have to build development tools (test programs) and example Device Adapters from source code. There are no installers to download and run. The advantage of the new source code approach is that Device Kit will always be in sync with the main code base.
 
