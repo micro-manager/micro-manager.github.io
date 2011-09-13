@@ -101,11 +101,18 @@ or
 
 Settings described above are required for all Micro-manager adapters. Everything else is determined by the specific requirements of our new device, e.g.  we may have to list other ''additional'' include and library paths and link against other static or dynamic libraries.
 
-== Plugin interface ==
+== Device Adapter design ==
+=== Plugin interface ===
 
-A device adapter is a software plugin for a specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the MMDevice.h. Device library (DLL file) can contain one or more device adapters. The library DLL must also implement plugin management functions defined in the ModuleInterface.h. In theory, these two files plus MMDeviceConstants.h (for error codes and other constants) are all you need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
+Plug-in interface along with utility classes is contained in single directory:
 
-MMDevice.h, ModuleInterface.h and MMDeviceConstants.h essentially define the plugin interface and are also used by the MMCore module. Do not modify these files – any discrepancy between your version and the one used to build the main application will likely result in the system crash or severe malfunction. 
+<code>/projects/micromanager1.4/MMDevice</code>
+
+Device adapters and Libraries have dependencies only to files in this directory and never include or refer to files from other parts of the Micro-manager code base. There are no libraries to link to, all required code to implement this API is contained either in header files or in the associated *.cpp source files in '''MMDevice''' directory.
+
+A device adapter is a C++ class for controlling one specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the '''MMDevice.h'''. Device Library (dynamic library) can contain one or more device adapters. The Library module must also implement plug-in API defined in the '''ModuleInterface.h''' in order to be loaded by Micro-manager applications. In theory, these two files plus '''MMDeviceConstants.h''' (for error codes and other constants) are all we need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
+
+'''MMDevice.h, ModuleInterface.h and MMDeviceConstants.h''' essentially define the plug-in interface and are also used by the Micro-manager application. We should never modify these files – any discrepancy between your version and the one used to build the main application will likely result in the system crash or severe malfunction
 
 == Utility classes and files ==
 
