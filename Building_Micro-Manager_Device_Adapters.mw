@@ -48,7 +48,7 @@ Top-level directory can be called something other than “projects”, but withi
 
 <code>/3rdparty</code> (optional proprietary libraries that may be required for our hardware)
 
-=== Development Directories and Tools ===
+=== Development directories and tools ===
 
 Now that overall directory structure is set, we can have a look at Developer’s Kit tools and also find a place to develop our new “MyDevice” adapter. Development tools are located in:
 
