@@ -116,15 +116,15 @@ A device adapter is a C++ class for controlling one specific device, e.g. stage,
 
 == Utility classes and files ==
 
-To make building device adapters easier, we provide a couple of additional files to use as building blocks. First, DeviceBase.h contains base class partial API implementations for all device classes. The idea is to derive your particular device adapter class from the appropriate class defined in the DeviceBase.h. This header file contains method implementations as well, so there is no corresponding cpp file.
+To make building device adapters easier, we provide a couple of additional files to use as building blocks. First, '''DeviceBase.h''' contains base class partial API implementations for all device classes. The idea is to derive our particular device adapter class from the appropriate class defined in the '''DeviceBase.h'''. This header file contains method implementations as well, so there is no corresponding cpp file.
 
-Since DeviceBase.h and other utility files are not used by the main application, you can modify them if you wish. However, the best strategy is to avoid changing any of the supplied utility files since they implement some of the essential device behavior that the main application is relying on. Also, you should avoid overriding methods in the supplied base classes, even if they are declared as virtual – the class is not really designed for that purpose. The idea is to derive your class from one of the base classes and implement only abstract methods.
+Since '''DeviceBase.h''' and other utility files are not used by the main application, you can modify them if you wish. However, the best strategy is to avoid changing any of the supplied utility files since they implement some of the essential device behavior that the main application is relying on.
 
-Property.h and Property.cpp provide the implementation of the Micro-Manager "Property" mechanism, but again, only on the device side – they are not used in the rest of the application. Property class is used by the DeviceBase classes and most of the time you won't have to deal with it directly.
+'''Property.h''' and '''Property.cpp''' provide the implementation of the Micro-Manager "Property" mechanism, but again, only on the device side – they are not used in the rest of the application. Property class is used by the '''DeviceBase.h''' classes and most of the time you won't have to deal with it directly.
 
-DeviceUtils.h and DeviceUtils.cpp contain a couple of relatively simple helper functions you may or may not want to use.
+'''DeviceUtils.h''' and '''DeviceUtils.cpp''' contain a couple of relatively simple helper functions we may or may not want to use.
 
-ImgBuffer.h and ImgBuffer.cpp provide a simple implementation of the generic image buffer, which you may or may not find useful for building camera adapters. By all means disregard this class if you have a better one or your device does not need to deal with images.
+'''ImgBuffer.h''' and '''ImgBuffer.cpp''' provide a simple implementation of the generic image buffer, which you may or may not find useful for building camera adapters. We can disregard this class if we have a better one or if our device does not need to deal with images.
 
 == Device Adapter Examples ==
 
