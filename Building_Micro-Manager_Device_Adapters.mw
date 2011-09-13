@@ -152,7 +152,7 @@ SimpleAutofocus is a image-metric based autofocus 'adapter' implemented in C++. 
 
 === C++ environment ===
 
-Using the included project Module_Test, you can test and debug your device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation. 
+Using the included testing tools '''LibraryTest''', '''DeviceTest''' and '''CoreTest''' (see section [[#]]) you can test and debug your device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation.
 
 === Scripting environment ===
 
