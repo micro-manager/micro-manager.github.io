@@ -22,48 +22,31 @@ Let's assume that we are writing a device adapter, for a device called “MyDevi
 * '''Driver''' – one or more software components provided by the device manufacturer to enable other software such as Micro-manager to control the device (some devices do not require drivers)
 * '''Library''' – dynamic library (e.g. dll, dylib, so, etc.) conforming Micro-manager module API and naming convention that contains one or more Device Adapters
 
-== Typical directory layout for µManager development ==
-1. Install the latest [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Nightly_Builds nightly build of µManager]
+== Directory Layout ==
 
-2. Install the DDK in a path such as:
- \projects\micromanager\development
+Before doing anything else we should check out the latest version of micro-manager from the SubVersion repository to appropriate base directory on our computer. The checkout process is outlined in the next few steps.
 
-In that project you will see the following directory hierarchy: 
+First we check out Micro-Manager source code from:
 
-* C:\projects\micromanagerdevelopment\bin_Win32  object binaries for x86
-* C:\projects\micromanagerdevelopment\bin_x64  object binaries for amd64
-* C:\projects\micromanagerdevelopment\DeviceAdapters   vendor-specific ｵManager to device driver libraries 
-* C:\projects\micromanagerdevelopment\DeviceAdapters\DemoCamera – a simple microscope simulator -several diverse devices are supported in one adapter library. 
-* C:\projects\micromanagerdevelopment\DeviceAdapters\Nikon – example microscope support
-* C:\projects\micromanagerdevelopment\DeviceAdapters\Sensicam – example digital camera support.
-* C:\projects\micromanagerdevelopment\lib_Win32 library binaries for x86
-* C:\projects\micromanagerdevelopment\lib_x64 library binaries for amd64
-* C:\projects\micromanagerdevelopment\MMCore the C++ system coordinator
-* C:\projects\micromanagerdevelopment\MMDevice base classes for all device support.
-* C:\projects\micromanagerdevelopment\scripts – Bean Shell scripts for automation and testing.
-* C:\projects\micromanagerdevelopment\Test_Programs – command line test programs for your adapter. The MMCoreTest is a reasonably extensive test. It will load a specified configuration file, and exercise the camera and other equipment in that configuration. A configuration provides the definitions this test program expect is provided in demo&ImageProc.cfg
-* Thus by way of analogy, create a directory such as  C:\projects\micromanagerdevelopment\DeviceAdapters\MyDevice and put all your source in there.    
+[https://valelab.ucsf.edu/svn/micromanager2/trunk/]
 
-3. If you've got proprietary libraries, it will be really helpful if you provide a standard way to incorporate them into the build. There are two general approaches
-A) If you can provide an installer that can define permanent system environment variables for the libraries and include paths such as MYDEVICEINCLUDES and MYDEVICELIBRARIES, then just use those paths in your project files. We don't mind installing your SDK on our build machine, if you provide it to us.
-B) Else you can assume there is a path on the save drive \projects\3rdparty\ and in that path you'll create  a directory \projects\3rdparty\MyDevice and point your project includes and libraries to that place. 
+into directory <code>/projects/micro-manager1.4</code> on our computer. Then we check out required 3rd-party libraries from:
 
-4. Always setup your device project to use the $(PlatformName)\$(ConfigurationName) idiom for keeping the 32-bit and 64-bit binaries separate. See the example project property page below:
+[https://valelab.ucsf.edu/svn/3rdpartypublic/]
 
-It it strongly recommended that you submit your source code to us, so that your device adapter shared library is included in each build. In general, the Micro-Manager  source code is visible to the public, if your device adapter will contain proprietary  intellectual property, you can request to put the code into  a private view only area of the repository. It will lie in a directory parallel to the DeviceAdapters director. In either case, you'll need permission from info@micro-manager.org in order to commit the source to our repository. Micro-Manager users will be very grateful for your contributions!
+into directory <code>/projects/3rdpartypublic</code> directory on our computer.
 
-5. We include several semi-standard C++ libraries in our system, currently these include boost and zlib  These can be expected to lie in \projects\3rdpartypublic If you've got VS2008 you'll find the bare essential boost libraries for building the test programs already included in the installer. 
+At this point we can install any proprietary drivers or SDKs that may be required by the manufacturer of our hardware. Devices that we intend to control via serial port (RS-232) do not require any drivers. It is probably a good idea to follow whatever is the default location for manufacturer’s driver or SDK and run their software demos afterwards to validate the installation. If we do have to link our code against manufacturer’s proprietary libraries we should copy required files and directories (usually header files and dynamic or static libraries) to the following location:
 
-6. After you've got your device adapter built, go back to the MMCoreTest program and try it out: to test your device adapter you'll need to simply replace the 'demo' (simulation) equipment with your own. For example, assume you're writing a camera device adapter called mmgr_dal_VendorCamera.dll. Open the provided .cfg file with a text editor, simply find the entry:
+<code>/projects/3rdparty/MyDevice</code>
 
-      #Devices ….
-      Device,TheCamera,DemoCamera,DCam
-      change that line to:
-      Device,TheCamera,VendorCamera,DCam	
+Top-level directory can be called something other than “projects”, but within our top-level directory we must have three parallel sub-directories with fixed names:
 
-7. (It will also be instructive for you to learn how to create configurations with the micro-Manager Hardware Configuration wizard.
-
-8. Good Luck!
+<code>
+/micro-manager1.4 (development source code)
+/3rdpartypublic (required open source 3rd-party libraries)
+/3rdparty (optional proprietary libraries that may be required for our hardware)
+</code>
 
 == Plugin interface ==
 
