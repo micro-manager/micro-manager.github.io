@@ -48,6 +48,26 @@ Top-level directory can be called something other than “projects”, but withi
 
 <code>/3rdparty</code> (optional proprietary libraries that may be required for our hardware)
 
+=== Development Directories and Tools ===
+
+Now that overall directory structure is set, we can have a look at Developer’s Kit tools and also find a place to develop our new “MyDevice” adapter. Development tools are located in:
+
+<code>/projects/micro-manager1.4/DeviceKit</code>
+
+'''LibraryTest''' – command line program to test the micro-manager device Library and list all contained Device Adapters
+
+'''DeviceTest''' – command line program to test a single Device Adapter and list all of the available device properties and features
+
+'''CoreTest''' – command line program to test one or more Device Adapters from one or more Libraries using Micro-manager configuration files
+
+The place designated for development of our new adapter is:
+
+<code>/programs/micro-manager1.4/TestDeviceAdapters</code>
+
+In this directory we will find a very simple “skeleton” camera adapter project “MMCamera” that we can use to get started, to understand the basic principles of Micro-manager API and also use files as template to get started on our own project. All our development projects should be located in “TestDeviceAdapters” directory in the same way as for MMCamera. In our case we will create a new directory for our new Device Adapter:
+
+<code>/programs/micro-manager1.4/TestDeviceAdapters/MyDevice</code>
+
 == Plugin interface ==
 
 A device adapter is a software plugin for a specific device, e.g. stage, camera, shutter, etc. Each device adapter must implement one of the abstract interfaces defined in the MMDevice.h. Device library (DLL file) can contain one or more device adapters. The library DLL must also implement plugin management functions defined in the ModuleInterface.h. In theory, these two files plus MMDeviceConstants.h (for error codes and other constants) are all you need to create device adapters: if you implement the required API with the correct behavior, the Micro-Manager application will be able to make use of it.
