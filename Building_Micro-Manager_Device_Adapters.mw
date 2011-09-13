@@ -15,12 +15,12 @@ Let's assume that we are writing a device adapter, for a device called “MyDevi
 * Run test programs to validate and debug (if necessary) our new adapter. If our new device adapter passes these tests, it is more or less guaranteed to properly load and interact with the Micro-Manager application.
 * Download and install the latest version of the Micro-Manager application, drop-in the new dynamic library file (to its installation directory) and do final testing with the full-blown application
 
-===Terminology conventions===
+==Terminology conventions==
 
-* Module – denotes run-time software component located in a single file, usually an executable or dynamic library
-* Device Adapter – A class (as in C++) that converts device manufacturer’s command set (or API) to Micro-manager device interface API
-* Driver – one or more software components provided by the device manufacturer to enable other software such as Micro-manager to control the device (some devices do not require drivers)
-* Library – dynamic library (e.g. dll, dylib, so, etc.) conforming Micro-manager module API and naming convention that contains one or more Device Adapters
+* '''Module''' – denotes run-time software component located in a single file, usually an executable or dynamic library
+* '''Device Adapter''' – a class (as in C++) that converts device manufacturer’s command set (or API) to Micro-manager device interface API
+* '''Driver''' – one or more software components provided by the device manufacturer to enable other software such as Micro-manager to control the device (some devices do not require drivers)
+* '''Library''' – dynamic library (e.g. dll, dylib, so, etc.) conforming Micro-manager module API and naming convention that contains one or more Device Adapters
 
 == Typical directory layout for µManager development ==
 1. Install the latest [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Nightly_Builds nightly build of µManager]
