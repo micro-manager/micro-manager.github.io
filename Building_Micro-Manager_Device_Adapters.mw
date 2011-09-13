@@ -4,7 +4,7 @@
 
 ==Introduction==
 
-One of the most powerful features of Micro-Manager is that anyone with average command of C++ programming language can write device adapters (or as some prefer to say “drivers”) for the new hardware, or even improve on existing ones. We chose “device adapter” for micro-manager device modules so that we can use the term “driver” for manufacturer’s native device software components. Micro-manager device adapter perform normalization of various software interface styles and command sets specific for each manufacturer to an uniform micro-manager interface protocol. This document will introduce tools and workflow protocol for creating device adapters from scratch in the form of the hands-on step by step tutorial.
+One of the most powerful features of Micro-Manager is that anyone with average command of C++ programming language can write device adapters (or as some prefer to say “drivers”) for the new hardware, or even improve on existing ones. We chose “device adapter” for micro-manager device modules so that we can use the term “driver” for manufacturer’s native device software components. Micro-manager device adapter performs normalization of various software command sets specific of each manufacturer to an uniform micro-manager interface protocol. This document will introduce tools and workflow protocol for creating device adapters from scratch in the form of the hands-on step by step tutorial.
 
 Let's assume that we are writing a device adapter, for a device called “MyDevice.” The workflow for development of the new adapter should look like this:
 * Check out the latest source code from the Micro-Manger SubVersion repository
