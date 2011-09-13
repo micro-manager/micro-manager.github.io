@@ -81,25 +81,25 @@ Finally open the MMCamera project and examine its structure and project settings
 == Project Settings (Windows) ==
 Micro-manager Device Adapter is a C++ class residing in a Library (dynamically linked). One Library usually contains more than one DeviceAdapter. Micro-manager application does not link against any of the Device Adapter libraries at build time. Libraries are discovered by scanning the application default directory for dynamic libraries following the specific naming convention:
 
-mmgr_dal_<device name>.dll
+<code>mmgr_dal_<device name>.dll</code>
 
-In other words it will try to load at run-time only libraries with prefix “mmgr_dal”. In our case our new adapter (once we are finished with it) should build as mmgr_dal_mydevice.dll.
+In other words it will try to load at run-time only libraries with prefix “mmgr_dal”. In our case our new adapter (once we are finished with it) should build as <code>mmgr_dal_mydevice.dll</code>.
 
 In terms of code generation settings, we are linking against C++ run-time multithreaded DLLs (not static ones). The project should be configured to support asynchronous exceptions (/EHa). Typically we don’t use precompiled headers.
 
 Preprocessor macros should include MODULE_EXPORTS definition. This setting is the same for all Micro-manager Libraries.
 
-“../../MMDevice” path should be a part of “Additional include directories”
+<code>../../MMDevice</code> path should be a part of ''Additional include directories'' field.
 
-And finally in “post-build” step we want the target to be copied in a standard run-time location:
+And finally in ''Post-build'' step we want the target to be copied in a standard run-time location:
 
-/projects/micromanager1.4/bin_win32 (for 32-bit Windows)
+<code>/projects/micromanager1.4/bin_win32</code> (for 32-bit Windows)
 
 or 
 
-/projects/micromanager1.4/x64 (for 64-bit Windows)
+<code>/projects/micromanager1.4/x64</code> (for 64-bit Windows)
 
-Settings described above are required for all Micro-manager adapters. Everything else is determined by the specific requirements of our new device, e.g.  we may have to list other “additional” include and library paths and link against other static or dynamic libraries.
+Settings described above are required for all Micro-manager adapters. Everything else is determined by the specific requirements of our new device, e.g.  we may have to list other ''additional'' include and library paths and link against other static or dynamic libraries.
 
 == Plugin interface ==
 
