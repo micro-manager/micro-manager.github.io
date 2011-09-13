@@ -4,9 +4,23 @@
 
 ==Introduction==
 
-Let's assume you're writing a device adapter, for a device called “MyDevice.” To create a device adapter you don't need access to the entire Micro-Manager source code. All files required to build new device adapters for Micro-Manager on the Windows platform are included in the MMDeviceKit-win installer. For devices with special drivers and hardware boards, e.g. cameras, you will need to also install manufacturer's SDK and all required low-level drivers and libraries.
+One of the most powerful features of Micro-Manager is that anyone with average command of C++ programming language can write device adapters (or as some prefer to say “drivers”) for the new hardware, or even improve on existing ones. We chose “device adapter” for micro-manager device modules so that we can use the term “driver” for manufacturer’s native device software components. Micro-manager device adapter perform normalization of various software interface styles and command sets specific for each manufacturer to an uniform micro-manager interface protocol. This document will introduce tools and workflow protocol for creating device adapters from scratch in the form of the hands-on step by step tutorial.
 
-Once you build a device adapter DLL you can just copy it in the Micro-Manager root application directory and load it either from the script (program) or from the configuration file (see Configuration Guide).  This document is highly M.S.-centric; development on Unix is more straightforward and you can see example configure files in the repository.
+Let's assume that we are writing a device adapter, for a device called “MyDevice.” The workflow for development of the new adapter should look like this:
+* Check out the latest source code from the Micro-Manger SubVersion repository
+* If required, install device manufacturer’s drivers, SDK and any other software/hardware required for the particular device we are working with.
+* Build test programs from the provided source code
+* Create new directories and project files for our new device adapter. In this step we can use some of the provided skeleton or demo adapters as an example or a starting point.
+* Write code for controlling the new device and build run-time module. The final result is a dynamically linked library file that conforms to Micro-Manager API and contains one or more newly developed device adapters.
+* Run test programs to validate and debug (if necessary) our new adapter. If our new device adapter passes these tests, it is more or less guaranteed to properly load and interact with the Micro-Manager application.
+* Download and install the latest version of the Micro-Manager application, drop-in the new dynamic library file (to its installation directory) and do final testing with the full-blown application
+
+===Terminology conventions===
+
+* Module – denotes run-time software component located in a single file, usually an executable or dynamic library
+* Device Adapter – A class (as in C++) that converts device manufacturer’s command set (or API) to Micro-manager device interface API
+* Driver – one or more software components provided by the device manufacturer to enable other software such as Micro-manager to control the device (some devices do not require drivers)
+* Library – dynamic library (e.g. dll, dylib, so, etc.) conforming Micro-manager module API and naming convention that contains one or more Device Adapters
 
 == Typical directory layout for µManager development ==
 1. Install the latest [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Nightly_Builds nightly build of µManager]
