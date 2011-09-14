@@ -1,6 +1,5 @@
-
-An Andor camera and an automated Nikon microscope under Windows 7 x64
-Christian Hentrich, 9/2011
+'''An Andor camera and an automated Nikon microscope under Windows 7 x64''' <br />
+Christian Hentrich, 9/2011<br />
 hentrich@molbio.mgh.harvard.edu
 
 The obvious advantage for using 64 bit in Micro-Manager is the larger amount of memory one can assign to ImageJ/Micro-Manager, as the 2GB per process limit for 32 bit Windows can be very restricting.
