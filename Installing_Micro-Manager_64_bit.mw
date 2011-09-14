@@ -37,40 +37,45 @@ This allows Micro-Manager to write into its own directory, otherwise it will com
 
 10. Install the Andor drivers by starting "Setup.exe" in the Andor directory. Choose the 64 bit version.<br />
 
-
 11. Install the Nikon drivers by starting "Setup.exe" in the Nikon directory.<br />
 
 In an ideal world we would be done by now, however the 64 bit drivers for both devices are not signed, as you will notice when you try to connect the USB cables of both devices now (they fail to install). Fortunately Microsoft has left open a back door for cases like this. But it's rather complicated.<br />
 
-12. Type "user account" into the start menu (that appears when you press the little windows logo) search box. Select "Change User Account Control Settings" from the results to open up the UAC control panel.<br />
+12. Go to the Start menu, click on "All programs", click on "Accessories" and the right click on "Command prompt". Choose "Run as Administrator". The type into the command window:<br />
+bcdedit /set loadoptions DDISABLE_INTEGRITY_CHECKS <br />
+Confirm with Enter.<br />
 
-13. Select the lowest setting on the slider and press OK, and acknowledge all the warnings.<br />
+13. Type "user account" into the start menu (that appears when you press the little windows logo) search box. Select "Change User Account Control Settings" from the results to open up the UAC control panel.<br />
 
-14. Download the latest version of the Driver Signature Enforcement Overrider from http://www.ngohq.com/home.php?page=Files&go=cat&dwn_cat_id=34 . In this case the file used was dseo13b.exe. Some virus scanners will give you a warning for this file as it allows deeper system access than a user typically should have. It is safe to ignore this warning. If you are paranoid, upload the file to an online virus scanner like http://www.virustotal.com and see for yourself that it is a false alarm.<br />
+14. Select the lowest setting on the slider and press OK, and acknowledge all the warnings.<br />
 
-15. Start this tool (in my case dseo13b.exe).<br />
+15. Download the latest version of the Driver Signature Enforcement Overrider from http://www.ngohq.com/home.php?page=Files&go=cat&dwn_cat_id=34 . In this case the file used was dseo13b.exe. Some virus scanners will give you a warning for this file as it allows deeper system access than a user typically should have. It is safe to ignore this warning. If you are paranoid, upload the file to an online virus scanner like http://www.virustotal.com and see for yourself that it is a false alarm.<br />
 
-16. Once you are past the warnings and in the main menu, select the top option "Enable Test Mode", press next and confirm.<br />
+16. Start this tool (in my case dseo13b.exe).<br />
 
-17. Reboot<br />
+17. Once you are past the warnings and in the main menu, select the top option "Enable Test Mode", press next and confirm.<br />
+
+18. Reboot<br />
 
 You are now in "Test Mode", which software developers use to test their latest drivers. Until Andor and Nikon come up with better drivers, you'll need to run Windows in this mode.<br />
 
-18. Again start the Driver Signature Enforcement Overrider tool (in my case dseo13b.exe).<br />
+19. Again start the Driver Signature Enforcement Overrider tool (in my case dseo13b.exe).<br />
 
-19. Select "Sign a System File"<br />
+20. Select "Sign a System File"<br />
 
-20. Type in C:\Windows\System32\drivers\libusb0.sys (this is the Andor Driver) and confirm with ok.<br />
+21. Type in C:\Windows\System32\drivers\libusb0.sys (this is the Andor Driver) and confirm with ok.<br />
 
-21. Again start the tool and choose "Sign a System File"<br />
+22. Again start the tool and choose "Sign a System File"<br />
 
-22. Type in C:\Windows\System32\drivers\micusb.sys (this is the Nikon Driver) and confirm with ok.<br />
+23. Type in C:\Windows\System32\drivers\micusb.sys <br /> 
+(this is the Nikon Driver) and confirm with ok.<br />
 
 NOTE: These are the two filenames of the drivers for the current versions. If these files are not found, the file names might have changed. To find out the new names, connect the USB cables to the computer. The drivers will fail to load. Then type "event" in the windows 7 start menu and select "Event viewer" from the programs. There should be entries under the category "Audit Failure" in the central pane. Click on the Plus sign and double click on the entry that pops out, Now you should have a listing of the events where a driver failed to load due to lack of signature and the file names should be displayed centrally for each event. Just replace "\Device\HarddiskVolumeX" with "C:"<br />
 
-23. Reboot<br />
+24. Reboot<br />
 
-24. '''Congratulations''', you are done; all drivers should work now and can be integrated into Micro-Manager. If you are annoyed by the "Test mode" watermark on the desktop, you can start the the Driver Signature Enforcement Overrider tool again, select "Remove Watermarks" and follow the instructions that come up (you need to download another tool). Finally you should re-enable the UAC to the second highest setting (see steps 12-13).<br />
+25. '''Congratulations''', you are done; all drivers should work now and can be integrated into Micro-Manager. If you are annoyed by the "Test mode" watermark on the desktop, you can start the the Driver Signature Enforcement Overrider tool again, select "Remove Watermarks" and follow the instructions that come up (you need to download another tool). Finally you should re-enable the UAC to the second highest setting (see steps 13-14).<br />
 
 
-Acknowledgements: Techspot forum: http://www.techspot.com/vb/topic127187.html<br />
+Acknowledgements: <br />
+Techspot forum: http://www.techspot.com/vb/topic127187.html<br />
