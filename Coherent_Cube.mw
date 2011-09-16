@@ -45,7 +45,7 @@ Inside microManager, the following command 'properties' are available with this 
 
 </ul>
 
-    '''NOTE: Lasers will automatically be shut off when Micro-Manager closes but power remains on.'''
+'''NOTE: Lasers will automatically be shut off when Micro-Manager closes but power remains on.'''
 
 
 {{Devices_Sidebar}}
