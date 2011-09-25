@@ -175,6 +175,28 @@ Often in case of implementing a Library with multiple devices that are practical
 
 The simplest case is if we just have multiple identical devices all independently attached to the host computer. For example we have one or more filter changers each attached to a separate COM port. We create a single class “MyFilterChanger” derived from the StateDeviceBase class and provide a property called “Port” which should be set at the actual port device is attached to. At run-time Micro-manager application can create any number of instances of the MyFilterChanger class and everything work fine as long each one is assigned a different COM port.
 
+=== Multiple devices sharing the same controller – "singleton" approach ===
+
+More complicated example would be a controller box with two filter changers, say A and B. The controller is attached to a single COM port and each command in the command set has a variable that can be either “A” or “B” depending on which filter changer we want to move. The most straightforward way would be to implement “MyController” class with “Port” property and have that adapter communicate with the hardware box. MyController is obviously not a filter changer but rather a generic device used to communicate with a host computer.
+
+Now we can add two filter changer devices with distinct device names “MyFilterA” and “MyFilterB”. The library will now contain three Device Adapters: MyController, MyFilterA and MyFilterB. Since the last two are virtually identical except for using a different variable (“A” or “B”) when talking to the controller, internally we can use the same class to implement both of them. Deciding whether instance of that class will act as device A or device B can be easily accomplished by passing an appropriate parameter in the constructor.
+
+To make this library robust we have to implement defensive instance management. Since MyFilterA and MyFilterB do not connect directly to a COM port but rather just talk to the MyController, the question is how are they going to get hold of the MyControllerInstance. Many existing Micro-manager adapters are implemented assuming that there will be only one instance of the MyController class at run-time, and therefore create a global instance (hidden inside the Library) that is accessible to MyFilterA and B devices in the ‘behind-the-scenes’ way.
+
+While this approach seem to require least effort, we have to make sure that the single global instance is properly managed. If global MyController instance is destroyed before associated FilterA and B instances, we must make sure that remaining instances won’t attempt to use invalid global reference.
+
+Also, our Library has to make sure that we do not allow creation of multiple instances of any our classes. Obviously multiple instances would create conflicts with respect to global references and physical relationships with hardware.
+
+=== Multiple devices sharing the same controller – advanced approach ===
+
+The previous “singleton” approach obviously does not work for the case where we have two controllers attached to the computer via separate COM ports. Each controller in turn has two filter changers A and B attached to it.
+
+In this scenario we have to allow multiple instances of all devices in our library, including the MyController. For MyController device we can use the same pattern as for the Multiple Independent Devices covered in the previous section. Class is instantiated multiple times with identical run-time objects. Each MyController object is assigned a different COM port at run-time, using Properties feature.
+
+The problem is how to connect filter changer instances to the appropriate controller instances. We can also use Properties to assign each MyFilterA or MyFilterB isntances to matching MyControler instances. For example we can have “Controller” property in MyFilter classes and its value points to the label of the controller to which it is attached. All Property values are assigned at run-time during configuration process.
+
+The implementation pattern described above is only our recommended way of dealing with this scenario – other solutions are also conceivable.
+
 === Application Layer Services (Core Callbacks) ===
 
 Device Adapter classes are typically derived from appropriate base classes which provide default behavior and various utility methods. But besides base-class inherited methods, Device Adapters also use functionality provided by the parent application. We refer to these application layer services as “callbacks”. The API for callback methods is defined in MMDevice.h in the abstract class MM::Core. At-run time each Device Adapter can obtain a pointer to the instance of the MM::Core interface and use any of the methods provided by it.
