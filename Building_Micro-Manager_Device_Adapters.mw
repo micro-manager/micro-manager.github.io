@@ -240,7 +240,7 @@ Each test application can be used as is a pass/fail basic test to verify the new
 ==== LibraryTest ====
 
 Lists all adapters contained in the library:
-librarytest <libraryname>
+<code>librarytest <libraryname></code>
 
 Library name is specified without the module prefix and without the extension. For example: mmgr_dal_DemoCamera.dll should be specified as just DemoCamera.
 
