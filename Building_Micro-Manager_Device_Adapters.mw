@@ -163,7 +163,17 @@ Device labels are run-time names assigned by the application to each instance, r
 
 Property mechanism allows the developer to customize settings and behavior of each new Device Adapter. While MM::Device API represents minimal functionality for each device type, is specified in advance and must be implemented by each Device Adapter class, properties are not prescribed and we can have as many or as few as we deem appropriate for controlling our hardware.
 
-Each Device Adapter class can have zero or more properties. Each property is a simple name-value pair. At run-time the application assigns values to properties in one of the three ways: in the configuration process, interactively through the GUI, or by running 
+Each Device Adapter class can have zero or more properties. Each property is a simple name-value pair. At run-time the application assigns values to properties in one of the three ways: in the configuration process, interactively through the GUI, or by running
+
+== Instance management ==
+
+Micro-manager API in principle allows for multiple instances of the same Device Adapter, i.e. there may be multiple objects carrying the same Device Name. However, depending on the particular device and implementation, multiple instances of the same Device Adapter may or may not make sense. It is the responsibility of the library to either manage instances and any global data that may be shared between them.
+
+Often in case of implementing a Library with multiple devices that are practically identical, we are faced with a design decision regarding instance management. How are we going to distinguish instances within our library since each class instance actually corresponds to a very specific physical hardware device?
+
+=== Multiple independent devices ===
+
+The simplest case is if we just have multiple identical devices all independently attached to the host computer. For example we have one or more filter changers each attached to a separate COM port. We create a single class “MyFilterChanger” derived from the StateDeviceBase class and provide a property called “Port” which should be set at the actual port device is attached to. At run-time Micro-manager application can create any number of instances of the MyFilterChanger class and everything work fine as long each one is assigned a different COM port.
 
 === Application Layer Services (Core Callbacks) ===
 
