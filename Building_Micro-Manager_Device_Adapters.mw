@@ -187,7 +187,7 @@ While this approach seem to require least effort, we have to make sure that the 
 
 Also, our Library has to make sure that we do not allow creation of multiple instances of any our classes. Obviously multiple instances would create conflicts with respect to global references and physical relationships with hardware.
 
-=== Multiple devices sharing the same controller – advanced approach ===
+=== Multiple devices sharing the same controller – "free-form" approach ===
 
 The previous “singleton” approach obviously does not work for the case where we have two controllers attached to the computer via separate COM ports. Each controller in turn has two filter changers A and B attached to it.
 
