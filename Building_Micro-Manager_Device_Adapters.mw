@@ -126,6 +126,10 @@ Since '''DeviceBase.h''' and other utility files are not used by the main applic
 
 '''ImgBuffer.h''' and '''ImgBuffer.cpp''' provide a simple implementation of the generic image buffer, which you may or may not find useful for building camera adapters. We can disregard this class if we have a better one or if our device does not need to deal with images.
 
+
+=== Anatomy of a Device Adapter ===
+MMCamera projects included in the Device Kit is a very simple example that can be used to follow discussion in this section on how to design a well-behaved Device Adapter.
+
 == Device Adapter Examples ==
 
 Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
