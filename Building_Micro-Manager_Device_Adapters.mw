@@ -139,7 +139,7 @@ First rule is that we should not communicate with the hardware either in the con
 
 Second rule is to use constructor to create and set any device properties that are independent of hardware, such as description strings, adapter name, etc. The concept of properties is explained in detail in the Properties section below.
 
-The third rule is to use constructor to create properties that are required for proper initialization of the hardware. The best example for this is the serial port property. In order to communicate with the hardware device adapter needs to know the serial port (COM port) name that device is attached to. When implementing Initialize() method which establishes the initial communication with the hardware, we already must know the serial port name. Therefore, this property and its value assignment must happen before Initialize() method is called. Such properties that are required to have their values determined before initialization are called “pre-initialization” properties.
+Third rule is to use constructor to create properties that are required for proper initialization of the hardware. The best example for this is the serial port property. In order to communicate with the hardware device adapter needs to know the serial port (COM port) name that device is attached to. When implementing Initialize() method which establishes the initial communication with the hardware, we already must know the serial port name. Therefore, this property and its value assignment must happen before Initialize() method is called. Such properties that are required to have their values determined before initialization are called “pre-initialization” properties.
 
 === Initialize() and Shutdown() methods ===
 
