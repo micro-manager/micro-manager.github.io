@@ -151,7 +151,7 @@ Initialize() and Shudown() methods are critical to ensure that Device Adapter be
 •	Once the device is successfully shut down, repeated calls to Shutdown() should not have any effect
 •	After Shudown() is called device should never attempt to communicate with the hardware, except if the Intitalize() is called again
 
-=== Device Types Names and Labels ===
+=== Device Types, Names and Labels ===
 
 Device Type is defined by one of the abstract classes contained in MMDevice.h. Each abstract device class implements an API corresponding to various physical hardware devices, e.g. filter wheels, stages, shutters, cameras, etc. We should pick a device type class that is a best match for our hardware device. Sometimes we have to use multiple device types for the same hardware unit, e.g. motorized microscope. In that case we would provide multiple Device Adapter classes that are at run-time connected to the same controller (or Hub) device.
 
