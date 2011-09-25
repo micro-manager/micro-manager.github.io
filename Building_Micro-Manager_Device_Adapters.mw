@@ -233,7 +233,26 @@ SimpleAutofocus is a image-metric based autofocus 'adapter' implemented in C++. 
 
 === C++ environment ===
 
-Using the included testing tools '''LibraryTest''', '''DeviceTest''' and '''CoreTest''' (see section [[#Building test programs and examples | Building test programs and examples]]) you can test and debug your device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation.
+Using the included testing tools '''LibraryTest''', '''DeviceTest''' and '''CoreTest''' (see section [[#Building test programs and examples | Building test programs and examples]]) we can test and debug our device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation.
+
+Each test application can be used as is a pass/fail basic test to verify the new adapter or library. Also we can modify and extend these simple, command line programs to accommodate specifics of our devices.
+
+==== LibraryTest ====
+
+Lists all adapters contained in the library:
+librarytest <libraryname>
+
+Library name is specified without the module prefix and without the extension. For example: mmgr_dal_DemoCamera.dll should be specified as just DemoCamera.
+
+==== DeviceTest ====
+
+List properties and details for the specified device adapter:
+devicetest <devicename> <libraryname>
+
+==== CoreTest ====
+
+Loads specified configuration file and lists all properties and details for all included devices:
+coretest <configfile>
 
 === Scripting environment ===
 
