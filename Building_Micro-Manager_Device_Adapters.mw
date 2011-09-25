@@ -247,6 +247,7 @@ Library name is specified without the module prefix and without the extension. F
 ==== DeviceTest ====
 
 List properties and details for the specified device adapter:
+
 <code>devicetest <devicename> <libraryname></code>
 
 ==== CoreTest ====
