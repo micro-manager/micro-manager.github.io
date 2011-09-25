@@ -151,6 +151,28 @@ Initialize() and Shudown() methods are critical to ensure that Device Adapter be
 •	Once the device is successfully shut down, repeated calls to Shutdown() should not have any effect
 •	After Shudown() is called device should never attempt to communicate with the hardware, except if the Intitalize() is called again
 
+=== Device Types Names and Labels ===
+
+Device Type is defined by one of the abstract classes contained in MMDevice.h. Each abstract device class implements an API corresponding to various physical hardware devices, e.g. filter wheels, stages, shutters, cameras, etc. We should pick a device type class that is a best match for our hardware device. Sometimes we have to use multiple device types for the same hardware unit, e.g. motorized microscope. In that case we would provide multiple Device Adapter classes that are at run-time connected to the same controller (or Hub) device.
+
+Device Name within Micro-manager should be understood as something akin to a class name in C++. It does not have to be the same as the actual class name, but for all practical purposes it serves as such. It has to be unique within one Library. Micro-manager run-time environment creates instances of Device Adapters by providing the Device Name to the Library which acts as a class factory. The Library looks up the name, instantiates the corresponding C++ class and returns the pointer to the Device Adapter instance.
+
+Device labels are run-time names assigned by the application to each instance, regardless of the actual Device Adapter class. Labels are used as handles for accessing any Device Adapter instance. Typically users assign labels to instances of their devices and the only rule is that they must be unique for each device. So if we equate Device Name as an equivalent of a “class”, a Label would be equivalent to “pointer”.
+
+=== Properties ===
+
+Property mechanism allows the developer to customize settings and behavior of each new Device Adapter. While MM::Device API represents minimal functionality for each device type, is specified in advance and must be implemented by each Device Adapter class, properties are not prescribed and we can have as many or as few as we deem appropriate for controlling our hardware.
+
+Each Device Adapter class can have zero or more properties. Each property is a simple name-value pair. At run-time the application assigns values to properties in one of the three ways: in the configuration process, interactively through the GUI, or by running 
+
+=== Application Layer Services (Core Callbacks) ===
+
+Device Adapter classes are typically derived from appropriate base classes which provide default behavior and various utility methods. But besides base-class inherited methods, Device Adapters also use functionality provided by the parent application. We refer to these application layer services as “callbacks”. The API for callback methods is defined in MMDevice.h in the abstract class MM::Core. At-run time each Device Adapter can obtain a pointer to the instance of the MM::Core interface and use any of the methods provided by it.
+
+=== Threads ===
+
+A minimal, cross-platform set of thread management utilities is provided in MMThreads.h to make Device Adapter implementation easier. Any other thread management library can be used instead. For devices that can in principle run on different operating systems we recommend avoiding native, platform specific thread functions.
+
 == Device Adapter Examples ==
 
 Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
