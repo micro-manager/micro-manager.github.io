@@ -146,11 +146,12 @@ Third rule is to use constructor to create properties that are required for prop
 Initialize() and Shudown() methods are critical to ensure that Device Adapter behaves as expected within Micro-manager environment. Rules for implementing these two methods are as follows:
 
 Device Adapter instance does not communicate with hardware before Intialize() is called for the first time
-•	Intialize() establishes the connection with the hardware and makes device ready to accept commands
-•	Once the device is successfully initialized, repeated calls to Initialize() (if they occur) should have no effect
-•	Shutdown() disconnects Device Adapter from the hardware and practically reverses the effect of Initialize()
-•	Once the device is successfully shut down, repeated calls to Shutdown() should not have any effect
-•	After Shudown() is called device should never attempt to communicate with the hardware, except if the Intitalize() is called again
+
+* Intialize() establishes the connection with the hardware and makes device ready to accept commands
+* Once the device is successfully initialized, repeated calls to Initialize() (if they occur) should have no effect
+* Shutdown() disconnects Device Adapter from the hardware and practically reverses the effect of Initialize()
+* Once the device is successfully shut down, repeated calls to Shutdown() should not have any effect
+* After Shudown() is called device should never attempt to communicate with the hardware, except if the Intitalize() is called again
 
 === Device Types, Names and Labels ===
 
