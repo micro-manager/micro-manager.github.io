@@ -141,7 +141,7 @@ Second rule is to use constructor to create and set any device properties that a
 
 The third rule is to use constructor to create properties that are required for proper initialization of the hardware. The best example for this is the serial port property. In order to communicate with the hardware device adapter needs to know the serial port (COM port) name that device is attached to. When implementing Initialize() method which establishes the initial communication with the hardware, we already must know the serial port name. Therefore, this property and its value assignment must happen before Initialize() method is called. Such properties that are required to have their values determined before initialization are called “pre-initialization” properties.
 
-=== Initialize and Shutdown ===
+=== Initializing and shutting down ===
 
 Initialize() and Shudown() methods are critical to ensure that Device Adapter behaves as expected within Micro-manager environment. Rules for implementing these two methods are as follows:
 •	Device Adapter instance does not communicate with hardware before Intialize() is called for the first time
