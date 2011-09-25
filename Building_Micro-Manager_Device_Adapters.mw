@@ -252,7 +252,8 @@ List properties and details for the specified device adapter:
 ==== CoreTest ====
 
 Loads specified configuration file and lists all properties and details for all included devices:
-coretest <configfile>
+
+<code>coretest <configfile></code>
 
 === Scripting environment ===
 
