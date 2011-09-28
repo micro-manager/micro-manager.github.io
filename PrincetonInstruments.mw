@@ -2,12 +2,10 @@
 '''Summary:'''</td><td>Interfaces with Princeton Instruments cameras that work with the PVCAM driver</td></tr>
 <tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov, Arthur Edelstein (reliability in streaming mode), and Rob Allen (Princeton Instruments)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Driver Needed:'''</td><td>[http://www.princetoninstruments.com/support/software.aspx Princeton Instruments PVCAM]</td></tr>
 </table>
-
-See also: [[PICAM]] for recent Princeton Instruments cameras on 64-bit Windows
 
 == Installation ==
 
@@ -21,6 +19,6 @@ If you encounter the following error message on startup:
 then Micro-Manager was most likely not terminated in a graceful way during the previous session.  Simply quit Micro-Manager, reboot your camera (by switching it off and back on again) and try again.
 
 
-{{Listserv_Search|Princeton}}
+{{Listserv_Search|Princeton Instruments}}
 
 {{Devices_Sidebar}}
