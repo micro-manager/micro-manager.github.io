@@ -1,27 +1,18 @@
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with Roper, Photometrics, and PI cameras that work with the PVCAM driver</td></tr>
-<tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode).  The adapter is currently maintained by Pat Webster (Photometrics) with help from Karl Hoover</td></tr>
+'''Summary:'''</td><td>Interfaces with Roper, Photometrics (this adapter used to work with Princeton Instruments cameras, however, now please use the Princeton Instruments adapter)</td></tr>
+<tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode).  </td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X (linux possible but not tested), for Windows 7 see issue below</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_pvcam_simple.cfg]]</td></tr>
-<tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php Roper/Photometrics PVCAM] or [http://www.princetoninstruments.com/support/software.aspx Princeton Instruments PVCAM]</td></tr>
+<tr><td>'''Driver Needed:'''</td><td>[http://www.photomet.com/support/downloads/index.php Roper/Photometrics PVCAM] </td></tr>
 </table>
 
 == Installation ==
 
 === Photometrics ===
-This adapter should work with all PVCAM compatible camera on all platforms.  To use it, you will need to have the  ([http://www.photometrics.com/support/downloads/index.php PVCAM software]) installed and working. At the very least, the pvcam test application (included with PVCAM) should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap, Cascade II, and Evolve cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of PVCAM (older versions will lock up your Mac). 
+This adapter should work with all Photometrics PVCAM compatible camera on all platforms.  To use it, you will need to have the  ([http://www.photometrics.com/support/downloads/index.php PVCAM software]) installed and working. At the very least, the pvcam test application (included with PVCAM) should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap, Cascade II, and Evolve cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of PVCAM (older versions will lock up your Mac). 
 
-=== Princeton Instruments ===
-This adapter will also work with Princeton Instrument (PI) cameras that work with PVCAM (note that a PI-specific adapter was branched off starting with version 1.3.45).  Be aware that you will need to install the [http://www.princetoninstruments.com/support/software.aspx PI version for PVCAM]. If you had previously installed the Photometrics version of PVCAM, then you need to manually complete de-installation using the following instructions: [[Image:PhotometricsUninstall.zip]]
-
-If you encounter the following error message on startup:
-''Error code: 39<br>''
-''Line 14: Property,Core,Initialize,1<br>''
-''Error code: 22<br>''
-''Device Undefined. Duplicate property names are not allowed.<br>''
-then Micro-Manager was most likely not terminated in a graceful way during the previous session.  Simply quit Micro-Manager, reboot your camera (by switching it off and back on again) and try again.
 
 == Firewire issues ==
 
