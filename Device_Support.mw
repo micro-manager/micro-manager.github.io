@@ -22,7 +22,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[Jenoptik]] - Jenoptik cameras (ProGres series)
 * [[Leica]] - Leica DFC (through BaumerOptronic FXLib)
-* [[PVCAM]] - Roper/Photometrics cameras
+* [[Princeton Instruments]] - Princeton Instruments cameras
+* [[PVCAM]] - Roper/Photometrics cameras (nor for Princeton Instruments)
 * [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
 * [[Piper]] - Stanford Photonics cameras
 * [[QCam]] - QImaging cameras
