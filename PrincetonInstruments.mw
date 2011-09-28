@@ -19,6 +19,6 @@ If you encounter the following error message on startup:
 then Micro-Manager was most likely not terminated in a graceful way during the previous session.  Simply quit Micro-Manager, reboot your camera (by switching it off and back on again) and try again.
 
 
-{{Listserv_Search|Princeton Instruments}}
+{{Listserv_Search|Princeton_Instruments}}
 
 {{Devices_Sidebar}}
