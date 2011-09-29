@@ -31,10 +31,10 @@ The only parameter that is required for configuration of the stage is the name o
 
 [[Image:Property Browser 2011-03-25 16-03-56.png]]
 
-== Using the stage ==
+=== Using the XY stage ===
 The stage uses absolute XY coordinates and any positions recorded in micro-manager will always correspond to the same physical location. However, because of this feature, each time we power-up this stage needs to be "homed" before sending any commands. If we try to move it before homing, error message will pop up. Homing is not automatic on startup because during this procedure stage moves to its limits and in may cause one of the objectives to hit the stage frame, if the objective turret is left high enough. This is an issue with any XY stage and the user always needs to make sure that objective turret is in the safe position before homing.
 
-=== Home procedure ===
+==== "Home" procedure ====
 The stage needs to be homed once after each power-up. Homing is not necessary if we just exit and re-start the software without powering down. There are three alternative ways to home the stage. Choose one of the following:
 
 '''Calibrate command'''
@@ -84,12 +84,12 @@ gui.message("Done! Home position [um]: " + x + ", " + y);
 
 Each time you start micro-manager the script will be automatically executed and you will be prompted to home the stage and warned to move objectives to the safe position.
 
-=== Adjusting motion parameters ===
+==== Adjusting motion parameters ====
 The stage adapter lets us adjust velocity and acceleration to match our application. If you use default values for velocity and acceleration, no further actions are necessary. However if you change velocity/acceleration to slow down the stage, you may run into problems with micro-manager timeouts.
 
 The default timeout interval for micro-manager is 5 seconds. If any of the move commands takes more than 5 seconds (or whatever you have set instead) to complete, micro-manager will time out you will get an error message to that effect. If you get timeout error messages on lengthy move commands, try changing the micro-manager timeout interval to 10 seconds or more. To change timeout interval open Device Property Browser (menu: Tools | Device Property Browser...) and set the desired value both for the Core-TimeoutMs and XYStage-MoveTimeoutMs properties.
 
-Note that change in the Property Browser is not permanent. If you exit the application and re-start these values will return to their defaults. To make settings permanent use System/Startup configuration preset mechanism in micro-mananger. Consult micro-manager documentation for more information.   
+Note that change in the Property Browser is not permanent. If you exit the application and re-start these values will return to their defaults. To make settings permanent use System/Startup configuration preset mechanism in micro-mananger. Consult micro-manager documentation for more information.
 
 == Testing and automation ==
 For verification and testing of the stage we can load test configuration file [[Media:MMConfig_Thorlabs.cfg]]. This configuration file contains XYStage tied to the com port and a couple of device simulators (demo adapters) acting as demo camera and focus stage. The configuration probably won't work right away because the COM port on your system may be different. To edit the port information use Hardware Configuration Wizard (menu: Tools) as with any other device.
