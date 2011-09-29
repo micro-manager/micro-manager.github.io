@@ -162,4 +162,27 @@ If this script does not generate any errors the stage is working properly. Timin
 
 == Piezo Z Stage ==
 
+Piezo Z stage device adapter that works with BBD 102 contoroller[http://www.thorlabs.us/NewGroupPage9.cfm?ObjectGroup_ID=5066]
+
+=== Setup ===
+Piezo Z Stage adapter requires only a single serial port (RS-232). A port reserved for this stage and initialized with the following parameters:
+
+BaudRate: 115200
+
+Handshaking: Off
+
+Parity: None
+
+StopBits: 1
+
+(all other micro-manager port parameters can be left with defaults)
+
+The only parameter that is required for configuration of the stage is the name of the serial port (e.g. COM1) attached to the Z stage dedicated controller. If the port was correctly set and connected, micro-manager will load the stage adapter at startup. 
+
+=== Using the Piezo Z Stage ===
+The stage uses absolute Z coordinates and any positions recorded in micro-manager will always correspond to the same physical location. Because of this feature, each time we power-up this stage needs to be "zeroed" before sending any commands. 
+
+Zeroing is automatic on startup and takes about 27 seconds to complete. If we try to move the stage before zeroing sequence is complete, an error message will pop up. Zeroing is required only the fist time the stage is used after powering it up. If we just re-start the software without powering down the stage controller, zero sequence will be automatically skipped and the stage can be used immediately after startup.
+
+
 {{Devices_Sidebar}}
