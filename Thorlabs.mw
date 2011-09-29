@@ -1,8 +1,8 @@
-== XY Stage Summary ==
+== XY Stage and piezo Z Stage Summary ==
 
 <table>
 <tr><td>
-'''Summary:'''</td><td>XY Stage - brushless DC motor controller BBD 102</td></tr>
+'''Summary:'''</td><td>XY Stage (brushless DC motor), Z Stage (Piezo), both using controller BBD 102</td></tr>
 <tr><td>
 '''Author:'''</td><td>[http://nenad.amodaj.com Nenad Amodaj] and [http://www.thorlabs.com Thorlabs Inc]</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
