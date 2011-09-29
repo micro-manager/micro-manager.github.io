@@ -91,7 +91,7 @@ The default timeout interval for micro-manager is 5 seconds. If any of the move 
 
 Note that change in the Property Browser is not permanent. If you exit the application and re-start these values will return to their defaults. To make settings permanent use System/Startup configuration preset mechanism in micro-mananger. Consult micro-manager documentation for more information.
 
-== Testing and automation ==
+=== Testing and automation ===
 For verification and testing of the stage we can load test configuration file [[Media:MMConfig_Thorlabs.cfg]]. This configuration file contains XYStage tied to the com port and a couple of device simulators (demo adapters) acting as demo camera and focus stage. The configuration probably won't work right away because the COM port on your system may be different. To edit the port information use Hardware Configuration Wizard (menu: Tools) as with any other device.
 
 After the configuration loaded without errors we can use the following script to test the stage:
