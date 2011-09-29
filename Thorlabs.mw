@@ -7,7 +7,7 @@
 '''Author:'''</td><td>[http://nenad.amodaj.com Nenad Amodaj] and [http://www.thorlabs.com Thorlabs Inc]</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage, PiezoZStage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_Thorlabs.cfg]]</td></tr>
 </table>
 
