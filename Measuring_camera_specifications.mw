@@ -10,9 +10,9 @@ Figuring out which camera is best suited for your applications can be a daunting
 
 Parameters that strongly influence how well a camera performs under low light conditions are the readout noise and photon conversion factor.  The readout noise is a constant amount of noise, mainly added by the CCD chip, readout amplifier and surrounding electronics.  The faster the camera readout, the higher the readout noise.  It is expressed in photo-electrons.  The photon conversion factor relates the digital numbers associated with each pixel with the actual number of photo-electrons generated in each CCD (or CMOS) well.  The photon-conversion factor changes when you change certain camera settings, such as the analogue and EM gain. 
 
-In these exercises, we will determine the camera’s readout noise and offset, approximate the electron conversion factor at different gain settings and look at fixed pattern noise.  Please compare the numbers you find with the numbers on the data-sheet of the camera!
+Below are methods to determine the camera’s readout noise and offset, approximate the electron conversion factor at different gain settings and fixed pattern noise.  Please compare the numbers you find with the numbers on the data-sheet of the camera!
 
-For these exercises, you will make extensive use of the Micro-Manager scripting facilities.  Please have a look at the [[Script Panel GUI]] (you will find it under the “Tools” menu) 
+For these measurements, you will make extensive use of the Micro-Manager scripting facilities.  Please have a look at the [[Script Panel GUI]] (you will find it under the “Tools” menu)
 
 = Constant/Even Illumination =
 
