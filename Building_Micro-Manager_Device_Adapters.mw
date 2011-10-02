@@ -162,9 +162,9 @@ Device labels are run-time names assigned by the application to each instance, r
 
 === Properties ===
 
-Property mechanism allows the developer to customize settings and behavior of each new Device Adapter. While MM::Device API represents minimal functionality for each device type, is specified in advance and must be implemented by each Device Adapter class, properties are not prescribed and we can have as many or as few as we deem appropriate for controlling our hardware.
+The Property mechanism allows the developer to customize settings and behavior of each new Device Adapter. While MM::Device API represents minimal functionality for each device type, is specified in advance and must be implemented by each Device Adapter class, properties are not prescribed and we can have as many or as few as we deem appropriate for controlling our hardware.
 
-Each Device Adapter class can have zero or more properties. Each property is a simple name-value pair. At run-time the application assigns values to properties in one of the three ways: in the configuration process, interactively through the GUI, or by running
+Each Device Adapter class can have zero or more properties. Each property is a simple name-value pair. At run time the application assigns values to properties in one of the three ways: in the configuration process, interactively through the GUI, or by running
 
 == Instance management ==
 
