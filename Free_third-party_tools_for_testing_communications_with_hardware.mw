@@ -2,7 +2,7 @@ __NOTOC__
 == Terminal (serial) communications on Windows and Mac ==
 
 === Windows ===
-* Hyperterminal.  Hyperterminal is included with Windows XP, but not available on Windows 7.  We have  [https://valelab.ucsf.edu/~nico/MMwiki/index.php/Windows Instructions] for configuration of Hyperterminal
+* Hyperterminal.  Hyperterminal is included with Windows XP, but not available on Windows 7.  We have  [https://valelab.ucsf.edu/~MM/MMwiki/index.php/Windows Instructions] for configuration of Hyperterminal
 * [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html Putty] is mainly intended for ssh communication, but can also be used to communicate through serial ports. (Works on Windows 7.)
 * [http://realterm.sourceforge.net/ Realterm] looks very good and useful, but I have not yet tested it myself.
 
