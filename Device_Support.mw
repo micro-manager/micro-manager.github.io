@@ -22,6 +22,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[Jenoptik]] - Jenoptik cameras (ProGres series)
 * [[Leica]] - Leica DFC (through BaumerOptronic FXLib)
+* [http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber] - supporting frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
 * [[Princeton Instruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[PCO]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
@@ -34,7 +35,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[The Imaging Source]] - The Imaging Source (tested on USB/CCD models and video frame Grabber )
 * [[Twain]] - Cameras fully implementing Twain Imaging Standard
 * a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]
-* [http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber] - supporting frame grabbers and cameras providing a DirectShow or WDM class driver is available from [http://esimaging.co.uk ESImaging]. Currently for Micro-Manager 1.3. on Windows 32 bit.<br>
+<br>
 
 === Stages, filter wheels, shutters ===   
 * [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
