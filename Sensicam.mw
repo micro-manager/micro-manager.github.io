@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Controls [http://www.pco.de/sensitive-cameras/ PCO/Cooke Sensicam camera]</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj (with bugfixes by Liisa Hervonen)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
 <tr><td>'''Devices:'''</td><td>PCO/Cooke Sensicam</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
