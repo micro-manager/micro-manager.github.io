@@ -2,7 +2,7 @@
 '''Summary:'''</td><td>Interfaces with Princeton Instruments cameras that work with the PVCAM driver</td></tr>
 <tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov, Arthur Edelstein (reliability in streaming mode), and Rob Allen (Princeton Instruments)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
 <tr><td>'''Devices:'''</td><td>PVCAM compatible cameras</td></tr>
 <tr><td>'''Driver Needed:'''</td><td>[http://www.princetoninstruments.com/support/software.aspx Princeton Instruments PVCAM]</td></tr>
 </table>
