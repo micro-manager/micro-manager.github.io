@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Controls [http://www.scioncorp.com/ Scion Firewire Cameras]</td></tr>
 <tr><td>'''Author:'''</td><td>C. Douglas Remsberg (scion corp.)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows, Mac</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows (32-bit only), Mac</td></tr>
 <tr><td>'''Devices:'''</td><td>Scion Firewire Cameras</td></tr>
 </table>
 
