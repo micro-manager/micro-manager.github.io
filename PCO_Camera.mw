@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Controls [http://www.pco.de/ PCO/Cooke cameras]</td></tr>
 <tr><td>'''Author:'''</td><td>Franz Reitner, pco AG</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
 <tr><td>'''Devices:'''</td><td>PCO/Cooke Sensicam, PixelFly,
            pco.camera (1600, 2000, 4000, 1200h(s), dimax)</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.3.24</td>
