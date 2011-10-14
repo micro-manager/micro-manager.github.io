@@ -1,5 +1,4 @@
 {{#widget:FlickrShow
-|query=flowers
 |width=580
 |height=350
 }}
