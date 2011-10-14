@@ -1,6 +1,5 @@
 {{#widget:Iframe
 |url=http://valelab.ucsf.edu/~MM/nightlyBuilds/flashgallery/flashgallery.html
-|width=850
-|height=750
-|border=8
+|width=820|height=660
+|border=20
 }}
