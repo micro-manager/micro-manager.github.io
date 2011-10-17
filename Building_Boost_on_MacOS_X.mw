@@ -10,6 +10,9 @@ Briefly:
 <code>sudo ./bjam --install --link=static --runtime-link=static --threading=multi --layout=tagged --with-system --with-thread --with-iostreams --with-date_time</code> 
 
 
+(Now when building micromanager, configure should have the flag:
+<code>--with-boost-libdir=/path/to/your/boost/libs</code>)
+
 
 If you wish to build Universal Binaries, you will need to build boost separately for each architecture.  You can do so with the following build script:
 
