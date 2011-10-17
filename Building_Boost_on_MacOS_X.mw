@@ -10,7 +10,7 @@ Briefly:
 <code>sudo ./bjam --install --link=static --runtime-link=static --threading=multi --layout=tagged --with-system --with-thread --with-iostreams --with-date_time</code> 
 
 
-(Now when building micromanager, configure should have the flag:
+(Now when building micromanager, configure should have the flag:<br>
 <code>--with-boost-libdir=/path/to/your/boost/libs</code>)
 
 
