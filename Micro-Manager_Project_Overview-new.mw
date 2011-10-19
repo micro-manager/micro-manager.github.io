@@ -1,0 +1,21 @@
+== Introduction ==
+
+[[Image:MM_screenshot.png|Startup screen]]
+
+
+The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF (funded by the NIH) aims to provide a universal, flexible and low-cost software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager project leverages other Open Source tools and components to the maximum extent possible.
+
+µManager software currently serves a double purpose:
+
+* Complete image acquisition and microscope control package, for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built in functionality and user interface for most common tasks performed in the Life Science laboratory
+* Software framework for implementing advanced and novel imaging procedures, extending functionality, customization and rapid development of specialized imaging applications
+
+<br /> The main features of the µManager application are:<br />
+
+* Cross-platform code-base (Windows, Mac and Linux)
+* Full integration with [http://rsb.info.nih.gov/ij/ ImageJ], a widely used, freely available image processing package, developed at NIH
+* Intuitive user interface and simple installation procedure
+* Maximum extensibility through support for scripting and dynamic programming languages
+* Maximum speed and efficiency in all control paths to allow for very high speed acquisition rates
+* Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automated microscope, regardless of type, manufacturer and native drivers.
+* Programmatic interfaces to 3rd-party analysis environments (such as Matlab) to enable "intelligent data collection" -- i.e. analysis driven acquisition.
