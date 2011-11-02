@@ -3,7 +3,9 @@ __NOTOC__
 
                    [[Image:MM_screenshot.png|Startup screen]]
 
-μManager is a software package for control of automated microscopes. It lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]). Since μManager runs as a plugin to [http://rsb.info.nih.gov/ij/ ImageJ], image analysis routines are available within the application. μManager software is available for multiple platforms (Windows, Mac, and Linux) and is free. [[Download Micro-Manager Latest Release|Download]] the most recent version (1.4) from our website.
+'''μManager is a software package for control of automated microscopes on multiple platforms (Windows, Mac and Linux). Together with popular image processing application [http://rsb.info.nih.gov/ij/ ImageJ], Micro-Manager provides a comprehensive imaging solution – with feature set comparable to commercially available ones except that its FREE.'''
+
+'''''[[Download Micro-Manager Latest Release|Download]] the most recent version (1.4) from our website. Also check out our [[ Screencasts| ScreenCast]] for a quick tour on getting started.'''''
 
 === ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY? ===
 
