@@ -1,29 +1,29 @@
 __NOTOC__
 
-[[Image:MM_screenshot.png| Micro-Manager Screen Shot]]
+                    [[Image:MM_screenshot.png| Micro-Manager Screen Shot]]
 
 == Introduction ==
 
 The Open Source Microscopy software "µManager" at the Vale laboratory in UCSF (funded by the NIH) aims to provide a universal, flexible and practically free software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager leverages other Open Source tools and components to the maximum extent possible.
 
-µManager software currently serves a double purpose:
+'''µManager currently serves a double purpose:'''
 
 * Complete image acquisition and microscope control package, for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built-in functionality and user interface for most common tasks performed in a Life Science laboratory.
 * Software framework for implementing advanced and novel imaging procedures, extending functionality, customization and rapid development of specialized imaging applications.
 
-<br /> The main features of the µManager application are:<br />
+<br /> '''The main features of the µManager application are:'''<br />
 
-* Cross-platform code-base (Windows, Mac and Linux)
-* Full integration with [http://rsb.info.nih.gov/ij/ ImageJ], a widely used, freely available image processing package, developed at NIH
-* Intuitive user interface and simple installation procedure
-* Maximum extensibility through support for scripting and dynamic programming languages
+* Cross-platform code-base (Windows, Mac and Linux).
+* Full integration with [http://rsb.info.nih.gov/ij/ ImageJ], a widely used, freely available image processing package, developed at NIH.
+* Intuitive user interface and simple installation procedure.
+* Maximally extensible through support for scripting and dynamic programming languages.
 * Maximum speed and efficiency in all control paths to allow for very high speed acquisition rates
 * Hardware abstraction interface to allow writing hardware independent user interfaces and scripts for all devices used in the automated microscope, regardless of type, manufacturer and native drivers.
 * Programmatic interfaces to 3rd-party analysis environments (such as Matlab) to enable "intelligent data collection" -- i.e. analysis driven acquisition.
 
 == Software Architecture ==
 
-The µManager software is structured in three basic layers: Graphical User Interface (GUI), Core Services (MMCore) and Device Adapters. Each layer is largely independent of other layers and the architecture relies on two public interfaces, one on the GUI side and one on the device side, to bind all components into a single application. In addition to application layers the software also incorporates a scripting environment (editor and command interpreter) to extend functionality.
+The µManager software architecture is structured in three basic layers: Graphical User Interface (GUI), Core Services (MMCore) and Device Adapters. Each layer is largely independent of other layers and the architecture relies on two public interfaces, one on the GUI side and one on the device side, to bind all components into a single application. In addition to application layers the software also incorporates a scripting environment (editor and command interpreter) to extend functionality.
 
 The foundation of the software is the "MMCore" module, written in C++, which controls and synchronizes various devices (cameras, shutters, stages, etc.) using plug-in "Adapter" modules. The MMCore interface exposes a generalized, abstract command set of the automated microscope that can be accessed from many different programming environments (C++, Java, Matlab, Python, Perl and others).
 
@@ -31,7 +31,7 @@ The foundation of the software is the "MMCore" module, written in C++, which con
 
 Figure 1, Block diagram of the software architecture
 
-Besides core module MMCore, the µManager software consists of the following components:
+'''Besides core module MMCore, the µManager software consists of the following components:'''
 * GUI front-end for interactive work with the integrated microscope, implemented in Java as an ImageJ plugin.
 * Set of independent device adapter modules for particular hardware devices
 * Scripting environment for writing automated procedures and executing command-line control commands
@@ -40,7 +40,7 @@ Besides core module MMCore, the µManager software consists of the following com
 
 The central component is the Core Services Module (MMCore) - a hardware abstraction layer providing services common to all automated microscopes. It also acts as insulation between the intricacies of particular device drivers and the user interface. MMCore provides two programming interfaces: a "Top" API (from GUI to MMCore) and a "Bottom" API (from device drivers to MMCore). The "Top API" gives the designer of the GUI the ability to relatively easily implement user interfaces and entire applications that are essentially hardware independent. The "Bottom API" is a C/C++ plugin interface allowing the programmer to support particular devices with a minimal amount of coding effort and minimal understanding of how the entire system works.
 
-MMCore provides the following device-independent services:
+'''MMCore provides the following device-independent services:'''
 
 * Flexible hardware configuration facilities to support defining, naming and adding new devices
 * Run-time device discovery and on-the-fly loading and unloading of devices
