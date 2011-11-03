@@ -4,12 +4,12 @@ __NOTOC__
 
 == Introduction ==
 
-The Open Source Microscopy Project "µManager" at the Vale laboratory at UCSF (funded by the NIH) aims to provide a universal, flexible and low-cost software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager project leverages other Open Source tools and components to the maximum extent possible.
+The Open Source Microscopy software "µManager" at the Vale laboratory in UCSF (funded by the NIH) aims to provide a universal, flexible and practically free software platform for automated microscopy. In order to provide lasting value and real benefit to a wide community of researchers, we have taken the approach of building a self-contained software product, with quality and ease-of-use standards equal to commercial software. At the same time µManager leverages other Open Source tools and components to the maximum extent possible.
 
 µManager software currently serves a double purpose:
 
-* Complete image acquisition and microscope control package, for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built in functionality and user interface for most common tasks performed in the Life Science laboratory
-* Software framework for implementing advanced and novel imaging procedures, extending functionality, customization and rapid development of specialized imaging applications
+* Complete image acquisition and microscope control package, for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built-in functionality and user interface for most common tasks performed in a Life Science laboratory.
+* Software framework for implementing advanced and novel imaging procedures, extending functionality, customization and rapid development of specialized imaging applications.
 
 <br /> The main features of the µManager application are:<br />
 
