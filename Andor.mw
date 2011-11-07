@@ -183,13 +183,9 @@ If the iXon PCI/PCIe board is plugged in before you first install the
     C:\Program Files\Andor SOLIS\Drivers\
 
 === Clara: error code 22 ===
-The camera cannot be seen because either the Andor SDK version is too old.
+The camera cannot be seen because the Andor SDK version is too old, i.e. the Andor SDK Micromananger bundled needs to be updated to the current version Andor is using to use the cameras newer firmware. 
 
-Andor introduced Clara support in their SDK v2.84
-
-When trying to create a fresh configuration you may get error code 22, Andor error code 20006 (unable to load cof/rbf file).  This is because your particular Clara needs file version >=2.87 because it has newer firmware.
-
-In either case you need to copy the library file from your Andor installation to your Micro-Manager directory.  If you have the Andor SDK, copy and overwrite:
+To update the Andor SDK used by Micromanager, copy the library file from your Andor installation to your Micro-Manager directory.  If you have the Andor SDK installed, copy and overwrite:
 
       C:\Program Files\Andor SOLIS\Drivers\atmcd32d.dll
 
