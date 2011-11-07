@@ -104,6 +104,8 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
       Bus 001 Device 006: ID 136e:000e  
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
+
+
 == Device Configuration ==
 # Open Micromanager.
 # You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
@@ -123,7 +125,7 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 * No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
 * Full gain will not be achievable without cooling. 
 * EMgain is temperature compensated for RealGain cameras. 
-* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without
+* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
 === Electron Multiplying Gain (EM Gain) ===
 '''EMgain range'''
@@ -216,4 +218,4 @@ http://www.andor.com/contact_us/default.aspx
 
 {{Devices_Sidebar}}
 
-[[User:P.nanda|P.nanda]] 11:27, 30 July 2011 (PDT)
+[[User:P.nanda|P.nanda]] 04:40, 7 November 2011 (PST)
