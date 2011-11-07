@@ -164,7 +164,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 | Always set PAG to maximum "High sensitivity mode" when using EM gain.  Lower settings of PAG is useful in Life Sciences only in Conventional (non-EM) mode
 |}
 
-=== Conventional CCD or EM-CCD mode ===
+=== iXon Conventional CCD or EM-CCD mode ===
 * With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
 * EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
 * Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
