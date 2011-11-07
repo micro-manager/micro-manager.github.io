@@ -156,7 +156,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 |valign="top"| '''Note:'''
 | For EMCCDs, Andor's nomenclature of PAG is confusing since one may think this "pre-" amplification happens before EM gain amplification.  In reality, EM amplification happens on sensor, and PAG happens after readout of your sensor and before digitization.
 |}
-* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor.
+* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor, e.g. for a particular camera the values could be 1x, 2.4x, 4.9x
 * PAG can affect the saturation limit of your image.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
 
 {| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
