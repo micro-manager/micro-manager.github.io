@@ -54,12 +54,30 @@ The Andor SDK installs test programs that can be used to get live images:
 
       C:\Program Files\Andor SOLIS\Drivers\Examples\C\
 
-'''Identifying computer bus speed bottlenecks:'''
+=== Fixing computer bus speed bottlenecks ===
+==== PCIe ====
+iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason for this is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.
 
-# iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.  For example the Dell XPS desktop 1x PCIe bus does not work with a PCIe 16x graphics card, so you have to connect the Andor PCIe card in the 8x PCIe slot instead
-#:
-# USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus.  On Linux you can easily check if this is the case with '''lsusb -t'''.  On Windows you need to use a utility like UVCview ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe.  The Linux output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
-#:
+For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed when the PCIe 16x graphics card is populated, so you have to instead connect the Andor PCIe card to 8x PCIe slot
+
+==== PCI ====
+iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
+
+==== USB ====
+USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
+
+'''Windows OS'''
+
+You need to use a utility like [ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe UVCview].
+
+UVCview on Windows showing the Clara by itself, i.e. with no other devices sharing the USB bus:
+[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
+
+'''Linux OS'''
+
+You can easily check USB bus position with '''lsusb -t'''.  
+The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+
       $ lsusb -t
       Bus#  5
       `-Dev#   1 Vendor 0x1d6b Product 0x0001
@@ -85,9 +103,6 @@ The Andor SDK installs test programs that can be used to get live images:
       Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
       Bus 001 Device 006: ID 136e:000e  
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-
-<blockquote>Using UVCview:
-[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center||UVCview on Windows showing the Clara by itself on the USB bus]]</blockquote>
 
 == Device Configuration ==
 # Open Micromanager.
