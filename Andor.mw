@@ -125,25 +125,6 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 * EMgain is temperature compensated for RealGain cameras. 
 * Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
-=== Electron Multiplying Gain (EM Gain) ===
-'''EMgain range'''
-* EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
-* The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
-
-'''EMgain slew rate'''
-{| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
-|valign="top"| '''Warning:'''
-| Typically EM gain levels should not be made to change during an experiment.
-The software and camera has no problem in changing the level, but there is a 1-3 second delay for the new gain value to come into effect which affects data.
-
-e.g. if you are imaging confocal fluorescence data and DIC, and you need lower or no EM gain for DIC, one would need a 3 second delay before and after the DIC image to allow for EM gain to slew.
-|}
-* iXon, iXon+, Luca-R and Luca-S
-* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
-* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
-* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
-* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
-
 === Pre-Amplifier Gain (PAG) ===
 * It's best to think of Pre-Amplifier Gain as follows:
 *:4x = High sensitivity mode (use for EM gain)
@@ -162,7 +143,26 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 | Always set PAG to maximum "High sensitivity mode" when using EM gain.  Lower settings of PAG is useful in Life Sciences only in Conventional (non-EM) mode
 |}
 
-=== iXon Conventional CCD or EM-CCD mode ===
+=== Electron Multiplying Gain (EM Gain) ===
+==== EMgain range ====
+* EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
+* The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
+
+==== EMgain slew rate ====
+{| style="background-color:#FF6633;" cellpadding="10" cellspacing="0"
+|valign="top"| '''Warning:'''
+| Typically EM gain levels should not be made to change during an experiment.
+The software and camera has no problem in changing the level, but there is a 1-3 second delay for the new gain value to come into effect which affects data.
+
+e.g. if you are imaging confocal fluorescence data and DIC, and you need lower or no EM gain for DIC, one would need a 3 second delay before and after the DIC image to allow for EM gain to slew.
+|}
+* iXon, iXon+, Luca-R and Luca-S
+* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
+* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
+* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
+* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
+
+==== iXon Conventional CCD or EM-CCD mode ====
 * With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
 * EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
 * Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
