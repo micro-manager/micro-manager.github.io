@@ -70,7 +70,7 @@ USB cameras using high bandwidth such as the Clara must be plugged into the comp
 
 You need to use a utility like [ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe UVCview].
 
-UVCview on Windows showing the Clara by itself, i.e. with no other devices sharing the USB bus:
+Screenshot below of UVCview on Windows showing the Clara by itself, i.e. with no other devices sharing the USB bus:
 [[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
 
 '''Linux OS'''
@@ -103,8 +103,6 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
       Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
       Bus 001 Device 006: ID 136e:000e  
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-
-
 
 == Device Configuration ==
 # Open Micromanager.
