@@ -66,14 +66,14 @@ iXon 885 PCI cameras can have their live stream not start at all, but will work 
 ==== USB ====
 USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
 
-'''Windows OS'''
+'''Windows O/S'''
 
 You need to use a utility like [ftp://ftp.efo.ru/pub/ftdichip/Utilities/UVCView.x86.exe UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
 
 Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
 [[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
 
-'''Linux OS'''
+'''Linux O/S'''
 
 You can easily check USB bus position with '''lsusb -t'''.  
 The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
