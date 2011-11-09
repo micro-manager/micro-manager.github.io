@@ -10,18 +10,18 @@ __NOTOC__
 
 <br />
 
-=== DECIDE IF YOU SHOULD GIVE IT A TRY ===
+=== [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Why_Micro-Manager%3F ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?] ===
 
-With the help of users world-wide Micro-Manager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions. If you like and use ImageJ, if you are new or advanced in microscopy, or if you have limited resources, Micro-Manager will be your natural first choice. As with everything else, there are some pros and cons. [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Who_should_use_Micro-Manager Should you give it a try?]
+You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and proprietary drivers...
 
-=== ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY? ===
+=== [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Who_should_use_Micro-Manager  DECIDE IF YOU SHOULD GIVE IT A TRY] ===
 
-You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and proprietary drivers - [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Why_Micro-Manager%3F read more...]
+With the help of users world-wide Micro-Manager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions. 
 
-=== HARDWARE ISSUES ===
+=== [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Device_Support HARDWARE ISSUES] ===
 
-If you are putting together or building a serious, automated microscopy system, open source solutions like this one may be a much better choice than anything else. You can use our default, ImageJ-compatible user interface, or build you own. Micro-Manager will even let you control your microscope from Matlab programs. In any case, whether you can use it right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Device_Support Check the current hardware list]
+Whether you can use Micro-Manager right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Device_Support Check the current hardware list]
 
-=== EXTENDING μMANAGER ===
+=== [[Micro-Manager Programming Guide | EXTENDING μMANAGER]] ===
 
 Even if you are not interested in writing software code for your microscope, the open software architecture of μManager will benefit you. For instance, the Open Device Interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be execute within the GUI. Lastly, the μManager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager Microscope device control.
