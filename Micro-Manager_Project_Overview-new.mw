@@ -2,9 +2,6 @@ __NOTOC__
 
 µManager is software for control of microscopes.  It works with almost all microscopes, cameras and peripherals on the market, and provides an easy to use interface that lets you run your microscopy-based experiments. µManager runs as a plugin to [http://rsbweb.nih.gov/ij ImageJ], is Open Source, and is free. µManager is developed in Ron Vale's laboratory at UCSF and is funded by the NIH (TODO: add institute and grant number) 
 
-                    [[Image:MM_screenshot.png| Micro-Manager Screen Shot]]
-
-
 '''µManager serves a double purpose:'''
 
 * It is a complete image acquisition and microscope control package, avaiable for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built-in functionality and user interface for most common tasks performed in a Life Science laboratory.
