@@ -51,7 +51,7 @@
 *#* If you want proper analog control supported for fastest operation, i.e. using Andor's choice of DAC card, please [[#Laser Combiner questions|request Andor]]
 *# External laser control via PCUV-101
 *#* Use the [[AOTF|NEOS]] driver instead.
-* You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  [[#Laser Combiner questions|Request Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
+* You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  To gain access to it, register/sign-into your MyAndor web account on the Andor homepage, click on Software > Downloads, uncheck the "Display only files I have access to", select "DRIVER: Andor ALC SDK 2.0" and request access.
 * '''ALC_SDK 2.0 is the current version as of July 29, 2011'''
 
 {| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
