@@ -13,6 +13,44 @@ __NOTOC__
 
 ==== New Features in 1.4 ====
 
+* Support for multiple cameras (see Utilities->Multi-camera adapter)
+* Improved color camera live and snap
+* Many bug fixes to multi-dimensional acquisition
+* Added option to provide custom time intervals in MDA
+* Hardware triggering integrated with Multi-Dimensional Acquisition
+* New/Improved device support:
+** New PI GCS adapter (Stephen Rau)
+** Improved Thorlabs DCxxxx (Olf Wohlmann)
+** PCO adapter now supports new CMOS cameras (Franz Reitner)
+** Support for nPoint stages (Mission Bay Imaging)
+** XCite LED (Mission Bay Imaging)
+** Thorlabs piezo stage (Nenad Amodaj)
+** Updated ABS Camera (now also 64-bit, Heiko Baumann)
+** ASI CRISP support, including plugin (Nico Stuurman)
+** Scientifica stages (Mathew Player)
+** Andor3 (supports new Neos camera)
+** CARV II spinning disk confocal
+** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
+** Coherent Sapphire Laser (Karl Hoover and Paul Wiggins)
+** GigECamera (David Marshburn, UNC-CH)
+** Mac support for SPOT (Erwin Frise)
+** Meiji Techno EMZ focus stage (Koen De Vleeschauwer)
+** Tethered Cameras (Canon and Nikon) (Koen De Vleeschauwer)
+** X-Cite 120PC Exacte (Mission Bay Imaging)
+** Image Processor Chain - provides sequencing of C++-based image processors in the Micro-Manager core
+* Pluggable display API (ImageCacheListener)
+* Split View Plugin restored to 1.4
+* Clojure Editor Plugin
+* Fixes to ZeissCAN29
+* Changes in Hardware Configuration Wizard
+* Thorlabs BD102 stage (Nenad Amodaj)
+* Well plate plugin (Big.jar, Karl Bellve)
+* New libusb drivers for K8055
+* Script interface to add runnables in acquisition engine
+* SimpleCam module with GPhoto support
+* Enhanced Contrast Panels (ignore outliers)
+* Saving and display on separate threads
+* Leica AFC (Hardware Autofocus) (mostly working)
 * Close integration with ImageJ hyperstacks
 ** four "dimension sliders": channels, slices, frames, positions
 ** display of RAM- or disk-based image sets during or after acquisition, including disk-based image sets larger than available RAM
@@ -28,14 +66,6 @@ __NOTOC__
 * Simplified hardware configuration, including auto-detection and auto-setup of a number of serial devices.
 * Data Browser plugin for quickly browsing through Micro-Manager data sets
 * Windows native 64-bit support (only some devices are supported)
-* Several new supported devices:
-** Coherent Sapphire Laser (Karl Hoover and Paul Wiggins)
-** GigECamera (David Marshburn, UNC-CH)
-** Mac support for SPOT (Erwin Frise)
-** Meiji Techno EMZ focus stage (Koen De Vleeschauwer)
-** Tethered Cameras (Canon and Nikon) (Koen De Vleeschauwer)
-** X-Cite 120PC Exacte (Mission Bay Imaging)
-** Image Processor Chain - provides sequencing of C++-based image processors in the Micro-Manager core
 * Automated bug reports, available in Help > Report Problem
 * Optional automated upload of new configurations to micro-manager.org
 
