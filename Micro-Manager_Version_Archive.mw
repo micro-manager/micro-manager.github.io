@@ -13,6 +13,7 @@ __NOTOC__
 * Many bug fixes to multi-dimensional acquisition
 * Added option to provide custom time intervals in MDA
 * New/Improved device support:
+**OpenCVGrabber (Ed Simmons)
 ** New PI GCS adapter (Stephen Rau)
 ** Improved Thorlabs DCxxxx (Olf Wohlmann)
 ** PCO adapter now supports new CMOS cameras (Franz Reitner)
