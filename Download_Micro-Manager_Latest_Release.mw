@@ -11,32 +11,29 @@ __NOTOC__
 [[Micro-Manager_Version_Archive|(Click here for descriptions and downloads of previous releases.)]]
 
 === New Features in 1.4 ===
-
+* Windows native 64-bit support (not all devices are supported)
 * Support for multiple cameras (see Utilities->Multi-camera adapter)
 * Improved color camera live and snap
-* Added option to provide custom time intervals in MDA
-* Split View Plugin restored to 1.4
-* Clojure Editor Plugin
 * Hardware triggering integrated with Multi-Dimensional Acquisition
-* Changes in Hardware Configuration Wizard
-* Well plate plugin (Big.jar, Karl Bellve)
-* Script interface to add runnables in acquisition engine
 * Enhanced Contrast Panels (ignore outliers)
 * Saving and display on separate threads
 * A new multi-dimensional acquisition engine (under the hood), including
 ** a smart sequencer that uses burst acquisition whenever possible
 ** an image pipeline allowing plugins to process images on the fly
 ** a flexible metadata system for programmers
+** option to provide custom time intervals in MDA
 * Close integration with ImageJ hyperstacks
 ** four "dimension sliders": channels, slices, frames, positions
 ** display of RAM- or disk-based image sets during or after acquisition, including disk-based image sets larger than available RAM
-* An image display controls panel (in the main window) that lets you
+* An image display control panel (in the main window) that lets you
 ** easily adjust contrast for each channel
 ** add a scale bar
 ** view metadata and add comments for image sets and individual image planes
 * Simplified hardware configuration, including auto-detection and auto-setup of a number of serial devices.
 * Data Browser plugin for quickly browsing through Micro-Manager data sets
-* Windows native 64-bit support (only some devices are supported)
+* Well plate plugin (Big.jar, Karl Bellve)
+* Clojure Editor Plugin
+* Script interface to add runnables in acquisition engine
 * Pluggable display API (ImageCacheListener)
 * Automated bug reports, available in Help > Report Problem
 * New/Improved device support:
