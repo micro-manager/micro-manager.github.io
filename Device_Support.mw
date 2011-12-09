@@ -79,6 +79,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 
 === Other devices ===
 * [[AA AOTF]] - AOTF controller from AA Optoelectronics
+* [[AgilentLaserCombiner]] - Agilent MLC
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
@@ -93,6 +94,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Stradus]] - Vortran Stradus laser driver
 * [[Yokogawa]] - Yokogawa CSU22
 * [[Yokogawa CSUX]] - Yokogawa CSUX, all models
-
+* The [http://www.goochandhousego.com/products/life-science-instrumentation/spectral-imaging-synthesis/hsi-300-hyper/multispectral-imaging HSi-300 Hyperspectral Imager] can be controlled with Micro-Manager (not yet included in the distribution, contact Gouch & Housego for details)
 
 {{Devices_Sidebar}}
