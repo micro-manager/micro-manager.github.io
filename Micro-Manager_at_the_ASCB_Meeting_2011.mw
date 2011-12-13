@@ -7,7 +7,7 @@ For fast image acquisition, a triggering mechanism was set-up, resulting in cont
 {|
 | 
 
-| <font size=-1>Drosophila S2 cell expressing GFP-histone and cherry-tubulin (from Eric Griffis). Images were taken during the ASCB meeting at 15 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 50 msec, total time to acquire a single time point (10 images) was less than 700 msec. </font>
+| <font size=-1>Drosophila S2 cell expressing gfp-histone h2B and cherry-tubulin (from Eric Griffis). Images were taken during the ASCB meeting at 15 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 50 msec, total time to acquire a single time point (10 images) was less than 700 msec. </font>
 |}
 
 We were very encouraged by the interest and overwhelmingly positive response both from the user community and from the industry. On the ASCB exhibit floor we noted Micro-Manager controlling equipments in the booths of Spectral, [http://www.raptorphotonics.com/search.php Raptor Photonics], [http://www.axiomoptics.com/index_Events.html Axiom Optics], [http://www.sutter.com/index.html Sutter Instrument], [http://www.thorlabs.us/Navigation.cfm?section=7 ThorLabs], and [http://biobus.org/ BioBus]. Thanks everyone for stopping by at our booth and for all the support our project is getting from the industry!
