@@ -11,7 +11,7 @@ To demonstrate the software we used a spinning disk confocal system ([http://www
 For fast image acquisition, a triggering mechanism was set-up, resulting in continuous acquisition at a rate limited only by the frame rate. The triggering was made possible by synchronization of the camera, AOTF and z-piezo stage. A TTL pulse, which signals when the camera is exposing, was used to drive a sequence of different output patterns on the [http://www.esimaging.co.uk/products ESImaing] micro-controller as well as the piezo controller. Rapid control of the z-piezo stage was very beneficial for maintaining focus while running the Slide Explorer plugin. 
 
 {|
-| 
+| [[Image:Motosis2_3_max.jpg]]
 
 | <font size=-1>Drosophila S2 cell expressing gfp-histone h2B and cherry-tubulin (from Eric Griffis). Images were taken during the ASCB meeting at 15 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 50 msec, total time to acquire a single time point (10 images) was less than 700 msec. </font>
 |}
