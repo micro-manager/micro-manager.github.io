@@ -6,7 +6,7 @@
 </tr>
 </table> 
 
-To demonstrate the software we used a spinning disk confocal system ([http://www.yokogawa.com/scanner/products/csuX1e.htm Yokogawa]/[http://www.solameretech.com/ Solamere]) equipped with a [http://www.photometrics.com/products/emccdcams/evolve/512.php Photometrics Evolve 512] camera, [http://www.asiimaging.com/ ASI] XYZ and piezo Z-stage on the new [http://www.asiimaging.com/products/video-microscopes-test-stands-complete-system-solutions/rapid-automated-modular-microscope-ramm-system/ ASI RAMM Microscope], multi-color laser launch and AOTF ([http://www.solameretech.com/ Solamere]), [http://www.esimaging.co.uk/products ESImaging] micro-controller, and running on a PC computer. All of the equipment was made available to us by the respective companies (Thanks!). 
+To demonstrate the software we used a spinning disk confocal system ([http://www.yokogawa.com/scanner/products/csuX1e.htm Yokogawa]/[http://www.solameretech.com/ Solamere]) equipped with a [http://www.photometrics.com/products/emccdcams/evolve/512.php Photometrics Evolve 512] camera, [http://www.asiimaging.com/ ASI] XYZ and piezo Z-stage on the new [http://www.asiimaging.com/products/video-microscopes-test-stands-complete-system-solutions/rapid-automated-modular-microscope-ramm-system/ ASI RAMM Microscope], multi-color laser launch and AOTF ([http://www.solameretech.com/ Solamere]), [http://www.esimaging.co.uk/products ESImaging] micro-controller, and running on a PC computer. All of the equipment was made available to us by the respective companies (Thanks!). '''Please check out slide show below.'''
 
 For fast image acquisition, a triggering mechanism was set-up, resulting in continuous acquisition at a rate limited only by the frame rate. The triggering was made possible by synchronization of the camera, AOTF and z-piezo stage. A TTL pulse, which signals when the camera is exposing, was used to drive a sequence of different output patterns on the [http://www.esimaging.co.uk/products ESImaing] micro-controller as well as the piezo controller. Rapid control of the z-piezo stage was very beneficial for maintaining focus while running the Slide Explorer plugin. 
 
@@ -21,6 +21,6 @@ We were very encouraged by the interest and very positive response both from the
 
 {{#widget:Iframe
 |url=http://valelab.ucsf.edu/~MM/flashgallery/flashgallery.html
-|width=620|height=460
+|width=633|height=430
 |border=8
 }}
