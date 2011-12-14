@@ -1,10 +1,14 @@
+<table cellspacing=15><tr><td>
+[[Image:ASCB_2011_logo.JPG]]</td>
+<td>
+'''For the fifth year we presented the Micro-Manager software in the Exhibit Hall at the annual meeting of the American Society for Cell Biology (ASCB) in Denver. Our goal was to introduce the Micro-Manager software to new users, gain feedback from current Micro-Manager users, and to demonstrate new capabilities.'''
+</td>
+</tr>
+</table> 
 
+To demonstrate the software we used a spinning disk confocal system ([http://www.yokogawa.com/scanner/products/csuX1e.htm Yokogawa]/[http://www.solameretech.com/ Solamere]) equipped with a [http://www.photometrics.com/products/emccdcams/evolve/512.php Photometrics Evolve 512] camera, [http://www.asiimaging.com/ ASI] XYZ and piezo Z-stage on the new [http://www.asiimaging.com/products/video-microscopes-test-stands-complete-system-solutions/rapid-automated-modular-microscope-ramm-system/ ASI RAMM Microscope], multi-color laser launch and AOTF ([http://www.solameretech.com/ Solamere]), [http://www.esimaging.co.uk/products ESImaging] micro-controller, and running on a PC computer. All of the equipment was made available to us by the respective companies (Thanks!). 
 
-For the fifth year we presented the Micro-Manager software in the Exhibit Hall at the annual meeting of the American Society for Cell Biology (ASCB) in Denver. Our goal was to introduce the Micro-Manager software to new users, gain feedback from current Micro-Manager users, and to demonstrate new capabilities. 
-
-To demonstrate the software we used a spinning disk confocal system ([http://www.yokogawa.com/scanner/products/csuX1e.htm Yokogawa]/[http://www.solameretech.com/ Solamere]) equipped with a [http://www.photometrics.com/products/emccdcams/evolve/512.php Photometrics Evolve 512] camera, [http://www.asiimaging.com/ ASI] XYZ and piezo Z-stage on the new ASI RAMM Microscope, multi-color laser launch and AOTF ([http://www.solameretech.com/ Solamere]), [http://www.esimaging.co.uk/products ESImaging] micro-controller, and running on a PC computer. All of the equipment was made available to us by the respective companies (Thanks!). 
-
-For fast image acquisition, a triggering mechanism was set-up, resulting in continuous acquisition at a rate limited only by the frame rate. The triggering was made possible by synchronization of the camera, AOTF and z-piezo stage. A TTL pulse, which signals when the camera is exposing, was used to drive a sequence of different output patterns on the ESImaing micro-controller as well as the piezo controller. Rapid control of the z-piezo stage was very beneficial for maintaining focus while running the Slide Explorer plugin. 
+For fast image acquisition, a triggering mechanism was set-up, resulting in continuous acquisition at a rate limited only by the frame rate. The triggering was made possible by synchronization of the camera, AOTF and z-piezo stage. A TTL pulse, which signals when the camera is exposing, was used to drive a sequence of different output patterns on the [http://www.esimaging.co.uk/products ESImaing] micro-controller as well as the piezo controller. Rapid control of the z-piezo stage was very beneficial for maintaining focus while running the Slide Explorer plugin. 
 
 {|
 | 
