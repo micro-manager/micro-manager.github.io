@@ -2,8 +2,8 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Hamamatsu cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation)</td></tr>
-<tr><td>'''License:'''</td><td>LGPL (UCSF version, however, we have been askednot to distribute the source) and closed source (Hamamatsu version)</td></tr> 
+<tr><td>'''Author:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation). Hamamatsu version of the adapter by Pat Gregorio (Hamamatsu)</td></tr>
+<tr><td>'''License:'''</td><td>LGPL (UCSF version, however, we have been asked not to distribute the source) and closed source (Hamamatsu version)</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows and Mac OS X</td></tr>
 <tr><td>'''Devices:'''</td><td>Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)</td></tr>
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
