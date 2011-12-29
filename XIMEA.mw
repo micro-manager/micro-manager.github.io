@@ -43,6 +43,8 @@ You can now use the camera in Micro-Manager.
 
 To edit camera properties open the "Tools" menu and select "Device/Property Browser". The following camera settings are available:
 
+=== Default parameters ===
+
 * CameraID : Camera serial number.
 * CameraName : Camera model name.
 * Binning : Set camera binning. Can be also set from Micro-Manager GUI.
@@ -59,7 +61,6 @@ To edit camera properties open the "Tools" menu and select "Device/Property Brow
 * Gain : Set camera gain.
 * High Dynamic Range : Enable HDR image capture. Currently in Alpha implementation stage.
 * High Dynamic Range ratio : High Dynamic Range ratio (long exposure time / short exposure time, total exposure time = short + long). Currently in Alpha implementation stage.
-* Sharpness : Set image sharpness Strenght.
 * TimeoutMs : Set acquisition timeout in milliseconds.
 * Trigger mode : Set trigger signal type.
 
@@ -68,14 +69,18 @@ To edit camera properties open the "Tools" menu and select "Device/Property Brow
 * TransposeMirrorY : Not supported.
 * TransposeXY : Not supported.
 
-Cooling parameters, available only for cooled cameras:
+=== Cooling parameters ===
+
+These parameters are available only for cooled cameras:
 
 * Cooling : Enable/disable camera cooling.
 * Cooling - Chip temperature : Camera chip temperature.
 * Cooling - Housing temperature : Camera housing temperature.
 * Cooling - Target temperature : Chip target temperature for cooling, used when cooling is active.
 
-Colour correction parameters, available only for color cameras:
+=== Colour correction parameters ===
+
+These parameters are available only for color cameras:
 
 * Coolor corr. matrix : Set colour correction matrix for RGB32 image format.
 * Apply ICC profile : Apply ICC profile for colour correction.
@@ -84,6 +89,7 @@ Colour correction parameters, available only for color cameras:
 * White ballance red : Set white balance red coefficient.
 * Gamma C : Set chromaticity gamma.
 * Gamma Y : Set luminosity gamma.
+* Sharpness : Set image sharpness Strenght.
 
 == Resources ==
 
