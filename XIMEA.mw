@@ -39,6 +39,8 @@ Create hardware configuration for the camera:
 * In the "Define position labels for state devices" window click on Next. 
 * In the "Save configuration" window click "Finish".
 
+You can now use the camera in Micro-Manager.
+
 == Properties ==
 
 == Resources ==
