@@ -1,7 +1,7 @@
 == XIMEA Camera adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.ximea.com/en/products/ XIMEA camera]</td></tr>
+'''Summary:'''</td><td>Controls [http://www.ximea.com/en/products/ XIMEA cameras]</td></tr>
 <tr><td>'''Author:'''</td><td>Marian Zajko</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
