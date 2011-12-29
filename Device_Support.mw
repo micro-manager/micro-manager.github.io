@@ -35,8 +35,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[The Imaging Source]] - The Imaging Source (tested on USB/CCD models and video frame Grabber )
 * [[Twain]] - Cameras fully implementing Twain Imaging Standard
 * [[V4L]] - Video4Linux compatible cameras
-* a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]
 * [[XIMEA]] - XIMEA cameras
+* a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]
 <br>
 
 === Stages, filter wheels, shutters ===   
