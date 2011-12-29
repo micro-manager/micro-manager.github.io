@@ -63,10 +63,10 @@ To edit camera properties open the "Tools" menu and select "Device/Property Brow
 * TimeoutMs : Set acquisition timeout in milliseconds.
 * Trigger mode : Set trigger signal type.
 
-* TransposeCorrection : -
-* TransposeMirrorX : -
-* TransposeMirrorY : -
-* TransposeXY : -
+* TransposeCorrection : Not supported.
+* TransposeMirrorX : Not supported.
+* TransposeMirrorY : Not supported.
+* TransposeXY : Not supported.
 
 Cooling parameters, available only for cooled cameras:
 
