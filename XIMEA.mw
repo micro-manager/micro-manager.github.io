@@ -14,6 +14,31 @@ More info comming soon...
 
 == Installation ==
 
+Installation instructions:
+
+* Download and install Win Micro-Manager 1.4.6
+* Download and install the [http://www.ximea.com/support/wiki/vision-libraries/Micro-Manager XIMEA API Software package], during install '''API''' and '''Drivers''' section must be selected
+* Download the XIMEA camera adapter from the Micro-Manager [http://www.ximea.com/support/wiki/vision-libraries/Micro-Manager support page]
+* Copy '''m3api.dll''' and the '''XIEMA camera adapter''' (mmgr_dal_ximea.dll) to the Micro-Manager folder
+* Connect the camera to the computer
+
+Create hardware configuration for the camera:
+
+* After starting Micro-Manager, open the Tools menu, continue to Hardware Configuration Wizard...
+* In the "Select the configuration file" window select existing file where the camera should be added or create new file by clicking Next
+* In the "Add or remove devices" window click on Add
+* In the "Add device" window select ximea, and pick the device. When requrested "Please type in the new device name" click OK, the camera serial number will be used as device name, click Done.
+* After returning to the "Add or remove devices" window click on Next.
+* In the "Edit pre-initialisation settings" window click on Next
+* In the "Setup Serial ports" window click on Next.
+* In the "The following peripherals have been discovered" window click on Next.
+* In the "Edit peripheral device pre-initialization settings" window click on Next.
+* In the "Select default devices" window choose the added camera as default camera, click on Next. 
+* In the "Set delays for devices without synchronisation capabilities" window  click on Next. 
+* In the "Select devices to synchronize with image acquisition" window click on Next. 
+* In the "Define position labels for state devices" window click on Next. 
+* In the "Save configuration" window click "Finish".
+
 == Properties ==
 
 == Resources ==
