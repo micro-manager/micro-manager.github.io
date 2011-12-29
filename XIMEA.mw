@@ -43,42 +43,47 @@ You can now use the camera in Micro-Manager.
 
 To edit camera properties open the "Tools" menu and select "Device/Property Browser". The following camera settings are available:
 
+* CameraID : Camera serial number.
+* CameraName : Camera model name.
+* Binning : Set camera binning. Can be also set from Micro-Manager GUI.
+* Bad pixel correction : Enable correction of bad pixels.
+* Auto exposure/gain : Enable/disable automatic exposure/gain.
 * AEAG Exposure limit : Maximum limit of exposure in AEAG procedure.
 * AEAG Exposure priority : Exposure priority during AEAG (default 0.5 - exposure 50%, gain 50%).
 * AEAG Gain limit : Maximum limit of gain in AEAG procedure.
 * AEAG Intensity level : Average intensity of output signal AEAG should achieve(in %).
-* Apply ICC profile : Apply ICC profile for colour correction.
-* Auto exposure/gain : Enable/disable automatic exposure/gain.
-* Bad pixel correction : Enable correction of bad pixels.
-* Binning : Set camera binning. Can be also set from Micro-Manager GUI.
-* CameraID : Camera serial number.
-* CameraName : Camera model name
-* Coolor corr. matrix : Set colour correction matrix for RGB32 image format.
-* Cooling : Enable/disable camera cooling.
-* Cooling - Chip temperature : Camera chip temperature.
-* Cooling - Housing temperature : Camera housing temperature.
-* Cooling - Target temperature : Chip target temperature for cooling, used when cooling is active.
 * Data format : Output image format
 * Description : Camera interface type.
 * GPI port 1-4 : Set camera inputs.
 * GPO port 1-4 : Set camera outputs.
 * Gain : Set camera gain.
-* Gamma C : Set chromaticity gamma.
-* Gamma Y : Set luminosity gamma.
 * High Dynamic Range : Enable HDR image capture. Currently in Alpha implementation stage.
 * High Dynamic Range ratio : High Dynamic Range ratio (long exposure time / short exposure time, total exposure time = short + long). Currently in Alpha implementation stage.
 * Sharpness : Set image sharpness Strenght.
 * TimeoutMs : Set acquisition timeout in milliseconds.
+* Trigger mode : Set trigger signal type.
 
 * TransposeCorrection : -
 * TransposeMirrorX : -
 * TransposeMirrorY : -
 * TransposeXY : -
 
-* Trigger mode : Set trigger signal type.
+Cooling parameters, available only for cooled cameras:
+
+* Cooling : Enable/disable camera cooling.
+* Cooling - Chip temperature : Camera chip temperature.
+* Cooling - Housing temperature : Camera housing temperature.
+* Cooling - Target temperature : Chip target temperature for cooling, used when cooling is active.
+
+Colour correction parameters, available only for color cameras:
+
+* Coolor corr. matrix : Set colour correction matrix for RGB32 image format.
+* Apply ICC profile : Apply ICC profile for colour correction.
 * White ballance blue : Set white balance blue coefficient.
 * White ballance green : Set white balance green coefficient.
 * White ballance red : Set white balance red coefficient.
+* Gamma C : Set chromaticity gamma.
+* Gamma Y : Set luminosity gamma.
 
 == Resources ==
 
