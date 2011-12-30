@@ -3,7 +3,7 @@
 <table><tr><td>
 '''Summary:'''</td><td>Controls [http://www.ximea.com/en/products/scientific-cameras/ XIMEA cameras]</td></tr>
 <tr><td>'''Author:'''</td><td>Marian Zajko</td></tr>
-<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows (32-bit Micro-Manager only)</td></tr>
 <tr><td>'''Devices:'''</td><td>XIMEA firewire, USB2 and USB3 cameras</td></tr>
 <tr><td>'''Recommended MM version:'''</td><td>1.4.6</td></tr>
