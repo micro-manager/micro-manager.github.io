@@ -236,7 +236,7 @@ Once we obtain a handle to our specific Hub object we can call custom methods to
 
    int ret = myHub->SendCommandToHardware(this, myCmd);
    if (ret != DEVICE_OK)
-	return ret;
+      return ret;
 
 Actual methods in the Hub interface exposed to its “child” devices are completely at the discretion of the library designer. Typically they are related to exchange of commands between the hardware controller and the device.
 
