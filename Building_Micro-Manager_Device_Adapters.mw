@@ -206,6 +206,8 @@ Device Adapter classes are typically derived from appropriate base classes which
 
 A minimal, cross-platform set of thread management utilities is provided in MMThreads.h to make Device Adapter implementation easier. Any other thread management library can be used instead. For devices that can in principle run on different operating systems we recommend avoiding native, platform specific thread functions.
 
+== Complex device management: writing Hub adapters ==
+
 == Device Adapter Examples ==
 
 Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
