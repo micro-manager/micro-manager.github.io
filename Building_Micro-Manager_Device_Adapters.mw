@@ -253,7 +253,15 @@ Parent-child relationship between Hub and its devices persists in the configurat
 establishes that MyDevice belongs to MyHub, i.e. that MyHub is parent to MyDevice. The only requirement is that MyHub is listed in the configuration file before MyDevice, which will ensure that parent device is initialized before its dependent child devices. Appropriate “Parent” directives and order of initialization is automatically ensured if we use Hardware Configuration Wizard to create configuration files.
 
 === Example Hub library: Arduino ===
-[https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/ Arduino device adapter library]
+
+Arduino library is a good example of the Hub implementation and the relationship with its child devices. It would be a good idea to have a look at the source code before attempting to write a new Hub class from scratch [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/ Arduino device adapter library].
+
+Especially important are implementations of the following methods from the MM::Hub device API:
+
+  MM::DeviceDetectionStatus DetectDevice(void);
+  int DetectInstalledDevices();
+
+These two methods are critical for the configuration process. Hardware Configuration Wizard uses the first one automatically detect the port to which the Hub is connected and the second one to list all installed hardware devices.
 
 == Device Adapter Examples ==
 
