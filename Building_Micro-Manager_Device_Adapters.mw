@@ -194,6 +194,8 @@ A minimal, cross-platform set of thread management utilities is provided in MMTh
 
 == Complex device management: writing Hub adapters ==
 
+Note: This is an advanced topic and is generally not relevant for implementation of single device libraries.
+
 === Introduction ===
 
 Concept of a Hub or “parent” device was introduced to micro-manager to represent complex motorized microscopes. Typically a motorized microscope contains multiple devices: stages, filter changers, shutters, etc. All of these devices are controlled through a microscope stand which serves as a master (parent) device. Such device is designated in micro-manager as “Hub”. A Hub on the typically does not perform any concrete task other than managing connection with the host and dispatching commands to its “child” devices. However, in certain cases hub devices can be very complex. They can monitor notifications that come from the microscope stand and synchronize status of its child devices. They also perform automatic detection of which hardware components are installed and build configurations accordingly.
@@ -254,7 +256,7 @@ establishes that MyDevice belongs to MyHub, i.e. that MyHub is parent to MyDevic
 
 === Example Hub library: Arduino ===
 
-Arduino library is a good example of the Hub implementation and the relationship with its child devices. It would be a good idea to have a look at the source code before attempting to write a new Hub class from scratch [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/ Arduino device adapter library].
+Arduino library is a good example of the Hub implementation and the relationship with its child devices. It would be a good idea to have a look at the source code before attempting to write a new Hub class from scratch:  [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/ Arduino device adapter library].
 
 Especially important are implementations of the following methods from the MM::Hub device API:
 
