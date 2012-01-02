@@ -182,9 +182,7 @@ More complicated example would be a controller box with two filter changers, say
 
 Now we can add two filter changer devices with distinct device names “MyFilterA” and “MyFilterB”. The library will now contain three Device Adapters: MyController, MyFilterA and MyFilterB. Since the last two are virtually identical except for using a different variable (“A” or “B”) when talking to the controller, internally we can use the same class to implement both of them. Deciding whether instance of that class will act as device A or device B can be easily accomplished by passing an appropriate parameter in the constructor.
 
-Micro-manager supports the concept of the "parent" device (Hub) which exactly fits the description of the MyController. Designing and implementing multi-device libraries with Hub controller is described at lenngth in []
-
-
+Micro-manager supports the concept of the "parent" device (Hub) which exactly fits the description of the MyController. Designing and implementing multi-device libraries with Hub controller is described at lenngth in section [[Complex device management: writing Hub adapters]].
 
 === Application Layer Services (Core Callbacks) ===
 
