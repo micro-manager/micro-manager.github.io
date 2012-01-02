@@ -194,6 +194,24 @@ A minimal, cross-platform set of thread management utilities is provided in MMTh
 
 == Complex device management: writing Hub adapters ==
 
+=== Introduction ===
+
+Concept of a Hub or “parent” device was introduced to micro-manager to represent complex motorized microscopes. Typically a motorized microscope contains multiple devices: stages, filter changers, shutters, etc. All of these devices are controlled through a microscope stand which serves as a master (parent) device. Such device is designated in micro-manager as “Hub”. A Hub on the typically does not perform any concrete task other than managing connection with the host and dispatching commands to its “child” devices. However, in certain cases hub devices can be very complex. They can monitor notifications that come from the microscope stand and synchronize status of its child devices. They also perform automatic detection of which hardware components are installed and build configurations accordingly.
+
+Hub concept is by no means restricted to motorized microscopes. Any hardware component that has a single controller connected to multiple devices fits the description of a Hub. For example a simple filter wheel controller is a Hub because it is connected to multiple filter wheels. Filter wheel devices depend on the hub to be able to communicate with the host. At the very least, in its minimal functionality, a Hub represents and encapsulates a communication port (USB or RS232) that is shared between multiple devices.
+
+=== Implementation guidelines ===
+
+A well-behaved hub device should perform the following functions:
+
+* Auto-detection of the communication port (if any), by implementing MM::Device::DetectDevice() virtual method
+* Communication with the host computer by managing the port and providing the “Port” property
+* Auto-detection of all installed “child” devices by implementing MM::Hub::DetectInstalledDevices(), MM::Hub::GetInstalledDevice() and MM::Hub::GetNumberOfInstalledDevices()
+
+Since the Hub now represents the master controller, devices should not access any hardware resources (such as ports) directly, but rather via the associated Hub (parent). In the same vein, using global references to any other shared resources should be avoided and hopefully completely eliminated. All shared resources should be managed and encapsulated by the Hub device and the access to these should be granted only by calling appropriate Hub methods.
+
+If we build device adapter libraries following the above guidelines, our devices will automatically support configurations with multiple hubs and provide more robust operation within micro-manager environment.
+
 == Device Adapter Examples ==
 
 Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
