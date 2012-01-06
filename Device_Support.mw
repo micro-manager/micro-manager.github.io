@@ -14,6 +14,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ABSCamera]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
 * [[Andor]] - Andor cameras
 * [[Apogee]] - Apogee cameras
+* [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
@@ -22,7 +23,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[HamamatsuHam]] - An alternative camera adapter from Hamamatsu
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
-* [[BaumerOptronic|Leica]] - Leica DFC (through BaumerOptronic FXLib)
 * <!--[http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber]--> [[OpenCVgrabber]] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
