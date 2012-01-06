@@ -29,7 +29,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
 * [[Piper]] - Stanford Photonics cameras
 * [[QCam]] - QImaging cameras
-* [[Scion]] - Scion cameras
+* [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[Spot]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
