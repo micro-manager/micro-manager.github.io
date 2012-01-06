@@ -33,7 +33,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[SpotCamera]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
-* [[The Imaging Source]] - The Imaging Source (tested on USB/CCD models and video frame Grabber )
+* [[TISCam]] - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers
 * [[TwainCamera|Twain]] - Cameras fully implementing Twain Imaging Standard
 * [[V4L]] - Video4Linux compatible cameras
 * [[XIMEA]] - XIMEA cameras
