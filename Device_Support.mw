@@ -76,8 +76,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
-* [[Velleman K8055]] - Digital IO board (all platforms)
-* [[Velleman K8061]] - DIgital IO board (all platforms)
+* [[K8055]] - Velleman Digital IO board (all platforms)
+* [[K8061]] - Velleman Digital IO board (all platforms)
 
 === Other devices ===
 * [[AAAOTF|AA AOTF]] - AOTF controller from AA Optoelectronics
