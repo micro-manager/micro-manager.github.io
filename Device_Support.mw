@@ -20,6 +20,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[GigECamera]] - GigE Vision- and GenICam-compliant cameras
 * [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
+* [[HamamatsuHam]] - An alternative camera adapter from Hamamatsu
 * [[Jenoptik]] - Jenoptik cameras (ProGres series)
 * [[BaumerOptronic|Leica]] - Leica DFC (through BaumerOptronic FXLib)
 * [http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
