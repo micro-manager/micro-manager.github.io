@@ -1,4 +1,4 @@
-== Thorlabs FilterWheel adapter ==
+== Thorlabs Filter Wheel adapter ==
 
 <table cellspacing=3><tr><td>
 '''Summary:'''</td><td valign="top">Interface to [http://www.thorlabs.com/NewGroupPage9.cfm?ObjectGroup_ID=988 Thorlabs FilterWheel FW102B and FW212B]</td></tr>
