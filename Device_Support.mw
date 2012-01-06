@@ -97,6 +97,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Sapphire]] - Lasers from Coherent
 * [[SpectralLMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
+* [[Utilities]] - Virtual devices providing extra functionality
 * [[Yokogawa]] - Yokogawa CSU22
 * [[CSUX|Yokogawa CSUX]] - Yokogawa CSUX, all models
 * The [http://www.goochandhousego.com/products/life-science-instrumentation/spectral-imaging-synthesis/hsi-300-hyper/multispectral-imaging HSi-300 Hyperspectral Imager] can be controlled with Micro-Manager (not yet included in the distribution, contact Gouch & Housego for details)
