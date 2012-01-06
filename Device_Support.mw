@@ -85,7 +85,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
-* [[Coherent Cube]] - Coherent Cube laser controller
+* [[Coherent Cube|CoherentCube]] - Coherent Cube laser controller
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
