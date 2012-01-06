@@ -101,7 +101,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Utilities]] - Virtual devices providing extra functionality to Micro-Manager
 * [[VariLC]] - Tunable liquid crystal polarization modulators from CRi
 * [[Yokogawa]] - Yokogawa CSU22
-* [[CSUX]] - Yokogawa CSUX, all models
+* Yokogawa [[CSUX]] - Yokogawa CSUX, all models
 * The [http://www.goochandhousego.com/products/life-science-instrumentation/spectral-imaging-synthesis/hsi-300-hyper/multispectral-imaging HSi-300 Hyperspectral Imager] can be controlled with Micro-Manager (not yet included in the distribution, contact Gouch & Housego for details)
 
 {{Devices_Sidebar}}
