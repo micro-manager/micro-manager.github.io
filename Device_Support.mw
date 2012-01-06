@@ -86,6 +86,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube|Coherent Cube]] - Coherent Cube laser controller
+* [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
