@@ -93,7 +93,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
-* [[Autofocus_Device_Adapter|SimpleAutofocus]] - Image-based autofocus software 'device'.
+* [[SimpleAutofocus]] - Image-based autofocus software 'device'.
 * [[Sapphire]] - Lasers from Coherent
 * [[Spectral LMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
