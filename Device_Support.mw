@@ -59,6 +59,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MCL_NanoDrive|MCL-NanoDrive]] - Mad City Labs NanoDrive
 * [[MT20]] - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
 * [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
+* [[NIMotionStage]] - National Instruments FlexMotion stage controls
 * [[nPC400]] - nPoint C400 axis controller
 * [[PI_GCS_2]] - Physik Instrumente (PI) GCS2 adapter
 * [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
