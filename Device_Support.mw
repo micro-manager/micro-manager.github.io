@@ -101,6 +101,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[CoherentCube]] - Coherent Cube laser controller
 * [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
+* [[ImageProcessorChain]] - Virtual device driver for processing images in C++
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Pecon]] - Pecon Incubation System
