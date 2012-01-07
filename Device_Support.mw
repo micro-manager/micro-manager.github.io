@@ -89,6 +89,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 === Other devices ===
 * [[AAAOTF|AA AOTF]] - AOTF controller from AA Optoelectronics
 * [[AgilentLaserCombiner]] - Agilent MLC
+* [[Aladdin]] - Syring pump controller from Aladdin
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[ASIwptr]] - ASI well-plate transfer robot
