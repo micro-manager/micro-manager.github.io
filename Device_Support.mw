@@ -90,6 +90,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
+* [[ASIwptr]] - ASI well-plate transfer robot
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent Cube laser controller
