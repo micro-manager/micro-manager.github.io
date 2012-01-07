@@ -24,7 +24,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[HamamatsuHam]] - An alternative camera adapter from Hamamatsu
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
-* <!--[http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber]--> [[OpenCVgrabber]] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
+* [[OpenCVgrabber]] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
 * [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
