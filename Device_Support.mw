@@ -79,6 +79,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 === Communication ports, TTLs, DAQs, etc. ===
 * [[Arduino]] - Open Source Programmable Digital/Analogue IO board
 * [[DTOpenLayer]] - DT OpenLayer Digital IO boards
+* [[ESIOImagingControllers]] - Microcontrollers for hardware triggering and synchronization
 * [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
