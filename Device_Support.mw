@@ -91,6 +91,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[Aladdin]] - Syring pump controller from Aladdin
 * [[AndorLaserCombiner]] - Andor laser launch
+* [[Aquinas]] - Aquinas Microfluidics Controller
 * [[AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[ASIwptr]] - ASI well-plate transfer robot
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
