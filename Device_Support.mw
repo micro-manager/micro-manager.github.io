@@ -82,11 +82,12 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ESIOImagingControllers]] - Microcontrollers for hardware triggering and synchronization
 * [[FreeSerialPort]] - Communicate directly through a serial port
 * [[ITC18]] - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
+* [[K8055]] - Velleman Digital IO board (all platforms)
+* [[K8061]] - Velleman Digital IO board (all platforms)
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
-* [[K8055]] - Velleman Digital IO board (all platforms)
-* [[K8061]] - Velleman Digital IO board (all platforms)
+* [[USBManager]] - Micro-Manager internal USB communications driver
 
 === Other devices ===
 * [[AAAOTF|AA AOTF]] - AOTF controller from AA Optoelectronics
