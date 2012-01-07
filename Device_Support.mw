@@ -18,16 +18,19 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
+* [[DSLRRemoteCamera]] - Canon DSLR cameras (Windows)
 * [[GigECamera]] - GigE Vision- and GenICam-compliant cameras
 * [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[HamamatsuHam]] - An alternative camera adapter from Hamamatsu
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * <!--[http://esimaging.co.uk/index.php/resources/case-studies/73-opencvgrabber-using-frame-grabbers-and-web-cameras-with-micro-manager OpenCVgrabber]--> [[OpenCVgrabber]] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
+* [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
 * [[Piper]] - Stanford Photonics cameras
+* [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
 * [[QCam]] - QImaging cameras
 * [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
