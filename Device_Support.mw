@@ -54,6 +54,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DiConIlluminator]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.  
 * [[KDV]] - kdvelectronics focus drive (z-stage) for Meiji Techno
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
+* [[LudlLow]] - Ludl stages, shutters and filter wheels (other)
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
 * [[MCL_MicroDrive|MCL-MicroDrive]] - Mad City Labs MicroDrive
 * [[MCL_NanoDrive|MCL-NanoDrive]] - Mad City Labs NanoDrive
