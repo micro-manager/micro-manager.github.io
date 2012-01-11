@@ -38,7 +38,7 @@ Click on the "Have Disk" button.
 
 Click "Browse" and go to the directory which contains the downloaded K8055 Driver (link above) files.  Select the file "K8055_libusb.inf".
 
-[[Image:HardwareUpdate5.png]] 
+[[Image:K8055-instruct1.jpg]] 
 
 This should install the appropriate driver.  After finalizing the wizard, your Device Manager should look as follows:
 
