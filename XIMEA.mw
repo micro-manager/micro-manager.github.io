@@ -14,7 +14,7 @@
 
 === Installation instructions === 
 
-* Download and install Win Micro-Manager 1.4.6
+* Download and install the supported Win version of [http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup32BIT_1.4.6_20110722.exe Micro-Manager]
 * Download and install the [http://www.ximea.com/support/wiki/vision-libraries/Micro-Manager XIMEA API Software package], during install '''API''' and '''Drivers''' section must be selected
 * Download the XIMEA camera adapter from the Micro-Manager [http://www.ximea.com/support/wiki/vision-libraries/Micro-Manager support page]
 * Copy '''m3api.dll''' from the insttalled API Package and the '''XIMEA camera adapter''' (mmgr_dal_ximea.dll) to the Micro-Manager folder
