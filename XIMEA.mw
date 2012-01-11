@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows (32-bit Micro-Manager only)</td></tr>
 <tr><td>'''Devices:'''</td><td>XIMEA firewire, USB2 and USB3 cameras</td></tr>
-<tr><td>'''Recommended MM version:'''</td><td>1.4.6</td></tr>
+<tr><td>'''Supported MM version:'''</td><td>1.4.6 20110722</td></tr>
 <tr><td>'''Driver Needed:'''</td><td>[http://www.ximea.com/support/wiki/apis/XIMEA_API_Software_Package/ XIMEA camera drivers]</td></tr>
 </table>
 
