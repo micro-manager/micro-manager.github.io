@@ -1,0 +1,12 @@
+== Motic Moticam adaptor ==
+'''Summary:'''   Interfaces with Motic cameras
+
+'''Authors:'''   Motic
+
+'''License:'''   Proprietary
+
+'''Platforms:''' Windows
+
+'''Devices:'''   All monochrome and color Motic cameras
+
+To use this adapter, you must first install the Moticam driver software which can be downloaded from [http://www.motic.com]
