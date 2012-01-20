@@ -1,0 +1,409 @@
+{|
+! Device
+! Micro-Manager
+! Meta Imaging (Molecular Devices)
+|-
+| AA AOTF - AOTF controller from AA Optoelectronics
+| Yes
+| No
+|-
+| ABSCamera - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
+| Yes
+| No
+|-
+| AgilentLaserCombiner - Agilent MLC
+| Yes
+| No
+|-
+| Aladdin - Syring pump controller from Aladdin
+| Yes
+| No
+|-
+| Andor - Andor cameras
+| Yes
+| Yes
+|-
+| Andor3 - New model Andor cameras
+| Yes
+| ?
+|-
+| AndorLaserCombiner - Andor laser launch
+| Yes
+| Yes
+|-
+| Asahi Spectra MAX-301
+| No
+| Yes
+|-
+| Aura Light Engine
+| No
+| Yes
+|-
+| AOTF - NEOS AOTF control through parallel port. Can be used for any TTL-controllable shutter
+| Yes
+| 
+|-
+| Apogee - Apogee cameras
+| Yes
+| No
+|-
+| Aquinas - Aquinas Microfluidics Controller
+| Yes
+| No
+|-
+| Arduino - Open Source Programmable Digital/Analogue IO board
+| Yes
+| No
+|-
+| ASIFW1000 - ASI Shutter and Filter Wheel controller
+| Yes
+| Yes
+|-
+| ASIStage - ASI XY (and Z) stage and CRIF
+| Yes
+| Yes
+|-
+| ASIwptr - ASI well-plate transfer robot
+| Yes
+| No
+|-
+| BaumerOptronic - Leica DFC camera (through BaumerOptronic FXLib)
+| Yes
+| Yes
+|-
+| CARVII - BD/CrEST CARV II spinning disk confocal
+| Yes
+| Yes
+|-
+| Cobolt - Cobolt laser controller
+| Yes
+| No
+|-
+| CoherentCube - Coherent Cube laser controller
+| Yes
+| No
+|-
+| Conix - Conix Filter Changer, XY and Z stage
+| Yes
+| Yes
+|-
+| Corvus - Märzhäuser XY stages with Corvus driver.
+| Yes
+| Yes
+|-
+| dc1394 - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
+| Yes
+| ?
+|-
+| DECamera - Direct Electron Cameras
+| Yes
+| No
+|-
+| DemoCamera - Virtual, emulated equipment for testing
+| Yes
+| ?
+|-
+| DiConIlluminator - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.
+| Yes
+| No
+|-
+| DLP4000 - Digital Mirror Device
+| Yes
+| No
+|-
+| DSLRRemoteCamera - Canon DSLR cameras (Windows)
+| Yes
+| No
+|-
+| DTOpenLayer - DT OpenLayer Digital IO boards
+| Yes
+| No
+|-
+| DVC Cameras 
+| Yes
+| No
+|-
+| ESIOImagingControllers - Microcontrollers for hardware triggering and synchronization
+| Yes
+| No
+|-
+| FreeSerialPort - Communicate directly through a serial port
+| Yes
+| ?
+|-
+| GenericSLM - Any spatial light modulator that can be controlled via computer video output port.
+| Yes
+| ?
+|-
+| GigECamera - GigE Vision- and GenICam-compliant cameras
+| Yes
+| ?
+|-
+| GPhoto - Canon and Nikon DSLR cameras (Mac, Linux)
+| Yes
+| No
+|-
+| Hamamatsu - Hamamatsu cameras (through DCAM library)
+| Yes
+| Yes
+|-
+| HSi-300 Hyperspectral Imager 
+| Yes
+| No
+|-
+| ITC18 - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
+| Yes
+| No
+|-
+| K8055 - Velleman Digital IO board (all platforms)
+| Yes
+| No
+|-
+| K8061 - Velleman Digital IO board (all platforms)
+| Yes
+| No
+|-
+| KDV - kdvelectronics focus drive (z-stage) for Meiji Techno
+| Yes
+| No
+|-
+| LeicaDMI - Leica DMI and DM microscopes
+| Yes
+| Yes
+|-
+| LeicaDMR - Leica DMR microscopes (and DMIRBE)
+| Yes
+| Yes
+|-
+| Ludl - Ludl stages, shutters and filter wheels
+| Yes
+| Yes
+|-
+| LumencorSpectra - Solid state illuminator from Lumencor
+| Yes
+| No
+|-
+| MaestroServo - Pololu Maestro Servo controller
+| Yes
+| No
+|-
+| Marzhauser - Märzhäuser XY stages and Z (uses TANGO controller)
+| Yes
+| Yes
+|-
+| MCL-MicroDrive - Mad City Labs MicroDrive
+| Yes
+| Yes
+|-
+| MCL-NanoDrive - Mad City Labs NanoDrive
+| Yes
+| Yes
+|-
+| Micropix - Cameras from Micropix
+| Yes
+| No
+|-
+| MoticCamera - Motic cameras
+| Yes
+| No
+|-
+| MT20 - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
+| Yes
+| No
+|-
+| Nikon - Nikon Z-drive, TIRF shutter and IntensiLight shutter
+| Yes
+| Yes
+|-
+| NikonAZ100 - Nikon AZ100 Zoom microscope
+| Yes
+| Yes
+|-
+| NikonTE2000 - Nikon TE2000 motorized microscope
+| Yes
+| Yes
+|-
+| NikonTI - Nikon TI microscope
+| Yes
+| Yes
+|-
+| NIMotionStage - National Instruments FlexMotion stage controls
+| Yes
+| No
+|-
+| NKRemoteCamera - Nikon Digital SLR (Windows)
+| Yes
+| No
+|-
+| NPointC400 - nPoint C400 axis controller
+| Yes
+| No
+|-
+| Olympus - Olympus IX81 (Inverted)/BX61 (Upright)
+| Yes
+| Yes
+|-
+| OpenCVgrabber - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
+| Yes
+| No
+|-
+| ParallelPort - TTLs on parallel port (Windows only)
+| Yes
+| No
+|-
+| PCO_Camera - Supports all PCO cameras (Sensicam, Pixelfly and others)
+| Yes
+| Yes
+|-
+| Pecon - Pecon Incubation System
+| Yes
+| No
+|-
+| PI - Other (older) Physik Instrumente devices. Includes the E-662 controller
+| Yes
+| Yes
+|-
+| PI_GCS - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
+| Yes
+| Yes
+|-
+| PI_GCS_2 - Physik Instrumente (PI) GCS2 adapter
+| Yes
+| ?
+|-
+| Piper - Stanford Photonics cameras
+| Yes
+| No
+|-
+| Prairie Aurora Laser Launch - Prairie Aurora Laser Launch Interfacing using a Velleman K8061
+| Yes
+| ?
+|-
+| PrecisExcite - LED illuminator (usable as a shutter device)
+| Yes
+| Yes
+|-
+| PrincetonInstruments - Princeton Instruments cameras
+| Yes
+| Yes
+|-
+| Prior - Prior stages, shutters, and filter wheels
+| Yes
+| Yes
+|-
+| ProgRes - Jenoptik cameras (ProgRes series)
+| Yes
+| No
+|-
+| PSRemoteCamera - Canon PowerShot camera (Windows)
+| Yes
+| No
+|-
+| PVCAM - Roper/Photometrics cameras (not for Princeton Instruments)
+| Yes
+| Yes
+|-
+| QCam - QImaging cameras
+| Yes
+| Yes
+|-
+| Sapphire - Lasers from Coherent
+| Yes
+| No
+|-
+| Scientifica - Scientifica stages
+| Yes
+| No
+|-
+| ScionCam - Scion cameras
+| Yes
+| No
+|-
+| Sensicam - PCO/Cooke Sensicam camera
+| Yes
+| Yes
+|-
+| SpectralLMM5 - Spectral laser line controller
+| Yes
+| Yes
+|-
+| SpotCamera - Diagnostic Instruments Spot cameras
+| Yes
+| No
+|-
+| Stradus - Vortran Stradus laser driver
+| Yes
+| No
+|-
+| SutterLambda - Sutter hardware
+| Yes
+| Yes
+|-
+| TetheredCam - Canon and Nikon DSLR cameras (Windows)
+| Yes
+| No
+|-
+| Thorlabs - Thorlabs XY Stage (brushless DC motor) and Piezo Z Stage, with controller BBD102
+| Yes
+| No
+|-
+| ThorlabsDCxxxx - Thorlabs LED controllers
+| Yes
+| No
+|-
+| ThorlabsFilterWheel - Thorlabs Filter Wheel
+| Yes
+| No
+|-
+| ThorlabsSC10 - Thorlabs shutter controller
+| Yes
+| No
+|-
+| TIScam - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers
+| Yes
+| No
+|-
+| Twain - Cameras fully implementing Twain Imaging Standard
+| Yes
+| Yes
+|-
+| V4L - Video4Linux compatible cameras
+| Yes
+| No
+|-
+| VariLC - Tunable liquid crystal polarization modulators from CRi
+| Yes
+| No
+|-
+| Vincent - Vincent Uniblitz controllers
+| Yes
+| Yes
+|-
+| Xcite - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+| Yes
+| Yes
+|-
+| XCite120PC_Exacte - Lumen Dynamics X-Cite 120PC and exacte adapter
+| Yes
+| Yes
+|-
+| XIMEA - XIMEA cameras
+| Yes
+| No
+|-
+| Yokogawa - Yokogawa CSU22
+| Yes
+| Yes
+|-
+| Yokogawa CSUX - Yokogawa CSUX, all models
+| Yes
+| Yes
+|-
+| ZeissCAN - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
+| Yes
+| Yes
+|-
+| ZeissCAN29 - Zeiss CAN29-bus compatible microscopes (AxioObserver) 
+| Yes
+| Yes
+|}
