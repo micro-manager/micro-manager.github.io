@@ -1,7 +1,7 @@
 {|
-! Device
-! Micro-Manager
-! Meta Imaging (Molecular Devices)
+!style="width:70%;background-color:#DDDDDD;"| Device
+!style="width:15%;background-color:#DDDDDD;"| Micro-Manager
+!style="width:15%;background-color:#DDDDDD;"| Meta Imaging (Molecular Devices)
 |-
 | AA AOTF - AOTF controller from AA Optoelectronics
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -29,7 +29,7 @@
 |-
 | Andor3 - New model Andor cameras
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | AndorLaserCombiner - Andor laser launch
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -117,7 +117,7 @@
 |-
 | dc1394 - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | DECamera - Direct Electron Cameras
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -125,7 +125,7 @@
 |-
 | DemoCamera - Virtual, emulated equipment for testing
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | DiConIlluminator - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -153,15 +153,15 @@
 |-
 | FreeSerialPort - Communicate directly through a serial port
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | GenericSLM - Any spatial light modulator that can be controlled via computer video output port.
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | GigECamera - GigE Vision- and GenICam-compliant cameras
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | GPhoto - Canon and Nikon DSLR cameras (Mac, Linux)
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -361,7 +361,7 @@
 |-
 | PI_GCS_2 - Physik Instrumente (PI) GCS2 adapter
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | Piper - Stanford Photonics cameras
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -381,7 +381,7 @@
 |-
 | Prairie Aurora Laser Launch - Prairie Aurora Laser Launch Interfacing using a Velleman K8061
 |align=center style="background-color:#BBFFBB;"| Yes
-| ?
+|align=center | ?
 |-
 | PrecisExcite - LED illuminator (usable as a shutter device)
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -532,6 +532,6 @@
 |align=center style="background-color:#BBFFBB;"| Yes
 |-
 | Zeiss MCU-26,27,28
-| ?
+|align=center | ?
 |align=center style="background-color:#BBFFBB;"| Yes
 |}
