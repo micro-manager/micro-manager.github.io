@@ -1,7 +1,7 @@
 {|
 !style="width:70%;background-color:#DDDDDD;"| Device
-!style="width:15%;background-color:#DDDDDD;"| Micro-Manager
-!style="width:15%;background-color:#DDDDDD;"| Meta Imaging (Molecular Devices)
+!style="width:15%;background-color:#DDDDDD;"| Micro-Manager <sup>[[#Foot1|1]]</sup>
+!style="width:15%;background-color:#DDDDDD;"| Meta Imaging (Molecular Devices)<sup>[[#Foot2|2]]</sup>
 |-
 | AA AOTF - AOTF controller from AA Optoelectronics
 |align=center style="background-color:#BBFFBB;"| Yes
@@ -535,3 +535,8 @@
 |align=center | ?
 |align=center style="background-color:#BBFFBB;"| Yes
 |}
+
+
+<span id="Foot1"><sup>1</sup>[[Device_Support|Micro-Manager device support page]]</span>
+
+<span id="Foot2"><sup>2</sup>[http://valelab.ucsf.edu/~MM/MMwiki/index.php?title=Hardware_Support_Comparison&action=submit Meta Imaging device support page]</span>
