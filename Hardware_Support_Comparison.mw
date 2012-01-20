@@ -11,6 +11,10 @@
 | Yes
 | No
 |-
+| Acton Research - MicroSpec 2150i
+| No
+| Yes
+|-
 | AgilentLaserCombiner - Agilent MLC
 | Yes
 | No
@@ -69,6 +73,14 @@
 |-
 | BaumerOptronic - Leica DFC camera (through BaumerOptronic FXLib)
 | Yes
+| Yes
+|-
+| Cairn Research - Optoscan
+| No
+| Yes
+|-
+| Cairn Research - Rotor
+| No
 | Yes
 |-
 | CARVII - BD/CrEST CARV II spinning disk confocal
@@ -227,9 +239,17 @@
 | Yes
 | Yes
 |-
+| Measurement Computing - PCI-DDA02, DDA08/16
+| No
+| Yes
+|-
 | Micropix - Cameras from Micropix
 | Yes
 | No
+|-
+| MicroPoint Laser System - Photonic Instruments
+| No
+| Yes
 |-
 | Mosaic - Andor
 | No
@@ -239,9 +259,17 @@
 | Yes
 | No
 |-
+| MSS-FMC - Chuo Seiki
+| No
+| Yes
+|-
 | MT20 - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
 | Yes
 | No
+|-
+| National Instruments USB-6259 BNC, USB-6501
+| No
+| Yes
 |-
 | Nikon - Nikon Z-drive, TIRF shutter and IntensiLight shutter
 | Yes
@@ -271,6 +299,18 @@
 | Yes
 | No
 |-
+| Nuance - Cambridge Resarch & Inst.
+| No
+| Yes
+|-
+| NV 40/1 CL - Pizeosystem Jena
+| No
+| Yes
+|-
+| Oligochrome - TILL Photonics
+| No
+| Yes
+|-
 | Olympus - Olympus IX81 (Inverted)/BX61 (Upright)
 | Yes
 | Yes
@@ -291,6 +331,10 @@
 | Yes
 | No
 |-
+| PCI-6503 National Instruments
+| No
+| Yes
+|-
 | PCO_Camera - Supports all PCO cameras (Sensicam, Pixelfly and others)
 | Yes
 | Yes
@@ -300,6 +344,10 @@
 | No
 |-
 | Photon Technology International DeltaRAM
+| No
+| Yes
+|-
+| PhotoFluor II - 89 North
 | No
 | Yes
 |-
@@ -318,6 +366,18 @@
 | Piper - Stanford Photonics cameras
 | Yes
 | No
+|-
+| PL200 Slide Loader - Prior Scientific
+| No
+| Yes
+|-
+| PlateCrane - Hudson Controls
+| No
+| Yes
+|-
+| Polychrome II, IV, V - TILL Photonics
+| No
+| Yes
 |-
 | Prairie Aurora Laser Launch - Prairie Aurora Laser Launch Interfacing using a Velleman K8061
 | Yes
@@ -351,6 +411,10 @@
 | Yes
 | Yes
 |-
+| QT-CM2 - Chuo-Seiki
+| No
+| Yes
+|-
 | Sapphire - Lasers from Coherent
 | Yes
 | No
@@ -367,6 +431,10 @@
 | Yes
 | Yes
 |-
+| Sigma Koki - Microscope XY Stage
+| No
+| Yes
+|-
 | SpectralLMM5 - Spectral laser line controller
 | Yes
 | Yes
@@ -381,6 +449,10 @@
 |-
 | SutterLambda - Sutter hardware
 | Yes
+| Yes
+|-
+| Symbol LS 1220
+| No
 | Yes
 |-
 | TetheredCam - Canon and Nikon DSLR cameras (Windows)
@@ -419,6 +491,10 @@
 | Yes
 | No
 |-
+| Varispec - Cambridge Research & Instr. (CRI)
+| No
+| Yes
+|-
 | VariLC - Tunable liquid crystal polarization modulators from CRi
 | Yes
 | No
@@ -453,5 +529,9 @@
 |-
 | ZeissCAN29 - Zeiss CAN29-bus compatible microscopes (AxioObserver) 
 | Yes
+| Yes
+|-
+| Zeiss MCU-26,27,28
+| ?
 | Yes
 |}
