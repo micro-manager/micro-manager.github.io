@@ -187,11 +187,7 @@
 |align=center style="background-color:#BBFFBB;"| Yes
 |align=center style="background-color:#FFCCCC;"| No
 |-
-| K8055 - Velleman Digital IO board (all platforms)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| K8061 - Velleman Digital IO board (all platforms)
+| K8055, K8061 - Velleman Digital IO board (all platforms)
 |align=center style="background-color:#BBFFBB;"| Yes
 |align=center style="background-color:#FFCCCC;"| No
 |-
