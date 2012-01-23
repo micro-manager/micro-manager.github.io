@@ -41,16 +41,6 @@
 
 
 == Getting Started ==
-* The Andor Laser Combiner SDK, and consequently µManager which depends on it, can control the following models:
-*# LC-401
-*# LC-501
-*# LC-601
-* These models are  '''''not''''' currently supported:
-*# LC-103
-*#* Use the [[AA AOTF]] driver instead.  There is a an RS-232 connection on the front of the Andor PCU to interface to the AOTF controller.  However, switching lasers wavelengths and power using this method is much slower than using the analog interface.
-*#* If you want proper analog control supported for fastest operation, i.e. using Andor's choice of DAC card, please [[#Laser Combiner questions|request Andor]]
-*# External laser control via PCUV-101
-*#* Use the [[AOTF|NEOS]] driver instead.
 * You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  To gain access to it, register/sign-into your MyAndor web account on the Andor homepage, click on Software > Downloads, uncheck the "Display only files I have access to", select "DRIVER: Andor ALC SDK 2.0" and request access.
 * '''ALC_SDK 2.0 is the current version as of July 29, 2011'''
 
