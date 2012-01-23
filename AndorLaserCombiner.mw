@@ -61,14 +61,11 @@
 
 
 === Configuring Micro-Manager ===
-* The version of Micro-Manager you require depends on your wanting to run on the 1.3 or 1.4 branch:
-*# 1.3.47
-*# 1.4.x users currently need to get the latest nightly build.
-
-* When configuring your hardware setup, remember to add the AndorLaserCombiner and AndorLaserCombiner Piezostage (if you have a piezostage). Also, the configuration wizard will ask if you have a multiport unit present. If you have a FRAPPA unit or TIRF setup, you do and should set it to "1" (true). Other than those cases you probably don't have it, set it to "0" (false).
-[[Image:03- HW cfg part 1.png|frame|center||Add the Andor Laser Combiner to the Hardware Configuration]]
-[[Image:04- HW cfg part 2.png|frame|center||Finalize configuration settings]]
-
+* Support for the AndorLaserCombiner was introduced in Micro-Manager 1.3.47
+* During hardware setup from Tools > Hardware Configuration Wizard...
+** You must add the '''AndorLaserCombiner'''
+** Add '''AndorLaserCombiner Piezostage''' if your system uses Andor's analog control for piezo Z.  Most people would have a system of this configuration.  If you are unsure if you have this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC connected from A5 to your Piezo Z controller, you should enable this option.
+** Select "1" (true) if you have the 3 fiber optic multiport unit (MPU) controller attachment on the front of your laser combiner.  Otherwise if you only see a single fiber optic connected horizontally to the front of the laser combiner, choose "0" (false).
 
 == Resources ==
 === Laser Combiner questions ===
