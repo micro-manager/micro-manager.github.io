@@ -1,132 +1,60 @@
-{| style="text-align: left"
-|- valign="top"
-!Summary:
-|Interfaces with Andor sCMOS cameras<br>(Use [[Andor]] DeviceAdapter instead for other Andor CCD and EMCCD cameras)
+{|
+|valign="top"|'''Summary:'''
+|Interfaces with Andor Neo camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
 |-
-!Author
+|valign="top"|'''Authors:'''
 | David Gault (Andor)
-|- valign="top"
-!Maintainers
-|Norman Glasgow (Andor, retired)<br/>Alan Mullan (Andor)
-|- valign="top"
-!Documentation:
-|Norman Glasgow (Andor, retired)<br/>Pariksheet Nanda (Andor)
 |-
-!License:
+|valign="top"|'''Maintainers:'''
+|David Gault (Andor)
+|-
+|
+|Pariksheet Nanda (Andor) this document
+|-
+|valign="top"|'''License:'''
 |BSD
 |-
-!Platforms:
-|Windows, Linux, (No Mac driver available)
+|valign="top"|'''Platforms:'''
+|Windows, FIXME: uncertain about state of Linux support, (No Mac driver available)
 |-
-!Devices:
-|Neo, Zyla, Sona
+|valign="top"|'''Devices:'''
+|Neo scientific CMOS
 |}
 ----
 
 == Installation ==
+=== Andor SDK3 ===
+You must install the Andor SDK3 since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK3, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
-=== Andor Driver Pack 3 (sCMOS) ===
+=== Bitflow Cameralink Configuration ===
+PDF instructions for completing the SDK installation are on the Andor website.
+It's only accessible after logging into your download account (registration is quick and free- login from the top right side of the Andor homepage and then click MyAndor there)
 
-{{MessageBox|Required Driver Limited availability notice|You will need the Andor Driver Pack 3 (sCMOS).  This driver pack is currently not publicly available.  Please contact Andor and ask them to provide you with the latest version of this Driver Pack.  Public access will be restored soon.}}
+When you log in, click on Manuals > Neo sCMOS > sCMOS Quick Start Guide. 
+On page 13 of the PDF (numbered 11 in the manual) there are instructions to use SysReg to setup the Andor cameralink file.
 
-{{MessageBox|Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2}}
-{{MessageBox|Support Advisory|Snapping an imaging may use the oldest image, and not the latest image, possibly due to pulling the wrong image from a double buffer}}
-{{MessageBox|Support Advisory|Images may start to scroll to the center of the field after each snap, shifting one line at a time. Restarting the camera and uManager fixes the issue}}
-{{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
+=== Disable power savings ===
+Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
+Make sure you disable C-states power saving.
 
-{{MessageBox|Support Advisory|Zyla cameras running DriverPack3 / SDK3 3.7.30004.0 can cause a "blue screen of death" upon PC shutdown when certain other devices are installed (e.g. Arduino). This is not a serious problem, just annoying. The solution is to fully uninstall the SDK3 and Bitflow driver (and even run a registry cleaning software for good measure). Then install Andor SDK 3.8.30007.0 to the Micro-Manager install directory. Restart the PC and power cycle the camera before starting Micro-Manager.}}
+Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management] settings
 
-Install the Andor Driver Pack 3 (sCMOS) to the working Micro-Manager Directory e.g. 
+=== Test communication ===
+The Andor SDK installs test programs that can be used to get live images:
 
-    C:\Program Files\Micro-Manager-1.4\
+      C:\Program Files\Andor SOLIS\Drivers\Examples\C\
 
-and ensure you restart the computer. 
-
-On a 32-bit Windows OS, the 32-bit DLLs will be installed to a subfolder of the MicroManager directory (e.g. C:\Program Files\Micro-Manager-1.4\Win32\). These DLLs must then be copied to the Micro-Manager Directory  (e.g. C:\Program Files\Micro-Manager-1.4\), replacing the 64-bit DLLs.
-
-=== Disable computer power savings ===
-Disable C-states power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable PCI Express > Link State Power Management in [[Personal computer setup#Power Options|Power Options]].
-
-== Configuration ==
-
-=== Increase Sequence buffer size ===
-
-It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS,  set this value to '''5120''' MB
-
-      Tools > Options... > Sequence buffer size [MB]
-
-Depending on the amount of RAM on the PC or processing performance, this may need to be adjusted accordingly.
-
-Some operations take longer with larger sequence buffers.  Many users will be fine with the Micro-Manager default size, especially with a SSD hard drive.  5120 MB is enough for 1250 full-frame images without writing to disk.  As of MM 1.4.19 the default buffer size is 250 MB for 64-bit OS and 25 MB for 32-bit OS.
-
-=== Linux Installation ===
-The following assumes you installed the Andor SDK in /usr/local/lib/
-
-Put the following line into /etc/udev/rules.d/andor.rules
-  
- SUBSYSTEM=="video4linux", KERNEL=="video[0-3]*", ATTR{name}=="bitflow", GROUP="users"
-
-Add the following lines to /etc/rc.d/rc.local
-
- #!/bin/bash
- # Bitflow and Andor
- /sbin/modprobe v4l2_common
- # /sbin/modprobe v4l1_compat -- only include this line if your kernel version is 
- #   .. below 2.6.38 - use 'uname -a' to find out your kernel version
- /sbin/modprobe videodev
- /sbin/insmod /usr/local/andor/bitflow/drv/bitflow.ko fwDelay1=200 customFlags=1
-
-Reboot the machine.
-
-== Usage notes ==
-
-* Trigger mode is dynamically set by µManager when using Multi-Dimensional > Time points.
-** "exposure" < "interval" ignores the "interval" time and instead uses "frame rate" property from the "Device/Property Browser"
-** "exposure" > "interval" sets Software Triggers acquisition.
-
-* Save data to a large storage drive such as 1 TB, 950 MB/sec PCI-e SSD (OCZ-Z drive R2 P-88) or 4x Kingston 256GB SSD (RAID 0) on LSI MegaRAID setup
-
-== Troubleshooting ==
-
-=== Zyla support in Micro-Manager ===
-
-Please read the section on [[High Speed Acquisition in Micro-Manager]]. The minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but 1.4.16 or later is strongly recommended.
-Consider trying the latest nightly build from [http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ here.]
-
-=== DeviceCreate function failed ===
-
-This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.
-
-=== Error: Circular buffer overflowed. ===
-
-If one encounters this error, increase sequence buffer size.  In the µManager toolbar one can set the Sequence buffer size in the main menu:
-
-      Tools > Options... > Sequence buffer size [MB]
-
-'''Reason:'''
-Due to the rate that the camera acquires data it's not uncommon for µManager to run out of "Circular Buffer" memory during sequence acquisitions (50+ images). The circular buffer is where images wait when they've been taken off the camera but have not yet been processed by µManager. The error message is:
-
-      Micro-Manager Error:
-      Error: Circular buffer overflowed.
-
-Restart uManager for this change to take effect.
-
-=== Error: Internal inconsistency: unknown system exception occurred ===
-
-If you see this message when snapping an image, try a lower <code>AcquisitionWindow</code> size (the default is the full <code>Full Image</code>) to confirm that the camera is capable of sending an image.  The BitFlow frame grabber PCIe card fits in 4x splots, but some motherboards don't have the bandwidth to run it and the card may need to be instead installed on an 8x or 16x slot.
 
 == Resources ==
-
-See Andor's [http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf|Micro-Manager Software Guide] which details the steps above, shows how to add a device in the property browser, etc.
-
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
 
 {{Listserv_Search|Andor}}
 
 === Andor support ===
-* [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS Web support]
-* [http://www.andor.com/contact_us/ Phone support]
-* [mailto:3rdpartysupport@andor.com Email support]
+For contacting Andor product support regarding any questions, see under "Support" for your location -
+http://www.andor.com/contact_us/default.aspx
 
 {{Devices_Sidebar}}
+
+[[User:P.nanda|P.nanda]] 23:08, 22 January 2012 (PST)
