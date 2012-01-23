@@ -1,0 +1,60 @@
+{|
+|valign="top"|'''Summary:'''
+|Interfaces with Andor Neo camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
+|-
+|valign="top"|'''Authors:'''
+| David Gault (Andor)
+|-
+|valign="top"|'''Maintainers:'''
+|David Gault (Andor)
+|-
+|
+|Pariksheet Nanda (Andor) this document
+|-
+|valign="top"|'''License:'''
+|BSD
+|-
+|valign="top"|'''Platforms:'''
+|Windows, FIXME: uncertain about state of Linux support, (No Mac driver available)
+|-
+|valign="top"|'''Devices:'''
+|Neo scientific CMOS
+|}
+----
+
+== Installation ==
+=== Andor SDK3 ===
+You must install the Andor SDK3 since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK3, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
+
+=== Bitflow Cameralink Configuration ===
+PDF instructions for completing the SDK installation are on the Andor website.
+It's only accessible after logging into your download account (registration is quick and free- login from the top right side of the Andor homepage and then click MyAndor there)
+
+When you log in, click on Manuals > Neo sCMOS > sCMOS Quick Start Guide. 
+On page 13 of the PDF (numbered 11 in the manual) there are instructions to use SysReg to setup the Andor cameralink file.
+
+=== Disable power savings ===
+Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
+Make sure you disable C-states power saving.
+
+Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management] settings
+
+=== Test communication ===
+The Andor SDK installs test programs that can be used to get live images:
+
+      C:\Program Files\Andor SOLIS\Drivers\Examples\C\
+
+
+== Resources ==
+=== Development support ===
+Please liaison with Micro-Manager developers to contact the Andor software team
+
+{{Listserv_Search|Andor}}
+
+=== Andor support ===
+For contacting Andor product support regarding any questions, see under "Support" for your location -
+http://www.andor.com/contact_us/default.aspx
+
+{{Devices_Sidebar}}
+
+[[User:P.nanda|P.nanda]] 23:08, 22 January 2012 (PST)
