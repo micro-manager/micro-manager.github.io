@@ -7,7 +7,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr>
 <tr>
   <td valign=top>'''Author:'''</td>
-  <td>Ryan Clark <rclark AT diconlighting dot com></td>
+  <td>Ryan Clark <rclark AT diconlighting DOT com></td>
 </tr>
 <tr>
    <td valign=top>'''License:'''</td>
@@ -15,8 +15,8 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr> 
 <tr>
    <td valign=top>'''Platforms:'''</td>
-   <td>Windows 2000 and higher <br/>
-       32-bit only for Micro-Manager v1.4.5 to v1.4.7<br/>
+   <td>Windows 2000 and higher.
+       32-bit only for Micro-Manager v1.4.5 to v1.4.7.
        32- and 64-bit for Micro-Manager v1.4.8 and newer
    </td>
 </tr>
