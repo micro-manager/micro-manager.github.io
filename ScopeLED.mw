@@ -15,9 +15,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr> 
 <tr>
    <td valign=top>'''Platforms:'''</td>
-   <td>Windows 2000 and higher.
-       32-bit only for Micro-Manager v1.4.5 to v1.4.7.
-       32- and 64-bit for Micro-Manager v1.4.8 and newer
+   <td>Windows 2000 and higher. <br>32-bit only for Micro-Manager v1.4.5 to v1.4.7. <br>32- and 64-bit for Micro-Manager v1.4.8 and newer. Requires DiCon USB Communication Adapter version 2.0.0.0 or newer (see Dependencies section, below).
    </td>
 </tr>
 <tr>
