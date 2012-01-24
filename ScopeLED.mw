@@ -15,11 +15,14 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr> 
 <tr>
    <td valign=top>'''Platforms:'''</td>
-   <td>Windows2000 and higher. 32-bit versions only.</td>
+   <td>Windows 2000 and higher <br/>
+       32-bit only for Micro-Manager v1.4.5 to v1.4.7<br/>
+       32- and 64-bit for Micro-Manager v1.4.8 and newer
+   </td>
 </tr>
 <tr>
    <td valign=top>'''Dependencies:'''</td>
-   <td>This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at info AT diconlighting DOT com.</td>
+   <td>This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at scopeled_support AT diconlighting DOT com.</td>
 </tr>
 </table>
 
