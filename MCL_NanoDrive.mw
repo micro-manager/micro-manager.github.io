@@ -7,7 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>Windows 2000/XP/Vista (32 bit)</td></tr>
 <tr><td>'''Devices:'''</td><td>XY Stage, Z Stage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>
-[[http://valelab.ucsf.edu/~nico/MMwiki/images/e/e0/MMConfig_MCL_NanoDrive.cfg Example Config File]] Sets up the Nano-Drive &trade; with the DemoCamera.</td></tr>
+[[Media:MMConfig_MCL_MicroDrive.cfg|Example Config File]] (Sets up the Nano-Drive &trade; with the DemoCamera.)</td></tr>
 <tr><td width=20%>'''Since version'''</td><td>1.2.36</td></tr>
 </table>
 
