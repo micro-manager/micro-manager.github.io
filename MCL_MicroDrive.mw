@@ -6,7 +6,7 @@ stage</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows 2000/XP/Vista (32bit)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage</td></tr>
 <tr><td width=20%>'''Since version'''</td><td>1.2.36</td></tr>
-<tr><td>'''Example Config File:'''</td><td>[http://valelab.ucsf.edu/~nico/MMwiki/images/e/e4/MMConfig_MCL_MicroDrive.cfg Example Config File] Sets up the Micro-Drive with the DemoCamera.</td></tr>
+<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_MCL_MicroDrive.cfg|Example Config File]] (Sets up the Micro-Drive with the DemoCamera.)</td></tr>
 </table>
 
 The MCL Micro-Drive controls the [http://www.madcitylabs.com/microstage.html MicroStage] series stage devices.
