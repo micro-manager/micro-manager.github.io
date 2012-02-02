@@ -71,7 +71,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
 * [[Scientifica]] - Scientifica stages
-* [[SutterLambda]] - Sutter hardware
+* [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
+* [[SutterStage]] - Sutter XY Stage
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor) and Piezo Z Stage, with controller BBD102
