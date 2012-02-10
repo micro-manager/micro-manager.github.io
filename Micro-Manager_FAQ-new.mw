@@ -1,0 +1,12 @@
+=== Something does not work.  What do I do? ===
+1) Try downloading and installing the latest [[Micro-Manager_Nightly_Builds|Nightly Build]] and check if the problem still persists. 
+
+2) If the issue still remains click 'Help' on the main window -> then click 'Report Problem'. 
+
+* In this panel you will need to fill in your name, organization, email and a description of the problem. 
+
+* You will then notice a dialogue in the bottom which will guide you to sending us the report. 
+
+* This report will also consists of a log file and your configuration settings. 
+
+* All of this information will then be packaged and sent to us via email. We will then be able respond back and assist you with a better understanding of your situation.
