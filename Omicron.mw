@@ -1,0 +1,52 @@
+== Omicron Laser Controller ==
+
+ <nowiki>Summary:	Omicron Laser Controller
+Author:	        Jan-Erik Herche/Ralf Schlotter
+License:	LGPL
+Platforms:	All platforms (uses serial port)
+Devices:	Omicron “…xX”-laser series
+
+Default serial port settings:	AnswerTimeout	        2.5 seconds
+	                        BaudRate	        57600
+	                        DelayBetweenCharsMS	0
+	                        Handshaking	        Off
+	                        Parity	                None
+	                        StopBits	        1</nowiki>
+
+The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX® series lasers as well as lasers integrated in LightHUB® compact laser combiners and SOLE® laser light engines via their serial interfaces. (LuxX® and BrixX® laser modules without a native RS232 port need an optional break-out adaptor). 
+In the hardware configuration wizard you will need to add one Omicron Laser Controller object for every “…xX”-laser device you would like to control.
+
+The following laser features and operating modes can be controlled and/or monitored through µ-manager device/property browser:
+
+;Read only properties
+
+*Device type
+*Serial number
+*Specified power
+*Wavelength
+*Workinghours
+*Temperature baseplate
+*Temperature diode
+*Error notification
+
+;Read/Write properties
+
+*Laser operation select (turns the laser emission ON or Off)
+*Laser operatingmode select (CW, analogue and/or digital modulation, standby)
+*Laser CW sub-operatingmode select (ACC-Auto Current Control or APC-Auto Power Control; only available with connected LuxX or BrixX laser module)
+*Laser power set-point select (set the laser power level in [mW] or [ %])
+*Reset
+
+'''Note:''' Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the “Laser Operation Select” property.
+
+'''Note:''' Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values.
+
+'''Note:''' Laser emission will automatically shut off when µ-manager is shut down.
+
+Below you can see a screenshot of an Omicron “…xX”-Laser Series module controlled via the device/property browser:
+
+[[File:Omicronproperties.jpg]]
+
+For support on using the Omicron Laser Controller device adaptor please contact: mail@omicron-laser.de
+
+[[User:Jan-Erik Herche|Jan-Erik Herche]] 02:07, 15 February 2012 (PST)
