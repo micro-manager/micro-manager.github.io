@@ -11,7 +11,7 @@
 * Do not use this->memberVar_ idiom unless it is absolutely necessary to avoid confusion.
 * Static constants in C++: const char* const g_Keyword_Description.
 * Static constants in Java: static final String METADATA_FILE_NAME.
-
+* if/else, for, and while statements should include curly braces, even if they are only followed by a single line.
 
 '''Comments, headers, etc…'''
 
@@ -29,7 +29,6 @@
 * Use source code control to retain the revision history in the particular file, i.e. check in the SVN often and each time enter the revision history comment.
 * Work incrementally. Make small changes and make sure the code compiles. Check-in after every major step to retain revision history.
 * If there is a danger of destabilizing the main application, open a branch and work in it for a while, but still check in at least once each day.
-
 
 ==Micro-Manager Coding Conventions==
 
