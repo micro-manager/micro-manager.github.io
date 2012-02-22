@@ -19,7 +19,7 @@ In the hardware configuration wizard you will need to add one Omicron Laser Cont
 
 The following laser features and operating modes can be controlled and/or monitored through µ-manager device/property browser:
 
-;Read only properties
+'''Read only properties:'''
 
 *Device type
 *Serial number
@@ -30,7 +30,7 @@ The following laser features and operating modes can be controlled and/or monito
 *Temperature diode
 *Error notification
 
-;Read/Write properties
+'''Read/Write properties:'''
 
 *Laser operation select (turns the laser emission ON or Off)
 *Laser operatingmode select (CW, analogue and/or digital modulation, standby)
