@@ -13,7 +13,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 === Cameras ===
 * [[ABSCamera]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
 * [[Andor]] - Andor cameras
-* [[AndorSDK3]] - New model Andor cameras
+* [[Andor_SDK3]] - New model Andor cameras
 * [[Apogee]] - Apogee cameras
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
