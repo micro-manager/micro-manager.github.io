@@ -83,7 +83,6 @@ These parameters are available only for cooled cameras:
 These parameters are available only for color cameras:
 
 * Coolor corr. matrix : Set colour correction matrix for RGB32 image format.
-* Apply ICC profile : Apply ICC profile for colour correction.
 * White ballance blue : Set white balance blue coefficient.
 * White ballance green : Set white balance green coefficient.
 * White ballance red : Set white balance red coefficient.
