@@ -1,0 +1,11 @@
+Platforms: Windows 
+License: LGPL
+Available since version: 1.4.8 
+Author: Yihui Wu
+ 
+
+
+The Mightex SLC LED Driver adapter operates the Mightex SLC series USB universal LED Drivers. Please refer to Mightex SLC LED Driver user manual for details of the modals.
+
+This adapter makes the LED driver usable as a shutter in Micro-Manager. Mightex SLC USB LED Driver is designed as an USB interfaced HID device. The adapter has several properties that can be used to control the LED driver.
+Basically, user can select a channel to be active and set its mode and parameters, then user can switch On/Off this active channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
