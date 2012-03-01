@@ -8,9 +8,8 @@ Mightex Devices Supported: SLC-AA/AV/SA/SV/FA/FV/XA/XV/MA/CA USB LED Drivers.
 
 Author: Yihui Wu
  
-[http://www.mightexsystems.com/index.php?cPath=4_54 Mightex SLC LED Drivers]
+[http://www.mightexsystems.com/index.php?cPath=4_54 Mightex SLC-Series LED Controllers]
 
-The Mightex SLC LED Driver adapter operates the Mightex SLC series USB universal LED Drivers. Please refer to Mightex SLC LED Driver user manual for details of the modals.
+This Micro-Manager adapter can be used to operate Mightex SLC-series USB universal LED controllers. Please refer to Mightex SLC-series LED controller user’s manual for more details. 
 
-This adapter makes the LED driver usable as a shutter in Micro-Manager. Mightex SLC USB LED Driver is designed as an USB interfaced HID device. The adapter has several properties that can be used to control the LED driver.
-Basically, user can select a channel to be active and set its mode and parameters, then user can switch On/Off this active channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
+Mightex SLC-series universal LED controllers are designed as USB interfaced HID devices, and this Micro-Manager adapter enables an LED controller to be used as a shutter in Micro-Manager. The adapter has several properties that can be used to control the LED controllers. Using this adapter,one can select an active channel and set its mode and parameters. One can then switch On/Off this channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
