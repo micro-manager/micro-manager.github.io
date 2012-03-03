@@ -91,7 +91,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Best results are obtained setting camera image type to raw, and BitDepth to 16. 
 
-:The driver decodes "raw" images so that a pixel in the decoded image corresponds to a [http://en.wikipedia.org/wiki/Bayer_filter Bayer cell] on the image sensor. A single pixel in the decoded image corresponds to one red sensor, one blue sensor, and the average of two adjacent green sensors in the camera. The resulting image has half the width and half the height of the camera sensor matrix, and is free of [http://en.wikipedia.org/wiki/Demosaicing demosaicing] or debayering  artifacts.
+:The driver decodes "raw" images so that a pixel in the decoded image corresponds to a [http://en.wikipedia.org/wiki/Bayer_filter Bayer cell] on the image sensor. A single pixel in the decoded image then corresponds to one red sensor, one blue sensor, and the average of two adjacent green sensors in the camera. The resulting image has half the width and half the height of the camera sensor matrix, and is free of [http://en.wikipedia.org/wiki/Demosaicing demosaicing] or debayering  artifacts.
 
 :Using JPEG images may introduce decompression artifacts and should be avoided if authoritative data is needed.
 
