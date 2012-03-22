@@ -4,12 +4,14 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 === Motorized Microscopes ===
 * [[LeicaDMI]] - Leica DMI and DM microscopes
 * [[LeicaDMR]] - Leica DMR microscopes (and DMIRBE)
+* [[MoticBA600]] - Motic BA600 microscopes
 * [[NikonTE2000]] - Nikon TE2000 motorized microscope
 * [[NikonTI]] - Nikon TI microscope
 * [[NikonAZ100]] - Nikon AZ100 Zoom microscope
 * [[Olympus]] - Olympus IX81 (Inverted)/BX61 (Upright)
 * [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
 * [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
+
 === Cameras ===
 * [[ABSCamera]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
 * [[Andor]] - Andor cameras
