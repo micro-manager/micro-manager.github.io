@@ -14,19 +14,17 @@ __NOTOC__
 * A large number of bug fixes
 * A new Gaussian fitter plugin that lets you fit and track diffraction limited spots
 * Support for a new (beta) device type: Galvos (for phototargeting; currently the Rapp UGA40).
-* New devices:
+* New devices, including:
 ** Aladdin pump (Kurt Thorn)
-** Lumencor Spectra
-** Micropix Cameras
-** Mightex
+** Lumencor Spectra (Louis Ashford)
+** Micropix Cameras (Ed Simmons)
+** Mightex (Yihui Wu)
 ** Motic Cameras
-** MP285
-** NPointC400
-** Omicron
-** Scientifica Stages
-** SutterStage
+** MP285 (Sutter Instruments, Mission Bay Imaging)
+** NPointC400 (Mission Bay Imaging)
+** Omicron (Jan-Erik Herche, Ralf Schlotter)
 ** VariLC (Rudolf Oldenbourg, MBL)
-** Ximea Cameras
+** Ximea Cameras (Marian Zajko)
 
 === Micro-Manager 1.4.7 (November 17, 2011) ===
 
