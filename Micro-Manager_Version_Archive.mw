@@ -8,7 +8,25 @@ __NOTOC__
 
 ==== New in 1.4.8 ====
 
-* [Will be added here soon]
+* Substantially improved display performance
+* Improved support for color cameras and multiple cameras
+* Improved contrast panels
+* A large number of bug fixes
+* A new Gaussian fitter plugin that lets you fit and track diffraction limited spots
+* Support for a new (beta) device type: Galvos (for phototargeting; currently the Rapp UGA40).
+* New devices:
+** Aladdin pump (Kurt Thorn)
+** Lumencor Spectra
+** Micropix Cameras
+** Mightex
+** Motic Cameras
+** MP285
+** NPointC400
+** Omicron
+** Scientifica Stages
+** SutterStage
+** VariLC (Rudolf Oldenbourg, MBL)
+** Ximea Cameras
 
 === Micro-Manager 1.4.7 (November 17, 2011) ===
 
