@@ -6,6 +6,12 @@ __NOTOC__
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.9.exe Windows 64-bit], 39 MB<br />
 [http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.8.dmg Mac OS X (Universal Binary)], 47 MB<br />
 
+==== New in 1.4.9 ====
+
+* Brought back missing Andor DLLs
+* Fixed problem of starting MDA during live mode
+* Upgraded java to latest version -- 1.6.0_31
+
 == Micro-Manager 1.4.8 (March 21, 2012) ==
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.8.exe Windows 32-bit], 40 MB<br />
