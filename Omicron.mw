@@ -5,7 +5,7 @@ Author:	        Jan-Erik Herche/Ralf Schlotter
 License:	LGPL
 Platforms:	All platforms (uses serial port)
 Devices:	Omicron “…xX”-laser series
-Since Version:  1.48 (actual nightly build)
+Since Version:  1.48
 
 Default serial port settings:	AnswerTimeout	        2.5 seconds
 	                        BaudRate	        57600
