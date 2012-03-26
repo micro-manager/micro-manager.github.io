@@ -56,7 +56,7 @@ In order to control a hardware device <span>''MMCore''</span> needs to load the 
 
 <div class="source"> CMMCore core = new CMMCore();<br /> core.loadDevice("Camera", "DemoCamera", "DCam");<br /> core.initializeDevice("Camera");<br /> core.setExposure(50);<br /> core.snapImage();<br /> byte image[] = (byte[]) core.getImage();<br /> long width = core.getImageWidth();<br /> long height = core.getImageHeight();<br /></div>
 
-<br /> For clarity the above example omits some details necessary to really compile and run this example. Complete Java code is here: [content/code_examples/Tutorial1.java Tutorial1.java]<br />
+<br /> For clarity the above example omits some details necessary to really compile and run this example. Complete Java code is here: [http://valelab.ucsf.edu/~MM/files/Tutorial1.java Tutorial1.java]<br />
 
 === Error handling ===
 
