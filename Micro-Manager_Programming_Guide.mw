@@ -82,7 +82,7 @@ Each device loaded into the MMCore will expose a number of properties which we c
 
 <div class="source"> boolean ro = core.isPropertyReadOnly("Camera", "Description");</div>
 
-<br /> Complete Java code is here: [content/code_examples/Tutorial2.java Tutorial2.java].<br />
+<br /> Complete Java code is here: [http://valelab.ucsf.edu/~MM/files/Tutorial2.java Tutorial2.java].<br />
 
 === Relationship between properties and device specific calls ===
 
