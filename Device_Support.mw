@@ -62,6 +62,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[LudlLow]] - Ludl stages, shutters and filter wheels (other)
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
+* [[MarzhauserLStep]] - M&auml;rzh&auml;user LStep stage controller
 * [[MCL_MicroDrive|MCL-MicroDrive]] - Mad City Labs MicroDrive
 * [[MCL_NanoDrive|MCL-NanoDrive]] - Mad City Labs NanoDrive
 * [[MT20]] - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
