@@ -8,7 +8,7 @@ Mightex Devices Supported: Mightex SLC USB Drivers.
 
 Author: Yihui Wu
  
-[http://www.mightexsystems.com/family_info.php?cPath=4_54_26&categories_id=26]
+[http://www.mightexsystems.com/family_info.php?cPath=4_54_26&categories_id=26 - Mightex SLC LED Drivers]
 
 This Micro-Manager adapter can be used to operate Mightex SLC LED Drivers. Please refer to Mightex SLC LED Drivers user’s manual for more details. 
 
