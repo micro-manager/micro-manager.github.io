@@ -2,14 +2,14 @@ Platforms: Windows
  
 License: LGPL
 
-Available since version: 1.4.9 
+Available since version: 1.4.8
 
-Mightex Devices Supported: BLS Control Modules.
+Mightex Devices Supported: Mightex SLC USB Drivers.
 
 Author: Yihui Wu
  
-[ http://www.mightexsystems.com/family_info.php?cPath=120_220&categories_id=220]
+[http://www.mightexsystems.com/family_info.php?cPath=4_54_26&categories_id=26]
 
-This Micro-Manager adapter can be used to operate Mightex BLS Control Modules. Please refer to Mightex BLS Control Modules user’s manual for more details. 
+This Micro-Manager adapter can be used to operate Mightex SLC LED Drivers. Please refer to Mightex SLC LED Drivers user’s manual for more details. 
 
-Mightex BLS Control Modules are deigned as USB interfaced HID devices, and this Micro-Manager adapter enables an BLS Control Module to be used as a shutter in Micro-Manager. The adapter has several properties that can be used to control the BLS Control Modules. Using this adapter,one can select an active channel and set its mode and parameters. One can then switch On/Off this channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
+Mightex SLC LED Drivers are deigned as USB interfaced HID devices, and this Micro-Manager adapter enables an Universal LED driver to be used as a shutter in Micro-Manager. The adapter has several properties that can be used to control the LED Drivers. Using this adapter,one can select an active channel and set its mode and parameters. One can then switch On/Off this channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
