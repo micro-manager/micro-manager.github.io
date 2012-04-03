@@ -117,6 +117,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Mightex]] - LED driver/controllers
+* [[Mightex]] - BLS Control Modules
 * [[Omicron]] - Omicron Laser Controller
 * [[Pecon]] - Pecon Incubation System
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
