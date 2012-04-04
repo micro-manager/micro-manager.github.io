@@ -62,7 +62,7 @@ Configuring Micro-Manager to work with your specific microscope setup is covered
 
 Starting Micro-Manager will also start ImageJ (in fact, ImageJ starts up first and runs Micro-Manager as a plugin). Both ImageJ and Micro-Manager have their own menus (on the Mac you will need to click on either window to display the menu in the main menu bar). Unless specified differently, menu commands in this manual will refer to the Micro-Manager menu. The Micro-Manager and ImageJ windows appear differently on different computer systems; examples from multiple systems are used in this manual.
 
-[[Image:MainControl_window3.png|Startup screen]]<br /> Figure 2. Main Window displaying device controls and image histogram
+[[Image:MM_controlpanel.png|Startup screen]]<br /> Figure 2. Main Window displaying device controls and image histogram
 
 After the configuration file is loaded, the Main Window displays the current settings and shows the status of selected devices.
 
