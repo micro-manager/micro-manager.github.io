@@ -1,7 +1,5 @@
 = Micro-Manager User's Guide =
 
-<br />
-
 = Introduction =
 
 Imaging cells has become an essential technology in many laboratories working in the life sciences. The components needed for such image acquisition consist of a microscope, cameras, light sources, mirrors, filters mounted in motorized filter wheels, x-y-z stages, and shutters. In practice, many complicated sequences of motorized operations are needed to achieve the imaging strategy desired by the researcher (e.g. acquiring images from multiple wavelengths). Thus, computer control of image acquisition is an integral part of contemporary microscopy.
