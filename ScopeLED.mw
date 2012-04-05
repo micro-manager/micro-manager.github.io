@@ -1,7 +1,7 @@
 <table>
 <tr>
   <td valign=top>'''Summary:'''</td>
-  <td>This adapter supports two [http://www.diconlighting.com/ DiCon LED illuminators]: DiConBrightfieldIlluminator for the brightfield illuminator, and DiConFluorescenceIlluminator for the fluorescence illuminator. 
+  <td>This adapter supports two [http://www.ScopeLED.com/ ScopeLED illuminators]: ScopeLED-MSB/MSP for the microscope illuminator, and ScopeLED-FMI for the fluorescence illuminator. 
 Both devices are implemented as shutters, and both devices communicate via USB. 
  </td>
 </tr>
@@ -27,7 +27,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 
 
 === Properties Documentation ===
-(This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/DiConIlluminator/Properties.doc available here.])
+(This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/Properties.doc available here.])
 
 '''All DiCon Illuminators'''
 <table>
@@ -62,6 +62,38 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 <table>
 <tr>
   <td valign=top width=10%>Property</td>
+  <td>SerialNumber</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>String value</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property.
+
+After initialization, this property contains the Serial Number string of the device.</td>
+</tr>
+</table>
+
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+         <td>Version</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the firmware version of the device.</td>
+</tr>
+</table>
+
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
   <td>LastError</td>
 </tr>
 <tr>
@@ -73,6 +105,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
 </tr>
 </table>
+
 <table>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -87,6 +120,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
 </tr>
 </table>
+
 <table>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -98,7 +132,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr>
 <tr>
   <td valign=top>Function</td>
-  <td>Read-only value indicating the number of milliseconds of the previous operation.                                   </td>
+  <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
 </tr>
 </table>
 
