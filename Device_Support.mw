@@ -57,7 +57,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
 * [[DA-Z-Stage]] - For stages that can be controlled with analogue voltage.  Needs a DA device
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
-* [[DiConIlluminator]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.  
 * [[KDV]] - kdvelectronics focus drive (z-stage) for Meiji Techno
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[LudlLow]] - Ludl stages, shutters and filter wheels (other)
@@ -76,6 +75,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
 * [[Scientifica]] - Scientifica stages
+* [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
 * [[SutterStage]] - Sutter XY Stage
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
