@@ -68,11 +68,11 @@ After the configuration file is loaded, the Main Window displays the current set
 
 == Snapping single images ==
 
-To obtain a single image from the camera, press the "Snap" button. A "Snap" window will pop up, displaying the acquired still image. You can use any of the available ImageJ tools to analyze, save or edit the image. In addition, at the bottom of the window there are shortcut buttons to save the image.
+To obtain a single image from the camera, press the "Snap" button. A display window will pop up with the acquired still image. You can use any of the available ImageJ tools to analyze, save or edit the image. In addition, at the bottom of the window there are shortcut buttons to save the image, enter live mode or send images to album.
 
-[[Image:MM_snap-live.png|Image acquisition window]] <br /> Figure 3. "Snap" window.
+[[Image:MM_snap-live.png|Image acquisition window]] <br /> Figure 3. Display window for Snap and Live mode.
 
-Each time you press the Snap button, the image in the "Snap" window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. You can also change any of the settings in the Main Window and the changes will be immediate. The bottom part of the Main Window displays a histogram of the image.
+Each time you press the Snap button, the image in the display window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. The Main Window displays a histogram of the image; any changes to brightness and contrast will be immediate reflected on the display window.
 
 == Live image mode ==
 
