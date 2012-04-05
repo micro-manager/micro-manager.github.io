@@ -15,7 +15,7 @@
 |-
 |BaudRate||9600
 |-
-|DelayBetweenCharsMs||0 (change to 5ms in case of problems)
+|DelayBetweenCharsMs||0 
 |-
 |Handshaking||Off
 |-
