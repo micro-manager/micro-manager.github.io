@@ -184,5 +184,21 @@ The stage uses absolute Z coordinates and any positions recorded in micro-manage
 
 Zeroing is automatic on startup and takes about 27 seconds to complete. If we try to move the stage before zeroing sequence is complete, an error message will pop up. Zeroing is required only the fist time the stage is used after powering it up. If we just re-start the software without powering down the stage controller, zero sequence will be automatically skipped and the stage can be used immediately after startup.
 
+== Integrated filter wheel ==
 
+Integrated filter wheel adapter requires only a single serial port (RS-232). A port reserved for this stage and initialized with the following parameters:
+
+BaudRate: 115200
+
+Handshaking: Off
+
+Parity: None
+
+StopBits: 1
+
+(all other micro-manager port parameters can be left with defaults)
+
+The only parameter that is required for configuration of the filter wheel is the name of the serial port (e.g. COM1) attached to the dedicated controller. If the port was correctly set and connected, micro-manager will load the filter wheel adapter at startup.
+
+After power up the filter needs to perform homing procedure which takes about 20 seconds. On start-up micro-manager will automatically start homing the wheel in the background - no action is required from the user. If you attempt to use the wheel right after start up, while the home procedure is in progress, an error might be reported by micro-manager. In that case wait for few more seconds and try again.
 {{Devices_Sidebar}}
