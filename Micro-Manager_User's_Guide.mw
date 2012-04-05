@@ -266,5 +266,16 @@ Micro-Manager will store a 5D-Image dataset in a single folder. Acquired images 
 = Credits, License and Copyright =
 
 Micro-Manager is an Open Source software package for controlling automated microscopes on multiple platforms (Windows, Mac and Linux). The software is being developed in the [http://valelab.ucsf.edu Vale Lab] at the Unversity of California San Francisco and funding was provided by the Sandler Foundation and a grant from the NIH. The original software design was by Nenad Amodaj, and the software is currently developed by Arthur Edelstein and Nico Stuurman.  Many individuals contributed source code or other types of help (including this documentation).  The Micro-Manager source code is distributed under the BSD license for the user interface and the LGPL license for the MMCore (control module). All supplied device drivers ('adpaters') for cameras and other devices are covered by the BSD license. Copyright for some of the adapters is owned by other parties.<br /><br />
+<span>
+Updated for version 1.4.8, April 2012 (by Ziah Dean)<br />
+Updated for version 1.4.6, Sept. 2011 (by Ziah Dean)<br />
+Updated for version 1.3.40 on July 24, 2009. <br />
+Updated for version 1.3.22 (beta) on February 11, 2009<br />
+Updated for version 1.2.35 on August 23, 2008<br />
+Updated for version 1.0.61, on January 31<br />
+Updated for version 1.0.54 (beta) on December 4, 2006<br /> 
+Nenad Amodaj, April 2006</span><br /><span>
+</span><br />
+
 
 {{Documentation_Sidebar}}
