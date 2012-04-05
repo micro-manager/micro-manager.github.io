@@ -200,7 +200,7 @@ StopBits: 1
 
 The only parameter that is required for configuration of the filter wheel is the name of the serial port (e.g. COM1) attached to the dedicated controller. If the port was correctly set and connected, micro-manager will load the filter wheel adapter at startup.
 
-=== Using the Piezo Z Stage ===
+=== Using the wheel ===
 After power up the filter needs to perform homing procedure which takes about 20 seconds. On start-up micro-manager will automatically start homing the wheel in the background - no action is required from the user. If you attempt to use the wheel right after start up, while the home procedure is in progress, an error might be reported by micro-manager. In that case wait for few more seconds and try again.
 
 If configured and initialized properly the filter wheel should report either 5 or 8 available positions.
