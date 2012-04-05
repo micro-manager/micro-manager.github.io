@@ -43,6 +43,8 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Sets the USB Vendor ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
+</table>
+<table>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>ProductID</td>
@@ -55,6 +57,8 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
+</table>
+<table>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>SerialNumber</td>
@@ -69,9 +73,11 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 
 After initialization, this property contains the Serial Number string of the device.</td>
 </tr>
+</table>
+<table>
 <tr>
   <td valign=top width=10%>Property</td>
-         <td>Version</td>
+  <td>Version</td>
 </tr>
 <tr>
   <td valign=top>Type</td>
@@ -93,6 +99,8 @@ After initialization, this property contains the Serial Number string of the dev
   <td valign=top>Function</td>
   <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
 </tr>
+</table>
+<table>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>LastDeviceResult</td>
@@ -105,6 +113,8 @@ After initialization, this property contains the Serial Number string of the dev
   <td valign=top>Function</td>
   <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
 </tr>
+</table>
+<table>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>TxnTime</td>
