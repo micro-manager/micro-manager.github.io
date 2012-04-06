@@ -3,15 +3,32 @@ The plugin is primarily focused on the localization of single fluorescent molecu
 
 ==Break down of Dialogue window==
 
-
-
+__NOTOC__
+<table cellspacing=15><tr><td>
+[[Image: LM_DialogueWindow.png]]</td>
+<td>
 ====Image Parameters====
+
+
 ====Finding Maxima====
 ====Fitting Parameters====
 ====Filtering Data====
+</td>
+</tr>
+</table> 
+
+
+
 
 ==Data processing window==
+
+<table cellspacing=15><tr><td>
+[[Image: LM_DialogueWindow.png]]</td>
+<td>
 ====Drift correction====
 ====2C ref. and cor.====
 ====Plotting====
 ====Rendering====
+</td>
+</tr>
+</table>
