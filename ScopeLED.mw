@@ -32,7 +32,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 '''All ScopeLED Illuminators'''
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>VendorID</td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>ProductID</td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>SerialNumber</td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>Version</td>
 </tr>
 <tr>
@@ -86,8 +86,9 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the firmware version of the device.</td>
 </tr>
 </table>
+<table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>LastError</td>
 </tr>
 <tr>
@@ -101,7 +102,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>LastDeviceResult</td>
 </tr>
 <tr>
@@ -115,7 +116,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </table>
 <table>
 <tr>
-  <td valign=top width=12%>Property</td>
+  <td valign=top width=10%>Property</td>
   <td>TxnTime</td>
 </tr>
 <tr>
@@ -127,7 +128,6 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
 </tr>
 </table>
-<table>
 
 '''ScopeLED-MSB/MSP'''
 
