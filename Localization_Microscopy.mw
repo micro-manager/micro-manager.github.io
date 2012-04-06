@@ -18,17 +18,11 @@ __NOTOC__
 </table> 
 
 
-
-
 ==Data processing window==
 
-<table cellspacing=15><tr><td>
-[[Image: LM_DialogueWindow.png]]</td>
-<td>
+[[Image: LM_DataProcWindow.png]]
+
 ====Drift correction====
 ====2C ref. and cor.====
 ====Plotting====
 ====Rendering====
-</td>
-</tr>
-</table>
