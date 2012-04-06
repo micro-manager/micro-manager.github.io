@@ -30,7 +30,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 (This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/Properties.doc available here.])
 
 '''All ScopeLED Illuminators'''
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>VendorID</td>
@@ -44,7 +44,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Sets the USB Vendor ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>ProductID</td>
@@ -58,7 +58,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>SerialNumber</td>
@@ -72,21 +72,21 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>Version</td>
 </tr>
 <tr>
-  <td valign=top>Type</td>
+  <td valign=top width=10%>Type</td>
   <td>Numeric</td>
 </tr>
 <tr>
-  <td valign=top>Function</td>
+  <td valign=top width=10%>Function</td>
   <td>Read-only value indicating the firmware version of the device.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>LastError</td>
@@ -100,7 +100,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>LastDeviceResult</td>
@@ -114,7 +114,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>TxnTime</td>
@@ -150,7 +150,7 @@ Note: The ProductID for microscope illuminators is 4867 (0x1303).
 '''ScopeLED-FMI'''
 
 Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>LEDGroup</td>
@@ -164,7 +164,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td>Gets or sets the active LED group. </td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>Channel1Brightness, Channel2Brightness, Channel3Brightness, Channel4Brightness</td>
@@ -178,7 +178,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td>Gets or sets the brightness level of the indicated channel. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>Channel1Wavelength, Channel2Wavelength, Channel3Wavelength, Channel4Wavelength</td>
@@ -192,7 +192,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td>Gets the wavelength of the indicated channel in nanometers.</td>
 </tr>
 </table>
-<table>
+<table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
   <td>LEDGroup1Channels, LEDGroup2Channels, LEDGroup3Channels, LEDGroup4Channels, LEDGroup5Channels, LEDGroup6Channels, LEDGroup7Channels, LEDGroup8Channels, LEDGroup9Channels</td>
