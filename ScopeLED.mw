@@ -27,5 +27,245 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 
 
 === Properties Documentation ===
+(This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/Properties.doc available here.])
 
-Clean Slate.
+'''All ScopeLED Illuminators'''
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>VendorID</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric value from 0 to 65535. The DiCon USB Vendor ID is 9410 (0x24C2).</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the USB Vendor ID used to identify the target device. This property must be set before the device is instantiated.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>ProductID</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric value from 0 to 65535.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>SerialNumber</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>String value</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>Version</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the firmware version of the device.</td>
+</tr>
+</table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>LastError</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>LastDeviceResult</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=12%>Property</td>
+  <td>TxnTime</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Numeric</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
+</tr>
+</table>
+<table>
+
+'''ScopeLED-MSB/MSP'''
+
+Note: The ProductID for microscope illuminators is 4867 (0x1303).
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Brightness, Channel2Brightness, Channel3Brightness, Channel4Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the brightness level of the indicated channel. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
+</tr>
+</table>
+
+'''ScopeLED-FMI'''
+
+Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>LEDGroup</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Integer from 1 to 9.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the active LED group. </td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Brightness, Channel2Brightness, Channel3Brightness, Channel4Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the brightness level of the indicated channel. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Wavelength, Channel2Wavelength, Channel3Wavelength, Channel4Wavelength</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Integer value indicating the wavelength in nanometers</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets the wavelength of the indicated channel in nanometers.</td>
+</tr>
+</table>
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>LEDGroup1Channels, LEDGroup2Channels, LEDGroup3Channels, LEDGroup4Channels, LEDGroup5Channels, LEDGroup6Channels, LEDGroup7Channels, LEDGroup8Channels, LEDGroup9Channels</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Integer value representing a bit-map of the active channels</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Read-only bit-map that indicates which channels are available for the indicated LED group.</td>
+</tr>
+</table>
+
+
+
+'''Appendix A: USB Error Codes'''
+
+<table>
+<tr>
+   <td>Error Value</td>
+   <td>Description</td>
+</tr>
+<tr>
+   <td>0</td>
+   <td>No error.</td>
+</tr>
+<tr>
+   <td>1</td>
+   <td>A parameter is invalid.</td>
+</tr>
+<tr>
+   <td>2</td>
+   <td>Device not found.</td>
+</tr>
+<tr>
+   <td>3</td>
+   <td>Failed memory allocation. </td>
+</tr>
+<tr>
+   <td>4</td>
+   <td>Failed HID enumeration.</td>
+</tr>
+<tr>
+   <td>5</td>
+   <td>Failed to initialize the device.</td>
+</tr>
+<tr>
+   <td>6</td>
+   <td>Operation aborted. </td>
+</tr>
+<tr>
+   <td>7</td>
+   <td>Device is not connected.</td>
+</tr>
+<tr>
+   <td>8</td>
+   <td>Invalid device state.</td>
+</tr>
+<tr>
+   <td>9</td>
+   <td>The buffer is too small.</td>
+</tr>
+<tr>
+   <td>10</td>
+   <td>An HID API function failed.</td>
+</tr>
+<tr>
+   <td>11</td>
+   <td>Queue error.</td>
+</tr>
+<tr>
+   <td></td>
+   <td></td>
+</tr>
+</table>
