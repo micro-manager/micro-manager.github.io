@@ -114,20 +114,6 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
 </tr>
 </table>
-<table width=100%>
-<tr>
-  <td valign=top width=10%>Property</td>
-  <td>TxnTime</td>
-</tr>
-<tr>
-  <td valign=top>Type</td>
-  <td>Numeric</td>
-</tr>
-<tr>
-  <td valign=top>Function</td>
-  <td>Read-only value indicating the number of milliseconds of the previous operation.</td>
-</tr>
-</table>
 
 '''ScopeLED-MSB/MSP'''
 
