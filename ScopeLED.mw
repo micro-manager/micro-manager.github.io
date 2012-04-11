@@ -193,6 +193,50 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
 </tr>
 </table>
 
+<table width=100%>
+ <tr>
+  <td valign=top width=10%>Property</td>
+  <td>ActiveChannels</td>
+ </tr>
+ <tr>
+  <td valign=top>Type</td>
+  <td>String</td>
+ </tr>
+ <tr>
+  <td valign=top>Function</td>
+  <td>Gets a comma-separated list of active channels for the current active LED group. The channel is in the format “ChX” where X is the channel number.</td>
+ </tr>
+</table>
+
+<table width=100%>
+ <tr>
+  <td valign=top width=10%>Property</td>
+  <td>ActiveWavelengths</td>
+ </tr>
+ <tr>
+  <td valign=top>Type</td>
+  <td>String</td>
+ </tr>
+ <tr>
+  <td valign=top>Function</td>
+  <td>Gets a comma separated list of active wavelengths for the current active LED group.</td>
+ </tr>
+</table>
+
+<table width=100%>
+ <tr>
+  <td width=10%>Property</td>
+  <td>OptimalStagePosition</td>
+ </tr>
+ <tr>
+  <td>Type</td>
+  <td>String</td>
+ </tr>
+ <tr>
+  <td>Function</td>
+  <td>Gets the X and Y stage coordinates that are optimal for the current active LED group.</td>
+ </tr>
+</table>
 
 
 '''Appendix A: USB Error Codes'''
