@@ -43,7 +43,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Sets the USB Vendor ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -57,7 +57,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Sets the USB Product ID used to identify the target device. This property must be set before the device is instantiated.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -71,7 +71,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -85,7 +85,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top width=10%>Function</td>
   <td>Read-only value indicating the firmware version of the device.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -99,7 +99,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Read-only value indicating the last USB communication error. See Appendix A for a description of the error codes.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -113,7 +113,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
   <td valign=top>Function</td>
   <td>Read-only value indicating the last device error. See your device documentation for a description of the error codes.</td>
 </tr>
-</table>
+</table><br>
 
 '''ScopeLED-MSB/MSP'''
 
@@ -131,7 +131,7 @@ Note: The ProductID for microscope illuminators is 4867 (0x1303).
   <td valign=top>Function</td>
   <td>Gets or sets the brightness level of the indicated channel. This property changes the cached value. The new value will not take effect until the shutter is next opened.</td>
 </tr>
-</table>
+</table><br>
 
 '''ScopeLED-FMI'''
 
@@ -149,7 +149,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Gets or sets the active LED group. </td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -163,7 +163,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Gets or sets the brightness level of the indicated channel. This property sends a command to the device, so if the shutter is open, the brightness is affected immediately.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -177,7 +177,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Gets the wavelength of the indicated channel in nanometers.</td>
 </tr>
-</table>
+</table><br>
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -191,7 +191,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Read-only bit-map that indicates which channels are available for the indicated LED group.</td>
 </tr>
-</table>
+</table><br>
 
 <table width=100%>
  <tr>
@@ -206,7 +206,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Gets a comma-separated list of active channels for the current active LED group. The channel is in the format “ChX” where X is the channel number.</td>
  </tr>
-</table>
+</table><br>
 
 <table width=100%>
  <tr>
@@ -221,7 +221,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td valign=top>Function</td>
   <td>Gets a comma separated list of active wavelengths for the current active LED group.</td>
  </tr>
-</table>
+</table><br>
 
 <table width=100%>
  <tr>
@@ -236,7 +236,7 @@ Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
   <td>Function</td>
   <td>Gets the X and Y stage coordinates that are optimal for the current active LED group.</td>
  </tr>
-</table>
+</table><br>
 
 
 '''Appendix A: USB Error Codes'''
