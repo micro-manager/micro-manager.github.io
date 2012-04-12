@@ -68,7 +68,7 @@ USB cameras using high bandwidth such as the Clara must be plugged into the comp
 
 '''Windows O/S'''
 
-You need to use a utility like [http://ompldr.org/vYzF5MA/UVCView.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
+You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
 
 Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
 [[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
