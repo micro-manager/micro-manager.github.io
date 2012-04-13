@@ -69,8 +69,8 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr>
 <tr>
   <td valign=top>Function</td>
-  <td><p>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.</p><p>
-During initialization, this property is set to the Serial Number string of the device.</p><p>
+  <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.<p>
+During initialization, this property is set to the serial number string of the device.</p><p>
 After initialization Micro-Manager will make no further use of this property. It is for information purposes only. Changing the value will not make any changes to the device.</p> 
 </td>
 </tr>
@@ -264,7 +264,8 @@ The following table lists the error values returned by the LastError property.
    <td valign=top>Device not found.
 <p><i>
 Make sure that the device is properly connected to your computer and powered on.
-Make sure that the VendorID, ProductID and SerialNumber (optional) properties match your device. 
+</i></p>
+<p><i>Make sure that the VendorID, ProductID and SerialNumber (optional) properties match your device. 
 </i></p></td>
 </tr>
 <tr>
