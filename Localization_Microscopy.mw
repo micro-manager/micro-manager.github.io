@@ -5,18 +5,51 @@ This plugin is primarily focused on the localization of single fluorescent molec
 
 __NOTOC__
 <table cellspacing=15><tr><td>
-[[Image: LM_DialogueWindow.png]]</td>
+[[Image: Image-Prams.JPG]]</td>
 <td>
-====Image Parameters====
+====Image Parameters:====
+</td>
+</table>
 
-
+<table cellspacing=15><tr><td>
+[[Image: Max-settings.JPG]]</td>
+<td>
 ====Finding Maxima====
+</td>
+</table>
+
+<table cellspacing=15><tr><td>
+[[Image: Fit-prams.JPG]]</td>
+<td>
 ====Fitting Parameters====
+</td>
+</table>
+
+<table cellspacing=15><tr><td>
+[[Image: Filter-data.JPG]]</td>
+<td>
 ====Filtering Data====
 </td>
-</tr>
-</table> 
+</table>
 
+<table cellspacing=15><tr><td>
+[[Image: Data-processing.JPG]]</td></tr>
+<td> '''Data Processing'''
+</td> <tr><td>
+{|
+|-
+|[[Image: Fit-button.JPG]]   blank
+|-
+|[[Image: Track-button.JPG]] blank
+|-
+|[[Image: MTrack-button.JPG]] MTrack: blank
+|-
+|[[Image: Data-button.JPG]] Data: blank
+|- 
+|[[Image:Stop-button.JPG ]] Stop: blank 
+|}
+</td></tr>
+</table>
 
 ==Data processing window==
 
