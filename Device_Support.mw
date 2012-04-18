@@ -121,6 +121,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Mightex BLS]] - BLS Control Modules
 * [[Omicron]] - Omicron Laser Controller
 * [[Pecon]] - Pecon Incubation System
+* [[Polychrome5000]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
 * [[SimpleAutofocus]] - Image-based autofocus software 'device'.
 * [[Sapphire]] - Lasers from Coherent
