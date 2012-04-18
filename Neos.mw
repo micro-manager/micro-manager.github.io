@@ -16,5 +16,5 @@ This adapter uses the [http://www.logix4u.net/inpout32.htm inpout.dll]to talk to
 
 --[[User:Nico|Nico]] 15:34, 15 August 2007 (PDT)
 
-
+{{ParallelPort_Warning}}
 {{Devices_Sidebar}}
