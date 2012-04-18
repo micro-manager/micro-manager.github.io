@@ -17,5 +17,5 @@ For instance: <br>
 
 Note that this adapter does not provide a shutter device.  The [[AOTF]] adapter provides a shutter that can set pins of the parallel port.
 
-
+{{ParallelPort_Warning}}
 {{Devices_Sidebar}}
