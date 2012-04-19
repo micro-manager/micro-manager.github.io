@@ -9,9 +9,12 @@ __NOTOC__
 
 ==== New in 1.4.10 ====
 
+* Numerous bug fixes in image display and contrast panels
 * Open Micro-Manager data sets either into memory (RAM) or as virtual stacks.
-* Till iMic
-* Till Polychrome V
+* New Device Adapters:
+** Mightex_BLS
+** Till iMic
+** Till Polychrome V
 
 == Micro-Manager 1.4.9 (March 22, 2012) ==
 
