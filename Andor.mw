@@ -30,7 +30,10 @@
 |Windows and Linux (No Mac driver available)
 |-
 |valign="top"|'''Devices:'''
-|iXon, iXon+, iXon3
+|iXon Ultra (requires nightly build. 1.4.9_20120418)
+|-
+|
+|iXon3, iXon+, iXon
 |-
 |
 |Luca-S, Luca-R
