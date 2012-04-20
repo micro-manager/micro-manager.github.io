@@ -7,7 +7,7 @@ __NOTOC__
 <table cellspacing=15><tr  valign=top><td>
 [[Image: Image-Prams.JPG]]</td>
 <td>'''Imaging Parameters:'''<br> 
-Values entered in this section will be used in subsequent calculations.  Press the 'read' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the [[Measuring_camera_specifications Photon-conversion factor (pcf)]] or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field linear EM gain (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The Camera Offset (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
+Values entered in this section will be used in subsequent calculations.  Press the 'read' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the [[Photon-conversion factor (pcf)]] or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field linear EM gain (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The Camera Offset (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
 </td>
 </table>
 
