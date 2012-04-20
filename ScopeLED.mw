@@ -86,7 +86,9 @@ After initialization Micro-Manager will make no further use of this property. It
 </tr>
 <tr>
   <td valign=top width=10%>Function</td>
-  <td>Read-only value indicating the firmware version of the device.</td>
+  <td>Read-only value indicating the firmware version of the device.
+The version is a four-byte value. Each byte represents one portion of the version number. The most significant byte contains the most significant version number. For example, a Version value of 0x02030100 (note the hexadecimal notation) indicates a version of 2.3.1.0. 
+</td>
 </tr>
 </table><br>
 <table width=100%>
