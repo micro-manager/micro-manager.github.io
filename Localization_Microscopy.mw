@@ -26,10 +26,10 @@ To find spots, the application searches the image using a box with the size give
 [[Image: Fit-prams.JPG]]</td>
 <td>
 ====Fitting Parameters====
-Dimensions: Determines the model used for the Gaussian.  1 - results in symmetric Gaussian in which only the width can vary, 2 - elliptical Gaussian, 3 - elliptical Gaussian in which the angle (theta) of the blob can vary.  See [http://en.wikipedia.org/wiki/Gaussian_function Wikipedia article on Gaussian] for details. <Br> 
-Fitter: Use either the Simplex or Levenberg-Marquardt fitter.  Levenberg Marquardt needs many fewer iterations to converge and is recommended. 
-Max Iterations: Try 1000 for Simplex Fitter and 50 for Levenberg-Marquardt.  Nicely shaped spots will converge much faster (especially using the LM fitter), so setting this number low will avoid spending many cpu cycles on poorly shaped spots.
-Box Size (pixels): This number will be rounded to the next higher odd number.  It is used in both the spot finding and Gaussian fitting.  Keeping it small (equivalent of about 4 times resolution of the microscope, i.e. about 800 nm total when using a 100x 1.4na objective) will speed up analysis considerably.
+'''Dimensions:''' Determines the model used for the Gaussian.  1 - results in symmetric Gaussian in which only the width can vary, 2 - elliptical Gaussian, 3 - elliptical Gaussian in which the angle (theta) of the blob can vary.  See [http://en.wikipedia.org/wiki/Gaussian_function Wikipedia article on Gaussian] for details. <br> 
+'''Fitter:''' Use either the Simplex or Levenberg-Marquardt fitter.  Levenberg Marquardt needs many fewer iterations to converge and is recommended. <br>
+'''Max Iterations:''' Try 1000 for Simplex Fitter and 50 for Levenberg-Marquardt.  Nicely shaped spots will converge much faster (especially using the LM fitter), so setting this number low will avoid spending many cpu cycles on poorly shaped spots.<br>
+'''Box Size (pixels):''' This number will be rounded to the next higher odd number.  It is used in both the spot finding and Gaussian fitting.  Keeping it small (equivalent of about 4 times resolution of the microscope, i.e. about 800 nm total when using a 100x 1.4na objective) will speed up analysis considerably.
 </td>
 </table>
 
