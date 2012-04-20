@@ -1,13 +1,16 @@
 ==Introduction==
 This plugin uses Gaussian fitting to localize single fluorescent molecules for  tracking or reconstruction of super-resolution images. One window is used to set parameters for fitting and tracking, the second window (which can be opened from the first using the 'Data' button) is used to perform operations (such as rendering, drift correction, etc.) on data-sets of fitting results.
 
-==Break down of Dialogue window==
+==Localization Microscope Window (first window)==
+
+
 
 __NOTOC__
 <table cellspacing=15><tr><td>
 [[Image: Image-Prams.JPG]]</td>
 <td>
-====Image Parameters:====
+====Imaging Parameters:==== 
+Values entered in this section will be used in subsequent calculations.  Press the 'read' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the Photon-conversion factor (pcf) (link) or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field linear EM gain (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The Camera Offset (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
 </td>
 </table>
 
@@ -15,6 +18,7 @@ __NOTOC__
 [[Image: Max-settings.JPG]]</td>
 <td>
 ====Finding Maxima====
+To find spots, the application searches the image using a box with the size given in the Fit Parameters section.  The minimum difference (in digital numbers) between the center pixel and the average of the four corner pixels should be at least the value of the Noise tolerance field for a putative spot to qualify.  The image can optionally be pre-filtered by obtaining the difference image of a Gaussian filter with a width equal to the pixel size and a Gaussian filter 5 times the pixel size.  However, such pref-filtering rarely helps and will slow down calculations. 
 </td>
 </table>
 
