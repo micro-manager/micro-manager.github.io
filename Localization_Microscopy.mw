@@ -3,29 +3,24 @@ This plugin uses Gaussian fitting to localize single fluorescent molecules for  
 
 ==Localization Microscope Window (first window)==
 
-
-
 __NOTOC__
-<table cellspacing=15 valign=top><tr><td>
+<table cellspacing=15><tr  valign=top><td>
 [[Image: Image-Prams.JPG]]</td>
-<td>
-====Imaging Parameters:==== 
+<td>'''Imaging Parameters:'''<br> 
 Values entered in this section will be used in subsequent calculations.  Press the 'read' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the Photon-conversion factor (pcf) (link) or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field linear EM gain (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The Camera Offset (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
 </td>
 </table>
 
-<table cellspacing=15><tr><td>
+<table cellspacing=15><tr valign=top><td>
 [[Image: Max-settings.JPG]]</td>
-<td>
-====Finding Maxima====
+<td>'''Finding Maxima'''
 To find spots, the application searches the image using a box with the size given in the Fit Parameters section.  The minimum difference (in digital numbers) between the center pixel and the average of the four corner pixels should be at least the value of the Noise tolerance field for a putative spot to qualify.  The image can optionally be pre-filtered by obtaining the difference image of a Gaussian filter with a width equal to the pixel size and a Gaussian filter 5 times the pixel size.  However, such pref-filtering rarely helps and will slow down calculations. 
 </td>
 </table>
 
-<table cellspacing=15><tr><td>
+<table cellspacing=15><tr valign=top><td>
 [[Image: Fit-prams.JPG]]</td>
-<td>
-====Fitting Parameters====
+<td>'''Fitting Parameters'''
 '''Dimensions:''' Determines the model used for the Gaussian.  1 - results in symmetric Gaussian in which only the width can vary, 2 - elliptical Gaussian, 3 - elliptical Gaussian in which the angle (theta) of the blob can vary.  See [http://en.wikipedia.org/wiki/Gaussian_function Wikipedia article on Gaussian] for details. <br> 
 '''Fitter:''' Use either the Simplex or Levenberg-Marquardt fitter.  Levenberg Marquardt needs many fewer iterations to converge and is recommended. <br>
 '''Max Iterations:''' Try 1000 for Simplex Fitter and 50 for Levenberg-Marquardt.  Nicely shaped spots will converge much faster (especially using the LM fitter), so setting this number low will avoid spending many cpu cycles on poorly shaped spots.<br>
@@ -33,11 +28,9 @@ To find spots, the application searches the image using a box with the size give
 </td>
 </table>
 
-<table cellspacing=15><tr><td>
+<table cellspacing=15><tr valign=top><td>
 [[Image: Filter-data.JPG]]</td>
-<td>
-
-====Filtering Data====
+<td>'''Filtering Data'''
 </td>
 </table>
 
