@@ -1,5 +1,5 @@
 ==Introduction==
-This plugin is primarily focused on the localization of single fluorescent molecules for either tracking or reconstruction of super-resolution images. This plugin has been carefully packaged to allow fast peak-fitting and rendering that works “out of the box”. A dialogue window allows users access to comprehensive list of options for fitting and tracking single molecules. A second window allows users to various options for data processing such as rendering, drift correction, etc.
+This plugin uses Gaussian fitting to localize single fluorescent molecules for  tracking or reconstruction of super-resolution images. One window is used to set parameters for fitting and tracking, the second window (which can be opened from the first using the 'Data' button) is used to perform operations (such as rendering, drift correction, etc.) on data-sets of fitting results.
 
 ==Break down of Dialogue window==
 
