@@ -7,14 +7,14 @@ __NOTOC__
 <table cellspacing=15><tr  valign=top><td>
 [[Image: Image-Prams.JPG]]</td>
 <td>'''Imaging Parameters:'''<br> 
-Values entered in this section will be used in subsequent calculations.  Press the 'read' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the [[Photon-conversion factor (pcf)]] or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field linear EM gain (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The Camera Offset (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
+Values entered in this section will be used in subsequent calculations.  Press the '''read''' button to deduce some of these values from the meta-data contained in Micro-Manager datasets.  You will need to measure the [[Photon-conversion factor (pcf)]] or use the pcf provided on the camera data-sheet.  If you do not use EM gain, enter '1' in the field '''linear EM gain''' (to calculate the number of photons, digital numbers will be multiplied by pcf / linear EM gain.  The '''Camera Offset''' (in digital numbers) is the average of an exposure in which no light can reach the camera.  The program uses this to calculate the actual number of photons detected in signal and background.
 </td>
 </table>
 
 <table cellspacing=15><tr valign=top><td>
 [[Image: Max-settings.JPG]]</td>
 <td>'''Finding Maxima'''
-To find spots, the application searches the image using a box with the size given in the Fit Parameters section.  The minimum difference (in digital numbers) between the center pixel and the average of the four corner pixels should be at least the value of the '''Noise tolerance''' field for a putative spot to qualify.  The image can optionally be pre-filtered by obtaining the difference image of a Gaussian filter with a width equal to the pixel size and a Gaussian filter 5 times the pixel size.  However, such pref-filtering rarely helps and will slow down calculations. 
+To find spots, the application searches the image using a box with the size given in the Fit Parameters section.  The minimum difference (in digital numbers) between the center pixel and the average of the four corner pixels should be at least the value of the '''Noise tolerance''' field for a putative spot to qualify.  The image can optionally be '''pre-filtered''' by obtaining the difference image of a Gaussian filter with a width equal to the pixel size and a Gaussian filter 5 times the pixel size.  However, such pref-filtering rarely helps and will slow down calculations. The '''show''' button will show on the frontmost window what objects will be recognized as spots.
 </td>
 </table>
 
