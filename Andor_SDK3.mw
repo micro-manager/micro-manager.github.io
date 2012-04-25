@@ -48,7 +48,7 @@ The Andor SDK installs test programs that can be used to get live images:
 == Micro-Manager setup ==
 
 === ImageJ memory buffer size ===
-It is possible to achieve 100 fps in full frame mode with enough RAM.  In the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
+It is possible to achieve full frame rate with enough RAM.  In the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
 
       Edit > Options > Memory & Threads ... > Maximum Memory
 
