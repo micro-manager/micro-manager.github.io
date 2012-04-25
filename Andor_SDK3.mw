@@ -45,6 +45,14 @@ The Andor SDK installs test programs that can be used to get live images:
       C:\Program Files\Andor SOLIS\Drivers\Examples\C\
 
 
+== Micro-Manager setup ==
+
+=== ImageJ memory buffer size ===
+It is possible to achieve 100 fps in full frame mode with enough RAM.  In the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
+
+      Edit > Options > Memory & Threads ... > Maximum Memory
+
+
 == Resources ==
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
