@@ -1,18 +1,21 @@
 == PCO generic camera interface ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO/Cooke cameras]</td></tr>
-<tr><td>'''Author:'''</td><td>Franz Reitner (adapter), Thomas Bauersachs (comments) PCO AG</td></tr>
+'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO/Cooke Cameras]</td></tr>
+<tr><td>'''Author:'''</td><td>Franz Reitner PCO AG (adapter), Thomas Bauersachs PCO AG (comments)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>PCO/Cooke Sensicam, Pixelfly,
-           pco.camera series (1200, 1300, 1400, 1600, 2000, 4000, pixelfly usb, dimax, edge sCMOS)</td></tr>
-<tr><td>'''Available since version:'''</td><td>1.3.24</td>
+<tr><td>'''Devices:'''</td><td>Sensicam, Pixelfly,
+           pco.camera Series (1200, 1300, 1400, 1600, 2000, 4000, pixelfly usb, dimax, edge sCMOS)</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
+
 
 This adapter has been developed for all PCO camera systems.
-_______________________________________________________________
 
-PCO Files
+Installation:<BR>
+a) download and install latest Micro-Manager version<BR>
+b) add PCO camera specific dll files to your Micro-Manager directory<BR> 
+_______________________________________________________________
 
 Files needed for all PCO cameras:
   pco_conv.dll
@@ -27,14 +30,14 @@ In case of Camera Link (CL) interface you also need:
   Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
   National Instruments: sc2_cl_nat.dll
 
-Please copy the corresponding dll files into your micro-manager directory. These files should be found on your computer under C:\Programs\Digital Camera Toolbox\Camware
+Please copy the corresponding dll files into your Micro-Manager directory. These files should be found on your computer under C:\Programs\Digital Camera Toolbox\Camware
 _______________________________________________________________
 
 Please refer to the following Installation Guide for further help:
 [[File:MA_MICROMANAGERWINE_120.pdf|200px|thumb|left|Installation Guide]]
 
 
---Thomas 10:15pm, 27 April 2012 (EDT)
+--Thomas 10:50pm, 27 April 2012 (EDT)
 
 {{Listserv_Search|PCO}}
 
