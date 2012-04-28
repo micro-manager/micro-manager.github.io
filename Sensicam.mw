@@ -1,4 +1,4 @@
-== PCO/Cooke Sensicam camera ==
+== PCO/Cooke Sensicam camera (legacy) ==
 
 <table><tr><td>
 '''Summary:'''</td><td>Controls [http://www.pco.de/sensitive-cameras/ PCO/Cooke Sensicam camera]</td></tr>
@@ -16,3 +16,6 @@ This adapter was developed for the original Sensicam camera (but might work with
 {{Listserv_Search|Sensicam}}
 
 {{Devices_Sidebar}}
+
+This adapter is obsolete. Please use PCO_Camera for all PCO camera systems (legacy and current).
+-- Thomas Bauersachs, PCO AG (27 April 2012)
