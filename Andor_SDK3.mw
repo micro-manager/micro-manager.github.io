@@ -1,6 +1,6 @@
 {|
 |valign="top"|'''Summary:'''
-|Interfaces with Andor Neo camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
+|Interfaces with Andor Neo sCMOS camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
 |-
 |valign="top"|'''Authors:'''
 | David Gault (Andor)
@@ -15,7 +15,7 @@
 |BSD
 |-
 |valign="top"|'''Platforms:'''
-|Windows, FIXME: uncertain about state of Linux support, (No Mac driver available)
+|Windows, Linux, (No Mac driver available)
 |-
 |valign="top"|'''Devices:'''
 |Neo, Zyla
