@@ -27,7 +27,7 @@
 === µManager ===
 Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 
-=== ImageJ ImageIO plugin ===
+=== Image I/O plugin ===
 '''Recommended for Multi-Dimensional Acquisition:'''
 [http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the ImageJ plugins directory.
 
