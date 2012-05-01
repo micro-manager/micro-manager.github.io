@@ -1,3 +1,5 @@
+<big>
+
 {|
 |valign="top"|'''Summary:'''
 |Interfaces with Andor Neo sCMOS camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
@@ -94,6 +96,8 @@ The Andor SDK3 installs test programs that can be used to get live images:
 === Andor support ===
 * [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS Web support]
 * [http://www.andor.com/contact_us/ Phone support]
+
+</big>
 
 {{Devices_Sidebar}}
 
