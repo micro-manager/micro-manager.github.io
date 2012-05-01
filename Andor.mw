@@ -1,3 +1,5 @@
+<big>
+
 {|
 |valign="top"|'''Summary:'''
 |Interfaces with Andor cameras
@@ -12,7 +14,7 @@
 | Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
 |-
 |valign="top"|'''Maintainers:'''
-|David Gault (Andor)
+|David Gault (Andor - retired)
 |-
 |
 |Arthur Edelstein
@@ -216,6 +218,8 @@ Please liaison with Micro-Manager developers to contact the Andor software team
 === Andor support ===
 For contacting Andor product support regarding any questions, see under "Support" for your location -
 http://www.andor.com/contact_us/default.aspx
+
+</big>
 
 {{Devices_Sidebar}}
 
