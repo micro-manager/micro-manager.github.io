@@ -6,10 +6,10 @@
 | David Gault (Andor)
 |-
 |valign="top"|'''Maintainers:'''
-|David Gault, Norman Glasgow (Andor)
+|Norman Glasgow (Andor), David Gault (Andor - retired)
 |-
 |
-|Pariksheet Nanda (Andor) this document
+|Orla Hanrahan (Andor), Pariksheet Nanda (Andor) this document
 |-
 |valign="top"|'''License:'''
 |BSD
@@ -23,34 +23,63 @@
 ----
 
 == Installation ==
-=== Andor SDK3 ===
-You must install the Andor SDK3 since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK3, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
-=== Bitflow Cameralink Configuration ===
-PDF instructions for completing the SDK installation are on the Andor website.
-It's only accessible after logging into your download account (registration is quick and free- login from the top right side of the Andor homepage and then click MyAndor there)
+=== µManager ===
+Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 
-When you log in, click on Manuals > Neo sCMOS > sCMOS Quick Start Guide. 
-On page 13 of the PDF (numbered 11 in the manual) there are instructions to use SysReg to setup the Andor cameralink file.
+=== ImageJ ImageIO plugin ===
+'''Recommended for Multi-Dimensional Acquisition:'''
+[http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the ImageJ plugins directory.
 
-=== Disable power savings ===
-Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
-Make sure you disable C-states power saving.
+=== Andor Driver ===
+Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website]
+
+Copy these 3 files to the Micro-Manager root directory:
+* atcore.dll
+* atdevregcam.dll
+* atcl_bitflow.dll
+
+=== Disable computer power savings ===
+Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
 
 Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management] settings
 
-=== Test communication ===
-The Andor SDK installs test programs that can be used to get live images:
-
-      C:\Program Files\Andor SOLIS\Drivers\Examples\C\
 
 
-== Micro-Manager setup ==
+== Configuration ==
 
-=== ImageJ memory buffer size ===
+=== Increase sequence buffer size ===
+In the µManager toolbar set the Sequence buffer size [MB] to  8,000 - 10,000 MB
+
+      Tools > Options... > Sequence buffer size [MB]
+
+'''Reason:'''
+Due to the rate that a Neo acquires data it's not uncommon for µManager to run out of "Circular Buffer" memory during sequence acquisitions (50+ images). The circular buffer is where images wait when they've been taken off the camera but have not yet been processed by µManager. The error message is:
+
+      Micro-Manager Error:
+      Error: Circular buffer overflowed.
+
+=== Increase ImageJ memory buffer size ===
 It is possible to achieve full frame rate with enough RAM.  In the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
 
       Edit > Options > Memory & Threads ... > Maximum Memory
+
+'''You must restart uManager for these changes to take effect!'''
+
+
+
+== Usage notes ==
+* Software Trigger is best for live mode.
+'''Reason:''' In internal trigger mode where the camera runs flat out, at high frame rates μManager may not be able to images off the camera memory, resulting in a time lag effect.  If the camera memory fills up, the live acquisition will stop and one needs to click to continue using μManager.
+
+* Internal Trigger is best for fast acquisitions
+
+* Trigger mode is dynamically set by µManager when using Multi-Dimensional > Time points.
+** "exposure" < "interval" ignores the "interval" time and instead uses "frame rate" property from the "Device/Property Browser"
+** "exposure" > "interval" sets Software Triggers acquisition.
+
+* Save data to a large storage drive such as 1 TB, 950 MB/sec PCI-e SSD (OCZ-Z drive R2 P-88)
+
 
 
 == Resources ==
@@ -59,10 +88,15 @@ Please liaison with Micro-Manager developers to contact the Andor software team
 
 {{Listserv_Search|Andor}}
 
+=== Test camera communication ===
+The Andor SDK3 installs test programs that can be used to get live images:
+
+      C:\Program Files\Andor SOLIS for Neo\Drivers\Examples\C\
+
 === Andor support ===
-For contacting Andor product support regarding any questions, see under "Support" for your location -
-http://www.andor.com/contact_us/default.aspx
+* [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS Web support]
+* [http://www.andor.com/contact_us/ Phone support]
 
 {{Devices_Sidebar}}
 
-[[User:P.nanda|P.nanda]] 23:08, 22 January 2012 (PST)
+[[User:P.nanda|P.nanda]] 16:04, 1 May 2012 (PDT)
