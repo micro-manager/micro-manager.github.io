@@ -72,7 +72,7 @@ It is possible to achieve full frame rate with enough RAM.  In the ImageJ toolba
 
 == Usage notes ==
 * Software Trigger is best for live mode.
-'''Reason:''' In internal trigger mode where the camera runs flat out, at high frame rates μManager may not pull images off the camera memory as quickly as they are produced, resulting in a time lag effect.  Worse- if the camera memory fills up, the live acquisition will stop and one needs to click to continue using μManager.
+'''Reason:''' In internal trigger mode where the camera runs flat out, at high frame rates μManager may not pull images off the camera memory as quickly as they are produced, resulting in a time lag effect.  Worse- if the camera memory fills up, the live acquisition will stop and one needs to click "Stop Live" to continue using μManager.
 
 * Internal Trigger is best for fast acquisitions
 
