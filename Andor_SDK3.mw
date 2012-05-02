@@ -31,7 +31,7 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 
 === Image I/O plugin ===
 '''Recommended for Multi-Dimensional Acquisition:'''
-[http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the ImageJ plugins directory.
+[http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the plugins directory in the root µManager folder.  ImageI/O will appear as an ImageJ plugin.
 
 === Andor Driver ===
 Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website]
