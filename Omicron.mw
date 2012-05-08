@@ -8,13 +8,14 @@ Devices:	Omicron “…xX”-laser series
 Since Version:  1.48
 
 Default serial port settings:	AnswerTimeout	        2.5 seconds
-	                        BaudRate	        57600
+	                        BaudRate	        57600 (RS232 Port) 
+                                                        500000 (USB Port)
 	                        DelayBetweenCharsMS	0
 	                        Handshaking	        Off
 	                        Parity	                None
 	                        StopBits	        1</nowiki>
 
-The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX® series lasers as well as lasers integrated in LightHUB® compact laser combiners and SOLE® laser light engines via their serial interfaces. (LuxX® and BrixX® laser modules without a native RS232 port need an optional break-out adaptor). 
+The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX® series lasers as well as lasers integrated in LightHUB® compact laser combiners and SOLE® laser light engines via their serial interfaces (USB Port - all models, RS232 Port - for LuxX® and BrixX® series laser only available with an optional break out cable). 
 In the hardware configuration wizard you will need to add one Omicron Laser Controller object for every “…xX”-laser device you would like to control.
 
 The following laser features and operating modes can be controlled and/or monitored through µ-manager device/property browser:
