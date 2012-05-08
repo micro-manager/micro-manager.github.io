@@ -3,7 +3,7 @@
  <nowiki>Summary:	Omicron Laser Controller
 Author:	        Jan-Erik Herche/Ralf Schlotter
 License:	LGPL
-Platforms:	All platforms (uses serial port)
+Platforms:	All platforms (uses USB or RS232 Port)
 Devices:	Omicron “…xX”-laser series
 Since Version:  1.48
 
@@ -15,7 +15,7 @@ Default serial port settings:	AnswerTimeout	        2.5 seconds
 	                        Parity	                None
 	                        StopBits	        1</nowiki>
 
-The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX® series lasers as well as lasers integrated in LightHUB® compact laser combiners and SOLE® laser light engines via their serial interfaces (USB Port - all models, RS232 Port - for LuxX® and BrixX® series laser only available with an optional break out cable). 
+The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX® series lasers as well as lasers integrated in LightHUB® compact laser combiners and SOLE® laser light engines via their serial interfaces (USB Port - all models, RS232 Port - for LuxX® and BrixX® series lasers only available with an optional break out cable). 
 In the hardware configuration wizard you will need to add one Omicron Laser Controller object for every “…xX”-laser device you would like to control.
 
 The following laser features and operating modes can be controlled and/or monitored through µ-manager device/property browser:
@@ -41,7 +41,7 @@ The following laser features and operating modes can be controlled and/or monito
 
 '''Note:''' Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the “Laser Operation Select” property.
 
-'''Note:''' Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values.
+'''Note:''' Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values. Adhoc communication of the laser is automatically disabled at µ-Manager start up.
 
 '''Note:''' Laser emission will automatically shut off when µ-manager is shut down.
 
