@@ -23,7 +23,7 @@ The following properties are currently implemented in the Micro-Manager ASI stag
 <tr><td><b>Stepsize</b> (for X and Y in um)</td><td>  Read-only property.</td></tr>
 <tr><td><b>WaitCycles</b></td><td>  Sets how long the controller will wait after reaching a position before clearing its 'busy' signal.  Number equals the number of 'servo' cycles (80 ms per cycle on XYstage, 120 ms per cycle on XYZ stages, etc..).  Range: 0-255</td></tr>
 <tr><td><b>Speed</b> (for both X and Y)</td><td>Sets the maximum speed at which the stage will move in mm/sec.  Hardware maximum is 7.5 mm/s for 6.5 mm pitch leadscrews</td></tr>
-<tr><td><b>Backlash</b> (for both X and Y, in nm)</td><td>Makes the controller approach the target always from the same direction, starting the set number of nm away from the target position</td></tr>
+<tr><td><b>Backlash</b> (for both X and Y, in mm)</td><td>Makes the controller approach the target always from the same direction, starting the set number of mm away from the target position</td></tr>
 <tr><td><b>Error</b> (for both X and Y, in nm)</td><td>When the difference between the current position (as read from the encoders) is larger than this number, the controller will re-engage the motors to reach the target position</td></tr>
 <tr><td><b>Finish Error</b> (for both X and Y in nm)</td><td>This setting controls at what difference between the target and current position the controller will stop trying to get closer to the target.  Similar to Error, but this one applies to ongoing movements.</td></tr>
 <tr><td><b>OverShoot</b> (for both X and Y)</td><td>Inverse of Backlash.  Setting this might help to increase stability of the stage after a movement</td></tr>
