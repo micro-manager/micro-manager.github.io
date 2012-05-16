@@ -16,7 +16,7 @@ The way to create a configuration file is by using the Configuration Wizard (<sp
 
 The hardware configuration wizard guides you through the creation of a configuration file in 6 steps. Each step will display specific help in the right  side of the wizard window. Before you begin, you should assemble as much information about your hardware as possible. For instance, you should know which serial ports of your computer are attached to what hardware. Preferably, you should test the functionality of the hardware with software provided by the vendor. Information and helpful advice about specific devices can be found in the [[Device_Support|Device Support]] page. When you get stuck, you can get support through the [https://lists.sourceforge.net/lists/listinfo/micro-manager-general Micro-Manager mailing list]. Remember, this is the most important part in getting Micro-Manager to be fully functional.
 
-[[Image:wizard.gif|Hardware wizard step 3]]<br /> Figure 2. Step 3 of the hardware configuration wizard: selection of devices.<br />
+[[Image:Wizardstep2.png|Hardware wizard step 2]]<br /> Figure 2. Step 2 of the hardware configuration wizard: selection of devices.<br />
 
 You can exit the wizard at any step by closing the wizard window. You will be prompted to save the configuration file. Doing so (even when something did not work) will be helpful in trouble shooting potential issues. The most critical part of the wizard is in step 2. At this point the hardware is being initialized, and errors/problems may manifest themselves here. At the end of the wizard, save the file using the '.cfg' extension.
 
