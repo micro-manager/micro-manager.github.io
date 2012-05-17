@@ -1,11 +1,19 @@
 ==Introduction==
 This plugin uses Gaussian fitting to localize single fluorescent molecules for  tracking or reconstruction of super-resolution images. One window is used to set parameters for fitting and tracking, the second window (which can be opened from the first using the 'Data' button) is used to perform operations (such as rendering, drift correction, etc.) on data-sets of fitting results.
 
+
 ==Getting Started==
-<table cellspacing=30><tr  valign=top><td>
+<table cellspacing=20><tr  valign=top><td>
 [[Image: Main_LMPlugin.PNG]]</td>
 <td>
+
+
+
+
+
+
 To track a spot of interest in a time-series, draw a box around the spot and press the 'Track' button.  After a short while, a row will appear in the '''Gaussian tracking data Window'''.  Select the row and press '''Plot''' to visualize  movement of the spot in the x direction.
+
 
 To obtain a super-resolution image, acquire images using a square ROI with a size that is a power of 2 (256x256 often works best).  Acquire a large data series of your blinking molecules (use the '''show''' button to get a feel for the number of spots that can be detected in your data).  Press '''Fit''' to find spots and fit Gaussians to them.  After a while, a row will appear in the  '''Gaussian tracking data Window'''.  Selected the row.  Make sure the drop-down box in the Localization Microscopy section is set to 8x.  Press '''Render'''.
 </td>
