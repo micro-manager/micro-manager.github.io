@@ -67,7 +67,14 @@ To find spots, the application searches the image using a box with the size give
 
 [[Image: DataProc_LMPlugin.PNG]]
 
-====Drift correction====
-====2C ref. and cor.====
-====Plotting====
-====Rendering====
+====General====
+[[Image: ]]
+
+====2 Color====
+[[Image: DataProc_2-color.png]]
+
+====Tracks====
+[[Image: ]]
+
+====Localization Microscopy====
+[[Image: ]]
