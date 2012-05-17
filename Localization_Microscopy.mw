@@ -40,41 +40,46 @@ To find spots, the application searches the image using a box with the size give
 
 <table cellspacing=15><tr valign=top><td>
 [[Image: Filter-data.JPG]]</td>
-<td>'''Filtering Data'''
+<td>'''Filtering Data''' <br>
+
 </td>
 </table>
 
-<table cellspacing=15><tr><td>
-[[Image: Data-processing.JPG]]</td></tr>
-<td> '''Data Processing'''
-</td> <tr><td>
-{|
-|-
-|[[Image: Fit-button.JPG]]   blank
-|-
-|[[Image: Track-button.JPG]] blank
-|-
-|[[Image: MTrack-button.JPG]] MTrack: blank
-|-
-|[[Image: Data-button.JPG]] Data: blank
-|- 
-|[[Image:Stop-button.JPG ]] Stop: blank 
-|}
-</td></tr>
+<table cellspacing=15><td>
+[[Image: Data-processing.JPG]]</td>
+<td> '''Data Processing''' <br>
+
+</td>
 </table>
 
 ==Data processing window==
 
 [[Image: DataProc_LMPlugin.PNG]]
 
-====General====
-[[Image: DataProc_general.png]]
+<table cellspacing=15><td>
+[[Image: DataProc_general.png]]</td>
+<td> '''General Options''' <br>
 
-====2 Color====
-[[Image: DataProc_2-color.png]]
+</td>
+</table>
 
-====Tracks====
-[[Image: DataProc_tracks.png]]
+<table cellspacing=15><td>
+[[Image: DataProc_2-color.png]]</td>
+<td> '''2-Color Single Molecule''' <br>
 
-====Localization Microscopy====
-[[Image: ]]
+</td>
+</table>
+
+<table cellspacing=15><td>
+[[Image: DataProc_tracks.png]]</td>
+<td> '''Processing Tracking Data''' <br>
+
+</td>
+</table>
+
+<table cellspacing=15><td>
+[[Image: DataProc_reconstruction.png]]</td>
+<td> '''Localization Microscopy''' <br>
+
+</td>
+</table>
