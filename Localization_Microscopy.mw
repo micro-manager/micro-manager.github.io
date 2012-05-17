@@ -1,17 +1,10 @@
 ==Introduction==
 This plugin uses Gaussian fitting to localize single fluorescent molecules for  tracking or reconstruction of super-resolution images. One window is used to set parameters for fitting and tracking, the second window (which can be opened from the first using the 'Data' button) is used to perform operations (such as rendering, drift correction, etc.) on data-sets of fitting results.
 
-
 ==Getting Started==
-<table cellspacing=20><tr  valign=top><td>
+<table cellspacing=30><tr  valign=top><td>
 [[Image: Main_LMPlugin.PNG]]</td>
-<td>
-
-
-
-
-
-
+<td><br><br>
 To track a spot of interest in a time-series, draw a box around the spot and press the 'Track' button.  After a short while, a row will appear in the '''Gaussian tracking data Window'''.  Select the row and press '''Plot''' to visualize  movement of the spot in the x direction.
 
 
