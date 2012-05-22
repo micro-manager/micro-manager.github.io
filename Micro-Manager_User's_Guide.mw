@@ -226,8 +226,8 @@ It can be cumbersome to exactly position a microscope stage. Micro-Manager has a
 | valign="top" | '''z modifiers'''<br /> Normal: Move 3 z-steps<br /> Control: Move 1 z-step<br /> Shift: Move 10 z-steps
 |}
 
-= 5D-Image Viewer =
-The 5D Image Viewer is an extension of the ImageJ HyperStack.  Therefore, most ImageJ commands will work as expected on this window.
+= Multi-Dimensional Image Viewer =
+The Multi-Dimensional Image Viewer is an extension of the ImageJ HyperStack.  Therefore, most ImageJ commands will work as expected on this window.
 
 [[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 12. Acquisition data displayed in the 5D image window.
 <br />
