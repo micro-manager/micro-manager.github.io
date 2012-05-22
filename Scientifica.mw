@@ -16,4 +16,15 @@ Special properties of the XYStage:<br>
 <tr><td>'''Acceleration'''</td><td>Sets the acceleration of the XY stage</td></tr>
 </table>
 
+COM Settings: <br>
+<table valign='left'>
+<tr><td>'''Answer Timeout'''</td><td>Long enough for stage to complete moves </td></tr>
+<tr><td>'''Baud Rate'''</td><td>9600</td></tr>
+<tr><td>'''Delay Between Chars Ms'''</td><td>0</td></tr>
+<tr><td>'''Handshaking'''</td><td>Off</td></tr>
+<tr><td>'''Parity'''</td><td>None</td></tr>
+<tr><td>'''Stop Bits'''</td><td>1</td></tr>
+</table>
+
+
 {{Devices_Sidebar}}
