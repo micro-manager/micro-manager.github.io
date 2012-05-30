@@ -40,6 +40,10 @@ Once you are satisfied with your current presets you save them into the current 
 
 The 'Edit' and '-' (Delete) buttons allow you to change and remove Configuration Groups and Presets. If you add a property to a Group, then all existing Presets in that Group will now include the current value of the new Property.
 
+==Core Properties==
+
+In the [[Micro-Manager User's Guide#Exploring devices: Device/Property Browser|Device/Property Browser]] you will find a list of core properties such as core-cameras, core-shutter etc. These properties indicate which device is the default or active device. If your system consisted of multiple shutters such as a fluorescent shutter and a trans shutter you would be able to select in the core-shutter property which device would be the active device. The core properties become very useful when setting up configuration groups, for instance when creating the Channel group one can easily select the active shutter to the fluorescent shutter for a GFP channel or the trans shutter for a DIC channel. 
+
 <br />
 
 = Startup Presets =
