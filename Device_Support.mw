@@ -120,6 +120,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Mightex]] - LED driver/controllers
 * [[Mightex BLS]] - BLS Control Modules
+* [[National Instruments]] - NI I/O boards - MDAQ interface
 * [[Omicron]] - Omicron Laser Controller
 * [[Pecon]] - Pecon Incubation System
 * [[PolychromeV]] - Illumination system from Till Photonics
