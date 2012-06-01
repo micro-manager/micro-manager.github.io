@@ -11,8 +11,8 @@ This adapter implements Signal I/O micro-manager device, by using NI MDAQ interf
 
 Besides NI100X adapter this library contains a PI Z-stage driver that is internally linked to the analog output. For regular use of NI boards please disregard the Z-stage device and do not instantiate it in your setup even if you happen to have a PI stage attached. To use a PI stage refer to a standard PI adapter elsewhere in the micro-manager device list.
 
-The only time that you would want to to use the PI stage driver from this library is for the 2-Photon microscope setup described here:
-[http://biomicroscopy.ucsf.edu/mediawiki/index.php?title=Micromanager/2P]
+The only time that you would want to to use the PI stage driver from this library is for the 2-Photon microscope setup described in 
+[http://biomicroscopy.ucsf.edu/mediawiki/index.php?title=Micromanager/2P BIDC 2P Microscopy]
 
 
 
