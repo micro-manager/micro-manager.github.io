@@ -28,6 +28,6 @@ The most important interfaces and classes related to MDA-related components are 
 
 '''DefaultTaggedImagePipeline''': A small class that provides Micro-Manager's default behavior for multi-dimensional acquisition. It instantiates and connects the various components in the TaggedImage pipeline: namely the AcquisitionEngine2010, the ProcessorStack, the LiveAcq and (through the MMAcquisition interface) the VirtualAcquisitionDisplay and the MMImageCache.
 
-'''AcquisitionWrapperEngine''' (interface AcquisitionEngine), is the traditional acquisition engine implementing the AcquisitionEngine interface, and available in the script panel or by calling gui.getAcquisitionEngine. This wrapper uses a DefaultTaggedImagePipeline to set up the data flow of TaggedImages.
+'''AcquisitionWrapperEngine''' (interface AcquisitionEngine): the traditional "acquisition engine," available in the script panel as '''acq''' or by calling gui.getAcquisitionEngine(). This wrapper uses a DefaultTaggedImagePipeline to set up the data flow of TaggedImages.
 
 {{Programming_Sidebar}}
