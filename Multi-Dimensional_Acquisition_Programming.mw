@@ -2,7 +2,7 @@ Multi-dimensional acquisition is an important functionality of Micro-Manager. MD
 
 === Architecture ===
 
-The interfaces and classes related to MDA-related components are as follows.
+The most important interfaces and classes related to MDA-related components are as follows.
 
 '''JSONObject''': All metadata is stored in JSONObjects. Summary metadata refers to the metadata for a particular multi-dimensional acquisition, in contrast to image metadata which is attached to every image plane.
 
