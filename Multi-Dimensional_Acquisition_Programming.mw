@@ -2,7 +2,8 @@ Multi-dimensional acquisition is an important functionality of Micro-Manager. MD
 
 === Architecture ===
 
-The most important interfaces and classes related to MDA-related components are as follows.
+
+This image shows the flow of TaggedImages through Micro-Manager during multi-dimensional acquisition. The most important interfaces and classes are described below.
 
 [[File:TaggedImageFlow.png]]
 
