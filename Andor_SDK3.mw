@@ -66,9 +66,7 @@ It is possible to achieve full frame rate with enough RAM.  In the ImageJ toolba
 
       Edit > Options > Memory & Threads ... > Maximum Memory
 
-'''You must restart uManager for these changes to take effect!'''
-
-
+{{Note|You must restart uManager for both these changes to take effect}}
 
 == Usage notes ==
 * Software Trigger is best for live mode.
