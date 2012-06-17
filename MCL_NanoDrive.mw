@@ -23,10 +23,12 @@ The following properties are currently implemented in the Micro-Manager MCL Nano
 
 <tr><td><b>Settling Time</b></td><td>
 <br>
-This value can be changed for each axis to set the time (in ms) the Nano-Drive&trade; waits after moving before reading the current position.  The default time is 100ms.  Please note that choosing an unreasonably small settling time will result in measurement errors.  Mad City Labs nanopositioner settling times are typically 1ms or greater, depending on system model and calibration settings.  Please contact MCL if you are unsure what are safe settling time values to input for your particular system model.</td></tr><br>
+This value can be changed for each axis to set the time (in ms) the Nano-Drive&trade; waits after moving before reading the current position.  The default time is 100ms.  {{Note|Choosing an unreasonably small settling time will result in measurement errors.  Mad City Labs nanopositioner settling times are typically 1ms or greater, depending on system model and calibration settings.  Please contact MCL if you are unsure what are safe settling time values to input for your particular system model.}}</td></tr><br>
 <tr><td><b>Set Origin</b></td><td>
 <br>
-Sets the current position as the origin.  Please note that after setting the origin, you must exit the Device/Property Browser and then re-enter it to make sure the position slidebar takes the new origin into account.  In order to set the origin to the original orgin, click on the "Calibrate" button on the XY(Z) Position List.</td></tr>
+Sets the current position as the origin.
+{{Note|After setting the origin, you must exit the Device/Property Browser and then re-enter it to make sure the position slidebar takes the new origin into account.}}
+In order to set the origin to the original orgin, click on the "Calibrate" button on the XY(Z) Position List.</td></tr>
 </table>
 
 {{Devices_Sidebar}}
