@@ -194,7 +194,7 @@ A minimal, cross-platform set of thread management utilities is provided in MMTh
 
 == Complex device management: writing Hub adapters ==
 
-Note: This is an advanced topic and is generally not relevant for implementation of single device libraries.
+{{Note|This is an advanced topic and is generally not relevant for implementation of single device libraries.}}
 
 === Introduction ===
 
