@@ -174,9 +174,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 
 == Troubleshooting ==
 === iXon: PCI/PCIe card not found on Windows 2000/XP ===
-If the iXon PCI/PCIe board is plugged in before you first install the 
-
- and plug in your camera and Windows tries to recognize it, choose:
+If the iXon PCI/PCIe board is plugged in before you first install the driver, right click on the PCI device, update the driver and choose:
 
     Install from a list or specific location (Advanced) >
     Search for the best driver in these locations >
