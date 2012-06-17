@@ -1,31 +1,12 @@
-{{documentation/core2
-| heading = {{{heading|¬}}}   <!--Empty but defined means no header-->
-| heading-style = {{{heading-style|}}}
-| content = {{{content|}}}
-| link box = {{{link box|}}}   <!--So "link box=off" works-->
+{{Template}}
 
-<!--Some namespaces must have the /doc, /sandbox and /testcases 
-    in talk space-->
-| docspace =
-  {{#switch: {{SUBJECTSPACE}}
-  | {{ns:0}}
-  | {{ns:File}}
-  | {{ns:MediaWiki}}
-  | {{ns:Category}} = {{TALKSPACE}}
-  | #default = {{SUBJECTSPACE}}
-  }}
+== Usage ==
 
-| 1 = {{{1|}}}   <!--Other docname, if fed-->
+== See also ==
 
-<!--The namespace is added in /core2-->
-| template page = 
-  {{#switch: {{SUBPAGENAME}}
-  | sandbox
-  | testcases = {{BASEPAGENAME}}
-  | #default = {{PAGENAME}}
-  }}
-
-}}<!--End of green doc box--><noinclude>
-
-<!-- Add categories and interwikis to the /doc subpage, not here! -->
+<includeonly>
+[[Category:Templates for templates]]
+</includeonly>
+<noinclude>
+[[Category:Template documentation]]
 </noinclude>
