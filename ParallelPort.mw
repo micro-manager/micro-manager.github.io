@@ -15,7 +15,7 @@ For instance: <br>
 0    (0000000000) will set pins 1 through 10 low<br>
 6    (0110000000) will set pins 2 and 3 high and all others low.<br>
 
-Note that this adapter does not provide a shutter device.  The [[AOTF]] adapter provides a shutter that can set pins of the parallel port.
+{{Note|This adapter does not provide a shutter device.  The [[AOTF]] adapter provides a shutter that can set pins of the parallel port.}}
 
 {{ParallelPort_Warning}}
 {{Devices_Sidebar}}
