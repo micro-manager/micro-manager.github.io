@@ -35,7 +35,7 @@ There are two modes of Control: Computer and "Manual + Computer". The former is 
 If you are using the Olympus ZDC unit (Z-drift correction), you will need to set two properties: the ObjectiveTypeSetting and the SearchRange (a size in microns). Choose MeasureOffset->Now to fix your current z offset, and then running autofocus will return the focus drive to that offset.
 <br><br>
 
-BX61 specific notes: Currently only one filter wheel is supported (connected to FW1 port on the controller).
+{{Note|For the BX61, currently only one filter wheel is supported, which is connected to FW1 port on the controller.}}
 
 {{Listserv_Search|Olympus}}
 
