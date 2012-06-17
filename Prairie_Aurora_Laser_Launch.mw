@@ -23,7 +23,9 @@ There are a few things worth knowing about the integration before you get starte
 == Hardware Integration ==
 
 As you can see from the diagram of the DB-25 connector pin, there are three types of signals sent to the device through it. There is a TTL blanking signal, a positive input signal and a negative input signal. Three types of signals for each channel and one ground signal make this pin control up to 8 channels. 
-The job of the TTL blanking signal is to turn a particular channel on or off. The positive input channel can control the voltage being sent to a channel (0-10 V). Please note here that for the Prairie Aurora laser launch, we only need a maximum voltage of 5 volts. The negative input channel can serve as a Ground connector for a channel. However, you may also use the master Ground at pin #1 for grounding purposes
+The job of the TTL blanking signal is to turn a particular channel on or off. The positive input channel can control the voltage being sent to a channel (0-10 V). 
+{{Note|Here for the Prairie Aurora laser launch, we only need a maximum voltage of 5 volts}}
+The negative input channel can serve as a Ground connector for a channel. However, you may also use the master Ground at pin #1 for grounding purposes
 Make sure that you ''understand'' the Analog and Digital outputs on the Velleman board before you proceed. For your reference, use the figure of the board below to attach cables correctly.
 
 
@@ -35,7 +37,6 @@ Once you have the ribbon connector attached to the DB-25 male connector, tear ou
 
 
 [[Image:Circuit_Connection.jpg]]
-
 
 == Setting up the Analog Connections ==
 
