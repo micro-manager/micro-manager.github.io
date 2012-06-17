@@ -122,7 +122,7 @@ The version is a four-byte value. Each byte represents one portion of the versio
 
 '''ScopeLED-MSB/MSP'''
 
-Note: The ProductID for microscope illuminators is 4867 (0x1303).
+{{Note|The ProductID for microscope illuminators is 4867 (0x1303).}}
 <table>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -140,7 +140,7 @@ Note: The ProductID for microscope illuminators is 4867 (0x1303).
 
 '''ScopeLED-FMI'''
 
-Note: The ProductID for fluorescence illuminators is 4869 (0x1305).
+{{Note|The ProductID for fluorescence illuminators is 4869 (0x1305).}}
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
