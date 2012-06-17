@@ -1,0 +1,3 @@
+<div class="gw-msgbox" style="border: 1px solid {{{color|#333}}}; background-color: {{{bgcol|#F3F3F3}}}"><div class="gw-msgbox-title" style="background-color: {{{color|#333}}}; color: {{{titlecol|white}}}">{{{1}}}</div><div class="gw-msgbox-content">{{{2}}}</div></div><noinclude>
+{{Documentation}}
+</noinclude>
