@@ -1,0 +1,16 @@
+{{Template}}
+<!-- Categories go at the bottom of this page. -->
+
+== Usage ==
+
+== See also ==
+
+<include<includeonly></includeonly>only>
+<!-- Categories go here: -->
+
+</include<includeonly></includeonly>only>
+<no<includeonly></includeonly>include>
+<includeonly>[[Category:Template documentation]]</includeonly>
+</no<includeonly></includeonly>include><noinclude>
+[[Category:Template cores]]
+</noinclude>
