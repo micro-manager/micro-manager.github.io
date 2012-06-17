@@ -9,7 +9,8 @@
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
 </table>
 
-This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu cameras.  You will need to download and install a recent version of the [http://www.dcamapi.com/ DCAM driver].  Please note that the DCAM version  dated March 2011 does not work with Micro-Manager.  The August 2011 release works fine.  
+This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu cameras.  You will need to download and install a recent version of the [http://www.dcamapi.com/ DCAM driver].
+{{Note|DCAM version dated March 2011 does not work with Micro-Manager.  The August 2011 release works fine.}}
 
 Two versions of the adapter are included with Micro-Manager: the "Hamamatsu" adapter is an older version, written by the Micro-Manager team at UCSF, the "HamamatsuHam" adapter is newer and written by engineers at Hamamatsu.  Please do use the HamamatsuHam adapter unless there are reasons not to. 
 
