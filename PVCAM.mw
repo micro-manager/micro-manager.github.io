@@ -38,7 +38,8 @@ Paul Forscher reported that Micro-Manager does not find any PVCAM cameras under 
 
 copy C:\Users\username\AppData\Local\VirtualStore\Windows\PVCAM.ini C:\Program Files\Micro-Manager1.3
 
-where you should replace 'username' with your username.  Note that the directory 'Appdata' is not visible to the Windows file explorer.
+where you should replace 'username' with your username.
+{{Note|The directory 'Appdata' is not visible to the Windows file explorer.}}
 
 --[[User:Nico|Nico]] 11:33, 31 August 2007 (PDT)
 
