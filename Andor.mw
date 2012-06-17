@@ -1,5 +1,3 @@
-<big>
-
 {|
 |valign="top"|'''Summary:'''
 |Interfaces with Andor cameras
@@ -136,10 +134,7 @@ However for the Clara overlap mode, Extended NIR and the variable pre amp gains 
 *:2x = Intermediate sensitivity / capacity mode
 *:1x = High capacity mode
 *:
-{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
-|valign="top"| '''Note:'''
-| For EMCCDs, Andor's nomenclature of PAG is confusing since one may think this "pre-" amplification happens before EM gain amplification.  In reality, EM amplification happens on sensor, and PAG happens after readout of your sensor and before digitization.
-|}
+{{Note|For EMCCDs, Andor's nomenclature of PAG is confusing since one may think this "pre-" amplification happens before EM gain amplification.  In reality, EM amplification happens on sensor, and PAG happens after readout of your sensor and before digitization.}}
 * PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor, e.g. for a particular camera the values could be 1x, 2.4x, 4.9x
 * PAG can affect the saturation limit of your image.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
 
@@ -218,8 +213,6 @@ Please liaison with Micro-Manager developers to contact the Andor software team
 === Andor support ===
 For contacting Andor product support regarding any questions, see under "Support" for your location -
 http://www.andor.com/contact_us/default.aspx
-
-</big>
 
 {{Devices_Sidebar}}
 
