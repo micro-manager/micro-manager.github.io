@@ -39,11 +39,11 @@ The following laser features and operating modes can be controlled and/or monito
 *Laser power set-point select (set the laser power level in [mW] or [ %])
 *Reset
 
-'''Note:''' Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the “Laser Operation Select” property.
+{{Note|Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the “Laser Operation Select” property.}}
 
-'''Note:''' Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values. Adhoc communication of the laser is automatically disabled at µ-Manager start up.
+{{Note|Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values. Adhoc communication of the laser is automatically disabled at µ-Manager start up.}}
 
-'''Note:''' Laser emission will automatically shut off when µ-manager is shut down.
+{{Note|Laser emission will automatically shut off when µ-manager is shut down.}}
 
 Below you can see a screenshot of an Omicron “…xX”-Laser Series module controlled via the device/property browser:
 
