@@ -2,7 +2,7 @@
 
 Here is how to get started with the Micro-Manager python library:
 
-# [http://micro-manager.org/downloads.php Download] and install Micro-Manager on your computer.
+# [[Download_Micro-Manager_Latest_Release|Download]] and install Micro-Manager on your computer.
 # Familiarize yourself with Micro-Manager and learn how to connect it to your hardware by using the existing Java-based GUI (graphical user interface).
 # Install the latest versions of:
 #* [http://python.org/ python 2.6.x] (required; python 3.x is not yet supported)
