@@ -85,7 +85,7 @@ Specific driver versions are required.  Do not rely on the manufacturer websites
       .\ALC_REV_SDK\Drivers\
 
 === Setting Micro-Manager alongside Andor iQ ===
-{{Note| Windows 7 32-bit users must install >=iQ 2.4.  iQ does not support Windows 7 in earlier versions}}
+{{Note|Windows 7 32-bit users must install iQ 2.4 or greater.  iQ does not support Windows 7 in earlier versions}}
 
 Andor completes the steps described in this section in their factory.
 If you are setting up an Andor laser combiner on a new computer, only then do you need to follow this section.
