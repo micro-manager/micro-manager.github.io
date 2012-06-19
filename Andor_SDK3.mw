@@ -32,12 +32,14 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 [http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the plugins directory in the root µManager folder.  ImageI/O will appear as an ImageJ plugin.
 
 === Andor Driver ===
-Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website]
+Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].  You must use SDK3 version >= 3.3.30003.0 for Release 3 Neo cameras.
 
 Copy these 3 files to the Micro-Manager root directory:
 * atcore.dll
 * atdevregcam.dll
 * atcl_bitflow.dll
+
+{{Note|Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2.  If you have don't see the device, try the latest SDK3 version}}
 
 === Disable computer power savings ===
 Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
