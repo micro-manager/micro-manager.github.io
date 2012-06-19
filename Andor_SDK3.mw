@@ -39,7 +39,7 @@ Copy these 3 files to the Micro-Manager root directory:
 * atdevregcam.dll
 * atcl_bitflow.dll
 
-{{Note|Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2.  If you have don't see the device, try the latest SDK3 version}}
+{{Note|Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2}}
 
 === Disable computer power savings ===
 Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
