@@ -1,6 +1,6 @@
 {|
 |valign="top"|'''Summary:'''
-|Interfaces with Andor Neo sCMOS camera (use [[Andor]] DeviceAdapter instead for other Andor cameras)
+|Interfaces with Andor sCMOS cameras (use [[Andor]] DeviceAdapter instead for other Andor CCD and EMCCD cameras)
 |-
 |valign="top"|'''Authors:'''
 | David Gault (Andor)
