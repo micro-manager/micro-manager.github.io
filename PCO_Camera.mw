@@ -30,7 +30,7 @@ In case of Camera Link (CL) interface you also need:
   Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
   National Instruments: sc2_cl_nat.dll
 
-Please copy the corresponding dll files into your Micro-Manager directory. These files should be found on your computer under C:\Programs\Digital Camera Toolbox\Camware
+Please copy the corresponding dll files into your Micro-Manager directory. These files should be found on your computer under C:\Program files\Digital Camera Toolbox\Camware. In case your system is 64bit see C:\Program files (x86)\Digital Camera Toolbox\Camware for the 32bit dlls and C:\Program files\Digital Camera Toolbox\Camware for the 64bit dlls (32/64 depends on your installation).
 _______________________________________________________________
 
 Please refer to the following Installation Guide for further help:
