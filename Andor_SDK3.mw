@@ -32,7 +32,7 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 [http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the plugins directory in the root µManager folder.  ImageI/O will appear as an ImageJ plugin.
 
 === Andor Driver ===
-Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].  You must use SDK3 version >= 3.3.30003.0 for Release 3 Neo cameras.
+Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].  You must use SDK3 version 3.3.30003.0 or later for Release 3 Neo cameras.
 
 Copy these 3 files to the Micro-Manager root directory:
 * atcore.dll
