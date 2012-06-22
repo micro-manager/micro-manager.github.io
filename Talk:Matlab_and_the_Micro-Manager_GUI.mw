@@ -1,0 +1,29 @@
+One can mirror this guide with Jython 2.7
+
+Install Jython 2.7
+http://www.jython.org/
+
+Add this to Windows CLASSPATH env var
+C:/Program Files/Micro-Manager-1.4/ij.jar;
+C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager/MMCoreJ.jar;
+C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager/MMJ_.jar;
+C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager/bsh-2.0b4.jar;
+C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager/swingx-0.9.5.jar;
+C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager/swing-layout-1.0.4.jar;
+
+When you next start Jython you should see:
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\ij.jar'
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager\MMCoreJ.jar'
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager\MMJ_.jar'
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager\bsh-2.0b4.jar'
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager\swingx-0.9.5.jar'
+*sys-package-mgr*: processing new jar, 'C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager\swing-layout-1.0.4.jar'
+
+Start jython
+You can do this with Start > Run...
+    cmd /K "C: & cd C:\Program Files\Micro-Manager-1.4 & jython"
+
+>>> from org.micromanager import MMStudioMainFrame
+>>> gui = MMStudioMainFrame(False)
+>>> gui.show()
+... etc
