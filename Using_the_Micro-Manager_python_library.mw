@@ -5,7 +5,7 @@ Here is how to get started with the Micro-Manager python library:
 # [[Download_Micro-Manager_Latest_Release|Download]] and install Micro-Manager on your computer.
 # Familiarize yourself with Micro-Manager and learn how to connect it to your hardware by using the existing Java-based GUI (graphical user interface).
 # Install Python and Numpy:
-#* Option 1: Python distribution<br>It's convenient to install a distribution which installs Python, numpy, scientific libraries and GUI frameworks:
+#* Option 1: Python distribution<br>It's convenient to install a distribution which installs Python, numpy, scientific libraries, GUI frameworks and editors:
 #** [http://www.enthought.com/products/epd.php Enthought's python distribution (EPD)] is [http://www.enthought.com/products/edudownload.php free for academic use]  
 #* Option 2: Manual<br>Individually install packages for python and other modules
 #** Required:
