@@ -10,7 +10,7 @@ Here is how to get started with the Micro-Manager python library:
 #* Option 2: Manual<br>Individually install packages for python and other modules
 #** Required:
 #*** [http://python.org/ python 2.7.x] (python 3.x is not yet supported)
-#*** [http://numpy.org/ numpy] (required)
+#*** [http://numpy.org/ numpy]
 #** Optional:
 #*** [http://scipy.org/ scipy] for advanced image processing
 #*** [http://matplotlib.sourceforge.net/ matplotlib] useful for displaying images
