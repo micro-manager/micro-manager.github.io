@@ -11,9 +11,9 @@ This image shows the flow of TaggedImages through Micro-Manager during multi-dim
 
 '''TaggedImage''': A pure data object with two fields: pixels (a byte or short array) and tags (a JSONObject for the image's metadata). TaggedImages flow sequentially through a "pipeline" in Micro-Manager. A TaggedImage is born in the swig (C++ to java) layer when the java layer calls core.getTaggedImage or similar methods. During an MDA, after this function is called, AcquisitionEngine2010 adds appropriate tags to the TaggedImage and then adds it to its output queue. DataProcessors can then modify these TaggedImages, and then the images are finally sent for display and/or storage (by default, VirtualAcquisitionDisplay and MMImageCache, respectively).
 
-There are three important image metadata tag names that are necessary for Micro-Manager to handle images correctly: Width, Height, PixelType. Width and Height should have integer values, and PixelType should be a string: one of GRAY8, GRAY16, RGB32, RGB64. RGB images are stored as byte or short arrays.
+There are three required image metadata tag names that are necessary for Micro-Manager to handle images correctly: Width, Height, PixelType. Width and Height should have integer values, and PixelType should be a string: one of GRAY8, GRAY16, RGB32, RGB64. RGB images are stored as byte or short arrays. These tags are automatically produced by the core java wrapper (mmc in the Beanshell scripting panel) whenever getTaggedImage is called.
 
-In addition, four tags permit multi-dimensional image data:
+In addition, four important optional tags permit multi-dimensional image data:
 
 * ChannelIndex
 * FrameIndex
@@ -22,7 +22,7 @@ In addition, four tags permit multi-dimensional image data:
 
 These are integer tags, used by the ImageCache and the VirtualAcquisitionDisplay to determine where in a multi-dimensional image set an image is placed.  Omitted indices will be set by Micro-Manager to zero. In other words, a TaggedImage with no ChannelIndex, FrameIndex and PositionIndex, but a SliceIndex of 3, will be placed at frame zero, position zero, slice 3, and channel zero.
 
-A variety of other useful tags are produced by the multi-dimensional acquisition engine and are interpreted by various parts of Micro-Manager in various useful ways, particularly by the image display window. Of course these tags can also be added by plugins or scripts before they are added to a Multi-Dimensional image window:
+A variety of other useful optional tags are produced by the multi-dimensional acquisition engine and are interpreted by various parts of Micro-Manager in various useful ways, particularly by the image display window. Of course these tags can also be added by plugins or scripts before they are added to a Multi-Dimensional image window:
 
 * Binning (an integer)
 * BitDepth (an integer with values such as 8, 12, 14, 16, 24, 32; used by the contrast panel)
