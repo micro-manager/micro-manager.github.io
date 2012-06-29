@@ -39,7 +39,7 @@ A variety of other useful tags are produced by the multi-dimensional acquisition
 * Source (the camera that produce the image)
 * Summary (a map of summary metadata)
 * Time (the time and date that the image was acquired)
-* UUID (a unique universal ID number)
+* a random, unique UUID (a unique universal ID number)
 * WaitInterval (the requested delay between successive time points)
 
 '''SequenceSettings''': A pure data object set up by the Multi-Dimensional Acquisition setup dialog (AcqControlDialog). The settings within this object include the size of and parameters for each dimension (frames, positions, slices, and channels), the way dimensions are to be nested, as well as settings for saving and autofocus. The SequenceSettings object fully specifies a desired acquisition sequence as carried out by an IAcquisitionEngine2010.
