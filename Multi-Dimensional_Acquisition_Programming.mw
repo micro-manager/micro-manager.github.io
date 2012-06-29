@@ -25,7 +25,7 @@ These are integer tags, used by the ImageCache and the VirtualAcquisitionDisplay
 A variety of other useful tags are produced by the multi-dimensional acquisition engine and are interpreted by various parts of Micro-Manager in various useful ways, particularly by the image display window. Of course these tags can also be added by plugins or scripts before they are added to a Multi-Dimensional image window:
 
 * Binning (an integer)
-* BitDepth (an integer with values such as 8, 12, 14, 16, 24, 32)
+* BitDepth (an integer with values such as 8, 12, 14, 16, 24, 32; used by the contrast panel)
 * CameraChannelIndex (an integer specifying which "camera channel" from a multi-channel camera has produced this image)
 * Channel (a string with the channel's name)
 * ElapsedTime-ms (the time the image was acquired since acquisition started)
