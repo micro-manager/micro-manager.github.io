@@ -11,9 +11,36 @@ This image shows the flow of TaggedImages through Micro-Manager during multi-dim
 
 '''TaggedImage''': A pure data object with two fields: pixels (a byte or short array) and tags (a JSONObject for the image's metadata). TaggedImages flow sequentially through a "pipeline" in Micro-Manager. A TaggedImage is born in the swig (C++ to java) layer when the java layer calls core.getTaggedImage or similar methods. During an MDA, after this function is called, AcquisitionEngine2010 adds appropriate tags to the TaggedImage and then adds it to its output queue. DataProcessors can then modify these TaggedImages, and then the images are finally sent for display and/or storage (by default, VirtualAcquisitionDisplay and MMImageCache, respectively).
 
-There are three important tag names that are necessary for Micro-Manager to handle images correctly: Width, Height, PixelType. Width and Height should have integer values, and PixelType should be a string: one of GRAY8, GRAY16, RGB32, RGB64. RGB images are stored as byte or short arrays.
+There are three important image metadata tag names that are necessary for Micro-Manager to handle images correctly: Width, Height, PixelType. Width and Height should have integer values, and PixelType should be a string: one of GRAY8, GRAY16, RGB32, RGB64. RGB images are stored as byte or short arrays.
 
-Several optional tags have important meanings: ChannelIndex, FrameIndex, PositionIndex, SliceIndex are integer tags that determine where in a multi-dimensional image set an image is placed. Omitted indices will default to zero.
+In addition, four tags permit multi-dimensional image data:
+
+* ChannelIndex
+* FrameIndex
+* PositionIndex
+* SliceIndex
+
+These are integer tags, used by the ImageCache and the VirtualAcquisitionDisplay to determine where in a multi-dimensional image set an image is placed.  Omitted indices will be set by Micro-Manager to zero. In other words, a TaggedImage with no ChannelIndex, FrameIndex and PositionIndex, but a SliceIndex of 3, will be placed at frame zero, position zero, and channel zero.
+
+A variety of other useful tags are produced by the multi-dimensional acquisition engine and are interpreted by various parts of Micro-Manager in various useful ways, particularly by the image display window. Of course these tags can also be added by plugins or scripts before they are added to a Multi-Dimensional image window:
+
+* Binning (an integer)
+* BitDepth (an integer with values such as 8, 12, 14, 16, 24, 32)
+* CameraChannelIndex (an integer specifying which "camera channel" from a multi-channel camera has produced this image)
+* Channel (a string with the channel's name)
+* ElapsedTime-ms (the time the image was acquired since acquisition started)
+* Exposure-ms (the exposure setting of the camera when the image was acquired)
+* Frame (identical to FrameIndex)
+* NextFrame (the time on the computer clock when the next image is expected to be acquired)
+* PixelSizeUm (the size of the pixel)
+* PositionName (a string)
+* Slice (identical to SliceIndex)
+* SlicePosition (a float)
+* Source (the camera that produce the image)
+* Summary (a map of summary metadata)
+* Time (the time and date that the image was acquired)
+* UUID (a unique universal ID number)
+* WaitInterval (the waited between time points)
 
 '''SequenceSettings''': A pure data object set up by the Multi-Dimensional Acquisition setup dialog (AcqControlDialog). The settings within this object include the size of and parameters for each dimension (frames, positions, slices, and channels), the way dimensions are to be nested, as well as settings for saving and autofocus. The SequenceSettings object fully specifies a desired acquisition sequence as carried out by an IAcquisitionEngine2010.
 
