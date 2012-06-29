@@ -20,7 +20,7 @@ In addition, four tags permit multi-dimensional image data:
 * PositionIndex
 * SliceIndex
 
-These are integer tags, used by the ImageCache and the VirtualAcquisitionDisplay to determine where in a multi-dimensional image set an image is placed.  Omitted indices will be set by Micro-Manager to zero. In other words, a TaggedImage with no ChannelIndex, FrameIndex and PositionIndex, but a SliceIndex of 3, will be placed at frame zero, position zero, and channel zero.
+These are integer tags, used by the ImageCache and the VirtualAcquisitionDisplay to determine where in a multi-dimensional image set an image is placed.  Omitted indices will be set by Micro-Manager to zero. In other words, a TaggedImage with no ChannelIndex, FrameIndex and PositionIndex, but a SliceIndex of 3, will be placed at frame zero, position zero, slice 3, and channel zero.
 
 A variety of other useful tags are produced by the multi-dimensional acquisition engine and are interpreted by various parts of Micro-Manager in various useful ways, particularly by the image display window. Of course these tags can also be added by plugins or scripts before they are added to a Multi-Dimensional image window:
 
