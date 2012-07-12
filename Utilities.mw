@@ -1,0 +1,9 @@
+== Utilities adapter ==
+
+<table>
+<tr><td>'''Summary:'''</td><td>Various abstract devices </td></tr>
+<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Linux, Mac, and Windows</td></tr>
+<tr><td>'''Example Config File:'''</td><td>
+</table>
