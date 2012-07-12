@@ -5,5 +5,10 @@
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Linux, Mac, and Windows</td></tr>
-<tr><td>'''Example Config File:'''</td><td>
+<tr><td>'''Devices:'''</td><td>Multi-Shutter, Multi-Camera, DA-Shutter, DA-Z-Stage, DA--XY-Stage, Autofocus-Stage, State-Device-Shutter</td></tr>
 </table>
+
+These abstract devices can be used to change the function of a real device or to combine multiple real devices into a single, logical device.  
+
+'''Multi-Shutter'''
+Combines multiple shutters into a single logical shutter, opens and closes multiple shutter simultaneously.  You will need to set the "Physical Shutter: properties (up to 5 shutters can be set).  It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file.
