@@ -24,3 +24,9 @@ Uses a DA device to set the position of a Z-stage that is connected to the DA de
 
 '''DA-XY-Stage'''.
 Similar to the DA-Z-Stage adapter, but now sets to DA devices simultanuously, one corresponding to the X-stage, the other to the Y-stage.
+
+'''Autofocus Stage'''.
+Can be used to operate the 'offset' function of a hardware autofocus device (such as the Nikon Perfect Focus and Zeiss Definite Focus) as a Z-drive. 
+
+'''State-Device-Shutter'''.
+To be use to convert a state device (such as a filter wheel) into a shutter.  To use it you will need to set the "State Device Shutter" property to the desired state device.  The state device should have a property that sets the "closed" position.
