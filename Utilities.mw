@@ -29,4 +29,4 @@ Similar to the DA-Z-Stage adapter, but now sets to DA devices simultanuously, on
 Can be used to operate the 'offset' function of a hardware autofocus device (such as the Nikon Perfect Focus and Zeiss Definite Focus) as a Z-drive. 
 
 '''State-Device-Shutter'''.
-To be use to convert a state device (such as a filter wheel) into a shutter.  To use it you will need to set the "State Device Shutter" property to the desired state device.  The state device should have a property that sets the "closed" position.
+To be used to convert a state device (such as a filter wheel) into a shutter.  To use it you will need to set the "State Device Shutter" property to the desired state device.  The state device should have a property that sets the "closed" position.
