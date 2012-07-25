@@ -47,6 +47,10 @@
 === Andor SDK ===
 You must install the Andor SDK, or Andor camera application software (Solis or iQ), since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
+{{MessageBox|Support Advisory|Clara users must use Andor SDK 2.90.30004.0 or older until the PreAmp selection bug is fixed.  Downloads available here for [[:File:Windows_SDK_2.90.30004.0.tar.gz|Windows‎]] and [[:File:Linux_SDK_2.90.30004.0.tar.gz|Linux]]}}
+
+{{MessageBox|Support Advisory|Windows 7 64-bit users must install Andor SDK 2.94 to fix the driver signing installer issue: [[:File:SDK_2.94.10005.0.zip.gz|Download]]}}
+
 === Disable power savings ===
 Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
 
