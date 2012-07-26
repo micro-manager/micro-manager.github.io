@@ -47,9 +47,11 @@
 === Andor SDK ===
 You must install the Andor SDK, or Andor camera application software (Solis or iQ), since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
-{{MessageBox|Support Advisory|Clara users must use Andor SDK 2.90.30004.0 or older until the PreAmp selection bug is fixed.  Downloads available here for [[:File:Windows_SDK_2.90.30004.0.tar.gz|Windows‎]] and [[:File:Linux_SDK_2.90.30004.0.tar.gz|Linux]]}}
+{{MessageBox|Support Advisory|iXon users on Windows 7 64-bit must install Andor SDK 2.94 to fix the driver signing installer issue: [[:File:SDK_2.94.10005.0.zip.gz|Download]]}}
 
-{{MessageBox|Support Advisory|Windows 7 64-bit users must install Andor SDK 2.94 to fix the driver signing installer issue: [[:File:SDK_2.94.10005.0.zip.gz|Download]]}}
+{{MessageBox|Support Advisory|Clara users must use Andor SDK 2.90.30004.0 or older until the [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection issue] is fixed (Andor bug #7030).  Downloads available here for [[:File:Windows_SDK_2.90.30004.0.tar.gz|Windows‎]] and [[:File:Linux_SDK_2.90.30004.0.tar.gz|Linux]].  On Windows, after installing the SDK you need to copy the DLL to the Micro-Manager directory [[#Clara:_error_code_22|as described in the FAQ]]}}
+
+{{MessageBox|Support Advisory|Luca users must use Andor SDK 2.88.30002.0 or older until the [http://micro-manager.3463995.n2.nabble.com/Error-message-90991-51ff-hex-td7578217.html Error 20991 issue] is fixed (Andor bug #7162).  Downloads available here for [[:File:Windows_SDK_2.88.30002.0.tar.gz|Windows‎]] and [[:File:Linux_SDK_2.88.30002.0.tar.gz|Linux]].  On Windows, after installing the SDK you need to copy the DLL to the Micro-Manager directory [[#Clara:_error_code_22|as described in the FAQ]]}}
 
 === Disable power savings ===
 Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
