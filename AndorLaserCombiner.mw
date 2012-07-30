@@ -63,6 +63,7 @@
 ** You must add the '''AndorLaserCombiner'''.  Select "1" (true) for MultiPortUnitPresent if you have the 3 fiber optic multiport unit (MPU) controller attachment on the front of your laser combiner.  Otherwise if you only see a single fiber optic connected horizontally to the front of the laser combiner, choose the default "0" (false).
 ** Add '''AndorLaserCombiner Piezostage''' if your system uses Andor's analog control for piezo Z.  Generally, confocal systems have this configuration.  If you are unsure if you have this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC connected from A5 to your Piezo Z controller, you should enable this option.
 ** Set the "Default shutter" as the AndorLaserCombiner
+** Use the default Delay [ms] of 0.0
 
 == Resources ==
 === Laser Combiner questions ===
