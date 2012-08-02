@@ -207,13 +207,6 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 | C:\MM\vinput\andor\
 |}
 
-=== Clara: Java exception using Live, Overlap mode with Clara-Output_Amplifier in "Extended NIR" mode ===
-This is a bug with the DeviceAdapter.
-
-The camera hardware does not support Extended NIR with overlap; the option should not be populated in the drop-down list.
-
-
-
 == Resources ==
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
