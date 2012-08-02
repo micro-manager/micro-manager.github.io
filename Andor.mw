@@ -183,18 +183,29 @@ If the iXon PCI/PCIe board is plugged in before you first install the driver, ri
     
     C:\Program Files\Andor SOLIS\Drivers\
 
-=== Clara: error code 22 ===
-The camera cannot be seen because the Andor SDK version is too old, i.e. the Andor SDK Micromananger bundled needs to be updated to the current version Andor is using to use the cameras newer firmware. 
+=== Updating Andor library (DLL) ===
+If Micro-Manager's Andor library is too old, adding (i.e. initializing) your Andor camera in the Hardware configuration wizard can result in:
+* Error code 22
+* Micro-Manager crash (with no error in the CoreLog)
 
-To update the Andor SDK used by Micromanager, copy the library file from your Andor installation to your Micro-Manager directory.  If you have the Andor SDK installed, copy and overwrite:
+To fix this, update the Andor library used by Micromanager by copying the library file from your Andor software to your Micro-Manager installation directory.  The name of the Andor library needed is '''atmcd32d.dll''' or '''atmcd64d.dll''', depending if whether are using 32- or 64-bit Micro-Manager.  The default location of the Andor library installed varies with the software you are using:
 
-      C:\Program Files\Andor SOLIS\Drivers\atmcd32d.dll
-
-To:
-
-      C:\Program Files\Micro-Manager-1.4\atmcd32d.dll
-
-64-bit users should copy the library '''atmcd64d.dll''' instead
+{| class="wikitable"
+! Software
+! Path containing Andor library
+|-
+| Andor SDK
+| C:\Program Files\Andor SOLIS\Drivers\
+|-
+| Andor Solis
+| C:\Program Files\Andor SOLIS\
+|-
+| Andor iQ
+| Not applicable since iQ uses a C++ interface wrapper to combine SDK2 and SDK3
+|-
+| MDS Metamorph 7
+| C:\MM\vinput\andor\
+|}
 
 === Clara: Java exception using Live, Overlap mode with Clara-Output_Amplifier in "Extended NIR" mode ===
 This is a bug with the DeviceAdapter.
