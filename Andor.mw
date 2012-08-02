@@ -174,14 +174,58 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 
 
 == Troubleshooting ==
-=== iXon: PCI/PCIe card not found on Windows 2000/XP ===
-If the iXon PCI/PCIe board is plugged in before you first install the driver, right click on the PCI device, update the driver and choose:
 
-    Install from a list or specific location (Advanced) >
-    Search for the best driver in these locations >
-    Include this location in the search >
-    
-    C:\Program Files\Andor SOLIS\Drivers\
+=== Check for device driver ===
+Make sure there is no yellow question mark next to the device, and that it is present in the Device Manager.
+
+{| class="wikitable"
+! Device Type
+! Appearance in Device Manager
+|-
+| PCI/PCIe
+|
+ Andor
+  \- Andor Technology PCI{e} driver
+|-
+| USB
+|
+ LibUSB-Win32 Devices
+  \- Andor {Clara, Luca, iXon Ultra}
+|}
+
+If there is a yellow question mark, then right-click on the device, update the driver and choose:
+
+{| class="wikitable"
+! OS
+! Action
+|-
+| Windows 7
+|
+ Browse my Computer for driver software >
+|-
+| Windows XP
+|
+ Install from a list or specific location (Advanced) >
+ Search for the best driver in these locations >
+ Include this location in the search >
+|}
+
+...and use the path below according to the software you have installed:
+
+{| class="wikitable"
+! Software
+! Path containing Andor device driver
+|-
+| Andor SDK
+| C:\Program Files\Andor SOLIS\Drivers\
+|-
+| Andor Solis
+| C:\Program Files\Andor SOLIS\
+|-
+| Andor iQ
+| C:\Program Files (x86)\Andor Bioimaging\Common Files\Drivers\
+|}
+
 
 === Updating Andor library (DLL) ===
 If Micro-Manager's Andor library is too old, adding (i.e. initializing) your Andor camera in the Hardware configuration wizard can result in:
