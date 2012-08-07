@@ -227,4 +227,4 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  move (startX, startY, startZ);
  print("Finished");
 
---[[User:Kdb|Karl Bellv&amp;eacute;, Biomedical Imaging Group, University of Massachusetts]] 07:37, 7 August 2012 (PDT)
+--Karl Bellv&eacute;, Biomedical Imaging Group, University of Massachusetts 07:40, 7 August 2012 (PDT)
