@@ -86,21 +86,21 @@ For feature requests or bug reports, please liaison with µManager developers on
 ** Prolific PL-2303 USB (for laser serial communication)
 ** Measurement Computing (for PCI DAC card)
 * The devices will be detected in the Device Manager as:
-<blockquote><pre>DAS Component
-    PCIM-DDA06/16
- DeVaSys USB Interfaces
-    USB-I2C/IO Board
- ...
- Ports (COM & LPT)
-    ...
-    Prolific USB-to-Serial Comm Port
-    ...</pre></blockquote>
+      DAS Component
+         PCIM-DDA06/16
+      DeVaSys USB Interfaces
+         USB-I2C/IO Board
+      ...
+      Ports (COM & LPT)
+         ...
+         Prolific USB-to-Serial Comm Port
+         ...
 * Run Instacal from Windows Start Button > All Programs > Measurement Computing.  You will see the "Plug and Play Board Detection" window finding your PCIM-DDA06/16 card.  Click OK and Exit Instacal.  This has now written your DAC card configuration file.
 * Open the Device Manager to check the COM port numbers for the USB-to-Serial COM ports built into the ALC.  Andor's library reserves specific port numbers for the combiner and expects them to be COM201-206.  Change the port numbers as follows:
 ** Unplug the blue USB cable from the front of the ALC and check if any such ports remain, to confirm if you have other Prolific USB-to-Serial devices attached.  If see some still left, make a note of their COM numbers so that you don't change them.  Plug the ALC back in and note the new COM numbers.
 ** For each of your reappeared COM ports, check the port physical location by (Right-click) > Properties.  On Windows 7, the "Port" is immediately visible under <code>Location</code> in the <code>General</code> tab.  If you see <code>Port_#0001</code>, that port will need to be changed to COM 201.
 ** Reassign your COM ports number by:
-<blockquote><pre>(Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number</pre></blockquote>
+      (Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number
 * Restart the computer to apply the COM port changes
 
 === Testing ===
