@@ -51,9 +51,11 @@
 == Installing the Device Adapter ==
 === Setup the ALC_SDK ===
 # [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 Download] and install VC 2008 redistributable.  The ALC_SDK library requires this.
-# Copy the ALC_SDK library from the ALC_SDK zip file (under .\ALC_REV_SDK\Libraries) to your Micro-Manager folder (e.g. C:\Program Files\Micro-Manager-1.4):
-#* For 32-bit you would need only AB_ALC_REV.dll
-#* For 64-bit you would need AB_ALC_REV64.dll and usb2i2cio64.dll
+# Unzip the ALC_SDK file
+# (only for 64-bit users) Copy <code>usb2i2cio64.dll</code> installed by your DeVaSys dependency to the Micro-Manager executable folder.  This file will be installed at <code>C:\Program Files (x86)\DeVaSys\UsbI2cIo\Drivers and DLLs (32 and 64 bit)</code>
+# Copy the ALC_SDK library <code>AB_ALC_REV64.dll</code> (or for 32-bit users AB_ALC_REV.dll) from the <code>Libraries</code> directory to your Micro-Manager folder.
+
+If you already have control of your ALC in another software, your ALC_SDK installation is complete.  Otherwise continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
 
 
@@ -78,46 +80,28 @@ For feature requests or bug reports, please liaison with µManager developers on
 
 
 == Appendix ==
-=== Setting Micro-Manager but not iQ ===
-{{Note| If you want to run Andor's iQ software as well on this computer, since iQ imposes additional restrictions on the driver versions you must use your iQ CD instead of installing the drivers from the ALC_SDK zip file.  Skip to the [[#Setting Micro-Manager alongside Andor iQ|the next section]]}}
-
-Specific driver versions are required.  Do not rely on the manufacturer websites for these drivers.  The ALC_SDK version 2 now bundles all the drivers you need to install to get the ALC running.  Install the drivers bundled for your flavor of Windows:
-
-      .\ALC_REV_SDK\Drivers\
-
-=== Setting Micro-Manager alongside Andor iQ ===
-{{Note|Windows 7 32-bit users must install iQ 2.4 or greater.  iQ does not support Windows 7 in earlier versions}}
-
-Andor completes the steps described in this section in their factory.
-If you are setting up an Andor laser combiner on a new computer, only then do you need to follow this section.
-
-When you start Windows, ignore the Found New Hardware Wizard.
-Also when installing, ignore the driver requests to restart your computer.
-
-# (Optional for testing) Dongle Driver
-# [http://www.andor.com/software/iq/ Andor iQ]
-#* Necessary because iQ installs the driver to recognize the DeVaSys microcontroller in the combiner
-#* (Optional for testing) iQ would also serve to test that communication and control of the combiner is possible
-# [http://www.mccdaq.com/software.aspx Instacal] for the Measurement Computing DAC card driver
-#* Recognizes the Andor Precision Control Unit (PCU) box which controls the laser combiner Acousto-Optic Tunable Filter (AOTF)
-# Prolific PL-2303 USB to RS232 driver.  '''For Windows 7 do not use Prolific's public driver.  It will lock up Windows.  Use the version bundled with the ALC SDK instead'''.
-# Restart your PC
-# Let Windows Found New Hardware wizard finish for all hardware
-# Start menu > Measurement Computing > InstalCal, to register the PCU DAC card
-#* Running InstaCal creates a new configuration file which is used by iQ
-#* Simply running the program once and closing it creates the file
-#* Do not delete the DEMO board.
-#* Two boards should exist, the DEMO board #0 and your installed board #1
-# Start Menu > Andor Bioimaging > ConfigurationManager
-#* Create a new configuration with a Kinetic Dummy Camera and the Andor laser combiner
-
-=== Mapping COM ports ===
-# Remap the USB-to-Serial COM ports in your Device Manager to 201-204 if you have up to 4 lasers, or 201-206 if you have 5 or 6 lasers (Andor's library reserves these specific port numbers for the combiner, so you cannot use them for any other serial device)
-# Launch the Device Manager, e.g. by (right-click) on My Computer > Manage.
-# Change the Prolific USB-Serial COM ports.  See screenshot below-  by unplugging the USB cable from the front of the Andor combiner we know that Windows has enumerated the COM ports for the lasers from COM 7 to COM 10 (since these port numbers disappear from the Device manager when we unplug the combiner and reappear when we plug it back in) [[Image:AB-1-com-ports.png|frame|center||Configure Prolific driver COM ports of the laser combiner.  Above, be wary that Windows shows the COM ports out of order since it orders them alphabetically instead of numerically!  So in this case COM10 should not be made 201, but COM7 would be 201]]
-# Reassign the COM ports from COM 7-10 to COM 201-206.  (Right-click) on the port > Properties > Port Settings (tab) > Advanced > change the COM port number
-# After 201-204 have been resassigned, click on scan for hardware changes to refresh the window. Here is the final result: [[Image:AB-4-new-ports.png||Result of COM port changes]]
-# Restart the computer so that for the COM port changes apply.
+=== Configure ALC_SDK dependencies ===
+* Install your OS dependencies, located under the unzipped ALC_SDK's <code>Drivers</code> directory.  Under each OS folder there are folders for the 3 dependency drivers:
+** DeVaSys (for front USB control to enable interlocks)
+** Prolific PL-2303 USB (for laser serial communication)
+** Measurement Computing (for PCI DAC card)
+* The devices will be detected in the Device Manager as:
+<blockquote><pre>DAS Component
+    PCIM-DDA06/16
+ DeVaSys USB Interfaces
+    USB-I2C/IO Board
+ ...
+ Ports (COM & LPT)
+    ...
+    Prolific USB-to-Serial Comm Port
+    ...</pre></blockquote>
+* Run Instacal from Windows Start Button > All Programs > Measurement Computing.  You will see the "Plug and Play Board Detection" window finding your PCIM-DDA06/16 card.  Click OK and Exit Instacal.  This has now written your DAC card configuration file.
+* Open the Device Manager to check the COM port numbers for the USB-to-Serial COM ports built into the ALC.  Andor's library reserves specific port numbers for the combiner and expects them to be COM201-206.  Change the port numbers as follows:
+** Unplug the blue USB cable from the front of the ALC and check if any such ports remain, to confirm if you have other Prolific USB-to-Serial devices attached.  If see some still left, make a note of their COM numbers so that you don't change them.  Plug the ALC back in and note the new COM numbers.
+** For each of your reappeared COM ports, check the port physical location by (Right-click) > Properties.  On Windows 7, the "Port" is immediately visible under <code>Location</code> in the <code>General</code> tab.  If you see <code>Port_#0001</code>, that port will need to be changed to COM 201.
+** Reassign your COM ports number by:
+<blockquote><pre>(Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number</pre></blockquote>
+* Restart the computer to apply the COM port changes
 
 === Testing ===
 # (Optional for testing) Now start iQ with your new laser combiner configuration and test.  The ALC_SDK also includes a test program which turns lasers on sequentially and then off:
