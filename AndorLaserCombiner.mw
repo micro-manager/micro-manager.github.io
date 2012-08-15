@@ -42,11 +42,7 @@
 
 == Getting Started ==
 * You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  To gain access to it, register/sign-into your MyAndor web account on the Andor homepage, click on Software > Downloads, uncheck the "Display only files I have access to", select "DRIVER: Andor ALC SDK 2.0" and request access.
-* '''ALC_SDK 2.0 is the current version as of July 29, 2011'''
-
-{{Note|The rest of this guide assumes you have a computer preconfigured with drivers, such as the computer Andor sells.  If, instead, you have a non-Andor computer please read the [[#Appendix|appendix]] to install the drivers and map the COM ports.}}
-
-
+* ALC_SDK 2.0 is the current version as of July 29, 2011
 
 == Installing the Device Adapter ==
 === Setup the ALC_SDK ===
