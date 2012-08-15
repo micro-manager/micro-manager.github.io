@@ -57,6 +57,8 @@
 
 If you already have control of your ALC in another software, your ALC_SDK installation is complete.  Otherwise continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
+{{Note|iQ's FLZ can conflict with Micro-Manager's device adapter if you are not using version 1.12 of Instacal.  Specifically, if you may have trouble detecting the ALC in Micro-Manager remove the DEMO-BOARD from Instacal}}
+
 
 
 === Configuring Micro-Manager ===
