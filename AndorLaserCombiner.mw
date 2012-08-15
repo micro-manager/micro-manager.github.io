@@ -99,8 +99,7 @@ For feature requests or bug reports, please liaison with µManager developers on
 * Open the Device Manager to check the COM port numbers for the USB-to-Serial COM ports built into the ALC.  Andor's library reserves specific port numbers for the combiner and expects them to be COM201-206.  Change the port numbers as follows:
 ** Unplug the blue USB cable from the front of the ALC and check if any such ports remain, to confirm if you have other Prolific USB-to-Serial devices attached.  If see some still left, make a note of their COM numbers so that you don't change them.  Plug the ALC back in and note the new COM numbers.
 ** For each of your reappeared COM ports, check the port physical location by (Right-click) > Properties.  On Windows 7, the "Port" is immediately visible under <code>Location</code> in the <code>General</code> tab.  If you see <code>Port_#0001</code>, that port will need to be changed to COM 201.
-** Reassign your COM ports number by:
-      (Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number
+** Reassign your COM ports number by (Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number
 * Restart the computer to apply the COM port changes
 
 === Testing ===
