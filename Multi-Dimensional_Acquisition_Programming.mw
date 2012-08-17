@@ -5,7 +5,7 @@ Multi-dimensional acquisition is an important functionality of Micro-Manager. MD
 
 This image (from Grant Harris) shows the flow of TaggedImages through Micro-Manager during multi-dimensional acquisition. The most important interfaces and classes are described below.
 
-[[File:ImageFlow.png]]
+[[File:MMImageFlow.png]]
 
 '''JSONObject''': All metadata is stored in JSONObjects. Summary metadata refers to the metadata for a particular multi-dimensional acquisition, in contrast to image metadata which is attached to every image plane.
 
