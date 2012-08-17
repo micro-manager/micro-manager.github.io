@@ -84,6 +84,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
 * [[ThorlabsSC10]] - Thorlabs shutter controller
+* [[Tofra]] - XY and Z stages, filter wheel, motorized filter cube slider, and LED illuminator
 * [[Vincent]] - Vincent Uniblitz controllers
 * [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
 * [[XCite120PC_Exacte]] - Lumen Dynamics X-Cite 120PC and ''exacte'' adapter
