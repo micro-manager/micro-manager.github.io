@@ -60,6 +60,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DA-Z-Stage]] - For stages that can be controlled with analogue voltage.  Needs a DA device
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
 * [[KDV]] - kdvelectronics focus drive (z-stage) for Meiji Techno
+* [[Leica DMSTC]] - Leica DMSTC XY stage
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[LudlLow]] - Ludl stages, shutters and filter wheels (other)
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
