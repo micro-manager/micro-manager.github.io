@@ -1,3 +1,5 @@
 The CSU-X confocal scanhead has an APC (i.e. non-flat) fiber connector.  Yokogawa provides a matching fiber with the scanhead.  In some cases (for instances when using the Agilent MLC laser combiner) you may want to use another fiber.  Most APC connectors have the notch in another position with respect to the tilt of the fiber tip than the fiber provided by Yokogawa.  Luckily you can work around this problem by rotating the connector at the scanhead itself.  
 
+[[Image:CSUX.JPG|frame|center]]
+
 {{Documentation_Sidebar}}
