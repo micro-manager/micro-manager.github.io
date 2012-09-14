@@ -31,5 +31,7 @@ The CSUX can have up to 2 filter wheels.  If you have only one, use the default 
 
 As of version 1.3.38, MIcro-Manager supports the bright field bypass option.  There is no support for the second camera port option (although control can easily be added by anyone having access to such a scan-head).
 
+If you experience a very uneven field of illumination in the CSUX, please check out [[CSU-X_fiber_rotation]] page.
+
 
 {{Devices_Sidebar}}
