@@ -51,7 +51,7 @@ Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PC
 == Configuration ==
 
 === Increase sequence buffer size ===
-In the µManager toolbar set the Sequence buffer size [MB] to  8,000 - 10,000 MB
+On a 64-bit OS, in the µManager toolbar set the Sequence buffer size [MB] to  8,000 - 10,000 MB
 
       Tools > Options... > Sequence buffer size [MB]
 
@@ -62,7 +62,7 @@ Due to the rate that a Neo acquires data it's not uncommon for µManager to run 
       Error: Circular buffer overflowed.
 
 === Increase ImageJ memory buffer size ===
-It is possible to achieve full frame rate with enough RAM.  In the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
+It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS, on the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
 
       Edit > Options > Memory & Threads ... > Maximum Memory
 
