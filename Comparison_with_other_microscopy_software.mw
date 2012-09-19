@@ -1,5 +1,3 @@
-Note: The information below was written a number of years ago, and may no longer be accurate, especially in the details.
-
 == Summary ==
 This article provides a light comparison of available microscopy software with a 3 line summary and up to 5 specific unique Pro and Con bullet points.  Adding more software to this list is encouraged (especially FLOSS software).  Contributions are best made by you, the scientist, experienced with multiple products.
 
@@ -99,7 +97,7 @@ Started in the DOS era as "Image1", Metamorph has been a longtime go-to applicat
 
 == Elements 4 (Nikon) ==
 <!-- Written mostly by Austin -->
-Built on top of the [http://www.lucia.cz/ LIM "LUCIA" Software], Elements has grown from a basic package into a formidable software application, with one caveat - it only runs Nikon Microscope stands. Elements has a higher price point, with offline packages running as high or higher than MetaMorph. User workflow, organization of image data, and range of applications make Elements a very powerful imaging application. With this power and complexity comes a lower stability, with more crashes and bugs to be found.   
+Built on top of the LIM "LUCIA" Software, Elements has grown from a basic package into a formidable software application, with one caveat - it only runs Nikon Microscope stands. Elements has a higher price point, with offline packages running as high or higher than MetaMorph. User workflow, organization of image data, and range of applications make Elements a very powerful imaging application. With this power and complexity comes a lower stability, with more crashes and bugs to be found.   
 
 {| class="wikitable"
 ! style="width: 50%;"| Pros
@@ -151,6 +149,3 @@ Andor brought their EMCCD cameras to the life sciences by acquiring Kinetic Imag
 
 
 [[User:P.nanda|P.nanda]] 18:33, 18 September 2012 (PDT)
-
-
-{{Documentation_Sidebar}}
