@@ -9,8 +9,17 @@ To put everything together, I also used:
 * Four stranded telephone wire (from the RadioShack)
 * Telephone wire crimp connectors (see picture below)
 * Arduino-compatible [https://www.sparkfun.com/products/11026 jumper wires]
-* An [https://www.sparkfun.com/products/10088 Arduino enclosure]]
+* An [https://www.sparkfun.com/products/10088 Arduino enclosure]
 You can exchange these for anything else that works.
 
 I connected the Hall effect sensor to the telehone wire using crimp connectors:
-[
+[[Image:Sensorb.jpg|frame|center]]
+
+Then hooked up the telephone wire to the Arduino using the same crimp connectors and M/M jumper wires.  Note, the Hall effect sensor needs 5V power (red wire) and ground (white/black cables), all provided by the Arduino and its output (green wire) can be connected to the A0 pin on the Arduino.  I used a knot in the telephone wire to protect against problems arising from cable pull.
+[[Image:Arduinob.jpg|frame|center]]
+
+Close the box (you do not need to put the stickers on):
+[[Image:Boxb.jpg|frame|center]]
+
+Now put the Buckeyball magnet in the screw hole in the tube lens changer and position the Hall effect sensor right underneath. Turning the know will bring the magnet out of reach of the Hall effect sensor.  
+[[Image:swictherb.jpg|frame|center]]
