@@ -21,6 +21,8 @@ It is possible to control the IntensiLight epi-fluorescence light source to the 
 
 As of version 1.3.43, Micro-Manager works with Nikon TI driver 2.0.2 and higher (included with TI Tool 4.0). 
 
+Note that the tube lens switcher of the Nikon TI is not encoded.  You can encode the tube lens switcher yourself following these instructions: [[Encoding_the_Nikon_TI_Eclipse_tube_lens]]
+
 {{Listserv_Search|Nikon}}
 
 {{Devices_Sidebar}}
