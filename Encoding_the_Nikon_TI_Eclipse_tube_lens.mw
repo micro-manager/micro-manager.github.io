@@ -1,3 +1,6 @@
 The Nikon TI Eclipse is a fine motorized microscope, however, its designers forgot one little detail.  The tube lens switcher can switch between a 1x and 1.5x tube lens but since it is not encoded there is no way for software controlling the microscope to know what the final magnification of the image is.  Of course, a diligent microscopist will take note of the position of that switch and it is even possible in Micro-Manager to add a "dummy" tube lens switcher, however, more often then not, you will end up in a situation where you are not certain whether you used the 1x or 1.5x tube lens, basically rendering a data set useless.
 
-To remedy this problem, I started encoding the tube lens
+To remedy this problem, I started encoding the tube lens switcher myself.  The three main components to do so are:
+* Hall effect sensor.  These are small devices that change output voltage depending on the presence of an electric field.  I used the A3214EUA-T (inscribed with EA1) from Allegro.  It appears no longer to be available, but similar devices will do the job as well
+* Magnet.  You want a magnet that fits into the screw hole of the tube lens switcher.  [http://www.getbuckyballs.com/ Buckeyballs] do a great job at this.  You need only one of these (hope they are still available)!
+* An [http://arduino.org Arduino] board. Most of the standard boards (including the Uno) will do fine.  This will provide power to the Hall effect sensor, read out its state and signal this to the Micro-Manager software.
