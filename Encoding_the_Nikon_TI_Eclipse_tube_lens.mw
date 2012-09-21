@@ -25,3 +25,5 @@ Now put the Buckeyball magnet in the screw hole in the tube lens changer and pos
 [[Image:swictherb.jpg|frame|center]]
 
 Load the AOTF firmware into the Arduino board. Configure Micro-Manager to use the Arduino-Input device. Set the pull up resistor property to "On".  You can either use just pin 0 or all pins.  In the device property browser, you should see the value of this read-only input property change when the magnet is close to the hall effect sensor (the input updates automatically every second).  Add this property to the pixel size configuration and Micro-Manager will always know the exact pixel size.
+
+{{Documentation_Sidebar}}
