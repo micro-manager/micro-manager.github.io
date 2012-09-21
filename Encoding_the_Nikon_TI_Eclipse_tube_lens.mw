@@ -4,3 +4,13 @@ To remedy this problem, I started encoding the tube lens switcher myself.  The t
 * Hall effect sensor.  These are small devices that change output voltage depending on the presence of an electric field.  I used the A3214EUA-T (inscribed with EA1) from Allegro.  It appears no longer to be available, but similar devices will do the job as well
 * Magnet.  You want a magnet that fits into the screw hole of the tube lens switcher.  [http://www.getbuckyballs.com/ Buckeyballs] do a great job at this.  You need only one of these (hope they are still available)!
 * An [http://arduino.org Arduino] board. Most of the standard boards (including the Uno) will do fine.  This will provide power to the Hall effect sensor, read out its state and signal this to the Micro-Manager software.
+
+To put everything together, I also used:
+* Four stranded telephone wire (from the RadioShack)
+* Telephone wire crimp connectors (see picture below)
+* Arduino-compatible [https://www.sparkfun.com/products/11026 jumper wires]
+* An [https://www.sparkfun.com/products/10088 Arduino enclosure]]
+You can exchange these for anything else that works.
+
+I connected the Hall effect sensor to the telehone wire using crimp connectors:
+[
