@@ -17,6 +17,8 @@ Micro-Manager is built by extensively using other open source components and app
 * Quirkware
 * [http://damien.douxchamps.net/ieee1394/libdc1394/ libdc1394]
 * [http://www.famfamfam.com/ Icons by Mark James]
+* [http://www.slf4j.org/ Simple Logging Facade for Java]
+* [http://loci.wisc.edu/software/bio-formats Bio-Formats]
 
 Especially important precursor contributions for our project are from Wayne Rasband (ImageJ).
 
