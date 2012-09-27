@@ -119,29 +119,48 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
 
 === Suggested Presets ===
 iXon camera:
-* EM high sensitivity
-** FrameTransfer = Off
-** Output_Amplifier = Electron Multiplying
-** Pre-Amp-Gain = <highest available>
-** ReadoutMode = <highest avaiable>
-** VerticalSpeed = 1.70 (microseconds)
-* EM high speed burst mode
-** FrameTransfer = On
-** Output_Amplifier = Electron Multiplying
-** Pre-Amp-Gain = <highest available>
-** ReadoutMode = <highest avaiable>
-** VerticalClockVoltage = +4 (volts)
-** VerticalSpeed = 0.30 (microseconds)
-* CCD high sensitivity
-** FrameTransfer = Off
-** Output_Amplifier = Conventional
-** Pre-Amp-Gain = <highest available>
-** VerticalSpeed = 1.70 (microseconds)
-* CCD high capacity
-** FrameTransfer = Off
-** Output_Amplifier = Conventional
-** Pre-Amp-Gain = <lowest available>
-** VerticalSpeed = 1.70 (microseconds)
+
+{| class="wikitable"
+!style="width: 20%;"| Preset Name
+! Frame Transfer
+! Output Amplifier
+! Pre-Amp Gain
+! Readout Mode
+! Vertical Speed
+! Vertical Clock Voltage
+|-
+! EM high sensitivity
+| Off
+| Electron Multiplying
+| <highest>
+| <highest>
+| 1.70 (microseconds)
+| Normal
+|-
+! EM high speed burst mode
+| On
+| Electron Multiplying
+| <highest>
+| <highest>
+| 0.30 (microseconds)
+| <highest>
+|-
+! CCD high sensitivity
+| Off
+| Conventional
+| <highest>
+| <highest>
+| 1.70 (microseconds)
+| Normal
+|-
+! CCD high capacity
+| Off
+| Conventional
+| <lowest>
+| <highest>
+| 1.70 (microseconds)
+| Normal
+|}
 
 
 
