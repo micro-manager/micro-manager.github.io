@@ -116,7 +116,9 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
 == Device Configuration ==
 # Open Micromanager.
 # You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
-# Suggested presets for iXon camera:
+
+=== Suggested Presets ===
+iXon camera:
 * EM high sensitivity
 ** FrameTransfer = Off
 ** Output_Amplifier = Electron Multiplying
