@@ -121,9 +121,6 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
 
 == Device Settings ==
 Set camera properties under "Tools" > "Device/Property Browser..."
-Micromanager does not offer every feature available in Andor Cameras.
-TODO: List camera features not available in Micro-Manager. 
-However for the Clara overlap mode, Extended NIR and the variable pre amp gains are available.
 
 === Cooling ===
 * iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
@@ -169,9 +166,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 * Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
 
 === iCam ===
-* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions 
-
-
+* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions
 
 == Troubleshooting ==
 
