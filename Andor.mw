@@ -116,11 +116,34 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
 == Device Configuration ==
 # Open Micromanager.
 # You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
+# Suggested presets for iXon camera:
+* EM high sensitivity
+** FrameTransfer = Off
+** Output_Amplifier = Electron Multiplying
+** Pre-Amp-Gain = <highest available>
+** ReadoutMode = <highest avaiable>
+** VerticalSpeed = 1.70 (microseconds)
+* EM high speed burst mode
+** FrameTransfer = On
+** Output_Amplifier = Electron Multiplying
+** Pre-Amp-Gain = <highest available>
+** ReadoutMode = <highest avaiable>
+** VerticalClockVoltage = +4 (volts)
+** VerticalSpeed = 0.30 (microseconds)
+* CCD high sensitivity
+** FrameTransfer = Off
+** Output_Amplifier = Conventional
+** Pre-Amp-Gain = <highest available>
+** VerticalSpeed = 1.70 (microseconds)
+* CCD high capacity
+** FrameTransfer = Off
+** Output_Amplifier = Conventional
+** Pre-Amp-Gain = <lowest available>
+** VerticalSpeed = 1.70 (microseconds)
 
 
 
 == Device Settings ==
-Set camera properties under "Tools" > "Device/Property Browser..."
 
 === Cooling ===
 * iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
