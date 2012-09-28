@@ -2,7 +2,7 @@ Micro-Manager has a Java-based plugin system similar to ImageJ's. To write a Mic
 
 Micro-Manager's classpath is set up so that Micro-Manager plugins can import classes from:
 <ol>
-<li>the [http://java.sun.com/j2se/1.5.0/docs/api/ Java 2 SE 5.0 Libraries]</li>
+<li>the [http://java.sun.com/j2se/1.6.0/docs/api/ Java 2 SE 6.0 Libraries]</li>
 <li>[https://valelab.ucsf.edu/~arthur/mm_doc/html/namespaces.html Micro-Manager]</li>
 <li>[http://rsbweb.nih.gov/ij/developer/api/ ImageJ]</li>
 <li>[http://commons.apache.org/math/userguide/overview.html Apache Commons Math]</li>
@@ -26,23 +26,35 @@ The source code for a number of Micro-Manager plugins is publicly available [htt
 
 The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. (The Micro-Manager distribution includes swing-layout-*.*.jar so that you can use the free Netbeans GUI Builder for your plugin.) Here are the steps for Netbeans:
 <ol>
-<li>Install [http://netbeans.org Netbeans].</li>
+<li>Install [http://netbeans.org Netbeans]. Note, Netbeans currently comes with the JRE 1.7.0 32-bit run time environment by default. After install, you will need to manually install and add the JRE that Micro-Manager uses: 1.6.0, 64-bit if you need it.</li>
 <li>Select New > New Project... > Java > Java Class Library.</li>
 <li>Name your plugin project and press Finish.</li>
 <li>Under the Projects tab, right-click your plugin project and choose Properties. Then choose Compile > Libraries > Add JAR/Folder.
-<li>Browse to C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager and choose all jars in that directory.</li>
+<li>Browse to C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager and choose all jars in that directory, except ij.jar.</li>
 <li>Click Add JAR/Folder again and add C:\Program Files\Micro-Manager-1.4\ij.jar</li>
 <li>Click Categories > Run and set Main Class to ij.ImageJ, working directory to C:\Program Files\Micro-Manager-1.4\ . Click OK.</li>
 <li>Now choose Debug > Debug Project from the Menu and ImageJ/Micro-Manager should launch. Close it for now.</li>
 <li>Right-click your Source Packages in your project, under the Projects tab. Select New > Java Class... and give your plugin a class name and package name.</li>
 <li>Edit the class declaration so that it contains the phrase <code>implements org.micromanager.api.MMPlugin</code>. Left-click on the light-bulb with a red pimple to the left of this line, and select "Implement all abstract methods."</li>
-<li>Create or edit the MMStartup.bsh file as described above.</li>
-<li>Now choose Debug > Debug Project and after Micro-Manager launches, MMStartup.bsh script will load your nascent plugin in the Plugins menu.</li>
+<li>Compile your project, and manually copy the project jar file to Micro-Manager's mmplugins directory. Alternatively, you can add the following to your project build.xml file (look in the Project "Files" tab in Netbeans):<br /><br />
+
+<div class="source"> <property name="pluginsDir"  location="C:\Program Files\Micro-Manager-1.4\mmplugins" /><br /> <target name="-post-jar"><br /> System.out.println(info);<br /> <echo message="--Copied MM plugin JAR to basedir: ${basedir}" /><br /><copy file="${basedir}/${dist.jar}" toDir="${pluginsDir}" /><br /></target></div>
+<br />
+
+When "Clean and Build" is run, this will automatically copy the current version of your plugin to the mmplugins folder.
+</li>
+
+<br /><li>Now choose Debug > Debug Project and your nascent plugin should appear in the Plugins menu.</li>
 </ol>
 <br>
-For distribution: in the dist folder of your Netbeans project folder, Netbeans will automatically produce a jar every time you build the project. You can copy this jar to the Micro-Manager plugins folder and it will be loaded in the Plugins menu, even in the absence of the MMStartup.bsh script.
-<br><br>
 
-Make sure you set the "Layout Generation Style" property as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
+You can also dynamically load your plugin by including a line in the MMStartup.bsh file. (This file should reside in the root directory of your Micro-Manager installation; if there isn't one yet, you can create it with any text editor program.) For example:
+<br><br>
+<pre>
+gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");
+</pre>
+<br>
+
+Make sure you change the "Layout Generation Style" property from "Automatic" to "Swing Layout Extensions Library" as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
 
 {{Programming_Sidebar}}
