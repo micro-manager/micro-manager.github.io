@@ -9,7 +9,19 @@
 <tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
 </table>
 
-(Under construction)
+
+Because of built in delays in the AxioCam's image acquisition, there is a delay of approximately 200ms between when Micro-Manager sends the command to open the shutter and when the AxioCam's exposure begins. If over exposure of the sample is a concern, it is highly recommended that hardware triggering is used with these cameras. Refer to the below descriptions of hardware triggering to do so (All images and text below ©2010 Carl Zeiss MicroImaging GmbH. All rights reserved.).
+
+
+
+'''Trigger-In'''
+
+The exact time of exposure can be triggered from outside the camera. When the trigger-in is enabled and an acquisition function is called, the camera will delay the acquisition and wait for a trigger-in signal to be sent from an external device until it invokes the exposure.
+The following graphic demonstrates the two camera models' reaction to the trigger signal when performing a triggered acquisition. An acquisition request is sent out at each '''T''', the acquisition takes place at an '''A''':
+
+[[File:C:\Users\Henry\Desktop\fig1.tif]]
+NOTE: The trigger OUT of the AxioCam HR / MR expects a TTL signal.
+
 
 --[[User:Henry Pinkard|Henry Pinkard]] 10:58, 5 September 2012 (PDT)
 
