@@ -15,4 +15,4 @@ Micro-Manager's multi-dimensional acquisition (MDA) engine practices opportunist
 * [[Arduino]] -- TTL and DAC output states
 * [[ASIStage]] -- ASI piezo focus drives
 * [[ESIOImagingControllers]] -- AOTFs (laser combiners) and piezo focus drives
-* [[Marzhauser]] (TANGO controller) -- Marzhauser piezo focus drive
+* [[Marzhauser]] (TANGO controller) --  Märzhäuser piezo focus drive
