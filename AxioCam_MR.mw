@@ -32,6 +32,7 @@ Due to different hardware and trigger mechanisms, the precise calculation of the
 The following charts demonstrate how an example acquisition using both trigger IN and trigger OUT could look like and explain how to precisely calculate the timing.
 
 '''AxioCam HR / MR'''
+
 The AxioCam HR / MR accepts only positive values for the trigger OUT delay, ranging from 0 to 255 row cycles, where 1 cycle lasts 154 µs (AxioCam HR) respectively 99 µs (AxioCam MR).
 When the delay is set, the trigger OUT signal is sent prior to exposing the CCD sensor. The camera takes the following steps when performing an acquisition using trigger IN and OUT:
 
@@ -46,14 +47,75 @@ When the delay is set, the trigger OUT signal is sent prior to exposing the CCD 
 •acquire  
 
 
-
-[[Image:AxioCamFig1b.png]]
-
 [[Image:AxioCamFig2.png]]
+
+
+'''AxioCam MRc5 / MR Rev.3 / HS'''
+The AxioCam MRc5 / MR Rev.3 / HS allows both positive and negative values for the trigger OUT delay, ranging from +4095 row cycles to -4095 row cyles, where 1 cycle lasts 244 µs.
+ 
+A negative delay means sending the trigger OUT signal prior to exposing the sensor (like AxioCam HR/MR).
+A positive delay means sending the trigger OUT signal after starting the exposition of the CCD sensor.
+ 
+'''Sensor cleanout:'''
+Before the AxioCam MRc5 / MR Rev.3 / HS is able to acquire an image, a certain 'cleanout time' is required to erase any existing data from the CCD sensor. When an acquisition call has been sent by the user / program and the trigger IN signal is being received, the camera needs about 6.5 ms of processing time. Now the initialization takes place, including a fixed 1ms delay (4 idle rows) and the sensor cleanout time, which depends on the current exposure time. A simplified formula for the cleanout time is:
+ 
+cleanout time = ( 1003 - (exposure time - 1) * binning factor ) / 23    [ unit: row cycles = 250 µs ]
+ 
+Note: when the exposure time is set to 1004 row cycles ( approx. 251ms ) or more, the cleanout time will be zero. 
+
+
+'''negative delay'''
+ 
+If the specified trigger OUT delay is longer than the interval for the fixed idle rows and clearing the sensor, the trigger OUT is sent directly after the initialization has been completed. The camera performs the cleanout and then waits an appropriate amount of time until the exposition is invoked.
+
+•	receive acquisition call (snap) 
+
+•	waits for trigger IN signal to arrive 
+
+•	approx. 6.5 ms processing time 
+
+•	send trigger OUT signal 
+
+•	finish idle rows and sensor cleanout 
+
+•	wait delta( trigger OUT delay - idle rows - cleanout time ) 
+
+•	start acquisition  
+
 
 [[Image:AxioCamFig3.png]]
 
+If the specified trigger OUT delay is shorter than the interval for the fixed idle rows and clearing the sensor, the camera starts the sensor cleanout right after the initialization was finished and delays sending the trigger OUT signal to achieve the desired trigger OUT delay.
+
+•	receive acquisition call (snap) 
+
+•	waits for trigger IN signal to arrive 
+
+•	approx. 6.5 ms processing time 
+
+•	start idle rows and sensor cleanout 
+
+•	wait delta( idle rows + cleanout time - trigger OUT delay ), then send trigger OUT 
+
+•	start acquisition
+
+
 [[Image:AxioCamFig4.png]]
+
+'''positive delay'''
+
+•	receive acquisition call (snap) 
+
+•	waits for trigger IN signal to arrive 
+
+•	approx. 6.5 ms processing time 
+
+•	sensor cleanout 
+
+•	start acquisition 
+
+•	delay the trigger OUT and send it  
+
 
 [[Image:AxioCamFig5.png]]
 
