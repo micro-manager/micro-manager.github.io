@@ -16,15 +16,14 @@ Because of built in delays in the AxioCam's image acquisition, there is a delay 
 <h2>Trigger-Out</h2>
 
 <p>Via a supplementary cable the AxioCam has the capability of sending out a
-TTL <a href='McammShutterControl.html'>trigger pulse</a> to an external device,
-for example a mechanical shutter. This
-<a href='McammShutterControl.html'>trigger pulse</a> can be used to synchronize
+TTL trigger pulse to an external device, for example a mechanical shutter. This
+trigger pulse can be used to synchronize
 the exposure of the camera and the task of the external device, as you can
-specify the <a href='McammSetShutterDelay.html'>delay</a> between sending out
+specify the delay between sending out
 the trigger signal and actually starting the acquisition.</p>
 
 <p>To meet the requirements of the device you are using, you can
-<a href='McammShutterControl.html'>invert</a> the polarity that you want the
+invert the polarity that you want the
 signal to have.</p>
 
 <h2>'''Trigger-In'''</h2>
