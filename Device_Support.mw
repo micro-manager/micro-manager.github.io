@@ -120,6 +120,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[ImageProcessorChain]] - Virtual device driver for processing images in C++
+* [[LumencorCIA]] - Solid state illuminator from Lumencor
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[MaestroServo]] - Pololu Maestro Servo controller
 * [[Mightex]] - LED driver/controllers
