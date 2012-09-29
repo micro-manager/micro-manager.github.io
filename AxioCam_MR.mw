@@ -18,9 +18,24 @@ Because of built in delays in the AxioCam's image acquisition, there is a delay 
 
 The exact time of exposure can be triggered from outside the camera. When the trigger-in is enabled and an acquisition function is called, the camera will delay the acquisition and wait for a trigger-in signal to be sent from an external device until it invokes the exposure.
 The following graphic demonstrates the two camera models' reaction to the trigger signal when performing a triggered acquisition. An acquisition request is sent out at each '''T''', the acquisition takes place at an '''A''':
-
 [[Image:AxioCamFig1a.png]]
+NOTE: The trigger OUT of the AxioCam HR / MR expects a TTL signal.
 
+
+
+'''Trigger Timing'''
+
+Due to different hardware and trigger mechanisms, the precise calculation of the camera's timing when involving the trigger IN / OUT is a bit difficult and depends on the camera model's internal design.
+The following charts demonstrate how an example acquisition using both trigger IN and trigger OUT could look like and explain how to precisely calculate the timing.
+
+'''AxioCam HR / MR'''
+The AxioCam HR / MR accepts only positive values for the trigger OUT delay, ranging from 0 to 255 row cycles, where 1 cycle lasts 154 µs (AxioCam HR) respectively 99 µs (AxioCam MR).
+When the delay is set, the trigger OUT signal is sent prior to exposing the CCD sensor. The camera takes the following steps when performing an acquisition using trigger IN and OUT:
+• receive acquisition call (snap) 
+• wait for trigger IN signal to arrive 
+• send trigger OUT signal 
+• delay the exposition (0-255 row cycles) 
+• acquire  
 [[Image:AxioCamFig1b.png]]
 
 [[Image:AxioCamFig2.png]]
@@ -31,7 +46,6 @@ The following graphic demonstrates the two camera models' reaction to the trigge
 
 [[Image:AxioCamFig5.png]]
 
-[[Image:AxioCamFig6.png]]
 
 --[[User:Henry Pinkard|Henry Pinkard]] 10:58, 5 September 2012 (PDT)
 
