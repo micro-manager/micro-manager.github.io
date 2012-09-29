@@ -7,7 +7,7 @@ LED illuminators and AOTF-based laser combiners both have very fast switching ti
 ===Focal drives===
 Piezo z stages move rapidly enough such that a sequence of z positions can be synchronized with a camera running at tens of frames per second.
 
-===Controller Devices that support Triggered Sequences===
+===Controller Devices that currently support Triggered Sequences===
 * [[AgilentLaserCombiner]] -- Laser channel switching
 * [[Arduino]] -- TTL and DAC output states
 * [[ASIStage]] -- ASI piezo focus drives
