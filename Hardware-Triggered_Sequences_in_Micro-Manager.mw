@@ -1,4 +1,10 @@
-Micro-Manager permits the precise and rapid triggering of sequences of properties and stage positions by the camera.
+Micro-Manager permits the precise and rapid triggering of sequences of channels and focus positions by the camera.
+
+===Channels===
+LED illuminators and AOTF-based laser combiners both have very fast switching times, and are thus prime candidates for hardware synchronization. 
+
+===Focal drives===
+Piezo z stages move rapidly enough such that a sequence of z positions can be synchronized with a camera running at tens of frames per second.
 
 ===Controller Devices that support Triggered Sequences===
 * [[AgilentLaserCombiner]] -- Laser channel switching
@@ -6,8 +12,5 @@ Micro-Manager permits the precise and rapid triggering of sequences of propertie
 * [[ASIStage]] -- ASI piezo focus drives
 * [[ESIOImagingControllers]] -- AOTFs (laser combiners) and piezo focus drives
 * [[Marzhauser]] (TANGO controller) -- Marzhauser piezo focus drive
-
-===Channels===
-LED illuminators and AOTF-based laser combiners both have very fast switching times, and are thus prime candidates for hardware synchronization. 
 
 ===Multi-Dimensional Acquisition===
