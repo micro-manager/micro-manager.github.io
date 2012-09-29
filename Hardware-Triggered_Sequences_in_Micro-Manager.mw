@@ -10,7 +10,7 @@ Piezo z stages move rapidly enough such that a sequence of z positions can be sy
 ===Multi-Dimensional Acquisition===
 Micro-Manager's multi-dimensional acquisition (MDA) engine practices opportunistic triggering: that is, if a triggered sequence is possible, then triggering will be carried out. Thus the user interface for triggered MDA is exactly the same as that for non-triggered MDA.
 
-===Controller Devices that currently support Triggered Sequences===
+===Controller Devices that currently support triggered Sequences===
 * [[AgilentLaserCombiner]] -- Laser channel switching
 * [[Arduino]] -- TTL and DAC output states
 * [[ASIStage]] -- ASI piezo focus drives
