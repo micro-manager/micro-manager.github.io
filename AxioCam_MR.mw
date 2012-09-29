@@ -35,8 +35,8 @@ The following charts demonstrate how an example acquisition using both trigger I
 The AxioCam HR / MR accepts only positive values for the trigger OUT delay, ranging from 0 to 255 row cycles, where 1 cycle lasts 154 µs (AxioCam HR) respectively 99 µs (AxioCam MR).
 When the delay is set, the trigger OUT signal is sent prior to exposing the CCD sensor. The camera takes the following steps when performing an acquisition using trigger IN and OUT:
 
-• receive acquisition call (snap)
-• wait for trigger IN signal to arrive 
+• receive acquisition call (snap) \n
+• wait for trigger IN signal to arrive \n 
 • send trigger OUT signal 
 • delay the exposition (0-255 row cycles) 
 • acquire  
