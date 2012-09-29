@@ -1,9 +1,9 @@
 Micro-Manager permits the precise and rapid triggering of sequences of properties and stage positions by the camera.
 
 ===Controller Devices that support Triggered Sequences===
+* [[AgilentLaserCombiner]] -- Laser channel switching
 * [[Arduino]] -- TTL and DAC output states
 * [[ASIStage]] -- ASI piezo focus drives
-* [[AgilentLaserCombiner]] -- Laser channel switching
 * [[ESIOImagingControllers]] -- AOTFs (laser combiners) and piezo focus drives
 * [[Marzhauser]] (TANGO controller) -- Marzhauser piezo focus drive
 
