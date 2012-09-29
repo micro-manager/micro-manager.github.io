@@ -1,1 +1,12 @@
-Micro-Manager
+Micro-Manager features a triggering framework that permits the precise and rapid synchronization of some hardware components with a camera.
+
+===Supported Devices===
+* [[ASIStage]] -- Allows triggering of ASI piezo focus drives
+* [[AgilentLaserCombiner]] -- Accepts TTL pulses for laser channel switching
+* [[ESIOImagingControllers]] -- controls AOTFs (laser combiners) and piezo focus drives
+
+
+===Channels===
+LED illuminators and AOTF-based laser combiners both have very fast switching times, and are thus prime candidates for hardware synchronization. 
+
+===Multi-Dimensional Acquisition===
