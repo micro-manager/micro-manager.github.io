@@ -1,10 +1,11 @@
 Micro-Manager features a triggering framework that permits the precise and rapid synchronization of some hardware components with a camera.
 
-===Supported Devices===
-* [[Arduino]] -- Allows triggering of TTL and DAC outputs
-* [[ASIStage]] -- Allows triggering of ASI piezo focus drives
-* [[AgilentLaserCombiner]] -- Accepts TTL pulses for laser channel switching
+===Supported Controller Devices===
+* [[Arduino]] -- Allows triggered sequencing of TTL and DAC states
+* [[ASIStage]] -- Allows triggered sequencing of ASI piezo focus drives
+* [[AgilentLaserCombiner]] -- Accepts TTL pulses for laser channel switching, as well as DAC control of piezo cofus drives
 * [[ESIOImagingControllers]] -- controls AOTFs (laser combiners) and piezo focus drives
+* [[Marzhauser]] -- triggering of focus drive
 
 ===Channels===
 LED illuminators and AOTF-based laser combiners both have very fast switching times, and are thus prime candidates for hardware synchronization. 
