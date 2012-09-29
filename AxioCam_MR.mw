@@ -19,12 +19,19 @@ Because of built in delays in the AxioCam's image acquisition, there is a delay 
 The exact time of exposure can be triggered from outside the camera. When the trigger-in is enabled and an acquisition function is called, the camera will delay the acquisition and wait for a trigger-in signal to be sent from an external device until it invokes the exposure.
 The following graphic demonstrates the two camera models' reaction to the trigger signal when performing a triggered acquisition. An acquisition request is sent out at each '''T''', the acquisition takes place at an '''A''':
 
-[Image:AxioCamfig1.gif]
+[[Image:AxioCamFig1a.png]]
 
-NOTE: The trigger OUT of the AxioCam HR / MR expects a TTL signal.
+[[Image:AxioCamFig1b.png]]
 
 [[Image:AxioCamFig2.png]]
 
+[[Image:AxioCamFig3.png]]
+
+[[Image:AxioCamFig4.png]]
+
+[[Image:AxioCamFig5.png]]
+
+[[Image:AxioCamFig6.png]]
 
 --[[User:Henry Pinkard|Henry Pinkard]] 10:58, 5 September 2012 (PDT)
 
