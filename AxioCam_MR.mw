@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>?</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>AxioCam MRm/MRc, MRm/MRc Rev. 2, and MRm/MRc Rev. 3 (only tested with Rev. 3 cameras) </td></tr>
-<tr><td>'''Example Config File:'''</td><td>[[Media:MMConfig_ham.cfg]]</td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
 
@@ -175,7 +175,7 @@ OUT signal to achieve the desired trigger OUT delay.<br />
 
 
 
---[[User:Henry Pinkard|Henry Pinkard]] 10:58, 5 September 2012 (PDT)
+--[[User:Henry Pinkard|Henry Pinkard]] 10:58, 1st October 2012 (PDT)
 
 {{Listserv_Search|AxioCam}}
 
