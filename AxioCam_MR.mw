@@ -38,7 +38,6 @@ NOTE: The trigger OUT of the AxioCam HR / MR expects a TTL signal.
 
 
 
-
 <h2>Trigger Timing</h2>
 
 <p>Due to different hardware and trigger mechanisms, the precise calculation of
@@ -75,6 +74,8 @@ following steps when performing an acquisition using trigger IN and OUT:<br />
 
 </table>
 
+
+
 <table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
        style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
 
@@ -102,6 +103,7 @@ cleanout time = ( 1003 - (exposure time - 1) * binning factor ) / 23&nbsp;&nbsp;
 <u>Note:</u> when the exposure time is set to 1004 row cycles ( approx. 251ms ) or more, the cleanout time will be zero.</td>
 </tr>
 
+
 <tr>
 <td bgcolor=#CCCCCC>- negative delay<br />
 </tr>
@@ -121,52 +123,12 @@ and then waits an appropriate amount of time until the exposition is invoked.<br
 </ul></td>
 </tr>
 
-<tr>
-<td>[[Image:AxioCamFig3.png]]</td>
-</tr>
-
-<tr>
-<td>If the specified trigger OUT delay is shorter than the interval for the fixed idle rows and clearing the sensor,
-the camera starts the sensor cleanout right after the initialization was finished and delays sending the trigger
-OUT signal to achieve the desired trigger OUT delay.<br />
-<ul>
-<li>receive acquisition call (snap)</li>
-<li>waits for trigger IN signal to arrive</li>
-<li>approx. 6.5 ms processing time</li>
-<li>start idle rows and sensor cleanout</li>
-<li>wait delta( idle rows + cleanout time - trigger OUT delay ), then send trigger OUT
-<li>start acquisition</li>
-</ul></td>
-</tr>
-
-<tr>
-<td>[[Image:AxioCamFig4.png]]</td>
-</tr>
-
-<tr>
-<td bgcolor=#CCCCCC>- positive delay</td>
-</tr>
-
-<tr>
-<td><ul>
-<li>receive acquisition call (snap)</li>
-<li>waits for trigger IN signal to arrive</li>
-<li>approx. 6.5 ms processing time</li>
-<li>sensor cleanout</li>
-<li>start acquisition</li>
-<li>delay the trigger OUT and send it</li>
-</ul></td>
-</tr>
-
-<tr>
-<td>[[Image:AxioCamFig5.png]]</td>
-</tr>
-
-</table>
-
 
 
 
 --[[User:Henry Pinkard|Henry Pinkard]] 10:58, 5 September 2012 (PDT)
 
 {{Listserv_Search|AxioCam}}
+
+
+{{Devices_Sidebar}}
