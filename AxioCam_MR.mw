@@ -68,11 +68,10 @@ following steps when performing an acquisition using trigger IN and OUT:<br />
 </ul></td>
 </tr>
 
-<tr>
-<td>[[Image:AxioCamFig2.png]]</td>
-</tr>
-
 </table>
+
+
+[[Image:AxioCamFig2.png]]
 
 
 
@@ -123,6 +122,56 @@ and then waits an appropriate amount of time until the exposition is invoked.<br
 </ul></td>
 </tr>
 
+</table>
+
+
+[[Image:AxioCamFig3.png]]
+
+
+<table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
+       style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
+<tr>
+<td>If the specified trigger OUT delay is shorter than the interval for the fixed idle rows and clearing the sensor,
+the camera starts the sensor cleanout right after the initialization was finished and delays sending the trigger
+OUT signal to achieve the desired trigger OUT delay.<br />
+<ul>
+<li>receive acquisition call (snap)</li>
+<li>waits for trigger IN signal to arrive</li>
+<li>approx. 6.5 ms processing time</li>
+<li>start idle rows and sensor cleanout</li>
+<li>wait delta( idle rows + cleanout time - trigger OUT delay ), then send trigger OUT
+<li>start acquisition</li>
+</ul></td>
+</tr>
+
+</table>
+
+
+[[Image:AxioCamFig4.png]]
+
+
+<table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
+       style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
+
+<tr>
+<td bgcolor=#CCCCCC>- positive delay</td>
+</tr>
+
+<tr>
+<td><ul>
+<li>receive acquisition call (snap)</li>
+<li>waits for trigger IN signal to arrive</li>
+<li>approx. 6.5 ms processing time</li>
+<li>sensor cleanout</li>
+<li>start acquisition</li>
+<li>delay the trigger OUT and send it</li>
+</ul></td>
+</tr>
+
+</table>
+
+
+[[Image:AxioCamFig5.png]]
 
 
 
