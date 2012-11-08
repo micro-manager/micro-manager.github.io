@@ -17,8 +17,8 @@ __NOTOC__
 ** DLLAutoReloader plugin - automatically reload device adapters after compilation (Arthur Edelstein)
 * Added Projector plugin support for Rapp UGA40 galvo device
 * New device support:
-** Andor Neo and Zyla cameras (AndorSDK3) (David Gault, Norman Glasgow)
-** Leica DMSTC XY Stage (G. Esteban Fernandez)
+** Andor Neo and Zyla cameras (AndorSDK3), David Gault, Norman Glasgow)
+** LeicaDMSTC XY Stage (G. Esteban Fernandez)
 ** LumencorCIA (Louis Ashford)
 ** MoticMicroscope
 ** Rapp UGA40 Galvo frap device (Arthur Edelstein)
