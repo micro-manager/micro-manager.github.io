@@ -317,7 +317,7 @@ Loads specified configuration file and lists all properties and details for all 
 
 === Scripting environment ===
 
-To test devices from Micro-Manager scripting environment you can use the "Scrip Panel" (Tools menu). The scripting environment has a built-in reference to the main API module as "mmc" and reference to the UI "gui". Here is an example of a simple test script:
+To test devices from Micro-Manager scripting environment you can use the "Script Panel" (Tools menu). The scripting environment has a built-in reference to the main API module as "mmc" and reference to the UI "gui". Here is an example of a simple test script:
 
  mmc.unloadAllDevices();       
  mmc.loadDevice("Camera", "DemoCamera", "DCam");
