@@ -14,6 +14,7 @@ __NOTOC__
 * On-the-fly image processing plugin framework
 * DLLAutoReloader plugin -- automatically reloads device adapters after compilation
 * Added Projector plugin support for Rapp UGA40 galvo device
+* Zeiss AxioCam
 
 == Micro-Manager 1.4.10 (April 19, 2012) ==
 
