@@ -12,3 +12,10 @@ Although such setups are possible in Micro-Manager, we decided to provide genera
 Micro-Manager will need to know about this configuration.  It learns about this through the device adapted code.  Several device types can support triggering, at the moment these are: (piezo Z) stages, XY-stages (although most XY stages will be too slow for this approach), digital to analogue converters (DA), and any property of any device.  The device will indicate through the Micro-Manager API whether or not it supports triggering (we use the term "Sequences").  Usually, the device will have a property through which the user can switch the use of sequences on and off.  Examples for device adapter developers how to write code for sequencable devices can be found in the [https://valelab.ucsf.edu/trac/micromanager/browser/DeviceAdapters/Arduino Arduino device adapter code].
 
 The Micro-Manager acquisition engine will always try to use triggers to execute an acquisition.  For instance, if it is running a Z-stack using a triggerable piezo Z drive, it will upload a sequence of the desired Z-positions to the piezo Z-drive controller, tell the camera to take a sequence of the desired number of images and rely on the hardware triggering for Z-control.  It will interpret the images coming from the camera correctly and present them as a Z-stack.  Likewise, if your channel configuration only switches a triggerable property (for instance, selection of a laser line through an AOTF controller), it will load the sequence of AOTF states to the controller and rely on the hardware triggering to switch channels.  The nest result is image acquisition that is only limited by the speed of the camera, whereas nothing changes for the end user, i.e., they use the normal way to indicate their MDA strategy.
+
+===Controller devices that currently support triggered sequences===
+* [[AgilentLaserCombiner]] -- Laser channel switching
+* [[Arduino]] -- TTL and DAC output states
+* [[ASIStage]] -- ASI piezo focus drives
+* [[ESIOImagingControllers]] -- AOTFs (laser combiners) and piezo focus drives
+* [[Marzhauser]] (TANGO controller) --  Märzhäuser piezo focus drive
