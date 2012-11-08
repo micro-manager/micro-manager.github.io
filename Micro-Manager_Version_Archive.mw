@@ -13,7 +13,7 @@ __NOTOC__
 * Single-file, multi-image OME TIFF output format
 * On-the-fly image processing plugin framework
 * DLLAutoReloader plugin -- automatically reloads device adapters after compilation
-* Added projector plugin support for Rapp UGA40 galvo device
+* Added Projector plugin support for Rapp UGA40 galvo device
 
 == Micro-Manager 1.4.10 (April 19, 2012) ==
 
