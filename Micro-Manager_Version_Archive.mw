@@ -9,12 +9,21 @@ __NOTOC__
 
 ==== New in 1.4.11 ====
 
-* Improved multicamera support
-* Single-file, multi-image OME TIFF output format
-* On-the-fly image processing plugin framework
-* DLLAutoReloader plugin -- automatically reloads device adapters after compilation
+* New Features:
+** Improved multicamera support
+** Single-file, multi-image OME TIFF output format (Henry Pinkard)
+** On-the-fly image processing plugin framework
+* Plugins:
+** DLLAutoReloader plugin - automatically reload device adapters after compilation (Arthur Edelstein)
 * Added Projector plugin support for Rapp UGA40 galvo device
-* Zeiss AxioCam support
+* New device support:
+** AndorSDK3
+** Leica DMSTC XY Stage (G. Esteban Fernandez)
+** LumencorCIA (Louis Ashford)
+** MoticMicroscope
+** Rapp UGA40 Galvo frap device (Arthur Edelstein)
+** TOFRA components (Ilya Ravkin)
+** Zeiss AxioCam (Henry Pinkard)
 
 == Micro-Manager 1.4.10 (April 19, 2012) ==
 
