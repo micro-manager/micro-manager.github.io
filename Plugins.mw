@@ -8,6 +8,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Stage Control]]
 * [[Localization Microscopy]]
 * [[Intelligent Acquisition]]
+* [[DLLAutoReloader]]
 
 In addition, plugins are available from third parties:
 
