@@ -1,4 +1,4 @@
-The DLL Auto Reloader plugin automatically reloads a device adapter DLL whenever it has been compiled. This feature is intended to help speed up device adapter development. Here's how to use it:
+The DLL Auto Reloader plugin (currently Windows only) automatically reloads a device adapter DLL whenever it has been compiled. This feature is intended to help speed up device adapter development. Here's how to use it:
 
 # Once Micro-Manager is running, choose DLL Auto Reloader from the plugins menu.
 # Click the single button, and choose a directory where a copy of your device adapter's updated DLLs are saved. This location may be bin_Win32, bin_x64, or the directory where Visual Studio is generating the DLL.
