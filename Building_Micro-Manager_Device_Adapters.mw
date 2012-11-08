@@ -315,6 +315,10 @@ Loads specified configuration file and lists all properties and details for all 
 
 <code>coretest <configfile></code>
 
+=== DLL Auto Reloader plugin ===
+
+This [[DLLAutoReloader|Micro-Manager plugin]] that will automatically reload a device adapter whenever it has been recompiled.
+
 === Scripting environment ===
 
 To test devices from Micro-Manager scripting environment you can use the "Script Panel" (Tools menu). The scripting environment has a built-in reference to the main API module as "mmc" and reference to the UI "gui". Here is an example of a simple test script:
