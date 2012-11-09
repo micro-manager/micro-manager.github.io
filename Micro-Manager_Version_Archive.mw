@@ -12,7 +12,8 @@ __NOTOC__
 * New Features:
 ** Improved multicamera support
 ** Single-file, multi-image OME TIFF output format (Henry Pinkard)
-** On-the-fly image processing plugin framework
+** On-the-fly image processing plugin framework (TaggedImagePipeline)
+** Major improvements to Hardware Configuration Wizard (Nenad Amodaj)
 * Plugins:
 ** DLLAutoReloader plugin (automatically reloads device adapters)
 ** Projector plugin enhancement: support for Rapp UGA40 galvo device
@@ -22,6 +23,7 @@ __NOTOC__
 ** LumencorCIA (Louis Ashford)
 ** MoticMicroscope
 ** Rapp UGA40 Galvo frap device
+** RaptorEPIX camera (David Biggs)
 ** TOFRA components (Ilya Ravkin)
 ** Zeiss AxioCam (Henry Pinkard)
 
