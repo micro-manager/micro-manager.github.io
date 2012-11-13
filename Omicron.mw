@@ -5,9 +5,9 @@ Author:	        Jan-Erik Herche/Ralf Schlotter
 License:	LGPL
 Platforms:	All platforms (uses USB or RS232 Port)
 Devices:	Omicron “…xX”-laser series
-Since Version:  1.48
+Since Version:  1.48 (64bit compatible since version 1.4.12)
 
-Default serial port settings:	AnswerTimeout	        2.5 seconds
+Default serial port settings:	AnswerTimeout	        5 seconds
 	                        BaudRate	        57600 (RS232 Port) 
                                                         500000 (USB Port)
 	                        DelayBetweenCharsMS	0
