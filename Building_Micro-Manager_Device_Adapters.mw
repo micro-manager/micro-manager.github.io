@@ -62,11 +62,11 @@ Now that overall directory structure is set, we can have a look at Developer’s
 
 The place designated for development of our new adapter is:
 
-<code>/programs/micro-manager1.4/TestDeviceAdapters</code>
+<code>/projects/micro-manager1.4/TestDeviceAdapters</code>
 
 In this directory we will find a very simple “skeleton” camera adapter project “MMCamera” that we can use to get started, to understand the basic principles of Micro-manager API and also use files as template to get started on our own project. All our development projects should be located in “TestDeviceAdapters” directory in the same way as for MMCamera. In our case we will create a new directory for our new Device Adapter:
 
-<code>/programs/micro-manager1.4/TestDeviceAdapters/MyDevice</code>
+<code>/projects/micro-manager1.4/TestDeviceAdapters/MyDevice</code>
 
 == Building test programs and examples ==
 
