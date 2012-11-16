@@ -67,6 +67,8 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 :Selects which camera is used on systems with more than one camera. Selecting an entry will (re)connect to the camera specified; there is a brief delay while camera settings are read.
 ;Exposure
 :Exposure sets the exposure time. Units are ms.
+;ISO
+:Allows setting the camera ISO, or gain. If "ISO not set" is selected, micro-manager will not set camera ISO. This allows manually setting ISO on the camera itself.
 ;KeepOriginals
 :Saves the pictures to disk. Allowable values are 0 and 1. Pictures are stored in the /tmp directory. The pictures are in the format provided by the camera; typically jpeg or raw.
 ;PixelType
