@@ -135,6 +135,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Sapphire]] - Lasers from Coherent
 * [[SpectralLMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
+* [[SutterMPC]] - Multi manipulator controller
 * [[Utilities]] - Virtual devices providing extra functionality to Micro-Manager
 * [[VariLC]] - Tunable liquid crystal polarization modulators from CRi
 * [[Yokogawa]] - Yokogawa CSU22
