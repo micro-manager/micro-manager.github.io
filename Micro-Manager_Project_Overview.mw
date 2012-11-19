@@ -4,7 +4,7 @@ __NOTOC__
 
 '''µManager serves a double purpose:'''
 
-* It is a complete image acquisition and microscope control package, avaiable for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built-in functionality and user interface for most common tasks performed in a Life Science laboratory.
+* It is a complete image acquisition and microscope control package, available for Windows, Mac and Linux, easy to install and configure right "out-of-the-box", with built-in functionality and user interface for most common tasks performed in a Life Science laboratory.
 * It also is a software framework for implementing advanced and novel imaging procedures, extending functionality, customization and rapid development of specialized imaging applications.
 
 <br /> '''The main features of the µManager application are:'''<br />
