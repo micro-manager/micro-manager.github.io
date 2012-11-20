@@ -110,6 +110,8 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
+*The driver allows setting camera shutter speed and ISO. Additional configuration parameters may be stored in the ~/.gphoto/settings file in your home directory. This file is the same as the one used by the gphoto2 command-line utility.
+
 *The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use the source code for a new camera driver.
 
 {{Listserv_Search|GPhoto}}
