@@ -89,7 +89,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 {{Devices_Sidebar}}
 
 == Notes ==
-*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. Resolution is typically 640x428 pixels for Nikon, and 768x512 to 1056x704 pixels for Canon DSLR cameras. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second. An exposure time of zero provides the maximum frame rate, but Micro-Manager may become sluggish. 
+*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second. An exposure time of zero provides the maximum frame rate, but Micro-Manager may become sluggish. 
 
 *Best results are obtained setting camera image type to raw, and BitDepth to 16. 
 
@@ -110,7 +110,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
-*The driver allows setting camera shutter speed and ISO. Additional configuration parameters may be stored in the ~/.gphoto/settings file in your home directory.
+*The driver allows setting camera shutter speed and ISO. Additional parameters may be set in the ~/.gphoto/settings file in your home directory.
 
 :On selected Nikon and Canon cameras it is possible to capture images to camera ram instead of to the memory card. This speeds up image capture as ram is faster than the memory card. Image capture to ram is not switched on by default as not all cameras support this. To enable, exit Micro-Manager and add the following line to ~/.gphoto/settings: <pre>ptp2=capturetarget=sdram</pre>
 :To disable: <pre>ptp2=capturetarget=card</pre>
