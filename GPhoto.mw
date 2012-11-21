@@ -115,7 +115,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 :On selected Nikon and Canon cameras it is possible to capture images to camera ram instead of to the memory card. This speeds up image capture as ram is faster than the memory card. Image capture to ram is not switched on by default as not all cameras support this. To enable, exit Micro-Manager and add the following line to ~/.gphoto/settings: <pre>ptp2=capturetarget=sdram</pre>
 :To disable: <pre>ptp2=capturetarget=card</pre>
 
-:See the [http://gphoto.org/proj/gphoto2 gphoto2] command-line utility for details.
+:See the [http://gphoto.org/proj/gphoto2 gphoto2] command-line utility for more details.
 
 *The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use the source code for a new camera driver.
 
