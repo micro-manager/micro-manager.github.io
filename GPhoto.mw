@@ -110,7 +110,10 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 
 *Many algorithms in Micro-Manager require grayscale images. Feeding a color image to a grayscale-only algorithm typically produces errors such as "Unsupported pixel type" or "Invalid data type". Setting both "PixelType" to "Grayscale" and "KeepOriginals" to "1" will send a grayscale image to Micro-Manager but allow you to read the original color images from disk.
 
-*The driver allows setting camera shutter speed and ISO. Additional configuration parameters may be stored in the ~/.gphoto/settings file in your home directory. This file is the same as the one used by the gphoto2 command-line utility.
+*The driver allows setting camera shutter speed and ISO. Additional configuration parameters may be stored in the ~/.gphoto/settings file in your home directory. See the gphoto2 command-line utility for details.
+
+:On selected Nikon and Canon cameras it is possible to capture images to camera ram instead of to the memory card. This speeds up image capture as ram is faster than the memory card. Image capture to ram is not switched on by default as not all cameras support this. To enable, exit Micro-Manager and add the following line to ~/.gphoto/settings: <pre>ptp2=capturetarget=sdram</pre>
+:To disable: <pre>ptp2=capturetarget=card</pre>
 
 *The [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/ driver source] includes [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/SimpleCam/example2/ examples] how to re-use the source code for a new camera driver.
 
