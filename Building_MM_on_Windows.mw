@@ -3,59 +3,38 @@
 First make sure you have enough hard disk space. I don't know how much you will need but I would think if you have about 5GB you should be fine.
 
 ====Directory structure for the source code====
-When you unzip the source code or download from the repository, the default directory for the entire source code should be "projects/micromanager". This directory should reside in the parent directory root of your choice. The directory where projects/ is found will be referred to as <root>. In the <root>/projects you need to create a 3rdparty directory where you need to place needed software packages, and all SDKs needed for your hardware. You can download the development microManager source code via subversion at  https://valelab.ucsf.edu/svn/micromanager2/trunk/
+Create a directory named <code>projects<code>. The <code>projects</code> directory may reside anywhere you like and will contain the subdirectories <code>micro-manager1.4</code>, <code>3rdpartypublic</code>, and <code>3rdparty</code>.
+
+====Downloading the source code====
+Obtain a [http://subversion.apache.org/packages.html#windows Subversion client]. From <code>projects/</code>, run:
+
+<code>svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
+svn co https://valelab.ucsf.edu/svn/3rdpartypublic/</code>
 
 ====Required tools and applications====
 
 To build the entire application from the source code, you will need to install the following tools:
 
-# Microsoft Developer Studio 2008 or 2010 Visual C++.
+To build device adapters:
+# Microsoft Developer Studio 2008 or [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] (Express is fine, and doesn't cost anything.)
+# the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK]
+
+To build the entire Micro-Manager package:
 # JDK (Java developer's kit) standard edition, version 1.5 or later (Download from http://java.sun.com/javase/downloads/index.jsp.)
 # ImageJ 1.44n9 or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
 # Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
-# Apache ANT (Download from http://ant.apache.org/. For installation this should work, if the directory is c:\ant
-# A subversion client, for example: http://www.open.collab.net/downloads/subversion or 
+# Apache ANT Download from http://ant.apache.org/. Install anywhere you like but remember the path.
 
-Assuming you've installed Java JDK 6.0 update 20, set the following "environment variables" goto My Computer / Properties / Advanced / Environment Variables / System variables and add the following new entries  :
+Tell the build tools where to find Java and Ant by opening the System control panel / Advanced system settings / Environment Variables / System variables and addding the following new entries:
 
 <code><pre>
-ANT_HOME=C:\ant
-JAVA_HOME=C:\Program Files\Java\jdk1.6.0_20
+ANT_HOME=C:\ant (or path to Ant)
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_20 (or path to Java)
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
 
-====Required open source libraries====
 
-(See the "Building the full source in one step" section below as a faster alternative before downloading each of these separately.)
-
-In addition to software tools you will need to install the following software packages in the <root>/projects/3rdparty directory:
-
-* SWIG (using version 2.0.0 as of 8/2/2011). Place it in "<root>/projects/3rdparty/swig" subdirectory (Download from http://www.swig.org/download.html -> all releases, extract to <root>/projects/3rdparty and install with swig.exe.)
-
-* The INPOUT32 library. Place it in "<root>/projects/3rdparty/inpout32" subdirectory. (Download from http://www.logix4u.net/, extract, and build the library files. After building the inpout32 project you need to copy the inpout32.dll to <root>/micromanager1.4/bin, because this dll is required at run-time.)
-
-* Boost 1.42. Download Boost and place it in the "<root>/projects/3rdparty/boost" subdirectory. The easy way to do this is as follows:
-
-
-1. In a command prompt, create and then cd to <root>/projects/3rdparty/boost, if this directory is not already a subversion working copy, issue the following command (assuming you've got subversion in your command path):
-
-        svn co http://svn.boost.org/svn/boost/tags/release/Boost_1_42_0/ .
-
-2. After boost has been downloaded, to build the bjam tool, in the <root>/projects/3rdparty/boost directory issue:
-         bootstrap
-On Windows 7 64-bit this may fail with a message in bjam.log:
-         ERROR:  Cannot determine the location of the VS Common Tools folder.
-This can happen if `reg' is not found, so add C:\Windows\SysWOW64 to your PATH
-
-3. After the bjam.exe tool is built, issue:
-         .\bjam --build-type=complete 
-
-This step will take a while so go make yourself a cup of tea ;)
-
-
-4. The result will be a set of libraries with the library type and threading model encoded in the library name, all headers will be in <root>\projects\3rdparty\boost\boost and the libraries will be  in <root>\projects\3rdparty\boost\stage\lib
-
-====Device libraries and SDK's====
+====Device libraries and SDKs====
 
 Some device adapter require the installation of manufacturer's SDKs in order to build. All SDKs should be installed in the <root>/projects/3rdparty directory. The actual names of SDK directories should match the paths in the corresponding header files in the Micro-manager source code for device adapters.
 
@@ -118,21 +97,7 @@ In the mmstudio directory from the commandline, run:
 
 To build the entire Micro-Manager project for Windows with a single command, µManager 1.4 provides a batch file in the source repository in buildscripts. You need to have the installed tools and libraries described above: ant, Java JDK, boost, zlib and some java jar stuff.
 
-The precise versions of the libraries we use can be downloaded from:
-
-  https://valelab.ucsf.edu/svn/3rdpartypublic/
-
-Let's assume the following directory structure:
-
-  \projects\3rdpartypublic  ---- various open source libraries
-  \projects\micromanager    ---- the latest and greatest source code in the world
-
-Double check the environment variable JAVA_HOME points to your jdk, e.g.
-
-   C:\Program Files\Java\jdk
-
 From the C++ source, you can build the 32 bit version with the free 'Express' version of Visual Studio, though per my understanding, you need at least the 'Professional' version to build the 64 bit binaries. As of this writing, we are using the 2008 version of Visual studio. It's been built and tested preliminarily with Visual Studio 2010 also.
-
 
 To build the 32 bit binary, open a command prompt and type
 
