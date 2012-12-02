@@ -24,7 +24,7 @@ Let's assume that we are writing a device adapter, for a device called “MyDevi
 
 == Directory layout ==
 
-Before doing anything else we should check out the latest version of micro-manager from the SubVersion repository to appropriate base directory on our computer. The checkout process is outlined in the next few steps.
+Before doing anything else we should check out the latest version of micro-manager from the SubVersion repository to appropriate base directory on our computer. The checkout process is outlined in the next few steps. [[Building and debugging Micro-Manager source code]] has more specific advice on building Micro-Manager for each platform.
 
 First we check out Micro-Manager source code from:
 
