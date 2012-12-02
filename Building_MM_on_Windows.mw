@@ -17,9 +17,9 @@ To build the entire application from the source code, you will need to install t
 
 To build device adapters:
 # Microsoft Developer Studio 2008 or [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] (Express is fine, and doesn't cost anything.)
-# the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK]
+# the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK], if you are using Visual Studio 2010 Express
 
-To build the entire Micro-Manager package:
+Additionally, to build the entire Micro-Manager package:
 # JDK (Java developer's kit) standard edition, version 1.5 or later (Download from http://java.sun.com/javase/downloads/index.jsp.)
 # ImageJ 1.44n9 or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
 # Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
@@ -32,7 +32,6 @@ ANT_HOME=C:\ant (or path to Ant)
 JAVA_HOME=C:\Program Files\Java\jdk1.6.0_20 (or path to Java)
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
-
 
 ====Device libraries and SDKs====
 
