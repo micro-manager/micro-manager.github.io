@@ -19,11 +19,17 @@ To build device adapters:
 # Microsoft Developer Studio 2008 or [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] (Express is fine, and doesn't cost anything.)
 # the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK], if you are using Visual Studio 2010 Express
 
+If you use Studio 2010, you will need to either recompile Boost or download binaries.
+
+To compile Boost: <code>cd projects\3rdpartypublic\boost; bootstrap; .\bjam --build-type=complete</code> and come back in a few hours. On Windows 7 64-bit, this may fail with a message in bjam.log: "ERROR: Cannot determine the location of the VS Common Tools folder." This can happen if `reg' is not found, so add C:\Windows\SysWOW64 to your PATH and try again.
+
+To download compiled Boost binaries, check <code>projects\3rdpartypublic\boost\boost\version.hpp</code> and grab the same version from e.g. [http://www.boostpro.com/download/ BoostPro]. Run the installer as an administrator or else the installer will hang. Copy the installed libraries from e.g. <code>C:\Program Files (x86)\boost\boost_1_46_1\lib</code> to <code>3rdpartypublic\boost</code>.
+
 Additionally, to build the entire Micro-Manager package:
 # JDK (Java developer's kit) standard edition, version 1.5 or later (Download from http://java.sun.com/javase/downloads/index.jsp.)
 # ImageJ 1.44n9 or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
-# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ folder installed in step 3.)
-# Apache ANT Download from http://ant.apache.org/. Install anywhere you like but remember the path.
+# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ instance you installed above.
+# Apache ANT Download from http://ant.apache.org/.
 
 Tell the build tools where to find Java and Ant by opening the System control panel / Advanced system settings / Environment Variables / System variables and addding the following new entries:
 
