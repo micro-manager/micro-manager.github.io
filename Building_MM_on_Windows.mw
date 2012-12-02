@@ -8,8 +8,8 @@ Create a directory named <code>projects</code>. The <code>projects</code> direct
 ====Downloading the source code====
 Obtain a [http://subversion.apache.org/packages.html#windows Subversion client]. From <code>projects/</code>, run:
 
-<code>svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
-svn co https://valelab.ucsf.edu/svn/3rdpartypublic/</code>
+<code><pre>svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
+svn co https://valelab.ucsf.edu/svn/3rdpartypublic/</pre></code>
 
 ====Required tools and applications====
 
