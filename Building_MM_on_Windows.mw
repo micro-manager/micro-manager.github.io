@@ -26,10 +26,10 @@ To compile Boost: <code>cd projects\3rdpartypublic\boost; bootstrap; .\bjam --bu
 To download compiled Boost binaries, check <code>projects\3rdpartypublic\boost\boost\version.hpp</code> and grab the same version from e.g. [http://www.boostpro.com/download/ BoostPro]. Run the installer as an administrator or else the installer will hang. Copy the installed libraries from e.g. <code>C:\Program Files (x86)\boost\boost_1_46_1\lib</code> to <code>3rdpartypublic\boost</code>.
 
 Additionally, to build the entire Micro-Manager package:
-# JDK (Java developer's kit) standard edition, version 1.5 or later (Download from http://java.sun.com/javase/downloads/index.jsp.)
-# ImageJ 1.44n9 or later (Download from http://rsb.info.nih.gov/ij/download.html and install with the setup executable. Easiest is to install in “c:/Program Files/ImageJ” to avoid changing paths later.)
-# Beanshell 2.0.4 or later  (Download bsh-2.0b4.jar from http://www.beanshell.org/download.html and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ instance you installed above.
-# Apache ANT Download from http://ant.apache.org/.
+# [http://java.sun.com/javase/downloads/index.jsp JDK Standard Edition] 6 or later
+# A recent version of [http://rsb.info.nih.gov/ij/download.html ImageJ]
+# [http://www.beanshell.org/download.html Beanshell] 2.0.4 or later. Download the .jar and and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ instance you installed above.
+# [http://ant.apache.org/ Apache Ant]
 
 Tell the build tools where to find Java and Ant by opening the System control panel / Advanced system settings / Environment Variables / System variables and addding the following new entries:
 
