@@ -11,7 +11,7 @@
 
 This device adapter was written by Karl Hoover and will provide higher performance than the TWAIN interface. To use Leica DFC FX cameras you'll need the Baumer Optronics software including FxLib.dll, this is available from your vendor.
 
-Since version 1.4.8 (20120224), this adapter is build using the Baumer SDK 1.7.  This SDK is freely available from: [http://www.baumer.com/us-en/products/identification-and-image-processing/software-and-starter-kits/baumer-gapi/ Baumer].  If your camera does not work, download the SDK, unzip the file and make sure that your camera works with the Baumer software.  If it does, copy the files FxLib.dll and SysInfo.dll from the directory Components\BSTD FxLib\x..\Bin, where "x.." is either x64 or x86 depending on whether you are running a 64 or 32-bit Windows OS.  
+Since version 1.4.8 (20120224), this adapter is build using the Baumer SDK 1.7.  This SDK is freely available from: [http://www.baumer.com/us-en/products/identification-image-processing/software-and-starter-kits/baumer-gapi/ Baumer].  If your camera does not work, download the SDK, unzip the file and make sure that your camera works with the Baumer software.  If it does, copy the files FxLib.dll and SysInfo.dll from the directory Components\BSTD FxLib\x..\Bin, where "x.." is either x64 or x86 depending on whether you are running a 64 or 32-bit Windows OS.  
 
 Tested with a Leica DFC345 FX and a Leica DFC425 on Windows XP 32 bit and Windows 7 64 bit (2012-02-24)
 
