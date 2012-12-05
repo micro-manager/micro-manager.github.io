@@ -94,10 +94,10 @@ For feature requests or bug reports, please liaison with µManager developers on
 * Run Instacal from Windows Start Button > All Programs > Measurement Computing.  You will see the "Plug and Play Board Detection" window finding your PCIM-DDA06/16 card.  Click OK and Exit Instacal.  This has now written your DAC card configuration file.
 * Open the Device Manager to check the COM port numbers for the USB-to-Serial COM ports built into the ALC.  Andor's library reserves specific port numbers for the combiner and expects them to be COM201-206.  Change the port numbers as follows:
 ** Unplug the blue USB cable from the front of the ALC and check if any such ports remain, to confirm if you have other Prolific USB-to-Serial devices attached.  If see some still left, make a note of their COM numbers so that you don't change them.  Plug the ALC back in and note the new COM numbers.
-** For each of your reappeared COM ports, check the port physical location by (Right-click) > Properties.  On Windows 7, the "Port" is immediately visible under <code>Location</code> in the <code>General</code> tab.  Search the Properties of all the Prolific USB-to-Serial devices until you see <code>Port_#0001</code>.  That port will need to be changed to COM 201.  Note the corresponding Hub_# number of that port.
+** For each of your reappeared COM ports, check the port physical location by (Right-click) > Properties.  On Windows 7, the "Port" is immediately visible under <code>Location</code> in the <code>General</code> tab.  Search the <code>Properties</code> of all the Prolific USB-to-Serial devices until you see <code>Port_#0001</code>.  That port will need to be changed to COM 201.  Note the corresponding <code>Hub_#</code> number of that port.
 ** Reassign your COM ports number by (Right-click) > Properties > Port Settings (tab) > Advanced > change the COM port number to 201
-**  With your Hub number of COM 201 noted above, make the remaining Port_#0002 ... 0004 for that Hub ports 202-204 as above.
-**  If your sled has 5 or 6 lasers you will be left with two more Prolific USB-to-Serial ports.  You will need to assign Port_#0002 and #0003 as 205 and 206, respectively
+**  With your <code>Hub</code> number of COM 201 noted above, reassign the remaining <code>Port_#0002, Port_#0003, Port_#0004</code> for that Hub as COM 202, 203, 204 as above.
+**  If your sled has 5 or 6 lasers you will be left with two more Prolific USB-to-Serial ports.  You will need to reassign <code>Port_#0002, Port_#0003</code> as COM 205 and 206, respectively
 * Restart the computer to apply the COM port changes
 
 === Testing ===
