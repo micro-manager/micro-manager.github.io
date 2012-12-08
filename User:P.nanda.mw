@@ -1,7 +1,7 @@
 My name is Pariksheet Nanda.  I have been a Support Engineer for Andor Technology since 2008.  I worked in the camera/spectroscopy division for a year and since then have been working in microscopy division in the dual role of field technician and remote support.
 
 My interest in µManager is as follows:
-# Add GNU/Linux packages for official µManager releases.  I want the project to be recognized on the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory] to have more visibility, and attract programmers and funding from other industries.  I maintain a repository for installing µManager on Gentoo GNU/Linux: https://github.com/omsai/micromanager-overlay
+# Add GNU/Linux packages to official µManager releases.  I want the project to be recognized on the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory] to have more visibility, and attract programmers and funding from other industries.  I maintain a repository for installing µManager on Gentoo GNU/Linux: https://github.com/omsai/micromanager-overlay
 # Improve documentation on this wiki, specifically to:
 #* Update DeviceAdapter and general knowledge pages
 #* Reduce the work involved to contribute code
