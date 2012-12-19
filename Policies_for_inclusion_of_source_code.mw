@@ -1,8 +1,8 @@
 We encourage everyone who has written a device adapter module to send their code to us for inclusion in the [https://valelab.ucsf.edu/svn/micromanager2/trunk/ Micro-Manager source code repository].  Please email the source code to [mailto:info@micro-manager.org info@micro-manager.org].  Also do include any libraries or other materials that we will need to build the code (or provide links).  If at all possible, do include a compatible license for your software (most of the code uses either a BSD or LGPL license, it is not possible for us to include GPLd code).  
 
-After addition of your code to our repository, we will send you a username and password that you can use for future changes to the code (using a subversion client).  For companies or individuals who are not comfortable having their code being publicly available, we can host this code in a "Secret" part of our repository that is not publicly visible. In this case, the license merely should give us permission to build and distribute the resulting code.
+After addition of your code to our repository, we will send you a username and password that you can use for future changes to the code (using a [http://subversion.tigris.org/ subversion] client).  For companies or individuals who are not comfortable having their code being publicly available, we can host this code in a "Secret" part of our repository that is not publicly visible. In this case, the license merely should give us permission to build and distribute the resulting code.
 
-Also, please do request an account for this website (click on the login button), and create a page in the devices section.  Use this page to provide information for users of your equipment to configure and use your device in Micro-Manager (i.e., please do not use this for marketing purposes).
+Also, please do request an account for this website (click on the Log In button), and create a page in the [[Device Support]] section.  Use this page to provide information for users of your equipment to configure and use your device in Micro-Manager (i.e., please do not use this for marketing purposes).
 
 
 {{Programming_Sidebar}}
