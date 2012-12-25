@@ -1,5 +1,3 @@
-== Arduino adapter ==
-
 {| style="text-align: left"
 !Summary:
 |Adapter for the [http://www.arduino.cc/ Arduino electronics prototyping platform]
@@ -22,15 +20,38 @@
 !Peripheral device discovery:
 |No
 |}
+----
 
+== Overview ==
 The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board.  It has some digital inputs and digital outputs and can communicate with the computer through a serial interface (that is hidden in a USB connection).  A very nice and simple programming language makes the Arduino very simple to program.  The Micro-Manager interface to the Arduino consists of an Arduino program (the 'firmware') that you need to upload to the Arduino first.  The current version of the Micro-Manager has facilities to use the Arduino as a shutter, and as a shutter that only opens when a TTL is set high (for instance, when the camera is exposing).  Also, timed sequences of TTL output can be setup.  There are also facilities for programmable analogue out, however, those need connection of a DA chip and requires constructions of a 'daughterboard'/'shield'.
 
-To install the Arduino Micro-Manager 'firmware', download and install the [http://arduino.cc/en/Main/Software Arduino Software] for your platform.  Establish a connection with your Arduino using the instructions that come with the Arduino software (this includes installing a driver for the USB to serial adapter build into the Arduino.. Then download the [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde firmware source code] and copy into the Arduino editor.  Send to the Arduino, and your Arduino is programmed to work with Micro-Manager.
+== Installation ==
 
+=== Arduino Software ===
+Download and install the [http://arduino.cc/en/Main/Software Arduino Software] for your platform.  Establish a connection with your Arduino using the instructions that come with the Arduino software (this includes installing a driver for the USB to serial adapter build into the Arduino.
+
+=== Firmware ===
+Then download the [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde firmware source code] and copy into the Arduino editor.  Send to the Arduino, and your Arduino is programmed to work with Micro-Manager.
+
+== Device Configuration ==
+
+=== Hub ===
 In Micro-Manager, use the hardware configuration wizard to add the Arduino.  Set the serial port to 57600 baud.    
 
 The Arduino 'Switch' sets the digital output pattern using a single byte.  Bit 1 corresponds to Arduino ouput pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  So, setting the switch to value '5', will set output pins 8 and 10 high and the others low.
 
+=== Peripherals ===
+As of version 1.3.47, the Arduino adapter can also report the digital (0 or 1) and analog (0-1023) state of the analog input pins 0-5 on the Arduino. To do so, add the "Arduino-Input" device in the Hardware Configuration Wizard. You can either have it report all analog pins or only a specific one (you set this with the "Pin" pre-initialization property).  You can also define whether or not the Arduino should use its internal 20 kohm internal pull-up resistor using a pre-initialization property.  If you want to report multiple individual pins, you can add this device multiple times.
+
+=== Test Communication ===
+In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the Arduino-Switch state to 32 in the device/property browser and than chose Arduino as your shuter and just open/close it in the main MM window. and opening and closing the Arduino-shutter. You should see the built-in LED light changes when you close / open the arduino shutter. 
+
+== Usage Notes ==
+
+=== Switch Mode ===
+When used directly (not via trigger mode) the Arduino Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
+
+=== Digital IO ===
 You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
 <table>
@@ -43,13 +64,7 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 <tr><td width=40>5</td><td width=40>13</td><td width=40>32</td></tr>
 </table>
 
-
-When used directly (not via trigger mode) the Arduino Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
-
-Troubleshooting tip: In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the Arduino-Switch state to 32 in the device/property browser and than chose Arduino as your shuter and just open/close it in the main MM window. and opening and closing the Arduino-shutter. You should see the built-in LED light changes when you close / open the arduino shutter. 
-
-As of version 1.3.47, the Arduino adapter can also report the digital (0 or 1) and analog (0-1023) state of the analog input pins 0-5 on the Arduino. To do so, add the "Arduino-Input" device in the Hardware Configuration Wizard. You can either have it report all analog pins or only a specific one (you set this with the "Pin" pre-initialization property).  You can also define whether or not the Arduino should use its internal 20 kohm internal pull-up resistor using a pre-initialization property.  If you want to report multiple individual pins, you can add this device multiple times.
-
+== Resources ==
 David Knecht put up a nice tutorial on how to build a box around the Arduino and use it to control LED illumination on your microscope [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html].
 
 --[[User:Nico|Nico]] 02:20, 27 February 2009 (UTC)
