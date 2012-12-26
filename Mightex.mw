@@ -13,3 +13,7 @@ Author: Yihui Wu
 This Micro-Manager adapter can be used to operate Mightex SLC LED Drivers. Please refer to Mightex SLC LED Drivers user’s manual for more details. 
 
 Mightex SLC LED Drivers are deigned as USB interfaced HID devices, and this Micro-Manager adapter enables an Universal LED driver to be used as a shutter in Micro-Manager. The adapter has several properties that can be used to control the LED Drivers. Using this adapter,one can select an active channel and set its mode and parameters. One can then switch On/Off this channel (when it's ON, its output will be set as per the setting parameters) on the main GUI of Micro-Manager.
+
+{{Listserv_Search|Mightex}}
+
+{{Devices_Sidebar}}
