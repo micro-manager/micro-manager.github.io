@@ -2,7 +2,7 @@
 
 ;Decimal <-> Binary conversion
 :* Augment / replace Roy's  table by linking to a suitable, but minimal, online tutorial.  It should be relevant to the goal of converting between decimal and binary and doing the math to add pins.
-:* Bonus- link to a calculator where one can click on the bits and see the decimal and binary values
+:* Bonus- link to a calculator where one can click on the bits and see the decimal and binary values.  [http://scratch.mit.edu/projects/Paddle2See/59348 Poke-A-Bit] is nice, but buggy; the buttons stop working after a few clicks
 
 ;Hardware Configuration Wizard
 :* All the features are not clearly described with appropriate nomenclature.  This should be done while actually using an Arduino.
