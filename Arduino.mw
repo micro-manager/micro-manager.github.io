@@ -25,6 +25,8 @@
 == Overview ==
 The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board.  It has some digital inputs and digital outputs and can communicate with the computer through a serial interface (that is hidden in a USB connection).  A very nice and simple programming language makes the Arduino very simple to program.  The Micro-Manager interface to the Arduino consists of an Arduino program (the 'firmware') that you need to upload to the Arduino first.  The current version of the Micro-Manager has facilities to use the Arduino as a shutter, and as a shutter that only opens when a TTL is set high (for instance, when the camera is exposing).  Also, timed sequences of TTL output can be setup.  There are also facilities for programmable analogue out, however, those need connection of a DA chip and requires constructions of a 'daughterboard'/'shield'.
 
+[[File:Micro-manager_bb.png|frame|Figure: Functional pinout set by firmware version 2]]
+
 == Installation ==
 
 === Arduino Software ===
