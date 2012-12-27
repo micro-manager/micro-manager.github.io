@@ -19,6 +19,9 @@
 |-
 !Peripheral device discovery:
 |No
+|-valign="top"
+!Wiki page:
+|Nico Stuurman<br/>Pariksheet Nanda<br/>Roy Wollman
 |}
 ----
 
@@ -70,10 +73,5 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 * [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
 
 * [[Encoding the Nikon TI Eclipse tube lens|Detect tube lens position]] of Nikon Ti Eclipse
-
---[[User:Nico|Nico]] 02:20, 27 February 2009 (UTC)
-
-additions by: --[[User:rwollman|Roy]] 12:43, April 12 2010 (UTC)
-
 
 {{Devices_Sidebar}}
