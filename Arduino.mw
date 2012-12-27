@@ -66,8 +66,10 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 <tr><td width=40>5</td><td width=40>13</td><td width=40>32</td></tr>
 </table>
 
-== Resources ==
-David Knecht put up a nice tutorial on how to build a box around the Arduino and use it to control LED illumination on your microscope [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html].
+== Project Tutorials ==
+* [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
+
+* [[Encoding the Nikon TI Eclipse tube lens|Detect tube lens position]] of Nikon Ti Eclipse
 
 --[[User:Nico|Nico]] 02:20, 27 February 2009 (UTC)
 
