@@ -13,3 +13,11 @@ My name is Pariksheet Nanda.  I have been a Support Engineer for Andor Technolog
 # Support CMake to build and release µManager, as a better platform independent solution build system (collaborating with Michael Curtis):
 #* Wiki: https://github.com/omsai/micromanager/wiki
 #* Code: https://github.com/omsai/micromanager/tree/cmake
+
+== Maintenance ==
+These are the wiki pages I maintain:
+* [[Andor]]
+* [[AndorSDK3]]
+* [[AndorLaserCombiner]]
+* [[Arduino]]
+* [[Comparison with other microscopy software]]
