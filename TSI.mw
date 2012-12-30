@@ -1,0 +1,11 @@
+== Summary: Thorlabs Scientific Imaging Cameras (former DVC) ==
+
+<table>
+<tr><td>
+'''Summary:'''</td><td>Thorlabs Scientific Imaging (TSI) Camera</td></tr>
+<tr><td>
+'''Author:'''</td><td>[http://nenad.amodaj.com Nenad Amodaj] and [http://www.thorlabs.com Thorlabs Inc]</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Microsoft Windows 7 and up, both 32 and 64 bit</td></tr>
+<tr><td>'''Devices:'''</td><td>TSICam</td></tr>
+</table>
