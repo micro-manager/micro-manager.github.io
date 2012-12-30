@@ -46,6 +46,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SpotCamera]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
 * [[TIScam]] - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers
+* [[TSI]] - Thorlabs Scientific Imaging Cameras
 * [[TwainCamera|Twain]] - Cameras fully implementing Twain Imaging Standard
 * [[V4L]] - Video4Linux compatible cameras
 * [[XIMEACamera]] - XIMEA cameras
