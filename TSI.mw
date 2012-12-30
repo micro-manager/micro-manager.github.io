@@ -9,3 +9,20 @@
 <tr><td>'''Platforms:'''</td><td>Microsoft Windows 7 and up, both 32 and 64 bit</td></tr>
 <tr><td>'''Devices:'''</td><td>all DVC series cameras, compatible with TSI SDK</td></tr>
 </table>
+
+== Installation Instructions ==
+
+This adapter is compatible with all DVC series cameras from Thorlabs Scientific Imaging (TSI). Before configuring the camera with micro-manager, Thorlabs software that came with the camera (drivers, demo applications, etc.) must be installed and verified. After installing Thorlabs software make sure that camera is fully functional by running one or more applications from the package.
+
+Make sure that both micro-manager and any Thorlabs camera related software is shut down. Locate the following files in the Thorlabs installation directory:
+
+* tsi_sdk.dll
+* pleora_ebus.dll (for GigE cameras using Pleora drivers)
+* edt_camera_link.dll (for Camera Link interface using EDT board)
+* pdvlib.dll (for Camera Link interface using EDT board)
+
+and copy them into the micro-manager installation directory. Depending on the camera model, some of the files may not be available. Copy any of the files above that you are able to locate.
+
+After that the camera should be ready for configuration with micro-manager. Start micro-manager and select Tools | Hardware Configuration Wizard command to add TSI camera to the configuration.
+
+At step 2 (Add or Remove Devices) of the Wizard, scroll Available Devices list to *TSI*. There should be only one device available: TSICam. Select TSICam and add to the configuration. You will be prompted to enter the camera ID. Default is "0" and if you have a single camera installed, leave it at that. If you have multiple cameras on the same computer, the ID number refers to the respective camera. Check Thorlabs documentation on how to determine the correct camera ID if you have multiple cameras installed.
