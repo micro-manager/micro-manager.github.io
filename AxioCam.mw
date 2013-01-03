@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Henry Pinkard</td></tr>
 <tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>AxioCam MRm/MRc/HRm/HRc, MRm/MRc/HRm/HRc Rev. 2, and MRm/MRc/HRm/HRc Rev. 3 (tested with MRm Rev. 2, MRm Rev. 3, MRc Rev. 3, HRm Rev. 2, HRm Rev. 3); MRc5 </td></tr>
+<tr><td>'''Devices:'''</td><td>AxioCam MRm/MRc/HRm/HRc, MRm/MRc/HRm/HRc Rev. 2, and MRm/MRc/HRm/HRc Rev. 3 (only tested with Rev. 3 cameras) </td></tr>
 </table>
 
 
@@ -174,17 +174,7 @@ OUT signal to achieve the desired trigger OUT delay.<br />
 
 
 
---[[User:Henry Pinkard|Henry Pinkard]] 10:58, 2nd January 2013 (PDT)
-
-== IEEE 1394 driver on Windows 7 ==
-
-Windows 7 comes with two versions of the IEEE 1394 bus driver (default and "legacy"). I had trouble getting an AxioCam MRc5 recognized with the default one. This might be dependent on the motherboard and IEEE 1394 adapter. To switch between the default and "legacy" drivers, follow the instructions mentioned here: http://social.technet.microsoft.com/Forums/en-US/itprovistahardware/thread/c2e39b2c-0558-43cb-865e-9f9db3e4f5ed/
-
-Using the Legacy driver may also help with cases where the message "(0)McamAcquisition error 22" pops up and Micro-Manager becomes unresponsive.
-
---[[User:Mark Tsuchida|Mark Tsuchida]]
-
-
+--[[User:Henry Pinkard|Henry Pinkard]] 10:58, 1st October 2012 (PDT)
 
 {{Listserv_Search|AxioCam}}
 
