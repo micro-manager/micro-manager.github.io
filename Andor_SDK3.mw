@@ -1,23 +1,24 @@
-{|
-|valign="top"|'''Summary:'''
-|Interfaces with Andor sCMOS cameras (use [[Andor]] DeviceAdapter instead for other Andor CCD and EMCCD cameras)
+{| style="text-align: left"
+|- valign="top"
+!Summary:
+|Interfaces with Andor sCMOS cameras<br>(Use [[Andor]] DeviceAdapter instead for other Andor CCD and EMCCD cameras)
 |-
-|valign="top"|'''Authors:'''
+!Authors
 | David Gault (Andor)
+|- valign="top"
+!Maintainers
+|Matt Milford (Andor)<br>Norman Glasgow (Andor)<br>David Gault (Andor - retired)
+|- valign="top"
+!Documentation:
+|Orla Hanrahan (Andor)<br>Pariksheet Nanda (Andor)
 |-
-|valign="top"|'''Maintainers:'''
-|Norman Glasgow (Andor), David Gault (Andor - retired)
-|-
-|valign="top"|'''Documentation:'''
-|Orla Hanrahan (Andor), Pariksheet Nanda (Andor)
-|-
-|valign="top"|'''License:'''
+!License:
 |BSD
 |-
-|valign="top"|'''Platforms:'''
+!Platforms:
 |Windows, Linux, (No Mac driver available)
 |-
-|valign="top"|'''Devices:'''
+!Devices:
 |Neo, Zyla
 |}
 ----
