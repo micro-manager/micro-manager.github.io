@@ -180,7 +180,8 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 * Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
 
 === iCam ===
-* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions
+* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions.
+* µManager needs to implement SequenceExposure functions to use this feature.  No camera DeviceAdapter implements this yet.
 
 == Troubleshooting ==
 
