@@ -1,45 +1,21 @@
-{|
-|valign="top"|'''Summary:'''
+{| style="text-align: left"
+!Summary:
 |Interfaces with Andor cameras
+|- valign="top"
+!Authors:
+| Nenad Amodaj (Windows)<br>Karl Bellv&eacute; (Linux port)<br>Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
+|- valign="top"
+!Maintainers:
+|David Gault (Andor - retired)<br>Arthur Edelstein<br>Karl Bellv&eacute; (Linux port)<br>Pariksheet Nanda (Andor) this document
 |-
-|valign="top"|'''Authors:'''
-| Nenad Amodaj (Windows)
-|-
-|
-| Karl Bellv&eacute; (Linux port)
-|-
-|
-| Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
-|-
-|valign="top"|'''Maintainers:'''
-|David Gault (Andor - retired)
-|-
-|
-|Arthur Edelstein
-|-
-|
-|Karl Bellv&eacute; (Linux port)
-|-
-|
-|Pariksheet Nanda (Andor) this document
-|-
-|valign="top"|'''License:'''
+!License:
 |BSD
 |-
-|valign="top"|'''Platforms:'''
+!Platforms:
 |Windows and Linux (No Mac driver available)
-|-
-|valign="top"|'''Devices:'''
-|iXon Ultra (requires nightly build. 1.4.9_20120418)
-|-
-|
-|iXon3, iXon+, iXon
-|-
-|
-|Luca-S, Luca-R
-|-
-|
-|Clara, Clara-E
+|- valign="top"
+!Devices:
+|iXon Ultra, iXon3, iXon+, iXon<br>Luca-S, Luca-R<br>Clara, Clara-E
 |}
 ----
 
