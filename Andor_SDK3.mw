@@ -70,10 +70,11 @@ It is possible to achieve full frame rate with enough RAM. Again using a 64-bit 
 {{Note|You must restart uManager for either of these buffer size changes to take effect}}
 
 == Usage notes ==
-* Software Trigger is best for live mode.
-'''Reason:''' In internal trigger mode where the camera runs flat out, at high frame rates μManager may not pull images off the camera memory as quickly as they are produced, resulting in a time lag effect.  Worse- if the camera memory fills up, the live acquisition will stop and one needs to click "Stop Live" to continue using μManager.
+* Consider creating a <code>Trigger</code> Group, and changing the preset between:
+** <code>Software Trigger</code> for live mode, and 
+** <code>Internal Trigger</code> for fast acquisitions.
 
-* Internal Trigger is best for fast acquisitions
+'''Reason:''' In internal trigger mode where the camera runs flat out, at high frame rates μManager may not pull images off the camera memory as quickly as they are produced, resulting in a time lag effect.  Worse- if the camera memory fills up, the live acquisition will stop and one needs to click "Stop Live" to continue using μManager.
 
 * Trigger mode is dynamically set by µManager when using Multi-Dimensional > Time points.
 ** "exposure" < "interval" ignores the "interval" time and instead uses "frame rate" property from the "Device/Property Browser"
