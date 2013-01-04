@@ -47,12 +47,6 @@
 === Andor SDK ===
 You must install the Andor SDK, or Andor camera application software (Solis or iQ), since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
 
-{{MessageBox|Support Advisory|iXon users on Windows 7 64-bit must install Andor SDK 2.94 to fix the driver signing installer issue: [[:File:SDK_2.94.10005.0.zip.gz|Download]]}}
-
-{{MessageBox|Support Advisory|Clara users must use Andor SDK 2.90.30004.0 or older until the [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection issue] is fixed (Andor bug #7030).  Downloads available here for [[:File:Windows_SDK_2.90.30004.0.tar.gz|Windows‎]] and [[:File:Linux_SDK_2.90.30004.0.tar.gz|Linux]].  On Windows, after installing the SDK you need to copy the DLL to the Micro-Manager directory [[#Updating Andor library (DLL)|as described in Troubleshooting]]}}
-
-{{MessageBox|Support Advisory|Luca users seeing the [http://micro-manager.3463995.n2.nabble.com/Error-message-90991-51ff-hex-td7578217.html Error 20991 issue] should use nightly build 1.4.11_20121019 or later which contains the fix}}
-
 === Disable power savings ===
 Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
 
@@ -291,6 +285,58 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 |}
 
 == Resources ==
+=== FAQ ===
+
+==== Clara [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection] ====
+{| class="wikitable"
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.11_20121014
+|-valign="top"
+!Affected versions
+|1.4.7 to 1.4.11
+|-
+!Andor bug number
+|7187
+|-
+!Workaround
+|Copy Andor SDK 2.90.30004.0 or older DLL to µManager directory
+|}
+
+==== Luca [http://micro-manager.3463995.n2.nabble.com/Error-message-90991-51ff-hex-td7578217.html Error 20991] ====
+{| class="wikitable"
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.11_20121019
+|-
+!Affected versions
+|1.4.9 to 1.4.11
+|-
+!Andor bug number
+|7162
+|-
+!Workaround
+|Copy Andor SDK 2.88.30002.0 or older DLL to µManager directory
+|}
+
+==== Windows 7 64-bit driver signing of Andor SDK installer ====
+
+{| class="wikitable"
+!Solution
+|Install Andor SDK to 2.94 or later
+|-valign="top"
+!Affected versions
+|Andor SDK < 2.94
+|-
+!Andor bug number
+|6660
+|}
+
+
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
 
@@ -301,5 +347,3 @@ For contacting Andor product support regarding any questions, see under "Support
 http://www.andor.com/contact_us/default.aspx
 
 {{Devices_Sidebar}}
-
-[[User:P.nanda|P.nanda]] 07:51, 19 April 2012 (PDT)
