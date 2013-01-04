@@ -152,6 +152,8 @@ Most functions expect well positions in X, Y coordinates, where X is the long ax
  //////////////////////////////////////////////////////////////////////////////// /////
  
  //sets starting position
+ xystage = mmc.getXYStageDevice();
+ zstage = mmc.getFocusDevice();
  startX = mmc.getXPosition(xystage);
  startY = mmc.getYPosition(xystage);
  startZ = mmc.getPosition(zstage);
