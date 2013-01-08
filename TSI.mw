@@ -12,7 +12,7 @@
 
 == Installation Instructions ==
 
-This adapter is compatible with all DVC series cameras from Thorlabs Scientific Imaging (TSI). Before configuring the camera with micro-manager, Thorlabs software that came with the camera must be installed and verified (drivers, demo applications, etc.). After installing Thorlabs software make sure that camera is fully functional by running one or more applications from the package.
+This adapter is compatible with all Thorlabs Scientific Imaging cameras (TSI). Before configuring the camera with micro-manager, Thorlabs software that came with the camera must be installed and verified (drivers, demo applications, etc.). After installing Thorlabs software make sure that camera is fully functional by running one or more applications from the package.
 
 Make sure that both micro-manager and any Thorlabs camera related software is shut down. Locate the following files in the Thorlabs installation directory:
 
