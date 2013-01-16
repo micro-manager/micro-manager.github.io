@@ -33,7 +33,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Micropix]] - Cameras from Micropix
 * [[MoticCamera]] - Motic cameras
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
-* [[OpenCVgrabber]] - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
+* [[OpenCVgrabber]] - Supports numerous USB cameras and frame grabbers (those using a DirectShow or WDM class driver). (Windows)
 * [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
