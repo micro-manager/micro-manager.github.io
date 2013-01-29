@@ -73,3 +73,18 @@ The stage devices have a property called '''Stage'''. This is only relevant for 
 
 If the controller is able to store the stage parameters, use PIMikroMove to configure the parameters: When the stage configuration was sent to the controller with the "Assign Stages" dialog window, you can afterwards call "Save parameters to non-volatile memory" in the corresponding controller menu (see figure below). The password used is usually "100". Please see the user manual of the controller for details.
 [[File:PI_GCS2_PIMikroMove_Save_Params.png]]
+
+=== Homing of the stages ===
+For XYStages micro-manager supports the homing of the stages in the Axes list.
+
+Since ZStages currently do not support homing, but stages with incremental sensors need to be homed, there is a "homing" property for ZStages which can be set during runtime: For each ZStage create a new "Configuration Group", name it "Home Z Stage", select "stages" in the "Show" field and add the "HOMING" property by selecting "Use in group?" for the corresponding row. Then you have a new GUI element. When you now enter "REF", "MNL" or "MPL", the ZStage will move towards the reference, the negative or positive limit switch (see figures below). NOTE: This is a workaround. The stage may take several seconds to reach the target. Most likely this will result in an error message "device times out". Please close this error message AFTER the stage has finished. Then you should be able to continue using this ZStage.
+[[File:PI_GCS2_PropertyGroupHomeConfig.png]]
+[[File:PI_GCS2_PropertyGroupHome.png]]
+
+=== Changing velocity ===
+To change the velocity of the stage you can create an additional configuration group and select the property “Velocity” of the stage. Then you can change the velocity of the stage at any time in the corresponding GUI element.
+[[File:PI_GCS2_PropertyGroupVelocity.png]]
+
+=== Controller Joystick ===
+To some controllers a joystick can be connected to control stage motions. When the joystick is used the controller will not accept motion commands from the software. To switch joystick control on and off, create a configuration group, select “other devices” in the “Show” field, and select the “Joystick 1” or “Joystick 2” property of the controller. Afterwards you can activate the joystick by entering “1” and deactivating the joystick by entering “0” in the corresponding GUI element.
+[[File:PI_GCS2_PropertyGroupJoystickConfig.png]]
