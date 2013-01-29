@@ -8,7 +8,7 @@
 <tr><td>'''Platforms:'''</td><td>All platforms (serial interface) / Linux and Windows (uses PI GCS software modules)</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage (XY and Z)</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td></td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>1.4</td></tr>
 </table>
 
 The “PI GCS 2” adapter is compatible with most current PI controllers. PI piezo controllers can also be controlled with analog input (via analog DAC board driver in micro-manager). PI GCS 2 provides the same features as the previous “PI GCS” adapter. If you are using a PI device for the first time, please do not use the PI GCS adapter but use "PI GCS 2".
