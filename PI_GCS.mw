@@ -11,6 +11,8 @@
 <tr><td>'''Micro-Manager version:'''</td><td>>=1.2.7</td></tr>
 </table>
 
+'' '''Please Note''': This adapter is limited to Z Stages and serial communication. Please see [[PI_GCS_2]] for an updated driver for X/Y and Z stages with more features. Further development will focus on the [[PI_GCS_2]] adapter only (Steffen Rau, PI)''
+
 PI GCS driver is designed for high speed piezo Z motion and is compatible with all current PI piezo controllers.  PI piezo controllers are also compatible with analog input (via analog DAC board driver in uManager).  Piezo-Z motion is used for faster step times than motor-Z - typically about 10X faster.
 
 The adapter has been tested with E-816-based controllers (E-665, E-621, E-625), as well as with the E-753, E-712 and C-848 but should work also with all PI controllers that support the GCS (General Command Set) and can be connected via a serial interface (C-880, C-702, ...).
