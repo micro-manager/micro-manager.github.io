@@ -1,0 +1,75 @@
+== PI GCS 2 Adapter for XY- and Z motion ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with [http://www.pi.ws Physik Instrumente (PI)] GCS Controllers for X/Y and Z motion</td></tr>
+<tr><td>'''Author:'''</td><td>Rachel Hammer, Steffen Rau (PI) (based on code by Nico Stuurman and Nenad Amodaj)
+</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (serial interface) / Linux and Windows (uses PI GCS software modules)</td></tr>
+<tr><td>'''Devices:'''</td><td>Stage (XY and Z)</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td></td></tr>
+</table>
+
+The “PI GCS 2” adapter is compatible with most current PI controllers. PI piezo controllers can also be controlled with analog input (via analog DAC board driver in micro-manager). PI GCS 2 provides the same features as the previous “PI GCS” adapter. If you are using a PI device for the first time, please do not use the PI GCS adapter but use "PI GCS 2".
+
+The adapter uses two different connection modes:
+* serial connection of micro-manager, thus being platform independent
+* PI GCS modules (DLL or shared-object) for Linux and Windows
+The PI GCS modules are needed if controllers are used where the GCS command interpreter is implemented in the software module (e.g. C-843, E-710 and Mercury (C-863/663) with native firmware), or if the controller does not provide an RS-232 interface (e.g. E-761 that uses PCI).
+
+=== Device Types ===
+The adapter appears as "PI_GCS_2" library in the Hardware configuration. Basically it provides four different devices:
+* PIZStage
+* PIXYStage
+* PI_GCSController_DLL
+* PI_GCSController
+For some controllers special instances of the “controller” devices are provided. Here some of the values are already pre-set:
+* C-843 (using the C843_GCS_DLL and only available for Windows)
+* C-663.11 (using serial connection)
+* C-863.11 (using serial connection)
+* C-867 (supports all different C-867 models, e.g. C-867.160, C-867.260, ...)
+* E-517/E-545 (using serial connection)
+* E-710 (using the E7XX_GCS_DLL module, not available for MAC OS X)
+* E-712 (using serial connection)
+* E-753 (using serial connection)
+The controller devices handle the communication with the PI controller. The two “stage” devices are the XYStage and ZStage devices used inside micro-manager and represent the axes connected to the PI controller. Each stage device needs a controller device to communicate. So you always have to add at least two devices (see examples below).
+
+=== Configuration ===
+First you have to add a controller device for each PI controller you want to control by micro-manager. Give it a meaningful name, since the stages need this name to call the controller. After this you add the stages you want to use in micro-manager. Note that each controller can have as many stage devices as there are physical axes connected. E.g. one C-843.41 controller with 3 motorized stages can be used as one XYStage and one ZStage inside micro-manager, or you can use a 3-axis piezo stage connected to an E-712/710 as XYStage and ZStage. You can also use two single axis controllers to control one XY stage.
+
+Here is a detailed overview over the different properties of the 4 basic devices. If you have selected one of the predefined controllers not all properties are available as they have already been pre-set.
+
+PI_GCSControllerDLL:
+* '''DLL Name''': file name of DLL or shared object. On Windows you can find this e.g. in the version information of PIMikroMove.
+* '''Interface Type'': Type of interface used for connection. Currently "PCI" and "RS-232" are implemented. NOTE: If you select "RS-232" you must not configure this serial device in micro-manager, since the PI DLL/shared object needs exclusive access.
+* '''Interface Parameter''': This is a string where the single values are separated by ";". For "RS-232" this is “<port nr>;<baudrate>”. If you want, for example, to connect a PI device on COM1 with 57600 baud, type "1;57600". On Linux, "1" is mapped to "/dev/ttyS0", "2" to "/dev/ttyS1", and so on. For "PCI" this is a single integer with the board ID.
+
+PI_GCSController:
+* '''Port''': serial port used to communicate with the device. If you use the VCOM driver you can use PITerminal or PIMikroMove to find out which COM port to use
+* '''um in default unit''': Since PI controllers either work in mm/deg or µm/µrad and micro-manager uses µm, you need to define the factor to get µm from the default unit of the controller. For piezo controllers using µm this is typically 1, for motor controllers with mm this is "0.001"
+
+PIZStage:
+* '''Axis''': Name of axis
+* '''Controller Name''': Name of the controller as defined in the hardware configuration wizard of micro-manager
+* '''Limit_um''': define a limit for the Z stage in µm. Range is 0...<Limit_um>
+* '''Stage''': stage type (see notes below)
+
+PIXYStage:
+* '''Axis X: Name''': Name of the axis to be used as X axis 
+* '''Axis X: Stage''': stage type for X axis (see notes below)
+* '''Axis X: Homing Mode''': which feature to use for homing the X stage. Can be one of
+** "MNL" for negative limit switch
+** "MPL" for positive limit switch
+** "REF" for reference switch.
+** "" for stages with absolute position sensors (most piezo stages)
+* '''Axis Y: Name''': Name of the axis to be used as Y axis 
+* '''Axis Y: Stage''': stage type for Y axis (see notes below)
+* '''Axis Y: Homing Mode''': see "Axis X: Homing Mode"
+* '''Controller Name''': Name of the controller as defined in the hardware configuration wizard of micro-manager
+* '''Controller Name for Y axis''': If the Y axis is connected to a different controller you need to enter its name here. If this is empty the same controller is used for X and Y.
+
+The stage devices have a property called '''Stage'''. This is only relevant for stages connected to a PI_GCSController_DLL type controller, e.g. C-843 and E-710. If relevant, enter the name of the stage type for this property. For controllers that can store the stage parameters this property is ignored.
+
+If the controller is able to store the stage parameters, use PIMikroMove to configure the parameters: When the stage configuration was sent to the controller with the "Assign Stages" dialog window, you can afterwards call "Save parameters to non-volatile memory" in the corresponding controller menu (see figure below). The password used is usually "100". Please see the user manual of the controller for details.
+[[File:PI_GCS2_PIMikroMove_Save_Params.png]]
