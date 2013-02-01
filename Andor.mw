@@ -273,6 +273,21 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 | C:\MM\vinput\andor\
 |}
 
+=== iXon [https://gist.github.com/4694420 Error 20010 DRV_ERROR_PAGELOCK] ===
+{| class="wikitable"
+!Workaround
+|Upgrade Andor SDK and copy driver file to µManager directory
+|-valign="top"
+!Nightly build<br>containing fix
+|Not yet fixed.  Still has Andor camera library version 2.93.30007.0; needs 2.94.30007.0 or later
+|-
+!Affected versions
+|1.4.13 and earlier
+|-
+!Andor bug number
+|6659
+|}
+
 === Clara [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection] ===
 {| class="wikitable"
 !Solution
