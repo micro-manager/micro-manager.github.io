@@ -54,12 +54,17 @@ The '''Fit''' button will start Gaussian fitting of all maxima found in the imag
 </table>
 
 ==Data processing window==
+Results from the Gaussian fits appear in the Data window, with one row per data set.  The data set will have a name (in the '''Image''' column) that can be changed.  The total number of spots identified (or the total number of frames with a spot for a track) will be shown.  Tracks will also show the standard deviation of X and Y positions as well as the total number of photons measured.
+
 
 [[Image: DataProc_LMPlugin.PNG]]
 
 <table cellspacing=15><td>
 [[Image: DataProc_general.png]]</td>
 <td> '''General Options''' <br>
+Data can be saved in binary or text mode using the '''Save''' button.  The binary form is called 'Tagged Spot Format (TSF)' and is based on the Google Protocl Format.  A full description of the TSF format can be found here...
+
+Previously saved data can be loaded using the '''Load''' button.  For text data to be recognized, they should resemble the text format saved by the application.  TSF files can be opened, as well as the fitted data saved by the Nikon software.  The '''Remove''' button will remove the selected row(s) from the table (saved data on disk will not be deleted).  The '''Show''' button wil open a window with a table showing the fitted data (including the X, Y, and possibly Z location at each frame and channel, as well as information about spot width, and calculated number of photons detected).  If the data set is large, it can take a long time for this window to open and it can take a large amount of RAM.  The '''Info''' button will show some information about  the data set (orginal image it was derived from, box size, original image size, pixel size, etc..).  
 
 </td>
 </table>
