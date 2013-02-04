@@ -42,14 +42,14 @@ To find spots, the application searches the image using a box with the size give
 <table cellspacing=15><tr valign=top><td>
 [[Image: Filter-data.JPG]]</td>
 <td>'''Filtering Data''' <br>
-Filtering data can greatly reduce the number of useless spots appearing in your results.  For instance, diffraction limited spots often have a size between 200 and 400nm, so checking the “Width” checkbox and filling in appropriate numbers for minimum and maximum will often exclude poorly fit data.  Tracks are usually finished when no spot is found in the local neighborhood in a given frame.  By checking the “End track” checkbox and entering a number of frames, the code will continue to search in consecutive frames for a qualifying spot.  
+Filtering data can greatly reduce the number of useless spots appearing in your results.  For instance, diffraction limited spots often have a size between 200 and 400nm, so checking the '''Width''' checkbox and filling in appropriate numbers for minimum and maximum will often exclude poorly fit data.  Tracks are usually finished when no spot is found in the local neighborhood in a given frame.  By checking the '''End track''' checkbox and entering a number of frames, the code will continue to search in consecutive frames for a qualifying spot.  
 </td>
 </table>
 
 <table cellspacing=15><td>
 [[Image: Data-processing.JPG]]</td>
 <td> '''Data Processing''' <br>
-
+The '''Fit''' button will start Gaussian fitting of all maxima found in the image stack (i.e., in all frames and all channels).  Fitting will happen only on the active ROI (or the whole image if no ROI is active).  To '''Track''', draw a ROI around the particle to be tracked.  The '''MTrack''' button will find all Maxima in the current ROI and track each one by one.  Tracking will only take place in the current channel.  Results from the '''Fit''', '''Track''' and '''MTrack''' activities will be shown in the '''Data''' window.  The '''Data''' window can also be opened using the '''Data''' button.  The '''Stop''' button can be used to interrupt ongoing fitting activities.  
 </td>
 </table>
 
