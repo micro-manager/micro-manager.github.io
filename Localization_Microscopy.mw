@@ -42,7 +42,7 @@ To find spots, the application searches the image using a box with the size give
 <table cellspacing=15><tr valign=top><td>
 [[Image: Filter-data.JPG]]</td>
 <td>'''Filtering Data''' <br>
-
+Filtering data can greatly reduce the number of useless spots appearing in your results.  For instance, diffraction limited spots often have a size between 200 and 400nm, so checking the “Width” checkbox and filling in appropriate numbers for minimum and maximum will often exclude poorly fit data.  Tracks are usually finished when no spot is found in the local neighborhood in a given frame.  By checking the “End track” checkbox and entering a number of frames, the code will continue to search in consecutive frames for a qualifying spot.  
 </td>
 </table>
 
