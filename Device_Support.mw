@@ -86,7 +86,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
 * [[SutterStage]] - Sutter XY Stage
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
-* [[ThorlabsDCStage]] - Thorlabs XY Stages using the TDC001 Controller.
+* [[ThorlabsDCStage]] - Thorlabs Linear Stages using the TDC001 Controller.
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
 * [[ThorlabsSC10]] - Thorlabs shutter controller
