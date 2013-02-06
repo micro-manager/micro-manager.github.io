@@ -273,7 +273,7 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 | C:\MM\vinput\andor\
 |}
 
-=== iXon [https://gist.github.com/omsai/4694420/raw/f39715c6b49afe9266fe131f357d581d20890efa/gistfile1.txt] ===
+=== iXon [https://gist.github.com/omsai/4694420/raw/f39715c6b49afe9266fe131f357d581d20890efa/gistfile1.txt Error 20010 DRV_ERROR_PAGELOCK] ===
 {| class="wikitable"
 !Solution
 |
