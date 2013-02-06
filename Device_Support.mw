@@ -84,9 +84,10 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
 * [[SutterStage]] - Sutter XY Stage
+* [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
+* [[ThorlabsDCStage]] - Thorlabs XY Stages using the TDC001 Controller.
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
-* [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
 * [[ThorlabsSC10]] - Thorlabs shutter controller
 * [[Tofra]] - XY and Z stages, filter wheel, motorized filter cube slider, and LED illuminator
 * [[Vincent]] - Vincent Uniblitz controllers
