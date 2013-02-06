@@ -275,14 +275,16 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 
 === iXon [https://gist.github.com/4694420 Error 20010 DRV_ERROR_PAGELOCK] ===
 {| class="wikitable"
-!Workaround
-|Upgrade Andor SDK and copy driver file to µManager directory
+!Solution
+|
+* Upgrade Andor SDK
+* In the <code>Device Manager</code> remove and reinstall Andor PCI/e framegrabber card so that Windows uses the new <code>sys</code> file
 |-valign="top"
 !Nightly build<br>containing fix
-|Not yet fixed.  Still has Andor camera library version 2.93.30007.0; needs 2.94.30007.0 or later
+|N/A - this is an Windows driver bug with the Andor <code>sys</code> file, not µManager
 |-
 !Affected versions
-|1.4.13 and earlier
+|Andor SDK 2.93 and earlier (Windows-only bug)
 |-
 !Andor bug number
 |6659
@@ -323,7 +325,6 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 !Workaround
 |Copy Andor SDK 2.88.30002.0 or older DLL to µManager directory
 |}
-
 
 == Resources ==
 
