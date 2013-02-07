@@ -10,6 +10,7 @@ Has been developed and tested with the DCC1545M, based on the source code of the
 <tr><td>'''Available since version:'''</td><td>1.4.14 nightly build of 02/06/2013</td>
 
 
+
 == PROCEDURE ==
 
 Install latest version of Micromanager (this device adapter was first included in the nightly build of 02/06/2013).
