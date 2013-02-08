@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>Vincent controllers VMM-D1/T1, D122, D3/D4, VCM-D1, possibly others</td></tr>
+<tr><td>'''Devices:'''</td><td>Vincent controllers VMM-D1/T1, D122, D3/D4, VCM-D1, ASI SC-2000, possibly others</td></tr>
 <tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
