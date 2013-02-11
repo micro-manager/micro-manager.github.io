@@ -29,7 +29,7 @@
 The ThorlabsDCStage adapter operates the  Motorized Translational Stages (50 mm)
 [http://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3002 MTS50/M-Z8E] from Thorlabs controlled with the [http://www.thorlabs.com/NewGroupPage9.cfm?ObjectGroup_ID=2419 TDC001 Controller]. 
 
-Before using this adapter install the software provided by Thorlabs and follow the configuration process. Moreover the [[File:APT.dll]] APT.dll file should be copied on the Micro-manager folder.
+Before using this adapter install the software provided by Thorlabs and follow the configuration process. Moreover the APT.dll file should be copied on the Micro-manager folder. [[File:APT.zip]]
 
 Each time you power-up this stage needs to be "homed" before sending any commands. To do that, create a Group with the "Home" property. Then set the value to 1.
 
