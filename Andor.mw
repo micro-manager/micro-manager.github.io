@@ -277,8 +277,13 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 {| class="wikitable"
 !Solution
 |
-* Upgrade Andor SDK
-* In the <code>Device Manager</code> remove and reinstall Andor PCI/e framegrabber card so that Windows uses the new <code>sys</code> file
+# Uninstall the existing device driver for the Andor PCI/e framegrabber card:
+#* The following Microsoft guide explains who to do this, but there is no need to physically remove the card as described in step 6 of the Uninstall section:
+#*: http://technet.microsoft.com/en-us/library/cc725782.aspx#bkmk_2
+#* When uninstalling, make sure to select <code>Delete the driver software for this device</code>.
+#* Use <code>Scan for Hardware Changes</code> Action in the Device Manager as described in the guide.  If it finds the driver, repeat this uninstall process until all copies of the driver are deleted.
+# Upgrade to Andor camera SDK 2.94.30007.0 or later.
+# Windows now uses the new <code>sys</code> file.
 |-valign="top"
 !Nightly build<br>containing fix
 |N/A - this is an Windows driver bug with the Andor <code>sys</code> file, not µManager
