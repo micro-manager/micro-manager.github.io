@@ -317,7 +317,7 @@ Loads specified configuration file and lists all properties and details for all 
 
 === DLL Auto Reloader plugin ===
 
-This [[DLLAutoReloader|Micro-Manager plugin]] that will automatically reload a device adapter whenever it has been recompiled.
+This [[DLLAutoReloader|Micro-Manager plugin]] will automatically reload a device adapter whenever it has been recompiled.
 
 === Scripting environment ===
 
