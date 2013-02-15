@@ -2,7 +2,7 @@ The Nikon TI Eclipse is a fine motorized microscope, however, its designers forg
 
 To remedy this problem, I started encoding the tube lens switcher myself.  The three main components to do so are:
 * Hall effect sensor.  These are small devices that change output voltage depending on the presence of an electric field.  I used the A3214EUA-T (inscribed with EA1) from Allegro.  It appears no longer to be available, but similar devices will do the job as well
-* Magnet.  You want a magnet that fits into the screw hole of the tube lens switcher.  [http://www.getbuckyballs.com/ Buckeyballs] and [http://www.theneocube.com/ Neocubes] do a great job at this.  You need only one of them (hope they are still available)!
+* Magnet.  You want a magnet that fits into the screw hole of the tube lens switcher.  Buckeyballs (no longer available) and [http://www.theneocube.com/ Neocubes] do a great job at this.  You need only one of them (hope they are still available)!
 * An [http://arduino.org Arduino] board. Most of the standard boards (including the Uno) will do fine.  This will provide power to the Hall effect sensor, read out its state and signal this to the Micro-Manager software.
 
 To put everything together, I also used:
@@ -21,7 +21,7 @@ Then hooked up the telephone wire to the Arduino using the same crimp connectors
 Close the box (you do not need to put the stickers on):
 [[Image:Boxb.jpg|frame|center]]
 
-Now put the Buckeyball magnet in the screw hole in the tube lens changer and position the Hall effect sensor right underneath. Fasten the sensor using thick double sticky foam.  Turning the know will bring the magnet out of reach of the Hall effect sensor.  
+Now put the Buckeyball magnet in the screw hole in the tube lens changer and position the Hall effect sensor right underneath. Fasten the sensor using thick double sticky foam (put some souble sticky foam over the sensor as well to make sure it does not break loose).  Turning the know will bring the magnet out of reach of the Hall effect sensor.  
 [[Image:swictherb.jpg|frame|center]]
 
 Load the AOTF firmware into the Arduino board. Configure Micro-Manager to use the Arduino-Input device. Set the pull up resistor property to "On".  You can either use just pin 0 or all pins.  In the device property browser, you should see the value of this read-only input property change when the magnet is close to the hall effect sensor (the input updates automatically every second).  Add this property to the pixel size configuration and Micro-Manager will always know the exact pixel size.
