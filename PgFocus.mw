@@ -36,7 +36,7 @@ pgFocus software can do the following:
 * Move focus up by a specified amount (currently set to +50nM).
 * Move focus down by a specified amount (currently set to -50nM).
 
-pgFocus software has not be released yet since it was designed for the prototype version of pgFocus rather than the this version. It will be released as soon as possible.
+pgFocus software has not be released yet since it was designed for the prototype version of pgFocus rather than this version. It will be released as soon as possible.
 
 === Calibration Mode ===
 
