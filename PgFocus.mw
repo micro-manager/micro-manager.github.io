@@ -1,0 +1,10 @@
+pgFocus is an open source and open hardware focus stabilization device developed by Karl Bellvé at the Biomedical Imaging Group (PMM, University of Massachusetts Medical School).
+
+The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good!
+
+pgFocus is designed to track and control focus within ±3nM at 30Hz under optimal conditions. 
+
+
+Movie, [[Media:pgFocus.mov]], of pgFocus in action. 200nM beads were TIRF imaged in burst mode with a 60X objective with a 1.6X optivar. 
+
+The microscope is enclosed in an environmental chamber. The doors to the chamber were opened at image 300 and closed at image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments.
