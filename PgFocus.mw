@@ -1,16 +1,32 @@
 == Description ==
 
-pgFocus is an open source and open hardware focus stabilization device developed by Karl Bellvé at the Biomedical Imaging Group (PMM, University of Massachusetts Medical School).
+pgFocus is an open source and open hardware focus stabilization device developed by Karl Bellvé at the [http://big.umassmed.edu Biomedical Imaging Group] (PMM, University of Massachusetts Medical School).
 
 The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good!
 
 == Hardware ==
 
-pgFocus uses the same [http://www.atmel.com/devices/ATMEGA32U4.aspx Atmel ATMEGA 32U4] seen in the [http://arduino.cc/en/Main/arduinoBoardLeonardo Arduino Leonardo]. 
+pgFocus uses the same [http://www.atmel.com/devices/ATMEGA32U4.aspx Atmel ATMEGA 32U4] as seen in the [http://arduino.cc/en/Main/arduinoBoardLeonardo Arduino Leonardo]. 
+
+pgFocus is connected to a computer via a USB port. USB is used to power and to communicate with pgFocus.
 
 == Software ==
 
-After the Leonardo was released, pgFocus was redesigned to take advantage of the bootloader for the Arduino Leonardo. If you can write an Arduino sketch, you can modify the source code to pgFocus!
+After the Arduino Leonardo was released, pgFocus was redesigned to take advantage of the bootloader from the Arduino Leonardo. If you can write an Arduino sketch, you can modify the source code to pgFocus!
+
+pgFocus software reports the following:
+* Light profile as seen by the Linear Light Array.
+** Use this to align the physical position of pgFocus with the return laser beam.
+* Current centroid location of the light profile as seen by the Linear Light Array.
+* Microscope stability based on the running Standard Deviation(converted to nM movement at the objective).
+* Digital to Analog converter voltage output need to maintain current focus position.
+
+pgFocus software can do the following:
+* Lock focus at the current position.
+* Move focus up by a specified amount (currently set to +50nM).
+* Move focus down by a specified amount (currently set to -50nM).
+
+pgFocus software has not be released yet since it was designed for the prototype version of pgFocus rather than the this version. It will be released as soon as possible.
 
 
 == Optics ==
@@ -22,7 +38,7 @@ The laser beam wavelength should be different from that being used for science (
 
 pgFocus is designed to track and control focus within ±3nM at 30Hz under optimal conditions (tested with a high NA 60X Objective plus 1.6X optivar).
 
-Movie, [[Media:pgFocus.mov]] , of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
+Movie, [[Media:pgFocus.mov]], of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
 
 The microscope is enclosed in an environmental chamber. The doors to the chamber were opened at image 300 and closed at image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope.
 
@@ -34,5 +50,7 @@ The microscope is enclosed in an environmental chamber. The doors to the chamber
 pgFocus couldn't have been designed without the support of the Open Hardware community.
 
 [http://www.adafruit.com/ Adafruit industries]
+
 [http://www.sparkfun.com/ Sparkfun Electronics]
+
 [http://www.arduino.cc/ Arduino]
