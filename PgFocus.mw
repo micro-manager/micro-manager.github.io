@@ -124,7 +124,7 @@ pgFocus is designed to track and control focus within ±3nM at 30Hz under optima
 * Precision is proportional to the distance pgFocus is from the objective. 
 * Range is inversely proportional to the distance pgFocus is from the objective
 
-[[Media:pgFocus.mov|Movie]] of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
+This [[Media:pgFocus.mov|Movie]] shows pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
 
 The microscope is enclosed in an environmental chamber. The doors to the chamber were opened after image 300 and closed after image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope caused by the open doors.
 
