@@ -50,12 +50,13 @@ The user just needs to make sure the the return laser beam is aligned and center
 
 pgFocus is designed to track and control focus within ±3nM at 30Hz under optimal conditions (tested with a high NA 60X Objective plus 1.6X optivar).
 
-Movie, [[Media:pgFocus.mov]], of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
+[[Media:pgFocus.mov|Movie]] of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
 
 The microscope is enclosed in an environmental chamber. The doors to the chamber were opened at image 300 and closed at image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope caused by the open doors.
 
-[[Media:pgFocus_graph.png]]
+Below is the graph of pgFocus performance from the above movie.
 
+[[File:pgFocus_graph.png|frame|Figure: pgFocus in action. Doors to a microscope environmental chamber were opened at image 300 and then closed at image 600.]]
 
 == Parts ==
 
