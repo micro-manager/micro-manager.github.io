@@ -70,6 +70,8 @@ Below is the graph of what happens when pgFocus isn't controlling focus stabiliz
 
 As you can see in the bottom graph, focus position has changed even after the doors were closed due to the perturbations introduced into the microscope. The focus position may eventually correct itself once the temperature gradient returns to its original gradient.
 
+These a severe perturbations but pgFocus is very good at compensating for slow focal drift over time.
+
 == Parts ==
 
 Preliminary parts list. Parts may change at any time.
