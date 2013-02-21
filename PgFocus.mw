@@ -1,6 +1,6 @@
 == Description ==
 
-pgFocus is an open source and open hardware focus stabilization device developed by Karl Bellvé at the [http://big.umassmed.edu Biomedical Imaging Group] (PMM, University of Massachusetts Medical School).
+pgFocus is an open source and open hardware focus stabilization device developed by Karl Bellvé at the [http://big.umassmed.edu Biomedical Imaging Group] (Progam in Molecular Medicine, University of Massachusetts Medical School).
 
 The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good!
 
@@ -10,11 +10,43 @@ pgFocus uses the same [http://www.atmel.com/devices/ATMEGA32U4.aspx Atmel ATMEGA
 
 pgFocus is connected to a computer via a USB port. USB is used to power and to communicate with pgFocus.
 
+==== Power ====
+
+pgFocus uses the USB +5V power to generate +10V and -5V power. The actual output voltage for +10V power line is lower due to the forward voltage drop of the diodes required for the boost converter IC. However, one should never be running their piezo Z controller near their max voltage input range anyway. Just be aware that voltage signals near +10V sent through pgFocus may be reduced.
+
+The -5V is higher (more positive) because of the same reason. Our piezo Z controller accepts -2V to +10V, so this isn't a significant issue on the -5V power line.
+
+==== Digital to Analog Converter ====
+
+pgFocus uses a ±5V 14bit DAC to modify incoming piezo Z signal. This is the upper and lower voltage limit that can be used to adjust the piezo Z signal. The DAC has a resolution of 0.6 mV. Based on our piezo Z controller, this works out to a 6 nM step size at the objective. 
+
+==== Analog to Digital Converter ====
+
+pgFocus uses a ±10V ADC to sample the incoming piezo Z signal. This is to allow pgFocus to automatically adjust the focus set point, without user intervention. This feature enables pgFocus to have 3D focus correction. 
+
+The incoming piezo signal is sampled and multiplied by 2. This means that the ±10V ADC becomes effectively a ±5V ADC, matching the ±5V DAC. 
+
+However, this means the lower limit for sampling the incoming piezo Z signal is actually -2.5V, which becomes -5V, due to the gain of 2, at the ADC. This is acceptable because you should never drive your piezo Z controller below -2V. Therefore the effective ADC sampling range is actually -2.5V to +5V.
+
+When pgFocus samples the incoming piezo Z signal, it will round off the results to the nearest 50nM step since most people move their objectives at 50, 100 or 250nm increments. This will allow the adjustment of the focus set point more accurately based on the distance from the original focus set point. 
+
+==== Linear Light Array====
+
+Additionally, the Linear Light Array represents a physical limit. The return beam must fall within its 128 pixels. The length of the 128 pixels is about 8 mm. In our setup, the 8 mm length of the Linear Light Array is equivalent to about 25 to 30µM range at with a 60X objective. Longer Linear Light Arrays maybe used in future versions of pgFocus.
+
+The Linear Light Array's location on the PCB is in the exact vertical center of the board. This allows you to put pgFocus in either vertical orientation using the same case. 
+
+==== Digital Expansion Port ====
+
+pgFocus makes accessible out 8 digital I/O pins compatible with D0 to D7 pins on the Arduino Leonardo. These pins can be used for other light sensors, or perhaps a hardware switch to turn on/off focus, or to move the focus set point up or down.
+
++5V and ground lines are also made available. However, since USB is powering pgFocus, power maybe limited. Future versions of pgFocus might have a 5V DC jack if power is a limitation in the current design. 
+
 Eagle files are located at [https://github.com/kbellve/pgFocus Github].
 
 '''Warning:''' PCB design has not been verified yet and may not be final.
 
-=== Optics ===
+==== Optics ====
 
 pgFocus uses a laser beam that is reflected off the cover glass/water interface to monitor the microscope focus. Hence, an objective with an NA of at least 1.45 is required.
 The laser beam wavelength should be different from that being used for science (808nm is a good choice) and must be coaligned with the TIRF beam. This can be done using a mirror, beam splitter and a short pass filter. Care must be taken to ensure that the fluorescence filter cube and other microscope optics will allow the return of the pgFocus beam back along its input path and back to the pgFocus detector and that the microscope optics will NOT allow the laser light to pass into the user's eyes or to reach the camera. Once the position and angle of the pgFocus beam is coincident with that of the TIRF beam a strong return pgFocus beam will be seen that moves with changes in microscope focus. The pgFocus detector array can now be aligned and centered on the beam.
@@ -38,7 +70,7 @@ pgFocus software can do the following:
 
 pgFocus software has not be released yet since it was designed for the prototype version of pgFocus rather than this version. It will be released as soon as possible.
 
-=== Calibration Mode ===
+==== Calibration Mode ====
 
 pgFocus needs to understand the relationship between the movement of the laser beam return signal seen on the Linear Light Array and the movement of the objective. This depends upon the location of pgFocus in relation to the objective. To determine this relationship, pgFocus has a calibration mode that moves the objective up and then down, while reading the position of the return laser beam. This information is plotted and a linear regression analysis is performed to determine the slope. The slope is the scale factor that pgFocus uses for calculations and for focus adjustments.
 
@@ -70,7 +102,7 @@ Below is the graph of what happens when pgFocus isn't controlling focus stabiliz
 
 As you can see in the bottom graph, focus position has changed even after the doors were closed due to the perturbations introduced into the microscope. The focus position may eventually correct itself once the temperature gradient returns to its original gradient.
 
-These a severe perturbations but pgFocus is very good at compensating for slow focal drift over time.
+These are severe perturbations but pgFocus is very good at automatically compensating for slow focal drift over time.
 
 == Parts ==
 
