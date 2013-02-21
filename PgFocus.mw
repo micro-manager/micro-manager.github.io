@@ -89,7 +89,7 @@ A calibration must be performed after first installing pgFocus, or if the distan
 
 The user just needs to make sure the the return laser beam is aligned and centered on the Linear Light Array. pgFocus will take care of the rest and will store the resulting calculation in its EPROM.
 
-The figure below is from pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
+The figure below is  captured from pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
 
 [[File:PgFocus_calibration.jpg|frame|Figure: Calibration Output]]
 
