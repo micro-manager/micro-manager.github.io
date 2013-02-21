@@ -12,7 +12,7 @@ pgFocus is connected to a computer via a USB port. USB is used to power and to c
 
 Eagle files are located at [https://github.com/kbellve/pgFocus Github].
 
-'''Warning:''' PCB design has not been verified yet.
+'''Warning:''' PCB design has not been verified yet and may not be final.
 
 === Optics ===
 
@@ -42,13 +42,17 @@ pgFocus software has not be released yet since it was designed for the prototype
 
 pgFocus needs to understand the relationship between the movement of the laser beam return signal seen on the Linear Light Array and the movement of the objective. This depends upon the location of pgFocus in relation to the objective. To determine this relationship, pgFocus has a calibration mode that moves the objective up and then down, while reading the position of the return laser beam. This information is plotted and a linear regression analysis is performed to determine the slope. The slope is the scale factor that pgFocus uses for calculations and for focus adjustments.
 
+A calibration must be performed after first installing pgFocus, or if the distance between pgFocus or the objective changes (i.e. pgFocus is moved). 
+
+The user just needs to make sure the the return laser beam is aligned and centered on the Linear Light Array. pgFocus will take care of the rest and will restore the resulting calculation in its EPROM.
+
 == Performance ==
 
 pgFocus is designed to track and control focus within ±3nM at 30Hz under optimal conditions (tested with a high NA 60X Objective plus 1.6X optivar).
 
 Movie, [[Media:pgFocus.mov]], of pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
 
-The microscope is enclosed in an environmental chamber. The doors to the chamber were opened at image 300 and closed at image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope.
+The microscope is enclosed in an environmental chamber. The doors to the chamber were opened at image 300 and closed at image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope caused by the open doors.
 
 [[Media:pgFocus_graph.png]]
 
@@ -201,12 +205,14 @@ Preliminary parts list. Parts may change at any time.
 
 == Thanks ==
 
-pgFocus couldn't have been designed without the support from the [http://www.umassmed.edu/pmm/index.aspx Program in Molecular Medicine] at [http://www.umassmed.edu Umass], and the Open Software and Open Hardware communities. 
+pgFocus couldn't have been designed without the support from the [http://www.umassmed.edu/pmm/index.aspx Program in Molecular Medicine] at [http://www.umassmed.edu Umass], and the following Open Software and Open Hardware communities:
 
 *[http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Open_Source_Microscopy_Software uManager]
 
 *[http://www.adafruit.com/ Adafruit industries]
 
 *[http://www.sparkfun.com/ Sparkfun Electronics]
+
+*[http://www.parallax.com/ Parallax Inc]
 
 *[http://www.arduino.cc/ Arduino]
