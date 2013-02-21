@@ -59,6 +59,8 @@ Below is the graph of pgFocus performance from the above movie.
 [[File:pgFocus_graph.png|frame|Figure: pgFocus in action. Doors to a microscope environmental chamber were opened at image 300 and then closed at image 600.]]
 
 
+As you can see in the above graph, even after the doors were close, a constant voltage adjustment had to be applied to keep focus at its original position.
+
 Below is the graph of what happens when pgFocus isn't controlling focus stabilization during the same procedure.
 
 [[File:pgFocus_off.png|frame|Figure: pgFocus has been turned off, but the doors were opened and closed to the microscope chamber. Only plotting the Linear Light Array since no voltage is being applied to correct focus. ]]
