@@ -89,9 +89,11 @@ A calibration must be performed after first installing pgFocus, or if the distan
 
 The user just needs to make sure the the return laser beam is aligned and centered on the Linear Light Array. pgFocus will take care of the rest and will store the resulting calculation in its EPROM.
 
-The figure below is  captured from pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
+The figure below is captured from the first prototype of pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
 
 [[File:PgFocus_calibration.jpg|frame|Figure: Calibration Output]]
+
+The above figure shows two numbers for each position. The first number is Voltage DAU which ranges from 0 to 4095 (12bit DAC used on the prototype pgFocus). 2048 is equivalent to 0 Volts. The second number is the pixel position on the Linear Light Array, which ranges from 0 to 127. Because pgFocus calculates a centroid of the return beam light profile, it can determine sub pixel positions on the Linear Light Array.
 
 pgFocus also outputs the calibration information to the USB port:
 
