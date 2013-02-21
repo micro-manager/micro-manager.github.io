@@ -21,7 +21,7 @@ The laser beam wavelength should be different from that being used for science (
 
 == Software ==
 
-After the Arduino Leonardo was released, pgFocus was redesigned to take advantage of the bootloader designed for the Arduino Leonardo. If you can write an Arduino sketch, you can modify the source code to pgFocus!
+After the Arduino Leonardo was released, pgFocus was redesigned to take advantage of the bootloader, as well as the pin layout for the Arduino Leonardo. If you can write an Arduino sketch, you can modify the source code to pgFocus!
 
 pgFocus software reports the following:
 * Light profile as seen by the Linear Light Array.
