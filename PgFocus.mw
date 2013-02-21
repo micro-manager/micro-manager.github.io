@@ -63,6 +63,8 @@ Below is the graph of what happens when pgFocus isn't controlling focus stabiliz
 
 [[File:pgFocus_off.png|frame|Figure: pgFocus has been turned off, but the doors were opened and closed to the microscope chamber. Only plotting the Linear Light Array since no voltage is being applied to correct focus. ]]
 
+As you can see in the bottom graph, focus position has changed even after the doors were closed due to the perturbations introduced into the microscope. The focus position may eventually correct itself once the temperature gradient returns to its original gradient.
+
 == Parts ==
 
 Preliminary parts list. Parts may change at any time.
