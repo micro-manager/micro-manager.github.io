@@ -93,7 +93,7 @@ The figure below is captured from the first prototype of pgFocus after it has pe
 
 [[File:PgFocus_calibration.jpg|frame|Figure: Calibration Output]]
 
-The above figure shows two numbers for each position. The first number is Voltage DAU which ranges from 0 to 4095 (12bit DAC used on the prototype pgFocus). 2048 is equivalent to 0 Volts. The second number is the pixel position on the Linear Light Array, which ranges from 0 to 127. Because pgFocus calculates a centroid of the return beam light profile, it can determine sub pixel positions on the Linear Light Array.
+The above figure shows two numbers for each position. The first number is Voltage DAU which ranges from 0 to 4095 (12bit DAC used on the prototype pgFocus, 0 DAU = -1.65V, 2048 DAU = 0V, 4095 DAU = +1.65V). The second number is the pixel position on the Linear Light Array, which ranges from 0 to 127. Because pgFocus calculates a centroid of the return beam light profile, it can determine sub pixel positions on the Linear Light Array.
 
 pgFocus also outputs the calibration information to the USB port:
 
