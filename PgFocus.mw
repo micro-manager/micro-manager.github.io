@@ -4,7 +4,7 @@ pgFocus is an open source and open hardware focus stabilization device developed
 
 The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good!
 
-pgFocus monitors focus changes through the positional changes of a reflected laser beam. A significant feature of pgFocus is it acts as a "man-in-the-middle." It is designed to pass through faster high fidelity signals meant for a piezo Z controller while adding a slower focus control signal. This happens in the analog realm, which avoids sampling artifacts introduced by digitizing the original signal.
+pgFocus monitors focus changes through the positional changes of a reflected laser beam. A significant feature of pgFocus is it acts as a "man-in-the-middle." It is designed to pass through faster high fidelity signals meant for a piezo Z controller while adding a slower focus control signal. This happens in the analog realm, which avoids sampling artifacts introduced by digitizing the original signal. This design also reduces the cost of pgFocus.
 
 == Hardware ==
 
