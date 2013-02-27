@@ -152,36 +152,49 @@ Preliminary parts list. Parts may change at any time.
 {|border="1"  style="text-align:center;"
 |-
 !Name
+!Number
 !Current
 !Voltage
 !Reference
 !Notes
 |-
 |TSL1401CL
+|1
 |5mA
 |5V
 |[http://www.mouser.com/ProductDetail/ams/TSL1401CL/?qs=%2fha2pyFadui9qowM2EAvhG%2fJktwzmI3oPG4s%2fwQmRk8%3d Mouser] [http://octopart.com/tsl1401cl-taos-22060121 Octopart] 
 |0.018 to 100ms Exposure Time
 |-
-|ATMEGA32U4
+|ATMEGA32U4-AU
+|1
 |7mA
 |5V
 |[http://www.atmel.com/devices/atmega32u4.aspx ATMEL] [http://www.newark.com/jsp/search/productdetail.jsp?sku=26R5633 Newark]
 | 
 |-
+|QUARTZ CRYSTAL
+|1
+|
+|
+|[http://www.newark.com/jsp/search/productdetail.jsp?SKU=86R1710 NEWARK] [http://www.txccrystal.com/images/pdf/9b-accuracy.pdf PDF]
+|16 MHz, 18 pF, DIP
+|-
 |AD8221ARZ
+|1
 |1mA
 | -12V to 12V
 |[http://www.analog.com/en/specialty-amplifiers/instrumentation-amplifiers/ad8221/products/product.html Analog Devices] [http://www.analog.com/static/imported-files/data_sheets/AD8221.pdf PDF]
 |
 |-
 |AD5531BRUZ
+|1
 |2mA
 | -12V to 12V
 |[http://www.analog.com/en/digital-to-analog-converters/da-converters/ad5531/products/product.html Analog Devices]  [http://www.analog.com/static/imported-files/data_sheets/AD5530_5531.pdf PDF]
 |
 |-
-|TC7660
+|ICL7660CSA
+|1
 |20mA
 |5V to 10V, -5V
 |[http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010576 Microchip] [http://ww1.microchip.com/downloads/en/DeviceDoc/21465b.pdf PDF]  [http://www.newark.com/microchip/tc7660coa/ic-charge-pump-dc-dc-converter/dp/61K3539 Newark]
@@ -189,107 +202,158 @@ Preliminary parts list. Parts may change at any time.
 |- 
 |TC7660H
 |
+|
 |5V to 10V, -5V
 |[http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010577 Microchip]   [http://ww1.microchip.com/downloads/en/DeviceDoc/21466a.pdf PDF] [http://www.newark.com/microchip/tc7660coa/ic-charge-pump-dc-dc-converter/dp/61K3539 Newark]  
 |120kHz. Use 1uF caps
 |-
-|AD7894-10
+|AD7894ARZ-10
+|1
 |4mA
 | -10V to 10V
 |[http://www.analog.com/en/analog-to-digital-converters/ad-converters/ad7894/products/product.html Analog Devices]   [http://www.analog.com/static/imported-files/data_sheets/AD7894.pdf PDF]  [http://www.newark.com/analog-devices/ad7894arz-3/serial-14-bit-adc-i-c/dp/59K5904?in_merch=Popular%20Products Newark]
 |Serial (not SPI or I2C), Using GAIN on 2 with op amp for -5 to +5V range
 |-
 |ADR03BRZ
+|1
 |1mA
 |2.5V reference
 |[http://www.analog.com/en/special-linear-functions/voltage-references/adr03/products/product.html Analog Devices] [http://www.analog.com/static/imported-files/data_sheets/ADR01_02_03_06.pdf PDF][http://www.newark.com/analog-devices/adr03brz/ic-series-v-ref-2-5v-2-5mv-8-soic/dp/59K2682?in_merch=Popular%20Products Newark] 
 |2.5V Reference
 |-
 |ADTL082
+|2
 |1.2mA
 |
 |[http://www.analog.com/en/all-operational-amplifiers-op-amps/operational-amplifiers-op-amps/adtl082/products/product.html Analog Devices] [http://www.analog.com/static/imported-files/data_sheets/ADTL082_084.pdf PDF]
 |Unity Gain Stable
 |-
 |RJ45-8PTH
+|1
 |NA
 |NA
 |
 |
 |-
 |USB Type B
+|1
 |NA
 |NA
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=14N8154 Newark]
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=14N8154 Newark] [http://www.farnell.com/datasheets/218880.pdf PDF]
 |
 |-
 | PTC Resettable Fuse
+|1
 |500mA
-|15V
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=02J2730 Newark] 
-|
+|13.2V
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=02J2730 Newark] [http://www.bourns.com/data/global/pdfs/mfnsmf.pdf PDF]
+|1206
 |-
 |Schottky Diode
+|
 |30mA
 |30V
 |[http://search.digikey.com/us/en/products/RB751G-40T2R/RB751G-40T2RDKR-ND/1801055 Digi-key]
 |2-SMD, Flat Lead
 |-
 |Schottky Diode
+|2
 |200mA
 |40V
 |[http://www.newark.com/jsp/search/productdetail.jsp?sku=75R5257 Newark]
 |SOD-323
 |-
 |18pF Capacitor 
+|2
 |
 |50V
 |[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R5140 Newark]
 |0603
 |-
-|100pF Capacitor 
+|100pF Capacitor
+|2
 |
 |50V
 |[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R5119 Newark]
 |0603
 |-
-|1000pF Capacitor 
+|1000pF Capacitor
+|2 
 |
 |50V
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R4910 Newark]
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R4910 Newark] [http://www.farnell.com/datasheets/1522998.pdf PDF]
 |0603
 |-
-|0.01uF Capacitor 
+|0.01uF Capacitor
+|1
 |
 |50V
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R4918 Newark]
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R4918 Newark] [http://www.farnell.com/datasheets/1522998.pdf PDF]
 |0603
 |-
-|0.1uF Capacitor 
+|0.1uF Capacitor
+|25 
 |
 |50V
 |[http://www.newark.com/jsp/search/productdetail.jsp?sku=06R4927 Newark]
 |0603
 |-
-|10uF Capacitor 
+|10uF Capacitor
+|6 
 |
 |16V
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=59M9559 Newark]
-|1206, ESR: 0.2ohm
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=59M9559 Newark][http://www.avx.com/docs/Catalogs/tcj.pdf PDF]
+|1206, ESR: 0.2 Ohm (need < 1 Ohm)
 |-
-|10uF Capacitor 
+|10uF Capacitor
+|1 
 |
 |16V
 |[http://www.newark.com/jsp/search/productdetail.jsp?sku=09K5840 Newark] [http://www.avx.com/docs/Catalogs/tcj.pdf PDF]
-|1206, ESR: 3ohm
+|1206, ESR: 3 Ohm
+|-
+|22 Ohm Resistor
+|2
+|125mW
+|50V
+|[http://www.newark.com/multicomp/mchp03w8f220jt5e/resistor-high-power-22-ohm-125mw/dp/01N6866 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
+|1206
+|-
+|300 Ohm Resistor
+|1 
+|125mW
+|50V
+|[http://www.newark.com/multicomp/mchp03w8f1002t5e/resistor-high-power-10kohm-125mw/dp/01N6844 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
+|1206
+|-
+|4.02K Ohm Resistor
+|10 
+|100mW
+|50V
+|[http://www.newark.com/multicomp/mc0603saf4021t5e/resistor-thick-film-4-02kohm-100mw/dp/79M5973 Newark] [http://www.farnell.com/datasheets/1509465.pdf PDF]
+|0603
+|-
+|10K Ohm Resistor
+|10 
+|125mW
+|50V
+|[http://www.newark.com/multicomp/mchp03w8f1002t5e/resistor-high-power-10kohm-125mw/dp/01N6844 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
+|0603
+|-
+|Varistor
+|1 
+|
+|5V (Max 20V)
+|[http://www.newark.com/bourns/cg0603mlc-05e/varistor-5v-20v-0603/dp/97M3815 Newark] [http://www.bourns.com/data/global/pdfs/MLC.pdf PDF]
+|0603
 |-
 |Enclosure
+|1
 |
 |
 |[http://www.hammondmfg.com/1455NC.htm Hammond] [http://www.hammondmfg.com/pdf/1455NC1201.pdf PDF] 
 |Part Number: 1455NC1201
 |}
-
 
 == Thanks ==
 
