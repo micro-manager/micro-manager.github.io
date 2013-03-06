@@ -328,12 +328,19 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |[http://www.newark.com/multicomp/mchp03w8f1002t5e/resistor-high-power-10kohm-125mw/dp/01N6844 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
 |1206
 |-
+|1K Ohm Resistor
+|4 
+|100mW
+|50V
+|[http://www.newark.com/multicomp/mc0603saf1001t5e/resistor-thick-film-1kohm-100mw/dp/79M5902 Newark] [http://www.newark.com/pdfs/datasheets/spc/Ta-1194.pdf PDF]
+|0603, used for LEDs
+|-
 |4.02K Ohm Resistor
-|10 
+|2 
 |100mW
 |50V
 |[http://www.newark.com/multicomp/mc0603saf4021t5e/resistor-thick-film-4-02kohm-100mw/dp/79M5973 Newark] [http://www.farnell.com/datasheets/1509465.pdf PDF]
-|0603
+|0603, used for CMR for Instrumentation Op Amp
 |-
 |10K Ohm Resistor
 |10 
@@ -342,12 +349,33 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |[http://www.newark.com/multicomp/mchp03w8f1002t5e/resistor-high-power-10kohm-125mw/dp/01N6844 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
 |0603
 |-
-|Varistor
+|1M Ohm Resistor
 |1 
+|63mW
+|50V
+|[http://www.newark.com/multicomp/mc-0-063w-0603-1-1m/thick-film-resistor-0603-1-mohm/dp/38K9946 Newark] [http://www.farnell.com/datasheets/43279.pdf PDF]
+|0603, pull down resistor for Instrumentation Op Amp
+|-
+|Varistor
+|2 
 |
 |5V (Max 20V)
 |[http://www.newark.com/bourns/cg0603mlc-05e/varistor-5v-20v-0603/dp/97M3815 Newark] [http://www.bourns.com/data/global/pdfs/MLC.pdf PDF]
 |0603
+|-
+|EMI Filter Bead
+|1 
+|
+|
+|[http://www.mouser.com/ProductDetail/Murata/BLM21BB201SH1D/?qs=%2fha2pyFaduhWHkF%2fR4Xo%252bHWgpuHoGpSGFO4vXXzOW7GUTL9txjMAvg%3d%3d Mouser] [http://www.mouser.com/catalog/specsheets/Murata%20BL%20Series.pdf PDF]
+|0805
+|-
+|Reset Switch
+|1 
+|
+|
+|[http://www.mouser.com/Search/ProductDetail.aspx?qs=4aVxpR%2fL9VL4fosWdAwGsQ%3d%3d Mouser] [http://www.mouser.com/catalog/catalogusd/645/1776.pdf PDF]
+|6.2 x 6.5mm
 |-
 |Enclosure
 |1
