@@ -248,7 +248,7 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |1
 |500mA
 |13.2V
-|[http://www.newark.com/jsp/search/productdetail.jsp?sku=02J2730 Newark] [http://www.bourns.com/data/global/pdfs/mfnsmf.pdf PDF]
+|[http://www.newark.com/jsp/search/productdetail.jsp?sku=02J2730 Newark] [http://www.mouser.com/ProductDetail/Bourns/MF-MSMF050-2/?qs=sGAEpiMZZMsxR%252bBXi4wRUEOoffeXY2tkzAzT0yjAW0Q%3d Mouser] [http://www.bourns.com/data/global/pdfs/mfnsmf.pdf PDF]
 |1206
 |-
 |Schottky Diode
@@ -364,10 +364,10 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |0603
 |-
 |EMI Filter Bead
-|1 
+|2 
 |
 |
-|[http://www.mouser.com/ProductDetail/Murata/BLM21BB201SH1D/?qs=%2fha2pyFaduhWHkF%2fR4Xo%252bHWgpuHoGpSGFO4vXXzOW7GUTL9txjMAvg%3d%3d Mouser] [http://www.mouser.com/catalog/specsheets/Murata%20BL%20Series.pdf PDF]
+|[http://www.mouser.com/ProductDetail/Murata/BLM21BB201SH1D/?qs=%2fha2pyFaduhWHkF%2fR4Xo%252bHWgpuHoGpSGFO4vXXzOW7GUTL9txjMAvg%3d%3d Mouser] [http://www.mouser.com/catalog/specsheets/Murata%20BL%20Series.pdf PDF] [http://www.mouser.com/ProductDetail/Bourns/MH2029-300Y/?qs=%2fha2pyFaduglQiKRZWlgMO9uDtJ6jtlu39OF2iSXj7c%3d Mouser] [http://www.mouser.com/ds/2/54/mh-69602.pdf PDF]
 |0805
 |-
 |Reset Switch
