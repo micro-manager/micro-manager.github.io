@@ -89,7 +89,7 @@ To access configuration settings, open the "Tools" menu and select "Device/Prope
 {{Devices_Sidebar}}
 
 == Notes ==
-*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second. An exposure time of zero provides the maximum frame rate, but Micro-Manager may become sluggish. 
+*If the camera supports remote "Live View", "Live View" is used in live mode. "Live View" produces a low-resolution real-time image. The exposure time property is used to limit the number of images per second in live mode. E.g. an exposure time of 100ms will result in maximum 10 images per second. If Micro-Manager becomes unresponsive when using "Live View", choose a non-zero exposure time of 40ms or more. 
 
 *Best results are obtained setting camera image type to raw, and BitDepth to 16. 
 
