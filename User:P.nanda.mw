@@ -2,11 +2,12 @@
 My name is Pariksheet Nanda.  I have been a Support Engineer for Andor Technology since 2008.  I worked in the camera/spectroscopy division for a year and since then have been working in microscopy division in the dual role of field technician and remote support.  I have a hardware background and spend most of my time helping users.
 
 == Interest in µManager ==
-# Add GNU/Linux packages to official µManager releases.  I want the project to be recognized on the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory] to have more visibility, and attract programmers and funding from other industries.  I maintain a repository for installing µManager on Gentoo GNU/Linux: https://github.com/omsai/micromanager-overlay
+# Setup µManager to add software choice for running microscopy systems
 # Improve documentation on this wiki, specifically to:
 #* Update DeviceAdapter and general knowledge pages
 #* Reduce the work involved to contribute code
 # Get familiar with the programming API
+# Add GNU/Linux packages to official µManager releases.  I want the project to be recognized on the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory] to have more visibility, and attract programmers and funding from other industries.  I maintain a repository for installing µManager on Gentoo GNU/Linux: https://github.com/omsai/micromanager-overlay
 
 == Current projects ==
 # Add sequence exposure support for Andor cameras using [http://www.andor.com/learning-academy/trigger-modes-ixon-ultra-and-ixon3-trigger-modes Andor's iCam feature]
@@ -22,3 +23,16 @@ These are the wiki pages I maintain:
 * [[AndorLaserCombiner]]
 * [[Arduino]]
 * [[Comparison with other microscopy software]]
+
+<!--
+== Installations ==
+
+=== Yale (Prof. Paul Forscher)===
+
+=== UT Southwestern (Prof. Kate Luby-Phelps) ===
+TODO: use SSH tunnel to workaround for UT Southwestern blocking port to send the configuration to µManager for funding.
+TODO: Put the following <code>MMStartup.bsh</code> script in the µManager root folder
+TODO: Startup home piezo
+TODO: Upload system diagram
+TODO: Upload system photos
+-->
