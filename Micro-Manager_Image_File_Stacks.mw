@@ -31,7 +31,7 @@ Micro-Manager Image file stacks conform to both the [http://partners.adobe.com/p
 
 '''36-39''': Summary metadata length
 
-'''40-first IFD''': 1 byte for each character of summary metadata
+'''40-start of first IFD''': 1 byte for each character of summary metadata
 
 
 
