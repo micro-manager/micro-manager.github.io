@@ -1,6 +1,11 @@
-<h1>In brief</h1>
+Micro-Manager can save files in two formats, which referred to as "separate image files" and "Image file stack".
 
-In brief:
+<h1>Separate image files</h1>
+
+Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in JSON format. 
+
+<h1>Image file stack (in brief)</h1>
+
 A TIFF file or group of TIFF files that contain multiple acquired images per a single file. These files conform to the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] specification, allowing them to be easily imported into a variety of analysis applications including anything that utilizes the [http://loci.wisc.edu/software/bio-formats Bio-Formats library].
 
 Image File Stacks are designed to be easily imported into ImageJ without the need for a special reader plugin. A stack file can be dragged onto the ImageJ toolbar and will automatically open as a hyperstack with the same contrast settings used in Micro-Manager. Any acquisition comments typed into the Multi-Dimensional Acquisition window or the comments tab of the main Micro-Manager GUI can be viewed by pressing "i" with one of these files open in ImageJ.
@@ -9,7 +14,7 @@ By default, one file is created for each XY stage position (up to a maximum of 4
 
 Writing to these files results in faster performance than writing to '''Seperate Image Files''', in part because it minizes the number of system calls to create new files. This can be advantageous in situations where disk write speed is a limiting factor (i.e. writing to a server or collecting data at a high rate).
 
-<h1> Format </h1>
+<h1> Image file stack specification </h1>
 
 Micro-Manager Image file stacks conform to both the [http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf TIFF Specification] and [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME TIFF Specification], contain data allowing them to be easily imported into ImageJ, store acquisition comments and display settings, and store an index map of the byte offsets of images within a file to allow for optimal reading performance.
 
