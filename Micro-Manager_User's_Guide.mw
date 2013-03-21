@@ -277,6 +277,8 @@ Image file stacks are designed to be easily imported into ImageJ without the nee
 
 By default, one file is created per an XY stage position (up to a maximum of 4 GB per file). In the tools-options menu, this can be changed to save all XY positions in a single file. This is especially useful for acquisitions using a large number XY positions. Since OME-TIFFs require that an identical String of XML metadata be embedded in each file in an acquisition, acquisition that have a large number of XY positions with a small amount of data at each waste space on disk by writing the same String of metadata in each file at the acquisition’s conclusion.
 
+Writing to these files results in faster performance than writing to '''Seperate Image Files''', in part because it minizes the number of system calls to create new files. This can be advantageous in situations where disk write speed is a limiting factor (i.e. writing to a server or collecting data at a high rate).
+
 [[Micro-Manager Image File Stacks | More on Image file stacks... ]]
 
 = Credits, License and Copyright =
