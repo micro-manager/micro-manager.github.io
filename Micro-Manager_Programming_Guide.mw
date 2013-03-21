@@ -158,7 +158,7 @@ Each device loaded in MMCore reports its status by using "Busy" flag. A device d
 
 <div class="source"> // check Z stage status</div><div class="source"> boolean ZStageBusy = core.deviceBusy("Z");</div><div class="source"><br /> // check if any of the devices in the system are busy</div><div class="source"> boolean systemBusy = core.systemBusy();</div>
 
-<br /> Very often you check the device status because you shouldn't proceed with some action until the devices stopped moving or executing previous commands. To relieve the porgrammer of the boring task of writing polling loops, we provided special commands to implement waiting for devices:<br /><br />
+<br /> Very often you check the device status because you shouldn't proceed with some action until the devices stopped moving or executing previous commands. To relieve the programmer of the boring task of writing polling loops, we provided special commands to implement waiting for devices:<br /><br />
 
 <div class="source"> // wait until Z stage stops moving</div><div class="source"> core.waitForDevice("Z");</div><div class="source"> core.snapImage();</div><div class="source"><br /> // move to new XY position</div><div class="source"> core.SetPosition("X", 1230);</div><div class="source"> core.setPosition("Y", 330);</div>
 
