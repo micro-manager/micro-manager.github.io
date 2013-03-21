@@ -37,7 +37,7 @@ Bytes '''0-7''': Standard TIFF Header
 
 <h2> Image File Directories</h2>
 
-Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the ImageDescription tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them):
+Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the '''ImageDescription''' tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them):
 
 
 '''ImageWidth'''
@@ -79,12 +79,12 @@ Immediately after these tags are written:
 
 -4 bytes containg the offset of the next IFD (per the TIFF specification)
 
--In RGB files only, 6 bytes containing the values of the BitsPerSample tag
+-In RGB files only, 6 bytes containing the values of the '''BitsPerSample''' tag
 Pixel values
 
--16 bytes containing the values of the XResolution and YResolution tags
+-16 bytes containing the values of the '''XResolution''' and '''YResolution''' tags
 
--The value of the MicroManagerMetadata tag: 1 byte for each character of image metadata converted to a String
+-The value of the '''MicroManagerMetadata''' tag: 1 byte for each character of image metadata converted to a String
 
 
 <h2>End of file</h2>
@@ -104,26 +104,26 @@ A listing of all the images contained in the file and their byte offsets. This a
 
 <h3>ImageJ Metadata</h3>
 
-A subset of the metadata used by the ImageJ TIFF writer [http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java (ij.io.TiffEncoder.java)], which allows contrast settings and acquisition comments to propagate into ImageJ. The position and size of this metadata is specified by the IJMetadataCounts and IJMetadata tags in the first IFD.
+A subset of the metadata used by the ImageJ TIFF writer [http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java (ij.io.TiffEncoder.java)], which allows contrast settings and acquisition comments to propagate into ImageJ. The position and size of this metadata is specified by the '''IJMetadataCounts''' and '''IJMetadata''' tags in the first IFD.
 
 
 <h3>OME XML Metadata</h3>
 
-A string containing the OME XML metadata for this data set. This String is referenced by the first of the two ImageDescription tags in the first IFD of the file, in accordance with the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-specification OME-TIFF specification]. Since this String must be identical for all files in a data set, it is not written for any file until the entire data set is closed at the conclusion of an acquisition. 
+A string containing the OME XML metadata for this data set. This String is referenced by the first of the two '''ImageDescription''' tags in the first IFD of the file, in accordance with the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-specification OME-TIFF specification]. Since this String must be identical for all files in a data set, it is not written for any file until the entire data set is closed at the conclusion of an acquisition. 
 
 
-<h3>ImageJ ImageDescription String</h3>
+<h3>ImageJ Image Description String</h3>
 
-The ImageJ ImageDescription String that allows these files to opened correctly as hyperstacks in ImageJ. This String is referenced by the second of the two ImageDescription tags in the first IFD of the file.
+The ImageJ image description String that allows these files to opened correctly as hyperstacks in ImageJ. This String is referenced by the second of the two '''ImageDescription''' tags in the first IFD of the file.
 
 
 <h3>Image display settings</h3>
 
-Image display settings (channel contrast and colors), which are automatically rewritten whenever these are changed in an open data set. The first 4 bytes of this block contain the Display Settings Header (347834724), and the next 4 contain the number of subsequent bytes reserved for display settings. A String containing display settings (which are normally stored in a JSONObject) is written one byte per character.
+Image display settings (channel contrast and colors), which are automatically rewritten whenever these are changed in an open data set. The first 4 bytes of this block contain the '''Display Settings Header''' (347834724), and the next 4 contain the number of subsequent bytes reserved for display settings. A String containing display settings (which are normally stored in a [http://www.json.org/javadoc/org/json/JSONObject.html JSONObject]) is written one byte per character.
 
 <h3>Acquisition and Image comments</h3>
 
-A String containing acquisition and Image comments. The first 4 bytes of this block contain the Comments Header (84720485), and the next 4 contain the length of String version of the JSONObject used to store acquisition comments. This String is rewritten whenever acquisition or image comments are changed.
+A String containing acquisition and Image comments. The first 4 bytes of this block contain the '''Comments Header''' (84720485), and the next 4 contain the length of String version of the [http://www.json.org/javadoc/org/json/JSONObject.html JSONObject] used to store acquisition comments. This String is rewritten whenever acquisition or image comments are changed.
 
 
 
