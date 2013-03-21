@@ -20,7 +20,9 @@ Writing to these files results in faster performance than writing to '''Seperate
 
 Existing Micro-Manager libraries can be used to easily read these files. in order to do so a java project must use '''MMCoreJ.jar''' and '''MMJ_.jar''' as libraries. These JARs can be found in the Micro-Manager-1.4/plugins/Micro-Manager/ directory. Both file formats sit behind a common interface for reading and writing, [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/TaggedImageStorage.java org/micromanager/api/TaggedImage.java]. Image file stacks are implement by [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java]. To create an instance of this class, capable of reading an existing Image file stack data set which is stored at "C:\Data\Acquisition1", use:
 
-TaggedImageStorageMultipageTiff stackReader = new TaggedImageStorageMultipageTiff("C:\Data\Acquisition1", false, null, false, false);
+<br /><br /><span class="source"> TaggedImageStorageMultipageTiff stackReader = new TaggedImageStorageMultipageTiff("C:\Data\Acquisition1", false, null, false, false);)</span><br /><br />
+
+
 
 <h2> Writing Image </h2>
 
