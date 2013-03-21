@@ -263,7 +263,11 @@ The '''Comments''' tab allows you to comment on the whole acquisition or an indi
 
 ==Files on Disk==
 
-Micro-Manager will store a 5D-Image dataset in a single folder. Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
+Micro-Manager can save files in two formats, which referred to as "separate image files" and "Image file stack". 
+
+Separate image files
+
+Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
 
 = Credits, License and Copyright =
 
