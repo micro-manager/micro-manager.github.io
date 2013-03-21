@@ -39,24 +39,24 @@ A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a 
 Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below:
 
 <span class="source"> 
-pixelType = mmc.getPixelType();
-summary = new org.json.JSONObject();
-summary.put("SlicesFirst",true);
-summary.put("TimeFirst",true);
-summary.put("Slices", 1);
-summary.put("Positions", 1);
-summary.put("Channels",1);
-summary.put("Frames",IMAGES_TO_SAVE);
-summary.put("Positions",1);
-summary.put("PixelType", pixelType);
-summary.put("Width",mmc.getImageWidth());
-summary.put("Height",mmc.getImageHeight());
-summary.put("Prefix",filename);
-summary.put("ChColors", new org.json.JSONArray("[1]"));
-summary.put("ChNames", new org.json.JSONArray("[h]"));
-summary.put("ChMins", new org.json.JSONArray("[0]"));
-summary.put("ChMaxes", new org.json.JSONArray("[1]"));
-</span><br />
+summary = new JSONObject();  <br />
+summary.put("Slices", 18;  <br />
+summary.put("Positions", 1);  <br />
+summary.put("Channels", 2);  <br />
+summary.put("Frames", 10);  <br />
+summary.put("Positions",3);  <br />
+summary.put("SlicesFirst",true);  <br />
+summary.put("TimeFirst",false);  <br />
+summary.put("PixelType", "GRAY16");  <br />
+summary.put("Width",512);  <br />
+summary.put("Height",512);  <br />
+summary.put("Prefix","Put the desired base filename here");  <br />
+//these are used to create display settings  <br />
+summary.put("ChColors", new org.json.JSONArray("[1,1]"));  <br />
+summary.put("ChNames", new org.json.JSONArray("["DAPI","FITC"]"));  <br />
+summary.put("ChMins", new org.json.JSONArray("[0,0]"));  <br />
+summary.put("ChMaxes", new org.json.JSONArray("[65535,65535]"));  <br />
+</span> <br />
 
 
 
