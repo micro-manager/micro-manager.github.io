@@ -31,6 +31,8 @@ public TaggedImage getImage(int channelIndex, int sliceIndex, int frameIndex, in
 
 '''close()''' should be called to release the connection the files when they are no longer needed. 
 
+A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a reference to the image metadata, stored in a [http://www.json.org/ JSONObject]. TaggedImage.pix is a pointer to the image pixels, stored in a '''byte[]''', '''short[]''', or '''int[]''' depending on the image type. 
+
 
 <h2> Writing Image </h2>
 
