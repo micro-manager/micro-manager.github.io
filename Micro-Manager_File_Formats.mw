@@ -27,7 +27,8 @@ Important methods for utilizing this class are:
 <br /><span class="source"> 
 public TaggedImage getImage(int channelIndex, int sliceIndex, int frameIndex, int positionIndex) <br /> public JSONObject getSummaryMetadata() <br /> public Set<String> imageKeys() <br /> public void close() </span><br /><br />
 
-'''imageKeys'' returns a [http://docs.oracle.com/javase/6/docs/api/java/util/Set.html java.util.Set<String>] containing the image labels for each image present in the data set. An image label is simply the image's channel, slice, frame, and position indices separated by underscores. For example, the label for the image of channel 1, slice 2, frame 3, position 4 would be "1_2_3_4".
+'''imageKeys''' returns a [http://docs.oracle.com/javase/6/docs/api/java/util/Set.html java.util.Set<String>] containing the image labels for each image present in the data set. An image label is simply the image's channel, slice, frame, and position indices separated by underscores. For example, the label for the image of channel 1, slice 2, frame 3, position 4 would be "1_2_3_4".
+
 '''close()''' should be called to release the connection the files when they are no longer needed. 
 
 
