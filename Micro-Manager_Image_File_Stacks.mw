@@ -87,5 +87,44 @@ Pixel values
 -The value of the MicroManagerMetadata tag: 1 byte for each character of image metadata converted to a String
 
 
+<h2>End of file</h2>
+
+After the last IFD, the following constructs are written:
+
+<h3>Index map</h3>
+
+A listing of all the images contained in the file and their byte offsets. This allows a specific image to be quickly accessed without having to parse the entire file and read in image metadata. It consists of the following:
+
+-A 4 byte header (3453623)
+
+-4 bytes containing the number of entries in the index map
+
+-20 bytes for each entry, with 4 bytes each allocated to the image’s channel index, slice index, frame index, position index, and byte offset of the image’s IFD within the file
+
+
+<h3>ImageJ Metadata</h3>
+
+A subset of the metadata used by the ImageJ TIFF writer [http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java (ij.io.TiffEncoder.java)], which allows contrast settings and acquisition comments to propagate into ImageJ. The position and size of this metadata is specified by the IJMetadataCounts and IJMetadata tags in the first IFD.
+
+
+<h3>OME XML Metadata</h3>
+
+A string containing the OME XML metadata for this data set. This String is referenced by the first of the two ImageDescription tags in the first IFD of the file, in accordance with the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-specification OME-TIFF specification]. Since this String must be identical for all files in a data set, it is not written for any file until the entire data set is closed at the conclusion of an acquisition. 
+
+
+<h3>ImageJ ImageDescription String</h3>
+
+The ImageJ ImageDescription String that allows these files to opened correctly as hyperstacks in ImageJ. This String is referenced by the second of the two ImageDescription tags in the first IFD of the file.
+
+
+<h3>Image display settings</h3>
+
+Image display settings (channel contrast and colors), which are automatically rewritten whenever these are changed in an open data set. The first 4 bytes of this block contain the Display Settings Header (347834724), and the next 4 contain the number of subsequent bytes reserved for display settings. A String containing display settings (which are normally stored in a JSONObject) is written one byte per character.
+
+<h3>Acquisition and Image comments</h3>
+
+A String containing acquisition and Image comments. The first 4 bytes of this block contain the Comments Header (84720485), and the next 4 contain the length of String version of the JSONObject used to store acquisition comments. This String is rewritten whenever acquisition or image comments are changed.
+
+
 
 --[[User:Henry Pinkard|Henry Pinkard]] 7:35, 20th March 2013 (PDT)
