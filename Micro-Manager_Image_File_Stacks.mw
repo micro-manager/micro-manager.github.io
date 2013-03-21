@@ -1,7 +1,7 @@
 <h1>In brief</h1>
 
 In brief:
-A TIFF file or group of TIFF files that contain multiple acquired images per a single file. These files conform to the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] specification, allowing them to be easily imported into a variety of analysis applications or anything that utilizes the [http://loci.wisc.edu/software/bio-formats Bio-Formats importer].
+A TIFF file or group of TIFF files that contain multiple acquired images per a single file. These files conform to the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] specification, allowing them to be easily imported into a variety of analysis applications including anything that utilizes the [http://loci.wisc.edu/software/bio-formats Bio-Formats importer].
 
 Image file stacks are designed to be easily imported into ImageJ without the need for any special reader plugins. A stack file can be dragged onto the ImageJ toolbar and will automatically open as a hyperstack with the same contrast settings used in Micro-Manager. Any acquisition comments typed into the Multi-Dimensional Acquisition window or the comments tab of the main MM GUI can be viewed by pressing "i" with one of these files open in ImageJ.
 
