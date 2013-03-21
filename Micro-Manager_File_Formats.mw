@@ -66,7 +66,7 @@ summary.put("ChMaxes", new org.json.JSONArray("[65535,65535]"));  <br />
 Next, create the MultipageTiffWriter. The fourth argument is a boolean specifying whether separate '''metadata.txt''' files should also be written (does not affect functionality, merely an easy extra way to view metadata). The fifth argument is a boolean flag for whether XY positions should be placed in separate files or combined into a single one. In this case we don't create '''metadata.txt''', and we create seperate files for XY positions:
 
 <span class="source"> 
-TaggedImageStorageMultipageTiff storage = new TaggedImageStorageMultipageTiff(saveDir,true,summary,false,true);  <br />
+TaggedImageStorageMultipageTiff storage = new TaggedImageStorageMultipageTiff("C:/Data/Directory where you want to save",true,summary,false,true);  <br />
 </span> <br />
 
 Important methods for writing images are:
