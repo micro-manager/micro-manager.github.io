@@ -269,6 +269,13 @@ Micro-Manager can save files in two formats, which referred to as "separate imag
 
 Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
 
+'''Image file stack'''
+Opened by dragging to imageJ
+•	Contrast settings preserved
+•	Acquisition comments can be viewed by pressing “i” when an ImageJ  window is open
+Conform to OME-TIFF specification, allowing them to be opened by number of analysis softwares
+Normally save one file per an XY stage position (up to a maximum of 4 GB per file). In the tools-options menu, these files can be set to save all data in a single file. This is especially useful for acquisitions using a large number XY positions. Since OME-TIFFs require that an identical String of XML metadata be embedded in each file in an acquisition, acquisition that have a large number of XY positions with a small amount of data at each waste space on disk by writing the same String of metadata in each file at the acquisition’s conclusion.
+
 = Credits, License and Copyright =
 
 Micro-Manager is an Open Source software package for controlling automated microscopes on multiple platforms (Windows, Mac and Linux). The software is being developed in the [http://valelab.ucsf.edu Vale Lab] at the Unversity of California San Francisco and funding was provided by the Sandler Foundation and a grant from the NIH. The original software design was by Nenad Amodaj, and the software is currently developed by Arthur Edelstein and Nico Stuurman.  Many individuals contributed source code or other types of help (including this documentation).  The Micro-Manager source code is distributed under the BSD license for the user interface and the LGPL license for the MMCore (control module). All supplied device drivers ('adpaters') for cameras and other devices are covered by the BSD license. Copyright for some of the adapters is owned by other parties.<br /><br />
