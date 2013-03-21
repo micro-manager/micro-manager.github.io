@@ -12,14 +12,23 @@ By default, one file is created per an XY stage position (up to a maximum of 4 G
 <h2> Header </h2>
 
 Bytes 0-7: Standard TIFF Header
+
 8-11: Index map offset header (54773648)
+
 12-15: Index map offset
+
 16-19: Display settings offset header (483765892)
+
 20-23: Display settings offset
+
 24-27: Comments offset header (99384722)
+
 28-31: Comments offset
+
 32-35: Summary metadata header (2355492)
+
 36-39: Summary metadata length
+
 40-first IFD: 1 byte for each character of summary metadata
 
 
