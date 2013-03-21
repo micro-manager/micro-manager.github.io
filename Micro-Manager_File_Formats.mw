@@ -18,7 +18,7 @@ Writing to these files results in faster performance than writing to '''Seperate
 
 <h2> Reading Images </h2>
 
-Existing Micro-Manager libraries can be used to easily read these files. in order to do so a java project must use '''MMCoreJ.jar''' and '''MMJ_.jar''' as libraries. These JARs can be found in the Micro-Manager-1.4/plugins/Micro-Manager/ directory. Both file formats sit behind a common interface for reading and writing, [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/TaggedImageStorage.java org/micromanager/api/TaggedImage.java]. Image file stacks are implement by [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java]. To create an instance of this class, capable of reading an existing Image file stack data set which is stored at "C:\Data\Acquisition1", use:
+Existing Micro-Manager libraries can be used to easily read these files. in order to do so a java project must use '''MMCoreJ.jar''' and '''MMJ_.jar''' as libraries. These JARs can be found in the '''Micro-Manager-1.4/plugins/Micro-Manager/''' directory. Both file formats sit behind a common interface for reading and writing, [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/TaggedImageStorage.java org/micromanager/api/TaggedImage.java]. Image file stacks are implement by [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java]. To create an instance of this class, capable of reading an existing Image file stack data set which is stored at "C:\Data\Acquisition1", use:
 
 <span class="source"> TaggedImageStorageMultipageTiff stackReader = new TaggedImageStorageMultipageTiff("C:\Data\Acquisition1", false, null, false, false);</span><br />
 
@@ -35,6 +35,8 @@ A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a 
 
 
 <h2> Writing Images </h2>
+
+In addition to the '''MMCoreJ.jar''' and '''MMJ_.jar''' libraries that are required for reading Image File Stacks, writing to these files requires 4 more libraries, which can also be found in '''Micro-Manager-1.4/plugins/Micro-Manager/''': '''loci-common.jar''', '''ome-xml.jar''', '''scifio.jar''', and '''slf4j-api-1.7.1.jar'''.
 
 Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below.  In this example, a data set of 512x512 16 bit monochrome images is created with 10 time points, 8 z slices, 2 channels, and 3 positions.
 
