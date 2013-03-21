@@ -34,7 +34,32 @@ public TaggedImage getImage(int channelIndex, int sliceIndex, int frameIndex, in
 A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a reference to the image metadata, stored in a [http://www.json.org/ JSONObject]. TaggedImage.pix is a pointer to the image pixels, stored in a '''byte[]''', '''short[]''', or '''int[]''' depending on the image type. 
 
 
-<h2> Writing Image </h2>
+<h2> Writing Images </h2>
+
+Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below:
+
+<span class="source"> 
+pixelType = mmc.getPixelType();
+summary = new org.json.JSONObject();
+summary.put("SlicesFirst",true);
+summary.put("TimeFirst",true);
+summary.put("Slices", 1);
+summary.put("Positions", 1);
+summary.put("Channels",1);
+summary.put("Frames",IMAGES_TO_SAVE);
+summary.put("Positions",1);
+summary.put("PixelType", pixelType);
+summary.put("Width",mmc.getImageWidth());
+summary.put("Height",mmc.getImageHeight());
+summary.put("Prefix",filename);
+summary.put("ChColors", new org.json.JSONArray("[1]"));
+summary.put("ChNames", new org.json.JSONArray("[h]"));
+summary.put("ChMins", new org.json.JSONArray("[0]"));
+summary.put("ChMaxes", new org.json.JSONArray("[1]"));
+</span><br />
+
+
+
 
 
 <h1> Image file stack specification </h1>
