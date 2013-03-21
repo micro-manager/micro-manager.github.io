@@ -1,4 +1,4 @@
-<h2>In brief</h2>
+<h1>In brief</h1>
 
 In brief:
 A TIFF file or group of TIFF files that contain multiple acquired images per a single file. These files conform to the [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] specification, allowing them to be easily imported into a variety of analysis applications or anything that utilizes the [http://loci.wisc.edu/software/bio-formats Bio-Formats importer].
@@ -8,6 +8,8 @@ Image file stacks are designed to be easily imported into ImageJ without the nee
 By default, one file is created per an XY stage position (up to a maximum of 4 GB per file). In the tools-options menu, this can be changed to save all XY positions in a single file. This is especially useful for acquisitions using a large number XY positions. Since OME-TIFFs require that an identical String of XML metadata be embedded in each file in an acquisition, acquisition that have a large number of XY positions with a small amount of data at each waste space on disk by writing the same String of metadata in each file at the acquisition’s conclusion.
 
 <h1> Format </h1>
+
+<h2> Header </h2>
 
 
 
