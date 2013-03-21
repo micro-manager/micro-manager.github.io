@@ -71,13 +71,13 @@ Important methods for writing images are:
 
 <span class="source"> 
 public void putImage(TaggedImage taggedImage)  <br />
-//finished() should be called after no more image are going to be added  <br />
-//the storage becomes read only after this call  <br />
 public void finished()  <br />
-//close should be called after images are done being both read and written  <br />
 public void close() <br />
 </span> <br />
 
+
+'''finished()''' should be called after no more image are going to be added. The storage becomes read only after this call  
+'''close()''' should be called after images are done being both read and written.
 
 
 
