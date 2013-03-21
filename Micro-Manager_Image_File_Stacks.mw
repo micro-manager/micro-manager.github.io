@@ -38,31 +38,53 @@ Bytes 0-7: Standard TIFF Header
 <h2> Image File Directories</h2>
 
 Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the ImageDescription tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them):
-ImageWidth	
+
+
+ImageWidth
+	
 ImageHeight
+
 BitsPerSample
+
 Compression
+
 PhotometricInterpretation
-ImageDescription (first IFD only)
-	Contains OME XML metadata
-ImageDescription (first IFD only) (duplicate) –contains ImageJ file opening information
+
+ImageDescription (first IFD only)--Contains OME XML metadata
+
+a 2nd ImageDescription (first IFD only)-–contains ImageJ file opening information
+
 StripOffsets
+
 SamplesPerPixel
+
 RowsPerStrip
+
 StripByteCounts
+
 XResolution
+
 YResolution
+
 ResolutionUnit
+
 IJMetadataByteCounts (first IFD only) (50838)
+
 IJMetadata (first IFD only) (50839)
+
 MicroManagerMetadata (51123)
 
+
 Immediately after these tags are written:
-4 bytes containg the offset of the next IFD (per the TIFF specification)
-In RGB files only, 6 bytes containing the values of the BitsPerSample tag
+
+-4 bytes containg the offset of the next IFD (per the TIFF specification)
+
+-In RGB files only, 6 bytes containing the values of the BitsPerSample tag
 Pixel values
-16 bytes containing the values of the XResolution and YResolution tags
-The value of the MicroManagerMetadata tag—1 byte for each character of image metadata converted to a String
+
+-16 bytes containing the values of the XResolution and YResolution tags
+
+-The value of the MicroManagerMetadata tag: 1 byte for each character of image metadata converted to a String
 
 
 
