@@ -279,7 +279,7 @@ By default, one file is created per an XY stage position (up to a maximum of 4 G
 
 Writing to these files results in faster performance than writing to '''Seperate Image Files''', in part because it minizes the number of system calls to create new files. This can be advantageous in situations where disk write speed is a limiting factor (i.e. writing to a server or collecting data at a high rate).
 
-[[Micro-Manager File Formats and Tags | More on File Formats... ]]
+[[Micro-Manager File Formats | More on File Formats... ]]
 
 = Credits, License and Copyright =
 
