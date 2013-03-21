@@ -13,25 +13,25 @@ Micro-Manager Image file stacks conform to both the [http://partners.adobe.com/p
 
 <h2> Header </h2>
 
-Bytes 0-7: Standard TIFF Header
+Bytes '''0-7''': Standard TIFF Header
 
-8-11: Index map offset header (54773648)
+'''8-11''': Index map offset header (54773648)
 
-12-15: Index map offset
+'''12-15''': Index map offset
 
-16-19: Display settings offset header (483765892)
+'''16-19''': Display settings offset header (483765892)
 
-20-23: Display settings offset
+'''20-23''': Display settings offset
 
-24-27: Comments offset header (99384722)
+'''24-27''': Comments offset header (99384722)
 
-28-31: Comments offset
+'''28-31''': Comments offset
 
-32-35: Summary metadata header (2355492)
+'''32-35''': Summary metadata header (2355492)
 
-36-39: Summary metadata length
+'''36-39''': Summary metadata length
 
-40-first IFD: 1 byte for each character of summary metadata
+'''40-first IFD''': 1 byte for each character of summary metadata
 
 
 
@@ -40,39 +40,39 @@ Bytes 0-7: Standard TIFF Header
 Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the ImageDescription tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them):
 
 
-ImageWidth
+'''ImageWidth'''
 	
-ImageHeight
+'''ImageHeight'''
 
-BitsPerSample
+'''BitsPerSample'''
 
-Compression
+'''Compression'''
 
-PhotometricInterpretation
+'''PhotometricInterpretation'''
 
-ImageDescription (first IFD only)--contains OME XML metadata
+'''ImageDescription''' (first IFD only)--contains OME XML metadata
 
-a 2nd ImageDescription (first IFD only)-–contains ImageJ file opening information
+a 2nd '''ImageDescription''' (first IFD only)-–contains ImageJ file opening information
 
-'StripOffsets'
+'''StripOffsets'''
 
-SamplesPerPixel
+'''SamplesPerPixel'''
 
-RowsPerStrip
+'''RowsPerStrip'''
 
-StripByteCounts
+'''StripByteCounts'''
 
-XResolution
+'''XResolution'''
 
-YResolution
+'''YResolution'''
 
-ResolutionUnit
+'''ResolutionUnit'''
 
-IJMetadataByteCounts (first IFD only) (50838)
+'''IJMetadataByteCounts''' (first IFD only) (50838)
 
-IJMetadata (first IFD only) (50839)
+'''IJMetadata''' (first IFD only) (50839)
 
-MicroManagerMetadata (51123)
+'''MicroManagerMetadata''' (51123)
 
 
 Immediately after these tags are written:
