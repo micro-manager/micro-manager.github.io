@@ -36,7 +36,7 @@ A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a 
 
 <h2> Writing Images </h2>
 
-Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below:
+Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below.  In this example, a data set of 512x512 16 bit monochrome images is created with 10 time points, 8 z slices, 2 channels, and 3 position
 
 <span class="source"> 
 summary = new JSONObject();  <br />
