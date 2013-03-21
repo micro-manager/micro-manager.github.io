@@ -13,7 +13,7 @@ Micro-Manager Image file stacks conform to both the [http://partners.adobe.com/p
 
 <h2> Header </h2>
 
-Bytes '''0-7''': Standard TIFF Header
+'''Bytes 0-7''': Standard TIFF Header
 
 '''8-11''': Index map offset header (54773648)
 
