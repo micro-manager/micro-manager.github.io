@@ -36,7 +36,7 @@ A '''TaggedImage''' simply consists of two public fields. TaggedImage.tags is a 
 
 <h2> Writing Images </h2>
 
-Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below.  In this example, a data set of 512x512 16 bit monochrome images is created with 10 time points, 8 z slices, 2 channels, and 3 position
+Writing images into the Image File Stack format uses the same class as reading one of these datasets, but requires a different parameters be passed to the constructor. When writing an Image File Stack, you will need to pass a [http://www.json.org/ JSONObject] containing a minimal amount of summary metadata to the constructor. Code for creating this summary metadata with the minimal amount of tags needed for saving is listed below.  In this example, a data set of 512x512 16 bit monochrome images is created with 10 time points, 8 z slices, 2 channels, and 3 positions.
 
 <span class="source"> 
 summary = new JSONObject();  <br />
@@ -58,6 +58,25 @@ summary.put("ChMins", new org.json.JSONArray("[0,0]"));  <br />
 summary.put("ChMaxes", new org.json.JSONArray("[65535,65535]"));  <br />
 </span> <br />
 
+
+'''SlicesFirst''' and '''TimeFirst''' tell the image storage what order to expect images to arrive in. If the full complement of expected images does not arrive by the time the image closes, but all images up to that point have come in the expected order, the storage will automatically complete the current frame with blank images (this behavior is useful for correctly opening aborted acquisitions in ImageJ). '''SlicesFirst''' being true means a whole set of z slice images arrive before moving on to another channel. '''TimeFirst''' being false means all positions are collected at a given time point before moving on to the next time point, rather than running successive time lapses at each position.
+
+Next, create the MultipageTiffWriter. The fourth argument is a boolean specifying whether separate '''metadata.txt''' files should also be written (does not affect functionality, merely an easy extra way to view metadata). The fifth argument is a boolean flag for whether XY positions should be placed in separate files or combined into a single one. In this case we don't create '''metadata.txt''', and we create seperate files for XY positions:
+
+<span class="source"> 
+TaggedImageStorageMultipageTiff storage = new TaggedImageStorageMultipageTiff(saveDir,true,summary,false,true);  <br />
+</span> <br />
+
+Important methods for writing images are:
+
+<span class="source"> 
+public void putImage(TaggedImage taggedImage)  <br />
+//finished() should be called after no more image are going to be added  <br />
+//the storage becomes read only after this call  <br />
+public void finished()  <br />
+//close should be called after images are done being both read and written  <br />
+public void close() <br />
+</span> <br />
 
 
 
