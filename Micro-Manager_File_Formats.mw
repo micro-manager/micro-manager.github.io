@@ -14,7 +14,7 @@ By default, one file is created for each XY stage position (up to a maximum of 4
 
 Writing to these files results in faster performance than writing to '''Seperate Image Files''', in part because it minizes the number of system calls to create new files. This can be advantageous in situations where disk write speed is a limiting factor (i.e. writing to a server or collecting data at a high rate).
 
-<h1> Programming using these file formats </h1>
+<h1> Programming using Image File Stacks </h1>
 
 <h2> Reading Images </h2>
 
