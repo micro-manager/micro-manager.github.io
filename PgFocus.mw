@@ -147,6 +147,12 @@ As you can see in the bottom graph, focus position has changed even after the do
 
 These are severe perturbations but pgFocus is very good at automatically compensating for slow focal drift over time.
 
+=== Sampling 3D Position ===
+
+pgFocus is designed to sample incoming focus control signal and automatically adjust the focus control set point.
+
+[[File:Pgfocus_AD7894-10.png|frame|Figure: pgFocus sampling incoming focus control signal to automatically adjust the focus control set point]]
+
 == Parts ==
 
 Preliminary parts list. Parts may change at any time. For a complete list, export the parts list from Eagle.
