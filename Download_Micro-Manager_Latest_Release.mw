@@ -48,6 +48,7 @@ __NOTOC__
 ** Hamamatsu support by Hamamatsu (Patrick Gregorio), works with Flash 4.0
 ** Fixes to ZeissCAN29
 ** Thorlabs BD102 stage (Nenad Amodaj)
+** Thorlabs Scientific Imaging (TSI) Camera
 ** Andor3 (supports new Neos camera)
 ** CARV II spinning disk confocal
 ** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
