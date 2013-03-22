@@ -83,6 +83,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Prior]] - Prior stages, shutters, and filter wheels
 * [[Scientifica]] - Scientifica stages
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
+* [[SigmaKoki]] - Sigma Koki stages and shutters
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
 * [[SutterStage]] - Sutter XY Stage
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
