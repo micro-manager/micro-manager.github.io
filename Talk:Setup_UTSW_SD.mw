@@ -1,20 +1,19 @@
-== Overview ==
-
-=== System diagram ===
-FIXME
-
-=== Photos ===
-[[File:UTSW_SD_FigureJ.jpg|frame|(A) Optical train of spinning disk system (B) Full system (C) Microscope]]
-
-=== Summary ===
+== Summary ==
 {| class="wikitable"
-! colspan="3" | Summary
-|-
 ! style="width: 20%;"| Version
 | colspan="2" | 1.4.13 (64-bit)
 |-
 ! style="width: 20%;"| Operating System
 | colspan="2" | Windows 7 Professional 64-bit
+|-
+! Facility
+| colspan="2" | UT Southwestern Live Cell Imaging Facility (Prof. Kate Luby-Phelps, Abhijit Bugde)
+|-
+! End User
+| colspan="2" | Salman Banani
+|-
+! Vendor
+| colspan="2" | Micro-Manager setup by Pariksheet Nanda (Andor)
 |-
 ! Dates Setup
 | colspan="2" | 2013-03-19 to 2013-03-21
@@ -27,15 +26,17 @@ FIXME
 ! style="width: 40%;"| Red Flags
 |-
 |valign="top"|
-* All hardware works well except for one of the cameras (problem probably upstream).
 * Searching nabble (mailing list) answered most questions.
 * Beanshell scripting is powerful- less time hunting; more time coding.
 |valign="top"|
-* Neo camera makes software unresponsive after a few frames in Live mode.
 * Not enough time left over to optimize system- jitter when streaming in MDA.
+|-
+! colspan="3" |
+[[File:UTSW_SD_FigureJ.jpg|frame|(A) Optical train of spinning disk system (B) Full system (C) Microscope]]
 |}
 
 == Experience gained ==
+* Should not use > 4GB circular buffer for [[AndorSDK3]] camera with MM version 1.4.13 (issue fixed in nightly build).
 * During setup, it's useful to occasionally backup the configuration file with <code>Tools > Save Configuration Settings as</code>.
 * It's not a good idea to enable <code>Tools > Options > Do not ask for config file</code>.  While changing around COM ports and presets, the startup errors would not launch the software.  Without an earlier backup, the configuration file needed many lines commented out.  If there was a backup one could use the "none" configuration to start and then diagnose the problem with the offending hardware setup (e.g. by loading it one at a time).
 * Learned that one has to put the <code>MMStartup.bsh</code> startup script in the µManager root folder.  First instinct was to put it in the "scripts" folder, which didn't work.
@@ -50,10 +51,6 @@ FIXME
 * Example MMstartup.bsh script with useful commands, (commented out, of course).
 * Automated bug reporting and product registration does not work since the IT department at UT Southwestern blocks whatever port is requires.
 * Some Plugins not documented in wiki.
-
-== About ==
-System setup at UT Southwestern Live Cell Imaging Facility (Prof. Kate Luby-Phelps, Abhijit Bugde, Salman Banani).
-Micro-Manager setup by Pariksheet Nanda (vendor).
 
 == Appendix ==
 
