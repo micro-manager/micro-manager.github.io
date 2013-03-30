@@ -179,6 +179,8 @@ A listing of all the images contained in the file and their byte offsets. This a
 -20 bytes for each entry, with 4 bytes each allocated to the image’s channel index, slice index, frame index, position index, and byte offset of the image’s IFD within the file
 
 
+If for some reason a file fails to write out its index map (i.e. the application crashes during file writing), opening this file will present a dialog asking if you would like to "fix" the data set. This fixing process consists of reading through all the IFDs present in the file to reconstruct the index map and then writing it to the end of the file.
+
 <h3>ImageJ Metadata</h3>
 
 A subset of the metadata used by the ImageJ TIFF writer [http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java (ij.io.TiffEncoder.java)], which allows contrast settings and acquisition comments to propagate into ImageJ. The position and size of this metadata is specified by the '''IJMetadataCounts''' and '''IJMetadata''' tags in the first IFD.
