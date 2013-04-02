@@ -4,7 +4,6 @@
 * [[Coordinates and Directionality]]
 * [[Files and Metadata]]
 * [[Comparison with other microscopy software]]
-* [[Encoding the Nikon TI Eclipse tube lens]]
 * [[Hardware-based synchronization]]
 * [[PgFocus| pgFocus: Focus Stabilization]]
 
@@ -12,8 +11,9 @@ Yokogawa Spinning Disk:
 * [[CSU-X fiber rotation]]
 * [[CSU Alignment]]
 
-
-
+Hardware Setup Examples:
+* [[Encoding the Nikon TI Eclipse tube lens]]
+* [[Setup_UTSW_SD| Spinning-disk Laser Confocal (software installation report)]]
 
 
 
