@@ -111,7 +111,7 @@ The second line of the file contains the Keys of the Spot message for the Spot d
 All following lines are Spot data in asci format separated by tabs (“\t”) and each Spot is on its own line (that ends with “\n”).
 
 
-=== TSF.proto file: ===
+== TSF.proto file: ==
 
 
 <code>
