@@ -17,9 +17,11 @@ pgFocus is connected to a computer via a USB port. USB is used to power and to c
 
 ==== Power ====
 
-pgFocus uses the USB +5V power to generate +10V and -5V power. The actual output voltage for +10V power line is lower due to the forward voltage drop of the diodes required for the boost converter IC. Just be aware that voltage signals near +10V sent through pgFocus may be reduced.
+pgFocus uses the USB +5V power to generate +12V and -12V power using a standard DC to DC converter. 
 
-The -5V is higher (more positive) because of the same reason. Our piezo Z controller accepts -2V to +10V, so this isn't a significant issue on the -5V power line.
+<strike>pgFocus uses the USB +5V power to generate +10V and -5V power. The actual output voltage for +10V power line is lower due to the forward voltage drop of the diodes required for the boost converter IC. Just be aware that voltage signals near +10V sent through pgFocus may be reduced.
+
+The -5V is higher (more positive) because of the same reason. Our piezo Z controller accepts -2V to +10V, so this isn't a significant issue on the -5V power line.</strike>
 
 ==== Digital to Analog Converter ====
 
