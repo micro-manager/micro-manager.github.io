@@ -183,7 +183,7 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |IR Filter
 |1
 |[http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions] 
-|M12/CS Infrared Filter
+|M12/CS Infrared Filter for M12 Shroud
 |-
 |RGB LED
 |1
@@ -194,6 +194,11 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |1
 |[https://www.sparkfun.com/products/9394 Sparkfun] 
 |
+|-
+|JST 3 Wire 
+|1
+|[https://www.sparkfun.com/products/9915 Sparkfun] 
+|Connects to LCD
 |-
 |DE-9 
 |1
@@ -209,6 +214,16 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |1
 |[http://www.optics-online.com/cmt.asp Sunex] [http://www.optics-online.com/OOL/CMT/CMT103.pdf PDF] 
 |
+|-
+|Male Connector 5-pin
+|1
+|[https://www.sparkfun.com/products/10209 Sparkfun] 
+|Connects to TSL1401-Adapter
+|-
+|Female Connector 5-pin
+|1
+|[https://www.sparkfun.com/products/10360 Sparkfun] 
+|Jumper Wire Assembly
 |}
 
 == Thanks ==
