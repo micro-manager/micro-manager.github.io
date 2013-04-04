@@ -1,12 +1,10 @@
-= Description of  tagged spot file format (.tsf) =
-
+== Description of  tagged spot file format (.tsf) ==
 
 Nico Stuurman, April 3, 2013.
 
+The goal of the tagged post file format is to provide an efficient data format for superresolution microscopy data that generate images by locating the position of single fluorescent emitters.  Two formats exists, a binary format (using Google protocol buffers) and a text format.  An application is free to  upport only one or the other, but is encouraged to support both.
 
-The goal of the tagged post file format is to provide an efficient data format for superresolution microscopy data that generate images by locating the position of single fluorescent emitters.  Two formats exists, a binary format (using Google protocol buffers) and a text format.  An application is free to support only one or the other, but is encouraged to support both.
-
-== Binary format. ==
+=== Binary format. ===
   
 
 The binary format relies on Google Protocol buffers ([http://code.google.com/apis/protocolbuffers/]) to encode data. Two message types are defined, “SpotList”, which contains metadata concerning the dataset, and “Spot”, which contains the per-spot data.  For convenience, a copy of the proto file describing these messages is included at the bottom of the document, however, the authorative version resides at: [https://valelab.ucsf.edu/svn/valelabtools/TSFProto].
@@ -15,7 +13,7 @@ Note that you can extend the TSF.proto file yourself and add fields that you nee
 
 All message sizes and file offsets are of type signed int or signed long (to ensure compatibility with Java code)
 
-== File layout on disk: ==
+=== File layout on disk: ===
 
 '''int magic (4 bytes)''' - must be 0 (this is for compatibility with older versions of the tsf format)
 
@@ -35,7 +33,7 @@ The Spot messages are followed by the SpotList message:
 
 The reason for putting the SpotList message at the end is that this makes it possible to write all the Spot data first and then include in the SpotList the number of Spots that have been written.  Code that reads the file can first read the SpotList (using the SpotList offset) and will then know how many Spot messages to expect.  Note that it is not necessary to know this number in advance, one can simply parse Spot messages until no more new ones are found.
 
-==  Building and/or using the code ==
+===  Building and/or using the code ===
 
 
 To use the tsf format in your own code, you need Java or C++ source code to work with the tsf format.  This source code is created by the Google Protocol Buffers binary based on the TSF.proto file.  You can create this source code yourself by downloading and installing Google Protocol Buffers and compiling the the TSF.proto file.  To do so, I use the following script (Mac OS X shell script):
@@ -135,7 +133,7 @@ fi = new FileInputStream(selectedFile);
 
 
 
-== Text format ==
+=== Text format ===
 
 
 The text version of the Tagged Spot format is modeled closely after the binary format.  The first line of the file (terminated with a newline “\n” symbol) contains the Summary metadata (the SpotList message in the binary format).  It contains Key-Value pairs (separated by “: “) where the keys are defined in the TSF.proto file SpotList description, and the values are given in asci representation.  The Key-Value pairs are separated by the tab (“\t”) sign.
@@ -147,14 +145,7 @@ All following lines are Spot data in asci format separated by tabs (“\t”) an
 
 
 
-
-
-
-
-
-
-== 
-TSF.proto file: ==
+=== TSF.proto file: ===
 
 
 <code>
@@ -263,3 +254,6 @@ message Spot {
 
 }
 </code>
+
+
+{{Documentation_Sidebar}}
