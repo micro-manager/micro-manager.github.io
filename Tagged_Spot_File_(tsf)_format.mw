@@ -51,12 +51,12 @@ protoc -I=src/ --cpp_out=buildcpp src/TSFProto.proto
 
 g++ -c buildcpp/TSFProto.pb.cc -o buildcpp/libTSFProto.o
 
-ar cru buildcpp/libTSFPProto.a buildcpp/TSFProto.o /usr/local/lib/libprotobuf.a
-</code>
+ar cru buildcpp/libTSFPProto.a buildcpp/TSFProto.o /usr/local/lib/libprotobuf.a</code>
+
 Alternatively, you can download and install the source code that I build.  It resides in a subversion repository at: [https://valelab.ucsf.edu/svn/valelabtools/TSFProto/].  The Java source code is in directory “build”, the C++ source code in directory “buildcpp”.
 
 The following (pseudo Java) code shows how you can read in a file in TSF format:
-
+<code>
         FileInputStream fi = new FileInputStream(selectedFile);
 
         DataInputStream di = new DataInputStream(fi);
@@ -131,10 +131,12 @@ fi = new FileInputStream(selectedFile);
         }
 
     fi.close();
+</code>
 
 
 
-Text format
+== Text format ==
+
 
 The text version of the Tagged Spot format is modeled closely after the binary format.  The first line of the file (terminated with a newline “\n” symbol) contains the Summary metadata (the SpotList message in the binary format).  It contains Key-Value pairs (separated by “: “) where the keys are defined in the TSF.proto file SpotList description, and the values are given in asci representation.  The Key-Value pairs are separated by the tab (“\t”) sign.
 
@@ -151,9 +153,11 @@ All following lines are Spot data in asci format separated by tabs (“\t”) an
 
 
 
-TSF.proto file:
+== 
+TSF.proto file: ==
 
 
+<code>
 package TSF;
 
 option java_package = "edu.ucsf.tsf";
@@ -258,3 +262,4 @@ message Spot {
   extensions 1500 to 2047;
 
 }
+</code>
