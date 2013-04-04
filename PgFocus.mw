@@ -235,12 +235,6 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |
 |[http://www.analog.com/en/all-operational-amplifiers-op-amps/operational-amplifiers-op-amps/adtl082/products/product.html Analog Devices] [http://www.analog.com/static/imported-files/data_sheets/ADTL082_084.pdf PDF]
 |Unity Gain Stable
-|-
-|RJ45-8PTH
-|1
-|NA
-|NA
-|
 |
 |-
 |USB Type B
@@ -404,6 +398,22 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |
 |[http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions] 
 |M12/CS Infrared Filter
+|
+|-
+|SMD 22
+|1
+|
+|
+|[http://www.mouser.com/ProductDetail/VCC/SMD-22/?qs=sGAEpiMZZMv%2fa4Vd8VuIFf3Fz6BXR9Cg Mouser] [http://vcclite.com/_pdf/lightpipe/SMD-22-Surface-Mount-for-Flexible-Light-Pipe.pdf PDF] 
+|PCB mount for light fiber
+|
+|-
+|PLP2-125
+|3
+|
+|
+|[http://www.mouser.com/ProductDetail/Bivar/PLP2-125/?qs=sGAEpiMZZMuu2qEGwSNRoI7NaoVtmgDBFzM5xIUogOU%3d Mouser] [http://www.mouser.com/ds/2/50/PLP2-XXX-61287.pdf PDF] 
+|Light pipes for PCB mounted LEDs
 |}
 
 == Thanks ==
