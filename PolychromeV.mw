@@ -26,3 +26,5 @@
 </td>
 </tr>
 </table>
+
+''Note:'' It is important to wait some time (~2 minutes) for the Polychrome V controller to be ready before starting Micro-Manager / loading a configuration with the Polychrome V device included.
