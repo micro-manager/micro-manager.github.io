@@ -172,58 +172,42 @@ Preliminary parts list. Parts may change at any time. For a complete list, expor
 |-
 !Name
 !Number
-!Current
-!Voltage
 !Reference
 !Notes
 |-
 |BNC 
 |2
-|NA
-|NA
 |[https://www.sparkfun.com/products/10550 Sparkfun], [http://www.mouser.com/ProductDetail/TE-Connectivity-AMP/5227161-7/?qs=sGAEpiMZZMuLQf%252bEuFsOrtKdKMPPpnQyZLwFjhpMzng%3d Mouser-Plastic], [http://www.mouser.com/ProductDetail/TE-Connectivity-AMP/5413879-2/?qs=sGAEpiMZZMuLQf%252bEuFsOrtKdKMPPpnQy8K0d1QB4mYo%3d Mouser-Metal], [https://www.sparkfun.com/datasheets/Prototyping/Connectors/06542.pdf PDF] 
 |
 |-
 |IR Filter
 |1
-|
-|
 |[http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions] 
 |M12/CS Infrared Filter
 |-
 |RGB LED
 |1
-|
-|
 |[https://www.sparkfun.com/products/7844 Sparkfun] 
 |
 |-
 |LCD 
 |1
-|NA
-|NA
 |[https://www.sparkfun.com/products/9394 Sparkfun] 
 |
 |-
 |DE-9 
 |1
-|NA
-|NA
 |[https://www.sparkfun.com/products/11157 Sparkfun] 
 |
 |
 |-
 |Jack Screw Kit 
 |1
-|NA
-|NA
 |[http://www.l-com.com/d-sub-4-40-d-sub-hardware-jack-screw-kit-40-inch-thread-197-inch-screw L-com] 
 |
 |-
 |M12 Lens Shroud
 |1
-|NA
-|NA
 |[http://www.optics-online.com/cmt.asp Sunex] [http://www.optics-online.com/OOL/CMT/CMT103.pdf PDF] 
 |
 |}
