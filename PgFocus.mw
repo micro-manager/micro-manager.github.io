@@ -54,11 +54,22 @@ pgFocus makes accessible 8 digital I/O pins compatible with D0 to D7 pins on the
 pgFocus uses a laser beam that is reflected off the cover glass/water interface to monitor the microscope focus. Hence, an objective with an NA of at least 1.45 is required.
 The laser beam wavelength should be different from that being used for science (808nm is a good choice) and must be coaligned with the TIRF beam. This can be done using a mirror, beam splitter and a short pass filter. Care must be taken to ensure that the fluorescence filter cube and other microscope optics will allow the return of the pgFocus beam back along its input path and back to the pgFocus detector and that the microscope optics will NOT allow the laser light to pass into the user's eyes or to reach the camera. Once the position and angle of the pgFocus beam is coincident with that of the TIRF beam a strong return pgFocus beam will be seen that moves with changes in microscope focus. The pgFocus detector array can now be aligned and centered on the beam.
 
+==== Eagle Files ====
 
-Eagle files are located at [https://github.com/kbellve/pgFocus Github]. 
 ----
 '''Warning:''' PCB design has not been verified yet and may not be final. 
 ----
+
+[https://github.com/kbellve/pgFocus pgFocus]
+
+[https://github.com/kbellve/TSL1401CL-Adapter TSL1401CL-Adapter]
+
+==== Front Panel ====
+[[File:pgFocus_front_panel.png|frame|Figure: Proposed Front Panel]]
+
+==== Back Panel ====
+
+[[File:pgFocus_back_panel.png|frame|Figure: Proposed Back Panel]]
 
 == Software ==
 
