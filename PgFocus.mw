@@ -33,7 +33,7 @@ pgFocus uses a ±10V 14bit ADC to sample the incoming piezo Z signal. This is to
 
 The incoming piezo signal is sampled and multiplied by 2. This effectively makes the ±10V ADC become a ±5V ADC, matching the ±5V DAC. 
 
-This means that the lower limit for sampling the incoming piezo Z signal is actually -2.5V. -2.5V becomes -5V at the ADC, due to the gain of 2 and the limit of -5V of the power supply. Our piezo Z controller's range is from -2V to 10V. Therefore the effective ADC sampling range is actually -2.5V to +5V.
+<strike>This means that the lower limit for sampling the incoming piezo Z signal is actually -2.5V. -2.5V becomes -5V at the ADC, due to the gain of 2 and the limit of -5V of the power supply. Our piezo Z controller's range is from -2V to 10V. Therefore the effective ADC sampling range is actually -2.5V to +5V.</strike>
 
 When pgFocus samples the incoming piezo Z signal, it rounds off the results to the nearest 50nM step since most people move their objectives at 50, 100 or 250nm increments. This allows the adjustment of the focus set point to be more accurately predicted because it is based on the distance from the original focus set point rather than just a new offset.
 
