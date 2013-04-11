@@ -240,25 +240,20 @@ BOM of [http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=985c354
 |[https://www.sparkfun.com/products/9915 Sparkfun] 
 |Optional Connects to LCD
 |-
+|JST 5 Wire 
+|2
+|[https://www.sparkfun.com/products/9917 Sparkfun] 
+|TSL1401CL-Adapter and pgFocus
+|-
+|2x5 Shrouded Header
+|1
+|[https://www.sparkfun.com/products/8506 Sparkfun] 
+|Optional Expansion, 0.1"
+|-
 |Ribbon Crimp Connector 
 |1
 |[https://www.sparkfun.com/products/10650 Sparkfun] 
 |Optional Expansion, 10-pin (2x5, Female)
-|-
-|Male Connector 5-pin
-|1
-|[https://www.sparkfun.com/products/10209 Sparkfun] 
-|Connects to TSL1401-Adapter
-|-
-|Female Connector 5-pin
-|1
-|[https://www.sparkfun.com/products/10360 Sparkfun] 
-|Jumper Wire Assembly
-|-
-|Break Away Headers
-|1
-|[https://www.sparkfun.com/products/116 Sparkfun] 
-|0.1, Straight
 |}
 
 === Miscellaneous ===
