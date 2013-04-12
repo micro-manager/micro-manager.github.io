@@ -140,6 +140,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SpectralLMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
 * [[SutterMPC]] - Multi manipulator controller
+* [[Toptica_iChrome_MLE]] - Toptica iChrome Multi Laser Engine
 * [[Utilities]] - Virtual devices providing extra functionality to Micro-Manager
 * [[VariLC]] - Tunable liquid crystal polarization modulators from CRi
 * [[Yokogawa]] - Yokogawa CSU22
