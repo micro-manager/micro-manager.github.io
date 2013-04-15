@@ -58,7 +58,7 @@ It is possible to achieve full frame rate with enough RAM. Again using a 64-bit 
 
       Edit > Options > Memory & Threads ... > Maximum Memory
 
-{{Note|You must restart uManager for either of these buffer size changes to take effect}}
+{{Note|You must restart uManager for this change to take effect}}
 
 == Usage notes ==
 * Consider creating a <code>Trigger</code> Group, and changing the preset between:
@@ -72,6 +72,23 @@ It is possible to achieve full frame rate with enough RAM. Again using a 64-bit 
 ** "exposure" > "interval" sets Software Triggers acquisition.
 
 * Save data to a large storage drive such as 1 TB, 950 MB/sec PCI-e SSD (OCZ-Z drive R2 P-88)
+
+== Troubleshooting ==
+
+=== Error: Circular buffer overflowed. ===
+
+If one encounters this error, increase sequence buffer size.  In the µManager toolbar one can set the Sequence buffer size in the main menu:
+
+      Tools > Options... > Sequence buffer size [MB]
+
+'''Reason:'''
+Due to the rate that the camera acquires data it's not uncommon for µManager to run out of "Circular Buffer" memory during sequence acquisitions (50+ images). The circular buffer is where images wait when they've been taken off the camera but have not yet been processed by µManager. The error message is:
+
+      Micro-Manager Error:
+      Error: Circular buffer overflowed.
+
+{{Note|You must restart uManager for this change to take effect}}
+
 
 == Resources ==
 === Development support ===
