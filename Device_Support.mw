@@ -50,7 +50,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[TIScam]] - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers
 * [[TSI]] - Thorlabs Scientific Imaging Cameras
 * [[TwainCamera]] - Cameras fully implementing Twain Imaging Standard
-* [[V4L]] - Video4Linux compatible cameras
+* [[Video4Linux]] - Video4Linux compatible cameras
 * [[XIMEACamera]] - XIMEA cameras
 * a non-Open Source adapter for DVC cameras (Micro-Manager 1.0 only)  is available from [http://www.dvcco.com/ DVC]
 <br>
