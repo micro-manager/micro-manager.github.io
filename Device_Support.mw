@@ -64,7 +64,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DAShutter]] - Treats a DA output as a shutter.  Useful (for instance) for diode lasers
 * [[IntelLiDrive]] - IntelLiDrive stages are support through 3d party adapters
 * [[KDV]] - kdvelectronics focus drive (z-stage) for Meiji Techno
-* [[Leica DMSTC]] - Leica DMSTC XY stage
+* [[LeicaDMSTC]] - Leica DMSTC XY stage
 * [[Ludl]] - Ludl stages, shutters and filter wheels 
 * [[LudlLow]] - Ludl stages, shutters and filter wheels (other)
 * [[Marzhauser]] - M&auml;rzh&auml;user XY stages and Z (uses TANGO controller)
