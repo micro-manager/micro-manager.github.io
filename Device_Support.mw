@@ -113,7 +113,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[USBManager]] - Micro-Manager internal USB communications driver
 
 === Other devices ===
-* [[AAAOTF|AA AOTF]] - AOTF controller from AA Optoelectronics
+* [[AAAOTF]] - AOTF controller from AA Optoelectronics
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[Aladdin]] - Syring pump controller from Aladdin
 * [[AndorLaserCombiner]] - Andor laser launch
