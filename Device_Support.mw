@@ -128,6 +128,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[LumencorCIA]] - Camera synchronization for the Lumencor Spectra
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[MaestroServo]] - Pololu Maestro Servo controller
+* [[MicroPoint]] - Galvo-based phototargeting device from Andor
 * [[Mightex]] - LED driver/controllers
 * [[Mightex BLS]] - BLS Control Modules
 * [[Omicron]] - Omicron Laser Controller
