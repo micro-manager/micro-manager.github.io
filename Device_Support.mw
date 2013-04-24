@@ -134,7 +134,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Pecon]] - Pecon Incubation System
 * [[PolychromeV]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
-* [[Rapp UGA40]] - Rapp UGA40 photobleaching/photoactivation unit
+* [[Rapp]] - Rapp UGA40 photobleaching/photoactivation unit
 * [[SimpleAutofocus]] - Image-based autofocus software 'device'.
 * [[Sapphire]] - Lasers from Coherent
 * [[SpectralLMM5]] - Spectral laser line controller
