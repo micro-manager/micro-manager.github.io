@@ -18,7 +18,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Andor]] - Andor cameras
 * [[AndorSDK3]] - New model Andor cameras
 * [[Apogee]] - Apogee cameras
-* [[AxioCam MR/HR]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
+* [[AxioCam]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
 * [[DECamera]] - Direct Electron Cameras
