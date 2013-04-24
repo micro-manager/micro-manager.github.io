@@ -41,7 +41,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Piper]] - Stanford Photonics cameras
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
 * [[QCam]] - QImaging cameras
-* [[RaptorEPIX]] - Raptor cameras
+* [[RaptorEPIX]] - EMCCD cameras
 * [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[SpotCamera]] - Diagnostic Instruments Spot cameras
