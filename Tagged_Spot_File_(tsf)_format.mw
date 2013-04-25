@@ -21,13 +21,13 @@ All message sizes and file offsets are of type signed int or signed long (to ens
 
 As many copies of the message “Spot” as desired, where
 
-'''int length (4 bytes)''' - Size of the Spot message
+'''varint length''' - Size of the Spot message in a Goole Protocol buffer defined varint
 
 '''Spot message'''
 
 The Spot messages are followed by the SpotList message:
 
-'''int length (4 bytes)''' - Size of SpotList message
+'''varint length''' - Size of SpotList message in a Google Protocol buffer defined varint
 
 '''SpotList message'''
 
