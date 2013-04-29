@@ -28,7 +28,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 # Name your plugin project and press Finish.
 # Under the Projects tab, right-click your plugin project and choose Properties.
 # Then choose Libraries > Compile > Add JAR/Folder.
-## Browse to <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> and choose all jars in that directory, except <code>ij.jar</code>.
+## Browse to <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> and choose all jars in that directory.
 ## Click Add JAR/Folder again and add <code>C:\Program Files\Micro-Manager-1.4\ij.jar</code>
 ## Click Categories > Run and set Main Class to <code>ij.ImageJ</code>, working directory to <code>C:\Program Files\Micro-Manager-1.4\</code> . Click OK.
 # Now choose Debug > Debug Project from the Menu and ImageJ/Micro-Manager should launch. Close it for now.
