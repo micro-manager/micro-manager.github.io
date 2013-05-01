@@ -295,6 +295,21 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 |6659
 |}
 
+=== iXon [http://micro-manager.3463995.n2.nabble.com/Propblems-setting-the-Pre-Amp-Gain-with-Ixon897-td7579735.html Pre-Amp-Gain Error Code 3] ===
+{| class="wikitable"
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.15_20130430
+|-valign="top"
+!Affected versions
+|Upto 1.4.14
+|-
+!Andor bug number
+|8164
+|}
+
 === Clara [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection] ===
 {| class="wikitable"
 !Solution
