@@ -35,6 +35,8 @@ For some controllers special instances of the “controller” devices are provi
 * E-753 (using serial connection)
 The controller devices handle the communication with the PI controller. The two “stage” devices are the XYStage and ZStage devices used inside micro-manager and represent the axes connected to the PI controller. Each stage device needs a controller device to communicate. So you always have to add at least two devices (see examples below).
 
+Please note: many PI devices use the RTS/CTS lines for hardware handshake. If using a different cable, please check if your device needs hardware handshake and if the cable has these lines connected.
+
 === Configuration ===
 First you have to add a controller device for each PI controller you want to control by micro-manager. Give it a meaningful name, since the stages need this name to call the controller. After this you add the stages you want to use in micro-manager. Note that each controller can have as many stage devices as there are physical axes connected. E.g. one C-843.41 controller with 3 motorized stages can be used as one XYStage and one ZStage inside micro-manager, or you can use a 3-axis piezo stage connected to an E-712/710 as XYStage and ZStage. You can also use two single axis controllers to control one XY stage.
 
