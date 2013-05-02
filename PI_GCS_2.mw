@@ -89,5 +89,5 @@ To change the velocity of the stage you can create an additional configuration g
 To some controllers a joystick can be connected to control stage motions. When the joystick is used the controller will not accept motion commands from the software. To switch joystick control on and off, create a configuration group, select “other devices” in the “Show” field, and select the “Joystick 1” or “Joystick 2” property of the controller. Afterwards you can activate the joystick by entering “1” and deactivating the joystick by entering “0” in the corresponding GUI element.
 [[File:PI_GCS2_PropertyGroupJoystickConfig.png]]
 
-With "presets" defined a dropdown box can be created which allows switching of/on the joystick with a simple action by the user:
+With "presets" defined a dropdown box can be created which allows switching off/on the joystick with a simple action by the user:
 [[File:PI_GCS_2_JoystickWithPreset.png]]
