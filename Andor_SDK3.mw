@@ -37,6 +37,8 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 
 Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].  You must use SDK3 version 3.3.30003.0 or later for Release 3 Neo cameras.
 
+If using 1.4.11 or later, please use 3.4.30007.0 or later SDK3 version.
+
 Copy these 3 files to the Micro-Manager root directory:
 * atcore.dll
 * atdevregcam.dll
