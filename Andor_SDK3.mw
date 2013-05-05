@@ -35,7 +35,7 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 === Andor Driver ===
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
-Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].  You must use SDK3 version 3.3.30003.0 or later for Release 3 Neo cameras.
+Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].
 
 If using 1.4.11 or later, please use 3.4.30007.0 or later SDK3 version.
 
