@@ -273,6 +273,10 @@ To fix this, update the Andor library used by Micromanager by copying the librar
 | C:\MM\vinput\andor\
 |}
 
+=== DeviceCreate function failed ===
+
+This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.  Restart the computer to fix.
+
 === iXon [https://gist.github.com/omsai/4694420/raw/f39715c6b49afe9266fe131f357d581d20890efa/gistfile1.txt Error 20010 DRV_ERROR_PAGELOCK] ===
 {| class="wikitable"
 !Solution
