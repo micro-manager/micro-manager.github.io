@@ -35,7 +35,7 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 === Andor Driver ===
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
-Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website].
+Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website] and restart the computer.
 
 If using 1.4.11 or later, please use 3.4.30007.0 or later SDK3 version.
 
@@ -71,6 +71,10 @@ It is possible to achieve full frame rate with enough RAM. Again using a 64-bit 
 * Save data to a large storage drive such as 1 TB, 950 MB/sec PCI-e SSD (OCZ-Z drive R2 P-88) or 4x Kingston 256GB SSD (RAID 0) on LSI MegaRAID setup
 
 == Troubleshooting ==
+
+=== DeviceCreate function failed ===
+
+This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.
 
 === Error: Circular buffer overflowed. ===
 
