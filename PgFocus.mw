@@ -177,40 +177,6 @@ BOM of [https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0e1348
 
 BOM of [http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=985c35475a TSL1401CL-Adapter]
 
-=== Analog Devices ===
-{|border="1"  style="text-align:center;"
-|-
-!style = "width: 25%" |Name
-!style = "width: 5%"  |Number
-!style = "width: 30%" |Reference
-!style = "width: 40%" |Notes
-|-
-|AD8221ARZ
-|1
-|[https://avnetexpress.avnet.com/store/em/EMController?action=part&A=2335893&An=0&catalogId=500201&langId=-1&storeId=500201 AVNET Express]
-|SP Amp INSTR Amp Single ±18V 8-Pin
-|-
-|AD5521BRUZ
-|1
-|[https://avnetexpress.avnet.com/store/em/EMController?action=part&A=3464753&An=0&catalogId=500201&langId=-1&storeId=500201 AVNET Express]
-|DAC 1-CH R-2R 14-bit 16-Pin TSSOP
-|-
-|AD7894ARZ-10
-|1
-|[https://avnetexpress.avnet.com/store/em/EMController?action=part&A=3597209&An=0&catalogId=500201&langId=-1&storeId=500201 AVNET Express]
-|ADC Single SAR 200ksps 14-bit Serial 8-Pin SOIC N
-|-
-|ADR03BRZ
-|1
-|[https://avnetexpress.avnet.com/store/em/EMController?action=part&A=3558345&An=0&catalogId=500201&langId=-1&storeId=500201 AVNET Express]
-|V-Ref Precision 2.5V 10mA 8-Pin SOIC N Tube
-|-
-|ADTL082ARZ
-|2
-|[https://avnetexpress.avnet.com/store/em/EMController?action=part&A=8037226&An=0&catalogId=500201&langId=-1&storeId=500201 AVNET Express]
-|OP Amp Dual GP ±18V/36V 8-Pin SOIC N
-|}
-
 === Sparkfun ===
 
 {|border="1"  style="text-align:center;"
