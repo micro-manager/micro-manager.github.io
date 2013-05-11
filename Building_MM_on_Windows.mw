@@ -19,12 +19,6 @@ To build device adapters:
 # Microsoft Developer Studio 2008 or [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] (Express is fine, and doesn't cost anything.)
 # the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK], if you are using Visual Studio 2010 Express
 
-If you use Studio 2010, you will need to either recompile Boost or download binaries.
-
-To compile Boost: <code>cd projects\3rdpartypublic\boost; bootstrap; .\bjam --build-type=complete</code> and come back in a few hours. On Windows 7 64-bit, this may fail with a message in bjam.log: "ERROR: Cannot determine the location of the VS Common Tools folder." This can happen if `reg' is not found, so add C:\Windows\SysWOW64 to your PATH and try again.
-
-To download compiled Boost binaries, check <code>projects\3rdpartypublic\boost\boost\version.hpp</code> and grab the same version from e.g. [http://www.boostpro.com/download/ BoostPro]. Run the installer as an administrator or else the installer will hang. Copy the installed libraries from e.g. <code>C:\Program Files (x86)\boost\boost_1_46_1\lib</code> to <code>3rdpartypublic\boost</code>.
-
 Additionally, to build the entire Micro-Manager package:
 # [http://java.sun.com/javase/downloads/index.jsp JDK Standard Edition] 6 or later
 # A recent version of [http://rsb.info.nih.gov/ij/download.html ImageJ]
