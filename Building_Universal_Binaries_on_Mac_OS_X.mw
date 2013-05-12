@@ -56,6 +56,7 @@ This worked with libgphoto 2.4.11.  Older versions had problems in some of the c
 <code>
 make clean<br>
 ./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0" --enable-static --host=ppc-darwin --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/ppc/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/ppc/include PKG_CONFIG_LIBDIR="/usr/local/ppc/lib/pkgconfig/"<br>
+
 make<br>
 sudo make install<br>
 make clean<br>
@@ -74,3 +75,11 @@ sudo make install<br>
 make clean<br>
 make<br>
 sudo make install<br>
+
+'''Building OpenCV:'''
+General instructions can be found on the [http://opencv.willowgarage.com/wiki/InstallGuide openCV] site.<br>
+In a freshly download OpenCV source, run:<br>
+mkdir buildi386<br>
+cd buildi386<br>
+CC=gcc-4.0 CXX=g++-4.0 cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/usr/local/i386 -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DWITH_OPENCL=OFF -DBUILD_NEW_PYTHON_SUPPORT=OFF -DCMAKE_OSX_ARCHITECTURES=i386 -G "Unix Makefiles" ..
+<br>
