@@ -78,6 +78,14 @@ export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacO
 make<br>
 sudo make install PREFIX=/usr/local/i386<br>
 <br>
+export CC="gcc-4.2"<br>
+export CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
+export CXX="g++-4.2"<br>
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
+make<br>
+sudo make install PREFIX=/usr/local/x86_64<br>
+<br>
+
 
 '''Building OpenCV:'''
 General instructions can be found on the [http://opencv.willowgarage.com/wiki/InstallGuide openCV] site.<br>
