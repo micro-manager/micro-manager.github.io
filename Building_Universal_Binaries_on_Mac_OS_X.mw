@@ -70,18 +70,17 @@ sudo make install<br>
 make<br>
 sudo make install<br>
 
-'''Cross-compiling libbip2 (useful for OpenCV) for three platforms:'''
-export CC="gcc-4.0"<br>
-export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
-export CXX="g++-4.0"<br>
-export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
+'''Cross-compiling libbzip2 (useful for OpenCV) for three platforms:'''
+Download the source from [http://www.bzip.org/ bzip.org]<br>
+Edit the Make file:<br>
+CC=gcc-4.0<br>
+CFLAGS=-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386 -Wall -Winline $(BIGFILES)<br>
 make<br>
 sudo make install PREFIX=/usr/local/i386<br>
 <br>
-export CC="gcc-4.2"<br>
-export CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
-export CXX="g++-4.2"<br>
-export CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"<br>
+Edit the Make file for x86_64:<br>
+CC=gcc-4.2<br>
+CFLAGS=-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -Wall -Winline $(BIGFILES)<br>
 make<br>
 sudo make install PREFIX=/usr/local/x86_64<br>
 <br>
