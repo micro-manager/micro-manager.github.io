@@ -70,11 +70,14 @@ sudo make install<br>
 make<br>
 sudo make install<br>
 
-'''Cross-compiling libjasper (useful for OpenCV) for three platforms:'''
-./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static --disable-shared<br>
-make clean<br>
+'''Cross-compiling libbip2 (useful for OpenCV) for three platforms:'''
+export CC="gcc-4.0"<br>
+export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
+export CXX="g++-4.0"<br>
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"<br>
 make<br>
-sudo make install<br>
+sudo make install PREFIX=/usr/local/i386<br>
+<br>
 
 '''Building OpenCV:'''
 General instructions can be found on the [http://opencv.willowgarage.com/wiki/InstallGuide openCV] site.<br>
