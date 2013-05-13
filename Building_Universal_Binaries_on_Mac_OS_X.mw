@@ -77,12 +77,14 @@ CC=gcc-4.0<br>
 CFLAGS=-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386 -Wall -Winline $(BIGFILES)<br>
 make<br>
 sudo make install PREFIX=/usr/local/i386<br>
+make clean<br>
 <br>
 Edit the Make file for x86_64:<br>
 CC=gcc-4.2<br>
 CFLAGS=-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -Wall -Winline $(BIGFILES)<br>
 make<br>
 sudo make install PREFIX=/usr/local/x86_64<br>
+make clean<br>
 <br>
 
 
