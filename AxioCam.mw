@@ -176,6 +176,15 @@ OUT signal to achieve the desired trigger OUT delay.<br />
 
 --[[User:Henry Pinkard|Henry Pinkard]] 10:58, 2nd January 2013 (PDT)
 
+
+== IEEE 1394 driver on Windows 7 ==
+
+Windows 7 comes with two versions of the IEEE 1394 bus driver (default and "legacy"). I had trouble getting an AxioCam MRc5 recognized with the default one. This might be dependent on the motherboard and IEEE 1394 adapter, of course. To switch between the default and "legacy" adapters, follow the instructions mentioned here: http://social.technet.microsoft.com/Forums/en-US/itprovistahardware/thread/c2e39b2c-0558-43cb-865e-9f9db3e4f5ed/
+
+--[[User:Mark Tsuchida|Mark Tsuchida]] 13:51, 14 May 2013 (PDT)
+
+
+
 {{Listserv_Search|AxioCam}}
 
 
