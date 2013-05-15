@@ -1,0 +1,11 @@
+== Standa Microstep Controller adapter ==
+
+<table cellspacing=3><tr><td>
+'''Summary:'''</td><td valign="top">Interface to Standa 8SMC1-USBhF Microstep Driver</td></tr>
+<tr><td>'''Author:'''</td><td>Clarence Leung, McGill University</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.4.15</td>
+</table>
+
+Requires "Development Kit (C, C++ and other)" available from http://www.standa.lt/products/catalog/motorised_positioners?item=175&prod=microstep_driver_usb_interface .
