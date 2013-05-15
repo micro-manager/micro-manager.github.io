@@ -8,4 +8,8 @@
 <tr><td>'''Available since version:'''</td><td>1.4.15</td>
 </table>
 
+=== Installation ===
+
 Requires "Development Kit (C, C++ and other)" available from http://www.standa.lt/products/catalog/motorised_positioners?item=175&prod=microstep_driver_usb_interface . (Install the 32-bit or 64-bit version that matches your Micro-Manager installation.)
+
+=== Configuration ===
