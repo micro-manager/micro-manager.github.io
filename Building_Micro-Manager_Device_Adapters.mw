@@ -24,7 +24,7 @@ Let's assume that we are writing a device adapter, for a device called “MyDevi
 
 == Directory layout ==
 
-Before doing anything else we should check out the latest version of micro-manager from the SubVersion repository to appropriate base directory on our computer. The checkout process is outlined in the next few steps. [[Building and debugging Micro-Manager source code]] has more specific advice on building Micro-Manager for each platform.
+Before doing anything else we should check out the latest version of Micro-Manager from the Subversion repository to an appropriate base directory on our computer. The checkout process is outlined in the next few steps. [[Building and debugging Micro-Manager source code]] has more specific advice on building Micro-Manager for each platform.
 
 First we check out Micro-Manager source code from:
 
@@ -36,29 +36,29 @@ https://valelab.ucsf.edu/svn/3rdpartypublic/
 
 into directory <code>/projects/3rdpartypublic</code> on our computer.
 
-At this point we can install any proprietary drivers or SDKs that may be required by the manufacturer of our hardware. Devices that we intend to control via serial port (RS-232) do not require any drivers. It is probably a good idea to follow whatever is the default location for manufacturer’s driver or SDK and run their software demos afterwards to validate the installation. If we do have to link our code against manufacturer’s proprietary libraries we should copy required files and directories (usually header files and dynamic or static libraries) to the following location:
+At this point we can install any proprietary drivers or SDKs that may be required by the manufacturer of our hardware. Devices that we intend to control via serial port (RS-232) do not require any drivers. It is probably a good idea to follow whatever is the default location for manufacturer’s driver or SDK and run their software demos afterwards to validate the installation. If we do have to link our code against manufacturer’s proprietary libraries we should copy the required files and directories (usually header files and dynamic or static libraries) to the following location:
 
 <code>/projects/3rdparty/MyDevice</code>
 
-Top-level directory can be called something other than “projects”, but within our top-level directory we must have three parallel sub-directories with fixed names:
+The top-level directory can be called something other than “projects”, but within our top-level directory we must have three parallel sub-directories with fixed names:
 
 <code>/micro-manager1.4</code> (development source code)
 
-<code>/3rdpartypublic</code> (required open source 3rd-party libraries)
+<code>/3rdpartypublic</code> (required open source third-party libraries)
 
 <code>/3rdparty</code> (optional proprietary libraries that may be required for our hardware)
 
 === Development directories and tools ===
 
-Now that overall directory structure is set, we can have a look at Developer’s Kit tools and also find a place to develop our new “MyDevice” adapter. Development tools are located in:
+Now that the overall directory structure is set up, we can have a look at Developer’s Kit tools and also find a place to develop our new “MyDevice” adapter. Development tools are located in:
 
 <code>/projects/micro-manager1.4/DeviceKit</code>
 
-'''LibraryTest''' – command line program to test the micro-manager device Library and list all contained Device Adapters
+'''LibraryTest''' – a command line program to test the micro-manager device Library and list all contained Device Adapters
 
-'''DeviceTest''' – command line program to test a single Device Adapter and list all of the available device properties and features
+'''DeviceTest''' – a command line program to test a single Device Adapter and list all of the available device properties and features
 
-'''CoreTest''' – command line program to test one or more Device Adapters from one or more Libraries using Micro-manager configuration files
+'''CoreTest''' – a command line program to test one or more Device Adapters from one or more Libraries using Micro-manager configuration files
 
 The place designated for development of our new adapter is:
 
