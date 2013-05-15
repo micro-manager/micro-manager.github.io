@@ -10,6 +10,8 @@
 
 === Installation ===
 
-Requires "Development Kit (C, C++ and other)" available from http://www.standa.lt/products/catalog/motorised_positioners?item=175&prod=microstep_driver_usb_interface . (Install the 32-bit or 64-bit version that matches your Micro-Manager installation.)
+The device adapter requires the "Development Kit (C, C++ and other)" available from [http://www.standa.lt/products/catalog/motorised_positioners?item=175&prod=microstep_driver_usb_interface the official Standa page for the microstep device].  
+
+Make sure to install the 32-bit or 64-bit version that matches your Micro-Manager installation.
 
 === Configuration ===
