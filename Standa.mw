@@ -15,3 +15,7 @@ The device adapter requires the "Development Kit (C, C++ and other)" available f
 Make sure to install the 32-bit or 64-bit version that matches your Micro-Manager installation.
 
 === Configuration ===
+
+To configure the device adapter for use in Micro-Manager, make sure the SMCView drivers are currently not in use, and that the MicroSMC drivers are active instead.  To do so, open up the Device Manager and make sure "8SMC1-USB" or "8SMC1-USB MicroSMC" is the name of a device under "Universal Serial Bus controllers".
+
+If you have a device under "NI-VISA USB Devices" named "8SMC1-USB(h)", then you are currently using the SMCView drivers, and must switch to the drivers found in the development kit.  Follow the instructions in the [http://www.standa.lt/files/usb/8SMC1-USBhF%20User%20Manual.pdf Standa user manual (PDF)] to switch between the NI-VISA and MicroSMC drivers.
