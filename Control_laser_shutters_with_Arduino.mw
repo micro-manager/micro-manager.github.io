@@ -12,13 +12,14 @@ For circuit, the following materials are required:
 
 -2 BNC connectors;
 
--5 wires (which length must be enough to go from Arduino board to laser shutters), of different color to make easy their recognition (I choose 2 red for positive voltage and 3 black for ground connection, see following picture);
+-5 wires (which length must be enough to go from Arduino board to laser shutters), of different color to make easy their recognition (I choose 2 red for positive voltage and 3 black for ground connection, see picture below);
 
 -1 connector block.
 
 
 For info about board working specifications read [[Arduino]] page.
-It's only necessary to load the [[https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde|firmware source code]] in Arduino board and this will let set different state to set pins from 8 to 13 in HIGH/LOW state.
+It's only necessary to load the 
+[https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde firmware source code] in Arduino board and this will let set different state to set pins from 8 to 13 in HIGH/LOW state.
 
 If you choose pin 12 for control of first laser shutter and pin 13 for the second, is possible open and close the shutters, just setting Arduino state to value "16" (pin 12) or "32" (pin 13).
 
@@ -30,7 +31,9 @@ In order to build the cicuit:
 
 Finally connect Arduino to pc with USB cable and include it in hardware configuration wizard.
 
-Check if circuit works with a voltmeter.
+Check if circuit works with a voltmeter:
+* measure voltage between internal pin and external structure of BNC connectors before setting any "Arduino state" in "Device/Properties Browser..."; this must give value zero.
+* measure voltage in same way for BNC connected at pin 12, after setting of "Arduino state" value 16 and opening "Arduino shutter";
+* check in the same way BNC connected at pin 13;
 
-
-TBC
+Note: to invert HIGH/LOW state of BNC output use "Inverted logic" insted of "Normal" during Arduino board configuration.
