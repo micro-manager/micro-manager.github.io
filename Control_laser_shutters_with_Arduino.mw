@@ -12,13 +12,17 @@ For circuit, the following materials are required:
 
 -2 BNC connectors;
 
--3 wires (which length must be enough to go from Arduino board to laser shutters), of different color to make easy their recognition (I choose 2 red for positive voltage and black for ground);
+-4 wires (which length must be enough to go from Arduino board to laser shutters), of different color to make easy their recognition (I choose 2 red for positive voltage and black for ground);
 
 -1 connector block.
 
 
+For info about board working specifications read [[Arduino]] page.
+It's only necessary to load the [[AOTFcontroller.pde|firmware source code]] in Arduino board and this will let set different state to set pins from 8 to 13 in HIGH/LOW state.
 
+If you choose pin 12 for control first laser shutter and pin 13 for the second, is possible open and close the shutters, just setting Arduino state to value "16" (pin 12) or "32" (pin 13).
 
-
-
-For more info about board working specifications read [[Arduino]] page.
+In order to build the cicuit:
+* strip the ends of a red wire and connect it to + pole of a BNC connector and to pin 12;
+* strip the ends of the second red wire and connect it to + pole of the other BNC connector and to pin 13;
+* strip the ends of black wires and connect them to - pole of BNC connectors
