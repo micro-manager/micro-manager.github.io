@@ -18,7 +18,7 @@ For circuit, the following materials are required:
 
 
 For info about board working specifications read [[Arduino]] page.
-It's only necessary to load the [[AOTFcontroller.pde|firmware source code]] in Arduino board and this will let set different state to set pins from 8 to 13 in HIGH/LOW state.
+It's only necessary to load the [[https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde|firmware source code]] in Arduino board and this will let set different state to set pins from 8 to 13 in HIGH/LOW state.
 
 If you choose pin 12 for control of first laser shutter and pin 13 for the second, is possible open and close the shutters, just setting Arduino state to value "16" (pin 12) or "32" (pin 13).
 
