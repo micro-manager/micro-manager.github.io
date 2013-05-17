@@ -1,7 +1,7 @@
 == Standa Microstep Controller adapter ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Interface to Standa 8SMC1-USBhF Microstep Driver</td></tr>
+'''Summary:'''</td><td valign="top">Interface to Standa: 8SMC1-USBhF Microstep Driver</td></tr>
 <tr><td>'''Author:'''</td><td>Clarence Leung, McGill University</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
