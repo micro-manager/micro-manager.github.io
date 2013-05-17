@@ -29,6 +29,10 @@ In order to build the cicuit:
 * strip the ends of 2 black wires and connect them to negative (-) pole of two different BNC connectors, after connect other ends togheter on a side of connector block;
 * strip the ends of fifth wire and connect it to connector block and to ground pin of Arduino board.
 
+This is the picture of circuit.
+
+[[File:Control_laser_shutters_with_Arduino-Scheme.jpg]]
+
 Finally connect Arduino to pc with USB cable and include it in hardware configuration wizard.
 
 Check if circuit works with a voltmeter:
