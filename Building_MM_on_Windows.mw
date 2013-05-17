@@ -115,4 +115,6 @@ The final step of the build makes the installer using InnoSetup, the current bui
 
   \projects\3rdparty\Inno_Setup_5\iscc.exe
 
+(Note: Currently, Build.bat and Buildx64.bat include actions that are specific to our nightly build, so you may get some errors. You can build just the C++ conponents by running buildscripts\buildCpp. --[[User:Mark Tsuchida|Mark Tsuchida]] 17:38, 16 May 2013 (PDT))
+
 {{Programming_Sidebar}}
