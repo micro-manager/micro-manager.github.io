@@ -36,8 +36,12 @@ This is the picture of circuit.
 Finally connect Arduino to pc with USB cable and include it in hardware configuration wizard.
 
 Check if circuit works with a voltmeter:
-* measure voltage between internal pin and external structure of BNC connectors before setting any "Arduino state" in "Device/Properties Browser..."; this must give value zero.
-* measure voltage in same way for BNC connected at pin 12, after setting of "Arduino state" value 16 and opening "Arduino shutter";
-* check in the same way BNC connected at pin 13;
+* measure voltage between internal pin and external structure of BNC connectors before setting any "Arduino state" in "Device/Properties Browser..."; this must give value zero Volt.
+* measure voltage in same way for BNC connected at pin 12, after setting of "Arduino state" value 16 and opening "Arduino shutter"; this must give value around 5 Volt;
+* check in the same way BNC connected at pin 13, setting instead "Arduino state" value 32; this must give value around 5 Volt;
 
 Note: to invert HIGH/LOW state of BNC output use "Inverted logic" insted of "Normal" during Arduino board configuration.
+
+Note: for more info about Arduino output voltage and technical specifications visit [http://www.arduino.cc Arduino project webpage].
+
+Rocco D'Antuono
