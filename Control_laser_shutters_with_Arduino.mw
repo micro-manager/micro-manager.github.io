@@ -26,3 +26,5 @@ In order to build the cicuit:
 * strip the ends of a red wire and connect it to + pole of a BNC connector and to pin 12;
 * strip the ends of the second red wire and connect it to + pole of the other BNC connector and to pin 13;
 * strip the ends of black wires and connect them to - pole of BNC connectors
+
+TBC
