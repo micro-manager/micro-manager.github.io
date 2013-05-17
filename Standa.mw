@@ -25,3 +25,7 @@ The device currently has three main settings, which is the '''device number''', 
 The '''device number''' of your attached device is based on the index of the device in the "USMC_Devices" data structure.  If you're unfamiliar with this, the device number is simply the order of your device from top to bottom in SMCView, starting from zero.
 
 Note that the '''step size in um''' is based on ''microsteps'', and not full steps.  Specifically, a microstep in the controller is exactly 1/8 of a full step, so divide accordingly when using this driver.
+
+=== Additional help ===
+
+If you have any further questions about this device adapter, or you have found a bug to report, please contact the author directly by e-mail.
