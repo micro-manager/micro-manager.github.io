@@ -60,12 +60,12 @@ make clean<br>
 make<br>
 sudo make install<br>
 make clean<br>
-./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2" --enable-static --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/x86_64/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/x86_64/libltdl.a LIBUSB_CFLAGS=-I/usr/local/x86_64/include LIBLTDL=/usr/lib/libltdl.a PKG_CONFIG_LIBDIR="/usr/local/x86_64/lib/pkgconfig/"
+./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2" --enable-static --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/x86_64/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/x86_64/lib/libltdl.a LIBUSB_CFLAGS=-I/usr/local/x86_64/include LIBLTDL=/usr/lib/libltdl.a PKG_CONFIG_LIBDIR="/usr/local/x86_64/lib/pkgconfig/"
 <br>
 make clean<br>
 make<br>
 sudo make install<br>
-./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static  --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/i386/lib/libltdl.a LIBUSB_CFLAGS=-I/usr/local/i386/include LIBLTDL=/usr/lib/libltdl.a PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
+./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static  --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/i386/lib/libltdl.a LIBUSB_CFLAGS=-I/usr/local/i386/include LIBLTDL=/usr/local/i386/lib/libltdl.a PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
 <br>
 make<br>
 sudo make install<br>
