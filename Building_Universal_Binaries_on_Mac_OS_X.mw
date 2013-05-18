@@ -55,17 +55,17 @@ sudo make install<br>
 This worked with libgphoto 2.4.11.  Older versions had problems in some of the camera drivers and would need these to be excluded from the build. <br>
 <code>
 make clean<br>
-./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0" --enable-static --host=ppc-darwin --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/ppc/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/ppc/include PKG_CONFIG_LIBDIR="/usr/local/ppc/lib/pkgconfig/"<br>
+./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0" --enable-static --host=ppc-darwin --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBLTDL=/usr/local/ppc/libltdl.a LIBUSB_LIBS="/usr/local/ppc/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/ppc/include PKG_CONFIG_LIBDIR="/usr/local/ppc/lib/pkgconfig/"<br>
 
 make<br>
 sudo make install<br>
 make clean<br>
-./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2" --enable-static --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/x86_64/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/x86_64/include PKG_CONFIG_LIBDIR="/usr/local/x86_64/lib/pkgconfig/"
+./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2" --enable-static --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/x86_64/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/x86_64/libltdl.a LIBUSB_CFLAGS=-I/usr/local/x86_64/include PKG_CONFIG_LIBDIR="/usr/local/x86_64/lib/pkgconfig/"
 <br>
 make clean<br>
 make<br>
 sudo make install<br>
-./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static  --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBUSB_CFLAGS=-I/usr/local/i386/include PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
+./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0" --enable-static  --with-libexif=no --without-libiconv-prefix --without-libintl-prefix LIBUSB_LIBS="/usr/local/i386/lib/libusb.a -framework IOKit -framework CoreFoundation" LIBLTDL=/usr/local/i386/libltdl.a LIBUSB_CFLAGS=-I/usr/local/i386/include PKG_CONFIG_LIBDIR="/usr/local/i386/lib/pkgconfig/" 
 <br>
 make<br>
 sudo make install<br>
