@@ -27,6 +27,10 @@ There is a lot of work that can be done on the adapter to make it auto-detect ca
 --[[User:Nico|Nico]] 10:53, 25 August 2007 (PDT)
 
 
+Windows build (32-bit only) worked for snapping but not for streaming, using an Apple iSight camera. To install drivers, go to http://www.cs.cmu.edu/~iwan/1394/ and download 1394camera646.exe (or other version). Then, after plugging in the camera, use the Windows Device Manager to install the driver (select the camera, choose "Update Driver...", and point it to the installed CMU drivers folder).
+--[[User:Mark Tsuchida|Mark Tsuchida]] 16:08, 20 May 2013 (PDT)
+
+
 {{Listserv_Search|dc1394}}
 
 {{Devices_Sidebar}}
