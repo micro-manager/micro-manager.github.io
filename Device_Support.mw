@@ -20,7 +20,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Apogee]] - Apogee cameras
 * [[AxioCam]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
-* [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
+* [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs 
 * [[DECamera]] - Direct Electron Cameras
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
