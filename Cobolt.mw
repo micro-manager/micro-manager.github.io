@@ -32,3 +32,11 @@ The following commands are available with this device adapter:
 
 
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 15:51, 5 June 2009 (UTC)
+
+
+----
+
+
+A useful device for control of additional laser shutter can be an [[Arduino]] board; a way to integrate hardware and software may be build a GUI panel to  control easily laser power and shutter devices:
+*[[Control_laser_shutters_with_Arduino| Control laser shutter with Arduino]] by Rocco D'Antuono
+*[[Media:GUI_panel_for_Cobolt_laser_control.bsh|GUI panel for Cobolt laser control]] by Rocco D'Antuono
