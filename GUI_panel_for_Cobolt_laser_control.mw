@@ -1,4 +1,3 @@
-/*
 This is a simple script to obtain a GUI panel for easier control of 2 Cobolt laser (here named "Cobolt 491 nm" and "Cobolt 561 nm"); it can be adapted for any other similar device.
 Just copy this text in Beanshell script editor and run it after have performed right hardware configuration of both Arduino board and lasers 
 By Rocco D'Antuono (Italy)
