@@ -1,0 +1,10 @@
+<table><tr><td>
+'''Summary:'''</td><td>Controls [http://en.ids-imaging.com/ IDS] uEye cameras</td></tr>
+<tr><td>'''Author:'''</td><td>Wenjamin Rosenfeld</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows and Linux</td></tr>
+<tr><td>'''Devices:'''</td><td>IDS uEye USB cameras, including Thorlabs DCUxxxx USB and Edmund EO-xxxxM USB which are produced by IDS</td></tr>
+<tr><td>'''Available Since Version:'''</td><td>1.4.15</td></tr>
+</table>
+
+Requires drivers from IDS, which can be downloaded from http://en.ids-imaging.com/download-ueye.html.
