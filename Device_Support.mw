@@ -29,6 +29,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
 * [[Hamamatsu]] - Hamamatsu cameras (through DCAM library)
 * [[HamamatsuHam]] - An alternative camera adapter from Hamamatsu
+* [[IDS_uEye]] - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM)
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
 * [[Micropix]] - Cameras from Micropix
 * [[MoticCamera]] - Motic cameras
