@@ -148,15 +148,6 @@ iXon camera:
 
 == Device Settings ==
 
-=== Cooling ===
-* iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
-* Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
-* Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
-* No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
-* Full gain will not be achievable without cooling. 
-* EMgain is temperature compensated for RealGain cameras. 
-* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
-
 === Pre-Amplifier Gain (PAG) ===
 * It's best to think of Pre-Amplifier Gain as follows:
 *:4x = High sensitivity mode (use for EM gain)
@@ -195,9 +186,143 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 * Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions.
 * µManager needs to implement SequenceExposure functions to use this feature.  No camera DeviceAdapter implements this yet.
 
-== Troubleshooting ==
+=== Cooling ===
+* iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
+* Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
+* Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
+* No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
+* Full gain will not be achievable without cooling. 
+* EMgain is temperature compensated for RealGain cameras. 
+* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
-=== Check for device driver ===
+== Troubleshooting (known issues) ==
+
+=== DeviceCreate function failed ===
+This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.  Restart the computer to fix.
+
+=== iXon Error 20010 DRV_ERROR_PAGELOCK ===
+{| class="wikitable"
+!Description
+|Running acquisition gives error message window: <code>Error in device Camera: Error code 20010 (4e2a hex)</code>.  See also: [https://gist.github.com/omsai/4694420/raw/f39715c6b49afe9266fe131f357d581d20890efa/gistfile1.txt Corelog debug output]
+|-
+!Cause
+|Bug in Andor PCI/e card driver version 4.31.0 and older.
+|-
+!Solution
+|Update to PCI/e driver version 4.32.0 or later (included in Andor SDK 2.94 onwards).  Instructions to uninstall and install new PCI/e card driver in Appendix.
+|-valign="top"
+|-
+!Andor bug number
+|6659
+|}
+
+=== iXon Pre-Amp-Gain Error Code 3 ===
+{| class="wikitable"
+!Description
+| The <code>Pre-Amp-Gain</code> property drop down choices have non-ASCII symbols in them, and choosing on such option gives an error window (that particular value is not usable). See also: [http://micro-manager.3463995.n2.nabble.com/Propblems-setting-the-Pre-Amp-Gain-with-Ixon897-td7579735.html Listserv thread]
+|-
+!Cause
+|Bug in DeviceAdapter
+|-
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.15_20130430
+|-valign="top"
+!Affected versions
+|Upto 1.4.14
+|-
+!Andor bug number
+|8164
+|}
+
+=== Clara Error 20066 PreAmp selection ===
+{| class="wikitable"
+!Description
+| Error adding camera in Hardware Configuration Wizard. See also: [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Listserv thread]
+|-
+!Cause
+|Bug in DeviceAdapter
+|-
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.11_20121014
+|-valign="top"
+!Affected versions
+|1.4.7 to 1.4.11
+|-
+!Andor bug number
+|7187
+|-
+!Workaround
+|Copy Andor SDK 2.90.30004.0 or older DLL to µManager directory
+|}
+
+=== Luca Error 20991 ===
+{| class="wikitable"
+!Description
+| Error adding camera in Hardware Configuration Wizard. See also: [http://micro-manager.3463995.n2.nabble.com/Error-message-90991-51ff-hex-td7578217.html Listserv thread]
+|-
+!Cause
+|Bug in DeviceAdapter
+|-
+!Solution
+|Upgrade µManager
+|-valign="top"
+!Nightly build<br>containing fix
+|1.4.11_20121019
+|-
+!Affected versions
+|1.4.9 to 1.4.11
+|-
+!Andor bug number
+|7162
+|-
+!Workaround
+|Copy Andor SDK 2.88.30002.0 or older DLL to µManager directory
+|}
+
+== Resources ==
+
+=== Development support ===
+Please liaison with Micro-Manager developers to contact the Andor software team
+
+{{Listserv_Search|Andor}}
+
+=== Andor support ===
+For contacting Andor product support regarding any questions, see under "Support" for your location -
+http://www.andor.com/contact_us/default.aspx
+
+== Appendix ==
+
+=== Updating Andor library (DLL) ===
+If Micro-Manager's Andor library is too old, adding (i.e. initializing) your Andor camera in the Hardware configuration wizard can result in:
+* Error code 22
+* Micro-Manager crash (with no error in the CoreLog)
+
+To fix this, update the Andor library used by Micromanager by copying the library file from your Andor software to your Micro-Manager installation directory.  The name of the Andor library needed is '''atmcd32d.dll''' or '''atmcd64d.dll''', depending if whether are using 32- or 64-bit Micro-Manager.  The default location of the Andor library installed varies with the software you are using:
+
+{| class="wikitable"
+! Software
+! Path containing Andor library
+|-
+| Andor SDK
+| C:\Program Files\Andor SOLIS\Drivers\
+|-
+| Andor Solis
+| C:\Program Files\Andor SOLIS\
+|-
+| Andor iQ
+| Not applicable since iQ uses a C++ interface wrapper to combine SDK2 and SDK3
+|-
+| MDS Metamorph 7
+| C:\MM\vinput\andor\
+|}
+
+=== Install driver for PCI / PCIe card in Windows ===
 Make sure there is no yellow question mark next to the device, and that it is present in the Device Manager.
 
 {| class="wikitable"
@@ -215,7 +340,7 @@ Make sure there is no yellow question mark next to the device, and that it is pr
   \- Andor {Clara, Luca, iXon Ultra}
 |}
 
-If there is a yellow question mark, then right-click on the device, update the driver and choose:
+If there is a yellow question mark, right-click on the device, update the driver and choose:
 
 {| class="wikitable"
 ! OS
@@ -249,116 +374,15 @@ If there is a yellow question mark, then right-click on the device, update the d
 |}
 
 
-=== Updating Andor library (DLL) ===
-If Micro-Manager's Andor library is too old, adding (i.e. initializing) your Andor camera in the Hardware configuration wizard can result in:
-* Error code 22
-* Micro-Manager crash (with no error in the CoreLog)
-
-To fix this, update the Andor library used by Micromanager by copying the library file from your Andor software to your Micro-Manager installation directory.  The name of the Andor library needed is '''atmcd32d.dll''' or '''atmcd64d.dll''', depending if whether are using 32- or 64-bit Micro-Manager.  The default location of the Andor library installed varies with the software you are using:
-
-{| class="wikitable"
-! Software
-! Path containing Andor library
-|-
-| Andor SDK
-| C:\Program Files\Andor SOLIS\Drivers\
-|-
-| Andor Solis
-| C:\Program Files\Andor SOLIS\
-|-
-| Andor iQ
-| Not applicable since iQ uses a C++ interface wrapper to combine SDK2 and SDK3
-|-
-| MDS Metamorph 7
-| C:\MM\vinput\andor\
-|}
-
-=== DeviceCreate function failed ===
-
-This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.  Restart the computer to fix.
-
-=== iXon [https://gist.github.com/omsai/4694420/raw/f39715c6b49afe9266fe131f357d581d20890efa/gistfile1.txt Error 20010 DRV_ERROR_PAGELOCK] ===
-{| class="wikitable"
-!Solution
-|
+=== Uninstall driver for PCI / PCIe card in Windows so that it can be updated ===
 # Uninstall the existing device driver for the Andor PCI/e framegrabber card:
 #* The following Microsoft guide explains who to do this, but there is no need to physically remove the card as described in step 6 of the Uninstall section:
 #*: http://technet.microsoft.com/en-us/library/cc725782.aspx#bkmk_2
 #* When uninstalling, make sure to select <code>Delete the driver software for this device</code>.
 #* Use <code>Scan for Hardware Changes</code> Action in the Device Manager as described in the guide.  If it finds the driver, repeat this uninstall process until all copies of the driver are deleted.
-# Upgrade to Andor camera SDK 2.94.30007.0 or later.
+# Upgrade to Andor camera SDK.
 # Windows now uses the new <code>sys</code> file.
-|-valign="top"
-!Nightly build<br>containing fix
-|N/A - this is an Windows driver bug with the Andor <code>sys</code> file, not µManager
-|-
-!Affected versions
-|Andor SDK 2.93 and earlier (Windows-only bug)
-|-
-!Andor bug number
-|6659
-|}
+# Restart Windows twice.  After the first restart you see a yellow question mark next to the driver in the Device Manager saying the driver failing to load (Code 31). Restarting Windows the second time clears this error.
 
-=== iXon [http://micro-manager.3463995.n2.nabble.com/Propblems-setting-the-Pre-Amp-Gain-with-Ixon897-td7579735.html Pre-Amp-Gain Error Code 3] ===
-{| class="wikitable"
-!Solution
-|Upgrade µManager
-|-valign="top"
-!Nightly build<br>containing fix
-|1.4.15_20130430
-|-valign="top"
-!Affected versions
-|Upto 1.4.14
-|-
-!Andor bug number
-|8164
-|}
-
-=== Clara [http://micro-manager.3463995.n2.nabble.com/Problems-with-Andor-Clara-and-MM-1-4-7-Error-code-20066-4e62hex-td7272537.html Error 20066 PreAmp selection] ===
-{| class="wikitable"
-!Solution
-|Upgrade µManager
-|-valign="top"
-!Nightly build<br>containing fix
-|1.4.11_20121014
-|-valign="top"
-!Affected versions
-|1.4.7 to 1.4.11
-|-
-!Andor bug number
-|7187
-|-
-!Workaround
-|Copy Andor SDK 2.90.30004.0 or older DLL to µManager directory
-|}
-
-=== Luca [http://micro-manager.3463995.n2.nabble.com/Error-message-90991-51ff-hex-td7578217.html Error 20991] ===
-{| class="wikitable"
-!Solution
-|Upgrade µManager
-|-valign="top"
-!Nightly build<br>containing fix
-|1.4.11_20121019
-|-
-!Affected versions
-|1.4.9 to 1.4.11
-|-
-!Andor bug number
-|7162
-|-
-!Workaround
-|Copy Andor SDK 2.88.30002.0 or older DLL to µManager directory
-|}
-
-== Resources ==
-
-=== Development support ===
-Please liaison with Micro-Manager developers to contact the Andor software team
-
-{{Listserv_Search|Andor}}
-
-=== Andor support ===
-For contacting Andor product support regarding any questions, see under "Support" for your location -
-http://www.andor.com/contact_us/default.aspx
 
 {{Devices_Sidebar}}
