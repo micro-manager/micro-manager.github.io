@@ -195,7 +195,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 * EMgain is temperature compensated for RealGain cameras. 
 * Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
-== Troubleshooting (known issues) ==
+== Troubleshooting (known issues and fixes) ==
 
 === DeviceCreate function failed ===
 This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.  Restart the computer to fix.
