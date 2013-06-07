@@ -135,6 +135,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Mightex]] - LED driver/controllers
 * [[Mightex_BLS]] - BLS Control Modules
 * [[Omicron]] - Omicron Laser Controller
+* [[Oxxius]] - Oxxius Laser Controller
 * [[Pecon]] - Pecon Incubation System
 * [[PolychromeV]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
