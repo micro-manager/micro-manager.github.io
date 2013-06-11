@@ -19,8 +19,6 @@
 |}
 ----
 
-{{TOC limit|3}}
-
 == Installation ==
 === Andor Driver Pack ===
 You must install the Andor Driver Pack to recognize the camera in the Windows Device Manager.  These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Andor Driver Pack (CCD)</code>.
