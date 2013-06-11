@@ -19,81 +19,17 @@
 |}
 ----
 
-== Installation ==
-=== Andor SDK ===
-You must install the Andor SDK, or Andor camera application software (Solis or iQ), since it contains the necessary files to recognize the camera.  If you need to download a copy of the Andor SDK, since is not publicly available, request [[#Andor support|Andor support]] to gain access to it, stating in the support request form you need the drivers for µManager.
+{{TOC limit|3}}
 
-==== Windows 7 64-bit driver signing error ====
-{| class="wikitable"
-!Solution
-|Use Andor SDK to 2.94 or later
-|-valign="top"
-!Affected versions
-|Andor SDK < 2.94
-|-
-!Andor bug number
-|6660
-|}
+== Installation ==
+=== Andor Driver Pack ===
+You must install the Andor Driver Pack to recognize the camera in the Windows Device Manager.  These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Andor Driver Pack (CCD)</code>.
 
 === Disable power savings ===
 Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
 
 Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management and USB suspend] settings
 
-=== Test communication ===
-The Andor SDK installs test programs that can be used to get live images:
-
-      C:\Program Files\Andor SOLIS\Drivers\Examples\C\
-
-=== Fixing computer bus speed bottlenecks ===
-==== PCIe ====
-iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason for this is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.
-
-For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed when the PCIe 16x graphics card is populated, so you have to instead connect the Andor PCIe card to 8x PCIe slot
-
-==== PCI ====
-iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
-
-==== USB ====
-USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
-
-'''Windows O/S'''
-
-You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
-
-Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
-[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
-
-'''Linux O/S'''
-
-You can easily check USB bus position with '''lsusb -t'''.  
-The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
-
-      $ lsusb -t
-      Bus#  5
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-      Bus#  4
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-        |-Dev#   2 Vendor 0x046d Product 0xc045
-        `-Dev#   3 Vendor 0x2341 Product 0x0001
-      Bus#  3
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-        `-Dev#   2 Vendor 0x03f9 Product 0x0100
-      Bus#  2
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-      Bus#  1
-      `-Dev#   1 Vendor 0x1d6b Product 0x0002
-        `-Dev#   6 Vendor 0x136e Product 0x000e
-
-      $ lsusb
-      Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
-      Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
-      Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 001 Device 006: ID 136e:000e  
-      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 == Device Configuration ==
 # Open Micromanager.
@@ -143,7 +79,6 @@ iXon camera:
 | 1.70 (microseconds)
 | Normal
 |}
-
 
 
 == Device Settings ==
@@ -198,7 +133,7 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 == Troubleshooting (known issues and fixes) ==
 
 === DeviceCreate function failed ===
-This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.  Restart the computer to fix.
+This error appears in the hardware wizard in Windows if the Andor Device Driver has just been installed, but the computer has not been restarted.  Restart the computer to fix.
 
 === iXon Error 20010 DRV_ERROR_PAGELOCK ===
 {| class="wikitable"
@@ -209,7 +144,7 @@ This error appears in the hardware wizard if the Andor camera SDK has been insta
 |Bug in Andor PCI/e card driver version 4.31.0 and older.
 |-
 !Solution
-|Update to PCI/e driver version 4.32.0 or later (included in Andor SDK 2.94 onwards).  Instructions to uninstall and install new PCI/e card driver in Appendix.
+|Update to PCI/e driver version 4.32.0 or later (included in Andor Driver 2.94 onwards).  Instructions to uninstall and install new PCI/e card driver in Appendix.
 |-valign="top"
 |-
 !Andor bug number
@@ -258,7 +193,7 @@ This error appears in the hardware wizard if the Andor camera SDK has been insta
 |7187
 |-
 !Workaround
-|Copy Andor SDK 2.90.30004.0 or older DLL to µManager directory
+|Copy Andor Driver 2.90.30004.0 or older DLL to µManager directory
 |}
 
 === Luca Error 20991 ===
@@ -282,7 +217,7 @@ This error appears in the hardware wizard if the Andor camera SDK has been insta
 |7162
 |-
 !Workaround
-|Copy Andor SDK 2.88.30002.0 or older DLL to µManager directory
+|Copy Andor Driver 2.88.30002.0 or older DLL to µManager directory
 |}
 
 == Resources ==
@@ -303,24 +238,10 @@ If Micro-Manager's Andor library is too old, adding (i.e. initializing) your And
 * Error code 22
 * Micro-Manager crash (with no error in the CoreLog)
 
-To fix this, update the Andor library used by Micromanager by copying the library file from your Andor software to your Micro-Manager installation directory.  The name of the Andor library needed is '''atmcd32d.dll''' or '''atmcd64d.dll''', depending if whether are using 32- or 64-bit Micro-Manager.  The default location of the Andor library installed varies with the software you are using:
+To fix this, update the Andor library used by Micromanager by copying the library file from the Andor Driver Pack to your Micro-Manager installation directory:
 
-{| class="wikitable"
-! Software
-! Path containing Andor library
-|-
-| Andor SDK
-| C:\Program Files\Andor SOLIS\Drivers\
-|-
-| Andor Solis
-| C:\Program Files\Andor SOLIS\
-|-
-| Andor iQ
-| Not applicable since iQ uses a C++ interface wrapper to combine SDK2 and SDK3
-|-
-| MDS Metamorph 7
-| C:\MM\vinput\andor\
-|}
+    C:\Program Files\Andor Driver Pack 2\atmcd32d.dll
+    C:\Program Files\Andor Driver Pack 2\atmcd64d.dll
 
 === Install driver for PCI / PCIe card in Windows ===
 Make sure there is no yellow question mark next to the device, and that it is present in the Device Manager.
@@ -357,21 +278,9 @@ If there is a yellow question mark, right-click on the device, update the driver
  Include this location in the search >
 |}
 
-...and use the path below according to the software you have installed:
+...and use the path:
 
-{| class="wikitable"
-! Software
-! Path containing Andor device driver
-|-
-| Andor SDK
-| C:\Program Files\Andor SOLIS\Drivers\
-|-
-| Andor Solis
-| C:\Program Files\Andor SOLIS\
-|-
-| Andor iQ
-| C:\Program Files (x86)\Andor Bioimaging\Common Files\Drivers\
-|}
+    C:\Program Files\Andor Driver Pack 2\Device Drivers\
 
 
 === Uninstall driver for PCI / PCIe card in Windows so that it can be updated ===
@@ -380,9 +289,58 @@ If there is a yellow question mark, right-click on the device, update the driver
 #*: http://technet.microsoft.com/en-us/library/cc725782.aspx#bkmk_2
 #* When uninstalling, make sure to select <code>Delete the driver software for this device</code>.
 #* Use <code>Scan for Hardware Changes</code> Action in the Device Manager as described in the guide.  If it finds the driver, repeat this uninstall process until all copies of the driver are deleted.
-# Upgrade to Andor camera SDK.
+# Upgrade to Andor camera Driver.
 # Windows now uses the new <code>sys</code> file.
 # Restart Windows twice.  After the first restart you see a yellow question mark next to the driver in the Device Manager saying the driver failing to load (Code 31). Restarting Windows the second time clears this error.
 
+=== Fixing computer bus speed bottlenecks ===
+==== PCIe ====
+iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason for this is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.
+
+For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed when the PCIe 16x graphics card is populated, so you have to instead connect the Andor PCIe card to 8x PCIe slot
+
+==== PCI ====
+iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
+
+==== USB ====
+USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
+
+===== Windows O/S =====
+
+You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
+
+Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
+[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
+
+===== Linux O/S =====
+
+You can easily check USB bus position with '''lsusb -t'''.  
+The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+
+      $ lsusb -t
+      Bus#  5
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+      Bus#  4
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+        |-Dev#   2 Vendor 0x046d Product 0xc045
+        `-Dev#   3 Vendor 0x2341 Product 0x0001
+      Bus#  3
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+        `-Dev#   2 Vendor 0x03f9 Product 0x0100
+      Bus#  2
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+      Bus#  1
+      `-Dev#   1 Vendor 0x1d6b Product 0x0002
+        `-Dev#   6 Vendor 0x136e Product 0x000e
+
+      $ lsusb
+      Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
+      Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
+      Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 001 Device 006: ID 136e:000e  
+      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 {{Devices_Sidebar}}
