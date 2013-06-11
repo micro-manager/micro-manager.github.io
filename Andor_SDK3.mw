@@ -25,13 +25,6 @@
 
 == Installation ==
 
-=== µManager ===
-Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
-
-=== Image I/O plugin ===
-'''Recommended for Multi-Dimensional Acquisition:'''
-[http://ij-plugins.sourceforge.net/plugins/imageio/index.html Download Image I/O] and copy it to the plugins directory in the root µManager folder.  ImageI/O will appear as an ImageJ plugin.
-
 === Andor Driver ===
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
@@ -53,8 +46,6 @@ Without these 3 files, "AndorSDK3" will not show up in Available Devices in the 
 Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
 
 Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management] settings
-
-
 
 == Configuration ==
 
