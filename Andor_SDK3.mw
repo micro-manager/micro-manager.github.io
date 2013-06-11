@@ -35,16 +35,19 @@ Install version [[Download_Micro-Manager_Latest_Release|1.4.10 or later]].
 === Andor Driver ===
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
-Install the latest SDK3 version available from the [http://www.andor.com/my/login.aspx MyAndor website] and restart the computer.
+Install the Andor Driver Pack and restart the computer. This is publicly available on MyAndor website under Drivers and 3rd Party > Andor Driver Pack (sCMOS). Yes, you have to register and login to download the file.
 
-If using 1.4.11 or later, please use 3.4.30007.0 or later SDK3 version.
+From the driver pack directory:
+
+    C:\Program Files\Andor Driver Pack 3\
 
 Copy these 3 files to the Micro-Manager root directory:
-* atcore.dll
-* atdevregcam.dll
-* atcl_bitflow.dll
 
-{{Note|Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2}}
+    atcore.dll
+    atdevregcam.dll
+    atcl_bitflow.dll
+
+Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2
 
 === Disable computer power savings ===
 Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
@@ -60,7 +63,7 @@ It is possible to achieve full frame rate with enough RAM. Again using a 64-bit 
 
       Edit > Options > Memory & Threads ... > Maximum Memory
 
-{{Note|You must restart uManager for this change to take effect}}
+Restart uManager for this change to take effect.
 
 == Usage notes ==
 
@@ -88,7 +91,7 @@ Due to the rate that the camera acquires data it's not uncommon for µManager to
       Micro-Manager Error:
       Error: Circular buffer overflowed.
 
-{{Note|You must restart uManager for this change to take effect}}
+Restart uManager for this change to take effect.
 
 
 == Resources ==
@@ -96,11 +99,6 @@ Due to the rate that the camera acquires data it's not uncommon for µManager to
 Please liaison with Micro-Manager developers to contact the Andor software team
 
 {{Listserv_Search|Andor}}
-
-=== Test camera communication ===
-The Andor SDK3 installs test programs that can be used to get live images:
-
-      C:\Program Files\Andor SOLIS for Neo\Drivers\Examples\C\
 
 === Andor support ===
 * [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS Web support]
