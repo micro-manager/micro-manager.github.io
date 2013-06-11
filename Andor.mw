@@ -28,6 +28,8 @@ Commercial computers like Dell, HP, etc shipped in the US and Europe are legally
 
 Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management and USB suspend] settings
 
+=== (USB only) Finding a dedicated USB 2.0 bus ===
+High-bandwidth USB cameras like the Clara and iXon may lose communication during imaging if they share a USB bus with another high bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).  Plug the camera into it's own [[#Windows USB Bus|USB bus]] on the computer.
 
 == Device Configuration ==
 # Open Micromanager.
@@ -77,56 +79,6 @@ iXon camera:
 | 1.70 (microseconds)
 | Normal
 |}
-
-
-== Device Settings ==
-
-=== Pre-Amplifier Gain (PAG) ===
-* It's best to think of Pre-Amplifier Gain as follows:
-*:4x = High sensitivity mode (use for EM gain)
-*:2x = Intermediate sensitivity / capacity mode
-*:1x = High capacity mode
-*:
-{{Note|For EMCCDs, Andor's nomenclature of PAG is confusing since one may think this "pre-" amplification happens before EM gain amplification.  In reality, EM amplification happens on sensor, and PAG happens after readout of your sensor and before digitization.}}
-* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor, e.g. for a particular camera the values could be 1x, 2.4x, 4.9x
-* PAG can affect the saturation limit of your image.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
-
-{{MessageBox|Warning|Always set PAG to maximum "High sensitivity mode" when using EM gain.  Lower settings of PAG is useful in Life Sciences only in Conventional (non-EM) mode}}
-
-=== Electron Multiplying Gain (EM Gain) ===
-==== EMgain range ====
-* EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
-* The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
-
-==== EMgain slew rate ====
-{{MessageBox|Warning|Typically EM gain levels should not be made to change during an experiment.
-The software and camera has no problem in changing the level, but there is a 1-3 second delay for the new gain value to come into effect which affects data.}}
-
-e.g. if you are imaging confocal fluorescence data and DIC, and you need lower or no EM gain for DIC, one would need a 3 second delay before and after the DIC image to allow for EM gain to slew.
-|}
-* iXon, iXon+, Luca-R and Luca-S
-* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
-* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
-* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
-* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
-
-==== iXon Conventional CCD or EM-CCD mode ====
-* With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
-* EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
-* Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
-
-=== iCam ===
-* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions.
-* µManager needs to implement SequenceExposure functions to use this feature.  No camera DeviceAdapter implements this yet.
-
-=== Cooling ===
-* iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
-* Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
-* Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
-* No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
-* Full gain will not be achievable without cooling. 
-* EMgain is temperature compensated for RealGain cameras. 
-* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
 == Troubleshooting (known issues and fixes) ==
 
@@ -218,6 +170,57 @@ This error appears in the hardware wizard in Windows if the Andor Device Driver 
 |Copy Andor Driver 2.88.30002.0 or older DLL to µManager directory
 |}
 
+=== Fixing computer bus speed bottlenecks ===
+==== PCIe ====
+iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason for this is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.
+
+For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed when the PCIe 16x graphics card is populated, so you have to instead connect the Andor PCIe card to 8x PCIe slot
+
+==== PCI ====
+iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
+
+==== USB ====
+USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
+
+===== Windows USB Bus =====
+
+You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
+
+Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
+[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
+
+===== Linux USB Bus =====
+
+You can easily check USB bus position with '''lsusb -t'''.  
+The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+
+      $ lsusb -t
+      Bus#  5
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+      Bus#  4
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+        |-Dev#   2 Vendor 0x046d Product 0xc045
+        `-Dev#   3 Vendor 0x2341 Product 0x0001
+      Bus#  3
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+        `-Dev#   2 Vendor 0x03f9 Product 0x0100
+      Bus#  2
+      `-Dev#   1 Vendor 0x1d6b Product 0x0001
+      Bus#  1
+      `-Dev#   1 Vendor 0x1d6b Product 0x0002
+        `-Dev#   6 Vendor 0x136e Product 0x000e
+
+      $ lsusb
+      Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
+      Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
+      Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+      Bus 001 Device 006: ID 136e:000e  
+      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+
 == Resources ==
 
 === Development support ===
@@ -231,7 +234,7 @@ http://www.andor.com/contact_us/default.aspx
 
 == Appendix ==
 
-=== Updating Andor library (DLL) ===
+=== Update Andor library (DLL) ===
 If Micro-Manager's Andor library is too old, adding (i.e. initializing) your Andor camera in the Hardware configuration wizard can result in:
 * Error code 22
 * Micro-Manager crash (with no error in the CoreLog)
@@ -241,7 +244,8 @@ To fix this, update the Andor library used by Micromanager by copying the librar
     C:\Program Files\Andor Driver Pack 2\atmcd32d.dll
     C:\Program Files\Andor Driver Pack 2\atmcd64d.dll
 
-=== Install driver for PCI / PCIe card in Windows ===
+=== Windows drivers ===
+==== Install PCI/e driver ====
 Make sure there is no yellow question mark next to the device, and that it is present in the Device Manager.
 
 {| class="wikitable"
@@ -281,7 +285,7 @@ If there is a yellow question mark, right-click on the device, update the driver
     C:\Program Files\Andor Driver Pack 2\Device Drivers\
 
 
-=== Uninstall driver for PCI / PCIe card in Windows so that it can be updated ===
+==== Uninstall PCI/e card to update ====
 # Uninstall the existing device driver for the Andor PCI/e framegrabber card:
 #* The following Microsoft guide explains who to do this, but there is no need to physically remove the card as described in step 6 of the Uninstall section:
 #*: http://technet.microsoft.com/en-us/library/cc725782.aspx#bkmk_2
@@ -291,54 +295,54 @@ If there is a yellow question mark, right-click on the device, update the driver
 # Windows now uses the new <code>sys</code> file.
 # Restart Windows twice.  After the first restart you see a yellow question mark next to the driver in the Device Manager saying the driver failing to load (Code 31). Restarting Windows the second time clears this error.
 
-=== Fixing computer bus speed bottlenecks ===
-==== PCIe ====
-iXon PCIe cameras can have their live stream stops after 2 or 3 images or not start at all.  The reason for this is PC motherboards throttle the PCIe speed depending on the daughter boards populated.  Make sure you plug the PCIe card into a fast enough bus.
 
-For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed when the PCIe 16x graphics card is populated, so you have to instead connect the Andor PCIe card to 8x PCIe slot
+=== Description of Device Settings ===
 
-==== PCI ====
-iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
+==== Pre-Amplifier Gain (PAG) ====
+* It's best to think of Pre-Amplifier Gain as follows:
+*:4x = High sensitivity mode (use for EM gain)
+*:2x = Intermediate sensitivity / capacity mode
+*:1x = High capacity mode
+*:
+{{Note|For EMCCDs, Andor's nomenclature of PAG is confusing since one may think this "pre-" amplification happens before EM gain amplification.  In reality, EM amplification happens on sensor, and PAG happens after readout of your sensor and before digitization.}}
+* PAG multipliers like 1x, 2x, 4x can vary between cameras since they are tuned for each sensor, e.g. for a particular camera the values could be 1x, 2.4x, 4.9x
+* PAG can affect the saturation limit of your image.  To determine the expected digital saturation limit, consult your camera performance sheet of your camera.  Divide the "Saturation Signal per Pixel (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to get saturation signal in digital counts.
 
-==== USB ====
-USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
+{{MessageBox|Warning|Always set PAG to maximum "High sensitivity mode" when using EM gain.  Lower settings of PAG is useful in Life Sciences only in Conventional (non-EM) mode}}
 
-===== Windows O/S =====
+==== Electron Multiplying Gain (EM Gain) ====
+===== EMgain range =====
+* EMgain does not start at 1 for all cameras.  The start level is tuned for each EMCCD chip. 
+* The actual EM gain range depends on the model of your camera: it can be from 0 to 255 (non-linear), 4096 (non-linear), or RealGain 1000 (linear)
 
-You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
+===== EMgain slew rate =====
+{{MessageBox|Warning|Typically EM gain levels should not be made to change during an experiment.
+The software and camera has no problem in changing the level, but there is a 1-3 second delay for the new gain value to come into effect which affects data.}}
 
-Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
-[[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
+e.g. if you are imaging confocal fluorescence data and DIC, and you need lower or no EM gain for DIC, one would need a 3 second delay before and after the DIC image to allow for EM gain to slew.
+|}
+* iXon, iXon+, Luca-R and Luca-S
+* EM gain circuitry is powered by a high +53V voltage rail and the gain applied to the EM readout register is proportional to this voltage.
+* Thus when you increase or decrease the EM gain on the camera, you have to wait for the voltage slew to stabilize at the new set value.
+* This is typically about 1-2 seconds, the maximum time being from setting EM gain from 0 to the maximum value of 1000. 
+* Thus it is much better to vary exposure times or excitation signal intensity rather than switching EM gain levels in a multi-channel acquisition (unless you know what you are doing)
 
-===== Linux O/S =====
+===== iXon Conventional CCD or EM-CCD mode =====
+* With the exception of the 885, you can switch between CCD and EMCCD modes via the Output_Amplifier setting
+* EMCCD readout without EM gain is more noisy (~40e read noise) so Conventional readout (~6e read noise) is beneficial if light levels do not require EM gain.
+* Benefits of EM gain combating the EMCCD readout register noise of ~40e can be seen from 45x onward, i.e it is better to use 45x EM gain and upward.
 
-You can easily check USB bus position with '''lsusb -t'''.  
-The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has been correctly plugged into its own USB bus (Bus# 1):
+==== iCam ====
+* Allows for [http://www.andor.com/software/icam/ rapid switching of exposure times] in multi-channel acquisitions.
+* µManager needs to implement SequenceExposure functions to use this feature.  No camera DeviceAdapter implements this yet.
 
-      $ lsusb -t
-      Bus#  5
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-      Bus#  4
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-        |-Dev#   2 Vendor 0x046d Product 0xc045
-        `-Dev#   3 Vendor 0x2341 Product 0x0001
-      Bus#  3
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-        `-Dev#   2 Vendor 0x03f9 Product 0x0100
-      Bus#  2
-      `-Dev#   1 Vendor 0x1d6b Product 0x0001
-      Bus#  1
-      `-Dev#   1 Vendor 0x1d6b Product 0x0002
-        `-Dev#   6 Vendor 0x136e Product 0x000e
-
-      $ lsusb
-      Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
-      Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
-      Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-      Bus 001 Device 006: ID 136e:000e  
-      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+==== Cooling ====
+* iXon cameras MUST be cooled to the specified temperature: at least -60 C for DV models and -70 C for DU models. 
+* Offset ("Baseline") is optimal at this setting.  If the camera is not cooled, the offset can be display as 0 data counts.
+* Some blemishes are compensated at the specified temperature setting and will be more visible at warmer temperatures. 
+* No need to warm up cameras before shutdown of software and computer (since condensation does not occur). 
+* Full gain will not be achievable without cooling. 
+* EMgain is temperature compensated for RealGain cameras. 
+* Clara must be cooled to the specified temperature: -45 C with fan, -15 C without.  The Clara-E is fixed at cooling to -20 C, so no action is needed to set its temperature
 
 {{Devices_Sidebar}}
