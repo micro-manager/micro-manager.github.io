@@ -24,7 +24,7 @@
 |}
 </table>
 
-This adapter interfaces to the [http://www.yokogawa.co.jp Yokogawa] [http://www.yokogawa.com/scanner/products/csuX1e.htm CSUX] family of spinning disk confocal scanheads.  There is no additional software needed.  Connect the CSUX controller to an available serial port on your computer.   You will need to define the ''Hub'' device, and assign the correct serial port to it. 
+This adapter interfaces to the [http://www.yokogawa.com/ Yokogawa] [http://www.yokogawa.com/scanner/products/csuX1e.htm CSUX] family of spinning disk confocal scanheads.  There is no additional software needed.  Connect the CSUX controller to an available serial port on your computer.   You will need to define the ''Hub'' device, and assign the correct serial port to it. 
 
 The CSUX can have up to 2 filter wheels.  If you have only one, use the default number (1) for your filter wheel.  DriveSpeed has a property called 'AutoAdjust'.  You can enter here the exposure time (in milliseconds) you are using.  The scanhead will then calculate a disk speed at which you will get a integral number of disk rotations during that exposure.  This can help reduce artefacts in your image.  If you change the disk speed using other controls, the value for this property will go back to 0. 
 {{Note|After changing drive speed, the software will wait until the speed is within ~5% of its final target.  Use the "Refresh" button to get the correct speed.}}
