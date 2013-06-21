@@ -6,7 +6,7 @@ First make sure you have enough hard disk space. 5 GB is probably enough.
 Create a directory named <code>projects</code>. The <code>projects</code> directory may reside anywhere you like and will contain the subdirectories <code>micro-manager1.4</code>, <code>3rdpartypublic</code>, and <code>3rdparty</code>.
 
 ====Downloading the source code====
-Obtain a [http://subversion.apache.org/packages.html#windows Subversion client]. From <code>projects/</code>, run:
+To check out the [[Micro-Manager Source Code]], first obtain a [http://subversion.apache.org/packages.html#windows Subversion client]. From <code>projects/</code>, run:
 
 <code><pre>svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
 svn co https://valelab.ucsf.edu/svn/3rdpartypublic/</pre></code>
