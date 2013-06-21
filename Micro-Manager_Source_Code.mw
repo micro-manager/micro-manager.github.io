@@ -6,15 +6,12 @@ __NOTOC__
 
 Micro-Manager is structured in three distinct layers: Graphical User Interface (GUI), Device Adapters and MMCore. All source files, except ones carrying a different license notice in the header, are copyright of University of California. GUI and Device adapters are distributed under the "[http://www.opensource.org/licenses/bsd-license.php BSD]" license, while MMCore is distributed under "[http://www.opensource.org/licenses/lgpl-license.php Lesser GPL]" license. License text files are included in the source package, and each file should have a header stating the exact type of license. A good starting point to learn more about the Open Source Code licensing is http://www.opensource.org/. If you have any questions or need some clarification regarding our licensing terms please let us know: [mailto:info@micro-manager.org info@micro-manager.org]<br /><br />
 
-== Current release available through our subversion repository ==
+== Subversion repository for current development version ==
 
 To access the subversion repository you will need a [http://subversion.tigris.org/ subversion client].
 
 https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4<br />
 https://valelab.ucsf.edu/svn/3rdpartypublic - 3rd party files needed for Release 1.4<br />
-<br />
-https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />
-https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
 
 {{MessageBox|Note|There is currently an issue that prevents the Subversion 1.8.0 client from checking out our public repositories (unless you have a username). Until this is fixed, please use Subversion 1.7.x.|color=#1C879D}}
 
@@ -27,6 +24,9 @@ More information on how to build Micro-Manager can be found here:
 * [[Building Micro-Manager Device Adapters]]
 * [[Building and debugging Micro-Manager source code]]
 
-== Previous source code releases ==
+== Source code for previous releases ==
+
+https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />
+https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
 
 [http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/micro-manager-1.1.47.tar.gz <span>'''Micro-Manager source code 1.1.47, (January 28, 2008) tar.gz package, 1.4 MB'''</span>]<br />[http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/micro-manager-1.0.69.tar.gz <span>'''Micro-Manager source code 1.0.69, (May 1, 2007) tar.gz package, 1.2 MB '''</span>]<br />
