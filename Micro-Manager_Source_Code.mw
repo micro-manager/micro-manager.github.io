@@ -10,13 +10,22 @@ Micro-Manager is structured in three distinct layers: Graphical User Interface (
 
 To access the subversion repository you will need a [http://subversion.tigris.org/ subversion client].
 
-Note: There is currently an issue that prevents the Subversion 1.8.0 client from checking out our public repositories (unless you have a username). Until this is fixed, please use Subversion 1.7.x.
-
 https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4<br />
 https://valelab.ucsf.edu/svn/3rdpartypublic - 3rd party files needed for Release 1.4<br />
 <br />
 https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3 - Release 1.3<br />
 https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2 - Release 1.2<br />
+
+{{MessageBox|Note|There is currently an issue that prevents the Subversion 1.8.0 client from checking out our public repositories (unless you have a username). Until this is fixed, please use Subversion 1.7.x.|color=#1C879D}}
+
+To build Micro-Manager 1.4, you should place the micromanager2 (trunk) and 3rdpartypublic repositories in the same directory. For example, run the following from your projects directory:
+
+<code><pre>svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
+svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic</pre></code>
+
+More information on how to build Micro-Manager can be found here:
+* [[Building Micro-Manager Device Adapters]]
+* [[Building and debugging Micro-Manager source code]]
 
 == Previous source code releases ==
 
