@@ -97,7 +97,7 @@ In the mmstudio directory from the commandline, run:
 
 To build the entire Micro-Manager project for Windows with a single command, µManager 1.4 provides a batch file in the source repository in buildscripts. You need to have the installed tools and libraries described above: ant, Java JDK, boost, zlib and some java jar stuff.
 
-From the C++ source, you can build the 32 bit version with the free 'Express' version of Visual Studio, though per my understanding, you need at least the 'Professional' version to build the 64 bit binaries. As of this writing, we are using the 2008 version of Visual studio. It's been built and tested preliminarily with Visual Studio 2010 also.
+From the C++ source, you can build the 32 bit version with the free 'Express' version of Visual Studio, though per my understanding, you need at least the 'Professional' version to build the 64 bit binaries. As of this writing, we are using the 2008 version of Visual studio. It's been built and tested preliminarily with Visual Studio 2010 also (some modification to the project files is necessary).
 
 To build the 32 bit binary, open a command prompt and type
 
