@@ -16,8 +16,9 @@ svn co https://valelab.ucsf.edu/svn/3rdpartypublic/</pre></code>
 To build the entire application from the source code, you will need to install the following tools:
 
 To build device adapters:
-# Microsoft Developer Studio 2008 or [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] (Express is fine, and doesn't cost anything.)
-# the newest [http://msdn.microsoft.com/en-us/windows/desktop/aa904949 Microsoft Windows Desktop SDK], if you are using Visual Studio 2010 Express
+# Microsoft Visual Studio 2008 (Express is fine, and doesn't cost anything.)
+
+(Work is underway to migrate Micro-Manager to Visual Studio 2010.)
 
 Additionally, to build the entire Micro-Manager package:
 # [http://java.sun.com/javase/downloads/index.jsp JDK Standard Edition] 6 or later
