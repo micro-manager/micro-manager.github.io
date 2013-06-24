@@ -49,7 +49,7 @@ __NOTOC__
 ** Fixes to ZeissCAN29
 ** Thorlabs BD102 stage (Nenad Amodaj)
 ** Thorlabs Scientific Imaging (TSI) Camera
-** Andor3 (supports new Neos camera)
+** AndorSDK3 (supports new Neo camera)
 ** CARV II spinning disk confocal
 ** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
 ** Coherent Sapphire Laser (Karl Hoover and Paul Wiggins)
