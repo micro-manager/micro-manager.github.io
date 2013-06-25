@@ -1,13 +1,13 @@
 == National Instruments Adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls NI I/O boards through MDAQ interface</td></tr>
+'''Summary:'''</td><td>Controls NI I/O boards through NI-DAQmx interface</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj, 100X Imaging Inc</td></tr>
 <tr><td>'''License:'''</td><td>LGPL License</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows only</td></tr>
 </table>
 
-This adapter implements Signal I/O micro-manager device, by using NI MDAQ interface. Most (or all) of the newer NI boards should be compatible. NI software (drivers) must be installed. LabView is not required.
+This adapter implements Signal I/O micro-manager device, by using NI-DAQmx interface. The version of the NI-DAQmx library used to build this adapter is 9.2. Most (or all) of the newer NI boards should be compatible. NI software (drivers) must be installed. LabView is not required.
 
 Besides NI100X adapter this library contains a PI Z-stage driver that is internally linked to the analog output. For regular use of NI boards please disregard the Z-stage device and do not instantiate it in your setup even if you happen to have a PI stage attached. To use a PI stage refer to a standard PI adapter elsewhere in the micro-manager device list.
 
