@@ -66,6 +66,11 @@ Restart uManager for this change to take effect.
 
 == Troubleshooting ==
 
+=== Zyla support in Micro-Manager ===
+
+Minimum version required is 1.4.11 (Nov 8th, 2012)
+Consider trying the latest nightly build from [http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ here.]
+
 === DeviceCreate function failed ===
 
 This error appears in the hardware wizard if the Andor camera SDK has been installed, but the computer has not been restarted.
@@ -83,7 +88,6 @@ Due to the rate that the camera acquires data it's not uncommon for µManager to
       Error: Circular buffer overflowed.
 
 Restart uManager for this change to take effect.
-
 
 == Resources ==
 === Development support ===
