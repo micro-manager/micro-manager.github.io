@@ -18,10 +18,10 @@ This adapter communicates to all the devices in the Ti through the TIScope hub d
 
 This adapter uses the driver and API supplied by Nikon. The latest version of Ti Setup Tool (which includes a driver for the Ti microscope) can be downloaded from the [http://www.nikon-instruments.jp/eng/service/download/DLList.aspx?CID=3  Nikon website].
 
-The required Nikon driver and interface libraries can also be installed using our own (experimental, untested) installer:<br />
-[[Media:TiSDKRedist32-4.4.1.672.zip|32-bit version 4.4.1.672]],
-[[Media:TiSDKRedist64-4.4.1.672.zip|64-bit version 4.4.1.672]]<br />
-To uninstall either of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher. '''These don't work yet - new files will be posted when issues are resolved.'''
+The required Nikon driver and interface libraries can also be installed using our own ('''experimental, untested''') installer:<br />
+[[Media:TiSDKRedist32-4.4.1.672.zip|32-bit version 4.4.1.672]] (updated on July 1, 2013),
+[[Media:TiSDKRedist64-4.4.1.672.zip|64-bit version 4.4.1.672]] (updated on July 1, 2013)<br />
+To uninstall either of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher.
 
 Whichever way you install the drivers, it is best to uninstall any previously installed version, so that you are sure you are using the version you installed (especially if you are troubleshooting).
 
