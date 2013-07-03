@@ -18,10 +18,31 @@ This adapter communicates to all the devices in the Ti through the TIScope hub d
 
 This adapter uses the driver and API supplied by Nikon. The latest version of Ti Setup Tool (which includes a driver for the Ti microscope) can be downloaded from the [http://www.nikon-instruments.jp/eng/service/download/DLList.aspx?CID=3  Nikon website]. However, as of this writing (July 2013), it looks like Nikon has not been updating Ti Setup Tool with the latest driver and interface library DLLs since 2011.
 
-The required Nikon driver and interface libraries can also be installed using our own ('''experimental, untested''') installer:<br />
-[[Media:TiSDKRedist32-4.4.1.672.zip|32-bit version 4.4.1.672]] (updated on July 3, 2013),
-[[Media:TiSDKRedist64-4.4.1.672.zip|64-bit version 4.4.1.672]] (updated on July 3, 2013)<br />
-After installing one of these, you will need to tell Windows to use the new driver by opening the Windows Device Manager, finding the Nikon Ti microscope (under Imaging Devices), and choosing Properties from the right-click menu. Click Update Driver and tell Windows to search C:\Program Files\Nikon\Shared\Drivers (or the appropriate equivalent on your system). Note that the driver version number differs from the library (DLL) version numbers (the DLLs are normally installed in C:\Program Files\Nikon\Shared\Bin). To uninstall either of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher and you can right-click to uninstall.
+The required Nikon driver and interface libraries (a.k.a. the redistributable components of the Nikon Ti SDK) can also be installed using our own ('''experimental''') installer:
+
+{| class="wikitable"
+! SDK Version
+! 32-bit Installer !! 32-bit Driver Version
+! 64-bit Installer !! 64-bit Driver Version
+|-
+| 4.2.3.572
+| N/A || 2.0.2.1
+| N/A || 2.0.2.1
+|-
+| 4.3.2.622
+| N/A || 2.0.2.1
+| N/A || 2.0.2.2
+|-
+| 4.3.3.628
+| N/A || 2.0.2.1
+| N/A || 2.0.2.2
+|-
+| 4.4.1.672
+| [[Media:TiSDKRedist32-4.4.1.672.zip|32-bit 4.4.1.672]]<br />(updated July 3, 2013) || 2.0.2.1
+| [[Media:TiSDKRedist64-4.4.1.672.zip|64-bit 4.4.1.672]]<br />(updated July 3, 2013) || 2.0.5.1
+|}
+
+After installing one of these, you will need to tell Windows to use the new driver by opening the Windows '''Device Manager''', finding the Nikon Ti microscope (under Imaging Devices), and choosing Properties from the right-click menu. Click '''Update Driver''' and tell Windows to search C:\Program Files\Nikon\Shared\Drivers (or the appropriate equivalent on your system). Note that the driver version number differs from the SDK and library (DLL) version numbers (the main DLL is normally installed at C:\Program Files\Nikon\Shared\Bin\NikonTi.dll). To '''uninstall''' any of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher and you can right-click to uninstall.
 
 Whichever way you install the drivers, it is best to uninstall any previously installed version, so that you are sure you are using the version you installed (especially if you are troubleshooting). This is not absolutely necessary when upgrading, but to revert to an older version of the driver and DLLs, you need to uninstall all packages that include them.
 
