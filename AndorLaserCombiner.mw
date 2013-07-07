@@ -23,31 +23,69 @@
 ----
 
 
+== Installation ==
+* Downloads the files to match the 32- or 64-bit version of µManager you have installed:
+<blockquote>
+{| class="wikitable"
+!
+! 32-bit
+! 64-bit
+|-
+! Andor Library
+| [[:File:libalc_x86.tar.gz|libalc_x86.tar.gz]]
+| [[:File:libalc_x64.tar.gz|libalc_x64.tar.gz]]
+|-
+! Visual C++ 2008 redist
+| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x86.exe]
+| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x64.exe]
+|}</blockquote>
+* Unzip the <code>Andor library</code> to a new folder (you may need to download [http://www.7-zip.org/ 7-zip]):
+          C:\ProgramData\Andor_ALC_library\
+<!-- Setting up the PATH is not super easy and should be moved to its own page or template for consistency -->
+* Add the above folder to your Windows <code>PATH</code> variable, namely:
+** Right-click the My Computer icon on the desktop or start menu
+** Click <code>Properties</code> and on the <code>Advanced</code> tab choose <code>Environment</code> variables.
+** On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\ProgramData\Andor_ALC_library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
+** Restart your computer for the new <code>PATH</code> to take effect.
+* That's it!  If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
-== Getting Started ==
-* You need to download a copy of the Andor Laser Combiner SDK (ALC_SDK).  It is not publicly available.  To gain access to it, register/sign-into your MyAndor web account on the Andor homepage, click on Software > Downloads, uncheck the "Display only files I have access to", select "DRIVER: Andor ALC SDK 2.0" and request access.
-* ALC_SDK 2.0 is the current version as of July 29, 2011
 
-== Installing the Device Adapter ==
-=== Setup the ALC_SDK ===
-# [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 Download] and install VC 2008 redistributable.  The ALC_SDK library requires this.
-# Unzip the ALC_SDK file
-# (only for 64-bit users) Copy <code>usb2i2cio64.dll</code> installed by your DeVaSys dependency to the Micro-Manager executable folder.  This file will be installed at <code>C:\Program Files (x86)\DeVaSys\UsbI2cIo\Drivers and DLLs (32 and 64 bit)</code>
-# Copy the ALC_SDK library <code>AB_ALC_REV64.dll</code> (or for 32-bit users AB_ALC_REV.dll) from the <code>Libraries</code> directory to your Micro-Manager folder.
+== Device Configuration ==
+* Add the <code>AndorLaserCombiner</code> main device to your hardware configuration.
+* Add the <code>Piezostage</code> option for your system to use Andor's analog control for Piezo Z.  Generally, confocal systems have this configuration since it moves the Piezo faster than RS-232 serial control (if you are unsure about this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC connected from A5 to your Piezo Z controller, you should enable this option).
+* Set <code>MultiPortUnitPresent</code> as the default "0" (false) if you only see a single fiber optic connected horizontally to the front of the laser combiner.  Otherwise select "1" (true) if you see the multi fiber optic switcher attachment.
+* Set the "Default shutter" as the <code>AndorLaserCombiner</code> and use the default <code>Delay [ms]</code> of <code>0.0</code> since an AOTF gates the laser output.
 
-If you already have control of your ALC in another software, your ALC_SDK installation is complete.  Otherwise continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
-{{Note|iQ's FLZ can conflict with Micro-Manager's device adapter if you are not using version 1.12 of Instacal.  Specifically, if you have trouble detecting the ALC in Micro-Manager remove the DEMO-BOARD from Instacal}}
+== Troubleshooting (known issues and fixes) ==
 
-=== Configuring Micro-Manager ===
-* Support for the AndorLaserCombiner was introduced in Micro-Manager 1.3.47
-* During hardware setup from Tools > Hardware Configuration Wizard...
-** You must add the '''AndorLaserCombiner'''.  Select "1" (true) for MultiPortUnitPresent if you have the 3 fiber optic multiport unit (MPU) controller attachment on the front of your laser combiner.  Otherwise if you only see a single fiber optic connected horizontally to the front of the laser combiner, choose the default "0" (false).
-** Add '''AndorLaserCombiner Piezostage''' if your system uses Andor's analog control for piezo Z.  Generally, confocal systems have this configuration.  If you are unsure if you have this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC connected from A5 to your Piezo Z controller, you should enable this option.
-** Set the "Default shutter" as the AndorLaserCombiner
-** Use the default Delay [ms] of 0.0
+=== No laser, but laser emission LEDs are illuminated ===
+{| class="wikitable"
+!Description
+|The hardware appears to be operating correctly, but there is no laser output.  The camera is running live, feeding the Active Blanking signal.
+|-
+!Cause
+|DEMO-BOARD device listed in InstaCal
+|-
+!Workaround
+|Delete the DEMO-BOARD device by opening InstaCal from <code>Start Menu > Programs > Measurement Computing</code>
+|}
+
+=== Microsoft Visual C++ error(s) opening HCW ===
+{| class="wikitable"
+!Description
+|Opening the <code>Hardware Configuration Wizard</code> shows one or more of the following error windows, and closing the window immediately crashes µManager:
+|-
+!Cause
+|Bug in ALC_SDK (Laser power setting exceeding rated value) <!-- TODO: Add Andor's Bugzilla bug number -->
+|-
+!Workaround
+|Request Andor support to remotely connect to each laser head and adjust the "set power" (using the <code>p=</code> serial command) to the rated value of the laser head.
+|}
+
 
 == Resources ==
+
 === Laser Combiner questions ===
 For contacting Andor product support regarding any questions, use this [http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Revolution%C2%AE%20XD Andor Product Support link]
 
@@ -55,11 +93,23 @@ For contacting Andor product support regarding any questions, use this [http://w
 
 === Development support ===
 This driver is not actively maintained by the Andor software team.
-For feature requests or bug reports, please liaison with µManager developers on [[Micro-Manager_Community|the mailing list]] and Pariksheet Nanda. 
-
+For feature requests or bug reports, please liaison with µManager developers on [[Micro-Manager_Community|the mailing list]] and Pariksheet Nanda.
 
 
 == Appendix ==
+=== Setup the ALC_SDK ===
+{{Note|Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.}}
+* Support for the AndorLaserCombiner was introduced in µManager 1.3.47
+* The Andor Laser Combiner SDK (ALC_SDK) is not publicly available.  To gain access to it, register/sign-into your MyAndor web account on the Andor homepage, click on Software > Downloads, uncheck the "Display only files I have access to", select "DRIVER: Andor ALC SDK 2.0" and request access.
+* Unzip the ALC_SDK file.
+* (only for 64-bit users) Copy <code>usb2i2cio64.dll</code> installed by your DeVaSys dependency to the µManager executable folder.  This file will be installed at <code>C:\Program Files (x86)\DeVaSys\UsbI2cIo\Drivers and DLLs (32 and 64 bit)</code>
+* Copy the ALC_SDK library <code>AB_ALC_REV64.dll</code> (or for 32-bit users AB_ALC_REV.dll) from the <code>Libraries</code> directory to your µManager folder.
+* If you already have control of your ALC in another software, your ALC_SDK installation is complete.  Otherwise continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
+* (Optional for testing) Now start iQ with your new laser combiner configuration and test.  The ALC_SDK also includes a test program which turns lasers on sequentially and then off:
+
+      .\ALC_REV_SDK\Libraries\ALC_REVTest.exe
+      .\ALC_REV_SDK\Libraries\ALC_REVTest64.exe
+
 === Configure ALC_SDK dependencies ===
 * Install your OS dependencies, located under the unzipped ALC_SDK's <code>Drivers</code> directory.  Under each OS folder there are folders for the 3 dependency drivers:
 ** DeVaSys (for front USB control to enable interlocks)
@@ -83,11 +133,5 @@ For feature requests or bug reports, please liaison with µManager developers on
 **  With your <code>Hub</code> number of COM 201 noted above, reassign the remaining <code>Port_#0002, Port_#0003, Port_#0004</code> for that Hub as COM 202, 203, 204 as above.
 **  If your sled has 5 or 6 lasers you will be left with two more Prolific USB-to-Serial ports.  You will need to reassign <code>Port_#0002, Port_#0003</code> as COM 205 and 206, respectively
 * Restart the computer to apply the COM port changes
-
-=== Testing ===
-# (Optional for testing) Now start iQ with your new laser combiner configuration and test.  The ALC_SDK also includes a test program which turns lasers on sequentially and then off:
-
-      .\ALC_REV_SDK\Libraries\ALC_REVTest.exe
-      .\ALC_REV_SDK\Libraries\ALC_REVTest64.exe
 
 {{Devices_Sidebar}}
