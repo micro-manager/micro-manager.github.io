@@ -75,6 +75,7 @@
 {| class="wikitable"
 !Description
 |Opening the <code>Hardware Configuration Wizard</code> shows one or more of the following error windows, and closing the window immediately crashes µManager:
+[[File:Alc_mscv_error.jpg|frame|Figure: Error due to incorrect internal laser power setting]]
 |-
 !Cause
 |Bug in ALC_SDK (Laser power setting exceeding rated value) <!-- TODO: Add Andor's Bugzilla bug number -->
@@ -82,7 +83,6 @@
 !Workaround
 |Request Andor support to remotely connect to each laser head and adjust the "set power" (using the <code>p=</code> serial command) to the rated value of the laser head.
 |}
-
 
 == Resources ==
 
