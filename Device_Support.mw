@@ -7,7 +7,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[LeicaDMR]] - Leica DMR microscopes (and DMIRBE)
 * [[MoticMicroscope]] - Motic BA600 microscopes
 * [[NikonTE2000]] - Nikon TE2000 motorized microscope
-* [[NikonTI]] - Nikon TI microscope
+* [[NikonTI]] - Nikon Ti microscope
 * [[NikonAZ100]] - Nikon AZ100 Zoom microscope
 * [[Olympus]] - Olympus IX81 (Inverted)/BX61 (Upright)
 * [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
