@@ -32,6 +32,8 @@ Note: QCam 2.0.8 and above require the firewire card's driver to be upgraded fro
 
 --Fred at PMQI 10/4/2010
 
+Basic support for multiple cameras was added in the 20130718 nightly build (expected to be in release 1.4.15). You can select each camera when adding the QCam device in the Hardware Configuration Wizard. --[[User:Mark Tsuchida|Mark Tsuchida]] 18:28, 18 July 2013 (PDT)
+
 {{Listserv_Search|QImaging}}
 
 {{Devices_Sidebar}}
