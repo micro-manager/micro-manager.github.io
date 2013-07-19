@@ -16,7 +16,7 @@ This adapter communicates to all the devices in the Ti through the TIScope hub d
 
 == Installation ==
 
-This adapter uses the driver and API supplied by Nikon. The latest version of Ti Setup Tool (which includes drivers for the Ti microscope and TiControl, a control and configuration utility) can be downloaded from the [http://www.nikon-instruments.jp/eng/service/download/DLList.aspx?CID=3  Nikon website]. However, as of this writing (July 2013), it looks like Nikon has not been updating Ti Setup Tool with the latest driver and interface library DLLs since 2011.
+This adapter uses the driver and API supplied by Nikon. The latest version of Ti Setup Tool (which includes drivers for the Ti microscope and TiControl, a control and configuration utility) can be downloaded from the [http://www.nikon-instruments.jp/eng/service/download/DLList.aspx?CID=3  Nikon website]. However, as of this writing (July 2013), it looks like Nikon has not been updating Ti Setup Tool since 2011 (version 4.3.3.628).
 
 The required Nikon driver and interface libraries (a.k.a. the redistributable components of the Nikon Ti SDK) can also be installed using our own installer:
 
