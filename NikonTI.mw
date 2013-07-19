@@ -2,60 +2,6 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Adapter for Nikon Ti motorized microscopes</td></tr>
-<tr><td>'''Author:'''</td><td>Nico Stuurman and Roy Wollman<br>Karl Hoover (additional accessory devices, Matlab compatibility & maintenance)</td></tr>
-<tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows only (uses driver supplied by Nikon)</td></tr>
-<tr><td valign='top'>'''Devices:'''</td><td>TIScope, NosePiece, Shutter, Epi-Shutter, Optical Path, FilterBlockCassette,  Focus (z-drive), PerfectFocus, XYStage, HalogenLamp, TIRF attachment</td></tr>
-<tr><td width=20%>'''Since version'''</td><td>1.2.18</td></tr>
-
-<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
-</table>
-
-
-This adapter communicates to all the devices in the Ti through the TIScope hub device.  Thus, to use any of these devices, you will need to first define the TIScope device.   
-
-== Installation ==
-
-This adapter uses the driver and API supplied by Nikon. The latest version of Ti Setup Tool (which includes drivers for the Ti microscope and TiControl, a control and configuration utility) can be downloaded from the [http://www.nikon-instruments.jp/eng/service/download/DLList.aspx?CID=3  Nikon website]. However, as of this writing (July 2013), it looks like Nikon has not been updating Ti Setup Tool since 2011 (version 4.3.3.628).
-
-The required Nikon driver and interface libraries (a.k.a. the redistributable components of the Nikon Ti SDK) can also be installed using our own installer:
-
-{| class="wikitable"
-! SDK Version
-! 32-bit Installer !! 32-bit Driver Version
-! 64-bit Installer !! 64-bit Driver Version
-|-
-| 4.2.3.572
-| N/A || 2.0.2.1
-| N/A || 2.0.2.1
-|-
-| 4.3.2.622
-| N/A || 2.0.2.1
-| N/A || 2.0.2.2
-|-
-| 4.3.3.628
-| N/A || 2.0.2.1
-| N/A || 2.0.2.2
-|-
-| 4.4.1.672
-| [[Media:TiSDKRedist32-4.4.1.672.zip|32-bit 4.4.1.672]]<br />(updated July 3, 2013) || 2.0.2.1
-| [[Media:TiSDKRedist64-4.4.1.672.zip|64-bit 4.4.1.672]]<br />(updated July 3, 2013) || 2.0.5.1
-|-
-| 4.4.1.714
-| [[Media:TiSDKRedist32-4.4.1.714.zip|32-bit 4.4.1.714]]<br />(uploaded July 16, 2013)|| 2.0.5.1
-| [[Media:TiSDKRedist64-4.4.1.714.zip|64-bit 4.4.1.714]]<br />(uploaded July 16, 2013)|| 2.0.5.1
-|}
-
-After installing one of these, you will need to tell Windows to use the new driver by opening the Windows '''Device Manager''', finding the Nikon Ti microscope (under Imaging Devices), and choosing Properties from the right-click menu. Click '''Update Driver''' and tell Windows to search C:\Program Files\Nikon\Shared\Drivers (or the appropriate equivalent on your system). Note that the driver version number differs from the SDK and library (DLL) version numbers (the main DLL is normally installed at C:\Program Files\Nikon\Shared\Bin\NikonTi.dll).
-
-To '''uninstall''' any of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher and you can right-click to uninstall.
-
-It is normally okay to install both Nikon's Ti Setup Tool and our TiSDKRedist package. The newer DLLs and drivers will be used by both Micro-Manager and TiControl. To revert to an older version of the driver and DLLs, you will need to uninstall all the packages that include them (our TiSDKRedist, Ti Setup Tool, NIS-Elements, etc.).
-
-== Nikon Ti motorized microscope ==
-
-<table><tr><td>
-'''Summary:'''</td><td>Adapter for Nikon Ti motorized microscopes</td></tr>
 <tr><td>'''Author:'''</td><td>Nico Stuurman and Roy Wollman<br>Karl Hoover (additional accessory devices, Matlab compatibility)<br>Mark Tsuchida</td></tr>
 <tr><td>'''Maintainer:'''</td><td>Mark Tsuchida</td></tr>
 <tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
