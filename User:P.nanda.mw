@@ -9,13 +9,6 @@ My name is Pariksheet Nanda.  I have been a Support Engineer for Andor Technolog
 # Get familiar with the programming API
 # Add GNU/Linux packages to official µManager releases.  I want the project to be recognized on the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory] to have more visibility, and attract programmers and funding from other industries.  I maintain a repository for installing µManager on Gentoo GNU/Linux: https://github.com/omsai/micromanager-overlay
 
-== Current projects ==
-# Add sequence exposure support for Andor cameras using [http://www.andor.com/learning-academy/trigger-modes-ixon-ultra-and-ixon3-trigger-modes Andor's iCam feature]
-#* Code: https://github.com/omsai/micromanager/tree/sequence_exposure
-# Support CMake to build and release µManager, as a better platform independent solution build system (collaborating with Michael Curtis):
-#* Wiki: https://github.com/omsai/micromanager/wiki
-#* Code: https://github.com/omsai/micromanager/tree/cmake
-
 == Maintenance ==
 These are the wiki pages I maintain:
 * [[Andor]]
