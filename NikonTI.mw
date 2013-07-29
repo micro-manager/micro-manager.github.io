@@ -47,11 +47,13 @@ The required Nikon driver and interface libraries (a.k.a. the redistributable co
 | [[Media:TiSDKRedist64-4.4.1.714.zip|64-bit 4.4.1.714]]<br />(uploaded July 16, 2013)|| 2.0.5.1
 |}
 
-After installing one of these, you will need to tell Windows to use the new driver by opening the Windows '''Device Manager''', finding the Nikon Ti microscope (under Imaging Devices), and choosing Properties from the right-click menu. Click '''Update Driver''' and tell Windows to search C:\Program Files\Nikon\Shared\Drivers (or the appropriate equivalent on your system). Note that the driver version number differs from the SDK and library (DLL) version numbers (the main DLL is normally installed at C:\Program Files\Nikon\Shared\Bin\NikonTi.dll).
+After installing one of these, you might need to tell Windows to use the new driver by opening the Windows '''Device Manager''', finding the Nikon Ti microscope (under Imaging Devices), and choosing Properties from the right-click menu. Click '''Update Driver''' and tell Windows to search C:\Program Files\Nikon\Shared\Drivers (or the appropriate equivalent on your system). Note that the driver version number differs from the SDK and library (DLL) version numbers (the main DLL is normally installed at C:\Program Files\Nikon\Shared\Bin\NikonTi.dll).
 
 To '''uninstall''' any of these packages, go to the Programs and Features control panel; the package should be listed with Micro-Manager as Publisher and you can right-click to uninstall.
 
 It is normally okay to install both Nikon's Ti Setup Tool and our TiSDKRedist package. The newer DLLs and drivers will be used by both Micro-Manager and TiControl. To revert to an older version of the driver and DLLs, you will need to uninstall all the packages that include them (our TiSDKRedist, Ti Setup Tool, NIS-Elements, etc.).
+
+Another good way to be able to revert to a previous version is to create a restore point in Windows before installing the new version. This can be done on Windows 7 in Control Panel > System > Advanced system settings > System Protection (or search for "create a restore point" in the Control Panel search box). This will allow you to undo the installation (and all software installations/removals following that point).
 
 == Device-specific notes ==
 
