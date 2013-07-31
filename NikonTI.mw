@@ -97,7 +97,7 @@ The manual tube lens switcher of the Nikon Ti is not encoded (the computer has n
 
 == How to report problems ==
 
-It is not unusual for bugs to depend on the version of Nikon software (driver and libraries) and microscope firmware. When reporting problems with the NikonTI adapter, please include, in addition to the Micro-Manager version, the Nikon firmware, driver, and software versions.
+It is not unusual for bugs to depend on the version of Nikon software (driver and libraries) and microscope firmware. When reporting problems with the NikonTI adapter, please include, in addition to the Micro-Manager and Windows version, the Nikon firmware, driver, and software versions.
 
 Version information is displayed in the Device/Property Browser, under the TIScope device (check "Show read-only properties"). If you can't get the device to load, the CoreLog (with debug logging enabled) may contain the driver and software versions.
 
