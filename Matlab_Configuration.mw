@@ -60,6 +60,8 @@ for example:
  C:/Micro-Manager-1.4/plugins/Micro-Manager/swingx-0.9.5.jar
  C:/Micro-Manager-1.4/plugins/Micro-Manager/swing-layout-1.0.4.jar
  C:/Micro-Manager-1.4/plugins/Micro-Manager/commons-math-2.0.jar
+ C:/Micro-Manager-1.4/plugins/Micro-Manager/ome-xml.jar
+ C:/Micro-Manager-1.4/plugins/Micro-Manager/scifio.jar
 
 {{note|At least in recent versions of MATLAB (tested with R2013a), the file classpath.txt is automatically generated and should not be edited manually, lest it be overwritten. If classpath.txt contains a comment to that effect, use instead this command:
  >> edit([prefdir '/javaclasspath.txt']);
