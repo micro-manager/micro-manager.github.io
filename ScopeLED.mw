@@ -30,6 +30,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 (This documentation is also [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/Properties.doc available here.])
 
 '''All ScopeLED Illuminators'''
+
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -134,7 +135,7 @@ The version is a four-byte value. Each byte represents one portion of the versio
 </table><br>
 
 '''ScopeLED-G'''
-ScopeLED Fiber Guide Illuminators
+<br>ScopeLED Fiber Guide Illuminators
 {{Note|The ProductID for G-Series illuminators is 4867 (0x1303).}}
 <table>
 <tr>
@@ -151,8 +152,50 @@ ScopeLED Fiber Guide Illuminators
 </tr>
 </table><br>
 
-'''ScopeLED-FMI'''
-ScopeLED Fluorescence Microscope Illuminators
+'''ScopeLED-B'''
+<br>ScopeLED Brightfield Microscope Illuminators
+{{Note|The ProductID for B-Series illuminators is 4874 (0x130A).}}
+<table>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>ActivePresetMode</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Integer value from 0 to 6, representing the active Preset Mode. </td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the active Preset Mode.The brightness of the illuminator will be controlled according to the setting of the corresponding preset mode. Preset Mode 0 activates brightness control for the individual channels via the properties Channel1Brightness, Channel2Brightness, Channel3Brightness, and Channel4Brightness.</td>
+</tr>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>Channel1Brightness, Channel2Brightness, Channel3Brightness, Channel4Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the brightness level of the indicated channel. The intensities set by these properties are only active when ActivePresetMode is set to 0. </td>
+</tr>
+<tr>
+  <td valign=top width=10%>Property</td>
+  <td>PresetMode1Brightness, PresetMode2Brightness, PresetMode3Brightness, PresetMode4Brightness, PresetMode5Brightness, PresetMode6Brightness</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>Floating-point value from 0 to 100, representing the percentage.</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td>Gets or sets the brightness level of the indicated Preset Mode. The intensities set by these properties are only active when ActivePresetMode is set to the corresponding Preset Mode. For example, in order to make active PresetMode4Brightness, ActivePresetMode must be 4. </td>
+</tr>
+</table><br>
+
+'''ScopeLED-F'''
+<br>ScopeLED Fluorescence Microscope Illuminators
 {{Note|The ProductID for F-Series illuminators is 4869 (0x1305).}}
 <table width=100%>
 <tr>
