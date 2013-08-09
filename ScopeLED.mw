@@ -61,6 +61,21 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
+  <td>InitSerialNumber</td>
+</tr>
+<tr>
+  <td valign=top>Type</td>
+  <td>String value</td>
+</tr>
+<tr>
+  <td valign=top>Function</td>
+  <td><p>Prior to initialization, this property indicates the Serial Number string to be used to identify the target device. It is optional to set this property.</p><p>Use this value to identify a specific device in a system where more than one device is present. </p><p>If this value is not set prior to initialization, Micro-Manager will open the first available device with the matching VendorID and ProductID. </p>
+</td>
+</tr>
+</table><br>
+<table width=100%>
+<tr>
+  <td valign=top width=10%>Property</td>
   <td>SerialNumber</td>
 </tr>
 <tr>
@@ -69,9 +84,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr>
 <tr>
   <td valign=top>Function</td>
-  <td>Prior to initialization, this property sets the Serial Number string used to identify the target device. It is optional to set this property. After initialization, this property contains the Serial Number string of the device.<p>
-During initialization, this property is set to the serial number string of the device.</p><p>
-After initialization Micro-Manager will make no further use of this property. It is for information purposes only. Changing the value will not make any changes to the device.</p> 
+  <td><p>During initialization, this property is set to the Serial Number string of the device.</p><p>Micro-Manager makes no use of this property. It is for information purposes only. Changing the value will not make any changes to the device. </p> 
 </td>
 </tr>
 </table><br>
@@ -120,9 +133,9 @@ The version is a four-byte value. Each byte represents one portion of the versio
 </tr>
 </table><br>
 
-'''ScopeLED-MSB/MSP'''
-
-{{Note|The ProductID for microscope illuminators is 4867 (0x1303).}}
+'''ScopeLED-G'''
+ScopeLED Fiber Guide Illuminators
+{{Note|The ProductID for G-Series illuminators is 4867 (0x1303).}}
 <table>
 <tr>
   <td valign=top width=10%>Property</td>
@@ -139,8 +152,8 @@ The version is a four-byte value. Each byte represents one portion of the versio
 </table><br>
 
 '''ScopeLED-FMI'''
-
-{{Note|The ProductID for fluorescence illuminators is 4869 (0x1305).}}
+ScopeLED Fluorescence Microscope Illuminators
+{{Note|The ProductID for F-Series illuminators is 4869 (0x1305).}}
 <table width=100%>
 <tr>
   <td valign=top width=10%>Property</td>
