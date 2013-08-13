@@ -11,7 +11,7 @@ The binary format relies on Google Protocol buffers ([http://code.google.com/api
 
 Note that you can extend the TSF.proto file yourself and add fields that you need for your specific application.  The file created with your proto file can still be read by all other software that reads the tagged spot file format (although it will not be able to interpret the fields that you added).  
 
-All message sizes and file offsets are of type signed int or signed long (to ensure compatibility with Java code)
+File offsets are of type signed int or signed long (to ensure compatibility with Java code) and are encoded as big endian.
 
 === File layout on disk: ===
 
@@ -115,7 +115,6 @@ The text version of the Tagged Spot format is modeled closely after the binary f
 The second line of the file contains the Keys of the Spot message for the Spot data that follow.  The allowed names for the Keys are defined in the TSF.proto file Spot message definition.  Keys are separated by tabs (“\t”), and the line ends with a newline (“\n”) symbol.
 
 All following lines are Spot data in asci format separated by tabs (“\t”) and each Spot is on its own line (that ends with “\n”).
-
 
 == TSF.proto file: ==
 
