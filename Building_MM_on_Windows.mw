@@ -22,14 +22,12 @@ To build device adapters:
 
 Additionally, to build the entire Micro-Manager package:
 # [http://java.sun.com/javase/downloads/index.jsp JDK Standard Edition] 6 or later
-# A recent version of [http://rsb.info.nih.gov/ij/download.html ImageJ]
-# [http://www.beanshell.org/download.html Beanshell] 2.0.4 or later. Download the .jar and and place in <root>/projects/3rdparty/Beanshell and copy to the plugins folder of the ImageJ instance you installed above.
-# [http://ant.apache.org/ Apache Ant]
+# [http://ant.apache.org/ Apache Ant] 1.8.1 or later (tested with 1.9.2)
 
 Tell the build tools where to find Java and Ant by opening the System control panel / Advanced system settings / Environment Variables / System variables and addding the following new entries:
 
 <code><pre>
-ANT_HOME=C:\ant (or path to Ant)
+ANT_HOME=C:\apache-ant-1.9.2 (or path to Ant)
 JAVA_HOME=C:\Program Files\Java\jdk1.6.0_20 (or path to Java)
 PATH=%PATH%;%ANT_HOME%\bin
 </pre></code>
