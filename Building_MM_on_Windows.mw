@@ -83,27 +83,16 @@ Which should produce MMJ_.jar in <root>/projects/micro-manager-1.4/build/Java. (
 
 ==Building the full source in one step==
 
-To build the entire Micro-Manager project for Windows with a single command, µManager 1.4 provides a batch file in the source repository in buildscripts. You need to have the installed tools and libraries described above: ant, Java JDK, boost, zlib and some java jar stuff.
+You can build the C++, Java, and Clojure components in one step by typing, in <root>/projects/micro-manager-1.4, the following command:
 
-From the C++ source, you can build the 32 bit version with the free 'Express' version of Visual Studio, though per my understanding, you need at least the 'Professional' version to build the 64 bit binaries. As of this writing, we are using the 2008 version of Visual studio. It's been built and tested preliminarily with Visual Studio 2010 also (some modification to the project files is necessary).
+  ant stage -Dmm.architecture=Win32 -Dmm.configuration=Release -Dmm.build.failonerror=false
 
-To build the 32 bit binary, open a command prompt and type
+The value for mm.architecture can also be x64. The mm.build.failonerror=false setting causes device adapters and plugins to be skipped if they do not compile. Built files are placed in the stage/Release/Win32 directory.
 
-  cd \projects\micromanager
-  buildscripts\Build 
+Following the above command, 
 
-The 64 bit binary is built as follows:
+  ant package -Dmm.architecture=Win32 -Dmm.configuration=Release
 
-  buildscripts\Buildx64
-
-If you've got all the tools and libraries installed correctly, these scripts will build everything and automatically install µManager onto your system. By default, the builds are incremental, if you want to clean the binaries (don't know why this is ever necessary, except perhaps in the case of virus infections) specify FULL, e.g.
-
-  buildscripts\Buildx64 FULL
-
-The final step of the build makes the installer using InnoSetup, the current builds scripts assume it's installed in:
-
-  \projects\3rdparty\Inno_Setup_5\iscc.exe
-
-(Note: Currently, Build.bat and Buildx64.bat include actions that are specific to our nightly build, so you may get some errors. You can build just the C++ conponents by running buildscripts\buildCpp. --[[User:Mark Tsuchida|Mark Tsuchida]] 17:38, 16 May 2013 (PDT))
+will produce an installer in the dist/ directory.
 
 {{Programming_Sidebar}}
