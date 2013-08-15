@@ -304,7 +304,7 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 
 === Micro-Manager 1.3.41 beta, (October 12, 2009) ===
 
-- [http://valelab.ucsf.edu/~MM/MMSetup_1_3_41c.exe Windows XP, 9 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.41a.dmg Mac OS X(Intel), 18 MB]<br />
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_41c.exe Windows XP, 9 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.41a.dmg Mac OS X(Intel), 18 MB]<br />
 
 * New supported devices
 ** Scion cameras (Douglas Remsberg, Scion)
