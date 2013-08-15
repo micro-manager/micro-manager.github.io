@@ -75,13 +75,17 @@ The C++ components can also be built using the batch file buildscripts/buildCpp.
 
 ==Building the Java layer: Micro-Manager Studio==
 
-Java layer of the Micro-Manager can be build using the standard ANT utility with build.xml project file, located in the <root>/projects/micro-manager-1.4/mmstudio directory.
+The Java layer of the Micro-Manager can be build using the Apache Ant utility with the build.xml project file, located in the directories for each Java component (mmstudio, acqEngine, plugins, autofocus).
 
-In the mmstudio directory from the commandline, run:
+Building these components currently requires that MMCoreJ.jar be manually placed in <root>/projects/micro-manager-1.4/build/Java.
 
-      ant jar
+In the mmstudio directory from the command line, run:
 
-Which should produce MMJ_.jar in <root>/projects/micro-manager-1.4/build/Java. (This step requires that MMCoreJ.jar be present in build/Java.)
+  ant jar
+
+Which should produce MMJ_.jar in <root>/projects/micro-manager-1.4/build/Java.
+
+The same command should work in acqEngine, plugins, the individual plugin subdirectories, and autofocus (acqEngine depends on mmstudio, and plugins depend on mmstudio and acqEngine, so they must be built in that order).
 
 ==Building the full source in one step==
 
