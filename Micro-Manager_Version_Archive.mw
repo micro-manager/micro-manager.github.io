@@ -382,7 +382,7 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 
 === Micro-Manager 1.3.36 beta, (April 3, 2009) ===
 
-- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_36.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.36.dmg Mac OS X(Intel), 16 MB]<br />
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_36.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.36.dmg Mac OS X(Intel), 16 MB]<br />
 
 * Olympus focusing (z stage) bug fixed
 * QCam Mac live mode hanging bug fixed
