@@ -368,7 +368,7 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 
 === Micro-Manager 1.3.37 beta, (April 9, 2009) ===
 
-- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_37.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.37.dmg Mac OS X(Intel), 16 MB]<br />
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_37.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.37.dmg Mac OS X(Intel), 16 MB]<br />
 
 * Fixed mouse moving the stage in live mode
 * Physical ROI now visible in Image5D Snap
