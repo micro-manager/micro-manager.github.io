@@ -342,7 +342,7 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 
 === Micro-Manager 1.3.39 beta, (May 15, 2009) ===
 
-- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_39.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.39.dmg Mac OS X(Intel), 16 MB]<br />
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_39.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.39.dmg Mac OS X(Intel), 16 MB]<br />
 
 * Fixed build bugs
 * Drag stage with hand tool
