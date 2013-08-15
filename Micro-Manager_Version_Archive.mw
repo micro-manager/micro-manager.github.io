@@ -355,7 +355,7 @@ Version 1.3 of Micro-Manager has stabilized: further changes to 1.3 will be limi
 
 === Micro-Manager 1.3.38 beta, (April 29, 2009) ===
 
-- [http://valelab.ucsf.edu/~arthur/builds/MMSetup_1_3_38.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.38.dmg Mac OS X(Intel), 16 MB]<br /> - [http://endrov.net/downloadPublic/debs/micromanager/ Debian package] (maintained by Johan Henriksson)
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_38.exe Windows XP, 8 MB]<br /> - [http://valelab.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.38.dmg Mac OS X(Intel), 16 MB]<br /> - [http://endrov.net/downloadPublic/debs/micromanager/ Debian package] (maintained by Johan Henriksson)
 
 * New image-based autofocus (Contribued by 100x Imaging)
 * Extensive fixes to various PVCAM adapter bugs
