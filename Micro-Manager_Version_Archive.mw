@@ -240,7 +240,7 @@ __NOTOC__
 
 === Micro-Manager 1.3.47 (November 1, 2010) ===
 
-- [http://valelab.ucsf.edu/~MM/MMSetup_1.3.47.exe Windows XP], 13 MB<br /> - [http://valelab.ucsf.edu/~MM/Micro-Manager1.3.47.dmg Mac OS X (Universal Binary)], 34 MB<br /> - [http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux Debian/Ubuntu Linux]
+- [http://valelab.ucsf.edu/~MM/builds/1.3/MMSetup_1.3.47.exe Windows XP], 13 MB<br /> - [http://valelab.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.47.dmg Mac OS X (Universal Binary)], 34 MB<br /> - [http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux Debian/Ubuntu Linux]
 
 * New devices:
 ** Agilent Laser Combiner
