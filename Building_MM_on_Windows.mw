@@ -69,7 +69,9 @@ To build your x64 project you would need to make sure this is in the 'Additional
 
 ==Building the C++ layer: MMCore and device adapters==
 
-You can build C++ part of the project by opening MMCoreJ_wrap.sln in MSDEV and running the full build. This will build the MMCore, Java wrappers and all device adapters. You can remove any device adapter project from the solution if you don't have the corresponding SDK or if you don't need to build it.
+You can build C++ part of the project by opening MMCoreJ_wrap.sln in Visual Studio 2008 and running the full build. This will build the MMCore, Java wrappers and all device adapters. You can remove any device adapter project from the solution if you don't have the corresponding SDK or if you don't need to build it.
+
+The C++ components can also be built using the batch file buildscripts/buildCpp.bat.
 
 ==Building the Java layer: Micro-Manager Studio==
 
