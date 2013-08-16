@@ -16,6 +16,6 @@ or
 
   %LOCALAPPDATA%\CrashDumps\javaw.exe.*.dmp
 
-where <code>%LOCALAPPDATA%</code> is usually <code>C:\AppData</code> (type <code>echo %LOCALAPPDATA%</code> into the Command Prompt to check). The App Data directory is normally hidden, so you will need to set Windows to display hidden files or access it from the Command Prompt.
+where the location of <code>%LOCALAPPDATA%</code> can be checked by typing <code>echo %LOCALAPPDATA%</code> into the Command Prompt. The App Data directory is normally hidden, so you will need to set Windows to display hidden files or access it from the Command Prompt.
 
 If you are running Windows XP, the method described on [https://help.github.com/articles/getting-a-crash-dump this page] should work.
