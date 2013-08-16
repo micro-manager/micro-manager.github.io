@@ -1,0 +1,21 @@
+= Viewing Micro-Manager crash dumps on Windows =
+
+If you are running Micro-Manager in the normal way (with the GUI), the Java Virtual Machine will save a crash dump if the whole program crashes. Most of the time, such a crash means that something went wrong in one of the C++ components of Micro-Manager.
+
+JVM crash dumps are named hs_err_pid*.log, with the process id of the JVM that crashed, and are placed in the Micro-Manager folder.
+
+Although the JVM normally can catch errors that cause the process to crash (such as access violations (= segmentation faults)), sometimes the memory corruption (or some other condition) resulting from the error is severe enough to cause the JVM's crash handler to fail or not be executed. In that case, the only way to see what happened (save for running Micro-Manager with a debugger attached) is to have Windows produce crash dumps.
+
+Windows crash dumps are disabled by default (to be precise, saving them locally is disabled by default - as I understand it there is some elaborate mechanism to send the dumps to Microsoft, but that is not helpful for our purpose). To enable local saving of crash dumps on Windows Vista or later, download and open (run) [[Media:SaveJVMCrashDumps.reg|this file]], which will add the necessary settings to the Windows registry. You will need to run it as administrator.
+
+Following this setup, when java.exe or javaw.exe crashes, a crash dump should be saved at
+
+  %LOCALAPPDATA%\CrashDumps\java.exe.*.dmp
+
+or
+
+  %LOCALAPPDATA%\CrashDumps\javaw.exe.*.dmp
+
+where <code>%LOCALAPPDATA%</code> is usually <code>C:\AppData</code> (type <code>echo %LOCALAPPDATA%</code> into the Command Prompt to check). The App Data directory is normally hidden, so you will need to set Windows to display hidden files or access it from the Command Prompt.
+
+If you are running Windows XP, the method described on [https://help.github.com/articles/getting-a-crash-dump this page] should work.
