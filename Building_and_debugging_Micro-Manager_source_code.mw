@@ -11,6 +11,7 @@
 * [[Using Eclipse]] - How to configure Eclipse to compile and debug the Micro-Manager GUI.
 * [[Using Netbeans]] - How to configure Netbeans to compile and debug the Micro-Manager GUI.
 * [[Debugging MM on MacOSX and Unix]] - How to use gdb or Netbeans to debug the Micro-Manager C++ core.
+* [[Viewing crash dumps on Windows]] - For C++ programmers, when all else fails
 * [[Free third-party tools for testing communications with hardware]]
 
 
