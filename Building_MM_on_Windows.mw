@@ -99,7 +99,7 @@ Following the above command,
 
   ant package -Dmm.architecture=Win32 -Dmm.configuration=Release
 
-will produce an installer in the dist/ directory.
+will produce an installer in the dist/ directory (this requires Inno Setup to be installed).
 
 == Using Visual Studio 2010 (or 2012) ==
 
