@@ -95,12 +95,6 @@ You can build the C++, Java, and Clojure components in one step by typing, in <r
 
 The value for mm.architecture can also be x64. The mm.build.failonerror=false setting causes device adapters and plugins to be skipped if they do not compile. Built files are placed in the stage/Release/Win32 directory.
 
-Following the above command, 
-
-  ant package -Dmm.architecture=Win32 -Dmm.configuration=Release
-
-will produce an installer in the dist/ directory (this requires Inno Setup to be installed).
-
 == Using Visual Studio 2010 (or 2012) ==
 
 Work is underway (by Mark) to migrate Micro-Manager to Visual Studio 2010 (in which the project file format has changed significantly from VS2008).
