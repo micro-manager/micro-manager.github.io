@@ -13,10 +13,10 @@ __NOTOC__
 '''μManager has a simple and clean user interface, through which it lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
 </td></tr></table>
 
-=== [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Why_Micro-Manager%3F ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?] ===
+=== [[Why_Micro-Manager%3F | ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?]] ===
 You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and proprietary drivers...
 
-=== [[Who_should_use_Micro-Manager | DECIDE IF YOU SHOULD GIVE IT A TRY] ===
+=== [[Who_should_use_Micro-Manager | DECIDE IF YOU SHOULD GIVE IT A TRY]] ===
 With the help of users world-wide Micro-Manager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions.
 
 === [[Device Support |  HARDWARE ISSUES]] ===
