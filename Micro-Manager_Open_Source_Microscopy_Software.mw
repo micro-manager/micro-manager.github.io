@@ -16,8 +16,8 @@ __NOTOC__
 === [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Why_Micro-Manager%3F ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?] ===
 You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and proprietary drivers...
 
-=== [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Who_should_use_Micro-Manager  DECIDE IF YOU SHOULD GIVE IT A TRY] ===
-With the help of users world-wide Micro-Manager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions. 
+=== [[Who_should_use_Micro-Manager | DECIDE IF YOU SHOULD GIVE IT A TRY] ===
+With the help of users world-wide Micro-Manager has been developed into a professional Microscopy software able to connect to a huge list of [[Device Support | devices]] and effortlessly perform laborious acquisitions.
 
 === [[Device Support |  HARDWARE ISSUES]] ===
 Whether you can use Micro-Manager right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Device_Support Check the current hardware list]
