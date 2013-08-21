@@ -1,4 +1,4 @@
-= Viewing Micro-Manager crash dumps on Windows =
+=== Viewing Micro-Manager crash dumps on Windows ===
 
 If you are running Micro-Manager in the normal way (with the GUI), the Java Virtual Machine will save a crash dump if the whole program crashes. Most of the time, such a crash means that something went wrong in one of the C++ components of Micro-Manager.
 
