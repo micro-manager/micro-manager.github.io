@@ -1,17 +1,35 @@
+=== General ===
+
 * [[Micro-Manager Coding Style and Conventions]]
+
+* [[Using Netbeans]] - to compile and debug the Micro-Manager Java layer.
+* [[Using Eclipse]] - to compile and debug the Micro-Manager Java layer.
+
+=== Windows ===
+
+* [[Building MM on Windows]]
+* [[Viewing crash dumps on Windows]] - For C++ programmers, when all else fails
+
+=== Mac OS X and Linux ===
+
+* [[Configuration options]] - Build options on Mac OS X and Linux
+* [[Debugging MM on MacOSX and Unix]] - Using gdb or Netbeans to debug the Micro-Manager C++ core
+
+=== Mac OS X ===
+
 * [[Building Boost on MacOS X]]
 * [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
 * [[Building Universal Binaries on Mac OS X]]
 * [[Build on MacOS_X]]
-* [[Configuration options]] - Build options on Mac OS X and Linux
+
+=== Linux ===
+
 * [[Linux installation from source (Ubuntu)]]
 * [[Building Firewire camera support on Linux]]
-* [[Building MM on Windows]] - Different environments and options
 * [[Compiling MM and creating deb files on 64-bit Ubuntu ]] - A log of things I needed to do to build 64-bit version of MM.
-* [[Using Eclipse]] - How to configure Eclipse to compile and debug the Micro-Manager GUI.
-* [[Using Netbeans]] - How to configure Netbeans to compile and debug the Micro-Manager GUI.
-* [[Debugging MM on MacOSX and Unix]] - How to use gdb or Netbeans to debug the Micro-Manager C++ core.
-* [[Viewing crash dumps on Windows]] - For C++ programmers, when all else fails
+
+=== Miscellaneous ===
+
 * [[Free third-party tools for testing communications with hardware]]
 
 
