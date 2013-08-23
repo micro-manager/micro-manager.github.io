@@ -1,4 +1,4 @@
-== General remarks (Ubuntu)==
+== General remarks ==
 
 We assume installation of ImageJ in "/usr/local/ImageJ". If you have installed ImageJ using apt, replace this location with "/usr/share/imagej" wherever it appears below.  In addition to ImageJ and Micro-Manager, you need the following packages:
 
@@ -18,10 +18,6 @@ In addition, note that:
 * File versions might have changed, check before using the names given in the instructions.
 * Some operations have to be performed as "superuser" ("sudo …").
 * Permissions of the new ImageJ directory might have to be set properly.
-
-== General remarks (Gentoo) ==
-
-The ImageJ ebuild can be downloaded from http://bugs.gentoo.org/112275. Digest and install the ebuild (see http://linuxreviews.org/gentoo/ebuilds/).
 
 == Steps ==
 
@@ -78,41 +74,6 @@ cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &")
  -Dplugins.dir=/usr/local/ImageJ \
  -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
 
-== script for Gentoo ==
-
-Edit '/usr/bin/imagej' according to this:
-<code><pre>
-#!/bin/bash
-
-export LD_LIBRARY_PATH=.:/usr/lib/micro-manager
-IJ_LIB=/usr/share/imagej/lib
-
-if !([ "${IJ_HOME}" ]) ; then
-	IJ_HOME=${HOME}
-fi
-if [ -d ${IJ_HOME}/plugins ] ; then
-	IJ_PLG=${IJ_HOME}
-else
-	IJ_PLG=/usr/share/imagej/lib
-fi
-if !([ "$IJ_MEM" ]) ; then
-	IJ_MEM=128
-fi
-if !([ "$IJ_CP" ]) ; then
-	IJ_CP=$(java-config -p imagej):$(java-config -O)/lib/tools.jar
-else
-	IJ_CP=$(java-config -p imagej):$(java-config -O)/lib/tools.jar:${IJ_CP}
-fi
-$(java-config --java) \
-	-Xmx${IJ_MEM}m -Dswing.aatext=true \
-	-Dawt.useSystemAAFontSettings=on\
-	-cp ${IJ_CP} \
-	-Duser.home=${IJ_HOME} \
-	-Dplugins.dir=${IJ_PLG} \
-	-Djava.library.path=/usr/lib/micro-manager \
-	ij.ImageJ "$@"
-</pre>
-</code>
 
 You could run the Micro-Manager in one go by issuing:
   imagej -run "Micro-Manager Studio"
