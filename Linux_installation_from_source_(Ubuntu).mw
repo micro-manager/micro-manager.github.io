@@ -8,8 +8,9 @@
 
 cd ~/Downloads/
 sudo unzip ij*-linux*.zip -d /usr/local/
+sudo chmod +r /usr/local/ImageJ
 cd /usr/local/ImageJ/
-./run
+./jre/bin/java -jar ij.jar
 </pre>}}
 
 === Other Required Programs and Libraries ===
@@ -20,7 +21,7 @@ You will need a subversion client to checkout the source code, several libraries
 {{MessageBox|1=Commandline|2=<pre>
 
 sudo apt-get install subversion build-essential automake libtool \
-                     libboost-all-dev zlib1g-dev swig sun-java6-sdk
+                     libboost-all-dev zlib1g-dev swig
 </pre>}}
 
 You may also need to install additional packages (for cameras and special hardware).  See the full list in [[#Dependencies]]
