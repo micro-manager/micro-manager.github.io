@@ -13,11 +13,16 @@ cd /usr/local/ImageJ/
 ./jre/bin/java -jar ij.jar
 </pre>}}
 
-=== Other Required Programs and Libraries ===
+=== Install JDK ===
+
+If you are building the Micro-Manager Java GUI, Java 1.6 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html].  This has to be fetched from Oracle's website since their licensing prohibits redistribution in Linux repositories.  [http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR Download the latest jdk-6*-linux-*.bin] from the archives (you must click "Accept License Agreement").
+
+It may be possible to also use the distro-friendly OpenJDK (<code>default-jdk</code>) without too much effort. To start, you would have to patch the Micro-Manager <code>configure</code> file to find <code>jni.h</code> and possibly apply other fixes.
+
+=== Install Build Programs and Libraries ===
 
 You will need a subversion client to checkout the source code, several libraries, and build tools.  Install them with:
 
-{{Note|Heavy editing in progress: some dependencies may be missing}}
 {{MessageBox|1=Commandline|2=<pre>
 
 sudo apt-get install subversion build-essential automake libtool \
@@ -26,7 +31,7 @@ sudo apt-get install subversion build-essential automake libtool \
 
 You may also need to install additional packages (for cameras and special hardware).  See the full list in [[#Dependencies]]
 
-=== Source Repositories ===
+=== Fetch Source Repositories ===
 
 Create a directory for the the subversion repositories, such as <code>~/mm</code>.  Besides the source tree, additional binary dependencies are stored in the <code>3rdpartypublic</code> repository.  The build scripts in the source tree assume <code>3rdpartypublic</code> is in the same parent folder level:
 
@@ -147,13 +152,13 @@ Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 |-
 | Simplified Wrapper and Interface Library || <code>swig</code>
 |-
-| Sun Java SDK || <code>sun-java6-sdk</code>
+| Sun Java SDK || <code>openjdk-6-jdk</code>
 |-
 |colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Optional Dependencies:
 |-
 | Firewire Camera Library || <code>libdc1394-*-dev</code>
 |-
-| Open Source Computer Vision Library || (FIXME)
+| Open Source Computer Vision Library || <code>libopencv-dev</code>
 |}
 
 {{Programming_Sidebar}}
