@@ -77,7 +77,7 @@ sudo make install
 sudo ldconfig
 </pre>}}
 
-== Post Install
+== Post Install ==
 
 === Create the startup script ===
 
