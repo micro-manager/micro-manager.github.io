@@ -65,17 +65,17 @@ Starting ImageJ with the scripts provided in the ImageJ directory (run, script, 
 
 cd to "/usr/local/ImageJ" and start ImageJ with your new script ("./mmscript &"). In the plugins menu of ImageJ, start Micro-Manager –> Micro-Manager Studio.
 
-== mmscript: ==
-
- #!/bin/bash
- cd /usr/local/ImageJ
- export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
- java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ \
- -Dplugins.dir=/usr/local/ImageJ \
- -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
-
-
 You could run the Micro-Manager in one go by issuing:
   imagej -run "Micro-Manager Studio"
+
+{{MessageBox|1=File: mmscript|2=<pre>
+
+#!/bin/bash
+cd /usr/local/ImageJ
+export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
+java -mx1200m -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ \
+     -Dplugins.dir=/usr/local/ImageJ \
+     -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar ij.ImageJ
+</pre>}}
 
 {{Programming_Sidebar}}
