@@ -15,9 +15,7 @@ cd /usr/local/ImageJ/
 
 === Install JDK ===
 
-If you are building the Micro-Manager Java GUI, Java 1.6 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html].  This has to be fetched from Oracle's website since their licensing prohibits redistribution in Linux repositories.  [http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR Download the latest jdk-6*-linux-*.bin] from the archives (you must click "Accept License Agreement").
-
-It may be possible to also use the distro-friendly OpenJDK (<code>default-jdk</code>) without too much effort. To start, you would have to patch the Micro-Manager <code>configure.in</code> file to find <code>jni.h</code>[https://bugzilla.redhat.com/show_bug.cgi?id=498964#c2] and possibly apply other fixes.
+If you are building the Micro-Manager Java GUI, Java 1.6 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html].  Download and run <code>jdk-6*-linux-*.bin</code> per the [https://help.ubuntu.com/community/Java#JDK_or_JRE JDK Ubuntu instructions].  This file has to be fetched from Oracle's website since their licensing prohibits redistribution in Linux repositories.  [http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR Download the latest jdk-6*-linux-*.bin] from the archives (you must click "Accept License Agreement").  It may be worth using [[#OpenJDK instead of Sun JDK]]
 
 === Install Build Programs and Libraries ===
 
@@ -160,5 +158,9 @@ Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 |-
 | Open Source Computer Vision Library || <code>libopencv-dev</code>
 |}
+
+=== OpenJDK instead of Sun JDK ===
+
+It may be possible to also use the distro-friendly OpenJDK (<code>default-jdk</code>) without too much effort. To start, you would have to patch the Micro-Manager <code>configure.in</code> file to find <code>jni.h</code>[https://bugzilla.redhat.com/show_bug.cgi?id=498964#c2] and possibly apply other fixes.
 
 {{Programming_Sidebar}}
