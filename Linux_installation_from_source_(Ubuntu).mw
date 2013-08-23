@@ -2,16 +2,33 @@
 
 We assume installation of ImageJ in "/usr/local/ImageJ". If you have installed ImageJ using apt, replace this location with "/usr/share/imagej" wherever it appears below.  In addition to ImageJ and Micro-Manager, you need the following packages:
 
-* svn for obtaining the repository
-* sun-java6-sdk or better/equivalent
-* autoconf
-* automake
-* swig
-* boost
-* g++
-* libtool
-* libboost 1.2 or newer
-* libdc1394-22-dev
+{| class="wikitable"
+! Dependency || Package Name in Synaptic repository
+|-
+|colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Build Dependencies:
+|-
+| Subversion || svn
+|-
+| GNU C++ || build-essential
+|-
+| GNU Autotools || automake
+|-
+| GNU Libtool || libtool
+|-
+| SWIG libraries || swig
+|-
+| Boost libraries || libboost
+|-
+|colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Runtime Dependencies:
+|-
+| Sun Java SDK || sun-java6-sdk
+|-
+|colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Optional Dependencies:
+|-
+| OpenCV || (FIXME)
+|-
+| Firewire Camera Library || libdc1394-*-dev
+|}
 
 In addition, note that:
 
