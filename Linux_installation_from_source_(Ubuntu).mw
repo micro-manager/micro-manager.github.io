@@ -2,10 +2,12 @@
 
 === Install ImageJ ===
 
-[http://rsb.info.nih.gov/ij/download.html Download the Linux version of ImageJ] from the NIH website and follow the installation instructions there.  Test that ImageJ runs from a terminal:
+[http://rsb.info.nih.gov/ij/download.html Download the Linux version of ImageJ] from the NIH website.  From a terminal, unzip to <code>/usr/local/</code> and test that it runs:
 
 {{MessageBox|1=Commandline|2=<pre>
 
+cd ~/Downloads/
+sudo unzip ij*-linux*.zip -d /usr/local/
 cd /usr/local/ImageJ/
 ./run
 </pre>}}
