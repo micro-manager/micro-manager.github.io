@@ -1,3 +1,5 @@
+{{Note|These instructions are mostly complete, but the Java part does not compile due to it not finding <code>jni.h</code> [[User:P.nanda|P.nanda]] 17:04, 23 August 2013 (PDT)}}
+
 == Preparation ==
 
 === Install ImageJ ===
@@ -16,6 +18,19 @@ cd /usr/local/ImageJ/
 === Install JDK ===
 
 If you are building the Micro-Manager Java GUI, Java 1.6 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html].  Download and run <code>jdk-6*-linux-*.bin</code> per the [https://help.ubuntu.com/community/Java#JDK_or_JRE JDK Ubuntu instructions].  This file has to be fetched from Oracle's website since their licensing prohibits redistribution in Linux repositories.  [http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR Download the latest jdk-6*-linux-*.bin] from the archives (you must click "Accept License Agreement").  It may be worth using [[#OpenJDK instead of Sun JDK]]
+
+In spite of using Sun JDK, Micro-Manager fails to compile:
+
+<code>
+make[1]: Entering directory `/home/andor/mm/micro-manager1.4/MMCoreJ_wrap'
+/bin/bash ../libtool --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"Micro-Manager\" -DPACKAGE_TARNAME=\"micro-manager\" -DPACKAGE_VERSION=\"1.4\" -DPACKAGE_STRING=\"Micro-Manager\ 1.4\" -DPACKAGE_BUGREPORT=\"info@micro-manager.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"micro-manager\" -DVERSION=\"1.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_BOOST=/\*\*/ -DHAVE_BOOST_DATE_TIME=/\*\*/ -DHAVE__USR_INCLUDE_ZLIB_H=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1 -DHAVE_STDBOOL_H=1 -DSTDC_HEADERS=1 -DHAVE_MEMSET=1 -I.    -I/usr/include -g -O -MT MMCoreJ_wrap.lo -MD -MP -MF .deps/MMCoreJ_wrap.Tpo -c -o MMCoreJ_wrap.lo MMCoreJ_wrap.cxx
+libtool: compile:  g++ -DPACKAGE_NAME=\"Micro-Manager\" -DPACKAGE_TARNAME=\"micro-manager\" -DPACKAGE_VERSION=\"1.4\" "-DPACKAGE_STRING=\"Micro-Manager 1.4\"" -DPACKAGE_BUGREPORT=\"info@micro-manager.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"micro-manager\" -DVERSION=\"1.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" "-DHAVE_BOOST=/**/" "-DHAVE_BOOST_DATE_TIME=/**/" -DHAVE__USR_INCLUDE_ZLIB_H=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1 -DHAVE_STDBOOL_H=1 -DSTDC_HEADERS=1 -DHAVE_MEMSET=1 -I. -I/usr/include -g -O -MT MMCoreJ_wrap.lo -MD -MP -MF .deps/MMCoreJ_wrap.Tpo -c MMCoreJ_wrap.cxx  -fPIC -DPIC -o .libs/MMCoreJ_wrap.o
+MMCoreJ_wrap.cxx:160:17: fatal error: jni.h: No such file or directory
+compilation terminated.
+make[1]: *** [MMCoreJ_wrap.lo] Error 1
+make[1]: Leaving directory `/home/andor/mm/micro-manager1.4/MMCoreJ_wrap'
+make: *** [all-recursive] Error 1
+</code>
 
 === Install Build Programs and Libraries ===
 
@@ -150,7 +165,7 @@ Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 |-
 | Simplified Wrapper and Interface Library || <code>swig</code>
 |-
-| Sun Java SDK || <code>openjdk-6-jdk</code>
+| Sun Java SDK || N/A - manually fetch from Oracle website
 |-
 |colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Optional Dependencies:
 |-
