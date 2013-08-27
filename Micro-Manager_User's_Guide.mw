@@ -178,9 +178,9 @@ Split View functionality (compatible with such devices as the DualView or OptoSp
 
 = Autofocus =
 
-Micro-Manager has a single, integrated user interface for hardware- and software-based autofocus. In the main window, press the '''Set autofocus options''' button to open the Autofocus Properties dialog box. Here you can choose which autofocus mechanism to use among available hardware- and software-based options. You can then edit the settings for your chosen autofocus mechanism. The '''Duo''' autofocus option allows you to combine two autofocus mechanisms, so that they operate sequentially, one after the other.
+Micro-Manager has a single, integrated user interface for hardware- and software-based autofocus. In the main window, press the '''Set autofocus options''' button (wrench icon) to open the Autofocus Properties dialog box. Here you can choose which autofocus mechanism to use among available hardware- and software-based options. You can then edit the settings for your chosen autofocus mechanism. The '''Duo''' autofocus option allows you to combine two autofocus mechanisms, so that they operate sequentially, one after the other.
 
-The '''Autofocus Now''' button on the Main Window will cause the autofocus mechanism you have chosen to execute its focusing protocol once.
+The '''Autofocus Now''' button (icon with binoculars) on the Main Window will cause the autofocus mechanism you have chosen to execute its focusing protocol once.
 
 == Hardware Autofocus ==
 
