@@ -85,7 +85,7 @@ Micro-manager Device Adapter is a C++ class residing in a Library (dynamically l
 
 In other words it will try to load at run-time only libraries with prefix “mmgr_dal”. In our case our new adapter (once we are finished with it) should build as <code>mmgr_dal_mydevice.dll</code>.
 
-In terms of code generation settings, we are linking against C++ run-time multithreaded DLLs (not static ones). The project should be configured to support asynchronous exceptions (/EHa). Typically we don’t use precompiled headers.
+In terms of code generation settings, we are linking against C++ run-time multithreaded DLLs (not static ones). Typically we don’t use precompiled headers.
 
 Preprocessor macros should include MODULE_EXPORTS definition. This setting is the same for all Micro-manager Libraries.
 
