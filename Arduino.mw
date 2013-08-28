@@ -41,7 +41,7 @@ Then download the [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapte
 == Device Configuration ==
 
 === Hub ===
-In Micro-Manager, use the hardware configuration wizard to add the Arduino.  Set the serial port to 57600 baud.    
+In Micro-Manager, use the hardware configuration wizard to add the Arduino.  Set the serial port to 57600 baud. You may want to set the "Verbose" property of the port to 0 to avoid extensive logging of the communcation with the device, especially if you are using the input functionality (which queries the Arduino every second).
 
 The Arduino 'Switch' sets the digital output pattern using a single byte.  Bit 1 corresponds to Arduino ouput pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  So, setting the switch to value '5', will set output pins 8 and 10 high and the others low.
 
