@@ -1,0 +1,17 @@
+{| style="text-align: left"
+!Summary:
+|Interfaces with Andor MicroPoint pulse laser targeting device
+|- valign="top"
+!Author:
+| Arthur Edelstein
+|-
+!License:
+|3-clause BSD
+|-
+!Platforms:
+|Windows (No Linux or Mac driver available)
+|- valign="top"
+!Devices:
+|MP-220*-EBD
+|}
+----
