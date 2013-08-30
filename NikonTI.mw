@@ -73,6 +73,8 @@ When the Delay is set to zero, the device is considered busy until the driver re
 
 === Halogen lamp ===
 
+With some versions of the Nikon drivers, the TIDiaLamp control may be unstable (may cause Micro-Manager to crash). If you are having issues, you might want to try and configure without the DiaLamp.
+
 The TIDiaLamp device is a shutter device (although it will only make sense to use it as a shutter when doing time-lapse imaging with an extremely long interval).
 
 There is a ComputerControl property, which needs to be On in order to control the lamp. Lamp intensities set through manual control and through computer control are independent of each other.
