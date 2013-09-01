@@ -18,9 +18,9 @@
 
 == Installation ==
 
-You must install the Andor MicroPoint driver to recognize the USB COM port in the Windows Device Manager. These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Driver: Micropoint</code>. Yes, you have to register and login to download the file.
-
 {{MessageBox|Warning|Logitech webcams may conflict with the MicroPoint FTDI driver.}}
+
+The MicroPoint controller contains it's own USB-Serial convertor.  If this driver is already installed, nothing further needs to be done.  Otherwise you must install the Andor MicroPoint driver to recognize the USB COM port in the Windows Device Manager. These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Driver: Micropoint</code>. Yes, you have to register and login to download the file.
 
 == Resources ==
 
