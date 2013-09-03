@@ -46,9 +46,8 @@
 ** Right-click the My Computer icon on the desktop or start menu
 ** Click <code>Properties</code> and on the <code>Advanced</code> tab choose <code>Environment</code> variables.
 ** On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\ProgramData\Andor_ALC_library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
-** Restart your computer for the new <code>PATH</code> to take effect.
+** If your OS is older than Windows 7, restart your computer for the new <code>PATH</code> to take effect.
 * That's it!  If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
-
 
 == Device Configuration ==
 * Add the <code>AndorLaserCombiner</code> main device to your hardware configuration.
