@@ -15,6 +15,8 @@
 
 2. Install the IC Imaging Control SDK, version 3.2 (download from [http://www.theimagingsource.com/en_US/support/downloads/ TIS]). Micro-Manager 1.4.14 and current nightly builds (as of Aug, 2013) require version 3.2.
 
+* During the installation, make sure to explicitly check "Visual C++ 2008" when you are presented with a page to select the components to install.
+
 3. Copy the following files, found in either ''<your home folder>''\Documents\IC Imaging Control\3.2\classlib\win32\release or ''<your home folder>''\Documents\IC Imaging Control\3.2\classlib\x64\release, to the Micro-Manager-1.4 folder. The following names are hard-coded, and if you have anything with a different name, it is not going to work (renaming a different DLL to match will not work, either, of course).
 
 * If you are using 32-bit Micro-Manager (even if Windows is 64-bit): '''TIS_UDSHL09_vc9.dll''' (which in turn requires '''TIS_DShowLib09.dll''')
