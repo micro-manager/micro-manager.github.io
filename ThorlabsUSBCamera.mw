@@ -1,10 +1,9 @@
 <table><tr><td>
 '''Summary:'''</td><td valign="top">Device adapter for Thorlabs USB cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Christophe Dupre.
-DemoCamera Source code originally developped by Nenad Amodaj, Karl Hoover, Arthur Edelstein</td></tr>
+<tr><td>'''Author:'''</td><td>Christophe Dupre and Nenad Amodaj/td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td valign="top">'''Devices:'''</td><td>DCU223M, DCU223C, DCU224M, DCU224C, DCC1545M, DCC1645C, DCC1240M, DCC1240C.
+<tr><td valign="top">'''Devices:'''</td><td>DCU223M, DCU223C, DCU224M, DCU224C, DCC1545M, DCC1645C, DCC1240M, DCC1240C, DCC3240x.
 Has been developed and tested with the DCC1545M, based on the source code of the DemoCamera device adapter.</td></tr>
 <tr><td width=20%></td><td></td></tr>
 <tr><td>'''Available since version:'''</td><td>1.4.14 nightly build of 02/06/2013</td>
@@ -16,8 +15,9 @@ Install Thorlabs camera software and plug camera to your computer.
 Test that the camera works with the software provided by Thorlabs.
 Run MM and make a config file that uses the device adapter "ThorlabsUSBCamera".
 
-'''Note:'''
-Pixel clock(MHz), exposure time and CCDX/Y size are variables that depend on each other and the range of exposure times that can be achieved by the camera will change depending on the value of those other variables. For instance, a lower value of Pixel Clock (MHz) will allow longer exposure times.
+'''Notes:'''
+Besides USB2 and USB3 cameras, this adapter should also support GigE cameras of the same DCx family (but never tested).
 
+Built with the SDK version 4_20. 
 
-The device adapter automatically adjusts the range of values that you can enter so that you don't need to worry about it, but it is good to note that if you want to use the maximum exposure time that the camera can offer, you have to decrease the value of Pixel Clock to its minimum (In the case of the DCC1445M, it is 5 MHz). Changing the CCDX/Y size will only affect the range of exposure time because reading more pixels takes more time, but the camera won't collect more signal per pixel.
+Hardware ROI function currently not supported.
