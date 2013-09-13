@@ -1,10 +1,10 @@
 <table><tr><td>
 '''Summary:'''</td><td valign="top">Device adapter for Thorlabs USB cameras</td></tr>
-<tr><td>'''Author:'''</td><td>Christophe Dupre and Nenad Amodaj/td></tr>
+<tr><td>'''Author:'''</td><td>Christophe Dupre and Nenad Amodaj</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td valign="top">'''Devices:'''</td><td>DCU223M, DCU223C, DCU224M, DCU224C, DCC1545M, DCC1645C, DCC1240M, DCC1240C, DCC3240x.
-Has been developed and tested with the DCC1545M, based on the source code of the DemoCamera device adapter.</td></tr>
+Has been developed and tested with the DCC1545M and DC3240M</td></tr>
 <tr><td width=20%></td><td></td></tr>
 <tr><td>'''Available since version:'''</td><td>1.4.14 nightly build of 02/06/2013</td>
 </table>
