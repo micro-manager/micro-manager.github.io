@@ -17,5 +17,7 @@ For instance: <br>
 
 {{Note|This adapter does not provide a shutter device.  The [[AOTF]] adapter provides a shutter that can set pins of the parallel port.}}
 
+{{Note|On Windows Vista and later, you may need to run Micro-Manager as administrator (right-click and choose "Run as administrator" from an admin account) the first time you access the parallel port.}}
+
 {{ParallelPort_Warning}}
 {{Devices_Sidebar}}
