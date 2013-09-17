@@ -3,7 +3,11 @@ __NOTOC__
 
 == Windows ==
 
-Run the installer (MM_Setup_1_x_xx.exe) and follow the prompts. The package includes a copy of ImageJ. You might need to install [http://www.java.com/getjava/ Java] and low-level drivers for your cameras and possible other equipment (see our [http://valelab.ucsf.edu/~nico/MMwiki/index.php/Device_Support Device Documentation]), but nothing else is required to to fully use Micro-Manager.<br /><br /> There are no particular hardware requirements. However, for practical use we recommend Windows XP, with a 1.7-GHz or better processor and at least 512 MB of RAM. If you need help  installing the 64-bit download in Windows 7 please follow this [[Installing Micro-Manager 64 bit|guide]] provided to us by Christian Hentrich.<br /><br />
+Run the installer (MMSetup_xxxx.exe) and follow the prompts. The package includes a copy of ImageJ and Java. You might need to install drivers for your cameras and possibly other equipment (see our [[Device Support]] page).
+
+Micro-Manager is intended for Windows XP and later. Some versions may work on Windows 2000 (by installing some additional components), but this is untested and unsupported.
+
+There are no particular hardware requirements. However, for practical use we recommend a 1.7-GHz or better processor and at least 512 MB of RAM. Depending on your camera (image size) and imaging speed, you may want to have a lot more RAM.
 
 == Mac OS X ==
 
