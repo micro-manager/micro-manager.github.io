@@ -1,0 +1,21 @@
+== ASI Tiger ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with TG-1000 "Tiger" controller hub, providing access to various supported cards (for MS/WK-2000 systems see other MM adapters)</td></tr>
+<tr><td>'''Author:'''</td><td>Jon Daniels (jon at asiimaging.com)</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage, ZStage (motorized linear stage), Piezo, FWheel (FW-1000 filterwheel), FSlider (filter slider), Micromirror</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+</table>  
+
+If you run into problems or issues please contact the author at the address above.
+
+This adapter is not intended for stand-alone MS-2000 and WK-2000 controllers or older rack-mount controllers, just for TG-1000 systems.
+
+
+'''Known limitations:'''
+* CRISP is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
+* Shutter control is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
+
+{{Devices_Sidebar}}
