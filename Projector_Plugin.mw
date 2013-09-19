@@ -1,0 +1,28 @@
+Controls SLM and galvo phototargeting devices.
+
+The plugin has 3 tabs to operate the device.
+
+
+== Point and Shoot ==
+
+Single region control using <code>On / Off</code> buttons.  These toggle all micro-mirrors for SLM with, or fires a single shot for galvo units.
+
+== ROIs ==
+
+Multi-region control.  Programs regions to be fire with Multi-Dimensional Acquisition, or fires instantly like <code>Point and Shoot</code>.
+
+=== Drawing points ===
+
+To draw multiple points within a group, hold down the <code>Alt</code> button and left mouse click on the image.
+
+=== Drawing other polygons ===
+
+For ImageJ to draw and group multiple regions, the ROI Manager must be used.
+
+
+== Setup ==
+
+Creates calibration map of phototargeting device range to camera pixel position.  The calibration process completes two steps.  First, it fires a crosshair pattern to determine the camera orientation, and then fires a grid pattern across the range of the phototargeting device.  The algorithm accounts for the device range exceeding exceeding the camera sensor size (as pictured), but the orientation pattern must be captured within the camera field of view.
+
+
+{{Documentation Sidebar}}
