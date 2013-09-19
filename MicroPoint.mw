@@ -24,15 +24,10 @@ The MicroPoint controller contains it's own USB-Serial convertor.  If this drive
 
 == Device Configuration ==
 
-=== Calibration ===
-
-The X and Y galvanometer range of the MicroPoint is often a subset of the the camera field of view; thus laser is targeted within a limited square area on the camera.
-
-FIXME: Illustrate calibration process.
+The [[Projector|Projector plugin]] operates the Micropoint.  Use the Setup tab to create the calibration for each camera you need to use.  The plugin was originally written for SLM devices, so some functions for the MicroPoint have been shoehorned into the interface.
 
 FIXME: Describe range limit and what happens when targeting outside the galvo range.
 
-FIXME: Quick start guide to firing the laser "casually" and using it in experiments.
 
 == Resources ==
 
