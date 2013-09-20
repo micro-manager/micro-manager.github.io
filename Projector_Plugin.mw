@@ -1,28 +1,85 @@
 Controls SLM and galvo phototargeting devices.
 
-The plugin has 3 tabs to operate the device.
+<!--
+[[File:Plugin-projector-header.png|frame|Figure: Screenshots of Projector plugin's 3 tabs showing default startup values ([[:File:Plugin-projector-header.tar.gz|source]])]]
+-->
+Each tab is detailed below.
 
 
 == Point and Shoot ==
 
-Single region control using <code>On / Off</code> buttons.  These toggle all micro-mirrors for SLM with, or fires a single shot for galvo units.
+Single region control by clicking on the image.  This toggles micro-mirrors for SLM devices, or fires a single shot for galvo devices.
+
+[[File:Plugin_projector-point_and_shoot.png]]
+
+{| class="wikitable"
+!style="width: 20%;"| Setting
+! Description
+|- valign="top"
+| On / Off
+| Engages <code>Point and Shoot</code> mode.  To prevent accidental use, one has to hold down the <code>Ctrl</code> key and click to activate.
+|- valign="top"
+| Spot dwell time
+| (Does not affect pulse laser) Stops photo illumination after set time.
+|}
 
 == ROIs ==
 
-Multi-region control.  Programs regions to be fire with Multi-Dimensional Acquisition, or fires instantly like <code>Point and Shoot</code>.
+Multi-region control.  Programs regions to be fired with Multi-Dimensional Acquisition, or fires instantly like <code>Point and Shoot</code> tab using "ROI ROIs now!" button.
 
-=== Drawing points ===
+[[File:Plugin_projector-rois.png]]
 
-To draw multiple points within a group, hold down the <code>Alt</code> button and left mouse click on the image.
-
-=== Drawing other polygons ===
-
-For ImageJ to draw and group multiple regions, the ROI Manager must be used.
-
+{| class="wikitable"
+!style="width: 20%;"| Setting
+! Description
+|- valign="top"
+| Set ROI(s)
+| Program the device with ROI(s) drawn on the selected image.
+|- valign="top"
+| ROI Manager
+| To add multiple 2D regions on the image, one has to use the ImageJ ROI Manager.  This button is just a shortcut to that ImageJ menu.
+|- valign="top"
+| Loop
+| Number of times to fire ROIs.  This setting differs from the device's <code>Repetitions</code> property by looping after visiting each region.
+|- valign="top"
+| Spot dwell time
+| (Does not affect pulse laser) Stops photo illumination after set time.
+|- valign="top"
+| Run ROIs now!
+| Fires ROIs drawn on current image.
+|- valign="top"
+| Run ROIs in Multi-Dimensional Acquisition
+| Fires phototargeting devices in parallel with MDA (does not affect image capture rate).
+|- valign="top"
+| Start Frame
+| Timepoint in MDA to fire sequence.
+|- valign="top"
+| Repeat every __ frames
+| Timepoint interval in MDA to again fire sequence until MDA completes or device turned off in <code>Setup</code> tab.
+|}
 
 == Setup ==
 
-Creates calibration map of phototargeting device range to camera pixel position.  The calibration process completes two steps.  First, it fires a crosshair pattern to determine the camera orientation, and then fires a grid pattern across the range of the phototargeting device.  The algorithm accounts for the device range exceeding exceeding the camera sensor size (as pictured), but the orientation pattern must be captured within the camera field of view.
+Initial calibration.
+
+[[File:Plugin_projector-setup.png]]
+
+{| class="wikitable"
+!style="width: 20%;"| Setting
+! Description
+|- valign="top"
+| On / Off
+| Toggles device control.
+|- valign="top"
+| Calibrate
+| Creates calibration map of phototargeting device range to the camera pixel position.  Repeat for all cameras and objectives you intend to use with the phototargeting device.
+|- valign="top"
+| Show center spot
+| Illuminate center of SLM or galvo device.
+|- valign="top"
+| Phototargeting channel
+| Toggles to specified channel during phototargeting.  You don't need to set this unless some hardware needs to be moved during imaging, like a dichroic and/or a shutter.  If you don't see your channel listed, you must set the <code>Core-ChannelGroup</code> in the <code>Property Browser</code> to the Group containing this channel.
+|}
 
 
 {{Documentation Sidebar}}
