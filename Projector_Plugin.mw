@@ -1,4 +1,4 @@
-Controls SLM and galvo phototargeting devices.
+The Projector plugin provides a single graphical user interface for controlling SLMs (spatial light modulators), such as DMDs (digital mirror devices), LCOS (liquid crystal on silicon) modulators or even digital computer projectors, and also for controlling steerable-mirror (e.g. galvo-based) phototargeting devices.
 
 <!--
 [[File:Plugin-projector-header.png|frame|Figure: Screenshots of Projector plugin's 3 tabs showing default startup values ([[:File:Plugin-projector-header.tar.gz|source]])]]
