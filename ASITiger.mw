@@ -17,5 +17,6 @@ This adapter is not intended for stand-alone MS-2000 and WK-2000 controllers or 
 '''Known limitations:'''
 * CRISP is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
 * Shutter control is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
+* TTL-triggered sequences not yet supported due to lack of firmware support on TIGER
 
 {{Devices_Sidebar}}
