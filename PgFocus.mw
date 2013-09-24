@@ -250,10 +250,25 @@ BOM of [http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=985c354
 |[http://www.optics-online.com/cmt.asp Sunex] [http://www.optics-online.com/OOL/CMT/CMT103.pdf PDF] 
 |
 |-
-|#6 Tap Screw 
+|Jack Screw 
+|4
+|[http://www.mcmaster.com/#92710A211 McMaster-Carr] 
+|Part Number 92710A211, Mounts expansion connector to back panel
+|-
+|Panel Self-tapping Screw 
 |8
-|[http://www.mcmaster.com/#98273A1554 McMaster-Carr] 
-|Part Number 98273A1554, Mounts front and back panels to Hammond Box
+|[http://www.mcmaster.com/#91715A114 McMaster-Carr] 
+|Part Number 91715A114, Mounts front and back panels to case
+|-
+|4-40 Screw 
+|8
+|[http://www.mcmaster.com/#91249A105 McMaster-Carr] 
+|Part Number 91249A105, Mounts sensor daughter board to back panel
+|-
+|Threaded Standoff 
+|4
+|[http://www.mcmaster.com/#91780A740 McMaster-Carr] 
+|Part Number 91780A740, Mounts sensor daughter board to back panel
 |}
 
 == Thanks ==
