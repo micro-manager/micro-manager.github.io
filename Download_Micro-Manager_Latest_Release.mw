@@ -1,70 +1,87 @@
 __NOTOC__
 
+== Micro-Manager 1.4.15 (September 23, 2013) ==
 
-== Micro-Manager 1.4.14 (March 20, 2013) ==
-
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.14.exe Windows 32-bit], 46 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.14.exe Windows 64-bit], 45 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.14.dmg Mac OS X (Universal Binary)], 49 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.15.exe Windows 32-bit], 50 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.15.exe Windows 64-bit], 50 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.15.dmg Mac OS X (Universal Binary)], 46 MB<br />
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
-=== New Features in 1.4 ===
-* Windows native 64-bit support (most devices are supported)
-* Support for multiple cameras (see Utilities->Multi-camera adapter)
-* Improved color camera live and snap
-* Hardware triggering integrated with Multi-Dimensional Acquisition
-* Enhanced Contrast Panels (ignore outliers)
-* Saving and display on separate threads
-* A new multi-dimensional acquisition engine (under the hood), including
-** a smart sequencer that uses burst acquisition whenever possible
-** an image pipeline allowing plugins to process images on the fly
-** a flexible metadata system for programmers
-** option to provide custom time intervals in MDA
-* Close integration with ImageJ hyperstacks
-** four "dimension sliders": channels, slices, frames, positions
-** display of RAM- or disk-based image sets during or after acquisition, including disk-based image sets larger than available RAM
-* An image display control panel (in the main window) that lets you
-** easily adjust contrast for each channel
-** add a scale bar
-** view metadata and add comments for image sets and individual image planes
-* Simplified hardware configuration, including auto-detection and auto-setup of a number of serial devices.
-* Data Browser plugin for quickly browsing through Micro-Manager data sets
-* Well plate plugin (Big.jar, Karl Bellve)
-* Clojure Editor Plugin
-* Script interface to add runnables in acquisition engine
-* Pluggable display API (ImageCacheListener)
-* Automated bug reports, available in Help > Report Problem
-* New/Improved device support:
-** New PI GCS adapter (Stephen Rau)
-** Improved Thorlabs DCxxxx (Olf Wohlmann)
-** PCO adapter now supports new CMOS cameras (Franz Reitner)
-** Support for nPoint stages (Mission Bay Imaging)
-** XCite LED (Mission Bay Imaging)
-** Thorlabs piezo stage (Nenad Amodaj)
-** Updated ABS Camera (now also 64-bit, Heiko Baumann)
-** ASI CRISP support, including plugin (Nico Stuurman)
-** Scientifica stages (Mathew Player)
-** Hamamatsu support by Hamamatsu (Patrick Gregorio), works with Flash 4.0
-** Fixes to ZeissCAN29
-** Thorlabs BD102 stage (Nenad Amodaj)
-** Thorlabs Scientific Imaging (TSI) Camera
-** AndorSDK3 (supports new Neo camera)
-** CARV II spinning disk confocal
-** MCU28 (Zeiss CAN XY stage - Nenad Amodaj)
-** Coherent Sapphire Laser (Karl Hoover and Paul Wiggins)
-** GigECamera (David Marshburn, UNC-CH)
-** Mac support for SPOT (Erwin Frise)
-** SimpleCam module with GPhoto support
-** Leica AFC (Hardware Autofocus) 
-** New libusb drivers for K8055
-** Meiji Techno EMZ focus stage (Koen De Vleeschauwer)
-** Tethered Cameras (Canon and Nikon) (Koen De Vleeschauwer)
-** X-Cite 120PC Exacte (Mission Bay Imaging)
-** Image Processor Chain - provides sequencing of C++-based image processors in the Micro-Manager core
+=== Changes in 1.4.15 (since 1.4.14) ===
 
-{{Note|Burst acquisition (formerly a separate utility in 1.3) has been merged with multi-dimensional acquisition -- if you want to do a burst, simply select "Time Points" only and set the time interval to 0.}}
+* New in the Main Application
+** High speed acquisition implemented, to allow up to 1.1 GB/s acquisition, with storage to RAM or to (high-speed) disk (Arthur Edelstein)
+** New High Content Screen plugin added (Nenad Amodaj)
+** MLE fitting and subranging features added to Localization Microscopy plugin (Nico Stuurman, Arthur Edelstein)
+** Tile Creator improved to allow centering of a grid at the current location (Brian Teague)
+** Histogram improved to include display of current display min and max (Henry Pinkard)
+** Bugs fixed in main application, acquisition engine, Slide Explorer (1), Image Flipper, Live Replay, Multi Camera, and Stage Control plugins
 
-[ [[Micro-Manager_Version_Archive|Old versions of Micro-Manager]] ]
+* New Device Adapters
+** ASITiger - ASI TG-1000 "Tiger" Controller (Jon Daniels, ASI)
+** FLICamera - Finger Lakes Instrumentation cameras (Jim Moronski, FLI)
+** IDS_uEye - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM) (Wenjamin Rosenfeld)
+** MCCDAQ - Measurement Computing PCI-DDA08/16 (Matthew Bakalar)
+** Okolab - Okolab Microscope Incubators (Marco Di Pasqua, Okolab)
+** Oxxius - Oxxius Laser Controller (Julien Beaurepaire, Oxxius)
+** Piezosystem_30DV50 - piezosystem jena 30DV50 digital controller (Chris Belter, piezosystem jena)
+** Piezosystem_dDrive - piezosystem jena d-Drive digital controller (Chris Belter, piezosystem jena)
+** Standa - Standa Microstep stepper motor driver (Clarence Leung)
+** HIDManager - serial interface to USB Human Interface Devices (Nico Stuurman)
+
+* New Closed-Source Device Adapters
+** SigmaKoki - Sigma Koki stages and shutters (Hiroki Kibata, Sigma Koki)
+
+* Updated Device Adapters
+** ABS: Update to new API with improved 64-bit support (ABS Jena)
+** Andor: Fix pre-amp gain display; support centralized crop mode on iXon Ultra; add Region of Interest property; fix Output Amplifier setting behavior when Frame Transfer is enabled (Matthew Milford, Andor)
+** AndorLaserCombiner: Add Enable property to allow independent control of power and on/off (Pariksheet Nanda)
+** AndorSDK3: Add Frame Rate Control property; Optimize for speed; Add read-only informational properties; Support hardware timestamp from camera; Support multiple cameras; Fix binning-related bug; Improve ROI support (Norman Glasgow, Andor)
+** ASIStage: Allow triggered Z stage to ignore initial pulses (Arthur Edelstein); Fix axis identity and CRISP axis setting; Improve support for Z stage ring buffer (Nico Stuurman)
+** BaumerOptronic: Fixed bug causing acquisition to start before shutter opens (Mark Tsuchida)
+** Cobolt: Add shutter and power control (Alexis Maizel)
+** DemoCamera: UseSequences property for CDemoStage
+** GigECamera: Fix bug in binning setting; Add acquisition mode property (Heng Xu); Fix issue with short exposure snaps (Mark Tsuchida)
+** GPhoto: Minor updates (Koen De Vleeschauwer); Add to OS X build (Nico Stuurman)
+** LeicaDMI: Fix issues related to 0-step movement of stage and TL polarizer; Add delay setting for halogen lamp (Brian Teague); Support for FastFilterWheel (Arthur Edelstein)
+** LumencorSpectra: Fix State property (Louis Ashford, Lumencor); Make LightEngine selection a pre-init property; Allow switching individual colors independently of shutter state; Improve default settings (Nico Stuurman)
+** MCL_MicroDrive: Support stages without encoders (Arthur Edelstein)
+** OpenCVgrabber: Add OS X version; Add camera selection (Nico Stuurman)
+** PCO_Generic: Support for 64-bit; Noise filter mode for pco.edge; Support multiple cameras; Bug fixes (Franz Reitner, PCO AG)
+** PVCAM: Support microsecond exposure resolution for Photometrics cameras; Fixed an issue with some properties; Add support for additional metadata from the camera (Windows); Add support for callback acquisition (optimized for high-speed acquisition) (Windows); PVCAM 2.9.5 is now required on Windows (Lubomir Walder and Andrej Bencur, Photometrics)
+** QCam: Support multiple cameras (Mark Tsuchida)
+** ScopeLED: Add ActivePresetMode property (Ryan Clark, DiCon Lighting)
+** SerialManager: Fix binary message logging in CoreLog (Mark Tsuchida)
+** SpectralLMM5: Add support for USB HID ports; Add per-line switching (Nico Stuurman)
+** ThorlabsDCxxxx: Add DC4104 device (Korbinian Kapsner)
+** ThorlabsUSBCamera: Remove duplicate exposure property (Mark Tsuchida); Support for 8 and 16 bit mode, high frame rates with USB3, FPS property, color mode, binning, metadata (Nenad Amodaj)
+** TISCam: No longer need to manually install DLLs from vendor
+** TSI (Thorlabs Scientific Imaging): Add Gain property (Nenad Amodaj)
+** TwainCamera: Handle legacy devices better (Erich Hoover)
+** Utilities: New DAMonochromator device (Ed Simmons); Bugfixes for MultiCamera (Nico Stuurman, Arthur Edelstein)
+** VariLC: Add device detection support; Add Palette support; Add properties for active and total LCs; Display device version number (Amitabh Verma and Grant Harris)
+** Vortran: New device: VersaLase (David Sweeney, Vortran Laser Technology)
+** ZeissCAN29: Fix a crash related to condenser contrast setting (Nico Stuurman)
+
+* Updated Closed-Source Device Adapters
+** AxioCam: Add support for AxioCam MRc5 (Henry Pinkard); Fix bugs causing crashes (Mark Tsuchida)
+** ESImagingIOControllers: New sequence storage method, stimulus mode (requires new controller firmware) (Ed Simmons)
+** HamamatsuHam: Updates, enhancements, and bugfixes (Patrick Gregorio, Hamamatsu)
+** Micropix: Support multiple instances of the device (Ed Simmons)
+** NikonTI: A near-complete rewrite to improve stability and provide better diagnostics and logging for errors; Installers for up-to-date Nikon driver software (not in the Micro-Manager installer; please see the MM wiki page for NikonTI) (Mark Tsuchida)
+** Olympus: Bugfixes (Arthur Edelstein)
+
+* Changes Relevant to Developers Only
+** Logging of user interface activity added (Arthur Edelstein)
+** Dependencies in acquisition engine on Micro-Manager gui instance removed (Arthur Edelstein)
+** New build scripts for Windows (Mark Tsuchida)
+** Clean up usage of default sequence acquisition implementation in CCameraBase (Nenad Amodaj)
+** Slightly improve CoreLog format (Mark Tsuchida)
+** Prevent some spurious errors in CoreLog (Nico Stuurman)
+** Prevent mmgr_dal_X.Y from being recognized as a device adapter on Windows, where Y is not "dll"
+
+
+[[Micro-Manager_Version_Archive|(Previous releases)]]
 
 {{Downloads_Sidebar}}
