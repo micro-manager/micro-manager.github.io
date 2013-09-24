@@ -13,6 +13,10 @@ pgFocus monitors focus changes through the positional changes of a reflected las
 [[File:Focus_PCB_small.jpg|frame|Figure: pgFocus PCB]]
 pgFocus uses the same [http://www.atmel.com/devices/ATMEGA32U4.aspx Atmel ATMEGA 32U4] as seen in the [http://arduino.cc/en/Main/arduinoBoardLeonardo Arduino Leonardo]. 
 
+[[File:pgFocus.png|thumb|Figure: pgFocus Basic Design]]
+
+
+[[File:pgFocus2.png|thumb|Figure: pgFocus Optical Layout]]
 pgFocus is connected to a computer via a USB port. USB is used to power and to communicate with pgFocus.
 
 ==== Power ====
@@ -43,6 +47,8 @@ The Linear Light Array represents a physical limit. The return beam must fall wi
 
 The Linear Light Array's location on the PCB is in the exact vertical center of the board. This allows you to put pgFocus in either vertical orientation and still use the same case.
 
+We also use a High Pass Filter in front of the Linear Light Array that can be purchased from [http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions]
+
 ==== Digital Expansion Port ====
 
 pgFocus makes accessible 8 digital I/O pins compatible with D0 to D7 pins on the Arduino Leonardo. These pins can be used for other light sensors, or perhaps a hardware switch to turn on/off focus, or to move the focus set point up or down.
@@ -53,6 +59,9 @@ pgFocus makes accessible 8 digital I/O pins compatible with D0 to D7 pins on the
 
 pgFocus uses a laser beam that is reflected off the cover glass/water interface to monitor the microscope focus. Hence, an objective with an NA of at least 1.45 is required.
 The laser beam wavelength should be different from that being used for science (808nm is a good choice) and must be coaligned with the TIRF beam. This can be done using a mirror, beam splitter and a short pass filter. Care must be taken to ensure that the fluorescence filter cube and other microscope optics will allow the return of the pgFocus beam back along its input path and back to the pgFocus detector and that the microscope optics will NOT allow the laser light to pass into the user's eyes or to reach the camera. Once the position and angle of the pgFocus beam is coincident with that of the TIRF beam a strong return pgFocus beam will be seen that moves with changes in microscope focus. The pgFocus detector array can now be aligned and centered on the beam.
+
+ 
+[[File:PgFocus_opticalpath_txt.jpg|center|500px|Figure: Our optical layout]]
 
 ==== Eagle Files ====
 
@@ -108,7 +117,7 @@ The user just needs to make sure the the return laser beam is aligned and center
 
 The figure below is captured from the first prototype of pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
 
-[[File:PgFocus_calibration.jpg|frame|Figure: Calibration Output]]
+[[File:PgFocus_calibration.jpg|frame, center|Figure: Calibration Output]]
 
 The above figure shows two numbers for each position. The first number is Voltage DAU which ranges from 0 to 4095 (12bit DAC used on the prototype pgFocus, 0 DAU = -1.65V, 2048 DAU = 0V, 4095 DAU = +1.65V). The second number is the pixel position on the Linear Light Array, which ranges from 0 to 127. Because pgFocus calculates a centroid of the return beam light profile, it can determine sub pixel positions on the Linear Light Array.
 
