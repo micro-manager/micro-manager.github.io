@@ -78,28 +78,29 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 ! Description
 |- valign="top"
 | Set ROI(s)
-| Program the device with ROI(s) drawn on the selected image.
+| Upload ROI(s) drawn on the selected image to the device.
 |- valign="top"
 | ROI Manager
-| To add multiple 2D regions on the image, one has to use the ImageJ ROI Manager.  This button is just a shortcut to that ImageJ menu.
+| Add multiple ROIs to the image.
 |- valign="top"
 | Loop
-| Number of times to fire ROIs.  This setting differs from the device's <code>Repetitions</code> property by looping after visiting each region.
+| Number of times to target a group of ROIs.
 |- valign="top"
 | Spot dwell time
-| (Does not affect pulse laser) Stops photo illumination after set time.
+| Stops photo illumination after a certain interval. (Does not affect pulsed lasers.) 
 |- valign="top"
 | Run ROIs now!
 | Fires ROIs drawn on current image.
 |- valign="top"
 | Run ROIs in Multi-Dimensional Acquisition
-| Fires phototargeting devices in parallel with MDA (does not affect image capture rate).
+| Fires phototargeting device at a pre-determined time during MDA.
 |- valign="top"
 | Start Frame
 | Timepoint in MDA to fire sequence.
 |- valign="top"
 | Repeat every __ frames
-| Timepoint interval in MDA to again fire sequence until MDA completes or device turned off in <code>Setup</code> tab.
+| Number of frames between successive phototargeting events in an MDA.
+<code>Setup</code> tab.
 |}
 
 
