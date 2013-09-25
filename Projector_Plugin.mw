@@ -21,10 +21,10 @@ The calibration procedure starts by illuminating a few spots near the center of 
 ! Description
 |- valign="top"
 | On / Off
-| Toggles device control.
+| Toggles device illumination.
 |- valign="top"
 | Calibrate
-| Creates calibration map of phototargeting device range to the camera pixel position.  Repeat for all cameras and objectives you intend to use with the phototargeting device.
+| Creates calibration map of phototargeting device range to the camera pixel position. 
 |- valign="top"
 | Show center spot
 | Illuminate center of SLM or galvo device.
@@ -32,8 +32,6 @@ The calibration procedure starts by illuminating a few spots near the center of 
 | Phototargeting channel
 | Toggles to specified channel during phototargeting.  You don't need to set this unless some hardware needs to be moved during imaging, like a dichroic and/or a shutter.  If you don't see your channel listed, you must set the <code>Core-ChannelGroup</code> in the <code>Property Browser</code> to the Group containing this channel.
 |}
-
-
 
 == Point and Shoot ==
 
