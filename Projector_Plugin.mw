@@ -43,11 +43,32 @@ Point and Shoot lets you phototarget a small region instantaneously, by clicking
 # Turn on live mode.
 # Hold down the Control key (on the keyboard) and click anywhere in the live image window. You should immediately see a laser spot appear for a time at the clicked location.
 
-== ROIs ==
-
-Multi-region control.  Programs regions to be fired with Multi-Dimensional Acquisition, or fires instantly like <code>Point and Shoot</code> tab using "ROI ROIs now!" button.
+== ROIs tab ==
 
 [[File:Plugin_projector-rois.png]]
+
+
+The Regions of Interest (ROIs) tab lets you specify regions on the image to be phototargeted. Phototargeting of an ROI can be carried out instantly, or programmed into a Multi-Dimensional Acquisition.
+
+# Before running an ROI experiment, the calibration (described above under "Setup Tab") must already have been carried out. Over time, the calibration may drift, so repeat calibration as needed. It's also useful to try "Point and Shoot" first, to make sure the phototargeting hardware is working and the calibration is correct.
+
+The procedure for illuminating a single ROI is as follows:
+
+# Select one of the ROI tools on the ImageJ toolbar. Possible ROIs tools can include Rectangular, Oval, Polygon, Freehand, or Point. (Note that some devices, such as the MicroPoint, currently only support Point targeting.)
+# Press "Set ROI(s)". The ROI will be uploaded to the phototargeting device.
+# Choose a value of 1 or more for "Loop". If Loop is greater than 1, then for every phototargeting event, the phototargeter will loop through the set of ROIs multiple times.
+# Turn on Live mode (on the main Micro-Manager window).
+# Press "Run Rois now!" The ROI should be illuminated (rastered in the case of a galvo-based device).
+
+It's also possible to run multiple ROIs:
+# Click the ROI Manager button to display ImageJ's ROI Manager.
+# Draw an ROI, and press "Add." The ROI will be included in the list.
+# Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
+
+You can also run ROIs at pre-determined time points in an acquisition sequence.
+# Check Run ROIs in Multi-Dimensional Acquisition
+# Enter a "Start Frame" index -- that is, the first frame at which phototargeting should commence.
+# If further phototargeting events are desired, check "Repeat every" and specify how many frames should elapse before the next phototargeting event should occur (after the first).
 
 {| class="wikitable"
 !style="width: 20%;"| Setting
