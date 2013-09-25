@@ -65,7 +65,10 @@ It's also possible to run multiple ROIs:
 # Draw an ROI, and press "Add." The ROI will be included in the list.
 # Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
 
-You can also run ROIs at pre-determined time points in an acquisition sequence.
+Pressing "Run ROIs now!" is a good way to phototarget the specimen during a Multi-Dimensional Acquisition. Just start the MDA, wait for the right moment, and then hit "Run Rois now!" to cause phototargeting to start, while acquisition continues simultaneously.
+
+You can also run ROIs at pre-determined time points in an acquisition sequence, however:
+
 # Check Run ROIs in Multi-Dimensional Acquisition
 # Enter a "Start Frame" index -- that is, the first frame at which phototargeting should commence.
 # If further phototargeting events are desired, check "Repeat every" and specify how many frames should elapse before the next phototargeting event should occur (after the first).
