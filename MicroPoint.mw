@@ -27,14 +27,11 @@ The MicroPoint controller contains it's own USB-Serial convertor.  If this drive
 The [[Projector|Projector plugin]] operates the Micropoint.  There are 2 behaviors of the plugin unique to the Micropoint:
 
 # The dwell time setting has no effect.  It exists because the plugin was originally written for SLM devices.
-# The plugin does not allow 2D regions with the MicroPoint; only point regions.  To draw multiple points, right-click the point tool and select "Multi-points Tool".  If you need to use line or 2D regions, you could:
-#* Write an ImageJ macro that replaces such regions with points placed at an even intervals, or
-#* Patch the Projector plugin itself to do automated this for you.
+# The plugin does not allow 2D regions with the MicroPoint; only point regions.  To draw multiple points, right-click the point tool and select "Multi-points Tool".  If you need to use line or 2D regions, one could extend the MicroPoint device adapter to handle these.
 
 [[File:Micropoint-calibration.png]] Figure: The calibration process completes two steps.  First, it fires a crosshair pattern to determine the camera orientation (left image), and then fires a grid pattern across the range of the phototargeting device (right image).  The algorithm accounts for the device range exceeding exceeding the camera sensor size, but the orientation pattern must be captured within the camera field of view.
 
 FIXME: Describe range limit and what happens when targeting outside the galvo range.
-
 
 == Resources ==
 
