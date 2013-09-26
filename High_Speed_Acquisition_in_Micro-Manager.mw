@@ -1,5 +1,7 @@
 The latest Scientific CMOS (sCMOS) cameras such as the [http://www.andor.com/scientific-cameras/neo-and-zyla-scmos-cameras/zyla-55-scmos Andor Zyla], [http://www.hamamatsucameras.com/flash4/ Hamamatsu Orca Flash 4.0], and [http://www.pco.de/categories/scmos-cameras/pcoedge/ PCO edge] boast large format sensors and high frame rates, producing image data of up to 1.1 GB/s. As of version 1.4.15, [http://micro-manager.org Micro-Manager] is capable of acquiring images from cameras at these high speeds. Some care must be taken to ensure that these images are properly stored.
 
+=== Necessary computer hardware ===
+
 First needed is a computer that can handle these data rates. With the right hardware, you can store the images either in RAM (for later copying to disk) or on solid state drives (SSDs).
 
 To use the RAM storage strategy, make sure the computer has relatively recent RAM (such as PC1600 or faster) and enough RAM for the desired acquisition. The Micro-Manager team has tested a computer with 128 GB of RAM, storing 100 GB of images from the Andor Zyla and Hamamatsu Orca Flash 4.0 at full frame and full frame rate (90 seconds of images).
@@ -9,6 +11,8 @@ For SSD storage, we have used a number of SSDs in tandem using a RAID controller
 With Micro-Manager, we found we were able to acquire a long time series at 1.1 GB/s (the full frame rate and full 2560x2160 frame for the 10-tap Andor Zyla), filling the virtual drive with over 900 GB of frames in ~13 min.
 
 Our test computer, we discovered after purchase, did not support [http://en.wikipedia.org/wiki/TRIM TRIM]. As a result, the performance of our virtual drive would fall dramatically after several acquisitions. We could restore performance to the highest level by reformatting the virtual drive the Windows disk management tool (with "Quick Format" turned off). Nonetheless, we strongly recommend purchasing a computer and RAID controller that are compatible with TRIM.
+
+=== How to run a high speed acquisition ===
 
 One the computer is set up, the camera driver is installed, Micro-Manager is installed (on a drive other than the virtual drive) and configured with the camera, we are ready to start testing acquisition. After starting Micro-Manager, select "Options" under the Tools menu. Please ensure that the "Fast Storage" option is checked. In the future, Fast Storage mode is likely to become the default and the checkbox will be hidden.
 
