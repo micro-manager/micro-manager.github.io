@@ -1,13 +1,13 @@
 == Hardware synchronization ==
 
-=== Overview ===
+=== What is hardware triggering? ===
 Micro-Manager's bread and butter is multi-dimensional acquisition, where (typically) monochrome images are acquired in different channels and at different focal positions and XY positions. In multi-dimensional acquisition it's often desirable to acquire images as quickly and precisely as possible. Some illumination devices, such as AOTF laser controllers, LED sources, can switch between channels extremely quickly, with submillisecond switching times. Likewise, some piezo-drive focus drives can move very fast. To take advantage of these fast operations, one would like to minimize the delays between settings each new channel and Z slices and the acquisition of an image from the camera.
 
 Unfortunately, computers have limits in their ability to provide fast and precise control of connected microscope hardware. Many control protocols contain unpredictable delays. And since the commonly-used operating systems are not "real time," there is never a guarantee that a task will be executed within a certain time frame. To achieve the tightest synchronization and fastest acquisition possible, it's necessary to use external hardware to electronically synchronize the equipment.
 
 Since 2011, Micro-Manager has included growing support for hardware triggering of certain devices to enable this kind of synchronization. We are pleased to note that Micro-Manager's user interface require the addition of no new buttons, menus or other doodads to make use hardware triggering. Once the microscope hardware has been set up, users don't have to worry about the details of how channels and slices are acquired -- they just request what images they want, and Micro-Manager takes care of figuring out how to acquire the images, making use of hardware triggering whenever possible.
 
-=== Implementation ===
+=== How hardware triggering works in Micro-Manager ===
 
 Many microscope hardware components have inputs and outputs for TTL signals (see our Micro-Manager [http://valelab.ucsf.edu/publications/2010EdelsteinCurrProt.pdf tutorial]) that can be used for synchronization.  These TTLs are usually physically connected by [http://en.wikipedia.org/wiki/BNC_connector BNC connectors].
 
@@ -28,8 +28,5 @@ When executing an multi-dimensional acquisition, Micro-Manager's acquisition eng
 Likewise, if the user requests a multi-dimensional acquisition with a sequence of channels that require only hardware-triggerable properties, (for instance, then selection of a laser line through an AOTF controller),  then Micro-Manager will load the sequence of AOTF states to the controller and rely on the hardware triggering to switch channels. If multiple time points and zero interval between frames has been requested, then channel triggering will cycle for as long as necessary to produce a multi-channel "movie."
 
 Triggering can even be carried out with both Z-position and channel triggering, to allow multichannel, volumetric images to be acquired very quickly and precisely. The Micro-Manager team demonstrated this capability at the 2011 ASCB meeting (see [https://micro-manager.org/wiki/Micro-Manager_at_the_ASCB_Meeting_2011 here] for a description and an example movie).
-
-===Controller devices that currently support triggered sequences===
-
 
 {{Documentation_Sidebar}}
