@@ -29,6 +29,7 @@ Likewise, if the user requests a multi-dimensional acquisition with a sequence o
 
 Triggering can even be carried out with both Z-position and channel triggering, to allow multichannel, volumetric images to be acquired very quickly and precisely. For example, below is a movie of a dividing Drosophila S2 cell, expressing GFP-histone 2B and Cherry-tubulin, acquired by the Micro-Manager team as a demonstration of Micro-Manager's hardware triggering capabilities in the [https://micro-manager.org/wiki/Micro-Manager_at_the_ASCB_Meeting_2011 Micro-Manager booth in the Exhibition Hall of the 2011 ASCB Meeting]. A microcontroller kindly loaned by [http://www.esimaging.co.uk/products ESImaing] was used to trigger both channels and Z positions, where two channels were acquired at each of 5 slices (with 2 micron intervals) in the Z stack. Camera exposure time was set to 50 ms; thus the total time to acquire a single time point (10 images, or 2 channels x 5 slices) was 500 msec. A maximum intensity projection in each channel was carried out in post-processing to ensure the visibility of all chromosomes:
 
+
 {{#ev:youtubehd|O8zdsyNoOg8|500|center}}
 
 {{Documentation_Sidebar}}
