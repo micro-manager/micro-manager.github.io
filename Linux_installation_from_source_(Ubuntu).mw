@@ -1,4 +1,5 @@
-{{Note|These instructions are mostly complete, but the Java part does not compile due to it not finding <code>jni.h</code> [[User:P.nanda|P.nanda]] 17:04, 23 August 2013 (PDT)}}
+{{Note|These instructions are mostly complete, but the Java part does not compile due to it not finding <code>jni.h</code> [[User:P.nanda|P.nanda]] 17:04, 23 August 2013 (PDT)
+<br />To allow the build to find jni.h, the --with-javaincl flag to ./configure can be used. I haven't tested it on Ubuntu. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 17:56, 25 September 2013 (PDT)}}
 
 == Preparation ==
 
