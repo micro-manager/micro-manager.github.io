@@ -2,7 +2,7 @@ The latest Scientific CMOS (sCMOS) cameras such as the [http://www.andor.com/sci
 
 === Necessary computer hardware ===
 
-First needed is a computer that can handle these data rates. With the right hardware, you can store the images either in RAM (for later copying to disk) or on solid state drives (SSDs).
+First needed is a computer that can handle these data rates. With the right hardware, you can store the images either in RAM (for later copying to disk) or on [http://en.wikipedia.org/wiki/Solid-state_drive solid state drives] (SSDs).
 
 To use the RAM storage strategy, make sure the computer has relatively recent RAM (such as PC1600 or faster) and enough RAM for the desired acquisition. The Micro-Manager team has tested a computer with 128 GB of RAM, storing 100 GB of images from the Andor Zyla and Hamamatsu Orca Flash 4.0 at full frame and full frame rate (90 seconds of images).
 
