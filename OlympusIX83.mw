@@ -6,6 +6,7 @@
 <tr><td>'''License:'''</td><td>Not Open Source, per Olympus' request</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.4.16</td>
+</table>
 
 Before configuring for use with Micro-Manager, it's necessary to install the OlympusIX83 drivers, available for customers from Olympus. The computer should be connected through firewire to the main controller, which in turn is connected to the TPC (touch panel controller) as well as the microscope stand.
 
