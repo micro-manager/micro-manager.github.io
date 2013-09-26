@@ -82,8 +82,11 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PI_GCS_2]] - Physik Instrumente (PI) GCS2 adapter
 * [[PI_GCS]] - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
 * [[PI]] - Other (older) Physik Instrumente devices.  Includes the E-662 controller
-* [[Piezosystem_30DV50]] - Piezosystem Jena. One channel controller
-* [[Piezosystem_dDrive]] - Piezosystem Jena. 6 channel controller with display
+* [[Piezosystem_30DV50]] - Piezosystem Jena. digital one channel controller
+* [[Piezosystem_dDrive]] - Piezosystem Jena. digital 6 channel controller with display
+* [[Piezosystem_NV40_1]] - Piezosystem Jena. one channel controller for older stages
+* [[Piezosystem_NV40_3]] - Piezosystem Jena. 3 channel controller with USB
+* [[Piezosystem_NV120_1]] - Piezosystem Jena. 1 channel controller with USB
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
 * [[Scientifica]] - Scientifica stages
