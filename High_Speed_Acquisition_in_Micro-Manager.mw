@@ -1,6 +1,6 @@
 The latest Scientific CMOS (sCMOS) cameras such as the [http://www.andor.com/scientific-cameras/neo-and-zyla-scmos-cameras/zyla-55-scmos Andor Zyla], [http://www.hamamatsucameras.com/flash4/ Hamamatsu Orca Flash 4.0], and [http://www.pco.de/categories/scmos-cameras/pcoedge/ PCO edge] boast large format sensors and high frame rates, producing image data of up to 1.1 GB/s. As of version 1.4.15, Micro-Manager is capable of acquiring images from cameras at these high speeds. Some care must be taken to ensure that these images are properly stored.
 
-First, acquire a computer that can handle these data rates. It is possible to temporarily store the images in RAM, or to store them directly to permanent storage.
+First needed is a computer that can handle these data rates. It is possible to temporarily store the images in RAM, or to store them directly to permanent storage.
 
 For RAM storage, make sure the computer has relatively recent RAM (such as PC1600 or faster) and enough RAM for the desired acquisition. The Micro-Manager team has tested a computer with 128 GB of RAM, storing 100 GB of images from the Andor Zyla and Hamamatsu Orca Flash 4.0 at full frame and full frame rate (90 seconds of images).
 
