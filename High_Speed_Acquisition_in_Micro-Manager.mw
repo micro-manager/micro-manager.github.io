@@ -14,7 +14,7 @@ Our test computer, we discovered after purchase, did not support [http://en.wiki
 
 === How to run a high speed acquisition ===
 
-Once the computer is set up, the camera driver is installed, Micro-Manager is installed (on a drive other than the virtual drive) and configured with the camera, we are ready to start testing acquisition. After starting Micro-Manager, select "Options" under the Tools menu. Please ensure that the "Fast Storage" option is checked. In the future, Fast Storage mode is likely to become the default and the checkbox will be hidden.
+Once the computer is set up, the camera driver and Micro-Manager are installed and Micro-Manager is configured to use with the camera, we are ready to start testing acquisition. After starting Micro-Manager, select "Options" under the Tools menu. Please ensure that the "Fast Storage" option is checked. In the future, Fast Storage mode is likely to become the default and the checkbox will be hidden.
 
 Starting live mode lets us test that the camera is working. For the sCMOS cameras such as the Zyla or Flash 4.0, setting exposure time to 10 ms should result in 100 fps reported in the Live window.
 
