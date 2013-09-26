@@ -68,7 +68,7 @@ Restart uManager for this change to take effect.
 
 === Zyla support in Micro-Manager ===
 
-Minimum version required is 1.4.11 (Nov 8th, 2012)
+Please read the section on [[High Speed Acquisition in Micro-Manager]]. The minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but 1.4.15 or later is strongly recommended.
 Consider trying the latest nightly build from [http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ here.]
 
 === DeviceCreate function failed ===
