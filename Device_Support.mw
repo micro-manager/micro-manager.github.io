@@ -10,6 +10,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[NikonTI]] - Nikon Ti microscope
 * [[NikonAZ100]] - Nikon AZ100 Zoom microscope
 * [[Olympus]] - Olympus IX81 (Inverted)/BX61 (Upright)
+* [[OlympusIX83]] - Olympus IX83 motorized microscope
 * [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
 * [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
 
