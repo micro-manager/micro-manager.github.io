@@ -11,7 +11,7 @@ __NOTOC__
 === Changes in 1.4.15 (since 1.4.14) ===
 
 * New in the Main Application
-** [[High speed acquisition|High Speed Acquisition in Micro-Manager]] implemented, to allow up to 1.1 GB/s acquisition, with storage to RAM or to (high-speed) disk (Arthur Edelstein)
+** [[High Speed Acquisition in Micro-Manager|High speed acquisition]] implemented, to allow up to 1.1 GB/s acquisition, with storage to RAM or to (high-speed) disk (Arthur Edelstein)
 ** New High Content Screen plugin added (Nenad Amodaj)
 ** MLE fitting and subranging features added to Localization Microscopy plugin (Nico Stuurman, Arthur Edelstein)
 ** Tile Creator improved to allow centering of a grid at the current location (Brian Teague)
