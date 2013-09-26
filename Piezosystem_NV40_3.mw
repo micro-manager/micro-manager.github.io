@@ -1,7 +1,7 @@
 == Piezosystem NV40/3 adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for 30DV50 from [http://http://www.piezosystem.com/ Piezosystem]</td></tr>
+'''Summary:'''</td><td>Adapter for NV40/3 from [http://http://www.piezosystem.com/ Piezosystem]</td></tr>
 <tr><td>'''Author:'''</td><td>Chris Belter</td></tr>
 <tr><td>'''License:'''</td><td>GNU</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, 32 and 64-bit (USB + serial Port)</td></tr>
