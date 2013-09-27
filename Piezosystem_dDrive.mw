@@ -8,6 +8,11 @@
 <tr><td></td><td>Linux</td></tr>
 <tr><td></td><td>Mac</td></tr>
 <tr><td>'''Devices:'''</td><td>d-Drive</td></tr>
+<tr><td width=20%>'''Serial Port settings:'''</td><td>115200 baud, 1 stop bit,  0 ms delaybetweenCharsMs, Handshaking Software.</td></tr>
+
+<tr><td><b>Automated Serial Port Setup:</b></td><td>Yes</td></tr>
+
+<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.4.15</td>
 </table>
 
