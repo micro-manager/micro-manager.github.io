@@ -102,11 +102,12 @@ Work is underway (by Mark) to migrate Micro-Manager to Visual Studio 2010 (in wh
 To setup a 32/64-bit build environment with VS2010, 
 
 * Install Visual C++ 2010 Express from http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express.
+* Upgrade to Visual Studio 2010 (Express) SP1 (http://www.microsoft.com/en-us/download/details.aspx?id=23691).
 * Install Microsoft Windows SDK 7.1 (http://www.microsoft.com/en-us/download/details.aspx?id=8279).
 
-Note that if you install the Windows SDK before VS2010, you may need to install this, too: http://www.microsoft.com/en-us/download/details.aspx?id=4422
+Note that if you install the Windows SDK before VS2010 SP1, you may need to install this, too: http://www.microsoft.com/en-us/download/details.aspx?id=4422
 
-Until the whole project migrates to VS2010, building individual device adapters using VS2010 is (usually) relatively easy. Open the .vcproj file for a device adapter in VS2010, and follow the instructions to auto-convert (a .vcxproj file is generated). Then, in Project Properties,
+Even before the whole project migrates to VS2010, building individual device adapters using VS2010 is (usually) relatively easy. Open the .vcproj file for a device adapter in VS2010, and follow the instructions to auto-convert (a .vcxproj file is generated). Then, in Project Properties,
 
 * Reset Linker Output File to "inherit from parent or project defaults", which gives you $(OutDir)$(TargetName)$(TargetExt), and set Target Name to mmgr_dal_$(ProjectName)
 * Set Platform Toolset to WindowsSDK7.1
