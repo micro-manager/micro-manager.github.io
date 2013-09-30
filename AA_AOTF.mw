@@ -18,3 +18,5 @@ Shutter device to control a single channel of the AA MDS Multi Digital Synthesiz
 
 '''multiAAAOTF:'''
 Shutter device to control all 8 channels of the MDS at the same time (only open/close, use AAAOTF to set intensity of each channel). This device has two states: all off (0) and a selection of channels on (1). This selection is set by the property Channels, which is an 8-bit word (1..255). In other words 1 means channel 1 open, the rest closed; 2 means channel 2 open, rest closed; 5 channel 1 and 3 open, rest closed; etc.
+
+{{Note|Some, but not all, of these devices may have trouble rapidly switching multiple channels using the multiAOTF device (only the first channel will switch). In such cases, setting the "Delay between channels (ms)" property to greater than 25 ms might help.}}
