@@ -10,7 +10,7 @@ For SSD storage, we have used a number of SSDs in tandem using a RAID controller
 
 We were able to soup up Micro-Manager's various code modules to enable it to acquire long image sequences at 1.1 GB/s (the full frame rate and full 2560x2160 frame for the 10-tap Andor Zyla), filling the virtual drive with over 900 GB of frames in ~13 min.
 
-Despite this success, we discovered (after purchase) that our test computer did not support [http://en.wikipedia.org/wiki/TRIM TRIM]. This lack of TRIM seems to be the reason we experienced a dramatic fall in virtual drive performance after several acquisitions. We were able to restore performance to the highest speed by reformatting the virtual drive the Windows disk management tool (with "Quick Format" turned off). Reformatting is very inconvenient, so we strongly recommend purchasing a computer and RAID controller that are compatible with TRIM.
+Despite this success, we discovered (after purchase) that our test computer did not support [http://en.wikipedia.org/wiki/TRIM TRIM]. This lack of TRIM seems to be the reason we experienced a dramatic fall in virtual drive performance after several acquisitions. We were able to restore performance to the highest speed by reformatting the virtual drive using the Windows disk management tool (with "Quick Format" turned off). Reformatting is very inconvenient, so we strongly recommend purchasing a computer and RAID controller that are compatible with TRIM.
 
 === How to run a high speed acquisition ===
 
