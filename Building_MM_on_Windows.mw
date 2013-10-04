@@ -101,10 +101,14 @@ Work is underway (by Mark) to migrate Micro-Manager to Visual Studio 2010 (in wh
 
 To setup a 32/64-bit build environment with VS2010, 
 
-* Install Microsoft Windows SDK 7.1 (http://www.microsoft.com/en-us/download/details.aspx?id=8279).
+* Install Microsoft Windows SDK 7.1 (http://www.microsoft.com/en-us/download/details.aspx?id=8279). If the installer complains that .NET Framework 4 is required, cancel the SDK install and first install the .NET Framework (from http://www.microsoft.com/en-us/download/details.aspx?id=17851).
 * Install Visual C++ 2010 Express from http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express.
 * Upgrade to Visual Studio 2010 (Express) SP1 (http://www.microsoft.com/en-us/download/details.aspx?id=23691).
 * Install this fix: http://www.microsoft.com/en-us/download/details.aspx?id=4422
+
+{{Note|The order if installation is important. In particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed first. If you are in that situation, the only way out that I have found is to go to Control Panel > "Uninstall a program", uninstall everything with "Microsoft Visual ... 2010" in its name (Redistributable, Runtime, Express, Compilers, Service Pack, Tools for Office Runtime), and start over.}}
+
+{{Note|It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of "Microsoft Visual C++ 2010 Redistributable" (which is installed by various programs, including some versions of Micro-Manager) than the version that the SDK installer tries to install (which is 10.0.30319).}}
 
 Even before the whole project migrates to VS2010, building individual device adapters using VS2010 is (usually) relatively easy. Open the .vcproj file for a device adapter in VS2010, and follow the instructions to auto-convert (a .vcxproj file is generated). Then, in Project Properties,
 
@@ -113,6 +117,6 @@ Even before the whole project migrates to VS2010, building individual device ada
 
 Make sure to do both after selecting All Platforms and All Configurations.
 
-I have not tried VS2012 yet, but the necessary steps are likely to be similar to VS2010.
+I have not tried VS2012 yet, but the necessary steps are likely to be similar to VS2010. Microsoft says that project files can "round-trip" between VS2010 SP1 and VS2012 (http://blogs.msdn.com/b/visualstudio/archive/2012/03/28/round-tripping-with-visual-studio-11.aspx).
 
 {{Programming_Sidebar}}
