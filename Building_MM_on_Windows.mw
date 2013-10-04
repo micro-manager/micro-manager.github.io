@@ -117,6 +117,6 @@ Even before the whole project migrates to VS2010, building individual device ada
 
 Make sure to do both after selecting All Platforms and All Configurations.
 
-I have not tried VS2012 yet, but the necessary steps are likely to be similar to VS2010. Microsoft says that project files can "round-trip" between VS2010 SP1 and VS2012 (http://blogs.msdn.com/b/visualstudio/archive/2012/03/28/round-tripping-with-visual-studio-11.aspx).
+I have not tried VS2012 yet, but the necessary steps are likely to be similar to VS2010. [http://msdn.microsoft.com/en-us/library/vstudio/hh690665.aspx According Microsoft], it looks like VS2010 SP1 project files will work unmodified in VS2012 if both versions are installed on the computer.
 
 {{Programming_Sidebar}}
