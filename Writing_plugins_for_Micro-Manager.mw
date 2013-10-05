@@ -2,7 +2,8 @@ Micro-Manager has a Java-based plugin system similar to ImageJ's. To write a Mic
 
 Micro-Manager's classpath is set up so that Micro-Manager plugins can import classes from:
 # the [http://java.sun.com/j2se/1.6.0/docs/api/ Java 2 SE 6.0 Libraries]
-# [https://valelab.ucsf.edu/~arthur/mm_doc/html/namespaces.html Micro-Manager]
+# [https://valelab.ucsf.edu/~MM/doc/mmcorej/index.html Micro-Manager Core]
+# [https://valelab.ucsf.edu/~MM/doc/mmstudio/index.html Micro-Manager GUI]
 # [http://rsbweb.nih.gov/ij/developer/api/ ImageJ]
 # [http://commons.apache.org/math/userguide/overview.html Apache Commons Math]
 
