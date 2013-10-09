@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Interfaces with Sigma Koki controllers and associated hardware</td></tr>
 <tr><td>'''Author:'''</td><td>Sigma Koki</td></tr>
 <tr><td>'''License:'''</td><td>?</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows (uses serial interface)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, Mac and Linux (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Shutter, XY Stage</td></tr>
 </table>
 
