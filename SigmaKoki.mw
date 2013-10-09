@@ -11,7 +11,7 @@
 The dll file mmgr_dal_SigmaKoki.dll can be available from following site.
 http://www.sigma-koki.com/pages/support/software/sample_jp.php
 
-Version 1.3(1.3.49) and 1.4(1.4.12 32/64bit) of MM are compatible.
+Version 1.3(1.3.49) and 1.4(1.4.12 32/64bit) of MM are compatible. Later versions of MM already contain the dll.
 
 <table border="1"><tr>
 <td>device</td><td>XYStage FC-101G/SC-101G </td><td>XYStage SHOT-302GS/SHOT304GS</td><td>shutter SSH-C4B</td></tr>
@@ -27,6 +27,7 @@ Notes for the SHOT controllers:
 * Make sure that the INTERFACE of the controller is set to RS232C
 * Make sure that the BAUD rate selected in the controller is the same as used here
 * Make sure that the DELIMITER in the controller is CRLF
-The Micro-Manager adapter will set the step angle to 0.036 degree (S20) resulting in a resolution of 0.1 micron.  
+
+The Micro-Manager adapter will set the step angle to 0.036 degree (S20) resulting in a resolution of 0.1 micron for an actuator with step size of 2.0 micron.  The pre-initialization property "Move per step (micron)" should be set to the step size of the actuators in use (which can be found in the documentation of your actuator).  
 
 {{Devices_Sidebar}}
