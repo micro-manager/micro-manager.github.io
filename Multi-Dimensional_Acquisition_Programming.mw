@@ -72,7 +72,7 @@ A variety of other useful optional tags are produced by the multi-dimensional ac
 
 In the broadest sense Acquisition Engine takes an acquisition specification (protocol) as an input and produces a data set as the output. The Engine parses the protocol, sequences all required logical steps, converts them to MMCore API commands, collects all resulting images and metadata and stores them to disk, memory or both.
 
-Acquisition Engine is a part of the Micro-manager application and it runs within the Multi-Dimensional Acquisition Window, controlled by the GUI. However, the Acquisition Engine is independent of the GUI operation and can be used as a powerful tool for creating custom automated protocols. In order to control the Acquisition Engine from a standalone program or a script, or to even write a custom engine, we need to understand a couple of basic concepts.
+Acquisition Engine is a part of the Micro-manager application and it runs within the Multi-Dimensional Acquisition Window, controlled by the GUI. However, the Acquisition Engine is independent of the GUI operation and can be used as a powerful tool for creating custom automated protocols.
 
 = Reading and Writing Micro-manager Data Sets =
 
