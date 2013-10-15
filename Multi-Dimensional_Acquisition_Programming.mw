@@ -1,6 +1,8 @@
+
+
 Multi-dimensional acquisition is an important functionality of Micro-Manager. MDA capabilities have been dramatically revised and extended between 2010-2012.
 
-=== Architecture ===
+= Architecture =
 
 
 This image (from Grant Harris) shows the flow of TaggedImages through Micro-Manager during multi-dimensional acquisition. The most important interfaces and classes are described below.
@@ -65,3 +67,9 @@ A variety of other useful optional tags are produced by the multi-dimensional ac
 '''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/AcquisitionWrapperEngine.java AcquisitionWrapperEngine]''' (interface AcquisitionEngine): the traditional "acquisition engine," available in the script panel as '''acq''' or by calling gui.getAcquisitionEngine(). This wrapper uses a DefaultTaggedImagePipeline to set up the data flow of TaggedImages.
 
 {{Programming_Sidebar}}
+
+= Reading and Writing Micro-manager Data Sets =
+
+= Programmatic Control of the Acquisition Engine =
+
+= Implementing Custom Acquisition Engine =
