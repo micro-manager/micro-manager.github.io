@@ -69,7 +69,7 @@ The laser beam wavelength should be different from that being used for science (
 '''Warning:''' PCB design has not been verified yet and may not be final. 
 ----
 
-[https://github.com/kbellve/pgFocus pgFocus]
+[https://github.com/kbellve/pgFocus-hardware pgFocus]
 
 [https://github.com/kbellve/TSL1401CL-Adapter TSL1401CL-Adapter]
 
