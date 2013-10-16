@@ -74,6 +74,14 @@ In the broadest sense Acquisition Engine takes an acquisition specification (pro
 
 Acquisition Engine is a part of the Micro-manager application and it runs within the Multi-Dimensional Acquisition Window, controlled by the GUI. However, the Acquisition Engine is independent of the GUI operation and can be used as a powerful tool for creating custom automated protocols.
 
+There are three main components involved in running acquisition protocols:
+
+'''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/SequenceSettings.java SequenceSettings]''': protocol specification corresponding to the settings in the Multi-dimensional Acqusition Window in the GUI
+
+'''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/navigation/PositionList.java PositionList]''': an array of stage positions (XY or XYZ) that acquisition protocol is going to be applied to
+
+'''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/AcquisitionEngine2010.java AcquisitionEngine2010]''': the actual acquisition engine component
+
 = Reading and Writing Micro-manager Data Sets =
 
 = Programmatic Control of the Acquisition Engine =
