@@ -80,7 +80,7 @@ There are three main components involved in running acquisition protocols:
 
 '''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/navigation/PositionList.java PositionList]''': an array of stage positions (XY or XYZ) that acquisition protocol is going to be applied to
 
-'''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/AcquisitionEngine2010.java AcquisitionEngine2010]''': the actual acquisition engine component
+'''[https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/AcquisitionEngine2010.java AcquisitionEngine2010]''': the actual acquisition engine component
 
 = Reading and Writing Micro-manager Data Sets =
 
