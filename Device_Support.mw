@@ -158,6 +158,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Toptica_iChrome_MLE_TCP]] - Toptica iChrome Multi Laser Engine over TCP link
 * [[Utilities]] - Virtual devices providing extra functionality to Micro-Manager
 * [[VariLC]] - Tunable liquid crystal polarization modulators from CRi
+* [[Versalase]] - Vortran Versalase laser driver
 * [[Yokogawa]] - Yokogawa CSU22
 * Yokogawa [[CSUW1]] - Yokogawa CSUW1
 * Yokogawa [[CSUX]] - Yokogawa CSUX
