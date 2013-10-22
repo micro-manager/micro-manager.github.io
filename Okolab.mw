@@ -1,8 +1,19 @@
 == Okolab Microscope Incubators ==
 
-<table><tr><td>
-'''Summary:'''</td><td>Controls Okolab incubators system-</td></tr>
+<table>
+<tr><td>'''Summary:'''</td><td>Adapter for Okolab Incubators and Gas Controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Okolab srl</td></tr>
-<tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows, 32 and 64-bit </td></tr>
-<tr><td>'''Devices:'''</td><td>[http://www.oko-lab.com/boldLineGasControllers.page| Bold Line CO2-O2 Controllers], Bold Line Microscope Incubators</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows 32-bit and 64-bit</td></tr>
+<tr><td>'''Since version:'''</td><td>1.4.15</td></tr>
+<tr><td>'''Devices:'''</td><td>
+[http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]
+
+[http://www.oko-lab.com/microscopeIncubators.page Bold Line Microscope Incubators]
+</td></tr>
+<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
+</table>
+
+To use this adapter, you must first install the OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/OKO-Control%20Server%202.8.0.zip here].
+
+--[[User:Okolab|Okolab]] ([[User talk:Okolab|talk]]) 07:29, 22 October 2013 (PDT)
