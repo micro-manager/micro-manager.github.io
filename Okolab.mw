@@ -3,3 +3,6 @@
 <table><tr><td>
 '''Summary:'''</td><td>Controls Okolab incubators system-</td></tr>
 <tr><td>'''Author:'''</td><td>Okolab srl</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows, 32 and 64-bit </td></tr>
+<tr><td>'''Devices:'''</td><td>Bold Line series</td></tr>
