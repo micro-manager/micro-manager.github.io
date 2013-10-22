@@ -26,7 +26,7 @@ The installation is straightforward, default settings can be used.
 === Properties ===
 
 For every Device added to the Configuration, some managed properties are shown in the Device/Property Browser list (Tools menu). Okolab devices properties are listed only if the Show other devices checkbox is enabled.
-Any writeable property are white rows can be changed clicking on it and clicking enter (eg. H301-T Unit-BL Set Point).
+Any writeable property is listed as a white row and can be changed clicking on it and clicking enter (eg. H301-T Unit-BL Set Point).
 
 === Live mode ===
 
