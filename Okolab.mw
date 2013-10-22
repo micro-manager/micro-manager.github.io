@@ -1,4 +1,4 @@
-== Okolab Microscope Incubators ==
+== Okolab ==
 
 <table>
 <tr><td>'''Summary:'''</td><td>Adapter for Okolab Incubators and Gas Controllers</td></tr>
@@ -14,6 +14,23 @@
 <tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
 </table>
 
-To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/OKO-Control%20Server%202.8.0.zip here].
+== Installation ==
 
---[[User:Okolab|Okolab]] ([[User talk:Okolab|talk]]) 07:29, 22 October 2013 (PDT)
+To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/OKO-Control%20Server%202.8.0.zip here].
+The installation is straightforward, default settings can be used.
+
+== Configuration ==
+
+# Open the Hardware Configuration Wizard from the Tools menu.
+# Select desired configuration (new or existing) and  press the bottom-right Next button.
+# Add OKO Control Server device to the current configuration double-clicking on it or clicking the Add button when selected.
+# Add one or more Okolab devices.
+{{Note|Okolab devices can be found in the Okolab node if Available Devices list is ordered by vendor or Generic Device node if list is ordered by type.}}
+
+Note: Okolab devices can be found in the "Okolab" node if list is ordered by vendor or "Generic Device" node if list is ordered by type.
+
+== Properties ==
+For every Device added to the Configuration, some managed properties are shown in the Device/Property Browser list (Tools menu).
+You can change the writable properties values in "white" rows clicking on them.
+
+--[[User:Okolab|Okolab]] ([[User talk:Okolab|talk]]) 09:14, 22 October 2013 (PDT)
