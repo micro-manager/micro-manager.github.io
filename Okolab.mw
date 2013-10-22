@@ -5,12 +5,9 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows 32-bit and 64-bit</td></tr>
 <tr><td>'''Since version:'''</td><td>1.4.15</td></tr>
-<tr><td><b>Peripheral device discovery:</b></td><td>Supported</td></tr>
 <tr><td>'''Devices:'''</td><td>
-[http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]
-
-[http://www.oko-lab.com/microscopeIncubators.page Bold Line Microscope Incubators]
-</td></tr>
+[http://www.oko-lab.com/microscopeIncubators.page Bold Line Microscope Incubators], [http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]</td></tr>
+<tr><td>'''Peripheral device discovery:'''</td><td>Supported</td></tr>
 </table>
 
 == Installation ==
