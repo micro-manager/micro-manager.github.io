@@ -55,12 +55,12 @@ Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PC
 
 == Configuration ==
 
-=== Increase ImageJ memory buffer size ===
-It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS, on the ImageJ toolbar, set the maximum memory available to e.g. 10 GB:
+=== Increase Sequence buffer size ===
+It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS,  set this value to '''5120''' MB:
 
-      Edit > Options > Memory & Threads ... > Maximum Memory
+      Tools > Options... > Sequence buffer size [MB]
 
-Restart uManager for this change to take effect.
+Depending on the amount of RAM on the PC or processing performance, this may need to be adjusted accordingly.
 
 == Usage notes ==
 
