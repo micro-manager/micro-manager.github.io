@@ -25,7 +25,7 @@
 
 == Installation ==
 
-=== Andor Driver ===
+=== Andor Driver Pack 3 (sCMOS) ===
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
 Install the Andor Driver Pack and restart the computer. This is publicly available on [http://www.andor.com/my/login.aspx MyAndor] website under Drivers and 3rd Party > Andor Driver Pack (sCMOS). Yes, you have to register and login to download the file.
