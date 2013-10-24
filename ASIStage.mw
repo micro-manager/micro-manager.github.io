@@ -11,7 +11,9 @@
 
 Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and the reflection-based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) needs to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
 
-The ASI controller can control two different Z stages, a normal one ("Z"), and a piezo Z stage which can either be called "Z", or - if a normal motorized S stage is installed "F".  AS of Micro-Manager version 1.2.7, you can instantiate multiple ASI Z-stages, which will take a pre-initialization property 'Axis' that can be set to either"Z' or "F" (do not instantiate the same axis twice!).
+The ASI controller can control two different Z stages, a normal one ("Z"), and a piezo Z stage which can either be called "Z", or - if a normal motorized S stage is installed "F".  AS of Micro-Manager version 1.2.7, you can instantiate multiple ASI Z-stages, which will take a pre-initialization property 'Axis' that can be set to either "Z" or "F" (do not instantiate the same axis twice!).
+
+The piezo Z stage can be set up to receive trigger signals from many cameras (see documentation on Micro-Manager's [[Hardware-based_synchronization]] feature). A BNC cable is connected from the camera's TTL output to the piezo controller's trigger input.  By synchronizing Z slices with camera exposures, you can acquire very fast Z stacks. By default, triggered Z stacks are limited to 50 slices: if you want to acquire Z stacks with more slices, please [http://www.asiimaging.com/contact-us/ contact ASI directly] for a firmware update.
 
 The logic of the CRIF is a bit funky. The CRIF [http://www.asiimaging.com/criff.html] cycles through a number of states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle button on the controller for 6 seconds (see the CRIF manual [http://www.asiimaging.com/pdfs/CRIFF_Manual.pdf]).  Some of these state changes are implemented in the CRIF adapter.  In general, it is best to first calibrate the CRIF by hand and then let the software lock and unlock the CRIF.
 
