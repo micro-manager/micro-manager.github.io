@@ -20,7 +20,17 @@
 
 === USB Driver ===
 
-The MicroPoint controller contains it's own USB-Serial convertor.  If this driver is already installed, nothing further needs to be done.  Otherwise you must install the Andor MicroPoint driver to recognize the USB COM port in the Windows Device Manager. These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Driver: Micropoint</code>. Yes, you have to register and login to download the file.
+The MicroPoint controller contains it's own USB-Serial convertor.  If the FTDI Virtual COM Port driver is already installed, nothing further needs to be done.  On Windows, the installed driver shows up in the Device Manager as:
+
+      Ports (COM & LPT)
+      `-USB Serial Port (COM*)
+
+When the MicroPoint is not installed, it shows up in the Device Manager as:
+
+      Other devices
+      `-(?) USB I/O 24 R
+
+To install the FTDI Virtual COM Port driver visit [http://www.andor.com/my/user/ MyAndor website] and find the public driver under <code>Drivers and 3rd Party > Driver: Micropoint</code>. Yes, you have to register and login to download the file.
 
 == Device Configuration ==
 
