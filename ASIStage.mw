@@ -1,27 +1,29 @@
 == ASI Stage ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls ASI XY, Z stages and CRIF</td></tr>
-<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIF and AZ100 Turret by Nico Stuurman.  Currently maintained by Nico Stuurman</td></tr>
+'''Summary:'''</td><td>For ASI MS2000 controllers, including stages (XY, Z, piezo) and CRISP autofocus</td></tr>
+<tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIFF, CRISP, and AZ100 Turret by Nico Stuurman.  Currently maintained by Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage, ZStage, CRIF, AZ100 Turret</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage, ZStage, CRIF, CRISP, AZ100 Turret, LED</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>
 
-Controls ASI's [http://www.asiimaging.com/automation.html] XY, Z stages and the reflection-based CRIF autofocussing unit.  Each device (XY stage, Z stage and CRIF) needs to be assigned to a serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
+NB: there is a separate device adapter for modular TG1000 "Tiger" controllers [[ASITiger]].
 
-The ASI controller can control two different Z stages, a normal one ("Z"), and a piezo Z stage which can either be called "Z", or - if a normal motorized S stage is installed "F".  AS of Micro-Manager version 1.2.7, you can instantiate multiple ASI Z-stages, which will take a pre-initialization property 'Axis' that can be set to either "Z" or "F" (do not instantiate the same axis twice!).
+Controls ASI's stage controllers such as the MS2000 [http://www.asiimaging.com/products/controllers/ms-2000-wk-multi-axis-stage-controller/], [http://www.asiimaging.com/products/controllers/rm-2000-rack-mount-stage-controller/].  Depending on installed hardware, the controller works with XY, Z stages (linear and piezo) and the CRISP or CRIFF autofocusing modules.  In Micro-manager, each stage or device connected to the controller is added as a separate device assigned to the appropriate serial port (even though all devices might actually be attached to one and the same controller and this controller is attached to the PC through a serial cable).  
+
+The MS2000 and relatives can control two different Z stages, a normal one ("Z"), and a piezo Z stage which can either be called "Z", or - if a normal motorized stage is installed "F".  AS of Micro-Manager version 1.2.7, you can instantiate multiple ASI Z-stages, which will take a pre-initialization property 'Axis' that can be set to either "Z" or "F" (do not instantiate the same axis twice!).
 
 The piezo Z stage can be set up to receive trigger signals from many cameras (see documentation on Micro-Manager's [[Hardware-based_synchronization]] feature). A BNC cable is connected from the camera's TTL output to the MS2000 controller's piezo trigger input.  By synchronizing Z slices with camera exposures, you can acquire very fast Z stacks. By default, triggered Z stacks are limited to 50 slices: if you want to acquire Z stacks with more slices, please [http://www.asiimaging.com/contact-us/ contact ASI directly] for a firmware update.
 
-The logic of the CRIF is a bit funky. The CRIF [http://www.asiimaging.com/criff.html] cycles through a number of states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle button on the controller for 6 seconds (see the CRIF manual [http://www.asiimaging.com/pdfs/CRIFF_Manual.pdf]).  Some of these state changes are implemented in the CRIF adapter.  In general, it is best to first calibrate the CRIF by hand and then let the software lock and unlock the CRIF.
+CRIFF [http://www.asiimaging.com/products/focus-stabilization/criff-continuous-reflective-interface-feedback-focus-system/] was ASI's original autofocus product, and has been replaced by the CRISP autofocus system [http://www.asiimaging.com/products/focus-stabilization/crisp-autofocus-system/].  In both, the user can cycle of several states states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle "@" button on the controller for 6 seconds (see the CRIFF manual [http://www.asiimaging.com/ftp2asi/Manuals/CRIFF%20Manual.pdf]).  Most of these state changes are implemented in the CRIFF and CRISP adapters.  In general, it is easiest to first calibrate the CRIFF/CRISP by hand and then use Micro-manager to lock and unlock the CRIFF/CRISP.
 
-AS of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB connection is actually a USB to serial converter.  You can find Windows drivers for this converter at the [http://www.asiimaging.com/wk_usb_support.html ASI] website and drivers for Mac OS X and linux at the [http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx silabs] website.
-{{Note|The ASI-branded version of the driver does not work with all versions of Windows.  Use the Silicon labs driver version 6.3 or higher instead.}}
-The dipswitches on the back now control the baudrate settings for both the real serial and the USBto serial ports on the controller.
+As of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB connection is actually a USB to serial converter.  You can find drivers for Windows, Mac OS X, and linux at the [http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx silabs] website.
 
-The following properties are currently implemented in the Micro-Manager ASI stage adapter:
+The DIP switches on the back on recent controllers control the baudrate for both the real serial and the USB to serial ports on the controller.  See your manual for details.
+
+The following is an incomplete list of properties currently implemented in the Micro-Manager ASI stage adapter:
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 <tr><td><b>Stepsize</b> (for X and Y in um)</td><td>  Read-only property.</td></tr>
