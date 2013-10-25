@@ -4,3 +4,19 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platform:'''</td><td>Windows</td></tr>
 </table>
+
+The Rapp UGA-40 uses galvos to bounce lasers through the microscope objective and target particular spots on the specimen in the image plane. The galvos can also be rastered to illuminate a region of interest. Micro-Manager [[Projector Plugin]] allows users to draw one or more spots or regions of interest on an image of the specimen, and phototarget these areas using the UGA-40. (The Projector Plugin permits both ad hoc phototargeting and planning targeting events embedded in a multi-dimensional acquisition).
+
+The UGA-40 supports up to two lasers of different colors. Choose which laser to use by setting the "Laser" property to "1" or "2".
+
+A few UGA-40-specific properties allow fine-grained control, supplementing the generic controls presented by the Projector Plugin. These include:
+
+<table cellspacing=8>
+<tr><td>'''CalibrationMode'''</td><td>If On, laser is turned on regardless of targeting status</td></tr>
+<tr><td>'''TTLTriggered'''</td><td>For TTL triggering, determines whether triggering occurs on a rising or falling edge</td></tr>
+<tr><td>'''SpotSize'''</td><td>Tells the UGA-40 controller how large the measured spot size is, for help with rastering extended ROIs</td></tr>
+<tr><td>'''RasterFrequency_Hz'''</td><td>Controls the speed of ROI rastering</td></tr>
+<tr><td>'''AccuracyPercent'''</td><td>Controls how precisely an irregular ROI is filled in during rastering</td></tr>
+<tr><td>'''OnMinimumRectSize'''</td><td>Determines the smallest tile used during rastering</td></tr>
+<tr><td>'''Sequence'''</td><td>Allows a "sequence script" to be uploaded to the UGA-40 controller (rarely used)</td></tr>
+</table>
