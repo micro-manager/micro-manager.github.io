@@ -1,7 +1,7 @@
 == ASI Tiger ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces with TG-1000 "Tiger" controller hub, providing access to various supported cards (for MS/WK-2000 systems see other MM adapters)</td></tr>
+'''Summary:'''</td><td>For TG-1000 "Tiger" controller hub, providing access to various supported cards (for MS/RM2000 systems see [[ASIStage]])</td></tr>
 <tr><td>'''Author:'''</td><td>Jon Daniels (jon at asiimaging.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
@@ -11,7 +11,7 @@
 
 If you run into problems please contact the author at the address above.
 
-This adapter is not intended for stand-alone MS-2000 and WK-2000 controllers or older rack-mount controllers, just for TG-1000 systems.
+NB: there is a separate device adapter for stand-alone MS-2000 controllers or older rack-mount controllers [[ASIStage]].
 
 
 '''Known limitations:'''
