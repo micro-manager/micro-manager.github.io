@@ -24,7 +24,11 @@
 
 
 == Installation ==
-* Downloads the files to match the 32- or 64-bit version of µManager you have installed:
+{{Note|Skip this step if you are using µManager nightly build 1.4.16_20131025 or later.  Installation has been simplified by including all required libraries in the µManager installer.}}
+
+Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.
+
+* Download the library files to match the 32- or 64-bit version of µManager you have installed:
 <blockquote>
 {| class="wikitable"
 !
@@ -34,6 +38,13 @@
 ! Andor Library
 | [[:File:libalc_x86.tar.gz|libalc_x86.tar.gz]]
 | [[:File:libalc_x64.tar.gz|libalc_x64.tar.gz]]
+|}</blockquote>
+* (Only required for µManager versions before 1.4.15) Download install Visual Studio to match the 32- or 64-bit version of µManager you have installed:
+<blockquote>
+{| class="wikitable"
+!
+! 32-bit
+! 64-bit
 |-
 ! Visual C++ 2008 redist
 | [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x86.exe]
