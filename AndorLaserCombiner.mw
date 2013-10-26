@@ -24,7 +24,7 @@
 
 
 == Installation ==
-{{Note|Skip this step if you are using µManager nightly build 1.4.16_20131025 or later.  Installation has been simplified by including all required libraries in the µManager installer.}}
+{{Note|Skip this section if you are using µManager nightly build 1.4.16_20131025 or later.  Installation has been simplified by including all required libraries in the µManager installer.}}
 
 Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.
 
