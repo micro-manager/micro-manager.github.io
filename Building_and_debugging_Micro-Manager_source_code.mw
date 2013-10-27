@@ -120,6 +120,7 @@ The following DeviceAdapters require dependencies to run on GNU/Linux, some of w
 | Unofficial [ftp://lx10.tx.ncsu.edu/pub/Linux/drivers/PCI/ PCI] and [ftp://lx10.tx.ncsu.edu/pub/Linux/drivers/USB/ USB HID],<br/> Official [ftp://ftp.mccdaq.com/downloads/DAQFlex/Linux/ DAQFlex USB driver]
 | GPL-2 (Unofficial),<br/> DAQFlex EULA (Official)
 | Yes (Unofficial),<br/> Yes (Official)
+| Yes (Unofficial),<br/> Yes (Official)
 |-
 | MaestroServo
 | [http://www.pololu.com/catalog/product/1356/resources UscCmd]
