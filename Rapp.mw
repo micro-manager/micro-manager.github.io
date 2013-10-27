@@ -20,3 +20,10 @@ A few UGA-40-specific properties allow fine-grained control, supplementing the g
 <tr><td>'''OnMinimumRectSize'''</td><td>Determines the smallest tile used during rastering</td></tr>
 <tr><td>'''Sequence'''</td><td>Allows a "sequence script" to be uploaded to the UGA-40 controller (rarely used)</td></tr>
 </table>
+
+
+== Resources ==
+
+{{Listserv_Search|Rapp}}
+
+{{Devices_Sidebar}}
