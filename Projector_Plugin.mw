@@ -21,7 +21,7 @@ The calibration procedure starts by illuminating a few spots near the center of 
 ! Description
 |- valign="top"
 | On / Off
-| Toggles device illumination.
+| Toggles calibration mode.
 |- valign="top"
 | Calibrate
 | Creates calibration map of phototargeting device range to the camera pixel position. 
@@ -102,6 +102,14 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 | Number of frames between successive phototargeting events in an MDA.
 <code>Setup</code> tab.
 |}
+
+== FAQ ==
+
+; Can one stop the device firing at any time?
+: Unfortunately there is no emergency "off" button at the moment.
+
+; What happens when I target something outside the device range?
+: It ignores those clicks.
 
 
 {{Documentation Sidebar}}
