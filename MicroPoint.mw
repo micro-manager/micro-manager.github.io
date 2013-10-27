@@ -41,8 +41,6 @@ The [[Projector|Projector plugin]] operates the Micropoint.  There are 2 behavio
 
 [[File:Micropoint-calibration.png]] Figure: The calibration process completes two steps.  First, it fires a crosshair pattern to determine the camera orientation (left image), and then fires a grid pattern across the range of the phototargeting device (right image).  The algorithm accounts for the device range exceeding exceeding the camera sensor size, but the orientation pattern must be captured within the camera field of view.
 
-FIXME: Describe range limit and what happens when targeting outside the galvo range.
-
 == Resources ==
 
 === Development support ===
