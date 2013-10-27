@@ -126,7 +126,7 @@ The following DeviceAdapters require dependencies to run on GNU/Linux, some of w
 | [http://www.pololu.com/catalog/product/1356/resources UscCmd]
 | ?
 | Commandline utility
-| [[http://www.pololu.com/file/0J315/maestro-linux-100507.tar.gz Yes]
+| [http://www.pololu.com/file/0J315/maestro-linux-100507.tar.gz Yes]
 |}
 
 === Miscellaneous ===
