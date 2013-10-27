@@ -9,7 +9,7 @@
 |3-clause BSD
 |-
 !Platforms:
-|Windows (No Linux or Mac driver available)
+|Windows, (Linux and Mac [http://www.ftdichip.com/Drivers/VCP.htm FTDI VCP drivers] are available, but yet not tested)
 |- valign="top"
 !Devices:
 |MP-220*-EBD
