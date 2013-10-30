@@ -3,7 +3,7 @@
 There are a number of programs available for stitching images acquired 
 in Micro-Manager, or stitching images more generally.  For images acquired 
 from Micro-Manager, the simplest option is to use the 
-Grid/Collection Stitching Plugin.  This is installed by default in the [http://fiji.sc Fiji] distribution. The major disadvantage to this program that I am aware of is that it will not stitch images larger than 2 gigapixels. This corresponds to about 400 images acquired on the High-Speed Microscope, although the exact number will depend on the overlap between images and whether you are using the full FOV of the camera or an ROI.
+Grid/Collection Stitching Plugin.  This is installed by default in the [http://fiji.sc Fiji] distribution. The major disadvantage to this program  is that it will not stitch images larger than 2.14 gigapixels. 
 
 === Acquiring a grid of images in Micro-Manager ===
 
