@@ -26,3 +26,6 @@ The easiest way to do this is by using the Create Grid option in the Multi-Dimen
 # Otherwise, the default options usually work well.
 # Hit OK, and you should have your stitched image in a few minutes.
 # This works for single channel and multicolor images, and should work for Z-stacks as well, although I haven't tested it as extensively for Z-stacks.
+
+
+{{Documentation_Sidebar}}
