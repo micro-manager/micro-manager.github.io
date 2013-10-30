@@ -27,5 +27,6 @@ The easiest way to do this is by using the Create Grid option in the Multi-Dimen
 # Hit OK, and you should have your stitched image in a few minutes.
 # This works for single channel and multicolor images, and should work for Z-stacks as well, although I haven't tested it as extensively for Z-stacks.
 
+Information about other stitching options is available on the [http://nic.ucsf.edu/dokuwiki/doku.php?id=image_stitching_in_micro-manager NIC wiki].
 
 {{Documentation_Sidebar}}
