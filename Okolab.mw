@@ -5,10 +5,21 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows 32-bit and 64-bit</td></tr>
 <tr><td>'''Since version:'''</td><td>1.4.15</td></tr>
-<tr><td>'''Devices:'''</td><td>
-[http://www.oko-lab.com/microscopeIncubators.page Bold Line Microscope Incubators], [http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]</td></tr>
 <tr><td>'''Peripheral device discovery:'''</td><td>Supported</td></tr>
 </table>
+
+
+== Compatible devices ==
+
+* [http://www.oko-lab.com/microscopeIncubators.page Microscope Incubators]
+** [http://www.oko-lab.com/cageIncubator.page Bold Line Cage Incubator (H201)]
+** [http://www.oko-lab.com/electricIncubator.page Bold Line Top Stage Incubator (H301)] 
+
+* [http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]
+** [http://www.oko-lab.com/boldLineGasControllers/co2UnitBoldLine.page CO2 Unit-BL]
+** [http://www.oko-lab.com/boldLineGasControllers/o2UnitBoldLine--nbsphypoxia.page O2 Unit-BL &#91;1-20&#93;]
+** [http://www.oko-lab.com/boldLineGasControllers/co2O2DualUnitBoldLineHypoxia.page CO2-O2 Unit-BL &#91;0-10;1-18&#93;]
+** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
 
 == Installation ==
 To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/OKO-Control%20Server%202.8.0.zip here].
