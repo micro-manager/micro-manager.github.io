@@ -44,7 +44,7 @@ If live is enabled, any value acquired from Okolab devices is automatically refr
 
 === Logging ===
 
-To log data from Okolab devices, an experiment must be started (Tools > Multi-Dimensional Acquisition). Data are logged in the metadata.txt file if ''Separate images files'' is selected or in the image file itself if ''Image stack file'' is selected.
+To log data acquired from Okolab devices, an experiment must be started (''Tools'' > ''Multi-Dimensional Acquisition''). Data are logged in the metadata.txt file if ''Separate images files'' is selected or in the image file itself if ''Image stack file'' is selected.
 
 == Support ==
 
