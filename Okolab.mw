@@ -26,11 +26,11 @@ The installation is straightforward, default settings can be used.
 
 == Configuration ==
 
-# Open the Hardware Configuration Wizard from the Tools menu.
-# Select desired configuration (new or existing) and  press the bottom-right Next button.
-# Add OKO Control Server device to the current configuration double-clicking on it or clicking the Add button when selected.
+# Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
+# Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
+# Add ''OKO Control Server'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
 # Add one or more Okolab devices.
-{{Note|Okolab devices can be found in the Okolab node if Available Devices list is ordered by vendor or Generic Device node if list is ordered by type.}}
+{{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
 
 == Usage ==
 === Properties ===
