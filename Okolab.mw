@@ -40,7 +40,7 @@ Any writeable property is listed as a white row and can be changed clicking on i
 
 === Live mode ===
 
-If live is enabled, values acquired from Okolab devices are automatically refreshed in the Metadata tab.
+If live is enabled, values acquired from Okolab devices are automatically refreshed in the ''Metadata'' tab.
 
 === Logging ===
 
