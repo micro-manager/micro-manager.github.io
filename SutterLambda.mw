@@ -29,7 +29,9 @@
 
 === Wheel re-homing during imaging ===
 
-One should just optimize the filter speed setting if you ever encounter the dreaded re-homing sound due to the wheel failing to move to a filter position during Multi-Dimensional Acquisition. The wheel itself has a resonance frequency associated with the load of filters. Practically one finds the ideal speed by empirically checking which speed introduces the least vibration.
+First make sure your firmware is up-to-date.  Lambda 10-B controllers with firmware < 2.22 were known to have this issue.
+
+Then one should just optimize the filter speed setting if you ever encounter the dreaded re-homing sound due to the wheel failing to move to a filter position during Multi-Dimensional Acquisition. The wheel itself has a resonance frequency associated with the load of filters. Practically one finds the ideal speed by empirically checking which speed introduces the least vibration.
 
 
 {{Devices_Sidebar}}
