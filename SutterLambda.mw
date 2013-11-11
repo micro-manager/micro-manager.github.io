@@ -14,14 +14,12 @@
 |BSD
 |-
 !Platforms:
-|Windows, Mac OS X and Linux (serial port)
+|Windows, Mac OS X and Linux (only serial port, no parallel port or USB)
 |- valign="top"
 !Devices:
 |[http://sutter.com/IMAGING/lambdasc.html Lambda SC]<br/>[http://sutter.com/IMAGING/lambda10b.html Lambda 10-B]<br/>[http://sutter.com/IMAGING/lambda102.html Lambda 10-2]<br/>[http://sutter.com/IMAGING/lambda103.html Lambda 10-3]<br/>[http://sutter.com/IMAGING/lambdadg4.html Lambda DG-4]
 |}
 ----
-
-Currently, only the serial interface to these devices (not parallel port or USB) has been implemented.
 
 
 {{Devices_Sidebar}}
