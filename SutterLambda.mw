@@ -1,5 +1,3 @@
-== Sutter hardware adapter ==
-
 {| style="text-align: left"
 !Summary:
 |Interfaces to Sutter Lambda 10 controllers, Lambda SC controller, and DG4
@@ -20,6 +18,18 @@
 |[http://sutter.com/IMAGING/lambdasc.html Lambda SC]<br/>[http://sutter.com/IMAGING/lambda10b.html Lambda 10-B]<br/>[http://sutter.com/IMAGING/lambda102.html Lambda 10-2]<br/>[http://sutter.com/IMAGING/lambda103.html Lambda 10-3]<br/>[http://sutter.com/IMAGING/lambdadg4.html Lambda DG-4]
 |}
 ----
+
+== Device Configuration ==
+
+=== Wheel speed ===
+
+95% of the time speed <code>#1</code> works best (<code>#0</code> being the fastest, which only works with an empty wheel). If speed <code>#1</code> does not work you can try the slowest (speed <code>#7</code> IIRC).  Best practice is to [[Micro-Manager_Configuration_Guide#Startup_Presets|set the desired wheel speed during startup]], i.e. in your <code>Startup</code> Preset of the <code>System</code> Group.
+
+== Troubleshooting ==
+
+=== Wheel re-homing during imaging ===
+
+One should just optimize the filter speed setting if you ever encounter the dreaded re-homing sound due to the wheel failing to move to a filter position during Multi-Dimensional Acquisition. The wheel itself has a resonance frequency associated with the load of filters. Practically one finds the ideal speed by empirically checking which speed introduces the least vibration.
 
 
 {{Devices_Sidebar}}
