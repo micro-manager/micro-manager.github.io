@@ -17,7 +17,7 @@ Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device adapters) ar
 
 # Open Control Panel > "Uninstall a program". If there are any items named '''Microsoft Visual C++ 2010 Redistributable''' with version number greater than 10.0.30319, '''''uninstall''''' them (see the note below for why).
 # Install '''Microsoft Windows SDK 7.1''' (http://www.microsoft.com/en-us/download/details.aspx?id=8279). If the installer complains that '''.NET Framework 4''' is required, cancel the SDK install and first install the .NET Framework (from http://www.microsoft.com/en-us/download/details.aspx?id=17851). If installation of the SDK fails, see the notes below.
-# Install '''Visual C++ 2010 Express''' from http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express.
+# Install '''Visual C++ 2010 Express''' from http://www.visualstudio.com/products/visual-studio-express-vs.
 # Upgrade to '''Visual Studio 2010 SP1''' (http://www.microsoft.com/en-us/download/details.aspx?id=23691).
 # '''Repair the compilers''' that come with Windows SDK 7.1 by installing this package: http://www.microsoft.com/en-us/download/details.aspx?id=4422
 
