@@ -1,6 +1,6 @@
-Here is a small script I use to build MM on Linux to be able to test news and develop plugin and script with DemoAdaptaters. I can provide help to adapt build system to your Linux. Contact me on the MM mailing list: [[https://micro-manager.org/wiki/Micro-Manager_Community]]
+Here is a small script I use to build MM on Linux to be able to test news and develop plugin and script with DemoAdaptaters. I can provide help to adapt build system to your Linux. Contact me on the MM mailing list: https://micro-manager.org/wiki/Micro-Manager_Community.
 
-{{MessageBox|1=Commandline|2=<pre>
+{{MessageBox|1=Command Line|2=<pre>
 
 # Instal dependencies
 Here you have debian packages you can install with sudo apt-get install
