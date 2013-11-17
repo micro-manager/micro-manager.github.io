@@ -13,6 +13,12 @@ There are no particular hardware requirements. However, for practical use we rec
 
 Double click the file Micro-Manager1.x.x that you just downloaded (see [[Download Micro-Manager Latest Release]]). This will open a drive called 'Micro-Manager'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.x. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'ImageJ' icon.  If you want to run the 64-bit version of Micro-Manager, click the "ImageJ64" icon. <br /><br />  By default, after the first installation Micro-Manager starts with the Demo configuration which loads software simulators for a number of commonly used devices. This configuration can be used to explore Micro-Manager features, train novice users and as a reference point for troubleshooting.<br /><br />
 
+== Linux ==
+
+Micro-manager should work with most standard Linux distributions (e.g., Ubuntu, Fedora, Gentoo). However, no pre-compiled version is provided, and you need to compile and install it from source. See:
+* [[Linux installation from source (Ubuntu)]]
+* [[Linux installation from source (Gentoo)]]
+
 == If you already use ImageJ ==
 
 Micro-Manager is packaged as an [http://rsb.info.nih.gov/ij/ ImageJ] plug-in and contains a copy of the entire ImageJ application, together with the Java run-time engine. Starting Micro-Manager will automatically start ImageJ as well. If you already use ImageJ and have it installed on your machine beforehand, the original installation will not be affected. Micro-Manager installs and uses its own copy of ImageJ. However, if you have any existing ImageJ macros or plugins that you want to use with Micro-Manager, you will have to copy them manually to the appropriate sub-folders within the root Micro-Manager folder.<br /><br /> Migrating your favorite ImageJ plugins to Micro-Manager installation should not cause any problems.
