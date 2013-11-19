@@ -109,13 +109,13 @@ Micro-Manager requires the path to <code>/usr/lib/micro-manager</code>. Create t
 {{MessageBox|1=File: mmscript|2=<pre>
 
 #!/bin/bash
-cd /usr/local/ImageJ
-export LD_LIBRARY_PATH=/usr/local/lib/micro-manager:/usr/local/ImageJ
-java -mx1200m \
-     -Djava.library.path=/usr/local/lib/micro-manager:/usr/local/ImageJ \
-     -Dplugins.dir=/usr/local/ImageJ \
-     -cp /usr/local/ImageJ/ij.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar \
-      ij.ImageJ
+java -Xmx1439m -Xincgc -XX:PermSize=128m \
+     -Dpython.cachedir.skip=true -Dplugins.dir=/usr/local/ImageJ \
+     -Dsun.java.command=ImageJ -Djava.class.path=/usr/local/ImageJ/ij.jar \
+     -Dimagej.dir=/usr/local/ImageJ -Dij.dir=/usr/local/ImageJ \
+     -Dij.executable=/usr/local/ImageJ/ImageJ \
+     -Djava.library.path=/usr/share/java:/usr/local/lib/micro-manager \
+      ij.ImageJ -eval 'run("Micro-Manager Studio");'
 </pre>}}
 
 Make the script executable:
