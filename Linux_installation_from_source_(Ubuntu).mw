@@ -167,6 +167,8 @@ Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 | Firewire Camera Library || <code>libdc1394-*-dev</code>
 |-
 | Open Source Computer Vision Library || <code>libopencv-dev</code>
+|-
+| Andor SDK 2/3 || N/A - request from Andor website
 |}
 
 == OpenJDK instead of Sun JDK ==
