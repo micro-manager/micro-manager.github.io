@@ -109,6 +109,7 @@ Micro-Manager requires the path to <code>/usr/lib/micro-manager</code>. Create t
 {{MessageBox|1=File: mmscript|2=<pre>
 
 #!/bin/bash
+cd /usr/local/ImageJ
 java -Xmx1439m -Xincgc -XX:PermSize=128m \
      -Dpython.cachedir.skip=true -Dplugins.dir=/usr/local/ImageJ \
      -Dsun.java.command=ImageJ -Djava.class.path=/usr/local/ImageJ/ij.jar \
