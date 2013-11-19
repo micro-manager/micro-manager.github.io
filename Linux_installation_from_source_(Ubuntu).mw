@@ -23,13 +23,13 @@ Ensure you don't have the Ubuntu package installed:
 sudo apt-get purge imagej
 </pre>}}
 
-[http://rsb.info.nih.gov/ij/download.html Download the Linux version of ImageJ] from the NIH website.  From a terminal, unzip to <code>/usr/local/</code> and test that it runs:
+[http://rsb.info.nih.gov/ij/download.html Download the Linux version of ImageJ] from the NIH website.  From a terminal, unzip to <code>/usr/local/</code>, and remove the embedded JRE, as we already have one installed.
 
 {{MessageBox|1=Commandline|2=<pre>
 
 cd ~/Downloads/
 sudo unzip ij*-linux*.zip -d /usr/local/
-sudo rm -rf /usr/local/ImageJ/jre # we don't need the Java runtime
+sudo rm -rf /usr/local/ImageJ/jre
 sudo chmod a+Xr /usr/local/ImageJ
 </pre>}}
 
