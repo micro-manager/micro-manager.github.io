@@ -1,6 +1,6 @@
-== Preparation ==
+= Preparation =
 
-=== Install JDK ===
+== Install JDK ==
 
 If you are building the Micro-Manager Java GUI, Java 1.6 or 1.7 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html]. The simplest way is to use [https://launchpad.net/~webupd8team/+archive/java webupd8team PPA]:
 
@@ -14,7 +14,7 @@ Alternatively, you can download and run <code>jdk-7*-linux-*.bin</code> per the 
 
 {{Note|It may be worth trying to use [[#OpenJDK instead of Sun JDK]]}}
 
-=== Install ImageJ ===
+== Install ImageJ ==
 
 Ensure you don't have the Ubuntu package installed:
 
@@ -33,7 +33,7 @@ sudo rm -rf /usr/local/ImageJ/jre # we don't need the Java runtime
 sudo chmod a+Xr /usr/local/ImageJ
 </pre>}}
 
-=== Install Build Programs and Libraries ===
+== Install Build Programs and Libraries ==
 
 You will need a subversion client to checkout the source code, several libraries, and build tools.  Install them with:
 
@@ -45,7 +45,7 @@ sudo apt-get install subversion build-essential automake libtool \
 
 You may also need to install additional packages (for cameras and special hardware).  See the full list in [[#Dependencies]]
 
-=== Fetch Source Repositories ===
+== Fetch Source Repositories ==
 
 Create a directory for the the subversion repositories, such as <code>~/mm</code>.  Besides the source tree, additional binary dependencies are stored in the <code>3rdpartypublic</code> repository.  The build scripts in the source tree assume <code>3rdpartypublic</code> is in the same parent folder level:
 
@@ -67,12 +67,13 @@ Add the Beanshell and SwingX to the ImageJ plugins directory:
 
 {{MessageBox|1=Commandline|2=<pre>
 
-sudo cp 3rdpartypublic/classext/bsh-2.0b4.jar 3rdpartypublic/classext/swingx-0.9.5.jar /usr/local/ImageJ/plugins/
+cd ~/mm/3rdpartypublic/classext
+sudo cp bsh-2.0b4.jar swingx-0.9.5.jar /usr/local/ImageJ/plugins/
 </pre>}}
 
-== Building Micro-Manager ==
+= Building Micro-Manager =
 
-=== Create the Autotools files ===
+== Create the Autotools files ==
 
 <code>configure</code> uses the bundled version of ImageJ:
 
@@ -80,17 +81,18 @@ sudo cp 3rdpartypublic/classext/bsh-2.0b4.jar 3rdpartypublic/classext/swingx-0.9
 
 cd ~/mm/micro-manager1.4
 ./mmUnixBuild.sh
-./configure --with-imagej=/usr/local/ImageJ --with-javaincl=/usr/lib/jvm/java-7-oracle/include/
+./configure --with-imagej=/usr/local/ImageJ \
+            --with-javaincl=/usr/lib/jvm/java-7-oracle/include/
 </pre>}}
 
-=== Compile ===
+== Compile ==
 
 {{MessageBox|1=Commandline|2=<pre>
 
 make
 </pre>}}
 
-=== Install ===
+== Install ==
 
 {{MessageBox|1=Commandline|2=<pre>
 
@@ -98,9 +100,9 @@ sudo make install
 sudo ldconfig
 </pre>}}
 
-== Post Install ==
+= Post Install =
 
-=== Create the startup script ===
+== Create the startup script ==
 
 Micro-Manager requires the path to <code>/usr/lib/micro-manager</code>. Create the 4 line Bash script below in <code>/usr/local/ImageJ</code> and save it as, say, <code>mmscript</code>.
 
@@ -123,7 +125,7 @@ Make the script executable:
 sudo chmod +x mmscript
 </pre>}}
 
-== Running Micro-Manager ==
+= Running Micro-Manager =
 
 Start ImageJ with your new script:
 
@@ -134,9 +136,9 @@ Start ImageJ with your new script:
 
 Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 
-== Appendix ==
+= Appendix =
 
-=== Dependencies ===
+== Dependencies ==
 
 {| class="wikitable"
 |+ You need the following packages:
@@ -167,7 +169,7 @@ Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 | Open Source Computer Vision Library || <code>libopencv-dev</code>
 |}
 
-=== OpenJDK instead of Sun JDK ===
+== OpenJDK instead of Sun JDK ==
 
 It may be possible to also use the distro-friendly OpenJDK (<code>default-jdk</code>) without too much effort. To start, you would have to patch the Micro-Manager <code>configure.in</code> file to find <code>jni.h</code>[https://bugzilla.redhat.com/show_bug.cgi?id=498964#c2] and possibly apply other fixes.
 
