@@ -104,7 +104,7 @@ sudo ldconfig
 
 == Create the startup script ==
 
-Micro-Manager requires the path to <code>/usr/lib/micro-manager</code>. Create the 4 line Bash script below in <code>/usr/local/ImageJ</code> and save it as, say, <code>mmscript</code>.
+Micro-Manager requires the path to <code>/usr/local/lib/micro-manager</code>. Create the 4 line Bash script below in <code>/usr/local/ImageJ</code> and save it as, say, <code>/usr/local/bin/mmscript</code>.
 
 {{MessageBox|1=File: mmscript|2=<pre>
 
