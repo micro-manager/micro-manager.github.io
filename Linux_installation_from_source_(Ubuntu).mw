@@ -128,14 +128,12 @@ sudo chmod +x mmscript
 
 = Running Micro-Manager =
 
-Start ImageJ with your new script:
+Start Micro-Manager  with your new script:
 
 {{MessageBox|1=Commandline|2=<pre>
 
 ./mmscript &
 </pre>}}
-
-Run <code>Plugins > Micro-Manager > Micro-Manager Studio</code>
 
 = Appendix =
 
