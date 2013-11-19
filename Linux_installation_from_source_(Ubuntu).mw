@@ -1,9 +1,27 @@
-{{Note|These instructions are mostly complete, but the Java part does not compile due to it not finding <code>jni.h</code> [[User:P.nanda|P.nanda]] 17:04, 23 August 2013 (PDT)
-<br />To allow the build to find jni.h, the --with-javaincl flag to ./configure can be used. I haven't tested it on Ubuntu. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 17:56, 25 September 2013 (PDT)}}
-
 == Preparation ==
 
+=== Install JDK ===
+
+If you are building the Micro-Manager Java GUI, Java 1.6 or 1.7 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html]. The simplest way is to use [https://launchpad.net/~webupd8team/+archive/java webupd8team PPA]:
+
+{{MessageBox|1=Commandline|2=<pre>
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get install oracle-java7-installer
+</pre>}}
+
+Alternatively, you can download and run <code>jdk-7*-linux-*.bin</code> per the [https://help.ubuntu.com/community/Java#JDK_or_JRE JDK Ubuntu instructions].   [http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html Download the latest jdk-7*-linux-*.bin] from the archives (you must click "Accept License Agreement").
+
+{{Note|It may be worth trying to use [[#OpenJDK instead of Sun JDK]]}}
+
 === Install ImageJ ===
+
+Ensure you don't have the Ubuntu package installed:
+
+{{MessageBox|1=Commandline|2=<pre>
+
+sudo apt-get purge imagej
+</pre>}}
 
 [http://rsb.info.nih.gov/ij/download.html Download the Linux version of ImageJ] from the NIH website.  From a terminal, unzip to <code>/usr/local/</code> and test that it runs:
 
@@ -11,27 +29,9 @@
 
 cd ~/Downloads/
 sudo unzip ij*-linux*.zip -d /usr/local/
-sudo chmod +r /usr/local/ImageJ
-cd /usr/local/ImageJ/
-./jre/bin/java -jar ij.jar
+sudo rm -rf /usr/local/ImageJ/jre # we don't need the Java runtime
+sudo chmod a+Xr /usr/local/ImageJ
 </pre>}}
-
-=== Install JDK ===
-
-If you are building the Micro-Manager Java GUI, Java 1.6 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html].  Download and run <code>jdk-6*-linux-*.bin</code> per the [https://help.ubuntu.com/community/Java#JDK_or_JRE JDK Ubuntu instructions].  This file has to be fetched from Oracle's website since their licensing prohibits redistribution in Linux repositories.  [http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR Download the latest jdk-6*-linux-*.bin] from the archives (you must click "Accept License Agreement").  It may be worth using [[#OpenJDK instead of Sun JDK]]
-
-In spite of using Sun JDK, Micro-Manager fails to compile:
-
-<code>
-make[1]: Entering directory `/home/andor/mm/micro-manager1.4/MMCoreJ_wrap'
-/bin/bash ../libtool --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"Micro-Manager\" -DPACKAGE_TARNAME=\"micro-manager\" -DPACKAGE_VERSION=\"1.4\" -DPACKAGE_STRING=\"Micro-Manager\ 1.4\" -DPACKAGE_BUGREPORT=\"info@micro-manager.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"micro-manager\" -DVERSION=\"1.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_BOOST=/\*\*/ -DHAVE_BOOST_DATE_TIME=/\*\*/ -DHAVE__USR_INCLUDE_ZLIB_H=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1 -DHAVE_STDBOOL_H=1 -DSTDC_HEADERS=1 -DHAVE_MEMSET=1 -I.    -I/usr/include -g -O -MT MMCoreJ_wrap.lo -MD -MP -MF .deps/MMCoreJ_wrap.Tpo -c -o MMCoreJ_wrap.lo MMCoreJ_wrap.cxx
-libtool: compile:  g++ -DPACKAGE_NAME=\"Micro-Manager\" -DPACKAGE_TARNAME=\"micro-manager\" -DPACKAGE_VERSION=\"1.4\" "-DPACKAGE_STRING=\"Micro-Manager 1.4\"" -DPACKAGE_BUGREPORT=\"info@micro-manager.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"micro-manager\" -DVERSION=\"1.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" "-DHAVE_BOOST=/**/" "-DHAVE_BOOST_DATE_TIME=/**/" -DHAVE__USR_INCLUDE_ZLIB_H=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1 -DHAVE_STDBOOL_H=1 -DSTDC_HEADERS=1 -DHAVE_MEMSET=1 -I. -I/usr/include -g -O -MT MMCoreJ_wrap.lo -MD -MP -MF .deps/MMCoreJ_wrap.Tpo -c MMCoreJ_wrap.cxx  -fPIC -DPIC -o .libs/MMCoreJ_wrap.o
-MMCoreJ_wrap.cxx:160:17: fatal error: jni.h: No such file or directory
-compilation terminated.
-make[1]: *** [MMCoreJ_wrap.lo] Error 1
-make[1]: Leaving directory `/home/andor/mm/micro-manager1.4/MMCoreJ_wrap'
-make: *** [all-recursive] Error 1
-</code>
 
 === Install Build Programs and Libraries ===
 
@@ -67,15 +67,7 @@ Add the Beanshell and SwingX to the ImageJ plugins directory:
 
 {{MessageBox|1=Commandline|2=<pre>
 
-cd ~/mm/3rdpartypublic/classext
-sudo cp bsh-2.0b4.jar swingx-0.9.5.jar /usr/local/ImageJ/plugins/
-</pre>}}
-
-Create a new micro-manager directory in /usr/lib/
-
-{{MessageBox|1=Commandline|2=<pre>
-
-sudo mkdir /usr/lib/micro-manager
+sudo cp 3rdpartypublic/classext/bsh-2.0b4.jar 3rdpartypublic/classext/swingx-0.9.5.jar /usr/local/ImageJ/plugins/
 </pre>}}
 
 == Building Micro-Manager ==
@@ -88,7 +80,7 @@ sudo mkdir /usr/lib/micro-manager
 
 cd ~/mm/micro-manager1.4
 ./mmUnixBuild.sh
-./configure --with-imagej=/usr/local/ImageJ
+./configure --with-imagej=/usr/local/ImageJ --with-javaincl=/usr/lib/jvm/java-7-oracle/include/
 </pre>}}
 
 === Compile ===
@@ -116,11 +108,11 @@ Micro-Manager requires the path to <code>/usr/lib/micro-manager</code>. Create t
 
 #!/bin/bash
 cd /usr/local/ImageJ
-export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib/micro-manager:/usr/local/ImageJ
+export LD_LIBRARY_PATH=/usr/local/lib/micro-manager:/usr/local/ImageJ
 java -mx1200m \
-     -Djava.library.path=/usr/lib/micro-manager:/usr/local/ImageJ \
+     -Djava.library.path=/usr/local/lib/micro-manager:/usr/local/ImageJ \
      -Dplugins.dir=/usr/local/ImageJ \
-     -cp /usr/local/ImageJ/ij.jar:usr/local/jdk1.5.0_04/lib/tools.jar \
+     -cp /usr/local/ImageJ/ij.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar \
       ij.ImageJ
 </pre>}}
 
