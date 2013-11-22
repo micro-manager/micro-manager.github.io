@@ -1,20 +1,20 @@
 The following instructions for debugging Micro-Manager's Java code with Netbeans are intended to work on Windows or Mac.
 
 <ol>
-<li>Download and install Micro-Manager.</li>
-<li>Use [http://subversion.tigris.org/ subversion] to download a copy of the latest [http://micro-manager.org/wiki/Micro-Manager_Source_Code Micro-Manager source and 3rdpartypublic]. The two directories should reside in the same parent directory, e.g. <code>projects/micromanager/</code> and <code>projects/3rdpartypublic/</code></li>
-<li>Download, install and run [http://netbeans.org Netbeans] (the Java SE Bundle is sufficient).</li>
+<li>Download and install Micro-Manager. We will refer to the installed Micro-Manager directory as <code>$INSTALLDIR</code> below.</li>
+<li>Use [http://subversion.tigris.org/ Subversion] to download a copy of the latest [http://micro-manager.org/wiki/Micro-Manager_Source_Code Micro-Manager source and 3rdpartypublic]. The two directories should reside in the same parent directory, e.g. <code>projects/micromanager/</code> and <code>projects/3rdpartypublic/</code>. We'll refer to these two directories as <code>$SRCDIR</code> and <code>$THIRDPARTYPUBLIC</code>, respectively.</li>
+<li>Download, install and run [http://netbeans.org Netbeans]. The Java SE Bundle is sufficient if you already have the JDK (Java Development Kit) installed on your computer. Otherwise, you can install the JDK and NetBeans at the same time from [http://www.oracle.com/technetwork/java/javase/downloads/ Oracle's JDK download page].</li>
 <li>Choose '''File''' > '''New Project...''' >  [Categories] '''Java''' > [Projects] '''Java Project with Existing Sources'''. Press '''Next'''.
 <li>Give your project a name. The '''Project Folder''' is best saved outside of the Micro-Manager source directory. Press '''Next'''.</li>
-<li>Under '''Source Package Folders''', click '''Add Folder''' at right and browse to <code><micromanager>/mmstudio/src</code>. If you want to develop a plugin, you can also add <code><micromanager>/plugins/*/src</code> at this time. Press '''Next'''.
+<li>Under '''Source Package Folders''', click '''Add Folder''' at right and browse to <code>$SRCDIR/mmstudio/src</code>. If you want to develop a plugin, you can also add <code>$SRCDIR/plugins/*/src</code> at this time. Press '''Next'''.
 <li>Include all files ('''**'''). Press '''Finish'''.
 <li>Right-click your project in the '''Projects''' tab (probably at left) and select '''Properties'''.</li>
-<li>Select '''Libraries''' under '''Categories'''. Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 64-bit JDK 1.6).</li>
-<li>Under '''Compile''' > '''Compile-time Libraries''', click '''Add Jar/Folder''', select '''Relative Path''' on the right, and add all jars in <code>3rdpartypublic/classext</code>.</li>
-<li>Click '''Add Jar/Folder''' again and choose <code>MMCoreJ.jar and MMAcqEngine.jar</code> in <code><your_micromanager_installation_directory>/plugins/Micro-Manager/</code>.</li>
-<li>Select '''Run''' under '''Categories'''. For the <default config>, set the following parameters: <ul><li>'''Main Class:'''  <code>ij.ImageJ</code></li>
-<li>'''Working Directory:''' <code><your_micromanager_installation_directory></code></li>
-<li>'''VM options:''' <code>-Xmx600M</code> (for 64 bit use <code>-Xmx3000M)</code>.</li></ul>
+<li>Select '''Libraries''' under '''Categories'''. Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 64-bit JDK 1.6 - but using a newer Java Platform in NetBeans than the one shipped with Micro-Manager is usually okay).</li>
+<li>Under '''Compile''' > '''Compile-time Libraries''', click '''Add Jar/Folder''' and add all jars in <code>$THIRDPARTYPUBLIC/classext</code>.</li>
+<li>Click '''Add Jar/Folder''' again and choose <code>$INSTALLDIR/plugins/Micro-Manager/MMCoreJ.jar</code> and <code>$INSTALLDIR/plugins/Micro-Manager/MMAcqEngine.jar</code>.</li>
+<li>Select '''Run''' under '''Categories'''. For the <default config>, set the following parameters: <ul><li>'''Main Class:'''  type in <code>ij.ImageJ</code></li>
+<li>'''Working Directory:''' type in your <code>$INSTALLDIR</code></li>
+<li>'''VM options:''' type in <code>-Xmx600M</code> (for 64 bit use <code>-Xmx3000M)</code>. This sets the maximum memory (megabytes) used by Java.</li></ul>
 <li>Click '''OK''', sacrifice a goat, and then right-click your project and choose '''Debug'''.
 </li>
 
