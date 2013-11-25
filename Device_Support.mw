@@ -107,6 +107,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
 * [[XCite120PC_Exacte]] - Lumen Dynamics X-Cite 120PC and ''exacte'' adapter
 * [[XCiteLed]] - LED controller
+* [[Zaber]] - Zaber XY stage
 
 === Communication ports, TTLs, DAQs, etc. ===
 * [[Arduino]] - Open Source Programmable Digital/Analogue IO board
