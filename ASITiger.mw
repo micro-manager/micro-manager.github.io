@@ -13,6 +13,11 @@ If you run into problems please contact the author at the address above.
 
 NB: there is a separate device adapter for stand-alone MS-2000 controllers or older rack-mount controllers [[ASIStage]].
 
+==TigerCommHub==
+Property Notes
+* SerialCommand: Only sent when a change is made; to resend same command you can add a space
+
+
 
 '''Known limitations:'''
 * CRISP supported was added 25-Sep-2013.  Besides requiring a Micro-manager build after that date, it also requires card firmware after that date.
