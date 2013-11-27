@@ -1,11 +1,82 @@
 == Zaber ==
 
+_TOC_
+
 <table><tr><td>
-'''Summary:'''</td><td>Zaber XY stage</td></tr>
+'''Summary:'''</td><td>Device adapter for Zaber Technologies ASR100B120B XY stage and A-MCB2 controller.</td></tr>
 <tr><td>'''Author:'''</td><td>David Goosen, Zaber Technologies</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage</td></tr>
 </table>
 
-(Further info to be written.)
+===Hardware Setup===
+
+See [http://www.zaber.com/wiki/Manuals/ASR|ASR Manual].
+
+* Ensure home and away limit sensors have been set.
+
+
+===Stage and Coordinate System Orientation===
+
+For proper operation the stage must be oriented as shown below. The arrows indicate the directions of positive stage movement within the Micro-manager coordinate system. 
+
+[[Image:Zaber_ASR_1.jpg|thumb|left|300px|Stage orientation and coordinate system]]<br clear="all"/>
+
+
+===Initialization and Port Properties===
+
+'''Controller Device Number:''' 01 (A-MCB2 default)
+
+'''Port:''' Depends on connection
+
+
+'''AnswerTimeout:''' 500.00
+
+'''BaudRate:''' 115200 (A-MCB2 default)
+
+'''DelayBetweenCharsMs:''' 0.00
+
+'''Parity:''' None
+
+'''StopBits:''' 1
+
+'''Verbose:''' 1
+
+
+===Calibration and the Coordinate System===
+
+The Zaber device adapter implements an absolute coordinate system. As long as the stage has been calibrated and the limits have not been adjusted, any XY position will always correspond to the same physical location.
+
+The stage needs to be calibrated every time it is powered on. It does not store its location when the power is shut off. Calibration can be performed by clicking the ''Set Origin'' button within the ''Stage Position List'' dialogue box. Before calibrating, make sure that the limit sensors have been set appropriately (see [http://www.zaber.com/wiki/Manuals/ASR|ASR Manual]) and all objectives are clear of the stage.
+
+===Stage Control===
+
+There are several ways to control the position of the stage:
+
+* Stage control plugin
+* Mouse moves stage (click and drag in Snap/Live Window)
+* Manual adjustment knobs on A-MCB2
+* Zaber T-JOY3 3-axis joystick
+
+====Stage Control Plugin====
+
+This is pretty straightforward. Just enter the move distance desired for fine, medium and coarse moves.
+
+====Mouse Moves Stage====
+
+Before using this method, the pixel size must be calibrated. To do this:
+# Make sure your microscope and camera are set up and focused on the object you want to view.
+# Click on ''Tools'' > ''Pixel Size Calibration'' and click New to create a new calibration setting.
+# Select the properties that will effect the calibration. Usually your camera resolution will suffice.
+# Enter a guess for the pixel size um and click OK to exit the calibration window.
+# Under ''Tools'' select ''Mouse Moves Stage'' and select the hand tool from the ImageJ window.
+# In the Snap/Live Window, find a small distinct point on the image, and click and drag it across the window. If it ends up ahead of the mouse cursor (hand tool), you will need to reduce the um/pixel setting. If it ends up behind the cursor, you will need to increase the setting. Change the um/pixel value as needed until the point you drag stays directly underneath the mouse cursor.
+
+====Manual Adjustment Knobs====
+
+There is a separate manual adjustment knob for each axis on the A-MCB2 controller. The knob marked CTRL 1 controls the lower (Y) axis while CTRL 2 controls the upper (X) axis. Pushing and holding the knobs for one second switches between velocity and jog mode. In velocity mode pushing the knob while the stage is moving stops the stage.
+
+====Zaber T-JOY3====
+
+The Zaber T-JOY3 is available as an accessory for the A-MCB2 controller. It daisy chains with the controller and provides 3 customizable axes of control and 5 programmable buttons.
