@@ -35,7 +35,7 @@ See the page on [[Building MM on Windows]] for how to set up a development envir
 
 == Method 2: Building using a custom solution file ==
 
-This option may be convenient if you are only working on a single device adapter and want to avoid seeing a long list of projects (and waiting for Visual Studio to process them).
+This option may be convenient if you are only working on a single device adapter and want to avoid seeing a long list of projects (and waiting for Visual Studio to process them). It also has the advantage that you don't need to locally modify the <code>micromanager.sln</code> file, and can place all of your device adapter files outside of the <code>micromanager</code> source tree, if you wish.
 
 The steps are basically the same as Method 1 (using <code>micromanager.sln</code>), except that you will start by choosing '''File > New > Project...''' instead of adding a new project to the existing solution.
 
@@ -46,7 +46,6 @@ Just before the step of adding a reference to '''MMDevice-SharedRuntime''', you 
 # When adding the reference, if MMDevice-SharedRuntime does not show up in the '''Add Reference''' list, cancel the adding, right-click on your device adapter project, and choose '''Rescan Solution'''. Then try again to add the reference.
 
 At some point, you will be prompted to save the solution file (<code>.sln</code>). Make sure to save it at the root of the <code>micromanager</code> source tree, next to <code>micromanager.sln</code>. This ensures that the build products go to the correct destination (within the <code>build/</code> directory). If you saved it at the default location (next to the project file) by accident, you can always move the solution file by selecting it in the '''Solution Explorer''' and choosing '''File > Save xyz.sln As...'''.
-
 
 = Visual Studio project properties for Micro-Manager device adapters =
 
