@@ -6,6 +6,8 @@ JVM crash dumps are named hs_err_pid*.log, with the process id of the JVM that c
 
 Although the JVM normally can catch errors that cause the process to crash (such as access violations (= segmentation faults)), sometimes the memory corruption (or some other condition) resulting from the error is severe enough to cause the JVM's crash handler to fail or not be executed. In that case, the only way to see what happened (save for running Micro-Manager with a debugger attached) is to have Windows produce crash dumps.
 
+{{Note|The crash dumps saved by this method are binary files. You need a Microsoft debugger (e.g. windbg.exe) to view them.}}
+
 Windows crash dumps are disabled by default (to be precise, saving them locally is disabled by default - as I understand it there is some elaborate mechanism to send the dumps to Microsoft, but that is not helpful for our purpose). To enable local saving of crash dumps on Windows Vista or later, download [[Media:SaveJVMCrashDumps.zip|this file]], extract the .reg file, and open it as administrator, which will add the necessary settings to the Windows registry. (See [http://msdn.microsoft.com/en-us/library/windows/desktop/bb787181.aspx Microsoft's documentation] for details on this.)
 
 Following this setup, when java.exe or javaw.exe crashes, a crash dump should be saved at
