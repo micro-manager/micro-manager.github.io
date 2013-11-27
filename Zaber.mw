@@ -12,7 +12,7 @@
 
 Ensure home and away limit sensors have been set. The Zaber device adapter calibrates the stage's range of travel using home and away limit sensors, so you must make sure these are triggered before the stage runs into anything.
 
-The limits are adjusted by loosening the screws shown in the images below and sliding the sensor magnets in along their slots. The distance between the magnets is approximately equal to the travel range of the axis.
+The limits are adjusted by loosening the screws shown in the images below and sliding the sensor magnets along their slots. The distance between the magnets is approximately equal to the travel range of the axis.
 
 {|
 | [[Image:Zaber_ASR_2.jpg|thumb|left|300px|Upper-axis limit sensor adjustment]]
