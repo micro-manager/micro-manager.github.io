@@ -72,11 +72,13 @@ In this directory we will find a very simple “skeleton” camera adapter proje
 
 In contrast to previous versions of the Device Kit we now have to build development tools (test programs) and example Device Adapters from source code. There are no installers to download and run. The advantage of the new source code approach is that Device Kit will always be in sync with the main code base.
 
-In this tutorial we will describe build process for Windows. Linux and Mac developers can use the same source files without any changes (*.cpp and *.h), except for having to create appropriate build files for each platform. Project files are provided only for Microsoft Developer’s Studio 2008 because Micro-manager team uses this version for release builds. 'Express' (free) versions of Visual Studio should also work for x86, but to build x64 versions we’ll need the Professional version of Visual Studio (this will no longer be the case once Micro-Manager is migrated to Visual Studio 2010).
+In this tutorial we will describe build process for Windows. Linux and Mac developers can use the same source files without any changes (*.cpp and *.h), except for having to create appropriate build files for each platform. Project files are provided only for Microsoft Visual Studio 2010 Express SP1 because the Micro-manager team uses this version for release builds. 'Professional' (non-free) versions of Visual Studio should also work.
 
-First open '''LibraryTest''' solution (sln) project file and launch build. If all directories were set as described this project should build without any warnings or errors. You can repeat the same for '''DeviceTest''' and '''CoreTest''' projects. At this point all our tools are ready for use.
+First open the <code>micromanager.sln</code> file. This solution file lists all of the C++ projects in Micro-Manager. Some of the device adapter projects will be grayed out ("unavailable") because they are closed-source, but this should not preventing you from using this solution file.
 
-Finally open the '''MMCamera''' project and examine its structure and project settings. This is a very simple example that can be used as a template or starting point for new projects.
+Right-click on the '''LibraryTest''' project, and select Build. If all directories were set as described this project should build without any warnings or errors. You can repeat the same for '''DeviceTest''' and '''CoreTest''' projects. At this point all our tools are ready for use.
+
+Next, close <code>micromanager.sln</code> and open the '''MMCamera''' project and examine its structure and project settings. This is a very simple example that can be used as a template or starting point for new projects.
 
 == Project settings (Windows) ==
 Micro-manager Device Adapter is a C++ class residing in a Library (dynamically linked). One Library usually contains more than one DeviceAdapter. Micro-manager application does not link against any of the Device Adapter libraries at build time. Libraries are discovered by scanning the application default directory for dynamic libraries following the specific naming convention:
