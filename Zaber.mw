@@ -80,7 +80,7 @@ Before using this method, the pixel size must be calibrated. To do this:
 
 ===Manual Adjustment Knobs===
 
-There is a separate manual adjustment knob for each axis on the A-MCB2 controller. The knob marked CTRL 1 controls the lower (Y) axis while CTRL 2 controls the upper (X) axis. Pushing and holding the knobs for one second switches between velocity and jog mode. In velocity mode pushing the knob while the stage is moving stops the stage.
+There is a separate manual adjustment knob for each axis on the A-MCB2 controller. The knob marked CTRL 1 controls the lower (Y) axis while CTRL 2 controls the upper (X) axis. Pushing and holding the knobs for one second switches between velocity and jog mode. Pushing the knob while the stage is moving stops the stage.
 
 ===Zaber T-JOY3===
 
