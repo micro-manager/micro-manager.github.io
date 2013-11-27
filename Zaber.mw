@@ -29,7 +29,6 @@ For proper operation the stage must be oriented as shown below. The arrows indic
 
 '''Port:''' Depends on connection
 
-
 '''AnswerTimeout:''' 500.00
 
 '''BaudRate:''' 115200 (A-MCB2 default)
@@ -41,7 +40,6 @@ For proper operation the stage must be oriented as shown below. The arrows indic
 '''StopBits:''' 1
 
 '''Verbose:''' 1
-
 
 ===Calibration and the Coordinate System===
 
