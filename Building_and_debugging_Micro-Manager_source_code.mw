@@ -8,7 +8,7 @@
 === Windows ===
 
 * [[Building MM on Windows]]
-* [[Visual Studio project settings for device adapters]] (work in progress)
+* [[Visual Studio project settings for device adapters]]
 * [[Viewing crash dumps on Windows]] - For C++ programmers, when all else fails
 
 === Mac OS X and Linux ===
