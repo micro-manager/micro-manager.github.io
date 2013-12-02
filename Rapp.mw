@@ -49,6 +49,13 @@ A few UGA-40-specific properties allow fine-grained control, supplementing the g
 |}
 
 
+== Installation ==
+
+For Micro-Manager 1.4.15, you need to copy two files, ROEobsTools.dll and obsROE_Device.dll, provided by Rapp, into the Micro-Manager folder. They need to be the "VS2008" version (32- or 64-bit, matching Micro-Manager).
+
+Micro-Manager nightly builds since late Nov 2013 include all necessary files and require no additional steps. (However, the DLLs included in the nightly builds are not compatible with MM 1.4.15 or with nightly builds up to mid-November, 2013.)
+
+
 == Resources ==
 
 {{Listserv_Search|Rapp}}
