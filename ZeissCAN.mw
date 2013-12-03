@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and linux (serial port)</td></tr>
-<tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive</td></tr>
+<tr><td valign="top">'''Devices:'''</td><td>Scope, Shutter (external and internal), Reflectorturret, SideportTurret, ObjectiveTurret, Excitation Lamp Switcher, Halogenlamp, Z-drive; XY stage via MCU 28</td></tr>
 <tr><td width=20%>'''Serial Port settings:'''</td><td>9600 baud, 1 stop bit, 2000 ms answertime out, 0 ms delaybetweenCharsMs, Handshaking none.</td></tr>
 
 <tr><td><b>Automated Serial Port Setup:</b></td><td>Yes</td></tr>
@@ -20,6 +20,10 @@ This adapter controls Zeiss microscopes that use the (older) CAN bus interface, 
 For older microscopes that have the 'MF' firmware instead of the newer 'ZM' firmware (the firmware version will be a property of the Zeisscope device, in general, the AxioPlan 2 and Axiovert 100m have the MF firmware and the AxioPlan2+ and Axiovert200m have the ZM firmware) use the ZeissShutterMFFirmware instead of the ZeissShutter.  There are three types of the ZeissShutterMFFirmware shutter: 1 = incident light, 2= condenser front lens, 3 = external motorized Mirror with two lamps.  {{Note|With ZM firmware, the external motorized mirror is a different device (Excitation Lamp Switcher).}}
 
 --[[User:Nico|Nico]] 17:23, 8 September 2007 (PDT)
+
+An XY stage controlled via an MCU 28 controller can be control either through the microscope stand (if the stand and MCU 28 are connected with a CAN bus cable) or, since version 1.4.16 or the 20131203 nightly build, directly (if the MCU 28 is directly connected to the computer using a serial cable). (Since currently only one ZeissCAN microscope is supported, you cannot control a directly-connected MCU 28 at the same time as a microscope stand. This restriction may be lifted in the future.)
+
+Zeiss microscopes require a female-to-female null-modem cable for RS-232 communication.
 
 {{Listserv_Search|Zeiss}}
 
