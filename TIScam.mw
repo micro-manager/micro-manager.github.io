@@ -11,6 +11,8 @@
 
 ===Setting up The Imaging Source Software===
 
+Since Micro-Manager 1.4.15, the required DLLs are installed with Micro-Manager. Skip to step 4.
+
 1. Install the IC Capture software that comes with the camera and verify you can capture images. This will install a camera device driver, which the rest of the software uses to control the camera. You might need to first uninstall any old versions of this software. (You can download IC Capture and/or device drivers from [http://www.theimagingsource.com/en_US/support/downloads/ TIS]).
 
 2. Install the IC Imaging Control SDK, version 3.2 (download from [http://www.theimagingsource.com/en_US/support/downloads/ TIS]). Micro-Manager 1.4.14 and current nightly builds (as of Aug, 2013) require version 3.2.
