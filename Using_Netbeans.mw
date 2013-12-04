@@ -1,5 +1,7 @@
 The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac.
 
+(See also: [[Writing plugins for Micro-Manager]])
+
 <ol>
 <li>Download and install Micro-Manager. We will refer to the installed Micro-Manager directory as <code>$INSTALLDIR</code> below.</li>
 <li>Use [http://subversion.tigris.org/ Subversion] to download a copy of the latest [http://micro-manager.org/wiki/Micro-Manager_Source_Code Micro-Manager source and 3rdpartypublic]. The two directories should reside in the same parent directory, e.g. <code>projects/micromanager/</code> and <code>projects/3rdpartypublic/</code>. We'll refer to these two directories as <code>$SRCDIR</code> and <code>$THIRDPARTYPUBLIC</code>, respectively.</li>
