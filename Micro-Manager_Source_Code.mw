@@ -13,7 +13,7 @@ To access the subversion repository you will need a [http://subversion.tigris.or
 https://valelab.ucsf.edu/svn/micromanager2/trunk - Release 1.4<br />
 https://valelab.ucsf.edu/svn/3rdpartypublic - 3rd party files needed for Release 1.4<br />
 
-{{MessageBox|Note|There is currently an issue that prevents the Subversion 1.8.0 client from checking out our public repositories (unless you have a username). Until this is fixed, please use Subversion 1.7.x.|color=#1C879D}}
+{{Note|There is a bug in the Subversion 1.8 client that prevents you from checking out our public repositories without a username. If Subversion asks you for a username and password, you can use the username "guest" (password "guest") as a workaround. Subversion 1.7.x clients should not experience this problem.}}
 
 To build Micro-Manager 1.4, you should place the micromanager2 (trunk) and 3rdpartypublic repositories in the same directory. For example, run the following from your projects directory:
 
