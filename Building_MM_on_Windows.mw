@@ -80,9 +80,11 @@ Open the project file (.vcxproj) for the device adapter in Visual Studio.
 
 Right-click on the Solution, and select Add > Existing Project.... Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>. (There are a few device adapters that require <code>MMDevice/MMDevice-StaticRuntime.vcxproj</code> instead. If you get an LNK1104 error asking for it, add it and then right-click the device adapter project and select "Rescan Solution".)
 
-Select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
+At this point, close the solution file (File > Close Solution, or just quit Visual Studio). It will prompt you to save a solution file (.sln). Save it in the default location (next to the device adapter project). Then, reopen either the device adapter project or the newly saved solution (either will have the same result). (This extra step is necessary because Visual Studio does not correctly update its internal state when you add projects that theoretically know their interdependencies.)
 
-Visual Studio will ask you if you want to save a "solution" (.sln file). Save it in the default location. In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
+Now select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
+
+In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
 
 The build binaries are placed under the directory <code>build</code>, within the device adapter directory.
 
