@@ -76,9 +76,13 @@ If you are building a device adapter included in the Micro-Manager Subversion re
 
 === Building single device adapters ===
 
-Open the project file (.vcxproj) for the device adapter in Visual Studio. Select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should be able to simply select Build.
+Open the project file (.vcxproj) for the device adapter in Visual Studio.
 
-Visual Studio will ask you if you want to save a "solution" (.sln file). This is up to you. In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
+Right-click on the Solution, and select Add > Existing Project.... Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>.
+
+Select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
+
+Visual Studio will ask you if you want to save a "solution" (.sln file). Save it in the default location. In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
 
 The build binaries are placed under the directory <code>build</code>, within the device adapter directory.
 
