@@ -78,7 +78,7 @@ If you are building a device adapter included in the Micro-Manager Subversion re
 
 Open the project file (.vcxproj) for the device adapter in Visual Studio.
 
-Right-click on the Solution, and select Add > Existing Project.... Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>.
+Right-click on the Solution, and select Add > Existing Project.... Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>. (There are a few device adapters that require <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>. If you get a LNK1104 error, try adding that project instead, and then right-click the device adapter project and select "Rescan Solution".)
 
 Select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
 
