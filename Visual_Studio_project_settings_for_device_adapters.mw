@@ -41,11 +41,11 @@ The steps are basically the same as Method 1 (using <code>micromanager.sln</code
 
 Just before the step of adding a reference to '''MMDevice-SharedRuntime''', you will need to perform the following steps:
 
-# Right-click on the '''Solution''' at the top of the '''Solution Explorer''' and choose '''Add > Existing Project...'''.
+# Right-click on the '''Solution''' at the top of the '''Solution Explorer''' and choose '''Add > Existing Project...'''). (Make sure to right-click the solution, not the project. The solution contains the project. Alternatively, you can use '''File > Add > Existing Project...'''.)
 # Select <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>.
-# When adding the reference, if MMDevice-SharedRuntime does not show up in the '''Add Reference''' list, cancel the adding, right-click on your device adapter project, and choose '''Rescan Solution'''. Then try again to add the reference.
+# When adding the reference, if MMDevice-SharedRuntime does not show up in the '''Add Reference''' list, cancel the adding, right-click on your device adapter project, and choose '''Unload Project''', followed by '''Reload Project'''. Then try again to add the reference.
 
-At some point, you will be prompted to save the solution file (<code>.sln</code>). Make sure to save it at the root of the <code>micromanager</code> source tree, next to <code>micromanager.sln</code>. This ensures that the build products go to the correct destination (within the <code>build/</code> directory). If you saved it at the default location (next to the project file) by accident, you can always move the solution file by selecting it in the '''Solution Explorer''' and choosing '''File > Save xyz.sln As...'''.
+At some point (usually the first time you build or close Visual Studio), you will be prompted to save the solution file (<code>.sln</code>). Saving to the default location (next to the <code>.vcxproj</code> file) usually works well when developing a device adapter.
 
 = Visual Studio project properties for Micro-Manager device adapters =
 
