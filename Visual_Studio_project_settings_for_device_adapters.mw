@@ -1,6 +1,6 @@
 {{Note|This page applies to SVN r12232 and later.}}
 
-Here are instructions for how to set up a Visual Studio project for a new device adapter. For more details on how to write device adapters for Micro-Manager, see [[Building Micro-Manager Device Adapters]].
+Here are instructions for how to set up a Visual Studio project for a new device adapter. For more details on how to write device adapters for Micro-Manager, see [[Building Micro-Manager Device Adapters]]. For instructions on how to build existing device adapters in the Micro-Manager subversion repository, see the page on [[Building MM on Windows]].
 
 = Setting up a new device adapter project =
 
