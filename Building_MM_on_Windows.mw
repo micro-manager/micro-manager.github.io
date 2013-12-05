@@ -74,31 +74,37 @@ If you are building a device adapter included in the Micro-Manager Subversion re
 
 == Building Micro-Manager ==
 
-=== Building single device adapters ===
+=== Building the C++ components ===
 
-Open the project file (.vcxproj) for the device adapter in Visual Studio.
-
-Right-click on the Solution, and select Add > Existing Project.... Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>. (There are a few device adapters that require <code>MMDevice/MMDevice-StaticRuntime.vcxproj</code> instead. If you get an LNK1104 error asking for it, add it and then right-click the device adapter project and select "Rescan Solution".)
-
-At this point, close the solution file (File > Close Solution, or just quit Visual Studio). It will prompt you to save a solution file (.sln). Save it in the default location (next to the device adapter project). Then, reopen either the device adapter project or the newly saved solution (either will have the same result). (This extra step is necessary because Visual Studio does not correctly update its internal state when you add projects that theoretically know their interdependencies.)
-
-Now select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
-
-In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
-
-The build binaries are placed under the directory <code>build</code>, within the device adapter directory.
-
-Some device adapters (those made up of more than one project) may not build correctly by this method. In that case, build it from <code>micromanager.sln</code> as described below.
-
-=== Building multiple device adapters, MMCoreJ, or all C++ components ===
-
-Open <code>micromanager.sln</code> (in the root of <code>projects\micromanager</code>). Visual Studio will warn you that some projects are missing (they are the closed-source device adapters), but you can ignore that message. Then (after setting the configuration and platform) simply right-click the desired projects and select Build.
+Open <code>micromanager.sln</code> (in the root of <code>projects\micromanager</code>). Visual Studio will warn you that some projects are missing (they are the closed-source device adapters), but you can ignore that message. Choose the correct configuration (try Release if Debug fails) and platform (Win32 or x64). Then simply right-click the desired projects and select Build.
 
 Note that the built binaries are placed under the directory <code>build</code> at the root of <code>projects\micromanager</code>.
 
 If you build MMCoreJ, <code>MMCoreJ_wrap.dll</code> will be generated. Additionally, Java source files are generated in <code>build\intermediates\Swig\MMCoreJ\</code>. These files are compiled into <code>MMCoreJ.jar</code> in a separate step by Ant (see below).
 
-You can also build all available projects by right-clicking the Solution and choosing Build.
+You can also build all available projects by right-clicking the Solution (at the very top of the Solution Explorer) and choosing Build.
+
+=== Building single device adapters ===
+
+The easiest method to build a device adapter is to use <code>micromanager.sln</code> as described above. However, you may want to be able to work on a single device adapter without seeing all the other projects (which also slow down Visual Studio). You can do so by creating your own solution file (a solution (<code>.sln</code>) file is essentially a container for multiple projects).
+
+Device adapters need to be linked to the MMDevice static library (which itself needs to be built). This is done automatically within <code>micromanager.sln</code>. When building device adapters outside of <code>micromanager.sln</code>, the settings required for this are already contained in the device adapter project file (<code>.vcxproj</code>), but you need to include the required MMDevice project in your solution. To do so:
+
+Open the device adapter project file (e.g. <code>DeviceAdapters/DemoCamera/DemoCamera.vcxproj</code>) in Visual Studio.
+
+Right-click on the Solution, and select Add > Existing Project... (or, equivalently, select File > Add > Existing Project...). Choose <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>.
+
+At this point, close the solution file (File > Close Solution, or just quit Visual Studio). It will prompt you to save a solution file (.sln). Save it in the default location (next to the device adapter project). Then, reopen either the device adapter project or the newly saved solution (either will have the same result). (This extra step is necessary because Visual Studio does not correctly update its internal state when you add projects that theoretically know their interdependencies.)
+
+Now select the Debug or Release configuration and the Win32 or x64 platform from the drop-down menus (for various reasons, the Debug configuration does not work for all device adapters). If everything is configured correctly as described above, you should now be able to simply select Build.
+
+If you get an LNK1104 error involving <code>MMDevice-StaticRuntime.lib</code> (as opposed to <code>MMDevice-SharedRuntime</code>), you are probably building one of the few device adapters that require this special version of the MMDevice library. Remove the MMDevice-SharedRuntime project from the solution, and add the <code>MMDevice-StaticRuntime.vcxproj</code> instead. Reload the solution file, and you should be ready to build.
+
+In Visual Studio 2010 and later, the solution is little more than a list of project files to be built together, so our policy is not to include solution files for each project in the repository (but see below about the master <code>micromanager.sln</code> file).
+
+The build binaries are placed under the directory <code>build</code>, within the device adapter directory (actually, relative to where you saved the solution file).
+
+Some device adapters (those made up of more than one project) may not build correctly by this method. In that case, build it from <code>micromanager.sln</code> as described above.
 
 === Building MMCorePy ===
 
