@@ -12,6 +12,7 @@
 * Static constants in C++: const char* const g_Keyword_Description.
 * Static constants in Java: static final String METADATA_FILE_NAME.
 * if/else, for, and while statements should include curly braces, even if they are only followed by a single line.
+* For Java code, follow the [http://geosoft.no/development/javastyle.html#Recommendation Java style recommendations at Geosoft].
 
 '''Comments, headers, etc…'''
 
