@@ -35,6 +35,8 @@
 
 An MCU 28 controller connected to the microscope stand cannot currently be controlled by the ZeissCAN29 device adapter. See the [[ZeissCAN]] adapter for controlling an MCU 28 that is directly connected to the computer using a serial cable (only XY stage is supported).
 
+Zeiss microscopes require a female-to-female null-modem cable for RS-232 communication.
+
 {{Listserv_Search|Zeiss}}
 
 {{Devices_Sidebar}}
