@@ -78,7 +78,8 @@ The dynamic loading feature (described above) is useful if you are developing yo
 # Set up debug configuration at Project -> Properties; then Run/Debug Settings
 ## Add New configuration, Java Application; click "OK"
 ### Make sure the project is set to be the current project
-### Specify the main class as org.micromanager.MMStudioMainFrame
+### Specify the main class as <code>ij.ImageJ</code>
+### At the bottom of the Arguments tab, change the working directory to "other" and browse to <code>C:\Program Files\Micro-Manager-1.4\</code>
 ### Click OK
 ## Make sure everything works by launching debug view from Run -> Debug
 # To build a JAR file
