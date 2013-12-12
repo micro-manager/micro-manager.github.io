@@ -53,7 +53,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 :Make sure you change the "Layout Generation Style" property from "Automatic" to "Swing Layout Extensions Library" as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
 
 
-=== Using Eclipse to edit a plugin ===
+=== Configure Eclipse to edit a plugin ===
 
 # Get Micro-manager source code if you don't already have it, at least the trunk (see [http://www.micro-manager.org/wiki/Micro-Manager_Source_Code this page])
 # Install Eclipse (these instructions for Kepler)
@@ -81,6 +81,12 @@ The dynamic loading feature (described above) is useful if you are developing yo
 ### Specify the main class as org.micromanager.MMStudioMainFrame
 ### Click OK
 ## Make sure everything works by launching debug view from Run -> Debug
+# To build a JAR file
+## File -> Export (or right click on the project in the Project Explorer, select Export)
+## Select Java -> JAR file, then click "Next"
+## Point JAR export location to <code>C:\Program Files\Micro-Manager-1.4\mmplugins\<plugin name> </code>
+## Click "Finish"
+
 
 
 
