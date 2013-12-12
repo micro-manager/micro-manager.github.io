@@ -92,76 +92,78 @@ Micro-Manager Image file stacks conform to both the [http://partners.adobe.com/p
 
 '''Bytes 0-7''': Standard TIFF Header
 
-'''8-11''': Index map offset header (54773648)
+'''8-11''': Index map offset header (54773648 = 0x0343C790)
 
 '''12-15''': Index map offset
 
-'''16-19''': Display settings offset header (483765892)
+'''16-19''': Display settings offset header (483765892 = 0x1CD5AE84)
 
 '''20-23''': Display settings offset
 
-'''24-27''': Comments offset header (99384722)
+'''24-27''': Comments offset header (99384722 = 0x05EC7D92)
 
 '''28-31''': Comments offset
 
-'''32-35''': Summary metadata header (2355492)
+'''32-35''': Summary metadata header (2355492 = 0x0023F124)
 
 '''36-39''': Summary metadata length
 
-'''40-start of first IFD''': 1 byte for each character of summary metadata
+'''40-''': summary metadata (UTF-8 JSON)
 
 
 
 <h2> Image File Directories</h2>
 
-Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the '''ImageDescription''' tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them):
+The first IFD starts immediately after the summary metadata. Each IFD will contain the same set of TIFF tags, except for the first one in each file, which contains two ImageJ metadata tags, and two copies of the '''ImageDescription''' tag. One of these contains a string needed by ImageJ to recognize these files, and the other contains OME metadata. Although these tags appear in the first IFD, their values will not be written until the end of the file, when it is closed. The tags are written in the following order (non-standard TIFF tags have the values listed after them), following the TIFF specification requirement that they be sorted numerically:
 
 
-'''ImageWidth'''
-	
-'''ImageHeight'''
+'''ImageWidth''' (256 = 0x0100)
 
-'''BitsPerSample'''
+'''ImageHeight''' (257 = 0x0101)
 
-'''Compression'''
+'''BitsPerSample''' (258 = 0x0102)
 
-'''PhotometricInterpretation'''
+'''Compression''' (259 = 0x0103)
 
-'''ImageDescription''' (first IFD only)--contains OME XML metadata
+'''PhotometricInterpretation''' (262 = 0x0106)
 
-a 2nd '''ImageDescription''' (first IFD only)-–contains ImageJ file opening information
+'''ImageDescription''' (270 = 0x010e) (first IFD only)--contains OME XML metadata
 
-'''StripOffsets'''
+a 2nd '''ImageDescription''' (270 = 0x010e) (first IFD only)-–contains ImageJ file opening information
 
-'''SamplesPerPixel'''
+'''StripOffsets''' (273 = 0x0111)
 
-'''RowsPerStrip'''
+'''SamplesPerPixel''' (277 = 0x0115)
 
-'''StripByteCounts'''
+'''RowsPerStrip''' (278 = 0x0116)
 
-'''XResolution'''
+'''StripByteCounts''' (279 = 0x0117)
 
-'''YResolution'''
+'''XResolution''' (282 = 0x011a)
 
-'''ResolutionUnit'''
+'''YResolution''' (283 = 0x011b)
 
-'''IJMetadataByteCounts''' (first IFD only) (50838)
+'''ResolutionUnit''' (296 = 0x0128)
 
-'''IJMetadata''' (first IFD only) (50839)
+'''IJMetadataByteCounts''' (first IFD only) (50838 = 0xc696)
 
-'''MicroManagerMetadata''' (51123)
+'''IJMetadata''' (first IFD only) (50839 = 0xc697)
+
+'''MicroManagerMetadata''' (51123 = 0xc7b3)
 
 
 Immediately after these tags are written:
 
 -4 bytes containg the offset of the next IFD (per the TIFF specification)
 
+-The pixel data
+
 -In RGB files only, 6 bytes containing the values of the '''BitsPerSample''' tag
 Pixel values
 
 -16 bytes containing the values of the '''XResolution''' and '''YResolution''' tags
 
--The value of the '''MicroManagerMetadata''' tag: 1 byte for each character of image metadata converted to a String
+-The value of the '''MicroManagerMetadata''' tag: image metadata (UTF-8 JSON)
 
 
 <h2>End of file</h2>
@@ -172,7 +174,7 @@ After the last IFD, the following constructs are written:
 
 A listing of all the images contained in the file and their byte offsets. This allows a specific image to be quickly accessed without having to parse the entire file and read in image metadata. It consists of the following:
 
--A 4 byte header (3453623)
+-A 4 byte header (3453623 = 0x0034b2b7)
 
 -4 bytes containing the number of entries in the index map
 
@@ -198,11 +200,11 @@ The ImageJ image description String that allows these files to opened correctly 
 
 <h3>Image display settings</h3>
 
-Image display settings (channel contrast and colors), which are automatically rewritten whenever these are changed in an open data set. The first 4 bytes of this block contain the '''Display Settings Header''' (347834724), and the next 4 contain the number of subsequent bytes reserved for display settings. A String containing display settings (which are normally stored in a [http://www.json.org/javadoc/org/json/JSONObject.html JSONObject]) is written one byte per character.
+Image display settings (channel contrast and colors), which are automatically rewritten whenever these are changed in an open data set. The first 4 bytes of this block contain the '''Display Settings Header''' (347834724 = 0x14BB8964), and the next 4 contain the number of subsequent bytes reserved for display settings. A UTF-8 JSON string containing display settings is written.
 
 <h3>Acquisition and Image comments</h3>
 
-A String containing acquisition and Image comments. The first 4 bytes of this block contain the '''Comments Header''' (84720485), and the next 4 contain the length of String version of the [http://www.json.org/javadoc/org/json/JSONObject.html JSONObject] used to store acquisition comments. This String is rewritten whenever acquisition or image comments are changed.
+A String containing acquisition and Image comments. The first 4 bytes of this block contain the '''Comments Header''' (84720485 = 0x050CBB65), and the next 4 contain the length of the string to follow. The acquisition comments are written as a UTF-8 JSON string. This string is rewritten whenever acquisition or image comments are changed.
 
 
 
