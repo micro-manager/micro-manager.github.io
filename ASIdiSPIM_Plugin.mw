@@ -11,63 +11,40 @@
 
 == Overview ==
 
-This plugin exists to facilitate alignment and use of [http://dispim.org the diSPIM system].  It also works with many light sheet configurations including iSPIM, oSPIM, ct-dSPIM, OpenSPIM-like systems, etc.  However it is specific to ASI-made hardware/controller.
+This plugin exists to facilitate alignment and use of [http://asiimaging.com/products/light-sheet-microscopy/selective-plane-illumination-microscopy-ispimdispim/ ASI's SPIM system], in all of its various forms.
 
-A much broader overview of light sheet microscopy and further information about the diSPIM is available on [http://dispim.org dispim.org]
+== GUI Instructions ==
 
-== Plugin Documentation ==
+The GUI remembers most of its settings from run to run.  In the case of settings stored on the controller (e.g. sheet sizes) these may be lost when the controller is turned off unless a save settings is performed.
 
-The plugin documentation is now is on the diSPIM wiki at [http://dispim.org dispim.org], specifically in the manual under [http://dispim.org/docs/mm_dispim_plugin_user_guide "Micro-manager diSPIM Plugin"].
+=== Before running the GUI ===
 
-== Change Log ==
-List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
+Before running the GUI, the relevant devices must be present in the Micro-Manager hardware configuration.  
 
-* 20190306: added overview acquisition feature to show 2D slice of large sample
-* 20180928: added path-specific presets
-* 20180222: added XYZ grid creator, useful for large tiled datasets
-* 20171031: added reflective imaging option
-* 20170217: can use light sheet mode on supported cameras
-* 20170208: new camera tab, allows setting ROI numerically or with buttons
-* 20170112: allow remote access via Java RMI for automated microscopy
-* 20161222: plugin can deskew stage scan data
-* 20160701: oSPIM support (need to build JAR with flag set)
-* 20151218: added API calls to control acquisition programmatically
-* 20151125: added ImageJ toolset for common image manipulation tasks
-* 20151124: ability to run test acquisition with optionally exported raw file
-* 20151013: added API calls to change acquisition settings programmatically
-* 20150925: significantly expanded autofocus options
-* 20150819: buttons to raise/lower SPIM head and sync upper and lower Z axes
-* (1.4.22 release)
-* 20150811: autofocus during timelapse
-* 20150807: rapid-fire (hardware-timed) acquisition
-* (1.4.21 release)
-* 20150428: autofocus to define calibration (not yet during timelapse)
-* 20150415: added basic stage scanning (contact ASI for firmware if needed)
-* 20150225: added hardware switching for multi-channel using Tiger's PLC
-* 20150113: added multi-position support and software-based multi-channel support
-* (1.4.20 release)
-* 20141219: added ability to easily do offset-only calibration adjustment
-* 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25 ms
-* 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
-* 20141207: added ability to export data for Fiji Multiview plugin (as of April 2015 the Fiji plugin can directly import data without requiring this step)
-* (1.4.19 release)
-* first included with 1.4.16 release Jan 2014
+For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.
 
 
-You can view all changes to the diSPIM plugin code by [https://valelab.ucsf.edu/trac/micromanager/search?q=asidispim searching the Micro-Manager timeline for "ASIdiSPIM"].  You can also [https://valelab4.ucsf.edu/trac/micromanager/browser/plugins/ASIdiSPIM/src/org/micromanager/asidispim browse the plugin source code].
 
-== Known Issues ==
+=== Devices ===
 
-* Camera timing calculations assume CameraLink interface speeds.  If you are using a USB3 interface the timing may be different, so if you are missing frames uncheck "minimize slice period" and increase the slice period manually.
+Here you tell the GUI which Micro-manager devices fill which roles in the SPIM system.
 
-== Please contact us! ==
+"Path A" and "Path B" refer to the two light paths.  The scanner (AKA MicroMirror or Galvo) and illumination piezo will be one one side of the physical microscope, and the imaging piezo and camera will be on the opposite side.
 
-The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  Contact information is above.
+For the piezo objective movers, the Tiger controller has hardware connections (internal TTL control) which define which Piezo card is used for "Path A" and which is for "Path B".  Hence, care must be taken to tell the GUI the correct piezo card for each path.  In ASI's default controller configuration, piezo axis "P" is the imaging piezo for "Path A" and axis "Q" is the imaging piezo for "Path B".  If in doubt about your controller configuration, please contact ASI.  The imaging piezo is the one specified in the Device panel.
 
-For instructions on submitting bug reports see http://dispim.org/software/micro-manager#bug_reports.
+For single-sided (iSPIM), you can leave "Path B" entries blank.
 
-For instructions on updating the controller firmware see http://dispim.org/hardware/controller.
+=== SPIM Params ===
 
-{{Listserv_Search|ASIdiSPIM}}
+Here you set the parameters for the SPIM acquisition.  This is somewhat analogous to setting up a multi-D acquisition in Micro-manager, except that the positions of the imaged volume are not specified here.
 
-{{Documentation Sidebar}}
+Also on this tab you select the SPIM stack mode (currently only one, piezo stacks) and start the SPIM data acquisition.
+
+=== Setup Path A/B ===
+
+This tab is used for alignment and to specify the imaged volume.  Each tab has an independent set of joystick controls which are activated when the tab is selected.
+
+=== Navigation ===
+
+Here you can view the current positions.  Another set of independent joystick controls is provided.
