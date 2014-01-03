@@ -15,13 +15,13 @@ NB: there is a separate device adapter for stand-alone MS-2000 controllers or ol
 
 ==TigerCommHub==
 Property Notes
-* SerialCommand: Only sent when a change is made; to resend same command you can add a space
+* SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior
 
 
 
 '''Known limitations:'''
 * CRISP supported was added 25-Sep-2013.  Besides requiring a Micro-manager build after that date, it also requires card firmware after that date.
 * Shutter control is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
-* TTL-triggered sequences not yet supported due to lack of firmware support on TIGER.
+* TTL-triggered sequences not yet supported due to lack of firmware support.
 
 {{Devices_Sidebar}}
