@@ -1,0 +1,50 @@
+= ASIdiSPIM Plugin =
+
+<table><tr><td>
+'''Summary:'''</td><td>GUI to drive [http://asiimaging.com/products/light-sheet-microscopy/selective-plane-illumination-microscopy-ispimdispim/ iSPIM/diSPIM] (single/dual light sheet microscope) on ASI Tiger controller</td></tr>
+<tr><td>'''Authors:'''</td><td>Nico Stuurman, Jon Daniels (jon at asiimaging.com)</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Requires:'''</td><td>ASI "Tiger" TG-1000 controller with appropriate cards installed<td></tr>
+</table>
+
+
+== Overview ==
+
+This plugin exists to facilitate alignment and use of [http://asiimaging.com/products/light-sheet-microscopy/selective-plane-illumination-microscopy-ispimdispim/ ASI's SPIM system], in all of its various forms.
+
+== GUI Instructions ==
+
+The GUI remembers most of its settings from run to run.  In the case of settings stored on the controller (e.g. sheet sizes) these may be lost when the controller is turned off unless a save settings is performed.
+
+=== Before running the GUI ===
+
+Before running the GUI, the relevant devices must be present in the Micro-Manager hardware configuration.  
+
+For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.
+
+
+
+=== Devices ===
+
+Here you tell the GUI which Micro-manager devices fill which roles in the SPIM system.
+
+"Path A" and "Path B" refer to the two light paths.  The scanner (AKA MicroMirror or Galvo) and illumination piezo will be one one side of the physical microscope, and the imaging piezo and camera will be on the opposite side.
+
+For the piezo objective movers, the Tiger controller has hardware connections (internal TTL control) which define which Piezo card is used for "Path A" and which is for "Path B".  Hence, care must be taken to tell the GUI the correct piezo card for each path.  In ASI's default controller configuration, piezo axis "P" is the imaging piezo for "Path A" and axis "Q" is the imaging piezo for "Path B".  If in doubt about your controller configuration, please contact ASI.  The imaging piezo is the one specified in the Device panel.
+
+For single-sided (iSPIM), you can leave "Path B" entries blank.
+
+=== SPIM Params ===
+
+Here you set the parameters for the SPIM acquisition.  This is somewhat analogous to setting up a multi-D acquisition in Micro-manager, except that the positions of the imaged volume are not specified here.
+
+Also on this tab you select the SPIM stack mode (currently only one, piezo stacks) and start the SPIM data acquisition.
+
+=== Setup Path A/B ===
+
+This tab is used for alignment and to specify the imaged volume.  Each tab has an independent set of joystick controls which are activated when the tab is selected.
+
+=== Navigation ===
+
+Here you can view the current positions.  Another set of independent joystick controls is provided.
