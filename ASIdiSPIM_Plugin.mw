@@ -23,7 +23,7 @@ Before running the GUI, the relevant devices must be present in the Micro-Manage
 
 For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.
 
-
+There was a minor bug in the joystick wheel assignments of the first pair of axis on the micro-mirror card (e.g. A and B on an ABCD card) in firmware dated before 03-Jan-14.  Contact ASI for updated firmware.
 
 === Devices ===
 
