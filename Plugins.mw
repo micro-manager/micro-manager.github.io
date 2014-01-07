@@ -4,6 +4,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Tracker Plugin|Tracker]]
 * [[Multi Camera]]
 * [[Live Replay]]
+* [[MultiChannelShading]]
 * [[SplitView]]
 * [[Stage Control]]
 * [[Localization Microscopy]]
