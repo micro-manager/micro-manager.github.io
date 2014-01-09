@@ -6,6 +6,8 @@ JVM crash log files are named hs_err_pid*.log, with the process id of the JVM th
 
 Although the JVM normally can catch errors that cause the process to crash (such as access violations (= segmentation faults)), sometimes the memory corruption (or some other condition) resulting from the error is severe enough to cause the JVM's crash handler to fail or not be executed. In that case, the only way to see what happened (save for running Micro-Manager with a debugger attached) is to have Windows produce crash dumps.
 
+Note that, when the JVM saves a crash log, Micro-Manager's windows will just disappear, with no error dialog box (as far as Windows is concerned, the program terminated of its own will). When the JVM crash handler fails, you will usually see Windows display a message saying "Java(TM) Platform SE binary has stopped working".
+
 === Generating Windows application crash dumps ===
 
 {{Note|The crash dumps saved by this method are binary files. You need a Microsoft debugger (e.g. windbg.exe) to view them.}}
