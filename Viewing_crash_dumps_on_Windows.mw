@@ -12,7 +12,7 @@ Note that, when the JVM saves a crash log, Micro-Manager's windows will just dis
 
 {{Note|The crash dumps saved by this method are binary files. You need a Microsoft debugger (e.g. windbg.exe) to view them.}}
 
-Windows crash dumps are disabled by default (to be precise, saving them locally is disabled by default - as I understand it there is some elaborate mechanism to send the dumps to Microsoft, but that is not helpful for our purpose). To enable local saving of crash dumps on Windows Vista, 7, or later, download [[Media:SaveJVMCrashDumps.zip|this file]], extract the .reg file, and open it (administrator permission will be required), which will add the necessary settings to the Windows registry. (See [http://msdn.microsoft.com/en-us/library/windows/desktop/bb787181.aspx Microsoft's documentation] for details on this.)
+Windows crash dumps are disabled by default (to be precise, saving them locally is disabled by default; there is a mechanism to allow sending the dumps to Microsoft, but that is not helpful for our purpose). To '''enable''' local saving of crash dumps on '''Windows Vista, 7, or later''', download [[Media:SaveJVMCrashDumps.zip|this file]], extract the .reg file, and open it (administrator permission will be required), which will add the necessary settings to the Windows registry. (See [http://msdn.microsoft.com/en-us/library/windows/desktop/bb787181.aspx Microsoft's documentation] for details on this.)
 
 Following this setup, when java.exe or javaw.exe crashes, a crash dump should be saved at
 
@@ -28,6 +28,6 @@ where the location of <code>%LocalAppData%</code> can be checked by typing <code
 
 Note that crash dump files can get quite large (especially if the application is using a lot of memory).
 
-[[Media:StopSavingAllCrashDumps.zip|This file]] will disable the saving of all Windows crash dumps.
+[[Media:StopSavingAllCrashDumps.zip|This file]] will '''disable''' the saving of all Windows application crash dumps.
 
-If you are running Windows XP, the method described on [https://help.github.com/articles/getting-a-crash-dump this page] should work.
+If you are running '''Windows XP''', the method described on [https://help.github.com/articles/getting-a-crash-dump this page] should work.
