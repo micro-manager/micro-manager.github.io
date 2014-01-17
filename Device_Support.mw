@@ -27,6 +27,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
 * [[DSLRRemoteCamera]] - Canon DSLR cameras (Windows)
+* [[FLICamera]] - Finger Lakes Instrumentation Cameras
 * [[GigECamera]] - GigE Vision- and GenICam-compliant cameras
 * [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
 * [[Hamamatsu]] - Legacy adapter for Hamamatsu cameras (through DCAM library)
