@@ -95,6 +95,10 @@ It is best to leave these at their default values, as modifying them will just b
 
 '''Warning Level''': We prefer '''Level4'''. Choose '''<inherit from parent or project defaults>'''.
 
+==== C/C++ > Optimization ====
+
+'''Whole Program Optimization''': '''No''' is recommended. Turning this on can make it more difficult to interpret crash logs (hs_err logs) or crash dumps.
+
 ==== C/C++ > Preprocessor ====
 
 '''Preprocessor Definitions''': The necessary '''MODULE_EXPORTS''' macro is now provided by the <code>MMDeviceAdapter.props</code> property sheet, so no special settings are necessary for most device adapters.
