@@ -45,7 +45,7 @@ Just before the step of adding a reference to '''MMDevice-SharedRuntime''', you 
 # Select <code>MMDevice/MMDevice-SharedRuntime.vcxproj</code>.
 # When adding the reference, if MMDevice-SharedRuntime does not show up in the '''Add Reference''' list, cancel the adding, right-click on your device adapter project, and choose '''Unload Project''', followed by '''Reload Project'''. Then try again to add the reference.
 
-At some point (usually the first time you build or close Visual Studio), you will be prompted to save the solution file (<code>.sln</code>). Saving to the default location (next to the <code>.vcxproj</code> file) usually works well when developing a device adapter.
+At some point (usually the first time you build or close Visual Studio), you will be prompted to save the solution file (<code>.sln</code>). Saving to the default location (next to the <code>.vcxproj</code> file) usually works well when developing a device adapter. Note that the build products are placed in a <code>build</code> directory in the same directory as the solution file.
 
 = Visual Studio project properties for Micro-Manager device adapters =
 
