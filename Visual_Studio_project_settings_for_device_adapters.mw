@@ -101,7 +101,7 @@ It is best to leave these at their default values, as modifying them will just b
 
 ==== C/C++ > Code Generation ====
 
-'''Enable C++ Exceptions''': '''Yes (/EHsc)''' (the default) is recommended. Avoid turning on SEH Exceptions; see [http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx this page] for why.
+'''Enable C++ Exceptions''': '''Yes (/EHsc)''' (the default) is recommended. Do not turn on SEH Exceptions; see [http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx this page] for why.
 
 '''Runtime Library''': Use the DLL variants (the default). If you need to link against a third-party static library that uses the static (non-DLL) variant, you will need to choose the non-DLL variants here. Avoid this unless actually necessary, because there is a small limit (128) for the number of DLLs built against the static C Runtime that can be simultaneously loaded. Make sure to use the corresponding variant of MMDevice if making the switch (see above under '''Framework and References''').
 
