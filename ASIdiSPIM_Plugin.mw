@@ -21,9 +21,9 @@ The GUI remembers most of its settings from run to run.  In the case of settings
 
 Before running the GUI, the relevant devices must be present in the Micro-Manager hardware configuration.  
 
-For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.  You should assign the properties MultiCam-Physical Camera 1 and 2 to the two cameras, ideally using the special "System" config group with preset name "Startup".
+For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.  You should assign the properties MultiCam-Physical Camera 1 and 2 to the two cameras, ideally using the special "System" config group with preset name "Startup".  Furthermore, assign Core-Camera to MultiCam.
 
-There was a minor bug in the joystick wheel assignments of the first pair of axis on the micro-mirror card (e.g. A and B on an ABCD card) in firmware dated before 03-Jan-14.  Contact ASI for updated firmware.
+If your firmware is dated prior to 03-Jan-14 you may notice a minor bug in the joystick wheel assignments of the first pair of axis on the micro-mirror card (e.g. A and B on an ABCD card).  Contact ASI for updated firmware.
 
 === Devices ===
 
