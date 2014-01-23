@@ -74,7 +74,7 @@ Advanced note: If, for some reason, your device adapter needs to be built agains
 
 '''Use of MFC''', '''Use of ATL''': Device adapters in the official Micro-Manager repository do not make use of MFC or ATL, as it is not available with the free edition of Visual Studio.
 
-'''Character Set''': This should not affect most device adapter projects (unless Win32 API functions are used - something that should be avoided as much as possible), but setting it to '''Use Multi-Byte Character Set''' is likely to cause fewer surprises in the event that it affects the behavior of the code (because '''Use Unicode Character Set''' means to use wide character strings with the Win32 API).
+'''Character Set''': This should not affect most device adapter projects. For those device adapters that use the Windows Win32 API (discouraged unless strictly necessary), it will determine whether the Win32 functions operate on char strings ('''Use Multi-Byte Character Set''' = use ASCII and old-fashioned non-Unicode encodings) or wide char strings ('''Use Unicode Character Set''' = use UTF-16). If it is necessary to use Win32 API calls, it is encourage that the device adapter use the versions of the functions with a "A" or "W" suffix, so that build settings do not affect code behavior. Alternatively, the TCHAR mechanism can be used to keep the code neutral with respect to this setting, if care is taken when strings are converted to and from C or C++ strings (char* or std::string). We do not currently have any explicit support for non-ASCII strings.
 
 The options in this section cannot be set in common property sheets and must be set correctly in each project.
 
