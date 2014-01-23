@@ -165,6 +165,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Yokogawa]] - Yokogawa CSU22
 * Yokogawa [[CSUW1]] - Yokogawa CSUW1
 * Yokogawa [[CSUX]] - Yokogawa CSUX
+* [[XLight]] - CrestOptics X-Light spinning disc confocal system
 * The [http://www.goochandhousego.com/products/instrumentation/spectral-imaging-synthesis/hsi-300-hyperspectral-imaging-system/ HSi-300 Hyperspectral Imager] can be controlled with Micro-Manager (not yet included in the distribution, contact Gouch & Housego for details)
 
 {{Devices_Sidebar}}
