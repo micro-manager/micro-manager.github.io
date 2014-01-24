@@ -35,6 +35,8 @@ For the piezo objective movers, the Tiger controller has hardware connections (i
 
 For single-sided (iSPIM), you can leave "Path B" entries blank.
 
+A Multi-Camera device should have been created if you are using two cameras; Micro-manager uses it to overlay images from both cameras (Camera setting of "Dual" in Setup tabs).  Select the Multi-Camera device for the setting labeled "Multi Camera" if you want to use this feature.
+
 === SPIM Params ===
 
 Here you set the parameters for the SPIM acquisition.  This is somewhat analogous to setting up a multi-D acquisition in Micro-manager, except that the positions of the imaged volume are not specified here.
