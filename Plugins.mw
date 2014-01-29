@@ -11,6 +11,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Intelligent Acquisition]]
 * [[DLLAutoReloader]]
 * [[Projector]]
+* [[ASIdiSPIM Plugin]]
 
 In addition, plugins are available from third parties:
 
