@@ -1,18 +1,20 @@
 Micro-Manager offers a number of built-in Plugins for special applications in microscopy:
-* [[Slide Explorer Plugin|Slide Explorer]]
-* [[Pixel Calibrator Plugin|Pixel Calibrator]]
-* [[Tracker Plugin|Tracker]]
-* [[Multi Camera]]
-* [[Live Replay]]
-* [[MultiChannelShading]]
-* [[SplitView]]
-* [[Stage Control]]
-* [[Localization Microscopy]]
-* [[Intelligent Acquisition]]
+
+* [[ASIdiSPIM Plugin]]
 * [[DLLAutoReloader]]
 * [[HCS Site Generator]] 
+* [[Intelligent Acquisition]]
+* [[Image Flipper]]
+* [[Localization Microscopy]]
+* [[Pixel Calibrator Plugin|Pixel Calibrator]]
+* [[Live Replay]]
+* [[Multi-Andor Control]]
+* [[MultiChannelShading]]
 * [[Projector]]
-* [[ASIdiSPIM Plugin]]
+* [[Slide Explorer Plugin|Slide Explorer]]
+* [[SplitView]]
+* [[Stage Control]]
+* [[Tracker Plugin|Tracker]]
 
 In addition, plugins are available from third parties:
 
