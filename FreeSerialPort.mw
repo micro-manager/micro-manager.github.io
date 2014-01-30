@@ -1,0 +1,23 @@
+If you want to use just a serial port, use the FreeSerialPort device.  You will be asked to specify which serial port to use, as well as the baud rate and other serial port settings.  You can then use the following build-in Micro-Manager commands to communicate with the device:
+
+* (String) getSerialPortAnswer(String deviceLabel, String term)
+** Continuously read from the serial port until the terminating sequence is encountered.
+* (CharVector) readFromSerialPort(String deviceLabel)
+** Reads the contents of the Rx buffer.
+* setSerialPortCommand(String deviceLabel, String command, String term) 
+* writeToSerialPort(String deviceLabel, CharVector data)
+** Sends an array of characters to the serial port and returns immediately.
+
+In the Beanshell scripting environment, these functions are accessible using the "mmc" object.  Ed Burgin send the following example to the MM mailing list:
+
+<pre>
+gui.clearMessageWindow();
+update();
+port = "COM5"; 
+command = "M114"; //gcode example reports current XYZ coordinates
+commandTerminator = "\r"; 
+answerTerminator = "ok"; //reprap gcode terminates with this
+mmc.setSerialPortCommand(port, command, commandTerminator); 
+answer = mmc.getSerialPortAnswer(port, answerTerminator); 
+print(answer);
+</pre>
