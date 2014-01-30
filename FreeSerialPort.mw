@@ -21,3 +21,7 @@ mmc.setSerialPortCommand(port, command, commandTerminator);
 answer = mmc.getSerialPortAnswer(port, answerTerminator); 
 print(answer);
 </pre>
+
+{{Listserv_Search|FreeSerialPort}}
+
+{{Devices_Sidebar}}
