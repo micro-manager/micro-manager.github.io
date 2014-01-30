@@ -10,13 +10,12 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Localization Microscopy]]
 * [[Intelligent Acquisition]]
 * [[DLLAutoReloader]]
+* [[HCS Site Generator]] 
 * [[Projector]]
 * [[ASIdiSPIM Plugin]]
 
 In addition, plugins are available from third parties:
 
-* [[Photometrics Camera Control Plugin|Photometrics Camera Control]]
-* [[HCS Plugin|High Content Screening Plugin from 100x Imaging]]
 * [http://big.umassmed.edu Biomedical Imaging Group]
 ** [[Well Plate Plugin|Multiwell Plate Class]]
 ** [[3D_Deconvolution|3D Deconvolution]]
