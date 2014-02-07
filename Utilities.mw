@@ -1,32 +1,40 @@
-== Utilities adapter ==
-
-<table>
-<tr><td>'''Summary:'''</td><td>Various abstract devices </td></tr>
-<tr><td>'''Author:'''</td><td>Nico Stuurman</td></tr>
-<tr><td>'''License:'''</td><td>LGPL</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Linux, Mac, and Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>Multi-Shutter, Multi-Camera, DA-Shutter, DA-Z-Stage, DA--XY-Stage, Autofocus-Stage, State-Device-Shutter</td></tr>
-</table>
+{|
+!Summary:
+|Various abstract devices
+|-
+!Author:
+|Nico Stuurman
+|-
+!License:
+|LGPL
+|-
+!Platforms:
+|Linux, Mac, and Windows
+|- valign="top"
+!Devices:
+|Multi-Shutter, Multi-Camera<br/>DA-Shutter, DA-Z-Stage, DA--XY-Stage<br/>Autofocus-Stage<br/>State-Device-Shutter
+|}
+---
 
 These abstract devices can be used to change the function of a real device or to combine multiple real devices into a single, logical device.  
 
-'''Multi-Shutter'''.
+== Multi-Shutter ==
 Combines multiple shutters into a single logical shutter, opens and closes multiple shutters simultaneously.  You will need to set the "Physical Shutter: properties (up to 5 shutters can be set).  It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file.
 
-'''Multi-Camera'''. 
+== Multi-Camera ==
 Combines multiple cameras into a single logical camera.  Snapping an image with a multi-camera device will result in a single multi-channel image, where each image is taken with one camera.  The cameras need to be selected using the "Physical Camera" property. It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file. The cameras need to have the same width, height and pixeltype, or strange things may happen. No facilities are provided (yet) to align the acquired images. Not all cameras are fully supported (at this point in time, the demo and Andor cameras work with the adapter.
 
-'''DA-Shutter'''.
+== DA-Shutter ==
 Uses a DA (digital to analogue) device as a shutter.  Use the property "DA Device" to determine which DA device should act as the shutter.  Closing the DA Shutter will result in 0V on the DA output, opening the DA shutter will result in the voltage set in the DA device itself to appear on the output.  For this device to work correctly, some code needs to be implemented in the DA device adapter, which appears to be done for all DA devices currently supported by Micro-Manager.
 
-'''DA-Z-Stage'''. 
+== DA-Z-Stage ==
 Uses a DA device to set the position of a Z-stage that is connected to the DA device.  This is especially useful for several piezo stages whose position can be controlled with a voltage.  You will need to set pre-initialization properties determining the minimum and maximum voltage to be applied on the DA and the Z positions these correspond to.  The DA device itself should be set after initialization and can best be added to the System Startup group.
 
-'''DA-XY-Stage'''.
+== DA-XY-Stage ==
 Similar to the DA-Z-Stage adapter, but now sets to DA devices simultanuously, one corresponding to the X-stage, the other to the Y-stage.
 
-'''Autofocus Stage'''.
+== Autofocus Stage ==
 Can be used to operate the 'offset' function of a hardware autofocus device (such as the Nikon Perfect Focus and Zeiss Definite Focus) as a Z-drive. 
 
-'''State-Device-Shutter'''.
+== State-Device-Shutter ==
 To be used to convert a state device (such as a filter wheel) into a shutter.  To use it you will need to set the "State Device Shutter" property to the desired state device.  The state device should have a property that sets the "closed" position.
