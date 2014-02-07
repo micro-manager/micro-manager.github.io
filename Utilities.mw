@@ -22,7 +22,16 @@ These abstract devices can be used to change the function of a real device or to
 Combines multiple shutters into a single logical shutter, opens and closes multiple shutters simultaneously.  You will need to set the "Physical Shutter: properties (up to 5 shutters can be set).  It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file.
 
 == Multi-Camera ==
-Combines multiple cameras into a single logical camera.  Snapping an image with a multi-camera device will result in a single multi-channel image, where each image is taken with one camera.  The cameras need to be selected using the "Physical Camera" property. It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file. The cameras need to have the same width, height and pixeltype, or strange things may happen. No facilities are provided (yet) to align the acquired images. Not all cameras are fully supported (at this point in time, the demo and Andor cameras work with the adapter.
+Combines multiple cameras into a single logical camera.  Snapping an image with a multi-camera device will result in a single multi-channel image, where each image is taken with one camera.  Not all cameras are fully supported (at this point in time, the demo and Andor cameras work with the adapter.
+
+'''Setup'''
+# The cameras must have the same width, height and pixeltype (or strange things may happen).
+# For multiple cameras using the same DeviceAdapter, add that DeviceAdapter as many times as there are cameras.
+#:{{Note|There is a bug with renaming AndorSDK3 cameras, so use the default camera labels of "AndorSDK3", "AndorSDK3-1", etc.}}
+# Assign the Multi-Camera "Physical Camera" properties to your cameras.  Best practice is to also add these "Physical Camera" properties in the "System" group's "Startup" preset, to set them automatically upon loading the configuration file.
+# Synchronizing cameras requires wiring the exposure digital output of one camera (namely, the "Master" camera) to the trigger input of other cameras (the "Slave" camera(s)).
+#:{{Note|The "Master" must be the last numbered "Physical Camera", since several frames can be acquired by one camera before the next camera starts acquiring. e.g. Set "Physical Camera 1" to Slave, and "Physical Camera 2" to Master.}}
+# To rotate or mirror images, launch the [[Image Flipper|Image Flipper plugin]].  The plugin only works while it is open.  Also after restarting Micro-Manager, to apply mirror and flip settings, one has to click through the top listbox of the plugin and select each camera that has flip and/or rotate settings enabled to load the settings.}}
 
 == DA-Shutter ==
 Uses a DA (digital to analogue) device as a shutter.  Use the property "DA Device" to determine which DA device should act as the shutter.  Closing the DA Shutter will result in 0V on the DA output, opening the DA shutter will result in the voltage set in the DA device itself to appear on the output.  For this device to work correctly, some code needs to be implemented in the DA device adapter, which appears to be done for all DA devices currently supported by Micro-Manager.
