@@ -14,7 +14,7 @@
 !Devices:
 |Multi-Shutter, Multi-Camera<br/>DA-Shutter, DA-Z-Stage, DA--XY-Stage<br/>Autofocus-Stage<br/>State-Device-Shutter
 |}
----
+----
 
 These abstract devices can be used to change the function of a real device or to combine multiple real devices into a single, logical device.  
 
