@@ -47,3 +47,7 @@ Can be used to operate the 'offset' function of a hardware autofocus device (suc
 
 == State-Device-Shutter ==
 To be used to convert a state device (such as a filter wheel) into a shutter.  To use it you will need to set the "State Device Shutter" property to the desired state device.  The state device should have a property that sets the "closed" position.
+
+{{Listserv_Search|Utilities}}
+
+{{Devices_Sidebar}}
