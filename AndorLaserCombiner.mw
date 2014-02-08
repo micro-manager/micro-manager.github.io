@@ -24,41 +24,9 @@
 
 
 == Installation ==
-{{Note|Skip this section if you are using µManager nightly build 1.4.16_20131025 or later.  Installation has been simplified by including all required libraries in the µManager installer.}}
+Not needed for µManager 1.4.16 onward since it bundles all required libraries.  For older versions (than 1.4.16_20131025) see [[#Library installation for MM versions older than 1.4.16|library installation]] in the appendix.
 
-Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.
-
-* Download the library files to match the 32- or 64-bit version of µManager you have installed:
-<blockquote>
-{| class="wikitable"
-!
-! 32-bit
-! 64-bit
-|-
-! Andor Library
-| [[:File:libalc_x86.tar.gz|libalc_x86.tar.gz]]
-| [[:File:libalc_x64.tar.gz|libalc_x64.tar.gz]]
-|}</blockquote>
-* (Only required for µManager versions before 1.4.15) Download install Visual Studio to match the 32- or 64-bit version of µManager you have installed:
-<blockquote>
-{| class="wikitable"
-!
-! 32-bit
-! 64-bit
-|-
-! Visual C++ 2008 redist
-| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x86.exe]
-| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x64.exe]
-|}</blockquote>
-* Unzip the <code>Andor library</code> to a new folder (you may need to download [http://www.7-zip.org/ 7-zip]):
-          C:\ProgramData\Andor_ALC_library\
-<!-- Setting up the PATH is not super easy and should be moved to its own page or template for consistency -->
-* Add the above folder to your Windows <code>PATH</code> variable, namely:
-** Right-click the My Computer icon on the desktop or start menu
-** Click <code>Properties</code> and on the <code>Advanced</code> tab choose <code>Environment</code> variables.
-** On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\ProgramData\Andor_ALC_library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
-** If your OS is older than Windows 7, restart your computer for the new <code>PATH</code> to take effect.
-* That's it!  If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
+If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
 == Device Configuration ==
 * Add the <code>AndorLaserCombiner</code> main device to your hardware configuration.
@@ -107,6 +75,40 @@ For feature requests or bug reports, please liaison with µManager developers on
 
 
 == Appendix ==
+=== Library installation for MM versions older than 1.4.16 ===
+Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.
+
+* Download the library files to match the 32- or 64-bit version of µManager you have installed:
+<blockquote>
+{| class="wikitable"
+!
+! 32-bit
+! 64-bit
+|-
+! Andor Library
+| [[:File:libalc_x86.tar.gz|libalc_x86.tar.gz]]
+| [[:File:libalc_x64.tar.gz|libalc_x64.tar.gz]]
+|}</blockquote>
+* (Only required for µManager versions before 1.4.15) Download install Visual Studio to match the 32- or 64-bit version of µManager you have installed:
+<blockquote>
+{| class="wikitable"
+!
+! 32-bit
+! 64-bit
+|-
+! Visual C++ 2008 redist
+| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x86.exe]
+| [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x64.exe]
+|}</blockquote>
+* Unzip the <code>Andor library</code> to a new folder (you may need to download [http://www.7-zip.org/ 7-zip]):
+          C:\ProgramData\Andor_ALC_library\
+<!-- Setting up the PATH is not super easy and should be moved to its own page or template for consistency -->
+* Add the above folder to your Windows <code>PATH</code> variable, namely:
+** Right-click the My Computer icon on the desktop or start menu
+** Click <code>Properties</code> and on the <code>Advanced</code> tab choose <code>Environment</code> variables.
+** On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\ProgramData\Andor_ALC_library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
+** If your OS is older than Windows 7, restart your computer for the new <code>PATH</code> to take effect.
+
 === Setup the ALC_SDK ===
 {{Note|Only ALC_SDK version 2.0 is compatible with the DeviceAdapter.  The DeviceAdapter needs to be updated to work with later versions of the ALC_SDK.}}
 * Support for the AndorLaserCombiner was introduced in µManager 1.3.47
