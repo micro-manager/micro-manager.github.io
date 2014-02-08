@@ -24,7 +24,7 @@
 
 
 == Installation ==
-Not needed for µManager 1.4.16 onward since it bundles all required libraries.  For older versions (than 1.4.16_20131025) see [[#Library installation for MM versions older than 1.4.16|library installation]] in the appendix.
+µManager 1.4.16 onward bundles all required libraries.  For versions than 1.4.16_20131025 follow the [[#Library installation for MM versions older than 1.4.16|library installation in the appendix]].
 
 If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
