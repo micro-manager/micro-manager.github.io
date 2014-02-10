@@ -20,4 +20,4 @@ Requires drivers from IDS (version 4.30 or higher), which can be downloaded from
 * For color, currently only the modes "BGRA8" and "RGBA8" are supported.
 * The "Frame rate" property will not necessarily affect the real frame rate in the live-mode for every camera model. It does, however, determine the maximal exposure time.
 * If several cameras are connected, currently only the first camera in the list will be addressed.
-* With Linux and OpenJDK, using the color modes may cause problems (monochrome modes should work).
+* With Linux and OpenJDK, using the color modes may cause problems (monochrome modes work), with Sun/Oracle JDK all modes work.
