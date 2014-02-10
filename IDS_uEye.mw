@@ -4,11 +4,20 @@
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Linux, Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>IDS uEye USB cameras, including Thorlabs DCUxxxx USB and some Edmund EO-xxxxM USB with IDS hardware</td></tr>
+<tr><td>'''Adapter Version:'''</td><td>1.2</td></tr>
 <tr><td>'''Available Since Version:'''</td><td>1.4.15</td></tr>
 <tr><td>'''Configuration file:'''</td><td>[[Media:MMConfig_uEye.cfg]]</td></tr>
 
 </table>
 
-Requires drivers from IDS, which can be downloaded from http://en.ids-imaging.com/download-ueye.html.
+Requires drivers from IDS (version 4.30 or higher), which can be downloaded from the [http://en.ids-imaging.com/download-ueye.html IDS site].
 
-Notes: current version supports monochrome cameras only. 64 bit Windows build is not yet completely tested.
+
+=== Features ===
+* Supports monochrome and color cameras. The available modes/bit depths can be selected in the properties browser ("Pixel Type").
+
+=== Notes ===
+* For color, currently only the modes "BGRA8" and "RGBA8" are supported.
+* The "Frame rate" property will not necessarily affect the real frame rate in the live-mode for every camera model. It does, however, determine the maximal exposure time.
+* If several cameras are connected, currently only the first camera in the list will be addressed.
+* With Linux and OpenJDK, using the color modes may cause problems (monochrome modes should work).
