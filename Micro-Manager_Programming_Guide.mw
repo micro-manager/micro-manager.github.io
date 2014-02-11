@@ -14,6 +14,8 @@ Before diving into Programming within Micro-Manager, it is useful to review the 
 
 Micro-Manager is in principle both platform independent and language neutral. But, in practice <span>''MMCore''</span> component is intended to run only on Windows, Mac OS X and Linux, and to be used from C++, Java, Matlab and Python programs. Setting up the environment is somewhat different for each language/OS combination.<br />
 
+See also: [[Search Paths]]
+
 === Java ===
 
 <span>''MMCore''</span> Java API is contained in the <span>'''MMCoreJ.jar'''</span>. Any Java program using <span>''MMCore''</span> API must have <span>'''MMCoreJ.jar'''</span> in its class path. When CMMCore Java object is first created in the calling program it will automatically attempt to load native library MMCoreJ_wrap. This library must be visible to the Java run-time. Default locations and exact names of libraries are platform dependent.<br /><br /> On Windows, native library file is MMCoreJ_wrap.dll and it must reside either in the system path or in the current working directory of the program in order to be detected by the Java run-time.<br />
