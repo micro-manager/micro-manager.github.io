@@ -8,7 +8,7 @@ There are two sections in this page: how device adapters are loaded by the Core,
 
 Each of the two sections is divided into two parts: the Old Mechanism and the New Mechanism. The New Mechanism is available since SVN r12743, the nightly build of 20140210, or release 1.4.17. It has not been clarified when the Old Mechanism took its current shape. The Old Mechanism still works (except for a few corner cases that were essentially bugs), but its use in new code is discouraged.
 
-'''A quick summary''': If you are using a version of MM after the New Mechanism was added, and are using MMCoreJ, simply set the Java system property "mmcorej.library.path" to the path to the directory containing MMCoreJ_wrap and the device adapters. This can be done with the command-line argument <code>-Dmmcorej.library.path=/path/to/libraries</code>, or by calling <code>System.setProperty("mmcorej.library.path", "/path/to/libraries");</code>.
+'''A quick summary''': If you are using a version of MM after the New Mechanism was added, and are using MMCoreJ, simply set the Java system property<code>mmcorej.library.path</code> to the path to the directory containing MMCoreJ_wrap and the device adapters. This can be done with the command-line argument <code>-Dmmcorej.library.path=/path/to/libraries</code>, or by calling <code>System.setProperty("mmcorej.library.path", "/path/to/libraries");</code>.
 
 === Device Adapter Search Paths ===
 
