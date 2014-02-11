@@ -33,7 +33,7 @@ Java code that was written to work with the Old Mechanism should still work for 
 
 ==== The New Mechanism ====
 
-In the New Mechanism, the methods <code>CMMCore::addSearchPath()</code> and <code>CMMCore::getDeviceLibraries()</code> are deprecated. Instead, there are new ''instance'' methods: <code>CMMCore::setDeviceAdapterSearchPaths()</code>, <code>CMMCore::getDeviceAdapterSearchPaths()</code>, and <code>CMMCore::getDeviceAdapterNames()</code>.
+In the New Mechanism, the static methods <code>CMMCore::addSearchPath()</code> and <code>CMMCore::getDeviceLibraries()</code> are deprecated. Instead, there are new ''instance'' methods: <code>CMMCore::setDeviceAdapterSearchPaths()</code>, <code>CMMCore::getDeviceAdapterSearchPaths()</code>, and <code>CMMCore::getDeviceAdapterNames()</code>.
 
 To ensure consistent behavior, the Old (deprecated) and New methods should not be mixed within the same program.
 
