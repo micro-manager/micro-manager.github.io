@@ -70,3 +70,5 @@ Otherwise, for backward compatibility, the following paths are searched:
 If it is not found in any of the above directories, it is loaded from the system default native library paths, usually given by the Java system property <code>java.library.path</code>.
 
 (The "Linux only" hard-coded path may be made configurable in the future, so that it can be enabled or disabled at build time on both OS X and Linux.)
+
+{{Template:Programming_Sidebar}}
