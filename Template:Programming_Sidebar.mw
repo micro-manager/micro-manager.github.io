@@ -9,6 +9,7 @@
 * [[Using_the_Micro-Manager_python_library|Python]]
 * [[Matlab]]
 * [[Micro-Manager File Formats | File Formats]]
+* [[Search Paths]]
 * [[Building Micro-Manager Device Adapters|Writing Device Adapters]]
 * [[Building and debugging Micro-Manager source code|Building and Debugging Micro-Manager]]
 * [[Multi-Dimensional_Acquisition_Programming|Multi-D Acq. Programming]]
