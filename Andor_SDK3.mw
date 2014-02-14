@@ -74,7 +74,7 @@ Depending on the amount of RAM on the PC or processing performance, this may nee
 
 === Zyla support in Micro-Manager ===
 
-Please read the section on [[High Speed Acquisition in Micro-Manager]]. The minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but 1.4.15 or later is strongly recommended.
+Please read the section on [[High Speed Acquisition in Micro-Manager]]. The minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but 1.4.16 or later is strongly recommended.
 Consider trying the latest nightly build from [http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ here.]
 
 === DeviceCreate function failed ===
