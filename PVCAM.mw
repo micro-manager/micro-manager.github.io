@@ -43,6 +43,17 @@ where you should replace 'username' with your username.
 
 --[[User:Nico|Nico]] 11:33, 31 August 2007 (PDT)
 
+== Notable changes ==
+
+=== Feb 14, 2014 ===
+[Windows only] Added support for the new OptiMos camera. New property "ExposeOutMode" has been added. This property controls the expose out signal of the sCMOS sensor. Please see the OptiMos user manual for more details. This feature is supported since '''PVCAM 3.0.1'''.
+
+=== Sep 5, 2013 ===
+[Windows only] Added support for FRAME_INFO metadata and callback acquisition. The FRAME_INFO provides precise frame time-stamps with supported cameras. Users are kindly requested to upgrade PVCAM to version '''2.9.11'''.
+
+=== Jun 20, 2013 === 
+The adapter now supports micro-second exposure resolution. Exposure values shorter than 60ms are automatically treated in micro-second resolution. From now users can use exposure values like 50.5, 2.8, 0.09, etc.
+
 {{Listserv_Search|PVCAM}}
 
 {{Devices_Sidebar}}
