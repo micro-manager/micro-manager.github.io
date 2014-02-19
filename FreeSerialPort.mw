@@ -10,7 +10,7 @@ If you want to use just a serial port, use the FreeSerialPort device.  You will 
 
 In the Beanshell scripting environment, these functions are accessible using the "mmc" object.  Ed Burgin send the following example to the MM mailing list:
 
-<pre>
+<code>
 gui.clearMessageWindow();
 update();
 port = "COM5"; 
@@ -20,11 +20,11 @@ answerTerminator = "ok"; //reprap gcode terminates with this
 mmc.setSerialPortCommand(port, command, commandTerminator); 
 answer = mmc.getSerialPortAnswer(port, answerTerminator); 
 print(answer);
-</pre>
+</code>
 
 Here is an example of how to use 'readFromSerialPort' & 'writeToSerialPort':
 
-<pre>
+<code>
 
 import mmcorej.CharVector; 
 gui.clearMessageWindow();
@@ -65,7 +65,7 @@ gui.sleep(200); //in milliseconds
 
 readBuffer();
 
-</pre>
+</code>
 
 {{Listserv_Search|FreeSerialPort}}
 
