@@ -23,7 +23,9 @@ print(answer);
 </pre>
 
 Here is an example of how to use 'readFromSerialPort' & 'writeToSerialPort':
+
 <pre>
+
 import mmcorej.CharVector; 
 gui.clearMessageWindow();
 commandTerminator = "\r"; 
@@ -62,7 +64,9 @@ print("message is: " + message.capacity());
 gui.sleep(200); //in milliseconds
 
 readBuffer();
+
 </pre>
+
 {{Listserv_Search|FreeSerialPort}}
 
 {{Devices_Sidebar}}
