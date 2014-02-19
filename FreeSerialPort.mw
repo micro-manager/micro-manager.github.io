@@ -22,6 +22,22 @@ answer = mmc.getSerialPortAnswer(port, answerTerminator);
 print(answer);
 </pre>
 
+Here is an example of how to use 'readFromSerialPort':
+<pre>
+
+import mmcorej.CharVector; 
+
+gui.clearMessageWindow();
+
+port = "COM11";
+answer = mmc.readFromSerialPort(port);
+print("REPLY IS: " + answer);
+print("capacity is :" + answer.capacity());
+for(i=0; i<answer.capacity(); i++){
+print(answer.get(i));
+}
+
+</pre>
 {{Listserv_Search|FreeSerialPort}}
 
 {{Devices_Sidebar}}
