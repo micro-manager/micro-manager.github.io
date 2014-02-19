@@ -22,21 +22,46 @@ answer = mmc.getSerialPortAnswer(port, answerTerminator);
 print(answer);
 </pre>
 
-Here is an example of how to use 'readFromSerialPort':
+Here is an example of how to use 'readFromSerialPort' & 'writeToSerialPort':
 <pre>
-
 import mmcorej.CharVector; 
-
 gui.clearMessageWindow();
-
+commandTerminator = "\r"; 
+answerTerminator = "ok"; 
 port = "COM11";
+update();
+
+readBuffer() {
 answer = mmc.readFromSerialPort(port);
 print("REPLY IS: " + answer);
 print("capacity is :" + answer.capacity());
 for(i=0; i<answer.capacity(); i++){
 print(answer.get(i));
 }
+}//end readBuffer
 
+readBuffer();
+
+Thread.sleep(200); //in milliseconds
+
+//////////////////////////////////////////message///////////////////////
+//command = "M114";  //G21: Set Units to Millimeters Example: G21 Units from now on are in millimeters. (This is the RepRap default.)
+//mmc.setSerialPortCommand(port, command, commandTerminator); 
+
+CharVector message = new CharVector(); 
+message.add('M'); 
+message.add('1'); 
+message.add('1'); 
+message.add('4'); 
+message.add('\r'); 
+
+mmc.writeToSerialPort(port, message);
+print("message is: " + message.capacity());
+
+///////////////////////////////////////////////////reply//////////////
+gui.sleep(200); //in milliseconds
+
+readBuffer();
 </pre>
 {{Listserv_Search|FreeSerialPort}}
 
