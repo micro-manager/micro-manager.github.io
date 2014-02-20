@@ -34,13 +34,18 @@ port = "COM11";
 update();
 
 readBuffer() {
+str1 = "BLANK";
 answer = mmc.readFromSerialPort(port);
-print("REPLY IS: " + answer);
-print("capacity is :" + answer.capacity());
+if (answer.capacity() > 0) {
 for(i=0; i<answer.capacity(); i++){
-print(answer.get(i));
-}
-}//end readBuffer
+if(str1 == "BLANK") {
+str1 = "" + answer.get(i);}   // you have to add the "" otherwise adds decimal value
+else {
+str1 = "" + str1 +(char)answer.get(i);}
+}// end loop
+print(str1);
+}////////end if statement
+}///////////////////////////////////////end readBuffer
 
 readBuffer();
 
@@ -58,7 +63,7 @@ message.add('4');
 message.add('\r'); 
 
 mmc.writeToSerialPort(port, message);
-print("message is: " + message.capacity());
+print("message to COM is: " + message.capacity());
 
 ///////////////////////////////////////////////////reply//////////////
 gui.sleep(200); //in milliseconds
