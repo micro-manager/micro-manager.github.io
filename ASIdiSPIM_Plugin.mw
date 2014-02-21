@@ -35,9 +35,12 @@ For the piezo objective movers, the Tiger controller has hardware connections (i
 
 For single-sided (iSPIM), you can leave "Path B" entries blank.
 
-Camera support for the SPIM cameras has to be added to the plugin on a case-by case basis.  Currently the supported cameras are Hamamatsu Flash 4 (other Hamamatsu cameras may work), with planned support for the PCO Edge.  Please contact the plugin authors to add other cameras.  The reason: the SPIM cameras are TTL-triggered during acquisition (trigged from the Tiger controller) but triggered by Micro-manager for alignment purposes.  Thus, the plugin has to know the correct way to switch the cameras between internal trigger mode and external trigger mode.  The relevant properties for switching trigger modes need to be hard-coded into the plugin.
+Camera support for the SPIM cameras must be added to the plugin on a case-by case basis.  Currently the supported cameras are:
+* Hamamatsu Flash 4 (use the HamamatsuHam device adapter)
+* PCO Edge
+Please contact the plugin authors to add other cameras.  The reason: the SPIM cameras are TTL-triggered during SPIM acquisition but triggered by Micro-manager during alignment.  Thus, the plugin has to know how to switch the cameras between internal trigger mode and external trigger mode, and thus the relevant properties need to be hard-coded into the plugin.
 
-A Multi-Camera device should have been created if you are using two cameras; Micro-manager uses it to overlay images from both cameras (Camera setting of "Dual" in Setup tabs).  Select the Multi-Camera device for the setting labeled "Multi Camera" if you want to use this feature.
+A Multi-Camera device should be created if you are using two cameras; Micro-manager uses it to overlay images from both cameras (Camera setting of "Dual" in Setup tabs).  Select the Multi-Camera device for the setting labeled "Multi Camera" if you want to use this feature.  Follow the instructions at [[Utilities#Multi-Camera]], including using the System/Startup configuration to assign physical cameras automatically.
 
 === SPIM Params ===
 
