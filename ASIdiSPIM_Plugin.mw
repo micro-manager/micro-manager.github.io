@@ -54,6 +54,10 @@ Here you select which camera to use for acquisition, likely the MultiCamera inst
 
 This tab is used for alignment and to specify the imaged volume.  Each tab has an independent set of joystick controls which are activated when the tab is selected.
 
+There is a set of beam controls.  The settings on this panel will be automatically set on changing to this tab 
+
+Finally, there is a camera control.  Unless the "No change" option is selected, the camera will automatically be set to the specified camera when the tab is selected.
+
 === Navigation ===
 
 Here you can view the current positions.  Another set of independent joystick controls is provided.
