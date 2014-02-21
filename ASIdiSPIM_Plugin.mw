@@ -44,9 +44,11 @@ A Multi-Camera device should be created if you are using two cameras; Micro-mana
 
 === SPIM Params ===
 
-Here you set the parameters for the SPIM acquisition.  This is somewhat analogous to setting up a multi-D acquisition in Micro-manager, except that the positions of the imaged volume are not specified here.
+Here you set the parameters for the SPIM acquisition and initiate acquisition.  This panel is somewhat analogous to the multi-D acquisition window in Micro-manager, except that the positions of the imaged volume are not specified here.
 
-Also on this tab you select the SPIM stack mode (currently only one, piezo stacks) and start the SPIM data acquisition.
+In the future you will select the SPIM stack mode here, but currently only one mode is supported by firmware (piezo stacks).
+
+Here you select which camera to use for acquisition, likely the MultiCamera instance for diSPIM.
 
 === Setup Path A/B ===
 
