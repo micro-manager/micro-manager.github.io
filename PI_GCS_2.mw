@@ -92,6 +92,7 @@ To some controllers a joystick can be connected to control stage motions. When t
 [[File:PI_GCS2_PropertyGroupJoystickConfig.png]]
 
 With presets defined a dropdown box can be created which allows activating (ON) / deactivating (OFF) the joystick with a simple action by the user:
+
 [[File:PI_GCS_2_JoystickWithPreset.png]]
 
 To use a joystick that is not activated in the standard configuration of the controller, please use the “JAX” command to reconfigure the joystick according to the desired values and repeat the above described steps. Some controllers do not store this configuration to non-volatile memory. Here a custom startup controller macro can send the necessary JAX commands on each controller start.
