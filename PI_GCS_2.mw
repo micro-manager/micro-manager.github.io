@@ -93,3 +93,9 @@ To some controllers a joystick can be connected to control stage motions. When t
 
 With presets defined a dropdown box can be created which allows activating (ON) / deactivating (OFF) the joystick with a simple action by the user:
 [[File:PI_GCS_2_JoystickWithPreset.png]]
+
+To use a joystick that is not activated in the standard configuration of the controller, please use the “JAX” command to reconfigure the joystick according to the desired values and repeat the above described steps. Some controllers do not store this configuration to non-volatile memory. Here a custom startup controller macro can send the necessary JAX commands on each controller start.
+
+'''For example: C-867.262 controller with USB joystick:'''
+To enable USB controller joystick, the joystick has to be reconfigured using the “JAX” command.  The USB joystick is identified as number “3”. Use “JAX 3 1 1” and “JAX 3 2 2” to control stage axis 1 with joystick 3 axis 1 and stage axis 2 with joystick 3 axis 2. Since all changes will be lost when rebooting the controller, this procedure can be automated using an auto start macro in PIMikroMove:
+[[File:PIMikroMove_Joystick_Startup_Makro.jpg]]
