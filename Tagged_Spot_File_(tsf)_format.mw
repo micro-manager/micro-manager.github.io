@@ -48,7 +48,7 @@ ar cru buildcpp/libTSFPProto.a buildcpp/TSFProto.o /usr/local/lib/libprotobuf.a<
 
 Alternatively, you can download and install the source code that I build.  It resides in a subversion repository at: [https://valelab.ucsf.edu/svn/valelabtools/TSFProto/].  The Java source code is in directory “build”, the C++ source code in directory “buildcpp”.
 
-If you code in C++, you can safe a lot of time by making use of the class TSFUtils, which is part of the source code of the example application [https://valelab.ucsf.edu/svn/valelabtools/TSFProto/tsfutil tsftrans].  The example comman line application tsftrans can read and write tsf files in both binary and text formats and is an easy tool to convert between the two.
+If you code in C++, you can save a lot of time by making use of the class TSFUtils, which is part of the source code of the example application [https://valelab.ucsf.edu/svn/valelabtools/TSFProto/tsfutil tsftrans].  The example command line application tsftrans can read and write tsf files in both binary and text formats and is an easy tool to convert between the two.
 
 The following (pseudo Java) code shows how you can read in a file in TSF format:
 
