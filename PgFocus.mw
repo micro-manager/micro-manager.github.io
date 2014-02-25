@@ -1,289 +1,61 @@
 
-= Updated Wiki located at [http://big.umassmed.edu/wiki/index.php/PgFocus BIG] =
+= Complete description can be found at [http://big.umassmed.edu/wiki/index.php/PgFocus BIG] =
 
 == Description ==
 
-Since pgFocus was just released, documentation and the design is rapidly changing. 
-
 pgFocus is an open source and open hardware, for noncommercial use, focus stabilization device developed by Karl Bellvé at the [http://big.umassmed.edu Biomedical Imaging Group] ([http://www.umassmed.edu/pmm/index.aspx Progam in Molecular Medicine], [http://www.umassmed.edu/ University of Massachusetts Medical School]).
 
-The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good! (inside the industry joke)
+The pg in pgFocus is short for "Pretty Good". pgFocus isn't "Perfect", or "Definite" but it is pretty good! 
 
 pgFocus monitors focus changes through the positional changes of a reflected laser beam. A significant feature of pgFocus is it acts as a "man-in-the-middle." It is designed to pass through faster high fidelity signals meant for a piezo Z controller while adding a slower focus control signal. This happens in the analog realm, which avoids sampling artifacts introduced by digitizing the original signal. This design also reduces the cost of pgFocus.
 
-== Hardware ==
+=== Installation ===
 
-[[File:Focus_PCB_small.jpg|frame|Figure: pgFocus PCB]]
-pgFocus uses the same [http://www.atmel.com/devices/ATMEGA32U4.aspx Atmel ATMEGA 32U4] as seen in the [http://arduino.cc/en/Main/arduinoBoardLeonardo Arduino Leonardo]. 
+Serial Settings 
+* 57600 BAUD
+* Handshaking off
+* Parity None
+* Stop Bits 1
 
-[[File:pgFocus.png|thumb|Figure: pgFocus Basic Design]]
 
+== pgFocus Plugin ==
 
-[[File:pgFocus2.png|thumb|Figure: pgFocus Optical Layout]]
-pgFocus is connected to a computer via a USB port. USB is used to power and to communicate with pgFocus.
+=== Real Time Panel ===
 
-==== Power ====
+The pgFocus plugin graphs incoming data from the pgFocus hardware.
 
-pgFocus uses the USB +5V power to generate +12V and -12V power using a standard DC to DC converter. 
+[[Image:pgFocus_Realtime.png|center|500px]]
 
-<strike>pgFocus uses the USB +5V power to generate +10V and -5V power. The actual output voltage for +10V power line is lower due to the forward voltage drop of the diodes required for the boost converter IC. Just be aware that voltage signals near +10V sent through pgFocus may be reduced.
+Top graph shows the current focus offset.
 
-The -5V is higher (more positive) because of the same reason. Our piezo Z controller accepts -2V to +10V, so this isn't a significant issue on the -5V power line.</strike>
+Second from top graph is the Standard Deviation of the offset over time, in nM.
 
-==== Digital to Analog Converter ====
+The second from the bottom graph shows the voltage output, in nM, of the on-board Digital to Analog Converter. 
 
-pgFocus uses a ±5V 14bit DAC to modify incoming piezo Z signal. This is the upper and lower voltage limit that can be used to adjust the piezo Z signal. The DAC has a resolution of 0.6 mV. Based on our piezo Z controller (10µM/Volt), this works out to a minimum 6 nM step size at the objective. 
+The bottom graph shows the voltage input, in nM, as measured by the on board Analog to Digital Converter.
 
-==== Analog to Digital Converter ====
+The update frequency can be changed in the settings panel.
 
-pgFocus uses a ±10V 14bit ADC to sample the incoming piezo Z signal. This is to allow pgFocus to automatically adjust the focus set point, without user intervention. This feature enables pgFocus to have automated 3D focus correction. 
+=== Light Profile Panel ===
 
-The incoming piezo signal is sampled and multiplied by 2. This effectively makes the ±10V ADC become a ±5V ADC, matching the ±5V DAC. 
+The light profile graph can be used to center the reflected laser beam onto pgFocus' sensor.
 
-<strike>This means that the lower limit for sampling the incoming piezo Z signal is actually -2.5V. -2.5V becomes -5V at the ADC, due to the gain of 2 and the limit of -5V of the power supply. Our piezo Z controller's range is from -2V to 10V. Therefore the effective ADC sampling range is actually -2.5V to +5V.</strike>
+[[Image:pgFovus_Lightprofile.png|center|500px]]
 
-When pgFocus samples the incoming piezo Z signal, it rounds off the results to the nearest 50nM step since most people move their objectives at 50, 100 or 250nm increments. This allows the adjustment of the focus set point to be more accurately predicted because it is based on the distance from the original focus set point rather than just a new offset.
+The refresh rate can be adjusted in the settings panel.
 
-==== Linear Light Array====
+=== Calibration Panel ===
 
-The Linear Light Array represents a physical limit. The return beam must fall within its 128 pixels. The length of the 128 pixels is about 8mm. In our setup, the 8mm length of the Linear Light Array is equivalent to about 25 to 30µM range with a 60X objective. Longer Linear Light Arrays maybe used in future versions of pgFocus.
+[[Image:pgFocus_Calibration.png|center|500px]]
 
-The Linear Light Array's location on the PCB is in the exact vertical center of the board. This allows you to put pgFocus in either vertical orientation and still use the same case.
+Calibration should be performed after setting up pgFocus, and after any changes. It lets pgFocus know how far to move the objective to maintain focus.
 
-We also use a High Pass Filter in front of the Linear Light Array that can be purchased from [http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions]
+=== Settings Panel ===
 
-==== Digital Expansion Port ====
+[[Image:pgFocus_Settings.png|center|500px]]
 
-pgFocus makes accessible 8 digital I/O pins compatible with D0 to D7 pins on the Arduino Leonardo. These pins can be used for other light sensors, or perhaps a hardware switch to turn on/off focus, or to move the focus set point up or down.
+Most of the important parameters can be changed on this panel. Additional parameters can be modified or viewed in the Device/Property Browser window for pgFocus.
 
-+5V and ground lines are also made available. However, since USB is powering pgFocus, power maybe limited. Future versions of pgFocus might have a 5V DC jack if power is a limitation in the current design. 
+=== Device/Property Browser ===
 
-==== Optics ====
-
-pgFocus uses a laser beam that is reflected off the cover glass/water interface to monitor the microscope focus. Hence, an objective with an NA of at least 1.45 is required.
-The laser beam wavelength should be different from that being used for science (1 mWatt, 808nm is a good choice) and must be coaligned with the TIRF beam. This can be done using a mirror, beam splitter and a short pass filter. Care must be taken to ensure that the fluorescence filter cube and other microscope optics will allow the return of the pgFocus beam back along its input path and back to the pgFocus detector and that the microscope optics will NOT allow the laser light to pass into the user's eyes or to reach the camera. Once the position and angle of the pgFocus beam is coincident with that of the TIRF beam a strong return pgFocus beam will be seen that moves with changes in microscope focus. The pgFocus detector array can now be aligned and centered on the beam.
-
- 
-[[File:PgFocus_opticalpath_txt.jpg|center|500px|Figure: Our optical layout]]
-
-==== Eagle Files ====
-
-----
-'''Warning:''' PCB design has not been verified yet and may not be final. 
-----
-
-[https://github.com/kbellve/pgFocus-hardware pgFocus]
-
-[https://github.com/kbellve/TSL1401CL-Adapter TSL1401CL-Adapter]
-
-==== Front Panel ====
-[[File:pgFocus_front_panel.png|frame|Figure: Proposed Front Panel]]
-
-==== Back Panel ====
-
-[[File:pgFocus_back_panel.png|frame|Figure: Proposed Back Panel]]
-
-== Software ==
-
-After the Arduino Leonardo was released, pgFocus was redesigned to take advantage of the bootloader and pin layout for the Arduino Leonardo. If you can write an Arduino sketch, you can modify the source code to pgFocus!
-
-pgFocus software reports the following:
-* Light profile as seen by the Linear Light Array.
-** Use this to align the physical position of pgFocus with respect to the return laser beam.
-* Current centroid location of the light profile as seen by the Linear Light Array.
-* Microscope stability based on the running Standard Deviation(converted to nM movement at the objective).
-* Digital to Analog converter voltage output need to maintain current focus position.
-* Calibration mode result.
-
-pgFocus software can do the following:
-* Lock focus at the current position.
-* Move focus up by a specified amount (currently set to +50nM).
-* Move focus down by a specified amount (currently set to -50nM).
-
-pgFocus software has not be released yet since it was designed for the prototype version of pgFocus rather than this version. It will be released as soon as possible.
-
-==== Linear Light Array Profile ====
-
-pgFocus will show a continually updating profile of the return laser beam. The return laser beam needs to be centered vertically and horizontally on the Linear Light Array. This alignment needs to be performed while the microscope is in its normal mode of operation. If the microscope is heated in an environmental chamber, then it needs to be heated before this alignment should be performed.
-
-[[File:Pgfocus_lla.jpg‎|frame|Figure: Return Laser beam profile]]
-
-A centroid calculation is performed on the Linear Light Array profile to get focus location. This calculation will only be performed by pgFocus if it detects a peak in the profile.
-
-==== Calibration Mode ====
-
-pgFocus needs to understand the relationship between the movement of the laser beam return signal seen on the Linear Light Array and the movement of the objective. This depends upon the location of pgFocus in relation to the objective. To determine this relationship, pgFocus has a calibration mode that moves the objective up and then down, while reading the position of the return laser beam. This information is plotted and a linear regression analysis is performed to determine the slope. The slope is the scale factor that pgFocus uses for calculations and for focus adjustments.
-
-A calibration must be performed after first installing pgFocus, or if the distance between pgFocus or the objective changes (i.e. pgFocus is moved). 
-
-The user just needs to make sure the the return laser beam is aligned and centered on the Linear Light Array. pgFocus will take care of the rest and will store the resulting calculation in its EPROM.
-
-The figure below is captured from the first prototype of pgFocus after it has performed its calibration routine. Notice that pgFocus will not move the objective so that it causes the return laser beam to move past the boundaries of the Linear Light Array.
-
-[[File:PgFocus_calibration.jpg|frame, center|Figure: Calibration Output]]
-
-The above figure shows two numbers for each position. The first number is Voltage DAU which ranges from 0 to 4095 (12bit DAC used on the prototype pgFocus, 0 DAU = -1.65V, 2048 DAU = 0V, 4095 DAU = +1.65V). The second number is the pixel position on the Linear Light Array, which ranges from 0 to 127. Because pgFocus calculates a centroid of the return beam light profile, it can determine sub pixel positions on the Linear Light Array.
-
-pgFocus also outputs the calibration information to the USB port:
-
-* INFO: DAU Per Pixel: 20.30 DAU
-* INFO: Focus Adjust: 0.3057 pixels
-* INFO: Calibration Activated
-* INFO: Calibrating sensor
-* CAL: 2648 32.4590568542
-* CAL: 2448 41.6186561584
-* CAL: 2248 50.1614685058
-* CAL: 2048 59.6866722106
-* CAL: 1848 70.1109924316
-* CAL: 1648 80.5381393432
-* CAL: 1448 91.6457748413
-* SLOPE: -0.0493
-* INTERCEPT: 3283.83
-* DAU: 20.30
-* INFO: 0.16 uM
-* RESIDUALS: 0.998403
-* INFO: Focus Adjust: 0.3057 pixels
-* INFO: Writing calibration values to eeprom
-* INFO: Returning objective to default position
-
-== Performance ==
-
-pgFocus is designed to track and control focus within ±3nM at 30Hz under optimal conditions (tested with a high NA 60X Objective plus 1.6X optivar). This is dependent upon the location of pgFocus with respect to the objective. 
-
-* Precision is proportional to the distance pgFocus is from the objective. 
-* Range is inversely proportional to the distance pgFocus is from the objective
-
-This [[Media:pgFocus.mov|Movie]] shows pgFocus in action. 200nM beads were TIRF imaged with uManager's burst mode with a 60X objective with a 1.6X optivar. 
-
-The microscope is enclosed in an environmental chamber. The doors to the chamber were opened after image 300 and closed after image 600. You will see a disturbance to the focus at both times, but focus is soon corrected within moments. The focus is disturbed due to the change in the temperature gradient across the microscope caused by the open doors.
-
-Below is the graph of pgFocus performance from the above movie.
-
-[[File:pgFocus_graph.png|frame|Figure: pgFocus in action. Doors to a microscope environmental chamber were opened after image 300 and then closed after image 600.]]
-
-
-As you can see in the above graph, even after the doors were closed, a constant voltage adjustment had to be applied to keep focus at its original position.
-
-Below is a graph of what happens when pgFocus isn't stabilizing focus during the same procedure.
-
-[[File:pgFocus_off.png|frame|Figure: pgFocus has been turned off, but the doors were opened and closed. Only plotting the Linear Light Array since no voltage is being applied to correct focus. ]]
-
-As you can see in the bottom graph, focus position has changed even after the doors were closed due to the perturbations introduced into the microscope. The focus position may eventually correct itself once the temperature gradient returns to its original gradient.
-
-These are severe perturbations but pgFocus is very good at automatically compensating for slow focal drift over time.
-
-=== Sampling 3D Position ===
-
-pgFocus is designed to sample incoming focus control signal and automatically adjust the focus control set point.
-
-[[File:Pgfocus_AD7894-10.png|frame|Figure: pgFocus sampling incoming focus control signal to automatically adjust the focus control set point]]
-
-== Parts ==
-
-Preliminary parts list. Parts may change at any time. For a complete list, export the parts list from Eagle.
-
-
-=== Mouser ===
-
-BOM of [https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0e1348939d pgFocus] 
-
-BOM of [http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=985c35475a TSL1401CL-Adapter]
-
-=== Sparkfun ===
-
-{|border="1"  style="text-align:center;"
-|-
-!style = "width: 25%" |Name
-!style = "width: 5%"  |Number
-!style = "width: 30%" |Reference
-!style = "width: 40%" |Notes
-|-
-|BNC 
-|2
-|[https://www.sparkfun.com/products/10550 Sparkfun], [http://www.mouser.com/ProductDetail/TE-Connectivity-AMP/5227161-7/?qs=sGAEpiMZZMuLQf%252bEuFsOrtKdKMPPpnQyZLwFjhpMzng%3d Mouser-Plastic], [http://www.mouser.com/ProductDetail/TE-Connectivity-AMP/5413879-2/?qs=sGAEpiMZZMuLQf%252bEuFsOrtKdKMPPpnQy8K0d1QB4mYo%3d Mouser-Metal], [https://www.sparkfun.com/datasheets/Prototyping/Connectors/06542.pdf PDF] 
-|The Tyco BNC seems to match the Sparkfun
-|-
-|RGB LED
-|1
-|[https://www.sparkfun.com/products/7844 Sparkfun] 
-|Status indicator on front panel
-|-
-|LCD 
-|1
-|[https://www.sparkfun.com/products/9394 Sparkfun] 
-|Optional
-|-
-|JST 3 Wire 
-|1
-|[https://www.sparkfun.com/products/9915 Sparkfun] 
-|Optional Connects to LCD
-|-
-|JST 5 Wire 
-|2
-|[https://www.sparkfun.com/products/9917 Sparkfun] 
-|TSL1401CL-Adapter and pgFocus
-|-
-|2x5 Shrouded Header
-|1
-|[https://www.sparkfun.com/products/8506 Sparkfun] 
-|Optional Expansion, 0.1"
-|-
-|Ribbon Crimp Connector 
-|1
-|[https://www.sparkfun.com/products/10650 Sparkfun] 
-|Optional Expansion, 10-pin (2x5, Female)
-|}
-
-=== Miscellaneous ===
-
-{|border="1"  style="text-align:center;" width="100%"
-|-
-!style = "width: 25%" |Name
-!style = "width: 5%"  |Number
-!style = "width: 30%" |Reference
-!style = "width: 40%" |Notes
-|-
-|IR Filter
-|1
-|[http://peauproductions.com/store/index.php?main_page=product_info&cPath=2_12&products_id=88 Peau Productions] 
-|M12/CS Infrared Filter for M12 Shroud
-|-
-|M12 Lens Shroud
-|1
-|[http://www.m12lenses.com/CNC-Machined-M12-Lens-Holder-Metal-p/pt-lh011m.htm M12 Lenses]
-|Cool because it is machined Metal
-|-
-|Jack Screw 
-|4
-|[http://www.mcmaster.com/#92710A211 McMaster-Carr] 
-|Part Number 92710A211, Mounts expansion connector to back panel
-|-
-|Panel Self-tapping Screw 
-|8
-|[http://www.mcmaster.com/#91715A114 McMaster-Carr] 
-|Part Number 91715A114, Mounts front and back panels to case
-|-
-|4-40 Screw 
-|8
-|[http://www.mcmaster.com/#91249A105 McMaster-Carr] 
-|Part Number 91249A105, Mounts sensor daughter board to back panel
-|-
-|Threaded Standoff 
-|4
-|[http://www.mcmaster.com/#91780A740 McMaster-Carr] 
-|Part Number 91780A740, Mounts sensor daughter board to back panel
-|}
-
-== Thanks ==
-
-pgFocus couldn't have been designed without the support from the [http://www.umassmed.edu/pmm/index.aspx Program in Molecular Medicine] at [http://www.umassmed.edu Umass], and the following Open Software and Open Hardware communities:
-
-*[http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Open_Source_Microscopy_Software uManager]
-
-*[http://www.adafruit.com/ Adafruit industries]
-
-*[http://www.sparkfun.com/ Sparkfun Electronics]
-
-*[http://www.parallax.com/ Parallax Inc]
-
-*[http://www.arduino.cc/ Arduino]
+[[Image:pgFocus_DeviceAdapter.png|center|500px]]
