@@ -1,0 +1,12 @@
+== Lumencor LED light sources ==
+
+<table><tr><td>
+'''Summary:'''</td><td>For Lumencor light sources, such as SpectraX and Sola</td></tr>
+<tr><td>'''Author:'''</td><td>Louis Ashford</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>Aura, Sola, Spetrca. SpectraX</td></tr>
+<tr><td>'''Example Config File:'''</td><td>None</td></tr>
+<tr><td>'''Serial cable'''</td><td>Straight through</td></tr>
+<tr><td>'''Serial port settings'''</td><td>Baudrate: 9600</td></tr>
+</table>
