@@ -149,6 +149,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Omicron]] - Omicron Laser Controller
 * [[Oxxius]] - Oxxius Laser Controller
 * [[Pecon]] - Pecon Incubation System
+* [[pgFocus]] - Open Software/Hardware Focus Stabilization from [http://big.umassmed.edu BIG]
 * [[PolychromeV]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
 * [[Rapp]] - Rapp UGA40 photobleaching/photoactivation unit
