@@ -1,0 +1,45 @@
+== IIDC Device Adapter ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces to Firewire (and some USB) cameras that implement the IIDC 1394-based Digital Camera Specification</td></tr>
+<tr><td>'''Author:'''</td><td>Mark Tsuchida</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Linux</td></tr>
+<tr><td>'''Devices:'''</td><td>Firewire (and some USB) cameras that implement the [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php IIDC 1394-based Digital Camera Specification], version 1.x</td></tr>
+</table>
+
+This is a new device adapter intended to eventually replace the [[dc1394]] device adapter. Currently, it has only been tested on Linux and only supports monochrome cameras. It so far implements fewer features than dc1394, but attempts to implement those robustly.
+
+=== Configuration ===
+
+The following pre-initialization properties are available:
+
+'''Camera ID (optional)''' - If left blank, the next available camera will be used. The actual Camera ID (unique to each camera) can be viewed later in the Device Property Browser; entering a fixed value in this field will force the device to always find the same camera.
+
+'''IEEE 1394 mode''' - If both your camera and IEEE 1394 interface card support 1394B (sometimes informally referred to as Firewire 800), choose 1394B. Otherwise, choose 1394A.
+
+'''Transmission Speed''' - Usually, just choose 800 Mbps if using 1394B, 400 Mbps otherwise.
+
+'''Shutter units (us/unit)''' and '''Shutter offset (us)''' - Some cameras know how to set the exposure (integration time) in physical units (i.e. seconds); some cameras don't. If your camera does not support physical units (called "absolute units" in the IIDC spec) for exposure (called "Shutter" in the IIDC spec), you need to specify how the camera's units correspond to physical units. The camera setting X (units) and the actual exposure time T (microseconds) are related by
+
+  A * X + B = T
+
+where A is '''Shutter units (us/unit)''' and B is '''Shutter offset (us)'''.
+
+This information is usually available in the camera's manual. For example, AVT cameras, by default, use 20 us/unit and 20 us. Point Grey cameras typically support absolute units and do not require these properties to be set.
+
+=== Properties ===
+
+'''Video mode''' - This switches between different frame sizes and pixel types. The available modes depend on the camera model. Only modes currently supported by the device adapter are listed. IIDC has the concept of "Format" and "Mode", and each Format has a number of Modes. The bracketed code in front of the value indicates the format and mode (e.g. <code>[f0-m5]</code> is Format 0, Mode 5).
+
+Formats 0-2 are the conventional modes with fixed, standard frame sizes. Format 7 allows camera-specific frame sizes as well as subregions (ROIs; not yet supported by this device adapter). Many camera vendors assign the different Format 7 Modes to different vertical and horizontal binning factors or subsampling factors. You will need to read the camera manual to know what each Mode does.
+
+Switching the video mode while a sequence acquisition (including Live view) is running is not recommended (it may hang Micro-Manager; we may disable this entirely in the future).
+
+'''Timeout (ms)''' - This specifies how long to wait for a captured frame to arrive before giving up. For a sequence acquisition, it only applies to the first frame.
+
+'''Limit Format_7 packet size''' - This advanced setting is a workaround for a problem seen with some cameras/systems. The default (0) should be fine in most cases. If you see corrupted images for specific Format 7 video modes, you can try setting this property to a different value. Doing so will slightly decrease the maximum attainable framerate, but can prevent image corruption in certain cases.
+
+{{Listserv_Search|IIDC}}
+
+{{Devices_Sidebar}}
