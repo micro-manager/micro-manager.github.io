@@ -22,7 +22,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AxioCam]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[BiostepEagleIce]] - biostep EagleIce camera
-* [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs 
+* [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (see also [[IIDC]])
 * [[DECamera]] - Direct Electron Cameras
 * [[DemoCamera]] - Virtual, emulated equipment for testing
 * [[DemoStreamCamera]] - Virtual, emulated fast camera
@@ -33,6 +33,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Hamamatsu]] - Legacy adapter for Hamamatsu cameras (through DCAM library)
 * [[HamamatsuHam]] - Hamamatsu cameras (through DCAM library)
 * [[IDS_uEye]] - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
+* [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
 * [[Micropix]] - Cameras from Micropix
 * [[MoticCamera]] - Motic cameras
