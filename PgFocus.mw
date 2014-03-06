@@ -11,12 +11,13 @@ pgFocus monitors focus changes through the positional changes of a reflected las
 
 === Installation ===
 
+pgFocus supports automatic device detection with firmware 0.8
+
 Serial Settings 
 * 57600 BAUD
 * Handshaking off
 * Parity None
 * Stop Bits 1
-
 
 == pgFocus Plugin ==
 
