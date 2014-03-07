@@ -3,9 +3,10 @@
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces to Firewire (and some USB) cameras that implement the IIDC 1394-based Digital Camera Specification</td></tr>
 <tr><td>'''Author:'''</td><td>Mark Tsuchida</td></tr>
-<tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Linux</td></tr>
+<tr><td>'''License:'''</td><td>BSD (uses LGPL libraries)</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Linux, Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>Firewire (and some USB) cameras that implement the [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php IIDC 1394-based Digital Camera Specification], version 1.x</td></tr>
+<tr><td>'''Since Version:'''</td><td>1.4.17</td></tr>
 </table>
 
 This is a new device adapter intended to eventually replace the [[dc1394]] device adapter. Currently, it has only been tested on Linux and only supports monochrome cameras. It so far implements fewer features than dc1394, but attempts to implement those robustly.
