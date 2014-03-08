@@ -4,7 +4,7 @@
 '''Summary:'''</td><td>Interfaces with Hamamatsu cameras</td></tr>
 <tr><td>'''Author:'''</td><td>Patrick Gregorio (Hamamatsu)</td></tr>
 <tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows (see [[Hamamatsu]] for Mac OS X)</td></tr>
 <tr><td>'''Devices:'''</td><td>Hamamatsu DCAM compatible cameras</td></tr>
 </table>
 
