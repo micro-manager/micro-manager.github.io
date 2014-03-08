@@ -30,8 +30,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[FLICamera]] - Finger Lakes Instrumentation Cameras
 * [[GigECamera]] - GigE Vision- and GenICam-compliant cameras
 * [[GPhoto]] - Canon and Nikon DSLR cameras (Mac, Linux)
-* [[Hamamatsu]] - Legacy adapter for Hamamatsu cameras (through DCAM library)
-* [[HamamatsuHam]] - Hamamatsu cameras (through DCAM library)
+* [[Hamamatsu]] - Legacy adapter for Hamamatsu cameras (via DCAM-API); now Mac only
+* [[HamamatsuHam]] - Hamamatsu cameras (via DCAM-API)
 * [[IDS_uEye]] - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
 * [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
