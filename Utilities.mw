@@ -27,7 +27,6 @@ Combines multiple cameras into a single logical camera.  Snapping an image with 
 '''Setup'''
 # The cameras must have the same width, height and pixeltype (or strange things may happen).
 # For multiple cameras using the same DeviceAdapter, add that DeviceAdapter as many times as there are cameras.
-#:{{Note|There is a bug with renaming AndorSDK3 cameras, so use the default camera labels of "AndorSDK3", "AndorSDK3-1", etc.}}
 # Assign the Multi-Camera "Physical Camera" properties to your cameras.  Best practice is to also add these "Physical Camera" properties in the "System" group's "Startup" preset, to set them automatically upon loading the configuration file.
 # Synchronizing cameras requires wiring the exposure digital output of one camera (namely, the "Master" camera) to the trigger input of other cameras (the "Slave" camera(s)).
 #:{{Note|The "Master" must be the last numbered "Physical Camera", since several frames can be acquired by one camera before the next camera starts acquiring. e.g. Set "Physical Camera 1" to Slave, and "Physical Camera 2" to Master.}}
