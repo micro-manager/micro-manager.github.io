@@ -22,7 +22,7 @@ These abstract devices can be used to change the function of a real device or to
 Combines multiple shutters into a single logical shutter, opens and closes multiple shutters simultaneously.  You will need to set the "Physical Shutter: properties (up to 5 shutters can be set).  It is easiest to set these in the "System" "Startup" group so that they will be set automatically upon loading the configuration file.
 
 == Multi-Camera ==
-Combines multiple cameras into a single logical camera.  Snapping an image with a multi-camera device will result in a single multi-channel image, where each image is taken with one camera.  Not all cameras are fully supported (at this point in time, the demo and Andor cameras work with the adapter.
+Combines multiple cameras into a single logical camera.  Snapping an image with a multi-camera device will result in a single multi-channel image, where each image is taken with one camera.  Not all cameras are fully supported (at this point in time, the demo and Andor cameras work with the adapter).
 
 '''Setup'''
 # The cameras must have the same width, height and pixeltype (or strange things may happen).
