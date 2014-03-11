@@ -20,8 +20,8 @@ wget http://rsb.info.nih.gov/ij/download/linux/ij147-linux64.zip
 unzip ij147-linux64.zip
 
 # Retrieve MM source code (can be long)
-svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/](https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
-svn co https://valelab.ucsf.edu/svn/3rdpartypublic/](https://valelab.ucsf.edu/svn/3rdpartypublic/
+svn co https://valelab.ucsf.edu/svn/micromanager2/trunk micro-manager
+svn co https://valelab.ucsf.edu/svn/3rdpartypublic
 
 # Build MM
 cd micro-manager/
