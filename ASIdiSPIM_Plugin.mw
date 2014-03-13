@@ -51,6 +51,8 @@ In the future you will select the SPIM stack mode here, but currently only one m
 
 Here you select which camera to use for acquisition, likely the MultiCamera instance for diSPIM.
 
+Whenever this tab is selected the cameras switch to external triggering, so the LiveView window will not work.  Whenever a different tab is selected then internal triggering is restored.
+
 === Setup Path A/B ===
 
 This tab is used for alignment and to specify the imaged volume, one for imaging path A and the other for path B.
