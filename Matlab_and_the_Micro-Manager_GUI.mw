@@ -2,12 +2,13 @@ You can use Matlab to run and control the Micro-Manager gui and core. Here's how
 
 1. In Matlab, type
  >> edit classpath.txt
-and add the following lines:
+and add the following lines, adjusting the path if necessary:
  C:/Program Files/Micro-Manager-1.4.11/ij.jar
  C:/Program Files/Micro-Manager-1.4.11/plugins/Micro-Manager/MMCoreJ.jar
  C:/Program Files/Micro-Manager-1.4.11/plugins/Micro-Manager/MMJ_.jar
  C:/Program Files/Micro-Manager-1.4.11/plugins/Micro-Manager/bsh-2.0b4.jar
  C:/Program Files/Micro-Manager-1.4.11/plugins/Micro-Manager/swingx-0.9.5.jar
+ C:/Program Files/Micro-Manager-1.4.11/plugins/Micro-Manager/swing-layout-1.0.4.jar
 
 you will need the additional items below in the classpath.txt to use the multi-image file format: 
 
