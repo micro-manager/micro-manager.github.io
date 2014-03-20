@@ -133,7 +133,7 @@ Inputs = ''path2MM'', the root directory of the Micro-Manager software
  subDirs = {dirData(dirIndex).name};  % Get a list of the subdirectories
  validIndex = ~ismember(subDirs,{'.','..'});  % Find index of subdirectories
  %   that are not '.' or '..'
-  for iDir = find(validIndex)                  % Loop over valid subdirectories
+ for iDir = find(validIndex)                  % Loop over valid subdirectories
      nextDir = fullfile(dirName,subDirs{iDir});    % Get the subdirectory path
      fileList = vertcat(fileList, getAllFiles(nextDir));  % Recursively call getAllFiles
  end
