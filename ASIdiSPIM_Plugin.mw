@@ -46,7 +46,9 @@ A Multi-Camera device should be created if you are using two cameras; Micro-mana
 
 === SPIM Params ===
 
-Here you set the parameters for the SPIM acquisition and initiate acquisition.  This panel is somewhat analogous to the multi-D acquisition window in Micro-manager, except that the positions of the imaged volume are not specified here.
+Here you set the parameters for the SPIM acquisition and initiate acquisition.  This panel is somewhat analogous to the Multi-D acquisition window in Micro-manager, except that the positions of the imaged volume are not specified here.
+
+The file saving options in the Multi-D window are used by the plugin (directory location, name prefix, and image stack file vs. separate images, along with saving to disk if the "Save Images" box is checked or saving to RAM initially if not).
 
 In the future you will select the SPIM stack mode here, but currently only one mode is supported by firmware (piezo stacks).
 
