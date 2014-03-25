@@ -30,14 +30,21 @@ Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive called 
 
 Micro-Manager is packaged as an [http://rsb.info.nih.gov/ij/ ImageJ] plug-in and contains a copy of the entire ImageJ application, together with the Java run-time environment. Starting Micro-Manager will automatically start ImageJ as well. If you already use ImageJ and have it installed on your machine, the original installation will not be affected. Micro-Manager installs and uses its own copy of ImageJ. However, if you have any existing ImageJ macros or plugins that you want to use with Micro-Manager, you will have to copy them manually to the appropriate sub-folders within the Micro-Manager folder. Migrating your favorite ImageJ plugins to Micro-Manager installation should not cause any problems.
 
-== Memory issues with Java/ImageJ ==
+== Memory settings ==
 
 The Micro-Manager installation includes ImageJ and automatically runs ImageJ on startup. The amount of memory available to Micro-Manager is the same amount ImageJ allocates in the Java Virtual Machine, i.e. the available memory is determined by ImageJ. By default ImageJ is very conservative in allocating RAM: usually it reserves only 256MB of RAM, depending on the system configuration . This can be a problem when acquiring large time-lapse or z-stack sequences. In such situations Micro-Manager interrupts acquisition and warns you that it ran out of memory.
 
-To increase the amount of memory available to ImageJ and Micro-Manager, use the ImageJ command <span>'''Edit | Options | Memory'''</span>. You should enter the amount of RAM equal or less to the amount you have installed on your system. (For 32-bit systems with more than 1.2 GB of RAM, we have noticed that entering values larger than 1.2 GB can cause erratic behavior on some systems, on 64-bit systems you can go higher, but make sure that some memory is left for the OS.)
+To increase the amount of memory available to ImageJ and Micro-Manager, use the ImageJ command <span>'''Edit | Options | Memory'''</span>. You should enter the amount of RAM equal or less to the amount you have installed on your system. (For 32-bit systems, we have noticed that entering values larger than 1.2 GB can cause erratic behavior on some systems; on 64-bit systems you can go higher, but make sure that some memory is left for the OS.)
 
 If you have another installation of ImageJ on your computer, keep in mind that Micro-Manager installs its own copy of ImageJ and that you need to set memory options on both.
 
+Here are some general suggestions for setting the ImageJ memory and Micro-Manager circular buffer:
+
+* The sum of ImageJ and uM (circular buffer) should add up to only about 80% of total RAM installed/available.
+* Set the '''ImageJ Edit | Options | Memory & Threads''' to approximately 70% of total RAM.
+* Set the '''Micro-Manager Tools | Options''' buffer size to maybe 10% of total RAM.
+* For cases where you want to very quickly stream movies to RAM, try setting 40% ImageJ and 40% Micro-Manager buffer.
+* For cases where you want to write directly to a fast disk, you can try increasing Micro-Manager buffer higher (and subsequently decrease ImageJ).
 <br />
 
 = Getting started =
