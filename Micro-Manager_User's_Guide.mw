@@ -42,7 +42,7 @@ Here are some general suggestions for setting the ImageJ memory and Micro-Manage
 
 * The sum of ImageJ and uM (circular buffer) should add up to only about 80% of total RAM installed/available.
 * Set the '''ImageJ Edit | Options | Memory & Threads''' to approximately 70% of total RAM.
-* Set the '''Micro-Manager Tools | Options''' buffer size to maybe 10% of total RAM.
+* Set the '''Micro-Manager Tools | Options''' buffer size to approximately 10% of total RAM.
 * For cases where you want to very quickly stream movies to RAM, try setting 40% ImageJ and 40% Micro-Manager buffer.
 * For cases where you want to write directly to a fast disk, you can try increasing Micro-Manager buffer higher (and subsequently decrease ImageJ).
 <br />
