@@ -1,6 +1,7 @@
 Micro-Manager offers a number of built-in Plugins for special applications in microscopy:
 
 * [[ASIdiSPIM Plugin]]
+* [[AutoLase]]
 * [[DLLAutoReloader]]
 * [[HCS Site Generator]] 
 * [[Intelligent Acquisition]]
@@ -23,7 +24,6 @@ In addition, plugins are available from third parties:
 ** [[3D_Deconvolution|3D Deconvolution]]
 * [http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start Firewire camera/LED synchronization, by Alex Hodge, Cambridge]
 * [http://www.mediacy.com/index.aspx?page=IP_MicroManager_plugin Import Micro-Manager data into Image-Pro]
-* [[AutoLase]]
 
 ''See also [[Writing plugins for Micro-Manager]]
 
