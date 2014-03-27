@@ -61,3 +61,7 @@ ROI sequences consist of a number of steps (time slots). Within each step, 1 or 
 The Sequence table can now be edited to alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
 
 Finally, below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
+
+{{Listserv_Search|Mosaic}}
+
+{{Devices_Sidebar}}
