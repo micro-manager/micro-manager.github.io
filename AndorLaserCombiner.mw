@@ -18,7 +18,7 @@
 |Windows XP 32bit<br>Windows 7 32bit and 64bit<br>(No Mac or Linux driver available)
 |- valign="top"
 !Devices:
-|LC-401, LC-501<br>LC-601 is not yet supported
+|LC-401, LC-501, LC-601 (only 4 laser LC-601 systems supported; 5 and 6 line support coming soon)
 |}
 ----
 
@@ -28,11 +28,76 @@
 
 If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
 
-== Device Configuration ==
-* Add the <code>AndorLaserCombiner</code> main device to your hardware configuration.
-* Add the <code>Piezostage</code> option for your system to use Andor's analog control for Piezo Z.  Generally, confocal systems have this configuration since it moves the Piezo faster than RS-232 serial control (if you are unsure about this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC connected from A5 to your Piezo Z controller, you should enable this option).
-* Set <code>MultiPortUnitPresent</code> as the default "0" (false) if you only see a single fiber optic connected horizontally to the front of the laser combiner.  Otherwise select "1" (true) if you see the multi fiber optic switcher attachment.
-* Set the "Default shutter" as the <code>AndorLaserCombiner</code> and use the default <code>Delay [ms]</code> of <code>0.0</code> since an AOTF gates the laser output.
+== Hardware Configuration ==
+
+Description of devices available in the Hardware Configuration Wizard:
+
+{| class="wikitable"
+!style="width: 20%;"| Available Devices
+! Description
+|- valign="top"
+| AndorLaserCombiner
+| Main device required for your hardware configuration.
+|- valign="top"
+| Piezostage
+| Enable Andor's analog BNC control for your Piezo Z device.  Generally, confocal systems have this configuration since it moves the Piezo faster than RS-232 serial control.  If you are unsure about this, look at the front of your Andor Precision Control Unit (PCU)- if you see a BNC cable connected from A5 of the PCU to your Piezo Z controller, you should enable this option.  If you see the A5 BNC sealed off, you have a 6 laser system that therefore does not have this feature.
+|}
+
+{| class="wikitable"
+!style="width: 20%;"| Initialization Properties
+! Description
+|- valign="top"
+| MultiPortUnitPresent
+| Leave as the default "0" (false) if you only see a single fiber optic connected horizontally to the front of the laser combiner.  Otherwise select "1" (true) if you see the multi fiber optic switcher attachment.
+|}
+
+For <code>Auto-Shutter</code> setting in Step 3 of 6, set the <code>Default Shutter</code> to the <code>AndorLaserCombiner</code> and in Step 4 of 6 use the default <code>Delay [ms]</code> of <code>0.0</code> since a fast AOTF gates the laser output.
+
+== Device Properties ==
+
+{| class="wikitable"
+!style="width: 20%;"| Property
+! Description
+|- valign="top"
+| Enable
+| Logical shutter to allow selection of laser line.  It can also set the laser to TTL mode, if the laser supports it.  TTL mode requires firmware 2.  When creating laser imaging channels, you should add the <code>Enable</code> properties for each laser wavelength to turn on only the wavelength(s) you need.
+|- valign="top"
+| SaveLifetime
+| Allows lasers to be put in standby mode to preserve lifetime hours.  Changes to this property are saved onto the device memory, so the setting is persistently between Micro-Manager sessions.  Since going into and coming out of standby can take a few seconds, best practice is leave this property "global" by not including it in channels.  Instead, one could add these properties to the <code>System</code> <code>Startup</code> preset, or just create shortcuts by creating groups with only the SaveLifetime setting(s).
+|- valign="top"
+| IsLinear
+| Reads whether linear correction algorithm is being applied to AOTF by <code>PowerSetpoint</code>, otherwise AOTF laser power output is sigmoid.
+|- valign="top"
+| PowerSetpoint
+| AOTF intensity setting.  Actual power output may or may not be linear depending on the value of <code>IsLinear</code>.
+|- valign="top"
+| PowerReadback
+| Current laser head power output. Output of 0, could be due to laser being put in Standby using SaveLifetime, or a fault with the laser head.  If power is more than a few percent lower than MaximumLaserPower, it also indicates a faulty laser head, but some lasers can take up to 5 minutes to warm up (most warm up in 2 minutes).
+|- valign="top"
+| MaximumLaserPower
+| Laser rated operating power in milli-Watts.
+|- valign="top"
+| Hours
+| Indicates laser expired life to plan warranty contracts. (Unfortunately this always shows a value of "0" because the feature is not yet implemented by the Andor ALC SDK)
+|- valign="top"
+| WaveLength
+| Wavelength of laser line.
+|- valign="top"
+| LaserState
+| Laser state: "0" indicates off, "1" warm up (if <code>SaveLifeTime</code> is set to "PowerOn") or standby (if <code>SaveLifeTime</code> is set to "Standby"), and "2" is stable output.
+|- valign="top"
+| NLasers
+| Number of lasers available.
+|- valign="top"
+| LaserPort
+| Multi fiber port unit control.
+|- valign="top"
+| DOUT
+| Digital 8-bit output from Precision Control Unit.  The lowest 2 bits are not accessible if a multi fiber port unit is present.
+|- valign="top"
+| DIN
+| Digital 8-bit input from Precision Control Unit.  Reads TTL input signal state.
+|}
 
 
 == Troubleshooting (known issues and fixes) ==
