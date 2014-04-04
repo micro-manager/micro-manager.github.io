@@ -40,6 +40,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[OpenCVgrabber]] - Supports numerous USB cameras and frame grabbers (those using a DirectShow or WDM class driver). (Windows)
 * [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
+* [[PICAM]] - Princeton Instruments cameras using the PICam interface
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
