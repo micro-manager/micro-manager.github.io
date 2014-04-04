@@ -84,7 +84,7 @@ For <code>Auto-Shutter</code> setting in Step 3 of 6, set the <code>Default Shut
 | Wavelength of laser line.
 |- valign="top"
 | LaserState
-| Laser state: "0" indicates off, "1" warm up (if <code>SaveLifeTime</code> is set to "PowerOn") or standby (if <code>SaveLifeTime</code> is set to "Standby"), and "2" is stable output.
+| Laser state: "0" indicates off, "1" warm up (if <code>SaveLifetime</code> is set to "PowerOn") or standby (if <code>SaveLifetime</code> is set to "Standby"), and "2" is stable output.
 |- valign="top"
 | NLasers
 | Number of lasers available.
@@ -98,7 +98,6 @@ For <code>Auto-Shutter</code> setting in Step 3 of 6, set the <code>Default Shut
 | DIN
 | Digital 8-bit input from Precision Control Unit.  Reads TTL input signal state.
 |}
-
 
 == Troubleshooting (known issues and fixes) ==
 
