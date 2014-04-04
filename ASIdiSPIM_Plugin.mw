@@ -15,7 +15,7 @@ This plugin exists to facilitate alignment and use of [http://asiimaging.com/pro
 
 == GUI Instructions ==
 
-The GUI remembers most of its settings from run to run.  In the case of settings stored on the controller (e.g. sheet sizes) these may be lost when the controller is turned off unless a save settings is performed.
+The GUI remembers most of its settings from run to run.  Some settings are stored on the controller (e.g. sheet sizes).  Although the plugin attempts to save these, they may be lost if the controller looses power.
 
 === Before running the GUI ===
 
