@@ -1,6 +1,6 @@
 {| style="text-align: left"
 !Summary:
-|Interfaces with Andor Mosaic-3 SLM device
+|Interfaces with Andor Mosaic 3 Digital Mirror Device (DMD)
 |- valign="top"
 !Author:
 | Arthur Edelstein
@@ -19,9 +19,11 @@
 |}
 ----
 
-==Instructions for using the Mosaic III with Micro-Manager==
+==Installation==
 
-Andor’s Mosaic III device allows phototargeting of microscope specimens. To get started using it with Micro-Manager, you should have the Mosaic’s PCI-E card installed, the Mosaic connected to the card via an SFP+ cable, and the driver for the card activated.
+Andor’s Mosaic 3 device allows phototargeting of microscope specimens. To get started using it with Micro-Manager, you should have the Mosaic’s PCI-E card installed, the Mosaic connected to the card via an SFP+ cable, and the driver for the card activated.
+
+==Device Configuration==
 
 To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
 
@@ -39,10 +41,10 @@ Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the foll
    proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
    pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.
    mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.
-   mmc.setSLMImage(mosaic, pixels); // Upload the image to the mosaic.
-   mmc.displaySLMImage(mosaic); // Display the mosaic.
+   mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.
+   mmc.displaySLMImage(mosaic); // Display the Mosaic.
 
-Running this script will result in projecting the image you have just drawn onto the mosaic.
+Running this script will result in projecting the image you have just drawn onto the Mosaic.
 
 ==Projector Plugin==
 
