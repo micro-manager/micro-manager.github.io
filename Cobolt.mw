@@ -26,6 +26,15 @@ The following commands are available with this device adapter:
     <li>Errors (Read only)
 </ul>
 
+== Linux udev Rule ==
+
+As Root, create a file named /etc/udev/rules.d/99-Cobolt.rules with the following context:
+
+ # allow users to claim the device
+ SUBSYSTEMS=="usb", ATTRS{product}=="Cobolt Laser Driver MLD",  ATTRS{idVendor}=="25dc", MODE="0660", GROUP="users", SYMLINK+="ACM%n"
+
+== Notes ==
+
 {{Note|Lasers will automatically be shut off when Micro-Manager closes but power remains on}}
 {{Note|Lasers will ignore the power setting for a few minutes while they start up. Reset after warm up is over}}
 {{Note|This driver works best with laser controller firmware version 13}}
