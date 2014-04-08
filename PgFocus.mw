@@ -19,6 +19,11 @@ Serial Settings
 * Parity None
 * Stop Bits 1
 
+==== Linux udev Rule ===
+As root, create a file named /etc/udev/rules.d/99-pgFocus.rules with the following content:
+ <blockquote># pgFocus by the Biomedical Imaging Group
+SUBSYSTEMS=="usb", ATTRS{product}=="Arduino Leonardo", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="8036", MODE="0660",GROUP="users",SYMLINK+="ttyACM%n"</blockquote>
+
 == pgFocus Plugin ==
 
 === Real Time Panel ===
