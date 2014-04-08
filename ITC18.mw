@@ -58,6 +58,11 @@ The ITC18.csh script was written for a very specific microscope developed by the
 
 The TESM.bsh is a bean shell script that is loaded into micromanager. It loads an imaging protocol produced by the ITC18.csh, and then executes that imaging protocol. The TESM.bsh is designed for a specific microscope system but can be modified for other microscopes.
 
+== Linux udev Rule ==
+
+As root, create a file called /etc/udev/rules.d/99-itc18.rules with the following content:
+  <blockquote>ATTRS{idVendor}=="1482", ATTRS{idProduct}=="0011", MODE="0660", GROUP="users"</blockquote>
+
 == Files ==
 
 === Windows dll driver ===
