@@ -13,8 +13,12 @@
 Requires drivers from IDS (version 4.30 or higher), which can be downloaded from the [http://en.ids-imaging.com/download-ueye.html IDS site].
 
 
-=== Features ===
-* Supports monochrome and color cameras. The available modes/bit depths can be selected in the properties browser ("Pixel Type").
+=== Supported features ===
+* Monochrome and color cameras. The available modes/bit depths can be selected in the properties browser ("Pixel Type").
+* Gain.
+* Binning.
+* ROI.
+* External/internal triggering.
 
 === Notes ===
 * For color, currently only the modes "BGRA8" and "RGBA8" are supported.
