@@ -3,7 +3,7 @@
 <table cellspacing=3><tr><td>
 '''Summary:'''</td><td valign="top">Interface to Thorlabs linear DC stage MTS50/M-Z8E controlled with the TDC001 Controller</td></tr>
 <tr><td>'''Author:'''</td><td>Emilio J. Gualda, UIC-Instituto Gulbenkian de Ciencia</td></tr>
-<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Available since version:'''</td><td>1.4.14</td>
 
