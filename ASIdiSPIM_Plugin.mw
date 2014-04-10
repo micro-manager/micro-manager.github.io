@@ -46,17 +46,13 @@ Please contact the plugin authors to add other cameras.  The reason: the SPIM ca
 
 A Multi-Camera device should be created if you are using two cameras; Micro-manager uses it to overlay images from both cameras (Camera setting of "Dual" in Setup tabs).  Select the Multi-Camera device for the setting labeled "Multi Camera" if you want to use this feature.  Follow the instructions at [[Utilities#Multi-Camera]], including using the System/Startup configuration to assign physical cameras automatically.
 
-=== SPIM Params ===
+=== Acquisition ===
 
 Here you set the parameters for the SPIM acquisition and initiate acquisition.  This panel is somewhat analogous to the Multi-D acquisition window in Micro-manager, except that the positions of the imaged volume are not specified here.
 
 The file saving options in the Multi-D window are used by the plugin (directory location, name prefix, and image stack file vs. separate images, along with saving to disk if the "Save Images" box is checked or saving to RAM initially if not).
 
 In the future you will select the SPIM stack mode here, but currently only one mode is supported by firmware (piezo stacks).
-
-Here you select which camera to use for acquisition, likely the MultiCamera instance for diSPIM.
-
-Whenever this tab is selected the cameras switch to external triggering, so the LiveView window will not work.  Whenever a different tab is selected then internal triggering is restored.
 
 === Setup Path A/B ===
 
