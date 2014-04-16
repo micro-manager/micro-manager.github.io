@@ -68,7 +68,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 ## File -> New -> Java Project...
 ### Select an appropriate name (e.g. the name of the plugin)
 ### Uncheck "Use Default Location"
-### Point Location to plugin code location, in trunk the path is <code>plugins\<plugin name>\src\org\micromanager\<plugin name></code>
+### Point Location to plugin code location, in trunk the path is <code>plugins\<plugin name></code> (note: do not use <code>plugins\<plugin name>\src\org\micromanager\<plugin name></code>)
 ### Eclipse should auto-configure all sorts of useful things. 
 ## Click Next
 ###  On the Libraries tab, click Add External JARs and add all the JARs in Browse to <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> (or similar):
