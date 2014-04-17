@@ -1,0 +1,6 @@
+
+== AcquireMultipleRegions ==
+
+This plugin is designed to simplify the process of acquiring tiled images from multiple regions (e.g. multiple brain sections) on a slide. It allows you to specify multiple regions to acquire, after which you can start the acquisition and Micro-manager will automatically acquire a set of tiles covering each region you specify. This way you can walk away from the microscope while it does the time-consuming acquisition. The images can then be stitched using the Grid/Collection stitching plugin in [http://fiji.sc Fiji].
+
+To use it, you first specify
