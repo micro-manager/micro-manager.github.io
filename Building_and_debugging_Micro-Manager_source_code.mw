@@ -20,10 +20,10 @@
 
 === Mac OS X ===
 
-* [[Building Boost on MacOS X]]
-* [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2)
-* [[Building Universal Binaries on Mac OS X]]
-* [[Build on MacOS_X]]
+* [[Build on MacOS X]]
+* [[Building Boost on MacOS X]] (obsolete)
+* [[Full Build on MacOS X Leopard]] - How to install and build Micromanager 1.2 and dependencies (tested on MacOS X 10.5.2) (obsolete)
+* [[Building Universal Binaries on Mac OS X]] (obsolete)
 
 === Linux ===
 
