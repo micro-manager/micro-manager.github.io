@@ -57,14 +57,11 @@ This creates 2 new folders in the <code>mm</code> directory:
 
 == Create the Autotools files ==
 
-<code>configure</code> uses the bundled version of ImageJ:
-
 {{MessageBox|1=Commandline|2=<pre>
 
 cd ~/mm/micro-manager1.4
-./mmUnixBuild.sh
-./configure --with-imagej=/usr/local/ImageJ \
-            --with-javaincl=/usr/lib/jvm/java-7-oracle/include/
+./autogen.sh
+./configure --enable-imagej-plugin=/usr/local/ImageJ
 </pre>}}
 
 == Compile ==
