@@ -82,29 +82,9 @@ sudo make install-ijplugin
 
 = Post Install =
 
-== Create the startup script ==
+== Editing the startup script ==
 
-Micro-Manager requires the path to <code>/usr/local/lib/micro-manager</code>. Create the 4 line Bash script below in <code>/usr/local/ImageJ</code> and save it as, say, <code>/usr/local/bin/mmscript</code>.
-
-{{MessageBox|1=File: mmscript|2=<pre>
-
-#!/bin/bash
-cd /usr/local/ImageJ
-java -Xmx1439m -Xincgc -XX:PermSize=128m \
-     -Dpython.cachedir.skip=true -Dplugins.dir=/usr/local/ImageJ \
-     -Dsun.java.command=ImageJ -Djava.class.path=/usr/local/ImageJ/ij.jar \
-     -Dimagej.dir=/usr/local/ImageJ -Dij.dir=/usr/local/ImageJ \
-     -Dij.executable=/usr/local/ImageJ/ImageJ \
-     -Djava.library.path=/usr/share/java:/usr/local/lib/micro-manager \
-      ij.ImageJ -eval 'run("Micro-Manager Studio");'
-</pre>}}
-
-Make the script executable:
-
-{{MessageBox|1=Commandline|2=<pre>
-
-sudo chmod +x mmscript
-</pre>}}
+A script named <code>mmimagej</code> will have been installed in <code>/usr/local/ImageJ</code>. You might want to edit its contents to pass extra flags to Java. You may also want to put this script in your <code>PATH</code>.
 
 = Running Micro-Manager =
 
