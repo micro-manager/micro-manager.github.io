@@ -1,3 +1,5 @@
+{{Note|See [[Build on MacOS X]] for up-to-date instructions on building on OS X. If you really need to build universal binaries, look at the scripts in <code>buildscripts/nightly/nightlybuild_OSX_*.sh</code> for how to do it. It is no longer necessary to build for separate architectures and merge the binaries afterwards.}}
+
 We found the least painful way to build Universal Binaries (32-bit ppc, 32-bit intel, 64-bit intel) to be to build code for each platform individually and then use the lipo tool to combine these libraries into Universal Binaries.  The Micro-Manager repository contains scripts that will execute cross-compilation for the three platforms (see [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/nightlyBuildMMMac.sh nightlyBuildMMac.sh] and [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/buildMMMac.sh buildMMMac.sh]), however, the supporting libraries (currently, boost, libdc1394, libusb, and for 1.4 also libtiff and zlib) need to be build for each platform independently.  Below are some notes on how this can be accomplished:
 
 '''Cross-compiling Boost for three platforms:'''
