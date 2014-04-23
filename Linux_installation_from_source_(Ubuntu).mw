@@ -88,11 +88,18 @@ A script named <code>mmimagej</code> will have been installed in <code>/usr/loca
 
 = Running Micro-Manager =
 
-Start Micro-Manager  with your new script:
+Start Micro-Manager by typing:
 
 {{MessageBox|1=Commandline|2=<pre>
 
-./mmscript &
+/usr/local/ImageJ/mmimagej 2>&1 >/dev/null &
+</pre>}}
+
+To view the Core logging in the terminal while Micro-Manager is running, start simply as:
+
+{{MessageBox|1=Commandline|2=<pre>
+
+/usr/local/ImageJ/mmimagej
 </pre>}}
 
 = Appendix =
