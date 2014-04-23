@@ -14,7 +14,7 @@ Boost C++ Libraries are required to build Micro-Manager. It is easiest to instal
 
   brew install boost
 
-To build the Micro-Manager application, you also need the Java Development Kit. [http://www.oracle.com/technetwork/java/javase/downloads/ JDK 7] from Oracle is recommended. (Micro-Manager Java source code is written in Java 6. You can also use Apple JDK 6, but you will need to have an Apple developer account to download the tools needed for development.) You will also need a copy of [http://imagej.nih.gov/ij/download.html ImageJ] 1.48. Extract this to any desired location.
+To build the Micro-Manager application, you also need the Java Development Kit. [http://www.oracle.com/technetwork/java/javase/downloads/ JDK 7] from Oracle is recommended. (Micro-Manager Java source code is written in Java 6. You can also use Apple JDK 6, but you will need to have an Apple developer account to download the tools needed for development.) You will also need a copy of [http://imagej.nih.gov/ij/download.html ImageJ] 1.48 (it is best to use a clean copy, at least the first time you are building Micro-Manager). Extract this to any desired location.
 
 If you want to build the Python wrapper (MMCorePy), you will need Python 2.7 or 3.x and NumPy. These can be installed from binary distributions or using Homebrew (Python 2 is also preinstalled in OS X).
 
