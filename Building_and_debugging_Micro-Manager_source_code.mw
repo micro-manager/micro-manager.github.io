@@ -30,8 +30,8 @@
 * [[How To Build Micro Manager From Source On Ubuntu 13.10]]
 * [[Linux installation from source (Ubuntu)]]
 * [[Linux installation from source (Gentoo)]]
-* [[Building Firewire camera support on Linux]]
-* [[Compiling MM and creating deb files on 64-bit Ubuntu ]] - A log of things I needed to do to build 64-bit version of MM.
+* [[Building Firewire camera support on Linux]] (obsolete)
+* [[Compiling MM and creating deb files on 64-bit Ubuntu]] (obsolete) 
 
 
 The following DeviceAdapters require dependencies to run on GNU/Linux, some of which are packaged:
