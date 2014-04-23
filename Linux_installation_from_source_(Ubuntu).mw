@@ -29,7 +29,7 @@ You will need a subversion client to checkout the source code, several libraries
 
 {{MessageBox|1=Commandline|2=<pre>
 
-sudo apt-get install subversion build-essential automake libtool \
+sudo apt-get install subversion build-essential autoconf automake libtool \
                      libboost-all-dev zlib1g-dev swig
 </pre>}}
 
