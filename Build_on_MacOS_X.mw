@@ -1,3 +1,5 @@
+{{Note|This page is up to date for SVN r13224.}}
+
 == Getting the required tools ==
 
 It is recommended that you use OS X 10.7 or later to build Micro-Manager, although earlier versions may work without too much trouble.
