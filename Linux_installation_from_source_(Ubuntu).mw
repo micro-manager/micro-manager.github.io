@@ -1,3 +1,5 @@
+{{Note|This page has been updated for the build system changes of r13120, based on testing on Ubuntu 12.04 LTS.}}
+
 = Preparation =
 
 == Install JDK ==
