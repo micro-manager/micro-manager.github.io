@@ -31,7 +31,7 @@ The most common way to build and install Micro-Manager is to run the following, 
   ./autogen.sh
   ./configure --enable-imagej-plugin=/path/to/ImageJ
   make
-  make install-ijplugin
+  make install
 
 The last step will print instructions for how to run the installed Micro-Manager.
 
