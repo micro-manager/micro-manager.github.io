@@ -167,8 +167,4 @@ Start Micro-Manager  with your new script:
 | Andor SDK 2/3 || N/A - request from Andor website
 |}
 
-== OpenJDK instead of Sun JDK ==
-
-It may be possible to also use the distro-friendly OpenJDK (<code>default-jdk</code>) without too much effort. To start, you would have to patch the Micro-Manager <code>configure.in</code> file to find <code>jni.h</code>[https://bugzilla.redhat.com/show_bug.cgi?id=498964#c2] and possibly apply other fixes.
-
 {{Programming_Sidebar}}
