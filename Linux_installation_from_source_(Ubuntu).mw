@@ -116,7 +116,7 @@ To view the Core logging in the terminal while Micro-Manager is running, start s
 |-
 | GNU C++ || <code>build-essential</code>
 |-
-| GNU Autotools || <code>automake</code>
+| GNU Autotools || <code>autoconf</code>, <code>automake</code>
 |-
 | GNU Libtool || <code>libtool</code>
 |-
@@ -126,13 +126,21 @@ To view the Core logging in the terminal while Micro-Manager is running, start s
 |-
 | Simplified Wrapper and Interface Library || <code>swig</code>
 |-
-| Sun Java SDK || N/A - manually fetch from Oracle website
+| OpenJDK || <code>openjdk-6-jdk</code> or <code>openjdk-7-jdk</code>
 |-
 |colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Optional Dependencies:
+|-
+| Python || <code>python-dev</code>, <code>python-numpy-dev</code>
 |-
 | Firewire Camera Library || <code>libdc1394-*-dev</code>
 |-
 | Open Source Computer Vision Library || <code>libopencv-dev</code>
+|-
+| GPhoto2 || <code>libgphoto2-2-dev</code>
+|-
+| FreeImagePlus (used by GPhoto device adapter) || <code>libfreeimage-dev</code>
+|-
+| libusb 0.1 || <code>libusb-dev</code>
 |-
 | Andor SDK 2/3 || N/A - request from Andor website
 |}
