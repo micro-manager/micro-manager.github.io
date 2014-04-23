@@ -75,9 +75,10 @@ make
 
 {{MessageBox|1=Commandline|2=<pre>
 
-sudo make install
-sudo ldconfig
+sudo make install-ijplugin
 </pre>}}
+
+{{Note|If you have run <code>./configure</code> without <code>--enable-imagej-plugin</code>, you will be running <code>sudo make install</code> instead. See the build documentation for details.}}
 
 = Post Install =
 
