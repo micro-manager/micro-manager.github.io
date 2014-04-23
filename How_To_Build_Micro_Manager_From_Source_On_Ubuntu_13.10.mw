@@ -1,15 +1,16 @@
-{{Note|This page has not yet been updated to reflect the build system changes of r13120. Some of the steps below are no longer necessary, or need slight modification. See also: [[Linux installation from source (Ubuntu)]]}}
+{{Note|This page has been updated to reflect the build system changes of r13120, but the updated script has not been tested. Ask on the mailing list if you run into issues.}}
 
 Here is a small script I use to build MM on Linux to be able to test new features and develop plugins with DemoAdaptaters. I can provide help to adapt build system to your Linux. Contact me on the MM mailing list: https://micro-manager.org/wiki/Micro-Manager_Community.
 
 {{MessageBox|1=Command Line|2=<pre>
 
 # Instal dependencies
-Here you have debian packages you can install with sudo apt-get install
-Find equivalent packages for others distributions:
-subversion build-essential automake libtool \
-libboost1.54-all-dev zlib1g-dev swig \
-openjdk-7-jdk python-all-dev
+# Here you have debian packages you can install with sudo apt-get install
+# Find equivalent packages for others distributions:
+#
+# subversion build-essential autoconf automake libtool \
+# libboost1.54-all-dev zlib1g-dev swig \
+# openjdk-7-jdk python-dev python-numpy-dev
 
 mkdir mm/
 cd mm/
@@ -18,8 +19,8 @@ cd mm/
 MM_DIR=$(pwd)
 
 # Get ImageJ (use it even if you already have another copy of ImageJ or Fiji)
-wget http://rsb.info.nih.gov/ij/download/linux/ij147-linux64.zip
-unzip ij147-linux64.zip
+wget http://imagej.nih.gov/ij/download/zips/ij148.zip
+unzip ij148.zip
 
 # Retrieve MM source code (can be long)
 svn co https://valelab.ucsf.edu/svn/micromanager2/trunk micro-manager
@@ -28,45 +29,16 @@ svn co https://valelab.ucsf.edu/svn/3rdpartypublic
 # Build MM
 cd micro-manager/
 
-# Need to be run two time
-./mmUnixBuild.sh ; ./mmUnixBuild.sh
+./autogen.sh
 
-./configure --prefix=$MM_DIR/ImageJ --with-imagej=$MM_DIR/ImageJ --enable-python
+./configure --prefix=$MM_DIR/ImageJ --enable-imagej-plugin=$MM_DIR/ImageJ --with-python
 
 # Build binaries (can take a while)
 make
 
-# Install MM libs
-make install
+# Install MM as ImageJ plugin
+make install-ijplugin
 
-# Post install stuff
-cp bindist/any-platform/MMConfig_demo.cfg $MM_DIR/ImageJ
-echo 'macro "AutoRun" {
-  run("Micro-Manager Studio");
-}' >> $MM_DIR/ImageJ/macros/StartupMacros.txt
-
-# Write start MM script
-cd $MM_DIR/ImageJ
-
-# Create mmscript.sh
-echo '#!/bin/sh
-
-IJ_PATH=$(pwd)
-IJ_LIB=$IJ_PATH/lib/micro-manager
-TOOLS_JAR_PATH=$(find /usr -name tools.jar)
-
-export LD_LIBRARY_PATH=.:$IJ_LIB:$LD_LIBRARY_PATH
-export CLASSPATH=$IJ_PATH/plugins/Micro-Manager
-
-java -mx4000m \
-     -Djava.library.path=$IJ_LIB \
-     -Dplugins.dir=$IJ_PATH \
-     -cp ij.jar:$TOOLS_JAR_PATH \
-     ij.ImageJ
-' > mmscript.sh
-
-chmod +x mmscript.sh
-
-# Run MM from ImageJ folder
-# ./mmscript.sh
+# Run MM
+# $MM_DIR/mmimagej
 </pre>}}
