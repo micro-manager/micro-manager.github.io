@@ -2,18 +2,14 @@
 
 == Install JDK ==
 
-If you are building the Micro-Manager Java GUI, Java 1.6 or 1.7 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html]. The simplest way is to use [https://launchpad.net/~webupd8team/+archive/java webupd8team PPA]:
+If you are building the Micro-Manager Java GUI, Java 1.6 or 1.7 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html]. The simplest way is to use OpenJDK:
 
 {{MessageBox|1=Commandline|2=<pre>
 
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java7-installer
+sudo apt-get install openjdk-6-jdk
 </pre>}}
 
-Alternatively, you can download and run <code>jdk-7*-linux-*.bin</code> per the [https://help.ubuntu.com/community/Java#JDK_or_JRE JDK Ubuntu instructions].   [http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html Download the latest jdk-7*-linux-*.bin] from the archives (you must click "Accept License Agreement").
-
-{{Note|It may be worth trying to use [[#OpenJDK instead of Sun JDK]]}}
+(You can also use <code>openjdk-7-jdk</code>.)
 
 == Install ImageJ ==
 
