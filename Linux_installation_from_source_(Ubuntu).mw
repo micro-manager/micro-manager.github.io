@@ -1,5 +1,7 @@
 {{Note|This page has been updated for the build system changes of r13120, based on testing on Ubuntu 12.04 LTS.}}
 
+See also: <code>doc/how-to-build.md</code> in the source tree.
+
 = Preparation =
 
 == Install JDK ==
