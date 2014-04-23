@@ -53,14 +53,6 @@ This creates 2 new folders in the <code>mm</code> directory:
     ~/mm/3rdpartypublic
 </pre>
 
-Add the Beanshell and SwingX to the ImageJ plugins directory:
-
-{{MessageBox|1=Commandline|2=<pre>
-
-cd ~/mm/3rdpartypublic/classext
-sudo cp bsh-2.0b4.jar swingx-0.9.5.jar /usr/local/ImageJ/plugins/
-</pre>}}
-
 = Building Micro-Manager =
 
 == Create the Autotools files ==
