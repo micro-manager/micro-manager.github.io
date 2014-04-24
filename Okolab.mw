@@ -21,7 +21,7 @@
 ** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
 
 == Installation ==
-To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/OKO-Control%20Server%202.8.0.zip here].
+To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%20Server.zip here].
 The installation is straightforward, default settings can be used.
 
 == Configuration ==
