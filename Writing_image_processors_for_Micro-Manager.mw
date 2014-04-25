@@ -60,7 +60,7 @@ class MyProcessorPlugin implements MMProcessorPlugin {
       return MyProcessor.class;
    }  
 }
-</code>
+</div>
 
 When Micro-Manager starts up, it automatically loads all of its plugins. At this point, it will detect if your plugin is an MMProcessorPlugin, and if so, it will automatically register the corresponding DataProcessor so that it can be created. Additionally, when your plugin is selected from the "Plugins" menu, Micro-Manager will:
 
