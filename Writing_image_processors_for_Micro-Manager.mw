@@ -1,0 +1,47 @@
+Micro-Manager has an image processing pipeline. Every time the program receives an image from a camera, it is run through this pipeline, and the DataProcessors in the pipeline make modifications to the image. For example, DataProcessors can:
+
+# Rotate and mirror images so that they have the same orientation as images from other cameras or as the microscope eyepiece
+# Apply offset/gain correction
+# Generate overlaid color images for cameras that split their sensor across two different dichroics
+
+et cetera. An image goes in, the DataProcessor does some work, a different image comes out. 
+
+New DataProcessors must implement the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/DataProcessor.java <code>DataProcessor</code> interface]. This interface specifies three functions that you are required to implement: process(), makeConfigurationGUI(), and dispose(). The first function is what does the actual modification of image data; the latter two deal with creation of user interfaces for configuring the processor, and their destruction, respectively. They are optional, but if you do not implement them then your DataProcessor cannot be configured at runtime. 
+
+You can see and adjust the current image pipeline by going to the Tools -> Image Pipeline... menu option. From this dialog, all DataProcessors that Micro-Manager knows about can be seen, created, and re-ordered. To add a DataProcessor to this list, it must be ''registered''. 
+
+There are two primary ways to register a new DataProcessor. The first is to call the <code>registerProcessorClass</code> function on the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/DataProcessor.java <code>gui</code> object]. This function takes as arguments the "class" of your DataProcessor and a <code>String</code> that names it (it is this string that is displayed in the Image Pipeline's list of known processors). The class is what you get if you access the <code>.class</code> field of your processor. For example, let's say you have a DataProcessor named MyProcessor:
+
+<div class="source">
+import mmcorej.TaggedImage
+import org.micromanager.api.DataProcessor;
+import org.micromanager.acquisition.TaggedImageQueue;
+import org.micromanager.util.ReportingUtils;
+
+class MyProcessor implements DataProcessor {
+   public void process() {
+      try {
+         TaggedImage image = poll();
+         // "Poison" means the queue is empty. We just pass the poison along
+         // the queue in that case. It's not a valid image so don't try to 
+         // process it.
+         if (image != TaggedImageQueue.POISON) {
+            // ... modify the image here ...
+         }
+         produce(image);
+      }
+      catch (Exception ex) {
+         // Something went wrong; at bare minimum we should log the error.
+         ReportingUtils.logError(ex);
+      }  
+   }
+}
+</div>
+
+This particular DataProcessor does not implement makeConfigurationGUI() and dispose(), ergo it is not configurable. To register this DataProcessor, you would do this:
+
+<div class="source">gui.registerProcessorClass(MyProcessor.class, "My Processor");</div>
+
+Once this is done, the new DataProcessor will show up in the Image Pipeline dialog, where the user can add and remove it from the pipeline. 
+
+Alternately, you can create an [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/MMProcessorPlugin.java <code>MMProcessorPlugin</code> object]. These are plugins that specifically create DataProcessors when selected from Micro-Manager's "Plugins" menu.
