@@ -53,43 +53,6 @@ The dynamic loading feature (described above) is useful if you are developing yo
 :Make sure you change the "Layout Generation Style" property from "Automatic" to "Swing Layout Extensions Library" as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
 
 
-=== Configure Eclipse to edit a plugin ===
-
-# Get Micro-manager source code if you don't already have it, at least the trunk (see [http://www.micro-manager.org/wiki/Micro-Manager_Source_Code this page])
-# Install Eclipse (these instructions for Kepler)
-# Add Micro-manager's JRE to Eclipse
-## Window -> Preferences; under Java, select Installed JREs and click Add...
-### Use Standard VM
-### Set the JRE Home to <code>C:\Program Files\Micro-Manager-1.4\jre</code> (or similar).
-### Eclipse should fill in the rest.
-### Click Finish
-## Check the checkbox next to the newly-added JRE. 
-# Create a new project for Micro-Manager Studio:
-## File -> New -> Java Project...
-### Select an appropriate name (e.g. the name of the plugin)
-### Uncheck "Use Default Location"
-### Point Location to plugin code location, in trunk the path is <code>plugins\<plugin name></code> (note: do not use <code>plugins\<plugin name>\src\org\micromanager\<plugin name></code>)
-### Eclipse should auto-configure all sorts of useful things. 
-## Click Next
-###  On the Libraries tab, click Add External JARs and add all the JARs in Browse to <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> (or similar):
-### Also Add External JAR ij.jar at <code>C:\Program Files\Micro-Manager-1.4\</code> (or similar)
-### Add any other relevant JARs, or add later from Project Properties
-## Click Finish. 
-# Set up debug configuration at Project -> Properties; then Run/Debug Settings
-## Add New configuration, Java Application; click "OK"
-### Make sure the project is set to be the current project
-### Specify the main class as <code>ij.ImageJ</code>
-### At the bottom of the Arguments tab, change the working directory to "other" and browse to <code>C:\Program Files\Micro-Manager-1.4\</code>
-### Click OK
-## Make sure everything works by launching debug view from Run -> Debug
-# To build a JAR file
-## File -> Export (or right click on the project in the Project Explorer, select Export)
-## Select Java -> JAR file, then click "Next"
-## Point JAR export location to <code>C:\Program Files\Micro-Manager-1.4\mmplugins\<plugin name> </code>
-## Click "Finish"
-
-
-
 
 
 {{Programming_Sidebar}}
