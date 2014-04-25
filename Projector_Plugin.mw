@@ -87,7 +87,7 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 | Number of times to target a group of ROIs.
 |- valign="top"
 | Spot dwell time
-| Stops photo illumination after a certain interval. (Does not affect pulsed lasers.) 
+| Stops photo illumination after a certain interval. (Does not affect pulsed lasers or the Rapp Optoelectronic UGA-40.) 
 |- valign="top"
 | Run ROIs now!
 | Fires ROIs drawn on current image.
