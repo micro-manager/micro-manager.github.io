@@ -1,0 +1,13 @@
+== ThorlabsAPTStage adapter ==
+
+<table cellspacing=3><tr><td>
+'''Summary:'''</td><td valign="top">Interface to Thorlabs APT family linear stages</td></tr>
+<tr><td>'''Author:'''</td><td>Emilio J. Gualda and Egor Zindy</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows (32-bit only)</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.4.17</td></tr>
+</table>
+
+Requires 32-bit Micro-Manager.
+
+{{Devices_Sidebar}}
