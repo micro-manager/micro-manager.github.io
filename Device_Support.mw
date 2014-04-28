@@ -107,6 +107,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ThorlabsDCStage]] - Thorlabs Linear Stages using the TDC001 Controller (see also: [[ThorlabsAPTStage]])
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
+* [[ThorlabsMFC1]] - Thorlabs MFC1 Motorized Microscope Focus Controller
 * [[ThorlabsSC10]] - Thorlabs shutter controller
 * [[Tofra]] - XY and Z stages, filter wheel, motorized filter cube slider, and LED illuminator
 * [[Vincent]] - Vincent Uniblitz controllers
