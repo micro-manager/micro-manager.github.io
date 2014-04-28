@@ -6,7 +6,7 @@ Micro-Manager has an image processing pipeline. Every time the program receives 
 
 et cetera. An image goes in, the DataProcessor does some work, a different image comes out. 
 
-New DataProcessors must implement the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/DataProcessor.java <code>DataProcessor</code> interface]. This interface specifies three functions that you are required to implement: process(), makeConfigurationGUI(), and dispose(). The first function is what does the actual modification of image data; the latter two deal with creation of user interfaces for configuring the processor, and their destruction, respectively. They are optional, but if you do not implement them then your DataProcessor cannot be configured at runtime. 
+New DataProcessors must implement the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/DataProcessor.java <code>DataProcessor</code> interface]. This interface specifies three functions: process(), makeConfigurationGUI(), and dispose(). The first function is what does the actual modification of image data (and is required to be implemented); the latter two deal with creation of user interfaces for configuring the processor, and their destruction, respectively. They are optional, but if you do not implement them then your DataProcessor cannot be configured at runtime. 
 
 You can see and adjust the current image pipeline by going to the Tools -> Image Pipeline... menu option. From this dialog, all DataProcessors that Micro-Manager knows about can be seen, created, and re-ordered. To add a DataProcessor to this list, it must be ''registered''. 
 
