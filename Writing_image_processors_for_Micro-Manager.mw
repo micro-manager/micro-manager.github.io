@@ -13,7 +13,7 @@ You can see and adjust the current image pipeline by going to the Tools -> Image
 There are two primary ways to register a new DataProcessor. The first is to call the <code>registerProcessorClass</code> function on the [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/mmstudio/src/org/micromanager/api/DataProcessor.java <code>gui</code> object]. This function takes as arguments the "class" of your DataProcessor and a <code>String</code> that names it (it is this string that is displayed in the Image Pipeline's list of known processors). The class is what you get if you access the <code>.class</code> field of your processor. For example, let's say you have a DataProcessor named MyProcessor:
 
 <div class="source">
-import mmcorej.TaggedImage
+import mmcorej.TaggedImage;
 import org.micromanager.api.DataProcessor;
 import org.micromanager.acquisition.TaggedImageQueue;
 import org.micromanager.util.ReportingUtils;
