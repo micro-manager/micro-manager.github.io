@@ -41,7 +41,7 @@ class MyProcessor implements DataProcessor {
 }
 </div>
 
-This particular DataProcessor does not implement makeConfigurationGUI() and dispose(), ergo it is not configurable. To register this DataProcessor, you would do this:
+This particular DataProcessor does not implement makeConfigurationGUI() and dispose(), ergo it is not configurable. To register this DataProcessor, first you should compile it and put the <code>.class</code> file in the ''mmplugins'' directory. Then, in your code, you would do this:
 
 <div class="source">gui.registerProcessorClass(MyProcessor.class, "My Processor");</div>
 
