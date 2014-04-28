@@ -31,7 +31,7 @@ Here you tell the GUI which Micro-manager devices fill which roles in the SPIM s
 
 "Path A" and "Path B" refer to the two light paths.  The scanner (AKA MicroMirror or Galvo) and illumination piezo will be one one side of the physical microscope, and the imaging piezo and camera will be on the opposite side.
 
-[[File:DiSPIMDevices.png|800px]]
+[[File:DiSPIMDevices.png|650px]]
 
 For the scanner, the first axes on the card should always be associated with "Path A", e.g. for a card with axes ABCD the Micro-manager galvo device with axes A and B should be set as the scanner for Imaging Path A.  This is because the SPIM operation always begins with the first pair of axes on the card.
 
