@@ -62,6 +62,8 @@ In the future you will select the SPIM stack mode here, but currently only one m
 
 This tab is used for alignment and to specify the imaged volume, one for imaging path A and the other for path B.
 
+[[File:DiSPIMSetup.png|650px|right]]
+
 Each tab has an independent set of joystick controls, beam controls, and camera control.  All of these are activated when the tab is selected; i.e. the joystick settings can be separately specified for the different tabs, etc. The joystick settings are automatically selected when switching to the tab.  The beams settings on this panel will be automatically set on changing to this tab if the "Change settings on tab activate" box is selected, otherwise the beam settings will remain the same as they were before switching tabs.  The beam control uses the scanner "blanking" feature, so it assumes that both scanners have input light (e.g. a passive splitter between the laser and the scanner).  Unless the "No change" option is selected, the camera will automatically be set to the specified camera when the tab is selected.
 
 The sheet/slice position and the imaging piezo need to be co-aligned at the two extremes of the region of interest.  Then during SPIM acquisition, the controller will move both together between these two extremes and collect the number of slices requested.
