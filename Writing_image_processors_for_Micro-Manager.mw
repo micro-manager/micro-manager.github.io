@@ -10,7 +10,7 @@ New DataProcessors must implement the [https://valelab.ucsf.edu/trac/micromanage
 
 You can see and adjust the current image pipeline by going to the Tools -> Image Pipeline... menu option. From this dialog, all DataProcessors that Micro-Manager knows about can be seen, created, and re-ordered. To add a DataProcessor to this list, it must be ''registered''. 
 
-There are two primary ways to register a new DataProcessor. The first is to call the <code>registerProcessorClass</code> function on the [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/DataProcessor.java <code>gui</code> object]. This function takes as arguments the "class" of your DataProcessor and a <code>String</code> that names it (it is this string that is displayed in the Image Pipeline's list of known processors). The class is what you get if you access the <code>.class</code> field of your processor. For example, let's say you have a DataProcessor named MyProcessor:
+There are two primary ways to register a new DataProcessor. The first is to call the <code>registerProcessorClass</code> function on the [https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/ScriptInterface.java <code>gui</code> object]. This function takes as arguments the "class" of your DataProcessor and a <code>String</code> that names it (it is this string that is displayed in the Image Pipeline's list of known processors). The class is what you get if you access the <code>.class</code> field of your processor. For example, let's say you have a DataProcessor named MyProcessor:
 
 <div class="source">
 import mmcorej.TaggedImage;
