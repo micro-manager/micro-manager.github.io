@@ -14,8 +14,11 @@ There are two primary ways to register a new DataProcessor. The first is to call
 
 <div class="source">
 import mmcorej.TaggedImage;
+
 import org.micromanager.api.DataProcessor;
+
 import org.micromanager.acquisition.TaggedImageQueue;
+
 import org.micromanager.util.ReportingUtils;
 
 class MyProcessor implements DataProcessor {
