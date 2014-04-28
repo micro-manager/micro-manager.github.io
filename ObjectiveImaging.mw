@@ -1,0 +1,13 @@
+== Objective Imaging OASIS adapter ==
+
+<table cellspacing=3><tr><td>
+'''Summary:'''</td><td valign="top">Interface to Objective Imaging OASIS controller</td></tr>
+<tr><td>'''Author:'''</td><td>Egor Zindy</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.4.17</td></tr>
+</table>
+
+Requires the [http://www.objectiveimaging.com/download/software.php OASIS Software] package from Objective Imaging.
+
+{{Devices_Sidebar}}
