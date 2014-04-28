@@ -31,6 +31,8 @@ Here you tell the GUI which Micro-manager devices fill which roles in the SPIM s
 
 "Path A" and "Path B" refer to the two light paths.  The scanner (AKA MicroMirror or Galvo) and illumination piezo will be one one side of the physical microscope, and the imaging piezo and camera will be on the opposite side.
 
+[[File:DiSPIMDevices.png|800px]]
+
 For the scanner, the first axes on the card should always be associated with "Path A", e.g. for a card with axes ABCD the Micro-manager galvo device with axes A and B should be set as the scanner for Imaging Path A.  This is because the SPIM operation always begins with the first pair of axes on the card.
 
 For the piezo objective movers, the Tiger controller has hardware connections (internal TTL control) which define which Piezo card is used for "Path A" and which is for "Path B".  Hence, care must be taken to tell the GUI the correct piezo card for each path.  In ASI's default controller configuration, piezo axis "P" is the imaging piezo for "Path A" and axis "Q" is the imaging piezo for "Path B".  If in doubt about your controller configuration, please contact ASI.  The imaging piezo is the one specified in the Device panel.
