@@ -26,7 +26,7 @@ __NOTOC__
 
 * New plugins
 ** [[AcquireMultipleRegions|Acquire Multiple Regions]] Automatically acquire multiple regions of a sample (Kurt Thorn)
-** [[AutoLase]]: Real-time closed-loop control of density of photoactivated molecules during PALM measurement (Seamus Holden)
+** [[AutoLase]]: Real-time closed-loop control of density of photoactivated molecules during PALM measurement (Thomas Pengo, Seamus Holden)
 ** [[Tracker Plugin|Live Tracking]] (revived): Use image correlation to countersteer the XY stage (Nico Stuurman, Mark Tsuchida)
 ** [[pgFocus]]: Control the pgFocus open-source software/hardware focus stabilization device (Karl Bellve)
 
