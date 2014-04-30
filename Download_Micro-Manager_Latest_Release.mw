@@ -45,7 +45,6 @@ __NOTOC__
 ** [[pgFocus]]: pgFocus (open-source software/hardware focus stabilization device) (Karl Bellve)
 ** [[PICAM]]: Princeton Instruments cameras, using the PICAM SDK (Toshio Suzuki)
 ** [[ThorlabsAPTStage]]: Thorlabs APT family linear stages (a newly extended version of ThorlabsDCStage) (Egor Zindy)
-** [[ThorlabsDCStage]]: See [[ThorlabsAPTStage]]
 ** [[ThorlabsMFC1]]: Thorlabs MFC1 Motorized Microscope Focus Controller (Thomas Zangle)
 
 * New closed-source device adapters
@@ -62,6 +61,7 @@ __NOTOC__
 ** [[PI_GCS_2]]: Add support for C-865 and E-816 (E-665, E-625, E-621) with firmware < 2.11; added E-709 and C-884 as preconfigured controller; default axis names are now "1" and "2"; fixed hang with C-867.262; other fixes and enhancements (Steffen Rau, Physik Instrumente)
 ** [[Piper]]: Reinstated (was missing from 1.4.16 due to build compatibility issues); improved handling of property updates (Terry Sprout for Stanford Photonics)
 ** [[PVCAM]]: Add ExposeOutMode property; support new trigger modes for OptiMos; various fixes; OptiMos users should update to PVCAM 3.0.1.2 (Lubomir Walder, Photometrics)
+** [[ThorlabsDCStage]]: See new [[ThorlabsAPTStage]]
 ** [[TISCam]]: Support Y16 mode; add white balance red/blue properties (Falk Dettmer)
 ** [[XCiteLed]]: Fix issue caused by comma in property name (Mark Tsuchida)
 ** [[XIMEA]]: Fix bit depth reported by camera (Egor Zindy)
