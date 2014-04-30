@@ -1,4 +1,83 @@
 __NOTOC__
+== Micro-Manager 1.4.16 (January 31, 2014) ==
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.16.exe Windows 32-bit], 50 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.16.exe Windows 64-bit], 50 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.16.dmg Mac OS X (Universal Binary)], 46 MB<br />
+
+=== Changes in 1.4.16 (since 1.4.15) ===
+
+* New in the main application
+** Optimize handling and display of images at high framerate and of large RGB images (Nico Stuurman, Henry Pinkard, Arthur Edelstein)
+** High-throughput acquisition pipeline (former "Fast Storage" in Tools > Options) is now always enabled
+** Display images using LUTs via popup menu in Contrast panel (Nico Stuurman)
+** Display time in hours and minutes for long acquisitions (Hadrien Mary, Mark Tsuchida)
+** Bugfixes for hardware-triggered sequence acquisition (Arthur Edelstein)
+** Improvements and bugfixes to OME metadata (Henry Pinkard)
+** Stage position list is now included in the summary metadata (InitialPositionList property) (Mark Tsuchida, Henry Pinkard)
+** Do not save corrupted image files on certain non-English version of Windows (e.g. Chinese) (Mark Tsuchida)
+** Lots of additional bugfixes (Nico Stuurman, Nenad Amodaj, Henry Pinkard, Mark Tsuchida)
+
+* New plugins
+** [[ASIdiSPIM_Plugin|ASI diSPIM]] - Control the ASI iSPIM and diSPIM (Jon Daniels, ASI, and Nico Stuurman)
+** [[MultiChannelShading]] - Independent shading correction (flat-fielding) of multiple channels (Kurt Thorn)
+
+* Updated plugins
+** Data Browser: No longer missing on Windows
+** Localization Microscopy: Add support for MLE for fitting (Nico Stuurman, Arthur Edelstein)
+** Projector: Improve SLM support and calibration (Arthur Edelstein)
+** Live Replay: Bugfixes (Nico Stuurman)
+** Stage Control: Select Z axis, adapt to stage availability, display Z position (Nico Stuurman)
+
+* New device adapters
+** BiostepEagleIce - biostep EagleIce camera (Jens Gl√§ser, biostep GmbH)
+** Piezosystem_NV40_1, Piezosystem_NV40_3, and Piezosystem_NV120_1 (Chris Belter, piezosystem jena)
+** XLight - CrestOptics X-Light spinning disc confocal unit (Enzo Chiarappa, CrestOptics)
+** Zaber - Zaber ASR microscope stage (Nathan Dyer, Zaber Technologies)
+
+* New closed-source device adapters
+** OlympusIX83 (Arthur Edelstein; thanks to those who helped with testing)
+
+* Updated device adapters
+** ABS: Fix issue with USB 3.0 cameras (ABS GmbH Jena)
+** AndorSDK3: Support for AOIs larger than sensor size; Add timeout property for external trigger (Norman Glasgow, Andor Technology)
+** Arduino: Bigfix for Blanking setting (Nico Stuurman, Mark Tsuchida)
+** ASITiger: Lots of bugfixes and new functionality (Jon Daniels, ASI)
+** GigECamera: Use JAI SDK 1.4.1; some bugfixes (Mark Tsuchida)
+** IDS_uEye: Fix pixel clock, framerate, and exposure settings (Wenjamin Rosenfeld)
+** Ludl: Support 10-position filter wheels (Nico Stuurman)
+** LumencorSpectra: Bugfixes (Mark Tsuchida)
+** MCCDAQ: Fix DAC channels 5-7, allow to use with DAShutter (Mark Tsuchida)
+** MoticCamera: Support 16-bit and 48-bit images (Jin Chen, Motic)
+** PCO_Generic: Improve support for pco.edge, color image transfer; add support for white balancing, double shutter, IR mode, and Sensicam gain setting (Franz Reitner, PCO AG) 
+** PI_GCS_2: Improve communication latency; fix issue with C-867.262 (Richard Montbrun and Steffen Rau, Physik Instrumente)
+** Prior: Add speed and acceleration control for Z (Korbinian Kapsner)
+** PVCAM: Fix bug that prevented shutter from closing after acquisition; Bugfixes for ROI of binned images and other issues (Lubomir Walder, Photometrics)
+** Rapp: User no longer needs to install DLLs
+** ScopeLED: Lots of improvements; simplify properties (Ryan Clark, DiCon/ScopeLED)
+** SpectralLMM5: Support USB (HID) on Windows (Mark Tsuchida)
+** ThorlabsUSBCamera: Improve exposure setting handling (Nenad Amodaj)
+** TISCam: Add support for Y16 and RGB24 mode (Falk Dettmar)
+** XCite120PC_Exacte: Fix communication issues (Lon Chu, Mission Bay Imaging for Lumen Dynamics)
+** ZeissCAN: Enable control of XY stage via MCU 28 directly connected to computer (Mark Tsuchida)
+** ZeissCAN29: Add support for reflected light switcher and external lamp mirror (Nico Stuurman)
+
+* Updated closed-source device adapters
+** ESImagingIOController: Fix sporadic errors in shutter (Ed Simmons)
+** HamamatsuHam: Bugfixes and enhancements (Patrick Gregorio, Hamamatsu Photonics)
+** NikonTI: Robustify PFS single-focus cycle (Mark Tsuchida)
+** RaptorEPIX: Support for Kingfisher cameras (David Biggs, Raptor Photonics)
+
+* Changes of interest to developers
+** Uncaught Java exceptions in threads and event handlers are now logged (Mark Tsuchida)
+** Better support for SLM devices, including triggering (Arthur Edelstein)
+** AddAvailableDeviceName() is deprecated; use RegisterDevice() instead (Mark Tsuchida)
+** On Windows, C++ components are now built with Visual Studio 2010 SP 1 (Mark Tsuchida)
+** Visual Studio projects now use common property sheet files (Mark Tsuchida)
+** On Windows, device adapters link to MMDevice static library rather than including source (Mark Tsuchida)
+** On Windows, Structured Exception Handling is disabled in all C++ components (Mark Tsuchida)
+** Acquisition scripting API refactoring (Nenad Amodaj)
+
 == Micro-Manager 1.4.15 (September 23, 2013) ==
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.15.exe Windows 32-bit], 50 MB<br />
