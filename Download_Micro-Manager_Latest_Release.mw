@@ -32,7 +32,7 @@ __NOTOC__
 
 * Updated plugins
 ** [[ASIdiSPIM Plugin|ASIdiSPIM]]: Numerous enhancements (Jon Daniels, ASI; Nico Stuurman)
-** [[BFCorrector]]: Fix handling of 16-bit pixels; marked BFCorrector as obsolete as it is superseded by MultiChannelShading
+** BFCorrector: Fix handling of 16-bit pixels; marked BFCorrector as obsolete as it is superseded by MultiChannelShading
 ** [[MultiChannelShading|Multi-Channel Shading]]: Fix crash when defining new groups (Kurt Thorn)
 ** [[Projector]]: Enhancements to ROI support (Arthur Edelstein)
 ** [[Stage Control]]: Wait for device to finish movement before updating displayed position (Nico Stuurman)
