@@ -52,7 +52,7 @@ For building the Java and Clojure components using Ant, the following environmen
 
 === Directory layout ===
 
-Create a directory named <code>projects</code> (the name is not important, but we will refer to this name below). The <code>projects</code> directory may reside anywhere you like and will contain the subdirectories <code>micromanager</code>, <code>3rdpartypublic</code>, and (optionally) <code>3rdparty</code>.
+Create a directory named <code>projects</code> (the name is not important, but we will refer to this name below). The <code>projects</code> directory may reside anywhere you like (but paths containing spaces and special characters should be avoided) and will contain the subdirectories <code>micromanager</code>, <code>3rdpartypublic</code>, and (optionally) <code>3rdparty</code>.
 
 All directories mentioned below that don't start with <code>project</code> are relative to <code>projects\micromanager</code>.
 
