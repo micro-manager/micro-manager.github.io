@@ -1,85 +1,106 @@
 __NOTOC__
 
-== Micro-Manager 1.4.16 (January 31, 2014) ==
+== Micro-Manager 1.4.17 (April 30, 2014) ==
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.16.exe Windows 32-bit], 50 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.16.exe Windows 64-bit], 50 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.16.dmg Mac OS X (Universal Binary)], 46 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.17.exe Windows 32-bit], 55 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.17.exe Windows 64-bit], 57 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.17.dmg Mac OS X (Universal Binary)], 43 MB<br />
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
-=== Changes in 1.4.16 (since 1.4.15) ===
+=== Changes in 1.4.17 (since 1.4.16) ===
 
 * New in the main application
-** Optimize handling and display of images at high framerate and of large RGB images (Nico Stuurman, Henry Pinkard, Arthur Edelstein)
-** High-throughput acquisition pipeline (former "Fast Storage" in Tools > Options) is now always enabled
-** Display images using LUTs via popup menu in Contrast panel (Nico Stuurman)
-** Display time in hours and minutes for long acquisitions (Hadrien Mary, Mark Tsuchida)
-** Bugfixes for hardware-triggered sequence acquisition (Arthur Edelstein)
-** Improvements and bugfixes to OME metadata (Henry Pinkard)
-** Stage position list is now included in the summary metadata (InitialPositionList property) (Mark Tsuchida, Henry Pinkard)
-** Do not save corrupted image files on certain non-English version of Windows (e.g. Chinese) (Mark Tsuchida)
-** Lots of additional bugfixes (Nico Stuurman, Nenad Amodaj, Henry Pinkard, Mark Tsuchida)
+** Make Tile Creator ("Create Grid") use the correct stages (Nico Stuurman)
+** Tile Creator "Center Here" button no longer immediately closes the dialog (Chris Weisiger)
+** Fix bug in position list where removing multiple positions could cause the wrong positions to be removed (Chris Weisiger)
+** Plugins menu is now organized into categories, sorted alphabetically, and has improved tooltips (Nico Stuurman, Mark Tsuchida)
+** New "Report Problem" interface (Mark Tsuchida)
+** Script Panel has improved syntax highlighting, line numbers, and code folding (Nico Stuurman)
+** Make "display fps" reflect reality (Nico Stuurman)
+** Fix bug that caused some debug logging entries to be logged even when debug logging is off (Mark Tsuchida)
+** Fix a memory leak that could occur during long sequence acquisitions (Mark Tsuchida)
+** MAC address enumeration issue on Linux is fixed (Erik Hvatum)
+** Add cancel button to splash screen (Nico Stuurman)
+** Various bigfixes and minor enhancements (Nico Stuurman, Henry Pinkard, Arthur Edelstein, Chris Weisiger, Mark Tsuchida)
 
 * New plugins
-** [[ASIdiSPIM_Plugin|ASI diSPIM]] - Control the ASI iSPIM and diSPIM (Jon Daniels, ASI, and Nico Stuurman)
-** [[MultiChannelShading]] - Independent shading correction (flat-fielding) of multiple channels (Kurt Thorn)
+** [[AcquireMultipleRegions|Acquire Multiple Regions]] Automatically acquire multiple regions of a sample (Kurt Thorn)
+** [[AutoLase]]: Real-time closed-loop control of density of photoactivated molecules during PALM measurement (Seamus Holden)
+** [[Tracker Plugin|Live Tracking]] (revived): Use image correlation to countersteer the XY stage (Nico Stuurman, Mark Tsuchida)
+** [[pgFocus]]: Control the pgFocus open-source software/hardware focus stabilization device (Karl Bellve)
 
 * Updated plugins
-** Data Browser: No longer missing on Windows
-** Localization Microscopy: Add support for MLE for fitting (Nico Stuurman, Arthur Edelstein)
-** Projector: Improve SLM support and calibration (Arthur Edelstein)
-** Live Replay: Bugfixes (Nico Stuurman)
-** Stage Control: Select Z axis, adapt to stage availability, display Z position (Nico Stuurman)
+** [[ASIdiSPIM Plugin|ASIdiSPIM]]: Numerous enhancements (Jon Daniels, ASI; Nico Stuurman)
+** [[BFCorrector]]: Fix handling of 16-bit pixels; marked BFCorrector as obsolete as it is superseded by MultiChannelShading
+** [[MultiChannelShading|Multi-Channel Shading]]: Fix crash when defining new groups (Kurt Thorn)
+** [[Projector]]: Enhancements to ROI support (Arthur Edelstein)
+** [[Stage Control]]: Wait for device to finish movement before updating displayed position (Nico Stuurman)
 
 * New device adapters
-** BiostepEagleIce - biostep EagleIce camera (Jens Gl√§ser, biostep GmbH)
-** Piezosystem_NV40_1, Piezosystem_NV40_3, and Piezosystem_NV120_1 (Chris Belter, piezosystem jena)
-** XLight - CrestOptics X-Light spinning disc confocal unit (Enzo Chiarappa, CrestOptics)
-** Zaber - Zaber ASR microscope stage (Nathan Dyer, Zaber Technologies)
+** [[CONEX]]: Newport CONEX-CC DC-Servo Controller (Newport)
+** [[IIDC]]: IIDC 1394 cameras (future replacement for [[dc1394]], currently monochrome only) (Mark Tsuchida)
+** [[MoticCamera]] (new on OS X): Motic cameras (Motic)
+** [[ObjectiveImaging]]: Objective Imaging OASIS controller (Egor Zindy)
+** [[pgFocus]]: pgFocus (open-source software/hardware focus stabilization device) (Karl Bellve)
+** [[PICAM]]: Princeton Instruments cameras, using the PICAM SDK (Toshio Suzuki)
+** [[ThorlabsAPTStage]]: Thorlabs APT family linear stages (a newly extended version of ThorlabsDCStage) (Egor Zindy)
+** [[ThorlabsDCStage]]: See [[ThorlabsAPTStage]]
+** [[ThorlabsMFC1]]: Thorlabs MFC1 Motorized Microscope Focus Controller (Thomas Zangle)
 
 * New closed-source device adapters
-** OlympusIX83 (Arthur Edelstein; thanks to those who helped with testing)
+** [[Mosaic3]]: Andor Mosaic 3 Digital Mirror Device (Arthur Edelstein for Andor)
 
 * Updated device adapters
-** ABS: Fix issue with USB 3.0 cameras (ABS GmbH Jena)
-** AndorSDK3: Support for AOIs larger than sensor size; Add timeout property for external trigger (Norman Glasgow, Andor Technology)
-** Arduino: Bigfix for Blanking setting (Nico Stuurman, Mark Tsuchida)
-** ASITiger: Lots of bugfixes and new functionality (Jon Daniels, ASI)
-** GigECamera: Use JAI SDK 1.4.1; some bugfixes (Mark Tsuchida)
-** IDS_uEye: Fix pixel clock, framerate, and exposure settings (Wenjamin Rosenfeld)
-** Ludl: Support 10-position filter wheels (Nico Stuurman)
-** LumencorSpectra: Bugfixes (Mark Tsuchida)
-** MCCDAQ: Fix DAC channels 5-7, allow to use with DAShutter (Mark Tsuchida)
-** MoticCamera: Support 16-bit and 48-bit images (Jin Chen, Motic)
-** PCO_Generic: Improve support for pco.edge, color image transfer; add support for white balancing, double shutter, IR mode, and Sensicam gain setting (Franz Reitner, PCO AG) 
-** PI_GCS_2: Improve communication latency; fix issue with C-867.262 (Richard Montbrun and Steffen Rau, Physik Instrumente)
-** Prior: Add speed and acceleration control for Z (Korbinian Kapsner)
-** PVCAM: Fix bug that prevented shutter from closing after acquisition; Bugfixes for ROI of binned images and other issues (Lubomir Walder, Photometrics)
-** Rapp: User no longer needs to install DLLs
-** ScopeLED: Lots of improvements; simplify properties (Ryan Clark, DiCon/ScopeLED)
-** SpectralLMM5: Support USB (HID) on Windows (Mark Tsuchida)
-** ThorlabsUSBCamera: Improve exposure setting handling (Nenad Amodaj)
-** TISCam: Add support for Y16 and RGB24 mode (Falk Dettmar)
-** XCite120PC_Exacte: Fix communication issues (Lon Chu, Mission Bay Imaging for Lumen Dynamics)
-** ZeissCAN: Enable control of XY stage via MCU 28 directly connected to computer (Mark Tsuchida)
-** ZeissCAN29: Add support for reflected light switcher and external lamp mirror (Nico Stuurman)
+** [[Andor]]: Fix actual interval property and error during external trigger; Fix spurious noise filter control (Matthew Milford, Andor)
+** [[AndorLaserCombiner]]: Add SaveLifetime and IsLinear properties; allow TTL option in Enable property (Pariksheet Nanda)
+** [[AndorSDK3]]: Add support for Auxiliary Out TTL I/O pin; Linux support; various bugfixes (Norman Glasgow, Andor; Erik Hvatum)
+** [[ASITiger]]: Add property to reverse axis directions and interchange X and Y; various fixes and minor enhancements (Jon Daniels, ASI)
+** [[IDS_uEye]]: Add color support, bit depth selection, and external trigger; improve binning support (Wenjamin Rosenfeld)
+** [[NikonTE2000]]: Fix Uniblitz shutter support (Mark Tsuchida)
+** [[PCO_Camera]]: Fixed time setting, ROI, and binning issues; tested simultaneous full-fps acquisition with two pco.edge_4.2 using Multi Camera; various bugfixes (Franz Reitner, PCO)
+** [[PI_GCS_2]]: Add support for C-865 and E-816 (E-665, E-625, E-621) with firmware < 2.11; added E-709 and C-884 as preconfigured controller; default axis names are now "1" and "2"; fixed hang with C-867.262; other fixes and enhancements (Steffen Rau, Physik Instrumente)
+** [[Piper]]: Reinstated (was missing from 1.4.16 due to build compatibility issues); improved handling of property updates (Terry Sprout for Stanford Photonics)
+** [[PVCAM]]: Add ExposeOutMode property; support new trigger modes for OptiMos; various fixes; OptiMos users should update to PVCAM 3.0.1.2 (Lubomir Walder, Photometrics)
+** [[TISCam]]: Support Y16 mode; add white balance red/blue properties (Falk Dettmer)
+** [[XCiteLed]]: Fix issue caused by comma in property name (Mark Tsuchida)
+** [[XIMEA]]: Fix bit depth reported by camera (Egor Zindy)
+** [[XLight]]: Fixes and enhancements (Enzo Chiarappa, Crestoptics)
+** [[ZeissCAN]]: Add StepSize property to XYStage (Nico Stuurman)
+** [[ZeissCAN29]]: Add ND filter wheel support; change condenser position limit from 7 to 8 (Nico Stuurman)
 
 * Updated closed-source device adapters
-** ESImagingIOController: Fix sporadic errors in shutter (Ed Simmons)
-** HamamatsuHam: Bugfixes and enhancements (Patrick Gregorio, Hamamatsu Photonics)
-** NikonTI: Robustify PFS single-focus cycle (Mark Tsuchida)
-** RaptorEPIX: Support for Kingfisher cameras (David Biggs, Raptor Photonics)
+** [[HamamatsuHam]]: Added support for Defect Correct Mode (Patrick Gregorio, Hamamatsu)
+** [[NikonTI]]: No longer crash when loading DiaLamp (remaining bug: config may need to be loaded twice) (Mark Tsuchida)
+
+* Retired device adapters
+** [[Hamamatsu]] on Windows: Please use HamamatsuHam instead
+
+* Changes to the scripting API
+** <code>createAcquisition()</code> is deprecated (use <code>openAcquisition()</code>)
+** <code>getAcquisition()</code>, <code>getAcqDlg()</code>, and <code>getXYPosListDlg()</code> are deprecated
+** <code>getAcqusitionSettings()</code> (sic.) is now <code>getAcquisitionSettings()</code>
+** <code>propmtToSaveAcqusition()</code> (sic.) is now <code>promptToSaveAcquisition()</code>
+** Deleted previously deprecated methods.
+
+* Changes to the MMCore API
+** Added overloads of <code>getShutterOpen()</code> and <code>setShutterOpen()</code> that take the shutter device label as an argument
+** Three methods now throw <code>CMMError</code>: <code>definePixelSizeConfig()</code> (two overloaded methods), <code>isPixelSizeConfigDefined()</code>
+
+* Changes to the MMDevice API
+** None
 
 * Changes of interest to developers
-** Uncaught Java exceptions in threads and event handlers are now logged (Mark Tsuchida)
-** Better support for SLM devices, including triggering (Arthur Edelstein)
-** AddAvailableDeviceName() is deprecated; use RegisterDevice() instead (Mark Tsuchida)
-** On Windows, C++ components are now built with Visual Studio 2010 SP 1 (Mark Tsuchida)
-** Visual Studio projects now use common property sheet files (Mark Tsuchida)
-** On Windows, device adapters link to MMDevice static library rather than including source (Mark Tsuchida)
-** On Windows, Structured Exception Handling is disabled in all C++ components (Mark Tsuchida)
-** Acquisition scripting API refactoring (Nenad Amodaj)
+** Micro-Manager 1.4.17 is SVN r13272, 3rdpartypublic r163
+** The paths from which to load the MMCoreJ_wrap native library and device adapters are now configurable; the default for device adapters is the directory containing the MMCoreJ_wrap or MMCorePy_wrap library (Mark Tsuchida)
+** Fixed loading of MMCoreJ_wrap native library when running on Java 7 on OS X (Mark Tsuchida)
+** Unix build scripts (using GNU build system) have been substantially updated (Mark Tsuchida)
+** Unix 'make install' can create launch script (Mark Tsuchida)
+** MMCorePy built on OS X or Linux is no longer broken (Mark Tsuchida)
+** Mac OS X binaries are now built with Xcode 5.x (previously 3.2) (Mark Tsuchida)
+** Mac OS X binaries no longer contain PowerPC support (Mark Tsuchida)
+** Visual studio 2010 Debug builds of MMCoreJ_wrap.dll should now work on computers that do not have Visual Studio 2008 installed (Mark Tsuchida)
+** Communication over FTDI USB-serial interface now sends 1 USB packet per message, rather than breaking up messages into bytes (Mark Tsuchida)
 
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
