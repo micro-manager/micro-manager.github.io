@@ -22,6 +22,6 @@ Property Notes
 '''Known limitations:'''
 * CRISP supported was added 25-Sep-2013.  Besides requiring a Micro-manager build after that date, it also requires card firmware after that date.
 * Shutter control is currently not supported.  It may be possible to control with the stand-alone CRISP device adapter.  The author will add support on request.
-* TTL-triggered sequences not yet supported due to lack of firmware support.
+* TTL-triggered piezo sequences not yet supported due to lack of firmware support.
 
 {{Devices_Sidebar}}
