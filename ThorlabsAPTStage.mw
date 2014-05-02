@@ -1,13 +1,104 @@
-== ThorlabsAPTStage adapter ==
+{| style="text-align: left"
+!Summary:
+|Interfaces with Thorlabs APT devices and controllers.
+|- valign="top"
+!Authors:
+|Emilio J. Gualda and Egor Zindy
+|- valign="top"
+!Maintainers:
+|Egor Zindy
+|-
+!License:
+|BSD
+|-
+!Platforms:
+|Windows (32 bit only)
+|- valign="top"
+!Devices:
+|TDC001, ...
+|}
+----
 
-<table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Interface to Thorlabs APT family linear stages</td></tr>
-<tr><td>'''Author:'''</td><td>Emilio J. Gualda and Egor Zindy</td></tr>
-<tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Windows (32-bit only)</td></tr>
-<tr><td>'''Available since version:'''</td><td>1.4.17</td></tr>
-</table>
+== Introduction ==
 
-Requires 32-bit Micro-Manager.
+From the [http://www.thorlabs.de/software_pages/ViewSoftwarePage.cfm?Code=apt Thorlabs APT page]: The APT family comprises a wide range of motion controller products ranging from small, low-power, single-channel optomechanical drivers (T-Cube Series) to high-power, multi-channel, modular 19" rack nanopositioning systems (the APT Rack System). The APT System Software is a common software platform for all controllers in the APT family.
+
+The ThorlabsAPTStage adapter aims to provide a unified adapter for all the Thorlabs APT stages.
+
+== Requirements ==
+
+The device adapter requires 32-bit Micro-Manager and the APT.dll file, which should be copied to the Micro-manager folder. A zipped version of the file can be downloaded here: [[File:APT.zip]].
+
+== Device support ==
+
+At the moment, the following APT devices / controllers will be recognised, although only the TDC001 stages have been extensively tested. If you have had success with any of these, please amend the wiki or [mailto:egor.zindy@manchester.ac.uk send me an email].
+
+{| class="wikitable"
+!style="width: 20%;"| Part number
+! Description
+! Supported
+! Notes
+|-
+!BSC001
+|1 Ch benchtop stepper driver
+|Untested
+|
+|-
+!BSC101
+|1 Ch benchtop stepper driver
+|Untested
+|
+|-
+!BSC002
+|2 Ch benchtop stepper driver
+|Untested
+|
+|-
+!BDC101
+|1 Ch benchtop DC servo driver
+|Untested
+|
+|-
+!SCC001
+|1 Ch stepper driver card (used within BSC102,103 units)
+|Untested
+|
+|-
+!DCC001
+|1 Ch DC servo driver card (used within BDC102,103 units)
+|Untested
+|
+|-
+!ODC001
+|1 Ch DC servo driver cube
+|Untested
+|
+|-
+!OST001
+|1 Ch stepper driver cube
+|Untested
+|
+|-
+!MST601
+|2 Ch modular stepper driver module
+|Untested
+|
+|-
+!TST001
+|1 Ch Stepper driver T-Cube
+|Untested
+|
+|-
+!TDC001
+|1 Ch benchtop stepper driver
+|Yes
+|
+|}
+
+== Homing procedure (preliminary) ==
+
+APT stages must be "homed" first before any further commands can be sent.
+
+For each of the stages defined in micro-manager, create a Group with the "Home" property. Then set the value to 1.
 
 {{Devices_Sidebar}}
