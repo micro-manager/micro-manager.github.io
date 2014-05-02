@@ -15,7 +15,7 @@ NB: there is a separate device adapter for stand-alone MS-2000 controllers or ol
 
 ==TigerCommHub==
 Property Notes
-* SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior
+* SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior.  This is due to the behavior of Micro-manager often refreshing the property values which can cause the command to be sent multiple times.
 
 
 
