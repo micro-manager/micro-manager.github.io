@@ -97,9 +97,7 @@ Restart uManager for this change to take effect.
 
 === Error: Internal inconsistency: unknown system exception occurred ===
 
-Snapping an image with the Zyla 4.2 in MM 1.4.17 gives this error when the <code>AcquisitionWindow</code> is set to the default <code>Full Image</code> property.  The MM main window shows "Image info ... 2560 X 2160 X 2" ([[media:This doesnt work.png|see screenshot]]) which is wrong for this camera; this sensor should report 2048 X 2048 pixels.
-
-Thus the workaround to fix this error is setting a <code>System Startup</code> preset with <code>Acquisition Window</code> as <code>2048x2048</code> (see screenshot [[media:This works.png|after changing this setting]]).
+If you see this message when snapping an image, try a lower <code>AcquisitionWindow</code> size (the default is the full <code>Full Image</code>) to confirm that the camera is capable of sending an image.  The BitFlow frame grabber PCIe card fits in 4x splots, but some motherboards don't have the bandwidth to run it and the card may need to be instead installed on an 8x or 16x slot.
 
 == Resources ==
 === Development support ===
