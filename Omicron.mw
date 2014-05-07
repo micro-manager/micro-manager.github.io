@@ -7,7 +7,7 @@ Platforms:	All platforms (uses USB or RS232 Port)
 Devices:	Omicron “…xX”-laser series
 Since Version:  1.4.8 (64bit compatible since version 1.4.12)
 
-Default serial port settings:	AnswerTimeout	        2500 ms
+Default serial port settings:	AnswerTimeout [ms]      2500
 	                        BaudRate	        57600 (RS232 Port) 
                                                         500000 (USB Port)
 	                        DelayBetweenCharsMS	0
