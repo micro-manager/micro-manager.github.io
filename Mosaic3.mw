@@ -1,6 +1,6 @@
 {| style="text-align: left"
 !Summary:
-|Interfaces with Andor Mosaic 3 Digital Mirror Device (DMD)
+|Interfaces with [http://www.andor.com/microscopy-systems/active-illumination/mosaic Andor Mosaic 3] Digital Mirror Device (DMD)
 |- valign="top"
 !Author:
 | Arthur Edelstein
