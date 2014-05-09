@@ -1,0 +1,27 @@
+== Newport SMC100 adapter   ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Drives Newport SMC100 single-axis motor controller</td></tr>
+<tr><td>'''Author:'''</td><td>Liisa Hirvonen</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td></td></tr>
+<tr><td>'''Since version:'''</td><td>1.4.18</td></tr>
+<tr><td valign=top>'''Serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3
+|-
+|AnswerTimeout||?
+|-
+|BaudRate||57600
+|-
+|DelayBetweenCharsMs||0
+|-
+|Handshaking||Software
+|-
+|StopBits||1
+|}
+</table>
+
+
+{{Devices_Sidebar}}
