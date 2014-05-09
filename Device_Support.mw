@@ -82,6 +82,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MCL_NanoDrive]] - Mad City Labs NanoDrive
 * [[MT20]] - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
 * [[MP285]] - Sutter Micro-Manipulator
+* [[NewportSMC]] - Newport SMC100 single-axis motor controller
 * [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
 * [[NIMotionStage]] - National Instruments FlexMotion stage controls
 * [[NPointC400]] - nPoint C400 axis controller
