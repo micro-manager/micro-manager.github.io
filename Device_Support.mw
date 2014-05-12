@@ -66,7 +66,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ASIStage]] - ASI XY (and Z) stage and CRIF
 * [[ASITiger]] - ASI TG-1000 "Tiger" Controller
 * [[CoolLED]] - LED illuminator (usable as a shutter device)
-* [[CONEX]] - Newport CONEX-CC servo controller
+* [[CONEX]] - See NewportCONEX
 * [[Conix]] - Conix Filter Changer, XY and Z stage
 * [[Corvus]] - M&auml;rzh&auml;user XY stages with Corvus driver.
 * [[DA-Z-Stage]] - For stages that can be controlled with analogue voltage.  Needs a DA device
@@ -82,6 +82,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MCL_NanoDrive]] - Mad City Labs NanoDrive
 * [[MT20]] - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
 * [[MP285]] - Sutter Micro-Manipulator
+* [[NewportCONEX]] - Newport CONEX-CC servo controller
 * [[NewportSMC]] - Newport SMC100 single-axis motor controller
 * [[Nikon]] - Nikon Z-drive, TIRF shutter and IntensiLight shutter
 * [[NIMotionStage]] - National Instruments FlexMotion stage controls
