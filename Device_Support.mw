@@ -127,7 +127,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[K8055]] - Velleman Digital IO board (all platforms)
 * [[K8061]] - Velleman Digital IO board (all platforms)
 * [[MCCDAQ]] - Measurement Computing PCI-DDA08/16
-* [[National Instruments]] - NI I/O boards - MDAQ interface
+* [[National Instruments]] - See NI100X
+* [[NI100X]] - NI I/O boards - MDAQ interface
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
