@@ -11,6 +11,8 @@ This adapter implements Signal I/O micro-manager device, by using NI-DAQmx inter
 
 The IOChannel property required when adding the devices in the Hardware Configuration Wizard are values that look like "Dev1/AO0" or "Dev1/PFI0". You can get these from the National Instruments utility called "NI MAX" that comes with the DAQmx software (look for "Channel Name").
 
+I'm not sure how digital out is supposed to work on all devices, but I found that, testing with a PCIe-6251, that the digital channels go high when the corresponding bit is high in the State property. Thus, for a digital output configured for "Dev1/PFI0", State = 0 is low and State = 1 (or any odd number) is high; however, when configured for "Dev1/PFI2", State = 4 (or any value whose bit 2 is 1) is high. You can use the State value "-1" (all bits high) to turn on digital channels without working out the correct bit mask. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 09:36, 12 May 2014 (PDT)
+
 Besides NI100X adapter this library contains a PI Z-stage driver that is internally linked to the analog output. For regular use of NI boards please disregard the Z-stage device and do not instantiate it in your setup even if you happen to have a PI stage attached. To use a PI stage refer to a standard PI adapter elsewhere in the micro-manager device list.
 
 The only time that you would want to to use the PI stage driver from this library is for the 2-Photon microscope setup described in 
