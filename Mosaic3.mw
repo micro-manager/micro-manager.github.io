@@ -21,7 +21,12 @@
 
 ==Installation==
 
-Andor’s Mosaic 3 device allows phototargeting of microscope specimens. To get started using it with Micro-Manager, you should have the Mosaic’s PCI-E card installed, the Mosaic connected to the card via an SFP+ cable, and the driver for the card activated.
+Andor’s Mosaic 3 device allows phototargeting of microscope specimens. To get started using it with Micro-Manager, you should have the Mosaic’s PCI-E card installed, the Mosaic connected to the card via an SFP+ cable, and the driver for the card activated. You'll also need to add the following DLLs to the main Micro-Manager directory:
+* atcore.dll
+* atdevmosiac3.dll
+* Mosaic3ApiSharedMfc.dll
+* Mosaic3SDKWrapper.dll
+These DLLs are available from the Andor SDK as well as the Andor iQ software.
 
 ==Device Configuration==
 
