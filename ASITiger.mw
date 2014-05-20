@@ -17,4 +17,10 @@ NB: there is a separate device adapter for stand-alone MS-2000 controllers or ol
 Property Notes
 * SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior.  This is due to the behavior of Micro-manager often refreshing the property values which can cause the command to be sent multiple times.
 
+
+==Known limitations==
+* CRISP supported was added 25-Sep-2013.  Use requires both a Micro-manager build and card firmware after that date.
+* LED illuminator support was added 20-May-2014.  Use requires both a Micro-manager build and card firmware after that date.
+* TTL-triggered piezo sequences are not yet supported, but will be added upon request (contact the author).
+
 {{Devices_Sidebar}}
