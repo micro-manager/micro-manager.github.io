@@ -1,0 +1,24 @@
+== User Testing ==
+[[User:P.nanda|P.nanda]] ([[User talk:P.nanda|talk]]) 07:22, 23 May 2014 (PDT)
+{| class="wikitable"
+|+ Test System Setup
+| Mosaic3       || Part# MM-8206-75-35, Serial# MM-0201<br/>PLDA Driver version 3.0.0.0
+|-
+| Andor camera  || Part# DR-328G-C02-SIL, Serial# DR-03168
+|-
+| Micro-Manager || version nightly build 1.4.18_20140522 64-bit
+|-
+| PC            || Dell T3500 Service Tag# 55H99P1, Computer Name US01320
+|}
+
+* Fresh install of Micro-Manager into default root <code>C:\Program Files\Micro-Manager 1.4\</code> directory (all older root directories of Micro-Manager installations were deleted).
+* Did not restart computer after MM installation.
+* <code>Tools > Hardware Configuration Wizard (HCW)</code> now shows the Mosaic3 under "Available Devices".  This is noteworthy because in earlier versions of MM, the device would show up as "unavailable" until the DLLs were copied over.  I wonder if this change is because <code>Andor Driver Pack 3</code> is installed which adds itself to the Windows Environmental variables > User <code>PATH</code>?
+* Trying to add the device gives "Error in device Mosaic3: No Mosaic3 devices found."  Of course, none of the Mosaic3 DLLs are present in the root directory yet since they are not yet bundled with the nightly build.
+* Installed Mosaic SDK 3.4.14.1 from http://my.andor.com/ from <code>Software > Drivers and 3rd Party > Andor Mosaic 3 SDK</code>.  Selected option to repair MSVC++ 2010 installation when prompted by installer.  Chose not to restart.  Installed into default root folder <code>C:\Program Files\Andor Mosaic 3 SDK\</code>.
+* Copied .sdk\*.dll files from root SDK directory to root MM directory:
+** atcore.dll
+** atdevmosaic3.dll
+** Mosaic3ApiSharedMfc.dll
+** Mosaic3SDKWrapper.dll
+* Closed HCW.  Reopening HCW crashes MM.  Crash log points to camera DLL.  Pastebin of hs_err_pid3004.log: https://dpaste.de/WH3n/raw  Will retry HCW only with Mosaic3 and without adding camera this time.
