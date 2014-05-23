@@ -37,7 +37,7 @@ Ran Arthur's black and white script verbatim to project drawn image without doin
 |+ Button nomenclature used in Projector plugin compared to other software
 ! Micro-Manager    !! Andor iQ      !! MDS MetaMorph
 |-
-| On               || White Mask    || Activate White
+| On               || -             || Activate Latest Mask
 |-
 | Off              || -             || Activate Black
 |-
@@ -47,5 +47,5 @@ Ran Arthur's black and white script verbatim to project drawn image without doin
 |-
 | -                || Test Mask     || Activate Test Mask
 |-
-| -                || -             || Activate Latest Mask
+| -                || White Mask    || Activate White
 |}
