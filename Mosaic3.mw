@@ -21,12 +21,28 @@
 
 ==Installation==
 
-Andor’s Mosaic 3 device allows phototargeting of microscope specimens. To get started using it with Micro-Manager, you should have the Mosaic’s PCI-E card installed, the Mosaic connected to the card via an SFP+ cable, and the driver for the card recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>. You'll also need to copy the following DLLs to the main Micro-Manager directory:
-* atcore.dll
-* atdevmosiac3.dll
-* Mosaic3ApiSharedMfc.dll
-* Mosaic3SDKWrapper.dll
-These DLLs are available from the Andor Mosaic 3 SDK as well as the Andor iQ software.
+Andor’s Mosaic3 device allows phototargeting of microscope specimens.
+
+* Copy the following 4 library files to the main Micro-Manager directory:
+
+    atcore.dll
+    atdevmosaic3.dll
+    Mosaic3ApiSharedMfc.dll
+    Mosaic3SDKWrapper.dll
+
+:These Mosaic library files need to be copied from another installed software.  The software name and directory you need to copy the files from are listed below:
+
+{| class="wikitable"
+! Software            !! Directory containing required files
+|-
+| Andor iQ            || <code>C:\Program Files (x86)\Andor Bioimaging\Common Files\</code>
+|-
+| Andor Mosaic 3 SDK  || <code>C:\Program Files\Andor Mosaic 3 SDK\sdk\</code>
+|}
+
+:If you don't have either of these installed, they are available at http://my.andor.com
+
+* Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
 ==Device Configuration==
 
