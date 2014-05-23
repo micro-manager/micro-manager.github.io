@@ -35,7 +35,7 @@ Ran Arthur's black and white script verbatim to project drawn image without doin
 * Setup Tab
 {| class="wikitable sortable"
 |+ Button nomenclature used in Projector plugin compared to other software
-! Micro-Manager    !! Andor iQ      !! MDS MetaMorph
+! Micro-Manager    !! Andor iQ      !! MDC MetaMorph
 |-
 | On               || -             || Activate Latest Mask
 |-
