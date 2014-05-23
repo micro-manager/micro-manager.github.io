@@ -48,7 +48,7 @@ Andor’s Mosaic3 device allows phototargeting of microscope specimens.
 
 To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
 
-Once the configuration has been saved, open the <code>Device/Property browser</code> (also under the <code>Tools</code> menu) to examine the Mosaic’s available properties. (Note: currently all Mosaic3 properties are exposed, but after Sequencing has been implemented in the DeviceAdapter, some of these properties will be hidden).
+Once the configuration has been saved, open the <code>Device/Property browser</code> (also under the <code>Tools</code> menu) to examine the Mosaic’s available properties.
 
 There are two modes for using the Mosaic on a microscope system: (1) via the Projector Plugin and (2) through scripting.
 
