@@ -23,9 +23,7 @@
 ** atdevmosaic3.dll
 ** Mosaic3ApiSharedMfc.dll
 ** Mosaic3SDKWrapper.dll
-* Closed HCW.  Reopening HCW crashes MM.  Crash log points to camera DLL.  Pastebin of hs_err_pid3004.log: https://dpaste.de/WH3n/raw  Will retry HCW only with Mosaic3 and without adding camera this time.
 * Now Mosaic 3 adds successfully with Mosaic3 DLLs copied to MM root directory.
-* MM crashes when initializing configuration due to camera.  Version of bundled atmcd64d.dll is 2.95.30003.0.  Replaced file with version 2.96.30004.0 from Andor Driver Pack 2 - fixed.
 * Confirmed all 4 DLL files are required for Mosaic3 to initialize (renaming any of them adding by adding .bak file extension raises the same initialization "Error in device Mosaic3: No Mosaic3 devices found." as seen before in HCW).
 
 === Scripting ===
