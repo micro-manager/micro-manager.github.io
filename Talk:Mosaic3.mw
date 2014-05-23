@@ -23,3 +23,4 @@
 ** Mosaic3SDKWrapper.dll
 * Closed HCW.  Reopening HCW crashes MM.  Crash log points to camera DLL.  Pastebin of hs_err_pid3004.log: https://dpaste.de/WH3n/raw  Will retry HCW only with Mosaic3 and without adding camera this time.
 * Now Mosaic 3 adds successfully with Mosaic3 DLLs copied to MM root directory.
+* MM crashes when initializing configuration due to camera.  Version of bundled atmcd64d.dll is 2.95.30003.0.  Upgraded to 2.96.30004.0 from Andor Driver Pack 2 - fixed.
