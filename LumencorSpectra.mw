@@ -10,3 +10,5 @@
 <tr><td>'''Serial cable'''</td><td>Straight through</td></tr>
 <tr><td>'''Serial port settings'''</td><td>Baudrate: 9600</td></tr>
 </table>
+
+To include the Spectra X in a channels group, include the different colors in the Group and set at least one color to "enable" in each Preset. Be sure to select the Spectra X as the Core-Shutter. (Do not include "White" in a channels group that also includes the other colors. If you do, it will interfere with the other colors. For instance, if you enable one color but disable white, no colors will shutter.)
