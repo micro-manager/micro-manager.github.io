@@ -36,7 +36,7 @@ The Micro-Manager installation includes ImageJ and automatically runs ImageJ on 
 
 To increase the amount of memory available to ImageJ and Micro-Manager, use the ImageJ command <span>'''Edit | Options | Memory'''</span>. You should enter the amount of RAM equal or less to the amount you have installed on your system.
 
-(For 32-bit systems, we have noticed that entering values larger than 1.2 GB can cause erratic behavior on some systems; on 64-bit systems you can go higher, but make sure that some memory is left for the OS. For 32-bit systems, setting the circular buffer higher than 200-400 may also cause error messages.)
+(For 32-bit systems, we have noticed that entering values larger than 1.2 GB can cause erratic behavior on some systems; on 64-bit systems you can go higher, but make sure that some memory is left for the OS. For 32-bit systems, setting the circular buffer higher than 200-400 MB may also cause error messages.)
 
 If you have another installation of ImageJ on your computer, keep in mind that Micro-Manager installs its own copy of ImageJ and that you need to set memory options on both.
 
