@@ -32,7 +32,8 @@ Ran [[Mosaic3#Scripting|Arthur's mask projection script]] verbatim to project a 
 
 === Projector Plugin ===
 
-* Setup Tab
+==== Setup Tab ====
+
 {| class="wikitable sortable"
 |+ Button nomenclature used in Projector plugin compared to other software
 ! Micro-Manager    !! Andor iQ      !! MDC MetaMorph
@@ -51,11 +52,14 @@ Ran [[Mosaic3#Scripting|Arthur's mask projection script]] verbatim to project a 
 |-
 | -                || -                     || {{Key|Activate Latest Mask}}
 |}
+
+==== ROIs tab ====
+
 [[User:P.nanda|P.nanda]] ([[User talk:P.nanda|talk]]) 11:17, 27 May 2014 (PDT)
-* ROIs tab
-** ROI Manager
-*** All ROIs are uploaded to the DMD regardless of selection in the <code>ROI Manager</code>, so it's useful to enable the <code>Show All</code> and <code>Labels</code> checkboxes in the <code>ROI Manager</code>.
-*** When saving ROIs using <code>More > Save...</code>, the highlight selections are important; only those ROIs that are highlighted are saved.  So to save all, one must first {{Key|Ctrl}}+ or {{Key|Shift}}+select all ROIs.  Individual ROIs get saved as .roi files and multiple rois as .zip files.
+
+===== ROI Manager =====
+* All ROIs are uploaded to the DMD regardless of selection in the <code>ROI Manager</code>, so it's useful to enable the <code>Show All</code> and <code>Labels</code> checkboxes in the <code>ROI Manager</code>.
+* When saving ROIs using <code>More > Save...</code>, the highlight selections are important; only those ROIs that are highlighted are saved.  So to save all, one must first {{Key|Ctrl}}+ or {{Key|Shift}}+select all ROIs.  Individual ROIs get saved as .roi files and multiple rois as .zip files.
 
 === Mosaic Alignment ===
 * To focus the Mosaic epi port focus and DMD lenses:
