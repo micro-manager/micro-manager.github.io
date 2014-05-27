@@ -28,7 +28,7 @@
 
 === Scripting ===
 
-Ran Arthur's black and white script verbatim to project drawn image without doing any calibration.
+Ran [[Mosaic3#Scripting|Arthur's mask projection script]] verbatim to project a drawn image without doing any calibration - works OK.
 
 === Projector Plugin ===
 
@@ -37,15 +37,31 @@ Ran Arthur's black and white script verbatim to project drawn image without doin
 |+ Button nomenclature used in Projector plugin compared to other software
 ! Micro-Manager    !! Andor iQ      !! MDC MetaMorph
 |-
-| On               || -             || Activate Latest Mask
+| {{Key|On}}               || -             || {{Key|Pulse Latest Mask}}
 |-
-| Off              || -             || Activate Black
+| {{Key|Off}}              || {{Key|Reset}} under Settings tab             || {{Key|Activate Black}}
 |-
-| Show Center Spot || -             || Activate Test Mask + Pulse Latest Mask
+| {{Key|Show Center Spot}} || -             || {{Key|Activate Test Mask}} + {{Key|Pulse Latest Mask}}
 |-
-| All Pixels       || -             || Activate White + Pulse Latest Mask
+| {{Key|All Pixels}}       || -             || {{Key|Activate White}} + {{Key|Pulse Latest Mask}}
 |-
-| -                || Test Mask     || Activate Test Mask
+| (use [[Mosaic3#Scripting|script]]) || {{Key|Test Mask}}     || {{Key|Activate Test Mask}}
 |-
-| -                || White Mask    || Activate White
+| -                || {{Key|White Mask}}    || {{Key|Activate White}}
+|-
+| -                || -                     || {{Key|Activate Latest Mask}}
 |}
+[[User:P.nanda|P.nanda]] ([[User talk:P.nanda|talk]]) 11:17, 27 May 2014 (PDT)
+* ROIs tab
+** ROI Manager
+*** All ROIs are uploaded to the DMD regardless of selection in the <code>ROI Manager</code>, so it's useful to enable the <code>Show All</code> and <code>Labels</code> checkboxes in the <code>ROI Manager</code>.
+*** When saving ROIs using <code>More > Save...</code>, the highlight selections are important; only those ROIs that are highlighted are saved.  So to save all, one must first {{Key|Ctrl}}+ or {{Key|Shift}}+select all ROIs.  Individual ROIs get saved as .roi files and multiple rois as .zip files.
+
+=== Mosaic Alignment ===
+* To focus the Mosaic epi port focus and DMD lenses:
+** Set a very long exposure time (say, 120 seconds), and click on {{Key|All Pixels}}.  The long exposure time is needed since there does not appear to be a way to leave a Mask image continuously on; even the {{Key|On}} button pulses the image for the duration of <code>Mosaic3-Exposure</code>.
+** Close down the Mosaic field diaphram and focus the Mosaic epi port lens:
+*** 8206 model has the field diaphram built into the beamsplitter block.
+*** 8204 model uses the Zeiss microscope epi field stop.
+*** Other models need a mask slide placed at the Mosaic epi port mouth and focused with e.g. the Mosaic flashlight.
+** Adjust the DMD lens focus.  Using [[Mosaic3#Scripting|Arthur's mask projection script]] is especially helpful here, with a quadrant mask image.
