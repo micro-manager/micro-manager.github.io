@@ -67,7 +67,7 @@ This feature isn't very useful, since it's locked into using a small circle ROI 
 
 === Mosaic Alignment ===
 * To focus the Mosaic epi port focus and DMD lenses:
-** Set a very long exposure time (say, 120 seconds), and click on {{Key|All Pixels}} (see Figure A).  The long exposure time is needed since there does not appear to be a way to leave a Mask image continuously on; even the {{Key|On}} button pulses the image for the duration of <code>Mosaic3-Exposure</code>.
+** Set a very long exposure time (say, the maximum, 200 seconds), and click on {{Key|All Pixels}} (see Figure A).  The long exposure time is needed since there does not appear to be a way to leave a Mask image continuously on; even the {{Key|On}} button pulses the image for the duration of <code>Mosaic3-Exposure</code>.
 ** Close down the Mosaic field diaphram (Figure C) and focus the Mosaic epi port lens:
 *** 8206 model has the field diaphram built into the beamsplitter block.
 *** 8204 model uses the Zeiss microscope epi field stop.
