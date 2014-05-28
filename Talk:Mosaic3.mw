@@ -63,9 +63,11 @@ Ran [[Mosaic3#Scripting|Arthur's mask projection script]] verbatim to project a 
 
 === Mosaic Alignment ===
 * To focus the Mosaic epi port focus and DMD lenses:
-** Set a very long exposure time (say, 120 seconds), and click on {{Key|All Pixels}}.  The long exposure time is needed since there does not appear to be a way to leave a Mask image continuously on; even the {{Key|On}} button pulses the image for the duration of <code>Mosaic3-Exposure</code>.
-** Close down the Mosaic field diaphram and focus the Mosaic epi port lens:
+** Set a very long exposure time (say, 120 seconds), and click on {{Key|All Pixels}} (see Figure A).  The long exposure time is needed since there does not appear to be a way to leave a Mask image continuously on; even the {{Key|On}} button pulses the image for the duration of <code>Mosaic3-Exposure</code>.
+** Close down the Mosaic field diaphram (Figure C) and focus the Mosaic epi port lens:
 *** 8206 model has the field diaphram built into the beamsplitter block.
 *** 8204 model uses the Zeiss microscope epi field stop.
 *** Other models need a mask slide placed at the Mosaic epi port mouth and focused with e.g. the Mosaic flashlight.
-** Adjust the DMD lens focus.  Using [[Mosaic3#Scripting|Arthur's mask projection script]] is especially helpful here, with a quadrant mask image.
+** Adjust the DMD lens focus.  Using [[Mosaic3#Scripting|Arthur's mask projection script]] is especially helpful here, with a quadrant mask image (Figure D).
+
+[[File:FullResolution_fig_mosic3_cal.png|frame|(A, B) Using {{Key|All Pixels}} and {{Key|Center Sport}} buttons, respectively, in Setup tab of Projector plugin.  (C) Epi port focused by closing field diaphram.  (D) DMD focus using test mask.]]
