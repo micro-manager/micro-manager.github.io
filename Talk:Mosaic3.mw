@@ -53,6 +53,10 @@ Ran [[Mosaic3#Scripting|Arthur's mask projection script]] verbatim to project a 
 | -                || -                     || {{Key|Activate Latest Mask}}
 |}
 
+==== Point and Shoot tab ====
+
+This feature isn't very useful, since it's locked into using a small circle ROI and the size and shape cannot be customized.
+
 ==== ROIs tab ====
 
 [[User:P.nanda|P.nanda]] ([[User talk:P.nanda|talk]]) 11:17, 27 May 2014 (PDT)
