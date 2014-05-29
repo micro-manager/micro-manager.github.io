@@ -1,5 +1,3 @@
-== CoolLED LED illuminators ==
-
 {| style="text-align: left"
 !Summary:
 |Device adapter for [http://www.CoolLED.com CoolLED] pE LED illuminators
@@ -26,20 +24,23 @@
 
 CoolLED's original product was known as precisExcite and at present the Micro-Manage software still knows it by that name.
 
+== Installation ==
+
 On Windows, install the [http://www.coolled.com/downloads/distributor/CoolLED-pEx-driver.zip INF driver file] (Mac OS X already has a driver that will recognize the virtual serial port).
 
-Next, make sure the USB cable is connected, and that the module is powered up.
-Then in the <code>Hardware Configuration Wizard</code> (under the Micro-Manager <code>Tools</code> menu),
-choose the appropriate Com Port in Step 2 and add the PrecisExcite device in Step 3.
+Make sure the USB cable is connected, and that the module is powered up.
 
-precisExcite can be chosen as the default Shutter. This means that
-when "Auto shutter" is selected in the main window, it will
-automatically turn on (with the current channel and intensity
-settings) during a "Snap" or "Acquisition" and turn off immediately
+== Device Configuration ==
+
+In the <code>Hardware Configuration Wizard</code> (under the Micro-Manager <code>Tools</code> menu), choose the appropriate COM Port in Step 2 and add the <code>PrecisExcite</code> device in Step 3.
+
+You may want to choose the <code>precisExcite</code> as the default shutter. This means that when "Auto shutter" is selected in the main window, it will
+automatically open (with the current channel and intensity
+settings) during a "Snap" or "Acquisition" and close immediately
 afterwards.
 
-The Trigger and TriggerSequence properties can be used for external triggering by TTL pulses.
-In the trigger sequence, channels are labeled "A","B","C","D", and a pause is denoted by "0" (zero).
+<!-- It would be nice if this sequencing paragraph was explained in more detail. -->
+The <code>Trigger</code> and <code>TriggerSequence</code> properties can be used for external triggering by TTL pulses. In the trigger sequence, channels are labeled "A", "B", "C", "D", and a pause is denoted by "0" (zero).
 
 
 {{Devices_Sidebar}}
