@@ -44,27 +44,30 @@
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
-=== Hardware Configuration Wizard ===
+== Hardware Configuration Wizard ==
 
-==== Mosaic ====
+=== Mosaic ===
 
 To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
 
-==== Projected Light Source (optional) ====
+=== Projected Light Source (optional) ===
 
 Depending on your application, you may want to shutter the projected light source in software (e.g. if your specimen is sensitive to the low light throughput when the Mosaic digital mirrors are off).  This feature is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is to simply connect the "DMD Active" TTL 5 volt output to your light source "global enable" TTL input so that it is only on when the Mosaic is active.
 
 The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 controller.  To control it in Micro-Manager add the [[Vincent|Vincent device]].
 
-==Device Configuration==
+== Device Properties ==
 
-Once the configuration has been saved, open the <code>Device/Property browser</code> (also under the <code>Tools</code> menu) to examine the Mosaic’s available properties.
+{| class="wikitable"
+!style="width: 20%;"| Property
+! Description
+|- valign="top"
+| Exposure || Pulse duration of DMD in seconds.  You would not often change this setting directly since the Sequencing window requires you to set the exposure time in the Sequence list, and the exposure value(s) there takes precedence.  Changing this is useful for interactive use e.g. in the <code>Projector > Setup</code> tab.
+|- valign="top"
+| FrameIndexSource || Setting this to "Hardware" allows switching between uploaded Frames.
+|}
 
-There are two modes for using the Mosaic on a microscope system:
-# via the Projector Plugin and 
-# through scripting.
-
-==Scripting==
+== Scripting ==
 
 Under the ImageJ menu, select <code>File > New > Image...</code> and create a black, 8-bit 800x600 image. Double click the dropper tool on the ImageJ toolbar and make sure the current drawing color is white. Then double click the paintbrush tool and set the thickness to 20 pixels. Finally, sketch an image with the paint brush.
 
@@ -79,11 +82,11 @@ Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the foll
 
 Running this script will result in projecting the image you have just drawn onto the Mosaic.
 
-==Projector Plugin==
+== Projector Plugin ==
 
 Please read the [[Projector Plugin]] page for a general, detailed description of its usage.  The following describes, specifically, how the plugin runs the Mosaic.
 
-====Setup====
+=== Setup ===
 
 First, make sure a camera has been installed using the hardware configuration wizard. Place a test slide (such as a solid fluorescent slide) on the microscope stage. Next, under Micro-Manager’s Plugins menu, select “Projector”. This plugin makes it easy to phototarget specimens, either ''ad hoc'' or as part of a multi-dimensional acquisition protocol.
 
@@ -93,17 +96,17 @@ Click on “Show center spot” to see a small spot in the middle of the Mosaic�
 
 Next, press the "Calibrate" button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
 
-====Point and shoot====
+=== Point and shoot ===
 
 Following this calibration, you can use the mouse to draw targets on a live picture of the specimen, and precisely illuminate those targets. First, click on the “Point and Shoot” tab and turn “Point and shoot mode” to “On”. Set the Exposure Time to 1000 ms. Holding down the Control Key, click at arbitrary points on the live camera image. You should see a spot appear at each click point, and then disappear after approximately 1 second.
 
-====ROIs====
+=== ROIs ===
 
 Next, select the Polygon ROI tool on ImageJ’s toolbar, and draw a polygon on the live image. , Click on the “ROIs” tab and click “Set ROI(s)” to upload this ROI to the Mosaic. The plugin should report, “1 ROI submitted.” Choose an Exposure/dwell time of 250 ms. Click “Run ROIs now!” to illuminate the ROI -- you should see it light up for the duration requested.
 
 Finally, check the “Run ROIs in Multi-Dimensional Acquisition” checkbox. Choose a “Start Frame” of 10, and Repeat Every 20 frames. Set Micro-Manager’s camera exposure time to 50 ms. Open Micro-Manager’s Multi-Dimensional Acquisition window, and acquisition with 300 time points, and interval zero. Run the acquisition, and observe that a targeting event occurs at frames 10, 30, 50, etc.
 
-====ROI Sequencing====
+=== ROI Sequencing ===
 
 The Andor Mosaic also offers advanced sequencing capabilities. On the ROIs tab of the Projector Plugin, click the "Sequencing..." button. Two windows will appear: (1) the ROI Sequencing control window, and (2) the ImageJ ROI Manager. To add an ROI to the ROI Manager list, choose an ROI tool in the ImageJ toolbar, draw an ROI on the live window, and then click "Add" on the ROI Manager window. Repeat for as many ROIs as you need.
 
