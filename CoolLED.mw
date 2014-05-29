@@ -26,9 +26,15 @@ CoolLED's original product was known as precisExcite and at present the Micro-Ma
 
 == Installation ==
 
-On Windows, install the [http://www.coolled.com/downloads/distributor/CoolLED-pEx-driver.zip INF driver file] (Mac OS X already has a driver that will recognize the virtual serial port).
-
 Make sure the USB cable is connected, and that the module is powered up.
+
+Mac OS X already has a driver that will recognize the virtual serial port)
+
+On Windows:
+* Download the [http://www.coolled.com/downloads/distributor/CoolLED-pEx-driver.zip INF driver] and unzip the <code>CoolLED-pEx.inf</code> file.
+* In the <code>Device Manager</code>, the CoolLED will appear under <code>Other Devices > preciseExcite</code> with a yellow exclamation mark in the device icon.
+* To install your unzipped INF file, in the <code>Device Manager</code>, right-click on <code>preciseExcite > Update Driver Software > Browse my computer for driver software</code>.  Set the location to the place you unzipped the INF file.
+* On successful installation, the device will show up as <code>pEx USB COM Port</code>.
 
 == Device Configuration ==
 
