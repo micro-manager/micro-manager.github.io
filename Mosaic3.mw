@@ -50,9 +50,11 @@
 
 To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
 
-==== Projected Light Source ====
+==== Projected Light Source (optional) ====
 
-Depending on your application, you may want to shutter the projected light source in software (e.g. if your specimen is sensitive to the low light throughput when the Mosaic digital mirrors are off).
+Depending on your application, you may want to shutter the projected light source in software (e.g. if your specimen is sensitive to the low light throughput when the Mosaic digital mirrors are off).  This feature is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is to simply connect the "DMD Active" TTL 5 volt output to your light source "global enable" TTL input so that it is only on when the Mosaic is active.
+
+The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 controller.  To control it in Micro-Manager add the [[Vincent|Vincent device]].
 
 ==Device Configuration==
 
