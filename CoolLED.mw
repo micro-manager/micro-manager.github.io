@@ -39,7 +39,7 @@ On Windows:
 == Device Configuration ==
 
 In the <code>Hardware Configuration Wizard</code> (under the Micro-Manager <code>Tools</code> menu):
-* In Step 2, add the <code>PrecisExcite</code> device and choose the appropriate COM Port.
+* In Step 2, add the <code>PrecisExcite</code> device and choose the appropriate COM Port.  The default COM port settings (baud rate, etc) will work.
 * In Step 3, you may want to set the <code>Default Shutter</code> to the <code>precisExcite</code>.
 * You may also want to enable the <code>Auto shutter</code> checkbox is so that it automatically opens during a "Snap" or "Acquisition" and close immediately afterwards.
 
