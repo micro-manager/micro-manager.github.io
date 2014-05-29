@@ -1,12 +1,12 @@
-{| style="text-align: left"
-!Summary:
-|Interfaces with [http://www.andor.com/microscopy-systems/active-illumination/mosaic Andor Mosaic 3] Digital Mirror Device (DMD)
+{| style="text-align:left"
+!valign="top"|Summary:
+|Interfaces with [http://www.andor.com/microscopy-systems/active-illumination/mosaic Andor Mosaic 3] Digital Mirror Device (DMD).  The Andor Mosaic3 device allows phototargeting of microscope specimens.
 |- valign="top"
 !Author:
 | Arthur Edelstein
 |- valign="top"
 !Documentation:
-| Arthur Edelstein
+| Arthur Edelstein<br/>Pariksheet Nanda
 |- valign="top"
 !License:
 |Properietary, closed source, Copyright Andor Technology 2014
@@ -21,7 +21,7 @@
 
 ==Installation==
 
-Andor’s Mosaic3 device allows phototargeting of microscope specimens.
+=== Driver ===
 
 * Copy the following 4 library files to the main Micro-Manager directory:
 
@@ -44,13 +44,23 @@ Andor’s Mosaic3 device allows phototargeting of microscope specimens.
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
-==Device Configuration==
+=== Hardware Configuration Wizard ===
+
+==== Mosaic ====
 
 To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
 
+==== Projected Light Source ====
+
+Depending on your application, you may want to shutter the projected light source in software (e.g. if your specimen is sensitive to the low light throughput when the Mosaic digital mirrors are off).
+
+==Device Configuration==
+
 Once the configuration has been saved, open the <code>Device/Property browser</code> (also under the <code>Tools</code> menu) to examine the Mosaic’s available properties.
 
-There are two modes for using the Mosaic on a microscope system: (1) via the Projector Plugin and (2) through scripting.
+There are two modes for using the Mosaic on a microscope system:
+# via the Projector Plugin and 
+# through scripting.
 
 ==Scripting==
 
