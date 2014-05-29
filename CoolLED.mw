@@ -26,8 +26,8 @@
 
 CoolLED's original product was known as precisExcite and at present the Micro-Manage software still knows it by that name.
 
-On Windows, first make sure the driver is installed (CoolLED-pEx.inf).
-(Mac OS X already has a driver that will recognize the virtual serial port.)
+On Windows, install the [http://www.coolled.com/downloads/distributor/CoolLED-pEx-driver.zip INF driver file] (Mac OS X already has a driver that will recognize the virtual serial port).
+
 Next, make sure the USB cable is connected, and that the module is powered up.
 Then in the <code>Hardware Configuration Wizard</code> (under the Micro-Manager <code>Tools</code> menu),
 choose the appropriate Com Port in Step 2 and add the PrecisExcite device in Step 3.
