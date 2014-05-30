@@ -92,6 +92,8 @@ Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the foll
 
 Running this script will result in projecting the image you have just drawn onto the Mosaic.
 
+If you save this TIF image, to reuse it in another session of Micro-Manager, you should open it using ImageJ's <code>File > Open</code> and again in the ImageJ menu change <code>Image > Type > 8-bit</code> instead of the default <code>32-bit</code>.
+
 == Projector Plugin ==
 
 Please read the [[Projector Plugin]] page for a general, detailed description of its usage.  The following describes, specifically, how the plugin runs the Mosaic.
