@@ -44,17 +44,52 @@
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
-== Hardware Configuration Wizard ==
+=== Hardware Configuration Wizard ===
 
-=== Mosaic ===
+==== Mosaic ====
 
-To configure Micro-Manager to use the Mosaic, open Micro-Manager’s <code>Hardware Configuration Wizard</code>, under the <code>Tools</code> menu. On the first page, click on “Mosaic3”. There are no configuration options.
+To allow Micro-Manager to control the Mosaic, add the Mosaic3 device using Micro-Manager's [[Micro-Manager_Configuration_Guide#Hardware_Configuration_Wizard|Hardware Configuration Wizard]]. When you add the device, there are no configuration options.
 
-=== Projected Light Source (optional) ===
+==== Shutter control of the Projected Light Source ====
 
-Depending on your application, you may want to shutter the projected light source in software (e.g. if your specimen is sensitive to the low light throughput when the Mosaic digital mirrors are off).  This feature is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is to simply connect the "DMD Active" TTL 5 volt output to your light source "global enable" TTL input so that it is only on when the Mosaic is active.
+The Mosaic reflects a low level of light even when the digital mirrors are off, and therefore the Mosaic can be built with the a shutter accessory.  To control the Vincent VCM-D1 controller in Micro-Manager add the [[Vincent|Vincent device]].
 
-The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 controller.  To control it in Micro-Manager add the [[Vincent|Vincent device]].
+Shutter control is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is instead to simply connect the "DMD Active" TTL 5 volt output to your light source "global shutter" (or similar) TTL input so that it is only on when the Mosaic is active.  You may not have the Vincent shutter if your system was ordered with the intention of using it with this type of TTL light source.
+
+If you have the [http://www.powertechnology.com/products/laser-diode-modules/lasers-w-modulation/iq1a.html Power Technology diode laser], you may wish to still add the Vincent device because this laser always leaks ~4mW from the laser head even in the off position.
+
+=== Calibration ===
+
+Controlling the Mosaic, like other SLM and Galvo devices, is done by the Projector plugin ('''Plugins | Device Control | Projector''').
+
+{{Note|Many functions of the generically designed Projector plugin are not useful for the Mosaic.  For normal use, one would just open the Projector plugin to go to the ROIs tab and open the Sequence window.}}
+
+Before you begin the calibration:
+* Make sure a camera has been installed using the Hardware Configuration Wizard.
+* In the Setup tab of the Projector plugin:
+** If your microscope system requires changing a property for the Mosaic projected light to reach your specimen (often if your imaging reflector cube is different from the mosaic reflector cube), create a Group and a Presets each for your Mosaic reflector and your epi imaging reflector.  Assign the Core-ChannelGroup to that Group, and finally in the <code>Phototargeting channel</code> choose the Mosaic reflector preset.
+** If you added the Vincent shutter device in the Hardware Configuration Wizard, assign it to the <code>Phototargeting shutter</code>.
+
+You may wish to refer to the [[Projector Plugin]] description page if you have not used it before.  However, note that for the Mosaic:
+* Point and Shoot tab: only draws a fixed-sized round target on the live image window and offers no flexibility of shape type and size.
+* ROIs tab: is mainly used to the Sequence window.  The Sequence window has a super-set of the functionality of the other controls in the ROIs tab.
+
+Place a test slide (such as a solid fluorescent slide) on the microscope stage. 
+Click the "Calibrate" button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
+
+== Sequence window ==
+
+The Andor Mosaic offers advanced sequencing capabilities. To open the Sequence Window, on the ROIs tab of the Projector Plugin, click the "Sequencing..." button. Two windows will appear: (1) the ROI Sequencing control window, and (2) the ImageJ ROI Manager. To add an ROI to the ROI Manager list, choose an ROI tool in the ImageJ toolbar, draw an ROI on the live window, and then click "Add" on the ROI Manager window. Repeat for as many ROIs as you need.
+
+Next, on the ROI Sequencing window, notice that ROI list now contains the same set of ROIs specified in ImageJ's ROI Manager. You can assign each ROI to one of two types: FRAP and Image. The FRAP rois are designed to appear for short periods of time, while the Image rois will typically be illuminated throughout the whole sequence.
+
+Alternatively, you can automatically generate a rectangular grid (lattice) of ROIs. First, draw an ROI in the upper-left corner of your intended grid. Then, in the "Create ROI Grid" box, enter the number of ROIs across and down (as in a crossword puzzle). Enter the spacing between lattice points in the ROI grid. Press the Generate ROI Grid button, and your ROI will be duplicated in the grid pattern, ready for sequencing.
+
+ROI sequences consist of a number of steps (time slots). Within each step, 1 or more ROIs is shown. The Create Sequence box offers a quick shortcut for generating such sequences. In the Create Sequence box, choose a Sequence type (Sequential, Cumulative, or Simultaneous). Sequential mode in one step per FRAP-type ROI, where each FRAP-type ROI is illuminated in turn. Cumulative mode will gradually illuminate an additional FRAP-mode ROI per step, until all ROIs are illuminated. Simultaneous mode simply shows all ROIs simultaneously in a single step. Choose the typical time you want each step in the sequence to illuminate (On Duration) and the Off time between steps. Finally, the Loop Count determines how many times the ROIs should be repeatedly illuminated in each step. Press the "Generate Sequence" button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
+
+The Sequence table can now be edited to alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
+
+Finally, below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
 
 == Device Properties ==
 
@@ -82,44 +117,6 @@ The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 
 |- valign="top"
 | TriggerMode || Switch between various internal and external TTL trigger settings which are detailed in the Mosaic manual.
 |}
-
-== Projector Plugin ==
-
-Please read the [[Projector Plugin]] page for a general, detailed description of its usage.  The following describes, specifically, how the plugin runs the Mosaic.
-
-=== Setup ===
-
-First, make sure a camera has been installed using the hardware configuration wizard. Place a test slide (such as a solid fluorescent slide) on the microscope stage. Next, under Micro-Manager’s Plugins menu, select “Projector”. This plugin makes it easy to phototarget specimens, either ''ad hoc'' or as part of a multi-dimensional acquisition protocol.
-
-Click on the Setup tab and click "All Pixels." A solid rectangle should be visible on the specimen, corresponding to all pixels set to the "On state." Turn on Micro-Manager’s Live mode to see this rectangle on the camera.
-
-Click on “Show center spot” to see a small spot in the middle of the Mosaic’s array. It may be useful to adjust the alignment of the camera or the Mosaic to get the spot near the center of the camera’s field of view (exact positioning is not necessary).
-
-Next, press the "Calibrate" button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
-
-=== Point and shoot ===
-
-Following this calibration, you can use the mouse to draw targets on a live picture of the specimen, and precisely illuminate those targets. First, click on the “Point and Shoot” tab and turn “Point and shoot mode” to “On”. Set the Exposure Time to 1000 ms. Holding down the Control Key, click at arbitrary points on the live camera image. You should see a spot appear at each click point, and then disappear after approximately 1 second.
-
-=== ROIs ===
-
-Next, select the Polygon ROI tool on ImageJ’s toolbar, and draw a polygon on the live image. , Click on the “ROIs” tab and click “Set ROI(s)” to upload this ROI to the Mosaic. The plugin should report, “1 ROI submitted.” Choose an Exposure/dwell time of 250 ms. Click “Run ROIs now!” to illuminate the ROI -- you should see it light up for the duration requested.
-
-Finally, check the “Run ROIs in Multi-Dimensional Acquisition” checkbox. Choose a “Start Frame” of 10, and Repeat Every 20 frames. Set Micro-Manager’s camera exposure time to 50 ms. Open Micro-Manager’s Multi-Dimensional Acquisition window, and acquisition with 300 time points, and interval zero. Run the acquisition, and observe that a targeting event occurs at frames 10, 30, 50, etc.
-
-=== ROI Sequencing ===
-
-The Andor Mosaic also offers advanced sequencing capabilities. On the ROIs tab of the Projector Plugin, click the "Sequencing..." button. Two windows will appear: (1) the ROI Sequencing control window, and (2) the ImageJ ROI Manager. To add an ROI to the ROI Manager list, choose an ROI tool in the ImageJ toolbar, draw an ROI on the live window, and then click "Add" on the ROI Manager window. Repeat for as many ROIs as you need.
-
-Next, on the ROI Sequencing window, notice that ROI list now contains the same set of ROIs specified in ImageJ's ROI Manager. You can assign each ROI to one of two types: FRAP and Image. The FRAP rois are designed to appear for short periods of time, while the Image rois will typically be illuminated throughout the whole sequence.
-
-Alternatively, you can automatically generate a rectangular grid (lattice) of ROIs. First, draw an ROI in the upper-left corner of your intended grid. Then, in the "Create ROI Grid" box, enter the number of ROIs across and down (as in a crossword puzzle). Enter the spacing between lattice points in the ROI grid. Press the Generate ROI Grid button, and your ROI will be duplicated in the grid pattern, ready for sequencing.
-
-ROI sequences consist of a number of steps (time slots). Within each step, 1 or more ROIs is shown. The Create Sequence box offers a quick shortcut for generating such sequences. In the Create Sequence box, choose a Sequence type (Sequential, Cumulative, or Simultaneous). Sequential mode in one step per FRAP-type ROI, where each FRAP-type ROI is illuminated in turn. Cumulative mode will gradually illuminate an additional FRAP-mode ROI per step, until all ROIs are illuminated. Simultaneous mode simply shows all ROIs simultaneously in a single step. Choose the typical time you want each step in the sequence to illuminate (On Duration) and the Off time between steps. Finally, the Loop Count determines how many times the ROIs should be repeatedly illuminated in each step. Press the "Generate Sequence" button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
-
-The Sequence table can now be edited to alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
-
-Finally, below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
 
 == Scripting ==
 
