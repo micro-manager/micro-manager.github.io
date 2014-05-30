@@ -75,6 +75,12 @@ The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 
 | GrayScaleExposureTime || Pulse duration of mask in seconds when setting <code>PixelMode</code> to a value other than '''BlackAndWhite'''.
 |- valign="top"
 | InvertMode || Inverts all uploaded masks before projecting.  Invert means setting those DMD pixels outside of the 2D ROI On, and those within the 2D ROI Off.
+|- valign="top"
+| SequenceLoopCount || Number of times to repeat the entire uploaded Frame sequence.  You don't need to adjust this since the Sequence window has a textbox for "Sequence Repeats" which takes precedence.
+|- valign="top"
+| SequenceLoopSettings || Shows result of clicking "Upload Sequence" from Sequence window; useful for debugging.  Each "Time Slot" entry from the Sequence window list should appear as<br/><code>[Time Slot] [On Duration] [Off Duration] [Number of Loops];</code>
+|- valign="top"
+| TriggerMode || Switch between various internal and external TTL trigger settings which are detailed in the Mosaic manual.
 |}
 
 == Scripting ==
