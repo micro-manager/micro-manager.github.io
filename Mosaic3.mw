@@ -64,9 +64,17 @@ The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 
 |- valign="top"
 | Exposure || Pulse duration of mask in seconds.  You would not often change this setting directly since the Sequencing window requires you to set the exposure time in the Sequence list, and the exposure value(s) there takes precedence.  Changing this is useful for interactive use e.g. in the <code>Projector > Setup</code> tab.
 |- valign="top"
-| OverlapMode || Pulses mask when set to "Off". Switches to static exposure when set to "On".<br/><br/>The "Off" setting has the benefit of hardware timing accuracy, but it limits the maximum exposure to 200 seconds.<br/><br/>"On", by definition, ignores the value of "Off Duration (ms)" in the Sequence window.  When combined with setting the <code>Exposure</code> to 0, it exposes the mask constantly; if you have use of this ability one can create, say, an "Exposure Mode" group with a preset named something like "Static Exposure".
+| OverlapMode || Pulses mask when set to '''Off'''. Switches to static exposure when set to '''On'''.<br/><br/>The '''Off''' setting has the benefit of hardware timing accuracy, but it limits the maximum exposure to 200 seconds.<br/><br/>'''On''', by definition, ignores the value of "Off Duration (ms)" in the Sequence window.  When combined with setting the <code>Exposure</code> to 0, it exposes the mask constantly; if you have use of this ability one can create, say, an "Exposure Mode" group with a preset named something like "Static".
 |- valign="top"
-| FrameIndexSource || Setting this to "Hardware" allows switching between uploaded Frames using the TTL 26-pin D-sub breakout cable, by setting the "Frame Address [7:0]" BNC inputs.
+| OperationMode || Choose whether to use hardware or software memory.  The default, '''Live''', uses the software memory.  Use '''FrameSequence''' when using the Sequence window and set <code>SequenceLoopCount</code> if needed; though if you need the <code>SequenceLoopCount</code> to be infinite use '''ContinuousFrameSequence''' instead. If using <code>FrameIndexSource</code> as '''Hardware''', set to '''FrameMemory'''.
+|- valign="top"
+| FrameIndexSource || Setting this to '''Hardware''' allows switching between uploaded Frames using the TTL 26-pin D-sub breakout cable, by setting the "Frame Address [7:0]" BNC inputs.  Requires <code>OperationMode</code> being set to '''FrameMemory'''.
+|- valign="top"
+| PixelMode || Switch between '''BlackAndWhite''' and several gray scale settings.
+|- valign="top"
+| GrayScaleExposureTime || Pulse duration of mask in seconds when setting <code>PixelMode</code> to a value other than '''BlackAndWhite'''.
+|- valign="top"
+| InvertMode || Inverts all uploaded masks before projecting.  Invert means setting those DMD pixels outside of the 2D ROI On, and those within the 2D ROI Off.
 |}
 
 == Scripting ==
