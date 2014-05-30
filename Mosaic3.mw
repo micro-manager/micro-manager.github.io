@@ -83,23 +83,6 @@ The Mosaic has the option of a Uniblitz shutter accessory with a Vincent VCM-D1 
 | TriggerMode || Switch between various internal and external TTL trigger settings which are detailed in the Mosaic manual.
 |}
 
-== Scripting ==
-
-Under the ImageJ menu, select <code>File > New > Image...</code> and create a black, 8-bit 800x600 image. Double click the dropper tool on the ImageJ toolbar and make sure the current drawing color is white. Then double click the paintbrush tool and set the thickness to 20 pixels. Finally, sketch an image with the paint brush.
-
-Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the following code:
-
-   import ij.IJ; // Allows access to basic ImageJ utilities.
-   proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
-   pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.
-   mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.
-   mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.
-   mmc.displaySLMImage(mosaic); // Display the Mosaic.
-
-Running this script will result in projecting the image you have just drawn onto the Mosaic.
-
-If you save this TIF image, to reuse it in another session of Micro-Manager, you should open it using ImageJ's <code>File > Open</code> and again in the ImageJ menu change <code>Image > Type > 8-bit</code> instead of the default <code>32-bit</code>.
-
 == Projector Plugin ==
 
 Please read the [[Projector Plugin]] page for a general, detailed description of its usage.  The following describes, specifically, how the plugin runs the Mosaic.
@@ -137,6 +120,23 @@ ROI sequences consist of a number of steps (time slots). Within each step, 1 or 
 The Sequence table can now be edited to alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
 
 Finally, below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
+
+== Scripting ==
+
+Under the ImageJ menu, select <code>File > New > Image...</code> and create a black, 8-bit 800x600 image. Double click the dropper tool on the ImageJ toolbar and make sure the current drawing color is white. Then double click the paintbrush tool and set the thickness to 20 pixels. Finally, sketch an image with the paint brush.
+
+Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the following code:
+
+   import ij.IJ; // Allows access to basic ImageJ utilities.
+   proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
+   pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.
+   mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.
+   mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.
+   mmc.displaySLMImage(mosaic); // Display the Mosaic.
+
+Running this script will result in projecting the image you have just drawn onto the Mosaic.
+
+If you save this TIF image, to reuse it in another session of Micro-Manager, you should open it using ImageJ's <code>File > Open</code> and again in the ImageJ menu change <code>Image > Type > 8-bit</code> instead of the default <code>32-bit</code>.
 
 {{Listserv_Search|Mosaic}}
 
