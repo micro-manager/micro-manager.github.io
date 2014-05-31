@@ -5,7 +5,7 @@ The Projector plugin provides a single graphical user interface for controlling 
 -->
 The Projector plugin's interface shows three tabs: Point and Shoot, ROIs, and Setup. How to operate each tab is described in detail below.
 
-== Setup Tab ==
+== Setup tab ==
 
 [[File:Plugin_projector-setup.png]]
 
@@ -33,7 +33,7 @@ The calibration procedure starts by illuminating a few spots near the center of 
 | Toggles to specified channel during phototargeting.  You don't need to set this unless some hardware needs to be moved during imaging, like a dichroic and/or a shutter.  If you don't see your channel listed, you must set the <code>Core-ChannelGroup</code> in the <code>Property Browser</code> to the Group containing this channel.
 |}
 
-== Point and Shoot ==
+== Point and Shoot tab ==
 
 [[File:Plugin_projector-point_and_shoot.png]]
 
