@@ -62,7 +62,7 @@ If you have the [http://www.powertechnology.com/products/laser-diode-modules/las
 
 Controlling the Mosaic, like other SLM and Galvo devices, is done by the Projector plugin ('''Plugins | Device Control | Projector''').
 
-{{Note|Many functions of the generically designed Projector plugin are not useful for the Mosaic.  For normal use, one would just open the Projector plugin to go to the ROIs tab and open the Sequence window.}}
+{{Note|Many functions of the generically designed Projector plugin are not useful for the Mosaic.  For normal use, one would just open the Projector plugin to go to the ROIs tab and open the Sequencing window.}}
 
 Before you begin the calibration:
 * Make sure a camera has been installed using the Hardware Configuration Wizard.
@@ -72,24 +72,72 @@ Before you begin the calibration:
 
 You may wish to refer to the [[Projector Plugin]] description page if you have not used it before.  However, note that for the Mosaic:
 * [[Projector_Plugin#Point_and_Shoot_tab|Point and Shoot tab]]: only projects a fixed-sized round ROI on the live image window and offers no flexibility of shape type and size.
-* [[Projector_Plugin#ROIs_tab|ROIs tab]]: is mainly used to open the Sequence window.  The Sequence window has a super-set of the functionality of the other controls in the ROIs tab.
+* [[Projector_Plugin#ROIs_tab|ROIs tab]]: is mainly used to open the Sequencing window.  The Sequencing window has a super-set of the functionality of the other controls in the ROIs tab.
 
 Place a test slide (such as a solid fluorescent slide) on the microscope stage. 
-Click the "Calibrate" button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
+Click the {{Key|Calibrate}} button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
 
-== Sequence window ==
+== Sequencing window ==
 
-The Andor Mosaic offers advanced sequencing capabilities. To open the Sequence Window, on the ROIs tab of the Projector Plugin, click the "Sequencing..." button. Two windows will appear: (1) the ROI Sequencing control window, and (2) the ImageJ ROI Manager. To add an ROI to the ROI Manager list, choose an ROI tool in the ImageJ toolbar, draw an ROI on the live window, and then click "Add" on the ROI Manager window. Repeat for as many ROIs as you need.
+The Andor Mosaic offers advanced sequencing capabilities. To open the Sequencing Window, in the ROIs tab of the Projector Plugin, click the {{Key|Sequencing...}} button. The button also opens the ImageJ ROI Manager.
 
-Next, on the ROI Sequencing window, notice that ROI list now contains the same set of ROIs specified in ImageJ's ROI Manager. You can assign each ROI to one of two types: FRAP and Image. The FRAP rois are designed to appear for short periods of time, while the Image rois will typically be illuminated throughout the whole sequence.
+=== ROI list ===
 
-Alternatively, you can automatically generate a rectangular grid (lattice) of ROIs. First, draw an ROI in the upper-left corner of your intended grid. Then, in the "Create ROI Grid" box, enter the number of ROIs across and down (as in a crossword puzzle). Enter the spacing between lattice points in the ROI grid. Press the Generate ROI Grid button, and your ROI will be duplicated in the grid pattern, ready for sequencing.
+Use the ROI Manager window to add, remove and update ROIs.  If you are not as familiar with ImageJ ROIs or have been using the Mosaic in other software packages, read the Projector plugin's discussion about [[Projector_Plugin#Using_ImageJ_ROIs|using ImageJ ROIs]].
 
-ROI sequences consist of a number of steps (time slots). Within each step, 1 or more ROIs is shown. The Create Sequence box offers a quick shortcut for generating such sequences. In the Create Sequence box, choose a Sequence type (Sequential, Cumulative, or Simultaneous). Sequential mode in one step per FRAP-type ROI, where each FRAP-type ROI is illuminated in turn. Cumulative mode will gradually illuminate an additional FRAP-mode ROI per step, until all ROIs are illuminated. Simultaneous mode simply shows all ROIs simultaneously in a single step. Choose the typical time you want each step in the sequence to illuminate (On Duration) and the Off time between steps. Finally, the Loop Count determines how many times the ROIs should be repeatedly illuminated in each step. Press the "Generate Sequence" button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
+The intention of the ROI list is to add more properties to each ROI.  The list synchronizes itself to contain the same set of ROIs as the ROI Manager.
+{| class="wikitable"
+!style="width: 20%;"| Property
+! Description
+|- valign="top"
+| Mode || The default '''FRAP''' ROIs appears for short periods of time, whereas '''Image''' ROIs are intended to be illuminated throughout the whole sequence.
+|- valign="top"
+| Intensity || Sets the projected light intensity level if you have <code>PixelMode</code> set to one of the gray scale settings.
+|}
 
-The Sequence table can now be edited to alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
+=== Create ROI Grid ===
 
-Finally, below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
+To aid a specific use case, this feature duplicates a ROI generating a rectangular grid (lattice) of ROIs. Draw the ROI you wish to duplicate in the upper-left corner of your intended grid, enter the number of ROIs across and down and spacing between lattice points.
+
+=== Sequence table ===
+
+{{Note|It's often better to use [[Mosaic3#Create_Sequence|Create Sequence]] to populate the sequence table instead of hand-filling an empty Sequence table.  The Sequence table is being described first to introduce the nomenclature (particularly the "Time Slot") of the Create Sequence generator.}}
+
+{| class="wikitable"
+!style="width: 20%;"| Property
+! Description
+|- valign="top"
+| Time Slot || Reference index number generated by clicking the {{Key|Generate Sequence}} button in the Create Sequence panel, or by the {{Key|Add}} button under under the Sequence table.
+|- valign="top"
+| ROIs || "Roi #" in [[Mosaic3#ROI_list|ROI list]]
+|- valign="top"
+| On Duration (ms) || Illumination time.
+|- valign="top"
+| Off Duration (ms) || Off time after <code>Time Slot</code>
+|- valign="top"
+| Loops || Number of times the ROIs should be repeatedly illuminated within the <code>Time Slot</code>.  To repeat the entire Sequence table, set the "Sequence Repeats" number below the Sequence table.
+|}
+
+and the table alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
+
+=== Create Sequence ===
+
+ROI sequences consist of a time slots or steps. Within each time slot 1 or more ROIs can be illuminated. 
+
+{| class="wikitable"
+!style="width: 20%;"| Property
+! Description
+|- valign="top"
+| Sequence type || '''Sequential''' illiminates each <code>FRAP</code> mode ROI in turn.<br/><br/>'''Cumulative''' illuminates the <code>FRAP</code> mode ROI as it progresses through the <code>Time Slots</code>, until all ROIs are illuminated.<br/><br/>'''Simultaneous''' mode simply shows all ROIs in a single step.
+|-
+|colspan="2"| The remaining properties are described in the Sequence table above (On Duration, Off Duration, Loops).
+|}
+
+Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
+
+=== Control buttons ===
+
+Below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
 
 == Device Properties ==
 
