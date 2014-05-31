@@ -187,9 +187,15 @@ Below the Sequence table, you can specify:
 
 == Scripting ==
 
-Under the ImageJ menu, select <code>File > New > Image...</code> and create a black, 8-bit 800x600 image. Double click the dropper tool on the ImageJ toolbar and make sure the current drawing color is white. Then double click the paintbrush tool and set the thickness to 20 pixels. Finally, sketch an image with the paint brush.
+Neither the Projector plugin, nor the Sequencing window, exposes any API.  Since they are written in Java, one could edit the [https://valelab.ucsf.edu/svn/micromanager2/trunk/plugins/Projector/src/org/micromanager/projector/ Java code] itself to add desired functionality. See [[writing plugins for Micro-Manager]]
 
-Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the following code:
+The only scripting possible is that which is already built into MMCore, and thus the "upload bitmap mask" example script detailed below would work on any SLM device.  The example script makes use of <code>setSLMImage()</code> and <code>displaySLMImage()</code>, but there are several more SLM functions which one can find by reading through the [https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html core documentation] and searching for the word "SLM" in the javadoc page.
+
+=== Upload bitmap mask ===
+
+Create a binary mask from the ImageJ menu by creating a new image (<code>File > New > Image...</code>) and selecting 8-bit Black 800x600. Double-click the dropper tool on the ImageJ toolbar and make sure the current drawing color is white.  To draw a freehand shape, double-click the paintbrush tool, set the thickness to, say, 20 pixels and sketch on the image with the paint brush.
+
+Open the [[Script Panel GUI]] and paste the following code:
 
    import ij.IJ; // Allows access to basic ImageJ utilities.
    proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
@@ -200,7 +206,7 @@ Open the “Script Panel” (under Micro-Manager’s Tools menu). Enter the foll
 
 Running this script will result in projecting the image you have just drawn onto the Mosaic.
 
-If you save this TIF image, to reuse it in another session of Micro-Manager, you should open it using ImageJ's <code>File > Open</code> and again in the ImageJ menu change <code>Image > Type > 8-bit</code> instead of the default <code>32-bit</code>.
+If you are re-using a saved TIF, image you need to open it using ImageJ's <code>File</code> menu (not Micro-Manager's) and again in the ImageJ menu change <code>Image > Type</code> to </code>8-bit</code> instead of the default <code>32-bit</code> (opening as 32-bit is possibly a bug in ImageJ?).
 
 {{Listserv_Search|Mosaic}}
 
