@@ -135,7 +135,7 @@ ROI sequences consist of a time slots or steps. Within each time slot 1 or more 
 |colspan="2"| The remaining items are described in the Sequence table above (On Duration, Off Duration, Loops).
 |}
 
-Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. All Image-type ROIs are included in every step.  You can edit the image table to manipulate which ROIs appear in a <code>Time Slot</code>, the On and Off times, and the Loop Count. There are also buttons to {{Key|Add}}, {{Key|Clone}}, {{Delete}}, and re-order the <code>Time Slot</code>s.
+Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. All Image-type ROIs are included in every step.  You can edit the image table to manipulate which ROIs appear in a <code>Time Slot</code>, the On and Off times, and the Loop Count. There are also buttons to {{Key|Add}}, {{Key|Clone}}, {{Key|Delete}}, and re-order the <code>Time Slot</code>s.
 
 === Control buttons ===
 
