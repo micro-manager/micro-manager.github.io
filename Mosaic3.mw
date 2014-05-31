@@ -83,7 +83,7 @@ The Andor Mosaic offers advanced sequencing capabilities. To open the Sequencing
 
 === ROI list ===
 
-Use the ROI Manager window to add, remove and update ROIs.  If you are not as familiar with ImageJ ROIs or have been using the Mosaic in other software packages, read the Projector plugin's discussion about [[Projector_Plugin#Using_ImageJ_ROIs|using ImageJ ROIs]].
+Use the ROI Manager window to add, remove and update ROIs.  If you are not as familiar with ImageJ ROIs or have been using the Mosaic in other software packages, read the Projector plugin's discussion about [[Projector_Plugin#Drawing_Multiple_ImageJ_ROIs|drawing multiple ImageJ ROIs]].
 
 The intention of the ROI list is to add more properties to each ROI.  The list synchronizes itself to contain the same set of ROIs as the ROI Manager.
 {| class="wikitable"
