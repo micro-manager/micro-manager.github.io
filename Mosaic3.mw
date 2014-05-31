@@ -81,6 +81,8 @@ Click the {{Key|Calibrate}} button. The Projector Plugin will move through a rec
 
 The Andor Mosaic offers advanced sequencing capabilities. To open the Sequencing Window, in the ROIs tab of the Projector Plugin, click the {{Key|Sequencing...}} button. The button also opens the ImageJ ROI Manager.
 
+[[File:Sequencing.png|frame|center|Figure: Sequencing window showing (1) ROI list (2) Create ROI Grid panel (3) Sequence table editor (4) Create Sequence panel (5) Control buttons on bottom]]
+
 === ROI list ===
 
 Use the ROI Manager window to add, remove and update ROIs.  If you are not as familiar with ImageJ ROIs or have been using the Mosaic in other software packages, read the Projector plugin's discussion about [[Projector_Plugin#Drawing_Multiple_ImageJ_ROIs|drawing multiple ImageJ ROIs]].
