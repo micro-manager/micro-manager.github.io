@@ -62,7 +62,7 @@ The procedure for illuminating a single ROI is as follows:
 
 It's also possible to run multiple ROIs:
 # Click the ROI Manager button to display ImageJ's ROI Manager.
-# Draw an ROI, and press "Add." The ROI will be included in the list.
+# Draw an ROI, and press "Add." The ROI will be included in the list.  This is further detailed in [[#Drawing Multiple ImageJ ROIs]].
 # Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
 
 Pressing "Run ROIs now!" is a good way to phototarget the specimen during a Multi-Dimensional Acquisition. Just start the MDA, wait for the right moment, and then hit "Run Rois now!" to cause phototargeting to start, while acquisition continues simultaneously.
@@ -103,7 +103,7 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 <code>Setup</code> tab.
 |}
 
-== Using ImageJ ROIs ==
+== Drawing Multiple ImageJ ROIs ==
 
 If you are not as familiar with ImageJ ROIs and have been using ROIs in other software packages, some differences are:
 * Only a single ROI can be drawn at a time.  Drawing another ROI erases the current drawing, and so one must click the {{Key|Add [t]}} button in the ROI Manager before drawing another ROI.
