@@ -30,7 +30,7 @@
     Mosaic3ApiSharedMfc.dll
     Mosaic3SDKWrapper.dll
 
-:These Mosaic library files need to be copied from another installed software.  The software name and directory you need to copy the files from are listed below:
+:These Mosaic library files need to be copied from another installed software, as listed below:
 
 {| class="wikitable"
 ! Software            !! Directory containing required files
@@ -52,11 +52,11 @@ To allow Micro-Manager to control the Mosaic, add the Mosaic3 device using Micro
 
 ==== Shutter control of the Projected Light Source ====
 
-The Mosaic reflects a low level of light even when the digital mirrors are off, and therefore the Mosaic can be built with the a shutter accessory.  To control the Vincent VCM-D1 controller in Micro-Manager add the [[Vincent|Vincent device]].
+The Mosaic allows a low level of light through even when the digital mirrors are off, and therefore the Mosaic can be optionally purchased with the a physical shutter accessory.  This shutter accessory is connected to a Vincent VCM-D1 controller, so to control it in Micro-Manager add the [[Vincent|Vincent device]].
 
-Shutter control is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is instead to simply connect the "DMD Active" TTL 5 volt output to your light source "global shutter" (or similar) TTL input so that it is only on when the Mosaic is active.  You may not have the Vincent shutter if your system was ordered with the intention of using it with this type of TTL light source.
+Shutter control is primarily intended for light sources which cannot be directly modulated, like a Mercury lamp; for light sources that can be modulated, best practice is instead to simply connect the "DMD Active" TTL 5 volt output to your light source "global shutter" (or similar) TTL input so that it is only on when the Mosaic is active.  You may not have the shutter accessory installed on if your system was ordered with the intention of using it with this type of TTL light source.
 
-If you have the [http://www.powertechnology.com/products/laser-diode-modules/lasers-w-modulation/iq1a.html Power Technology diode laser], you may wish to still add the Vincent device because this laser always leaks ~4mW from the laser head even in the off position.
+If you have the [http://www.powertechnology.com/products/laser-diode-modules/lasers-w-modulation/iq1a.html Power Technology diode laser], you may wish to still add the Vincent device because this laser always leaks ~4mW from the laser head even in the off position (0 volt Analog input).  This laser leak is difficult to observe normally since the laser safety interlocks would shut off the laser.
 
 === Calibration ===
 
@@ -66,13 +66,13 @@ Controlling the Mosaic, like other SLM and Galvo devices, is done by the Project
 
 Before you begin the calibration:
 * Make sure a camera has been installed using the Hardware Configuration Wizard.
-* In the Setup tab of the Projector plugin:
+* In the [[Projector_Plugin#Setup_tab|Setup tab]] of the Projector plugin:
 ** If your microscope system requires changing a property for the Mosaic projected light to reach your specimen (often if your imaging reflector cube is different from the mosaic reflector cube), create a Group and a Presets each for your Mosaic reflector and your epi imaging reflector.  Assign the Core-ChannelGroup to that Group, and finally in the <code>Phototargeting channel</code> choose the Mosaic reflector preset.
 ** If you added the Vincent shutter device in the Hardware Configuration Wizard, assign it to the <code>Phototargeting shutter</code>.
 
 You may wish to refer to the [[Projector Plugin]] description page if you have not used it before.  However, note that for the Mosaic:
-* Point and Shoot tab: only draws a fixed-sized round target on the live image window and offers no flexibility of shape type and size.
-* ROIs tab: is mainly used to the Sequence window.  The Sequence window has a super-set of the functionality of the other controls in the ROIs tab.
+* [[Projector_Plugin#Point_and_Shoot_tab|Point and Shoot tab]]: only projects a fixed-sized round ROI on the live image window and offers no flexibility of shape type and size.
+* [[Projector_Plugin#ROIs_tab|ROIs tab]]: is mainly used to open the Sequence window.  The Sequence window has a super-set of the functionality of the other controls in the ROIs tab.
 
 Place a test slide (such as a solid fluorescent slide) on the microscope stage. 
 Click the "Calibrate" button. The Projector Plugin will move through a rectangular lattice of spots across the Mosaic array, illuminating them one by one. The corresponding position on the camera image will be automatically measured. During the calibration procedure, a small cross will be visible overlaid on each spot as it is located. When calibration is finished, the plugin will have acquired and stored a coordinate mapping from camera pixels to Mosaic pixels.
