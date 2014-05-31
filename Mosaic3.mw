@@ -122,8 +122,6 @@ To aid a specific use case, this feature duplicates a ROI generating a rectangul
 | Loops || Number of times the ROIs should be repeatedly illuminated within the <code>Time Slot</code>.  To repeat the entire Sequence table, set the "Sequence Repeats" number below the Sequence table.
 |}
 
-and the table alter which ROIs appear in a step, the On and Off times, and the Loop Count. You can add, duplicate, delete, and re-order the steps.
-
 === Create Sequence ===
 
 ROI sequences consist of a time slots or steps. Within each time slot 1 or more ROIs can be illuminated. 
@@ -137,11 +135,28 @@ ROI sequences consist of a time slots or steps. Within each time slot 1 or more 
 |colspan="2"| The remaining items are described in the Sequence table above (On Duration, Off Duration, Loops).
 |}
 
-Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
+Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. All Image-type ROIs are included in every step.  You can edit the image table to manipulate which ROIs appear in a <code>Time Slot</code>, the On and Off times, and the Loop Count. There are also buttons to {{Key|Add}}, {{Key|Clone}}, {{Delete}}, and re-order the <code>Time Slot</code>s.
 
 === Control buttons ===
 
-Below the Sequence table, you can specify how many times the sequence should be repeated, and how the sequence should be triggered. Press the "Upload Sequence" button to send the sequence and ROIs to the Mosaic device. Then press Run to start the sequence. You can also attach your sequence to Micro-Manager's multi-dimensional acquisition, and you can save the sequence for re-loading later.
+Below the Sequence table, you can specify:
+
+{| class="wikitable"
+!style="width: 20%;"| Item
+! Description
+|- valign="top"
+| Sequence Repeats || Number of many times the Sequence table should be repeated.
+|- valign="top"
+| Sequence Trigger || How the sequence should be triggered.
+|- valign="top"
+| Upload Sequence || Send the sequence and ROIs to the Mosaic device.  Get in the habit of clicking this button to apply changes from the Sequence list or from updating ROIs in the ROI Manager.
+|- valign="top"
+| Run/Stop || Execute the sequence.  Useful for previewing through the microscope eyepieces or "Live" image on the camera.
+|- valign="top"
+| Attach to Acquisition/Detach || Executes sequence when running Multi-dimensional acquisition.
+|- valign="top"
+| Load/Save || Exports and reload all settings (includes the ROIs).
+|}
 
 == Device Properties ==
 
