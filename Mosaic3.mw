@@ -90,6 +90,10 @@ The intention of the ROI list is to add more properties to each ROI.  The list s
 !style="width: 20%;"| Property
 ! Description
 |- valign="top"
+| Roi # || Reference index number automatically generated. This gets referenced later on in the [[#Sequence table]].
+|- valign="top"
+| Name || Copy of ROI name used in ROI Manager.
+|- valign="top"
 | Mode || The default '''FRAP''' ROIs appears for short periods of time, whereas '''Image''' ROIs are intended to be illuminated throughout the whole sequence.
 |- valign="top"
 | Intensity || Sets the projected light intensity level if you have <code>PixelMode</code> set to one of the gray scale settings.
