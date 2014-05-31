@@ -134,7 +134,7 @@ ROI sequences consist of a time slots or steps. Within each time slot 1 or more 
 |- valign="top"
 | Sequence type || '''Sequential''' illiminates each <code>FRAP</code> mode ROI in turn.<br/><br/>'''Cumulative''' illuminates the <code>FRAP</code> mode ROI as it progresses through the <code>Time Slots</code>, until all ROIs are illuminated.<br/><br/>'''Simultaneous''' mode simply shows all ROIs in a single step.
 |-
-|colspan="2"| The remaining properties are described in the Sequence table above (On Duration, Off Duration, Loops).
+|colspan="2"| The remaining items are described in the Sequence table above (On Duration, Off Duration, Loops).
 |}
 
 Click the {{Key|Generate Sequence}} button to populate the Sequence table, below. Notice that all Image-type ROIs are included in every step.
