@@ -209,7 +209,7 @@ Open the [[Script Panel GUI]] and paste the following code:
 </div>
 Running this script will result in projecting the image you have just drawn onto the Mosaic.
 
-If you are re-using a saved TIF, image you need to open it using ImageJ's <code>File</code> menu (not Micro-Manager's) and again in the ImageJ menu change <code>Image > Type</code> to </code>8-bit</code> instead of the default <code>32-bit</code> (opening as 32-bit is possibly a bug in ImageJ?).
+If you are re-using a saved TIFF image, you need to open it using ImageJ's <code>File</code> menu (not Micro-Manager's) and again in the ImageJ menu change <code>Image > Type</code> to <code>8-bit</code> instead of the default <code>32-bit</code> (opening as 32-bit is possibly a bug in ImageJ?).
 
 {{Listserv_Search|Mosaic}}
 
