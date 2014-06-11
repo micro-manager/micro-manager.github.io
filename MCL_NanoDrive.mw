@@ -26,6 +26,8 @@ Controls the XY(Z) and Z stages of Mad City Lab's [http://www.madcitylabs.com/na
 
 The Nano-Drive&trade; series of controllers are a complete electronic solution for precision positioning using Mad City Labs nanopositioners.  All controllers are closed-loop feedback enabled, which is essential for high-repeatability and sub-nanometer resolution for a nanopositioner. 
 
+{{Note|Using this device adapter requires the correct version of the Jungo WinDriver that is installed from the MCL installation CD. You can check the version of the driver in the Windows Device Manager. The required versions are 10.10 for Micro-Manager 1.4.15 and 11.20 for Micro-Manager 1.4.16 and later.}}
+
 The following properties are currently implemented in the Micro-Manager MCL Nano-Drive&trade; adapter:
 {| class="wikitable"
 !style="width: 20%;"| Property
