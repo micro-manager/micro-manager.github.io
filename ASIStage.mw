@@ -27,7 +27,7 @@ The following is an incomplete list of properties currently implemented in the M
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 <tr><td><b>Stepsize</b> (for X and Y in um)</td><td>  Read-only property.</td></tr>
-<tr><td><b>WaitCycles</b></td><td>Sets how long the controller will wait after reaching its target position before clearing its 'busy' signal in milliseconds.  For firmware version 8.4 and earlier (2008 vintage) the number of wait cycles is limited to 255 and is specified in the number of servo cycles instead of ms; for such old systems the servo cycle time is generally 1-10ms each depending on exact hardware and firmware.</td></tr>
+<tr><td><b>WaitCycles</b></td><td>Sets how long the controller will wait after reaching its target position before clearing its 'busy' signal in milliseconds.  For firmware version 8.4 and earlier (2008 vintage) the number of wait cycles is limited to 255 and is specified in the number of servo cycles instead of ms; for such old systems the servo cycle time is generally 1-10ms depending on exact hardware and firmware.</td></tr>
 <tr><td><b>Speed</b> (for both X and Y)</td><td>Sets the maximum speed at which the stage will move in mm/sec.  Hardware maximum is 7.5 mm/s for 6.5 mm pitch leadscrews</td></tr>
 <tr><td><b>Backlash</b> (for both X and Y, in mm)</td><td>Makes the controller approach the target always from the same direction, starting the set number of mm away from the target position</td></tr>
 <tr><td><b>Error</b> (for both X and Y, in nm)</td><td>When the difference between the current position (as read from the encoders) is larger than this number, the controller will re-engage the motors to reach the target position</td></tr>
