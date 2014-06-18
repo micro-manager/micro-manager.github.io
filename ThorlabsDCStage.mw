@@ -25,6 +25,8 @@
 </td></tr>
 </table>
 
+{{Note|See also: [[ThorlabsAPTStage]]}}
+
 
 The ThorlabsDCStage adapter operates the  Motorized Translational Stages (50 mm)
 [http://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3002 MTS50/M-Z8E] from Thorlabs controlled with the [http://www.thorlabs.com/NewGroupPage9.cfm?ObjectGroup_ID=2419 TDC001 Controller]. 
