@@ -40,7 +40,7 @@
 | Andor Mosaic 3 SDK  || <code>C:\Program Files\Andor Mosaic 3 SDK\sdk\</code>
 |}
 
-:If you don't have either of these installed, they are available at http://my.andor.com
+:If you don't have either of these installed, they are available at http://my.andor.com  The SDK is under <code>Software > Drivers and 3rd Party > Andor Mosaic 3 SDK</code>, and iQ is under <code>Software > Andor iQ</code>.
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
