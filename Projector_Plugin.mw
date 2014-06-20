@@ -108,7 +108,8 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 If you are not as familiar with ImageJ ROIs and have been using ROIs in other software packages, some differences are:
 * Only a single ROI can be drawn at a time.  Drawing another ROI erases the current drawing, and so one must click the {{Key|Add [t]}} button in the ROI Manager before drawing another ROI.
 * To change a ROI that has already been added, select the ROI in the list, draw the new ROI and click {{Key|Update}}.
-* "Show All" in the ROI Manager displays all ROIs.
+* "Show All" checkbox in the ROI Manager displays all ROIs.
+* A quick way to delete all ROIs is to double-click the {{Key|Delete}} button.
 
 Also see the [ROI Manager http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager...] section on the ImageJ User Guide.
 
