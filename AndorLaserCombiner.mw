@@ -126,6 +126,24 @@ For <code>Auto-Shutter</code> setting in Step 3 of 6, set the <code>Default Shut
 |Request Andor support to remotely connect to each laser head and adjust the "set power" (using the <code>p=</code> serial command) to the rated value of the laser head.
 |}
 
+=== Hang during acquisition ===
+{| class="wikitable"
+!Description
+|Micro-Manager hangs during acquisition
+|-
+!Cause 1
+|Windows USB power saving is enabled
+|-
+!Workaround 1
+|Disable Windows USB power saving
+|-
+!Cause 2
+|Buggy Prolific driver (version 3) bundled by Windows 7
+|-
+!Workaround 2
+|Install Prolific driver  [[:File:PL2303_DriverInstaller_v1413_20110219.gz|version 2.0.13.130]] and delete newer versions from the Device Manager.
+|}
+
 == Resources ==
 
 === Laser Combiner questions ===
