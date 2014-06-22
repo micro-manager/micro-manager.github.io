@@ -117,7 +117,7 @@ If you are not as familiar with ImageJ ROIs and have been using ROIs in other so
 # Visually select a ROI by clicking the ROI's center label number in the image.  You will need to enable both the "Show All" and "Labels" checkboxs in the ROI Manager to do this.
 # Move a ROI by dragging the ROI's center label number in the image.
 
-Also see the [ROI Manager http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager...] section on the ImageJ User Guide.
+Also see the [http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager] section on the ImageJ User Guide.
 
 == FAQ ==
 
