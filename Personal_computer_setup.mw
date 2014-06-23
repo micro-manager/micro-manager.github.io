@@ -48,13 +48,23 @@ PCI Express C-states power saving settings need to be disabled in the BIOS, in a
 | HP || Power > OS Power Management > Idle Power Savings (change from "Extended" to "Normal")
 |}
 
+== USB connection placement ==
+High bandwidth USB devices using such as cameras, XY stages, and microscopes must not share their USB bus with other such high bandwidth devices.  When these devices send data simultaneously and overflow the USB bus, this in turn causes the imaging software to freeze or crash.  Ideally, each high bandwidth device would be plugged into the computer USB slots in such a way as to be on its own USB bus; in less ideal circumstances the device would share a bus with a low-bandwidth device (i.e. a device known not to require much communication).
+
+You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  The physical layout of computer USB ports is often misleading, as devices connected to the front and back USB slots of the computer can actually be on the same USB bus.  Using UVCview, try different USB slots on the computer until the high bandwidth device is on its own USB bus.
+
+Another problem with some USB devices is power draw exceeding the current that the USB bus can provide.  USB power draw problems manifest or be detected in several ways:
+# The list of devices in UVCview will repeatedly refresh.  The refresh happens because devices are intermittently dropping out of the USB bus for short periods of time.
+# The device won't be recognized until other devices are removed from its USB bus, or unless it is plugged in with using a powered USB hub.
+# Even though the device is recognized in the Device Manager, one cannot communicate with in the imaging software.
+The fix for power draw, as with high-bandwidth devices, is putting the device on its own USB bus.  If there is no available USB bus on the computer, try a PCI/e USB daughter card (make sure to power the card if it has a connector) or use a powered external USB hub.
+
 <!--
 == Device Manager ==
 === Changing COM Port Numbers ===
 === Downgrading drivers ===
 
 == Diagnostics ==
-=== USB bus ===
 === Event Viewer ===
 -->
 
