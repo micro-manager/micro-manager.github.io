@@ -56,7 +56,7 @@ You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbv
 Another problem with some USB devices is power draw exceeding the current that the USB bus can provide.  USB power draw problems manifest or be detected in several ways:
 # The list of devices in UVCview will repeatedly refresh.  The refresh happens because devices are intermittently dropping out of the USB bus for short periods of time.
 # The device won't be recognized until other devices are removed from its USB bus, or unless it is plugged in with using a powered USB hub.
-# Even though the device is recognized in the Device Manager, one cannot communicate with in the imaging software.
+# Even though the device is recognized in the Device Manager, one cannot communicate with it in the imaging software.
 The fix for power draw, as with high-bandwidth devices, is putting the device on its own USB bus.  If there is no available USB bus on the computer, try a PCI/e USB daughter card (make sure to power the card if it has a connector) or use a powered external USB hub.
 
 <!--
