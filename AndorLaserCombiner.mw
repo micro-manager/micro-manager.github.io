@@ -177,7 +177,7 @@ For feature requests or bug reports, please liaison with µManager developers on
 | [http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11895 vcredist_x64.exe]
 |}
 
-* Unzip the <code>ALC_SDK libraries</code> to a new folder (you may need to download [http://www.7-zip.org/ 7-zip]):
+* Unzip the <code>ALC_SDK Libraries</code> to a new folder (you may need to download [http://www.7-zip.org/ 7-zip]):
           C:\ProgramData\Andor_ALC_library\
 <!-- Setting up the PATH is not super easy and should be moved to its own page or template for consistency -->
 * Add the above folder to your Windows <code>PATH</code> variable, namely:
@@ -186,7 +186,6 @@ For feature requests or bug reports, please liaison with µManager developers on
 ** On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\ProgramData\Andor_ALC_library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
 ** If your OS is older than Windows 7, restart your computer for the new <code>PATH</code> to take effect.
 * If you already have control of your ALC in another software, your ALC_SDK installation is complete.  Otherwise continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
-
 
 === Configure ALC_SDK dependencies ===
 * Install your OS dependencies, located under the unzipped ALC_SDK's <code>Drivers</code> directory.  Under each OS folder there are folders for the 3 dependency drivers:
