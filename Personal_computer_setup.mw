@@ -62,6 +62,25 @@ Another problem with some USB devices is power draw exceeding the current that t
 # Even though the device is recognized in the Device Manager, one cannot communicate with it in the imaging software.
 The fix for power draw, as with high-bandwidth devices, is putting the device on its own USB bus.  If there is no available USB bus on the computer, try a PCI/e USB daughter card (make sure to power the card if it has a connector) or use a powered external USB hub.
 
+== Install device libraries  ==
+Some devices require library (.dll) files to communicate, and their DeviceAdapters will show "(unavailable)" in the Hardware Configuration Wizard without them.  Sometimes these library files:
+# Are Included with, and installed by, Micro-Manager itself so that the device works out of the box.  These are called '''bundled libraries'''.
+# Can be installed as a '''system-wide dependency'''.
+# Are supplied with no installer (often in a .zip file) and need to be either copied to the Micro-Manager directory to be available locally to that version of MM, or added to the Windows PATH to be available system-wide.
+
+=== Copying libraries to main MM folder ===
+This is the most common method of installing library files for one Micro-Manager folder.  After the library files are copied to the Micro-Manager folder, starting MM will find them.
+
+=== Adding libraries to Windows PATH ===
+Sometimes one has to install nightly builds for troubleshooting problems and it's tedious to copy the required library files each time.
+
+One can add the folder containing device library files to the Windows <code>PATH</code> variable, by:
+* Right-click the My Computer icon on the desktop or start menu
+* Click <code>Properties</code> and on the <code>Advanced</code> tab choose <code>Environment</code> variables.
+* On the <code>System Variables</code> list, find "Path" or "PATH" and click edit.  DO NOT DELETE ANYTHING.  Just add <code>;C:\Path\to\your\library\</code> on the end of the line on the edit window. The leading semi-colon (;) is necessary or you might break something on your windows installation.
+* If your OS is older than Windows Vista, restart your computer for the new <code>PATH</code> to take effect.
+
+
 <!--
 == Device Manager ==
 === Changing COM Port Numbers ===
