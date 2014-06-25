@@ -68,10 +68,10 @@ Some devices require library (.dll) files to communicate, and their DeviceAdapte
 # Can be installed as a '''system-wide dependency'''.
 # Are supplied with no installer (often in a .zip file) and need to be either copied to the Micro-Manager directory to be available locally to that version of MM, or added to the Windows PATH to be available system-wide.
 
-=== Copying libraries to main MM folder ===
+=== Copy device libraries to main MM folder ===
 This is the most common method of installing library files for one Micro-Manager folder.  After the library files are copied to the Micro-Manager folder, starting MM will find them.
 
-=== Adding libraries to Windows PATH ===
+=== Add device libraries to Windows PATH ===
 Sometimes one has to install nightly builds for troubleshooting problems and it's tedious to copy the required library files each time.
 
 One can add the folder containing device library files to the Windows <code>PATH</code> variable, by:
