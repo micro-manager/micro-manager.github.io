@@ -27,9 +27,9 @@
 
 
 == Installation ==
-µManager 1.4.16 onward bundles all required libraries.  For versions than 1.4.16_20131025 follow the [[#Library installation for MM versions older than 1.4.16|library installation in the appendix]].
+µManager 1.4.16 onward bundles all required libraries.  For versions than 1.4.16_20131025 follow the [[#Library installation for MM versions older than 1.4.16]].
 
-If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies|Configure ALC_SDK dependencies]]
+If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies]]
 
 == Hardware Configuration ==
 
@@ -179,7 +179,7 @@ For feature requests or bug reports, please liaison with µManager developers on
 
 * Unzip the <code>ALC_SDK Libraries</code> to a new folder and [[Personal computer setup#Add_device_libraries_to_Windows_PATH|add it to the Windows PATH]]:
           C:\ProgramData\Andor_ALC_library\
-* If you already have control of your ALC in another software, your ALC_SDK installation is complete because all the Windows device drivers would be installed.  Otherwise continue on to [[#configure ALC_SDK dependencies]].
+* If you already have control of your ALC in another software, your ALC_SDK installation is complete because all the Windows device drivers would be installed.  Otherwise continue on to [[#Configure ALC_SDK dependencies]].
 
 === Configure ALC_SDK dependencies ===
 * Install your OS dependencies, located under the unzipped ALC_SDK's <code>Drivers</code> directory.  Under each OS folder there are folders for the 3 dependency drivers:
