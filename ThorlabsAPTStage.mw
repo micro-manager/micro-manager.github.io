@@ -26,8 +26,11 @@ From the [http://www.thorlabs.de/software_pages/ViewSoftwarePage.cfm?Code=apt Th
 The ThorlabsAPTStage adapter aims to provide a unified adapter for all the Thorlabs APT stages.
 
 == Requirements ==
+The ThorlabsAPTStage device adapter requires the 32-bit Micro-Manager, a recent 32-bit version of the APT software and an additional APT.dll file available to download from this website.
 
-The device adapter requires 32-bit Micro-Manager and the APT.dll file, which should be copied to the Micro-manager folder. A zipped version of the file can be downloaded here: [[File:APT.zip]].
+First you will need to download and install the APT software from the [http://www.thorlabs.co.uk/software_pages/ViewSoftwarePage.cfm?Code=apt Thorlabs website].
+
+Then download the [[File:APT.zip]] file and decompress the APT.dll file into your Micro-manager folder.
 
 == Device support ==
 
