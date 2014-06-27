@@ -111,6 +111,33 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 <tr><td width=40>5</td><td width=40>13</td><td width=40>32</td></tr>
 </table>
 
+=== Device Properties ===
+{| class="wikitable"
+!style="width: 20%;"| Properties || Description
+|- valign="top"
+| Switch-Blank On || Allows '''Low''' or '''High'''.
+|- valign="top"
+| Switch-Blanking Mode || Allows '''On''' or '''Off'''.
+|- valign="top"
+| Switch-HubID || 
+|- valign="top"
+| Switch-Label || Allows 0-63.
+|- valign="top"
+| Switch-Sequence || Allows '''On''' or '''Off'''.
+|- valign="top"
+| Switch-State || Allows 0-63.
+|- valign="top"
+| Input-AnalogInput{0:5} || 10-bit value of ADC input.
+|- valign="top"
+| Input-DigitalInput || Value depends on how the <code>Pin</code> initialization property was set.  Shows binary state of the input pin, if a single in was selected.  Shows the 5-bit value of all input pins if "All" was selected.
+|- valign="top"
+| Input-HubID || 
+|- valign="top"
+| DAC{1,2}-HubID ||  
+|- valign="top"
+| DAC(1,2}-Volts || 
+|}
+
 == Project Tutorials ==
 * [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
 
