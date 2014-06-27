@@ -182,10 +182,22 @@ For feature requests or bug reports, please liaison with µManager developers on
 * If you already have control of your ALC in another software, your ALC_SDK installation is complete because all the Windows device drivers would be installed.  Otherwise continue on to [[#Configure ALC_SDK dependencies]].
 
 === Configure ALC_SDK dependencies ===
-* Install your OS dependencies, located under the unzipped ALC_SDK's <code>Drivers</code> directory.  Under each OS folder there are folders for the 3 dependency drivers:
+* There are 3 dependency drivers:
 ** DeVaSys (for front USB control to enable interlocks)
-** Prolific PL-2303 USB (for laser serial communication)
+** Prolific PL-2303 USB (for laser serial communication).  On the ALC-601 these have been replaced with standard Tronix FTDI drivers which don't require driver installation as they are bundled with Windows 7.
 ** Measurement Computing (for PCI DAC card)
+:Install them from:
+{| class="wikitable"
+! OS version || DeVaSys || Prolific || Measurement Computing
+|-
+! 32-bit
+| [http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x86.msi UsbI2cIo 5.00 (32-bit)]
+|rowspan="2"| [[:File:PL2303_DriverInstaller_v1413_20110219.gz|Prolific 2.0.13.130]]
+|rowspan="2"| [ftp://ftp.mccdaq.com/Archive/InstaCal/Archive_6.10/icalsetup.exe InstaCal 6.10]
+|-
+! 64-bit
+| [http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x64.msi UsbI2cIo 5.00 (64-bit)]
+|}
 * The devices will be detected in the Device Manager as:
       DAS Component
          PCIM-DDA06/16
