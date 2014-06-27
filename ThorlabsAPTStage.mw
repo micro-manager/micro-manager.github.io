@@ -98,10 +98,38 @@ At the moment, the following APT devices / controllers will be recognised, altho
 |
 |}
 
+== Installing a new stage (an example) ==
+In the following example, we have 4 TDC001 controllers, each controlling a different type of stage. X,Y are controlling MTS25-Z8 linear stages, Z is controlling a MTS50-Z8 linear stage and we also have a PRM1-Z8 rotation stage.
+
+To check that your PC is communicating with all the stages, you can launch the APT Configuration Utility.
+
+[[File:aptconfig.png||thumb|center|upright=2.5|alt=APTConfig.|The Thorlabs APT Configuration Utility displaying 4 controllers.]]
+
+Note: In order for APTConfig to display the list of available stages, Micro-manager must be closed. Make sure you do not run both at the same time.
+
+In Micro-manager's Hardware Configuration Wizard, select ThorlabsAPTStage. Each unique controller only appears once.
+
+[[File:hardwarewiz.png||thumb|center|upright=2.5|alt=Hardware config wizard.|Micro-manager's Hardware Configuration Wizard displays a single TDC001 controller.]]
+
+To add a stage, click the APT controller and give it a unique name. Then select its Serial Number from the drop-down menu. This number is displayed on the controller itself.
+
+Additionally, you may need to select a channel number (for APT controllers controlling more than one channel).
+
+At this point, you can also set software limits. This is to ensure that the stage will only travel a limited range.
+
+Note for now (as of 1.4.17): if you change the soft limits, the stage may not initialize properly.
+
+[[File:hardwarewiz_device.png||thumb|center|upright=2.0|alt=Hardware config wizard.|Adding a ThorlabsAPTStage device and selecting its Serial Number.]]
+
 == Homing procedure (preliminary) ==
 
 APT stages must be "homed" first before any further commands can be sent.
 
-For each of the stages defined in micro-manager, create a Group with the "Home" property. Then set the value to 1.
+For each of the stages defined in micro-manager, create a Group with the "Home" property.
+[[File:apt_zhome.png||thumb|center|upright=2.5|alt="Go Home" group property.|Adding Initialisation groups, one for each stage.]]
+
+Then when you want one of the stages initialised, simply set the group value to 1.
+
+[[File:mm_aptstages.png||thumb|center|upright=2.5|alt=Micromanager APT initialisation groups.|Set the Preset value to 1 to initialise the stages individually.]]
 
 {{Devices_Sidebar}}
