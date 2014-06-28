@@ -15,7 +15,7 @@
 |BSD
 |- valign="top"
 !Platforms:
-|Windows XP 32bit<br>Windows 7 32bit and 64bit<br>(No Mac or Linux driver available)
+|Windows (No Mac or Linux driver available)
 |- valign="top"
 !Devices:
 |LC-401, LC-501, LC-601 (only 4 laser LC-601 systems supported; 5 and 6 line support coming soon)
@@ -27,11 +27,12 @@
 
 
 == Installation ==
-µManager 1.4.16 onward bundles all required libraries.  For versions than 1.4.16_20131025 follow the [[#Library installation for MM versions older than 1.4.16]].
 
-If you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies]]
+In most cases the ALC will work "out of the box".
 
-== Hardware Configuration ==
+But if you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies]], and for Micro-Manager versions than nightly build 1.4.16_20131025 follow the [[#Library installation for MM 1.4.15 and earlier]].
+
+== Hardware Configuration Wizard ==
 
 Description of devices available in the Hardware Configuration Wizard:
 
@@ -106,45 +107,61 @@ For <code>Auto-Shutter</code> setting in Step 3 of 6, set the <code>Default Shut
 
 === No laser, but laser emission LEDs are illuminated ===
 {| class="wikitable"
-!Description
+!style="width: 20%;"|Description
 |The hardware appears to be operating correctly, but there is no laser output.  The camera is running live, feeding the Active Blanking signal.
-|-
+|- valign="top"
 !Cause
 |DEMO-BOARD device listed in InstaCal
-|-
+|- valign="top"
 !Workaround
 |Delete the DEMO-BOARD device by opening InstaCal from <code>Start Menu > Programs > Measurement Computing</code>
 |}
 
 === Microsoft Visual C++ error(s) opening HCW ===
 {| class="wikitable"
-!Description
+!style="width: 20%;"|Description
 |Opening the <code>Hardware Configuration Wizard</code> shows one or more of the following error windows, and closing the window immediately crashes µManager:
 [[File:Alc_mscv_error.jpg|frame|Figure: Error due to incorrect internal laser power setting]]
-|-
+|- valign="top"
 !Cause
 |Bug in ALC_SDK (Laser power setting exceeding rated value) <!-- TODO: Add Andor's Bugzilla bug number -->
-|-
+|- valign="top"
 !Workaround
 |Request Andor support to remotely connect to each laser head and adjust the "set power" (using the <code>p=</code> serial command) to the rated value of the laser head.
 |}
 
-=== Hang during acquisition ===
+=== Hang due to USB power saving ===
 {| class="wikitable"
-!Description
-|Micro-Manager hangs during acquisition
-|-
-!Cause 1
-|Windows USB power saving is enabled
-|-
-!Workaround 1
-|Disable Windows USB power saving
-|-
-!Cause 2
-|Buggy Prolific driver (version 3) bundled by Windows 7
-|-
-!Workaround 2
-|Install Prolific driver  [[:File:PL2303_DriverInstaller_v1413_20110219.gz|version 2.0.13.130]] and delete newer versions from the Device Manager.
+!style="width: 20%;"|Description
+|Micro-Manager hangs during acquisition.
+|- valign="top"
+!Cause
+|Windows Vista and newer enable USB power saving, even in the "High Performance" power plan, by default.
+|- valign="top"
+!Fix
+|[[Personal computer setup#Power_Options|Disable Windows "USB selective suspend setting"]].
+|}
+
+=== Hang due to incorrect Prolific USB-Serial driver ===
+{| class="wikitable"
+!style="width: 20%;"|Description
+|Micro-Manager hangs during acquisition.
+|- valign="top"
+!Cause
+|Buggy Prolific driver (version 3) bundled by Windows 7.  In the Device Manager when you right-click on the Prolific serial port:
+   Ports (COM & LPT)
+         ...
+         Prolific USB-to-Serial Comm Port (COM201)
+         ...
+
+... it will show a newer driver version than 2.0.13.130.
+|- valign="top"
+!Workaround
+|
+# Install Prolific driver  [[:File:PL2303_DriverInstaller_v1413_20110219.gz|version 2.0.13.130]]
+# Disable Microsoft server driver installation.  When Windows says it's searching for drivers, it fetches them from the Microsoft server.  Turn off this driver updating behavior because if e.g. the USB bus glitches for whatever reason it will try to reinstall the buggy version 3 drivers (you have to do this step even if you have Windows updates disabled) via the Start menu > (Type in the "Search programs and files" box) change dev > Change device installation settings > No, Let me choose what to do > Never install driver from Windows Update
+# In your Device Manager, right-click on the Prolific ports and check the driver version.  The good version is 2.0.13.130.  Most likely you will see something like 3.4.48.272.  Right-click on the Prolfic entry in the Device Manager > Uninstall > Delete the driver software for this device > OK.  Repeat for all Prolific COM20x ports.  Then to pick up the next available driver in Windows, in the Device Manager click Action > Scan for hardware changes).  Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver.  You will then need to reassign the COM ports to 20x which is detailed in [[AndorLaserCombiner#Configure_ALC_SDK_dependencies]].
+{{Note|Andor's ALCs have since switched to using FTDI USB-serial convertors because Prolific considers the PL-2303 an obsolete product and Prolific won't fix the issue with Microsoft distributing faulty drivers.}}
 |}
 
 == Resources ==
