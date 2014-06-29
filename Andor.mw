@@ -23,10 +23,8 @@
 === Andor Driver Pack ===
 You must install the Andor Driver Pack to recognize the camera in the Windows Device Manager.  These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Andor Driver Pack (CCD)</code>.  Yes, you have to register and login to download the file.
 
-=== Disable power savings ===
-Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  These must be disabled in the BIOS.
-
-Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management and USB suspend] settings
+=== Disable computer power savings ===
+Disable power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable in PCI/e power management and USB suspend saving in [[Personal computer setup#Power Options|Power Options]].
 
 === (USB only) Finding a dedicated USB 2.0 bus ===
 High-bandwidth USB cameras like the Clara and iXon may lose communication during imaging if they share a USB bus with another high bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).  Plug the camera into it's own [[#Windows USB Bus|USB bus]] on the computer.
