@@ -49,9 +49,7 @@ Alternatively, install the Andor Driver Pack 3 to the working Micro-Manager Dire
 Ensure you Restart the PC.
 
 === Disable computer power savings ===
-Disable C-states power saving in the BIOS.  Commercial computers like Dell, HP, etc shipped in the US and Europe are legally required by environmental regulations to ship with all power savings turned on.  
-
-Additionally for Windows 7, turn off [http://www.austinblanco.com/blog/?p=818 PCI power management] settings
+Disable C-states power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable PCI Express > Link State Power Management in [[Personal computer setup#Power Options|Power Options]].
 
 == Configuration ==
 
