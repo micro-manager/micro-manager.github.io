@@ -3,14 +3,14 @@
 !Summary:
 |Interfaces with Andor sCMOS cameras<br>(Use [[Andor]] DeviceAdapter instead for other Andor CCD and EMCCD cameras)
 |-
-!Authors
+!Author
 | David Gault (Andor)
 |- valign="top"
 !Maintainers
-|Matt Milford (Andor)<br>Norman Glasgow (Andor)<br>David Gault (Andor - retired)
+|Matt Milford (Andor)<br/>Norman Glasgow (Andor)
 |- valign="top"
 !Documentation:
-|Orla Hanrahan (Andor)<br>Pariksheet Nanda (Andor)
+|Norman Glasgow (Andor)<br/>Orla Hanrahan (Andor)<br/>Pariksheet Nanda (Andor)
 |-
 !License:
 |BSD
