@@ -21,7 +21,7 @@
 
 == Installation ==
 === Andor Driver Pack ===
-You must install the Andor Driver Pack to recognize the camera in the Windows Device Manager.  These are publicly available on [http://www.andor.com/my/user/ MyAndor website] under <code>Drivers and 3rd Party > Andor Driver Pack (CCD)</code>.  Yes, you have to register and login to download the file.
+To recognize the camera in the Windows Device Manager, install the [http://www.andor.com/downloads?src=micro Andor Driver Pack].
 
 === Disable computer power savings ===
 Disable power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable in PCI/e power management and USB suspend saving in [[Personal computer setup#Power Options|Power Options]].
