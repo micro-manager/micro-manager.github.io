@@ -34,9 +34,8 @@ The installation is straightforward, default settings can be used.
 # Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
 # Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
 # Add ''OKO Control Server'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
-# Add one of the available Okolab devices.
-# Write the right COM Port Value (eg ''COM1''), using Windows device manager.
-# Repeat points 4 and 5 for each Okolab device.
+# Check the right COM Port number, opening ''Windows Control Panel'' and choosing first ''System'' then ''Device Manager'' then ''Ports (COM & LPT)''. It will look something like ''USB serial Port (COMX)'', where X is the COM port number assigned. A good way to double-check it is remove the Okolab USB cable from the PC as this Port should be not listed anymore. 
+# Add the needed Okolab devices to Micro-Manager configuration, writing the right COM Port (eg. ''COM1'').
 {{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
 
 == Usage ==
