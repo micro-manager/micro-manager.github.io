@@ -19,6 +19,8 @@ The piezo Z stage can be set up to receive trigger signals from many cameras (se
 
 CRIFF [http://www.asiimaging.com/products/focus-stabilization/criff-continuous-reflective-interface-feedback-focus-system/] was ASI's original autofocus product, and has been replaced by the CRISP autofocus system [http://www.asiimaging.com/products/focus-stabilization/crisp-autofocus-system/].  In both, the user can cycle of several states states (laser idle, laser on, calibrate, lock/unlock, laser off) by pressing the middle "@" button on the controller for 6 seconds (see the CRIFF manual [http://www.asiimaging.com/ftp2asi/Manuals/CRIFF%20Manual.pdf]).  Most of these state changes are implemented in the CRIFF and CRISP adapters.  In general, it is easiest to first calibrate the CRIFF/CRISP by hand and then use Micro-manager to lock and unlock the CRIFF/CRISP.
 
+{{Note|For the CRISP focus curve to work correctly, you need to increase the serial port timeout to approximately 1500 ms.}}
+
 As of ASI controller version 8.0 (called the 'WK Whizkid'), the build-in USB connection is actually a USB to serial converter.  You can find drivers for Windows, Mac OS X, and linux at the [http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx silabs] website.
 
 The DIP switches on the back on recent controllers control the baudrate for both the real serial and the USB to serial ports on the controller.  See your manual for details.
