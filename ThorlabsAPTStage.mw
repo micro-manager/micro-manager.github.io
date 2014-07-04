@@ -30,7 +30,7 @@ The ThorlabsAPTStage device adapter requires the 32-bit Micro-Manager, a recent 
 
 First you will need to download and install the APT software from the [http://www.thorlabs.co.uk/software_pages/ViewSoftwarePage.cfm?Code=apt Thorlabs website].
 
-Then download the [[File:APT.zip]] file and decompress the APT.dll file into your Micro-manager folder.
+Then download the [[File:APT.zip]] file and decompress the APT.dll file into your Micro-manager folder. As of 2014-07-04, the APT.dll version which works with the current Thorlabs drivers is v1.0.0.3. The file is 1.71MB decompressed and its MD5 checksum is c966684580e4d373338b4b4c1640e817
 
 == Device support ==
 
