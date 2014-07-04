@@ -8,6 +8,7 @@ These are the wiki pages I maintain:
 ** [[AndorSDK3|Andor sCMOS cameras]]
 ** [[AndorLaserCombiner|Andor Laser Combiner]]
 ** [[MicroPoint|Andor MicroPoint]]
+** [[Mosaic3|Andor Mosaic]]
 ** [[Arduino]]
 * Plugins
 ** [[Projector|Projector plugin]]
@@ -17,6 +18,8 @@ These are the wiki pages I maintain:
 * Other
 ** [[Comparison with other microscopy software|Article comparing µManager with other microscopy software]]
 ** [[Setup UTSW SD|Installation report of UT Southwestern Confocal]]
+** [[CSU Alignment|Alignment of Yokogawa spinning disk]]
+** [[Personal computer setup]]
 
 == Interest in µManager ==
 # Improve documentation on this wiki.
