@@ -136,7 +136,6 @@ It is a fastest way to get pixel data as RGB array without copying. There is no 
 
     mmc.startContinuousSequenceAcquisition(1)
     while True:
-        frame = mmc.getLastImage()
         if mmc.getRemainingImageCount() > 0:
             frame = mmc.getLastImage()
             # or frame = mmc.popNextImage()
@@ -152,10 +151,6 @@ Also check out [https://github.com/radioxoma/micromanager-samples micromanager-s
 * [http://scikit-image.org/docs/dev/auto_examples Scikits-image gallery]
 * [https://github.com/jrjohansson/scientific-python-lectures Lectures on scientific computing with Python]
 * [http://docs.opencv.org/trunk/doc/py_tutorials/py_tutorials.html OpenCV-Python Tutorials]
-
-== Micromanager code ==
-
-* [https://github.com/mdcurtis/micromanager-upstream Micromaanger SVN-tracking repository on Github]
 
 Written by Eugene Dvoretsky -- [[User:Radioxoma|Radioxoma]] ([[User talk:Radioxoma|talk]]) 09:19, 14 June 2014 (PDT)
 
