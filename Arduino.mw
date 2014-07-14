@@ -97,15 +97,22 @@ Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can
 You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4.
 
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
-<table>
-<tr><th width=40>bit</th><th width=40>pin</th><th width=40>nr when high</th></tr>
-<tr><td width=40>0</td><td width=40>8</td><td width=40>1</td></tr>
-<tr><td width=40>1</td><td width=40>9</td><td width=40>2</td></tr>
-<tr><td width=40>2</td><td width=40>10</td><td width=40>4</td></tr>
-<tr><td width=40>3</td><td width=40>11</td><td width=40>8</td></tr>
-<tr><td width=40>4</td><td width=40>12</td><td width=40>16</td></tr>
-<tr><td width=40>5</td><td width=40>13</td><td width=40>32</td></tr>
-</table>
+
+{| class="wikitable"
+! Pin || Bit || Value when HIGH
+|-
+|  8 || 0 ||  1
+|-
+|  9 || 1 ||  2
+|-
+| 10 || 2 ||  4
+|-
+| 11 || 3 ||  8
+|-
+| 12 || 4 || 16
+|-
+| 13 || 5 || 32
+|}
 
 === Device Properties ===
 {| class="wikitable"
