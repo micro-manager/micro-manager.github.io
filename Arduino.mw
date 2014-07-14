@@ -89,7 +89,7 @@ Add the Arduino-Hub.  You may want to set the "Verbose" property of the port to 
 |}
 
 === Test Communication ===
-In Arduino boards from Duemilanove and on pin 13 also controls the built in LED. Therefore you can test the configuration by changing the <code>Arduino-Switch</code> state to 32 in the <code>Device/Property Browser</code> and than chose Arduino as your shutter and just open/close it in the main MM window. You should see the built-in LED light changes when you close / open the Arduino shutter.
+Arduino boards Duemilanove and newer feature an LED attached to pin 13.  We can verify communication by changing the state of pin 13 and confirming the LED changes.  Setting pin 13 HIGH requires setting the <code>Arduino-Switch-State</code> to 32 (i.e. 2^5) in the <code>Device/Property Browser</code>.  If you added the <code>Arduino-Shutter</code> peripheral to the <code>Arduino-Hub</code> toggle the <code>Arduino-Shutter</code> in the main MM window, or if you don't have it change the <code>Arduino-Switch-State</code> back to 0 to see the LED go off.
 
 == Usage Notes ==
 
