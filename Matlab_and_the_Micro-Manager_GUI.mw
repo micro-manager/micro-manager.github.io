@@ -1,4 +1,4 @@
-You can use Matlab to run and control the Micro-Manager gui and core. Here's how:
+You can use Matlab to run and control the Micro-Manager gui and core. Here's how (examples shown using version 1.4.11; use the most recent version you have installed):
 
 1. In Matlab, type
  >> edit classpath.txt
@@ -20,9 +20,9 @@ you will need the additional items below in the classpath.txt to use the multi-i
 2. Again in Matlab, type
  >> edit librarypath.txt
 and add the line:
- C:/Program Files/Micro-Manager-1.3
+ C:/Program Files/Micro-Manager-1.4
 3. Restart Matlab. Now type the following at the command prompt:
- >> cd 'c:/program files/Micro-Manager-1.3'
+ >> cd 'c:/program files/Micro-Manager-1.4'
  >> import org.micromanager.MMStudioMainFrame;
  >> gui = MMStudioMainFrame(false);
  >> gui.show;
