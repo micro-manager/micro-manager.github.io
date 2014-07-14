@@ -71,23 +71,21 @@ Add the Arduino-Hub.  You may want to set the "Verbose" property of the port to 
 {| class="wikitable"
 !style="width: 20%;"| Name || Description
 |- valign="top"
-| Arduino-Switch ||  Digital output pattern set using a single byte.  Bit 1 corresponds to Arduino ouput pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  e.g. setting the switch to value '5', will set output pins 8 and 10 high and the others low.
+| Arduino-Switch ||  Digital output pattern set across pins 8 to 13.  See usage in [[#Digital IO]]
 |- valign="top"
-| Arduino-Shutter || 
+| Arduino-Shutter || Toggles the digital outputs pattern across pins 8 to 13.  Set all pins off when the shutter is closed, and restores the value set in <code>Switch-State</code> when the shutter is opened.
 |- valign="top"
-| Arduino-Input || As of version 1.3.47, the Arduino adapter can also report the digital (0 or 1) and analog (0-1023) state of the analog input pins 0-5 on the Arduino. You can either have it report all analog pins or only a specific one (you set this with the "Pin" pre-initialization property). 
+| Arduino-Input || Reports, both, the digital and analog (0-1023) state of the analog input pins 0 to 5.
 |- valign="top"
-| Arduino-DAC1 || 
-|- valign="top"
-| Arduino-DAC2 || 
+| Arduino-DAC{1,2} || (Not usually used) Reserved for TLV5618 AOTF Peripheral.  There does not appear to be any documentation of this peripheral and seems to be a bespoke AOTF control board built for UCSF.
 |}
 
 {| class="wikitable"
 !style="width: 20%;"| Initialization Properties || Description
 |- valign="top"
-| Pin || If you want to report multiple individual pins, choose '''All''', otherwise choose the individual 0-5 Pin number to read.
+| Pin || Reads all 6 input pins when set to '''All''', otherwise reads the individual 0-5 Pin number.
 |- valign="top"
-| Pull-Up-Resistor || Choose whether the Arduino should use its internal 20 kOhm internal pull-up resistor.
+| Pull-Up-Resistor || Choose whether the Arduino should use its internal 20 kOhm internal pull-up resistor.  If not sure, choose '''On'''.
 |}
 
 === Test Communication ===
@@ -100,6 +98,9 @@ When used directly (not via trigger mode) the Arduino Shutter is the device that
 
 === Digital IO ===
 You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
+
+Bit 1 corresponds to Arduino output pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  e.g. setting the switch to value '5', will set output pins 8 and 10 high and the others low.
+
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
 <table>
 <tr><th width=40>bit</th><th width=40>pin</th><th width=40>nr when high</th></tr>
