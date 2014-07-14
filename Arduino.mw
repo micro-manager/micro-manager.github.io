@@ -93,9 +93,6 @@ Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can
 
 == Usage Notes ==
 
-=== Switch Mode ===
-When used directly (not via trigger mode) the Arduino Shutter is the device that will change the voltage on the pins specified by the State of the Arduino-Switch (as described above). You'll need to add three devices to your configuration, the hub the switch and the shutter. The Hub takes care of all communication and you don't need to worry about it. The Switch is where you set the pattern you want and opening/closing the shutter will actually change the voltage on the pins as determined by the Switch pattern. 
-
 === Digital IO ===
 You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
 
@@ -122,11 +119,11 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 |- valign="top"
 | Switch-HubID || 
 |- valign="top"
-| Switch-Label || Allows 0-63.
+| Switch-Label || Set the digital output pattern across pins 8 to 13.  Allows values 0-63.  See usage in [[#Digital IO]]
 |- valign="top"
-| Switch-Sequence || Allows '''On''' or '''Off'''.
+| Switch-Sequence || '''Off''' operates the Arduino in normal "switching" mode.<br/>'''On''' enables triggered "sequencing" mode.  One defines and upload multiple pattern states to the Arduino [https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/sequencePropTest.bsh using a Beanshell script].  Then the digital input signal to pin 2 switches between the sets of patterns.  Typically, one would connect the camera exposure signal to pin 2.
 |- valign="top"
-| Switch-State || Allows 0-63.
+| Switch-State || Set the digital output pattern across pins 8 to 13.  Allows values 0-63.  See usage in [[#Digital IO]]
 |- valign="top"
 | Input-AnalogInput{0:5} || 10-bit value of ADC input.
 |- valign="top"
@@ -134,9 +131,9 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 |- valign="top"
 | Input-HubID || 
 |- valign="top"
-| DAC{1,2}-HubID ||  
+| DAC{1,2}-HubID || (Not usually used) Reserved for TLV5618 AOTF Peripheral.
 |- valign="top"
-| DAC(1,2}-Volts || 
+| DAC(1,2}-Volts || (Not usually used) Reserved for TLV5618 AOTF Peripheral.
 |}
 
 == Project Tutorials ==
