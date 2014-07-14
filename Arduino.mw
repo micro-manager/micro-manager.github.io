@@ -94,9 +94,7 @@ Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can
 == Usage Notes ==
 
 === Digital IO ===
-You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4. 
-
-Bit 1 corresponds to Arduino output pin 8, bit 2 corresponds to output pin 9, etc... Bits 7 and 8 are not used.  e.g. setting the switch to value '5', will set output pins 8 and 10 high and the others low.
+You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4.
 
 Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
 <table>
