@@ -94,12 +94,12 @@ Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can
 == Usage Notes ==
 
 === Digital IO ===
-You'll need to think in binary to get this right, meaning that to get pin 13 to open, you need to flip bit 5 which means you want to send 2^5 = 32. Similarly pin 10 will be bit 2 which is 2^2=4.
+All possible combinations of digital outputs that can be set across pins 8 to 13 can be set by a single number from from 0 to 63, with 0 turning off all pins and 63 turning all pins on.
 
-Here is a simple table Nico send to the mailing list in an email to help (me :) with powers of 2:
+To choose the set of pins to be on for your <code>Arduino-Switch-State</code> pattern, simply add all the decimal values for the pin from the table below; so for pins 8 and 10 to be on, needs a decimal value of 1 + 4 = '''5''' to be set in <code>Arduino-Switch-State</code>.
 
 {| class="wikitable"
-! Pin || Bit || Value when HIGH
+! Pin || Bit || Decimal Value when On
 |-
 |  8 || 0 ||  1
 |-
@@ -113,6 +113,8 @@ Here is a simple table Nico send to the mailing list in an email to help (me :) 
 |-
 | 13 || 5 || 32
 |}
+
+The reason one has to do this is MM encodes the pins as bits in binary.  Pin 13 to open corresponds to the most significant bit 5, whose decimal value is 2^5 = 32.  Similarly pin 10 will be bit 2 which is 2^2=4.
 
 === Device Properties ===
 {| class="wikitable"
