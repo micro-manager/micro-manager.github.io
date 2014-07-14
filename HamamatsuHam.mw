@@ -14,6 +14,17 @@ Before configuring the camera, you will need to download and install a recent ve
 
 {{Note|Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera.}}
 
+== Property Notes for Flash4v2 ==
+
+SENSOR MODE: Possible values AREA and PROGRESSIVE.  In AREA mode, the camera will readout from the top and bottom sections of the sensor simultaneously starting with the center lines.  In PROGRESSIVE mode, the camera will readout from one direction only.  This is called the "light sheet mode" in the Flash4 manual.  You can choose the direction of the readout as well (READOUT DIRECTION).
+
+The global reset function is not supported yet.  This starts all rows exposing at the same time.
+
+ScanMode handles the readout speed.  1 = slow scan mode.  2 = fast scan mode.
+
+EXPOSURE FULL RANGE: When disabled, you are limited to an exposure of 10 seconds.  When enabled, you are not limited and it will allow you to set the maximum exposure time for the camera.  The reason for this property is because it is currently not possible to abort an exposure in Micro-Manager and also because the scroll bar for the exposure time can change the exposure quite dramatically.
+
+
 {{Listserv_Search|Hamamatsu}}
 
 {{Devices_Sidebar}}
