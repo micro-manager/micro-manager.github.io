@@ -11,6 +11,8 @@ __NOTOC__
 
 === Known issues in 1.4.17 ===
 
+* On Windows, connecting to devices that use a Silicon Labs USB-serial chip may result in a crash or error message. Affected devices include ASI stage controllers (when connected via USB) and certain USB-serial adapters. If you experience this, replace the mmgr_dal_SerialManager.dll file in the Micro-Manager folder with the version available [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.17/20140715/Windows/32bit/mmgr_dal_SerialManager.dll here (for 32-bit MM)] or [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.17/20140715/Windows/64bit/mmgr_dal_SerialManager.dll here (for 64-bit MM)].
+
 * On OS X 10.8 or later, when opening ImageJ64.app, you may get an error message saying that the application is "damaged". If so, you need to temporarily enable the following setting while opening the application for the first time: System Preferences > Security & Privacy > General > Allow applications downloaded from > Anywhere. Once opened successfully, the error should go away even if you switch back the security setting.
 
 === Changes in 1.4.17 (since 1.4.16) ===
