@@ -362,6 +362,9 @@ NOTE: There is no readout after the first trigger, so the first frame should be 
 
 With FT/overlap off, External (and Fast External) modes do have a keep clean cycle after the readout, so the exposure time is determined by the programmed exposure time, not the time between events. Fast External in non-FT is only good when the background light is low, otherwise the background will vary dramatically between frames (if sufficient keep clean cycles have not finished by the time the next triggering event occurs).
 
+===== External Start =====
+The trigger starts the sequence. Once the single external trigger has occurred, the camera switches to internal triggering and acquires the sequence.
+
 ===== External Exposure =====
 The exposure time is determined by the width of the trigger signal pulse: exposure period starts at the rising edge and stops at the falling edge.
 
