@@ -13,6 +13,8 @@ If you run into problems please contact the author at the address above.
 
 NB: there is a separate device adapter for stand-alone MS-2000 controllers or older rack-mount controllers [[ASIStage]].
 
+For TG-1000 systems the build-in USB connection is actually a USB to serial converter. You can find drivers for Windows, Mac OS X, and Linux at the [http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx Silicon labs website].  This is the same as used for recent ASI 'WK' or 'Whizkid' controllers.
+
 ==TigerCommHub==
 Property Notes
 * SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior.  This is due to the behavior of Micro-manager often refreshing the property values which can cause the command to be sent multiple times.
