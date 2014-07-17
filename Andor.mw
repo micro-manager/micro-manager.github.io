@@ -347,7 +347,9 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 Frame transfer refers to the captured image getting transferred to a masked pixel array storage area (quick step) so it can be read out from there (slow step). The real benefit of FT comes when overlap is applied, so that a new image can be captured while the previous is read out. The confusing thing is that the FT step actually always occurs, whether "FT" is on or off in uM. That setting only changes whether overlap is on or off (if off, the sensor is in keep clean mode while the FT chip is read out). Since the readout register is after the FT chip, the image always gets transferred to the storage area. So think of the FT setting in uM as really "overlap."
 
 ==== Triggering ====
-See details on controlling two cameras simultaneously using the Multi-Camera utility here: https://micro-manager.org/wiki/Utilities#Multi-Camera
+See details on triggering at Andor: http://www.andor.com/learning-academy/trigger-modes-ixon-ultra-and-ixon3-trigger-modes
+
+(See details on controlling two cameras simultaneously using the Multi-Camera utility here: https://micro-manager.org/wiki/Utilities#Multi-Camera)
 
 ===== Software vs internal =====
 Internal is the basic triggering mode, where the camera decides when to start the acquisition after receiving a signal from the software. "On receipt of the Start command from the PC, the camera completes the current Keep Clean Cycle and then performs sufficient vertical shifts to ensure that the Image and Storage regions are completely free of charge. The camera then starts its real exposure." [iXon manual] There are no keep clean cycles between frames when in FT/overlap mode.
@@ -379,11 +381,10 @@ With FT/overlap off, the readout must complete before the next rising edge can s
 
 ===== Which mode for different imaging types: (Use the Multi-Andor control plugin) =====
 ====== Continuous high speed imaging with no delay between frames ======
-FT/overlap on, master in software, slave in external, exposure time 0
-
-Put the master in software triggering and set the desired exposure time. Set the slave camera to 0 ms exposure time and external or fast external triggering mode (first frame will be dropped). Alternatively, you can set the slave to have the same exposure time as the master and set the triggering to exposure start (first frame will not be dropped). Be sure to set both cameras to FT/overlap on and the readout rates the same.
+FT/overlap on, master in software, slave in external start, exposure time the same
+(alternative: FT/overlap on, master in software, slave in external, exposure of slave set to 0)
 
 ====== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur ======
-FT/overlap off, master in software, slave in external, exposure time shorter than master
+FT/overlap off, master in software, slave in external, exposure time shorter than the triggering interval
 
 {{Devices_Sidebar}}
