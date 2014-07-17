@@ -382,6 +382,7 @@ With FT/overlap off, the readout must complete before the next rising edge can s
 ===== Which mode for different imaging types: (Use the Multi-Andor control plugin) =====
 ====== Continuous high speed imaging with no delay between frames ======
 FT/overlap on, master in software, slave in external start, exposure time the same
+
 (alternative: FT/overlap on, master in software, slave in external, exposure of slave set to 0)
 
 ====== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur ======
