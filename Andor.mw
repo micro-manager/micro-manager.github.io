@@ -379,7 +379,7 @@ With FT/overlap off, the readout must complete before the next rising edge can s
 ===== Snap Image timing mode in uM: Delay for Exposure vs. Wait for Readout =====
 ???
 
-===== Which mode for different imaging types: (Use the Multi-Andor control plugin) =====
+===== Recommended settings for iXon Ultras (Use the Multi-Andor control plugin) =====
 ====== Continuous high speed imaging with no delay between frames ======
 FT/overlap on, master in software, slave in external start, exposure time the same
 
