@@ -386,6 +386,6 @@ FT/overlap on, master in software, slave in external start, exposure time the sa
 (alternative: FT/overlap on, master in software, slave in external, exposure of slave set to 0)
 
 ====== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur ======
-FT/overlap off, master in software, slave in external, exposure time shorter than the triggering interval
+FT/overlap off, master in Software, slave in Fast External (or External), exposure time shorter than the triggering interval
 
 {{Devices_Sidebar}}
