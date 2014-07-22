@@ -9,7 +9,7 @@
 <tr><td>'''Available since version:'''</td><td>1.4.15</td>
 </table>
 
-The code for this device adapter has not yet been merged with the source for Micro-Manager.  Until this is accomplished, please visit this [http://qsimaging.com/software.html#winmicroapps link] to download the installer for the device adapter.
+The code for this device adapter has not yet been merged with the source for Micro-Manager.  Until this is accomplished, please visit the [http://qsimaging.com/software.html#winmicroapps QSI website] to download an installer for the device adapter.
 
 {{Listserv_Search|QSI}}
 
