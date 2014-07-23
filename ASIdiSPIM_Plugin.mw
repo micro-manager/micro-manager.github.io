@@ -15,7 +15,7 @@ This plugin exists to facilitate alignment and use of [http://asiimaging.com/pro
 
 == GUI Instructions ==
 
-The GUI remembers most of its settings from run to run.  Some settings are stored on the controller (e.g. sheet sizes).  Although the plugin attempts to save these, they may be lost if the controller looses power.
+The GUI remembers most of its settings from run to run.  Some settings are stored on the controller (e.g. sheet sizes).  Although the plugin attempts to save these, they may be lost if the controller looses power.  Also, if the GUI isn't closed before Micro-manager is closed some settings may not be saved.
 
 === Before running the GUI ===
 
