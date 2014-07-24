@@ -8,7 +8,8 @@ Here is a small script I use to build MM on Linux to be able to test new feature
 # Here you have debian packages you can install with sudo apt-get install
 # Find equivalent packages for others distributions:
 #
-# subversion build-essential autoconf automake libtool \
+# subversion build-essential \
+# autoconf automake libtool pkg-config \
 # libboost1.54-all-dev zlib1g-dev swig \
 # openjdk-7-jdk python-dev python-numpy-dev
 
