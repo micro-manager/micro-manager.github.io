@@ -30,6 +30,8 @@ To install the CoolLED, one has to choose the preciseExcite device.  This is bec
 
 No installation is required on Mac OS X, since it already has a driver that will recognize the virtual serial port.
 
+No installation is required on Linux, since it already has a driver that will recognize the virtual serial port.  The port can usually be found in /dev/serial/by-id
+
 On Windows:
 * Download the file CoolLED-pE-inf.zip from here: [http://www.coolled.com www.coolled.com] and unzip the <code>CoolLED-pE.inf</code> and <code>.cat</code> files. You may need to ask CoolLED for access to the download area.
 * In the <code>Device Manager</code>, the CoolLED will appear under <code>Other Devices > CoolLED USB ...</code> with a yellow exclamation mark in the device icon.
