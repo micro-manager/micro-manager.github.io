@@ -31,10 +31,12 @@ To install the CoolLED, one has to choose the preciseExcite device.  This is bec
 No installation is required on Mac OS X, since it already has a driver that will recognize the virtual serial port.
 
 On Windows:
-* Download the [http://www.coolled.com/downloads/distributor/CoolLED-pEx-driver.zip INF driver] and unzip the <code>CoolLED-pEx.inf</code> file.
-* In the <code>Device Manager</code>, the CoolLED will appear under <code>Other Devices > preciseExcite</code> with a yellow exclamation mark in the device icon.
-* To install your unzipped INF file, in the <code>Device Manager</code>, right-click on <code>preciseExcite > Update Driver Software > Browse my computer for driver software</code>.  Set the location to the place you unzipped the INF file.
-* On successful installation, the device will show up as <code>pEx USB COM Port</code>.
+* Download the file CoolLED-pE-inf.zip from here: [http://www.coolled.com www.coolled.com] and unzip the <code>CoolLED-pE.inf</code> and <code>.cat</code> files. You may need to ask CoolLED for access to the download area.
+* In the <code>Device Manager</code>, the CoolLED will appear under <code>Other Devices > CoolLED USB ...</code> with a yellow exclamation mark in the device icon.
+* To install your unzipped INF file, in the <code>Device Manager</code>, right-click on <code>CoolLED USB ... > Update Driver Software > Browse my computer for driver software</code>.  Set the location to the place you unzipped the INF file.
+* On successful installation, the device will show up as <code>CoolLED USB Virtual Serial Port</code>.
+
+pE-1 and pE-2 have one such port. pE-300 and pE-4000 have two Virtual Serial Ports on the one USB connection.
 
 == Device Configuration ==
 
