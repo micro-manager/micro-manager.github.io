@@ -68,6 +68,13 @@ cd ~/mm/micro-manager1.4
 ./configure --enable-imagej-plugin=/usr/local/ImageJ
 </pre>}}
 
+== Download build dependencies ==
+
+{{MessageBox|1=Commandline|2=<pre>
+
+make fetchdeps   # Required since SVN r14001-r14016
+</pre>}}
+
 == Compile ==
 
 {{MessageBox|1=Commandline|2=<pre>
