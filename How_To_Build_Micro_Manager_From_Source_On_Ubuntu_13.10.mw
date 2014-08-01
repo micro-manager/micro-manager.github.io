@@ -11,7 +11,7 @@ Here is a small script I use to build MM on Linux to be able to test new feature
 # subversion build-essential \
 # autoconf automake libtool pkg-config \
 # libboost1.54-all-dev zlib1g-dev swig \
-# openjdk-7-jdk python-dev python-numpy-dev
+# openjdk-7-jdk ant python-dev python-numpy-dev
 
 mkdir mm/
 cd mm/
@@ -33,6 +33,9 @@ cd micro-manager/
 ./autogen.sh
 
 ./configure --prefix=$MM_DIR/ImageJ --enable-imagej-plugin=$MM_DIR/ImageJ --with-python
+
+# Download build dependencies
+make fetchdeps   # Required since SVN r14001-r14016
 
 # Build binaries (can take a while)
 make
