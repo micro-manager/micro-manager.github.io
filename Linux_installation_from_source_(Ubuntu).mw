@@ -34,7 +34,7 @@ You will need a subversion client to checkout the source code, several libraries
 {{MessageBox|1=Commandline|2=<pre>
 
 sudo apt-get install subversion build-essential autoconf automake libtool \
-                     libboost-all-dev zlib1g-dev swig
+                     libboost-all-dev zlib1g-dev swig ant
 </pre>}}
 
 You may also need to install additional packages (for cameras and special hardware).  See the full list in [[#Dependencies]]
