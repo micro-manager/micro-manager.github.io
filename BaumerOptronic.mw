@@ -1,6 +1,6 @@
 == Leica Camera adapter using Baumer Optronics Libraries ==
 <table>
-<tr><td>'''Summary:'''</td><td>Adapter for DFC cameras from http://www.leica-microsystems.com [http://www.leica-microsystems.com]</td></tr>
+<tr><td>'''Summary:'''</td><td>Adapter for DFC Firewire (IEEE 1394) cameras from http://www.leica-microsystems.com [http://www.leica-microsystems.com]</td></tr>
 <tr><td>'''Author:'''</td><td>Karl Hoover, UCSF</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows-only</td></tr>
