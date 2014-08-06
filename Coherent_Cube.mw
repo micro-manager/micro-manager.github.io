@@ -29,6 +29,7 @@ Before adding this device adapter, confirm that you have serial communication wi
 
 The laser controller should respond to the following commands: L=1, L=0, (laser on and off)  P=5 (set power to 5 mW) ?P (power readback now) ?SP ( power setpoint now) ?MINLP (minimum laser power setpoint) ?MAXLP (maximum laser power setpoint)  ?T ('TEC' servo mode) ?CDRH (mode for enabling a 5 second safety delay), ?EXT (1 if laser is controlled by external analogue line.) If you do not get a response for each of these values, then the Micro-Manager Coherent device adapter will not work. The following commands are also expected to work: ?WAVE (wavelength) ?HH (head usage hours) ?HID (laser head ID)
 
+The laser prompt must be set to off ('>=0'). This is the default state of the laser, so you should not need to change it.
 
 In the configuration wizard you will need to add one Coherent Cube object for every Coherent Cube you would like to control. 
 
