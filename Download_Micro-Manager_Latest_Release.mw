@@ -9,6 +9,10 @@ __NOTOC__
 [http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.18.dmg Mac OS X (Universal Binary)], 44 MB<br />
 (OS X 10.8 or later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
+=== Known issues in 1.4.18 ===
+
+* PCO_Camera: There is an issue with setting the ROI with some cameras (pixelfly QE, pixelfly vga, pco.pixelfly_USB, pco.1300, pco.1300 solar, pco.1400, pco.ultraviolet). If you are affected, replace the mmgr_dal_PCO_Camera.dll file in the Micro-Manager folder with the version available [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/32bit/mmgr_dal_PCO_Camera.dll here (for 32-bit MM)] or [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/64bit/mmgr_dal_PCO_Camera.dll here (for 64-bit MM)]. The issue is also fixed in nightly builds since 20140801.
+
 === Changes in 1.4.18 (since 1.4.17) ===
 
 * New in the main application
