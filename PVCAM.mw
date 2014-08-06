@@ -1,3 +1,5 @@
+= Photometrics PVCAM Device Adapter =
+
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces with Roper, Photometrics (this adapter used to work with Princeton Instruments cameras, however, now please use the Princeton Instruments adapter)</td></tr>
 <tr><td>'''Authors:'''</td><td>Nenad Amodaj, with contributions from Nico Stuurman (Mac adaptation) and Ji Yu (expose more PVCAM properties), Oleksiy Danikhnov and Arthur Edelstein (reliability in streaming mode).  </td></tr>
