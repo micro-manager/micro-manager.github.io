@@ -106,6 +106,9 @@ The following simple script will snap an image from an up-to-16-bit monochrome c
 
 '''A function to help MATLAB recognize Micro-Manager'''
 
+{{note|As of uManager version 1.4.18 there is a conflict between deprecated java classes used by MATLAB and the Google Guava library, specifically the google-collect.jar. One work around is to load the uManager specific libraries before the MATLAB default libraries. This gives uManager libraries priority in the java class path. This can be done by adding the text ''<before>'' at the top of the javaclasspath.txt file. However, this may lead to unforeseen consequences in other software that rely upon the default MATLAB libraries. The ''<before>'' statement has been added to the code below, so please keep this in mind. This has been verified to work in MATLAB ver 2014a 32-bit.}}
+
+
 The following code, when saved and used as a function will scan the Micro-Manager folder and create a text file, with all the jar information, in MATLAB's ''prefdir'' where the javaclasspath.txt file should be located. Run this script before first using MATLAB and Micro-Manager together. This script will locate all of the ''*.jar'' files within the Micro-Manager directory tree and save their locations to a text file. The text file is saved to the MATLAB ''prefdir'' directory. The contents of this file can be appended to a text file named ''javaclasspath.txt''. From then on, every time MATLAB starts the files located in this text file will be added to the MATLAB's static JAVA path.
 
 Verify the MATLAB java path using the command ''javaclasspath()''.
@@ -120,6 +123,7 @@ Inputs = ''path2MM'', the root directory of the Micro-Manager software
  fileListJarBool = cellfun(@isempty,fileListJarBool);
  fileListJar = fileList(~fileListJarBool);
  fid = fopen(fullfile(prefdir,'MMjavaclasspath.txt'),'w');
+ fprintf(fid,'<before>\r\n');
  cellfun(@(x) fprintf(fid,'%s\r\n',x), fileListJar);
  fclose(fid);
  %% nested directory listing ala gnovice from stackoverflow
