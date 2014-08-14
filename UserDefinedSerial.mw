@@ -71,6 +71,8 @@ The Delay value should be the maximum time it takes the device to complete motio
 
 (to be written) - C-language-style string escapes, except that hex escapes (\x??) are limited to two digits.
 
+(TODO mention comma handling)
+
 === How commands are sent ===
 
 (to be written)
