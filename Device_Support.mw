@@ -116,6 +116,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ThorlabsMFC1]] - Thorlabs MFC1 Motorized Microscope Focus Controller
 * [[ThorlabsSC10]] - Thorlabs shutter controller
 * [[Tofra]] - XY and Z stages, filter wheel, motorized filter cube slider, and LED illuminator
+* [[UserDefinedSerial]] - Shutters and state devices that can be controlled with simple serial commands
 * [[Vincent]] - Vincent Uniblitz controllers
 * [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
 * [[XCite120PC_Exacte]] - Lumen Dynamics X-Cite 120PC and ''exacte'' adapter
