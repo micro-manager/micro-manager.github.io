@@ -32,6 +32,10 @@ In most cases the ALC will work "out of the box".
 
 But if you're setting up a brand new computer, continue on to [[#Configure ALC_SDK dependencies]], and for Micro-Manager versions than nightly build 1.4.16_20131025 follow the [[#Library installation for MM 1.4.15 and earlier]].
 
+== Hardware-based Synchronization ==
+
+[[ESIOImagingControllers]] can be used with an ESio adapter cable for the ALC to run [[hardware-based synchronization]].  The ALC lacks the onboard programming to allow the camera TTL synchronization used by the Micro-Manager architecture, thus another supported triggering device is needed.
+
 == Hardware Configuration Wizard ==
 
 Description of devices available in the Hardware Configuration Wizard:
