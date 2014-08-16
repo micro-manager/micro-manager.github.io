@@ -346,12 +346,12 @@ e.g. if you are imaging confocal fluorescence data and DIC, and you need lower o
 ==== Frame Transfer (should actually be called "overlap") ====
 Frame transfer refers to the captured image getting transferred to a masked pixel array storage area (quick step) so it can be read out from there (slow step). The real benefit of FT comes when overlap is applied, so that a new image can be captured while the previous is read out. The confusing thing is that the FT step actually always occurs, whether "FT" is on or off in uM. That setting only changes whether overlap is on or off (if off, the sensor is in keep clean mode while the FT chip is read out). Since the readout register is after the FT chip, the image always gets transferred to the storage area. So think of the FT setting in uM as really "overlap."
 
-==== Triggering ====
+=== Triggering ===
 See details on triggering at Andor: http://www.andor.com/learning-academy/trigger-modes-ixon-ultra-and-ixon3-trigger-modes
 
 (See details on controlling two cameras simultaneously using the Multi-Camera utility here: https://micro-manager.org/wiki/Utilities#Multi-Camera)
 
-===== Software vs internal =====
+==== Software vs internal ====
 Internal is the basic triggering mode, where the camera decides when to start the acquisition after receiving a signal from the software. "On receipt of the Start command from the PC, the camera completes the current Keep Clean Cycle and then performs sufficient vertical shifts to ensure that the Image and Storage regions are completely free of charge. The camera then starts its real exposure." [iXon manual] There are no keep clean cycles between frames when in FT/overlap mode.
 
 Software trigger mode is similar to internal but waits for a specific software trigger command from the PC before exposure. This is useful when the timing between exposures isn't exactly known. A keep clean cycle must still complete before the first trigger.
@@ -359,33 +359,33 @@ Software trigger mode is similar to internal but waits for a specific software t
 So Software is for snaps separated by time and Internal is for a continuous sequence of exposures. For Snap, Software trigger is used by default. Internal is used for Live and MDA. (All other modes use the same for Snap and Live/MDA.)
 http://micro-manager.3463995.n2.nabble.com/Multi-D-Acq-External-Trigger-Issues-tp7581206p7581320.html
 
-===== External vs. Fast External =====
+==== External vs. Fast External ====
 The only difference is that normal External trigger will not accept an external trigger signal until the current keep clean cycle ends. Fast External does not wait and accepts a trigger signal even if the keep clean cycle hasn't ended. This only applies to the first frame, and once a trigger signal is accepted, there is no difference in the timing between the two modes. Because the image area is not cleaned between trigger events, the effective exposure time is the time between events.
 
 NOTE: There is no readout after the first trigger, so the first frame should be dark.
 
 With FT/overlap off, External (and Fast External) modes do have a keep clean cycle after the readout, so the exposure time is determined by the programmed exposure time, not the time between events. Fast External in non-FT is only good when the background light is low, otherwise the background will vary dramatically between frames (if sufficient keep clean cycles have not finished by the time the next triggering event occurs).
 
-===== External Start =====
+==== External Start ====
 The trigger starts the sequence. Once the single external trigger has occurred, the camera switches to internal triggering and acquires the sequence.
 
-===== External Exposure =====
+==== External Exposure ====
 The exposure time is determined by the width of the trigger signal pulse: exposure period starts at the rising edge and stops at the falling edge.
 
 With FT/overlap on, the rising edge can occur during the readout of the previous frame. But if the falling edge occurs before the previous readout is complete, that signal is ignored and the exposure continues until the next falling edge. This overlap mode requires Global Clear function of the chip, only on 885 cameras.
 
 With FT/overlap off, the readout must complete before the next rising edge can start another exposure (?).
 
-===== Snap Image timing mode in uM: Delay for Exposure vs. Wait for Readout =====
+==== Snap Image timing mode in uM: Delay for Exposure vs. Wait for Readout ====
 ???
 
-===== Recommended settings for iXon Ultras (Use the Multi-Andor control plugin) =====
-====== Continuous high speed imaging with no delay between frames ("burst") ======
+==== Recommended settings for iXon Ultras (Use the Multi-Andor control plugin) ====
+===== Continuous high speed imaging with no delay between frames ("burst") =====
 FT/overlap on, master in Software, slave in External Start, exposure time the same
 
 (alternative: FT/overlap on, master in Software, slave in External, exposure of slave set to 0)
 
-====== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur ======
+===== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur =====
 FT/overlap off, master in Software, slave in Fast External (or External), exposure time shorter than the triggering interval
 
 {{Devices_Sidebar}}
