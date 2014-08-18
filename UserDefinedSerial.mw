@@ -233,12 +233,24 @@ and ''QueryState-closed-response'' to e.g.
 
 with ''Response detection'' set to ''Variable-length binary''.
 
-== How commands are sent ==
-
-(to be written)
-
 == How responses are checked ==
 
-(to be written)
+In all cases, the serial receive buffer is cleared before sending a command.
+
+=== "Ignore responses" ===
+
+Responses are completely ignored, whether or not you enter strings for the ''*-response'' properties.
+
+=== "Terminator-CR", "Terminator-CRLF", and "Terminator-LF" ===
+
+After sending a command, if the corresponding ''*-response'' property is not empty, a response is read, using the serial port's timeout setting, until the terminator (CR, LF, or CRLF) is encountered. The response (excluding the terminator) is then checked against the expected string. If it does not match, an error is reported. If the ''*-response'' property is empty, the response is ignored (not read at all).
+
+For query commands, the response string (again, excluding the terminator) is checked against each of the corresponding ''*-response'' properties. If no match is found, an error is reported. If any of the corresponding ''*-response'' properties are empty, the query is not performed in the first place.
+
+=== "Fixed-length binary" ===
+
+After sending a command, if the corresponding ''*-response'' property is not empty, the same number of bytes as the value of that property are read, using the serial port's timeout setting. If the expected number of bytes could not be read, or their values fail to match the expected string, an error is reported. If the ''*-response'' property is empty, the response is ignored (not read at all).
+
+For query commands, the corresponding ''*-response'' properties must all contain strings of the same length (or an error is reported, unless one or more are empty). That many bytes are read from the device and compared to the candidates. If the expected number of bytes could not be read, or no match is found, an error is reported. If any of the corresponding ''*-response'' properties are empty, the query is not performed in the first place.
 
 {{Devices_Sidebar}}
