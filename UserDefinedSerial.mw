@@ -58,7 +58,43 @@ The remaining properties of UserDefinedStateDevice can be left blank for now.
 
 Now, to cause the SetState commands to be remembered in your hardware configuration file, add (or append to) the ''System-Startup'' configuration preset (see [[Micro-Manager Configuration Guide]]). In this case, you will want to include all the ''SetState-command-n'' properties in the ''System'' configuration group's ''Startup'' preset.
 
-== Configuration (Step 2: setting up device state querying) ==
+== Configuration (Step 2: checking device responses) ==
+
+Most devices respond to commands with a specific acknowledgement. (Some devices don't send anything back to the computer; if that is the case with your device, you are done configuring.)
+
+It is useful to check the device's response in case it indicates an error. UserDefinedSerial currently supports checking command responses against a fixed string; an error is reported if the device fails to respond or responds with a string that differs from the expected one.
+
+=== Choosing a response detection method ===
+
+Devices that use an ASCII protocol typically terminate their responses with CR, LF, or CRLF, just like the commands (although the terminator is not necessarily the same one used for commands - check your device's manual). Some devices return 1 or a few bytes in a fixed-length format, without a terminator. In the Hardware Configuration Wizard, set the '''Response detection''' property accordingly:
+
+* ''Ignore responses'' - No responses are ever checked.
+* ''Terminator-CR'' - Responses are expected to be terminated with a CR (carriage return).
+* ''Terminator-CRLF'' - Responses are expected to be terminated with a CR followed by an LF (linefeed).
+* ''Terminator-LF'' - Responses are expected to be terminated with an LF.
+* ''Variable-length binary'' - Responses are binary bytes without a terminator. The expected number of bytes are read from the device.
+
+=== Common settings ===
+
+* '''Initialize-response''' - Enter the expected response from the device after the initialization command is sent.
+* '''Shutdown-response'''- Enter the expected response from the device after the shutdown command is sent.
+
+You do not have to specify a response string for every command. Where a response string is left empty, the response is simply ignored (not checked for).
+
+=== UserDefinedShutter ===
+
+* '''Open-response''' - The expected response to the open command.
+* '''Close-response''' - The expected response to the close command.
+
+=== UserDefinedStateDevice ===
+
+In the Device Property Browser:
+
+* '''SetState-response-''n''''' (where '''''n''''' is a number) - The expected response to the ''SetState-command-n'' command.
+
+(You will want to add these too to the ''System-Startup'' configuration preset.)
+
+== Configuration (Step 3: setting up device state querying) ==
 
 (to be written)
 
