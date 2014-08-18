@@ -41,13 +41,22 @@ Special control characters and '''commas in commands''' need to be entered accor
 
 === UserDefinedShutter ===
 
-(to be written)
+* '''Open-command''' - Enter the command that opens the shutter.
+* '''Close-command''' - Enter the command that closes the shutter.
+
+The remaining properties can be left blank for now.
 
 === UserDefinedStateDevice ===
 
 * '''Number of positions''' - Set this to the number of positions. (E.g. 8 if you have an 8-position filter wheel.)
 
-(more to be written)
+In addition, the commands for setting each position need to be set. To do so, first finish and save the hardware configuration; then open the Device Property Browser. Enter set the following properties:
+
+* '''SetState-command-''n''''' (where '''''n''''' is a number) - Enter the command that tells the device to move to position ''n''.
+
+The remaining properties of UserDefinedStateDevice can be left blank for now.
+
+Now, to cause the SetState commands to be remembered in your hardware configuration file, add (or append to) the ''System-Startup'' configuration preset (see [[Micro-Manager Configuration Guide]]). In this case, you will want to include all the ''SetState-command-n'' properties in the ''System'' configuration group's ''Startup'' preset.
 
 == Configuration (Step 2: setting up device state querying) ==
 
