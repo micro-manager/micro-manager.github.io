@@ -112,6 +112,8 @@ UserDefinedSerial devices do not (yet) support querying the device to detect the
 
 The Delay value should be the maximum time it takes the device to complete motion, measuring from the moment when the command is sent (or, if so configured, when the response is received).
 
+So, if your device does not send a response until motion is complete, you can simply set up response checking and leave the Delay at 0 ms.
+
 == How to enter command and response strings ==
 
 (to be written) - C-language-style string escapes, except that hex escapes (\x??) are limited to two digits.
