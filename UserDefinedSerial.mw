@@ -15,11 +15,11 @@ You will need to know the correct serial port settings for the device, as well a
 
 === Configuration (Step 1: write-only communication) ===
 
-There are quite a few properties that need to be set correctly, so it is simplest to first configure the device to move in response to commands. The device adapter will remember the last set state (shutter open/close or state device position) in software, so things will stay in sync if the device is reliable (doesn't encounter errors) and you don't manually operate it. For devices that do not have commands to query state, this is the only configuration step.
+There are quite a few properties that need to be set correctly, so it is simplest to first configure the device to move in response to commands. The device adapter will remember the last-set state (shutter open/close or state device position) in software, so things will stay in sync if the device is reliable (doesn't encounter errors) and you don't manually operate it. For devices that do not have commands to query state, this will be the only configuration step.
 
 ==== Common settings ====
 
-When adding the device in the Hardware Configuration Wizard, you will want to start by setting these properties:
+Start by setting these properties in the Hardware Configuration Wizard:
 
 * '''Port''' - Set this to the correct serial port (COM port on Windows). Also, set the port settings to the correct values for the device.
 * '''Command mode''' - The format of the commands to be sent. More on this below.
@@ -31,13 +31,13 @@ When adding the device in the Hardware Configuration Wizard, you will want to st
 
 Usually, serial commands are short strings (made up of letters, numbers, and punctuation). The device manual should indicate how these commands are terminated: CR, LF, or CRLF. Select the corresponding ''ASCII'' mode.
 
-''ASCII-no-terminator'' can be used in unusual cases where the terminator is not one of the three provided options, or where a subset of commands need to be sent without a terminator. In such cases, the terminator should be included in every command string.
+''ASCII-no-terminator'' can be used in unusual cases where the terminator is not one of the three provided options, or where a subset of commands need to be sent without a terminator. In such cases, the terminator must be included in every command string.
 
 Some devices use binary commands, made up of raw byte values and no terminator. In such cases, select ''Binary''.
 
 ===== How to enter commands =====
 
-See the later section on "How to enter command and response strings".
+Special control characters and '''commas in commands''' need to be entered according to special rules. See the later section on "How to enter command and response strings".
 
 ==== UserDefinedShutter ====
 
