@@ -13,6 +13,8 @@ __NOTOC__
 
 * PCO_Camera: There is an issue with setting the ROI with some cameras (pixelfly QE, pixelfly vga, pco.pixelfly_USB, pco.1300, pco.1300 solar, pco.1400, pco.ultraviolet). If you are affected, replace the mmgr_dal_PCO_Camera.dll file in the Micro-Manager folder with the version available [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/32bit/mmgr_dal_PCO_Camera.dll here (for 32-bit MM)] or [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/64bit/mmgr_dal_PCO_Camera.dll here (for 64-bit MM)]. The issue is also fixed in nightly builds since 20140801.
 
+* Hang when Position List window is open: This can happen (usually during an MDA) with certain devices (e.g. NikonTI). Closing the Position List before starting an acquisition should prevent the hang. Fixed in nightly build of 20140818.
+
 === Changes in 1.4.18 (since 1.4.17) ===
 
 * New in the main application
