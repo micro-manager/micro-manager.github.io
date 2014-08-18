@@ -1,4 +1,4 @@
-== UserDefinedSerial ==
+= UserDefinedSerial =
 
 <table><tr><td>
 '''Summary:'''</td><td>Control arbitrary serial-based shutters and state devices</td></tr>
@@ -13,11 +13,11 @@ The UserDefinedSerial device adapter will allow you to control any shutter or st
 
 You will need to know the correct serial port settings for the device, as well as the command protocol for controlling the device.
 
-=== Configuration (Step 1: write-only communication) ===
+== Configuration (Step 1: write-only communication) ==
 
 There are quite a few properties that need to be set correctly, so it is simplest to first configure the device to move in response to commands. The device adapter will remember the last-set state (shutter open/close or state device position) in software, so things will stay in sync if the device is reliable (doesn't encounter errors) and you don't manually operate it. For devices that do not have commands to query state, this will be the only configuration step.
 
-==== Common settings ====
+=== Common settings ===
 
 Start by setting these properties in the Hardware Configuration Wizard:
 
@@ -27,7 +27,7 @@ Start by setting these properties in the Hardware Configuration Wizard:
 * '''Initialize-command''' (optional) - If there is a command that needs to be executed to set up the device for use, enter it here. Otherwise, leave it blank.
 * '''Shutdown-command''' (optional) - If there is a command that should be executed when finished using the device, enter it here. Typically, leave it blank.
 
-===== Command mode =====
+==== Command mode ====
 
 Usually, serial commands are short strings (made up of letters, numbers, and punctuation). The device manual should indicate how these commands are terminated: CR, LF, or CRLF. Select the corresponding ''ASCII'' mode.
 
@@ -35,49 +35,49 @@ Usually, serial commands are short strings (made up of letters, numbers, and pun
 
 Some devices use binary commands, made up of raw byte values and no terminator. In such cases, select ''Binary''.
 
-===== How to enter commands =====
+==== How to enter commands ====
 
 Special control characters and '''commas in commands''' need to be entered according to special rules. See the later section on "How to enter command and response strings".
 
-==== UserDefinedShutter ====
+=== UserDefinedShutter ===
 
 (to be written)
 
-==== UserDefinedStateDevice ====
+=== UserDefinedStateDevice ===
 
 * '''Number of positions''' - Set this to the number of positions. (E.g. 8 if you have an 8-position filter wheel.)
 
 (more to be written)
 
-=== Configuration (Step 2: setting up device state querying) ===
+== Configuration (Step 2: setting up device state querying) ==
 
 (to be written)
 
-==== UserDefinedShutter ====
+=== UserDefinedShutter ===
 
 (to be written)
 
-==== UserDefinedStateDevice ====
+=== UserDefinedStateDevice ===
 
 (to be written)
 
-=== Setting Delay ===
+== Setting Delay ==
 
 UserDefinedSerial devices do not (yet) support querying the device to detect the completion of motion. Instead, you can set fixed delays on the Delay page of the Hardware Configuration Wizard.
 
 The Delay value should be the maximum time it takes the device to complete motion, measuring from the moment when the command is sent (or, if so configured, when the response is received).
 
-=== How to enter command and response strings ===
+== How to enter command and response strings ==
 
 (to be written) - C-language-style string escapes, except that hex escapes (\x??) are limited to two digits.
 
 (TODO mention comma handling)
 
-=== How commands are sent ===
+== How commands are sent ==
 
 (to be written)
 
-=== How responses are checked ===
+== How responses are checked ==
 
 (to be written)
 
