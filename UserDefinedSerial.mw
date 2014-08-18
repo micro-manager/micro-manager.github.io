@@ -116,9 +116,122 @@ So, if your device does not send a response until motion is complete, you can si
 
 == How to enter command and response strings ==
 
-(to be written) - C-language-style string escapes, except that hex escapes (\x??) are limited to two digits.
+In most cases, commands and responses consisting of letters, numbers, and punctuation can be entered literally.
 
-(TODO mention comma handling)
+If your ''Command mode'' setting specifies a terminator, command strings should NOT include the terminator.
+If your ''Response detection'' setting specifies a terminator, response strings should NOT include the terminator.
+
+Special characters and non-letter bytes (any byte that is not a printable ASCII character) should be entered using the following escape sequences:
+
+{| class="wikitable"
+!style="width: 20%;"|Escape Sequence
+! Decimal Value
+! Hexadecimal Value
+! Remarks
+|-
+! \\
+| 92
+| 0x5c
+| Backslash
+|-
+! \'
+| 39
+| 0x27
+| Single quote (escape not required)
+|-
+! \"
+| 34
+| 0x22
+| Double quote (escape not required)
+|-
+! \?
+| 63
+| 0x3f
+| Question mark (escape not required)
+|-
+! \a
+| 7
+| 0x07
+| Bell
+|-
+! \b
+| 8
+| 0x08
+| Backspace
+|-
+! \f
+| 12
+| 0x0c
+| Form Feed
+|-
+! \n
+| 10
+| 0x0a
+| Line Feed
+|-
+! \r
+| 13
+| 0x0d
+| Carriage Return
+|-
+! \t
+| 9
+| 0x09
+| Horizontal Tab
+|-
+! \v
+| 11
+| 0x0b
+| Vertical Tab
+|-
+! \''nnn''
+| 
+| 
+| Octal value (''nnn'' is up to 3 octal digits)
+|-
+! \x''hh''
+| 
+| 0x''hh''
+| Hexadecimal value (''hh'' is up to 2 hexadecimal digits)
+|-
+! \x2c
+| 44
+| 2c
+| '''Comma''' (,) ('''must be escaped''' because not allowed in property value)
+|}
+
+These escape sequences are almost identical to the rules used for string literals in the C and C++ languages. There are three differences from the C specification:
+
+* Unicode escapes (\u''xxxx'', \U''xxxx'') are not supported.
+* Hexadecimal escapes (\x''hh'') are terminated at 2 hex digits, even if the next character is a valid hex digit.
+* Since quotes are not used to delimit the string, there is no need to escape single or double quote characters.
+
+=== Examples ===
+
+If the command to move your state device to position 5 is <code>MOVE A,5</code>, then enter
+
+    MOVE A\x2c5
+
+for the ''SetPosition-command-5'' property.
+
+If your device uses a binary protocol with two-byte commands and responses, and the command to ask if the shutter is open is 0x0b00 (or 11 followed by 0 in decimal), you can set the ''QueryState-command'' property to any of the following equivalent strings:
+
+    \x0b\x00
+    \013\000
+    \13\0
+    \v\0
+
+(with ''Command mode'' set to ''Binary'').
+
+If the response to that command is 0x0b01 for "open" and 0x0b02 for "closed", you will set the ''QueryState-open-response'' to e.g.
+
+    \x0b\x01
+
+and ''QueryState-closed-response'' to e.g.
+
+    \x0b\x02
+
+with ''Response detection'' set to ''Variable-length binary''.
 
 == How commands are sent ==
 
