@@ -96,15 +96,26 @@ In the Device Property Browser:
 
 == Configuration (Step 3: setting up device state querying) ==
 
-(to be written)
+By default, UserDefinedSerial devices keep the device's current state in sync with the software by remembering the state last set from Micro-Manager. The two can go out of sync if, for example, the user can manually switch the device without going through Micro-Manager.
+
+If the device has commands to query its current state, you can set up UserDefinedSerial to use those commands instead of trusting the memorized last-set state.
 
 === UserDefinedShutter ===
 
-(to be written)
+The shutter must support a command to query whether the shutter is open or closed, whose response is a fixed string for each case. Set the following properties in the Hardware Configuration Wizard:
+
+* '''QueryState-command''' - The command to ask the shutter if it is open.
+* '''QueryState-open-response''' - The response that means that the shutter is currently open.
+* '''QueryState-close-response''' - The response that means that the shutter is currently closed.
 
 === UserDefinedStateDevice ===
 
-(to be written)
+In the Device Property Browser, you can set the following properties:
+
+* '''QueryPosition-command''' - The command to ask the device its current position.
+* '''QueryPosition-response-''n''''' (where '''''n''''' is a number) - The response that means that the device is currently at position ''n''.
+
+(You will want to add these to the ''System-Startup'' configuration preset.)
 
 == Setting Delay ==
 
