@@ -52,11 +52,11 @@ The remaining properties can be left blank for now.
 
 In addition, the commands for setting each position need to be set. To do so, first finish and save the hardware configuration; then open the Device Property Browser. Enter set the following properties:
 
-* '''SetState-command-''n''''' (where '''''n''''' is a number) - Enter the command that tells the device to move to position ''n''.
+* '''SetPosition-command-''n''''' (where '''''n''''' is a number) - Enter the command that tells the device to move to position ''n''.
 
 The remaining properties of UserDefinedStateDevice can be left blank for now.
 
-Now, to cause the SetState commands to be remembered in your hardware configuration file, add (or append to) the ''System-Startup'' configuration preset (see [[Micro-Manager Configuration Guide]]). In this case, you will want to include all the ''SetState-command-n'' properties in the ''System'' configuration group's ''Startup'' preset.
+Now, to cause the SetPosition commands to be remembered in your hardware configuration file, add (or append to) the ''System-Startup'' configuration preset (see [[Micro-Manager Configuration Guide]]). In this case, you will want to include all the ''SetPosition-command-n'' properties in the ''System'' configuration group's ''Startup'' preset.
 
 == Configuration (Step 2: checking device responses) ==
 
