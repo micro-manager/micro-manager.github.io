@@ -117,6 +117,14 @@ In the Device Property Browser, you can set the following properties:
 
 (You will want to add these to the ''System-Startup'' configuration preset.)
 
+== Synchronizing state at startup ==
+
+If your device does ''not'' support querying its state, you might notice that Micro-Manager thinks that the device is in the wrong state until the first time you move the device from Micro-Manager.
+
+This should not happen with shutters because UserDefinedShutter always closes the shutter at startup.
+
+With UserDefinedStateDevice, one way to prevent this from happening is to set the ''Initialize-command'' property to a command that moves the device to position 0 (which is where UserDefinedStateDevice assumes the device to be until it knows otherwise), in addition to initializing the device. Make sure there is no danger with moving the device automatically during startup.
+
 == Setting Delay ==
 
 UserDefinedSerial devices do not (yet) support querying the device to detect the completion of motion. Instead, you can set fixed delays on the Delay page of the Hardware Configuration Wizard.
