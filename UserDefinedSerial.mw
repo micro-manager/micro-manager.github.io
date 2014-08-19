@@ -90,7 +90,7 @@ You do not have to specify a response string for every command. Where a response
 
 In the Device Property Browser:
 
-* '''SetState-response-''n''''' (where '''''n''''' is a number) - The expected response to the ''SetState-command-n'' command.
+* '''SetPosition-response-''n''''' (where '''''n''''' is a number) - The expected response to the ''SetPosition-command-n'' command.
 
 (You will want to add these too to the ''System-Startup'' configuration preset.)
 
