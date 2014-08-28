@@ -388,4 +388,44 @@ FT/overlap on, master in Software, slave in External Start, exposure time the sa
 ===== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur =====
 FT/overlap off, master in Software, slave in Fast External (or External), exposure time shorter than the triggering interval
 
+=== Dual camera setup ===
+
+The main resource for setting up multiple cameras is discussed on the [[Utilities#Multi-Camera|Utility > Multi-Camera]] DeviceAdapter page.  This section supplements that information with Andor-specific screenshots and instructions.
+
+When you add your Andor camera in the Hardware Configuration Wizard, you should see a drop-down menu that allows you to select the camera serial number.  If you do not see more than 1 serial number in the drop-down you should [[#Install_PCI.2Fe_driver|make sure all your cameras are present in the Device Manager]].  The screenshot below shows 2 iXon USB cameras:
+
+[[File:Devicemanager-2-andor-ultras.png|frame|center|Screenshot: Device Manager showing 2 iXon Ultra cameras detected.]]
+
+Since these cameras are USB, we also have to make sure they are on separate USB host buses:
+
+[[File:Usbview-2-andor-ultras.png|frame|center|Screenshot: Uvcview program showing 2 iXon Ultra cameras connected to USB ports such that they are on separate host buses.]]
+
+Start Micro-Manager with a blank configuration and add your first camera using one serial number:
+
+[[File:Hcw-add-andor-camera-1.png|frame|center|Screenshot: First Andor camera being added to Hardware Configuration Wizard (HCW).]]
+
+Then add the the Andor camera again, making sure to change the serial number to the other camera in the serial number drop-down:
+
+[[File:Hcw-add-andor-camera-2.png|frame|center|Screenshot: Second Andor camera being added to Hardware Configuration Wizard (HCW).]]
+
+Add the Multi-Camera Device Adapter under Utilities so that the final list looks like this:
+
+[[File:Hcw-multi-camera-devices.png|frame|center|Screenshot: All multi-camera devices added in the Hardware Configuration Wizard (HCW).]]
+
+Complete your configuration in the Wizard then look at the default Device Properties in your Device/Property Browser.  The Multi-Camera device defaults to "Unknown Camera" so it is not yet usable:
+
+[[File:Pb-multicam-defaults.png|frame|center|Screenshot: Default settings of multi-camera device in Device/Property Browser.]]
+
+You need to set these to your 2 Andor cameras:
+
+[[File:Pb-multicam-afterset.png|frame|center|Screenshot: Multi-camera device PhysicalCameras set to the Andor cameras.]]
+
+Set your core-camera to multi-camera, to test the result:
+
+[[File:Pb-corecam-multicam.png|frame|center|Screenshot: Core camera set to Multi-camera device.]]
+
+Now when you go live or snap an image you should see the channels overlayed in your preview window.
+
+[[File:Mm-snapped-image-multicam.png|frame|center|Screenshot: Snapped image using Mutli Camera device.]]
+
 {{Devices_Sidebar}}
