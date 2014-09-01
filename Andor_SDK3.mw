@@ -64,8 +64,8 @@ Add the following lines to /etc/rc.d/rc.local
  #!/bin/bash
  # Bitflow and Andor
  /sbin/modprobe v4l2_common
- # /sbin/modprobe v4l1_compat -- only include this line if your kernel version is below 2.6.38
- #  use 'uname -a' to find out your kernel version
+ # /sbin/modprobe v4l1_compat -- only include this line if your kernel version is 
+ #   .. below 2.6.38 - use 'uname -a' to find out your kernel version
  /sbin/modprobe videodev
  /sbin/insmod /usr/local/andor/bitflow/drv/bitflow.ko fwDelay1=200 customFlags=1
 
