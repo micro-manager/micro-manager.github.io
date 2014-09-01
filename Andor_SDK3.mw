@@ -26,30 +26,18 @@
 == Installation ==
 
 === Andor Driver Pack 3 (sCMOS) ===
-{{MessageBox|Support Advisory|Andor SDK V3 does not support Linux Kernels greater than 3.8 due to using deprecated function create_proc_read_entry() and using VM_RESERVED}}
+{{MessageBox|Support Advisory|Andor Linux SDK3 does not support Linux Kernels greater than 3.8 due to Bitflow using deprecated function create_proc_read_entry() and using VM_RESERVED}}
 {{MessageBox|Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue}}
 
-{{MessageBox|Support Advisory|Zyla cameras running SDK 3.7.30004.0 can cause a "blue screen of death" upon PC shutdown when certain other devices are installed (e.g. Arduino). This is not a serious problem, just annoying. The solution is to fully uninstall the SDK3 and Bitflow driver (and even run a registry cleaning software for good measure). Then install Andor SDK 3.8.30007.0. Completely uninstall Micro-Manager, reinstall, and copy over the 3 DLL files listed below. Restart the PC and power cycle the camera before starting Micro-Manager.}}
+{{MessageBox|Support Advisory|Zyla cameras running DriverPack3 / SDK3 3.7.30004.0 can cause a "blue screen of death" upon PC shutdown when certain other devices are installed (e.g. Arduino). This is not a serious problem, just annoying. The solution is to fully uninstall the SDK3 and Bitflow driver (and even run a registry cleaning software for good measure). Then install Andor SDK 3.8.30007.0 to the Micro-Manager install directory. Restart the PC and power cycle the camera before starting Micro-Manager.}}
 
-Install the Andor Driver Pack (sCMOS) and restart the computer. This is publicly available [http://www.andor.com/downloads?src=micro here]. 
-
-From the driver pack directory:
-
-    C:\Program Files\Andor Driver Pack 3\
-
-Copy these 3 files to the Micro-Manager root directory:
-
-    atcore.dll
-    atdevregcam.dll
-    atcl_bitflow.dll
-
-Without these 3 files, "AndorSDK3" will not show up in Available Devices in the Hardware Configuration Wizards > Step 2
-
-Alternatively, install the Andor Driver Pack 3 to the working Micro-Manager Directory e.g. 
+Install the Andor Driver Pack 3 (sCMOS) to the working Micro-Manager Directory e.g. 
 
     C:\Program Files\Micro-Manager-1.4\
 
-Ensure you Restart the PC.
+and ensure you restart the computer. 
+
+This is publicly available [http://www.andor.com/downloads?src=micro here].
 
 === Disable computer power savings ===
 Disable C-states power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable PCI Express > Link State Power Management in [[Personal computer setup#Power Options|Power Options]].
