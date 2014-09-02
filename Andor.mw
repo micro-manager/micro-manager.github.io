@@ -349,7 +349,7 @@ Frame transfer refers to the captured image getting transferred to a masked pixe
 === Triggering ===
 See details on triggering at Andor: http://www.andor.com/learning-academy/trigger-modes-ixon-ultra-and-ixon3-trigger-modes
 
-(See details on controlling two cameras simultaneously using the Multi-Camera utility here: https://micro-manager.org/wiki/Utilities#Multi-Camera)
+(See details on controlling two cameras simultaneously using the Multi-Camera utility here: https://micro-manager.org/wiki/Utilities#Multi-Camera and below: https://micro-manager.org/wiki/Andor#Dual_camera_setup)
 
 ==== Software vs internal ====
 Internal is the basic triggering mode, where the camera decides when to start the acquisition after receiving a signal from the software. "On receipt of the Start command from the PC, the camera completes the current Keep Clean Cycle and then performs sufficient vertical shifts to ensure that the Image and Storage regions are completely free of charge. The camera then starts its real exposure." [iXon manual] There are no keep clean cycles between frames when in FT/overlap mode.
