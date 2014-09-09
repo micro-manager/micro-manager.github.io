@@ -62,6 +62,7 @@ To edit camera properties open the "Tools" menu and select "Device/Property Brow
 * High Dynamic Range ratio : High Dynamic Range ratio (long exposure time / short exposure time, total exposure time = short + long). Currently in Alpha implementation stage.
 * TimeoutMs : Set acquisition timeout in milliseconds.
 * Trigger mode : Set trigger signal type.
+* Sensor Taps : Set number of sensor taps for data readout.
 
 * TransposeCorrection : Not supported.
 * TransposeMirrorX : Not supported.
