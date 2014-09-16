@@ -33,6 +33,9 @@ First, contact the manufacturer of the hardware and express your interest in a M
 
 * All of this information will then be packaged and sent to us via email. We will then be able respond back and assist you with a better understanding of your situation.
 
+=== How do I get Micro-Manager to prompt me to manually put specific filters in place? ===
+See [[Using_Multi-Dimensional_Acquisition_with_a_manual_microscope]]
+
 === Citing Micro-Manager ===
 You can cite either:<br>
 * Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman (2010) Computer Control of Microscopes Using μManager. '''Current Protocols in Molecular Biology''' 14.20.1-14.20.17<br>
