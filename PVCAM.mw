@@ -15,6 +15,8 @@
 === Photometrics ===
 This adapter should work with Photometrics PVCAM compatible cameras that work with recent PVCAM versions (If you have an older Photometrics camera that does not work with a recent PVCAM version, please try the Princeton Instruments adapter).  To use it, you will need to have the  ([http://www.photometrics.com/support/downloads/index.php PVCAM software]) installed and working. At the very least, the pvcam test application (included with PVCAM) should give you an image, and preferably RSImage works with your camera (although we have seen cases where Micro-Manager works with a PVCAM camera whereas RSImage does not). We tested it with an old MicroMax, a newer Firewire CoolSnap, Cascade II, and Evolve cameras on Windows and a Firewire Coolsnap ES, EZ, and HQ2 on Intel Mac.  Thanks to Ji Yu, most available camera properties are exposed.  To use the adapter on Mac OS X, you will need at least version 2.7.7 of PVCAM (older versions will lock up your Mac).
 
+The Photometrics website has a [http://www.photometrics.com/resources/videos/photometrics-micro-manager video] showing how to configure Micro-Manager for use with a Photometrics camera.
+
 == Firewire issues ==
 
 From the Photometrics website:
