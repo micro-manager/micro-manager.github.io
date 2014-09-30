@@ -26,7 +26,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (see also [[IIDC]])
 * [[DECamera]] - Direct Electron Cameras
 * [[DemoCamera]] - Virtual, emulated equipment for testing
-* [[DemoStreamCamera]] - Virtual, emulated fast camera
 * [[DSLRRemoteCamera]] - Canon DSLR cameras (Windows)
 * [[FLICamera]] - Finger Lakes Instrumentation Cameras
 * [[GigECamera]] - GigE Vision- and GenICam-compliant cameras
