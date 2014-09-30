@@ -13,68 +13,16 @@
 
 This plugin exists to facilitate alignment and use of [http://asiimaging.com/products/light-sheet-microscopy/selective-plane-illumination-microscopy-ispimdispim/ ASI's SPIM system], in all of its various forms.
 
-== GUI Instructions ==
 
-The GUI remembers most of its settings from run to run.  Some settings are stored on the controller (e.g. sheet sizes).  Although the plugin attempts to save these, they may be lost if the controller looses power.  Also, some settings may not be saved if the plugin window is not closed before Micro-manager is closed.
+== Plugin Documentation ==
 
-=== Before running the GUI ===
+The plugin documentation currently resides as part of the [http://www.asiimaging.com/downloads/manuals/diSPIM_Manual.pdf diSPIM manual] available on the ASI website.
 
-Before running the GUI, the relevant devices must be present in the Micro-Manager hardware configuration.  
 
-For dual mode, it is recommended to create an instance of Utilities -> Multi Camera.  You should assign the properties MultiCam-Physical Camera 1 and 2 to the two cameras, ideally using the special "System" config group with preset name "Startup".  Furthermore, assign Core-Camera to MultiCam.
+== Please contact us! ==
 
-As of Micro-manager 1.4.16 (or 30-Jan-14 nightly build) the plugin checks for old firmware and notifies the user.
+The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager (before submitting bug reports, please check a recent nightly build to make sure the bug hasn't been already fixed).
 
-=== Devices ===
-
-Here you tell the GUI which Micro-manager devices fill which roles in the SPIM system.
-
-"Path A" and "Path B" refer to the two light paths.  The scanner (AKA MicroMirror or Galvo) and illumination piezo will be one one side of the physical microscope, and the imaging piezo and camera will be on the opposite side.
-
-[[File:DiSPIMDevices.png|650px]]
-
-For the scanners and piezos care must be taken to match the plugin device assignment with the physical hardware.  The first set of axes on the micro-mirror card should always be associated with "Path A", e.g. for a card with axes ABCD the Micro-manager galvo device with axes A and B should be set as the scanner for Imaging Path A.  In ASI's typical controller configuration, piezo axis "P" is the imaging piezo for "Path A" and axis "Q" is the imaging piezo for "Path B".
-
-For single-sided (iSPIM), you can leave "Path B" entries blank.
-
-Camera support for the SPIM cameras must be added to the plugin code on a case-by case basis.  Currently the supported cameras are:
-* Hamamatsu Flash 4 (use the HamamatsuHam device adapter)
-* PCO Edge (PCO_Camera adapter)
-** be sure to set the PixelRate property appropriately, probably "fast scan" 
-* Andor sCMOS cameras (AndorSDK3 adapter) (only partially tested)
-Please contact the plugin authors to add other cameras.  (For the curious, the reason why arbitrary cameras cannot be used is that the SPIM cameras are TTL-triggered during SPIM acquisition but triggered by Micro-manager during alignment.  Thus, the plugin has to know how to switch the cameras between internal trigger mode and external trigger mode, and thus the relevant properties need to be hard-coded into the plugin.  Hopefully in the future there will be a camera API call to change triggering modes.)
-
-A Multi-Camera device should be created if you are using two cameras; Micro-manager uses it to overlay images from both cameras (Camera setting of "Dual" in Setup tabs).  Select the Multi-Camera device for the setting labeled "Multi Camera" if you want to use this feature.  Follow the instructions at [[Utilities#Multi-Camera]], including using the System/Startup configuration to assign physical cameras automatically.
-
-=== Acquisition ===
-
-Here you set the parameters for the SPIM acquisition and initiate acquisition.  This panel is somewhat analogous to the Multi-D acquisition window in Micro-manager, except that the positions of the imaged volume are not specified here.
-
-[[File:DiSPIMAcquisition.png|650px|right]]
-
-The file saving options in the Multi-D window are used by the plugin (directory location, name prefix, and image stack file vs. separate images, along with saving to disk if the "Save Images" box is checked or saving to RAM initially if not).
-
-In the future you will select the SPIM stack mode here, but currently only one mode is supported by firmware (piezo stacks).
-
-=== Setup Path A/B ===
-
-This tab is used for alignment and to specify the imaged volume, one for imaging path A and the other for path B.
-
-[[File:DiSPIMSetup.png|650px|right]]
-
-Each tab has an independent set of joystick controls, beam controls, and camera control.  All of these are activated when the tab is selected; i.e. the joystick settings can be separately specified for the different tabs, etc. The joystick settings are automatically selected when switching to the tab.  The beams settings on this panel will be automatically set on changing to this tab if the "Change settings on tab activate" box is selected, otherwise the beam settings will remain the same as they were before switching tabs.  The beam control uses the scanner "blanking" feature, so it assumes that both scanners have input light (e.g. a passive splitter between the laser and the scanner).  Unless the "No change" option is selected, the camera will automatically be set to the specified camera when the tab is selected.
-
-The sheet/slice position and the imaging piezo need to be co-aligned at the two extremes of the region of interest.  Then during SPIM acquisition, the controller will move both together between these two extremes and collect the number of slices requested.
-
-For single-sided SPIM (iSPIM instead of diSPIM), there is no piezo stage on the illumination side.  For diPSIM, the illumination piezo has a special "home" position where it goes while being used for illumination (recall that the imaging piezo will be moving along with the slice position).  The illumination piezo will automatically go to this home position if the "Go home on tab activate" is checked.
-
-The sheet width and offset affect the sheet dimensions, i.e. the width of the illuminated area.
-
-=== Navigation ===
-
-Here you can view the current positions.  Another set of independent joystick controls is provided, along with beam controls and camera controls.
-
-[[File:DiSPIMNavigation.png|650px|right]]
 
 {{Listserv_Search|ASIdiSPIM}}
 
