@@ -193,7 +193,7 @@ The '''Autofocus Now''' button (icon with binoculars) on the Main Window will ca
 
 == Hardware Autofocus ==
 
-Hardware-based autofocus support is provided for the Nikon Perfect Focus (PFS), ASI CRIF, Zeiss Definite Focus, and Olympus Z Drift Correction (ZDC) devices. These devices bounce an infrared reference beam off a surface of the coverslip, and use this reflection to adjust the focal position. To activate one of these devices in Micro-Manager, you need to include it in the Hardware Configuration and select it in the Autofocus Properties dialog.
+Hardware-based autofocus support is provided for the Nikon Perfect Focus (PFS), ASI CRIFF and CRISP, Zeiss Definite Focus, and Olympus Z Drift Correction (ZDC) devices. These devices bounce an infrared reference beam off a surface of the coverslip, and use this reflection to adjust the focal position. To activate one of these devices in Micro-Manager, you need to include it in the Hardware Configuration and select it in the Autofocus Properties dialog.
 
 == Software Autofocus ==
 
