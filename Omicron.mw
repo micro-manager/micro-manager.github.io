@@ -52,3 +52,27 @@ Below you can see a screenshot of an Omicron “…xX”-Laser Series module con
 For support on using the Omicron Laser Controller device adaptor please contact: mail@omicron-laser.de
 
 [[User:Jan-Erik Herche|Jan-Erik Herche]] 02:07, 15 February 2012 (PST)
+
+== Cobolt Laser Controller ==
+
+If you want to control a Cobolt laser integrated in your Omicron LightHUB® compact laser combiner or SOLE® laser light engine via USB port you can use the Cobolt device adaptor provided by Karl Bellve.
+
+Please first have a look at the device manager to find out the Virtual COM Port the Cobolt laser is connected to. After that please add an Cobolt device adaptor in the hardware configuration wizard and make the following settings:
+
+[[File:Omicron2.png]]
+
+
+*Max Power: Fill in the Max Power of your Cobolt laser (mW)
+*Port: Select the Virtual COM Port of your Cobolt laser
+
+*Port Properties: Set up the properties as shown in the picture above
+
+{{Note|Use a BaudRate of '''115200''' - a BaudRate of 19200 (as noted in the description of the Cobold device adapter) will not work!}}
+
+After you have done this settings Micro Manager will connect to your cobolt laser and you can control the laser by the device/property browser.
+
+{{Note|If your Cobolt laser is CDRH configured it will not start using the Cobolt-Laser-->"ON" property - please first toggle the key switch - now the laser will turn ON after sending the command!}}
+
+For support on using the Cobol device adaptor please contact: mail@omicron-laser.de
+
+[[User:Jan-Erik Herche|Jan-Erik Herche]] 04:43, 27 Octobre 2014 (PST)
