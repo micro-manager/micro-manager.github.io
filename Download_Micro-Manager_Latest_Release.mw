@@ -104,7 +104,7 @@ __NOTOC__
 
 * Changes to the MMCore API
 ** CMMCore's sequence buffer size now defaults to 25 MB (32-bit) or 250 MB (64-bit) instead of 10 MB (when not set by MMStudio preferences)
-** Added a variant of the <code>getROI()</code> method that allows specifying the camera label (Jon Daniels, ASI)
+** Added a variant of the <code>getROI()</code> method that allows getting camera ROI by camera label without having to change current camera (Jon Daniels, ASI)
 ** Removed previously deprecated methods from CMMCore: <code>clearLog(), getBufferIntervalMs(), saveLogArchive(), saveLogArchiveWithPreamble(), acqBeforeFrame(), acqAfterFrame()</code> (Mark Tsuchida)
 
 * Changes to the MMDevice API
