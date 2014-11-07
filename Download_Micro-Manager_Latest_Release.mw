@@ -88,7 +88,7 @@ __NOTOC__
 ** [[ZeissCAN29]]: Fix issue that could occasionally cause xy stage to remain busy (Mark Tsuchida)
 
 * New Closed-Source Device Adapters
-** '''HoribaEPIX;''': HORIBA-branded EMCCD and sCMOS cameras (David Biggs, Raptor Photonics)
+** '''HoribaEPIX''': HORIBA-branded EMCCD and sCMOS cameras (David Biggs, Raptor Photonics)
 
 * Updated Closed-Source Device Adapters
 ** [[HamamatsuHam]]: Prevent silent dropped frames (Mark Tsuchida); Correct exposure time limits for ROI; add support for setting OUTPUT TRIGGER SOURCE, INTERNAL LINE SPEED UNITS, OUTPUT TRIGGER PERIOD UNITS, and OUTPUT TRIGGER DELAY UNITS; other bugfixes (Patrick Gregorio, Hamamatsu)
