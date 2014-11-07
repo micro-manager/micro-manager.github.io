@@ -1,4 +1,144 @@
 __NOTOC__
+== Micro-Manager 1.4.18 (July 31, 2014) ==
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.18.exe Windows 32-bit], 57 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.18.exe Windows 64-bit], 59 MB<br />
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.18.dmg Mac OS X (Universal Binary)], 44 MB<br />
+(OS X 10.8 or later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
+
+=== Known issues in 1.4.18 ===
+
+* PCO_Camera: There is an issue with setting the ROI with some cameras (pixelfly QE, pixelfly vga, pco.pixelfly_USB, pco.1300, pco.1300 solar, pco.1400, pco.ultraviolet). If you are affected, replace the mmgr_dal_PCO_Camera.dll file in the Micro-Manager folder with the version available [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/32bit/mmgr_dal_PCO_Camera.dll here (for 32-bit MM)] or [https://valelab.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/64bit/mmgr_dal_PCO_Camera.dll here (for 64-bit MM)]. The issue is also fixed in nightly builds since 20140801.
+
+* Hang when Position List window is open: This can happen (usually during an MDA) with certain devices (e.g. NikonTI). Closing the Position List before starting an acquisition should prevent the hang. Fixed in nightly build of 20140818.
+
+=== Changes in 1.4.18 (since 1.4.17) ===
+
+* New in the main application
+** Improvements to the image display window:
+*** Added ability to animate any dataset axis, not just time/Z (Chris Weisiger)
+*** Added "superlock" mode to image display windows (click on the lock icon twice) to prevent new images from changing the display at all (Chris Weisiger)
+*** Added display of intensity of pixel under the mouse (Chris Weisiger, Jon Daniels)
+*** Various layout tweaks
+** Improvements to the Stage Position List dialog (Chris Weisiger):
+*** Automatically update the stage position when it moves.
+*** Improved behavior of "Merge" button
+*** Added "Add Offset" button to add a fixed offset to selected positions.
+** Improvements to the Options dialog (Mark Tsuchida):
+*** Improved layout
+*** Removed nonfunctional "autoreload devices" checkbox from Options dialog
+*** Save options when dialog is closed via close box
+*** Add confirmation before resetting preferences
+*** Add ability to automatically delete old log files
+** Added "Image Pipeline" dialog (via the Tools menu) for configuring the image data processing pipeline (Chris Weisiger)
+** Correctly show "Galvo" devices in Device Wizard (Jon Daniels)
+** Improved the Problem Report to provide more information (Mark Tsuchida)
+** Added a warning, prior to running pixel calibration, that the stage will move (Mark Tsuchida)
+** Ensure windows and dialogs don't load off-screen (Jon Daniels, Chris Weisiger)
+** Multipage TIFF files don't write multiple copies of the OME metadata, improving performance/filesizes (Henry Pinkard)
+** Multipage TIFF files include an index map at the beginning of the file (Henry Pinkard)
+** Include pixel type in acquisition metadata (Mark Tsuchida)
+** CoreLog files are now saved in a CoreLogs folder, and a new file is created each time Micro-Manager is started (Mark Tsuchida)
+** Generating a Problem Report no longer has the side effect of clearing the usual CoreLog file (Mark Tsuchida)
+** In hardware-triggered MDA, avoid reloading sequences to devices when not necessary (Arthur Edelstein)
+** Bug fixes:
+*** Fixed bug in data saving that caused metadata.txt to be incomplete (Mark Tsuchida)
+*** Fixed memory leak when running acquisitions or opening/closing files (Chris Weisiger)
+*** Fixed a bug that could cause the display to freeze (Chris Weisiger, Mark Tsuchida)
+*** Fixed bug causing spurious error messages when closing the display (Chris Weisiger, Nico Stuurman)
+*** Fixed a null pointer exception when drawing multi-camera images (Nico Stuurman)
+*** Fixed various bugs when closing acquisitions (Henry Pinkard, Mark Tsuchida)
+*** Fixed bug #686 (Autoscale settings are applied inconsistently) (Chris Weisiger)
+*** Fixed a bug causing the "Hide MDA Display" option to not be remembered across sessions (Chris Weisiger)
+*** Fixed a bug when setting camera ROIs (Mark Tsuchida)
+*** Fixed an occasional bug during startup when initializing Beanshell (Mark Tsuchida)
+*** Opening ImageJ64.app on OS X 10.8 or later no longer results in an "application damaged" error (Mark Tsuchida)
+
+* New plugins
+** Sequence Buffer Monitor: displays memory utilization in the sequence buffer, which can help in optimizing the buffer size (Mark Tsuchida)
+
+* Updated plugins
+** [[AcquireMultipleRegions|Acquire Multiple Regions]]: Allow radially weighted interpolation between different Z coordinates in a region (Kurt Thorn)
+** [[ASIdiSPIM_Plugin|ASI diSPIM]]: Numerous engancements and fixes (Jon Daniels, ASI; Nico Stuurman)
+** '''ASI CRISP''': Support TG-1000 "Tiger" CRISP (Jon Daniels, ASI)
+** [[Pixel_Calibrator_Plugin|Pixel Calibrator]]: Return to original position and re-acquire image after calibration (Falk Dettmar)
+** [[Projector]]: Enhancements and fixes for SLM ROI support (Arthur Edelstein for Andor)
+
+* New device adapters
+** [[CoherentOBIS]]: Coherent OBIS laser controllers (Forrest Collman)
+** [[NewportSMC]]: Newport SMC100 motor controller (Liisa Hirvonen, submitted by Newport)
+** [[PicardStage]]: Picard Industries USB 4D stage (Johannes Schindelin and Luke Stuyvenberg)
+
+* Updated device adapters
+** [[Andor]]: Update to use latest Andor driver, add iXon 888 isolated crop ROIs (Matthew Milford, Andor)
+** [[AndorSDK3]]: Fix a crash or hang that could occur when rapidly stopping and restarting a sequence acquisition (Norman Glasgow, Andor)
+** [[Arduino]]: Fix an issue when using multiple Arduinos (Nico Stuurman)
+** [[ASIStage]]: Add acceleration and firmware version properties, add support for turrets and sliders, correctly detect stage when using 115200 baud, improve wait cycles handling (Jon Daniels, ASI); fix CRISP gain setting (Nico Stuurman)
+** [[ASITiger]]: Add support for LED illuminators, add stage wheel speed (firmware 2.87+) property, allow XY stage to be split across two cards, support for firmware 2.88 features, various fixes (Jon Daniels, ASI)
+** [[BaumerOptronic]]: Prevent high CPU usage, fix issue with sequence acquisition following ROI change (Eugene Dvoretsky); prevent stale images from being returned and avoid constantly running camera (Mark Tsuchida)
+** [[dc1394]]: On windows, update to libdc1394 2.2.1 and support 64-bit (Mark Tsuchida)
+** [[DemoCamera]]: Add "rotate image" mode (Chris Weisiger); remove some hard-to-correctly-use testing-related features (Mark Tsuchida)
+** [[IIDC]]: Do not reject 1394A cameras, do not skip by default in Linux build (Mark Tsuchida)
+** [[Ludl]]: Allow setting of XY step sizes independently (Nico Stuurman)
+** [[MCL_MicroDrive]]: Add support for MicroDrive3 and MicroDrive1 (Greg Sawyer, MCL)
+** [[NewportCONEX]]: Renamed from CONEX.
+** [[Okolab]]: Fix issue with port selection, add active humidifier device support (Marco Di Pasqua, Okolab)
+** [[PCO_Camera]]: Fix ROI ROI handling issues, add support for external triggering, various fixes (Franz Reitner, PCO)
+** [[pgFocus]]: Add Windows support, bugfixes (Karl Bellvé)
+** [[Piezosystem_NV40_1]], [[Piezosystem_NV40_3]], [[Piezosystem_NV120_1]]: Prevent error during MDA (Mark Tsuchida)
+** [[PVCAM]]: Limit range of ClearCycles property, fix handling of property settings, bugfixes (Lubomir Walder, Photometrics)
+** [[SerialManager]]: Prevent a crash or error when connecting to certain USB-serial interfaces that use Silicon Labs chips (e.g. ASI controllers) on certain Windows systems (Mark Tsuchida)
+** [[Tofra]]: Fix state device State and Label properties and channel intensity properties (Mark Tsuchida); fix issue with filter wheel positioning (Ilya Ravkin, Tofra)
+** '''VariLC''': Fix a "property name contains reserved chars" error, add properties for absolute retardance and variable time delay (Amitabh Verma)
+** [[Versalase|VersaLase]]: Add support for VersaLase devices with up to 4 lasers (David Sweeney, Vortran)
+
+* New closed-source device adapters
+** [[NikonEclipse90i]]: Nikon Eclipse 90i motorized microscope (Egor Zindy)
+
+* Updated closed-source device adapters
+** [[AxioCam]]: Prevent spurious ROI change after changing binning (Mark Tsuchida)
+** [[HamamatsuHam]]: Added new properties for trigger and line speed control (Patrick Gregorio, Hamamatsu); fixed an issue that caused hardware-triggered MDA to fail (Nico Stuurman)
+** [[Hamamatsu]] (OS X): Removed 64-bit version, which was not functional (Mark Tsuchida)
+** [[Mosaic3]]: Bugfixes (Arthur Edelstein for Andor)
+
+* Changes to the scripting/Java API
+** Added new Plugin type, <code>MMProcessorPlugin</code>, for plugins whose purpose is to examine/modify image data in the Image Processor pipeline. See https://micro-manager.org/wiki/Writing_image_processors_for_Micro-Manager for more details. (Chris Weisiger)
+** Added the Guava library's Event Bus. Objects can be registered for callbacks using <code>gui.registerForEvents()</code>; see the <code>org.micromanager.api.events</code> package for the list of events that are available. Remember to annotate your functions with <code>@Subscribe</code>.
+** Added API functions <code>getImageProcessorPipeline()</code> and <code>setImageProcessorPipeline()</code> (Chris Weisiger)
+** Added API function <code>setAcquisitionAddImageAsynchronous(acquisitionName)</code>. This will speed up future calls to <code>gui.addImageToAcquisition()</code>. (Chris Weisiger)
+** Added API function <code>getCacheForWindow(ImageWindow)</code> which will return the associated <code>ImageCache</code>. (Chris Weisiger)
+** Added new core callback function <code>OnSLMExposure()</code> for when an SLM's exposure time changes (Arthur Edelstein)
+** When opening a file from the GUI, the "acquisition" used to load the file data is left resident in memory, allowing its data to be accessed e.g. via <code>gui.getAcquisitionImageCache()</code> (Nico Stuurman)
+
+* Changes to the MMCore API
+** MMCore version number is once again maintained (Micro-Manager 1.4.18 ships with MMCore 5.0.3)
+** <code>MMEventCallback</code> now has an <code>onSLMExposureChanged()</code> member function (Arthur Edelstein)
+** New logging management API (<code>setPrimaryLogFile()</code>, <code>getPrimaryLogFile()</code>, <code>startSecondaryLogFile()</code>, <code>stopSecondaryLogFile()</code>, <code>stderrLogEnabled()</code>) (Mark Tsuchida)
+** New <code>getCircularBufferMemoryFootprint()</code> function (Mark Tsuchida)
+** The following functions are deprecated and will be removed in the next release: <code>clearLog()</code>, <code>saveLogArchive()</code>, <code>saveLogArchiveWithPreamble()</code>, <code>getBufferIntervalMs()</code>
+
+* Changes to the MMDevice API
+** Micro-Manager 1.4.18 requires module interface version 10, device interface version 60.
+** The previously deprecated <code>AddavailableDeviceName()</code> function has been removed (use <code>RegisterDevice()</code>)
+** Class hierarchy changed for "generic" devices (should not affect device adapter code unless <code>CDeviceBase</code> internals are accessed)
+** <code>CDeviceBase::GetPortType()</code> was renamed to <code>GetSerialPortType()</code> to avoid name clash
+** <code>g_Keyword_Metadata_Z</code> has been removed (probably never used)
+** SLM devices now can issue a notification when the exposure changes
+** MMDevice no longer depends on Boost headers
+** Device types that were never supported have been removed (CommandDispatch, ProgrammableIO, ImageStreamer)
+
+* Changes of interest to developers
+** Micro-Manager 1.4.18 is SVN trunk r13943, 3rdpartypublic r169.
+** Removed default access to private members in Beanshell scripts. Call <code>setAccessibility(true)</code> if you need to restore access. (Mark Tsuchida)
+** Allow plugins in .class files to be loaded, as long as they are not in packages. (Mark Tsuchida)
+** Removed many functions from <code>MMStudioMainFrame</code> that were never used nor exposed in the API. If you have code that relied on one of these methods, let us know. (Chris Weisiger)
+** <code>VirtualAcquisitionDisplay</code> has been extensively refactored and moved to the <code>org.micromanager.imagedisplay</code> package. However, if you rely on this module, please let us know, because ideally you shouldn't need to. (Chris Weisiger)
+** As part of a project to make the Core object-oriented, MMCore has been refactored to use <code>DeviceInstance</code> objects to manage access to devices (Mark Tsuchida)
+** The Core logger (which produces CoreLog) has been completely rewritten, and should longer drop entries during shutdown (Mark Tsuchida)
+** Core logging to stderr and the primary log file is not enabled upon CMMCore instantiation; it is explicitly enabled by the application (Mark Tsuchida)
+** Building using Ant on Windows now requires running <code>ant -f buildscripts/fetchdeps.xml</code> beforehand to download Ant extensions
+
 == Micro-Manager 1.4.17 (April 30, 2014) ==
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.17.exe Windows 32-bit], 55 MB<br />
