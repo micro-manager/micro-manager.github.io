@@ -63,7 +63,7 @@ The port properties should be set as follows:
 
 *'''Verbose:''' 1
 
-[[Image:Zaber_stage_config.png|thumb|left|350px|Sample Stage configuration]]<br clear="all"/>
+[[Image:Zaber_stage_config.png|thumb|left|300px|Sample Stage configuration]]<br clear="all"/>
 
 === XYStage Hardware Configuration ===
 
@@ -101,7 +101,7 @@ The port properties should be set as follows:
 
 *'''Verbose:''' 1
 
-[[Image:Zaber_xystage_config.png|thumb|left|350px|Sample XYStage configuration]]<br clear="all"/>
+[[Image:Zaber_xystage_config.png|thumb|left|300px|Sample XYStage configuration]]<br clear="all"/>
 
 === XYStage Calibration ===
 
