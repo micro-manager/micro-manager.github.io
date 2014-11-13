@@ -1,3 +1,13 @@
+== Summary ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Device adapter for Zaber Technologies linear and XY stages</td></tr>
+<tr><td>'''Author:'''</td><td>Athabasca Witschi, Zaber Technologies</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Devices:'''</td><td>Stage, XYStage</td></tr>
+</table>
+
 == Overview ==
 
 The Zaber device adapter supports single and dual-axis A-series stages using the ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration. 
