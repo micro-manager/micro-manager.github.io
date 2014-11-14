@@ -12,7 +12,7 @@ The Zaber device adapter supports single and dual-axis A-series stages using the
 
 == Device Setup and Configuration ==
 
-Before starting Micro-Manager, please ensure your devices are properly set up and configured. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device number and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
+Before starting Micro-Manager, please ensure your devices are properly set up and configured. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device address and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
 
 === ASR Setup and Orientation ===
 
@@ -41,7 +41,7 @@ The following initialization properties are required:
 
 *'''Axis Number:''' This value will be 1 unless the stage is connected to axis 2 of a dual-axis controller, in which case it will be 2.
 
-*'''Device Number:''' Use the value set in Zaber Console.
+*'''Device Address:''' Use the value set in Zaber Console.
 
 *'''Linear Motion Per Motor Rev:''' Use the value from the stage's specifications.
 
@@ -73,7 +73,7 @@ The following initialization properties are required:
 
 *'''Axis Number (Y Axis):''' This refers to the controller axis number connected to your Y axis.
 
-*'''Device Number:''' Use the value set in Zaber Console.
+*'''Device Address:''' Use the value set in Zaber Console.
 
 *'''Linear Motion Per Motor Rev (X Axis):''' Use the value from the stage's specifications.
 
