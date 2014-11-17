@@ -41,7 +41,7 @@ The following initialization properties are required:
 
 *'''Axis Number:''' This value will be 1 unless the stage is connected to axis 2 of a dual-axis controller, in which case it will be 2.
 
-*'''Device Address:''' Use the value set in Zaber Console.
+*'''Controller Device Number:''' Use the value set in Zaber Console.
 
 *'''Linear Motion Per Motor Rev:''' Use the value from the stage's specifications.
 
