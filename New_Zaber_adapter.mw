@@ -73,7 +73,7 @@ The following initialization properties are required:
 
 *'''Axis Number (Y Axis):''' This refers to the controller axis number connected to your Y axis.
 
-*'''Device Address:''' Use the value set in Zaber Console.
+*'''Controller Device Number:''' Use the value set in Zaber Console.
 
 *'''Linear Motion Per Motor Rev (X Axis):''' Use the value from the stage's specifications.
 
