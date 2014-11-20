@@ -5,6 +5,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[AutoLase]]
 * [[DLLAutoReloader]]
 * [[HCS Site Generator]] 
+* [[Flat-Field Correction]]
 * [[Intelligent Acquisition]]
 * [[Image Flipper]]
 * [[Localization Microscopy]]
