@@ -1,4 +1,4 @@
-This plugin automatically subtracts a background image and corrects for uneven illumination based on information you provided.  This plugin is available as of versio 1.4.20.2014118 and replaces the [[MultiShading]] plugin by Kurt Thorn (in fact, its code is heavily based on that code, which in turn was based on the code for the BFCorrector plugin).
+This plugin automatically subtracts a background image and corrects for uneven illumination based on information you provided.  This plugin is available as of versio 1.4.20.2014118 and replaces the [[MultiChannelShading]] plugin by Kurt Thorn (in fact, its code is heavily based on that code, which in turn was based on the code for the BFCorrector plugin).
 
 The plugin appears as follows:
 
