@@ -1,4 +1,4 @@
-The MultiChannelShading allows independent shading correction (flat-fielding) of multiple channels. The plugin dialog looks like this:
+The MultiChannelShading allows independent shading correction (flat-fielding) of multiple channels. Note that this plugin has been replaced by the Flat-Fiedl Correction plugin as of Micro-Manager version 1.4.20.2014118. The plugin dialog looks like this:
 
 [[File:MCS_screenshot.jpg]]
 
