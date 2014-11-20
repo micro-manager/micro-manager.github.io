@@ -20,3 +20,6 @@ When you bin your image, or select a region of interest (ROI), the plugin will a
 Note that you can always retrieve the original data by doing the following calculation:
 
 acquired image = resulting image * (flatfield image - background) + background
+
+
+{{Documentation Sidebar}}
