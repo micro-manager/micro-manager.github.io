@@ -2,6 +2,7 @@ This plugin automatically subtracts a background image and corrects for uneven i
 
 The plugin appears as follows:
 
+[[File:FlatFieldMM.png]]
 
 First, using the normal Micro-Manager tools, create a Configuration group that incorporates most things that influences what a flatfield image looks like.  This includes things such as the camera, the objective lens, the filter cubes, and filters in the path way.  Do not include things such as binning or the ROI ofthe camera. Select this group in the "Channel group" drop-down in the top of the plugin.
 
