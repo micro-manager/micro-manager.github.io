@@ -1,0 +1,24 @@
+{| style="text-align: left"
+!Summary:
+|Interfaces with Andor Smamrock Spectrograph
+|-
+!Author:
+|Francis McCloy
+|-
+!License:
+|LGPL
+|- valign="top"
+!Platforms:
+|Windows
+|- valign="top"
+!Devices:
+|
+|- valign="top"
+!Since version
+|1.4.20
+|}
+
+
+{{Listserv_Search|Shamrock}}
+
+{{Devices_Sidebar}}
