@@ -143,6 +143,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[Aladdin]] - Syring pump controller from Aladdin
 * [[AndorLaserCombiner]] - Andor laser launch
+* [[AndorShamrock]] - Andor Shamrock Spectrographs
 * [[Aquinas]] - Aquinas Microfluidics Controller
 * [[Neos|AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[ASIwptr]] - ASI well-plate transfer robot
