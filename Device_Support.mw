@@ -162,6 +162,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Mosaic3]] - Andor Mosaic DMD Projection Device
 * [[Okolab]] - Okolab Microscope Incubators and Gas Controllers
 * [[Omicron]] - Omicron Laser Controller
+* [[OVP_ECS2]] - Optic Valley Photonics ECS-2 environmental controller
 * [[Oxxius]] - Oxxius Laser Controller
 * [[Pecon]] - Pecon Incubation System
 * [[pgFocus]] - Open Software/Hardware Focus Stabilization from [http://big.umassmed.edu BIG]
