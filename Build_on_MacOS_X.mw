@@ -46,7 +46,7 @@ If you use Java 6 (from Apple), use the following for the ./configure line:
 
   ./configure --enable-imagej-plugin=/path/to/ImageJ \
   JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home \
-  JNI_CPPFLAGS=-I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers \
+  JNI_CPPFLAGS=-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers \
   JAVACFLAGS="-Xlint:all,-serial -source 1.6 -target 1.6"
 
 == Device adapter dependencies ==
