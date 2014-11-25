@@ -23,8 +23,8 @@ and add the line:
  C:/Program Files/Micro-Manager-1.4
 3. Restart Matlab. Now type the following at the command prompt:
  >> cd 'c:/program files/Micro-Manager-1.4'
- >> import org.micromanager.MMStudioMainFrame;
- >> gui = MMStudioMainFrame(false);
+ >> import org.micromanager.MMStudio;
+ >> gui = MMStudio(false);
  >> gui.show;
  >> mmc = gui.getCore;
  >> acq = gui.getAcquisitionEngine;
