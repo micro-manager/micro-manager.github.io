@@ -29,4 +29,6 @@ In addition, plugins are available from third parties:
 
 ''See also [[Writing plugins for Micro-Manager]]
 
+''And also look at our [http://www.jbmethods.org/jbm/article/view/36/28 paper] describing hardware synchronization, simultaneous use of multiple cameras, projection of patterned light onto a specimen, live slide mapping, imaging with multi-well plates, particle localization and tracking, and high-speed imaging.
+
 {{Documentation Sidebar}}
