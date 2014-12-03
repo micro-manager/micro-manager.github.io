@@ -36,7 +36,7 @@ It is often necessary to adjust memory settings in order to optimize Micro-Manag
 
 There are two available settings: the ImageJ memory limit ('''ImageJ | Edit | Options | Memory & Threads...'''), and the sequence buffer size ('''Tools | Options'''). These each need to be large enough for what they are used for, but small enough so that everything fits into RAM. They also need to take into account some additional constraints.
 
-But there are three types of memory used by Micro-Manager: general application memory, sequence buffer (temporary storage for images during fast acquisitions), and image storage (used when acquiring to RAM rather than disk). The ImageJ memory setting only determines the maximum for the general application memory, which is not usually used for Micro-Manager image storage (it ''is'' used for images opened in ImageJ, though).
+There are three types of memory used by Micro-Manager: general application memory, sequence buffer (temporary storage for images during fast acquisitions), and image storage (used when acquiring to RAM rather than disk). The ImageJ memory setting only determines the maximum for the general application memory, which is not usually used for Micro-Manager image storage (it ''is'' used for images opened in ImageJ, though).
 
 The sequence buffer is used to hold freshly acquired images until the Micro-Manager application is ready to process (display, save, etc.) them. It helps absorb occasional glitches that slow down software processing, so that the camera can acquire images at its set rate. The sequence buffer is not used for Snap acquisitions or those Multi-Dimensional Acquisitions where there is plenty of time between frames.
 
