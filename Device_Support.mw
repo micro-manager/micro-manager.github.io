@@ -36,6 +36,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
 * [[Micropix]] - Cameras from Micropix
+* [[Mightex_C_Cam]] - Mightex C-series USB cameras
 * [[MoticCamera]] - Motic cameras
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[OpenCVgrabber]] - Supports numerous USB cameras and frame grabbers (those using a DirectShow or WDM class driver). (Windows)
