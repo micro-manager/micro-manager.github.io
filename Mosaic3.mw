@@ -30,17 +30,11 @@
     Mosaic3ApiSharedMfc.dll
     Mosaic3SDKWrapper.dll
 
-:These Mosaic library files need to be copied from another installed software, as listed below:
+:These Mosaic library files need to be copied from the Mosaic 3 SDK, located at:
 
-{| class="wikitable"
-! Software            !! Directory containing required files
-|-
-| Andor iQ            || <code>C:\Program Files (x86)\Andor Bioimaging\Common Files\</code>
-|-
-| Andor Mosaic 3 SDK  || <code>C:\Program Files\Andor Mosaic 3 SDK\sdk\</code>
-|}
+    C:\Program Files\Andor Mosaic 3 SDK\sdk\
 
-:If you don't have either of these installed, they are available at http://my.andor.com  The SDK is under <code>Software > Drivers and 3rd Party > Andor Mosaic 3 SDK</code>, and iQ is under <code>Software > Andor iQ</code>.
+:The SDK is publicly available for [http://www.andor.com/downloads?src=micro download here].
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
