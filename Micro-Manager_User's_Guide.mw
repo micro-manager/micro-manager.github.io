@@ -32,25 +32,7 @@ Micro-Manager is packaged as an [http://rsb.info.nih.gov/ij/ ImageJ] plug-in and
 
 == Memory settings ==
 
-It is often necessary to adjust memory settings in order to optimize Micro-Manager performance and prevent errors. This can be a somewhat complicated topic, especially if your computer has limited memory (compared to the size of acquired images) or if you are running the 32-bit version of Micro-Manager (which cannot access more than 2 GB of memory, or 4 GB on OS X). You may wish to skip this section for now and come back when you experience memory-related errors.
-
-There are two available settings: the ImageJ memory limit ('''ImageJ | Edit | Options | Memory & Threads...'''), and the sequence buffer size ('''Tools | Options'''). These each need to be large enough for what they are used for, but small enough so that everything fits into RAM. They also need to take into account some additional constraints.
-
-There are three types of memory used by Micro-Manager: general application memory, sequence buffer (temporary storage for images during fast acquisitions), and image storage (used when acquiring to RAM rather than disk). The ImageJ memory setting only determines the maximum for the general application memory, which is not usually used for Micro-Manager image storage (it ''is'' used for images opened in ImageJ, though).
-
-The sequence buffer is used to hold freshly acquired images until the Micro-Manager application is ready to process (display, save, etc.) them. It helps absorb occasional glitches that slow down software processing, so that the camera can acquire images at its set rate. The sequence buffer is not used for Snap acquisitions or those Multi-Dimensional Acquisitions where there is plenty of time between frames.
-
-There is one thing you need to know about image storage memory (which Micro-Manager uses so that it can support high-speed acquisitions to RAM): this memory lives outside of either of the available memory settings.
-
-Here are some guidelines for how to adjust memory settings.
-
-Generally, you do not need to set the ImageJ memory setting very large, unless you experience "out of memory" errors when processing images using ImageJ and ImageJ plugins. For the 64-bit version, 1-4 GB is recommended (but leave several GB of your total RAM for other purposes). For the 32-bit version, it is important ''not'' to set the ImageJ memory too large. 400-800 MB is usually a good range, and you should not exceed 1.2 GB (a little larger is okay on OS X).
-
-For the sequence buffer size setting, try first setting the buffer to 20-100 times the size of a single image from your camera. You may get "sequence buffer overflow" (also known as "circular buffer overflow") errors during acquisitions, especially at high frame rates. If so, try increasing the sequence buffer size (for fast streaming of large images, much larger settings can sometimes be useful). You can also use the Sequence Buffer Monitor plugin ('''Plugins | Developer Tools''') to see how much of the sequence buffer is actually used during a Multi-Dimensional Acquisition.
-
-In general, the total of the sequence buffer size and ImageJ memory setting should not exceed about 80-90% of total available RAM (the free RAM before starting Micro-Manager). Additionally, for the 32-bit version only, the total of the sequence buffer size, ImageJ memory setting, the size of the image datasets you want to acquire to RAM, plus some extra space, must not exceed 2 GB (4 GB on OS X).
-
-If you have another installation of ImageJ on your computer, keep in mind that Micro-Manager uses its own copy of ImageJ and that you need to set memory options on both.
+It is often necessary to adjust memory settings in order to optimize Micro-Manager performance and prevent errors. See the [[Micro-Manager Configuration Guide#MemorySettings|Configuration Guide]] for guidelines.
 
 = Getting started =
 
