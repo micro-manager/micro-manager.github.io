@@ -2,8 +2,11 @@
 !Summary:
 |Interfaces with Andor Smamrock Spectrograph
 |-
-!Author:
-|Francis McCloy
+!Authors:
+|Francis McCloy(Andor)<br />Cary McPoland (Andor)
+|-
+!Maintainers:
+|Francis McCloy(Andor)<br />Cary McPoland (Andor)
 |-
 !License:
 |LGPL
@@ -12,11 +15,26 @@
 |Windows
 |- valign="top"
 !Devices:
-|
+|Andor Shamrock 193i, 300, 500 & 750
 |- valign="top"
 !Since version
 |1.4.20
 |}
+
+----
+
+==Dependencies==
+*'''mmgr_dal_AndorShamrock.dll'''
+*'''atshamrock.dll'''
+*'''ShamrockCIF.dll'''
+
+==Installation==
+All the dlls mentioned in the dependencies section are all required to run up an Andor Shamrock. The '''mmgr_dal_AndorShamrock''' dll ships with MicroManager ever since version 1.4.20. The '''atshamrock''' and '''ShamrockCIF''' dlls can be obtained from the MyAndor website. After all dependencies are in place (e.g. C:\Program Files\Micro-Manager1.4\) the device can be initialized and added to a configuration file.
+
+===Hardware Configuration Manager===
+Follow the usual instructions to add a device to a config file in Micro-Manager (i.e. Tools->Hardware Configuration Wizard). Providing all dlls are in the right place and the device is on and connected to the computer, it should appear in the list of available devices to add.
+
+[[Image:Adding Shamrock to configuration AddingSR.jpg|frame|center]]
 
 
 {{Listserv_Search|Shamrock}}
