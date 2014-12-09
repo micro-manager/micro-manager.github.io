@@ -39,6 +39,33 @@ Follow the usual instructions to add a device to a config file in Micro-Manager 
 
 Continue with addition of other devices such as cameras, microscopes, stage devices and save the configuration file that is generated.
 
+===Suggested Presets===
+
+Ideal for spectroscopy application:
+
+{| class="wikitable"
+!style="width:20%;" | Device Name
+!Property Name
+!Property Value
+|-
+!Andor Camera
+|ReadMode
+|FVB
+|-
+!Andor Shamrock
+|No. of Detector Pixels
+|Width of sensor of attached camera
+|-
+!Andor Shamrock
+|Centre wavelength
+|gt 0
+|-
+!Andor Shamrock
+|Detector Pixel Width (um)
+|gt 0
+|}
+
+
 {{Listserv_Search|Shamrock}}
 
 {{Devices_Sidebar}}
