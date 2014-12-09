@@ -37,7 +37,7 @@ Follow the usual instructions to add a device to a config file in Micro-Manager 
 
 [[Image:AddingSR.JPG|frame|center]]
 
-Continue with addition of other devices such as camera, microscope, stage device etc...
+Continue with addition of other devices such as cameras, microscopes, stage devices and save the configuration file that is generated.
 
 {{Listserv_Search|Shamrock}}
 
