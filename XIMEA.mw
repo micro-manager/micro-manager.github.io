@@ -1,11 +1,11 @@
 == XIMEA Camera adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.ximea.com/en/products/scientific-cameras/ XIMEA cameras]</td></tr>
+'''Summary:'''</td><td>Controls [http://www.ximea.com/en/products/scientific-cameras/ XIMEA cameras] (and some Olympus Soft Imaging cameras)</td></tr>
 <tr><td>'''Author:'''</td><td>Marian Zajko</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>XIMEA FireWire, USB2 and USB3 cameras</td></tr>
+<tr><td>'''Devices:'''</td><td>XIMEA FireWire, USB2 and USB3 cameras. Can also be used for XM-10 and XC-10 cameras from Olympus Soft Imaging.</td></tr>
 <tr><td>'''Supported MM version:'''</td><td>1.4.6 20110722</td></tr>
 <tr><td>'''Driver Needed:'''</td><td>[http://www.ximea.com/support/wiki/apis/XIMEA_API_Software_Package/ XIMEA camera drivers]</td></tr>
 </table>
