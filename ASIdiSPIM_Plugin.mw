@@ -18,11 +18,17 @@ This plugin exists to facilitate alignment and use of [http://asiimaging.com/pro
 
 The plugin documentation currently resides as part of the [http://www.asiimaging.com/downloads/manuals/diSPIM_Manual.pdf diSPIM manual] available on the ASI website.
 
+== Significant Changes ==
+List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
+
+* 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25ms
+* 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
+* 20141207: added ability to export data for Fiji Multiview plugin
+
 
 == Please contact us! ==
 
 The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager (before submitting bug reports, please check a recent nightly build to make sure the bug hasn't been already fixed).
-
 
 {{Listserv_Search|ASIdiSPIM}}
 
