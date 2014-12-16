@@ -16,7 +16,7 @@ resulting image = (acquired image - background) / (flatfield image - background)
 
 If you did not provide a background image, the background subtraction will be skipped.
 
-When you bin your image, or select a region of interest (ROI), the plugin will automatically calculate the appropriate background and flatfield images from the ones you provided and execute flatfield correction.  
+When you bin your image, or select a region of interest (ROI), the plugin will automatically calculate the appropriate background and flatfield images from the ones you provided (it is therefore important that you collect the faltfield and background image without setting an ROI and with a binning of 1).  
 
 Note that you can always retrieve the original data by doing the following calculation:
 
