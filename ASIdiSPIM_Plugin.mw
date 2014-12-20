@@ -21,10 +21,10 @@ The plugin documentation currently resides as part of the [http://www.asiimaging
 == Significant Changes ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
+* 20141219: added ability to easily do offset-only calibration adjustment
 * 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25ms
 * 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
 * 20141207: added ability to export data for Fiji Multiview plugin
-
 
 == Please contact us! ==
 
