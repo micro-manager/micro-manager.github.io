@@ -18,7 +18,7 @@
 |Windows (No Mac or Linux driver available)
 |- valign="top"
 !Devices:
-|LC-401, LC-501, LC-601 (only 4 laser LC-601 systems supported; 5 and 6 line support coming soon)
+|LC-401, LC-501, LC-601 (only 4 laser LC-601 systems supported; 5 and 6 line support possible but not yet implemented)
 |- valign="top"
 !Since version
 |1.3.47
