@@ -27,10 +27,53 @@ These are the wiki pages I maintain:
 # Promote the project to attract programmers and funding from other industries:  particularly by adding GNU/Linux packages to official µManager releases and the [http://directory.fsf.org/wiki?title=Review:Micro-Manager-REV-ID-1&redirect=no FSF Directory].
 # Get more familiar with the programming API.
 
-<!--
-== Installations ==
-* Yale (Prof. Paul Forscher)
-* UConn (Prof. David Knecht)
-* UT Southwestern (Prof. Kate Luby-Phelps)
-* LSU Health Science Center (Prof. Edward Wojcik)
--->
+
+== Systems ==
+
+I wish to thank a few super-users for practical information about running µManager:
+
+{| class="wikitable sortable"
+! Institution !! Principal Investigator
+|-
+| National Institutes of Health || Steve Ikeda
+|-
+| Yale University || Paul Forscher
+|-
+| Cambridge, University of || John James
+|}
+
+Over the years, I've helped a number of students and professors get setup with µManager:
+
+{| class="wikitable sortable"
+! Institution !! Principal Investigator
+|-
+| California, University of, at San Diego || Karen Oegema
+|-
+| Carnegie Mellon || Marcel Bruchez
+|-
+| Connecticut, University of  || David Knecht
+|-
+| Cornell University || Peng Chen
+|-
+| Cornell, Weill Medical College || Joel Baumgart
+|-
+| Harvard Medical School || Rachel Wilson
+|-
+| Luisiana State University Health Science Center || Edward Wojcik
+|-
+| Michigan, University of || Allen Liu
+|-
+| National Institutes of Environmental Health Sciences || Jerry Yakel
+|-
+| North Carolina, University of, at Chapel Hill || Anne Taylor
+|-
+| Ohio State University || Tony Brown
+|-
+| Memorial Sloan Kettering Cancer Center || Daniel Heller
+|-
+| Sandia National Labs at Livermore || Carl Hayden
+|-
+| Texas, University of, Southwestern Medical Center || Kate Luby-Phelps
+|-
+| Yale University || Derek Toomre
+|}
