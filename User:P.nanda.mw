@@ -12,14 +12,14 @@ These are the wiki pages I maintain:
 ** [[Arduino]]
 * Plugins
 ** [[Projector|Projector plugin]]
-* Software Development
+* General Documentation
+** [[Comparison with other microscopy software|Article comparing µManager with other microscopy software]]
+** [[CSU Alignment|Alignment of Yokogawa spinning disk]]
+** [[Setup UTSW SD|Installation report of UT Southwestern Confocal]]
+* Operating Systems
+** [[Personal computer setup]]
 ** [[Linux installation from source (Ubuntu)]]
 ** [[Linux installation from source (Gentoo)]]
-* Other
-** [[Comparison with other microscopy software|Article comparing µManager with other microscopy software]]
-** [[Setup UTSW SD|Installation report of UT Southwestern Confocal]]
-** [[CSU Alignment|Alignment of Yokogawa spinning disk]]
-** [[Personal computer setup]]
 
 == Interest in µManager ==
 # Improve documentation on this wiki.
