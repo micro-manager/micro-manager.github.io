@@ -129,16 +129,18 @@ As with <code>Datastore</code>, each <code>DisplayWindow</code> has a <code>com.
 
 The <code>DisplaySettings</code> class tracks most aspects of how exactly images are displayed in a particular <code>DisplayWindow</code>. It bears many structural similarities to the <code>Metadata</code> and <code>SummaryMetadata</code> classes described earlier: it is immutable and constructed with a Builder pattern. For example:
 
-<code>DisplaySettings.DisplaySettingsBuilder = studio.display().getStandardDisplaySettings();
-// Change the channel names.
-String[] channelNames = new String[] {"DAPI", "GFP", "Cy5"};
-builder.channelNames(channelNames);
-DisplaySettings newSettings = builder.build();
-// Apply the changes to the current display window.
-DisplayWindow curDisplay = studio.display().getCurrentWindow();
-curDisplay.setDisplaySettings(newSettings);</code>
+<code>
+ DisplaySettings.DisplaySettingsBuilder = studio.display().getStandardDisplaySettings();
+ // Change the channel names.
+ String[] channelNames = new String[] {"DAPI", "GFP", "Cy5"};
+ builder.channelNames(channelNames);
+ DisplaySettings newSettings = builder.build();
+ // Apply the changes to the current display window.
+ DisplayWindow curDisplay = studio.display().getCurrentWindow();
+ curDisplay.setDisplaySettings(newSettings);
+</code>
 
-Whenever the <code>DisplayWindow</code> receives new <code>DisplaySettings</code>, it posts a <code>NewDisplaySettingsEvent</code> on its <code>EventBus</code>. The various controls in the window listen for this event, and automatically update themselves to reflect the new settings. Thus, for example, if you wanted to change the coordinates of the displayed image, you could create a new <code>DisplaySettings</code> with a modified <code>imageCoords</code> field, instead of calling <code>DisplayWindow.setDisplayedImageTo()</code>. 
+Whenever the <code>DisplayWindow</code> receives new <code>DisplaySettings</code>, it posts a <code>NewDisplaySettingsEvent</code> on its <code>EventBus</code>. The various controls in the window listen for this event, and automatically update themselves to reflect the new settings. Thus, for example, if you wanted to change the coordinates of the displayed image, you could create a new <code>DisplaySettings</code> with a modified <code>imageCoords</code> field, instead of calling <code>DisplayWindow.setDisplayedImageTo()</code>.
 
 === DisplayManager ===
 
