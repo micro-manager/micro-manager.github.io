@@ -16,14 +16,14 @@ The primary functions you will likely be interested in are:
 
 * <code>putImage</code> and <code>getImage</code>, which allow you to add and retrieve Images from the Datastore (see the <code>Image</code> class, below).
 * <code>save</code>, which saves the contents of the Datastore to disk.
-* <code>registerForEvents</code>, which allows you to be notified whenever the data in the Datastore (i.e. the Images or SummaryMetadata) are modified. The <code>Datastore</code> has a <code>com.google.common.eventbus.EventBus</code> that it publishes events on; appropriate methods with the <code>com.google.common.eventbus.Subscribe</code> annotation will be called when the event occurs. For example:
+* <code>registerForEvents</code>, which allows you to be notified whenever the data in the Datastore (i.e. the Images or SummaryMetadata) are modified. The <code>Datastore</code> has a <code>com.google.common.eventbus.EventBus</code> that signals events; appropriate methods with the <code>com.google.common.eventbus.Subscribe</code> annotation will be called when the event occurs. For example:
 
 <code>
-import com.google.common.eventbus.Subscribe;
-import org.micromanager.data.Datastore;
-import org.micromanager.data.Image;
-import org.micromanager.data.NewImageEvent;
-import org.micromanager.ScriptInterface;
+ import com.google.common.eventbus.Subscribe;
+ import org.micromanager.data.Datastore;
+ import org.micromanager.data.Image;
+ import org.micromanager.data.NewImageEvent;
+ import org.micromanager.ScriptInterface;
 
 public class MyClass {
    public MyClass(ScriptInterface studio) {
