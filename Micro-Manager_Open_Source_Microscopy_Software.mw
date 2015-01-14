@@ -10,7 +10,7 @@ __NOTOC__
 <table cellspacing=15><tr>
 <td>[[Image:MM_screenshot.png| Micro-Manager Screen Shot]]</td>
 <td>
-'''μManager has a simple and clean user interface, through which it lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
+'''Micro-Manager has a simple and clean user interface, through which it lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
 </td></tr></table>
 
 === [[Why_Micro-Manager%3F | ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?]] ===
