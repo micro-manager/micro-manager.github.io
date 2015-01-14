@@ -111,7 +111,7 @@ Because the API only exposes interfaces (i.e. it does not expose concrete implem
 
 == Display controls: the display API ==
 
-The <code>org.micromanager.display</code> package contains the API for creating, controlling, and manipulating image display windows. It provides the ability to create new display windows, programatically control them, and listen to certain eventns they generate when interacted with.
+The <code>org.micromanager.display</code> package contains the API for creating, controlling, and manipulating image display windows. It provides the ability to create new display windows, programatically control them, and listen to certain events they generate when interacted with.
 
 === DisplayWindow ===
 
