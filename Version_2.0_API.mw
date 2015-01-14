@@ -90,16 +90,18 @@ You are not restricted to the classic 4 axes of channel, time, z slice, and stag
 
 As with the <code>Metadata</code> and <code>SummaryMetadat</code> classes, <code>Coords</code> are generated using a builder:
 
-<code>Coords.CoordsBuilder builder = gui.data().getCoordsBuilder();
-// Convenience functions to set the standard axes
-builder.time(4); // 5th timepoint
-builder.channel(0); // 1st channel
-builder.position("polarization", 2); // Example custom axis
+<code>
+ Coords.CoordsBuilder builder = gui.data().getCoordsBuilder();
+ // Convenience functions to set the standard axes
+ builder.time(4); // 5th timepoint
+ builder.channel(0); // 1st channel
+ builder.position("polarization", 2); // Example custom axis
 
-Coords coords = builder.build();
-int timepoint = coords.getPositionAt(Coords.TIME); // 4
-int polarization = coords.getPositionAt("polarization"); // 2
-int zSlice = coords.getPositionAt(Coords.Z) // -1</code>
+ Coords coords = builder.build();
+ int timepoint = coords.getPositionAt(Coords.TIME); // 4
+ int polarization = coords.getPositionAt("polarization"); // 2
+ int zSlice = coords.getPositionAt(Coords.Z) // -1
+</code>
 
 However, there is an important caveat with current versions of Micro-Manager 2.x: only the classic four axes are preserved when <code>Datastore</code> is saved to disk. We will rectify this in future.
 
