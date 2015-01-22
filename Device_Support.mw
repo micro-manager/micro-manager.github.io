@@ -136,6 +136,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[NI100X]] - NI I/O boards - DAQmx interface
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
+* [[TriggerScope]] - TriggerScope digital and analog controller
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
 * [[USBManager]] - Micro-Manager internal USB communications driver
 
