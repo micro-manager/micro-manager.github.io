@@ -1,0 +1,17 @@
+{| style="text-align: left"
+!Summary:
+|Adapter for the [http://www.triggerscope.com/ TriggerScope device controller]
+|-
+!Author:
+|Austin Blanco
+|-
+!License:
+|LGPL
+|-
+!Platforms:
+|Linux, Mac, and Windows
+|-
+!Since version:
+|1.4.20
+|}
+----
