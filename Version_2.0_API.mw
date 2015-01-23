@@ -148,7 +148,7 @@ The <code>DisplayManager</code> class (accessible via <code>ScriptInterface.disp
 
 ==== Tracking ====
 
-In addition to the above, <code>DisplayManager</code> also handles tracking of <code>Datastore</code>s. A "tracked" <code>Datastore</code> will be disposed of when all of its <code>DisplayWindow</code>s go away. Additionally, before the last <code>DisplayWindow</code> is allowed to close, either the <code>Datastore</code> must have saved its data, or the user must have explicitly allowed closing without saving.
+In addition to the above, <code>DisplayManager</code> also handles tracking of <code>Datastore</code>s. A "tracked" <code>Datastore</code> will be disposed of when all of its <code>DisplayWindow</code>s go away. Additionally, before the last <code>DisplayWindow</code> is allowed to close, either the <code>Datastore</code> must have saved its data, or the user must have explicitly confirmed closing without saving.
 
 By default, newly-created <code>Datastore</code>s from <code>DataManager.createNewDatastore()</code> are not tracked; thus, you are responsible for ensuring that they are saved, if so desired, as well as calling the <code>forceClosed</code> method of windows that are no longer needed. If you want to transfer this responsibility to Micro-Manager, call the <code>track()</code> method of <code>DisplayManager</code>. It will automatically find all <code>DisplayWindow</code>s associated with the <code>Datastore</code>, and register on their <code>EventBus</code>es. All <code>DisplayWindow</code>s except the last are allowed to close when the user clicks the close button. When the last one tries to close, the <code>DisplayManager</code> will ensure that the user has a chance to save their data.
 
