@@ -1,122 +1,102 @@
 __NOTOC__
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
-== Micro-Manager 1.4.19 (November 7, 2014) ==
+== Micro-Manager 1.4.20 (January 30, 2015) ==
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.19.exe Windows 32-bit], 60 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.19.exe Windows 64-bit], 61 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.20.exe Windows 32-bit], 60 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.20.exe Windows 64-bit], 62 MB<br />
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.19.dmg Mac OS X (Universal Binary)], 47 MB<br />
-(OS X 10.8 or later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.20.dmg Mac OS X (Universal Binary)], 48 MB<br />
+(OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
-=== Changes in 1.4.19 (since 1.4.18) ===
+=== Changes in 1.4.20 (since 1.4.19) ===
 
-* New in the MMStudio application
-** Stage Position List dialog tweaks (Nico Stuurman)
-** Image processing pipeline dialog changes (Mark Tsuchida):
-*** Renamed to "On-The-Fly Processing"
-*** Dialog layout improved
-*** Dialog is automatically shown when opening a processor plugin
-*** Menu option is moved into the Plugins -> Processors menu
-** Default sequence buffer size on 64-bit systems raised from 25MB to 250MB (Mark Tsuchida)
-** ScriptPanel "Stop" button changed to "Interrupt" button, which interrupts the script instead of killing it (Chris Weisiger)
-** Add a keyboard shortcut option to autostretch the current image window (Chris Weisiger)
-** Add support for reporting crashes via Problem Report (Mark Tsuchida)
-** Add a "please wait" dialog during plugin loading (Nico Stuurman)
-** Remember image window positions across sessions (Nico Stuurman)
-
-* New in plugins
-** Plugins menu has been slightly rearranged (Mark Tsuchida)
-** New plugin: PatternOverlay, which draws patterns on the image display window (Jon Daniels, Matthijs Dorst)
-** MultiChannelShading: remembers user settings better (Nico Stuurman)
-** MultiChannelShading: doesn't create an open-file dialog when activated (Mark Tsuchida)
-** PixelCalibrator: handles RGB cameras more gracefully (Chris Weisiger)
-** PixelCalibrator: handles being cancelled more gracefully (Mark Tsuchida)
-** ASI diSPIM: numerous enhancements and fixes (Jon Daniels, Nico Stuurman)
-** HCS: Add support for 48-well plates (Nico Stuurman)
-** Localization Microscopy changes (Nico Stuurman):
-*** Clean up bad data from the reference image
-*** Add "Combine" button to combine datasets
-*** Some fixes to the plot display
-
-* Bug fixes:
-** Fix extensive layout bugs when resizing or zooming the image window (Chris Weisiger, Mark Tsuchida)
-** Script panel no longer lets the text input cursor go off the end of the script (Chris Weisiger)
-** Writing to a write-only filesystem or to a permissions-restricted part of the disk now produces an error message (Chris Weisiger)
-** Fix a bug causing the display to stop updating at the ends of acquisitions (Mark Tsuchida + Chris Weisiger)
-** Update the burst acquisition Beanshell script to work with current versions of Micro-Manager (Mark Tsuchida)
-** The MDA dialog and main frame now properly sync exposure time when the relevant checkbox is set (Chris Weisiger)
-** Clearing preferences now clears more settings (Mark Tsuchida)
-** The list of binning options in the main window is sorted numerically (Mark Tsuchida)
-** Don't error out when Click-To-Move is on and there's no XY stage (Chris Weisiger) or Z stage (Nico Stuurman)
-** Fix a bug in "Snap to Album" with multiple cameras causing duplicate images (Chris Weisiger)
-** Fix a race condition when updating metadata display (Chris Weisiger)
-** Fix GUI issues relating to autoshutter controls (Nico Stuurman)
-** Improve placement of error message dialogs (Nico Stuurman)
-** Fix issues caused by zero pixel sizes in Create Grid dialog (Nico Stuurman)
-** Automatically restart Live Mode when pixel size changes (Nico Stuurman)
-** Make plugin loading more resilient to partial failures (Chris Weisiger)
-** Fix zooming to 33%, 16%, and 8% (Chris Weisiger)
-** Fix off-by-one error when setting image dimensions (Henry Pickard)
-** Fix a crash that could occur after changing the ROI (Mark Tsuchida)
-** Fix "Keep shutter open" for channels (Mark Tsuchida)
-** Fix a hang that could occur when MDA fails during a sequence acquisition (Mark Tsuchida)
-** Fix a bug that could cause spurious Z position setting when running certain hardware-triggered MDAs (Mark Tsuchida)
-
-* New Device Adapters
-** [[UserDefinedSerial]]: Control arbitrary serial-based shutters and state devices (Mark Tsuchida)
-
-* Updated Device Adapters
-** [[ABSCamera]]: Minor bugfix and internal cleanup (ABS GmbH Jena)
-** [[AndorSDK3]]: Fix metadata for USB3 Zyla (Matthew Milford, Andor)
-** [[Arduino]]: Bugfix for switch state handling (Nico Stuurman)
-** [[ASIStage]]: Add "T" axis support, properties for sending serial commands, and "Fast Sequence" mode (Jon Daniels, ASI)
-** [[ASITiger]]: CRISP property names now match ASIStage; support ring buffer and scanner in firmware v2.89+ (Jon Daniels, ASI)
-** [[BaumerOptronic]]: Prevent timeout errors during acquisition (Mark Tsuchida)
-** [[DemoCamera]]: Additional test image parameters including sequential number display (Chris Weisiger)
-** [[GigECamera]]: RGB image and raw Bayer image support (Peter Innerhofer)
-** [[MCL_MicroDrive]]: Fix a crash during shutdown (Greg Sawyer, MCL)
-** [[NewportCONEX]]: Fix serial communication bugs, add homing support (Marco Furchi, Mark Tsuchida)
-** [[PCO_Camera]]: Fix ROI handling for cameras without ROI support; add support for acquire mode; other bugfixes (Franz Reitner, PCO)
-** [[pgFocus]]: Fix a potential crash (Mark Tsuchida)
-** [[PI_GCS_2]]: Allow inversion of Z direction (Steffen Rau, PI)
-** [[PVCAM]]: Initial support for SMART Streaming (Andrej Bencur, Photometrics/QImaging)
-** [[SerialManager]]: Allow nonstandard baudrates on OS X (Marco Furchi, Mark Tsuchida)
-** [[Thorlabs]]: Bugfixes; add support for MLS203 stage, TDC001 and all multichannel BBD controllers (Thorlabs)
-** [[Utilities]]: Allow setting position range for DAXYStage (Ed Simmons)
-** [[XIMEA]]: Add support for padded data transfer from MD USB3 cameras, image formats for new camera models, FPGA and MCU version description, sensor tap control parameter, new GPO modes; other updates and fixes (Marian Zajko, XIMEA)
-** [[ZeissCAN29]]: Fix issue that could occasionally cause xy stage to remain busy (Mark Tsuchida)
-
-* New Closed-Source Device Adapters
-** '''HoribaEPIX''': HORIBA-branded EMCCD and sCMOS cameras (David Biggs, Raptor Photonics)
-
-* Updated Closed-Source Device Adapters
-** [[HamamatsuHam]]: Prevent silent dropped frames (Mark Tsuchida); Correct exposure time limits for ROI; add support for setting OUTPUT TRIGGER SOURCE, INTERNAL LINE SPEED UNITS, OUTPUT TRIGGER PERIOD UNITS, and OUTPUT TRIGGER DELAY UNITS; other bugfixes (Patrick Gregorio, Hamamatsu)
-** [[NikonEclipse90i]]: Fix OpticalPath positions for Front and Rear ports (Egor Zindy)
-** [[Olympus]]: Fix issue that could cause devices to remain busy (Mark Tsuchida)
-** '''RaptorEPIX''': Various updates and bugfixes (David Biggs, Raptor Photonics)
-
-* Changes to the MMStudio API
-** <code>TaggedImageStorage.putImage()</code> can now throw <code>IOException</code> if there is an issue writing the file (Chris Weisiger)
-** <code>ImageCache</code> now exposes a <code>getImage()</code> method, to make accessing image data easier (Chris Weisiger)
-** Multiple new <code>showError()</code> variants added to API (Jon Daniels)
-** <code>autostretchCurrentWindow()</code> function added to API (Chris Weisiger)
-
-* Changes to the MMCore API
-** CMMCore's sequence buffer size now defaults to 25 MB (32-bit) or 250 MB (64-bit) instead of 10 MB (when not set by MMStudio preferences)
-** Added a variant of the <code>getROI()</code> method that allows getting camera ROI by camera label without having to change current camera (Jon Daniels, ASI)
-** Removed previously deprecated methods from CMMCore: <code>clearLog(), getBufferIntervalMs(), saveLogArchive(), saveLogArchiveWithPreamble(), acqBeforeFrame(), acqAfterFrame()</code> (Mark Tsuchida)
-
-* Changes to the MMDevice API
-** Added <code>ImgBuffer::SetPixelsPadded()</code> (Marian Zajko, XIMEA)
-** Removed previously deprecated member functions from the device interface: <code>MM::Core::OnStatusChanged(), MM::Core::OnFinished(), MM::Core::OpenFrame(), MM::Core::CloseFrame(), MM::Core::SetAcqStatus(), MM::Core::getImageBufferTotalFrames(), MM::Core::getImageBufferFreeFrames(), MM::Core::GetPeripheral(), MM::Core::GetNumberOfPeripherals, MM::Core::getModuleLock(), MM::Core::removeModuleLock(), CDeviceBase<T, U>::OnStatusChanged(), CDeviceBase<T, U>::OnFinished()</code> (Mark Tsuchida)
-** Removed the obsolete <code>MM_THREAD_*</code> macros from the device interface (Mark Tsuchida)
-
-* Other changes of interest to developers
-** Micro-Manager 1.4.19 is SVN trunk r14582, 3rdpartypublic r171
-** <code>MMStudioMainFrame</code> has been split into <code>MMStudio</code> and <code>MainFrame</code> (Chris Weisiger)
-** Building Micro-Manager no longer requires zlib (Mark Tsuchida)
-** On Unix (GNU build system), Apache Ant is now used to build Java and Clojure components, as is already done on Windows. This requires Ant to be installed, and you need to run <code>make fetchdeps</code> after <code>./configure</code> but before running <code>make</code> the first time (Mark Tsuchida)
+* Improvements in the main application
+** Include file information in the ImageJ properties for Micro-Manager datasets (Chris Weisiger)
+** Improve saving/remembering window and dialog positions (Nico Stuurman, Jon Daniels)
+** Improve resizing of image display windows (Chris Weisiger)
+** Remove artificial limits on RAM usage on OSX (Mark Tsuchida)
+** Improve the layout of the data processing pipeline dialog (Mark Tsuchida)
+* Bugfixes
+** Snap/live mode
+*** Fix a bug causing a time scrollbar to appear in the Snap/Live display (Chris Weisiger)
+*** Fix a bug causing Snap/Live display to sometimes hang (Nico Stuurman)
+*** Fix a bug causing the first image received in Live mode to be discarded (Mark Tsuchida)
+*** Fix poor responsiveness of the UI during Live mode with large images (Mark Tsuchida)
+*** Changes to the on-the-fly processors immediately take effect on Live mode (Mark Tsuchida)
+*** Ensure that the start/stop Live mode buttons don't get out of sync (Chris Weisiger)
+*** Fix memory issues on 32-bit systems (Chris Weisiger)
+** Album
+*** Fix a bug causing the Album display to be one image behind (Chris Weisiger)
+*** Fix a bug causing snap-to-album with RGB or multichannel images to fail (Chris Weisiger)
+** File data
+*** Fix a bug causing files with incomplete display settings to be unloadable (Chris Weisiger)
+*** Fix a bug causing multipage TIFF files to be closed prior to all data having finished writing (Henry Pinkard)
+*** Fix a race condition causing recently-written images to not be available when using multipage TIFF storage (Mark Tsuchida)
+*** Fix an issue that could cause file loads to generate images with null metadata (Chris Weisiger)
+** Miscellaneous
+*** Prevent windows from appearing offscreen (Jon Daniels, Chris Weisiger)
+*** Prevent a potential hang caused by acquisitions with no defined bit depth (Chris Weisiger)
+*** Fix a bug causing histogram scaling to be improperly remembered (Chris Weisiger)
+*** Fix a bug causing getPropertyNames() to fail (Karsten Siller, Chris Weisiger)
+*** Fix Z-step size information in ImageJ (Jon Daniels, Chris Weisiger)
+*** Fix a rare NullPointerException in acquisitions (Nico Stuurman)
+*** Fix a rare exception when closing image windows (Mark Tsuchida)
+*** Improve responsiveness when changing config presets (Mark Tsuchida)
+*** Prevent the program from generating bizarrely wide dialog boxes (Mark Tsuchida)
+*** Fix a NullPointerException in DataProcessors when they are added to or removed from the processing queue (Chris Weisiger)
+*** Fix rounding of values (e.g. in Device Property Browser) (Mark Tsuchida)
+*** Fix a hang when closing dialogs (Nico Stuurman)
+*** Fix a crash that could occur when controlling certain Magnifier devices during acquisition (Mark Tsuchida)
+*** Better handle failure to load a hardware configuration: prevent spurious errors by giving up after the first error, and unload the partially loaded devices (Mark Tsuchida)
+*** Fix crash that could occur when the loading of hub and peripheral devices fails (Mark Tsuchida)
+*** Fix a bug that caused a long delay when starting an MDA time series that is performed by streaming from the camera (Mark Tsuchida)
+* Changes in plugins
+** ASIdiSPIM: extensive improvements and bug fixes (Jon Daniels, Nico Stuurman)
+** AcquireMultipleRegions: fix acquisition of non-flat sections (Kurt Thorn)
+** CRISPv2: add LogAmpAGC display (Vik, ASI)
+** Localization Microscopy: various improvements and bug fixes (Nico Stuurman)
+** MultiChannelShading: extensive improvements and bug fixes (Nico Stuurman)
+** PatternOverlay: bug fixes and UI tweaks (Nico Stuurman)
+* New device adapters
+** [[AndorShamrock]] Andor Shamrock Spectrograph Series (Andor)
+** [[Mightex_C_Cam]] Mightex C-series USB cameras (Mightex)
+** [[OVP_ECS2]] Optic Valley Photonics ECS-2 environmental controller (Jon Daniels, ASI)
+** [[TriggerScope]] TriggerScope digital and analog controller (Austin Blanco)
+* Changes in device adapters
+** [[ASIStage]]: Add motor control properties for the Z axis; add LogAmpACG property for CRISP (Jon Daniels, ASI)
+** [[ASITiger]]: Add support for PLogic card; many other enhancements and fixes (Jon Daniels, ASI)
+** [[Andor]]: Add FVB mode; fix ActualInterval when ROI is set; add hardware timestamps when available (Matthew Milford, Andor)
+** [[Corvus]]: Add joystick toggle property (Doug Kelly)
+** [[Ludl]]: Add preliminary support for multiple controllers (Russell Taylor, Mark Tsuchida)
+** [[MCCDAQ]]: Make analog voltage range configurable (Chris Weisiger)
+** [[MCL_MicroDrive]]: Fix an issue where velocity was incorrect for multi-axis movement (Greg Sawyer, MCL)
+** [[Nikon]]: Add support for TiTIRF shutter (Nico Stuurman)
+** [[PCO_Camera]]: Fix issues with ROI setting on startup (Franz Reitner, PCO)
+** [[PICAM]]: Fix crash when setting Port property (Mark Tsuchida); Fix EM gain property (Toshio Suzuki)
+** [[PVCAM]]: Fix ColorMode property; improve error handling (Lubomir Walder, Photometrics/QImaging)
+** [[PrecisExcite]]: Fix issue where invalid configuration file could be generated (Mark Tsuchida)
+** [[SerialManager]]: Remove "GetAnswer retry #" logging (Mark Tsuchida)
+** [[TISCam]]: Fix a crash (Johannes Schindelin)
+** [[Tofra]]: Add a device to control RGB LED as a shutter (Mark Tsuchida)
+** [[UserDefinedSerial]]: Fix issue causing errors when more than 10 positions are used with the state device (Mark Tsuchida)
+** [[VariLC]]: Fix handling of error responses (Amitabh Verma)
+** [[Versalase]]: Add properties to select lasers to shutter individually (David Sweeney, Vortran)
+** Yokogawa [[CSUX]]: Add retry logic for setting dichroic (Doug Kelly, Chris Weisiger)
+** [[Zaber]]: Improve XY stage support and add uniaxial stage support; improve error handling (Athabasca Witschi, Zaber)
+** [[ZeissCAN]]: Add support for AxioPhot PhotoModule (Nico Stuurman)
+* Changes in closed-source device adapters
+** [[HamamatsuHam]]: Fix an issue that could result in dropped frames when using external triggering on certain systems. Also fix a crash and a hang that could occur under certain circumstances. (Patrick Gregorio, Hamamatsu)
+* Changes of interest to developers
+** Micro-Manager 1.4.20 is SVN trunk r14990, 3rdpartypublic r173.
+** There is no change in the device programming interface (MMDevice) since 1.4.19.
+** API changes:
+*** Add <code>logDebugMessage()</code> method (Mark Tsuchida, Jon Daniels)
+*** Add <code>showMessage()</code> method (Nico Stuurman)
+*** Add <code>MMWindow.getTaggedImage()</code> method (Nico Stuurman)
+*** <code>MMWindow.getNumberOfPositions()</code> no longer always returns 1 (Nico Stuurman)
+*** Fix erroneously-defined tags for channel contrast mins/maxes (Chris Weisiger)
+*** <code>CMMCore</code> (<code>mmc</code>) methods for hub-peripheral devices now throw exceptions (<code>getInstalledDevices(), getLoadedPeripheralDevices(), getInstalledDeviceDescription()</code>) (Mark Tsuchida)
 
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
