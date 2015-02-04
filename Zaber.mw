@@ -1,58 +1,117 @@
-'''NOTE:''' If you are using a nightly build from 13 November, 2014, or later, please refer to the [[new Zaber adapter]] page.
-
 == Summary ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Device adapter for Zaber Technologies ASR100B120B XY stage and A-MCB2 controller.</td></tr>
-<tr><td>'''Author:'''</td><td>David Goosen, Zaber Technologies</td></tr>
+'''Summary:'''</td><td>Device adapter for Zaber Technologies linear and XY stages</td></tr>
+<tr><td>'''Author:'''</td><td>Athabasca Witschi, Zaber Technologies</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage</td></tr>
+<tr><td>'''Devices:'''</td><td>Stage, XYStage</td></tr>
 </table>
 
-==Hardware Setup==
+The Zaber device adapter supports single and dual-axis A-series stages using the Zaber ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
 
-Ensure home and away limit sensors have been set. The Zaber device adapter calibrates the stage's range of travel using home and away limit sensors, so you must make sure these are triggered before the stage runs into anything.
+== Device Setup and Configuration ==
 
-The limits are adjusted by loosening the screws shown in the images below and sliding the sensor magnets along their slots. The distance between the magnets is approximately equal to the travel range of the axis.
+Before starting Micro-Manager, please ensure your devices are properly set up and configured. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device address and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
+
+=== ASR Setup and Orientation ===
+
+If you are using an ASR, ensure home and away limit sensors have been set. The limits are adjusted by loosening the screws shown in the images below and sliding the sensor magnets along their slots. The distance between the magnets is approximately equal to the travel range of the axis. The Zaber XYStage device adapter calibrates the stage's range of travel using home and away limit sensors, so you must make sure these are triggered before the stage runs into anything (see [[#XYStage_Calibration|XYStage Calibration]]).
 
 {|
-| [[Image:Zaber_ASR_2.jpg|thumb|left|300px|Upper-axis limit sensor adjustment]]
-| [[Image:Zaber_ASR_3.jpg|thumb|left|300px|Lower-axis limit sensor adjustment]]
+| [[Image:Zaber_ASR_2.jpg|thumb|left|300px|Upper axis limit sensor adjustment]]
+| [[Image:Zaber_ASR_3.jpg|thumb|left|300px|Lower axis limit sensor adjustment]]
 |}
 
-See [http://www.zaber.com/wiki/Manuals/ASR ASR Manual] for more details.
+See the [http://www.zaber.com/wiki/Manuals/ASR ASR Manual] for more details.
 
-==Stage and Coordinate System Orientation==
-
-For proper operation the stage must be oriented as shown below. The arrows indicate the directions of positive stage movement within the Micro-manager coordinate system. 
+For proper operation the stage must be oriented as shown below, with the upper axis as X and the lower axis as Y. The direction of positive stage movement will be opposite the arrows.
 
 [[Image:Zaber_ASR_1.jpg|thumb|left|300px|Stage orientation and coordinate system]]<br clear="all"/>
 
+For more information about the Micro-Manager coordinate system, see [[Coordinates_and_Directionality|Coordinates and Directionality]].
 
-==Initialization and Port Properties==
+== Micro-Manager Setup and Configuration ==
 
-'''Controller Device Number:''' 01 (A-MCB2 default)
+The following sections will cover configuring Micro-Manager to use the Zaber stage and XYstage device adapters. For detailed instructions on configuration, see the [[Micro-Manager_Configuration_Guide|Configuration Guide]]. Note that you will need to know the motor steps per revolution and the linear motion per revolution for each device. These numbers can be found in the series specifications for each product on the Zaber website.
 
-'''Port:''' Depends on connection
+=== Stage Hardware Configuration ===
 
-'''AnswerTimeout:''' 500.00
+The following initialization properties are required:
 
-'''BaudRate:''' 115200 (A-MCB2 default)
+*'''Axis Number:''' This value will be 1 unless the stage is connected to axis 2 of a dual-axis controller, in which case it will be 2.
 
-'''DelayBetweenCharsMs:''' 0.00
+*'''Controller Device Number:''' Use the value set in Zaber Console.
 
-'''Parity:''' None
+*'''Linear Motion Per Motor Rev:''' Use the value from the stage's specifications.
 
-'''StopBits:''' 1
+*'''Motor Steps Per Rev:''' Use the value from the stage's specifications.
 
-'''Verbose:''' 1
+*'''Port:''' Select the port the device is connected to.
 
-==Calibration and the Coordinate System==
+The port properties should be set as follows:
 
-The Zaber device adapter implements an absolute coordinate system. As long as the stage has been calibrated and the limits have not been adjusted, any XY position will always correspond to the same physical location.
+*'''AnswerTimeout:''' 500.00
 
-The stage needs to be calibrated every time it is powered on. It does not store its location when the power is shut off. Calibration can be performed by clicking the ''Set Origin'' button within the ''Stage Position List'' dialogue box. Before calibrating, make sure that the limit sensors have been set appropriately (see [http://www.zaber.com/wiki/Manuals/ASR ASR Manual]) and all objectives are clear of the stage.
+*'''BaudRate:''' 115200 (unless it has been changed from default)
+
+*'''DelayBetweenCharsMs:''' 0.00
+
+*'''Parity:''' None
+
+*'''StopBits:''' 1
+
+*'''Verbose:''' 1
+
+[[Image:Zaber_stage_config.png|thumb|left|300px|Sample Stage configuration]]<br clear="all"/>
+
+=== XYStage Hardware Configuration ===
+
+The following initialization properties are required:
+
+*'''Axis Number (X Axis):''' This refers to the controller axis number connected to your X axis.
+
+*'''Axis Number (Y Axis):''' This refers to the controller axis number connected to your Y axis.
+
+*'''Controller Device Number:''' Use the value set in Zaber Console.
+
+*'''Linear Motion Per Motor Rev (X Axis):''' Use the value from the stage's specifications.
+
+*'''Linear Motion Per Motor Rev (Y Axis):''' Use the value from the stage's specifications.
+
+*'''Motor Steps Per Rev (X Axis):''' Use the value from the stage's specifications.
+
+*'''Motor Steps Per Rev (Y Axis):''' Use the value from the stage's specifications.
+
+*'''Port:''' Select the port the device is connected to.
+
+For the ASR, Linear Motion Per Rev and Motor Steps Per Rev will be the same for both axes.
+
+The port properties should be set as follows:
+
+*'''AnswerTimeout:''' 500.00
+
+*'''BaudRate:''' 115200 (unless it has been changed from default)
+
+*'''DelayBetweenCharsMs:''' 0.00
+
+*'''Parity:''' None
+
+*'''StopBits:''' 1
+
+*'''Verbose:''' 1
+
+[[Image:Zaber_xystage_config.png|thumb|left|300px|Sample XYStage configuration]]<br clear="all"/>
+
+=== XYStage Calibration ===
+
+The Zaber XYStage device adapter implements an absolute coordinate system. As long as the stage has been calibrated and the limits have not been adjusted, any XY position will always correspond to the same physical location.
+
+The stage needs to be calibrated every time it is powered on. It does not store its location when the power is shut off. Calibration can be performed by clicking the ''Set Origin'' button within the ''Tools > Stage Position List'' dialogue box. Before calibrating, make sure that the limit sensors have been set appropriately (see [http://www.zaber.com/wiki/Manuals/ASR ASR Manual]) and all objectives are clear of the stage.
+
+=== Adjustable Properties ===
+
+Speed and acceleration for each device or axis can be set in the ''Tools > Device/Property Browser'' dialogue box.
 
 ==Stage Control==
 
@@ -60,11 +119,11 @@ There are several ways to control the position of the stage:
 
 * Stage control plugin
 * Mouse moves stage (click and drag in Snap/Live Window)
-* Manual adjustment knobs on A-MCB2
+* Manual adjustment knobs on the controller
 
 ===Stage Control Plugin===
 
-This is pretty straightforward. Just enter the move distance desired for fine, medium and coarse moves.
+This is pretty straightforward. Just enter the move distance desired for fine, medium, and coarse moves.
 
 ===Mouse Moves Stage===
 
@@ -81,4 +140,4 @@ Before using this method, the pixel size must be calibrated. To do this:
 
 ===Manual Adjustment Knobs===
 
-There is a separate manual adjustment knob for each axis on the A-MCB2 controller. The knob marked CTRL 1 controls the lower (Y) axis while CTRL 2 controls the upper (X) axis. Pushing and holding the knobs for one second switches between velocity and jog mode. Pushing the knob while the stage is moving stops the stage.
+Zaber devices can be controlled using their manual adjustment knobs. Pushing and holding the knob for one second switches between velocity and jog mode. Pushing the knob while the stage is moving stops the stage.
