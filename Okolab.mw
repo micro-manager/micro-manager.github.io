@@ -29,6 +29,11 @@
 To use this adapter, you must first install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%20Server.zip here].
 The installation is straightforward, default settings can be used.
 
+Then, connect the port named USB on the rear of the Unit to the PC USB port, using a standard mini-USB cable. Please consider that you may need an USB Male-to Male cable, depending on the hardware revision of your control unit.
+
+{{Important|If you have more than one controller, please make sure to plug the USB cable to the unit which is directly connected to the Oko-Touch.
+When two (or more) units are connected in a stack, one becomes the master and the other is acting as a "slave device", so only the controller connected to the Oko-Touch will answer to USB commands}}
+
 == Configuration ==
 
 # Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
