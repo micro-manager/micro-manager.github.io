@@ -42,9 +42,7 @@ To get help with <code>./configure</code> options, type
 
   ./configure --help
 
-If you use Java 6 (from Apple), use the following for the ./configure line:
-
-If you use Java 6 (from Apple), use the following for the ./configure line:
+If you use Java 6 ("Java for OS X" from Apple), use the following for the ./configure line:
 
 <div style="width:625px"><pre>./configure --enable-imagej-plugin=/path/to/ImageJ \
 JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home \
