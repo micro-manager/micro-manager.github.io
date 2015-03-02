@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Device adapter for Zaber Technologies linear and XY stages</td></tr>
-<tr><td>'''Author:'''</td><td>Athabasca Witschi, Zaber Technologies</td></tr>
+<tr><td>'''Author:'''</td><td>Athabasca Witschi, Zaber Technologies (contact@zaber.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage, XYStage</td></tr>
