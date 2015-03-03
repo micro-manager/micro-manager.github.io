@@ -1,55 +1,59 @@
-TODO list for 2.0. These are considered release blockers, unlike the items in the [[Version_2.0_Wishlist]].
+TODO list for 2.0.
 
-==== Data API ====
+==== Profile ====
 
-* Ensure that 1.4 blatantly and quickly fails to load 2.0 data files
-** Add a metadata version that we check for so we can cleanly fail when loading future versions
-* Note: we are explicitly ignoring camera-provided metadata for the moment (will require modifications to the Core to tag these metadatas)
+* Store profile name in SummaryMetadata (alongside system account name)
+* Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)
+* Fix synchronization
 
-==== Profiles ====
+==== Images ====
 
-* Having to register again is wrong, probably. In general all settings that were in Preferences are "lost".
-** This depends on if the first official 2.0 release is from UCSF vs. Open Imaging.
-** More general problem with importing Preferences: how do we access the old Preferences node? org.micromanager.MMStudio no longer exists. See also [http://stackoverflow.com/questions/30464014/load-preferences-for-nonexistent-class this StackOverflow thread]
-* Auto-select previous profile at startup prompt? Entire profile system is maybe unclear.
-* Add inheritance for user profiles from a central authority (c.f. remote login systems -- talk with Mark)
+* Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata
+* Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
+
+==== Documentation ====
+
+org.micromanager.dataProcessor (missing parameters)
+org.micromanager.MMBasePlugin (missing description of returned variables, missing header)
+org.micromanager.MMLisetnerInterface (missing parameter descriptions)
+org.micromanager.MultistagePosition (missing parameter descriptions)
+org.micromanager.PropertyMap (missing parameter descriptions and description of returned variables, also should have an example of the builder concept in the header)
+org.micromanager.data.Coords (should have an example of the builder concept in the header)
+org.micromanager.data.DataManager (missing variable and return descriptions, superfluous imports, missing header)
+org.micromanager.data.Datastore (missing header)
+org.micromanager.data.DatastoreLockedEvent (missing header)
+org.micromanager.data.DatastoreLockedException (missing header)
+org.micromanager.data.Image (missing header, missing variable and return descriptions, unused import)
+org.micromanager.data.Metadata (missing header, missing variable and return descriptions, formatting of Javadoc)
+org.micromanager.data.NewImageEvent (missing header)
+org.micromanager.data.NewSummaryMetadataEvent (missing header)
+org.micromanager.data.Storage (missing header, unused import, missing return and variable descriptions)
+org.micromanager.data.SummaryMetadata (missing header, missing javadoc to builder)
+
+org.micromanager.display.DisplayManager (missing header, missing return and variable description)
+org.micromanager.display.DisplaySettings (missing header, missing return and variable description, unused import)
+org.micromanager.display.DisplayWindow (missing header, missing return and variable description)
+org.micromanager.display.NewImagePlusEvent (missing header, missing Javadoc)
+org.micromanager.display.NewDisplaySettingsEvent (missing header, missing Javadoc)
+org.micromanager.disply.OverlayPanel(missing header, missing parameter description)
+org.micromanager.display.RequestToCloseEvent (missing header, missing Javadoc)
+org.micromanager.display.RequestToDrawEvent (missing header, missing Javadoc)
+
+==== ScriptInterface ====
+
+* Split into 2.0 and "compat" layers
+* Rename "display()" -> "displays()"
+* Add less-terse aliases for common functions (e.g. "getDisplayManager()" as alias for "displays()")
+
+==== General API ====
+
+* Expose classes/interfaces in the API:
+** MMFrame and MMDialog
+** MMScriptException
+** Various utilities (NumberUtils, JavaUtils, others?)
+*** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
 
 ==== Viewer window ====
 
-* Image dimensions etc. move from main window to image window?
-* In fullscreen mode would be nice if we could shove the image over to make room for the inspector.
-* Multicam config file, 10ms exposure, start program, click "Live" in main frame (with no pre-existing image window) -> tons of error spam
-** Error message: "Error: this application, or a library it uses, has passed an invalid numeric value (NaN, or not-a-number) to CoreGraphics API. This is a serious error and contributes to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update."
-
-==== Miscellaneous ====
-
-* Scan through entire codebase for TODO tags and fix them if appropriate
-* Autofocus API needs some attention (remove use of PropertyItem and MMException?)
-* Merge against latest SVN
-** NB that due to line ending changes, conflicts in multipage TIFF reader/writer couldn't be detected. Other files (MMStudio, ScriptInterface, MMAcquisition, ChannelControlPanel, DisplayWindow, MetadataPanel, FileMenu,) got "deleted" (improperly moved, I guess) and thus similarly couldn't detect changes.
-** ASIdiSPIM and Magellan plugins are of course hopelessly nonfunctional.
-* Script panel is hard to read in night mode.
-* Wiki page for Netbeans setup needs to take into account Maven directory structure ("resources" and "scripts" directories need to be added to the "libraries" in project properties)
-
-==== Testing ====
-* Be sure to test non-square images from time to time
-* Leave a Live display open for a few hours and see if the display "breaks".
-* Check for memory leaks
-* Try running acquisitions on 32-bit systems (in particular be aware of memory constraints e.g. with direct byte buffers)
-* Test on Windows
-* Test on older Macs and on displays with varying pixel densities
-* Test high-speed acquisitions
-
-==== Plugins ====
-* Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
-
-==== Files ====
-* Ensure loading of 1.4 files works properly, with fallbacks for properties that aren't available but should be in 2.0 (e.g. display settings)
-* Test importing using BioFormats importer in FIJI.
-
-==== Inspector ====
-* Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
-** So make autostretch be a per-channel property, and modify ChannelControlPanel to only use the linked min/max when autostretch is not set. Requires adding an autostretch toggle button to each channel.
-* Option for centered text for scalebar (or different alignments in general)
-* Option to change size of timestamp (incl. font size)
-* Inspector window moves when size changes (want to keep top-left corner consistent)
+* Move zoom buttons to primary display (out of Settings tab)
+* Move histograms below image display? Make visible by default?
