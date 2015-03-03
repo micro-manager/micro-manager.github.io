@@ -2,7 +2,7 @@ __NOTOC__
 <table cellspacing=15><tr><td>
 [[Image:Logo.png]]</td>
 <td>
-'''Micro-Manager is a software package for control of automated microscopes. Together with the image processing application [http://rsb.info.nih.gov/ij/ ImageJ], Micro-Manager provides a comprehensive, freely available, imaging solution.'''
+'''μManager is a software package for control of automated microscopes. Together with the image processing application [http://rsb.info.nih.gov/ij/ ImageJ], μManager provides a comprehensive, freely available, imaging solution.'''
 </td>
 </tr>
 </table> 
@@ -10,7 +10,7 @@ __NOTOC__
 <table cellspacing=15><tr>
 <td>[[Image:MM_screenshot.png| Micro-Manager Screen Shot]]</td>
 <td>
-'''Micro-Manager has a simple and clean user interface, through which it lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
+'''μManager has a simple and clean user interface, through which it lets you execute common microscope image acquisition strategies such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof. μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals (stages, filter wheels, shutters, etc.) used in microscope imaging (check the [[Device_Support|list of supported hardware]]).'''
 </td></tr></table>
 
 === [[Why_Micro-Manager%3F | ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?]] ===
@@ -23,6 +23,6 @@ With the help of users world-wide Micro-Manager has been developed into a profes
 Whether you can use Micro-Manager right away or not depends on whether your particular hardware is supported. If not, contact us and express your desire. [http://valelab.ucsf.edu/~MM/MMwiki/index.php/Device_Support Check the current hardware list]
 
 === [[Micro-Manager Programming Guide | EXTENDING μMANAGER]] ===
-Even if you are not interested in writing software code for your microscope, the open software architecture of Micro-Manager will benefit you. For instance, the Open Device Interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be executed within the GUI. Lastly, the Micro-Manager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager Microscope device control.
+Even if you are not interested in writing software code for your microscope, the open software architecture of μManager will benefit you. For instance, the Open Device Interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be executed within the GUI. Lastly, the μManager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager Microscope device control.
 
 {{Main Page Sidebar}}
