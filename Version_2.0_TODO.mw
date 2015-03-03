@@ -1,0 +1,59 @@
+TODO list for 2.0.
+
+==== Profile ====
+
+* Store profile name in SummaryMetadata (alongside system account name)
+* Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)
+* Fix synchronization
+
+==== Images ====
+
+* Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata
+* Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
+
+==== Documentation ====
+
+org.micromanager.dataProcessor (missing parameters)
+org.micromanager.MMBasePlugin (missing description of returned variables, missing header)
+org.micromanager.MMLisetnerInterface (missing parameter descriptions)
+org.micromanager.MultistagePosition (missing parameter descriptions)
+org.micromanager.PropertyMap (missing parameter descriptions and description of returned variables, also should have an example of the builder concept in the header)
+org.micromanager.data.Coords (should have an example of the builder concept in the header)
+org.micromanager.data.DataManager (missing variable and return descriptions, superfluous imports, missing header)
+org.micromanager.data.Datastore (missing header)
+org.micromanager.data.DatastoreLockedEvent (missing header)
+org.micromanager.data.DatastoreLockedException (missing header)
+org.micromanager.data.Image (missing header, missing variable and return descriptions, unused import)
+org.micromanager.data.Metadata (missing header, missing variable and return descriptions, formatting of Javadoc)
+org.micromanager.data.NewImageEvent (missing header)
+org.micromanager.data.NewSummaryMetadataEvent (missing header)
+org.micromanager.data.Storage (missing header, unused import, missing return and variable descriptions)
+org.micromanager.data.SummaryMetadata (missing header, missing javadoc to builder)
+
+org.micromanager.display.DisplayManager (missing header, missing return and variable description)
+org.micromanager.display.DisplaySettings (missing header, missing return and variable description, unused import)
+org.micromanager.display.DisplayWindow (missing header, missing return and variable description)
+org.micromanager.display.NewImagePlusEvent (missing header, missing Javadoc)
+org.micromanager.display.NewDisplaySettingsEvent (missing header, missing Javadoc)
+org.micromanager.disply.OverlayPanel(missing header, missing parameter description)
+org.micromanager.display.RequestToCloseEvent (missing header, missing Javadoc)
+org.micromanager.display.RequestToDrawEvent (missing header, missing Javadoc)
+
+==== ScriptInterface ====
+
+* Split into 2.0 and "compat" layers
+* Rename "display()" -> "displays()"
+* Add less-terse aliases for common functions (e.g. "getDisplayManager()" as alias for "displays()")
+
+==== General API ====
+
+* Expose classes/interfaces in the API:
+** MMFrame and MMDialog
+** MMScriptException
+** Various utilities (NumberUtils, JavaUtils, others?)
+*** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
+
+==== Viewer window ====
+
+* Move zoom buttons to primary display (out of Settings tab)
+* Move histograms below image display? Make visible by default?
