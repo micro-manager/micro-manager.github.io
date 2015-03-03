@@ -1,0 +1,27 @@
+This page is a repository of example Beanshell scripts using the [https://micro-manager.org/wiki/Version_2.0_API|2.0 API]
+
+=== Manual acquisition with display ===
+
+ import org.micromanager.data.Coords;
+ import org.micromanager.data.Image;
+ import org.micromanager.data.Datastore;
+ import org.micromanager.display.DisplayWindow;
+
+ import mmcorej.TaggedImage;
+
+ Datastore store = mm.data().createDatastore();
+ DisplayWindow display = mm.display().createDisplay(store);
+
+ mm.getCore().snapImage();
+ TaggedImage tmp = mm.getCore().getTaggedImage();
+ Image image1 = mm.data().convertTaggedImage(tmp);
+ image1 = image1.copyAtCoords(image1.getCoords().copy().channel(0).build());
+
+ mm.getCore().snapImage();
+ tmp = mm.getCore().getTaggedImage();
+ Image image2 = mm.data().convertTaggedImage(tmp);
+ image2 = image2.copyAtCoords(image1.getCoords().copy().channel(1).build());
+
+ store.putImage(image1);
+ store.putImage(image2);
+ store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);
