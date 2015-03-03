@@ -43,8 +43,8 @@ TODO list for 2.0.
 ==== ScriptInterface ====
 
 * Split into 2.0 and "compat" layers
-* Rename "display()" -> "displays()"
-* Add less-terse aliases for common functions (e.g. "getDisplayManager()" as alias for "displays()")
+* <s>Rename "display()" -> "displays()"</s>
+* <s>Add less-terse aliases for common functions (e.g. "getDisplayManager()" as alias for "displays()")</s>
 
 ==== General API ====
 
