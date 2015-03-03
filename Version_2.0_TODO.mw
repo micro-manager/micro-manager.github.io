@@ -12,6 +12,8 @@ TODO list for 2.0.
 * <s>Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)</s>
 * Fix synchronization
 * Add method to export user+inherited profile file
+* Rename save-to-disk to export
+* Implement automated sync on a timer
 
 ==== Images ====
 
