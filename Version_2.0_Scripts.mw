@@ -11,7 +11,7 @@ This script creates a Datastore, adds a DisplayWindow to it, manually snaps a fe
 
  import mmcorej.TaggedImage;
 
- Datastore store = mm.data().createDatastore();
+ Datastore store = mm.data().createRAMDatastore();
  DisplayWindow display = mm.display().createDisplay(store);
 
  mm.getCore().snapImage();
