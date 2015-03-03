@@ -67,3 +67,4 @@ TODO list for 2.0.
 
 * Delete obsolete scripts
 * Update useful existing scripts to new API
+* Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
