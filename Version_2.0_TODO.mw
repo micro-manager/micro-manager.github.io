@@ -1,8 +1,9 @@
 TODO list for 2.0.
 
-==== Datastores ====
+==== Data API ====
 
 * Rename "lock" -> "freeze" or "seal"
+* Make it clear that "copy()" methods are shallow copies
 
 ==== Profile ====
 
