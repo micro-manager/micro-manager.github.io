@@ -57,3 +57,8 @@ TODO list for 2.0.
 
 * Move zoom buttons to primary display (out of Settings tab)
 * Move histograms below image display? Make visible by default?
+
+==== Miscellaneous ====
+
+* Delete obsolete scripts
+* Update useful existing scripts to new API
