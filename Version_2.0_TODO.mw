@@ -11,6 +11,7 @@ TODO list for 2.0.
 ** Field is available now, albeit not set anywhere (much like many other fields)
 * <s>Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)</s>
 * Fix synchronization
+* Add method to export user+inherited profile file
 
 ==== Images ====
 
