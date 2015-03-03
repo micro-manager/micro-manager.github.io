@@ -9,7 +9,7 @@ TODO list for 2.0.
 
 ==== Images ====
 
-* Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata
+* <s>Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata</s>
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 
 ==== Documentation ====
