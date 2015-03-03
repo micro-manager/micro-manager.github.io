@@ -1,5 +1,9 @@
 TODO list for 2.0.
 
+==== Datastores ====
+
+* Rename "lock" -> "freeze" or "seal"
+
 ==== Profile ====
 
 * Store profile name in SummaryMetadata (alongside system account name)
