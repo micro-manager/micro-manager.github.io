@@ -3,7 +3,7 @@ TODO list for 2.0.
 ==== Profile ====
 
 * Store profile name in SummaryMetadata (alongside system account name)
-* Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)
+* <s>Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)</s>
 * Fix synchronization
 
 ==== Images ====
