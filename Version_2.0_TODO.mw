@@ -23,9 +23,9 @@ TODO list for 2.0.
 
 ==== Documentation ====
 
-* org.micromanager.dataProcessor (missing parameters)
-* org.micromanager.MMBasePlugin (missing description of returned variables, missing header)
-* org.micromanager.MMLisetnerInterface (missing parameter descriptions)
+* <s>org.micromanager.dataProcessor (missing parameters)</s>
+* <s>org.micromanager.MMBasePlugin (missing description of returned variables, missing header)</s>
+* <s>org.micromanager.MMListenerInterface (missing parameter descriptions)</s>
 * org.micromanager.MultistagePosition (missing parameter descriptions)
 * org.micromanager.PropertyMap (missing parameter descriptions and description of returned variables, also should have an example of the builder concept in the header)
 * org.micromanager.data.Coords (should have an example of the builder concept in the header)
