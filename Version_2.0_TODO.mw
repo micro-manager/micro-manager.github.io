@@ -62,6 +62,7 @@ TODO list for 2.0.
 ** MMScriptException
 ** Various utilities (NumberUtils, JavaUtils, others?)
 *** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
+* Write up high-level documentation of all events and what buses they get published on (and what API functions subscribe you to those events).
 
 ==== Viewer window ====
 
