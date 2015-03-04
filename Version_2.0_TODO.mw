@@ -2,7 +2,7 @@ TODO list for 2.0.
 
 ==== Data API ====
 
-* Rename "lock" -> "freeze" or "seal"
+* <s>Rename "lock" -> "freeze" or "seal"</s>
 * Make it clear that "copy()" methods are shallow copies
 * (unverified/possibly already fixed) DataManager.track(Datastore) does not work as expected.  When called on a store with a single display, it closes the store and display without user intervention.
 * Implement data processing pipeline.
