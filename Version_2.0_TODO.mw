@@ -2,8 +2,6 @@ TODO list for 2.0.
 
 ==== Data API ====
 
-* <s>Rename "lock" -> "freeze" or "seal"</s>
-* Make it clear that "copy()" methods are shallow copies
 * (unverified/possibly already fixed) DataManager.track(Datastore) does not work as expected.  When called on a store with a single display, it closes the store and display without user intervention.
 * Implement data processing pipeline.
 
@@ -11,7 +9,6 @@ TODO list for 2.0.
 
 * Store profile name in SummaryMetadata (alongside system account name)
 ** Field is available now, albeit not set anywhere (much like many other fields)
-* <s>Add ability to save/load Serializables (c.f. ProjectorControlForm.saveMapping)</s>
 * Fix synchronization
 * Add method to export user+inherited profile file
 * Rename save-to-disk to export
@@ -19,7 +16,6 @@ TODO list for 2.0.
 
 ==== Images and windows ====
 
-* <s>Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata</s>
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 * Add ability to set title of DisplayWindows (or at least a custom string thereof)
 * Channel colors are always overridden in favor of defaults
@@ -31,9 +27,6 @@ TODO list for 2.0.
 
 ==== Documentation ====
 
-* <s>org.micromanager.dataProcessor (missing parameters)</s>
-* <s>org.micromanager.MMBasePlugin (missing description of returned variables, missing header)</s>
-* <s>org.micromanager.MMListenerInterface (missing parameter descriptions)</s>
 * org.micromanager.MultistagePosition (missing parameter descriptions)
 * org.micromanager.PropertyMap (missing parameter descriptions and description of returned variables, also should have an example of the builder concept in the header)
 * org.micromanager.data.Coords (should have an example of the builder concept in the header)
@@ -60,8 +53,6 @@ TODO list for 2.0.
 ==== ScriptInterface ====
 
 * Split into 2.0 and "compat" layers
-* <s>Rename "display()" -> "displays()"</s>
-* <s>Add less-terse aliases for common functions (e.g. "getDisplayManager()" as alias for "displays()")</s>
 
 ==== General API ====
 
@@ -88,6 +79,5 @@ TODO list for 2.0.
 
 ==== Miscellaneous ====
 
-* <s>Delete obsolete scripts</s>
 * Update useful existing scripts to new API
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
