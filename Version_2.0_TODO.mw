@@ -79,6 +79,10 @@ TODO list for 2.0.
 
 * Use a better serialization format for PropertyMaps (don't convert everything to strings with custom prefix tags to indicate type)
 
+==== Plugins ====
+
+* Image scaling in SplitView plugin is broken (images appear to contain NaNs?)
+
 ==== Miscellaneous ====
 
 * <s>Delete obsolete scripts</s>
