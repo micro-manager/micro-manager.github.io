@@ -75,6 +75,6 @@ TODO list for 2.0.
 
 ==== Miscellaneous ====
 
-* Delete obsolete scripts
+* <s>Delete obsolete scripts</s>
 * Update useful existing scripts to new API
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
