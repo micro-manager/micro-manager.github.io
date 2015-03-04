@@ -16,10 +16,11 @@ TODO list for 2.0.
 * Rename save-to-disk to export
 * Implement automated sync on a timer
 
-==== Images ====
+==== Images and windows ====
 
 * <s>Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata</s>
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
+* Add ability to set title of DisplayWindows (or at least a custom string thereof)
 
 ==== Documentation ====
 
