@@ -25,6 +25,7 @@ TODO list for 2.0.
 * Channel colors are always overridden in favor of defaults
 * Be sure to test non-square images from time to time
 * Display image parameters (width, height, pixel type, number of components, etc.) in metadata panel even though they aren't nominally part of the metadata
+* Don't try to draw DisplayWindow when display settings are set if window contents don't yet exist.
 
 ==== Documentation ====
 
