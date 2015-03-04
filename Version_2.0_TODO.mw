@@ -22,6 +22,8 @@ TODO list for 2.0.
 * <s>Add ability to convert TaggedImage at specified Coords instead of loading from JSONObject metadata</s>
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 * Add ability to set title of DisplayWindows (or at least a custom string thereof)
+* Channel colors are always overridden in favor of defaults
+* Be sure to test non-square images from time to time
 
 ==== Documentation ====
 
