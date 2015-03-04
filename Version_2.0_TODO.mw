@@ -9,8 +9,6 @@ TODO list for 2.0.
 
 * Store profile name in SummaryMetadata (alongside system account name)
 ** Field is available now, albeit not set anywhere (much like many other fields)
-* Fix synchronization
-* Add method to export user+inherited profile file
 * Rename save-to-disk to export
 * Implement automated sync on a timer
 
