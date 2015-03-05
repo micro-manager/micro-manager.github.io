@@ -2,7 +2,6 @@ TODO list for 2.0.
 
 ==== Data API ====
 
-* <s>(unverified/possibly already fixed) DataManager.track(Datastore) does not work as expected.  When called on a store with a single display, it closes the store and display without user intervention.</s>
 * Implement data processing pipeline.
 
 ==== Profile ====
