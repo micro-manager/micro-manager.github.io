@@ -60,6 +60,7 @@ TODO list for 2.0.
 * Move zoom buttons to primary display (out of Settings tab)
 * Move histograms below image display? Make visible by default?
 * NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
+* Add acquisition abort/pause buttons
 
 ==== PropertyMap ====
 
