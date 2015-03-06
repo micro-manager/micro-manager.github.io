@@ -15,7 +15,6 @@ TODO list for 2.0.
 * Add ability to set title of DisplayWindows (or at least a custom string thereof)
 * Channel colors are always overridden in favor of defaults
 * Be sure to test non-square images from time to time
-* Display image parameters (width, height, pixel type, number of components, etc.) in metadata panel even though they aren't nominally part of the metadata
 
 ==== Documentation ====
 
