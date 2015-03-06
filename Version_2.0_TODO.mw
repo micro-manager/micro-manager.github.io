@@ -8,7 +8,6 @@ TODO list for 2.0.
 
 * Store profile name in SummaryMetadata (alongside system account name)
 ** Field is available now, albeit not set anywhere (much like many other fields)
-* Rename save-to-disk to export
 
 ==== Images and windows ====
 
