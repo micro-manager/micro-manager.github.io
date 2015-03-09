@@ -62,10 +62,6 @@ TODO list for 2.0.
 * Move histograms below image display? Make visible by default?
 * NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
 
-==== Plugins ====
-
-* Image scaling in SplitView plugin is broken (images appear to contain NaNs?)
-
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
