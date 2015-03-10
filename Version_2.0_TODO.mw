@@ -14,6 +14,7 @@ TODO list for 2.0.
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 * Channel colors are always overridden in favor of defaults
+* Creating the Snap/Live view by starting live mode, when using multiple cameras, can create an ImageJ window in addition to the normal window (but not when run inside of NetBeans, grr)
 
 ==== Documentation ====
 
