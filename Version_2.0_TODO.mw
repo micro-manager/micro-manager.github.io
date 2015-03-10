@@ -64,3 +64,8 @@ TODO list for 2.0.
 
 * Update useful existing scripts to new API
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
+
+
+==== Testing ====
+* Be sure to test non-square images from time to time
+* Leave a Live display open for a few hours and see if the display "breaks".
