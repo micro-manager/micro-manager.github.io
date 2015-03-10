@@ -3,6 +3,7 @@ TODO list for 2.0.
 ==== Data API ====
 
 * Implement data processing pipeline.
+* Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files.
 
 ==== Profile ====
 
