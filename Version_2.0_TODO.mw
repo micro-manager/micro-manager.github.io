@@ -3,7 +3,7 @@ TODO list for 2.0.
 ==== Data API ====
 
 * Implement data processing pipeline.
-* Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files.
+* Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
 
 ==== Profile ====
 
