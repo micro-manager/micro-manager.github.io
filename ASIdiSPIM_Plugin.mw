@@ -30,7 +30,9 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 
 == Please contact us! ==
 
-The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager (before submitting bug reports, please check a recent nightly build to make sure the bug hasn't been already fixed).
+The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager.
+
+Before submitting bug reports, please check a recent nightly build of Micro-Manager to make sure the bug hasn't been already fixed. Also, sometimes fixes are made to firmware; you can find the latest diSPIM firmware at http://www.asiimaging.com/downloads/manuals/latest%20diSPIM%20firmware.zip (if needed contact ASI for instructions to update firmware).
 
 {{Listserv_Search|ASIdiSPIM}}
 
