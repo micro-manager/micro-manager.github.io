@@ -71,3 +71,4 @@ TODO list for 2.0.
 ==== Testing ====
 * Be sure to test non-square images from time to time
 * Leave a Live display open for a few hours and see if the display "breaks".
+* Check for memory leaks
