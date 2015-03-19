@@ -23,7 +23,7 @@ Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device adapters) ar
 
 {{Note|The '''order if installation is important'''. In particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed first. If you are in that situation, the only way out that I have found is to go to Control Panel > "Uninstall a program", uninstall everything with "Microsoft Visual ... 2010" in its name (Redistributable, Runtime, Express, Compilers, Service Pack, Tools for Office Runtime), and start over.}}
 
-{{Note|It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including some versions of Micro-Manager) }}
+{{Note|It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). }}
 
 === Java Development Kit (JDK) for Java Standard Edition (Java SE) ===
 
