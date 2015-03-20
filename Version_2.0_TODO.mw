@@ -15,7 +15,6 @@ TODO list for 2.0.
 ==== Images and windows ====
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
-* Channel colors are always overridden in favor of defaults
 
 ==== Documentation ====
 
