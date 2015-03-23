@@ -22,7 +22,42 @@ If you have an Image object and you want to create a new display window and disp
 
 This will create a new Datastore and DisplayWindow, add the image to the Datastore, and return it. You can then add new images to the Datastore (using <code>Datastore.putImage(image)</code>) and they will also be displayed in the window.
 
-=== Manually snap and display images? ===
+=== Manually take and display images? ===
+Functionally what we're talking about here is running a custom acquisition. As above, you can snap images using the SnapLiveManager, and display them using a DisplayWindow. By changing the coordinates of the images, you can create a timeseries, Z-stack, multi-channel, et cetera dataset.
+
+ import java.util.List;
+ import org.micromanager.data.Coords;
+ import org.micromanager.data.Datastore;
+ import org.micromanager.data.Image;
+
+ // A RAM datastore stores all of its images on RAM, not on the hard drive.
+ // There are other options as described in the DataManager documentation.
+ Datastore store = mm.data().createRAMDatastore();
+ // Create a display for the datastore. This won't actually show up until there
+ // are images to see, though.
+ mm.displays().createDisplay(store);
+
+ // Snap an image. Don't display it in the snap/live display.
+ List<Image> images = mm.live().snap(false);
+ // Let's assume for now that we aren't using a multi-camera setup, so the
+ // above list only has one element.
+ Image image = images.get(0); // Set the time and channel indices for this image. Coordinate axes that you
+ // don't care about can be left alone.
+ Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+ builder = builder.time(0).channel(0);
+ image = image.copyAtCoords(builder.build());
+ store.putImage(image);
+
+ // Snap another image.
+ image = mm.live().snap(false).get(0);
+ // Put it as the next channel.
+ builder = builder.channel(1);
+ image = image.copyAtCoords(builder.build());
+ store.putImage(image);
+
+ // Save the datastore.
+ String savePath = "path to where you want to save data";
+ store.save(Datastore.SaveMode.MULTIPAGE_TIFF, savePath);
 
 === Control live mode? ===
 
