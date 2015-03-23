@@ -1,0 +1,13 @@
+This page covers how to accomplish many common tasks with the Micro-Manager 2.0 API. It is intended to be a migration assistant for people familiar with the 1.4 API, and a getting-started guide for those who have never written Micro-Manager control code before.
+
+In the below examples, reference will be made to an <code>mm</code> object. This is the Studio interface for Micro-Manager's java layer. It's available as "mm" by default in the Scripting Panel of Micro-Manager, hence the name.
+
+=== Control the core ===
+
+The MMCore is the same as it's always been, so methods for setting hardware properties, snapping images, manually running sequences, etc. are unchanged. You can access the core via
+
+ mm.core()
+
+or
+
+ mm.getCMMCore()
