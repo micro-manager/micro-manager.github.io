@@ -2,15 +2,25 @@ This page covers how to accomplish many common tasks with the Micro-Manager 2.0 
 
 In the below examples, reference will be made to an <code>mm</code> object. This is the Studio interface for Micro-Manager's java layer. It's available as "mm" by default in the Scripting Panel of Micro-Manager, hence the name.
 
+This page makes use of many objects that are more fully described in the [https://micro-manager.org/wiki/Version_2.0_API main 2.0 API documentation].
+
 How do I...
 
 === Snap an image? ===
 
-If you just want to snap an image and have it pop up in the viewer, then you want to access the <code>SnapLiveManager</code> object in the Java layer:
+If you just want to snap an image and have it pop up in the viewer, then you want to access the <code>SnapLiveManager</code> object:
 
  List<Image> images = mm.live().snap(true);
 
 The boolean value passed in will tell the SnapLiveManager that you want to see the images that were snapped; the returned List of Image objects is the images acquired. There will only be multiple images if you're using a multi-camera setup.
+
+=== Display an image? ===
+
+If you have an Image object and you want to create a new display window and display it, you can use the <code>DisplayManager</code> object:
+
+ Datastore store = mm.displays().show(image);
+
+This will create a new Datastore and DisplayWindow, add the image to the Datastore, and return it. You can then add new images to the Datastore (using <code>Datastore.putImage(image)</code>) and they will also be displayed in the window.
 
 === Control live mode? ===
 
