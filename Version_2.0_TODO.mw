@@ -7,8 +7,6 @@ TODO list for 2.0.
 
 ==== Profile ====
 
-* Store profile name in SummaryMetadata (alongside system account name)
-** Field is available now, albeit not set anywhere (much like many other fields)
 * Remove duplicate config file entries in intro dialog's select-config-file dropdown
 
 ==== Images and windows ====
