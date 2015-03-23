@@ -5,10 +5,6 @@ TODO list for 2.0.
 * Implement data processing pipeline.
 * Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
 
-==== Profile ====
-
-* Remove duplicate config file entries in intro dialog's select-config-file dropdown
-
 ==== Images and windows ====
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
