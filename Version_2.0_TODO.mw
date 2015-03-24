@@ -9,6 +9,9 @@ TODO list for 2.0.
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 
+==== Acquisitions ====
+* Nuke the name-key system from orbit
+
 ==== Documentation ====
 
 * org.micromanager.MultistagePosition (missing parameter descriptions)
