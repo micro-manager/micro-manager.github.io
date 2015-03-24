@@ -19,7 +19,9 @@ This adapter should work with any GigE Vision- and GenICam-compliant cameras.  T
 
 == Installation ==
 
-Download and install the [http://www.jai.com/en/support/jai_sdk_and_control_tool JAI SDK and Control Tool].  Get the 32-bit version for 32-bit micro-manager and the 64-bit version for 64-bit micro-manager.  Verify that your camera will work with the adapter by opening your camera first in the JAI Control Tool.
+Download and install the [http://www.jai.com/en/support/jai_sdk_and_control_tool JAI SDK and Control Tool]. Get the 32-bit version for 32-bit micro-manager and the 64-bit version for 64-bit micro-manager.
+
+Verify that your camera will work with the adapter by opening your camera first in the JAI Control Tool. You may need to turn off auto exposure and auto gain in order to change the exposure and gain in Micro-Manager (otherwise those properties will appear as read-only).
 
 {{Note|Version mismatch between Micro-Manager and the JAI SDK can lead to subtle/intermittent/camera-dependent issues. If you are using MM 1.4.15 or earlier (or nightly build 20131002 or earlier), use JAI SDK 1.3.0; if you are using nightly build 20131003 or later, use JAI SDK 1.4.1.}}
 
