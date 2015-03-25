@@ -60,6 +60,14 @@ TODO list for 2.0.
 * Move histograms below image display? Make visible by default?
 * NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
 
+* Feedback on the display window redesign from Walter and Yuxiao:
+** No opinion on extra controls besides zoom buttons
+** Often open data back at their desks in Micro-Manager (not Fiji/ImageJ), or at home, so laptop-friendly setups are appreciated
+** Easier to compare multiple channels if they are vertically aligned, but not a huge deal because of the numbers
+** Would be nice to be able to customize the vertical scale of the histogram. Too big by default means that e.g. four-channel displays can't show all histograms simultaneously.
+** Important to be able to see all histograms simultaneously
+** Put divider box around each histogram panel to visually group things by channel
+
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
