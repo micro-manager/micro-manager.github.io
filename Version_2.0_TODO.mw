@@ -9,7 +9,6 @@ TODO list for 2.0.
 ==== Images and windows ====
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
-* Channel colors not remembered correctly? Per Nico: "This does not seem to work correctly for the MultiChannel camera.  Change a color for one or both of the channels, change binning, and snap an image again.  See the colors revert to what they were before."
 * On shutdown, attempt to close all windows; cancel shutdown if user cancels window close (see TODO in MMStudio.closeSequence())
 
 ==== Acquisitions ====
