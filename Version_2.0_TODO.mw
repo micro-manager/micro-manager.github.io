@@ -67,6 +67,7 @@ TODO list for 2.0.
 ** Would be nice to be able to customize the vertical scale of the histogram. Too big by default means that e.g. four-channel displays can't show all histograms simultaneously.
 ** Important to be able to see all histograms simultaneously
 ** Put divider box around each histogram panel to visually group things by channel
+** Speak to Marvin; he'll have lots of opinions
 
 ==== Miscellaneous ====
 
