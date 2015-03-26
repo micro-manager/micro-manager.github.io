@@ -4,7 +4,6 @@ TODO list for 2.0.
 
 * Implement data processing pipeline.
 * Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
-* Improve implementation of promptForDataToLoad() (specifically the file chooser logic)
 
 ==== Images and windows ====
 
