@@ -36,9 +36,6 @@ TODO list for 2.0.
 
 * Split up "compat" layer into sub-categories, and move those new sub-categories into new objects
 ** Stage control (+position list dialog)
-** Logging (needs to be made new object)
-** Acquisitions
-** General scripting (sleep, message, clearMessageWindow, more?)
 ** GUI (refreshGUI, snapSingleImage, more?)
 ** Hardware config
 ** Config groups
