@@ -62,6 +62,7 @@ TODO list for 2.0.
 * NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
 * When recreating Snap/Live window (e.g. due to changed binning), window state is not preserved (re: open tabs)
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
+* Link buttons aren't showing up
 
 * Feedback on the display window redesign from Walter and Yuxiao:
 ** No opinion on extra controls besides zoom buttons
@@ -71,6 +72,10 @@ TODO list for 2.0.
 ** Important to be able to see all histograms simultaneously
 ** Put divider box around each histogram panel to visually group things by channel
 ** Speak to Marvin; he'll have lots of opinions
+* Adam likes having wider windows rather than taller ones
+** Agrees histograms should be shown automatically
+** Definitely opens data "at home" in Micro-Manager after collecting it, not Fiji
+** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the right
 
 ==== Miscellaneous ====
 
