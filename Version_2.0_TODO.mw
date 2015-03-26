@@ -64,6 +64,7 @@ TODO list for 2.0.
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
 * Link buttons aren't showing up
 * Use an eye icon instead of checkmark for toggling channel display on/off
+* Window still sometimes "shakes"
 
 * Feedback on the display window redesign from Walter and Yuxiao:
 ** No opinion on extra controls besides zoom buttons
