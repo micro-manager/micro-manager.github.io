@@ -44,6 +44,7 @@ TODO list for 2.0.
 ** Hardware config
 ** Config groups
 ** ...
+* Add ability to run scripts to API
 
 ==== General API ====
 
