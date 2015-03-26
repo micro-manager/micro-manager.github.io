@@ -61,6 +61,7 @@ TODO list for 2.0.
 * Move histograms below image display? Make visible by default?
 * NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
 * When recreating Snap/Live window (e.g. due to changed binning), window state is not preserved (re: open tabs)
+* Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
 
 * Feedback on the display window redesign from Walter and Yuxiao:
 ** No opinion on extra controls besides zoom buttons
