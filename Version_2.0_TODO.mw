@@ -72,10 +72,10 @@ TODO list for 2.0.
 ** Important to be able to see all histograms simultaneously
 ** Put divider box around each histogram panel to visually group things by channel
 ** Speak to Marvin; he'll have lots of opinions
-* Adam likes having wider windows rather than taller ones
-** Agrees histograms should be shown automatically
-** Definitely opens data "at home" in Micro-Manager after collecting it, not Fiji
-** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the right
+* Adam likes having wider windows rather than taller ones, because displays are widescreen these days so vertical space is at a premium (doesn't want the window to be going off the bottom of the screen)
+** Agrees histograms should be shown automatically; would be fine with simply opening the Contrast tab automatically every time a new display window opens
+** Always uses Micro-Manager, not Fiji, when examining data after collection
+** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the side (and prefers right side over left side)
 
 ==== Miscellaneous ====
 
