@@ -78,6 +78,12 @@ TODO list for 2.0.
 
 * Ask Kurt to demo Elements?
 
+* Detached window for sidebar, have dropdown at top to select which DisplayWindow to associate with, with checkbox to always use top-level window
+
+* Show pixel info display in both pixels and microns?
+
+* Use 1-based indexing for displaying coordinate positions
+
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
