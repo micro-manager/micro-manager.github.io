@@ -76,6 +76,8 @@ TODO list for 2.0.
 ** Always uses Micro-Manager, not Fiji, when examining data after collection
 ** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the side (and prefers right side over left side)
 
+* Ask Kurt to demo Elements?
+
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
