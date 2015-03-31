@@ -98,3 +98,6 @@ TODO list for 2.0.
 
 ==== Plugins ====
 * Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
+
+==== Files ====
+* Ensure loading of 1.4 files works properly, with fallbacks for properties that aren't available but should be in 2.0 (e.g. display settings)
