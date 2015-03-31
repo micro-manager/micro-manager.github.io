@@ -89,6 +89,7 @@ TODO list for 2.0.
 * Update useful existing scripts to new API
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
 * Scan through entire codebase for TODO tags and fix them if appropriate
+* "Night" display makes text of disabled components invisible (both are 50% gray)
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
