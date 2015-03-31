@@ -97,4 +97,4 @@ TODO list for 2.0.
 * Check for memory leaks
 
 ==== Plugins ====
-* Still have to select overlay plugins from the Plugins menu before they become available in the overlays tab.
+* Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
