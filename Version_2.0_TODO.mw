@@ -105,3 +105,4 @@ TODO list for 2.0.
 
 ==== Inspector ====
 * Comments panel is currently busted; it constantly loops recording changes to the image comments once anything is written to them.
+* Make histograms panel eye icons easier to tell if they're on/off (different icon for on/off?)
