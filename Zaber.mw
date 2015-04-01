@@ -8,7 +8,7 @@
 <tr><td>'''Devices:'''</td><td>Stage, XYStage</td></tr>
 </table>
 
-The Zaber device adapter supports single and dual-axis A-series stages using the Zaber ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
+The Zaber device adapter supports single and dual-axis stages using the Zaber ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
 
 == Device Setup and Configuration ==
 
