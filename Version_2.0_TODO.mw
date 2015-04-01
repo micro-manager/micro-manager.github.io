@@ -101,3 +101,6 @@ TODO list for 2.0.
 
 ==== Files ====
 * Ensure loading of 1.4 files works properly, with fallbacks for properties that aren't available but should be in 2.0 (e.g. display settings)
+
+==== Inspector ====
+* Comments panel is currently busted; it constantly loops recording changes to the image comments once anything is written to them.
