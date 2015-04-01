@@ -83,7 +83,7 @@ TODO list for 2.0.
 * Show pixel info display in both pixels and microns?
 
 * Use 1-based indexing for displaying coordinate positions
-* DisplayWindow tearing seems worse.
+* DisplayWindow tearing (same as in 1.4 though, so maybe not a priority)
 
 ==== Miscellaneous ====
 
