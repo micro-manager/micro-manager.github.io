@@ -52,15 +52,9 @@ TODO list for 2.0.
 
 ==== Viewer window ====
 
-* Move zoom buttons to primary display (out of Settings tab)
-* Move histograms below image display? Make visible by default?
-* NewDisplayEvent is fired before there is a display (or at least, when this even is fired for a Snap/Live Window, gui_.getSnapLiveWin() returns null)
 * When recreating Snap/Live window (e.g. due to changed binning), window state is not preserved (re: open tabs)
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
-* Link buttons aren't showing up
-** Because NewLinkButton events are firing *after* NewDisplayEvents now instead of before, so DisplayGroupManager doesn't know about them.
-* Use an eye icon instead of checkmark for toggling channel display on/off
-* Window still sometimes "shakes"
+* Make a "closed eye" icon for channels that are currently disabled.
 * Have instant feedback when a new display window is created, even if there's no images to display yet. Possibly optional? Important for MDA display where there can be a lengthy delay before any images actually arrive.
 
 * Feedback on the display window redesign from Walter and Yuxiao:
@@ -77,8 +71,6 @@ TODO list for 2.0.
 ** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the side (and prefers right side over left side)
 
 * Ask Kurt to demo Elements?
-
-* Detached window for sidebar, have dropdown at top to select which DisplayWindow to associate with, with checkbox to always use top-level window
 
 * Show pixel info display in both pixels and microns?
 
