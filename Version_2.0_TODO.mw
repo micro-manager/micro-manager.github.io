@@ -88,6 +88,7 @@ TODO list for 2.0.
 * Be sure to test non-square images from time to time
 * Leave a Live display open for a few hours and see if the display "breaks".
 * Check for memory leaks
+* Try running acquisitions on 32-bit systems (in particular be aware of memory constraints)
 
 ==== Plugins ====
 * Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
