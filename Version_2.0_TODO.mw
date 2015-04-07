@@ -58,6 +58,7 @@ TODO list for 2.0.
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
 * Have instant feedback when a new display window is created, even if there's no images to display yet. Possibly optional? Important for MDA display where there can be a lengthy delay before any images actually arrive.
 * Add line profile to gear menu (make it specific to the current display, of course)
+* Link buttons: display menu by default? Continuous link with disparate datasets is desirable (per Sam Lord).
 
 * Feedback on the display window redesign from Walter and Yuxiao:
 ** No opinion on extra controls besides zoom buttons
