@@ -100,6 +100,8 @@ TODO list for 2.0.
 
 ==== Inspector ====
 * Comments panel is currently busted; it constantly loops recording changes to the image comments once anything is written to them.
-* Link buttons for histograms are missing due to change in implementation.
+* Link buttons for histograms are missing due to change in implementation. Replace with a gear icon?
 * MetadataPanel should show any property that has at any point in history (for this dataset) changed, not just changes from one image to the next
 * MetadataPanel goes nuts when acquisition is done and using scrollbars (flickers display of metadata on/off)
+* Restore logarithmic histogram mode.
+* Reduce size of hidden histograms?
