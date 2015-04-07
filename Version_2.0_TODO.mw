@@ -5,6 +5,7 @@ TODO list for 2.0.
 * Implement data processing pipeline.
 * Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
 * Allow saving custom axes
+* Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
 
 ==== Images and windows ====
 
