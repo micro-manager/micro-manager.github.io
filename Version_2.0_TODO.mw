@@ -77,6 +77,8 @@ TODO list for 2.0.
 
 * Use 1-based indexing for displaying coordinate positions
 
+* When duplicating displays, displayed axis order changes
+
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
