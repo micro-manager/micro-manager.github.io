@@ -53,9 +53,8 @@ TODO list for 2.0.
 
 ==== Viewer window ====
 
-* When recreating Snap/Live window (e.g. due to changed binning), window state is not preserved (re: open tabs)
+* ImageJ tools and the right-click Duplicate command don't work
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
-* Make a "closed eye" icon for channels that are currently disabled.
 * Have instant feedback when a new display window is created, even if there's no images to display yet. Possibly optional? Important for MDA display where there can be a lengthy delay before any images actually arrive.
 * Add line profile to gear menu (make it specific to the current display, of course)
 
@@ -77,7 +76,6 @@ TODO list for 2.0.
 * Show pixel info display in both pixels and microns?
 
 * Use 1-based indexing for displaying coordinate positions
-* DisplayWindow tearing (same as in 1.4 though, so maybe not a priority)
 
 ==== Miscellaneous ====
 
