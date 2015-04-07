@@ -17,7 +17,9 @@
 ----
 
 == Device Configuration ==
-Baudrate is 19200
+Baudrate is 19200.
+
+For the XCite 120LED, use the XCite120PC_Exacte adapter instead of this one.
 
 {{Listserv_Search|XLED1}}
 
