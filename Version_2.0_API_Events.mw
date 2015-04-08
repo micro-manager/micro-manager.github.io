@@ -6,11 +6,7 @@ These events are posted to the <code>EventManager</code>. You can subscribe to t
 
 * DatastoreClosingEvent: a Datastore was closed.
 * DisplayAboutToShowEvent: a DisplayWindow is just about to show its GUI, which happens once there's at least one image for it to display.
-* DisplayActivatedEvent: a DisplayWindow was made the current active window.
 * NewDisplayEvent: a new DisplayWindow was created. This is posted before that display's GUI becomes available.
-* NewOverlayEvent: a new OverlayPanel has been made available for use in the Overlays section of the Inspector window, as a side-effect of <code>DisplayManager.registerOverlay</code>
-* PipelineEvent: the processing pipeline has changed.
-* ProcessorEvent: a new DataProcessor has been made available for use in processing pipelines.
 
 In addition to the above, the various events made available in 1.4 are still present:
 
