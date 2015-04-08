@@ -1,0 +1,43 @@
+Things we'd like to do for 2.0 that aren't considered to be blockers.
+
+==== Data API ====
+
+* Implement data processing pipeline.
+
+==== Acquisitions ====
+
+* Remove MMAcquisition objects
+
+==== ScriptInterface ====
+
+* Split up "compat" layer into sub-categories, and move those new sub-categories into new objects
+** Stage control (+position list dialog)
+** GUI (refreshGUI, snapSingleImage, more?)
+** Hardware config
+** Config groups
+** ...
+
+==== General API ====
+
+* Expose classes/interfaces in the API:
+** MMFrame and MMDialog
+** MMScriptException
+** Various utilities (NumberUtils, JavaUtils, others?)
+*** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
+
+==== Viewer window ====
+
+* Have instant feedback when a new display window is created, even if there's no images to display yet. Possibly optional? Important for MDA display where there can be a lengthy delay before any images actually arrive.
+
+* Show pixel info display in both pixels and microns?
+
+==== Miscellaneous ====
+
+* Add command to close all open windows (with/without prompt-to-save)
+
+==== Plugins ====
+* Fix up PixelCalibrator?
+
+==== Inspector ====
+* MetadataPanel should show any property that has at any point in history (for this dataset) changed, not just changes from one image to the next
+* Reduce size of hidden histograms?
