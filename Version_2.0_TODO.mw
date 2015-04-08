@@ -14,6 +14,7 @@ TODO list for 2.0.
 
 ==== Acquisitions ====
 * Remove MMAcquisition objects
+* Closing the last DisplayWindow for an ongoing acquisition needs to prompt to abort the acquisition.
 
 ==== Documentation ====
 
