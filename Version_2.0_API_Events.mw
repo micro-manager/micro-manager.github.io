@@ -1,0 +1,25 @@
+This page documents the various events that the 2.0 API exposes, and what you need to subscribe to to access those events.
+
+=== Global events ===
+
+These events are posted to the <pre>EventManager</pre>. You can subscribe to them via <pre>mm.events().registerForEvents()</pre>. 
+
+* DatastoreClosingEvent: a Datastore was closed.
+* DisplayAboutToShowEvent: a DisplayWindow is just about to show its GUI, which happens once there's at least one image for it to display.
+* DisplayActivatedEvent: a DisplayWindow was made the current active window.
+* NewDisplayEvent: a new DisplayWindow was created. This is posted before that display's GUI becomes available.
+* NewOverlayEvent: a new OverlayPanel has been made available for use in the Overlays section of the Inspector window, as a side-effect of <pre>DisplayManager.registerOverlay</pre>
+* PipelineEvent: the processing pipeline has changed.
+* ProcessorEvent: a new DataProcessor has been made available for use in processing pipelines.
+
+In addition to the above, the various events made available in 1.4 are still present:
+
+* PropertiesChangedEvent: A Device Adapter has notified the core that at least one device property has changed. Note that not all property changes result in notifications; the adapter must be specifically coded to send them.
+* PropertyChangedEvent: As above, but for a specific property.
+* ConfigGroupChangedEvent: a config group has changed which preset it is using.
+* SystemConfigurationLoadedEvent: a new config file has been loaded.
+* PixelSizeChangedEvent: the pixel size has changed.
+* StagePositionChangedEvent: a Z positioner has moved.
+* XYStagePositionChangedEvent: an XY positioner has moved.
+* ExposureChangedEvent: the exposure time has changed.
+* SLMExposureChangedEvent: the exposure time of an SLM device has changed.
