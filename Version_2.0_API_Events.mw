@@ -2,13 +2,13 @@ This page documents the various events that the 2.0 API exposes, and what you ne
 
 === Global events ===
 
-These events are posted to the '''EventManager'''. You can subscribe to them via '''mm.events().registerForEvents()'''. 
+These events are posted to the <code>EventManager</code>. You can subscribe to them via <code>mm.events().registerForEvents()</code>. 
 
 * DatastoreClosingEvent: a Datastore was closed.
 * DisplayAboutToShowEvent: a DisplayWindow is just about to show its GUI, which happens once there's at least one image for it to display.
 * DisplayActivatedEvent: a DisplayWindow was made the current active window.
 * NewDisplayEvent: a new DisplayWindow was created. This is posted before that display's GUI becomes available.
-* NewOverlayEvent: a new OverlayPanel has been made available for use in the Overlays section of the Inspector window, as a side-effect of '''DisplayManager.registerOverlay'''
+* NewOverlayEvent: a new OverlayPanel has been made available for use in the Overlays section of the Inspector window, as a side-effect of <code>DisplayManager.registerOverlay</code>
 * PipelineEvent: the processing pipeline has changed.
 * ProcessorEvent: a new DataProcessor has been made available for use in processing pipelines.
 
