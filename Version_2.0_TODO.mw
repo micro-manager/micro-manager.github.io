@@ -1,8 +1,7 @@
-TODO list for 2.0.
+TODO list for 2.0. These are considered release blockers, unlike the items in the [[Version_2.0_Wishlist]].
 
 ==== Data API ====
 
-* Implement data processing pipeline.
 * Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
 * Allow saving custom axes
 * Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
@@ -11,9 +10,6 @@ TODO list for 2.0.
 
 * Add getCoordsFromTaggedImage to extract Coords object from JSONObject?
 * On shutdown, attempt to close all windows; cancel shutdown if user cancels window close (see TODO in MMStudio.closeSequence())
-
-==== Acquisitions ====
-* Remove MMAcquisition objects
 
 ==== Documentation ====
 
@@ -34,50 +30,12 @@ TODO list for 2.0.
 * org.micromanager.display.RequestToCloseEvent (missing Javadoc)
 * org.micromanager.display.RequestToDrawEvent (missing Javadoc)
 
-==== ScriptInterface ====
-
-* Split up "compat" layer into sub-categories, and move those new sub-categories into new objects
-** Stage control (+position list dialog)
-** GUI (refreshGUI, snapSingleImage, more?)
-** Hardware config
-** Config groups
-** ...
-
-==== General API ====
-
-* Expose classes/interfaces in the API:
-** MMFrame and MMDialog
-** MMScriptException
-** Various utilities (NumberUtils, JavaUtils, others?)
-*** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
-* Write up high-level documentation of all events and what buses they get published on (and what API functions subscribe you to those events).
-
 ==== Viewer window ====
 
 * ImageJ tools and the right-click Duplicate command don't work
 * Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
-* Have instant feedback when a new display window is created, even if there's no images to display yet. Possibly optional? Important for MDA display where there can be a lengthy delay before any images actually arrive.
 * Add line profile to gear menu (make it specific to the current display, of course)
-* Link buttons: display menu by default? Continuous link with disparate datasets is desirable (per Sam Lord).
-
-* Feedback on the display window redesign from Walter and Yuxiao:
-** No opinion on extra controls besides zoom buttons
-** Often open data back at their desks in Micro-Manager (not Fiji/ImageJ), or at home, so laptop-friendly setups are appreciated
-** Easier to compare multiple channels if they are vertically aligned, but not a huge deal because of the numbers
-** Would be nice to be able to customize the vertical scale of the histogram. Too big by default means that e.g. four-channel displays can't show all histograms simultaneously.
-** Important to be able to see all histograms simultaneously
-** Put divider box around each histogram panel to visually group things by channel
-** Speak to Marvin; he'll have lots of opinions
-* Adam likes having wider windows rather than taller ones, because displays are widescreen these days so vertical space is at a premium (doesn't want the window to be going off the bottom of the screen)
-** Agrees histograms should be shown automatically; would be fine with simply opening the Contrast tab automatically every time a new display window opens
-** Always uses Micro-Manager, not Fiji, when examining data after collection
-** Prefers the current 2.0 implementation over the mockup just because histograms are stacked and on the side (and prefers right side over left side)
-
-* Ask Kurt to demo Elements?
-
-* Show pixel info display in both pixels and microns?
-
-* Use 1-based indexing for displaying coordinate positions
+* Implement improved link button design (per discussion with Mark: always show menu when clicked)
 
 * When duplicating displays, displayed axis order changes
 
@@ -86,7 +44,6 @@ TODO list for 2.0.
 * Update useful existing scripts to new API
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
 * Scan through entire codebase for TODO tags and fix them if appropriate
-* Add command to close all open windows (with/without prompt-to-save)
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
@@ -96,7 +53,6 @@ TODO list for 2.0.
 
 ==== Plugins ====
 * Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
-* Fix up PixelCalibrator?
 
 ==== Files ====
 * Ensure loading of 1.4 files works properly, with fallbacks for properties that aren't available but should be in 2.0 (e.g. display settings)
@@ -104,7 +60,5 @@ TODO list for 2.0.
 ==== Inspector ====
 * Comments panel is currently busted; it constantly loops recording changes to the image comments once anything is written to them.
 * Link buttons for histograms are missing due to change in implementation. Replace with a gear icon?
-* MetadataPanel should show any property that has at any point in history (for this dataset) changed, not just changes from one image to the next
 * MetadataPanel goes nuts when acquisition is done and using scrollbars (flickers display of metadata on/off)
 * Restore logarithmic histogram mode.
-* Reduce size of hidden histograms?
