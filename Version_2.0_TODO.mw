@@ -62,4 +62,5 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Comments panel is currently busted; it constantly loops recording changes to the image comments once anything is written to them.
 * Link buttons for histograms are missing due to change in implementation. Replace with a gear icon?
 * MetadataPanel goes nuts when acquisition is done and using scrollbars (flickers display of metadata on/off)
+* MetadataPanel layout logic needs some love
 * Restore logarithmic histogram mode.
