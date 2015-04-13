@@ -18,7 +18,7 @@ you can get the GUI object, core and acquisition engine objects thus:
 
 Once you have compiled your code into a <code>.class</code> file or a <code>.jar</code> file, drop that file into Micro-Manager's <code>mmplugins</code> directory, and it will be loaded at startup.
 
-The source code for a number of Micro-Manager plugins is publicly available [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/plugins/ here]. Seamus Holden has also contributed a [[Media:HelloWorldMMPlugin.zip|Hello World Example plugin]].
+The source code for a number of Micro-Manager plugins is publicly available [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/plugins/ here]. You may also find this [[Media:HelloWorldPlugin.zip|Hello World Example plugin]] useful as a template for getting started.
 
 
 === Using Netbeans ===
