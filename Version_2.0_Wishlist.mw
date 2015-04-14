@@ -35,6 +35,7 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 
 * Add command to close all open windows (with/without prompt-to-save)
 * Font quality on OSX Retina displays is awful
+* Be able to tag any MM window as being always-on-top (e.g. for stage control, device properties, main window, some specific plugin...)
 
 ==== Plugins ====
 * Fix up PixelCalibrator?
