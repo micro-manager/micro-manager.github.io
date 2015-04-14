@@ -42,4 +42,5 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 
 ==== Inspector ====
 * MetadataPanel should show any property that has at any point in history (for this dataset) changed, not just changes from one image to the next
+* MetadataPanel should allow you to specifically select properties that should always be shown
 * Reduce size of hidden histograms?
