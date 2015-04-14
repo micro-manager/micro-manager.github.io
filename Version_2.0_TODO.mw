@@ -68,5 +68,4 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Make histograms taller (already wide enough)
 * Histogram eye button is not linked via link buttons
 * Histogram bit depth selection is not linked via link buttons (it's not even in the DisplaySettings)
-* Add "Raise" button to top of inspector to raise the currently-selected window to top (only shown when inspector is tied to a specific window)
 * Automatically raise window when selected from dropdown menu
