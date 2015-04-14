@@ -34,6 +34,7 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 ==== Miscellaneous ====
 
 * Add command to close all open windows (with/without prompt-to-save)
+* Font quality on OSX Retina displays is awful
 
 ==== Plugins ====
 * Fix up PixelCalibrator?
