@@ -65,3 +65,4 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * MetadataPanel goes nuts when acquisition is done and using scrollbars (flickers display of metadata on/off)
 * When last image window closes, inspector still shows information (e.g. in histograms)
 * Restore logarithmic histogram mode.
+* Make histograms taller (already wide enough)
