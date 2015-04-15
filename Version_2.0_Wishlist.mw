@@ -3,6 +3,8 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 ==== Data API ====
 
 * Implement data processing pipeline.
+* Move comments out of image metadata and into separate file.
+** Have a comments history, with modifications tacking a new (timestamped) entry onto the comments rather than replacing the existing content (a.k.a. history is immutable)
 
 ==== Acquisitions ====
 
