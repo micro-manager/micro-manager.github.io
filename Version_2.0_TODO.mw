@@ -2,7 +2,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 ==== Data API ====
 
-* Rename "fileName" attribute of SummaryMetadata? We store entire directories of data, not individual files. It's also used for naming display windows.
 * Allow saving custom axes
 * Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
 
