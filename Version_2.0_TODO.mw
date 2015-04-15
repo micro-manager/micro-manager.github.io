@@ -33,7 +33,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Viewer window ====
 
 * ImageJ tools and the right-click Duplicate command don't work (cannot repro this one)
-* Set up multicam, start live, stop live, change camera colors, change binning, restart live -> colors not kept in new window
 * Add line profile to gear menu (make it specific to the current display, of course)
 
 * When duplicating displays, displayed axis order changes
