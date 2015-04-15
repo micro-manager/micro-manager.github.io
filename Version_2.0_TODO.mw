@@ -32,7 +32,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Viewer window ====
 
 * ImageJ tools and the right-click Duplicate command don't work (cannot repro this one)
-* Add line profile to gear menu (make it specific to the current display, of course)
 
 * When duplicating displays, displayed axis order changes
 * Use multicam config, snap image, duplicate snap/live window, original window loses one of its channels (until you switch back)
