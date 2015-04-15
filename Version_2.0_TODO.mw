@@ -34,7 +34,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * ImageJ tools and the right-click Duplicate command don't work (cannot repro this one)
 
 * When duplicating displays, displayed axis order changes
-* Use multicam config, snap image, duplicate snap/live window, original window loses one of its channels (until you switch back)
 * Restore save button separate from gear menu
 
 ==== Miscellaneous ====
