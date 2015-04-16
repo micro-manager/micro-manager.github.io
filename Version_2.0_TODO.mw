@@ -8,21 +8,12 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Documentation ====
 
 * org.micromanager.MultistagePosition (missing parameter descriptions)
-* org.micromanager.PropertyMap (missing parameter descriptions and description of returned variables, also should have an example of the builder concept in the header)
 * org.micromanager.data.DataManager (missing variable and return descriptions, superfluous imports)
-* org.micromanager.data.Image (missing variable and return descriptions, unused import)
 * org.micromanager.data.Metadata (missing variable and return descriptions, formatting of Javadoc)
 * org.micromanager.data.Storage (unused import, missing return and variable descriptions)
 * org.micromanager.data.SummaryMetadata (missing javadoc to builder)
 
-* org.micromanager.display.DisplayManager (missing return and variable description)
 * org.micromanager.display.DisplaySettings (missing return and variable description, unused import)
-* org.micromanager.display.DisplayWindow (missing return and variable description)
-* org.micromanager.display.NewImagePlusEvent (missing Javadoc)
-* org.micromanager.display.NewDisplaySettingsEvent (missing Javadoc)
-* org.micromanager.disply.OverlayPanel(missing parameter description)
-* org.micromanager.display.RequestToCloseEvent (missing Javadoc)
-* org.micromanager.display.RequestToDrawEvent (missing Javadoc)
 
 ==== Viewer window ====
 
