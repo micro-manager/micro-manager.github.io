@@ -27,6 +27,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
 * Scan through entire codebase for TODO tags and fix them if appropriate
 * When in nighttime mode, MDA channel settings are hard to read ("disabled text" color is easier to read than "enabled text" color)
+* Recently-used config files dropdown in intro dialog is missing entries.
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
