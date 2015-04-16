@@ -108,3 +108,15 @@ Thus for example, if you wanted to change the location of an image prior to addi
  store.putImage(newImage);
 
 === Why immutability ===
+
+At first glance it would seem like making objects that you aren't allowed to modify just makes your life a lot more complicated. And it is true that there are a few more steps to follow to create a modified Metadata than there would be if you could just modify the Metadata in-place. However, the fact that these objects are immutable is vital for Micro-Manager's image workflows, because it means that no piece of code has to worry about an object being changed "out from under it".
+
+Without that guarantee, it is impossible for code to guarantee consistency. For example, if an image's metadata says it's for the Cy5 channel, then nobody can change that image to say it's actually for the DAPI channel instead. Code can create a ''new'' image that is identical except for its channel, but that new image does not replace the old one anywhere else (it's a new reference).
+
+Imagine you have a plugin that saves images to different files depending on their channels, and some third-party code changes the channel string while you're running. Depending on exactly when the string changes, an image might end up in a different file! Making images immutable guarantees that you will never have this problem; if the third-party code wants that image to be in a different channel, then it will create a new image, while you will still have the old one.
+
+==== Isn't this horribly inefficient? ====
+
+All this copying whenever you want to make a change seems like it would be very inefficient. Fortunately this isn't the case. When you make a "copy" of, say, an Image, all you are copying is the '''references'' to the image's data, not that data itself. For example, if the original Image and the new Image only differ in their coordinates, then they will "share" image pixel data and Metadata, and only have different Coords objects. This holds true within Metadata and SummaryMetadata as well: if you create a new Metadata by copying an existing one and changing just the channel name, then the new and old objects will share everything else.
+
+Consequently, copying an object is an extremely cheap action. The immutability guarantee actually allows us to use ''less'' memory than we would have to if objects were mutable, because it allows two objects that are very similar to share their resources.
