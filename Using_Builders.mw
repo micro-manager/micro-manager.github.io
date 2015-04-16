@@ -109,6 +109,8 @@ Thus for example, if you wanted to change the location of an image prior to addi
 
 === Why immutability ===
 
+Making objects immutable is a common technique used to simplify data handling in complex programs, especially multithreaded ones.
+
 At first glance it would seem like making objects that you aren't allowed to modify just makes your life a lot more complicated. And it is true that there are a few more steps to follow to create a modified Metadata than there would be if you could just modify the Metadata in-place. However, the fact that these objects are immutable is vital for Micro-Manager's image workflows, because it means that no piece of code has to worry about an object being changed "out from under it".
 
 Without that guarantee, it is impossible for code to guarantee consistency. For example, if an image's metadata says it's for the Cy5 channel, then nobody can change that image to say it's actually for the DAPI channel instead. Code can create a ''new'' image that is identical except for its channel, but that new image does not replace the old one anywhere else (it's a new reference).
