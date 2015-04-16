@@ -1,0 +1,64 @@
+This is a guide to using the Builder pattern, which is used extensively in the Micro-Manager 2.0 API for creating objects like image coordinates and metadata.
+
+=== Overview ===
+
+Let's use the <code>Metadata</code> class as an example. This class describes the metadata for a single image in Micro-Manager. Below is a simplified extract from the interface definition, with only five properties:
+
+ public interface Metadata { 
+    interface MetadataBuilder {
+       Metadata build();
+
+       MetadataBuilder bitDepth(Integer bitDepth);
+       MetadataBuilder channelName(String channelName);
+       MetadataBuilder exposureMs(Double exposureMs);
+       MetadataBuilder pixelSizeUm(Double pixelSizeUm);
+       MetadataBuilder userData(PropertyMap userData);
+    }
+
+    MetadataBuilder copy();
+
+    Double getExposureMs();
+    Double getPixelSizeUm();
+    Integer getBitDepth();
+    PropertyMap getUserData();
+    String getChannelName();
+ }
+
+There are two classes: the Metadata itself, and the Builder for the Metadata. Note that the Metadata does not have any methods that ''change'' it: it is impossible to modify a Metadata instance after it is created (the Metadata is "immutable"). Instead, a Builder is created, and ''it'' can be modified (for justification of why these objects are immutable, see the bottom of the page). To generate a Metadata from the Builder, you use the <code>build</code> method. For example:
+
+ Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
+ // Create metadata for first image.
+ builder = builder.bitDepth(14).channelName("DAPI").exposureMs(100);
+ Metadata metadata1 = builder.build();
+ int exposure1 = metadata1.getExposureMs(); // will be 100
+ // Create metadata for second image: only channel name and exposure time change
+ builder = builder.channelName("Cy5").exposureMs(80);
+ Metadata metadata2 = builder.build();
+ Integer exposure2 = metadata2.getExposureMs(); // will be 80
+ Double pixelSize = metadata2.getPixelSizeUm(); // will be null!
+ // Don't do this: it would throw a NullPointerException:
+ // double pixelSize = metadata2.getPixelSizeUm();
+
+There's a few things to call your attention to here:
+
+* Since every method on a Builder except the <code>build()</code> method returns the Builder, you can chain those methods together to set several properties in a single statement.
+* The Builder object can be re-used to generate multiple Metadata instances with only minor variations.
+* Any properties ''not'' set in the Builder will also not be set in the Metadata. In this case, that means that the values are null. It is important that you use the "boxed" objects like <code>Integer</code>, <code>Double</code>, and <code>Boolean</code> when accessing properties of a Metadata, as opposed to using <code>int</code>, <code>double</code>, or <code>boolean</code>. The latter will throw a <code>NullPointerException</code> if you try to assign a null to them.
+
+In addition to using a "raw" Builder object to construct new Metadata objects, you can also ask a Metadata object for a Builder that's based on it, using the <code>copy()</code> method. The above example code could equivalently be written as:
+
+ Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
+ // Create metadata for first image.
+ builder = builder.bitDepth(14).channelName("DAPI").exposureMs(100);
+ Metadata metadata1 = builder.build();
+ // Create metadata for second image: only channel name and exposure time change
+ Metadata metadata2 = metadata1.copy().channelName("Cy5")
+       .exposureMs(80).build();
+
+This can be useful in situations where you don't have access to the original Builder.
+
+=== Variations ===
+
+The above example was specific to the Metadata class. There are some variations for other Micro-Manager 2.0 objects, which are covered here.
+
+=== Why immutability ===
