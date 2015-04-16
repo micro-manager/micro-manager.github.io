@@ -24,7 +24,7 @@ Let's use the <code>Metadata</code> class as an example. This class describes th
     String getChannelName();
  }
 
-There are two classes: the Metadata itself, and the Builder for the Metadata. Note that the Metadata does not have any methods that ''change'' it: it is impossible to modify a Metadata instance after it is created (the Metadata is "immutable"). Instead, a Builder is created, and ''it'' can be modified (for justification of why these objects are immutable, see the bottom of the page). To generate a Metadata from the Builder, you use the <code>build</code> method. For example:
+There are two classes: the Metadata itself, and the Builder for the Metadata. Note that the Metadata does not have any methods that ''change'' it: it is impossible to modify a Metadata instance after it is created (the Metadata is "immutable"). Instead, a Builder is created, and ''it'' can be modified (for justification of why these objects are immutable, see the bottom of the page). However, properties of the Builder cannot be ''read'', so it isn't very useful on its own. To generate a Metadata from the Builder, you use the <code>build</code> method. For example:
 
  Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
  // Create metadata for first image.
