@@ -20,6 +20,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * ImageJ tools and the right-click Duplicate command don't work (cannot repro this one)
 
 * When duplicating displays, displayed axis order changes
+* Replace lock/animate buttons with proper icons.
 
 ==== Miscellaneous ====
 
