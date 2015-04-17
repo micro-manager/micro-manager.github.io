@@ -21,6 +21,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 * When duplicating displays, displayed axis order changes
 * Replace lock/animate buttons with proper icons.
+* Bug: extra window can appear after closing full screen while running Live; original window controls (including close box) appear to be connected to the new window
 
 ==== Miscellaneous ====
 
