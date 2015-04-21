@@ -39,6 +39,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Check for memory leaks
 * Try running acquisitions on 32-bit systems (in particular be aware of memory constraints e.g. with direct byte buffers)
 * Test on Windows
+* Test on older Macs and on displays with varying pixel densities
 
 ==== Plugins ====
 * Still have to select overlay plugins (e.g. Acquisition Tools -> Pattern Overlay) from the Plugins menu before they become available in the overlays tab; this ought to happen automatically on program start.
