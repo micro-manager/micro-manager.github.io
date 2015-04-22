@@ -6,6 +6,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ** Fold into time axis? Data file only has 3 "natural" axes (channel, z, time), extras are layered into time axis according to order in metadata. So e.g. metadata says ["polarization", "position", "time"] -> polarization axis and position axis are in time axis, with time changing most frequently, then position, then polarization. Would allow data to be accessed in ImageJ (albeit in a somewhat odd fashion), but conversion of 1.4 datasets might be painful.
 * Show an error when saving with custom axes
 ** And throw an exception if code goes through with it.
+** And if you try to use a file-based Storage and add an Image with a custom axis
 * Ensure that 1.4 blatantly and quickly fails to load 2.0 data files
 ** Add a metadata version that we check for so we can cleanly fail when loading future versions
 * Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
