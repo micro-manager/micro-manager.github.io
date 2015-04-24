@@ -12,6 +12,23 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
 * Add acquisitionData, coreData, deviceAdapterData categories to metadata.
 
+==== Profiles ====
+
+* Having to register again is wrong, probably. In general all settings that were in Preferences are "lost".
+Main window size is a little wrong on Windows.
+* Auto-select previous profile at startup prompt? Entire profile system is maybe
+ unclear.
+* Auto-select user's previous config file when user profile is selected.
+* Fix previous config files.
+* Night option isn't properly remembered (for non-default users?)
+* Main window size needs to be manually restored after user profile loaded (to account for user's preferred window settings)
+* Maybe not show main window until after profile is selected?
+
+==== Daytime/Nighttime ====
+
+* Low-contrast text can be hard to read in nighttime mode.
+* MDA dialog has bright white components in nighttime mode.
+
 ==== Documentation ====
 
 * org.micromanager.MultistagePosition (missing parameter descriptions)
