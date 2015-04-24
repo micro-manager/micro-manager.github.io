@@ -19,9 +19,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Auto-select previous profile at startup prompt? Entire profile system is maybe unclear.
 * Auto-select user's previous config file when user profile is selected.
 * Fix previous config files.
-* Night option isn't properly remembered (for non-default users?)
-* Main window size needs to be manually restored after user profile loaded (to account for user's preferred window settings)
-* Maybe not show main window until after profile is selected?
 
 ==== Daytime/Nighttime ====
 
