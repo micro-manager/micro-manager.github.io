@@ -60,3 +60,18 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Restore logarithmic histogram mode.
 * Histogram eye button is not linked via link buttons
 * Histogram bit depth selection is not linked via link buttons (it's not even in the DisplaySettings)
+* Inspector window position isn't remembered correctly.
+* Histogram full/auto once buttons are squished together on Windows
+* Nico hates that Display Settings tab isn't open by default / autostretch settings aren't part of main histogram display
+* Initial scaling isn't autostretched for new MDA (even when autostretch is checked)
+* Histogram eyeball and color (and presumably link button) are too big
+* Left/right buttons for horizontal histogram scale are reduced to "..." on Windows
+** Same with animate buttons on image window
+* MetadataPanel doesn't show anything when first opened (or when different images in MDA are selected -- did a 3-channel snapshot MDA).
+* Extrema ignore% spinners should be in .1% increments.
+* Histogram autoscaling only seems to apply to *next* image, not current image (OnPixelsSet vs. OnNewImage?).
+* Size of scalebar is wrong (e.g. tiny 100um scalebar should be much bigger or number should be different)
+* Option for centered text for scalebar (or different alignments in general)
+* Overlays aren't redrawn when overlay is removed.
+* Remove "draw timestamp" checkbox
+* Option to change size of timestamp (incl. font size)
