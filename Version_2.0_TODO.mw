@@ -45,6 +45,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Image dimensions etc. move from main window to image window?
 * In fullscreen mode would be nice if we could shove the image over to make room for the inspector.
 * Animating 3-channel timeseries has a lot of jumping back-and-forth, and overall animation rate is not faithful. Possibly due to large images being harder to draw.
+* Starting MDA with large images (on my computer, 1384x1024) creates a window that is too tall to fit the controls in the visible portion of the display, and the window is on my secondary display for some reason....
 
 ==== Miscellaneous ====
 
