@@ -12,8 +12,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Having to register again is wrong, probably. In general all settings that were in Preferences are "lost".
 * Main window size is a little wrong on Windows. (fixed?)
 * Auto-select previous profile at startup prompt? Entire profile system is maybe unclear.
-* Auto-select user's previous config file when user profile is selected.
-* Fix previous config files.
 
 ==== Daytime/Nighttime ====
 
