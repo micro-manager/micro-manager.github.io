@@ -14,6 +14,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Tracker Plugin|Live Tracking]]
 * [[Multi-Andor Control]]
 * [[MultiChannelShading]]
+* [[PM/QI Auto White Balance]]
 * [[Projector]]
 * [[Slide Explorer Plugin|Slide Explorer]]
 * [[SplitView]]
