@@ -67,8 +67,8 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Inspector ====
 * When last image window closes, inspector still shows information (e.g. in histograms)
 * Restore logarithmic histogram mode.
-* Histogram eye button is not linked via link buttons
-* Histogram bit depth selection is not linked via link buttons (it's not even in the DisplaySettings)
+* Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
+** So make autostretch be a per-channel property, and modify ChannelControlPanel to only use the linked min/max when autostretch is not set. Requires adding an autostretch toggle button to each channel.
 * Inspector window position isn't remembered correctly.
 * Histogram full/auto once buttons are squished together on Windows
 * Nico hates that Display Settings tab isn't open by default / autostretch settings aren't part of main histogram display
