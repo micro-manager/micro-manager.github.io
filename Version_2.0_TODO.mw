@@ -84,3 +84,4 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Overlays aren't redrawn when overlay is removed.
 * Remove "draw timestamp" checkbox
 * Option to change size of timestamp (incl. font size)
+* Create album, animate time axis, create duplicate album, turn on autostretching of duplicate, link duplicate histogram to original (animated) display -> EDT hang
