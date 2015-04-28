@@ -19,6 +19,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 * Low-contrast text can be hard to read in nighttime mode.
 * MDA dialog has bright white components in nighttime mode.
+** It appears that OS-rendered components can't be readily overridden via the look-and-feel; see [http://stackoverflow.com/questions/29904627/plaf-cant-change-button-color this StackOverflow discussion]. So we may be stuck for these components, unfortunately, unless we're willing to write our own custom components that don't look like OS-appropriate widgets.
 
 ==== Documentation ====
 
