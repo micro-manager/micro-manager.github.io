@@ -23,6 +23,7 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 
 * (1.4.21)
 * 20150428: autofocus to define calibration (not yet during timelapse)
+* 20150415: added basic stage scanning (contact ASI for firmware if needed)
 * 20150225: added hardware switching for multi-channel using Tiger's PLC
 * 20150113: added multi-position support and software-based multi-channel support
 * (1.4.20)
