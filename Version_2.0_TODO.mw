@@ -72,7 +72,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ** So make autostretch be a per-channel property, and modify ChannelControlPanel to only use the linked min/max when autostretch is not set. Requires adding an autostretch toggle button to each channel.
 * Histogram full/auto once buttons are squished together on Windows
 * Initial scaling isn't autostretched for new MDA (even when autostretch is checked)
-* Histogram eyeball and color (and presumably link button) are too big
 * Left/right buttons for horizontal histogram scale are reduced to "..." on Windows
 ** Same with animate buttons on image window
 * MetadataPanel doesn't show anything when first opened (or when different images in MDA are selected -- did a 3-channel snapshot MDA).
