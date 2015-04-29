@@ -21,8 +21,11 @@ The plugin documentation currently resides as part of the [http://www.asiimaging
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
-* 20150225: added hardware switching for multi-color using Tiger's PLC
-* 20150113: added multi-position support and basic multi-color support (channel switching in software)
+* (1.4.21)
+* 20150428: autofocus to define calibration (not yet during timelapse)
+* 20150225: added hardware switching for multi-channel using Tiger's PLC
+* 20150113: added multi-position support and software-based multi-channel support
+* (1.4.20)
 * 20141219: added ability to easily do offset-only calibration adjustment
 * 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25ms
 * 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
