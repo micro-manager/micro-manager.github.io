@@ -71,6 +71,8 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * When last image window closes, inspector still shows information (e.g. in histograms)
 * Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
 ** So make autostretch be a per-channel property, and modify ChannelControlPanel to only use the linked min/max when autostretch is not set. Requires adding an autostretch toggle button to each channel.
+* Toggling eye button while in Color mode (also live two-channel) -> switch to Composite, eye button state is inconsistent.
+* Should disable eye button unless in Composite mode.
 * Histogram full/auto once buttons are squished together on Windows
 * Initial scaling isn't autostretched for new MDA (even when autostretch is checked)
 * Left/right buttons for horizontal histogram scale are reduced to "..." on Windows
