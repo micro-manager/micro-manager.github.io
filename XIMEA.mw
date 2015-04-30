@@ -16,7 +16,7 @@
 
 * Download and install the [http://www.ximea.com/support/wiki/vision-libraries/Micro-Manager XIMEA API Software package], during install '''API''' and '''Drivers''' section must be selected
 (if you have previous installations of drivers for the XM-10 or XC-10 you might need to manually update the driver to the version in the installed API Package) 
-{{Note|As of Micro-Manager nightly build 20140908 (pre-1.4.19), XIMEA API (beta) 4.01.76 is required.}}
+{{Note|As of Micro-Manager nightly build 20140908 (pre-1.4.19), XIMEA API (beta) 4.01.76 is required.<br />As of Micro-Manager 1.4.21, XIMEA API 4.04.00 is required.}}
 * Copy '''m3api.dll''' from the installed API Package to the Micro-Manager folder
 
 * Connect the camera to the computer
