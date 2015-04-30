@@ -1,4 +1,102 @@
 __NOTOC__
+== Micro-Manager 1.4.20 (January 30, 2015) ==
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.20.exe Windows 32-bit], 60 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.20.exe Windows 64-bit], 62 MB<br />
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.20.dmg Mac OS X (Universal Binary)], 48 MB<br />
+(OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
+
+=== Changes in 1.4.20 (since 1.4.19) ===
+
+* Improvements in the main application
+** Include file information in the ImageJ properties for Micro-Manager datasets (Chris Weisiger)
+** Improve saving/remembering window and dialog positions (Nico Stuurman, Jon Daniels)
+** Improve resizing of image display windows (Chris Weisiger)
+** Remove artificial limits on RAM usage on OSX (Mark Tsuchida)
+** Improve the layout of the data processing pipeline dialog (Mark Tsuchida)
+* Bugfixes
+** Snap/live mode
+*** Fix a bug causing a time scrollbar to appear in the Snap/Live display (Chris Weisiger)
+*** Fix a bug causing Snap/Live display to sometimes hang (Nico Stuurman)
+*** Fix a bug causing the first image received in Live mode to be discarded (Mark Tsuchida)
+*** Fix poor responsiveness of the UI during Live mode with large images (Mark Tsuchida)
+*** Changes to the on-the-fly processors immediately take effect on Live mode (Mark Tsuchida)
+*** Ensure that the start/stop Live mode buttons don't get out of sync (Chris Weisiger)
+*** Fix memory issues on 32-bit systems (Chris Weisiger)
+** Album
+*** Fix a bug causing the Album display to be one image behind (Chris Weisiger)
+*** Fix a bug causing snap-to-album with RGB or multichannel images to fail (Chris Weisiger)
+** File data
+*** Fix a bug causing files with incomplete display settings to be unloadable (Chris Weisiger)
+*** Fix a bug causing multipage TIFF files to be closed prior to all data having finished writing (Henry Pinkard)
+*** Fix a race condition causing recently-written images to not be available when using multipage TIFF storage (Mark Tsuchida)
+*** Fix an issue that could cause file loads to generate images with null metadata (Chris Weisiger)
+** Miscellaneous
+*** Prevent windows from appearing offscreen (Jon Daniels, Chris Weisiger)
+*** Prevent a potential hang caused by acquisitions with no defined bit depth (Chris Weisiger)
+*** Fix a bug causing histogram scaling to be improperly remembered (Chris Weisiger)
+*** Fix a bug causing getPropertyNames() to fail (Karsten Siller, Chris Weisiger)
+*** Fix Z-step size information in ImageJ (Jon Daniels, Chris Weisiger)
+*** Fix a rare NullPointerException in acquisitions (Nico Stuurman)
+*** Fix a rare exception when closing image windows (Mark Tsuchida)
+*** Improve responsiveness when changing config presets (Mark Tsuchida)
+*** Prevent the program from generating bizarrely wide dialog boxes (Mark Tsuchida)
+*** Fix a NullPointerException in DataProcessors when they are added to or removed from the processing queue (Chris Weisiger)
+*** Fix rounding of values (e.g. in Device Property Browser) (Mark Tsuchida)
+*** Fix a hang when closing dialogs (Nico Stuurman)
+*** Fix a crash that could occur when controlling certain Magnifier devices during acquisition (Mark Tsuchida)
+*** Better handle failure to load a hardware configuration: prevent spurious errors by giving up after the first error, and unload the partially loaded devices (Mark Tsuchida)
+*** Fix crash that could occur when the loading of hub and peripheral devices fails (Mark Tsuchida)
+*** Fix a bug that caused a long delay when starting an MDA time series that is performed by streaming from the camera (Mark Tsuchida)
+* Changes in plugins
+** ASIdiSPIM: extensive improvements and bug fixes (Jon Daniels, Nico Stuurman)
+** AcquireMultipleRegions: fix acquisition of non-flat sections (Kurt Thorn)
+** CRISPv2: add LogAmpAGC display (Vik, ASI)
+** Localization Microscopy: various improvements and bug fixes (Nico Stuurman)
+** MultiChannelShading: extensive improvements and bug fixes (Nico Stuurman)
+** PatternOverlay: bug fixes and UI tweaks (Nico Stuurman)
+* New device adapters
+** [[AndorShamrock]] Andor Shamrock Spectrograph Series (Andor)
+** [[Mightex_C_Cam]] Mightex C-series USB cameras (Mightex)
+** [[OVP_ECS2]] Optic Valley Photonics ECS-2 environmental controller (Jon Daniels, ASI)
+** [[TriggerScope]] TriggerScope digital and analog controller (Austin Blanco)
+* Changes in device adapters
+** [[ASIStage]]: Add motor control properties for the Z axis; add LogAmpACG property for CRISP (Jon Daniels, ASI)
+** [[ASITiger]]: Add support for PLogic card; many other enhancements and fixes (Jon Daniels, ASI)
+** [[Andor]]: Add FVB mode; fix ActualInterval when ROI is set; add hardware timestamps when available (Matthew Milford, Andor)
+** [[Corvus]]: Add joystick toggle property (Doug Kelly)
+** [[Ludl]]: Add preliminary support for multiple controllers (Russell Taylor, Mark Tsuchida)
+** [[MCCDAQ]]: Make analog voltage range configurable (Chris Weisiger)
+** [[MCL_MicroDrive]]: Fix an issue where velocity was incorrect for multi-axis movement (Greg Sawyer, MCL)
+** [[Nikon]]: Add support for TiTIRF shutter (Nico Stuurman)
+** [[PCO_Camera]]: Fix issues with ROI setting on startup (Franz Reitner, PCO)
+** [[PICAM]]: Fix crash when setting Port property (Mark Tsuchida); Fix EM gain property (Toshio Suzuki)
+** [[PVCAM]]: Fix ColorMode property; improve error handling (Lubomir Walder, Photometrics/QImaging)
+** [[PrecisExcite]]: Fix issue where invalid configuration file could be generated (Mark Tsuchida)
+** [[SerialManager]]: Remove "GetAnswer retry #" logging (Mark Tsuchida)
+** [[TISCam]]: Fix a crash (Johannes Schindelin)
+** [[Tofra]]: Add a device to control RGB LED as a shutter (Mark Tsuchida)
+** [[UserDefinedSerial]]: Fix issue causing errors when more than 10 positions are used with the state device (Mark Tsuchida)
+** [[VariLC]]: Fix handling of error responses (Amitabh Verma)
+** [[Versalase]]: Add properties to select lasers to shutter individually (David Sweeney, Vortran)
+** Yokogawa [[CSUX]]: Add retry logic for setting dichroic (Doug Kelly, Chris Weisiger)
+** [[Zaber]]: Improve XY stage support and add uniaxial stage support; improve error handling (Athabasca Witschi, Zaber)
+** [[ZeissCAN]]: Add support for AxioPhot PhotoModule (Nico Stuurman)
+* Changes in closed-source device adapters
+** [[HamamatsuHam]]: Fix an issue that could result in dropped frames when using external triggering on certain systems. Also fix a crash and a hang that could occur under certain circumstances. (Patrick Gregorio, Hamamatsu)
+* Changes of interest to developers
+** Micro-Manager 1.4.20 is SVN trunk r14990, 3rdpartypublic r173.
+** There is no change in the device programming interface (MMDevice) since 1.4.19.
+** API changes:
+*** Add <code>logDebugMessage()</code> method (Mark Tsuchida, Jon Daniels)
+*** Add <code>showMessage()</code> method (Nico Stuurman)
+*** Add <code>MMWindow.getTaggedImage()</code> method (Nico Stuurman)
+*** <code>MMWindow.getNumberOfPositions()</code> no longer always returns 1 (Nico Stuurman)
+*** Fix erroneously-defined tags for channel contrast mins/maxes (Chris Weisiger)
+*** <code>CMMCore</code> (<code>mmc</code>) methods for hub-peripheral devices now throw exceptions (<code>getInstalledDevices(), getLoadedPeripheralDevices(), getInstalledDeviceDescription()</code>) (Mark Tsuchida)
+
+
 == Micro-Manager 1.4.19 (November 7, 2014) ==
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.19.exe Windows 32-bit], 60 MB<br />
