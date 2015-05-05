@@ -53,6 +53,9 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * When in nighttime mode, MDA channel settings are hard to read ("disabled text" color is easier to read than "enabled text" color)
 * Recently-used config files dropdown in intro dialog is missing entries.
 * Autofocus API needs some attention (remove use of PropertyItem and MMException?)
+* Merge against latest SVN
+** NB that due to line ending changes, conflicts in multipage TIFF reader/writer couldn't be detected. Other files (MMStudio, ScriptInterface, MMAcquisition, ChannelControlPanel, DisplayWindow, MetadataPanel, FileMenu,) got "deleted" (improperly moved, I guess) and thus similarly couldn't detect changes.
+** ASIdiSPIM and Magellan plugins are of course hopelessly nonfunctional.
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
