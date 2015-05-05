@@ -72,7 +72,7 @@ __NOTOC__
 *** Add <code>computeScore()</code> method to AutofocusPlugin API (Nico Stuurman)
 *** Calling <code>openAcquisition()</code> with zero channels, frames, or slices now assumes the user meant 1 instead, to prevent acquisitions that cannot hold any images.
 *** Fix a bug in auto-generated acquisition names (Jon Daniels)
-*** MMCore API now has stage control methods that implicitly use the current stage (Chris Weisiger)
+*** MMCore API now has stage control methods that implicitly use the current stage (Jon Daniels)
 *** No changes to the device programming interface
 
 
