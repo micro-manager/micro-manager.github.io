@@ -36,7 +36,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 * ImageJ tools and the right-click Duplicate command don't work (cannot repro this one)
 
-* When duplicating displays, displayed axis order changes
 * Image window resizing on zoom can send it off the bottom of the taskbar.
 * Image dimensions etc. move from main window to image window?
 * In fullscreen mode would be nice if we could shove the image over to make room for the inspector.
