@@ -26,7 +26,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Documentation ====
 
 * org.micromanager.MultistagePosition (missing parameter descriptions)
-* org.micromanager.data.DataManager (missing variable and return descriptions, superfluous imports)
 * org.micromanager.data.Metadata (missing variable and return descriptions, formatting of Javadoc)
 * org.micromanager.data.Storage (unused import, missing return and variable descriptions)
 * org.micromanager.data.SummaryMetadata (missing javadoc to builder)
