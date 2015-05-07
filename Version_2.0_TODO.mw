@@ -4,7 +4,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 * Ensure that 1.4 blatantly and quickly fails to load 2.0 data files
 ** Add a metadata version that we check for so we can cleanly fail when loading future versions
-* Add axis order information to SummaryMetadata (and populate when acquiring data, and use when creating new DisplayWindows; see related TODO under viewers)
 * Have scopeData and userData; former is everything set by us (first-party code), latter is everything else.
 * Have a list of device names/labels that we store in the file.
 * All device property states are stored "flat" in the file (to maintain compatibility with 1.4); reconstruct on load using the aforementioned list.
