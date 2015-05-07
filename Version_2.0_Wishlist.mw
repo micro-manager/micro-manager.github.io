@@ -41,6 +41,7 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 * Be able to tag any MM window as being always-on-top (e.g. for stage control, device properties, main window, some specific plugin...)
 * Allow users to customize night/day colors
 * Easy keyboard shortcut for the "Copy to System" command (ImageJ's default copy shortcut is an ImageJ-specific concept that doesn't play nicely with e.g. Photoshop)
+* Add multiple look-and-feel options including a nighttime option that has dark buttons, table headers, etc.
 
 ==== Plugins ====
 * Fix up PixelCalibrator?
