@@ -5,6 +5,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Ensure that 1.4 blatantly and quickly fails to load 2.0 data files
 ** Add a metadata version that we check for so we can cleanly fail when loading future versions
 * Note: we are explicitly ignoring camera-provided metadata for the moment (will require modifications to the Core to tag these metadatas)
+* Saving of singleplane TIFF files is currently broken, and ImageJ is helpfully swallowing the errors ("An error occured" [sic] message).
 
 ==== Profiles ====
 
