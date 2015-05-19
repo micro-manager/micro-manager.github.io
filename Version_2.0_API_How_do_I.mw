@@ -22,6 +22,8 @@ If you have an Image object and you want to create a new display window and disp
 
 This will create a new Datastore and DisplayWindow, add the image to the Datastore, and return it. You can then add new images to the Datastore (using <code>Datastore.putImage(image)</code>) and they will also be displayed in the window.
 
+=== Access image data and metadata? ===
+
 === Control live mode? ===
 
 As above, you want the <code>SnapLiveManager</code> object. You can ask if live mode is on or off using:
