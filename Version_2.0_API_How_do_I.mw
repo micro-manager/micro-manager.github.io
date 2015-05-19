@@ -24,6 +24,36 @@ This will create a new Datastore and DisplayWindow, add the image to the Datasto
 
 === Access image data and metadata? ===
 
+If you have data in an open window that you want to access, you can readily do that through the <code>DisplayManager</code> interface:
+
+ Datastore store = mm.displays().getCurrentWindow().getDatastore()
+
+The above code will retrieve the topmost <code>DisplayWindow</code> and then extract the <code>Datastore</code> that contains the data that the <code>DisplayWindow</code> presents.
+
+From there, you can request images via their <code>Coords</code>:
+
+ Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+ builder = builder.z(2).time(5).channel(1).stagePosition(0);
+ Coords coords = builder.build();
+ Image image = store.getImage(coords);
+
+You can access the image's <code>Metadata</code>:
+
+ Metadata metadata = image.getMetadata();
+ Double exposure = metadata.getExposureMs();
+
+You can access the dataset's <code>SummaryMetadata</code> as a whole:
+
+ SummaryMetadata summary = store.getSummaryMetadata();
+ String[] channels = summary.getChannelNames();
+
+If the dataset has not been frozen, then you can modify it, for example by adding new images:
+
+ List<Image> newImages = mm.live().snap(false);
+ Image newImage = newImages.get(0);
+ newImage = newImage.copyAtCoords(coords.copy().time(6).build());
+ store.putImage(newImage);
+
 === Control live mode? ===
 
 As above, you want the <code>SnapLiveManager</code> object. You can ask if live mode is on or off using:
