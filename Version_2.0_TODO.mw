@@ -13,15 +13,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Main window size is a little wrong on Windows. (fixed?)
 * Auto-select previous profile at startup prompt? Entire profile system is maybe unclear.
 
-==== Documentation ====
-
-* org.micromanager.MultistagePosition (missing parameter descriptions)
-* org.micromanager.data.Metadata (missing variable and return descriptions, formatting of Javadoc)
-* org.micromanager.data.Storage (unused import, missing return and variable descriptions)
-* org.micromanager.data.SummaryMetadata (missing javadoc to builder)
-
-* org.micromanager.display.DisplaySettings (missing return and variable description, unused import)
-
 ==== Viewer window ====
 
 * Image dimensions etc. move from main window to image window?
