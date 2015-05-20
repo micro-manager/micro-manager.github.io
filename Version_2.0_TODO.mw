@@ -24,7 +24,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 ==== Miscellaneous ====
 
-* Restructure code according to [https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html Maven styling]
 * Update useful existing scripts to new API
 ** CameraLabs (sp?) script
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
