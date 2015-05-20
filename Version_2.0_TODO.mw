@@ -25,7 +25,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Miscellaneous ====
 
 * Update useful existing scripts to new API
-** CameraLabs (sp?) script
+** CameraLabs (sp?) script [https://micro-manager.org/wiki/Measuring_camera_specifications see also]
 * Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
 * Scan through entire codebase for TODO tags and fix them if appropriate
 * Autofocus API needs some attention (remove use of PropertyItem and MMException?)
