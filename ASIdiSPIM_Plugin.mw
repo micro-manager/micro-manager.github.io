@@ -11,8 +11,7 @@
 
 == Overview ==
 
-This plugin exists to facilitate alignment and use of [http://asiimaging.com/products/light-sheet-microscopy/selective-plane-illumination-microscopy-ispimdispim/ ASI's SPIM system], in all of its various forms.
-
+This plugin exists to facilitate alignment and use of [http://dispim.org the diSPIM system], in all of its various forms (including iSPIM).
 
 == Plugin Documentation ==
 
