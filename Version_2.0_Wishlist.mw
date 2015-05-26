@@ -27,6 +27,7 @@ Things we'd like to do for 2.0 that aren't considered to be blockers.
 ** Various utilities (NumberUtils, JavaUtils, others?)
 *** These should be exposed as new top-level "manager" types (e.g. "mm.numbers().foo()" instead of "NumberUtils.foo()")
 * Add colorblind-friendly section to the color picker (c.f. [http://www.nature.com/nmeth/journal/v8/n6/full/nmeth.1618.html this article])
+* Replace MMException/MMScriptException with more descriptive (and non-custom) exceptions
 
 ==== Viewer window ====
 
