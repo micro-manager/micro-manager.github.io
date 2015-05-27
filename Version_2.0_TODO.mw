@@ -47,6 +47,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Files ====
 * Ensure loading of 1.4 files works properly, with fallbacks for properties that aren't available but should be in 2.0 (e.g. display settings)
 * Test importing using BioFormats importer in FIJI.
+* Ensure that 2.0 can handle saving files with 7000 positions (c.f. Neil Grant's problem in email)
 
 ==== Inspector ====
 * Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
