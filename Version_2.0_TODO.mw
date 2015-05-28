@@ -23,6 +23,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ** Error message: "Error: this application, or a library it uses, has passed an invalid numeric value (NaN, or not-a-number) to CoreGraphics API. This is a serious error and contributes to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update."
 ** EDT hang may be fixed; possible culprit was us creating two canvas update threads which could have been fighting each other for resources
 * Users with no profile settings will see viewer window and inspector both positioned at (0, 0)
+* Massive flicker when mousing over the image canvas
 
 ==== Miscellaneous ====
 
