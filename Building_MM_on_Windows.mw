@@ -118,7 +118,9 @@ The build will generate <code>_MMCorePy.pyd</code> (the extension module) and <c
 
 === Building individual Java components ===
 
-On Windows, Micro-Manager's Java components are built using Apache Ant.
+On Windows, Micro-Manager's Java components are built using Apache Ant. Before running the Ant targets described below, you must first run the following command, which downloads some Java libraries required by Micro-Manager:
+
+  ant -f buildscripts/fetchdeps.xml
 
 Each Java (and Clojure) component has a <code>build.xml</code> (an Ant build script):
 
