@@ -13,7 +13,9 @@ The Setup tab allows you to test the phototargeting device and perform initial c
 
 The Calibrate button starts an automated calibration procedure, where the phototargeter's internal coordinates are mapped to the pixel coordinates to the camera's pixel coordinates. This calibration allows the Projector plugin to convert mouse clicks or ROIs drawn on the live camera image into precisely directed phototargeting events.
 
-The calibration procedure starts by illuminating a few spots near the center of the phototargeter range. This gives the Projector plugin an estimate of the orientation and location of the camera field of view relative to the phototargeter range. Then, points in a square lattice are illuminated one by one, and imaged on the camera. The Projector plugin then uses the lattice measurements to compute a mapping of each pixel to phototargeter coordinates for future phototargeting. Mappings for each camera and phototargeting deviced are stored and will be remembered even after Micro-Manager is restarted.
+The calibration procedure starts by illuminating a few spots near the center of the phototargeter range. This gives the Projector plugin an estimate of the orientation and location of the camera field of view relative to the phototargeter range. Then, points in a square lattice are illuminated one by one, and imaged on the camera. The Projector plugin then uses the lattice measurements to compute a mapping of each pixel to phototargeter coordinates for future phototargeting. Mappings for each camera and phototargeting deviced are stored and will be remembered even after Micro-Manager is restarted. The relative orientation of the camera and phototargeting device does not matter; however they should be turned roughly square with each other (0, 90, 180, or 270 degrees) so that the square lattice isn't cut off.
+
+Obviously the calibration should be performed with the same objective and camera that will be used for actual phototargeting.  Currently there is no way to store different calibration mappings, e.g. for two different objectives.
 
 
 {| class="wikitable"
