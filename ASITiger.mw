@@ -5,7 +5,7 @@
 <tr><td>'''Author:'''</td><td>Jon Daniels (jon at asiimaging.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>XYStage, ZStage (motorized linear stage), Piezo, FWheel (FW-1000 filterwheel), FSlider (filter slider), Micromirror</td></tr>
+<tr><td>'''Devices:'''</td><td>XYStage, ZStage (motorized linear stage), Piezo, FWheel (FW-1000 filterwheel), FSlider (filter slider), Micromirror (scanner)</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>  
 
