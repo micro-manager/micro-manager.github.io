@@ -35,6 +35,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ** ASIdiSPIM and Magellan plugins are of course hopelessly nonfunctional.
 * Device Property Browser dialog is very ugly in night mode
 * Issues during startup (errors not finding org.micromanager.MMStudio)
+* Script panel is hard to read in night mode.
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
