@@ -36,6 +36,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Device Property Browser dialog is very ugly in night mode
 * Issues during startup (errors not finding org.micromanager.MMStudio)
 * Script panel is hard to read in night mode.
+* Wiki page for Netbeans setup needs to take into account Maven directory structure ("resources" and "scripts" directories need to be added to the "libraries" in project properties)
 
 ==== Testing ====
 * Be sure to test non-square images from time to time
