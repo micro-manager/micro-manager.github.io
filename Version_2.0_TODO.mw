@@ -11,7 +11,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Having to register again is wrong, probably. In general all settings that were in Preferences are "lost".
 ** This depends on if the first official 2.0 release is from UCSF vs. Open Imaging.
 ** More general problem with importing Preferences: how do we access the old Preferences node? org.micromanager.MMStudio no longer exists. See also [http://stackoverflow.com/questions/30464014/load-preferences-for-nonexistent-class this StackOverflow thread]
-* Main window size is a little too small on Windows
 * Auto-select previous profile at startup prompt? Entire profile system is maybe unclear.
 
 ==== Viewer window ====
