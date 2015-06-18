@@ -31,7 +31,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ** NB that due to line ending changes, conflicts in multipage TIFF reader/writer couldn't be detected. Other files (MMStudio, ScriptInterface, MMAcquisition, ChannelControlPanel, DisplayWindow, MetadataPanel, FileMenu,) got "deleted" (improperly moved, I guess) and thus similarly couldn't detect changes.
 ** ASIdiSPIM and Magellan plugins are of course hopelessly nonfunctional.
 * Device Property Browser dialog is very ugly in night mode
-* Issues during startup (errors not finding org.micromanager.MMStudio)
 * Script panel is hard to read in night mode.
 * Wiki page for Netbeans setup needs to take into account Maven directory structure ("resources" and "scripts" directories need to be added to the "libraries" in project properties)
 
