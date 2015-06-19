@@ -52,7 +52,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 * Ensure that 2.0 can handle saving files with 7000 positions (c.f. Neil Grant's problem in email)
 ** The issue here was that the summary metadata was getting duplicated for every single MultipageTiffWriter, while that information really ought to remain resident with the dataset as a whole instead.
 * Fix loci import errors
-* Multipage TIFF files are gigantic (160MB for a 16x16 single image)
 
 ==== Inspector ====
 * Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
