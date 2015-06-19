@@ -162,6 +162,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[MicroPoint]] - Galvo-based phototargeting device from Andor
 * [[Mightex]] - LED driver/controllers
 * [[Mightex_BLS]] - BLS Control Modules
+* [[MightexPolygon]] - Mightex Polygon multiwavelength patterned illuminators
 * [[Mosaic3]] - Andor Mosaic DMD Projection Device
 * [[Okolab]] - Okolab Microscope Incubators and Gas Controllers
 * [[Omicron]] - Omicron Laser Controller
