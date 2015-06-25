@@ -36,7 +36,7 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 
 == Known Issues ==
 
-* Camera timing calculations for all cameras assume CameraLink interface speeds.  USB3 interface has different timing, so if you are missing frames increase the slice period manually.
+* Camera timing calculations assume CameraLink interface speeds.  If you are using a USB3 interface the timing may be different, so if you are missing frames uncheck "minimize slice period" and increase the slice period manually.
 
 == Please contact us! ==
 
