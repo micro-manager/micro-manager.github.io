@@ -34,6 +34,10 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 * 20141207: added ability to export data for Fiji Multiview plugin
 * (1.4.19 release)
 
+== Known Issues ==
+
+* Camera timing calculations for all cameras assume CameraLink interface speeds.  USB3 interface has different timing, so if you are missing frames increase the slice period manually.
+
 == Please contact us! ==
 
 The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager.
