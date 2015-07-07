@@ -1,4 +1,6 @@
-This page is a repository of example Beanshell scripts using the [https://micro-manager.org/wiki/Version_2.0_API 2.0 API]
+This page shows some example Beanshell scripts using the [https://micro-manager.org/wiki/Version_2.0_API 2.0 API].
+
+More 2.0 scripts can be found [https://github.com/micro-manager/micro-manager/tree/mm2/scripts| in the 2.0 repository on github].
 
 === Manual acquisition with display ===
 
