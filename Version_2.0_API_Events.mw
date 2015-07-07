@@ -39,3 +39,6 @@ These events are specific to a single Datastore, and can be accessed via <code>D
 * DatastoreSavedEvent: the Datastore has been saved to disk in some format.
 * NewImageEvent: a new Image has been added to the Datastore.
 * NewSummaryMetadataEvent: new SummaryMetadata has been set for the Datastore.
+
+
+{{2.0_Sidebar}}
