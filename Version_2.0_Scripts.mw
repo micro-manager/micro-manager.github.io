@@ -29,3 +29,6 @@ This script creates a Datastore, adds a DisplayWindow to it, manually snaps a fe
  store.putImage(image1);
  store.putImage(image2);
  store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);
+
+
+{{2.0_Sidebar}}
