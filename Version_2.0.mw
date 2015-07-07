@@ -2,6 +2,12 @@ Micro-Manager 2.0 is a major step forwards compared to the 1.4 series that prece
 
 This page serves as a "hub" for various other pages related to Version 2.0.
 
+==== Downloads ====
+
+[http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Windows/ Windows]
+
+[http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Mac/ Mac]
+
 ==== API ====
 
 If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. 
