@@ -1,4 +1,4 @@
-{{Note|These instructions are not up to date.}}
+{{Note|These instructions are not up to date. If you are just looking for a way to use a Java IDE, see the instructions for [[Using Netbeans]].}}
 
 # Download and install [http://www.eclipse.org/ Eclipse Kepler].  One can't use the newer Luna, Mars, etc releases, as those [https://wiki.eclipse.org/Eclipse/Installation rely on JDK 1.7], whereas we are limited JDK to 1.6 due to ImageJ.
 <!--
