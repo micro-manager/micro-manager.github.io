@@ -1,12 +1,9 @@
 {{sidebar
 |title=Version 2.0
 |content=
-* [[Micro-Manager User's Guide|User's Guide]]
-* [[Micro-Manager Configuration Guide|Hardware Configuration Guide]]
-* [[Plugins]]
-* [http://valelab.ucsf.edu/publications/2010EdelsteinCurrProt.pdf Tutorial (PDF)]
-* [http://www.jbmethods.org/jbm/article/view/36/29 Advanced Methods]
-* [[FAQ]]
-* [[More Help Topics]]
-* [[Screencasts|Video Screencasts]]
+* [[Version_2.0_API|Version 2.0 API]]
+* [[Version_2.0_API_How_do_I|Transition guide]]
+* [[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/| 2.0 Javadoc]]
+* [[Version_2.0_API_Events]]
+* [[Version_2.0_Scripts]]
 }}
