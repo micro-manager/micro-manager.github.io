@@ -76,6 +76,7 @@ Here is an example of creating a new Coords object:
  Coords coords = builder.build();
  coords.getChannel(); // 1
  coords.getZ(); // 4
+ coords.getTime(); // -1 as no time value was set
  coords.getIndex("polarization"); // 3
  Coords coords2 = coords.copy().z(5).build();
  coords2.getZ(); // 5
