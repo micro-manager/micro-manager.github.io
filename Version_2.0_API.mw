@@ -1,33 +1,33 @@
 The 2.0 API of Micro-Manager is a substantial departure from previous versions. With it, we want to provide access to many aspects of the program that were previously hidden in internal classes. For example, it is now much more straightforward to access acquisition image data, control image display windows, read and modify acquisition metadata, and save data to disk. Additionally, we have rearranged the <code>org.micromanager</code> package. <code>org.micromanager.api</code> has been removed; instead, everything that is ''not'' part of the API has been moved into various "internal" packages (like <code>org.micromanager.internal</code>, <code>org.micromanager.display.internal</code>, etc.). 
 
-This page will break down how the new API works and how to control it.
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ Javadocs] should prove useful to anyone wanting to familiarize themselves with the API. This page provides some more focused and descriptive guidance, with reference to the Javadocs where appropriate.
 
 == Acquisition data: the data API ==
 
-The <code>org.micromanager.data</code> package contains all of the API for reading and manipulating acquisition data. In particular, there are several new classes that you should familiarize yourself with if you want to read, modify, or create acquisition data or metadata.
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-frame.html org.micromanager.data] package contains all of the API for reading and manipulating acquisition data. In particular, there are several new classes that you should familiarize yourself with if you want to read, modify, or create acquisition data or metadata.
 
-As a general note, many of the classes (in particular, <code>Image, Coords, Metadata,</code> and <code>SummaryMetadata</code>) below are immutable. This means that a given instance of the class cannot be modified -- it will have methods to read its state, but no methods to modify them. If you want a modified version of a class, instead you make a copy that is different in the relevant ways. Immutability provides many advantages for ensuring coherency of data in complex workflows. However, it can take some getting used to.
+As a general note, many of the classes (in particular, [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html Image], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Coords.html Coords], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html Metadata], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/SummaryMetadata.html SummaryMetadata]) below are immutable. This means that a given instance of the class cannot be modified -- it will have methods to read its state, but no methods to modify them. If you want a modified version of a class, instead you make a copy that is different in the relevant ways. Immutability provides many advantages for ensuring coherency of data in complex workflows. However, it can take some getting used to.
 
 === The Datastore class ===
 
-<code>org.micromanager.data.Datastore</code> is a new class that holds the image data and summary metadata of an acquisition. Every acquisition has an associated Datastore, and you can create your own Datastores to perform custom acquisitions (see the section on the <code>DataManager</code>, below). 
+[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html org.micromanager.data.Datastore] is a new class that holds the image data and summary metadata of an acquisition. Every acquisition has an associated Datastore, and you can create your own Datastores to perform custom acquisitions (see the section on the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html DataManager], below). 
 
 The primary functions you will likely be interested in are:
 
-* <code>putImage</code> and <code>getImage</code>, which allow you to add and retrieve Images from the Datastore (see the <code>Image</code> class, below).
-* <code>save</code>, which saves the contents of the Datastore to disk.
-* <code>registerForEvents</code>, which allows you to be notified whenever the data in the Datastore (i.e. the Images or SummaryMetadata) are modified. The <code>Datastore</code> has a <code>com.google.common.eventbus.EventBus</code> that signals events; appropriate methods with the <code>com.google.common.eventbus.Subscribe</code> annotation will be called when the event occurs. For example:
+* [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image) putImage] and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords) getImage], which allow you to add and retrieve Images from the Datastore (see the <code>Image</code> class, below).
+* [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.lang.String) save], which saves the contents of the Datastore to disk. There's also [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window) a version of the method] that prompts the user for a directory to save to.
+* [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#registerForEvents(java.lang.Object) registerForEvents], which allows you to be notified whenever the data in the Datastore (i.e. the Images or SummaryMetadata) are modified. The Datastore has a <code>com.google.common.eventbus.EventBus</code> that signals events; appropriate methods with the <code>com.google.common.eventbus.Subscribe</code> annotation will be called when the event occurs. For example:
 
 <code>
- import com.google.common.eventbus.Subscribe;
- import org.micromanager.data.Datastore;
- import org.micromanager.data.Image;
- import org.micromanager.data.NewImageEvent;
- import org.micromanager.ScriptInterface;
+import com.google.common.eventbus.Subscribe;
+import org.micromanager.data.Datastore;
+import org.micromanager.data.Image;
+import org.micromanager.data.NewImageEvent;
+import org.micromanager.Studio;
 
 public class MyClass {
-   public MyClass(ScriptInterface studio) {
-      Datastore myDatastore = studio.data().createNewDatastore();
+   public MyClass(Studio studio) {
+      Datastore myDatastore = studio.data().createRAMDatastore();
       myDatastore.registerForEvents(this);
    }
 
@@ -38,49 +38,25 @@ public class MyClass {
    }
 }</code>
 
-There are many other functions available in <code>Datastore</code> that you may wish to make use of.
-
 === The Image class ===
 
-The <code>Image</code> class replaces the old <code>TaggedImage</code> class as our internal representation of a single 2D, monochromatic image. Where <code>TaggedImage</code> had a <code>JSONObject</code> for all metadata and an <code>Object</code> for the image pixel data, Image has getter methods for:
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html Image] class replaces the old <code>TaggedImage</code> class as our internal representation of a single 2D, monochromatic image. Where <code>TaggedImage</code> had a <code>JSONObject</code> for all metadata and an <code>Object</code> for the image pixel data, Image has getter methods for:
 
-* The <code>Metadata</code> of the image (see below)
-* The <code>Coords</code> of the image, which represent its location within the Datastore.
+* The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html Metadata] of the image (see below)
+* The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Coords.html Coords] of the image, which represent its location within the Datastore.
 * The image data itself. As with TaggedImage, this data is available as a raw Object (most likely a <code>byte[]</code> or <code>short[]</code>); however, the Image class can also generate an ImgPlus if you are running in Fiji and want to make use of the ImgLib image manipulation routines.
 
 In addition there are various methods for creating copies of the <code>Image</code> with different metadata or at different coordinates. 
 
-While <code>Image</code> is intended to completely supplant <code>TaggedImage</code>, the latter class is not completely gone; it is still generated by various <code>MMCore</code> functions. You can generate an <code>Image</code> from a <code>TaggedImage</code> by calling the <code>convertTaggedImage</code> method of the <code>DataManager</code>, below.
+While <code>Image</code> is intended to completely supplant <code>TaggedImage</code>, the latter class is not completely gone; it is still generated by various <code>MMCore</code> functions. You can generate an <code>Image</code> from a <code>TaggedImage</code> by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#convertTaggedImage(mmcorej.TaggedImage) convertTaggedImage] method of the <code>DataManager</code>, below.
 
-=== Metadata and SummaryMetadata ===
+=== [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html Metadata] and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/SummaryMetadata.html SummaryMetadata] ===
 
-These classes replace the <code>JSONObject</code> that we used to use to store image metadata and acquisition summary metadata. The old system did not enforce any kind of type safety, tended to have redundant and/or poorly-named entries, and was slow. The new classes have pre-defined supported fields that are strongly-typed, and can be rapidly constructed based on a template metadata object.
+These classes replace the <code>JSONObject</code> that 1.4 used to store image metadata and acquisition summary metadata. The old system did not enforce any kind of type safety, tended to have redundant and/or vaguely-named entries, and was slow. The new classes have pre-defined supported fields that are strongly-typed, and can be rapidly constructed based on a template metadata object.
 
-Both of these classes (and the <code>Coords</code> and <code>DisplaySettings</code> classes, discussed later) use a "Builder" pattern to create new instances. For example:
+Both of these classes (and the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Coords.html Coords] and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplaySettings.html DisplaySettings] classes, discussed later) use a "Builder" pattern to create new instances. See [[Using_Builders]] for more information.
 
-<code> 
- Metadata.MetadataBuilder builder = gui.data().getMetadataBuilder();
- builder.binning(2);
- builder.bitDepth(12);
- builder.channelName("DAPI");
- builder.comments("Test snap with DAPI filter settings");
- Metadata metadata = builder.build();
-</code>
-
-The builder holds the state of the <code>Metadata</code> object in a mutable form. Once <code>builder.build()</code> is called, a new, immutable <code>Metadata</code> instance is created. This example creates a <code>Metadata</code> object with the binning, bit depth, channel name, and comments fields filled out; all other fields will be null. After calling <code>builder.build()</code> above, the builder can be re-used to create a new Metadata object later -- for example, by calling <code>channelName</code> and <code>comments</code> again with different strings, to create a <code>Metadata</code> for a different channel setting. The generated <code>Metadata</code> objects do not have setters, only getters -- so you could call <code>metadata.getBinning()</code> and get 2, for example.
-
-You can also generate a builder from an existing <code>Metadata</code> object (or a <code>SummaryMetadata</code>, etc.) by using its <code>copy()</code> method. For example, the below code would create a new <code>Image</code> from an existing one, with an updated comment:
-
-<code> 
- Metadata.MetadataBuilder builder = image.getMetadata().copy();
- builder.comment("Updated comment for this image");
- Metadata newMetadata = builder.build();
- image = image.copyWithMetadata(newMetadata);
-</code>
-
-The builder generated by the <code>copy</code> method is pre-populated with all of the fields of its source <code>Metadata</code> object, so you don't have to manually set them all.
-
-If you have extra fields that you wish to include in the metadata or summary metadata, there is a <code>userData</code> field that takes a JSONObject. You can add whatever fields you like to this object, but you won't benefit from the type-safety that the <code>Metadata</code> and <code>SummaryMetadata</code> classes provide.
+If you have extra fields that you wish to include in the metadata or summary metadata, there is a <code>userData</code> field with the type of [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/PropertyMap.html PropertyMap], which allows for storing semi-arbitrary key-value pairs. You can add whatever fields you like to this object. Micro-Manager itself (the "first-party" code) will not pay any attention to values in that object, but it will preserve them for any third-party code (plugins and scripts) that does.
 
 === Coords ===
 
