@@ -119,4 +119,40 @@ By default, newly-created Datastores from the [http://valelab.ucsf.edu/~MM/doc-2
 
 All Datastores that Micro-Manager creates for its own purposes (for example, for storing the results of a multi-dimensional acquisition) are automatically managed.
 
+== Other API entities ==
+
+=== Album ===
+
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Album.html Album] provides access to a "contextual" Datastore that users can use to create ad-hoc collections of images. This is the store that the "Snap to image" button adds images to. You can access the Album via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#album() Studio.album] method.
+
+=== CompatibilityInterface ===
+
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface] is where various miscellaneous API methods from 1.4 live. These include methods for running acquisitions, manipulating the data processing pipeline, checking the day/night mode, working with the Stage Position List, etc. Effectively it is a subset of the old ScriptInterface object from 1.4; however, many methods that used to be in it have been moved into more specific entities, or removed altogether due to changes in how 2.0 handles data.
+
+You can access the CompatibilityInterface via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#compat() Studio.compat] method.
+
+=== MMCore ===
+
+The Micro-Manager Core is unchaged compared to 1.4. You can access it using [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#core() Studio.core]. 
+
+=== EventManager ===
+
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/events/EventManager.html EventManager] is used to register for various system-wide events, as listed in the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/events/package-frame.html org.micromanager.events package]. You can access the EventManager via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#events() Studio.events] method.
+
+=== SnapLiveManager ===
+
+[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html SnapLiveManager] is used for controlling the "Snap" and "Live" components and is thus important for taking images with the camera(s). It can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#live() Studio.live] method.
+
+=== LogManager ===
+
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/LogManager.html LogManager] is used to log and display messages, which can be useful for indicating when important events occur or when something goes wrong. Accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#logs() Studio.logs] method.
+
+=== UserProfile ===
+
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/UserProfile.html UserProfile] stores information specific to the current user of the microscope, such as preferred window positions and remembered form inputs. When the user starts Micro-Manager, they are prompted to select a profile to use; relevant information is then pulled from that profile. You can use the UserProfile to store and retrieve values using a simple key/value system. Accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#profile() Studio.profile] method.
+
+=== ScriptController ===
+
+[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/ScriptController.html ScriptController] is a small entity for interacting with the BeanShell scripting system. Access via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#scripter() Studio.scripter] method.
+
 {{2.0_Sidebar}}
