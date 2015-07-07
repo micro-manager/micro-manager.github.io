@@ -139,3 +139,5 @@ The MMCore is the same as it's always been, so methods for setting hardware prop
 or
 
  mm.getCMMCore()
+
+{{2.0_Sidebar}}
