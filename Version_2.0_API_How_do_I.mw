@@ -111,7 +111,8 @@ Probably the simplest way to do this is to can snap images using the SnapLiveMan
  List<Image> images = mm.live().snap(false);
  // Let's assume for now that we aren't using a multi-camera setup, so the
  // above list only has one element.
- Image image = images.get(0); // Set the time and channel indices for this image. Coordinate axes that you
+ Image image = images.get(0);
+ // Set the time and channel indices for this image. Coordinate axes that you
  // don't care about can be left alone.
  Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
  builder = builder.time(0).channel(0);
