@@ -60,14 +60,16 @@ If you have extra fields that you wish to include in the metadata or summary met
 
 === Coords ===
 
-A Coords is a location in N-dimensional space. It includes an arbitrary list of axes (represented by strings like "time", "channel", etc.), and a position along each axis. Every <code>Image</code> has a <code>Coords</code> denoting its position in the <code>Datastore</code>, and every <code>Image</code>'s coordinates must be unique.
+A [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Coords.html Coords] is a location in N-dimensional space. It includes an arbitrary list of axes (represented by strings like "time", "channel", etc.), and a position along each axis. Every [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html Image] has a Coords denoting its position in the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore], and every Image's coordinates must be unique. If you attempt to add an Image to a Datastore whose Coords match those of an image that is already in the Datastore, then the old image is replaced by the new one.
 
 You are not restricted to the classic 4 axes of channel, time, z slice, and stage position. You can freely add additional axes and call them whatever you like. The only axis that Micro-Manager treats specially is the channel axis, and then only in the display code. Additionally, you are not required to provide a position along any given axis. If you ask a Coords what its position is for an axis it does not have, it will return -1.
 
-As with the <code>Metadata</code> and <code>SummaryMetadat</code> classes, <code>Coords</code> are generated using a builder:
+However, please note that Micro-Manager's savefile formats do not support extra axes at this time. Consequently, use of arbitrary axes must be limited to RAM-based Datastores (created with [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore() DataManager.createRAMDatastore]). In the future we will add support for saving arbitrary axes to disk.
+
+As with the <code>Metadata</code> and <code>SummaryMetadat</code> classes, <code>Coords</code> are generated using a builder.
 
 <code>
- Coords.CoordsBuilder builder = gui.data().getCoordsBuilder();
+ Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
  // Convenience functions to set the standard axes
  builder.time(4); // 5th timepoint
  builder.channel(0); // 1st channel
@@ -79,15 +81,13 @@ As with the <code>Metadata</code> and <code>SummaryMetadat</code> classes, <code
  int zSlice = coords.getPositionAt(Coords.Z) // -1
 </code>
 
-However, there is an important caveat with current versions of Micro-Manager 2.x: only the classic four axes are preserved when <code>Datastore</code> is saved to disk. We will rectify this in future.
+=== The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html DataManager] ===
 
-=== The DataManager ===
-
-Because the API only exposes interfaces (i.e. it does not expose concrete implementations of classes), you do not have the ability to directly create new instances of the <code>Datastore, Image, Coords, Metadata</code>, and <code>SummaryMetadata</code> classes. The <code>DataManager</code> provides that functionality for you, and also implements some useful utility methods (like <code>convertTaggedImage</code>, mentioned earlier, as well as access to the current "album" <code>Datastore</code>). It can be accessed via the <code>org.micromanager.ScriptInterface.data()</code> method, and uses of it are shown in examples above.
+Because the API only exposes interfaces (i.e. it does not expose concrete implementations of classes), you do not have the ability to directly create new instances of the Datastore, Image, Coords, Metadata, and SummaryMetadata classes. The DataManager provides that functionality for you (via e.g. [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#getCoordsBuilder() getCoordsBuilder], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#getMetadataBuilder() getMetadataBuilder], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#getSummaryMetadataBuilder() getSummaryMetadataBuilder]), and also implements some useful utility methods (like [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#convertTaggedImage(mmcorej.TaggedImage) convertTaggedImage], mentioned earlier, and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean) loadData] to load data from disk). The DataManager can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#data() Studio.data()] method, and uses of it are shown in examples above.
 
 == Display controls: the display API ==
 
-The <code>org.micromanager.display</code> package contains the API for creating, controlling, and manipulating image display windows. It provides the ability to create new display windows, programatically control them, and listen to certain events they generate when interacted with.
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/package-frame.html display] package contains the API for creating, controlling, and manipulating image display windows. It provides the ability to create new display windows, programatically control them, and listen to certain events they generate when interacted with.
 
 === DisplayWindow ===
 
