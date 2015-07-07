@@ -1,19 +1,15 @@
-This page collects our various MM2.0 project pages.
+Micro-Manager 2.0 is a major step forwards compared to the 1.4 series that preceded it. The user interface (UI) has been overhauled, especially with respect to the image display window. The API has also been completely reworked, allowing for more powerful scripts and plugins. This was all enabled by a new internal data model for working with images and image metadata.
 
-[[Version_2.0_Scripts]]
+This page serves as a "hub" for various other pages related to Version 2.0.
 
-[[Version_2.0_TODO]]
+==== API ====
 
-[[Version_2.0_Wishlist]]
+If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities, and [[Version_2.0_API_How_do_I]] should answer common questions. The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ Javadocs] will likely also prove useful. All packages whose names do _not_ include "internal" are part of the API in 2.0. In particular, the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ root API], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-summary.html data], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ display] packages should prove useful.
 
-[[Version_2.0_API]]
+==== API Events ====
 
-[[Version_2.0_API_How_do_I]]
+Version 2.0 provides greater access to the event publication and subscription system initially introduced in 1.4. [[Version_2.0_API_Events]] has more information on what events are available.
 
-[[Version_2.0_API_Events]]
+==== Scripts ====
 
-[[Version_2.0_Data_Processing_Pipeline]]
-
-[[Version_2.0_Milestones]]
-
-[[Version_2.0_Features]]
+For some examples of writing Beanshell scripts for 2.0, see [[Version_2.0_Scripts]]
