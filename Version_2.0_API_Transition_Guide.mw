@@ -1,0 +1,124 @@
+One of the major changes in 2.0 is a restructuring of the API. In 1.4, most of the functionality of the API was in a single module, [https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html ScriptInterface]. In 2.0, the API has been subdivided, and some methods have been replaced by new techniques for accomplishing similar tasks. This page runs down the list of methods in 1.4's ScriptInterface and tells you how to perform the equivalent task in 2.0.
+
+=== CompatibilityInterface ===
+
+First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface] module contains many old methods from ScriptInterface, unmodified. These methods work as they did in 1.4, and include the following:
+
+* addImageProcessor
+* addMMListener
+* attachRunnable
+* autostretchCurrentWindow
+* clearRunnables
+* enableRoiButtons
+* getAcquisitionEngine2010
+* getAutofocus
+* getAutofocusManager
+* getBackgroundStyle
+* getChannelExposureTime
+* getHideMDADisplayOption
+* getPositionList
+* getROI
+* getVersion
+* installAutofocusPlugin
+* isAcquisitionRunning
+* isPaused
+* loadAcquisition
+* logStartupProperties
+* makeActive
+* markCurrentPosition
+* refreshGUI
+* refreshGUIFromCache
+* registerProcessorClass
+* removeImageProcessor
+* removeMMListener
+* runAcquisition
+* saveConfigPresets
+* setAcquisitionSettings
+* setBackgroundStyle
+* setChannelExposureTime
+* setConfigChanged
+* setImageProcessorPipeline
+* setPause
+* setPositionList
+* setROI
+* showAutofocusDialog
+* showXYPositionList
+* versionLessThan
+
+=== acquisitionExists ===
+
+In 1.4, Micro-Manager maintained a registry of all "open" datasets (a.k.a. acquisitions), using a unique string key for each one. In 2.0, such a registry no longer exists. Any code that creates a new [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] (the 2.0 equivalent to a 1.4 acquisition) is responsible for holding onto references to it, destroying it, recreating it, etc.
+
+It is theoretically possible to find Datastores by way of their [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayWindow.html DisplayWindows], the windows that show images from the Datastore. You can ask the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html DisplayManager] for a list of all DisplayWindows, and ask each DisplayWindow for its Datastore using the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore() getDatastore] method. However, remember that Datastores are not required to have any DisplayWindows (and also that it is possible to have multiple DisplayWindows for a single Datastore). If you really need for your code to find a Datastore created by someone else's code, then you should find a better way for the two components to talk to each other.
+
+=== addImageToAcquisition ===
+
+In 2.0, third-party code is responsible for maintaining its own [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastores] (the rough equivalent of 1.4 acquisitions), and can freely add images to Datastores themselves using the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image) putImage] method.
+
+=== addMMBackgroundListener ===
+
+This method was used as part of 1.4's day/night system for enabling low-contrast displays for use in darkrooms. 2.0 uses a different system that works automatically across the entire program; there is no need for individual components to register themselves. Thus this method is obsolete.
+
+=== addToAlbum ===
+
+The "album" [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] is now available via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#album() album] method, and you can freely add images to it yourself (see the <code>addImageToAcquisition</code> notes above)
+
+=== clearMessageWindow ===
+
+This method was moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/ScriptController.html ScriptController] object accessible via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#scripter() scripter] method.
+
+=== closeAcquisition ===
+
+As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains responsibility for all open datasets. If you want to clean up a [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore], you must remove all references to that Datastore from memory. Micro-Manager will not maintain open references itself except via any [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayWindow.html DisplayWindows] you may have requested be created. You can close all open DisplayWindows for a given Datastore via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html DisplayManager's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html#closeDisplaysFor(org.micromanager.data.Datastore) closeDisplaysFor] method.
+
+=== closeAcquisitionWindow ===
+
+See the notes on <code>closeAcquisition</code>, above.
+
+=== closeAllAcquisitions ===
+
+As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains a listing of all "acquisitions". Third-party code can freely create new [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastores] and Micro-Manager will not be able to "see" them. Thus this method is impossible to implement in 2.0. 
+
+However, if you just want to clean up the UI, then the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html DisplayManager] has a [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html#closeAllDisplayWindows(boolean) closeAllDisplayWindows] method.
+
+=== createAcquisition ===
+
+You can request your own new [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastores] (the rough equivalent of 1.4 acquisition objects) via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html DataManager's] various "createDatastore" methods (e.g. [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore() createRAMDatastore], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean) createMultipageTIFFDatastore], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String) createSinglePlaneTIFFSeriesDatastore]). 
+
+=== displayImage ===
+
+This has been replaced by [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayWindow.html DisplayManager's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayManager.html#show(org.micromanager.data.Image) show] method. Note that this method creates a new [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] to store the image in. The old behavior of showing images in the Snap/Live Window is no longer possible.
+
+=== enableLiveMode ===
+
+This has been replaced by [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html SnapLiveManager's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html#setLiveMode(boolean) setLiveMode] method. You should also be aware of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean) setSuspended] method if you need to briefly stop live mode, only to resume it later.
+
+=== getAcqDlg === 
+
+This method was deprecated in 1.4, and has been removed in 2.0. 
+
+=== getAcquisition ===
+
+This method was deprecated in 1.4 and has been removed in 2.0.
+
+=== getAcquisitionPath ===
+
+As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains records on any acquisition objects; you are responsible for maintaining your own references to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] that your data is in.
+
+You can access the save path for a Datastore via its [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#getSavePath() getSavePath] method.
+
+=== getAcquisitionImageBitDepth ===
+
+As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains records on any acquisition objects; you are responsible for maintaining your own references to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] that your data is in.
+
+Image bit depth is now a property of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html Image] objects in the Datastore, and is theoretically not required to be the same for all Images in that Datastore (though in practice we do not expect varying bit depths to work right now). You can get the bit depth for an Image by asking for its [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html Metadata] (via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html#getMetadata() getMetadata] method) and then calling the Metadata's [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html#getBitDepth() getBitDepth] method. 
+
+If you need to get a single image out of a Datastore, you can call its [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#getAnyImage() getAnyImage] method. 
+
+=== getAcquisitionImageByteDepth ===
+
+As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains records on any acquisition objects; you are responsible for maintaining your own references to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] that your data is in.
+
+Image byte depth is now a property of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html Image] objects in the Datastore, and is theoretically not required to be the same for all Images in that Datastore (though in practice we do not expect varying byte depths to work right now). You can get the byte depth for a single image by calling its [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel() getBytesPerPixel] method. 
+
+If you need to get a single image out of a Datastore, you can call its [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#getAnyImage() getAnyImage] method.
