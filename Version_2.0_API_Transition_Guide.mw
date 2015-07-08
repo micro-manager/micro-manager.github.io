@@ -45,6 +45,8 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/m
 * showXYPositionList
 * versionLessThan
 
+You can access the CompatibilityInterface by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#compat() compat] method. The Studio in turn is available in the BeanShell window as "mm", and is provided to plugins when they are initialized.
+
 === acquisitionExists ===
 
 In 1.4, Micro-Manager maintained a registry of all "open" datasets (a.k.a. acquisitions), using a unique string key for each one. In 2.0, such a registry no longer exists. Any code that creates a new [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] (the 2.0 equivalent to a 1.4 acquisition) is responsible for holding onto references to it, destroying it, recreating it, etc.
