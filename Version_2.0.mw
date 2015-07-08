@@ -14,7 +14,9 @@ These builds are generated every night.
 
 If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. 
 
-[[Version_2.0_API_How_do_I]] is a "transition guide" of sorts that covers how to perform common tasks. If you have a task that you want to perform that is not covered, then please ask us on the mailing list and we can update the documentation.
+[[Version_2.0_API_How_do_I]] is a demonstration of how to accomplish various common tasks using the new API. If you have a task that you want to perform that is not covered, then please ask us on the mailing list and we can update the documentation.
+
+[[Version_2.0_API_Transition_Guide]] is a transition guide to help people who are familiar with the 1.4 API and need to port their code to the 2.0 API. It breaks down where old API methods have gone and how to replace deprecated methods.
 
 The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ Javadocs] will likely also prove useful. All packages whose names do _not_ include "internal" are part of the API in 2.0. In particular, the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ root API], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-summary.html data], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ display] packages should prove useful.
 
