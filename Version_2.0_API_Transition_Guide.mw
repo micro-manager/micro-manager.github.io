@@ -338,3 +338,6 @@ Replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/microm
 === unregisterForEvents ===
 
 Moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/events/EventManager.html EventManager] object, which can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#events() events] method.
+
+
+{{2.0_Sidebar}}
