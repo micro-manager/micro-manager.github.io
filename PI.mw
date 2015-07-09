@@ -15,12 +15,11 @@ This adapter controls stages connected to PI SCPI Controllers. The SCPI command 
 
 The PI adapter is available since version 1.2.10.
 
-Serial port settings for E-662: 9600 baud, 1 stop bit, no parity, hardware handshake. Use a null-modem cable.
-
 The controller can be set in 'Local' mode (it will listen to the frontpanel, not to the computer), or in 'Remote' mode (it will listen to the computer, not to the front panel).  The 'Interface' property lets you switch between these two modes.  You might want to set this in the 'System' 'Startup' and 'Shutdown' property groups.
 
-All communications to devices take place through serial ports. Check the documentation to your controller for the required port settings, however, the default settings most likely work fine.
+All communications to devices take place through serial ports. Check the manual to your controller for the required port settings.
 
+Serial port settings for E-662: 9600 baud, 1 stop bit, no parity, hardware handshake. Use a null-modem cable.
 
 This driver does not work with the E-750. The E-750 uses a special binary protocol over the serial line.
 
