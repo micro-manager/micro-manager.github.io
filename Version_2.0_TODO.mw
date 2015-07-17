@@ -23,7 +23,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 ==== Miscellaneous ====
 
-* Update useful existing scripts to new API
 * Scan through entire codebase for TODO tags and fix them if appropriate
 * Autofocus API needs some attention (remove use of PropertyItem and MMException?)
 * Merge against latest SVN
