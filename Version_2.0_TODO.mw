@@ -57,10 +57,6 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 ==== Inspector ====
 * Autostretching and linking interact poorly -- autostretch should apply to the currently-displayed image.
 ** So make autostretch be a per-channel property, and modify ChannelControlPanel to only use the linked min/max when autostretch is not set. Requires adding an autostretch toggle button to each channel.
-* Histogram full/auto once buttons are squished together on Windows
-* MetadataPanel doesn't show anything when first opened (or when different images in MDA are selected -- did a 3-channel snapshot MDA).
-* Histogram autoscaling only seems to apply to *next* image, not current image (OnPixelsSet vs. OnNewImage?).
-* Size of scalebar is wrong (e.g. tiny 100um scalebar should be much bigger or number should be different)
 * Option for centered text for scalebar (or different alignments in general)
 * Option to change size of timestamp (incl. font size)
 * Inspector window moves when size changes (want to keep top-left corner consistent)
