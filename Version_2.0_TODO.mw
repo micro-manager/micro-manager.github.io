@@ -18,7 +18,7 @@ TODO list for 2.0. These are considered release blockers, unlike the items in th
 
 * Image dimensions etc. move from main window to image window?
 * In fullscreen mode would be nice if we could shove the image over to make room for the inspector.
-* Multicam config file, 10ms exposure, start program, click "Live" in main frame (with no pre-existing image window) -> tons of error spam and also sometimes we get an EDT hang.
+* Multicam config file, 10ms exposure, start program, click "Live" in main frame (with no pre-existing image window) -> tons of error spam
 ** Error message: "Error: this application, or a library it uses, has passed an invalid numeric value (NaN, or not-a-number) to CoreGraphics API. This is a serious error and contributes to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update."
 
 ==== Miscellaneous ====
