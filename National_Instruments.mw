@@ -39,13 +39,4 @@ To enable hardware triggering, the card must support triggering, and you must te
 
 Once you have set a valid input line, and assuming the card is capable of doing hardware triggering, the "SupportsTriggering" property should be set to 1. This indicates that the card is capable of performing hardware triggering. See [[Hardware-based_Synchronization_in_Micro-Manager]] for more information on setting up triggering with the rest of your system.
 
-=== Miscellaneous ===
-
-Besides NI100X adapter this library contains a PI Z-stage driver that is internally linked to the analog output. For regular use of NI boards please disregard the Z-stage device and do not instantiate it in your setup even if you happen to have a PI stage attached. To use a PI stage refer to a standard PI adapter elsewhere in the micro-manager device list.
-
-The only time that you would want to to use the PI stage driver from this library is for the 2-Photon microscope setup described in 
-[http://biomicroscopy.ucsf.edu/mediawiki/index.php?title=Micromanager/2P BIDC 2P Microscopy]
-
-
-
 {{Devices_Sidebar}}
