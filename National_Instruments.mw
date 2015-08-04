@@ -31,7 +31,11 @@ Once you have set a valid input line, and assuming the card is capable of doing 
 
 === Analog I/O ===
 
-TBD
+The AnalogIO device can be used to control an analog output line from the card. As with DigitalIO devices, you are required to specify the output line when creating the device in the Hardware Configuration Wizard, as the "IOChannel" property. You can see a list of available pins to use for analog output by running NI-MAX, opening the "Devices and Interfaces" section, finding your card, right-clicking on it, and selecting the "Device Pinouts" option. Analog lines will have names like "AO 0". However, for use in µManager, no spaces are used, and the device name must be provided as a prefix, so for example, you could use "Dev1/ao0" as the IOChannel property value.
+
+Once properly configured, you can adjust the output voltage of the device by setting the "Volts" property. 
+
+As of 1.4.22, the Hardware Configuration Wizard will provide you with a convenient dropdown list of valid analog lines, instead of requiring you to manually type a value in. However, as a side-effect of this change, the IOChannel property is now case-sensitive. Configuration files with names like "Dev1/AO1" will fail to load because the device is expecting a name like "Dev1/ao1" (with lower-case "ao" instead of "AO"). You can open the configuration file in a text editor and replace the string, and the modified configuration file should load correctly.
 
 === Miscellaneous ===
 
