@@ -29,7 +29,7 @@ As of 1.4.22, the Hardware Configuration Wizard will provide you with a convenie
 
 You can use the "DA Z Stage" device (under the Utilities section of the Hardware Configuration Wizard) to use an AnalogIO device as a stage controller. This can be useful, for example, for piezo-driven stages. The DA stage simply maps the output voltage range of the AnalogIO device linearly to a micron range (e.g. 0 volts = 0µm, 5 volts = 200µm). This range can be configured when setting up the DA stage device.
 
-==== Hardware Triggering ==== 
+=== Hardware Triggering ===
 
 As of version 1.4.22, the NI100x adapter supports analog and digital hardware triggering for fast acquisitions, for certain NI cards only. In particular, it seems likely that their cheaper USB devices without external power supplies are unlikely to support such triggering, unfortunately. We have yet to figure out how to determine if a card supports triggering based solely on its spec sheet on NI's website, and suggest contacting an NI representative to make certain the device you are thinking about meets your needs
 
