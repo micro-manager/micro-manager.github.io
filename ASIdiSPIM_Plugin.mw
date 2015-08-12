@@ -22,6 +22,7 @@ The plugin documentation is now is on the diSPIM wiki at [http://dispim.org disp
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
+* 20150811: autofocus during calibration, rapid-fire (hardware-timed) acquisition
 * (1.4.21 release)
 * 20150428: autofocus to define calibration (not yet during timelapse)
 * 20150415: added basic stage scanning (contact ASI for firmware if needed)
