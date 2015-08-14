@@ -1,4 +1,79 @@
 __NOTOC__
+== Micro-Manager 1.4.21 (April 30, 2015) ==
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.21.exe Windows 32-bit], 61 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.21.exe Windows 64-bit], 62 MB<br />
+
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.21.dmg Mac OS X (Universal Binary)], 48 MB<br />
+(OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
+
+=== Changes in 1.4.21 (since 1.4.20) ===
+
+* Improvements in the main application:
+** New features
+*** Add a "Recently Opened Files" option in the File menu (Nico Stuurman)
+** Bugfixes
+*** Fix a rare error in the metadata panel (Nico Stuurman)
+*** Prevent image display windows from "showing" on computer monitors that are no longer attached to the computer (Nico Stuurman)
+*** Fix excessive restarts of Live mode when changing device properties (Chris Weisiger)
+*** Fix remembering channel colors when using multiple cameras (Chris Weisiger)
+*** Fix an error causing the image display to "break" when drawing (Chris Weisiger, Nico Stuurman)
+*** Fix issues with the size of the acquisition dialog (Nico Stuurman)
+*** Fix an issue causing erroneous timeouts in Live mode (Chris Weisiger)
+*** Remember the position of the Data Processing Pipeline dialog across sessions (Nico Stuurman)
+*** Fix an issue where MDA would not use sequence acquisition when a single channel is selected (Mark Tsuchida)
+*** Prevent MDA from failing when the computer hostname is not available (Chris Weisiger)
+*** Prevent text from being rendered at low resolution on OS X with Retina displays (Chris Weisiger, Mark Tsuchida)
+*** Prevent error when setting the current shutter to nothing (Mark Tsuchida)
+*** Fix a crash at the end of sequence acquisition when the shutter belongs to the same device adapter as other devices that are actively used (Mark Tsuchida)
+* New plugins
+** '''PM/QI Auto White Balance''': Automatic white balance for Photometrics/QImaging color cameras (Andrej Bencur)
+** '''HardwareFocusExtender''': An autofocus plugin to extend the range of hardware autofocus (experimental; Nico Stuurman)
+* Updated plugins
+** '''ASIdiSPIM''': Add multi-position support and multi-channel support, allow stage scanning for imaging large samples, and integrate software autofocus to find correct slice position (Jon Daniels (ASI), Nico Stuurman, et al.)
+** '''HCS Site Generator''': Remember well selections when changing site layout (Nico Stuurman)
+** '''Image Flipper''': Now remembers window positions across sessions (Nico Stuurman)
+** '''IntelligentAcquisition''': Multiple bugfixes and improvements (Nico Stuurman)
+** '''Localization Microscopy''': Multiple bugfixes and improvements (Nico Stuurman)
+** '''Multi-Andor Control''': Update the UI whenever the camera changes (Nico Stuurman)
+** '''Projector''': Multiple bugfixes and improvements (Nico Stuurman)
+* New device adapters
+** '''StandaStage''': An alternative adapter for Standa Microsctep Driver; allows use as an XY stage (Ed Simmons)
+* Updated device adapters
+** [[AndorSDK3]]: Add ExternalTriggerDelay feature for LightScanPlus cameras (Matthew Milford, Andor)
+** [[ASIStage]]: Improve behavior when moving parallel to X or Y axis; fix issue with old firmware versions (Jon Daniels, ASI)
+** [[ASITiger]]: Numerous improvements and fixes; add several features to PLogic support (Jon Daniels, ASI)
+** [[CSUW1]]: Fix issue with Disk switching; add Label property to Disk (Nico Stuurman)
+** [[DemoCamera]]: Handle ROI correctly when binning is enabled; add demo galvo device; add Gaussian-distributed noise mode for demo camera (Nico Stuurman)
+** [[IIDC]]: Correctly handle autoshutter in sequence acquisition (Mark Tsuchida)
+** [[Mightex_C_Cam]]: Add "Snap" support (Mightex Systems)
+** [[NI100X]]: Prevent State property from getting stuck when using state device shutter with NI digital output (Mark Tsuchida)
+** [[PicardStage]]: Update Picard SDK
+** [[PVCAM]]: Prevent timeouts with very slow readout speeds; improve color camera support (add debeyering, white balancing); minimize lost frames under high CPU load (Andrej Bencur and Lubomir Walder, Photometrics); prevent an occasional crash when configuring the camera (Mark Tsuchida)
+** [[QCam]]: Fix issue when configuring a Rolera Bolt; fix trigger output in snap mode (Andrej Bencur, QImaging); ''Windows users should update their QCam SDK installation''
+** [[ScopeLED]]: Add shutter channel properties (ScopeLED)
+** [[Thorlabs]]: Fix issues with motor stage movement and XY stage initialization (Stephen Getliffe, Thorlabs)
+** [[XCite120PC_Exacte]]: Power-Factor property is now read-only and Output-Power limits are set correctly (Mark Tsuchida)
+** [[XIMEACamera]]: Fix timestamp generation for acquired images, reset timestamp at start of sequence acquisition (Marian Zajko, XIMEA); ''Users should update to XIMEA API 4.04.00''
+** [[Zaber]]: Fix handling of communication errors (Athabasca Witschi, Zaber Technologies)
+** [[ZeissCAN]]: Allow selection of upper prism position for PhotoModule (Nico Stuurman)
+** [[ZeissCAN29]]: Correct options for XY stage Velocity-Acceleration; add trajectory velocity/acceleration settings (Nico Stuurman)
+* New closed-source device adapters
+** '''Usb3CamHS''': World Precision Instruments USB3-CAM-HS (Ed Simmons)
+* Updated closed-source device adapters
+** [[HamamatsuHam]]: Allow setting exposure time in different units, add fix to support some older cameras (Patrick Gregorio); Fix ROI handling when binning is enabled (Nico Stuurman); ''Users should update their DCAM-API installation''
+* Changes of interest to developers
+** Micro-Manager 1.4.21 is SVN trunk r15381, 3rdpartypublic r176.
+** Add an example "Hello World" plugin for developers to use as a starting point (Chris Weisiger)
+** Changes in the API:
+*** Fix a bug in <code>MMWindow.getImagePlus()</code> (Nico Stuurman)
+*** Add <code>computeScore()</code> method to AutofocusPlugin API (Nico Stuurman)
+*** Calling <code>openAcquisition()</code> with zero channels, frames, or slices now assumes the user meant 1 instead, to prevent acquisitions that cannot hold any images.
+*** Fix a bug in auto-generated acquisition names (Jon Daniels)
+*** MMCore API now has stage control methods that implicitly use the current stage (Jon Daniels)
+*** No changes to the device programming interface
+
+
 == Micro-Manager 1.4.20 (January 30, 2015) ==
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.20.exe Windows 32-bit], 60 MB<br />
