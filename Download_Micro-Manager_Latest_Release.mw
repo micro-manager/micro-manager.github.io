@@ -1,79 +1,99 @@
 __NOTOC__
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
-== Micro-Manager 1.4.21 (April 30, 2015) ==
+== Micro-Manager 1.4.22 (August 14, 2015) ==
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.21.exe Windows 32-bit], 61 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.21.exe Windows 64-bit], 62 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe Windows 32-bit], 63.4 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe Windows 64-bit], 65.1 MB<br />
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.21.dmg Mac OS X (Universal Binary)], 48 MB<br />
+[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.22.dmg Mac OS X (Universal Binary)], 54.0 MB<br />
 (OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
-=== Changes in 1.4.21 (since 1.4.20) ===
+=== Changes in 1.4.22 (since 1.4.21) ===
 
-* Improvements in the main application:
-** New features
-*** Add a "Recently Opened Files" option in the File menu (Nico Stuurman)
-** Bugfixes
-*** Fix a rare error in the metadata panel (Nico Stuurman)
-*** Prevent image display windows from "showing" on computer monitors that are no longer attached to the computer (Nico Stuurman)
-*** Fix excessive restarts of Live mode when changing device properties (Chris Weisiger)
-*** Fix remembering channel colors when using multiple cameras (Chris Weisiger)
-*** Fix an error causing the image display to "break" when drawing (Chris Weisiger, Nico Stuurman)
-*** Fix issues with the size of the acquisition dialog (Nico Stuurman)
-*** Fix an issue causing erroneous timeouts in Live mode (Chris Weisiger)
-*** Remember the position of the Data Processing Pipeline dialog across sessions (Nico Stuurman)
-*** Fix an issue where MDA would not use sequence acquisition when a single channel is selected (Mark Tsuchida)
-*** Prevent MDA from failing when the computer hostname is not available (Chris Weisiger)
-*** Prevent text from being rendered at low resolution on OS X with Retina displays (Chris Weisiger, Mark Tsuchida)
-*** Prevent error when setting the current shutter to nothing (Mark Tsuchida)
-*** Fix a crash at the end of sequence acquisition when the shutter belongs to the same device adapter as other devices that are actively used (Mark Tsuchida)
+* Bugfixes and enhancements in the main application
+** Fix a hang when restarting MDA with data processors installed while Live mode is running (Mark Tsuchida)
+** When adding Z stage devices, the user may now specify the directionality of the stage (whether positive or negative directions move closer to the sample)
+** Fix a bug with storage of user configuration data on Windows 8 and later operating systems (Chris Weisiger)
+** Bugfixes relating to saved data:
+*** Fix a minor bug in formatting of metadata in multipage TIFF files (Mark Tsuchida)
+*** Fix a bug causing truncation of OME Medatada (Chris Weisiger)
+*** Fix a memory leak noticeable when running acquisitions with large position lists (Chris Weisiger)
+** Display bugfixes:
+*** Fix a bug causing RGB channels to be swapped when loading files (Chris Weisiger)
+*** Fix display of total timepoints in cancelled acquisitions (Chris Weisiger)
+** Fix a bug in behavior of slider controls in European locales (Mark Tsuchida)
+** Fix a NullPointerException when the logfile directory is missing (Mark Tsuchida)
+** Fix a NullPointerException in the Metadata panel (Nico Stuurman)
+** Correctly remember autofocus parameters in preferences (Mark Tsuchida)
+** Enable high-resolution rendering on Macs with Retina Displays
+** Add setting for focus stage coordinate polarity in Hardware Configuration Wizard (Mark Tsuchida)
 * New plugins
-** '''PM/QI Auto White Balance''': Automatic white balance for Photometrics/QImaging color cameras (Andrej Bencur)
-** '''HardwareFocusExtender''': An autofocus plugin to extend the range of hardware autofocus (experimental; Nico Stuurman)
+** Mightex Polygon, for controlling the Polygon patterned illuminator devices
 * Updated plugins
-** '''ASIdiSPIM''': Add multi-position support and multi-channel support, allow stage scanning for imaging large samples, and integrate software autofocus to find correct slice position (Jon Daniels (ASI), Nico Stuurman, et al.)
-** '''HCS Site Generator''': Remember well selections when changing site layout (Nico Stuurman)
-** '''Image Flipper''': Now remembers window positions across sessions (Nico Stuurman)
-** '''IntelligentAcquisition''': Multiple bugfixes and improvements (Nico Stuurman)
-** '''Localization Microscopy''': Multiple bugfixes and improvements (Nico Stuurman)
-** '''Multi-Andor Control''': Update the UI whenever the camera changes (Nico Stuurman)
-** '''Projector''': Multiple bugfixes and improvements (Nico Stuurman)
+* ASIdiSPIM: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
+* Projector: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
+* Navigator: numerous bugfixes and improvements (Henry Pinkard)
+* HCS Site Generator
+** Improved acquisition pathing within a well, using a snakelike route (Nico Stuurman)
+** add support for 6- and 12-well plates (Thomas Petebauer, Chris Weisiger)
+* Autofocus plugins
+** Added NullAutofocus, an autofocus method that does nothing, useful in certain complex acquisitions (Mark Tsuchida)
 * New device adapters
-** '''StandaStage''': An alternative adapter for Standa Microsctep Driver; allows use as an XY stage (Ed Simmons)
+** CNCMicroscope adapters (David Konerding)
+*** ArduinoNeoPixel: Adafruit NeoPixel sheild as a shutter
+*** RAMPS: RepRap RAMPS/Marlin motor drivers as XY and Z stage
+** Diskovery: Andor Diskovery multi-modal imaging system (Nico Stuurman)
+** Standa8SMC4: An alternative Standa stage adapter using the XIMC motion control library (Eugene Seliverstov)
 * Updated device adapters
-** [[AndorSDK3]]: Add ExternalTriggerDelay feature for LightScanPlus cameras (Matthew Milford, Andor)
-** [[ASIStage]]: Improve behavior when moving parallel to X or Y axis; fix issue with old firmware versions (Jon Daniels, ASI)
-** [[ASITiger]]: Numerous improvements and fixes; add several features to PLogic support (Jon Daniels, ASI)
-** [[CSUW1]]: Fix issue with Disk switching; add Label property to Disk (Nico Stuurman)
-** [[DemoCamera]]: Handle ROI correctly when binning is enabled; add demo galvo device; add Gaussian-distributed noise mode for demo camera (Nico Stuurman)
-** [[IIDC]]: Correctly handle autoshutter in sequence acquisition (Mark Tsuchida)
-** [[Mightex_C_Cam]]: Add "Snap" support (Mightex Systems)
-** [[NI100X]]: Prevent State property from getting stuck when using state device shutter with NI digital output (Mark Tsuchida)
-** [[PicardStage]]: Update Picard SDK
-** [[PVCAM]]: Prevent timeouts with very slow readout speeds; improve color camera support (add debeyering, white balancing); minimize lost frames under high CPU load (Andrej Bencur and Lubomir Walder, Photometrics); prevent an occasional crash when configuring the camera (Mark Tsuchida)
-** [[QCam]]: Fix issue when configuring a Rolera Bolt; fix trigger output in snap mode (Andrej Bencur, QImaging); ''Windows users should update their QCam SDK installation''
-** [[ScopeLED]]: Add shutter channel properties (ScopeLED)
-** [[Thorlabs]]: Fix issues with motor stage movement and XY stage initialization (Stephen Getliffe, Thorlabs)
-** [[XCite120PC_Exacte]]: Power-Factor property is now read-only and Output-Power limits are set correctly (Mark Tsuchida)
-** [[XIMEACamera]]: Fix timestamp generation for acquired images, reset timestamp at start of sequence acquisition (Marian Zajko, XIMEA); ''Users should update to XIMEA API 4.04.00''
-** [[Zaber]]: Fix handling of communication errors (Athabasca Witschi, Zaber Technologies)
-** [[ZeissCAN]]: Allow selection of upper prism position for PhotoModule (Nico Stuurman)
-** [[ZeissCAN29]]: Correct options for XY stage Velocity-Acceleration; add trajectory velocity/acceleration settings (Nico Stuurman)
+** Andor: Update Andor DLLs; add iXon 888 isolated crop ROIs; support FVB mode; add hardware timestamps on compatible cameras; fix Exposure display (Matthew Milford, Andor)
+** AndorSDK3: Allow fast exposure switching for Snap; allow switching on/off static blemish correction; add shutter control properties (Matthew Milford and Francis McCloy, Andor)
+** AndorShamrock: Add Rayleigh wavelength property; other fixes (Francis McCloy, Andor)
+** ASITiger: Support SetOriginX/Y; updates to scanner and PLogic; hardware sequencing support for piezo (Jon Daniels, ASI)
+** Cobolt: Fix a serial communication issue (Mark Tsuchida)
+** GigECamera: Avoid an error while connecting with some cameras (Mark Tsuchida)
+** IIDC: Add limited/experimental color camera support (Mark Tsuchida)
+** LeicaDMI: Add fixed shutter delay setting (Egor Zindy); fix turret control issues with DMi8 (Mark Tsuchida)
+** Marzhauser: Fix potential serial communication issue (Falk Dettmar, Marzhauser)
+** Mightex_C_Cam: Updates (JT Zheng, Mightex)
+** NI100X (National Instruments): Add support for hardware-triggered sequencing (Chris Weisiger)
+** OpenCVgrabber: update from OpenCV 2.4.8 to 2.4.9 on OS X (Mark Tsuchida)
+** PCO_Camera: Fix issue when using software trigger mode with pco.camera (Franz Reitner, PCO)
+** PI: Fix serial connection issue with certain controllers (Mark Tsuchida)
+** PICAM: Allow use of multiple cameras (Mark Tsuchida)
+** PVCAM: Fix a crash when enabling Color during Live; fix a possible Snap failure after changing binning and ROI; prevent timeout with slow cameras (Photometrics)
+** Prior: Fix a communication issue with certain controllers (Mark Tsuchida)
+** Sapphire: Fix a serial communication issue (Mark Tsuchida)
+** SpectralLMM5: Add FLICR (PWM) and fiber output selection support (Nico Stuurman)
+** StandaStage: Disable limit switch setting causing issues with some setups (Ed Simmons)
+** SutterLambda: Add setting for filter wheel timeout (Nico Stuurman)
+** XIMEA: Fix crash upon Snap; use camera timestamp resetting only for applicable cameras; add missing GPO port modes for MU USB2 (Marian Zajko, XIMEA)
+** Yokogawa CSU22, CSUX, CSUW1: Fix a possible hang; speed no longer a state device (Pariksheet Nanda)
+** ZeissCAN: Fix problem while disconnecting when connected by USB (Nico Stuurman)
 * New closed-source device adapters
-** '''Usb3CamHS''': World Precision Instruments USB3-CAM-HS (Ed Simmons)
+** MightexPolygon: Mightex Polygon multiwavelength patterned illuminators (Mightex)
 * Updated closed-source device adapters
-** [[HamamatsuHam]]: Allow setting exposure time in different units, add fix to support some older cameras (Patrick Gregorio); Fix ROI handling when binning is enabled (Nico Stuurman); ''Users should update their DCAM-API installation''
+** HamamatsuHam: Fix ROI coordinates when binning enabled (Nico Stuurman)
+** Olympus: Fix Focus Sensitivity setting (Mark Tsuchida)
+** OlympusIX83: Prevent reporting incorrect stage position immediately after move (Mark Tsuchida)
+** RaptorEPIX: Add support for OWL640, Ninox and Eagle cameras (David Biggs)
 * Changes of interest to developers
-** Micro-Manager 1.4.21 is SVN trunk r15381, 3rdpartypublic r176.
-** Add an example "Hello World" plugin for developers to use as a starting point (Chris Weisiger)
-** Changes in the API:
-*** Fix a bug in <code>MMWindow.getImagePlus()</code> (Nico Stuurman)
-*** Add <code>computeScore()</code> method to AutofocusPlugin API (Nico Stuurman)
-*** Calling <code>openAcquisition()</code> with zero channels, frames, or slices now assumes the user meant 1 instead, to prevent acquisitions that cannot hold any images.
-*** Fix a bug in auto-generated acquisition names (Jon Daniels)
-*** MMCore API now has stage control methods that implicitly use the current stage (Jon Daniels)
-*** No changes to the device programming interface
+** Micro-Manager 1.4.22 is SVN trunk r15693, 3rdparty r176.
+** All but a few of the Java dependency JARs are now fetched from Maven repositories using Ivy, rather than using the copy in <code>3rdpartypublic/classext</code> (Mark Tsuchida)
+** Add an <code>unregisterForEvents()</code> method to the <code>gui</code> (<code>ScriptInterface</code>) API (Henry Pinkard)
+** MMCore API changes
+*** Add methods <code>setOriginX(), setOriginY()</code> for XY stages that allow zeroing X and Y independently (Mark Tsuchida)
+*** The <code>home()</code> and <code>stop()</code> method now also work with Z/focus stages (where supported) (Mark Tsuchida)
+*** Add methods <code>setFocusDirection(), getFocusDirection()</code>, allowing to store and retrieve focus stage coorinate polarity where known. Explicitly set values are recorded in hardware configuration file (Mark Tsuchida)
+*** Add methods <code>getGalvoXMinimum(), getGalvoYMinimum()</code> (Nico Stuurman)
+** MMDevice interface changes
+*** Add optional methods to set X and Y origin separately for XY stages (<code>SetXOrigin()</code> and <code>SetYOrigin()</code>) (Mark Tsuchida)
+*** Add optional <code>Home()</code> and <code>Stop()</code> methods to Z/focus stages (Mark Tsuchida)
+*** Add optional <code>GetFocusDirection()</code> to Z/focus stages (Mark Tsuchida)
+*** Add <code>GetXMinimum(), GetYMinimum()</code> methods to galvo device (Nico Stuurman)
+*** The HubID property is now read-only (Nico Stuurman)
+* Miscellaneous
+** Added a MATLAB script, <code>StartMMStudio.m</code> that configures and starts MMStudio (Windows only) (Mark Tsuchida)
 
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
