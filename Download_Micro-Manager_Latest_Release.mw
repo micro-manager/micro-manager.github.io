@@ -31,11 +31,11 @@ __NOTOC__
 * New plugins
 ** Mightex Polygon, for controlling the Polygon patterned illuminator devices
 * Updated plugins
-* ASIdiSPIM: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
-* Projector: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
-* HCS Site Generator
-** Improved acquisition pathing within a well, using a snakelike route (Nico Stuurman)
-** add support for 6- and 12-well plates (Thomas Petebauer, Chris Weisiger)
+** ASIdiSPIM: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
+** Projector: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
+** HCS Site Generator
+*** Improved acquisition pathing within a well, using a snakelike route (Nico Stuurman)
+*** add support for 6- and 12-well plates (Thomas Petebauer, Chris Weisiger)
 * Autofocus plugins
 ** Added NullAutofocus, an autofocus method that does nothing, useful in certain complex acquisitions (Mark Tsuchida)
 * New device adapters
