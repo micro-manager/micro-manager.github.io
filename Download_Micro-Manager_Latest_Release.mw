@@ -33,7 +33,6 @@ __NOTOC__
 * Updated plugins
 * ASIdiSPIM: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
 * Projector: numerous bugfixes and improvements (Jon Daniels, Nico Stuurman)
-* Navigator: numerous bugfixes and improvements (Henry Pinkard)
 * HCS Site Generator
 ** Improved acquisition pathing within a well, using a snakelike route (Nico Stuurman)
 ** add support for 6- and 12-well plates (Thomas Petebauer, Chris Weisiger)
