@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Drives Newport SMC100 single-axis motor controller</td></tr>
-<tr><td>'''Author:'''</td><td>Liisa Hirvonen, updated by Nico Stuurman in 2015</td></tr>
+<tr><td>'''Author:'''</td><td>Liisa Hirvonen (2009), updated by Nico Stuurman in 2015</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td></td></tr>
