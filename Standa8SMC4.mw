@@ -1,0 +1,9 @@
+== Standa Microstep Controller adapter using XIMC library ==
+
+<table cellspacing=3><tr><td>
+'''Summary:'''</td><td valign="top">Interface to Standa 8SMC4-USB using XIMC interface</td></tr>
+<tr><td>'''Author:'''</td><td>Eugene Seliverstov</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.4.22</td>
+</table>
