@@ -107,6 +107,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
 * [[SigmaKoki]] - Sigma Koki stages and shutters
 * [[Standa]] - Standa Microstep Driver
+* [[StandaStage]] - Standa Microstep Driver
+* [[Standa8SMC4]] - Standa Microstep Driver (using XIMC interface)
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
 * [[SutterStage]] - Sutter XY Stage
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
