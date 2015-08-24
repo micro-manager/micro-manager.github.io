@@ -152,6 +152,13 @@ To build <code>MMCoreJ.jar</code> (and, by transitive dependency, any of the oth
 
 Building Clojure components (acqEngine and some of the plugins) requires a loadable <code>MMCoreJ_wrap.dll</code>. "Loadable", in this context, means that it is built for the same architecture (32-bit vs 64-bit) as your Java runtime (on which Ant is running). If you are using a 32-bit JDK but have built MMCoreJ for 64-bit, you will also need to build the 32-bit MMCoreJ_wrap.dll (and vice versa). The MMCoreJ_wrap.dll for the two architectures go in different directories, so there is no harm in building both in the same source tree.
 
+It is possible for the build to drop into an inconsistent state when the source code is updated. The following might fix it (at the root of the source tree):
+
+  ant clean-all
+  rmdir /s /q dependencies
+
+Afterwards you will need to go back to the start of this section and re-run <code>ant -f buildscripts/fetchdeps.xml</code>
+
 === Building all components ===
 
 The master Ant build script (<code>build.xml</code> at the root of the source tree) can be used to build the whole application. It's usage differs from the individual build scripts for each Java component.
