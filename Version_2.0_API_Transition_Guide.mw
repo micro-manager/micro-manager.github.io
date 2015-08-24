@@ -4,7 +4,6 @@ One of the major changes in 2.0 is a restructuring of the API. In 1.4, most of t
 
 First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface] module contains many old methods from ScriptInterface, unmodified. These methods work as they did in 1.4, and include the following:
 
-* addImageProcessor
 * addMMListener
 * attachRunnable
 * autostretchCurrentWindow
@@ -28,8 +27,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/m
 * markCurrentPosition
 * refreshGUI
 * refreshGUIFromCache
-* registerProcessorClass
-* removeImageProcessor
 * removeMMListener
 * runAcquisition
 * saveConfigPresets
@@ -37,7 +34,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/m
 * setBackgroundStyle
 * setChannelExposureTime
 * setConfigChanged
-* setImageProcessorPipeline
 * setPause
 * setPositionList
 * setROI
