@@ -9,6 +9,13 @@
 <tr><td>'''Website:'''</td><td>[http://en.xisupport.com en.xisupport.com]</td>
 </table>
 
+== Differences between Standa adapters ==
+
+There are three different device adapters for Standa motor controllers:
+* Standa8SMC4 – official adapter (this one) for operation with 8SMC4-USB motor controller which was developed by Standa motion control department.
+* Standa – adapter for 8SMC1-USBhF (old version of motor controller from Standa). Standa has no relation to its development.
+* StandaStage – another adapter with 8SMC1-USBhF support. Standa has no relation to its development.
+
 == Supported platforms ==
 
 Currently only Windows platform is tested and supported.
@@ -34,7 +41,7 @@ Device adapter can be compiled and launched on Linux and Macintosh as well but i
 === Run Micro-Manager ===
 
 {{Note|
-Note. When installing the Micro-Manager in <code>C:\Program Files</code> access to configuration files is limited and you need to have administrator privileges. To start an application as administrator right click by its icon and choose <code>Run as administrato</code>. 
+Note. When installing the Micro-Manager in <code>C:\Program Files</code> access to configuration files is limited and you need to have administrator privileges. To start an application as administrator right click by its icon and choose <code>Run as administrator</code>. 
 }}
 
 * Run Micro-Manager from the shortcut at your desktop or start ''ImageJ.exe'' application from installation directory. First time it will greet you and suggest to type some information about yourself.
