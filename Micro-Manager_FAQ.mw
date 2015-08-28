@@ -20,6 +20,9 @@ First, contact the manufacturer of the hardware and express your interest in a M
 === Does Micro-Manager work with my Axiocam camera? ===
 '''Update:''' As of Micro-Manager version 1.4.13 or so, the [[AxioCam MR]] is supported.  If you need support for other models, please let us know.
 
+=== When I do something on my system that takes more than a few seconds, I get the error: "Wait for device X timed out after 5000ms". How do I fix this? ===
+In the Device/Property browser, set the property: "Core-TimoutMs" to a value higher than 5000ms (just a bit longer than it takes your device to do whatever it is doing).  To make this setting persist through Micro-Manager restarts, add it to the System - Startup group (see [[Micro-Manager_Configuration_Guide#Startup_Presets]])
+
 === Something does not work.  What do I do? ===
 1) Try downloading and installing the latest [[Micro-Manager_Nightly_Builds|Nightly Build]] and check if the problem still persists. 
 
