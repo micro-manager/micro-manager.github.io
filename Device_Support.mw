@@ -156,7 +156,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent CUBE laser controller
 * [[CoherentOBIS]] - Coherent OBIS laser controller
-* [[Diskovery1]] - Spectral/Andor spinning disk confocal/TIRF module 
+* [[Diskovery]] - Spectral/Andor spinning disk confocal/TIRF module 
 * [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[ImageProcessorChain]] - Virtual device driver for processing images in C++
