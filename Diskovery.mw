@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X and Linux (serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>Hub, Disk-Position, Illumination-Size, TIRF-Position, Objective-Select, Filter-W, Filter-T</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td>1.4.22 and later</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>1.4.23 and later</td></tr>
 <tr><td valign=top>'''Serial port settings:'''</td><td valign=top>
 
 {| cellspacing="2" border="0" cellpadding=3
