@@ -289,6 +289,10 @@ As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manage
 
 Arbitrary metadata storage is available for both [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/SummaryMetadata.html SummaryMetadata] and individual image [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Metadata.html Metadata] via their respective <code>userData</code> fields.
 
+=== setImageSavingFormat ===
+
+When saving the contents of a [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore], you must specify the format you want to use in the form of a [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.SaveMode.html Datastore.SaveMode]. Alternately, if you want to show the user a save-file dialog, then that dialog will include a file format dropdown menu that they can use to decide which format to use. The dropdown menu (and the MDA dialog's save-files section) will automatically default to the format the user last used to save files.
+
 === setRelativeStagePosition ===
 
 This functionality be accessed via the [https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html Core]'s [https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativePosition() setRelativePosition] method. The Core in turn can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#core() core] method.
