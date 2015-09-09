@@ -23,7 +23,7 @@
 
 (Documentation to be written.)
 
-Per Pete on the mailing list, you will need to copy MT_POLYGON400_IMGC.DLL from your MightEx folder into µManager's folder in order for the device adapter to load.
+Per Pete on the mailing list, you will need to copy MT_POLYGON400_IMGC.DLL from your MightEx folder into µManager's folder in order for the device adapter to load. See [http://micro-manager.3463995.n2.nabble.com/MightEx-Polygon-device-can-t-install-td7585963.html#a7585978 this email].
 
 {{Listserv_Search|Polygon}}
 
