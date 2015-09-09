@@ -23,6 +23,8 @@
 
 (Documentation to be written.)
 
+Per Pete on the mailing list, you will need to copy MT_POLYGON400_IMGC.DLL from your MightEx folder into µManager's folder in order for the device adapter to load.
+
 {{Listserv_Search|Polygon}}
 
 {{Devices_Sidebar}}
