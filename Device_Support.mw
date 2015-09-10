@@ -65,6 +65,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 <br>
 
 === Stages, filter wheels, shutters ===   
+* [[ArduinoNeoPixel]] - Adafruit NeoPixel RGB LEDs controlled through an Arduino
 * [[ASIFW1000]] - ASI Shutter and Filter Wheel controller
 * [[ASIStage]] - ASI XY (and Z) stage and CRIF
 * [[ASITiger]] - ASI TG-1000 "Tiger" Controller
@@ -103,6 +104,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Piezosystem_NV120_1]] - Piezosystem Jena. 1 channel controller with USB
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
+* [[RAMPS]] - RepRap RAMPS board as a stage controller
 * [[Scientifica]] - Scientifica stages
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
 * [[SigmaKoki]] - Sigma Koki stages and shutters
