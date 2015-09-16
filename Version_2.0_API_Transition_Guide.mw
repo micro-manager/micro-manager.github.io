@@ -195,6 +195,10 @@ This information can be accessed via the [https://valelab.ucsf.edu/~MM/doc/mmcor
 
 The metadata set by this method is now handled automatically when images are saved; consequently, it is no longer needed.
 
+=== installAutofocusPlugin ===
+
+AutofocusPlugins should now be compiled and annotated with the @Plugin annotation (as described in [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MMPlugin.html MMPlugin]). If this is done and the resulting jar file is included in the mmautofocus directory of your ImageJ installation, then the plugin will automatically be detected at runtime. There is no mechanism for loading a plugin after µManager's initialization has completed.
+
 === isLiveModeOn ===
 
 This method has been replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html SnapLiveManager]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/SnapLiveManager.html#getIsLiveModeOn() getIsLiveModeOn] method. The SnapLiveManager in turn can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#live() live] method.
