@@ -9,7 +9,22 @@
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>
 
-The ASIFW1000 controller [http://www.asiimaging.com/fw-1000.html] can be equipped with one or more filter wheel control panels (each controlling two filter wheels) and one or more shutter control panels (each driving two shutters).  The controller connects to a serial port on your computer.
+'''Serial port settings'''
+{| cellspacing="10"
+|Baudrate||9600
+|-
+|AnswerTimeout||500.0000
+|-
+|DataBits||8
+|-
+|DelayBetweenCharsMs||0.0000
+|-
+|Handshaking||Off
+|-
+|StopBits||1
+|}
+
+The ASIFW1000 controller [http://www.asiimaging.com/products/illumination-control/fw-1000-high-speed-filter-wheel/] can be equipped with one or more filter wheel control panels (each controlling two filter wheels) and one or more shutter control panels (each driving two shutters).  The controller connects to a serial port on your computer.
 
 To drive any filter wheel or shutter, you will have to define the 'ASIFW1000 Controller' device.  You will need to specify the serial port to which the ASIFW1000 controller is connected.  Micro-Manager will report the Firmware version of the ASIFW1000 Controller.
 
