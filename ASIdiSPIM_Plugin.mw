@@ -22,7 +22,8 @@ The plugin documentation is now is on the diSPIM wiki at [http://dispim.org disp
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
-* 20150811: autofocus during calibration, rapid-fire (hardware-timed) acquisition
+* 20150925: significantly expanded autofocus options
+* 20150811: autofocus during timelapse, rapid-fire (hardware-timed) acquisition
 * (1.4.21 release)
 * 20150428: autofocus to define calibration (not yet during timelapse)
 * 20150415: added basic stage scanning (contact ASI for firmware if needed)
@@ -30,7 +31,7 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 * 20150113: added multi-position support and software-based multi-channel support
 * (1.4.20 release)
 * 20141219: added ability to easily do offset-only calibration adjustment
-* 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25ms
+* 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25 ms
 * 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
 * 20141207: added ability to export data for Fiji Multiview plugin
 * (1.4.19 release)
