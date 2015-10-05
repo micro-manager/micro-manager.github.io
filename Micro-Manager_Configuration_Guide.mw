@@ -109,8 +109,12 @@ If you have another installation of ImageJ on your computer, keep in mind that M
 
 Finally, note that the sequence buffer size setting is currently saved per user account, while the ImageJ memory setting is saved per copy of ImageJ.
 
+= Troubleshooting =
+Micromanager GUI (MMStudio) handles other non-hardware settings through [http://docs.oracle.com/javase/7/docs/api/java/util/prefs/package-summary.html Java preferences API] (<small>java.util.prefs</small>), so they're persistent even after uninstall. In some cases (e.g. after using development version or  upgrade) old properties can cause GUI misbehaviour (e.g. inability to save changed histogram range).
 
-<span>'''Created on July 31, 2006 by Nenad Amodaj<br /> Revised on January 31, 2007<br /> Revised on August 21, 2008 by Nico Stuurman<br /> Revised on May 16, 2012 by Ziah Dean'''<br />'''Revised on December 3, 2014, by Mark Tsuchida'''</span>
+Windows user can find preferences in <small>HKEY_CURRENT_USER\Software\JavaSoft\Prefs\Org\micromanager</small> registry branch and remove manually. New properties will be created automatically. Hardware configuration remains unchanged.
+
+<span>'''Created on July 31, 2006 by Nenad Amodaj<br /> Revised on January 31, 2007<br /> Revised on August 21, 2008 by Nico Stuurman<br /> Revised on May 16, 2012 by Ziah Dean'''<br />'''Revised on December 3, 2014, by Mark Tsuchida'''<br />'''Extended on October 5, 2015 by Eugene Dvoretsky'''</span>
 
 
 {{Documentation_Sidebar}}
