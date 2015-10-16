@@ -61,6 +61,10 @@ This method was used as part of 1.4's day/night system for enabling low-contrast
 
 The "album" [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html Datastore] is now available via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#album() album] method, and you can freely add images to it yourself (see the <code>addImageToAcquisition</code> notes above)
 
+=== autostretchCurrentWindow ===
+
+You can now autostretch individual [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/display/DisplayWindow.html DisplayWindows] using their <code>autostretch</code> method. Thus this method can be replaced by calling <code>displays().getCurrentWindow().autostretch()</code>.
+
 === clearMessageWindow ===
 
 This method was moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/ScriptController.html ScriptController] object accessible via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#scripter() scripter] method.
