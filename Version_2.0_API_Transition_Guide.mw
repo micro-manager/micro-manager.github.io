@@ -6,7 +6,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/m
 
 * addMMListener
 * attachRunnable
-* autostretchCurrentWindow
 * clearRunnables
 * enableRoiButtons
 * getAcquisitionEngine2010
