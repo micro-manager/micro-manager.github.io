@@ -55,7 +55,7 @@ Depending on the amount of RAM on the PC or processing performance, this may nee
 
 
 === Linux Installation ===
-The following assumes you installed the Andor SDK in /usr/local/andor/
+The following assumes you installed the Andor SDK in /usr/local/lib/
 
 Put the following line into /etc/udev/rules.d/andor.rules
   
