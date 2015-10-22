@@ -12,6 +12,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[Pixel Calibrator Plugin|Pixel Calibrator]]
 * [[Live Replay]]
 * [[Tracker Plugin|Live Tracking]]
+* [[MicroMagellan]] (Coming soon)
 * [[Mightex Polygon Plugin|Mightex Polygon]]
 * [[Multi-Andor Control]]
 * [[MultiChannelShading]]
