@@ -1,9 +1,9 @@
 == MicroMagellan ==
-The MicroMagellan plugin allows ...... description
+The MicroMagellan plugin allows flexible, dynamic device control and acquisition. The Explore feature allows you to examine your sample in XY and Z, building a 3D map of all areas covered, minimizing photo-bleaching and damage while finding areas of interest. Surfaces allows you to define an non-cuboidal region of interest and define sample morphology, which can then be used to define sample-driven parameters such as laser power at distance from surface. Using grids or surfaces, you can designate multiple areas to image in a single acquisition in series or in parallel.  
 
 <table><tr><td>'''User Guide:'''</td><td valign="top">Link</td></tr>
 <tr><td>'''Author:'''</td><td>Henry Pinkard</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 
 <tr><td width=20%></td><td></td></tr>
-<tr><td>'''Available since version:'''</td><td>VERSION</td>
+<tr><td>'''Available since version:'''</td><td>1.4.22</td>
