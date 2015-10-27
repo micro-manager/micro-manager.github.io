@@ -61,7 +61,8 @@ The dynamic loading feature (described above) is useful if you are developing yo
 ### Use Standard VM
 ### Set the JRE Home to <code>C:\Program Files\Micro-Manager-1.4\jre</code> (or similar).
 ### Eclipse should fill in the rest.
-### Consider making the Micro-manager JRE the default, or when you create projects make sure to select this as the JRE (also may want to use compliance setting 1.6)
+### Consider making the Micro-manager JRE the default, or when you create projects make sure to select this as the JRE
+### Also consider setting compliance to Java 1.6 under Project -> Properties, Java Compiler 
 ### Click Finish
 ## Check the checkbox next to the newly-added JRE. 
 # Create a new project for Micro-Manager Studio:
