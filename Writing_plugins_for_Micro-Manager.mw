@@ -76,7 +76,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 ### Add any other relevant JARs, or add later from Project Properties
 ### Important note: whenever the set of JARs distributed with Micro-Manager ever changes you will need to update Eclipse's list of JARs.  You can access them under Project->Properties, then under Java Build Path and under Libraries.  This doesn't happen every week but maybe a few times a year.
 ## Click Finish. 
-# Tweak project properties at Project -> Properties
+# Tweak project settings at Project -> Properties
 ## Under Java Compiler consider setting compliance to Java 1.6
 # Set up debug configuration at Project -> Properties; then Run/Debug Settings
 ## Add New configuration, Java Application; click "OK"
