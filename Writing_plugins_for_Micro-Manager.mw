@@ -55,7 +55,8 @@ The dynamic loading feature (described above) is useful if you are developing yo
 === Configure Eclipse to edit a plugin ===
 
 # Get Micro-manager source code if you don't already have it, at least the trunk (see [http://www.micro-manager.org/wiki/Micro-Manager_Source_Code this page])
-# Install Eclipse (these instructions for Kepler)
+# Make sure Micro-Manager is installed
+# Install Eclipse (these instructions for Kepler, Luna, and Mars)
 # Add Micro-manager's JRE to Eclipse
 ## Window -> Preferences; under Java, select Installed JREs and click Add...
 ### Use Standard VM
