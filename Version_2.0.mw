@@ -19,6 +19,8 @@ Beta nightly builds:
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Mac/ Mac OS X])
 
+Current source code on GitHub: [https://github.com/micro-manager/micro-manager/tree/mm2 mm2 branch]
+
 ==== API ====
 
 If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. 
