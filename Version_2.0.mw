@@ -23,7 +23,7 @@ Current source code on GitHub: [https://github.com/micro-manager/micro-manager/t
 
 ==== API ====
 
-If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. 
+If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. Plugin authors should also read [[Version_2.0_Plugins]].
 
 [[Version_2.0_API_How_do_I]] is a demonstration of how to accomplish various common tasks using the new API. If you have a task that you want to perform that is not covered, then please ask us on the mailing list and we can update the documentation.
 
