@@ -21,7 +21,7 @@
 |-
 |StopBits||1
 |}
-<tr><td>'''Serial Cable'''</td><td>Straight through with pins 1,4 and 6 connected, and pins 8,7 connected (see SMC manual).  Not sure what is critical, but not all straight through cables work.</td></tr>
+<tr><td>'''Serial Cable'''</td><td>Straight through with pins 1,4 and 6 connected, and pins 8,7 connected (see SMC manual).  Not sure what that means exactly, however, a straight through cable with all pins on one end connected to the corresponding pin on the other end worked fine.</td></tr>
 </table>
 
 
