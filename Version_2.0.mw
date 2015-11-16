@@ -2,7 +2,7 @@ Micro-Manager 2.0 is a major step forwards compared to the 1.4 series that prece
 
 This page serves as a "hub" for various other pages related to Version 2.0.
 
-==== Downloads ====
+=== Downloads ===
 
 2.0.0-beta2
 [http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Windows/32bit/MMSetup_32bit_2.0.0-beta2.exe Windows 32-bit] |
@@ -21,7 +21,7 @@ Beta nightly builds:
 
 Current source code on GitHub: [https://github.com/micro-manager/micro-manager/tree/mm2 mm2 branch]
 
-==== API ====
+=== API ===
 
 If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. Plugin authors should also read [[Version_2.0_Plugins]].
 
@@ -31,11 +31,17 @@ If you want to write a new plugin or script, you will need to familiarize yourse
 
 The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ Javadocs] will likely also prove useful. All packages whose names do _not_ include "internal" are part of the API in 2.0. In particular, the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ root API], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-summary.html data], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ display] packages should prove useful.
 
-==== API Events ====
+==== Important Note Regarding Netbeans ====
+
+µManager 2.0 includes a new plugin loading framework, which as a side-effect requires it to be able to see the MMJ_.jar file at runtime. Netbeans does not normally generate a jar file when you run your project. Thus in order to do development in Netbeans, you need to add MMJ_.jar to your library classpath.
+
+The effect you will see if you do not do this is that the program fails to launch, having encountered a NullPointerException in org.micromanager.internal.MainFrame.createCommonActionButtons(). 
+
+=== API Events ===
 
 Version 2.0 provides greater access to the event publication and subscription system initially introduced in 1.4. [[Version_2.0_API_Events]] has more information on what events are available.
 
-==== Scripts ====
+=== Scripts ===
 
 For some examples of writing Beanshell scripts for 2.0, see [[Version_2.0_Scripts]]
 
