@@ -6,10 +6,10 @@ The Micro-Magellan plugin allows flexible, dynamic device control and acquisitio
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
 1) Open FIJI and select Help--Update <br>
-2) Click the "Manage Update Sites" button
-3) Check the box next to Micro-Magellan
-4) Click "Close"
-5) Click "Apply changes"
+2) Click the "Manage Update Sites" button <br>
+3) Check the box next to Micro-Magellan <br>
+4) Click "Close" <br>
+5) Click "Apply changes" <br>
 
 
 <table><tr><td>'''User Guide:'''</td><td valign="top">[[Media:Micro-MagellanUserGuide.pdf]]</td></tr>
