@@ -1,5 +1,7 @@
-Please consider first to send your questions/remarks/bug reports, etc. to our [https://lists.sourceforge.net/lists/listinfo/micro-manager-general  mailing list]. Having these communications in a publicly searchable mailing list rather than in private email will allow others to find the answers to their questions. If you need to keep your communication private, please direct it to [mailto:info@micro-manager.org info@micro-manager.org]. 
+Please consider first to send your questions/remarks/bug reports, etc. to our [https://lists.sourceforge.net/lists/listinfo/micro-manager-general  mailing list]. Having these communications in a publicly searchable mailing list rather than in private email will allow others to find the answers to their questions. <del>If you need to keep your communication private, please direct it to [mailto:info@micro-manager.org info@micro-manager.org].</del>
 
-'''Important:''' Please do not contact us using our personal email addresses with Micro-Manager support questions. Likewise, please do not call us by phone concerning Micro-Manager support. For commercial support for Micro-Manager, please contact one of the [[System Integrators]] or [[Programming Services]] supporting Micro-Manager.
+The core development team of Micro-Manager is at [https://open-imaging.com Open Imaging] and can be contacted at [mailto:info@open-imaging.com info@open-imaging.com]. (Note that Open Imaging does not generally provide free support.)
+
+'''Important:''' Please do not contact the developers using their personal email addresses or phone numbers with Micro-Manager support questions. For commercial support for Micro-Manager, please contact [https://open-imaging.com Open Imaging] or one of the [[System Integrators]] or [[Programming Services]] supporting Micro-Manager.
 
 {{Support_Sidebar}}
