@@ -22,8 +22,14 @@ The plugin documentation is now is on the diSPIM wiki at [http://dispim.org disp
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
+* 20151125: added ImageJ toolset for common image manipulation tasks
+* 20151124: ability to run test acquisition with optionally exported raw file
+* 20151013: added API calls to change acquisition settings programmatically
 * 20150925: significantly expanded autofocus options
-* 20150811: autofocus during timelapse, rapid-fire (hardware-timed) acquisition
+* 20150819: buttons to raise/lower SPIM head and sync upper and lower Z axes
+* (1.4.22 release)
+* 20150811: autofocus during timelapse
+* 20150807: rapid-fire (hardware-timed) acquisition
 * (1.4.21 release)
 * 20150428: autofocus to define calibration (not yet during timelapse)
 * 20150415: added basic stage scanning (contact ASI for firmware if needed)
@@ -33,7 +39,7 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 * 20141219: added ability to easily do offset-only calibration adjustment
 * 20141215: improved slice timing calculations including speeding up optimized easy timing slice period by 0.25 ms
 * 20141209: added colored status indicators for "quick glance" position information (helpful esp. to avoid manual alignment when not centered)
-* 20141207: added ability to export data for Fiji Multiview plugin
+* 20141207: added ability to export data for Fiji Multiview plugin (as of April 2015 the Fiji plugin can directly import data without requiring this step)
 * (1.4.19 release)
 
 == Known Issues ==
