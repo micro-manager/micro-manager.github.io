@@ -152,4 +152,6 @@ The reason one has to do this is MM encodes the pins as bits in binary.  Pin 13 
 
 * [http://nic.ucsf.edu/dokuwiki/doku.php?id=3d_printing:3dparts 3D printed enclosure with 8 BNC connectors for an Arduino] by Kurt Thorn
 
+* [http://www.plosone.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0143547&representation=PDF Open LED Illuminator] by Jens B. Bosse et al.
+
 {{Devices_Sidebar}}
