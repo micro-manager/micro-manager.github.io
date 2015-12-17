@@ -20,7 +20,7 @@ Both devices are implemented as shutters, and both devices communicate via USB.
 </tr>
 <tr>
    <td valign=top>'''Dependencies:'''</td>
-   <td>This device adapter requires the DiCon USB Communication Adapter, which is available for free upon request at scopeled_support AT diconlighting DOT com.</td>
+   <td>This device adapter requires a USB Communication Adapter, which is available for free at http://www.scopeled.com/resources/downloads.php.</td>
 </tr>
 </table>
 
