@@ -1,6 +1,26 @@
 ''Papers citing and/or acknowledging the use of Micro-Manager''
 __NOTOC__
 ==2015==
+Jönsson, P., and Jönsson, B. (2015). Hydrodynamic Forces on Macromolecules Protruding from Lipid Bilayers Due to External Liquid Flows. Langmuir 31, 12708–12718 [http://dx.doi.org/10.1021/acs.langmuir.5b03421 doi:10.1021/acs.langmuir.5b03421].
+
+Wilson, C., Saunter, C.D., Girkin, J.M., and McCarron, J.G. (2015). Pressure-dependent regulation of Ca2+ signalling in the vascular endothelium. J Physiol 593, 5231–5253 [http://dx.doi.org/10.1113%2FJP271157 doi:10.1113%2FJP271157].
+
+Jeppesen, J.C., Solovyeva, V., Brewer, J.R., Johannes, L., Hansen, P.L., and Simonsen, A.C. (2015). Slow Relaxation of Shape and Orientational Texture in Membrane Gel Domains. Langmuir 31, 12699–12707 [http://dx.doi.org/10.1021%2Facs.langmuir.5b03168 doi:10.1021%2Facs.langmuir.5b03168].
+
+M. Jackson, J., B. Taylor, J., A. Witek, M., A. Hunsucker, S., P. Waugh, J., Fedoriw, Y., C. Shea, T., A. Soper, S., and M. Armistead, P. (2016). Microfluidics for the detection of minimal residual disease in acute myeloid leukemia patients using circulating leukemic cells selected from blood. Analyst. [http://dx.doi.org/10.1039%2FC5AN01836F doi:10.1039%2FC5AN01836F].
+
+Gualda, E.J., Pereira, H., Vale, T., Estrada, M.F., Brito, C., and Moreno, N. (2015). SPIM-fluid: open source light-sheet based platform for high-throughput imaging. Biomed. Opt. Express, BOE 6, 4447–4456 [http://dx.doi.org/10.1364%2FBOE.6.004447 doi:10.1364%2FBOE.6.004447].
+
+Schmohl, K.A., Müller, A.M., Wechselberger, A., Rühland, S., Salb, N., Schwenk, N., Heuer, H., Carlsen, J., Göke, B., Nelson, P.J., et al. (2015). Thyroid hormones and tetrac: new regulators of tumour stroma formation via integrin αvβ3. Endocr Relat Cancer 22, 941–952 [http://dx.doi.org/10.1530%2FERC-15-0245 doi:10.1530%2FERC-15-0245].
+
+Cazaux, S., Sadoun, A., Biarnes-Pelicot, M., Martinez, M., Obeid, S., Bongrand, P., Limozin, L., and Puech, P.-H. (2016). Synchronizing atomic force microscopy force mode and fluorescence microscopy in real time for immune cell stimulation and activation studies. Ultramicroscopy 160, 168–181 [http://dx.doi.org/10.1016%2Fj.ultramic.2015.10.014 doi:10.1016%2Fj.ultramic.2015.10.014].
+
+Stauffer, B., and Powers, T. (2015). Target of rapamycin signaling mediates vacuolar fission caused by endoplasmic reticulum stress in S. cerevisiae. Mol. Biol. Cell mbc.E15–06 – 0344 [http://dx.doi.org/10.1091%2Fmbc.E15-06-0344 doi:10.1091%2Fmbc.E15-06-0344].
+
+Hankins, H.M., Sere, Y.Y., Diab, N.S., Menon, A.K., and Graham, T.R. (2015). Phosphatidylserine translocation at the yeast trans-Golgi network regulates protein sorting into exocytic vesicles. Mol. Biol. Cell mbc.E15–07 – 0487 [http://dx.doi.org/10.1091%2Fmbc.E15-07-0487 doi:10.1091%2Fmbc.E15-07-0487].
+
+Yu, Y.H., Narayanan, G., Sankaran, S., Ramasamy, S., Chan, S.Y., Lin, S., Chen, J., Yang, H., Srivats, H., and Ahmed, S. (2015). Purification, Visualization, and Molecular Signature of Neural Stem Cells. Stem Cells and Development [http://dx.doi.org/10.1089%2Fscd.2015.0190 doi:10.1089%2Fscd.2015.0190].
+
 Bajcsy, P., Cardone, A., Chalfoun, J., Halter, M., Juba, D., Kociolek, M., Majurski, M., Peskin, A., Simon, C., Simon, M., et al. (2015). Survey statistics of automated segmentations applied to optical imaging of mammalian cells. BMC Bioinformatics 16, 330 [http://dx.doi.org/10.1186%2Fs12859-015-0762-2 doi:10.1186%2Fs12859-015-0762-2].
 
 Desmarais, S.M., Tropini, C., Miguel, A., Cava, F., Monds, R.D., Pedro, M.A. de, and Huang, K.C. (2015). High-throughput, Highly Sensitive Analyses of Bacterial Morphogenesis Using Ultra Performance Liquid Chromatography. J. Biol. Chem. jbc.M115.661660 [http://dx.doi.org/10.1074%2Fjbc.M115.661660 doi:10.1074%2Fjbc.M115.661660].
@@ -415,7 +435,7 @@ Das, S., T. Yin, Q. Yang, J. Zhang, Y.I. Wu, and J. Yu. 2015. Single-molecule tr
 
 
 
-Total 2015 citation: 197
+Total 2015 citation: 207
 
 ==2014==
 
