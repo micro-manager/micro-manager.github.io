@@ -35,6 +35,7 @@ Note: QCam 2.0.8 and above require the firewire card's driver to be upgraded fro
 Basic support for multiple cameras was added in the 20130718 nightly build (expected to be in release 1.4.15). You can select each camera when adding the QCam device in the Hardware Configuration Wizard. --[[User:Mark Tsuchida|Mark Tsuchida]] 18:28, 18 July 2013 (PDT)
 
 The Qcam driver works with OS X up to Yosemite as long as you use the 32 bit version.  The 64 bit version does not work.  Tested running a Mac Mini with Thunderbolt to Firewire 800 adapter and a firewire 400 to 800 cable to a QiClick camera.
+--David Knecht 1-12-16
 
 {{Listserv_Search|QImaging}}
 
