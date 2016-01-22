@@ -65,17 +65,20 @@ The Z-slider is then moved down further into the sample, and the outline is adju
 
 Once you are satisfied with the grids or surfaces generated, you can return to the main Micro-Magellan window to set up an acquisition.
 
-==Acquisition :==
+==Acquisition==
 All of the grids and surfaces generated in Explore mode will populate the "grids" and "surfaces" tabs at the top of the Micro-Magellan main window, ext to the Device status/control tab. 
 
 [[File:AcquireGridSurfaces.jpg]]
 
 Below the Explore mode settings, there are a series of tabs to manage acquisition setup.
+
+===Saving===
 The "Save" tab allows you to define the name of the acquisition and uses the same directory as the explore mode. To set up a simple single area acquisition, enter a name fore the file. 
 In the "Time" tab, you can enter a time interval between image acquisition and the total number of time points to acquire
 
 [[File:AcquireTime.jpg]]
 
+===Space===
 In the “Space” tab there are several options for defining the volume you want to image. In a simple Z-stack you enter start and end Z positions, and either the grid or surface to define XY location and positions. 
 If you have created surfaces, you can also elect to image the area between two defined surfaces with a buffer on either side.
 
@@ -85,7 +88,10 @@ Imaging within a distance from a defined surface allows you to collect non-cuboi
 
 [[File:SurfacesNonCube.jpg]]
 
+===Channels===
 The “Channels” tab allows you select which of the available channels to collect, and the exposure time for each. 
+
+===Covaried Settings===
 The “Covaried Settings” tab allows you to vary one hardware setting depending on the state/value of another hardware device/setting. The “+” button on the left brings up the window below, allowing you to select one hardware setting as the independent variable, and a second as the dependent variable. 
 
 [[File:AcquireCoVariedIndependent.jpg]]
