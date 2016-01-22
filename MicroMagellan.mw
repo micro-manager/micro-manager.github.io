@@ -52,6 +52,19 @@ In the Grids tab, you can define an N x N grid, which will appear over your expl
 
 All of the grids generated in explore mode will populate the “grids”  tab at the top of the Micro-Magellan main window, next to the Device status/control tab. If you are creating multiple grids, it may be helpful to toggle back to the Micro-Magellan main window, and select and rename the grids with their identifying features (ie: airway, duct, tumor).
 
+
+===Surfaces===
+The surfaces tab allows you to define the morphology of the sample by defining the edges at multiple Z-planes; Micro-Magellan then interpolates between the outlines to generate a 3D representation of the sample which can then be used to adjust which fields are acquired to avoid collecting empty space, or vary hardware settings in a sample dependent manner.
+To begin drawing a surface, first define whether the sample is above or below the surface. In this example "below surface" was selected, so the first plane was the very top of the lymph node being imaged, and points were added around the perimeter. 
+
+[[File:ExploreSurfacesDrawTop.jpg]]
+
+The Z-slider is then moved down further into the sample, and the outline is adjusted. 
+
+[[File:ExploreSurfacesDrawBottom.jpg]]
+
+Once you are satisfied with the grids or surfaces generated, you can return to the main Micro-Magellan window to set up an acquisition.
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
