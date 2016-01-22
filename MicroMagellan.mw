@@ -6,12 +6,18 @@ The Micro-Magellan plugin allows flexible, dynamic device control and acquisitio
 In order for Micro-Magellan to operate, it needs to know the direction of Z movement. This is defined in the Hardware Configuration Wizard.
 [[File:Zdirection.jpg]]
 
-==Setting up Micro-Magellan for Device Control :==
+==Setting Up Micro-Magellan for Device Control :==
 From the plug-ins menu, select Micro-Magellan, and the unpopulated window opens. Select "Configure Device Control" 
 [[File:ConfigureDeviceControl.jpg]]
 
 A new window will open with a list of available devices and properties. You may also enter a "nickname" that more easily identifies the device/property. Selected devices/properties will appear in the Device status/control tab after pressing "Ok"
 [[File:SelectProperties.jpg]]
+
+
+==Setting Up Explore & Acquisition :==
+In order for Micro-Magellan to acquire tiled images and assemble them, it must have an accurate pixel size calibration for the objective in use. If you have already calibrated your pixel size using the “Pixel size calibrator” plug-in from MicroManager, this should automatically propagate to Micro-Magellan. Before using Explore mode, verify that the calibration is correct by pressing “Calibrate”. 
+If the fields are populated as below, Micro-Magellan has the necessary information. These parameters can be adjusted manually to fine tune stage movement for improved stitching. 
+If the calibration window shows a size of 0.0um, you can run click Start and follow the wizard instructions to generate an affine transform.
 
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
