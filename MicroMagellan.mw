@@ -23,7 +23,7 @@ A new window will open with a list of available devices and properties. You may 
 
 [[File:SelectProperties.jpg]]
 
-==Using Explore Mode :==
+==Using Explore Mode==
 Before exploring your sample you will need to enter your desired Z-step size and tile overlap. The channel group drop down is analogous to the channel group drop down within MicroManager’s Multi-Dimensional Acquisition and will be pre-populated with the configurations groups you have created. Select the settings group that contains your channel configurations.
 
 [[File:ExploreSettings.jpg]]
@@ -64,7 +64,6 @@ The Z-slider is then moved down further into the sample, and the outline is adju
 [[File:ExploreSurfacesDrawBottom.jpg]]
 
 Once you are satisfied with the grids or surfaces generated, you can return to the main Micro-Magellan window to set up an acquisition.
-
 
 ==Acquisition :==
 All of the grids and surfaces generated in Explore mode will populate the "grids" and "surfaces" tabs at the top of the Micro-Magellan main window, ext to the Device status/control tab. 
