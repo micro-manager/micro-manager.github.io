@@ -23,6 +23,18 @@ A new window will open with a list of available devices and properties. You may 
 
 [[File:SelectProperties.jpg]]
 
+==Using Explore Mode :==
+Before exploring your sample you will need to enter your desired Z-step size and tile overlap. The channel group drop down is analogous to the channel group drop down within MicroManager’s Multi-Dimensional Acquisition and will be pre-populated with the configurations groups you have created. Select the settings group that contains your channel configurations.
+
+[[File:ExploreSettings.jpg]]
+
+Pressing “Explore!” will open a new window:
+[[File:ExploreWindow.jpg]]
+
+On the left side is your image area; a field of view will highlight blue as you hover over it. On the right, are look-up tables (LUTs) for each channel and several other acquisition setup parameters.  
+To acquire an image in that area click to select (area will highlight green during active selection), once your selection is highlighted magenta, click again to confirm. You can click and drag to select multiple fields of view to be imaged. 
+The "Z limits" scroll bars below the image window control which Z locations will be imaged, and will adjust automatically to the selected Z-step size.
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
