@@ -74,6 +74,8 @@ Below the Explore mode settings, there are a series of tabs to manage acquisitio
 
 ===Saving===
 The "Save" tab allows you to define the name of the acquisition and uses the same directory as the explore mode. To set up a simple single area acquisition, enter a name fore the file. 
+
+===Time===
 In the "Time" tab, you can enter a time interval between image acquisition and the total number of time points to acquire
 
 [[File:AcquireTime.jpg]]
