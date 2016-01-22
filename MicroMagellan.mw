@@ -39,6 +39,13 @@ The "Z limits" scroll bars below the image window control which Z locations will
 
 Once you have begun to image, the Z-plane currently being displayed will appear dark green in the Z-limits scroll bars. Other acquired Z-planes will appear light green. In the example above, a Z-stack has already been collected (light green), and additional Z-planes will be collected between the new Z-limits.
 
+You can review acquired images by scrolling with the “Z” bar, and right-clicking and dragging to navigate in the XY plane. You can also zoom in and out by using the mouse scroll wheel with the image window selected.
+
+Once you have explored your sample and would like to select areas to image over time, with more optimized parameters, better Z-resolution, etc. you can use either the “Grids” or “Surfaces” tab above the LUTs to do so.
+
+===Grids===
+In the Grids tab, you can define an N x N grid, which will appear over your explored image. With the Grids tab active, you can drag this grid over the area you would like to image. You may generate multiple grids of different sizes by pressing “New Grid”, and then move them to different areas.
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
