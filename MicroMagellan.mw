@@ -35,6 +35,10 @@ On the left side is your image area; a field of view will highlight blue as you 
 To acquire an image in that area click to select (area will highlight green during active selection), once your selection is highlighted magenta, click again to confirm. You can click and drag to select multiple fields of view to be imaged. 
 The "Z limits" scroll bars below the image window control which Z locations will be imaged, and will adjust automatically to the selected Z-step size.
 
+[[File:ExploreZ.jpg]]
+
+Once you have begun to image, the Z-plane currently being displayed will appear dark green in the Z-limits scroll bars. Other acquired Z-planes will appear light green. In the example above, a Z-stack has already been collected (light green), and additional Z-planes will be collected between the new Z-limits.
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
