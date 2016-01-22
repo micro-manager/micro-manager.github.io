@@ -14,12 +14,14 @@ If the calibration window shows a size of 0.0um, you can run click Start and fol
 [[File:Calibration.jpg]]
 
 ==Setting Up Micro-Magellan for Device Control :==
+
 From the plug-ins menu, select Micro-Magellan, and the unpopulated window opens. Select "Configure Device Control" 
+
 [[File:ConfigureDeviceControl.jpg]]
 
 A new window will open with a list of available devices and properties. You may also enter a "nickname" that more easily identifies the device/property. Selected devices/properties will appear in the Device status/control tab after pressing "Ok"
-[[File:SelectProperties.jpg]]
 
+[[File:SelectProperties.jpg]]
 
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
