@@ -104,10 +104,16 @@ For a given tissue type and morphology, these parameters may be optimized and sa
 
 [[File:AcquireSurfacesLoadPreset.jpg]]
 
-===Drift Compenstation===
+===Drift Compensation===
 Drift compensation allows you to use a single channel that represents the static features of your sample, and use it to correct for Z drift. 
 
 [[File:AcquireDriftComp.jpg]]
+
+===Setting Up Multiple Acquisitions===
+To acquire more than a single grid or surface at a time, select the “Setup multiple acquisitions” tab. Click “+”, this will add a line with the name currently entered in the “Saving” tab below. Enter the parameters for this acquisition in the other acquisition settings tabs. 
+
+
+Clicking “+” again will add another line, it will appear with the same name. Highlight the second (new) acquisition and change its name in the “Saving” tab below, and change necessary parameters in the other acquisition settings tabs.
 
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
