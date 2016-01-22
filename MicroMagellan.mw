@@ -2,6 +2,14 @@
 
 The Micro-Magellan plugin allows flexible, dynamic device control and acquisition. The Explore feature allows you to examine your sample in XY and Z, building a 3D map of all areas covered, minimizing photo-bleaching and damage while finding areas of interest. Surfaces allows you to define an non-cuboidal region of interest and define sample morphology, which can then be used to define sample-driven parameters such as laser power at distance from surface. Using grids or surfaces, you can designate multiple areas to image in a single acquisition in series or in parallel.  
 
+==Getting Started with Micro-Magellan :==
+In order for Micro-Magellan to operate, it needs to know the direction of Z movement. This is defined in the Hardware Configuration Wizard. 
+
+==Setting up Micro-Magellan for Device Control :==
+From the plug-ins menu, select Micro-Magellan, and the unpopulated window opens. Select "Configure Device Control" 
+
+A new window will open with a list of available devices and properties. You may also enter a "nickname" that more easily identifies the device/property. Selected devices/properties will appear in the control window after pressing "Ok"
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
