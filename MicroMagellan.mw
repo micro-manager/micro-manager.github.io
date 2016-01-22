@@ -46,6 +46,12 @@ Once you have explored your sample and would like to select areas to image over 
 ===Grids===
 In the Grids tab, you can define an N x N grid, which will appear over your explored image. With the Grids tab active, you can drag this grid over the area you would like to image. You may generate multiple grids of different sizes by pressing “New Grid”, and then move them to different areas.
 
+[[File:ExploreGrids.jpg]]
+
+[[File:ExploreGridsImage.jpg]]
+
+All of the grids generated in explore mode will populate the “grids”  tab at the top of the Micro-Magellan main window, next to the Device status/control tab. If you are creating multiple grids, it may be helpful to toggle back to the Micro-Magellan main window, and select and rename the grids with their identifying features (ie: airway, duct, tumor).
+
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
 
