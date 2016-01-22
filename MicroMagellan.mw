@@ -69,7 +69,38 @@ Once you are satisfied with the grids or surfaces generated, you can return to t
 ==Acquisition :==
 All of the grids and surfaces generated in Explore mode will populate the "grids" and "surfaces" tabs at the top of the Micro-Magellan main window, ext to the Device status/control tab. 
 
+[[File:AcquireGridSurfaces.jpg]]
+
 Below the Explore mode settings, there are a series of tabs to manage acquisition setup.
+The "Save" tab allows you to define the name of the acquisition and uses the same directory as the explore mode. To set up a simple single area acquisition, enter a name fore the file. 
+In the "Time" tab, you can enter a time interval between image acquisition and the total number of time points to acquire
+
+[[File:AcquireTime.jpg]]
+
+In the “Space” tab there are several options for defining the volume you want to image. In a simple Z-stack you enter start and end Z positions, and either the grid or surface to define XY location and positions. 
+If you have created surfaces, you can also elect to image the area between two defined surfaces with a buffer on either side.
+
+[[File:AcquireSpaceVolbtwnSurf.jpg]]
+
+Imaging within a distance from a defined surface allows you to collect non-cuboidal volumes by using the edges of your surface to choose the XY positions that are collected at each Z-plane (example of XY footprints below). By selecting a Z-distance below a surface to image, you can also avoid collecting “blank” data in deep areas of the sample where there is no information due to scattering.
+
+[[File:SurfacesNonCube.jpg]]
+
+The “Channels” tab allows you select which of the available channels to collect, and the exposure time for each. 
+The “Covaried Settings” tab allows you to vary one hardware setting depending on the state/value of another hardware device/setting. The “+” button on the left brings up the window below, allowing you to select one hardware setting as the independent variable, and a second as the dependent variable. 
+
+[[File:AcquireCoVariedIndependent.jpg]]
+
+In the example below, the position of the Z-stage determines the EOM voltage (laser power), so that laser power can be increased to compensate for scattering deeper in the sample. 
+
+[[File:AcquiredCovariedPair.jpg]]
+
+To set interpolation points for the covaried settings, select the "+" button at the bottom right. 
+If you have defined surfaces, you can also choose to vary hardware settings based on surface data. 
+
+***
+
+For a given tissue type and morphology, these parameters may be optimized and saved for use across samples. To load a saved set of interpolation points and settings, click “load” and select the saved parameter file. You will be prompted to select which surface you would like to assign the settings to, and which surface parameter you would like to use.
 
 ==Using Micro-Magellan with BigDataViewer :==
 Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
