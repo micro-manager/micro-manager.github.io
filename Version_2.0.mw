@@ -29,13 +29,13 @@ If you want to write a new plugin or script, you will need to familiarize yourse
 
 [[Version_2.0_API_Transition_Guide]] is a transition guide to help people who are familiar with the 1.4 API and need to port their code to the 2.0 API. It breaks down where old API methods have gone and how to replace deprecated methods.
 
-The [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ Javadocs] will likely also prove useful. All packages whose names do _not_ include "internal" are part of the API in 2.0. In particular, the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ root API], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-summary.html data], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ display] packages should prove useful.
+The [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/ Javadocs] will likely also prove useful. All packages whose names do _not_ include "internal" are part of the API in 2.0. In particular, the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ root API], [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/package-summary.html data], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ display] packages should prove useful.
 
 ==== Important Note Regarding Netbeans ====
 
 µManager 2.0 includes a new plugin loading framework, which as a side-effect requires it to be able to see the MMJ_.jar file at runtime. Netbeans does not normally generate a jar file when you run your project. Thus in order to do development in Netbeans, you need to add MMJ_.jar to your library classpath.
 
-The effect you will see if you do not do this is that the program fails to launch, having encountered a NullPointerException in org.micromanager.internal.MainFrame.createCommonActionButtons(). 
+The effect you will see if you do not do this is that the program fails to launch, having encountered a NullPointerException in org.micromanager.internal.MainFrame.createCommonActionButtons().
 
 === API Events ===
 
