@@ -1,46 +1,48 @@
 One of the major changes in 2.0 is a restructuring of the API. In 1.4, most of the functionality of the API was in a single module, [https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html ScriptInterface]. In 2.0, the API has been subdivided, and some methods have been replaced by new techniques for accomplishing similar tasks. This page runs down the list of methods in 1.4's ScriptInterface and tells you how to perform the equivalent task in 2.0.
 
-=== CompatibilityInterface ===
+=== CompatibilityInterface, AcquisitionManager, and PositionListManager ===
 
-First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface] module contains many old methods from ScriptInterface, unmodified. These methods work as they did in 1.4, and include the following:
+First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface], [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/AcquisitionManager.html AcquisitionManager], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html PositionListManager] modules contain many old methods from ScriptInterface, unmodified. These methods work as they did in 1.4, and include the following:
 
-* addMMListener
-* attachRunnable
-* clearRunnables
-* enableRoiButtons
-* getAcquisitionEngine2010
-* getAutofocus
-* getAutofocusManager
-* getBackgroundStyle
-* getChannelExposureTime
-* getHideMDADisplayOption
-* getPositionList
-* getROI
-* getVersion
-* installAutofocusPlugin
-* isAcquisitionRunning
-* isPaused
-* loadAcquisition
-* logStartupProperties
-* makeActive
-* markCurrentPosition
-* refreshGUI
-* refreshGUIFromCache
-* removeMMListener
-* runAcquisition
-* saveConfigPresets
-* setAcquisitionSettings
-* setBackgroundStyle
-* setChannelExposureTime
-* setConfigChanged
-* setPause
-* setPositionList
-* setROI
-* showAutofocusDialog
-* showXYPositionList
-* versionLessThan
+* CompatibilityInterface
+** addMMListener
+** enableRoiButtons
+** getAutofocus
+** getAutofocusManager
+** getBackgroundStyle
+** getChannelExposureTime
+** getROI
+** getVersion
+** installAutofocusPlugin
+** logStartupProperties
+** makeActive
+** refreshGUI
+** refreshGUIFromCache
+** removeMMListener
+** saveConfigPresets
+** setBackgroundStyle
+** setChannelExposureTime
+** setConfigChanged
+** setROI
+** showAutofocusDialog
+** versionLessThan
+* AcquisitionManager
+** attachRunnable
+** clearRunnables
+** getHideMDADisplayOption
+** getPositionList
+** isAcquisitionRunning
+** isPaused
+** loadAcquisition
+** runAcquisition
+** setAcquisitionSettings
+** setPause
+* PositionListManager
+** getPositionList
+** markCurrentPosition
+** setPositionList
 
-You can access the CompatibilityInterface by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#compat() compat] method. The Studio in turn is available in the BeanShell window as "mm", and is provided to plugins when they are initialized.
+You can access the CompatibilityInterface by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#compat() compat] method, the AcquisitionManager by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#acquisitions() acquisitions] method, and the PositionListManager by calling the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html#positions() positions] method. The Studio in turn is available in the BeanShell window as "mm", and is provided to plugins when they are initialized.
 
 === acquisitionExists ===
 
