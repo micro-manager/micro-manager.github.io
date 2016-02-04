@@ -330,6 +330,10 @@ Moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromana
 
 Moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/LogManager.html LogManager] object, which can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html logs] method.
 
+=== showXYPositionList ===
+
+For consistency, this method was renamed to [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/PositionListManager.html#showPositionList() showPositionList] in [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html PositionListManager].
+
 === sleep ===
 
 This method has been removed. Use [http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#sleep%28long%29 Thread.sleep] instead.
