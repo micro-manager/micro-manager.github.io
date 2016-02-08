@@ -4,18 +4,17 @@ This page serves as a "hub" for various other pages related to Version 2.0.
 
 === Downloads ===
 
-2.0.0-beta2
-[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Windows/32bit/MMSetup_32bit_2.0.0-beta2.exe Windows 32-bit] |
-[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Windows/64bit/MMSetup_64bit_2.0.0-beta2.exe Windows 64-bit] |
-[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Mac/Micro-Manager-2.0.0-beta2.dmg Mac OS X]
-
-(Note: there is no 2.0.0-beta1 build.)
-
 Beta nightly builds:
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac/ Mac OS X]
 
-(Alpha nightly builds:
+2.0.0-beta2 (obsolete)
+[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Windows/32bit/MMSetup_32bit_2.0.0-beta2.exe Windows 32-bit] |
+[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Windows/64bit/MMSetup_64bit_2.0.0-beta2.exe Windows 64-bit] |
+[http://valelab.ucsf.edu/~MM/builds/2.0.0-beta/Mac/Micro-Manager-2.0.0-beta2.dmg Mac OS X]
+(Note: there is no 2.0.0-beta1.)
+
+Alpha nightly builds (obsolete):
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-alpha/Mac/ Mac OS X])
 
