@@ -7,8 +7,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/mi
 * CompatibilityInterface
 ** addMMListener
 ** enableRoiButtons
-** getAutofocus
-** getAutofocusManager
 ** getBackgroundStyle
 ** getChannelExposureTime
 ** getROI
