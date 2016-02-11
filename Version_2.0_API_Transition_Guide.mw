@@ -160,6 +160,14 @@ As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manage
 
 The path of a Datastore's saved location on disk is accessible via its [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath() getSavePath] method.
 
+=== getAutofocus ===
+
+Use [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/AutofocusManager.html#getAutofocusMethod AutofocusManager.getAutofocusMethod] instead.
+
+=== getAutofocusManager ===
+
+Use [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio#getAutofocusManager Studio.getAutofocusManager] instead.  
+
 === getBackgroundColor ===
 
 As discussed in the notes for <code>addMMBackgroundListener</code>, background color selection is now handled automatically. Thus this method is no longer needed.
