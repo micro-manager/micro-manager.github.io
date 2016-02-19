@@ -43,6 +43,9 @@ Uses a DA device to set the position of a Z-stage that is connected to the DA de
 == DA-XY-Stage ==
 Similar to the DA-Z-Stage adapter, but now sets to DA devices simultanuously, one corresponding to the X-stage, the other to the Y-stage.
 
+== DA-TTL-State-Device ==
+Given 1 to 8 analog output (DA) devices, the DATTLStateDevice will provide a virtual device that combines the DA devices into a single 1- to 8-bit digital (TTL) output device. Each DA device works as a 1-bit digital output line.
+
 == Autofocus Stage ==
 Can be used to operate the 'offset' function of a hardware autofocus device (such as the Nikon Perfect Focus and Zeiss Definite Focus) as a Z-drive. 
 
