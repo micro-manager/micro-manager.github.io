@@ -138,6 +138,10 @@ Micro-Magellan writes data in a multiresolution file format that is compatible w
 5) Click "Apply changes" <br>
 
 
+==Micro-Magellan source code:==
+The source code can be accessed in the Micro-Manager subversion repository at https://valelab.ucsf.edu/trac/micromanager/browser/plugins/Magellan#src/org/micromanager/plugins/magellan
+
+
 <table><tr><td>'''User Guide:'''</td><td valign="top">[[Media:Micro-MagellanUserGuide.pdf]]</td></tr>
 <tr><td>'''Authors:'''</td><td>Henry Pinkard, Kaitlin Corbin</td></tr>
 
