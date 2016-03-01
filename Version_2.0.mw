@@ -40,8 +40,10 @@ The effect you will see if you do not do this is that the program fails to launc
 
 Version 2.0 provides greater access to the event publication and subscription system initially introduced in 1.4. [[Version_2.0_API_Events]] has more information on what events are available.
 
-=== Scripts ===
+=== Other Documentation ===
 
 For some examples of writing Beanshell scripts for 2.0, see [[Version_2.0_Scripts]]
+
+Version 2.0 includes a new User Profile system; see [[Version_2.0_Profiles]] for more information.
 
 {{2.0_Sidebar}}
