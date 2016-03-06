@@ -137,6 +137,7 @@ Micro-Magellan writes data in a multiresolution file format that is compatible w
 4) Click "Close" <br>
 5) Click "Apply changes" <br>
 
+Open a Magellan dataset by selecting "Plugins--BigDataViewer--Open XML/HDF5" and select the "FIJI_BigDataViewer_Metadata.xml" file within a Magellan dataset
 
 ==Micro-Magellan source code==
 The source code can be accessed in the Micro-Manager subversion repository at https://valelab.ucsf.edu/trac/micromanager/browser/plugins/Magellan#src/org/micromanager/plugins/magellan
