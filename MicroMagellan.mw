@@ -142,12 +142,6 @@ Micro-Magellan writes data in a multiresolution file format that is compatible w
 The source code can be accessed in the Micro-Manager subversion repository at https://valelab.ucsf.edu/trac/micromanager/browser/plugins/Magellan#src/org/micromanager/plugins/magellan
 
 
-==Demo mode==
-Micro-Magellan has a built in demo mode for testing without actual hardware. 
-
-[[File:MMConfig_MagellanDemo.cfg]]
-
-
 <table><tr><td>'''User Guide:'''</td><td valign="top">[[Media:Micro-MagellanUserGuide.pdf]]</td></tr>
 <tr><td>'''Authors:'''</td><td>Henry Pinkard, Kaitlin Corbin</td></tr>
 
