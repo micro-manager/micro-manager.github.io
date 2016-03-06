@@ -145,6 +145,7 @@ The source code can be accessed in the Micro-Manager subversion repository at ht
 ==Demo mode==
 Micro-Magellan has a built in demo mode for testing without actual hardware. 
 
+[[File:MMConfig_MagellanDemo.cfg]]
 
 
 <table><tr><td>'''User Guide:'''</td><td valign="top">[[Media:Micro-MagellanUserGuide.pdf]]</td></tr>
