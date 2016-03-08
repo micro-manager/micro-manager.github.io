@@ -13,8 +13,8 @@
 
 There are three different device adapters for Standa motor controllers:
 * Standa8SMC4 – official adapter (this one) for operation with 8SMC4-USB motor controller which was developed by Standa motion control department.
-* Standa – adapter for 8SMC1-USBhF (old version of motor controller from Standa). Standa has no relation to its development.
-* StandaStage – another adapter with 8SMC1-USBhF support. Standa has no relation to its development.
+* Standa – adapter for 8SMC1-USBhF (old version of motor controller from Standa).
+* StandaStage – another adapter with 8SMC1-USBhF support.
 
 == Supported platforms ==
 
