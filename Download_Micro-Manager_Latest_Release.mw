@@ -7,8 +7,10 @@ Read the [[#Known_issues_in_1.4.22|Known Issues]].
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe Windows 32-bit], 63.4 MB<br />
 [http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe Windows 64-bit], 65.1 MB<br />
+Requires Windows XP, or 7-10. Windows 7 recommended. Device drivers may have other requirements.<br />
 
 [http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.22.dmg Mac OS X (Universal Binary)], 54.0 MB<br />
+Requires Mac OS X 10.5-10.10. 10.11 (El Capitan) is not yet supported. Device drivers may have other requirements.<br />
 (OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
 === Known issues in 1.4.22 ===
