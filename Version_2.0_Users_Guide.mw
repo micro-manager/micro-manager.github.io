@@ -698,6 +698,8 @@ The main text editor area on the top is where you write your scripts. You can ru
 
 Below the text editor is a REPL, or "Read-Eval-Print Loop", where you can execute Beanshell commands one at a time. For example, to snap a single image in µManager, you can input the command "mm.live().snap(true);" (without the quotation marks).
 
+If you want to write your own scripts, you should read the API, plugins and other documentation at [[Version 2.0|the µManager 2.0 index]].
+
 On the left-hand side of the Script Panel is a list of shortcut scripts. Click the "Add" button to add the current script to the list; you can then switch between scripts by clicking on them.
 
 ===Keyboard Shortcuts===
