@@ -210,6 +210,7 @@ This panel shows information about the distribution of pixel intensities in your
 <div id="Histogram Gear Menu"></div>
 * Gear menu:
 [[File:UsersGuide_histogramGears.png|Histograms gear menu]]
+
 This menu provides access to some uncommonly-used settings:
 ** Logarithmic Y Axis: allows you to toggle the Y axis of histograms between a linear scale and a logarithmic scale.
 ** Calculate Standard Deviation: adds standard deviation to the list of statistics calculated about each image (see [[#Image Statistics]] below). This can slightly reduce display framerates due to the extra calculations involved.
