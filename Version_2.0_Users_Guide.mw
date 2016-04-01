@@ -547,7 +547,7 @@ The Tools menu contains a variety of miscellaneous tools.
 * Stage Control: opens the [[#Stage Control]] window.
 * Stage Position List: opens the [[#Stage Position List]] window.
 * Mouse Moves Stage: toggles the ability to use ImageJ's hand tool to move the stage in the Snap/Live view. This is the same as clicking on the hand icon in the main window's [[#Miscellaneous Settings|miscellaneous buttons]].
-* Multi-Dimension Acquisition: opens the [[Multi-Dimensional Acquisition]] window.
+* Multi-Dimension Acquisition: opens the [[#Multi-Dimensional Acquisition]] window.
 * Pixel Size Calibration: opens the [[#Pixel Calibration]] dialog.
 * Options: opens the [[#Options Dialog]]
 
