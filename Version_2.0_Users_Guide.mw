@@ -654,7 +654,7 @@ Problem Reports are a way for you to send detailed information about malfunction
 
 ==Plugins==
 
-Plugins are extensions of µManager's capabilities. There are various types of plugins that are accessible in different contexts, but the primary type of plugin is available via the Plugins Menu. This document will not try to explain every plugin in µManager, but it will cover some of the important ones.
+Plugins are extensions of µManager's capabilities. There are various types of plugins that are accessible in different contexts, but the primary type of plugin is available via the Plugins Menu. This document will not try to explain every plugin in µManager, but it will cover some of the important ones. [[Plugins]] has information about more plugins.
 
 ===Pixel Calibrator===
 
