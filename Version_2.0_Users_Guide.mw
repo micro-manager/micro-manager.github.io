@@ -1,3 +1,5 @@
+This document provides an extensive guide to using µManager, and is recommended reading for new users.
+
 ==Introduction==
 
 Modern microscopes have many computer-controlled components that need to work in harmony for accurate data to be collected. Shutters and light sources must be opened and closed with precise timing, synchronized with the camera that takes the image; filter wheels must be positioned to allow only the desired wavelengths of light; XY and Z stages must precisely position the sample. Performing even simple data acquisitions requires many precise steps to be carried out.
@@ -149,13 +151,35 @@ These buttons provide various miscellaneous features.
 
 ==Image Windows==
 
-[[File:UsersGuide_imageWindow.png|Image Window]]
+[[File:UsersGuide_imageWindowMultiAxis.png|Image Window]]
 
-This window shows the output of your camera, including metadata about the image size, channel used, current stage position, etc. Along the bottom is a row of buttons, several of which are duplicates of buttons from the main window:
+This window shows the output of your camera, including metadata about the image size, channel used, current stage position, etc. The image pixel display is on top, along with various metadata about the current image. Below that is the axis scrollbars that allow you to scroll through your dataset:
+
+[[File:UsersGuide_imageWindowAxes.png|Image Window axis scrollbars]]
+
+This dataset has four axes: Z (slice), channel, stage position, and timepoints. Each axis has the following controls, from left to right:
+
+* The axis label button. Clicking on this button toggles animation of the axis, wherein the display automatically scrolls through the axis positions. For example, animating the Z axis will cause the display to scroll through all Z positions, scanning through the 3D volume acquired at this timepoint and stage position.
+* The current position along the axis. In this screenshot, the Z axis is at position 6 of 6, channel is at 1 of 2, stage position is at 4 of 4, and timepoint is at 5 of 5. Clicking on this position indicator will pop up a text field to allow you to type the precise position you want to go to.
+* A scrollbar that can be used to manually scroll through the poesitions.
+* A lock icon, which can be used to prevent the display from modifying this axis while data is acquired. The lock icon has three states, which you can cycle between by clicking. When unlocked, the display will change the axis to reflect the most recently-received image during acquisition. When locked, the display will briefly show newly-acquired images, but "snap back" to the current position after a short delay. And when "superlocked" (with a red lock icon), the display will never change the axis.
+* A link icon, which is only visible if you have at least two image windows open. See [[#Linking Displays]] for more information.
+
+The "FPS" button indicates the playback FPS when animating axes by clicking on the axis label buttons. Click on it to adjust it.
+
+Along the bottom of the window is a row of buttons. The precise buttons available in an image window depend on whether it is an acquisition window or the Snap/Live window. Snap/Live has these three special buttons:
 
 # Snap: Snap another image, replacing the image currently displayed.
 # Live: Enable a live feed from the camera, continuously updating the displayed image as fast as possible. Click again to turn live off.
 # Snap to Album: Snap a new image and add it to the "album", which is an ad-hoc collection of images.
+
+Acquisition windows have these two special buttons:
+
+# Abort acquisition: after a confirmation dialog, will halt the acquisition.
+# Pause acquisition: temporarily pauses the acquisition, allowing it to be resumed later. Note that acquisitions may only be paused if they are not [[#Sequence Acquisitions]].
+
+Both window types have the following generic buttons:
+
 # Fullscreen: toggle full-screen mode for this image window.
 # Zoom In/Out: changes the scale of the image in the image window. This solely changes how many pixels in your computer monitor are used to display each pixel in the image; it does not change any hardware.
 # Save: Save this image to disk
@@ -188,6 +212,26 @@ This dialog allows you to export a series of image files that show your data as 
 [[File:UsersGuide_exportImages.png|Export Images Dialog]]
 
 This can be useful for generating images or movies for use in presentations. It is not recommended that you use this dialog for preserving your raw data; instead use the "Save" button. This export system does not preserve image metadata, and because it uses your current contrast settings, will not necessarily preserve accurate image pixel intensities.
+
+===Linking Displays===
+
+Oftentimes if you have multiple image windows open, it's because you want to compare some similar aspect of them. µManager provides the ability to easily "link" displays together, which will cause changes to one display to be reflected in the other. Currently, two aspects of displays can be linked: their image coordinates, and their contrast settings.
+
+====Linking Image Coordinates====
+
+When you have two image windows open, and they both have at least one axis in common (for example, they both have a Time axis), you can link that axis by clicking on the link button in one of the image windows:
+
+[[File:UsersGuide_linkButton.png|Link Button]]
+
+This will pop up a menu allowing you to link the window to other windows, by name. Select the other window's name, and the two windows are linked on that axis; if you change the position of that axis in one window, it will automatically be changed in the other window as well.
+
+====Linking Contrast Settings====
+
+As with image coordinates above, if you have two image windows that have the same channel (for example, both have a channel named "DAPI"), then a link button will be added to the histogram in the [[#Inspector Windows|Inspector window]], just to the right of the channel color swatch:
+
+[[File:UsersGuide_linkingContrast.png|Linking Contrast]]
+
+Clicking on the link button allows you to link contrast with the other image window; adjustments made to the contrast in one window will then automatically be made to the other window as well.
 
 ==Inspector Windows==
 
