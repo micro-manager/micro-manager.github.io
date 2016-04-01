@@ -218,6 +218,7 @@ This menu provides access to some uncommonly-used settings:
 
 * Color mode:
 [[File:UsersGuide_colorMode.png|Color Mode selector]]
+
 This dropdown menu allows you to choose how color is used when looking at grayscale images. You have the following options:
 ** Color: A single channel will be displayed at a time, using the color selected for the channel (see [[#Channel Colors]] below).
 ** Composite: All channels are displayed simultaneously, using color blending.
