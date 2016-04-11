@@ -736,13 +736,13 @@ Allows you to run a Beanshell script at the press of a button. See the [[#Script
 
 [[File:UsersGuide_scriptPanel.png|Script Panel]]
 
-The Script Panel (reachable from the Tools menu) allows you to write scripts that implement custom behaviors. You can use scripts to run customized acquisitions, analyze your data, set up your hardware in a specific way, and more. Scripts are written in the [[http://www.beanshell.org/ Beanshell programming language]], which is a simplified dialect of Java.
+The Script Panel (reachable from the Tools menu) allows you to write scripts that implement custom behaviors. You can use scripts to run customized acquisitions, analyze your data, set up your hardware in a specific way, and more. Scripts are written in the [http://www.beanshell.org/ Beanshell programming language], which is a simplified dialect of Java.
 
 The main text editor area on the top is where you write your scripts. You can run a script using the "Run" button (and, while it is running, use the "Interrupt" button to attempt to halt it). Scripts can be created, loaded, and saved using the "New", "Open", "Save", and "Save As" buttons.
 
 Below the text editor is a REPL, or "Read-Eval-Print Loop", where you can execute Beanshell commands one at a time. For example, to snap a single image in µManager, you can input the command "mm.live().snap(true);" (without the quotation marks).
 
-If you want to write your own scripts, you should read the API, plugins and other documentation at [[Version 2.0|the µManager 2.0 index]].
+If you want to write your own scripts, you should read the API, plugins and other documentation at [[Version 2.0|the µManager 2.0 index]]. In particular, you can access the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio object] via the pre-set variable "mm" (for example, "mm.displays().show(image)" to display an image), and you can access the [https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html MM Core] via the "mmc" variable (for example, "mmc.getChannelGroup()"). These two objects are your primary access points for controlling µManager.
 
 On the left-hand side of the Script Panel is a list of shortcut scripts. Click the "Add" button to add the current script to the list; you can then switch between scripts by clicking on them.
 
