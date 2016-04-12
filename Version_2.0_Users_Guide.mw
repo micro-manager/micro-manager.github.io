@@ -374,7 +374,7 @@ Each channel has its own row in the table, with corresponding settings:
 # Skip Fr.: skip certain timepoints with this channel. For example, if this is set to 1, then only every other timepoint will be imaged with this channel; if set to 2, only timepoints that are a multiple of 3 will be imaged; et cetera. This can be useful for channels that bleach easily.
 # Color: set the color the channel will use in the image window associated with the acquisition.
 
-If you click the "Keep shutter open" checkbox, then any shutter device involved in changing channels will not be closed in-between each channel. This means the microscope will not have to wait for the shutter to close and open each time the channel is changed, which can save time. However, your sample will be exposed to more light (with a potentially-irregular distribution among the different exposure wavelengths due to timing variabilities), which may cause undesirably bleaching.
+If you click the "Keep shutter open" checkbox, then any shutter device involved in changing channels will not be closed in-between each channel. This means the microscope will not have to wait for the shutter to close and open each time the channel is changed, which can save time. However, your sample will be exposed to more light (with a potentially-irregular distribution among the different exposure wavelengths due to timing variabilities), which may cause undesirable bleaching.
 
 ===Multiple Positions (XY)===
 <div id="MDA Stage Positions"></div>
