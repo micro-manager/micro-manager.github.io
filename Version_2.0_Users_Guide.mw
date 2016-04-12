@@ -607,7 +607,7 @@ The Tools menu contains a variety of miscellaneous tools.
 
 This dialog, reachable via the [[#Tools Menu]], allows you to configure various aspects of µManager.
 
-* The "Display Background" allows you to select between a traditional black-on-white display mode, and a "Night" mode that has lower contrast and is more comfortable to use in darkrooms.
+* The "Display Background" allows you to select between a traditional black-on-white display mode, and a "Night" mode that has lower contrast and is more comfortable to use in darkrooms. Most screenshots in this guide use the "Night" mode.
 
 * The Sequence Buffer Size determines how much RAM is allocated to transient image storage when performing acquisitions. See the [[Micro-Manager Configuration Guide#MemorySettings|Configuration Guide]] for more information.
 
