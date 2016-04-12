@@ -708,7 +708,7 @@ The Quick Access Panel system allows you to create customized windows that allow
 
 [[File:UsersGuide_quickAccessMenu.png|Quick Access Panel Menu]]
 
-You can have multiple Quick Access Panels at the same time; select the "Create New Panel" option to make new ones, or the "Delete" option to delete one you no longer need. Below that is a list of all Quick Access Panels -- there's only one in this case. If you want to save your panel setup for re-use or sharing with others, use "Save Settings"; conversely, if you want to load someone else's settings, use "Load Settings". Note that your personal Quick Access Panels are always remembered from one session to the next, so you do not need to use these options just to preserve your setup.
+You can have multiple Quick Access Panels at the same time; select the "Create New Panel" option to make new ones, or the "Delete" option to delete one you no longer need. Below that is a list of all Quick Access Panels -- there's only one in this case, named "My Settings". If you want to save your panel setup for re-use or sharing with others, use "Save Settings"; conversely, if you want to load someone else's settings, use "Load Settings". Note that your personal Quick Access Panels are always remembered from one session to the next, so you do not need to use these options just to preserve your setup.
 
 Here is an example Quick Access Panel:
 
