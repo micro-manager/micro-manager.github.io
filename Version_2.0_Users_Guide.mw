@@ -494,9 +494,9 @@ This dialog shows the demo config file, which already has several pixel sizes re
 
 [[File:UsersGuide_newPixelSize.png|Create new pixel size config]]
 
-This works much like modifying a [[#Config Groups|config group]]: select a new name for the pixel size (the default shown here is "Res3"), indicate the pixel size, and then select which device property or properties correspond to the new pixel size. µManager will automatically update the current pixel size based on these properties. In the case of the demo config, the only relevant property is the current objective.
+This works much like modifying a [[#Config Groups|config group]]: select a new name for the pixel size (the default shown here is "Res3"), indicate the pixel size, and then select which device property or properties correspond to the new pixel size. When those properties change, µManager will automatically update the current pixel size. For the demo config, the only relevant property is the current objective.
 
-If you are creating a new config file, and thus do not have any pre-set pixel sizes, then you will instead be shown a dialog like the one used to create a new [[Config Groups|config group]]. For purposes of this tutorial, the pixel sizes built into the demo config were all deleted instead.
+If you are creating a new config file, and thus do not have any pre-set pixel sizes, then you will instead be shown a dialog like the one used to create a new [[Config Groups|config group]], which we will walk through now. For purposes of this tutorial, the pixel sizes built into the demo config were all deleted instead.
 
 [[File:UsersGuide_newPixelSizeGroup.png|Create new pixel size group]]
 
