@@ -125,7 +125,7 @@ These settings allow you to control how images are acquired.
 * Changroup: set the [[#Configuration Groups|config group]] that is used to control the channel
 * Binning: set the bin mode for the camera, which allows you to combine multiple physical pixels together (for example, in 2x2 binning, 4 physical pixels are combined into a single image pixel).
 * Shutter: set the hardware device that will be used for shuttering when images are acquired. If you have multiple different light paths (e.g. LED vs. laser vs. brightfield) then you can use this to switch between them.
-* Auto/manual shutter controls: normally, µManager is in auto-shutter mode, where the shutter is opened automatically when images are acquired, and closed otherwise. By unchecking the "Auto" checkbox, you can switch to manual shutter mode by either clicking on the "Open/Close" button or on the shutter state indicator. This can be useful, for example, for illuminating your sample while looking through the eyepiece.
+* Auto/manual shutter controls: normally, µManager is in auto-shutter mode, where the shutter is opened automatically when images are acquired, and closed otherwise. By unchecking the "Auto" checkbox, you can switch to manual shutter mode, in which you can open or close the shutter by either clicking on the "Open/Close" button or on the shutter state indicator. This can be useful, for example, for illuminating your sample while looking through the eyepiece.
 
 ====Configuration Groups====
 
