@@ -524,9 +524,9 @@ For example, selecting the "Merge with XY current position" option would cause t
 
 The "Go to" button moves the stage(s) to the coordinates of the selected position. The "Refresh" button updates the "Current" position coordinates in case they have changed. "Remove" deletes the selected stage position, and "Clear All" deletes all stage positions.
 
-The "Set Origin" sets the current stage position as the "zero point" reference from which all stage coordinates are derived. For example, if you set the origin when at XY = (100, 50), then your stage position will be indicated as (0, 0), but it will be the same location as previously indicated. Note that setting the origin requires re-homing the stage, which can move it; be certain that this will not cause the stage to "crash" into the objective lens or anything else. You will be given a warning dialog prior to homing the stage.
+The "Set Origin" button sets the current stage position as the "zero point" reference from which all stage coordinates are derived. For example, if you set the origin when at XY = (100, 50), then your stage position will be indicated as (0, 0), but it will be the same location as previously indicated. Note that setting the origin requires re-homing the stage, which can move it; be certain that this will not cause the stage to "crash" into the objective lens or anything else. You will be given a warning dialog prior to homing the stage.
 
-The "Add Offset" button allows you to shift the position of the currently-selected stage positions, for example shifting the focus point by adjusting the Z stage coordinate.
+The "Add Offset" button allows you to shift the position of the currently-selected stage positions. You can use this, for example, to correct for accidentally bumping the sample holder.
 
 Stage position lists can be saved to disk and then loaded later using the "Save As..." and "Load..." buttons.
 
@@ -544,7 +544,9 @@ The second method is to set the boundaries of the grid by moving the stage, for 
 
 [[File:UsersGuide_createGridManual.png|Create Grid manual positioning]]
 
-In either case, you can also specify how much overlap there should be between adjacent fields of view using the "Overlap" field. Overlap can be specified in microns, pixels, or percentages.
+The rectangle specified by these set points will then be "filled in" with stage positions so that the entire region is imaged.
+
+Both methods of creating a grid allow you to specify how much overlap there should be between adjacent fields of view, by using the "Overlap" field. Overlap can be specified in microns, pixels, or percentages.
 
 When you click "OK", the grid will be created as a list of stage positions:
 
