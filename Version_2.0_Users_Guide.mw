@@ -315,7 +315,7 @@ By default, only metadata properties that have changed from one image to the nex
 
 This panel shows any comments that have been included with the dataset. "Acquisition comments" shows information that is not specific to any one image, and "Per-image comments" shows information for the currently-displayed image. If you are using a composite view mode, then the currently-selected channel is displayed.
 
-You can update the comments as you see fit. They are automatically saved whenever you make a change. Comments are saved to an "annotation file" that is stored alongside to, but separately from, the actual image data. Thus, changing the comments will not change your image data (including changing the "last modified" timestamp on the file).
+You can update the comments as you see fit. They are automatically saved whenever you make a change. Comments are saved to an "annotation file" that is stored alongside to, but separately from, the actual image data. Thus, changing the comments will not change your image data (nor will it change the "last modified" timestamp on the file).
 
 ===Overlays===
 
