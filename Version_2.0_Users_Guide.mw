@@ -287,6 +287,10 @@ In addition to these abilities, the histogram provides the following other detai
 
 This sidebar indicates the channel name, and allows you to change the channel color by clicking on the colored square. The "Full" button automatically sets the black and white point to 0 and the maximum intensity that your camera is capable of providing. The "Auto once" button automatically performs a single autostretch, as if the "Autostretch" check box had been enabled.
 
+If you have multiple channels available, then an eye button will appear to the left of the channel color swatch. Clicking it will turn on and off display of this channel when in composite view mode.
+
+If there is another image window that has data for this channel, then a link button will appear to the right of the channel color swatch. See [[##Linking Displays]] for more information.
+
 [[File:UsersGuide_histogramScale.png|Histogram view scale]]
 
 This dropdown menu and associated zoom arrows allows you to set the X axis scale for the histogram, so you can "zoom in" on a specific range of intensities. The "Camera Depth" option (usually selected by default) will automatically set the scale to cover from 0 to the maximum intensity that your camera is capable of providing.
