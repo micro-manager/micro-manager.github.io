@@ -121,7 +121,7 @@ You may sometimes find yourself with an excess of image windows that contain thr
 
 These settings allow you to control how images are acquired. 
 
-* Exposure: sets the exposure time for images. "Exposoure time" in µManager always refers to the _camera_ exposure time, not the sample exposure time.
+* Exposure: sets the exposure time for images. "Exposure time" in µManager always refers to the _camera_ exposure time, not the sample exposure time.
 * Changroup: set the [[#Configuration Groups|config group]] that is used to control the channel
 * Binning: set the bin mode for the camera, which allows you to combine multiple physical pixels together (for example, in 2x2 binning, 4 physical pixels are combined into a single image pixel).
 * Shutter: set the hardware device that will be used for shuttering when images are acquired. If you have multiple different light paths (e.g. LED vs. laser vs. brightfield) then you can use this to switch between them.
