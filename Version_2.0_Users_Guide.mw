@@ -252,7 +252,7 @@ This panel shows information about the distribution of pixel intensities in your
 ====Global Histogram Controls====
 
 <div id="Histogram Gear Menu"></div>
-* Gear menu:
+* Gear menu (located in the "Histograms and Settings" header):
 [[File:UsersGuide_histogramGears.png|Histograms gear menu]]
 
 This menu provides access to some uncommonly-used settings:
