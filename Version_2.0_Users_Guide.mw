@@ -289,7 +289,7 @@ This sidebar indicates the channel name, and allows you to change the channel co
 
 If you have multiple channels available, then an eye button will appear to the left of the channel color swatch. Clicking it will turn on and off display of this channel when in composite view mode.
 
-If there is another image window that has data for this channel, then a link button will appear to the right of the channel color swatch. See [[##Linking Displays]] for more information.
+If there is another image window that has data for this channel, then a link button will appear to the right of the channel color swatch. See [[#Linking Displays]] for more information.
 
 [[File:UsersGuide_histogramScale.png|Histogram view scale]]
 
