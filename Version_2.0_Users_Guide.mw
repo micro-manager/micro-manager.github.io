@@ -161,11 +161,11 @@ This dataset has four axes: Z (slice), channel, stage position, and timepoints. 
 
 * The axis label button. Clicking on this button toggles animation of the axis, wherein the display automatically scrolls through the axis positions. For example, animating the Z axis will cause the display to scroll through all Z positions, scanning through the 3D volume acquired at this timepoint and stage position.
 * The current position along the axis. In this screenshot, the Z axis is at position 2 of 6, channel is at 1 of 2, stage position is at 4 of 4, and timepoint is at 5 of 5. Clicking on this position indicator will pop up a text field to allow you to type the precise position you want to go to.
-* A scrollbar that can be used to manually scroll through the poesitions.
+* A scrollbar that can be used to manually scroll through the positions.
 * A lock icon, which can be used to prevent the display from modifying this axis while data is acquired. The lock icon has three states, which you can cycle between by clicking. When unlocked, the display will change the axis to reflect the most recently-received image during acquisition. When locked, the display will briefly show newly-acquired images, but "snap back" to the current position after a short delay. And when "superlocked" (with a red lock icon), the display will never change the axis.
 * A link icon, which is only visible if you have at least two image windows open. See [[#Linking Displays]] for more information.
 
-The "FPS" button indicates the playback FPS when animating axes by clicking on the axis label buttons. Click on it to adjust it.
+The "FPS" button indicates the playback FPS when animating axes by clicking on the axis label buttons. Click on it to adjust the animation rate.
 
 Along the bottom of the window is a row of buttons. The precise buttons available in an image window depend on whether it is an acquisition window or the Snap/Live window. Snap/Live has these three special buttons:
 
@@ -176,20 +176,20 @@ Along the bottom of the window is a row of buttons. The precise buttons availabl
 Acquisition windows have these two special buttons:
 
 # Abort acquisition: after a confirmation dialog, will halt the acquisition.
-# Pause acquisition: temporarily pauses the acquisition, allowing it to be resumed later. Note that acquisitions may only be paused if they are not [[#Sequence Acquisitions]].
+# Pause acquisition: temporarily pauses the acquisition, allowing it to be resumed later. Note that acquisitions may only be paused if they are not [[#Sequence Acquisitions]]. If your acquisition consists of multiple sequence acquisitions, then you can pause it in-between sequences (clicking once will automatically pause at the first opportunity).
 
 Both window types have the following generic buttons:
 
 # Fullscreen: toggle full-screen mode for this image window.
 # Zoom In/Out: changes the scale of the image in the image window. This solely changes how many pixels in your computer monitor are used to display each pixel in the image; it does not change any hardware.
-# Save: Save this image to disk
+# Save: Save this dataset to disk
 # Settings: access miscellaneous settings:
 <div id="Image Window Settings"></div>
 
 [[File:UsersGuide_imageWindowSettings.png|Image Window Settings]]
 
 # Open New Inspector Window: this creates a new [[#Inspector Windows|Inspector Window]] that you can tie to this image window.
-# Duplicate This Window: creates a new image window that shows the same data as the current image window. This does not duplicate the data. While of limited utility for the Snap/Live view, this can be useful for larger datasets, as you can use the two windows to view different parts of the data side-by-side.
+# Duplicate This Window: creates a new image window that shows the same data as the current image window. This does not duplicate the data, just create a second "view" of it. While of limited utility for the Snap/Live view, this can be useful for larger datasets, as you can use the two windows to view different parts of the data side-by-side.
 # Show Line Profile: brings up the [[#Line Profile]] window.
 # Export Images As Displayed: brings up the [[#Export Images]] window.
 
@@ -211,7 +211,7 @@ This dialog allows you to export a series of image files that show your data as 
 
 [[File:UsersGuide_exportImages.png|Export Images Dialog]]
 
-This can be useful for generating images or movies for use in presentations. It is not recommended that you use this dialog for preserving your raw data; instead use the "Save" button. This export system does not preserve image metadata, and because it uses your current contrast settings, will not necessarily preserve accurate image pixel intensities.
+This can be useful for generating images or movies for use in presentations. It is not recommended that you use this dialog for preserving your raw data; instead use the "Save" button. This export system does not preserve image metadata, and because it uses your current contrast settings, will not necessarily preserve accurate image pixel intensities (it is a "lossy" storage system, not a lossless one).
 
 ===Linking Displays===
 
