@@ -28,6 +28,6 @@
 
 The [http://www.andor.com/microscopy-systems/andor-diskovery Diskovery]  is connected through a USB cable.  The controller has a build-in USB to serial converter, therefore, it will appear as a serial port to your computer.  
 
-Note: Before starting the Configuration Wizard, disable TIRF on the Diskovery unit. This avoids an error caused by Micro-Manager being unable to read an appropriate label for the enabled state of the TIRF.
+{{MessageBox|Warning|Before starting the Configuration Wizard, disable TIRF on the Diskovery unit. This avoids an error caused by Micro-Manager being unable to read an appropriate label for the enabled state of the TIRF.}}
 
 {{Devices_Sidebar}}
