@@ -49,7 +49,7 @@ where you should replace 'username' with your username.
 == Notable changes ==
 
 === Apr 8, 2016 ===
-Added support for Photometrics Prime camera. PrimeEnhance (DENOISING PP) and PrimeLocate (Centroids) features are supported. Users are kindly requested to upgrade PVCAM Runtime to version 3.1.9.1 that is available at www.photometrics.com.
+Added support for Photometrics Prime camera. PrimeEnhance (DENOISING PP) and PrimeLocate (Centroids) features are supported. Users are kindly requested to upgrade PVCAM Runtime to version '''3.1.9.1''' that is available at www.photometrics.com.
 Customers who are using the Presets feature of Micro-Manager may need to re-create or update their preset configuration because names of some camera properties have changed. E.g. "Frame Transfer Parallel Clocking" has been shortened to "Frame Transfer". A configuration that was prepared with older PVCAM and that is using such property will not work with the new PVCAM.
 
 === Feb 14, 2014 ===
