@@ -22,7 +22,7 @@ The IIDCCamera device has a number of settings that need to be configured correc
 
 '''IEEE 1394 mode''' - If both your camera and IEEE 1394 interface card support 1394B (sometimes informally referred to as Firewire 800), choose 1394B. Otherwise, choose 1394A.
 
-'''Transmission Speed''' - Usually, just choose 800 Mbps if using 1394B, 400 Mbps otherwise.
+'''Transmission Speed''' - Usually, just choose 800 Mbps if using 1394B, 400 Mbps otherwise. 800 Mbps may not work on Windows.
 
 '''Shutter units (us/unit)''' and '''Shutter offset (us)''' - You can initially leave these at the default values, but see below.
 
