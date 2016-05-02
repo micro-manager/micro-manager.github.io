@@ -4,7 +4,7 @@ A [https://micro-manager.org/ Micro-Manager] plugin that can process stack image
 
 This plugin has been inspired from the excellent FrameAverager plugin from [http://www.openpolscope.org/pages/MMPlugin_Frame_Averager.htm OpenPolScope] available on github at https://github.com/LC-PolScope/Micro-Manager-Addons.
 
-The motivation to create this plugin was to make it compatible with Micro-Manager 2 and also add more processing operations.
+The motivation to create this plugin was to make it compatible with Micro-Manager 2 and also add more processing operations. This plugin is not compatible with earlier versions.
 
 = Usage =
 
