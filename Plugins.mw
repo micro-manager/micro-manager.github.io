@@ -6,6 +6,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[DLLAutoReloader]]
 * [[HCS Site Generator]] 
 * [[Flat-Field Correction]]
+* [[FrameProcessor]] : Perform live frames image processing.
 * [[Intelligent Acquisition]]
 * [[Image Flipper]]
 * [[Localization Microscopy]]
@@ -29,7 +30,6 @@ In addition, plugins are available from third parties:
 ** [[3D_Deconvolution|3D Deconvolution]]
 * [http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start Firewire camera/LED synchronization, by Alex Hodge, Cambridge]
 * [http://www.mediacy.com/index.aspx?page=IP_MicroManager_plugin Import Micro-Manager data into Image-Pro]
-* [https://github.com/hadim/FrameProcessor FrameProcessor : Live Frame Processing during acquisition] 
 
 ''See also [[Writing plugins for Micro-Manager]]
 
