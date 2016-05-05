@@ -48,4 +48,48 @@ To log data acquired from Okolab devices, an experiment must be started (''Tools
 * [http://www.oko-lab.com/onlineSupport.page Online Support]
 * [mailto:software.support@oko-lab.com Email Support]
 
+
+== Legacy version ==
+
+=== Compatible devices ===
+* [http://www.oko-lab.com/microscopeIncubators.page Microscope Incubators]
+** [http://www.oko-lab.com/cageIncubator.page Bold Line Cage Incubator (H201)]
+** [http://www.oko-lab.com/electricIncubator.page Bold Line Top Stage Incubator (H301)] 
+
+* [http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]
+** [http://www.oko-lab.com/boldLineGasControllers/co2UnitBoldLine.page CO2 Unit-BL]
+** [http://www.oko-lab.com/boldLineGasControllers/o2UnitBoldLine--nbsphypoxia.page O2 Unit-BL &#91;1-20&#93;]
+** [http://www.oko-lab.com/boldLineGasControllers/co2O2DualUnitBoldLineHypoxia.page CO2-O2 Unit-BL &#91;0-10;1-18&#93;]
+** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
+** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
+
+* [http://www.oko-lab.com/humidityControllers.page Humidity controllers]
+** [http://www.oko-lab.com/humidityControllers.page HM-ACTIVE]
+** [http://www.oko-lab.com/hm-active-standalone.page HM-ACTIVE-STANDALONE]
+
+
+=== Installation ===
+
+Connect the port named USB on the rear of the Unit to the PC USB port, using a standard mini-USB cable. Please consider that you may need an USB Male-to Male cable, depending on the hardware revision of your control unit.
+
+{{Important|If you have more than one controller, please make sure to plug the USB cable to the unit which is directly connected to the Oko-Touch.
+When two (or more) units are connected in a stack, one becomes the master and the other is acting as a "slave device", so only the controller connected to the Oko-Touch will answer to USB commands}}
+
+
+To use this adapter, you must manually install OKO-Control Server software which can be downloaded [https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%20Server.zip here].
+The installation is straightforward, default settings can be used.
+
+=== Configuration ===
+
+# Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
+# Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
+# Add ''OKO Control Server'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
+# Check the right COM Port number, opening ''Windows Control Panel'' and choosing first ''System'' then ''Device Manager'' then ''Ports (COM & LPT)''. There should be an entry like ''USB serial Port (COMX)'', where X is the COM Port number assigned. A good way to double-check is to remove the Okolab USB cable from the PC, as this Port should not be listed anymore. 
+# Add the needed Okolab devices to the Micro-Manager configuration, writing the whole COM string into Value field of Property COM Port (eg. ''COM1'').
+
+{{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
+
+=== Usage ===
+See current version
+
 --[[User:Okolab|Okolab]] ([[User talk:Okolab|talk]]) 09:14, 22 October 2013 (PDT)
