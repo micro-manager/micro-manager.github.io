@@ -21,12 +21,12 @@ When two (or more) units are connected in a stack, one becomes the master and th
 
 == Configuration ==
 
-{{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
-
 # Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
 # Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
 # Add ''Okolab'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
 # Select the right COM Port or select Auto and press OK.
+
+{{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
 
 == Usage ==
 === Properties ===
