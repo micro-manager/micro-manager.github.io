@@ -23,18 +23,10 @@ When two (or more) units are connected in a stack, one becomes the master and th
 
 {{Note|Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type.}}
 
-=== Version 2 ===
 # Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
 # Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
 # Add ''Okolab'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
 # Select the right COM Port or select Auto and press OK.
-
-=== Version 1 ===
-# Open the ''Hardware Configuration Wizard'' from the ''Tools'' menu.
-# Select desired configuration (new or existing) and  press the bottom-right ''Next'' button.
-# Add ''OKO Control Server'' device to the current configuration double-clicking on it or clicking the ''Add'' button when selected.
-# Check the right COM Port number, opening ''Windows Control Panel'' and choosing first ''System'' then ''Device Manager'' then ''Ports (COM & LPT)''. There should be an entry like ''USB serial Port (COMX)'', where X is the COM Port number assigned. A good way to double-check is to remove the Okolab USB cable from the PC, as this Port should not be listed anymore. 
-# Add the needed Okolab devices to the Micro-Manager configuration, writing the whole COM string into Value field of Property COM Port (eg. ''COM1'').
 
 == Usage ==
 === Properties ===
