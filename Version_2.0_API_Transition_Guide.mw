@@ -9,7 +9,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/mi
 ** enableRoiButtons
 ** getBackgroundStyle
 ** getChannelExposureTime
-** getROI
 ** getVersion
 ** installAutofocusPlugin
 ** logStartupProperties
