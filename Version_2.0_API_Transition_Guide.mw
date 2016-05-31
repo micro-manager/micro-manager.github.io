@@ -181,6 +181,10 @@ The Album Datastore can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0
 
 The Micro-Manager Core object can be accessed via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core() core] method.
 
+=== getROI ===
+
+Use the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html Core's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html#getROI() getROI] method.
+
 === getSnapLiveWin ===
 
 This has been replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html SnapLiveManager]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay() getDisplay] method. You can access the SnapLiveManager via the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html Studio]'s [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live() live] method.
