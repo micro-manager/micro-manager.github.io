@@ -35,6 +35,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[IDS_uEye]] - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
 * [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
+* [[Lumenera]] - Lumenera cameras
 * [[Micropix]] - Cameras from Micropix
 * [[Mightex_C_Cam]] - Mightex C-series USB cameras
 * [[MoticCamera]] - Motic cameras
