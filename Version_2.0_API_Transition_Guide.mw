@@ -5,7 +5,6 @@ One of the major changes in 2.0 is a restructuring of the API. In 1.4, most of t
 First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/CompatibilityInterface.html CompatibilityInterface], [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/AcquisitionManager.html AcquisitionManager], and [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html PositionListManager] modules contain many old methods from ScriptInterface, unmodified. These methods work as they did in 1.4, and include the following:
 
 * CompatibilityInterface
-** addMMListener
 ** enableRoiButtons
 ** getBackgroundStyle
 ** getChannelExposureTime
@@ -15,7 +14,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/mi
 ** makeActive
 ** refreshGUI
 ** refreshGUIFromCache
-** removeMMListener
 ** saveConfigPresets
 ** setBackgroundStyle
 ** setChannelExposureTime
