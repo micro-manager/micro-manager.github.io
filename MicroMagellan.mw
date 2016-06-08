@@ -154,7 +154,7 @@ To acquire more than a single grid or surface at a time, select the “Setup mul
 Clicking “+” again will add another line, it will appear with the same name. Highlight the second (new) acquisition and change its name in the “Saving” tab below, and change necessary parameters in the other acquisition settings tabs.
 "Run all" will sequentially complete all acquisitions listed. 
 
-If you would would like to collect time data in different areas concurrently (rather than completing a time lapse in one area, and then beginning the second time lapse in another area), select “interleave” and then  “Run all”
+If you would would like to collect time lapse data in different areas in parallel (rather than completing a time lapse in one area, and then beginning the second time lapse in another area), select “In parallel” and then  “Run all”
 
 [[File:AcquireMultiAcqInterleave.jpg]]
 
