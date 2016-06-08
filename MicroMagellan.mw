@@ -33,6 +33,7 @@ Before exploring your sample you will need to enter your desired Z-step size and
 [[File:ExploreSettings.jpg]]
 
 Pressing “Explore!” will open a new window:
+
 [[File:ExploreWindow.jpg]]
 
 On the left side is your image area; a field of view will highlight blue as you hover over it. On the right, are look-up tables (LUTs) for each channel and several other acquisition setup parameters.  
