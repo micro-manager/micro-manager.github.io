@@ -132,6 +132,8 @@ For a given tissue type and morphology, these parameters may be optimized and sa
 
 [[File:AcquireSurfacesLoadPreset.jpg]]
 
+{{#ev:youtubehd|AWX5sUMBJiE|600|center}}
+
 ===Drift Compensation===
 Drift compensation allows you to use a single channel that represents the static features of your sample, and use it to correct for Z drift. 
 
