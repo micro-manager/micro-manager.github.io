@@ -96,6 +96,7 @@ XY footprints can be either grids or surfaces, and define the XY positions that 
 The Z slices that are collected for a given acquisition can be defined in several ways:
 
 ====Simple Z Stack====
+
  The same Z-slices are imaged at every XY position, creating a tiled cuboidal volume
 
 ====Volume between two surfaces====
