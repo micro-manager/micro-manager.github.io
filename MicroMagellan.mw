@@ -111,7 +111,11 @@ Z slices are collected within a given distance above a below a surface. This is 
 The “Channels” tab allows you select which of the available channels to collect, and the exposure time for each. 
 
 ===Covaried Settings===
-The “Covaried Settings” tab allows you to vary one hardware setting depending on the state/value of another hardware device/setting. The “+” button on the left brings up the window below, allowing you to select one hardware setting as the independent variable, and a second as the dependent variable. 
+Covaried settings expose all properties of hardware devices and allow users to automatically vary these settings prior to the acquisition of each image based on the state/value of each other. In addition, calculations based on the geometry of interpolated surfaces can also be included in a covariant pairing, enabling automated variation of hardware settings based on surface morphology.
+
+A covariant pairing consists of an independent covariant, a dependent covariant, and a list of pairs of values between the two. Before the acquisition of each image, the value of the independent covariant is either read from the hardware or calculated from the the associated surface. The value of the dependent covariant is then calculated and set based on the independent-dependent pairings supplied in the setup window. If both the independent and dependent are numerical, then the value calculated for the dependent covariant comes from a linear interpolation of the supplied pairings. If either the independent or dependent are discrete, a value is only set if the current value of the independent covariant is also present in the supplied pairings.
+
+ The “+” button on the left brings up the window below, allowing you to select one hardware setting as the independent variable, and a second as the dependent variable. 
 
 [[File:AcquireCoVariedIndependent.jpg]]
 
