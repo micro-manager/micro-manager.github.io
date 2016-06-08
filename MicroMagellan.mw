@@ -93,6 +93,8 @@ If you have created surfaces, you can also elect to image the area between two d
 
 XY footprints can be either grids or surfaces, and define the XY positions that are used for a given acquisition. The XY positions can be changed during acquisition by swapping or modifying XY footprints. However, all XY positions imaged at any point during the acquisition must be present in its footprint at the start. Positions can be removed by changing the footprint and later re-added, but new positions cannot be created during acquisition to expand the imaged area beyond its original XY bounds. Practically, this means if imaging a sample that is expected to move or change over the acquisition, it is a good idea to use an XY footprint containing all possible XY positions where the sample might be imaged. If only a subset of the positions need to be imaged at the initial time point, the acquisition can be immediately paused after starting, and the XY footprint adjusted to a smaller area.
 
+[[File:SurfacesNonCube.jpg]]
+
 The Z slices that are collected for a given acquisition can be defined in several ways:
 
 ====Simple Z Stack====
@@ -104,9 +106,6 @@ Supply two surfaces to bound the top and bottom slices to collect at each Z stac
 
 ====Within distance from Surface====
 Z slices are collected within a given distance above a below a surface. This is useful, for example, for collection a given distance from the top of a tissue, or for imaging a rectangular region that is tilted relative to the optical axis.
-
-
-[[File:SurfacesNonCube.jpg]]
 
 ===Channels===
 The “Channels” tab allows you select which of the available channels to collect, and the exposure time for each. 
