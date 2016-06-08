@@ -71,7 +71,7 @@ The Z-slider is then moved down further into the sample to specify an additional
 [[File:ExploreSurfacesDrawBottom.jpg]]
 
 ==Acquisition==
-All of the grids and surfaces generated in Explore mode will populate the "grids" and "surfaces" tabs at the top of the Micro-Magellan main window, ext to the Device status/control tab. 
+All of the grids and surfaces generated in Explore mode will populate the "grids" and "surfaces" tabs at the top of the Micro-Magellan main window, next to the Device status/control tab. 
 
 [[File:AcquireGridSurfaces.jpg]]
 
@@ -90,6 +90,13 @@ In the “Space” tab there are several options for defining the volume you wan
 If you have created surfaces, you can also elect to image the area between two defined surfaces with a buffer on either side.
 
 [[File:AcquireSpaceVolbtwnSurf.jpg]]
+
+XY footprints can be either grids or surfaces, and define the XY positions that are used for a given acquisition. The XY positions can be changed during acquisition by swapping or modifying XY footprints. However, all XY positions imaged at any point during the acquisition must be present in its footprint at the start. Positions can be removed by changing the footprint and later re-added, but new positions cannot be created during acquisition to expand the imaged area beyond its original XY bounds. Practically, this means if imaging a sample that is expected to move or change over the acquisition, it is a good idea to use an XY footprint containing all possible XY positions where the sample might be imaged. If only a subset of the positions need to be imaged at the initial time point, the acquisition can be immediately paused after starting, and the XY footprint adjusted to a smaller area.
+
+The Z slices that are collected for a given acquisition can be defined in several ways:
+
+====Simple Z Stack====
+ 
 
 Imaging within a distance from a defined surface allows you to collect non-cuboidal volumes by using the edges of your surface to choose the XY positions that are collected at each Z-plane (example of XY footprints below). By selecting a Z-distance below a surface to image, you can also avoid collecting “blank” data in deep areas of the sample where there is no information due to scattering.
 
