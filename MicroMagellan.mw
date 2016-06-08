@@ -135,7 +135,14 @@ For a given tissue type and morphology, these parameters may be optimized and sa
 {{#ev:youtubehd|AWX5sUMBJiE|600|center}}
 
 ===Drift Compensation===
-Drift compensation allows you to use a single channel that represents the static features of your sample, and use it to correct for Z drift. 
+In 3D imaging experiments, stable imaging is often beset by focus drift as a result of morphological changes in the sample or thermally induced focus drift. Micro-Magellan’s drift compensation module provides automated tracking of sample movement in the Z axis based on the 3D cross correlation between images from a designated fiduciary channel over the previous 2 time points. 
+
+This feature can be set up on the “Drift Compensation” panel in the “Acquisition Settings” tab of the main Magellan GUI. The use channel dropdown allows users to select which channel will be used as a fiducial for calculation of cross correlation. Second harmonic generation signals in multiphoton imaging are often a useful choice this signal due to their photostability, but any other stationary, photostable structure should be usable provided that there is not significant bleed through from mobile signals in other channels. 
+
+-The “maximum displacement” field is a safety feature that sets an upper limit on the cumulative drift correction that occurs over an acquisition, to prevent unexpected changes in a fiducial signal from damaging objective lenses. 
+-The “Drift compensation z device” allows the user to select which focus drive will be used to offset drift. At present, this must be a different focus drive from the primary one used in acquisition. 
+-The “Set initial position” box is useful when running multiple acquisitions in parallel that each use drift compensation. Since the position of the sample in the coordinate space of the primary focus drive will change based on the position of the drift compensation focus drive, it is sometimes to provide different initial positions for the drift compensation drive. For example, this feature would allow the positioning of the full range a piezo z drive at different absolute regions of the sample Z coordinate space, and each of these to be drift corrected during time-lapse acquisition independently.
+
 
 [[File:AcquireDriftComp.jpg]]
 
