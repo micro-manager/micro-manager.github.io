@@ -96,9 +96,14 @@ XY footprints can be either grids or surfaces, and define the XY positions that 
 The Z slices that are collected for a given acquisition can be defined in several ways:
 
 ====Simple Z Stack====
- 
+ The same Z-slices are imaged at every XY position, creating a tiled cuboidal volume
 
-Imaging within a distance from a defined surface allows you to collect non-cuboidal volumes by using the edges of your surface to choose the XY positions that are collected at each Z-plane (example of XY footprints below). By selecting a Z-distance below a surface to image, you can also avoid collecting “blank” data in deep areas of the sample where there is no information due to scattering.
+====Volume between two surfaces====
+Supply two surfaces to bound the top and bottom slices to collect at each Z stack. This is useful for defining 3D imaging volumes with complex shapes.
+
+====Within distance from Surface====
+Z slices are collected within a given distance above a below a surface. This is useful, for example, for collection a given distance from the top of a tissue, or for imaging a rectangular region that is tilted relative to the optical axis.
+
 
 [[File:SurfacesNonCube.jpg]]
 
