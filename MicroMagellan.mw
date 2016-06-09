@@ -7,6 +7,7 @@ https://www.dropbox.com/sh/ozypbso7obvi04t/AACfNi1UjoDAW5NNt4nYWPc2a?dl=0
  
 ==Getting Started with Micro-Magellan==
 Open Micro-Magellan from the "Plugins--Acquisition Tools" menu in Micro-Manager.
+
 In order for Micro-Magellan to operate, it needs to know the direction of Z movement. This is defined in the Hardware Configuration Wizard.
 
 [[File:Zdirection.jpg]]
