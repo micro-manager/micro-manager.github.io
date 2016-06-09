@@ -1,5 +1,3 @@
-
-
 The Micro-Magellan plugin allows flexible, dynamic device control and acquisition. Explor acquisitions enable navigation of samples in XY and Z, to build a 3D map of sample quickly and with minimal photobleaching. Surfaces allows you to define an non-cuboidal region of interest and define sample morphology, which can then be used to define sample-driven parameters such as laser power at distance from surface. Using grids or surfaces, you can designate multiple areas to image in a single acquisition in series or in parallel. A high level overview of the capabilities of Micro-Magellan can be found here: http://biorxiv.org/content/early/2016/01/28/038117 
 
 ==Try Micro-Magellan with a demo dataset==
@@ -8,6 +6,7 @@ Want to test out Micro-Magellan's 3D acquisition capabilities without an actual 
 https://www.dropbox.com/sh/ozypbso7obvi04t/AACfNi1UjoDAW5NNt4nYWPc2a?dl=0
  
 ==Getting Started with Micro-Magellan==
+Open Micro-Magellan from the "Plugins--Acquisition Tools" menu in Micro-Manager.
 In order for Micro-Magellan to operate, it needs to know the direction of Z movement. This is defined in the Hardware Configuration Wizard.
 
 [[File:Zdirection.jpg]]
