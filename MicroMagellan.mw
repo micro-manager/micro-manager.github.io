@@ -18,6 +18,9 @@ If the calibration window shows a size of 0.0um, you can run click Start and fol
 
 [[File:Calibration.jpg]]
 
+===Memory settings===
+Make sure sufficient memory is allocated (important for making large surfaces in Magellan): Select the ImageJ toolbar select "Edit--Options--Memory and Threads". 2048 MB is recommended and 4096 is even better for systems that can support it. If this number is changed you will need to restart Micro-Manager for it to take effect
+
 ==Setting Up Micro-Magellan for Device Control==
 
 From the plug-ins menu, select Micro-Magellan, and the unpopulated window opens. Select "Configure Device Control" 
