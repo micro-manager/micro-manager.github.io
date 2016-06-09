@@ -198,7 +198,7 @@ The Imaris-μMagellan compiler is a FIJI plugin for stitching of Micro-Magellan 
 The source code can be accessed in the Micro-Manager subversion repository at https://valelab.ucsf.edu/trac/micromanager/browser/plugins/Magellan#src/org/micromanager/plugins/magellan
 
 
-<table><tr><td>'''User Guide:'''</td><td valign="top">[[Media:Micro-MagellanUserGuide.pdf]]</td></tr>
+
 <tr><td>'''Authors:'''</td><td>Henry Pinkard, Kaitlin Corbin</td></tr>
 
 <tr><td width=20%></td><td></td></tr>
