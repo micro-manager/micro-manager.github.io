@@ -194,9 +194,8 @@ Hub concept is by no means restricted to motorized microscopes. Any hardware com
 
 A well-behaved hub device should perform the following functions:
 
-* Auto-detection of the communication port (if any), by implementing MM::Device::DetectDevice() virtual method
-* Communication with the host computer by managing the port and providing the “Port” property
 * Auto-detection of all installed “child” devices by implementing MM::Hub::DetectInstalledDevices(), MM::Hub::GetInstalledDevice() and MM::Hub::GetNumberOfInstalledDevices()
+* If the device uses a serial port, communication with the host computer by managing the port and providing the “Port” property
 
 Since the Hub now represents the master controller, devices should not access any hardware resources (such as ports) directly, but rather via the associated Hub (parent). In the same vein, using global references to any other shared resources should be avoided and hopefully completely eliminated. All shared resources should be managed and encapsulated by the Hub device and the access to these should be granted only by calling appropriate Hub methods.
 
