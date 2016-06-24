@@ -22,6 +22,7 @@ The plugin documentation is now is on the diSPIM wiki at [http://dispim.org disp
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
+* 20151218: added API calls to control acquisition programmatically
 * 20151125: added ImageJ toolset for common image manipulation tasks
 * 20151124: ability to run test acquisition with optionally exported raw file
 * 20151013: added API calls to change acquisition settings programmatically
