@@ -29,9 +29,9 @@ The ThorlabsAPTStage adapter aims to provide a unified adapter for all the Thorl
 
 It is now possible to compile the ThorlabsAPTStage device adapter for 64 bit Windows using a 64 bit APT.dll released by Thorlabs. The following procedure was tested in Windows 8.1 with Visual Studio 2012 and Windows 7.1 SDK:
 
-Drop the content of [[File:APT_x64.zip]] into the device adapter *micromanager-upstream\DeviceAdapters\ThorlabsAPTStage* folder then compile the adapter as a x64 / release dll.
+Drop the content of [[File:APT_x64.zip]] into the device adapter ''micromanager-upstream\DeviceAdapters\ThorlabsAPTStage'' folder then compile the adapter as a x64 / release dll.
 
-Once compiled, copy *micromanager-upstream\DeviceAdapters\ThorlabsAPTStage\build\Release\x64\mmgr_dal_ThorlabsAPTStage.dll* to your micromanager folder, as well as the 64 bit APT.dll file in the zip archive above.
+Once compiled, copy ''micromanager-upstream\DeviceAdapters\ThorlabsAPTStage\build\Release\x64\mmgr_dal_ThorlabsAPTStage.dll'' to your micromanager folder, as well as the 64 bit APT.dll file in the zip archive above.
 
 Do not forget to install the 64 bit APT drivers from Thorlabs as
 per the instructions further down. Until you do (or if the 64 bit APT.dll is missing from the micromanager folder), the ThorlabsAPTStage will be greyed
