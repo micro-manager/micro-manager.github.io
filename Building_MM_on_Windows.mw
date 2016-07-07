@@ -175,7 +175,7 @@ To build all C++ components (similar to building the <code>micromanager.sln</cod
 
 Setting the <code>mm.build.failonerror</code> property to <code>false</code> allows the build to continue even if some of the projects (e.g. device adapters that depend on libraries you don't have) fail to build. (But you will want to check that the ones you want did build. Look in the <code>build</code> directory.)
 
-The architecture (what Visual Studio calls 'platform' - but we reserve that term for Windows vs OS X vs Linux) can be set to <code>Win32</code> or <code>x64</code>.
+The architecture (what Visual Studio calls 'platform' - but we reserve that term for Windows vs OS X vs Linux) can be set to <code>Win32</code> or <code>x64</code>. By default, it is <code>x64</code> on 64-bit Windows and <code>Win32</code> otherwise.
 
 The command
 
@@ -184,6 +184,19 @@ The command
 will build everything (all C++, Java, and Clojure compoenets).
 
 There is also a <code>build-java</code> target that you can use to build just the Java and Clojure components (it will not try to build the C++ components).
+
+You can then type
+
+  ant stage-only -Dmm.architecture=Win32
+
+This will construct a near-complete Micro-Manager installation in the <code>stage\Release\Win32</code> directory. The only thing lacking is the Java Runtime; you will need to copy over the <code>jre</code> folder from inside your JDK installation before launching <code>ImageJ.exe</code>. (Note that the <code>ImageJ.cfg</code> file determines where the JRE is searched for.)
+
+To recap, the steps to build everything available with the default architecture are:
+
+  ant -f buildscripts\fetchdeps.xml
+  ant build -Dmm.build.failonerror=false
+  ant stage-only
+  (then copy over jre folder)
 
 The <code>stage</code>, <code>run</code> and <code>package</code> targets are not yet fully implemented for general use (they expect files to be present at specific paths).
 
