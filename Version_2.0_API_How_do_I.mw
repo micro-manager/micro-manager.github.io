@@ -78,17 +78,17 @@ If live mode is on, then it will turn off when you call <code>setSuspended(true)
 
 You have two similar options here:
 
- mm.compat().runAcquisition()
+ mm.acquisitions().runAcquisition()
 
 and
 
- mm.compat().runAcquisition(String name, String root)
+ mm.acquisitions().runAcquisition(String name, String root)
 
 Both will run an acquisition using the current MDA settings; the latter method will also allow you to specify where data should be saved. Both methods return a <code>Datastore</code> that contains the acquired images.
 
 Note also this method:
 
- mm.compat().loadAcquisition(String path)
+ mm.acquisitions().loadAcquisition(String path)
 
 This method allows you to load a previously-saved set of acquisition settings, automatically populating the fields in the MDA dialog. You can create one of these acquisition settings files via the "Save as..." button in the MDA dialog.
 
