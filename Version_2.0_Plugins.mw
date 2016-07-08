@@ -63,3 +63,13 @@ An example OverlayPlugin is the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmst
 [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/quickaccess/QuickAccessPlugin.html QuickAccessPlugin] plugins create tools that can be embedded into the [[Version 2.0 Users Guide#Quick_Access_Panel|Quick Access Panel]]. They allow easy access to custom controls, so if your plugin has some simple controls that you want users to always be able to access (and that don't warrant a more fully-fledged GUI), you can use a QuickAccessPlugin to create those controls.
 
 More specifically, you should create a [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/quickaccess/SimpleButtonPlugin.html SimpleButtonPlugin], [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/quickaccess/ToggleButtonPlugin.html ToggleButtonPlugin], or [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/quickaccess/WidgetPlugin.html WidgetPlugin], depending on how complicated the usage logic is for your control. QuickAccessPlugin itself does not have any methods that get called when the control is interacted with, so the more specific child interfaces are necessary to do anything with the Quick Access Panel.
+
+== Providing an API for your plugin ==
+
+If your plugin contains generally useful functionality that other code might want to call, it is a good idea to provide a stable programming interface (API) for it. Since classes in plugin JARs are not usually available on the classpath, you need to provide your API in a separate "library" JAR, to be included in the classpath. Your plugin will then be a wrapper around your library.
+
+You can split the plugin and library in one of two ways:
+* Library = interface definitions only; Plugin = code that implements the interfaces, plus MMPlugin classes
+* Library = interface definitions, plus implementation code; Plugin = MMPlugin classes (thin wrappers that call the library)
+
+If you use the latter scheme, it is important to make it clear which interfaces (and, possibly, classes) are part of the API (to be maintained stably to ensure compatibility) and which are implementation details (which the library author can change any time). We recommend following the MMStudio convention of placing implementation classes in packages that contain "internal" as an item in their fully qualified name.
