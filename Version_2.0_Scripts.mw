@@ -36,15 +36,25 @@ This script creates a Datastore, adds a DisplayWindow to it, manually snaps a fe
  import ij.ImagePlus;
 
  store = mm.data().createRAMDatastore();
- dw = mm.getDisplayManager().createDisplay(store);  // only needed if display is desired
- pipeLine = mm.data().copyApplicationPipeline(store, true);  // pipeline insertion will block
+
+ // no need to create display if you do not want to see the images
+ dw = mm.getDisplayManager().createDisplay(store); 
+
+ // pipeline insertion will block
+ pipeLine = mm.data().copyApplicationPipeline(store, true);  
+
  imgList = mm.acquisitions().snap();
  coords = mm.data().createCoords("t=0,p=0,c=0,z=0");
  img = imgList.get(0).copyAtCoords(coords);
  pipeLine.insertImage(img);
  processedImg = store.getImage(coords);
  iProcessor = mm.data().ij().createProcessor(processedImg);
- ip = (new ImagePlus("tmp", iProcessor)).duplicate();   // duplicate if you want to store the original images
+
+ // duplicate if you want to store the original images
+ ip = (new ImagePlus("tmp", iProcessor)).duplicate();   
+
+
+
 
 
 
