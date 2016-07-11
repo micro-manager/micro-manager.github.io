@@ -31,4 +31,21 @@ This script creates a Datastore, adds a DisplayWindow to it, manually snaps a fe
  store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);
 
 
+=== Snap an image, process with the default pipeline and get it as an ImageJ ImagePlus ===
+
+ import ij.ImagePlus;
+
+ store = mm.data().createRAMDatastore();
+ dw = mm.getDisplayManager().createDisplay(store);  // only needed if display is desired
+ pipeLine = mm.data().copyApplicationPipeline(store, true);  // pipeline insertion will block
+ imgList = mm.acquisitions().snap();
+ coords = mm.data().createCoords("t=0,p=0,c=0,z=0");
+ img = imgList.get(0).copyAtCoords(coords);
+ pipeLine.insertImage(img);
+ processedImg = store.getImage(coords);
+ iProcessor = mm.data().ij().createProcessor(processedImg);
+ ip = (new ImagePlus("tmp", iProcessor)).duplicate();   // duplicate if you want to store the original images
+
+
+
 {{2.0_Sidebar}}
