@@ -17,7 +17,7 @@ Requires Mac OS X 10.5-10.10. 10.11 (El Capitan) is not yet supported. Device dr
 
 === Known issues in 1.4.22 ===
 
-* If you use AndorSDK3 (Andor sCMOS cameras) and experience a crash upon starting Micro-Manager (or loading a hardware configuration), please upgrade to the 20150820 nightly build ([http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_64bit_1.4.23_20150820.exe Windows 64-bit], [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_32bit_1.4.23_20150820.exe Windows 32-bit])
+* If you use AndorSDK3 (Andor sCMOS cameras) and experience a crash upon starting Micro-Manager (or loading a hardware configuration), please upgrade to the 20150820 nightly build ([http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_64bit_1.4.23_20150820.exe Windows 64-bit], [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_32bit_1.4.23_20150820.exe Windows 32-bit])
 * Olympus IX83 users: please use 1.4.21 instead.
 
 === Changes in 1.4.22 (since 1.4.21) ===
