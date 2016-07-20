@@ -321,6 +321,10 @@ As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manage
 
 This method is not available in 2.0. However, you can replicate its functionality for a given DisplayWindow by combining the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords) SetDisplayedImageTo] method of DisplayWindow and the <code>shouldAutostretch</code> field of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html DisplaySettings].
 
+=== setConfigChanged ===
+
+This method was removed as it is unused by all known third-party code.
+
 === setImageProperty ===
 
 As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains records on any acquisition objects; you are responsible for maintaining your own references to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html Datastore] that your data is in.
