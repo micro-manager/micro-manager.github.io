@@ -43,6 +43,9 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 * 20141207: added ability to export data for Fiji Multiview plugin (as of April 2015 the Fiji plugin can directly import data without requiring this step)
 * (1.4.19 release)
 
+
+You can view all changes to the diSPIM plugin code by [https://valelab.ucsf.edu/trac/micromanager/search?q=asidispim searching the Micro-Manager timeline for "ASIdiSPIM"].  You can also [https://valelab4.ucsf.edu/trac/micromanager/browser/plugins/ASIdiSPIM/src/org/micromanager/asidispim browse the plugin source code].
+
 == Known Issues ==
 
 * Camera timing calculations assume CameraLink interface speeds.  If you are using a USB3 interface the timing may be different, so if you are missing frames uncheck "minimize slice period" and increase the slice period manually.
