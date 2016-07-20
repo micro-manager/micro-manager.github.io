@@ -26,7 +26,6 @@ First, note that the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/mi
 ** setExposure
 ** setChannelExposureTime
 ** getChannelExposureTime
-** saveConfigPresets
 ** showAutofocusDialog
 ** showPositionList
 ** setROI
@@ -274,6 +273,10 @@ Moved to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanag
 === removeMMBackgroundListener ===
 
 As discussed in <code>addMMBackgroundListener</code> above, day/night changes now happen automatically, so this method is obsolete.
+
+=== saveConfigPresets ===
+
+While this method still exists (as part of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Application.html Application] module), it now two parameters: a path string to save the config to, and a boolean for whether to allow overwriting of existing files. The old functionality that displayed a save dialog has been removed.
 
 === setAcquisitionAddImageAsynchronous ===
 
