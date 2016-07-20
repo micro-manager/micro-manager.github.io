@@ -96,6 +96,10 @@ This has been replaced by [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/o
 
 This has been replaced by [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html SnapLiveManager's] [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#setLiveMode(boolean) setLiveMode] method. You should also be aware of the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean) setSuspended] method if you need to briefly stop live mode, only to resume it later.
 
+=== enableRoiButtons ===
+
+This method was removed because it is unused by all known third-party code.
+
 === getAcqDlg === 
 
 This method was deprecated in 1.4, and has been removed in 2.0. 
@@ -229,6 +233,11 @@ Replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/microma
 === logMessage ===
 
 As with <code>logError</code>, replaced by the LogManager's [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String) logMessage] method.
+
+
+=== logStartupProperties ===
+
+This method was removed as it is unused by all known third-party code.
 
 === message ===
 
