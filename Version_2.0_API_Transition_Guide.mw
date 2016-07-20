@@ -174,7 +174,11 @@ Use [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio
 
 === getBackgroundColor ===
 
-As discussed in the notes for <code>addMMBackgroundListener</code>, background color selection is now handled automatically. Thus this method is no longer needed.
+As discussed in the notes for <code>addMMBackgroundListener</code>, background color selection is now handled automatically. Thus this method is no longer needed. However, if you need to manually set colors for the few edge cases where colors are not handled automatically, you should investigate the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html ApplicationSkin] module.
+
+=== getBackgroundStyle ===
+
+This method was replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html#getSkin ApplicationSkin.getSkin] method.
 
 === getCacheForWindow ===
 
@@ -282,6 +286,10 @@ As you now have complete control over adding images to your Datastores, it is up
 As discussed in the notes on <code>acquisitionExists</code>, above, Micro-Manager no longer maintains records on any acquisition objects; you are responsible for maintaining your own references to the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html Datastore] that your data is in.
 
 Arbitrary metadata storage is available for both [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html SummaryMetadata] and individual image [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html Metadata] via their respective <code>userData</code> fields.
+
+=== setBackgroundStyle ===
+
+This method was replaced by the [http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html#setSkin ApplicationSkin.setSkin] method.
 
 === setChannelColor ===
 
