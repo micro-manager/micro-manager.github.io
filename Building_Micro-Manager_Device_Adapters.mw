@@ -94,7 +94,7 @@ Since '''DeviceBase.h''' and other utility files are not used by the main applic
 
 == Anatomy of a Device Adapter ==
 
-This section outlines guidelines for designing a well-behaved Device Adapter. MMCamera project included in the Device Kit is a very simple example that can be used to follow the outline.
+This section outlines guidelines for designing a well-behaved Device Adapter. The MMCamera project included in the TestDeviceAdapters directory is a very simple example that can be used to follow the outline.
 
 === Constructor and destructor ===
 
