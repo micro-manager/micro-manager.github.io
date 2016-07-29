@@ -278,37 +278,15 @@ SimpleAutofocus is a image-metric based autofocus 'adapter' implemented in C++. 
 
 === C++ environment ===
 
-Using the included testing tools '''LibraryTest''', '''DeviceTest''' and '''CoreTest''' (see section [[#Building test programs and examples | Building test programs and examples]]) we can test and debug our device adapter completely within your C++ build environment, without the need to use Java API or even having any reference to the existing Micro-Manager installation.
+The best way to test a device adapter is to load it in the Micro-Manager (MMStudio) application, using the Hardware Configuration Wizard. You can attach a C++ debugger (such as Visual Studio or lldb) to a Micro-Manager process after launching.
 
-Each test application can be used as is a pass/fail basic test to verify the new adapter or library. Also we can modify and extend these simple, command line programs to accommodate specifics of our devices.
+The CoreLog logging can contain helpful information (including whatever your device adapter logs using the <code>LogMessage()</code> function). Make sure to enable Debug Logging (in Tools > Options).
 
-==== LibraryTest ====
-
-Lists all adapters contained in the library:
-
-<code>librarytest <libraryname></code>
-
-Library name is specified without the module prefix and without the extension. For example: mmgr_dal_DemoCamera.dll should be specified as just DemoCamera.
-
-==== DeviceTest ====
-
-List properties and details for the specified device adapter:
-
-<code>devicetest <devicename> <libraryname></code>
-
-==== CoreTest ====
-
-Loads specified configuration file and lists all properties and details for all included devices:
-
-<code>coretest <configfile></code>
-
-=== DLL Auto Reloader plugin ===
-
-This [[DLLAutoReloader|Micro-Manager plugin]] will automatically reload a device adapter whenever it has been recompiled.
+To debug DLL loading issues (such as when your device adapter is labeled "(unavailable)" in the Hardware Configuration Wizard), examine the CoreLog section from when you opened the Hardware Configuration Wizard. It should log the error causing the failure.
 
 === Scripting environment ===
 
-To test devices from Micro-Manager scripting environment you can use the "Script Panel" (Tools menu). The scripting environment has a built-in reference to the main API module as "mmc" and reference to the UI "gui". Here is an example of a simple test script:
+To test devices from Micro-Manager scripting environment you can use the "Script Panel" (Tools menu). The scripting environment has a built-in reference to the MMCore API as "mmc". Here is an example of a simple test script:
 
  mmc.unloadAllDevices();       
  mmc.loadDevice("Camera", "DemoCamera", "DCam");
@@ -316,26 +294,24 @@ To test devices from Micro-Manager scripting environment you can use the "Script
 
  mmc.setExposure(50); 
  mmc.snapImage();
-			
- if (core.getBytesPerPixel() == 1) {
+
+ if (mmc.getBytesPerPixel() == 1) {
    // 8-bit grayscale pixels
    byte[] img = (byte[])mmc.getImage();
-   gui.message("Image snapped, " + img.length + " pixels total, 8 bits each.");
-   guimessage("Pixel [0,0] value = " + img[0]);
+   print("Image snapped, " + img.length + " pixels total, 8 bits each.");
+   print("Pixel [0,0] value = " + img[0]);
  } else if (mmc.getBytesPerPixel() == 2){
    // 16-bit grayscale pixels
    short[] img = (short[])mmc.getImage();
-   gui.message("Image snapped, " + img.length + " pixels total, 16 bits each.");
-   gui.message("Pixel [0,0] value = " + img[0]);             
+   print("Image snapped, " + img.length + " pixels total, 16 bits each.");
+   print("Pixel [0,0] value = " + img[0]);             
  } else {
-   gui.message("Dont' know how to handle images with " + mmc.getBytesPerPixel() 
+   print("Dont' know how to handle images with " + mmc.getBytesPerPixel() 
                    " byte pixels.");             
  }
 
 If you plan to actively use scripting you may want to look at the [[Micro-Manager_Programming_Guide]]
 as well as at the [[Script_Panel_GUI|Scripting Guide]].
-
-The guide was written for standalone Java programming, but the BeanShell syntax is the same and in principle the examples are more or less applicable to the scripting environment. The main thing to keep in mind is that in Micro-Manager scripting console there is no need to instantiate the "core" module. The reference to the core API is already available as "mmc" object.
 
 == Changes from the previous releases ==
 
