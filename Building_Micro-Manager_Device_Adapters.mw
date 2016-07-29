@@ -48,17 +48,7 @@ The top-level directory can be called something other than “projects”, but w
 
 <code>/3rdparty</code> (optional proprietary libraries that may be required for our hardware)
 
-=== Development directories and tools ===
-
-Now that the overall directory structure is set up, we can have a look at Developer’s Kit tools and also find a place to develop our new “MyDevice” adapter. Development tools are located in:
-
-<code>/projects/micro-manager1.4/DeviceKit</code>
-
-'''LibraryTest''' – a command line program to test the micro-manager device Library and list all contained Device Adapters
-
-'''DeviceTest''' – a command line program to test a single Device Adapter and list all of the available device properties and features
-
-'''CoreTest''' – a command line program to test one or more Device Adapters from one or more Libraries using Micro-manager configuration files
+=== Development directories and example ===
 
 The place designated for development of our new adapter is:
 
