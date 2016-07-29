@@ -231,25 +231,13 @@ These two methods are critical for the configuration process. Hardware Configura
 
 == Device Adapter Examples ==
 
-Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository]. In addition, a few device adapters are included as examples in the device developer's kit:
+Before writing a new device adapter, you may find it worthwhile to examine the source code of some of the numerous open source device adapters already written, [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ available in our subversion repository].
 
 === DemoCamera ===
 
-DemoCamera project included in the installer is a simple example on how to create a working device adapter.  You can use it as a starting point for building your own device adapter. DemoCamera DLL contains a simple monochrome / color camera simulator and a number of demo devices: objective turret, filter changer, stage, image processor etc. The camera adapter is able to simulate parameter read-backs. There is also an option to simulate timeout errors. Most of these devices don't really perform any actions, they just respond to commands and their main purpose is to enable testing of the main application without connecting to the hardware.
+The DemoCamera project is a (slightly complex) example on how to create a working device adapter.  You can use it as a starting point for building your own device adapter. DemoCamera DLL contains a simple monochrome / color camera simulator and a number of demo devices: objective turret, filter changer, stage, image processor etc. The camera adapter is able to simulate parameter read-backs. There is also an option to simulate timeout errors. Most of these devices don't really perform any actions, they just respond to commands and their main purpose is to enable testing of the main application without connecting to the hardware.
 
 DemoCamera.cpp includes relatively extensive comments to help you understand how the API methods should work.
-
-=== Sensicam ===
-
-Sensicam project is also included in the installer as an example of the 'real' camera driver. However, in order to build it you need to obtain Sensicam SDK (header files and libraries) from the camera manufacturer. This driver is relatively limited in functionality; code has very few comments, and should be used only as an example, mainly of how the external camera libraries are used to build the device adapter for Micro-Manager.
-
-=== Nikon ===
-
-Nikon project is an example of the device adapter using serial interface. Micro-Manager adapters should not use serial ports directly, but rather by using system calls provided by the Micro-Manager device API.
-
-=== SimpleAutofocus ===
-
-SimpleAutofocus is a image-metric based autofocus 'adapter' implemented in C++. It is configured in the demo&ImageProc.cfg configuration. This provides a concrete example of how a hardware autofocus device would be interfaced to the system.
 
 == Testing and debugging device adapters ==
 
