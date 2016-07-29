@@ -9,11 +9,10 @@ One of the most powerful features of Micro-Manager is that anyone with average c
 Let's assume that we are writing a device adapter, for a device called “MyDevice.” The workflow for development of the new adapter should look like this:
 * Check out the latest source code from the Micro-Manger Subversion repository
 * If required, install device manufacturer’s drivers, SDK and any other software/hardware required for the particular device we are working with.
-* Build test programs from the provided source code
 * Create new directories and project files for our new device adapter. In this step we can use some of the provided skeleton or demo adapters as an example or a starting point.
 * Write code for controlling the new device and build a run-time module. The final result is a dynamically linked library file that conforms to Micro-Manager’s API and contains one or more newly developed device adapters.
-* Run test programs to validate and debug (if necessary) our new adapter. If our new device adapter passes these tests, it is more or less guaranteed to properly load and interact with the Micro-Manager application.
 * Download and install the latest version of the Micro-Manager application, drop-in the new dynamic library file (to its installation directory) and do final testing with the full application
+* Test and debug our new adapter.
 
 ==Terminology==
 
