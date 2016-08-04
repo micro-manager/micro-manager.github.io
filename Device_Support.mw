@@ -54,6 +54,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[RaptorEPIX]] - EMCCD cameras
 * [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
+* [[SigmaKoki]] - Sigma Koki camera
 * [[SpotCamera]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
 * [[ThorlabsUSBCamera]] - Thorlabs cameras (Windows)
