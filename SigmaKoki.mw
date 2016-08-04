@@ -14,7 +14,7 @@ http://www.sigma-koki.com/pages/support/software/sample_jp.php
 Version 1.4(1.4.22 32/64bit) of MM is compatible. Later versions of MM might contain the dll.
 
 <table border="1"><tr>
-<td>device</td><td>XYStage </td><td>ZStage </td><td>Camera</td></tr>
+<td>device</td><td>XYStage </td><td>ZStage </td><td>Shutter</td></tr>
 <tr><td>AnserTimeout</td><td>500</td><td>500</td><td>500</td></tr>
 <tr><td>BaudRate</td><td>38400</td><td>38400</td><td>9600</td></tr>
 <tr><td>DelayBetweenCharsMs</td><td>0</td><td>0</td><td>0</td></tr>
