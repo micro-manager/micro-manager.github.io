@@ -51,20 +51,19 @@ To log data acquired from Okolab devices, an experiment must be started (''Tools
 == Legacy version ==
 
 === Compatible devices ===
-* [http://www.oko-lab.com/microscopeIncubators.page Microscope Incubators]
-** [http://www.oko-lab.com/cageIncubator.page Bold Line Cage Incubator (H201)]
-** [http://www.oko-lab.com/electricIncubator.page Bold Line Top Stage Incubator (H301)] 
+* [http://www.oko-lab.com/live-cell-imaging Microscope Incubators]
+** [http://www.oko-lab.com/live-cell-imaging/cage-incubator Bold Line Cage Incubator (H201)]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas Bold Line Top Stage Incubator (H301)] 
 
-* [http://www.oko-lab.com/boldLineGasControllers.page Bold Line Gas Controllers]
-** [http://www.oko-lab.com/boldLineGasControllers/co2UnitBoldLine.page CO2 Unit-BL]
-** [http://www.oko-lab.com/boldLineGasControllers/o2UnitBoldLine--nbsphypoxia.page O2 Unit-BL &#91;1-20&#93;]
-** [http://www.oko-lab.com/boldLineGasControllers/co2O2DualUnitBoldLineHypoxia.page CO2-O2 Unit-BL &#91;0-10;1-18&#93;]
-** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
-** [http://www.oko-lab.com/boldLineGasControllers/co2-o2Unit-blHyperoxia-1.page CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
+* [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#gas_controller Bold Line Gas Controllers]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-unit-bl CO2 Unit-BL]
+** [http://www.oko-lab.com/live-cell-imaging/cage-incubator/co2-o2/o2-unit-bl-1-20 O2 Unit-BL &#91;1-20&#93;]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-1-18 CO2-O2 Unit-BL &#91;0-10;1-18&#93;]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-20-1-95 CO2-O2 Unit-BL &#91;0-20;1-95&#93;]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-0-1 CO2-O2 Unit-BL &#91;0-10;0-1&#93;]
 
-* [http://www.oko-lab.com/humidityControllers.page Humidity controllers]
-** [http://www.oko-lab.com/humidityControllers.page HM-ACTIVE]
-** [http://www.oko-lab.com/hm-active-standalone.page HM-ACTIVE-STANDALONE]
+* [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage Humidity controllers]
+** [http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage HM-ACTIVE]
 
 === Installation ===
 
