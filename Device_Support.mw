@@ -51,7 +51,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
 * [[QCam]] - QImaging cameras
 * [[QSICamera]] - QSI cameras (Windows)
-* [[RaptorEPIX]] - EMCCD cameras
+* [[RaptorEPIX]] - Raptor Photonics cameras using EPIX cameralink board
 * [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[SigmaKoki]] - Sigma Koki camera
