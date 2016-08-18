@@ -4,17 +4,16 @@
 '''Summary:'''</td><td>Interfaces to Firewire (and some USB) cameras that implement the IIDC 1394-based Digital Camera Specification</td></tr>
 <tr><td>'''Author:'''</td><td>Mark Tsuchida</td></tr>
 <tr><td>'''License:'''</td><td>BSD (uses LGPL libraries)</td></tr> 
-<tr><td>'''Platforms:'''</td><td>Linux, Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>Firewire cameras (and, on Linux, some USB cameras) that implement the [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php IIDC 1394-based Digital Camera Specification], version 1.x</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows, Mac OS X, Linux</td></tr>
+<tr><td>'''Devices:'''</td><td>Firewire cameras (and, on Linux, possibly, some USB cameras) that implement the [http://damien.douxchamps.net/ieee1394/libdc1394/iidc_specifications.php IIDC 1394-based Digital Camera Specification], version 1.x</td></tr>
 <tr><td>'''Since Version:'''</td><td>1.4.17</td></tr>
 </table>
 
-This is a new device adapter intended to eventually replace the [[dc1394]] device adapter. Currently, it has only been tested on Linux and only supports monochrome cameras. It so far implements fewer features than dc1394, but attempts to implement those robustly.
-
+This is a new device adapter intended to eventually replace the [[dc1394]] device adapter.
 
 == How to configure ==
 
-On Windows, you will first need to install the [http://www.cs.cmu.edu/~iwan/1394/ CMU 1394Camera package], version 6.4.6.
+On Windows, you will first need to install the [http://www.cs.cmu.edu/~iwan/1394/ CMU 1394Camera package], version 6.4.6. No driver installation is needed on OS X.
 
 The IIDCCamera device has a number of settings that need to be configured correctly.
 
@@ -22,7 +21,7 @@ The IIDCCamera device has a number of settings that need to be configured correc
 
 '''IEEE 1394 mode''' - If both your camera and IEEE 1394 interface card support 1394B (sometimes informally referred to as Firewire 800), choose 1394B. Otherwise, choose 1394A.
 
-'''Transmission Speed''' - Usually, just choose 800 Mbps if using 1394B, 400 Mbps otherwise. 800 Mbps may not work on Windows.
+'''Transmission Speed''' - Usually, just choose 800 Mbps if using 1394B, 400 Mbps otherwise. 800 Mbps does not work on Windows.
 
 '''Shutter units (us/unit)''' and '''Shutter offset (us)''' - You can initially leave these at the default values, but see below.
 
