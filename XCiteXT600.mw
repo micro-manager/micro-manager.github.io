@@ -10,7 +10,7 @@
 == Device Configuration ==
 Defaults for baudrate, communications parameters and timing are acceptable.
 
-Ensure to turn off grouping if enabled for XLED compatibility before using this driver.
+Ensure to turn off grouping if enabled for XLED compatibility, before using this driver.
 
 {{Listserv_Search|XLED1}}
 
