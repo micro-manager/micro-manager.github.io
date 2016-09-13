@@ -6,3 +6,12 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 </table>
+
+== Device Configuration ==
+Defaults for baudrate, communications parameters and timing are acceptable.
+
+Ensure to turn off grouping if enabled for XLED compatibility before using this driver.
+
+{{Listserv_Search|XLED1}}
+
+{{Devices_Sidebar}}
