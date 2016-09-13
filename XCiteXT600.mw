@@ -5,6 +5,7 @@
 <tr><td>'''Author:'''</td><td> Tom Porter (Excelitas) based on the XCiteLed device adapter</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Devices:'''</td><td>Turbo, XT600 Series</td></tr>
 </table>
 
 == Device Configuration ==
