@@ -128,6 +128,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Xcite]] - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
 * [[XCite120PC_Exacte]] - Lumen Dynamics X-Cite 120PC and ''exacte'' adapter
 * [[XCiteLed]] - LED controller
+* [[XCiteXT600]] - X-Cite TURBO and XT600 series
 * [[Zaber]] - Zaber linear and XY stages, filter wheels
 
 === Communication ports, TTLs, DAQs, etc. ===
