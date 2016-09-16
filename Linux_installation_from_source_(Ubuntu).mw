@@ -47,8 +47,8 @@ Create a directory for the the subversion repositories, such as <code>~/mm</code
 
 mkdir ~/mm
 cd ~/mm
-svn co https://valelab.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
-svn co https://valelab.ucsf.edu/svn/3rdpartypublic/
+svn co https://valelab4.ucsf.edu/svn/micromanager2/trunk/ micro-manager1.4
+svn co https://valelab4.ucsf.edu/svn/3rdpartypublic/
 </pre>}}
 
 This creates 2 new folders in the <code>mm</code> directory:
