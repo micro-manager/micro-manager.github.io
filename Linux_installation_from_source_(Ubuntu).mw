@@ -1,3 +1,5 @@
+Intallation notes to install micro-manager from source on Ubuntu systems. These instructions can also be used without modifications for installations on [http://debian.org Debian systems] (tested on Debian Wheezy and Debian Jessy).
+
 {{Note|This page has been updated for the build system changes of r13120, based on testing on Ubuntu 12.04 LTS.}}
 
 See also: <code>doc/how-to-build.md</code> in the source tree.
