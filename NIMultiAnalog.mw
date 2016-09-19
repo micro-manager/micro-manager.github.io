@@ -13,4 +13,6 @@ This device adapter is intended for use with National Instruments DAQ boards/box
 
 The hardware triggering support is flexible enough that you can use the same DAQ to control a piezo Z stage, the illumination channel (possibly using analog output ports as TTL outputs, with the DATTLStateDevice available in [[Utilities]]), and illumination intensities simultaneously. In such a configuration, both the Z stage and the illumination channel can be sequenced by hardware triggering at the same time in an MDA.
 
+To set up triggered acquisition with the NIDAQ card, you first load the analog outs you with to control light sources with. You then set up a DA TTL State Device to allow control of these analog outs from a single state setting, and then set up a State Device Shutter to control the DA TTL state device.  
+
 {{Devices_Sidebar}}
