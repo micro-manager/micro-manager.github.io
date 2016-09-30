@@ -34,7 +34,12 @@ The current version of the MMCore does not support programming environments othe
 
 == Getting started ==
 
-You can use any editor or Java IDE of your preference to try examples from this guide. Java run-time should be version 1.5 or higher.<br />
+You can use any editor or Java IDE of your preference to try examples from this guide. Java run-time should be version 1.5 or higher. Instructions to work with several Java IDEs are available:
+
+* [[Using Netbeans|Netbeans]], which seems to be the recommended IDE ([[Writing_plugins_for_Micro-Manager|see previous instructions]])
+* [[Using Eclipse|Eclipse]].
+
+<br />
 
 === Creating the CMMCore object ===
 
