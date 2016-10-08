@@ -146,6 +146,8 @@ The reason one has to do this is MM encodes the pins as bits in binary.  Pin 13 
 | DAC(1,2}-Volts || (Not usually used) Reserved for TLV5618 AOTF Peripheral.
 |}
 
+=== DAC ===
+
 == Project Tutorials ==
 * [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
 
