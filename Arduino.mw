@@ -31,8 +31,8 @@ The [http://www.arduino.cc/ Arduino] is a low cost programmable digital IO board
 
 == Installation ==
 
-=== Arduino Software ===
-Download and install the [http://arduino.cc/en/Main/Software Arduino Software] for your platform.  Establish a connection with your Arduino using the instructions that come with the Arduino software (this includes installing a driver for the USB to serial adapter built into the Arduino.
+=== Arduino Software (IDE) ===
+The Arduino IDE is required to upload the firmware to the Arduino. Once this step is done, it should no longer be required. Download and install the [http://arduino.cc/en/Main/Software Arduino Software] for your platform.  Establish a connection with your Arduino using the instructions that come with the Arduino software (this includes installing a driver for the USB to serial adapter built into the Arduino.
 
 === Firmware ===
 Then download the [https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.ino firmware source code] and copy into a blank Arduino Sketch window.  Send to the Arduino, and your Arduino is programmed to work with Micro-Manager.
