@@ -184,7 +184,7 @@ Additional information is available on those websites:
 
 ==== DAC - performance ====
 
-'''Linearity''': If the voltage on the reference pin ''REF'' of the TLV5618 is properly set, the response to a ramp command is fairly linear (see image below). Note that the y scale is arbitrary and the x scale is s.
+'''Linearity''': If the voltage on the reference pin ''REF'' of the TLV5618 is properly set, the response to a ramp command is fairly linear (see image below). Note that the y scale is arbitrary and the x scale is ms.
 
 [[File:TLV5618-linearity.png]]
 
