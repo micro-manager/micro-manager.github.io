@@ -148,6 +148,50 @@ The reason one has to do this is MM encodes the pins as bits in binary.  Pin 13 
 
 === DAC ===
 
+A ''DAC'' (digital-to-analog) converter is required for the Arduino to output analog signals. Indeed, the Arduino can only ''simulate'' analog outputs using a [https://www.arduino.cc/en/Tutorial/PWM PWM]. To output ''true'' analog output, a chip that perform a digital-to-analog conversion is required.
+
+==== PWM ====
+
+When a pin is configured in PWM mode (using the <code>analogWrite</code> Arduino command), the pin constantly switches between the binary ''HIGH'' and ''LOW'' values such that the temporal average of the signal is the required analog output: although the average of the voltage on a given pin is different from the ''HIGH'' and ''LOW'' values, the pin actually outputs a high frequency square wave, which can be detrimental to some devices that require a true analog signal. A way to smooth the PWM output to its average value is to use a [https://en.wikipedia.org/wiki/RC_circuit RC circuit].
+
+Furthermore, the default PWM frequency of the Arduino is relatively low: about 1 kHz. It is possible to [https://www.arduino.cc/en/Tutorial/SecretsOfArduinoPWM go up to 30-60kHz].
+
+==== DAC - Description ====
+One DAC chip is the [http://www.ti.com/product/TLV5618A/technicaldocumentsTexas Instrument TLV5618]. It is a 12 bit DAC. It is easy to handle and the Arduino firmware can talk natively to it through a builtin [https://www.arduino.cc/en/Reference/SPI SPI protocol].
+
+It can be wired as follows on pins 3, 4 and 5 of the Arduino and will require a few additional components:
+* A decoupling capacitor (we used a 100 nF ceramic capacitor)
+* Resistors/potentiometers to build a voltage divisor and power the ''REF'' pin of the DAC. The reference has to be set at 2.04 V. This can be achieved using a 20 kOhm resistor on one side and a 29 kOhm resistor on the other side (29 kohm can be obtained with 20+6.8+2.2 kOhm serial resistors).
+
+Those should be wired as follow:
+
+[[File:TLV5618_wiring.png]]
+
+Notes:
+* ''OUT_A'' and ''OUT_B'' are the analog outputs.
+* The pair of resistors ''R1'' and ''R2''can be tweaked as long as the voltage on the ''REF'' pin of the TLV5618 remains 2.04 V
+* The ''+5V'' and ''GND'' should be wired to the 5V and GND pins of the Arduino
+
+==== Alternative wiring ====
+
+The current (as of Oct. 2016) implementation of the SPI interface in the Arduino firmware limits the speed of the DAC to approximately 1 kHz. However, it is possible to do better by using the [https://www.arduino.cc/en/Reference/SPI builtin SPI interface] of the Arduino. This can shrink the response down to 25 µs (40 kHz). 
+
+However, the SPI interface is only available on pins 10, 11, 13, which requires a little bit of reorganization of the Arduino code to work out-of-the box, and the <code>analogueOutput</code> function has to be re-written to use the SPI interface ([http://www.stephenhobley.com/build/lh_arduino.html see an example])
+
+Additional information is available on those websites:
+* [https://karplus4arduino.wordpress.com/2011/06/15/digital-to-analog-converter/ Digital-to-analog converter]
+* [http://www.stephenhobley.com/build/lh_arduino.html Laser harp construction]
+
+==== DAC - performance ====
+
+'''Linearity''': If the voltage on the reference pin ''REF'' of the TLV5618 is properly set, the response to a ramp command is fairly linear (see image below). Note that the y scale is arbitrary and the x scale is s.
+
+[[File:TLV5618-linearity.png]]
+
+'''Response time''': 
+
+[[File:TLV5618 response.png]]
+
 == Project Tutorials ==
 * [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
 
