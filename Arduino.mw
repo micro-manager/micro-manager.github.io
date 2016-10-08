@@ -74,13 +74,13 @@ Add the Arduino-Hub.  You may want to set the "Verbose" property of the port to 
 {| class="wikitable"
 !style="width: 20%;"| Name || Description
 |- valign="top"
-| Arduino-Switch ||  Digital output pattern set across pins 8 to 13.  See usage in [[#Digital IO]]
+| Arduino-Switch ||  Digital output pattern set across pins 8 to 13.  See usage in [[#Digital IO]].
 |- valign="top"
 | Arduino-Shutter || Toggles the digital outputs pattern across pins 8 to 13.  Set all pins off when the shutter is closed, and restores the value set in <code>Switch-State</code> when the shutter is opened.
 |- valign="top"
 | Arduino-Input || Reports, both, the digital and analog (0-1023) state of the analog input pins 0 to 5.
 |- valign="top"
-| Arduino-DAC{1,2} || (Not usually used) Reserved for TLV5618 AOTF Peripheral.  There does not appear to be any documentation of this peripheral and seems to be a bespoke AOTF control board built for UCSF.
+| Arduino-DAC{1,2} || (Not usually used) Reserved for TLV5618 AOTF Peripheral. TLV5618 is a chip acting as a DAC (digital-to-analog converter) that can be added as a shield to the Arduino. This way, the Arduino can be used to control analog devices such as AOTF or stages. See [[#DAC]].
 |}
 
 {| class="wikitable"
