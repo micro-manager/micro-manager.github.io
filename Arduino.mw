@@ -157,7 +157,7 @@ When a pin is configured in PWM mode (using the <code>analogWrite</code> Arduino
 Furthermore, the default PWM frequency of the Arduino is relatively low: about 1 kHz. It is possible to [https://www.arduino.cc/en/Tutorial/SecretsOfArduinoPWM go up to 30-60kHz].
 
 ==== DAC - Description ====
-One DAC chip is the [http://www.ti.com/product/TLV5618A/technicaldocumentsTexas Instrument TLV5618]. It is a 12 bit DAC. It is easy to handle and the Arduino firmware can talk natively to it through a builtin [https://www.arduino.cc/en/Reference/SPI SPI protocol].
+One DAC chip is the [http://www.ti.com/product/TLV5618A/technicaldocuments Texas Instrument TLV5618]. It is a 12 bit DAC. It is easy to handle and the Arduino firmware can talk natively to it through a builtin [https://www.arduino.cc/en/Reference/SPI SPI protocol].
 
 It can be wired as follows on pins 3, 4 and 5 of the Arduino and will require a few additional components:
 * A decoupling capacitor (we used a 100 nF ceramic capacitor)
