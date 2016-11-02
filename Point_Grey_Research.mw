@@ -1,0 +1,34 @@
+{| style="text-align: left"
+!Summary:
+|Device Adapter for Point Grey Research cameras
+|- valign="top"
+!Authors:
+| Nico Stuurman
+|- valign="top"
+|-
+!License:
+|BSD
+|-
+!Platforms:
+|Windows and (possibly) Linux
+|- valign="top"
+!Devices:
+|Point Grey Research cameras supported by the Flycap2 interface
+|-valign="top"
+!Available since:
+|November 2, 2016
+|}
+----
+
+== Installation ==
+Install the FlyCap2 viewer software for your OS.  Make sure that the Flycapture2 software works with your camera.  Copy libiomp5md.dll and FlyCapture2_v100.dll (from the bin or bin64 directory in the FlyCap2 directory) to the Micro-Manager directory (default: C:\Program Files\Micro-Manager).  Make sure that your are using version 2.9.3.43 of the FlyCapture software (2.10.3.169 does not work).  This version is currently unavailable on the [https://www.ptgrey.com/support/downloads Point Grey website], and we are not allowed to re-distribute that software, so please do ask Point Grey for a solution.
+
+== Device Configuration ==
+# Open Micromanager.
+# You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to add the camera.
+
+== Tested with ==
+ Chameleon3 CM3-U3-31S4M
+ Flea3 FL3-U3-13S2M-CS
+
+{{Devices_Sidebar}}
