@@ -47,6 +47,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
 * [[Piper]] - Stanford Photonics cameras
+* [[Point Grey Research]] - Point Grey cameras through the Flycap2 interface
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
 * [[QCam]] - QImaging cameras
