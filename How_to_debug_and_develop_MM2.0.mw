@@ -1,3 +1,13 @@
+=== Setting up Github ===
+
+# Create an account at github.com and log in.
+<!--
+-->
+# Go to https://github.com/micro-manager/micro-manager/ and click the fork button at the upper right. This creates a copy of the micro-manager source tree in your account that you can edit.
+<!--
+-->
+# Go to your newly forked repository and download it to your computer, either using Github desktop or the git command line tools. [https://help.github.com/articles/set-up-git/ See here for instructions on getting started with git locally.]
+
 The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac. This is largely identical to the instructions for developing the Java code in 1.4.
 
 (See also: [[Writing plugins for Micro-Manager]])
