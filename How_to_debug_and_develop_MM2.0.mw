@@ -14,6 +14,8 @@
 -->
 # You're now ready to edit code and submit pull requests back to micro-manager.
 
+=== Setting up Netbeans ===
+
 The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac. This is largely identical to the instructions for developing the Java code in 1.4.
 
 (See also: [[Writing plugins for Micro-Manager]])
@@ -55,3 +57,18 @@ The following instructions for debugging Micro-Manager's Java code with NetBeans
 <!--
 -->
 # Click '''OK''', and then right-click your project and choose '''Debug'''. If all is well, then Micro-Manager should launch inside ImageJ.
+
+=== Submitting a Pull Request ===
+
+Once you have made whatever changes you want in the Micro-manager code, you can submit a pull request to the maintainers for them to consider your changes. To do so:
+
+# First, create a new branch in your git repository. This should have a name relevant to whatever change you are submitting.
+<!--
+-->
+# Next, commit your changed code to this branch, and sync with your github repository.
+<!--
+-->
+# Go to your forked micro-manager repository. Select the branch containing the code you want to submit, and click new pull request.
+<!--
+-->
+# Select the mm2 branch to compare to your fork, and create the pull request.
