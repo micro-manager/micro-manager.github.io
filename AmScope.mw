@@ -6,6 +6,7 @@
 <tr><td>'''Devices:'''</td><td>AmScope MU series USB3.0 cameras</td></tr>
 <tr><td>'''Adapter Version:'''</td><td>1.0</td></tr>
 <tr><td>'''Available Since Version:'''</td><td>1.4.23</td></tr>
+<tr><td>'''Configuration file:'''</td><td>[[Media:MMConfig_AmScopeCamera.cfg]]</td></tr>
 
 </table>
 
@@ -25,4 +26,4 @@ Requires drivers from AmScope, which can be downloaded from the [https://www.ams
 * For image, currently only the modes "GREY8" and "RGB32" are supported.
 * The "Frame rate" property will not necessarily affect the real frame rate in the live-mode. It does, however, determine the maximal exposure time.
 * If several cameras are connected, currently only the first camera in the list will be addressed.
-* Works with Windows only on 32bit and 64bit.
+* Works with Windows only.
