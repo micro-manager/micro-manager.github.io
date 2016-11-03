@@ -20,6 +20,10 @@ Alpha nightly builds (obsolete):
 
 Current source code on GitHub: [https://github.com/micro-manager/micro-manager/tree/mm2 mm2 branch]
 
+=== Contributing to MM2.0 ===
+
+How to set up the Java environment to debug MM2.0 and how to work with Github and submit pull requests.
+
 === API ===
 
 If you want to write a new plugin or script, you will need to familiarize yourself with the new API. [[Version_2.0_API]] has an overview of the API's capabilities. Plugin authors should also read [[Version_2.0_Plugins]].
