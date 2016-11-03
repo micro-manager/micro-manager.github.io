@@ -7,6 +7,9 @@
 <!--
 -->
 # Go to your newly forked repository and download it to your computer, either using Github desktop or the git command line tools. [https://help.github.com/articles/set-up-git/ See here for instructions on getting started with git locally.]
+<!--
+-->
+# In your local forked copy, add a remote that points to the master Micro-manager repository, known as an upstream. [https://help.github.com/articles/configuring-a-remote-for-a-fork/ See here for details.] 
 
 The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac. This is largely identical to the instructions for developing the Java code in 1.4.
 
