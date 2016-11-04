@@ -17,7 +17,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 
 === Cameras ===
 * [[ABSCamera]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
-* [[AmScope]] - AmScope cameras
+* [[AmScope]] - AmScope MU series cameras (Windows)
 * [[Andor]] - Andor cameras
 * [[AndorSDK3]] - New model Andor cameras
 * [[Apogee]] - Apogee cameras
