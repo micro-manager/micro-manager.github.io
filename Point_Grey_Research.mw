@@ -21,14 +21,24 @@
 ----
 
 == Installation ==
-Install the [https://www.ptgrey.com/support/downloads FlyCap2 viewer software] for your OS.  Make sure that the FlyCapture2 software works with your camera.  Copy libiomp5md.dll and FlyCapture2_v100.dll (from the bin or bin64 directory in the FlyCap2 directory) to the Micro-Manager directory (default: C:\Program Files\Micro-Manager).  Make sure that your are using version 2.9.3.43 of the FlyCapture software (2.10.3.169 does not work).  2.9.3.43 is currently unavailable on the [https://www.ptgrey.com/support/downloads Point Grey Research website], and we are not allowed to re-distribute their dlls, so please do ask [https://www.ptgrey.com/support/contact-us Point Grey Research] for a solution.
+Install the [https://www.ptgrey.com/support/downloads FlyCap2 viewer software] for your OS.  Make sure that the FlyCapture2 software works with your camera.  Copy libiomp5md.dll and FlyCapture2_v100.dll (from the bin or bin64 directory in the FlyCap2 directory) to the Micro-Manager directory (default: C:\Program Files\Micro-Manager).  Make sure that your are using version 2.10.3.169 of the FlyCapture software (older versions like 2.9.3.43 do not work).  Since we are not allowed to re-distribute FlyCapture2_v100.dll, it may well be that 2.10.3.169 is no longer available (in which case the only solution is to re-build the Micro-Manager Point Grey Device adapter against the then available SDK).  
 
 == Device Configuration ==
 # Open Micromanager.
-# You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to add the camera.
+# You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to add the camera.  If "Point Grey" is unavailable, there either is no camera attached to the computer, or some software components are missing. Cameras will be listed by their name and serial number.
+
+
+== Advanced mode (Format 7)  ==
+The Point Grey interface and nomenclature build on the IIDC (Firewire) cameras interface.  This dc1394 protocol specifies a "Format 7" that enables advanced features like regions of interest.  For use in Micro-Manager, you almost invariably will want to use Format 7.  This is specified by setting the property "Advanced Mode" in the Hardware Configuration Wizard to "Yes".   
+
+== Binning ==
+Even though some Point Grey cameras support binning, there is no generalized interface to binning.  Often, you can change binning by changing the "Mode" of the camera.  Check the documentation of your camera to find out what it does in the various modes that it has available.  Make sure to include the "Mode" property in your pixel size groups.
 
 == Tested with ==
  Chameleon3 CM3-U3-31S4M
  Flea3 FL3-U3-13S2M-CS
+
+== Various ==
+This adapter supports the use of multiple Point Grey cameras.  It has not been tested on Linux (but likely can be made to work on that platform).  The Point Grey adapter has not yet been included in Micro-manager 2.0.  However, a binary for Windows 64 bit is [http://valelab4.ucsf.edu/~nstuurman/MM-PGR2.0/mmgr_dal_PointGrey.dll available].
 
 {{Devices_Sidebar}}
