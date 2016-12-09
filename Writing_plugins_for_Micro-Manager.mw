@@ -20,8 +20,10 @@ Once you have compiled your code into a <code>.class</code> file or a <code>.jar
 
 The source code for a number of Micro-Manager plugins is publicly available [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/plugins/ here]. You may also find this [[Media:HelloWorldPlugin.zip|Hello World Example plugin]] useful as a template for getting started.
 
+The use of two common IDEs for plugin development, Netbeans and Eclipse, are described next. Which IDE you use is a matter of personal preference.  
 
-=== Using Netbeans ===
+
+== Using Netbeans ==
 {{Note|Here, the text assumes that MicroManager is installed in the <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> directory. However, in the screenshots, the location is <code>/home/maxime/code/mm/builds/ImageJ</code>.}}
 The dynamic loading feature (described above) is useful if you are developing your plugin using an IDE such as Eclipse or Netbeans. (The Micro-Manager distribution includes <code>swing-layout-*.*.jar</code> so that you can use the free Netbeans GUI Builder for your plugin.) Here are the steps for Netbeans:
 # Install [http://netbeans.org Netbeans]. Note, Netbeans currently comes with the Java 1.7.0 run time environment. After install, you will need to manually install and add the JRE that Micro-Manager uses: 1.6.0, 64-bit if you need it.  Additionally, if you are developing with JDK 6, you will need [https://netbeans.org/downloads/7.3.1/index.html NetBeans 7.3.1] as that was the last release compatible with JDK 6 and later versions require JDK 7.
@@ -52,7 +54,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 </div>
 :Make sure you change the "Layout Generation Style" property from "Automatic" to "Swing Layout Extensions Library" as explained on the [http://wiki.netbeans.org/FaqFormLayoutGenerationStyle Netbeans website].
 
-=== Configure Eclipse to edit a plugin ===
+== Using Eclipse ==
 
 # Get Micro-manager source code if you don't already have it, at least the trunk (see [http://www.micro-manager.org/wiki/Micro-Manager_Source_Code this page])
 # Make sure Micro-Manager is installed
