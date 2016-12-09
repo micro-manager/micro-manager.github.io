@@ -9,7 +9,7 @@
 </table>
 
 == Device Configuration ==
-To enable the driver:
+To enable the driver:<cr>
 1. Download and install InstaCal from measurement computing. http://www.mccdaq.com/software.aspx
 2. Restart your computer
 3. In the Measurement Computing Folder, run InstaCal.
