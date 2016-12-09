@@ -9,8 +9,8 @@
 </table>
 
 == Device Configuration ==
-To enable the driver:<CR>
-1. Download and install InstaCal from measurement computing. http://www.mccdaq.com/software.aspx
+To enable the driver:
+#1. Download and install InstaCal from measurement computing. http://www.mccdaq.com/software.aspx
 2. Restart your computer
 3. In the Measurement Computing Folder, run InstaCal.
 4. InstaCal will find a USB-3103 board, add to the configuration file.
