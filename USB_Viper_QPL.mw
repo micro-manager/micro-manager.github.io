@@ -9,13 +9,8 @@
 </table>
 
 == Device Configuration ==
-Defaults for baudrate, communications parameters and timing are acceptable.
+Before driver will be enabled, you must download and install instacal from measurement computing. http://www.mccdaq.com/software.aspx
 
-Ensure to turn off grouping if enabled for XLED compatibility, before using this driver.
-
-TTL Sequencing, the TTL sequence must be entered in order, e.g. selecting an LED to be step 2 in the sequence without a 1 being assigned will return the setting to 0. 
-
-For the X-Cite 110LED, use the XCite120PC_Exacte adapter instead of this one.
 
 {{Listserv_Search|XLED1}}
 
