@@ -10,12 +10,12 @@
 
 == Device Configuration ==
 To enable the driver:
-#1. Download and install InstaCal from measurement computing. http://www.mccdaq.com/software.aspx
-2. Restart your computer
-3. In the Measurement Computing Folder, run InstaCal.
-4. InstaCal will find a USB-3103 board, add to the configuration file.
-5. When the board is added in InstaCal, ensure the board identifier # is 0.
-6. If the board # is not 0, right click on the USB-3103 device and select "Change Board#..."
-7. Start Micro Manager and the USB_Viper_QPL will be selectable.
+# Download and install InstaCal from measurement computing. http://www.mccdaq.com/software.aspx
+# Restart your computer
+# In the Measurement Computing Folder, run InstaCal.
+# InstaCal will find a USB-3103 board, add to the configuration file.
+# When the board is added in InstaCal, ensure the board identifier # is 0.
+# If the board # is not 0, right click on the USB-3103 device and select "Change Board#..."
+# Start Micro Manager and the USB_Viper_QPL will be selectable.
 
 {{Devices_Sidebar}}
