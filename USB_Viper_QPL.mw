@@ -11,7 +11,4 @@
 == Device Configuration ==
 Before driver will be enabled, you must download and install instacal from measurement computing. http://www.mccdaq.com/software.aspx
 
-
-{{Listserv_Search|XLED1}}
-
 {{Devices_Sidebar}}
