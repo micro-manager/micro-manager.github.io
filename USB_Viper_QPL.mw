@@ -15,7 +15,7 @@ To enable the driver:
 # In the Measurement Computing Folder, run InstaCal.
 # InstaCal will find a USB-3103 board, add to the configuration file.
 # When the board is added in InstaCal, ensure the board identifier # is 0.
-## If the board # is not 0, right click on the USB-3103 device and select "Change Board#..."
+** If the board # is not 0, right click on the USB-3103 device and select "Change Board#..."
 # Start Micro Manager and the USB_Viper_QPL will be selectable.
 
 {{Devices_Sidebar}}
