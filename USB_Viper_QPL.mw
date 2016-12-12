@@ -1,11 +1,11 @@
 == QiOptiq iFLEX - Viper ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Adapter for the iFLEX Viper light source</td></tr>
+'''Summary:'''</td><td>Adapter for the iFLEX-Viper light source</td></tr>
 <tr><td>'''Author:'''</td><td> Tom Porter (Excelitas)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>iFLEX Viper</td></tr>
+<tr><td>'''Devices:'''</td><td>iFLEX-Viper</td></tr>
 </table>
 
 == Device Configuration ==
