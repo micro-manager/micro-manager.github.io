@@ -1,4 +1,26 @@
-'''Summary''': Device adapter to control [http://www.matrix-vision.com MATRIX VISION GmbH]
+{| style="text-align: left"
+!Summary:
+|Device adapter to control [http://www.matrix-vision.com MATRIX VISION GmbH] devices
+|- valign="top"
+!Author:
+| Stefan Battmer
+|- valign="top"
+|-
+!License:
+|BSD
+|-
+!Platforms:
+|Windows and Linux
+|- valign="top"
+!Cameras:
+|MATRIX VISION GmbH mvBlueCOUGAR-P, mvBlueCOUGAR-S, mvBlueCOUGAR-X, mvBlueFOX3, mvBlueFOX2, mvTITAN, mvGAMMA, mvSIGMA, mvDELTA, mvHYPERION
+|-valign="top"
+!Frame Grabber:
+|MATRIX VISION GmbH mvTITAN, mvGAMMA, mvSIGMA, mvDELTA, mvHYPERION
+|-valign="top"
+!Available since:
+|December 15, 2016
+|}
 
 ----
 
