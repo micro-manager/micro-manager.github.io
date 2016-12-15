@@ -1,7 +1,7 @@
 == Thorlabs DCxxxx adapter ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Interface to Thorlabs DCxxxx LED driver series (DC2100, DC2010, DC3100, DC4100)</td></tr>
+'''Summary:'''</td><td valign="top">Interface to Thorlabs DCxxxx LED driver series (DC2100, DC2010, DC3100, DC4100, DC2200)</td></tr>
 <tr><td>'''Author:'''</td><td>Olaf Wohlmann</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
@@ -26,7 +26,7 @@
 </table>
 
 
-The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2100 - High Power LED Driver], the DC2010 - Universal LED Driver, the DC3100 - FLIM LED Driver and the DC4100 - 4 Channel LED Driver.
+The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309 DC2100 - High Power LED Driver], the DC2010 - Universal LED Driver, the DC3100 - FLIM LED Driver, the [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3832 DC4100 - 4 Channel LED Driver] and the [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9117 DC2200 - High Power LED Driver].
 
 This adapter makes the LED driver usable as a shutter in Micro-Manager.  On startup, the adapter will switch the LED off.  The adapter has several properties that can be used to control the LED driver.
 {{Note|The above mentioned serial port settings are the default, but they are recommended to communicate with the device.}}
