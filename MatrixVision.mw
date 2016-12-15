@@ -60,6 +60,8 @@ You can now use the camera in Micro-Manager.
 
 == Supported features ==
 
+For a comprehensive list of features supported by a specific device please check out the corresponding product documentation on the [http://www.matrix-vision.com MATRIX VISION] homepage. As Micro-Manager offers a dynamic property interface in a similar way the underlying mvIMPACT Acquire SDK embedded within this adapter does, almost all properties offered by the device driver will automatically become available in Micro-Manager as well
+
 == MATRIX VISION support ==
 
 For contacting the MATRIX VISION GmbH product support regarding any questions or issues with the adapter in connection with MATRIX VISION GmbH devices, please visit the [https://www.matrix-vision.com/support-en.html support] section first.
