@@ -53,6 +53,11 @@ You can now use the camera in Micro-Manager.
 
 == Supported devices ==
 
+* [https://www.matrix-vision.com/usb-20-en.html USB2 cameras]
+* [https://www.matrix-vision.com/usb3-vision-en.html USB3 Vision cameras]
+* [https://www.matrix-vision.com/gige-vision-en.html GigE Vision cameras]
+* [https://www.matrix-vision.com/summary-frame-grabbers.html Frame Grabber Boards]
+
 == Supported features ==
 
 == MATRIX VISION support ==
