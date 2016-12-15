@@ -37,6 +37,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
 * [[Lumenera]] - Lumenera cameras
+* [[MatrixVision|MATRIX VISION devices]] - MATRIX VISION GmbH USB3 Vision, GigE Vision and USB2 cameras as well as various frame grabber boards
 * [[Micropix]] - Cameras from Micropix
 * [[Mightex_C_Cam]] - Mightex C-series USB cameras
 * [[MoticCamera]] - Motic cameras
