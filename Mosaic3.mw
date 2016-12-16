@@ -23,18 +23,9 @@
 
 === Driver ===
 
-* Copy the following 4 library files to the main Micro-Manager directory:
-
-    atcore.dll
-    atdevmosaic3.dll
-    Mosaic3ApiSharedMfc.dll
-    Mosaic3SDKWrapper.dll
-
-:These Mosaic library files need to be copied from the Mosaic 3 SDK, located at:
-
-    C:\Program Files\Andor Mosaic 3 SDK\sdk\
-
-:The SDK is publicly available for [http://www.andor.com/downloads?src=micro download here].
+* Download the Andor Mosaic Driver 3 Pack from [http://www.andor.com/downloads?src=micro here].
+:Install the Driver Pack and when prompted for the destination location enter the path where Micro-Manager is installed as shown in the example below.
+[[File:Installation_Destination.png|frame|center|link=]]
 
 * Check that the driver for the PCIe card is recognized in the Device Manager as <code> PLDA > PLDA Windows Driver</code>.
 
