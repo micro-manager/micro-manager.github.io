@@ -1,5 +1,5 @@
 The Micro-Magellan plugin allows flexible, dynamic device control and acquisition. Explor acquisitions enable navigation of samples in XY and Z, to build a 3D map of sample quickly and with minimal photobleaching. Surfaces allows you to define an non-cuboidal region of interest and define sample morphology, which can then be used to define sample-driven parameters such as laser power at distance from surface. Using grids or surfaces, you can designate multiple areas to image in a single acquisition in series or in parallel. A high level overview of the capabilities of Micro-Magellan can be found here: 
-http://www.nature.com/nmeth/journal/v13/n10/full/nmeth.3991.html
+http://www.nature.com/articles/nmeth.3991.epdf?author_access_token=rR_aOWEDc1Wj0RddBbHtydRgN0jAjWel9jnR3ZoTv0M4gswfFfGBQXXZMGJVGnJTGIbTUu0oUju76Mtjgm3ZyyuqIlJOmOWcb5xpBHeT0WOW1Vr_EIRVAOz2dWk6Kkss
 
  
 ==Getting Started with Micro-Magellan==
