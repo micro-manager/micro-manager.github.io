@@ -38,7 +38,7 @@ The following is an incomplete list of properties currently implemented in the M
 <tr><td><b>Backlash</b> (for both X and Y, in mm)</td><td>Makes the controller approach the target always from the same direction, starting the set number of mm away from the target position</td></tr>
 <tr><td><b>Error</b> (for both X and Y, in nm)</td><td>When the difference between the current position (as read from the encoders) is larger than this number, the controller will re-engage the motors to reach the target position</td></tr>
 <tr><td><b>Finish Error</b> (for both X and Y in nm)</td><td>This setting controls at what difference between the target and current position the controller will stop trying to get closer to the target.  Similar to Error, but this one applies to ongoing movements.</td></tr>
-<tr><td><b>OverShoot</b> (for both X and Y)</td><td>Analogous to backlash, but will always overshoot the desired position by the set amount and then come back, whereas backlash always approaches from the same direction.  Only applies when backlash is set to 0.</td></tr>
+<tr><td><b>OverShoot</b> (for both X and Y)</td><td>Analogous to backlash, but will always overshoot the desired position by the set amount and then come back, whereas backlash always approaches from the same direction.  Backlash move, if any, occurs before the overshoot move.</td></tr>
 <tr><td><b>MotorOnOff</b> (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
 <tr><td><b>NrMoveRepetition</b></td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
 </table>
