@@ -20,7 +20,7 @@ Once you have compiled your code into a <code>.class</code> file or a <code>.jar
 
 The source code for a number of Micro-Manager plugins is publicly available [https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/plugins/ here]. You may also find this [[Media:HelloWorldPlugin.zip|Hello World Example plugin]] useful as a template for getting started.
 
-The use of two common IDEs for plugin development, Netbeans and Eclipse, are described next. Which IDE you use is a matter of personal preference.  
+The use of two common IDEs for plugin development, '''Netbeans''' and '''Eclipse''', are described next. Which IDE you use is a matter of personal preference. (Dennis Trautwein has written [http://trtwn.de/intellij-micro-manager/ a guide for IntelliJ].)
 
 
 == Using Netbeans ==
