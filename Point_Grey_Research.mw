@@ -39,6 +39,9 @@ Even though some Point Grey cameras support binning, there is no generalized int
  Flea3 FL3-U3-13S2M-CS
 
 == Various ==
-This adapter supports the use of multiple Point Grey cameras.  It has not been tested on Linux (but likely can be made to work on that platform).  The Point Grey adapter has not yet been included in Micro-manager 2.0.  However, a binary for Windows 64 bit is [http://valelab4.ucsf.edu/~nstuurman/MM-PGR2.0/mmgr_dal_PointGrey.dll available].
+* If you do not find the Point Grey adapter in the list in the Hardware Configuration Wizard, please download and install the latest nightly build of Micro-Manager.
+* This adapter supports the use of multiple Point Grey cameras.  It has not been tested on Linux (but likely can be made to work on that platform).  
+* This adapter only works with the FlyCapture2 interface, i.e. it does not work with the Spinnaker interface).
+* In multiple cases, USB3 cameras do not work through a USB3 port.  If you have unexpected behavior, try connecting your camera to a USB2 slot (which will have reduced throughput).  If throughput is important, consult the Point Grey documentation (e.g. [https://www.ptgrey.com/tan/10359 this document recomending USB3 components) and if all fails open a support ticket with Point Grey.
 
 {{Devices_Sidebar}}
