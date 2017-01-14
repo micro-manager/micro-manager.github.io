@@ -2,6 +2,10 @@ This page covers how to accomplish many common tasks with the Micro-Manager 2.0 
 
 In the below examples, reference will be made to an <code>mm</code> object. This is the Studio interface for Micro-Manager's java layer. It's available as "mm" by default in the Scripting Panel of Micro-Manager, hence the name.
 
+For clarity, the types returned by the function calls are included.  The Beanshell environment in the Script Panel does not know all these types.  You can either import those types explicitly, e.g.
+ import org.micromanager.data.Datastore;
+or you can leave out the type altogether.
+
 This page makes use of many objects that are more fully described in the [https://micro-manager.org/wiki/Version_2.0_API main 2.0 API documentation].
 
 How do I...
@@ -26,7 +30,7 @@ This will create a new Datastore and DisplayWindow, add the image to the Datasto
 
 If you have data in an open window that you want to access, you can readily do that through the <code>DisplayManager</code> interface:
 
- Datastore store = mm.displays().getCurrentWindow().getDatastore()
+ Datastore store = mm.displays().getCurrentWindow().getDatastore();
 
 The above code will retrieve the topmost <code>DisplayWindow</code> and then extract the <code>Datastore</code> that contains the data that the <code>DisplayWindow</code> presents.
 
@@ -78,17 +82,17 @@ If live mode is on, then it will turn off when you call <code>setSuspended(true)
 
 You have two similar options here:
 
- mm.acquisitions().runAcquisition()
+ mm.acquisitions().runAcquisition();
 
 and
 
- mm.acquisitions().runAcquisition(String name, String root)
+ mm.acquisitions().runAcquisition(String name, String root);
 
 Both will run an acquisition using the current MDA settings; the latter method will also allow you to specify where data should be saved. Both methods return a <code>Datastore</code> that contains the acquired images.
 
 Note also this method:
 
- mm.acquisitions().loadAcquisition(String path)
+ mm.acquisitions().loadAcquisition(String path);
 
 This method allows you to load a previously-saved set of acquisition settings, automatically populating the fields in the MDA dialog. You can create one of these acquisition settings files via the "Save as..." button in the MDA dialog.
 
