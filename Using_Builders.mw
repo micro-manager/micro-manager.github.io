@@ -26,13 +26,13 @@ Let's use the <code>Metadata</code> class as an example. This class describes th
 
 There are two classes: the Metadata itself, and the Builder for the Metadata. Note that the Metadata does not have any methods that ''change'' it: it is impossible to modify a Metadata instance after it is created (the Metadata is "immutable"). Instead, a Builder is created, and ''it'' can be modified (for justification of why these objects are immutable, see the bottom of the page). However, properties of the Builder cannot be ''read'', so it isn't very useful on its own. To generate a Metadata from the Builder, you use the <code>build</code> method. For example:
 
- Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
+ Metadata.MetadataBuilder builder = mm.data().getMetadataBuilder();
  // Create metadata for first image.
- builder = builder.bitDepth(14).channelName("DAPI").exposureMs(100);
+ builder = builder.bitDepth(14).exposureMs(100);
  Metadata metadata1 = builder.build();
  int exposure1 = metadata1.getExposureMs(); // will be 100
- // Create metadata for second image: only channel name and exposure time change
- builder = builder.channelName("Cy5").exposureMs(80);
+ // Create metadata for second image: only exposure time change
+ builder = builder.exposureMs(80);
  Metadata metadata2 = builder.build();
  Integer exposure2 = metadata2.getExposureMs(); // will be 80
  Double pixelSize = metadata2.getPixelSizeUm(); // will be null!
@@ -49,11 +49,10 @@ In addition to using a "raw" Builder object to construct new Metadata objects, y
 
  Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
  // Create metadata for first image.
- builder = builder.bitDepth(14).channelName("DAPI").exposureMs(100);
+ builder = builder.bitDepth(14).exposureMs(100);
  Metadata metadata1 = builder.build();
  // Create metadata for second image: only channel name and exposure time change
- Metadata metadata2 = metadata1.copy().channelName("Cy5")
-       .exposureMs(80).build();
+ Metadata metadata2 = metadata1.copy().exposureMs(80).build();
 
 This can be useful in situations where you don't have access to the original Builder.
 
@@ -67,7 +66,7 @@ Coords objects are very similar to Metadata objects. They have a set of convenie
 
 Here is an example of creating a new Coords object:
 
- Coords.CoordsBuilder builder = mm.data().createCoordsBuilder();
+ Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
  // Note that coordinates start counting from 0!
  // Thus this image will be the second channel, 5th Z slice.
  builder.channel(1).z(4);
@@ -103,7 +102,7 @@ Thus for example, if you wanted to change the location of an image prior to addi
  // Snap an image; this image will have incorrect coordinates
  Image origImage = mm.live().snap(false).get(0);
  // Fix the coordinates.
- Coords.CoordsBuilder builder = mm.data().createCoordsBuilder();
+ Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
  Coords coords = builder.channel(1).z(4).build();
  Image newImage = origImage.copyAtCoords(coords);
  store.putImage(newImage);
@@ -123,3 +122,5 @@ Imagine you have a plugin that saves images to different files depending on thei
 All this copying whenever you want to make a change seems like it would be very inefficient. Fortunately this isn't the case. When you make a "copy" of, say, an Image, all you are copying is the ''references'' to the image's data, not that data itself. For example, if the original Image and the new Image only differ in their coordinates, then they will "share" image pixel data and Metadata, and only have different Coords objects. This holds true within Metadata and SummaryMetadata as well: if you create a new Metadata by copying an existing one and changing just the channel name, then the new and old objects will share everything else.
 
 Consequently, copying an object is an extremely cheap action. The immutability guarantee actually allows us to use ''less'' memory than we would have to if objects were mutable, because it allows two objects that are very similar to share their resources.
+
+{{2.0_Sidebar}}
