@@ -19,24 +19,25 @@ The primary functions you will likely be interested in are:
 * [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/data/Datastore.html#registerForEvents(java.lang.Object) registerForEvents], which allows you to be notified whenever the data in the Datastore (i.e. the Images or SummaryMetadata) are modified. The Datastore has a [http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/eventbus/EventBus.html com.google.common.eventbus.EventBus] that signals events; appropriate methods with the [http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/eventbus/Subscribe.html com.google.common.eventbus.Subscribe] annotation will be called when the event occurs. For example:
 
 <code>
-import com.google.common.eventbus.Subscribe;
-import org.micromanager.data.Datastore;
-import org.micromanager.data.Image;
-import org.micromanager.data.NewImageEvent;
-import org.micromanager.Studio;
+ import com.google.common.eventbus.Subscribe;
+ import org.micromanager.data.Datastore;
+ import org.micromanager.data.Image;
+ import org.micromanager.data.NewImageEvent;
+ import org.micromanager.Studio;
 
-public class MyClass {
-   public MyClass(Studio studio) {
-      Datastore myDatastore = studio.data().createRAMDatastore();
-      myDatastore.registerForEvents(this);
-   }
+ public class MyClass {
+    public MyClass(Studio studio) {
+       Datastore myDatastore = studio.data().createRAMDatastore();
+       myDatastore.registerForEvents(this);
+    }
 
-   @Subscribe
-   public void onNewImage(NewImageEvent event) {
-      Image newImage = event.getImage();
-      // Examine the newly-added image...
-   }
-}</code>
+    @Subscribe
+    public void onNewImage(NewImageEvent event) {
+       Image newImage = event.getImage();
+       // Examine the newly-added image...
+    }
+ }
+</code>
 
 === The Image class ===
 
