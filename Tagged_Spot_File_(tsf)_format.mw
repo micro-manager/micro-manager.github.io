@@ -21,7 +21,7 @@ File offsets are of type signed int or signed long (to ensure compatibility with
 
 As many copies of the message “Spot” as desired, where
 
-'''varint length''' - Size of the Spot message in a Goole Protocol buffer defined varint
+'''varint length''' - Size of the Spot message in a Google Protocol buffer defined varint
 
 '''Spot message'''
 
