@@ -40,6 +40,11 @@ Please note: many PI devices use the RTS/CTS lines for hardware handshake. If us
 === Configuration ===
 First you have to add a controller device for each PI controller you want to control by micro-manager. Give it a meaningful name, since the stages need this name to call the controller. After this you add the stages you want to use in micro-manager. Note that each controller can have as many stage devices as there are physical axes connected. E.g. one C-843.41 controller with 3 motorized stages can be used as one XYStage and one ZStage inside micro-manager, or you can use a 3-axis piezo stage connected to an E-712/710 as XYStage and ZStage. You can also use two single axis controllers to control one XY stage.
 
+Communication with the devices is implemented in two different ways
+* using the built-in serial (RS-232) communication of micro-manager - no other software modules are required. This is possible for all platforms supported by micro-manager. Implemented by “PI_GCSController”
+* using PI’s modules (DLLs) - this allows connecting to RS-232 and PCI but is limited to Windows. Implemented by “PI_GCSControllerDLL”
+
+
 Here is a detailed overview over the different properties of the 4 basic devices. If you have selected one of the predefined controllers not all properties are available as they have already been pre-set.
 
 PI_GCSControllerDLL:
@@ -61,9 +66,9 @@ PIXYStage:
 * '''Axis X: Name''': Name of the axis to be used as X axis 
 * '''Axis X: Stage''': stage type for X axis (see notes below)
 * '''Axis X: Homing Mode''': which feature to use for homing the X stage. Can be one of
-** "MNL" for negative limit switch
-** "MPL" for positive limit switch
-** "REF" for reference switch.
+** "FNL" or "MNL" for negative limit switch
+** "FPL" or "MPL" for positive limit switch
+** "FRF" or "REF" for reference switch.
 ** "" for stages with absolute position sensors (most piezo stages)
 * '''Axis Y: Name''': Name of the axis to be used as Y axis 
 * '''Axis Y: Stage''': stage type for Y axis (see notes below)
@@ -71,7 +76,7 @@ PIXYStage:
 * '''Controller Name''': Name of the controller as defined in the hardware configuration wizard of micro-manager
 * '''Controller Name for Y axis''': If the Y axis is connected to a different controller you need to enter its name here. If this is empty the same controller is used for X and Y.
 
-The stage devices have a property called '''Stage'''. This is only relevant for stages connected to a PI_GCSController_DLL type controller, e.g. C-843 and E-710. If relevant, enter the name of the stage type for this property. For controllers that can store the stage parameters this property is ignored.
+The stage devices have a property called '''Stage'''. For PI_GCSController type controller this property is ignored. This is only relevant for stages connected to a PI_GCSControllerDLL controller type which cannot store the stage parameters, e.g., C-843. If relevant, enter the name of the stage type for this property. If the controller can store the stage type parameters, it’s strongly recommended to configure everything with PIMikroMove (see below) and leave this property empty.
 
 If the controller is able to store the stage parameters, use PIMikroMove to configure the parameters: When the stage configuration was sent to the controller with the "Assign Stages" dialog window, you can afterwards call "Save parameters to non-volatile memory" in the corresponding controller menu (see figure below). The password used is usually "100". Please see the user manual of the controller for details.
 [[File:PI_GCS2_PIMikroMove_Save_Params.png]]
