@@ -25,7 +25,7 @@ List of significant changes since 1.4.19 release, omitting bug fixes.  The featu
 * 20170217: can use light sheet mode on supported cameras
 * 20170112: allow remote access via Java RMI for automated microscopy
 * 20161222: plugin can deskew stage scan data
-* 20160701: oSPIM support (need to compile code with flag set)
+* 20160701: oSPIM support (need to build JAR with flag set)
 * 20151218: added API calls to control acquisition programmatically
 * 20151125: added ImageJ toolset for common image manipulation tasks
 * 20151124: ability to run test acquisition with optionally exported raw file
