@@ -77,7 +77,9 @@ The following initialization properties are required:
 
 *'''Axis Number (Y Axis):''' This refers to the controller axis number connected to your Y axis.
 
-*'''Controller Device Number:''' Use the value set in Zaber Console.
+*'''Controller Device Number:''' This is the address of the X-axis or two-axis Zaber controller device within a possible series of devices attached to the serial port. You can find or change this number in Zaber Console when configuring your hardware.
+
+*'''Controller Device Number (Y Axis):''' Leave this blank if you are moving both axes using a single two-axis Zaber controller such as the X-MCB2 or A-MCB2. If your axes are on different controllers or are devices with integrated controllers, put the device number of the Y axis controller here. In this case you should normally also set both '''Axis Number''' properties to 1.
 
 *'''Linear Motion Per Motor Rev (X Axis):''' Use the value from the stage's specifications.
 
