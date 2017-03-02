@@ -159,6 +159,7 @@ There are several ways to control the position of the stage:
 * Stage control plugin
 * Mouse moves stage (click and drag in Snap/Live Window)
 * Manual adjustment knobs on the controller
+* Scripting
 
 ===Stage Control Plugin===
 
@@ -181,13 +182,60 @@ Before using this method, the pixel size must be calibrated. To do this:
 
 Zaber devices can be controlled using their manual adjustment knobs. Pushing and holding the knob for one second switches between velocity and jog mode. Pushing the knob while the stage is moving stops the stage.
 
-=== Filter Wheel Control ===
+=== Scripting ===
+
+Micro-Manager has a build-in scripting interface accessible via the ''Tools->Script Panel...'' menu item. Here is an example script for controlling an ASR two-axis stage using a script:
+
+<pre>
+mmc.unloadAllDevices();
+
+mmc.loadDevice("port", "SerialManager", "COM1");
+mmc.setProperty("port", "BaudRate", "115200");
+
+mmc.loadDevice("asr", "Zaber", "XYStage");
+mmc.setProperty("asr", "Port", "port");
+
+// For this example we assume there is a single controller with
+// two peripheral axes connected, and we use the default settings
+// for the axis numbering. This line shows how to set the
+// address of the controller.
+mmc.setProperty("asr", "Controller Device Number", "1");
+mmc.initializeAllDevices();
+
+// Move to the home position.
+// Note this command also causes the device to find the limits of its
+// motion, so it will move over its full range. Remove any obstructions
+// from the stage's path before running this script!
+mmc.home("asr");
+
+// Draw a square. Note these calls do not block until movement completes,
+// hence the waits after each command.
+mmc.setXYPosition("asr", 0, 0);
+mmc.waitForDevice("asr");
+
+mmc.setXYPosition("asr", 0, 10000);
+mmc.waitForDevice("asr");
+
+mmc.setXYPosition("asr", 10000, 10000);
+mmc.waitForDevice("asr");
+
+mmc.setXYPosition("asr", 10000, 0);
+mmc.waitForDevice("asr");
+
+mmc.setXYPosition("asr", 0, 0);
+mmc.waitForDevice("asr");
+
+mmc.unloadAllDevices();
+</pre>
+
+
+== Filter Wheel Control ==
 
 The Filter Wheel appears as a stateful device in Micro-Manager, meaning that instead of having a position measured in physical units it has a number of states it can be in, with each state corresponding to one filter position. You can use the ''Tools > Device/Property Browser'' interface or the Group Presets area to manually enter the number of the state you want to go to, or select one of the labels that can be assigned to the states when setting up your hardware configuration.
 
 States are numbered starting from zero according to Micro-Manager convention; the home position of the filter wheel is state 0, and the highest numbered position is N-1, where N is the total number of filters the holder can accommodate.
 
-You can also control the filter wheel via Micro-Manager's scripting interface. Here is an example BSH script:
+You can also control the filter wheel via Micro-Manager's scripting interface. Here is an example script:
 
 <pre>
 mmc.unloadAllDevices();
