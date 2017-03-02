@@ -12,7 +12,7 @@ The Zaber device adapter supports single and dual-axis stages and filter wheels 
 
 == Device Setup and Configuration ==
 
-Before starting Micro-Manager, please ensure your devices are properly set up and configured. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device address and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
+Before starting Micro-Manager, please ensure your devices are properly set up and configured. Zaber provides a Windows application called Zaber Console to assist with device configuration. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device address and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
 
 === ASR Setup and Orientation ===
 
