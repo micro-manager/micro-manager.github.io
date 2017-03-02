@@ -109,6 +109,33 @@ The port properties should be set as follows:
 
 [[Image:Zaber_xystage_config.png|thumb|left|300px|Sample XYStage configuration]]<br clear="all"/>
 
+
+=== Filter Wheel Hardware Configuration ===
+
+The following initialization properties are required:
+
+*'''Controller Device Number:''' This is the address of the filter wheel device within a possible series of devices attached to the serial port. You can find or change this number in Zaber Console when configuring your hardware.
+
+*'''Port:''' Select the port the device is connected to.
+
+*'''AnswerTimeout:''' 30000.00 (The filter wheel initialization process includes detecting which filter holder is attached, which can take some seconds)
+
+*'''BaudRate:''' 115200 (unless it has been changed from default)
+
+*'''DelayBetweenCharsMs:''' 0.00
+
+*'''Parity:''' None
+
+*'''StopBits:''' 1
+
+*'''Verbose:''' 1
+
+[[Image:Zaber_fwr_config.png|thumb|left|300px|Sample Filter Wheel configuration]]<br clear="all"/>
+
+In a later step of the configuration process you will have the option to enter names for each of the filter positions. If you choose you can name the positions after the types of filters installed.
+
+[[Image:Zaber_fwr_labels.png|thumb|left|300px|Sample filter label assignment screen]]<br clear="all"/>
+
 === XYStage Calibration ===
 
 The Zaber XYStage device adapter implements an absolute coordinate system. As long as the stage has been calibrated and the limits have not been adjusted, any XY position will always correspond to the same physical location.
