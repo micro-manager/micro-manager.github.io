@@ -27,6 +27,7 @@
 
 === Linux ===
 
+* [https://aur.archlinux.org/packages/micromanager-git/ ArchLinux AUR package] and [https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=micromanager-git&id=4b0150680d48734a8b5d7fc4cacb361caf51c64c build script].
 * [[How To Build Micro Manager From Source On Ubuntu 13.10]]
 * [[Linux installation from source (Ubuntu)]]
 * [[Linux installation from source (Gentoo)]]
