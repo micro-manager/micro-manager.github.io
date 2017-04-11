@@ -32,4 +32,8 @@ Triggering can even be carried out with both Z-position and channel triggering, 
 
 {{#ev:youtubehd|O8zdsyNoOg8|500|center}}
 
+
+=== Tutorials ===
+* [https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md Step-by-step to controlling multiple light sources and a z-stage piezo for sequenceable MDA] by Guillaume Witz & Thomas Julou.
+
 {{Documentation_Sidebar}}
