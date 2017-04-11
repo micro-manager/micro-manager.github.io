@@ -2,10 +2,11 @@
 |title=Version 2.0
 |content=
 * [[Version_2.0|Overview]]
+* [[Version_2.0_Users_Guide|v2.0 Users' Guide]]
 * [[Version_2.0_API|Version 2.0 API]]
 * [[Version_2.0_API_Transition_Guide|API Transition Guide]]
 * [[Version_2.0_API_How_do_I|API, How do I?]]
-* [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ 2.0 Javadoc]
-* [[Version 2.0 API Events]]
-* [[Version 2.0 Scripts]]
+* [http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/ v2.0 Javadoc]
+* [[Version 2.0 API Events|v2.0 API Events]]
+* [[Version 2.0 Scripts|v2.0 Scripts]]
 }}
