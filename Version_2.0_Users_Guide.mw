@@ -61,7 +61,7 @@ The "Configuration file" dropdown menu allows you to select a file that tells µ
 
 The main window in µManager provides access to many important capabilities.
 
-[[File:UsersGuide_mainWindow.png|Main Window]]
+[[File:UsersGuide_mainWindow.png|600px|Main Window]]
 
 There's a lot here, so we're going to break it out into separate sections that we'll tackle one at a time.
 
@@ -201,7 +201,7 @@ The Line Profile shows you a graph of image pixel intensities along a line that 
 
 The Line Profile menu option will then show you a graph like this:
 
-[[File:UsersGuide_lineProfile.png|Line Profile Graph]]
+[[File:UsersGuide_lineProfile.png|600px|Line Profile Graph]]
 
 The profile will be automatically updated when either the image or the line is changed.
 
@@ -209,7 +209,7 @@ The profile will be automatically updated when either the image or the line is c
 
 This dialog allows you to export a series of image files that show your data as it is currently being displayed in the image window:
 
-[[File:UsersGuide_exportImages.png|Export Images Dialog]]
+[[File:UsersGuide_exportImages.png|600px|Export Images Dialog]]
 
 This can be useful for generating images or movies for use in presentations. It is not recommended that you use this dialog for preserving your raw data; instead use the "Save" button. This export system does not preserve image metadata, and because it uses your current contrast settings, will not necessarily preserve accurate image pixel intensities (it is a "lossy" storage system, not a lossless one).
 
@@ -480,7 +480,7 @@ The Stage Control virtual joystick can be reached from the [[#Tools Menu]], or b
 
 Note that the current stage position is always displayed in the main window, along the bottom:
 
-[[File:UsersGuide_mainWindowWithStagePosition.png|Main window with stage position indicated]]
+[[File:UsersGuide_mainWindowWithStagePosition.png|600px|Main window with stage position indicated]]
 
 ==Pixel Calibration==
 
@@ -566,7 +566,7 @@ The Device Property Browser is not automatically updated when device properties 
 
 ==Hardware Config Wizard==
 
-[[File:UsersGuide_hardwareConfigWizard.png|Hardware Configuration Wizard]]
+[[File:UsersGuide_hardwareConfigWizard.png|600px|Hardware Configuration Wizard]]
 
 The Hardware Configuration Wizard, reachable from the [[#Config Menu]], will walk you through configuring your hardware to work with µManager. It has its own built-in documentation, which will not be recapitulated here.
 
@@ -670,7 +670,7 @@ In some situations, merely knowing the [[#Pixel Calibration|pixel size]] is not 
 
 ===Slide Explorer===
 
-[[File:UsersGuide_slideExplorer.png|Slide Explorer]]
+[[File:UsersGuide_slideExplorer.png|600px|Slide Explorer]]
 
 Slide Explorer (reachable from the "Acquisition Tools" submenu of the Plugins menu) is useful for "mapping" out large samples that cannot fit into your camera's field of view, or for seeking out items of interest in a sparse sample. In order to use Slide Explorer, you need to have performed a [[#Pixel Calibrator|pixel calibration]].
 
@@ -684,7 +684,7 @@ Unfortunately, at this time it is not possible to save the data gathered by Slid
 
 ===HCS Site Generator===
 
-[[File:UsersGuide_hcsPlugin.png|HCS Site Generator]]
+[[File:UsersGuide_hcsPlugin.png|600px|HCS Site Generator]]
 
 This plugin (reachable from the "Acquisition Tools" submenu of the Plugins menu) simplifies the process of surveying large samples like 96-well plates. It can mark stage positions for you, which can then be visited using the [[#Multi-Dimensional Acquisition]] system.
 
@@ -740,7 +740,7 @@ Allows you to run a Beanshell script at the press of a button. See the [[#Script
 
 ==Script Panel==
 
-[[File:UsersGuide_scriptPanel.png|Script Panel]]
+[[File:UsersGuide_scriptPanel.png|600px|Script Panel]]
 
 The Script Panel (reachable from the Tools menu) allows you to write scripts that implement custom behaviors. You can use scripts to run customized acquisitions, analyze your data, set up your hardware in a specific way, and more. Scripts are written in the [http://www.beanshell.org/ Beanshell programming language], which is a simplified dialect of Java.
 
