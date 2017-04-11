@@ -795,3 +795,5 @@ Split View takes a single image from your camera and cuts it along either vertic
 ====Image Saver====
 
 Image Saver allows you to save data from any point in the pipeline. This can be helpful if you wish to preserve the raw data of your acquisition prior to performing any modifications to it.
+
+{{2.0_Sidebar}}
