@@ -196,7 +196,7 @@ Additional information is available on those websites:
 [[File:TLV5618 response.png]]
 
 == Project Tutorials ==
-* [https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md Step-by step to controlling multiple light sources with an Arduino for sequenceable MDA] by Guillaume Witz & Thomas Julou.
+* [https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md Step-by-step to controlling multiple light sources with an Arduino for sequenceable MDA] by Guillaume Witz & Thomas Julou.
 
 * [http://homepages.uconn.edu/~mb2225vc/MCB_2225/LED_Construction.html TTL control of multiple LEDs] by David Knecht.
 
