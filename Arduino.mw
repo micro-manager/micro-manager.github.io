@@ -119,13 +119,16 @@ To choose the set of pins to be on for your <code>Arduino-Switch-State</code> pa
 
 The reason one has to do this is MM encodes the pins as bits in binary.  Pin 13 corresponds to the most significant bit 5, whose decimal value is 2^5 = 32.  Similarly pin 10 will be bit 2 which has a decimal value of 2^2 = 4.
 
+=== Blanking ===
+The "blanking" feature of the device adapter allows to ensure that the sample is illuminated only when the camera is exposing. By connecting a TTL output of the camera (active when the camera is exposing) to the arduino input and enabling blanking, the digital output of the arduino will be kept at zero as long as the TTL is inactive.
+
 === Device Properties ===
 {| class="wikitable"
 !style="width: 20%;"| Properties || Description
 |- valign="top"
-| Switch-Blank On || Allows '''Low''' or '''High'''.
+| Switch-Blanking Mode || Allows '''On''' or '''Off''': enables "blanking" when the TTL input is inactive.
 |- valign="top"
-| Switch-Blanking Mode || Allows '''On''' or '''Off'''.
+| Switch-Blank On || Allows '''Low''' or '''High''': defines the active state of the TTL input.
 |- valign="top"
 | Switch-HubID || 
 |- valign="top"
