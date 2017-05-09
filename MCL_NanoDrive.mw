@@ -26,7 +26,7 @@ Controls the XY(Z) and Z stages of Mad City Lab's [http://www.madcitylabs.com/na
 
 The Nano-Drive&reg; series of controllers are a complete electronic solution for precision positioning using Mad City Labs nanopositioners.  All controllers are closed-loop feedback enabled, which is essential for high-repeatability and sub-nanometer resolution for a nanopositioner. 
 
-For fast acquisition using [[Hardware-based_synchronization]], custom versions of MCL's controllers are available (NanoDrive-x or NanoDrive85-x equipped with a USB board '''and''' the OP-ISS programmable port); they feature a sequence buffer with 1000 positions.
+For fast acquisition using [[Hardware-based_synchronization]], custom versions of MCL's controllers are available (NanoDrive-x or NanoDrive85-x equipped with a USB board '''and''' the OP-ISS programmable port); they feature a sequence buffer with 1000 positions. Read more on fast multi-channel stack acquisition using hardware triggering in [https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md this step-by-step tutorial] (by Guillaume Witz & Thomas Julou).
 
 The following properties are currently implemented in the Micro-Manager MCL Nano-Drive&reg; adapter:
 {| class="wikitable"
