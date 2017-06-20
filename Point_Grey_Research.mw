@@ -37,6 +37,7 @@ Even though some Point Grey cameras support binning, there is no generalized int
 == Tested with ==
  Chameleon3 CM3-U3-31S4M
  Flea3 FL3-U3-13S2M-CS
+ Scorpion CCD SCOR-14SO
 
 == Various ==
 * If you do not find the Point Grey adapter in the list in the Hardware Configuration Wizard, please download and install the latest nightly build of Micro-Manager.
