@@ -8,6 +8,6 @@
 <tr><td>'''Available since version:'''</td><td>1.4.17</td></tr>
 </table>
 
-Requires 32-bit Micro-Manager and the Trinamic TMCLWrapperRS232 module (available for download from [http://www.trinamic.com/products/modules/controller-driver-stepper/tmcm-610sg this page]). Place the '''<code>TMCLWrapperRS232.dll</code>''' file in the Micro-Manager folder.
+Requires 32-bit Micro-Manager and the Trinamic TMCLWrapperRS232 module (available for download from [https://www.trinamic.com/support/help-center/discontinued-products/discontinued-details/tmcm-610/ this page]). Place the '''<code>TMCLWrapperRS232.dll</code>''' file in the Micro-Manager folder.
 
 {{Devices_Sidebar}}
