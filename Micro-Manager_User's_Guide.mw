@@ -93,7 +93,7 @@ The Micro-Manager main panel will not necessarily be updated when a setting in y
 
 == Region of Interest (ROI) ==
 
-Most of the cameras used for microscopy can be configured to image only a Region of Interest (ROI) instead of the full frame. To select an ROI use the rectangle tool (from the ImageJ window) on the image window. By pressing the "ROI" button while the selection is active, you will apply the current rectangle to the camera. Some cameras will internally adjust the rectangle dimensions slightly to fit within specific hardware constraints. To return to the full frame imaging, press the "Full" button (right next to the ROI button).
+Most of the cameras used for microscopy can be configured to image only a Region of Interest (ROI) instead of the full frame. To select an ROI use the rectangle tool (from the ImageJ window) on the image window. By pressing the "ROI" button while the selection is active, you will apply the current rectangle to the camera. If there is no rectangle placed, then pressing the "ROI" button will halve both X and Y dimensions while keeping the same center. Some cameras will internally adjust the rectangle dimensions slightly to fit within specific hardware constraints. To return to the full frame imaging, press the "Full" button (right next to the ROI button).
 
 == Zoom ==
 
