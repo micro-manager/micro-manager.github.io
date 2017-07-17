@@ -1,12 +1,14 @@
 == PCO generic camera interface ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO/Cooke Cameras]</td></tr>
-<tr><td>'''Author:'''</td><td>Franz Reitner PCO AG (adapter), Thomas Bauersachs PCO AG (comments)</td></tr>
+'''Summary:'''</td><td>Controls [http://www.pco.de/ PCO Cameras]</td></tr>
+<tr><td>'''Author:'''</td><td>Franz Reitner PCO AG (adapter), Thomas Bauersachs PCO AG (comments), Thomas Hartmann (comments)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>Sensicam, Pixelfly,
-           pco.camera Series (1200, 1300, 1400, 1600, 2000, 4000, pixelfly usb, dimax, edge sCMOS)</td></tr>
+<tr><td>'''Devices:'''</td><td>
+           pco.edge, pco.dimax S/HS/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000, Sensicam, Pixelfly,</td></tr>
+<tr><td>'''New:'''</td><td>Camera Link HS interface, Lightsheet mode</td></tr>
+
 <tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
 
 
@@ -20,8 +22,6 @@ _______________________________________________________________
 Files needed for all PCO cameras:
   pco_conv.dll
   pco_cdlg.dll
-
-Additional file for pco.camera series:
   sc2_cam.dll
 
 In case of Camera Link (CL) interface you also need:
@@ -36,7 +36,7 @@ _______________________________________________________________
 Please refer to the following Installation Guide for further help:
 [[File:MA_MICROMANAGERWINE_120.pdf|200px|thumb|left|Installation Guide]]
 
-
+--Thomas H 17 July 2017 (EDT)
 --Thomas 10:50pm, 27 April 2012 (EDT)
 
 {{Listserv_Search|PCO}}
