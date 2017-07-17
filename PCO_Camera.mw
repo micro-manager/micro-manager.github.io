@@ -24,6 +24,9 @@ Files needed for all PCO cameras:
   pco_cdlg.dll
   sc2_cam.dll
 
+In case of Camera Link HS (CLHS) interface you also need:
+  sc2_clhs.dll
+
 In case of Camera Link (CL) interface you also need:
   Silicon Software ME3: sc2_cl_me3.dll
   Silicon Software ME4: sc2_cl_me4.dll
