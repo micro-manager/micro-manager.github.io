@@ -17,7 +17,7 @@ A much broader overview and further information is available on the diSPIM websi
 
 == Plugin Documentation ==
 
-The plugin documentation is now is on the diSPIM wiki at [http://dispim.org dispim.org].  An older version (no longer updated) is in the the [http://www.asiimaging.com/downloads/manuals/diSPIM_Manual.pdf diSPIM manual] on ASI's website.
+The plugin documentation is now is on the diSPIM wiki at [http://dispim.org dispim.org], specifically in the manual under [http://dispim.org/docs/manual#micro-manager_dispim_plugin "Micro-manager diSPIM Plugin"].  An older version (no longer updated) is in the the [http://www.asiimaging.com/downloads/manuals/diSPIM_Manual.pdf diSPIM manual] on ASI's website.
 
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
