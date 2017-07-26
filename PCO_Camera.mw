@@ -12,10 +12,10 @@
 <tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
 
 
-This adapter has been developed for all PCO camera systems.
+This adapter has been developed for all PCO camera systems (B/W and color versions).
 
 Installation:<BR>
-a) download and install latest Micro-Manager version<BR>
+a) download and install latest Micro-Manager Nightly build version<BR>
 b) add PCO camera specific dll files to your Micro-Manager directory<BR> 
 _______________________________________________________________
 
@@ -39,7 +39,7 @@ _______________________________________________________________
 Please refer to the following Installation Guide for further help:
 [[File:MA_MICROMANAGERWINE_120.pdf|200px|thumb|left|Installation Guide]]
 
---Thomas H 17 July 2017 (EDT)
+--Thomas H 26 July 2017 (EDT)
 --Thomas 10:50pm, 27 April 2012 (EDT)
 
 {{Listserv_Search|PCO}}
