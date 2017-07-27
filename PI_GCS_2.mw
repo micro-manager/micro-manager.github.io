@@ -76,7 +76,7 @@ PIXYStage:
 * '''Controller Name''': Name of the controller as defined in the hardware configuration wizard of micro-manager
 * '''Controller Name for Y axis''': If the Y axis is connected to a different controller you need to enter its name here. If this is empty the same controller is used for X and Y.
 
-The stage devices have a property called '''Stage'''. For PI_GCSController type controller this property is ignored. This is only relevant for stages connected to a PI_GCSControllerDLL controller type which cannot store the stage parameters, e.g., C-843. If relevant, enter the name of the stage type for this property. If the controller can store the stage type parameters, it’s strongly recommended to configure everything with PIMikroMove (see below) and leave this property empty.
+The stage devices have a property called '''Stage'''. For PI_GCSController type controller this property is ignored. This is only relevant for stages connected to a PI_GCSControllerDLL controller type which cannot store the stage parameters, e.g., C-843. If relevant, enter the name of the stage type for this property. If the controller can store the stage type parameters, '''it’s strongly recommended to configure everything with PIMikroMove (see below) and leave this property empty'''.
 
 If the controller is able to store the stage parameters, use PIMikroMove to configure the parameters: When the stage configuration was sent to the controller with the "Assign Stages" dialog window, you can afterwards call "Save parameters to non-volatile memory" in the corresponding controller menu (see figure below). The password used is usually "100". Please see the user manual of the controller for details.
 [[File:PI_GCS2_PIMikroMove_Save_Params.png]]
