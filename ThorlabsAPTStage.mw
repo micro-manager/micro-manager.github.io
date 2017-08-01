@@ -141,3 +141,9 @@ Then when you want one of the stages initialised, simply set the group value to 
 [[File:mm_aptstages.png||thumb|center|upright=2.5|alt=Micromanager APT initialisation groups.|Set the Preset value to 1 to initialise the stages individually.]]
 
 {{Devices_Sidebar}}
+
+== Compilation notes, 64-bit device adaptor ==
+
+Drop the content of File:APT x64.zip into the device adapter micromanager-upstream\DeviceAdapters\ThorlabsAPTStage folder then compile the adapter as a x64 / release dll.
+
+Once compiled, copy micromanager-upstream\DeviceAdapters\ThorlabsAPTStage\build\Release\x64\mmgr_dal_ThorlabsAPTStage.dll to your micromanager folder, as well as the 64 bit APT.dll file in the zip archive above.
