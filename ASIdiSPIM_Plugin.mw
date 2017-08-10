@@ -58,9 +58,9 @@ You can view all changes to the diSPIM plugin code by [https://valelab.ucsf.edu/
 
 == Please contact us! ==
 
-The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  You can contact us directly or else by submitting a bug report via Micro-manager.
+The plugin is quite usable in its current state but we welcome ideas for future improvements as well as bug reports.  Contact information is above.
 
-Before submitting bug reports, please check a recent nightly build of Micro-Manager to make sure the bug hasn't been already fixed. Also, sometimes fixes are made to firmware, so you can update that if needed.
+For instructions on submitting bug reports see http://dispim.org/software/micro-manager#bug_reports.
 
 For instructions on updating the controller firmware see http://dispim.org/hardware/controller.
 
