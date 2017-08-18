@@ -7,7 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td>>=1.4.22</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>>=1.4.17</td></tr>
 </table>
 
 {{Note|In order to enable RS232 communication with the controller, the user must request from SmarAct a new firmware for the corresponding controller (*Ua.fmw) and upload it using the manufacturer's tool. }}
@@ -16,7 +16,7 @@ This adapter has been written to communicate with a HCU-3D controller from SmarA
 
 To each sensor corresponds a channel (0, 1 or 2) from the HCU-3D controller. The possibility to set the direction (+ or -) is given in the hardware configuration wizard. In the property browser, the frequency (speed), holdtime and position can be set via properties.
 
-This device adapter has been tested with Micro-manager 1.4.22 in Windows 7, with HCU-3D and CU-3D controllers produced before 2015 (compatibles with M sensors).
+This device adapter has been tested with Micro-manager 1.4.17 to 1.4.22 in Windows 7, with HCU-3D and CU-3D controllers produced before 2015 (compatibles with M sensors).
 
 
 
