@@ -112,6 +112,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Scientifica]] - Scientifica stages
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
 * [[SigmaKoki]] - Sigma Koki stages and shutters
+* [[SmarActHCU-3D]] - HCU and CU SmarAct controllers adapter (XY and Z)
 * [[Standa]] - Standa Microstep Driver
 * [[StandaStage]] - Standa Microstep Driver
 * [[Standa8SMC4]] - Standa Microstep Driver (using XIMC interface)
