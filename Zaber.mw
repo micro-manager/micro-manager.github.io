@@ -2,7 +2,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Device adapters for Zaber Technologies linear stages, and XY stages and filter wheels</td></tr>
-<tr><td>'''Author:'''</td><td>Athabasca Witschi and Soleil Lapierre, Zaber Technologies (contact@zaber.com)</td></tr>
+<tr><td>'''Author:'''</td><td>Albert David and Soleil Lapierre, Zaber Technologies (contact@zaber.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>Stage, XYStage, FilterWheel</td></tr>
@@ -10,9 +10,23 @@
 
 The Zaber device adapter supports single and dual-axis stages and filter wheels using the Zaber ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
 
-== Device Setup and Configuration ==
+== Compatibility ==
 
-Before starting Micro-Manager, please ensure your devices are properly set up and configured. Zaber provides a Windows application called Zaber Console to assist with device configuration. Please refer to the [http://zaber.com/support/ device manual] for instructions. Take note of the device address and axis number for each device or peripheral, as they are needed to configure Micro-Manager.
+Currently Micro-Manager has three kinds of drivers for controlling Zaber devices: Stage, XYStage, and Filter Wheel. These drivers require Zaber devices to have FW6.06+ and be set to use the Zaber ASCII protocol. Additionally, the XYStage driver requires that at least two devices are connected to a port, and the Filter Wheel driver requires that an [http://www.zaber.com/products/product_group.php?group=X-FWRX-FWR filter wheel] is connected.
+
+==Set Up==
+
+===Zaber Device===
+If you're using Zaber stand-alone controllers, first ensure that they are configured by following the easy set-up page here: [http://www.zaber.com/products/product_group.php?group=X-MCB2&tab=Easy%20Set-up X-MCB2 Easy Set-Up]. In particular, ensure the controller has optimized settings by setting the correct ''peripheralid'' setting. You can find more information on how to set the peripheral ID in Zaber’s Protocol Manuals ([https://www.zaber.com/wiki/Manuals/ASCII_Protocol_Manual#peripheralid ASCII]).
+ 
+If you're using Zaber devices with built-in controllers, follow the easy set-up page here: [http://www.zaber.com/products/product_group.php?group=X-FWR-E&tab=Easy%20Set-up Built-In Controller Easy Set-Up].
+
+===Micro-Manager Set Up===
+
+[https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Two-Axis_System Setting Up A Two-Axis System]
+[https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Single-Axis_System Setting Up A Single-Axis System]
+[https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Wheel Setting Up A Filter Wheel]
+
 
 === ASR Setup and Orientation ===
 
