@@ -39,4 +39,4 @@ There are several ways to control the position of the stage:
 
 Adjust the speed and acceleration of each device through the ''Tools > Device/Property Browser'' dialogue box.
 
-For more information on how to controls, scripting and setup through Micro-Manager, you can go here: [https://www.zaber.com/wiki/Software/MicroManager Zaber Technologies Setup Instructions]
+For more information on controls, scripting and setup through Micro-Manager, you can go here: [https://www.zaber.com/wiki/Software/MicroManager Zaber Technologies Setup Instructions]
