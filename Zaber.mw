@@ -1,7 +1,7 @@
 == Summary ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Device adapters for Zaber Technologies linear stages, and XY stages and filter wheels</td></tr>
+'''Summary:'''</td><td>Device adapters for Zaber Technologies linear stages, XY stages and filter wheels</td></tr>
 <tr><td>'''Author:'''</td><td>Albert David and Soleil Lapierre, Zaber Technologies (contact@zaber.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
