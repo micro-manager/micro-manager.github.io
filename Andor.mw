@@ -6,7 +6,7 @@
 | Nenad Amodaj (Windows)<br>Karl Bellv&eacute; (Linux port)<br>Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
 |- valign="top"
 !Maintainers:
-|Matt Milford (Andor)<br>David Gault (Andor - retired)<br>Arthur Edelstein<br>Karl Bellv&eacute; (Linux port)<br>Pariksheet Nanda (Andor) this document
+|Matt Milford (Andor)<br>David Gault (Andor - retired)<br>Norman Glasgow (Andor)<br>Arthur Edelstein<br>Karl Bellv&eacute; (Linux port)<br>Pariksheet Nanda (Andor) this document
 |-
 !License:
 |BSD
@@ -28,6 +28,9 @@ Disable power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows V
 
 === (USB only) Finding a dedicated USB 2.0 bus ===
 High-bandwidth USB cameras like the Clara and iXon may lose communication during imaging if they share a USB bus with another high bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).  Plug the camera into it's own [[#Windows USB Bus|USB bus]] on the computer.
+
+== Andor SRRF-Stream ==
+<font style="color: blue; background: yellow"> '''''New''''' </font> [[Andor SRRF-Stream]]
 
 == Device Configuration ==
 # Open Micromanager.
