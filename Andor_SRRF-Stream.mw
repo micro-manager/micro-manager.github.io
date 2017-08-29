@@ -1,6 +1,7 @@
 == Introduction ==
 
-Andor ‘SRRF-Stream’ is a Real-Time Super-Resolution Microscopy module that is offered as an extension of iXon Life, iXon Ultra EMCCD camera and Sona functionality. Super-resolution radial fluctuations (SRRF – pronounced ‘Surf’) is a synthesis 
+Andor ‘SRRF-Stream’ is a Real-Time Super-Resolution Microscopy module that is offered as an extension of iXon Life
+and iXon Ultra EMCCD camera functionality. Super-resolution radial fluctuations (SRRF – pronounced ‘Surf’) is a synthesis 
 of temporal fluctuation analysis and localisation microscopy.
 SRRF takes a frame-burst (e.g. a short rapid burst of 50 frames or greater) at a given focal plane and wavelength, 
 as input to create a single super-resolution image.
@@ -11,27 +12,20 @@ A short talk describing the algorithm can also be found [https://www.youtube.com
 
 == Minimum Requirements ==
 
-* x64 [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ Nightly Build] MMSetup_64bit_1.4.23_20170825.exe or later
-* A NEW iXon Life, iXon Ultra EMCCD or Sona camera
-* Andor Driver Pack (public download available [http://www.andor.com/downloads?src=micro here])
-** version 2.102.30024.0 or later for owners of an iXon Life and iXon Ultra EMCCD camera
-** version 3.14.30005.0 or later for owners of a Sona camera
+* x64 Nightly Build MMSetup_64bit_1.4.23_20170825.exe or later
+* Andor Driver Pack 2.102.30024.0 or later (public download available [http://www.andor.com/downloads?src=micro here])
+* A NEW iXon Life or iXon Ultra EMCCD camera
 * SRRF-Stream license (unlocks SRRF-Stream in camera)
-* A CUDA-compatible Nvidia GPU card with Compute Capability 3.0 or above:
-** At least 4GB of on-board GPU RAM is required
-** (Note: At least 8GB is recommended for best performance, and is required for dual camera SRRF on Sona with largest recommended magnification of 6)
-* Latest Nvidia Drivers for all installed Nvidia CUDA capable GPU cards
-* Windows 7, 8 or 10: 32-bit or 64-bit Operating System. ''Note SRRF-Stream is not currently compatible with Linux or mac OS.''
-* 3.0GHz single core or 2.6GHz multi-core processor
-* At least 4GB CPU RAM
-* 200MB free disc space to install SDK and SRRF-Stream software (at least 1GB recommended for data spooling)
-* Solid-state drive (SSD) capable of a minimum sustained write speed of 100MBs for spooling data
+* A CUDA-compatible NVidia GPU card*
+<nowiki>
+* The Nvidia GPU card should have Compute Capability v3.0 or above and 4GB or greater onboard GPU RAM. Note that Andor have done a lot of testing using the ‘mid-range’ GTX 1070 and found that, with SRRF-Stream, it is more than adequate to process data much faster than the rate of iXon data acquisition.
+</nowiki>
 
 == Installation ==
 
 === Prerequisites ===
 # Install the latest nightly build of Micro-Manager
-# Install the Andor Driver Pack 2 for Ultra USB or the Andor Driver Pack 3.
+# Install the Andor Driver Pack for Ultra USB.
 #* On the Select Destination Location dialog, click browse and choose the current Micro-Manager installation directory. Then click Yes to confirm that you do want to install to that folder.
 # Install the latest NVidia drivers from http://www.nvidia.co.uk/Download/index.aspx.
 # Install SRRF-Stream for Micro-Manager
@@ -39,13 +33,12 @@ A short talk describing the algorithm can also be found [https://www.youtube.com
 
 == Configuration ==
 
-If using a previous configuration, you may need to remove and re-add the Andor camera device in order to pick up your new iXon/Sona camera.
+If using a previous configuration, you may need to remove and re-add the Andor camera device in order to pick up your new iXon camera.
 Alternatively, create a new configuration using the Tools - Hardware Configuration Wizard...
 
 You will see the SRRF properties in the device property browser as shown below
-<br/>
-[[File:AndorSRRFPropertiesSona.jpeg|frameless|600px]]
-<br/>
+<br />
+<pic>
 
 If there are no SRRF properties in the device property browser, please check you have installed the SRRF-Stream to the
 correct location, and you are running that version of Micro-Manager. Ensure this is 64-bit.
@@ -75,7 +68,7 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ;'''Radiality Magnification'''
 : The radiality magnification setting determines how many pixels each original image pixel is split into. For example, a radiality magnification of 2 will split each image pixel into 2x2 pixels. Each resultant SRRF Image will therefore be proportionally larger e.g. camera ROI = 128x128, radiality = 8, SRRF image = 1024x1024 pixels.
-: The default is 4, the range being 1 - 10 inclusive. (as of SRRF version 1.14.0.0 the range is 1 - 6)
+: The default is 4, the range being 1 - 10 inclusive.
 
 ;'''Radiality Temporal Analysis'''
 : This determines the way in which the final super-resolution image is created from the output of each radiality transform calculation.
@@ -91,11 +84,11 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ;'''Ring Radius'''
 : The ring radius will set the radius in pixels (before radiality magnification) in order to calculate the intensity gradients surrounding each co-ordinate.
-: The default for this parameter is 0.5. Valid decimal values range between 0.1 and 3.0 inclusive. (as of SRRF version 1.14.0.0 the default is 2.0 and values range between 1.0 and 3.0)
+: The default for this parameter is 0.5. Valid decimal values range between 0.1 and 3.0 inclusive.
 
 ;'''Save Original Data - Option'''
 : This option allows the user to save the original data from the camera directly to disk. The default is None.
-: These images cannot be displayed during acquisition, however, ImageJ will easily read this file format back in again. See [[#Opening .raw Data files|Opening .raw data files]] section.
+: These images cannot be displayed during acquisition, however, ImageJ will easily read this file format back in again. See [[#Opening .raw data files|Opening .raw data files]] section.
 : The images are placed in a Date and Time stamped folder to prevent overwriting <br />''e.g. 2017-Jul-17_14.25.25.557025''<br />at the location specified by the Save Original Data - Path property.
 
 :*None - No data from the camera is saved. Only the SRRF images will be displayed and available to save or process etc.
@@ -108,11 +101,10 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ::This image will be the same size as each frame coming from camera e.g. 512x512 pixels, and is named ''"Image_AvgOriginalData_512x512x1.raw".''
 <br/>
-
 == Other SRRF property defaults ==
 
 All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
-*Axes in Ring: 6 (as of SRRF version 1.14.0.0 this is 24)
+*Axes in Ring: 6
 *No Drift Correction
 *No Cropping of data
 *All Advanced Radiality settings set to disabled (Remove Positivity Constraint / Renormalize, Gradient Smoothing)
@@ -121,7 +113,6 @@ All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
 *Minimize SRRF patterning disabled 
 *Fast linearise SRRF disabled
 <br />
-
 == Opening .raw Data files ==
 
 The original data from the camera is written to disk as raw data, with the file extenstion .raw appended to the filename.
@@ -156,12 +147,7 @@ gui.attachRunnable(0, 0, 0, 0, runnable);</pre>
 
 
 * Live has a timeout of 10s - no workaround is available.
-* Snap has a timeout property value implemented, but this is per image, and will not affect SRRF datasets.
-* When running a sequence acquisition with a Sona camera in Full frame and a high radiality magnification the resulting image can require too much memory to be handled by Micro-Manager using default settings. It is therefore required to update the size of the Sequence Buffer. This is found under Tools/Options. We recommend using a size of 512MB instead of the default 250MB.
-* If you encounter errors related to the system being out of memory when acquiring large data samples especially with a Sona camera, you can increase ImageJ's Maximum Memory from 2000MB to 4000MB. The option is found in the ImageJ window under Edit/Options/Memory & Threads. (you can find more information on this parameter and its limitations [[Micro-Manager_Configuration_Guide#Memory_Settings|here]])
-* SRRF computation time increases with frame size therefore the larger the camera frame and the higher the radiality magnification are, the more time will be required for the computer to process the SRRF frame. As a result, when using a Sona camera, using Internal Trigger (the default trigger mode) or External Trigger with low exposure times and/or low trigger delays can result in the camera acquiring frames faster than the computer can handle. Eventually this situation may lead to a camera buffer overflow error indicating that the buffer on the camera head is full and can’t store any more frames forcing the camera to stop the acquisition.  This can be solved by changing acquisition settings:
-** The easiest solution when using Internal Trigger is to switch to Software Trigger which will ensure that the camera acquires frames at a rate sustainable by the computer. This solution however incurs a small overhead and will therefore not provide the best frame rate.
-** A more advanced solution is to increase the delay between triggers of the triggering device (when using External Trigger) or to decrease the camera frame rate (when using Internal Trigger). This solution has the advantage of being able to provide the best possible frame rate but requires a significant amount of work and may lead to occasional camera buffer overflows if the timings are not properly set.
+* Snap has a timeout property value implemented, but this is per image, and will not affect SRRF datasets. 
 
 <br/>
 For more information, see http://www.andor.com/srrf-stream
