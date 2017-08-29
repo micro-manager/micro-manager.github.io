@@ -1,0 +1,153 @@
+== Introduction ==
+
+Andor ‘SRRF-Stream’ is a Real-Time Super-Resolution Microscopy module that is offered as an extension of iXon Life
+and iXon Ultra EMCCD camera functionality. Super-resolution radial fluctuations (SRRF – pronounced ‘Surf’) is a synthesis 
+of temporal fluctuation analysis and localisation microscopy.
+SRRF takes a frame-burst (e.g. a short rapid burst of 50 frames or greater) at a given focal plane and wavelength, 
+as input to create a single super-resolution image.
+As they are acquired the images are streamed to the GPU for processing. 
+Once all frames are acquired and processed the result is then delivered to the imaging pipeline.
+Further information on the algorithm can be found in the [https://www.nature.com/articles/ncomms12471 SRRF paper] published in Nature Communications. 
+A short talk describing the algorithm can also be found [https://www.youtube.com/watch?v=HjrcM8NfWJE here].
+
+== Minimum Requirements ==
+
+* x64 Nightly Build MMSetup_64bit_1.4.23_20170825.exe or later
+* Andor Driver Pack 2.102.30024.0 or later (public download available [http://www.andor.com/downloads?src=micro here])
+* A NEW iXon Life or iXon Ultra EMCCD camera
+* SRRF-Stream license (unlocks SRRF-Stream in camera)
+* A CUDA-compatible NVidia GPU card*
+<nowiki>
+* The Nvidia GPU card should have Compute Capability v3.0 or above and 4GB or greater onboard GPU RAM. Note that Andor have done a lot of testing using the ‘mid-range’ GTX 1070 and found that, with SRRF-Stream, it is more than adequate to process data much faster than the rate of iXon data acquisition.
+</nowiki>
+
+== Installation ==
+
+=== Prerequisites ===
+# Install the latest nightly build of Micro-Manager
+# Install the Andor Driver Pack for Ultra USB.
+#* On the Select Destination Location dialog, click browse and choose the current Micro-Manager installation directory. Then click Yes to confirm that you do want to install to that folder.
+# Install the latest NVidia drivers from http://www.nvidia.co.uk/Download/index.aspx.
+# Install SRRF-Stream for Micro-Manager
+#* On the Select Destination Location dialog, click browse and choose the current Micro-Manager installation directory. Then click Yes to confirm that you do want to install to that folder.
+
+== Configuration ==
+
+If using a previous configuration, you may need to remove and re-add the Andor camera device in order to pick up your new iXon camera.
+Alternatively, create a new configuration using the Tools - Hardware Configuration Wizard...
+
+You will see the SRRF properties in the device property browser as shown below
+<br />
+<pic>
+
+If there are no SRRF properties in the device property browser, please check you have installed the SRRF-Stream to the
+correct location, and you are running that version of Micro-Manager. Ensure this is 64-bit.
+<br />
+If there is but one read-only property (SRRF Status), a description of the error will be displayed for that property value.
+Please check you have met the minimum requirements and completed the prerequisites.
+If a further attempt does not reveal all the SRRF properties, please attach the relevant CoreLog txt file (present in the Micro-Manager installation directory / CoreLogs folder) and send to 3rdpartysupport@andor.com
+
+== Properties ==
+
+Parameters for the SRRF algorithm can be set via the device property browser. Sensible default values are used for each parameter if the values are not explicitly set by the user.
+<br />
+;'''Enable'''
+: SRRF is disabled by default. Enable this to acquire SRRF Images.
+
+;'''Interpolation Type'''
+: This type determines the method by which sub-pixel values are calculated from the gradient fields that are calculated for each frame.
+:The default value for this parameter is Catmull-Rom.
+
+:*Catmull-Rom - This method typically provides the sharpest result possible when re-sizing an image.
+
+:*Fast B-spline - This method may produce results that are slightly blurred when compared to the Catmull-Rom filter. However, it is much faster than the Catmull-Rom, and can provide speed-up of close to 50%.
+
+;'''Number of Frames per Time point'''
+: This is the number of frames input per time point, i.e. the number of frames within each SRRF frame-burst. The larger this value, the greater the achievable resolution enhancement, but the longer the processing takes.
+: The default is 100.
+
+;'''Radiality Magnification'''
+: The radiality magnification setting determines how many pixels each original image pixel is split into. For example, a radiality magnification of 2 will split each image pixel into 2x2 pixels. Each resultant SRRF Image will therefore be proportionally larger e.g. camera ROI = 128x128, radiality = 8, SRRF image = 1024x1024 pixels.
+: The default is 4, the range being 1 - 10 inclusive.
+
+;'''Radiality Temporal Analysis'''
+: This determines the way in which the final super-resolution image is created from the output of each radiality transform calculation.
+: The default value is Mean.
+
+:*Mean - This method calculates the final image as an average intensity calculation of the radiality transforms of each acquired frame in the frame burst.
+:: This is often a good starting point for analysis, especially for blinking data sets where fluorophores overlap, or data sets where fluorophores display limited intensity fluctuations such as in conventional TIRF or widefield microscopy.
+:: ‘Mean’ is ‘Temporal Radiality Average’ in NanoJ.
+
+:*MIP - This method calculates the final image as a maximum intensity projection of the radiality transforms of acquired frame in the frame-burst.
+:: MIP works most successfully for sparse data sets i.e. classical PALM/STORM experiments.
+:: ‘MIP’ is ‘Temporal Radiality Maximum’ in NanoJ
+
+;'''Ring Radius'''
+: The ring radius will set the radius in pixels (before radiality magnification) in order to calculate the intensity gradients surrounding each co-ordinate.
+: The default for this parameter is 0.5. Valid decimal values range between 0.1 and 3.0 inclusive.
+
+;'''Save Original Data - Option'''
+: This option allows the user to save the original data from the camera directly to disk. The default is None.
+: These images cannot be displayed during acquisition, however, ImageJ will easily read this file format back in again. See [[#Opening .raw data files|Opening .raw data files]] section.
+: The images are placed in a Date and Time stamped folder to prevent overwriting <br />''e.g. 2017-Jul-17_14.25.25.557025''<br />at the location specified by the Save Original Data - Path property.
+
+:*None - No data from the camera is saved. Only the SRRF images will be displayed and available to save or process etc.
+
+:*All - An image stack consisting of all the frame-burst images from the camera is saved to disk, for each SRRF image generated.
+
+::An image generated from a 256x256 ROI with 100 frames per burst is named ''"Image_AllOriginalData_256x256x100.raw".''
+
+:*Averaged - A single average image of the frame burst images from the camera is saved to disk.
+
+::This image will be the same size as each frame coming from camera e.g. 512x512 pixels, and is named ''"Image_AvgOriginalData_512x512x1.raw".''
+<br/>
+== Other SRRF property defaults ==
+
+All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
+*Axes in Ring: 6
+*No Drift Correction
+*No Cropping of data
+*All Advanced Radiality settings set to disabled (Remove Positivity Constraint / Renormalize, Gradient Smoothing)
+*Intensity Gradient Weighting enabled
+*Gradient Weighting disabled
+*Minimize SRRF patterning disabled 
+*Fast linearise SRRF disabled
+<br />
+== Opening .raw Data files ==
+
+The original data from the camera is written to disk as raw data, with the file extenstion .raw appended to the filename.
+The file dimensions are also included in the filename, as ImageJ can interpret these and pre-set the width, height and number of images contained within the data file.<br />This .raw file can be dragged into the ImageJ status bar and will open the Import > Raw dialog with the correct dimensions pre-set.<br />Alternatively, navigate to File > Import > Raw... from ImageJ and select the desired image data file.
+The only other 2 pieces of information ImageJ needs to know is the Image type which should be set to '''''16-bit Unsigned''''' and that '''''Little-endian''''' byte order is set/checked.
+Click OK, and the original data will open in a new display window.
+
+<br />
+== Known issues / Troubleshooting ==
+
+
+* Multi-Dimensional Acquisition has a 20s timeout - if a large burst, from for example a full frame iXon Ultra 888 (1024x1024), is acquired then the timeout may occur before the first SRRF image is displayed.
+::''Workaround:''
+:: The device adapter cannot access that setting directly, but if it exposes a (read-only) property indicating how long the timeout should be (based on the input settings) then a simple script function can read that property and configure the acquisition engine timeout accordingly. This is attached as a runnable, and executed as specified when Acquire is clicked.
+:: An example script is shown below:
+
+<pre style="margin-left: 3em; background: #d3d3d3">
+acq.clearRunnables();
+
+runnable = new Runnable() {
+
+  public void run() {
+    settings = gui.getAcquisitionSettings();
+    value = mmc.getProperty("Andor", "TimeOut");
+    settings.cameraTimeout = Integer.parseInt(value);
+    gui.setAcquisitionSettings(settings);
+  }
+
+};
+
+gui.attachRunnable(0, 0, 0, 0, runnable);</pre>
+
+
+* Live has a timeout of 10s - no workaround is available.
+* Snap has a timeout property value implemented, but this is per image, and will not affect SRRF datasets. 
+
+<br/>
+For more information, see http://www.andor.com/srrf-stream
