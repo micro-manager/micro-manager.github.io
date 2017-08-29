@@ -12,7 +12,7 @@ A short talk describing the algorithm can also be found [https://www.youtube.com
 
 == Minimum Requirements ==
 
-* x64 Nightly Build MMSetup_64bit_1.4.23_20170825.exe or later
+* x64 [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ Nightly Build] MMSetup_64bit_1.4.23_20170825.exe or later
 * Andor Driver Pack 2.102.30024.0 or later (public download available [http://www.andor.com/downloads?src=micro here])
 * A NEW iXon Life or iXon Ultra EMCCD camera
 * SRRF-Stream license (unlocks SRRF-Stream in camera)
