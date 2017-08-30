@@ -21,7 +21,9 @@
 
 == Installation ==
 === Andor Driver Pack ===
-To recognize the camera in the Windows Device Manager, install the [http://www.andor.com/downloads?src=micro Andor Driver Pack].
+To recognize the camera in the Windows Device Manager, install the latest [http://www.andor.com/downloads?src=micro Andor Driver Pack].
+
+On the '''Select Destination Location''' dialog, click browse and choose the current Micro-Manager installation directory. Then click '''''Yes''''' to confirm that you do want to install to that folder.
 
 === Disable computer power savings ===
 Disable power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable in PCI/e power management and USB suspend saving in [[Personal computer setup#Power Options|Power Options]].
