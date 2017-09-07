@@ -1,0 +1,28 @@
+<table><tr><td>
+'''Summary:'''</td><td>Bluebox Optics niji LED illuminator</td></tr>
+<tr><td>'''Author:'''</td><td>Egor Zindy</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All</td></tr>
+<tr><td>'''Devices:'''</td><td>[http://www.blueboxoptics.com/]</td></tr>
+<tr><td>'''Since Version:'''</td><td>1.4.23 20170906</td></tr>
+<tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
+
+{| cellspacing="2" border="0" cellpadding=3
+|BaudRate||57600
+|-
+|DelayBetweenCharsMs||0
+|-
+|Handshaking||Off
+|-
+|Parity||None
+|-
+|StopBits||1
+|}
+
+</td>
+</tr>
+</table>
+
+The Niji is an LED-based solid light source.
+
+{{Devices_Sidebar}}
