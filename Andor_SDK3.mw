@@ -49,12 +49,14 @@ Disable C-states power saving in the [[Personal computer setup#BIOS|BIOS]]. For 
 == Configuration ==
 
 === Increase Sequence buffer size ===
-It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS,  set this value to '''5120''' MB:
+
+It is possible to achieve full frame rate with enough RAM. Again using a 64-bit OS,  set this value to '''5120''' MB
 
       Tools > Options... > Sequence buffer size [MB]
 
 Depending on the amount of RAM on the PC or processing performance, this may need to be adjusted accordingly.
 
+Some operations take longer with larger sequence buffers.  Many users will be fine with the Micro-Manager default size, especially with a SSD hard drive.  5120 MB is enough for 1250 full-frame images without writing to disk.  As of MM 1.4.19 the default buffer size is 250 MB for 64-bit OS and 25 MB for 32-bit OS.
 
 === Linux Installation ===
 The following assumes you installed the Andor SDK in /usr/local/lib/
