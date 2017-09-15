@@ -41,6 +41,8 @@ and ensure you restart the computer.
 
 This is publicly available [http://www.andor.com/downloads?src=micro here].
 
+On a 32-bit Windows OS, the 32-bit DLLs will be installed to a subfolder of the MicroManager directory (e.g. C:\Program Files\Micro-Manager-1.4\Win32\). These DLLs must then be copied to the Micro-Manager Directory  (e.g. C:\Program Files\Micro-Manager-1.4\), replacing the 64-bit DLLs.
+
 === Disable computer power savings ===
 Disable C-states power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable PCI Express > Link State Power Management in [[Personal computer setup#Power Options|Power Options]].
 
