@@ -113,6 +113,9 @@ Restart uManager for this change to take effect.
 If you see this message when snapping an image, try a lower <code>AcquisitionWindow</code> size (the default is the full <code>Full Image</code>) to confirm that the camera is capable of sending an image.  The BitFlow frame grabber PCIe card fits in 4x splots, but some motherboards don't have the bandwidth to run it and the card may need to be instead installed on an 8x or 16x slot.
 
 == Resources ==
+
+See Andor's [http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf|Micro-Manager Software Guide] which details the steps above, shows how to add a device in the property browser, etc.
+
 === Development support ===
 Please liaison with Micro-Manager developers to contact the Andor software team
 
