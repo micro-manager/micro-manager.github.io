@@ -137,7 +137,7 @@ Below the Sequence table, you can specify:
 |- valign="top"
 | Upload Sequence || Send the sequence and ROIs to the Mosaic device.  Get in the habit of clicking this button to apply changes from the Sequence list or from updating ROIs in the ROI Manager.
 |- valign="top"
-| Run/Stop || Execute the sequence.  Useful for previewing through the microscope eyepieces or "Live" image on the camera.
+| Run/Stop || Execute the sequence.  Useful for previewing through the microscope eyepieces or "Live" image on the camera. This button should also be pressed to arm the device for an externally triggered sequence. After clicking this button the device should be prepared to receive an external trigger.
 |- valign="top"
 | Attach to Acquisition/Detach || Executes sequence when running Multi-dimensional acquisition.
 |- valign="top"
