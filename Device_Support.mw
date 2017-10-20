@@ -164,7 +164,8 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent CUBE laser controller
-* [[CoherentOBIS]] - Coherent OBIS laser controller
+* [[CoherentOBIS]] - Coherent OBIS laser controller (Single Laser Remote)
+* [[Coherent Scientific Remote]] - Coherent OBIS laser controller (Scientific Remote and Single Laser Remote)
 * [[Diskovery]] - Spectral/Andor spinning disk confocal/TIRF module 
 * [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
