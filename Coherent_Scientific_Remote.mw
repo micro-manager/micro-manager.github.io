@@ -1,6 +1,6 @@
 <table><tr><td>
 '''Summary:'''</td><td>Coherent Scientific Remote Laser Controller</td></tr>
-<tr><td>'''Author:'''</td><td>Raimo Hartmann (inspired by an initial contribution by Forrest Collman)</td></tr>
+<tr><td>'''Author:'''</td><td>Raimo Hartmann</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[https://www.coherent.com/lasers/laser/optoskand-beam-delivery-components/obis-scientific-remote Coherent Scientific Remote ] & [https://www.coherent.com/lasers/laser/obis-single-laser-remote Coherent Single Laser Remote]</td></tr>
@@ -24,7 +24,7 @@
 
 This device adapter was written for the Coherent Obis Scientific Remote Laser Controller. Compatibility was also tested with the Coherent Obis Single Remote. 
 <br>
-Inside MicroManager, for each connected laser, the following 'properties' are available with this device adapter:
+Inside MicroManager, for each connected laser, the following command 'properties' are available with this device adapter:
 <ul>
     <li>Laser Power (%) ''(Read/Write)''
     <li>Laser State (On/Off) ''(Read/Write)''
@@ -37,7 +37,7 @@ Inside MicroManager, for each connected laser, the following 'properties' are av
     <li>Laser Port ''(Read Only)''
     <li>Temperature Baseplate (°C) ''(Read only)''
 </ul>
-In addition any laser can be selected for being shuttered software-wise while acquiring an image.
+In addition you can select any laser for being shuttered software-wise while acquiring an image.
 <br>
 
 {{Devices_Sidebar}}
