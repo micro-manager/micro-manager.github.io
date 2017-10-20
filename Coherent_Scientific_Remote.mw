@@ -24,7 +24,7 @@
 
 This device adapter was written for the Coherent Obis Scientific Remote Laser Controller. Compatibility was also tested with the Coherent Obis Single Remote. 
 <br>
-Inside MicroManager, for each connected laser, the following command 'properties' are available with this device adapter:
+Inside MicroManager, for each connected laser, the following 'properties' are available with this device adapter:
 <ul>
     <li>Laser Power (%) ''(Read/Write)''
     <li>Laser State (On/Off) ''(Read/Write)''
