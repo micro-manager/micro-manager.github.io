@@ -37,7 +37,7 @@ Inside MicroManager, for each connected laser, the following command 'properties
     <li>Laser Port ''(Read Only)''
     <li>Temperature Baseplate (°C) ''(Read only)''
 </ul>
-In addition you can select any laser for being shuttered software-wise while acquiring an image.
+In addition any laser can be selected for being shuttered software-wise while acquiring an image.
 <br>
 
 {{Devices_Sidebar}}
