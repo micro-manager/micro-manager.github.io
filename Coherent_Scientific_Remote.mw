@@ -1,6 +1,6 @@
 <table><tr><td>
 '''Summary:'''</td><td>Coherent Scientific Remote Laser Controller</td></tr>
-<tr><td>'''Author:'''</td><td>Raimo Hartmann</td></tr>
+<tr><td>'''Author:'''</td><td>Raimo Hartmann (inspired by an initial contribution by Forrest Collman)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[https://www.coherent.com/lasers/laser/optoskand-beam-delivery-components/obis-scientific-remote Coherent Scientific Remote ] & [https://www.coherent.com/lasers/laser/obis-single-laser-remote Coherent Single Laser Remote]</td></tr>
