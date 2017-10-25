@@ -116,6 +116,7 @@ The Initialize() and Shudown() methods are critical to ensure that Device Adapte
 * Shutdown() disconnects Device Adapter from the hardware and practically reverses the effect of Initialize()
 * Once the device is successfully shut down, repeated calls to Shutdown() should not have any effect
 * After Shutdown() is called device should never attempt to communicate with the hardware, except after Inititalize() is called again
+* Calling Shutdown() without a previous Initialize() should have no effect.
 
 === Device Types, Names and Labels ===
 
