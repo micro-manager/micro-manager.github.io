@@ -24,7 +24,7 @@ The path mask can be set in the Device Property browser and supports the followi
 <tr><td><code>?{<prec>}[<stage>]</code></td><td>Position of stage <code><stage></code> with precision <code><prec></code></td>
 </table>
 
-The positions are rounded according to the specified precision (default is 0, i.e. integers). The resolved path (i.e. the path with the current positions inserted) is shown in the "Resolved path" property.
+The positions are rounded according to the specified precision (default is 0, i.e. integers). The resolved path (i.e. the path with the current positions inserted) is shown in the "Resolved path" property. Demo stages provided by the [[DemoCamera]] device adapter can be used in place of physical stages to fully work without hardware (to add multiple stages, add multiple DHub devices)
 
 ===Example path mask===
 The examples assume the following stage positions:
