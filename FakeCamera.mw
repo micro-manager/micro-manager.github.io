@@ -76,6 +76,7 @@ cd ~/mm/micro-manager1.4
 ./configure --enable-imagej-plugin=/usr/local/ImageJ --with-opencv
 </pre>}}</li>
 <li>Continue normally</li>
+</ul>
 
 {{Listserv_Search|FakeCamera}}
 
