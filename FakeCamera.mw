@@ -1,5 +1,3 @@
-== FakeCamera ==
-
 <table><tr><td>
 '''Summary:'''</td><td>Adapter for fake/virtual camera that loads images from disk. Can provide different images depending on stage postions.</td></tr>
 <tr><td>'''Author:'''</td><td>Lukas Lang</td></tr>
