@@ -46,4 +46,7 @@ Even though some Point Grey cameras support binning, there is no generalized int
 * This adapter only works with the FlyCapture2 interface, i.e. it does not work with the Spinnaker interface).
 * In multiple cases, USB3 cameras do not work through a USB3 port.  If you have unexpected behavior, try connecting your camera to a USB2 slot (which will have reduced throughput).  If throughput is important, consult the Point Grey documentation (e.g. [https://www.ptgrey.com/tan/10359 this document recomending USB3 components) and if all fails open a support ticket with Point Grey.
 
+== Camera Characterization ==
+Histograms of the per pixel variance of a Hamamatsu ORCA-Flash4.0 v2 camera and 4 different Point Grey GS3-U3-51S5M-C cameras.[[File:gs3_u3_51s5m_c_variance_hist.png]]
+The data was acquired at 50Hz in a 512x512 pixel ROI centered on the camera chip. Median values are 0.84e-^2 for the ORCA-Flash4.0 and 2.6e-^2 for the GS3-U3-51S5M-C cameras.
 {{Devices_Sidebar}}
