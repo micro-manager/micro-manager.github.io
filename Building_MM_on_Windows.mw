@@ -110,6 +110,8 @@ Some device adapters (those made up of more than one project) may not build corr
 
 First, you need to install Python 2.7 and Numpy 1.7 (different versions, such as Python 2.6, may work if the project settings are appropriately edited).
 
+'''Note for Visual Studio 2010:''' If you are using Visual Studio 10, then MMCorePy must be compiled with a compatible version of the Python27.dll, otherwise importing MMCorePy will crash Python. You will either need to compile Python from source using VS2010, or download an already compiled and compatible Python distribution. The [http://www.p-nand-q.com/python/building-python-27-with-visual_studio.html p-nand-q.com website] has instructions for doing both.
+
 To tell Visual Studio where to find the Python installation, open <code>MMCorePy_wrap\Python.props</code> in a text editor (these settings can be edited in Visual Studio, but it's simpler to explain how to manually edit this file). Find the block that starts with <code>PropertyGroup Label="UserMacros"</code>, which contains a line for <code>PythonDir</code>. Set its value to the path to your Python installation. If you installed Python 2.7 in the default location, you probably just need to remove the <code>-$(Platform)</code> part.
 
 Once this is done, you should be able to build MMCorePy from <code>micromanager.sln</code> by the steps described above. Make sure to select the Release configuration and the platform that matches your Python binaries.
