@@ -3,7 +3,7 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Interfaces [http://www.wienecke-sinske.de Wienecke & Sinske GmbH] piezo stage controller</td></tr>
-<tr><td>'''Author:'''</td><td>[http://www.s3l.de/home/index/en S3L GmbH]</td></tr>
+<tr><td>'''Author:'''</td><td>[http://www.s3l.de S3L GmbH]</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All Platforms (serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>XYStage</td></tr>
@@ -14,8 +14,8 @@ If the stage is connected via CAN to a motorized Zeiss microscope, you also may 
 
 Special properties of the XYStage:<br>
 <table valign='left'>
-<tr><td>'''Velocity (micron/s)'''</td><td>Sets the maximum speed of the XY stage</td></tr>
-<tr><td>'''Acceleration (micron/s^2)'''</td><td>Sets the acceleration of the XY stage</td></tr>
+<tr><td>'''MaxSpeed'''</td><td>Sets the maximum speed of the XY stage</td></tr>
+<tr><td>'''Acceleration'''</td><td>Sets the acceleration of the XY stage</td></tr>
 </table>
 
 COM Settings:<br>
