@@ -35,8 +35,8 @@ The Controller User Guide can be downloaded [http://www.objectiveimaging.com/dow
 
 == Hardware Configuration Wizard ==
 
-Add the Objective Imaging Oasis Controller Hub
+Add the Objective Imaging Oasis Controller Hub. This change was introduced in v1.4.23. In versions prior, only XY control was provided, so a hub was not necessary.
 [[File:oasis1.png]]
 
-then select whichever hardware the OASIS board controls. E.g., OasisXYStage, OasisZStage, OasisShutter_1...
+Then select whichever hardware the OASIS board controls. E.g., OasisXYStage, OasisZStage, OasisShutter_1...
 [[File:oasis2.png]]
