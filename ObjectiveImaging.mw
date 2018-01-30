@@ -6,7 +6,7 @@
 <tr><td>'''Maintenainer:'''</td><td>Egor Zindy</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Available since version:'''</td><td>1.4.17</td></tr>
+<tr><td>'''Available since version:'''</td><td>1.4.17 (New hub based adapter from 1.4.23)</td></tr>
 </table>
 
 Requires the [http://www.objectiveimaging.com/download/software.php OASIS Software] package from Objective Imaging.
