@@ -1,0 +1,39 @@
+== ITK Dr. Kassen LMT200-V3 HYDRA Controller ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Interfaces with [http://www.itknet.com/microscope-automation/index.php/de/ ITK Dr. Kassen] Controller and associated hardware</td></tr>
+<tr><td>'''Author:'''</td><td>Steven Fletcher</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>Controller and XY Stage</td></tr>
+</table>
+
+
+'''Serial settings:'''
+{| cellspacing="10"
+|AnswerTimeout||500.0000
+|-
+|BaudRate||38400
+|-
+|DelayBetweenCharsMs||0.0000
+|-
+|Handshaking||Off
+|-
+|Parity||None
+|-
+|StopBits||1
+|-
+|Verbose||1
+|-
+|}
+
+Driver inspired by the [[Corvus]] device adapter it was written for the LMT200-V3 ITK Dr. Kassen HYDRA Controller. 
+The Devices that need to be loaded are The Controller and the XY Stage.
+
+'''Notes:''' the Pixel Calibration Plugin doesn't seem to work with this Stage/Driver.
+
+For suggestions, modifications or input, feel free to contact Steven Fletcher at steven.fletcher@inria.fr.
+
+'''See also:''' [[Corvus]] device adapter
+
+{{Devices_Sidebar}}
