@@ -47,17 +47,21 @@ From there, you can request images via their <code>Coords</code>:
 
 You can access the image's <code>Metadata</code>:
 
+ import org.micromanager.data.Metadata;
+
  Metadata metadata = image.getMetadata();
  Double exposure = metadata.getExposureMs();
 
 You can access the dataset's <code>SummaryMetadata</code> as a whole:
 
+ import org.micromanager.data.SummaryMetadata;
  SummaryMetadata summary = store.getSummaryMetadata();
  String[] channels = summary.getChannelNames();
 
 If the dataset has not been frozen, then you can modify it, for example by adding new images:
 
- List<Image> newImages = mm.live().snap(false);
+ import java.util.List;
+ List newImages = mm.live().snap(false);
  Image newImage = newImages.get(0);
  newImage = newImage.copyAtCoords(coords.copy().time(6).build());
  store.putImage(newImage);
