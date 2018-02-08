@@ -14,7 +14,8 @@ How do I...
 
 If you just want to snap an image and have it pop up in the viewer, then you want to access the <code>SnapLiveManager</code> object:
 
- List<Image> images = mm.live().snap(true);
+ import java.util.List;
+ List images = mm.live().snap(true);
 
 The boolean value passed in will tell the SnapLiveManager that you want to see the images that were snapped; the returned List of Image objects is the images acquired. There will only be multiple images if you're using a multi-camera setup.
 
