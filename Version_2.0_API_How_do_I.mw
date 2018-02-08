@@ -21,7 +21,10 @@ The boolean value passed in will tell the SnapLiveManager that you want to see t
 
 === Display an image? ===
 
-If you have an Image object and you want to create a new display window and display it, you can use the <code>DisplayManager</code> object:
+If you have an Image object - for instance, by snapping one:
+ images = mm.live().snap(false);
+ image = images.get(0);
+and you want to create a new display window and display it, you can use the <code>DisplayManager</code> object:
 
  Datastore store = mm.displays().show(image);
 
