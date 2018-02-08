@@ -120,7 +120,7 @@ Probably the simplest way to do this is to can snap images using the SnapLiveMan
  mm.displays().createDisplay(store);
 
  // Snap an image. Don't display it in the snap/live display.
- List<Image> images = mm.live().snap(false);
+ List images = mm.live().snap(false);
  // Let's assume for now that we aren't using a multi-camera setup, so the
  // above list only has one element.
  Image image = images.get(0);
