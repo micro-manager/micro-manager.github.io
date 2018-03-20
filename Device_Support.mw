@@ -22,6 +22,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AndorSDK3]] - New model Andor cameras
 * [[Apogee]] - Apogee cameras
 * [[AxioCam]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
+* [[BaslerAce]] - Basler Ace USB Cameras
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[BiostepEagleIce]] - biostep EagleIce camera
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (see also [[IIDC]])
