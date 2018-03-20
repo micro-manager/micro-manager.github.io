@@ -1,35 +1,18 @@
 == Basler Ace USB camera ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces Zeiss AxioCam medium resolution and high resolution color and monochrome cameras</td></tr>
+'''Summary:'''</td><td>Interfaces Basler Ace line of USB cameras</td></tr>
 <tr><td>'''Author:'''</td><td>Henry Pinkard</td></tr>
-<tr><td>'''License:'''</td><td>Source code cannot be made available</td></tr> 
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
-<tr><td>'''Devices:'''</td><td>AxioCam MRm/MRc/HRm/HRc, MRm/MRc/HRm/HRc Rev. 2, and MRm/MRc/HRm/HRc Rev. 3 (tested with MRm Rev. 2, MRm Rev. 3, MRc Rev. 3, HRm Rev. 2, HRm Rev. 3); MRc5 </td></tr>
+<tr><td>'''Devices:'''</td><td> Tested on Basler Ace acA2440-75um USB3 Mono. Should work with other monochrome USB versions and could be adapted to RGB cameras as well </td></tr>
 </table>
 
 
-Because of built in delays in the AxioCam's image acquisition, there is a delay of approximately 200ms between when Micro-Manager sends the command to open the shutter and when the AxioCam's exposure begins. If over exposure of the sample is a concern, it is highly recommended that hardware triggering is used with these cameras. Refer to the below descriptions of hardware triggering to do so (All images and text below ©2010 Carl Zeiss MicroImaging GmbH. All rights reserved.).
+Download and install the Basler Pylon software and verify that it works prior to setting up in Micro-Manager.
 
-
-<h2>Trigger-Out</h2>
-
-<p>Via a supplementary cable the AxioCam has the capability of sending out a
-TTL trigger pulse to an external device, for example a mechanical shutter. This
-trigger pulse can be used to synchronize
-the exposure of the camera and the task of the external device, as you can
-specify the delay between sending out
-the trigger signal and actually starting the acquisition.</p>
-
-<p>To meet the requirements of the device you are using, you can
-invert the polarity that you want the
-signal to have.</p>
-
-<h2>'''Trigger-In'''</h2>
-
-The exact time of exposure can be triggered from outside the camera. When the trigger-in is enabled and an acquisition function is called, the camera will delay the acquisition and wait for a trigger-in signal to be sent from an external device until it invokes the exposure.
-The following graphic demonstrates the two camera models' reaction to the trigger signal when performing a triggered acquisition. An acquisition request is sent out at each '''T''', the acquisition takes place at an '''A''':
+https://www.baslerweb.com/en/sales-support/downloads/software-downloads/#type=pylonsoftware;series=baslerace 
 
 
 
---[[User:Henry Pinkard|Henry Pinkard]] 10:58, 2nd January 2013 (PDT)
+--[[User:Henry Pinkard|Henry Pinkard]], 20th March 2018 (PDT)
