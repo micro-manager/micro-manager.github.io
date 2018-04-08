@@ -167,6 +167,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Aquinas]] - Aquinas Microfluidics Controller
 * [[Neos|AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
 * [[ASIwptr]] - ASI well-plate transfer robot
+* [[BlueboxOptics_niji]] - Bluebox Optics niji 7 channel LED light source
 * [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent CUBE laser controller
