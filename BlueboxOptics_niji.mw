@@ -1,5 +1,5 @@
 <table><tr><td>
-'''Summary:'''</td><td>Bluebox Optics niji LED illuminator</td></tr>
+'''Summary:'''</td><td>Bluebox Optics niji 7 channel LED light source</td></tr>
 <tr><td>'''Author:'''</td><td>Egor Zindy</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
@@ -8,7 +8,7 @@
 <tr><td valign=top>'''Default serial port settings:'''</td><td valign=top>
 
 {| cellspacing="2" border="0" cellpadding=3
-|BaudRate||57600
+|BaudRate||115200
 |-
 |DelayBetweenCharsMs||0
 |-
