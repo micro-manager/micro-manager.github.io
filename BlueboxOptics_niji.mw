@@ -26,3 +26,33 @@
 The niji is an LED-based solid light source.
 
 {{Devices_Sidebar}}
+
+== Properties ==
+
+To view or edit the niji properties, open the "Tools" menu and select "Device/Property Browser". The following settings are available:
+
+=== Read-only parameters ===
+
+* AmbientTemp : Ambient temperature inside the enclosure.
+* OutputTemp : temperature sensor located towards the front.
+* Name : niji model name.
+* Description : model description.
+* FirmwareVersion : Firmware version installed on the niji.
+* ErrorCode : Error Code identifier.
+* GlobalStatus : String associated with the error code.
+
+=== Global parameters ===
+
+* State : Global shutter state for the niji (0 or 1).
+* GlobalIntensity : Global intensity value. Multiplied by each channel intensity, it defines the individual intensity values.
+* OutputMode : Either "Constant Current" or "Constant Optical Power".
+=== Channel parameters ===
+
+* Channel[1-7]Intensity : Individual intensity value between 0 and 100.
+* Channel[1-7]State : Individual shutter state (0 or 1).
+
+=== Trigger parameters ===
+
+* TriggerLogic : Either "Active High" or "Active Low".
+* TriggerResistor : Either "Pull Up" or "Pull Down".
+* TriggerSource : Either "Internal" or "External".
