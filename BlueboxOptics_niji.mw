@@ -83,7 +83,7 @@ This will peg the maximum intensity of each LED to 20%. In that case, varying th
 
 == Multi-LED groups and presets ==
 
-In some cases, it could be advantageous to have a preset with more than one LED on at the same time. For example, a dual LED excitation used together with some image splitting optics. Or a "white light" preset for visual inspection.
+In some cases, it is advantageous to have a preset with more than one LED on at the same time. For example, a dual LED excitation used together with some image splitting optics. Or a "white light" preset for visual inspection.
 
 This can be achieved by adding all 7 channel states in a group:
 
@@ -93,7 +93,7 @@ and creating presets of interest using a combination of any (multiple or single)
 
 [[File:niji_group_multiled_preset.png]]
 
-Out of completeness and maximum flexibility, it is even possible to add all 7 intensities to the group if different max output intensities are required for each preset.
+For completeness and maximum flexibility, it is possible to add all 7 intensities to the group if different max output intensities are required for each preset.
 
 In that case, the output of each LED is controlled by the maximum output allowed for the preset, multiplied by the global intensity given to the user as a group setting as in the "single LED presets" section above.
 
