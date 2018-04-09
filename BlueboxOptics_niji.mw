@@ -93,9 +93,9 @@ and creating presets of interest using a combination of any (multiple or single)
 
 [[File:niji_group_multiled_preset.png]]
 
-For completeness and maximum flexibility, it is possible to add all 7 intensities to the group if different max output intensities are required for each preset.
+For completeness and maximum flexibility, it is possible to also add all 7 intensities to the group if different max output intensities are required for each preset.
 
-In that case, the output of each LED is controlled by the maximum output allowed for the preset, multiplied by the global intensity given to the user as a group setting as in the "single LED presets" section above.
+In that case, the output of each LED is defined by the maximum output allowed for the preset, multiplied by the global intensity given to the user as an additional group setting as in the "single LED presets" section above.
 
 == Bi-directional communication ==
 
