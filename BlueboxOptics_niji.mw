@@ -67,8 +67,11 @@ To view or edit the niji properties, open the "Tools" menu and select "Device/Pr
 == Single LED excitation presets ==
 
 For single LED excitation, two groups are required:
+
+[[File:niji_configuration_settings.png]]
+
 * "Channel Label" for selecting the LED channel
-* "Global Intensity" to set an intensity for all 7 channels.
+* "Global Intensity" to control the light output intensity (this affects all 7 LEDs).
 
 [[File:niji_group_channel_label.png]]
 [[File:niji_group_global_intensity.png]]
