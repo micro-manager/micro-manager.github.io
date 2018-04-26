@@ -28,6 +28,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (see also [[IIDC]])
 * [[DECamera]] - Direct Electron Cameras
 * [[DemoCamera]] - Virtual, emulated equipment for testing
+* [[Dhyana]] - Dhyana/Tucsen cameras
 * [[DSLRRemoteCamera]] - Canon DSLR cameras (Windows)
 * [[FakeCamera]] - Virtual camera that loads images from disk (Windows, Linux)
 * [[FLICamera]] - Finger Lakes Instrumentation Cameras
