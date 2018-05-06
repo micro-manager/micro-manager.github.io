@@ -26,7 +26,7 @@ The camera will work out of the box if the driver is installed (either by the [h
 
 {{Listserv_Search|The Imaging Source}}
 
-<nowiki><nowiki>Insert non-formatted text here</nowiki></nowiki>=== Snap error "Camera is not initialized" ===
+=== Snap error "Camera is not initialized" ===
 
 Once you go through the Hardware configuration wizard and successfully create a configuration file using the TIS camera, you may encounter the problem that µManager reports "Camera is not initialized" when you press the "Snap" button.  When that happens, go to the Device/Property Browser (under the Tools menu), select  "Click here for device selection dialog" next to the "Name" property, and then select the camera on the dialog that appears. Restart µManager if necessary, and hopefully the camera now works.
 
