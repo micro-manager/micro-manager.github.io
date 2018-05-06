@@ -30,6 +30,10 @@ The camera will work out of the box if the driver is installed (either by the [h
 
 Once you go through the Hardware configuration wizard and successfully create a configuration file using the TIS camera, you may encounter the problem that µManager reports "Camera is not initialized" when you press the "Snap" button.  When that happens, go to the Device/Property Browser (under the Tools menu), select  "Click here for device selection dialog" next to the "Name" property, and then select the camera on the dialog that appears. Restart µManager if necessary, and hopefully the camera now works.
 
+06 April 2018
+As of early 2018, I (and others) have had difficulty using a USB 3.0 TIS  camera  with MM. The driver is not currently supported by TIS. See the mailing list for more details.
+http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7589354
+
 == Appendix ==
 
 === Installation on Micro-Manager 1.4.14 and earlier ===
