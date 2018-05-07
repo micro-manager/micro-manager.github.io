@@ -15,7 +15,7 @@
 |Cameras
 |- valign="top"
 !Available since version
-|1.3.46
+|1.3.46 (but see below for problems as of 2018)
 |}
 
 == Installation ==
@@ -30,9 +30,7 @@ The camera will work out of the box if the driver is installed (either by the [h
 
 Once you go through the Hardware configuration wizard and successfully create a configuration file using the TIS camera, you may encounter the problem that µManager reports "Camera is not initialized" when you press the "Snap" button.  When that happens, go to the Device/Property Browser (under the Tools menu), select  "Click here for device selection dialog" next to the "Name" property, and then select the camera on the dialog that appears. Restart µManager if necessary, and hopefully the camera now works.
 
-06 April 2018:
-As of early 2018, I (and others) have had difficulty using a USB 3.0 TIS  camera  with MM. The driver is not currently supported by TIS. See the following mailing list post  for more details:
-http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7589354
+
 
 == Appendix ==
 
@@ -44,5 +42,10 @@ http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7
 # Copy the following files, found in either ''<your home folder>''\Documents\IC Imaging Control\3.2\classlib\win32\release or ''<your home folder>''\Documents\IC Imaging Control\3.2\classlib\x64\release, to the Micro-Manager-1.4 folder. The following names are hard-coded, and if you have anything with a different name, it is not going to work (renaming a different DLL to match will not work, either, of course).
 #* If you are using 32-bit Micro-Manager (even if Windows is 64-bit): '''TIS_UDSHL09_vc9.dll''' (which in turn requires '''TIS_DShowLib09.dll''')
 #* If you are using 64-bit Micro-Manager: '''TIS_UDSHL09_vc9_x64.dll''' (which in turn requires '''TIS_DShowLib09_x64.dll''')
+
+
+=== Problems as of early 2018 ===
+As of early 2018, I (and others) have had difficulty using a USB 3.0 TIS  camera  with MM. The driver is not currently supported by TIS. See the following mailing list post  for more details:
+http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7589354
 
 {{Devices_Sidebar}}
