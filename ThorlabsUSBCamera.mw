@@ -23,3 +23,5 @@ Besides USB2 and USB3 cameras, this adapter should also support GigE cameras of 
 Built with the SDK version 4_20. 
 
 Hardware ROI function currently not supported.
+
+{{Note|As of May 10th, 2018, the pixelClockMHz property is set to the lowest value possible on startup.  This change was made to avoid hard to pinpoint errors while acquiring images. To make the camera operate faster, experiment with the pixelClockMHz property and set it to the highest value where the camera still works reliably, then add the pixelClockMHz property to the System-Startup group.  Thanks to the AQLM 2018 students for figuring this out!)}}
