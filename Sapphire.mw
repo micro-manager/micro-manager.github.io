@@ -1,4 +1,12 @@
-Nobody contributed information about this device. 
+Notes from Kyle Douglass (2018):
+
+
+- Be sure that the Local/Remote switch on the back of the CDRH control box is '''set to Local'''. Remote in this case refers to analog control, whereby an external voltage signal can set the power and state of the laser. Setting it to Local allows us to control the laser through a serial interface.
+
+- The Micro-Manager device adapter for this laser is called '''Sapphire Laser'''.
+
+- The baud rate for the laser's serial communications '''must be set to 19200 bps'''. Anything else and you will not be able to communicate with it. The terminating characters are CR LF.
+
 
 {{Listserv_Search|Sapphire}}
 
