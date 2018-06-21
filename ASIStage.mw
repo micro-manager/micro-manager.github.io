@@ -1,7 +1,7 @@
 == ASI Stage ==
 
 <table><tr><td>
-'''Summary:'''</td><td>For ASI MS2000 controllers, including stages (XY, Z, piezo) and CRISP autofocus</td></tr>
+'''Summary:'''</td><td>For ASI MS2000 controllers, including stages (XY, Z, piezo) and CRISP autofocus. Also MFC-2000.</td></tr>
 <tr><td>'''Author:'''</td><td>Jizhen Zhao, based on Nenad Amodaj's Prior adapter.  CRIFF, CRISP, and AZ100 Turret by Nico Stuurman.  Generic state device (for filter sliders and motorized turrets) by Jon Daniels. Currently maintained by Nico Stuurman and Jon Daniels</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
