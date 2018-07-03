@@ -9,11 +9,14 @@
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
 </table>  
 
-Serial port settings are 115200 baud, no parity, 1 stop bit, no handshaking (for both RS-232 and USB).
-
-If you run into problems please contact the author at the address above.
+For "Tiger" or TG-1000 controller from ASI [http://www.asiimaging.com/index.php/products/controllers/tiger-controller/ (manufacturer page]).  Controller has various cards that can be added as needed for any particular configuration, so the device adapter is a hub with peripheral devices.
 
 NB: there is a separate device adapter, [[ASIStage]], for stand-alone MS-2000 controllers or older rack-mount controllers.
+
+Serial port settings are 115200 baud, no parity, 1 stop bit, no handshaking (for both RS-232 and USB).
+
+If you run into problems please contact the author at the address above.  This device adapter is actively supported by the manufacturer.
+
 
 For TG-1000 systems the build-in USB connection is actually a USB to serial converter. You can find drivers for Windows, Mac OS X, and Linux at the [http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx Silicon labs website].  This is the same as used for recent ASI 'WK' or 'Whizkid' controllers.
 
