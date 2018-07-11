@@ -5,7 +5,7 @@ Notes from Kyle Douglass (2018):
 
 - The Micro-Manager device adapter for this laser is called '''Sapphire Laser'''.
 
-- The baud rate for the laser's serial communications '''must be set to 19200 bps'''. Anything else and you will not be able to communicate with it. The terminating characters are CR LF.
+- The baud rate for the laser's serial communications '''must be set to 19200 bps'''. Anything else and you will not be able to communicate with it. The terminating characters are either CR or LF.
 
 
 {{Listserv_Search|Sapphire}}
