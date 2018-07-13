@@ -16,7 +16,9 @@ These beanshell scripts can be run from the '[[Script_Panel_GUI|Script Panel]]' 
 
 [[Media:live_demo.bsh]] - Shows how to process an image during acquisition.  Needs the DemoStreamingCamera to work.
 
-[[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.
+[[Media:burst.bsh]] - Shows how to start burst mode from a script.  Also shows how to save to file during acquisition.  Needs burst mode capable camera.  May not work.
+
+[[Media:burstExample.bsh]] - Shows how to run a sequence acquisition (used to be "burst mode") from a script including setting up and starting the acquisition, grabbing the images from the circular buffer, and filing them into the acquisition object.
 
 [[Media:testAcq.bsh]] - Demonstrates how to perform 5D image acquisition using the gui object. 
 
