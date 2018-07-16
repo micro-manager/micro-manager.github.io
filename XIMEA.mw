@@ -20,6 +20,7 @@
 * Copy XIMEA\API\x64\m3apiX64.dll (just take xiapi64.dll and rename it to m3apiX64.dll)from the installed XIMEA API Software Package to the μManager root folder. 
 {{Note|As of nightly builds starting 20180404, no longer rename xiapi64.dll.  Just copy that file to the Micro-Manager directory.}}
 {{Note|As of nightly builds starting 20180404, the naming scheme of the camera has been changed.  If your configuration file stops working, you may need to open it in a text editor, find a line that looks like: "Device,FastCam,XIMEACamera, 9652450", and replace the space in front of the camera number with a "0", resulting in: "Device,FastCam,XIMEACamera,09652450".}}
+{{Note|As of nightly builds starting 20180404, changes were made to property names.  Your configuration file may stop working, but can probably be easily fixed.  For instance, I had to change "Mono 12" to "Mono16" to get my configuration file to work again.}}
 
 
 * Connect the camera to the computer
