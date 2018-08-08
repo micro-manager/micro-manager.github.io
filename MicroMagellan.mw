@@ -203,7 +203,7 @@ The Imaris-μMagellan compiler is a FIJI plugin for stitching of Micro-Magellan 
 Image data written by μMagellan can be opened directly in TeraFly, a Vaa3d plugin which enables visualization and annotation of large 3D data sets. At present, TeraFly directly calls the μMagellan data storage library to read μMagellan datasets without need for further data conversion.
 
 ==Micro-Magellan source code==
-The source code can be accessed in the Micro-Manager subversion repository at https://valelab.ucsf.edu/trac/micromanager/browser/plugins/Magellan#src/org/micromanager/plugins/magellan
+Current source code can be found on the [https://github.com/henrypinkard/Micro-Magellan Micro-Magellan Github page]
 
 '''Authors:''' Henry Pinkard, Kaitlin Corbin
 
