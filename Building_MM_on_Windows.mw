@@ -27,6 +27,8 @@ Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device adapters) ar
 
 {{Note|It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). }}
 
+{{Note|If the SDK installation fails with '''Fatal error during installation''', you may need to first uninstall the VS2010 redistributables (x86 and x64), uninstall the broken 7.1 SDK install, reinstall the 7.1 SDK and untick "Visual C++ compilers" from the list as mentioned in KB KB2519277. If you are successful, install the VC-Compiler-KB2519277.exe patch afterwards.}}
+
 === Java Development Kit (JDK) for Java Standard Edition (Java SE) ===
 
 Download and install from [http://java.sun.com/javase/downloads/index.jsp Oracle]. Version 6 or later is required. The official Micro-Manager build currently uses JDK 6.
