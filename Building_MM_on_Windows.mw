@@ -7,6 +7,8 @@ First make sure you have enough hard disk space. 15 GB is probably enough.
 
 == Setting up the required tools ==
 
+Note that many people do not need to build MM at all, e.g. if you are only using MMCore and not editing it nor the device adapters then most of this doesn't apply to you.
+
 === Subversion client ===
 
 You will need a [http://subversion.apache.org/packages.html#windows Subversion client]. GUI clients such as [http://tortoisesvn.net/ TortoiseSVN] also work well.
@@ -50,7 +52,6 @@ For building the Java and Clojure components using Ant, the following environmen
 * <code>JAVA_HOME</code>: set to the path to your JDK installation, e.g. <code>C:\Program Files\Java\jdk1.6.0_45</code>. Do not add quotes to the value, even if it contains spaces.
 * <code>ANT_HOME</code>: set to the path to your Ant installation (whereever you placed the extracted binary package), e.g. <code>C:\apache-ant-1.9.1</code>. Do not add quotes to the value, even if it contains spaces.
 * <code>PATH</code>: It is convenient to add Ant to the command search path. You can append <code>;%ANT_HOME%\bin</code> to the end of the System <code>PATH</code> varialbe, or add a User variable named <code>PATH</code> and set its value to <code>%PATH%;%ANT_HOME%\bin</code>.
-
 
 == Preparing the source code ==
 
