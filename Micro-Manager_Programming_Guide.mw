@@ -4,7 +4,7 @@
 
 == Introduction ==
 
-Before diving into Programming within Micro-Manager, it is useful to review the general [[Overview of the documentation|architecture]]. <br /><br />
+Before diving into Programming within Micro-Manager, it is useful to review the general [[Overview of the documentation|overview of the documentation]] as well as the [[Micro-Manager Project Overview|overview of the software architecture]]. <br /><br />
 
 <div>Micro-Manager central component is the <span>''MMCore''</span> class encapsulating the entire automated microscope. <span>''MMCore''</span> API represents a high-level abstraction for any combination of standard components used in automated digital microscopy. A program written to the <span>''MMCore''</span> API should be able to successfully execute regardless of specific devices used, or in the worst case gracefully degrade if the minimal conditions are not satisfied. By using run-time configuration discovery features of the<span>'' MMCore''</span> API, a program can automatically determine whether minimal conditions for its execution are satisfied, e.g. if required devices are present and if they have required capabilities.</div>
 
@@ -22,7 +22,8 @@ See also: [[Search Paths]]
 
 === C++ ===
 
-In C++ MMCore can be used as a static library which needs to be linked to the calling program. Interface is specified in header files MMCore.h and Configuration.h.
+In C++ MMCore can be used as a static library which needs to be linked to the calling program. Interface is specified in header files MMCore.h and Configuration.h.  You only need to set up the C++ environment if you are editing device adapters or the MMCore code.
+
 
 === Matlab ===
 
@@ -34,7 +35,7 @@ The current version of the MMCore does not support programming environments othe
 
 == Getting started ==
 
-You can use any editor or Java IDE of your preference to try examples from this guide. Java run-time should be version 1.5 or higher. Instructions to work with several Java IDEs are available:
+You can use any editor or Java IDE of your preference to try examples from this guide. Java run-time should be version 1.6 or higher. Instructions to work with several Java IDEs are available:
 
 * [[Using Netbeans|Netbeans]], which seems to be the recommended IDE ([[Writing_plugins_for_Micro-Manager|see previous instructions]])
 * [[Using Eclipse|Eclipse]].([[Writing_plugins_for_Micro-Manager#Configure_Eclipse_to_edit_a_plugin|see previous instructions]])
