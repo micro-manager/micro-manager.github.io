@@ -53,7 +53,7 @@ The following instructions for debugging Micro-Manager's Java code with NetBeans
 #* '''Working Directory:''' type in your <code>$INSTALLDIR</code>
 <!--
 -->
-#* '''VM options:''' for 64 bit systems, type in <code>-Xmx3000M</code>, otherwise use <code>-Xmx600M</code>. This sets the maximum memory (megabytes) used by Java.
+#* '''VM options:''' for 64 bit systems, type in <code>-Xmx3000M</code>, otherwise use <code>-Xmx600M</code>. This sets the maximum memory (megabytes) used by Java. Lately, you also need <code>-Dforce.annotation.index=true</code>.
 <!--
 -->
 # Click '''OK''', and then right-click your project and choose '''Debug'''. If all is well, then Micro-Manager should launch inside ImageJ.
