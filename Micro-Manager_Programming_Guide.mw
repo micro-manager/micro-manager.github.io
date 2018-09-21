@@ -162,6 +162,8 @@ This command can return an empty string if the system current state does not mat
 
 == Synchronization ==
 
+This section is '''not''' talking about hardware-triggered acquisitions using e.g. TTL pulses, which is called "hardware synchronization" in the publication at http://www.jbmethods.org/jbm/article/view/36/29 and elsewhere.
+
 Each device loaded in MMCore reports its status by using "Busy" flag. A device declares that it is busy if it is still executing the previous command. To check the status of a single device or the entire system: <br /><br />
 
 <div class="source"> // check Z stage status</div><div class="source"> boolean ZStageBusy = core.deviceBusy("Z");</div><div class="source"><br /> // check if any of the devices in the system are busy</div><div class="source"> boolean systemBusy = core.systemBusy();</div>
