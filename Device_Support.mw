@@ -190,6 +190,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Omicron]] - Omicron Laser Controller
 * [[OVP_ECS2]] - Optic Valley Photonics ECS-2 environmental controller
 * [[Oxxius]] - Oxxius Laser Controller
+* [[Oxxius_combiner]] - Oxxius combiner; hub for multiple laser sources
 * [[Pecon]] - Pecon Incubation System
 * [[PeCon2000]] - PeCon 2000 Incubation Controllers (USB-connected)
 * [[pgFocus]] - Open Software/Hardware Focus Stabilization from [http://big.umassmed.edu BIG]
