@@ -1,5 +1,5 @@
 <table><tr><td>
-'''Summary:'''</td><td>Interface to Oxxius combiner, a hub for multiple laser sources</td></tr>
+'''Summary:'''</td><td>Interface to Oxxius combiner, providing access to LaserBoxx sources, shutters and various modules</td></tr>
 <tr><td>'''Author:'''</td><td>Tristan Martinez</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (requires a serial port)</td></tr>
