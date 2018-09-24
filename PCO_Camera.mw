@@ -6,7 +6,7 @@
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows</td></tr>
 <tr><td>'''Devices:'''</td><td>
-           pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000, Sensicam, Pixelfly,</td></tr>
+           pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000, Sensicam, Pixelfly,</td></tr>
 <tr><td>'''New:'''</td><td>Camera Link HS interface, Lightsheet mode</td></tr>
 
 <tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
