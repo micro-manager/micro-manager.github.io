@@ -143,6 +143,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 
 === Communication ports, TTLs, DAQs, etc. ===
 * [[Arduino]] - Open Source Programmable Digital/Analogue IO board
+* [[CustomArduino]] - Arduino-based devices matching existing device adapters
 * [[DTOpenLayer]] - DT OpenLayer Digital IO boards
 * [[ESIOImagingControllers]] - Microcontrollers for hardware triggering and synchronization
 * [[FreeSerialPort]] - Communicate directly through a serial port
