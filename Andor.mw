@@ -1,6 +1,6 @@
 {| style="text-align: left"
 !Summary:
-|Interfaces with Andor cameras (CCD and EMCCD. For sCMOS models such as Zyla, Neo and Sona refer to [[AndorSDK3]].
+|Interfaces with Andor CCD and EMCCD cameras. For sCMOS models such as Zyla, Neo and Sona refer to [[AndorSDK3]].
 |- valign="top"
 !Authors:
 | Nenad Amodaj (Windows)<br>Karl Bellv&eacute; (Linux port)<br>Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
