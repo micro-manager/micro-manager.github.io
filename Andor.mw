@@ -1,6 +1,6 @@
 {| style="text-align: left"
 !Summary:
-|Interfaces with Andor cameras
+|Interfaces with Andor cameras (CCD and EMCCD)
 |- valign="top"
 !Authors:
 | Nenad Amodaj (Windows)<br>Karl Bellv&eacute; (Linux port)<br>Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)
