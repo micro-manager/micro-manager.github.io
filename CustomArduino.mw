@@ -22,8 +22,7 @@ Here are included two example Arduino firmware :
 Emulates a Z-Axis L-Step stage by implementing a subset of the Marzhauser L-Step protocol. Expects an Arduino Uno with a LCD Keypad Shield for feedback and a servo motor attached to pin 3.
 * MM_vCoolLed.ino : 
 Emulates a CoolLED illumination device by implementing a subset of the PrecisExcite protocol. Expects an Arduino Uno with a LCD Keypad Shield for feedback and a NeoPixel LED device to pin 3.
-Basically, you have to make the Arduino understand the commands that MicroManager sends, and when needed, reply with the expected answers. For a given device, thoses details can be found in the publically available protocol documentation, or when this is not available, details can be extrated from the device adapter source code. This last solution is sometimes to be preferred, as it happens tha the current MicroManager device adapter only partially implements the device’s protocol : some protocol features are ignored.
-
+Basically, you have to make the Arduino understand the commands that MicroManager sends, and when needed, reply with the expected answers. 
 
 '''Installation'''
 * vLStep Z-Axis
@@ -41,4 +40,4 @@ Basically, you have to make the Arduino understand the commands that MicroManage
   - Test your device using Tools>Device Property Browser . 
 
 
-{{Note|Some, but not all, of these devices may have trouble rapidly switching multiple channels using the multiAOTF device (only the first channel will switch). In such cases, setting the "Delay between channels (ms)" property to greater than 25 ms might help.}}
+{{Note|For a given device or devices class, the adapter communication details can be found in the protocol documentation if it's publicly available, or if not available, details can be extracted from the [https://github.com/micro-manager/micro-manager/tree/master/DeviceAdapters device adapter source code]. This last solution is sometimes to be preferred, as it happens that the current MicroManager device adapter only partially implements the device’s protocol : some protocol features are ignored.}}
