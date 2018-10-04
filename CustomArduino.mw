@@ -1,7 +1,7 @@
 == Custom Arduino Devices ==
 
 <table cellspacing=3><tr><td>
-'''Summary:'''</td><td valign="top">Creating custom devices using Arduinos that implements existing communication protocols</td></tr>
+'''Summary:'''</td><td valign="top">Creating custom devices using Arduinos that implement existing communication protocols</td></tr>
 <tr><td>'''Author:'''</td><td>Jerome Mutterer</td></tr>
 <tr><td>'''Platforms:'''</td><td>Windows, Mac, Linux (serial port)</td></tr>
 <tr><td>'''Devices:'''</td><td>Many</td></tr>
