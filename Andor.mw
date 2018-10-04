@@ -184,13 +184,13 @@ For example the Dell XPS desktop 1x PCIe bus will not run at the rated speed whe
 iXon 885 PCI cameras can have their live stream not start at all, but will work if you bin the image 2x2 or slow the horizontal clock speed from 35MHz to 13MHz.  The reason for this is a small set of PC motherboards may not fully comply with the PCI standard bandwidth, so try another motherboard (or more conveniently another computer)
 
 ==== USB ====
-USB cameras using high bandwidth such as the Clara must be plugged into the computer to be its own USB bus:
+USB cameras using high bandwidth such as the iXon Life and Ultra must be plugged into the computer to be its own USB bus:
 
 ===== Windows USB Bus =====
 
 You need to use a utility like [http://www.ftdichip.com/Resources/Utilities/usbview.zip UVCview] to inspect the USB bus.  Try different USB slot positions on the computer until the camera is on its own USB bus.
 
-Screenshot below of UVCview on Windows showing the Clara by itself on the USB bus, i.e. with no other devices sharing it:
+Screenshot below of UVCview on Windows showing the Camera device (in this example Clara) by itself on the USB bus, i.e. with no other devices sharing it:
 [[Image:Good_Clara_USB_Connection cropped.JPG|frame|center]]
 
 ===== Linux USB Bus =====
@@ -223,7 +223,6 @@ The shell output below shows that the Clara (Vendor 0x136e Product 0x000e) has b
       Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
       Bus 001 Device 006: ID 136e:000e  
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-
 
 == Resources ==
 
