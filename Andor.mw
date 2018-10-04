@@ -28,8 +28,8 @@ On the '''Select Destination Location''' dialog, click browse and choose the cur
 === Disable computer power savings ===
 Disable power saving in the [[Personal computer setup#BIOS|BIOS]]. For Windows Vista and later, also disable in PCI/e power management and USB suspend saving in [[Personal computer setup#Power Options|Power Options]].
 
-=== (USB only) Finding a dedicated USB 2.0 bus ===
-High-bandwidth USB cameras like the Clara and iXon may lose communication during imaging if they share a USB bus with another high bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).  Plug the camera into it's own [[#Windows USB Bus|USB bus]] on the computer.
+=== (USB only) Finding a dedicated USB bus ===
+High-bandwidth USB cameras like iXon Life and iXon Ultra (Note Ultra and Life 888 models are USB 3.0, 897 models are USB 2.0)may lose communication during imaging if they share a USB bus with another high bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).  Plug the camera into it's own [[#Windows USB Bus|USB bus]] on the computer.
 
 == Andor SRRF-Stream ==
 <font style="color: blue; background: yellow"> '''''New''''' </font> [[Andor SRRF-Stream]]
