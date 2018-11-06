@@ -64,3 +64,24 @@ It is important to note that Micro-manager gamma setting is only for display pur
 === Test Pattern ===
 
 Several test pattern functions (including moving color bars and gradients) are provided for testing the camera. Changing test patterns during Live image acquisition is not supported. If we attempt to set or change the Test Pattern property during Live acquisition an error message will be displayed. The camera must be stopped before setting or changing the TestPattern property.
+
+== Support ==
+
+=== The Americas ===
+(USA, Canada, Mexico, South America)
+E-mail: support@jai.com
+Phone: (Toll-free): +1 800 445 5444
+
+=== Europe, Middle East and Africa (EMEA) ===
+E-mail: support@jai.com
+Phone: +45 4457 8950  
+
+=== Japan ===
+E-mail: support@jai.com
+Phone: +81 45 440 0154
+
+=== Other Asia and Pacific Rim (APAC) ===
+E-mail: support@jai.com
+Phone: +81 45 440 0154
+
+When you have sent an e-mail to our support system, you will automatically receive a support reference number in your e-mail in-box.
