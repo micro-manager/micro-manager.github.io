@@ -28,6 +28,8 @@ Currently multiple camera configurations are not supported, so leave CameraID as
 
 == Troubleshooting ==
 
+=== Baseline testing procedure ===
+
 Before configuring camera with Micro-manager verify that everything works properly with eBUS Player. Whenever in doubt use eBUS Player first as a baseline test for the camera. However, have in mind that camera can’t work with Micro-manager and eBUS Player at the same time. Always make sure to shut down the other application.
 
 === JAI Camera does not appear in the “Available” list ===
