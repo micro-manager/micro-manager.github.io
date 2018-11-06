@@ -38,6 +38,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[HamamatsuHam]] - Hamamatsu cameras (via DCAM-API)
 * [[IDS_uEye]] - IDS uEye USB cameras (also Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
 * [[IIDC]] - Firewire (and USB) cameras compatible with the IIDC specification (see also [[dc1394]])
+* [[JAI]] - JAI Cameras (eBUS)
 * [[BaumerOptronic|Leica Cameras]] - These use the [[BaumerOptronic]] adapter
 * [[Lumenera]] - Lumenera cameras
 * [[MatrixVision|MATRIX VISION devices]] - MATRIX VISION GmbH USB3 Vision, GigE Vision and USB2 cameras as well as various frame grabber boards
