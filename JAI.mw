@@ -19,3 +19,9 @@ Windows 7 and higher is supported, both 32 and 64-bit/ driver was tested on AP-3
 Download and install JAI SDK from [https://www.jai.com/support-software/downloads JAI support page]. Select APEX series eBUS-SDK for JAI, either 64-bit or 32-bit, depending on which version of Micro-manager you intend to use the camera with (64-bit or 32-bit). Installing eBUS-SDK is the only requirement for using Apex Series cameras with Micro-manager. 
 
 Open eBus Player application and verify the camera is working as expected before configuring it with Micro-manager. JAI cameras are supported in Micro-manager Nightly Builds starting on November 1, 2018.
+
+== Hardware Configuration Wizard Notes ==
+
+Start Micro-manager and select Tool | Hardware Configuration Wizard command. Create new configuration and scroll down the “Available Devices” tree to “JAI” entry. Expand the node and select JAI Camera. Press “Add” button. Camera dialog will pop up
+
+Currently multiple camera configurations are not supported, so leave CameraID as “0”. This number will be ignored.
