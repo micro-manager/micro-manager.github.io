@@ -1,0 +1,21 @@
+== JAI Cameras with USB interface and eBUS drivers ==
+
+<table>
+<tr><td>
+'''Summary:'''</td><td>JAI Cameras with eBUS drivers</td></tr>
+<tr><td>
+'''Author:'''</td><td>[http://nenad.amodaj.com Nenad Amodaj]</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows 7, 8 and 10, both 32 and 64</td></tr>
+<tr><td>'''Devices:'''</td><td>all JAI [https://www.jai.com/products/product-lines/apex-series-3-sensor-area-scan APEX] series cameras, with USB interface and eBUS drivers</td></tr>
+</table>
+
+== Installation Instructions ==
+
+Instructions apply only to JAI cameras based on the Pleora eBUS interface, such as Apex Series. At this time only Apex Series color cameras with USB interface are supported.
+
+Windows 7 and higher is supported, both 32 and 64-bit/ driver was tested on AP-3200T-USB camera model on Windows 10 with 64-bit version of Micro-manager.
+
+Download and install JAI drivers/SDK from [https://www.jai.com/support-software/downloads eBUS drivers]. Select eBUS-SDK for JAI, either 64-bit or 32-bit, depending on which version of Micro-manager you intend to use the camera with (64-bit or 32-bit). Installing eBUS-SDK is the only requirement for using Apex Series cameras with Micro-manager. 
+
+Open eBus Player application and verify the camera is working as expected before configuring it with Micro-manager. JAI cameras are supported in Micro-manager Nightly Builds starting on November 1, 2018.
