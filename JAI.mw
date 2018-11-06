@@ -44,3 +44,23 @@ a)	camera is not connected
 b)	power supply is not attached to the camera
 c)	camera model is not supported
 d)	some other application is using the camera and it must be closed
+
+== Camera Settings ==
+This section provides some information on camera settings that require special consideration in Micro-manager environment.
+
+=== White Balance ===
+JAI cameras have built-in white balance correction which can be determined on a specific image or applied continuously. By default, camera WhiteBalance property is set to OFF. If we choose any other option for camera White Balance, it is important to disable “Autostretch” option in the main panel. Autostretch function in Micro-manager automatically adjusts black level and contrast for each channel, therefore acting as a simple white-balance and contrast stretch function. However, Micro-manager Autostretch feature will defeat camera white balance if it is turned on.
+
+Autostretch does not modify the image pixels, it just affects the display. If we save the image it will be recorded as received from the camera.
+
+=== Gamma ===
+
+JAI cameras provide a “Gamma” property to adjust the image gamma function. When using this property, keep in mind that Micro-manager also applies gamma correction on the displayed image and the final result will be displayed with a compound gamma setting. By default in Micro-manager gamma is set to 1.0 and will therefore not affect the image coming from the camera.
+
+If you are planning to use/adjust Micro-manager gamma it is recommended to set the camera “Gamma” property to 1.0.
+
+It is important to note that Micro-manager gamma setting is only for display purposes. Actual image pixels will not be affected, i.e., saved images will always have gamma as provided by the camera.
+
+=== Test Pattern ===
+
+Several test pattern functions (including moving color bars and gradients) are provided for testing the camera. Changing test patterns during Live image acquisition is not supported. If we attempt to set or change the Test Pattern property during Live acquisition an error message will be displayed. The camera must be stopped before setting or changing the TestPattern property.
