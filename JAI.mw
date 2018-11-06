@@ -35,7 +35,7 @@ If the camera does not appear in Hardware Configuration Wizard “Available Devi
 
 If it does not appear in “Available”, JAI driver should be listed at the bottom of the “Devices” tree-view under “Not available”. As stated above this indicates that something is wrong with the camera SDK. But, if JAI does not appear in either of the two lists, it means that the Micro-manager version on your computer does not support this camera and that it must be updated from the Nightly Builds web page.
 
-= Camera fails during configuration =
+=== Camera fails during configuration ===
 
 If you see an error message when you try to “Add” camera to the configuration list in Hardware Configuration Wizard, that means one of the following:
 a)	camera is not connected
