@@ -16,6 +16,6 @@ Instructions apply only to JAI cameras based on the Pleora eBUS interface, such 
 
 Windows 7 and higher is supported, both 32 and 64-bit/ driver was tested on AP-3200T-USB camera model on Windows 10 with 64-bit version of Micro-manager.
 
-Download and install JAI APEX SDK from [https://www.jai.com/support-software/downloads JAI support page]. Select eBUS-SDK for JAI, either 64-bit or 32-bit, depending on which version of Micro-manager you intend to use the camera with (64-bit or 32-bit). Installing eBUS-SDK is the only requirement for using Apex Series cameras with Micro-manager. 
+Download and install JAI SDK from [https://www.jai.com/support-software/downloads JAI support page]. Select APEX series eBUS-SDK for JAI, either 64-bit or 32-bit, depending on which version of Micro-manager you intend to use the camera with (64-bit or 32-bit). Installing eBUS-SDK is the only requirement for using Apex Series cameras with Micro-manager. 
 
 Open eBus Player application and verify the camera is working as expected before configuring it with Micro-manager. JAI cameras are supported in Micro-manager Nightly Builds starting on November 1, 2018.
