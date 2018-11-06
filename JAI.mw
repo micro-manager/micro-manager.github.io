@@ -66,7 +66,7 @@ It is important to note that Micro-manager gamma setting is only for display pur
 
 Several test pattern functions (including moving color bars and gradients) are provided for testing the camera. Changing test patterns during Live image acquisition is not supported. If we attempt to set or change the Test Pattern property during Live acquisition an error message will be displayed. The camera must be stopped before setting or changing the TestPattern property.
 
-== Support ==
+== Contact ==
 
 === The Americas (USA, Canada, Mexico, South America) ===
 
