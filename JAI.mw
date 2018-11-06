@@ -25,3 +25,20 @@ Open eBus Player application and verify the camera is working as expected before
 Start Micro-manager and select Tool | Hardware Configuration Wizard command. Create new configuration and scroll down the “Available Devices” tree to “JAI” entry. Expand the node and select JAI Camera. Press “Add” button. Camera dialog will pop up
 
 Currently multiple camera configurations are not supported, so leave CameraID as “0”. This number will be ignored.
+
+== Troubleshooting ==
+
+Before configuring camera with Micro-manager verify that everything works properly with eBUS Player. Whenever in doubt use eBUS Player first as a baseline test for the camera. However, have in mind that camera can’t work with Micro-manager and eBUS Player at the same time. Always make sure to shut down the other application.
+
+= JAI Camera does not appear in the “Available” list =
+If the camera does not appear in Hardware Configuration Wizard “Available Devices” list, it means that eBUS SDK is not installed on the computer, or that the wrong version of the SDK is installed. Check the version of the JAI SDK on the JAI website and test with eBUS Player.
+
+If it does not appear in “Available”, JAI driver should be listed at the bottom of the “Devices” tree-view under “Not available”. As stated above this indicates that something is wrong with the camera SDK. But, if JAI does not appear in either of the two lists, it means that the Micro-manager version on your computer does not support this camera and that it must be updated from the Nightly Builds web page.
+
+= Camera fails during configuration =
+
+If you see an error message when you try to “Add” camera to the configuration list in Hardware Configuration Wizard, that means one of the following:
+a)	camera is not connected
+b)	power supply is not attached to the camera
+c)	camera model is not supported
+d)	some other application is using the camera and it must be closed
