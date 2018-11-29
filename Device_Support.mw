@@ -180,6 +180,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[DLP4000]] - Digital Mirror Device
 * [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
 * [[ImageProcessorChain]] - Virtual device driver for processing images in C++
+* [[LaserQuantumLaser]] - gem/ventus/opus/axiom series from LaserQuantum
 * [[LumencorCIA]] - Camera synchronization for the Lumencor Spectra
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[MaestroServo]] - Pololu Maestro Servo controller
@@ -204,6 +205,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SpectralLMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
 * [[SutterMPC]] - Multi manipulator controller
+* [[Toptica_iBeamSmartCW]] - Toptica iBeamSmart laser series
 * [[Toptica_iChrome_MLE]] - Toptica iChrome Multi Laser Engine
 * [[Toptica_iChrome_MLE_TCP]] - Toptica iChrome Multi Laser Engine over TCP link
 * [[USB_Viper_QPL]] - Excelitas/Qioptiq iFLEX-Viper Laser Engine
