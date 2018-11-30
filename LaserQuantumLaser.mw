@@ -10,7 +10,7 @@
 <tr><td>'''Micro-Manager version:'''</td><td>>=1.4.22 (tested with)</td></tr>
 </table>
 
-This simple device adapter request from the user a '''maximum laser power'''' in the Hardware Configuration Wizard. Upon initialization it checks if the laser is compatible with '''current control mode'''. If it is the case, the user can choose between '''current control mode''' and '''power control mode''' using the device property browser. In current control mode, only the '''Current (%)''' property will change the output power of the laser. In power control mode, the output power is changed through the '''Power (mW)''' property.
+This simple device adapter request from the user a '''maximum laser power''' in the Hardware Configuration Wizard. Upon initialization it checks if the laser is compatible with '''current control mode'''. If it is the case, the user can choose between '''current control mode''' and '''power control mode''' using the device property browser. In current control mode, only the '''Current (%)''' property will change the output power of the laser. In power control mode, the output power is changed through the '''Power (mW)''' property.
 
 If the laser does not support current control mode, then the only property available is '''Power (mW)''' property. Current control is an option, contact LaserQuantum for more details (current control is compatible with TTL triggering at least for the gem series).
 
