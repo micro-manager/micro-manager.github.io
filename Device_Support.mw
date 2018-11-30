@@ -161,57 +161,61 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
 * [[USBManager]] - Micro-Manager internal USB communications driver
 
-=== Other devices ===
-* [[AAAOTF]] - AOTF controller from AA Optoelectronics
+=== Light sources ===
+
 * [[AgilentLaserCombiner]] - Agilent MLC
-* [[Aladdin]] - Syring pump controller from Aladdin
 * [[AndorLaserCombiner]] - Andor laser launch
-* [[AndorShamrock]] - Andor Shamrock Spectrographs
-* [[Aquinas]] - Aquinas Microfluidics Controller
-* [[Neos|AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
-* [[ASIwptr]] - ASI well-plate transfer robot
 * [[BlueboxOptics_niji]] - Bluebox Optics niji 7 channel LED light source
-* [[CARVII]] - BD/CrEST CARV II spinning disk confocal
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent CUBE laser controller
 * [[CoherentOBIS]] - Coherent OBIS laser controller (Single Laser Remote)
 * [[Coherent Scientific Remote]] - Coherent OBIS laser controller (Scientific Remote and Single Laser Remote)
-* [[Diskovery]] - Spectral/Andor spinning disk confocal/TIRF module 
-* [[DLP4000]] - Digital Mirror Device
-* [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
-* [[ImageProcessorChain]] - Virtual device driver for processing images in C++
 * [[LaserQuantumLaser]] - gem/ventus/opus/axiom series from LaserQuantum
-* [[LumencorCIA]] - Camera synchronization for the Lumencor Spectra
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
-* [[MaestroServo]] - Pololu Maestro Servo controller
-* [[MicroPoint]] - Galvo-based phototargeting device from Andor
 * [[Mightex]] - LED driver/controllers
 * [[Mightex_BLS]] - BLS Control Modules
 * [[MightexPolygon]] - Mightex Polygon multiwavelength patterned illuminators
-* [[Mosaic3]] - Andor Mosaic DMD Projection Device
-* [[Okolab]] - Okolab Microscope Incubators and Gas Controllers
 * [[Omicron]] - Omicron Laser Controller
-* [[OVP_ECS2]] - Optic Valley Photonics ECS-2 environmental controller
 * [[Oxxius]] - Oxxius Laser Controller
 * [[Oxxius_combiner]] - Oxxius combiner; hub for multiple laser sources
-* [[Pecon]] - Pecon Incubation System
-* [[PeCon2000]] - PeCon 2000 Incubation Controllers (USB-connected)
-* [[pgFocus]] - Open Software/Hardware Focus Stabilization from [http://big.umassmed.edu BIG]
 * [[PolychromeV]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
-* [[Rapp]] - Rapp UGA40 photobleaching/photoactivation unit
-* [[SimpleAutofocus]] - Image-based autofocus software 'device'.
 * [[Sapphire]] - Lasers from Coherent
-* [[SpectralLMM5]] - Spectral laser line controller
 * [[Stradus]] - Vortran Stradus laser driver
-* [[SutterMPC]] - Multi manipulator controller
 * [[Toptica_iBeamSmartCW]] - Toptica iBeamSmart laser series
 * [[Toptica_iChrome_MLE]] - Toptica iChrome Multi Laser Engine
 * [[Toptica_iChrome_MLE_TCP]] - Toptica iChrome Multi Laser Engine over TCP link
 * [[USB_Viper_QPL]] - Excelitas/Qioptiq iFLEX-Viper Laser Engine
+* [[Versalase]] - Vortran Versalase laser driver
+
+
+=== Other devices ===
+* [[AAAOTF]] - AOTF controller from AA Optoelectronics
+* [[Aladdin]] - Syring pump controller from Aladdin
+* [[AndorShamrock]] - Andor Shamrock Spectrographs
+* [[Aquinas]] - Aquinas Microfluidics Controller
+* [[Neos|AOTF]] - NEOS AOTF control through parallel port.  Can be used for any TTL-controllable shutter
+* [[ASIwptr]] - ASI well-plate transfer robot
+* [[CARVII]] - BD/CrEST CARV II spinning disk confocal
+* [[Diskovery]] - Spectral/Andor spinning disk confocal/TIRF module 
+* [[DLP4000]] - Digital Mirror Device
+* [[GenericSLM]] - Any spatial light modulator that can be controlled via computer video output port.
+* [[ImageProcessorChain]] - Virtual device driver for processing images in C++
+* [[LumencorCIA]] - Camera synchronization for the Lumencor Spectra
+* [[MaestroServo]] - Pololu Maestro Servo controller
+* [[MicroPoint]] - Galvo-based phototargeting device from Andor
+* [[Mosaic3]] - Andor Mosaic DMD Projection Device
+* [[Okolab]] - Okolab Microscope Incubators and Gas Controllers
+* [[OVP_ECS2]] - Optic Valley Photonics ECS-2 environmental controller
+* [[Pecon]] - Pecon Incubation System
+* [[PeCon2000]] - PeCon 2000 Incubation Controllers (USB-connected)
+* [[pgFocus]] - Open Software/Hardware Focus Stabilization from [http://big.umassmed.edu BIG]
+* [[Rapp]] - Rapp UGA40 photobleaching/photoactivation unit
+* [[SimpleAutofocus]] - Image-based autofocus software 'device'.
+* [[SpectralLMM5]] - Spectral laser line controller
+* [[SutterMPC]] - Multi manipulator controller
 * [[Utilities]] - Virtual devices providing extra functionality to Micro-Manager
 * [[VariLC]] - Tunable liquid crystal polarization modulators from CRi
-* [[Versalase]] - Vortran Versalase laser driver
 * [[VisiTech_iSIM]] - VisiTech iSIM
 * [[Yokogawa]] - Yokogawa CSU22
 * Yokogawa [[CSUW1]] - Yokogawa CSUW1
