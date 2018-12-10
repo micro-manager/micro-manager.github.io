@@ -35,6 +35,7 @@ Note: Remember to register the correct serial port that connects to the correspo
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
 
+
 <table> 
 <tr><td>'''Default Stage settings  '''</td><td></td></tr>
 <tr><td>HighSpeed               </td><td>  3000 pps </td></tr>
