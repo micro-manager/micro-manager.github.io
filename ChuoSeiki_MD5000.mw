@@ -19,6 +19,11 @@ To download the MD5000 user manual, please follow this link [http://www.novaelec
 
 The MD5000 series Serial port settings are as following:
 
+{| class="wikitable"
+!'''Serial port settings'''!!
+|Baudrate||115200
+|}
+
 <table><tr><td>'''Serial port settings'''  </td></tr>
 <tr><td>Baudrate              </td><td>  115200</td></tr>
 <tr><td>DataBits              </td><td>  8</td></tr>
