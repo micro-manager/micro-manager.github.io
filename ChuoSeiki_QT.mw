@@ -9,5 +9,13 @@
 <tr><td>              </td><td>2-Axis: QT-AMH2A, QT-AMH2A-35, QT-ADM2, QT-ADM2-35</td></tr>
 <tr><td>              </td><td>1-axis: QT-ADL1, QT-ADL1-35 </td></tr>
 
+'''Serial port settings'''
 
---------------------------------------------------------------------------------
+{| cellspacing="10"
+|Baudrate||115200
+|DataBits||8
+|StopBits||1
+|ParityBits||None
+|AnswerTimeout||20
+|DelayBetweenCharsMs||0.0000
+|Handshaking||Off
