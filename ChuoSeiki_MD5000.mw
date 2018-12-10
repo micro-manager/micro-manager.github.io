@@ -38,7 +38,7 @@ The default Stage setting is:
 <tr><td>Speed                  </td><td> 1000 pps </td></tr>
 <tr><td>StepSize               </td><td> 1um      </td></tr>
 <tr><td>Acceleration pattern   </td><td> "1" (500 ms)</td></tr>
-<\table>
+</table>
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
