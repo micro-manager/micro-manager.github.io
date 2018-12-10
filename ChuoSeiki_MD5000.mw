@@ -21,19 +21,19 @@ The MD5000 series Serial port settings are as following:
 
 '''Serial port settings'''
 {| class="wikitable"
-|Baudrate  ||115200
+|Baudrate            ||115200 ||bps
 |-
-|DataBits  ||8
+|DataBits            ||8      ||bits
 |-
-|StopBits  ||1
+|StopBits            ||1      ||bit
 |-
-|ParityBits||None
+|ParityBits          ||None   ||bit
 |-
-|AnswerTimeout||500
+|AnswerTimeout       ||500    ||ms
 |-
-|DelayBetweenCharsMs||0.00
+|DelayBetweenCharsMs ||0.00   ||ms
 |-
-|Handshaking        ||OFF
+|Handshaking         ||OFF    ||
 |}
 
 '''Device Adapter Initilization'''
@@ -43,13 +43,13 @@ The "ChuoSeiki XY Controller||XY stages" asks to register the Serial port and Se
 The "ChuoSeiki Z Controller||Z stages" asks to register the Serial port, Serial port setting, and Axis name.
 
 {|  class="wikitable"
-!Default Stage Settings
+!Default Stage Settings||  ||
 |-
-|Speed               ||1000 pps
+|Speed               ||1000 ||pps
 |-
-|StepSize            ||1um    
+|StepSize            ||1    ||um    
 |-
-|Acceleration pattern|| "1" (500 ms)
+|Acceleration pattern|| "1" ||(500 ms)
 |}
 
 
@@ -67,15 +67,15 @@ In Device adapter, the Acceleration pattern (include acceleration and decelerati
 
 Default Acceleration pattern:
 {|  class="wikitable"
-|Pattern  ||   Acceleration time|| Deceleration time 
+|Pattern  ||Acceleration time   || Deceleration time 
 |-
-|| "1"    || 0 ms               ||0 ms
+|| "1"    || 0 (ms)             ||0 (ms)
 |-
-|| "2"    || 500 ms             || 0 ms
+|| "2"    || 500 (ms)           || 0 (ms)
 |-
-||  "3"   || 500 ms             || 0 ms 
+||  "3"   || 500 (ms)           || 0 (ms) 
 |-
-||  "4"   || 500 ms             || 0 ms
+||  "4"   || 500 (ms)           || 0 (ms)
 |}
 
 {{Note|'''Step Resolution'''}}
