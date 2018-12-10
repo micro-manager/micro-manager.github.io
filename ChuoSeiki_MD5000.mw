@@ -9,7 +9,7 @@
 <tr><td>              </td><td>1-axis: MD5123D </td></tr>
 </table>
 
-The MD5000 series controllers use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as: acceletation time, stage voltage, home search setting, etc.).
+The MD5000 series controllers use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as: customized acceletation time, stage voltage, home search setting, etc.).
 
 To download the MD5000 USB driver and software, please follow this link:
 http://www.novaelec.co.jp/down/soft/md515230ds.zip
