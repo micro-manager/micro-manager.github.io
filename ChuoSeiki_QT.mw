@@ -26,13 +26,20 @@ Note: Remember to register the correct serial port that connects to the correspo
 
 '''  Serial port settings  '''
 {| class="wikitable"
-|Baudrate            ||9600 |-
-|DataBits            ||8|-
-|StopBits            ||1|-
-|ParityBits          ||None|-
-|AnswerTimeout       ||500|-
-|DelayBetweenCharsMs ||0.0000|-
-|Handshaking         ||Off|-|}
+|Baudrate            ||9600 
+|-
+|DataBits            ||8
+|-
+|StopBits            ||1
+|-
+|ParityBits          ||None
+|-
+|AnswerTimeout       ||500
+|-
+|DelayBetweenCharsMs ||0.00
+|-
+|Handshaking         ||Off
+|}
 
 
 '''Default Stage settings  '''
