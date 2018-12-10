@@ -79,7 +79,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ASIStage]] - ASI XY (and Z) stage and CRIF
 * [[ASITiger]] - ASI TG-1000 "Tiger" Controller (hub device, peripherals include multiple stage types, filter wheel, shutters, micro-mirrors, etc.)
 * [[ChuoSeiki_MD5000]] - ChuoSeiki MD5000 series controller: 2-axis, single axis
-* [[ChuoSeiki_MD5000]] - ChuoSeiki QT series controller: 3-axis, 2-axis, single axis
+* [[ChuoSeiki_QT]] - ChuoSeiki QT series controller: 3-axis, 2-axis, single axis
 * [[CoolLED]] - LED illuminator (usable as a shutter device)
 * [[CONEX]] - See NewportCONEX
 * [[Conix]] - Conix Filter Changer, XY and Z stage
