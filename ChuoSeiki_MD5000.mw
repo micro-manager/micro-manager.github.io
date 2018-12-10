@@ -33,10 +33,10 @@ When you select "ChuoSeiki XY Controller||XY stages", you will be asked to regis
 When you select "ChuoSeiki Z Controller||Z stages", you will be asked to register the Serial port, Serial port setting, and Axis name.
 
 <table> 
-<tr><td>Default Stage setting  </td><td></td></tr>
-<tr><td>Speed                  </td><td> 1000 pps </td></tr>
-<tr><td>StepSize               </td><td> 1um      </td></tr>
-<tr><td>Acceleration pattern   </td><td> "1" (500 ms)</td></tr>
+<tr><td>Default Stage settings  </td><td></td></tr>
+<tr><td>Speed                   </td><td> 1000 pps </td></tr>
+<tr><td>StepSize                </td><td> 1um      </td></tr>
+<tr><td>Acceleration pattern    </td><td> "1" (500 ms)</td></tr>
 </table>
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
