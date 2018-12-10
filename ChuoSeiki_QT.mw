@@ -9,7 +9,7 @@
 <tr><td>              </td><td>2-Axis: QT-AMH2A, QT-AMH2A-35, QT-ADM2, QT-ADM2-35</td></tr>
 <tr><td>              </td><td>1-axis: QT-ADL1, QT-ADL1-35 </td></tr>
 
-<tr><td>----------------</td><td>-------------------------------------------------------------</td></tr>
+<tr><td>----------------</td><td>----------------------------------------------------------------------</td></tr>
 <table><tr><td>'''Serial port settings'''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
 <tr><td>DataBits            </td><td>8</td></tr>
@@ -18,4 +18,4 @@
 <tr><td>AnswerTimeout       </td><td>20</td></tr>
 <tr><td>DelayBetweenCharsMs </td><td>0.0000</td></tr>
 <tr><td>Handshaking         </td><td>Off</td></tr>
-<tr><td>----------------------------</td><td>-----------------</td></tr>
+<tr><td>----------------------------</td><td>------------</td></tr>
