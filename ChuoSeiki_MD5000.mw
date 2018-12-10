@@ -36,28 +36,22 @@ The MD5000 series Serial port settings are as following:
 |Handshaking        ||OFF
 |}
 
-<table><tr><td>'''Serial port settings'''  </td></tr>
-<tr><td>Baudrate              </td><td>  115200</td></tr>
-<tr><td>DataBits              </td><td>  8</td></tr>
-<tr><td>StopBits              </td><td>  1</td></tr>
-<tr><td>ParityBits            </td><td>  None</td></tr>
-<tr><td>AnswerTimeout         </td><td>  500</td></tr>
-<tr><td>DelayBetweenCharsMs   </td><td>  0.0000</td></tr>
-<tr><td>Handshaking           </td><td>  Off</td></tr>
-</table>
-
 '''Device Adapter Initilization'''
 
 The "ChuoSeiki XY Controller||XY stages" asks to register the Serial port and Serial port setting.
 
 The "ChuoSeiki Z Controller||Z stages" asks to register the Serial port, Serial port setting, and Axis name.
 
-<table> 
-<tr><td>Default Stage Settings  </td><td></td></tr>
-<tr><td>Speed                   </td><td>  1000 pps </td></tr>
-<tr><td>StepSize                </td><td>  1um      </td></tr>
-<tr><td>Acceleration pattern    </td><td>  "1" (500 ms)</td></tr>
-</table>
+{|  class="wikitable"
+!Default Stage Settings
+|-
+|Speed               ||1000 pps
+|-
+|StepSize            ||1um    
+|-
+|Acceleration pattern|| "1" (500 ms)
+|}
+
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
@@ -72,13 +66,17 @@ The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130
 In Device adapter, the Acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in Controller speed settings 1,2,3 and 4, respectively. To use a customized acceleration time, please change and register using MD51_52OPTOOL software.
 
 Default Acceleration pattern:
-<table>
-<tr><td>Pattern</td><td>   Acceleration time</td><td>   Deceleration time  </td></tr>
-<tr><td>  "1"    </td><td> 0 ms            </td><td> 0 ms            </td></tr>
-<tr><td>  "2"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
-<tr><td>  "3"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
-<tr><td>  "4"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
-</table>
+{|  class="wikitable"
+|Pattern  ||   Acceleration time|| Deceleration time 
+|-
+|| "1"    || 0 ms               ||0 ms
+|-
+|| "2"    || 500 ms             || 0 ms
+|-
+||  "3"   || 500 ms             || 0 ms 
+|-
+||  "4"   || 500 ms             || 0 ms
+|}
 
 {{Note|'''Step Resolution'''}}
 
