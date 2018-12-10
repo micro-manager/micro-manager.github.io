@@ -48,9 +48,9 @@ Default Acceleration pattern:
 <tr><td>  "4"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
 </table>
 
-'''Note on Stage resolution'''
+'''Note on Step resolution'''
 
-The Stage resolution can be initialized to the controller using MD51_52OPTOOL.
+The Step resolution can be initialized to the controller using MD51_52OPTOOL. (Default step resolution registered in MD51_52OPTOOL is 20um).
 
-For example, your stage resolution is 2um, and you registered 2um in the MD51_52OPTOOL. Then in the device adapter please set stage resolution = 1.
-If you registered 1um in the MD51_52OPTOOL. Then in the device adapter please set stage resolution = 2.
+For example, your step resolution is 2um, and you registered 2um in the MD51_52OPTOOL. Then in the device adapter please set step resolution = 1.
+If you registered 1um in the MD51_52OPTOOL. Then in the device adapter please set step resolution = 2.
