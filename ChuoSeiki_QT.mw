@@ -1,7 +1,7 @@
 == ChuoSeiki QT ==
 
 <table>
-<tr><td>'''Summary:'''</td><td>Micro-Manager device adapter for QT-series controller</td></tr>
+<tr><td>'''Summary:'''</td><td>Micro-Manager device adapters for QT-series controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Duong Quang Anh(Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>             </td><td>Okumura Daisuke(Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
@@ -13,19 +13,19 @@
 </table>
 -----------------------------------------------------------------------
 
-The ChuoSeiki QT-series controllers use an RS232 interface. It does not require any special driver to run. However, if you connect the controller via a device such as a USB-RS232 converter, be sure to install its driver.
+The ChuoSeiki QT-series controller uses an RS232 interface. It does not require any special driver to run. However, if you connect the controller via a device such as a USB-RS232 converter, be sure to install its driver.
 
-To download the QT-series controllers user manual, please follow this link, select the correct controller and download the manual under the '''Product information''' bar [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63]
+To download the QT-series controller's user manual, please follow this link [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63], select the correct controller and download the manual under the '''Product information''' bar. 
 
 '''Device Adapter Initialization'''
 
 The "ChuoSeiki QT 2-Axis" requests to register the Serial port and Serial port settings.
 The "ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port settings, and Axis name.
 
-Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapter can be registered to 1 single serial port (see 'Note on Axis name').
+Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapters can be registered to 1 single serial port (see 'Note on Axis name').
 
 <table>
-<tr><td>'''Serial port settings'''</td></tr>
+<tr><td>'''  Serial port settings  '''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
 <tr><td>DataBits            </td><td>8</td></tr>
 <tr><td>StopBits            </td><td>1</td></tr>
