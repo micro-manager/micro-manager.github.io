@@ -36,4 +36,11 @@ The "ChuoSeiki XY Controller||XY stages" support only the 2-axis controller (MD5
 The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130D) and 2-axis controller (MD5230D). The axis name can be defined in the device adapter. For MD5130D, the axis name must be defined as "X". For MD5230D, the axis name can be defined as "X" or "Y", depends on which channel is connected to the Z-stage.
 
 '''Note on acceleration pattern'''
-In Device adapter, the acceleration pattern can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in speed setting 1,2,3 and 4, default are 0, 500, 500 and 500 (ms), respectively. To change the acceleration time to a custom value, please use MD51_52OPTOOL software.
+In Device adapter, the acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in speed setting 1,2,3 and 4, respectively. To change the acceleration time to a custom value, please use MD51_52OPTOOL software.
+<table><tr><td>'''Default acceleration pattern'''</td></tr>
+<tr><td>pattern</td><td>acceleration time</td><td>deceleration time</td></tr>
+<tr><td>  "1"  </td><td> 0 ms            </td><td> 0 ms            </td></tr>
+<tr><td>  "2"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+<tr><td>  "3"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+<tr><td>  "4"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+</table>
