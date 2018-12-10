@@ -40,9 +40,9 @@ In Device adapter, the acceleration pattern (include acceleration and decelerati
 
 Default acceleration pattern
 <table>
-<tr><td>pattern</td><td>acceleration time</td><td>deceleration time</td></tr>
-<tr><td>  "1"  </td><td> 0 ms            </td><td> 0 ms            </td></tr>
-<tr><td>  "2"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
-<tr><td>  "3"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
-<tr><td>  "4"  </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+<tr><td>Pattern  </td><td>Acceleration time  </td><td>Deceleration time  </td></tr>
+<tr><td>  "1"    </td><td> 0 ms            </td><td> 0 ms            </td></tr>
+<tr><td>  "2"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+<tr><td>  "3"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
+<tr><td>  "4"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
 </table>
