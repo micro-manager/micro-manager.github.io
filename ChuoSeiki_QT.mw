@@ -23,7 +23,7 @@ To download the QT-series controller's user manual, please follow this link [htt
 <tr><td>The "ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port settings, and Axis name.</td></tr>
 </table>
 
-{{Note|Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapters can be registered to 1 single serial port (see 'Note on Axis name').}}
+{{Note|Register the correct serial port that connects to the corresponding QT controller. If using 3-axis controller, the above 2 device adapters should be registered to 1 single serial port (see 'Note on Axis name').}}
 
 '''  Serial port settings  '''
 {| class="wikitable"
@@ -62,4 +62,4 @@ The "ChuoSeiki QT 2-Axis" support the 2-axis and 3-axis controllers. In this dev
 
 The "ChuoSeiki QT 1-Axis" support all the 1-axis, 2-axis, and 3-axis  controllers. The axis name (default is "A") can be defined in the device adapter, as "A" or "B" or "C", corresponding to the controller's A or B or C channels.
 
-To use the device adapter with a 3-axis controller, please register both "ChuoSeiki QT 2-Axis" and "ChuoSeiki QT 1-Axis" with the same Serial port. And remember to set axis name as "C" for the "ChuoSeiki QT 1-Axis".
+To use the device adapter with a 3-axis controller, please register both "ChuoSeiki QT 2-Axis" and "ChuoSeiki QT 1-Axis" with the same Serial port. And remember to set axis name as "C" for the "ChuoSeiki QT 1-Axis". In that case, the "ChuoSeiki QT 2-Axis" will drive A and B channels, and "ChuoSeiki QT 1-Axis" will drive C channel of the controller.
