@@ -1,13 +1,14 @@
 == ChuoSeiki MD5000 ==
 
-<table><tr><td>
-'''Summary:'''</td><td>Micro-Manager device adapter for MD5000-series controller</td></tr>
+<table>
+<tr><td>'''Summary:'''</td><td>Micro-Manager device adapter for MD5000-series controller</td></tr>
 <tr><td>'''Author:'''</td><td>Duong Quang Anh (Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>2-Axis: MD5230D</td></tr>
 <tr><td>              </td><td>1-axis: MD5123D </td></tr>
 </table>
+-----------------------------------------------------
 
 The MD5000 series controllers use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as: customized acceleration time, motor current, sensor setting, home search setting, etc.).
 
@@ -37,7 +38,7 @@ The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130
 
 '''Note on Acceleration pattern'''
 
-In Device adapter, the Acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in speed setting 1,2,3 and 4, respectively. To change the acceleration time to a custom value, please use MD51_52OPTOOL software.
+In Device adapter, the Acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in speed settings 1,2,3 and 4, respectively. To change use a customized acceleration time, please register in MD51_52OPTOOL software.
 
 Default Acceleration pattern:
 <table>
