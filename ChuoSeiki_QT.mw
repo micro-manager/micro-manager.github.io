@@ -45,7 +45,7 @@ Note: Remember to register the correct serial port that connects to the correspo
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
-'''Note on Axis name'''
+{{Note|'''Axis Name Registration'''}}
 
 The "ChuoSeiki QT 2-Axis" support the 2-axis and 3-axis controllers. In this device adapter, the 2 stages names are defined as "A" and "B", corresponding to the controller's A and B channels. It uses the functions that control two axes at the same time.
 
