@@ -43,13 +43,15 @@ Note: Remember to register the correct serial port that connects to the correspo
 
 
 '''Default Stage settings  '''
-
-<table> 
-<tr><td>HighSpeed               </td><td>  3000 pps </td></tr>
-<tr><td>LowSpeed                </td><td>  1000 pps </td></tr>
-<tr><td>StepSize                </td><td>  1um      </td></tr>
-<tr><td>Acceleration time       </td><td>  100 ms </td></tr>
-</table>
+{| class="wikitable"
+|HighSpeed              ||  3000 pps 
+|-
+|LowSpeed               ||  1000 pps 
+|-
+|StepSize               ||  1um      
+|-
+|Acceleration time      || 100 ms    
+|}
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
