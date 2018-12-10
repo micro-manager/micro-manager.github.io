@@ -23,7 +23,7 @@ To download the QT-series controller's user manual, please follow this link [htt
 <tr><td>The "ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port settings, and Axis name.</td></tr>
 </table>
 
-Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapters can be registered to 1 single serial port (see 'Note on Axis name').
+{{Note|Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapters can be registered to 1 single serial port (see 'Note on Axis name').}}
 
 '''  Serial port settings  '''
 {| class="wikitable"
