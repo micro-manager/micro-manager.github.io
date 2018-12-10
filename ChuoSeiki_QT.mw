@@ -18,8 +18,8 @@ To download the QT-series controllers user manual, please follow this link, sele
 
 '''Device Adapter initialization'''
 
-When you select "ChuoSeiki XY Controller||XY stages", you will be asked to register the Serial port and Serial port settings.
-When you select "ChuoSeiki Z Controller||Z stages", you will be asked to register the Serial port, Serial port settings, and Axis name.
+When you select "ChuoSeiki QT 2-Axis", you will be asked to register the Serial port and Serial port settings.
+When you select "ChuoSeiki QT 1-Axis", you will be asked to register the Serial port, Serial port settings, and Axis name.
 
 The QT-series Serial port settings are as following:
 <table>
