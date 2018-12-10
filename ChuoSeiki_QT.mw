@@ -12,14 +12,16 @@
 </table>
 -----------------------------------------------------------------------
 
-The ChuoSeiki QT-series controllers use RS232 interface or virtual Serial via the LAN connection. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
+The ChuoSeiki QT-series controllers use an RS232 interface. It does not require any special driver to run. However, if you connect the controller via a device such as a USB-RS232 converter, be sure to install its driver.
 
-To download the MD5000 USB driver and software, please follow this link
-[http://www.novaelec.co.jp/down/soft/md515230ds.zip]
+To download the QT-series controllers user manual, please follow this link, select the correct controller and download the manual under the Product information bar [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63]
 
-To download the MD5000 user manual, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
+'''Device Adapter initialization'''
 
-The MD5000 series Serial port settings are as following:
+When you select "ChuoSeiki XY Controller||XY stages", you will be asked to register the Serial port and Serial port setting.
+When you select "ChuoSeiki Z Controller||Z stages", you will be asked to register the Serial port, Serial port setting, and Axis name.
+
+The QT-series Serial port settings are as following:
 <table>
 <tr><td>'''Serial port settings'''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
@@ -30,3 +32,21 @@ The MD5000 series Serial port settings are as following:
 <tr><td>DelayBetweenCharsMs </td><td>0.0000</td></tr>
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
+
+Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
+
+<table> 
+<tr><td>Default Stage settings  </td><td></td></tr>
+<tr><td>HighSpeed               </td><td>  3000 pps </td></tr>
+<tr><td>LowSpeed                </td><td>  1000 pps </td></tr>
+<tr><td>StepSize                </td><td>  1um      </td></tr>
+<tr><td>Acceleration time       </td><td>  100 ms </td></tr>
+</table>
+
+'''Note on Axis name'''
+
+The "ChuoSeiki QT 2-Axis" support the 2-axis and 3-axis controllers. In this device adapter, the 2 stages names are defined as "A" and "B", corresponding to the controller's A and B channels. It uses the functions that control two axes at the same time.
+
+The "ChuoSeiki QT 1-Axis" support all the 1-axis, 2-axis, and 3-axis  controllers. The axis name (default is "A") can be defined in the device adapter, as "A" or "B" or "C", corresponding to the controller's A or B or C channels.
+
+To use the device adapter with a 3-axis controller, please register both "ChuoSeiki QT 2-Axis" and "ChuoSeiki QT 1-Axis" with the same Serial port. And the "ChuoSeiki QT 1-Axis" axis name must be changed to "C".
