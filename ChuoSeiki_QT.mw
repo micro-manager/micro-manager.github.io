@@ -6,11 +6,20 @@
 <tr><td>             </td><td>Okumura Daisuke(Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
-<tr><td>'''Devices:'''</td><td>3-Axis: QT-AMM3, QT-ADM3, QT-ADM3-35</td></tr>
+<tr><td>'''Devices:'''</td><td>3-Axis: [[QT-AMM3]], QT-ADM3, QT-ADM3-35</td></tr>
 <tr><td>              </td><td>2-Axis: QT-AMH2A, QT-AMH2A-35, QT-ADM2, QT-ADM2-35</td></tr>
 <tr><td>              </td><td>1-axis: QT-ADL1, QT-ADL1-35 </td></tr>
 </table>
--------------------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+The ChuoSeiki QT-series controllers use RS232 interface or virtual Serial via the LAN connection. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
+
+To download the MD5000 USB driver and software, please follow this link
+[http://www.novaelec.co.jp/down/soft/md515230ds.zip]
+
+To download the MD5000 user manual, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
+
+The MD5000 series Serial port settings are as following:
 <table>
 <tr><td>'''Serial port settings'''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
