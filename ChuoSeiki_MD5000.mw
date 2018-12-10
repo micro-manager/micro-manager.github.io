@@ -37,7 +37,8 @@ The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130
 
 '''Note on acceleration pattern'''
 In Device adapter, the acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in speed setting 1,2,3 and 4, respectively. To change the acceleration time to a custom value, please use MD51_52OPTOOL software.
-'''Default acceleration pattern'''
+
+Default acceleration pattern
 <table>
 <tr><td>pattern</td><td>acceleration time</td><td>deceleration time</td></tr>
 <tr><td>  "1"  </td><td> 0 ms            </td><td> 0 ms            </td></tr>
