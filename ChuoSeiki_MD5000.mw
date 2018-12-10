@@ -21,9 +21,19 @@ The MD5000 series Serial port settings are as following:
 
 '''Serial port settings'''
 {| class="wikitable"
-!Baudrate||115200
+|Baudrate  ||115200
 |-
-!DataBits||8
+|DataBits  ||8
+|-
+|StopBits  ||1
+|-
+|ParityBits||None
+|-
+|AnswerTimeout||500
+|-
+|DelayBetweenCharsMs||0.00
+|-
+|Handshaking        ||OFF
 |}
 
 <table><tr><td>'''Serial port settings'''  </td></tr>
