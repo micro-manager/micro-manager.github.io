@@ -12,11 +12,11 @@
 '''Serial port settings'''
 
 {| cellspacing="10"
-|Baudrate||115200
-|DataBits||8
-|StopBits||1
-|ParityBits||None
-|AnswerTimeout||20
-|DelayBetweenCharsMs||0.0000
-|Handshaking||Off
+<tr>|Baudrate||115200<tr>
+<tr>|DataBits||8<tr>
+<tr>|StopBits||1<tr>
+<tr>|ParityBits||None<tr>
+<tr>|AnswerTimeout||20<tr>
+<tr>|DelayBetweenCharsMs||0.0000<tr>
+<tr>|Handshaking||Off<tr>
 |}
