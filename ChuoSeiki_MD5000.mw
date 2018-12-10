@@ -15,10 +15,8 @@ The MD5000 series controllers use a virtual serial port via the USB interface. I
 To download the MD5000 USB driver and software, please follow this link:
 http://www.novaelec.co.jp/down/soft/md515230ds.zip
 
-To download the MD5000 user manual, please follow this link:
+To download the MD5000 user manual, please follow this link:[[Media:md515230de.pdf]]
 http://www.novaelec.co.jp/eng/down/file/md515230de.pdf
-
-Example configuration file: [[Media:Example.cfg]]
 
 The MD5000 series Serial port settings are as following:
 
