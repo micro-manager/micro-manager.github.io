@@ -25,6 +25,6 @@ The MD5000 series Serial port settings are as following:
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
 
-The "ChuoSeiki XY Controller||XY stages" support only the 2-axis controller (MD5230D). In this device adapter, the 2 stages names are "X" and "Y", respectively. And it use some functions that only support MD5230D controller.
+The "ChuoSeiki XY Controller||XY stages" support only the 2-axis controller (MD5230D). In this device adapter, the 2 stages names are defined as "X" and "Y", respectively. And it uses some functions that only support MD5230D controller.
 
 The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130D) and 2-axis controller (MD5230D). The axis name can be defined in the device adapter. For MD5130D, the axis name must be defined as "X". For MD5230D, the axis name can be defined as "X" or "Y", depends on which channel is connected to the Z-stage.
