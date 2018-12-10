@@ -1,0 +1,9 @@
+== ChuoSeiki MD5000 ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Micro-Manager device adapter for MD5000-series controller</td></tr>
+<tr><td>'''Author:'''</td><td>Duong Quang Anh (Chuo Precision Industrial Co. LTD. Japan)</td></tr>
+<tr><td>'''License:'''</td><td>LGPL</td></tr> 
+<tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
+<tr><td>'''Devices:'''</td><td>2-Axis: MD5230D</td></tr>
+<tr><td>              </td><td>1-axis: MD5123D </td></tr>
