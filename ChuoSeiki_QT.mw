@@ -34,15 +34,15 @@ Note: Remember to register the correct serial port that connects to the correspo
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
 
-Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
-
 <table> 
-<tr><td>Default Stage settings  </td><td></td></tr>
+<tr><td>'''Default Stage settings  '''</td><td></td></tr>
 <tr><td>HighSpeed               </td><td>  3000 pps </td></tr>
 <tr><td>LowSpeed                </td><td>  1000 pps </td></tr>
 <tr><td>StepSize                </td><td>  1um      </td></tr>
 <tr><td>Acceleration time       </td><td>  100 ms </td></tr>
 </table>
+
+Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
 '''Note on Axis name'''
 
