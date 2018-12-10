@@ -28,7 +28,7 @@ The QT-series Serial port settings are as following:
 <tr><td>DataBits            </td><td>8</td></tr>
 <tr><td>StopBits            </td><td>1</td></tr>
 <tr><td>ParityBits          </td><td>None</td></tr>
-<tr><td>AnswerTimeout       </td><td>20</td></tr>
+<tr><td>AnswerTimeout       </td><td>500</td></tr>
 <tr><td>DelayBetweenCharsMs </td><td>0.0000</td></tr>
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
