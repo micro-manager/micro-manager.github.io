@@ -44,7 +44,7 @@ The "ChuoSeiki Z Controller||Z stages" asks to register the Serial port, Serial 
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
-'''Note on Axis Name'''
+{{NOTE|'''Axis Name Registration'''}}
 
 The "ChuoSeiki XY Controller||XY stages" support only the 2-axis controller (MD5230D). In this device adapter, the 2 stages names are defined as "X" and "Y", respectively. And it uses some functions that only support MD5230D controller.
 
