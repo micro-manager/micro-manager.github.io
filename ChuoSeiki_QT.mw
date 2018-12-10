@@ -54,7 +54,7 @@ To download the QT-series controller's user manual, please follow this link [htt
 |Acceleration time      || 100 ||ms    
 |}
 
-Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
+<em>Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.</em>
 
 {{Note|'''Axis Name Registration'''}}
 
