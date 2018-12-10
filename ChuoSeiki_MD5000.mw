@@ -17,6 +17,8 @@ Please click here [https://micro-manager.org/wiki/File:MD5000USBdriver.zip] to d
 
 To download the <b>MD5000 user manual</b>, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
 
+The <b>ChuoSeiki MD5000 device adapter</b> can control one or more MD-controllers: you can register multi-device adapters in <em>Hardware Configuration Wizard</em> with different serial port, and each device adapter controls 1 controller at one serial port.
+
 The Serial port settings are as following:
 
 '''Serial port settings'''
