@@ -81,7 +81,8 @@ Default Acceleration pattern:
 {{Note|'''Step Resolution'''}}
 
 The Step resolution (step zise) can be initialized to the controller using MD51_52OPTOOL. (Default step resolution registered in MD51_52OPTOOL is 20um).
-
+<table>
 <tr>For example, in case of your step resolution is 2um:</tr>
 <tr>- If you registered 2um in the MD51_52OPTOOL, then please set step resolution = 1 in the device adapter.</tr>
 <tr>- If you registered 1um in the MD51_52OPTOOL, then please set step resolution = 2 in the device adapter.</tr>
+</table>
