@@ -38,7 +38,7 @@ Note: Remember to register the correct serial port that connects to the correspo
 |-
 |DelayBetweenCharsMs ||0.00 || ms
 |-
-|Handshaking         ||Off  
+|Handshaking         ||Off  ||
 |}
 
 
