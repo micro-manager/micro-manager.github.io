@@ -1,7 +1,7 @@
 == ChuoSeiki QT ==
 
-<table><tr><td>
-'''Summary:'''</td><td>Micro-Manager device adapter for QT-series controller</td></tr>
+<table>
+<tr><td>'''Summary:'''</td><td>Micro-Manager device adapter for QT-series controller</td></tr>
 <tr><td>'''Author:'''</td><td>Duong Quang Anh(Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>             </td><td>Okumura Daisuke(Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
