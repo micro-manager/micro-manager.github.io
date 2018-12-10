@@ -16,14 +16,13 @@ The ChuoSeiki QT-series controllers use an RS232 interface. It does not require 
 
 To download the QT-series controllers user manual, please follow this link, select the correct controller and download the manual under the '''Product information''' bar [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63]
 
-'''Device Adapter initialization'''
+'''Device Adapter Initialization'''
 
-"ChuoSeiki QT 2-Axis" requests to register the Serial port and Serial port settings.
-"ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port settings, and Axis name.
+The "ChuoSeiki QT 2-Axis" requests to register the Serial port and Serial port settings.
+The "ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port settings, and Axis name.
 
-Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapter can be registered to 1 single serial port (read 'Note on Axis name')
+Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapter can be registered to 1 single serial port (see 'Note on Axis name').
 
-The QT-series Serial port settings are as following:
 <table>
 <tr><td>'''Serial port settings'''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
