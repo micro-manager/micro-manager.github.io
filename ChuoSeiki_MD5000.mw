@@ -19,14 +19,14 @@ To download the MD5000 user manual, please follow this link [http://www.novaelec
 
 The MD5000 series Serial port settings are as following:
 
-<table><tr><td>'''Serial port settings'''</td></tr>
-<tr><td>Baudrate            </td><td>115200</td></tr>
-<tr><td>DataBits            </td><td>8</td></tr>
-<tr><td>StopBits            </td><td>1</td></tr>
-<tr><td>ParityBits          </td><td>None</td></tr>
-<tr><td>AnswerTimeout       </td><td>500</td></tr>
-<tr><td>DelayBetweenCharsMs </td><td>0.0000</td></tr>
-<tr><td>Handshaking         </td><td>Off</td></tr>
+<table><tr><td>'''Serial port settings'''  </td></tr>
+<tr><td>Baudrate              </td><td>115200</td></tr>
+<tr><td>DataBits              </td><td>8</td></tr>
+<tr><td>StopBits              </td><td>1</td></tr>
+<tr><td>ParityBits            </td><td>None</td></tr>
+<tr><td>AnswerTimeout         </td><td>500</td></tr>
+<tr><td>DelayBetweenCharsMs   </td><td>0.0000</td></tr>
+<tr><td>Handshaking           </td><td>Off</td></tr>
 </table>
 
 When you select "ChuoSeiki XY Controller||XY stages", you will be asked to register the Serial port and Serial port setting.
@@ -53,7 +53,7 @@ In Device adapter, the Acceleration pattern (include acceleration and decelerati
 
 Default Acceleration pattern:
 <table>
-<tr><td>Pattern  </td><td>Acceleration time  </td><td>Deceleration time  </td></tr>
+<tr><td>Pattern    </td><td>Acceleration time    </td><td>Deceleration time  </td></tr>
 <tr><td>  "1"    </td><td> 0 ms            </td><td> 0 ms            </td></tr>
 <tr><td>  "2"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
 <tr><td>  "3"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
