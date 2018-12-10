@@ -24,8 +24,9 @@ The "ChuoSeiki QT 1-Axis" requests to register the Serial port, Serial port sett
 
 Note: Remember to register the correct serial port that connects to the corresponding QT controller. In case of using 3-axis controller, the above 2 device adapters can be registered to 1 single serial port (see 'Note on Axis name').
 
+'''  Serial port settings  '''
+
 <table>
-<tr><td>'''  Serial port settings  '''</td></tr>
 <tr><td>Baudrate            </td><td>9600</td></tr>
 <tr><td>DataBits            </td><td>8</td></tr>
 <tr><td>StopBits            </td><td>1</td></tr>
@@ -35,8 +36,9 @@ Note: Remember to register the correct serial port that connects to the correspo
 <tr><td>Handshaking         </td><td>Off</td></tr>
 </table>
 
+'''Default Stage settings  '''
+
 <table> 
-<tr><td>'''Default Stage settings  '''</td><td></td></tr>
 <tr><td>HighSpeed               </td><td>  3000 pps </td></tr>
 <tr><td>LowSpeed                </td><td>  1000 pps </td></tr>
 <tr><td>StepSize                </td><td>  1um      </td></tr>
