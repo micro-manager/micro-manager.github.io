@@ -11,13 +11,13 @@
 </table>
 -----------------------------------------------------
 
-The MD5000 series controllers use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the MD51_52OPTOOL to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
+The <b>MD5000 series controllers</b> use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the <b>MD51_52OPTOOL</b> to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
 
-Please click here [https://micro-manager.org/wiki/File:MD5000USBdriver.zip] to download the MD5000 USB driver and here [https://micro-manager.org/wiki/File:MD51_52OPTOOL.zip] for the software.
+Please click here [https://micro-manager.org/wiki/File:MD5000USBdriver.zip] to download the <b>MD5000 USB driver</b> and here [https://micro-manager.org/wiki/File:MD51_52OPTOOL.zip] for the <b>MD51_52OPTOOL</b> software.
 
-To download the MD5000 user manual, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
+To download the <b>MD5000 user manual<b>, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
 
-The MD5000 series Serial port settings are as following:
+The Serial port settings are as following:
 
 '''Serial port settings'''
 {| class="wikitable"
@@ -52,8 +52,7 @@ The MD5000 series Serial port settings are as following:
 |Acceleration pattern|| "1" ||(500 ms)
 |}
 
-
-Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
+<em>Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.</em>
 
 {{Note|'''Axis Name Registration'''}}
 
@@ -80,9 +79,9 @@ Default Acceleration pattern:
 
 {{Note|'''Step Resolution'''}}
 
-The Step resolution (step zise) can be initialized to the controller using MD51_52OPTOOL. (Default step resolution registered in MD51_52OPTOOL is 20um).
+The Step resolution (step zise) can be initialized to the controller using <b>MD51_52OPTOOL</b>. (Default step resolution registered in <b>MD51_52OPTOOL</b> is 20um).
 <table>
-<tr><td>For example, in case of your step resolution is 2um:</td></tr>
-<tr><td>- If you registered 2um in the MD51_52OPTOOL, then please set step resolution = 1 in the device adapter.</td></tr>
-<tr><td>- If you registered 1um in the MD51_52OPTOOL, then please set step resolution = 2 in the device adapter.</td></tr>
+<tr><td>For example, in case of your step resolution is 2 um:</td></tr>
+<tr><td>- If you registered 2 um in the <b>MD51_52OPTOOL</b>, then please set step resolution = 1 in the device adapter.</td></tr>
+<tr><td>- If you registered 1 um in the <b>MD51_52OPTOOL</b>, then please set step resolution = 2 in the device adapter.</td></tr>
 </table>
