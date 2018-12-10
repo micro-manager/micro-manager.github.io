@@ -8,7 +8,7 @@
 <tr><td>'''Devices:'''</td><td>2-Axis: MD5230D</td></tr>
 <tr><td>              </td><td>1-axis: MD5123D </td></tr>
 
-<tr><td>----------------</td><td>---------------------------------------</td></tr>
+<tr><td>----------------</td><td>-------------------------------------</td></tr>
 <table><tr><td>'''Serial port settings'''</td></tr>
 <tr><td>Baudrate            </td><td>115200</td></tr>
 <tr><td>DataBits            </td><td>8</td></tr>
@@ -17,4 +17,6 @@
 <tr><td>AnswerTimeout       </td><td>20</td></tr>
 <tr><td>DelayBetweenCharsMs </td><td>0.0000</td></tr>
 <tr><td>Handshaking         </td><td>Off</td></tr>
-<tr><td>----------------------------</td><td>------------------------------</td></tr>
+<tr><td>----------------------------</td><td>-------------------------</td></tr>
+
+http://www.novaelec.co.jp/down/soft/md515230ds.zip
