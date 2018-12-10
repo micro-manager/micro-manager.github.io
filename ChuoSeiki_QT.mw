@@ -14,7 +14,7 @@
 
 The ChuoSeiki QT-series controllers use an RS232 interface. It does not require any special driver to run. However, if you connect the controller via a device such as a USB-RS232 converter, be sure to install its driver.
 
-To download the QT-series controllers user manual, please follow this link, select the correct controller and download the manual under the Product information bar [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63]
+To download the QT-series controllers user manual, please follow this link, select the correct controller and download the manual under the '''Product information''' bar [http://www.chuo.co.jp/english/contents/hp0063/list.php?CNo=63]
 
 '''Device Adapter initialization'''
 
