@@ -26,19 +26,19 @@ Note: Remember to register the correct serial port that connects to the correspo
 
 '''  Serial port settings  '''
 {| class="wikitable"
-|Baudrate            ||9600 
+|Baudrate            ||9600 || bps
 |-
-|DataBits            ||8
+|DataBits            ||8    || bits
 |-
-|StopBits            ||1
+|StopBits            ||1    || bit
 |-
-|ParityBits          ||None
+|ParityBits          ||None || bit
 |-
-|AnswerTimeout       ||500
+|AnswerTimeout       ||500  || ms
 |-
-|DelayBetweenCharsMs ||0.00
+|DelayBetweenCharsMs ||0.00 || ms
 |-
-|Handshaking         ||Off
+|Handshaking         ||Off  
 |}
 
 
@@ -48,7 +48,7 @@ Note: Remember to register the correct serial port that connects to the correspo
 |-
 |LowSpeed               ||  1000 pps 
 |-
-|StepSize               ||  1um      
+|StepSize               ||  1 um      
 |-
 |Acceleration time      || 100 ms    
 |}
