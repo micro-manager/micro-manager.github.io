@@ -29,11 +29,14 @@ The MD5000 series Serial port settings are as following:
 <tr><td>Handshaking           </td><td>  Off</td></tr>
 </table>
 
-When you select "ChuoSeiki XY Controller||XY stages", you will be asked to register the Serial port and Serial port setting.
-When you select "ChuoSeiki Z Controller||Z stages", you will be asked to register the Serial port, Serial port setting, and Axis name.
+'''Device Adapter Initilization'''
+
+The "ChuoSeiki XY Controller||XY stages" asks to register the Serial port and Serial port setting.
+
+The "ChuoSeiki Z Controller||Z stages" asks to register the Serial port, Serial port setting, and Axis name.
 
 <table> 
-<tr><td>Default Stage settings  </td><td></td></tr>
+<tr><td>Default Stage Settings  </td><td></td></tr>
 <tr><td>Speed                   </td><td>  1000 pps </td></tr>
 <tr><td>StepSize                </td><td>  1um      </td></tr>
 <tr><td>Acceleration pattern    </td><td>  "1" (500 ms)</td></tr>
@@ -41,13 +44,13 @@ When you select "ChuoSeiki Z Controller||Z stages", you will be asked to registe
 
 Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.
 
-'''Note on Axis name'''
+'''Note on Axis Name'''
 
 The "ChuoSeiki XY Controller||XY stages" support only the 2-axis controller (MD5230D). In this device adapter, the 2 stages names are defined as "X" and "Y", respectively. And it uses some functions that only support MD5230D controller.
 
 The "ChuoSeiki Z Controller||Z stage" support both the 1-axis controller (MD5130D) and 2-axis controller (MD5230D). The axis name can be defined in the device adapter. For MD5130D, the axis name must be defined as "X". For MD5230D, the axis name can be defined as "X" or "Y", depends on which channel is connected to the Z-stage.
 
-'''Note on Acceleration pattern'''
+'''Note on Acceleration Pattern'''
 
 In Device adapter, the Acceleration pattern (include acceleration and deceleration times) can be changed from "1", "2", "3" and "4". They correspond to the 4 acceleration times that are registered in Controller speed settings 1,2,3 and 4, respectively. To use a customized acceleration time, please change and register using MD51_52OPTOOL software.
 
@@ -60,9 +63,9 @@ Default Acceleration pattern:
 <tr><td>  "4"    </td><td> 500 ms          </td><td> 0 ms            </td></tr>
 </table>
 
-'''Note on Step resolution'''
+'''Note on Step Resolution'''
 
-The Step resolution can be initialized to the controller using MD51_52OPTOOL. (Default step resolution registered in MD51_52OPTOOL is 20um).
+The Step resolution (step zise) can be initialized to the controller using MD51_52OPTOOL. (Default step resolution registered in MD51_52OPTOOL is 20um).
 
 For example, your step resolution is 2um, and you registered 2um in the MD51_52OPTOOL, then please set step resolution = 1 in the device adapter.
 If you registered 1um in the MD51_52OPTOOL, then please set step resolution = 2 in the device adapter.
