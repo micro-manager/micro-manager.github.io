@@ -47,9 +47,9 @@ To download the QT-series controller's user manual, please follow this link [htt
 
 '''Default Stage settings  '''
 {| class="wikitable"
-|HighSpeed              ||  3000 ||pps 
+|HighSpeed              ||  2000 ||pps 
 |-
-|LowSpeed               ||  1000 ||pps 
+|LowSpeed               ||  500 ||pps 
 |-
 |StepSize               ||  1 ||um      
 |-
