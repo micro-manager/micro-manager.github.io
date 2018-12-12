@@ -60,9 +60,9 @@ To download the QT-series controller's user manual, please follow this link [htt
 
 {{Note|'''Axis Name Registration'''}}
 
-The "ChuoSeiki QT 2-Axis" support the 2-axis and 3-axis controllers. In this device adapter, the 2 stages names are defined as "A" and "B", corresponding to the controller's A and B channels. It uses the functions that control two axes at the same time.
+The "ChuoSeiki QT 2-Axis" support the 2-axis or control AB channel of the 3-axis controllers. In this device adapter, the 2 stages names are fixed as "A" and "B", corresponding to the controller's A and B channels. It uses the functions that control two axes at the same time.
 
-The "ChuoSeiki QT 1-Axis" support all the 1-axis, 2-axis, and 3-axis  controllers. The axis name (default is "A") can be defined in the device adapter, as "A" or "B" or "C", corresponding to the controller's A or B or C channels.
+The "ChuoSeiki QT 1-Axis" support the 1-axis controller or control 1 channel of the 2-axis/3-axis  controllers. The axis name (default is "A") can be re-defined in the device adapter as "A" or "B" or "C", corresponding to the controller's A or B or C channels.
 
-To use the device adapter with a 3-axis controller, please register both "ChuoSeiki QT 2-Axis" and "ChuoSeiki QT 1-Axis" with the same Serial port. And remember to set axis name as "C" for the "ChuoSeiki QT 1-Axis". In that case, the "ChuoSeiki QT 2-Axis" will drive the channels A and B, and the "ChuoSeiki QT 1-Axis" will drive the channel C of the controller.
+To control a 3-axis controller, you need to register one "ChuoSeiki QT 2-Axis" for its AB channel and one "ChuoSeiki QT 1-Axis" for its C channel. The two device adapter must be registered with the same Serial port, which connected to the 3-axis controller. And remember to change the axis name to "C" with the "ChuoSeiki QT 1-Axis". 
 ----------------------------------
