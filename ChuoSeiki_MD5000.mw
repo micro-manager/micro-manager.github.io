@@ -40,8 +40,8 @@ The Serial port settings are as following:
 
 <table>
 <tr><td>'''Device Adapter Initilization'''</td></tr>
-<tr><td>The "ChuoSeiki XY Controller||XY stages" asks to register the Serial port and Serial port setting.</td></tr>
-<tr><td>The "ChuoSeiki Z Controller||Z stages" asks to register the Serial port, Serial port setting, and Axis name.</td></tr>
+<tr><td>The "ChuoSeiki MD 2-Axis||XY stages" asks to register the Serial port and Serial port setting.</td></tr>
+<tr><td>The "ChuoSeiki MD 1-Axis||Z stages" asks to register the Serial port, Serial port setting, and Axis name (or stage channel).</td></tr>
 </table>
 
 {|  class="wikitable"
