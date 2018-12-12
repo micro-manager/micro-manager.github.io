@@ -11,7 +11,7 @@
 </table>
 -----------------------------------------------------
 
-The <b>MD5000 series controllers</b> use a virtual serial port via the USB interface. It requires to install the USB driver before using. You can also install the <b>MD51_52OPTOOL</b> to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
+The <b>MD5000 series controllers</b> use a virtual serial port via the USB interface. You have to install the MD5000 USB driver before using. You can also install the <b>MD51_52OPTOOL</b> to set some parameters that can not be changed in Micro-Manager (such as customized acceleration time, motor current, sensor settings, home search settings, etc.).
 
 Please click here [https://micro-manager.org/wiki/File:MD5000USBdriver.zip] to download the <b>MD5000 USB driver</b> and here [https://micro-manager.org/wiki/File:MD51_52OPTOOL.zip] for the <b>MD51_52OPTOOL</b> software.
 
