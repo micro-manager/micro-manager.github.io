@@ -2,7 +2,7 @@
 
 <table>
 <tr><td>'''Summary:'''</td><td>Micro-Manager device adapters for MD5000-series controllers</td></tr>
-<tr><td>'''Author:'''</td><td>[https://micro-manager.org/wiki/Duong_Quang_Anh] (Chuo Precision Industrial Co. LTD. Japan)</td></tr>
+<tr><td>'''Author:'''</td><td>[[Duong Quang Anh]] (Chuo Precision Industrial Co. LTD. Japan)</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses virtual serial via USB interface)</td></tr>
 <tr><td>'''Devices:'''</td><td>2-Axis: MD5230D</td></tr>
