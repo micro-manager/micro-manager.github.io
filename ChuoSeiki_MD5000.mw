@@ -54,7 +54,7 @@ The Serial port settings are as following:
 |Acceleration pattern|| "1" ||(500 ms)
 |}
 
-<em>Please revised stage setting using Group and Preset in Micro-Manager. The setting can be saved in a .cfg file.</em>
+<em>Please customize your stage settings using Group and Preset in Micro-Manager. Or you can load the setting from a saved .cfg file.</em>
 
 {{Note|'''Axis Name Registration'''}}
 
