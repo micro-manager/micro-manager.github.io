@@ -11,13 +11,13 @@
 </table>
 -----------------------------------------------------
 
-The <b>MD5000 series controllers</b> use a virtual serial port via the USB interface. You have to install the <b>MD5000 USB driver<b> before using. You can also install the <b>MD51_52OPTOOL</b> to customize some parameters that can not be changed in Micro-Manager (such as acceleration time, motor current, sensor settings, home-search settings, etc.).
+The <b>MD5000 series controllers</b> use a virtual serial port via the USB interface. You have to install the <b>MD5000 USB driver</b> before using. You can also install the <b>MD51_52OPTOOL</b> to customize some parameters that can not be changed in Micro-Manager (such as acceleration time, motor current, sensor settings, home-search settings, etc.).
 
 Please click here [https://micro-manager.org/wiki/File:MD5000USBdriver.zip] to download the <b>MD5000 USB driver</b> and here [https://micro-manager.org/wiki/File:MD51_52OPTOOL.zip] for the <b>MD51_52OPTOOL</b> software.
 
 To download the <b>MD5000 user manual</b>, please follow this link [http://www.novaelec.co.jp/eng/down/file/md515230de.pdf]
 
-The <b>ChuoSeiki MD5000 device adapter</b> can control one or more MD-controllers. You can register multi device adapters in <em>Hardware Configuration Wizard</em> with different serial ports (USB-virtual), and each device adapter drives one controller via one serial port.
+The <b>ChuoSeiki MD5000</b> device adapter can control one or more MD-controllers. You can register multi adapters in <em>Hardware Configuration Wizard</em> with different serial ports (USB-virtual), and each device adapter drives one controller via one serial port.
 
 The Serial port settings are as following:
 
@@ -40,8 +40,8 @@ The Serial port settings are as following:
 
 <table>
 <tr><td>'''Device Adapter Initilization'''</td></tr>
-<tr><td>The "ChuoSeiki MD 2-Axis||XY stages" asks to register the Serial port and Serial port setting.</td></tr>
-<tr><td>The "ChuoSeiki MD 1-Axis||Z stages" asks to register the Serial port, Serial port setting, and Axis name (or stage channel).</td></tr>
+<tr><td>The "ChuoSeiki MD 2-Axis||XY stages" asks to register the Serial port and Serial port settings.</td></tr>
+<tr><td>The "ChuoSeiki MD 1-Axis||Z stages" asks to register the Serial port, Serial port settings, and Axis name (or controller channel name).</td></tr>
 </table>
 
 '''Default Stage Settings'''
@@ -53,7 +53,7 @@ The Serial port settings are as following:
 |Acceleration pattern||"1" ||(500 ms)
 |}
 
-<em>Please customize your stage settings using <em>Group<em> and <em>Preset settings<em> in Micro-Manager. Or you can load the setting from a saved .cfg file.</em>
+<em>Please customize your stage settings using <em>Group</em> and <em>Preset settings</em> in Micro-Manager. Or you can load the setting from a saved .cfg file.</em>
 
 {{Note|'''Axis Name Registration'''}}
 
