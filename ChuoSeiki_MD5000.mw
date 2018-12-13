@@ -50,7 +50,7 @@ The Serial port settings are as following:
 |-
 |StepSize            ||1    ||um    
 |-
-|Acceleration pattern||"1" ||(500 ms)
+|Acceleration pattern||"1" ||(0 ms)
 |}
 
 <em>Please customize your stage settings using <em>Group</em> and <em>Preset settings</em> in Micro-Manager. Or you can load the setting from a saved .cfg file.</em>
