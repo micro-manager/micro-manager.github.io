@@ -12,16 +12,9 @@
 
 == Installation Instructions ==
 
-This adapter is compatible with all Thorlabs Scientific Imaging cameras (TSI). Before configuring the camera with micro-manager, Thorlabs software that came with the camera must be installed and verified (drivers, demo applications, etc.). After installing Thorlabs software make sure that camera is fully functional by running one or more applications from the package.
+This adapter is compatible with all Thorlabs Scientific Imaging cameras (TSI). Before configuring the camera with micro-manager, [https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=ThorCam ThorCam] software must be installed and verified to operate as intended. After installing ThorCam software make sure that camera is fully functional and that it can acquire both in single image and live streaming mode.
 
-Make sure that both micro-manager and any Thorlabs camera related software is shut down. Locate the following files in the Thorlabs installation directory:
-
-* tsi_sdk.dll
-* pleora_ebus.dll (for GigE cameras using Pleora drivers)
-* edt_camera_link.dll (for Camera Link interface using EDT board)
-* pdvlib.dll (for Camera Link interface using EDT board)
-
-and copy them into the micro-manager installation directory. Depending on the camera model, some of the files may not be available. Copy any of the files above that you are able to locate.
+Make sure that both micro-manager and any Thorlabs camera related software is shut down. Locate all files in the ThorCam/Scientific Camera Support/Scientific Camera Interfaces/SDK/Native Compact Scientific Camera Toolkit/dlls/Native_64_lib (or Native_32_lib for 32-bit OS) directory and copy them into the micro-manager installation directory.
 
 After that the camera should be ready for configuration with micro-manager. Start micro-manager and select Tools | Hardware Configuration Wizard command to add TSI camera to the configuration.
 
