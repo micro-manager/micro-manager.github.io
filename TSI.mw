@@ -21,3 +21,5 @@ After that the camera should be ready for configuration with micro-manager. Star
 At step 2 (Add or Remove Devices) of the Wizard, scroll Available Devices list to *TSI*. There should be only one device available: TSICam. Select TSICam and add to the configuration. You will be prompted to enter the camera ID. Default is "0" and leave it at that. Multiple cameras on the same computer are not currently supported.
 
 After adding the TSICam device, proceed to next steps of the Hardware Configuration Wizard as described in the micro-manager documentation.
+
+=== Leagacy Camera Support ===
