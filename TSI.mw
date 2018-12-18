@@ -18,6 +18,6 @@ Make sure that both micro-manager and any Thorlabs camera related software is sh
 
 After that the camera should be ready for configuration with micro-manager. Start micro-manager and select Tools | Hardware Configuration Wizard command to add TSI camera to the configuration.
 
-At step 2 (Add or Remove Devices) of the Wizard, scroll Available Devices list to *TSI*. There should be only one device available: TSICam. Select TSICam and add to the configuration. You will be prompted to enter the camera ID. Default is "0" and if you have a single camera installed, leave it at that. If you have multiple cameras on the same computer, the ID number refers to the respective camera. Check Thorlabs documentation on how to determine the correct camera ID if you have multiple cameras installed.
+At step 2 (Add or Remove Devices) of the Wizard, scroll Available Devices list to *TSI*. There should be only one device available: TSICam. Select TSICam and add to the configuration. You will be prompted to enter the camera ID. Default is "0" and leave it at that. Multiple cameras on the same computer are not currently supported.
 
 After adding the TSICam device, proceed to next steps of the Hardware Configuration Wizard as described in the micro-manager documentation.
