@@ -15,7 +15,7 @@ You will need a [http://subversion.apache.org/packages.html#windows Subversion c
 
 === Microsoft Visual Studio 2010 SP1 Express ===
 
-{{Note|The official binaries are, for the time being, still built with VS 2010. However, it is possible to build device adapters using any newer version of VisualStudio. Device adapters are '''not''' required to be built by the same version of VS as MMCore.}}
+{{Note|The official binaries are, for the time being, still built with VS 2010. However, it is possible to build device adapters using any newer version of VisualStudio, and this may be preferred for newer systems where VS 2010 binaries are hard to come by. Device adapters are '''not''' required to be built by the same version of VS as MMCore.  See [http://micro-manager.3463995.n2.nabble.com/Building-Device-Adapters-on-Windows-10-with-Visual-Studio-2015-Community-tp7587098.html this thread] in the mailing list archives about using VS 2015.}}
 
 Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device adapters) are currently built using Visual Studio 2010 Express. To install a complete build environment, follow these instructions (all are free downloads):
 
