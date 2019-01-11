@@ -29,6 +29,8 @@ If you're using Zaber devices with built-in controllers, follow the easy set-up 
 
 [https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Wheel Setting Up A Filter Wheel]
 
+[https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Cube_Turret Setting Up A Filter Cube Turret]
+
 ==Control==
 
 There are several ways to control the position of the stage:
