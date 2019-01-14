@@ -2,6 +2,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 
 * [[AcquireMultipleRegions]]
 * [[ASIdiSPIM Plugin]]
+* [http://www.asiimaging.com/docs/asi_gamepad ASI (XBox) Gamepad]
 * [[AutoLase]]
 * [[DLLAutoReloader]]
 * [[HCS Site Generator]] 
