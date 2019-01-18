@@ -11,9 +11,9 @@
 
 == Overview ==
 
-This plugin exists to facilitate alignment and use of [http://dispim.org the diSPIM system], in all of its various forms (including iSPIM).
+This plugin exists to facilitate alignment and use of [http://dispim.org the diSPIM system].  It also works with many light sheet configurations including iSPIM, oSPIM, ct-dSPIM, OpenSPIM-like systems, etc.  However it is specific to ASI-made hardware/controller.
 
-A much broader overview and further information is available on the diSPIM website, [http://dispim.org dispim.org]
+A much broader overview of light sheet microscopy and further information about the diSPIM is available on [http://dispim.org dispim.org]
 
 == Plugin Documentation ==
 
