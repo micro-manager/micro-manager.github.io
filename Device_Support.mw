@@ -126,6 +126,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[StandaStage]] - Standa Microstep Driver
 * [[Standa8SMC4]] - Standa Microstep Driver (using XIMC interface)
 * [[SutterLambda]] - Sutter Shutters, filter wheels, light sources, etc..
+* [[SutterLambda2]] - Sutter Lambda 10-3 controller, shutters, filter wheels, and VF5 tunable filter
 * [[SutterStage]] - Sutter XY Stage
 * [[Thorlabs]] - Thorlabs XY Stage (brushless DC motor), Piezo Z Stage and Integrated Filter Wheel
 * [[ThorlabsAPTStage]] - Thorlabs APT family linear stages
