@@ -1,3 +1,22 @@
+{| style="text-align: left"
+!Summary:
+|Interfaces to Sutter Lambda 10-3 controller
+|- valign="top"
+!Authors:
+| Nick Anthony. Based off of the [[SutterLambda]] adapter
+|- valign="top"
+|-
+!License:
+|BSD
+|-
+!Platforms:
+|Windows, Mac OS X and Linux (only serial port, no parallel port or USB)
+|- valign="top"
+!Devices:
+|[http://sutter.com/IMAGING/lambda103.html Lambda 10-3]<br/>
+|}
+----
+
 == Device Configuration ==
 
 === Serial port issues ===
