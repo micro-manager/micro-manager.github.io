@@ -6,8 +6,5 @@ The Lambda 10-3 Controller uses a straight through (i.e., not null modem) DB9 se
 === Wheel speed ===
 95% of the time speed <code>#1</code> works best (<code>#0</code> being the fastest, which only works with an empty wheel). If speed <code>#1</code> does not work you can try the slowest (speed <code>#7</code> IIRC).  Best practice is to [[Micro-Manager_Configuration_Guide#Startup_Presets|set the desired wheel speed during startup]], i.e. in your <code>Startup</code> Preset of the <code>System</code> Group.
 
-=== Lambda SC ===
-For the Lambda SC Smart shutter controller, select the "Shutter-A|Lambda 10 shutter A" in the Hardware Configuration Wizard.
-
 === Lambda VF5 ===
 The Lambda VF5 tunable filter changer consists of a filter wheel which can additionally be tilted to provide a specific bandpass wavelength. In addition to selecting a wheel speed (described above) you can also select a tilt speed between 0 and 3.
