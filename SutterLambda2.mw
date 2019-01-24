@@ -27,3 +27,6 @@ The Lambda 10-3 Controller uses a straight through (i.e., not null modem) DB9 se
 
 === Lambda VF5 ===
 The Lambda VF5 tunable filter changer consists of a filter wheel which can additionally be tilted to provide a specific bandpass wavelength. In addition to selecting a wheel speed (described above) you can also select a tilt speed between 0 and 3.
+
+
+{{Devices_Sidebar}}
