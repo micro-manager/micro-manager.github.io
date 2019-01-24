@@ -39,4 +39,7 @@ You need to optimize the filter speed setting if you ever encounter the dreaded 
 See the Operation Manual (available at http://www.sutter.com/) section "Helpful Tips about Filter Wheel Movement Errors".
 
 
+=== Note ===
+Newer devices from Sutter are supported in the [[SutterLambda2]] adapter. If you would like to add support for a Sutter device that is currently unsupported please add your code to the newer adapter.
+
 {{Devices_Sidebar}}
