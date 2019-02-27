@@ -14,6 +14,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[OlympusIX83]] - Olympus IX83 motorized microscope
 * [[ZeissCAN]] - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
 * [[ZeissCAN29]] - Zeiss CAN29-bus compatible microscopes (AxioObserver)
+* [[ZeissAxioZoom]] - Zeiss AxioZoom microscope (CAN29)
 
 === Cameras ===
 * [[ABSCamera]] - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
