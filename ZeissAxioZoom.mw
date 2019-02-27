@@ -34,8 +34,6 @@
 <p>You will need to define all hardware that is part of your microscope in the Hardware Configuration Wizard (i.e., Micro-Manager does not query the microscope itself for devices present).  In any case, you will need to define the 'ZeissScope' device as this defines the serial port to which the scope is attached.</p>
 
 
-
-
 {{Listserv_Search|Zeiss}}
 
 {{Devices_Sidebar}}
