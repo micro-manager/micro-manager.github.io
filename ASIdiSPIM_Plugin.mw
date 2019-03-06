@@ -22,6 +22,7 @@ The plugin documentation is now is on the diSPIM wiki at [http://dispim.org disp
 == Change Log ==
 List of significant changes since 1.4.19 release, omitting bug fixes.  The feature was fully implemented as of the nightly build listed.
 
+* 20190306: added overview acquisition feature to show 2D slice of large sample
 * 20180928: added path-specific presets
 * 20180222: added XYZ grid creator, useful for large tiled datasets
 * 20171031: added reflective imaging option
