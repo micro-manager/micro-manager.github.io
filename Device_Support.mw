@@ -50,6 +50,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[Photometrics]] - A.k.a. [[PVCAM]]
 * [[PICAM]] - Princeton Instruments cameras using the PICam interface
+* [[Pixelink]] - Pixelink Cameras
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
