@@ -1,0 +1,19 @@
+== Lumencor Light Engine ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Supports all Lumencor Light Engine models</td></tr>
+<tr><td>'''Author:'''</td><td>Nenad Amodaj</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows only</td></tr>
+<tr><td>'''Devices:'''</td><td>all models</td></tr>
+<tr><td>'''Interface'''</td><td>Serial, USB and Ethernet</td></tr>
+<tr><td>'''Serial port settings'''</td><td>Baudrate: 9600</td></tr>
+</table>
+
+This adapter is intended for all Light Engine models in micro-manager, including the latest "GEN3" light sources such as Spectra 3, Aura 3, Celesta, etc.
+
+Lumencor is officially supporting this adapter for all "GEN3" light engines and for all future models. For older (legacy) light engines such as SpectraX, Aura 2, Lida, although functionality is available and thoroughly tested prior to release, support is not available, other than "as is" function of this adapter.
+
+If you are not sure whether your Light Engine Model is "GEN3" or one of the legacy ones, look for Ethernet connector on the front panel. If it has Ethernet socket it is a GEN3 model. Most GEN3 models also have a small LCD screen.
+
+For any support issues or compatibility questions please contact Iain Johnson at Lumencor Support: [https://lumencor.com/tech-support/]
