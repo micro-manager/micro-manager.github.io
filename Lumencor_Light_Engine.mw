@@ -7,7 +7,6 @@
 <tr><td>'''Platforms:'''</td><td>Windows only</td></tr>
 <tr><td>'''Devices:'''</td><td>all models</td></tr>
 <tr><td>'''Interface'''</td><td>Serial, USB and Ethernet</td></tr>
-<tr><td>'''Serial port settings'''</td><td>Baudrate: 9600</td></tr>
 </table>
 
 This adapter is intended for all Light Engine models in micro-manager, including the latest "GEN3" light sources such as Spectra 3, Aura 3, Celesta, etc.
