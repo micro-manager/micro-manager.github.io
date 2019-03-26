@@ -177,6 +177,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[CoherentOBIS]] - Coherent OBIS laser controller (Single Laser Remote)
 * [[Coherent Scientific Remote]] - Coherent OBIS laser controller (Scientific Remote and Single Laser Remote)
 * [[LaserQuantumLaser]] - gem/ventus/opus/axiom series from LaserQuantum
+* [[Lumencor Light Engine]] - All Lumencor Light Engine models
 * [[LumencorSpectra]] - Solid state illuminator from Lumencor
 * [[Mightex]] - LED driver/controllers
 * [[Mightex_BLS]] - BLS Control Modules
@@ -193,7 +194,6 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Toptica_iChrome_MLE_TCP]] - Toptica iChrome Multi Laser Engine over TCP link
 * [[USB_Viper_QPL]] - Excelitas/Qioptiq iFLEX-Viper Laser Engine
 * [[Versalase]] - Vortran Versalase laser driver
-
 
 === Other devices ===
 * [[AAAOTF]] - AOTF controller from AA Optoelectronics
