@@ -21,4 +21,21 @@ This page is currently under construction. More information will be available sh
 
 === Installation and Setup ===
 
-GEN3 light engines (distinguishable by the presence of Ethernet connector) provide three ways of connecting Light Engine to the host computer: RS232, serial and Ethernet.
+==== Legacy Light Engines ====
+
+Legacy light engines have only RS232 and USB connectors which operate at fixed baud rate of 9600 baud. Using either is the same and there is nothing to set up. In micro-manager Configuration Wizard select "Lumencor" adapter, and set "Connection" to the appropriate COM port and the "Model" to whatever light engine model you have. If you set "GEN3" model with a legacy light engine, it won't work and the light engine must be rebooted before re-connecting.
+
+=== GEN3 Light Engines ===
+
+GEN3 light engines (distinguishable by the presence of Ethernet connector) provide three ways of connecting Light Engine to the host computer: RS232, USB and Ethernet. USB also appears to the host computer as com port.
+
+GEN3 light engines flexible and can be configured in several different ways, but here we are only going to consider a default configuration. For more information about the setup options and documentation contact Lumencor support.
+
+Typically GEN3 ships with the following settings:
+* RS232 - 115200 baud, standard command set
+* USB - 9600 baud, legacy command set (emulation of old models such as SpectraX)
+* Ethernet - 1 GbE socket, static IP address, standard command set
+
+With micro-manager and GEN3 you should use only RS232 or Ethernet. Do not use USB port unless you were able to change it from default, i.e. set it up for standard command set instead of legacy.
+
+In Hardware Configuration Wizard set "Model" to GEN3 and "Connection" to either IP address of the light engine or COM port, depending on which connection you wish to use.
