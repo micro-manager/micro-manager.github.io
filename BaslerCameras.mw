@@ -1,0 +1,23 @@
+'''Summary:''' Control of Basler cameras
+
+'''Author:'''    Felix Asche, Basler AG
+
+'''Platforms:'''   Windows / Linux  
+
+'''License:'''    TBD
+
+'''Devices:'''    Basler cameras that are supported by pylon SDK
+
+'''Supported features:''' Binning, DeviceLinkThroughputLimit, ExposureAuto, ExternalTrigger, Gain, GainAuto, LightSourcePreset, Offset, PixelType, Shuttermode
+
+'''Notes:''' 
+
+- Basler adapter is available from micro-manager 1.4.23
+
+- Drivers from Basler are required. pylon SDK can be downloaded from the Basler website. Please use the latest version for maximum functionality.
+
+- For Linux use please extract pylon SDK under /opt/pylon5.
+
+- If several cameras are connected the first accessible camera per instance will be addressed.
+
+- Issues like lost frames may arise due to insufficient hardware capacity. Please reduce "DeviceLinkThroughputLimit" (GigE: increase "InterPacketDelay") in this case.
