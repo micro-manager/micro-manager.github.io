@@ -24,7 +24,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Apogee]] - Apogee cameras
 * [[AxioCam]] - Zeiss AxioCam medium resolution and high resolution models (Windows)
 * [[BaslerAce]] - Basler Ace USB Cameras
-* [[Basler Cameras]] - All Basler cameras that are supported by pylon SDK
+* [[BaslerCameras]] - All Basler cameras that are supported by pylon SDK
 * [[BaumerOptronic]] - Leica DFC camera (through BaumerOptronic FXLib)
 * [[BiostepEagleIce]] - biostep EagleIce camera
 * [[dc1394]] - Firewire cameras that adhere to the iidc1394 specs (see also [[IIDC]])
