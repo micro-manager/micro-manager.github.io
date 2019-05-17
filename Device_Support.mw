@@ -195,6 +195,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Toptica_iChrome_MLE_TCP]] - Toptica iChrome Multi Laser Engine over TCP link
 * [[USB_Viper_QPL]] - Excelitas/Qioptiq iFLEX-Viper Laser Engine
 * [[Versalase]] - Vortran Versalase laser driver
+* [[YodnLighting]] - YODN Lighting lamp device adapter for E600 serial products
 
 === Other devices ===
 * [[AAAOTF]] - AOTF controller from AA Optoelectronics
