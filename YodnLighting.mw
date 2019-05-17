@@ -7,7 +7,7 @@
 <tr><td>'''Platforms:'''</td><td>Windows (uses serial interface over USB)</td></tr>
 <tr><td>'''Devices:'''</td><td>Shutters</td></tr>
 <tr><td>'''Example Config File:'''</td><td>None</td></tr>
-<tr><td>'''Micro-Manager version:'''</td><td>>=1.4 or 2.0</td></tr>
+<tr><td>'''Micro-Manager version:'''</td><td>1.4 or 2.0</td></tr>
 </table>
 
 == Installation ==
