@@ -1,0 +1,8 @@
+== Installation ==
+
+The usage is very simple.
+
+On Windows OS:
+Should install USB to serial driver and generate serial port in Windows device manager, then make sure the USB to RS232 cable connect Lamp device.
+
+USB to serial driver software download address:[http://www.wch.cn/downloads/CH341SER_EXE.html]
