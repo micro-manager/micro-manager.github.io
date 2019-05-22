@@ -5,12 +5,13 @@ This page serves as a "hub" for various other pages related to Version 2.0.
 === Downloads ===
 
 2.0 development now takes place in the "gamma" branch.
+
 Nightly builds:
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ Mac OS X]<br/>
 Source code is in [http://github.com/nicost/micro-manager/tree/ViewerPlusCV Nico's branch ViewerPlusCV on github]
 
-Beta nightly builds (rarely updated):
+Beta nightly builds (rarely updated, DO NOT USE UNLESS YOU HAVE REASONS TO DO SO):
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac/ Mac OS X]
 
