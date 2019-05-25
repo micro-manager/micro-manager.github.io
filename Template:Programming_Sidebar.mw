@@ -19,7 +19,7 @@
 <center><h3>APIs</h3></center>
 * [https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html 1.4 GUI API Java Reference (Java/Beanshell)]
 * [https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html 1.4 Core API Reference (Java/Beanshell/Matlab)]
-* [https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/api/ScriptInterface.html 2.0-&gamma; GUI API Java Reference (Java/Beanshell)]
+* [https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html 2.0-&gamma; GUI API Java Reference (Java/Beanshell)]
 * [https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html 2.0-&gamma;  Core API Reference (Java/Beanshell/Matlab)]
 * [https://valelab.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html Core API Reference (C++)]
 * [https://valelab.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html Device API Reference (C++)]
