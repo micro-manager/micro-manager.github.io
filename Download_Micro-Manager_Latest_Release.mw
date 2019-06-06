@@ -3,12 +3,17 @@ __NOTOC__
 
 <span style="font-size:75%">μManager™ is a trademark of The Regents of the University of California. Used with Permission.</span>
 
+== Micro-Manager versions ==
+Currently, there are 2 usable versions of Micro-manager: 1.4 and 2.0-gamma.  These versions use the same code to interface to devices, but differ in their user interface, and file reading/saving code.  2.0-gamma is actively developed and maintained.  1.4 is no longer developed (except for the device support and the ASI diSPIM plugin).  If you start using Micro-Manager, it is recommended to use the latets nightly build of 2.0-gamma
+
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
 == Nightly Builds ==
 
 Although there has been no official release for quite some time, further development and multiple bug fixes have occurred in the 1.4 branch in parallel with development of 2.0.  Nightly builds are almost always stable and a better choice for most users than the latest official release.
 
+* [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ '''Version 2.0-gamma (Windows)'''] (you most likely want the 64-bit version)
+* [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ '''Version 2.0-gamma (Mac)''']
 * [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows '''Version 1.4 (Windows)'''] (pay attention to 32-bit or 64-bit, both are listed but you need the one matching your Windows OS)
 * [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac '''Version 1.4 (Mac)''']
 
