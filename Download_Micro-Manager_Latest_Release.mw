@@ -4,7 +4,7 @@ __NOTOC__
 <span style="font-size:75%">μManager™ is a trademark of The Regents of the University of California. Used with Permission.</span>
 
 == Micro-Manager versions ==
-Currently, there are 2 usable versions of Micro-manager: 1.4 and 2.0-gamma.  These versions use the same code to interface to devices, but differ in their user interface, and file reading/saving code.  2.0-gamma is actively developed and maintained.  1.4 is no longer developed (except for the device support and the ASI diSPIM plugin).  If you start using Micro-Manager, it is recommended to use the latets nightly build of 2.0-gamma
+Currently, there are 2 usable versions of Micro-manager: 1.4 and 2.0-gamma.  These versions use the same code to interface to devices, but differ in their user interface, and file reading/saving code.  2.0-gamma is actively developed and maintained.  1.4 is no longer developed (except for the device support and the ASI diSPIM plugin).  If you start using Micro-Manager, it is recommended to use the latest nightly build of 2.0-gamma
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
