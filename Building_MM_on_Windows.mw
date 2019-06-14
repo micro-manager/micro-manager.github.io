@@ -23,7 +23,7 @@ Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device adapters) ar
 # Install '''Microsoft Windows SDK 7.1 and .NET Framework 4''' (http://www.microsoft.com/en-us/download/details.aspx?id=8279). If installation of the .NET fails, see the notes below.
 # Install '''Visual C++ 2010 Express''' from https://www.visualstudio.com/vs/older-downloads/.
 # Upgrade to '''Visual Studio 2010 SP1''' (https://www.visualstudio.com/vs/older-downloads).
-# '''Repair the compilers''' that come with Windows SDK 7.1 by installing this package: http://www.microsoft.com/en-us/download/details.aspx?id=4422 (note: this step no longer seems required)
+# '''Repair the compilers''' that come with Windows SDK 7.1 by installing this package: http://www.microsoft.com/en-us/download/details.aspx?id=4422
 
 {{Note|The '''order if installation is important'''. In particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed first. If you are in that situation, the only way out that I have found is to go to Control Panel > "Uninstall a program", uninstall everything with "Microsoft Visual ... 2010" in its name (Redistributable, Runtime, Express, Compilers, Service Pack, Tools for Office Runtime), and start over.}}
 
