@@ -20,23 +20,17 @@ For MicroManager support for all Thorlabs Scientific Cameras (340, 1500, 1501, 4
 
 2. On 64-bit Windows, install 64-bit MicroManager. On 32-bit Windows, install 32-bit MicroManager. (Thorlabs cameras do not currently support 32-bit MicroManager on 64-bit Windows.)
 
- 
 3. From the Thorcam installation folder (usually C:\Program Files\Thorlabs\Scientific Imaging\Scientific Camera Support\), copy the file called Scientific_Camera_Interfaces.zip to a separate folder where you have sufficient permissions to unzip it (e.g. the desktop folder).
 
-
 4. Unzip the Scientific_Camera_Interfaces.zip archive and it will create a folder hierarchy with a folder named Scientific Camera Interfaces at the top level.
-
 
 5. Navigate to \Scientific Camera Interfaces\SDK\Native Compact Scientific Camera Toolkit\dlls and you will see a Native_32_lib and a Native_64_lib folder.
 
 6. Choose the appropriate folder (Native_32_lib vs. Native_64_lib) based on whether you installed 64-bit Micromanager or 32-bit Micromanager.
 
-
 7. Copy all the DLLs from that folder into the Micromanager installation folder.
 
- 
 8. In MicroManager, go to Tools->Hardware Configuration Wizard. Create or modify a configuration and click Next. Scroll through the available devices to find TSI->TSICam.
-
 
 After adding the TSICam device, proceed to next steps of the Hardware Configuration Wizard as described in the micro-manager documentation.
 
