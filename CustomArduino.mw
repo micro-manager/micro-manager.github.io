@@ -23,6 +23,10 @@ Emulates a Z-Axis L-Step stage by implementing a subset of the Marzhauser L-Step
 * MM_vCoolLed.ino : 
 Emulates a CoolLED illumination device by implementing a subset of the PrecisExcite protocol. Expects an Arduino Uno with a LCD Keypad Shield for feedback and a NeoPixel LED device to pin 3.
 Basically, you have to make the Arduino understand the commands that MicroManager sends, and when needed, reply with the expected answers. 
+* MM_vVincentD1 shutter-like device
+Emulates a Vincent D1 shutter device by implementing a subset of the protocol: Open, Close and Reset shutter. Only 1 channel. A NeoPixel LED device must be attached to pin 3.
+
+Basically, you have to make the Arduino understand the commands that MicroManager sends, and when needed, reply with the expected answers. 
 
 '''Installation'''
 * vLStep Z-Axis
