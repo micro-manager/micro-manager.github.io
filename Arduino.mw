@@ -92,7 +92,7 @@ Add the Arduino-Hub.  You may want to set the "Verbose" property of the port to 
 |}
 
 === Test Communication ===
-Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can verify the Arduino is communicating by changing the state of pin 13 and verifying the LED changes.  Setting pin 13 HIGH requires setting the <code>Arduino-Switch-State</code> to 32 (i.e. 2^5) in the <code>Device/Property Browser</code>.  If you added the <code>Arduino-Shutter</code> peripheral to the <code>Arduino-Hub</code> toggle the <code>Arduino-Shutter</code> in the main MM window, or if you don't have it change the <code>Arduino-Switch-State</code> back to 0 to see the LED go off.
+Arduino boards Duemilanove and newer feature an LED attached to pin 13.  One can verify the Arduino is communicating by changing the state of pin 13 and verifying the LED changes.  Setting pin 13 HIGH requires setting the <code>Arduino-Switch-State</code> to 32 (i.e. 2^5) in the <code>Device/Property Browser</code>.  Toggle the <code>Arduino-Shutter</code> in the main MM window (the output pins will only go high when the Shutter Device is open, so you will need both the Shutter and State devices).
 
 == Usage Notes ==
 
