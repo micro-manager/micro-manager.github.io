@@ -2,7 +2,7 @@
 
 <table>
 <tr><td>'''Summary:'''</td><td>Micro-Manager device adapters for QT-series controllers</td></tr>
-<tr><td>'''Author:'''</td><td>Naoto Hirose([http://www.chuo.co.jp/english/ Chuo Precision Industrial Co. LTD.])</td></tr>
+<tr><td>'''Author:'''</td><td>[User:Nowt75 Naoto Hirose]([http://www.chuo.co.jp/english/ Chuo Precision Industrial Co. LTD.])</td></tr>
 <tr><td>             </td><td>Duong Quang Anh([http://www.chuo.co.jp/english/ Chuo Precision Industrial Co. LTD.])</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All (uses serial interface)</td></tr>
