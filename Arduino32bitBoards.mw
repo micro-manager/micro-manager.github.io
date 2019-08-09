@@ -47,6 +47,8 @@ Advantages of the sketches provided in this repo:
 
 ==Working Arduino boards:==
 
+Firmware code for these boards can be found on [https://github.com/bonnom/Arduino32BitBoards/tree/master/Firmwares Bonno Meddens github repository].
+
 *ESP32
 **        Baudrate: 115200
 **         DAC1 on pin 25 and DAC2 on pin 26
