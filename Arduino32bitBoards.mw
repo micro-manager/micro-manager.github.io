@@ -87,13 +87,12 @@ Firmware code for these boards can be found on [https://github.com/bonnom/Arduin
 ** Channel 7: Pin 12 (PWM)
 ** Channel 8: Pin 13 (PWM)
 
-=== Teensy 3.x Boards ===
+=== Teensy 3.x and 4.0 Boards ===
 * All 3.x boards
 ** Able to set PWM frequency and Resolution, for more information [https://www.pjrc.com/teensy/td_pulse.html link]
 ** At least one DAC
 ** handy:  [https://www.pjrc.com/teensy/pinout.html Pinouts page]
 ** Baudrate 500 000  
-
 
 *Teensy 3.1 & 3.2 (96 Mhz)
 ** All currently used pins in the sketch are 5V tolerant
@@ -126,6 +125,22 @@ Firmware code for these boards can be found on [https://github.com/bonnom/Arduin
 *** Channel 6: Pin 6   (PWM)
 *** Channel 7: Pin 7   (PWM)
 *** Channel 8: Pin 8   (PWM)
+
+* Teensy 4.0
+** KEEP IN MIND: not 5V tolerant!!
+** Very fast
+** Does not have a DAC
+** Current PWM frequency: 468750 Hz (At 7-bits)
+** Pins used :
+*** Trigger: Pin 8
+*** Channel 1: Pin 23 (PWM)
+*** Channel 2: Pin 15 (PWM)
+*** Channel 3: Pin 3  (PWM)
+*** Channel 4: Pin 4  (PWM)
+*** Channel 5: Pin 10 (PWM)
+*** Channel 6: Pin 9  (PWM)
+*** Channel 7: Pin 6  (PWM)
+*** Channel 8: Pin 5  (PWM)
 
 == Installation and Drivers ==
 This Section is an overview of the installation links for Arduino and the respective boards
