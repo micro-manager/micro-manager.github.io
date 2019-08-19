@@ -46,9 +46,10 @@ Differences compared to regular Arduino Device Adapter:
 * More flexibility with pins used
 
 '''Disadvantages:'''
-*Most are not 5V tolerant, this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [https://www.adafruit.com/product/757 link] or this one [https://www.sparkfun.com/products/12009 link]
+*'''Most are not 5V tolerant''', this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [https://www.adafruit.com/product/757 link] or this one [https://www.sparkfun.com/products/12009 link]
 
 * Library support might not always be great
+
 == Arduino boards information ==
 
 Firmware code for these boards can be found on [https://github.com/bonnom/Arduino32BitBoards/tree/master/Firmwares Bonno Meddens github repository].
