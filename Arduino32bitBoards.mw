@@ -37,70 +37,123 @@ Differences compared to regular Arduino Device Adapter:
 * Changed unit of DAC/ PWM from "Volt" to "Power %" and the default scale to 0-100
 * In the Firmware: Channels 1 - 2 are by default DAC channels, channels 3-8 are by default PWM
 
-==Advantages and Disadvantages of Arduino 32 Bit-boards in general==
-Advantages:
+== Advantages and Disadvantages of Arduino 32 Bit-boards in general ==
+'''Advantages:'''
 * Much faster, because of higher clock speed and more work performed per clockcycle.
 * Baudrate increased to 500 000, nearly 9 times the transferspeed between Arduino and Micro-Manager (there are some exceptions). This can be even increased to 2 000 000, with micro-manager 2
 * Most 32-bit Arduinos have a build-in DAC (max 3.3V output)
 * Higher PWM frequencies and PWM bitresolutions
 * More flexibility with pins used
 
-Disadvantages:
+'''Disadvantages:'''
 *Most are not 5V tolerant, this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [https://www.adafruit.com/product/757 link] or this one [https://www.sparkfun.com/products/12009 link]
 
 * Library support might not always be great
-==Working Arduino boards:==
+== Arduino boards information ==
 
 Firmware code for these boards can be found on [https://github.com/bonnom/Arduino32BitBoards/tree/master/Firmwares Bonno Meddens github repository].
 
-*ESP32
-**        Baudrate: 115200
-**         DAC1 on pin 25 and DAC2 on pin 26
-**         ADC not implemented
-**        Able to set PWM frequency and Resolution
-**         Low Price boards available
-**         KEEP IN MIND: NOT 5V TOLERANT!!
+=== ESP32 ===
+* Baudrate: 115200
+* DAC1 on pin 25 and DAC2 on pin 26
+* ADC not implemented
+* Able to set PWM frequency and Resolution
+* Low Price boards available
+* KEEP IN MIND: NOT 5V TOLERANT!!
+* Pins used:
+** Trigger: Pin 5
+** Channel 1: Pin 25 (DAC)
+** Channel 2: Pin 26 (DAC)
+** Channel 3: Pin 27 (PWM)
+** Channel 4: Pin 15 (PWM)
+** Channel 5: Pin 14 (PWM)
+** Channel 6: Pin 4  (PWM)
+** Channel 7: Pin 23 (PWM)
+** Channel 8: Pin 19 (PWM)
 
-*    ItsyBitsy M4
-**         The ADC does not work at the moment because of DAC implementation
-**         Channel 8 has become channel 7
-**         KEEP IN MIND: NOT 5V TOLERANT!!
+=== ItsyBitsy M4 ===
+* Baudrate 500 000
+* The ADC does not work at the moment because of DAC implementation
+* 12 bit PWM
+* KEEP IN MIND: NOT 5V TOLERANT!!
+* Pins Used
+** Trigger: Pin 5
+** Channel 1: Pin A0 (DAC)
+** Channel 2: Pin A1 (DAC)
+** Channel 3: Pin 6  (PWM)
+** Channel 4: Pin 9  (PWM)
+** Channel 5: Pin 10 (PWM)
+** Channel 6: Pin 11 (PWM)
+** Channel 7: Pin 12 (PWM)
+** Channel 8: Pin 13 (PWM)
 
-*Teensy 3.x Boards
-**All 3.x boards
+=== Teensy 3.x Boards ===
+* All 3.x boards
 
-***    Able to set PWM frequency and Resolution, for more information link
-***    At least one DAC
-***    handy:  [https://www.pjrc.com/teensy/pinout.html Pinouts page]
+** Able to set PWM frequency and Resolution, for more information [https://www.pjrc.com/teensy/td_pulse.html link]
+** At least one DAC
+** handy:  [https://www.pjrc.com/teensy/pinout.html Pinouts page]
+** Baudrate 500 000  
 
-**Teensy 3.1 & 3.2
-***        Seems to work fine, but more testing is needed
-***        All currently used pins in the sketch are 5V tolerant
-***        Only one DAC on pin A14
-***        All other pins are the same as the original UNO firmware
+*Teensy 3.1 & 3.2 (96 Mhz)
+** All currently used pins in the sketch are 5V tolerant
+** Only one DAC on pin A14
+** Current PWM frequency: 11718.75 Hz
+** Pins used:
+*** Trigger: Pin 2
+*** Channel 1: Pin A14 (DAC)
+*** Channel 2: Pin 20  (PWM)
+*** Channel 3: Pin 3   (PWM)
+*** Channel 4: Pin 4   (PWM)
+*** Channel 5: Pin 5   (PWM)
+*** Channel 6: Pin 6   (PWM)
+*** Channel 7: Pin 21  (PWM)
+*** Channel 8: Pin 22  (PWM)
 
-**    Teensy 3.5 (Recommended)
-***        Not yet tested
-***        All currently used pins in the firmware are 5V tolerant
-***        DAC1 on pin 21 and DAC2 on pin 22
-***        Able to set PWM frequency and Resolution
 
-**    Teensy 3.6
-***        Uses same sketch as teensy 3.5
-***        Faster than teensy 3.5
-***        KEEP IN MIND: NOT 5V TOLERANT!!
+* Teensy 3.5 (Recommended) & Teensy 3.6
+** All currently used pins in the firmware for Teensy '''3.5''' are 5V tolerant
+** KEEP IN MIND: Teensy '''3.6''' is not 5V tolerant!!
+** DAC1 on pin 21 and DAC2 on pin 22
+** Current PWM frequency: 14648.437 Hz
+** Pins used:
+*** Trigger: Pin 2
+*** Channel 1: Pin A21 (DAC)
+*** Channel 2: Pin A22  (DAC)
+*** Channel 3: Pin 3   (PWM)
+*** Channel 4: Pin 4   (PWM)
+*** Channel 5: Pin 5   (PWM)
+*** Channel 6: Pin 6   (PWM)
+*** Channel 7: Pin 7   (PWM)
+*** Channel 8: Pin 8   (PWM)
 
-==Boards that do not work with this firmware/device adapter:==
 
-*    Esp8266 board
-*    Arduino Due
-*    Sipeed Maix boards
+== Installation and Drivers ==
+This Section is an overview of the installation links for Arduino and the respective boards
 
-==To be tested:==
+=== Arduino IDE ===
+Arduino offers two solutions, an online editor and a local Integrated development environment (IDE) program.
+It is recommended to use the local IDE software.
+The page for the software can be found [https://www.arduino.cc/en/Main/Software here].
 
-*Teensy LC
-*    A SAMD21 board
-*    Teensy 3.5 (Very likely Works)
+=== Adafruit === 
+Adafruit makes two programming environments to use on their 32-bit boards. One is circuit python and Arduino. Circuitpython currently doesn't work with micro-manager.
+Guide for installing the Adafruit Feather M4 board can be found [https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/setup here].
+Just the driver can be downloaded from [https://github.com/adafruit/Adafruit_Windows_Drivers/releases/latest here]. This also includes multiple drivers that work on many other boards as well.
+
+=== Esp32 ===
+ESP32 arduino core installation link can be found [https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md here].
+Also when using an windows version older than Windows 10 driver installation might be needed. There are two types of USB to serial chips used with each their own driver. If you are not sure what IC is used just install both drivers.
+
+These two are the most common type of drivers:
+* [https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers SiLabs cp210x]
+* [https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE CH340]
+
+=== Teensy Boards ===
+Teensy requires its own installation software that can be downloaded [https://www.pjrc.com/teensy/td_download.html here].
+Just the drivers can be found [https://www.pjrc.com/teensy/serial_install.exe here].
+
+
 
 
 {{Devices_Sidebar}}
