@@ -25,26 +25,30 @@
 |}
 ----
 
-The original [Micro-Manager Arduino firmware] was specifically written for the Arduino UNO and does not work on the newer and faster 32-bit Arduinos. This project aims to rewrite the original firmware to get compatibility with the newer arduino compatible boards. The original firmware and guide can be found on the micro-manager website link.
+The Arduino32bitBoards device adapter contains extra features compared to the regular [[Arduino]] device adapter.
 
-Most 32-bit Arduino boards are damaged when 5V is applied to the input pins. Voltage level conversion must be used for 5V input on  boards that do not tolerate 5V. Also, the digital output is 3.3V. Most devices that work with 5V input also work fine with 3.3V input but this is not guaranteed.
+Currently the Teensy 3.5 is the recommended board to be used with this device adapter, bur there is also firmware available for the teensy 3.2, ESP32 and feather M4.
 
-The Teensy 3.5 is currently the recommended board.
-Advantages of the sketches provided in this repo:
-* Works on newer and faster boards, pin registers don't have to be used
-* Easier to adapt since pin registers aren't used
-** This allows PWM + blanking
-** DAC + blanking
-** Possibility to choose different pins
-* No need for external DAC with most boards
+Differences compared to regular Arduino Device Adapter:
+* Two extra output channels to a total of 8
+* Added Pulse-width modulation (PWM) control
+* Unified DAC and PWM
+* Unified digital-out channels and DAC/PWM channels, this allows DAC/PWM blanking on all 8 channels
+* Changed unit of DAC/ PWM from "Volt" to "Power %" and the default scale to 0-100
+* In the Firmware: Channels 1 - 2 are by default DAC channels, channels 3-8 are by default PWM
 
-==Advantages of 32 Bit-boards in general==
-
+==Advantages and Disadvantages of Arduino 32 Bit-boards in general==
+Advantages:
 * Much faster, because of higher clock speed and more work performed per clockcycle.
 * Baudrate increased to 500 000, nearly 9 times the transferspeed between Arduino and Micro-Manager (there are some exceptions). This can be even increased to 2 000 000, with micro-manager 2
 * Most 32-bit Arduinos have a build-in DAC (max 3.3V output)
 * Higher PWM frequencies and PWM bitresolutions
+* More flexibility with pins used
 
+Disadvantages:
+*Most are not 5V tolerant, this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [https://www.adafruit.com/product/757 link] or this one [https://www.sparkfun.com/products/12009 link]
+
+* Library support might not always be great
 ==Working Arduino boards:==
 
 Firmware code for these boards can be found on [https://github.com/bonnom/Arduino32BitBoards/tree/master/Firmwares Bonno Meddens github repository].
