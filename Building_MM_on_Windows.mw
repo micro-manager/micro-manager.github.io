@@ -83,6 +83,8 @@ If you are building a device adapter included in the Micro-Manager Subversion re
 
 Open <code>micromanager.sln</code> (in the root of <code>projects\micromanager</code>). Visual Studio will warn you that some projects are missing (they are the closed-source device adapters), but you can ignore that message. Choose the correct configuration (try Release if Debug fails) and platform (Win32 or x64). Then simply right-click the desired projects and select Build.
 
+DeviceAdapters that depend on code in the 3rdparty directory will only build if you download the correct libraries yourself and place them in your own copy of the 3rdparty directory. For legal reasons, we are not allowed to make these libraries public.  In general, however, you may simply ignore DeviceAdapters that do not build because you do not have the correct dependencies.
+
 Note that the built binaries are placed under the directory <code>build</code> at the root of <code>projects\micromanager</code>.
 
 If you build MMCoreJ, <code>MMCoreJ_wrap.dll</code> will be generated. Additionally, Java source files are generated in <code>build\intermediates\Swig\MMCoreJ\</code>. These files are compiled into <code>MMCoreJ.jar</code> in a separate step by Ant (see below).
