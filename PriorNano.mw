@@ -25,3 +25,7 @@
 </table>
 
 This adapter interfaces with Prior hardware through the Prior NanoScanZ or Prior Queensgate NanoScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with Prior/Queensgate nanopositioning Z stages. No 'hub' device is defined in this adapter.
+
+--[[User:GrahamBartlettPrior|GrahamBartlettPrior]] 13:14, 17 Oct 2019 (GMT)
+
+{{Devices_Sidebar}}
