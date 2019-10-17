@@ -1,7 +1,7 @@
 == Prior NanoScanZ and Prior Queensgate NanoScan adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces to Prior nanopositioning stages through NanoScanZ controller, and to Prior Queensgate nanopositioning stages through Prior Queensgate NanoScan controllers</td></tr>
+'''Summary:'''</td><td>Interfaces to Prior nanopositioning stages through Prior NanoScanZ and Prior Queensgate NanoScan controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj and Graham Bartlett</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X, Linux (serial port)</td></tr>
@@ -24,7 +24,7 @@
 |}
 </table>
 
-This adapter interfaces with Prior hardware through the Prior NanoScanZ or Prior Queensgate NanoScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with Prior/Queensgate nanopositioning Z stages. No 'hub' device is defined in this adapter.
+This adapter interfaces with nanopositioning stages through the Prior NanoScanZ or Prior Queensgate NanoScan controllers.  It communicates with the controller through the serial port so that no further software is needed.  It works with Prior/Queensgate nanopositioning Z stages. No 'hub' device is defined in this adapter.
 
 --[[User:GrahamBartlettPrior|GrahamBartlettPrior]] 13:14, 17 Oct 2019 (GMT)
 
