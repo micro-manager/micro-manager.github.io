@@ -120,6 +120,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Piezosystem_NV120_1]] - Piezosystem Jena. 1 channel controller with USB
 * [[PrecisExcite]] - LED illuminator (usable as a shutter device)
 * [[Prior]] - Prior stages, shutters, and filter wheels
+* [[PriorNano]] - Prior/Queensgate nanopositioning stages
 * [[RAMPS]] - RepRap RAMPS board as a stage controller
 * [[Scientifica]] - Scientifica stages
 * [[ScopeLED]] - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters. 
