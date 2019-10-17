@@ -1,7 +1,7 @@
 == Prior NanoScanZ and Prior Queensgate NanoScan adapter ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interfaces Prior hardware through NanoScanZ and NanoScan controllers</td></tr>
+'''Summary:'''</td><td>Interfaces to Prior nanopositioning stages through NanoScanZ controller, and to Prior Queensgate nanopositioning stages through Prior Queensgate NanoScan controllers</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj and Graham Bartlett</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, Mac OS X, Linux (serial port)</td></tr>
