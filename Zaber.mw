@@ -12,7 +12,12 @@ The Zaber device adapter supports single and dual-axis stages and microscope com
 
 == Compatibility ==
 
-Currently Micro-Manager has three kinds of drivers for controlling Zaber devices: Stage, XYStage, and Filter Wheel. These drivers require Zaber devices to have firmware 6.06+ and be set to use the Zaber ASCII protocol. Additionally, the XYStage driver requires that at least two devices are connected to a port, and the Filter Wheel driver requires that an [http://www.zaber.com/products/product_group.php?group=X-FWRX-FWR filter wheel] is connected.
+Currently Micro-Manager has three kinds of drivers for controlling Zaber devices: Stage, XYStage, and Filter Wheel. These drivers require Zaber devices to have firmware 6.06 or higher and be set to use the Zaber ASCII protocol. The individual drivers each have specific device requirements:
+* The Stage driver requires any Zaber motion stage.
+* The XYStage driver requires that at least two devices are connected to a port
+* The Filter Wheel driver requires that an [http://www.zaber.com/products/product_group.php?group=X-FWRX-FWR filter wheel] is connected.
+* The Filter Cube Turret driver requires that an X-FCR is connected. The -FCR is a component of the [https://www.zaber.com/products/microscopes/MVR MVR microscope].
+* The Illuminator driver requires that an [https://www.zaber.com/products/microscopes/X-LCA4 X-LCA series LED controller] is connected.
 
 ==Set Up==
 
