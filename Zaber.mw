@@ -1,14 +1,14 @@
 == Summary ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Device adapters for Zaber Technologies linear stages, XY stages and filter wheels</td></tr>
+'''Summary:'''</td><td>Device adapters for Zaber Technologies linear stages, XY stages, filter wheels and microscope components</td></tr>
 <tr><td>'''Author:'''</td><td>Albert David and Soleil Lapierre, Zaber Technologies (contact@zaber.com)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
-<tr><td>'''Devices:'''</td><td>Stage, XYStage, FilterWheel</td></tr>
+<tr><td>'''Devices:'''</td><td>Stage, XYStage, FilterWheel, FilterCubeTurret, Illuminator</td></tr>
 </table>
 
-The Zaber device adapter supports single and dual-axis stages and filter wheels using the Zaber ASCII protocol. The stages can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
+The Zaber device adapter supports single and dual-axis stages and microscope components using the Zaber ASCII protocol. The devices can be daisy-chained or connected to separate serial ports in an arbitrary configuration.
 
 == Compatibility ==
 
