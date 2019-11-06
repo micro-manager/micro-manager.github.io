@@ -1,0 +1,11 @@
+== Photon Transfer Curve Assistant ==
+
+Utility to help establish camera and illumination properties.
+
+This plugin will take series of images with varying exposure times, and present you with the mean and standard deviation image obtained at each exposure.
+
+
+
+{{Listserv_Search|Photon Transfer Curve Assistant}}
+
+{{Documentation Sidebar}}
