@@ -16,7 +16,9 @@ After the plugin collected dark images, it will ask you to switch the light back
 
 [[Image: PTCToolsLight.png]]
 
-After all images are collected (which may take a while), an ImageJ stack with two channels, one the mean, the other channel the std.dev. at each exposure, as well as a results table that lists the exposure time, mean and standard deviation at each exposure will be shown.  The standard deviation will be very low  (< 1) if you have a stable light source, higher values indicate significant fluctuations in the light source, which will make the results harder to interpret.  
+After all images are collected (which may take a while), an ImageJ stack with two channels, one the mean, the other channel the std.dev. at each exposure, as well as a results table that lists the exposure time, the mean (calculated from the means of the n images taken at the given exposure) and the standard deviation at each exposure (calculated from the n means) will be shown.  The standard deviation will be very low  (< 1) if you have a stable light source, higher values indicate significant fluctuations, which will make the results harder to interpret.  
+
+The resulting stack with means and std. dev. can be used to calculate per pixel camera characteristics.  You can experiment with the Demo Camera. Set the Mode property to Noise, and use the Photon Conversion Factor, Photon Flux and Readnoise properties to change the illumination intensity and gain and readnoise of your virtual camera.  
 
 {{Listserv_Search|Photon Transfer Curve Assistant}}
 
