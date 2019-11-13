@@ -1,4 +1,4 @@
-The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac.
+The following instructions for debugging Micro-Manager's Java code with NetBeans are intended to work on Windows or Mac. Updated for 2.0-gamma
 
 (See also: [[Writing plugins for Micro-Manager]])
 
@@ -7,7 +7,7 @@ The following instructions for debugging Micro-Manager's Java code with NetBeans
 -->
 # Use [http://subversion.tigris.org/ Subversion] to download a copy of the latest [http://micro-manager.org/wiki/Micro-Manager_Source_Code Micro-Manager source]. We'll refer to the root source directory as <code>$SRCDIR</code> below.<!--
 -->
-# Download, install and run [http://netbeans.org NetBeans]. The Java SE Bundle is sufficient if you already have the JDK (Java Development Kit) installed on your computer. Otherwise, you can install the JDK and NetBeans at the same time from [http://www.oracle.com/technetwork/java/javase/downloads/ Oracle's JDK download page].
+# Download, install and run [http://netbeans.org NetBeans]. The Java SE Bundle is sufficient if you already have the JDK (Java Development Kit) installed on your computer. Otherwise, download a JDK from [https://adoptopenjdk.net/ AdoptOpenJDK] . Micro-Manager is currently developed with JDK 8.
 <!--
 -->
 # Choose '''File''' > '''New Project...''' >  [Categories] '''Java''' > [Projects] '''Java Project with Existing Sources'''. Press '''Next'''.
@@ -16,7 +16,7 @@ The following instructions for debugging Micro-Manager's Java code with NetBeans
 # Give your project a name. The '''Project Folder''' is best saved outside of the Micro-Manager source directory. Press '''Next'''.
 <!--
 -->
-# Under '''Source Package Folders''', click '''Add Folder''' at right and browse to <code>$SRCDIR/mmstudio/src</code>. If you want to develop a plugin, you can also add <code>$SRCDIR/plugins/*/src</code> at this time. Press '''Next'''.
+# Under '''Source Package Folders''', click '''Add Folder''' at right and browse to <code>$SRCDIR/mmstudio/src/main/java</code>, as well as <code>$SRCDIR/mmstudio/src/main/resources</code>. If you want to develop a plugin, you can also add <code>$SRCDIR/plugins/*/src/main/java</code> at this time. You can also add plugins later. Press '''Next'''.
 <!--
 -->
 # Include all files ('''**'''). Press '''Finish'''.
@@ -25,7 +25,7 @@ The following instructions for debugging Micro-Manager's Java code with NetBeans
 # Right-click your project in the '''Projects''' tab (probably at left) and select '''Properties'''.
 <!--
 -->
-# Select '''Libraries''' under '''Categories'''. Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 64-bit JDK 1.6 - but using a newer Java Platform in NetBeans than the one shipped with Micro-Manager is usually okay).
+# Select '''Libraries''' under '''Categories'''. Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 64-bit JDK 1.8 - but using a newer Java Platform in NetBeans than the one shipped with Micro-Manager is usually okay).
 <!--
 -->
 # Under '''Compile''' > '''Compile-time Libraries''', click '''Add Jar/Folder''' and add <code>$INSTALLDIR/ij.jar</code>, as well as  all jars in <code>$INSTALLDIR/plugins/Micro-Manager</code> ''except for'' <code>MMJ_.jar</code>.
