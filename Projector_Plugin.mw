@@ -49,7 +49,7 @@ Point and Shoot lets you phototarget a small region instantaneously, by clicking
 
 == ROIs tab ==
 
-[[File:Plugin_projector-rois.png]]
+[[File:ProjectorROIs.png]]
 
 
 The Regions of Interest (ROIs) tab lets you specify regions on the image to be phototargeted. Phototargeting of an ROI can be carried out instantly, or programmed into a Multi-Dimensional Acquisition.
