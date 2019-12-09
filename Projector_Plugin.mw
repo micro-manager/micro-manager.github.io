@@ -56,7 +56,14 @@ Point and Shoot lets you phototarget a small region instantaneously, by clicking
 
 # Under the Point and Shoot tab, set "Point and shoot mode" to "On." 
 # Turn on live mode.
-# Hold down the Control key (on the keyboard) and click anywhere in the live image window. You should immediately see a laser spot appear for a time at the clicked location.
+# Ensure that the ImageJ "Hand" tool is selected, hold down the Shift key (on the keyboard) and click anywhere in the live image window. You should immediately see a laser spot appear for a time at the clicked location. Duration of the Point and Shoot event can be set in the Exposure time field. 
+
+Point and Shoot events can be logged in a file.  Set the location of the file in the dialog.  The file will be named using the current date (yyymmdd) and contains timestamps and positions of the point and shoot click in image (pixel coordinates). Example:
+
+2019-12-09 13:41:36.228	221	223<br>
+2019-12-09 13:41:42.559	347	368<br>
+2019-12-09 13:41:44.299	144	339<br>
+2019-12-09 13:41:45.831	199	143<br>
 
 == ROIs tab ==
 
