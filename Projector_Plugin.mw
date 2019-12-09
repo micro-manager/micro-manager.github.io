@@ -110,7 +110,7 @@ Alternatively, you can run ROIs at pre-determined time points in an acquisition 
 | Run ROIs in Multi-Dimensional Acquisition
 | Fires phototargeting device at a pre-determined time during MDA.
 |- valign="top"
-| Start Frame
+| Start Time
 | Timepoint in MDA to fire sequence.
 |- valign="top"
 | Repeat every __ frames
