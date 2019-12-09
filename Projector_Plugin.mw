@@ -1,4 +1,4 @@
-This page describes the Projector Plugin in Micro-Manager 2.0(gamma).  For 1.4, see [[Projector1.4|Projector-1.4]].
+This page describes the Projector Plugin in Micro-Manager 2.0(gamma).  For 1.4, see [[Projector-1.4|Projector-1.4]].
 
 The Projector plugin provides a single graphical user interface for controlling SLMs (spatial light modulators), such as DMDs (digital mirror devices), LCOS (liquid crystal on silicon) modulators or even digital computer projectors, and also for controlling steerable-mirror (e.g. galvo-based) phototargeting devices, including the [[Rapp|Rapp UGA-40]], the [[MicroPoint|Andor MicroPoint]], and the [[ASITiger|ASI scanner]].
 
