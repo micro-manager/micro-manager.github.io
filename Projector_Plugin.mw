@@ -39,7 +39,7 @@ Obviously the calibration should be performed with the same objective and camera
 
 == Point and Shoot tab ==
 
-[[File:Plugin_projector-point_and_shoot.png]]
+[[File:ProjectorPAS.png]]
 
 Point and Shoot lets you phototarget a small region instantaneously, by clicking on a live image of the specimen. Galvo-based devices fire a single shot, while SLM devices will turn on in a small region around the clicked pixel. The procedure is very simple:
 
