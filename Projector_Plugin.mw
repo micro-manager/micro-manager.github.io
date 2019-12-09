@@ -9,7 +9,7 @@ The Projector plugin's interface shows three tabs: Point and Shoot, ROIs, and Se
 
 == Setup tab ==
 
-[[File:Plugin_projector-setup.png]]
+[[File:ProjectorSetup.png]]
 
 The Setup tab allows you to test the phototargeting device and perform initial calibration. Press On and Off buttons to turn the light on and off (in the case of a pulsed laser such as the MicroPoint, the On button will only turn the light on briefly). Press the "Show center spot" button to illuminate the center of the phototargeting device's range. This Center Spot should be visible in the camera's field of view -- if it isn't, the physical alignment of the camera and/or phototargeter will need to be adjusted.
 
