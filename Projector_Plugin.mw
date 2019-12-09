@@ -11,27 +11,38 @@ The Projector plugin's interface shows three tabs: Point and Shoot, ROIs, and Se
 
 [[File:ProjectorSetup.png]]
 
-The Setup tab allows you to test the phototargeting device and perform initial calibration. Press On and Off buttons to turn the light on and off (in the case of a pulsed laser such as the MicroPoint, the On button will only turn the light on briefly). Press the "Show center spot" button to illuminate the center of the phototargeting device's range. This Center Spot should be visible in the camera's field of view -- if it isn't, the physical alignment of the camera and/or phototargeter will need to be adjusted.
+The Setup tab lets you test the phototargeting device and relate its coordinates to that of your camera (calibrate). You will need a thin sample that fluoresces when you illuminate with your photo-targeting light source. You also will need to focus at the same height as your real sample will be. We have had good luck with the plastics of certain multi-well plates, the plastic in between wells of some plates fluoresces nicely when illuminated with 405nm light.  Other possibilities are highly concentrated dye solutions, or "highlight" markers (but note that these leave thicker layers, making it hard to know exactly where your device is focused.  
+
+If your device controls the light source itself, you will not need to set a Photo-targeting shutter.  If you do have shutter that controls the photo-targeting light source, select it before you start.  You may also want to select the channel optimized for photo-targeting at this point.
+
+To start, press the "Center Spot" button.  This should target your device to its center, which will hopefully be close to the center of your camera's field of view.  Use the "On" and "Off" buttons to turn the light on and off (in the case of a pulsed laser such as the MicroPoint, the On button will only turn the light on briefly). If the spot is not visible on a live image, the physical alignment of the camera and/or phototargeter may need to be adjusted. 
+
+Synchronization of the camera and the photo-targeting device is problematic (in part because all photo-targeting devices behave differently, some coordinate the light source themselves, outside of the control of Micro-Manager).  To ensure that the illumination of the spot happens during a camera exposure (which we need for calibration), use the delay(ms) field. If the value is too short, you may not see any illuminated spots during calibration.  The only downside of setting it too high is that calibration will take longer.  Experiment (by starting Calibration) until you find a value that lets you (and the software) see spots during calibration
 
 The Calibrate button starts an automated calibration procedure, where the phototargeter's internal coordinates are mapped to the pixel coordinates to the camera's pixel coordinates. This calibration allows the Projector plugin to convert mouse clicks or ROIs drawn on the live camera image into precisely directed phototargeting events.
 
-The calibration procedure starts by illuminating a few spots near the center of the phototargeter range. This gives the Projector plugin an estimate of the orientation and location of the camera field of view relative to the phototargeter range. Then, points in a square lattice are illuminated one by one, and imaged on the camera. The Projector plugin then uses the lattice measurements to compute a mapping of each pixel to phototargeter coordinates for future phototargeting. Mappings for each camera and phototargeting deviced are stored and will be remembered even after Micro-Manager is restarted. The relative orientation of the camera and phototargeting device does not matter; however they should be turned roughly square with each other (0, 90, 180, or 270 degrees) so that the square lattice isn't cut off.
+[[File:ProjectorCalibration.png]]
 
-Obviously the calibration should be performed with the same objective and camera that will be used for actual phototargeting.  Currently there is no way to store different calibration mappings, e.g. for two different objectives.
+The calibration procedure starts by illuminating a few spots near the center of the phototargeter range. This gives the Projector plugin an estimate of the orientation and location of the camera field of view relative to the phototargeter range. Then, points in a square lattice are illuminated one by one, and imaged on the camera. The Projector plugin uses the lattice measurements to compute a mapping of each pixel to phototargeter coordinates for future phototargeting. Mappings for each camera and phototargeting device are stored and will be remembered even after Micro-Manager is restarted. The relative orientation of the camera and phototargeting device does not matter; however they should be turned roughly square with each other (0, 90, 180, or 270 degrees) so that the square lattice isn't cut off.
+
+The calibration should be independent of the objective used, but will change when using different cameras.  Currently there is no way to store different calibration mappings, e.g. for two different objectives.
 
 
 {| class="wikitable"
 !style="width: 20%;"| Setting
 ! Description
 |- valign="top"
-| On / Off
-| Toggles calibration mode.
-|- valign="top"
-| Calibrate
-| Creates calibration map of phototargeting device range to the camera pixel position. 
-|- valign="top"
 | Show center spot
 | Illuminate center of SLM or galvo device.
+|- valign="top"
+| Calibrate
+| Creates calibration map of photo-targeting device range to the camera pixel position. 
+|- valign="top"
+| Delay(ms)
+| Use to synchronize photo-targeting exposure with camera exposure
+|- valign="top"
+| Phototargeting Shutter
+| Shutter to be opened for photo-targeting. Not all photo-targeting devices need this to be set, for instance the Rapp UGA-40 controls the light source directly. 
 |- valign="top"
 | Phototargeting channel
 | Toggles to specified channel during phototargeting.  You don't need to set this unless some hardware needs to be moved during imaging, like a dichroic and/or a shutter.  If you don't see your channel listed, you must set the <code>Core-ChannelGroup</code> in the <code>Property Browser</code> to the Group containing this channel.
