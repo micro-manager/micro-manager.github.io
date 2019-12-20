@@ -14,11 +14,14 @@ Any Okolab device.
 
 == Installation ==
 
-# Download and install [http://www.oko-lab.com/public/okolib/drivers/Okolab%20Drivers%20Setup.exe Okolab USB drivers].
-# Connect the port named USB on the rear of the Unit to the PC USB port, using a standard mini-USB cable. Please consider that you may need an USB Male-to Male cable, depending on the hardware revision of your control unit.
+Connect the port named USB on the rear of the Unit to the PC USB port, using a standard mini-USB cable. Please consider that you may need an USB Male-to Male cable, depending on the hardware revision of your control unit.
 
 {{Important|If you have more than one controller, please make sure to plug the USB cable to the unit which is directly connected to the Oko-Touch.
 When two (or more) units are connected in a stack, one becomes the master and the other is acting as a "slave device", so only the controller connected to the Oko-Touch will answer to USB commands}}
+
+{{Note|The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
+If, after the installation, the ''okolib'' folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder.}}
+
 
 == Configuration ==
 
@@ -88,6 +91,7 @@ The installation is straightforward, default settings can be used.
 
 === Usage ===
 See current version
+
 
 {{Listserv_Search|Okolab}}
 
