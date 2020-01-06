@@ -1,0 +1,16 @@
+== FirstLightImagingCamera ==
+
+<table><tr><td>
+'''Summary:'''</td><td>Device adapter for cameras from First Light Imaging</td></tr>
+<tr><td>'''Author:'''</td><td>Julien Tugnoli</td></tr>
+<tr><td>'''License:'''</td><td>BSD</td></tr> 
+<tr><td>'''Platforms:'''</td><td>Windows</td></tr>
+<tr><td>'''Devices:'''</td><td>Camera</td></tr>
+<tr><td>'''Since'''</td><td>Jan. 6, 2020</td></tr>
+</table>
+
+
+Instructions on the steps needed to get the camera to work are needed.
+
+
+{{Devices_Sidebar}}
