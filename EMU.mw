@@ -1,0 +1,47 @@
+Easier Micro-manager User interface (EMU) loads reconfigurable user interfaces in Micro-manager. This page describes the basics of EMU, refer to the [https://jdeschamps.github.io/EMU-guide/userguide.html user guide] for more details.
+
+CURRENTLY UNDER CONSTRUCTION
+
+== Using EMU ==
+
+Interfaces will now be referred as '''plugins'''.
+
+=== First start ===
+
+Upon starting EMU for the first time, the user is prompted with a choice of interface to load:
+
+[[File:Emu-plugin-selection.png|200px]]
+
+After validating the choice, the plugin is loaded. EMU also starts the '''configuration wizard'''. Refer to the configuration plugin section on how to use the configuration wizard.
+
+=== Configure plugin ===
+
+
+
+=== Manage configuration ===
+
+=== Switch configuration ===
+
+=== Switch plugin ===
+
+* 
+
+== Plugins ==
+
+=== Adding a third-party plugin ===
+
+=== Current plugins ===
+
+Integrated with EMU:
+* SimpleUI: a simple interface controlling four lasers and an optional filter wheel.
+* iBeamSmart: an interface controlling multiple [https://micro-manager.org/wiki/Toptica_iBeamSmartCW iBeamSmart lasers] from Toptica.
+
+Third-party:
+* [https://github.com/jdeschamps/htSMLM htSMLM], the Ries group SMLM microscope interface. It controls four lasers, multiple filter wheel, a z-stage and features various additional controls. It includes automated activation for SMLM and unsupervised imaging tools.
+
+== Implementing your own UI ==
+
+* [https://github.com/jdeschamps/EMU-guide/tree/master/tutorial tutorial]
+* [https://jdeschamps.github.io/EMU-guide/programmingguide.html programming guide]
+* [https://github.com/jdeschamps/EMU-guide/tree/master/guide example code]
+* [https://github.com/jdeschamps/EMU-guide/tree/master/examples example plugins]
