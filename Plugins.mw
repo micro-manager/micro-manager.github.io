@@ -6,6 +6,7 @@ Micro-Manager offers a number of built-in Plugins for special applications in mi
 * [[AssembleData]]
 * [[AutoLase]]
 * [[DLLAutoReloader]]
+* [[EMU]]
 * [[HCS Site Generator]] 
 * [[Flat-Field Correction]]
 * [[FrameProcessor]] : Perform live frames image processing.
