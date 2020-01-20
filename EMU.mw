@@ -1,7 +1,9 @@
 Easier Micro-manager User interface (EMU) loads reconfigurable user interfaces in Micro-manager. This page describes the basics of EMU, refer to the [https://jdeschamps.github.io/EMU-guide/userguide.html user guide] for more details.
 
-* Easily transferable between similar set-ups
-* 
+== Principle ==
+
+EMU loads user interfaces as plugins in Micro-Manager. [more to come]
+
 
 == Using EMU ==
 
@@ -30,6 +32,8 @@ In addition, it features four tabs:
 * Global settings
 
 Note that changing the name of an existing configuration will create a new configuration without deleting the old one. Use the '''configuration manager''' to delete existing configurations.
+
+One the plugin configured, click on '''save''' to write the configuration to disk. The configuration can be found in the Micro-manager installation folder, under '''/EMU/config.uicfg'''.
 
 ==== Plugin settings ====
 
@@ -145,8 +149,13 @@ In order to implement your own plugin, check out the [https://jdeschamps.github.
 * [https://github.com/jdeschamps/EMU-guide/tree/master/guide Example code] from the programming guide.
 * [https://github.com/jdeschamps/EMU-guide/tree/master/examples Source code of the example plugins].
 
+=== Contribute a plugin ===
+
+Contribute your plugin to EMU and Micro-Manager by creating a pull request on
+[https://github.com/jdeschamps/EMU the EMU source code] or the Micro-Manager 2-gamma source code, or by contacting us.
+
 == About ==
 
 [https://github.com/jdeschamps/EMU EMU latest source code] is on Github.
 
-EMU was developed by Joran Deschamps at EMBL, Germany (2018-2020).
+EMU was developed by Joran Deschamps (joran[dot]deschamps[at]embl.de) at EMBL.
