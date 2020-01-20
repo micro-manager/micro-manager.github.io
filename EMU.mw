@@ -4,27 +4,30 @@ CURRENTLY UNDER CONSTRUCTION
 
 == Using EMU ==
 
-Interfaces will now be referred as '''plugins'''.
+User interfaces will now be referred as '''plugins''' for EMU. Each plugin has a certain number of:
+* plugin settings
+* UI properties
+* UI parameters
+
+Beyond loading the plugin, EMU provides a graphical interface to configure plugins.
 
 === First start ===
 
-Upon starting EMU for the first time, the user is prompted with a choice of interface to load:
+Upon starting EMU for the first time, the user must choose an interface to load:
 
 [[File:Emu-plugin-selection.png|200px]]
 
-After validating the choice, the plugin is loaded. EMU also starts the '''configuration wizard'''. Refer to the configuration plugin section on how to use the configuration wizard.
+After validating the choice, the plugin is loaded. Since no configuration exists yet, EMU also automatically starts the '''configuration wizard'''. 
 
 === Configure plugin ===
 
-Plugins are configured using the configuration wizard, which is accessible by clicking on '''modify configuration''' in the configuration menu:
+Plugins are configured using the '''configuration wizard''', which is accessible through the configuration menu by clicking on '''modify configuration''':
 
 [[File:Emu-configuration-menu.PNG|150px]]
 
-The configuration wizard then starts:
+The '''configuration wizard''' allows changing aspects of the interface and mapping Micro-manager device properties to UI properties. On the upper part of the wizard's window, the user can set the name of the configuration and show/hide the '''help''' window.
 
-[[File:Emu-configuration-header.PNG|300px]]
-
-It features four tabs:
+In addition, it features four tabs:
 * Plugin settings
 * Properties
 * Parameters
@@ -34,10 +37,13 @@ It features four tabs:
 
 [[File:Emu-configuration-plugin.PNG|300px]]
 
+Plugin settings are intended to be general options of the interface. They can for instance be used to hide/show some modules, to set the number of modules or simply give them a name.
+
 ==== Properties ====
 
 [[File:Emu-configuration-properties.PNG|300px]]
 
+The property tab allows
 
 ==== Parameters ====
 
@@ -71,7 +77,13 @@ It features four tabs:
 
 Integrated with EMU:
 * SimpleUI: a simple interface controlling four lasers and an optional filter wheel.
+
+[[File:Emu-simpleui.PNG|300px]]
+
 * iBeamSmart: an interface controlling multiple [https://micro-manager.org/wiki/Toptica_iBeamSmartCW iBeamSmart lasers] from Toptica.
+
+
+[[File:Emu-ibeamsmart.png|300px]]
 
 Third-party:
 * [https://github.com/jdeschamps/htSMLM htSMLM], the Ries group SMLM microscope interface. It controls four lasers, multiple filter wheel, a z-stage and features various additional controls. It includes automated activation for SMLM and unsupervised imaging tools.
