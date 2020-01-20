@@ -18,7 +18,7 @@ After validating the choice, the plugin is loaded. EMU also starts the '''config
 
 Plugins are configured using the configuration wizard, which is accessible by clicking on '''modify configuration''' in the configuration menu:
 
-[[File:Emu-configuration-menu.PNG|70]]
+[[File:Emu-configuration-menu.PNG|150px]]
 
 The configuration wizard then starts:
 
@@ -49,13 +49,19 @@ It features four tabs:
 
 ==== Help ====
 
+[[File:Emu-configuration-help.PNG|300px]]
+
 === Manage configuration ===
+
+[[File:Emu-configuration-manager.PNG|300px]]
 
 === Switch configuration ===
 
+[[File:Emu-switch-config.png|250px]]
+
 === Switch plugin ===
 
-* 
+[[File:Emu-switch-plugin.png|250px]]
 
 == Plugins ==
 
