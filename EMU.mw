@@ -89,6 +89,10 @@ This window is updated every time the user clicks on a row in one of the configu
 
 The '''configuration manager''' can be found by clicking on the ''Configuration'' menu, then on ''manage configurations''.
 
+[[File:Emu-configuration-menu.PNG|150px]]
+
+Configuration manager:
+
 [[File:Emu-configuration-manager.PNG|300px]]
 
 It allows deleting existing configurations. Note that the currently loaded configuration cannot be deleted.
@@ -110,30 +114,39 @@ In the same way as for configurations, the user can switch between plugins:
 
 == Plugins ==
 
-
-
-=== Adding a third-party plugin ===
+Compiled plugins (.jar files) can be placed in your Micro-Manager installation folder, in the /EMU/ folder. They should then be automatically discovered by EMU and either loaded upon the first start or using the ''switch plugins'' menu.
 
 === Current plugins ===
 
-Integrated with EMU:
-* SimpleUI: a simple interface controlling four lasers and an optional filter wheel.
+Currently, two plugins are distributed with EMU:
+
+==== SimpleUI ==== 
+
+SimpleUI is a simple interface controlling four lasers and an optional filter wheel.
 
 [[File:Emu-simpleui.PNG|300px]]
 
-* iBeamSmart: an interface controlling multiple [https://micro-manager.org/wiki/Toptica_iBeamSmartCW iBeamSmart lasers] from Toptica.
 
+=== iBeamSmart ===
+
+iBeamSmart provides an interface for multiple [https://micro-manager.org/wiki/Toptica_iBeamSmartCW iBeamSmart lasers] from Toptica. Each module (= laser) features in particular controls for the FINE settings and for external digital triggering. Both of these features can be hidden using the corresponding parameters. 
 
 [[File:Emu-ibeamsmart.png|300px]]
 
-Third-party:
-* [https://github.com/jdeschamps/htSMLM htSMLM], the Ries group SMLM microscope interface. It controls four lasers, multiple filter wheel, a z-stage and features various additional controls. It includes automated activation for SMLM and unsupervised imaging tools.
+=== Third-party plugins ===
 
-== Implementing your own UI ==
+* [https://github.com/jdeschamps/htSMLM htSMLM], the Ries group SMLM microscope interface. It controls four lasers, multiple filter wheels, a z-stage and features various additional controls. It includes automated activation for SMLM and unsupervised imaging tools.
 
-* [https://github.com/jdeschamps/EMU-guide/tree/master/tutorial tutorial]
-* [https://jdeschamps.github.io/EMU-guide/programmingguide.html programming guide]
-* [https://github.com/jdeschamps/EMU-guide/tree/master/guide example code]
-* [https://github.com/jdeschamps/EMU-guide/tree/master/examples example plugins]
+=== Implementing your own plugin ===
+
+In order to implement your own plugin, check out the [https://jdeschamps.github.io/EMU-guide/programmingguide.html programming guide], as well as the following resources:
+
+* [https://github.com/jdeschamps/EMU-guide/tree/master/tutorial Tutorial using a drag and drop software] (in Eclipse).
+* [https://github.com/jdeschamps/EMU-guide/tree/master/guide Example code] from the programming guide.
+* [https://github.com/jdeschamps/EMU-guide/tree/master/examples Source code of the example plugins].
 
 == About ==
+
+[https://github.com/jdeschamps/EMU EMU latest source code] is on Github.
+
+EMU was developed by Joran Deschamps at EMBL, Germany (2018-2020).
