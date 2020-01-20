@@ -1,19 +1,15 @@
 Easier Micro-manager User interface (EMU) loads reconfigurable user interfaces in Micro-manager. This page describes the basics of EMU, refer to the [https://jdeschamps.github.io/EMU-guide/userguide.html user guide] for more details.
 
-CURRENTLY UNDER CONSTRUCTION
+* Easily transferable between similar set-ups
+* 
 
 == Using EMU ==
 
-User interfaces will now be referred as '''plugins''' for EMU. Each plugin has a certain number of:
-* plugin settings
-* UI properties
-* UI parameters
-
-Beyond loading the plugin, EMU provides a graphical interface to configure plugins.
+User interfaces will now be referred as '''plugins''' for EMU. Each plugin consists of several modules called configurable panels. Upon loading a plugin, EMU aggregates the properties and parameters of each module and provides the user with an intuitive interface to configure them.
 
 === First start ===
 
-Upon starting EMU for the first time, the user must choose an interface to load:
+Upon starting EMU for the first time, the user must choose a plugin to load:
 
 [[File:Emu-plugin-selection.png|200px]]
 
@@ -33,6 +29,8 @@ In addition, it features four tabs:
 * Parameters
 * Global settings
 
+Note that changing the name of an existing configuration will create a new configuration without deleting the old one. Use the '''configuration manager''' to delete existing configurations.
+
 ==== Plugin settings ====
 
 [[File:Emu-configuration-plugin.PNG|300px]]
@@ -43,33 +41,76 @@ Plugin settings are intended to be general options of the interface. They can fo
 
 [[File:Emu-configuration-properties.PNG|300px]]
 
-The property tab allows
+The property tab is aimed at pairing Micro-Manager device properties with UI properties. For each relevant UI property (1st column), select a device in the device list (2nd column) then the corresponding device property (3rd list).
+
+Some UI properties require state values. For instance, some UI properties are linked to a toggle button (button with on and off states) and therefore require two state values. Use the device property browser (Micro-Manager menus) to read out the correct values and enter them for each state (see on the previous image the states for the filterwheel position).
+
+There are then different types of UI property:
+* Without states
+* Single-state, with only one state
+* Two-state, with On and Off state
+* Multi-state, with N states
+* Rescaled property, see '''example 2'''
+
+Once the UI property is allocated, the state values have to be set to a value allowed by the device property. If the UI property is not allocated, then these will be ignored.
+
+
+'''Example 1:'''
+In the above screenshot, the filter wheel has multiple states (N=6). If your filter wheel has four positions numbered from 0 to 3, then the set the first four UI property states to 0, 1, 2 and 3. Then set the remaining ones to one of these values.
+
+'''Example 2:'''
+Rescaled properties do not have states but two parameters: slope and offset. When the user enter a ''value'' for the property in the UI, the value is scaled to ''slope*value+offset'' before being applied to the device property. A good example use for such a property is with laser percentages. Some lasers only have a power (mW) device property in Micro-Manager, while the controls of the UI might be intended for percentages. Then, setting ''slope=max_power/100'' and ''offset=0'' allows the user to use percentage with the UI, while modifying the device property with the absolute laser power.
 
 ==== Parameters ====
 
 [[File:Emu-configuration-parameters.PNG|300px]]
 
+Parameters are mostly intended to provide reconfigurable aspects of the UI, whether they are aesthetic (e.g.: colors), functional (e.g.: hide/show  or enable/disable buttons) or for improved user-friendliness (e.g.: titles or button texts).
+
+
 ==== Global settings ====
 
 [[File:Emu-configuration-global.PNG|300px]]
 
+Global settings are EMU options. For the moment, there is only a single setting:
+* '''Enable unallocated warnings''': when checked, it warns the user that some UI properties have not been allocated.
+
+Note that global settings are set for all configurations.
+
 ==== Help ====
+
+Upon clicking on the '''help''' button, the help window pops up:
 
 [[File:Emu-configuration-help.PNG|300px]]
 
+This window is updated every time the user clicks on a row in one of the configuration wizard tabs. The help window provides a description of the currently selected setting/property/parameter or property state.
+
 === Manage configuration ===
+
+The '''configuration manager''' can be found by clicking on the ''Configuration'' menu, then on ''manage configurations''.
 
 [[File:Emu-configuration-manager.PNG|300px]]
 
+It allows deleting existing configurations. Note that the currently loaded configuration cannot be deleted.
+
 === Switch configuration ===
+
+When multiple configurations related to the currently loaded plugin exist, then the user can switch between these configurations using the ''switch plugin'' menu:
 
 [[File:Emu-switch-config.png|250px]]
 
+'''Example:'''
+If a set-up has two laser combiners, different configurations can map each combiner with the laser controls.
+
 === Switch plugin ===
+
+In the same way as for configurations, the user can switch between plugins:
 
 [[File:Emu-switch-plugin.png|250px]]
 
 == Plugins ==
+
+
 
 === Adding a third-party plugin ===
 
@@ -94,3 +135,5 @@ Third-party:
 * [https://jdeschamps.github.io/EMU-guide/programmingguide.html programming guide]
 * [https://github.com/jdeschamps/EMU-guide/tree/master/guide example code]
 * [https://github.com/jdeschamps/EMU-guide/tree/master/examples example plugins]
+
+== About ==
