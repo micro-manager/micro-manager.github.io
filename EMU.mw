@@ -47,7 +47,7 @@ Plugin settings are intended to be general options of the interface. They can fo
 
 The property tab is aimed at pairing Micro-Manager device properties with UI properties. For each relevant UI property (1st column), select a device in the device list (2nd column) then the corresponding device property (3rd list).
 
-Some UI properties require state values. For instance, some UI properties are linked to a toggle button (button with on and off states) and therefore require two state values. Use the device property browser (Micro-Manager menus) to read out the correct values and enter them for each state (see on the previous image the states for the filterwheel position).
+Some UI properties require state values. For instance, some UI properties are linked to a toggle button (button with on and off states) and therefore require two state values. Use the device property browser (Micro-Manager menus) to read out the correct values and enter them for each state (see on the previous image the states for the filterwheel position). Note that configuration preset groups can also be allocated to a UI property.
 
 There are then different types of UI property:
 * Without states
