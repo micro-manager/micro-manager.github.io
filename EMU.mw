@@ -120,9 +120,9 @@ In the same way as for configurations, the user can switch between plugins:
 
 The plugin menu has two entries:
 
-[[File:Emu-plugin-menu.png|150px]]
+[[File:Emu-plugin-menu.png|100px]]
 
-'''Refresh UI''' query all current property states and updates the controls of the UI (e.g.: buttons, text boxes, sliders...) to reflect the new states. If a device property is modified outside the plugin then the state of the UI will not be in sync anymore. This can happen for instance by changing the device property browser or configuration preset groups (main Micro-manager window). Using '''Refresh UI''' will sync the UI back with the device properties.
+'''Refresh UI''' query all current property states and updates the controls of the UI (e.g.: buttons, text boxes, sliders...) to reflect the new states. If a device property is modified outside the plugin then the state of the UI will not be in sync anymore. This happens for instance by interacting with the device property browser or configuration preset groups (main Micro-manager window). Using '''Refresh UI''' will sync the UI back with the device property states.
 
 '''Description''' shows the description of all modules (panels) of the plugins.
 
