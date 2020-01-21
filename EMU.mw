@@ -116,13 +116,23 @@ In the same way as for configurations, the user can switch between plugins:
 
 [[File:Emu-switch-plugin.png|250px]]
 
+=== Plugin menu ===
+
+The plugin menu has two entries:
+
+[[File:Emu-plugin-menu.png|150px]]
+
+'''Refresh UI''' query all current property states and updates the controls of the UI (e.g.: buttons, text boxes, sliders...) to reflect the new states. If a device property is modified outside the plugin then the state of the UI will not be in sync anymore. This can happen for instance by changing the device property browser or configuration preset groups (main Micro-manager window). Using '''Refresh UI''' will sync the UI back with the device properties.
+
+'''Description''' shows the description of all modules (panels) of the plugins.
+
 == Plugins ==
 
 Compiled plugins (.jar files) can be placed in your Micro-Manager installation folder, in the /EMU/ folder. They should then be automatically discovered by EMU and either loaded upon the first start or using the ''switch plugins'' menu.
 
 === Current plugins ===
 
-Currently, two plugins are distributed with EMU:
+Currently, two plugins are distributed with EMU: SimpleUI and iBeamSmart.
 
 ==== SimpleUI ==== 
 
