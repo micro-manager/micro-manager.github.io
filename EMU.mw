@@ -2,8 +2,18 @@ Easier Micro-manager User interface (EMU) loads reconfigurable user interfaces i
 
 == Principle ==
 
-EMU loads user interfaces as plugins in Micro-Manager. [more to come]
+In order to provide better user experience, tailored user interfaces (UI) are often an important, albeit regularly overlooked, feature of a microscope. In Micro-Manager, UIs can be implemented as plugins and should modify the state of device properties whenever the user interacts with the UI controls (buttons, sliders...etc..). Because similar devices might have different types of properties (power percentage vs absolute power) and states ("On" vs "1"), great efforts should be spent to accommodate various devices. Otherwise, the interface will not be easily transferable and shared with other groups.
 
+EMU provides a mechanism to build flexible and reconfigurable user interfaces. In the user point of view, EMU delivers a choice of UIs that are rapidly ready to use thanks to an intuitive configuration menu. In particular, the configuration menu allows mapping the device properties to the various functions of the interface in few clicks. EMU also simplifies the task for programmers, as implemented a new UI can be as simple as using a drag and drop software (such as Eclipse WindowBuilder) to create the interface and writing few lines of code for compatibility. EMU then takes care of all the configuration and interaction with the devices. 
+
+
+In summary, with EMU:
+* Users have access to a bank of UI
+* The interfaces are rapidly configured for a set-up
+* The UIs are easily transferred between similar set-ups
+* New UIs can be designed with drag and drop softwares and few extra lines of code
+
+In the future, we hope to increase the number of available EMU plugins thanks to community contributions.
 
 == Using EMU ==
 
@@ -141,7 +151,7 @@ SimpleUI is a simple interface controlling four lasers and an optional filter wh
 [[File:Emu-simpleui.PNG|300px]]
 
 
-=== iBeamSmart ===
+==== iBeamSmart ====
 
 iBeamSmart provides an interface for multiple [https://micro-manager.org/wiki/Toptica_iBeamSmartCW iBeamSmart lasers] from Toptica. Each module (= laser) features in particular controls for the FINE settings and for external digital triggering. Both of these features can be hidden using the corresponding parameters. 
 
