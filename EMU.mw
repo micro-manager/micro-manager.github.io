@@ -10,7 +10,7 @@ EMU provides a mechanism to build flexible and reconfigurable user interfaces. I
 In summary, with EMU:
 * Users have access to a bank of UIs
 * The interfaces are rapidly configured and ready to use
-* The UIs are easily transferred between similar set-ups
+* The UIs are easily be transferred between similar set-ups
 * New UIs can be designed with drag and drop softwares and few extra lines of code
 
 In the future, we hope to increase the number of available EMU plugins thanks to community contributions.
