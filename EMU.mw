@@ -6,7 +6,6 @@ In order to provide better user experience, tailored user interfaces (UI) are of
 
 EMU provides a mechanism to build flexible and reconfigurable user interfaces. In the user point of view, EMU delivers a choice of UIs that are rapidly ready to use thanks to an intuitive configuration menu. In particular, the configuration menu allows mapping the device properties to the various functions of the interface in few clicks. EMU also simplifies the task for programmers, as implementing a new UI can be as simple as using a drag and drop software (such as Eclipse WindowBuilder) to create the interface and writing few lines of code for compatibility. EMU then takes care of all the configuration and interaction with the devices. 
 
-
 In summary, with EMU:
 * Users have access to a bank of UIs
 * The interfaces are rapidly configured and ready to use
