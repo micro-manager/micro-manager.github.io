@@ -27,7 +27,7 @@ Upon starting EMU for the first time, the user must choose a plugin to load:
 
 After validating the choice, the plugin is loaded. Since no configuration exists yet, EMU also automatically starts the '''configuration wizard'''. 
 
-=== Configure plugin ===
+=== Plugin configuration ===
 
 Plugins are configured using the '''configuration wizard''', which is accessible through the configuration menu by clicking on '''modify configuration''':
 
@@ -99,7 +99,7 @@ Upon clicking on the '''help''' button, the help window pops up:
 
 This window is updated every time the user clicks on a row in one of the configuration wizard tabs. The help window provides a description of the currently selected setting/property/parameter or property state.
 
-=== Manage configuration ===
+=== Manage configurations ===
 
 The '''configuration manager''' can be found by clicking on the ''Configuration'' menu, then on ''manage configurations''.
 
