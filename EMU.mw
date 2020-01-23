@@ -50,6 +50,8 @@ One the plugin configured, click on '''save''' to write the configuration to dis
 
 Plugin settings are intended to be general options of the interface. They can for instance be used to hide/show some modules, to set the number of modules or simply give them a name.
 
+Note that in this example, the SimpleUI plugin has a single plugin settings. htSMLM (see third-party plugins) has many more.
+
 ==== Properties ====
 
 [[File:Emu-configuration-properties.PNG|300px]]
