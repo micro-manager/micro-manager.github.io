@@ -149,6 +149,7 @@ SimpleUI is a simple interface controlling four lasers and an optional filter wh
 
 [[File:Emu-simpleui.PNG|300px]]
 
+All laser/filter names and colors are configurable parameters.
 
 ==== iBeamSmart ====
 
