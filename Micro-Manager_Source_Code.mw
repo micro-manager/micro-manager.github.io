@@ -11,7 +11,7 @@ Micro-Manager is structured in three distinct layers: Graphical User Interface (
 
 The source code for 2.0-gamma is located on github at:
 
-https://github.com/micro-manager/micro-manager in the master branch.
+https://github.com/micro-manager/micro-manager in the master branch. The branch "svn-mirror" is a copy of the 1.4 subversion repositoru (see below).
 
 == Subversion repository for 1.4 ==
 
