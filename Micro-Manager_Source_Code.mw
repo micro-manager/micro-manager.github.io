@@ -9,11 +9,9 @@ Micro-Manager is structured in three distinct layers: Graphical User Interface (
 
 == Github repository for 2.0 ==
 
-The source code for 2.0-gamma is located in github at:
+The source code for 2.0-gamma is located on github at:
 
 https://github.com/micro-manager/micro-manager in the master branch.
-
-
 
 == Subversion repository ==
 
