@@ -1,4 +1,4 @@
-The following instructions for debugging Micro-Manager's Java code with InetlliJ are intended to work on Windows or Mac. Updated for 2.0-gamma
+The following instructions for debugging Micro-Manager's Java code with IntelliJ are intended to work on Windows or Mac. Updated for 2.0-gamma
 
 (See also: [[Writing plugins for Micro-Manager]])
 
@@ -10,45 +10,36 @@ The following instructions for debugging Micro-Manager's Java code with InetlliJ
 # Download, install and run [https://www.jetbrains.com/idea/download IntelliJ Community Edition]. You may also need to download a JDK from [https://adoptopenjdk.net/ AdoptOpenJDK]. Micro-Manager is currently developed with JDK 8.
 <!--
 -->
-# Choose '''Import Project'''
+# Choose '''Create New Project'''
 <!--
 -->
-# Navigate to mmstudio/src/main/Java inside your Micro-Manager source code repository.
+# Name the Project (i.e. Micro-Manager2), and select the JDK (11 may work, but MM is developed with JDK8).
 <!--
 -->
-# Leave "Create Project from existing sources" selected and click Next.
-
-# Name your project, for instance Micro-Manager2.  Place the project outside of the Micro-Manager source code repository, for instance: ~\Documents\IntelliJProjects\Micro-Manager2
-
-# Under '''Source Package Folders''', click '''Add Folder''' at right and browse to <code>$SRCDIR/mmstudio/src/main/java</code>, as well as <code>$SRCDIR/mmstudio/src/main/resources</code>. If you want to develop a plugin, you can also add <code>$SRCDIR/plugins/*/src/main/java</code> at this time. You can also add plugins later. Press '''Next'''.
+# Select the project and right click and find "Open Module Settings (F4)".
 <!--
 -->
-# Include all files ('''**'''). Press '''Finish'''.
+# Click on "Add Content Root". From <code>$SRCDIR</code> select '''mmstudio/src/main/java''' and '''mmstudio/src/main/resources'''
 <!--
 -->
-# Right-click your project in the '''Projects''' tab (probably at left) and select '''Properties'''.
+# In the Project Settings dialog, select "Libraries". Use the "+" button in the second column to add libraries.  If you have ant installed and ran '''ant -f buildscripts\fetchdeps.xml'' before, add <code>$SRCDIR/dependencies/artifacts/imagej</code>, <code>$SRCDIR/dependencies/artifacts/compile</code>.  If you did not, you can try adding the plugins/micro-manager directory of your micro-manager installation. You will also need to supply MMAcqEngine.jar and MMCoreJ.jar, which you either build yourself, or that can be found in <code>$INSTALLDIR/polugins/micro-manager</code>.  Click "OK"
 <!--
 -->
-# Select '''Libraries''' under '''Categories'''. Make sure the '''Java Platform''' matches the version of Micro-Manager you are using (e.g., 64-bit JDK 1.8 - but using a newer Java Platform in NetBeans than the one shipped with Micro-Manager is usually okay).
-<!--
--->
-# Under '''Compile''' > '''Compile-time Libraries''', click '''Add Jar/Folder''' and add <code>$INSTALLDIR/ij.jar</code>, as well as  all jars in <code>$INSTALLDIR/plugins/Micro-Manager</code> ''except for'' <code>MMJ_.jar</code>.
-<!--
--->
-# Select '''Run''' under '''Categories'''. For the <default config>, set the following parameters:
+# in the IntelliJ menu, select Run > Edit Configurations. Add new Configuration, type "Application".  
 <!--
 -->
 #* '''Main Class:'''  type in <code>ij.ImageJ</code>
 <!--
 -->
+#* '''VM options:''' type in <code>-Xmx3000M</code>. This sets the maximum memory (megabytes) used by Java .Also add <code>-Dforce.annotation.index=true</code>.<!--
+-->
 #* '''Working Directory:''' type in your <code>$INSTALLDIR</code>
 <!--
 -->
-#* '''VM options:''' for 64 bit systems, type in <code>-Xmx3000M</code>, otherwise use <code>-Xmx600M</code>. This sets the maximum memory (megabytes) used by Java. If running Micro-Manager 2.0, you also need to supply <code>-Dforce.annotation.index=true</code>.
-<!--
--->
-# Click '''OK''', and then right-click your project and choose '''Debug'''. If all is well, then Micro-Manager should launch inside ImageJ.
+# You should now be able to Run and Debug the code.
 
-{{Note|The components from the installed Micro-Manager can get out of sync with the Subversion source. If you encounter unexpected errors, update to the latest nightly build and the latest source revision.}}
+
+
+{{Note|The components from the installed Micro-Manager can get out of sync with the source code. If you encounter unexpected errors, update to the latest nightly build and the latest source revision.}}
 
 {{Programming_Sidebar}}
