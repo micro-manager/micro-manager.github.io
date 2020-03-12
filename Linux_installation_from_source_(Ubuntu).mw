@@ -6,6 +6,8 @@ See also: <code>doc/how-to-build.md</code> in the source tree.
 
 = Preparation =
 
+Note: these instructions are for Micro-Manager 1.4, and need updates for Micro-Manager 2.0 (which uses JDK 8 and has source code on [https://github.com/micro-manager/micro-manager github] rather than in a subversion repository.
+
 == Install JDK ==
 
 If you are building the Micro-Manager Java GUI, Java 1.6 or 1.7 is recommended[http://imagej.1557.x6.nabble.com/Java-error-when-compiling-a-plugin-tp5004378p5004386.html]. The simplest way is to use OpenJDK:
