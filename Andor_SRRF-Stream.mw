@@ -12,13 +12,20 @@ A short talk describing the algorithm can also be found [https://www.youtube.com
 == Minimum Requirements ==
 
 * x64 [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/ Nightly Build] MMSetup_64bit_1.4.23_20170825.exe or later
-* Andor Driver Pack 2.102.30024.0 or later (public download available [http://www.andor.com/downloads?src=micro here])
-* A NEW iXon Life or iXon Ultra EMCCD camera
+* A NEW iXon Life, iXon Ultra EMCCD or Sona camera
+* Andor Driver Pack (public download available [http://www.andor.com/downloads?src=micro here])
+** version 2.102.30024.0 or later for owners of an iXon Life and iXon Ultra EMCCD camera
+** version 3.14.30005.0 or later for owners of a Sona camera
 * SRRF-Stream license (unlocks SRRF-Stream in camera)
-* A CUDA-compatible NVidia GPU card*
-<nowiki>
-* The Nvidia GPU card should have Compute Capability v3.0 or above and 4GB or greater onboard GPU RAM. Note that Andor have done a lot of testing using the ‘mid-range’ GTX 1070 and found that, with SRRF-Stream, it is more than adequate to process data much faster than the rate of iXon data acquisition.
-</nowiki>
+* A CUDA-compatible Nvidia GPU card with Compute Capability 3.0 or above:
+** At least 4GB of on-board GPU RAM is required
+** (Note: At least 8GB is recommended for best performance, and is required for dual camera SRRF on Sona with largest recommended magnification of 6)
+* Latest Nvidia Drivers for all installed Nvidia CUDA capable GPU cards
+* Windows 7, 8 or 10: 32-bit or 64-bit Operating System. ''Note SRRF-Stream is not currently compatible with Linux or mac OS.''
+* 3.0GHz single core or 2.6GHz multi-core processor
+* At least 4GB CPU RAM
+* 200MB free disc space to install SDK and SRRF-Stream software (at least 1GB recommended for data spooling)
+* Solid-state drive (SSD) capable of a minimum sustained write speed of 100MBs for spooling data
 
 == Installation ==
 
