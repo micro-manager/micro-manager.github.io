@@ -1,7 +1,6 @@
 == Introduction ==
 
-Andor ‘SRRF-Stream’ is a Real-Time Super-Resolution Microscopy module that is offered as an extension of iXon Life
-and iXon Ultra EMCCD camera functionality. Super-resolution radial fluctuations (SRRF – pronounced ‘Surf’) is a synthesis 
+Andor ‘SRRF-Stream’ is a Real-Time Super-Resolution Microscopy module that is offered as an extension of iXon Life, iXon Ultra EMCCD camera and Sona functionality. Super-resolution radial fluctuations (SRRF – pronounced ‘Surf’) is a synthesis 
 of temporal fluctuation analysis and localisation microscopy.
 SRRF takes a frame-burst (e.g. a short rapid burst of 50 frames or greater) at a given focal plane and wavelength, 
 as input to create a single super-resolution image.
