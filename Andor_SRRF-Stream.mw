@@ -75,7 +75,7 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ;'''Radiality Magnification'''
 : The radiality magnification setting determines how many pixels each original image pixel is split into. For example, a radiality magnification of 2 will split each image pixel into 2x2 pixels. Each resultant SRRF Image will therefore be proportionally larger e.g. camera ROI = 128x128, radiality = 8, SRRF image = 1024x1024 pixels.
-: The default is 4, the range being 1 - 10 inclusive.
+: The default is 4, the range being 1 - 10 inclusive. (as of SRRF version 1.14.0.0 the range is 1 - 6)
 
 ;'''Radiality Temporal Analysis'''
 : This determines the way in which the final super-resolution image is created from the output of each radiality transform calculation.
@@ -91,7 +91,7 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ;'''Ring Radius'''
 : The ring radius will set the radius in pixels (before radiality magnification) in order to calculate the intensity gradients surrounding each co-ordinate.
-: The default for this parameter is 0.5. Valid decimal values range between 0.1 and 3.0 inclusive.
+: The default for this parameter is 0.5. Valid decimal values range between 0.1 and 3.0 inclusive. (as of SRRF version 1.14.0.0 the default is 2.0 and values range between 1.0 and 3.0)
 
 ;'''Save Original Data - Option'''
 : This option allows the user to save the original data from the camera directly to disk. The default is None.
@@ -108,6 +108,7 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 
 ::This image will be the same size as each frame coming from camera e.g. 512x512 pixels, and is named ''"Image_AvgOriginalData_512x512x1.raw".''
 <br/>
+
 == Other SRRF property defaults ==
 
 All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
