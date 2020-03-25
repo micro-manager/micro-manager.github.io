@@ -156,7 +156,12 @@ gui.attachRunnable(0, 0, 0, 0, runnable);</pre>
 
 
 * Live has a timeout of 10s - no workaround is available.
-* Snap has a timeout property value implemented, but this is per image, and will not affect SRRF datasets. 
+* Snap has a timeout property value implemented, but this is per image, and will not affect SRRF datasets.
+* When running a sequence acquisition with a Sona camera in Full frame and a high radiality magnification the resulting image can require too much memory to be handled by Micro-Manager using default settings. It is therefore required to update the size of the Sequence Buffer. This is found under Tools/Options. We recommend using a size of 512MB instead of the default 250MB.
+* If you encounter errors related to the system being out of memory when acquiring large data samples especially with a Sona camera, you can increase ImageJ's Maximum Memory from 2000MB to 4000MB. The option is found in the ImageJ window under Edit/Options/Memory & Threads. (you can find more information on this parameter and its limitations [[Micro-Manager_Configuration_Guide#Memory_Settings|here]])
+* SRRF computation time increases with frame size therefore the larger the camera frame and the higher the radiality magnification are, the more time will be required for the computer to process the SRRF frame. As a result, when using a Sona camera, using Internal Trigger (the default trigger mode) or External Trigger with low exposure times and/or low trigger delays can result in the camera acquiring frames faster than the computer can handle. Eventually this situation may lead to a camera buffer overflow error indicating that the buffer on the camera head is full and can’t store any more frames forcing the camera to stop the acquisition.  This can be solved by changing acquisition settings:
+** The easiest solution when using Internal Trigger is to switch to Software Trigger which will ensure that the camera acquires frames at a rate sustainable by the computer. This solution however incurs a small overhead and will therefore not provide the best frame rate.
+** A more advanced solution is to increase the delay between triggers of the triggering device (when using External Trigger) or to decrease the camera frame rate (when using Internal Trigger). This solution has the advantage of being able to provide the best possible frame rate but requires a significant amount of work and may lead to occasional camera buffer overflows if the timings are not properly set.
 
 <br/>
 For more information, see http://www.andor.com/srrf-stream
