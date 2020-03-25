@@ -112,7 +112,7 @@ Parameters for the SRRF algorithm can be set via the device property browser. Se
 == Other SRRF property defaults ==
 
 All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
-*Axes in Ring: 6
+*Axes in Ring: 6 (as of SRRF version 1.14.0.0 this is 24)
 *No Drift Correction
 *No Cropping of data
 *All Advanced Radiality settings set to disabled (Remove Positivity Constraint / Renormalize, Gradient Smoothing)
@@ -121,6 +121,7 @@ All ‘hidden’ parameters are set to the defaults in NanoJ, as follows:
 *Minimize SRRF patterning disabled 
 *Fast linearise SRRF disabled
 <br />
+
 == Opening .raw Data files ==
 
 The original data from the camera is written to disk as raw data, with the file extenstion .raw appended to the filename.
