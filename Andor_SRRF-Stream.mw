@@ -39,12 +39,12 @@ A short talk describing the algorithm can also be found [https://www.youtube.com
 
 == Configuration ==
 
-If using a previous configuration, you may need to remove and re-add the Andor camera device in order to pick up your new iXon camera.
+If using a previous configuration, you may need to remove and re-add the Andor camera device in order to pick up your new iXon/Sona camera.
 Alternatively, create a new configuration using the Tools - Hardware Configuration Wizard...
 
 You will see the SRRF properties in the device property browser as shown below
 <br/>
-[[File:andorSrrfProperties.png|frameless|600px]]
+[[File:AndorSRRFPropertiesSona.jpeg|frameless|600px]]
 <br/>
 
 If there are no SRRF properties in the device property browser, please check you have installed the SRRF-Stream to the
