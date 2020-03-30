@@ -24,14 +24,11 @@ In addition to the above, the various events made available in 1.4 are still pre
 
 === Display events ===
 
-These events are specific to a single DisplayWindow, and can be accessed via <code>DisplayWindow.registerForEvents</code>. If you do register for a DisplayWindow's events, then you should remember to call <code>DisplayWindow.unregisterForEvents</code> if the object that is registered is discarded; otherwise, the DisplayWindow will keep a reference to your object, and errors may occur when the window attempts to send events to it.
+These events are specific to a single DisplayWindow, and can be accessed via <code>DisplayWindow.registerForEvents</code>. If you do register for a DisplayWindow's events, then you should remember to call <code>DisplayWindow.unregisterForEvents</code> if the object that is registered is discarded; otherwise, the DisplayWindow will keep a reference to your object, and errors may occur when the window attempts to send events to it. DisplayWindow events can be found [https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/package-tree.html here].
 
-* DisplayDestroyedEvent: the display has been closed and can no longer be used.
-* NewDisplaySettingsEvent: the DisplaySettings for a display have been updated.
-* NewImagePlusEvent: the ImagePlus object used for drawing the images on the display has been replaced.
-* PixelsSetEvent: the display has just finished drawing image pixels to the user's monitor.
-* RequestToCloseEvent: the display wishes to close. If nobody has subscribed to this event, then the display will assume it has permission to close and will close itself. Calling <code>DisplayManager.manage()</code> will cause MicroManager to listen for this event for all displays for the managed Datastore.
-* RequestToDrawEvent: client code would like the display to change the image(s) it is drawing.
+* DisplayDidShowImageEvent: A new image was shown in this display
+* DisplayPositionChangedEvent: ?
+* DisplaySettingsChangedEvent: Display settings (such as brightness/contrast) were changed
 
 === Datastore events ===
 
