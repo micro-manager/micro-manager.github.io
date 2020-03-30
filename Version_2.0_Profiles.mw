@@ -7,3 +7,5 @@ You can also create a "global" profile which contains settings that are shared a
 The global profile does not exist by default; however, you can create it by copying an existing user's profile file (like profile-1.txt mentioned earlier) into your installation directory. You may wish to make the global profile file read-only, so that only users with administrative access to the computer can modify it.
 
 Settings in the global profile are provided as fallback options that are used if a specific user's profile does not have the required information. For example, if the global profile's MDA (multi-dimensional data acquisition) dialog defaults to a 10-timepoint time series, then the first time a new user runs the program, they would "inherit" that time series as their default acquisition settings. However, if they then changed to a 20-timepoint series, then in future sessions, their new preference would be remembered, even if the global profile were to be updated.
+
+{{2.0_Sidebar}}
