@@ -2,11 +2,13 @@ This page documents the various events that the 2.0 API exposes, and what you ne
 
 === Global events ===
 
-These events are posted to the <code>EventManager</code>. You can subscribe to them via <code>mm.events().registerForEvents()</code>. 
+These events are posted to the <code>EventManager</code>. You can subscribe to them via <code>mm.events().registerForEvents()</code>. The full list of Events can be found [https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/events/package-tree.html here].  Some examples:
 
 * DatastoreClosingEvent: a Datastore was closed.
 * DisplayAboutToShowEvent: a DisplayWindow is just about to show its GUI, which happens once there's at least one image for it to display.
 * NewDisplayEvent: a new DisplayWindow was created. This is posted before that display's GUI becomes available.
+* LiveModeEvent: Live mode was started or stopped
+
 
 In addition to the above, the various events made available in 1.4 are still present:
 
