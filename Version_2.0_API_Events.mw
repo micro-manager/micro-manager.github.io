@@ -32,12 +32,15 @@ These events are specific to a single DisplayWindow, and can be accessed via <co
 
 === Datastore events ===
 
-These events are specific to a single Datastore, and can be accessed via <code>Datastore.registerForEvents</code>. As with DisplayWindows, if you have an object listening to Datastore events, and that object is discarded, you should make certain to unregister it first.
+These events are specific to a single Datastore, and can be accessed via <code>Datastore.registerForEvents</code>. As with DisplayWindows, if you have an object listening to Datastore events, and that object is discarded, you should make certain to unregister it first. Javadoc for events posted by Datastores can be found [https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/package-summary.html here].
 
-* DatastoreFrozenEvent: the Datastore's <code>freeze</code> method has been called, and the contents of the Datastore may no longer be modified.
-* DatastoreSavedEvent: the Datastore has been saved to disk in some format.
-* NewImageEvent: a new Image has been added to the Datastore.
-* NewSummaryMetadataEvent: new SummaryMetadata has been set for the Datastore.
+* DataProviderHasNewImageEvent: Signifies that an image has been added to a DataProvider.
+* DataProviderHasNewNameEvent
+* DataProviderHasNewSummaryMetadataEvent: Indicates that new summary metadata has been set for a DataProvider.
+* DatastoreClearedEvent: Signals that all images have been deleted from the Datastore.
+* DatastoreFrozenEvent: Indicates that a Datastore was frozen and cannot be written to any more (but read actions can still occur).
+* ImageDeletedEvent: Signals that an image has been deleted from the Datastore.
+* ImageOverwrittenEvent: Signals that an image in the Datastore has been overwritten.
 
 
 {{2.0_Sidebar}}
