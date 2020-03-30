@@ -4,19 +4,12 @@ This page serves as a "hub" for various other pages related to Version 2.0.
 
 === Downloads ===
 
-2.0 development now takes place in the "gamma" branch.
+2.0 development now takes place in the "master" branch on github.
 
 Nightly builds:
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ Windows] |
 [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ Mac OS X]<br/>
-Source code in [http://github.com/nicost/micro-manager/tree/ViewerPlusCV Nico's branch ViewerPlusCV on github]
-
-
-Beta nightly builds (rarely updated, DO NOT USE UNLESS YOU HAVE REASONS TO DO SO):
-[http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows/ Windows] |
-[http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac/ Mac OS X]
-
-Beta source code on GitHub: [https://github.com/micro-manager/micro-manager/tree/mm2 mm2 branch]
+Source code [http://github.com/micro-manager/micro-manager/tree/master in master branch on github]
 
 === Contributing to MM2.0 ===
 
