@@ -13,3 +13,7 @@ Before configuring for use with Micro-Manager, it's necessary to install the Oly
 Start the Hardware Configuration Wizard, and select microscope #"0" (unless more than one IX83 is attached, heaven forfend). All installed components should be detected automatically. The TPC should then show control touch buttons to the user, so that each motorized component can be controlled either from the Micro-Manager GUI or the TPC.
 
 You will need to copy the "OlympusIX3Control" directory into the Micro-Manager application directory.  Micro-Manager needs "OlympusIX3Control/OlympusIX3Control.exe" to be present.
+
+{{Listserv_Search|OlympusIX83}}
+
+{{Devices_Sidebar}}
