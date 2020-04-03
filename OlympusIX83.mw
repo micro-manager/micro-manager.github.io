@@ -11,3 +11,5 @@
 Before configuring for use with Micro-Manager, it's necessary to install the OlympusIX83 drivers, available for customers from Olympus. The computer should be connected through firewire to the main controller, which in turn is connected to the TPC (touch panel controller) as well as the microscope stand.
 
 Start the Hardware Configuration Wizard, and select microscope #"0" (unless more than one IX83 is attached, heaven forfend). All installed components should be detected automatically. The TPC should then show control touch buttons to the user, so that each motorized component can be controlled either from the Micro-Manager GUI or the TPC.
+
+You will need to copy the "OlympusIX3Control" directory into the Micro-Manager application directory.  Micro-Manager needs "OlympusIX3Control/OlympusIX3Control.exe" to be present.
