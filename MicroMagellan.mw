@@ -17,16 +17,6 @@ In order for Micro-Magellan to acquire tiled images and assemble them, it must h
 ===Memory settings===
 Make sure sufficient memory is allocated (important for making large surfaces in Magellan): Select the ImageJ toolbar select "Edit--Options--Memory and Threads". 2048 MB is recommended and 4096 is even better for systems that can support it. If this number is changed you will need to restart Micro-Manager for it to take effect
 
-==Setting Up Micro-Magellan for Device Control==
-
-From the plug-ins menu, select Micro-Magellan, and the unpopulated window opens. Select "Configure Device Control" 
-
-[[File:ConfigureDeviceControl.jpg]]
-
-A new window will open with a list of available devices and properties. You may also enter a "nickname" that more easily identifies the device/property. Selected devices/properties will appear in the Device status/control tab after pressing "Ok"
-
-[[File:SelectProperties.jpg]]
-
 ==Explore Acquisitions==
 
 {{#ev:youtubehd|UuQtws9Posw|600|center}}
