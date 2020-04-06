@@ -138,7 +138,7 @@ The Imaris-μMagellan compiler is a FIJI plugin for stitching of Micro-Magellan 
 4)	Press start
 
 ==Micro-Magellan source code==
-Current source code can be found on the [https://github.com/henrypinkard/Micro-Magellan Micro-Magellan Github page]
+Current source code can be found [https://github.com/micro-manager/micro-manager/tree/master/plugins/Magellan here]
 
 '''Authors:''' Henry Pinkard, Kaitlin Corbin
 
