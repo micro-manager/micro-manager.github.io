@@ -3,7 +3,7 @@ The Micro-Magellan plugin allows flexible, dynamic device control and acquisitio
 Up to date source code can be found [https://github.com/micro-manager/micro-manager/tree/master/plugins/Magellan here]
 
 
-Note: The materials in this documentation correspond to an older version of Micro-Magellan. Although all the functionality is the same, many GUI components have moved around, and the screenshots are in some cases out of date.
+'''Note: The materials in this documentation correspond to an older version of Micro-Magellan. Although all the functionality is the same, many GUI components have moved around, and the screenshots are in some cases out of date.'''
 
 
 ==Getting Started with Micro-Magellan==
