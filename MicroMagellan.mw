@@ -10,9 +10,7 @@ In order for Micro-Magellan to operate, it needs to know the direction of Z move
 
 [[File:Zdirection.jpg]]
 
-In order for Micro-Magellan to acquire tiled images and assemble them, it must have an accurate pixel size calibration for the objective in use. If you have already calibrated your pixel size using the “Pixel size calibrator” plug-in from MicroManager, this should automatically propagate to Micro-Magellan. Before using Explore mode, verify that the calibration is correct by pressing “Calibrate”. 
-If the fields are populated as below, Micro-Magellan has the necessary information. These parameters can be adjusted manually to fine tune stage movement for improved stitching. 
-If the calibration window shows a size of 0.0um, you can run click Start and follow the wizard instructions to generate an affine transform.
+In order for Micro-Magellan to acquire tiled images and assemble them, it must have an accurate pixel size calibration for the objective in use. This can be done using the micro-manager pixel size calibrator tool.
 
 [[File:Calibration.jpg]]
 
