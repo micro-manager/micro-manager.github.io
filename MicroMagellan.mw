@@ -142,20 +142,6 @@ Changing settings in this way allow acquisitions to be expanded in the Z directi
 ==Data Analysis==
 In addition to its open file format specification, there are specific mechanisms for importing μMagellan data into common software packages for visualization and analysis of 3D imaging data. 
 
-===Using Micro-Magellan data with BigDataViewer===
-Micro-Magellan writes data in a multiresolution file format that is compatible with FIJI's BigDataViewer (http://fiji.sc/BigDataViewer), a reslicing browser for terabyte-sized image volumes that is integrated with a number of image processing tools. In order for BigDataViewer to recognize the Micro-Magellan file format, the "Magellan.jar" file must be copied into a FIJI installation. To do this:
-
-1) Open FIJI and select Help--Update <br>
-2) Click the "Manage Update Sites" button <br>
-3) Check the box next to Micro-Magellan <br>
-4) Click "Close" <br>
-5) Click "Apply changes" <br>
-
-Open a Magellan dataset by selecting "Plugins--BigDataViewer--Open XML/HDF5" and select the "FIJI_BigDataViewer_Metadata.xml" file within a Magellan dataset
-
-{{#ev:youtubehd|AOhH_0-_0wI|600|center}}
-
-
 ===Micro-Magellan and Imaris===
 The Imaris-μMagellan compiler is a FIJI plugin for stitching of Micro-Magellan datasets and conversion to the IMS format. To use:
 1)	Download and install the plugin using the instructions at the following link: http://biomicroscopy.ucsf.edu/mediawiki/index.php?title=Analysis_Software_Repository#Imaris_MicroMagellan_Compiler 
