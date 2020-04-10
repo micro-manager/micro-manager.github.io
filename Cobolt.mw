@@ -5,7 +5,7 @@
 <tr><td>'''Platforms:'''</td><td>All</td></tr>
 <tr><td>'''Devices:'''</td><td>[https://www.coboltlasers.com/lasers/ www.coboltlasers.com]</td></tr>
 <tr><td>'''Since Version:'''</td><td>1.3.36</td></tr>
-<tr><td>'''Example Config File:'''</td>[[Example Configuration]]<td></td></tr>
+<tr><td>'''Example Config File:'''</td><td></td></tr>
 </table>
 
 The Cobolt laser controller controls compact solid-state lasers.
