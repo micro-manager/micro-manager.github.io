@@ -30,5 +30,6 @@ This driver supports '''automatic serial port detection'''.
 
 The new driver supports constant current, constant power, and modulation modes. Also, you can select Analog or Digital modulation. The ability to enable/disable Autostart is now supported. There is also direct serial communication supported via '''Serial Command'''
 
+[[File:Skyra_proporties.png|400px]]
 
 [http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query=Skyra Click here to search for Skyra on the Micro-Manager mailing list archive.]
