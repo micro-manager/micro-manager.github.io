@@ -15,8 +15,6 @@ The Cobolt laser controller controls compact solid-state lasers.
 '''Max Power''' is still in the code to be backwards compatible with the old Cobolt driver, but it is deprecated and not used.
 
 
-This new driver supports 115,200 baud as well as the older 19,200, with automatic serial port detection.
-
 ===The serial port===
 * 115,200 or 19200 baud, 
 * no flow control, 
@@ -25,22 +23,26 @@ This new driver supports 115,200 baud as well as the older 19,200, with automati
 * 8 data bits
 * delaybetweenChars 0 ms. 
 
+The new driver supports '''automatic serial port detection'''.
+
+=== Notes ===
+
+{{Note|Lasers will ignore the power setting for a few minutes while they start up. Re-set power/current after warm up is over}}
+
+{{Note|If the Laser has '''aborted''', you could issue a '''restart''' command via the Serial Command property, followed by a key cycle to restart the laser.}}
+
 === Device Properties===
 
 The new driver supports constant current, constant power, and modulation modes. Also, you can select Analog or Digital modulation. The ability to enable/disable Autostart is now supported. There is also direct serial communication supported via '''Serial Command'''
 
 [[File:Cobolt_properties.png]]
 
-== Linux udev Rule ==
+=== Linux udev Rule ===
 
 As Root, create a file named /etc/udev/rules.d/99-Cobolt.rules with the following context:
 
  # allow users to claim the device
  SUBSYSTEMS=="usb", ATTRS{product}=="Cobolt Laser Driver MLD",  ATTRS{idVendor}=="25dc", MODE="0660", GROUP="users", SYMLINK+="ACM%n"
-
-== Notes ==
-
-{{Note|Lasers will ignore the power setting for a few minutes while they start up. Reset after warm up is over}}
 
 
 --[[User:Kdb|Karl Bellve, Biomedical Imaging Group, University of Massachusetts]] 15:51, 5 June 2009 (UTC)
