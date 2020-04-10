@@ -192,6 +192,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PolychromeV]] - Illumination system from Till Photonics
 * [[Prairie Aurora Laser Launch]] - Prairie Aurora Laser Launch Interfacing using a [[Velleman K8061]]
 * [[Sapphire]] - Lasers from Coherent
+* [[Skyra]] - Skyra laser controller
 * [[Stradus]] - Vortran Stradus laser driver
 * [[Toptica_iBeamSmartCW]] - Toptica iBeamSmart laser series
 * [[Toptica_iChrome_MLE]] - Toptica iChrome Multi Laser Engine
