@@ -10,23 +10,26 @@
 
 The Cobolt laser controller controls compact solid-state lasers.
 
-Before adding this device adapter, confirm that you have serial communication with the laser controller by using a terminal. The serial port should be set at set at 19200 baud, no flow control, one stop bit, no parity, 8 data bits, delaybetweenChars 0 ms. The laser controller should respond to the following commands: l?, p?, hrs? (Laser on/off, power, hours). If you do not get a response then the Micro-Manager Cobolt device adapter will not work.
+'''This driver had a major rewrite on April 10, 2020.''' 
 
-Newer controllers may use 115200 baud.
+'''Max Power''' is still in the code to be backwards compatible with the old Cobolt driver, but it is deprecated and not used.
 
-In the configuration wizard you will need to add one Cobolt object for every Cobolt laser you would like to control. 
 
-The following commands are available with this device adapter:
-<ul>
-    <li>Laser Power (Read/Write)
-    <li>Laser On/Off (Read/Write)
-    <li>Laser Status (Read only)
-    <li>Hours (Read only)
-    <li>Serial Number (Read only)
-    <li>Interlock state (Read only)
-    <li>Current (Read only)
-    <li>Errors (Read only)
-</ul>
+This new driver supports 115,200 baud as well as the older 19,200, with automatic serial port detection.
+
+===The serial port===
+* 115,200 or 19200 baud, 
+* no flow control, 
+* one stop bit
+* no parity
+* 8 data bits
+* delaybetweenChars 0 ms. 
+
+=== Device Properties===
+
+The new driver supports constant current, constant power, and modulation modes. Also, you can select Analog or Digital modulation. The ability to enable/disable Autostart is now supported. There is also direct serial communication supported via '''Serial Command'''
+
+[[File:Cobolt_properties.png]]
 
 == Linux udev Rule ==
 
