@@ -9,6 +9,8 @@
 
 The NicoLase is an Arduino shield and Firmware that expands the number of TTL outputs and inputs compared to the original Micromanager's Arduino Firmware.
 
+[[File:NicoLase.jpg|400px]]
+
 === Printed Circuit Board ===
 Design Files: [https://github.com/PRNicovich/NicoLase/tree/master/Hardware/ShieldPCB ShieldPCB]
 
