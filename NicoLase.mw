@@ -7,12 +7,12 @@
 <tr><td>'''Description:'''</td><td>[https://github.com/PRNicovich/NicoLase/blob/master/README.md README.md]</td></tr>
 </table>
 
-'''Serial Port Settings'''
+<span style="font-size:90%">'''Serial Port Settings'''</span>
 {|class="wikitable"
 ! style="font-size:xx-small;"|'''AnswerTimeout:'''
 ! style="font-size:xx-small;"|500.0000
 |-
-! style="font-size:xx-small;"|'''BaudRate"'''
+! style="font-size:xx-small;"|'''BaudRate'''
 ! style="font-size:xx-small;"|9600
 |-
 ! style="font-size:xx-small;"|'''DataBits:'''
