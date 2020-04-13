@@ -7,35 +7,34 @@
 <tr><td>'''Description:'''</td><td>[https://github.com/PRNicovich/NicoLase/blob/master/README.md README.md]</td></tr>
 </table>
 
-
-{|
-|+'''Serial Port Settings'''
-|'''AnswerTimeout'''
-|500.0000
+'''Serial Port Settings'''
+{|class="wikitable"
+! style="font-size:xx-small;"|'''AnswerTimeout:'''
+! style="font-size:xx-small;"|500.0000
 |-
-|'''BaudRate'''
-|9600
+! style="font-size:xx-small;"|'''BaudRate"'''
+! style="font-size:xx-small;"|9600
 |-
-|'''DataBits'''
-|8
+! style="font-size:xx-small;"|'''DataBits:'''
+! style="font-size:xx-small;"|8
 |-
-|'''DelayBetweenCharsMs'''
-|0.0000
+! style="font-size:xx-small;"|'''DelayBetweenCharsMs:'''
+! style="font-size:xx-small;"|0.0000
 |-
-|'''Fast USB to Serial'''
-|Disable
+! style="font-size:xx-small;"|'''Fast USB to Serial:'''
+! style="font-size:xx-small;"|Disable
 |-
-|'''Handshaking'''
-|Off
+! style="font-size:xx-small;"|'''Handshaking:'''
+! style="font-size:xx-small;"|Off
 |-
-|'''Parity'''
-|None
+! style="font-size:xx-small;"|'''Parity:'''
+! style="font-size:xx-small;"|None
 |-
-|'''StopBits'''
-|1
+! style="font-size:xx-small;"|'''StopBits:'''
+! style="font-size:xx-small;"|1
 |-
-|'''Verbose'''
-|0
+! style="font-size:xx-small;"|'''Verbose:'''
+! style="font-size:xx-small;"|0
 |}
 
 {{Note| The SerialSequenceUploader.ino firmware sets serial speed to 9600. One might try 57600 or 115200 if you plan on using Micromanager to drive the NicoLase directly, instead of using a Camera trigger signal to trigger the NicoLase}}
