@@ -8,6 +8,7 @@ The location of where you have micromanager 2.0 Gamma installed will be used for
 :https://adoptopenjdk.net/
 
 ;Fork Micromanager 2.0 Repository into your own GitHub Account and name it.
+:https://github.com/micro-manager/micro-manager
 :[[File:Annotation_2020-04-15_104551.png|300px]]
 
 ;From IntelliJ menu, select '''New''' -> '''Project from Version Control'''.
