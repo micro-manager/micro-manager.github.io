@@ -25,6 +25,8 @@ The location of where you have micromanager 2.0 Gamma installed will be used for
 ;Add ImageJ ij.jar and other jars from Micromanager's install directory
 
 [[File:Annotation_2020-04-15_113304.png|300px]]
+; Confirm that you have 1.8 JDK installed
+[[File:Annotation_2020-04-15_111428.png:300px]]
 
 ;Create a new Run/Debug Configuration
 
