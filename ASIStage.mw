@@ -43,6 +43,7 @@ The following is an incomplete list of properties currently implemented in the M
 <tr><td><b>OverShoot</b> (for both X and Y)</td><td>Analogous to backlash, but will always overshoot the desired position by the set amount and then come back, whereas backlash always approaches from the same direction.  Backlash move, if any, occurs before the overshoot move.</td></tr>
 <tr><td><b>MotorOnOff</b> (for  both X and Y)</td><td>  Switches motor On or Off.</td></tr>
 <tr><td><b>NrMoveRepetition</b></td><td> Number of times the stage sill approach the same position.  Setting this to 0 will cause one approach.  Settings this to 2 or 3 can increase the accuracy with which a position is reached.</td></tr>
+<tr><td><b>SerialCommand</b></td><td>Use this property to send arbitrary serial commands.  By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior. This is due to the behavior of Micro-manager often refreshing the property values which can cause the command to be sent multiple times. See the corresponding serial response using the read-only property "SerialResponse".</td></tr>
 </table>
 
 
