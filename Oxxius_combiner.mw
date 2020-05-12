@@ -14,4 +14,11 @@ T.
 
 Note: This Device Adapter covers laser combiners only. There is a separate device adapter, [[Oxxius]], to be used with stand-alone LaserBoxx sources.
 
+==Known limitations==
+* Requires firmware version 1.10.2 or higher.
+* Cobolt laser sources not yet supported.
+
+==Support==
+Contact the author at "support at oxxius.com".
+
 {{Devices_Sidebar}}
