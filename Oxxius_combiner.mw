@@ -1,3 +1,5 @@
+== Oxxius combiner ==
+
 <table><tr><td>
 '''Summary:'''</td><td>Interface to Oxxius combiner, providing access to LaserBoxx sources, shutters and various modules</td></tr>
 <tr><td>'''Author:'''</td><td>Tristan Martinez</td></tr>
@@ -9,5 +11,7 @@
 </table>
 
 T.
+
+Note: This Device Adapter covers laser combiners only. There is a separate device adapter, [[Oxxius]], to be used with stand-alone LaserBoxx sources.
 
 {{Devices_Sidebar}}
