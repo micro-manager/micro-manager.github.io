@@ -14,6 +14,25 @@ T.
 
 Note: This Device Adapter covers laser combiners only. There is a separate device adapter, [[Oxxius]], to be used with stand-alone LaserBoxx sources.
 
+==Combiner Hub==
+This Hub provides access to the laser sources, the accessories and various components connected to (or mounted in) the combiner. The hub's "chidren" are detailed in the following paragraphs.
+
+Hub properties:
+    Serial number (read only)
+    Interlock status (read only)
+    Emission key status (read only)
+
+==LaserBoxx source==
+Inheritates from CShutterBase.
+Available properties:
+    Status (read only)
+    Alarm (read only)
+    Control mode: ACC or APC (read and write)
+    Modulation selection: analog and digital (read and write)
+    Current set point, as a percentage of the nominal current (read and write)
+    Power set point, as a percentage of the nominal power (read and write)
+    Emission status: "off" or "on" (read and write)
+
 ==Known limitations==
 * Requires firmware version 1.10.2 or higher.
 * Cobolt laser sources not yet supported.
