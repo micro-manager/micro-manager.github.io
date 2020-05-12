@@ -10,12 +10,10 @@
 <tr><td>'''Example Config File:'''</td><td>Not available</td></tr>
 </table>
 
-T.
-
-Note: This Device Adapter covers laser combiners only. There is a separate device adapter, [[Oxxius]], to be used with stand-alone LaserBoxx sources.
+Forewords: This Device Adapter covers laser combiners only. For stand-alone LaserBoxx sources, refer to the device adapter named [[Oxxius]].
 
 ==Combiner Hub==
-This Hub provides access to the laser sources, the accessories and various components connected to (or mounted in) the combiner. The hub's "chidren" are detailed in the following paragraphs.
+This Hub provides access to the laser sources, the accessories and various components connected to (or mounted in) an Oxxius combiner. The hub's "chidren" are detailed in the following paragraphs.
 
 Hub properties:
     Serial number (read only)
@@ -23,7 +21,7 @@ Hub properties:
     Emission key status (read only)
 
 ==LaserBoxx source==
-Inheritates from CShutterBase.
+Inheritance: CShutterBase.
 Available properties:
     Status (read only)
     Alarm (read only)
@@ -34,7 +32,7 @@ Available properties:
     Emission status: "off" or "on" (read and write)
 
 ==Known limitations==
-* Requires firmware version 1.10.2 or higher.
+* Requires firmware version 1.0.17 or higher. Use the query "?SV" to get your version number.
 * Cobolt laser sources not yet supported.
 
 ==Support==
