@@ -1,10 +1,10 @@
 == Oxxius combiner ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Interface to Oxxius combiner, providing access to LaserBoxx sources, shutters and various modules</td></tr>
+'''Summary:'''</td><td>Interface to any Oxxius combiner. Provides an access to the combined laser sources, as well as to shutters or various accessories and modules</td></tr>
 <tr><td>'''Author:'''</td><td>Tristan Martinez</td></tr>
 <tr><td>'''License:'''</td><td>LGPL</td></tr> 
-<tr><td>'''Platforms:'''</td><td>All (requires a USB port or an Ethernet connection)</td></tr>
+<tr><td>'''Platforms:'''</td><td>All (requires a USB port or access to an Ethernet network)</td></tr>
 <tr><td>'''Devices:'''</td><td>[http://www.oxxius.com/Wavelength-Combiner Oxxius L4Cc and L6Cc models]</td></tr>
 <tr><td>'''Since Version:'''</td><td>1.4.23</td></tr>
 <tr><td>'''Example Config File:'''</td><td>Not available</td></tr>
