@@ -72,7 +72,7 @@ Available property:
 Inheritance: CGenericBase.
 
 ==Known limitations==
-* Requires firmware version 1.0.17 or higher. Use the command "?SV" to query your version number.
+* Requires firmware version 1.0.17 or higher. Use the command "?SV" to query the version of your combiner.
 * Cobolt laser sources are not yet supported.
 
 ==Support==
