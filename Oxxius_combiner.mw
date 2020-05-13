@@ -40,8 +40,8 @@ Available properties:
 Inheritance: CShutterBase.
 
 ==Known limitations==
-* Requires firmware version 1.0.17 or higher. Use the query "?SV" to get your version number.
-* Cobolt laser sources not yet supported.
+* Requires firmware version 1.0.17 or higher. Use the command "?SV" to query your version number.
+* Cobolt laser sources are not yet supported.
 
 ==Support==
 Contact the author at "support at oxxius.com".
