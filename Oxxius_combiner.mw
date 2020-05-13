@@ -51,8 +51,9 @@ Available properties (can differ with models):
 Inheritance: CShutterBase.
 
 ==Shutter==
+To control an electromechanical shutter.
 Available property:
-    State (read and write)
+    State: Open or Closed (read and write)
 
 Inheritance: CShutterBase.
 
