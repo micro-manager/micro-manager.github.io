@@ -26,7 +26,6 @@ Take note of the COM port assigned to your combiner, then use the following para
     StopBits: 1
     Verbose: 1
 
-
 * Using the Ethernet port:
 In needed, use the command "?EIP" to query the IP address of the combiner. Enter it in the connection settings.
 
