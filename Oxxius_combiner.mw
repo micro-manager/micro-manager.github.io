@@ -15,6 +15,17 @@ Foreword: This Device Adapter relates to laser combiners only. For stand-alone L
 ==Installation==
 * Using the USB port:
 The USB port needs to be turned into a virtual serial port. To proceed, connect to the combiner (using Oxxius'GUI for example) and enter the manual command "CDC 1". Reboot the combiner.
+Take note of the COM port assigned to your combiner, then use the following parameters in the Hardware Configuration Wizard:
+    Answer Timeout: 500
+    Baudrate: 115200 (this value is seemingly ignored anyway)
+    DataBits: 8
+    DelayBetweenCharsMs: 0
+    FastUSB to Serial: Disable
+    Handshaking: Off
+    Parity: None
+    StopBits: 1
+    Verbose: 1
+
 
 * Using the Ethernet port:
 In needed, use the command "?EIP" to query the IP address of the combiner. Enter it in the connection settings.
@@ -29,7 +40,7 @@ Hub properties:
 
 ==LaserBoxx source==
 Available properties (can differ with models):
-    Status (read only)
+    State (read only)
     Alarm (read only)
     Control mode: ACC or APC (read and write)
     Analog modulation selection: enabled or disabled (read and write)
@@ -39,6 +50,26 @@ Available properties (can differ with models):
     Emission status: "off" or "on" (read and write)
 
 Inheritance: CShutterBase.
+
+==Shutter==
+Available property:
+    State (read and write)
+
+Inheritance: CShutterBase.
+
+==M-Dual==
+This module splits the laser beam over two output channels, with a configurable split ratio.
+Available property:
+    Split ratio (read and write)
+
+Inheritance: CGenericBase.
+
+==Flip Mirror==
+This module sends switches the laser beam over one of two distinct channels.
+Available property:
+    Position (read and write)
+
+Inheritance: CGenericBase.
 
 ==Known limitations==
 * Requires firmware version 1.0.17 or higher. Use the command "?SV" to query your version number.
