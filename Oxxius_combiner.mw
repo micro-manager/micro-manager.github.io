@@ -69,7 +69,7 @@ Inheritance: CGenericBase.
 ==Flip Mirror==
 This Device Adapter relates to the "MDL-FLPM" extension, which directs the laser beam over one of two distinct channels.
 Available property:
-    Position: "0" for channel 1, "1" for channel 2(read and write)
+    Switch position: "0" for channel 1, "1" for channel 2(read and write)
 
 Inheritance: CGenericBase.
 
