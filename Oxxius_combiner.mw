@@ -28,7 +28,6 @@ Hub properties:
     Emission key status (read only)
 
 ==LaserBoxx source==
-Inheritance: CShutterBase.
 Available properties:
     Status (read only)
     Alarm (read only)
@@ -37,6 +36,8 @@ Available properties:
     Current set point, as a percentage of the nominal current (read and write)
     Power set point, as a percentage of the nominal power (read and write)
     Emission status: "off" or "on" (read and write)
+
+Inheritance: CShutterBase.
 
 ==Known limitations==
 * Requires firmware version 1.0.17 or higher. Use the query "?SV" to get your version number.
