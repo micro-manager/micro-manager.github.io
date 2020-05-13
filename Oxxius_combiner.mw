@@ -34,8 +34,8 @@ This Hub provides access to the laser sources, the accessories and various compo
 
 Hub properties:
     Serial number (read only)
-    Interlock status (read only)
-    Emission key status (read only)
+    Interlock status: "Open" or "Closed"  (read only)
+    Emission key status: "Armed" or "Disarmed" (read only)
 
 ==LaserBoxx source==
 Available properties (can differ with models):
