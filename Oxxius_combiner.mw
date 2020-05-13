@@ -13,7 +13,7 @@
 Foreword: This Device Adapter relates to laser combiners only. For stand-alone LaserBoxx sources, refer to the Device Adapter named [[Oxxius]].
 
 ==Installation==
-* Using the USB port:
+* Using the USB port
 The USB port needs to be turned into a virtual serial port. To proceed, connect to the combiner (using Oxxius'GUI for example) and enter the manual command "CDC 1". Reboot the combiner.
 Take note of the COM port assigned to your combiner, then use the following parameters in the Hardware Configuration Wizard:
     Answer Timeout: 500
@@ -26,7 +26,7 @@ Take note of the COM port assigned to your combiner, then use the following para
     StopBits: 1
     Verbose: 1
 
-* Using the Ethernet port:
+* Using the Ethernet port
 In needed, use the command "?EIP" to query the IP address of the combiner. Enter it in the connection settings.
 
 ==Combiner Hub==
