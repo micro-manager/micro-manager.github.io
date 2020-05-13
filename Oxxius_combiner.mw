@@ -38,7 +38,9 @@ Hub properties:
     Emission key status: "Armed" or "Disarmed" (read only)
 
 ==LaserBoxx source==
-Available properties (can differ with models):
+Provides an interface to various LaserBoxx laser sources. While some models are physically linked to either an AOM or an "MPA" attenuator, this Device Adapter provides a uniform interface in all these situations.
+
+Available properties (model-dependant):
     State (read only)
     Alarm (read only)
     Control mode: ACC or APC (read and write)
