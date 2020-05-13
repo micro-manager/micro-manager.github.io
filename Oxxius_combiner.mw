@@ -58,7 +58,7 @@ Available property:
 Inheritance: CShutterBase.
 
 ==M-Dual==
-The M-Dual module splits the laser beam over two output channels, according to a variable split ratio.
+This Device Adapter relates to the "ACX-MDL" module, which splits the laser beam over two output channels, according to a configurable split ratio.
 Available property:
     Split ratio: percentage of the total power directed to the first channel(read and write)
 
