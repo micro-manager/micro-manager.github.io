@@ -28,11 +28,12 @@ Hub properties:
     Emission key status (read only)
 
 ==LaserBoxx source==
-Available properties:
+Available properties (can differ with models):
     Status (read only)
     Alarm (read only)
     Control mode: ACC or APC (read and write)
-    Modulation selection: analog and digital (read and write)
+    Analog modulation selection: enabled or disabled (read and write)
+    Digital modulation selection: enabled or disabled (read and write)
     Current set point, as a percentage of the nominal current (read and write)
     Power set point, as a percentage of the nominal power (read and write)
     Emission status: "off" or "on" (read and write)
