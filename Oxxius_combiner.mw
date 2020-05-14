@@ -14,7 +14,7 @@ Foreword: This Device Adapter relates to laser combiners only. For stand-alone L
 
 ==Installation==
 * Using the USB port
-The USB port needs to be turned into a virtual serial port. To proceed, connect to the combiner (using Oxxius'GUI for example) and enter the manual command "CDC 1". Reboot the combiner.
+The USB port needs to be turned into a virtual serial port. To proceed, connect to the combiner (using Oxxius' GUI for example), enter the command "CDC 1", then reboot the combiner.
 Take note of the COM port assigned to your combiner, then use the following parameters in the Hardware Configuration Wizard:
     Answer Timeout: 500
     Baudrate: 115200 (this value is seemingly ignored anyway)
