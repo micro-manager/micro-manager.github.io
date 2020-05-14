@@ -43,12 +43,12 @@ Provides an interface to various LaserBoxx laser sources. While some models are 
 Available properties (model-dependant):
     State (read only)
     Alarm (read only)
-    Control mode: ACC or APC (read and write)
-    Analog modulation selection: enabled or disabled (read and write)
-    Digital modulation selection: enabled or disabled (read and write)
+    Control mode: "ACC" or "APC" (read and write)
+    Analog modulation selection: "ON" or "OFF" (read and write)
+    Digital modulation selection: "ON" or "OFF" (read and write)
     Current set point, as a percentage of the nominal current (read and write)
     Power set point, as a percentage of the nominal power (read and write)
-    Emission status: "off" or "on" (read and write)
+    Emission status: "ON" or "OFF" (read and write)
 
 Inheritance: CShutterBase.
 
