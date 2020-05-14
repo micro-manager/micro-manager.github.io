@@ -30,7 +30,7 @@ Take note of the COM port assigned to your combiner, then use the following para
 If needed, use the command "?EIP" to query the IP address of the combiner. Enter it in the connection settings.
 
 ==Combiner Hub==
-This Hub provides access to the laser sources, the accessories and various components connected to (or mounted in) an Oxxius combiner. The hub's "chidren" are detailed in the following paragraphs.
+This Hub provides an access to the laser sources, accessories and various components connected to (or mounted in) the combiner. The hub's "chidren" are detailed in the following paragraphs.
 
 Hub properties:
     Serial number (read only)
