@@ -1,5 +1,6 @@
-'''Update''': The easiest way to control Micro-Manager through Python is the [https://github.com/micro-manager/pycro-manager Pycro-manager] library. The instructions below are for an alternative mechanism in which you compile the micro-manager core yourself with python bindings.
+The easiest way to control Micro-Manager through Python is the [https://github.com/micro-manager/pycro-manager Pycro-manager] library. 
 
+The instructions below are for an alternative mechanism in which you compile the micro-manager core yourself with python bindings.
 
 
 '''MMCorePy''' is a wrapper that allows you to control microscope hardware from python interactive session or script. It's support Windows, Mac and Linux.
