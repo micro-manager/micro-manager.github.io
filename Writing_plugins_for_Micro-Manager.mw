@@ -1,4 +1,4 @@
-{{Note|This documentation is specific for Micro-Manager 1.4. }}
+{{Note|This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [[Version_2.0_Plugins]]. }}
 
 Micro-Manager has a Java-based plugin system similar to ImageJ's. To write a Micro-Manager plugin, simply implement the [https://valelab4.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/MMPlugin.java <code>MMPlugin</code> interface]. {{Note|The static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu.}}
 
