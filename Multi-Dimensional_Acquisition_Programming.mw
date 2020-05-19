@@ -1,6 +1,11 @@
 
 
-Multi-dimensional acquisition is an important functionality of Micro-Manager. MDA capabilities have been dramatically revised and extended between 2010-2012.
+Multi-dimensional acquisition is an important functionality of Micro-Manager. The newest and most powerful tool for this type of programming is [https://github.com/micro-manager/pycro-manager Pycro-manager]. 
+
+
+The info below describes capabilities developed in 2010-2012.
+
+
 
 = Architecture =
 
