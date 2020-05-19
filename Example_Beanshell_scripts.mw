@@ -1,5 +1,7 @@
 These beanshell scripts can be run from the '[[Script_Panel_GUI|Script Panel]]' (in the 'Tools' menu).  Either load the script in the Script Button Panel (using the 'add' button), or open the script in the editor (using the 'open' button. 
 
+Most of these scripts can be translated with minimal modification to the Python programming language (see [https://github.com/micro-manager/pycro-manager Pycro-manager]) 
+
 [[Media:sdemo1.bsh]] - Hello World
 
 [[Media:sdemo2.bsh]] - Shows how to use ImageJ functionality within the Beanshell environment
