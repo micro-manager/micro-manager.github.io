@@ -8,6 +8,9 @@ Currently, there are 2 usable versions of Micro-manager: 1.4 and 2.0-gamma.  The
 
 [[Micro-Manager_Version_Archive|(Previous releases)]]
 
+{{Note| There is currently a bug on OSX builds where micro-manager doesn't start when opening ImageJ. To fix this, within the micro-manger in Applications, hold command and drag ImageJ onto the desktop. Then hold command and drag it back in. Then try running again}}
+
+
 == Nightly Builds ==
 
 Although there has been no official release for quite some time, further development and multiple bug fixes have occurred in the 1.4 branch in parallel with development of 2.0.  Nightly builds are almost always stable and a better choice for most users than the latest official release.
