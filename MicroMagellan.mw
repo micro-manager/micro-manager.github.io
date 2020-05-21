@@ -13,9 +13,7 @@ In order for Micro-Magellan to operate, it needs to know the direction of Z move
 
 [[File:Zdirection.jpg]]
 
-In order for Micro-Magellan to acquire tiled images and assemble them, it must have an accurate pixel size calibration for the objective in use. This can be done using the micro-manager pixel size calibrator tool.
-
-[[File:Calibration.jpg]]
+In order for Micro-Magellan to acquire tiled images and assemble them, it must have an accurate pixel size calibration for the objective in use. This can be done using the micro-manager pixel size calibrator tool, which can be found under Devices-Pixel size calibrator.
 
 ===Memory settings===
 Make sure sufficient memory is allocated (important for making large surfaces in Magellan): Select the ImageJ toolbar select "Edit--Options--Memory and Threads". 2048 MB is recommended and 4096 is even better for systems that can support it. If this number is changed you will need to restart Micro-Manager for it to take effect
