@@ -18,6 +18,28 @@ public class MyPlugin implements MenuPlugin, SciJavaPlugin {<br>   ...plugin imp
 
 In µManager 2.0, all plugins are loaded ''and instantiated'' when µManager launches. This is different from prior versions, where plugins were instantiated on an as-needed basis. You will know your plugin has finished loading when its <code>[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MMPlugin.html#setContext%28org.micromanager.Studio%29 setContext()]</code> method is called. The <code>[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/Studio.html Studio]</code> object passed as a parameter to that method provides the plugin with access to the µManager API.
 
+
+== Building a Plugin jar file with InteliJ ==
+
+To start running a new plugin, you first need to build a jar file of the plugin and copy it into the Micro-Manager directory "mmplugins".  You can build this jar file with the command line tool "ant", but it is also possible to do so completely with the IDE InteliJ (and possibly others).  For these step by step instructions we use the "Example" plugin, included in the 2.0 source code.
+
+<ul>
+<li>In the IntelliJ menu, select "File" > "New" > "Project from existing sources" and point to the "Example" directory.  InteliJ will find the sources, but no libraries. Select the JDK you want to work with, and open the project. </li>
+<li>Select "File" > "Project Structure" and click on "Libraries".  Click on the "+" (New Project Libraries), Select Java, and select the plugins/micro-manager directory in your Micro-Manager installation (usually in C:/Program Files/Micro-Manager-2.0gamma).  Also add ij.jar (in C:/Program Files/Micro-Manager 2.0gamma).  This should allow you to build the code.</li>
+<li> To tell InteliJ to do annotation processing select "File" > "Settings", then find "Build, Execution, Deployment" > "Compiler" > "Annotation Processors".        Select the project name (Example) and check "Enable annotation processing", "Obtain processors from project classpath" and click OK.</li>
+<li>Select "File" > "Project Structure" and click on "Artifacts". Click the "+" and "Jar(Empty)".  Name it "Example".  From "Available Elements", select "Example compile output". </li>
+<li>To build the jar, you can now select "Build" > "Build Artifact"</li>
+<li>Copy the jar produced by InteliJ to the mmplugins directory under the Micro-Manager installation directory, and the next time you run Micro-Manager, your "Example" plugin should appear under the plugins menu (under "Developer Tools".</li>
+<li>To start debugging the code in InteliJ, select "Run" > "Edit Configurations". Click the "+" button and select the Template "Application".  Enter the following values: <br/>
+Main class: "ij.ImageJ"<br/>
+VM Options: "-Xmx3000m -Dforce.annotation.index=true"<br/>
+Working directory: "C:\Program Files\Micro-Manager-2.0gamma" (or wherever you have MM)<br/>
+Use classpath of module: "Example" (unless you changed the name)<br/></li>
+<li>"Run" > "Debug 'Example' starts ImageJ - Micro-Manager, and lets you stop at breakpoints in your code</li>
+</ul>
+
+
+
 == Types of plugins ==
 
 µManager 2.0 has a considerably expanded number of plugin types compared to 1.4, which are enumerated here.
