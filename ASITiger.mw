@@ -24,6 +24,10 @@ For TG-1000 systems the build-in USB connection is actually a USB to serial conv
 Property Notes
 * SerialCommand: By default the command is sent only sent when a change is made; to resend same command you can add a space; change the property "OnlySendSerialCommandOnChange" property to "No" to change this behavior.  This is due to the behavior of Micro-manager often refreshing the property values which can cause the command to be sent multiple times.
 
+==Z Stages (piezo or motorized)==
+The Z stage can be set up to receive trigger signals from many cameras (see documentation on Micro-Manager's [[Hardware-based_synchronization]] feature). A BNC cable is connected from the camera's TTL output to the controller's trigger input on the corresponding card's front panel of the Tiger controller.  By synchronizing Z slices with camera exposures, you can acquire very fast Z stacks. Most ASI firmware includes the required ring buffer module with 50 positions; if you want to acquire Z stacks with more slices or do not have ring buffer support, please [http://www.asiimaging.com/contact-us/ contact ASI directly] for a firmware update. To use this feature, set the property "UseSequence" to value "Yes" under device "ZStage" in the Property Browser.
+
+There is a further feature designed for collecting sequential Z-stacks with minimal delay by eliminating serial communication between Z-stacks and relying completely on TTL. This is the "UseFastSequence" property. To use, first set the property value set to "No" (but "UseSequence" must be set to "Yes") and run a Z-stack, or if you are scripting you need to invoke SendStageSequence().  This forces Micro-Manager to compute the ring buffer positions and send them to the controller. Then set the property value to "Armed" and perform desired acquisitions. Afterwards be sure to set the value back to "No" because the controller will not interact with Micro-Manager normally when set to "Armed" (sequence operations are short-circuited as is the widely-used API function Busy()).
 
 ==Known limitations==
 * CRISP supported was added 25-Sep-2013.  Use requires both a Micro-manager build and card firmware after that date.
