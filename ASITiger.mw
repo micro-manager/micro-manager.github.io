@@ -32,7 +32,7 @@ There is a further feature designed for collecting sequential Z-stacks with mini
 ==Known limitations==
 * CRISP supported was added 25-Sep-2013.  Use requires both a Micro-manager build and card firmware after that date.
 * LED illuminator support was added 20-May-2014.  Use requires both a Micro-manager build and card firmware after that date.
-* TTL-triggered piezo sequences are not yet supported, but will be added upon request (contact the author).
+* TTL-triggered piezo (and Z stage) sequences are supported as of 2020-May-20 nightly build of Micro-Manager.
 
 ==Support==
 Contact the author at [mailto:jon_remove@asiimaging.com jon_remove@asiimaging.com] (remove the last part of the email address).
