@@ -37,3 +37,7 @@ After adding the TSICam device, proceed to next steps of the Hardware Configurat
 === Legacy Camera Support ===
 
 If you have one of the legacy camera models (consult Thorlabs support if you are not sure) this driver should work. Verify that TSI_SDK.dll file is present in the micro-manager directory. However, you can not have both legacy and standard cameras connected with the same computer.
+
+{{Listserv_Search|TSI}}
+
+{{Devices_Sidebar}}
