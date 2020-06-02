@@ -26,6 +26,9 @@
 == Installation ==
 
 === Andor Driver Pack 3 (sCMOS) ===
+
+{{MessageBox|Required Driver Limited availability notice|You will need the Andor Driver Pack 3 (sCMOS).  This driver pack is currently not publicly available.  Please contact Andor and ask them to provide you with the latest version of this Driver Pack.  Also, please take the unavailability of this Driver Pack into account before purchasing one of these cameras.}}
+
 {{MessageBox|Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2}}
 {{MessageBox|Support Advisory|Snapping an imaging may use the oldest image, and not the latest image, possibly due to pulling the wrong image from a double buffer}}
 {{MessageBox|Support Advisory|Images may start to scroll to the center of the field after each snap, shifting one line at a time. Restarting the camera and uManager fixes the issue}}
@@ -38,8 +41,6 @@ Install the Andor Driver Pack 3 (sCMOS) to the working Micro-Manager Directory e
     C:\Program Files\Micro-Manager-1.4\
 
 and ensure you restart the computer. 
-
-This is publicly available [http://www.andor.com/downloads?src=micro here].
 
 On a 32-bit Windows OS, the 32-bit DLLs will be installed to a subfolder of the MicroManager directory (e.g. C:\Program Files\Micro-Manager-1.4\Win32\). These DLLs must then be copied to the Micro-Manager Directory  (e.g. C:\Program Files\Micro-Manager-1.4\), replacing the 64-bit DLLs.
 
