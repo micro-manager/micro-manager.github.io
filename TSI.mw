@@ -30,6 +30,11 @@ For MicroManager support for all Thorlabs Scientific Cameras (340, 1500, 1501, 4
 
 7. Copy all the DLLs from that folder into the Micromanager installation folder.
 
+3-7-alternative: You will need to copy from here:
+C:\Program Files\Thorlabs\Scientific Imaging\Scientific Camera Support\Scientific Camera Interfaces\SDK\DotNet Toolkit\dlls\Managed_64_lib.
+
+It is also possible that some of the dll’s are missing from this location if you are using ThorCam 3.4. If this is the case, please also copy the dll’s from the ThorCam installation location here: C:\Program Files\Thorlabs\Scientific Imaging\ThorCam . Some of these dll’s will be duplicates.
+
 8. In MicroManager, go to Tools->Hardware Configuration Wizard. Create or modify a configuration and click Next. Scroll through the available devices to find TSI->TSICam.
 
 After adding the TSICam device, proceed to next steps of the Hardware Configuration Wizard as described in the micro-manager documentation.
