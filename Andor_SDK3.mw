@@ -27,7 +27,7 @@
 
 === Andor Driver Pack 3 (sCMOS) ===
 
-{{MessageBox|Required Driver Limited availability notice|You will need the Andor Driver Pack 3 (sCMOS).  This driver pack is currently not publicly available.  Please contact Andor and ask them to provide you with the latest version of this Driver Pack.  Also, please take the unavailability of this Driver Pack into account before purchasing one of these cameras.}}
+{{MessageBox|Required Driver Limited availability notice|You will need the Andor Driver Pack 3 (sCMOS).  This driver pack is currently not publicly available.  Please contact Andor and ask them to provide you with the latest version of this Driver Pack.  Public access will be restored soon.}}
 
 {{MessageBox|Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2}}
 {{MessageBox|Support Advisory|Snapping an imaging may use the oldest image, and not the latest image, possibly due to pulling the wrong image from a double buffer}}
