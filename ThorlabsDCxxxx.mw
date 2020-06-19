@@ -30,7 +30,7 @@ The Thorlabs DCxxxx adapter operates the [http://www.thorlabs.de/NewGroupPage9.c
 
 This adapter makes the LED driver usable as a shutter in Micro-Manager.  On startup, the adapter will switch the LED off.  The adapter has several properties that can be used to control the LED driver.
 
-To operate the DC2200, the [https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=DC2200 Thorlabs DC2200 software package] has to be installed.
+To operate the DC2200 or DC4100, the [https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=DC2200 Thorlabs DC2200 software package] has to be installed. In general, if this adapter is greyed out in the Hardware Configuration Wizard, try installing the DC2200 software.
 
 {{Note|The above mentioned serial port settings are the default, but they are recommended to communicate with the device.}}
 
