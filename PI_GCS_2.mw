@@ -48,7 +48,7 @@ Communication with the devices is implemented in two different ways
 Here is a detailed overview over the different properties of the 4 basic devices. If you have selected one of the predefined controllers not all properties are available as they have already been pre-set.
 
 PI_GCSControllerDLL:
-* '''DLL Name''': file name of DLL or shared object. On Windows you can find this e.g. in the version information of PIMikroMove. In most cases this is "PI_GCS2_DLL.dll" if you use 32bit version of micro-manager or "PI_GCS2_DLL_x64.dll" if you use 64bit version. The DLL must be copied to micro-managers's installation directory.
+* '''DLL Name''': file name of DLL or shared object. On Windows you can find this e.g. in the version information of PIMikroMove. In most cases this is "PI_GCS2_DLL.dll" if you use 32bit version of micro-manager or "PI_GCS2_DLL_x64.dll" if you use 64bit version. The DLL must be copied to micro-manager's installation directory.
 * '''Interface Type''': Type of interface used for connection. Currently "PCI", "RS-232" and "USB" are implemented. NOTE: If you select "RS-232" you must not configure this serial device in micro-manager, since the PI DLL/shared object needs exclusive access.
 * '''Interface Parameter''': This is a string where the single values are separated by ";". For "RS-232" this is “<port nr>;<baudrate>”. If you want, for example, to connect a PI device on COM1 with 57600 baud, type "1;57600". On Linux, "1" is mapped to "/dev/ttyS0", "2" to "/dev/ttyS1", and so on. For "PCI" this is a single integer with the board ID. For "USB" this is a description of the device, e.g. the serial number as displayed in PIMikroMove's connection window.
 
