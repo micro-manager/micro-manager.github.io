@@ -2,6 +2,8 @@
 
 <span>''Created on November 16, 2005 by Nenad Amodaj<br /> Updated for release 1.0.37(beta) on July 28, 2006''</span><br />
 
+{{Note|Micro-Manager 1 and 2 use the same C++ layer, hence this guide is applicable to both versions for the C++ code.  However, the Java interfaces are different.  Unless explicitly stated, this documentation still refers to the version 1 api.  Please use the version 2 ap unless you have very good reasons not to.}}
+
 == Introduction ==
 
 Before diving into Programming within Micro-Manager, it is useful to review the general [[Overview of the documentation|overview of the documentation]] as well as the [[Micro-Manager Project Overview|overview of the software architecture]]. <br /><br />
