@@ -62,9 +62,22 @@ In order to control a hardware device <span>''MMCore''</span> needs to load the 
 
 <div class="source">CMMCore core = new CMMCore();</div><div class="source">core.loadDevice("Camera", "DemoCamera", "DCam");</div>
 
-<br /> The command above has three parameters: label, library and name. Device label is the name we want to assign to a specific device. It is completely arbitrary and entirely up to us. We chose to call our camera simply "Camera". "DemoCamera" is the dynamic library name where the adapter resides. "DCam" is the name of the device adapter we want to load.<br /><br /> After loading the adapter the device is still inactive. Before starting to control the device we must perform initialization:<br /><span class="source">core.initializeDevice("Camera");</span><br /><br /> The following program puts all of the above together: loads the camera adapter, initializes it and additionally snaps an image with exposure set to 50ms.<br />
+<br /> The command above has three parameters: label, library and name. Device label is the name we want to assign to a specific device. It is completely arbitrary and entirely up to us. We chose to call our camera simply "Camera". "DemoCamera" is the dynamic library name where the adapter resides. "DCam" is the name of the device adapter we want to load.<br /><br /> After loading the adapter the device is still inactive. Before starting to control the device we must perform initialization:<br />
+<span class="source">core.initializeDevice("Camera");</span><br /><br /> 
+The core may know about multiple camera devices, and needs to be told which one to use:<br />
+<span class="source">core.setCameraDevice("Camera");</span><br /><br />
+The following program puts all of the above together: loads the camera adapter, initializes it and additionally snaps an image with exposure set to 50ms.<br />
 
-<div class="source"> CMMCore core = new CMMCore();<br /> core.loadDevice("Camera", "DemoCamera", "DCam");<br /> core.initializeDevice("Camera");<br /> core.setExposure(50);<br /> core.snapImage();<br /> byte image[] = (byte[]) core.getImage();<br /> long width = core.getImageWidth();<br /> long height = core.getImageHeight();<br /></div>
+<div class="source"> 
+CMMCore core = new CMMCore();<br /> 
+core.loadDevice("Camera", "DemoCamera", "DCam");<br /> core.initializeDevice("Camera");<br /> 
+core.setCameraDevice("Camera");<br />
+core.setExposure(50);<br /> 
+core.snapImage();<br /> 
+byte image[] = (byte[]) core.getImage();<br /> 
+long width = core.getImageWidth();<br /> 
+long height = core.getImageHeight();<br />
+</div>
 
 <br /> For clarity the above example omits some details necessary to really compile and run this example. Complete Java code is here: [http://valelab.ucsf.edu/~MM/files/Tutorial1.java Tutorial1.java]<br />
 
