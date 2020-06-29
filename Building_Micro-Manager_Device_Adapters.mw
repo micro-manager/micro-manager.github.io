@@ -257,6 +257,7 @@ To test devices from Micro-Manager scripting environment you can use the "Script
  mmc.unloadAllDevices();       
  mmc.loadDevice("Camera", "DemoCamera", "DCam");
  mmc.initializeDevice("Camera");
+ mmc.setCameraDevice("Camera");
 
  mmc.setExposure(50); 
  mmc.snapImage();
@@ -272,7 +273,7 @@ To test devices from Micro-Manager scripting environment you can use the "Script
    print("Image snapped, " + img.length + " pixels total, 16 bits each.");
    print("Pixel [0,0] value = " + img[0]);             
  } else {
-   print("Dont' know how to handle images with " + mmc.getBytesPerPixel() 
+   print("Dont' know how to handle images with " + mmc.getBytesPerPixel() + 
                    " byte pixels.");             
  }
 
