@@ -386,12 +386,12 @@ With FT/overlap off, the readout must complete before the next rising edge can s
 
 ==== Recommended settings for iXon Ultras (Use the Multi-Andor control plugin) ====
 ===== Continuous high speed imaging with no delay between frames ("burst") =====
-FT/overlap on, master in Software, slave in External Start, exposure time the same
+FT/overlap on, main in Software, peripheral in External Start, exposure time the same
 
-(alternative: FT/overlap on, master in Software, slave in External, exposure of slave set to 0)
+(alternative: FT/overlap on, main in Software, peripheral in External, exposure of peripheral set to 0)
 
-===== Simultaneous capture but with timelapse or multiple channels with sufficient delay between frames for readout to occur =====
-FT/overlap off, master in Software, slave in Fast External (or External), exposure time shorter than the triggering interval
+===== Simultaneous capture but with time-lapse or multiple channels with sufficient delay between frames for readout to occur =====
+FT/overlap off, main in Software, peripheral in Fast External (or External), exposure time shorter than the triggering interval
 
 === Dual camera setup ===
 
