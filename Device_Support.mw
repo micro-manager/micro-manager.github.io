@@ -177,6 +177,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[BlueboxOptics_niji]] - Bluebox Optics niji 7 channel LED light source
+* [[CoboltOfficial]] - Cobolt lasers 06-01 Series, Cobolt Skyra
 * [[Cobolt]] - Cobolt laser controller
 * [[CoherentCube]] - Coherent CUBE laser controller
 * [[CoherentOBIS]] - Coherent OBIS laser controller (Single Laser Remote)
