@@ -1,0 +1,38 @@
+{| style="text-align: left"
+!Summary:
+|Control the BD Pathway 435 and 855 through Micro-Manager.
+|- valign="top"
+!Authors:
+|Egor Zindy
+|- valign="top"
+!Maintainers:
+|Egor Zindy
+|-
+!License:
+|BSD
+|-
+!Platforms:
+|Windows (tested on Windows 10 64 bit, but should work with Linux/MacOS)
+|- valign="top"
+|}
+----
+
+== Introduction ==
+
+The BDPathway adapter was released in the hope that these old beasts (BD Pathway 435 and BD Pathway 855) could have a second life through the use of Micro-Manager for image acquisition and CellProfiler / CellProfiler Analyst for image processing and data analysis.
+
+(Some of) the serial commands have been painstakingly reversed engineered by analysing serial traffic between AttoVision and the BD Pathways using portmon.exe. As a result, the filterwheels, shutters, transmitted light, door, spinning disk, XY and Z stages can all be controlled through Micro-Manager.
+
+On the 855, the liquid handling instructions are also mostly understood but this isn't something which we could setup through Micro-manager (yet).
+
+However, and that is the next big issue to solve, the autofocus (controlled by a National Instrument PCI-6221 card) has not yet been reversed-engineered. This also means we do not know whether the PCI card is actually necessary or whether it could simply be replaced by an Arduino.
+
+For this reason (and for the lack of 3rd party testing / debugging), this adapter is '''very much marked as work in progress'''.
+
+Issues and progress will be documented over at [[https://forum.image.sc/t/im-writing-a-device-adapter-for-the-bdpathway-435-and-855/40808]]
+
+== Requirements ==
+
+== Device support ==
+
+== Installation ==
