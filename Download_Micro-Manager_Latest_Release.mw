@@ -15,9 +15,9 @@ Currently, there are 2 usable versions of Micro-Manager: 1.4 and 2.0-gamma.  The
 Although there has been no official release for quite some time, further development and multiple bug fixes have occurred in the 1.4 branch in parallel with development of 2.0.  Nightly builds are almost always stable and a better choice for most users than the latest official release.
 
 * [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ '''Version 2.0-gamma (Windows)'''] (you most likely want the 64-bit version)
-* [http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ '''Version 2.0-gamma (Mac)''']
-* [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows '''Version 1.4 (Windows)'''] (pay attention to 32-bit or 64-bit, both are listed but you need the one matching your Windows OS)
-* [http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac '''Version 1.4 (Mac)''']
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ '''Version 2.0-gamma (Mac)''']
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows '''Version 1.4 (Windows)'''] (pay attention to 32-bit or 64-bit, both are listed but you need the one matching your Windows OS)
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac '''Version 1.4 (Mac)''']
 
 == Micro-Manager 1.4.22 (August 14, 2015) ==
 
