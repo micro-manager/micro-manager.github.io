@@ -1,10 +1,10 @@
 __NOTOC__
 == Micro-Manager 1.4.21 (April 30, 2015) ==
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.21.exe Windows 32-bit], 61 MB<br />
-[http://valelab.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.21.exe Windows 64-bit], 62 MB<br />
+[https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.21.exe Windows 32-bit], 61 MB<br />
+[https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.21.exe Windows 64-bit], 62 MB<br />
 
-[http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.21.dmg Mac OS X (Universal Binary)], 48 MB<br />
+[https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.21.dmg Mac OS X (Universal Binary)], 48 MB<br />
 (OS X 10.8 and later: if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
 === Changes in 1.4.21 (since 1.4.20) ===
@@ -72,7 +72,6 @@ __NOTOC__
 *** Fix a bug in auto-generated acquisition names (Jon Daniels)
 *** MMCore API now has stage control methods that implicitly use the current stage (Jon Daniels)
 *** No changes to the device programming interface
-
 
 == Micro-Manager 1.4.20 (January 30, 2015) ==
 
