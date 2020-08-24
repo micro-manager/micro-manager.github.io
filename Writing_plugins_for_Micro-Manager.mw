@@ -32,7 +32,7 @@ The dynamic loading feature (described above) is useful if you are developing yo
 # Select New > New Project... > Java > '''Java Class Library'''. [[File:Netbeans8 new project.png|450px]]
 # Name your plugin project and press Finish.
 # Under the Projects tab, right-click your plugin project and choose Properties.
-# Then choose Libraries > Compile > Add JAR/Folder.
+# Then choose Libraries > Compile > Add JAR/Folder. If you are using a newer version of Netbeans, click on the "+" to the right of "Classpath". 
 ## Browse to <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> and choose all jars in that directory.
 ## Click Add JAR/Folder again and add <code>C:\Program Files\Micro-Manager-1.4\ij.jar</code> [[File:Netbeans8 library tab.png|450px]]
 ## Click Categories > Run and set Main Class to <code>ij.ImageJ</code>, working directory to <code>C:\Program Files\Micro-Manager-1.4\</code> . Click OK. [[File:Netbeans8 run tab.png|450px]]
