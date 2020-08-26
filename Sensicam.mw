@@ -1,7 +1,7 @@
 == PCO/Cooke Sensicam camera (legacy) ==
 
 <table><tr><td>
-'''Summary:'''</td><td>Controls [http://www.pco.de/sensitive-cameras/ PCO/Cooke Sensicam camera]</td></tr>
+'''Summary:'''</td><td>Controls [http://www.pco.de PCO/Cooke Sensicam camera]</td></tr>
 <tr><td>'''Author:'''</td><td>Nenad Amodaj (with bugfixes by Liisa Hervonen)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
 <tr><td>'''Platforms:'''</td><td>Windows, 32-bit only</td></tr>
