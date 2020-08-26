@@ -12,7 +12,7 @@
 <tr><td>'''Available since version:'''</td><td>1.3.24</td></table>
 
 
-This adapter has been developed for all pco.sdk basd camera systems (B/W and color versions).
+This adapter has been developed for all pco.sdk based camera systems (B/W and color versions).
 
 Installation:<BR>
 a) download and install latest Micro-Manager Nightly build version<BR>
