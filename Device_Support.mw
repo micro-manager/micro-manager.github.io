@@ -48,18 +48,18 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[Micropix]] - Cameras from Micropix
 * [[Mightex_C_Cam]] - Mightex C-series USB cameras
 * [[MoticCamera]] - Motic cameras
-* [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[OpenCVgrabber]] - Supports numerous USB cameras and frame grabbers (those using a DirectShow or WDM class driver). (Windows)
-* [[PCO_Camera]] - Supports all pco.sdk based cameras (pco.edge, pco.panda and others)
+* [[NKRemoteCamera]] - Nikon Digital SLR (Windows)
 * [[Photometrics]] - A.k.a. [[PVCAM]]
 * [[PICAM]] - Princeton Instruments cameras using the PICam interface
-* [[Piper]] - Stanford Photonics cameras
 * [[Pixelink]] - Pixelink Cameras
-* [[Point Grey Research]] - Point Grey cameras through the Flycap2 interface
 * [[PrincetonInstruments]] - Princeton Instruments cameras
+* [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
+* [[PCO_Camera]] - Supports all PCO cameras (Sensicam, Pixelfly and others)
+* [[Piper]] - Stanford Photonics cameras
+* [[Point Grey Research]] - Point Grey cameras through the Flycap2 interface
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
-* [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
 * [[QCam]] - QImaging cameras
 * [[QSICamera]] - QSI cameras (Windows)
 * [[RaptorEPIX]] - Raptor Photonics cameras using EPIX cameralink board
