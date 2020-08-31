@@ -55,7 +55,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[PICAM]] - Princeton Instruments cameras using the PICam interface
 * [[Piper]] - Stanford Photonics cameras
 * [[Pixelink]] - Pixelink Cameras
-* [[Point Grey Research]] - Point Grey cameras through the Flycap2 interface
+* [[Point Grey Research]] - Point Grey (now FLIR) cameras through the Flycap2 interface, also see [[Spinnaker]]
 * [[PrincetonInstruments]] - Princeton Instruments cameras
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
@@ -66,6 +66,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ScionCam]] - Scion cameras
 * [[Sensicam]] - PCO/Cooke Sensicam camera
 * [[SigmaKoki]] - Sigma Koki camera
+* [[Spinnaker]] - FLIR (formally Point Grey) cameras though the Spinnaker interface
 * [[SpotCamera]] - Diagnostic Instruments Spot cameras
 * [[TetheredCam]] - Canon and Nikon DSLR cameras (Windows)
 * [[ThorlabsUSBCamera]] - Thorlabs cameras (Windows)
