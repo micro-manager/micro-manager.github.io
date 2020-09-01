@@ -19,6 +19,8 @@ Currently Micro-Manager has five kinds of drivers for controlling Zaber devices:
 * The Filter Cube Turret driver requires that an X-FCR is connected. The -FCR is a component of the [https://www.zaber.com/products/microscopes/MVR MVR microscope].
 * The Illuminator driver requires that an [https://www.zaber.com/products/microscopes/X-LCA4 X-LCA series LED controller] is connected.
 
+The Stage and XYStage drivers optionally support [https://www.zaber.com/protocol-manual#topic_command_lockstep Lockstep mode], where multiple physical axes can move in concert as a single logical axis.
+
 ==Set Up==
 
 ===Zaber Device===
