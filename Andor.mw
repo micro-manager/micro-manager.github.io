@@ -36,6 +36,8 @@ High-bandwidth USB cameras like iXon Life and iXon Ultra (Note Ultra and Life 88
 for iXon Ultra and Life models.
 
 == Device Configuration ==
+{{Note|This video guide will take you through the complete setup for sCMOS Cameras. [https://andor.oxinst.com/learning/view/article/setting-up-and-using-andors-scmos-camera-range-in-the-micro-manager Setup Guide]}}
+
 # Open Micromanager.
 # You will be prompted to load a configuration file.  To create a new configuration file use "Tools" > "Hardware Configuration Wizard..." to manually add the device.
 
