@@ -117,6 +117,9 @@ If you see this message when snapping an image, try a lower <code>AcquisitionWin
 
 == Resources ==
 
+See Andor's
+[https://andor.oxinst.com/learning/view/article/setting-up-and-using-andors-scmos-camera-range-in-the-micro-manager Setup Video] which details the steps above, shows how to add a device in the property browser, etc.
+
 See Andor's [http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf|Micro-Manager Software Guide] which details the steps above, shows how to add a device in the property browser, etc.
 
 === Development support ===
