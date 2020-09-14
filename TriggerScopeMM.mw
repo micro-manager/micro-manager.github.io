@@ -42,6 +42,6 @@ The Triggerscope is an Arduino-based devices that provides 16 analog outputs and
 This adapter was written for "MM" firmware.  Download from [https://github.com/micro-manager/TriggerScopeMM/ its Github repository] and install using the [https://www.arduino.cc/en/Main/Software Arduino IDE].
 
 === Overview ===
-This device adapter 
+This device adapter exposes the TriggerScope through 16 analog out devices (only use those you need in the Hardware Configuration Wizard) and 2 digital output devices.  The digital output devices each control 8 TTL outputs (1-8 and 9-16 respectively).  
 
 {{Devices_Sidebar}}
