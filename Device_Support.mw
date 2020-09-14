@@ -170,6 +170,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[SerialManager]] - Serial Ports on Windows
 * [[SerialManagerUnix]] - Serial Ports on Mac and Linux
 * [[TriggerScope]] - TriggerScope digital and analog controller
+* [[TriggerScopeMM]] - TriggerScope v3 with Micro-Manager firmware
 * [[ParallelPort]] - TTLs on parallel port (Windows only)
 * [[USBManager]] - Micro-Manager internal USB communications driver
 
