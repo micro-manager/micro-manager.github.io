@@ -1,0 +1,38 @@
+{| style="text-align: left"
+!Summary:
+|Adapter for the [http://www.triggerscope.com/ TriggerScope using Micro-Manager firmware]
+|-
+!Author:
+|Nico Stuurman, based on code by Austin Blanco
+|-
+!License:
+|LGPL
+|-
+!Platforms:
+|Linux, Mac, and Windows
+|-
+!Since version:
+|2020-09-08
+|}
+----
+
+
+'''Serial port settings''':
+{| cellspacing="2" border="0" cellpadding=3
+|AnswerTimeout||500
+|-
+|BaudRate||115200
+|-
+|DelayBetweenCharsMs||0
+|-
+|Handshaking||Off
+|-
+|Parity||None
+|-
+|StopBits||1
+|-
+|Verbose||0 (1 for debugging)
+|}
+
+
+- Firmware.  This adapter was written for "MM" firmware.  Download from [https://github.com/micro-manager/TriggerScopeMM/] and install using the [https://www.arduino.cc/en/Main/Software Arduino IDE].
