@@ -34,6 +34,15 @@ Combines multiple cameras into a single logical camera.  Snapping an image with 
 
 Going "Live" using the Multi-Camera adapter controlling large sensor cameras can crash Micro-Manager in versions earlier than 1.4.16.  Improvements to the core have fixed this issue.
 
+== Multi Stage ==
+Combines two physical 1D stages into a single logical 1D stage.  The scale factor and offset for both physical stages are specified as properties.  Make sure to specify the properties "PhysicalStage-1" and "PhysicalStage-2" (e.g. in System->Startup group preset).
+
+== Combo XY Stage ==
+Combines two physical 1D stages into a single logical 2D stage.  The scale factor and offset for both physical stages are specified as properties.  Make sure to specify the properties "PhysicalStage-X" and "PhysicalStage-Y" (e.g. in System->Startup group preset).
+
+== Single Axis Stage ==
+Takes a single axis of a 2D stage and treats it as a 1D stage.  Make sure to specify the properties "PhysicalStage" and "PhysicalAxis" (e.g. in System->Startup group preset).
+
 == DA-Shutter ==
 Uses a DA (digital to analogue) device as a shutter.  Use the property "DA Device" to determine which DA device should act as the shutter.  Closing the DA Shutter will result in 0V on the DA output, opening the DA shutter will result in the voltage set in the DA device itself to appear on the output.  For this device to work correctly, some code needs to be implemented in the DA device adapter, which appears to be done for all DA devices currently supported by Micro-Manager.
 
