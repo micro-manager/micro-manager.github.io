@@ -139,7 +139,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ThorlabsAPTStage]] - Thorlabs APT family linear stages
 * [[ThorlabsDCStage]] - Thorlabs Linear Stages using the TDC001 Controller (see also: [[ThorlabsAPTStage]])
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
-* [[ThorlabsElliptecSlider]] - Thorlabs Elliptec sliders ELL6 and ELL9.
+* [[ThorlabsElliptecSlider]] - Thorlabs Elliptec sliders ELL6, ELL9, ELL17 and ELL20.
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
 * [[ThorlabsMFC1]] - Thorlabs MFC1 Motorized Microscope Focus Controller
 * [[ThorlabsSC10]] - Thorlabs shutter controller
