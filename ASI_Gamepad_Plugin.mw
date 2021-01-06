@@ -2,9 +2,9 @@
 
 <table><tr><td>
 '''Summary:'''</td><td>Adds support for an XBox Gamepad. It lets users assign device properties to thumb sticks and Beanshell scripts to button presses</td></tr>
-<tr><td>'''Authors:'''</td><td>Vikram Kopuri (ASI), Nico Stuurman</td></tr>
+<tr><td>'''Authors:'''</td><td>Vikram Kopuri (ASI), Nico Stuurman (port to 2.0)</td></tr>
 <tr><td>'''License:'''</td><td>BSD</td></tr> 
-<tr><td>'''Platforms:'''</td><td>All platforms (uses serial port)</td></tr>
+<tr><td>'''Platforms:'''</td><td>Windows only</td></tr>
 <tr><td>'''Requires:'''</td><td>Xbox One controller (tested) or XBox 360 controller (not tested)<td></tr>
 </table>
 
@@ -24,7 +24,7 @@ If you already have the gamepad paired, press the HOME button. The button lights
 
 [[File:asi_gamepad_save_load.jpg]]
 
-The button and joystick assignments aren't automatically saved by the plugin between session, so use these buttons to save and load all thumb stick and button assignments.
+The button and joystick assignments aren't automatically saved by the plugin between session (Note: they are in the 2.0 version of the plugin), so use these buttons to save and load all thumb stick and button assignments. Currently, the assignment files saved by 1.4 can be used in 2.0.
 
 === Axis Assignment Table ===
 
@@ -73,3 +73,8 @@ Find some example scripts [https://www.dropbox.com/s/pfbsw8pgpasrzwk/dpad_beansc
 #Right trigger
 #Right shoulder button
 #Y,B,A,X buttons
+
+
+{{Listserv_Search|AcquireMultipleRegions}}
+
+{{Documentation Sidebar}}
