@@ -1,9 +1,13 @@
-The Micro-Magellan plugin allows flexible, dynamic device control and acquisition. Explor acquisitions enable navigation of samples in XY and Z, to build a 3D map of sample quickly and with minimal photobleaching. Surfaces allows you to define an non-cuboidal region of interest and define sample morphology, which can then be used to define sample-driven parameters such as laser power at distance from surface. Using grids or surfaces, you can designate multiple areas to image in a one or more acquisitions. A high level overview of the capabilities of Micro-Magellan can be found [http://www.nature.com/articles/nmeth.3991.epdf?author_access_token=rR_aOWEDc1Wj0RddBbHtydRgN0jAjWel9jnR3ZoTv0M4gswfFfGBQXXZMGJVGnJTGIbTUu0oUju76Mtjgm3ZyyuqIlJOmOWcb5xpBHeT0WOW1Vr_EIRVAOz2dWk6Kkss here]
+Micro-Magellan is a plugin for imaging large samples that span multiple fields of view (e.g. tissue sections, whole slides, multi-well plates). It provides a graphical user interface for navigating around samples in X,Y, and Z called "explore acquisitions", as well as features for defining and imaging arbitrarily shaped regions of interest ("Surfaces" and "grids").
+
+Micro-Magellan is integrated with [https://pycro-manager.readthedocs.io/en/latest/ Pycro-manager], so all of its features can be controlled programmatically through Python, creating the possibility of powerful hybrid GUI-code applications, such as manually controlling data acquisition through the while having custom Python code processing image data on-the-fly.
+
+A high level overview of the capabilities of (an older version of) Micro-Magellan can be found [http://www.nature.com/articles/nmeth.3991.epdf?author_access_token=rR_aOWEDc1Wj0RddBbHtydRgN0jAjWel9jnR3ZoTv0M4gswfFfGBQXXZMGJVGnJTGIbTUu0oUju76Mtjgm3ZyyuqIlJOmOWcb5xpBHeT0WOW1Vr_EIRVAOz2dWk6Kkss here]
 
 Up to date source code can be found [https://github.com/micro-manager/micro-manager/tree/master/plugins/Magellan here]
 
 
-'''Note: The materials in this documentation correspond to an older version of Micro-Magellan. Although all the functionality is the same, many GUI components have moved around, and the screenshots are in some cases out of date.'''
+'''Note: The materials in this documentation correspond to an older version of Micro-Magellan. Although all the functionality is the same, many GUI components have moved around (i.e. buttons are in different locations than in the screen schots).'''
 
 
 ==Getting Started with Micro-Magellan==
