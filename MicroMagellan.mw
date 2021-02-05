@@ -11,6 +11,8 @@ Up to date source code can be found [https://github.com/micro-manager/micro-mana
 
 
 ==Getting Started with Micro-Magellan==
+Download and install the latest nightly build of Micro-Manager (at the time of this writing that would be Micro-Manager 2.0gamma).
+
 Open Micro-Magellan from the "Plugins--Acquisition Tools" menu in Micro-Manager.
 
 In order for Micro-Magellan to operate, it needs to know the direction of Z movement (if your system is equipped with a motorized z drive). This is defined in the Hardware Configuration Wizard.
