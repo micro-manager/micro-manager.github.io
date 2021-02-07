@@ -7,7 +7,7 @@ The following instructions for debugging Micro-Manager's Java code with IntelliJ
 -->
 # Use git to clone the micro-manager source code [https://github.com/micro-manager/micro-manager]. We'll refer to the root source directory as <code>$SRCDIR</code> below.<!--
 -->
-# Download, install and run [https://www.jetbrains.com/idea/download IntelliJ Community Edition]. You may also need to download a JDK from [https://adoptopenjdk.net/ AdoptOpenJDK]. Micro-Manager is currently developed with JDK 8.
+# Download, install and run [https://www.jetbrains.com/idea/download IntelliJ Community Edition]. You may also need to download a JDK from [https://adoptopenjdk.net/ AdoptOpenJDK]. Micro-Manager is currently developed with JDK 8 (Java 1.8).
 <!--
 -->
 # Choose '''Create New Project'''
