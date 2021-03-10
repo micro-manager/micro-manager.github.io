@@ -176,7 +176,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[USBManager]] - Micro-Manager internal USB communications driver
 
 === Light sources ===
-
+* [[89NorthLDI]] - Laser Diode Illuminator from 89 North
 * [[AgilentLaserCombiner]] - Agilent MLC
 * [[AndorLaserCombiner]] - Andor laser launch
 * [[BlueboxOptics_niji]] - Bluebox Optics niji 7 channel LED light source
