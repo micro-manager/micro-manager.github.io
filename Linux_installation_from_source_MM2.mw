@@ -156,7 +156,7 @@ To view the Core logging in the terminal while Micro-Manager is running, start s
 |-
 | Simplified Wrapper and Interface Library || <code>swig</code>
 |-
-| OpenJDK || <code>openjdk-6-jdk</code> or <code>openjdk-7-jdk</code>
+| OpenJDK || <code>openjdk-8-jdk</code>
 |-
 |colspan="2"  style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"| Optional Dependencies:
 |-
