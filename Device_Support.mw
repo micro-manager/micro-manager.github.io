@@ -60,6 +60,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ProgRes]] - Jenoptik cameras (ProgRes series)
 * [[PSRemoteCamera]] - Canon PowerShot camera (Windows)
 * [[PVCAM]] - Roper/Photometrics cameras (not for Princeton Instruments)
+* [[PVCAM legacy]] - pre-2021 documentation for Roper/Photometrics cameras
 * [[QCam]] - QImaging cameras
 * [[QSICamera]] - QSI cameras (Windows)
 * [[RaptorEPIX]] - Raptor Photonics cameras using EPIX cameralink board
