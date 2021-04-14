@@ -34,5 +34,6 @@ The Github repository contains:
 * [https://github.com/jdeschamps/MicroFPGA/tree/master/Electronics Complimentary electronics]
 * Librairies for [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Java Java] and [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Py Python]
 
+{{Note|For use with Micro-Manager 1.4, the baudrate must be changed within the firmware ([https://github.com/jdeschamps/MicroFPGA/blob/master/tutorials/changing_baudrate.md see tutorial]) as the default value is bigger than what the Micro-manager Hardware Wizard Configuration menu allows.}}
 
 {{Devices_Sidebar}}
