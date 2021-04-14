@@ -32,7 +32,7 @@ The Github repository contains:
 * [https://github.com/jdeschamps/MicroFPGA/blob/master/tutorials/README.md Guide and tutorials]
 * Firmware for the [https://github.com/jdeschamps/MicroFPGA/tree/master/Au_firmware Au] and [https://github.com/jdeschamps/MicroFPGA/tree/master/Cu_firmware Cu] FPGA boards.
 * [https://github.com/jdeschamps/MicroFPGA/tree/master/Electronics Complimentary electronics]
-* Librairies for [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Java Java], [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Py Python] and [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-LabView LabView]
+* Librairies for [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Java Java] and [https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Py Python]
 
 
 {{Devices_Sidebar}}
