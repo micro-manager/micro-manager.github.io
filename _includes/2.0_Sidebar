@@ -1,13 +1,13 @@
-{{sidebar
-|title=Version 2.0
-|content=
-* [[Version_2.0|Overview]]
-* [[Version_2.0_Users_Guide|v2.0 Users' Guide]]
-* [[Version_2.0_API|Version 2.0 API]]
-* [[Version_2.0_API_Transition_Guide|API Transition Guide]]
-* [[Version_2.0_API_How_do_I|API, How do I?]]
-* [http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/ v2.0 Javadoc]
-* [[Version 2.0 API Events|v2.0 API Events]]
-* [[Version 2.0 Plugins|v2.0 Plugins]]
-* [[Version 2.0 Scripts|v2.0 Scripts]]
-}}
+{% include Sidebar title='Version 2.0' content="
+
+* [Overview](Version_2.0)
+* [v2.0 Users' Guide](Version_2.0_Users_Guide)
+* [Version 2.0 API](Version_2.0_API)
+* [API Transition Guide](Version_2.0_API_Transition_Guide)
+* [API, How do I?](Version_2.0_API_How_do_I)
+* [v2.0 Javadoc](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/)
+* [v2.0 API Events](Version_2.0_API_Events)
+* [v2.0 Plugins](Version_2.0_Plugins)
+* [v2.0 Scripts](Version_2.0_Scripts)
+
+" %}

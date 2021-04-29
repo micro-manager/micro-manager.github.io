@@ -1,1 +1,1 @@
-{{MessageBox|Warning|{{{1}}}|color=#A40000}}<noinclude>{{Documentation}}</noinclude>
+{% include MessageBox title='Warning' text=include.text color='#A40000' %}

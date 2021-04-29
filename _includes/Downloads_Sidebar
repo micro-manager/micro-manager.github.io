@@ -1,9 +1,9 @@
-{{sidebar
-|title=downloads
-|content=
-* [[Download Micro-Manager Latest Release|Download latest release of Micro-Manager]]
-* [[Micro-Manager Nightly Builds|Download Nightly Builds]]
-* [[Micro-Manager Version Archive|Download old releases]]
-* [[Micro-Manager Installation Notes|Installation Notes]]
-* [[Micro-Manager Source Code|Source Code]]
-}}
+{% include Sidebar title='downloads' content="
+
+* [Download latest release of Micro-Manager](Download_Micro-Manager_Latest_Release)
+* [Download Nightly Builds](Micro-Manager_Nightly_Builds)
+* [Download old releases](Micro-Manager_Version_Archive)
+* [Installation Notes](Micro-Manager_Installation_Notes)
+* [Source Code](Micro-Manager_Source_Code)
+
+" %}

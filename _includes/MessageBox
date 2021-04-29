@@ -1,15 +1,13 @@
-<div style="border: 1px solid {{{color|#333}}};
+<div style="border: 1px solid {{include.color | default: '#333'}};
 padding:.3em;
 margin-top:.5em;
 margin-bottom:.5em;
-background-color: {{{bgcol|#F3F3F3}}}"><div style="background-color: {{{color|#333}}};
-color: {{{titlecol|white}}};
+background-color: {{include.bgcol | default: '#F3F3F3'}}"><div style="background-color: {{include.color | default: '#333'}};
+color: {{include.titlecol | default: 'white'}};
 margin-top:-.3em;
 margin-left:-.3em;
 padding:.3em;
 display:table-row;
 float:left;
 margin-right:.3em;
-font-weight:bold">{{{1}}}</div><div>{{{2}}}</div></div><noinclude>
-{{Documentation}}
-</noinclude>
+font-weight:bold">{{include.title}}</div><div>{{include.text}}</div></div>

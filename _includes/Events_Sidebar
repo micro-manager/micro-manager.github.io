@@ -1,8 +1,8 @@
-{{sidebar
-|title=Events
-|content=
-* [[IJ Conference 2012]]
-* [[Micro-Manager at the ASCB Meeting 2008]]
-* [[Micro-Manager at the ASCB Meeting 2006]]
-* [[Micro-Manager at Woods Hole 2006 Physiology Course]]
-}}
+{% include Sidebar title='Events' content="
+
+* [IJ Conference 2012](IJ_Conference_2012)
+* [Micro-Manager at the ASCB Meeting 2008](Micro-Manager_at_the_ASCB_Meeting_2008)
+* [Micro-Manager at the ASCB Meeting 2006](Micro-Manager_at_the_ASCB_Meeting_2006)
+* [Micro-Manager at Woods Hole 2006 Physiology Course](Micro-Manager_at_Woods_Hole_2006_Physiology_Course)
+
+" %}
