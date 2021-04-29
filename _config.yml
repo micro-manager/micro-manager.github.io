@@ -1,0 +1,11 @@
+name: Micro-Manager
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rogue
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+collections:
+  pages:
+    output: true
+    permalink: /:path
