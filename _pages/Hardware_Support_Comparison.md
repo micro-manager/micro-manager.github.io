@@ -1,538 +1,688 @@
-{| class="wikitable sortable"
-!style="width:70%;background-color:#DDDDDD;"| Device<br><br>
-!style="width:15%;background-color:#DDDDDD;"| [[Device_Support|Micro-Manager]]<br><br>
-!style="width:15%;background-color:#DDDDDD;"| [http://support.meta.moleculardevices.com/hardware/supported-hardware.php Meta Imaging (Molecular Devices)]<br><br>
-|-
-| AA AOTF - AOTF controller from AA Optoelectronics
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ABSCamera - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Acton Research - MicroSpec 2150i
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| AgilentLaserCombiner - Agilent MLC
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Aladdin - Syring pump controller from Aladdin
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Andor - Andor cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Andor3 - New model Andor cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| AndorLaserCombiner - Andor laser launch
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Asahi Spectra MAX-301
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Aura Light Engine
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| AOTF - NEOS AOTF control through parallel port. Can be used for any TTL-controllable shutter
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Apogee - Apogee cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Aquinas - Aquinas Microfluidics Controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Arduino - Open Source Programmable Digital/Analogue IO board
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ASIFW1000 - ASI Shutter and Filter Wheel controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ASIStage - ASI XY (and Z) stage and CRIF
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ASIwptr - ASI well-plate transfer robot
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| BaumerOptronic - Leica DFC camera (through BaumerOptronic FXLib)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Cairn Research - Optoscan
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Cairn Research - Rotor
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| CARVII - BD/CrEST CARV II spinning disk confocal
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| CARV LX
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Cell Robotics Stage
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Chamlide - Live Cell Instrument
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Cobolt - Cobolt laser controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| CoherentCube - Coherent Cube laser controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Conix - Conix Filter Changer, XY and Z stage
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Corvus - Märzhäuser XY stages with Corvus driver.
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| dc1394 - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| DECamera - Direct Electron Cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| DemoCamera - Virtual, emulated equipment for testing
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| DiConIlluminator - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| DLP4000 - Digital Mirror Device
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| DSLRRemoteCamera - Canon DSLR cameras (Windows)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| DTOpenLayer - DT OpenLayer Digital IO boards
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| DVC Cameras 
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ESIOImagingControllers - Microcontrollers for hardware triggering and synchronization
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| FreeSerialPort - Communicate directly through a serial port
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| GenericSLM - Any spatial light modulator that can be controlled via computer video output port.
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| GigECamera - GigE Vision- and GenICam-compliant cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| GPhoto - Canon and Nikon DSLR cameras (Mac, Linux)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Hamamatsu - Hamamatsu cameras (through DCAM library)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| HSi-300 Hyperspectral Imager 
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Integral Technologies - Flashbus Spectrim
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| IOTech DaqBoard
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ITC18 - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| K8055, K8061 - Velleman Digital IO board (all platforms)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| KDV - kdvelectronics focus drive (z-stage) for Meiji Techno
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| LeicaDMI - Leica DMI and DM microscopes
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| LeicaDMR - Leica DMR microscopes (and DMIRBE)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Linkam MDS 600
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| LSTEP Stage Controller - Marzhauser
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Ludl - Ludl stages, shutters and filter wheels
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| LumencorSpectra - Solid state illuminator from Lumencor
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| MaestroServo - Pololu Maestro Servo controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Marzhauser - Märzhäuser XY stages and Z (uses TANGO controller)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| MCL-MicroDrive - Mad City Labs MicroDrive
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| MCL-NanoDrive - Mad City Labs NanoDrive
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Measurement Computing - PCI-DDA02, DDA08/16
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Micropix - Cameras from Micropix
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| MicroPoint Laser System - Photonic Instruments
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Mosaic - Andor
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| MoticCamera - Motic cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| MSS-FMC - Chuo Seiki
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| MT20 - Olympus MT20 illumination source (Lamp/shutter/filter wheel)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| National Instruments USB-6259 BNC, USB-6501
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Nikon - Nikon Z-drive, TIRF shutter and IntensiLight shutter
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| NikonAZ100 - Nikon AZ100 Zoom microscope
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| NikonTE2000 - Nikon TE2000 motorized microscope
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| NikonTI - Nikon TI microscope
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Nikon Eclipse 90i microscope
-|align=center| ?
-|align=center style="background-color:#BBFFBB;"| Yes
+---
+autogenerated: true
+title: Hardware Support Comparison
+layout: page
+---
 
-|-
-| NIMotionStage - National Instruments FlexMotion stage controls
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| NKRemoteCamera - Nikon Digital SLR (Windows)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| NPointC400 - nPoint C400 axis controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Nuance - Cambridge Resarch & Inst.
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| NV 40/1 CL - Pizeosystem Jena
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Oligochrome - TILL Photonics
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Olympus - Olympus IX81 (Inverted)/BX61 (Upright)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Olympus DP Series cameras
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| OpenCVgrabber - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Optical Insights Dual-Cam/Dual View
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ParallelPort - TTLs on parallel port (Windows only)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| PCI-6503 National Instruments
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PCO_Camera - Supports all PCO cameras (Sensicam, Pixelfly and others)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Pecon - Pecon Incubation System
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Photon Technology International DeltaRAM
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PhotoFluor II - 89 North
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PI - Other (older) Physik Instrumente devices. Includes the E-662 controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PI_GCS - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PI_GCS_2 - Physik Instrumente (PI) GCS2 adapter
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| Piper - Stanford Photonics cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| PL200 Slide Loader - Prior Scientific
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PlateCrane - Hudson Controls
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Polychrome II, IV, V - TILL Photonics
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Prairie Aurora Laser Launch - Prairie Aurora Laser Launch Interfacing using a Velleman K8061
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center | ?
-|-
-| PrecisExcite - LED illuminator (usable as a shutter device)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| PrincetonInstruments - Princeton Instruments cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Prior - Prior stages, shutters, and filter wheels
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ProgRes - Jenoptik cameras (ProgRes series)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| PSRemoteCamera - Canon PowerShot camera (Windows)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| PVCAM - Roper/Photometrics cameras (not for Princeton Instruments)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| QCam - QImaging cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| QT-CM2 - Chuo-Seiki
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Sapphire - Lasers from Coherent
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Scientifica - Scientifica stages
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ScionCam - Scion cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Sensicam - PCO/Cooke Sensicam camera
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Sigma Koki - Microscope XY Stage
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| SpectralLMM5 - Spectral laser line controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| SpotCamera - Diagnostic Instruments Spot cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Stradus - Vortran Stradus laser driver
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| SutterLambda - Sutter hardware
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Symbol LS 1220
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| TetheredCam - Canon and Nikon DSLR cameras (Windows)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Thorlabs - Thorlabs XY Stage (brushless DC motor) and Piezo Z Stage, with controller BBD102
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ThorlabsDCxxxx - Thorlabs LED controllers
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ThorlabsFilterWheel - Thorlabs Filter Wheel
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| ThorlabsSC10 - Thorlabs shutter controller
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| TIScam - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Twain - Cameras fully implementing Twain Imaging Standard
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Universal Imaging Corporation Discovery-1
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| V4L - Video4Linux compatible cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Varispec - Cambridge Research & Instr. (CRI)
-|align=center style="background-color:#FFCCCC;"| No
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| VariLC - Tunable liquid crystal polarization modulators from CRi
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Vincent - Vincent Uniblitz controllers
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Xcite - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| XCite120PC_Exacte - Lumen Dynamics X-Cite 120PC and exacte adapter
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| XIMEA - XIMEA cameras
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#FFCCCC;"| No
-|-
-| Yokogawa - Yokogawa CSU22
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Yokogawa CSUX - Yokogawa CSUX, all models
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ZeissCAN - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| ZeissCAN29 - Zeiss CAN29-bus compatible microscopes (AxioObserver) 
-|align=center style="background-color:#BBFFBB;"| Yes
-|align=center style="background-color:#BBFFBB;"| Yes
-|-
-| Zeiss MCU-26,27,28
-|align=center | ?
-|align=center style="background-color:#BBFFBB;"| Yes
-|}
+<table>
+<thead>
+<tr class="header">
+<th><p>Device<br />
+<br />
+</p></th>
+<th><p><a href="Device_Support" title="wikilink">Micro-Manager</a><br />
+<br />
+</p></th>
+<th><p><a href="http://support.meta.moleculardevices.com/hardware/supported-hardware.php">Meta Imaging (Molecular Devices)</a><br />
+<br />
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>AA AOTF - AOTF controller from AA Optoelectronics</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>ABSCamera - Cameras from ABS Gesellschaft für Automatisierung, Bildverarbeitung, Software GmbH Jena</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Acton Research - MicroSpec 2150i</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>AgilentLaserCombiner - Agilent MLC</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Aladdin - Syring pump controller from Aladdin</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Andor - Andor cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Andor3 - New model Andor cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>AndorLaserCombiner - Andor laser launch</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Asahi Spectra MAX-301</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Aura Light Engine</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>AOTF - NEOS AOTF control through parallel port. Can be used for any TTL-controllable shutter</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Apogee - Apogee cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Aquinas - Aquinas Microfluidics Controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Arduino - Open Source Programmable Digital/Analogue IO board</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>ASIFW1000 - ASI Shutter and Filter Wheel controller</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>ASIStage - ASI XY (and Z) stage and CRIF</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>ASIwptr - ASI well-plate transfer robot</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>BaumerOptronic - Leica DFC camera (through BaumerOptronic FXLib)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Cairn Research - Optoscan</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Cairn Research - Rotor</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>CARVII - BD/CrEST CARV II spinning disk confocal</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>CARV LX</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Cell Robotics Stage</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Chamlide - Live Cell Instrument</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Cobolt - Cobolt laser controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>CoherentCube - Coherent Cube laser controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Conix - Conix Filter Changer, XY and Z stage</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Corvus - Märzhäuser XY stages with Corvus driver.</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>dc1394 - Firewire cameras that adhere to the iidc1394 specs (Mac and Linux only)</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>DECamera - Direct Electron Cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>DemoCamera - Virtual, emulated equipment for testing</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>DiConIlluminator - DiCon LED-powered brightfield and fluorescence microscopy illuminators, implemented as shutters.</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>DLP4000 - Digital Mirror Device</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>DSLRRemoteCamera - Canon DSLR cameras (Windows)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>DTOpenLayer - DT OpenLayer Digital IO boards</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>DVC Cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>ESIOImagingControllers - Microcontrollers for hardware triggering and synchronization</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>FreeSerialPort - Communicate directly through a serial port</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="odd">
+<td><p>GenericSLM - Any spatial light modulator that can be controlled via computer video output port.</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>GigECamera - GigE Vision- and GenICam-compliant cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="odd">
+<td><p>GPhoto - Canon and Nikon DSLR cameras (Mac, Linux)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Hamamatsu - Hamamatsu cameras (through DCAM library)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>HSi-300 Hyperspectral Imager</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Integral Technologies - Flashbus Spectrim</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>IOTech DaqBoard</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>ITC18 - controls shutters, cameras, pifocs, anything that can use either a TTL signal or a ±10 V signal</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>K8055, K8061 - Velleman Digital IO board (all platforms)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>KDV - kdvelectronics focus drive (z-stage) for Meiji Techno</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>LeicaDMI - Leica DMI and DM microscopes</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>LeicaDMR - Leica DMR microscopes (and DMIRBE)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Linkam MDS 600</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>LSTEP Stage Controller - Marzhauser</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Ludl - Ludl stages, shutters and filter wheels</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>LumencorSpectra - Solid state illuminator from Lumencor</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>MaestroServo - Pololu Maestro Servo controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Marzhauser - Märzhäuser XY stages and Z (uses TANGO controller)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>MCL-MicroDrive - Mad City Labs MicroDrive</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>MCL-NanoDrive - Mad City Labs NanoDrive</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Measurement Computing - PCI-DDA02, DDA08/16</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Micropix - Cameras from Micropix</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>MicroPoint Laser System - Photonic Instruments</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Mosaic - Andor</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>MoticCamera - Motic cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>MSS-FMC - Chuo Seiki</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>MT20 - Olympus MT20 illumination source (Lamp/shutter/filter wheel)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>National Instruments USB-6259 BNC, USB-6501</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Nikon - Nikon Z-drive, TIRF shutter and IntensiLight shutter</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>NikonAZ100 - Nikon AZ100 Zoom microscope</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>NikonTE2000 - Nikon TE2000 motorized microscope</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>NikonTI - Nikon TI microscope</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Nikon Eclipse 90i microscope</p></td>
+<td><p>?</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>NIMotionStage - National Instruments FlexMotion stage controls</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>NKRemoteCamera - Nikon Digital SLR (Windows)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>NPointC400 - nPoint C400 axis controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Nuance - Cambridge Resarch &amp; Inst.</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>NV 40/1 CL - Pizeosystem Jena</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Oligochrome - TILL Photonics</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Olympus - Olympus IX81 (Inverted)/BX61 (Upright)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Olympus DP Series cameras</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>OpenCVgrabber - for frame grabbers and cameras providing a DirectShow or WDM class driver. (Windows)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Optical Insights Dual-Cam/Dual View</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>ParallelPort - TTLs on parallel port (Windows only)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>PCI-6503 National Instruments</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>PCO_Camera - Supports all PCO cameras (Sensicam, Pixelfly and others)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Pecon - Pecon Incubation System</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Photon Technology International DeltaRAM</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>PhotoFluor II - 89 North</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>PI - Other (older) Physik Instrumente devices. Includes the E-662 controller</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>PI_GCS - Physik Instrumente (PI) GCS adapter - Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753, ...)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>PI_GCS_2 - Physik Instrumente (PI) GCS2 adapter</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="odd">
+<td><p>Piper - Stanford Photonics cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>PL200 Slide Loader - Prior Scientific</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>PlateCrane - Hudson Controls</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Polychrome II, IV, V - TILL Photonics</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Prairie Aurora Laser Launch - Prairie Aurora Laser Launch Interfacing using a Velleman K8061</p></td>
+<td><p>Yes</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>PrecisExcite - LED illuminator (usable as a shutter device)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>PrincetonInstruments - Princeton Instruments cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Prior - Prior stages, shutters, and filter wheels</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>ProgRes - Jenoptik cameras (ProgRes series)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>PSRemoteCamera - Canon PowerShot camera (Windows)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>PVCAM - Roper/Photometrics cameras (not for Princeton Instruments)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>QCam - QImaging cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>QT-CM2 - Chuo-Seiki</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Sapphire - Lasers from Coherent</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Scientifica - Scientifica stages</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>ScionCam - Scion cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Sensicam - PCO/Cooke Sensicam camera</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Sigma Koki - Microscope XY Stage</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>SpectralLMM5 - Spectral laser line controller</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>SpotCamera - Diagnostic Instruments Spot cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Stradus - Vortran Stradus laser driver</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>SutterLambda - Sutter hardware</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Symbol LS 1220</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>TetheredCam - Canon and Nikon DSLR cameras (Windows)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Thorlabs - Thorlabs XY Stage (brushless DC motor) and Piezo Z Stage, with controller BBD102</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>ThorlabsDCxxxx - Thorlabs LED controllers</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>ThorlabsFilterWheel - Thorlabs Filter Wheel</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>ThorlabsSC10 - Thorlabs shutter controller</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>TIScam - The Imaging Source cameras (tested on USB/CCD models) and video frame grabbers</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="even">
+<td><p>Twain - Cameras fully implementing Twain Imaging Standard</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Universal Imaging Corporation Discovery-1</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>V4L - Video4Linux compatible cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Varispec - Cambridge Research &amp; Instr. (CRI)</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>VariLC - Tunable liquid crystal polarization modulators from CRi</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Vincent - Vincent Uniblitz controllers</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Xcite - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>XCite120PC_Exacte - Lumen Dynamics X-Cite 120PC and exacte adapter</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>XIMEA - XIMEA cameras</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="odd">
+<td><p>Yokogawa - Yokogawa CSU22</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Yokogawa CSUX - Yokogawa CSUX, all models</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>ZeissCAN - Zeiss CAN-bus (not CAN29) compatible microscopes (Axiovert 200m, Axioplan2)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>ZeissCAN29 - Zeiss CAN29-bus compatible microscopes (AxioObserver)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Zeiss MCU-26,27,28</p></td>
+<td><p>?</p></td>
+<td><p>Yes</p></td>
+</tr>
+</tbody>
+</table>
