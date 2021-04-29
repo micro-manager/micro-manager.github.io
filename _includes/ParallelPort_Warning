@@ -1,5 +1,8 @@
-{| style="background-color:#CCFFFF;" cellpadding="10" cellspacing="0"
-|valign="top"| '''Note:'''
-| This Windows driver only works with your LPT1 built-in ParallelPort connector. Daughter ParallelPort cards [http://micro-manager.3463995.n2.nabble.com/Re-Can-m-m-control-two-parallel-ports-separately-td5098589.html will not work] with Micro-Manager.
-Consider an [[Device_Support#Communication_ports,_TTLs,_DAQs,_etc.|Arduino or a computer I/O board]] if your computer does not have an LPT1 port.
-|}
+<table style="background-color:#CCFFFF;" cellpadding="100" cellspacing="10">
+<tbody><tr>
+<td valign="top"> <b>Note:  </b>
+</td>
+<td> This Windows driver only works with your LPT1 built-in ParallelPort connector. Daughter ParallelPort cards <a rel="nofollow" class="external text" href="http://micro-manager.3463995.n2.nabble.com/Re-Can-m-m-control-two-parallel-ports-separately-td5098589.html">will not work</a> with Micro-Manager.
+<p>Consider an <a href="/wiki/Device_Support#Communication_ports.2C_TTLs.2C_DAQs.2C_etc." title="Device Support">Arduino or a computer I/O board</a> if your computer does not have an LPT1 port.
+</p>
+</td></tr></tbody></table>

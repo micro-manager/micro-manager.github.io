@@ -1,1 +1,1 @@
-[http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query={{{1}}} Click here to search for {{{1}}} on the Micro-Manager mailing list archive.]
+[Click here to search for {{include.text}} on the Micro-Manager mailing list archive.](http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query={{include.text}})
