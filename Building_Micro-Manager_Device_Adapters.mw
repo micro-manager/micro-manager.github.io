@@ -426,6 +426,19 @@ The only thing you need to add to your existing modules is the implementation of
 
 The first parameter in "AddAvailableDeviceName", is the adapter name and the second one is a short description.
 
+== Contributing Device Adapter Source code to Micro-Manager ==
 
+As of April 2021, the procedure for the 1.4 (legacy) and 2.0 (current) version
+is different.  Note that these two versions will no longer be kept in sync automatically.
+
+=== For 1.4 ===
+Email a copy of your source code to nico dot stuurman at ucsf dot edu.  Nico will add your code to the subversion source repository, and if you so desire, create an account on that system so that you can push updates there yourself using a subversion client.
+
+=== For 2.0 ===
+
+# Create a “fork” of the [https://github.com/micro-manager/mmCoreAndDevices “mmCoreAndDevices”] repository on your own GitHub account and clone your newly forked repository to your computer.
+# Create a branch to work on.
+# Commit your changes and push them to your github account.
+# Go to the “Pull Request” section of the “Micro-Manager” “mmCoreAndDevices” Github page and open a new pull request describing the changes you would like to make.
 
 {{Devices_Sidebar}}
