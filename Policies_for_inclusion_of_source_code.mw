@@ -14,7 +14,7 @@ Please email the source code to [mailto:info@micro-manager.org info@micro-manage
 # Create a branch to work on.
 # Commit your changes and push them to your github account.
 # Go to the “Pull Request” section of the “Micro-Manager” “mmCoreAndDevices” Github page and open a new pull request describing the changes you would like to make.
-
+# For more information about pull requests see the [https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request GitHub Docs]
 
 === Provide end-user documentation on this website ===
 
