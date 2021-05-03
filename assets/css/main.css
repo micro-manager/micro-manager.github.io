@@ -1191,7 +1191,7 @@ input, select, textarea {
 		.image-header {
 			display: block;
 			margin: auto;
-			width: 40%;
+			min-width: 60%;
 		}
 
 		.image-gallery {
