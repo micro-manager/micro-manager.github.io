@@ -2707,3 +2707,11 @@ margin: 2em 0 0.4em 0;
                 margin: 1.5em 1em 1em 1em;
        }
 }
+
+.source {
+	color: rgb(0, 0, 0);
+    line-height: 15px;
+    font-size: 12px;
+    background-color: rgb(242, 242, 242);
+    font-family: Courier New;
+	}
