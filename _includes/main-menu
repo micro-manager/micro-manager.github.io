@@ -34,7 +34,7 @@
   {% include menu-item title="Plugins" link="/Plugins" %}
   {% include menu-item title="Tutorial (PDF)" link="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf" %}
   {% include menu-item title="Advanced Methods" link="http://www.jbmethods.org/jbm/article/view/36/29" %}
-  {% include menu-item title="FAQ" link="/FAQ" %}
+  {% include menu-item title="FAQ" link="/Micro-Manager_FAQ" %}
   {% include menu-item title="More Help Topics" link="/More_Help_Topics" %}
   {% include menu-item title="Video Screencasts" link="/Screencasts" %}
 {% include menu-section-end %}
@@ -59,8 +59,8 @@
   {% include menu-item title="Building and Debugging Micro-Manager" link="/Building_and_debugging_Micro-Manager_source_code" %}
   {% include menu-item title="Multi-D Acq. Programming" link="/Multi-Dimensional_Acquisition_Programming" %}
   {% include menu-item title="Policies for inclusion of source code" link="/Policies_for_inclusion_of_source_code" %}
-  {% include menu-item title="Source code repository history and tickets" link="/Clojure" %}
-  {% include menu-item title="Clojure" link="https://valelab.ucsf.edu/trac/micromanager/timeline" %}
+  {% include menu-item title="Source code repository history and tickets" link="https://valelab.ucsf.edu/trac/micromanager/timeline" %}
+  {% include menu-item title="Clojure" link="/Clojure" %}
   {% include menu-section title="APIs" %}
     {% include menu-item title="1.4 GUI API Java Reference (Java/Beanshell)" link="https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html" %}
     {% include menu-item title="1.4 Core API Reference (Java/Beanshell/Matlab)" link="https://valelab4.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html" %}
