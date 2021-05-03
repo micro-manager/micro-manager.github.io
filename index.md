@@ -11,12 +11,12 @@ layout: home
             <br>
             <br>
             <ul class="actions special">
-            <li><a href="/learn" class="button icon solid fa-cogs">Use</a></li>
-            <li><a href="/develop" class="button icon solid fa-wrench">Extend</a></li>
+            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fa-cogs">Use</a></li>
+            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fa-wrench">Extend</a></li>
             <li><a href="/search" class="button icon solid fa-search">Search</a></li>
         </ul>
         <ul class = "actions special">
-            <li><a href="https://imagej.net/Downloads" class="button icon solid fa-download">Download</a></li>
+            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fa-download">Download</a></li>
             </ul>
         </div>
     </section>
