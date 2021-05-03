@@ -1,5 +1,5 @@
 <div class="menu">
-<h3>ImageJ Documentation</h3>
+<h3>μManager Documentation</h3>
 <ul>
 <!-- Downloads -->
 {% include menu-section title="Downloads" link="/Download_Micro-Manager_Latest_Release" %}
