@@ -1,3 +1,7 @@
+#site-logo {
+  visibility: hidden;
+}
+
 .text-success {
     color: #28a745!important;
 }
