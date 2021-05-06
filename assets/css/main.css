@@ -2054,7 +2054,7 @@ input, select, textarea {
 			}
 
 			.main.style3 {
-				background-color: #333;
+				background-color: #2f7286;
 				color: rgba(255, 255, 255, 0.75);
 				background-attachment: fixed,							fixed;
 				background-image: url("../../images/site/overlay9.png");
@@ -2145,7 +2145,7 @@ input, select, textarea {
 				}
 
 
-			@media screen and (max-width: 780px) {
+			@media screen and (max-width: 900px) {
 				.main.style2, .main.style3 {
 					width:100%;
 				}
