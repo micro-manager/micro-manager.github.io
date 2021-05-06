@@ -35,14 +35,14 @@ layout: home
     </p>
     </div>
     <div class="col-4">
-    <div class=" fa-5x text-primary"><span class="fas fa-cogs"></span></div>
+    <div class=" fa-5x text-primary"><span class="fas fa-random"></span></div>
     <h2>Versatile</h2>
     <p>
     μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals used in microscope imaging.
     </p>
     </div>
     <div class="col-4">
-    <div class=" fa-5x text-danger"><span class="fas fa-heart"></span></div>
+    <div class=" fa-5x text-danger"><span class="fas fa-lock-open"></span></div>
     <h2>Free &amp; Open Source</h2>
     <p>
     μManager is an open source project hosted on <a href="https://github.com/micro-manager">GitHub</a>, developed and written by both software developers and users.
