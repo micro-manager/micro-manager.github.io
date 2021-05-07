@@ -63,7 +63,7 @@ All directories mentioned below that don't start with <code>project</code> are r
 
 === Obtaining the source code ===
 
-Checkout the [[Micro-Manager Source Code]] inside the <code>projects</code> directory, using your Subversion client. This should result in the following directories:
+Checkout the [[Micro-Manager Source Code]] inside the <code>projects</code> directory, using your Subversion client (use git for the 2.0 micromanager source). This should result in the following directories:
 
  projects\micromanager
  projects\3rdpartypublic
