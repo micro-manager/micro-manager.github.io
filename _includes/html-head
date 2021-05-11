@@ -8,4 +8,5 @@
 		<link rel="stylesheet" href="/assets/css/sidebars.css" />
 		<link rel="stylesheet" href="/assets/css/images.css" />
 		<link rel="stylesheet" href="/assets/css/infoboxes.css" />
+		<link rel="stylesheet" href="/assets/css/dock.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>

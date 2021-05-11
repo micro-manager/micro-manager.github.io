@@ -1,4 +1,9 @@
-<div class="menu">
+{%- if include.dockable -%}
+<div id="main-menu" class="menu dockable">
+<div class="drag-handle"></div>
+{%- else -%}
+<div id="main-menu" class="menu">
+{%- endif -%}
 <h3>μManager Documentation</h3>
 <ul>
 <!-- Downloads -->
