@@ -5,56 +5,64 @@ layout: home
 
 <!-- Header -->
 {::nomarkdown}
-    <section id="header">
+    <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
-            <img src="images/logo/umanager-logo.png" alt="MicroManager Logo" class="image-header">
+            <img src="images/logo/umanager-logo.png" alt="MicroManager Logo" class="image-header" style="padding-top: 5vh; width: auto; height: 60vh>
             <br>
             <br>
             <ul class="actions special">
-            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fa-cogs">Use</a></li>
-            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fa-wrench">Extend</a></li>
-            <li><a href="/search" class="button icon solid fa-search">Search</a></li>
+            <li><a href="#one" class="button scrolly">Get Started</a></li>
         </ul>
-        <ul class = "actions special">
-            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fa-download">Download</a></li>
-            </ul>
-        </div>
     </section>
 {:/}
 
 <!--ImageJ Introduction -->
-
+<section id="one" class="main">
+  <div class="container">
+    <div class="row gtr-150">
+      <div class="col-12 col-12-medium">
+        <header class="major">
+          <ul class = "actions special">
+            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fa-cogs">Use</a></li>
+            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fa-wrench">Extend</a></li>
+            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fa-download">Download</a></li>
+          </ul>
+          <h1>Why µMicromanager?</h1>
+        </header>
+        </div>
+    </div>
+  </div>
+</section>
 <div class="text-center">
 <header class="container-whyij">
-  <div class="row-whyij">
-    <div class="col-4">
-    <div class=" fa-5x text-success"><span class="fas fa-check-circle"></span></div>
-    <h2>Easy to Use</h2>
-    <p>
-    μManager has a simple and clean user interface, expediting execution of common microscope image acquisition tasks such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof.
-    </p>
-    </div>
-    <div class="col-4">
-    <div class=" fa-5x text-primary"><span class="fas fa-random"></span></div>
-    <h2>Versatile</h2>
-    <p>
-    μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals used in microscope imaging.
-    </p>
-    </div>
-    <div class="col-4">
-    <div class=" fa-5x text-danger"><span class="fas fa-lock-open"></span></div>
-    <h2>Free &amp; Open Source</h2>
-    <p>
-    μManager is an open source project hosted on <a href="https://github.com/micro-manager">GitHub</a>, developed and written by both software developers and users.
-    </p>
+    <div class="row-whyij">
+        <div class="col-4">
+          <div class=" fa-5x text-success"><span class="fas fa-check-circle"></span>
+          </div>
+          <h2>Easy to Use</h2>
+          <p>
+          μManager has a simple and clean user interface, expediting execution of common microscope image acquisition tasks such as time-lapses, multi-channel imaging, z-stacks, and combinations thereof.
+          </p>
+        </div>
+        <div class="col-4">
+        <div class=" fa-5x text-primary"><span class="fas fa-random"></span></div>
+        <h2>Versatile</h2>
+        <p>
+        μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals used in microscope imaging.
+        </p>
+        </div>
+      <div class="col-4">
+      <div class=" fa-5x text-danger"><span class="fas fa-lock-open"></span></div>
+      <h2>Free &amp; Open Source</h2>
+      <p>
+      μManager is an open source project hosted on <a href="https://github.com/micro-manager">GitHub</a>, developed and written by both software developers and users.
+      </p>
     </div>
   </div>
 </header>
 
-
-
 <div class="resources">
-  <!-- Developer resources -->
+  <!-- User resources -->
 
   {% include user-resources %}
 
