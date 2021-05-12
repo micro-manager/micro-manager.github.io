@@ -59,17 +59,17 @@ methods work as they did in 1.4, and include the following:
 
 You can access the CompatibilityInterface by calling the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#compat>()
-compat\] method, the AcquisitionManager by calling the
+[()
+compat](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#compat) method, the AcquisitionManager by calling the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#acquisitions>()
-acquisitions\] method, the Application by calling the
+[()
+acquisitions](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#acquisitions) method, the Application by calling the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#app>()
-app\] method, and the PositionListManager by calling the
+[()
+app](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#app) method, and the PositionListManager by calling the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#positions>()
-positions\] method. The Studio in turn is available in the BeanShell
+[()
+positions](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#positions) method. The Studio in turn is available in the BeanShell
 window as "mm", and is provided to plugins when they are initialized.
 
 ### acquisitionExists
@@ -87,8 +87,8 @@ the windows that show images from the Datastore. You can ask the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)
 for a list of all DisplayWindows, and ask each DisplayWindow for its
 Datastore using the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore>()
-getDatastore\] method. However, remember that Datastores are not
+[()
+getDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method. However, remember that Datastores are not
 required to have any DisplayWindows (and also that it is possible to
 have multiple DisplayWindows for a single Datastore). If you really need
 for your code to find a Datastore created by someone else's code, then
@@ -101,8 +101,7 @@ In 2.0, third-party code is responsible for maintaining its own
 [Datastores](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
 (the rough equivalent of 1.4 acquisitions), and can freely add images to
 Datastores themselves using the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image>)
-putImage\] method.
+[putImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method.
 
 ### addMMBackgroundListener
 
@@ -126,8 +125,8 @@ annotation](https://github.com/google/guava/wiki/EventBusExplained), and
 to register your object for event notifications via the
 [EventManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/events/EventManager.html)
 accessible via
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events>()
-Studio.events()\].
+[()
+Studio.events()](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events).
 
 ### addToAlbum
 
@@ -135,8 +134,8 @@ The "album"
 [Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
 is now available via the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#album>()
-album\] method, and you can freely add images to it yourself (see the
+[()
+album](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#album) method, and you can freely add images to it yourself (see the
 `addImageToAcquisition` notes above)
 
 ### autostretchCurrentWindow
@@ -152,8 +151,8 @@ This method was moved to the
 [ScriptController](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html)
 object accessible via the
 [Studio's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#scripter>()
-scripter\] method.
+[()
+scripter](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#scripter) method.
 
 ### closeAcquisition
 
@@ -167,8 +166,7 @@ Micro-Manager will not maintain open references itself except via any
 you may have requested be created. You can close all open DisplayWindows
 for a given Datastore via the
 [DisplayManager's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#closeDisplaysFor(org.micromanager.data.Datastore>)
-closeDisplaysFor\] method.
+[closeDisplaysFor](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#closeDisplaysFor(org.micromanager.data.Datastore)) method.
 
 ### closeAcquisitionWindow
 
@@ -196,19 +194,16 @@ You can request your own new
 (the rough equivalent of 1.4 acquisition objects) via the
 [DataManager's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html)
 various "createDatastore" methods (e.g.
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore>()
-createRAMDatastore\],
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean>)
-createMultipageTIFFDatastore\], and
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String>)
-createSinglePlaneTIFFSeriesDatastore\]).
+[()
+createRAMDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
+[createMultipageTIFFDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
+[createSinglePlaneTIFFSeriesDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))).
 
 ### displayImage
 
 This has been replaced by
 [DisplayManager's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#show(org.micromanager.data.Image>)
-show\] method. Note that this method creates a new
+[show](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#show(org.micromanager.data.Image)) method. Note that this method creates a new
 [Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
 to store the image in. The old behavior of showing images in the
 Snap/Live Window is no longer possible.
@@ -244,8 +239,8 @@ responsible for maintaining your own references to the
 that your data is in.
 
 You can access the save path for a Datastore via its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath>()
-getSavePath\] method.
+[()
+getSavePath](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
 
 ### getAcquisitionImageBitDepth
 
@@ -263,14 +258,14 @@ expect varying bit depths to work right now). You can get the bit depth
 for an Image by asking for its
 [Metadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html)
 (via the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getMetadata>()
-getMetadata\] method) and then calling the Metadata's
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getBitDepth>()
-getBitDepth\] method.
+[()
+getMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getMetadata) method) and then calling the Metadata's
+[()
+getBitDepth](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getBitDepth) method.
 
 If you need to get a single image out of a Datastore, you can call its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage>()
-getAnyImage\] method.
+[()
+getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageByteDepth
 
@@ -286,12 +281,12 @@ objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying byte depths to work right now). You can get the byte
 depth for a single image by calling its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel>()
-getBytesPerPixel\] method.
+[()
+getBytesPerPixel](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel) method.
 
 If you need to get a single image out of a Datastore, you can call its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage>()
-getAnyImage\] method.
+[()
+getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageCache
 
@@ -303,8 +298,7 @@ that your data is in.
 
 The Datastore functions as the equivalent of 1.4's image cache. You can
 ask it for images using its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords>)
-getImage\] method.
+[getImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionImageHeight
 
@@ -320,12 +314,12 @@ objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image heights to work right now). You can get the height
 for a single image by calling its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getHeight>()
-getHeight\] method.
+[()
+getHeight](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getHeight) method.
 
 If you need to get a single image out of a Datastore, you can call its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage>()
-getAnyImage\] method.
+[()
+getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageWidth
 
@@ -341,12 +335,12 @@ objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image widths to work right now). You can get the width
 for a single image by calling its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getWidth>()
-getWidth\] method.
+[()
+getWidth](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getWidth) method.
 
 If you need to get a single image out of a Datastore, you can call its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage>()
-getAnyImage\] method.
+[()
+getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionMultiCamNumChannels
 
@@ -358,17 +352,15 @@ that your data is in.
 
 In 2.0 this method is not available. You may try to replicate it by
 comparing the number of channels in the Datastore (via its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String>)
-getAxisLength\] method) to the number of unique cameras declared by the
+[getAxisLength](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String)) method) to the number of unique cameras declared by the
 [Metadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html)s
 of the various images (see
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getCamera>()
-Metadata.getCamera\]). You can iterate over all images in the Datastore
+[()
+Metadata.getCamera](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getCamera)). You can iterate over all images in the Datastore
 via the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getUnorderedImageCoords>()
-getUnorderedImageCoords\] method combined with the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords>)
-getImage\] method.
+[()
+getUnorderedImageCoords](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getUnorderedImageCoords) method combined with the
+[getImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionPath
 
@@ -379,8 +371,8 @@ responsible for maintaining your own references to the
 that your data is in.
 
 The path of a Datastore's saved location on disk is accessible via its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath>()
-getSavePath\] method.
+[()
+getSavePath](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
 
 ### getAutofocus
 
@@ -414,39 +406,39 @@ method.
 
 This has been replaced by the
 [DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore>()
-getDatastore\] method.
+[()
+getDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method.
 
 ### getCurrentAlbum
 
 The Album Datastore can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#album>()
-album\] method.
+[()
+album](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#album) method.
 
 ### getMMCore
 
 The Micro-Manager Core object can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### getROI
 
 Use the
 [Core's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html)
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html#getROI>()
-getROI\] method.
+[()
+getROI](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html#getROI) method.
 
 ### getSnapLiveWin
 
 This has been replaced by the
 [SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay>()
-getDisplay\] method. You can access the SnapLiveManager via the
+[()
+getDisplay](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay) method. You can access the SnapLiveManager via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live>()
-live\] method.
+[()
+live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
 
 Please note that the snap/live display is prone to being destroyed and
 recreated. It is not recommended that you keep references to the
@@ -470,11 +462,11 @@ This method was deprecated in 1.4 and has been removed in 2.0
 
 This information can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#getXYStageDevice>()
-getXYStageDevice\] method. The Core in turn can be accessed via the
+[()
+getXYStageDevice](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#getXYStageDevice) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### initializeAcquisition
 
@@ -495,12 +487,12 @@ a plugin after µManager's initialization has completed.
 
 This method has been replaced by the
 [SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getIsLiveModeOn>()
-getIsLiveModeOn\] method. The SnapLiveManager in turn can be accessed
+[()
+getIsLiveModeOn](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getIsLiveModeOn) method. The SnapLiveManager in turn can be accessed
 via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live>()
-live\] method.
+[()
+live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
 
 Note that if you just want to temporarily suspend live mode, to resume
 it later, then you can make use of the SnapLiveManager's
@@ -511,18 +503,16 @@ method.
 
 Replaced by the
 [LogManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logError(java.lang.Exception>)
-logError\] method (and similarly for the variants on this method). The
+[logError](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logError(java.lang.Exception)) method (and similarly for the variants on this method). The
 LogManager can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#logs>()
-logs\] method.
+[()
+logs](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#logs) method.
 
 ### logMessage
 
 As with `logError`, replaced by the LogManager's
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String>)
-logMessage\] method.
+[logMessage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String)) method.
 
 ### logStartupProperties
 
@@ -532,11 +522,10 @@ This method was removed as it is unused by all known third-party code.
 
 Replaced by the
 [ScriptController](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html#message(java.lang.String>)
-message\] method. The ScriptController in turn can be accessed via the
+[message](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html#message(java.lang.String)) method. The ScriptController in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#scripter>()
-scripter\] method.
+[()
+scripter](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#scripter) method.
 
 ### openAcquisition
 
@@ -549,27 +538,24 @@ that your data is in.
 You can request new Datastores via the
 [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html)'s
 various "createDatastore" methods (e.g.
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore>()
-createRAMDatastore\],
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean>)
-createMultipageTIFFDatastore\], and
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String>)
-createSinglePlaneTIFFSeriesDatastore\]). If you use a file-backed
+[()
+createRAMDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
+[createMultipageTIFFDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
+[createSinglePlaneTIFFSeriesDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))). If you use a file-backed
 Datastore, then images will automatically be saved to disk as you add
 them to the Datastore, though you should make certain to call the
 Datastore's
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#freeze>()
-freeze\] method when you are done to ensure that saving completes
+[()
+freeze](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#freeze) method when you are done to ensure that saving completes
 successfully.
 
 If you wish to view the images in the Datastore, use the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore>)
-createDisplay\] method. The DisplayManager in turn can be accessed via
+[createDisplay](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore)) method. The DisplayManager in turn can be accessed via
 the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#displays>()
-displays\] method.
+[()
+displays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#displays) method.
 
 In any case, there is no need to specify the dimensionality of the
 dataset ahead of time as was the case with `openAcquisition`
@@ -578,12 +564,11 @@ dataset ahead of time as was the case with `openAcquisition`
 
 Replaced by
 [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean>)
-loadData\] method. The DataManager in turn can be accessed via the
+[loadData](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) method. The DataManager in turn can be accessed via the
 <http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html>
 Studio\]'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#data>()
-data\] method.
+[()
+data](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#data) method.
 
 ### promptToSaveAcquisition
 
@@ -595,8 +580,7 @@ that your data is in.
 
 Replaced by the
 [Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window>)
-save\] method.
+[save](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window)) method.
 
 ### registerForEvents
 
@@ -604,8 +588,8 @@ Moved to the
 [EventManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/events/EventManager.html),
 which can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events>()
-events\] method.
+[()
+events](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events) method.
 
 ### removeMMBackgroundListener
 
@@ -663,18 +647,16 @@ any associated
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore>)
-getDisplays\] method.
+[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel color is a property of the
 [DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted channel colors (e.g. by using the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy>()
-copy\] method), and then cause a DisplayWindow to use the new channel
+[()
+copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings>)
-setDisplaySettings\] method.
+[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders "wikilink") for more information.
@@ -691,18 +673,16 @@ any associated
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore>)
-getDisplays\] method.
+[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel contrast settings are properties of the
 [DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted contrast (e.g. by using the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy>()
-copy\] method), and then cause a DisplayWindow to use the new channel
+[()
+copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings>)
-setDisplaySettings\] method.
+[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders "wikilink") for more information.
@@ -719,13 +699,12 @@ Channel names are a property of the
 [SummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html)
 associated with a given Datastore. You can access the SummaryMetadata
 using the Datastore's
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSummaryMetadata>()
-getSummaryMetadata\] method, make a copy with the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html#copy>()
-copy\] method, adjust the channel names to suit, and then cause the
+[()
+getSummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSummaryMetadata) method, make a copy with the
+[()
+copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html#copy) method, adjust the channel names to suit, and then cause the
 Datastore to use the new summary metadata using the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata>)
-setSummaryMetadata\] method.
+[setSummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders "wikilink") for more information.
@@ -742,13 +721,11 @@ any associated
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore>)
-getDisplays\] method.
+[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 This method is not available in 2.0. However, you can replicate its
 functionality for a given DisplayWindow by combining the
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords>)
-SetDisplayedImageTo\] method of DisplayWindow and the
+[SetDisplayedImageTo](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method of DisplayWindow and the
 `shouldAutostretch` field of the
 [DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html).
 
@@ -786,51 +763,51 @@ last used to save files.
 
 This functionality be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativePosition>()
-setRelativePosition\] method. The Core in turn can be accessed via the
+[()
+setRelativePosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativePosition) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setRelativeXYStagePosition
 
 This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativeXYPosition>()
-setRelativeXYPosition\] method. The Core in turn can be accessed via the
+[()
+setRelativeXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativeXYPosition) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setStagePosition
 
 This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setPosition>()
-setPosition\] method. The Core in turn can be accessed via the
+[()
+setPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setPosition) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setXYOrigin
 
 This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setOriginXY>()
-setOriginXY\] method. The Core in turn can be accessed via the
+[()
+setOriginXY](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setOriginXY) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setXYStagePosition
 
 This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
-\[<https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setXYPosition>()
-setXYPosition\] method. The Core in turn can be accessed via the
+[()
+setXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setXYPosition) method. The Core in turn can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core>()
-core\] method.
+[()
+core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### showError
 
@@ -853,8 +830,8 @@ method.
 ### showXYPositionList
 
 For consistency, this method was renamed to
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html#showPositionList>()
-showPositionList\] in
+[()
+showPositionList](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html#showPositionList) in
 [PositionListManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html).
 
 ### sleep
@@ -876,11 +853,10 @@ of the
 [SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
 [snap](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
 method and the Datastore's
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image>)
-putImage\] method. The SnapLiveManager can be accessed from the
+[putImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method. The SnapLiveManager can be accessed from the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live>()
-live\] method.
+[()
+live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
 
 ### snapSingleImage
 
@@ -895,7 +871,7 @@ Moved to the
 [EventManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/events/EventManager.html)
 object, which can be accessed via the
 [Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-\[<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events>()
-events\] method.
+[()
+events](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events) method.
 
 &lt;INCLUDE 2.0\_Sidebar text="😎"&gt;
