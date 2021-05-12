@@ -79,16 +79,20 @@ Image file stacks are implement by
 To create an instance of this class, capable of reading an existing
 Image file stack data set, use:
 
-<span class="source"> TaggedImageStorageMultipageTiff stackReader = new
+```
+ TaggedImageStorageMultipageTiff stackReader = new
 TaggedImageStorageMultipageTiff("C:\\Data\\Directory where data set is",
-false, null, false, false);</span>  
+false, null, false, false);
+```  
 Important methods for utilizing this class are:
 
-<span class="source"> public TaggedImage getImage(int channelIndex, int
+```
+ public TaggedImage getImage(int channelIndex, int
 sliceIndex, int frameIndex, int positionIndex)  
 public JSONObject getSummaryMetadata()  
 public Set<String> imageKeys()  
-public void close() </span>  
+public void close() 
+```  
 
 **imageKeys()** returns a
 [java.util.Set<String>](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html)
@@ -128,7 +132,8 @@ listed below. In this example, a data set of 512x512 16 bit monochrome
 images is created with 10 time points, 8 z slices, 2 channels, and 3
 positions.
 
-<span class="source"> summary = new JSONObject();  
+```
+ summary = new JSONObject();  
 summary.put("Slices", 18;  
 summary.put("Positions", 1);  
 summary.put("Channels", 2);  
@@ -145,7 +150,7 @@ summary.put("ChColors", new org.json.JSONArray("\[1,1\]"));
 summary.put("ChNames", new org.json.JSONArray("\["DAPI","FITC"\]"));  
 summary.put("ChMins", new org.json.JSONArray("\[0,0\]"));  
 summary.put("ChMaxes", new org.json.JSONArray("\[65535,65535\]"));  
-</span>  
+```  
 
 **SlicesFirst** and **TimeFirst** tell the image storage what order to
 expect images to arrive in. If the full complement of expected images
@@ -166,16 +171,18 @@ should be placed in separate files or combined into a single one. In
 this case we don't create **metadata.txt**, and we create seperate files
 for XY positions:
 
-<span class="source"> TaggedImageStorageMultipageTiff storage = new
+```
+ TaggedImageStorageMultipageTiff storage = new
 TaggedImageStorageMultipageTiff("C:/Data/Directory where you want to
 save",true,summary,false,true);  
-</span>  
+```  
 Important methods for writing images are:
 
-<span class="source"> public void putImage(TaggedImage taggedImage)  
+```
+ public void putImage(TaggedImage taggedImage)  
 public void finished()  
 public void close()  
-</span>  
+```  
 
 **finished()** should be called after no more image are going to be
 added. The storage becomes read only after this call

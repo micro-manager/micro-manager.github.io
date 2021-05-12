@@ -43,8 +43,7 @@ Pipeline's list of known processors). The class is what you get if you
 access the `.class` field of your processor. For example, let's say you
 have a DataProcessor named MyProcessor:
 
-<div class="source">
-
+```
 import mmcorej.TaggedImage;
 
 import org.micromanager.api.DataProcessor;
@@ -73,19 +72,16 @@ class MyProcessor implements DataProcessor {
 `  }`
 
 }
-
-</div>
+```
 
 This particular DataProcessor does not implement makeConfigurationGUI()
 and dispose(), ergo it is not configurable. To register this
 DataProcessor, first you should compile it and put the `.class` file in
 the *mmplugins* directory. Then, in your code, you would do this:
 
-<div class="source">
-
+```
 gui.registerProcessorClass(MyProcessor.class, "My Processor");
-
-</div>
+```
 
 Once this is done, the new DataProcessor will show up in the Image
 Pipeline dialog, where the user can add and remove it from the pipeline.
@@ -102,8 +98,7 @@ GUI via `makeConfigurationGUI`, MMProcessorPlugins do not have the
 provide a `getProcessorClass` function (in addition to the functions and
 fields required by MMBasePlugin). For example:
 
-<div class="source">
-
+```
 import org.micromanager.api.MMProcessorPlugin
 
 class MyProcessorPlugin implements MMProcessorPlugin {
@@ -119,8 +114,7 @@ class MyProcessorPlugin implements MMProcessorPlugin {
 `  }  `
 
 }
-
-</div>
+```
 
 When Micro-Manager starts up, it automatically loads all of its plugins.
 At this point, it will detect if your plugin is an MMProcessorPlugin,
