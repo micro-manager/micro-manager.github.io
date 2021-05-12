@@ -448,4 +448,3 @@ Access via the
 [()
 Studio.scripter](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html#scripter) method.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

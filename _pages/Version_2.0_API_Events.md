@@ -81,4 +81,3 @@ Datastores can be found
 -   ImageOverwrittenEvent: Signals that an image in the Datastore has
     been overwritten.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

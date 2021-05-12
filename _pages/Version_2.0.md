@@ -74,4 +74,3 @@ Version 2.0 includes a new User Profile system; see
 [Version\_2.0\_Profiles](Version_2.0_Profiles "wikilink") for more
 information.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;
