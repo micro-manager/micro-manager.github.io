@@ -9,4 +9,3 @@ Nobody contributed information about this device. Contact
 
 {% include Listserv_Search text="Standa" %}
 
-{% include Devices_Sidebar text="" %}

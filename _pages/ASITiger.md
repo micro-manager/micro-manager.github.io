@@ -159,4 +159,3 @@ Busy()).
 Contact the author at <jon_remove@asiimaging.com> (remove the last part
 of the email address).
 
-{% include Devices_Sidebar text="" %}

@@ -22,4 +22,3 @@ one.
 
 {% include Listserv_Search text="XLED1" %}
 
-{% include Devices_Sidebar text="" %}

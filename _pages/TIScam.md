@@ -75,4 +75,3 @@ camera with MM. The driver is not currently supported by TIS. See the
 following mailing list post for more details:
 <http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7589354>
 
-{% include Devices_Sidebar text="" %}

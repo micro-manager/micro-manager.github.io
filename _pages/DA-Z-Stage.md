@@ -122,4 +122,3 @@ to the desired DA device.
 
 --[Nico](User:Nico "wikilink") 13:26, 29 March 2008 (PDT)
 
-{% include Devices_Sidebar text="" %}

@@ -143,4 +143,3 @@ Support](mailto:sales@vortranlaser.com)
 
 {% include Listserv_Search text="Vortran" %}
 
-{% include Devices_Sidebar text="" %}

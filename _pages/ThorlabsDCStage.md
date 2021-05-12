@@ -106,4 +106,3 @@ the value to 1.
 
 {% include Note text=" The controller TDC001  only works on 32 bits Micro-manager as explained in the Thorlabs webpage." %}
 
-{% include Devices_Sidebar text="" %}

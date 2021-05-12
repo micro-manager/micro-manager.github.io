@@ -9,4 +9,3 @@ Nobody contributed information about this device. Contact
 
 {% include Listserv_Search text="LumencorCIA" %}
 
-{% include Devices_Sidebar text="" %}

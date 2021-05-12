@@ -81,4 +81,3 @@ read the Readme in the package for instructions.
 
 {% include Listserv_Search text="Motic" %}
 
-{% include Devices_Sidebar text="" %}

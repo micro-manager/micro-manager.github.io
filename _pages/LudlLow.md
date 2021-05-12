@@ -10,4 +10,3 @@ not been tested, but could be used as a nice start.
 
 {% include Listserv_Search text="LudlLow" %}
 
-{% include Devices_Sidebar text="" %}

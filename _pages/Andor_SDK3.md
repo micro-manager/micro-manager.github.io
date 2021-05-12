@@ -206,4 +206,3 @@ software team
 -   [Phone support](http://www.andor.com/contact_us/)
 -   [Email support](mailto:3rdpartysupport@andor.com)
 
-{% include Devices_Sidebar text="" %}

@@ -150,4 +150,3 @@ need to set those in the Hardware Configuration Wizard.
 
 {% include Listserv_Search text="DMI" %}
 
-{% include Devices_Sidebar text="" %}

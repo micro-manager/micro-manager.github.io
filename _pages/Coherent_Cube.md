@@ -134,4 +134,3 @@ with this device adapter:
 
 {% include Note text="Lasers will automatically be shut off when Micro-Manager closes but power remains on." %}
 
-{% include Devices_Sidebar text="" %}

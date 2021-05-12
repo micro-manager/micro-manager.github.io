@@ -165,4 +165,3 @@ in the VCP driver).
 -- Alex Carisey (copied from mailling list) 08:22, 16 February 2012
 (PST)
 
-{% include Devices_Sidebar text="" %}

@@ -82,4 +82,3 @@ TTL State Device to allow control of these analog outs from a single
 state setting, and then set up a State Device Shutter to control the DA
 TTL state device.
 
-{% include Devices_Sidebar text="" %}

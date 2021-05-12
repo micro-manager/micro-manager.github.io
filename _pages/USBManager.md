@@ -85,4 +85,3 @@ to install the appropriate driver (see [K8055](K8055 "wikilink"),
 [NikonEclipse90i](NikonEclipse90i "wikilink") ). On other platforms,
 this may not be the case.
 
-{% include Devices_Sidebar text="" %}

@@ -371,4 +371,3 @@ If an error occurs during operation because of mechanical blockage or
 overloading, remove the obstacle (or reduce the weight of attached
 filters) turn the power on and off and re-start the micro-manager.
 
-{% include Devices_Sidebar text="" %}

@@ -94,4 +94,3 @@ appears as a serial port in Micro-Manager. If such a driver can be found
 on Mac or Linux, this adapter will work on those platforms too (please
 share experiences here).
 
-{% include Devices_Sidebar text="" %}

@@ -124,4 +124,3 @@ is closed, the light will come on again (which is counter-intuitive).
 
 --[Nico](User:Nico "wikilink") 16:02, 30 September 2008 (PDT)
 
-{% include Devices_Sidebar text="" %}

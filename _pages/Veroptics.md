@@ -86,4 +86,3 @@ Veroptics](mailto:sales@Veroptics.com) for the device adapter.
 
 {% include Listserv_Search text="Veroptics" %}
 
-{% include Devices_Sidebar text="" %}

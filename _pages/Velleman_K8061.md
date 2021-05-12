@@ -124,4 +124,3 @@ Also see Austin Blanco's [blog](http://austinblanco.com/blog/?p=209).
 
 --[Nico](User:Nico "wikilink") 18:21, 2 March 2008 (PST)
 
-{% include Devices_Sidebar text="" %}

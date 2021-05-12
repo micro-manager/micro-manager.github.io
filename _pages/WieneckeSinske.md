@@ -184,4 +184,3 @@ None
 </tr>
 </table>
 
-{% include Devices_Sidebar text="" %}

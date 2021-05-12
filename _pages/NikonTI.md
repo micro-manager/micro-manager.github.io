@@ -310,4 +310,3 @@ C:\\Program Files\\Nikon\\Shared\\Bin\\NikonTi.dll.
 
 {% include Listserv_Search text="Nikon" %}
 
-{% include Devices_Sidebar text="" %}

@@ -82,4 +82,3 @@ the top of the list of choices in the drop-down menu in the MM UI.
 
 --[Nico](User:Nico "wikilink") 11:22, 25 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

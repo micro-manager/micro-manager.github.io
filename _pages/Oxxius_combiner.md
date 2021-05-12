@@ -193,4 +193,3 @@ Inheritance: CGenericBase.
 
 Contact the author at "support at oxxius.com".
 
-{% include Devices_Sidebar text="" %}

@@ -124,4 +124,3 @@ how long it will take to open/close the shutter).
 
 --[Nico](User:Nico "wikilink") 21:48, 15 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

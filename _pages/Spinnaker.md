@@ -22,4 +22,3 @@ website](https://www.cairn-research.co.uk/wp-content/uploads/2019/05/media/READ-
 Note that it is not needed to download 2.0-beta3-20181129, newer
 versions of Micro-Manager (1.4 and 2.0) should work as well.
 
-{% include Devices_Sidebar text="" %}

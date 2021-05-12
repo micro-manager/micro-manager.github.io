@@ -240,4 +240,3 @@ Teensy requires its own installation software that can be downloaded
 [here](https://www.pjrc.com/teensy/td_download.html). Just the drivers
 can be found [here](https://www.pjrc.com/teensy/serial_install.exe).
 
-{% include Devices_Sidebar text="" %}

@@ -79,4 +79,3 @@ recording incubation values to a file are planned for near future.
 
 --[Peter](User:Peto "wikilink") 16:41, 11 June 2008 (CET)
 
-{% include Devices_Sidebar text="" %}

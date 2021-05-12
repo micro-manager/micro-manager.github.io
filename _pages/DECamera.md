@@ -6,4 +6,3 @@ layout: page
 
 Please contact [Direct Electron](http://directelectron.com).
 
-{% include Devices_Sidebar text="" %}

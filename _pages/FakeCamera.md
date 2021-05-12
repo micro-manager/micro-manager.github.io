@@ -239,4 +239,3 @@ need to be adapted as follows (tested on Ubuntu 16):
 
 {% include Listserv_Search text="FakeCamera" %}
 
-{% include Devices_Sidebar text="" %}

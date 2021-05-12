@@ -74,4 +74,3 @@ available for this purpose:
     function calls. A similar program is [**Nirsoft DLL Export
     Viewer**](http://www.nirsoft.net/utils/dll_export_viewer.html).
 
-{% include Devices_Sidebar text="" %}

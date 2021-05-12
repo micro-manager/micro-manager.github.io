@@ -88,4 +88,3 @@ us develop without attached hardware).
 
 --[Nico](User:Nico "wikilink") 11:30, 25 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

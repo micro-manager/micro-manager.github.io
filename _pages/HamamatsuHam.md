@@ -108,4 +108,3 @@ change the exposure quite dramatically.
 
 {% include Listserv_Search text="Hamamatsu" %}
 
-{% include Devices_Sidebar text="" %}

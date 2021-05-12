@@ -102,4 +102,3 @@ Controls quad filter changer from
 
 --[Nico](User:Nico "wikilink") 10:18, 25 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

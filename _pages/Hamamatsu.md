@@ -143,4 +143,3 @@ and setting "2" will give you the image from the other CCD.
 
 {% include Listserv_Search text="Hamamatsu" %}
 
-{% include Devices_Sidebar text="" %}

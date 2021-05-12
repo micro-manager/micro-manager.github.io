@@ -75,4 +75,3 @@ All platforms (serial interface)
 
 (Content to be added.)
 
-{% include Devices_Sidebar text="" %}

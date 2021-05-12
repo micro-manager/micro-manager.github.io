@@ -298,4 +298,3 @@ unresponsive.
 
 {% include Listserv_Search text="AxioCam" %}
 
-{% include Devices_Sidebar text="" %}

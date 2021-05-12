@@ -87,4 +87,3 @@ All
 
 (Content to be added.)
 
-{% include Devices_Sidebar text="" %}

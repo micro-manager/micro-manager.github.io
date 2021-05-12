@@ -62,4 +62,3 @@ Windows 64-bit
 The driver from VisiTech needs to be installed. Copy the VisiSDK.dll
 file into the Micro-Manager folder.
 
-{% include Devices_Sidebar text="" %}

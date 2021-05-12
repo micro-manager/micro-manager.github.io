@@ -354,4 +354,3 @@ image below). Note that the y scale is arbitrary and the x scale is ms.
     Illuminator](http://www.plosone.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0143547&representation=PDF)
     by Jens B. Bosse et al.
 
-{% include Devices_Sidebar text="" %}

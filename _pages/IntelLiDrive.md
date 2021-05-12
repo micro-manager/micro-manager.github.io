@@ -9,4 +9,3 @@ support.
 
 {% include Listserv_Search text="IntelLiDrive" %}
 
-{% include Devices_Sidebar text="" %}

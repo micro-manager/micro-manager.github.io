@@ -107,4 +107,3 @@ Micro-Manager source code repository.
 
 {% include Listserv_Search text="Piezosystem" %}
 
-{% include Devices_Sidebar text="" %}

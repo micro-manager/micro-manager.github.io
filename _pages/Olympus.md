@@ -129,4 +129,3 @@ offset.
 
 {% include Listserv_Search text="Olympus" %}
 
-{% include Devices_Sidebar text="" %}

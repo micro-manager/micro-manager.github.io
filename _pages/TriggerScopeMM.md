@@ -81,4 +81,3 @@ of DACs and TTLs that are actively blanking/sequencing; each TTL (group)
 will add about 3 micro-seconds, and each DAC will add about 25
 micro-seconds.
 
-{% include Devices_Sidebar text="" %}

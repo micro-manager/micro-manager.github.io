@@ -76,4 +76,3 @@ for information.
 
 {% include Listserv_Search text="Lumenera" %}
 
-{% include Devices_Sidebar text="" %}

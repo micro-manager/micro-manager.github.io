@@ -110,4 +110,3 @@ This device adapter has been tested with Micro-manager &gt;1.4.22 (to
 MM2.0.0-gamma) in Windows 7 with a gem561 laser. The API should be
 compatible with ventus/opus/axiom lasers.
 
-{% include Devices_Sidebar text="" %}

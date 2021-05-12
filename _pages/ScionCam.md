@@ -180,4 +180,3 @@ camera](http://valelab.ucsf.edu/~nico/Scion/media/Scioninfodrivers.zip).
 
 {% include Listserv_Search text="Scion" %}
 
-{% include Devices_Sidebar text="" %}

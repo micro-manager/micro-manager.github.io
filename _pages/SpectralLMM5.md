@@ -126,4 +126,3 @@ tested).
 
 --[Nico](User:Nico "wikilink") 11:05, 12 February 2008 (PST)
 
-{% include Devices_Sidebar text="" %}

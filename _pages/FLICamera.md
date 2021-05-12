@@ -7,4 +7,3 @@ layout: page
 Please contact [Finger Lakes
 Instrumentation](http://www.flicamera.com/).
 
-{% include Devices_Sidebar text="" %}

@@ -95,4 +95,3 @@ administrator" from an admin account) the first time you access the
 parallel port.😎"&gt;
 
 {% include ParallelPort_Warning text="" %}
-{% include Devices_Sidebar text="" %}

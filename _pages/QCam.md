@@ -149,4 +149,3 @@ to a QiClick camera. --David Knecht 1-12-16
 
 {% include Listserv_Search text="QImaging" %}
 
-{% include Devices_Sidebar text="" %}

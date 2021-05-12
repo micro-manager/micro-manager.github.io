@@ -83,4 +83,3 @@ Ideal for spectroscopy application:
 
 {% include Listserv_Search text="Shamrock" %}
 
-{% include Devices_Sidebar text="" %}

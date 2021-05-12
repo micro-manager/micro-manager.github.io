@@ -101,4 +101,3 @@ The `Trigger` and `TriggerSequence` properties can be used for external
 triggering by TTL pulses. In the trigger sequence, channels are labeled
 "A", "B", "C", "D", and a pause is denoted by "0" (zero).
 
-{% include Devices_Sidebar text="" %}

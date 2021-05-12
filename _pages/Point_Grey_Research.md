@@ -96,4 +96,3 @@ cameras.![](media/Gs3_u3_51s5m_c_variance_hist.png "fig:media/Gs3_u3_51s5m_c_var
 The data was acquired at 50Hz in a 512x512 pixel ROI centered on the
 camera chip. Median values are 0.84e-^2 for the ORCA-Flash4.0 and
 2.6e-^2 for the GS3-U3-51S5M-C cameras.
-{% include Devices_Sidebar text="" %}

@@ -75,4 +75,3 @@ Requires 32-bit Micro-Manager and the Trinamic TMCLWrapperRS232 module
 page](https://www.trinamic.com/support/help-center/discontinued-products/discontinued-details/tmcm-610/)).
 Place the **`TMCLWrapperRS232.dll`** file in the Micro-Manager folder.
 
-{% include Devices_Sidebar text="" %}

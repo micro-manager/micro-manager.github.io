@@ -154,4 +154,3 @@ Imaging](http://www.missionbayimaging.com/mbimaging2010/Welcome.html)
 
 --[Jbutler mb](User:Jbutler_mb "wikilink") 22:11, 31 January 2011 (UTC)
 
-{% include Devices_Sidebar text="" %}

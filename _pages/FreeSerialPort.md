@@ -94,4 +94,3 @@ Here is an example of how to use 'readFromSerialPort' &
 
 {% include Listserv_Search text="FreeSerialPort" %}
 
-{% include Devices_Sidebar text="" %}

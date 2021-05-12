@@ -106,4 +106,3 @@ The stage has to move 1 mm towards the sample. Make sure that the
 objective is far enough away from the sample before executing this
 command.
 
-{% include Devices_Sidebar text="" %}

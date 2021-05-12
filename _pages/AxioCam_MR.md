@@ -282,4 +282,3 @@ the trigger OUT signal to achieve the desired trigger OUT delay.
 
 {% include Listserv_Search text="AxioCam" %}
 
-{% include Devices_Sidebar text="" %}

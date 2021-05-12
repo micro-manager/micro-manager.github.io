@@ -96,4 +96,3 @@ long as the longest ND filter switch time (2500 msec or so).
 
 --[Nico](User:Nico "wikilink") 14:33, 25 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

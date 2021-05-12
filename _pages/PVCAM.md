@@ -206,4 +206,3 @@ etc.
 
 {% include Listserv_Search text="PVCAM" %}
 
-{% include Devices_Sidebar text="" %}

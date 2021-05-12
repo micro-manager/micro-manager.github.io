@@ -105,4 +105,3 @@ needed. It works with Prior/Queensgate nanopositioning Z stages. No
 --[GrahamBartlettPrior](User:GrahamBartlettPrior "wikilink") 13:14, 17
 Oct 2019 (GMT)
 
-{% include Devices_Sidebar text="" %}

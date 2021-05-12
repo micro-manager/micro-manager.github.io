@@ -114,4 +114,3 @@ after initialization, load the hardware configuration again. If you wish
 to reactivate the screen, at the risk of said catastrophic crash, do so
 in the Device Properties Browser.
 
-{% include Devices_Sidebar text="" %}

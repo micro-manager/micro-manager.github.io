@@ -90,4 +90,3 @@ defined the *Hub* device, and assign the right serial port to it.
 
 --[Nico](User:Nico "wikilink") 17:10, 8 September 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

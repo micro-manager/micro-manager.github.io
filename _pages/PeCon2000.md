@@ -83,4 +83,3 @@ Thanks go to Dr. Oliver Merk of PeCon for providing the SDK as well as
 for testing and discussions. If you encounter any error, please contact
 the author.
 
-{% include Devices_Sidebar text="" %}

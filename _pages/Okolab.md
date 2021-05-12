@@ -217,4 +217,3 @@ See current version
 
 {% include Listserv_Search text="Okolab" %}
 
-{% include Devices_Sidebar text="" %}

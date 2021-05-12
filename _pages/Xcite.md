@@ -83,4 +83,3 @@ This adapter controls the X-Cite 120 PC fluorescent lamp. Connect the
 device to a serial port and select the corresponding port in the
 Hardware Configuration Wizard.
 
-{% include Devices_Sidebar text="" %}

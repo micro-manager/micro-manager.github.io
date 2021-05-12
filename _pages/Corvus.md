@@ -99,4 +99,3 @@ Micro-Manager) to 115200 baud and setting DelayBetweenChars to 25 ms.
 
 **See also:** [Marzhauser](Marzhauser "wikilink") (TANGO) device adapter
 
-{% include Devices_Sidebar text="" %}

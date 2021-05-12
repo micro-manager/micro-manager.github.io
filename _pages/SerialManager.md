@@ -106,4 +106,3 @@ USB-serial adapters were reported on the Micro-Manager mailing list:
 | StarTech     | PEX4S552                                                         | does not work (does not appear in Hardware Configuration Wizard)                                                                                                          |
 | SYBA         | PCI 32-Bit Quad (9 pin) 4 Port Serial Card, Model SY-PCI9845-PR4 | only first 2 ports work                                                                                                                                                   |
 
-{% include Devices_Sidebar text="" %}

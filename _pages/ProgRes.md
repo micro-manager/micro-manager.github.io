@@ -93,4 +93,3 @@ Changes in 1.3.47:
 <http://www.jenoptik.com/progres>  
 {% include Listserv_Search text="Jenoptik" %}
 
-{% include Devices_Sidebar text="" %}

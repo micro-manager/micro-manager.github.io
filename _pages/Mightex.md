@@ -31,4 +31,3 @@ setting parameters) on the main GUI of Micro-Manager.
 
 {% include Listserv_Search text="Mightex" %}
 
-{% include Devices_Sidebar text="" %}

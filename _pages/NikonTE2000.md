@@ -98,4 +98,3 @@ define the hub device (and the serial port behind which the hub lives).
 
 {% include Listserv_Search text="Nikon" %}
 
-{% include Devices_Sidebar text="" %}

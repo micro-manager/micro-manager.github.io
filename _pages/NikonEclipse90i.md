@@ -100,4 +100,3 @@ communication if you try to change the lamp intensity when it's off.
 
 {% include Listserv_Search text="Nikon" %}
 
-{% include Devices_Sidebar text="" %}

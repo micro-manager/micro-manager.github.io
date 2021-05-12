@@ -141,4 +141,3 @@ both legacy and standard cameras connected with the same computer.
 
 {% include Listserv_Search text="TSI" %}
 
-{% include Devices_Sidebar text="" %}

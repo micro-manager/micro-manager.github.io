@@ -138,7 +138,6 @@ When set, mirrors image vertically. Allowable values are 0 and 1.
 TransposeXY  
 When set, rotates image. Allowable values are 0 and 1.
 
-{% include Devices_Sidebar text="" %}
 
 ## Notes
 
@@ -229,4 +228,3 @@ for more details.
 
 {% include Listserv_Search text="GPhoto" %}
 
-{% include Devices_Sidebar text="" %}

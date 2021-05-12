@@ -107,4 +107,3 @@ The “joystick” switch is set to “manual” for this purpose.
 
 Tested with LSTEP 12/2 model.
 
-{% include Devices_Sidebar text="" %}

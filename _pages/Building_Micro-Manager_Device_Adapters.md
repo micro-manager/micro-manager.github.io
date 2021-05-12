@@ -854,4 +854,3 @@ following InitializeModuleData() method implementation:
 The first parameter in "AddAvailableDeviceName", is the adapter name and
 the second one is a short description.
 
-{% include Devices_Sidebar text="" %}
