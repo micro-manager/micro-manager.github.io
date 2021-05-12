@@ -549,11 +549,6 @@ core.setProperty("Emission", "State", "1");
 core.setProperty("Excitation", "State", "2");
 core.setProperty ("Dichroic", "State", "0");
 ```
-<div>
-
-
-
-</div>
 
 To simplify programming Micro-Manager provides configuration feature in
 which you can define groups of commands and execute them as a single
@@ -569,11 +564,6 @@ core.defineConfigGroup("Channel","DAPI", "Dichroic", "State", "0");
 // use configuration command many times
 core.setConfig("DAPI);
 ```
-<div>
-
-
-
-</div>
 
 Each time you execute setConfiguration("DAPI"), the three filters will
 be set to the defined positions. There is no limit in the number of
@@ -613,11 +603,6 @@ To discover which configuration the system is currently in:
 ```
 String config = core.getConfiguration();
 ```
-<div>
-
-
-
-</div>
 
 This command can return an empty string if the system current state does
 not match any of the defined configurations. getConfiguration command
