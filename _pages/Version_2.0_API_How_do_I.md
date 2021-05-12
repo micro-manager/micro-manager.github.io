@@ -239,4 +239,3 @@ or
 mm.getCMMCore()
 ```
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

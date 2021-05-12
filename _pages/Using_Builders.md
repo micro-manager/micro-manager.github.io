@@ -209,4 +209,3 @@ immutability guarantee actually allows us to use *less* memory than we
 would have to if objects were mutable, because it allows two objects
 that are very similar to share their resources.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

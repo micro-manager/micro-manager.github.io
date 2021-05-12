@@ -874,4 +874,3 @@ object, which can be accessed via the
 [()
 events](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events) method.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

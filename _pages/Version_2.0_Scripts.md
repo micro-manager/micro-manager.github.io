@@ -68,4 +68,3 @@ iProcessor = mm.data().ij().createProcessor(processedImg);
 ip = (new ImagePlus("tmp", iProcessor)).duplicate();   
 ```
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

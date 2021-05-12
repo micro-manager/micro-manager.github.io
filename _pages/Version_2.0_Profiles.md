@@ -48,4 +48,3 @@ changed to a 20-timepoint series, then in future sessions, their new
 preference would be remembered, even if the global profile were to be
 updated.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

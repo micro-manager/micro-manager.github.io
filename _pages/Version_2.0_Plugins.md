@@ -250,4 +250,3 @@ following the MMStudio convention of placing implementation classes in
 packages that contain "internal" as an item in their fully qualified
 name.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

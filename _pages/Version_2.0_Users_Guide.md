@@ -1681,4 +1681,3 @@ Image Saver allows you to save data from any point in the pipeline. This
 can be helpful if you wish to preserve the raw data of your acquisition
 prior to performing any modifications to it.
 
-&lt;INCLUDE 2.0\_Sidebar text="😎"&gt;
