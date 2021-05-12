@@ -92,4 +92,3 @@ displaying its device search window.
 
 {% include Listserv_Search text="Apogee" %}
 
-{% include Devices_Sidebar text="" %}

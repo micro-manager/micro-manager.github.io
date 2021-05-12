@@ -90,4 +90,3 @@ GmbH devices, please visit the
 --[StefanB](User:StefanB "wikilink")
 ([talk](User_talk:StefanB "wikilink")) 02:23, 15 December 2016 (PST)
 
-{% include Devices_Sidebar text="" %}

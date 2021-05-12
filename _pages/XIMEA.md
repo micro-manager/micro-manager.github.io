@@ -229,4 +229,3 @@ visit [online support](http://www.ximea.com/support/).
 
 {% include Listserv_Search text="XIMEA" %}
 
-{% include Devices_Sidebar text="" %}

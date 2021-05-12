@@ -107,4 +107,3 @@ Inside MicroManager, for each connected laser, the following
 
 In addition any laser can be selected for being shuttered software-wise
 while acquiring an image.  
-{% include Devices_Sidebar text="" %}

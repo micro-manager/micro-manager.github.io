@@ -104,4 +104,3 @@ The „Hardware Configuration Wizard...“ will show all available ABS
 devices.  
 {% include Listserv_Search text="ABS" %}
 
-{% include Devices_Sidebar text="" %}

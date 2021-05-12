@@ -156,4 +156,3 @@ property that sets the "closed" position.
 
 {% include Listserv_Search text="Utilities" %}
 
-{% include Devices_Sidebar text="" %}

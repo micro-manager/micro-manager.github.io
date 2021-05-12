@@ -149,4 +149,3 @@ performing simple camera capabilities discovery.
     2014
 
 {% include Listserv_Search text="Leica" %}
-{% include Devices_Sidebar text="" %}

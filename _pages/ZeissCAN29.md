@@ -147,4 +147,3 @@ stage is supported).
 
 {% include Listserv_Search text="Zeiss" %}
 
-{% include Devices_Sidebar text="" %}

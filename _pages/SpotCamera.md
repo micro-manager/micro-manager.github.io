@@ -96,4 +96,3 @@ Changes in 1.3.41:
 2.3.0 cameras on Windows XP SP3  
 {% include Listserv_Search text="SPOT" %}
 
-{% include Devices_Sidebar text="" %}

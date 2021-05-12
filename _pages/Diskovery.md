@@ -120,4 +120,3 @@ computer.
 
 {% include MessageBox text="Warning|Before starting the Configuration Wizard, disable TIRF on the Diskovery unit. This avoids an error caused by Micro-Manager being unable to read an appropriate label for the enabled state of the TIRF." %}
 
-{% include Devices_Sidebar text="" %}

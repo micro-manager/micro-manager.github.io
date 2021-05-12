@@ -88,4 +88,3 @@ Should work on all platforms (serial interface)
 See also: [MarzhauserLStep](MarzhauserLStep "wikilink") for newer L-Step
 controllers.
 
-{% include Devices_Sidebar text="" %}

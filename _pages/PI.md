@@ -122,4 +122,3 @@ binary protocol over the serial line.
 --[Karl Bellve, Biomedical Imaging Group, University of
 Massachusetts](User:Kdb "wikilink") 16:49, 1 July 2009 (UTC)
 
-{% include Devices_Sidebar text="" %}

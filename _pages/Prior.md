@@ -149,4 +149,3 @@ stationary until the stage reaches the full acceleration set by
 --[GrahamBartlettPrior](User:GrahamBartlettPrior "wikilink") 13:14, 17
 Oct 2019 (GMT)
 
-{% include Devices_Sidebar text="" %}

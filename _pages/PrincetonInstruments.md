@@ -108,4 +108,3 @@ camera (by switching it off and back on again) and try again.
 
 {% include Listserv_Search text="Princeton" %}
 
-{% include Devices_Sidebar text="" %}

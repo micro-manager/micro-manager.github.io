@@ -220,4 +220,3 @@ as a useful interface to control the niji manually:
 The micro-manager niji adapter listens to changes effected via the
 secondary port and updates its properties accordingly.
 
-{% include Devices_Sidebar text="" %}

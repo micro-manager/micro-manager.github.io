@@ -107,4 +107,3 @@ Hardware Configuration Wizard, try installing the DC2200 software.
 
 {% include Note text="The above mentioned serial port settings are the default, but they are recommended to communicate with the device." %}
 
-{% include Devices_Sidebar text="" %}

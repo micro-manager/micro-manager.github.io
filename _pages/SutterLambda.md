@@ -85,4 +85,3 @@ Newer devices from Sutter are supported in the
 add support for a Sutter device that is currently unsupported please add
 your code to the newer adapter.
 
-{% include Devices_Sidebar text="" %}

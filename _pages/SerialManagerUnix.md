@@ -89,4 +89,3 @@ input adequately.
 
 --[Nico](User:Nico "wikilink") 16:21, 3 September 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

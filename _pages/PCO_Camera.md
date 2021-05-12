@@ -154,6 +154,4 @@ camera types.
 
 {% include Listserv_Search text="PCO" %}
 
-{% include Devices_Sidebar text="" %}
 
-{% include Devices_Sidebar text="" %}

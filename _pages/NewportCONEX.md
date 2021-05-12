@@ -95,4 +95,3 @@ supported on Windows)
 
 </table>
 
-{% include Devices_Sidebar text="" %}

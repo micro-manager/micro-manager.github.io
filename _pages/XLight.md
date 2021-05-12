@@ -90,4 +90,3 @@ Cross-platform (serial port)
 
 (To be written.)
 
-{% include Devices_Sidebar text="" %}

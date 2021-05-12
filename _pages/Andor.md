@@ -685,4 +685,3 @@ overlayed in your preview window.
 ![Screenshot: Snapped image using Mutli Camera
 device.](media/Mm-snapped-image-multicam.png "Screenshot: Snapped image using Mutli Camera device.")
 
-{% include Devices_Sidebar text="" %}

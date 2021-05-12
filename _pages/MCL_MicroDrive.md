@@ -182,4 +182,3 @@ allows for calibration when positioning type is selected as relative.
 </tr>
 </table>
 
-{% include Devices_Sidebar text="" %}

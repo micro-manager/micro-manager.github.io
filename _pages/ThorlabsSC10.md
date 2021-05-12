@@ -100,4 +100,3 @@ be changed through software commands.
 
 {% include Note text="The Thorlabs TSC001 shutter driver is different from the SC10 and is not supported." %}
 
-{% include Devices_Sidebar text="" %}

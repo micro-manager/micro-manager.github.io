@@ -66,4 +66,3 @@ from Picard. Run the installer, and also copy the file
 or **`4D-Stage DLL and Docs\x64\PiUsb.dll`** (for 64-bit Micro-Manager)
 into your Micro-Manager folder.
 
-{% include Devices_Sidebar text="" %}

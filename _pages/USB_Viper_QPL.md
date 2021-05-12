@@ -84,4 +84,3 @@ To enable the driver:
     select "Change Board\#..."
 7.  Start Micro Manager and the USB\_Viper\_QPL will be selectable.
 
-{% include Devices_Sidebar text="" %}

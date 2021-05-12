@@ -213,4 +213,3 @@ When set, rotates image. Allowable values are 0 and 1.
 
 {% include Listserv_Search text="TetheredCam" %}
 
-{% include Devices_Sidebar text="" %}

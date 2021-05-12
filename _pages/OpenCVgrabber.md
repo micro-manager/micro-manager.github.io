@@ -85,4 +85,3 @@ should check out MM1.4 from the source code repository at Vale Lab.
 
 {% include Listserv_Search text="OpenCVGrabber" %}
 
-{% include Devices_Sidebar text="" %}

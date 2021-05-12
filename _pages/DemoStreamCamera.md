@@ -86,4 +86,3 @@ demonstrates how an adapter can process images before they reach the UI.
 
 --[Nico](User:Nico "wikilink") 11:34, 25 August 2007 (PDT)
 
-{% include Devices_Sidebar text="" %}

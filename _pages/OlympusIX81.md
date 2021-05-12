@@ -95,4 +95,3 @@ their default position: off (zero).
 BX61 specific notes: Currently only one filter wheel is supported
 (connected to FW1 port on the controller).
 
-{% include Devices_Sidebar text="" %}

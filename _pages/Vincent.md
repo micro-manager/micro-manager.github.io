@@ -103,4 +103,3 @@ modem"](http://en.wikipedia.org/wiki/Null_modem) type.
 
 --[oreopoj](User:oreopoj "wikilink") 14:06, 8 September 2010 (EST)
 
-{% include Devices_Sidebar text="" %}

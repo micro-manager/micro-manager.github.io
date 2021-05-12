@@ -62,4 +62,3 @@ layout: page
 
 {% include Listserv_Search text="CSUW1" %}
 
-{% include Devices_Sidebar text="" %}

@@ -123,4 +123,3 @@ figure it out, open the file "Corelog.txt" in your Micro-Manager
 directory. It contains some output from the Ludl controller that you can
 use to deduce the drive letter.
 
-{% include Devices_Sidebar text="" %}

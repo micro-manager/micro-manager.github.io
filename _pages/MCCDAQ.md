@@ -64,4 +64,3 @@ Micro-Manager folder.
 
 {% include Listserv_Search text="PCI-DDA" %}
 
-{% include Devices_Sidebar text="" %}

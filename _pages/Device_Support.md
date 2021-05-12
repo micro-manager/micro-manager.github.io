@@ -435,4 +435,3 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     can be controlled with Micro-Manager (not yet included in the
     distribution, contact Gouch & Housego for details)
 
-{% include Devices_Sidebar text="" %}

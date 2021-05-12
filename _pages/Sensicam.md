@@ -86,7 +86,6 @@ driver](http://www.pco.de/drivers/sensicam-qe/) to be installed.
 
 {% include Listserv_Search text="Sensicam" %}
 
-{% include Devices_Sidebar text="" %}
 
 This adapter is obsolete. Please use PCO\_Camera for all PCO camera
 systems (legacy and current). -- Thomas Bauersachs, PCO AG 9:50pm, 27

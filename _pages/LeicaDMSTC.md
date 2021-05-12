@@ -106,4 +106,3 @@ IMPORTANT!: During Micro-Manager startup the stage moves to the top left
 corner to define the origin. MAKE SURE THE RANGE OF STAGE TRAVEL IS
 CLEAR BEFORE INITIALIZATION!
 
-{% include Devices_Sidebar text="" %}

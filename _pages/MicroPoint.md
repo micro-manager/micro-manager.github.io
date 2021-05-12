@@ -71,4 +71,3 @@ software team
 
 {% include Listserv_Search text="MicroPoint" %}
 
-{% include Devices_Sidebar text="" %}

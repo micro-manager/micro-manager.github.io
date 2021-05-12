@@ -121,4 +121,3 @@ the microscope itself for devices present).
 
 {% include Listserv_Search text="DMR" %}
 
-{% include Devices_Sidebar text="" %}

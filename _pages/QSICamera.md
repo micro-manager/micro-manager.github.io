@@ -87,4 +87,3 @@ installer for the device adapter.
 
 {% include Listserv_Search text="QSI" %}
 
-{% include Devices_Sidebar text="" %}

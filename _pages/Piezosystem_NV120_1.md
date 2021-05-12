@@ -99,4 +99,3 @@ NV120/1, NV120/1CLE
 </td>
 </table>
 
-{% include Devices_Sidebar text="" %}

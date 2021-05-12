@@ -85,7 +85,6 @@ Requires the [OASIS
 Software](http://www.objectiveimaging.com/download/software.php) package
 from Objective Imaging.
 
-{% include Devices_Sidebar text="" %}
 
 ## Objective Imaging OASIS-4i / OASIS-Blue controller board
 

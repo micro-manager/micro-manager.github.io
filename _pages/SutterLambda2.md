@@ -64,4 +64,3 @@ can additionally be tilted to provide a specific bandpass wavelength. In
 addition to selecting a wheel speed (described above) you can also
 select a tilt speed between 0 and 3.
 
-{% include Devices_Sidebar text="" %}

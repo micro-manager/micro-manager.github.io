@@ -13,4 +13,3 @@ layout: page
 (description to be written)
 
 {% include Listserv_Search text="biostep" %}
-{% include Devices_Sidebar text="" %}

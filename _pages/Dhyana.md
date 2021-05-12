@@ -92,4 +92,3 @@ or
 TUCam dll to your micro-manager directory.
 
 {% include Listserv_Search text="Dhyana" %}
-{% include Devices_Sidebar text="" %}

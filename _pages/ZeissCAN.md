@@ -152,4 +152,3 @@ microscope requires. Specifically, pins 2 and 3 must be crossed and pins
 
 {% include Listserv_Search text="Zeiss" %}
 
-{% include Devices_Sidebar text="" %}

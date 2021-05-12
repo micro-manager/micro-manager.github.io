@@ -21,4 +21,3 @@ it. The terminating characters are either CR or LF.
 
 {% include Listserv_Search text="Sapphire" %}
 
-{% include Devices_Sidebar text="" %}

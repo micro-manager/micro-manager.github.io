@@ -112,4 +112,3 @@ in Windows 7, with HCU-3D and CU-3D controllers produced before 2015
 (compatibles with M sensors). It should be compatible with (H)CU-3D,
 -3C, -3CL, -3CX and (H)CU-1D, -1DM, -1C, -1CL and -1CX.
 
-{% include Devices_Sidebar text="" %}

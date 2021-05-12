@@ -127,4 +127,3 @@ please check out
 
 The CSU-X1 requires a null modem cable.
 
-{% include Devices_Sidebar text="" %}

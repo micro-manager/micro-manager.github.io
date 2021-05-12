@@ -8,4 +8,3 @@ Nobody provided any useful insights yet.
 
 {% include Listserv_Search text="Video4Linux" %}
 
-{% include Devices_Sidebar text="" %}

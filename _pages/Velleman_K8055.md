@@ -145,4 +145,3 @@ your Device Manager should look as follows:
 
 --[Nico](User:Nico "wikilink") 18:21, 15 December 2007 (PST)
 
-{% include Devices_Sidebar text="" %}

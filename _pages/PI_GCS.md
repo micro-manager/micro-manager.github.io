@@ -161,4 +161,3 @@ Successfully configured with a C-867 controller and a PILine Piezomotor.
 
 --[Julou](User:Julou "wikilink") 16:33, 30 November 2010 (UTC)
 
-{% include Devices_Sidebar text="" %}

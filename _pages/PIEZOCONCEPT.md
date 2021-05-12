@@ -10,4 +10,3 @@ Available since 2018-03-27 nightly builds.
 
 {% include Listserv_Search text="PIEZOCONCEPT" %}
 
-{% include Devices_Sidebar text="" %}

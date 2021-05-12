@@ -85,4 +85,3 @@ e.g. set to 1392x1040 for CCN/CCE and CXE cameras, and 1280x960 for
 CGN/CGE cameras.
 
 {% include Listserv_Search text="Mightex" %}
-{% include Devices_Sidebar text="" %}

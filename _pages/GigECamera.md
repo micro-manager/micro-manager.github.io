@@ -83,4 +83,3 @@ the camera again.
 
 {% include Listserv_Search text="GigE" %}
 
-{% include Devices_Sidebar text="" %}

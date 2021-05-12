@@ -401,4 +401,3 @@ read, or no match is found, an error is reported. If any of the
 corresponding *\*-response* properties are empty, the query is not
 performed in the first place.
 
-{% include Devices_Sidebar text="" %}

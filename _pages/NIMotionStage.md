@@ -8,4 +8,3 @@ Nobody contributed information about this device.
 
 {% include Listserv_Search text="NIMotionStage" %}
 
-{% include Devices_Sidebar text="" %}

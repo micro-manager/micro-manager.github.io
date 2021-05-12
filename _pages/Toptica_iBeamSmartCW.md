@@ -115,4 +115,3 @@ normal control mode.
 This device adapter has been tested with Micro-manager 1.4.22 and
 2.0.0-beta on Windows 7.
 
-{% include Devices_Sidebar text="" %}

@@ -271,4 +271,3 @@ Step size of XY stage is fixed to 0.1 um or 0.01um depending on the type
 of the stage. Z stage can change stepsize at "Preset". Detail
 information is included in the document with downloading zip archive.
 
-{% include Devices_Sidebar text="" %}

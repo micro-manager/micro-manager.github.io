@@ -35,4 +35,3 @@ thread](http://micro-manager.3463995.n2.nabble.com/MightEx-Polygon-device-can-t-
 
 {% include Listserv_Search text="Polygon" %}
 
-{% include Devices_Sidebar text="" %}

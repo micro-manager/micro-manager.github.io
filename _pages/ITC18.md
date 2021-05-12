@@ -157,4 +157,3 @@ or
 --[Karl Bellve, Biomedical Imaging Group, University of
 Massachusetts](User:Kdb "wikilink") 17:15, 10 November 2009 (UTC)
 
-{% include Devices_Sidebar text="" %}

@@ -129,4 +129,3 @@ As with any stage, you may need to set the Core-TimeoutMs property to
 something larger than the default 5 seconds to avoid timing out when
 moving large distances.
 
-{% include Devices_Sidebar text="" %}

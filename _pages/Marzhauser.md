@@ -111,4 +111,3 @@ Märzhäuser components.
 
 --[Dettmar](User:Dettmar "wikilink") 24:24, 19 February 2010 (PDT)
 
-{% include Devices_Sidebar text="" %}

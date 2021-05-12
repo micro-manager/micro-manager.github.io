@@ -296,4 +296,3 @@ right-click again and select Enable.
 
 {% include Listserv_Search text="IIDC" %}
 
-{% include Devices_Sidebar text="" %}

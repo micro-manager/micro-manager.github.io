@@ -88,4 +88,3 @@ please visit our website <https://www.first-light-imaging.com/>.
 To use FLI cameras with Micro Manager, please contact our support at
 <b>support@first-light.fr</b>, and ask for our SDK.
 
-{% include Devices_Sidebar text="" %}

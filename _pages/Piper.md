@@ -77,4 +77,3 @@ Stanford Photonics Cameras
 
 {% include Listserv_Search text="Stanford Photonics" %}
 
-{% include Devices_Sidebar text="" %}

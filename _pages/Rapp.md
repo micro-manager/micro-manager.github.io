@@ -55,4 +55,3 @@ builds up to mid-November, 2013.)
 
 {% include Listserv_Search text="Rapp" %}
 
-{% include Devices_Sidebar text="" %}

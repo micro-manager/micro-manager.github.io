@@ -86,4 +86,3 @@ Micro-Manager application directory. Micro-Manager needs
 
 {% include Listserv_Search text="OlympusIX83" %}
 
-{% include Devices_Sidebar text="" %}

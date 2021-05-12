@@ -136,7 +136,6 @@ value to 1.
 groups.\|Set the Preset value to 1 to initialise the stages
 individually.](media/Mm_aptstages.png "|thumb|center|upright=2.5|alt=Micromanager APT initialisation groups.|Set the Preset value to 1 to initialise the stages individually.")
 
-{% include Devices_Sidebar text="" %}
 
 ## Compilation notes, 64-bit device adaptor
 

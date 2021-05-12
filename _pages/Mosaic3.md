@@ -349,4 +349,3 @@ change `Image > Type` to `8-bit` instead of the default `32-bit`
 
 {% include Listserv_Search text="Mosaic" %}
 
-{% include Devices_Sidebar text="" %}

@@ -71,4 +71,3 @@ Any
 
 {% include Listserv_Search text="OVP" %}
 
-{% include Devices_Sidebar text="" %}

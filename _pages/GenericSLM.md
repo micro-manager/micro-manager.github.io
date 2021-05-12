@@ -128,4 +128,3 @@ device adapter) include (no endorsements are implied):
     LightCommander](http://www.ti.com/DLPLightCommander) from TI.
 -   Almost any digital video projector (a.k.a. a computer projector)
 
-{% include Devices_Sidebar text="" %}

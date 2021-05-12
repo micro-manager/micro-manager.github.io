@@ -116,4 +116,3 @@ which the scope is attached.
 
 {% include Listserv_Search text="Zeiss" %}
 
-{% include Devices_Sidebar text="" %}

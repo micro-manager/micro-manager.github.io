@@ -131,4 +131,3 @@ on the current zoom settings.
 
 {% include Listserv_Search text="Nikon" %}
 
-{% include Devices_Sidebar text="" %}

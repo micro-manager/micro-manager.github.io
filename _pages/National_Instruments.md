@@ -184,4 +184,3 @@ regardless of how many times this is done). We expect that the default
 value of 1000 will be more than sufficient for all users, but it is
 configurable just in case.
 
-{% include Devices_Sidebar text="" %}

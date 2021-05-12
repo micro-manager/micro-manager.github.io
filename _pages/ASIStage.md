@@ -345,4 +345,3 @@ objective, it has focal length of 3.0mm and if the TIRF lens has 180mm
 focal length and the collimator lens has focal length 100mm, the
 effective combined focal length will be 3/180\*100 = 1.67mm.
 
-{% include Devices_Sidebar text="" %}

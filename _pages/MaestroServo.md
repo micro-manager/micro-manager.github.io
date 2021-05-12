@@ -105,4 +105,3 @@ Maestro controller. The code also compiles on the Mac, but there does
 not seem to be a driver that makes the controller appear as a serial
 port on Mac OS X.
 
-{% include Devices_Sidebar text="" %}
