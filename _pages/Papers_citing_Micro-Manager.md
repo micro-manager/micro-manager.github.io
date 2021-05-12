@@ -3268,8 +3268,8 @@ Chip**[DOI: 10.1039/C2LC40649G](http://dx.doi.org/10.1039/C2LC40649G)
 P. Gayathri, T. Fujii, J. Møller-Jensen, F. van den Ent, K. Namba, J.
 Löwe (2012). A Bipolar Spindle Of Antiparallel ParM Filaments Drives
 Bacterial Plasmid Segregation. **Science** (Supplementary materials).
-\[<http://dx.doi.org/10.1126/science.1229091DOI>:
-10.1126/science.1229091\]
+[:
+10.1126/science.1229091](http://dx.doi.org/10.1126/science.1229091DOI)
 
 Xiao-Feng Zhang, Callen Hyland, David Van Goor, and Paul Forscher
 (2012). Calcineurin dependent cofilin activation and increased

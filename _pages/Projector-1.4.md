@@ -164,8 +164,8 @@ other software packages, some differences are:
 3.  Move a ROI by dragging the ROI's center label number in the image.
 
 Also see the
-\[<http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager>...
-ROI Manager\] section on the ImageJ User Guide.
+[...
+ROI Manager](http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager) section on the ImageJ User Guide.
 
 ## FAQ
 
