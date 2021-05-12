@@ -19,55 +19,62 @@ and for 1.4 also libtiff and zlib) need to be build for each platform
 independently. Below are some notes on how this can be accomplished:
 
 **Cross-compiling Boost for three platforms:**  
-`sudo ./bjam --install --build-dir=ppc --toolset=darwin --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/ppc architecture=power address-model=32 macosx-version-min=10.4 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/ppc/lib --includedir=/usr/local/ppc/include --stagedir=/usr/local/ppc`  
-`sudo ./bjam --install --build-dir=i386 --toolset=darwin --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/i386 architecture=x86 address-model=32 macosx-version-min=10.4 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/i386/lib --includedir=/usr/local/i386/include --stagedir=/usr/local/i386`  
-`sudo ./bjam --install --build-dir=x86_64 --toolset=darwin-4.2 --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/x86_64 architecture=x86 address-model=64 macosx-version-min=10.5 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/x86_64/lib --includedir=/usr/local/x86_64/include --stagedir=/usr/local/x86_64`  
-  
+```
+sudo ./bjam --install --build-dir=ppc --toolset=darwin --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/ppc architecture=power address-model=32 macosx-version-min=10.4 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/ppc/lib --includedir=/usr/local/ppc/include --stagedir=/usr/local/ppc
+sudo ./bjam --install --build-dir=i386 --toolset=darwin --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/i386 architecture=x86 address-model=32 macosx-version-min=10.4 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/i386/lib --includedir=/usr/local/i386/include --stagedir=/usr/local/i386
+sudo ./bjam --install --build-dir=x86_64 --toolset=darwin-4.2 --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/x86_64 architecture=x86 address-model=64 macosx-version-min=10.5 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/x86_64/lib --includedir=/usr/local/x86_64/include --stagedir=/usr/local/x86_64
+```
+
 **Cross-compiling libtiff for three platforms:**  
-`./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0"`  
-`make clean`  
-`make`  
-`sudo make install`  
-`./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0"`  
-`make clean`  
-`make`  
-`sudo make install`  
-`./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2"`  
-`make clean`  
-`make`  
-`sudo make install`  
-  
+```
+./configure --prefix=/usr/local/i386 CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386" CXX="g++-4.0"
+make clean
+make
+sudo make install
+./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc" CXX="g++-4.0"
+make clean
+make
+sudo make install
+./configure --prefix=/usr/local/x86_64 CC="gcc-4.2" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64" CXX="g++-4.2"
+make clean
+make
+sudo make install
+```
+
 **Cross-compiling zlib for three platforms:**  
-`export CC="gcc-4.0"`  
-`export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"`  
-`export CXX="g++-4.0"`  
-`export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"`  
-`./configure --prefix=/usr/local/i386`  
-`make clean`  
-`make`  
-`sudo make install`  
-`export CC="gcc-4.0"`  
-`export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"`  
-`export CXX="g++-4.0"`  
-`export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"`  
-`./configure --prefix=/usr/local/ppc`  
-`make clean`  
-`make`  
-`sudo make install`  
-`export CC="gcc-4.2"`  
-`export CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"`  
-`export CXX="g++-4.2"`  
-`export CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"`  
-`./configure --prefix=/usr/local/x86_64`  
-`make clean`  
-`make`  
-`sudo make install`  
-  
+```
+export CC="gcc-4.0"
+export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"
+export CXX="g++-4.0"
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch i386"
+./configure --prefix=/usr/local/i386
+make clean
+make
+sudo make install
+export CC="gcc-4.0"
+export CFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"
+export CXX="g++-4.0"
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc"
+./configure --prefix=/usr/local/ppc
+make clean
+make
+sudo make install
+export CC="gcc-4.2"
+export CFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"
+export CXX="g++-4.2"
+export CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64"
+./configure --prefix=/usr/local/x86_64
+make clean
+make
+sudo make install
+```
+
 **Cross compiling gphoto2 for three platforms:**  
 This worked with libgphoto 2.4.11. Older versions had problems in some
 of the camera drivers and would need these to be excluded from the
 build.  
-<code> make clean  
+```
+make clean  
 ./configure --prefix=/usr/local/ppc CC="gcc-4.0" CFLAGS="-g -O2
 -mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.4u.sdk
 -arch ppc" CXXFLAGS="-g -O2 -mmacosx-version-min=10.4 -isysroot
@@ -106,17 +113,22 @@ LIBLTDL=/usr/local/i386/lib/libltdl.a
 PKG\_CONFIG\_LIBDIR="/usr/local/i386/lib/pkgconfig/"  
 make  
 sudo make install  
+```
+
 **Cross-compiling libbzip2 (useful for OpenCV) for three platforms:**
 Download the source from [bzip.org](http://www.bzip.org/)  
 Edit the Make file:  
+```
 CC=gcc-4.0  
 CFLAGS=-g -O2 -mmacosx-version-min=10.4 -isysroot
 /Developer/SDKs/MacOSX10.4u.sdk -arch i386 -Wall -Winline $(BIGFILES)  
 make  
 sudo make install PREFIX=/usr/local/i386  
 make clean  
-  
-Edit the Make file for x86\_64:  
+```
+
+Edit the Make file for x86_64:  
+```
 CC=gcc-4.2  
 CFLAGS=-g -O2 -mmacosx-version-min=10.5 -isysroot
 /Developer/SDKs/MacOSX10.5.sdk -arch x86\_64 -Wall -Winline
@@ -124,11 +136,12 @@ $(BIGFILES)
 make  
 sudo make install PREFIX=/usr/local/x86\_64  
 make clean  
-  
+```
 
 **Building OpenCV:** General instructions can be found on the
 [openCV](http://opencv.willowgarage.com/wiki/InstallGuide) site.  
 In a freshly downloaded OpenCV source, run:  
+```
 mkdir buildi386  
 cd buildi386  
 CC=gcc-4.0 CXX=g++-4.0 cmake -DCMAKE\_BUILD\_TYPE=RELEASE
@@ -150,3 +163,4 @@ cmake -DCMAKE\_BUILD\_TYPE=RELEASE
 ..  
 make  
 sudo make install  
+```

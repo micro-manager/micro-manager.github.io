@@ -145,14 +145,15 @@ Tools \| XY List...).
 Copy the following script, paste it into the Script Editor (menu: Tools
 \| Script Panel...) and press "Run" button.
 
-``  
-`// home XY Stage`  
-`gui.message("Homing started...");`  
-`xyStage = mmc.getXYStageDevice();`  
-`mmc.home(xyStage);`  
-`x = mmc.getXPosition(xyStage);`  
-`y = mmc.getYPosition(xyStage);`  
-`gui.message("Done! Home position [um]: " + x + ", " + y);`
+```
+// home XY Stage
+gui.message("Homing started...");
+xyStage = mmc.getXYStageDevice();
+mmc.home(xyStage);
+x = mmc.getXPosition(xyStage);
+y = mmc.getYPosition(xyStage);
+gui.message("Done! Home position [um]: " + x + ", " + y);
+```
 
 This script can be saved and stored in the Script-Shortcut list for
 future use.
@@ -165,26 +166,27 @@ must reside in the root directory of the micro-manager software and its
 name is specified in the Options dialog (menu: Tools \| Options...). Add
 the following code to the existing startup script (or create a new one):
 
-``  
-`// startup script to home Thorlabs BBD102 XY stage`  
-`//`  
-`import ij.gui.GenericDialog;`  
-``  
-`GenericDialog dlg = new GenericDialog("HOME command - XY Stage", null);`  
-`msg = "WARNING!!! The XY stage is about to move."`  
-`      + "Make sure objectives are out of the way."`  
-`      + "If you are in doubt about what to do Cancel this command!";`  
-`dlg.addMessage(msg);`  
-`dlg.showDialog();`  
-`if (dlg.wasCanceled())`  
-`    return false;`  
-``  
-`gui.message("Homing started...");`  
-`xyStage = mmc.getXYStageDevice();`  
-`mmc.home(xyStage);`  
-`x = mmc.getXPosition(xyStage);`  
-`y = mmc.getYPosition(xyStage);`  
-`gui.message("Done! Home position [um]: " + x + ", " + y);`
+```
+// startup script to home Thorlabs BBD102 XY stage
+//
+import ij.gui.GenericDialog;
+ 
+GenericDialog dlg = new GenericDialog("HOME command - XY Stage", null);
+msg = "WARNING!!! The XY stage is about to move."
+      + "Make sure objectives are out of the way."
+      + "If you are in doubt about what to do Cancel this command!";
+dlg.addMessage(msg);
+dlg.showDialog();
+if (dlg.wasCanceled())
+    return false;
+ 
+gui.message("Homing started...");
+xyStage = mmc.getXYStageDevice();
+mmc.home(xyStage);
+x = mmc.getXPosition(xyStage);
+y = mmc.getYPosition(xyStage);
+gui.message("Done! Home position [um]: " + x + ", " + y);
+```
 
 Each time you start micro-manager the script will be automatically
 executed and you will be prompted to home the stage and warned to move
@@ -228,66 +230,68 @@ other device.
 After the configuration loaded without errors we can use the following
 script to test the stage:
 
-``  
-`// Exercise XY stage`  
-`import java.text.DecimalFormat;`  
-``  
-`// obtain xy stage name`  
-`xyStage = mmc.getXYStageDevice();`  
-``  
-`gui.clearOutput();`  
-``  
-`// report starting position`  
-`x = mmc.getXPosition(xyStage);`  
-`y = mmc.getYPosition(xyStage);`  
-`gui.message("Starting position [um]: " + x + ", " + y);`  
-``  
-`// define test points in um`  
-`ArrayList xPos = new ArrayList();`  
-`ArrayList yPos = new ArrayList();`  
-``  
-`xPos.add(0.0);`  
-`yPos.add(0.0);`  
-``  
-`xPos.add(5000.0);`  
-`yPos.add(30000.0);`  
-``  
-`xPos.add(70000.);`  
-`yPos.add(18000.0);`  
-`DecimalFormat FMT2 = new DecimalFormat("#0.0");`  
-``  
-`for (int i=0; i<xPos.size(); i++) {`  
-`    start = System.currentTimeMillis();`  
-`    mmc.setXYPosition(xyStage, (double)xPos.get(i), (double)yPos.get(i));`  
-`        mmc.waitForDevice(xyStage);`  
-`    end = System.currentTimeMillis();`  
-`    gui.message("Reached point " + i `  
-`                    + " at (" + xPos.get(i) + "," + yPos.get(i) + ")"`  
-`                    + " in " + (end-start) + " ms");`  
-``  
-`    x = mmc.getXPosition(xyStage);`  
-`    y = mmc.getYPosition(xyStage);`  
-`    gui.message("Current position [um]: " + FMT2.format(x) + ", " + FMT2.format(y));`  
-`}`
+```
+// Exercise XY stage
+import java.text.DecimalFormat;
+
+// obtain xy stage name
+xyStage = mmc.getXYStageDevice();
+
+gui.clearOutput();
+
+// report starting position
+x = mmc.getXPosition(xyStage);
+y = mmc.getYPosition(xyStage);
+gui.message("Starting position [um]: " + x + ", " + y);
+
+// define test points in um
+ArrayList xPos = new ArrayList();
+ArrayList yPos = new ArrayList();
+
+xPos.add(0.0);
+yPos.add(0.0);
+
+xPos.add(5000.0);
+yPos.add(30000.0);
+
+xPos.add(70000.);
+yPos.add(18000.0);
+DecimalFormat FMT2 = new DecimalFormat("#0.0");
+
+for (int i=0; i<xPos.size(); i++) {
+    start = System.currentTimeMillis();
+    mmc.setXYPosition(xyStage, (double)xPos.get(i), (double)yPos.get(i));
+        mmc.waitForDevice(xyStage);
+    end = System.currentTimeMillis();
+    gui.message("Reached point " + i 
+                    + " at (" + xPos.get(i) + "," + yPos.get(i) + ")"
+                    + " in " + (end-start) + " ms");
+
+    x = mmc.getXPosition(xyStage);
+    y = mmc.getYPosition(xyStage);
+    gui.message("Current position [um]: " + FMT2.format(x) + ", " + FMT2.format(y));
+}
+```
 
 Running this script in the Script Panel (menu: Tools \| Script Panel...)
 should produce the following output:
 
-``  
-`Starting position [um]: 70000.0, 18000.0`  
-`bsh % `  
-`Reached point 0 at (0.0,0.0) in 1000 ms`  
-`bsh % `  
-`Current position [um]: -0.2, -0.0`  
-`bsh % `  
-`Reached point 1 at (5000.0,30000.0) in 594 ms`  
-`bsh % `  
-`Current position [um]: 5000.2, 30000.4`  
-`bsh % `  
-`Reached point 2 at (70000.0,18000.0) in 922 ms`  
-`bsh % `  
-`Current position [um]: 69999.8, 18000.0`  
-`bsh % `
+```
+Starting position [um]: 70000.0, 18000.0
+bsh % 
+Reached point 0 at (0.0,0.0) in 1000 ms
+bsh % 
+Current position [um]: -0.2, -0.0
+bsh % 
+Reached point 1 at (5000.0,30000.0) in 594 ms
+bsh % 
+Current position [um]: 5000.2, 30000.4
+bsh % 
+Reached point 2 at (70000.0,18000.0) in 922 ms
+bsh % 
+Current position [um]: 69999.8, 18000.0
+bsh % 
+```
 
 If this script does not generate any errors the stage is working
 properly. Timing on your system may be different, depending on the

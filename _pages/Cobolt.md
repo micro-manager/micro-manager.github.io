@@ -143,8 +143,10 @@ communication supported via **Serial Command**
 As Root, create a file named /etc/udev/rules.d/99-Cobolt.rules with the
 following context:
 
-`# allow users to claim the device`  
-`SUBSYSTEMS=="usb", ATTRS{product}=="Cobolt Laser Driver MLD",  ATTRS{idVendor}=="25dc", MODE="0660", GROUP="users", SYMLINK+="ACM%n"`
+```
+# allow users to claim the device
+SUBSYSTEMS=="usb", ATTRS{product}=="Cobolt Laser Driver MLD",  ATTRS{idVendor}=="25dc", MODE="0660", GROUP="users", SYMLINK+="ACM%n"
+```
 
 [Click here to search for Cobolt on the Micro-Manager mailing list
 archive.](http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query=Cobolt)

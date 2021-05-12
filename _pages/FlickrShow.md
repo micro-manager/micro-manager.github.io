@@ -16,6 +16,8 @@ layout: page
 
 &lt;INCLUDE \#widget:FlickrShow
 
-`text="query=flowers`
+```
+text="query=flowers
+```
 
 \|width=580 \|height=350 😎"&gt;

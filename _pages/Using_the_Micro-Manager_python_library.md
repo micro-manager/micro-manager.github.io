@@ -111,12 +111,14 @@ capabilities.😎"&gt;
 Start python interactive session. Import \`MMCorePy\` and make sure
 everything is working properly.
 
-`   >>> import MMCorePy`  
-`   >>> mmc = MMCorePy.CMMCore()  # Instance micromanager core`  
-`   >>> mmc.getVersionInfo()`  
-`   'MMCore version 2.3.2'`  
-`   >>> mmc.getAPIVersionInfo()`  
-`   'Device API version 59, Module API version 10'`
+```
+   >>> import MMCorePy
+   >>> mmc = MMCorePy.CMMCore()  # Instance micromanager core
+   >>> mmc.getVersionInfo()
+   'MMCore version 2.3.2'
+   >>> mmc.getAPIVersionInfo()
+   'Device API version 59, Module API version 10'
+```
 
 We just get some basic information about current Micromanager
 installation. If there an \`ImportError\`, check your PYTHONPATH
@@ -130,10 +132,12 @@ variable. If output is too verbose, run
 Let's take step closer to hardware. Micromanager have couple of dummy
 devices, suitable for learning purposes. Load DemoCamera:
 
-`   # Demo camera example, continuation of previous listing`  
-`   >>> mmc.loadDevice('Camera', 'DemoCamera', 'DCam')`  
-`   >>> mmc.initializeAllDevices()`  
-`   >>> mmc.setCameraDevice('Camera')`
+```
+   # Demo camera example, continuation of previous listing
+   >>> mmc.loadDevice('Camera', 'DemoCamera', 'DCam')
+   >>> mmc.initializeAllDevices()
+   >>> mmc.setCameraDevice('Camera')
+```
 
 ### Property discovery
 
@@ -154,39 +158,45 @@ class. The array <small>dtype</small> depends on property named
 
 #### Grayscale
 
-`   >>> mmc.snapImage()`  
-`   >>> img = mmc.getImage()  # img - it's just numpy array`  
-`   >>> img`  
-`   array([[12, 12, 13, ..., 11, 12, 12],`  
-`          [12, 12, 13, ..., 11, 12, 12],`  
-`          [12, 13, 13, ..., 12, 12, 12],`  
-`          ...,`  
-`          [22, 22, 22, ..., 22, 22, 22],`  
-`          [22, 22, 22, ..., 22, 22, 22],`  
-`          [22, 22, 22, ..., 22, 22, 22]], dtype=uint8)`
+```
+   >>> mmc.snapImage()
+   >>> img = mmc.getImage()  # img - it's just numpy array
+   >>> img
+   array([[12, 12, 13, ..., 11, 12, 12],
+          [12, 12, 13, ..., 11, 12, 12],
+          [12, 13, 13, ..., 12, 12, 12],
+          ...,
+          [22, 22, 22, ..., 22, 22, 22],
+          [22, 22, 22, ..., 22, 22, 22],
+          [22, 22, 22, ..., 22, 22, 22]], dtype=uint8)
+```
 
 DemoCamera snaps grayscale 8-bit image, by default. It presented as
 two-dimensional numpy array. Let's show image data with matplotlib.
 
-`   >>> import matplotlib.pyplot as plt`  
-`   >>> plt.imshow(img, cmap='gray')`  
-`   >>> plt.show()  # And window will appear`
+```
+   >>> import matplotlib.pyplot as plt
+   >>> plt.imshow(img, cmap='gray')
+   >>> plt.show()  # And window will appear
+```
 
 #### Color
 
 Of course, color image is more suitable for optical microscopy purposes.
 So take one, if your camera support it:
 
-`   >>> mmc.setProperty('Camera', 'PixelType', '32bitRGB')  # Change pixel type`  
-`   >>> rgb32 = mmc.getImage()`  
-`   >>> rgb32`  
-`   array([[1250067, 1250067, 1315860, ..., 1250067, 1250067, 1250067],`  
-`          [1250067, 1315603, 1315860, ..., 1250067, 1250067, 1250067],`  
-`          [1250067, 1315859, 1315860, ..., 1250067, 1250067, 1250067],`  
-`          ...,`  
-`          [1246483, 1246483, 1246483, ..., 1181204, 1246740, 1246484],`  
-`          [1246483, 1246483, 1246483, ..., 1246740, 1246740, 1246483],`  
-`          [1246483, 1246483, 1312019, ..., 1246740, 1246740, 1246483]], dtype=uint32)`
+```
+   >>> mmc.setProperty('Camera', 'PixelType', '32bitRGB')  # Change pixel type
+   >>> rgb32 = mmc.getImage()
+   >>> rgb32
+   array([[1250067, 1250067, 1315860, ..., 1250067, 1250067, 1250067],
+          [1250067, 1315603, 1315860, ..., 1250067, 1250067, 1250067],
+          [1250067, 1315859, 1315860, ..., 1250067, 1250067, 1250067],
+          ...,
+          [1246483, 1246483, 1246483, ..., 1181204, 1246740, 1246484],
+          [1246483, 1246483, 1246483, ..., 1246740, 1246740, 1246483],
+          [1246483, 1246483, 1312019, ..., 1246740, 1246740, 1246483]], dtype=uint32)
+```
 
 Interesting output isn't it? We expect something like 3-dimensional RGB
 array, but get bunch of 32-bit uints in 2-D shape.
@@ -197,38 +207,45 @@ Now we should look at RGB32 pixel data structure. Every pixel has 32-bit
 depth and contain 4 values for blue, green, red and blank channel. Blank
 channel is more technical peculiarity, than necessity.
 
-`   low memory address    ---->      high memory address`  
-`   | pixel | pixel | pixel | pixel | pixel | pixel |...`  
-`   |-------|-------|-------|-------|-------|-------|...`  
-`   |B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|...`  
-`   `[`http://avisynth.nl/index.php/RGB32`](http://avisynth.nl/index.php/RGB32)
+```
+low memory address    ---->      high memory address
+| pixel | pixel | pixel | pixel | pixel | pixel |...
+|-------|-------|-------|-------|-------|-------|...
+|B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|B|G|R|A|...
+```
+
+[http://avisynth.nl/index.php/RGB32](http://avisynth.nl/index.php/RGB32)
 
 Let's numpy handle that.
 
-`   >>> import numpy as np`  
-`   >>> rgb32.shape`  
-`   (512, 512)`  
-`   >>> rgb = rgb32.view(dtype=np.uint8).reshape(`  
-`           rgb32.shape[0], rgb32.shape[1], 4)[...,2::-1]`  
-`   >>> rgb.shape`  
-`   (512, 512, 3)`  
-`   >>> rgb.dtype`  
-`   dtype('uint8')`
+```
+>>> import numpy as np
+>>> rgb32.shape
+(512, 512)
+>>> rgb = rgb32.view(dtype=np.uint8).reshape(
+        rgb32.shape[0], rgb32.shape[1], 4)[...,2::-1]
+>>> rgb.shape
+(512, 512, 3)
+>>> rgb.dtype
+dtype('uint8')
+```
 
 It is a fastest way to get pixel data as RGB array without copying.
 There is no conversion - just creating new view to same data. Now you
 can process image with scipy or scikits-image. Note, that opencv uses
-BGR order (replace slice to \[..., :3\] for that).
+BGR order (replace slice to `[..., :3]` for that).
 
 ### Continuous acquisition
 
 {% include Warning text="'''Don't run this code directly.''' It's a partial sample." %}
 
-`   mmc.startContinuousSequenceAcquisition(1)`  
-`   while True:`  
-`       if mmc.getRemainingImageCount() > 0:`  
-`           frame = mmc.getLastImage()`  
-`           # or frame = mmc.popNextImage()`
+```
+mmc.startContinuousSequenceAcquisition(1)
+while True:
+    if mmc.getRemainingImageCount() > 0:
+        frame = mmc.getLastImage()
+        # or frame = mmc.popNextImage()
+```
 
 ### Code examples
 

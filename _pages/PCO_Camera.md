@@ -63,7 +63,9 @@ Windows
 </td>
 <td markdown="1">
 
-`          pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000`
+```
+          pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000
+```
 
 </td>
 </tr>
@@ -102,20 +104,26 @@ b) add PCO camera specific dll files to your Micro-Manager directory
 
 Files needed for all pco.sdk based cameras:
 
-` pco_conv.dll`  
-` pco_cdlg.dll`  
-` sc2_cam.dll`
+```
+ pco_conv.dll
+ pco_cdlg.dll
+ sc2_cam.dll
+```
 
 In case of Camera Link HS (CLHS) interface you also need:
 
-` sc2_clhs.dll`
+```
+ sc2_clhs.dll
+```
 
 In case of Camera Link (CL) interface you also need:
 
-` Silicon Software ME3: sc2_cl_me3.dll`  
-` Silicon Software ME4: sc2_cl_me4.dll`  
-` Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll`  
-` National Instruments: sc2_cl_nat.dll`
+```
+ Silicon Software ME3: sc2_cl_me3.dll
+ Silicon Software ME4: sc2_cl_me4.dll
+ Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
+ National Instruments: sc2_cl_nat.dll
+```
 
 The files are part of the pco.camware, pco.sdk or pco.runtime
 installation. Please install at least one of these software packages.
@@ -127,14 +135,18 @@ version on a 64bit system is recommended.
 
 Looking for 64bit dlls:
 
-` C:\Program files\PCO Digital Camera Toolbox\pco.camware`  
-` C:\Program files(x86)\PCO Digital Camera Toolbox\pco.sdk\bin64.`  
-` C:\Program files(x86)\PCO Digital Camera Toolbox\pco.runtime\bin64.`
+```
+ C:\Program files\PCO Digital Camera Toolbox\pco.camware
+ C:\Program files(x86)\PCO Digital Camera Toolbox\pco.sdk\bin64.
+ C:\Program files(x86)\PCO Digital Camera Toolbox\pco.runtime\bin64.
+```
 
 Looking for 32bit dlls:
 
-` C:\Program files(x86)\PCO Digital Camera Toolbox\pco.sdk\bin.`  
-` C:\Program files(x86)\PCO Digital Camera Toolbox\pco.runtime\bin.`
+```
+ C:\Program files(x86)\PCO Digital Camera Toolbox\pco.sdk\bin.
+ C:\Program files(x86)\PCO Digital Camera Toolbox\pco.runtime\bin.
+```
 
 If you are not administrator when installing the PCO camera software, it
 may install to C:\\Users\\(Your username)\\AppData\\Roaming, so you may

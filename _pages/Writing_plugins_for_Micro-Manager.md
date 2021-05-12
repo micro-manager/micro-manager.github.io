@@ -31,9 +31,11 @@ call `public void setApp(ScriptInterface app);` you can get the GUI
 object, core and acquisition engine objects thus:
 
 ```
-`   MMStudioMainFrame gui_ = (MMStudioMainFrame) app;`  
-`   CMMCore core_ = gui_.getMMCore();`  
-`   AcquisitionEngine acq_ = gui_.getAcquisitionEngine();`
+```
+   MMStudioMainFrame gui_ = (MMStudioMainFrame) app;
+   CMMCore core_ = gui_.getMMCore();
+   AcquisitionEngine acq_ = gui_.getAcquisitionEngine();
+```
 ```
 
 Once you have compiled your code into a `.class` file or a `.jar` file,
@@ -104,11 +106,11 @@ steps for Netbeans:
     "Files" tab in Netbeans):
 
 ```
-`       `<property name="pluginsDir"  location="C:\Program Files\Micro-Manager-1.4\mmplugins" />  
-`       `<target name="-post-jar">  
-`       `<echo message="--Copied MM plugin JAR to basedir: ${basedir}" />  
-`       `<copy file="${basedir}/${dist.jar}" toDir="${pluginsDir}" />  
-`       `</target>
+<property name="pluginsDir" location="C:\Program Files\Micro-Manager-1.4\mmplugins" />
+<target name="-post-jar">
+<echo message="--Copied MM plugin JAR to basedir: ${basedir}" />
+<copy file="${basedir}/${dist.jar}" toDir="${pluginsDir}" />
+</target>
 ```
 
 
@@ -128,9 +130,8 @@ your Micro-Manager installation; if there isn't one yet, you can create
 it with any text editor program.) For example:
 
 ```
-`       gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");`
+gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");
 ```
-
 
 Make sure you change the "Layout Generation Style" property from
 "Automatic" to "Swing Layout Extensions Library". You may find this by

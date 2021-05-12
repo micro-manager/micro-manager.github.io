@@ -54,22 +54,24 @@ import org.micromanager.util.ReportingUtils;
 
 class MyProcessor implements DataProcessor {
 
-`  public void process() {`  
-`     try {`  
-`        TaggedImage image = poll();`  
-`        // "Poison" means the queue is empty. We just pass the poison along`  
-`        // the queue in that case. It's not a valid image so don't try to `  
-`        // process it.`  
-`        if (image != TaggedImageQueue.POISON) {`  
-`           // ... modify the image here ...`  
-`        }`  
-`        produce(image);`  
-`     }`  
-`     catch (Exception ex) {`  
-`        // Something went wrong; at bare minimum we should log the error.`  
-`        ReportingUtils.logError(ex);`  
-`     }  `  
-`  }`
+```
+  public void process() {
+     try {
+        TaggedImage image = poll();
+        // "Poison" means the queue is empty. We just pass the poison along
+        // the queue in that case. It's not a valid image so don't try to 
+        // process it.
+        if (image != TaggedImageQueue.POISON) {
+           // ... modify the image here ...
+        }
+        produce(image);
+     }
+     catch (Exception ex) {
+        // Something went wrong; at bare minimum we should log the error.
+        ReportingUtils.logError(ex);
+     }  
+  }
+```
 
 }
 ```
@@ -103,15 +105,15 @@ import org.micromanager.api.MMProcessorPlugin
 
 class MyProcessorPlugin implements MMProcessorPlugin {
 
-`  // How this plugin will be shown in the "Plugins" menu. `  
-`  public String menuName = "My Processor";`  
-`  // Optional extra tooltip string that will be shown when the mouse hovers`  
-`  // over this plugin in the "Plugins" menu.`  
-`  public String tooltipDescription = "My custom plugin for processing images";`
+  // How this plugin will be shown in the "Plugins" menu. 
+  public String menuName = "My Processor";
+  // Optional extra tooltip string that will be shown when the mouse hovers
+  // over this plugin in the "Plugins" menu.
+  public String tooltipDescription = "My custom plugin for processing images";
 
-`  public static Class<?> getProcessorClass() {`  
-`     return MyProcessor.class;`  
-`  }  `
+  public static Class<?> getProcessorClass() {
+     return MyProcessor.class;
+  }  
 
 }
 ```

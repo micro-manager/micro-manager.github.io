@@ -56,98 +56,111 @@ install.
 
 ## After all is setup, cd to directory of choice and get SVN copy of micro-manager
 
-$svn co
-<https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3>
+```
+$ svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3
+```
 
 I received Revision 2580.
 
 ## Bootstrap the autobuild tools.
 
+```
 $./mmUnixBuild.sh
+```
 
 ## Configure and build
 
+```
 $./configure --with-imagej=/usr/local/ImageJ (Replace the path suitably)
+$ make
 
-$make
-
--   Errors encountered during make:
+Errors encountered during make:
 
 1\. In USBManager.
 
-\*\*\* Warning: Linking the shared library libmmgr\_dal\_USBManager.la
-against the \*\*\* static library /usr/lib/libusb.a is not portable!
+```
+*** Warning: Linking the shared library libmmgr_dal_USBManager.la
+against the *** static library /usr/lib/libusb.a is not portable!
 libtool: link: g++ -shared -nostdlib
-/usr/lib/gcc/x86\_64-linux-gnu/4.3.3/../../../../lib/crti.o
-/usr/lib/gcc/x86\_64-linux-gnu/4.3.3/crtbeginS.o .libs/USBManager.o
+/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib/crti.o
+/usr/lib/gcc/x86_64-linux-gnu/4.3.3/crtbeginS.o .libs/USBManager.o
 ../../MMDevice/.libs/libMMDevice.a /usr/lib/libusb.a
--L/usr/lib/gcc/x86\_64-linux-gnu/4.3.3
--L/usr/lib/gcc/x86\_64-linux-gnu/4.3.3/../../../../lib -L/lib/../lib
--L/usr/lib/../lib -L/usr/lib/gcc/x86\_64-linux-gnu/4.3.3/../../..
--lstdc++ -lm -lc -lgcc\_s /usr/lib/gcc/x86\_64-linux-gnu/4.3.3/crtendS.o
-/usr/lib/gcc/x86\_64-linux-gnu/4.3.3/../../../../lib/crtn.o -Wl,-soname
--Wl,libmmgr\_dal\_USBManager.so.0 -o
-.libs/libmmgr\_dal\_USBManager.so.0.0.0 /usr/bin/ld:
-/usr/lib/libusb.a(usb.o): relocation R\_X86\_64\_32 against \`a local
+-L/usr/lib/gcc/x86_64-linux-gnu/4.3.3
+-L/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib -L/lib/../lib
+-L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../..
+-lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.3.3/crtendS.o
+/usr/lib/gcc/x86_64-linux-gnu/4.3.3/../../../../lib/crtn.o -Wl,-soname
+-Wl,libmmgr_dal_USBManager.so.0 -o
+.libs/libmmgr_dal_USBManager.so.0.0.0 /usr/bin/ld:
+/usr/lib/libusb.a(usb.o): relocation R_X86_64_32 against `a local
 symbol' can not be used when making a shared object; recompile with
 -fPIC /usr/lib/libusb.a: could not read symbols: Bad value collect2: ld
-returned 1 exit status make\[2\]: \*\*\* \[libmmgr\_dal\_USBManager.la\]
-Error 1 make\[2\]: Leaving directory
-\`/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters/USBManager'
-make\[1\]: \*\*\* \[all-recursive\] Error 1 make\[1\]: Leaving directory
-\`/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters' make:
-\*\*\* \[all-recursive\] Error 1
+returned 1 exit status make[2]: *** [libmmgr_dal_USBManager.la]
+Error 1 make[2]: Leaving directory
+`/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters/USBManager'
+make[1]: *** [all-recursive] Error 1 make[1]: Leaving directory
+`/home/sanguine/research/umanager/micromanager1.3/DeviceAdapters' make:
+*** [all-recursive] Error 1
+```
 
--   Resolved by deleting references to USBManager in DIST\_SUBDIR
-    variable inside DeviceAdapters/Makefile.
+Resolved by deleting references to `USBManager` in `DIST_SUBDIR`
+variable inside `DeviceAdapters/Makefile`.
 
-<!-- -->
-
--   Compilation succeded!!
+Compilation succeded!!
 
 ## If not making debian packages, do $make install and you should be fine. I haven't tried it yet.
 
 ## Making debian packages. The path I chose for easy management of files.
 
--   Modify newImageJ script inside portdebian directory.
+Modify newImageJ script inside portdebian directory.
+```
+ij_path=/usr/local/ImageJ 
+```
+Substitute all references to `/usr/share/imagej` by `/usr/local/ImageJ` 
 
-` ij_path=/usr/local/ImageJ `
+Modify `debiancontrol.port` inside portdebian directory.
 
-` Substitute all references to /usr/share/imagej by /usr/local/ImageJ `
+`Architecture: amd64` in `debiancontrol.port`.
 
--   Modify debiancontrol.port inside portdebian directory.
+Modify `mkdebian.sh` inside `portdebian`
 
-` Architecture: amd64 in debiancontrol.port .`
+Substitute all references to `/usr/share/imagej` by `/usr/local/ImageJ`   
 
--   Modify mkdebian.sh inside portdebian
+Include configuration, html, and xml acquisition samples inside the package.
+```
+##### Programs 
+mkdir -p $ROOTBIN/usr/bin/
+cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/
+strip $ROOTBIN/usr/bin/*
+##### And configuration files 
+cp bin/*.cfg $ROOTBIN/usr/bin/
+cp bin/*.html $ROOTBIN/usr/bin/
+cp bin/*.xml $ROOTBIN/usr/bin/
+```
 
-` Substitute all references to /usr/share/imagej by /usr/local/ImageJ   `
+Then do `./portdebian/mkdebian.sh`
 
-` Include configuration, html, and xml acquisition samples inside the package.`  
-`  ##### Programs `  
-` mkdir -p $ROOTBIN/usr/bin/`  
-` cp Test_Serial/mm_testserial ModuleTest/mm_moduletest Test_MMCore/mm_testCore $ROOTBIN/usr/bin/`  
-` strip $ROOTBIN/usr/bin/*`  
-`  ##### And configuration files `  
-` cp bin/*.cfg $ROOTBIN/usr/bin/`  
-` cp bin/*.html $ROOTBIN/usr/bin/`  
-` cp bin/*.xml $ROOTBIN/usr/bin/`
+```
+Got error: cp: cannot stat \`Tracking/Tracker\_.jar': No such file or directory
+```
 
--   Then do $./portdebian/mkdebian.sh
+Error resolved by
+```
+cd Tracking
+make
+```
+Somehow earlier `make` had missed it.
 
-Got error: cp: cannot stat \`Tracking/Tracker\_.jar': No such file or
-directory
+Two packages `micromanager.deb` and `micromanager-ij.deb` are created in
+top directory of the source tree. Install them.
 
-Error resolved by $cd Tracking, $make. Somehow earlier make had missed
-it.
+```
+$ dpkg -i micromanager micromanager-ij
+```
+worked.
 
--   Two packages micromanager.deb and micromanager-ij.deb are created in
-    top directory of the source tree. Install them.
-
-$ dpkg -i micromanager micromanager-ij worked.
-
--   imagejmm script created by micromanager-ij works, however doesn't
-    bring up micro-manager. You need to invoke it from Plugins-&gt;
-    Micro-manager -&gt; Micro-manager Studio.
+`imagejmm` script created by `micromanager-ij` works, however doesn't
+bring up micro-manager. You need to invoke it from
+{% include bc path="Plugins|Micro-manager|Micro-manager Studio" %}.
 
 {% include Programming_Sidebar text="" %}

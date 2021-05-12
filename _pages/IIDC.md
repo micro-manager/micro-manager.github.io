@@ -137,7 +137,9 @@ controlled with an integer *X* ranging from 0 to 4095 (or some subrange
 thereof). You will need to know two numbers, *A* and *B*, such that the
 actual interval T (in microseconds) can be expressed by this formula:
 
-` T = A * X + B`
+```
+ T = A * X + B
+```
 
 The values for A and B depend on the camera model (often even among
 cameras from the same vendor). Usually, the camera's manual will tell

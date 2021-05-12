@@ -41,24 +41,32 @@ of Micro-Manager (for instance: C:/Program Files/Micro-Manager-1.3).
 
 3\. In Matlab command prompt
 
-`>> edit classpath.txt `
+```
+>> edit classpath.txt 
+```
 
 Add the location of the jar file you just installed (its in the
 Micro-Manager folder), include the .jar at the end, for instance:
 
-`C:/Program Files/Micro-Manager-1.3/ij.jar`  
-`C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/MMCoreJ.jar`  
-`C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/MMJ_.jar`  
-`C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/bsh-2.0b4.jar`  
-`C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/swingx-0.9.5.jar`
+```
+C:/Program Files/Micro-Manager-1.3/ij.jar
+C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/MMCoreJ.jar
+C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/MMJ_.jar
+C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/bsh-2.0b4.jar
+C:/Program Files/Micro-Manager-1.3/plugins/Micro-Manager/swingx-0.9.5.jar
+```
 
 4\. In Matlab command prompt
 
-`>> edit librarypath.txt `
+```
+>> edit librarypath.txt 
+```
 
 Add the location of the dll files, for instance:
 
-`C:\Program Files\Micro-Manager-1.3`
+```
+C:\Program Files\Micro-Manager-1.3
+```
 
 5\. Restart Matlab
 
@@ -79,25 +87,29 @@ C:\\Micro-Manager1.4.6).
 
 2\. In Matlab command prompt
 
-`>> edit classpath.txt `
+```
+>> edit classpath.txt 
+```
 
 Add the location of all the jar files MM installed under
 plugins\\Micro-Manager:
 
 for example:
 
-`C:/Micro-Manager-1.4/ij.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/MMAcqEngine.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/MMCoreJ.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/MMJ_.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/clojure.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/bsh-2.0b4.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/swingx-0.9.5.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/swing-layout-1.0.4.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/commons-math-2.0.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/ome-xml.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/scifio.jar`  
-`C:/Micro-Manager-1.4/plugins/Micro-Manager/guava-17.0.jar`
+```
+C:/Micro-Manager-1.4/ij.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/MMAcqEngine.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/MMCoreJ.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/MMJ_.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/clojure.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/bsh-2.0b4.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/swingx-0.9.5.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/swing-layout-1.0.4.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/commons-math-2.0.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/ome-xml.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/scifio.jar
+C:/Micro-Manager-1.4/plugins/Micro-Manager/guava-17.0.jar
+```
 
 {% include Note text="At least in recent versions of MATLAB (tested with R2013a), the file classpath.txt is automatically generated and should not be edited manually, lest it be overwritten. If classpath.txt contains a comment to that effect, use instead this command:
  >> edit([prefdir '/javaclasspath.txt']);
@@ -107,7 +119,9 @@ at the command prompt." %}
 
 3\. In Matlab command prompt
 
-`>> edit librarypath.txt `
+```
+>> edit librarypath.txt 
+```
 
 Add the location of the dll files, for instance: C:/Micro-Manager-1.4.6/
 
@@ -119,9 +133,11 @@ driver on a Windows 7 system.
 
 6\. create a java object of class MMCcore
 
-`>> import mmcorej.*;`  
-`>> mmc = CMMCore;`  
-`>> mmc.loadSystemConfiguration ('C:\Micro-Manager1.4\media/MMConfig_demo.cfg');`
+```
+>> import mmcorej.*;
+>> mmc = CMMCore;
+>> mmc.loadSystemConfiguration ('C:\Micro-Manager1.4\media/MMConfig_demo.cfg');
+```
 
 The Micro-Manager Core API is described here:
 <http://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html>
@@ -129,19 +145,21 @@ The Micro-Manager Core API is described here:
 The following simple script will snap an image from an up-to-16-bit
 monochrome camera and display it in MATLAB:
 
-`>> mmc.snapImage();`  
-`>> img = mmc.getImage();  % returned as a 1D array of signed integers in row-major order`  
-`>> width = mmc.getImageWidth();`  
-`>> height = mmc.getImageHeight();`  
-`>> if mmc.getBytesPerPixel == 2`  
-`    pixelType = 'uint16';`  
-`else`  
-`    pixelType = 'uint8';`  
-`end`  
-`>> img = typecast(img, pixelType);      % pixels must be interpreted as unsigned integers`  
-`>> img = reshape(img, [width, height]); % image should be interpreted as a 2D array`  
-`>> img = transpose(img);                % make column-major order for MATLAB`  
-`>> imshow(img);`
+```
+>> mmc.snapImage();
+>> img = mmc.getImage();  % returned as a 1D array of signed integers in row-major order
+>> width = mmc.getImageWidth();
+>> height = mmc.getImageHeight();
+>> if mmc.getBytesPerPixel == 2
+    pixelType = 'uint16';
+else
+    pixelType = 'uint8';
+end
+>> img = typecast(img, pixelType);      % pixels must be interpreted as unsigned integers
+>> img = reshape(img, [width, height]); % image should be interpreted as a 2D array
+>> img = transpose(img);                % make column-major order for MATLAB
+>> imshow(img);
+```
 
 **A function to help MATLAB recognize Micro-Manager**
 
@@ -166,30 +184,34 @@ mmcorej.\*; mmc=CMMCore*.
 
 Inputs = *path2MM*, the root directory of the Micro-Manager software
 
-`function [] = MMsetup_javaclasspath(path2MM)`  
-`fileList = getAllFiles(path2MM);`  
-`fileListJarBool = regexp(fileList,'.jar$','end');`  
-`fileListJarBool = cellfun(@isempty,fileListJarBool);`  
-`fileListJar = fileList(~fileListJarBool);`  
-`fid = fopen(fullfile(prefdir,'MMjavaclasspath.txt'),'w');`  
-`fprintf(fid,'`<before>`\r\n');`  
-`cellfun(@(x) fprintf(fid,'%s\r\n',x), fileListJar);`  
-`fclose(fid);`  
-`%% nested directory listing ala gnovice from stackoverflow`  
-`% inputs and outputs are self-explanatory`  
-`function fileList = getAllFiles(dirName)`  
-`dirData = dir(dirName);      % Get the data for the current directory`  
-`dirIndex = [dirData.isdir];  % Find the index for directories`  
-`fileList = {dirData(~dirIndex).name}';  % Get a list of the files`  
-`if ~isempty(fileList)`  
-`    fileList = cellfun(@(x) fullfile(dirName,x),fileList,'UniformOutput',false);`  
-`end`  
-`subDirs = {dirData(dirIndex).name};  % Get a list of the subdirectories`  
-`validIndex = ~ismember(subDirs,{'.','..'});  % Find index of subdirectories`  
-`%   that are not '.' or '..'`  
-`for iDir = find(validIndex)                  % Loop over valid subdirectories`  
-`    nextDir = fullfile(dirName,subDirs{iDir});    % Get the subdirectory path`  
-`    fileList = vertcat(fileList, getAllFiles(nextDir));  % Recursively call getAllFiles`  
-`end`
+```
+function [] = MMsetup_javaclasspath(path2MM)
+fileList = getAllFiles(path2MM);
+fileListJarBool = regexp(fileList,'.jar$','end');
+fileListJarBool = cellfun(@isempty,fileListJarBool);
+fileListJar = fileList(~fileListJarBool);
+fid = fopen(fullfile(prefdir,'MMjavaclasspath.txt'),'w');
+
+fprintf(fid,'<before>\r\n');
+
+cellfun(@(x) fprintf(fid,'%s\r\n',x), fileListJar);
+fclose(fid);
+%% nested directory listing ala gnovice from stackoverflow
+% inputs and outputs are self-explanatory
+function fileList = getAllFiles(dirName)
+dirData = dir(dirName);      % Get the data for the current directory
+dirIndex = [dirData.isdir];  % Find the index for directories
+fileList = {dirData(~dirIndex).name}';  % Get a list of the files
+if ~isempty(fileList)
+    fileList = cellfun(@(x) fullfile(dirName,x),fileList,'UniformOutput',false);
+end
+subDirs = {dirData(dirIndex).name};  % Get a list of the subdirectories
+validIndex = ~ismember(subDirs,{'.','..'});  % Find index of subdirectories
+%   that are not '.' or '..'
+for iDir = find(validIndex)                  % Loop over valid subdirectories
+    nextDir = fullfile(dirName,subDirs{iDir});    % Get the subdirectory path
+    fileList = vertcat(fileList, getAllFiles(nextDir));  % Recursively call getAllFiles
+end
+```
 
 {% include Programming_Sidebar text="" %}

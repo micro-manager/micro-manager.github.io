@@ -67,7 +67,9 @@ camera before starting Micro-Manager.😎"&gt;
 Install the Andor Driver Pack 3 (sCMOS) to the working Micro-Manager
 Directory e.g.
 
-`   C:\Program Files\Micro-Manager-1.4\`
+```
+   C:\Program Files\Micro-Manager-1.4\
+```
 
 and ensure you restart the computer.
 
@@ -91,7 +93,9 @@ later, also disable PCI Express &gt; Link State Power Management in
 It is possible to achieve full frame rate with enough RAM. Again using a
 64-bit OS, set this value to **5120** MB
 
-`     Tools > Options... > Sequence buffer size [MB]`
+```
+     Tools > Options... > Sequence buffer size [MB]
+```
 
 Depending on the amount of RAM on the PC or processing performance, this
 may need to be adjusted accordingly.
@@ -108,17 +112,21 @@ The following assumes you installed the Andor SDK in /usr/local/lib/
 
 Put the following line into /etc/udev/rules.d/andor.rules
 
-`SUBSYSTEM=="video4linux", KERNEL=="video[0-3]*", ATTR{name}=="bitflow", GROUP="users"`
+```
+SUBSYSTEM=="video4linux", KERNEL=="video[0-3]*", ATTR{name}=="bitflow", GROUP="users"
+```
 
 Add the following lines to /etc/rc.d/rc.local
 
-`#!/bin/bash`  
-`# Bitflow and Andor`  
-`/sbin/modprobe v4l2_common`  
-`# /sbin/modprobe v4l1_compat -- only include this line if your kernel version is `  
-`#   .. below 2.6.38 - use 'uname -a' to find out your kernel version`  
-`/sbin/modprobe videodev`  
-`/sbin/insmod /usr/local/andor/bitflow/drv/bitflow.ko fwDelay1=200 customFlags=1`
+```
+#!/bin/bash
+# Bitflow and Andor
+/sbin/modprobe v4l2_common
+# /sbin/modprobe v4l1_compat -- only include this line if your kernel version is 
+#   .. below 2.6.38 - use 'uname -a' to find out your kernel version
+/sbin/modprobe videodev
+/sbin/insmod /usr/local/andor/bitflow/drv/bitflow.ko fwDelay1=200 customFlags=1
+```
 
 Reboot the machine.
 
@@ -158,7 +166,9 @@ been installed, but the computer has not been restarted.
 If one encounters this error, increase sequence buffer size. In the
 µManager toolbar one can set the Sequence buffer size in the main menu:
 
-`     Tools > Options... > Sequence buffer size [MB]`
+```
+     Tools > Options... > Sequence buffer size [MB]
+```
 
 **Reason:** Due to the rate that the camera acquires data it's not
 uncommon for µManager to run out of "Circular Buffer" memory during
@@ -166,8 +176,10 @@ sequence acquisitions (50+ images). The circular buffer is where images
 wait when they've been taken off the camera but have not yet been
 processed by µManager. The error message is:
 
-`     Micro-Manager Error:`  
-`     Error: Circular buffer overflowed.`
+```
+     Micro-Manager Error:
+     Error: Circular buffer overflowed.
+```
 
 Restart uManager for this change to take effect.
 

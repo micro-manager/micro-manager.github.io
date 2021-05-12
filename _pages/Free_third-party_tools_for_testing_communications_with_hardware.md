@@ -33,14 +33,16 @@ There are several alternatives for a serial terminal on OS X.
     (both of which are supplied with OS X). Here is a Apple Script that
     sets up screen:
 
-`    tell application "Terminal"`  
-`       do script with command "screen /dev/tty.KeySerial1"`  
-`       set number of rows of window 1 to 100`  
-`       set number of columns of window 1 to 80`  
-`       set background color of window 1 to "black"`  
-`       set normal text color of window 1 to "green"`  
-`       set custom title of window 1 to "SerialOut"`  
-`    end tell`
+```
+    tell application "Terminal"
+       do script with command "screen /dev/tty.KeySerial1"
+       set number of rows of window 1 to 100
+       set number of columns of window 1 to 80
+       set background color of window 1 to "black"
+       set normal text color of window 1 to "green"
+       set custom title of window 1 to "SerialOut"
+    end tell
+```
 
 -   [CoolTerm](http://freeware.the-meiers.org/) This is a free serial
     terminal emulator that works very well.

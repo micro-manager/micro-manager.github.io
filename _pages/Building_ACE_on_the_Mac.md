@@ -23,52 +23,48 @@ instructions](http://www.dre.vanderbilt.edu/~schmidt/DOC_ROOT/ACE/ACE-INSTALL.ht
 For example:
 
 cd into ACE\_Wrappers and type:
+```
+ACE_ROOT=`pwd`; export ACE_ROOT
+```
+Create and edit `$ACE_ROOT/ace/config.h` On Tiger (10.4) it should read:
 
-`` ACE_ROOT=`pwd`; export ACE_ROOT ``
-
-Create and edit $ACE\_ROOT/ace/config.h On Tiger (10.4) it should read:
-
-<code>
-
-    #define ACE_HAS_NONSTATIC_OBJECT_MANAGER
-    #include "ace/config-macosx-tiger.h"
-
-</code>
+```
+#define ACE_HAS_NONSTATIC_OBJECT_MANAGER
+#include "ace/config-macosx-tiger.h"
+```
 
 For ACE version 5.7.2 with Tiger (10.4), I found it necessary to also
 add the following to the config.h file:
 
-<code>
-
-    #define ACE_LACKS_UNSETENV
-    #define ACE_LACKS_ISCTYPE
-    #define ACE_NEEDS_DL_UNDERSCORE
-
-</code>
+```
+#define ACE_LACKS_UNSETENV
+#define ACE_LACKS_ISCTYPE
+#define ACE_NEEDS_DL_UNDERSCORE
+```
 
 Create a build configuration file,
-$ACE\_ROOT/include/makeinclude/platform\_macros.GNU On Tiger (10.4) it
-should read:
+`$ACE_ROOT/include/makeinclude/platform\_macros.GNU`.s
+On Tiger (10.4) it should read:
 
-<code>
-
-    debug = 1
-    shared_libs = 0
-    static_libs = 1
-    include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU
-
-</code>
+```
+debug = 1
+shared_libs = 0
+static_libs = 1
+include $(ACE_ROOT)/include/makeinclude/platform_macosx_tiger.GNU
+```
 
 If you wish to build ACE as a shared library, you would need to change
-this and also define DYLD\_LIBRARY\_PATH to include $(ACE\_ROOT)/lib
+this and also define `DYLD_LIBRARY_PATH` to include `$(ACE_ROOT)/lib`
 
-Now cd into $ACE\_ROOT/ace, type make and pray no errors will occur.
+Now `cd` into `$ACE_ROOT/ace`, type `make` and pray no errors will occur.
 
 To make the library available to your system, place a symbolic link in
-/usr/local/include that points to the $(ACE\_ROOT)/ace directory:  
-`sudo ln -s $ACE_ROOT/ace /usr/local/include/ace`
+`/usr/local/include` that points to the `$(ACE_ROOT)/ace` directory:  
+```
+sudo ln -s $ACE_ROOT/ace /usr/local/include/ace
+```
 
-Copy libACE.a to /usr/local/lib
+Copy `libACE.a` to `/usr/local/lib`
 
 ### External links
 

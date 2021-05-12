@@ -33,11 +33,15 @@ property `mmcorej.library.path` to the path to the directory containing
 MMCoreJ\_wrap and the device adapters. This can be done by passing the
 command-line argument
 
-` -Dmmcorej.library.path=/path/to/libraries`
+```
+ -Dmmcorej.library.path=/path/to/libraries
+```
 
 to Java, or by calling
 
-` System.setProperty("mmcorej.library.path", "/path/to/libraries");`
+```
+ System.setProperty("mmcorej.library.path", "/path/to/libraries");
+```
 
 ### Device Adapter Search Paths
 

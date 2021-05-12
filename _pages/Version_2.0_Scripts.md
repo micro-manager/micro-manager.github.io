@@ -18,50 +18,54 @@ snaps a few images, converts them from TaggedImage to Image, changes
 their coordinates, adds them to the Datastore, and then saves the result
 to disk.
 
-`import org.micromanager.data.Coords;`  
-`import org.micromanager.data.Image;`  
-`import org.micromanager.data.Datastore;`  
-`import org.micromanager.display.DisplayWindow;`
+```
+import org.micromanager.data.Coords;
+import org.micromanager.data.Image;
+import org.micromanager.data.Datastore;
+import org.micromanager.display.DisplayWindow;
 
-`import mmcorej.TaggedImage;`
+import mmcorej.TaggedImage;
 
-`Datastore store = mm.data().createRAMDatastore();`  
-`DisplayWindow display = mm.displays().createDisplay(store);`
+Datastore store = mm.data().createRAMDatastore();
+DisplayWindow display = mm.displays().createDisplay(store);
 
-`mm.getCore().snapImage();`  
-`TaggedImage tmp = mm.getCore().getTaggedImage();`  
-`Image image1 = mm.data().convertTaggedImage(tmp);`  
-`image1 = image1.copyAtCoords(image1.getCoords().copy().channel(0).build());`
+mm.getCore().snapImage();
+TaggedImage tmp = mm.getCore().getTaggedImage();
+Image image1 = mm.data().convertTaggedImage(tmp);
+image1 = image1.copyAtCoords(image1.getCoords().copy().channel(0).build());
 
-`mm.getCore().snapImage();`  
-`tmp = mm.getCore().getTaggedImage();`  
-`Image image2 = mm.data().convertTaggedImage(tmp);`  
-`image2 = image2.copyAtCoords(image1.getCoords().copy().channel(1).build());`
+mm.getCore().snapImage();
+tmp = mm.getCore().getTaggedImage();
+Image image2 = mm.data().convertTaggedImage(tmp);
+image2 = image2.copyAtCoords(image1.getCoords().copy().channel(1).build());
 
-`store.putImage(image1);`  
-`store.putImage(image2);`  
-`store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);`
+store.putImage(image1);
+store.putImage(image2);
+store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);
+```
 
 ### Snap an image, process with the default pipeline and get it as an ImageJ ImagePlus
 
-`import ij.ImagePlus;`
+```
+import ij.ImagePlus;
 
-`store = mm.data().createRAMDatastore();`
+store = mm.data().createRAMDatastore();
 
-`// no need to create display if you do not want to see the images`  
-`dw = mm.getDisplayManager().createDisplay(store); `
+// no need to create display if you do not want to see the images
+dw = mm.getDisplayManager().createDisplay(store); 
 
-`// pipeline insertion will block`  
-`pipeLine = mm.data().copyApplicationPipeline(store, true);  `
+// pipeline insertion will block
+pipeLine = mm.data().copyApplicationPipeline(store, true);  
 
-`imgList = mm.acquisitions().snap();`  
-`coords = mm.data().createCoords("t=0,p=0,c=0,z=0");`  
-`img = imgList.get(0).copyAtCoords(coords);`  
-`pipeLine.insertImage(img);`  
-`processedImg = store.getImage(coords);`  
-`iProcessor = mm.data().ij().createProcessor(processedImg);`
+imgList = mm.acquisitions().snap();
+coords = mm.data().createCoords("t=0,p=0,c=0,z=0");
+img = imgList.get(0).copyAtCoords(coords);
+pipeLine.insertImage(img);
+processedImg = store.getImage(coords);
+iProcessor = mm.data().ij().createProcessor(processedImg);
 
-`// duplicate if you want to store the original images`  
-`ip = (new ImagePlus("tmp", iProcessor)).duplicate();   `
+// duplicate if you want to store the original images
+ip = (new ImagePlus("tmp", iProcessor)).duplicate();   
+```
 
 &lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

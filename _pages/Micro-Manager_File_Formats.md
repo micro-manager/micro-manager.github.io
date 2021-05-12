@@ -8,11 +8,7 @@ section: Programming
 Micro-Manager can save files in two formats, which referred to as
 "separate image files" and "Image file stack".
 
-<h1>
-
-Separate image files
-
-</h1>
+# Separate image files
 
 Acquired images are saved to disk as separate TIFF files, each
 containing a single grayscale image. The file naming convention is "img"
@@ -20,11 +16,7 @@ prefix followed by frame number, channel name and slice number
 (img\_00000000t\_channel\_00z.tif). In addition, the folder will contain
 a file named "metadata.txt" that contains the metadata in JSON format.
 
-<h1>
-
-Image file stack (in brief)
-
-</h1>
+# Image file stack (in brief)
 
 A TIFF file or group of TIFF files that contain multiple acquired images
 per a single file. These files conform to the
@@ -57,16 +49,9 @@ system calls to create new files. This can be advantageous in situations
 where disk write speed is a limiting factor (i.e. writing to a server or
 collecting data at a high rate).
 
-<h1>
+# Programming using Image file stacks
 
-Programming using Image file stacks
-
-</h1>
-<h2>
-
-Reading Images
-
-</h2>
+## Reading Images
 
 Existing Micro-Manager libraries can be used to easily read these files.
 in order to do so a java project must use **MMCoreJ.jar** and
@@ -79,20 +64,21 @@ Image file stacks are implement by
 To create an instance of this class, capable of reading an existing
 Image file stack data set, use:
 
+```java
+TaggedImageStorageMultipageTiff stackReader = new
+  TaggedImageStorageMultipageTiff("C:\\Data\\Directory where data set is",
+  false, null, false, false);
 ```
- TaggedImageStorageMultipageTiff stackReader = new
-TaggedImageStorageMultipageTiff("C:\\Data\\Directory where data set is",
-false, null, false, false);
-```  
+
 Important methods for utilizing this class are:
 
+```java
+public TaggedImage getImage(int channelIndex, int
+  sliceIndex, int frameIndex, int positionIndex)
+public JSONObject getSummaryMetadata()
+public Set<String> imageKeys()
+public void close()
 ```
- public TaggedImage getImage(int channelIndex, int
-sliceIndex, int frameIndex, int positionIndex)  
-public JSONObject getSummaryMetadata()  
-public Set<String> imageKeys()  
-public void close() 
-```  
 
 **imageKeys()** returns a
 [java.util.Set<String>](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html)
@@ -107,20 +93,16 @@ they are no longer needed.
 A **TaggedImage** simply consists of two public fields. TaggedImage.tags
 is a reference to the image metadata, stored in a
 [JSONObject](http://www.json.org/). TaggedImage.pix is a pointer to the
-image pixels, stored in a **byte\[\]**, **short\[\]**, or **int\[\]**
+image pixels, stored in a `byte[]`, `short[]`, or `int[]`
 depending on the image type.
 
-<h2>
+## Writing Images
 
-Writing Images
-
-</h2>
-
-In addition to the **MMCoreJ.jar** and **MMJ\_.jar** libraries that are
+In addition to the `MMCoreJ.jar` and `MMJ_.jar` libraries that are
 required for reading Image File Stacks, writing to these files requires
 4 more libraries, which can also be found in
-**Micro-Manager-1.4/plugins/Micro-Manager/**: **loci-common.jar**,
-**ome-xml.jar**, **scifio.jar**, and **slf4j-api-1.7.1.jar**.
+`Micro-Manager-1.4/plugins/Micro-Manager/`: `loci-common.jar`,
+`ome-xml.jar`, `scifio.jar`, and `slf4j-api-1.7.1.jar`.
 
 Writing images into the Image File Stack format uses the same class as
 reading one of these datasets, but requires a different parameters be
@@ -132,8 +114,8 @@ listed below. In this example, a data set of 512x512 16 bit monochrome
 images is created with 10 time points, 8 z slices, 2 channels, and 3
 positions.
 
-```
- summary = new JSONObject();  
+```java
+summary = new JSONObject();  
 summary.put("Slices", 18;  
 summary.put("Positions", 1);  
 summary.put("Channels", 2);  
@@ -146,55 +128,51 @@ summary.put("Width",512);
 summary.put("Height",512);  
 summary.put("Prefix","Put the desired base filename here");  
 //these are used to create display settings  
-summary.put("ChColors", new org.json.JSONArray("\[1,1\]"));  
-summary.put("ChNames", new org.json.JSONArray("\["DAPI","FITC"\]"));  
-summary.put("ChMins", new org.json.JSONArray("\[0,0\]"));  
-summary.put("ChMaxes", new org.json.JSONArray("\[65535,65535\]"));  
-```  
+summary.put("ChColors", new org.json.JSONArray("[1,1]"));  
+summary.put("ChNames", new org.json.JSONArray("["DAPI","FITC"]"));  
+summary.put("ChMins", new org.json.JSONArray("[0,0]"));  
+summary.put("ChMaxes", new org.json.JSONArray("[65535,65535]"));  
+```
 
-**SlicesFirst** and **TimeFirst** tell the image storage what order to
+`SlicesFirst` and `TimeFirst` tell the image storage what order to
 expect images to arrive in. If the full complement of expected images
 does not arrive by the time the image closes, but all images up to that
 point have come in the expected order, the storage will automatically
 complete the current frame with blank images (this behavior is useful
-for correctly opening aborted acquisitions in ImageJ). **SlicesFirst**
+for correctly opening aborted acquisitions in ImageJ). `SlicesFirst`
 being true means a whole set of z slice images arrive before moving on
-to another channel. **TimeFirst** being false means all positions are
+to another channel. `TimeFirst` being false means all positions are
 collected at a given time point before moving on to the next time point,
 rather than running successive time lapses at each position.
 
 Next, create the MultipageTiffWriter. The fourth argument is a boolean
-specifying whether separate **metadata.txt** files should also be
+specifying whether separate `metadata.txt` files should also be
 written (does not affect functionality, merely an easy extra way to view
 metadata). The fifth argument is a boolean flag for whether XY positions
 should be placed in separate files or combined into a single one. In
-this case we don't create **metadata.txt**, and we create seperate files
+this case we don't create `metadata.txt`, and we create seperate files
 for XY positions:
 
+```java
+TaggedImageStorageMultipageTiff storage = new
+  TaggedImageStorageMultipageTiff("C:/Data/Directory where you want to
+  save",true,summary,false,true);  
 ```
- TaggedImageStorageMultipageTiff storage = new
-TaggedImageStorageMultipageTiff("C:/Data/Directory where you want to
-save",true,summary,false,true);  
-```  
-Important methods for writing images are:
 
-```
- public void putImage(TaggedImage taggedImage)  
+Important methods for writing images are:
+```java
+public void putImage(TaggedImage taggedImage)  
 public void finished()  
 public void close()  
-```  
+```
 
-**finished()** should be called after no more image are going to be
+`finished()` should be called after no more image are going to be
 added. The storage becomes read only after this call
 
-**close()** should be called after images are done being both read and
+`close()` should be called after images are done being both read and
 written.
 
-<h1>
-
-Image file stack specification
-
-</h1>
+# Image file stack specification
 
 Micro-Manager Image file stacks conform to both the [TIFF
 Specification](http://partners.adobe.com/public/developer/en/tiff/media/TIFF6.pdf)
@@ -205,38 +183,20 @@ acquisition comments and display settings, and store an index map of the
 byte offsets of images within a file to allow for optimal reading
 performance.
 
-<h2>
+## Header
 
-Header
+| Bytes 0-7 (0x0-0x7) | Standard TIFF Header                                    |
+| 8-11 (0x8-0xb)      | Index map offset header (54773648 = 0x0343C790)         |
+| 12-15 (0xc-0xf)     | Index map offset                                        |
+| 16-19 (0x10-0x13)   | Display settings offset header (483765892 = 0x1CD5AE84) |
+| 20-23 (0x14-0x17)   | Display settings offset                                 |
+| 24-27 (0x18-0x1b)   | Comments offset header (99384722 = 0x05EC7D92)          |
+| 28-31 (0x1c-0x1f)   | Comments offset                                         |
+| 32-35 (0x20-0x23)   | Summary metadata header (2355492 = 0x0023F124)          |
+| 36-39 (0x24-0x27)   | Summary metadata length                                 |
+| 40- (0x28-)         | summary metadata (UTF-8 JSON)                           |
 
-</h2>
-
-**Bytes 0-7 (0x0-0x7)**: Standard TIFF Header
-
-**8-11 (0x8-0xb)**: Index map offset header (54773648 = 0x0343C790)
-
-**12-15 (0xc-0xf)**: Index map offset
-
-**16-19 (0x10-0x13)**: Display settings offset header (483765892 =
-0x1CD5AE84)
-
-**20-23 (0x14-0x17)**: Display settings offset
-
-**24-27 (0x18-0x1b)**: Comments offset header (99384722 = 0x05EC7D92)
-
-**28-31 (0x1c-0x1f)**: Comments offset
-
-**32-35 (0x20-0x23)**: Summary metadata header (2355492 = 0x0023F124)
-
-**36-39 (0x24-0x27)**: Summary metadata length
-
-**40- (0x28-)**: summary metadata (UTF-8 JSON)
-
-<h2>
-
-Image File Directories
-
-</h2>
+## Image File Directories
 
 The first IFD starts immediately after the summary metadata. Each IFD
 will contain the same set of TIFF tags, except for the first one in each
@@ -301,19 +261,11 @@ specification)
 -The value of the **MicroManagerMetadata** tag: image metadata (UTF-8
 JSON)
 
-<h2>
-
-End of file
-
-</h2>
+## End of file
 
 After the last IFD, the following constructs are written:
 
-<h3>
-
-Index map
-
-</h3>
+### Index map
 
 A listing of all the images contained in the file and their byte
 offsets. This allows a specific image to be quickly accessed without
@@ -334,11 +286,7 @@ a dialog asking if you would like to "fix" the data set. This fixing
 process consists of reading through all the IFDs present in the file to
 reconstruct the index map and then writing it to the end of the file.
 
-<h3>
-
-ImageJ Metadata
-
-</h3>
+### ImageJ Metadata
 
 A subset of the metadata used by the ImageJ TIFF writer
 [(ij.io.TiffEncoder.java)](http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java),
@@ -346,11 +294,7 @@ which allows contrast settings and acquisition comments to propagate
 into ImageJ. The position and size of this metadata is specified by the
 **IJMetadataCounts** and **IJMetadata** tags in the first IFD.
 
-<h3>
-
-OME XML Metadata
-
-</h3>
+### OME XML Metadata
 
 A string containing the OME XML metadata for this data set. This String
 is referenced by the first of the two **ImageDescription** tags in the
@@ -360,22 +304,14 @@ Since this String must be identical for all files in a data set, it is
 not written for any file until the entire data set is closed at the
 conclusion of an acquisition.
 
-<h3>
-
-ImageJ Image Description String
-
-</h3>
+### ImageJ Image Description String
 
 The ImageJ image description String that allows these files to opened
 correctly as hyperstacks in ImageJ. This String is referenced by the
 second of the two **ImageDescription** tags in the first IFD of the
 file.
 
-<h3>
-
-Image display settings
-
-</h3>
+### Image display settings
 
 Image display settings (channel contrast and colors), which are
 automatically rewritten whenever these are changed in an open data set.
@@ -384,11 +320,7 @@ The first 4 bytes of this block contain the **Display Settings Header**
 subsequent bytes reserved for display settings. A UTF-8 JSON string
 containing display settings is written.
 
-<h3>
-
-Acquisition and Image comments
-
-</h3>
+### Acquisition and Image comments
 
 A String containing acquisition and Image comments. The first 4 bytes of
 this block contain the **Comments Header** (84720485 = 0x050CBB65), and

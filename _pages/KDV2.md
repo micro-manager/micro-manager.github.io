@@ -100,7 +100,9 @@ focus drive power supply is plugged in. The default value is 1000ms, or
 
 To test the stage, open the Tools menu, choose "Script Panel" and type:
 
-`  bsh % mmc.setRelativePosition(mmc.getFocusDevice(), 1000);`
+```
+  bsh % mmc.setRelativePosition(mmc.getFocusDevice(), 1000);
+```
 
 The stage has to move 1 mm towards the sample. Make sure that the
 objective is far enough away from the sample before executing this

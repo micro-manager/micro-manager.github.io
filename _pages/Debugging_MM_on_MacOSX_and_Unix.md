@@ -11,15 +11,21 @@ Debugging of the C++ code on Mac and Unix can proceed as follows:
 cd to your ImageJ directory that contains a self-starting Micro-Manager
 plugin:
 
-`   cd ~/ImageJ`
+```
+   cd ~/ImageJ
+```
 
 Start gdb debugging java:
 
-`   $ gdb -arch i386 java`
+```
+   $ gdb -arch i386 java
+```
 
 Now tell java on gdb to run ImageJ:
 
-`  (gdb) r -cp ij.jar ij.ImageJ`
+```
+  (gdb) r -cp ij.jar ij.ImageJ
+```
 
 Control-C can interrupt execution.
 

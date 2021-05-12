@@ -19,14 +19,18 @@ allow it to install the Command Line Tools.
 A number of command-line tools are required to build Micro-Manager. The
 easiest way to obtain them is to use [Homebrew](http://brew.sh/):
 
-` brew install autoconf automake libtool pkg-config swig subversion ant`
+```
+ brew install autoconf automake libtool pkg-config swig subversion ant
+```
 
 ## Getting dependencies
 
 Boost C++ Libraries are required to build Micro-Manager. It is easiest
 to install it using Homebrew:
 
-` brew install boost`
+```
+ brew install boost
+```
 
 To build the Micro-Manager application, you also need the Java
 Development Kit. [JDK
@@ -57,18 +61,22 @@ See `doc/how-to-build.md` for generic build instructions.
 The most common way to build and install Micro-Manager is to run the
 following, in the root of the micromanager source tree:
 
-` ./autogen.sh`  
-` ./configure --enable-imagej-plugin=/path/to/ImageJ`  
-` make fetchdeps   # Required since SVN r14001-r14016`  
-` make`  
-` make install`
+```
+ ./autogen.sh
+ ./configure --enable-imagej-plugin=/path/to/ImageJ
+ make fetchdeps   # Required since SVN r14001-r14016
+ make
+ make install
+```
 
 The last step will print instructions for how to run the installed
 Micro-Manager.
 
 To get help with `./configure` options, type
 
-` ./configure --help`
+```
+ ./configure --help
+```
 
 If you use Java 6 ("Java for OS X" from Apple), use the following for
 the ./configure line:
@@ -87,28 +95,33 @@ the ./configure line:
 Some device adapters require extra dependencies. Most of these can be
 installed using Homebrew.
 
-` # To build USBManager`  
-` brew install libusb-compat`
+```
+# To build USBManager
+brew install libusb-compat
 
-` # To build HIDManager`  
-` brew install hidapi`
+# To build HIDManager
+brew install hidapi
 
-` # To build dc1394 and IIDC`  
-` brew install libdc1394`
+brew install libdc1394
 
-` # To build GPhoto2`  
-` brew install libgphoto2 freeimage`
+# To build GPhoto2
+brew install libgphoto2 freeimage
 
-` # To build OpenCVgrabber`  
-` brew install opencv`
+# To build OpenCVgrabber
+brew install opencv
+```
 
 See also: output of
 
-` ./DeviceAdapters/configure --help`
+```
+./DeviceAdapters/configure --help
+```
 
 or
 
-` ./configure --help=recursive`
+```
+./configure --help=recursive
+```
 
 Any vendor frameworks (mostly camera SDKs) will be automatically
 detected if installed in the default location.

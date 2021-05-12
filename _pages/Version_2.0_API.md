@@ -70,28 +70,26 @@ The primary functions you will likely be interested in are:
     [com.google.common.eventbus.Subscribe](http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/eventbus/Subscribe.html)
     annotation will be called when the event occurs. For example:
 
-<code>
+```
+import com.google.common.eventbus.Subscribe;
+import org.micromanager.data.Datastore;
+import org.micromanager.data.Image;
+import org.micromanager.data.NewImageEvent;
+import org.micromanager.Studio;
 
-`import com.google.common.eventbus.Subscribe;`  
-`import org.micromanager.data.Datastore;`  
-`import org.micromanager.data.Image;`  
-`import org.micromanager.data.NewImageEvent;`  
-`import org.micromanager.Studio;`
+public class MyClass {
+   public MyClass(Studio studio) {
+      Datastore myDatastore = studio.data().createRAMDatastore();
+      myDatastore.registerForEvents(this);
+   }
 
-`public class MyClass {`  
-`   public MyClass(Studio studio) {`  
-`      Datastore myDatastore = studio.data().createRAMDatastore();`  
-`      myDatastore.registerForEvents(this);`  
-`   }`
-
-`   @Subscribe`  
-`   public void onNewImage(NewImageEvent event) {`  
-`      Image newImage = event.getImage();`  
-`      // Examine the newly-added image...`  
-`   }`  
-`}`
-
-</code>
+   @Subscribe
+   public void onNewImage(NewImageEvent event) {
+      Image newImage = event.getImage();
+      // Examine the newly-added image...
+   }
+}
+```
 
 ### The Image class
 
@@ -180,20 +178,18 @@ saving arbitrary axes to disk.
 As with the `Metadata` and `SummaryMetadat` classes, `Coords` are
 generated using a builder.
 
-<code>
+```
+Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+// Convenience functions to set the standard axes
+builder.time(4); // 5th timepoint
+builder.channel(0); // 1st channel
+builder.position("polarization", 2); // Example custom axis
 
-`Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();`  
-`// Convenience functions to set the standard axes`  
-`builder.time(4); // 5th timepoint`  
-`builder.channel(0); // 1st channel`  
-`builder.position("polarization", 2); // Example custom axis`
-
-`Coords coords = builder.build();`  
-`int timepoint = coords.getPositionAt(Coords.TIME); // 4`  
-`int polarization = coords.getPositionAt("polarization"); // 2`  
-`int zSlice = coords.getPositionAt(Coords.Z) // -1`
-
-</code>
+Coords coords = builder.build();
+int timepoint = coords.getPositionAt(Coords.TIME); // 4
+int polarization = coords.getPositionAt("polarization"); // 2
+int zSlice = coords.getPositionAt(Coords.Z) // -1
+```
 
 ### The [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html)
 

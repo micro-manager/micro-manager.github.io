@@ -332,7 +332,9 @@ the C specification:
 If the command to move your state device to position 5 is `MOVE A,5`,
 then enter
 
-`   MOVE A\x2c5`
+```
+   MOVE A\x2c5
+```
 
 for the *SetPosition-command-5* property.
 
@@ -341,21 +343,27 @@ responses, and the command to ask if the shutter is open is 0x0b00 (or
 11 followed by 0 in decimal), you can set the *QueryState-command*
 property to any of the following equivalent strings:
 
-`   \x0b\x00`  
-`   \013\000`  
-`   \13\0`  
-`   \v\0`
+```
+   \x0b\x00
+   \013\000
+   \13\0
+   \v\0
+```
 
 (with *Command mode* set to *Binary*).
 
 If the response to that command is 0x0b01 for "open" and 0x0b02 for
 "closed", you will set the *QueryState-open-response* to e.g.
 
-`   \x0b\x01`
+```
+   \x0b\x01
+```
 
 and *QueryState-closed-response* to e.g.
 
-`   \x0b\x02`
+```
+   \x0b\x02
+```
 
 with *Response detection* set to *Variable-length binary*.
 

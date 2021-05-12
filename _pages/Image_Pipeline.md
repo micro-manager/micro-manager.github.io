@@ -22,7 +22,9 @@ the pixel bit depth) and a JSON Object of Metadata.
 In a plugin or script you can provide your class derived from
 TaggedImageAnalyzer to the acquisition engine:
 
-`acq.addImageProcessor(TestTaggedImageAnalyzer.class);`
+```
+acq.addImageProcessor(TestTaggedImageAnalyzer.class);
+```
 
 It will then analyze the images as soon as they are available, before
 sending them to be saved and displayed.

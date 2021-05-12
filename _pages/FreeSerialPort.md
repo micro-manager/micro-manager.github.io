@@ -23,74 +23,69 @@ In the Beanshell scripting environment, these functions are accessible
 using the "mmc" object. Ed Burgin send the following example to the MM
 mailing list:
 
-<code>
-
-`gui.clearMessageWindow();`  
-`update();`  
-`port = "COM5"; `  
-`command = "M114"; //gcode example reports current XYZ coordinates`  
-`commandTerminator = "\r"; `  
-`answerTerminator = "ok"; //reprap gcode terminates with this`  
-`mmc.setSerialPortCommand(port, command, commandTerminator); `  
-`answer = mmc.getSerialPortAnswer(port, answerTerminator); `  
-`print(answer);`
-
-</code>
+```
+gui.clearMessageWindow();
+update();
+port = "COM5"; 
+command = "M114"; //gcode example reports current XYZ coordinates
+commandTerminator = "\r"; 
+answerTerminator = "ok"; //reprap gcode terminates with this
+mmc.setSerialPortCommand(port, command, commandTerminator); 
+answer = mmc.getSerialPortAnswer(port, answerTerminator); 
+print(answer);
+```
 
 Here is an example of how to use 'readFromSerialPort' &
 'writeToSerialPort':
 
-<code>
+```
+import mmcorej.CharVector; 
+gui.clearMessageWindow();
+commandTerminator = "\r"; 
+answerTerminator = "ok"; 
+port = "COM11";
+update();
 
-`import mmcorej.CharVector; `  
-`gui.clearMessageWindow();`  
-`commandTerminator = "\r"; `  
-`answerTerminator = "ok"; `  
-`port = "COM11";`  
-`update();`
+readBuffer() {
+str1 = "BLANK";
+answer = mmc.readFromSerialPort(port);
+if (answer.capacity() > 0) {
+   for(i=0; i<answer.capacity(); i++){
+      if(str1 == "BLANK") {
+         str1 = "" + answer.get(i);
+      }   // you have to add the "" otherwise adds decimal value
+      else {
+         str1 = "" + str1 +(char)answer.get(i);
+      }
+  }// end loop
+  print(str1);
+}////////end if statement
+}///////////////////////////////////////end readBuffer
 
-`readBuffer() {`  
-`str1 = "BLANK";`  
-`answer = mmc.readFromSerialPort(port);`  
-`if (answer.capacity() > 0) {`  
-`   for(i=0; i<answer.capacity(); i++){`  
-`      if(str1 == "BLANK") {`  
-`         str1 = "" + answer.get(i);`  
-`      }   // you have to add the "" otherwise adds decimal value`  
-`      else {`  
-`         str1 = "" + str1 +(char)answer.get(i);`  
-`      }`  
-`  }// end loop`  
-`  print(str1);`  
-`}////////end if statement`  
-`}///////////////////////////////////////end readBuffer`
+readBuffer();
 
-`readBuffer();`
+Thread.sleep(200); //in milliseconds
 
-`Thread.sleep(200); //in milliseconds`
+//////////////////////message///////////////////////
+//command = "M114";  
+//G21: Set Units to Millimeters Example: G21 Units from  
+// now on are in millimeters. (This is the RepRap default.)
+//mmc.setSerialPortCommand(port, command, commandTerminator); 
 
-`//////////////////////message///////////////////////`  
-`//command = "M114";  `  
-`//G21: Set Units to Millimeters Example: G21 Units from  `  
-`// now on are in millimeters. (This is the RepRap default.)`  
-`//mmc.setSerialPortCommand(port, command, commandTerminator); `
+CharVector message = new CharVector(); 
+message.add('M'); 
+message.add('1'); 
+message.add('1'); 
+message.add('4'); 
+message.add('\r');  
 
-`CharVector message = new CharVector(); `  
-`message.add('M'); `  
-`message.add('1'); `  
-`message.add('1'); `  
-`message.add('4'); `  
-`message.add('\r');  `
+mmc.writeToSerialPort(port, message);
+print("message to COM is: " + message.capacity());
 
-`mmc.writeToSerialPort(port, message);`  
-`print("message to COM is: " + message.capacity());`
+////////////////////////reply//////////////
+gui.sleep(200); //in milliseconds
 
-`////////////////////////reply//////////////`  
-`gui.sleep(200); //in milliseconds`
-
-`readBuffer();`
-
-</code>
+readBuffer();
+```
 
 {% include Listserv_Search text="FreeSerialPort" %}
-

@@ -120,40 +120,42 @@ layout: page
 
 ### Startup Script (media/MMStartup.bsh)
 
-`   // Set FRAPPA galvo position to 6.5 degrees for this system's light`  
-`   // path.`  
-`   //`  
-`   // However the script won't run inside Micro-Manager since`  
-`   // tillimic.dll also uses log4j.  Therefore use a sub-shell as a`  
-``    // workaround (i.e. the `CMD /C` prefix). ``  
-`   exec("CMD /C C:/Python27/python C:/MM/frappa_bypass.py 6.5 2>&1");`
+```
+// Set FRAPPA galvo position to 6.5 degrees for this system's light
+// path.
+//
+// However the script won't run inside Micro-Manager since
+// tillimic.dll also uses log4j.  Therefore use a sub-shell as a
+// workaround (i.e. the CMD /C prefix).
+exec("CMD /C C:/Python27/python C:/MM/frappa_bypass.py 6.5 2>&1");
 
-`   // Laser shutter does not open on initialization, so as a workaround`  
-`   // this Python script keeps trying till it opens.`  
-`   exec("C:/Python27/python C:/MM/alc_shutter_toggle_until_open.py");`
+// Laser shutter does not open on initialization, so as a workaround
+// this Python script keeps trying till it opens.
+exec("C:/Python27/python C:/MM/alc_shutter_toggle_until_open.py");
 
-`   // Home the Z Piezo to the center of its range.`  
-`   mmc.setPosition("NanoScanZ", 50);`
+// Home the Z Piezo to the center of its range.
+mmc.setPosition("NanoScanZ", 50);
 
-`   // Crop sCMOS to spinning disk aperture.  If you need to change the`  
-``    // ROI values if the camera is moved, run `media/Show_roi_coordinates.bsh` ``  
-`   default_camera = mmc.getProperty("Core", "Camera");`  
-`   mmc.setProperty("Core", "Camera", " sCMOS");`  
-`   mmc.waitForSystem();`  
-`   mmc.setROI(526, 582, 1622, 1142);`  
-`   mmc.waitForSystem();`  
-`   mmc.setProperty("Core", "Camera", default_camera);`  
-`   mmc.waitForSystem();`
+// Crop sCMOS to spinning disk aperture.  If you need to change the
+// ROI values if the camera is moved, run media/Show_roi_coordinates.bsh
+default_camera = mmc.getProperty("Core", "Camera");
+mmc.setProperty("Core", "Camera", " sCMOS");
+mmc.waitForSystem();
+mmc.setROI(526, 582, 1622, 1142);
+mmc.waitForSystem();
+mmc.setProperty("Core", "Camera", default_camera);
+mmc.waitForSystem();
 
-`   // Startup with DIC channel.`  
-`   mmc.setConfig("Channels-Confocal", "DIC");`  
-`   gui.refreshGUI();  // Shows above selected channel.`
+// Startup with DIC channel.
+mmc.setConfig("Channels-Confocal", "DIC");
+gui.refreshGUI();  // Shows above selected channel.
 
-`   // For Emacs to understand this beanshell file`  
-`   // Local Variables:`  
-`   // mode: auto-fill`  
-`   // mode: java`  
-`   // End:`
+// For Emacs to understand this beanshell file
+// Local Variables:
+// mode: auto-fill
+// mode: java
+// End:
+```
 
 ### Python scripts
 
@@ -162,328 +164,330 @@ layout: page
 
 ### Configuration File (media/Spinning-disk.cfg)
 
-`   # Generated by Configurator on Wed Mar 20 18:52:39 CDT 2013`  
-`   `  
-`   # Reset`  
-`   Property,Core,Initialize,0`  
-`   `  
-`   # Devices`  
-`   Device,COM5,SerialManager,COM5`  
-`   Device,COM6,SerialManager,COM6`  
-`   Device,COM7,SerialManager,COM7`  
-`   Device,COM3,SerialManager,COM3`  
-`   Device,COM4,SerialManager,COM4`  
-`   Device,EMCCD,Andor,Andor`  
-`   Device,TIScope,NikonTI,TIScope`  
-`   Device,TINosePiece,NikonTI,TINosePiece`  
-`   Device,TIFilterBlock1,NikonTI,TIFilterBlock1`  
-`   Device,TIZDrive,NikonTI,TIZDrive`  
-`   Device,TIPFSOffset,NikonTI,TIPFSOffset`  
-`   Device,TIPFSStatus,NikonTI,TIPFSStatus`  
-`   Device,TITIRF,NikonTI,TITIRF`  
-`   Device,TIEpiShutter,NikonTI,TIEpiShutter`  
-`   Device,TIDiaShutter,NikonTI,TIDiaShutter`  
-`   Device,TILightPath,NikonTI,TILightPath`  
-`   Device,TIAnalyzer,NikonTI,TIAnalyzer`  
-`   Device,CSUX-Hub,CSUX,CSUX-Hub`  
-`   Device,CSUX-Dichroic Mirror,CSUX,CSUX-Dichroic Mirror`  
-`   Device,CSUX-Shutter,CSUX,CSUX-Shutter`  
-`   Device,CSUX-DriveSpeed,CSUX,CSUX-DriveSpeed`  
-`   Device,Wheel-sCMOS,CSUX,CSUX-Filter Wheel`  
-`   Device,AndorLaserCombiner,AndorLaserCombiner,AndorLaserCombiner`  
-`   Device, sCMOS,AndorSDK3,Andor sCMOS Camera`  
-`   Device,XYStage,Prior,XYStage`  
-`   Device,Wheel-EMCCD,SutterLambda,Wheel-A`  
-`   Device,Shutter-Transmitted,SutterLambda,Shutter-A`  
-`   Device,NanoScanZ,Prior,NanoScanZ`  
-`   `  
-`   # Pre-init settings for devices`  
-`   Property,COM5,AnswerTimeout,500.0000`  
-`   Property,COM5,BaudRate,9600`  
-`   Property,COM5,DelayBetweenCharsMs,0.0000`  
-`   Property,COM5,Handshaking,Off`  
-`   Property,COM5,Parity,None`  
-`   Property,COM5,StopBits,1`  
-`   Property,COM5,Verbose,1`  
-`   Property,COM6,AnswerTimeout,500.0000`  
-`   Property,COM6,BaudRate,9600`  
-`   Property,COM6,DelayBetweenCharsMs,0.0000`  
-`   Property,COM6,Handshaking,Off`  
-`   Property,COM6,Parity,None`  
-`   Property,COM6,StopBits,1`  
-`   Property,COM6,Verbose,1`  
-`   Property,COM7,AnswerTimeout,500.0000`  
-`   Property,COM7,BaudRate,9600`  
-`   Property,COM7,DelayBetweenCharsMs,0.0000`  
-`   Property,COM7,Handshaking,Off`  
-`   Property,COM7,Parity,None`  
-`   Property,COM7,StopBits,1`  
-`   Property,COM7,Verbose,1`  
-`   Property,COM3,AnswerTimeout,5000.0000`  
-`   Property,COM3,BaudRate,115200`  
-`   Property,COM3,DelayBetweenCharsMs,0.0000`  
-`   Property,COM3,Handshaking,Off`  
-`   Property,COM3,Parity,None`  
-`   Property,COM3,StopBits,1`  
-`   Property,COM3,Verbose,1`  
-`   Property,COM4,AnswerTimeout,500.0000`  
-`   Property,COM4,BaudRate,9600`  
-`   Property,COM4,DelayBetweenCharsMs,0.0000`  
-`   Property,COM4,Handshaking,Off`  
-`   Property,COM4,Parity,None`  
-`   Property,COM4,StopBits,1`  
-`   Property,COM4,Verbose,1`  
-`   Property,EMCCD,Camera,| iXon Ultra | DU897_BV | 7389 |`  
-`   Property,CSUX-Hub,Port,COM3`  
-`   Property,Wheel-sCMOS,WheelNumber,1`  
-`   Property,AndorLaserCombiner,MultiPortUnitPresent,1`  
-`   Property,XYStage,Port,COM5`  
-`   Property,Wheel-EMCCD,Port,COM4`  
-`   Property,Shutter-Transmitted,Port,COM7`  
-`   Property,NanoScanZ,Port,COM6`  
-`   `  
-`   # Pre-init settings for COM ports`  
-`   `  
-`   # Hub (parent) references`  
-`   Parent,TINosePiece,TIScope`  
-`   Parent,TIFilterBlock1,TIScope`  
-`   Parent,TIZDrive,TIScope`  
-`   Parent,TIPFSOffset,TIScope`  
-`   Parent,TIPFSStatus,TIScope`  
-`   Parent,TITIRF,TIScope`  
-`   Parent,TIEpiShutter,TIScope`  
-`   Parent,TIDiaShutter,TIScope`  
-`   Parent,TILightPath,TIScope`  
-`   Parent,TIAnalyzer,TIScope`  
-`   `  
-`   # Initialize`  
-`   Property,Core,Initialize,1`  
-`   `  
-`   # Delays`  
-`   `  
-`   # Roles`  
-`   Property,Core,Camera,EMCCD`  
-`   Property,Core,Shutter,AndorLaserCombiner`  
-`   Property,Core,Focus,TIZDrive`  
-`   Property,Core,AutoShutter,1`  
-`   `  
-`   # Camera-synchronized devices`  
-`   `  
-`   # Labels`  
-`   # TINosePiece`  
-`   Label,TINosePiece,5,6-      `  
-`   Label,TINosePiece,4,5-ApoTIRF 100x na 1.49`  
-`   Label,TINosePiece,3,4-ApoTIRF  60x na 1.49`  
-`   Label,TINosePiece,2,3-SPlanFLuor  40x na 0.60`  
-`   Label,TINosePiece,1,2-SPlanFLuor  20x na 0.45`  
-`   Label,TINosePiece,0,1-PlanFluor  10x na 0.30`  
-`   # TIFilterBlock1`  
-`   Label,TIFilterBlock1,5,6------`  
-`   Label,TIFilterBlock1,4,5-CFPHQ`  
-`   Label,TIFilterBlock1,3,4-YFPHQ`  
-`   Label,TIFilterBlock1,2,3-TxRed`  
-`   Label,TIFilterBlock1,1,2-GFPHQ`  
-`   Label,TIFilterBlock1,0,1-ANALY`  
-`   # TILightPath`  
-`   Label,TILightPath,3,Left80`  
-`   Label,TILightPath,2,Right100`  
-`   Label,TILightPath,1,Left100`  
-`   Label,TILightPath,0,Eye100`  
-`   # CSUX-Dichroic Mirror`  
-`   Label,CSUX-Dichroic Mirror,2,Quad`  
-`   Label,CSUX-Dichroic Mirror,1,488-568`  
-`   Label,CSUX-Dichroic Mirror,0,405-488-561-594`  
-`   # Wheel-sCMOS`  
-`   Label,Wheel-sCMOS,5,440-521-607-700`  
-`   Label,Wheel-sCMOS,4,542-27`  
-`   Label,Wheel-sCMOS,3,484-35`  
-`   Label,Wheel-sCMOS,2,607-36`  
-`   Label,Wheel-sCMOS,1,525-40`  
-`   Label,Wheel-sCMOS,0,447-60`  
-`   # Wheel-EMCCD`  
-`   Label,Wheel-EMCCD,9,Blocked-9`  
-`   Label,Wheel-EMCCD,8,Blocked-8`  
-`   Label,Wheel-EMCCD,7,Open`  
-`   Label,Wheel-EMCCD,6,440-521-607-700`  
-`   Label,Wheel-EMCCD,5,542-27`  
-`   Label,Wheel-EMCCD,4,484-35`  
-`   Label,Wheel-EMCCD,3,607-36`  
-`   Label,Wheel-EMCCD,2,525-40`  
-`   Label,Wheel-EMCCD,1,447-60`  
-`   Label,Wheel-EMCCD,0,512-630`  
-`   `  
-`   # Configuration presets`  
-`   # Group: Channels-Confocal`  
-`   # Preset: 561`  
-`   ConfigGroup,Channels-Confocal,561,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,561,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,561,Wheel-sCMOS,Label,607-36`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint488,0.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint561,3.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,561,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,561,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-Confocal,561,Wheel-EMCCD,Label,607-36`  
-`   ConfigGroup,Channels-Confocal,561,TILightPath,Label,Right100`  
-`   `  
-`   # Preset: 488`  
-`   ConfigGroup,Channels-Confocal,488,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,488,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,488,Wheel-sCMOS,Label,525-40`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint488,3.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,488,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,488,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-Confocal,488,Wheel-EMCCD,Label,525-40`  
-`   ConfigGroup,Channels-Confocal,488,TILightPath,Label,Right100`  
-`   `  
-`   # Preset: DIC`  
-`   ConfigGroup,Channels-Confocal,DIC,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,DIC,TILightPath,Label,Right100`  
-`   ConfigGroup,Channels-Confocal,DIC,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,DIC,Wheel-sCMOS,Label,440-521-607-700`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint488,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,DIC,Wheel-EMCCD,Label,Open`  
-`   ConfigGroup,Channels-Confocal,DIC,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,DIC,Core,Shutter,Shutter-Transmitted`  
-`   `  
-`   # Preset: 445`  
-`   ConfigGroup,Channels-Confocal,445,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,445,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,445,Wheel-EMCCD,Label,484-35`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint445,3.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint488,0.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,445,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,445,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-Confocal,445,Wheel-sCMOS,Label,484-35`  
-`   ConfigGroup,Channels-Confocal,445,TILightPath,Label,Right100`  
-`   `  
-`   # Preset: 515`  
-`   ConfigGroup,Channels-Confocal,515,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,515,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,515,Wheel-sCMOS,Label,542-27`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint488,0.0000`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint515,2.9900`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,515,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,515,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-Confocal,515,Wheel-EMCCD,Label,542-27`  
-`   ConfigGroup,Channels-Confocal,515,TILightPath,Label,Right100`  
-`   `  
-`   # Preset: 405`  
-`   ConfigGroup,Channels-Confocal,405,TIFilterBlock1,Label,6------`  
-`   ConfigGroup,Channels-Confocal,405,CSUX-Dichroic Mirror,Label,Quad`  
-`   ConfigGroup,Channels-Confocal,405,Wheel-sCMOS,Label,447-60`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint405,3.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint488,0.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,LaserPort,A`  
-`   ConfigGroup,Channels-Confocal,405,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-Confocal,405,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-Confocal,405,Wheel-EMCCD,Label,447-60`  
-`   ConfigGroup,Channels-Confocal,405,TILightPath,Label,Right100`  
-`   `  
-`   `  
-`   # Group: Channels-TIRF`  
-`   # Preset: TIRF 488`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,TITIRF,Mirror,In`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,TITIRF,Position,35000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,TILightPath,Label,Right100`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,Wheel-sCMOS,Label,440-521-607-700`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,LaserPort,C`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint405,0.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint445,0.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint488,3.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint515,0.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint561,0.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint594,0.0000`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,TIFilterBlock1,Label,5-CFPHQ`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,Core,AutoShutter,1`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,Core,Shutter,AndorLaserCombiner`  
-`   ConfigGroup,Channels-TIRF,TIRF 488,Wheel-EMCCD,Label,Open`  
-`   `  
-`   `  
-`   # Group: Select-Focus`  
-`   # Preset: NanoScanZ`  
-`   ConfigGroup,Select-Focus,NanoScanZ,Core,Focus,NanoScanZ`  
-`   `  
-`   # Preset: TIPFSOffset`  
-`   ConfigGroup,Select-Focus,TIPFSOffset,Core,Focus,TIPFSOffset`  
-`   `  
-`   # Preset: TIZDrive`  
-`   ConfigGroup,Select-Focus,TIZDrive,Core,Focus,TIZDrive`  
-`   `  
-`   `  
-`   # Group: System`  
-`   # Preset: Startup`  
-`   ConfigGroup,System,Startup,CSUX-Shutter,State,Open`  
-`   ConfigGroup,System,Startup,CSUX-DriveSpeed,State,5000`  
-`   ConfigGroup,System,Startup,Wheel-EMCCD,Speed,2`  
-`   ConfigGroup,System,Startup,EMCCD,Gain,100`  
-`   ConfigGroup,System,Startup, sCMOS,TriggerMode,Software (Recommended for Live Mode)`  
-`   `  
-`   `  
-`   # Group: Select-Camera`  
-`   # Preset: sCMOS`  
-`   ConfigGroup,Select-Camera,sCMOS,Core,Camera, sCMOS`  
-`   `  
-`   # Preset: EMCCD`  
-`   ConfigGroup,Select-Camera,EMCCD,Core,Camera,EMCCD`  
-`   `  
-`   `  
-`   # Group: Channels-Eye`  
-`   # Preset: DIC`  
-`   ConfigGroup,Channels-Eye,DIC,TIFilterBlock1,Label,1-ANALY`  
-`   ConfigGroup,Channels-Eye,DIC,TILightPath,Label,Eye100`  
-`   ConfigGroup,Channels-Eye,DIC,Core,AutoShutter,0`  
-`   ConfigGroup,Channels-Eye,DIC,Core,Shutter,Shutter-Transmitted`  
-`   `  
-`   `  
-`   # Group: EM-Gain`  
-`   # Preset: 250`  
-`   ConfigGroup,EM-Gain,250,EMCCD,Gain,250`  
-`   `  
-`   # Preset: 200`  
-`   ConfigGroup,EM-Gain,200,EMCCD,Gain,200`  
-`   `  
-`   # Preset: 150`  
-`   ConfigGroup,EM-Gain,150,EMCCD,Gain,150`  
-`   `  
-`   # Preset: 100`  
-`   ConfigGroup,EM-Gain,100,EMCCD,Gain,100`  
-`   `  
-`   # Preset: 300`  
-`   ConfigGroup,EM-Gain,300,EMCCD,Gain,300`  
-`   `  
-`   `  
-`   `  
-`   # PixelSize settings`
+```
+   # Generated by Configurator on Wed Mar 20 18:52:39 CDT 2013
+   
+   # Reset
+   Property,Core,Initialize,0
+   
+   # Devices
+   Device,COM5,SerialManager,COM5
+   Device,COM6,SerialManager,COM6
+   Device,COM7,SerialManager,COM7
+   Device,COM3,SerialManager,COM3
+   Device,COM4,SerialManager,COM4
+   Device,EMCCD,Andor,Andor
+   Device,TIScope,NikonTI,TIScope
+   Device,TINosePiece,NikonTI,TINosePiece
+   Device,TIFilterBlock1,NikonTI,TIFilterBlock1
+   Device,TIZDrive,NikonTI,TIZDrive
+   Device,TIPFSOffset,NikonTI,TIPFSOffset
+   Device,TIPFSStatus,NikonTI,TIPFSStatus
+   Device,TITIRF,NikonTI,TITIRF
+   Device,TIEpiShutter,NikonTI,TIEpiShutter
+   Device,TIDiaShutter,NikonTI,TIDiaShutter
+   Device,TILightPath,NikonTI,TILightPath
+   Device,TIAnalyzer,NikonTI,TIAnalyzer
+   Device,CSUX-Hub,CSUX,CSUX-Hub
+   Device,CSUX-Dichroic Mirror,CSUX,CSUX-Dichroic Mirror
+   Device,CSUX-Shutter,CSUX,CSUX-Shutter
+   Device,CSUX-DriveSpeed,CSUX,CSUX-DriveSpeed
+   Device,Wheel-sCMOS,CSUX,CSUX-Filter Wheel
+   Device,AndorLaserCombiner,AndorLaserCombiner,AndorLaserCombiner
+   Device, sCMOS,AndorSDK3,Andor sCMOS Camera
+   Device,XYStage,Prior,XYStage
+   Device,Wheel-EMCCD,SutterLambda,Wheel-A
+   Device,Shutter-Transmitted,SutterLambda,Shutter-A
+   Device,NanoScanZ,Prior,NanoScanZ
+   
+   # Pre-init settings for devices
+   Property,COM5,AnswerTimeout,500.0000
+   Property,COM5,BaudRate,9600
+   Property,COM5,DelayBetweenCharsMs,0.0000
+   Property,COM5,Handshaking,Off
+   Property,COM5,Parity,None
+   Property,COM5,StopBits,1
+   Property,COM5,Verbose,1
+   Property,COM6,AnswerTimeout,500.0000
+   Property,COM6,BaudRate,9600
+   Property,COM6,DelayBetweenCharsMs,0.0000
+   Property,COM6,Handshaking,Off
+   Property,COM6,Parity,None
+   Property,COM6,StopBits,1
+   Property,COM6,Verbose,1
+   Property,COM7,AnswerTimeout,500.0000
+   Property,COM7,BaudRate,9600
+   Property,COM7,DelayBetweenCharsMs,0.0000
+   Property,COM7,Handshaking,Off
+   Property,COM7,Parity,None
+   Property,COM7,StopBits,1
+   Property,COM7,Verbose,1
+   Property,COM3,AnswerTimeout,5000.0000
+   Property,COM3,BaudRate,115200
+   Property,COM3,DelayBetweenCharsMs,0.0000
+   Property,COM3,Handshaking,Off
+   Property,COM3,Parity,None
+   Property,COM3,StopBits,1
+   Property,COM3,Verbose,1
+   Property,COM4,AnswerTimeout,500.0000
+   Property,COM4,BaudRate,9600
+   Property,COM4,DelayBetweenCharsMs,0.0000
+   Property,COM4,Handshaking,Off
+   Property,COM4,Parity,None
+   Property,COM4,StopBits,1
+   Property,COM4,Verbose,1
+   Property,EMCCD,Camera,| iXon Ultra | DU897_BV | 7389 |
+   Property,CSUX-Hub,Port,COM3
+   Property,Wheel-sCMOS,WheelNumber,1
+   Property,AndorLaserCombiner,MultiPortUnitPresent,1
+   Property,XYStage,Port,COM5
+   Property,Wheel-EMCCD,Port,COM4
+   Property,Shutter-Transmitted,Port,COM7
+   Property,NanoScanZ,Port,COM6
+   
+   # Pre-init settings for COM ports
+   
+   # Hub (parent) references
+   Parent,TINosePiece,TIScope
+   Parent,TIFilterBlock1,TIScope
+   Parent,TIZDrive,TIScope
+   Parent,TIPFSOffset,TIScope
+   Parent,TIPFSStatus,TIScope
+   Parent,TITIRF,TIScope
+   Parent,TIEpiShutter,TIScope
+   Parent,TIDiaShutter,TIScope
+   Parent,TILightPath,TIScope
+   Parent,TIAnalyzer,TIScope
+   
+   # Initialize
+   Property,Core,Initialize,1
+   
+   # Delays
+   
+   # Roles
+   Property,Core,Camera,EMCCD
+   Property,Core,Shutter,AndorLaserCombiner
+   Property,Core,Focus,TIZDrive
+   Property,Core,AutoShutter,1
+   
+   # Camera-synchronized devices
+   
+   # Labels
+   # TINosePiece
+   Label,TINosePiece,5,6-      
+   Label,TINosePiece,4,5-ApoTIRF 100x na 1.49
+   Label,TINosePiece,3,4-ApoTIRF  60x na 1.49
+   Label,TINosePiece,2,3-SPlanFLuor  40x na 0.60
+   Label,TINosePiece,1,2-SPlanFLuor  20x na 0.45
+   Label,TINosePiece,0,1-PlanFluor  10x na 0.30
+   # TIFilterBlock1
+   Label,TIFilterBlock1,5,6------
+   Label,TIFilterBlock1,4,5-CFPHQ
+   Label,TIFilterBlock1,3,4-YFPHQ
+   Label,TIFilterBlock1,2,3-TxRed
+   Label,TIFilterBlock1,1,2-GFPHQ
+   Label,TIFilterBlock1,0,1-ANALY
+   # TILightPath
+   Label,TILightPath,3,Left80
+   Label,TILightPath,2,Right100
+   Label,TILightPath,1,Left100
+   Label,TILightPath,0,Eye100
+   # CSUX-Dichroic Mirror
+   Label,CSUX-Dichroic Mirror,2,Quad
+   Label,CSUX-Dichroic Mirror,1,488-568
+   Label,CSUX-Dichroic Mirror,0,405-488-561-594
+   # Wheel-sCMOS
+   Label,Wheel-sCMOS,5,440-521-607-700
+   Label,Wheel-sCMOS,4,542-27
+   Label,Wheel-sCMOS,3,484-35
+   Label,Wheel-sCMOS,2,607-36
+   Label,Wheel-sCMOS,1,525-40
+   Label,Wheel-sCMOS,0,447-60
+   # Wheel-EMCCD
+   Label,Wheel-EMCCD,9,Blocked-9
+   Label,Wheel-EMCCD,8,Blocked-8
+   Label,Wheel-EMCCD,7,Open
+   Label,Wheel-EMCCD,6,440-521-607-700
+   Label,Wheel-EMCCD,5,542-27
+   Label,Wheel-EMCCD,4,484-35
+   Label,Wheel-EMCCD,3,607-36
+   Label,Wheel-EMCCD,2,525-40
+   Label,Wheel-EMCCD,1,447-60
+   Label,Wheel-EMCCD,0,512-630
+   
+   # Configuration presets
+   # Group: Channels-Confocal
+   # Preset: 561
+   ConfigGroup,Channels-Confocal,561,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,561,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,561,Wheel-sCMOS,Label,607-36
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint488,0.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint561,3.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,561,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,561,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,561,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-Confocal,561,Wheel-EMCCD,Label,607-36
+   ConfigGroup,Channels-Confocal,561,TILightPath,Label,Right100
+   
+   # Preset: 488
+   ConfigGroup,Channels-Confocal,488,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,488,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,488,Wheel-sCMOS,Label,525-40
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint488,3.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,488,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,488,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,488,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-Confocal,488,Wheel-EMCCD,Label,525-40
+   ConfigGroup,Channels-Confocal,488,TILightPath,Label,Right100
+   
+   # Preset: DIC
+   ConfigGroup,Channels-Confocal,DIC,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,DIC,TILightPath,Label,Right100
+   ConfigGroup,Channels-Confocal,DIC,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,DIC,Wheel-sCMOS,Label,440-521-607-700
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint488,0.0000
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-Confocal,DIC,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,DIC,Wheel-EMCCD,Label,Open
+   ConfigGroup,Channels-Confocal,DIC,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,DIC,Core,Shutter,Shutter-Transmitted
+   
+   # Preset: 445
+   ConfigGroup,Channels-Confocal,445,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,445,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,445,Wheel-EMCCD,Label,484-35
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint445,3.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint488,0.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,445,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,445,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,445,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-Confocal,445,Wheel-sCMOS,Label,484-35
+   ConfigGroup,Channels-Confocal,445,TILightPath,Label,Right100
+   
+   # Preset: 515
+   ConfigGroup,Channels-Confocal,515,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,515,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,515,Wheel-sCMOS,Label,542-27
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint488,0.0000
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint515,2.9900
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,515,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,515,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,515,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-Confocal,515,Wheel-EMCCD,Label,542-27
+   ConfigGroup,Channels-Confocal,515,TILightPath,Label,Right100
+   
+   # Preset: 405
+   ConfigGroup,Channels-Confocal,405,TIFilterBlock1,Label,6------
+   ConfigGroup,Channels-Confocal,405,CSUX-Dichroic Mirror,Label,Quad
+   ConfigGroup,Channels-Confocal,405,Wheel-sCMOS,Label,447-60
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint405,3.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint488,0.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-Confocal,405,AndorLaserCombiner,LaserPort,A
+   ConfigGroup,Channels-Confocal,405,Core,AutoShutter,1
+   ConfigGroup,Channels-Confocal,405,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-Confocal,405,Wheel-EMCCD,Label,447-60
+   ConfigGroup,Channels-Confocal,405,TILightPath,Label,Right100
+   
+   
+   # Group: Channels-TIRF
+   # Preset: TIRF 488
+   ConfigGroup,Channels-TIRF,TIRF 488,TITIRF,Mirror,In
+   ConfigGroup,Channels-TIRF,TIRF 488,TITIRF,Position,35000
+   ConfigGroup,Channels-TIRF,TIRF 488,TILightPath,Label,Right100
+   ConfigGroup,Channels-TIRF,TIRF 488,Wheel-sCMOS,Label,440-521-607-700
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,LaserPort,C
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint405,0.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint445,0.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint488,3.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint515,0.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint561,0.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,AndorLaserCombiner,PowerSetpoint594,0.0000
+   ConfigGroup,Channels-TIRF,TIRF 488,TIFilterBlock1,Label,5-CFPHQ
+   ConfigGroup,Channels-TIRF,TIRF 488,Core,AutoShutter,1
+   ConfigGroup,Channels-TIRF,TIRF 488,Core,Shutter,AndorLaserCombiner
+   ConfigGroup,Channels-TIRF,TIRF 488,Wheel-EMCCD,Label,Open
+   
+   
+   # Group: Select-Focus
+   # Preset: NanoScanZ
+   ConfigGroup,Select-Focus,NanoScanZ,Core,Focus,NanoScanZ
+   
+   # Preset: TIPFSOffset
+   ConfigGroup,Select-Focus,TIPFSOffset,Core,Focus,TIPFSOffset
+   
+   # Preset: TIZDrive
+   ConfigGroup,Select-Focus,TIZDrive,Core,Focus,TIZDrive
+   
+   
+   # Group: System
+   # Preset: Startup
+   ConfigGroup,System,Startup,CSUX-Shutter,State,Open
+   ConfigGroup,System,Startup,CSUX-DriveSpeed,State,5000
+   ConfigGroup,System,Startup,Wheel-EMCCD,Speed,2
+   ConfigGroup,System,Startup,EMCCD,Gain,100
+   ConfigGroup,System,Startup, sCMOS,TriggerMode,Software (Recommended for Live Mode)
+   
+   
+   # Group: Select-Camera
+   # Preset: sCMOS
+   ConfigGroup,Select-Camera,sCMOS,Core,Camera, sCMOS
+   
+   # Preset: EMCCD
+   ConfigGroup,Select-Camera,EMCCD,Core,Camera,EMCCD
+   
+   
+   # Group: Channels-Eye
+   # Preset: DIC
+   ConfigGroup,Channels-Eye,DIC,TIFilterBlock1,Label,1-ANALY
+   ConfigGroup,Channels-Eye,DIC,TILightPath,Label,Eye100
+   ConfigGroup,Channels-Eye,DIC,Core,AutoShutter,0
+   ConfigGroup,Channels-Eye,DIC,Core,Shutter,Shutter-Transmitted
+   
+   
+   # Group: EM-Gain
+   # Preset: 250
+   ConfigGroup,EM-Gain,250,EMCCD,Gain,250
+   
+   # Preset: 200
+   ConfigGroup,EM-Gain,200,EMCCD,Gain,200
+   
+   # Preset: 150
+   ConfigGroup,EM-Gain,150,EMCCD,Gain,150
+   
+   # Preset: 100
+   ConfigGroup,EM-Gain,100,EMCCD,Gain,100
+   
+   # Preset: 300
+   ConfigGroup,EM-Gain,300,EMCCD,Gain,300
+   
+   
+   
+   # PixelSize settings
+```
 
 {% include Documentation_Sidebar text="" %}

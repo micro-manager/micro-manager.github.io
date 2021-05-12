@@ -39,13 +39,17 @@ $(SRCDIR)/configure.common: Index: configure.common \_\_NOTOC\_\_
 configure.common (revision 5359) +++ configure.common (working copy) @@
 -67,8 +67,8 @@
 
-`  LPTHREAD="-lpthread"`  
-`  DEVICEADAPTERPATH="/usr/lib/micro-manager"`  
-`  JARPATH="/usr/share/java"`
+```
+  LPTHREAD="-lpthread"
+  DEVICEADAPTERPATH="/usr/lib/micro-manager"
+  JARPATH="/usr/share/java"
+```
 
 \- LIBEXTA="so" - LIBEXTB="a" + \#LIBEXTA="so" + \#LIBEXTB="a"
 
-`  ;;`
+```
+  ;;
+```
 
 esac AC\_MSG\_RESULT($LPTHREAD)
 

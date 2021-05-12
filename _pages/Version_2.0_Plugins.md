@@ -35,10 +35,12 @@ For example, if you want to add a new MenuPlugin to the Plugins menu,
 then you would need to have a plugin class that looks something like
 this:
 
-`@Plugin(type = MenuPlugin.class)`  
-`public class MyPlugin implements MenuPlugin, SciJavaPlugin {`  
-`...plugin implementation goes here...`  
-`}`
+```
+@Plugin(type = MenuPlugin.class)
+public class MyPlugin implements MenuPlugin, SciJavaPlugin {
+...plugin implementation goes here...
+}
+```
 
 ## Plugin instantiation
 
@@ -114,10 +116,10 @@ program.
 
 [MenuPlugin](http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html)
 plugins are displayed in the Plugins menu. The
-`[`[`http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#getSubMenu`](http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#getSubMenu)`() getSubMenu()]`
+[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#getSubMenu()](http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#getSubMenu())
 method allows them to declare where in the Plugins menu they appear, and
 the
-`[`[`http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#onPluginSelected`](http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#onPluginSelected)`() onPluginSelected()]`
+[http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#onPluginSelected()](http://valelab.ucsf.edu/~MM/doc-2.0.0-alpha/mmstudio/org/micromanager/MenuPlugin.html#onPluginSelected())
 method is called when the user selects their entry from the menu.
 
 Most plugins are MenuPlugins. One good example is the RecallPlugin.

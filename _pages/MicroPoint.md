@@ -22,14 +22,18 @@ FTDI Virtual COM Port driver is already installed, nothing further needs
 to be done. On Windows, the installed driver shows up in the Device
 Manager as:
 
-`     Ports (COM & LPT)`  
-``      `-USB Serial Port (COM*) ``
+```
+     Ports (COM & LPT)
+        -USB Serial Port (COM*)
+```
 
 When the MicroPoint is not installed, it shows up in the Device Manager
 as:
 
-`     Other devices`  
-``      `-(?) USB I/O 24 R ``
+```
+     Other devices
+        -(?) USB I/O 24 R
+```
 
 To install the FTDI Virtual COM Port driver visit [MyAndor
 website](http://www.andor.com/my/user/) and find the public driver under

@@ -94,7 +94,5 @@ define the hub device (and the serial port behind which the hub lives).
 
 {% include Note text="This adapter sends commands one by one (i.e., it sends a command and waits for an answer before it will send the next command). Performance can be improved by sending commands without waiting for an answer and the source code has some facilities to do this.  Volunteers to work on this will be highly appreciated by all users of the adapter!" %}
 
-`--`[`Nico`](User:Nico "wikilink")` 18:20, 25 August 2007 (PDT)`
-
 {% include Listserv_Search text="Nikon" %}
 

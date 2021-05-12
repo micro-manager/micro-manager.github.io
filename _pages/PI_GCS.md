@@ -118,16 +118,20 @@ handshaking'. The baudrate of the controller can be changed (defaults to
 to connect with the controller and change the default baudrate. For
 E-816 based controllers this can be done with the "BDR" command:
 
-`BDR 57.6`  
-`BDR?`  
-`WPA 100`  
-`RST`
+```
+BDR 57.6
+BDR?
+WPA 100
+RST
+```
 
 For controllers supporting GCS2 (E-753, E-712) use "IFS":
 
-`IFS 100 RSBAUD 57600`  
-`IFS?`  
-`RBT`
+```
+IFS 100 RSBAUD 57600
+IFS?
+RBT
+```
 
 To use the PI Adapter, select "PI\_GCS" as library and "PIZStage" as
 adapter in the Hardware Configuration Wizard. The PIZStage has two

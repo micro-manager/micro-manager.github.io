@@ -18,13 +18,14 @@ For clarity, the types returned by the function calls are included. The
 Beanshell environment in the Script Panel does not know all these types.
 You can either import those types explicitly, e.g.
 
-`import org.micromanager.data.Datastore;`
+```
+import org.micromanager.data.Datastore;
+```
 
 or you can leave out the type altogether.
 
 This page makes use of many objects that are more fully described in the
-[main 2.0 API
-documentation](https://micro-manager.org/wiki/Version_2.0_API).
+[main 2.0 API documentation](https://micro-manager.org/wiki/Version_2.0_API).
 
 How do I...
 
@@ -33,8 +34,10 @@ How do I...
 If you just want to snap an image and have it pop up in the viewer, then
 you want to access the `SnapLiveManager` object:
 
-`import java.util.List;`  
-`List images = mm.live().snap(true);`
+```
+import java.util.List;
+List images = mm.live().snap(true);
+```
 
 The boolean value passed in will tell the SnapLiveManager that you want
 to see the images that were snapped; the returned List of Image objects
@@ -45,13 +48,17 @@ using a multi-camera setup.
 
 If you have an Image object - for instance, by snapping one:
 
-`images = mm.live().snap(false);`  
-`image = images.get(0);`
+```
+images = mm.live().snap(false);
+image = images.get(0);
+```
 
 and you want to create a new display window and display it, you can use
 the `DisplayManager` object:
 
-`Datastore store = mm.displays().show(image);`
+```
+Datastore store = mm.displays().show(image);
+```
 
 This will create a new Datastore and DisplayWindow, add the image to the
 Datastore, and return it. You can then add new images to the Datastore
@@ -63,7 +70,9 @@ the window.
 If you have data in an open window that you want to access, you can
 readily do that through the `DisplayManager` interface:
 
-`Datastore store = mm.displays().getCurrentWindow().getDatastore();`
+```
+Datastore store = mm.displays().getCurrentWindow().getDatastore();
+```
 
 The above code will retrieve the topmost `DisplayWindow` and then
 extract the `Datastore` that contains the data that the `DisplayWindow`
@@ -71,43 +80,55 @@ presents.
 
 From there, you can request images via their `Coords`:
 
-`Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();`  
-`builder = builder.z(2).time(5).channel(1).stagePosition(0);`  
-`Coords coords = builder.build();`  
-`Image image = store.getImage(coords);`
+```
+Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+builder = builder.z(2).time(5).channel(1).stagePosition(0);
+Coords coords = builder.build();
+Image image = store.getImage(coords);
+```
 
 You can access the image's `Metadata`:
 
-`import org.micromanager.data.Metadata;`
+```
+import org.micromanager.data.Metadata;
 
-`Metadata metadata = image.getMetadata();`  
-`Double exposure = metadata.getExposureMs();`
+Metadata metadata = image.getMetadata();
+Double exposure = metadata.getExposureMs();
+```
 
 You can access the dataset's `SummaryMetadata` as a whole:
 
-`import org.micromanager.data.SummaryMetadata;`  
-`SummaryMetadata summary = store.getSummaryMetadata();`  
-`String[] channels = summary.getChannelNames();`
+```
+import org.micromanager.data.SummaryMetadata;
+SummaryMetadata summary = store.getSummaryMetadata();
+String[] channels = summary.getChannelNames();
+```
 
 If the dataset has not been frozen, then you can modify it, for example
 by adding new images:
 
-`import java.util.List;`  
-`List newImages = mm.live().snap(false);`  
-`Image newImage = newImages.get(0);`  
-`newImage = newImage.copyAtCoords(coords.copy().time(6).build());`  
-`store.putImage(newImage);`
+```
+import java.util.List;
+List newImages = mm.live().snap(false);
+Image newImage = newImages.get(0);
+newImage = newImage.copyAtCoords(coords.copy().time(6).build());
+store.putImage(newImage);
+```
 
 ### Control live mode?
 
 As above, you want the `SnapLiveManager` object. You can ask if live
 mode is on or off using:
 
-`boolean isOn = mm.live().getIsLiveModeOn();`
+```
+boolean isOn = mm.live().getIsLiveModeOn();
+```
 
 And you can turn live mode on or off with:
 
-`mm.live().setLiveMode(isOn);`
+```
+mm.live().setLiveMode(isOn);
+```
 
 For example, `mm.live().setLiveMode(false)` would turn live mode off,
 regardless of whether or not it was currently on.
@@ -117,9 +138,11 @@ example, changing the ROI of a camera that can't change ROIs
 mid-acquisition), but want to restore live mode to the state it was in
 after you have performed that action, then you can suspend live mode:
 
-`mm.live().setSuspended(true);`  
-`...perform some action...`  
-`mm.live().setSuspended(false);`
+```
+mm.live().setSuspended(true);
+...perform some action...
+mm.live().setSuspended(false);
+```
 
 If live mode is on, then it will turn off when you call
 `setSuspended(true)`, and it will re-start when you call
@@ -129,11 +152,15 @@ If live mode is on, then it will turn off when you call
 
 You have two similar options here:
 
-`mm.acquisitions().runAcquisition();`
+```
+mm.acquisitions().runAcquisition();
+```
 
 and
 
-`mm.acquisitions().runAcquisition(String name, String root);`
+```
+mm.acquisitions().runAcquisition(String name, String root);
+```
 
 Both will run an acquisition using the current MDA settings; the latter
 method will also allow you to specify where data should be saved. Both
@@ -141,7 +168,9 @@ methods return a `Datastore` that contains the acquired images.
 
 Note also this method:
 
-`mm.acquisitions().loadAcquisition(String path);`
+```
+mm.acquisitions().loadAcquisition(String path);
+```
 
 This method allows you to load a previously-saved set of acquisition
 settings, automatically populating the fields in the MDA dialog. You can
@@ -157,40 +186,42 @@ source) by talking to the Core. By changing the coordinates of the
 images, you can create a timeseries, Z-stack, multi-channel, et cetera
 dataset.
 
-`import java.util.List;`  
-`import org.micromanager.data.Coords;`  
-`import org.micromanager.data.Datastore;`  
-`import org.micromanager.data.Image;`
+```
+import java.util.List;
+import org.micromanager.data.Coords;
+import org.micromanager.data.Datastore;
+import org.micromanager.data.Image;
 
-`// A RAM datastore stores all of its images on RAM, not on the hard drive.`  
-`// There are other options as described in the DataManager documentation.`  
-`Datastore store = mm.data().createRAMDatastore();`  
-`// Create a display for the datastore. This won't actually show up until there`  
-`// are images to see, though.`  
-`mm.displays().createDisplay(store);`
+// A RAM datastore stores all of its images on RAM, not on the hard drive.
+// There are other options as described in the DataManager documentation.
+Datastore store = mm.data().createRAMDatastore();
+// Create a display for the datastore. This won't actually show up until there
+// are images to see, though.
+mm.displays().createDisplay(store);
 
-`// Snap an image. Don't display it in the snap/live display.`  
-`List images = mm.live().snap(false);`  
-`// Let's assume for now that we aren't using a multi-camera setup, so the`  
-`// above list only has one element.`  
-`Image image = images.get(0);`  
-`// Set the time and channel indices for this image. Coordinate axes that you`  
-`// don't care about can be left alone.`  
-`Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();`  
-`builder = builder.time(0).channel(0);`  
-`image = image.copyAtCoords(builder.build());`  
-`store.putImage(image);`
+// Snap an image. Don't display it in the snap/live display.
+List images = mm.live().snap(false);
+// Let's assume for now that we aren't using a multi-camera setup, so the
+// above list only has one element.
+Image image = images.get(0);
+// Set the time and channel indices for this image. Coordinate axes that you
+// don't care about can be left alone.
+Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+builder = builder.time(0).channel(0);
+image = image.copyAtCoords(builder.build());
+store.putImage(image);
 
-`// Snap another image.`  
-`image = mm.live().snap(false).get(0);`  
-`// Put it as the next channel.`  
-`builder = builder.channel(1);`  
-`image = image.copyAtCoords(builder.build());`  
-`store.putImage(image);`
+// Snap another image.
+image = mm.live().snap(false).get(0);
+// Put it as the next channel.
+builder = builder.channel(1);
+image = image.copyAtCoords(builder.build());
+store.putImage(image);
 
-`// Save the datastore.`  
-`String savePath = "path to where you want to save data";`  
-`store.save(Datastore.SaveMode.MULTIPAGE_TIFF, savePath);`
+// Save the datastore.
+String savePath = "path to where you want to save data";
+store.save(Datastore.SaveMode.MULTIPAGE_TIFF, savePath);
+```
 
 ### Control the core?
 
@@ -198,10 +229,14 @@ The MMCore is the same as it's always been, so methods for setting
 hardware properties, snapping images, manually running sequences, etc.
 are unchanged. You can access the core via
 
-`mm.core()`
+```
+mm.core()
+```
 
 or
 
-`mm.getCMMCore()`
+```
+mm.getCMMCore()
+```
 
 &lt;INCLUDE 2.0\_Sidebar text="😎"&gt;

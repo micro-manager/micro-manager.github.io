@@ -123,8 +123,10 @@ Code](Micro-Manager_Source_Code "wikilink") inside the `projects`
 directory, using your Subversion client. This should result in the
 following directories:
 
-`projects\micromanager`  
-`projects\3rdpartypublic`
+```
+projects\micromanager
+projects\3rdpartypublic
+```
 
 ### Vendor SDKs and libraries
 
@@ -269,32 +271,40 @@ Before running the Ant targets described below, you must first run the
 following command, which downloads some Java libraries required by
 Micro-Manager:
 
-` ant -f buildscripts/fetchdeps.xml`  
-` ant build-buildtools`
+```
+ ant -f buildscripts/fetchdeps.xml
+ ant build-buildtools
+```
 
 Each Java (and Clojure) component has a `build.xml` (an Ant build
 script):
 
-` MMCoreJ_wrap\build.xml`  
-` mmstudio\build.xml`  
-` acqEngine\build.xml`  
-` plugins\*\build.xml`  
-` autofocus\build.xml`
+```
+ MMCoreJ_wrap\build.xml
+ mmstudio\build.xml
+ acqEngine\build.xml
+ plugins\*\build.xml
+ autofocus\build.xml
+```
 
 See below about the required order of building.
 
 To build one of these components, open the Command Prompt, and change to
 the directory containing the build script. Then type
 
-` ant jar`
+```
+ ant jar
+```
 
 This should produce the jar file in `build\Java`. (Ant automatically
 uses the `build.xml` file in the current directory.)
 
 For example,
 
-` cd MMCoreJ_wrap`  
-` ant jar`
+```
+ cd MMCoreJ_wrap
+ ant jar
+```
 
 will produce `build\Java\MMCoreJ.jar`.
 
@@ -320,8 +330,10 @@ It is possible for the build to drop into an inconsistent state when the
 source code is updated. The following might fix it (at the root of the
 source tree):
 
-` ant clean-all`  
-` rmdir /s /q dependencies`
+```
+ ant clean-all
+ rmdir /s /q dependencies
+```
 
 Afterwards you will need to go back to the start of this section and
 re-run `ant -f buildscripts/fetchdeps.xml`
@@ -335,14 +347,18 @@ individual build scripts for each Java component.
 Open the Command Prompt, and change to the `projects\micromanager`
 directory. Type
 
-` ant -p`
+```
+ ant -p
+```
 
 This should list a number of options.
 
 To build all C++ components (similar to building the `micromanager.sln`
 Solution in Visual Studio), type
 
-` ant build-cpp -Dmm.build.failonerror=false -Dmm.architecture=Win32`
+```
+ ant build-cpp -Dmm.build.failonerror=false -Dmm.architecture=Win32
+```
 
 Setting the `mm.build.failonerror` property to `false` allows the build
 to continue even if some of the projects (e.g. device adapters that
@@ -355,7 +371,9 @@ By default, it is `x64` on 64-bit Windows and `Win32` otherwise.
 
 The command
 
-` ant build -Dmm.build.failonerror=false -Dmm.architecture=Win32`
+```
+ ant build -Dmm.build.failonerror=false -Dmm.architecture=Win32
+```
 
 will build everything (all C++, Java, and Clojure compoenets).
 
@@ -365,7 +383,9 @@ components).
 
 You can then type
 
-` ant stage-only -Dmm.architecture=Win32`
+```
+ ant stage-only -Dmm.architecture=Win32
+```
 
 This will construct a near-complete Micro-Manager installation in the
 `stage\Release\Win32` directory. The only thing lacking is the Java
@@ -376,10 +396,12 @@ JDK installation before launching `ImageJ.exe`. (Note that the
 To recap, the steps to build everything available with the default
 architecture are:
 
-` ant -f buildscripts\fetchdeps.xml`  
-` ant build -Dmm.build.failonerror=false`  
-` ant stage-only`  
-` (then copy over jre folder)`
+```
+ant -f buildscripts\fetchdeps.xml
+ant build -Dmm.build.failonerror=false
+ant stage-only
+(then copy over jre folder)
+```
 
 The `stage`, `run` and `package` targets are not yet fully implemented
 for general use (they expect files to be present at specific paths).
