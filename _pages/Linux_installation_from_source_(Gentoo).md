@@ -11,6 +11,8 @@ Micro-Manger is available from the microscopy-overlay:
 
 After adding the overlay, install it using:
 
-`       # emerge micro-manager`
+```
+       # emerge micro-manager
+```
 
 {% include Programming_Sidebar text="" %}

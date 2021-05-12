@@ -19,7 +19,9 @@ Also, a route for 255.255.255.255 may need to be added to point to the
 adapter on which the camera will be plugged (or to the switch on which
 the camera will be). This can be done with the following command:
 
-` > sudo route -n add 255.255.255.255 169.254.42.97`
+```
+ > sudo route -n add 255.255.255.255 169.254.42.97
+```
 
 where 169.254.42.97 is the IP (self-assigned or assigned by you) of the
 adapter

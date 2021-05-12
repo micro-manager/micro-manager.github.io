@@ -73,11 +73,15 @@ series of errors.
 
 You can automate generation of such catch blocks in Eclipse by going to:
 
-`Preferences > Java > Code Templates > Code > Catch block body > Edit...`
+```
+Preferences > Java > Code Templates > Code > Catch block body > Edit...
+```
 
 and change the Pattern to:
 
-`// ${todo} Auto-generated catch block`  
-`ReportingUtils.showError(${exception_var});`
+```
+// ${todo} Auto-generated catch block
+ReportingUtils.showError(${exception_var});
+```
 
 {% include Programming_Sidebar text="" %}

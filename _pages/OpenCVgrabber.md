@@ -37,10 +37,12 @@ please contact us with your requests.
 
 Features
 
-`   Simplicity`  
-`   Standard resolutions`  
-`   Colour and greyscale modes`  
-`   Exposure control for cameras`
+```
+   Simplicity
+   Standard resolutions
+   Colour and greyscale modes
+   Exposure control for cameras
+```
 
 Installation
 

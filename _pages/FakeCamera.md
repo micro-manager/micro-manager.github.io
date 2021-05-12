@@ -91,7 +91,9 @@ following placeholders:
 <tr>
 <td markdown="1">
 
-`??`
+```
+??
+```
 
 </td>
 <td markdown="1">
@@ -102,7 +104,9 @@ Position of focus stage
 <tr>
 <td markdown="1">
 
-`?{`<prec>`}?`
+```
+?{<prec>}?
+```
 
 </td>
 <td markdown="1">
@@ -113,7 +117,9 @@ Position of focus stage, with precision <prec>
 <tr>
 <td markdown="1">
 
-`?[`<stage>`]`
+```
+?[<stage>]
+```
 
 </td>
 <td markdown="1">
@@ -124,7 +130,9 @@ Position of stage <stage>
 <tr>
 <td markdown="1">
 
-`?{`<prec>`}[`<stage>`]`
+```
+?{<prec>}[<stage>]
+```
 
 </td>
 <td markdown="1">
@@ -165,36 +173,48 @@ The examples assume the following stage positions:
 <tr>
 <td markdown="1">
 
-`C:\imgs\img_??.png`
+```
+C:\imgs\img_??.png
+```
 
 </td>
 <td markdown="1">
 
-`C:\imgs\media/Img_7.png`
-
-</td>
-</tr>
-<tr>
-<td markdown="1">
-
-`C:\imgs\img_??_?[x-Axis]_?[y-Axis].png`
-
-</td>
-<td markdown="1">
-
-`C:\imgs\media/Img_7_3_-1.png`
+```
+C:\imgs\media/Img_7.png
+```
 
 </td>
 </tr>
 <tr>
 <td markdown="1">
 
-`C:\imgs\img_?{1}?_?{2}[x-Axis]_?[y-Axis].png`
+```
+C:\imgs\img_??_?[x-Axis]_?[y-Axis].png
+```
 
 </td>
 <td markdown="1">
 
-`C:\imgs\img_7.4_3.media/52_-1.png`
+```
+C:\imgs\media/Img_7_3_-1.png
+```
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+```
+C:\imgs\img_?{1}?_?{2}[x-Axis]_?[y-Axis].png
+```
+
+</td>
+<td markdown="1">
+
+```
+C:\imgs\img_7.4_3.media/52_-1.png
+```
 
 </td>
 </tr>

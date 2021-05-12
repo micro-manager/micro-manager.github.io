@@ -269,31 +269,33 @@ You can easily check USB bus position with **lsusb -t**. The shell
 output below shows that the Clara (Vendor 0x136e Product 0x000e) has
 been correctly plugged into its own USB bus (Bus\# 1):
 
-`     $ lsusb -t`  
-`     Bus#  5`  
-``      `-Dev#   1 Vendor 0x1d6b Product 0x0001 ``  
-`     Bus#  4`  
-``      `-Dev#   1 Vendor 0x1d6b Product 0x0001 ``  
-`       |-Dev#   2 Vendor 0x046d Product 0xc045`  
-``        `-Dev#   3 Vendor 0x2341 Product 0x0001 ``  
-`     Bus#  3`  
-``      `-Dev#   1 Vendor 0x1d6b Product 0x0001 ``  
-``        `-Dev#   2 Vendor 0x03f9 Product 0x0100 ``  
-`     Bus#  2`  
-``      `-Dev#   1 Vendor 0x1d6b Product 0x0001 ``  
-`     Bus#  1`  
-``      `-Dev#   1 Vendor 0x1d6b Product 0x0002 ``  
-``        `-Dev#   6 Vendor 0x136e Product 0x000e ``
+```
+$ lsusb -t
+Bus#  5
+ -Dev#   1 Vendor 0x1d6b Product 0x0001 
+Bus#  4
+ -Dev#   1 Vendor 0x1d6b Product 0x0001 
+  |-Dev#   2 Vendor 0x046d Product 0xc045
+   -Dev#   3 Vendor 0x2341 Product 0x0001 
+Bus#  3
+ -Dev#   1 Vendor 0x1d6b Product 0x0001 
+   -Dev#   2 Vendor 0x03f9 Product 0x0100 
+Bus#  2
+ -Dev#   1 Vendor 0x1d6b Product 0x0001 
+Bus#  1
+ -Dev#   1 Vendor 0x1d6b Product 0x0002 
+   -Dev#   6 Vendor 0x136e Product 0x000e 
 
-`     $ lsusb`  
-`     Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub`  
-`     Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse`  
-`     Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub`  
-`     Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard`  
-`     Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub`  
-`     Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub`  
-`     Bus 001 Device 006: ID 136e:000e  `  
-`     Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub`
+$ lsusb
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 004 Device 002: ID 046d:c045 Logitech, Inc. Optical Mouse
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 002: ID 03f9:0100 KeyTronic Corp. Keyboard
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 006: ID 136e:000e  
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+```
 
 ## Resources
 
@@ -324,8 +326,10 @@ To fix this, update the Andor library used by Micromanager by copying
 the library file from the Andor Driver Pack to your Micro-Manager
 installation directory:
 
-`   C:\Program Files\Andor Driver Pack 2\atmcd32d.dll`  
-`   C:\Program Files\Andor Driver Pack 2\atmcd64d.dll`
+```
+   C:\Program Files\Andor Driver Pack 2\atmcd32d.dll
+   C:\Program Files\Andor Driver Pack 2\atmcd64d.dll
+```
 
 ### Windows drivers
 
@@ -381,7 +385,9 @@ the driver and choose:
 
 ...and use the path:
 
-`   C:\Program Files\Andor Driver Pack 2\Device Drivers\`
+```
+   C:\Program Files\Andor Driver Pack 2\Device Drivers\
+```
 
 #### Uninstall PCI/e card to update
 

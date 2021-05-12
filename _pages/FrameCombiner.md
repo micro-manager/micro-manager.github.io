@@ -50,8 +50,7 @@ Please report any issue to
 
 # Authors
 
-`FrameCombiner` was written by [Hadrien
-Mary](mailto:hadrien.mary@gmail.com).
+`FrameCombiner` was written by [Hadrien Mary](mailto:hadrien.mary@gmail.com).
 
 This work started in 2016 at the [Gary Brouhard
 laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.

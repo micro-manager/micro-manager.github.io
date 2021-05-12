@@ -177,7 +177,9 @@ in several ways:
 
 #### Simple Z Stack
 
-`The same Z-slices are imaged at every XY position, creating a tiled cuboidal volume`
+```
+The same Z-slices are imaged at every XY position, creating a tiled cuboidal volume
+```
 
 #### Volume between two surfaces
 

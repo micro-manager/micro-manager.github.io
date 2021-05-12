@@ -24,61 +24,61 @@ X 10.4 (Tiger) as well (NS, 9/11/2008).
 
 Here are download links for versions I have.
 
-`- `[`autoconf`` ``2.59`](http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.media/Tar.gz)` installed on my Tiger system seems to be fine `  
-`- `[`automake`` ``1.10.1`](ftp://ftp.gnu.org/gnu/automake/automake-1.10.media/Tar.gz)` NB automake 1.9.6 fails`  
-`- `[`libtool`` ``1.5.22`](http://ftp.gnu.org/gnu/libtool/libtool-1.5.22.media/Tar.gz)` later versions presumably ok`
+- [autoconf 2.59](http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.media/Tar.gz) installed on my Tiger system seems to be fine
+- [automake 1.10.1](ftp://ftp.gnu.org/gnu/automake/automake-1.10.media/Tar.gz) NB automake 1.9.6 fails
+- [libtool 1.5.22](http://ftp.gnu.org/gnu/libtool/libtool-1.5.22.media/Tar.gz) later versions presumably ok
 
 Once you are done, make quite sure that you are using the latest
 versions that you have installed:
 
-` autoconf --version`  
-` libtool --version`  
-` automake --version`
+```
+autoconf --version
+libtool --version
+automake --version
+```
 
 Hope it works for you! Greg Jefferis &lt;jefferis@gmail.com&gt;
 
-<code>
+```
+#!/usr/bin/env bash
 
-    #!/usr/bin/env bash
+# Download and build boost - see the separate Wiki page for that task.
 
-    # Download and build boost - see the separate Wiki page for that task.
+# If you want to build dc1394, instal libdc1394:
+# EITHER libdc1394 v2.0.1 (release version)
+VERSION="2.0.1"
+LIBDC="libdc1394-$VERSION"
+curl -O http://kent.dl.sourceforge.net/sourceforge/libdc1394/$LIBDC.media/Tar.gz
+tar zxvf $LIBDC.media/Tar.gz
+cd $LIBDC
+./configure --prefix=/usr/local
+make
+sudo make install
 
-    # If you want to build dc1394, instal libdc1394:
-    # EITHER libdc1394 v2.0.1 (release version)
-    VERSION="2.0.1"
-    LIBDC="libdc1394-$VERSION"
-    curl -O http://kent.dl.sourceforge.net/sourceforge/libdc1394/$LIBDC.media/Tar.gz
-    tar zxvf $LIBDC.media/Tar.gz
-    cd $LIBDC
-    ./configure --prefix=/usr/local
-    make
-    sudo make install
+# OR libdc1394 from SVN
+svn co https://libdc1394.svn.sourceforge.net/svnroot/libdc1394/trunk/libdc1394 libdc1394
+cd libdc1394
+autoreconf -i -s
+./configure --prefix=/usr/local
+make
+sudo make install
 
-    # OR libdc1394 from SVN
-    svn co https://libdc1394.svn.sourceforge.net/svnroot/libdc1394/trunk/libdc1394 libdc1394
-    cd libdc1394
-    autoreconf -i -s
-    ./configure --prefix=/usr/local
-    make
-    sudo make install
+# Micro-Manager from SVN
+svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
+cd micromanager1.3
 
-    # Micro-Manager from SVN
-    svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
-    cd micromanager1.3
+./mmUnixBuild.sh
 
-    ./mmUnixBuild.sh
-
-    ### N.B. on DebianJohan found that he needed to run  autoconf --install at this point.
-    export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
-    ./configure --with-imagej=/Applications/ImageJ/
-    # (Optional) To make your build compatible with Tiger (10.4) use:
-    #./configure --with-imagej=/Applications/ImageJ/ \
-      CXXFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -mmacosx-version-min=10.4"
-    # and for statically-linked components use:
-    #./configure --with-imagej=/Applications/ImageJ/ --enable-static
-    make
-    sudo make install
-
-</code>
+### N.B. on DebianJohan found that he needed to run  autoconf --install at this point.
+export PATH="/usr/local/bin:$PATH" # to ensure user compiled swig is used
+./configure --with-imagej=/Applications/ImageJ/
+# (Optional) To make your build compatible with Tiger (10.4) use:
+#./configure --with-imagej=/Applications/ImageJ/ \
+  CXXFLAGS="-g -O2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -mmacosx-version-min=10.4"
+# and for statically-linked components use:
+#./configure --with-imagej=/Applications/ImageJ/ --enable-static
+make
+sudo make install
+```
 
 {% include Programming_Sidebar text="" %}

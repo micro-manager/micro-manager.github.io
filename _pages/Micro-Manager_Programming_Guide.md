@@ -110,16 +110,13 @@ several Java IDEs are available:
 -   [Netbeans](Using_Netbeans "wikilink"), which seems to be the
     recommended IDE ([see previous
     instructions](Writing_plugins_for_Micro-Manager "wikilink"))
--   [Eclipse](Using_Eclipse "wikilink").([see previous
-    instructions](Writing_plugins_for_Micro-Manager#Configure_Eclipse_to_edit_a_plugin "wikilink"))
-
-
+-   [Eclipse](Using_Eclipse "wikilink")
+    ([see previous instructions](Writing_plugins_for_Micro-Manager#Configure_Eclipse_to_edit_a_plugin "wikilink"))
 
 ### Creating the CMMCore object
 
 First thing to do is to create the CMMCore object. For example, we can
 create the object and display the software version:  
-
 
 ```
 CMMCore core = new CMMCore();  
@@ -127,12 +124,11 @@ String info = core.getVersionInfo();
 System.out.println(info);  
 ```
 
-
 When executed, this little program should display something like:  
 
 ```
- MMCore version 1.0.16 (debug)
-```  
+MMCore version 1.0.16 (debug)
+```
 
 However, at this point <span>*MMCore*</span> canâ€™t do much more than
 that, because it does not know about any devices yet. In the next
@@ -183,13 +179,13 @@ After loading the adapter the device is still inactive. Before starting
 to control the device we must perform initialization:  
 ```
 core.initializeDevice("Camera");
-```  
+```
 
 The core may know about multiple camera devices, and needs to be told
 which one to use:  
 ```
 core.setCameraDevice("Camera");
-```  
+```
 
 The following program puts all of the above together: loads the camera
 adapter, initializes it and additionally snaps an image with exposure

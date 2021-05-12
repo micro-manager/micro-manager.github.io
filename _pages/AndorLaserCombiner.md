@@ -207,7 +207,9 @@ Nanda.
     Windows
     PATH](Personal_computer_setup#Add_device_libraries_to_Windows_PATH "wikilink"):
 
-`         C:\ProgramData\Andor_ALC_library\`
+```
+         C:\ProgramData\Andor_ALC_library\
+```
 
 -   If you already have control of your ALC in another software, your
     ALC\_SDK installation is complete because all the Windows device
@@ -234,15 +236,17 @@ Install them from:
 
 -   The devices will be detected in the Device Manager as:
 
-`     DAS Component`  
-`        PCIM-DDA06/16`  
-`     DeVaSys USB Interfaces`  
-`        USB-I2C/IO Board`  
-`     ...`  
-`     Ports (COM & LPT)`  
-`        ...`  
-`        Prolific USB-to-Serial Comm Port`  
-`        ...`
+```
+     DAS Component
+        PCIM-DDA06/16
+     DeVaSys USB Interfaces
+        USB-I2C/IO Board
+     ...
+     Ports (COM & LPT)
+        ...
+        Prolific USB-to-Serial Comm Port
+        ...
+```
 
 -   Run Instacal from Windows Start Button &gt; All Programs &gt;
     Measurement Computing. You will see the "Plug and Play Board

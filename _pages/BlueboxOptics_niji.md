@@ -162,9 +162,11 @@ By default, the individual LED intensities are set to 100%, but a
 different value can be set through media/MmStartup.bsh. For example, to set
 each LED intensity at 20%, add the following code to your media/MmStartup.bsh:
 
-` sd = mmc.getShutterDevice();`  
-` for (long index=1; index < 8; index++)`  
-`   mmc.setProperty(sd, "Channel"+index+"Intensity", "20");`
+```
+ sd = mmc.getShutterDevice();
+ for (long index=1; index < 8; index++)
+   mmc.setProperty(sd, "Channel"+index+"Intensity", "20");
+```
 
 This will peg the maximum intensity of each LED to 20%. In that case,
 varying the Global intensity between 0 and 100 will vary each LED

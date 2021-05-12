@@ -126,26 +126,32 @@ MicroManager sends, and when needed, reply with the expected answers.
 
 -   vLStep Z-Axis
 
-` - Upload the MM_vLStep_Z.ino Arduino firmware to the Uno using the Arduino software.`  
-` - In the « Hardware Configuration Wizard… » add the Z-Axis device from MarzhauserLStep group.`  
-`  - Choose the serial port matching the Arduino, with default settings, except for the AnswerTimeout property that you should set to 2000.0000 `  
-` - Resume the configuration wizard.`  
-` - Test your device by opening the stage control widget from Plugins>Device Control>Stage Control.`
+```
+ - Upload the MM_vLStep_Z.ino Arduino firmware to the Uno using the Arduino software.
+ - In the « Hardware Configuration Wizard… » add the Z-Axis device from MarzhauserLStep group.
+  - Choose the serial port matching the Arduino, with default settings, except for the AnswerTimeout property that you should set to 2000.0000 
+ - Resume the configuration wizard.
+ - Test your device by opening the stage control widget from Plugins>Device Control>Stage Control.
+```
 
 -   vCoolLed Illuminator
 
-` - Upload the MM_vCoolLed.ino Arduino firmware to the Uno using the Arduino software.`  
-` - In the « Hardware Configuration Wizard… » add the PrecisExcite device.`  
-` - Choose the serial port matching the Arduino, with default settings, except for the AnswerTimeout property that you should set to 2000.0000 `  
-` - Resume the configuration wizard.`  
-` - Test your device using Tools>Device Property Browser . `
+```
+ - Upload the MM_vCoolLed.ino Arduino firmware to the Uno using the Arduino software.
+ - In the « Hardware Configuration Wizard… » add the PrecisExcite device.
+ - Choose the serial port matching the Arduino, with default settings, except for the AnswerTimeout property that you should set to 2000.0000 
+ - Resume the configuration wizard.
+ - Test your device using Tools>Device Property Browser . 
+```
 
 -   MM\_vVincentD1 shutter-like device
 
-` - Upload the MM_vVincentD1_shutter.ino Arduino firmware to the Uno using the Arduino software.`  
-` - In the « Hardware Configuration Wizard… » add the Vincent D1 shutter device.`  
-` - Choose the serial port matching the Arduino, with default settings`  
-` - Resume the configuration wizard.`  
-` - Test your device using Tools>Device Property Browser . `
+```
+ - Upload the MM_vVincentD1_shutter.ino Arduino firmware to the Uno using the Arduino software.
+ - In the « Hardware Configuration Wizard… » add the Vincent D1 shutter device.
+ - Choose the serial port matching the Arduino, with default settings
+ - Resume the configuration wizard.
+ - Test your device using Tools>Device Property Browser . 
+```
 
 {% include Note text="For a given device or devices class, the adapter communication details can be found in the protocol documentation if it's publicly available, or if not available, details can be extracted from the [https://github.com/micro-manager/micro-manager/tree/master/DeviceAdapters device adapter source code]. This last solution is sometimes to be preferred, as it happens that the current MicroManager device adapter only partially implements the device’s protocol : some protocol features are ignored." %}

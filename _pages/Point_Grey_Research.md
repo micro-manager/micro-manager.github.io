@@ -66,10 +66,12 @@ groups.
 
 ## Tested with
 
-`Chameleon3 CM3-U3-31S4M`  
-`Flea3 FL3-U3-13S2M-CS`  
-`Scorpion CCD SCOR-14SO`  
-`Blackfly BFLY-U3-23S6M-C`
+```
+Chameleon3 CM3-U3-31S4M
+Flea3 FL3-U3-13S2M-CS
+Scorpion CCD SCOR-14SO
+Blackfly BFLY-U3-23S6M-C
+```
 
 ## Various
 

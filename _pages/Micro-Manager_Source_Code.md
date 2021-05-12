@@ -67,12 +67,10 @@ To build Micro-Manager 1.4, you should place the micromanager2 (trunk)
 and 3rdpartypublic repositories in the same directory. For example, run
 the following from your projects directory:
 
-<code>
-
-    svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
-    svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic
-
-</code>
+```
+svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
+svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic
+```
 
 More information on how to build Micro-Manager can be found here:
 

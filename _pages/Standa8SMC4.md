@@ -169,7 +169,9 @@ a dialog box with properties will appear.
 3\. In the *Value* column type the COM port number for motor controller
 in the next format:
 
-`xi-com:%5C%5C.%5CCOMn`
+```
+xi-com:%5C%5C.%5CCOMn
+```
 
 Trailing letter **n** is a number of corresponding COM port (look at the
 screenshot above). You can find it in XiLab or in *Device Manager -&gt;

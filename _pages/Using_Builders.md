@@ -14,25 +14,27 @@ Let's use the `Metadata` class as an example. This class describes the
 metadata for a single image in Micro-Manager. Below is a simplified
 extract from the interface definition, with only five properties:
 
-`public interface Metadata { `  
-`   interface MetadataBuilder {`  
-`      Metadata build();`
+```
+public interface Metadata { 
+   interface MetadataBuilder {
+      Metadata build();
 
-`      MetadataBuilder bitDepth(Integer bitDepth);`  
-`      MetadataBuilder channelName(String channelName);`  
-`      MetadataBuilder exposureMs(Double exposureMs);`  
-`      MetadataBuilder pixelSizeUm(Double pixelSizeUm);`  
-`      MetadataBuilder userData(PropertyMap userData);`  
-`   }`
+      MetadataBuilder bitDepth(Integer bitDepth);
+      MetadataBuilder channelName(String channelName);
+      MetadataBuilder exposureMs(Double exposureMs);
+      MetadataBuilder pixelSizeUm(Double pixelSizeUm);
+      MetadataBuilder userData(PropertyMap userData);
+   }
 
-`   MetadataBuilder copy();`
+   MetadataBuilder copy();
 
-`   Double getExposureMs();`  
-`   Double getPixelSizeUm();`  
-`   Integer getBitDepth();`  
-`   PropertyMap getUserData();`  
-`   String getChannelName();`  
-`}`
+   Double getExposureMs();
+   Double getPixelSizeUm();
+   Integer getBitDepth();
+   PropertyMap getUserData();
+   String getChannelName();
+}
+```
 
 There are two classes: the Metadata itself, and the Builder for the
 Metadata. Note that the Metadata does not have any methods that *change*
@@ -43,18 +45,20 @@ see the bottom of the page). However, properties of the Builder cannot
 be *read*, so it isn't very useful on its own. To generate a Metadata
 from the Builder, you use the `build` method. For example:
 
-`Metadata.MetadataBuilder builder = mm.data().getMetadataBuilder();`  
-`// Create metadata for first image.`  
-`builder = builder.bitDepth(14).exposureMs(100);`  
-`Metadata metadata1 = builder.build();`  
-`int exposure1 = metadata1.getExposureMs(); // will be 100`  
-`// Create metadata for second image: only exposure time change`  
-`builder = builder.exposureMs(80);`  
-`Metadata metadata2 = builder.build();`  
-`Integer exposure2 = metadata2.getExposureMs(); // will be 80`  
-`Double pixelSize = metadata2.getPixelSizeUm(); // will be null!`  
-`// Don't do this: it would throw a NullPointerException:`  
-`// double pixelSize = metadata2.getPixelSizeUm();`
+```
+Metadata.MetadataBuilder builder = mm.data().getMetadataBuilder();
+// Create metadata for first image.
+builder = builder.bitDepth(14).exposureMs(100);
+Metadata metadata1 = builder.build();
+int exposure1 = metadata1.getExposureMs(); // will be 100
+// Create metadata for second image: only exposure time change
+builder = builder.exposureMs(80);
+Metadata metadata2 = builder.build();
+Integer exposure2 = metadata2.getExposureMs(); // will be 80
+Double pixelSize = metadata2.getPixelSizeUm(); // will be null!
+// Don't do this: it would throw a NullPointerException:
+// double pixelSize = metadata2.getPixelSizeUm();
+```
 
 There's a few things to call your attention to here:
 
@@ -75,12 +79,14 @@ objects, you can also ask a Metadata object for a Builder that's based
 on it, using the `copy()` method. The above example code could
 equivalently be written as:
 
-`Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();`  
-`// Create metadata for first image.`  
-`builder = builder.bitDepth(14).exposureMs(100);`  
-`Metadata metadata1 = builder.build();`  
-`// Create metadata for second image: only channel name and exposure time change`  
-`Metadata metadata2 = metadata1.copy().exposureMs(80).build();`
+```
+Metadata.MetadataBuilder builder = mm.data().createMetadataBuilder();
+// Create metadata for first image.
+builder = builder.bitDepth(14).exposureMs(100);
+Metadata metadata1 = builder.build();
+// Create metadata for second image: only channel name and exposure time change
+Metadata metadata2 = metadata1.copy().exposureMs(80).build();
+```
 
 This can be useful in situations where you don't have access to the
 original Builder.
@@ -94,27 +100,29 @@ variations for other Micro-Manager 2.0 objects, which are covered here.
 
 Coords objects are very similar to Metadata objects. They have a set of
 convenience functions for commonly-used coordinate axes:
-`channel, time, z,` and `stagePosition`. They also use the `int`
+`channel`, `time`, `z`, and `stagePosition`. They also use the `int`
 datatype to represent coordinates, and thus cannot use `null` to
 indicate a missing value like Metadata does. Instead, missing values are
 represented by -1.
 
 Here is an example of creating a new Coords object:
 
-`Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();`  
-`// Note that coordinates start counting from 0!`  
-`// Thus this image will be the second channel, 5th Z slice.`  
-`builder.channel(1).z(4);`  
-`// You can also set custom axes.`  
-`builder.index("polarization", 3);`  
-`Coords coords = builder.build();`  
-`coords.getChannel(); // 1`  
-`coords.getZ(); // 4`  
-`coords.getTime(); // -1 as no time value was set`  
-`coords.getIndex("polarization"); // 3`  
-`Coords coords2 = coords.copy().z(5).build();`  
-`coords2.getZ(); // 5`  
-`coords2.getIndex("polarization"); // 3`
+```
+Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+// Note that coordinates start counting from 0!
+// Thus this image will be the second channel, 5th Z slice.
+builder.channel(1).z(4);
+// You can also set custom axes.
+builder.index("polarization", 3);
+Coords coords = builder.build();
+coords.getChannel(); // 1
+coords.getZ(); // 4
+coords.getTime(); // -1 as no time value was set
+coords.getIndex("polarization"); // 3
+Coords coords2 = coords.copy().z(5).build();
+coords2.getZ(); // 5
+coords2.getIndex("polarization"); // 3
+```
 
 #### Images
 
@@ -124,8 +132,10 @@ required to interpret that array, the Coords describing the image's
 location, and a Metadata instance. You can use the DataManager to create
 a new Image directly:
 
-`Image image = mm.data().createImage(pixels, width, height, bytesPerPixel,`  
-`      numComponents, coords, metadata);`
+```
+Image image = mm.data().createImage(pixels, width, height, bytesPerPixel,
+      numComponents, coords, metadata);
+```
 
 (See the documentation on the DataManager for more information on these
 parameters)
@@ -133,21 +143,25 @@ parameters)
 You can also create a new Image from an existing Image by varying its
 coordinates, metadata, or both:
 
-`Image copy1 = image.copyAtCoords(newCoords);`  
-`Image copy2 = image.copyWithMetadata(newMetadata);`  
-`Image copy3 = image.copyWith(newCoords, newMetadata);`
+```
+Image copy1 = image.copyAtCoords(newCoords);
+Image copy2 = image.copyWithMetadata(newMetadata);
+Image copy3 = image.copyWith(newCoords, newMetadata);
+```
 
 Thus for example, if you wanted to change the location of an image prior
 to adding it to a Datastore, you could do the following:
 
-`Datastore store = mm.data().createRAMDatastore();`  
-`// Snap an image; this image will have incorrect coordinates`  
-`Image origImage = mm.live().snap(false).get(0);`  
-`// Fix the coordinates.`  
-`Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();`  
-`Coords coords = builder.channel(1).z(4).build();`  
-`Image newImage = origImage.copyAtCoords(coords);`  
-`store.putImage(newImage);`
+```
+Datastore store = mm.data().createRAMDatastore();
+// Snap an image; this image will have incorrect coordinates
+Image origImage = mm.live().snap(false).get(0);
+// Fix the coordinates.
+Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+Coords coords = builder.channel(1).z(4).build();
+Image newImage = origImage.copyAtCoords(coords);
+store.putImage(newImage);
+```
 
 ### Why immutability
 

@@ -9,14 +9,14 @@ layout: page
 As of Micro-Manager version 1.3 the following config options are
 available:
 
---with-imagej=/PathToImageJ This needs to be set or ImageJ needs to be
+`--with-imagej=/PathToImageJ` This needs to be set or ImageJ needs to be
 found automatically. Building without imagej does not work at present.
 
---with-javaincl=path Only needs to be set when the java include
+`--with-javaincl=path` Only needs to be set when the java include
 directory is not found automatically (the configure script does an
 extensive search.
 
---without-core Allows you to build only the deviceadapters. Not building
+`--without-core` Allows you to build only the deviceadapters. Not building
 the Core means that you do not need to build ACE, i.e. this is much
 simpler and should allow you to start working on DeviceAdapters without
 much fuss. Default is '--with-core'. To add your own Deviceadapter,
@@ -36,7 +36,10 @@ to include debug symbols, -O2 specifies an optimization level, and
 code compatible with Mac OS X 10.4 (make sure that you have links to
 essential libraries in the path: /Developer/SDKs/MacOSX10.4u.sdk/)
 
-Example: ./configure --with-imagej=/Applications/Micro-Manager1.3
+Example:
+```
+./configure --with-imagej=/Applications/Micro-Manager1.3
 CXXFLAGS="-g -O2 -mmacosx-version-min=10.4"
+```
 
 {% include Programming_Sidebar text="" %}

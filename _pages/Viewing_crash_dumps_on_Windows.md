@@ -46,18 +46,24 @@ for details on this.)
 Following this setup, when java.exe or javaw.exe crashes, a crash dump
 should be saved at
 
-` %LocalAppData%\CrashDumps\java.exe.*.dmp`
+```
+ %LocalAppData%\CrashDumps\java.exe.*.dmp
+```
 
 or
 
-` %LocalAppData%\CrashDumps\javaw.exe.*.dmp`
+```
+ %LocalAppData%\CrashDumps\javaw.exe.*.dmp
+```
 
 where the location of `%LocalAppData%` can be checked by typing
 `echo %LocalAppData%` into the Command Prompt. The App Data directory is
 hidden by default; the easiest way to open the CrashDumps folder is to
 open a Command Prompt and type
 
-` start %LocalAppData%\CrashDumps`
+```
+ start %LocalAppData%\CrashDumps
+```
 
 Note that crash dump files can get quite large (especially if the
 application is using a lot of memory).

@@ -61,10 +61,12 @@ StepNumber is the number of planes used in focusing above and below the
 current plane. For instance, if my current zdistance at the beginning of
 autofocus routine is 11um and I set the parameter as the following
 
-`         -1st stepsize: 1 micron `  
-`         -1st stepNumber: 2 step`  
-`         -2nd stepsize: 0.3 micron`  
-`         -2nd stepNumber: 2 step`
+```
+         -1st stepsize: 1 micron 
+         -1st stepNumber: 2 step
+         -2nd stepsize: 0.3 micron
+         -2nd stepNumber: 2 step
+```
 
 The program will take the image at 9,10, 11, 12, 13 um....Then, it finds
 the sharpest image. Suppose the sharpest image is taken at 12 um. Then,
@@ -74,9 +76,11 @@ the program set the microscope to 11.7 um as its best focus.
 
 'shapness' of an image is computed by
 
-`         -applying 3x3 median filter to the image to remove noise`  
-`         -convolute image with a filter [-2 -1 0; -1 0 1; 0 1 2 ]`  
-`         -sum the square of each entry in the convoluted image.`
+```
+         -applying 3x3 median filter to the image to remove noise
+         -convolute image with a filter [-2 -1 0; -1 0 1; 0 1 2 ]
+         -sum the square of each entry in the convoluted image.
+```
 
 Empirically, this 'sharpness value' is correspond to the sharpness I see
 by eyes (for ecoli). In other words, for the same image field, the
@@ -91,7 +95,9 @@ coarse-fine search seem to be enough.
 
 Crop ratio
 
-` -- tell the program what fraction of image will be used for computing sharpness.`
+```
+ -- tell the program what fraction of image will be used for computing sharpness.
+```
 
 Suppose my image is 1000x600 pixel and my crop ratio is 0.5, the program
 will use only the middle part of the image, size 500x300, to compute
@@ -112,9 +118,11 @@ sharpness is less than (the best image so far) X (1-Threshold) Consider
 the following example, the program starts taking coarse image at 9
 um-13um, threshold is 0.5 at 9 um sharpNess = 36
 
-`  10 um                       59`  
-`  11  um                      21--> the program stop coarse search here as 21< 59*0.5 `  
-`   `
+```
+  10 um                       59
+  11  um                      21--> the program stop coarse search here as 21< 59*0.5 
+   
+```
 
 I'm not quite confident about this threshold trick. sometimes the single
 bell-shape is not perfect. I would recommend setting high Threshold for

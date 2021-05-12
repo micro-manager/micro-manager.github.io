@@ -89,24 +89,26 @@ manufacturer’s proprietary libraries we should copy the required files
 and directories (usually header files and dynamic or static libraries)
 to the following location:
 
-`/projects/3rdparty/MyDevice`
+```
+/projects/3rdparty/MyDevice
+```
 
 The top-level directory can be called something other than “projects”,
 but within our top-level directory we must have three parallel
 sub-directories with fixed names:
 
-`/micro-manager1.4` (development source code)
-
-`/3rdpartypublic` (required open source third-party libraries)
-
-`/3rdparty` (optional proprietary libraries that may be required for our
+* `/micro-manager1.4` (development source code)
+* `/3rdpartypublic` (required open source third-party libraries)
+* `/3rdparty` (optional proprietary libraries that may be required for our
 hardware)
 
 ### Development directories and example
 
 The place designated for development of our new adapter is:
 
-`/projects/micro-manager1.4/TestDeviceAdapters`
+```
+/projects/micro-manager1.4/TestDeviceAdapters
+```
 
 In this directory we will find a very simple “skeleton” camera adapter
 project “MMCamera” that we can use to get started, to understand the
@@ -116,7 +118,9 @@ located in “TestDeviceAdapters” directory in the same way as for
 MMCamera. In our case we will create a new directory for our new Device
 Adapter:
 
-`/projects/micro-manager1.4/TestDeviceAdapters/MyDevice`
+```
+/projects/micro-manager1.4/TestDeviceAdapters/MyDevice
+```
 
 ## Project settings (Windows)
 
@@ -126,11 +130,11 @@ DeviceAdapter. Micro-manager application does not link against any of
 the Device Adapter libraries at build time. Libraries are discovered by
 scanning the application default directory for dynamic libraries
 following the specific naming convention:
-
-`mmgr_dal_`<device name>`.dll`
-
+```
+mmgr_dal_<device name>.dll
+```
 In other words it will try to load at run-time only libraries with
-prefix “mmgr\_dal”. In our case our new adapter (once we are finished
+prefix `mmgr_dal`. In our case our new adapter (once we are finished
 with it) should build as `mmgr_dal_mydevice.dll`.
 
 See [Visual Studio project settings for device
@@ -144,7 +148,9 @@ for how to set up a project in Visual Studio to build a device adapter.
 Plug-in interface along with utility classes is contained in single
 directory:
 
-`/projects/micromanager1.4/MMDevice`
+```
+/projects/micromanager1.4/MMDevice
+```
 
 Device adapters incorporate code from this directory via a static
 library called MMDevice-SharedRuntime.lib. See [Visual Studio project
@@ -435,9 +441,11 @@ Micro-manager provides appropriate mechanisms that automatically
 establish and identify parent-child relationships between devices.
 Getting a parent Hub instance is very simple:
 
-`  MM::Hub* hub = GetParentHub();`  
-`  if (!hub)`  
-`     return ERR_NO_HUB;`
+```
+  MM::Hub* hub = GetParentHub();
+  if (!hub)
+     return ERR_NO_HUB;
+```
 
 GetParentHub() method is implemented in the base class to all devices
 MM::DeviceBase. If this call fails (null pointer returned) it means that
@@ -449,9 +457,11 @@ When successful this call returns only a Hub base class instance and its
 API can’t do any useful work. So, we have to dynamically cast to the hub
 that belongs to our library and the API that has methods that we need.
 
-`  MyHub* myHub = dynamic_cast<MyHub*>(hub);`  
-`  if (!myHub)`  
-`     return ERR_NO_HUB;`
+```
+  MyHub* myHub = dynamic_cast<MyHub*>(hub);
+  if (!myHub)
+     return ERR_NO_HUB;
+```
 
 Micro-manager configuration process ensures that cast always succeeds,
 i.e. we can only get the Hub instance of the class belonging to our
@@ -462,9 +472,11 @@ library design.
 Once we obtain a handle to our specific Hub object we can call custom
 methods to send or receive commands. For example:
 
-`  int ret = myHub->SendCommandToHardware(this, myCmd);`  
-`  if (ret != DEVICE_OK)`  
-`     return ret;`
+```
+  int ret = myHub->SendCommandToHardware(this, myCmd);
+  if (ret != DEVICE_OK)
+     return ret;
+```
 
 Actual methods in the Hub interface exposed to its “child” devices are
 completely at the discretion of the library designer. Typically they are
@@ -492,7 +504,9 @@ speed.
 Parent-child relationship between Hub and its devices persists in the
 configuration file through directive “Parent”. For example:
 
-` Parent,MyDevice,MyHub`
+```
+ Parent,MyDevice,MyHub
+```
 
 establishes that MyDevice belongs to MyHub, i.e. that MyHub is parent to
 MyDevice. The only requirement is that MyHub is listed in the
@@ -512,8 +526,10 @@ library](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino
 Especially important are implementations of the following methods from
 the MM::Hub device API:
 
-` MM::DeviceDetectionStatus DetectDevice(void);`  
-` int DetectInstalledDevices();`
+```
+ MM::DeviceDetectionStatus DetectDevice(void);
+ int DetectInstalledDevices();
+```
 
 These two methods are critical for the configuration process. Hardware
 Configuration Wizard uses the first one automatically detect the port to
@@ -568,28 +584,30 @@ To test devices from Micro-Manager scripting environment you can use the
 reference to the MMCore API as "mmc". Here is an example of a simple
 test script:
 
-`mmc.unloadAllDevices();       `  
-`mmc.loadDevice("Camera", "DemoCamera", "DCam");`  
-`mmc.initializeDevice("Camera");`  
-`mmc.setCameraDevice("Camera");`
+```java
+mmc.unloadAllDevices();       
+mmc.loadDevice("Camera", "DemoCamera", "DCam");
+mmc.initializeDevice("Camera");
+mmc.setCameraDevice("Camera");
 
-`mmc.setExposure(50); `  
-`mmc.snapImage();`
+mmc.setExposure(50); 
+mmc.snapImage();
 
-`if (mmc.getBytesPerPixel() == 1) {`  
-`  // 8-bit grayscale pixels`  
-`  byte[] img = (byte[])mmc.getImage();`  
-`  print("Image snapped, " + img.length + " pixels total, 8 bits each.");`  
-`  print("Pixel [0,0] value = " + img[0]);`  
-`} else if (mmc.getBytesPerPixel() == 2){`  
-`  // 16-bit grayscale pixels`  
-`  short[] img = (short[])mmc.getImage();`  
-`  print("Image snapped, " + img.length + " pixels total, 16 bits each.");`  
-`  print("Pixel [0,0] value = " + img[0]);             `  
-`} else {`  
-`  print("Dont' know how to handle images with " + mmc.getBytesPerPixel() + `  
-`                  " byte pixels.");             `  
-`}`
+if (mmc.getBytesPerPixel() == 1) {
+  // 8-bit grayscale pixels
+  byte[] img = (byte[])mmc.getImage();
+  print("Image snapped, " + img.length + " pixels total, 8 bits each.");
+  print("Pixel [0,0] value = " + img[0]);
+} else if (mmc.getBytesPerPixel() == 2){
+  // 16-bit grayscale pixels
+  short[] img = (short[])mmc.getImage();
+  print("Image snapped, " + img.length + " pixels total, 16 bits each.");
+  print("Pixel [0,0] value = " + img[0]);             
+} else {
+  print("Dont' know how to handle images with " + mmc.getBytesPerPixel() + 
+                  " byte pixels.");             
+}
+```
 
 If you plan to actively use scripting you may want to look at the
 [Micro-Manager\_Programming\_Guide](Micro-Manager_Programming_Guide "wikilink")
@@ -824,16 +842,18 @@ convention.
 Additional methods required in all adapter modules All adapter modules
 (DLL libraries) now support additional methods (see ModuleInterface.h):
 
-`extern "C" {`  
-`   MODULE_API MM::Device* CreateDevice(const char* name);`  
-`   MODULE_API void DeleteDevice(MM::Device* pDevice);`  
-`   MODULE_API long GetModuleVersion();`  
-`   MODULE_API long GetDeviceInterfaceVersion();`  
-`   MODULE_API unsigned GetNumberOfDevices();`  
-`   MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);`  
-`   MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);`  
-`   MODULE_API void InitializeModuleData();`  
-`}`
+```
+extern "C" {
+   MODULE_API MM::Device* CreateDevice(const char* name);
+   MODULE_API void DeleteDevice(MM::Device* pDevice);
+   MODULE_API long GetModuleVersion();
+   MODULE_API long GetDeviceInterfaceVersion();
+   MODULE_API unsigned GetNumberOfDevices();
+   MODULE_API bool GetDeviceName(unsigned deviceIndex, char* name, unsigned bufferLength);
+   MODULE_API bool GetDeviceDescription(unsigned deviceIndex, char* name, unsigned bufferLength);
+   MODULE_API void InitializeModuleData();
+}
+```
 
 The only thing you need to add to your existing modules is the
 implementation of the method "InitializeModuleData()" (see example
@@ -842,14 +862,16 @@ library. In this method we create a list of adapters available in the
 DLL library. For example, DemoCamera library (DemoCamera.cpp) has the
 following InitializeModuleData() method implementation:
 
-`MODULE_API void InitializeModuleData()`  
-`{`  
-`   AddAvailableDeviceName(g_CameraDeviceName, "Demo camera");`  
-`   AddAvailableDeviceName(g_WheelDeviceName, "Demo filter wheel");`  
-`   AddAvailableDeviceName(g_ObjectiveDeviceName, "Demo objective turret");`  
-`   AddAvailableDeviceName(g_StageDeviceName, "Demo stage");`  
-`   AddAvailableDeviceName(g_LightPathDeviceName, "Demo light path");`  
-`}`
+```
+MODULE_API void InitializeModuleData()
+{
+   AddAvailableDeviceName(g_CameraDeviceName, "Demo camera");
+   AddAvailableDeviceName(g_WheelDeviceName, "Demo filter wheel");
+   AddAvailableDeviceName(g_ObjectiveDeviceName, "Demo objective turret");
+   AddAvailableDeviceName(g_StageDeviceName, "Demo stage");
+   AddAvailableDeviceName(g_LightPathDeviceName, "Demo light path");
+}
+```
 
 The first parameter in "AddAvailableDeviceName", is the adapter name and
 the second one is a short description.

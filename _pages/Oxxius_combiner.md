@@ -109,15 +109,17 @@ command "CDC 1", then reboot the combiner. Take note of the COM port
 assigned to your combiner, then use the following parameters in the
 Hardware Configuration Wizard:
 
-`   Answer Timeout: 500`  
-`   Baudrate: 115200 (this value is seemingly ignored anyway)`  
-`   DataBits: 8`  
-`   DelayBetweenCharsMs: 0`  
-`   FastUSB to Serial: Disable`  
-`   Handshaking: Off`  
-`   Parity: None`  
-`   StopBits: 1`  
-`   Verbose: 1`
+```
+   Answer Timeout: 500
+   Baudrate: 115200 (this value is seemingly ignored anyway)
+   DataBits: 8
+   DelayBetweenCharsMs: 0
+   FastUSB to Serial: Disable
+   Handshaking: Off
+   Parity: None
+   StopBits: 1
+   Verbose: 1
+```
 
 -   Using the Ethernet port
 
@@ -132,9 +134,11 @@ various components connected to (or mounted in) the combiner. The hub's
 
 Hub properties:
 
-`   Serial number (read only)`  
-`   Interlock status: "Open" or "Closed"  (read only)`  
-`   Emission key status: "Armed" or "Disarmed" (read only)`
+```
+   Serial number (read only)
+   Interlock status: "Open" or "Closed"  (read only)
+   Emission key status: "Armed" or "Disarmed" (read only)
+```
 
 ## LaserBoxx source
 
@@ -145,14 +149,16 @@ situations.
 
 Available properties (model-dependant):
 
-`   State (read only)`  
-`   Alarm (read only)`  
-`   Control mode: "ACC" or "APC" (read and write)`  
-`   Analog modulation selection: "ON" or "OFF" (read and write)`  
-`   Digital modulation selection: "ON" or "OFF" (read and write)`  
-`   Current set point, as a percentage of the nominal current (read and write)`  
-`   Power set point, as a percentage of the nominal power (read and write)`  
-`   Emission status: "ON" or "OFF" (read and write)`
+```
+   State (read only)
+   Alarm (read only)
+   Control mode: "ACC" or "APC" (read and write)
+   Analog modulation selection: "ON" or "OFF" (read and write)
+   Digital modulation selection: "ON" or "OFF" (read and write)
+   Current set point, as a percentage of the nominal current (read and write)
+   Power set point, as a percentage of the nominal power (read and write)
+   Emission status: "ON" or "OFF" (read and write)
+```
 
 Inheritance: CShutterBase.
 
@@ -160,7 +166,9 @@ Inheritance: CShutterBase.
 
 To control an electromechanical shutter. Available property:
 
-`   State: "Open" or "Closed" (read and write)`
+```
+   State: "Open" or "Closed" (read and write)
+```
 
 Inheritance: CShutterBase.
 
@@ -170,7 +178,9 @@ This Device Adapter relates to the "MDL-MDUAL" extension, which splits
 the laser beam over two output channels, according to a configurable
 split ratio. Available property:
 
-`   Split ratio: percentage of the total power directed to the first channel(read and write)`
+```
+   Split ratio: percentage of the total power directed to the first channel(read and write)
+```
 
 Inheritance: CGenericBase.
 
@@ -179,7 +189,9 @@ Inheritance: CGenericBase.
 This Device Adapter relates to the "MDL-FLPM" extension, which directs
 the laser beam over one of two distinct channels. Available property:
 
-`   Switch position: "0" for channel 1, "1" for channel 2(read and write)`
+```
+   Switch position: "0" for channel 1, "1" for channel 2(read and write)
+```
 
 Inheritance: CGenericBase.
 

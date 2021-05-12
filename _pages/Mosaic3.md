@@ -329,12 +329,14 @@ Open the [Script Panel GUI](Script_Panel_GUI "wikilink") and paste the
 following code:
 
 ```
-`  import ij.IJ; // Allows access to basic ImageJ utilities.`  
-`  proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.`  
-`  pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.`  
-`  mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.`  
-`  mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.`  
-`  mmc.displaySLMImage(mosaic); // Display the Mosaic.`
+```
+  import ij.IJ; // Allows access to basic ImageJ utilities.
+  proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
+  pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.
+  mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.
+  mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.
+  mmc.displaySLMImage(mosaic); // Display the Mosaic.
+```
 ```
 
 Running this script will result in projecting the image you have just

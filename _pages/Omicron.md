@@ -6,20 +6,22 @@ layout: page
 
 ## Omicron Laser Controller
 
-`Summary:   Omicron Laser Controller`  
-`Author:         Jan-Erik Herche/Ralf Schlotter`  
-`License:    LGPL`  
-`Platforms:  All platforms (uses USB or RS232 Port)`  
-`Devices:    Omicron “…xX”-laser series`  
-`Since Version:  1.4.8 (64bit compatible since version 1.4.12)`  
-``  
-`Default serial port settings:   AnswerTimeout [ms]      2500`  
-`                            BaudRate            57600 (RS232 Port) `  
-`                                                        500000 (USB Port)`  
-`                            DelayBetweenCharsMS 0`  
-`                            Handshaking         Off`  
-`                            Parity                  None`  
-`                            StopBits            1`
+```
+Summary:   Omicron Laser Controller
+Author:         Jan-Erik Herche/Ralf Schlotter
+License:    LGPL
+Platforms:  All platforms (uses USB or RS232 Port)
+Devices:    Omicron “…xX”-laser series
+Since Version:  1.4.8 (64bit compatible since version 1.4.12)
+
+Default serial port settings:   AnswerTimeout [ms]      2500
+                            BaudRate            57600 (RS232 Port) 
+                                                        500000 (USB Port)
+                            DelayBetweenCharsMS 0
+                            Handshaking         Off
+                            Parity                  None
+                            StopBits            1
+```
 
 The Omicron Laser Controller controls Omicron LuxX®, PhoxX® and BrixX®
 series lasers as well as lasers integrated in LightHUB® compact laser
