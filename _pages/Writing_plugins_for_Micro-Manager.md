@@ -30,13 +30,11 @@ The MMPlugins API provides you access to the GUI and core instances
 call `public void setApp(ScriptInterface app);` you can get the GUI
 object, core and acquisition engine objects thus:
 
-<div class="source">
-
+```
 `   MMStudioMainFrame gui_ = (MMStudioMainFrame) app;`  
 `   CMMCore core_ = gui_.getMMCore();`  
 `   AcquisitionEngine acq_ = gui_.getAcquisitionEngine();`
-
-</div>
+```
 
 Once you have compiled your code into a `.class` file or a `.jar` file,
 drop that file into Micro-Manager's `mmplugins` directory, and it will
@@ -105,15 +103,13 @@ steps for Netbeans:
     the following to your project `build.xml` file (look in the Project
     "Files" tab in Netbeans):
 
-<div class="source">
-
+```
 `       `<property name="pluginsDir"  location="C:\Program Files\Micro-Manager-1.4\mmplugins" />  
 `       `<target name="-post-jar">  
 `       `<echo message="--Copied MM plugin JAR to basedir: ${basedir}" />  
 `       `<copy file="${basedir}/${dist.jar}" toDir="${pluginsDir}" />  
 `       `</target>
-
-</div>
+```
 
 
 When "Clean and Build" is run, this will automatically copy the current
@@ -131,11 +127,9 @@ You can also dynamically load your plugin by including a line in the
 your Micro-Manager installation; if there isn't one yet, you can create
 it with any text editor program.) For example:
 
-<div class="source">
-
+```
 `       gui.installPlugin("org.micromanager.surveyor.SurveyorPlugin");`
-
-</div>
+```
 
 
 Make sure you change the "Layout Generation Style" property from

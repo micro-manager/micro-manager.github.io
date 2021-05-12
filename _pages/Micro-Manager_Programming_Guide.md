@@ -121,18 +121,18 @@ First thing to do is to create the CMMCore object. For example, we can
 create the object and display the software version:  
 
 
-<div class="source">
-
+```
 CMMCore core = new CMMCore();  
 String info = core.getVersionInfo();  
 System.out.println(info);  
-
-</div>
+```
 
 
 When executed, this little program should display something like:  
 
-<span class="source"> MMCore version 1.0.16 (debug)</span>  
+```
+ MMCore version 1.0.16 (debug)
+```  
 
 However, at this point <span>*MMCore*</span> canâ€™t do much more than
 that, because it does not know about any devices yet. In the next
@@ -158,26 +158,18 @@ we can configure MMCore to control a camera.
 
 The command to load device in MMCore has the following signature:  
 
-<div class="source">
-
+```
 public void loadDevice(String label, String library, String name) throws
 java.lang.Exception
-
-</div>
+```
 
 
 We can use it like this:  
 
-<div class="source">
-
+```
 CMMCore core = new CMMCore();
-
-</div>
-<div class="source">
-
 core.loadDevice("Camera", "DemoCamera", "DCam");
-
-</div>
+```
 
 
 The command above has three parameters: label, library and name. Device
@@ -189,18 +181,21 @@ load.
 
 After loading the adapter the device is still inactive. Before starting
 to control the device we must perform initialization:  
-<span class="source">core.initializeDevice("Camera");</span>  
+```
+core.initializeDevice("Camera");
+```  
 
 The core may know about multiple camera devices, and needs to be told
 which one to use:  
-<span class="source">core.setCameraDevice("Camera");</span>  
+```
+core.setCameraDevice("Camera");
+```  
 
 The following program puts all of the above together: loads the camera
 adapter, initializes it and additionally snaps an image with exposure
 set to 50ms.  
 
-<div class="source">
-
+```
 CMMCore core = new CMMCore();  
 core.loadDevice("Camera", "DemoCamera", "DCam");  
 core.initializeDevice("Camera");  
@@ -210,8 +205,7 @@ core.snapImage();
 byte image\[\] = (byte\[\]) core.getImage();  
 long width = core.getImageWidth();  
 long height = core.getImageHeight();  
-
-</div>
+```
 
 
 For clarity the above example omits some details necessary to really
@@ -224,41 +218,15 @@ If an error occurs during execution of the function call, CMMCore object
 will throw a java exception, which you can handle in any standard way.
 For example:  
 
-<div class="source">
-
+```
 try {
-
-</div>
-<div class="source">
-
 core.loadDevice("Camera", "Hamamatsu", "Hamamatsu\_DCAM");
-
-</div>
-<div class="source">
-
 core.initializeAllDevices();
-
-</div>
-<div class="source">
-
 } catch (Exception e){
-
-</div>
-<div class="source">
-
 System.out.println("Exception: " + e.getMessage() + "\\nExiting now.");
-
-</div>
-<div class="source">
-
 System.exit(1);
-
-</div>
-<div class="source">
-
 }
-
-</div>
+```
 
 ## Using device properties
 
@@ -267,37 +235,14 @@ which we can read or change. A property is simply a named tag, or a
 field consisting of a name and value.  
 
 
-<div class="source">
-
+```
 // get some properties
-
-</div>
-<div class="source">
-
 String propBinning = core.getProperty("Camera", "Binning");
-
-</div>
-<div class="source">
-
 String propPixelType = core.getProperty("Camera", "PixelType");
-
-</div>
-<div class="source">
-
-
 // set some properties
-
-</div>
-<div class="source">
-
 core.setProperty("Camera", "Binning", "4");
-
-</div>
-<div class="source">
-
 core.setProperty("Camera", "PixelType", "16bit");
-
-</div>
+```
 
 
 To get or set the property you have to supply two parameters: device
@@ -311,36 +256,14 @@ device? This code prints all properties of the "Camera" and their
 current values:  
 
 
-<div class="source">
-
+```
 StrVector properties = core.getDevicePropertyNames("Camera");
-
-</div>
-<div class="source">
-
 for (int i=0; i&lt;properties.size(); i++) {
-
-</div>
-<div class="source">
-
 String prop = properties.get(i);
-
-</div>
-<div class="source">
-
 String val = core.getProperty("Camera", prop);
-
-</div>
-<div class="source">
-
 System.out.println("Name: " + prop + ", value: " + val);
-
-</div>
-<div class="source">
-
 }
-
-</div>
+```
 
 
 Note the use of the StrVector class as a simple vector containing of
@@ -351,31 +274,13 @@ How do you find out which values are valid for a particular property?
 This code prints all allowed values for the "PixelType" property:  
 
 
-<div class="source">
-
+```
 StrVector values = core.getAllowedPropertyValues("Camera", "PixelType");
-
-</div>
-<div class="source">
-
 for (int i=0; i&lt;values.size(); i++) {
-
-</div>
-<div class="source">
-
 String val = values.get(i);
-
-</div>
-<div class="source">
-
 System.out.println(val);
-
-</div>
-<div class="source">
-
 }
-
-</div>
+```
 
 
 If the getAllowedProperties() call returns empty vector, it means that
@@ -390,11 +295,9 @@ values will succeed.
 Some properties are read-only. For example, you can discover if the
 camera property "Description" is read-only by using:  
 
-<div class="source">
-
+```
 boolean ro = core.isPropertyReadOnly("Camera", "Description");
-
-</div>
+```
 
 
 Complete Java code is here:
@@ -413,58 +316,18 @@ microscope, regardless of specific devices used to build it. For
 example:  
 
 
-<div class="source">
-
+```
 // commands which imply a single device attached to the system,
-
-</div>
-<div class="source">
-
 // in this case a camera.
-
-</div>
-<div class="source">
-
-
 core.snapImage();
-
-</div>
-<div class="source">
-
 long h = core.getImageHeight();
-
-</div>
-<div class="source">
-
 double e = core.getExposure();
 
-</div>
-<div class="source">
-
-
-
-</div>
-<div class="source">
-
 // example commands which imply a specific device type
-
-</div>
-<div class="source">
-
 // (device label must be provided)
-
-</div>
-<div class="source">
-
-
 core.setPosition("Z", 120.0); // works only for stages
-
-</div>
-<div class="source">
-
 core.setState("F1", 3); // works only for filter wheels, shutters, etc.
-
-</div>
+```
 
 
 On the other hand, the property mechanism is very general and does not
@@ -476,37 +339,14 @@ build robust user interfaces and programs which automatically
 re-configure based on specific run-time configuration of the system.  
 
 
-<div class="source">
-
+```
 // these two commands
-
-</div>
-<div class="source">
-
 core.setPosition("Z", 123.0);
-
-</div>
-<div class="source">
-
 core.setExposure("Camera", 55.0);
-
-</div>
-<div class="source">
-
-
 // have exactly the same effect as
-
-</div>
-<div class="source">
-
 core.setProperty("Z", "Position", "123.0");
-
-</div>
-<div class="source">
-
 core.setProperty("Camera", "Exposure", "55.0");
-
-</div>
+```
 
 
 Also, the property mechanism allows us to control many details which are
@@ -519,147 +359,39 @@ Let us consider a somewhat more complicated system with four devices:
 camera, shutter, and two filter wheels.  
 
 
-<div class="source">
-
+```
 // clear previous setup if any
-
-</div>
-<div class="source">
-
 core.unloadAllDevices();
-
-</div>
-<div class="source">
-
-
 // load devices
-
-</div>
-<div class="source">
-
 core.loadDevice("Camera", "DemoCamera", "DCam");
-
-</div>
-<div class="source">
-
 core.loadDevice("Emmision", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Exictation", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Shutter", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Z", "DemoCamera", "DStage");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // initialize
-
-</div>
-<div class="source">
-
 core.initializeAllDevices();
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // list devices
-
-</div>
-<div class="source">
-
 StrVector devices = core.getLoadedDevices();
-
-</div>
-<div class="source">
-
 System.out.println("Device status:");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 for (int i=0; i&lt;devices.size(); i++){
-
-</div>
-<div class="source">
-
 System.out.println(devices.get(i));
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // list device properties
-
-</div>
-<div class="source">
-
 StrVector properties = core.getDevicePropertyNames(devices.get(i));
-
-</div>
-<div class="source">
-
 for (int j=0; j&lt;properties.size(); j++){
-
-</div>
-<div class="source">
-
 System.out.println(" " + properties.get(j) + " = "
-
-</div>
-<div class="source">
-
 \+ core.getProperty(devices.get(i), properties.get(j)));
-
-</div>
-<div class="source">
-
 StrVector values = core.getAllowedPropertyValues(devices.get(i),
-
-</div>
-<div class="source">
-
 properties.get(j));
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 for (int k=0; k&lt;values.size(); k++){
-
-</div>
-<div class="source">
-
 System.out.println(" " + values.get(k));
-
-</div>
-<div class="source">
-
 }
-
-</div>
-<div class="source">
-
 }
-
-</div>
+```
 
 
 Complete Java code is here:
@@ -671,42 +403,22 @@ Many devices use serial ports for communication with the host computer.
 For MMCore serial port is also a device with number of properties to
 manipulate.  
 
-<div class="source">
-
+```
 core.loadDevice("Port", "SerialManager", "COM1");
-
-</div>
-<div class="source">
-
 core.setProperty("Port", "StopBits", "2");
-
-</div>
-<div class="source">
-
 core.setProperty("Port", "Parity", "None");
-
-</div>
-<div class="source">
-
 core.initializeDevice("Port");
-
-</div>
+```
 
 
 Once the property is loaded and initialized, you can send and receive
 terminated command strings like this:  
 
 
-<div class="source">
-
+```
 core.setSerialPortCommand("Port", "MOVE X=300", "\\r");
-
-</div>
-<div class="source">
-
 String answer = core.getSerialPortAnswer("Port", "\\r");
-
-</div>
+```
 
 
 The last parameter in both send and receive commands is a terminating
@@ -728,59 +440,18 @@ states. The most common examples of state device are filter switchers
 (wheels) and objective turrets.  
 
 
-<div class="source">
-
+```
 core.loadDevice("Emission", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Excitation", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Dichroic", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Objective", "DemoCamera", "DObjective");
-
-</div>
-<div class="source">
-
-
 core.initializeAllDevices();
-
-</div>
-<div class="source">
-
-
 // set emission filter to position 2
-
-</div>
-<div class="source">
-
 core.setState("Emission", 2);
-
-</div>
-<div class="source">
-
-
 // verify position
-
-</div>
-<div class="source">
-
 core.waitForDevice("Emission"); // until it stops moving
-
-</div>
-<div class="source">
-
 long state = core.getState("Emission");
-
-</div>
+```
 
 
 Almost invariably state devices serve as placeholders for
@@ -792,58 +463,18 @@ devices support position labeling feature and any position can be
 assigned with an arbitrary name:  
 
 
-<div class="source">
-
+```
 // define emission filter positions
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 0, "Chroma-D460");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 1, "Chroma-HQ620");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 2, "Chroma-HQ535");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 3, "Chroma-HQ700");
-
-</div>
-<div class="source">
-
-
 // set position using label
-
-</div>
-<div class="source">
-
 core.setStateLabel("Emission", "Chroma-D460");
-
-</div>
-<div class="source">
-
-
 // verify position
-
-</div>
-<div class="source">
-
 core.waitForDevice("Emission"); // until it stops moving
-
-</div>
-<div class="source">
-
 String stateLabel = core.getStateLabel("Emission");
-
-</div>
+```
 
 
 The state device used in tutorial examples is really a software
@@ -853,59 +484,18 @@ serial ports, so in order to control them you'll need to link state
 device to appropriate serial port device:  
 
 
-<div class="source">
-
+```
 core.unloadAllDevices();
-
-</div>
-<div class="source">
-
-
 // setup serial port
-
-</div>
-<div class="source">
-
 core.loadDevice("P1", "SerialManager", "COM1");
-
-</div>
-<div class="source">
-
 core.setProperty("P1", "StopBits", "1");
-
-</div>
-<div class="source">
-
-
 // setup filter wheels
-
-</div>
-<div class="source">
-
 core.loadDevice("WA", "SutterLambda", "Wheel-A");
-
-</div>
-<div class="source">
-
 core.setProperty("WA", "Port", "P1");
-
-</div>
-<div class="source">
-
 core.loadDevice("WB", "SutterLambda", "Wheel-B");
-
-</div>
-<div class="source">
-
 core.setProperty("WB", "Port", "P1");
-
-</div>
-<div class="source">
-
-
 mmc.initializeAllDevices();
-
-</div>
+```
 
 
 The code above looks fairly straightforward, but there are a couple of
@@ -948,52 +538,17 @@ for imaging DAPI fluorescence channel you need to set three filters in
 proper positions:  
 
 
-<div class="source">
-
+```
 // Set DAPI imaging path
-
-</div>
-<div class="source">
-
 core.setState("Emission", 1);
-
-</div>
-<div class="source">
-
 core.setState("Excitation", 2);
-
-</div>
-<div class="source">
-
 core.setState("Dichroic", 0);
-
-</div>
-<div class="source">
-
-
 Or equivalently, by exploiting property mechanism:
-
-</div>
-<div class="source">
-
 // equivalent to above
-
-</div>
-<div class="source">
-
 core.setProperty("Emission", "State", "1");
-
-</div>
-<div class="source">
-
 core.setProperty("Excitation", "State", "2");
-
-</div>
-<div class="source">
-
 core.setProperty ("Dichroic", "State", "0");
-
-</div>
+```
 <div>
 
 
@@ -1006,37 +561,14 @@ command. To define "DAPI" configuration (group of commands) you need to
 write:  
 
 
-<div class="source">
-
+```
 // Define DAPI configuration once at the beginning of the session
-
-</div>
-<div class="source">
-
 core.defineConfigGroup("Channel","DAPI", "Emission", "State", "1");
-
-</div>
-<div class="source">
-
 core.defineConfigGroup("Channel","DAPI", "Excitation", "State", "2");
-
-</div>
-<div class="source">
-
 core.defineConfigGroup("Channel","DAPI", "Dichroic", "State", "0");
-
-</div>
-<div class="source">
-
-
 // use configuration command many times
-
-</div>
-<div class="source">
-
 core.setConfig("DAPI);
-
-</div>
+```
 <div>
 
 
@@ -1056,52 +588,18 @@ To discover which configurations are currently defined in your system
 and what exact settings they consist of, you can use:  
 
 
-<div class="source">
-
+```
 StrVector configs = core.getAvailableConfigGroups();
-
-</div>
-<div class="source">
-
 for (int i=0; i&lt;configs.size(); i++){
-
-</div>
-<div class="source">
-
 Configuration cdata = core.getConfigData(configs.get(i));
-
-</div>
-<div class="source">
-
 System.out.println("Configuration " + configs.get(i));
-
-</div>
-<div class="source">
-
 for (int j=0; j&lt;cdata.size(); j++) {
-
-</div>
-<div class="source">
-
 PropertySetting s = cdata.getSetting(j);
-
-</div>
-<div class="source">
-
 System.out.println(" " + s.getDeviceLabel() + ", " + s.getPropertyName()
 + ", " + s.getPropertyValue());
-
-</div>
-<div class="source">
-
 }
-
-</div>
-<div class="source">
-
 }
-
-</div>
+```
 
 
 Note the two new classes defined in the MMCoreJ: Configuration and
@@ -1112,11 +610,9 @@ PropertySetting objects.
 To discover which configuration the system is currently in:  
 
 
-<div class="source">
-
+```
 String config = core.getConfiguration();
-
-</div>
+```
 <div>
 
 
@@ -1140,27 +636,12 @@ device declares that it is busy if it is still executing the previous
 command. To check the status of a single device or the entire system:  
 
 
-<div class="source">
-
+```
 // check Z stage status
-
-</div>
-<div class="source">
-
 boolean ZStageBusy = core.deviceBusy("Z");
-
-</div>
-<div class="source">
-
-
 // check if any of the devices in the system are busy
-
-</div>
-<div class="source">
-
 boolean systemBusy = core.systemBusy();
-
-</div>
+```
 
 
 Very often you check the device status because you shouldn't proceed
@@ -1170,143 +651,40 @@ polling loops, we provided special commands to implement waiting for
 devices:  
 
 
-<div class="source">
-
+```
 // wait until Z stage stops moving
-
-</div>
-<div class="source">
-
 core.waitForDevice("Z");
-
-</div>
-<div class="source">
-
 core.snapImage();
-
-</div>
-<div class="source">
-
-
 // move to new XY position
-
-</div>
-<div class="source">
-
 core.SetPosition("X", 1230);
-
-</div>
-<div class="source">
-
 core.setPosition("Y", 330);
-
-</div>
-
+```
 
 
-<div class="source">
 
+```
 // wait until the all devices in the system stop moving
-
-</div>
-<div class="source">
-
 core.waitForSystem();
-
-</div>
-<div class="source">
-
 core.snapImage();
-
-</div>
-<div class="source">
-
 Imaging
-
-</div>
-<div class="source">
-
 To further streamline synchronization tasks you can define all devices
 which must be non-busy before the image is acquired.
-
-</div>
-<div class="source">
-
 // The following devices must stop moving before the image is acquired
-
-</div>
-<div class="source">
-
 core.assignImageSynchro("X");
-
-</div>
-<div class="source">
-
 core.assignImageSynchro("Y");
-
-</div>
-<div class="source">
-
 core.assignImageSynchro("Z");
-
-</div>
-<div class="source">
-
 core.assignImageSynchro("Emission");
-
-</div>
-<div class="source">
-
-
 // Set all the positions. For some of the devices it will take a while
-
-</div>
-<div class="source">
-
 // to stop moving
-
-</div>
-<div class="source">
-
 core.SetPosition("X", 1230);
-
-</div>
-<div class="source">
-
 core.setPosition("Y", 330);
-
-</div>
-<div class="source">
-
 core.SetPosition("Z", 8000);
-
-</div>
-<div class="source">
-
 core.setState("Emission", 3);
-
-</div>
-<div class="source">
-
-
 // Just go ahead and snap an image. The system will automatically wait
-
-</div>
-<div class="source">
-
 // for all of the above devices to stop moving before the
-
-</div>
-<div class="source">
-
 // image is acquired
-
-</div>
-<div class="source">
-
 core.snapImage();
-
-</div>
+```
 
 ## Shutter control
 
@@ -1316,52 +694,17 @@ done. If the "auto shutter" feature is turned on the system will
 automatically perform these operations in the snapImage command.  
 
 
-<div class="source">
-
+```
 // take image with auto shutter
-
-</div>
-<div class="source">
-
 core.setAutoShutter(true);
-
-</div>
-<div class="source">
-
 core.snapImage();
-
-</div>
-<div class="source">
-
-
 // take image with manual shutter
-
-</div>
-<div class="source">
-
 core.setAutoShutter(false); // disable auto shutter
-
-</div>
-<div class="source">
-
 core.setProperty("Shutter", "State", "1"); // open
-
-</div>
-<div class="source">
-
 core.waitForDevice("Shutter");
-
-</div>
-<div class="source">
-
 core.snapImage();
-
-</div>
-<div class="source">
-
 core.setProperty("Shutter", "State", "0"); // close
-
-</div>
+```
 
 ## Configuring the system
 
@@ -1373,252 +716,62 @@ current hardware setup. Here is an example configuration program to be
 executed at system startup:  
 
 
-<div class="source">
-
+```
 // load devices
-
-</div>
-<div class="source">
-
 core.loadDevice("Camera", "DemoCamera", "DCam");
-
-</div>
-<div class="source">
-
 core.loadDevice("Emission", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Excitation", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Dichroic", "DemoCamera", "DWheel");
-
-</div>
-<div class="source">
-
 core.loadDevice("Objective", "DemoCamera", "DObjective");
-
-</div>
-<div class="source">
-
 core.loadDevice("X", "DemoCamera", "DStage");
-
-</div>
-<div class="source">
-
 core.loadDevice("Y", "DemoCamera", "DStage");
-
-</div>
-<div class="source">
-
 core.loadDevice("Z", "DemoCamera", "DStage");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 core.initializeAllDevices();
-
-</div>
-<div class="source">
-
 // Set labels for state devices
-
-</div>
-<div class="source">
-
 //
-
-</div>
-<div class="source">
-
 // emission filter
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 0, "Chroma-D460");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 1, "Chroma-HQ620");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 2, "Chroma-HQ535");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Emission", 3, "Chroma-HQ700");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // excitation filter
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Excitation", 2, "Chroma-D360");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Excitation", 3, "Chroma-HQ480");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Excitation", 4, "Chroma-HQ570");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Excitation", 5, "Chroma-HQ620");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // excitation dichroic
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Dichroic", 0, "400DCLP");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Dichroic", 1, "Q505LP");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Dichroic", 2, "Q585LP");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // objective
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Objective", 1, "Nikon 10X S Fluor");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Objective", 3, "Nikon 20X Plan Fluor ELWD");
-
-</div>
-<div class="source">
-
 core.defineStateLabel("Objective", 5, "Zeiss 4X Plan Apo");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // define configurations
-
-</div>
-<div class="source">
-
 //
-
-</div>
-<div class="source">
-
 core.defineConfiguration("FITC", "Emission", "State", "2");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("FITC", "Excitation", "State", "3");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("FITC", "Dichroic", "State", "1");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 core.defineConfiguration("DAPI", "Emission", "State", "1");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("DAPI", "Excitation", "State", "2");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("DAPI", "Dichroic", "State", "0");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 core.defineConfiguration("Rhodamine", "Emission", "State", "3");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("Rhodamine", "Excitation", "State", "4");
-
-</div>
-<div class="source">
-
 core.defineConfiguration("Rhodamine", "Dichroic", "State", "2");
 
-</div>
-<div class="source">
-</div>
-<div class="source">
-
 // set initial imaging mode
-
-</div>
-<div class="source">
-
 //
-
-</div>
-<div class="source">
-
 core.setProperty("Camera", "Exposure", "55");
-
-</div>
-<div class="source">
-
 core.setProperty("Objective", "Label", "Nikon 10X S Fluor");
-
-</div>
-<div class="source">
-
 core.setConfiguration("DAPI");
-
-</div>
+```
 
 
 Complete example:
@@ -1632,11 +785,9 @@ the system starts, you can create equivalent configuration file which
 can be executed with a single command:  
 
 
-<div class="source">
-
+```
 core.loadSystemConfiguration("media/MMConfig.cfg");
-
-</div>
+```
 
 
 In this case
