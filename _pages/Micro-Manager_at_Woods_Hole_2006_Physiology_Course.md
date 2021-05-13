@@ -13,4 +13,3 @@ Course](http://courses.mbl.edu/physiology/) at<span><u>
 </u></span>[MBL](http://www.mbl.edu/), Woods Hole, MA. Three automated
 microscope setups were equipped with Micro-Manager software.
 
-{% include Events_Sidebar text="" %}

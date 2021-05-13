@@ -72,4 +72,3 @@ and take down.
 
 \|width=633\|height=430 \|border=8 😎"&gt;
 
-{% include Events_Sidebar text="" %}

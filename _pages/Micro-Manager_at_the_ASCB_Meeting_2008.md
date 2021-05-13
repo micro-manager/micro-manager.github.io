@@ -69,4 +69,3 @@ booth and for all the support our project is getting from the industry!
 |     | <font size=-1>S2 cells expressing GFP-lamin and cherry-tubulin (from Eric Griffis). Images were taken during the ASCB meeting at 10 second intervals. At each time point, a z-stack of 5 slices (with 1 micron intervals) was acquired. Exposure time was 99.9 msec, total time to acquire a single time point (10 images) was about 1 second. Shown here is a maxmimum intensity projection at each time point. </font> |
 
   
-{% include Events_Sidebar text="" %}

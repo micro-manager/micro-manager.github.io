@@ -19,4 +19,3 @@ everyone for stopping by our booth!
 flyer](https://valelab.ucsf.edu/~MM/MMweb/content/doc/pdf/media/Micro-Manager-Brochure-1.pdf)
 (PDF)
 
-{% include Events_Sidebar text="" %}
