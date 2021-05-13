@@ -70,4 +70,3 @@ Prior, Solamer, Nikon, and Zeiss.
 
 And of course, many thanks Ron for making it all happen.
 
-{% include Credits_Sidebar text="" %}
