@@ -60,4 +60,3 @@ following calculation:
 acquired image = resulting image \* (flatfield image - background) +
 background
 
-{% include Documentation_Sidebar text="" %}

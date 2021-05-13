@@ -49,4 +49,3 @@ Multi-Dimensional acquisition GUI. To access it:
 Information about other stitching options is available on the [NIC
 wiki](http://nic.ucsf.edu/dokuwiki/doku.php?id=image_stitching_in_micro-manager).
 
-{% include Documentation_Sidebar text="" %}

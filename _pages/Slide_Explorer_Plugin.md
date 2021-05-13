@@ -19,4 +19,3 @@ plugin](Pixel_Calibrator_Plugin "wikilink"). The size and orientation of
 pixels measured by the Pixel Calibrator will be used to ensure that the
 tiles in the Slide Explorer are properly positioned.
 
-{% include Documentation_Sidebar text="" %}

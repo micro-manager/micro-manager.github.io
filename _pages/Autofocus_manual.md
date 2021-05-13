@@ -128,4 +128,3 @@ I'm not quite confident about this threshold trick. sometimes the single
 bell-shape is not perfect. I would recommend setting high Threshold for
 now.
 
-{% include Documentation_Sidebar text="" %}

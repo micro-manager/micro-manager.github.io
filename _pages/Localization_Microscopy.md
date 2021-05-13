@@ -246,4 +246,3 @@ was derived from, box size, original image size, pixel size, etc..).
 </td>
 </table>
 
-{% include Documentation_Sidebar text="" %}

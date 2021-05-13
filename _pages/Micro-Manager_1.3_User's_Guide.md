@@ -699,4 +699,3 @@ license for the MMCore (control module). All supplied device drivers
 ('adpaters') for cameras and other devices are covered by the BSD
 license. Copyright for some of the adapters is owned by other parties.  
   
-{% include Documentation_Sidebar text="" %}

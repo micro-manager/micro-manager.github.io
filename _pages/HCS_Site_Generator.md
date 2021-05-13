@@ -14,4 +14,3 @@ multi-dimensional acquisition.
 <img src="media/HCS.png" title="media/HCS.png" width="650" alt="media/HCS.png" /><figcaption aria-hidden="true">media/HCS.png</figcaption>
 </figure>
 
-{% include Documentation_Sidebar text="" %}

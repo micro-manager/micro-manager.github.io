@@ -490,4 +490,3 @@ gui.refreshGUI();  // Shows above selected channel.
    # PixelSize settings
 ```
 
-{% include Documentation_Sidebar text="" %}

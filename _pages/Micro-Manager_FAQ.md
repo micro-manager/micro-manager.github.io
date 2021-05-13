@@ -122,4 +122,3 @@ Also, please update "[Papers citing
 Micro-Manager](Papers_citing_Micro-Manager "wikilink")" with a reference
 to your paper. We will need this information to secure future funding.
 
-{% include Documentation_Sidebar text="" %}

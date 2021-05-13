@@ -28,4 +28,3 @@ use the Multi-Dimensional Acquisition and its facilities. To do so,
 -   When you run the acquisition, you will be prompted to put the
     correct filters/dichroics in place.
 
-{% include Documentation_Sidebar text="" %}

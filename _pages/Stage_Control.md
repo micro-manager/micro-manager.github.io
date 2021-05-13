@@ -13,4 +13,3 @@ whole field.
 
 ![Stage Control plugin](media/StageControl.png "Stage Control plugin")
 
-{% include Documentation_Sidebar text="" %}

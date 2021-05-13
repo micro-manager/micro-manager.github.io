@@ -157,7 +157,6 @@ when each image was acquired (sorted here for clarity):
 In addition, these FrameKeys are also stored as metadata in the image
 tiff files.
 
-{% include Documentation_Sidebar text="" %}
 
 ## 1.3 (MetadataVersion 8)
 

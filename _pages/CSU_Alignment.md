@@ -79,4 +79,3 @@ Overview of alignment process:
 
 ![](media/Center_emission.png "media/Center_emission.png")
 
-{% include Documentation_Sidebar text="" %}

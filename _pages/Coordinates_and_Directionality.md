@@ -65,4 +65,3 @@ when Micro-Manager shuts down.
 
 --[Nico](User:Nico "wikilink") 17:52, 31 May 2008 (PDT)
 
-{% include Documentation_Sidebar text="" %}

@@ -34,4 +34,3 @@ Image after rotation (I used a considerably lower laser power for this
 image):
 ![](media/SpDiskFiberAllignment-2.jpg‎ "fig:media/SpDiskFiberAllignment-2.jpg‎")
 
-{% include Documentation_Sidebar text="" %}

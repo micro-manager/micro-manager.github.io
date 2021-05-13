@@ -80,4 +80,3 @@ on the focus score.
 If debug log is ON, you can also see the dynamic range of the normalized
 image. This is also very strongly dependent on the focus.
 
-{% include Documentation_Sidebar text="" %}

@@ -23,4 +23,3 @@ Usage instructions:
     update a Calibration setting.
 5.  Switch to a new magnification (objective/optovar) and repeat.
 
-{% include Documentation_Sidebar text="" %}

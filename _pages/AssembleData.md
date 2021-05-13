@@ -33,4 +33,3 @@ first time point of both datasets. Once things look good, press the
 
 {% include Listserv_Search text="AssembleData" %}
 
-{% include Documentation_Sidebar text="" %}

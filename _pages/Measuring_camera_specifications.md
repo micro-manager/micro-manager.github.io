@@ -223,4 +223,3 @@ For the complete theory behind photon transfer curves, consult the
 following reference: James R. Janesick, Photon Transfer, DN -&gt; λ.
 SPIE Press, 2007.
 
-{% include Documentation_Sidebar text="" %}

@@ -181,4 +181,3 @@ transition between ordinary and custom work.
 
 [P.nanda](User:P.nanda "wikilink") 18:33, 18 September 2012 (PDT)
 
-{% include Documentation_Sidebar text="" %}

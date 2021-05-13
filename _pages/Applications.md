@@ -9,4 +9,3 @@ will find documentation about such applications:
 
 -   [Camera Measurements](Measuring_camera_specifications "wikilink")
 
-{% include Documentation_Sidebar text="" %}

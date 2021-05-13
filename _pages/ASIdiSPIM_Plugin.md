@@ -166,4 +166,3 @@ For instructions on updating the controller firmware see
 
 {% include Listserv_Search text="ASIdiSPIM" %}
 
-{% include Documentation_Sidebar text="" %}

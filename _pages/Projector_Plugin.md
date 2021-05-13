@@ -220,4 +220,3 @@ Unfortunately there is no emergency "off" button at the moment.
 What happens when I target something outside the device range?  
 It ignores those clicks.
 
-{% include Documentation_Sidebar text="" %}

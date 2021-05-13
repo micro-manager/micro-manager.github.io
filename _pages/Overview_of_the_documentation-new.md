@@ -40,4 +40,3 @@ in auto-generated Doxygen format. Device adapter authors will be
 intersted in the [Device-API
 reference](https://valelab.ucsf.edu/~arthur/mm_doc/html/class_c_device_base.html).
 
-{% include Documentation_Sidebar text="" %}

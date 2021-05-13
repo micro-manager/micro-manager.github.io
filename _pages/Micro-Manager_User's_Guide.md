@@ -760,4 +760,3 @@ Updated for version 1.0.54 (beta) on December 4, 2006
 Nenad Amodaj, April 2006</span>  
 <span> </span>  
 
-{% include Documentation_Sidebar text="" %}
