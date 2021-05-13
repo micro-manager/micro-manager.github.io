@@ -4,7 +4,6 @@ title: Micro-Manager Device Developer's Kit for Windows
 layout: page
 ---
 
-{% include Downloads_Sidebar text="" %}
 
 {% include Note text="This page is obsolete. Please see [[Building Micro-Manager Device Adapters]] and [[Building and debugging Micro-Manager source code]]." %}
 

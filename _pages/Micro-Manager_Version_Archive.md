@@ -2134,4 +2134,3 @@ Old!)](Micro-Manager_1.2_Windows_(Very_Old!) "wikilink") \|
 [Micro-Manager 1.2 Mac (Very
 Old!)](Micro-Manager_1.2_Mac_(Very_Old!) "wikilink")
 
-{% include Downloads_Sidebar text="" %}
