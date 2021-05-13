@@ -15,4 +15,3 @@ For commercial support for Micro-Manager, please contact one of the
 [System Integrators](System_Integrators "wikilink") or [Programming
 Services](Programming_Services "wikilink") supporting Micro-Manager.
 
-{% include Support_Sidebar text="" %}
