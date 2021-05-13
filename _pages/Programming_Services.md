@@ -18,4 +18,3 @@ Micro-Manager:
 If you or your company would like to be included in this list, please
 contact us.
 
-{% include Support_Sidebar text="" %}

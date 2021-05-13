@@ -21,4 +21,3 @@ equipped with Micro-Manager:
 If you represent a system integrator working with Micro-Manager not yet
 listed here, please contact us.
 
-{% include Support_Sidebar text="" %}

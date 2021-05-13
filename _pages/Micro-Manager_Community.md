@@ -14,4 +14,3 @@ Archives of the mailing list that ran between 2006-2020: \[\|
 [Browse/Search](http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general)
 \| [Search at Nabble](http://micro-manager.3463995.n2.nabble.com/)\]
 
-{% include Support_Sidebar text="" %}
