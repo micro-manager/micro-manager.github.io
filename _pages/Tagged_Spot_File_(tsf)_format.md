@@ -397,4 +397,3 @@ message Spot {
 }
 ```
 
-{% include Documentation_Sidebar text="" %}

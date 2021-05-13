@@ -20,4 +20,3 @@ adapter.)
 
 {% include Listserv_Search text="Polygon" %}
 
-{% include Documentation_Sidebar text="" %}

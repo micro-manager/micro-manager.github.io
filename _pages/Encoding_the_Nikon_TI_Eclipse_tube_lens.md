@@ -71,4 +71,3 @@ change when the magnet is close to the hall effect sensor (the input
 updates automatically every second). Add this property to the pixel size
 configuration and Micro-Manager will always know the exact pixel size.
 
-{% include Documentation_Sidebar text="" %}

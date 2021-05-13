@@ -148,4 +148,3 @@ One can add the folder containing device library files to the Windows
 -   If your OS is older than Windows Vista, restart your computer for
     the new `PATH` to take effect.
 
-{% include Documentation_Sidebar text="" %}

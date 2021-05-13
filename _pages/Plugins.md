@@ -60,4 +60,3 @@ projection of patterned light onto a specimen, live slide mapping,
 imaging with multi-well plates, particle localization and tracking, and
 high-speed imaging.
 
-{% include Documentation_Sidebar text="" %}

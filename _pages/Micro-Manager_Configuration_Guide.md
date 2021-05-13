@@ -500,4 +500,3 @@ Revised on May 16, 2012 by Ziah Dean**
 **Revised on December 3, 2014, by Mark Tsuchida**  
 **Extended on October 5, 2015 by Eugene Dvoretsky**</span>
 
-{% include Documentation_Sidebar text="" %}

@@ -17,4 +17,3 @@ file to a safe place to be used in this analysis plugin.
 
 {% include Listserv_Search text="Point_and_Shoot_Analysis" %}
 
-{% include Documentation_Sidebar text="" %}

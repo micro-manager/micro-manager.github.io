@@ -17,4 +17,3 @@ dialog (**Tools\|Options**).
   
   
   
-{% include Documentation_Sidebar text="" %}

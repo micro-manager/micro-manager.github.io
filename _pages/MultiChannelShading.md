@@ -40,4 +40,3 @@ flat-fielding. If it is unchecked, no background subtraction or
 flat-fielding will be performed. It is often useful to disable
 flat-fielding in live mode so that the live image doesn't lag.
 
-{% include Documentation_Sidebar text="" %}

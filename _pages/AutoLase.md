@@ -19,4 +19,3 @@ Caulobacter crescentus in vivo Z-ring organization. PNAS. 201313368,
 
 {% include Listserv_Search text="AutoLase" %}
 
-{% include Documentation_Sidebar text="" %}

@@ -21,4 +21,3 @@ compile it, and the plugin will automatically reload the device adapter
 in your running Micro-Manager instance, so you can immediately test the
 changes.
 
-{% include Documentation_Sidebar text="" %}

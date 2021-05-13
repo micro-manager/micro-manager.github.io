@@ -50,4 +50,3 @@ intensity and gain and readnoise of your virtual camera.
 
 {% include Listserv_Search text="Photon Transfer Curve Assistant" %}
 
-{% include Documentation_Sidebar text="" %}

@@ -154,4 +154,3 @@ Saurabh<http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya>
         Micro-Manager](Papers_citing_Micro-Manager "wikilink") - Add
         your own paper to the list!
 
-{% include Documentation_Sidebar text="" %}

@@ -29,4 +29,3 @@ tiling set of images that covers each region.
 
 {% include Listserv_Search text="AcquireMultipleRegions" %}
 
-{% include Documentation_Sidebar text="" %}

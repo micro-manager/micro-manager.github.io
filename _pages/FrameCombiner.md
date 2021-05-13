@@ -55,4 +55,3 @@ Please report any issue to
 This work started in 2016 at the [Gary Brouhard
 laboratory](http://brouhardlab.mcgill.ca/) at the University of McGill.
 
-{% include Documentation_Sidebar text="" %}

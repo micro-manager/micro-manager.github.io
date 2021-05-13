@@ -21,4 +21,3 @@ one of the two cameras used provides a mirrored image.
 
 {% include Listserv_Search text="ImageFlipper" %}
 
-{% include Documentation_Sidebar text="" %}

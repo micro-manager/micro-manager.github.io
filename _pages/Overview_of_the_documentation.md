@@ -37,4 +37,3 @@ in auto-generated Doxygen format. Device adapter authors will be
 interested in the [Device-API
 reference](https://valelab.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html).
 
-{% include Documentation_Sidebar text="" %}

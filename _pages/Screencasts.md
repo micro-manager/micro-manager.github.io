@@ -25,4 +25,3 @@ section: User Documentation
 
 {% include youtube.html id="fcqgQGi1kCk" %}
 
-{% include Documentation_Sidebar text="" %}

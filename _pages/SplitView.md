@@ -19,4 +19,3 @@ Split View dialog.
 
   
 
-{% include Documentation_Sidebar text="" %}

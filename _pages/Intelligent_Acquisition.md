@@ -49,4 +49,3 @@ round) are also possible.
 
 --[Nico](User:Nico "wikilink") 16:54, 14 October 2012 (PDT)
 
-{% include Documentation_Sidebar text="" %}

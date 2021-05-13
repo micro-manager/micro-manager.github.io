@@ -106,4 +106,3 @@ from the camera to an AOTF- or LED-based illuminator to produce
 high-speed multi-channel movies, and by triggering a piezo-driven focus
 drive, can produce high-speed Z stacks.
 
-{% include Documentation_Sidebar text="" %}

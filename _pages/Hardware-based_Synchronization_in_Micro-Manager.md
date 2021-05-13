@@ -130,4 +130,3 @@ post-processing:
     MDA](https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md)
     by Guillaume Witz & Thomas Julou.
 
-{% include Documentation_Sidebar text="" %}
