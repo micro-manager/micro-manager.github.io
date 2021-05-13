@@ -15,4 +15,3 @@ Laboratory) will be leading a workshop,
 [Instrument Control and Image Acquisition Using
 Micromanager](http://imagejconf.tudor.lu/program/doku.php?id=:program:workshops:grant_harris455418126)
 
-{% include Events_Sidebar text="" %}
