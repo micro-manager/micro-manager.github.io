@@ -4823,4 +4823,3 @@ actin homolog. **Science**. 315:1270-1274. PMID 17332412.
 
 Total 2007 Citations: 11
 
-{% include Credits_Sidebar text="" %}

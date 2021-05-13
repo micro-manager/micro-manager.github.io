@@ -43,4 +43,3 @@ always, we thank you for your feedback!
 
 -- Mark, Chris, and Nico (the developers)
 
-{% include Credits_Sidebar text="" %}

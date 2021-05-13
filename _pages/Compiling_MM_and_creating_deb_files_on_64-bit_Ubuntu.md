@@ -22,12 +22,12 @@ OS was Ubuntu jaunty.
 
 ## Pre-requisite packages
 
-\- ImageJ (either debian package or uncompress media/Tar.gz from ImageJ
+- ImageJ (either debian package or uncompress media/Tar.gz from ImageJ
 website in /usr/local/ImageJ/). The debs on launchpad are version 1.41n
 whereas you can get the latest from the ImageJ website. Micro-manager
 plugin requires ImageJ version 1.42n and above.
 
-\- sun-java6-jdk
+- sun-java6-jdk
 
 -libtool
 
