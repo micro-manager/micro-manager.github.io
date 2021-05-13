@@ -100,4 +100,3 @@ sub-folders within the root Micro-Manager folder.
 Migrating your favorite ImageJ plugins to Micro-Manager installation
 should not cause any problems.
 
-{% include Downloads_Sidebar text="" %}

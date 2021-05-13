@@ -231,4 +231,3 @@ select "Open".)
 
 [(Previous releases)](Micro-Manager_Version_Archive "wikilink")
 
-{% include Downloads_Sidebar text="" %}
