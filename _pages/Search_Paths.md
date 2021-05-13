@@ -145,4 +145,3 @@ system property `java.library.path`.
 future, so that it can be enabled or disabled at build time on both OS X
 and Linux.)
 
-{% include Programming_Sidebar text="" %}

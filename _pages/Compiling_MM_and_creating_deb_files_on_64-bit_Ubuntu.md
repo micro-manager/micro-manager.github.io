@@ -163,4 +163,3 @@ worked.
 bring up micro-manager. You need to invoke it from
 {% include bc path="Plugins|Micro-manager|Micro-manager Studio" %}.
 
-{% include Programming_Sidebar text="" %}

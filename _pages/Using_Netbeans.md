@@ -92,4 +92,3 @@ If running Micro-Manager 2.0, you also need to supply
 
 {% include Note text="The components from the installed Micro-Manager can get out of sync with the Subversion source. If you encounter unexpected errors, update to the latest nightly build and the latest source revision." %}
 
-{% include Programming_Sidebar text="" %}

@@ -331,4 +331,3 @@ whenever acquisition or image comments are changed.
 --[Henry Pinkard](User:Henry_Pinkard "wikilink") 7:35, 20th March 2013
 (PDT)
 
-{% include Programming_Sidebar text="" %}

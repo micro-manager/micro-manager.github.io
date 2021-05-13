@@ -95,4 +95,3 @@ scripts](https://valelab.ucsf.edu/trac/micromanager/browser/scripts)
 
 --[Nico](User:Nico "wikilink") 21:04, 15 December 2007 (PST)
 
-{% include Programming_Sidebar text="" %}

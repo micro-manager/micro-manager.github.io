@@ -406,4 +406,3 @@ ant stage-only
 The `stage`, `run` and `package` targets are not yet fully implemented
 for general use (they expect files to be present at specific paths).
 
-{% include Programming_Sidebar text="" %}

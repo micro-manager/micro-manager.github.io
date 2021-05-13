@@ -16,4 +16,3 @@ the class path. The [Data Browser source
 code](https://valelab.ucsf.edu/trac/micromanager/browser/plugins/DataBrowser/src/org/micromanager/browser)
 shows an example of a Micro-Manager plugin in written Clojure.
 
-{% include Programming_Sidebar text="" %}

@@ -193,7 +193,6 @@ available in the script panel as **acq** or by calling
 gui.getAcquisitionEngine(). This wrapper uses a
 DefaultTaggedImagePipeline to set up the data flow of TaggedImages.
 
-{% include Programming_Sidebar text="" %}
 
 # High-level Introduction to Acquisition Engine Programming
 

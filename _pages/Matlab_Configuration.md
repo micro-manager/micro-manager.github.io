@@ -214,4 +214,3 @@ for iDir = find(validIndex)                  % Loop over�
 end
 ```
 
-{% include Programming_Sidebar text="" %}

@@ -76,4 +76,3 @@ java.lang.System.clearProperty('java.util.prefs.PreferencesFactory')
 (Reported by Paul Andrews, work around suggested by The Mathworks
 support).
 
-{% include Programming_Sidebar text="" %}

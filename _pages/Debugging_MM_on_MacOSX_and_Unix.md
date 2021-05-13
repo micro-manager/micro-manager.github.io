@@ -72,4 +72,3 @@ this).
     source).
 10. Select Debug...Attach debugger.
 
-{% include Programming_Sidebar text="" %}

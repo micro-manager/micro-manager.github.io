@@ -201,4 +201,3 @@ Style and select "Swing Layout Extensions Library".
         `C:\Program Files\Micro-Manager-1.4\mmplugins\`<plugin name>
     4.  Click "Finish"
 
-{% include Programming_Sidebar text="" %}

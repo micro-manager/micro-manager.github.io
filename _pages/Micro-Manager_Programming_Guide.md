@@ -784,4 +784,3 @@ saveConfiguration() command. For example you can build-up the system by
 using script commands described in this Guide and when you verify that
 everything is working, you can save the configuration in the file so
 that it can be recalled in the future with the single command.  
-{% include Programming_Sidebar text="" %}

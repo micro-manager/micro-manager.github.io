@@ -41,4 +41,3 @@ svn checkout <http://microscopytoolbox.googlecode.com/svn/trunk/>
 microscopytoolbox-read-only  
 to checkout the code.
 
-{% include Programming_Sidebar text="" %}

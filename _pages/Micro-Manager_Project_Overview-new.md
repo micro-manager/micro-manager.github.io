@@ -200,4 +200,3 @@ initialized, the command set can be easily customized using device
 management features in the User Interface. For example, the user can
 configure simultaneous actions on multiple devices to be executed
 following a single command.  
-{% include Overview_Sidebar text="" %}
