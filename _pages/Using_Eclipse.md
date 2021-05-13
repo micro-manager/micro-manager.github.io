@@ -72,4 +72,3 @@ layout: page
     appropriate javaw process. On Unix, use top or ps to find the
     process and start gdb: gdb Jave processID.
 
-{% include Programming_Sidebar text="" %}

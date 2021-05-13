@@ -32,4 +32,3 @@ is not encouraged because it complicates installation by the user and
 causes version compatibility issues. Existing closed-source device
 adapters in the official release will generally be maintained.
 
-{% include Programming_Sidebar text="" %}

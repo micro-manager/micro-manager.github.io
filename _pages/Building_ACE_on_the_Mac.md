@@ -71,4 +71,3 @@ Copy `libACE.a` to `/usr/local/lib`
 [mac hard drive
 recovery](http://mackeeper.zeobit.com/mac-photo-recovery)
 
-{% include Programming_Sidebar text="" %}

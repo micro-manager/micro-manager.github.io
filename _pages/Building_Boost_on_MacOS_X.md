@@ -41,4 +41,3 @@ sudo ./bjam --install --build-dir=i386 --toolset=darwin --link=static --runtime-
 sudo ./bjam --install --build-dir=x86_64 --toolset=darwin-4.2 --link=static --runtime-link=static --threading=multi --layout=tagged --prefix=/usr/local/x86_64 architecture=x86 address-model=64 macosx-version-min=10.5 --with-system --with-thread --with-iostreams --with-date_time --libdir=/usr/local/x86_64/lib --includedir=/usr/local/x86_64/include --stagedir=/usr/local/x86_64
 ```
 
-{% include Programming_Sidebar text="" %}

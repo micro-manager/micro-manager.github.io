@@ -55,4 +55,3 @@ A very handy Beanshell function is:
 
       unset("y"); // Removes the function "y" from the current namespace
 
-{% include Programming_Sidebar text="" %}

@@ -56,4 +56,3 @@ to configure Î¼Manager for your system. To get an idea of what it takes
 to configure the Micro-Manager for your hardware setup, have a look at
 the [Configuration
 Guide](http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Configuration_Guide).  
-{% include Overview_Sidebar text="" %}

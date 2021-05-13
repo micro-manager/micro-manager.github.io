@@ -74,4 +74,3 @@ Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
 
 {% include Note text="The components from the installed Micro-Manager can get out of sync with the source code. If you encounter unexpected errors, update to the latest nightly build and the latest source revision." %}
 
-{% include Programming_Sidebar text="" %}

@@ -173,4 +173,3 @@ start simply as:
 
 You need the following packages:
 
-{% include Programming_Sidebar text="" %}

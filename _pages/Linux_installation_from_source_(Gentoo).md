@@ -15,4 +15,3 @@ After adding the overlay, install it using:
        # emerge micro-manager
 ```
 
-{% include Programming_Sidebar text="" %}

@@ -84,4 +84,3 @@ and change the Pattern to:
 ReportingUtils.showError(${exception_var});
 ```
 
-{% include Programming_Sidebar text="" %}

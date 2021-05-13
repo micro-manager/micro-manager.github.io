@@ -42,4 +42,3 @@ Example:
 CXXFLAGS="-g -O2 -mmacosx-version-min=10.4"
 ```
 
-{% include Programming_Sidebar text="" %}

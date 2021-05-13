@@ -81,4 +81,3 @@ make
 sudo make install
 ```
 
-{% include Programming_Sidebar text="" %}

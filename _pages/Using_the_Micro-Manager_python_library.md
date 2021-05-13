@@ -272,4 +272,3 @@ acquisition, property discovery etc).
 Written by Eugene Dvoretsky -- [Radioxoma](User:Radioxoma "wikilink")
 ([talk](User_talk:Radioxoma "wikilink")) 09:19, 14 June 2014 (PDT)
 
-{% include Programming_Sidebar text="" %}

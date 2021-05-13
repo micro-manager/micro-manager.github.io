@@ -142,4 +142,3 @@ some issues to be ported on Windows, it would be great if a module of
 micromanager could be developed with this driver. I unfortunately do not
 have the time to do it myself presently.
 
-{% include Programming_Sidebar text="" %}

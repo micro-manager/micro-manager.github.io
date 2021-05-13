@@ -12,4 +12,3 @@ section: Programming
     GUI](Matlab_and_the_Micro-Manager_GUI "wikilink") - Controlling the
     Micro-Manager graphical user interface with Matlab.
 
-{% include Programming_Sidebar text="" %}

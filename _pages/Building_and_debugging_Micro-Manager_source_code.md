@@ -218,4 +218,3 @@ Yes (Official)</p></td>
 -   [Free third-party tools for testing communications with
     hardware](Free_third-party_tools_for_testing_communications_with_hardware "wikilink")
 
-{% include Programming_Sidebar text="" %}

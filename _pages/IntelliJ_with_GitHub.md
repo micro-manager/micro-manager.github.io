@@ -75,4 +75,3 @@ Select an Application Template, and then the **+** Sign
 <img src="media/Annotation_2020-04-15_110259.png" title="media/Annotation_2020-04-15_110259.png" width="300" alt="media/Annotation_2020-04-15_110259.png" /><figcaption aria-hidden="true">media/Annotation_2020-04-15_110259.png</figcaption>
 </figure>
 
-{% include Programming_Sidebar text="" %}
