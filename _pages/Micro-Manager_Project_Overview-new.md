@@ -4,7 +4,6 @@ title: Micro-Manager Project Overview-new
 layout: page
 ---
 
-\_\_NOTOC\_\_
 
 ## Introduction
 

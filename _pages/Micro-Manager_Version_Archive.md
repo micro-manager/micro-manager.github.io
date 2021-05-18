@@ -5,7 +5,6 @@ layout: page
 section: Downloads
 ---
 
-\_\_NOTOC\_\_
 
 ## Micro-Manager 1.4.21 (April 30, 2015)
 

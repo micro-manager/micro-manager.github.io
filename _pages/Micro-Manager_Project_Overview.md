@@ -5,7 +5,6 @@ layout: page
 section: Overview
 ---
 
-\_\_NOTOC\_\_
 
 µManager is software for control of microscopes. It works with almost
 all microscopes, cameras and peripherals on the market, and provides an
