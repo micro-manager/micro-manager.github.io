@@ -76,12 +76,9 @@
   {% include menu-section-end %}
 {% include menu-section-end %}
 
-<!-- Events -->
-{% include menu-section title="Events" %}
-  {% include menu-item title="IJ Conference 2012" link="/IJ_Conference_2012" %}
-  {% include menu-item title="Micro-Manager at the ASCB Meeting 2008" link="/Micro-Manager_at_the_ASCB_Meeting_2008" %}
-  {% include menu-item title="Micro-Manager at the ASCB Meeting 2006" link="/Micro-Manager_at_the_ASCB_Meeting_2006" %}
-  {% include menu-item title="Micro-Manager at Woods Hole 2006 Physiology Course" link="/Micro-Manager_at_Woods_Hole_2006_Physiology_Course" %}
+<!-- News -->
+{% include menu-section title="News" %}
+  {% include listnews %}
 {% include menu-section-end %}
 
 <!-- Support -->

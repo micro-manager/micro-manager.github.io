@@ -97,20 +97,20 @@ $sidebarShadowSize: 4px;
 $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding;
 
 #left-column .menu details > summary:after {
-	left: $leftColumnArrowOffset;
+  left: $leftColumnArrowOffset;
 }
 
 #left-column .menu details[open] > summary:after {
-	left: $sidebarMargin + $sidebarPadding;
+  left: $leftColumnArrowOffset - 1;
 }
 
 #right-column .menu details > summary:after {
-	right: $sidebarMargin + $sidebarPadding;
+  right: $sidebarMargin;
 }
 
 #right-column .menu details[open] > summary:after {
-
 }
+
 
 /* Statbox */
 
@@ -161,4 +161,19 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding;
 #statbox #statbox-affiliation {
 	clear: left;
 	line-height: 1.2em;
+}
+
+/* Sticky sidebar */
+
+.sidebar {
+	position: sticky;
+  top: 1%;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
