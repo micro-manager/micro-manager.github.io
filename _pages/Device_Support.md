@@ -5,7 +5,8 @@ layout: page
 section: Devices
 ---
 
-\_\_NOTOC\_\_ Most difficulties in working with Micro-Manager arise from
+
+ Most difficulties in working with Micro-Manager arise from
 configuring the system and from problems/issues with specific devices.
 In both of these cases you are interacting mainly with device adapters.
 These device adapters have been written by several different authors,

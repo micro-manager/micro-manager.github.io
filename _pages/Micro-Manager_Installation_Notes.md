@@ -5,7 +5,8 @@ layout: page
 section: Downloads
 ---
 
-\_\_NOTOC\_\_  
+
+  
 After you install Micro-Manager using the instructions for your
 platform, you can test-drive the software in demo-mode. The application
 will start in demo-mode by default after installation. To use
