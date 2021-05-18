@@ -4,7 +4,6 @@ title: Micro-Manager Open Source Microscopy Software
 layout: page
 ---
 
-\_\_NOTOC\_\_
 
 <table cellspacing=15>
 <tr>

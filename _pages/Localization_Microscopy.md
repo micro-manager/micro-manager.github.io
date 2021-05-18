@@ -45,7 +45,6 @@ is set to 8x. Press **Render**.
 
 ## Localization Microscope Window (first window)
 
-\_\_NOTOC\_\_
 
 <table cellspacing=15>
 <tr  valign=top>

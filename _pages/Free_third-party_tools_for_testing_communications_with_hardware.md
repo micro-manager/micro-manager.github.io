@@ -5,7 +5,6 @@ layout: page
 section: Devices
 ---
 
-\_\_NOTOC\_\_
 
 ## Terminal (serial) communications on Windows and Mac
 

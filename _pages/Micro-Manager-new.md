@@ -4,7 +4,6 @@ title: Micro-Manager-new
 layout: page
 ---
 
-\_\_NOTOC\_\_
 
 ### The Open Source Microscopy Software
 

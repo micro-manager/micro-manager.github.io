@@ -6,7 +6,6 @@ section: Credits
 ---
 
 *Papers citing and/or acknowledging the use of Micro-Manager*
-\_\_NOTOC\_\_
 
 ## 2015
 
