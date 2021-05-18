@@ -7,7 +7,8 @@ section: User Documentation
 
 ## The following are the three main guides to fully explore Micro-Manager:
 
-\_\_NOTOC\_\_ **[User Guide:](Micro-Manager_User's_Guide "wikilink")**
+
+ **[User Guide:](Micro-Manager_User's_Guide "wikilink")**
 Here you will find how to navigate through the software's menus, dialogs
 and also perform basic instrument control and acquisition. The guide
 assumes you are running the software either in the "demo" mode (default

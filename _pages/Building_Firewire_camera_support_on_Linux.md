@@ -34,7 +34,8 @@ systems, where most of the code is developed to my understanding.
 1\. It seems that dynamic linking to libraries has some problems. We had
 therefore to ensure that static libraries were preferred to dynamic
 ones. For this we applied the following patch to
-$(SRCDIR)/configure.common: Index: configure.common \_\_NOTOC\_\_
+$(SRCDIR)/configure.common: Index: configure.common 
+
 =================================================================== ---
 configure.common (revision 5359) +++ configure.common (working copy) @@
 -67,8 +67,8 @@

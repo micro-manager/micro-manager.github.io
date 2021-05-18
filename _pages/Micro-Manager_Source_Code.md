@@ -5,7 +5,8 @@ layout: page
 section: Downloads
 ---
 
-{% include Downloads_Sidebar text="" %} \_\_NOTOC\_\_ The source code
+{% include Downloads_Sidebar text="" %} 
+ The source code
 includes all Micro-Manager files (Java and C++) and all supporting files
 (project files, build scripts, etc.). However, to build the entire
 project a number of Open Source libraries and device SDKs must be

@@ -4,7 +4,8 @@ title: Hardware-Triggered Sequences in Micro-Manager
 layout: page
 ---
 
-\_\_NOTOC\_\_ Micro-Manager provides for the precise and rapid
+
+ Micro-Manager provides for the precise and rapid
 triggering of sequences of channels and focus positions by the camera.
 
 ### Channels
