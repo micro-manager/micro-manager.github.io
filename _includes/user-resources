@@ -5,11 +5,11 @@
         </header>
         <p>Looking for user resources?</p>
         <ul class="actions special">
-            <li><a href="/Device_Support" class="button icon solid fa-plug">Device Support</a></li>
-            <li><a href="/Micro-Manager_Community" class="button icon solid fa-hands-helping">Help</a></li>
+            <li><a href="/Device_Support" class="button icon solid fas fa-plug">Device Support</a></li>
+            <li><a href="/Micro-Manager_Community" class="button icon solid fas fa-hands-helping">Help</a></li>
         </ul>
         <ul class="actions special">
-            <li><a href="https://image.sc" class="button icon solid fa-external-link-alt">image.sc Forums</a></li>
-            <li><a href="/FAQ" class="button icon solid fa-quote-left">FAQ</a></li>
+            <li><a href="https://image.sc" class="button icon solid fas fa-external-link-alt">image.sc Forums</a></li>
+            <li><a href="/FAQ" class="button icon solid fas fa-quote-left">FAQ</a></li>
         </ul>
 </section>

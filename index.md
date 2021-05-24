@@ -23,9 +23,9 @@ layout: home
       <div class="col-12 col-12-medium">
         <header class="major">
           <ul class = "actions special">
-            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fa-cogs">Use</a></li>
-            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fa-wrench">Extend</a></li>
-            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fa-download">Download</a></li>
+            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fas fa-cogs">Use</a></li>
+            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fas fa-wrench">Extend</a></li>
+            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fas fa-download">Download</a></li>
           </ul>
           <h1>Why µMicromanager?</h1>
         </header>
@@ -62,13 +62,44 @@ layout: home
 </header>
 
 <div class="resources">
-  <!-- User resources -->
 
-  {% include user-resources %}
+<!-- User resources -->
+  <section id="dev_resources" class="main style3 special">
+  <br>
+          <header class="major">
+              <h2>User Resources</h2>
+          </header>
+          <p>Looking for user resources?</p>
+          <ul class="actions special">
+              <li><a href="/Device_Support" class="button icon solid fas fa-plug">Device Support</a></li>
+              <li><a href="/Micro-Manager_Community" class="button icon solid fas fa-hands-helping">Help</a></li>
+          </ul>
+          <ul class="actions special">
+              <li><a href="https://image.sc" class="button icon solid fas fa-external-link-alt">image.sc Forums</a></li>
+              <li><a href="/FAQ" class="button icon solid fas fa-quote-left">FAQ</a></li>
+          </ul>
+  </section>
+
 
   <!-- Developer resources -->
+  <section id="dev_resources" class="main style2 special">
+  <br>
+          <header class="major">
+              <h2>Developer Resources</h2>
+          </header>
+          <p>Looking for developer resources?</p>
+          <ul class="actions special">
+              <li><a href="https://github.com/micro-manager" class="button icon solid fas fa-code">Source Code</a></li>
+              <li><a href="/Contact" class="button icon solid fas fa-bullhorn">Report a Bug</a></li>
+          </ul>
+          <ul class="actions special">
+              <li><a href="/Micro-Manager_Programming_Guide#APIs" class="button icon solid fas fa-terminal">Programming Guide</a></li>
+              <li><a href="https://javadoc.scijava.org/Micro-Manager-Studio/org/micromanager/api/MMPlugin.html" class="button icon solid fas fa-terminal">uManager API</a></li>
+          </ul>
 
-  {% include developer-resources %}
+  </section>
+
+
 </div>
 
 
