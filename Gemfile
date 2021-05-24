@@ -22,6 +22,5 @@ gem 'html-proofer'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
-  gem 'jekyll-twitter-plugin'
   gem 'jekyll-gist'
 end

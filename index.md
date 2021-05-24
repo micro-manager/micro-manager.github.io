@@ -102,7 +102,7 @@ layout: home
 
 </div>
 
-
+<div class="info-twitter">
 <div class="info-block">
 <h3><a href="/Why_Micro-Manager?">HOW IS μMANAGER DIFFERENT?</a></h3>
 You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and limited device support...
@@ -117,5 +117,6 @@ Whether you can use μManager right away or not depends on whether your particul
 Even if you are not interested in writing software code for your microscope, the open software architecture of μManager will benefit you. For instance, μManager's open device interface lets anyone write code to control microscope-related equipment, resulting a large and growing list of supported equipment. A scripting interface makes it possible to accomplish tasks that can not be executed within the GUI. Lastly, the μManager programming interface can be used from many different environments (including Matlab) to develop new applications, all using the same μManager microscope device control.
 </div>
 
-
-<!-- Twitter Feed -->
+<!--Twitter Feed -->
+{% include twitter-feed %}
+</div>

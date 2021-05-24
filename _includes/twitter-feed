@@ -1,5 +1,4 @@
-<div class="jekyll-twitter-plugin" float="right" align="center" width="600">
-    <div class="jekyll-twitter-plugin"><a class="twitter-timeline" data-width="400" data-tweet-limit="5" href="https://twitter.com/manager_micro?ref_src=twsrc%5Etfw">Tweets by manager_micro</a>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<div class="twitter-feed">
+<a class="twitter-timeline" href="https://twitter.com/manager_micro?ref_src=twsrc%5Etfw">Tweets by µManager</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

@@ -2106,7 +2106,8 @@ div.column5 {
 
 .info-block {
 	position:relative;
-	float:left;
+	left: 15px;
+  float: left;
 	width:60%;
 	text-align: left;
 	margin: 0 1em 0 1em;
@@ -2118,13 +2119,33 @@ font-weight: bolder;
 margin: 2em 0 0.4em 0;
 }
 
+.twitter-feed {
+	width:30%;
+  float:right;
+  position: relative;
+	right: 20px;
+}
+
+.info-twitter {
+  height:150vh;
+}
+
 @media screen and (max-width: 1150px) {
-       .info-block {
-               width: 90%;
-               float: center;
-                text-align: left;
-                margin: 1.5em 1em 1em 1em;
-       }
+  .info-block {
+    width: 90%;
+    float: center;
+    text-align: left;
+    margin: 1.5em 1em 1em 1em;
+  }
+
+  .twitter-feed {
+  	width:90%;
+  	margin: 0 auto 0 auto;
+  }
+
+  .info-twitter {
+    height:340vh;
+  }
 }
 
 .source {
