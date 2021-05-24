@@ -77,7 +77,7 @@
 {% include menu-section-end %}
 
 <!-- News -->
-{% include menu-section title="News" %}
+{% include menu-section title="News" link="/news/index" %}
   {% include listnews %}
 {% include menu-section-end %}
 
