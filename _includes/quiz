@@ -1,0 +1,8 @@
+<details class="shadowed-box">
+<summary><span markdown=1>**Quiz!** {{include.q}}</span></summary>
+<span markdown=1>**Answer:** {{include.a}}</span>
+</details>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
