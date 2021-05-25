@@ -1,0 +1,27 @@
+{%- assign g = include.g -%}
+{%- assign a = include.a -%}
+{%- assign v = include.v -%}
+{%- assign p = include.p -%}
+{%- assign c = include.c -%}
+{%- assign label = include.label -%}
+
+{%- capture link -%}
+  https://maven.scijava.org/#nexus-search;gav~{{g}}~{{a}}~{{v}}~{{p}}~{{c}}~kw,versionexpand
+{%- endcapture -%}
+
+{%- unless label -%}
+  {%- capture label -%}
+    {%- if g -%} :{{g}} {%- endif -%}
+    {%- if a -%} :{{a}} {%- endif -%}
+    {%- if v -%} :{{v}} {%- endif -%}
+    {%- if p -%} :{{p}} {%- endif -%}
+    {%- if c -%} :{{c}} {%- endif -%}
+  {%- endcapture -%}
+  {%- assign label = label | slice: 1, label.size -%}
+{%- endunless -%}
+
+<a href="{{link}}">{{label}}</a>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
