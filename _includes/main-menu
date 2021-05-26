@@ -86,6 +86,25 @@
   {% include menu-item title="Contact" link="/Contact" %}
   {% include menu-item title="System Integrators" link="/System_Integrators" %}
   {% include menu-item title="Programming Services" link="/Programming_Services" %}
+  {% include menu-section title="Editing the Wiki" link="/editing/" %}
+    {% include menu-item title="Advanced editing" link="/editing/advanced" %}
+    {% include menu-item title="Citations" link="help/editing/citations" %}
+    {% include menu-item title="Source Code" link="/editing/code" %}
+    {% include menu-item title="Headers" link="/editing/headers" %}
+    {% include menu-item title="Icons" link="/editing/icons" %}
+    {% include menu-item title="Images" link="/editing/images" %}
+    {% include menu-item title="Keyboard Shortcuts" link="/editing/keys" %}
+    {% include menu-item title="Linking" link="/editing/linking" %}
+    {% include menu-item title="Math Expressions" link="/editing/math" %}
+    {% include menu-item title="Notices" link="/editing/notices" %}
+    {% include menu-item title="People" link="/editing/people" %}
+    {% include menu-item title="Pitfalls" link="/editing/pitfalls" %}
+    {% include menu-item title="Symbols" link="/editing/symbols" %}
+    {% include menu-item title="Tables" link="/editing/tables" %}
+    {% include menu-item title="Timelines" link="/editing/timelines" %}
+    {% include menu-item title="Videos" link="/editing/videos" %}
+    {% include menu-item title="Whitespace" link="/editing/whitespace" %}
+    {% include menu-section-end %} <!-- Help/Editing the Wiki -->
 {% include menu-section-end %}
 
 <!-- Credits -->
