@@ -1,275 +1,703 @@
-= Micro-Manager User's Guide =
-
-<span>Nenad Amodaj, April 2006</span><br /><span>Updated for version 1.0.54 (beta) on December 4, 2006<br /> Updated for version 1.0.61, on January 31<br /> Updated for version 1.2.35 on August 23, 2008<br /> Updated for version 1.3.22 (beta) on February 11, 2009<br /> Updated for version 1.3.40 on July 24, 2009. <br />
-Updated for version 1.4.6, Sept. 2011 (by Ziah Dean)'''</span><br />
-
-<br />
-
-= Introduction =
-
-Imaging cells has become an essential technology in many laboratories working in the life sciences. The components needed for such image acquisition consist of a microscope, cameras, light sources, mirrors, filters mounted in motorized filter wheels, x-y-z stages, and shutters. In practice, many complicated sequences of motorized operations are needed to achieve the imaging strategy desired by the researcher (e.g. acquiring images from multiple wavelengths). Thus, computer control of image acquisition is an integral part of contemporary microscopy.
-
-From the user's standpoint, the whole setup (a microscope equipped with camera, stage, filter wheels, etc.) ideally should appear as an integrated, coherent system -- an "appliance." This appliance should allow for effective and comfortable interactive work, as well as unattended, completely automated operation.
-
-Available commercial packages more or less provide the needed functionality for controlling automated microscopes, but, because they are proprietary and closed, they are difficult to extend and customize. New devices cannot be added to the system unless the software vendor chooses to provide appropriate drivers. Sometimes the cost of configuring the system with all necessary software and drivers can be quite high.
-
-In contrast to virtually all of the available commercial solutions, Micro-Manager supports multiple platforms (Windows, Mac and Linux) and provides an open plugin interface for adding new devices. In addition, Micro-Manager is compatible with the widely used image processing package [http://rsb.info.nih.gov/ij/ ImageJ], which is also available in the public domain. Combined with [http://rsb.info.nih.gov/ij/ ImageJ], Micro-Manager provides a full-featured microscope management and image processing package, comparable in capabilities to commercial solutions. It is distributed free of charge and under an Open Source license. Its code base and functionality can be customized, extended and re-used with practically no restrictions.
-
-= Installation =
-
-After you install Micro-Manager according to the instructions for your platform (below), you can test-drive the software in demo-mode. The application will start in demo-mode by default after initial installation. To use Micro-Manager with your microscope, you will need to create a configuration file for the hardware components that are part of your setup.
-
-The configuration process is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. You will need to create a configuration file specific to your system.
-
-== Installation on Windows ==
-
-Run the installer (MM_Setup_1_x_yy.exe) and follow the prompts. The package includes a copy of ImageJ; it may be necessary to install or update [http://java.com Java] on your computer. Besides the manufacturer's low-level drivers for your camera and possibly other equipment, no other software is required to fully use Micro-Manager. Micro-Manager will be installed in C:\Program Files\Micro-Manager1.x.
-
-There are no particular hardware or software requirements. However, for practical use we recommend Windows XP, 1.7 GHz or better processor and at least 512 MB of RAM. Micro-Manager works on Window 7 running as either 32-bit or 64-bit. However, some devices will only work using 32-bit drivers. Micro-Manager has also been reported to work with Windows Vista.
-
-== Installation on Mac OS X ==
-
-Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive called 'Micro-Manager'. The drive is on the desktop and in every Finder Window. Open the drive (by double-clicking). In the drive there is a folder called Micro-Manager1.x. You can install the application by dragging this folder to your Applications folder, or you can launch the application by opening the folder and double clicking the 'ImageJ' icon (to run a 32-bit version of Micro-Manager) or by clicking the ImageJ64 icon (to run the 64-bit version).
-
-== If you already use ImageJ ==
-
-Micro-Manager is packaged as an [http://rsb.info.nih.gov/ij/ ImageJ] plug-in and contains a copy of the entire ImageJ application, together with the Java run-time environment. Starting Micro-Manager will automatically start ImageJ as well. If you already use ImageJ and have it installed on your machine, the original installation will not be affected. Micro-Manager installs and uses its own copy of ImageJ. However, if you have any existing ImageJ macros or plugins that you want to use with Micro-Manager, you will have to copy them manually to the appropriate sub-folders within the Micro-Manager folder. Migrating your favorite ImageJ plugins to Micro-Manager installation should not cause any problems.
-
-== Memory issues with Java/ImageJ ==
-
-The Micro-Manager installation includes ImageJ and automatically runs ImageJ on startup. The amount of memory available to Micro-Manager is the same amount ImageJ allocates in the Java Virtual Machine, i.e. the available memory is determined by ImageJ. By default ImageJ is very conservative in allocating RAM: usually it reserves only 256MB of RAM, depending on the system configuration . This can be a problem when acquiring large time-lapse or z-stack sequences. In such situations Micro-Manager interrupts acquisition and warns you that it ran out of memory.
-
-To increase the amount of memory available to ImageJ and Micro-Manager, use the ImageJ command <span>'''Edit | Options | Memory'''</span>. You should enter the amount of RAM equal or less to the amount you have installed on your system. (For 32-bit systems with more than 1.2 GB of RAM, we have noticed that entering values larger than 1.2 GB can cause erratic behavior on some systems, on 64-bit systems you can go higher, but make sure that some memory is left for the OS.)
-
-If you have another installation of ImageJ on your computer, keep in mind that Micro-Manager installs its own copy of ImageJ and that you need to set memory options on both.
-
-<br />
-
-= Getting started =
-
-On startup Micro-Manager displays a splash screen that allows you to choose a particular hardware configuration file. If you click OK without changing anything, the last successfully used configuration file will be loaded. The Demo configuration (software simulator) will appear as default the first time you start the application. This configuration can be used to explore Micro-Manager features, train novice users and as a reference point for troubleshooting.
-
-Configuring Micro-Manager to work with your specific microscope setup is covered in detail in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Micro-Manager has made configuration easy with, the Configuration Wizard utility (<span>'''Tools | Hardware Configuration Wizard'''</span>), which provides a step-by-step workflow for creating and managing your hardware configuration. We recommend that you try out the Demo configuration to get familiarized with the program. All examples in this guide refer to the Demo configuration.
-
-<br />
-
-[[Image:intro.gif|Startup screen]]<br /> Figure 1. Startup screen: selection of the configuration file.
-
-<br /> You can also choose to skip loading a configuration file (select "none" in the drop-down list) in which case the application starts without any devices attached. At anytime while using Micro-Manager under the '''Tools''' menu you have the options to Load, Reload, Switch and Save your '''Hardware Configuration''' files.
- 
-
-== The Micro-Manager Main Window ==
-
-Starting Micro-Manager will also start ImageJ (in fact, ImageJ starts up first and runs Micro-Manager as a plugin). Both ImageJ and Micro-Manager have their own menus (on the Mac you will need to click on either window to display the menu in the main menu bar). Unless specified differently, menu commands in this manual will refer to the Micro-Manager menu. The Micro-Manager and ImageJ windows appear differently on different computer systems; examples from multiple systems are used in this manual.
-
-[[Image:MainControl_window3.png|Startup screen]]<br /> Figure 2. Main Window displaying device controls and image histogram
-
-After the configuration file is loaded, the Main Window displays the current settings and shows the status of selected devices.
-
-== Snapping single images ==
-
-To obtain a single image from the camera, press the "Snap" button. A "Snap" window will pop up, displaying the acquired still image. You can use any of the available ImageJ tools to analyze, save or edit the image. In addition, at the bottom of the window there are shortcut buttons to save the image.
-
-[[Image:MainWSnap.jpg|Image acquisition window]] <br /> Figure 3. "Snap" window.
-
-Each time you press the Snap button, the image in the "Snap" window will be updated. The Demo camera driver generates a spatial sine wave that shifts each time you snap a new image. You can also change any of the settings in the Main Window and the changes will be immediate. The bottom part of the Main Window displays a histogram of the image.
-
-== Live image mode ==
-
-To see a continuously updated, "live" view from the camera, press the "Live" button. The images will be displayed in the "Live" window. Pressing this button again, stops live mode. Settings in the Main Window can be changed during live mode and the effects on images in the "Live" window will be immediate.
-
-== Acquiring a series of images ==
-
-With the "Acquire" button, you can collect a series of still images (snaps) in an image series window. The first time you click the "Acquire" button, a new series window will open, with a fresh image obtained from the camera. Every time you click the "Acquire" button thereafter, a new image will be added to the series. Click the "Save" button to write all images in the series window to disk.
-
-== Histogram, Brightness and Contrast ==
-[[Image:Histogram.jpg|Image acquisition window]]<br />Figure 4. Histogram in Main Window. Brightness and contrast controls are shown in red and blue.  
-
-A histogram of the current ("Snap" window) image's pixel intensities is displayed in the graph in the lower part of the Main Window. The histogram is automatically updated each time a new image is received. The histogram range can be adjusted, by selecting "camera", "8bit", "10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera" setting will automatically adjust the histogram range to the hardware bit depth of the image. The "Log. hist" checkbox will change the y-axis of the histogram to a log scale.  Some statistical information (min, max, avg, stdev) about the image is also provided.
-
-The histogram is overlaid with a graph showing the relation between pixel intensities in the image and display of the image on the screen.  This graph allows manipulation of brightness, contrast and gamma of the displayed image.
-
-====Brightness and contrast====
-The end-points of this graph (black and white triangles, boxed in '''blue''' in Figure 4) set the lower and upper clipping levels (i.e. pixels values lower than the black triangle will appear as black, pixel values higher than the white triangle will appear as white).  The steeper this line, the higher the contrast: moving the line to the right will darken the image, while moving it to the left will brighten the image.  The "Full" button sets the lower and upper clipping levels to your camera's full intensity range. The "Auto" button will adjust the lower and upper clipping levels automatically, based on the extreme pixel values in the image. For "Live" imaging you can perform this adjustment continuously by checking the "Auto-stretch" box; once checked you can set a percentage of outliers to ignore.
-
-====Gamma Function====
-The gamma function allows you to change the relation between pixel value in the image and display from linear to hyperbolic.  This gamma correction makes it possible to visualize both bright and dark objects in an image simultaneously, which can be beneficial, especially with cameras that have higher dynamic range than the display (for further explanation see the [http://en.wikipedia.org/wiki/Gamma_correction wikipedia article on gamma corrections]. The adjustments can be made either by inputting a value in the '''red''' box shown in Figure 4 or by clicking and dragging the line itself.
-
-====Displayed vs. Original Image====
-Since the original image is saved separately from the displayed image, any adjustments made will apply only to the displayed image - the original image with the actual pixel values will not be affected. Also, because Micro-Manager displays images received from the camera in a standard image window, any ImageJ command can be used to adjust the appearance of the image, including the standard ImageJ Brightness and Contrast dialog.
-
-== Refresh ==
-
-The Micro-Manager main panel will not necessarily be updated when a setting in your microscope changes. This behavior saves resources and avoids continuous polling of the hardware. To bring Micro-Manager in sync with the current state of the hardware, use the 'Refresh' button.
-
-== Region of Interest (ROI) ==
-
-Most of the cameras used for microscopy can be configured to image only a Region of Interest (ROI) instead of the full frame. To select an ROI use the rectangle tool (from the ImageJ window) on the image window. By pressing the "ROI" button while the selection is active, you will apply the current rectangle to the camera. Some cameras will internally adjust the rectangle dimensions slightly to fit within specific hardware constraints. To return to the full frame imaging, press the "Full" button (right next to the ROI button).
-
-== Zoom ==
-
-The "Zoom" buttons apply a software zoom to the topmost image window. Software zoom here implies zooming in on the captured image.
-
-== Line profile ==
-
-The "Profile" button opens up a live line profile window. Unlike the regular ImageJ "profile" utility, this window will update each time a new image is displayed in the Live window. The profile is computed from the currently active line drawn over the image. To draw a line, use the standard line tool from the ImageJ toolbar.
-
-[[Image:profile.jpg|Line profile window]]<br /> Figure 5. Line Profile window.
-
-== Camera Settings ==
-
-A few camera settings found in all systems are directly accessible from the main window: 
-
-* Exposure Time: You can set the exposure time of your camera.  
-* Binning: Apply binning ('pooling' of pixels in both x and y direction). 
-* Active Shutter: You can change the 'active shutter': that is, the shutter that Micro-Manager will open before taking an image and close once the image is made.
-* Deactivating Auto Shutter: This behavior of automatically opening and closing the shutter can be defeated by unchecking the 'Auto shutter' checkbox. Doing so will let you open and close the active shutter with the 'Open/Close' button in the Main Window.
-
-= Controlling devices =
-
-== Exploring devices: Device/Property Browser ==
-
-The Main Window provides control of only a small subset of the device properties loaded in the system. To view and control all devices and all settings available in the currently loaded hardware configuration, use the "Device/Property Browser" (available under the Tools menu). The Device/Property Browser displays a list of all devices and associated "properties" (settings available for each device). Since this list will often be overwhelmingly long, you can restrict the list of displayed devices using the checkboxes in the top left corner of the window. You can inspect and change any setting on any device. Read-only properties are shown as a line with a dark background. To change a setting, change it in the 'Value' column and then leave the field using the 'tab' key or by clicking the mouse elsewhere in the window.
-
-<br />
-
-[[Image:device_manager.gif|Device/Property Browser Window]]<br /> Figure 6. Device/Property Browser window.
-
-<br />
-
-== Grouping device properties: Configuration Presets ==
-
-Obviously, changing individual properties using the Device/Property Browser quickly becomes cumbersome. Micro-Manager therefore provides a way to generate 'shortcuts' that let you quickly set groups of device properties. Setting up these Configuration Presets is an important part of configuring Micro-Manager and is described in the [[Micro-Manager Configuration Guide|Configuration Guide]]. Placing the cursor over the current preset will display a tool-tip window and show which devices will be affected by the command. In the example in the configuration guide, choosing the "DAPI" channel preset command will move three filter wheels to the appropriate positions.
-
-[[Image:presets.gif|Presets Panel]]<br /> Figure 7. Detail of the main control window: configuration preset.
-
-There is no limit to the number of devices or number of different properties you can include in one configuration group. You can set objectives, filters, stage positions, camera parameters in a single configuration command. The Configuration Presets shown here are just an example (used in the demo configuration). In some cases, device properties can show up as a slider, making it easy to set things like camera gain or temperature.
-
-<br />
-
-= Recording Images =
-
-== Multi-dimensional acquisition ==
-
-To acquire multi-image stacks, press the "Multi-D Acq." button to open the Acquisition Control dialog (this dialog can also be reached through the <span>''' Tools | Acquisition '''</span> menu entry). Micro-Manager allows you to create a stack as multi-channel (wavelength coordinate), multi-frame (time coordinate), multi-slice (Z coordinate), multi-position (XY coordinate), or any combination of these.<br />
-
-[[Image:MM_multid.jpg|Acquisition Dialog]]<br /> Figure 8. Acquisition control dialog.
-
-After defining channels, slices and frames by using controls in the dialog, press the "Acquire" button. The acquisition starts immediately and an [[Micro-Manager User's Guide#5D-Image Viewer|Image Viewer]] window will open displaying the progress. During and after acquisition you can use controls at the bottom of the 5D-Image window to play-back the sequence, browse channels, slices, frames, or positions, or save the entire image stack to disk.
-
-'''Channels''' can be selected from the active 'Channel group'. Channel groups are the Configuration Preset groups that are defined in the main Micro-Manager Main Window. When you switch Channel groups, all previously defined channels will be erased. You will need to set the desired exposure time for each channel. You can also set a z-offset for each channel, which can be useful when the main object in one of the channels is in a different focal plane from the other channels. Setting 'Skip Frame' to a number other than 0 will cause the acquisition to 'skip' taking an image in that channel (after taking the first image) for the indicated number of frames. The 5D-Image Viewer will 'fill in' these skipped frames with the previous image. In some situations it may be desirable to acquire certain channels at lower sampling rates, to reduce photo-toxicity and to save disk space. Clicking inside the 'Color' column will open up a Color selector that lets you select the color to be used for that channel in the 5D-Image Viewer. (You can also change colors later on in the [[Micro-Manager User's Guide#5D-Image Viewer|Image Viewer]].)
-
-'''Z Slices''' can be set either as relative to the current position (you will need to type in the start and end position) or as absolute positions. If absolute positions are selected, the 'Set' buttons will become active. Clicking these will set the current position to start or end.
-
-'''Acquisition Order''' lets you choose between carrying out z-stacks with each channel (Slices first) or switching channels at each z-position (Channels first). 'Time first' mode will take a complete sequences of frames at a single position before moving on to the next, whereas 'Positions first' mode will cycle between all position at each time point, in effect acquiring time lapse sequences at all positions.
-
-Checking the '''Use XY list''' option will cause the acquisition to be executed at each position defined in the [[Micro-Manager User's Guide#Position List Dialog|Position List]]. [[Micro-Manager User's Guide#Autofocus|Autofocus]] options are described below. If the '''Save images''' option is selected, images will be saved to disk continuously during the acquisition. If this option is not selected, images are accumulated only in the 5D-Image window, and once the acquisition is finished,  image data can be saved to disk. However, saving files automatically during acquisition secures the acquired data against an unexpected computer failure or accidental closing of image window. Even when saving to disk, some of the acquired images are still kept in memory, facilitating fast playback.  If such behavior is not desired, check the 'Conserve RAM' option (<span>'''Tools | Options'''</span>).
-
-== Fast Time Series Acquisition (Burst)==
-
-If you would like to acquire 'bursts' of images as fast as possible, Micro-Manager's Multi-dimensional Acquisition engine is designed to intelligently take care of this. You will need to:
-* Set the time interval between frames to zero
-* Deactivate Z Stacks
-* Choose Time First
-* Use no channels or a single chnanel
-
-Thus you will have removed any delay that would get in the way of the fast acquisition. In previous Micro-Manager versions this was known as Burst Mode.
-
-== Split View ==
-
-Split View functionality (compatible with such devices as the DualView or OptoSplit) is now available as a [[SplitView|plugin]].
-
-= Autofocus =
-
-Micro-Manager has a single, integrated user interface for hardware- and software-based autofocus. In the main window, press the '''Set autofocus options''' button to open the Autofocus Properties dialog box. Here you can choose which autofocus mechanism to use among available hardware- and software-based options. You can then edit the settings for your chosen autofocus mechanism. The '''Duo''' autofocus option allows you to combine two autofocus mechanisms, so that they operate sequentially, one after the other.
-
-The '''Autofocus Now''' button on the Main Window will cause the autofocus mechanism you have chosen to execute its focusing protocol once.
-
-== Hardware Autofocus ==
-
-Hardware-based autofocus support is provided for the Nikon Perfect Focus (PFS), ASI CRIF, Zeiss Definite Focus, and Olympus Z Drift Correction (ZDC) devices. These devices bounce an infrared reference beam off a surface of the coverslip, and use this reflection to adjust the focal position. To activate one of these devices in Micro-Manager, you need to include it in the Hardware Configuration and select it in the Autofocus Properties dialog.
-
-== Software Autofocus ==
-
-Software-based autofocus plugins are also available in the Autofocus Properties dialog. They should work with any camera and Z-stage. These autofocus plugins iteratively adjust the focal position and acquire images to optimize a specific image feature. For example, Pakpoom Subsoontorn & Hernan Garcia (Caltech) contributed a Java plugin module ("JAF H&P") for auto-focusing based on the relative strength of gradients in the image (edge 'sharpness'). See [[Autofocus_manual|here]] for further documentation of this autofocus plugin.
-
-== Autofocus in Multi-D Acquisition ==
-
-The Multi-Dimensional Acquisition window offers integration with the autofocus system. The '''Set autofocus options''' button allows you to choose the autofocus mechanism and configure it. Click the '''Use autofocus''' checkbox to activate autofocus in the multi-dimensional acquisition. You can also specify how many frames (time points) will be skipped between autofocus events.  If you have a hardware autofocus, it will be activated just before image acquisition and then be switched off again.  If you rather have the hardware autofocus switched on continuously, do not check the autofocus checkbox, but be sure that the hardware autofocus is switched on before you start the acquisition.
-
-= Positioning =
-
-== Position List Dialog ==
-
-The Position List dialog can be reached from the menu ('''Tools | XY List'''), and from the [[Micro-Manager User's Guide#Multi-dimensional acquisition|Multi-dimensional Acquisition]] window (button next to 'Use XY list'). The Position List is used to record the positions of stages in your system. At the bottom of the dialog is a list of available stage axes, any of which you can select to use for recording positions.
-
-[[Image:position_list.png|Position List Dialog]]<br /> Figure 10. Position List dialog.
-
-<br />
-
-Use the '''Mark''' button to record the current stage position for all stages you have selected to use. When a position is selected the button will be named '''Replace''' and pressing the button will overwrite the selected position. Positions can be de-selected by clicking on them. You can revisit a site by selecting the position and pressing the '''Go to''' button. The  button will update the stage positions shown in the '''Current position''' pane. You can change the name of each position. Position lists can be saved ('''Save As''' button) and re-used later ('''Load'''). When saving and re-using position lists, you should make sure that the coordinate systems of your stages are reproducible between invocations of the program, possibly using the '''calibrate''' button. This will drive all stages to their origin and set this as the base of their coordinate system. Be extremely careful when doing so, since it is possible to run your XY stage into one of your expensive objective lenses!
-
-== Tile Creator ==
-
-The '''Create Grid''' button in the Position List Dialog will open the Tile Creator Dialog. The purpose of this dialog is to quickly create a position list covering the area of an object (larger than a single image) in the microscope specimen.
-
-[[Image:tile_creator.gif|Tile Creator Dialog]]<br /> Figure 11. Tile Creator dialog.
-
-<br />
-
-Use the '''Set''' buttons of the Tile Creator Dialog to mark at least two of the corners of the object that you are interested in. Pressing '''OK''' will generate a Position List that covers a bounding box around the corners that you set. To do this correctly, the dialog needs to know the correct '''Pixel Size'''. If your system is [[Micro-Manager Configuration Guide#Pixel Size Calibration|calibrated]], the correct pixel size will appear here automatically; otherwise you will have to enter the correct number. It is also possible to specify an '''overlap''' between the images generated from this position list (to specify a space between them, use a negative overlap).
-
-== Interactive Stage Movements ==
-
-It can be cumbersome to exactly position a microscope stage. Micro-Manager has an option ('''Tools | Mouse Moves Stage''') that might make this easier. To use this tools, your Micro-Manager configuration must be [[Micro-Manager Configuration Guide#Pixel Size Calibration|calibrated]]. When '''Mouse Moves Stage''' is enabled, double-clicking in the "Live" window (the window in which the "Snap" and "Live" buttons display images) will move the stage such that the place you double-clicked will move to the center. It is possible that the stage moves the wrong direction. If so, use the camera properties 'TransposeMirrorX', 'TransposeMirrorY', and 'TransposeXY' (accessible in the Device/Property browser) to achive the correct stage movement (you might want to save these settings in a 'System-Startup' configuration group). You can also move the stage by dragging the mouse through the image (a kind of 'Google Earth' effect).<br /><br /> When the "Live" window is open, you can also use the keyboard to move the stage:
-
-{| cellspacing="30px" align="center"
-| valign="top" | '''Commands'''<br /> +x: Right arrow<br /> -x: Left arrow<br /> +y: Up arrow<br /> -y: Down arrow<br /> +z: 1, U, Page Up<br /> -z: 2, J, Page Down
-| valign="top" | '''x,y modifiers'''<br /> Normal: Move 10 pixels<br /> Control: Move 1 pixel<br /> Alt: Move half field of view <br /> Shift: Move whole field
-| valign="top" | '''z modifiers'''<br /> Normal: Move 3 z-steps<br /> Control: Move 1 z-step<br /> Shift: Move 10 z-steps
-|}
-
-= 5D-Image Viewer =
-The 5D Image Viewer is an extension of the ImageJ HyperStack.  Therefore, most ImageJ commands will work as expected on this window.
-
-[[Image:5D-ImageViewer.PNG|5D image window]]<br /> Figure 12. Acquisition data displayed in the 5D image window.
-<br />
-
-The viewer has sliders for all the dimensions you choose on the Multi-D Acq. which include: Channels, Z-slices, XY-Positions and Time points of the acquired images. You can playback Time Lapse sequences and adjust the speed using the text box (set in frames/second). The '''red''' box in Figure 12 shows where position, time, z-position, and channel for the current image are displayed. The buttons boxed in '''green''' allow you to Stop, Start and Pause during acquisition. Buttons boxed in '''blue''' allow you to open the folder in which the original files are located and also save the current image along with any adjustments to display brightness and contrast.
-
-
-==Channels, Metadata, and Comments==
-
-While using the 5D-Image Viewer the 'Histogram' section on the Main Window has three tabs for Channels, Metadata and Comments.
-
-[[Image:5D-ImageViewer2.PNG‎|5D image window]]<br /> Figure 13. Channels and Metadata tabs for 5D-Image View in Main Window. <br />
-
-===Channels===
-
-Under the '''Channel''' tab you are given various options which include:
-*Scale Bar: You can choose to display a scale bar with a set position and color.
-*Display Mode:
-**Composite: Displays image and histogram of all channels at the same time. You also have the option to turn off any channel by unchecking the box. 
-**Color: Displays a single channel, depending on the position of the slider in the viewer.
-**Grayscale: Displays a grayscale image of a single channel, depending on the position of the slider in the viewer.
-*Histogram of Each Channel:
-**You can choose to make adjustments a each channel as described in the [[Micro-Manager Configuration Guide|Histogram, Brightness and Contrast]] section above.
-**The only difference is that "Autostretch" in this case makes adjustments to all channels while in composite mode.
-
-===Metadata===
-
-In the '''Metadata''' tab you will find a box of "Acquisition properties", which lists metadata common to the complete data set. Below are the "Per-image properties", which lists the complete state of the microscope system at the time the image was taken.  Most of these will be the same for all images, you can hide these by un-checking the box that says "Show unchanging properties".
-
-===Comments===
-
-The '''Comments''' tab allows you to comment on the whole acquisition or an individual image. You can choose the image you would like to comment on by using the sliders in the 5D-Image Viewer.  These comments will be automatically saved in the metadata and can be used to store your observations/annotations.
-
-==Files on Disk==
-
-Micro-Manager will store a 5D-Image dataset in a single folder. Acquired images are saved to disk as separate TIFF files, each containing a single grayscale image. The file naming convention is "img" prefix followed by frame number, channel name and slice number (img_00000000t_channel_00z.tif). In addition, the folder will contain a file named "metadata.txt" that contains the metadata in [http://www.json.org/ JSON] format. <br />
-
-= Credits, License and Copyright =
-
-Micro-Manager is an Open Source software package for controlling automated microscopes on multiple platforms (Windows, Mac and Linux). The software is being developed in the [http://valelab.ucsf.edu Vale Lab] at the Unversity of California San Francisco and funding was provided by the Sandler Foundation and a grant from the NIH. The original software design was by Nenad Amodaj, and the software is currently developed by Arthur Edelstein and Nico Stuurman.  Many individuals contributed source code or other types of help (including this documentation).  The Micro-Manager source code is distributed under the BSD license for the user interface and the LGPL license for the MMCore (control module). All supplied device drivers ('adpaters') for cameras and other devices are covered by the BSD license. Copyright for some of the adapters is owned by other parties.<br /><br />
-
-{{Documentation_Sidebar}}
+---
+autogenerated: true
+title: Micro-Manager User's Guide2
+layout: page
+---
+
+# Micro-Manager User's Guide
+
+<span>Nenad Amodaj, April 2006</span>  
+<span>Updated for version 1.0.54 (beta) on December 4, 2006  
+Updated for version 1.0.61, on January 31  
+Updated for version 1.2.35 on August 23, 2008  
+Updated for version 1.3.22 (beta) on February 11, 2009  
+Updated for version 1.3.40 on July 24, 2009.  
+Updated for version 1.4.6, Sept. 2011 (by Ziah Dean)'''</span>  
+  
+
+# Introduction
+
+Imaging cells has become an essential technology in many laboratories
+working in the life sciences. The components needed for such image
+acquisition consist of a microscope, cameras, light sources, mirrors,
+filters mounted in motorized filter wheels, x-y-z stages, and shutters.
+In practice, many complicated sequences of motorized operations are
+needed to achieve the imaging strategy desired by the researcher (e.g.
+acquiring images from multiple wavelengths). Thus, computer control of
+image acquisition is an integral part of contemporary microscopy.
+
+From the user's standpoint, the whole setup (a microscope equipped with
+camera, stage, filter wheels, etc.) ideally should appear as an
+integrated, coherent system -- an "appliance." This appliance should
+allow for effective and comfortable interactive work, as well as
+unattended, completely automated operation.
+
+Available commercial packages more or less provide the needed
+functionality for controlling automated microscopes, but, because they
+are proprietary and closed, they are difficult to extend and customize.
+New devices cannot be added to the system unless the software vendor
+chooses to provide appropriate drivers. Sometimes the cost of
+configuring the system with all necessary software and drivers can be
+quite high.
+
+In contrast to virtually all of the available commercial solutions,
+Micro-Manager supports multiple platforms (Windows, Mac and Linux) and
+provides an open plugin interface for adding new devices. In addition,
+Micro-Manager is compatible with the widely used image processing
+package [ImageJ](http://rsb.info.nih.gov/ij/), which is also available
+in the public domain. Combined with
+[ImageJ](http://rsb.info.nih.gov/ij/), Micro-Manager provides a
+full-featured microscope management and image processing package,
+comparable in capabilities to commercial solutions. It is distributed
+free of charge and under an Open Source license. Its code base and
+functionality can be customized, extended and re-used with practically
+no restrictions.
+
+# Installation
+
+After you install Micro-Manager according to the instructions for your
+platform (below), you can test-drive the software in demo-mode. The
+application will start in demo-mode by default after initial
+installation. To use Micro-Manager with your microscope, you will need
+to create a configuration file for the hardware components that are part
+of your setup.
+
+The configuration process is described in the [Configuration
+Guide](Micro-Manager_Configuration_Guide "wikilink"). You will need to
+create a configuration file specific to your system.
+
+## Installation on Windows
+
+Run the installer (MM\_Setup\_1\_x\_yy.exe) and follow the prompts. The
+package includes a copy of ImageJ; it may be necessary to install or
+update [Java](http://java.com) on your computer. Besides the
+manufacturer's low-level drivers for your camera and possibly other
+equipment, no other software is required to fully use Micro-Manager.
+Micro-Manager will be installed in C:\\Program Files\\Micro-Manager1.x.
+
+There are no particular hardware or software requirements. However, for
+practical use we recommend Windows XP, 1.7 GHz or better processor and
+at least 512 MB of RAM. Micro-Manager works on Window 7 running as
+either 32-bit or 64-bit. However, some devices will only work using
+32-bit drivers. Micro-Manager has also been reported to work with
+Windows Vista.
+
+## Installation on Mac OS X
+
+Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive
+called 'Micro-Manager'. The drive is on the desktop and in every Finder
+Window. Open the drive (by double-clicking). In the drive there is a
+folder called Micro-Manager1.x. You can install the application by
+dragging this folder to your Applications folder, or you can launch the
+application by opening the folder and double clicking the 'ImageJ' icon
+(to run a 32-bit version of Micro-Manager) or by clicking the ImageJ64
+icon (to run the 64-bit version).
+
+## If you already use ImageJ
+
+Micro-Manager is packaged as an [ImageJ](http://rsb.info.nih.gov/ij/)
+plug-in and contains a copy of the entire ImageJ application, together
+with the Java run-time environment. Starting Micro-Manager will
+automatically start ImageJ as well. If you already use ImageJ and have
+it installed on your machine, the original installation will not be
+affected. Micro-Manager installs and uses its own copy of ImageJ.
+However, if you have any existing ImageJ macros or plugins that you want
+to use with Micro-Manager, you will have to copy them manually to the
+appropriate sub-folders within the Micro-Manager folder. Migrating your
+favorite ImageJ plugins to Micro-Manager installation should not cause
+any problems.
+
+## Memory issues with Java/ImageJ
+
+The Micro-Manager installation includes ImageJ and automatically runs
+ImageJ on startup. The amount of memory available to Micro-Manager is
+the same amount ImageJ allocates in the Java Virtual Machine, i.e. the
+available memory is determined by ImageJ. By default ImageJ is very
+conservative in allocating RAM: usually it reserves only 256MB of RAM,
+depending on the system configuration . This can be a problem when
+acquiring large time-lapse or z-stack sequences. In such situations
+Micro-Manager interrupts acquisition and warns you that it ran out of
+memory.
+
+To increase the amount of memory available to ImageJ and Micro-Manager,
+use the ImageJ command <span>**Edit | Options | Memory**</span>. You
+should enter the amount of RAM equal or less to the amount you have
+installed on your system. (For 32-bit systems with more than 1.2 GB of
+RAM, we have noticed that entering values larger than 1.2 GB can cause
+erratic behavior on some systems, on 64-bit systems you can go higher,
+but make sure that some memory is left for the OS.)
+
+If you have another installation of ImageJ on your computer, keep in
+mind that Micro-Manager installs its own copy of ImageJ and that you
+need to set memory options on both.
+
+  
+
+# Getting started
+
+On startup Micro-Manager displays a splash screen that allows you to
+choose a particular hardware configuration file. If you click OK without
+changing anything, the last successfully used configuration file will be
+loaded. The Demo configuration (software simulator) will appear as
+default the first time you start the application. This configuration can
+be used to explore Micro-Manager features, train novice users and as a
+reference point for troubleshooting.
+
+Configuring Micro-Manager to work with your specific microscope setup is
+covered in detail in the [Configuration
+Guide](Micro-Manager_Configuration_Guide "wikilink"). Micro-Manager has
+made configuration easy with, the Configuration Wizard utility
+(<span>**Tools | Hardware Configuration Wizard**</span>), which provides
+a step-by-step workflow for creating and managing your hardware
+configuration. We recommend that you try out the Demo configuration to
+get familiarized with the program. All examples in this guide refer to
+the Demo configuration.
+
+  
+![Startup screen](media/Intro.gif "Startup screen")  
+Figure 1. Startup screen: selection of the configuration file.
+
+  
+You can also choose to skip loading a configuration file (select "none"
+in the drop-down list) in which case the application starts without any
+devices attached. At anytime while using Micro-Manager under the
+**Tools** menu you have the options to Load, Reload, Switch and Save
+your **Hardware Configuration** files.
+
+## The Micro-Manager Main Window
+
+Starting Micro-Manager will also start ImageJ (in fact, ImageJ starts up
+first and runs Micro-Manager as a plugin). Both ImageJ and Micro-Manager
+have their own menus (on the Mac you will need to click on either window
+to display the menu in the main menu bar). Unless specified differently,
+menu commands in this manual will refer to the Micro-Manager menu. The
+Micro-Manager and ImageJ windows appear differently on different
+computer systems; examples from multiple systems are used in this
+manual.
+
+![Startup screen](media/MainControl_window3.png "Startup screen")  
+Figure 2. Main Window displaying device controls and image histogram
+
+After the configuration file is loaded, the Main Window displays the
+current settings and shows the status of selected devices.
+
+## Snapping single images
+
+To obtain a single image from the camera, press the "Snap" button. A
+"Snap" window will pop up, displaying the acquired still image. You can
+use any of the available ImageJ tools to analyze, save or edit the
+image. In addition, at the bottom of the window there are shortcut
+buttons to save the image.
+
+![Image acquisition window](media/MainWSnap.jpg "Image acquisition window")  
+Figure 3. "Snap" window.
+
+Each time you press the Snap button, the image in the "Snap" window will
+be updated. The Demo camera driver generates a spatial sine wave that
+shifts each time you snap a new image. You can also change any of the
+settings in the Main Window and the changes will be immediate. The
+bottom part of the Main Window displays a histogram of the image.
+
+## Live image mode
+
+To see a continuously updated, "live" view from the camera, press the
+"Live" button. The images will be displayed in the "Live" window.
+Pressing this button again, stops live mode. Settings in the Main Window
+can be changed during live mode and the effects on images in the "Live"
+window will be immediate.
+
+## Acquiring a series of images
+
+With the "Acquire" button, you can collect a series of still images
+(snaps) in an image series window. The first time you click the
+"Acquire" button, a new series window will open, with a fresh image
+obtained from the camera. Every time you click the "Acquire" button
+thereafter, a new image will be added to the series. Click the "Save"
+button to write all images in the series window to disk.
+
+## Histogram, Brightness and Contrast
+
+![Image acquisition window](media/Histogram.jpg "Image acquisition window")  
+Figure 4. Histogram in Main Window. Brightness and contrast controls are
+shown in red and blue.
+
+A histogram of the current ("Snap" window) image's pixel intensities is
+displayed in the graph in the lower part of the Main Window. The
+histogram is automatically updated each time a new image is received.
+The histogram range can be adjusted, by selecting "camera", "8bit",
+"10bit", "12bit", "14bit", or "16bit" scale. Selecting the "camera"
+setting will automatically adjust the histogram range to the hardware
+bit depth of the image. The "Log. hist" checkbox will change the y-axis
+of the histogram to a log scale. Some statistical information (min, max,
+avg, stdev) about the image is also provided.
+
+The histogram is overlaid with a graph showing the relation between
+pixel intensities in the image and display of the image on the screen.
+This graph allows manipulation of brightness, contrast and gamma of the
+displayed image.
+
+#### Brightness and contrast
+
+The end-points of this graph (black and white triangles, boxed in
+**blue** in Figure 4) set the lower and upper clipping levels (i.e.
+pixels values lower than the black triangle will appear as black, pixel
+values higher than the white triangle will appear as white). The steeper
+this line, the higher the contrast: moving the line to the right will
+darken the image, while moving it to the left will brighten the image.
+The "Full" button sets the lower and upper clipping levels to your
+camera's full intensity range. The "Auto" button will adjust the lower
+and upper clipping levels automatically, based on the extreme pixel
+values in the image. For "Live" imaging you can perform this adjustment
+continuously by checking the "Auto-stretch" box; once checked you can
+set a percentage of outliers to ignore.
+
+#### Gamma Function
+
+The gamma function allows you to change the relation between pixel value
+in the image and display from linear to hyperbolic. This gamma
+correction makes it possible to visualize both bright and dark objects
+in an image simultaneously, which can be beneficial, especially with
+cameras that have higher dynamic range than the display (for further
+explanation see the [wikipedia article on gamma
+corrections](http://en.wikipedia.org/wiki/Gamma_correction). The
+adjustments can be made either by inputting a value in the **red** box
+shown in Figure 4 or by clicking and dragging the line itself.
+
+#### Displayed vs. Original Image
+
+Since the original image is saved separately from the displayed image,
+any adjustments made will apply only to the displayed image - the
+original image with the actual pixel values will not be affected. Also,
+because Micro-Manager displays images received from the camera in a
+standard image window, any ImageJ command can be used to adjust the
+appearance of the image, including the standard ImageJ Brightness and
+Contrast dialog.
+
+## Refresh
+
+The Micro-Manager main panel will not necessarily be updated when a
+setting in your microscope changes. This behavior saves resources and
+avoids continuous polling of the hardware. To bring Micro-Manager in
+sync with the current state of the hardware, use the 'Refresh' button.
+
+## Region of Interest (ROI)
+
+Most of the cameras used for microscopy can be configured to image only
+a Region of Interest (ROI) instead of the full frame. To select an ROI
+use the rectangle tool (from the ImageJ window) on the image window. By
+pressing the "ROI" button while the selection is active, you will apply
+the current rectangle to the camera. Some cameras will internally adjust
+the rectangle dimensions slightly to fit within specific hardware
+constraints. To return to the full frame imaging, press the "Full"
+button (right next to the ROI button).
+
+## Zoom
+
+The "Zoom" buttons apply a software zoom to the topmost image window.
+Software zoom here implies zooming in on the captured image.
+
+## Line profile
+
+The "Profile" button opens up a live line profile window. Unlike the
+regular ImageJ "profile" utility, this window will update each time a
+new image is displayed in the Live window. The profile is computed from
+the currently active line drawn over the image. To draw a line, use the
+standard line tool from the ImageJ toolbar.
+
+![Line profile window](media/Profile.jpg "Line profile window")  
+Figure 5. Line Profile window.
+
+## Camera Settings
+
+A few camera settings found in all systems are directly accessible from
+the main window:
+
+  - Exposure Time: You can set the exposure time of your camera.
+  - Binning: Apply binning ('pooling' of pixels in both x and y
+    direction).
+  - Active Shutter: You can change the 'active shutter': that is, the
+    shutter that Micro-Manager will open before taking an image and
+    close once the image is made.
+  - Deactivating Auto Shutter: This behavior of automatically opening
+    and closing the shutter can be defeated by unchecking the 'Auto
+    shutter' checkbox. Doing so will let you open and close the active
+    shutter with the 'Open/Close' button in the Main Window.
+
+# Controlling devices
+
+## Exploring devices: Device/Property Browser
+
+The Main Window provides control of only a small subset of the device
+properties loaded in the system. To view and control all devices and all
+settings available in the currently loaded hardware configuration, use
+the "Device/Property Browser" (available under the Tools menu). The
+Device/Property Browser displays a list of all devices and associated
+"properties" (settings available for each device). Since this list will
+often be overwhelmingly long, you can restrict the list of displayed
+devices using the checkboxes in the top left corner of the window. You
+can inspect and change any setting on any device. Read-only properties
+are shown as a line with a dark background. To change a setting, change
+it in the 'Value' column and then leave the field using the 'tab' key or
+by clicking the mouse elsewhere in the window.
+
+  
+![Device/Property Browser Window](media/Device_manager.gif
+"Device/Property Browser Window")  
+Figure 6. Device/Property Browser window.
+
+  
+
+## Grouping device properties: Configuration Presets
+
+Obviously, changing individual properties using the Device/Property
+Browser quickly becomes cumbersome. Micro-Manager therefore provides a
+way to generate 'shortcuts' that let you quickly set groups of device
+properties. Setting up these Configuration Presets is an important part
+of configuring Micro-Manager and is described in the [Configuration
+Guide](Micro-Manager_Configuration_Guide "wikilink"). Placing the cursor
+over the current preset will display a tool-tip window and show which
+devices will be affected by the command. In the example in the
+configuration guide, choosing the "DAPI" channel preset command will
+move three filter wheels to the appropriate positions.
+
+![Presets Panel](media/Presets.gif "Presets Panel")  
+Figure 7. Detail of the main control window: configuration preset.
+
+There is no limit to the number of devices or number of different
+properties you can include in one configuration group. You can set
+objectives, filters, stage positions, camera parameters in a single
+configuration command. The Configuration Presets shown here are just an
+example (used in the demo configuration). In some cases, device
+properties can show up as a slider, making it easy to set things like
+camera gain or temperature.
+
+  
+
+# Recording Images
+
+## Multi-dimensional acquisition
+
+To acquire multi-image stacks, press the "Multi-D Acq." button to open
+the Acquisition Control dialog (this dialog can also be reached through
+the <span>''' Tools | Acquisition '''</span> menu entry). Micro-Manager
+allows you to create a stack as multi-channel (wavelength coordinate),
+multi-frame (time coordinate), multi-slice (Z coordinate),
+multi-position (XY coordinate), or any combination of these.  
+![Acquisition Dialog](media/MM_multid.jpg "Acquisition Dialog")  
+Figure 8. Acquisition control dialog.
+
+After defining channels, slices and frames by using controls in the
+dialog, press the "Acquire" button. The acquisition starts immediately
+and an [Image
+Viewer](Micro-Manager_User's_Guide#5D-Image_Viewer "wikilink") window
+will open displaying the progress. During and after acquisition you can
+use controls at the bottom of the 5D-Image window to play-back the
+sequence, browse channels, slices, frames, or positions, or save the
+entire image stack to disk.
+
+**Channels** can be selected from the active 'Channel group'. Channel
+groups are the Configuration Preset groups that are defined in the main
+Micro-Manager Main Window. When you switch Channel groups, all
+previously defined channels will be erased. You will need to set the
+desired exposure time for each channel. You can also set a z-offset for
+each channel, which can be useful when the main object in one of the
+channels is in a different focal plane from the other channels. Setting
+'Skip Frame' to a number other than 0 will cause the acquisition to
+'skip' taking an image in that channel (after taking the first image)
+for the indicated number of frames. The 5D-Image Viewer will 'fill in'
+these skipped frames with the previous image. In some situations it may
+be desirable to acquire certain channels at lower sampling rates, to
+reduce photo-toxicity and to save disk space. Clicking inside the
+'Color' column will open up a Color selector that lets you select the
+color to be used for that channel in the 5D-Image Viewer. (You can also
+change colors later on in the [Image
+Viewer](Micro-Manager_User's_Guide#5D-Image_Viewer "wikilink").)
+
+**Z Slices** can be set either as relative to the current position (you
+will need to type in the start and end position) or as absolute
+positions. If absolute positions are selected, the 'Set' buttons will
+become active. Clicking these will set the current position to start or
+end.
+
+**Acquisition Order** lets you choose between carrying out z-stacks with
+each channel (Slices first) or switching channels at each z-position
+(Channels first). 'Time first' mode will take a complete sequences of
+frames at a single position before moving on to the next, whereas
+'Positions first' mode will cycle between all position at each time
+point, in effect acquiring time lapse sequences at all positions.
+
+Checking the **Use XY list** option will cause the acquisition to be
+executed at each position defined in the [Position
+List](Micro-Manager_User's_Guide#Position_List_Dialog "wikilink").
+[Autofocus](Micro-Manager_User's_Guide#Autofocus "wikilink") options are
+described below. If the **Save images** option is selected, images will
+be saved to disk continuously during the acquisition. If this option is
+not selected, images are accumulated only in the 5D-Image window, and
+once the acquisition is finished, image data can be saved to disk.
+However, saving files automatically during acquisition secures the
+acquired data against an unexpected computer failure or accidental
+closing of image window. Even when saving to disk, some of the acquired
+images are still kept in memory, facilitating fast playback. If such
+behavior is not desired, check the 'Conserve RAM' option (<span>**Tools
+| Options**</span>).
+
+## Fast Time Series Acquisition (Burst)
+
+If you would like to acquire 'bursts' of images as fast as possible,
+Micro-Manager's Multi-dimensional Acquisition engine is designed to
+intelligently take care of this. You will need to:
+
+  - Set the time interval between frames to zero
+  - Deactivate Z Stacks
+  - Choose Time First
+  - Use no channels or a single chnanel
+
+Thus you will have removed any delay that would get in the way of the
+fast acquisition. In previous Micro-Manager versions this was known as
+Burst Mode.
+
+## Split View
+
+Split View functionality (compatible with such devices as the DualView
+or OptoSplit) is now available as a [plugin](SplitView "wikilink").
+
+# Autofocus
+
+Micro-Manager has a single, integrated user interface for hardware- and
+software-based autofocus. In the main window, press the **Set autofocus
+options** button to open the Autofocus Properties dialog box. Here you
+can choose which autofocus mechanism to use among available hardware-
+and software-based options. You can then edit the settings for your
+chosen autofocus mechanism. The **Duo** autofocus option allows you to
+combine two autofocus mechanisms, so that they operate sequentially, one
+after the other.
+
+The **Autofocus Now** button on the Main Window will cause the autofocus
+mechanism you have chosen to execute its focusing protocol once.
+
+## Hardware Autofocus
+
+Hardware-based autofocus support is provided for the Nikon Perfect Focus
+(PFS), ASI CRIF, Zeiss Definite Focus, and Olympus Z Drift Correction
+(ZDC) devices. These devices bounce an infrared reference beam off a
+surface of the coverslip, and use this reflection to adjust the focal
+position. To activate one of these devices in Micro-Manager, you need to
+include it in the Hardware Configuration and select it in the Autofocus
+Properties dialog.
+
+## Software Autofocus
+
+Software-based autofocus plugins are also available in the Autofocus
+Properties dialog. They should work with any camera and Z-stage. These
+autofocus plugins iteratively adjust the focal position and acquire
+images to optimize a specific image feature. For example, Pakpoom
+Subsoontorn & Hernan Garcia (Caltech) contributed a Java plugin module
+("JAF H\&P") for auto-focusing based on the relative strength of
+gradients in the image (edge 'sharpness'). See
+[here](Autofocus_manual "wikilink") for further documentation of this
+autofocus plugin.
+
+## Autofocus in Multi-D Acquisition
+
+The Multi-Dimensional Acquisition window offers integration with the
+autofocus system. The **Set autofocus options** button allows you to
+choose the autofocus mechanism and configure it. Click the **Use
+autofocus** checkbox to activate autofocus in the multi-dimensional
+acquisition. You can also specify how many frames (time points) will be
+skipped between autofocus events. If you have a hardware autofocus, it
+will be activated just before image acquisition and then be switched off
+again. If you rather have the hardware autofocus switched on
+continuously, do not check the autofocus checkbox, but be sure that the
+hardware autofocus is switched on before you start the acquisition.
+
+# Positioning
+
+## Position List Dialog
+
+The Position List dialog can be reached from the menu (**Tools | XY
+List**), and from the [Multi-dimensional
+Acquisition](Micro-Manager_User's_Guide#Multi-dimensional_acquisition "wikilink")
+window (button next to 'Use XY list'). The Position List is used to
+record the positions of stages in your system. At the bottom of the
+dialog is a list of available stage axes, any of which you can select to
+use for recording positions.
+
+![Position List Dialog](media/Position_list.png "Position List Dialog")  
+Figure 10. Position List dialog.
+
+  
+Use the **Mark** button to record the current stage position for all
+stages you have selected to use. When a position is selected the button
+will be named **Replace** and pressing the button will overwrite the
+selected position. Positions can be de-selected by clicking on them. You
+can revisit a site by selecting the position and pressing the **Go to**
+button. The button will update the stage positions shown in the
+**Current position** pane. You can change the name of each position.
+Position lists can be saved (**Save As** button) and re-used later
+(**Load**). When saving and re-using position lists, you should make
+sure that the coordinate systems of your stages are reproducible between
+invocations of the program, possibly using the **calibrate** button.
+This will drive all stages to their origin and set this as the base of
+their coordinate system. Be extremely careful when doing so, since it is
+possible to run your XY stage into one of your expensive objective
+lenses\!
+
+## Tile Creator
+
+The **Create Grid** button in the Position List Dialog will open the
+Tile Creator Dialog. The purpose of this dialog is to quickly create a
+position list covering the area of an object (larger than a single
+image) in the microscope specimen.
+
+![Tile Creator Dialog](media/Tile_creator.gif "Tile Creator Dialog")  
+Figure 11. Tile Creator dialog.
+
+  
+Use the **Set** buttons of the Tile Creator Dialog to mark at least two
+of the corners of the object that you are interested in. Pressing **OK**
+will generate a Position List that covers a bounding box around the
+corners that you set. To do this correctly, the dialog needs to know the
+correct **Pixel Size**. If your system is
+[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink"),
+the correct pixel size will appear here automatically; otherwise you
+will have to enter the correct number. It is also possible to specify an
+**overlap** between the images generated from this position list (to
+specify a space between them, use a negative overlap).
+
+## Interactive Stage Movements
+
+It can be cumbersome to exactly position a microscope stage.
+Micro-Manager has an option (**Tools | Mouse Moves Stage**) that might
+make this easier. To use this tools, your Micro-Manager configuration
+must be
+[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink").
+When **Mouse Moves Stage** is enabled, double-clicking in the "Live"
+window (the window in which the "Snap" and "Live" buttons display
+images) will move the stage such that the place you double-clicked will
+move to the center. It is possible that the stage moves the wrong
+direction. If so, use the camera properties 'TransposeMirrorX',
+'TransposeMirrorY', and 'TransposeXY' (accessible in the Device/Property
+browser) to achive the correct stage movement (you might want to save
+these settings in a 'System-Startup' configuration group). You can also
+move the stage by dragging the mouse through the image (a kind of
+'Google Earth' effect).  
+  
+When the "Live" window is open, you can also use the keyboard to move
+the stage:
+
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Commands</strong><br />
++x: Right arrow<br />
+-x: Left arrow<br />
++y: Up arrow<br />
+-y: Down arrow<br />
++z: 1, U, Page Up<br />
+-z: 2, J, Page Down</p></td>
+<td><p><strong>x,y modifiers</strong><br />
+Normal: Move 10 pixels<br />
+Control: Move 1 pixel<br />
+Alt: Move half field of view<br />
+Shift: Move whole field</p></td>
+<td><p><strong>z modifiers</strong><br />
+Normal: Move 3 z-steps<br />
+Control: Move 1 z-step<br />
+Shift: Move 10 z-steps</p></td>
+</tr>
+</tbody>
+</table>
+
+# 5D-Image Viewer
+
+The 5D Image Viewer is an extension of the ImageJ HyperStack. Therefore,
+most ImageJ commands will work as expected on this window.
+
+![5D image window](media/5D-ImageViewer.PNG "5D image window")  
+Figure 12. Acquisition data displayed in the 5D image window.  
+The viewer has sliders for all the dimensions you choose on the Multi-D
+Acq. which include: Channels, Z-slices, XY-Positions and Time points of
+the acquired images. You can playback Time Lapse sequences and adjust
+the speed using the text box (set in frames/second). The **red** box in
+Figure 12 shows where position, time, z-position, and channel for the
+current image are displayed. The buttons boxed in **green** allow you to
+Stop, Start and Pause during acquisition. Buttons boxed in **blue**
+allow you to open the folder in which the original files are located and
+also save the current image along with any adjustments to display
+brightness and contrast.
+
+## Channels, Metadata, and Comments
+
+While using the 5D-Image Viewer the 'Histogram' section on the Main
+Window has three tabs for Channels, Metadata and Comments.
+
+![5D image window](media/5D-ImageViewer2.PNG‎ "5D image window")  
+Figure 13. Channels and Metadata tabs for 5D-Image View in Main
+Window.  
+
+### Channels
+
+Under the **Channel** tab you are given various options which include:
+
+  - Scale Bar: You can choose to display a scale bar with a set position
+    and color.
+  - Display Mode:
+      - Composite: Displays image and histogram of all channels at the
+        same time. You also have the option to turn off any channel by
+        unchecking the box.
+      - Color: Displays a single channel, depending on the position of
+        the slider in the viewer.
+      - Grayscale: Displays a grayscale image of a single channel,
+        depending on the position of the slider in the viewer.
+  - Histogram of Each Channel:
+      - You can choose to make adjustments a each channel as described
+        in the [Histogram, Brightness and
+        Contrast](Micro-Manager_Configuration_Guide "wikilink") section
+        above.
+      - The only difference is that "Autostretch" in this case makes
+        adjustments to all channels while in composite mode.
+
+### Metadata
+
+In the **Metadata** tab you will find a box of "Acquisition properties",
+which lists metadata common to the complete data set. Below are the
+"Per-image properties", which lists the complete state of the microscope
+system at the time the image was taken. Most of these will be the same
+for all images, you can hide these by un-checking the box that says
+"Show unchanging properties".
+
+### Comments
+
+The **Comments** tab allows you to comment on the whole acquisition or
+an individual image. You can choose the image you would like to comment
+on by using the sliders in the 5D-Image Viewer. These comments will be
+automatically saved in the metadata and can be used to store your
+observations/annotations.
+
+## Files on Disk
+
+Micro-Manager will store a 5D-Image dataset in a single folder. Acquired
+images are saved to disk as separate TIFF files, each containing a
+single grayscale image. The file naming convention is "img" prefix
+followed by frame number, channel name and slice number
+(img\_00000000t\_channel\_00z.tif). In addition, the folder will contain
+a file named "metadata.txt" that contains the metadata in
+[JSON](http://www.json.org/) format.  
+
+# Credits, License and Copyright
+
+Micro-Manager is an Open Source software package for controlling
+automated microscopes on multiple platforms (Windows, Mac and Linux).
+The software is being developed in the [Vale
+Lab](http://valelab.ucsf.edu) at the Unversity of California San
+Francisco and funding was provided by the Sandler Foundation and a grant
+from the NIH. The original software design was by Nenad Amodaj, and the
+software is currently developed by Arthur Edelstein and Nico Stuurman.
+Many individuals contributed source code or other types of help
+(including this documentation). The Micro-Manager source code is
+distributed under the BSD license for the user interface and the LGPL
+license for the MMCore (control module). All supplied device drivers
+('adpaters') for cameras and other devices are covered by the BSD
+license. Copyright for some of the adapters is owned by other parties.  
+  
+{% include Documentation_Sidebar text="" %}
