@@ -1,1 +1,1 @@
-[http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid={{{1}}} PMCID {{{1}}}]
+[http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid={include.text}]
