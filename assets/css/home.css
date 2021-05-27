@@ -1,0 +1,86 @@
+#site-logo {
+  visibility: hidden;
+}
+
+.text-success {
+    color: #228B22!important;
+}
+.text-primary {
+    color: #459ba7!important;
+}
+.text-danger {
+    color: #f07f05!important;
+}
+.text-center {
+    text-align: center!important;
+    margin-top: 2.0em;
+}
+.text-center h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.fa-5x {
+    font-size: 5em;
+}
+
+/* Table Why ImageJ */
+
+.container-whyij {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 2.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 3em;
+}
+
+.row-whyij {
+  width: 100%;
+  display: flex;
+}
+
+.col-4 {
+  width: 33.33%;
+  text-align:center;
+  vertical-align:top;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.col-4 p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.col-4 h2 {
+  font-size: 1.6em;
+}
+
+@media screen and ( max-width: 879px ) {
+
+     .row-whyij {
+       flex-direction: column;
+       text-align:center;
+       vertical-align:top;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     .col-4 {
+       width: 100%;
+       text-align:center;
+       vertical-align:top;
+     }
+
+     .row-whyij > .col-4 {
+       width: 65%;
+       align: center;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+     }
+   }

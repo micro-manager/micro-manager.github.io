@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{page.title}}</title>
+		{% include html-head %}
+		<link rel="stylesheet" href="/assets/css/page.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Top bar -->
+		{% include top-bar %}
+
+		<!-- Page-info -->
+		{% include page-info %}
+
+		<section id="left-column" class="sidebar dock">
+			<!-- Menu -->
+			{% include main-menu dockable=true %}
+		</section>
+
+		<!-- Page title -->
+		<div class="container">
+			<header class="major special">
+				<h1><strong>{{page.title}}</strong></h1>
+			</header>
+		</div>
+
+	<section id="right-column" class="sidebar dock">
+			<!-- Table of contents -->
+			<div id="toc" class="toc menu dockable">
+				<div class="drag-handle"></div>
+				<h3>Page contents</h3>
+				<ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
+			</div>
+		</section>
+
+		<!-- Main content -->
+		<section id="page" class="main style1">
+			<div class="container">
+				<div class="box alt"></div>
+				<div id="content" class="page-content">
+					{{content}}
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		{% include footer %}
+
+		<!-- Hamburger menu -->
+		{% include hamburger-menu %}
+
+		<div id="dock-overlay-left" class="dock-overlay" data-dock-target="left-column"></div>
+		<div id="dock-overlay-right" class="dock-overlay" data-dock-target="right-column"></div>
+
+		<!-- Search results -->
+		{% include search-results %}
+
+		<!-- Scripts -->
+		{% include base-scripts %}
+
+	</body>
+</html>
