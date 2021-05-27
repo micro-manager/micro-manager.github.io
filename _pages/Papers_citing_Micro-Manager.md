@@ -1,1441 +1,3818 @@
-''Papers citing and/or acknowledging the use of Micro-Manager''
-__NOTOC__
-==2015==
-Bump, S. (2015). Microscopic characterization of functionalized paper as a platform for 3D cell cultures. Ph.D. Thesis. Technische Universität.
-
-Lin, S., Barrette, A.M., Chapin, C., Gonzales, L.W., Gonzalez, R.F., Dobbs, L.G., and Ballard, P.L. (2015). Expression of human carcinoembryonic antigen‐related cell adhesion molecule 6 and alveolar progenitor cells in normal and injured lungs of transgenic mice. Physiological Reports 3, e12657 [http://dx.doi.org/10.14814%2Fphy2.12657 doi:10.14814%2Fphy2.12657].
-
-Sevenler, D., and Selim Ünlü, M. (2015). Numerical techniques for high-throughput reflectance interference biosensing. Journal of Modern Optics 1–6 [http://dx.doi.org/10.1080%2F09500340.2015.1117668 doi:10.1080%2F09500340.2015.1117668].
-
-Morozova, N., Sabantsev, A., Bogdanova, E., Fedorova, Y., Maikova, A., Vedyaykin, A., Rodic, A., Djordjevic, M., Khodorkovskii, M., and Severinov, K. (2015). Temporal dynamics of methyltransferase and restriction endonuclease accumulation in individual cells after introducing a restriction-modification system. Nucl. Acids Res. gkv1490 [http://dx.doi.org/10.1093%2Fnar%2Fgkv1490 doi:10.1093%2Fnar%2Fgkv1490].
-
-Will, C., Messlinger, K., and Fischer, M.J.M. (2016). Vessel diameter measurements at the medullary brainstem in vivo as an index of trigeminal activity. Brain Research 1632, 51–57 [http://dx.doi.org/10.1016%2Fj.brainres.2015.12.013 doi:10.1016%2Fj.brainres.2015.12.013].
-
-Bazin, D., Jouanneau, C., Bertazzo, S., Sandt, C., Dessombz, A., Réfrégiers, M., Dumas, P., Frederick, J., Haymann, J.-P., Letavernier, E., et al. Combining field effect scanning electron microscopy, deep UV fluorescence, Raman, classical and synchrotron radiation Fourier transform Infra-Red Spectroscopy in the study of crystal-containing kidney biopsies. Comptes Rendus Chimie [http://dx.doi.org/10.1016%2Fj.crci.2015.03.001 doi:10.1016%2Fj.crci.2015.03.001].
-
-Urban, N., Wang, L., Kwiek, S., Rademann, J., Kuebler, W.M., and Schaefer, M. (2016). Identification and Validation of Larixyl Acetate as a Potent TRPC6 Inhibitor. Mol Pharmacol 89, 197–213 [http://dx.doi.org/10.1124%2Fmol.115.100792 doi:10.1124%2Fmol.115.100792] .
-
-Cinquin, B., Maigre, L., Pinet, E., Chevalier, J., Stavenger, R.A., Mills, S., Réfrégiers, M., and Pagès, J.-M. (2015). Microspectrometric insights on the uptake of antibiotics at the single bacterial cell level. Scientific Reports 5, 17968 [http://dx.doi.org/10.1038%2Fsrep17968 doi:10.1038%2Fsrep17968].
-
-Yun, K., Lee, H., Bang, H., and Li Jeon, N. (2015). QR-on-a-chip: Computer-recognizable micro-pattern engraved microfluidic device for high-throughput image acquisition. Lab on a Chip [http://dx.doi.org/10.1039%2FC5LC01350J doi:10.1039%2FC5LC01350J].
-
-Dudek, M., Gossan, N., Yang, N., Im, H.-J., Ruckshanthi, J.P.D., Yoshitane, H., Li, X., Jin, D., Wang, P., Boudiffa, M., et al. (2015). The chondrocyte clock gene Bmal1 controls cartilage homeostasis and integrity. J Clin Invest 126, 0–0 [http://dx.doi.org/10.1172%2FJCI82755 doi:10.1172%2FJCI82755].
-
-Smith, A.J., and Verkman, A.S. (2015). Superresolution Imaging of Aquaporin-4 Cluster Size in Antibody-Stained Paraffin Brain Sections. Biophysical Journal 109, 2511–2522 [http://dx.doi.org/10.1016%2Fj.bpj.2015.10.047 doi:10.1016%2Fj.bpj.2015.10.047].
-
-Lee, C., Roberts, S.E., and Gladfelter, A.S. Quantitative spatial analysis of transcripts in multinucleate cells using single-molecule FISH. Methods [http://dx.doi.org/10.1016%2Fj.ymeth.2015.12.007 doi:10.1016%2Fj.ymeth.2015.12.007].
-
-Handly, L.N., Pilko, A., and Wollman, R. (2015). Paracrine communication maximizes cellular response fidelity in wound signaling. eLife Sciences 4, e09652 [http://dx.doi.org/10.7554%2FeLife.09652 doi:10.7554%2FeLife.09652].
-
-Pattanayak, G.K., Lambert, G., Bernat, K., and Rust, M.J. (2015). Controlling the Cyanobacterial Clock by Synthetically Rewiring Metabolism. Cell Reports 13, 2362–2367 [http://dx.doi.org/10.1016%2Fj.celrep.2015.11.031 doi:10.1016%2Fj.celrep.2015.11.031].
-
-Kath, J.E., Chang, S., Scotland, M.K., Wilbertz, J.H., Jergic, S., Dixon, N.E., Sutton, M.D., and Loparo, J.J. (2015). Exchange between Escherichia coli polymerases II and III on a processivity clamp. Nucl. Acids Res. gkv1375 [http://dx.doi.org/10.1093%2Fnar%2Fgkv1375 doi:10.1093%2Fnar%2Fgkv1375].
-
-Croft, W., Reusch, K., Tilunaite, A., Russell, N.A., Thul, R., and Bellamy, T.C. (2015). Probabilistic encoding of stimulus strength in astrocyte global calcium signals. Glia n/a – n/a [http://dx.doi.org/10.1002%2Fglia.22947 doi:10.1002%2Fglia.22947].
-
-Day, C.R., Chen, H., Coulon, A., Meier, J.L., and Larson, D.R. High-throughput single-molecule screen for small-molecule perturbation of splicing and transcription kinetics. Methods [http://dx.doi.org/10.1016%2Fj.ymeth.2015.11.025 doi:10.1016%2Fj.ymeth.2015.11.025].
-
-Stephen, T.-L., Higgs, N.F., Sheehan, D.F., Awabdh, S.A., López-Doménech, G., Arancibia-Carcamo, I.L., and Kittler, J.T. (2015). Miro1 Regulates Activity-Driven Positioning of Mitochondria within Astrocytic Processes Apposed to Synapses to Regulate Intracellular Calcium Signaling. J. Neurosci. 35, 15996–16011 [http://dx.doi.org/10.1523%2FJNEUROSCI.2068-15.2015 doi:10.1523%2FJNEUROSCI.2068-15.2015].
-
-Gu, X., Li, A., Liu, S., Lin, L., Xu, S., Zhang, P., Li, S., Li, X., Tian, B., Zhu, X., et al. (2015). MicroRNA124 Regulated Neurite Elongation by Targeting OSBP. Mol Neurobiol 1–9 [http://dx.doi.org/10.1007%2Fs12035-015-9540-4 doi:10.1007%2Fs12035-015-9540-4].
-
-Zhao, Z., Yang, Y., Zeng, Y., and He, M. (2016). A microfluidic ExoSearch chip for multiplexed exosome detection towards blood-based ovarian cancer diagnosis. Lab on a Chip [http://dx.doi.org/10.1039%2FC5LC01117E doi:10.1039%2FC5LC01117E].
-
-Smith, G.B., Whitney, D.E., and Fitzpatrick, D. (2015). Modular Representation of Luminance Polarity in the Superficial Layers of Primary Visual Cortex. Neuron 88, 805–818 [http://dx.doi.org/10.1016%2Fj.neuron.2015.10.019 doi:10.1016%2Fj.neuron.2015.10.019].
-
-Splitt, S.D., and Risser, D.D. (2015). The non-metabolizable sucrose analog sucralose is a potent inhibitor of hormogonium differentiation in the filamentous cyanobacterium Nostoc punctiforme. Arch Microbiol 1–11 [http://dx.doi.org/10.1007%2Fs00203-015-1171-7 doi:10.1007%2Fs00203-015-1171-7].
-
-Lanier, M.H., McConnell, P., and Cooper, J.A. (2015). Cell Migration and Invadopodia Formation Require a Membrane-binding Domain of CARMIL2. J. Biol. Chem. jbc.M115.676882 [http://dx.doi.org/10.1074%2Fjbc.M115.676882 doi:10.1074%2Fjbc.M115.676882].
-
-Smith, G.B., Whitney, D.E., and Fitzpatrick, D. (2015). Modular Representation of Luminance Polarity in the Superficial Layers of Primary Visual Cortex. Neuron 88, 805–818 [http://dx.doi.org/10.1016%2Fj.neuron.2015.10.019 doi:10.1016%2Fj.neuron.2015.10.019].
-
-Shigeto, M., Ramracheya, R., Tarasov, A.I., Cha, C.Y., Chibalina, M.V., Hastoy, B., Philippaert, K., Reinbothe, T., Rorsman, N., Salehi, A., et al. (2015). GLP-1 stimulates insulin secretion by PKC-dependent TRPM4 and TRPM5 activation. J Clin Invest 125, 4714–4728 [http://dx.doi.org/10.1172%2FJCI81975 doi:10.1172%2FJCI81975].
-
-Shekhar, S., Kerleau, M., Kühn, S., Pernier, J., Romet-Lemonne, G., Jégou, A., and Carlier, M.-F. (2015). Formin and capping protein together embrace the actin filament in a menage a trois. Nat Commun 6, 8730 [http://dx.doi.org/10.1038%2Fncomms9730 doi:10.1038%2Fncomms9730].
-
-Ripple, D.C., and Hu, Z. (2015). Correcting the Relative Bias of Light Obscuration and Flow Imaging Particle Counters. Pharm Res 1–20 [http://dx.doi.org/10.1007%2Fs11095-015-1817-9 doi:10.1007%2Fs11095-015-1817-9].
-
-Rost, B.R., Schneider, F., Grauel, M.K., Wozny, C., Bentz, C.G., Blessing, A., Rosenmund, T., Jentsch, T.J., Schmitz, D., Hegemann, P., et al. (2015). Optogenetic acidification of synaptic vesicles and lysosomes. Nat Neurosci 18, 1845–1852 [http://dx.doi.org/10.1038%2Fnn.4161 doi:10.1038%2Fnn.4161].
-
-Hersey, J.S., Meller, A., and Grinstaff, M.W. (2015). Functionalized Nanofiber Meshes Enhance Immunosorbent Assays. Anal. Chem. 87, 11863–11870 [http://dx.doi.org/10.1021%2Facs.analchem.5b03386 doi:10.1021%2Facs.analchem.5b03386].
-
-Nosrati, R., Driouchi, A., Yip, C.M., and Sinton, D. (2015). Two-dimensional slither swimming of sperm within a micrometre of a surface. Nat Commun 6, 8703 [http://dx.doi.org/10.1038%2Fncomms9703 doi:10.1038%2Fncomms9703].
-
-Hoera, C., Skadell, M.M., Pfeiffer, S.A., Pahl, M., Shu, Z., Beckert, E., and Belder, D. (2016). A chip-integrated highly variable thermal flow rate sensor. Sensors and Actuators B: Chemical 225, 42–49 [http://dx.doi.org/10.1016%2Fj.snb.2015.11.009 doi:10.1016%2Fj.snb.2015.11.009].
-
-Huang, H., Alvarez, S., Bindbeutel, R.K., Shen, Z., Naldrett, M.J., Evans, B.S., Briggs, S.P., Hicks, L.M., Kay, S.A., and Nusinow, D.A. (2015). Identification of evening complex associated proteins in Arabidopsis by affinity purification and mass spectrometry. Mol Cell Proteomics mcp.M115.054064 [http://dx.doi.org/10.1074%2Fmcp.M115.054064 doi:10.1074%2Fmcp.M115.054064].
-
-Lenstra, T.L., Coulon, A., Chow, C.C., and Larson, D.R. (2015). Single-Molecule Imaging Reveals a Switch between Spurious and Functional ncRNA Transcription. Molecular Cell 60, 597–610 [http://dx.doi.org/10.1016%2Fj.molcel.2015.09.028 doi:10.1016%2Fj.molcel.2015.09.028].
-
-Krieger, J.W., Singh, A.P., Bag, N., Garbe, C.S., Saunders, T.E., Langowski, J., and Wohland, T. (2015). Imaging fluorescence (cross-) correlation spectroscopy in live cells and organisms. Nat. Protocols 10, 1948–1974 [http://dx.doi.org/10.1038%2Fnprot.2015.100 doi:10.1038%2Fnprot.2015.100].
-
-Acerbi, I., Cassereau, L., Dean, I., Shi, Q., Au, A., Park, C., Chen, Y.Y., Liphardt, J., Hwang, E.S., and Weaver, V.M. (2015). Human breast cancer invasion and aggression correlates with ECM stiffening and immune cell infiltration. Integr. Biol. 7, 1120–1134 [http://dx.doi.org/10.1039%2FC5IB00040H doi:10.1039%2FC5IB00040H].
-
-Romsey, N.R., Hou, Y., Rodriguez, L.L., and Schneider, I.C. (2013). The Number of Lines a Cell Contacts and Cell Contractility Drive the Efficiency of Contact Guidance. Cel. Mol. Bioeng. 7, 122–135 [http://dx.doi.org/10.1007%2Fs12195-013-0299-2 doi:10.1007%2Fs12195-013-0299-2].
-
-Prevo, B., Mangeol, P., Oswald, F., Scholey, J.M., and Peterman, E.J.G. (2015). Functional differentiation of cooperating kinesin-2 motors orchestrates cargo import and transport in C. elegans cilia. Nat Cell Biol 17, 1536–1545 [http://dx.doi.org/10.1038%2Fncb3263 doi:10.1038%2Fncb3263].
-
-Treweek, J.B., Chan, K.Y., Flytzanis, N.C., Yang, B., Deverman, B.E., Greenbaum, A., Lignell, A., Xiao, C., Cai, L., Ladinsky, M.S., et al. (2015). Whole-body tissue stabilization and selective extractions via tissue-hydrogel hybrids for high-resolution intact circuit mapping and phenotyping. Nat. Protocols 10, 1860–1896 [http://dx.doi.org/10.1038%2Fnprot.2015.122 doi:10.1038%2Fnprot.2015.122].
-
-Jönsson, P., and Jönsson, B. (2015). Hydrodynamic Forces on Macromolecules Protruding from Lipid Bilayers Due to External Liquid Flows. Langmuir 31, 12708–12718 [http://dx.doi.org/10.1021/acs.langmuir.5b03421 doi:10.1021/acs.langmuir.5b03421].
-
-Wilson, C., Saunter, C.D., Girkin, J.M., and McCarron, J.G. (2015). Pressure-dependent regulation of Ca2+ signalling in the vascular endothelium. J Physiol 593, 5231–5253 [http://dx.doi.org/10.1113%2FJP271157 doi:10.1113%2FJP271157].
-
-Jeppesen, J.C., Solovyeva, V., Brewer, J.R., Johannes, L., Hansen, P.L., and Simonsen, A.C. (2015). Slow Relaxation of Shape and Orientational Texture in Membrane Gel Domains. Langmuir 31, 12699–12707 [http://dx.doi.org/10.1021%2Facs.langmuir.5b03168 doi:10.1021%2Facs.langmuir.5b03168].
-
-M. Jackson, J., B. Taylor, J., A. Witek, M., A. Hunsucker, S., P. Waugh, J., Fedoriw, Y., C. Shea, T., A. Soper, S., and M. Armistead, P. (2016). Microfluidics for the detection of minimal residual disease in acute myeloid leukemia patients using circulating leukemic cells selected from blood. Analyst. [http://dx.doi.org/10.1039%2FC5AN01836F doi:10.1039%2FC5AN01836F].
-
-Gualda, E.J., Pereira, H., Vale, T., Estrada, M.F., Brito, C., and Moreno, N. (2015). SPIM-fluid: open source light-sheet based platform for high-throughput imaging. Biomed. Opt. Express, BOE 6, 4447–4456 [http://dx.doi.org/10.1364%2FBOE.6.004447 doi:10.1364%2FBOE.6.004447].
-
-Schmohl, K.A., Müller, A.M., Wechselberger, A., Rühland, S., Salb, N., Schwenk, N., Heuer, H., Carlsen, J., Göke, B., Nelson, P.J., et al. (2015). Thyroid hormones and tetrac: new regulators of tumour stroma formation via integrin αvβ3. Endocr Relat Cancer 22, 941–952 [http://dx.doi.org/10.1530%2FERC-15-0245 doi:10.1530%2FERC-15-0245].
-
-Cazaux, S., Sadoun, A., Biarnes-Pelicot, M., Martinez, M., Obeid, S., Bongrand, P., Limozin, L., and Puech, P.-H. (2016). Synchronizing atomic force microscopy force mode and fluorescence microscopy in real time for immune cell stimulation and activation studies. Ultramicroscopy 160, 168–181 [http://dx.doi.org/10.1016%2Fj.ultramic.2015.10.014 doi:10.1016%2Fj.ultramic.2015.10.014].
-
-Stauffer, B., and Powers, T. (2015). Target of rapamycin signaling mediates vacuolar fission caused by endoplasmic reticulum stress in S. cerevisiae. Mol. Biol. Cell mbc.E15–06 – 0344 [http://dx.doi.org/10.1091%2Fmbc.E15-06-0344 doi:10.1091%2Fmbc.E15-06-0344].
-
-Hankins, H.M., Sere, Y.Y., Diab, N.S., Menon, A.K., and Graham, T.R. (2015). Phosphatidylserine translocation at the yeast trans-Golgi network regulates protein sorting into exocytic vesicles. Mol. Biol. Cell mbc.E15–07 – 0487 [http://dx.doi.org/10.1091%2Fmbc.E15-07-0487 doi:10.1091%2Fmbc.E15-07-0487].
-
-Yu, Y.H., Narayanan, G., Sankaran, S., Ramasamy, S., Chan, S.Y., Lin, S., Chen, J., Yang, H., Srivats, H., and Ahmed, S. (2015). Purification, Visualization, and Molecular Signature of Neural Stem Cells. Stem Cells and Development [http://dx.doi.org/10.1089%2Fscd.2015.0190 doi:10.1089%2Fscd.2015.0190].
-
-Bajcsy, P., Cardone, A., Chalfoun, J., Halter, M., Juba, D., Kociolek, M., Majurski, M., Peskin, A., Simon, C., Simon, M., et al. (2015). Survey statistics of automated segmentations applied to optical imaging of mammalian cells. BMC Bioinformatics 16, 330 [http://dx.doi.org/10.1186%2Fs12859-015-0762-2 doi:10.1186%2Fs12859-015-0762-2].
-
-Desmarais, S.M., Tropini, C., Miguel, A., Cava, F., Monds, R.D., Pedro, M.A. de, and Huang, K.C. (2015). High-throughput, Highly Sensitive Analyses of Bacterial Morphogenesis Using Ultra Performance Liquid Chromatography. J. Biol. Chem. jbc.M115.661660 [http://dx.doi.org/10.1074%2Fjbc.M115.661660 doi:10.1074%2Fjbc.M115.661660].
-
-Marquardt, L.M., Ee, X., Iyer, N., Hunter, D., Mackinnon, S.E., Wood, M.D., and Sakiyama-Elbert, S.E. (2015). Finely Tuned Temporal and Spatial Delivery of GDNF Promotes Enhanced Nerve Regeneration in a Long Nerve Defect Model. Tissue Engineering Part A 21, 2852–2864 [http://dx.doi.org/10.1089%2Ften.tea.2015.0311 doi:10.1089%2Ften.tea.2015.0311] .
-
-Lanier, M.H., Kim, T., and Cooper, J.A. (2015). CARMIL2 is a Novel Molecular Connection between Vimentin and Actin Essential for Cell Migration and Invadopodia Formation. Mol. Biol. Cell mbc.E15–08 – 0552 [http://dx.doi.org/10.1091%2Fmbc.E15-08-0552 doi:10.1091%2Fmbc.E15-08-0552].
-
-Lin, Y., Sohn, C.H., Dalal, C.K., Cai, L., and Elowitz, M.B. (2015). Combinatorial gene regulation by modulation of relative pulse timing. Nature 527, 54–58 [http://dx.doi.org/10.1038%2Fnature15710 doi:10.1038%2Fnature15710].
-
-Devraj, K., Poznanovic, S., Spahn, C., Schwall, G., Harter, P.N., Mittelbronn, M., Antoniello, K., Paganetti, P., Muhs, A., Heilemann, M., et al. (2015). BACE-1 is expressed in the blood–brain barrier endothelium and is upregulated in a murine model of Alzheimer’s disease. J Cereb Blood Flow Metab 0271678X15606463 [http://dx.doi.org/10.1177%2F0271678X15606463 doi:10.1177%2F0271678X15606463].
-
-Feutlinske, F., Browarski, M., Ku, M.-C., Trnka, P., Waiczies, S., Niendorf, T., Stallcup, W.B., Glass, R., Krause, E., and Maritzen, T. (2015). Stonin1 mediates endocytosis of the proteoglycan NG2 and regulates focal adhesion dynamics and cell motility. Nat Commun 6, 8535 [http://dx.doi.org/10.1038%2Fncomms9535 doi:10.1038%2Fncomms9535].
-
-Geyer, E.A., Burns, A., Lalonde, B.A., Ye, X., Piedra, F.-A., Huffaker, T.C., and Rice, L.M. (2015). A mutation uncouples the tubulin conformational and GTPase cycles, revealing allosteric control of microtubule dynamics. eLife Sciences e10113 [http://dx.doi.org/10.7554%2FeLife.10113 doi:10.7554%2FeLife.10113].
-
-Bosse, J.B., Hogue, I.B., Feric, M., Thiberge, S.Y., Sodeik, B., Brangwynne, C.P., and Enquist, L.W. (2015). Remodeling nuclear architecture allows efficient transport of herpesvirus capsids by diffusion. PNAS 112, E5725–E5733 [http://dx.doi.org/10.1073%2Fpnas.1513876112 doi:10.1073%2Fpnas.1513876112].
-
-T. Brown, A., D. Vladescu, I., Dawson, A., Vissers, T., Schwarz-Linek, J., S. Lintuvuori, J., and K. Poon, W.C. (2016). Swimming in a crystal. Soft Matter 12, 131–140 [http://dx.doi.org/10.1039%2FC5SM01831E doi:10.1039%2FC5SM01831E].
-
-Bosse, J.B., Hogue, I.B., Feric, M., Thiberge, S.Y., Sodeik, B., Brangwynne, C.P., and Enquist, L.W. (2015). Remodeling nuclear architecture allows efficient transport of herpesvirus capsids by diffusion. PNAS 112, E5725–E5733 [http://dx.doi.org/10.1073%2Fpnas.1513876112 doi:10.1073%2Fpnas.1513876112].
-
-Liu, X., Qu, X., Jiang, Y., Chang, M., Zhang, R., Wu, Y., Fu, Y., and Huang, S. (2015). Profilin Regulates Apical Actin Polymerization to Control Polarized Pollen Tube Growth. Molecular Plant 8, 1694–1709 [http://dx.doi.org/10.1016%2Fj.molp.2015.09.013 doi:10.1016%2Fj.molp.2015.09.013].
-
-Puah, W.C., and Wasser, M. Live imaging of muscles in Drosophila metamorphosis: Towards high-throughput gene identification and function analysis. Methods [http://dx.doi.org/10.1016/j.ymeth.2015.09.028 doi:10.1016/j.ymeth.2015.09.028].
-
-Hadad, U., Thauland, T.J., Martinez, O.M., Butte, M.J., Porgador, A., and Krams, S.M. (2015). NKp46 clusters at the immune synapse and regulates NK cell polarization. Front. Immunol. 495 [http://dx.doi.org/10.3389%2Ffimmu.2015.00495 doi:10.3389%2Ffimmu.2015.00495].
-
-Berenguer, J.R., Pichel, J.G., Giménez, N., Lalinde, E., Moreno, M.T., and Piñeiro-Hermida, S. (2015). Luminescent pentafluorophenyl-cycloplatinated complexes: synthesis, characterization, photophysics, cytotoxicity and cellular imaging. Dalton Trans. 44, 18839–18855 [http://dx.doi.org/10.1039%2FC5DT02721G doi:10.1039%2FC5DT02721G].
-
-Jonas, R., Klusch, A., Schmelz, M., Petersen, M., and Carr, R.W. (2015). Assessment of TTX-s and TTX-r Action Potential Conduction along Neurites of NGF and GDNF Cultured Porcine DRG Somata. PLoS ONE 10, e0139107 [http://dx.doi.org/10.1371%2Fjournal.pone.0139107 doi:10.1371%2Fjournal.pone.0139107].
-
-Zou, W., Yadav, S., DeVault, L., Jan, Y.N., and Sherwood, D.R. (2015). RAB-10-Dependent Membrane Transport Is Required for Dendrite Arborization. PLoS Genet 11, e1005484 [http://dx.doi.org/10.1371%2Fjournal.pgen.1005484 doi:10.1371%2Fjournal.pgen.1005484].
-
-Gimber, N., Tadeus, G., Maritzen, T., Schmoranzer, J., and Haucke, V. (2015). Diffusional spread and confinement of newly exocytosed synaptic vesicle proteins. Nat Commun 6, 8392 [http://dx.doi.org/10.1038%2Fncomms9392 doi:10.1038%2Fncomms9392].
-
-Snijders, T., Smeets, J.S.J., van Kranenburg, J., Kies, A.K., van Loon, L.J.C., and Verdijk, L.B. (2015). Changes in myonuclear domain size do not precede muscle hypertrophy during prolonged resistance-type exercise training. Acta Physiol n/a – n/a [http://dx.doi.org/10.1111%2Fapha.12609 doi:10.1111%2Fapha.12609].
-
-Walck-Shannon, E., Reiner, D., and Hardin, J. (2015). Polarized Rac-dependent protrusions drive epithelial intercalation in the embryonic epidermis of C. elegans. Development dev.127597 [http://dx.doi.org/10.1242%2Fdev.127597 doi:10.1242%2Fdev.127597].
-
-Lukacs, V., Mathur, J., Mao, R., Bayrak-Toydemir, P., Procter, M., Cahalan, S.M., Kim, H.J., Bandell, M., Longo, N., Day, R.W., et al. (2015). Impaired PIEZO1 function in patients with a novel autosomal recessive congenital lymphatic dysplasia. Nat Commun 6, 8329 [http://dx.doi.org/10.1038%2Fncomms9329 doi:10.1038%2Fncomms9329].
-
-Mary, H., Fouchard, J., Gay, G., Reyes, C., Gauthier, T., Gruget, C., Pécréaux, J., Tournier, S., and Gachet, Y. (2015). Fission yeast kinesin-8 controls chromosome congression independently of oscillations. J Cell Sci 128, 3720–3730 [http://dx.doi.org/10.1242%2Fjcs.160465 doi:10.1242%2Fjcs.160465].
-
-Martínez, L.E., Hardcastle, J.M., Wang, J., Pincus, Z., Tsang, J., Hoover, T.R., Bansil, R., and Salama, N.R. (2016). Helicobacter pylori strains vary cell shape and flagellum number to maintain robust motility in viscous environments. Molecular Microbiology 99, 88–110 [http://dx.doi.org/10.1111%2Fmmi.13218 doi:10.1111%2Fmmi.13218].
-
-Paul, N.R., Allen, J.L., Chapman, A., Morlan-Mairal, M., Zindy, E., Jacquemet, G., Ama, L.F. del, Ferizovic, N., Green, D.M., Howe, J.D., et al. (2015). α5β1 integrin recycling promotes Arp2/3-independent cancer cell invasion via the formin FHOD3. J Cell Biol 210, 1013–1031 [http://dx.doi.org/10.1083%2Fjcb.201502040 doi:10.1083%2Fjcb.201502040].
-
-Bhattacharjee, S. (2015). Emerging trend of advanced image analysis in nanomedicine. Nanomedicine 10, 2801–2804 [http://dx.doi.org/10.2217%2Fnnm.15.121 doi:10.2217%2Fnnm.15.121].
-
-Wendykier, P., Borucki, B., and Nowinski, K.S. (2015). Large Java arrays and their applications. In 2015 International Conference on High Performance Computing Simulation (HPCS), pp. 460–467 [http://dx.doi.org/10.1109%2FHPCSim.2015.7237077 doi:10.1109%2FHPCSim.2015.7237077].
-
-Lloyd, D.P., and Allen, R.J. (2015). Competition for space during bacterial colonization of a surface. Journal of The Royal Society Interface 12, 20150608 [http://dx.doi.org/10.1098%2Frsif.2015.0608 doi:10.1098%2Frsif.2015.0608].
-
-Windschüttl, S., Nettersheim, D., Schlatt, S., Huber, A., Welter, H., Schwarzer, J.U., Köhn, F.M., Schorle, H., and Mayerhofer, A. (2014). Are testicular mast cells involved in the regulation of germ cells in man? Andrology 2, 615–622 [http://dx.doi.org/10.1111%2Fj.2047-2927.2014.00227.x doi:10.1111%2Fj.2047-2927.2014.00227.x ].
-
-Ingaramo, M., York, A.G., Andrade, E.J., Rainey, K., and Patterson, G.H. (2015). Two-photon-like microscopy with orders-of-magnitude lower illumination intensity via two-step fluorescence. Nat Commun 6, 8184 [http://dx.doi.org/10.1038%2Fncomms9184 doi:10.1038%2Fncomms9184].
-
-Watanabe, T., Kakeno, M., Matsui, T., Sugiyama, I., Arimura, N., Matsuzawa, K., Shirahige, A., Ishidate, F., Nishioka, T., Taya, S., et al. (2015). TTBK2 with EB1/3 regulates microtubule dynamics in migrating cells through KIF2A phosphorylation. J Cell Biol 210, 737–751 [http://dx.doi.org/10.1083%2Fjcb.201412075 doi:10.1083%2Fjcb.201412075].
-
-Uchida, A., Monsma, P.C., Fenn, J.D., and Brown, A. Live-cell imaging of neurofilament transport in cultured neurons. B.-M. in C. Biology, ed. (Academic Press), [http://www.sciencedirect.com/science/article/pii/S0091679X15001624 link].
-
-Grant, M.P., Cavanaugh, A., and Breitwieser, G.E. (2015). 14-3-3 Proteins Buffer Intracellular Calcium Sensing Receptors to Constrain Signaling. PLoS ONE 10, e0136702 [http://dx.doi.org/10.1371%2Fjournal.pone.0136702 doi:10.1371%2Fjournal.pone.0136702].
-
-Nirschl, J.J., and Holzbaur, E.L.F. Live-cell imaging of retrograde transport initiation in primary neurons. B.-M. in C. Biology, ed. (Academic Press), [http://www.sciencedirect.com/science/article/pii/S0091679X15001429 link].
-
-Pajović, J.D., Dojčilović, R., Božanić, D.K., Kaščáková, S., Réfrégiers, M., Dimitrijević-Branković, S., Vodnik, V.V., Milosavljević, A.R., Piscopiello, E., Luyt, A.S., et al. (2015). Tryptophan-functionalized gold nanoparticles for deep UV imaging of microbial cells. Colloids and Surfaces B: Biointerfaces 135, 742–750 [http://dx.doi.org/10.1016%2Fj.colsurfb.2015.08.050 doi:10.1016%2Fj.colsurfb.2015.08.050].
-
-Wabnig, S., Liewald, J.F., Yu, S., and Gottschalk, A. (2015). High-Throughput All-Optical Analysis of Synaptic Transmission and Synaptic Vesicle Recycling in Caenorhabditis elegans. PLoS ONE 10, e0135584 [http://dx.doi.org/10.1371/journal.pone.0135584 doi:journal.pone.0135584].
-
-Chazeau, A., Katrukha, E.A., Hoogenraad, C.C., and Kapitein, L.C. Studying neuronal microtubule organization and microtubule-associated proteins using single molecule localization microscopy. B.-M. in C. Biology, ed. (Academic Press),[http://www.sciencedirect.com/science/article/pii/S0091679X15001570 link].
-
-Khayatan, B., Meeks, J.C., and Risser, D.D. (2015). Evidence that a modified type IV pilus-like system powers gliding motility and polysaccharide secretion in filamentous cyanobacteria. Molecular Microbiology 98, 1021–1036 [http://dx.doi.org/10.1111%2Fmmi.13205 doi:10.1111%2Fmmi.13205].
-
-Ellefsen, K.L., Dynes, J.L., and Parker, I. (2015). Spinning-Spot Shadowless TIRF Microscopy. PLoS ONE 10, e0136055 [http://dx.doi.org/10.1371%2Fjournal.pone.0136055 doi:10.1371%2Fjournal.pone.0136055].
-
-Dietrich, M.G., Zuellig, R.A., Spinas, G.A., Lehmann, R., Tschopp, O., and Niessen, M. (2015). Specific and redundant roles of PKBα/AKT1 and PKBβ/AKT2 in human pancreatic islets. Experimental Cell Research 338, 82–88 [http://dx.doi.org/10.1016%2Fj.yexcr.2015.08.008 doi:10.1016%2Fj.yexcr.2015.08.008].
-
-Adames, N.R., Schuck, P.L., Chen, K.C., Murali, T.M., Tyson, J.J., and Peccoud, J. (2015). Experimental testing of a new integrated model of the budding yeast START transition. Mol. Biol. Cell [http://dx.doi.org/10.1091%2Fmbc.E15-06-0358 doi:mbc.E15–06 – 0358].
-
-Reubold, T.F., K. Faelber, N. Plattner, Y. Posor, K. Ketel, U. Curth, J. Schlegel, R. Anand, D.J. Manstein, F. Noé, V. Haucke, O. Daumke, and S. Eschenburg. 2015. Crystal structure of the dynamin tetramer. Nature. [http://dx.doi.org/10.1038/nature14880 doi:10.1038/nature14880].
-
-Tanenbaum, M.E., N. Stern-Ginossar, J.S. Weissman, and R.D. Vale. 2015. Regulation of mRNA translation during mitosis. eLife. 4. [http://dx.doi.org/10.7554/eLife.07957 doi:10.7554/eLife.07957].
-
-Hansen, S.D., and R.D. Mullins. 2015. Lamellipodin promotes actin assembly by clustering Ena/VASP proteins and tethering them to actin filaments. eLife Sciences. 4:e06585. [http://dx.doi.org/10.7554/eLife.06585 doi:10.7554/eLife.06585].
-
-Gonzalez-Rodriguez, D., S. Sart, A. Babataheri, D. Tareste, A.I. Barakat, C. Clanet, and J. Husson. 2015. Elastocapillary Instability in Mitochondrial Fission. Phys. Rev. Lett. 115:088102. [http://dx.doi.org/10.1103/PhysRevLett.115.088102 doi:10.1103/PhysRevLett.115.088102].
-
-English, B.P., and R.H. Singer. 2015. A three-camera imaging microscope for high-speed single-molecule tracking and super-resolution imaging in living cells. 955008–955008–6.
-
-Ellison, D., A. Mugler, M. Brennan, S.H. Lee, R. Huebner, E. Shamir, L.A. Woo, J. Kim, P. Amar, I. Nemenman, A.J. Ewald, and A. Levchenko. 2015. Cell-cell communication enhances the capacity of cell ensembles to sense shallow gradients during morphogenesis. arXiv:1508.04692 [q-bio].
-
-Hinchcliffe, E.H., and E.H. Hinchcliffe. 2015. Video Microscopy, Video Microscopy. In eLS, eLS. John Wiley & Sons, Ltd, John Wiley & Sons, Ltd.
-
-Großmann, M., A. Klick, C. Lemke, J. Falke, M. Black, J. Fiutowski, A.J. Goszczak, E. Sobolewska, A.U. Zillohu, M.K. Hedayati, H.-G. Rubahn, F. Faupel, M. Elbahri, and M. Bauer. 2015. Light-Triggered Control of Plasmonic Refraction and Group Delay by Photochromic Molecular Switches. ACS Photonics. 150827100303003. [http://dx.doi.org/10.1021/acsphotonics.5b00315 doi:10.1021/acsphotonics.5b00315].
-
-Lampe, A., G. Tadeus, and J. Schmoranzer. 2015. Spectral demixing avoids registration errors and reduces noise in multicolor localization-based super-resolution microscopy. Methods Appl. Fluoresc. 3:034006. [http://dx.doi.org/10.1088/2050-6120/3/3/034006 doi:10.1088/2050-6120/3/3/034006].
-
-Hedde, P.N., S. Ranjit, and E. Gratton. 2015. 3D fluorescence anisotropy imaging using selective plane illumination microscopy. Opt. Express, OE. 23:22308–22317. [http://dx.doi.org/10.1364/OE.23.022308 doi:10.1364/OE.23.022308].
-
-Mikhaylova, M., B.M.C. Cloin, K. Finan, R. van den Berg, J. Teeuw, M.M. Kijanka, M. Sokolowski, E.A. Katrukha, M. Maidorn, F. Opazo, S. Moutel, M. Vantard, F. Perez, P.M.P. van B. en Henegouwen, C.C. Hoogenraad, H. Ewers, and L.C. Kapitein. 2015. Resolving bundled microtubules using anti-tubulin nanobodies. Nature Communications. 6. [http://dx.doi.org/10.1038/ncomms8933 doi:10.1038/ncomms8933].
-
-Melikov, K., A. Hara, K. Yamoah, E. Zaitseva, E. Zaitsev, and L. Chernomordik. 2015. Efficient entry of cell-penetrating peptide nona-arginine into adherent cells involves a transient increase in intracellular calcium. Biochemical Journal. BJ20150272. [http://dx.doi.org/10.1042/BJ20150272 doi:10.1042/BJ20150272].
-
-Cong, Y., S. Katipamula, T. Geng, S.A. Prost, K. Tang, and R.T. Kelly. 2015. Electrokinetic sample preconcentration and hydrodynamic sample injection for microchip electrophoresis using a pneumatic microvalve. ELECTROPHORESIS.  [http://dx.doi.org/10.1002/elps.201500286 doi:10.1002/elps.201500286].
-
-Hu, Z., I. Welch, X. Yuan, S.I. Pollmann, H.N. Nikolov, and D.W. Holdsworth. 2015. Quantification of mouse in vivo whole-body vibration amplitude from motion-blur using x-ray imaging. Phys. Med. Biol. 60:6423. [http://dx.doi.org/10.1088/0031-9155/60/16/6423 doi:10.1088/0031-9155/60/16/6423].
-
-S. Hersey, J., S. T. Yohe, and M. W. Grinstaff. 2015. Poly(ε-caprolactone) microfiber meshes for repeated oil retrieval. Environmental Science: Water Research & Technology. [http://dx.doi.org/10.1039/C5EW00107B doi:10.1039/C5EW00107B].
-
-Tachikawa, T., I. Karimata, and Y. Kobori. 2015. Surface Charge Trapping in Organolead Halide Perovskites Explored by Single-Particle Photoluminescence Imaging. The Journal of Physical Chemistry Letters. 6:3195–3201. [http://dx.doi.org/10.1021/acs.jpclett.5b01566 doi:10.1021/acs.jpclett.5b01566].
-
-Thiyagarajan, S., E.L. Munteanu, R. Arasada, T.D. Pollard, and B. O’Shaughnessy. 2015. The fission yeast cytokinetic contractile ring regulates septum shape and closure. J Cell Sci. jcs.166926. [http://dx.doi.org/10.1242/jcs.166926 doi:10.1242/jcs.166926].
-
-van der Ploeg, R., S.T. Goudelis, and T. den Blaauwen. 2015. Validation of FRET Assay for the Screening of Growth Inhibitors of Escherichia coli Reveals Elongasome Assembly Dynamics. International Journal of Molecular Sciences. 16:17637–17654. [http://dx.doi.org/10.3390/ijms160817637 doi:10.3390/ijms160817637].
-
-Wong, Y.-H., C.-M. Lee, W. Xie, B. Cui, and M. Poo. 2015. Activity-dependent BDNF release via endocytic pathways is regulated by synaptotagmin-6 and complexin. PNAS. 112:E4475–E4484. [http://dx.doi.org/10.1073/pnas.1511830112 doi:10.1073/pnas.1511830112].
-
-Chung, H.K., C.L. Jacobs, Y. Huo, J. Yang, S.A. Krumm, R.K. Plemper, R.Y. Tsien, and M.Z. Lin. 2015. Tunable and reversible drug control of protein production via a self-excising degron. Nature Chemical Biology. 11:713–720. [http://dx.doi.org/10.1038/nchembio.1869 doi:10.1038/nchembio.1869].
-
-Durandau, E., D. Aymoz, and S. Pelet. 2015. Dynamic single cell measurements of kinase activity by synthetic kinase activity relocation sensors. BMC Biology. 13:55. [http://dx.doi.org/10.1186/s12915-015-0163-z doi:10.1186/s12915-015-0163-z].
-
-Litthauer, S., M.W. Battle, T. Lawson, and M.A. Jones. 2015. Phototropins maintain robust circadian oscillation of PSII operating efficiency under blue light. The Plant Journal. 83:1034–1045. [http://dx.doi.org/10.1111/tpj.12947 doi:10.1111/tpj.12947].
-
-Astorga, G., J. Bao, A. Marty, G.J. Augustine, R. Franconville, A. Jalil, J. Bradley, and I. Llano. 2015. An excitatory GABA loop operating in vivo. Frontiers in Cellular Neuroscience. 9. [http://dx.doi.org/10.3389/fncel.2015.00275 doi:10.3389/fncel.2015.00275].
-
-Placencio, V.R., A. Ichimura, T. Miyata, and Y.A. DeClerck. 2015. Small Molecule Inhibitors of Plasminogen Activator Inhibitor-1 Elicit Anti-Tumorigenic and Anti-Angiogenic Activity. PLOS ONE. 10:e0133786.  [http://dx.doi.org/10.1371/journal.pone.0133786 doi:10.1371/journal.pone.0133786].
-
-Joshi, G.N., A.M. Goetjen, and D.A. Knecht. 2015. Silica particles cause NADPH oxidase independent ROS generation and transient phagolysosomal leakage. Mol. Biol. Cell. mbc.E15–03–0126. [http://dx.doi.org/10.1091/mbc.E15-03-0126 doi:10.1091/mbc.E15-03-0126].
-
-Strale, P.-O., L. Duchesne, G. Peyret, L. Montel, T. Nguyen, E. Png, R. Tampé, S. Troyanovsky, S. Hénon, B. Ladoux, and R.-M. Mège. 2015. The formation of ordered nanoclusters controls cadherin anchoring to actin and cell–cell contact fluidity. J Cell Biol. 210:333–346. [http://dx.doi.org/10.1083/jcb.201410111 doi:10.1083/jcb.201410111].
-
-Hogan, B., A. Babataheri, Y. Hwang, A.I. Barakat, and J. Husson. 2015. Characterizing Cell Adhesion by Using Micropipette Aspiration. Biophysical Journal. 109:209–219. [http://dx.doi.org/10.1016/j.bpj.2015.06.015 doi:10.1016/j.bpj.2015.06.015].
-
-Klementieva, N.V., N.G. Bozhanova, N.M. Mishina, E.V. Zagaynova, K.A. Lukyanov, and A.S. Mishin. 2015. Common fluorescent proteins for single-molecule localization microscopy. International Society for Optics and Photonics. 953609–953609–6.
-
-Özel, T., S. White, E. Nguyen, A. Moy, N. Brenes, B. Choi, and T. Betancourt. 2015. Enzymatically activated near infrared nanoprobes based on amphiphilic block copolymers for optical detection of cancer. Lasers in Surgery and Medicine. 47:579–594. [http://dx.doi.org/10.1002/lsm.22396 doi:10.1002/lsm.22396].
-
-Resnick, A. 2015. Mechanical Properties of a Primary Cilium As Measured by Resonant Oscillation. Biophysical Journal. 109:18–25. [http://dx.doi.org/10.1016/j.bpj.2015.05.031 doi:10.1016/j.bpj.2015.05.031].
-
-Schindelin, J., C.T. Rueden, M.C. Hiner, and K.W. Eliceiri. 2015. The ImageJ ecosystem: An open platform for biomedical image analysis. Molecular Reproduction and Development. 82:518–529. [http://dx.doi.org/10.1002/mrd.22489 doi:10.1002/mrd.22489].
-
-Hwee Foo, Y., C. Spahn, H. Zhang, M. Heilemann, and L. J. Kenney. 2015. Single cell super-resolution imaging of E. coli OmpR during environmental stress. Integrative Biology. [http://dx.doi.org/10.1039/C5IB00077G doi:10.1039/C5IB00077G].
-
-Warren, S., A. Margineanu, M. Katan, C. Dunsby, and P. French. 2015. Homo-FRET Based Biosensors and Their Application to Multiplexed Imaging of Signalling Events in Live Cells. International Journal of Molecular Sciences. 16:14695–14716. [http://dx.doi.org/10.3390/ijms160714695 doi:10.3390/ijms160714695].
-
-Hol, F.J.H., B. Hubert, C. Dekker, and J.E. Keymer. 2015. Density-dependent adaptive resistance allows swimming bacteria to colonize an antibiotic gradient. The ISME Journal. [http://dx.doi.org/10.1038/ismej.2015.107 doi:10.1038/ismej.2015.107].
-
-Mattila, J.-P., A.V. Shnyrova, A.C. Sundborger, E.R. Hortelano, M. Fuhrmans, S. Neumann, M. Müller, J.E. Hinshaw, S.L. Schmid, and V.A. Frolov. 2015. A hemi-fission intermediate links two mechanistically distinct stages of membrane fission. Nature. 524:109–113. [http://dx.doi.org/10.1038/nature14509 doi:10.1038/nature14509].
-
-Jonsson, E., M. Yamada, R.D. Vale, and G. Goshima. 2015. Clustering of a kinesin-14 motor enables processive retrograde microtubule-based transport in plants. Nature Plants. 1:15087. [http://dx.doi.org/10.1038/nplants.2015.87 doi:10.1038/nplants.2015.87].
-
-Xiang, D., Q. Meng, H. Liu, M. Lan, and G. Wei. The study of a curcumin-resembling molecular probe for the pH-responsive fluorometric assay and application in cell imaging. Talanta. [http://dx.doi.org/10.1016/j.talanta.2015.05.066 doi:10.1016/j.talanta.2015.05.066].
-
-Thomas, A.S., A.M. Krikken, I.J. van der Klei, and C.P. Williams. 2015. Phosphorylation of Pex11p does not regulate peroxisomal fission in the yeast Hansenula polymorpha. Scientific Reports. 5. [http://dx.doi.org/10.1038/srep11493 doi:10.1038/srep11493].
-
-Saha, S., V. Prakash, S. Halder, K. Chakraborty, and Y. Krishnan. 2015. A pH-independent DNA nanodevice for quantifying chloride transport in organelles of living cells. Nature Nanotechnology. [http://dx.doi.org/10.1038/nnano.2015.130 doi:10.1038/nnano.2015.130].
-
-Milenkovic, L., L.E. Weiss, J. Yoon, T.L. Roth, Y.S. Su, S.J. Sahl, M.P. Scott, and W.E. Moerner. 2015. Single-molecule imaging of Hedgehog pathway protein Smoothened in primary cilia reveals binding events regulated by Patched1. PNAS. 201510094. [http://dx.doi.org/10.1073/pnas.1510094112 doi:10.1073/pnas.1510094112].
-
-Tan, C.W., Y. Hirokawa, and A.W. Burgess. 2015. Analysis of Wnt signalling dynamics during colon crypt development in 3D culture. Scientific Reports. 5. [http://dx.doi.org/10.1038/srep11036 doi:10.1038/srep11036].
-
-Biebricher, A.S., I. Heller, R.F.H. Roijmans, T.P. Hoekstra, E.J.G. Peterman, and G.J.L. Wuite. 2015. The impact of DNA intercalators on DNA and DNA-processing enzymes elucidated through force-dependent binding kinetics. Nature Communications. 6. [http://dx.doi.org/10.1038/ncomms8304 doi:10.1038/ncomms8304].
-
-Velsko, I.M., S.S. Chukkapalli, M.F. Rivera-Kweh, H. Chen, D. Zheng, I. Bhattacharyya, P.R. Gangula, A.R. Lucas, and L. Kesavalu. 2015. Fusobacterium nucleatum Alters Atherosclerosis Risk Factors and Enhances Inflammatory Markers with an Atheroprotective Immune Response in ApoE null Mice. PLOS ONE. 10:e0129795. [http://dx.doi.org/10.1371/journal.pone.0129795 doi:10.1371/journal.pone.0129795].
-
-Almada, P., S. Culley, and R. Henriques. PALM and STORM: Into large fields and high-throughput microscopy with sCMOS detectors. Methods. [http://dx.doi.org/10.1016/j.ymeth.2015.06.004 doi:10.1016/j.ymeth.2015.06.004].
-
-Hol, F.J.H., P. Galajda, R.G. Woolthuis, C. Dekker, and J.E. Keymer. 2015. The idiosyncrasy of spatial structure in bacterial competition. BMC Research Notes. 8. [http://dx.doi.org/10.1186/s13104-015-1169-x doi:10.1186/s13104-015-1169-x].
-
-Chen, A.H., D. Lubkowicz, V. Yeong, R.L. Chang, and P.A. Silver. 2015. Transplantability of a circadian clock to a noncircadian organism. Science Advances. 1:e1500358–e1500358. [http://dx.doi.org/10.1126/sciadv.1500358 doi:10.1126/sciadv.1500358].
-
-Farhat, N.M., M. Staal, A. Siddiqui, S.M. Borisov, S.S. Bucs, and J.S. Vrouwenvelder. 2015. Early non-destructive biofouling detection and spatial distribution: Application of oxygen sensing optodes. Water Research. 83:10–20. [http://dx.doi.org/10.1016/j.watres.2015.06.015 doi:10.1016/j.watres.2015.06.015].
-
-Kaplan, C., and H. Ewers. 2015. Optimized sample preparation for single-molecule localization-based superresolution microscopy in yeast. Nature Protocols. 10:1007–1021. [http://dx.doi.org/10.1038/nprot.2015.060 doi:10.1038/nprot.2015.060].
-
-Min, K.A., W.G. Rajeswaran, R. Oldenbourg, G. Harris, R.K. Keswani, M. Chiang, P. Rzeczycki, A. Talattof, M. Hafeez, R.W. Horobin, S.D. Larsen, K.A. Stringer, and G.R. Rosania. 2015. Massive Bioaccumulation and Self-Assembly of Phenazine Compounds in Live Cells. Advanced Science. n/a–n/a. [http://dx.doi.org/10.1002/advs.201500025 doi:10.1002/advs.201500025].
-
-Kurup, N., D. Yan, A. Goncharov, and Y. Jin. 2015. Dynamic Microtubules Drive Circuit Rewiring in the Absence of Neurite Remodeling. Current Biology. 25:1594–1605. [http://dx.doi.org/10.1016/j.cub.2015.04.061 doi:10.1016/j.cub.2015.04.061].
-
-Früh, S.M., I. Schoen, J. Ries, and V. Vogel. 2015. Molecular architecture of native fibronectin fibrils. Nature Communications. 6. [http://dx.doi.org/10.1038/ncomms8275 doi:10.1038/ncomms8275].
-
-Grunwald, A., M. Dahan, A. Giesbertz, A. Nilsson, L.K. Nyberg, E. Weinhold, T. Ambjörnsson, F. Westerlund, and Y. Ebenstein. 2015. Bacteriophage strain typing by rapid single molecule analysis. Nucl. Acids Res. gkv563. [http://dx.doi.org/10.1093/nar/gkv563 doi:10.1093/nar/gkv563].
-
-Ford, L., M. Crossley, T. Williams, J.R. Thorpe, L.C. Serpell, and G. Kemenes. 2015. Effects of Aβ exposure on long-term associative memory and its neuronal mechanisms in a defined neuronal network. Scientific Reports. 5. [http://dx.doi.org/10.1038/srep10614 doi:10.1038/srep10614].
-
-Vischer, N.O.E., J. Verheul, M. Postma, B. van den Berg van Saparoea, E. Galli, P. Natale, K. Gerdes, J. Luirink, W. Vollmer, M. Vicente, and T. den Blaauwen. 2015. Cell age dependent concentration of Escherichia coli divisome proteins analyzed with ImageJ and ObjectJ. Frontiers in Microbiology. 6. [http://dx.doi.org/10.3389/fmicb.2015.00586 doi:10.3389/fmicb.2015.00586].
-
-Van Swaay, D., T.-Y.D. Tang, S. Mann, and A. de Mello. 2015. Microfluidic Formation of Membrane‐Free Aqueous Coacervate Droplets in Water. Angewandte Chemie International Edition. [http://dx.doi.org/10.1002/anie.201502886 doi:10.1002/anie.201502886].
-
-Royer, L.A., M. Weigert, U. Günther, N. Maghelli, F. Jug, I.F. Sbalzarini, and E.W. Myers. 2015. ClearVolume: open-source live 3D visualization for light-sheet microscopy. Nat Meth. 12:480–481. [http://dx.doi.org/10.1038/nmeth.3372 doi:10.1038/nmeth.3372].
-
-Hedde, P.N., and E. Gratton. 2015. Active focus stabilization for upright selective plane illumination microscopy. Optics Express. 23:14707. [http://dx.doi.org/10.1364/OE.23.014707 [http://dx.doi.org/doi:10.1364/OE.23.014707].
-
-McQuilken, M., S.B. Mehta, A. Verma, G. Harris, R. Oldenbourg, and A.S. Gladfelter. Polarized Fluorescence Microscopy to Study Cytoskeleton Assembly and Organization in Live Cells. Curr. Protoc. Cell Biol. [http://dx.doi.org/10.1002/0471143030.cb0429s67 [http://dx.doi.org/doi:10.1002/0471143030.cb0429s67].
-
-Yin, J., A. Zhang, C. Dong, and J. Ren. An aptamer-based single particle method for sensitive detection of thrombin using fluorescent quantum dots as labeling probes. Talanta. [http://dx.doi.org/10.1016/j.talanta.2015.05.034 doi:10.1016/j.talanta.2015.05.034].
-
-Zhou, C.Y., H. Wu, and N. Devaraj. 2015. Rapid Access to Phospholipid Analogs Using Thiol-Yne Chemistry. Chem. Sci. [http://dx.doi.org/10.1039/C5SC00653H doi:10.1039/C5SC00653H].
-
-Lu, V.B., S.R. Ikeda, and H.L. Puhl. 2015. A 3.7 kb Fragment of the Mouse Scn10a Gene Promoter Directs Neural Crest But Not Placodal Lineage EGFP Expression in a Transgenic Animal. J. Neurosci. 35:8021–8034. [http://dx.doi.org/10.1523/JNEUROSCI.0214-15.2015 doi:10.1523/JNEUROSCI.0214-15.2015].
-
-Trivedi, V., T.V. Truong, L.A. Trinh, D.B. Holland, M. Liebling, and S.E. Fraser. 2015. Dynamic structure and protein expression of the live embryonic heart captured by 2-photon light sheet microscopy and retrospective registration. Biomedical Optics Express. 6:2056. [http://dx.doi.org/10.1364/BOE.6.002056 doi:10.1364/BOE.6.002056].
-
-Villegas-Mendoza, J., R. Cajal-Medrano, and H. Maske. 2015. INT (2-(4-Iodophenyl)-3-(4-Nitrophenyl)-5-(Phenyl) Tetrazolium Chloride) Is Toxic to Prokaryote Cells Precluding Its Use with Whole Cells as a Proxy for In Vivo Respiration. Microb Ecol. 1–8. [http://dx.doi.org/10.1007/s00248-015-0626-3 doi:10.1007/s00248-015-0626-3].
-
-Liang, X., X. Dong, D.G. Moerman, K. Shen, and X. Wang. 2015. Sarcomeres Pattern Proprioceptive Sensory Dendritic Endings through UNC-52/Perlecan in C. elegans. Developmental Cell. 33:388–400. [http://dx.doi.org/10.1016/j.devcel.2015.03.010 doi:10.1016/j.devcel.2015.03.010].
+---
+autogenerated: true
+title: Papers citing Micro-Manager
+layout: page
+---
+
+*Papers citing and/or acknowledging the use of Micro-Manager*
+\_\_NOTOC\_\_
+
+## 2015
+
+Bump, S. (2015). Microscopic characterization of functionalized paper as
+a platform for 3D cell cultures. Ph.D. Thesis. Technische Universität.
+
+Lin, S., Barrette, A.M., Chapin, C., Gonzales, L.W., Gonzalez, R.F.,
+Dobbs, L.G., and Ballard, P.L. (2015). Expression of human
+carcinoembryonic antigen‐related cell adhesion molecule 6 and alveolar
+progenitor cells in normal and injured lungs of transgenic mice.
+Physiological Reports 3, e12657
+[<doi:10.14814%2Fphy2.12657>](http://dx.doi.org/10.14814%2Fphy2.12657).
+
+Sevenler, D., and Selim Ünlü, M. (2015). Numerical techniques for
+high-throughput reflectance interference biosensing. Journal of Modern
+Optics 1–6
+[<doi:10.1080%2F09500340.2015.1117668>](http://dx.doi.org/10.1080%2F09500340.2015.1117668).
+
+Morozova, N., Sabantsev, A., Bogdanova, E., Fedorova, Y., Maikova, A.,
+Vedyaykin, A., Rodic, A., Djordjevic, M., Khodorkovskii, M., and
+Severinov, K. (2015). Temporal dynamics of methyltransferase and
+restriction endonuclease accumulation in individual cells after
+introducing a restriction-modification system. Nucl. Acids Res. gkv1490
+[<doi:10.1093%2Fnar%2Fgkv1490>](http://dx.doi.org/10.1093%2Fnar%2Fgkv1490).
+
+Will, C., Messlinger, K., and Fischer, M.J.M. (2016). Vessel diameter
+measurements at the medullary brainstem in vivo as an index of
+trigeminal activity. Brain Research 1632, 51–57
+[<doi:10.1016%2Fj.brainres.2015.12.013>](http://dx.doi.org/10.1016%2Fj.brainres.2015.12.013).
+
+Bazin, D., Jouanneau, C., Bertazzo, S., Sandt, C., Dessombz, A.,
+Réfrégiers, M., Dumas, P., Frederick, J., Haymann, J.-P., Letavernier,
+E., et al. Combining field effect scanning electron microscopy, deep UV
+fluorescence, Raman, classical and synchrotron radiation Fourier
+transform Infra-Red Spectroscopy in the study of crystal-containing
+kidney biopsies. Comptes Rendus Chimie
+[<doi:10.1016%2Fj.crci.2015.03.001>](http://dx.doi.org/10.1016%2Fj.crci.2015.03.001).
+
+Urban, N., Wang, L., Kwiek, S., Rademann, J., Kuebler, W.M., and
+Schaefer, M. (2016). Identification and Validation of Larixyl Acetate as
+a Potent TRPC6 Inhibitor. Mol Pharmacol 89, 197–213
+[<doi:10.1124%2Fmol.115.100792>](http://dx.doi.org/10.1124%2Fmol.115.100792)
+.
+
+Cinquin, B., Maigre, L., Pinet, E., Chevalier, J., Stavenger, R.A.,
+Mills, S., Réfrégiers, M., and Pagès, J.-M. (2015). Microspectrometric
+insights on the uptake of antibiotics at the single bacterial cell
+level. Scientific Reports 5, 17968
+[<doi:10.1038%2Fsrep17968>](http://dx.doi.org/10.1038%2Fsrep17968).
+
+Yun, K., Lee, H., Bang, H., and Li Jeon, N. (2015). QR-on-a-chip:
+Computer-recognizable micro-pattern engraved microfluidic device for
+high-throughput image acquisition. Lab on a Chip
+[<doi:10.1039%2FC5LC01350J>](http://dx.doi.org/10.1039%2FC5LC01350J).
+
+Dudek, M., Gossan, N., Yang, N., Im, H.-J., Ruckshanthi, J.P.D.,
+Yoshitane, H., Li, X., Jin, D., Wang, P., Boudiffa, M., et al. (2015).
+The chondrocyte clock gene Bmal1 controls cartilage homeostasis and
+integrity. J Clin Invest 126, 0–0
+[<doi:10.1172%2FJCI82755>](http://dx.doi.org/10.1172%2FJCI82755).
+
+Smith, A.J., and Verkman, A.S. (2015). Superresolution Imaging of
+Aquaporin-4 Cluster Size in Antibody-Stained Paraffin Brain Sections.
+Biophysical Journal 109, 2511–2522
+[<doi:10.1016%2Fj.bpj.2015.10.047>](http://dx.doi.org/10.1016%2Fj.bpj.2015.10.047).
+
+Lee, C., Roberts, S.E., and Gladfelter, A.S. Quantitative spatial
+analysis of transcripts in multinucleate cells using single-molecule
+FISH. Methods
+[<doi:10.1016%2Fj.ymeth.2015.12.007>](http://dx.doi.org/10.1016%2Fj.ymeth.2015.12.007).
+
+Handly, L.N., Pilko, A., and Wollman, R. (2015). Paracrine communication
+maximizes cellular response fidelity in wound signaling. eLife Sciences
+4, e09652
+[<doi:10.7554%2FeLife.09652>](http://dx.doi.org/10.7554%2FeLife.09652).
+
+Pattanayak, G.K., Lambert, G., Bernat, K., and Rust, M.J. (2015).
+Controlling the Cyanobacterial Clock by Synthetically Rewiring
+Metabolism. Cell Reports 13, 2362–2367
+[<doi:10.1016%2Fj.celrep.2015.11.031>](http://dx.doi.org/10.1016%2Fj.celrep.2015.11.031).
+
+Kath, J.E., Chang, S., Scotland, M.K., Wilbertz, J.H., Jergic, S.,
+Dixon, N.E., Sutton, M.D., and Loparo, J.J. (2015). Exchange between
+Escherichia coli polymerases II and III on a processivity clamp. Nucl.
+Acids Res. gkv1375
+[<doi:10.1093%2Fnar%2Fgkv1375>](http://dx.doi.org/10.1093%2Fnar%2Fgkv1375).
+
+Croft, W., Reusch, K., Tilunaite, A., Russell, N.A., Thul, R., and
+Bellamy, T.C. (2015). Probabilistic encoding of stimulus strength in
+astrocyte global calcium signals. Glia n/a – n/a
+[<doi:10.1002%2Fglia.22947>](http://dx.doi.org/10.1002%2Fglia.22947).
+
+Day, C.R., Chen, H., Coulon, A., Meier, J.L., and Larson, D.R.
+High-throughput single-molecule screen for small-molecule perturbation
+of splicing and transcription kinetics. Methods
+[<doi:10.1016%2Fj.ymeth.2015.11.025>](http://dx.doi.org/10.1016%2Fj.ymeth.2015.11.025).
+
+Stephen, T.-L., Higgs, N.F., Sheehan, D.F., Awabdh, S.A.,
+López-Doménech, G., Arancibia-Carcamo, I.L., and Kittler, J.T. (2015).
+Miro1 Regulates Activity-Driven Positioning of Mitochondria within
+Astrocytic Processes Apposed to Synapses to Regulate Intracellular
+Calcium Signaling. J. Neurosci. 35, 15996–16011
+[<doi:10.1523%2FJNEUROSCI.2068-15.2015>](http://dx.doi.org/10.1523%2FJNEUROSCI.2068-15.2015).
+
+Gu, X., Li, A., Liu, S., Lin, L., Xu, S., Zhang, P., Li, S., Li, X.,
+Tian, B., Zhu, X., et al. (2015). MicroRNA124 Regulated Neurite
+Elongation by Targeting OSBP. Mol Neurobiol 1–9
+[<doi:10.1007%2Fs12035-015-9540-4>](http://dx.doi.org/10.1007%2Fs12035-015-9540-4).
+
+Zhao, Z., Yang, Y., Zeng, Y., and He, M. (2016). A microfluidic
+ExoSearch chip for multiplexed exosome detection towards blood-based
+ovarian cancer diagnosis. Lab on a Chip
+[<doi:10.1039%2FC5LC01117E>](http://dx.doi.org/10.1039%2FC5LC01117E).
+
+Smith, G.B., Whitney, D.E., and Fitzpatrick, D. (2015). Modular
+Representation of Luminance Polarity in the Superficial Layers of
+Primary Visual Cortex. Neuron 88, 805–818
+[<doi:10.1016%2Fj.neuron.2015.10.019>](http://dx.doi.org/10.1016%2Fj.neuron.2015.10.019).
+
+Splitt, S.D., and Risser, D.D. (2015). The non-metabolizable sucrose
+analog sucralose is a potent inhibitor of hormogonium differentiation in
+the filamentous cyanobacterium Nostoc punctiforme. Arch Microbiol 1–11
+[<doi:10.1007%2Fs00203-015-1171-7>](http://dx.doi.org/10.1007%2Fs00203-015-1171-7).
+
+Lanier, M.H., McConnell, P., and Cooper, J.A. (2015). Cell Migration and
+Invadopodia Formation Require a Membrane-binding Domain of CARMIL2. J.
+Biol. Chem. jbc.M115.676882
+[<doi:10.1074%2Fjbc.M115.676882>](http://dx.doi.org/10.1074%2Fjbc.M115.676882).
+
+Smith, G.B., Whitney, D.E., and Fitzpatrick, D. (2015). Modular
+Representation of Luminance Polarity in the Superficial Layers of
+Primary Visual Cortex. Neuron 88, 805–818
+[<doi:10.1016%2Fj.neuron.2015.10.019>](http://dx.doi.org/10.1016%2Fj.neuron.2015.10.019).
+
+Shigeto, M., Ramracheya, R., Tarasov, A.I., Cha, C.Y., Chibalina, M.V.,
+Hastoy, B., Philippaert, K., Reinbothe, T., Rorsman, N., Salehi, A., et
+al. (2015). GLP-1 stimulates insulin secretion by PKC-dependent TRPM4
+and TRPM5 activation. J Clin Invest 125, 4714–4728
+[<doi:10.1172%2FJCI81975>](http://dx.doi.org/10.1172%2FJCI81975).
+
+Shekhar, S., Kerleau, M., Kühn, S., Pernier, J., Romet-Lemonne, G.,
+Jégou, A., and Carlier, M.-F. (2015). Formin and capping protein
+together embrace the actin filament in a menage a trois. Nat Commun 6,
+8730
+[<doi:10.1038%2Fncomms9730>](http://dx.doi.org/10.1038%2Fncomms9730).
+
+Ripple, D.C., and Hu, Z. (2015). Correcting the Relative Bias of Light
+Obscuration and Flow Imaging Particle Counters. Pharm Res 1–20
+[<doi:10.1007%2Fs11095-015-1817-9>](http://dx.doi.org/10.1007%2Fs11095-015-1817-9).
+
+Rost, B.R., Schneider, F., Grauel, M.K., Wozny, C., Bentz, C.G.,
+Blessing, A., Rosenmund, T., Jentsch, T.J., Schmitz, D., Hegemann, P.,
+et al. (2015). Optogenetic acidification of synaptic vesicles and
+lysosomes. Nat Neurosci 18, 1845–1852
+[<doi:10.1038%2Fnn.4161>](http://dx.doi.org/10.1038%2Fnn.4161).
+
+Hersey, J.S., Meller, A., and Grinstaff, M.W. (2015). Functionalized
+Nanofiber Meshes Enhance Immunosorbent Assays. Anal. Chem. 87,
+11863–11870
+[<doi:10.1021%2Facs.analchem.5b03386>](http://dx.doi.org/10.1021%2Facs.analchem.5b03386).
+
+Nosrati, R., Driouchi, A., Yip, C.M., and Sinton, D. (2015).
+Two-dimensional slither swimming of sperm within a micrometre of a
+surface. Nat Commun 6, 8703
+[<doi:10.1038%2Fncomms9703>](http://dx.doi.org/10.1038%2Fncomms9703).
+
+Hoera, C., Skadell, M.M., Pfeiffer, S.A., Pahl, M., Shu, Z., Beckert,
+E., and Belder, D. (2016). A chip-integrated highly variable thermal
+flow rate sensor. Sensors and Actuators B: Chemical 225, 42–49
+[<doi:10.1016%2Fj.snb.2015.11.009>](http://dx.doi.org/10.1016%2Fj.snb.2015.11.009).
+
+Huang, H., Alvarez, S., Bindbeutel, R.K., Shen, Z., Naldrett, M.J.,
+Evans, B.S., Briggs, S.P., Hicks, L.M., Kay, S.A., and Nusinow, D.A.
+(2015). Identification of evening complex associated proteins in
+Arabidopsis by affinity purification and mass spectrometry. Mol Cell
+Proteomics mcp.M115.054064
+[<doi:10.1074%2Fmcp.M115.054064>](http://dx.doi.org/10.1074%2Fmcp.M115.054064).
+
+Lenstra, T.L., Coulon, A., Chow, C.C., and Larson, D.R. (2015).
+Single-Molecule Imaging Reveals a Switch between Spurious and Functional
+ncRNA Transcription. Molecular Cell 60, 597–610
+[<doi:10.1016%2Fj.molcel.2015.09.028>](http://dx.doi.org/10.1016%2Fj.molcel.2015.09.028).
+
+Krieger, J.W., Singh, A.P., Bag, N., Garbe, C.S., Saunders, T.E.,
+Langowski, J., and Wohland, T. (2015). Imaging fluorescence (cross-)
+correlation spectroscopy in live cells and organisms. Nat. Protocols 10,
+1948–1974
+[<doi:10.1038%2Fnprot.2015.100>](http://dx.doi.org/10.1038%2Fnprot.2015.100).
+
+Acerbi, I., Cassereau, L., Dean, I., Shi, Q., Au, A., Park, C., Chen,
+Y.Y., Liphardt, J., Hwang, E.S., and Weaver, V.M. (2015). Human breast
+cancer invasion and aggression correlates with ECM stiffening and immune
+cell infiltration. Integr. Biol. 7, 1120–1134
+[<doi:10.1039%2FC5IB00040H>](http://dx.doi.org/10.1039%2FC5IB00040H).
+
+Romsey, N.R., Hou, Y., Rodriguez, L.L., and Schneider, I.C. (2013). The
+Number of Lines a Cell Contacts and Cell Contractility Drive the
+Efficiency of Contact Guidance. Cel. Mol. Bioeng. 7, 122–135
+[<doi:10.1007%2Fs12195-013-0299-2>](http://dx.doi.org/10.1007%2Fs12195-013-0299-2).
+
+Prevo, B., Mangeol, P., Oswald, F., Scholey, J.M., and Peterman, E.J.G.
+(2015). Functional differentiation of cooperating kinesin-2 motors
+orchestrates cargo import and transport in C. elegans cilia. Nat Cell
+Biol 17, 1536–1545
+[<doi:10.1038%2Fncb3263>](http://dx.doi.org/10.1038%2Fncb3263).
+
+Treweek, J.B., Chan, K.Y., Flytzanis, N.C., Yang, B., Deverman, B.E.,
+Greenbaum, A., Lignell, A., Xiao, C., Cai, L., Ladinsky, M.S., et al.
+(2015). Whole-body tissue stabilization and selective extractions via
+tissue-hydrogel hybrids for high-resolution intact circuit mapping and
+phenotyping. Nat. Protocols 10, 1860–1896
+[<doi:10.1038%2Fnprot.2015.122>](http://dx.doi.org/10.1038%2Fnprot.2015.122).
+
+Jönsson, P., and Jönsson, B. (2015). Hydrodynamic Forces on
+Macromolecules Protruding from Lipid Bilayers Due to External Liquid
+Flows. Langmuir 31, 12708–12718
+[<doi:10.1021/acs.langmuir.5b03421>](http://dx.doi.org/10.1021/acs.langmuir.5b03421).
+
+Wilson, C., Saunter, C.D., Girkin, J.M., and McCarron, J.G. (2015).
+Pressure-dependent regulation of Ca2+ signalling in the vascular
+endothelium. J Physiol 593, 5231–5253
+[<doi:10.1113%2FJP271157>](http://dx.doi.org/10.1113%2FJP271157).
+
+Jeppesen, J.C., Solovyeva, V., Brewer, J.R., Johannes, L., Hansen, P.L.,
+and Simonsen, A.C. (2015). Slow Relaxation of Shape and Orientational
+Texture in Membrane Gel Domains. Langmuir 31, 12699–12707
+[<doi:10.1021%2Facs.langmuir.5b03168>](http://dx.doi.org/10.1021%2Facs.langmuir.5b03168).
+
+M. Jackson, J., B. Taylor, J., A. Witek, M., A. Hunsucker, S., P. Waugh,
+J., Fedoriw, Y., C. Shea, T., A. Soper, S., and M. Armistead, P. (2016).
+Microfluidics for the detection of minimal residual disease in acute
+myeloid leukemia patients using circulating leukemic cells selected from
+blood. Analyst.
+[<doi:10.1039%2FC5AN01836F>](http://dx.doi.org/10.1039%2FC5AN01836F).
+
+Gualda, E.J., Pereira, H., Vale, T., Estrada, M.F., Brito, C., and
+Moreno, N. (2015). SPIM-fluid: open source light-sheet based platform
+for high-throughput imaging. Biomed. Opt. Express, BOE 6, 4447–4456
+[<doi:10.1364%2FBOE.6.004447>](http://dx.doi.org/10.1364%2FBOE.6.004447).
+
+Schmohl, K.A., Müller, A.M., Wechselberger, A., Rühland, S., Salb, N.,
+Schwenk, N., Heuer, H., Carlsen, J., Göke, B., Nelson, P.J., et al.
+(2015). Thyroid hormones and tetrac: new regulators of tumour stroma
+formation via integrin αvβ3. Endocr Relat Cancer 22, 941–952
+[<doi:10.1530%2FERC-15-0245>](http://dx.doi.org/10.1530%2FERC-15-0245).
+
+Cazaux, S., Sadoun, A., Biarnes-Pelicot, M., Martinez, M., Obeid, S.,
+Bongrand, P., Limozin, L., and Puech, P.-H. (2016). Synchronizing atomic
+force microscopy force mode and fluorescence microscopy in real time for
+immune cell stimulation and activation studies. Ultramicroscopy 160,
+168–181
+[<doi:10.1016%2Fj.ultramic.2015.10.014>](http://dx.doi.org/10.1016%2Fj.ultramic.2015.10.014).
+
+Stauffer, B., and Powers, T. (2015). Target of rapamycin signaling
+mediates vacuolar fission caused by endoplasmic reticulum stress in S.
+cerevisiae. Mol. Biol. Cell mbc.E15–06 – 0344
+[<doi:10.1091%2Fmbc.E15-06-0344>](http://dx.doi.org/10.1091%2Fmbc.E15-06-0344).
+
+Hankins, H.M., Sere, Y.Y., Diab, N.S., Menon, A.K., and Graham, T.R.
+(2015). Phosphatidylserine translocation at the yeast trans-Golgi
+network regulates protein sorting into exocytic vesicles. Mol. Biol.
+Cell mbc.E15–07 – 0487
+[<doi:10.1091%2Fmbc.E15-07-0487>](http://dx.doi.org/10.1091%2Fmbc.E15-07-0487).
+
+Yu, Y.H., Narayanan, G., Sankaran, S., Ramasamy, S., Chan, S.Y., Lin,
+S., Chen, J., Yang, H., Srivats, H., and Ahmed, S. (2015). Purification,
+Visualization, and Molecular Signature of Neural Stem Cells. Stem Cells
+and Development
+[<doi:10.1089%2Fscd.2015.0190>](http://dx.doi.org/10.1089%2Fscd.2015.0190).
+
+Bajcsy, P., Cardone, A., Chalfoun, J., Halter, M., Juba, D., Kociolek,
+M., Majurski, M., Peskin, A., Simon, C., Simon, M., et al. (2015).
+Survey statistics of automated segmentations applied to optical imaging
+of mammalian cells. BMC Bioinformatics 16, 330
+[<doi:10.1186%2Fs12859-015-0762-2>](http://dx.doi.org/10.1186%2Fs12859-015-0762-2).
+
+Desmarais, S.M., Tropini, C., Miguel, A., Cava, F., Monds, R.D., Pedro,
+M.A. de, and Huang, K.C. (2015). High-throughput, Highly Sensitive
+Analyses of Bacterial Morphogenesis Using Ultra Performance Liquid
+Chromatography. J. Biol. Chem. jbc.M115.661660
+[<doi:10.1074%2Fjbc.M115.661660>](http://dx.doi.org/10.1074%2Fjbc.M115.661660).
+
+Marquardt, L.M., Ee, X., Iyer, N., Hunter, D., Mackinnon, S.E., Wood,
+M.D., and Sakiyama-Elbert, S.E. (2015). Finely Tuned Temporal and
+Spatial Delivery of GDNF Promotes Enhanced Nerve Regeneration in a Long
+Nerve Defect Model. Tissue Engineering Part A 21, 2852–2864
+[<doi:10.1089%2Ften.tea.2015.0311>](http://dx.doi.org/10.1089%2Ften.tea.2015.0311)
+.
+
+Lanier, M.H., Kim, T., and Cooper, J.A. (2015). CARMIL2 is a Novel
+Molecular Connection between Vimentin and Actin Essential for Cell
+Migration and Invadopodia Formation. Mol. Biol. Cell mbc.E15–08 – 0552
+[<doi:10.1091%2Fmbc.E15-08-0552>](http://dx.doi.org/10.1091%2Fmbc.E15-08-0552).
+
+Lin, Y., Sohn, C.H., Dalal, C.K., Cai, L., and Elowitz, M.B. (2015).
+Combinatorial gene regulation by modulation of relative pulse timing.
+Nature 527, 54–58
+[<doi:10.1038%2Fnature15710>](http://dx.doi.org/10.1038%2Fnature15710).
+
+Devraj, K., Poznanovic, S., Spahn, C., Schwall, G., Harter, P.N.,
+Mittelbronn, M., Antoniello, K., Paganetti, P., Muhs, A., Heilemann, M.,
+et al. (2015). BACE-1 is expressed in the blood–brain barrier
+endothelium and is upregulated in a murine model of Alzheimer’s disease.
+J Cereb Blood Flow Metab 0271678X15606463
+[<doi:10.1177%2F0271678X15606463>](http://dx.doi.org/10.1177%2F0271678X15606463).
+
+Feutlinske, F., Browarski, M., Ku, M.-C., Trnka, P., Waiczies, S.,
+Niendorf, T., Stallcup, W.B., Glass, R., Krause, E., and Maritzen, T.
+(2015). Stonin1 mediates endocytosis of the proteoglycan NG2 and
+regulates focal adhesion dynamics and cell motility. Nat Commun 6, 8535
+[<doi:10.1038%2Fncomms9535>](http://dx.doi.org/10.1038%2Fncomms9535).
+
+Geyer, E.A., Burns, A., Lalonde, B.A., Ye, X., Piedra, F.-A., Huffaker,
+T.C., and Rice, L.M. (2015). A mutation uncouples the tubulin
+conformational and GTPase cycles, revealing allosteric control of
+microtubule dynamics. eLife Sciences e10113
+[<doi:10.7554%2FeLife.10113>](http://dx.doi.org/10.7554%2FeLife.10113).
+
+Bosse, J.B., Hogue, I.B., Feric, M., Thiberge, S.Y., Sodeik, B.,
+Brangwynne, C.P., and Enquist, L.W. (2015). Remodeling nuclear
+architecture allows efficient transport of herpesvirus capsids by
+diffusion. PNAS 112, E5725–E5733
+[<doi:10.1073%2Fpnas.1513876112>](http://dx.doi.org/10.1073%2Fpnas.1513876112).
+
+T. Brown, A., D. Vladescu, I., Dawson, A., Vissers, T., Schwarz-Linek,
+J., S. Lintuvuori, J., and K. Poon, W.C. (2016). Swimming in a crystal.
+Soft Matter 12, 131–140
+[<doi:10.1039%2FC5SM01831E>](http://dx.doi.org/10.1039%2FC5SM01831E).
+
+Bosse, J.B., Hogue, I.B., Feric, M., Thiberge, S.Y., Sodeik, B.,
+Brangwynne, C.P., and Enquist, L.W. (2015). Remodeling nuclear
+architecture allows efficient transport of herpesvirus capsids by
+diffusion. PNAS 112, E5725–E5733
+[<doi:10.1073%2Fpnas.1513876112>](http://dx.doi.org/10.1073%2Fpnas.1513876112).
+
+Liu, X., Qu, X., Jiang, Y., Chang, M., Zhang, R., Wu, Y., Fu, Y., and
+Huang, S. (2015). Profilin Regulates Apical Actin Polymerization to
+Control Polarized Pollen Tube Growth. Molecular Plant 8, 1694–1709
+[<doi:10.1016%2Fj.molp.2015.09.013>](http://dx.doi.org/10.1016%2Fj.molp.2015.09.013).
+
+Puah, W.C., and Wasser, M. Live imaging of muscles in Drosophila
+metamorphosis: Towards high-throughput gene identification and function
+analysis. Methods
+[<doi:10.1016/j.ymeth.2015.09.028>](http://dx.doi.org/10.1016/j.ymeth.2015.09.028).
+
+Hadad, U., Thauland, T.J., Martinez, O.M., Butte, M.J., Porgador, A.,
+and Krams, S.M. (2015). NKp46 clusters at the immune synapse and
+regulates NK cell polarization. Front. Immunol. 495
+[<doi:10.3389%2Ffimmu.2015.00495>](http://dx.doi.org/10.3389%2Ffimmu.2015.00495).
+
+Berenguer, J.R., Pichel, J.G., Giménez, N., Lalinde, E., Moreno, M.T.,
+and Piñeiro-Hermida, S. (2015). Luminescent
+pentafluorophenyl-cycloplatinated complexes: synthesis,
+characterization, photophysics, cytotoxicity and cellular imaging.
+Dalton Trans. 44, 18839–18855
+[<doi:10.1039%2FC5DT02721G>](http://dx.doi.org/10.1039%2FC5DT02721G).
+
+Jonas, R., Klusch, A., Schmelz, M., Petersen, M., and Carr, R.W. (2015).
+Assessment of TTX-s and TTX-r Action Potential Conduction along Neurites
+of NGF and GDNF Cultured Porcine DRG Somata. PLoS ONE 10, e0139107
+[<doi:10.1371%2Fjournal.pone.0139107>](http://dx.doi.org/10.1371%2Fjournal.pone.0139107).
+
+Zou, W., Yadav, S., DeVault, L., Jan, Y.N., and Sherwood, D.R. (2015).
+RAB-10-Dependent Membrane Transport Is Required for Dendrite
+Arborization. PLoS Genet 11, e1005484
+[<doi:10.1371%2Fjournal.pgen.1005484>](http://dx.doi.org/10.1371%2Fjournal.pgen.1005484).
+
+Gimber, N., Tadeus, G., Maritzen, T., Schmoranzer, J., and Haucke, V.
+(2015). Diffusional spread and confinement of newly exocytosed synaptic
+vesicle proteins. Nat Commun 6, 8392
+[<doi:10.1038%2Fncomms9392>](http://dx.doi.org/10.1038%2Fncomms9392).
+
+Snijders, T., Smeets, J.S.J., van Kranenburg, J., Kies, A.K., van Loon,
+L.J.C., and Verdijk, L.B. (2015). Changes in myonuclear domain size do
+not precede muscle hypertrophy during prolonged resistance-type exercise
+training. Acta Physiol n/a – n/a
+[<doi:10.1111%2Fapha.12609>](http://dx.doi.org/10.1111%2Fapha.12609).
+
+Walck-Shannon, E., Reiner, D., and Hardin, J. (2015). Polarized
+Rac-dependent protrusions drive epithelial intercalation in the
+embryonic epidermis of C. elegans. Development dev.127597
+[<doi:10.1242%2Fdev.127597>](http://dx.doi.org/10.1242%2Fdev.127597).
+
+Lukacs, V., Mathur, J., Mao, R., Bayrak-Toydemir, P., Procter, M.,
+Cahalan, S.M., Kim, H.J., Bandell, M., Longo, N., Day, R.W., et al.
+(2015). Impaired PIEZO1 function in patients with a novel autosomal
+recessive congenital lymphatic dysplasia. Nat Commun 6, 8329
+[<doi:10.1038%2Fncomms9329>](http://dx.doi.org/10.1038%2Fncomms9329).
+
+Mary, H., Fouchard, J., Gay, G., Reyes, C., Gauthier, T., Gruget, C.,
+Pécréaux, J., Tournier, S., and Gachet, Y. (2015). Fission yeast
+kinesin-8 controls chromosome congression independently of oscillations.
+J Cell Sci 128, 3720–3730
+[<doi:10.1242%2Fjcs.160465>](http://dx.doi.org/10.1242%2Fjcs.160465).
+
+Martínez, L.E., Hardcastle, J.M., Wang, J., Pincus, Z., Tsang, J.,
+Hoover, T.R., Bansil, R., and Salama, N.R. (2016). Helicobacter pylori
+strains vary cell shape and flagellum number to maintain robust motility
+in viscous environments. Molecular Microbiology 99, 88–110
+[<doi:10.1111%2Fmmi.13218>](http://dx.doi.org/10.1111%2Fmmi.13218).
+
+Paul, N.R., Allen, J.L., Chapman, A., Morlan-Mairal, M., Zindy, E.,
+Jacquemet, G., Ama, L.F. del, Ferizovic, N., Green, D.M., Howe, J.D., et
+al. (2015). α5β1 integrin recycling promotes Arp2/3-independent cancer
+cell invasion via the formin FHOD3. J Cell Biol 210, 1013–1031
+[<doi:10.1083%2Fjcb.201502040>](http://dx.doi.org/10.1083%2Fjcb.201502040).
+
+Bhattacharjee, S. (2015). Emerging trend of advanced image analysis in
+nanomedicine. Nanomedicine 10, 2801–2804
+[<doi:10.2217%2Fnnm.15.121>](http://dx.doi.org/10.2217%2Fnnm.15.121).
+
+Wendykier, P., Borucki, B., and Nowinski, K.S. (2015). Large Java arrays
+and their applications. In 2015 International Conference on High
+Performance Computing Simulation (HPCS), pp. 460–467
+[<doi:10.1109%2FHPCSim.2015.7237077>](http://dx.doi.org/10.1109%2FHPCSim.2015.7237077).
+
+Lloyd, D.P., and Allen, R.J. (2015). Competition for space during
+bacterial colonization of a surface. Journal of The Royal Society
+Interface 12, 20150608
+[<doi:10.1098%2Frsif.2015.0608>](http://dx.doi.org/10.1098%2Frsif.2015.0608).
+
+Windschüttl, S., Nettersheim, D., Schlatt, S., Huber, A., Welter, H.,
+Schwarzer, J.U., Köhn, F.M., Schorle, H., and Mayerhofer, A. (2014). Are
+testicular mast cells involved in the regulation of germ cells in man?
+Andrology 2, 615–622
+[<doi:10.1111%2Fj.2047-2927.2014.00227.x>](http://dx.doi.org/10.1111%2Fj.2047-2927.2014.00227.x).
+
+Ingaramo, M., York, A.G., Andrade, E.J., Rainey, K., and Patterson, G.H.
+(2015). Two-photon-like microscopy with orders-of-magnitude lower
+illumination intensity via two-step fluorescence. Nat Commun 6, 8184
+[<doi:10.1038%2Fncomms9184>](http://dx.doi.org/10.1038%2Fncomms9184).
+
+Watanabe, T., Kakeno, M., Matsui, T., Sugiyama, I., Arimura, N.,
+Matsuzawa, K., Shirahige, A., Ishidate, F., Nishioka, T., Taya, S., et
+al. (2015). TTBK2 with EB1/3 regulates microtubule dynamics in migrating
+cells through KIF2A phosphorylation. J Cell Biol 210, 737–751
+[<doi:10.1083%2Fjcb.201412075>](http://dx.doi.org/10.1083%2Fjcb.201412075).
+
+Uchida, A., Monsma, P.C., Fenn, J.D., and Brown, A. Live-cell imaging of
+neurofilament transport in cultured neurons. B.-M. in C. Biology, ed.
+(Academic Press),
+[link](http://www.sciencedirect.com/science/article/pii/S0091679X15001624).
+
+Grant, M.P., Cavanaugh, A., and Breitwieser, G.E. (2015). 14-3-3
+Proteins Buffer Intracellular Calcium Sensing Receptors to Constrain
+Signaling. PLoS ONE 10, e0136702
+[<doi:10.1371%2Fjournal.pone.0136702>](http://dx.doi.org/10.1371%2Fjournal.pone.0136702).
+
+Nirschl, J.J., and Holzbaur, E.L.F. Live-cell imaging of retrograde
+transport initiation in primary neurons. B.-M. in C. Biology, ed.
+(Academic Press),
+[link](http://www.sciencedirect.com/science/article/pii/S0091679X15001429).
+
+Pajović, J.D., Dojčilović, R., Božanić, D.K., Kaščáková, S., Réfrégiers,
+M., Dimitrijević-Branković, S., Vodnik, V.V., Milosavljević, A.R.,
+Piscopiello, E., Luyt, A.S., et al. (2015). Tryptophan-functionalized
+gold nanoparticles for deep UV imaging of microbial cells. Colloids and
+Surfaces B: Biointerfaces 135, 742–750
+[<doi:10.1016%2Fj.colsurfb.2015.08.050>](http://dx.doi.org/10.1016%2Fj.colsurfb.2015.08.050).
+
+Wabnig, S., Liewald, J.F., Yu, S., and Gottschalk, A. (2015).
+High-Throughput All-Optical Analysis of Synaptic Transmission and
+Synaptic Vesicle Recycling in Caenorhabditis elegans. PLoS ONE 10,
+e0135584
+[<doi:journal.pone.0135584>](http://dx.doi.org/10.1371/journal.pone.0135584).
+
+Chazeau, A., Katrukha, E.A., Hoogenraad, C.C., and Kapitein, L.C.
+Studying neuronal microtubule organization and microtubule-associated
+proteins using single molecule localization microscopy. B.-M. in C.
+Biology, ed. (Academic
+Press),[link](http://www.sciencedirect.com/science/article/pii/S0091679X15001570).
+
+Khayatan, B., Meeks, J.C., and Risser, D.D. (2015). Evidence that a
+modified type IV pilus-like system powers gliding motility and
+polysaccharide secretion in filamentous cyanobacteria. Molecular
+Microbiology 98, 1021–1036
+[<doi:10.1111%2Fmmi.13205>](http://dx.doi.org/10.1111%2Fmmi.13205).
+
+Ellefsen, K.L., Dynes, J.L., and Parker, I. (2015). Spinning-Spot
+Shadowless TIRF Microscopy. PLoS ONE 10, e0136055
+[<doi:10.1371%2Fjournal.pone.0136055>](http://dx.doi.org/10.1371%2Fjournal.pone.0136055).
+
+Dietrich, M.G., Zuellig, R.A., Spinas, G.A., Lehmann, R., Tschopp, O.,
+and Niessen, M. (2015). Specific and redundant roles of PKBα/AKT1 and
+PKBβ/AKT2 in human pancreatic islets. Experimental Cell Research 338,
+82–88
+[<doi:10.1016%2Fj.yexcr.2015.08.008>](http://dx.doi.org/10.1016%2Fj.yexcr.2015.08.008).
+
+Adames, N.R., Schuck, P.L., Chen, K.C., Murali, T.M., Tyson, J.J., and
+Peccoud, J. (2015). Experimental testing of a new integrated model of
+the budding yeast START transition. Mol. Biol. Cell [<doi:mbc.E15–06> –
+0358](http://dx.doi.org/10.1091%2Fmbc.E15-06-0358).
+
+Reubold, T.F., K. Faelber, N. Plattner, Y. Posor, K. Ketel, U. Curth, J.
+Schlegel, R. Anand, D.J. Manstein, F. Noé, V. Haucke, O. Daumke, and S.
+Eschenburg. 2015. Crystal structure of the dynamin tetramer. Nature.
+[<doi:10.1038/nature14880>](http://dx.doi.org/10.1038/nature14880).
+
+Tanenbaum, M.E., N. Stern-Ginossar, J.S. Weissman, and R.D. Vale. 2015.
+Regulation of mRNA translation during mitosis. eLife. 4.
+[<doi:10.7554/eLife.07957>](http://dx.doi.org/10.7554/eLife.07957).
+
+Hansen, S.D., and R.D. Mullins. 2015. Lamellipodin promotes actin
+assembly by clustering Ena/VASP proteins and tethering them to actin
+filaments. eLife Sciences. 4:e06585.
+[<doi:10.7554/eLife.06585>](http://dx.doi.org/10.7554/eLife.06585).
+
+Gonzalez-Rodriguez, D., S. Sart, A. Babataheri, D. Tareste, A.I.
+Barakat, C. Clanet, and J. Husson. 2015. Elastocapillary Instability in
+Mitochondrial Fission. Phys. Rev. Lett. 115:088102.
+[<doi:10.1103/PhysRevLett.115.088102>](http://dx.doi.org/10.1103/PhysRevLett.115.088102).
+
+English, B.P., and R.H. Singer. 2015. A three-camera imaging microscope
+for high-speed single-molecule tracking and super-resolution imaging in
+living cells. 955008–955008–6.
+
+Ellison, D., A. Mugler, M. Brennan, S.H. Lee, R. Huebner, E. Shamir,
+L.A. Woo, J. Kim, P. Amar, I. Nemenman, A.J. Ewald, and A. Levchenko.
+2015. Cell-cell communication enhances the capacity of cell ensembles to
+sense shallow gradients during morphogenesis. arXiv:1508.04692
+\[q-bio\].
+
+Hinchcliffe, E.H., and E.H. Hinchcliffe. 2015. Video Microscopy, Video
+Microscopy. In eLS, eLS. John Wiley & Sons, Ltd, John Wiley & Sons, Ltd.
+
+Großmann, M., A. Klick, C. Lemke, J. Falke, M. Black, J. Fiutowski, A.J.
+Goszczak, E. Sobolewska, A.U. Zillohu, M.K. Hedayati, H.-G. Rubahn, F.
+Faupel, M. Elbahri, and M. Bauer. 2015. Light-Triggered Control of
+Plasmonic Refraction and Group Delay by Photochromic Molecular Switches.
+ACS Photonics. 150827100303003.
+[<doi:10.1021/acsphotonics.5b00315>](http://dx.doi.org/10.1021/acsphotonics.5b00315).
+
+Lampe, A., G. Tadeus, and J. Schmoranzer. 2015. Spectral demixing avoids
+registration errors and reduces noise in multicolor localization-based
+super-resolution microscopy. Methods Appl. Fluoresc. 3:034006.
+[<doi:10.1088/2050-6120/3/3/034006>](http://dx.doi.org/10.1088/2050-6120/3/3/034006).
+
+Hedde, P.N., S. Ranjit, and E. Gratton. 2015. 3D fluorescence anisotropy
+imaging using selective plane illumination microscopy. Opt. Express, OE.
+23:22308–22317.
+[<doi:10.1364/OE.23.022308>](http://dx.doi.org/10.1364/OE.23.022308).
+
+Mikhaylova, M., B.M.C. Cloin, K. Finan, R. van den Berg, J. Teeuw, M.M.
+Kijanka, M. Sokolowski, E.A. Katrukha, M. Maidorn, F. Opazo, S. Moutel,
+M. Vantard, F. Perez, P.M.P. van B. en Henegouwen, C.C. Hoogenraad, H.
+Ewers, and L.C. Kapitein. 2015. Resolving bundled microtubules using
+anti-tubulin nanobodies. Nature Communications. 6.
+[<doi:10.1038/ncomms8933>](http://dx.doi.org/10.1038/ncomms8933).
+
+Melikov, K., A. Hara, K. Yamoah, E. Zaitseva, E. Zaitsev, and L.
+Chernomordik. 2015. Efficient entry of cell-penetrating peptide
+nona-arginine into adherent cells involves a transient increase in
+intracellular calcium. Biochemical Journal. BJ20150272.
+[<doi:10.1042/BJ20150272>](http://dx.doi.org/10.1042/BJ20150272).
+
+Cong, Y., S. Katipamula, T. Geng, S.A. Prost, K. Tang, and R.T. Kelly.
+2015. Electrokinetic sample preconcentration and hydrodynamic sample
+injection for microchip electrophoresis using a pneumatic microvalve.
+ELECTROPHORESIS.
+[<doi:10.1002/elps.201500286>](http://dx.doi.org/10.1002/elps.201500286).
+
+Hu, Z., I. Welch, X. Yuan, S.I. Pollmann, H.N. Nikolov, and D.W.
+Holdsworth. 2015. Quantification of mouse in vivo whole-body vibration
+amplitude from motion-blur using x-ray imaging. Phys. Med. Biol.
+60:6423.
+[<doi:10.1088/0031-9155/60/16/6423>](http://dx.doi.org/10.1088/0031-9155/60/16/6423).
+
+S. Hersey, J., S. T. Yohe, and M. W. Grinstaff. 2015.
+Poly(ε-caprolactone) microfiber meshes for repeated oil retrieval.
+Environmental Science: Water Research & Technology.
+[<doi:10.1039/C5EW00107B>](http://dx.doi.org/10.1039/C5EW00107B).
+
+Tachikawa, T., I. Karimata, and Y. Kobori. 2015. Surface Charge Trapping
+in Organolead Halide Perovskites Explored by Single-Particle
+Photoluminescence Imaging. The Journal of Physical Chemistry Letters.
+6:3195–3201.
+[<doi:10.1021/acs.jpclett.5b01566>](http://dx.doi.org/10.1021/acs.jpclett.5b01566).
+
+Thiyagarajan, S., E.L. Munteanu, R. Arasada, T.D. Pollard, and B.
+O’Shaughnessy. 2015. The fission yeast cytokinetic contractile ring
+regulates septum shape and closure. J Cell Sci. jcs.166926.
+[<doi:10.1242/jcs.166926>](http://dx.doi.org/10.1242/jcs.166926).
+
+van der Ploeg, R., S.T. Goudelis, and T. den Blaauwen. 2015. Validation
+of FRET Assay for the Screening of Growth Inhibitors of Escherichia coli
+Reveals Elongasome Assembly Dynamics. International Journal of Molecular
+Sciences. 16:17637–17654.
+[<doi:10.3390/ijms160817637>](http://dx.doi.org/10.3390/ijms160817637).
+
+Wong, Y.-H., C.-M. Lee, W. Xie, B. Cui, and M. Poo. 2015.
+Activity-dependent BDNF release via endocytic pathways is regulated by
+synaptotagmin-6 and complexin. PNAS. 112:E4475–E4484.
+[<doi:10.1073/pnas.1511830112>](http://dx.doi.org/10.1073/pnas.1511830112).
+
+Chung, H.K., C.L. Jacobs, Y. Huo, J. Yang, S.A. Krumm, R.K. Plemper,
+R.Y. Tsien, and M.Z. Lin. 2015. Tunable and reversible drug control of
+protein production via a self-excising degron. Nature Chemical Biology.
+11:713–720.
+[<doi:10.1038/nchembio.1869>](http://dx.doi.org/10.1038/nchembio.1869).
+
+Durandau, E., D. Aymoz, and S. Pelet. 2015. Dynamic single cell
+measurements of kinase activity by synthetic kinase activity relocation
+sensors. BMC Biology. 13:55.
+[<doi:10.1186/s12915-015-0163-z>](http://dx.doi.org/10.1186/s12915-015-0163-z).
+
+Litthauer, S., M.W. Battle, T. Lawson, and M.A. Jones. 2015.
+Phototropins maintain robust circadian oscillation of PSII operating
+efficiency under blue light. The Plant Journal. 83:1034–1045.
+[<doi:10.1111/tpj.12947>](http://dx.doi.org/10.1111/tpj.12947).
+
+Astorga, G., J. Bao, A. Marty, G.J. Augustine, R. Franconville, A.
+Jalil, J. Bradley, and I. Llano. 2015. An excitatory GABA loop operating
+in vivo. Frontiers in Cellular Neuroscience. 9.
+[<doi:10.3389/fncel.2015.00275>](http://dx.doi.org/10.3389/fncel.2015.00275).
+
+Placencio, V.R., A. Ichimura, T. Miyata, and Y.A. DeClerck. 2015. Small
+Molecule Inhibitors of Plasminogen Activator Inhibitor-1 Elicit
+Anti-Tumorigenic and Anti-Angiogenic Activity. PLOS ONE. 10:e0133786.
+[<doi:10.1371/journal.pone.0133786>](http://dx.doi.org/10.1371/journal.pone.0133786).
+
+Joshi, G.N., A.M. Goetjen, and D.A. Knecht. 2015. Silica particles cause
+NADPH oxidase independent ROS generation and transient phagolysosomal
+leakage. Mol. Biol. Cell. mbc.E15–03–0126.
+[<doi:10.1091/mbc.E15-03-0126>](http://dx.doi.org/10.1091/mbc.E15-03-0126).
+
+Strale, P.-O., L. Duchesne, G. Peyret, L. Montel, T. Nguyen, E. Png, R.
+Tampé, S. Troyanovsky, S. Hénon, B. Ladoux, and R.-M. Mège. 2015. The
+formation of ordered nanoclusters controls cadherin anchoring to actin
+and cell–cell contact fluidity. J Cell Biol. 210:333–346.
+[<doi:10.1083/jcb.201410111>](http://dx.doi.org/10.1083/jcb.201410111).
+
+Hogan, B., A. Babataheri, Y. Hwang, A.I. Barakat, and J. Husson. 2015.
+Characterizing Cell Adhesion by Using Micropipette Aspiration.
+Biophysical Journal. 109:209–219.
+[<doi:10.1016/j.bpj.2015.06.015>](http://dx.doi.org/10.1016/j.bpj.2015.06.015).
+
+Klementieva, N.V., N.G. Bozhanova, N.M. Mishina, E.V. Zagaynova, K.A.
+Lukyanov, and A.S. Mishin. 2015. Common fluorescent proteins for
+single-molecule localization microscopy. International Society for
+Optics and Photonics. 953609–953609–6.
+
+Özel, T., S. White, E. Nguyen, A. Moy, N. Brenes, B. Choi, and T.
+Betancourt. 2015. Enzymatically activated near infrared nanoprobes based
+on amphiphilic block copolymers for optical detection of cancer. Lasers
+in Surgery and Medicine. 47:579–594.
+[<doi:10.1002/lsm.22396>](http://dx.doi.org/10.1002/lsm.22396).
+
+Resnick, A. 2015. Mechanical Properties of a Primary Cilium As Measured
+by Resonant Oscillation. Biophysical Journal. 109:18–25.
+[<doi:10.1016/j.bpj.2015.05.031>](http://dx.doi.org/10.1016/j.bpj.2015.05.031).
+
+Schindelin, J., C.T. Rueden, M.C. Hiner, and K.W. Eliceiri. 2015. The
+ImageJ ecosystem: An open platform for biomedical image analysis.
+Molecular Reproduction and Development. 82:518–529.
+[<doi:10.1002/mrd.22489>](http://dx.doi.org/10.1002/mrd.22489).
+
+Hwee Foo, Y., C. Spahn, H. Zhang, M. Heilemann, and L. J. Kenney. 2015.
+Single cell super-resolution imaging of E. coli OmpR during
+environmental stress. Integrative Biology.
+[<doi:10.1039/C5IB00077G>](http://dx.doi.org/10.1039/C5IB00077G).
+
+Warren, S., A. Margineanu, M. Katan, C. Dunsby, and P. French. 2015.
+Homo-FRET Based Biosensors and Their Application to Multiplexed Imaging
+of Signalling Events in Live Cells. International Journal of Molecular
+Sciences. 16:14695–14716.
+[<doi:10.3390/ijms160714695>](http://dx.doi.org/10.3390/ijms160714695).
+
+Hol, F.J.H., B. Hubert, C. Dekker, and J.E. Keymer. 2015.
+Density-dependent adaptive resistance allows swimming bacteria to
+colonize an antibiotic gradient. The ISME Journal.
+[<doi:10.1038/ismej.2015.107>](http://dx.doi.org/10.1038/ismej.2015.107).
+
+Mattila, J.-P., A.V. Shnyrova, A.C. Sundborger, E.R. Hortelano, M.
+Fuhrmans, S. Neumann, M. Müller, J.E. Hinshaw, S.L. Schmid, and V.A.
+Frolov. 2015. A hemi-fission intermediate links two mechanistically
+distinct stages of membrane fission. Nature. 524:109–113.
+[<doi:10.1038/nature14509>](http://dx.doi.org/10.1038/nature14509).
+
+Jonsson, E., M. Yamada, R.D. Vale, and G. Goshima. 2015. Clustering of a
+kinesin-14 motor enables processive retrograde microtubule-based
+transport in plants. Nature Plants. 1:15087.
+[<doi:10.1038/nplants.2015.87>](http://dx.doi.org/10.1038/nplants.2015.87).
+
+Xiang, D., Q. Meng, H. Liu, M. Lan, and G. Wei. The study of a
+curcumin-resembling molecular probe for the pH-responsive fluorometric
+assay and application in cell imaging. Talanta.
+[<doi:10.1016/j.talanta.2015.05.066>](http://dx.doi.org/10.1016/j.talanta.2015.05.066).
+
+Thomas, A.S., A.M. Krikken, I.J. van der Klei, and C.P. Williams. 2015.
+Phosphorylation of Pex11p does not regulate peroxisomal fission in the
+yeast Hansenula polymorpha. Scientific Reports. 5.
+[<doi:10.1038/srep11493>](http://dx.doi.org/10.1038/srep11493).
+
+Saha, S., V. Prakash, S. Halder, K. Chakraborty, and Y. Krishnan. 2015.
+A pH-independent DNA nanodevice for quantifying chloride transport in
+organelles of living cells. Nature Nanotechnology.
+[<doi:10.1038/nnano.2015.130>](http://dx.doi.org/10.1038/nnano.2015.130).
+
+Milenkovic, L., L.E. Weiss, J. Yoon, T.L. Roth, Y.S. Su, S.J. Sahl, M.P.
+Scott, and W.E. Moerner. 2015. Single-molecule imaging of Hedgehog
+pathway protein Smoothened in primary cilia reveals binding events
+regulated by Patched1. PNAS. 201510094.
+[<doi:10.1073/pnas.1510094112>](http://dx.doi.org/10.1073/pnas.1510094112).
+
+Tan, C.W., Y. Hirokawa, and A.W. Burgess. 2015. Analysis of Wnt
+signalling dynamics during colon crypt development in 3D culture.
+Scientific Reports. 5.
+[<doi:10.1038/srep11036>](http://dx.doi.org/10.1038/srep11036).
+
+Biebricher, A.S., I. Heller, R.F.H. Roijmans, T.P. Hoekstra, E.J.G.
+Peterman, and G.J.L. Wuite. 2015. The impact of DNA intercalators on DNA
+and DNA-processing enzymes elucidated through force-dependent binding
+kinetics. Nature Communications. 6.
+[<doi:10.1038/ncomms8304>](http://dx.doi.org/10.1038/ncomms8304).
+
+Velsko, I.M., S.S. Chukkapalli, M.F. Rivera-Kweh, H. Chen, D. Zheng, I.
+Bhattacharyya, P.R. Gangula, A.R. Lucas, and L. Kesavalu. 2015.
+Fusobacterium nucleatum Alters Atherosclerosis Risk Factors and Enhances
+Inflammatory Markers with an Atheroprotective Immune Response in ApoE
+null Mice. PLOS ONE. 10:e0129795.
+[<doi:10.1371/journal.pone.0129795>](http://dx.doi.org/10.1371/journal.pone.0129795).
+
+Almada, P., S. Culley, and R. Henriques. PALM and STORM: Into large
+fields and high-throughput microscopy with sCMOS detectors. Methods.
+[<doi:10.1016/j.ymeth.2015.06.004>](http://dx.doi.org/10.1016/j.ymeth.2015.06.004).
+
+Hol, F.J.H., P. Galajda, R.G. Woolthuis, C. Dekker, and J.E. Keymer.
+2015. The idiosyncrasy of spatial structure in bacterial competition.
+BMC Research Notes. 8.
+[<doi:10.1186/s13104-015-1169-x>](http://dx.doi.org/10.1186/s13104-015-1169-x).
+
+Chen, A.H., D. Lubkowicz, V. Yeong, R.L. Chang, and P.A. Silver. 2015.
+Transplantability of a circadian clock to a noncircadian organism.
+Science Advances. 1:e1500358–e1500358.
+[<doi:10.1126/sciadv.1500358>](http://dx.doi.org/10.1126/sciadv.1500358).
+
+Farhat, N.M., M. Staal, A. Siddiqui, S.M. Borisov, S.S. Bucs, and J.S.
+Vrouwenvelder. 2015. Early non-destructive biofouling detection and
+spatial distribution: Application of oxygen sensing optodes. Water
+Research. 83:10–20.
+[<doi:10.1016/j.watres.2015.06.015>](http://dx.doi.org/10.1016/j.watres.2015.06.015).
+
+Kaplan, C., and H. Ewers. 2015. Optimized sample preparation for
+single-molecule localization-based superresolution microscopy in yeast.
+Nature Protocols. 10:1007–1021.
+[<doi:10.1038/nprot.2015.060>](http://dx.doi.org/10.1038/nprot.2015.060).
+
+Min, K.A., W.G. Rajeswaran, R. Oldenbourg, G. Harris, R.K. Keswani, M.
+Chiang, P. Rzeczycki, A. Talattof, M. Hafeez, R.W. Horobin, S.D. Larsen,
+K.A. Stringer, and G.R. Rosania. 2015. Massive Bioaccumulation and
+Self-Assembly of Phenazine Compounds in Live Cells. Advanced Science.
+n/a–n/a.
+[<doi:10.1002/advs.201500025>](http://dx.doi.org/10.1002/advs.201500025).
+
+Kurup, N., D. Yan, A. Goncharov, and Y. Jin. 2015. Dynamic Microtubules
+Drive Circuit Rewiring in the Absence of Neurite Remodeling. Current
+Biology. 25:1594–1605.
+[<doi:10.1016/j.cub.2015.04.061>](http://dx.doi.org/10.1016/j.cub.2015.04.061).
+
+Früh, S.M., I. Schoen, J. Ries, and V. Vogel. 2015. Molecular
+architecture of native fibronectin fibrils. Nature Communications. 6.
+[<doi:10.1038/ncomms8275>](http://dx.doi.org/10.1038/ncomms8275).
+
+Grunwald, A., M. Dahan, A. Giesbertz, A. Nilsson, L.K. Nyberg, E.
+Weinhold, T. Ambjörnsson, F. Westerlund, and Y. Ebenstein. 2015.
+Bacteriophage strain typing by rapid single molecule analysis. Nucl.
+Acids Res. gkv563.
+[<doi:10.1093/nar/gkv563>](http://dx.doi.org/10.1093/nar/gkv563).
+
+Ford, L., M. Crossley, T. Williams, J.R. Thorpe, L.C. Serpell, and G.
+Kemenes. 2015. Effects of Aβ exposure on long-term associative memory
+and its neuronal mechanisms in a defined neuronal network. Scientific
+Reports. 5.
+[<doi:10.1038/srep10614>](http://dx.doi.org/10.1038/srep10614).
+
+Vischer, N.O.E., J. Verheul, M. Postma, B. van den Berg van Saparoea, E.
+Galli, P. Natale, K. Gerdes, J. Luirink, W. Vollmer, M. Vicente, and T.
+den Blaauwen. 2015. Cell age dependent concentration of Escherichia coli
+divisome proteins analyzed with ImageJ and ObjectJ. Frontiers in
+Microbiology. 6.
+[<doi:10.3389/fmicb.2015.00586>](http://dx.doi.org/10.3389/fmicb.2015.00586).
+
+Van Swaay, D., T.-Y.D. Tang, S. Mann, and A. de Mello. 2015.
+Microfluidic Formation of Membrane‐Free Aqueous Coacervate Droplets in
+Water. Angewandte Chemie International Edition.
+[<doi:10.1002/anie.201502886>](http://dx.doi.org/10.1002/anie.201502886).
+
+Royer, L.A., M. Weigert, U. Günther, N. Maghelli, F. Jug, I.F.
+Sbalzarini, and E.W. Myers. 2015. ClearVolume: open-source live 3D
+visualization for light-sheet microscopy. Nat Meth. 12:480–481.
+[<doi:10.1038/nmeth.3372>](http://dx.doi.org/10.1038/nmeth.3372).
+
+Hedde, P.N., and E. Gratton. 2015. Active focus stabilization for
+upright selective plane illumination microscopy. Optics Express.
+23:14707. \[<http://dx.doi.org/10.1364/OE.23.014707>
+[1](http://dx.doi.org/doi:10.1364/OE.23.014707).
+
+McQuilken, M., S.B. Mehta, A. Verma, G. Harris, R. Oldenbourg, and A.S.
+Gladfelter. Polarized Fluorescence Microscopy to Study Cytoskeleton
+Assembly and Organization in Live Cells. Curr. Protoc. Cell Biol.
+\[<http://dx.doi.org/10.1002/0471143030.cb0429s67>
+[2](http://dx.doi.org/doi:10.1002/0471143030.cb0429s67).
+
+Yin, J., A. Zhang, C. Dong, and J. Ren. An aptamer-based single particle
+method for sensitive detection of thrombin using fluorescent quantum
+dots as labeling probes. Talanta.
+[<doi:10.1016/j.talanta.2015.05.034>](http://dx.doi.org/10.1016/j.talanta.2015.05.034).
+
+Zhou, C.Y., H. Wu, and N. Devaraj. 2015. Rapid Access to Phospholipid
+Analogs Using Thiol-Yne Chemistry. Chem. Sci.
+[<doi:10.1039/C5SC00653H>](http://dx.doi.org/10.1039/C5SC00653H).
+
+Lu, V.B., S.R. Ikeda, and H.L. Puhl. 2015. A 3.7 kb Fragment of the
+Mouse Scn10a Gene Promoter Directs Neural Crest But Not Placodal Lineage
+EGFP Expression in a Transgenic Animal. J. Neurosci. 35:8021–8034.
+[<doi:10.1523/JNEUROSCI.0214-15.2015>](http://dx.doi.org/10.1523/JNEUROSCI.0214-15.2015).
+
+Trivedi, V., T.V. Truong, L.A. Trinh, D.B. Holland, M. Liebling, and
+S.E. Fraser. 2015. Dynamic structure and protein expression of the live
+embryonic heart captured by 2-photon light sheet microscopy and
+retrospective registration. Biomedical Optics Express. 6:2056.
+[<doi:10.1364/BOE.6.002056>](http://dx.doi.org/10.1364/BOE.6.002056).
+
+Villegas-Mendoza, J., R. Cajal-Medrano, and H. Maske. 2015. INT
+(2-(4-Iodophenyl)-3-(4-Nitrophenyl)-5-(Phenyl) Tetrazolium Chloride) Is
+Toxic to Prokaryote Cells Precluding Its Use with Whole Cells as a Proxy
+for In Vivo Respiration. Microb Ecol. 1–8.
+[<doi:10.1007/s00248-015-0626-3>](http://dx.doi.org/10.1007/s00248-015-0626-3).
+
+Liang, X., X. Dong, D.G. Moerman, K. Shen, and X. Wang. 2015. Sarcomeres
+Pattern Proprioceptive Sensory Dendritic Endings through UNC-52/Perlecan
+in C. elegans. Developmental Cell. 33:388–400.
+[<doi:10.1016/j.devcel.2015.03.010>](http://dx.doi.org/10.1016/j.devcel.2015.03.010).
 
 Cheng, X. 2015. Cyclic Nucleotide Signaling. CRC Press. 282 pp.
 
-Lee, E.E., J. Ma, A. Sacharidou, W. Mi, V.K. Salato, N. Nguyen, Y. Jiang, J.M. Pascual, P.E. North, P.W. Shaul, M. Mettlen, and R.C. Wang. A Protein Kinase C Phosphorylation Motif in GLUT1 Affects Glucose Transport and is Mutated in GLUT1 Deficiency Syndrome. Molecular Cell. [http://dx.doi.org/10.1016/j.molcel.2015.04.015 doi:10.1016/j.molcel.2015.04.015].
-
-Kapsner, K., and F.C. Simmel. 2015. Partitioning Variability of a Compartmentalized In Vitro Transcriptional Thresholding Circuit. ACS Synth. Biol. [http://dx.doi.org/10.1021/acssynbio.5b00051 doi:10.1021/acssynbio.5b00051].
-
-Reifenberger, J.G., K.D. Dorfman, and H. Cao. 2015. Topological events in single molecules of E. coli DNA confined in nanochannels. The Analyst. [http://dx.doi.org/10.1039/C5AN00343A doi:10.1039/C5AN00343A].
-
-Culhane, K.M., K. Spendier, and A.O. Pinchuk. 2015. Functionalized fluorescent silver nanoparticle surfaces for novel sensing and imaging techniques. 948106–948106–9. [http://dx.doi.org/10.1117/12.2177195 doi:10.1117/12.2177195]
-
-Lehmann, M., G. Lichtner, H. Klenz, and J. Schmoranzer. 2015. Novel organic dyes for multicolor localization-based super-resolution microscopy. J. Biophoton. n/a–n/a. [http://dx.doi.org/10.1002/jbio.201500119 doi:10.1002/jbio.201500119].
-
-Goins, L.M., and R.D. Mullins. 2015. A novel tropomyosin isoform functions at the mitotic spindle and Golgi in Drosophila. Mol. Biol. Cell. mbc.E14–12–1619. [http://dx.doi.org/10.1091/mbc.E14-12-1619 doi:10.1091/mbc.E14-12-1619].
-
-Byrnes, S.A., J.D. Bishop, L. Lafleur, J.R. Buser, B. Lutz, and P. Yager. 2015. One-step purification and concentration of DNA in porous membranes for point-of-care applications. Lab Chip. [http://dx.doi.org/10.1039/C5LC00317B doi:10.1039/C5LC00317B].
-
-Van Zon, J.S., S. Kienle, G. Huelsz-Prince, M. Barkoulas, and A. van Oudenaarden. 2015. Cells change their sensitivity to an EGF morphogen gradient to control EGF-induced gene expression. Nat Commun. 6. [http://dx.doi.org/10.1038/ncomms8053 doi:10.1038/ncomms8053].
-
-Hamada, M.S., and M.H.P. Kole. 2015. Myelin Loss and Axonal Ion Channel Adaptations Associated with Gray Matter Neuronal Hyperexcitability. J. Neurosci. 35:7272–7286. [http://dx.doi.org/10.1523/JNEUROSCI.4747-14.2015 doi:10.1523/JNEUROSCI.4747-14.2015].
-
-Adderley, S.P., C. Lawrence, E. Madonia, J.O. Olubadewo, and J.W. Breslin. 2015. Histamine activates p38 MAP kinase and alters local lamellipodia dynamics, reducing endothelial barrier integrity and eliciting central movement of actin fibers. American Journal of Physiology - Cell Physiology. ajpcell.00096.2015. [http://dx.doi.org/10.1152/ajpcell.00096.2015 doi:10.1152/ajpcell.00096.2015].
-
-Kelly, D.J., S.C. Warren, D. Alibhai, S. Kumar, Y. Alexandrov, I. Munro, A. Margineanu, J. McCormack, N.J. Welsh, R.A. Serwa, E. Thinon, M. Kongsema, J. McGinty, C. Talbot, E.J. Murray, F. Stuhmeier, M.A.A. Neil, E.W. Tate, V.M.M. Braga, E.W.-F. Lam, C. Dunsby, and P.M.W. French. 2015. Automated multiwell fluorescence lifetime imaging for Förster resonance energy transfer assays and high content analysis. Anal. Methods. 7:4071–4089. [http://dx.doi.org/10.1039/C5AY00244C doi:10.1039/C5AY00244C].
-
-Long, A.H., W.M. Haso, J.F. Shern, K.M. Wanhainen, M. Murgai, M. Ingaramo, J.P. Smith, A.J. Walker, M.E. Kohler, V.R. Venkateshwara, R.N. Kaplan, G.H. Patterson, T.J. Fry, R.J. Orentas, and C.L. Mackall. 2015. 4-1BB costimulation ameliorates T cell exhaustion induced by tonic signaling of chimeric antigen receptors. Nat Med. advance online publication. [http://dx.doi.org/10.1038/nm.3838 doi:10.1038/nm.3838].
-
-Petryayeva, E., and W.R. Algar. 2015. Single-step bioassays in serum and whole blood with a smartphone, quantum dots and paper-in-PDMS chips. The Analyst. [http://dx.doi.org/10.1039/C5AN00475F doi:10.1039/C5AN00475F].
-
-Esmaeeli Nieh, S., M.R.Z. Madou, M. Sirajuddin, B. Fregeau, D. McKnight, K. Lexa, J. Strober, C. Spaeth, B.E. Hallinan, N. Smaoui, J.G. Pappas, T.A. Burrow, M.T. McDonald, M. Latibashvili, E. Leshinsky-Silver, D. Lev, L. Blumkin, R.D. Vale, A.J. Barkovich, and E.H. Sherr. 2015. De novo mutations in KIF1A cause progressive encephalopathy and brain atrophy. Ann Clin Transl Neurol. n/a–n/a. [http://dx.doi.org/10.1002/acn3.198 doi:10.1002/acn3.198].
-
-Piet, R., A. Fraissenon, U. Boehm, and A.E. Herbison. 2015. Estrogen Permits Vasopressin Signaling in Preoptic Kisspeptin Neurons in the Female Mouse. J. Neurosci. 35:6881–6892. [http://dx.doi.org/10.1523/JNEUROSCI.4587-14.2015 doi:10.1523/JNEUROSCI.4587-14.2015].
-
-Zhou, X., D.K. Halladin, E.R. Rojas, E.F. Koslover, T.K. Lee, K.C. Huang, and J.A. Theriot. 2015. Mechanical crack propagation drives millisecond daughter cell separation in Staphylococcus aureus. Science. 348:574–578.  [http://dx.doi.org/10.1126/science.aaa1511 doi:10.1126/science.aaa1511].
-
-Bukhari, M., H. Deng, N. Jones, Z. Towne, C.D. Woodworth, and D.S.K. Samways. 2015. Selective permeabilization of cervical cancer cells to an ionic DNA-binding cytotoxin by activation of P2Y receptors. FEBS Letters. 589:1498–1504. [http://dx.doi.org/10.1016/j.febslet.2015.04.044 doi:10.1016/j.febslet.2015.04.044].
-
-Song, J., J.H. Shawky, Y. Kim, M. Hazar, P.R. LeDuc, M. Sitti, and L.A. Davidson. 2015. Controlled surface topography regulates collective 3D migration by epithelial–mesenchymal composite embryonic tissues. Biomaterials. 58:1–9. [http://dx.doi.org/10.1016/j.biomaterials.2015.04.021 doi:10.1016/j.biomaterials.2015.04.021].
-
-Viswanathan, S., M.E. Williams, E.B. Bloss, T.J. Stasevich, C.M. Speer, A. Nern, B.D. Pfeiffer, B.M. Hooks, W.-P. Li, B.P. English, T. Tian, G.L. Henry, J.J. Macklin, R. Patel, C.R. Gerfen, X. Zhuang, Y. Wang, G.M. Rubin, and L.L. Looger. 2015. High-performance probes for light and electron microscopy. Nat Meth. advance online publication. [http://dx.doi.org/10.1038/nmeth.3365 doi:10.1038/nmeth.3365].
-
-Kratsios, P., B. Pinan-Lucarré, S.Y. Kerk, A. Weinreb, J.-L. Bessereau, and O. Hobert. 2015. Transcriptional Coordination of Synaptogenesis and Neurotransmitter Signaling. Current Biology. 25:1282–1295. [http://dx.doi.org/10.1016/j.cub.2015.03.028 doi:10.1016/j.cub.2015.03.028].
-
-Luongo, F.J., M.E. Horn, and V.S. Sohal. Putative Microcircuit-Level Substrates for Attention Are Disrupted in Mouse Models of Autism. Biological Psychiatry. 0. [http://dx.doi.org/10.1016/j.biopsych.2015.04.014 doi:10.1016/j.biopsych.2015.04.014].
-
-Yoon, G.S., S. Sud, R.K. Keswani, J. Baik, T.J. Standiford, K.A. Stringer, and G.R. Rosania. 2015. Phagocytosed Clofazimine Biocrystals can Modulate Innate Immune Signaling by Inhibiting TNFα and Boosting IL-1RA Secretion. Mol. Pharmaceutics. [http://dx.doi.org/10.1021/acs.molpharmaceut.5b00035 doi:10.1021/acs.molpharmaceut.5b00035].
-
-Lewis, O.L., S. Zhang, R.D. Guy, and J.C. del Álamo. 2015. Coordination of contractility, adhesion and flow in migrating Physarum amoebae. Journal of The Royal Society Interface. 12:20141359. [http://dx.doi.org/10.1098/rsif.2014.1359 doi:10.1098/rsif.2014.1359].
-
-Chang, C.-L., and J. Liou. 2015. Phosphatidylinositol 4,5-bisphosphate Homeostasis Regulated by Nir2 and Nir3 at Endoplasmic Reticulum-Plasma Membrane Junctions. J. Biol. Chem. jbc.M114.621375. [http://dx.doi.org/10.1074/jbc.M114.621375 doi:10.1074/jbc.M114.621375].
-
-Fraccaroli, L., E. Grasso, V. Hauk, D. Paparini, L. Soczewiski, G. Mor, C.P. Leirós, and R. Ramhorst. 2015. VIP boosts regulatory T cell induction by trophoblast cells in an in vitro model of trophoblast–maternal leukocyte interaction. J Leukoc Biol. jlb.1A1014–492RR. [http://dx.doi.org/10.1189/jlb.1A1014-492RR doi:10.1189/jlb.1A1014-492RR].
-
-Ruffault, P.-L., F. D’Autréaux, J.A. Hayes, M. Nomaksteinsky, S. Autran, T. Fujiyama, M. Hoshino, M. Hägglund, O. Kiehn, J.-F. Brunet, G. Fortin, and C. Goridis. 2015. The retrotrapezoid nucleus neurons expressing Atoh1 and Phox2b are essential for the respiratory response to CO2. eLife Sciences. e07051. [http://dx.doi.org/10.7554/eLife.07051 doi:10.7554/eLife.07051].
-
-Majdi, N., and W. Traunspurger. 2015. Free-Living Nematodes in the Freshwater Food Web: A Review. J Nematol. 47:28–44.
-
-Benanti, E.L., C.M. Nguyen, and M.D. Welch. 2015. Virulent Burkholderia Species Mimic Host Actin Polymerases to Drive Actin-Based Motility. Cell. 161:348–360. [http://dx.doi.org/10.1016/j.cell.2015.02.044 doi:10.1016/j.cell.2015.02.044].
-
-Zambrano, A., A.S. Zadorin, Y. Rondelez, A. Estévez-Torres, and J.-C. Galas. 2015. Pursuit-and-Evasion Reaction-Diffusion Waves in Microreactors with Tailored Geometry. J. Phys. Chem. B. 119:5349–5355. [http://dx.doi.org/10.1021/jp509474w doi:10.1021/jp509474w].
-
-Tian, D., M. Diao, Y. Jiang, L. Sun, Y. Zhang, Z. Chen, S. Huang, and G. Ou. 2015. Anillin Regulates Neuronal Migration and Neurite Growth by Linking RhoG to the Actin Cytoskeleton. Current Biology. 25:1135–1145. [http://dx.doi.org/10.1016/j.cub.2015.02.072 doi:10.1016/j.cub.2015.02.072].
-
-Rühland, S., A. Wechselberger, C. Spitzweg, R. Huss, P.J. Nelson, and H. Harz. 2015. Quantification of in vitro mesenchymal stem cell invasion into tumor spheroids using selective plane illumination microscopy. J. Biomed. Opt. 20:040501–040501. [http://dx.doi.org/10.1117/1.JBO.20.4.040501 doi:10.1117/1.JBO.20.4.040501].
-
-Wang, L., Y. Yang, and C. Zhang. 2015. Phosphorylation-Directed Assembly of a Single Quantum Dot Based Nanosensor for Protein Kinase Assay. Anal. Chem. 87:4696–4703. [http://dx.doi.org/10.1021/ac504358q doi:10.1021/ac504358q].
-
-Draheim, K.M., X. Li, R. Zhang, O.S. Fisher, G. Villari, T.J. Boggon, and D.A. Calderwood. 2015. CCM2–CCM3 interaction stabilizes their protein expression and permits endothelial network formation. J Cell Biol. 208:987–1001. [http://dx.doi.org/10.1083/jcb.201407129 doi:10.1083/jcb.201407129].
-
-Fink, G., and J. Löwe. 2015. Reconstitution of a prokaryotic minus end-tracking system using TubRC centromeric complexes and tubulin-like protein TubZ filaments. PNAS. 112:E1845–E1850. [http://dx.doi.org/10.1073/pnas.1423746112  doi:10.1073/pnas.1423746112].
-
-Garofalo, S., G. D’Alessandro, G. Chece, F. Brau, L. Maggi, A. Rosa, A. Porzia, F. Mainiero, V. Esposito, C. Lauro, G. Benigni, G. Bernardini, A. Santoni, and C. Limatola. 2015. Enriched environment reduces glioma growth through immune and non-immune mechanisms in mice. Nat Commun. 6. [http://dx.doi.org/10.1038/ncomms7623 doi:10.1038/ncomms7623].
-
-Spiró, Z., and P. Gönczy. 2015. Polarity-Dependent Asymmetric Distribution and MEX-5/6–Mediated Translational Activation of the Era-1 mRNA in C. elegans Embryos. PLoS ONE. 10:e0120984. [http://dx.doi.org/10.1371/journal.pone.0120984 doi:10.1371/journal.pone.0120984].
-
-Paparini, D., S. Gori, E. Grasso, W. Scordo, G. Calo, C. Pérez Leirós, R. Ramhorst, and G. Salamone. 2015. Acetylcholine contributes to control the physiological inflammatory response during the peri-implantation period. Acta Physiol. n/a–n/a. [http://dx.doi.org/10.1111/apha.12494 doi:10.1111/apha.12494].
-
-Peeters, S.G.J.A., C.M.L. Zegers, R. Biemans, N.G. Lieuwes, R.G.P.M. van Stiphout, A. Yaromina, J.D. Sun, C.P. Hart, A.D. Windhorst, W. van Elmpt, L.J. Dubois, and P. Lambin. 2015. TH-302 in combination with radiotherapy enhances the therapeutic outcome and is associated with pretreatment [18F]HX4 hypoxia PET imaging. Clin Cancer Res. clincanres.0018.2015. [http://dx.doi.org/10.1158/1078-0432.CCR-15-0018 doi:10.1158/1078-0432.CCR-15-0018].
-
-Sharma, P.M., B. Ponnaiya, M. Taveras, I. Shuryak, H. Turner, and D.J. Brenner. 2015. High Throughput Measurement of γH2AX DSB Repair Kinetics in a Healthy Human Population. PLoS ONE. 10:e0121083. [http://dx.doi.org/10.1371/journal.pone.0121083 doi:10.1371/journal.pone.0121083].
-
-Stuurman, N., and K. Thorn. 2015. Digital Microscopy. In Handbook of Digital Imaging. John Wiley & Sons, Ltd.
-
-Abdallah, B.G., S. Roy-Chowdhury, J. Coe, P. Fromme, and A. Ros. 2015. High Throughput Protein Nanocrystal Fractionation in a Microfluidic Sorter. Anal. Chem. [http://dx.doi.org/10.1021/acs.analchem.5b00589 doi:10.1021/acs.analchem.5b00589].
-
-Ju, Q., X. Chen, F. Ai, D. Peng, X. Lin, W. Kong, P. Shi, G. Zhu, and F. Wang. 2015. An upconversion nanoprobe operating in the first biological window. J. Mater. Chem. B. [http://dx.doi.org/10.1039/C5TB00025D doi:10.1039/C5TB00025D].
-
-Abrahamsson, S., M. McQuilken, S.B. Mehta, A. Verma, J. Larsch, R. Ilic, R. Heintzmann, C.I. Bargmann, A.S. Gladfelter, and R. Oldenbourg. 2015. MultiFocus Polarization Microscope (MF-PolScope) for 3D polarization imaging of up to 25 focal planes simultaneously. Optics Express. 23:7734. [http://dx.doi.org/10.1364/OE.23.007734 doi:10.1364/OE.23.007734].
-
-Lampron, A., A. Larochelle, N. Laflamme, P. Préfontaine, M.-M. Plante, M.G. Sánchez, V.W. Yong, P.K. Stys, M.-È. Tremblay, and S. Rivest. 2015. Inefficient clearance of myelin debris by microglia impairs remyelinating processes. J Exp Med. jem.20141656. [http://dx.doi.org/10.1084/jem.20141656 doi:10.1084/jem.20141656].
-
-Lizunov, V.A., K.G. Stenkula, P.S. Blank, A. Troy, J.-P. Lee, M.C. Skarulis, S.W. Cushman, and J. Zimmerberg. 2015. Human Adipose Cells In Vitro Are Either Refractory or Responsive to Insulin, Reflecting Host Metabolic State. PLoS ONE. 10:e0119291. [http://dx.doi.org/10.1371/journal.pone.0119291 doi:10.1371/journal.pone.0119291].
-
-Li, W., P. Yi, and G. Ou. 2015. Somatic CRISPR–Cas9-induced mutations reveal roles of embryonically essential dynein chains in Caenorhabditis elegans cilia. J Cell Biol. 208:683–692. [http://dx.doi.org/10.1083/jcb.201411041 doi:10.1083/jcb.201411041].
-
-Picco, A., M. Mund, J. Ries, F. Nédélec, and M. Kaksonen. 2015. Visualizing the functional architecture of the endocytic machinery. eLife Sciences. 4:e04535. [http://dx.doi.org/10.7554/eLife.04535 doi:10.7554/eLife.04535].
-
-Ulengin, I., J.J. Park, and T.H. Lee. 2015. ER network formation and membrane fusion by atlastin1/SPG3A disease variants. Mol. Biol. Cell. mbc.E14–10–1447. [http://dx.doi.org/10.1091/mbc.E14-10-1447 [http://dx.doi.org/10.1091/mbc.E14-10-1447 doi:10.1091/mbc.E14-10-1447].
-
-Blohberger, J., L. Kunz, D. Einwang, U. Berg, D. Berg, S.R. Ojeda, G.A. Dissen, T. Fröhlich, G.J. Arnold, H. Soreq, H. Lara, and A. Mayerhofer. 2015. Readthrough acetylcholinesterase (AChE-R) and regulated necrosis: pharmacological targets for the regulation of ovarian functions? Cell Death Dis. 6:e1685. [http://dx.doi.org/10.1038/cddis.2015.51 doi:10.1038/cddis.2015.51].
-
-O’Toole, M., P. Lamoureux, and K.E. Miller. 2015. Measurement of Subcellular Force Generation in Neurons. Biophysical Journal. 108:1027–1037. [http://dx.doi.org/10.1016/j.bpj.2015.01.021 doi:10.1016/j.bpj.2015.01.021].
-
-Spahn, C., F. Cella-Zannacchi, U. Endesfelder, and M. Heilemann. 2015. Correlative super-resolution imaging of RNA polymerase distribution and dynamics, bacterial membrane and chromosomal structure in Escherichia coli. Methods Appl. Fluoresc. 3:014005. [http://dx.doi.org/10.1088/2050-6120/3/1/014005 doi:10.1088/2050-6120/3/1/014005].
-
-Mader, A., B. von Bronk, B. Ewald, S. Kesel, K. Schnetz, E. Frey, and M. Opitz. 2015. Amount of Colicin Release in Escherichia coli Is Regulated by Lysis Gene Expression of the Colicin E2 Operon. PLoS ONE. 10:e0119124. [http://dx.doi.org/10.1371/journal.pone.0119124 doi:10.1371/journal.pone.0119124].
-
-Fong, M., J.P. Newman, S.M. Potter, and P. Wenner. 2015. Upward synaptic scaling is dependent on neurotransmission rather than spiking. Nat Commun. 6. [http://dx.doi.org/10.1038/ncomms7339 doi:10.1038/ncomms7339].
-
-Yeo, H.L., J.Y.N. Lim, Y. Fukami, N. Yuki, and C.W. Lee. Using Xenopus tissue cultures for the study of myasthenia Gravis pathogenesis. Developmental Biology. [http://dx.doi.org/10.1016/j.ydbio.2015.02.017 doi:10.1016/j.ydbio.2015.02.017].
-
-Lansky, Z., M. Braun, A. Lüdecke, M. Schlierf, P.R. ten Wolde, M.E. Janson, and S. Diez. Diffusible Crosslinkers Generate Directed Forces in Microtubule Networks. Cell. [http://dx.doi.org/10.1016/j.cell.2015.01.051 doi:10.1016/j.cell.2015.01.051].
-
-Brideau, C., K. Poon, and P. Stys. 2015. Adaptation of commercial microscopes for advanced imaging applications. 93292U–93292U–10.
-
-Garsha, K., F. Ventura, G. Pestano, M. Otter, D. Nagy, R.B. Nagle, E. Roberts, and M. Barnes. 2015. Multi-modal contrast of tissue anatomy enables correlative biomarker imaging. 931608–931608–15.
-
-Zhu, J., L. Liang, Y. Jiao, L. Liu, and on behalf of the U.S.-China Physical Sciences-Oncology Alliance. 2015. Enhanced Invasion of Metastatic Cancer Cells via Extracellular Matrix Interface. PLoS ONE. 10:e0118058. [http://dx.doi.org/10.1371/journal.pone.0118058 doi:10.1371/journal.pone.0118058].
-
-Stasiuk, G.J., F. Minuzzi, M. Sae-Heng, C. Rivas, H.-P. Juretschke, L. Piemonti, P.R. Allegrini, D. Laurent, A.R. Duckworth, A. Beeby, G.A. Rutter, and N.J. Long. 2015. Dual-Modal Magnetic Resonance/Fluorescent Zinc Probes for Pancreatic β-Cell Mass Imaging. Chem. Eur. J. n/a–n/a. [http://dx.doi.org/10.1002/chem.201406008 doi:10.1002/chem.201406008].
-
-Cadra, S., A. Gucciardi, M.-P. Valignat, O. Theodoly, A. Vacaflores, J.C.D. Houtman, and A.C. Lellouch. ROZA-XL, an improved FRET based biosensor with an increased dynamic range for visualizing Zeta Associated Protein 70 kD (ZAP-70) tyrosine kinase activity in live T cells. Biochemical and Biophysical Research Communications. [http://dx.doi.org/10.1016/j.bbrc.2015.02.117 doi:10.1016/j.bbrc.2015.02.117].
-
-Merighi, A., and L. Lossi eds. . 2015. Single Molecule Localization Microscopy to Study Neuronal Microtubule Organization - Springer. Springer New York.
-
-Naito, H., and G. Goshima. 2015. NACK Kinesin Is Required for Metaphase Chromosome Alignment and Cytokinesis in the Moss Physcomitrella Patens. Cell Structure and Function. 40:31–41. [http://dx.doi.org/10.1247/csf.14016 doi:10.1247/csf.14016].
-
-Fan, Y., Z. Chen, and H.-W. Ai. 2015. Monitoring Redox Dynamics in Living Cells with a Redox-Sensitive Red Fluorescent Protein. Anal. Chem. [http://dx.doi.org/10.1021/ac5041988 doi:10.1021/ac5041988].
-
-Abiraman, K., S.U. Pol, M.A. O’Bara, G.-D. Chen, Z.M. Khaku, J. Wang, D. Thorn, B.H. Vedia, E.C. Ekwegbalu, J.-X. Li, R.J. Salvi, and F.J. Sim. 2015. Anti-Muscarinic Adjunct Therapy Accelerates Functional Human Oligodendrocyte Repair. J. Neurosci. 35:3676–3688. [http://dx.doi.org/10.1523/JNEUROSCI.3510-14.2015 doi:10.1523/JNEUROSCI.3510-14.2015].
-
-Smith, K., R.A. Rush, and M.L. Rogers. 2015. Characterisation and changes in neurotrophin receptor p75 expressing motor neurons in SOD1G93AG1H mice. J. Comp. Neurol. n/a–n/a. [http://dx.doi.org/10.1002/cne.23763 doi:10.1002/cne.23763].
-
-Ben M’Barek, K., D. Molino, S. Quignard, M.-A. Plamont, Y. Chen, P. Chavrier, and J. Fattaccioli. 2015. Phagocytosis of immunoglobulin-coated emulsion droplets. Biomaterials. 51:270–277. [http://dx.doi.org/10.1016/j.biomaterials.2015.02.030 doi:10.1016/j.biomaterials.2015.02.030].
-
-Smith, K., R.A. Rush, and M.L. Rogers. 2015. Characterisation and changes in neurotrophin receptor p75 expressing motor neurons in SOD1G93AG1H mice. J. Comp. Neurol. n/a–n/a. [http://dx.doi.org/10.1002/cne.23763 doi:10.1002/cne.23763].
-
-Sharifian, H., F. Lampert, K. Stojanovski, S. Regot, S. Vaga, R. Buser, S.S. Lee, H. Koeppl, F. Posas, S. Pelet, and M. Peter. 2015. Parallel feedback loops control the basal activity of the HOG MAPK signaling cascade. Integr. Biol. [http://dx.doi.org/10.1039/C4IB00299G doi:10.1039/C4IB00299G].
-
-Chen, Y., Y.-C. Lin, T.-W. Kuo, and Z.A. Knight. 2015. Sensory Detection of Food Rapidly Modulates Arcuate Feeding Circuits. Cell. 160:829–841. [http://dx.doi.org/10.1016/j.cell.2015.01.033 doi:10.1016/j.cell.2015.01.033].
-
-Garg, V., T.G. Taylor, M. Warren, P.W. Venable, K.J. Sciuto, J. Shibayama, and A.V. Zaitsev. 2015. β-Adrenergic Stimulation and Rapid Pacing Mutually Promote Heterogeneous Electrical Failure and Ventricular Fibrillation in the Globally Ischemic Heart. American Journal of Physiology - Heart and Circulatory Physiology. ajpheart.00768.2014. [http://dx.doi.org/10.1152/ajpheart.00768.2014 doi:10.1152/ajpheart.00768.2014].
-
-Tourbillon, C., F. Miomandre, J.F. Audibert, M. Lepeltier, P. Martin, and J.C. Lacroix. Dual electrochemical modulation of reflectivity and luminescence on plasmonic gratings investigated by fluorescence microscopy coupled to electrochemistry. Electrochimica Acta. [http://dx.doi.org/10.1016/j.electacta.2015.02.141 doi:10.1016/j.electacta.2015.02.141].
-
-Skinner, J.P., and S.Y. Tetin. 2015. Rapid single-molecule imaging in cyclic olefin copolymer channels. Microsc. Res. Tech. n/a–n/a. [http://dx.doi.org/10.1002/jemt.22476 doi:10.1002/jemt.22476].
-
-Hariadi, R.F., B. Yurke, and E. Winfree. 2015. Thermodynamics and kinetics of DNA nanotube polymerization from single-filament measurements. Chem. Sci. [http://dx.doi.org/10.1039/C3SC53331 doi:10.1039/C3SC53331].
-
-Blanchoud, S., C. Busso, F. Naef, and P. Gönczy. 2015. Quantitative Analysis and Modeling Probe Polarity Establishment in C. elegans Embryos. Biophysical Journal. 108:799–809. [http://dx.doi.org/10.1016/j.bpj.2014.12.022 doi:10.1016/j.bpj.2014.12.022].
-
-Groten, C.J., and N.S. Magoski. 2015. PKC Enhances the Capacity for Secretion by Rapidly Recruiting Covert Voltage-Gated Ca2+ Channels to the Membrane. J. Neurosci. 35:2747–2765. [http://dx.doi.org/10.1523/JNEUROSCI.3581-14.2015 doi:10.1523/JNEUROSCI.3581-14.2015].
-
-Gupta, G., P. Nowak-Sliwinska, N. Herrero, P.J. Dyson, and B. Therrien. Increasing the selectivity of biologically active tetranuclear arene ruthenium assemblies. Journal of Organometallic Chemistry. [http://dx.doi.org/10.1016/j.jorganchem.2015.02.004 doi:10.1016/j.jorganchem.2015.02.004].
-
-Kim, J.H., Y. Ren, W.P. Ng, S. Li, S. Son, Y.-S. Kee, S. Zhang, G. Zhang, D.A. Fletcher, D.N. Robinson, and E.H. Chen. Mechanical Tension Drives Cell Membrane Fusion. Developmental Cell. [http://dx.doi.org/10.1016/j.devcel.2015.01.005 doi:10.1016/j.devcel.2015.01.005].
-
-Tangen, U., A. Sharma, P. Wagler, and J.S. McCaskill. 2015. On demand nanoliter-scale microfluidic droplet generation, injection, and mixing using a passive microfluidic device. Biomicrofluidics. 9:014119. [http://dx.doi.org/10.1063/1.4907895 doi:10.1063/1.4907895].
-
-Ding, G., W. Zou, H. Zhang, Y. Xue, Y. Cai, G. Huang, L. Chen, S. Duan, and L. Kang. 2015. In Vivo Tactile Stimulation-Evoked Responses in Caenorhabditis elegans Amphid Sheath Glia. PLoS ONE. 10:e0117114. [http://dx.doi.org/10.1371/journal.pone.0117114 doi:10.1371/journal.pone.0117114].
-
-Dey, G., A. Jaimovich, S.R. Collins, A. Seki, and T. Meyer. 2015. Systematic Discovery of Human Gene Function and Principles of Modular Organization through Phylogenetic Profiling. Cell Reports. 10:993–1006. [http://dx.doi.org/10.1016/j.celrep.2015.01.025 doi:10.1016/j.celrep.2015.01.025].
-
-Reinhart, W.F., J.G. Reifenberger, D. Gupta, A. Muralidhar, J. Sheats, H. Cao, and K.D. Dorfman. 2015. Distribution of distances between DNA barcode labels in nanochannels close to the persistence length. The Journal of Chemical Physics. 142:064902. [http://dx.doi.org/10.1063/1.4907552 doi:10.1063/1.4907552].
-
-Breslin, J.W., X.E. Zhang, R.A. Worthylake, and F.M. Souza-Smith. 2015. Involvement of Local Lamellipodia in Endothelial Barrier Function. PLoS ONE. 10:e0117970. [http://dx.doi.org/10.1371/journal.pone.0117970 doi:10.1371/journal.pone.0117970].
-
-Nicholas, M.P., P. Höök, S. Brenner, C.L. Wynne, R.B. Vallee, and A. Gennerich. 2015. Control of cytoplasmic dynein force production and processivity by its C-terminal domain. Nat Commun. 6. [http://dx.doi.org/10.1038/ncomms7206 doi:10.1038/ncomms7206].
-
-Liang, X., D.S.K. Samways, K. Wolf, E.A. Bowles, J.P. Richards, J. Bruno, S. Dutertre, R.J. DiPaolo, and T.M. Egan. 2015. Quantifying Ca2+ Current and Permeability in ATP-gated P2X7 Receptors. J. Biol. Chem. jbc.M114.627810. [http://dx.doi.org/10.1074/jbc.M114.627810 doi:10.1074/jbc.M114.627810].
-
-Roelants, F.M., B.M. Su, J. von Wulffen, S. Ramachandran, E. Sartorel, A.E. Trott, and J. Thorner. 2015. Protein kinase Gin4 negatively regulates flippase function and controls plasma membrane asymmetry. J Cell Biol. 208:299–311. [http://dx.doi.org/10.1083/jcb.201410076 doi:10.1083/jcb.201410076].
-
-Beekharry, C.C., G.Z. Zhu, and N.S. Magoski. Role for electrical synapses in shaping the output of coupled peptidergic neurons from Lymnaea. Brain Research. [http://dx.doi.org/10.1016/j.brainres.2015.01.039 doi:10.1016/j.brainres.2015.01.039].
-
-Cao, W.S., J.C. Livesey, and R.F. Halliwell. 2015. An evaluation of a human stem cell line to identify risk of developmental neurotoxicity with antiepileptic drugs. Toxicology in Vitro. 29:592–599. [http://dx.doi.org/10.1016/j.tiv.2015.01.010 doi:10.1016/j.tiv.2015.01.010].
-
-Eicher, D., N. Ramanathan, and C.A. Merten. 2015. Soft compartmentalization: Combining droplet-based microfluidics with freely accessible cells. Eng. Life Sci. n/a–n/a. [http://dx.doi.org/10.1002/elsc.201400184 doi:10.1002/elsc.201400184].
-
-Ding, Y., J. Li, J.R. Enterina, Y. Shen, I. Zhang, P.H. Tewson, G.C.H. Mo, J. Zhang, A.M. Quinn, T.E. Hughes, D. Maysinger, S.C. Alford, Y. Zhang, and R.E. Campbell. 2015. Ratiometric biosensors based on dimerization-dependent fluorescent protein exchange. Nat Meth. 12:195–198. [http://dx.doi.org/10.1038/nmeth.3261 doi:10.1038/nmeth.3261].
-
-Wang, X., J. Liu, Z. Zhu, and G. Ou. The heparan sulfate-modifying enzyme glucuronyl C5-epimerase HSE-5 controls Caenorhabditis elegans Q neuroblast polarization during migration. Developmental Biology. [http://dx.doi.org/10.1016/j.ydbio.2015.01.007 doi:10.1016/j.ydbio.2015.01.007].
-
-Sgro, A.E., D.J. Schwab, J. Noorbakhsh, T. Mestler, P. Mehta, and T. Gregor. 2015. From intracellular signaling to population oscillations: bridging size‐ and time‐scales in collective behavior. Molecular Systems Biology. 11:779. [http://dx.doi.org/10.15252/msb.20145352 doi:10.15252/msb.20145352].
-
-Nakai, Y., M. Ozeki, T. Hiraiwa, R. Tanimoto, A. Funahashi, N. Hiroi, A. Taniguchi, S. Nonaka, V. Boilot, R. Shrestha, J. Clark, N. Tamura, V.M. Draviam, and H. Oku. 2015. High-speed microscopy with an electrically tunable lens to image the dynamics of in vivo molecular complexes. Review of Scientific Instruments. 86:013707. [http://dx.doi.org/10.1063/1.4905330 doi:10.1063/1.4905330].
-
-Miki, T., M. Nishina, and G. Goshima. 2015. RNAi screening identifies the armadillo repeat-containing kinesins responsible for microtubule-dependent nuclear positioning in Physcomitrella patens. Plant Cell Physiol. pcv002. [http://dx.doi.org/10.1093/pcp/pcv002 doi:10.1093/pcp/pcv002].
-
-Toro, C.A., S. Eger, L. Veliz, P. Sotelo-Hitschfeld, D. Cabezas, M.A. Castro, K. Zimmermann, and S. Brauchi. 2015. Agonist-Dependent Modulation of Cell Surface Expression of the Cold Receptor TRPM8. J. Neurosci. 35:571–582. [http://dx.doi.org/10.1523/JNEUROSCI.3820-13.2015 doi:10.1523/JNEUROSCI.3820-13.2015].
-
-Charier, D., O. Beauchet, M. Bell, B. Brugg, R. Bartha, and C. Annweiler. 2015. Memantine Plus Vitamin D Prevents Axonal Degeneration Caused by Lysed Blood. ACS Chem Neurosci. [http://dx.doi.org/10.1021/cn500303k doi:10.1021/cn500303k].
-
-Rohn, J.L., J.V. Patel, B. Neumann, J. Bulkescher, N. Mchedlishvili, R.C. McMullan, O.A. Quintero, J. Ellenberg, and B. Baum. 2014. Myo19 Ensures Symmetric Partitioning of Mitochondria and Coupling of Mitochondrial Segregation to Cell Division. Curr Biol. 24:2598–2605. [http://dx.doi.org/10.1016/j.cub.2014.09.045 doi:10.1016/j.cub.2014.09.045].
-
-Daly, K.M., Y. Li, and D.-T. Lin. 2001. Imaging the Insertion of Superecliptic pHluorin-Labeled Dopamine D2 Receptor Using Total Internal Reflection Fluorescence Microscopy. In Current Protocols in Neuroscience. John Wiley & Sons, Inc.
-
-Crick, A.J., E. Cammarota, K. Moulang, J. Kotar, and P. Cicuta. 2015. Chapter 26 - Advances in single-cell experimental design made possible by automated imaging platforms with feedback through segmentation. In Methods in Cell Biology. E.K. Paluch, editor. Academic Press. 471–488.
-
-Foust, A.J., V. Zampini, D. Tanese, E. Papagiakoumou, and V. Emiliani. 2015. Computer-generated holography enhances voltage dye fluorescence discrimination in adjacent neuronal structures. Neurophoton. 2:021007–021007. [http://dx.doi.org/10.1117/1.NPh.2.2.021007 doi:10.1117/1.NPh.2.2.021007].
-
-Pereira, P.M., P. Almada, and R. Henriques. 2015. Chapter 7 - High-content 3D multicolor super-resolution localization microscopy. In Methods in Cell Biology. E.K. Paluch, editor. Academic Press. 95–117.
-
-Das, S., T. Yin, Q. Yang, J. Zhang, Y.I. Wu, and J. Yu. 2015. Single-molecule tracking of small GTPase Rac1 uncovers spatial regulation of membrane translocation and mechanism for polarized signaling. PNAS. 112:E267–E276. [http://dx.doi.org/10.1073/pnas.1409667112 doi:10.1073/pnas.1409667112].
-
-
+Lee, E.E., J. Ma, A. Sacharidou, W. Mi, V.K. Salato, N. Nguyen, Y.
+Jiang, J.M. Pascual, P.E. North, P.W. Shaul, M. Mettlen, and R.C. Wang.
+A Protein Kinase C Phosphorylation Motif in GLUT1 Affects Glucose
+Transport and is Mutated in GLUT1 Deficiency Syndrome. Molecular Cell.
+[<doi:10.1016/j.molcel.2015.04.015>](http://dx.doi.org/10.1016/j.molcel.2015.04.015).
+
+Kapsner, K., and F.C. Simmel. 2015. Partitioning Variability of a
+Compartmentalized In Vitro Transcriptional Thresholding Circuit. ACS
+Synth. Biol.
+[<doi:10.1021/acssynbio.5b00051>](http://dx.doi.org/10.1021/acssynbio.5b00051).
+
+Reifenberger, J.G., K.D. Dorfman, and H. Cao. 2015. Topological events
+in single molecules of E. coli DNA confined in nanochannels. The
+Analyst.
+[<doi:10.1039/C5AN00343A>](http://dx.doi.org/10.1039/C5AN00343A).
+
+Culhane, K.M., K. Spendier, and A.O. Pinchuk. 2015. Functionalized
+fluorescent silver nanoparticle surfaces for novel sensing and imaging
+techniques. 948106–948106–9.
+[<doi:10.1117/12.2177195>](http://dx.doi.org/10.1117/12.2177195)
+
+Lehmann, M., G. Lichtner, H. Klenz, and J. Schmoranzer. 2015. Novel
+organic dyes for multicolor localization-based super-resolution
+microscopy. J. Biophoton. n/a–n/a.
+[<doi:10.1002/jbio.201500119>](http://dx.doi.org/10.1002/jbio.201500119).
+
+Goins, L.M., and R.D. Mullins. 2015. A novel tropomyosin isoform
+functions at the mitotic spindle and Golgi in Drosophila. Mol. Biol.
+Cell. mbc.E14–12–1619.
+[<doi:10.1091/mbc.E14-12-1619>](http://dx.doi.org/10.1091/mbc.E14-12-1619).
+
+Byrnes, S.A., J.D. Bishop, L. Lafleur, J.R. Buser, B. Lutz, and P.
+Yager. 2015. One-step purification and concentration of DNA in porous
+membranes for point-of-care applications. Lab Chip.
+[<doi:10.1039/C5LC00317B>](http://dx.doi.org/10.1039/C5LC00317B).
+
+Van Zon, J.S., S. Kienle, G. Huelsz-Prince, M. Barkoulas, and A. van
+Oudenaarden. 2015. Cells change their sensitivity to an EGF morphogen
+gradient to control EGF-induced gene expression. Nat Commun. 6.
+[<doi:10.1038/ncomms8053>](http://dx.doi.org/10.1038/ncomms8053).
+
+Hamada, M.S., and M.H.P. Kole. 2015. Myelin Loss and Axonal Ion Channel
+Adaptations Associated with Gray Matter Neuronal Hyperexcitability. J.
+Neurosci. 35:7272–7286.
+[<doi:10.1523/JNEUROSCI.4747-14.2015>](http://dx.doi.org/10.1523/JNEUROSCI.4747-14.2015).
+
+Adderley, S.P., C. Lawrence, E. Madonia, J.O. Olubadewo, and J.W.
+Breslin. 2015. Histamine activates p38 MAP kinase and alters local
+lamellipodia dynamics, reducing endothelial barrier integrity and
+eliciting central movement of actin fibers. American Journal of
+Physiology - Cell Physiology. ajpcell.00096.2015.
+[<doi:10.1152/ajpcell.00096.2015>](http://dx.doi.org/10.1152/ajpcell.00096.2015).
+
+Kelly, D.J., S.C. Warren, D. Alibhai, S. Kumar, Y. Alexandrov, I. Munro,
+A. Margineanu, J. McCormack, N.J. Welsh, R.A. Serwa, E. Thinon, M.
+Kongsema, J. McGinty, C. Talbot, E.J. Murray, F. Stuhmeier, M.A.A. Neil,
+E.W. Tate, V.M.M. Braga, E.W.-F. Lam, C. Dunsby, and P.M.W. French.
+2015. Automated multiwell fluorescence lifetime imaging for Förster
+resonance energy transfer assays and high content analysis. Anal.
+Methods. 7:4071–4089.
+[<doi:10.1039/C5AY00244C>](http://dx.doi.org/10.1039/C5AY00244C).
+
+Long, A.H., W.M. Haso, J.F. Shern, K.M. Wanhainen, M. Murgai, M.
+Ingaramo, J.P. Smith, A.J. Walker, M.E. Kohler, V.R. Venkateshwara, R.N.
+Kaplan, G.H. Patterson, T.J. Fry, R.J. Orentas, and C.L. Mackall. 2015.
+4-1BB costimulation ameliorates T cell exhaustion induced by tonic
+signaling of chimeric antigen receptors. Nat Med. advance online
+publication. [<doi:10.1038/nm.3838>](http://dx.doi.org/10.1038/nm.3838).
+
+Petryayeva, E., and W.R. Algar. 2015. Single-step bioassays in serum and
+whole blood with a smartphone, quantum dots and paper-in-PDMS chips. The
+Analyst.
+[<doi:10.1039/C5AN00475F>](http://dx.doi.org/10.1039/C5AN00475F).
+
+Esmaeeli Nieh, S., M.R.Z. Madou, M. Sirajuddin, B. Fregeau, D. McKnight,
+K. Lexa, J. Strober, C. Spaeth, B.E. Hallinan, N. Smaoui, J.G. Pappas,
+T.A. Burrow, M.T. McDonald, M. Latibashvili, E. Leshinsky-Silver, D.
+Lev, L. Blumkin, R.D. Vale, A.J. Barkovich, and E.H. Sherr. 2015. De
+novo mutations in KIF1A cause progressive encephalopathy and brain
+atrophy. Ann Clin Transl Neurol. n/a–n/a.
+[<doi:10.1002/acn3.198>](http://dx.doi.org/10.1002/acn3.198).
+
+Piet, R., A. Fraissenon, U. Boehm, and A.E. Herbison. 2015. Estrogen
+Permits Vasopressin Signaling in Preoptic Kisspeptin Neurons in the
+Female Mouse. J. Neurosci. 35:6881–6892.
+[<doi:10.1523/JNEUROSCI.4587-14.2015>](http://dx.doi.org/10.1523/JNEUROSCI.4587-14.2015).
+
+Zhou, X., D.K. Halladin, E.R. Rojas, E.F. Koslover, T.K. Lee, K.C.
+Huang, and J.A. Theriot. 2015. Mechanical crack propagation drives
+millisecond daughter cell separation in Staphylococcus aureus. Science.
+348:574–578.
+[<doi:10.1126/science.aaa1511>](http://dx.doi.org/10.1126/science.aaa1511).
+
+Bukhari, M., H. Deng, N. Jones, Z. Towne, C.D. Woodworth, and D.S.K.
+Samways. 2015. Selective permeabilization of cervical cancer cells to an
+ionic DNA-binding cytotoxin by activation of P2Y receptors. FEBS
+Letters. 589:1498–1504.
+[<doi:10.1016/j.febslet.2015.04.044>](http://dx.doi.org/10.1016/j.febslet.2015.04.044).
+
+Song, J., J.H. Shawky, Y. Kim, M. Hazar, P.R. LeDuc, M. Sitti, and L.A.
+Davidson. 2015. Controlled surface topography regulates collective 3D
+migration by epithelial–mesenchymal composite embryonic tissues.
+Biomaterials. 58:1–9.
+[<doi:10.1016/j.biomaterials.2015.04.021>](http://dx.doi.org/10.1016/j.biomaterials.2015.04.021).
+
+Viswanathan, S., M.E. Williams, E.B. Bloss, T.J. Stasevich, C.M. Speer,
+A. Nern, B.D. Pfeiffer, B.M. Hooks, W.-P. Li, B.P. English, T. Tian,
+G.L. Henry, J.J. Macklin, R. Patel, C.R. Gerfen, X. Zhuang, Y. Wang,
+G.M. Rubin, and L.L. Looger. 2015. High-performance probes for light and
+electron microscopy. Nat Meth. advance online publication.
+[<doi:10.1038/nmeth.3365>](http://dx.doi.org/10.1038/nmeth.3365).
+
+Kratsios, P., B. Pinan-Lucarré, S.Y. Kerk, A. Weinreb, J.-L. Bessereau,
+and O. Hobert. 2015. Transcriptional Coordination of Synaptogenesis and
+Neurotransmitter Signaling. Current Biology. 25:1282–1295.
+[<doi:10.1016/j.cub.2015.03.028>](http://dx.doi.org/10.1016/j.cub.2015.03.028).
+
+Luongo, F.J., M.E. Horn, and V.S. Sohal. Putative Microcircuit-Level
+Substrates for Attention Are Disrupted in Mouse Models of Autism.
+Biological Psychiatry. 0.
+[<doi:10.1016/j.biopsych.2015.04.014>](http://dx.doi.org/10.1016/j.biopsych.2015.04.014).
+
+Yoon, G.S., S. Sud, R.K. Keswani, J. Baik, T.J. Standiford, K.A.
+Stringer, and G.R. Rosania. 2015. Phagocytosed Clofazimine Biocrystals
+can Modulate Innate Immune Signaling by Inhibiting TNFα and Boosting
+IL-1RA Secretion. Mol. Pharmaceutics.
+[<doi:10.1021/acs.molpharmaceut.5b00035>](http://dx.doi.org/10.1021/acs.molpharmaceut.5b00035).
+
+Lewis, O.L., S. Zhang, R.D. Guy, and J.C. del Álamo. 2015. Coordination
+of contractility, adhesion and flow in migrating Physarum amoebae.
+Journal of The Royal Society Interface. 12:20141359.
+[<doi:10.1098/rsif.2014.1359>](http://dx.doi.org/10.1098/rsif.2014.1359).
+
+Chang, C.-L., and J. Liou. 2015. Phosphatidylinositol 4,5-bisphosphate
+Homeostasis Regulated by Nir2 and Nir3 at Endoplasmic Reticulum-Plasma
+Membrane Junctions. J. Biol. Chem. jbc.M114.621375.
+[<doi:10.1074/jbc.M114.621375>](http://dx.doi.org/10.1074/jbc.M114.621375).
+
+Fraccaroli, L., E. Grasso, V. Hauk, D. Paparini, L. Soczewiski, G. Mor,
+C.P. Leirós, and R. Ramhorst. 2015. VIP boosts regulatory T cell
+induction by trophoblast cells in an in vitro model of
+trophoblast–maternal leukocyte interaction. J Leukoc Biol.
+jlb.1A1014–492RR.
+[<doi:10.1189/jlb.1A1014-492RR>](http://dx.doi.org/10.1189/jlb.1A1014-492RR).
+
+Ruffault, P.-L., F. D’Autréaux, J.A. Hayes, M. Nomaksteinsky, S. Autran,
+T. Fujiyama, M. Hoshino, M. Hägglund, O. Kiehn, J.-F. Brunet, G. Fortin,
+and C. Goridis. 2015. The retrotrapezoid nucleus neurons expressing
+Atoh1 and Phox2b are essential for the respiratory response to CO2.
+eLife Sciences. e07051.
+[<doi:10.7554/eLife.07051>](http://dx.doi.org/10.7554/eLife.07051).
+
+Majdi, N., and W. Traunspurger. 2015. Free-Living Nematodes in the
+Freshwater Food Web: A Review. J Nematol. 47:28–44.
+
+Benanti, E.L., C.M. Nguyen, and M.D. Welch. 2015. Virulent Burkholderia
+Species Mimic Host Actin Polymerases to Drive Actin-Based Motility.
+Cell. 161:348–360.
+[<doi:10.1016/j.cell.2015.02.044>](http://dx.doi.org/10.1016/j.cell.2015.02.044).
+
+Zambrano, A., A.S. Zadorin, Y. Rondelez, A. Estévez-Torres, and J.-C.
+Galas. 2015. Pursuit-and-Evasion Reaction-Diffusion Waves in
+Microreactors with Tailored Geometry. J. Phys. Chem. B. 119:5349–5355.
+[<doi:10.1021/jp509474w>](http://dx.doi.org/10.1021/jp509474w).
+
+Tian, D., M. Diao, Y. Jiang, L. Sun, Y. Zhang, Z. Chen, S. Huang, and G.
+Ou. 2015. Anillin Regulates Neuronal Migration and Neurite Growth by
+Linking RhoG to the Actin Cytoskeleton. Current Biology. 25:1135–1145.
+[<doi:10.1016/j.cub.2015.02.072>](http://dx.doi.org/10.1016/j.cub.2015.02.072).
+
+Rühland, S., A. Wechselberger, C. Spitzweg, R. Huss, P.J. Nelson, and H.
+Harz. 2015. Quantification of in vitro mesenchymal stem cell invasion
+into tumor spheroids using selective plane illumination microscopy. J.
+Biomed. Opt. 20:040501–040501.
+[<doi:10.1117/1.JBO.20.4.040501>](http://dx.doi.org/10.1117/1.JBO.20.4.040501).
+
+Wang, L., Y. Yang, and C. Zhang. 2015. Phosphorylation-Directed Assembly
+of a Single Quantum Dot Based Nanosensor for Protein Kinase Assay. Anal.
+Chem. 87:4696–4703.
+[<doi:10.1021/ac504358q>](http://dx.doi.org/10.1021/ac504358q).
+
+Draheim, K.M., X. Li, R. Zhang, O.S. Fisher, G. Villari, T.J. Boggon,
+and D.A. Calderwood. 2015. CCM2–CCM3 interaction stabilizes their
+protein expression and permits endothelial network formation. J Cell
+Biol. 208:987–1001.
+[<doi:10.1083/jcb.201407129>](http://dx.doi.org/10.1083/jcb.201407129).
+
+Fink, G., and J. Löwe. 2015. Reconstitution of a prokaryotic minus
+end-tracking system using TubRC centromeric complexes and tubulin-like
+protein TubZ filaments. PNAS. 112:E1845–E1850.
+[<doi:10.1073/pnas.1423746112>](http://dx.doi.org/10.1073/pnas.1423746112).
+
+Garofalo, S., G. D’Alessandro, G. Chece, F. Brau, L. Maggi, A. Rosa, A.
+Porzia, F. Mainiero, V. Esposito, C. Lauro, G. Benigni, G. Bernardini,
+A. Santoni, and C. Limatola. 2015. Enriched environment reduces glioma
+growth through immune and non-immune mechanisms in mice. Nat Commun. 6.
+[<doi:10.1038/ncomms7623>](http://dx.doi.org/10.1038/ncomms7623).
+
+Spiró, Z., and P. Gönczy. 2015. Polarity-Dependent Asymmetric
+Distribution and MEX-5/6–Mediated Translational Activation of the Era-1
+mRNA in C. elegans Embryos. PLoS ONE. 10:e0120984.
+[<doi:10.1371/journal.pone.0120984>](http://dx.doi.org/10.1371/journal.pone.0120984).
+
+Paparini, D., S. Gori, E. Grasso, W. Scordo, G. Calo, C. Pérez Leirós,
+R. Ramhorst, and G. Salamone. 2015. Acetylcholine contributes to control
+the physiological inflammatory response during the peri-implantation
+period. Acta Physiol. n/a–n/a.
+[<doi:10.1111/apha.12494>](http://dx.doi.org/10.1111/apha.12494).
+
+Peeters, S.G.J.A., C.M.L. Zegers, R. Biemans, N.G. Lieuwes, R.G.P.M. van
+Stiphout, A. Yaromina, J.D. Sun, C.P. Hart, A.D. Windhorst, W. van
+Elmpt, L.J. Dubois, and P. Lambin. 2015. TH-302 in combination with
+radiotherapy enhances the therapeutic outcome and is associated with
+pretreatment \[18F\]HX4 hypoxia PET imaging. Clin Cancer Res.
+clincanres.0018.2015.
+[<doi:10.1158/1078-0432.CCR-15-0018>](http://dx.doi.org/10.1158/1078-0432.CCR-15-0018).
+
+Sharma, P.M., B. Ponnaiya, M. Taveras, I. Shuryak, H. Turner, and D.J.
+Brenner. 2015. High Throughput Measurement of γH2AX DSB Repair Kinetics
+in a Healthy Human Population. PLoS ONE. 10:e0121083.
+[<doi:10.1371/journal.pone.0121083>](http://dx.doi.org/10.1371/journal.pone.0121083).
+
+Stuurman, N., and K. Thorn. 2015. Digital Microscopy. In Handbook of
+Digital Imaging. John Wiley & Sons, Ltd.
+
+Abdallah, B.G., S. Roy-Chowdhury, J. Coe, P. Fromme, and A. Ros. 2015.
+High Throughput Protein Nanocrystal Fractionation in a Microfluidic
+Sorter. Anal. Chem.
+[<doi:10.1021/acs.analchem.5b00589>](http://dx.doi.org/10.1021/acs.analchem.5b00589).
+
+Ju, Q., X. Chen, F. Ai, D. Peng, X. Lin, W. Kong, P. Shi, G. Zhu, and F.
+Wang. 2015. An upconversion nanoprobe operating in the first biological
+window. J. Mater. Chem. B.
+[<doi:10.1039/C5TB00025D>](http://dx.doi.org/10.1039/C5TB00025D).
+
+Abrahamsson, S., M. McQuilken, S.B. Mehta, A. Verma, J. Larsch, R. Ilic,
+R. Heintzmann, C.I. Bargmann, A.S. Gladfelter, and R. Oldenbourg. 2015.
+MultiFocus Polarization Microscope (MF-PolScope) for 3D polarization
+imaging of up to 25 focal planes simultaneously. Optics Express.
+23:7734.
+[<doi:10.1364/OE.23.007734>](http://dx.doi.org/10.1364/OE.23.007734).
+
+Lampron, A., A. Larochelle, N. Laflamme, P. Préfontaine, M.-M. Plante,
+M.G. Sánchez, V.W. Yong, P.K. Stys, M.-È. Tremblay, and S. Rivest. 2015.
+Inefficient clearance of myelin debris by microglia impairs
+remyelinating processes. J Exp Med. jem.20141656.
+[<doi:10.1084/jem.20141656>](http://dx.doi.org/10.1084/jem.20141656).
+
+Lizunov, V.A., K.G. Stenkula, P.S. Blank, A. Troy, J.-P. Lee, M.C.
+Skarulis, S.W. Cushman, and J. Zimmerberg. 2015. Human Adipose Cells In
+Vitro Are Either Refractory or Responsive to Insulin, Reflecting Host
+Metabolic State. PLoS ONE. 10:e0119291.
+[<doi:10.1371/journal.pone.0119291>](http://dx.doi.org/10.1371/journal.pone.0119291).
+
+Li, W., P. Yi, and G. Ou. 2015. Somatic CRISPR–Cas9-induced mutations
+reveal roles of embryonically essential dynein chains in Caenorhabditis
+elegans cilia. J Cell Biol. 208:683–692.
+[<doi:10.1083/jcb.201411041>](http://dx.doi.org/10.1083/jcb.201411041).
+
+Picco, A., M. Mund, J. Ries, F. Nédélec, and M. Kaksonen. 2015.
+Visualizing the functional architecture of the endocytic machinery.
+eLife Sciences. 4:e04535.
+[<doi:10.7554/eLife.04535>](http://dx.doi.org/10.7554/eLife.04535).
+
+Ulengin, I., J.J. Park, and T.H. Lee. 2015. ER network formation and
+membrane fusion by atlastin1/SPG3A disease variants. Mol. Biol. Cell.
+mbc.E14–10–1447. \[<http://dx.doi.org/10.1091/mbc.E14-10-1447>
+[<doi:10.1091/mbc.E14-10-1447>](http://dx.doi.org/10.1091/mbc.E14-10-1447).
+
+Blohberger, J., L. Kunz, D. Einwang, U. Berg, D. Berg, S.R. Ojeda, G.A.
+Dissen, T. Fröhlich, G.J. Arnold, H. Soreq, H. Lara, and A. Mayerhofer.
+2015. Readthrough acetylcholinesterase (AChE-R) and regulated necrosis:
+pharmacological targets for the regulation of ovarian functions? Cell
+Death Dis. 6:e1685.
+[<doi:10.1038/cddis.2015.51>](http://dx.doi.org/10.1038/cddis.2015.51).
+
+O’Toole, M., P. Lamoureux, and K.E. Miller. 2015. Measurement of
+Subcellular Force Generation in Neurons. Biophysical Journal.
+108:1027–1037.
+[<doi:10.1016/j.bpj.2015.01.021>](http://dx.doi.org/10.1016/j.bpj.2015.01.021).
+
+Spahn, C., F. Cella-Zannacchi, U. Endesfelder, and M. Heilemann. 2015.
+Correlative super-resolution imaging of RNA polymerase distribution and
+dynamics, bacterial membrane and chromosomal structure in Escherichia
+coli. Methods Appl. Fluoresc. 3:014005.
+[<doi:10.1088/2050-6120/3/1/014005>](http://dx.doi.org/10.1088/2050-6120/3/1/014005).
+
+Mader, A., B. von Bronk, B. Ewald, S. Kesel, K. Schnetz, E. Frey, and M.
+Opitz. 2015. Amount of Colicin Release in Escherichia coli Is Regulated
+by Lysis Gene Expression of the Colicin E2 Operon. PLoS ONE.
+10:e0119124.
+[<doi:10.1371/journal.pone.0119124>](http://dx.doi.org/10.1371/journal.pone.0119124).
+
+Fong, M., J.P. Newman, S.M. Potter, and P. Wenner. 2015. Upward synaptic
+scaling is dependent on neurotransmission rather than spiking. Nat
+Commun. 6.
+[<doi:10.1038/ncomms7339>](http://dx.doi.org/10.1038/ncomms7339).
+
+Yeo, H.L., J.Y.N. Lim, Y. Fukami, N. Yuki, and C.W. Lee. Using Xenopus
+tissue cultures for the study of myasthenia Gravis pathogenesis.
+Developmental Biology.
+[<doi:10.1016/j.ydbio.2015.02.017>](http://dx.doi.org/10.1016/j.ydbio.2015.02.017).
+
+Lansky, Z., M. Braun, A. Lüdecke, M. Schlierf, P.R. ten Wolde, M.E.
+Janson, and S. Diez. Diffusible Crosslinkers Generate Directed Forces in
+Microtubule Networks. Cell.
+[<doi:10.1016/j.cell.2015.01.051>](http://dx.doi.org/10.1016/j.cell.2015.01.051).
+
+Brideau, C., K. Poon, and P. Stys. 2015. Adaptation of commercial
+microscopes for advanced imaging applications. 93292U–93292U–10.
+
+Garsha, K., F. Ventura, G. Pestano, M. Otter, D. Nagy, R.B. Nagle, E.
+Roberts, and M. Barnes. 2015. Multi-modal contrast of tissue anatomy
+enables correlative biomarker imaging. 931608–931608–15.
+
+Zhu, J., L. Liang, Y. Jiao, L. Liu, and on behalf of the U.S.-China
+Physical Sciences-Oncology Alliance. 2015. Enhanced Invasion of
+Metastatic Cancer Cells via Extracellular Matrix Interface. PLoS ONE.
+10:e0118058.
+[<doi:10.1371/journal.pone.0118058>](http://dx.doi.org/10.1371/journal.pone.0118058).
+
+Stasiuk, G.J., F. Minuzzi, M. Sae-Heng, C. Rivas, H.-P. Juretschke, L.
+Piemonti, P.R. Allegrini, D. Laurent, A.R. Duckworth, A. Beeby, G.A.
+Rutter, and N.J. Long. 2015. Dual-Modal Magnetic Resonance/Fluorescent
+Zinc Probes for Pancreatic β-Cell Mass Imaging. Chem. Eur. J. n/a–n/a.
+[<doi:10.1002/chem.201406008>](http://dx.doi.org/10.1002/chem.201406008).
+
+Cadra, S., A. Gucciardi, M.-P. Valignat, O. Theodoly, A. Vacaflores,
+J.C.D. Houtman, and A.C. Lellouch. ROZA-XL, an improved FRET based
+biosensor with an increased dynamic range for visualizing Zeta
+Associated Protein 70 kD (ZAP-70) tyrosine kinase activity in live T
+cells. Biochemical and Biophysical Research Communications.
+[<doi:10.1016/j.bbrc.2015.02.117>](http://dx.doi.org/10.1016/j.bbrc.2015.02.117).
+
+Merighi, A., and L. Lossi eds. . 2015. Single Molecule Localization
+Microscopy to Study Neuronal Microtubule Organization - Springer.
+Springer New York.
+
+Naito, H., and G. Goshima. 2015. NACK Kinesin Is Required for Metaphase
+Chromosome Alignment and Cytokinesis in the Moss Physcomitrella Patens.
+Cell Structure and Function. 40:31–41.
+[<doi:10.1247/csf.14016>](http://dx.doi.org/10.1247/csf.14016).
+
+Fan, Y., Z. Chen, and H.-W. Ai. 2015. Monitoring Redox Dynamics in
+Living Cells with a Redox-Sensitive Red Fluorescent Protein. Anal. Chem.
+[<doi:10.1021/ac5041988>](http://dx.doi.org/10.1021/ac5041988).
+
+Abiraman, K., S.U. Pol, M.A. O’Bara, G.-D. Chen, Z.M. Khaku, J. Wang, D.
+Thorn, B.H. Vedia, E.C. Ekwegbalu, J.-X. Li, R.J. Salvi, and F.J. Sim.
+2015. Anti-Muscarinic Adjunct Therapy Accelerates Functional Human
+Oligodendrocyte Repair. J. Neurosci. 35:3676–3688.
+[<doi:10.1523/JNEUROSCI.3510-14.2015>](http://dx.doi.org/10.1523/JNEUROSCI.3510-14.2015).
+
+Smith, K., R.A. Rush, and M.L. Rogers. 2015. Characterisation and
+changes in neurotrophin receptor p75 expressing motor neurons in
+SOD1G93AG1H mice. J. Comp. Neurol. n/a–n/a.
+[<doi:10.1002/cne.23763>](http://dx.doi.org/10.1002/cne.23763).
+
+Ben M’Barek, K., D. Molino, S. Quignard, M.-A. Plamont, Y. Chen, P.
+Chavrier, and J. Fattaccioli. 2015. Phagocytosis of
+immunoglobulin-coated emulsion droplets. Biomaterials. 51:270–277.
+[<doi:10.1016/j.biomaterials.2015.02.030>](http://dx.doi.org/10.1016/j.biomaterials.2015.02.030).
+
+Smith, K., R.A. Rush, and M.L. Rogers. 2015. Characterisation and
+changes in neurotrophin receptor p75 expressing motor neurons in
+SOD1G93AG1H mice. J. Comp. Neurol. n/a–n/a.
+[<doi:10.1002/cne.23763>](http://dx.doi.org/10.1002/cne.23763).
+
+Sharifian, H., F. Lampert, K. Stojanovski, S. Regot, S. Vaga, R. Buser,
+S.S. Lee, H. Koeppl, F. Posas, S. Pelet, and M. Peter. 2015. Parallel
+feedback loops control the basal activity of the HOG MAPK signaling
+cascade. Integr. Biol.
+[<doi:10.1039/C4IB00299G>](http://dx.doi.org/10.1039/C4IB00299G).
+
+Chen, Y., Y.-C. Lin, T.-W. Kuo, and Z.A. Knight. 2015. Sensory Detection
+of Food Rapidly Modulates Arcuate Feeding Circuits. Cell. 160:829–841.
+[<doi:10.1016/j.cell.2015.01.033>](http://dx.doi.org/10.1016/j.cell.2015.01.033).
+
+Garg, V., T.G. Taylor, M. Warren, P.W. Venable, K.J. Sciuto, J.
+Shibayama, and A.V. Zaitsev. 2015. β-Adrenergic Stimulation and Rapid
+Pacing Mutually Promote Heterogeneous Electrical Failure and Ventricular
+Fibrillation in the Globally Ischemic Heart. American Journal of
+Physiology - Heart and Circulatory Physiology. ajpheart.00768.2014.
+[<doi:10.1152/ajpheart.00768.2014>](http://dx.doi.org/10.1152/ajpheart.00768.2014).
+
+Tourbillon, C., F. Miomandre, J.F. Audibert, M. Lepeltier, P. Martin,
+and J.C. Lacroix. Dual electrochemical modulation of reflectivity and
+luminescence on plasmonic gratings investigated by fluorescence
+microscopy coupled to electrochemistry. Electrochimica Acta.
+[<doi:10.1016/j.electacta.2015.02.141>](http://dx.doi.org/10.1016/j.electacta.2015.02.141).
+
+Skinner, J.P., and S.Y. Tetin. 2015. Rapid single-molecule imaging in
+cyclic olefin copolymer channels. Microsc. Res. Tech. n/a–n/a.
+[<doi:10.1002/jemt.22476>](http://dx.doi.org/10.1002/jemt.22476).
+
+Hariadi, R.F., B. Yurke, and E. Winfree. 2015. Thermodynamics and
+kinetics of DNA nanotube polymerization from single-filament
+measurements. Chem. Sci.
+[<doi:10.1039/C3SC53331>](http://dx.doi.org/10.1039/C3SC53331).
+
+Blanchoud, S., C. Busso, F. Naef, and P. Gönczy. 2015. Quantitative
+Analysis and Modeling Probe Polarity Establishment in C. elegans
+Embryos. Biophysical Journal. 108:799–809.
+[<doi:10.1016/j.bpj.2014.12.022>](http://dx.doi.org/10.1016/j.bpj.2014.12.022).
+
+Groten, C.J., and N.S. Magoski. 2015. PKC Enhances the Capacity for
+Secretion by Rapidly Recruiting Covert Voltage-Gated Ca2+ Channels to
+the Membrane. J. Neurosci. 35:2747–2765.
+[<doi:10.1523/JNEUROSCI.3581-14.2015>](http://dx.doi.org/10.1523/JNEUROSCI.3581-14.2015).
+
+Gupta, G., P. Nowak-Sliwinska, N. Herrero, P.J. Dyson, and B. Therrien.
+Increasing the selectivity of biologically active tetranuclear arene
+ruthenium assemblies. Journal of Organometallic Chemistry.
+[<doi:10.1016/j.jorganchem.2015.02.004>](http://dx.doi.org/10.1016/j.jorganchem.2015.02.004).
+
+Kim, J.H., Y. Ren, W.P. Ng, S. Li, S. Son, Y.-S. Kee, S. Zhang, G.
+Zhang, D.A. Fletcher, D.N. Robinson, and E.H. Chen. Mechanical Tension
+Drives Cell Membrane Fusion. Developmental Cell.
+[<doi:10.1016/j.devcel.2015.01.005>](http://dx.doi.org/10.1016/j.devcel.2015.01.005).
+
+Tangen, U., A. Sharma, P. Wagler, and J.S. McCaskill. 2015. On demand
+nanoliter-scale microfluidic droplet generation, injection, and mixing
+using a passive microfluidic device. Biomicrofluidics. 9:014119.
+[<doi:10.1063/1.4907895>](http://dx.doi.org/10.1063/1.4907895).
+
+Ding, G., W. Zou, H. Zhang, Y. Xue, Y. Cai, G. Huang, L. Chen, S. Duan,
+and L. Kang. 2015. In Vivo Tactile Stimulation-Evoked Responses in
+Caenorhabditis elegans Amphid Sheath Glia. PLoS ONE. 10:e0117114.
+[<doi:10.1371/journal.pone.0117114>](http://dx.doi.org/10.1371/journal.pone.0117114).
+
+Dey, G., A. Jaimovich, S.R. Collins, A. Seki, and T. Meyer. 2015.
+Systematic Discovery of Human Gene Function and Principles of Modular
+Organization through Phylogenetic Profiling. Cell Reports. 10:993–1006.
+[<doi:10.1016/j.celrep.2015.01.025>](http://dx.doi.org/10.1016/j.celrep.2015.01.025).
+
+Reinhart, W.F., J.G. Reifenberger, D. Gupta, A. Muralidhar, J. Sheats,
+H. Cao, and K.D. Dorfman. 2015. Distribution of distances between DNA
+barcode labels in nanochannels close to the persistence length. The
+Journal of Chemical Physics. 142:064902.
+[<doi:10.1063/1.4907552>](http://dx.doi.org/10.1063/1.4907552).
+
+Breslin, J.W., X.E. Zhang, R.A. Worthylake, and F.M. Souza-Smith. 2015.
+Involvement of Local Lamellipodia in Endothelial Barrier Function. PLoS
+ONE. 10:e0117970.
+[<doi:10.1371/journal.pone.0117970>](http://dx.doi.org/10.1371/journal.pone.0117970).
+
+Nicholas, M.P., P. Höök, S. Brenner, C.L. Wynne, R.B. Vallee, and A.
+Gennerich. 2015. Control of cytoplasmic dynein force production and
+processivity by its C-terminal domain. Nat Commun. 6.
+[<doi:10.1038/ncomms7206>](http://dx.doi.org/10.1038/ncomms7206).
+
+Liang, X., D.S.K. Samways, K. Wolf, E.A. Bowles, J.P. Richards, J.
+Bruno, S. Dutertre, R.J. DiPaolo, and T.M. Egan. 2015. Quantifying Ca2+
+Current and Permeability in ATP-gated P2X7 Receptors. J. Biol. Chem.
+jbc.M114.627810.
+[<doi:10.1074/jbc.M114.627810>](http://dx.doi.org/10.1074/jbc.M114.627810).
+
+Roelants, F.M., B.M. Su, J. von Wulffen, S. Ramachandran, E. Sartorel,
+A.E. Trott, and J. Thorner. 2015. Protein kinase Gin4 negatively
+regulates flippase function and controls plasma membrane asymmetry. J
+Cell Biol. 208:299–311.
+[<doi:10.1083/jcb.201410076>](http://dx.doi.org/10.1083/jcb.201410076).
+
+Beekharry, C.C., G.Z. Zhu, and N.S. Magoski. Role for electrical
+synapses in shaping the output of coupled peptidergic neurons from
+Lymnaea. Brain Research.
+[<doi:10.1016/j.brainres.2015.01.039>](http://dx.doi.org/10.1016/j.brainres.2015.01.039).
+
+Cao, W.S., J.C. Livesey, and R.F. Halliwell. 2015. An evaluation of a
+human stem cell line to identify risk of developmental neurotoxicity
+with antiepileptic drugs. Toxicology in Vitro. 29:592–599.
+[<doi:10.1016/j.tiv.2015.01.010>](http://dx.doi.org/10.1016/j.tiv.2015.01.010).
+
+Eicher, D., N. Ramanathan, and C.A. Merten. 2015. Soft
+compartmentalization: Combining droplet-based microfluidics with freely
+accessible cells. Eng. Life Sci. n/a–n/a.
+[<doi:10.1002/elsc.201400184>](http://dx.doi.org/10.1002/elsc.201400184).
+
+Ding, Y., J. Li, J.R. Enterina, Y. Shen, I. Zhang, P.H. Tewson, G.C.H.
+Mo, J. Zhang, A.M. Quinn, T.E. Hughes, D. Maysinger, S.C. Alford, Y.
+Zhang, and R.E. Campbell. 2015. Ratiometric biosensors based on
+dimerization-dependent fluorescent protein exchange. Nat Meth.
+12:195–198.
+[<doi:10.1038/nmeth.3261>](http://dx.doi.org/10.1038/nmeth.3261).
+
+Wang, X., J. Liu, Z. Zhu, and G. Ou. The heparan sulfate-modifying
+enzyme glucuronyl C5-epimerase HSE-5 controls Caenorhabditis elegans Q
+neuroblast polarization during migration. Developmental Biology.
+[<doi:10.1016/j.ydbio.2015.01.007>](http://dx.doi.org/10.1016/j.ydbio.2015.01.007).
+
+Sgro, A.E., D.J. Schwab, J. Noorbakhsh, T. Mestler, P. Mehta, and T.
+Gregor. 2015. From intracellular signaling to population oscillations:
+bridging size‐ and time‐scales in collective behavior. Molecular Systems
+Biology. 11:779.
+[<doi:10.15252/msb.20145352>](http://dx.doi.org/10.15252/msb.20145352).
+
+Nakai, Y., M. Ozeki, T. Hiraiwa, R. Tanimoto, A. Funahashi, N. Hiroi, A.
+Taniguchi, S. Nonaka, V. Boilot, R. Shrestha, J. Clark, N. Tamura, V.M.
+Draviam, and H. Oku. 2015. High-speed microscopy with an electrically
+tunable lens to image the dynamics of in vivo molecular complexes.
+Review of Scientific Instruments. 86:013707.
+[<doi:10.1063/1.4905330>](http://dx.doi.org/10.1063/1.4905330).
+
+Miki, T., M. Nishina, and G. Goshima. 2015. RNAi screening identifies
+the armadillo repeat-containing kinesins responsible for
+microtubule-dependent nuclear positioning in Physcomitrella patens.
+Plant Cell Physiol. pcv002.
+[<doi:10.1093/pcp/pcv002>](http://dx.doi.org/10.1093/pcp/pcv002).
+
+Toro, C.A., S. Eger, L. Veliz, P. Sotelo-Hitschfeld, D. Cabezas, M.A.
+Castro, K. Zimmermann, and S. Brauchi. 2015. Agonist-Dependent
+Modulation of Cell Surface Expression of the Cold Receptor TRPM8. J.
+Neurosci. 35:571–582.
+[<doi:10.1523/JNEUROSCI.3820-13.2015>](http://dx.doi.org/10.1523/JNEUROSCI.3820-13.2015).
+
+Charier, D., O. Beauchet, M. Bell, B. Brugg, R. Bartha, and C.
+Annweiler. 2015. Memantine Plus Vitamin D Prevents Axonal Degeneration
+Caused by Lysed Blood. ACS Chem Neurosci.
+[<doi:10.1021/cn500303k>](http://dx.doi.org/10.1021/cn500303k).
+
+Rohn, J.L., J.V. Patel, B. Neumann, J. Bulkescher, N. Mchedlishvili,
+R.C. McMullan, O.A. Quintero, J. Ellenberg, and B. Baum. 2014. Myo19
+Ensures Symmetric Partitioning of Mitochondria and Coupling of
+Mitochondrial Segregation to Cell Division. Curr Biol. 24:2598–2605.
+[<doi:10.1016/j.cub.2014.09.045>](http://dx.doi.org/10.1016/j.cub.2014.09.045).
+
+Daly, K.M., Y. Li, and D.-T. Lin. 2001. Imaging the Insertion of
+Superecliptic pHluorin-Labeled Dopamine D2 Receptor Using Total Internal
+Reflection Fluorescence Microscopy. In Current Protocols in
+Neuroscience. John Wiley & Sons, Inc.
+
+Crick, A.J., E. Cammarota, K. Moulang, J. Kotar, and P. Cicuta. 2015.
+Chapter 26 - Advances in single-cell experimental design made possible
+by automated imaging platforms with feedback through segmentation. In
+Methods in Cell Biology. E.K. Paluch, editor. Academic Press. 471–488.
+
+Foust, A.J., V. Zampini, D. Tanese, E. Papagiakoumou, and V. Emiliani.
+2015. Computer-generated holography enhances voltage dye fluorescence
+discrimination in adjacent neuronal structures. Neurophoton.
+2:021007–021007.
+[<doi:10.1117/1.NPh.2.2.021007>](http://dx.doi.org/10.1117/1.NPh.2.2.021007).
+
+Pereira, P.M., P. Almada, and R. Henriques. 2015. Chapter 7 -
+High-content 3D multicolor super-resolution localization microscopy. In
+Methods in Cell Biology. E.K. Paluch, editor. Academic Press. 95–117.
+
+Das, S., T. Yin, Q. Yang, J. Zhang, Y.I. Wu, and J. Yu. 2015.
+Single-molecule tracking of small GTPase Rac1 uncovers spatial
+regulation of membrane translocation and mechanism for polarized
+signaling. PNAS. 112:E267–E276.
+[<doi:10.1073/pnas.1409667112>](http://dx.doi.org/10.1073/pnas.1409667112).
 
 Total 2015 citation: 245
 
-==2014==
-
-Haupt, A., A. Campetelli, D. Bonazzi, M. Piel, F. Chang, and N. Minc. 2014. Electrochemical Regulation of Budding Yeast Polarity. PLoS Biol. 12:e1002029. [http://dx.doi.org/10.1371/journal.pbio.1002029 doi:10.1371/journal.pbio.1002029].
-
-Shultzaberger, R.K., M.L. Paddock, T. Katsuki, R.J. Greenspan, and S.S. Golden. 2015. Chapter Three - High-Throughput and Quantitative Approaches for Measuring Circadian Rhythms in Cyanobacteria Using Bioluminescence. In Methods in Enzymology. A. Sehgal, editor. Academic Press. 53–72.
-
-DeWitt, B.N., and R.C. Dunn. 2014. Interaction of Cholesterol in Ternary Lipid Mixtures Investigated Using Single-Molecule Fluorescence. Langmuir. 31:995–1004. [http://dx.doi.org/10.1021/la503797w doi:10.1021/la503797w].
-
-Selimkhanov, J., B. Taylor, J. Yao, A. Pilko, J. Albeck, A. Hoffmann, L. Tsimring, and R. Wollman. 2014. Accurate information transmission through dynamic biochemical signaling networks. Science. 346:1370–1373. [http://dx.doi.org/10.1126/science.1254933 doi:10.1126/science.1254933].
-
-Fincher, Jarod, Canaan Whiteneck, and Eric Birgbauer. "G-protein-coupled receptor cell signaling pathways mediating embryonic chick retinal growth cone collapse induced by lysophosphatidic Acid and sphingosine-1-phosphate." Developmental neuroscience 36.6 (2013): 443-453.
-
-Wang, J., J.W. Petefish, A.C. Hillier, and I.C. Schneider. 2014. Epitaxially Grown Collagen Fibrils Reveal Diversity in Contact Guidance Behavior among Cancer Cells. Langmuir. [http://dx.doi.org/10.1021/la503254x doi:10.1021/la503254x].
-
-Tao-Tao Liu, Zhi-Gang He, Xue-Bi Tian, Hong-Bing Xiang: Neural mechanisms and potential treatment of epilepsy and its complications. Am J Transl Res 2014;6(6):625-630. (Abstract AJTR0002907, Full text, PDF).
-
-Yen-Ta Chen, Chih-Chao Yang, Cheuk-Kwan Sun, Hsin-Ju Chiang, Yi-Ling Chen, Pei-Hsun Sung, Yen-Yi Zhen, Tein-Hung Huang, Chia-Lo Chang, Hong-Hwa Chen, Hsueh-Wen Chang, Hon-Kan Yip: Extracorporeal shock wave therapy ameliorates cyclophosphamide-induced rat acute interstitial cystitis though inhibiting inflammation and oxidative stress-in vitro and in vivo experiment studies. Am J Transl Res 2014;6(6):631-648. (Abstract AJTR0002520, Full text, PDF).
-
-Longfei Huo, Chia-Wei Li, Tzu-Hsuan Huang, Yung Carmen Lam, Weiya Xia, Chun Tu, Wei-Chao Chang, Jennifer L Hsu, Dung-Fang Lee, Lei Nie, Hirohito Yamaguchi, Yan Wang, Jingyu Lang, Long-Yuan Li, Chung-Hsuan Chen, Lopa Mishra, Mien-Chie Hung: Activation of Keap1/Nrf2 signaling pathway by nuclear epidermal growth factor receptor in cancer cells. Am J Transl Res 2014;6(6):649-663. (Abstract AJTR0002147, Full text, PDF).
-
-Xiaojie Wei, Songbin He, Zhouguang Wang, Jiamin Wu, Jinjing Zhang, Yi Cheng, Jie Yang, Xinlong Xu, Zaifeng Chen, Junmin Ye, Li Chen, Li Lin, Jian Xiao: Fibroblast growth factor 1 attenuates 6-hydroxydopamine-induced neurotoxicity: an in vitro and in vivo investigation in experimental models of parkinson’s disease. Am J Transl Res 2014;6(6):664-677. (Abstract AJTR0001987, Full text, PDF).
-
-Weijuan Li, Yaoqi Chen, Songhai Li, Xiaopeng Guo, Wenping Zhou, Qiutang Zeng, Yuhua Liao, Yumiao Wei: Agonistic antibody to angiotensin II type 1 receptor accelerates atherosclerosis in ApoE-/- mice. Am J Transl Res 2014;6(6):678-690. (Abstract AJTR0002772, Full text, PDF).
-
-Tingting Chen, Pei Zhang, Wenxia Fan, Fenghua Qian, Li Pei, Shuangnian Xu, Zhongmin Zou, Bing Ni, Yong Zhang: Co-transplantation with mesenchymal stem cells expressing a SDF-1/HOXB4 fusion protein markedly improves hematopoietic stem cell engraftment and hematogenesis in irradiated mice. Am J Transl Res 2014;6(6):691-702.
-
-Jing-Juan Huang,Yi-Qin Shi, Rui-Lin Li, An Hu, Hong-Sheng Zhou, Qian Cheng, Zheng Xu, Zhi-Ming Yang, Chang-Ning Hao, Jun-Li Duan: Angiogenesis effect of therapeutic ultrasound on ischemic hind limb in mice. Am J Transl Res 2014;6(6):703-713. (Abstract AJTR0002564, Full text, PDF).
-
-Hai Fan, Likun Ma, Bin Fan, Jiawei Wu, Zhe Yang, Lei Wang: Role of PDGFR-β/PI3K/AKT signaling pathway in PDGF-BB induced myocardial fibrosis in rats. Am J Transl Res 2014;6(6):714-723. (Abstract AJTR0001969, Full text, PDF).
-
-Paul W Burridge, Scott A Metzler, Karina H Nakayama, Oscar J Abilez, Chelsey S Simmons, Marc A Bruce, Yuka Matsuura, Paul Kim, Joseph C Wu, Manish Butte, Ngan F Huang, Phillip C Yang: Multi-cellular interactions sustain long-term contractility of human pluripotent stem cell-derived cardiomyocytes. Am J Transl Res 2014;6(6):724-735. (Abstract AJTR0002357, Full text, PDF).
-
-Ledderose, C., Y. Bao, J. Zhang, and W.G. Junger. 2014. Novel method for real-time monitoring of ATP release reveals multiple phases of autocrine purinergic signaling during immune cell activation. Acta Physiol. n/a–n/a. [http://dx.doi.org/10.1111/apha.12435 doi:10.1111/apha.12435].
-
-Dufour, A., T. Liu, C. Ducroz, R. Tournemenne, B. Cummings, R. Thibeaux, N. Guillen, A. Hero, and J. Olivo-Marin. 2015. Signal Processing Challenges in Quantitative 3-D Cell Morphology: More than meets the eye. IEEE Signal Processing Magazine. 32:30–40. [http://dx.doi.org/10.1109/MSP.2014.2359131 doi:10.1109/MSP.2014.2359131].
-
-Hughey, J.J., M.V. Gutschow, B.T. Bajar, and M.W. Covert. 2014. Single-cell variation leads to population invariance in NF-κB signaling dynamics. Mol. Biol. Cell. mbc.E14–08–1267. [http://dx.doi.org/10.1091/mbc.E14-08-1267 doi:10.1091/mbc.E14-08-1267].
-
-Liu, S., D. Zhang, and H. Wang. 2014. Transient Isotachophoresis Focusing of DNA and DNA-Protein Complexes Is Essentially Enhanced by Spontaneously Dissolved Aerial Carbon Dioxide in Electrolytes. Anal. Chem. [http://dx.doi.org/10.1021/ac504173b doi:10.1021/ac504173b].
-
-Peterson, A.W., M. Halter, A. Tona, and A.L. Plant. 2014. High resolution surface plasmon resonance imaging for single cells. BMC Cell Biology. 15:35. [http://dx.doi.org/10.1186/1471-2121-15-35 doi:10.1186/1471-2121-15-35].
-
-Dillard, P., R. Varma, K. Sengupta, and L. Limozin. 2014. Ligand-Mediated Friction Determines Morphodynamics of Spreading T Cells. Biophysical Journal. 107:2629–2638. [http://dx.doi.org/10.1016/j.bpj.2014.10.044 doi:10.1016/j.bpj.2014.10.044].
-
-Brown, A.T., I.D. Vladescu, A. Dawson, T. Vissers, J. Schwarz-Linek, J.S. Lintuvuori, and W.C.K. Poon. 2014. Swimming in A Crystal: Using Colloidal Crystals to Characterise Micro-swimmers. arXiv:1411.6847 [cond-mat, physics:physics].
-
-Feetham, C.H., N. Nunn, R. Lewis, C. Dart, and R. Barrett-Jolley. 2014. TRPV4 and KCa functionally couple as osmosensors in the PVN. Br J Pharmacol. n/a–n/a. [http://dx.doi.org/10.1111/bph.13023 doi:10.1111/bph.13023].
-
-Butler, V.J., R. Branicky, E. Yemini, J.F. Liewald, A. Gottschalk, R.A. Kerr, D.B. Chklovskii, and W.R. Schafer. 2015. A consistent muscle activation strategy underlies crawling and swimming in Caenorhabditis elegans. J. R. Soc. Interface. 12:20140963. [http://dx.doi.org/10.1098/rsif.2014.0963 doi:10.1098/rsif.2014.0963].
-
-Ikmi, A., S.A. McKinney, K.M. Delventhal, and M.C. Gibson. 2014. TALEN and CRISPR/Cas9-mediated genome editing in the early-branching metazoan Nematostella vectensis. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms6486 doi:10.1038/ncomms6486].
-
-Slawson, J.B., E.A. Kuklin, K. Mukherjee, N. Pírez, N.C. Donelson, and L.C. Griffith. 2014. Regulation of dopamine release by CASK-β modulates locomotor initiation in Drosophila melanogaster. β. 8:394. [http://dx.doi.org/10.3389/fnbeh.2014.00394 doi:10.3389/fnbeh.2014.00394].
-
-Zhao, B., Z. Wu, N. Grillet, L. Yan, W. Xiong, S. Harkins-Perry, and U. Müller. TMIE Is an Essential Component of the Mechanotransduction Machinery of Cochlear Hair Cells. Neuron. [http://dx.doi.org/10.1016/j.neuron.2014.10.041 doi:10.1016/j.neuron.2014.10.041].
-
-Velasquez, S.M., J.R. Dinneny, and J.M. Estevez. 2015. Live Imaging of Root Hairs. In Plant Cell Expansion. J.M. Estevez, editor. Springer New York. 59–66.
-
-Hentrich, C., and J.W. Szostak. 2014. Controlled growth of filamentous fatty acid vesicles under flow. Langmuir. [http://dx.doi.org/10.1021/la503933x doi:10.1021/la503933x].
-
-Nakano, A., F. Camacho-Alanis, and A. Ros. 2014. Insulator-Based Dielectrophoresis with β-Galactosidase in Nanostructured Devices. The Analyst. [http://dx.doi.org/10.1039/C4AN01503G doi:10.1039/C4AN01503G].
-
-Hedde, P.N., M. Stakic, and E. Gratton. 2014. Rapid Measurement of Molecular Transport and Interaction inside Living Cells Using Single Plane Illumination. Sci. Rep. 4. [http://dx.doi.org/10.1038/srep07048 doi:10.1038/srep07048].
-
-Aranyosi, A.J., E.A. Wong, and D. Irimia. 2014. A neutrophil treadmill to decouple spatial and temporal signals during chemotaxis. Lab Chip. [http://dx.doi.org/10.1039/C4LC00970C doi:10.1039/C4LC00970C].
-
-Deschamps, J., M. Mund, and J. Ries. 2014. 3D superresolution microscopy by supercritical angle detection. Optics Express. 22:29081. [http://dx.doi.org/10.1364/OE.22.029081 doi:10.1364/OE.22.029081].
-
-Edelstein, A.D., M.A. Tsuchida, N. Amodaj, H. Pinkard, R.D. Vale, and N. Stuurman. 2014. Advanced methods of microscope control using μManager software. Journal of Biological Methods. 1:10. [http://dx.doi.org/10.14440/jbm.2014.36 doi:10.14440/jbm.2014.36].
-
-Bump, S., A. Böhm, L. Babel, S. Wendenburg, F. Carstens, S. Schabel, M. Biesalski, and T. Meckel. 2014. Spatial, spectral, radiometric, and temporal analysis of polymer-modified paper substrates using fluorescence microscopy. Cellulose. 1–16. [http://dx.doi.org/10.1007/s10570-014-0499-5 doi:10.1007/s10570-014-0499-5].
-
-Tran, C.S., S.M. Rangel, H. Almblad, A. Kierbel, M. Givskov, T. Tolker-Nielsen, A.R. Hauser, and J.N. Engel. 2014. The Pseudomonas aeruginosa Type III Translocon Is Required for Biofilm Formation at the Epithelial Barrier. PLoS Pathog. 10:e1004479. [http://dx.doi.org/10.1371/journal.ppat.1004479 doi:10.1371/journal.ppat.1004479].
-
-Bhabha, G., H.-C. Cheng, N. Zhang, A. Moeller, M. Liao, J.A. Speir, Y. Cheng, and R.D. Vale. 2014. Allosteric Communication in the Dynein Motor Domain. Cell. 159:857–868. [htrp://dx.doi.org/10.1016/j.cell.2014.10.018 doi:10.1016/j.cell.2014.10.018].
-
-Sartorel, E., E. Barrey, R.K. Lau, and J. Thorner. 2014. Plasma membrane aminoglycerolipid flippase function is required for signaling competence in the yeast mating pheromone response pathway. Mol. Biol. Cell. mbc.E14–07–1193. [http://dx.doi.org/10.1091/mbc.E14-07-1193 doi:10.1091/mbc.E14-07-1193].
-
-Armenti, S.T., L.L. Lohmer, D.R. Sherwood, and J. Nance. 2014. Repurposing an endogenous degradation system for rapid and targeted depletion of C. elegans proteins. Development. dev.115048. [http://dx.doi.org/10.1242/dev.115048 doi:10.1242/dev.115048].
-
-Geng, J., K. Kim, J. Zhang, A. Escalada, R. Tunuguntla, L.R. Comolli, F.I. Allen, A.V. Shnyrova, K.R. Cho, D. Munoz, Y.M. Wang, C.P. Grigoropoulos, C.M. Ajo-Franklin, V.A. Frolov, and A. Noy. 2014. Stochastic transport through carbon nanotubes in lipid bilayers and live cell membranes. Nature. 514:612–615. [http://dx.doi.org/10.1038/nature13817 doi:10.1038/nature13817].
-
-Gallagher, S.R. 2008. Digital Image Processing and Analysis with ImageJ. In Current Protocols Essential Laboratory Techniques. John Wiley & Sons, Inc.
-
-Zhou, Z., E.L. Munteanu, J. He, T. Ursell, M. Bathe, K.C. Huang, and F. Chang. 2014. The contractile ring coordinates curvature dependent septum assembly during fission yeast cytokinesis. Mol. Biol. Cell. mbc.E14–10–1441. [http://dx.doi.org/10.1091/mbc.E14-10-1441 doi:10.1091/mbc.E14-10-1441].
-
-Verma, S., E. Leikina, K. Melikov, and L. Chernomordik. 2014. Late stages of the synchronized macrophage fusion in osteoclast formation depend on dynamin. Biochemical Journal. [http://dx.doi.org/10.1042/BJ20141233 doi:10.1042/BJ20141233].
-
-Morrissey, M.A., D.P. Keeley, E.J. Hagedorn, S.T.H. McClatchey, Q. Chi, D.H. Hall, and D.R. Sherwood. 2014. B-LINK: A Hemicentin, Plakin, and Integrin-Dependent Adhesion System that Links Tissues by Connecting Adjacent Basement Membranes. Developmental Cell. 31:319–331. [http://dx.doi.org/10.1016/j.devcel.2014.08.024 doi:10.1016/j.devcel.2014.08.024].
-
-Valignat, M.-P., P. Nègre, S. Cadra, A.C. Lellouch, F. Gallet, S. Hénon, and O. Theodoly. 2014. Lymphocytes can self-steer passively with wind vane uropods. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms6213 doi:10.1038/ncomms6213].
-
-Zheng, Q., S. Ahlawat, A. Schaefer, T. Mahoney, S.P. Koushika, and M.L. Nonet. 2014. The Vesicle Protein SAM-4 Regulates the Processivity of Synaptic Vesicle Transport. PLoS Genet. 10:e1004644. [http://dx.doi.org/10.1364/10.1371/journal.pgen.1004644 doi:10.1371/journal.pgen.1004644].
-
-Min, J., S.J. Holden, L. Carlini, M. Unser, S. Manley, and J.C. Ye. 2014. 3D high-density localization microscopy using hybrid astigmatic/ biplane imaging and sparse image reconstruction. Biomed. Opt. Express. 5:3935–3948. [http://dx.doi.org/10.1364/BOE.5.003935 doi:10.1364/BOE.5.003935].
-
-Bonnans, C., M. Lohela, and Z. Werb. 2014. Real-time Imaging of Myeloid Cells Dynamics in &lt;em&gt;Apc&lt;sup&gt;Min/+&lt;/sup&gt;&lt;/em&gt; Intestinal Tumors by Spinning Disk Confocal Microscopy. Journal of Visualized Experiments. [http://dx.doi.org/10.3791/51916 doi:10.3791/51916].
-
-Tanenbaum, M.E., L.A. Gilbert, L.S. Qi, J.S. Weissman, and R.D. Vale. A Protein-Tagging System for Signal Amplification in Gene Expression and Fluorescence Imaging. Cell. [http://dx.doi.org/10.1016/j.cell.2014.09.039 doi:10.1016/j.cell.2014.09.039].
-
-Lu, D., J.Y. Hsiao, N.E. Davey, V.A.V. Voorhis, S.A. Foster, C. Tang, and D.O. Morgan. 2014. Multiple mechanisms determine the order of APC/C substrate degradation in mitosis. J Cell Biol. 207:23–39. [http://dx.doi.org/10.1083/jcb.201402041 doi:10.1083/jcb.201402041].
-
-Ribeiro, S.A., M.V. D’Ambrosio, and R.D. Vale. 2014. Induction of Focal Adhesions and Motility in Drosophila S2 cells. Mol. Biol. Cell. mbc.E14–04–0863. [http://dx.doi.org/10.1091/mbc.E14-04-0863 doi:10.1091/mbc.E14-04-0863].
-
-Theer, P., C. Mongis, and M. Knop. 2014. PSFj: know your fluorescence microscope. Nat Meth. 11:981–982.  [http://dx.doi.org/10.1038/nmeth.3102 doi:10.1038/nmeth.3102].
-
-Saini, S.G., C. Liu, P. Zhang, and T.H. Lee. 2014. Membrane tethering by the atlastin GTPase depends on GTP hydrolysis but not on forming the crossover configuration. Mol. Biol. Cell. mbc.E14–08–1284. [http://dx.doi.org/10.1091/mbc.E14-08-1284 doi:10.1091/mbc.E14-08-1284].
-
-Chingozha, L., M. Zhan, C. Zhu, and H. Lu. 2014. A Generalizable, Tunable Microfluidic Platform for Delivering Fast Temporally Varying Chemical Signals to Probe Single-Cell Response Dynamics. Anal. Chem. [http://dx.doi.org/10.1021/ac5019843 doi:10.1021/ac5019843].
-
-Doggett, T.M., and J.W. Breslin. 2014. Acute Alcohol Intoxication-Induced Microvascular Leakage. Alcohol Clin Exp Res. [http://dx.doi.org/10.1111/acer.12525 doi:10.1111/acer.12525].
-
-Gupta, G., P. Nowak-Sliwinska, N. Herrero, P.J. Dyson, and B. Therrien. 2014. Highly water soluble trithiolato-bridged dinuclear arene ruthenium complexes. Inorganica Chimica Acta. 423, Part A:524–529. [http://dx.doi.org/10.1016/j.ica.2014.09.013 doi:10.1016/j.ica.2014.09.013].
-
-Xiong, W., T. Wagner, L. Yan, N. Grillet, and U. Müller. 2014. Using injectoporation to deliver genes to mechanosensory hair cells. Nat. Protocols. 9:2438–2449. [http://dx.doi.org/10.1038/nprot.2014.168 doi:10.1038/nprot.2014.168].
-
-Hou, Y., L.L. Rodriguez, J. Wang, and I.C. Schneider. 2014. Collagen attachment to the substrate controls cell clustering through migration. Phys. Biol. 11:056007. [http://dx.doi.org/10.1088/1478-3975/11/5/056007 doi:10.1088/1478-3975/11/5/056007].
-
-Schuck, S., C.M. Gallagher, and P. Walter. 2014. ER-phagy mediates selective degradation of endoplasmic reticulum independently of the core autophagy machinery. J Cell Sci. 127:4078–4088. [http://dx.doi.org/10.1242/jcs.154716 doi:10.1242/jcs.154716].
-
-Kleele, T., P. Marinković, P.R. Williams, S. Stern, E.E. Weigand, P. Engerer, R. Naumann, J. Hartmann, R.M. Karl, F. Bradke, D. Bishop, J. Herms, A. Konnerth, M. Kerschensteiner, L. Godinho, and T. Misgeld. 2014. An assay to image neuronal microtubule dynamics in mice. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms5827 doi:10.1038/ncomms5827].
-
-Dargaei, Z., P.L.W. Colmers, H.M. Hodgson, and N.S. Magoski. 2014. Electrical coupling between Aplysia bag cell neurons: characterization and role in synchronous firing. Journal of Neurophysiology. jn.00494.2014. [http://dx.doi.org/10.1152/jn.00494.2014 doi:10.1152/jn.00494.2014].
-
-Nogami, S., S. Ohnuki, and Y. Ohya. 2014. Hyperspectral imaging techniques for the characterization of Haematococcus pluvialis (Chlorophyceae). J. Phycol.. n/a–n/a. [http://dx.doi.org/10.1111/jpy.12226 doi:10.1111/jpy.12226].
-
-Tajon, C.A., D. Seo, J. Asmussen, N. Shah, Y. Jun, and C.S. Craik. 2014. Sensitive and Selective Plasmon Ruler Nanosensors for Monitoring the Apoptotic Drug Response in Leukemia. ACS Nano. [http://dx.doi.org/10.1021/nn502959q doi:10.1021/nn502959q].
-
-Helgeson, L.A., J.G. Prendergast, A.R. Wagner, M. Rodnick-Smith, and B.J. Nolen. 2014. Interactions with Actin Monomers, Actin Filaments and Arp2/3 Complex Define the Roles of WASP Family Proteins and Cortactin in Coordinately Regulating Branched Actin Networks. J. Biol. Chem.. jbc.M114.587527. [http://dx.doi.org/10.1074/jbc.M114.587527 doi:10.1074/jbc.M114.587527].
-
-Shen, Z., X. Zhang, Y. Chai, Z. Zhu, P. Yi, G. Feng, W. Li, and G. Ou. 2014. Conditional Knockouts Generated by Engineered CRISPR-Cas9 Endonuclease Reveal the Roles of Coronin in C. elegans Neural Development. Developmental Cell. 30:625–636. [http://dx.doi.org/10.1016/j.devcel.2014.07.017 doi:10.1016/j.devcel.2014.07.017].
-
-Wamberg, M.C., R. Wieczorek, S.B. Brier, J.W. de Vries, M. Kwak, A. Herrmann, and P.-A. Monnard. 2014. Functionalization of Fatty Acid Vesicles through Newly Synthesized Bolaamphiphile–DNA Conjugates. Bioconjugate Chem.. [http://dx.doi.org/10.1021/bc500289u doi:10.1021/bc500289u].
-
-Lynch, A.E., J. Triajianto, and E. Routledge. 2014. Low-Cost Motility Tracking System (LOCOMOTIS) for Time-Lapse Microscopy Applications and Cell Visualisation. PLoS ONE. 9:e103547. [http://dx.doi.org/10.1371/journal.pone.0103547 doi:10.1371/journal.pone.0103547].
-
-Halter, M., E. Bier, P.C. DeRose, G.A. Cooksey, S.J. Choquette, A.L. Plant, and J.T. Elliott. 2014. An automated protocol for performance benchmarking a widefield fluorescence microscope. Cytometry. n/a–n/a. [http://dx.doi.org/10.1002/cyto.a.22519 doi:10.1002/cyto.a.22519].
-
-Roossien, D.H., P. Lamoureux, and K.E. Miller. 2014. Cytoplasmic dynein pushes the cytoskeletal meshwork forward during axonal elongation. J Cell Sci. 127:3593–3602. [http://dx.doi.org/10.1242/jcs.152611 doi:10.1242/jcs.152611].
-
-Gualda, E.J., D. Simão, C. Pinto, P.M. Alves, and C. Brito. 2014. Imaging of human differentiated 3D neural aggregates using light sheet fluorescence microscopy. Front. Cell. Neurosci. 8:221. [http://dx.doi.org/10.3389/fncel.2014.00221 doi:10.3389/fncel.2014.00221].
-
-Long, Z., A. Olliver, E. Brambilla, B. Sclavi, M.C. Lagomarsino, and K.D. Dorfman. 2014. Measuring bacterial adaptation dynamics at the single-cell level using a microfluidic chemostat and time-lapse fluorescence microscopy. Analyst. [http://dx.doi.org/10.1039/C4AN00877D doi:10.1039/C4AN00877D].
-
-Carugo, D., T. Octon, W. Messaoudi, A.L. Fisher, M. Carboni, N.R. Harris, M. Hill, and P. Glynne-Jones. 2014. A thin-reflector microfluidic resonator for continuous-flow concentration of microorganisms: a new approach to water quality analysis using acoustofluidics. Lab Chip. 14:3830–3842. [http://dx.doi.org/10.1039/C4LC00577E doi:10.1039/C4LC00577E].
-
-Compton, J.L., J.C. Luo, H. Ma, E. Botvinick, and V. Venugopalan. 2014. High-throughput optical screening of cellular mechanotransduction. Nat Photon. 8:710–715. [http://dx.doi.org/10.1038/nphoton.2014.165 doi:10.1038/nphoton.2014.165].
-
-Helmke, K.J., and R. Heald. 2014. TPX2 levels modulate meiotic spindle size and architecture in Xenopus egg extracts. J Cell Biol. 206:385–393. [http://dx.doi.org/10.1083/jcb.201401014 doi:10.1083/jcb.201401014].
-
-Ledderose, C., Y. Bao, M. Lidicky, J. Zipperle, L. Li, K. Strasser, N.I. Shapiro, and W.G. Junger. 2014. Mitochondria are gate-keepers of T cell function by producing the ATP that drives purinergic signaling. J. Biol. Chem.. jbc.M114.575308. [http://dx.doi.org/10.1074/jbc.M114.575308 doi:10.1074/jbc.M114.575308].
-
-Lamberti, G., B. Prabhakarpandian, C. Garson, A. Smith, K. Pant, B. Wang, and M.F. Kiani. 2014. Bioinspired Microfluidic Assay for In Vitro Modeling of Leukocyte–Endothelium Interactions. Anal. Chem.. 86:8344–8351. [http://dx.doi.org/10.1021/ac5018716 doi:10.1021/ac5018716].
-
-Kone, M., T.J. Pullen, G. Sun, M. Ibberson, A. Martinez-Sanchez, S. Sayers, M.-S. Nguyen-Tu, C. Kantor, A. Swisa, Y. Dor, T. Gorman, J. Ferrer, B. Thorens, F. Reimann, F. Gribble, J.A. McGinty, L. Chen, P.M. French, F. Birzele, T. Hildebrandt, I. Uphues, and G.A. Rutter. 2014. LKB1 and AMPK differentially regulate pancreatic β-cell identity. FASEB J. fj.14–257667. [http://dx.doi.org/10.1096/fj.14-257667 doi:10.1096/fj.14-257667].
-
-Sandner, F., H. Welter, J.U. Schwarzer, F.M. Köhn, H.F. Urbanski, and A. Mayerhofer. 2014. Expression of the oestrogen receptor GPER by testicular peritubular cells is linked to sexual maturation and male fertility. Andrology. 2:695–701. [http://dx.doi.org/10.1111/j.2047-2927.2014.00243.x doi:10.1111/j.2047-2927.2014.00243.x].
-
-Billings, G., N. Ouzounov, T. Ursell, S.M. Desmarais, J. Shaevitz, Z. Gitai, and K.C. Huang. 2014. De novo morphogenesis in L-forms via geometric control of cell growth. Molecular Microbiology. 93:883–896. [http://dx.doi.org/10.1111/mmi.12703 doi:10.1111/mmi.12703].
-
-Wu, M.M., E.D. Covington, and R.S. Lewis. 2014. Single-molecule analysis of diffusion and trapping of STIM1 and Orai1 at ER-plasma membrane junctions. Mol. Biol. Cell. mbc.E14–06–1107. [http://dx.doi.org/10.1091/mbc.E14-06-1107 doi:10.1091/mbc.E14-06-1107].
-
-Knogler, L.D., J. Ryan, L. Saint-Amant, and P. Drapeau. 2014. A Hybrid Electrical/Chemical Circuit in the Spinal Cord Generates a Transient Embryonic Motor Behavior. J. Neurosci.. 34:9644–9655. [http://dx.doi.org/10.1523/JNEUROSCI.1225-14.2014 doi:10.1523/JNEUROSCI.1225-14.2014].
-
-Cruz-López, R., and H. Maske. 2014. A non-amplified FISH protocol to identify simultaneously different bacterial groups attached to eukaryotic phytoplankton. J Appl Phycol. 1–8. [http://dx.doi.org/10.1007/s10811-014-0379-2 doi:10.1007/s10811-014-0379-2].
-
-McKenney, R.J., W. Huynh, M.E. Tanenbaum, G. Bhabha, and R.D. Vale. 2014. Activation of cytoplasmic dynein motility by dynactin-cargo adapter complexes. Science. 345:337–341. [http://dx.doi.org/10.1126/science.1254198 doi:10.1126/science.1254198].
-
-Edzuka, T., L. Yamada, K. Kanamaru, H. Sawada, and G. Goshima. 2014. Identification of the Augmin Complex in the Filamentous Fungus Aspergillus nidulans. PLoS ONE. 9:e101471. [http://dx.doi.org/10.1371/journal.pone.0101471 doi:10.1371/journal.pone.0101471].
-
-Peng, H., J. Tang, H. Xiao, A. Bria, J. Zhou, V. Butler, Z. Zhou, P.T. Gonzalez-Bellido, S.W. Oh, J. Chen, A. Mitra, R.W. Tsien, H. Zeng, G.A. Ascoli, G. Iannello, M. Hawrylycz, E. Myers, and F. Long. 2014. Virtual finger boosts three-dimensional imaging and microsurgery as well as terabyte volume image visualization and analysis. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms5342 doi:10.1038/ncomms5342].
-
-Vlahakis, A., M. Graef, J. Nunnari, and T. Powers. 2014. TOR complex 2-Ypk1 signaling is an essential positive regulator of the general amino acid control response and autophagy. PNAS. 201406305. [http://dx.doi.org/10.1073/pnas.1406305111 doi:10.1073/pnas.1406305111].
-
-Billings, G., N. Ouzounov, T. Ursell, S.M. Desmarais, J. Shaevitz, Z. Gitai, and K.C. Huang. 2014. De novo morphogenesis in L-forms via geometric control of cell growth. Molecular Microbiology. n/a–n/a. [http://dx.doi.org/10.1111/mmi.12703 doi:10.1111/mmi.12703].
-
-Thieleke-Matos, C., M. Lopes da Silva, L. Cabrita-Santos, C.F. Pires, J.S. Ramalho, O. Ikonomov, E. Seixas, A. Shisheva, M.C. Seabra, and D.C. Barral. 2014. Host PI(3,5)P2 activity is required for Plasmodium berghei growth during liver stage infection. Traffic. n/a–n/a. [http://dx.doi.org/10.1111/tra.12190 doi:10.1111/tra.12190].
-
-Schlager, M.A., H.T. Hoang, L. Urnavicius, S.L. Bullock, and A.P. Carter. 2014. In vitro reconstitution of a highly processive recombinant human dynein complex. The EMBO Journal. e201488792. [http://dx.doi.org/10.15252/embj.201488792 doi:10.15252/embj.201488792].
-
-Barmada, S.J., A. Serio, A. Arjun, B. Bilican, A. Daub, D.M. Ando, A. Tsvetkov, M. Pleiss, X. Li, D. Peisach, C. Shaw, S. Chandran, and S. Finkbeiner. 2014. Autophagy induction enhances TDP43 turnover and survival in neuronal ALS models. Nat Chem Biol. advance online publication. [http://dx.doi.org/10.1038/nchembio.1563 doi:10.1038/nchembio.1563].
-
-Kellogg, R.A., R. Gómez-Sjöberg, A.A. Leyrat, and S. Tay. 2014. High-throughput microfluidic single-cell analysis pipeline for studies of signaling dynamics. Nat. Protocols. 9:1713–1726. [http://dx.doi.org/10.1038/nprot.2014.120 doi:10.1038/nprot.2014.120].
-
-Nickerson, A., T. Huang, L.-J. Lin, and X. Nan. 2014. Photoactivated Localization Microscopy with Bimolecular Fluorescence Complementation (BiFC-PALM) for Nanoscale Imaging of Protein-Protein Interactions in Cells. PLoS ONE. 9:e100589. [http://dx.doi.org/10.1371/journal.pone.0100589 doi:10.1371/journal.pone.0100589].
-
-Teichmann, A., A. Gibert, A. Lampe, P. Grzesik, C. Rutz, J. Furkert, J. Schmoranzer, G. Krause, B. Wiesner, and R. Schüelein. 2014. The Specific Monomer/dimer Equilibrium of the Corticotropin-Releasing Factor Receptor Type 1 is Established in the Endoplasmic Reticulum. J. Biol. Chem. jbc.M114.553644. [http://dx.doi.org/10.1074/jbc.M114.553644 doi:10.1074/jbc.M114.553644].
-
-Brown, H.M., A.E. Knowlton, E. Snavely, B.D. Nguyen, T.S. Richards, and S.S. Grieshaber. 2014. Multinucleation during C. trachomatis Infections Is Caused by the Contribution of Two Effector Pathways. PLoS ONE. 9:e100763. [http://dx.doi.org/10.1371/journal.pone.0100763 doi:10.1371/journal.pone.0100763].
-
-Crane, M.M., I.B.N. Clark, E. Bakker, S. Smith, and P.S. Swain. 2014. A Microfluidic System for Studying Ageing and Dynamic Single-Cell Responses in Budding Yeast. PLoS ONE. 9:e100042. [http://dx.doi.org/10.1371/journal.pone.0100042 doi:10.1371/journal.pone.0100042].
-
-Pradervand, N., S. Sulser, F. Delavat, R. Miyazaki, I. Lamas, and J.R. van der Meer. 2014. An Operon of Three Transcriptional Regulators Controls Horizontal Gene Transfer of the Integrative and Conjugative Element ICEclc in Pseudomonas knackmussii B13. PLoS Genet. 10:e1004441. [http://dx.doi.org/10.1371/journal.pgen.1004441 doi:10.1371/journal.pgen.1004441].
-
-Jafferali, M.H., B. Vijayaraghavan, R.A. Figueroa, E. Crafoord, S. Gudise, V.J. Larsson, and E. Hallberg. 2014. MCLIP, an effective method to detect interactions of transmembrane proteins of the nuclear envelope in live cells. Biochimica et Biophysica Acta (BBA) - Biomembranes. 1838:2399–2403. [http://dx.doi.org/10.1016/j.bbamem.2014.06.008 doi:10.1016/j.bbamem.2014.06.008].
-
-Shah, P.K., S.G. Herrera-Loeza, C.E. Sims, J.J. Yeh, and N.L. Allbritton. 2014. Small sample sorting of primary adherent cells by automated micropallet imaging and release. Cytometry. 85:642–649. [http://dx.doi.org/10.1002/cyto.a.22480 doi:10.1002/cyto.a.22480].
-
-Krishnan, S., and N.V. Prasadarao. 2014. Identification of minimum carbohydrate moiety in N-glycosylation sites of brain endothelial cell glycoprotein 96 for interaction with Escherichia coli K1 outer membrane protein A. Microbes and Infection. 16:540–552. [http://dx.doi.org/10.1016/j.micinf.2014.06.002 doi:10.1016/j.micinf.2014.06.002].
-
-Windschüttl, S., D. Nettersheim, S. Schlatt, A. Huber, H. Welter, J.U. Schwarzer, F.M. Köhn, H. Schorle, and A. Mayerhofer. 2014. Are testicular mast cells involved in the regulation of germ cells in man? Andrology. 2:615–622. [http://dx.doi.org/10.1111/j.2047-2927.2014.00227.x doi:10.1111/j.2047-2927.2014.00227.x].
-
-Chang, K.-Y., D. Woo, H. Jung, S. Lee, S. Kim, J. Won, T. Kyung, H. Park, N. Kim, H.W. Yang, J.-Y. Park, E.M. Hwang, D. Kim, and W. Do Heo. 2014. Light-inducible receptor tyrosine kinases that regulate neurotrophin signalling. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms5057 doi:10.1038/ncomms5057].
-
-Dell, A.I., J.A. Bender, K. Branson, I.D. Couzin, G.G. de Polavieja, L.P.J.J. Noldus, A. Pérez-Escudero, P. Perona, A.D. Straw, M. Wikelski, and U. Brose. 2014. Automated image-based tracking and its application in ecology. Trends in Ecology & Evolution. 29:417–428. [http://dx.doi.org/10.1016/j.tree.2014.05.004 doi:10.1016/j.tree.2014.05.004].
-
-Lund, D.K., V. Mouly, and D.D.W. Cornelison. 2014. MMP-14 is necessary but not sufficient for invasion of three-dimensional collagen by human muscle satellite cells. American Journal of Physiology - Cell Physiology. ajpcell.00032.2014. [http://dx.doi.org/10.1152/ajpcell.00032.2014 doi:10.1152/ajpcell.00032.2014].
-
-Hajj, B., M.E. Beheiry, I. Izeddin, X. Darzacq, and M. Dahan. 2014. Accessing the third dimension in localization-based super-resolution microscopy. Phys. Chem. Chem. Phys. [http://dx.doi.org/10.1039/C4CP01380H doi:10.1039/C4CP01380H].
-
-Staude, I., V.K.A. Sreenivasan, I. Shishkin, K. Samusev, M. Decker, D.N. Neshev, A.V. Zvyagin, and Y.S. Kivshar. 2014. Selective placement of quantum dots on nanoscale areas of metal-free substrates. Phys. Status Solidi RRL. 9999:n/a–n/a. [http://dx.doi.org/10.1002/pssr.201409215 doi:10.1002/pssr.201409215].
-
-Gupta, D., J. Sheats, A. Muralidhar, J.J. Miller, D.E. Huang, S. Mahshid, K.D. Dorfman, and W. Reisner. 2014. Mixed confinement regimes during equilibrium confinement spectroscopy of DNA. The Journal of Chemical Physics. 140:214901. [http://dx.doi.org/10.1063/1.4879515 doi:10.1063/1.4879515].
-
-Heureaux, J., D. Chen, V.L. Murray, C.X. Deng, and A.P. Liu. 2014. Activation of a Bacterial Mechanosensitive Channel in Mammalian Cells by Cytoskeletal Stress. Cel. Mol. Bioeng. 1–13. [http:/dx.doi.org/10.1007/s12195-014-0337-8 doi:10.1007/s12195-014-0337-8].
-
-Nakano, A., J. Luo, and A. Ros. 2014. Temporal and Spatial Temperature Measurement in Insulator-based Dielectrophoretic Devices. Anal. Chem. [http://dx.doi.org/10.1021/ac501083h doi:10.1021/ac501083h].
-
-Greene, A.C., S.J. Lord, A. Tian, C. Rhodes, H. Kai, and J.T. Groves. 2014. Spatial Organization of EphA2 at the Cell-Cell Interface Modulates Trans-Endocytosis of EphrinA1. Biophysical Journal. 106:2196–2205. [http://dx.doi.org/10.1016/j.bpj.2014.03.043] doi:10.1016/j.bpj.2014.03.043].
-
-Hyland, C., A.F. Mertz, P. Forscher, and E. Dufresne. 2014. Dynamic peripheral traction forces balance stable neurite tension in regenerating Aplysia bag cell neurons. Sci. Rep. 4. [http://dx.doi.org/10.1038/srep04961 doi:10.1038/srep04961].
-
-Cama, J., C. Chimerel, S. Pagliara, A. Javer, and U.F. Keyser. 2014. A label-free microfluidic assay to quantitatively study antibiotic diffusion through lipid membranes. Lab Chip. 14:2303–2308. [http://dx.doi.org/10.1039/C4LC00217B doi:10.1039/C4LC00217B].
-
-Velsko, I.M., S.S. Chukkapalli, M.F. Rivera, J.-Y. Lee, H. Chen, D. Zheng, I. Bhattacharyya, P.R. Gangula, A.R. Lucas, and L. Kesavalu. 2014. Active Invasion of Oral and Aortic Tissues by Porphyromonas gingivalis in Mice Causally Links Periodontitis and Atherosclerosis. PLoS ONE. 9:e97811. [http://dx.doi.org/10.1371/journal.pone.0097811 doi:10.1371/journal.pone.0097811].
-
-Rojas, E., J.A. Theriot, and K.C. Huang. 2014. Response of Escherichia coli growth rate to osmotic shock. PNAS. 201402591. [http://dx.doi.org/10.1073/pnas.1402591111 doi:10.1073/pnas.1402591111].
-
-Okreglak, V., and P. Walter. 2014. The conserved AAA-ATPase Msp1 confers organelle specificity to tail-anchored proteins. PNAS. 111:8019–8024. [http://dx.doi.org/10.1073/pnas.1405755111 doi:10.1073/pnas.1405755111].
-
-Lai, Y., D. Dilidaer, B. Chen, G. Xu, J. Shi, R.J. Lee, and N.A. Cohen. 2014. In vitro studies of a distillate of rectified essential oils on sinonasal components of mucociliary clearance. American Journal of Rhinology and Allergy. 28:244–248. [http://dx.doi.org/10.2500/ajra.2014.28.4036  doi:10.2500/ajra.2014.28.4036].
-
-Vliet, S. van, F.J. Hol, T. Weenink, P. Galajda, and J.E. Keymer. 2014. The effects of chemical interactions and culture history on the colonization of structured habitats by competing bacterial populations. BMC Microbiology. 14:116. [http://dx.doi.org/10.1186/1471-2180-14-116 doi:10.1186/1471-2180-14-116].
-
-Von Dassow, M., C.J. Miller, and L.A. Davidson. 2014. Biomechanics and the Thermotolerance of Development. PLoS ONE. 9:e95670. [http://dx.doi.org/10.1371/journal.pone.0095670 doi:10.1371/journal.pone.0095670].
-
-Hu, K.K., M.A. Bruce, and M.J. Butte. 2014. Spatiotemporally and mechanically controlled triggering of mast cells using atomic force microscopy. Immunol Res. 58:211–217. [http://dx.doi.org/10.1007/s12026-014-8510-7 doi:10.1007/s12026-014-8510-7].
-
-Panneerselvam, S., and S. Choi. 2014. Nanoinformatics: Emerging Databases and Available Tools. International Journal of Molecular Sciences. 15:7158–7182. [http://dx.doi.org/10.3390/ijms15057158 doi:10.3390/ijms15057158].
-
-St-Pierre, F., J.D. Marshall, Y. Yang, Y. Gong, M.J. Schnitzer, and M.Z. Lin. 2014. High-fidelity optical reporting of neuronal electrical activity with an ultrafast fluorescent voltage sensor. Nat Neurosci. 17:884–889. [http://dx.doi.org/10.1038/nn.3709 doi:10.1038/nn.3709].
-
-Harish Chandra Soundararajan, Simon L Bullock. 2014. The influence of dynein processivity control, MAPs, and microtubule ends on directional movement of a localising mRNA. eLife 2014;3:e01596. [http://dx.doi.org/10.7554/eLife.01596 doi:10.7554/eLife.01596]
-
-Keith, S.A., F.R.G. Amrit, R. Ratnappan, and A. Ghazi. 2014. The C. elegans healthspan and stress-resistance assay toolkit. Methods. [http://dx.doi.org/10.1016/j.ymeth.2014.04.003 doi:10.1016/j.ymeth.2014.04.003].
-
-Vermehren-Schmaedick, A., W. Krueger, T. Jacob, D. Ramunno-Johnson, A. Balkowiec, K.A. Lidke, and T.Q. Vu. 2014. Heterogeneous Intracellular Trafficking Dynamics of Brain-Derived Neurotrophic Factor Complexes in the Neuronal Soma Revealed by Single Quantum Dot Tracking. PLoS ONE. 9:e95113. [http://dx.doi.org/10.1371/journal.pone.0095113 doi:10.1371/journal.pone.0095113].
-
-Liu, B., W. Chen, B.D. Evavold, and C. Zhu. 2014. Accumulation of Dynamic Catch Bonds between TCR and Agonist Peptide-MHC Triggers T Cell Signaling. Cell. 157:357–368. [http://dx.doi.org/10.1016/j.cell.2014.02.053 doi:10.1016/j.cell.2014.02.053].
-
-Köthe, U., F. Herrmannsdörfer, I. Kats, and F.A. Hamprecht. SimpleSTORM: a fast, self-calibrating reconstruction algorithm for localization microscopy. Histochem Cell Biol. 1–15. [http://dx.doi.org/10.1007/s00418-014-1211-4 doi:10.1007/s00418-014-1211-4].
-
-Hyland, C., E.R. Dufrense, and P. Forscher. 2014. Regeneration of Aplysia Bag Cell Neurons is Synergistically Enhanced by Substrate-Bound Hemolymph Proteins and Laminin. Sci Rep. 4. [http://dx.doi.org/10.1038/srep04617 doi:10.1038/srep04617].
-
-Bhuvanendran, S., K. Salka, K. Rainey, S.C. Sreetama, E. Williams, M. Leeker, V. Prasad, J. Boyd, G.H. Patterson, J.K. Jaiswal, and A.M. Colberg-Poley. 2014. Superresolution Imaging of Human Cytomegalovirus vMIA Localization in Sub-Mitochondrial Compartments. Viruses. 6:1612–1636. [http://dx.doi.org/10.3390/v6041612 doi:10.3390/v6041612].
-
-Hafi, N., M. Grunwald, L.S. van den Heuvel, T. Aspelmeier, J.-H. Chen, M. Zagrebelsky, O.M. Schütte, C. Steinem, M. Korte, A. Munk, and P.J. Walla. 2014. Fluorescence nanoscopy by polarization modulation and polarization angle narrowing. Nat Meth. advance online publication. [http://dx.doi.org/10.1038/nmeth.2919 doi:10.1038/nmeth.2919].
-
-Steel, E., V.L. Murray, and A.P. Liu. 2014. Multiplex Detection of Homo- and Heterodimerization of G Protein-Coupled Receptors by Proximity Biotinylation. PLoS ONE. 9:e93646. [http://dx.doi.org/10.1371/journal.pone.0093646 doi:10.1371/journal.pone.0093646].
-
-Czarny, T.L., A.L. Perri, S. French, and E.D. Brown. 2014. Discovery of novel cell wall-active compounds using PywaC, a sensitive reporter of cell wall stress in the model Gram-positive Bacillus subtilis. Antimicrob. Agents Chemother. AAC.02352–14. [http://dx.doi.org/10.1128/AAC.02352-14 doi:10.1128/AAC.02352-14].
-
-Hendershott, M.C., and R.D. Vale. 2014. Regulation of microtubule minus-end dynamics by CAMSAPs and Patronin. PNAS. 201404133. [http://dx.doi.org/10.1073/pnas.1404133111 doi:10.1073/pnas.1404133111].
-
-Ingaramo, M., A.G. York, P. Wawrzusin, O. Milberg, A. Hong, R. Weigert, H. Shroff, and G.H. Patterson. 2014. Two-photon excitation improves multifocal structured illumination microscopy in thick scattering tissue. PNAS. 201314447. [http://dx.doi.org/10.1073/pnas.1314447111 doi:10.1073/pnas.1314447111].
-
-Lane, S.I.R., and K.T. Jones. 2014. Non-canonical function of spindle assembly checkpoint proteins after APC activation reduces aneuploidy in mouse oocytes. Nat Commun. 5. [http://dx.doi.org/10.1038/ncomms4444 doi:10.1038/ncomms4444].
-
-Ai, H., M.A. Baird, Y. Shen, M.W. Davidson, and R.E. Campbell. 2014. Engineering and characterizing monomeric fluorescent proteins for live-cell imaging applications. Nat. Protocols. 9:910–928. [http://dx.doi.org/10.1038/nprot.2014.054 doi:10.1038/nprot.2014.054].
-
-Ramachandra, R., J.C. Bouwer, M.R. Mackey, E. Bushong, S.T. Peltier, N.-H. Xuong, and M.H. Ellisman. 2014. Improving Signal to Noise in Labeled Biological Specimens Using Energy-Filtered TEM of Sections with a Drift Correction Strategy and a Direct Detection Device. Microscopy and Microanalysis. FirstView:1–9. [http://dx.doi.org/10.1017/S1431927614000452 doi:10.1017/S1431927614000452].
-
-Zubkovs, V., F. Jamme, S. Kascakova, F. Chiappini, F. Le Naour, and M. Réfrégiers. 2014. Single vs. two photon microscopy for label free intrinsic tissue studies in UV light region. The Analyst. [http://dx.doi.org/10.1039/c4an00203b doi:10.1039/c4an00203b].
-
-Ballister, E.R., M. Riegman, and M.A. Lampson. 2014. Recruitment of Mad1 to metaphase kinetochores is sufficient to reactivate the mitotic checkpoint. J Cell Biol. 204:901–908. [http://dx.doi.org/10.1083/jcb.201311113 doi:10.1083/jcb.201311113].
-
-Brewster, R.C., F.M. Weinert, H.G. Garcia, D. Song, M. Rydenfelt, and R. Phillips. The Transcription Factor Titration Effect Dictates Level of Gene Expression. Cell. (in Supplemental Materials)[http://dx.doi.org/10.1016/j.cell.2014.02.022 doi:10.1016/j.cell.2014.02.022].
-
-Desjarlais, M., J. Pratt, A. Lounis, C. Mounier, K. Haidara, and B. Annabi. 2014. Tetracycline Derivative Minocycline Inhibits Autophagy and Inflammation in Concanavalin-A-Activated Human Hepatoma Cells. Gene Regul Syst Bio. 8:63–73. [http://dx.doi.org/10.4137/GRSB.S13946 doi:10.4137/GRSB.S13946].
-
-Chu, J., R.D. Haynes, S.Y. Corbel, P. Li, E. González-González, J.S. Burg, N.J. Ataie, A.J. Lam, P.J. Cranfill, M.A. Baird, M.W. Davidson, H.-L. Ng, K.C. Garcia, C.H. Contag, K. Shen, H.M. Blau, and M.Z. Lin. 2014. Non-invasive intravital imaging of cellular differentiation with a bright red-excitable fluorescent protein. Nat Meth. advance online publication. [http://dx.doi.org/10.1038/nmeth.2888 doi:10.1038/nmeth.2888].
-
-Sirajuddin, M., L.M. Rice, and R.D. Vale. 2014. Regulation of microtubule motors by tubulin isotypes and post-translational modifications. Nat Cell Biol. advance online publication. [http://dx.doi.org/10.1038/ncb2920 doi:10.1038/ncb2920].
-
-Yang, Y., T. Peng, M. Lei, R. Li, X. Zhou, D. Wu, B. Yao, and T. Ye. 2014. Experimental analysis of focal fields in laser scanning fluorescence stereomicroscopy. Proc. SPIE 8949, Three-Dimensional and Multidimensional Microscopy: Image Acquisition and Processing XXI, 89491R (March 12, 2014); [http://dx.doi.org/10.1117/12.2040248 doi:10.1117/12.2040248]
-
-Chalfoun, J. 2014. A power stitching tool. SPIE Newsroom. [http://dx.oi.org/10.1117/2.1201402.005365 doi:10.1117/2.1201402.005365].
-
-Bonazzi, D., J.-D. Julien, M. Romao, R. Seddiki, M. Piel, A. Boudaoud, and N. Minc. 2014. Symmetry Breaking in Spore Germination Relies on an Interplay between Polar Cap Stability and Spore Wall Mechanics. Developmental Cell. 28:534–546. [http://dx.oi.org/10.1016/j.devcel.2014.01.023 doi:10.1016/j.devcel.2014.01.023].
-
-Manzo, A.J., and H. Helvajian. 2014. Demonstration of enhanced surface mobility of adsorbate cluster species by surface acoustic wave excitation induced by a pulsed laser. Proc. SPIE 8969, Synthesis and Photonics of Nanoscale Materials XI, 896908; [http://dx.doi.org/10.1117/12.2041218 doi:10.1117/12.2041218].
-
-Wang, Y., A. Ahmad, C.E. Sims, S. Magness, and N.L. Allbritton. 2014. In vitro generation of colonic epithelium from primary cells guided by microstructures. Lab Chip. [http://dx.doi.org/10.1039/C3LC51353J doi:10.1039/C3LC51353J].
-
-Pedersen, S.K., J. Holmehave, F.H. Blaikie, A. Gollmer, T. Breitenbach, H.H. Jensen, and P.R. Ogilby. 2014. Aarhus Sensor Green: A Fluorescent Probe for Singlet Oxygen. J. Org. Chem. [http://dx.doi.org/10.1021/jo500219y doi:10.1021/jo500219y].
-
-Nocera, G.M., K.B. M’Barek, D.G. Bazzoli, G. Fraux, M.B.-V. Heijenoort, J. Chokki, S. Georgeault, Y. Chen, and J. Fattaccioli. 2014. Fluorescent microparticles fabricated through chemical coating of O/W emulsion droplets with a thin metallic film. RSC Adv. 4:11564–11568. [http://dx.doi.org/10.1039/C3RA47063F doi:10.1039/C3RA47063F].
-
-Shamir, E.R., E. Pappalardo, D.M. Jorgens, K. Coutinho, W.-T. Tsai, K. Aziz, M. Auer, P.T. Tran, J.S. Bader, and A.J. Ewald. 2014. Twist1-induced dissemination preserves epithelial identity and requires E-cadherin. J Cell Biol. 204:839–856. [http://dx.doi.org/10.1083/jcb.201306088 doi:10.1083/jcb.201306088].
-
-Miki, T., H. Naito, M. Nishina, and G. Goshima. 2014. Endogenous localizome identifies 43 mitotic kinesins in a plant cell. PNAS. 201311243. [http://dx.doi.org/10.1073/pnas.1311243111 doi:10.1073/pnas.1311243111].
-
-Ellison, C.J., J.M. Katzenstein, and D.W. Janes. 2014. METHOD FOR CREATING TOPOGRAPHICAL PATTERNS IN POLYMERS VIA SURFACE ENERGY PATTERNED FILMS AND THE MARANGONI EFFECT.
-
-Casa, L.D.C., and D.N. Ku. High Shear Thrombus Formation under Pulsatile and Steady Flow. Cardiovasc Eng Tech. 1–10. [http://dx.doi.org/10.1007/s13239-014-0180-z doi:10.1007/s13239-014-0180-z].
-
-Hammar, P., M. Walldén, D. Fange, F. Persson, Ö. Baltekin, G. Ullman, P. Leroy, and J. Elf. 2014. Direct measurement of transcription factor dissociation excludes a simple operator occupancy model for gene regulation. Nat Genet. advance online publication. [http://dx.doi.org/10.1038/ng.2905 doi:10.1038/ng.2905].
-
-Walsh, P., G. Vanderlee, J. Yau, J. Campeau, V.L. Sim, C.M. Yip, and S. Sharpe. 2014. The mechanism of membrane disruption by cytotoxic amyloid oligomers formed by PrP(106-126) is dependent on bilayer composition. J. Biol. Chem. jbc.M113.515866. [http://dx.doi.org/10.1074/jbc.M113.515866 doi:10.1074/jbc.M113.515866].
-
-Huebner, R.J., T. Lechler, and A.J. Ewald. 2014. Developmental stratification of the mammary epithelium occurs through symmetry-breaking vertical divisions of apically positioned luminal cells. Development. 141:1085–1094. [http://dx.doi.org/10.1242/dev.103333 doi:10.1242/dev.103333].
-
-Lee, T.K., C. Tropini, J. Hsin, S.M. Desmarais, T.S. Ursell, E. Gong, Z. Gitai, R.D. Monds, and K.C. Huang. 2014. A dynamically assembled cell wall synthesis machinery buffers cell growth. PNAS. 201313826. [http://dx.doi.org/10.1073/pnas.1313826111 doi:10.1073/pnas.1313826111].
-
-Ursell, T.S., J. Nguyen, R.D. Monds, A. Colavin, G. Billings, N. Ouzounov, Z. Gitai, J.W. Shaevitz, and K.C. Huang. 2014. Rod-like bacterial shape is maintained by feedback between cell curvature and cytoskeletal localization. PNAS. 201317174. [http://dx.doi.org/10.1073/pnas.1317174111 doi:10.1073/pnas.1317174111].
-
-Veltman, D.M., M.G. Lemieux, D.A. Knecht, and R.H. Insall. 2014. PIP3-dependent macropinocytosis is incompatible with chemotaxis. J Cell Biol. 204:497–505. [http://dx.doi.org/10.1083/jcb.201309081 doi:10.1083/jcb.201309081].
-
-Sévin, D.C., and U. Sauer. 2014. Ubiquinone accumulation improves osmotic-stress tolerance in Escherichia coli. Nat Chem Biol. advance online publication. [http://dx.doi.org/10.1038/nchembio.1437 doi:10.1038/nchembio.1437].
-
-Smith, A.J., B.-J. Jin, J. Ratelade, and A.S. Verkman. 2014. Aggregation state determines the localization and function of M1– and M23–aquaporin-4 in astrocytes. J Cell Biol. 204:559–573. [http://dx.doi.org/10.1083/jcb.201308118 doi:10.1083/jcb.201308118].
-
-Polka, J.K., J.M. Kollman, and R.D. Mullins. 2014. Accessory factors promote AlfA-dependent plasmid segregation by regulating filament nucleation, disassembly, and bundling. PNAS. 201304127. [http://dx.doi.org/10.1073/pnas.1304127111 doi:10.1073/pnas.1304127111].
-
-Chu, J.W.F., and H.M. Reiswig. 2014. Mechanisms of propagule release in the carnivorous sponge Asbestopluma occidentalis. Invertebrate Biology. n/a–n/a. [http://dx.doi.org/10.1111/ivb.12045 doi:10.1111/ivb.12045].
-
-Turner, H.C., P. Sharma, J.R. Perrier, A. Bertucci, L. Smilenov, G. Johnson, M. Taveras, D.J. Brenner, and G. Garty. The RABiT: high-throughput technology for assessing global DSB repair. Radiat Environ Biophys. 1–8. [http://dx.doi.org/10.1007/s00411-014-0514-0 doi:10.1007/s00411-014-0514-0].
-
-Naylor, S.G., and D.O. Morgan. 2014. Cdk1-dependent phosphorylation of Iqg1 governs actomyosin ring assembly prior to cytokinesis. J Cell Sci. jcs.144097. [http://dx.doi.org/10.1242/jcs.144097 doi:10.1242/jcs.144097].
-
-Basu, R., E.L. Munteanu, and F. Chang. 2014. Role of turgor pressure in endocytosis in fission yeast. Mol. Biol. Cell. mbc.E13–10–0618. [http://dx.doi.org/10.1091/mbc.E13-10-0618 doi:10.1091/mbc.E13-10-0618].
-
-Tsai, F.-C., A. Seki, H.W. Yang, A. Hayer, S. Carrasco, S. Malmersjö, and T. Meyer. 2014. A polarized Ca2+, diacylglycerol and STIM1 signalling system regulates directed cell migration. Nat Cell Biol. 16:133–144. [http://dx.doi.org/10.1038/ncb2906 doi:10.1038/ncb2906].
-
-Snijders, T., B.T. Wall, M.L. Dirks, J.M.G. Senden, F. Hartgens, J. Dolmans, M. Losen, L.B. Verdijk, and L.J.C. van Loon. 2014. Muscle disuse atrophy is not accompanied by changes in skeletal muscle satellite cell content. Clinical Science. 126:557–566. [http://dx.doi.org/10.1042/CS20130295 doi:10.1042/CS20130295].
-
-Black, J.C., P.P. Cheney, T. Campbell, and M.K. Knowles. 2014. Membrane curvature based lipid sorting using a nanoparticle patterned substrate. Soft Matter. [http://dx.doi.org/10.1039/C3SM52522H doi:10.1039/C3SM52522H].
-
-Sosa, L.J., N.L. Postma, A. Estrada-Bernal, M. Hanna, R. Guo, J. Busciglio, and K.H. Pfenninger. 2014. Dosage of amyloid precursor protein affects axonal contact guidance in Down syndrome. FASEB J. 28:195–205. [http://dx.doi.org/10.1096/fj.13-232686 doi:10.1096/fj.13-232686].
-
-Krieger, J.W., A.P. Singh, C.S. Garbe, T. Wohland, and J. Langowski. 2014. Dual-Color Fluorescence Cross-Correlation Spectroscopy on a Single Plane Illumination Microscope (SPIM-FCCS). Opt. Express. 22:2358–2375. [http://dx.doi.org/10.1364/OE.22.002358 doi:10.1364/OE.22.002358].
-
-Itsuki, K., Y. Imai, H. Hase, Y. Okamura, R. Inoue, and M.X. Mori. 2014. PLC-mediated PI(4,5)P2 hydrolysis regulates activation and inactivation of TRPC6/7 channels. J Gen Physiol. 143:183–201. [http://dx.doi.org/10.1085/jgp.201311033 doi:10.1085/jgp.201311033].
-
-Liu, H., C. Dong, and J. Ren. 2014. Tempo-Spatially Resolved Scattering Correlation Spectroscopy under Dark-Field Illumination and Its Application to Investigate Dynamic Behaviors of Gold Nanoparticles in Live Cells. J. Am. Chem. Soc. [http://dx.doi.org/10.1021/ja410284j doi:10.1021/ja410284j].
-
-Chaufan, G., I. Coalova, and M. del C.R. de Molina. 2014. Glyphosate Commercial Formulation Causes Cytotoxicity, Oxidative Effects, and Apoptosis on Human Cells Differences With its Active Ingredient. International Journal of Toxicology. 1091581813517906. [http://dx.doi.org/10.1177/1091581813517906 doi:10.1177/1091581813517906].
-
-Gualda, E., N. Moreno, P. Tomancak, and G.G. Martins. Going “open” with Mesoscopy: a new dimension on multi-view imaging. Protoplasma. 1–10. [http://dx.doi.org/10.1007/s00709-013-0599-3 doi:10.1007/s00709-013-0599-3].
-
-Nyitray, C.E., M.G. Chavez, and T. Desai. 2014. Compliant 3D Microenvironment Improves β-Cell Cluster Insulin Expression through Mechanosensing and β-Catenin Signaling. Tissue Engineering Part A. 140116054015007. [http://dx.doi.org/10.1089/ten.TEA.2013.0692 doi:10.1089/ten.TEA.2013.0692].
-
-Blot, A., and B. Barbour. 2014. Ultra-rapid axon-axon ephaptic inhibition of cerebellar Purkinje cells by the pinceau. Nature Neuroscience. [http://dx.doi.org/10.1038/nn.3624 doi:10.1038/nn.3624].
-
-Zechner, C., M. Unger, S. Pelet, M. Peter, and H. Koeppl. 2014. Scalable inference of heterogeneous reaction kinetics from pooled single-cell recordings. Nat Meth. 11:197–202. [http://dx.doi.org/10.1038/nmeth.2794 doi:10.1038/nmeth.2794].
-
-OpenComet: An automated tool for comet assay image analysis [http://dx.doi.org/10.1016/j.redox.2013.12.020 doi:10.1016/j.redox.2013.12.020]
-
-Staudt, D.W., J. Liu, K.S. Thorn, N. Stuurman, M. Liebling, and D.Y.R. Stainier. 2014. High-resolution imaging of cardiomyocyte behavior reveals two distinct steps in ventricular trabeculation. Development. dev.098632. [http://dx.doi.org/10.1242/dev.098632 doi:10.1242/dev.098632].
-
-Yang, Y., and C. Zhang. 2014. Visualizing and Quantifying Protein PolySUMOylation at the Single-Molecule Level. Anal. Chem. 86:967–972. [http://dx.doi.org/10.1021/ac403753r doi:10.1021/ac403753r].
-
-Holden, S.J., Pengo, T., Meibom, K., Fernandez-Fernandez, C., Collier, J., Manley, S. 2014. High throughput 3D super-resolution microscopy reveals Caulobacter crescentus in vivo Z-ring organization. PNAS. 201313368 (in Supplemental Materials) [http://dx.doi.org/10.1073/pnas.1313368111 doi:10.1073/pnas.1313368111]. 
-
+## 2014
+
+Haupt, A., A. Campetelli, D. Bonazzi, M. Piel, F. Chang, and N. Minc.
+2014. Electrochemical Regulation of Budding Yeast Polarity. PLoS Biol.
+12:e1002029.
+[<doi:10.1371/journal.pbio.1002029>](http://dx.doi.org/10.1371/journal.pbio.1002029).
+
+Shultzaberger, R.K., M.L. Paddock, T. Katsuki, R.J. Greenspan, and S.S.
+Golden. 2015. Chapter Three - High-Throughput and Quantitative
+Approaches for Measuring Circadian Rhythms in Cyanobacteria Using
+Bioluminescence. In Methods in Enzymology. A. Sehgal, editor. Academic
+Press. 53–72.
+
+DeWitt, B.N., and R.C. Dunn. 2014. Interaction of Cholesterol in Ternary
+Lipid Mixtures Investigated Using Single-Molecule Fluorescence.
+Langmuir. 31:995–1004.
+[<doi:10.1021/la503797w>](http://dx.doi.org/10.1021/la503797w).
+
+Selimkhanov, J., B. Taylor, J. Yao, A. Pilko, J. Albeck, A. Hoffmann, L.
+Tsimring, and R. Wollman. 2014. Accurate information transmission
+through dynamic biochemical signaling networks. Science. 346:1370–1373.
+[<doi:10.1126/science.1254933>](http://dx.doi.org/10.1126/science.1254933).
+
+Fincher, Jarod, Canaan Whiteneck, and Eric Birgbauer. "G-protein-coupled
+receptor cell signaling pathways mediating embryonic chick retinal
+growth cone collapse induced by lysophosphatidic Acid and
+sphingosine-1-phosphate." Developmental neuroscience 36.6 (2013):
+443-453.
+
+Wang, J., J.W. Petefish, A.C. Hillier, and I.C. Schneider. 2014.
+Epitaxially Grown Collagen Fibrils Reveal Diversity in Contact Guidance
+Behavior among Cancer Cells. Langmuir.
+[<doi:10.1021/la503254x>](http://dx.doi.org/10.1021/la503254x).
+
+Tao-Tao Liu, Zhi-Gang He, Xue-Bi Tian, Hong-Bing Xiang: Neural
+mechanisms and potential treatment of epilepsy and its complications. Am
+J Transl Res 2014;6(6):625-630. (Abstract AJTR0002907, Full text, PDF).
+
+Yen-Ta Chen, Chih-Chao Yang, Cheuk-Kwan Sun, Hsin-Ju Chiang, Yi-Ling
+Chen, Pei-Hsun Sung, Yen-Yi Zhen, Tein-Hung Huang, Chia-Lo Chang,
+Hong-Hwa Chen, Hsueh-Wen Chang, Hon-Kan Yip: Extracorporeal shock wave
+therapy ameliorates cyclophosphamide-induced rat acute interstitial
+cystitis though inhibiting inflammation and oxidative stress-in vitro
+and in vivo experiment studies. Am J Transl Res 2014;6(6):631-648.
+(Abstract AJTR0002520, Full text, PDF).
+
+Longfei Huo, Chia-Wei Li, Tzu-Hsuan Huang, Yung Carmen Lam, Weiya Xia,
+Chun Tu, Wei-Chao Chang, Jennifer L Hsu, Dung-Fang Lee, Lei Nie,
+Hirohito Yamaguchi, Yan Wang, Jingyu Lang, Long-Yuan Li, Chung-Hsuan
+Chen, Lopa Mishra, Mien-Chie Hung: Activation of Keap1/Nrf2 signaling
+pathway by nuclear epidermal growth factor receptor in cancer cells. Am
+J Transl Res 2014;6(6):649-663. (Abstract AJTR0002147, Full text, PDF).
+
+Xiaojie Wei, Songbin He, Zhouguang Wang, Jiamin Wu, Jinjing Zhang, Yi
+Cheng, Jie Yang, Xinlong Xu, Zaifeng Chen, Junmin Ye, Li Chen, Li Lin,
+Jian Xiao: Fibroblast growth factor 1 attenuates
+6-hydroxydopamine-induced neurotoxicity: an in vitro and in vivo
+investigation in experimental models of parkinson’s disease. Am J Transl
+Res 2014;6(6):664-677. (Abstract AJTR0001987, Full text, PDF).
+
+Weijuan Li, Yaoqi Chen, Songhai Li, Xiaopeng Guo, Wenping Zhou, Qiutang
+Zeng, Yuhua Liao, Yumiao Wei: Agonistic antibody to angiotensin II type
+1 receptor accelerates atherosclerosis in ApoE-/- mice. Am J Transl Res
+2014;6(6):678-690. (Abstract AJTR0002772, Full text, PDF).
+
+Tingting Chen, Pei Zhang, Wenxia Fan, Fenghua Qian, Li Pei, Shuangnian
+Xu, Zhongmin Zou, Bing Ni, Yong Zhang: Co-transplantation with
+mesenchymal stem cells expressing a SDF-1/HOXB4 fusion protein markedly
+improves hematopoietic stem cell engraftment and hematogenesis in
+irradiated mice. Am J Transl Res 2014;6(6):691-702.
+
+Jing-Juan Huang,Yi-Qin Shi, Rui-Lin Li, An Hu, Hong-Sheng Zhou, Qian
+Cheng, Zheng Xu, Zhi-Ming Yang, Chang-Ning Hao, Jun-Li Duan:
+Angiogenesis effect of therapeutic ultrasound on ischemic hind limb in
+mice. Am J Transl Res 2014;6(6):703-713. (Abstract AJTR0002564, Full
+text, PDF).
+
+Hai Fan, Likun Ma, Bin Fan, Jiawei Wu, Zhe Yang, Lei Wang: Role of
+PDGFR-β/PI3K/AKT signaling pathway in PDGF-BB induced myocardial
+fibrosis in rats. Am J Transl Res 2014;6(6):714-723. (Abstract
+AJTR0001969, Full text, PDF).
+
+Paul W Burridge, Scott A Metzler, Karina H Nakayama, Oscar J Abilez,
+Chelsey S Simmons, Marc A Bruce, Yuka Matsuura, Paul Kim, Joseph C Wu,
+Manish Butte, Ngan F Huang, Phillip C Yang: Multi-cellular interactions
+sustain long-term contractility of human pluripotent stem cell-derived
+cardiomyocytes. Am J Transl Res 2014;6(6):724-735. (Abstract
+AJTR0002357, Full text, PDF).
+
+Ledderose, C., Y. Bao, J. Zhang, and W.G. Junger. 2014. Novel method for
+real-time monitoring of ATP release reveals multiple phases of autocrine
+purinergic signaling during immune cell activation. Acta Physiol.
+n/a–n/a.
+[<doi:10.1111/apha.12435>](http://dx.doi.org/10.1111/apha.12435).
+
+Dufour, A., T. Liu, C. Ducroz, R. Tournemenne, B. Cummings, R. Thibeaux,
+N. Guillen, A. Hero, and J. Olivo-Marin. 2015. Signal Processing
+Challenges in Quantitative 3-D Cell Morphology: More than meets the eye.
+IEEE Signal Processing Magazine. 32:30–40.
+[<doi:10.1109/MSP.2014.2359131>](http://dx.doi.org/10.1109/MSP.2014.2359131).
+
+Hughey, J.J., M.V. Gutschow, B.T. Bajar, and M.W. Covert. 2014.
+Single-cell variation leads to population invariance in NF-κB signaling
+dynamics. Mol. Biol. Cell. mbc.E14–08–1267.
+[<doi:10.1091/mbc.E14-08-1267>](http://dx.doi.org/10.1091/mbc.E14-08-1267).
+
+Liu, S., D. Zhang, and H. Wang. 2014. Transient Isotachophoresis
+Focusing of DNA and DNA-Protein Complexes Is Essentially Enhanced by
+Spontaneously Dissolved Aerial Carbon Dioxide in Electrolytes. Anal.
+Chem. [<doi:10.1021/ac504173b>](http://dx.doi.org/10.1021/ac504173b).
+
+Peterson, A.W., M. Halter, A. Tona, and A.L. Plant. 2014. High
+resolution surface plasmon resonance imaging for single cells. BMC Cell
+Biology. 15:35.
+[<doi:10.1186/1471-2121-15-35>](http://dx.doi.org/10.1186/1471-2121-15-35).
+
+Dillard, P., R. Varma, K. Sengupta, and L. Limozin. 2014.
+Ligand-Mediated Friction Determines Morphodynamics of Spreading T Cells.
+Biophysical Journal. 107:2629–2638.
+[<doi:10.1016/j.bpj.2014.10.044>](http://dx.doi.org/10.1016/j.bpj.2014.10.044).
+
+Brown, A.T., I.D. Vladescu, A. Dawson, T. Vissers, J. Schwarz-Linek,
+J.S. Lintuvuori, and W.C.K. Poon. 2014. Swimming in A Crystal: Using
+Colloidal Crystals to Characterise Micro-swimmers. arXiv:1411.6847
+\[cond-mat, physics:physics\].
+
+Feetham, C.H., N. Nunn, R. Lewis, C. Dart, and R. Barrett-Jolley. 2014.
+TRPV4 and KCa functionally couple as osmosensors in the PVN. Br J
+Pharmacol. n/a–n/a.
+[<doi:10.1111/bph.13023>](http://dx.doi.org/10.1111/bph.13023).
+
+Butler, V.J., R. Branicky, E. Yemini, J.F. Liewald, A. Gottschalk, R.A.
+Kerr, D.B. Chklovskii, and W.R. Schafer. 2015. A consistent muscle
+activation strategy underlies crawling and swimming in Caenorhabditis
+elegans. J. R. Soc. Interface. 12:20140963.
+[<doi:10.1098/rsif.2014.0963>](http://dx.doi.org/10.1098/rsif.2014.0963).
+
+Ikmi, A., S.A. McKinney, K.M. Delventhal, and M.C. Gibson. 2014. TALEN
+and CRISPR/Cas9-mediated genome editing in the early-branching metazoan
+Nematostella vectensis. Nat Commun. 5.
+[<doi:10.1038/ncomms6486>](http://dx.doi.org/10.1038/ncomms6486).
+
+Slawson, J.B., E.A. Kuklin, K. Mukherjee, N. Pírez, N.C. Donelson, and
+L.C. Griffith. 2014. Regulation of dopamine release by CASK-β modulates
+locomotor initiation in Drosophila melanogaster. β. 8:394.
+[<doi:10.3389/fnbeh.2014.00394>](http://dx.doi.org/10.3389/fnbeh.2014.00394).
+
+Zhao, B., Z. Wu, N. Grillet, L. Yan, W. Xiong, S. Harkins-Perry, and U.
+Müller. TMIE Is an Essential Component of the Mechanotransduction
+Machinery of Cochlear Hair Cells. Neuron.
+[<doi:10.1016/j.neuron.2014.10.041>](http://dx.doi.org/10.1016/j.neuron.2014.10.041).
+
+Velasquez, S.M., J.R. Dinneny, and J.M. Estevez. 2015. Live Imaging of
+Root Hairs. In Plant Cell Expansion. J.M. Estevez, editor. Springer New
+York. 59–66.
+
+Hentrich, C., and J.W. Szostak. 2014. Controlled growth of filamentous
+fatty acid vesicles under flow. Langmuir.
+[<doi:10.1021/la503933x>](http://dx.doi.org/10.1021/la503933x).
+
+Nakano, A., F. Camacho-Alanis, and A. Ros. 2014. Insulator-Based
+Dielectrophoresis with β-Galactosidase in Nanostructured Devices. The
+Analyst.
+[<doi:10.1039/C4AN01503G>](http://dx.doi.org/10.1039/C4AN01503G).
+
+Hedde, P.N., M. Stakic, and E. Gratton. 2014. Rapid Measurement of
+Molecular Transport and Interaction inside Living Cells Using Single
+Plane Illumination. Sci. Rep. 4.
+[<doi:10.1038/srep07048>](http://dx.doi.org/10.1038/srep07048).
+
+Aranyosi, A.J., E.A. Wong, and D. Irimia. 2014. A neutrophil treadmill
+to decouple spatial and temporal signals during chemotaxis. Lab Chip.
+[<doi:10.1039/C4LC00970C>](http://dx.doi.org/10.1039/C4LC00970C).
+
+Deschamps, J., M. Mund, and J. Ries. 2014. 3D superresolution microscopy
+by supercritical angle detection. Optics Express. 22:29081.
+[<doi:10.1364/OE.22.029081>](http://dx.doi.org/10.1364/OE.22.029081).
+
+Edelstein, A.D., M.A. Tsuchida, N. Amodaj, H. Pinkard, R.D. Vale, and N.
+Stuurman. 2014. Advanced methods of microscope control using μManager
+software. Journal of Biological Methods. 1:10.
+[<doi:10.14440/jbm.2014.36>](http://dx.doi.org/10.14440/jbm.2014.36).
+
+Bump, S., A. Böhm, L. Babel, S. Wendenburg, F. Carstens, S. Schabel, M.
+Biesalski, and T. Meckel. 2014. Spatial, spectral, radiometric, and
+temporal analysis of polymer-modified paper substrates using
+fluorescence microscopy. Cellulose. 1–16.
+[<doi:10.1007/s10570-014-0499-5>](http://dx.doi.org/10.1007/s10570-014-0499-5).
+
+Tran, C.S., S.M. Rangel, H. Almblad, A. Kierbel, M. Givskov, T.
+Tolker-Nielsen, A.R. Hauser, and J.N. Engel. 2014. The Pseudomonas
+aeruginosa Type III Translocon Is Required for Biofilm Formation at the
+Epithelial Barrier. PLoS Pathog. 10:e1004479.
+[<doi:10.1371/journal.ppat.1004479>](http://dx.doi.org/10.1371/journal.ppat.1004479).
+
+Bhabha, G., H.-C. Cheng, N. Zhang, A. Moeller, M. Liao, J.A. Speir, Y.
+Cheng, and R.D. Vale. 2014. Allosteric Communication in the Dynein Motor
+Domain. Cell. 159:857–868.
+\[htrp://dx.doi.org/10.1016/j.cell.2014.10.018
+<doi:10.1016/j.cell.2014.10.018>\].
+
+Sartorel, E., E. Barrey, R.K. Lau, and J. Thorner. 2014. Plasma membrane
+aminoglycerolipid flippase function is required for signaling competence
+in the yeast mating pheromone response pathway. Mol. Biol. Cell.
+mbc.E14–07–1193.
+[<doi:10.1091/mbc.E14-07-1193>](http://dx.doi.org/10.1091/mbc.E14-07-1193).
+
+Armenti, S.T., L.L. Lohmer, D.R. Sherwood, and J. Nance. 2014.
+Repurposing an endogenous degradation system for rapid and targeted
+depletion of C. elegans proteins. Development. dev.115048.
+[<doi:10.1242/dev.115048>](http://dx.doi.org/10.1242/dev.115048).
+
+Geng, J., K. Kim, J. Zhang, A. Escalada, R. Tunuguntla, L.R. Comolli,
+F.I. Allen, A.V. Shnyrova, K.R. Cho, D. Munoz, Y.M. Wang, C.P.
+Grigoropoulos, C.M. Ajo-Franklin, V.A. Frolov, and A. Noy. 2014.
+Stochastic transport through carbon nanotubes in lipid bilayers and live
+cell membranes. Nature. 514:612–615.
+[<doi:10.1038/nature13817>](http://dx.doi.org/10.1038/nature13817).
+
+Gallagher, S.R. 2008. Digital Image Processing and Analysis with ImageJ.
+In Current Protocols Essential Laboratory Techniques. John Wiley & Sons,
+Inc.
+
+Zhou, Z., E.L. Munteanu, J. He, T. Ursell, M. Bathe, K.C. Huang, and F.
+Chang. 2014. The contractile ring coordinates curvature dependent septum
+assembly during fission yeast cytokinesis. Mol. Biol. Cell.
+mbc.E14–10–1441.
+[<doi:10.1091/mbc.E14-10-1441>](http://dx.doi.org/10.1091/mbc.E14-10-1441).
+
+Verma, S., E. Leikina, K. Melikov, and L. Chernomordik. 2014. Late
+stages of the synchronized macrophage fusion in osteoclast formation
+depend on dynamin. Biochemical Journal.
+[<doi:10.1042/BJ20141233>](http://dx.doi.org/10.1042/BJ20141233).
+
+Morrissey, M.A., D.P. Keeley, E.J. Hagedorn, S.T.H. McClatchey, Q. Chi,
+D.H. Hall, and D.R. Sherwood. 2014. B-LINK: A Hemicentin, Plakin, and
+Integrin-Dependent Adhesion System that Links Tissues by Connecting
+Adjacent Basement Membranes. Developmental Cell. 31:319–331.
+[<doi:10.1016/j.devcel.2014.08.024>](http://dx.doi.org/10.1016/j.devcel.2014.08.024).
+
+Valignat, M.-P., P. Nègre, S. Cadra, A.C. Lellouch, F. Gallet, S. Hénon,
+and O. Theodoly. 2014. Lymphocytes can self-steer passively with wind
+vane uropods. Nat Commun. 5.
+[<doi:10.1038/ncomms6213>](http://dx.doi.org/10.1038/ncomms6213).
+
+Zheng, Q., S. Ahlawat, A. Schaefer, T. Mahoney, S.P. Koushika, and M.L.
+Nonet. 2014. The Vesicle Protein SAM-4 Regulates the Processivity of
+Synaptic Vesicle Transport. PLoS Genet. 10:e1004644.
+[<doi:10.1371/journal.pgen.1004644>](http://dx.doi.org/10.1364/10.1371/journal.pgen.1004644).
+
+Min, J., S.J. Holden, L. Carlini, M. Unser, S. Manley, and J.C. Ye.
+2014. 3D high-density localization microscopy using hybrid astigmatic/
+biplane imaging and sparse image reconstruction. Biomed. Opt. Express.
+5:3935–3948.
+[<doi:10.1364/BOE.5.003935>](http://dx.doi.org/10.1364/BOE.5.003935).
+
+Bonnans, C., M. Lohela, and Z. Werb. 2014. Real-time Imaging of Myeloid
+Cells Dynamics in \<em\>Apc\<sup\>Min/+\</sup\>\</em\> Intestinal Tumors
+by Spinning Disk Confocal Microscopy. Journal of Visualized Experiments.
+[<doi:10.3791/51916>](http://dx.doi.org/10.3791/51916).
+
+Tanenbaum, M.E., L.A. Gilbert, L.S. Qi, J.S. Weissman, and R.D. Vale. A
+Protein-Tagging System for Signal Amplification in Gene Expression and
+Fluorescence Imaging. Cell.
+[<doi:10.1016/j.cell.2014.09.039>](http://dx.doi.org/10.1016/j.cell.2014.09.039).
+
+Lu, D., J.Y. Hsiao, N.E. Davey, V.A.V. Voorhis, S.A. Foster, C. Tang,
+and D.O. Morgan. 2014. Multiple mechanisms determine the order of APC/C
+substrate degradation in mitosis. J Cell Biol. 207:23–39.
+[<doi:10.1083/jcb.201402041>](http://dx.doi.org/10.1083/jcb.201402041).
+
+Ribeiro, S.A., M.V. D’Ambrosio, and R.D. Vale. 2014. Induction of Focal
+Adhesions and Motility in Drosophila S2 cells. Mol. Biol. Cell.
+mbc.E14–04–0863.
+[<doi:10.1091/mbc.E14-04-0863>](http://dx.doi.org/10.1091/mbc.E14-04-0863).
+
+Theer, P., C. Mongis, and M. Knop. 2014. PSFj: know your fluorescence
+microscope. Nat Meth. 11:981–982.
+[<doi:10.1038/nmeth.3102>](http://dx.doi.org/10.1038/nmeth.3102).
+
+Saini, S.G., C. Liu, P. Zhang, and T.H. Lee. 2014. Membrane tethering by
+the atlastin GTPase depends on GTP hydrolysis but not on forming the
+crossover configuration. Mol. Biol. Cell. mbc.E14–08–1284.
+[<doi:10.1091/mbc.E14-08-1284>](http://dx.doi.org/10.1091/mbc.E14-08-1284).
+
+Chingozha, L., M. Zhan, C. Zhu, and H. Lu. 2014. A Generalizable,
+Tunable Microfluidic Platform for Delivering Fast Temporally Varying
+Chemical Signals to Probe Single-Cell Response Dynamics. Anal. Chem.
+[<doi:10.1021/ac5019843>](http://dx.doi.org/10.1021/ac5019843).
+
+Doggett, T.M., and J.W. Breslin. 2014. Acute Alcohol
+Intoxication-Induced Microvascular Leakage. Alcohol Clin Exp Res.
+[<doi:10.1111/acer.12525>](http://dx.doi.org/10.1111/acer.12525).
+
+Gupta, G., P. Nowak-Sliwinska, N. Herrero, P.J. Dyson, and B. Therrien.
+2014. Highly water soluble trithiolato-bridged dinuclear arene ruthenium
+complexes. Inorganica Chimica Acta. 423, Part A:524–529.
+[<doi:10.1016/j.ica.2014.09.013>](http://dx.doi.org/10.1016/j.ica.2014.09.013).
+
+Xiong, W., T. Wagner, L. Yan, N. Grillet, and U. Müller. 2014. Using
+injectoporation to deliver genes to mechanosensory hair cells. Nat.
+Protocols. 9:2438–2449.
+[<doi:10.1038/nprot.2014.168>](http://dx.doi.org/10.1038/nprot.2014.168).
+
+Hou, Y., L.L. Rodriguez, J. Wang, and I.C. Schneider. 2014. Collagen
+attachment to the substrate controls cell clustering through migration.
+Phys. Biol. 11:056007.
+[<doi:10.1088/1478-3975/11/5/056007>](http://dx.doi.org/10.1088/1478-3975/11/5/056007).
+
+Schuck, S., C.M. Gallagher, and P. Walter. 2014. ER-phagy mediates
+selective degradation of endoplasmic reticulum independently of the core
+autophagy machinery. J Cell Sci. 127:4078–4088.
+[<doi:10.1242/jcs.154716>](http://dx.doi.org/10.1242/jcs.154716).
+
+Kleele, T., P. Marinković, P.R. Williams, S. Stern, E.E. Weigand, P.
+Engerer, R. Naumann, J. Hartmann, R.M. Karl, F. Bradke, D. Bishop, J.
+Herms, A. Konnerth, M. Kerschensteiner, L. Godinho, and T. Misgeld.
+2014. An assay to image neuronal microtubule dynamics in mice. Nat
+Commun. 5.
+[<doi:10.1038/ncomms5827>](http://dx.doi.org/10.1038/ncomms5827).
+
+Dargaei, Z., P.L.W. Colmers, H.M. Hodgson, and N.S. Magoski. 2014.
+Electrical coupling between Aplysia bag cell neurons: characterization
+and role in synchronous firing. Journal of Neurophysiology.
+jn.00494.2014.
+[<doi:10.1152/jn.00494.2014>](http://dx.doi.org/10.1152/jn.00494.2014).
+
+Nogami, S., S. Ohnuki, and Y. Ohya. 2014. Hyperspectral imaging
+techniques for the characterization of Haematococcus pluvialis
+(Chlorophyceae). J. Phycol.. n/a–n/a.
+[<doi:10.1111/jpy.12226>](http://dx.doi.org/10.1111/jpy.12226).
+
+Tajon, C.A., D. Seo, J. Asmussen, N. Shah, Y. Jun, and C.S. Craik. 2014.
+Sensitive and Selective Plasmon Ruler Nanosensors for Monitoring the
+Apoptotic Drug Response in Leukemia. ACS Nano.
+[<doi:10.1021/nn502959q>](http://dx.doi.org/10.1021/nn502959q).
+
+Helgeson, L.A., J.G. Prendergast, A.R. Wagner, M. Rodnick-Smith, and
+B.J. Nolen. 2014. Interactions with Actin Monomers, Actin Filaments and
+Arp2/3 Complex Define the Roles of WASP Family Proteins and Cortactin in
+Coordinately Regulating Branched Actin Networks. J. Biol. Chem..
+jbc.M114.587527.
+[<doi:10.1074/jbc.M114.587527>](http://dx.doi.org/10.1074/jbc.M114.587527).
+
+Shen, Z., X. Zhang, Y. Chai, Z. Zhu, P. Yi, G. Feng, W. Li, and G. Ou.
+2014. Conditional Knockouts Generated by Engineered CRISPR-Cas9
+Endonuclease Reveal the Roles of Coronin in C. elegans Neural
+Development. Developmental Cell. 30:625–636.
+[<doi:10.1016/j.devcel.2014.07.017>](http://dx.doi.org/10.1016/j.devcel.2014.07.017).
+
+Wamberg, M.C., R. Wieczorek, S.B. Brier, J.W. de Vries, M. Kwak, A.
+Herrmann, and P.-A. Monnard. 2014. Functionalization of Fatty Acid
+Vesicles through Newly Synthesized Bolaamphiphile–DNA Conjugates.
+Bioconjugate Chem..
+[<doi:10.1021/bc500289u>](http://dx.doi.org/10.1021/bc500289u).
+
+Lynch, A.E., J. Triajianto, and E. Routledge. 2014. Low-Cost Motility
+Tracking System (LOCOMOTIS) for Time-Lapse Microscopy Applications and
+Cell Visualisation. PLoS ONE. 9:e103547.
+[<doi:10.1371/journal.pone.0103547>](http://dx.doi.org/10.1371/journal.pone.0103547).
+
+Halter, M., E. Bier, P.C. DeRose, G.A. Cooksey, S.J. Choquette, A.L.
+Plant, and J.T. Elliott. 2014. An automated protocol for performance
+benchmarking a widefield fluorescence microscope. Cytometry. n/a–n/a.
+[<doi:10.1002/cyto.a.22519>](http://dx.doi.org/10.1002/cyto.a.22519).
+
+Roossien, D.H., P. Lamoureux, and K.E. Miller. 2014. Cytoplasmic dynein
+pushes the cytoskeletal meshwork forward during axonal elongation. J
+Cell Sci. 127:3593–3602.
+[<doi:10.1242/jcs.152611>](http://dx.doi.org/10.1242/jcs.152611).
+
+Gualda, E.J., D. Simão, C. Pinto, P.M. Alves, and C. Brito. 2014.
+Imaging of human differentiated 3D neural aggregates using light sheet
+fluorescence microscopy. Front. Cell. Neurosci. 8:221.
+[<doi:10.3389/fncel.2014.00221>](http://dx.doi.org/10.3389/fncel.2014.00221).
+
+Long, Z., A. Olliver, E. Brambilla, B. Sclavi, M.C. Lagomarsino, and
+K.D. Dorfman. 2014. Measuring bacterial adaptation dynamics at the
+single-cell level using a microfluidic chemostat and time-lapse
+fluorescence microscopy. Analyst.
+[<doi:10.1039/C4AN00877D>](http://dx.doi.org/10.1039/C4AN00877D).
+
+Carugo, D., T. Octon, W. Messaoudi, A.L. Fisher, M. Carboni, N.R.
+Harris, M. Hill, and P. Glynne-Jones. 2014. A thin-reflector
+microfluidic resonator for continuous-flow concentration of
+microorganisms: a new approach to water quality analysis using
+acoustofluidics. Lab Chip. 14:3830–3842.
+[<doi:10.1039/C4LC00577E>](http://dx.doi.org/10.1039/C4LC00577E).
+
+Compton, J.L., J.C. Luo, H. Ma, E. Botvinick, and V. Venugopalan. 2014.
+High-throughput optical screening of cellular mechanotransduction. Nat
+Photon. 8:710–715.
+[<doi:10.1038/nphoton.2014.165>](http://dx.doi.org/10.1038/nphoton.2014.165).
+
+Helmke, K.J., and R. Heald. 2014. TPX2 levels modulate meiotic spindle
+size and architecture in Xenopus egg extracts. J Cell Biol. 206:385–393.
+[<doi:10.1083/jcb.201401014>](http://dx.doi.org/10.1083/jcb.201401014).
+
+Ledderose, C., Y. Bao, M. Lidicky, J. Zipperle, L. Li, K. Strasser, N.I.
+Shapiro, and W.G. Junger. 2014. Mitochondria are gate-keepers of T cell
+function by producing the ATP that drives purinergic signaling. J. Biol.
+Chem.. jbc.M114.575308.
+[<doi:10.1074/jbc.M114.575308>](http://dx.doi.org/10.1074/jbc.M114.575308).
+
+Lamberti, G., B. Prabhakarpandian, C. Garson, A. Smith, K. Pant, B.
+Wang, and M.F. Kiani. 2014. Bioinspired Microfluidic Assay for In Vitro
+Modeling of Leukocyte–Endothelium Interactions. Anal. Chem..
+86:8344–8351.
+[<doi:10.1021/ac5018716>](http://dx.doi.org/10.1021/ac5018716).
+
+Kone, M., T.J. Pullen, G. Sun, M. Ibberson, A. Martinez-Sanchez, S.
+Sayers, M.-S. Nguyen-Tu, C. Kantor, A. Swisa, Y. Dor, T. Gorman, J.
+Ferrer, B. Thorens, F. Reimann, F. Gribble, J.A. McGinty, L. Chen, P.M.
+French, F. Birzele, T. Hildebrandt, I. Uphues, and G.A. Rutter. 2014.
+LKB1 and AMPK differentially regulate pancreatic β-cell identity. FASEB
+J. fj.14–257667.
+[<doi:10.1096/fj.14-257667>](http://dx.doi.org/10.1096/fj.14-257667).
+
+Sandner, F., H. Welter, J.U. Schwarzer, F.M. Köhn, H.F. Urbanski, and A.
+Mayerhofer. 2014. Expression of the oestrogen receptor GPER by
+testicular peritubular cells is linked to sexual maturation and male
+fertility. Andrology. 2:695–701.
+[<doi:10.1111/j.2047-2927.2014.00243.x>](http://dx.doi.org/10.1111/j.2047-2927.2014.00243.x).
+
+Billings, G., N. Ouzounov, T. Ursell, S.M. Desmarais, J. Shaevitz, Z.
+Gitai, and K.C. Huang. 2014. De novo morphogenesis in L-forms via
+geometric control of cell growth. Molecular Microbiology. 93:883–896.
+[<doi:10.1111/mmi.12703>](http://dx.doi.org/10.1111/mmi.12703).
+
+Wu, M.M., E.D. Covington, and R.S. Lewis. 2014. Single-molecule analysis
+of diffusion and trapping of STIM1 and Orai1 at ER-plasma membrane
+junctions. Mol. Biol. Cell. mbc.E14–06–1107.
+[<doi:10.1091/mbc.E14-06-1107>](http://dx.doi.org/10.1091/mbc.E14-06-1107).
+
+Knogler, L.D., J. Ryan, L. Saint-Amant, and P. Drapeau. 2014. A Hybrid
+Electrical/Chemical Circuit in the Spinal Cord Generates a Transient
+Embryonic Motor Behavior. J. Neurosci.. 34:9644–9655.
+[<doi:10.1523/JNEUROSCI.1225-14.2014>](http://dx.doi.org/10.1523/JNEUROSCI.1225-14.2014).
+
+Cruz-López, R., and H. Maske. 2014. A non-amplified FISH protocol to
+identify simultaneously different bacterial groups attached to
+eukaryotic phytoplankton. J Appl Phycol. 1–8.
+[<doi:10.1007/s10811-014-0379-2>](http://dx.doi.org/10.1007/s10811-014-0379-2).
+
+McKenney, R.J., W. Huynh, M.E. Tanenbaum, G. Bhabha, and R.D. Vale.
+2014. Activation of cytoplasmic dynein motility by dynactin-cargo
+adapter complexes. Science. 345:337–341.
+[<doi:10.1126/science.1254198>](http://dx.doi.org/10.1126/science.1254198).
+
+Edzuka, T., L. Yamada, K. Kanamaru, H. Sawada, and G. Goshima. 2014.
+Identification of the Augmin Complex in the Filamentous Fungus
+Aspergillus nidulans. PLoS ONE. 9:e101471.
+[<doi:10.1371/journal.pone.0101471>](http://dx.doi.org/10.1371/journal.pone.0101471).
+
+Peng, H., J. Tang, H. Xiao, A. Bria, J. Zhou, V. Butler, Z. Zhou, P.T.
+Gonzalez-Bellido, S.W. Oh, J. Chen, A. Mitra, R.W. Tsien, H. Zeng, G.A.
+Ascoli, G. Iannello, M. Hawrylycz, E. Myers, and F. Long. 2014. Virtual
+finger boosts three-dimensional imaging and microsurgery as well as
+terabyte volume image visualization and analysis. Nat Commun. 5.
+[<doi:10.1038/ncomms5342>](http://dx.doi.org/10.1038/ncomms5342).
+
+Vlahakis, A., M. Graef, J. Nunnari, and T. Powers. 2014. TOR complex
+2-Ypk1 signaling is an essential positive regulator of the general amino
+acid control response and autophagy. PNAS. 201406305.
+[<doi:10.1073/pnas.1406305111>](http://dx.doi.org/10.1073/pnas.1406305111).
+
+Billings, G., N. Ouzounov, T. Ursell, S.M. Desmarais, J. Shaevitz, Z.
+Gitai, and K.C. Huang. 2014. De novo morphogenesis in L-forms via
+geometric control of cell growth. Molecular Microbiology. n/a–n/a.
+[<doi:10.1111/mmi.12703>](http://dx.doi.org/10.1111/mmi.12703).
+
+Thieleke-Matos, C., M. Lopes da Silva, L. Cabrita-Santos, C.F. Pires,
+J.S. Ramalho, O. Ikonomov, E. Seixas, A. Shisheva, M.C. Seabra, and D.C.
+Barral. 2014. Host PI(3,5)P2 activity is required for Plasmodium berghei
+growth during liver stage infection. Traffic. n/a–n/a.
+[<doi:10.1111/tra.12190>](http://dx.doi.org/10.1111/tra.12190).
+
+Schlager, M.A., H.T. Hoang, L. Urnavicius, S.L. Bullock, and A.P.
+Carter. 2014. In vitro reconstitution of a highly processive recombinant
+human dynein complex. The EMBO Journal. e201488792.
+[<doi:10.15252/embj.201488792>](http://dx.doi.org/10.15252/embj.201488792).
+
+Barmada, S.J., A. Serio, A. Arjun, B. Bilican, A. Daub, D.M. Ando, A.
+Tsvetkov, M. Pleiss, X. Li, D. Peisach, C. Shaw, S. Chandran, and S.
+Finkbeiner. 2014. Autophagy induction enhances TDP43 turnover and
+survival in neuronal ALS models. Nat Chem Biol. advance online
+publication.
+[<doi:10.1038/nchembio.1563>](http://dx.doi.org/10.1038/nchembio.1563).
+
+Kellogg, R.A., R. Gómez-Sjöberg, A.A. Leyrat, and S. Tay. 2014.
+High-throughput microfluidic single-cell analysis pipeline for studies
+of signaling dynamics. Nat. Protocols. 9:1713–1726.
+[<doi:10.1038/nprot.2014.120>](http://dx.doi.org/10.1038/nprot.2014.120).
+
+Nickerson, A., T. Huang, L.-J. Lin, and X. Nan. 2014. Photoactivated
+Localization Microscopy with Bimolecular Fluorescence Complementation
+(BiFC-PALM) for Nanoscale Imaging of Protein-Protein Interactions in
+Cells. PLoS ONE. 9:e100589.
+[<doi:10.1371/journal.pone.0100589>](http://dx.doi.org/10.1371/journal.pone.0100589).
+
+Teichmann, A., A. Gibert, A. Lampe, P. Grzesik, C. Rutz, J. Furkert, J.
+Schmoranzer, G. Krause, B. Wiesner, and R. Schüelein. 2014. The Specific
+Monomer/dimer Equilibrium of the Corticotropin-Releasing Factor Receptor
+Type 1 is Established in the Endoplasmic Reticulum. J. Biol. Chem.
+jbc.M114.553644.
+[<doi:10.1074/jbc.M114.553644>](http://dx.doi.org/10.1074/jbc.M114.553644).
+
+Brown, H.M., A.E. Knowlton, E. Snavely, B.D. Nguyen, T.S. Richards, and
+S.S. Grieshaber. 2014. Multinucleation during C. trachomatis Infections
+Is Caused by the Contribution of Two Effector Pathways. PLoS ONE.
+9:e100763.
+[<doi:10.1371/journal.pone.0100763>](http://dx.doi.org/10.1371/journal.pone.0100763).
+
+Crane, M.M., I.B.N. Clark, E. Bakker, S. Smith, and P.S. Swain. 2014. A
+Microfluidic System for Studying Ageing and Dynamic Single-Cell
+Responses in Budding Yeast. PLoS ONE. 9:e100042.
+[<doi:10.1371/journal.pone.0100042>](http://dx.doi.org/10.1371/journal.pone.0100042).
+
+Pradervand, N., S. Sulser, F. Delavat, R. Miyazaki, I. Lamas, and J.R.
+van der Meer. 2014. An Operon of Three Transcriptional Regulators
+Controls Horizontal Gene Transfer of the Integrative and Conjugative
+Element ICEclc in Pseudomonas knackmussii B13. PLoS Genet. 10:e1004441.
+[<doi:10.1371/journal.pgen.1004441>](http://dx.doi.org/10.1371/journal.pgen.1004441).
+
+Jafferali, M.H., B. Vijayaraghavan, R.A. Figueroa, E. Crafoord, S.
+Gudise, V.J. Larsson, and E. Hallberg. 2014. MCLIP, an effective method
+to detect interactions of transmembrane proteins of the nuclear envelope
+in live cells. Biochimica et Biophysica Acta (BBA) - Biomembranes.
+1838:2399–2403.
+[<doi:10.1016/j.bbamem.2014.06.008>](http://dx.doi.org/10.1016/j.bbamem.2014.06.008).
+
+Shah, P.K., S.G. Herrera-Loeza, C.E. Sims, J.J. Yeh, and N.L.
+Allbritton. 2014. Small sample sorting of primary adherent cells by
+automated micropallet imaging and release. Cytometry. 85:642–649.
+[<doi:10.1002/cyto.a.22480>](http://dx.doi.org/10.1002/cyto.a.22480).
+
+Krishnan, S., and N.V. Prasadarao. 2014. Identification of minimum
+carbohydrate moiety in N-glycosylation sites of brain endothelial cell
+glycoprotein 96 for interaction with Escherichia coli K1 outer membrane
+protein A. Microbes and Infection. 16:540–552.
+[<doi:10.1016/j.micinf.2014.06.002>](http://dx.doi.org/10.1016/j.micinf.2014.06.002).
+
+Windschüttl, S., D. Nettersheim, S. Schlatt, A. Huber, H. Welter, J.U.
+Schwarzer, F.M. Köhn, H. Schorle, and A. Mayerhofer. 2014. Are
+testicular mast cells involved in the regulation of germ cells in man?
+Andrology. 2:615–622.
+[<doi:10.1111/j.2047-2927.2014.00227.x>](http://dx.doi.org/10.1111/j.2047-2927.2014.00227.x).
+
+Chang, K.-Y., D. Woo, H. Jung, S. Lee, S. Kim, J. Won, T. Kyung, H.
+Park, N. Kim, H.W. Yang, J.-Y. Park, E.M. Hwang, D. Kim, and W. Do Heo.
+2014. Light-inducible receptor tyrosine kinases that regulate
+neurotrophin signalling. Nat Commun. 5.
+[<doi:10.1038/ncomms5057>](http://dx.doi.org/10.1038/ncomms5057).
+
+Dell, A.I., J.A. Bender, K. Branson, I.D. Couzin, G.G. de Polavieja,
+L.P.J.J. Noldus, A. Pérez-Escudero, P. Perona, A.D. Straw, M. Wikelski,
+and U. Brose. 2014. Automated image-based tracking and its application
+in ecology. Trends in Ecology & Evolution. 29:417–428.
+[<doi:10.1016/j.tree.2014.05.004>](http://dx.doi.org/10.1016/j.tree.2014.05.004).
+
+Lund, D.K., V. Mouly, and D.D.W. Cornelison. 2014. MMP-14 is necessary
+but not sufficient for invasion of three-dimensional collagen by human
+muscle satellite cells. American Journal of Physiology - Cell
+Physiology. ajpcell.00032.2014.
+[<doi:10.1152/ajpcell.00032.2014>](http://dx.doi.org/10.1152/ajpcell.00032.2014).
+
+Hajj, B., M.E. Beheiry, I. Izeddin, X. Darzacq, and M. Dahan. 2014.
+Accessing the third dimension in localization-based super-resolution
+microscopy. Phys. Chem. Chem. Phys.
+[<doi:10.1039/C4CP01380H>](http://dx.doi.org/10.1039/C4CP01380H).
+
+Staude, I., V.K.A. Sreenivasan, I. Shishkin, K. Samusev, M. Decker, D.N.
+Neshev, A.V. Zvyagin, and Y.S. Kivshar. 2014. Selective placement of
+quantum dots on nanoscale areas of metal-free substrates. Phys. Status
+Solidi RRL. 9999:n/a–n/a.
+[<doi:10.1002/pssr.201409215>](http://dx.doi.org/10.1002/pssr.201409215).
+
+Gupta, D., J. Sheats, A. Muralidhar, J.J. Miller, D.E. Huang, S.
+Mahshid, K.D. Dorfman, and W. Reisner. 2014. Mixed confinement regimes
+during equilibrium confinement spectroscopy of DNA. The Journal of
+Chemical Physics. 140:214901.
+[<doi:10.1063/1.4879515>](http://dx.doi.org/10.1063/1.4879515).
+
+Heureaux, J., D. Chen, V.L. Murray, C.X. Deng, and A.P. Liu. 2014.
+Activation of a Bacterial Mechanosensitive Channel in Mammalian Cells by
+Cytoskeletal Stress. Cel. Mol. Bioeng. 1–13.
+[<doi:10.1007/s12195-014-0337-8>](http:/dx.doi.org/10.1007/s12195-014-0337-8).
+
+Nakano, A., J. Luo, and A. Ros. 2014. Temporal and Spatial Temperature
+Measurement in Insulator-based Dielectrophoretic Devices. Anal. Chem.
+[<doi:10.1021/ac501083h>](http://dx.doi.org/10.1021/ac501083h).
+
+Greene, A.C., S.J. Lord, A. Tian, C. Rhodes, H. Kai, and J.T. Groves.
+2014. Spatial Organization of EphA2 at the Cell-Cell Interface Modulates
+Trans-Endocytosis of EphrinA1. Biophysical Journal. 106:2196–2205.
+[3](http://dx.doi.org/10.1016/j.bpj.2014.03.043)
+<doi:10.1016/j.bpj.2014.03.043>\].
+
+Hyland, C., A.F. Mertz, P. Forscher, and E. Dufresne. 2014. Dynamic
+peripheral traction forces balance stable neurite tension in
+regenerating Aplysia bag cell neurons. Sci. Rep. 4.
+[<doi:10.1038/srep04961>](http://dx.doi.org/10.1038/srep04961).
+
+Cama, J., C. Chimerel, S. Pagliara, A. Javer, and U.F. Keyser. 2014. A
+label-free microfluidic assay to quantitatively study antibiotic
+diffusion through lipid membranes. Lab Chip. 14:2303–2308.
+[<doi:10.1039/C4LC00217B>](http://dx.doi.org/10.1039/C4LC00217B).
+
+Velsko, I.M., S.S. Chukkapalli, M.F. Rivera, J.-Y. Lee, H. Chen, D.
+Zheng, I. Bhattacharyya, P.R. Gangula, A.R. Lucas, and L. Kesavalu.
+2014. Active Invasion of Oral and Aortic Tissues by Porphyromonas
+gingivalis in Mice Causally Links Periodontitis and Atherosclerosis.
+PLoS ONE. 9:e97811.
+[<doi:10.1371/journal.pone.0097811>](http://dx.doi.org/10.1371/journal.pone.0097811).
+
+Rojas, E., J.A. Theriot, and K.C. Huang. 2014. Response of Escherichia
+coli growth rate to osmotic shock. PNAS. 201402591.
+[<doi:10.1073/pnas.1402591111>](http://dx.doi.org/10.1073/pnas.1402591111).
+
+Okreglak, V., and P. Walter. 2014. The conserved AAA-ATPase Msp1 confers
+organelle specificity to tail-anchored proteins. PNAS. 111:8019–8024.
+[<doi:10.1073/pnas.1405755111>](http://dx.doi.org/10.1073/pnas.1405755111).
+
+Lai, Y., D. Dilidaer, B. Chen, G. Xu, J. Shi, R.J. Lee, and N.A. Cohen.
+2014. In vitro studies of a distillate of rectified essential oils on
+sinonasal components of mucociliary clearance. American Journal of
+Rhinology and Allergy. 28:244–248.
+[<doi:10.2500/ajra.2014.28.4036>](http://dx.doi.org/10.2500/ajra.2014.28.4036).
+
+Vliet, S. van, F.J. Hol, T. Weenink, P. Galajda, and J.E. Keymer. 2014.
+The effects of chemical interactions and culture history on the
+colonization of structured habitats by competing bacterial populations.
+BMC Microbiology. 14:116.
+[<doi:10.1186/1471-2180-14-116>](http://dx.doi.org/10.1186/1471-2180-14-116).
+
+Von Dassow, M., C.J. Miller, and L.A. Davidson. 2014. Biomechanics and
+the Thermotolerance of Development. PLoS ONE. 9:e95670.
+[<doi:10.1371/journal.pone.0095670>](http://dx.doi.org/10.1371/journal.pone.0095670).
+
+Hu, K.K., M.A. Bruce, and M.J. Butte. 2014. Spatiotemporally and
+mechanically controlled triggering of mast cells using atomic force
+microscopy. Immunol Res. 58:211–217.
+[<doi:10.1007/s12026-014-8510-7>](http://dx.doi.org/10.1007/s12026-014-8510-7).
+
+Panneerselvam, S., and S. Choi. 2014. Nanoinformatics: Emerging
+Databases and Available Tools. International Journal of Molecular
+Sciences. 15:7158–7182.
+[<doi:10.3390/ijms15057158>](http://dx.doi.org/10.3390/ijms15057158).
+
+St-Pierre, F., J.D. Marshall, Y. Yang, Y. Gong, M.J. Schnitzer, and M.Z.
+Lin. 2014. High-fidelity optical reporting of neuronal electrical
+activity with an ultrafast fluorescent voltage sensor. Nat Neurosci.
+17:884–889. [<doi:10.1038/nn.3709>](http://dx.doi.org/10.1038/nn.3709).
+
+Harish Chandra Soundararajan, Simon L Bullock. 2014. The influence of
+dynein processivity control, MAPs, and microtubule ends on directional
+movement of a localising mRNA. eLife 2014;3:e01596.
+[<doi:10.7554/eLife.01596>](http://dx.doi.org/10.7554/eLife.01596)
+
+Keith, S.A., F.R.G. Amrit, R. Ratnappan, and A. Ghazi. 2014. The C.
+elegans healthspan and stress-resistance assay toolkit. Methods.
+[<doi:10.1016/j.ymeth.2014.04.003>](http://dx.doi.org/10.1016/j.ymeth.2014.04.003).
+
+Vermehren-Schmaedick, A., W. Krueger, T. Jacob, D. Ramunno-Johnson, A.
+Balkowiec, K.A. Lidke, and T.Q. Vu. 2014. Heterogeneous Intracellular
+Trafficking Dynamics of Brain-Derived Neurotrophic Factor Complexes in
+the Neuronal Soma Revealed by Single Quantum Dot Tracking. PLoS ONE.
+9:e95113.
+[<doi:10.1371/journal.pone.0095113>](http://dx.doi.org/10.1371/journal.pone.0095113).
+
+Liu, B., W. Chen, B.D. Evavold, and C. Zhu. 2014. Accumulation of
+Dynamic Catch Bonds between TCR and Agonist Peptide-MHC Triggers T Cell
+Signaling. Cell. 157:357–368.
+[<doi:10.1016/j.cell.2014.02.053>](http://dx.doi.org/10.1016/j.cell.2014.02.053).
+
+Köthe, U., F. Herrmannsdörfer, I. Kats, and F.A. Hamprecht. SimpleSTORM:
+a fast, self-calibrating reconstruction algorithm for localization
+microscopy. Histochem Cell Biol. 1–15.
+[<doi:10.1007/s00418-014-1211-4>](http://dx.doi.org/10.1007/s00418-014-1211-4).
+
+Hyland, C., E.R. Dufrense, and P. Forscher. 2014. Regeneration of
+Aplysia Bag Cell Neurons is Synergistically Enhanced by Substrate-Bound
+Hemolymph Proteins and Laminin. Sci Rep. 4.
+[<doi:10.1038/srep04617>](http://dx.doi.org/10.1038/srep04617).
+
+Bhuvanendran, S., K. Salka, K. Rainey, S.C. Sreetama, E. Williams, M.
+Leeker, V. Prasad, J. Boyd, G.H. Patterson, J.K. Jaiswal, and A.M.
+Colberg-Poley. 2014. Superresolution Imaging of Human Cytomegalovirus
+vMIA Localization in Sub-Mitochondrial Compartments. Viruses.
+6:1612–1636.
+[<doi:10.3390/v6041612>](http://dx.doi.org/10.3390/v6041612).
+
+Hafi, N., M. Grunwald, L.S. van den Heuvel, T. Aspelmeier, J.-H. Chen,
+M. Zagrebelsky, O.M. Schütte, C. Steinem, M. Korte, A. Munk, and P.J.
+Walla. 2014. Fluorescence nanoscopy by polarization modulation and
+polarization angle narrowing. Nat Meth. advance online publication.
+[<doi:10.1038/nmeth.2919>](http://dx.doi.org/10.1038/nmeth.2919).
+
+Steel, E., V.L. Murray, and A.P. Liu. 2014. Multiplex Detection of Homo-
+and Heterodimerization of G Protein-Coupled Receptors by Proximity
+Biotinylation. PLoS ONE. 9:e93646.
+[<doi:10.1371/journal.pone.0093646>](http://dx.doi.org/10.1371/journal.pone.0093646).
+
+Czarny, T.L., A.L. Perri, S. French, and E.D. Brown. 2014. Discovery of
+novel cell wall-active compounds using PywaC, a sensitive reporter of
+cell wall stress in the model Gram-positive Bacillus subtilis.
+Antimicrob. Agents Chemother. AAC.02352–14.
+[<doi:10.1128/AAC.02352-14>](http://dx.doi.org/10.1128/AAC.02352-14).
+
+Hendershott, M.C., and R.D. Vale. 2014. Regulation of microtubule
+minus-end dynamics by CAMSAPs and Patronin. PNAS. 201404133.
+[<doi:10.1073/pnas.1404133111>](http://dx.doi.org/10.1073/pnas.1404133111).
+
+Ingaramo, M., A.G. York, P. Wawrzusin, O. Milberg, A. Hong, R. Weigert,
+H. Shroff, and G.H. Patterson. 2014. Two-photon excitation improves
+multifocal structured illumination microscopy in thick scattering
+tissue. PNAS. 201314447.
+[<doi:10.1073/pnas.1314447111>](http://dx.doi.org/10.1073/pnas.1314447111).
+
+Lane, S.I.R., and K.T. Jones. 2014. Non-canonical function of spindle
+assembly checkpoint proteins after APC activation reduces aneuploidy in
+mouse oocytes. Nat Commun. 5.
+[<doi:10.1038/ncomms4444>](http://dx.doi.org/10.1038/ncomms4444).
+
+Ai, H., M.A. Baird, Y. Shen, M.W. Davidson, and R.E. Campbell. 2014.
+Engineering and characterizing monomeric fluorescent proteins for
+live-cell imaging applications. Nat. Protocols. 9:910–928.
+[<doi:10.1038/nprot.2014.054>](http://dx.doi.org/10.1038/nprot.2014.054).
+
+Ramachandra, R., J.C. Bouwer, M.R. Mackey, E. Bushong, S.T. Peltier,
+N.-H. Xuong, and M.H. Ellisman. 2014. Improving Signal to Noise in
+Labeled Biological Specimens Using Energy-Filtered TEM of Sections with
+a Drift Correction Strategy and a Direct Detection Device. Microscopy
+and Microanalysis. FirstView:1–9.
+[<doi:10.1017/S1431927614000452>](http://dx.doi.org/10.1017/S1431927614000452).
+
+Zubkovs, V., F. Jamme, S. Kascakova, F. Chiappini, F. Le Naour, and M.
+Réfrégiers. 2014. Single vs. two photon microscopy for label free
+intrinsic tissue studies in UV light region. The Analyst.
+[<doi:10.1039/c4an00203b>](http://dx.doi.org/10.1039/c4an00203b).
+
+Ballister, E.R., M. Riegman, and M.A. Lampson. 2014. Recruitment of Mad1
+to metaphase kinetochores is sufficient to reactivate the mitotic
+checkpoint. J Cell Biol. 204:901–908.
+[<doi:10.1083/jcb.201311113>](http://dx.doi.org/10.1083/jcb.201311113).
+
+Brewster, R.C., F.M. Weinert, H.G. Garcia, D. Song, M. Rydenfelt, and R.
+Phillips. The Transcription Factor Titration Effect Dictates Level of
+Gene Expression. Cell. (in Supplemental
+Materials)[<doi:10.1016/j.cell.2014.02.022>](http://dx.doi.org/10.1016/j.cell.2014.02.022).
+
+Desjarlais, M., J. Pratt, A. Lounis, C. Mounier, K. Haidara, and B.
+Annabi. 2014. Tetracycline Derivative Minocycline Inhibits Autophagy and
+Inflammation in Concanavalin-A-Activated Human Hepatoma Cells. Gene
+Regul Syst Bio. 8:63–73.
+[<doi:10.4137/GRSB.S13946>](http://dx.doi.org/10.4137/GRSB.S13946).
+
+Chu, J., R.D. Haynes, S.Y. Corbel, P. Li, E. González-González, J.S.
+Burg, N.J. Ataie, A.J. Lam, P.J. Cranfill, M.A. Baird, M.W. Davidson,
+H.-L. Ng, K.C. Garcia, C.H. Contag, K. Shen, H.M. Blau, and M.Z. Lin.
+2014. Non-invasive intravital imaging of cellular differentiation with a
+bright red-excitable fluorescent protein. Nat Meth. advance online
+publication.
+[<doi:10.1038/nmeth.2888>](http://dx.doi.org/10.1038/nmeth.2888).
+
+Sirajuddin, M., L.M. Rice, and R.D. Vale. 2014. Regulation of
+microtubule motors by tubulin isotypes and post-translational
+modifications. Nat Cell Biol. advance online publication.
+[<doi:10.1038/ncb2920>](http://dx.doi.org/10.1038/ncb2920).
+
+Yang, Y., T. Peng, M. Lei, R. Li, X. Zhou, D. Wu, B. Yao, and T. Ye.
+2014. Experimental analysis of focal fields in laser scanning
+fluorescence stereomicroscopy. Proc. SPIE 8949, Three-Dimensional and
+Multidimensional Microscopy: Image Acquisition and Processing XXI,
+89491R (March 12, 2014);
+[<doi:10.1117/12.2040248>](http://dx.doi.org/10.1117/12.2040248)
+
+Chalfoun, J. 2014. A power stitching tool. SPIE Newsroom.
+[<doi:10.1117/2.1201402.005365>](http://dx.oi.org/10.1117/2.1201402.005365).
+
+Bonazzi, D., J.-D. Julien, M. Romao, R. Seddiki, M. Piel, A. Boudaoud,
+and N. Minc. 2014. Symmetry Breaking in Spore Germination Relies on an
+Interplay between Polar Cap Stability and Spore Wall Mechanics.
+Developmental Cell. 28:534–546.
+[<doi:10.1016/j.devcel.2014.01.023>](http://dx.oi.org/10.1016/j.devcel.2014.01.023).
+
+Manzo, A.J., and H. Helvajian. 2014. Demonstration of enhanced surface
+mobility of adsorbate cluster species by surface acoustic wave
+excitation induced by a pulsed laser. Proc. SPIE 8969, Synthesis and
+Photonics of Nanoscale Materials XI, 896908;
+[<doi:10.1117/12.2041218>](http://dx.doi.org/10.1117/12.2041218).
+
+Wang, Y., A. Ahmad, C.E. Sims, S. Magness, and N.L. Allbritton. 2014. In
+vitro generation of colonic epithelium from primary cells guided by
+microstructures. Lab Chip.
+[<doi:10.1039/C3LC51353J>](http://dx.doi.org/10.1039/C3LC51353J).
+
+Pedersen, S.K., J. Holmehave, F.H. Blaikie, A. Gollmer, T. Breitenbach,
+H.H. Jensen, and P.R. Ogilby. 2014. Aarhus Sensor Green: A Fluorescent
+Probe for Singlet Oxygen. J. Org. Chem.
+[<doi:10.1021/jo500219y>](http://dx.doi.org/10.1021/jo500219y).
+
+Nocera, G.M., K.B. M’Barek, D.G. Bazzoli, G. Fraux, M.B.-V. Heijenoort,
+J. Chokki, S. Georgeault, Y. Chen, and J. Fattaccioli. 2014. Fluorescent
+microparticles fabricated through chemical coating of O/W emulsion
+droplets with a thin metallic film. RSC Adv. 4:11564–11568.
+[<doi:10.1039/C3RA47063F>](http://dx.doi.org/10.1039/C3RA47063F).
+
+Shamir, E.R., E. Pappalardo, D.M. Jorgens, K. Coutinho, W.-T. Tsai, K.
+Aziz, M. Auer, P.T. Tran, J.S. Bader, and A.J. Ewald. 2014.
+Twist1-induced dissemination preserves epithelial identity and requires
+E-cadherin. J Cell Biol. 204:839–856.
+[<doi:10.1083/jcb.201306088>](http://dx.doi.org/10.1083/jcb.201306088).
+
+Miki, T., H. Naito, M. Nishina, and G. Goshima. 2014. Endogenous
+localizome identifies 43 mitotic kinesins in a plant cell. PNAS.
+201311243.
+[<doi:10.1073/pnas.1311243111>](http://dx.doi.org/10.1073/pnas.1311243111).
+
+Ellison, C.J., J.M. Katzenstein, and D.W. Janes. 2014. METHOD FOR
+CREATING TOPOGRAPHICAL PATTERNS IN POLYMERS VIA SURFACE ENERGY PATTERNED
+FILMS AND THE MARANGONI EFFECT.
+
+Casa, L.D.C., and D.N. Ku. High Shear Thrombus Formation under Pulsatile
+and Steady Flow. Cardiovasc Eng Tech. 1–10.
+[<doi:10.1007/s13239-014-0180-z>](http://dx.doi.org/10.1007/s13239-014-0180-z).
+
+Hammar, P., M. Walldén, D. Fange, F. Persson, Ö. Baltekin, G. Ullman, P.
+Leroy, and J. Elf. 2014. Direct measurement of transcription factor
+dissociation excludes a simple operator occupancy model for gene
+regulation. Nat Genet. advance online publication.
+[<doi:10.1038/ng.2905>](http://dx.doi.org/10.1038/ng.2905).
+
+Walsh, P., G. Vanderlee, J. Yau, J. Campeau, V.L. Sim, C.M. Yip, and S.
+Sharpe. 2014. The mechanism of membrane disruption by cytotoxic amyloid
+oligomers formed by PrP(106-126) is dependent on bilayer composition. J.
+Biol. Chem. jbc.M113.515866.
+[<doi:10.1074/jbc.M113.515866>](http://dx.doi.org/10.1074/jbc.M113.515866).
+
+Huebner, R.J., T. Lechler, and A.J. Ewald. 2014. Developmental
+stratification of the mammary epithelium occurs through
+symmetry-breaking vertical divisions of apically positioned luminal
+cells. Development. 141:1085–1094.
+[<doi:10.1242/dev.103333>](http://dx.doi.org/10.1242/dev.103333).
+
+Lee, T.K., C. Tropini, J. Hsin, S.M. Desmarais, T.S. Ursell, E. Gong, Z.
+Gitai, R.D. Monds, and K.C. Huang. 2014. A dynamically assembled cell
+wall synthesis machinery buffers cell growth. PNAS. 201313826.
+[<doi:10.1073/pnas.1313826111>](http://dx.doi.org/10.1073/pnas.1313826111).
+
+Ursell, T.S., J. Nguyen, R.D. Monds, A. Colavin, G. Billings, N.
+Ouzounov, Z. Gitai, J.W. Shaevitz, and K.C. Huang. 2014. Rod-like
+bacterial shape is maintained by feedback between cell curvature and
+cytoskeletal localization. PNAS. 201317174.
+[<doi:10.1073/pnas.1317174111>](http://dx.doi.org/10.1073/pnas.1317174111).
+
+Veltman, D.M., M.G. Lemieux, D.A. Knecht, and R.H. Insall. 2014.
+PIP3-dependent macropinocytosis is incompatible with chemotaxis. J Cell
+Biol. 204:497–505.
+[<doi:10.1083/jcb.201309081>](http://dx.doi.org/10.1083/jcb.201309081).
+
+Sévin, D.C., and U. Sauer. 2014. Ubiquinone accumulation improves
+osmotic-stress tolerance in Escherichia coli. Nat Chem Biol. advance
+online publication.
+[<doi:10.1038/nchembio.1437>](http://dx.doi.org/10.1038/nchembio.1437).
+
+Smith, A.J., B.-J. Jin, J. Ratelade, and A.S. Verkman. 2014. Aggregation
+state determines the localization and function of M1– and
+M23–aquaporin-4 in astrocytes. J Cell Biol. 204:559–573.
+[<doi:10.1083/jcb.201308118>](http://dx.doi.org/10.1083/jcb.201308118).
+
+Polka, J.K., J.M. Kollman, and R.D. Mullins. 2014. Accessory factors
+promote AlfA-dependent plasmid segregation by regulating filament
+nucleation, disassembly, and bundling. PNAS. 201304127.
+[<doi:10.1073/pnas.1304127111>](http://dx.doi.org/10.1073/pnas.1304127111).
+
+Chu, J.W.F., and H.M. Reiswig. 2014. Mechanisms of propagule release in
+the carnivorous sponge Asbestopluma occidentalis. Invertebrate Biology.
+n/a–n/a. [<doi:10.1111/ivb.12045>](http://dx.doi.org/10.1111/ivb.12045).
+
+Turner, H.C., P. Sharma, J.R. Perrier, A. Bertucci, L. Smilenov, G.
+Johnson, M. Taveras, D.J. Brenner, and G. Garty. The RABiT:
+high-throughput technology for assessing global DSB repair. Radiat
+Environ Biophys. 1–8.
+[<doi:10.1007/s00411-014-0514-0>](http://dx.doi.org/10.1007/s00411-014-0514-0).
+
+Naylor, S.G., and D.O. Morgan. 2014. Cdk1-dependent phosphorylation of
+Iqg1 governs actomyosin ring assembly prior to cytokinesis. J Cell Sci.
+jcs.144097.
+[<doi:10.1242/jcs.144097>](http://dx.doi.org/10.1242/jcs.144097).
+
+Basu, R., E.L. Munteanu, and F. Chang. 2014. Role of turgor pressure in
+endocytosis in fission yeast. Mol. Biol. Cell. mbc.E13–10–0618.
+[<doi:10.1091/mbc.E13-10-0618>](http://dx.doi.org/10.1091/mbc.E13-10-0618).
+
+Tsai, F.-C., A. Seki, H.W. Yang, A. Hayer, S. Carrasco, S. Malmersjö,
+and T. Meyer. 2014. A polarized Ca2+, diacylglycerol and STIM1
+signalling system regulates directed cell migration. Nat Cell Biol.
+16:133–144. [<doi:10.1038/ncb2906>](http://dx.doi.org/10.1038/ncb2906).
+
+Snijders, T., B.T. Wall, M.L. Dirks, J.M.G. Senden, F. Hartgens, J.
+Dolmans, M. Losen, L.B. Verdijk, and L.J.C. van Loon. 2014. Muscle
+disuse atrophy is not accompanied by changes in skeletal muscle
+satellite cell content. Clinical Science. 126:557–566.
+[<doi:10.1042/CS20130295>](http://dx.doi.org/10.1042/CS20130295).
+
+Black, J.C., P.P. Cheney, T. Campbell, and M.K. Knowles. 2014. Membrane
+curvature based lipid sorting using a nanoparticle patterned substrate.
+Soft Matter.
+[<doi:10.1039/C3SM52522H>](http://dx.doi.org/10.1039/C3SM52522H).
+
+Sosa, L.J., N.L. Postma, A. Estrada-Bernal, M. Hanna, R. Guo, J.
+Busciglio, and K.H. Pfenninger. 2014. Dosage of amyloid precursor
+protein affects axonal contact guidance in Down syndrome. FASEB J.
+28:195–205.
+[<doi:10.1096/fj.13-232686>](http://dx.doi.org/10.1096/fj.13-232686).
+
+Krieger, J.W., A.P. Singh, C.S. Garbe, T. Wohland, and J. Langowski.
+2014. Dual-Color Fluorescence Cross-Correlation Spectroscopy on a Single
+Plane Illumination Microscope (SPIM-FCCS). Opt. Express. 22:2358–2375.
+[<doi:10.1364/OE.22.002358>](http://dx.doi.org/10.1364/OE.22.002358).
+
+Itsuki, K., Y. Imai, H. Hase, Y. Okamura, R. Inoue, and M.X. Mori. 2014.
+PLC-mediated PI(4,5)P2 hydrolysis regulates activation and inactivation
+of TRPC6/7 channels. J Gen Physiol. 143:183–201.
+[<doi:10.1085/jgp.201311033>](http://dx.doi.org/10.1085/jgp.201311033).
+
+Liu, H., C. Dong, and J. Ren. 2014. Tempo-Spatially Resolved Scattering
+Correlation Spectroscopy under Dark-Field Illumination and Its
+Application to Investigate Dynamic Behaviors of Gold Nanoparticles in
+Live Cells. J. Am. Chem. Soc.
+[<doi:10.1021/ja410284j>](http://dx.doi.org/10.1021/ja410284j).
+
+Chaufan, G., I. Coalova, and M. del C.R. de Molina. 2014. Glyphosate
+Commercial Formulation Causes Cytotoxicity, Oxidative Effects, and
+Apoptosis on Human Cells Differences With its Active Ingredient.
+International Journal of Toxicology. 1091581813517906.
+[<doi:10.1177/1091581813517906>](http://dx.doi.org/10.1177/1091581813517906).
+
+Gualda, E., N. Moreno, P. Tomancak, and G.G. Martins. Going “open” with
+Mesoscopy: a new dimension on multi-view imaging. Protoplasma. 1–10.
+[<doi:10.1007/s00709-013-0599-3>](http://dx.doi.org/10.1007/s00709-013-0599-3).
+
+Nyitray, C.E., M.G. Chavez, and T. Desai. 2014. Compliant 3D
+Microenvironment Improves β-Cell Cluster Insulin Expression through
+Mechanosensing and β-Catenin Signaling. Tissue Engineering Part A.
+140116054015007.
+[<doi:10.1089/ten.TEA.2013.0692>](http://dx.doi.org/10.1089/ten.TEA.2013.0692).
+
+Blot, A., and B. Barbour. 2014. Ultra-rapid axon-axon ephaptic
+inhibition of cerebellar Purkinje cells by the pinceau. Nature
+Neuroscience.
+[<doi:10.1038/nn.3624>](http://dx.doi.org/10.1038/nn.3624).
+
+Zechner, C., M. Unger, S. Pelet, M. Peter, and H. Koeppl. 2014. Scalable
+inference of heterogeneous reaction kinetics from pooled single-cell
+recordings. Nat Meth. 11:197–202.
+[<doi:10.1038/nmeth.2794>](http://dx.doi.org/10.1038/nmeth.2794).
+
+OpenComet: An automated tool for comet assay image analysis
+[<doi:10.1016/j.redox.2013.12.020>](http://dx.doi.org/10.1016/j.redox.2013.12.020)
+
+Staudt, D.W., J. Liu, K.S. Thorn, N. Stuurman, M. Liebling, and D.Y.R.
+Stainier. 2014. High-resolution imaging of cardiomyocyte behavior
+reveals two distinct steps in ventricular trabeculation. Development.
+dev.098632.
+[<doi:10.1242/dev.098632>](http://dx.doi.org/10.1242/dev.098632).
+
+Yang, Y., and C. Zhang. 2014. Visualizing and Quantifying Protein
+PolySUMOylation at the Single-Molecule Level. Anal. Chem. 86:967–972.
+[<doi:10.1021/ac403753r>](http://dx.doi.org/10.1021/ac403753r).
+
+Holden, S.J., Pengo, T., Meibom, K., Fernandez-Fernandez, C., Collier,
+J., Manley, S. 2014. High throughput 3D super-resolution microscopy
+reveals Caulobacter crescentus in vivo Z-ring organization. PNAS.
+201313368 (in Supplemental Materials)
+[<doi:10.1073/pnas.1313368111>](http://dx.doi.org/10.1073/pnas.1313368111).
 
 Total 2014 citation: 173
 
-==2013==
-Kanchanawong, P., and C.M. Waterman. 2013. Localization-Based Super-Resolution Imaging of Cellular Structures. In Adhesion Protein Protocols. A.S. Coutts, editor. Humana Press. 59–84. Methods in Molecular Biology Volume 1046, 2013, pp 59-84. [http://link.springer.com/protocol/10.1007/978-1-62703-538-5_4 link]
-
-Ng, E., and J.J.L. Carson. 2013. Resolution analysis of an angular domain imaging system with two dimensional angular filters. 857913–857913–6. [http://dx.doi.org/10.1117/12.2005664 doi:10.1117/12.2005664].
-
-Mercade-Prieto, R., and S. Bakalis. 2013. Methodological study on the removal of solid oil and fat stains from cotton fabrics using abrasion. Textile Research Journal. 0040517513490059. [http://dx.doi.org/10.1177/0040517513490059 doi:10.1177/0040517513490059].
-
-Orsi, D., A. Vezzani, R. Burioni, A. Pucci, G. Ruggeri, and L. Cristofolini. 2014. Statistical properties and morphology of a 2D gel network at the air/water interface. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 441:912–918. [http://dx.doi.org/10.1016/j.colsurfa.2013.04.020 doi:10.1016/j.colsurfa.2013.04.020].
-
-Ng, E., and J.J.L. Carson. 2013. Two-dimensional angular filter array for angular domain imaging with 3D printed angular filters. 85790W–85790W–5. [http://dx.doi.org/10.1117/12.2005657 doi:10.1117/12.2005657].
-
-Galas, J.-C., A.-M. Haghiri-Gosnet, and A. Estévez-Torres. 2013. A nanoliter-scale open chemical reactor. Lab on a Chip. 13:415. [http://dx.doi.org/10.1039/c2lc40649g doi:10.1039/c2lc40649g].
-
-Preira, P., M.-P. Valignat, J. Bico, and O. Théodoly. 2013. Single cell rheometry with a microfluidic constriction: Quantitative control of friction and fluid leaks between cell and channel walls. Biomicrofluidics. 7:024111. [http://dx.doi.org/10.1063/1.4802272 doi:10.1063/1.4802272].
-
-De-la -Rosa, V., G.E. Rangel-Yescas, E. Ladrón-de-Guevara, T. Rosenbaum, and L.D. Islas. 2013. Coarse Architecture of the Transient Receptor Potential Vanilloid 1 (TRPV1) Ion Channel Determined by Fluorescence Resonance Energy Transfer. J. Biol. Chem. 288:29506–29517. [http://dx.doi.org/10.1074/jbc.M113.479618 doi:10.1074/jbc.M113.479618].
-
-DeBose-Boyd, R.A., and J.D. Horton. 2013. Opening up new fronts in the fight against cholesterol. eLife. 2. [http://dx.doi.org/10.7554/eLife.00663 doi:10.7554/eLife.00663].
-
-Huang, H., C. Bae, F. Sachs, and T.M. Suchyna. 2013. Caveolae Regulation of Mechanosensitive Channel Function in Myotubes. PLoS ONE. 8:e72894. [http://dx.doi.org/10.1371/journal.pone.0072894 doi:10.1371/journal.pone.0072894].
-
-Lee, R.J., B. Chen, L. Doghramji, N.D. Adappa, J.N. Palmer, D.W. Kennedy, and N.A. Cohen. 2013. Vasoactive intestinal peptide regulates sinonasal mucociliary clearance and synergizes with histamine in stimulating sinonasal fluid secretion. FASEB J. 27:5094–5103. [http://dx.doi.org/10.1096/fj.13-234476 doi:10.1096/fj.13-234476].
-
-Ball, D.A., N.R. Adames, N. Reischmann, D. Barik, C.T. Franck, J.J. Tyson, and J. Peccoud. 2013. Measurement and modeling of transcriptional noise in the cell cycle regulatory network. Cell Cycle. 12:3203–3218. [http://dx.doi.org/10.4161/cc.26257 doi:10.4161/cc.26257].
-
-Neal, K.L., N.B. Shakerdge, S.S. Hou, W.E. Klunk, C.A. Mathis, E.E. Nesterov, T.M. Swager, P.J. McLean, and B.J. Bacskai. 2013. Development and Screening of Contrast Agents for In Vivo Imaging of Parkinson’s Disease. Mol Imaging Biol. 15:585–595. [http://dx.doi.org/10.1007/s11307-013-0634-y doi:10.1007/s11307-013-0634-y].
-
-Coutu, D.L., and T. Schroeder. 2013. Probing cellular processes by long-term live imaging – historic problems and current solutions. J Cell Sci. 126:3805–3815. [http://dx.doi.org/10.1242/jcs.118349 doi:10.1242/jcs.118349].
-
-Tills, O., S.D. Rundle, and J.I. Spicer. 2013. Parent–offspring similarity in the timing of developmental events: an origin of heterochrony? Proc. R. Soc. B. 280:20131479. [http://dx.doi.org/10.1098/rspb.2013.1479 doi:10.1098/rspb.2013.1479].
-
-Tan, C., S. Saurabh, M.P. Bruchez, R. Schwartz, and P. LeDuc. 2013. Molecular crowding shapes gene expression in synthetic cellular nanosystems. Nat Nano. 8:602–608. [http://dx.doi.org/10.1038/nnano.2013.132 doi:10.1038/nnano.2013.132].
-
-Raduwan, H., A.L. Isola, and W.J. Belden. 2013. Methylation of Histone H3 on Lysine 4 by the Lysine Methyltransferase SET1 Protein Is Needed for Normal Clock Gene Expression. J. Biol. Chem. 288:8380–8390. [http://dx.doi.org/10.1074/jbc.M112.359935 doi:10.1074/jbc.M112.359935].
-
-Glushakova, S., V. Lizunov, P.S. Blank, K. Melikov, G. Humphrey, and J. Zimmerberg. 2013. Cytoplasmic free Ca2+ is essential for multiple steps in malaria parasite egress from infected erythrocytes. Malaria Journal. 12:41. [http://dx.doi.org/10.1186/1475-2875-12-41 doi:10.1186/1475-2875-12-41].
-
-Burchfield, J.G., J. Lu, D.J. Fazakerley, S.-X. Tan, Y. Ng, K. Mele, M.J. Buckley, W. Han, W.E. Hughes, and D.E. James. 2013. Novel Systems for Dynamically Assessing Insulin Action in Live Cells Reveals Heterogeneity in the Insulin Response. Traffic. 14:259–273. [http://dx.doi.org/doi:10.1111/tra.12035 doi:10.1111/tra.12035].
-
-Marker, D.F., M.-È. Tremblay, J.M. Puccini, J. Barbieri, M.A.G. Marker, C.J. Loweth, E.C. Muly, S.-M. Lu, V.S. Goodfellow, S. Dewhurst, and H.A. Gelbard. 2013. The New Small-Molecule Mixed-Lineage Kinase 3 Inhibitor URMC-099 Is Neuroprotective and Anti-Inflammatory in Models of Human Immunodeficiency Virus-Associated Neurocognitive Disorders. J. Neurosci. 33:9998–10010. [http://dx.doi.org/10.1523/JNEUROSCI.0598-13.2013 doi:10.1523/JNEUROSCI.0598-13.2013].
-
-Bhabha, G., D.C. Ekiert, M. Jennewein, C.M. Zmasek, L.M. Tuttle, G. Kroon, H.J. Dyson, A. Godzik, I.A. Wilson, and P.E. Wright. 2013. Divergent evolution of protein conformational dynamics in dihydrofolate reductase. Nat Struct Mol Biol. 20:1243–1249. [http://dx.doi.org/10.1038/nsmb.2676 doi:10.1038/nsmb.2676].
-
-Leikina, E., K. Melikov, S. Sanyal, S.K. Verma, B. Eun, C. Gebert, K. Pfeifer, V.A. Lizunov, M.M. Kozlov, and L.V. Chernomordik. 2013. Extracellular annexins and dynamin are important for sequential steps in myoblast fusion. J Cell Biol. 200:109–123. [http://dx.doi.org/10.1083/jcb.201207012 doi:10.1083/jcb.201207012].
-
-
-Duan, L., D. Dietrich, C.H. Ng, P.M.Y. Chan, R. Bhalerao, M.J. Bennett, and J.R. Dinneny. 2013. Endodermal ABA Signaling Promotes Lateral Root Quiescence during Salt Stress in Arabidopsis Seedlings. Plant Cell. 25:324–341. [http://dx.doi.org/10.1105/tpc.112.107227 doi:10.1105/tpc.112.107227].
-
-Norman, T.M., N.D. Lord, J. Paulsson, and R. Losick. 2013. Memory and modularity in cell-fate decision making. Nature. 503:481–486. [http://dx.doi.org/10.1038/nature12804 doi:10.1038/nature12804].
-
-Ophir, M.J., B.C. Liu, and S.C. Bunnell. 2013. The N terminus of SKAP55 enables T cell adhesion to TCR and integrin ligands via distinct mechanisms. '''J Cell Biol.''' 203:1021–1041. [http://dx.doi.org/10.1083/jcb.201305088 doi:10.1083/jcb.201305088].
-
-Islam, S., A. Zeisel, S. Joost, G. La Manno, P. Zajac, M. Kasper, P. Lönnerberg, and S. Linnarsson. 2013. Quantitative single-cell RNA-seq with unique molecular identifiers. '''Nat Meth.'' advance online publication. [http://dx.doi.org/10.1038/nmeth.2772 doi:10.1038/nmeth.2772].
-
-Phillips, R.M., L.A. Dailey, E. Bair, J. Samet, and N.L. Allbritton. 2013. Ex Vivo Chemical Cytometric Analysis of Protein Tyrosine Phosphatase Activity in Single Human Airway Epithelial Cells. '''Anal. Chem.''' [http://dx.doi.org/10.1021/ac403705c doi:10.1021/ac403705c].
-
-Ng, E. 2013. Two dimensional angular domain optical imaging in biological tissues. University of Western Ontario - Electronic Thesis and Dissertation Repository [http://ir.lib.uwo.ca/etd/1796].
-
-Stratton, M.M., I.-H. Lee, M. Bhattacharyya, S.M. Christensen, L.H. Chao, H. Schulman, J.T. Groves, and J. Kuriyan. 2013. Activation-triggered subunit exchange between CaMKII holoenzymes facilitates the spread of kinase activity. '''arXiv''':1312.5376 [http://arxiv.org/abs/1312.5376].
-
-Kohl, J., A.D. Ostrovsky, S. Frechter, and G.S.X.E. Jefferis. 2013. A Bidirectional Circuit Switch Reroutes Pheromone Signals in Male and Female Brains. '''Cell.''' 155:1610–1623. [http://dx.doi.org/10.1016/j.cell.2013.11.025 doi:10.1016/j.cell.2013.11.025].
-
-Charoen, K.M., B. Fallica, Y.L. Colson, M.H. Zaman, and M.W. Grinstaff. Embedded multicellular spheroids as a biomimetic 3D cancer model for evaluating drug and drug-device combinations. '''Biomaterials.''' [http://dx.doi.org/10.1016/j.biomaterials.2013.11.038 doi:10.1016/j.biomaterials.2013.11.038].
-
-Klein, A.S., A. Tannert, and M. Schaefer. Cholesterol sensitises the transient receptor potential channel TRPV3 to lower temperatures and activator concentrations. '''Cell Calcium.''' [http://dx.doi.org/10.1016/j.ceca.2013.12.001 doi:10.1016/j.ceca.2013.12.001].
-
-Sanders, J., S. Nagy, G. Fetterman, C. Wright, M. Treinin, and D. Biron. 2013. The Caenorhabditis elegans interneuron ALA is (also) a high-threshold mechanosensor. '''BMC Neuroscience.''' 14:156. [http://dx.doi.org/10.1186/1471-2202-14-156 doi:10.1186/1471-2202-14-156].
-
-Schweizer, N., C. Ferrás, D.M. Kern, E. Logarinho, I.M. Cheeseman, and H. Maiato. 2013. Spindle assembly checkpoint robustness requires Tpr-mediated regulation of Mad1/Mad2 proteostasis. '''J Cell Biol.''' 203:883–893. [http://dx.doi.org/10.1083/jcb.201309076 doi:10.1083/jcb.201309076].
-
-Iskratsch, T., C.-H. Yu, A. Mathur, S. Liu, V. Stévenin, J. Dwyer, J. Hone, E. Ehler, and M. Sheetz. 2013. FHOD1 Is Needed for Directed Forces and Adhesion Maturation during Cell Spreading and Migration. '''Developmental Cell.''' 27:545–559. [http://dx.doi.org/10.1016/j.devcel.2013.11.003 doi:10.1016/j.devcel.2013.11.003].
-
-Yuan, Z., J. Sun, R. Zhai, X. Li, and Z. Shao. Mercury arc lamp based super-resolution imaging with conventional fluorescence microscopes. '''Micron.''' [http://dx.doi.org/10.1016/j.micron.2013.11.006 doi:10.1016/j.micron.2013.11.006].
-
-Hunter, G.L., J.M. Crawford, J.Z. Genkins, and D.P. Kiehart. 2013. Ion channels contribute to the regulation of cell sheet forces during Drosophila dorsal closure. '''Development.''' dev.097097. [http://dx.doi.org/10.1242/dev.097097 doi:10.1242/dev.097097].
-
-Jiménez-Hidalgo, M., C. Léopold Kurz, J. Rafael Pedrajas, F. José Naranjo-Galindo, M. González-Barrios, J. Cabello, A.G. Sáez, E. Lozano, E.L. Button, E.A. Veal, J. Carlos Fierro-González, P. Swoboda, and A. Miranda-Vizuete. Functional characterization of thioredoxin 3, a Caenorhabditis elegans intestine-specific thioredoxin. '''Free Radical Biology and Medicine. ''' [http://dx.doi.org/j.freeradbiomed.2013.11.023 doi:10.1016/j.freeradbiomed.2013.11.023].
-
-de Chaumont, F., Dallongeville, S., Provosst, T., L:ecomte, T., Dufour, A., J-C Olivo-Marin. 2013. ICY: A user-friendly environment for algorithm development and deployment. [http://www.eurasip.org/Proceedings/Eusipco/Eusipco2013/papers/1569745207.pdf pdf] 
-
-Stevenson, N.L., B. Martin-Martin, J. Freeman, J. Kriston-Vizi, R. Ketteler, and D.F. Cutler. 2013. GRK2 moderates recruitment of THP-1 cells to the endothelium by limiting histamine-invoked Weibel-Palade Body exocytosis. '''Journal of Thrombosis and Haemostasis.''' n/a–n/a. [http://dx.doi.org/10.1111/jth.12470 doi:10.1111/jth.12470].
-
-Kim, M.Y., D.J. Li, L.K. Pham, B.G. Wong, and E.E. Hui. Microfabrication of High-Resolution Porous Membranes for Cell Culture. '''Journal of Membrane Science.''' [http://dx.doi.org/j.memsci.2013.11.034 doi:10.1016/j.memsci.2013.11.034].
-
-Holden, S.J., Pengo, T., and S. Manley. 2013. Optimisation and control of sampling rate in localisation microscopy.  '''Proceedings of the 10th Int. Confe. on Sampling Theory and Applications''' [http://www.eurasip.org/Proceedings/Ext/SampTA2013/papers/p281-holden.pdf pdf]
-
-Pietrosimone, K.M., S. Bhandari, M.G. Lemieux, D.A. Knecht, and M.A. Lynes. 2013. In Vitro Assays of Chemotaxis as a Window into Mechanisms of Toxicant-Induced Immunomodulation. '''In Current Protocols in Toxicology.''' John Wiley & Sons, Inc. [http://dx.doi.org/10.1002/0471140856.tx1817s58 DOI: 10.1002/0471140856.tx1817s58]
-
-Antkowiak, M., M.L. Torres-Mapa, E.C. Witts, G.B. Miles, K. Dholakia, and F.J. Gunn-Moore. 2013. Fast targeted gene transfection and optogenetic modification of single neurons using femtosecond laser irradiation. '''Sci Rep.''' 3. [http://dx.doi.org/10.1038/srep03281 doi:10.1038/srep03281].
-
-Harris, A.R., J. Bellis, N. Khalilgharibi, T. Wyatt, B. Baum, A.J. Kabla, and G.T. Charras. 2013. Generating suspended cell monolayers for mechanobiological studies. '''Nat. Protocols.''' 8:2516–2530. [http://dx.doi.org/10.1038/nprot.2013.151 doi:10.1038/nprot.2013.151].
-
-Unser, M., Sage, D., and R. Delgado-Gonzalo. Advanced image processing for biology, and the Open Bio Image Alliance (OBIA). EUSIPCO 2013 1569744383. [http://bigwww.epfl.ch/publications/unser1302.pdf pdf]
-
-Dirks, M.L., B.T. Wall, T. Snijders, C.L.P. Ottenbros, L.B. Verdijk, and L.J.C. van Loon. 2013. Neuromuscular electrical stimulation prevents muscle disuse atrophy during leg immobilisation in humans. '''Acta Physiologica.''' n/a–n/a. [http://dx.doi.org/10.1111/apha.12200 doi:10.1111/apha.12200].
-
-Khanduja, N., and J.R. Kuhn. 2013. Processive acceleration of actin barbed end assembly by N-WASP. '''Mol. Biol. Cell.''' mbc.E12–11–0781. [http://dx.doi.org/10.1091/mbc.E12-11-0781 doi:10.1091/mbc.E12-11-0781].
-
-Roossien, D.H., P. Lamoureux, D. Van Vactor, and K.E. Miller. 2013. Drosophila Growth Cones Advance by Forward Translocation of the Neuronal Cytoskeletal Meshwork In Vivo. '''PLoS ONE.''' 8:e80136. [http://dx.doi.org/10.1371/journal.pone.0080136 doi:10.1371/journal.pone.0080136].
-
-Crivat, G., V.A. Lizunov, C.R. Li, K.G. Stenkula, J. Zimmerberg, S.W. Cushman, and L. Pick. 2013. Insulin Stimulates Translocation of Human GLUT4 to the Membrane in Fat Bodies of Transgenic Drosophila melanogaster. '''PLoS ONE.''' 8:e77953. [http://dx.doi.org/10.1371/journal.pone.0077953 doi:10.1371/journal.pone.0077953].
-
-Wall, B.T., M.L. Dirks, T. Snijders, J.M.G. Senden, J. Dolmans, and L.J.C. van Loon. 2013. Substantial skeletal muscle loss occurs during only 5 days of disuse. '''Acta Physiologica.''' n/a–n/a. [http://dx.doi.org/10.1111/apha.12190 doi:10.1111/apha.12190].
-
-Chang, C.-L., T.-S. Hsieh, T.T. Yang, K.G. Rothberg, D.B. Azizoglu, E. Volk, J.-C. Liao, and J. Liou. 2013. Feedback Regulation of Receptor-Induced Ca2+ Signaling Mediated by E-Syt1 and Nir2 at Endoplasmic Reticulum-Plasma Membrane Junctions. '''Cell Reports.''' 5:813–825. [http://dx.doi.org/10.1016/j.celrep.2013.09.038 doi:10.1016/j.celrep.2013.09.038].
-
-Bell, L., A. Seshia, D. Lando, E. Laue, M. Palayret, S.F. Lee, and D. Klenerman. 2014. A microfluidic device for the hydrodynamic immobilisation of living fission yeast cells for super-resolution imaging. '''Sensors and Actuators B: Chemical.'''192:36–41. [http://dx.doi.org/10.1016/j.snb.2013.10.002  doi:10.1016/j.snb.2013.10.002].
-
-Fanucchi, S., Y. Shibayama, S. Burd, M.S. Weinberg, and M.M. Mhlanga. 2013. Chromosomal Contact Permits Transcription between Coregulated Genes. '''Cell.''' 155:606–620. [http://dx.doi.org/10.1016/j.cell.2013.09.051 doi:10.1016/j.cell.2013.09.051].
-
-Hol, F.J.H., P. Galajda, K. Nagy, R.G. Woolthuis, C. Dekker, and J.E. Keymer. 2013. Spatial Structure Facilitates Cooperation in a Social Dilemma: Empirical Evidence from a Bacterial Community. '''PLoS ONE.''' 8:e77042. [http://dx.doi.org/10.1371/journal.pone.0077042 doi:10.1371/journal.pone.0077042].
-
-De Luca, G.M.R., R.M.P. Breedijk, R.A.J. Brandt, C.H.C. Zeelenberg, B.E. de Jong, W. Timmermans, L.N. Azar, R.A. Hoebe, S. Stallinga, and E.M.M. Manders. 2013. Re-scan confocal microscopy: scanning twice for better resolution. '''Biomed. Opt. Express.''' 4:2644–2656. [http://dx.doi.org/10.1364/BOE.4.002644 doi:10.1364/BOE.4.002644].
-
-Costa, A., A. Candeo, L. Fieramonti, G. Valentini, and A. Bassi. 2013. Calcium Dynamics in Root Cells of Arabidopsis thaliana Visualized with Selective Plane Illumination Microscopy. '''PLoS ONE.''' 8:e75646. [http://dx.doi.org/10.1371/journal.pone.0075646 doi:10.1371/journal.pone.0075646].
-
-Farlow, J., D. Seo, K.E. Broaders, M.J. Taylor, Z.J. Gartner, and Y. Jun. 2013. Formation of targeted monovalent quantum dots by steric exclusion. '''Nat Meth.''' advance online publication. [http://dx.doi.org/10.1038/nmeth.2682 doi:10.1038/nmeth.2682].
-
-Climent, A.M., M.S. Guillem, P. Lee, C. Bollensdorff, F. Atienza, M.E. Fernández-Santos, R. Sanz-Ruiz, P.L. Sánchez, and F. Fernández-Avilés. 2014. Inhomogeneous Modification of Cardiac Electrophysiological Properties due to Flecainide Administration. In XIII Mediterranean Conference on Medical and Biological Engineering and Computing 2013. L.M.R. Romero, editor. Springer International Publishing. 423–426.
-
-Anderson, C.A., U. Eser, T. Korndorf, M.E. Borsuk, J.M. Skotheim, and A.S. Gladfelter. Nuclear Repulsion Enables Division Autonomy in a Single Cytoplasm. '''Current Biology'''. [http://dx.doi.org/10.1016/j.cub.2013.07.076 doi:10.1016/j.cub.2013.07.076].
-
-Climent, A.M., M.S. Guillem, P. Lee, C. Bollensdorff, F. Atienza, M.E. Fernández-Santos, R. Sanz-Ruiz, P.L. Sánchez, and F. Fernández-Avilés. 2014. An In-Vitro Model of Cardiac Fibrillation with Different Degrees of Complexity. In XIII Mediterranean Conference on Medical and Biological Engineering and Computing 2013. L.M.R. Romero, editor. Springer International Publishing. 340–343.
-
-Zahm, J.A., S.B. Padrick, Z. Chen, C.W. Pak, A.A. Yunus, L. Henry, D.R. Tomchick, Z. Chen, and M.K. Rosen. 2013. The Bacterial Effector VopL Organizes Actin into Filament-like Structures. '''Cell'''. 155:423–434. [http://dx.doi.org/10.1016/j.cell.2013.09.019 doi:10.1016/j.cell.2013.09.019].
-
-Soares, H., R. Henriques, M. Sachse, L. Ventimiglia, M.A. Alonso, C. Zimmer, M.-I. Thoulouze, and A. Alcover. 2013. Regulated vesicle fusion generates signaling nanoterritories that control T cell activation at the immunological synapse. '''J Exp Med.''' jem.20130150. [http://dx.doi.org/10.1084/jem.20130150 doi:10.1084/jem.20130150].
-
-Kast, E.J., M.-D.T. Nguyen, R.E. Lawrence, C. Rabeler, and N.J. Kaplinsky. 2013. The RootScope: a simple high-throughput screening system for quantitating gene expression dynamics in plant roots. '''BMC Plant Biology.''' 13:158. [http://dx.doi.org/10.1186/1471-2229-13-158 doi:10.1186/1471-2229-13-158].
-
-Mercadé-Prieto, R., and S. Bakalis. Washing Simulator Rig to Study the Effect of Abrasion on the Removal of Soils from Fabrics. '''Tribol Lett.''' 1–9. [http://dx.doi.org/10.1007/s11249-013-0236-5 doi:10.1007/s11249-013-0236-5].
-
-Tills, O., S.D. Rundle, and J.I. Spicer. 2013. Variance in developmental event timing is greatest at low biological levels: implications for heterochrony. '''Biological Journal of the Linnean Society.''' n/a–n/a. [http://dx.doi.org/10.1111/bij.12158 doi:10.1111/bij.12158].
-
-Hansen, S.D., A.V. Kwiatkowski, C.-Y. Ouyang, H. Liu, S. Pokutta, S.C. Watkins, N. Volkmann, D. Hanein, W.I. Weis, R.D. Mullins, and W.J. Nelson. 2013. Alpha-E-catenin Actin Binding Domain Alters Actin Filament Conformation and Regulates Binding of Nucleation and Disassembly Factors. Mol. Biol. Cell. mbc.E13–07–0388. [http://dx.doi.org/10.1091/mbc.E13-07-0388 doi:10.1091/mbc.E13-07-0388].
-
-Wang, Y., A. Ahmad, P. Shah, C.E. Sims, S. Magness, and N.L. Allbritton. 2013. Capture and 3D culture of colonic crypts and colonoids in a microarray platform. Lab Chip. [http://dx.doi.org/10.1039/C3LC50813G doi:10.1039/C3LC50813G].
-
-Razinia, Z., M. Baldassarre, G. Cantelli, and D.A. Calderwood. 2013. ASB2α, an E3 ubiquitin ligase specificity subunit, regulates cell spreading and triggers proteasomal degradation of filamins by targeting the filamin calponin homology 1 domain. J. Biol. Chem. jbc.M113.496604. [http://dx.doi.org/10.1074/jbc.M113.496604 doi:10.1074/jbc.M113.496604].
-
-Lee, R.J., B. Chen, K.M. Redding, R.F. Margolskee, and N.A. Cohen. 2013. Mouse nasal epithelial innate immune responses to Pseudomonas aeruginosa quorum-sensing molecules require taste signaling components. Innate Immunity. 1753425913503386. [http://dx.doi.org/10.1177/1753425913503386 doi:10.1177/1753425913503386].
-
-McFaul, C.M.J., J. Leith, B. Jia, F. Michaud, A. Arsenault, A. Martin, D. Berard, and S. Leslie. 2013. '''SPIE NanoScience''' Single-molecule microscopy using tunable nanoscale confinement. 881102–881102–12. [http://dx.doi.org/10.1117/12.2021768  doi:10.1117/12.2021768]
-
-Prystowsky, M., K. Feeney, N. Kawachi, C. Montagna, M. Willmott, C. Wasson, M. Antkowiak, O. Loudig, and J. Parish. 2013. Inhibition of Plk1 and Cyclin B1 Expression Results in Panobinostat-Induced G2 Delay and Mitotic Defects. Sci Rep. 3. [http://dx.doi.org/10.1038/srep02640 doi:10.1038/srep02640].
-
-Chen, A.H., A. Robinson-Mosher, D.F. Savage, P.A. Silver, and J.K. Polka. 2013. The Bacterial Carbon-Fixing Organelle Is Formed by Shell Envelopment of Preassembled Cargo. PLoS ONE. 8:e76127. [http://dx.doi.org/10.1371/journal.pone.0076127 doi:10.1371/journal.pone.0076127].
-
-Abdallah, B.G., T.-C. Chao, C. Kupitz, P. Fromme, and A. Ros. 2013. Dielectrophoretic Sorting of Membrane Protein Nanocrystals. ACS Nano. [http://dx.doi.org/10.1021/nn403760q doi:10.1021/nn403760q].
-
-Tanenbaum, M.E., R.D. Vale, and R.J. McKenney. 2013. Cytoplasmic dynein crosslinks and slides anti-parallel microtubules using its two motor domains. eLife. 2. [http://dx.doi.org/10.7554/eLife.00943 doi:10.7554/eLife.00943].
-
-Helgeson, L.A., and B.J. Nolen. 2013. Mechanism of synergistic activation of Arp2/3 complex by cortactin and N-WASP. eLife. 2. [http://dx.doi.org/10.7554/eLife.00884 doi:10.7554/eLife.00884].
-
-Rangel, D.E., N. Marín-Medina, J.E. Castro, A. González-Mancera, and M. Forero-Shelton. 2013. Observation of Bacterial Type I Pili Extension and Contraction under Fluid Flow. PLoS ONE. 8:e65563. [http://dx.doi.org/10.1371/journal.pone.0065563 doi:10.1371/journal.pone.0065563].
-
-Hua, H., M. Namdar, O. Ganier, J. Gregan, M. Méchali, and S.E. Kearsey. 2013. Sequential steps in DNA replication are inhibited to ensure reduction of ploidy in meiosis. '''Mol. Biol. Cell.''' 24:578–587. [http://dx.doi.org/10.1091/mbc.E12-11-0825 doi:10.1091/mbc.E12-11-0825]
-
-Narayan, P., K.A. Ganzinger, J. McColl, L. Weimann, S. Meehan, S. Qamar, J.A. Carver, M.R. Wilson, P. St George-Hyslop, C.M. Dobson, and D. Klenerman. 2013. Single molecule characterization of the interactions between amyloid-β peptides and the membranes of hippocampal cells. '''J. Am. Chem. Soc.''' 135:1491–1498. [http://dx.doi.org/10.1021/ja3103567 doi:10.1021/ja3103567]
-
-Antony, P.M.A., C. Trefois, A. Stojanovic, A.S. Baumuratov, and K. Kozak. 2013. Light microscopy applications in systems biology: opportunities and challenges. '''Cell Commun. Signal.''' 11:24. [http://dx.doi.org/0.1186/1478-811X-11-24 doi:10.1186/1478-811X-11-24]
-
-Alpert, M.H., and S. Alford. 2013. Synaptic NMDA receptor-dependent Ca²⁺ entry drives membrane potential and Ca²⁺ oscillations in spinal ventral horn neurons. '''PLoS ONE.''' 8:e63154. [http://dx.doi.org/10.1371/journal.pone.0063154 doi:10.1371/journal.pone.0063154]
-
-Sosa, L.J., J. Bergman, A. Estrada-Bernal, T.J. Glorioso, J.M. Kittelson, and K.H. Pfenninger. 2013. Amyloid precursor protein is an autonomous growth cone adhesion molecule engaged in contact guidance. '''PLoS ONE.''' 8:e64521. d[http://dx.doi.org/10.1371/journal.pone.0064521 doi:10.1371/journal.pone.0064521]
-
-Parikh, R.Y., and H.D. Kim. 2013. The Effect of an Intervening Promoter Nucleosome on Gene Expression. '''PLoS ONE'''. 8:e63072. [http://dx.doi.org/10.1371/journal.pone.0063072 doi:10.1371/journal.pone.0063072]
-
-Cheng, Z., P. Yi, X. Wang, Y. Chai, G. Feng, Y. Yang, X. Liang, Z. Zhu, W. Li, and G. Ou. 2013. Conditional targeted genome editing using somatically expressed TALENs in C. elegans. '''Nat Biotech.'''[http://dx.doi.org/10.1038/nbt.2674 doi:10.1038/nbt.2674]
-
-Uehara, R., Y. Tsukada, T. Kamasaki, I. Poser, K. Yoda, D.W. Gerlich, and G. Goshima. 2013. Aurora B and Kif2A control microtubule length for assembly of a functional central spindle during anaphase. '''J Cell Biol.''' 202:623–636. [http://dx.doi.org/10.1083/jcb.201302123 doi:10.1083/jcb.201302123]
-
-Faurobert, E., C. Rome, J. Lisowska, S. Manet-Dupé, G. Boulday, M. Malbouyres, M. Balland, A.-P. Bouin, M. Kéramidas, D. Bouvard, J.-L. Coll, F. Ruggiero, E. Tournier-Lasserve, and C. Albiges-Rizo. 2013. CCM1–ICAP-1 complex controls β1 integrin–dependent endothelial contractility and fibronectin remodeling. '''J Cell Biol.''' 202:545–561. [http://dx.doi.org/10.1083/jcb.201303044 doi:10.1083/jcb.201303044]
-
-Tinkum, K.L., L.S. White, L. Marpegan, E. Herzog, D. Piwnica-Worms, and H. Piwnica-Worms. 2013. Forkhead Box O1 (FOXO1), but not p53, Contributes to Robust Induction of p21 Expression in Fasted Mice. '''J. Biol. Chem. ''' [http://dx.doi.org/10.1074/jbc.M113.494328 doi:10.1074/jbc.M113.494328]
-
-Richards, T.S., A.E. Knowlton, and S.S. Grieshaber. 2013. Chlamydia trachomatis homotypic inclusion fusion is promoted by host microtubule trafficking. '''BMC Microbiol.''' 13:185. [http://dx.doi.org/10.1186/1471-2180-13-185 doi:10.1186/1471-2180-13-185].
-
-Beheiry, M.E., and M. Dahan. 2013. ViSP: representing single-particle localizations in three dimensions. '''Nat Meth.''' 10:689–690. [http://dc.doi.org/10.1038/nmeth.2566 doi:10.1038/nmeth.2566].
-
-Annamdevula, N., B. Sweat, P. Favreau, A. Lindsey, D. Alvarez, T. Rich, and S. Leavesley. 2013. An Approach for Characterizing and Comparing Hyperspectral Microscopy Systems. '''Sensors.''' 13:9267–9293. [http://dx.doi.org/10.3390/s130709267 doi:10.3390/s130709267].
-
-Hickey, C.M., C.J. Groten, L. Sham, C.J. Carter, and N.S. Magoski. Voltage-gated Ca2+ influx and mitochondrial Ca2+ initiate secretion from Aplysia neuroendocrine cells. '''Neuroscience.''' [http://dx.doi.org/10.1016/j.neuroscience.2013.07.023 doi:10.1016/j.neuroscience.2013.07.023].
-
-Miao, Y., C. Miner, L. Zhang, P.I. Hanson, A. Dani, and M. Vig. 2013. An essential and NSF independent role for α-SNAP in store-operated calcium entry. '''eLife.''' 2. [http://dx.doi.org/10.7554/eLife.00802 doi:10.7554/eLife.00802].
-
-Soper, S.A., J.M. Jackson, M. Witek, M. Hupert, J. Kamande, R. Aufforth, C. Tignanelli, R. Torphy, and J. Yeh. 2013. UV Activation of Polymeric High Aspect Ratio Microstructures: Ramifications in Antibody Surface Loading For Circulating Tumor Cell Selection. '''Lab Chip.''' [http://dx.doi.org/10.1039/C3LC50618E doi:10.1039/C3LC50618E].
-
-Haeri, M., and J.L. Gilbert. Study of cellular dynamics on polarized CoCrMo alloy using time-lapse live-cell imaging. '''Acta Biomaterialia.''' [http://dx.doi.org/10.1016/j.actbio.2013.06.040 doi:10.1016/j.actbio.2013.06.040.]
-
-Krzyzanowski, M.C., C. Brueggemann, M.J. Ezak, J.F. Wood, K.L. Michaels, C.A. Jackson, B.-T. Juang, K.D. Collins, M.C. Yu, N.D. L’Etoile, and D.M. Ferkey. 2013. The C. elegans cGMP-Dependent Protein Kinase EGL-4 Regulates Nociceptive Behavioral Sensitivity. '''PLoS Genet.''' 9:e1003619. [http://dx.doi.org/10.1371/journal.pgen.1003619 doi:10.1371/journal.pgen.1003619.]
-
-Kamasaki, T., E. O’Toole, S. Kita, M. Osumi, J. Usukura, J.R. McIntosh, and G. Goshima. 2013. Augmin-dependent microtubule nucleation at microtubule walls in the spindle. '''J Cell Biol.''' 202:25–33. [http://dx.doi.org/10.1083/jcb.201304031 doi:10.1083/jcb.201304031]
-
-BARBER, P. R., I. D. C. TULLIS, G. P. PIERCE, R. G. NEWMAN, J. PRENTICE, M. I. ROWLEY, D. R. MATTHEWS, S. M. AMEER-BEG, and B. VOJNOVIC. (2013). The Gray Institute ‘open’ High-content, Fluorescence Lifetime Microscopes. '''Journal of Microscopy''' [http://dx.doi.org/10.1111/jmi.12057 doi:10.1111/jmi.12057]
-
-Xiaojing Yang, Anna Payne-Tobin Jost, Orion Weiner, and Chao Tang (2013). A light-inducible organelle targeting system for dynamically activating and inactivating signaling in budding yeast. '''Mol. Biol. Cell''' mbc.E13-03-0126;  [http://dx.doi.org/10.1091/mbc.E13-03-0126 doi:10.1091/mbc.E13-03-0126]
-
-Gualda, Emilio J, Tiago Vale, Pedro Almada, Jose A Feijo, Gabriel G Martins, and Nuno Moreno. (2013). OpenSpinMicroscopy: An Open-source Integrated Microscopy Platform. '''Nat Meth''' 10: 599–600. [http://dx.doi.org/10.1038/nmeth.2508 doi:10.1038/nmeth.2508]
-
-Gaurav Misra, Enrique R. Rojas, Ajay Gopinathan, and Kerwyn Casey Huang. (2013). Mechanical Consequences of Cell-Wall Turnover in the Elongation of a Gram-Positive Bacterium, '''Biophysical Journal''' 104: 2342-2352 [http://dx.doi.org/10.1016/j.bpj.2013.04.047 doi:10.1016/j.bpj.2013.04.047]
-
-Anita Gollmer, Francesca Besostri, Thomas Breitenbach, and Peter R. Ogilby (2013). Spatially-resolved two-photon irradiation of an intracellular singlet oxygen photosensitizer: Correlating cell response to the site of localized irradiation. '''Free Radical Research''' 0 0:ja, 1-33 [http://dx.doi.org/10.3109/10715762.2013.817670 doi:10.3109/10715762.2013.817670]
-
-Misra, G., Rojas, E.R., Gopinathan, A., and Huang, K.C. (2013). Mechanical Consequences of Cell-Wall Turnover in the Elongation of a Gram-Positive Bacterium. '''Biophysical Journal''' 104, 2342–2352. [http://dx.doi.org/10.1016/j.bpj.2013.04.047 doi:10.1016/j.bpj.2013.04.047]
-
-Adrien Padirac, Teruo Fujii, André Estévez-Torres, and Yannick Rondelez (2013). Spatial waves in synthetic biochemical networks.  '''Journal of the American Chemical Society''' [http://dx.doi.org/10.1021/ja403584p doi:10.1021/ja403584p]
-
-Xiaolu Qu, Hua Zhang, Yurong Xie, Juan Wang, Naizhi Chen, and Shanjin Huang (2013). Arabidopsis Villins Promote Actin Turnover at Pollen Tube Tips and Facilitate the Construction of Actin Collars. '''Plant Cell''' [http://dx.doi.org/10.1105/tpc.113.110940 doi:10.1105/tpc.113.110940]
-
-Gang, E.J., Hsieh, Y.-T., Pham, J., Zhao, Y., Nguyen, C., Huantes, S., Park, E., Naing, K., Klemm, L., Swaminathan, S., et al. (2013). Small-molecule inhibition of CBP/catenin interactions eliminates drug-resistant clones in acute lymphoblastic leukemia. '''Oncogene''' [http://dx.doi.org/10.1038/onc.2013.169 doi:10.1038/onc.2013.169]
-
-Weimann L, Ganzinger KA, McColl J, Irvine KL, Davis SJ, et al. (2013) A Quantitative Comparison of Single-Dye Tracking Analysis Tools Using Monte Carlo Simulations. '''PLoS ONE''' 8(5): e64287. [http://dx.doi.org/10.1371/journal.pone.0064287 doi:10.1371/journal.pone.0064287]
-
-Henriksson, J., Hench, J., Tong, Y.G., Johansson, A., Johansson, D., and Burglin, T.R. (2013). Endrov: an integrated platform for image analysis. '''Nat Meth''' 10, 454–456 [http://dx.doi.org/10.1038/nmeth.2478 doi:10.1038/nmeth.2478]
-
-Parikh RY, Kim HD (2013) The Effect of an Intervening Promoter Nucleosome on Gene Expression. '''PLoS ONE''' 8(5): e63072. [http://dx.doi.org/10.1371/journal.pone.0063072 doi:10.1371/journal.pone.0063072] 
-
-Antoine Lampron, Pedro M. Pimentel-Coelho, Serge Rivest. (2013). Migration of bone marrow-derived cells into the CNS in models of neurodegeneration. '''J. Comparative Neurology'''. 
-[http://dx.doi.org/10.1002/cne.23363 doi: 10.1002/cne.23363]
-
-Nicolás Pírez, Bethany Lauren Christmann, and Leslie Claire Griffith. (2013). Daily rhythms in locomotor circuits in Drosophila involve pigment-dispersing factor. '''J Neurophysiol''' jn.00126.2013; published ahead of print May 15, 2013, [http://dx.doi.org/10.1152/jn.00126.2013 doi:10.1152/jn.00126.2013] 
-
-Sosa LJ, Bergman J, Estrada-Bernal A, Glorioso TJ, Kittelson JM, et al. (2013) Amyloid Precursor Protein Is an Autonomous Growth Cone Adhesion Molecule Engaged in Contact Guidance. '''PLoS ONE''' 8(5): e64521. [http://dx.doi.org/10.1371/journal.pone.0064521 doi:10.1371/journal.pone.0064521] 
-
-Michael H. Alpert and Simon Alford. (2013). Synaptic NMDA Receptor-Dependent Ca2+ Entry Drives Membrane Potential and Ca2+ Oscillations in Spinal Ventral Horn Neurons. '''PLoS One.''' 8(4): e63154 [http://dx.doi.org/10.1371%2Fjournal.pone.0063154 doi:10.1371%2Fjournal.pone.0063154]
-
-Sung, Myong-Hee. (2013). A Checklist for Successful Quantitative Live Cell Imaging in Systems Biology. '''Cells''' 2, no. 2: 284-293 [http://dx.doi.org/10.3390/cells2020284 doi:10.3390/cells2020284]
-
-Brian Estevez, Aleksandra Stojanovic-Terpo, M. Keegan Delaney, Kelly A. O'Brien, Michael C. Berndt, Changgeng Ruan, and Xiaoping Du. (2013).
-LIM Kinase-1 selectively promotes glycoprotein Ib-IX-mediated TXA2 synthesis, platelet activation, and thrombosis
-'''Blood''' 2013 : blood-2012-12-470765v1-blood-2012-12-470765 [http://dx.doi.org/10.1182/blood-2012-12-470765 doi: 10.1182/blood-2012-12-470765]
-
-Li F, Yin Z, Jin G, Zhao H, Wong STC (2013) Chapter 17: Bioimage Informatics for Systems Pharmacology. PLoS Comput Biol 9(4): e1003043. [http://dx.doi.org/10.1371/journal.pcbi.1003043 doi:10.1371/journal.pcbi.1003043]
-
-Tsukada, Y. and Hashimoto, K. (2013), Feedback regulation of microscopes by image processing. Development, Growth & Differentiation. [http://dx.doi.org/10.1111/dgd.12056 doi: 10.1111/dgd.12056]
-
-Katja Schulze, Ulrich M Tillich, Thomas Dandekar, and Marcus Frohme (2013). PlanktoVision -- an automated analysis system for the identification of
-phytoplankton. '''BMC Bioinformatics''' 14:115 [http://dx.doi.org/10.1186/1471-2105-14-115 doi:10.1186/1471-2105-14-115]
-
-D. Chen,
-L. Ma,
-E-L Tham,
-S. Maresh,
-R. I. Lechler,
-J. H. McVey, and 
-A. Dorling (2013). Fibrocytes mediate intimal hyperplasia post-vascular injury and are regulated by two tissue factor-dependent mechanisms. '''Journal of Thrombosis and Haemostasis''' [http://dx.doi.org/10.1111/jth.12198 DOI: 10.1111/jth.12198]
-
-Roshanak Irannejad,	
-Jin C. Tomshine,	
-Jon R. Tomshine,	
-Michael Chevalier,	
-Jacob P. Mahoney,	
-Jan Steyaert,	
-Søren G. F. Rasmussen,	
-Roger K. Sunahara,	
-Hana El-Samad,	
-Bo Huang	
-& Mark von Zastrow (2013). Conformational biosensors reveal GPCR signalling from endosomes '''Nature''' 495, 534–538 [http://dx.doi.org/10.1038/nature12000 doi:10.1038/nature12000]
-
-Lizunov VA, Stenkula K, Troy A, Cushman SW, Zimmerberg J (2013) Insulin Regulates Glut4 Confinement in Plasma Membrane Clusters in Adipose Cells. '''PLoS ONE''' 8(3): e57559. [http://dx.doi.org/10.1371/journal.pone.0057559 doi:10.1371/journal.pone.0057559]
-
-Furia, L., Pelicci, P. G. and Faretta, M. (2013). A computational platform for robotized fluorescence microscopy (I): High-content image-based cell-cycle analysis. '''Cytometry''', 83A: 333–343. [http://dx.doi.org/10.1002/cyto.a.22266 doi: 10.1002/cyto.a.22266]
-
-Brittany J. Belin, Beth A. Cimini, Elizabeth H. Blackburn, and R. Dyche Mullins (2013). Visualization of actin filaments and monomers in somatic cell nuclei. '''MBOC''' [http://dx.doi.org/10.1091/mbc.E12-09-0685  doi:10.1091/mbc.E12-09-0685]
-
-Rivera MF, Lee J-Y, Aneja M, Goswami V, Liu L, et al. (2013) Polymicrobial Infection with Major Periodontal Pathogens Induced Periodontal Disease and Aortic Atherosclerosis in Hyperlipidemic ApoEnull Mice. '''PLoS ONE''' 8(2): e57178. [http://dx.doi.org/10.1371/journal.pone.0057178 doi:10.1371/journal.pone.0057178]
-
-Martinus H. V. Werts, Vincent Raimbault, Matthieu Loumaigne, Laurent Griscom, Olivier Français, Julien R. G. Navarro, Anne Débarre, and Bruno Le Pioufle (2013) Optical microscopy and spectroscopy of analyte-sensitive functionalized gold nanoparticles in microfluidic systems
-. '''Proc. SPIE''' 8595, Colloidal Nanocrystals for Biomedical Applications VIII, 85950W (February 22, 2013); [http://dx.doi.org/10.1117/12.2001608 doi:10.1117/12.2001608].
-
-M. Bruce and M. Butte (2013). Real-time GPU-based 3D Deconvolution. '''Opt. Express'''  21, 4766-4773. [http://dx.doi.org/10.1364/OE.21.004766 doi:10.1364/OE.21.004766]
-
-Sabine Petry, Aaron C. Groen, Keisuke Ishihara, Timothy J. Mitchison, and Ronald D. Vale (2013). Branching Microtubule Nucleation in Xenopus Egg Extracts Mediated by Augmin and TPX2. '''Cell''' 152:768-777 [http://dx.doi.org/10.1016/j.cell.2012.12.044 doi: 10.1016/j.cell.2012.12.044] 
-
-Dominik Langer, Marcel van’t Hoff, Andreas J. Keller, Chetan Nagaraja, Oliver A. Pfäffli, Maurice Göldi, Hansjörg Kasper, and Fritjof Helmchen (2013). HelioScan: a software framework for controlling in vivo microscopy setups with high hardware flexibility, functional diversity and extendibility. '''Journal of Neuroscience Methods''' Available online 14 February 2013 [http://dx.doi.org/10.1016/j.jneumeth.2013.02.006 doi: 10.1016/j.jneumeth.2013.02.006]
-
-Peter Pitrone, Johannes Schindelin, Luke Stuyvenberg, Stephan Preibisch, Michael Weber, Kevin W. Eliceiri, Jan Huisken, Pavel Tomancak (2013). OpenSPIM - an open access platform for light sheet microscopy. [http://arxiv.org/abs/1302.1987 arxiv.org/abs/1302.1987]
-
-van der Ploeg, R., Verheul, J., Vischer, N. O. E., Alexeeva, S., Hoogendoorn, E., Postma, M., Banzhaf, M., Vollmer, W. and den Blaauwen, T. (2013), Colocalization and interaction between elongasome and divisome during a preparative cell division phase in Escherichia coli. '''Molecular Microbiology.''' [http://dx.doil.org/10.1111/mmi.12150  doi: 10.1111/mmi.12150]
-
-Bo-mi Song, Serge Faumont, Shawn Lockery, and Leon Avery (2013). Recognition of familiar food activates feeding via an endocrine serotonin signal in Caenorhabditis elegans. '''eLife''' 2013;2:e00329 [http://dx.doi.org/10.7554/eLife.00329 doi:10.7554/eLife.00329] 
-
-Oliver Tills, Tabitha Bitterli, Phil Culverhouse, John I Spicer and Simon Rundle (2013). 	A novel application of motion analysis for detecting stress responses in embryos at different stages of development. '''BMC Bioinformatics''' 14:37 [http://dx.doi.org/10.1186/1471-2105-14-37 doi:10.1186/1471-2105-14-37]
-
-Lee BH, Gauna AE, Perez G, Park Y-j, Pauley KM, et al. (2013) Autoantibodies against Muscarinic Type 3 Receptor in Sjögren's Syndrome Inhibit Aquaporin 5 Trafficking. '''PLoS ONE''' 8(1): e53113. [http://dx.doi.org/10.1371/journal.pone.0053113 doi:10.1371/journal.pone.0053113] 
-
-Svetlana Glushakova, Vladimir Lizunov, Paul S Blank, Kamran Melikov, Glen Humphrey and Joshua Zimmerberg (2013). Cytoplasmic free Ca2+ is essential for multiple steps in malaria parasite egress from infected erythrocytes. 
-'''Malaria Journal''' 12:41 [http://dx.doi.org/10.1186/1475-2875-12-41 doi:10.1186/1475-2875-12-41]
-
-Wu M, Piccini M, Koh C-Y, Lam KS, Singh AK (2013) Single Cell MicroRNA Analysis Using Microfluidic Flow Cytometry. '''PLoS ONE''' 8(1): e55044. [http://dx.doi.org/10.1371/journal.pone.0055044 doi:10.1371/journal.pone.0055044]
-
-Martin D. Bootman, Katja Rietdorf, Tony Collins, Simon Walker, and Michael Sanderson (2013). Ca2+-Sensitive Fluorescent Dyes and Intracellular Ca2+ Imaging. '''Cold Spring Harb Protoc'''  [http://dx.doi.org/10.1101/pdb.top066050 doi:10.1101/pdb.top066050] 
-
-Emad Moeendarbary, Léo Valon, Marco Fritzsche, Andrew R. Harris, Dale A. Moulding, Adrian J. Thrasher, Eleanor Stride, L. Mahadevan, and Guillaume T. Charras (2013). The cytoplasm of living cells behaves as a poroelastic material. '''Nature Materials''' [http://dx.doi.org/10.1038/nmat3517 doi:10.1038/nmat3517]
-
-Ullman G, Wallden M, Marklund EG, Mahmutovic A, Razinkov I, and Elf J. (2013) High-throughput gene expression analysis at the level of single proteins using a microfluidic turbidostat and automated cell tracking. '''Phil Trans R Soc B''' 368: 20120025. [http://dx.doi.org/10.1098/rstb.2012.0025 doi:10.1098/rstb.2012.0025]
-
-Lina Duan, Daniela Dietrich, Chong Han Ng, Penny Mei Yeen Chan, Rishikesh Bhalerao, Malcolm J. Bennett, and José R. Dinneny. (2013). Endodermal ABA Signaling Promotes Lateral Root Quiescence during Salt Stress in Arabidopsis Seedlings.  '''Plant Cell''' tpc.112.107227; [http://dx.doi.org/10.1105/tpc.112.107227 doi:10.1105/tpc.112.107227]
-
-Marie-Pierre Valignat, Olivier Theodoly, Alexia Gucciardi†, Nancy Hogg, Annemarie C. Lellouch (2013). T Lymphocytes Orient against the Direction of Fluid Flow during LFA-1-Mediated Migration. '''Biophysical J.''' 104:322–331. [http://dx.doi.org/10.1016/j.bpj.2012.12.007 doi:10.1016/j.bpj.2012.12.007]
-
-Emily A. Oblath ,  W. Hampton Henley ,  Jean Pierre Alarie and J. Michael Ramsey
-(2013). A microfluidic chip integrating DNA extraction and real-time PCR for the detection of bacteria in saliva. '''Lab Chip''', 2013, Advance Article [http://dx.doi.org/10.1039/C3LC40961A doi: 10.1039/C3LC40961A] 
-
-Knowlton AE, Fowler LJ, Patel RK, Wallet SM, Grieshaber SS (2013) Chlamydia Induces Anchorage Independence in 3T3 Cells and Detrimental Cytological Defects in an Infection Model. '''PLoS ONE''' 8(1): e54022. [http://dx.doi.org/10.1371/journal.pone.0054022 doi:10.1371/journal.pone.0054022] 
-
-Zhicheng Long ,  Eileen Nugent ,  Avelino Javer ,  Pietro Cicuta ,  Bianca Sclavi ,  Marco Cosentino Lagomarsino and Kevin D. Dorfman (2013). Microfluidic chemostat for measuring single cell dynamics in bacteria. '''Lab Chip'''13, 947-954 [http://dx.doi.org/10.1039/C2LC41196B doi: 10.1039/C2LC41196B]
-
-Burchfield, J. G., Lu, J., Fazakerley, D. J., Tan, S.-X., Ng, Y., Mele, K., Buckley, M. J., Han, W., Hughes, W. E. and James, D. E. (2013), Novel Systems for Dynamically Assessing Insulin Action in Live Cells Reveals Heterogeneity in the Insulin Response. Traffic, 14: 259–273. [http://dx.doi.org/10.1111/tra.12035 doi: 10.1111/tra.12035]
-
-Christopher M. Yip (2013). Correlative Optical and Scanning Probe Microscopies for Mapping Interactions at Membranes. '''Methods in Molecular Biology'''  Volume 950, Part 4, 439-456, [http://dx.doi.org/10.1007/978-1-62703-137-0_24 DOI: 10.1007/978-1-62703-137-0_24]
+## 2013
+
+Kanchanawong, P., and C.M. Waterman. 2013. Localization-Based
+Super-Resolution Imaging of Cellular Structures. In Adhesion Protein
+Protocols. A.S. Coutts, editor. Humana Press. 59–84. Methods in
+Molecular Biology Volume 1046, 2013, pp 59-84.
+[link](http://link.springer.com/protocol/10.1007/978-1-62703-538-5_4)
+
+Ng, E., and J.J.L. Carson. 2013. Resolution analysis of an angular
+domain imaging system with two dimensional angular filters.
+857913–857913–6.
+[<doi:10.1117/12.2005664>](http://dx.doi.org/10.1117/12.2005664).
+
+Mercade-Prieto, R., and S. Bakalis. 2013. Methodological study on the
+removal of solid oil and fat stains from cotton fabrics using abrasion.
+Textile Research Journal. 0040517513490059.
+[<doi:10.1177/0040517513490059>](http://dx.doi.org/10.1177/0040517513490059).
+
+Orsi, D., A. Vezzani, R. Burioni, A. Pucci, G. Ruggeri, and L.
+Cristofolini. 2014. Statistical properties and morphology of a 2D gel
+network at the air/water interface. Colloids and Surfaces A:
+Physicochemical and Engineering Aspects. 441:912–918.
+[<doi:10.1016/j.colsurfa.2013.04.020>](http://dx.doi.org/10.1016/j.colsurfa.2013.04.020).
+
+Ng, E., and J.J.L. Carson. 2013. Two-dimensional angular filter array
+for angular domain imaging with 3D printed angular filters.
+85790W–85790W–5.
+[<doi:10.1117/12.2005657>](http://dx.doi.org/10.1117/12.2005657).
+
+Galas, J.-C., A.-M. Haghiri-Gosnet, and A. Estévez-Torres. 2013. A
+nanoliter-scale open chemical reactor. Lab on a Chip. 13:415.
+[<doi:10.1039/c2lc40649g>](http://dx.doi.org/10.1039/c2lc40649g).
+
+Preira, P., M.-P. Valignat, J. Bico, and O. Théodoly. 2013. Single cell
+rheometry with a microfluidic constriction: Quantitative control of
+friction and fluid leaks between cell and channel walls.
+Biomicrofluidics. 7:024111.
+[<doi:10.1063/1.4802272>](http://dx.doi.org/10.1063/1.4802272).
+
+De-la -Rosa, V., G.E. Rangel-Yescas, E. Ladrón-de-Guevara, T. Rosenbaum,
+and L.D. Islas. 2013. Coarse Architecture of the Transient Receptor
+Potential Vanilloid 1 (TRPV1) Ion Channel Determined by Fluorescence
+Resonance Energy Transfer. J. Biol. Chem. 288:29506–29517.
+[<doi:10.1074/jbc.M113.479618>](http://dx.doi.org/10.1074/jbc.M113.479618).
+
+DeBose-Boyd, R.A., and J.D. Horton. 2013. Opening up new fronts in the
+fight against cholesterol. eLife. 2.
+[<doi:10.7554/eLife.00663>](http://dx.doi.org/10.7554/eLife.00663).
+
+Huang, H., C. Bae, F. Sachs, and T.M. Suchyna. 2013. Caveolae Regulation
+of Mechanosensitive Channel Function in Myotubes. PLoS ONE. 8:e72894.
+[<doi:10.1371/journal.pone.0072894>](http://dx.doi.org/10.1371/journal.pone.0072894).
+
+Lee, R.J., B. Chen, L. Doghramji, N.D. Adappa, J.N. Palmer, D.W.
+Kennedy, and N.A. Cohen. 2013. Vasoactive intestinal peptide regulates
+sinonasal mucociliary clearance and synergizes with histamine in
+stimulating sinonasal fluid secretion. FASEB J. 27:5094–5103.
+[<doi:10.1096/fj.13-234476>](http://dx.doi.org/10.1096/fj.13-234476).
+
+Ball, D.A., N.R. Adames, N. Reischmann, D. Barik, C.T. Franck, J.J.
+Tyson, and J. Peccoud. 2013. Measurement and modeling of transcriptional
+noise in the cell cycle regulatory network. Cell Cycle. 12:3203–3218.
+[<doi:10.4161/cc.26257>](http://dx.doi.org/10.4161/cc.26257).
+
+Neal, K.L., N.B. Shakerdge, S.S. Hou, W.E. Klunk, C.A. Mathis, E.E.
+Nesterov, T.M. Swager, P.J. McLean, and B.J. Bacskai. 2013. Development
+and Screening of Contrast Agents for In Vivo Imaging of Parkinson’s
+Disease. Mol Imaging Biol. 15:585–595.
+[<doi:10.1007/s11307-013-0634-y>](http://dx.doi.org/10.1007/s11307-013-0634-y).
+
+Coutu, D.L., and T. Schroeder. 2013. Probing cellular processes by
+long-term live imaging – historic problems and current solutions. J Cell
+Sci. 126:3805–3815.
+[<doi:10.1242/jcs.118349>](http://dx.doi.org/10.1242/jcs.118349).
+
+Tills, O., S.D. Rundle, and J.I. Spicer. 2013. Parent–offspring
+similarity in the timing of developmental events: an origin of
+heterochrony? Proc. R. Soc. B. 280:20131479.
+[<doi:10.1098/rspb.2013.1479>](http://dx.doi.org/10.1098/rspb.2013.1479).
+
+Tan, C., S. Saurabh, M.P. Bruchez, R. Schwartz, and P. LeDuc. 2013.
+Molecular crowding shapes gene expression in synthetic cellular
+nanosystems. Nat Nano. 8:602–608.
+[<doi:10.1038/nnano.2013.132>](http://dx.doi.org/10.1038/nnano.2013.132).
+
+Raduwan, H., A.L. Isola, and W.J. Belden. 2013. Methylation of Histone
+H3 on Lysine 4 by the Lysine Methyltransferase SET1 Protein Is Needed
+for Normal Clock Gene Expression. J. Biol. Chem. 288:8380–8390.
+[<doi:10.1074/jbc.M112.359935>](http://dx.doi.org/10.1074/jbc.M112.359935).
+
+Glushakova, S., V. Lizunov, P.S. Blank, K. Melikov, G. Humphrey, and J.
+Zimmerberg. 2013. Cytoplasmic free Ca2+ is essential for multiple steps
+in malaria parasite egress from infected erythrocytes. Malaria Journal.
+12:41.
+[<doi:10.1186/1475-2875-12-41>](http://dx.doi.org/10.1186/1475-2875-12-41).
+
+Burchfield, J.G., J. Lu, D.J. Fazakerley, S.-X. Tan, Y. Ng, K. Mele,
+M.J. Buckley, W. Han, W.E. Hughes, and D.E. James. 2013. Novel Systems
+for Dynamically Assessing Insulin Action in Live Cells Reveals
+Heterogeneity in the Insulin Response. Traffic. 14:259–273.
+[<doi:10.1111/tra.12035>](http://dx.doi.org/doi:10.1111/tra.12035).
+
+Marker, D.F., M.-È. Tremblay, J.M. Puccini, J. Barbieri, M.A.G. Marker,
+C.J. Loweth, E.C. Muly, S.-M. Lu, V.S. Goodfellow, S. Dewhurst, and H.A.
+Gelbard. 2013. The New Small-Molecule Mixed-Lineage Kinase 3 Inhibitor
+URMC-099 Is Neuroprotective and Anti-Inflammatory in Models of Human
+Immunodeficiency Virus-Associated Neurocognitive Disorders. J. Neurosci.
+33:9998–10010.
+[<doi:10.1523/JNEUROSCI.0598-13.2013>](http://dx.doi.org/10.1523/JNEUROSCI.0598-13.2013).
+
+Bhabha, G., D.C. Ekiert, M. Jennewein, C.M. Zmasek, L.M. Tuttle, G.
+Kroon, H.J. Dyson, A. Godzik, I.A. Wilson, and P.E. Wright. 2013.
+Divergent evolution of protein conformational dynamics in dihydrofolate
+reductase. Nat Struct Mol Biol. 20:1243–1249.
+[<doi:10.1038/nsmb.2676>](http://dx.doi.org/10.1038/nsmb.2676).
+
+Leikina, E., K. Melikov, S. Sanyal, S.K. Verma, B. Eun, C. Gebert, K.
+Pfeifer, V.A. Lizunov, M.M. Kozlov, and L.V. Chernomordik. 2013.
+Extracellular annexins and dynamin are important for sequential steps in
+myoblast fusion. J Cell Biol. 200:109–123.
+[<doi:10.1083/jcb.201207012>](http://dx.doi.org/10.1083/jcb.201207012).
+
+Duan, L., D. Dietrich, C.H. Ng, P.M.Y. Chan, R. Bhalerao, M.J. Bennett,
+and J.R. Dinneny. 2013. Endodermal ABA Signaling Promotes Lateral Root
+Quiescence during Salt Stress in Arabidopsis Seedlings. Plant Cell.
+25:324–341.
+[<doi:10.1105/tpc.112.107227>](http://dx.doi.org/10.1105/tpc.112.107227).
+
+Norman, T.M., N.D. Lord, J. Paulsson, and R. Losick. 2013. Memory and
+modularity in cell-fate decision making. Nature. 503:481–486.
+[<doi:10.1038/nature12804>](http://dx.doi.org/10.1038/nature12804).
+
+Ophir, M.J., B.C. Liu, and S.C. Bunnell. 2013. The N terminus of SKAP55
+enables T cell adhesion to TCR and integrin ligands via distinct
+mechanisms. **J Cell Biol.** 203:1021–1041.
+[<doi:10.1083/jcb.201305088>](http://dx.doi.org/10.1083/jcb.201305088).
+
+Islam, S., A. Zeisel, S. Joost, G. La Manno, P. Zajac, M. Kasper, P.
+Lönnerberg, and S. Linnarsson. 2013. Quantitative single-cell RNA-seq
+with unique molecular identifiers. *'Nat Meth.* advance online
+publication.
+[<doi:10.1038/nmeth.2772>](http://dx.doi.org/10.1038/nmeth.2772).
+
+Phillips, R.M., L.A. Dailey, E. Bair, J. Samet, and N.L. Allbritton.
+2013. Ex Vivo Chemical Cytometric Analysis of Protein Tyrosine
+Phosphatase Activity in Single Human Airway Epithelial Cells. **Anal.
+Chem.** [<doi:10.1021/ac403705c>](http://dx.doi.org/10.1021/ac403705c).
+
+Ng, E. 2013. Two dimensional angular domain optical imaging in
+biological tissues. University of Western Ontario - Electronic Thesis
+and Dissertation Repository [4](http://ir.lib.uwo.ca/etd/1796).
+
+Stratton, M.M., I.-H. Lee, M. Bhattacharyya, S.M. Christensen, L.H.
+Chao, H. Schulman, J.T. Groves, and J. Kuriyan. 2013.
+Activation-triggered subunit exchange between CaMKII holoenzymes
+facilitates the spread of kinase activity. **arXiv**:1312.5376
+[5](http://arxiv.org/abs/1312.5376).
+
+Kohl, J., A.D. Ostrovsky, S. Frechter, and G.S.X.E. Jefferis. 2013. A
+Bidirectional Circuit Switch Reroutes Pheromone Signals in Male and
+Female Brains. **Cell.** 155:1610–1623.
+[<doi:10.1016/j.cell.2013.11.025>](http://dx.doi.org/10.1016/j.cell.2013.11.025).
+
+Charoen, K.M., B. Fallica, Y.L. Colson, M.H. Zaman, and M.W. Grinstaff.
+Embedded multicellular spheroids as a biomimetic 3D cancer model for
+evaluating drug and drug-device combinations. **Biomaterials.**
+[<doi:10.1016/j.biomaterials.2013.11.038>](http://dx.doi.org/10.1016/j.biomaterials.2013.11.038).
+
+Klein, A.S., A. Tannert, and M. Schaefer. Cholesterol sensitises the
+transient receptor potential channel TRPV3 to lower temperatures and
+activator concentrations. **Cell Calcium.**
+[<doi:10.1016/j.ceca.2013.12.001>](http://dx.doi.org/10.1016/j.ceca.2013.12.001).
+
+Sanders, J., S. Nagy, G. Fetterman, C. Wright, M. Treinin, and D. Biron.
+2013. The Caenorhabditis elegans interneuron ALA is (also) a
+high-threshold mechanosensor. **BMC Neuroscience.** 14:156.
+[<doi:10.1186/1471-2202-14-156>](http://dx.doi.org/10.1186/1471-2202-14-156).
+
+Schweizer, N., C. Ferrás, D.M. Kern, E. Logarinho, I.M. Cheeseman, and
+H. Maiato. 2013. Spindle assembly checkpoint robustness requires
+Tpr-mediated regulation of Mad1/Mad2 proteostasis. **J Cell Biol.**
+203:883–893.
+[<doi:10.1083/jcb.201309076>](http://dx.doi.org/10.1083/jcb.201309076).
+
+Iskratsch, T., C.-H. Yu, A. Mathur, S. Liu, V. Stévenin, J. Dwyer, J.
+Hone, E. Ehler, and M. Sheetz. 2013. FHOD1 Is Needed for Directed Forces
+and Adhesion Maturation during Cell Spreading and Migration.
+**Developmental Cell.** 27:545–559.
+[<doi:10.1016/j.devcel.2013.11.003>](http://dx.doi.org/10.1016/j.devcel.2013.11.003).
+
+Yuan, Z., J. Sun, R. Zhai, X. Li, and Z. Shao. Mercury arc lamp based
+super-resolution imaging with conventional fluorescence microscopes.
+**Micron.**
+[<doi:10.1016/j.micron.2013.11.006>](http://dx.doi.org/10.1016/j.micron.2013.11.006).
+
+Hunter, G.L., J.M. Crawford, J.Z. Genkins, and D.P. Kiehart. 2013. Ion
+channels contribute to the regulation of cell sheet forces during
+Drosophila dorsal closure. **Development.** dev.097097.
+[<doi:10.1242/dev.097097>](http://dx.doi.org/10.1242/dev.097097).
+
+Jiménez-Hidalgo, M., C. Léopold Kurz, J. Rafael Pedrajas, F. José
+Naranjo-Galindo, M. González-Barrios, J. Cabello, A.G. Sáez, E. Lozano,
+E.L. Button, E.A. Veal, J. Carlos Fierro-González, P. Swoboda, and A.
+Miranda-Vizuete. Functional characterization of thioredoxin 3, a
+Caenorhabditis elegans intestine-specific thioredoxin. '''Free Radical
+Biology and Medicine. '''
+[<doi:10.1016/j.freeradbiomed.2013.11.023>](http://dx.doi.org/j.freeradbiomed.2013.11.023).
+
+de Chaumont, F., Dallongeville, S., Provosst, T., L:ecomte, T., Dufour,
+A., J-C Olivo-Marin. 2013. ICY: A user-friendly environment for
+algorithm development and deployment.
+[pdf](http://www.eurasip.org/Proceedings/Eusipco/Eusipco2013/papers/media/1569745207.pdf)
+
+Stevenson, N.L., B. Martin-Martin, J. Freeman, J. Kriston-Vizi, R.
+Ketteler, and D.F. Cutler. 2013. GRK2 moderates recruitment of THP-1
+cells to the endothelium by limiting histamine-invoked Weibel-Palade
+Body exocytosis. **Journal of Thrombosis and Haemostasis.** n/a–n/a.
+[<doi:10.1111/jth.12470>](http://dx.doi.org/10.1111/jth.12470).
+
+Kim, M.Y., D.J. Li, L.K. Pham, B.G. Wong, and E.E. Hui. Microfabrication
+of High-Resolution Porous Membranes for Cell Culture. **Journal of
+Membrane Science.**
+[<doi:10.1016/j.memsci.2013.11.034>](http://dx.doi.org/j.memsci.2013.11.034).
+
+Holden, S.J., Pengo, T., and S. Manley. 2013. Optimisation and control
+of sampling rate in localisation microscopy. **Proceedings of the 10th
+Int. Confe. on Sampling Theory and Applications**
+[pdf](http://www.eurasip.org/Proceedings/Ext/SampTA2013/papers/media/P281-holden.pdf)
+
+Pietrosimone, K.M., S. Bhandari, M.G. Lemieux, D.A. Knecht, and M.A.
+Lynes. 2013. In Vitro Assays of Chemotaxis as a Window into Mechanisms
+of Toxicant-Induced Immunomodulation. **In Current Protocols in
+Toxicology.** John Wiley & Sons, Inc.
+[DOI: 10.1002/0471140856.tx1817s58](http://dx.doi.org/10.1002/0471140856.tx1817s58)
+
+Antkowiak, M., M.L. Torres-Mapa, E.C. Witts, G.B. Miles, K. Dholakia,
+and F.J. Gunn-Moore. 2013. Fast targeted gene transfection and
+optogenetic modification of single neurons using femtosecond laser
+irradiation. **Sci Rep.** 3.
+[<doi:10.1038/srep03281>](http://dx.doi.org/10.1038/srep03281).
+
+Harris, A.R., J. Bellis, N. Khalilgharibi, T. Wyatt, B. Baum, A.J.
+Kabla, and G.T. Charras. 2013. Generating suspended cell monolayers for
+mechanobiological studies. **Nat. Protocols.** 8:2516–2530.
+[<doi:10.1038/nprot.2013.151>](http://dx.doi.org/10.1038/nprot.2013.151).
+
+Unser, M., Sage, D., and R. Delgado-Gonzalo. Advanced image processing
+for biology, and the Open Bio Image Alliance (OBIA). EUSIPCO 2013
+1569744383. [pdf](http://bigwww.epfl.ch/publications/media/Unser1302.pdf)
+
+Dirks, M.L., B.T. Wall, T. Snijders, C.L.P. Ottenbros, L.B. Verdijk, and
+L.J.C. van Loon. 2013. Neuromuscular electrical stimulation prevents
+muscle disuse atrophy during leg immobilisation in humans. **Acta
+Physiologica.** n/a–n/a.
+[<doi:10.1111/apha.12200>](http://dx.doi.org/10.1111/apha.12200).
+
+Khanduja, N., and J.R. Kuhn. 2013. Processive acceleration of actin
+barbed end assembly by N-WASP. **Mol. Biol. Cell.** mbc.E12–11–0781.
+[<doi:10.1091/mbc.E12-11-0781>](http://dx.doi.org/10.1091/mbc.E12-11-0781).
+
+Roossien, D.H., P. Lamoureux, D. Van Vactor, and K.E. Miller. 2013.
+Drosophila Growth Cones Advance by Forward Translocation of the Neuronal
+Cytoskeletal Meshwork In Vivo. **PLoS ONE.** 8:e80136.
+[<doi:10.1371/journal.pone.0080136>](http://dx.doi.org/10.1371/journal.pone.0080136).
+
+Crivat, G., V.A. Lizunov, C.R. Li, K.G. Stenkula, J. Zimmerberg, S.W.
+Cushman, and L. Pick. 2013. Insulin Stimulates Translocation of Human
+GLUT4 to the Membrane in Fat Bodies of Transgenic Drosophila
+melanogaster. **PLoS ONE.** 8:e77953.
+[<doi:10.1371/journal.pone.0077953>](http://dx.doi.org/10.1371/journal.pone.0077953).
+
+Wall, B.T., M.L. Dirks, T. Snijders, J.M.G. Senden, J. Dolmans, and
+L.J.C. van Loon. 2013. Substantial skeletal muscle loss occurs during
+only 5 days of disuse. **Acta Physiologica.** n/a–n/a.
+[<doi:10.1111/apha.12190>](http://dx.doi.org/10.1111/apha.12190).
+
+Chang, C.-L., T.-S. Hsieh, T.T. Yang, K.G. Rothberg, D.B. Azizoglu, E.
+Volk, J.-C. Liao, and J. Liou. 2013. Feedback Regulation of
+Receptor-Induced Ca2+ Signaling Mediated by E-Syt1 and Nir2 at
+Endoplasmic Reticulum-Plasma Membrane Junctions. **Cell Reports.**
+5:813–825.
+[<doi:10.1016/j.celrep.2013.09.038>](http://dx.doi.org/10.1016/j.celrep.2013.09.038).
+
+Bell, L., A. Seshia, D. Lando, E. Laue, M. Palayret, S.F. Lee, and D.
+Klenerman. 2014. A microfluidic device for the hydrodynamic
+immobilisation of living fission yeast cells for super-resolution
+imaging. **Sensors and Actuators B: Chemical.**192:36–41.
+[<doi:10.1016/j.snb.2013.10.002>](http://dx.doi.org/10.1016/j.snb.2013.10.002).
+
+Fanucchi, S., Y. Shibayama, S. Burd, M.S. Weinberg, and M.M. Mhlanga.
+2013. Chromosomal Contact Permits Transcription between Coregulated
+Genes. **Cell.** 155:606–620.
+[<doi:10.1016/j.cell.2013.09.051>](http://dx.doi.org/10.1016/j.cell.2013.09.051).
+
+Hol, F.J.H., P. Galajda, K. Nagy, R.G. Woolthuis, C. Dekker, and J.E.
+Keymer. 2013. Spatial Structure Facilitates Cooperation in a Social
+Dilemma: Empirical Evidence from a Bacterial Community. **PLoS ONE.**
+8:e77042.
+[<doi:10.1371/journal.pone.0077042>](http://dx.doi.org/10.1371/journal.pone.0077042).
+
+De Luca, G.M.R., R.M.P. Breedijk, R.A.J. Brandt, C.H.C. Zeelenberg, B.E.
+de Jong, W. Timmermans, L.N. Azar, R.A. Hoebe, S. Stallinga, and E.M.M.
+Manders. 2013. Re-scan confocal microscopy: scanning twice for better
+resolution. **Biomed. Opt. Express.** 4:2644–2656.
+[<doi:10.1364/BOE.4.002644>](http://dx.doi.org/10.1364/BOE.4.002644).
+
+Costa, A., A. Candeo, L. Fieramonti, G. Valentini, and A. Bassi. 2013.
+Calcium Dynamics in Root Cells of Arabidopsis thaliana Visualized with
+Selective Plane Illumination Microscopy. **PLoS ONE.** 8:e75646.
+[<doi:10.1371/journal.pone.0075646>](http://dx.doi.org/10.1371/journal.pone.0075646).
+
+Farlow, J., D. Seo, K.E. Broaders, M.J. Taylor, Z.J. Gartner, and Y.
+Jun. 2013. Formation of targeted monovalent quantum dots by steric
+exclusion. **Nat Meth.** advance online publication.
+[<doi:10.1038/nmeth.2682>](http://dx.doi.org/10.1038/nmeth.2682).
+
+Climent, A.M., M.S. Guillem, P. Lee, C. Bollensdorff, F. Atienza, M.E.
+Fernández-Santos, R. Sanz-Ruiz, P.L. Sánchez, and F. Fernández-Avilés.
+2014. Inhomogeneous Modification of Cardiac Electrophysiological
+Properties due to Flecainide Administration. In XIII Mediterranean
+Conference on Medical and Biological Engineering and Computing 2013.
+L.M.R. Romero, editor. Springer International Publishing. 423–426.
+
+Anderson, C.A., U. Eser, T. Korndorf, M.E. Borsuk, J.M. Skotheim, and
+A.S. Gladfelter. Nuclear Repulsion Enables Division Autonomy in a Single
+Cytoplasm. **Current Biology**.
+[<doi:10.1016/j.cub.2013.07.076>](http://dx.doi.org/10.1016/j.cub.2013.07.076).
+
+Climent, A.M., M.S. Guillem, P. Lee, C. Bollensdorff, F. Atienza, M.E.
+Fernández-Santos, R. Sanz-Ruiz, P.L. Sánchez, and F. Fernández-Avilés.
+2014. An In-Vitro Model of Cardiac Fibrillation with Different Degrees
+of Complexity. In XIII Mediterranean Conference on Medical and
+Biological Engineering and Computing 2013. L.M.R. Romero, editor.
+Springer International Publishing. 340–343.
+
+Zahm, J.A., S.B. Padrick, Z. Chen, C.W. Pak, A.A. Yunus, L. Henry, D.R.
+Tomchick, Z. Chen, and M.K. Rosen. 2013. The Bacterial Effector VopL
+Organizes Actin into Filament-like Structures. **Cell**. 155:423–434.
+[<doi:10.1016/j.cell.2013.09.019>](http://dx.doi.org/10.1016/j.cell.2013.09.019).
+
+Soares, H., R. Henriques, M. Sachse, L. Ventimiglia, M.A. Alonso, C.
+Zimmer, M.-I. Thoulouze, and A. Alcover. 2013. Regulated vesicle fusion
+generates signaling nanoterritories that control T cell activation at
+the immunological synapse. **J Exp Med.** jem.20130150.
+[<doi:10.1084/jem.20130150>](http://dx.doi.org/10.1084/jem.20130150).
+
+Kast, E.J., M.-D.T. Nguyen, R.E. Lawrence, C. Rabeler, and N.J.
+Kaplinsky. 2013. The RootScope: a simple high-throughput screening
+system for quantitating gene expression dynamics in plant roots. **BMC
+Plant Biology.** 13:158.
+[<doi:10.1186/1471-2229-13-158>](http://dx.doi.org/10.1186/1471-2229-13-158).
+
+Mercadé-Prieto, R., and S. Bakalis. Washing Simulator Rig to Study the
+Effect of Abrasion on the Removal of Soils from Fabrics. **Tribol
+Lett.** 1–9.
+[<doi:10.1007/s11249-013-0236-5>](http://dx.doi.org/10.1007/s11249-013-0236-5).
+
+Tills, O., S.D. Rundle, and J.I. Spicer. 2013. Variance in developmental
+event timing is greatest at low biological levels: implications for
+heterochrony. **Biological Journal of the Linnean Society.** n/a–n/a.
+[<doi:10.1111/bij.12158>](http://dx.doi.org/10.1111/bij.12158).
+
+Hansen, S.D., A.V. Kwiatkowski, C.-Y. Ouyang, H. Liu, S. Pokutta, S.C.
+Watkins, N. Volkmann, D. Hanein, W.I. Weis, R.D. Mullins, and W.J.
+Nelson. 2013. Alpha-E-catenin Actin Binding Domain Alters Actin Filament
+Conformation and Regulates Binding of Nucleation and Disassembly
+Factors. Mol. Biol. Cell. mbc.E13–07–0388.
+[<doi:10.1091/mbc.E13-07-0388>](http://dx.doi.org/10.1091/mbc.E13-07-0388).
+
+Wang, Y., A. Ahmad, P. Shah, C.E. Sims, S. Magness, and N.L. Allbritton.
+2013. Capture and 3D culture of colonic crypts and colonoids in a
+microarray platform. Lab Chip.
+[<doi:10.1039/C3LC50813G>](http://dx.doi.org/10.1039/C3LC50813G).
+
+Razinia, Z., M. Baldassarre, G. Cantelli, and D.A. Calderwood. 2013.
+ASB2α, an E3 ubiquitin ligase specificity subunit, regulates cell
+spreading and triggers proteasomal degradation of filamins by targeting
+the filamin calponin homology 1 domain. J. Biol. Chem. jbc.M113.496604.
+[<doi:10.1074/jbc.M113.496604>](http://dx.doi.org/10.1074/jbc.M113.496604).
+
+Lee, R.J., B. Chen, K.M. Redding, R.F. Margolskee, and N.A. Cohen. 2013.
+Mouse nasal epithelial innate immune responses to Pseudomonas aeruginosa
+quorum-sensing molecules require taste signaling components. Innate
+Immunity. 1753425913503386.
+[<doi:10.1177/1753425913503386>](http://dx.doi.org/10.1177/1753425913503386).
+
+McFaul, C.M.J., J. Leith, B. Jia, F. Michaud, A. Arsenault, A. Martin,
+D. Berard, and S. Leslie. 2013. **SPIE NanoScience** Single-molecule
+microscopy using tunable nanoscale confinement. 881102–881102–12.
+[<doi:10.1117/12.2021768>](http://dx.doi.org/10.1117/12.2021768)
+
+Prystowsky, M., K. Feeney, N. Kawachi, C. Montagna, M. Willmott, C.
+Wasson, M. Antkowiak, O. Loudig, and J. Parish. 2013. Inhibition of Plk1
+and Cyclin B1 Expression Results in Panobinostat-Induced G2 Delay and
+Mitotic Defects. Sci Rep. 3.
+[<doi:10.1038/srep02640>](http://dx.doi.org/10.1038/srep02640).
+
+Chen, A.H., A. Robinson-Mosher, D.F. Savage, P.A. Silver, and J.K.
+Polka. 2013. The Bacterial Carbon-Fixing Organelle Is Formed by Shell
+Envelopment of Preassembled Cargo. PLoS ONE. 8:e76127.
+[<doi:10.1371/journal.pone.0076127>](http://dx.doi.org/10.1371/journal.pone.0076127).
+
+Abdallah, B.G., T.-C. Chao, C. Kupitz, P. Fromme, and A. Ros. 2013.
+Dielectrophoretic Sorting of Membrane Protein Nanocrystals. ACS Nano.
+[<doi:10.1021/nn403760q>](http://dx.doi.org/10.1021/nn403760q).
+
+Tanenbaum, M.E., R.D. Vale, and R.J. McKenney. 2013. Cytoplasmic dynein
+crosslinks and slides anti-parallel microtubules using its two motor
+domains. eLife. 2.
+[<doi:10.7554/eLife.00943>](http://dx.doi.org/10.7554/eLife.00943).
+
+Helgeson, L.A., and B.J. Nolen. 2013. Mechanism of synergistic
+activation of Arp2/3 complex by cortactin and N-WASP. eLife. 2.
+[<doi:10.7554/eLife.00884>](http://dx.doi.org/10.7554/eLife.00884).
+
+Rangel, D.E., N. Marín-Medina, J.E. Castro, A. González-Mancera, and M.
+Forero-Shelton. 2013. Observation of Bacterial Type I Pili Extension and
+Contraction under Fluid Flow. PLoS ONE. 8:e65563.
+[<doi:10.1371/journal.pone.0065563>](http://dx.doi.org/10.1371/journal.pone.0065563).
+
+Hua, H., M. Namdar, O. Ganier, J. Gregan, M. Méchali, and S.E. Kearsey.
+2013. Sequential steps in DNA replication are inhibited to ensure
+reduction of ploidy in meiosis. **Mol. Biol. Cell.** 24:578–587.
+[<doi:10.1091/mbc.E12-11-0825>](http://dx.doi.org/10.1091/mbc.E12-11-0825)
+
+Narayan, P., K.A. Ganzinger, J. McColl, L. Weimann, S. Meehan, S. Qamar,
+J.A. Carver, M.R. Wilson, P. St George-Hyslop, C.M. Dobson, and D.
+Klenerman. 2013. Single molecule characterization of the interactions
+between amyloid-β peptides and the membranes of hippocampal cells. **J.
+Am. Chem. Soc.** 135:1491–1498.
+[<doi:10.1021/ja3103567>](http://dx.doi.org/10.1021/ja3103567)
+
+Antony, P.M.A., C. Trefois, A. Stojanovic, A.S. Baumuratov, and K.
+Kozak. 2013. Light microscopy applications in systems biology:
+opportunities and challenges. **Cell Commun. Signal.** 11:24.
+[<doi:10.1186/1478-811X-11-24>](http://dx.doi.org/0.1186/1478-811X-11-24)
+
+Alpert, M.H., and S. Alford. 2013. Synaptic NMDA receptor-dependent Ca²⁺
+entry drives membrane potential and Ca²⁺ oscillations in spinal ventral
+horn neurons. **PLoS ONE.** 8:e63154.
+[<doi:10.1371/journal.pone.0063154>](http://dx.doi.org/10.1371/journal.pone.0063154)
+
+Sosa, L.J., J. Bergman, A. Estrada-Bernal, T.J. Glorioso, J.M.
+Kittelson, and K.H. Pfenninger. 2013. Amyloid precursor protein is an
+autonomous growth cone adhesion molecule engaged in contact guidance.
+**PLoS ONE.** 8:e64521.
+d[<doi:10.1371/journal.pone.0064521>](http://dx.doi.org/10.1371/journal.pone.0064521)
+
+Parikh, R.Y., and H.D. Kim. 2013. The Effect of an Intervening Promoter
+Nucleosome on Gene Expression. **PLoS ONE**. 8:e63072.
+[<doi:10.1371/journal.pone.0063072>](http://dx.doi.org/10.1371/journal.pone.0063072)
+
+Cheng, Z., P. Yi, X. Wang, Y. Chai, G. Feng, Y. Yang, X. Liang, Z. Zhu,
+W. Li, and G. Ou. 2013. Conditional targeted genome editing using
+somatically expressed TALENs in C. elegans. **Nat
+Biotech.**[<doi:10.1038/nbt.2674>](http://dx.doi.org/10.1038/nbt.2674)
+
+Uehara, R., Y. Tsukada, T. Kamasaki, I. Poser, K. Yoda, D.W. Gerlich,
+and G. Goshima. 2013. Aurora B and Kif2A control microtubule length for
+assembly of a functional central spindle during anaphase. **J Cell
+Biol.** 202:623–636.
+[<doi:10.1083/jcb.201302123>](http://dx.doi.org/10.1083/jcb.201302123)
+
+Faurobert, E., C. Rome, J. Lisowska, S. Manet-Dupé, G. Boulday, M.
+Malbouyres, M. Balland, A.-P. Bouin, M. Kéramidas, D. Bouvard, J.-L.
+Coll, F. Ruggiero, E. Tournier-Lasserve, and C. Albiges-Rizo. 2013.
+CCM1–ICAP-1 complex controls β1 integrin–dependent endothelial
+contractility and fibronectin remodeling. **J Cell Biol.** 202:545–561.
+[<doi:10.1083/jcb.201303044>](http://dx.doi.org/10.1083/jcb.201303044)
+
+Tinkum, K.L., L.S. White, L. Marpegan, E. Herzog, D. Piwnica-Worms, and
+H. Piwnica-Worms. 2013. Forkhead Box O1 (FOXO1), but not p53,
+Contributes to Robust Induction of p21 Expression in Fasted Mice. '''J.
+Biol. Chem. '''
+[<doi:10.1074/jbc.M113.494328>](http://dx.doi.org/10.1074/jbc.M113.494328)
+
+Richards, T.S., A.E. Knowlton, and S.S. Grieshaber. 2013. Chlamydia
+trachomatis homotypic inclusion fusion is promoted by host microtubule
+trafficking. **BMC Microbiol.** 13:185.
+[<doi:10.1186/1471-2180-13-185>](http://dx.doi.org/10.1186/1471-2180-13-185).
+
+Beheiry, M.E., and M. Dahan. 2013. ViSP: representing single-particle
+localizations in three dimensions. **Nat Meth.** 10:689–690.
+[<doi:10.1038/nmeth.2566>](http://dc.doi.org/10.1038/nmeth.2566).
+
+Annamdevula, N., B. Sweat, P. Favreau, A. Lindsey, D. Alvarez, T. Rich,
+and S. Leavesley. 2013. An Approach for Characterizing and Comparing
+Hyperspectral Microscopy Systems. **Sensors.** 13:9267–9293.
+[<doi:10.3390/s130709267>](http://dx.doi.org/10.3390/s130709267).
+
+Hickey, C.M., C.J. Groten, L. Sham, C.J. Carter, and N.S. Magoski.
+Voltage-gated Ca2+ influx and mitochondrial Ca2+ initiate secretion from
+Aplysia neuroendocrine cells. **Neuroscience.**
+[<doi:10.1016/j.neuroscience.2013.07.023>](http://dx.doi.org/10.1016/j.neuroscience.2013.07.023).
+
+Miao, Y., C. Miner, L. Zhang, P.I. Hanson, A. Dani, and M. Vig. 2013. An
+essential and NSF independent role for α-SNAP in store-operated calcium
+entry. **eLife.** 2.
+[<doi:10.7554/eLife.00802>](http://dx.doi.org/10.7554/eLife.00802).
+
+Soper, S.A., J.M. Jackson, M. Witek, M. Hupert, J. Kamande, R. Aufforth,
+C. Tignanelli, R. Torphy, and J. Yeh. 2013. UV Activation of Polymeric
+High Aspect Ratio Microstructures: Ramifications in Antibody Surface
+Loading For Circulating Tumor Cell Selection. **Lab Chip.**
+[<doi:10.1039/C3LC50618E>](http://dx.doi.org/10.1039/C3LC50618E).
+
+Haeri, M., and J.L. Gilbert. Study of cellular dynamics on polarized
+CoCrMo alloy using time-lapse live-cell imaging. **Acta Biomaterialia.**
+[<doi:10.1016/j.actbio.2013.06.040>.](http://dx.doi.org/10.1016/j.actbio.2013.06.040)
+
+Krzyzanowski, M.C., C. Brueggemann, M.J. Ezak, J.F. Wood, K.L. Michaels,
+C.A. Jackson, B.-T. Juang, K.D. Collins, M.C. Yu, N.D. L’Etoile, and
+D.M. Ferkey. 2013. The C. elegans cGMP-Dependent Protein Kinase EGL-4
+Regulates Nociceptive Behavioral Sensitivity. **PLoS Genet.**
+9:e1003619.
+[<doi:10.1371/journal.pgen.1003619>.](http://dx.doi.org/10.1371/journal.pgen.1003619)
+
+Kamasaki, T., E. O’Toole, S. Kita, M. Osumi, J. Usukura, J.R. McIntosh,
+and G. Goshima. 2013. Augmin-dependent microtubule nucleation at
+microtubule walls in the spindle. **J Cell Biol.** 202:25–33.
+[<doi:10.1083/jcb.201304031>](http://dx.doi.org/10.1083/jcb.201304031)
+
+BARBER, P. R., I. D. C. TULLIS, G. P. PIERCE, R. G. NEWMAN, J. PRENTICE,
+M. I. ROWLEY, D. R. MATTHEWS, S. M. AMEER-BEG, and B. VOJNOVIC. (2013).
+The Gray Institute ‘open’ High-content, Fluorescence Lifetime
+Microscopes. **Journal of Microscopy**
+[<doi:10.1111/jmi.12057>](http://dx.doi.org/10.1111/jmi.12057)
+
+Xiaojing Yang, Anna Payne-Tobin Jost, Orion Weiner, and Chao Tang
+(2013). A light-inducible organelle targeting system for dynamically
+activating and inactivating signaling in budding yeast. **Mol. Biol.
+Cell** mbc.E13-03-0126;
+[<doi:10.1091/mbc.E13-03-0126>](http://dx.doi.org/10.1091/mbc.E13-03-0126)
+
+Gualda, Emilio J, Tiago Vale, Pedro Almada, Jose A Feijo, Gabriel G
+Martins, and Nuno Moreno. (2013). OpenSpinMicroscopy: An Open-source
+Integrated Microscopy Platform. **Nat Meth** 10: 599–600.
+[<doi:10.1038/nmeth.2508>](http://dx.doi.org/10.1038/nmeth.2508)
+
+Gaurav Misra, Enrique R. Rojas, Ajay Gopinathan, and Kerwyn Casey Huang.
+(2013). Mechanical Consequences of Cell-Wall Turnover in the Elongation
+of a Gram-Positive Bacterium, **Biophysical Journal** 104: 2342-2352
+[<doi:10.1016/j.bpj.2013.04.047>](http://dx.doi.org/10.1016/j.bpj.2013.04.047)
+
+Anita Gollmer, Francesca Besostri, Thomas Breitenbach, and Peter R.
+Ogilby (2013). Spatially-resolved two-photon irradiation of an
+intracellular singlet oxygen photosensitizer: Correlating cell response
+to the site of localized irradiation. **Free Radical Research** 0 0:ja,
+1-33
+[<doi:10.3109/10715762.2013.817670>](http://dx.doi.org/10.3109/10715762.2013.817670)
+
+Misra, G., Rojas, E.R., Gopinathan, A., and Huang, K.C. (2013).
+Mechanical Consequences of Cell-Wall Turnover in the Elongation of a
+Gram-Positive Bacterium. **Biophysical Journal** 104, 2342–2352.
+[<doi:10.1016/j.bpj.2013.04.047>](http://dx.doi.org/10.1016/j.bpj.2013.04.047)
+
+Adrien Padirac, Teruo Fujii, André Estévez-Torres, and Yannick Rondelez
+(2013). Spatial waves in synthetic biochemical networks. **Journal of
+the American Chemical Society**
+[<doi:10.1021/ja403584p>](http://dx.doi.org/10.1021/ja403584p)
+
+Xiaolu Qu, Hua Zhang, Yurong Xie, Juan Wang, Naizhi Chen, and Shanjin
+Huang (2013). Arabidopsis Villins Promote Actin Turnover at Pollen Tube
+Tips and Facilitate the Construction of Actin Collars. **Plant Cell**
+[<doi:10.1105/tpc.113.110940>](http://dx.doi.org/10.1105/tpc.113.110940)
+
+Gang, E.J., Hsieh, Y.-T., Pham, J., Zhao, Y., Nguyen, C., Huantes, S.,
+Park, E., Naing, K., Klemm, L., Swaminathan, S., et al. (2013).
+Small-molecule inhibition of CBP/catenin interactions eliminates
+drug-resistant clones in acute lymphoblastic leukemia. **Oncogene**
+[<doi:10.1038/onc.2013.169>](http://dx.doi.org/10.1038/onc.2013.169)
+
+Weimann L, Ganzinger KA, McColl J, Irvine KL, Davis SJ, et al. (2013) A
+Quantitative Comparison of Single-Dye Tracking Analysis Tools Using
+Monte Carlo Simulations. **PLoS ONE** 8(5): e64287.
+[<doi:10.1371/journal.pone.0064287>](http://dx.doi.org/10.1371/journal.pone.0064287)
+
+Henriksson, J., Hench, J., Tong, Y.G., Johansson, A., Johansson, D., and
+Burglin, T.R. (2013). Endrov: an integrated platform for image analysis.
+**Nat Meth** 10, 454–456
+[<doi:10.1038/nmeth.2478>](http://dx.doi.org/10.1038/nmeth.2478)
+
+Parikh RY, Kim HD (2013) The Effect of an Intervening Promoter
+Nucleosome on Gene Expression. **PLoS ONE** 8(5): e63072.
+[<doi:10.1371/journal.pone.0063072>](http://dx.doi.org/10.1371/journal.pone.0063072)
+
+Antoine Lampron, Pedro M. Pimentel-Coelho, Serge Rivest. (2013).
+Migration of bone marrow-derived cells into the CNS in models of
+neurodegeneration. **J. Comparative Neurology**.
+[doi: 10.1002/cne.23363](http://dx.doi.org/10.1002/cne.23363)
+
+Nicolás Pírez, Bethany Lauren Christmann, and Leslie Claire Griffith.
+(2013). Daily rhythms in locomotor circuits in Drosophila involve
+pigment-dispersing factor. **J Neurophysiol** jn.00126.2013; published
+ahead of print May 15, 2013,
+[<doi:10.1152/jn.00126.2013>](http://dx.doi.org/10.1152/jn.00126.2013)
+
+Sosa LJ, Bergman J, Estrada-Bernal A, Glorioso TJ, Kittelson JM, et al.
+(2013) Amyloid Precursor Protein Is an Autonomous Growth Cone Adhesion
+Molecule Engaged in Contact Guidance. **PLoS ONE** 8(5): e64521.
+[<doi:10.1371/journal.pone.0064521>](http://dx.doi.org/10.1371/journal.pone.0064521)
+
+Michael H. Alpert and Simon Alford. (2013). Synaptic NMDA
+Receptor-Dependent Ca2+ Entry Drives Membrane Potential and Ca2+
+Oscillations in Spinal Ventral Horn Neurons. **PLoS One.** 8(4): e63154
+[<doi:10.1371%2Fjournal.pone.0063154>](http://dx.doi.org/10.1371%2Fjournal.pone.0063154)
+
+Sung, Myong-Hee. (2013). A Checklist for Successful Quantitative Live
+Cell Imaging in Systems Biology. **Cells** 2, no. 2: 284-293
+[<doi:10.3390/cells2020284>](http://dx.doi.org/10.3390/cells2020284)
+
+Brian Estevez, Aleksandra Stojanovic-Terpo, M. Keegan Delaney, Kelly A.
+O'Brien, Michael C. Berndt, Changgeng Ruan, and Xiaoping Du. (2013). LIM
+Kinase-1 selectively promotes glycoprotein Ib-IX-mediated TXA2
+synthesis, platelet activation, and thrombosis **Blood** 2013 :
+blood-2012-12-470765v1-blood-2012-12-470765
+[doi: 10.1182/blood-2012-12-470765](http://dx.doi.org/10.1182/blood-2012-12-470765)
+
+Li F, Yin Z, Jin G, Zhao H, Wong STC (2013) Chapter 17: Bioimage
+Informatics for Systems Pharmacology. PLoS Comput Biol 9(4): e1003043.
+[<doi:10.1371/journal.pcbi.1003043>](http://dx.doi.org/10.1371/journal.pcbi.1003043)
+
+Tsukada, Y. and Hashimoto, K. (2013), Feedback regulation of microscopes
+by image processing. Development, Growth & Differentiation.
+[doi: 10.1111/dgd.12056](http://dx.doi.org/10.1111/dgd.12056)
+
+Katja Schulze, Ulrich M Tillich, Thomas Dandekar, and Marcus Frohme
+(2013). PlanktoVision -- an automated analysis system for the
+identification of phytoplankton. **BMC Bioinformatics** 14:115
+[<doi:10.1186/1471-2105-14-115>](http://dx.doi.org/10.1186/1471-2105-14-115)
+
+D. Chen, L. Ma, E-L Tham, S. Maresh, R. I. Lechler, J. H. McVey, and A.
+Dorling (2013). Fibrocytes mediate intimal hyperplasia post-vascular
+injury and are regulated by two tissue factor-dependent mechanisms.
+**Journal of Thrombosis and Haemostasis**
+[DOI: 10.1111/jth.12198](http://dx.doi.org/10.1111/jth.12198)
+
+Roshanak Irannejad, Jin C. Tomshine, Jon R. Tomshine, Michael Chevalier,
+Jacob P. Mahoney, Jan Steyaert, Søren G. F. Rasmussen, Roger K.
+Sunahara, Hana El-Samad, Bo Huang & Mark von Zastrow (2013).
+Conformational biosensors reveal GPCR signalling from endosomes
+**Nature** 495, 534–538
+[<doi:10.1038/nature12000>](http://dx.doi.org/10.1038/nature12000)
+
+Lizunov VA, Stenkula K, Troy A, Cushman SW, Zimmerberg J (2013) Insulin
+Regulates Glut4 Confinement in Plasma Membrane Clusters in Adipose
+Cells. **PLoS ONE** 8(3): e57559.
+[<doi:10.1371/journal.pone.0057559>](http://dx.doi.org/10.1371/journal.pone.0057559)
+
+Furia, L., Pelicci, P. G. and Faretta, M. (2013). A computational
+platform for robotized fluorescence microscopy (I): High-content
+image-based cell-cycle analysis. **Cytometry**, 83A: 333–343.
+[doi: 10.1002/cyto.a.22266](http://dx.doi.org/10.1002/cyto.a.22266)
+
+Brittany J. Belin, Beth A. Cimini, Elizabeth H. Blackburn, and R. Dyche
+Mullins (2013). Visualization of actin filaments and monomers in somatic
+cell nuclei. **MBOC**
+[<doi:10.1091/mbc.E12-09-0685>](http://dx.doi.org/10.1091/mbc.E12-09-0685)
+
+Rivera MF, Lee J-Y, Aneja M, Goswami V, Liu L, et al. (2013)
+Polymicrobial Infection with Major Periodontal Pathogens Induced
+Periodontal Disease and Aortic Atherosclerosis in Hyperlipidemic
+ApoEnull Mice. **PLoS ONE** 8(2): e57178.
+[<doi:10.1371/journal.pone.0057178>](http://dx.doi.org/10.1371/journal.pone.0057178)
+
+Martinus H. V. Werts, Vincent Raimbault, Matthieu Loumaigne, Laurent
+Griscom, Olivier Français, Julien R. G. Navarro, Anne Débarre, and Bruno
+Le Pioufle (2013) Optical microscopy and spectroscopy of
+analyte-sensitive functionalized gold nanoparticles in microfluidic
+systems . **Proc. SPIE** 8595, Colloidal Nanocrystals for Biomedical
+Applications VIII, 85950W (February 22, 2013);
+[<doi:10.1117/12.2001608>](http://dx.doi.org/10.1117/12.2001608).
+
+M. Bruce and M. Butte (2013). Real-time GPU-based 3D Deconvolution.
+**Opt. Express** 21, 4766-4773.
+[<doi:10.1364/OE.21.004766>](http://dx.doi.org/10.1364/OE.21.004766)
+
+Sabine Petry, Aaron C. Groen, Keisuke Ishihara, Timothy J. Mitchison,
+and Ronald D. Vale (2013). Branching Microtubule Nucleation in Xenopus
+Egg Extracts Mediated by Augmin and TPX2. **Cell** 152:768-777
+[doi: 10.1016/j.cell.2012.12.044](http://dx.doi.org/10.1016/j.cell.2012.12.044)
+
+Dominik Langer, Marcel van’t Hoff, Andreas J. Keller, Chetan Nagaraja,
+Oliver A. Pfäffli, Maurice Göldi, Hansjörg Kasper, and Fritjof Helmchen
+(2013). HelioScan: a software framework for controlling in vivo
+microscopy setups with high hardware flexibility, functional diversity
+and extendibility. **Journal of Neuroscience Methods** Available online
+14 February 2013
+[doi: 10.1016/j.jneumeth.2013.02.006](http://dx.doi.org/10.1016/j.jneumeth.2013.02.006)
+
+Peter Pitrone, Johannes Schindelin, Luke Stuyvenberg, Stephan Preibisch,
+Michael Weber, Kevin W. Eliceiri, Jan Huisken, Pavel Tomancak (2013).
+OpenSPIM - an open access platform for light sheet microscopy.
+[arxiv.org/abs/1302.1987](http://arxiv.org/abs/1302.1987)
+
+van der Ploeg, R., Verheul, J., Vischer, N. O. E., Alexeeva, S.,
+Hoogendoorn, E., Postma, M., Banzhaf, M., Vollmer, W. and den Blaauwen,
+T. (2013), Colocalization and interaction between elongasome and
+divisome during a preparative cell division phase in Escherichia coli.
+**Molecular Microbiology.**
+[doi: 10.1111/mmi.12150](http://dx.doil.org/10.1111/mmi.12150)
+
+Bo-mi Song, Serge Faumont, Shawn Lockery, and Leon Avery (2013).
+Recognition of familiar food activates feeding via an endocrine
+serotonin signal in Caenorhabditis elegans. **eLife** 2013;2:e00329
+[<doi:10.7554/eLife.00329>](http://dx.doi.org/10.7554/eLife.00329)
+
+Oliver Tills, Tabitha Bitterli, Phil Culverhouse, John I Spicer and
+Simon Rundle (2013). A novel application of motion analysis for
+detecting stress responses in embryos at different stages of
+development. **BMC Bioinformatics** 14:37
+[<doi:10.1186/1471-2105-14-37>](http://dx.doi.org/10.1186/1471-2105-14-37)
+
+Lee BH, Gauna AE, Perez G, Park Y-j, Pauley KM, et al. (2013)
+Autoantibodies against Muscarinic Type 3 Receptor in Sjögren's Syndrome
+Inhibit Aquaporin 5 Trafficking. **PLoS ONE** 8(1): e53113.
+[<doi:10.1371/journal.pone.0053113>](http://dx.doi.org/10.1371/journal.pone.0053113)
+
+Svetlana Glushakova, Vladimir Lizunov, Paul S Blank, Kamran Melikov,
+Glen Humphrey and Joshua Zimmerberg (2013). Cytoplasmic free Ca2+ is
+essential for multiple steps in malaria parasite egress from infected
+erythrocytes. **Malaria Journal** 12:41
+[<doi:10.1186/1475-2875-12-41>](http://dx.doi.org/10.1186/1475-2875-12-41)
+
+Wu M, Piccini M, Koh C-Y, Lam KS, Singh AK (2013) Single Cell MicroRNA
+Analysis Using Microfluidic Flow Cytometry. **PLoS ONE** 8(1): e55044.
+[<doi:10.1371/journal.pone.0055044>](http://dx.doi.org/10.1371/journal.pone.0055044)
+
+Martin D. Bootman, Katja Rietdorf, Tony Collins, Simon Walker, and
+Michael Sanderson (2013). Ca2+-Sensitive Fluorescent Dyes and
+Intracellular Ca2+ Imaging. **Cold Spring Harb Protoc**
+[<doi:10.1101/pdb.top066050>](http://dx.doi.org/10.1101/pdb.top066050)
+
+Emad Moeendarbary, Léo Valon, Marco Fritzsche, Andrew R. Harris, Dale A.
+Moulding, Adrian J. Thrasher, Eleanor Stride, L. Mahadevan, and
+Guillaume T. Charras (2013). The cytoplasm of living cells behaves as a
+poroelastic material. **Nature Materials**
+[<doi:10.1038/nmat3517>](http://dx.doi.org/10.1038/nmat3517)
+
+Ullman G, Wallden M, Marklund EG, Mahmutovic A, Razinkov I, and Elf J.
+(2013) High-throughput gene expression analysis at the level of single
+proteins using a microfluidic turbidostat and automated cell tracking.
+**Phil Trans R Soc B** 368: 20120025.
+[<doi:10.1098/rstb.2012.0025>](http://dx.doi.org/10.1098/rstb.2012.0025)
+
+Lina Duan, Daniela Dietrich, Chong Han Ng, Penny Mei Yeen Chan,
+Rishikesh Bhalerao, Malcolm J. Bennett, and José R. Dinneny. (2013).
+Endodermal ABA Signaling Promotes Lateral Root Quiescence during Salt
+Stress in Arabidopsis Seedlings. **Plant Cell** tpc.112.107227;
+[<doi:10.1105/tpc.112.107227>](http://dx.doi.org/10.1105/tpc.112.107227)
+
+Marie-Pierre Valignat, Olivier Theodoly, Alexia Gucciardi†, Nancy Hogg,
+Annemarie C. Lellouch (2013). T Lymphocytes Orient against the Direction
+of Fluid Flow during LFA-1-Mediated Migration. **Biophysical J.**
+104:322–331.
+[<doi:10.1016/j.bpj.2012.12.007>](http://dx.doi.org/10.1016/j.bpj.2012.12.007)
+
+Emily A. Oblath , W. Hampton Henley , Jean Pierre Alarie and J. Michael
+Ramsey (2013). A microfluidic chip integrating DNA extraction and
+real-time PCR for the detection of bacteria in saliva. **Lab Chip**,
+2013, Advance Article
+[doi: 10.1039/C3LC40961A](http://dx.doi.org/10.1039/C3LC40961A)
+
+Knowlton AE, Fowler LJ, Patel RK, Wallet SM, Grieshaber SS (2013)
+Chlamydia Induces Anchorage Independence in 3T3 Cells and Detrimental
+Cytological Defects in an Infection Model. **PLoS ONE** 8(1): e54022.
+[<doi:10.1371/journal.pone.0054022>](http://dx.doi.org/10.1371/journal.pone.0054022)
+
+Zhicheng Long , Eileen Nugent , Avelino Javer , Pietro Cicuta , Bianca
+Sclavi , Marco Cosentino Lagomarsino and Kevin D. Dorfman (2013).
+Microfluidic chemostat for measuring single cell dynamics in bacteria.
+**Lab Chip**13, 947-954
+[doi: 10.1039/C2LC41196B](http://dx.doi.org/10.1039/C2LC41196B)
+
+Burchfield, J. G., Lu, J., Fazakerley, D. J., Tan, S.-X., Ng, Y., Mele,
+K., Buckley, M. J., Han, W., Hughes, W. E. and James, D. E. (2013),
+Novel Systems for Dynamically Assessing Insulin Action in Live Cells
+Reveals Heterogeneity in the Insulin Response. Traffic, 14: 259–273.
+[doi: 10.1111/tra.12035](http://dx.doi.org/10.1111/tra.12035)
+
+Christopher M. Yip (2013). Correlative Optical and Scanning Probe
+Microscopies for Mapping Interactions at Membranes. **Methods in
+Molecular Biology** Volume 950, Part 4, 439-456,
+[DOI: 10.1007/978-1-62703-137-0\_24](http://dx.doi.org/10.1007/978-1-62703-137-0_24)
 
 Total 2013 citation: 144
 
-==2012==
-Uhlendorf, J., A. Miermont, T. Delaveau, G. Charvin, F. Fages, S. Bottani, G. Batt, and P. Hersen. 2012. Long-term model predictive control of gene expression at the population and single-cell levels. '''Proc. Natl. Acad. Sci. U.S.A'''. 109:14271–14276. [http://dx.doi.org/10.1073/pnas.1206810109 doi:10.1073/pnas.1206810109]
-
-Gayathri, P., T. Fujii, J. Møller-Jensen, F. van den Ent, K. Namba, and J. Löwe. 2012. A bipolar spindle of antiparallel ParM filaments drives bacterial plasmid segregation. '''Science.''' 338:1334–1337. [http://dx.doi.org/10.1126/science.1229091 doi:10.1126/science.1229091]
-
-Evgenia Leikina, Kamran Melikov, Sarmistha Sanyal, Santosh K. Verma, Bokkee Eun, Claudia Gebert, Karl Pfeifer, Vladimir A. Lizunov, Michael M. Kozlov, and Leonid V. Chernomordik (2012). Extracellular annexins and dynamin are important for sequential steps in myoblast fusion. '''J Cell Biol''' 200:109-123. [http://dx.doi.org/10.1083/jcb.201207012 doi:10.1083/jcb.201207012]
-
-Sascha Just, Susann Illing, Michelle Trester-Zedlitz, Elaine K Lau, Sarah J Kototowski, Elke Miess, Anika Mann, Christian Doll, Jonathan C Trinidad, Alma L Burlingame, Mark von Zastrow, and Stefan Schulz (2012). Differentiation of Opioid Drug Effects by Hierarchical Multi-site Phosphorylation '''Mol Pharmacol''' mol.112.082875; published ahead of print December 13, 2012, [http://dx.doi.org/10.1124/mol.112.082875 doi:10.1124/mol.112.082875]
-
-Gabriela N. Bosio, Thomas Breitenbach, Julieta Parisi, Miguel Reigosa, Frances H. Blaikie, Brian W. Pedersen, Elsa F. F. Silva, Daniel O. Mártire, and Peter R. Ogilby (2012). Antioxidant β-Carotene Does Not Quench Singlet Oxygen in Mammalian Cells. '''Journal of the American Chemical Society''' [http://dx.doi.org/10.1021/ja308930a doi: 10.1021/ja308930a]
-
-Ruben Mercadé-Prieto, Xuemiao Pan, Angel Fernández-González, Zhibing Zhang, and Serafim Bakalis (2012). Quantification of Microcapsules Deposited in Cotton Fabrics before and after Abrasion Using Fluorescence Microscopy. '''Industrial & Engineering Chemistry Research''' 51:16741-16749 [http://dx.doi.org/10.1021/ie3023912 doi: 10.1021/ie3023912]
-
-I Straub, F Mohr, J Stab, M Konrad, SE Philipp, J Oberwinkler, and M Schaefer (2012). Citrus fruit and fabacea secondary metabolites potently and selectively block TRPM3. '''British J. of Pharm.''' [http://dx.doi.org/10.1111/bph.12076 doi: 10.1111/bph.12076]
-
-Luisa Cochella, and Oliver Hobert (2012).  Embryonic Priming of a miRNA Locus Predetermines Postmitotic Neuronal Left/Right Asymmetry in C. elegans. '''Cell''' 151:1229-1242 [http://dx.doi.org/10.1016/j.cell.2012.10.049 doi:10.1016/j.cell.2012.10.049]
-
-Wenjing Li, Takashi Moriwaki, Tomomi Tani, Takashi Watanabe, Kozo Kaibuchi, and Gohta Goshima. (2012). Reconstitution of dynamic microtubules with Drosophila XMAP215, EB1, and Sentin. '''J Cell Biol''' 199:849-862. [http://dx.doi.org/10.1083/jcb.201206101 doi:10.1083/jcb.201206101] 
-
-Donald Fu (2012). Development of novel approach for in situ generation of oxidative stress using KillerRed in C. elegans.  Master Thesis, Science Department of Physiology, University of Toronto. [http://scholar.google.com/scholar_url?hl=en&q=https://tspace.library.utoronto.ca/bitstream/1807/33423/6/Fu_Donald_WB_201211_MSc_Thesis.pdf&sa=X&scisig=AAGBfm0uXAH6BWFEv4CK7Q912snyrNaXlw&oi=scholaralrt thesis]
-
-Maik Hadorn, Eva Boenzli, Kristian T. Sørensen, Harold Fellermann, Peter Eggenberger Hotz, and Martin M. Hanczyc (2012). Specific and reversible DNA-directed self-assembly of oil-in-water emulsion droplets '''PNAS''' 2012 ; published ahead of print November 21, 2012, [http://dx.doi.org/10.1073/pnas.1214386109 doi:10.1073/pnas.1214386109]
-
-Yang, Y. and Zhang, C.-y. (2012). Simultaneous Measurement of SUMOylation using SNAP/CLIP-Tag-Mediated Translation at the Single-Molecule Level . '''Angew. Chem. Int. Ed.'''. [http://dx.doi.org/10.1002/anie.201206695 doi: 10.1002/anie.201206695]
-
-Gabriela Plucińska, Dominik Paquet, Alexander Hruscha, Leanne Godinho, Christian Haass, Bettina Schmid, and Thomas Misgeld (20120). In Vivo Imaging of Disease-Related Mitochondrial Dynamics in a Vertebrate Model System. '''The Journal of Neuroscience''' 32(46):16203-16212 [http://dx.doi.org/10.1523/JNEUROSCI.1327-12.2012 doi:10.1523/JNEUROSCI.1327-12.2012] 
-
-Pasquale Chieco, Ard Jonker, Bouke A. De Boer, Jan M. Ruijter, and Cornelis J.F. Van Noorden (2012). Image Cytometry Protocols for 2D and 3D Quantification in Microscopic Images. '''Progress in Histochemistry and Cytochemistry'''. [http://dx.doi.org/10.1016/j.proghi.2012.09.001 doi: 10.1016/j.proghi.2012.09.001] 
-
-R. Wollman, and T. Meyer. (2012) Coordinated oscillations in cortical actin and Ca2+ correlate with cycles of vesicle secretion. '''Nature Cell Biology''' [http://dx.doi.org/10.1038/ncb2614 doi:10.1038/ncb2614]
-
-Dong Yan, Yishi Jin (2012). Regulation of DLK-1 Kinase Activity by Calcium-Mediated Dissociation from an Inhibitory Isoform. '''Neuron''' 76(3) 534-548 [http://dx.doi.org/10.1016/j.neuron.2012.08.043 DOI: 10.1016/j.neuron.2012.08.043]
-
-Jean-Christophe Galas ,  Anne-Marie HAGHIRI-GOSNET and Andre Estevez-Torres (2012). A nanoliter-scale open chemical reactor.  '''Lab Chip'''[http://dx.doi.org/10.1039/C2LC40649G DOI: 10.1039/C2LC40649G]
- 
-P. Gayathri, T. Fujii, J. Møller-Jensen, F. van den Ent, K. Namba, J. Löwe (2012). A Bipolar Spindle Of Antiparallel ParM Filaments Drives Bacterial Plasmid Segregation. '''Science''' (Supplementary materials). [http://dx.doi.org/10.1126/science.1229091DOI: 10.1126/science.1229091]
-
-Xiao-Feng Zhang, Callen Hyland, David Van Goor, and Paul Forscher (2012). Calcineurin dependent cofilin activation and increased Retrograde Actin Flow drive 5-HT dependent Neurite outgrowth in Aplysia bag cell neurons. '''MBoC''' [http://dx.doi.org/10.1091/mbc.E12-10-0715 doi: 10.1091/mbc.E12-10-0715 ]
-
-Fallica B, Maffei JS, Villa S, Makin G, Zaman M (2012) Alteration of Cellular Behavior and Response to PI3K Pathway Inhibition by Culture in 3D Collagen Gels. '''PLoS ONE''' 7(10): e48024. [http://dx.doi.org/10.1371/journal.pone.0048024 doi:10.1371/journal.pone.0048024] 
-
-Tulsi Patel1, Baris Tursun, Dylan P. Rahe, and Oliver Hobert (2012). Removal of Polycomb Repressive Complex 2 Makes C. elegans Germ Cells Susceptible to Direct Conversion into Specific Somatic Cell Types. '''Cell Reports''' [http://dx.doi.org/10.1016/j.celrep.2012.09.020 DOI: 10.1016/j.celrep.2012.09.020]
-
-Chen AH, Afonso B, Silver PA, Savage DF (2012) Spatial and Temporal Organization of Chromosome Duplication and Segregation in the Cyanobacterium Synechococcus elongatus PCC 7942. PLoS ONE 7(10): e47837. [http://dx.doi.org/10.1371/journal.pone.0047837 doi:10.1371/journal.pone.0047837] 
-
-Pascal Preira ,  Veronique Grandne ,  Marie Camara ,  Sylvain GABRIELE ,  Jean-Marie Forel and Olivier Theodoly (2012).  Passive circulating cell sorting by deformability using a microfluidic gradual filter. '''Lab on a Chip''' [http://dx.doi.org/10.1039/C2LC40847C DOI: 10.1039/C2LC40847C]
-
-Michael P. Grant, Ann Stepanchick, and Gerda E. Breitwieser (2012). Calcium Signaling Regulates Trafficking of Familial Hypocalciuric Hypercalcemia (FHH) Mutants of the Calcium Sensing Receptor Molecular Endocrinology me.2012-1232; doi:10.1210/me.2012-1232 [http://dx.doi.org/doi:10.1210/me.2012-1232]
-
-Olson, Daniel W. and Dorfman, Kevin D. (2012). Experimental study of the effect of disorder on DNA dynamics in post arrays during electrophoresis. '''Phys. Rev. E''' 86(4) 041909 [http://dx.doi.org/10.1103/PhysRevE.86.041909 DOI:10.1103/PhysRevE.86.041909]
-
-Jeremiah Tattersall, Geeta Vittal Rao, Justin Runac, Ted Hackstadt, Scott S. Grieshaber, and Nicole A. Grieshaber (2012). Translation Inhibition of the Developmental Cycle Protein HctA by the Small RNA IhtA Is Conserved across Chlamydia. '''Plos One''' 7(10): e47439. [http://dx.doi.org/10.1371/journal.pone.0047439 doi:10.1371/journal.pone.0047439]
-
-Robert J. Lee, Guoxiang Xiong, Jennifer M. Kofonow, Bei Chen, Anna Lysenko, Peihua Jiang, Valsamma Abraham, Laurel Doghramji, Nithin D. Adappa, James N. Palmer, David W. Kennedy, Gary K. Beauchamp, Paschalis-Thomas Doulias, Harry Ischiropoulos, James L. Kreindler, Danielle R. Reed, and Noam A. Cohen (2012). T2R38 taste receptor polymorphisms underlie susceptibility to upper respiratory infection.  '''J Clin Invest.''' [http://dx.doi.org/10.1172/JCI64240   DOI:10.1172/JCI64240]
-
-Hyeran Kang, Michael J. Bradley, Brannon R. McCullough, Anaëlle Pierre, Elena E. Grintsevich, Emil Reisler, and Enrique M. De La Cruz (2012). Identification of cation-binding sites on actin that drive polymerization and modulate bending stiffness. '''PNAS''' [http://dx.doi.org/10.1073/pnas.1211078109 DOI:10.1073/pnas.1211078109]
-
-Alan Bush, Ariel Chernomoretz, Richard Yu, Andrew Gordon, and Alejandro Colman-Lerner  (2012). Using Cell-ID 1.4 with R for Microscope-Based Cytometry. '''Curr. Prot. Mol. Biol.''' [http://dx.doi.org/10.1002/0471142727.mb1418s100 DOI:10.1002/0471142727.mb1418s100]
-
-Sung Jae Kim, Sung Hee Ko, Rhokyun Kwak, Jonathan D. Posner, Kwan Hyoung Kang and Jongyoon Han (2012). Multi-Vortical Flow Inducing Electrokinetic
-Instability in Ion Concentration Polarization Layer. '''NanoScale''' [http://dx.doi.org/10.1039/C2NR32467A DOI:10.1039/C2NR32467A]
-
-Douglas B. Murphy, and Michael W. Davidson (2012). Fundamentals of Light Microscopy and Electronic Imaging, Second Edition.  Wiley and Sons, Inc.  [http://onlinelibrary.wiley.com/book/10.1002/9781118382905 website]. 
-
-Anindya Ghosh-Roy, Alexandr Goncharov, Yishi Jin, and Andrew D. Chisholm. (2012). Kinesin-13 and Tubulin Posttranslational Modifications Regulate Microtubule Growth in Axon Regeneration. '''Dev. Cell''' [http://dx.doi.org/10.1016/j.devcel.2012.08.010 DOI:10.1016/j.devcel.2012.08.010]
-
-C.D. Rodríguez Flórez (2012). Occurrence of the Uto-Aztecan premolar trait in a contemporary Colombian Amerindian population. '''Journal of Comparative Human Biology''' [http://dx.doi.org/10.1016/j.jchb.2012.07.001 DOI:10.1016/j.jchb.2012.07.001]
-
-Amy J Lam, François St-Pierre, Yiyang Gong, Jesse D Marshall,	Paula J Cranfill, Michelle A Baird, Michael R McKeown, Jörg Wiedenmann,	 Michael W Davidson, Mark J Schnitzer, Roger Y Tsien & Michael Z Lin (2012). Improving FRET dynamic range with bright green and red fluorescent proteins. '''Nature Methods''' [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2171.html DOI:10.1038/nmeth.2171]
-
-Lauren M. Sassoubre, Kara L. Nelson, and Alexandria B. Boehm (2012). Photoinactivation mechanisms of Enterococcus faecalis in seawater. '''Applied Environmental Microbiology''' EM.02375-12 [http://aem.asm.org/citmgr?gca=aem;AEM.02375-12v1 DOI:10.1128/AEM.02375-12]
-
-Stephanie Woo, Michael P. Housley, Orion D. Weiner, and Didier Y.R. Stainier (2012). Nodal signaling regulates endodermal cell motility and actin dynamics via Rac1 and Prex1. '''J. Cell Biol.''' 198: 941-952. [http://dx.doi.org/10.1083/jcb.201203012  DOI:10.1083/jcb.201203012]
-
-Julia U. Sprenger, Ruwan K. Perera, Konrad R. Götz, Viacheslav O. Nikolaev (2012). FRET Microscopy for Real-time Monitoring of Signaling Events in Live Cells Using Unimolecular Biosensors. ''' J. Vis. Exp.''' (66), e4081, [http://www.jove.com/video/4081/fret-microscopy-for-real-time-monitoring-signaling-events-live-cells DOI: 10.3791/4081] 
-
-Claudio Marcelo Fader, Milton Osmar Aguilera and María Isabel Colombo (2012). ATP is released from autophagic vesicles to the extracellular space in a VAMP7-dependent manner. '''Autophagy''' 8(12) [http://www.landesbioscience.com/journals/autophagy/article/21858/?show_full_text=true& no doi available]
-
-AD Mendelsohn, C Nyitray, M Sena, and TA Desai (2012). Size-controlled Insulin Secreting Cell Clusters. '''Acta Biomaterialia''' [http://dx.doi.org/10.1016/j.actbio.2012.08.010 doi: 10.1016/j.actbio.2012.08.010]
-
-Serge Pelet, Reinhard Dechant, Sung Sik Lee, Frank van Drogen, and Matthias Peter (2012). An integrated image analysis platform to quantify signal transduction in single cells. '''Integr. Biol.''' Accepted Manuscript [http://dx.doi.org/10.1039/C2IB20139A DOI: 10.1039/C2IB20139A]
-
-Enrico Fonda, Katepalli R. Sreenivasan, and Daniel P. Lathrop (2012). Liquid nitrogen in fluid dynamics: Visualization and velocimetry using frozen particles. '''Rev. Sci. Instrum.''' 83, 085101 [http://dx.doi.org/10.1063/1.4739837 doi: 10.1063/1.4739837]
-
-Karen E. Moreira, Sebastian Schuck, Bianca Schrul, Florian Fröhlich, James B. Moseley, Tobias C. Walther, and Peter Walter (2012). Seg1 controls eisosome assembly and shape. '''J. Cell Biol.''' 198:405-420,
-[http://dx.doi.org/10.1083/jcb.201202097 doi: 10.1083/jcb.201202097]
-
-John Oreopoulos (2012). A comparison of sCMOS and EMCCD digital camera technlogies for spinning disk confocal microscopy. (white paper, not-peer reviewed).  [http://www.spectral.ca/_files/file.php?fileid=fileWFBaXTDIaW&filename=file_4_CSU_Camera_Comparison__sCMOSvsEMCCD.pdf pdf]
-
-Sung Hee Ko1, Yong-Ak Song, Sung Jae Kim, Myungji Kim, Jongyoon Han,and Kwan Hyoung Kang (2012). Nanofluidic Preconcentration Device in a Straight Microchannel Using Ion Concentration Polarization. '''Lab on a Chip''' [http://dx.doi.org/10.1039/c2lc21238b DOI: 10.1039/c2lc21238b]
-
-Kelly A. O’Brien, T. Kent Gartner, Nissim Hay, and Xiaoping Du (2012). ADP-Stimulated Activation of Akt During Integrin Outside-In Signaling Promotes Platelet Spreading by Inhibiting Glycogen Synthase Kinase-3β.  '''Arteriosclerosis, Thrombosis, and Vascular Biology'''  [http://dx.doi.org/10.1161/​ATVBAHA.112.254680 DOI: 10.1161/​ATVBAHA.112.254680] 
-
-G. Ullman, M. Wallden, E. G. Marklund, A. Mahmutovic, Ivan Razinkov, and J Elf (2012). Hi-throughput gene expression analysis at the level of single proteins using a microfluidic turbidostat and automated cell tracking. ''' 	arXiv''' [http://arxiv.org/abs/1207.4048v1 arXiv:1207.4048v1]
-
-Yukihiko Hiroshima, Fumio Nakamura, Hiroshi Miyamoto, Ryutaro Mori, Koichi Taniguchi, Ryusei Matsuyama, Hirotoshi Akiyama, Kuniya Tanaka, Yasushi Ichikawa and Shingo Kato, et al. (2012). Collapsin Response Mediator Protein 4 Expression is Associated with Liver Metastasis and Poor Survival in Pancreatic Cancer. '''Annals of Surgical Oncology''' [http://dx.doi.org/10.1245/s10434-012-2491-3  DOI: 10.1245/s10434-012-2491-3]
-
-Kevin W Eliceiri, Michael R Berthold,	Ilya G Goldberg, Luis Ibáñez, B S Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L Plant, Badrinath Roysam, Nico Stuurman, Jason R Swedlow, Pavel Tomancak & Anne E Carpenter (2012). Biological imaging software tools. '''Nature Methods''' [http://www.nature.com/nmeth/journal/v9/n7/abs/nmeth.2084.html DOI: 10.1038/nmeth.2084] 
-
-Johannes Schindelin,	 Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak & Albert Cardona (2012). Fiji: an open-source platform for biological-image analysis. '''Nature Methods''' [http://www.nature.com/nmeth/journal/v9/n7/abs/nmeth.2019.html DOI: 10.1038/nmeth.2019]
-
-Vedakumar Tatavarty, Sulagna Das, and Ji Yu (2012). Polarization of actin cytoskeleton is reduced in dendritic protrusions during early spine development in hippocampal neuron. '''Molecular Biology of the Cell''' [http://www.molbiolcell.org/content/early/2012/06/25/mbc.E12-02-0165.abstract DOI: 10.1091/mbc.E12-02-0165]
-
-Petter Hammar, Prune Leroy, Anel Mahmutovic, Erik G. Marklund, Otto G. Berg, and Johan Elf (2012). The lac Repressor Displays Facilitated Diffusion in Living Cells. '''Science''' [http://www.sciencemag.org/content/336/6088/1595.abstract DOI: 10.1126/science.1221648]
-
-Henrique Borges da Silva, Susana S. Caetano, Isadora Monteiro, Iván Gómez-Conde, Kirsten Hanson, Carlos Penha-Gonçalves, David N. Olivieri, Maria M. Mota, Cláudio R. Marinho, Maria R. D’Imperio Lima, Carlos E. Tadokoro (2012). Early skin immunological disturbance after Plasmodium-infected mosquito bites. '''Cellular Immunology''' [http://www.sciencedirect.com/science/article/pii/S0008874912001153 DOI: 10.1016/j.cellimm.2012.06.003]
-
-Andrea Rossi, Tobias J. Moritz, Julien Ratelade and A. S. Verkman (2012). Super-resolution imaging of aquaporin-4 orthogonal arrays of particles in cell membranes. '''Journal of Cell Science''' [http://jcs.biologists.org/content/early/2012/06/20/jcs.109603.abstract DOI: 10.1242/​jcs.109603]
-
-Qing Yang, Xiao-Feng Zhang, Thomas D. Pollard, and Paul Forscher (2012). Arp2/3 complex–dependent actin networks constrain myosin II function in driving retrograde actin flow. '''Journal of Cell Biology''' [http://jcb.rupress.org/content/early/2012/06/12/jcb.201111052.short DOI: 10.1083/jcb.201111052]
-
-Kaščáková S, Maigre L, Chevalier J, Réfrégiers M, Pagès J-M (2012). Antibiotic Transport in Resistant Bacteria: Synchrotron UV Fluorescence Microscopy to Determine Antibiotic Accumulation with Single Cell Resolution. '''PLoS ONE'''  [http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038624 DOI:10.1371/journal.pone.0038624]
-
-Heather M. Brown, Andrea E. Knowlton, Scott S. Grieshaber (2012). Chlamydial Infection Induces Host Cytokinesis Failure at Abscission. '''Cellular Microbiology''' [http://onlinelibrary.wiley.com/doi/10.1111/j.1462-5822.2012.01820.x/abstract DOI: 10.1111/j.1462-5822.2012.01820.x] 
-
-Yun Li, Brittany D. Roy, Wei Wang, Li Zhang, Lifeng Zhang, Stephen B. Sampson, Yupeng Yang, and Da-Ting Lin (2012). Identification of Two Functionally Distinct Endosomal Recycling Pathways for Dopamine D2 Receptor. '''The Journal of Neuroscience''' [http://www.ncbi.nlm.nih.gov/pubmed/22623662?dopt=Abstract DOI: 10.1523/​JNEUROSCI.0008-12.2012] 
-
-Zenclussen AC, Olivieri DN, Dustin ML, Tadokoro CE (2012). In vivo multiphoton microscopy technique to reveal the physiology of the mouse placenta. '''American  Journal of Reproductive Immunology''' [http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0897.2012.01161.x/full DOI: 10.1111/j.1600-0897.2012.01161.x]
-
-Y. Imai, K. Itsuki, Y. Okamura, R. Inoue, and M. X. Mori (2012). A self-limiting regulation of vasoconstrictor-activated TRPC3/C6/C7 channels coupled to PI(4,5)P2-diacylglycerol signalling. '''The Journal of Physiology''' [http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.2011.221358/full DOI: 10.1113/jphysiol.2011.221358]
-
-Yue Hou, Sarah Hedberg and Ian C Schneider (2012). Differences in adhesion and protrusion properties correlate with differences in migration speed under EGF stimulation. '''BMC Biophysics''' [http://www.biomedcentral.com/2046-1682/5/8/abstract DOI: 10.1186/2046-1682-5-8]
-
-John M. Christie, Kenichi Hitomi, Andrew S. Arvai, Kimberly A. Hartfield, Marcel Mettlen, Ashley J. Pratt, John A. Tainer, and Elizabeth D. Getzoff (2012).
-Structural Tuning of the Fluorescent Protein iLOV for Improved Photostability. 
-'''Journal of Biological Chemistry''' [http://www.jbc.org/content/early/2012/05/09/jbc.M111.318881.short DOI: 10.1074/jbc.M111.318881]
-
-Vicente Sancenon, Sue-Ann Lee, Christina Patrick, Janice Griffith, Amy Paulino, Tiago F. Outeiro, Fulvio Reggiori, Eliezer Masliah, and Paul J. Muchowski (2012). Suppression of α-Synuclein Toxicity and Vesicle Trafficking Defects by Phosphorylation at S129 in Yeast Depends on Genetic Context. 
-'''Human Molecular Genetics'''  [http://hmg.oxfordjournals.org/content/early/2012/02/21/hmg.dds058.short DOI: 10.1093/hmg/dds058]
-
-Rachel Barkan, Adam J. Zahand, Kfir Sharabi, Ayelet T. Lamm, Naomi Feinstein, Erin Haithcock, Katherine L. Wilson, Jun Liu, and Yosef Gruenbaum (2012). 
-A Highlights from MBoC Selection: Ce-emerin and LEM-2: essential roles in Caenorhabditis elegans development, muscle function, and mitosis. 
-'''Molecular Biology of The Cell''' [http://www.molbiolcell.org/citmgr?gca=molbiolcell;23/4/543 DOI: 10.1091/mbc.E11-06-0505]
-
-Muhammad Nafees, Wasim Liaqut, Salamat Ali and Muhammad Ahsan Shafique (2012). Synthesis of ZnO/Al:ZnO nanomaterial: structural and band gap variation in ZnO nanomaterial by Al doping. '''Applied Nanoscience''' [http://dx.doi.org/10.1007/s13204-012-0067-y DOI:10.1007/s13204-012-0067-y]  
-
-Diana Soares da Costa,  Ricardo A. Pires,  Ana M. Frias,  Rui L. Reis and Iva Pashkuleva (2012). Sulfonic groups induce formation of filopodia in mesenchymal stem cells. '''Journal of Materials Chemistry''' [http://pubs.rsc.org/en/Content/ArticleLanding/2012/JM/c2jm15762d DOI: 10.1039/C2JM15762D]
-
-C.-H. Huang, S. Sankaran, D. Racoceanu, S. Hariharan, S. Ahmed (2012). On-line 3-D Tracking of Suspension Living Cells Imaged with Phase-Contrast Microscopy. '''IEEE Transactions on Biomedical Engineering''' 
-[http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6182580&isnumber=4359967 DOI: 10.1109/TBME.2012.2194487]
-
-Yuichi Wakamoto, Alexander Y. Grosberg, Edo Kussell (2012). OPTIMAL LINEAGE PRINCIPLE FOR AGE-STRUCTURED POPULATIONS. '''Evolution''' [http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01418.x/full DOI: 10.1111/j.1558-5646.2011.01418.x]
-
-Sebastian Munck, Katarzyna Miskiewicz, Ragna Sannerud, Silvia A. Menchon, Liya Jose, Rainer Heintzmann, Patrik Verstreken and Wim Annaert (2012). Sub-diffraction imaging on standard microscopes through Photobleaching Microscopy with non-linear Processing. '''Journal of Cell Science''' [http://jcs.biologists.org/content/early/2012/02/21/jcs.098939.short DOI: 10.1242/​jcs.098939]
-
-S. J. Leavesley, N. Annamdevula, J. Boni, S. Stocker, K. Grant, B. Troyanovsky, T. C. Rich, and D. F. Alvarez (2012). Hyperspectral imaging microscopy for identification and quantitative analysis of fluorescently-labeled cells in highly autofluorescent tissue. '''Journal of Biophotonics''' [http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100066/abstract DOI: 10.1002/jbio.201100066]
-
-Soudeh Ehsani, José Carlos Santos, Cristina D. Rodrigues, Ricardo Henriques, Laurent Audry, Christophe Zimmer, Philippe Sansonetti, Guy Tran Van Nhieu and Jost Enninga (2012). Hierarchies of host factor dynamics at the entry site of Shigella flexneri during host cell invasion. '''Infection and Immunity'''  [http://iai.asm.org/content/early/2012/04/17/IAI.06391-11.short DOI: 10.1128/IAI.06391-11] 
-
-Saumya Saurabh, Suvrajit Maji, and Marcel P. Bruchez (2012). "Evaluation of sCMOS cameras for detection and localization of single Cy5 molecules," '''Optics Express''' [http://www.opticsinfobase.org/oe/abstract.cfm?URI=oe-20-7-7338 DOI: 10.1364/OE.20.007338]
-
-Benjamin E. Bammes, Ryan H. Rochat, Joanita Jakana, Dong-Hua Chen, Wah Chiu (2012). Direct electron detection yields cryo-EM reconstructions at resolutions beyond 3/4 Nyquist frequency. '''Journal of Structural Biology''' [http://www.sciencedirect.com/science/article/pii/S1047847712000287 DOI: 10.1016/j.jsb.2012.01.008]
-
-Tuson, H. H., Auer, G. K., Renner, L. D., Hasebe, M., Tropini, C., Salick, M., Crone, W. C., Gopinathan, A., Huang, K. C. and Weibel, D. B. (2012). Measuring the stiffness of bacterial cells from growth rates in hydrogels of tunable elasticity. '''Molecular Microbiology''' [http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2012.08063.x/full DOI: 10.1111/j.1365-2958.2012.08063.x]
-
-Jonas Ries, Charlotte Kaplan, Evgenia Platonova, Hadi Eghlidi & Helge Ewers (2012). A simple, versatile method for GFP-based super-resolution microscopy via nanobodies. '''Nature Methods''' [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1991.html DOI: 10.1038/nmeth.1991] 
-
-Subramanian Krishnan, G. Esteban Fernandez, David B. Sacks, Nemani V. Prasadarao (2012). IQGAP1 mediates the disruption of adherens junctions to promote Escherichia coli K1 invasion of brain endothelial cells. '''Cellular Microbiology''' [http://onlinelibrary.wiley.com/doi/10.1111/j.1462-5822.2012.01805.x/abstract DOI: 10.1111/j.1462-5822.2012.01805.x] 
-
-R F Hennigan, C A Moon, L M Parysek, K R Monk, G Morfini, S Berth, S Brady and N Ratner (2012). The NF2 tumor suppressor regulates microtubule-based vesicle trafficking via a novel Rac, MLK and p38SAPK pathway. '''Oncogene''' [http://www.nature.com/onc/journal/vaop/ncurrent/suppinfo/onc2012135s1.html DOI: 10.1038/onc.2012.135]
-
-Dirk Landgraf, Burak Okumus, Peter Chien, Tania A Baker	and Johan Paulsson (2012). Segregation of molecules at cell division reveals native protein localization. '''Nature Methods''' [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1955.html DOI:10.1038/nmeth.1955]
-
-Moritz Lang, Fabian Rudolf, Jörg Stelling (2012). Use of YouScope to Implement Systematic Microscopy Protocols. '''Current Protocols in Molecular Biology''' [http://onlinelibrary.wiley.com/doi/10.1002/0471142727.mb1421s98/abstract DOI: 10.1002/0471142727.mb1421s98] 
-
-Erich E. Hoover1, Jeffrey J. Field, David G. Winters, Michael D. Young, Eric V. Chandler, John C. Speirs, Jacob T. Lapenna, Susy M. Kim, Shi-you Ding, Randy A. Bartels, Jing W. Wang, and Jeff A. Squier1 (2012). Eliminating the scattering ambiguity in multifocal, multimodal, multiphoton imaging systems. '''Journal of Biophotonics''' [http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100139/abstract DOI: 10.1002/jbio.201100139]
-
-Travis J. Crites, Lirong Chen, and Rajat Varma (2012). A TIRF Microscopy Technique for Real-time, Simultaneous Imaging of the TCR and its Associated Signaling Proteins. '''Journal of Visualized Experiments''' [http://www.jove.com/video/3892/a-tirf-microscopy-technique-for-real-time-simultaneous-imaging-of-the-tcr-and-its-associated-signaling-proteins DOI: 10.3791/3892]
-
-Wei Li, Wei Zou, Yihong Yang, Yongping Chai, Baohui Chen, Shiya Cheng, Dong Tian, Xiaochen Wang, Ronald D. Vale, and Guangshuo Ou (2012). Autophagy genes function sequentially to promote apoptotic cell corpse degradation in the engulfing cell. '''Journal of Cell Biology''' [http://jcb.rupress.org/content/early/2012/03/21/jcb.201111053.short DOI: 10.1083/jcb.201111053]
-
-Z. Schilling, E. Frank, V. Magidson, J. Wason, J. Loncarek, K. Boyer, J. Wen,  and A. Khodjakov (2012). Predictive-focus illumination for reducing photodamage in live-cell microscopy. '''Journal of Microscopy''' 
-[http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2012.03605.x/full DOI: 10.1111/j.1365-2818.2012.03605.x]
-
-Saumya Saurabh, Suvrajit Maji, and Marcel P. Bruchez (2012). Evaluation of sCMOS cameras for detection and localization of single Cy5 molecules. '''Optics Express''' [http://www.opticsinfobase.org/oe/abstract.cfm?URI=oe-20-7-7338 DOI: 10.1364/OE.20.007338] 
-
-Junyu Mai, Greg J. Sommer, and Anson V. Hatch (2012). Microfluidic Digital Isoelectric Fractionation for Rapid Multi-Dimensional Glycoprotein Analysis. '''Analytical Chemistry''' [http://pubs.acs.org/doi/abs/10.1021/ac203076p DOI: 10.1021/ac203076p] 
-
-Petar Marinković, Miriam S. Reuter, Monika S. Brill, Leanne Godinho, Martin Kerschensteiner, and Thomas Misgeld (2012). Axonal transport deficits and degeneration can evolve independently in mouse models of amyotrophic lateral sclerosis. '''PNAS''' [http://www.pnas.org/content/early/2012/02/22/1200658109.short DOI: 10.1073/pnas.1200658109]
-
-Stefanie Kaech, Chun-Fang Huang, and Gary Banker (2012). General Considerations for Live Imaging of Developing Hippocampal Neurons in Culture. '''Cold Spring Harb Protocols''' [http://cshprotocols.cshlp.org/content/2012/3/pdb.ip068221.full#cited-by DOI: 10.1101/pdb.ip068221]
-
-Andrew J. Ewald, Robert J. Huebner, Hildur Palsdottir, Jessie K. Lee, Melissa J. Perez, Danielle M. Jorgens, Andrew N. Tauscher, Kevin J. Cheung, Zena Werb, and Manfred Auer (2012). Mammary collective cell migration involves transient loss of epithelial features and individual cell migration within the epithelium. '''Journal of Cell Sci''' jcs.096875 [http://jcs.biologists.org/content/early/2012/02/15/jcs.096875.abstract DOI: 10.1242/jcs.096875]
-
-Vedakumar Tatavarty, Marius F. Ifrim, Mikhail Levin, George Korza, Elisa Barbarese, Ji Yu, and John H. Carson (2012). Single molecule imaging of translational output from individual RNA granules in neurons. '''Mol. Biol. Cell''' mbc.E11-07-0622 [http://www.molbiolcell.org/content/early/2012/01/03/mbc.E11-07-0622.abstract DOI: 10.1091/mbc.E11-07-0622]
-
-Joshua M. Katzenstein, Dustin W. Janes, Haley E. Hocker, Justin K. Chandler, and Christopher J. Ellison (2012). Nanoconfined Self-Diffusion of Poly(isobutyl methacrylate) in Films with a Thickness-Independent Glass Transition. '''Macromolecules''' 45 (3), 1544-1552 [http://pubs.acs.org/doi/full/10.1021/ma202362j DOI: 10.1021/ma202362j]
-
-Deanna M. Navaroli, Karl D. Bellvé, Clive Standley, Lawrence M. Lifshitz, James Cardia, David Lambright, Deborah Leonard, Kevin E. Fogarty, and Silvia Corvera (2012). Rabenosyn-5 defines the fate of the transferrin receptor following clathrin-mediated endocytosis. '''PNAS''' [http://www.pnas.org/content/early/2012/01/25/1115495109.short DOI:10.1073/pnas.1115495109]
-
-Remi Renaud, Claire Martin, Hirac Gurden, and Frederic Pain (2012). Multispectral reflectance imaging of brain activation in rodents: methodological study of the differential path length estimations and first in vivo recordings in the rat olfactory bulb. '''Journal of Biomedical Optics''' 17, 016012 [http://spiedigitallibrary.org/jbo/resource/1/jbopfo/v17/i1/p016012_s1 DOI: 10.1117/1.JBO.17.1.016012] 
-
-André Lampe, Volker Haucke, Stephan J. Sigrist, Mike Heilemann, Jan Schmoranzer (2012). Multi-colour direct STORM with red emitting carbocyanines. '''Biology of the Cell''' [http://dx.doi.org/10.1111/boc.201100011 DOI: 10.1111/boc.201100011]  
-
-J. Bradley Zuchero, Brittany Belin, and R. Dyche Mullins (2012). Actin Binding to WH2 Domains Regulates Nuclear Import of the Multifunctional Actin Regulator JMY. '''Molecular Biology of The Cell''' [http://www.molbiolcell.org/content/early/2012/01/17/mbc.E11-12-0992.abstract DOI: mbc.E11-12-0992]
-
-Jean-Cheng Kuo, Xuemei Han, John R. Yates and Clare M. Waterman (2012). Isolation of Focal Adhesion Proteins for Biochemical and Proteomic Analysis. '''Methods in Molecular Biology:''' Integrin and Cell Adhesion Molecules, Volume 757, Part 4, 297-323 [http://www.springerlink.com/content/npgx876xt16031x5/#section=956510&page=1 DOI: 10.1007/978-1-61779-166-6_19]
-
-Vladimir Lizunov, Karin Stenkula, Ivonne Lisinski, Oksana Gavrilova, Dena R. Yver, Alexandra Chadt, H Al-Hasani, Joshua Zimmerberg, and Samuel W. Cushman (2012). Insulin stimulates fusion, but not tethering, of GLUT4 vesicles in skeletal muscle of transgenic mouse. '''American Journal of Physiology''' [http://ajpendo.physiology.org/content/early/2012/01/25/ajpendo.00466.2011.abstract DOI: 10.1152/ajpendo.00466.2011]
-
-Subhasri Ghosh, Suvrajit Saha, Debanjan Goswami, Sameera Bilgrami, Satyajit Mayor, Chapter sixteen - Dynamic Imaging of Homo-FRET in Live Cells by Fluorescence Anisotropy Microscopy, In: P.Michael Conn, Editor(s), '''Methods in Enzymology''', Academic Press, 2012, Volume 505, Pages 291-327, ISSN 0076-6879. [http://www.sciencedirect.com/science/article/pii/B9780123884480000243 DOI: 10.1016/B978-0-12-388448-0.00024-3]
+## 2012
+
+Uhlendorf, J., A. Miermont, T. Delaveau, G. Charvin, F. Fages, S.
+Bottani, G. Batt, and P. Hersen. 2012. Long-term model predictive
+control of gene expression at the population and single-cell levels.
+**Proc. Natl. Acad. Sci. U.S.A**. 109:14271–14276.
+[<doi:10.1073/pnas.1206810109>](http://dx.doi.org/10.1073/pnas.1206810109)
+
+Gayathri, P., T. Fujii, J. Møller-Jensen, F. van den Ent, K. Namba, and
+J. Löwe. 2012. A bipolar spindle of antiparallel ParM filaments drives
+bacterial plasmid segregation. **Science.** 338:1334–1337.
+[<doi:10.1126/science.1229091>](http://dx.doi.org/10.1126/science.1229091)
+
+Evgenia Leikina, Kamran Melikov, Sarmistha Sanyal, Santosh K. Verma,
+Bokkee Eun, Claudia Gebert, Karl Pfeifer, Vladimir A. Lizunov, Michael
+M. Kozlov, and Leonid V. Chernomordik (2012). Extracellular annexins and
+dynamin are important for sequential steps in myoblast fusion. **J Cell
+Biol** 200:109-123.
+[<doi:10.1083/jcb.201207012>](http://dx.doi.org/10.1083/jcb.201207012)
+
+Sascha Just, Susann Illing, Michelle Trester-Zedlitz, Elaine K Lau,
+Sarah J Kototowski, Elke Miess, Anika Mann, Christian Doll, Jonathan C
+Trinidad, Alma L Burlingame, Mark von Zastrow, and Stefan Schulz (2012).
+Differentiation of Opioid Drug Effects by Hierarchical Multi-site
+Phosphorylation **Mol Pharmacol** mol.112.082875; published ahead of
+print December 13, 2012,
+[<doi:10.1124/mol.112.082875>](http://dx.doi.org/10.1124/mol.112.082875)
+
+Gabriela N. Bosio, Thomas Breitenbach, Julieta Parisi, Miguel Reigosa,
+Frances H. Blaikie, Brian W. Pedersen, Elsa F. F. Silva, Daniel O.
+Mártire, and Peter R. Ogilby (2012). Antioxidant β-Carotene Does Not
+Quench Singlet Oxygen in Mammalian Cells. **Journal of the American
+Chemical Society**
+[doi: 10.1021/ja308930a](http://dx.doi.org/10.1021/ja308930a)
+
+Ruben Mercadé-Prieto, Xuemiao Pan, Angel Fernández-González, Zhibing
+Zhang, and Serafim Bakalis (2012). Quantification of Microcapsules
+Deposited in Cotton Fabrics before and after Abrasion Using Fluorescence
+Microscopy. **Industrial & Engineering Chemistry Research**
+51:16741-16749
+[doi: 10.1021/ie3023912](http://dx.doi.org/10.1021/ie3023912)
+
+I Straub, F Mohr, J Stab, M Konrad, SE Philipp, J Oberwinkler, and M
+Schaefer (2012). Citrus fruit and fabacea secondary metabolites potently
+and selectively block TRPM3. **British J. of Pharm.**
+[doi: 10.1111/bph.12076](http://dx.doi.org/10.1111/bph.12076)
+
+Luisa Cochella, and Oliver Hobert (2012). Embryonic Priming of a miRNA
+Locus Predetermines Postmitotic Neuronal Left/Right Asymmetry in C.
+elegans. **Cell** 151:1229-1242
+[<doi:10.1016/j.cell.2012.10.049>](http://dx.doi.org/10.1016/j.cell.2012.10.049)
+
+Wenjing Li, Takashi Moriwaki, Tomomi Tani, Takashi Watanabe, Kozo
+Kaibuchi, and Gohta Goshima. (2012). Reconstitution of dynamic
+microtubules with Drosophila XMAP215, EB1, and Sentin. **J Cell Biol**
+199:849-862.
+[<doi:10.1083/jcb.201206101>](http://dx.doi.org/10.1083/jcb.201206101)
+
+Donald Fu (2012). Development of novel approach for in situ generation
+of oxidative stress using KillerRed in C. elegans. Master Thesis,
+Science Department of Physiology, University of Toronto.
+[thesis](http://scholar.google.com/scholar_url?hl=en&q=https://tspace.library.utoronto.ca/bitstream/1807/33423/6/media/Fu_Donald_WB_201211_MSc_Thesis.pdf&sa=X&scisig=AAGBfm0uXAH6BWFEv4CK7Q912snyrNaXlw&oi=scholaralrt)
+
+Maik Hadorn, Eva Boenzli, Kristian T. Sørensen, Harold Fellermann, Peter
+Eggenberger Hotz, and Martin M. Hanczyc (2012). Specific and reversible
+DNA-directed self-assembly of oil-in-water emulsion droplets **PNAS**
+2012 ; published ahead of print November 21, 2012,
+[<doi:10.1073/pnas.1214386109>](http://dx.doi.org/10.1073/pnas.1214386109)
+
+Yang, Y. and Zhang, C.-y. (2012). Simultaneous Measurement of
+SUMOylation using SNAP/CLIP-Tag-Mediated Translation at the
+Single-Molecule Level . **Angew. Chem. Int. Ed.**.
+[doi: 10.1002/anie.201206695](http://dx.doi.org/10.1002/anie.201206695)
+
+Gabriela Plucińska, Dominik Paquet, Alexander Hruscha, Leanne Godinho,
+Christian Haass, Bettina Schmid, and Thomas Misgeld (20120). In Vivo
+Imaging of Disease-Related Mitochondrial Dynamics in a Vertebrate Model
+System. **The Journal of Neuroscience** 32(46):16203-16212
+[<doi:10.1523/JNEUROSCI.1327-12.2012>](http://dx.doi.org/10.1523/JNEUROSCI.1327-12.2012)
+
+Pasquale Chieco, Ard Jonker, Bouke A. De Boer, Jan M. Ruijter, and
+Cornelis J.F. Van Noorden (2012). Image Cytometry Protocols for 2D and
+3D Quantification in Microscopic Images. **Progress in Histochemistry
+and Cytochemistry**.
+[doi: 10.1016/j.proghi.2012.09.001](http://dx.doi.org/10.1016/j.proghi.2012.09.001)
+
+R. Wollman, and T. Meyer. (2012) Coordinated oscillations in cortical
+actin and Ca2+ correlate with cycles of vesicle secretion. **Nature Cell
+Biology** [<doi:10.1038/ncb2614>](http://dx.doi.org/10.1038/ncb2614)
+
+Dong Yan, Yishi Jin (2012). Regulation of DLK-1 Kinase Activity by
+Calcium-Mediated Dissociation from an Inhibitory Isoform. **Neuron**
+76(3) 534-548
+[DOI: 10.1016/j.neuron.2012.08.043](http://dx.doi.org/10.1016/j.neuron.2012.08.043)
+
+Jean-Christophe Galas , Anne-Marie HAGHIRI-GOSNET and Andre
+Estevez-Torres (2012). A nanoliter-scale open chemical reactor. **Lab
+Chip**[DOI: 10.1039/C2LC40649G](http://dx.doi.org/10.1039/C2LC40649G)
+
+P. Gayathri, T. Fujii, J. Møller-Jensen, F. van den Ent, K. Namba, J.
+Löwe (2012). A Bipolar Spindle Of Antiparallel ParM Filaments Drives
+Bacterial Plasmid Segregation. **Science** (Supplementary materials).
+\[<http://dx.doi.org/10.1126/science.1229091DOI>:
+10.1126/science.1229091\]
+
+Xiao-Feng Zhang, Callen Hyland, David Van Goor, and Paul Forscher
+(2012). Calcineurin dependent cofilin activation and increased
+Retrograde Actin Flow drive 5-HT dependent Neurite outgrowth in Aplysia
+bag cell neurons. **MBoC**
+[doi: 10.1091/mbc.E12-10-0715](http://dx.doi.org/10.1091/mbc.E12-10-0715)
+
+Fallica B, Maffei JS, Villa S, Makin G, Zaman M (2012) Alteration of
+Cellular Behavior and Response to PI3K Pathway Inhibition by Culture in
+3D Collagen Gels. **PLoS ONE** 7(10): e48024.
+[<doi:10.1371/journal.pone.0048024>](http://dx.doi.org/10.1371/journal.pone.0048024)
+
+Tulsi Patel1, Baris Tursun, Dylan P. Rahe, and Oliver Hobert (2012).
+Removal of Polycomb Repressive Complex 2 Makes C. elegans Germ Cells
+Susceptible to Direct Conversion into Specific Somatic Cell Types.
+**Cell Reports**
+[DOI: 10.1016/j.celrep.2012.09.020](http://dx.doi.org/10.1016/j.celrep.2012.09.020)
+
+Chen AH, Afonso B, Silver PA, Savage DF (2012) Spatial and Temporal
+Organization of Chromosome Duplication and Segregation in the
+Cyanobacterium Synechococcus elongatus PCC 7942. PLoS ONE 7(10): e47837.
+[<doi:10.1371/journal.pone.0047837>](http://dx.doi.org/10.1371/journal.pone.0047837)
+
+Pascal Preira , Veronique Grandne , Marie Camara , Sylvain GABRIELE ,
+Jean-Marie Forel and Olivier Theodoly (2012). Passive circulating cell
+sorting by deformability using a microfluidic gradual filter. **Lab on a
+Chip** [DOI: 10.1039/C2LC40847C](http://dx.doi.org/10.1039/C2LC40847C)
+
+Michael P. Grant, Ann Stepanchick, and Gerda E. Breitwieser (2012).
+Calcium Signaling Regulates Trafficking of Familial Hypocalciuric
+Hypercalcemia (FHH) Mutants of the Calcium Sensing Receptor Molecular
+Endocrinology me.2012-1232; <doi:10.1210/me.2012-1232>
+[6](http://dx.doi.org/doi:10.1210/me.2012-1232)
+
+Olson, Daniel W. and Dorfman, Kevin D. (2012). Experimental study of the
+effect of disorder on DNA dynamics in post arrays during
+electrophoresis. **Phys. Rev. E** 86(4) 041909
+[<DOI:10.1103/PhysRevE.86.041909>](http://dx.doi.org/10.1103/PhysRevE.86.041909)
+
+Jeremiah Tattersall, Geeta Vittal Rao, Justin Runac, Ted Hackstadt,
+Scott S. Grieshaber, and Nicole A. Grieshaber (2012). Translation
+Inhibition of the Developmental Cycle Protein HctA by the Small RNA IhtA
+Is Conserved across Chlamydia. **Plos One** 7(10): e47439.
+[<doi:10.1371/journal.pone.0047439>](http://dx.doi.org/10.1371/journal.pone.0047439)
+
+Robert J. Lee, Guoxiang Xiong, Jennifer M. Kofonow, Bei Chen, Anna
+Lysenko, Peihua Jiang, Valsamma Abraham, Laurel Doghramji, Nithin D.
+Adappa, James N. Palmer, David W. Kennedy, Gary K. Beauchamp,
+Paschalis-Thomas Doulias, Harry Ischiropoulos, James L. Kreindler,
+Danielle R. Reed, and Noam A. Cohen (2012). T2R38 taste receptor
+polymorphisms underlie susceptibility to upper respiratory infection.
+**J Clin Invest.**
+[<DOI:10.1172/JCI64240>](http://dx.doi.org/10.1172/JCI64240)
+
+Hyeran Kang, Michael J. Bradley, Brannon R. McCullough, Anaëlle Pierre,
+Elena E. Grintsevich, Emil Reisler, and Enrique M. De La Cruz (2012).
+Identification of cation-binding sites on actin that drive
+polymerization and modulate bending stiffness. **PNAS**
+[<DOI:10.1073/pnas.1211078109>](http://dx.doi.org/10.1073/pnas.1211078109)
+
+Alan Bush, Ariel Chernomoretz, Richard Yu, Andrew Gordon, and Alejandro
+Colman-Lerner (2012). Using Cell-ID 1.4 with R for Microscope-Based
+Cytometry. **Curr. Prot. Mol. Biol.**
+[<DOI:10.1002/0471142727.mb1418s100>](http://dx.doi.org/10.1002/0471142727.mb1418s100)
+
+Sung Jae Kim, Sung Hee Ko, Rhokyun Kwak, Jonathan D. Posner, Kwan Hyoung
+Kang and Jongyoon Han (2012). Multi-Vortical Flow Inducing
+Electrokinetic Instability in Ion Concentration Polarization Layer.
+**NanoScale**
+[<DOI:10.1039/C2NR32467A>](http://dx.doi.org/10.1039/C2NR32467A)
+
+Douglas B. Murphy, and Michael W. Davidson (2012). Fundamentals of Light
+Microscopy and Electronic Imaging, Second Edition. Wiley and Sons, Inc.
+[website](http://onlinelibrary.wiley.com/book/10.1002/9781118382905).
+
+Anindya Ghosh-Roy, Alexandr Goncharov, Yishi Jin, and Andrew D.
+Chisholm. (2012). Kinesin-13 and Tubulin Posttranslational Modifications
+Regulate Microtubule Growth in Axon Regeneration. **Dev. Cell**
+[<DOI:10.1016/j.devcel.2012.08.010>](http://dx.doi.org/10.1016/j.devcel.2012.08.010)
+
+C.D. Rodríguez Flórez (2012). Occurrence of the Uto-Aztecan premolar
+trait in a contemporary Colombian Amerindian population. **Journal of
+Comparative Human Biology**
+[<DOI:10.1016/j.jchb.2012.07.001>](http://dx.doi.org/10.1016/j.jchb.2012.07.001)
+
+Amy J Lam, François St-Pierre, Yiyang Gong, Jesse D Marshall, Paula J
+Cranfill, Michelle A Baird, Michael R McKeown, Jörg Wiedenmann, Michael
+W Davidson, Mark J Schnitzer, Roger Y Tsien & Michael Z Lin (2012).
+Improving FRET dynamic range with bright green and red fluorescent
+proteins. **Nature Methods**
+[<DOI:10.1038/nmeth.2171>](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2171.html)
+
+Lauren M. Sassoubre, Kara L. Nelson, and Alexandria B. Boehm (2012).
+Photoinactivation mechanisms of Enterococcus faecalis in seawater.
+**Applied Environmental Microbiology** EM.02375-12
+[<DOI:10.1128/AEM.02375-12>](http://aem.asm.org/citmgr?gca=aem;AEM.02375-12v1)
+
+Stephanie Woo, Michael P. Housley, Orion D. Weiner, and Didier Y.R.
+Stainier (2012). Nodal signaling regulates endodermal cell motility and
+actin dynamics via Rac1 and Prex1. **J. Cell Biol.** 198: 941-952.
+[<DOI:10.1083/jcb.201203012>](http://dx.doi.org/10.1083/jcb.201203012)
+
+Julia U. Sprenger, Ruwan K. Perera, Konrad R. Götz, Viacheslav O.
+Nikolaev (2012). FRET Microscopy for Real-time Monitoring of Signaling
+Events in Live Cells Using Unimolecular Biosensors. *' J. Vis. Exp.*'
+(66), e4081,
+[DOI: 10.3791/4081](http://www.jove.com/video/4081/fret-microscopy-for-real-time-monitoring-signaling-events-live-cells)
+
+Claudio Marcelo Fader, Milton Osmar Aguilera and María Isabel Colombo
+(2012). ATP is released from autophagic vesicles to the extracellular
+space in a VAMP7-dependent manner. **Autophagy** 8(12) [no doi
+available](http://www.landesbioscience.com/journals/autophagy/article/21858/?show_full_text=true&)
+
+AD Mendelsohn, C Nyitray, M Sena, and TA Desai (2012). Size-controlled
+Insulin Secreting Cell Clusters. **Acta Biomaterialia**
+[doi: 10.1016/j.actbio.2012.08.010](http://dx.doi.org/10.1016/j.actbio.2012.08.010)
+
+Serge Pelet, Reinhard Dechant, Sung Sik Lee, Frank van Drogen, and
+Matthias Peter (2012). An integrated image analysis platform to quantify
+signal transduction in single cells. **Integr. Biol.** Accepted
+Manuscript
+[DOI: 10.1039/C2IB20139A](http://dx.doi.org/10.1039/C2IB20139A)
+
+Enrico Fonda, Katepalli R. Sreenivasan, and Daniel P. Lathrop (2012).
+Liquid nitrogen in fluid dynamics: Visualization and velocimetry using
+frozen particles. **Rev. Sci. Instrum.** 83, 085101
+[doi: 10.1063/1.4739837](http://dx.doi.org/10.1063/1.4739837)
+
+Karen E. Moreira, Sebastian Schuck, Bianca Schrul, Florian Fröhlich,
+James B. Moseley, Tobias C. Walther, and Peter Walter (2012). Seg1
+controls eisosome assembly and shape. **J. Cell Biol.** 198:405-420,
+[doi: 10.1083/jcb.201202097](http://dx.doi.org/10.1083/jcb.201202097)
+
+John Oreopoulos (2012). A comparison of sCMOS and EMCCD digital camera
+technlogies for spinning disk confocal microscopy. (white paper,
+not-peer reviewed).
+[pdf](http://www.spectral.ca/_files/file.php?fileid=fileWFBaXTDIaW&filename=media/File_4_CSU_Camera_Comparison__sCMOSvsEMCCD.pdf)
+
+Sung Hee Ko1, Yong-Ak Song, Sung Jae Kim, Myungji Kim, Jongyoon Han,and
+Kwan Hyoung Kang (2012). Nanofluidic Preconcentration Device in a
+Straight Microchannel Using Ion Concentration Polarization. **Lab on a
+Chip** [DOI: 10.1039/c2lc21238b](http://dx.doi.org/10.1039/c2lc21238b)
+
+Kelly A. O’Brien, T. Kent Gartner, Nissim Hay, and Xiaoping Du (2012).
+ADP-Stimulated Activation of Akt During Integrin Outside-In Signaling
+Promotes Platelet Spreading by Inhibiting Glycogen Synthase Kinase-3β.
+**Arteriosclerosis, Thrombosis, and Vascular Biology**
+[DOI: 10.1161/​ATVBAHA.112.254680](http://dx.doi.org/10.1161/​ATVBAHA.112.254680)
+
+G. Ullman, M. Wallden, E. G. Marklund, A. Mahmutovic, Ivan Razinkov, and
+J Elf (2012). Hi-throughput gene expression analysis at the level of
+single proteins using a microfluidic turbidostat and automated cell
+tracking. *' arXiv*'
+[arXiv:1207.4048v1](http://arxiv.org/abs/1207.4048v1)
+
+Yukihiko Hiroshima, Fumio Nakamura, Hiroshi Miyamoto, Ryutaro Mori,
+Koichi Taniguchi, Ryusei Matsuyama, Hirotoshi Akiyama, Kuniya Tanaka,
+Yasushi Ichikawa and Shingo Kato, et al. (2012). Collapsin Response
+Mediator Protein 4 Expression is Associated with Liver Metastasis and
+Poor Survival in Pancreatic Cancer. **Annals of Surgical Oncology**
+[DOI: 10.1245/s10434-012-2491-3](http://dx.doi.org/10.1245/s10434-012-2491-3)
+
+Kevin W Eliceiri, Michael R Berthold, Ilya G Goldberg, Luis Ibáñez, B S
+Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L
+Plant, Badrinath Roysam, Nico Stuurman, Jason R Swedlow, Pavel Tomancak
+& Anne E Carpenter (2012). Biological imaging software tools. **Nature
+Methods**
+[DOI: 10.1038/nmeth.2084](http://www.nature.com/nmeth/journal/v9/n7/abs/nmeth.2084.html)
+
+Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena
+Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden,
+Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James
+White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak & Albert
+Cardona (2012). Fiji: an open-source platform for biological-image
+analysis. **Nature Methods**
+[DOI: 10.1038/nmeth.2019](http://www.nature.com/nmeth/journal/v9/n7/abs/nmeth.2019.html)
+
+Vedakumar Tatavarty, Sulagna Das, and Ji Yu (2012). Polarization of
+actin cytoskeleton is reduced in dendritic protrusions during early
+spine development in hippocampal neuron. **Molecular Biology of the
+Cell**
+[DOI: 10.1091/mbc.E12-02-0165](http://www.molbiolcell.org/content/early/2012/06/25/mbc.E12-02-0165.abstract)
+
+Petter Hammar, Prune Leroy, Anel Mahmutovic, Erik G. Marklund, Otto G.
+Berg, and Johan Elf (2012). The lac Repressor Displays Facilitated
+Diffusion in Living Cells. **Science**
+[DOI: 10.1126/science.1221648](http://www.sciencemag.org/content/336/6088/1595.abstract)
+
+Henrique Borges da Silva, Susana S. Caetano, Isadora Monteiro, Iván
+Gómez-Conde, Kirsten Hanson, Carlos Penha-Gonçalves, David N. Olivieri,
+Maria M. Mota, Cláudio R. Marinho, Maria R. D’Imperio Lima, Carlos E.
+Tadokoro (2012). Early skin immunological disturbance after
+Plasmodium-infected mosquito bites. **Cellular Immunology**
+[DOI: 10.1016/j.cellimm.2012.06.003](http://www.sciencedirect.com/science/article/pii/S0008874912001153)
+
+Andrea Rossi, Tobias J. Moritz, Julien Ratelade and A. S. Verkman
+(2012). Super-resolution imaging of aquaporin-4 orthogonal arrays of
+particles in cell membranes. **Journal of Cell Science**
+[DOI: 10.1242/​jcs.109603](http://jcs.biologists.org/content/early/2012/06/20/jcs.109603.abstract)
+
+Qing Yang, Xiao-Feng Zhang, Thomas D. Pollard, and Paul Forscher (2012).
+Arp2/3 complex–dependent actin networks constrain myosin II function in
+driving retrograde actin flow. **Journal of Cell Biology**
+[DOI: 10.1083/jcb.201111052](http://jcb.rupress.org/content/early/2012/06/12/jcb.201111052.short)
+
+Kaščáková S, Maigre L, Chevalier J, Réfrégiers M, Pagès J-M (2012).
+Antibiotic Transport in Resistant Bacteria: Synchrotron UV Fluorescence
+Microscopy to Determine Antibiotic Accumulation with Single Cell
+Resolution. **PLoS ONE**
+[<DOI:10.1371/journal.pone.0038624>](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038624)
+
+Heather M. Brown, Andrea E. Knowlton, Scott S. Grieshaber (2012).
+Chlamydial Infection Induces Host Cytokinesis Failure at Abscission.
+**Cellular Microbiology**
+[DOI: 10.1111/j.1462-5822.2012.01820.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1462-5822.2012.01820.x/abstract)
+
+Yun Li, Brittany D. Roy, Wei Wang, Li Zhang, Lifeng Zhang, Stephen B.
+Sampson, Yupeng Yang, and Da-Ting Lin (2012). Identification of Two
+Functionally Distinct Endosomal Recycling Pathways for Dopamine D2
+Receptor. **The Journal of Neuroscience**
+[DOI: 10.1523/​JNEUROSCI.0008-12.2012](http://www.ncbi.nlm.nih.gov/pubmed/22623662?dopt=Abstract)
+
+Zenclussen AC, Olivieri DN, Dustin ML, Tadokoro CE (2012). In vivo
+multiphoton microscopy technique to reveal the physiology of the mouse
+placenta. **American Journal of Reproductive Immunology**
+[DOI: 10.1111/j.1600-0897.2012.01161.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0897.2012.01161.x/full)
+
+Y. Imai, K. Itsuki, Y. Okamura, R. Inoue, and M. X. Mori (2012). A
+self-limiting regulation of vasoconstrictor-activated TRPC3/C6/C7
+channels coupled to PI(4,5)P2-diacylglycerol signalling. **The Journal
+of Physiology**
+[DOI: 10.1113/jphysiol.2011.221358](http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.2011.221358/full)
+
+Yue Hou, Sarah Hedberg and Ian C Schneider (2012). Differences in
+adhesion and protrusion properties correlate with differences in
+migration speed under EGF stimulation. **BMC Biophysics**
+[DOI: 10.1186/2046-1682-5-8](http://www.biomedcentral.com/2046-1682/5/8/abstract)
+
+John M. Christie, Kenichi Hitomi, Andrew S. Arvai, Kimberly A.
+Hartfield, Marcel Mettlen, Ashley J. Pratt, John A. Tainer, and
+Elizabeth D. Getzoff (2012). Structural Tuning of the Fluorescent
+Protein iLOV for Improved Photostability. **Journal of Biological
+Chemistry**
+[DOI: 10.1074/jbc.M111.318881](http://www.jbc.org/content/early/2012/05/09/jbc.M111.318881.short)
+
+Vicente Sancenon, Sue-Ann Lee, Christina Patrick, Janice Griffith, Amy
+Paulino, Tiago F. Outeiro, Fulvio Reggiori, Eliezer Masliah, and Paul J.
+Muchowski (2012). Suppression of α-Synuclein Toxicity and Vesicle
+Trafficking Defects by Phosphorylation at S129 in Yeast Depends on
+Genetic Context. **Human Molecular Genetics**
+[DOI: 10.1093/hmg/dds058](http://hmg.oxfordjournals.org/content/early/2012/02/21/hmg.dds058.short)
+
+Rachel Barkan, Adam J. Zahand, Kfir Sharabi, Ayelet T. Lamm, Naomi
+Feinstein, Erin Haithcock, Katherine L. Wilson, Jun Liu, and Yosef
+Gruenbaum (2012). A Highlights from MBoC Selection: Ce-emerin and LEM-2:
+essential roles in Caenorhabditis elegans development, muscle function,
+and mitosis. **Molecular Biology of The Cell**
+[DOI: 10.1091/mbc.E11-06-0505](http://www.molbiolcell.org/citmgr?gca=molbiolcell;23/4/543)
+
+Muhammad Nafees, Wasim Liaqut, Salamat Ali and Muhammad Ahsan Shafique
+(2012). Synthesis of ZnO/Al:ZnO nanomaterial: structural and band gap
+variation in ZnO nanomaterial by Al doping. **Applied Nanoscience**
+[<DOI:10.1007/s13204-012-0067-y>](http://dx.doi.org/10.1007/s13204-012-0067-y)
+
+Diana Soares da Costa, Ricardo A. Pires, Ana M. Frias, Rui L. Reis and
+Iva Pashkuleva (2012). Sulfonic groups induce formation of filopodia in
+mesenchymal stem cells. **Journal of Materials Chemistry**
+[DOI: 10.1039/C2JM15762D](http://pubs.rsc.org/en/Content/ArticleLanding/2012/JM/c2jm15762d)
+
+C.-H. Huang, S. Sankaran, D. Racoceanu, S. Hariharan, S. Ahmed (2012).
+On-line 3-D Tracking of Suspension Living Cells Imaged with
+Phase-Contrast Microscopy. **IEEE Transactions on Biomedical
+Engineering**
+[DOI: 10.1109/TBME.2012.2194487](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6182580&isnumber=4359967)
+
+Yuichi Wakamoto, Alexander Y. Grosberg, Edo Kussell (2012). OPTIMAL
+LINEAGE PRINCIPLE FOR AGE-STRUCTURED POPULATIONS. **Evolution**
+[DOI: 10.1111/j.1558-5646.2011.01418.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01418.x/full)
+
+Sebastian Munck, Katarzyna Miskiewicz, Ragna Sannerud, Silvia A.
+Menchon, Liya Jose, Rainer Heintzmann, Patrik Verstreken and Wim Annaert
+(2012). Sub-diffraction imaging on standard microscopes through
+Photobleaching Microscopy with non-linear Processing. **Journal of Cell
+Science**
+[DOI: 10.1242/​jcs.098939](http://jcs.biologists.org/content/early/2012/02/21/jcs.098939.short)
+
+S. J. Leavesley, N. Annamdevula, J. Boni, S. Stocker, K. Grant, B.
+Troyanovsky, T. C. Rich, and D. F. Alvarez (2012). Hyperspectral imaging
+microscopy for identification and quantitative analysis of
+fluorescently-labeled cells in highly autofluorescent tissue. **Journal
+of Biophotonics**
+[DOI: 10.1002/jbio.201100066](http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100066/abstract)
+
+Soudeh Ehsani, José Carlos Santos, Cristina D. Rodrigues, Ricardo
+Henriques, Laurent Audry, Christophe Zimmer, Philippe Sansonetti, Guy
+Tran Van Nhieu and Jost Enninga (2012). Hierarchies of host factor
+dynamics at the entry site of Shigella flexneri during host cell
+invasion. **Infection and Immunity**
+[DOI: 10.1128/IAI.06391-11](http://iai.asm.org/content/early/2012/04/17/IAI.06391-11.short)
+
+Saumya Saurabh, Suvrajit Maji, and Marcel P. Bruchez (2012). "Evaluation
+of sCMOS cameras for detection and localization of single Cy5
+molecules," **Optics Express**
+[DOI: 10.1364/OE.20.007338](http://www.opticsinfobase.org/oe/abstract.cfm?URI=oe-20-7-7338)
+
+Benjamin E. Bammes, Ryan H. Rochat, Joanita Jakana, Dong-Hua Chen, Wah
+Chiu (2012). Direct electron detection yields cryo-EM reconstructions at
+resolutions beyond 3/4 Nyquist frequency. **Journal of Structural
+Biology**
+[DOI: 10.1016/j.jsb.2012.01.008](http://www.sciencedirect.com/science/article/pii/S1047847712000287)
+
+Tuson, H. H., Auer, G. K., Renner, L. D., Hasebe, M., Tropini, C.,
+Salick, M., Crone, W. C., Gopinathan, A., Huang, K. C. and Weibel, D. B.
+(2012). Measuring the stiffness of bacterial cells from growth rates in
+hydrogels of tunable elasticity. **Molecular Microbiology**
+[DOI: 10.1111/j.1365-2958.2012.08063.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2012.08063.x/full)
+
+Jonas Ries, Charlotte Kaplan, Evgenia Platonova, Hadi Eghlidi & Helge
+Ewers (2012). A simple, versatile method for GFP-based super-resolution
+microscopy via nanobodies. **Nature Methods**
+[DOI: 10.1038/nmeth.1991](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1991.html)
+
+Subramanian Krishnan, G. Esteban Fernandez, David B. Sacks, Nemani V.
+Prasadarao (2012). IQGAP1 mediates the disruption of adherens junctions
+to promote Escherichia coli K1 invasion of brain endothelial cells.
+**Cellular Microbiology**
+[DOI: 10.1111/j.1462-5822.2012.01805.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1462-5822.2012.01805.x/abstract)
+
+R F Hennigan, C A Moon, L M Parysek, K R Monk, G Morfini, S Berth, S
+Brady and N Ratner (2012). The NF2 tumor suppressor regulates
+microtubule-based vesicle trafficking via a novel Rac, MLK and p38SAPK
+pathway. **Oncogene**
+[DOI: 10.1038/onc.2012.135](http://www.nature.com/onc/journal/vaop/ncurrent/suppinfo/onc2012135s1.html)
+
+Dirk Landgraf, Burak Okumus, Peter Chien, Tania A Baker and Johan
+Paulsson (2012). Segregation of molecules at cell division reveals
+native protein localization. **Nature Methods**
+[<DOI:10.1038/nmeth.1955>](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1955.html)
+
+Moritz Lang, Fabian Rudolf, Jörg Stelling (2012). Use of YouScope to
+Implement Systematic Microscopy Protocols. **Current Protocols in
+Molecular Biology**
+[DOI: 10.1002/0471142727.mb1421s98](http://onlinelibrary.wiley.com/doi/10.1002/0471142727.mb1421s98/abstract)
+
+Erich E. Hoover1, Jeffrey J. Field, David G. Winters, Michael D. Young,
+Eric V. Chandler, John C. Speirs, Jacob T. Lapenna, Susy M. Kim, Shi-you
+Ding, Randy A. Bartels, Jing W. Wang, and Jeff A. Squier1 (2012).
+Eliminating the scattering ambiguity in multifocal, multimodal,
+multiphoton imaging systems. **Journal of Biophotonics**
+[DOI: 10.1002/jbio.201100139](http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100139/abstract)
+
+Travis J. Crites, Lirong Chen, and Rajat Varma (2012). A TIRF Microscopy
+Technique for Real-time, Simultaneous Imaging of the TCR and its
+Associated Signaling Proteins. **Journal of Visualized Experiments**
+[DOI: 10.3791/3892](http://www.jove.com/video/3892/a-tirf-microscopy-technique-for-real-time-simultaneous-imaging-of-the-tcr-and-its-associated-signaling-proteins)
+
+Wei Li, Wei Zou, Yihong Yang, Yongping Chai, Baohui Chen, Shiya Cheng,
+Dong Tian, Xiaochen Wang, Ronald D. Vale, and Guangshuo Ou (2012).
+Autophagy genes function sequentially to promote apoptotic cell corpse
+degradation in the engulfing cell. **Journal of Cell Biology**
+[DOI: 10.1083/jcb.201111053](http://jcb.rupress.org/content/early/2012/03/21/jcb.201111053.short)
+
+Z. Schilling, E. Frank, V. Magidson, J. Wason, J. Loncarek, K. Boyer, J.
+Wen, and A. Khodjakov (2012). Predictive-focus illumination for reducing
+photodamage in live-cell microscopy. **Journal of Microscopy**
+[DOI: 10.1111/j.1365-2818.2012.03605.x](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2012.03605.x/full)
+
+Saumya Saurabh, Suvrajit Maji, and Marcel P. Bruchez (2012). Evaluation
+of sCMOS cameras for detection and localization of single Cy5 molecules.
+**Optics Express**
+[DOI: 10.1364/OE.20.007338](http://www.opticsinfobase.org/oe/abstract.cfm?URI=oe-20-7-7338)
+
+Junyu Mai, Greg J. Sommer, and Anson V. Hatch (2012). Microfluidic
+Digital Isoelectric Fractionation for Rapid Multi-Dimensional
+Glycoprotein Analysis. **Analytical Chemistry**
+[DOI: 10.1021/ac203076p](http://pubs.acs.org/doi/abs/10.1021/ac203076p)
+
+Petar Marinković, Miriam S. Reuter, Monika S. Brill, Leanne Godinho,
+Martin Kerschensteiner, and Thomas Misgeld (2012). Axonal transport
+deficits and degeneration can evolve independently in mouse models of
+amyotrophic lateral sclerosis. **PNAS**
+[DOI: 10.1073/pnas.1200658109](http://www.pnas.org/content/early/2012/02/22/1200658109.short)
+
+Stefanie Kaech, Chun-Fang Huang, and Gary Banker (2012). General
+Considerations for Live Imaging of Developing Hippocampal Neurons in
+Culture. **Cold Spring Harb Protocols**
+[DOI: 10.1101/pdb.ip068221](http://media/Cshprotocols.cshlp.org/content/2012/3/pdb.ip068221.full#cited-by)
+
+Andrew J. Ewald, Robert J. Huebner, Hildur Palsdottir, Jessie K. Lee,
+Melissa J. Perez, Danielle M. Jorgens, Andrew N. Tauscher, Kevin J.
+Cheung, Zena Werb, and Manfred Auer (2012). Mammary collective cell
+migration involves transient loss of epithelial features and individual
+cell migration within the epithelium. **Journal of Cell Sci** jcs.096875
+[DOI: 10.1242/jcs.096875](http://jcs.biologists.org/content/early/2012/02/15/jcs.096875.abstract)
+
+Vedakumar Tatavarty, Marius F. Ifrim, Mikhail Levin, George Korza, Elisa
+Barbarese, Ji Yu, and John H. Carson (2012). Single molecule imaging of
+translational output from individual RNA granules in neurons. **Mol.
+Biol. Cell** mbc.E11-07-0622
+[DOI: 10.1091/mbc.E11-07-0622](http://www.molbiolcell.org/content/early/2012/01/03/mbc.E11-07-0622.abstract)
+
+Joshua M. Katzenstein, Dustin W. Janes, Haley E. Hocker, Justin K.
+Chandler, and Christopher J. Ellison (2012). Nanoconfined Self-Diffusion
+of Poly(isobutyl methacrylate) in Films with a Thickness-Independent
+Glass Transition. **Macromolecules** 45 (3), 1544-1552
+[DOI: 10.1021/ma202362j](http://pubs.acs.org/doi/full/10.1021/ma202362j)
+
+Deanna M. Navaroli, Karl D. Bellvé, Clive Standley, Lawrence M.
+Lifshitz, James Cardia, David Lambright, Deborah Leonard, Kevin E.
+Fogarty, and Silvia Corvera (2012). Rabenosyn-5 defines the fate of the
+transferrin receptor following clathrin-mediated endocytosis. **PNAS**
+[<DOI:10.1073/pnas.1115495109>](http://www.pnas.org/content/early/2012/01/25/1115495109.short)
+
+Remi Renaud, Claire Martin, Hirac Gurden, and Frederic Pain (2012).
+Multispectral reflectance imaging of brain activation in rodents:
+methodological study of the differential path length estimations and
+first in vivo recordings in the rat olfactory bulb. **Journal of
+Biomedical Optics** 17, 016012
+[DOI: 10.1117/1.JBO.17.1.016012](http://spiedigitallibrary.org/jbo/resource/1/jbopfo/v17/i1/p016012_s1)
+
+André Lampe, Volker Haucke, Stephan J. Sigrist, Mike Heilemann, Jan
+Schmoranzer (2012). Multi-colour direct STORM with red emitting
+carbocyanines. **Biology of the Cell**
+[DOI: 10.1111/boc.201100011](http://dx.doi.org/10.1111/boc.201100011)
+
+J. Bradley Zuchero, Brittany Belin, and R. Dyche Mullins (2012). Actin
+Binding to WH2 Domains Regulates Nuclear Import of the Multifunctional
+Actin Regulator JMY. **Molecular Biology of The Cell** [DOI:
+mbc.E11-12-0992](http://www.molbiolcell.org/content/early/2012/01/17/mbc.E11-12-0992.abstract)
+
+Jean-Cheng Kuo, Xuemei Han, John R. Yates and Clare M. Waterman (2012).
+Isolation of Focal Adhesion Proteins for Biochemical and Proteomic
+Analysis. **Methods in Molecular Biology:** Integrin and Cell Adhesion
+Molecules, Volume 757, Part 4, 297-323
+[DOI: 10.1007/978-1-61779-166-6\_19](http://www.springerlink.com/content/npgx876xt16031x5/#section=956510&page=1)
+
+Vladimir Lizunov, Karin Stenkula, Ivonne Lisinski, Oksana Gavrilova,
+Dena R. Yver, Alexandra Chadt, H Al-Hasani, Joshua Zimmerberg, and
+Samuel W. Cushman (2012). Insulin stimulates fusion, but not tethering,
+of GLUT4 vesicles in skeletal muscle of transgenic mouse. **American
+Journal of Physiology**
+[DOI: 10.1152/ajpendo.00466.2011](http://ajpendo.physiology.org/content/early/2012/01/25/ajpendo.00466.2011.abstract)
+
+Subhasri Ghosh, Suvrajit Saha, Debanjan Goswami, Sameera Bilgrami,
+Satyajit Mayor, Chapter sixteen - Dynamic Imaging of Homo-FRET in Live
+Cells by Fluorescence Anisotropy Microscopy, In: P.Michael Conn,
+Editor(s), **Methods in Enzymology**, Academic Press, 2012, Volume 505,
+Pages 291-327, ISSN 0076-6879.
+[DOI: 10.1016/B978-0-12-388448-0.00024-3](http://www.sciencedirect.com/science/article/pii/B9780123884480000243)
 
 Total 2012 citation: 96
 
-==2011==
+## 2011
 
-Christian Conrad, Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher, Frank Sieckmann, Fatima Verissimo, Arthur Edelstein, Thomas Walter, Urban Liebel,	 Rainer Pepperkok & Jan Ellenberg (2011). Micropilot: automation of fluorescence microscopy-based imaging for systems biology. '''Nature Methods''' 1548-7091 [http://dx.doi.org/10.1038/nmeth.1558 DOI: 10.1038/nmeth.1558]
+Christian Conrad, Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher, Frank
+Sieckmann, Fatima Verissimo, Arthur Edelstein, Thomas Walter, Urban
+Liebel, Rainer Pepperkok & Jan Ellenberg (2011). Micropilot: automation
+of fluorescence microscopy-based imaging for systems biology. **Nature
+Methods** 1548-7091
+[DOI: 10.1038/nmeth.1558](http://dx.doi.org/10.1038/nmeth.1558)
 
-Dimiter Prodanov (2011). Data Ontology and an Information System Realization for Web-Based Management of Image Measurements. '''Frontiers in Neuroinformatics''' [http://www.frontiersin.org/Journal/Abstract.aspx?s=752&name=neuroinformatics&ART_DOI=10.3389/fninf.2011.00025 DOI: 10.3389/fninf.2011.00025] 
+Dimiter Prodanov (2011). Data Ontology and an Information System
+Realization for Web-Based Management of Image Measurements. **Frontiers
+in Neuroinformatics**
+[DOI: 10.3389/fninf.2011.00025](http://www.frontiersin.org/Journal/Abstract.aspx?s=752&name=neuroinformatics&ART_DOI=10.3389/fninf.2011.00025)
 
-Iris Sarchizian, Marinela Cirnu, Ioan I. Ardelean (2011). Isolation of a heterocyts - forming Cyanobacterium and quantification of its 
-biotechnological potential with respect to redox properties  at single cell level. '''Romanian Biotechnological Letters''' Vol. 16, No.6, 2011, Supplement [http://www.rombio.eu/rbl6vol16Supplement/1%20Iris%20Sarchizian%20Ardelean.pdf DOI: PDF file]
+Iris Sarchizian, Marinela Cirnu, Ioan I. Ardelean (2011). Isolation of a
+heterocyts - forming Cyanobacterium and quantification of its
+biotechnological potential with respect to redox properties at single
+cell level. **Romanian Biotechnological Letters** Vol. 16, No.6, 2011,
+Supplement [DOI: PDF
+file](http://www.rombio.eu/rbl6vol16Supplement/1%20Iris%20Sarchizian%media/20Ardelean.pdf)
 
-Shawna C. O. Reed, Alisa W. Serio, Matthew D. Welch (2011), Rickettsia parkeri invasion of diverse host cells involves an Arp2/3 complex, WAVE complex and Rho-family GTPase-dependent pathway. '''Cellular Microbiology''' 1462-5822. [http://dx.doi.org/10.1111/j.1462-5822.2011.01739.x DOI: 10.1111/j.1462-5822.2011.01739.x] 
+Shawna C. O. Reed, Alisa W. Serio, Matthew D. Welch (2011), Rickettsia
+parkeri invasion of diverse host cells involves an Arp2/3 complex, WAVE
+complex and Rho-family GTPase-dependent pathway. **Cellular
+Microbiology** 1462-5822.
+[DOI: 10.1111/j.1462-5822.2011.01739.x](http://dx.doi.org/10.1111/j.1462-5822.2011.01739.x)
 
-Rose Loughlin, Jeremy D. Wilbur, Francis J. McNally, François J. Nédélec, Rebecca Heald (2011), Katanin Contributes to Interspecies Spindle Length Scaling in Xenopus. '''Cell''' Volume 147, Issue 6. [http://www.sciencedirect.com/science/article/pii/S0092867411013523 DOI: 10.1016/j.cell.2011.11.014]
+Rose Loughlin, Jeremy D. Wilbur, Francis J. McNally, François J.
+Nédélec, Rebecca Heald (2011), Katanin Contributes to Interspecies
+Spindle Length Scaling in Xenopus. **Cell** Volume 147, Issue 6.
+[DOI: 10.1016/j.cell.2011.11.014](http://www.sciencedirect.com/science/article/pii/S0092867411013523)
 
-Hench J , Bratić Hench I , Pujol C , Ipsen S , Brodesser S , et al. (2011) A Tissue-Specific Approach to the Analysis of Metabolic Changes in Caenorhabditis elegans. '''PLoS ONE''' 6(12): e28417. [http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0028417 DOI: 10.1371/journal.pone.0028417]
+Hench J , Bratić Hench I , Pujol C , Ipsen S , Brodesser S , et al.
+(2011) A Tissue-Specific Approach to the Analysis of Metabolic Changes
+in Caenorhabditis elegans. **PLoS ONE** 6(12): e28417.
+[DOI: 10.1371/journal.pone.0028417](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0028417)
 
-Milanova, D., Chambers, R. D., Bahga, S. S. and Santiago, J. G. (2011), Electrophoretic mobility measurements of fluorescent dyes using on-chip capillary electrophoresis. '''ELECTROPHORESIS''', 32: 3286–3294.  [http://onlinelibrary.wiley.com/doi/10.1002/elps.201100210/suppinfo DOI: 10.1002/elps.201100210]
+Milanova, D., Chambers, R. D., Bahga, S. S. and Santiago, J. G. (2011),
+Electrophoretic mobility measurements of fluorescent dyes using on-chip
+capillary electrophoresis. **ELECTROPHORESIS**, 32: 3286–3294.
+[DOI: 10.1002/elps.201100210](http://onlinelibrary.wiley.com/doi/10.1002/elps.201100210/suppinfo)
 
-Taizo Kawano1, Michelle D. Po1, Shangbang Gao1, George Leung, William S. Ryu, Mei Zhen (2011), An Imbalancing Act: Gap Junctions Reduce the Backward Motor Circuit Activity to Bias C. elegans for Forward Locomotion. '''Neuron''' Volume 72, Issue 4 [http://www.sciencedirect.com/science/article/pii/S0896627311007914 DOI: 10.1016/j.neuron.2011.09.005]
+Taizo Kawano1, Michelle D. Po1, Shangbang Gao1, George Leung, William S.
+Ryu, Mei Zhen (2011), An Imbalancing Act: Gap Junctions Reduce the
+Backward Motor Circuit Activity to Bias C. elegans for Forward
+Locomotion. **Neuron** Volume 72, Issue 4
+[DOI: 10.1016/j.neuron.2011.09.005](http://www.sciencedirect.com/science/article/pii/S0896627311007914)
 
-Yuli Wang, Pavak Shah, Colleen Phillips, Christopher E. Sims and Nancy L. Allbritton (2011), Trapping cells on a stretchable microwell array for single-cell analysis. '''Analytical and Bioanalytical Chemistry''' [http://dx.doi.org/10.1007/s00216-011-5535-9 DOI: 10.1007/s00216-011-5535-9]
+Yuli Wang, Pavak Shah, Colleen Phillips, Christopher E. Sims and Nancy
+L. Allbritton (2011), Trapping cells on a stretchable microwell array
+for single-cell analysis. **Analytical and Bioanalytical Chemistry**
+[DOI: 10.1007/s00216-011-5535-9](http://dx.doi.org/10.1007/s00216-011-5535-9)
 
-Danny A. Stark, Rowan M. Karvas, Ashley L. Siegel, and D. D. W. Cornelison (2011), Eph/ephrin interactions modulate muscle satellite cell motility and patterning. '''Development''' [http://dev.biologists.org/content/early/2011/11/09/dev.068411.full.pdf DOI: 10.1242/dev.068411]
+Danny A. Stark, Rowan M. Karvas, Ashley L. Siegel, and D. D. W.
+Cornelison (2011), Eph/ephrin interactions modulate muscle satellite
+cell motility and patterning. **Development**
+[DOI: 10.1242/dev.068411](http://dev.biologists.org/content/early/2011/11/09/dev.068411.media/Full.pdf)
 
-Leavesley, S. J., Annamdevula, N., Boni, J., Stocker, S., Grant, K., Troyanovsky, B., Rich, T. C. and Alvarez, D. F. (2011), Hyperspectral imaging microscopy for identification and quantitative analysis of fluorescently-labeled cells in highly autofluorescent tissue. '''Journal of Biophotonics''' [http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100066/abstract DOI: 10.1002/jbio.201100066]
+Leavesley, S. J., Annamdevula, N., Boni, J., Stocker, S., Grant, K.,
+Troyanovsky, B., Rich, T. C. and Alvarez, D. F. (2011), Hyperspectral
+imaging microscopy for identification and quantitative analysis of
+fluorescently-labeled cells in highly autofluorescent tissue. **Journal
+of Biophotonics**
+[DOI: 10.1002/jbio.201100066](http://onlinelibrary.wiley.com/doi/10.1002/jbio.201100066/abstract)
 
-Patent: Chambers, Robert D. (Enfield, NH, US), Santiago, Juan G. (Stanford, CA, US), Bercovici, Moran (Santa Clara, CA, US) 2011. Non-focusing tracers for indirect detection in electrophoretic displacement techniques. [http://www.freepatentsonline.com/y2011/0220499.html United States		20110220499]
+Patent: Chambers, Robert D. (Enfield, NH, US), Santiago, Juan G.
+(Stanford, CA, US), Bercovici, Moran (Santa Clara, CA, US) 2011.
+Non-focusing tracers for indirect detection in electrophoretic
+displacement techniques. [United
+States 20110220499](http://www.freepatentsonline.com/y2011/0220499.html)
 
-Yinglang Wan, William M Ash, Lusheng Fan, Huaiqin Hao, Myung K Kim and Jinxing Lin (2011). Variable-angle total internal reflection fluorescence microscopy of intact cells of Arabidopsis thaliana. '''Plant Methods''' 7:27. [http://www.plantmethods.com/content/pdf/1746-4811-7-27.pdf DOI:10.1186/1746-4811-7-27] 
+Yinglang Wan, William M Ash, Lusheng Fan, Huaiqin Hao, Myung K Kim and
+Jinxing Lin (2011). Variable-angle total internal reflection
+fluorescence microscopy of intact cells of Arabidopsis thaliana. **Plant
+Methods** 7:27.
+[<DOI:10.1186/1746-4811-7-27>](http://www.plantmethods.com/content/pdf/media/1746-4811-7-27.pdf)
 
-Jared E Toettcher, Delquin Gong, Wendell A Lim & Orion D Weiner (2011). Light-based feedback for controlling intracellular signaling dynamics. '''Nature Methods''' 8, 1548-7105. [http://www.nature.com/nmeth/journal/vaop/ncurrent/abs/nmeth.1700.html DOI:10.1038/nmeth.1700]
+Jared E Toettcher, Delquin Gong, Wendell A Lim & Orion D Weiner (2011).
+Light-based feedback for controlling intracellular signaling dynamics.
+**Nature Methods** 8, 1548-7105.
+[<DOI:10.1038/nmeth.1700>](http://www.nature.com/nmeth/journal/vaop/ncurrent/abs/nmeth.1700.html)
 
-Guillermo A. Yudowski and Mark von Zastrow (2011). Investigating G Protein-Coupled Receptor Endocytosis and Trafficking by TIR-FM. '''Methods in Molecular Biology''' 756:325-332. [http://dx.doi.org/10.1007/978-1-61779-160-4_19 DOI: 10.1007/978-1-61779-160-4_19] 
+Guillermo A. Yudowski and Mark von Zastrow (2011). Investigating G
+Protein-Coupled Receptor Endocytosis and Trafficking by TIR-FM.
+**Methods in Molecular Biology** 756:325-332.
+[DOI: 10.1007/978-1-61779-160-4\_19](http://dx.doi.org/10.1007/978-1-61779-160-4_19)
 
-Thai V Truong,	 Willy Supatto,	 David S Koos,	 John M Choi	 & Scott E Fraser (2011). Deep and fast live imaging with two-photon scanned light-sheet microscopy. '''Nature Methods''' 8, 757–760 (2011) [http://dx.doi.org/10.1038/nmeth.1652 doi:10.1038/nmeth.1652]
+Thai V Truong, Willy Supatto, David S Koos, John M Choi & Scott E Fraser
+(2011). Deep and fast live imaging with two-photon scanned light-sheet
+microscopy. **Nature Methods** 8, 757–760 (2011)
+[<doi:10.1038/nmeth.1652>](http://dx.doi.org/10.1038/nmeth.1652)
 
-{{Cite journal
-| volume = 19
+{% include Cite_journal
+ text=" volume = 19
 | issue = 1
 | pages = 149-161
 | last = Kilinc
@@ -1445,44 +3822,101 @@ Thai V Truong,	 Willy Supatto,	 David S Koos,	 John M Choi	 & Scott E Fraser (20
 | journal = Neurotoxicity research
 | date = 2011
 | doi = 10.1007/s12640-010-9152-8
-}}
+" %}
 
-Koen J. C. Verbrugghe, Raymond C. Chan (2011). Imaging C. elegans Embryos using an Epifluorescent Microscope and Open Source Software. '''Journal of Visualized Experiments''' [http://www.jove.com/details.php?ID=2625 DOI:10.3791/2625]
+Koen J. C. Verbrugghe, Raymond C. Chan (2011). Imaging C. elegans
+Embryos using an Epifluorescent Microscope and Open Source Software.
+**Journal of Visualized Experiments**
+[<DOI:10.3791/2625>](http://www.jove.com/details.php?ID=2625)
 
-Maarten H.P. Kole (2011). First Node of Ranvier Facilitates High-Frequency Burst Encoding. '''Neuron''' 71:671-682. [http://dx.doi.org/10.1016/j.neuron.2011.06.024 doi: 10.1016/j.neuron.2011.06.024]
+Maarten H.P. Kole (2011). First Node of Ranvier Facilitates
+High-Frequency Burst Encoding. **Neuron** 71:671-682.
+[doi: 10.1016/j.neuron.2011.06.024](http://dx.doi.org/10.1016/j.neuron.2011.06.024)
 
-Sanchari Bhattacharya, Tzu-Chiao Chao, and Alexandra Ros (2011). Insulator-based dielectrophoretic single particle and single cancer cell trapping. '''Electrophoresis''' [http://dx.doi.org/10.1002/elps.201100066 DOI: 10.1002/elps.201100066]
+Sanchari Bhattacharya, Tzu-Chiao Chao, and Alexandra Ros (2011).
+Insulator-based dielectrophoretic single particle and single cancer cell
+trapping. **Electrophoresis**
+[DOI: 10.1002/elps.201100066](http://dx.doi.org/10.1002/elps.201100066)
 
-Stanislav Vitha and Katherine W. Osteryoung (2011). Immunofluorescence Microscopy for Localization of Arabidopsis Chloroplast Proteins. '''Methods in Molecular Biology''' 774:33-58 [http://dx.doi.org/10.1007/978-1-61779-234-2_3 DOI: 10.1007/978-1-61779-234-2_3]
+Stanislav Vitha and Katherine W. Osteryoung (2011). Immunofluorescence
+Microscopy for Localization of Arabidopsis Chloroplast Proteins.
+**Methods in Molecular Biology** 774:33-58
+[DOI: 10.1007/978-1-61779-234-2\_3](http://dx.doi.org/10.1007/978-1-61779-234-2_3)
 
-Benoît Kornmann, Christof Osman, and Peter Walter (2011). The conserved GTPase Gem1 regulates endoplasmic reticulum–mitochondria connections. '''PNAS''' [http://dx.doi.org/10.1073/pnas.1111314108 doi: 10.1073/pnas.1111314108]
+Benoît Kornmann, Christof Osman, and Peter Walter (2011). The conserved
+GTPase Gem1 regulates endoplasmic reticulum–mitochondria connections.
+**PNAS**
+[doi: 10.1073/pnas.1111314108](http://dx.doi.org/10.1073/pnas.1111314108)
 
-Young-Hwan Song, Euna Choi, Sun-Hyun Park, Suk-Ho Lee, Hana Cho, Won-Kyung Ho,  and Shin-Young Ryu (2011). Sustained CaMKII activity mediates transient oxidative stress-induced long-term facilitation of L-type Ca2+ current in cardiomyocytes. '''Free Radical Biology and Medicine''' [http://dx.doi.org/10.1016/j.freeradbiomed.2011.07.022 doi:10.1016/j.freeradbiomed.2011.07.022]
+Young-Hwan Song, Euna Choi, Sun-Hyun Park, Suk-Ho Lee, Hana Cho,
+Won-Kyung Ho, and Shin-Young Ryu (2011). Sustained CaMKII activity
+mediates transient oxidative stress-induced long-term facilitation of
+L-type Ca2+ current in cardiomyocytes. **Free Radical Biology and
+Medicine**
+[<doi:10.1016/j.freeradbiomed.2011.07.022>](http://dx.doi.org/10.1016/j.freeradbiomed.2011.07.022)
 
-Asuka Nakano, Tzu-Chiao Chao, Fernanda Camacho-Alanis, and Alexandra Ros (20111). Immunoglobulin G and bovine serum albumin streaming dielectrophoresis in a microfluidic device. '''Electrophoresis'''. In Press. [http://dx.doi.org/10.1002/elps.201100037 doi: 10.1002/elps.201100037]
+Asuka Nakano, Tzu-Chiao Chao, Fernanda Camacho-Alanis, and Alexandra Ros
+(20111). Immunoglobulin G and bovine serum albumin streaming
+dielectrophoresis in a microfluidic device. **Electrophoresis**. In
+Press.
+[doi: 10.1002/elps.201100037](http://dx.doi.org/10.1002/elps.201100037)
 
-Y Wakamoto, A.Y. Grosberg, and E. Kussell (2011). Optimal lineage principle for age-structured populations. '''Evolution''' In Press.  [http://dx.doi.org/10.1111/j.1558-5646.2011.01418.x doi: 10.1111/j.1558-5646.2011.01418.x]
+Y Wakamoto, A.Y. Grosberg, and E. Kussell (2011). Optimal lineage
+principle for age-structured populations. **Evolution** In Press.
+[doi: 10.1111/j.1558-5646.2011.01418.x](http://dx.doi.org/10.1111/j.1558-5646.2011.01418.x)
 
-Eric Campeau (2011). RNA interference in mammals: behind the screen. '''Briefings in Functional Genomics''' 10:215-226. [http://dx.doi.org/10.1093/bfgp/elr018 doi: 10.1093/bfgp/elr018]
+Eric Campeau (2011). RNA interference in mammals: behind the screen.
+**Briefings in Functional Genomics** 10:215-226.
+[doi: 10.1093/bfgp/elr018](http://dx.doi.org/10.1093/bfgp/elr018)
 
-Ivo A. Telley, Peter Bieling and Thomas Surrey (2011). Reconstitution and Quantification of Dynamic Microtubule End Tracking In Vitro Using TIRF Microscopy. '''Methods in Molecular Biology''' 777:127-145 [http://dx.doi.org/10.1007/978-1-61779-252-6_10 doi: 10.1007/978-1-61779-252-6_10]
+Ivo A. Telley, Peter Bieling and Thomas Surrey (2011). Reconstitution
+and Quantification of Dynamic Microtubule End Tracking In Vitro Using
+TIRF Microscopy. **Methods in Molecular Biology** 777:127-145
+[doi: 10.1007/978-1-61779-252-6\_10](http://dx.doi.org/10.1007/978-1-61779-252-6_10)
 
-Aaron G. Blankenship, Aaron M. Hamby, Alana Firl, Shri Vyas, Stephan Maxeiner, Klaus Willecke, and Marla B. Feller (2011). The Role of Neuronal Connexins 36 and 45 in Shaping Spontaneous Firing Patterns in the Developing Retina. '''The Journal of Neuroscience'''  31:9998-10008 [http://dx.doi.org/10.1523/​JNEUROSCI.5640-10.2011 doi: 10.1523/​JNEUROSCI.5640-10.2011]
+Aaron G. Blankenship, Aaron M. Hamby, Alana Firl, Shri Vyas, Stephan
+Maxeiner, Klaus Willecke, and Marla B. Feller (2011). The Role of
+Neuronal Connexins 36 and 45 in Shaping Spontaneous Firing Patterns in
+the Developing Retina. **The Journal of Neuroscience** 31:9998-10008
+[doi: 10.1523/​JNEUROSCI.5640-10.2011](http://dx.doi.org/10.1523/​JNEUROSCI.5640-10.2011)
 
-Min S. Wang, Joshua C. Black, Michelle K. Knowles and Scott M. Reed (2011). C-reactive protein (CRP) aptamer binds to monomeric but not pentameric form of CRP. '''Analytical and BioAnalytical Chemistry''' [http://dx.doi.org/10.1007/s00216-011-5174-1 doi: 10.1007/s00216-011-5174-1]
+Min S. Wang, Joshua C. Black, Michelle K. Knowles and Scott M. Reed
+(2011). C-reactive protein (CRP) aptamer binds to monomeric but not
+pentameric form of CRP. **Analytical and BioAnalytical Chemistry**
+[doi: 10.1007/s00216-011-5174-1](http://dx.doi.org/10.1007/s00216-011-5174-1)
 
-Keren K. Griffiths, Jingqiao Zhang, Ann E. Cowan, Ji Yu, Peter Setlow (2011). Germination proteins in the inner membrane of dormant Bacillus subtilis spores colocalize in a discrete cluster. '''Molecular Microbiology''' [http://dx.doi.org/10.1111/j.1365-2958.2011.07753.x DOI: 10.1111/j.1365-2958.2011.07753.x]
+Keren K. Griffiths, Jingqiao Zhang, Ann E. Cowan, Ji Yu, Peter Setlow
+(2011). Germination proteins in the inner membrane of dormant Bacillus
+subtilis spores colocalize in a discrete cluster. **Molecular
+Microbiology**
+[DOI: 10.1111/j.1365-2958.2011.07753.x](http://dx.doi.org/10.1111/j.1365-2958.2011.07753.x)
 
-Poole RJ, Bashllari E, Cochella L, Flowers EB, Hobert O, (2011) A Genome-Wide RNAi Screen for Factors Involved in Neuronal Specification in Caenorhabditis elegans. '''PLoS Genet''' 7(6): e1002109. [http://dx.doi.org/10.1371/journal.pgen.1002109 doi:10.1371/journal.pgen.1002109]
+Poole RJ, Bashllari E, Cochella L, Flowers EB, Hobert O, (2011) A
+Genome-Wide RNAi Screen for Factors Involved in Neuronal Specification
+in Caenorhabditis elegans. **PLoS Genet** 7(6): e1002109.
+[<doi:10.1371/journal.pgen.1002109>](http://dx.doi.org/10.1371/journal.pgen.1002109)
 
-Godefroid Charbon, Eric Brustad, Kevin A. Scott, Jiangyun Wang, Anders Løbner-Olesen, Peter G. Schultz, Christine Jacobs-Wagner, and Eli Chapman (2011). Subcellular Protein Localization by Using a Genetically Encoded Fluorescent Amino Acid. '''ChemBioChem''' 12: n/a.[http://dx.doi.org/10.1002/cbic.201100282 DOI: 10.1002/cbic.201100282]
+Godefroid Charbon, Eric Brustad, Kevin A. Scott, Jiangyun Wang, Anders
+Løbner-Olesen, Peter G. Schultz, Christine Jacobs-Wagner, and Eli
+Chapman (2011). Subcellular Protein Localization by Using a Genetically
+Encoded Fluorescent Amino Acid. **ChemBioChem** 12:
+n/a.[DOI: 10.1002/cbic.201100282](http://dx.doi.org/10.1002/cbic.201100282)
 
-Luciano Marpegan, Adrienne E. Swanstrom, Kevin Chung, Tatiana Simon, Philip G. Haydon, Sanjoy K. Khan, Andrew C. Liu, Erik D. Herzog, and Christian Beaulé (2011). Circadian Regulation of ATP Release in Astrocytes. '''The Journal of Neuroscience''', 31: 8342-8350. [http://dx.doi.org/10.1523/​JNEUROSCI.6537-10.2011 doi: 10.1523/​JNEUROSCI.6537-10.2011]
+Luciano Marpegan, Adrienne E. Swanstrom, Kevin Chung, Tatiana Simon,
+Philip G. Haydon, Sanjoy K. Khan, Andrew C. Liu, Erik D. Herzog, and
+Christian Beaulé (2011). Circadian Regulation of ATP Release in
+Astrocytes. **The Journal of Neuroscience**, 31: 8342-8350.
+[doi: 10.1523/​JNEUROSCI.6537-10.2011](http://dx.doi.org/10.1523/​JNEUROSCI.6537-10.2011)
 
-Michael Carnell, Tobias Zech, Simon D. Calaminus, Seiji Ura, Monica Hagedorn, Simon A. Johnston, Robin C. May, Thierry Soldati, Laura M. Machesky, and Robert H. Insall (2011). Actin polymerization driven by WASH causes V-ATPase retrieval and vesicle neutralization before exocytosis. '''JCB''' [http://dx.doi.org/10.1083/jcb.201009119 doi: 10.1083/jcb.201009119]
+Michael Carnell, Tobias Zech, Simon D. Calaminus, Seiji Ura, Monica
+Hagedorn, Simon A. Johnston, Robin C. May, Thierry Soldati, Laura M.
+Machesky, and Robert H. Insall (2011). Actin polymerization driven by
+WASH causes V-ATPase retrieval and vesicle neutralization before
+exocytosis. **JCB**
+[doi: 10.1083/jcb.201009119](http://dx.doi.org/10.1083/jcb.201009119)
 
-{{Cite journal
-| volume = 6
+{% include Cite_journal
+ text=" volume = 6
 | issue = 5
 | pages = e19680
 | last = Husson
@@ -1492,10 +3926,10 @@ Michael Carnell, Tobias Zech, Simon D. Calaminus, Seiji Ura, Monica Hagedorn, Si
 | journal = PLoS ONE
 | date = 2011
 | doi = 10.1371/journal.pone.0019680
-}}
+" %}
 
-{{Cite journal
-| last = Jackson
+{% include Cite_journal
+ text=" last = Jackson
 | first = C.
 | coauthors = E. Glory-Afshar, R. F. Murphy, J. Kova evi
 | title = Model building and intelligent acquisition with application to protein subcellular location classification
@@ -1504,57 +3938,79 @@ Michael Carnell, Tobias Zech, Simon D. Calaminus, Seiji Ura, Monica Hagedorn, Si
 | doi = 10.1093/bioinformatics/btr286
 | volume =
 | pages =
-}}
-PMID 21558154 {{PMCID|3117392}}
+" %} PMID 21558154 {% include PMCID text="3117392" %}
 
-Jing Li, Nima Najand, Wendy Long and Andrew Simmonds (2011). Imaging the Cellular Dynamics of Drosophila Argonaute Proteins. '''Methods in Molecular Biology.''' 725, 143-159 [http://dx.doi.org/10.1007/978-1-61779-046-1_10 doi:0.1007/978-1-61779-046-1_10]. PMID 21528452.
+Jing Li, Nima Najand, Wendy Long and Andrew Simmonds (2011). Imaging the
+Cellular Dynamics of Drosophila Argonaute Proteins. **Methods in
+Molecular Biology.** 725, 143-159
+[<doi:0.1007/978-1-61779-046-1_10>](http://dx.doi.org/10.1007/978-1-61779-046-1_10).
+PMID 21528452.
 
-Looney, M.R., Thornton, E.E., Sen, D., Lamm, W.J., Glenny, R.W., and Krummel, M.F. (2011). Stabilized imaging of immune surveillance in the mouse lung. '''Nat Methods.''' 8, 91–96 [http://dx.doi.org/10.1038/nmeth.1543 doi:10.1038/nmeth.1543]
-PMID 21151136 {{PMCID|3076005}}
+Looney, M.R., Thornton, E.E., Sen, D., Lamm, W.J., Glenny, R.W., and
+Krummel, M.F. (2011). Stabilized imaging of immune surveillance in the
+mouse lung. **Nat Methods.** 8, 91–96
+[<doi:10.1038/nmeth.1543>](http://dx.doi.org/10.1038/nmeth.1543) PMID
+21151136 {% include PMCID text="3076005" %}
 
-Debjani Paul, Laure Saias, Jean-Cedric Pedinotti, Max Chabert, Sebastien Magnifico, Antoine Pallandre, Bertrand De Lambert, Claude Houdayer, Bernard Brugg, Jean-Michel Peyrin, and Jean-Louis Viovy (2011). A “dry and wet hybrid” lithography technique for multilevel replication templates: Applications to microfluidic neuron culture and two-phase global mixing. '''BioMicrofluidics''' 5, 024102 [http://dx.doi.org/10.1063/1.3569946 doi:10.1063/1.3569946]
+Debjani Paul, Laure Saias, Jean-Cedric Pedinotti, Max Chabert, Sebastien
+Magnifico, Antoine Pallandre, Bertrand De Lambert, Claude Houdayer,
+Bernard Brugg, Jean-Michel Peyrin, and Jean-Louis Viovy (2011). A “dry
+and wet hybrid” lithography technique for multilevel replication
+templates: Applications to microfluidic neuron culture and two-phase
+global mixing. **BioMicrofluidics** 5, 024102
+[<doi:10.1063/1.3569946>](http://dx.doi.org/10.1063/1.3569946)
 
-Heather I. C. Dalgarno, Paul A. Dalgarno, Adetunmise C. Dada, Catherine E. Towers, Gavin J. Gibson, Richard M. Parton, Ilan Davis, Richard J. Warburton and Alan H. Greenaway  (2011). Nanometric depth resolution from multi-focal images in microscopy. '''Interface''' [http://dx.doi.org/10.1098/rsif.2010.0508 doi: 10.1098/​rsif.2010.0508]
-PMID 21247948 {{PMCID|3104330}}
+Heather I. C. Dalgarno, Paul A. Dalgarno, Adetunmise C. Dada, Catherine
+E. Towers, Gavin J. Gibson, Richard M. Parton, Ilan Davis, Richard J.
+Warburton and Alan H. Greenaway (2011). Nanometric depth resolution from
+multi-focal images in microscopy. **Interface**
+[doi: 10.1098/​rsif.2010.0508](http://dx.doi.org/10.1098/rsif.2010.0508)
+PMID 21247948 {% include PMCID text="3104330" %}
 
-Estrella Guarino, Marianne E. A. Shepherd, Israel Salguero, Hui Hua, Rachel S. Deegan and Stephen E. Kearsey (2011). Cdt1 proteolysis is promoted by dual PIP degrons and is modulated by PCNA ubiquitylation. '''Nucleic Acids Research''' [http://dx.doi.org/10.1093/nar/gkr222 doi: 10.1093/nar/gkr222] 
-PMID 21493688
+Estrella Guarino, Marianne E. A. Shepherd, Israel Salguero, Hui Hua,
+Rachel S. Deegan and Stephen E. Kearsey (2011). Cdt1 proteolysis is
+promoted by dual PIP degrons and is modulated by PCNA ubiquitylation.
+**Nucleic Acids Research**
+[doi: 10.1093/nar/gkr222](http://dx.doi.org/10.1093/nar/gkr222) PMID
+21493688
 
-Andrea E. Knowlton, Heather M. Brown, Theresa S. Richards, Lauren A. Andreolas, Rahul K. Patel, Scott S. Grieshaber. (2011). Chlamydia trachomatis infection causes mitotic spindle pole defects independently from its effects on centrosome amplification. '''Traffic''' [http://dx.doi.org/10.1111/j.1600-0854.2011.01204.x doi: 10.1111/j.1600-0854.2011.01204.x]
-PMID 21477082 {{PMCID|3116664}}
+Andrea E. Knowlton, Heather M. Brown, Theresa S. Richards, Lauren A.
+Andreolas, Rahul K. Patel, Scott S. Grieshaber. (2011). Chlamydia
+trachomatis infection causes mitotic spindle pole defects independently
+from its effects on centrosome amplification. **Traffic**
+[doi: 10.1111/j.1600-0854.2011.01204.x](http://dx.doi.org/10.1111/j.1600-0854.2011.01204.x)
+PMID 21477082 {% include PMCID text="3116664" %}
 
-Ulrich Y. Schaff1 and Greg J. Sommer (2011). Whole Blood Immunoassay Based on Centrifugal Bead Sedimentatio. '''Clinical Chemistry''' [http://dx.doi.org/10.1373/clinchem.2011.162206 doi:10.1373/clinchem.2011.162206]
+Ulrich Y. Schaff1 and Greg J. Sommer (2011). Whole Blood Immunoassay
+Based on Centrifugal Bead Sedimentatio. **Clinical Chemistry**
+[<doi:10.1373/clinchem.2011.162206>](http://dx.doi.org/10.1373/clinchem.2011.162206)
 PMID 21415382
 
-Rosario Scalia, Yulan Gong, Brett Berzins, Brin Freund, Danielle Feather, and Gavin Landesberg Gourav Mishra (2011). A Novel Role for Calpain in the Endothelial Dysfunction Induced by Activation of Angiotensin II Type 1 Receptor Signaling.  '''Circulation Research''' [http://dx.doi.org/10.1161/CIRCRESAHA.110.229393 doi:10.1161/CIRCRESAHA.110.229393]
+Rosario Scalia, Yulan Gong, Brett Berzins, Brin Freund, Danielle
+Feather, and Gavin Landesberg Gourav Mishra (2011). A Novel Role for
+Calpain in the Endothelial Dysfunction Induced by Activation of
+Angiotensin II Type 1 Receptor Signaling. **Circulation Research**
+[<doi:10.1161/CIRCRESAHA.110.229393>](http://dx.doi.org/10.1161/CIRCRESAHA.110.229393)
 PMID 21415394
 
-Claudia Rubio, David Pincus, Alexei Korennykh, Sebastian Schuck, Hana El-Samad, and Peter Walter (2011). Homeostatic adaptation to endoplasmic reticulum stress depends on Ire1 kinase activity. '''J Cell Biol 2011''' [http://dx.doi.org/10.1083/jcb.201007077 doi:10.1083/jcb.201007077]
-PMID 21444688 {{PMCID|3082173}}
+Claudia Rubio, David Pincus, Alexei Korennykh, Sebastian Schuck, Hana
+El-Samad, and Peter Walter (2011). Homeostatic adaptation to endoplasmic
+reticulum stress depends on Ire1 kinase activity. **J Cell Biol 2011**
+[<doi:10.1083/jcb.201007077>](http://dx.doi.org/10.1083/jcb.201007077)
+PMID 21444688 {% include PMCID text="3082173" %}
 
-Charles A. Harris, Joel T. Haas, Ryan S. Streeper, Scot J. Stone, Manju Kumari, Kui Yang, Xianlin Han, Nicholas Brownell, Richard W. Gross, Rudolf Zechner and Robert V. Farese Jr (2011). DGAT enzymes are required for triacylglycerol synthesis and lipid droplets in adipocytes. '''The Journal of Lipid Research''', 52 657 [http://dx.doi.org/10.1194/jlr.M013003 doi:10.1194/jlr.M013003]
-PMID 21317108
+Charles A. Harris, Joel T. Haas, Ryan S. Streeper, Scot J. Stone, Manju
+Kumari, Kui Yang, Xianlin Han, Nicholas Brownell, Richard W. Gross,
+Rudolf Zechner and Robert V. Farese Jr (2011). DGAT enzymes are required
+for triacylglycerol synthesis and lipid droplets in adipocytes. **The
+Journal of Lipid Research**, 52 657
+[<doi:10.1194/jlr.M013003>](http://dx.doi.org/10.1194/jlr.M013003) PMID
+21317108
 
-{{Cite journal
-| @article {OMI:MOM609,
-| first = B.C.
-| last = Dickinson
-| coauthors =  Moffatt, C.E., Hagerty, D., Whitmore, S.E., Brown, T.A., Graves, D.T. and Lamont, R.J.
-| title = Interaction of oral bacteria with gingival epithelial cell multilayers
-| journal = Molecular Oral Microbiology
-| publisher = Blackwell Publishing Ltd
-| issn = 2041-1014
-| url = http://dx.doi.org/10.1111/j.2041-1014.2011.00609.x
-| doi = 10.1111/j.2041-1014.2011.00609.x
-| volume =
-| pages = 
-| keywords = {oral commensals, oral pathogens, periodontal disease, virulence},
-| date =2011
-}}
 PMID 21545698
 
-{{Cite journal
-| doi = 10.1016/j.biomaterials.2011.01.022
+{% include Cite_journal
+ text=" doi = 10.1016/j.biomaterials.2011.01.022
 | pmid = 21296409
 | issn = 0142-9612
 | volume = 32
@@ -1566,44 +4022,78 @@ PMID 21545698
 | title = Hierarchical nanoengineered surfaces for enhanced cytoadhesion and drug delivery
 | journal = Biomaterials
 | date = 2011
-}}
-PMID 21296409 {{PMCID|3086716}}
+" %} PMID 21296409 {% include PMCID text="3086716" %}
 
-Devrim Kilinc,  Jean-Michel Peyrin, Vanessa Soubeyre, Sebastien Magniﬁco, Laure Saias, Jean-Louis Viovy, and Bernard Brug. (2011). Wallerian-Like Degeneration of Central Neurons After Synchronized and Geometrically Registered Mass Axotomy in a Three-Compartmental Microﬂuidic Chip. '''Neurotox Res.''' 19:149-161. [http://dx.doi.org/10.1007/s12640-010-9152-8 doi:10.1007/s12640-010-9152-8]  PMID 20162389 {{PMCID|3006648}}
+Devrim Kilinc, Jean-Michel Peyrin, Vanessa Soubeyre, Sebastien Magniﬁco,
+Laure Saias, Jean-Louis Viovy, and Bernard Brug. (2011). Wallerian-Like
+Degeneration of Central Neurons After Synchronized and Geometrically
+Registered Mass Axotomy in a Three-Compartmental Microﬂuidic Chip.
+**Neurotox Res.** 19:149-161.
+[<doi:10.1007/s12640-010-9152-8>](http://dx.doi.org/10.1007/s12640-010-9152-8)
+PMID 20162389 {% include PMCID text="3006648" %}
 
-Christopher M. Brown, Manisha Ray, Aura A. Eroy-Reveles, Pascal Egea, Cheryl Tajon, and Charles S. Craik. (2011). Peptide Length and Leaving-Group Sterics Influence Potency of Peptide Phosphonate Protease Inhibitors. '''Chemistry & Biology''' 18:48-57 [http://dx.doi.org/10.1016/j.chembiol.2010.11.007 doi:10.1016/j.chembiol.2010.11.007]
-PMID 21276938 {{PMCID|3074588}}
+Christopher M. Brown, Manisha Ray, Aura A. Eroy-Reveles, Pascal Egea,
+Cheryl Tajon, and Charles S. Craik. (2011). Peptide Length and
+Leaving-Group Sterics Influence Potency of Peptide Phosphonate Protease
+Inhibitors. **Chemistry & Biology** 18:48-57
+[<doi:10.1016/j.chembiol.2010.11.007>](http://dx.doi.org/10.1016/j.chembiol.2010.11.007)
+PMID 21276938 {% include PMCID text="3074588" %}
 
-Matthew I. Hoopes, Roland Faller, and Marjorie L. Longo. (2011). Lipid Domain Depletion at Small Localized Bends Imposed by a Step Geometry. '''Langmuir''' 27:2783-2788 [http://dx.doi.org/10.1021/la104504p doi:10.1021/la104504p]
-PMID 21338070
+Matthew I. Hoopes, Roland Faller, and Marjorie L. Longo. (2011). Lipid
+Domain Depletion at Small Localized Bends Imposed by a Step Geometry.
+**Langmuir** 27:2783-2788
+[<doi:10.1021/la104504p>](http://dx.doi.org/10.1021/la104504p) PMID
+21338070
 
-Ricardo Henriques, Caron Griffiths, E. Hesper Rego, and Musa M. Mhlanga (2011). PALM and STORM: Unlocking live-cell super-resolution. '''Biopolymers''' 95:322-331 [http://dx.doi.org/10.1002/bip.21586 doi:10.1002/bip.21586]
-PMID 21254001
+Ricardo Henriques, Caron Griffiths, E. Hesper Rego, and Musa M. Mhlanga
+(2011). PALM and STORM: Unlocking live-cell super-resolution.
+**Biopolymers** 95:322-331
+[<doi:10.1002/bip.21586>](http://dx.doi.org/10.1002/bip.21586) PMID
+21254001
 
-Rachel McMullan, and Stephen J. Nurrish. (2011). The RHO-1 RhoGTPase Modulates Fertility and Multiple Behaviors in Adult C. elegans. '''PLoS ONE''' (2): e17265. [http://dx.doi.org/10.1371/journal.pone.0017265 doi:10.1371/journal.pone.0017265]
-PMID 21387015 {{PMCID|3046162}}
+Rachel McMullan, and Stephen J. Nurrish. (2011). The RHO-1 RhoGTPase
+Modulates Fertility and Multiple Behaviors in Adult C. elegans. **PLoS
+ONE** (2): e17265.
+[<doi:10.1371/journal.pone.0017265>](http://dx.doi.org/10.1371/journal.pone.0017265)
+PMID 21387015 {% include PMCID text="3046162" %}
 
-Saravanan Rajan, Haig Djambazian, Huan Chu Pham Dang, Rob Sladek, and Thomas J Hudson. (2011). The living microarray: a high-throughput platform for measuring transcription dynamics in single cells. '''BMC Genomics''' 12:115. [http://dx.doi.org/10.1186/1471-2164-12-115 doi:10.1186/1471-2164-12-115]
-PMID 21324195 {{PMCID|3050818}}
+Saravanan Rajan, Haig Djambazian, Huan Chu Pham Dang, Rob Sladek, and
+Thomas J Hudson. (2011). The living microarray: a high-throughput
+platform for measuring transcription dynamics in single cells. **BMC
+Genomics** 12:115.
+[<doi:10.1186/1471-2164-12-115>](http://dx.doi.org/10.1186/1471-2164-12-115)
+PMID 21324195 {% include PMCID text="3050818" %}
 
-Hui Hua, and Stephen E. Kearsey (2011). Monitoring DNA replication in fission yeast by incorporation of 5-ethynyl-2′-deoxyuridine. '''Nucl. Acids Res.''' [http://dx.doi.org/10.1093/nar/gkr063 doi:10.1093/nar/gkr063]
-PMID 21310713 {{PMCID|3089489}}
+Hui Hua, and Stephen E. Kearsey (2011). Monitoring DNA replication in
+fission yeast by incorporation of 5-ethynyl-2′-deoxyuridine. **Nucl.
+Acids Res.**
+[<doi:10.1093/nar/gkr063>](http://dx.doi.org/10.1093/nar/gkr063) PMID
+21310713 {% include PMCID text="3089489" %}
 
-Nicolas Minc, David Burgess, and Fred Chang. (2011). Influence of Cell Geometry on Division-Plane Positioning. '''Cell''' 144: 427-438 [http://dx.doi.org/10.1016/j.cell.2011.01.016 doi:10.1016/j.cell.2011.01.016]
-PMID 21295701 {{PMCID|3048034}}
+Nicolas Minc, David Burgess, and Fred Chang. (2011). Influence of Cell
+Geometry on Division-Plane Positioning. **Cell** 144: 427-438
+[<doi:10.1016/j.cell.2011.01.016>](http://dx.doi.org/10.1016/j.cell.2011.01.016)
+PMID 21295701 {% include PMCID text="3048034" %}
 
-Christian Conrad,	 Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher,Frank Sieckmann, Fatima Verissimo, Arthur Edelstein, Thomas Walter, Urban Liebel, Rainer Pepperkok & Jan Ellenberg. (2011). Micropilot: automation of fluorescence microscopy–based imaging for systems biology. '''Nature Methods''' 8:246–249  [http://dx.doi.org/10.1038/nmeth.1558 doi:10.1038/nmeth.1558]
-PMID 21258339 {{PMCID|3086017}}
+Christian Conrad, Annelie Wünsche, Tze Heng Tan, Jutta Bulkescher,Frank
+Sieckmann, Fatima Verissimo, Arthur Edelstein, Thomas Walter, Urban
+Liebel, Rainer Pepperkok & Jan Ellenberg. (2011). Micropilot: automation
+of fluorescence microscopy–based imaging for systems biology. **Nature
+Methods** 8:246–249
+[<doi:10.1038/nmeth.1558>](http://dx.doi.org/10.1038/nmeth.1558) PMID
+21258339 {% include PMCID text="3086017" %}
 
 Total 2011 citations: 57
 
-==2010==
+## 2010
 
-Bruno Afonso, Pamela A. Silver, and Caroline M. Ajo-Franklin (2011). A synthetic circuit for selectively arresting daughter cells to create aging populations. '''Nucleic Acids Res.''' 38:2727–2735.
-[http://dx.doi.org/10.1093/nar/gkq075 doi: 10.1093/nar/gkq075]
+Bruno Afonso, Pamela A. Silver, and Caroline M. Ajo-Franklin (2011). A
+synthetic circuit for selectively arresting daughter cells to create
+aging populations. **Nucleic Acids Res.** 38:2727–2735.
+[doi: 10.1093/nar/gkq075](http://dx.doi.org/10.1093/nar/gkq075)
 
-{{Cite journal
-| doi = 10.1074/jbc.M109.031203
+{% include Cite_journal
+ text=" doi = 10.1074/jbc.M109.031203
 | volume = 285
 | issue = 4
 | pages = 2707 -2720
@@ -1613,11 +4103,10 @@ Bruno Afonso, Pamela A. Silver, and Caroline M. Ajo-Franklin (2011). A synthetic
 | title = Direct Observation of the Uncapping of Capping Protein-capped Actin Filaments by CARMIL Homology Domain 3
 | journal = Journal of Biological Chemistry
 | date = 2010
-}}
-PMID 19926785 {{PMCID|2807327}}
+" %} PMID 19926785 {% include PMCID text="2807327" %}
 
-{{Cite journal
-| issn = 1420-682X
+{% include Cite_journal
+ text=" issn = 1420-682X
 | pages = 1-20
 | issue = 13
 | last = Civelekoglu-Scholey
@@ -1628,11 +4117,10 @@ PMID 19926785 {{PMCID|2807327}}
 | date = 2010
 | volume = 67
 | doi = 10.1007/s00018-010-0326-6
-}}
-PMID 20221784 {{PMCID|2883081}}
+" %} PMID 20221784 {% include PMCID text="2883081" %}
 
-{{Cite journal
-| issn = 0950-0340
+{% include Cite_journal
+ text=" issn = 0950-0340
 | volume = 57
 | issue = 9
 | pages = 718-739
@@ -1643,22 +4131,35 @@ PMID 20221784 {{PMCID|2883081}}
 | journal = Journal of Modern Optics
 | date = 2010
 | doi = 10.1080/09500340.2010.481729
-}}
+" %}
 
-Supreet S. Bahga, Moran Bercovici, Juan G. Santiago (2011). Ionic strength effects on electrophoretic focusing and separations. '''Electrophoresis''' 31:910-919 [http://dx.doi.org/10.1002/elps.200900560 DOI: 10.1002/elps.200900560]
+Supreet S. Bahga, Moran Bercovici, Juan G. Santiago (2011). Ionic
+strength effects on electrophoretic focusing and separations.
+**Electrophoresis** 31:910-919
+[DOI: 10.1002/elps.200900560](http://dx.doi.org/10.1002/elps.200900560)
 PMID 20191554
 
-Thorsten Wohland, Xianke Shi, Jagadish Sankaran, and Ernst H.K. Stelzer (2010). Single Plane Illumination Fluorescence Correlation Spectroscopy (SPIM-FCS) probes inhomogeneous three-dimensional environments. '''Optics Express''' 18: 10627-10641 [http://dx.doi.org/10.1364/OE.18.010627 doi:10.1364/OE.18.010627]
+Thorsten Wohland, Xianke Shi, Jagadish Sankaran, and Ernst H.K. Stelzer
+(2010). Single Plane Illumination Fluorescence Correlation Spectroscopy
+(SPIM-FCS) probes inhomogeneous three-dimensional environments. **Optics
+Express** 18: 10627-10641
+[<doi:10.1364/OE.18.010627>](http://dx.doi.org/10.1364/OE.18.010627)
 PMID 20588915
 
-David F. Savage, Bruno Afonso, Anna H. Chen and Pamela A. Silver (2010). Spatially Ordered Dynamics of the Bacterial Carbon Fixation Machinery '''Science'''  327:1258-1261 [http://dx.doi.org/10.1126/science.1186090 DOI: 10.1126/science.1186090]
+David F. Savage, Bruno Afonso, Anna H. Chen and Pamela A. Silver (2010).
+Spatially Ordered Dynamics of the Bacterial Carbon Fixation Machinery
+**Science** 327:1258-1261
+[DOI: 10.1126/science.1186090](http://dx.doi.org/10.1126/science.1186090)
 PMID 20203050
 
-Fanjie Meng, Thams M. Suchyna, Elena Lazakovitch, Richard M. Gronostajski, and Frederick Sachs (2010). Real Time FRET Based Detection of Mechanical Stress in Cytoskeletal
-and Extracellular Matrix Proteins.  '''Cellular and Molecular Bioengineering''' published online Sept. 2010 [http://dx.doi.org/10.1007/s12195-010-0140-0 DOI: 10.1007/s12195-010-0140-0]
+Fanjie Meng, Thams M. Suchyna, Elena Lazakovitch, Richard M.
+Gronostajski, and Frederick Sachs (2010). Real Time FRET Based Detection
+of Mechanical Stress in Cytoskeletal and Extracellular Matrix Proteins.
+**Cellular and Molecular Bioengineering** published online Sept. 2010
+[DOI: 10.1007/s12195-010-0140-0](http://dx.doi.org/10.1007/s12195-010-0140-0)
 
-{{Cite journal
-| doi = 10.1371/journal.pbio.1000415
+{% include Cite_journal
+ text=" doi = 10.1371/journal.pbio.1000415
 | pmid = 20625545
 | issn = 1544-9173
 | volume = 8
@@ -1670,11 +4171,10 @@ and Extracellular Matrix Proteins.  '''Cellular and Molecular Bioengineering''' 
 | title = BiP binding to the ER-stress sensor Ire1 tunes the homeostatic behavior of the unfolded protein response
 | journal = PLoS Biology
 | date = 2010
-}}
-PMID 20625545 {{PMCID|2897766}}
+" %} PMID 20625545 {% include PMCID text="2897766" %}
 
-{{Cite journal
-| doi = 10.1073/pnas.1010580107
+{% include Cite_journal
+ text=" doi = 10.1073/pnas.1010580107
 | pmid = 20798350
 | issn = 0027-8424
 | volume = 107
@@ -1686,11 +4186,10 @@ PMID 20625545 {{PMCID|2897766}}
 | title = Mammalian endoplasmic reticulum stress sensor IRE1 signals by dynamic clustering
 | journal = Proceedings of the National Academy of Sciences
 | date = 2010
-}}
-PMID 20798350 {{PMCID|2941319}}
+" %} PMID 20798350 {% include PMCID text="2941319" %}
 
-{{Cite journal
-| doi = 10.1016/j.cell.2010.10.003
+{% include Cite_journal
+ text=" doi = 10.1016/j.cell.2010.10.003
 | pmid = 21111236
 | issn = 0092-8674
 | volume = 143
@@ -1702,138 +4201,263 @@ PMID 20798350 {{PMCID|2941319}}
 | title = Sequence-Dependent Sorting of Recycling Proteins by Actin-Stabilized Endosomal Microdomains
 | journal = Cell
 | date = 2010
-}}
-PMID 21111236 {{PMCID|3058345}}
+" %} PMID 21111236 {% include PMCID text="3058345" %}
 
-Yanjie Zhang, Allison M. Schnoes, and Aaron R. Clapp. (2010). Dithiocarbamates as Capping Ligands for Water-Soluble Quantum Dots. '''ACS Appl. Mater. Interfaces''' 2:3384-3395 [http://dx.doi.org/10.1021/am100996g DOI: 10.1021/am100996g]
-PMID 21053924
+Yanjie Zhang, Allison M. Schnoes, and Aaron R. Clapp. (2010).
+Dithiocarbamates as Capping Ligands for Water-Soluble Quantum Dots.
+**ACS Appl. Mater. Interfaces** 2:3384-3395
+[DOI: 10.1021/am100996g](http://dx.doi.org/10.1021/am100996g) PMID
+21053924
 
-Andrew D Goldsmith, Sumeet Sarin, Shawn Lockery, and Oliver Hobert. (2010). Developmental control of lateralized neuron size in the nematode ''Caenorhabditis elegans''. '''Neural development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-33 doi:10.1186/1749-8104-5-33]
-PMID 21122110 {{PMCID|3014911}}
+Andrew D Goldsmith, Sumeet Sarin, Shawn Lockery, and Oliver Hobert.
+(2010). Developmental control of lateralized neuron size in the nematode
+*Caenorhabditis elegans*. **Neural development** 5:33
+[<doi:10.1186/1749-8104-5-33>](http://dx.doi.org/10.1186/1749-8104-5-33)
+PMID 21122110 {% include PMCID text="3014911" %}
 
-Thomas M. Huckaba, Arne Gennerich, James E. Wilhelm, Athar H. Chishti and Ronald D. Vale. (2010. Kinesin-73 is a processive motor that localizes to Rab5-containing organelle. '''JBC''' [http://dx.doi.org/10.1074/jbc.M110.167023 doi: 10.1074/jbc.M110.167023]
-PMID 21169635 {{PMCID|3045001}}
+Thomas M. Huckaba, Arne Gennerich, James E. Wilhelm, Athar H. Chishti
+and Ronald D. Vale. (2010. Kinesin-73 is a processive motor that
+localizes to Rab5-containing organelle. **JBC**
+[doi: 10.1074/jbc.M110.167023](http://dx.doi.org/10.1074/jbc.M110.167023)
+PMID 21169635 {% include PMCID text="3045001" %}
 
-Liu, A.P., Aguet, F.,  Danuser, G., and Schmid, S.L. (2010). Local clustering of transferrin receptors promotes clathrin-coated pit initiation. '''JCB'''  191:1381-1393. [http://dx.doi.org/10.1083/jcb.201008117 doi: 10.1083/jcb.201008117]
-PMID 21187331 {{PMCID|3010081}}
+Liu, A.P., Aguet, F., Danuser, G., and Schmid, S.L. (2010). Local
+clustering of transferrin receptors promotes clathrin-coated pit
+initiation. **JCB** 191:1381-1393.
+[doi: 10.1083/jcb.201008117](http://dx.doi.org/10.1083/jcb.201008117)
+PMID 21187331 {% include PMCID text="3010081" %}
 
-Razooky, B.S., and Weinberger, L.S. (2010).  Mapping the architecture of the HIV-1 Tat circuit: A decision-making circuit that lacks bistability and exploits stochastic noise. '''Methods''' [http://dx.doi.org/10.1016/j.ymeth.2010.12.006 doi:10.1016/j.ymeth.2010.12.006]
+Razooky, B.S., and Weinberger, L.S. (2010). Mapping the architecture of
+the HIV-1 Tat circuit: A decision-making circuit that lacks bistability
+and exploits stochastic noise. **Methods**
+[<doi:10.1016/j.ymeth.2010.12.006>](http://dx.doi.org/10.1016/j.ymeth.2010.12.006)
 PMID 21167940
 
-Walston T, and Hardin J. (2010). Acquisition of 4D DIC Microscopic Data to Determine Cell Contacts in Caenorhabditis elegans Embryos. '''Cold Spring Harb Protoc.''' 2010:pdb.prot5541. [http://dx.doi.org/10.1101/pdb.prot5541 doi: 10.1101/pdb.prot5541]
-PMID 21123428
+Walston T, and Hardin J. (2010). Acquisition of 4D DIC Microscopic Data
+to Determine Cell Contacts in Caenorhabditis elegans Embryos. **Cold
+Spring Harb Protoc.** 2010:pdb.prot5541.
+[doi: 10.1101/pdb.prot5541](http://dx.doi.org/10.1101/pdb.prot5541) PMID
+21123428
 
-Uehara R, and Goshima, G. (2010). Functional central spindle assembly requires de novo microtubule generation in the interchromosomal region during anaphase.  '''JCB''' 191:259-267. [http://dx.doi.org/10.1083/jcb.201004150 doi:10.1083/jcb.201004150]
-PMID 20937700 {{PMCID|2958471}}
+Uehara R, and Goshima, G. (2010). Functional central spindle assembly
+requires de novo microtubule generation in the interchromosomal region
+during anaphase. **JCB** 191:259-267.
+[<doi:10.1083/jcb.201004150>](http://dx.doi.org/10.1083/jcb.201004150)
+PMID 20937700 {% include PMCID text="2958471" %}
 
-Moss, J, et al. (2010). Break-induced ATR and Ddb1–Cul4Cdt2 ubiquitin ligase-dependent nucleotide synthesis promotes homologous recombination repair in fission yeast. '''Genes & Dev.''' 24: 2705-2716 [http://dx.doi.org/10.1101/gad.1970810 doi: 10.1101/gad.1970810] 
-PMID 21123655 {{PMCID|2994043}}
+Moss, J, et al. (2010). Break-induced ATR and Ddb1–Cul4Cdt2 ubiquitin
+ligase-dependent nucleotide synthesis promotes homologous recombination
+repair in fission yeast. **Genes & Dev.** 24: 2705-2716
+[doi: 10.1101/gad.1970810](http://dx.doi.org/10.1101/gad.1970810) PMID
+21123655 {% include PMCID text="2994043" %}
 
-Brian Alan Ashcroft and Tjerk Oosterkamp (2010). AutoMicromanager: A microscopy scripting toolkit for LABVIEW and other programming environments. '''Rev. Sci. Instrum.''' 81:113708-113712 [http://dx.doi.org/10.1063/1.3499370 doi:10.1063/1.3499370]
-PMID 21133479
+Brian Alan Ashcroft and Tjerk Oosterkamp (2010). AutoMicromanager: A
+microscopy scripting toolkit for LABVIEW and other programming
+environments. **Rev. Sci. Instrum.** 81:113708-113712
+[<doi:10.1063/1.3499370>](http://dx.doi.org/10.1063/1.3499370) PMID
+21133479
 
-Goldsmith AD, Sarin S, Lockery S, and Hobert, O. (2010) Developmental control of lateralized neuron size in the nematode
-Caenorhabditis elegans. '''Neural Development''' 5:33 [http://dx.doi.org/10.1186/1749-8104-5-33 doi:10.1186/1749-8104-5-33]
-PMID 21122110  {{PMCID|3014911}}
+Goldsmith AD, Sarin S, Lockery S, and Hobert, O. (2010) Developmental
+control of lateralized neuron size in the nematode Caenorhabditis
+elegans. **Neural Development** 5:33
+[<doi:10.1186/1749-8104-5-33>](http://dx.doi.org/10.1186/1749-8104-5-33)
+PMID 21122110 {% include PMCID text="3014911" %}
 
-Biehlmaier O, Hehl J, and Csucs G. (2010). Acquisition speed comparison of microscope software programs. '''Microsc Res Tech.''' (Epub ahead of print) [http://dx.doi.org/10.1002/jemt.20944 DOI: 10.1002/jemt.20944]
+Biehlmaier O, Hehl J, and Csucs G. (2010). Acquisition speed comparison
+of microscope software programs. **Microsc Res Tech.** (Epub ahead of
+print) [DOI: 10.1002/jemt.20944](http://dx.doi.org/10.1002/jemt.20944)
 PMID 21086451
 
-Liisa M. Hirvonen, and Trevor A. Smith. (2010). Imaging on the Nanoscale: Super-Resolution Fluorescence Microscopy '''Australian Journal of Chemistry''' 64: 415-45 [http://dx.doi.org/10.1071/CH10333 doi:10.1071/CH10333]
+Liisa M. Hirvonen, and Trevor A. Smith. (2010). Imaging on the
+Nanoscale: Super-Resolution Fluorescence Microscopy **Australian Journal
+of Chemistry** 64: 415-45
+[<doi:10.1071/CH10333>](http://dx.doi.org/10.1071/CH10333)
 
-Yehonathan Bar-Yosef, Assaf Sukenik, Ora Hadas, Yehudit Viner-Mozzini and Aaron Kaplan (2010). Enslavement in the Water Body by Toxic Aphanizomenon ovalisporum, Inducing Alkaline Phosphatase in Phytoplanktons. '''Current Biology''' 20:1557-1561. [http://dx.doi.org/10.1016/j.cub.2010.07.032 doi:10.1016/j.cub.2010.07.032]
+Yehonathan Bar-Yosef, Assaf Sukenik, Ora Hadas, Yehudit Viner-Mozzini
+and Aaron Kaplan (2010). Enslavement in the Water Body by Toxic
+Aphanizomenon ovalisporum, Inducing Alkaline Phosphatase in
+Phytoplanktons. **Current Biology** 20:1557-1561.
+[<doi:10.1016/j.cub.2010.07.032>](http://dx.doi.org/10.1016/j.cub.2010.07.032)
 PMID 20705465
 
-Scott D. Hansen and R. Dyche Mullins (2010). VASP is a processive actin polymerase that requires monomeric actin for barbed end association. '''JCB'''  191:571-584. [http://dx.doi.org/10.1083/jcb.201003014 doi:10.1083/jcb.201003014]
-PMID 21041447 {{PMCID|3003327}}
+Scott D. Hansen and R. Dyche Mullins (2010). VASP is a processive actin
+polymerase that requires monomeric actin for barbed end association.
+**JCB** 191:571-584.
+[<doi:10.1083/jcb.201003014>](http://dx.doi.org/10.1083/jcb.201003014)
+PMID 21041447 {% include PMCID text="3003327" %}
 
-Nicholas W. Frost and Michael T. Bowser (2010). Using buffer additives to improve analyte stream stability in micro free flow electrophoresis. '''Lab Chip''' 10:1231-1236 [http://dx.doi.org/10.1039/B922325H doi: 10.1039/B922325H]
-PMID 20445874 {{PMCID|2903047}}
+Nicholas W. Frost and Michael T. Bowser (2010). Using buffer additives
+to improve analyte stream stability in micro free flow electrophoresis.
+**Lab Chip** 10:1231-1236
+[doi: 10.1039/B922325H](http://dx.doi.org/10.1039/B922325H) PMID
+20445874 {% include PMCID text="2903047" %}
 
-Guangshuo Ou, Nico Stuurman, Michael D’Ambrosio, and Ronald D. Vale (2010). Polarized Myosin Produces Unequal-Size Daughters During Asymmetric Cell Division. '''Science''' 330:677-680. [http://dx.doi.org/10.1126/science.1196112 doi:10.1126/science.1196112]
-PMID 20929735 {{PMCID|3032534}}
+Guangshuo Ou, Nico Stuurman, Michael D’Ambrosio, and Ronald D. Vale
+(2010). Polarized Myosin Produces Unequal-Size Daughters During
+Asymmetric Cell Division. **Science** 330:677-680.
+[<doi:10.1126/science.1196112>](http://dx.doi.org/10.1126/science.1196112)
+PMID 20929735 {% include PMCID text="3032534" %}
 
-Benjamin S. Freedman, Kelly E. Miller, Rebecca Heald (2010). Xenopus Egg Extracts Increase Dynamics of Histone H1 on Sperm Chromatin. '''PLoS ONE''' 5(9): e13111. [http://dx.doi.org/10.1371/journal.pone.0013111 doi:10.1371/journal.pone.0013111] 
-PMID 20927327 {{PMCID|2947519}}
+Benjamin S. Freedman, Kelly E. Miller, Rebecca Heald (2010). Xenopus Egg
+Extracts Increase Dynamics of Histone H1 on Sperm Chromatin. **PLoS
+ONE** 5(9): e13111.
+[<doi:10.1371/journal.pone.0013111>](http://dx.doi.org/10.1371/journal.pone.0013111)
+PMID 20927327 {% include PMCID text="2947519" %}
 
-Simon Blanchoud, Yemima Budirahardja, Félix Naef, Pierre Gönczy (2010). ASSET: A robust algorithm for the automated segmentation and standardization of early Caenorhabditis elegans embryos. '''Developmental Dynamics''' 239:3285-3296. [http://dx.doi.org/10.1002/dvdy.22486 doi:10.1002/dvdy.22486]
-PMID 21089077
+Simon Blanchoud, Yemima Budirahardja, Félix Naef, Pierre Gönczy (2010).
+ASSET: A robust algorithm for the automated segmentation and
+standardization of early Caenorhabditis elegans embryos. **Developmental
+Dynamics** 239:3285-3296.
+[<doi:10.1002/dvdy.22486>](http://dx.doi.org/10.1002/dvdy.22486) PMID
+21089077
 
-Sarah S. Goodwin and Ronald D. Vale (2010.) Patronin Regulates the Microtubule Network by Protecting Microtubule Minus Ends.  '''Cell''' 143:263-274. [http://dx.doi.org/10.1016/j.cell.2010.09.022 doi:10.1016/j.cell.2010.09.022]
-PMID 20946984 {{PMCID|3008421}}
+Sarah S. Goodwin and Ronald D. Vale (2010.) Patronin Regulates the
+Microtubule Network by Protecting Microtubule Minus Ends. **Cell**
+143:263-274.
+[<doi:10.1016/j.cell.2010.09.022>](http://dx.doi.org/10.1016/j.cell.2010.09.022)
+PMID 20946984 {% include PMCID text="3008421" %}
 
-Michael V. D'Ambrosio and Ronald D. Vale (2010). A whole genome RNAi screen of Drosophila S2 cell spreading performed using automated computational image analysis. '''J Cell Biol''' 191:471-478. [http://dx.doi.org/10.1083/jcb.201003135 doi:10.1083/jcb.201003135] 
-PMID 21041442 {{PMCID|3003316}}
+Michael V. D'Ambrosio and Ronald D. Vale (2010). A whole genome RNAi
+screen of Drosophila S2 cell spreading performed using automated
+computational image analysis. **J Cell Biol** 191:471-478.
+[<doi:10.1083/jcb.201003135>](http://dx.doi.org/10.1083/jcb.201003135)
+PMID 21041442 {% include PMCID text="3003316" %}
 
-Veliz LA, Toro CA, Vivar JP, Arias LA, Villegas J, et al. (2010). Near-Membrane Dynamics and Capture of TRPM8 Channels within Transient Confinement Domains. '''PLoS ONE''' 5(10): e13290. [http://dx.doi.org/10.1371/journal.pone.0013290 doi:10.1371/journal.pone.0013290]
-PMID 20948964  {{PMCID|2952625}}
+Veliz LA, Toro CA, Vivar JP, Arias LA, Villegas J, et al. (2010).
+Near-Membrane Dynamics and Capture of TRPM8 Channels within Transient
+Confinement Domains. **PLoS ONE** 5(10): e13290.
+[<doi:10.1371/journal.pone.0013290>](http://dx.doi.org/10.1371/journal.pone.0013290)
+PMID 20948964 {% include PMCID text="2952625" %}
 
-Douglas R. Mackay, Katharine S. Ullman, Christopher K. Rodesch (2010). Time-lapse Imaging of Mitosis After siRNA Transfection (2010) '''J Vis Exp.''' 40. [https://www.jove.com/index/details.stp?id=1878 doi: 10.3791/1878]
-PMID 20548280
+Douglas R. Mackay, Katharine S. Ullman, Christopher K. Rodesch (2010).
+Time-lapse Imaging of Mitosis After siRNA Transfection (2010) **J Vis
+Exp.** 40.
+[doi: 10.3791/1878](https://www.jove.com/index/details.stp?id=1878) PMID
+20548280
 
-Zhucheng Chen, Dominika Borek, Shae B. Padrick, Timothy S. Gomez, Zoltan Metlagel, Ayman M. Ismail, Junko Umetani, Daniel D. Billadeau, Zbyszek Otwinowski, and  Michael K. Rosen (2010).  Structure and control of the actin regulatory WAVE complex. '''Nature''' 468:533–538. [http://dx.doi.org/10.1038/nature09623 doi:10.1038/nature09623]
-PMID 21107423 {{PMCID|3085272}}
+Zhucheng Chen, Dominika Borek, Shae B. Padrick, Timothy S. Gomez, Zoltan
+Metlagel, Ayman M. Ismail, Junko Umetani, Daniel D. Billadeau, Zbyszek
+Otwinowski, and Michael K. Rosen (2010). Structure and control of the
+actin regulatory WAVE complex. **Nature** 468:533–538.
+[<doi:10.1038/nature09623>](http://dx.doi.org/10.1038/nature09623) PMID
+21107423 {% include PMCID text="3085272" %}
 
-C. M. Perrault, M. A. Qasaimeh, T. Brastaviceanu, K. Anderson, Y. Kabakibo, and D. Juncker (2010). Integrated microfluidic probe station. '''Rev. Sci. Instrum.''' 81:115107-115115. [http://dx.doi.org/10.1063/1.3497302 doi:10.1063/1.3497302]
-PMID 21133501
+C. M. Perrault, M. A. Qasaimeh, T. Brastaviceanu, K. Anderson, Y.
+Kabakibo, and D. Juncker (2010). Integrated microfluidic probe station.
+**Rev. Sci. Instrum.** 81:115107-115115.
+[<doi:10.1063/1.3497302>](http://dx.doi.org/10.1063/1.3497302) PMID
+21133501
 
-Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman (2010) Computer Control of Microscopes Using μManager. '''Current Protocols in Molecular Biology''' 14.20.1-14.20.17 [http://dx.doi.org/10.1002/0471142727.mb1420s92 doi:10.1002/0471142727.mb1420s92]
-PMID 20890901 {{PMCID|3065365}}
+Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman
+(2010) Computer Control of Microscopes Using μManager. **Current
+Protocols in Molecular Biology** 14.20.1-14.20.17
+[<doi:10.1002/0471142727.mb1420s92>](http://dx.doi.org/10.1002/0471142727.mb1420s92)
+PMID 20890901 {% include PMCID text="3065365" %}
 
-Erin D. Goley, Aravind Rammohan, Elizabeth A. Znameroski, Elif Nur Firat-Karalar, David Sept, and Matthew D. Welch (2010). An actin-filament-binding interface on the Arp2/3 complex is critical for nucleation and branch stability. '''PNAS''' 107:8159-8164. [http://dx.doi.org/10.1073/pnas.0911668107  doi: 10.1073/pnas.0911668107] 
-PMID 20404198 {{PMCID|2889539}}
+Erin D. Goley, Aravind Rammohan, Elizabeth A. Znameroski, Elif Nur
+Firat-Karalar, David Sept, and Matthew D. Welch (2010). An
+actin-filament-binding interface on the Arp2/3 complex is critical for
+nucleation and branch stability. **PNAS** 107:8159-8164.
+[doi: 10.1073/pnas.0911668107](http://dx.doi.org/10.1073/pnas.0911668107)
+PMID 20404198 {% include PMCID text="2889539" %}
 
-Yu C-h, Wu H-J, Kaizuka Y, Vale RD, Groves JT (2010) Altered Actin Centripetal Retrograde Flow in Physically Restricted Immunological Synapses. '''PLoS ONE''' 5(7): e11878. [http://dx.doi.org/10.1371/journal.pone.0011878 doi:10.1371/journal.pone.0011878]
-PMID 20686692 {{PMCID|2912367}}
+Yu C-h, Wu H-J, Kaizuka Y, Vale RD, Groves JT (2010) Altered Actin
+Centripetal Retrograde Flow in Physically Restricted Immunological
+Synapses. **PLoS ONE** 5(7): e11878.
+[<doi:10.1371/journal.pone.0011878>](http://dx.doi.org/10.1371/journal.pone.0011878)
+PMID 20686692 {% include PMCID text="2912367" %}
 
-Karin G. Stenkula, Vladimir A. Lizunov, 3, Samuel W. Cushman and Joshua Zimmerberg (2010). Insulin Controls the Spatial Distribution of GLUT4 on the Cell Surface through Regulation of Its Postfusion Dispersal. '''Cell Metabolism''' 12:250-259 [http://dx.doi.org/10.1016/j.cmet.2010.08.005 doi:10.1016/j.cmet.2010.08.005]
+Karin G. Stenkula, Vladimir A. Lizunov, 3, Samuel W. Cushman and Joshua
+Zimmerberg (2010). Insulin Controls the Spatial Distribution of GLUT4 on
+the Cell Surface through Regulation of Its Postfusion Dispersal. **Cell
+Metabolism** 12:250-259
+[<doi:10.1016/j.cmet.2010.08.005>](http://dx.doi.org/10.1016/j.cmet.2010.08.005)
 PMID 20816091
 
-Michael J. Boyle, Rachael L. French, K. Amber Cosand, Jennie B. Dorman, Daniel P. Kiehart and Celeste A. Berg (2010). Division of labor: Subsets of dorsal-appendage-forming cells control the shape of the entire tube. '''Developmental Biology''' 346:68-79 [http://dx.doi.org/10.1016/j.ydbio.2010.07.018 doi::10.1016/j.ydbio.2010.07.018]
+Michael J. Boyle, Rachael L. French, K. Amber Cosand, Jennie B. Dorman,
+Daniel P. Kiehart and Celeste A. Berg (2010). Division of labor: Subsets
+of dorsal-appendage-forming cells control the shape of the entire tube.
+**Developmental Biology** 346:68-79
+[<doi::10.1016/j.ydbio.2010.07.018>](http://dx.doi.org/10.1016/j.ydbio.2010.07.018)
 PMID 20659448
 
-Kurt Thorn (2010). Spinning-Disk Confocal Microscopy of Yeast. '''Methods in Enzymology'''
-470:581-602 [http://dx.doi.org/10.1016/S0076-6879(10)70023-9 doi::10.1016/S0076-6879(10)70023-9]
+Kurt Thorn (2010). Spinning-Disk Confocal Microscopy of Yeast. **Methods
+in Enzymology** 470:581-602
+[<doi::10.1016/S0076-6879(10)70023-9>](http://dx.doi.org/10.1016/S0076-6879\(10\)70023-9)
 PMID 20946826
 
-Shalin B. Mehta and Colin J. R. Sheppard (2010). Sample-less calibration of the differential interference contrast microscope. '''Applied optics''' 49: 2954-2968 [http://dx.doi.org/10.1364/AO.49.002954 doi:10.1364/AO.49.002954]
+Shalin B. Mehta and Colin J. R. Sheppard (2010). Sample-less calibration
+of the differential interference contrast microscope. **Applied optics**
+49: 2954-2968
+[<doi:10.1364/AO.49.002954>](http://dx.doi.org/10.1364/AO.49.002954)
 PMID 20490258
 
-Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta, Christophe Zimmer & Musa M Mhlanga (2010). QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ. '''Nature Methods''' 7:339–340 [http://dx.doi.org/10.1038/nmeth0510-339 doi:10.1038/nmeth0510-339]
+Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta,
+Christophe Zimmer & Musa M Mhlanga (2010). QuickPALM: 3D real-time
+photoactivation nanoscopy image processing in ImageJ. **Nature Methods**
+7:339–340
+[<doi:10.1038/nmeth0510-339>](http://dx.doi.org/10.1038/nmeth0510-339)
 PMID 20431545
 
-Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S. Grieshaber, Bently Robinson and David J. Culp (2010) Tissue Distribution of Murine Muc19/Smgc Gene Products. '''Journal of Histochemistry & Cytochemistry''' 58(2): 141-156 [http://dx.doi.org/doi:10.1369/jhc.2009.954891 doi:10.1369/jhc.2009.954891]
-PMID 19826070 {{PMCID|2803704}}
+Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S.
+Grieshaber, Bently Robinson and David J. Culp (2010) Tissue Distribution
+of Murine Muc19/Smgc Gene Products. **Journal of Histochemistry &
+Cytochemistry** 58(2): 141-156
+[<doi:10.1369/jhc.2009.954891>](http://dx.doi.org/doi:10.1369/jhc.2009.954891)
+PMID 19826070 {% include PMCID text="2803704" %}
 
-Anindya Ghosh-Roy, Zilu Wu, Alexandr Goncharov Yishi Jin and Andrew D. Chisholm (2010) Calcium and Cyclic AMP Promote Axonal Regeneration in Caenorhabditis elegans and Require DLK-1 Kinase. '''The Journal of Neuroscience''' 30(9):3175-3183 [http://dx.doi.org/doi:10.1523/JNEUROSCI.5464-09.2010 doi:10.1523/JNEUROSCI.5464-09.2010]
-PMID 20203177 {{PMCID|2921707}}
+Anindya Ghosh-Roy, Zilu Wu, Alexandr Goncharov Yishi Jin and Andrew D.
+Chisholm (2010) Calcium and Cyclic AMP Promote Axonal Regeneration in
+Caenorhabditis elegans and Require DLK-1 Kinase. **The Journal of
+Neuroscience** 30(9):3175-3183
+[<doi:10.1523/JNEUROSCI.5464-09.2010>](http://dx.doi.org/doi:10.1523/JNEUROSCI.5464-09.2010)
+PMID 20203177 {% include PMCID text="2921707" %}
 
-Shan Shan Kou, Laura Waller, George Barbastathis, and Colin J. R. Sheppard (2010) Transport-of-intensity approach to differential interference contrast (TI-DIC) microscopy for quantitative phase imaging. '''Optics Letters''' 35(3):447-449 [http://dx.doi.org/10.1364/OL.35.000447 doi:10.1364/OL.35.000447]
+Shan Shan Kou, Laura Waller, George Barbastathis, and Colin J. R.
+Sheppard (2010) Transport-of-intensity approach to differential
+interference contrast (TI-DIC) microscopy for quantitative phase
+imaging. **Optics Letters** 35(3):447-449
+[<doi:10.1364/OL.35.000447>](http://dx.doi.org/10.1364/OL.35.000447)
 PMID 20125750
 
-John Oreopoulos, Raquel F. Epand, Richard M. Epand, and Christopher M. Yip (2010) Peptide-induced domain formation in supported lipid bilayers: Direct evidence by combined atomic force and polarized total internal reflection fluorescence microscopy. '''Biophysical Journal''' 98(5):815-823 [http://dx.doi.org/10.1016/j.bpj.2009.12.486 doi:10.1016/j.bpj.2009.12.486]
-PMID 20197035 {{PMCID|2830440}}
+John Oreopoulos, Raquel F. Epand, Richard M. Epand, and Christopher M.
+Yip (2010) Peptide-induced domain formation in supported lipid bilayers:
+Direct evidence by combined atomic force and polarized total internal
+reflection fluorescence microscopy. **Biophysical Journal**
+98(5):815-823
+[<doi:10.1016/j.bpj.2009.12.486>](http://dx.doi.org/10.1016/j.bpj.2009.12.486)
+PMID 20197035 {% include PMCID text="2830440" %}
 
-Christian Conrad and Daniel Gerlich (2010). Automated microscopy for high-content RNAi screening. '''Journal of Cell Biology''' 188/4:453-461
-[http://dx.doi.org/10.1083/jcb.200910105 doi:10.1083/jcb.200910105]
-PMID 20176920 {{PMCID|2828931}}
+Christian Conrad and Daniel Gerlich (2010). Automated microscopy for
+high-content RNAi screening. **Journal of Cell Biology** 188/4:453-461
+[<doi:10.1083/jcb.200910105>](http://dx.doi.org/10.1083/jcb.200910105)
+PMID 20176920 {% include PMCID text="2828931" %}
 
-Jerome W. Breslin, Kristine M. Kurtz (2010). Lymphatic Endothelial Cells Adapt Their Barrier Function in Response to Changes in Shear Stress. '''Lymphatic Research and Biology''' 7(4):229-237
-[http://dx.doi.org/10.1089/lrb.2009.0015 doi:10.1089/lrb.2009.0015]
-PMID 20143922 {{PMCID|2883493}}
+Jerome W. Breslin, Kristine M. Kurtz (2010). Lymphatic Endothelial Cells
+Adapt Their Barrier Function in Response to Changes in Shear Stress.
+**Lymphatic Research and Biology** 7(4):229-237
+[<doi:10.1089/lrb.2009.0015>](http://dx.doi.org/10.1089/lrb.2009.0015)
+PMID 20143922 {% include PMCID text="2883493" %}
 
-David K. Breslow, Sean R. Collins, Bernd Bodenmiller, Ruedi Aebersold, Kai Simons, Andrej Shevchenko, Christer S. Ejsing, and Jonathan S. Weissman (2010). Orm family proteins mediate sphingolipid homeostasis. '''Nature''' 463:1048-1053 [http://dx.doi.org/10.1038/nature08787 doi:10.1038/nature08787]
-PMID 20182505 {{PMCID|2877384}}
+David K. Breslow, Sean R. Collins, Bernd Bodenmiller, Ruedi Aebersold,
+Kai Simons, Andrej Shevchenko, Christer S. Ejsing, and Jonathan S.
+Weissman (2010). Orm family proteins mediate sphingolipid homeostasis.
+**Nature** 463:1048-1053
+[<doi:10.1038/nature08787>](http://dx.doi.org/10.1038/nature08787) PMID
+20182505 {% include PMCID text="2877384" %}
 
 Total 2010 Citations: 50
 
-==2009==
+## 2009
 
-Thomas M Suchyna, Vladamir S Markin and Frederick Sachs (2009). Biophysics and Structure of the Patch and Gigaseal. '''Biophysical Journal''' 97: 738-747 [http://dx.doi.org/10.1016/j.bpj.2009.05.018 doi:10.1016/j.bpj.2009.05.018]
-PMID 19651032 {{PMCID|2718145}}
+Thomas M Suchyna, Vladamir S Markin and Frederick Sachs (2009).
+Biophysics and Structure of the Patch and Gigaseal. **Biophysical
+Journal** 97: 738-747
+[<doi:10.1016/j.bpj.2009.05.018>](http://dx.doi.org/10.1016/j.bpj.2009.05.018)
+PMID 19651032 {% include PMCID text="2718145" %}
 
-{{Cite journal
-| doi = 10.1038/nature08446
+{% include Cite_journal
+ text=" doi = 10.1038/nature08446
 | issn = 0028-0836
 | volume = 461
 | issue = 7266
@@ -1844,11 +4468,10 @@ PMID 19651032 {{PMCID|2718145}}
 | title = Spatiotemporal control of cell signalling using a light-switchable protein interaction
 | journal = Nature
 | date = 2009
-}}
-19749742
+" %} 19749742
 
-{{Cite journal
-| doi = 10.1126/science.1167983
+{% include Cite_journal
+ text=" doi = 10.1126/science.1167983
 | issn = 0036-8075
 | volume = 323
 | issue = 5922
@@ -1859,11 +4482,10 @@ PMID 19651032 {{PMCID|2718145}}
 | title = Comprehensive characterization of genes required for protein folding in the endoplasmic reticulum
 | journal = Science
 | date = 2009
-}}
-19325107
+" %} 19325107
 
-{{Cite journal
-| doi = 10.1126/science.1175088
+{% include Cite_journal
+ text=" doi = 10.1126/science.1175088
 | issn = 0036-8075
 | volume = 325
 | issue = 5939
@@ -1874,11 +4496,10 @@ PMID 19651032 {{PMCID|2718145}}
 | title = An ER-mitochondria tethering complex revealed by a synthetic biology screen
 | journal = Science
 | date = 2009
-}}
-19556461
+" %} 19556461
 
-{{Cite journal
-| doi = 10.1083/jcb.200907074
+{% include Cite_journal
+ text=" doi = 10.1083/jcb.200907074
 | issn = 0021-9525
 | volume = 187
 | issue = 4
@@ -1889,64 +4510,163 @@ PMID 19651032 {{PMCID|2718145}}
 | title = Membrane expansion alleviates endoplasmic reticulum stress independently of the unfolded protein response
 | journal = The Journal of Cell Biology
 | date = 2009
-}}
-19948500
+" %} 19948500
 
-Matula, P., Maška, M., Danek, O., Matula, P., and Kozubek, M. (2009). Acquiarium: free software for the acquisition and analysis of 3D images of cells in fluorescence microscopy. In '''Proceedings of the Sixth IEEE international Conference on Symposium on Biomedical Imaging: From Nano To Macro''' (Boston, Massachusetts, USA, June 28 - July 01, 2009). IEEE Press, Piscataway, NJ, 1138-1141 [http://www.muni.cz/research/publications/833229]
+Matula, P., Maška, M., Danek, O., Matula, P., and Kozubek, M. (2009).
+Acquiarium: free software for the acquisition and analysis of 3D images
+of cells in fluorescence microscopy. In **Proceedings of the Sixth IEEE
+international Conference on Symposium on Biomedical Imaging: From Nano
+To Macro** (Boston, Massachusetts, USA, June 28 - July 01, 2009). IEEE
+Press, Piscataway, NJ, 1138-1141
+[7](http://www.muni.cz/research/publications/833229)
 
-Jungho Ohn, Huai-Jen Tsai, and Michael Liebling (2009).  Joint dynamic imaging of morphogenesis and function in the developing heart. '''Organogenesis''' 5:166-173 [http://www.landesbioscience.com/journals/organogenesis/article/10568 link to pdf]
+Jungho Ohn, Huai-Jen Tsai, and Michael Liebling (2009). Joint dynamic
+imaging of morphogenesis and function in the developing heart.
+**Organogenesis** 5:166-173 [link to
+pdf](http://www.landesbioscience.com/journals/organogenesis/article/10568)
 
-A. Bernardini, C. Wotzlaw, H.-G. Lipinski, and J. Fandrey (2009). An Automated Real Time System for FRET Based Protein-Protein Interaction Analysis. '''IFMBE Proceedings''' 25/4:1056-1058 [http://dx.doi.org/10.1007/978-3-642-03882-2_281 doi:10.1007/978-3-642-03882-2_281]
+A. Bernardini, C. Wotzlaw, H.-G. Lipinski, and J. Fandrey (2009). An
+Automated Real Time System for FRET Based Protein-Protein Interaction
+Analysis. **IFMBE Proceedings** 25/4:1056-1058
+[<doi:10.1007/978-3-642-03882-2_281>](http://dx.doi.org/10.1007/978-3-642-03882-2_281)
 
-James C. W. Locke  and  Michael B. Elowitz (2009). Using movies to analyse gene circuit dynamics in single cells. '''Nature Reviews Microbiology.''' [http://dx.doi.org/10.1038/nrmicro2056 doi:10.1038/nrmicro2056]. PMID 19369953. {{PMCID|2853934}}
+James C. W. Locke and Michael B. Elowitz (2009). Using movies to analyse
+gene circuit dynamics in single cells. **Nature Reviews Microbiology.**
+[<doi:10.1038/nrmicro2056>](http://dx.doi.org/10.1038/nrmicro2056). PMID
+19369953. {% include PMCID text="2853934" %}
 
-Vedakumar Tatavarty, Eun-Ji Kim, Vladimir Rodionov, and Ji Yu (2009). Investigating Sub-Spine Actin Dynamics in Rat Hippocampal Neurons with Super-Resolution Optical Imaging. '''PLoS One.''' [http://dx.doi.org/10.1371/journal.pone.0007724 doi:10.1371/journal.pone.0007724]. PMID 19898630. {{PMCID|2771285}}
+Vedakumar Tatavarty, Eun-Ji Kim, Vladimir Rodionov, and Ji Yu (2009).
+Investigating Sub-Spine Actin Dynamics in Rat Hippocampal Neurons with
+Super-Resolution Optical Imaging. **PLoS One.**
+[<doi:10.1371/journal.pone.0007724>](http://dx.doi.org/10.1371/journal.pone.0007724).
+PMID 19898630. {% include PMCID text="2771285" %}
 
-Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S. Grieshaber, Bently Robinson, and David J. Culp (2009). Tissue Distibution of Murine <i>Muc19/Smgc</i> Gene Products. '''J.  Histochem. and Cytochem.''' [http://dx.doi.org/10.1369/jhc.2009.954891 doi:10.1369/jhc.2009.954891]. PMID 19826070. {{PMCID|2803704}}
+Biswadip Das, Melanie N. Cash, Arthur R. Hand, Armin Shivazad, Scott S.
+Grieshaber, Bently Robinson, and David J. Culp (2009). Tissue
+Distibution of Murine <i>Muc19/Smgc</i> Gene Products. **J. Histochem.
+and Cytochem.**
+[<doi:10.1369/jhc.2009.954891>](http://dx.doi.org/10.1369/jhc.2009.954891).
+PMID 19826070. {% include PMCID text="2803704" %}
 
-Ronald D. Vale, James A. Spudich, and Eric R. Griffis (2009). Dynamics of myosin, microtubules, and Kinesin-6 at the cortex during cytokinesis in Drosophila S2 cells. '''J. Cell Biol.''' 186:727-738 [http://dx.doi.org/10.1083/jcb.200902083 doi:10.1083/jcb.200902083]. PMID 19720876. {{PMCID|2742194}}
+Ronald D. Vale, James A. Spudich, and Eric R. Griffis (2009). Dynamics
+of myosin, microtubules, and Kinesin-6 at the cortex during cytokinesis
+in Drosophila S2 cells. **J. Cell Biol.** 186:727-738
+[<doi:10.1083/jcb.200902083>](http://dx.doi.org/10.1083/jcb.200902083).
+PMID 19720876. {% include PMCID text="2742194" %}
 
-Grossmann S, Higashiyama S, Oksche A, Schaefer M, and Tannert A (2009).  Localisation of endothelin B receptor variants to plasma membrane microdomains and its effects on downstream signalling.  '''Mol Membr Biol.''' 26:279-292.
-[http://dx.doi.org/10.1080/09687680903191682 doi:10.1080/09687680903191682]. PMID 19757321.
+Grossmann S, Higashiyama S, Oksche A, Schaefer M, and Tannert A (2009).
+Localisation of endothelin B receptor variants to plasma membrane
+microdomains and its effects on downstream signalling. **Mol Membr
+Biol.** 26:279-292.
+[<doi:10.1080/09687680903191682>](http://dx.doi.org/10.1080/09687680903191682).
+PMID 19757321.
 
-Miao-Hsueh Chen, Christopher W. Wilson, Ya-Jun Li, Kelvin King Lo Law, Chi-Sheng Lu, Rhodora Gacayan, Xiaoyun Zhang, Chi-chung Hui, and Pao-Tien Chuang (2009). Cilium-independent regulation of Gli protein function by Sufu in Hedgehog signaling is evolutionarily conserved. '''Genes & Development''' 23:1910-1928 [http://dx.doi.org/10.1101/gad.1794109 doi: 10.1101/gad.1794109 ]. PMID 19684112. {{PMCID|2725943}}
+Miao-Hsueh Chen, Christopher W. Wilson, Ya-Jun Li, Kelvin King Lo Law,
+Chi-Sheng Lu, Rhodora Gacayan, Xiaoyun Zhang, Chi-chung Hui, and
+Pao-Tien Chuang (2009). Cilium-independent regulation of Gli protein
+function by Sufu in Hedgehog signaling is evolutionarily conserved.
+**Genes & Development** 23:1910-1928
+[doi: 10.1101/gad.1794109](http://dx.doi.org/10.1101/gad.1794109). PMID
+19684112. {% include PMCID text="2725943" %}
 
-Christopher W. Wilson, Catherine T. Nguyen, Miao-Hsueh Chen, Jehn-Hsiahn Yang, Rhodora Gacayan, Jie Huang, Jau-Nian Chen  &  Pao-Tien Chuang (2009). Fused has evolved divergent roles in vertebrate Hedgehog signalling and motile ciliogenesis. '''Nature''' 459:98-102 [http://dx.doi.org/doi:10.1038/nature07883 doi:10.1038/nature07883]
+Christopher W. Wilson, Catherine T. Nguyen, Miao-Hsueh Chen, Jehn-Hsiahn
+Yang, Rhodora Gacayan, Jie Huang, Jau-Nian Chen & Pao-Tien Chuang
+(2009). Fused has evolved divergent roles in vertebrate Hedgehog
+signalling and motile ciliogenesis. **Nature** 459:98-102
+[<doi:10.1038/nature07883>](http://dx.doi.org/doi:10.1038/nature07883)
 
-Margaret Lin Veruki and Espen Hartveit (2009). Meclofenamic Acid Blocks Electrical Synapses of Retinal AII Amacrine and ON-Cone Bipolar Cells. '''J Neurophysiol ''' 101: 2339-2347 [http://dx.doi.org/10.1152/jn.00112.2009 doi:10.1152/jn.00112.2009]. PMID 19279153.
+Margaret Lin Veruki and Espen Hartveit (2009). Meclofenamic Acid Blocks
+Electrical Synapses of Retinal AII Amacrine and ON-Cone Bipolar Cells.
+'''J Neurophysiol ''' 101: 2339-2347
+[<doi:10.1152/jn.00112.2009>](http://dx.doi.org/10.1152/jn.00112.2009).
+PMID 19279153.
 
-Jonathan M.  Glynn, Yue  Yang, Stanislav  Vitha, Aaron J.  Schmitz, Mia  Hemmes, Shin-ya  Miyagishima, and  Katherine W.  Osteryoung (2009). PARC6, a novel chloroplast division factor, influences FtsZ assembly and is required for recruitment of PDV1 during chloroplast division in Arabidopsis. '''The Plant Journal''' 59:700-711 [http://dx.doi.org/10.1111/j.1365-313X.2009.03905.x doi:10.1111/j.1365-313X.2009.03905.x]. PMID 19453460.
+Jonathan M. Glynn, Yue Yang, Stanislav Vitha, Aaron J. Schmitz, Mia
+Hemmes, Shin-ya Miyagishima, and Katherine W. Osteryoung (2009). PARC6,
+a novel chloroplast division factor, influences FtsZ assembly and is
+required for recruitment of PDV1 during chloroplast division in
+Arabidopsis. **The Plant Journal** 59:700-711
+[<doi:10.1111/j.1365-313X.2009.03905.x>](http://dx.doi.org/10.1111/j.1365-313X.2009.03905.x).
+PMID 19453460.
 
-Yoshihisa Kaizuka, Adam D. Douglass, Santosh Vardhana, Michael L. Dustin, and Ronald D. Vale (2009). The coreceptor CD2 uses plasma membrane microdomains to transduce signals in T cells. '''J. Cell Biol.''' [[http://dx.doi.org/10.1083/jcb.200809136 doi:10.1083/jcb.200809136]. PMID 19398758. {{PMCID|2700390}}
+Yoshihisa Kaizuka, Adam D. Douglass, Santosh Vardhana, Michael L.
+Dustin, and Ronald D. Vale (2009). The coreceptor CD2 uses plasma
+membrane microdomains to transduce signals in T cells. **J. Cell Biol.**
+\[[<doi:10.1083/jcb.200809136>](http://dx.doi.org/10.1083/jcb.200809136).
+PMID 19398758. {% include PMCID text="2700390" %}
 
-Guangshuo Ou, and Ronald D. Vale (2009). Molecular signatures of cell migration in C. elegans Q neuroblasts. '''J. Cell Biol.''' 185:77-85 [http://dx.doi.org/10.1083/jcb.200812077 doi:10.1083/jcb.200812077]. PMID 19349580. {{PMCID|2700521}}
+Guangshuo Ou, and Ronald D. Vale (2009). Molecular signatures of cell
+migration in C. elegans Q neuroblasts. **J. Cell Biol.** 185:77-85
+[<doi:10.1083/jcb.200812077>](http://dx.doi.org/10.1083/jcb.200812077).
+PMID 19349580. {% include PMCID text="2700521" %}
 
-Liisa M. Hirvonen, Kai Wicker, Ondrej Mandula and Rainer Heintzmann (2009). Structured illumination microscopy of a living cell. '''European Biophysics Journal''' 38:807-812 [http://dx.doi.org/10.1007/s00249-009-0501-6 doi:10.1007/s00249-009-0501-6]. PMID 19536533.
+Liisa M. Hirvonen, Kai Wicker, Ondrej Mandula and Rainer Heintzmann
+(2009). Structured illumination microscopy of a living cell. **European
+Biophysics Journal** 38:807-812
+[<doi:10.1007/s00249-009-0501-6>](http://dx.doi.org/10.1007/s00249-009-0501-6).
+PMID 19536533.
 
-J. Bradley Zuchero, Amanda S. Coutts, Margot E. Quinlan, Nicholas B. La Thangue  &  R. Dyche Mullins (2009). p53-cofactor JMY is a multifunctional actin nucleation factor. '''Nature Cell Biology''' 11:451-459 [http://dx.doi.org/10.1038/ncb1852 doi:10.1038/ncb1852]. PMID 19287377. {{PMCID|2763628}}
+J. Bradley Zuchero, Amanda S. Coutts, Margot E. Quinlan, Nicholas B. La
+Thangue & R. Dyche Mullins (2009). p53-cofactor JMY is a multifunctional
+actin nucleation factor. **Nature Cell Biology** 11:451-459
+[<doi:10.1038/ncb1852>](http://dx.doi.org/10.1038/ncb1852). PMID
+19287377. {% include PMCID text="2763628" %}
 
-Andrew D Straw, and Michael H Dickinson (2009). Motmot, an open-source toolkit for realtime video acquisition and analysis. '''Source Code Biol Med.''' 4:5. [http://dx.doi.org/10.1186/1751-0473-4-5 doi:10.1186/1751-0473-4-5]. PMID 19624853. {{PMCID|2732620}}
+Andrew D Straw, and Michael H Dickinson (2009). Motmot, an open-source
+toolkit for realtime video acquisition and analysis. **Source Code Biol
+Med.** 4:5.
+[<doi:10.1186/1751-0473-4-5>](http://dx.doi.org/10.1186/1751-0473-4-5).
+PMID 19624853. {% include PMCID text="2732620" %}
 
-H. Khodja, M. Hanot, b, M. Carrièr, b, J. Hoarau, b and J.F. Angulo (2009). The single-particle microbeam facility at CEA-Saclay.  '''Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms''' 267:1999-2002. [http://dx.doi.org/10.1016/j.nimb.2009.03.040 doi:10.1016/j.nimb.2009.03.040]  
+H. Khodja, M. Hanot, b, M. Carrièr, b, J. Hoarau, b and J.F. Angulo
+(2009). The single-particle microbeam facility at CEA-Saclay. **Nuclear
+Instruments and Methods in Physics Research Section B: Beam Interactions
+with Materials and Atoms** 267:1999-2002.
+[<doi:10.1016/j.nimb.2009.03.040>](http://dx.doi.org/10.1016/j.nimb.2009.03.040)
 
-Franco J. Vizeacoumar, Yolanda Chong, Charles Boone and Brenda J. Andrews (2009). A picture is worth a thousand words: Genomics to phenomics in the yeast Saccharomyces cerevisiae. '''FEBS Letters'''. 583:1656-1661. [http://dx.doi.org/10.1016/j.febslet.2009.03.068  doi:10.1016/j.febslet.2009.03.068]  PMID 19351535.
+Franco J. Vizeacoumar, Yolanda Chong, Charles Boone and Brenda J.
+Andrews (2009). A picture is worth a thousand words: Genomics to
+phenomics in the yeast Saccharomyces cerevisiae. **FEBS Letters**.
+583:1656-1661.
+[<doi:10.1016/j.febslet.2009.03.068>](http://dx.doi.org/10.1016/j.febslet.2009.03.068)
+PMID 19351535.
 
-X. Michalet, R.A. Colyer, J. Antelman, O.H.W. Siegmund, A. Tremsin, J.V. Vallerga, and S. Weiss (2009). Single-Quantum Dot Imaging with a Photon Counting Camera. '''Current Pharmaceutical Biotechnology''' 10:543-558 PMID 19689323 {{PMCID|2830710}}
+X. Michalet, R.A. Colyer, J. Antelman, O.H.W. Siegmund, A. Tremsin, J.V.
+Vallerga, and S. Weiss (2009). Single-Quantum Dot Imaging with a Photon
+Counting Camera. **Current Pharmaceutical Biotechnology** 10:543-558
+PMID 19689323 {% include PMCID text="2830710" %}
 
-John Oreopoulos and Christopher M. Yip (2009). Combinatorial microscopy for the study of protein–membrane interactions in supported lipid bilayers: Order parameter measurements by combined polarized TIRFM/AFM. '''J Struct Biol'''. 168:21-36. [http://dx.doi.org/10.1016/j.jsb.2009.02.011 doi:10.1016/j.jsb.2009.02.011]. PMID 19268707.
+John Oreopoulos and Christopher M. Yip (2009). Combinatorial microscopy
+for the study of protein–membrane interactions in supported lipid
+bilayers: Order parameter measurements by combined polarized TIRFM/AFM.
+**J Struct Biol**. 168:21-36.
+[<doi:10.1016/j.jsb.2009.02.011>](http://dx.doi.org/10.1016/j.jsb.2009.02.011).
+PMID 19268707.
 
-Julia R. Kardon, Samara L. Reck-Peterson, and Ronald D. Vale (2009). Regulation of the processivity and intracellular localization of Saccharomyces cerevisiae dynein by dynactin. '''PNAS'''. 106:5669-5674. [http://dx.doi.org/10.1073/pnas.0900976106 doi: 10.1073/pnas.0900976106]  PMID 19293377. {{PMCID|2657088}}
+Julia R. Kardon, Samara L. Reck-Peterson, and Ronald D. Vale (2009).
+Regulation of the processivity and intracellular localization of
+Saccharomyces cerevisiae dynein by dynactin. **PNAS**. 106:5669-5674.
+[doi: 10.1073/pnas.0900976106](http://dx.doi.org/10.1073/pnas.0900976106)
+PMID 19293377. {% include PMCID text="2657088" %}
 
-Samways, D.S., Harkins, A.B. & Egan, T.M (2009). Native and recombinant ASIC1a receptors conduct negligible Ca2+ entry. '''Cell Calcium'''. 45:319-325. [http://dx.doi.org/10.1016/j.ceca.2008.12.002 doi:10.1016/j.ceca.2008.12.002]. PMID 19185346. {{PMCID|2890224}}
+Samways, D.S., Harkins, A.B. & Egan, T.M (2009). Native and recombinant
+ASIC1a receptors conduct negligible Ca2+ entry. **Cell Calcium**.
+45:319-325.
+[<doi:10.1016/j.ceca.2008.12.002>](http://dx.doi.org/10.1016/j.ceca.2008.12.002).
+PMID 19185346. {% include PMCID text="2890224" %}
 
-Chambers, R.D. & Santiago, J.G (2009). Imaging and Quantification of Isotachophoresis Zones Using Nonfocusing Fluorescent Tracers. '''Analytical Chemistry'''. Early publication online. [http://dx.doi.org/10.1021/ac802698a doi:10.1021/ac802698a]. PMID 19290665.
+Chambers, R.D. & Santiago, J.G (2009). Imaging and Quantification of
+Isotachophoresis Zones Using Nonfocusing Fluorescent Tracers.
+**Analytical Chemistry**. Early publication online.
+[<doi:10.1021/ac802698a>](http://dx.doi.org/10.1021/ac802698a). PMID
+19290665.
 
 Total 2009 Citations: 28
 
-==2008==
+## 2008
 
-{{Cite journal
-| doi = 10.1016/j.cell.2008.06.025
+{% include Cite_journal
+ text=" doi = 10.1016/j.cell.2008.06.025
 | issn = 0092-8674
 | volume = 134
 | issue = 4
@@ -1957,62 +4677,142 @@ Total 2009 Citations: 28
 | title = The GET Complex Mediates Insertion of Tail-Anchored Proteins into the ER Membrane
 | journal = Cell
 | date = 2008-08-22
-}}
+" %}
 
-Moreira KE, Walther TC, Aguilar PS, Walter P. (2008) Pil1 Controls Eisosome Biogenesis. '''Mol. Biol. Cell.''' 20: 809-818. [http://dx.doi.org/10.1091/mbc.E08-03-0313 doi:10.1091/mbc.E08-03-0313]. PMID 19037108. {{PMCID|2633383}}
+Moreira KE, Walther TC, Aguilar PS, Walter P. (2008) Pil1 Controls
+Eisosome Biogenesis. **Mol. Biol. Cell.** 20: 809-818.
+[<doi:10.1091/mbc.E08-03-0313>](http://dx.doi.org/10.1091/mbc.E08-03-0313).
+PMID 19037108. {% include PMCID text="2633383" %}
 
-Olivier Debeir, Ivan Adanja, Robert Kiss & Christine Decaestecker (2008). Models of cancer cell migration 
-and cellular imaging and analysis. Chapter 5 of ''The motile actin system in health and disease.'' Edited by: Lambrechts A, Ampe C. Kerala: Transworld Research Network, pp 123-156. [http://lisa.ulb.ac.be/publifiles/207/Lambrechts5_last.pdf PDF]
+Olivier Debeir, Ivan Adanja, Robert Kiss & Christine Decaestecker
+(2008). Models of cancer cell migration and cellular imaging and
+analysis. Chapter 5 of *The motile actin system in health and disease.*
+Edited by: Lambrechts A, Ampe C. Kerala: Transworld Research Network, pp
+123-156.
+[PDF](http://lisa.ulb.ac.be/publifiles/207/media/Lambrechts5_last.pdf)
 
-Bashkirov, P.V. et al (2008). GTPase Cycle of Dynamin Is Coupled to Membrane Squeeze and Release, Leading to Spontaneous Fission. '''Cell'''. 135:1276-1286. [http://dx.doi.org/10.1016/j.cell.2008.11.028 doi:10.1016/j.cell.2008.11.028]. PMID 19084269. {{PMCID|2768395}}
+Bashkirov, P.V. et al (2008). GTPase Cycle of Dynamin Is Coupled to
+Membrane Squeeze and Release, Leading to Spontaneous Fission. **Cell**.
+135:1276-1286.
+[<doi:10.1016/j.cell.2008.11.028>](http://dx.doi.org/10.1016/j.cell.2008.11.028).
+PMID 19084269. {% include PMCID text="2768395" %}
 
-Zimberlin, J.A., Wadsworth, P. & Crosby, A.J . Living microlens arrays (2008). '''Cell Motility and the Cytoskeleton'''. 65. [http://dx.doi.org/10.1002/cm.20302 doi:10.1002/cm.20302]. PMID 18615631. {{PMCID|2848389}}
+Zimberlin, J.A., Wadsworth, P. & Crosby, A.J . Living microlens arrays
+(2008). **Cell Motility and the Cytoskeleton**. 65.
+[<doi:10.1002/cm.20302>](http://dx.doi.org/10.1002/cm.20302). PMID
+18615631. {% include PMCID text="2848389" %}
 
-Aragón, T. et al (2008). Messenger RNA targeting to endoplasmic reticulum stress signalling sites. '''Nature'''. 457:736-740. [http://dx.doi.org/10.1038/nature07641 doi:10.1038/nature07641]. PMID 19079237. {{PMCID|2768538}}
+Aragón, T. et al (2008). Messenger RNA targeting to endoplasmic
+reticulum stress signalling sites. **Nature**. 457:736-740.
+[<doi:10.1038/nature07641>](http://dx.doi.org/10.1038/nature07641). PMID
+19079237. {% include PMCID text="2768538" %}
 
-Merksamer, P.I., Trusina, A. & Papa, F.R (2008). Real-Time Redox Measurements during Endoplasmic Reticulum Stress Reveal Interlinked Protein Folding Functions. '''Cell'''. 135:933-947. [http://dx.doi.org/10.1016/j.cell.2008.10.011 doi:10.1016/j.cell.2008.10.011]. PMID 19026441. {{PMCID|2739138}}
+Merksamer, P.I., Trusina, A. & Papa, F.R (2008). Real-Time Redox
+Measurements during Endoplasmic Reticulum Stress Reveal Interlinked
+Protein Folding Functions. **Cell**. 135:933-947.
+[<doi:10.1016/j.cell.2008.10.011>](http://dx.doi.org/10.1016/j.cell.2008.10.011).
+PMID 19026441. {% include PMCID text="2739138" %}
 
-Chernomoretz, A. et al (2008). Using Cell-ID 1.4 with R for microscope-based cytometry. '''Current protocols in molecular biology'''. Unit 14.18. [http://dx.doi.org/10.1002/0471142727.mb1418s84 doi:10.1002/0471142727.mb1418s84]. PMID 18972382. {{PMCID|2784696}}
+Chernomoretz, A. et al (2008). Using Cell-ID 1.4 with R for
+microscope-based cytometry. **Current protocols in molecular biology**.
+Unit 14.18.
+[<doi:10.1002/0471142727.mb1418s84>](http://dx.doi.org/10.1002/0471142727.mb1418s84).
+PMID 18972382. {% include PMCID text="2784696" %}
 
-Ingrid C.  Koo, Chen  Wang, Sridharan  Raghavan, J. Hiroshi  Morisaki, Jeffery S.  Cox  and Eric J.  Brown (2008). ESX-1-dependent cytolysis in lysosome secretion and inflammasome activation during mycobacterial infection. '''Cellular Microbiology'''. 10(9):1866-1878 [http://dx.doi.org/10.1111/j.1462-5822.2008.01177.x doi:10.1111/j.1462-5822.2008.01177.x]. PMID 18503637. {{PMCID|2574867}}
+Ingrid C. Koo, Chen Wang, Sridharan Raghavan, J. Hiroshi Morisaki,
+Jeffery S. Cox and Eric J. Brown (2008). ESX-1-dependent cytolysis in
+lysosome secretion and inflammasome activation during mycobacterial
+infection. **Cellular Microbiology**. 10(9):1866-1878
+[<doi:10.1111/j.1462-5822.2008.01177.x>](http://dx.doi.org/10.1111/j.1462-5822.2008.01177.x).
+PMID 18503637. {% include PMCID text="2574867" %}
 
-Erika Rosivatz (2008). Imaging the boundaries—innovative tools for microscopy of living cells and real-time imaging. '''
-J Chem. Biol.''' [http://dx.doi.org/10.1007/s12154-008-0004-4 doi:10.1007/s12154-008-0004-4]. PMID 19568794. {{PMCID|2698318}}
+Erika Rosivatz (2008). Imaging the boundaries—innovative tools for
+microscopy of living cells and real-time imaging. *' J Chem. Biol.*'
+[<doi:10.1007/s12154-008-0004-4>](http://dx.doi.org/10.1007/s12154-008-0004-4).
+PMID 19568794. {% include PMCID text="2698318" %}
 
-Lili Niu and Ji Yu (2008). Investigating Intracellular Dynamics of FtsZ Cytoskeleton with Photo-activation Single-molecule Tracking. '''Biophysical J.''' 95:2009-2016 [http://dx.doi.org/10.1529/biophysj.108.128751 doi:10.1529/biophysj.108.128751]. PMID 18390602. {{PMCID|2483766}}
+Lili Niu and Ji Yu (2008). Investigating Intracellular Dynamics of FtsZ
+Cytoskeleton with Photo-activation Single-molecule Tracking.
+**Biophysical J.** 95:2009-2016
+[<doi:10.1529/biophysj.108.128751>](http://dx.doi.org/10.1529/biophysj.108.128751).
+PMID 18390602. {% include PMCID text="2483766" %}
 
-Liam J. Holt, Andrew N. Krutchinsky, and David O. Morgan (2008).  Positive feedback sharpens the anaphase switch.  '''Nature''' 454:353-357 PMID 18552837 {{PMCID|2636747}}
+Liam J. Holt, Andrew N. Krutchinsky, and David O. Morgan (2008).
+Positive feedback sharpens the anaphase switch. **Nature** 454:353-357
+PMID 18552837 {% include PMCID text="2636747" %}
 
-G. Goshima, M. Mayer, N. Zhang, N. Stuurman, and R.D. Vale (2008).  Augmin: a protein complex required for centrosome-independent microtubule generation within the spindle.  '''J Cell Biol.'''  181(3):421-429 PMID 18443220 {{PMCID|2364697}}
+G. Goshima, M. Mayer, N. Zhang, N. Stuurman, and R.D. Vale (2008).
+Augmin: a protein complex required for centrosome-independent
+microtubule generation within the spindle. **J Cell Biol.**
+181(3):421-429 PMID 18443220 {% include PMCID text="2364697" %}
 
-Griffis E.R., Stuurman N., Vale R.D. (2008). Spindly, a novel protein essential for silencing the spindle assembly checkpoint, recruits dynein to the kinetochore. '''J Cell Biol'''. 177(6):1005-1015 PMID 17576797 {{PMCID|2064361}}
+Griffis E.R., Stuurman N., Vale R.D. (2008). Spindly, a novel protein
+essential for silencing the spindle assembly checkpoint, recruits dynein
+to the kinetochore. **J Cell Biol**. 177(6):1005-1015 PMID 17576797
+{% include PMCID text="2064361" %}
 
 Total 2008 Citations: 14
 
-==2007==
+## 2007
 
-Christopher S. Campbell and R. Dyche Mullins (2007). In vivo visualization of type II plasmid segregation: bacterial actin filaments pushing plasmids. '''J Cell biol.''' 179(5):1059-1066 [http://dx.doi.org/10.1083/jcb.200708206 doi:10.1083/jcb.200708206]. PMID 18039937. {{PMCID|2099209}}
+Christopher S. Campbell and R. Dyche Mullins (2007). In vivo
+visualization of type II plasmid segregation: bacterial actin filaments
+pushing plasmids. **J Cell biol.** 179(5):1059-1066
+[<doi:10.1083/jcb.200708206>](http://dx.doi.org/10.1083/jcb.200708206).
+PMID 18039937. {% include PMCID text="2099209" %}
 
-Yi Yang, Amira M. El-Ganiny, Geoffrey E. Bray, David A.R. Sanders, and Susan G.W. Kaminskyj (2007). Aspergillus nidulans hypB encodes a Sec7-domain protein important for hyphal morphogenesis.  '''Fungal Genetics and Biology''' 45(5):749-759. [http://dx.doi.org/10.1016/j.fgb.2007.11.005 doi:10.1016/j.fgb.2007.11.005]. PMID 18248749.
+Yi Yang, Amira M. El-Ganiny, Geoffrey E. Bray, David A.R. Sanders, and
+Susan G.W. Kaminskyj (2007). Aspergillus nidulans hypB encodes a
+Sec7-domain protein important for hyphal morphogenesis. **Fungal
+Genetics and Biology** 45(5):749-759.
+[<doi:10.1016/j.fgb.2007.11.005>](http://dx.doi.org/10.1016/j.fgb.2007.11.005).
+PMID 18248749.
 
-Stuurman, N., Amodaj N., Vale, R.D. (2007). Micro-Manager: Open Source software for light microscope imaging.  '''Microscopy Today'''. 15(3):42-43. [http://microscopy-today.com/PDFFiles/MT-2007-03-small.pdf Full Issue (pdf)]
+Stuurman, N., Amodaj N., Vale, R.D. (2007). Micro-Manager: Open Source
+software for light microscope imaging. **Microscopy Today**.
+15(3):42-43. [Full Issue
+(pdf)](http://microscopy-today.com/PDFFiles/media/MT-2007-03-small.pdf)
 
-Kevin C. Slep and Ronald D. Vale (2007). Structural Basis of Microtubule Plus End Tracking by XMAP215, CLIP-170, and EB1. '''Molecular Cell''' 27(6):976-991. [http://dx.doi.org/10.1016/j.molcel.2007.07.023 doi:10.1016/j.molcel.2007.07.023]. PMID 17889670. {{PMCID|2052927}}
+Kevin C. Slep and Ronald D. Vale (2007). Structural Basis of Microtubule
+Plus End Tracking by XMAP215, CLIP-170, and EB1. **Molecular Cell**
+27(6):976-991.
+[<doi:10.1016/j.molcel.2007.07.023>](http://dx.doi.org/10.1016/j.molcel.2007.07.023).
+PMID 17889670. {% include PMCID text="2052927" %}
 
-Liam J. Holt, Jessica E. Hutti, Lewis C. Cantley and David O. Morgan (2007). Evolution of Ime2 Phosphorylation Sites on Cdk1 Substrates Provides a Mechanism to Limit the Effects of the Phosphatase Cdc14 in Meiosis. '''Molecular Cell''' 25(5):689-702. [http://dx.doi.org/10.1016/j.molcel.2007.02.012 doi:10.1016/j.molcel.2007.02.012]. PMID 17349956. {{PMCID|1939968}}
+Liam J. Holt, Jessica E. Hutti, Lewis C. Cantley and David O. Morgan
+(2007). Evolution of Ime2 Phosphorylation Sites on Cdk1 Substrates
+Provides a Mechanism to Limit the Effects of the Phosphatase Cdc14 in
+Meiosis. **Molecular Cell** 25(5):689-702.
+[<doi:10.1016/j.molcel.2007.02.012>](http://dx.doi.org/10.1016/j.molcel.2007.02.012).
+PMID 17349956. {% include PMCID text="1939968" %}
 
-Tony J. Collins. (2007) ImageJ for microscopy. '''BioTechniques''' 43:S25-S30 [http://dx.doi.org/10.2144/000112517 doi 10.2144/000112517]. PMID 112517.
+Tony J. Collins. (2007) ImageJ for microscopy. **BioTechniques**
+43:S25-S30 [doi 10.2144/000112517](http://dx.doi.org/10.2144/000112517).
+PMID 112517.
 
-Carpenter, A.E. (2007). Image-based chemical screening.  '''Nature Chemical Biology'''. 3:461-465.  [http://dx.doi.org/10.1038/nchembio.2007.15 doi:10.1038/nchembio.2007.15]. PMID 17637778.
+Carpenter, A.E. (2007). Image-based chemical screening. **Nature
+Chemical Biology**. 3:461-465.
+[<doi:10.1038/nchembio.2007.15>](http://dx.doi.org/10.1038/nchembio.2007.15).
+PMID 17637778.
 
-Carpenter, A.E. (2007). Software opens the door to quantitative imaging.  '''Nature Methods'''. 4:120-121. PMID 17264858.
+Carpenter, A.E. (2007). Software opens the door to quantitative imaging.
+**Nature Methods**. 4:120-121. PMID 17264858.
 
-Gordon A., Colman-Lerner A., Chin T.E., Benjamin K.R., Yu R.C., Brent R. (2007) Single-cell quantification of molecules and rates using open-source microscope-based cytometry. '''Nature Methods'''. 4:175-181. PMID 17237792.
+Gordon A., Colman-Lerner A., Chin T.E., Benjamin K.R., Yu R.C., Brent R.
+(2007) Single-cell quantification of molecules and rates using
+open-source microscope-based cytometry. **Nature Methods**. 4:175-181.
+PMID 17237792.
 
-Goshima G., Wollman R., Goodwin S.S., Zhang N., Scholey J.M., Vale R.D., Stuurman N. (2007). Genes required for mitotic spindle assembly in Drosophila S2 cells.  '''Science''' 316:417-421. PMID 17412918. {{PMCID|2837481}}
+Goshima G., Wollman R., Goodwin S.S., Zhang N., Scholey J.M., Vale R.D.,
+Stuurman N. (2007). Genes required for mitotic spindle assembly in
+Drosophila S2 cells. **Science** 316:417-421. PMID 17412918.
+{% include PMCID text="2837481" %}
 
-Garner E.C., Campbell C.S., Weibel D.B., Mullins R.D. (2007).  Reconstitution of DNA segregation driven by assemebly of a prokaryotic actin homolog.  '''Science'''. 315:1270-1274.  PMID 17332412. {{PMCID|2851738}}
+Garner E.C., Campbell C.S., Weibel D.B., Mullins R.D. (2007).
+Reconstitution of DNA segregation driven by assemebly of a prokaryotic
+actin homolog. **Science**. 315:1270-1274. PMID 17332412.
+{% include PMCID text="2851738" %}
 
 Total 2007 Citations: 11
 
-{{Credits_Sidebar}}
+{% include Credits_Sidebar text="" %}
