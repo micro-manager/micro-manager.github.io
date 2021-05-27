@@ -1,0 +1,30 @@
+<section id="nav">
+    <div class="topnav">
+        <a href="{{"/index" | relative_url}}">Home</a>
+        <a href="{{"/Micro-Manager_Project_Overview" | relative_url}}">Overview</a>
+        <a href="{{"/Download_Micro-Manager_Latest_Release" | relative_url}}">Downloads</a>
+        <a href="{{"Device_Support" | relative_url}}">Devices</a>
+        <a href="{{"/Screencasts" | relative_url}}">Learn</a>
+        <a href="{{"/Micro-Manager_Programming_Guide" | relative_url}}">Programming</a>
+        <a href="{{"/News" | relative_url}}">News</a>
+        <a href="{{"/Micro-Manager_at_the_ASCB_Meeting_2008" | relative_url}}">Events</a>
+        <a href="{{"/Micro-Manager_Community" | relative_url}}">Support</a>
+        <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
+        <div id="ham-nav" class="ham-drop" onclick="hamActivate(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div id="drop-menu" class="ham-drop-content">
+            <a href="{{"/index" | relative_url}}">Home</a>
+            <a href="{{"/Micro-Manager_Project_Overview" | relative_url}}">Overview</a>
+            <a href="{{"/Download_Micro-Manager_Latest_Release" | relative_url}}">Downloads</a>
+            <a href="{{"Device_Support" | relative_url}}">Devices</a>
+            <a href="{{"/Screencasts" | relative_url}}">Learn</a>
+            <a href="{{"/Micro-Manager_Programming_Guide" | relative_url}}">Programming</a>
+            <a href="{{"/News" | relative_url}}">News</a>
+            <a href="{{"/Micro-Manager_at_the_ASCB_Meeting_2008" | relative_url}}">Events</a>
+            <a href="{{"/Micro-Manager_Community" | relative_url}}">Support</a>
+            </div>
+        </div>
+    </div>
+</section>

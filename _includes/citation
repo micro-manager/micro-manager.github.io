@@ -1,0 +1,108 @@
+{%- comment -%} TODO merge with cite {%- endcomment -%}
+{% capture citation-content %}
+
+{% if include.last %}
+{% assign last = {{include.last}} %}
+{% endif %}
+
+{% if include.first %}
+{% assign first = {{include.first}} | append: "," %}
+{% endif %}
+
+{% if include.last2 %}
+{% assign last2 = {{include.last2}} %}
+{% endif %}
+
+{% if include.first2 %}
+{% assign first2 = {{include.first2 | append: "," %}
+{% endif %}
+
+{% if include.last3 %}
+{% assign last3 = {{include.last3}} %}
+{% endif %}
+
+{% if include.first3 %}
+{% assign first3 = {{include.first3}} | append: "," %}
+{% endif %}
+
+{% if include.last4 %}
+{% assign last4 = {{include.last4}} %}
+{% endif %}
+
+{% if include.first4 %}
+{% assign first4 = {{include.first4}} | append: "," %}
+{% endif %}
+
+{% if include.last5 %}
+{% assign last5 = {{include.last5}} %}
+{% endif %}
+
+{% if include.first5 %}
+{% assign first5 = {{include.first5}} | append: "," %}
+{% endif %}
+
+{% if include.last6 %}
+{% assign last6 = {{include.last6}} %}
+{% endif %}
+
+{% if include.first6 %}
+{% assign first6 = {{include.first6}} | append: "," %}
+{% endif %}
+
+{% if include.last7 %}
+{% assign last7 = {{include.last7}} %}
+{% endif %}
+
+{% if include.first7 %}
+{% assign first7 = {{include.first7}} | append: "," %}
+{% endif %}
+
+{% if include.title %}
+{% assign title = {{include.title}} %}
+{% endif %}
+
+{% if url.journal %}
+{% assign url = {{include.url}} %}
+{% endif %}
+
+{% if include.journal %}
+{% assign journal = {{include.journal}} %}
+{% endif %}
+{% if include.fn %}
+{% assign fn = {{include.fn}} | prepend: "[^" | append: "]:" %}
+{% endif %}
+{% if include.volume %}
+{% assign volume = {{include.volume}} | append: "**" | prepend: "**" | append: {{number}} | append: ":" %}
+{% endif %}
+{% if include.issue %}
+{% assign number = {{include.issue}} %}
+{% endif %}
+{% if include.number %}
+{% assign number = {{include.number}} | append: ")" | prepend: "(" %}
+{% endif %}
+{% if include.pages %}
+{% assign pages = {{include.pages}}%}
+{% endif %}
+{% if include.date %}
+{% assign date = "(" | append: {{include.year}} | append: ")," %}
+{% endif %}
+{% if include.PMID %}
+{% assign PMID = {{include.PMID}} %}
+{% endif %}
+{% if include.abstract %}
+{% assign abstract = {{include.abstract}} %}
+{% endif %}
+{% if include.doi %}
+{% assign doi = "doi:<a href=" | append: '"' | |append: "https://dx.doi.org/" | append: {{include.doi}} | append: '"' | append: ">" | append: {{include.doi}} | append: "</a>" %}
+{% endif %}
+
+{{fn}} {{last}} {{first}} {{last2}} {{first2}} {{last3}} {{first3}} {{last4}} {{first4}} {{last5}} {{first5}} {{last6}} {{first6}} "<a href="{{url}}">{{title}}</a>", *{{journal}}* {{volume}} {{pages}} {{doi}}.
+{% assign doi = "" %}
+{% endcapture %}
+
+
+{{citation-content | strip }}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

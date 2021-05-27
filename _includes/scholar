@@ -1,0 +1,8 @@
+{%- assign cluster = include.cluster -%}
+{%- assign label = include.label | default: "on Google Scholar" -%}
+
+<a href="https://scholar.google.com/scholar?cluster={{cluster}}">{{label}}</a>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
