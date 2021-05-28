@@ -4,8 +4,8 @@ title: JonD
 layout: page
 ---
 
-Jon Daniels is senior engineer at Applied Scientific Instruments and is
-the primary Micro-manager support person at ASI. He is relatively new to
-microscopy but has been developing instrumentation for biologists since
-his grad school days. His undergrad degree is in Chemistry and Physics
-and MS and PhD degrees in Electrical Engineering.
+Jon Daniels joined ASI/Applied Scientific Instrumentation in 2013 and at
+the time he was new to microscopy, but has been developing
+instrumentation for biologists since his grad school days. His undergrad
+degree is in Chemistry and Physics and MS and PhD degrees in Electrical
+Engineering.

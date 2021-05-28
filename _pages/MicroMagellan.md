@@ -4,14 +4,21 @@ title: MicroMagellan
 layout: page
 ---
 
-The Micro-Magellan plugin allows flexible, dynamic device control and
-acquisition. Explor acquisitions enable navigation of samples in XY and
-Z, to build a 3D map of sample quickly and with minimal photobleaching.
-Surfaces allows you to define an non-cuboidal region of interest and
-define sample morphology, which can then be used to define sample-driven
-parameters such as laser power at distance from surface. Using grids or
-surfaces, you can designate multiple areas to image in a one or more
-acquisitions. A high level overview of the capabilities of
+Micro-Magellan is a plugin for imaging large samples that span multiple
+fields of view (e.g. tissue sections, whole slides, multi-well plates).
+It provides a graphical user interface for navigating around samples in
+X,Y, and Z called "explore acquisitions", as well as features for
+defining and imaging arbitrarily shaped regions of interest ("Surfaces"
+and "grids").
+
+Micro-Magellan is integrated with
+[Pycro-manager](https://pycro-manager.readthedocs.io/en/latest/), so all
+of its features can be controlled programmatically through Python,
+creating the possibility of powerful hybrid GUI-code applications, such
+as manually controlling data acquisition through the while having custom
+Python code processing image data on-the-fly.
+
+A high level overview of the capabilities of (an older version of)
 Micro-Magellan can be found
 [here](http://www.nature.com/articles/nmeth.3991.epdf?author_access_token=rR_aOWEDc1Wj0RddBbHtydRgN0jAjWel9jnR3ZoTv0M4gswfFfGBQXXZMGJVGnJTGIbTUu0oUju76Mtjgm3ZyyuqIlJOmOWcb5xpBHeT0WOW1Vr_EIRVAOz2dWk6Kkss)
 
@@ -20,10 +27,13 @@ Up to date source code can be found
 
 **Note: The materials in this documentation correspond to an older
 version of Micro-Magellan. Although all the functionality is the same,
-many GUI components have moved around, and the screenshots are in some
-cases out of date.**
+many GUI components have moved around (i.e. buttons are in different
+locations than in the screen schots).**
 
 ## Getting Started with Micro-Magellan
+
+Download and install the latest nightly build of Micro-Manager (at the
+time of this writing that would be Micro-Manager 2.0gamma).
 
 Open Micro-Magellan from the "Plugins--Acquisition Tools" menu in
 Micro-Manager.
@@ -32,7 +42,7 @@ In order for Micro-Magellan to operate, it needs to know the direction
 of Z movement (if your system is equipped with a motorized z drive).
 This is defined in the Hardware Configuration Wizard.
 
-![](media/Zdirection.jpg "media/Zdirection.jpg")
+![media/Zdirection.jpg](media/Zdirection.jpg "media/Zdirection.jpg")
 
 In order for Micro-Magellan to acquire tiled images and assemble them,
 it must have an accurate pixel size calibration for the objective in
@@ -57,11 +67,11 @@ Acquisition and will be pre-populated with the configurations groups you
 have created. Select the settings group that contains your channel
 configurations.
 
-![](media/ExploreSettings.jpg "media/ExploreSettings.jpg")
+![media/ExploreSettings.jpg](media/ExploreSettings.jpg "media/ExploreSettings.jpg")
 
-Pressing “Explore!” will open a new window:
+Pressing “Explore\!” will open a new window:
 
-![](media/ExploreWindow.jpg "media/ExploreWindow.jpg")
+![media/ExploreWindow.jpg](media/ExploreWindow.jpg "media/ExploreWindow.jpg")
 
 On the left side is your image area; a field of view will highlight blue
 as you hover over it. On the right, are look-up tables (LUTs) for each
@@ -73,7 +83,7 @@ view to be imaged. The "Z limits" scroll bars below the image window
 control which Z locations will be imaged, and will adjust automatically
 to the selected Z-step size.
 
-![](media/ExploreZ.jpg "media/ExploreZ.jpg")
+![media/ExploreZ.jpg](media/ExploreZ.jpg "media/ExploreZ.jpg")
 
 Once you have begun to image, the Z-plane currently being displayed will
 appear dark green in the Z-limits scroll bars. Other acquired Z-planes
@@ -99,9 +109,9 @@ over the area you would like to image. You may generate multiple grids
 of different sizes by pressing “New Grid”, and then move them to
 different areas.
 
-![](media/ExploreGrids.jpg "media/ExploreGrids.jpg")
+![media/ExploreGrids.jpg](media/ExploreGrids.jpg "media/ExploreGrids.jpg")
 
-![](media/ExploreGridsImage.jpg "media/ExploreGridsImage.jpg")
+![media/ExploreGridsImage.jpg](media/ExploreGridsImage.jpg "media/ExploreGridsImage.jpg")
 
 All of the grids generated in explore mode will populate the “grids” tab
 at the top of the Micro-Magellan main window, next to the Device
@@ -121,17 +131,25 @@ surface.
 
 &lt;INCLUDE \#ev:youtubehd text="wKVMWFeCF6o\|600\|center😎"&gt;
 
-A new surface will be created automatically after clicking on the
-surfaces tab. A new surface can also be created by clicking on the "New
-Surface" button. Left clicking on the image screen with an active
-surface adds points. Left clicking on a point will remove it.
+A new surface can be created by clicking on the "New Surface" button.
+Left clicking on the image screen with an active surface adds points.
+Right clicking on a point will remove it.
 
-![](media/ExploreSurfacesDrawTop.jpg "media/ExploreSurfacesDrawTop.jpg")
+![media/ExploreSurfacesDrawTop.jpg](media/ExploreSurfacesDrawTop.jpg
+"media/ExploreSurfacesDrawTop.jpg")
 
 The Z-slider is then moved down further into the sample to specify an
 additional 2D slice of interpolation points.
 
-![](media/ExploreSurfacesDrawBottom.jpg "media/ExploreSurfacesDrawBottom.jpg")
+![media/ExploreSurfacesDrawBottom.jpg](media/ExploreSurfacesDrawBottom.jpg
+"media/ExploreSurfacesDrawBottom.jpg")
+
+The following video shows how to use an explore acquisition to explore
+cells on a slide that is tilted relative to Z axis, find the correct
+focal plane at 3 different points, and create a surface that passes
+through these three points:
+
+\<INCLUDE \#ev:youtubehd text="cstzfkzDxA4|600|center😎"\>
 
 ## Acquisition
 
@@ -139,7 +157,8 @@ All of the grids and surfaces generated in Explore mode will populate
 the "grids" and "surfaces" tabs at the top of the Micro-Magellan main
 window, next to the Device status/control tab.
 
-![](media/AcquireGridSurfaces.jpg "media/AcquireGridSurfaces.jpg")
+![media/AcquireGridSurfaces.jpg](media/AcquireGridSurfaces.jpg
+"media/AcquireGridSurfaces.jpg")
 
 Below the Explore mode settings, there are a series of tabs to manage
 acquisition setup.
@@ -155,7 +174,7 @@ acquisition, enter a name fore the file.
 In the "Time" tab, you can enter a time interval between image
 acquisition and the total number of time points to acquire
 
-![](media/AcquireTime.jpg "media/AcquireTime.jpg")
+![media/AcquireTime.jpg](media/AcquireTime.jpg "media/AcquireTime.jpg")
 
 ### Space
 
@@ -208,7 +227,7 @@ To acquire more than a single grid or surface at a time, select the
 the name currently entered in the “Saving” tab below. Enter the
 parameters for this acquisition in the other acquisition settings tabs.
 
-![](media/AcquireMultiAcq.jpg "media/AcquireMultiAcq.jpg")
+![media/AcquireMultiAcq.jpg](media/AcquireMultiAcq.jpg "media/AcquireMultiAcq.jpg")
 
 Clicking “+” again will add another line, it will appear with the same
 name. Highlight the second (new) acquisition and change its name in the
@@ -221,7 +240,8 @@ parallel (rather than completing a time lapse in one area, and then
 beginning the second time lapse in another area), select “In parallel”
 and then “Run all”
 
-![](media/AcquireMultiAcqInterleave.jpg "media/AcquireMultiAcqInterleave.jpg")
+![media/AcquireMultiAcqInterleave.jpg](media/AcquireMultiAcqInterleave.jpg
+"media/AcquireMultiAcqInterleave.jpg")
 
 ### Changing settings during acquisitions
 
@@ -271,6 +291,11 @@ specified at acquisition time in μMagellan 4) Press start
 
 Current source code can be found
 [here](https://github.com/micro-manager/micro-manager/tree/master/plugins/Magellan)
+
+## Citing Micro-Magellan
+
+If Micro-Magellan is useful to your work, please cite [this
+article.](https://pubmed.ncbi.nlm.nih.gov/27684577/)
 
 **Authors:** Henry Pinkard, Kaitlin Corbin
 

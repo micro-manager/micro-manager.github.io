@@ -25,7 +25,8 @@ Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
 1.  Download, install and run [IntelliJ Community
     Edition](https://www.jetbrains.com/idea/download). You may also need
     to download a JDK from [AdoptOpenJDK](https://adoptopenjdk.net/).
-    Micro-Manager is currently developed with JDK 8.
+    Micro-Manager is currently developed with JDK 8 (Java Development
+    Kit 1.8).
 
 <!-- -->
 
@@ -71,6 +72,12 @@ Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
 \#\* **Working Directory:** type in your `$INSTALLDIR`
 
 1.  You should now be able to Run and Debug the code.
+
+<INCLUDE Note text="'''Explanation of the  <code>-Dforce.annotation.index</code> option''': Micro-Manager uses Scijava plugins for many of its internal components. In order for plugins to be detected at runtime it is important that the annotation processor is enabled.The <code>-Dforce.annotation.index</code> option will attempt to force to processor to be enabled. Optionally, you could also go to "settings->Build,Execution,Deployment-\>Annotation
+Processors" and make sure that "Enable annotation processing" is
+checked. If you find that the program crashes with a
+\`NullPointerException\` on startup you may have forgotten to enable
+annotation processing.😎"\>
 
 {% include Note text="The components from the installed Micro-Manager can get out of sync with the source code. If you encounter unexpected errors, update to the latest nightly build and the latest source revision." %}
 

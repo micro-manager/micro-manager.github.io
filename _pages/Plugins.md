@@ -8,15 +8,15 @@ section: User Documentation
 Micro-Manager offers a number of built-in Plugins for special
 applications in microscopy:
 
--   [AcquireMultipleRegions](AcquireMultipleRegions "wikilink")
--   [ASIdiSPIM Plugin](ASIdiSPIM_Plugin "wikilink")
--   [ASI (XBox) Gamepad](http://www.asiimaging.com/docs/asi_gamepad)
--   [AssembleData](AssembleData "wikilink")
--   [AutoLase](AutoLase "wikilink")
--   [DLLAutoReloader](DLLAutoReloader "wikilink")
--   [EMU](EMU "wikilink")
--   [Flat-Field Correction](Flat-Field_Correction "wikilink")
--   [FrameProcessor](FrameProcessor "wikilink") : Perform live frames
+  - [AcquireMultipleRegions](AcquireMultipleRegions "wikilink")
+  - [ASIdiSPIM Plugin](ASIdiSPIM_Plugin "wikilink")
+  - [ASI Gamepad Plugin](ASI_Gamepad_Plugin "wikilink")
+  - [AssembleData](AssembleData "wikilink")
+  - [AutoLase](AutoLase "wikilink")
+  - [DLLAutoReloader](DLLAutoReloader "wikilink")
+  - [EMU](EMU "wikilink")
+  - [Flat-Field Correction](Flat-Field_Correction "wikilink")
+  - [FrameProcessor](FrameProcessor "wikilink") : Perform live frames
     image processing.
 -   [HCS Site Generator](HCS_Site_Generator "wikilink")
 -   [Intelligent Acquisition](Intelligent_Acquisition "wikilink")

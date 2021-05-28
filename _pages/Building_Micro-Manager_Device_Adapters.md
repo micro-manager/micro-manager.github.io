@@ -876,3 +876,9 @@ MODULE_API void InitializeModuleData()
 The first parameter in "AddAvailableDeviceName", is the adapter name and
 the second one is a short description.
 
+## Contributing Device Adapter Source code to Micro-Manager
+
+See:
+[Policies\_for\_inclusion\_of\_source\_code](Policies_for_inclusion_of_source_code "wikilink")
+
+{% include Devices_Sidebar text="" %}

@@ -115,8 +115,9 @@ camera exposures, you can acquire very fast Z stacks. Most ASI firmware
 includes the required ring buffer module with 50 positions; if you want
 to acquire Z stacks with more slices or do not have ring buffer support,
 please [contact ASI directly](http://www.asiimaging.com/contact-us/) for
-a firmware update. To use this feature, set the property "Use Sequence"
-to value "Yes" under device "ZStage" in the Property Browser.
+a firmware update, ideally including the controller serial number. To
+use this feature, set the property "Use Sequence" to value "Yes" under
+device "ZStage" in the Property Browser.
 
 If you have firmware from October 2015 or newer then you need to use a
 build of Micro-Manager newer than March 2016. (The firmware code was

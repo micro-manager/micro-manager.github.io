@@ -36,8 +36,21 @@ clarification regarding our licensing terms please let us know:
 The source code for 2.0-gamma is located on github at:
 
 <https://github.com/micro-manager/micro-manager> in the master branch.
-The branch "svn-mirror" is a copy of the 1.4 subversion repositoru (see
+The branch "svn-mirror" is a copy of the 1.4 subversion repository (see
 below).
+
+As of April 2021 the source code has been split into multiple Git
+repositories which are used as submodules of the main repository. In
+order to fully clone the source code please follow these instructions:
+
+1: Clone the main repository: "git clone
+<https://github.com/micro-manager/micro-manager>"
+
+2: Initialize all submodules: "git submodule update --init --recursive"
+
+When updating to a new revision of the repository using \`git pull\` it
+is a good idea to run the command in step 2 in order to make sure that
+all submodules are also up to date.
 
 ## Subversion repository for 1.4
 

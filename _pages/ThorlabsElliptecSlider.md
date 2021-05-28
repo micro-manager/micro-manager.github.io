@@ -92,10 +92,15 @@ None
 </tr>
 </table>
 
-The device adapter controls the Elliptec sliders ELL6 (two positions)
-and ELL9 (four positions) from Thorlabs. In addition to the COMport, the
-user need to set the communication channel of the device (from 0 to F).
-The devices have a default to channel 0. The channel can be easily read
-out from the Elliptec software (see Thorlab's Elliptec page).
+The device adapter controls the Thorlabs Elliptec sliders ELL6 (two
+positions) and ELL9 (four positions), as well as the stages ELL17 and
+ELL20. The ELL6 can also be loaded as a shutter.
 
-{% include Important text=" The ELL9 can be slow to get to a new position, it will therefore give a '''TimeOut error''' if the time out of the COMport is set too low (e.g. the default 500 ms). We advise using a TimeOut of 2s for the ELL9." %}
+In addition to the COMport, the user need to set the communication
+channel of the device (from 0 to F). The devices have a default to
+channel 0. The channel can be easily read out from the Elliptec software
+(see Thorlab's Elliptec page). When chaining multiple Elliptec devices
+on the same COMport, different channels must be set for the individual
+devices.
+
+{% include Important text=" The ELL9 can be slow to get to a new position, it will therefore give a '''TimeOut error''' if the time out of the COMport is set too low (e.g. the default 500 ms). We advise using a TimeOut of 2s for the ELL9, and potentially for the ELL17/ELL20 as well." %}

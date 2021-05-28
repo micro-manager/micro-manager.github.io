@@ -120,8 +120,8 @@ relative to `projects\micromanager`.
 
 Checkout the [Micro-Manager Source
 Code](Micro-Manager_Source_Code "wikilink") inside the `projects`
-directory, using your Subversion client. This should result in the
-following directories:
+directory, using your Subversion client (use git for the 2.0
+micromanager source). This should result in the following directories:
 
 ```
 projects\micromanager

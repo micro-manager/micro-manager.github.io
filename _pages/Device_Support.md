@@ -121,9 +121,11 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     (Windows)
 -   [PVCAM](PVCAM "wikilink") - Roper/Photometrics cameras (not for
     Princeton Instruments)
--   [QCam](QCam "wikilink") - QImaging cameras
--   [QSICamera](QSICamera "wikilink") - QSI cameras (Windows)
--   [RaptorEPIX](RaptorEPIX "wikilink") - Raptor Photonics cameras using
+  - [PVCAM legacy](PVCAM_legacy "wikilink") - pre-2021 documentation for
+    Roper/Photometrics cameras
+  - [QCam](QCam "wikilink") - QImaging cameras
+  - [QSICamera](QSICamera "wikilink") - QSI cameras (Windows)
+  - [RaptorEPIX](RaptorEPIX "wikilink") - Raptor Photonics cameras using
     EPIX cameralink board
 -   [ScionCam](ScionCam "wikilink") - Scion cameras
 -   [Sensicam](Sensicam "wikilink") - PCO/Cooke Sensicam camera
@@ -261,9 +263,9 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     [ThorlabsAPTStage](ThorlabsAPTStage "wikilink"))
 -   [ThorlabsDCxxxx](ThorlabsDCxxxx "wikilink") - Thorlabs LED
     controllers
--   [ThorlabsElliptecSlider](ThorlabsElliptecSlider "wikilink") -
-    Thorlabs Elliptec sliders ELL6 and ELL9.
--   [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink") - Thorlabs
+  - [ThorlabsElliptecSlider](ThorlabsElliptecSlider "wikilink") -
+    Thorlabs Elliptec sliders ELL6, ELL9, ELL17 and ELL20.
+  - [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink") - Thorlabs
     Filter Wheel
 -   [ThorlabsMFC1](ThorlabsMFC1 "wikilink") - Thorlabs MFC1 Motorized
     Microscope Focus Controller
@@ -305,8 +307,10 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     platforms)
 -   [K8061](K8061 "wikilink") - Velleman Digital IO board (all
     platforms)
--   [MCCDAQ](MCCDAQ "wikilink") - Measurement Computing PCI-DDA08/16
--   [National Instruments](National_Instruments "wikilink") - See NI100X
+  - [MCCDAQ](MCCDAQ "wikilink") - Measurement Computing PCI-DDA08/16
+  - [MicroFPGA](MicroFPGA "wikilink") - Open source FPGA platform for
+    hardware triggering and control
+  - [National Instruments](National_Instruments "wikilink") - See NI100X
     and NIMultiAnalog
 -   [NicoLase](NicoLase "wikilink") An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
@@ -327,7 +331,9 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 
 ### Light sources
 
--   [AgilentLaserCombiner](AgilentLaserCombiner "wikilink") - Agilent
+  - [89NorthLDI](89NorthLDI "wikilink") - Laser Diode Illuminator from
+    89 North
+  - [AgilentLaserCombiner](AgilentLaserCombiner "wikilink") - Agilent
     MLC
 -   [AndorLaserCombiner](AndorLaserCombiner "wikilink") - Andor laser
     launch

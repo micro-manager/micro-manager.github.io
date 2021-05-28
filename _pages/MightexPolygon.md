@@ -33,5 +33,28 @@ Device Manager as some sort of network controller.
 See [this
 thread](http://micro-manager.3463995.n2.nabble.com/MightEx-Polygon-device-can-t-install-td7585963.html#a7585978).
 
+Notes for Polygon1000:
+
+  - After installation, the device could not be found by PolyScan2
+    (application provided by Mightex). The device showed up as
+    "libus-win32 device" - "Unprogrammed Cypress FX3". It showed up as
+    something Andor related (I have the feeling that Mightex and Andor
+    used the same USB VID/PID, causing these issues). Clicking on
+    "Update driver", and locating the driver (Tools \> Drivers \>
+    Polygon1000 \> Win10\_x64) resulted in a workable driver (shows up
+    as "Universal Serial Bus Controllers \> Cypress FX3 StreamerExample
+    Device). THis device is recognized by PolyScan2.
+  - Copied MT\_Polygon400\_SDK from the provided USB drive into the
+    Micro-Manager application directory.
+  - Copied mt\_polygon1000\_sdd.dll, MT\_Polygon1000\_SDK.dll,
+    Mightex\_BLSDriver\_SDK.dll, and the Polygon did not appear in the
+    HCW. After copying MT\_Polygon400\_IMGC.dll and
+    MT\_Polgon400\_SDK.dll into the Micro-Manager directory, it did
+    appear. However, after selecting it the application reports: "Error
+    in device "MightexPolygon": Unable to communicate with the device.
+    (35).
+
+Stuck for now...
+
 {% include Listserv_Search text="Polygon" %}
 
