@@ -13,6 +13,9 @@ More recently, the same functionality and more has been exposed through
 a Python interface (see
 [Pycro-manager](https://github.com/micro-manager/pycro-manager)).
 
+Tutorials for scripting in Beanshell and pycro-manager can be found
+[here](https://nicost.github.io/I2K-MM/).
+
 Scripts are edited and run from the ScriptPanel (in the Tools menu):
 
 ![](media/ScriptPanel.png "media/ScriptPanel.png")

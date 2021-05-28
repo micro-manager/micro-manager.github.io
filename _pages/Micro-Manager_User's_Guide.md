@@ -87,20 +87,34 @@ icon (to run the 64-bit version).
 
 Mac OS X security policies mandate a couple of extra steps (which may be
 different in different versions of the OS). Go to "System Preferences"
-&gt; "Security&Privacy" Click the lock in the bottom left corner,
-provide an administrator password, then start up the ImageJ app. When
-you go to "Plugins" in the menu, and see the item "Why are plugins
-missing?", you will need to quit ImageJ and move the ImageJ.app to the
-desktop, then move it back. On some Macs you will need to press the
-option (or ctrl) key while dragging the app to actually move it rather
-them make a shortcut (don't ask me why, but Macs have become very
-confusing machines). If Micro-Manager still does not start, check the
-Java version by clicking in the lower part of the ImageJ window. If you
-see that the Java version is 1.6, you need to install Java 8. Currently,
-you can get this from multiple sources, I like
+\> "Security\&Privacy" Click the lock in the bottom left corner, provide
+an administrator password, then start up the ImageJ app. When you go to
+"Plugins" in the menu, and see the item "Why are plugins missing?", you
+will need to quit ImageJ and move the ImageJ.app to the desktop, then
+move it back. On some Macs you will need to press the command (or ctrl,
+or option) key while dragging the app to actually move it rather them
+make a shortcut (don't ask me why, but Macs have become very confusing
+machines). If Micro-Manager still does not start, check the Java version
+by clicking in the lower part of the ImageJ window. If you see that the
+Java version is 1.6, you need to install Java 8. Currently, you can get
+this from multiple sources, I like
 [adoptopenjdk](http://adoptopenjdk.net). Download and install the latest
 version. If ImageJ still picks Java 6, try copying the "jre" directory
 of the adoptopenjdk installation into the Micro-Manager directory.
+
+On MacOS Catalina 10.15.7, and later, the gatekeeper then complains that
+nothing is signed by a verified developer. The solution to that involves
+a very large amount of clicking (you have to click several buttons per
+device adapter to tell gatekeeper that you really do want to run them…)
+
+There is a better solution: open a terminal and run
+
+sudo xattr -r -d com.apple.quarantine <Path to Micromanager Install>
+
+for me that was
+
+sudo xattr -r -d com.apple.quarantine
+/Applications/Micro-Manager-2.0.0-gamma1-20210309
 
 ## If you already use ImageJ
 

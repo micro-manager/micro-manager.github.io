@@ -6,23 +6,47 @@ section: Programming
 ---
 
 We encourage everyone who has written a device adapter module to send
-their code to us for inclusion in the [Micro-Manager source code
-repository](https://valelab.ucsf.edu/svn/micromanager2/trunk/). Please
-email the source code to <info@micro-manager.org>. Also do include any
-libraries or other materials that we will need to build the code (or
-provide links). Please also include a compatible license for your
-software (most of the code uses either a BSD or LGPL license, it is not
-possible for us to include GPL code).
+their code to us for inclusion in the Micro-Manager source code
+repository.
 
-After addition of your code to our repository, we will send you a
-username and password that you can use for future changes to the code
-(using a [subversion](http://subversion.tigris.org/) client).
+As of April 2021, the procedure for the 1.4 (legacy) and 2.0 (current)
+version is different. Note that these two versions will no longer be
+kept in sync automatically. For both versions, include any libraries or
+other materials that will be needed to build the code (or provide
+links). Please also include a compatible license for your software (most
+of the code uses either a BSD or LGPL license, it is not possible for us
+to include GPL code).
+
+### For 1.4
+
+Please email the source code to <info@micro-manager.org>. After addition
+of your code to our repository, we will send you a username and password
+that you can use for future changes to the code (using a
+[subversion](http://subversion.tigris.org/) client).
+
+### For 2.0
+
+1.  Create a “fork” of the
+    [“mmCoreAndDevices”](https://github.com/micro-manager/mmCoreAndDevices)
+    repository on your own GitHub account and clone your newly forked
+    repository to your computer.
+2.  Create a branch to work on.
+3.  Commit your changes and push them to your github account.
+4.  Go to the “Pull Request” section of the “Micro-Manager”
+    “mmCoreAndDevices” Github page and open a new pull request
+    describing the changes you would like to make.
+5.  For more information about pull requests see the [GitHub
+    Docs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
+### Provide end-user documentation on this website
 
 Also, please do request an account for this website (click on the Log In
 button), and create a page in the [Device
 Support](Device_Support "wikilink") section. Use this page to provide
 information for users of your equipment to configure and use your device
 in Micro-Manager (i.e., please do not use this for marketing purposes).
+
+### Closed Source device adapters
 
 In the past, several closed-source device adapters have been included in
 µManager. Open Imaging's current policy is to only accept new device

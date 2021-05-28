@@ -8,11 +8,10 @@ layout: page
 
 ## Discussion
 
-All discussions and questions should be sent to the pgFocus mailing list
-[here](mailto:pgfocus@googlegroups.com).
+All discussions and questions should be sent to [micromanager
+forum](https://forum.image.sc/tag/micro-manager)
 
-You can also visit the web [pgFocus Google
-Group](http://groups.google.com/d/forum/pgfocus?hl=en) interface.
+Tag me @kbellve and/or add pgFocus to the subject and I should see it.
 
 ## Purchasing
 
