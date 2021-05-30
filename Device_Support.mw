@@ -142,6 +142,7 @@ Most difficulties in working with Micro-Manager arise from configuring the syste
 * [[ThorlabsDCxxxx]] - Thorlabs LED controllers
 * [[ThorlabsElliptecSlider]] - Thorlabs Elliptec sliders ELL6, ELL9, ELL17 and ELL20.
 * [[ThorlabsFilterWheel]] - Thorlabs Filter Wheel
+* '''ThorlabsKinesis''' - Thorlabs Kinesis motor controllers ([https://github.com/micro-manager/mmdev-ThorlabsKinesis separate download & instructions])
 * [[ThorlabsMFC1]] - Thorlabs MFC1 Motorized Microscope Focus Controller
 * [[ThorlabsSC10]] - Thorlabs shutter controller
 * [[Tofra]] - XY and Z stages, filter wheel, motorized filter cube slider, and LED illuminator
