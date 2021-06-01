@@ -118,5 +118,5 @@ Browser window for pgFocus.
 ### Device/Property Browser
 
 <figure>
-<img src="media/PgFocus_DeviceAdapter.png" title="media/PgFocus_DeviceAdapter.png" width="500" alt="media/PgFocus_DeviceAdapter.png" /><figcaption aria-hidden="true">media/PgFocus_DeviceAdapter.png</figcaption>
+<img src="media/PgFocus_DeviceAdapter.png" title="media/PgFocus_DeviceAdapter.png" width="500" alt="media/PgFocus_DeviceAdapter.png" />
 </figure>

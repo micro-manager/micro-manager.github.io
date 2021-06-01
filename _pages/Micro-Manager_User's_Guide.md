@@ -60,12 +60,12 @@ create a configuration file specific to your system.
 
 ## Installation on Windows
 
-Run the installer (MM\_Setup\_1\_x\_yy.exe) and follow the prompts. The
+Run the installer `MM\_Setup\_1\_x\_yy.exe` and follow the prompts. The
 package includes a copy of ImageJ; it may be necessary to install or
 update [Java](http://java.com) on your computer. Besides the
 manufacturer's low-level drivers for your camera and possibly other
 equipment, no other software is required to fully use Micro-Manager.
-Micro-Manager will be installed in C:\\Program Files\\Micro-Manager1.x.
+Micro-Manager will be installed in `C:\\Program Files\\Micro-Manager1.x`.
 
 There are no particular hardware or software requirements. However, for
 practical use we recommend Windows XP, 1.7 GHz or better processor and
@@ -76,7 +76,7 @@ Windows Vista.
 
 ## Installation on Mac OS X
 
-Double click on the file Micro-Manager1.x.yy.dmg. This will open a drive
+Double click on the file `Micro-Manager1.x.yy.dmg`. This will open a drive
 called 'Micro-Manager'. The drive is on the desktop and in every Finder
 Window. Open the drive (by double-clicking). In the drive there is a
 folder called Micro-Manager1.x. You can install the application by
@@ -86,8 +86,8 @@ application by opening the folder and double clicking the 'ImageJ' icon
 icon (to run the 64-bit version).
 
 Mac OS X security policies mandate a couple of extra steps (which may be
-different in different versions of the OS). Go to "System Preferences"
-\> "Security\&Privacy" Click the lock in the bottom left corner, provide
+different in different versions of the OS). Go to `System Preferences`
+\> `"`Security\&Privacy`"` Click the lock in the bottom left corner, provide
 an administrator password, then start up the ImageJ app. When you go to
 "Plugins" in the menu, and see the item "Why are plugins missing?", you
 will need to quit ImageJ and move the ImageJ.app to the desktop, then
@@ -99,7 +99,7 @@ by clicking in the lower part of the ImageJ window. If you see that the
 Java version is 1.6, you need to install Java 8. Currently, you can get
 this from multiple sources, I like
 [adoptopenjdk](http://adoptopenjdk.net). Download and install the latest
-version. If ImageJ still picks Java 6, try copying the "jre" directory
+version. If ImageJ still picks Java 6, try copying the `jre` directory
 of the adoptopenjdk installation into the Micro-Manager directory.
 
 On MacOS Catalina 10.15.7, and later, the gatekeeper then complains that
@@ -109,12 +109,12 @@ device adapter to tell gatekeeper that you really do want to run them…)
 
 There is a better solution: open a terminal and run
 
-sudo xattr -r -d com.apple.quarantine <Path to Micromanager Install>
+`sudo xattr -r -d com.apple.quarantine <Path to Micromanager Install>`
 
 for me that was
 
-sudo xattr -r -d com.apple.quarantine
-/Applications/Micro-Manager-2.0.0-gamma1-20210309
+`sudo xattr -r -d com.apple.quarantine
+/Applications/Micro-Manager-2.0.0-gamma1-20210309`
 
 ## If you already use ImageJ
 
@@ -773,4 +773,3 @@ Updated for version 1.0.61, on January 31
 Updated for version 1.0.54 (beta) on December 4, 2006  
 Nenad Amodaj, April 2006</span>  
 <span> </span>  
-

@@ -50,13 +50,12 @@ In addition, plugins are available from third parties:
 -   [Import Micro-Manager data into
     Image-Pro](http://www.mediacy.com/index.aspx?page=IP_MicroManager_plugin)
 
-''See also [Writing plugins for
+See also [Writing plugins for
 Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink")
 
-''And also look at our
+And also look at our
 [paper](http://www.jbmethods.org/jbm/article/view/36/28) describing
 hardware synchronization, simultaneous use of multiple cameras,
 projection of patterned light onto a specimen, live slide mapping,
 imaging with multi-well plates, particle localization and tracking, and
 high-speed imaging.
-

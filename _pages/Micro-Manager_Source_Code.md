@@ -5,8 +5,7 @@ layout: page
 section: Downloads
 ---
 
-{% include Downloads_Sidebar text="" %} 
- The source code
+The source code
 includes all Micro-Manager files (Java and C++) and all supporting files
 (project files, build scripts, etc.). However, to build the entire
 project a number of Open Source libraries and device SDKs must be
@@ -60,22 +59,22 @@ client](http://subversion.tigris.org/).
 <https://valelab4.ucsf.edu/svn/micromanager2/trunk/> - Release 1.4  
 <https://valelab4.ucsf.edu/svn/3rdpartypublic/> - 3rd party files needed
 for Release 1.4  
-&lt;INCLUDE Note text="There is a bug in the Subversion 1.8 client that
+{% include Note text='There is a bug in the Subversion 1.8 client that
 prevents you from checking out our public repositories without a
 username. If Subversion asks you for a username and password, you can
 use the username "guest" (password "guest") as a workaround. Subversion
-1.7.x clients should not experience this problem.😎"&gt;
+1.7.x clients should not experience this problem.' %}
 
-&lt;INCLUDE Note text="Sometimes, a fresh checkout of the 3rdpartypublic
+{% include Note text="Sometimes, a fresh checkout of the 3rdpartypublic
 repository will fail (possibly due to the subversion server timeout
 settings) with
 `ra_surf: The server sent a truncated HTTP response body`. To work
 around this, run `svn cleanup` and then `svn up` per
 [1](http://stackoverflow.com/a/33996416) (on Windows, Tortoise SVN users
-can right click inside the 3rdpartypublic directory &gt; TortoiseSVN
-&gt; Cleaup ... &gt; Break locks (make sure it's checked) &gt; OK). Then
-continue with right-click, "SVN update". This timeout will happen twice
-during boost checkout because of the large file sizes.😎"&gt;
+can right click inside the 3rdpartypublic directory > TortoiseSVN >
+ Cleaup ... > Break locks (make sure it's checked) > OK). Then
+continue with right-click, 'SVN update'. This timeout will happen twice
+during boost checkout because of the large file sizes." %}
 
 To build Micro-Manager 1.4, you should place the micromanager2 (trunk)
 and 3rdpartypublic repositories in the same directory. For example, run
