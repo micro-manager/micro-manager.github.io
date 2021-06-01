@@ -2,6 +2,7 @@
 padding:.3em;
 margin-top:.5em;
 margin-bottom:.5em;
+markdown
 background-color: {{include.bgcol | default: '#F3F3F3'}}"><div style="background-color: {{include.color | default: '#333'}};
 color: {{include.titlecol | default: 'white'}};
 margin-top:-.3em;
@@ -10,4 +11,4 @@ padding:.3em;
 display:table-row;
 float:left;
 margin-right:.3em;
-font-weight:bold">{{include.title}}</div><div>{{include.text}}</div></div>
+font-weight:bold">{{include.title}}</div><div>{{include.text | markdownify }}</div></div>
