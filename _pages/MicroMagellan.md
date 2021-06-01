@@ -59,7 +59,7 @@ you will need to restart Micro-Manager for it to take effect
 
 ## Explore Acquisitions
 
-&lt;INCLUDE \#ev:youtubehd text="UuQtws9Posw\|600\|center😎"&gt;  
+{% include youtube.html id="https://youtu.be/UuQtws9Posw" %}  
 Before exploring your sample you will need to enter your desired Z-step
 size and tile overlap. The channel group drop down is analogous to the
 channel group drop down within MicroManager’s Multi-Dimensional
@@ -129,8 +129,7 @@ Surfaces are created by marking interpolation points on 2D slices of an
 image. Micro-Magellan then uses these points to interpolate a continuous
 surface.
 
-&lt;INCLUDE \#ev:youtubehd text="wKVMWFeCF6o\|600\|center😎"&gt;
-
+{% include youtube.html id="https://youtu.be/wKVMWFeCF6o" %}
 A new surface can be created by clicking on the "New Surface" button.
 Left clicking on the image screen with an active surface adds points.
 Right clicking on a point will remove it.
@@ -149,7 +148,7 @@ cells on a slide that is tilted relative to Z axis, find the correct
 focal plane at 3 different points, and create a surface that passes
 through these three points:
 
-\<INCLUDE \#ev:youtubehd text="cstzfkzDxA4|600|center😎"\>
+{% include youtube.html id="https://youtu.be/cstzfkzDxA4" %}
 
 ## Acquisition
 
@@ -213,7 +212,7 @@ This is useful, for example, for collection a given distance from the
 top of a tissue, or for imaging a rectangular region that is tilted
 relative to the optical axis.
 
-&lt;INCLUDE \#ev:youtubehd text="frW4emzcJ5I\|600\|center😎"&gt;
+{% include youtube.html id="https://youtu.be/frW4emzcJ5I" %}
 
 ### Channels
 
@@ -267,7 +266,7 @@ to be imaged at the initial time point, the acquisition can be
 immediately paused after starting, and the XY footprint adjusted to a
 smaller area
 
-&lt;INCLUDE \#ev:youtubehd text="pdOh6KFr-9U\|600\|center😎"&gt;
+{% include youtube.html id="https://youtu.be/pdOh6KFr-9U" %}
 
 ## Data Analysis
 

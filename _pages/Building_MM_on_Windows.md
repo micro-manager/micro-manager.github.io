@@ -37,32 +37,32 @@ free downloads):
     version number greater than 10.0.30319, ***uninstall*** them (see
     the note below for why).
 2.  Install **Microsoft Windows SDK 7.1 and .NET Framework 4**
-    (http://www.microsoft.com/en-us/download/details.aspx?id=8279). If
+    <http://www.microsoft.com/en-us/download/details.aspx?id=8279>. If
     installation of the .NET fails, see the notes below.
 3.  Install **Visual C++ 2010 Express** from
     <https://www.visualstudio.com/vs/older-downloads/>.
 4.  Upgrade to **Visual Studio 2010 SP1**
-    (https://www.visualstudio.com/vs/older-downloads).
+    <https://www.visualstudio.com/vs/older-downloads>.
 5.  **Repair the compilers** that come with Windows SDK 7.1 by
     installing this package:
     <http://www.microsoft.com/en-us/download/details.aspx?id=4422>
 
-&lt;INCLUDE Note text="The **order if installation is important**. In
+{% include Note text='The **order if installation is important**. In
 particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed
 first. If you are in that situation, the only way out that I have found
-is to go to Control Panel &gt; "Uninstall a program", uninstall
+is to go to Control Panel > "Uninstall a program", uninstall
 everything with "Microsoft Visual ... 2010" in its name
 (Redistributable, Runtime, Express, Compilers, Service Pack, Tools for
-Office Runtime), and start over.😎"&gt;
+Office Runtime), and start over.' %}
 
 {% include Note text="It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). " %}
 
-&lt;INCLUDE Note text="If the SDK installation fails with **Fatal error
+{% include Note text='If the SDK installation fails with **Fatal error
 during installation**, you may need to first uninstall the VS2010
 redistributables (x86 and x64), uninstall the broken 7.1 SDK install,
 reinstall the 7.1 SDK and untick "Visual C++ compilers" from the list as
 mentioned in KB KB2519277. If you are successful, install the
-VC-Compiler-KB2519277.exe patch afterwards.😎"&gt;
+VC-Compiler-KB2519277.exe patch afterwards.' %}
 
 ### Java Development Kit (JDK) for Java Standard Edition (Java SE)
 
@@ -405,4 +405,3 @@ ant stage-only
 
 The `stage`, `run` and `package` targets are not yet fully implemented
 for general use (they expect files to be present at specific paths).
-

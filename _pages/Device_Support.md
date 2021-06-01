@@ -20,7 +20,7 @@ experiences. The information here will refer to the [most recent
 Micro-Manager
 release](Download_Micro-Manager_Latest_Release "wikilink").
 
-### Motorized Microscopes
+## Motorized Microscopes
 
 -   [LeicaDMI](LeicaDMI "wikilink") - Leica DMI and DM microscopes
 -   [LeicaDMR](LeicaDMR "wikilink") - Leica DMR microscopes (and DMIRBE)
@@ -44,7 +44,7 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 -   [ZeissAxioZoom](ZeissAxioZoom "wikilink") - Zeiss AxioZoom
     microscope (CAN29)
 
-### Cameras
+## Cameras
 
 -   [ABSCamera](ABSCamera "wikilink") - Cameras from ABS Gesellschaft
     für Automatisierung, Bildverarbeitung, Software GmbH Jena
@@ -151,7 +151,7 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 
 
 
-### Stages, filter wheels, shutters
+## Stages, filter wheels, shutters
 
 -   [ArduinoNeoPixel](ArduinoNeoPixel "wikilink") - Adafruit NeoPixel
     RGB LEDs controlled through an Arduino
@@ -287,7 +287,7 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 -   [Zaber](Zaber "wikilink") - Zaber linear and XY stages, filter
     wheels
 
-### Communication ports, TTLs, DAQs, etc.
+## Communication ports, TTLs, DAQs, etc.
 
 -   [Arduino](Arduino "wikilink") - Open Source Programmable
     Digital/Analogue IO board
@@ -329,7 +329,7 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 -   [USBManager](USBManager "wikilink") - Micro-Manager internal USB
     communications driver
 
-### Light sources
+## Light sources
 
   - [89NorthLDI](89NorthLDI "wikilink") - Laser Diode Illuminator from
     89 North
@@ -384,7 +384,7 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
 -   [YodnLighting](YodnLighting "wikilink") - YODN Lighting lamp device
     adapter for E600 serial products
 
-### Other devices
+## Other devices
 
 -   [AAAOTF](AAAOTF "wikilink") - AOTF controller from AA
     Optoelectronics
@@ -441,4 +441,3 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     Imager](http://goochandhousego.com/product/hsi-300-hyperspectral-imaging-system/)
     can be controlled with Micro-Manager (not yet included in the
     distribution, contact Gouch & Housego for details)
-
