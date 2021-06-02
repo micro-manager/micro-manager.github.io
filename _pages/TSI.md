@@ -95,11 +95,11 @@ nightly build dated July 15, 2019 or later (1.4 or 2.0).
 
 3\. From the Thorcam installation folder (usually C:\\Program
 Files\\Thorlabs\\Scientific Imaging\\Scientific Camera Support\\), copy
-the file called Scientific\_Camera\media/_Interfaces.zip to a separate folder
+the file called Scientific\_Camera\_Interfaces.zip to a separate folder
 where you have sufficient permissions to unzip it (e.g. the desktop
 folder).
 
-4\. Unzip the Scientific\_Camera\media/_Interfaces.zip archive and it will
+4\. Unzip the Scientific\_Camera\_Interfaces.zip archive and it will
 create a folder hierarchy with a folder named Scientific Camera
 Interfaces at the top level.
 

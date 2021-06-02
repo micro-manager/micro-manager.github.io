@@ -75,7 +75,7 @@ C:\Program Files\Micro-Manager-1.3
 &gt;&gt; import mmcorej.\*;  
 &gt;&gt; mmc=CMMCore;  
 &gt;&gt; mmc.loadSystemConfiguration
-('C:\\Micro-Manager1.2\\MMConfig\media/_demo.cfg');  
+('C:\\Micro-Manager1.2\\MMConfig\_demo.cfg');
 
 **The following recipe has worked for versions 1.4.6 - 1.4.11 (and newer
 hopefully):**
@@ -136,7 +136,7 @@ driver on a Windows 7 system.
 ```
 >> import mmcorej.*;
 >> mmc = CMMCore;
->> mmc.loadSystemConfiguration ('C:\Micro-Manager1.4\media/MMConfig_demo.cfg');
+>> mmc.loadSystemConfiguration ('C:\Micro-Manager1.4\MMConfig_demo.cfg');
 ```
 
 The Micro-Manager Core API is described here:

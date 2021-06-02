@@ -27,7 +27,7 @@ You should have advanced Windows experience and of course Admin
 privileges. You need the following files to begin with:
 
 -   Andor\_SDK\_X.XX.XXXXX.media/X.zip,
--   Ti\_SetupTool\_VerXXX\_64bit\media/_E.zip
+-   Ti\_SetupTool\_VerXXX\_64bit\_E.zip
 
 (these two you should get directly from Andor and Nikon) and
 
@@ -35,7 +35,7 @@ privileges. You need the following files to begin with:
 
 (from the Micro-Manager homepage). X stands for a number. In this case,
 the files used were Andor\_SDK\_2.91.30000.media/0.zip,
-Ti\_SetupTool\_Ver432\_64bit\media/_E.zip and MMSetup64BIT\_1.4.6.exe.
+Ti\_SetupTool\_Ver432\_64bit\_E.zip and MMSetup64BIT\_1.4.6.exe.
 
 1\. Install Micro-Manager  
 2. Locate the Micro-Manager directory (by default c:\\program
