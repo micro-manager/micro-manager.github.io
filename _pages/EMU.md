@@ -57,7 +57,7 @@ Upon starting EMU for the first time, the user must choose a plugin to
 load:
 
 <figure>
-<img src="media/Emu-plugin-selection.png" title="media/Emu-plugin-selection.png" width="200" alt="media/Emu-plugin-selection.png" /><figcaption aria-hidden="true">Emu-plugin-selection.png</figcaption>
+<img src="media/Emu-plugin-selection.png" title="Emu-plugin-selection.png" width="200" alt="Emu-plugin-selection.png" /><figcaption aria-hidden="true">Emu-plugin-selection.png</figcaption>
 </figure>
 
 After validating the choice, the plugin is loaded. Since no
@@ -71,7 +71,7 @@ accessible through the configuration menu by clicking on **modify
 configuration**:
 
 <figure>
-<img src="media/Emu-configuration-menu.PNG" title="media/Emu-configuration-menu.PNG" width="150" alt="media/Emu-configuration-menu.PNG" /><figcaption aria-hidden="true">Emu-configuration-menu.PNG</figcaption>
+<img src="media/Emu-configuration-menu.PNG" title="Emu-configuration-menu.PNG" width="150" alt="Emu-configuration-menu.PNG" /><figcaption aria-hidden="true">Emu-configuration-menu.PNG</figcaption>
 </figure>
 
 The **configuration wizard** allows changing aspects of the interface
@@ -97,7 +97,7 @@ installation folder, under **/EMU/config.uicfg**.
 #### Plugin settings
 
 <figure>
-<img src="media/Emu-configuration-plugin.PNG" title="media/Emu-configuration-plugin.PNG" width="300" alt="media/Emu-configuration-plugin.PNG" /><figcaption aria-hidden="true">Emu-configuration-plugin.PNG</figcaption>
+<img src="media/Emu-configuration-plugin.PNG" title="Emu-configuration-plugin.PNG" width="300" alt="Emu-configuration-plugin.PNG" /><figcaption aria-hidden="true">Emu-configuration-plugin.PNG</figcaption>
 </figure>
 
 Plugin settings are intended to be general options of the interface.
@@ -110,7 +110,7 @@ setting. htSMLM (see third-party plugins) has many more.
 #### Properties
 
 <figure>
-<img src="media/Emu-configuration-properties.PNG" title="media/Emu-configuration-properties.PNG" width="300" alt="media/Emu-configuration-properties.PNG" /><figcaption aria-hidden="true">Emu-configuration-properties.PNG</figcaption>
+<img src="media/Emu-configuration-properties.PNG" title="Emu-configuration-properties.PNG" width="300" alt="Emu-configuration-properties.PNG" /><figcaption aria-hidden="true">Emu-configuration-properties.PNG</figcaption>
 </figure>
 
 The property tab is aimed at pairing Micro-Manager device properties
@@ -156,7 +156,7 @@ modifying the device property with the absolute laser power.
 #### Parameters
 
 <figure>
-<img src="media/Emu-configuration-parameters.PNG" title="media/Emu-configuration-parameters.PNG" width="300" alt="media/Emu-configuration-parameters.PNG" /><figcaption aria-hidden="true">Emu-configuration-parameters.PNG</figcaption>
+<img src="media/Emu-configuration-parameters.PNG" title="Emu-configuration-parameters.PNG" width="300" alt="Emu-configuration-parameters.PNG" /><figcaption aria-hidden="true">Emu-configuration-parameters.PNG</figcaption>
 </figure>
 
 Parameters are mostly intended to provide reconfigurable aspects of the
@@ -167,7 +167,7 @@ hide/show or enable/disable buttons) or for improved user-friendliness
 #### Global settings
 
 <figure>
-<img src="media/Emu-configuration-global.PNG" title="media/Emu-configuration-global.PNG" width="300" alt="media/Emu-configuration-global.PNG" /><figcaption aria-hidden="true">Emu-configuration-global.PNG</figcaption>
+<img src="media/Emu-configuration-global.PNG" title="Emu-configuration-global.PNG" width="300" alt="Emu-configuration-global.PNG" /><figcaption aria-hidden="true">Emu-configuration-global.PNG</figcaption>
 </figure>
 
 Global settings are EMU options. For the moment, there is only a single
@@ -183,7 +183,7 @@ Note that global settings are set for all configurations.
 Upon clicking on the **help** button, the help window pops up:
 
 <figure>
-<img src="media/Emu-configuration-help.PNG" title="media/Emu-configuration-help.PNG" width="300" alt="media/Emu-configuration-help.PNG" /><figcaption aria-hidden="true">Emu-configuration-help.PNG</figcaption>
+<img src="media/Emu-configuration-help.PNG" title="Emu-configuration-help.PNG" width="300" alt="Emu-configuration-help.PNG" /><figcaption aria-hidden="true">Emu-configuration-help.PNG</figcaption>
 </figure>
 
 This window is updated every time the user clicks on a row in one of the
@@ -196,13 +196,13 @@ The **configuration manager** can be found by clicking on the
 *Configuration* menu, then on *manage configurations*.
 
 <figure>
-<img src="media/Emu-configuration-menu.PNG" title="media/Emu-configuration-menu.PNG" width="150" alt="media/Emu-configuration-menu.PNG" /><figcaption aria-hidden="true">Emu-configuration-menu.PNG</figcaption>
+<img src="media/Emu-configuration-menu.PNG" title="Emu-configuration-menu.PNG" width="150" alt="Emu-configuration-menu.PNG" /><figcaption aria-hidden="true">Emu-configuration-menu.PNG</figcaption>
 </figure>
 
 Configuration manager:
 
 <figure>
-<img src="media/Emu-configuration-manager.PNG" title="media/Emu-configuration-manager.PNG" width="300" alt="media/Emu-configuration-manager.PNG" /><figcaption aria-hidden="true">Emu-configuration-manager.PNG</figcaption>
+<img src="media/Emu-configuration-manager.PNG" title="Emu-configuration-manager.PNG" width="300" alt="Emu-configuration-manager.PNG" /><figcaption aria-hidden="true">Emu-configuration-manager.PNG</figcaption>
 </figure>
 
 It allows deleting existing configurations. Note that the currently
@@ -215,7 +215,7 @@ exist, then the user can switch between these configurations using the
 *switch plugin* menu:
 
 <figure>
-<img src="media/Emu-switch-config.png" title="media/Emu-switch-config.png" width="250" alt="media/Emu-switch-config.png" /><figcaption aria-hidden="true">Emu-switch-config.png</figcaption>
+<img src="media/Emu-switch-config.png" title="Emu-switch-config.png" width="250" alt="Emu-switch-config.png" /><figcaption aria-hidden="true">Emu-switch-config.png</figcaption>
 </figure>
 
 **Example:** If a set-up has two laser combiners, different
@@ -227,7 +227,7 @@ In the same way as for configurations, the user can switch between
 plugins:
 
 <figure>
-<img src="media/Emu-switch-plugin.png" title="media/Emu-switch-plugin.png" width="250" alt="media/Emu-switch-plugin.png" /><figcaption aria-hidden="true">Emu-switch-plugin.png</figcaption>
+<img src="media/Emu-switch-plugin.png" title="Emu-switch-plugin.png" width="250" alt="Emu-switch-plugin.png" /><figcaption aria-hidden="true">Emu-switch-plugin.png</figcaption>
 </figure>
 
 ### Plugin menu
@@ -235,7 +235,7 @@ plugins:
 The plugin menu has two entries:
 
 <figure>
-<img src="media/Emu-plugin-menu.png" title="media/Emu-plugin-menu.png" width="100" alt="media/Emu-plugin-menu.png" /><figcaption aria-hidden="true">Emu-plugin-menu.png</figcaption>
+<img src="media/Emu-plugin-menu.png" title="Emu-plugin-menu.png" width="100" alt="Emu-plugin-menu.png" /><figcaption aria-hidden="true">Emu-plugin-menu.png</figcaption>
 </figure>
 
 **Refresh UI** query all current property states and updates the
@@ -267,7 +267,7 @@ SimpleUI is a simple interface controlling four lasers and an optional
 filter wheel.
 
 <figure>
-<img src="media/Emu-simpleui.PNG" title="media/Emu-simpleui.PNG" width="300" alt="media/Emu-simpleui.PNG" /><figcaption aria-hidden="true">Emu-simpleui.PNG</figcaption>
+<img src="media/Emu-simpleui.PNG" title="Emu-simpleui.PNG" width="300" alt="Emu-simpleui.PNG" /><figcaption aria-hidden="true">Emu-simpleui.PNG</figcaption>
 </figure>
 
 All laser/filter names and colors are configurable parameters.
@@ -281,7 +281,7 @@ FINE settings and for external digital triggering. Both of these
 features can be hidden using the corresponding parameters.
 
 <figure>
-<img src="media/Emu-ibeamsmart.png" title="media/Emu-ibeamsmart.png" width="300" alt="media/Emu-ibeamsmart.png" /><figcaption aria-hidden="true">Emu-ibeamsmart.png</figcaption>
+<img src="media/Emu-ibeamsmart.png" title="Emu-ibeamsmart.png" width="300" alt="Emu-ibeamsmart.png" /><figcaption aria-hidden="true">Emu-ibeamsmart.png</figcaption>
 </figure>
 
 ### Third-party plugins
