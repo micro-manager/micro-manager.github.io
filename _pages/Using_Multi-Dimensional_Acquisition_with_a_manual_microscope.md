@@ -20,7 +20,7 @@ use the Multi-Dimensional Acquisition and its facilities. To do so,
     "Add" button, and navigate to the "scripts" folder in the
     Micro-Manager directory. Select the script "media/ManualAcq2.bsh" (you
     need to do this step only one time, the Script Panel will remember
-    the scripts you loaded). Run the media/ManualAcq2.bsh script by pressing
+    the scripts you loaded). Run the ManualAcq2.bsh script by pressing
     the Run button in the top or by double clicking the text
     "media/ManualAcq2.bsh" in the left-hand pane.
 -   Set up an MDA (using the Multi-D Acq. button and ensuing window) and

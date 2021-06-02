@@ -139,7 +139,7 @@ individually.](media/Mm_aptstages.png "|thumb|center|upright=2.5|alt=Micromanage
 
 ## Compilation notes, 64-bit device adaptor
 
-Drop the content of <File:APT> media/X64.zip into the device adapter
+Drop the content of <File:APT> X64.zip into the device adapter
 micromanager-upstream\\DeviceAdapters\\ThorlabsAPTStage folder then
 compile the adapter as a x64 / release dll.
 

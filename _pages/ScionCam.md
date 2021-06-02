@@ -111,7 +111,7 @@ Install the drivers for your platform:
 </td>
 <td markdown="1">
 
-[300kB](http://valelab.ucsf.edu/~nico/Scion/Drivers/sfwdist.pkg.media/Tar.gz)
+[300kB](http://valelab.ucsf.edu/~nico/Scion/Drivers/sfwdist.pkg.Tar.gz)
 
 </td>
 </tr>
@@ -148,7 +148,7 @@ platform:
 <td markdown="1">
 
 [Version
-2.4](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/sfwlibraries.pkg.media/Tar.gz)
+2.4](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/sfwlibraries.pkg.Tar.gz)
 
 </td>
 </tr>

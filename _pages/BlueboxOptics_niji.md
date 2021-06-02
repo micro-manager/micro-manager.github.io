@@ -159,8 +159,8 @@ For single LED excitation, two groups are required:
 ![](media/Niji_group_global_intensity.png "fig:media/Niji_group_global_intensity.png")
 
 By default, the individual LED intensities are set to 100%, but a
-different value can be set through media/MmStartup.bsh. For example, to set
-each LED intensity at 20%, add the following code to your media/MmStartup.bsh:
+different value can be set through MmStartup.bsh. For example, to set
+each LED intensity at 20%, add the following code to your MmStartup.bsh:
 
 ```
  sd = mmc.getShutterDevice();
@@ -216,7 +216,7 @@ A Windows tablet or small factor PC with a touch screen (such as the
 as a useful interface to control the niji manually:
 
 <figure>
-<img src="media/Niji_pipo.jpg" title="media/Niji_pipo.jpg" width="500" alt="media/Niji_pipo.jpg" /><figcaption aria-hidden="true">media/Niji_pipo.jpg</figcaption>
+<img src="media/Niji_pipo.jpg" title="media/Niji_pipo.jpg" width="500" alt="media/Niji_pipo.jpg" /><figcaption aria-hidden="true">Niji_pipo.jpg</figcaption>
 </figure>
 
 The micro-manager niji adapter listens to changes effected via the

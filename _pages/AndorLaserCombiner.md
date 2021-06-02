@@ -192,12 +192,12 @@ Nanda.
 <tbody>
 <tr class="odd">
 <td><p>32-bit</p></td>
-<td><p><a href=":File:libalc_x86.media/Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (32-bit)</a></p></td>
+<td><p><a href=":File:libalc_x86.Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (32-bit)</a></p></td>
 <td><p><a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895">vcredist_x86.exe</a></p></td>
 </tr>
 <tr class="even">
 <td><p>64-bit</p></td>
-<td><p><a href=":File:libalc_x64.media/Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (64-bit)</a></p></td>
+<td><p><a href=":File:libalc_x64.Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (64-bit)</a></p></td>
 <td><p><a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895">vcredist_x64.exe</a></p></td>
 </tr>
 </tbody>

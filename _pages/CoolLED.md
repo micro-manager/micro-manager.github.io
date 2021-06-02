@@ -67,7 +67,7 @@ will recognize the virtual serial port. The port can usually be found in
 
 On Windows:
 
--   Download the file media/CoolLED-pE-inf.zip from here:
+-   Download the file CoolLED-pE-inf.zip from here:
     [www.coolled.com](http://www.coolled.com) and unzip the
     `CoolLED-pE.inf` and `.cat` files. You may need to ask CoolLED for
     access to the download area.

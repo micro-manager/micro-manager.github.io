@@ -90,7 +90,7 @@ If you have a device under "NI-VISA USB Devices" named "8SMC1-USB(h)",
 then you are currently using the SMCView drivers, and must switch to the
 drivers found in the development kit. Follow the instructions in the
 [Standa user manual
-(PDF)](http://www.standa.lt/files/usb/8SMC1-USBhF%20User%media/20Manual.pdf)
+(PDF)](http://www.standa.lt/files/usb/8SMC1-USBhF%20User%20Manual.pdf)
 to switch between the NI-VISA and MicroSMC drivers.
 
 The device currently has three main settings, which is the **device

@@ -24,9 +24,9 @@ X 10.4 (Tiger) as well (NS, 9/11/2008).
 
 Here are download links for versions I have.
 
-- [autoconf 2.59](http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.media/Tar.gz) installed on my Tiger system seems to be fine
-- [automake 1.10.1](ftp://ftp.gnu.org/gnu/automake/automake-1.10.media/Tar.gz) NB automake 1.9.6 fails
-- [libtool 1.5.22](http://ftp.gnu.org/gnu/libtool/libtool-1.5.22.media/Tar.gz) later versions presumably ok
+- [autoconf 2.59](http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.Tar.gz) installed on my Tiger system seems to be fine
+- [automake 1.10.1](ftp://ftp.gnu.org/gnu/automake/automake-1.10.Tar.gz) NB automake 1.9.6 fails
+- [libtool 1.5.22](http://ftp.gnu.org/gnu/libtool/libtool-1.5.22.Tar.gz) later versions presumably ok
 
 Once you are done, make quite sure that you are using the latest
 versions that you have installed:
@@ -48,8 +48,8 @@ Hope it works for you! Greg Jefferis &lt;jefferis@gmail.com&gt;
 # EITHER libdc1394 v2.0.1 (release version)
 VERSION="2.0.1"
 LIBDC="libdc1394-$VERSION"
-curl -O http://kent.dl.sourceforge.net/sourceforge/libdc1394/$LIBDC.media/Tar.gz
-tar zxvf $LIBDC.media/Tar.gz
+curl -O http://kent.dl.sourceforge.net/sourceforge/libdc1394/$LIBDC.Tar.gz
+tar zxvf $LIBDC.Tar.gz
 cd $LIBDC
 ./configure --prefix=/usr/local
 make

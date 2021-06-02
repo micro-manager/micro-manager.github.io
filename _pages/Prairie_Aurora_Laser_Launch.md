@@ -119,7 +119,7 @@ select the option “Search for a driver to install” and enter the search
 path as: “Boot Drive (C):\\Program Files\\Micro-Manager-1.3\\drivers.
 Windows will search and install the correct driver for Micro-Manager and
 Velleman interfacing now.
-[6](http://www.austinblanco.com/Resources/How%20to%20install%20a%20Velleman%20board%20on%media/20umanager.pdf)
+[6](http://www.austinblanco.com/Resources/How%20to%20install%20a%20Velleman%20board%20on%20umanager.pdf)
 
 ## Setting up the Hardware Configuration Wizard in Micro-Manager
 

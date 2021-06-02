@@ -208,7 +208,7 @@ Yes (Official)</p></td>
 <td><p><a href="http://www.pololu.com/catalog/product/1356/resources">UscCmd</a></p></td>
 <td><p>?</p></td>
 <td><p>Commandline utility</p></td>
-<td><p><a href="http://www.pololu.com/file/0J315/maestro-linux-100507.media/Tar.gz">Yes</a></p></td>
+<td><p><a href="http://www.pololu.com/file/0J315/maestro-linux-100507.Tar.gz">Yes</a></p></td>
 </tr>
 </tbody>
 </table>

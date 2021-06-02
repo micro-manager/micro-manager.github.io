@@ -93,7 +93,7 @@ Sourceforge: [2](http://sourceforge.net/projects/twain-dsm/files/) As of
 configuration wizard will show you the following message upon selecting
 the Twain camera device:
 
-![](Twain_TWAINDSM.media/DLL_MISSING.GIF "Twain_TWAINDSM.media/DLL_MISSING.GIF")
+![](Twain_TWAINDSM.DLL_MISSING.GIF "Twain_TWAINDSM.DLL_MISSING.GIF")
 
 Also please double check that the camera has a 'controllable' UI. Use
 twain.org's "Twain2 Sample App" program select your camera, press
