@@ -7,7 +7,7 @@ layout: home
 {::nomarkdown}
     <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
-            <img src="images/logo/umanager-logo.png" alt="MicroManager Logo" class="image-header" style="padding-top: 5vh; width: auto; height: 60vh>
+            <img src="images/logo/umanager-logo.png" alt="MicroManager Logo" class="image-header" style="padding-top: 5vh; width: auto; height: 60vh">
             <br>
             <br>
             <ul class="actions special">
