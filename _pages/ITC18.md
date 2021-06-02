@@ -111,9 +111,9 @@ More information about the ITC18 can be found here:
 ## Example Scripts for ITC18-Protocol module
 
 1.  Create a protocol by running
-    [Media:media/ITC18.csh](media/ITC18.csh "wikilink")
+    [ITC18.csh](media/ITC18.csh "wikilink")
 2.  Run that protocol inside Micromanager with
-    [Media:media/TESM.bsh](media/TESM.bsh "wikilink")
+    [TESM.bsh](media/TESM.bsh "wikilink")
 
 {% include Note text="The above protocols are very complicated and are designed for a very specific microscope. You need to modify them to suit your needs." %}
 
@@ -152,7 +152,7 @@ or
 
 ### Windows and Linux ITC18 driver source code
 
-[Media:media/ITC18.zip](media/ITC18.zip "wikilink")
+[ITC18.zip](media/ITC18.zip "wikilink")
 
 --[Karl Bellve, Biomedical Imaging Group, University of
 Massachusetts](User:Kdb "wikilink") 17:15, 10 November 2009 (UTC)
