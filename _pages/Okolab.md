@@ -189,7 +189,7 @@ commands😎"&gt;
 
 To use this adapter, you must manually install OKO-Control Server
 software which can be downloaded
-[here](https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%media/20Server.zip).
+[here](https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%20Server.zip).
 The installation is straightforward, default settings can be used.
 
 ### Configuration

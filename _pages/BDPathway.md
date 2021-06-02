@@ -56,7 +56,7 @@ based device I developed for this purpose
 [3](https://github.com/zindy/ypipe).
 
 <figure>
-<img src="media/Ypipe_principal.gif" title="media/Ypipe_principal.gif" width="600" alt="media/Ypipe_principal.gif" /><figcaption aria-hidden="true">media/Ypipe_principal.gif</figcaption>
+<img src="media/Ypipe_principal.gif" title="media/Ypipe_principal.gif" width="600" alt="media/Ypipe_principal.gif" /><figcaption aria-hidden="true">Ypipe_principal.gif</figcaption>
 </figure>
 
 Plugged in between the original controller (OC) and BD-Pathway (BDP) via
@@ -83,7 +83,7 @@ session to the OC on the right and PuTTY/KiTTY
 logging serial traffic between all three sources (OC, WS and BDP):
 
 <figure>
-<img src="media/Desktop_attovision_kitty.png" title="media/Desktop_attovision_kitty.png" width="800" alt="media/Desktop_attovision_kitty.png" /><figcaption aria-hidden="true">media/Desktop_attovision_kitty.png</figcaption>
+<img src="media/Desktop_attovision_kitty.png" title="media/Desktop_attovision_kitty.png" width="800" alt="media/Desktop_attovision_kitty.png" /><figcaption aria-hidden="true">Desktop_attovision_kitty.png</figcaption>
 </figure>
 
 ## Requirements

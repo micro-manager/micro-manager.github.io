@@ -178,9 +178,9 @@ calculate the noise after subtracting one image from the other.
     Transfer Curve.
 -   In Micro-Manager, open the Script Panel (Tools-&gt;Script Panel).
     Press the ‘Add’ button in the upper left corner and locate the file
-    ‘media/CameraLabs.bsh’ in C:\\Program Files\\Micro-Manager1.4\\scripts.
-    Likewise, “add” the scripts: “media/Plot.bsh”, “media/CameraAnalysis.bsh”, and
-    “media/FPN.bsh”. Run the script “media/Plot.bsh” (you will see no output, it
+    ‘CameraLabs.bsh’ in C:\\Program Files\\Micro-Manager1.4\\scripts.
+    Likewise, “add” the scripts: “Plot.bsh”, “CameraAnalysis.bsh”, and
+    “FPN.bsh”. Run the script “Plot.bsh” (you will see no output, it
     simply loads the plotting code, you need to run this only once).
     -   Use a smartphone display for even illumination as described
         above. Determine the maximum exposure time at which the image
@@ -196,7 +196,7 @@ calculate the noise after subtracting one image from the other.
         “Process”-&gt;”Math”-&gt;”Subtract” and enter the offset you
         measured previously. Process all slices.
     -   While this data window is selected, run the script
-        “media/CameraAnalysis.bsh”. The script will generate the “Photon
+        “CameraAnalysis.bsh”. The script will generate the “Photon
         Transfer Curve”. Inspect the Photon Transfer Curve (you can zoom
         in by drawing a box in a region of the plot, zoom out by right
         clicking the mouse). Note the region at low intensities where

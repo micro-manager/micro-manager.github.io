@@ -29,7 +29,7 @@ MM_DIR=$(pwd)
 
 # Get ImageJ (use it even if you already have another copy of ImageJ or Fiji)
 wget http://imagej.nih.gov/ij/download/zips/media/Ij148.zip
-unzip media/Ij148.zip
+unzip Ij148.zip
 
 # Retrieve MM source code (can be long)
 svn co https://valelab.ucsf.edu/svn/micromanager2/trunk micro-manager

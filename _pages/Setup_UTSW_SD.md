@@ -87,7 +87,7 @@ layout: page
     needed many lines commented out. If there was a backup one could use
     the "none" configuration to start and then diagnose the problem with
     the offending hardware setup (e.g. by loading it one at a time).
--   Learned that one has to put the `media/MMStartup.bsh` startup script in
+-   Learned that one has to put the `MMStartup.bsh` startup script in
     the µManager root folder. First instinct was to put it in the
     "scripts" folder, which didn't work.
 -   `exec()` command in Beanshell startup script was useful in fixing
@@ -109,7 +109,7 @@ layout: page
         preset, waiting for the associated hardware to move, changing
         the value, and then saving the preset.
 -   New DeviceAdapter for FRAPPA galvo
--   Example media/MMstartup.bsh script with useful commands, (commented out,
+-   Example MMstartup.bsh script with useful commands, (commented out,
     of course).
 -   Automated bug reporting and product registration does not work since
     the IT department at UT Southwestern blocks whatever port is
@@ -137,7 +137,7 @@ exec("C:/Python27/python C:/MM/alc_shutter_toggle_until_open.py");
 mmc.setPosition("NanoScanZ", 50);
 
 // Crop sCMOS to spinning disk aperture.  If you need to change the
-// ROI values if the camera is moved, run media/Show_roi_coordinates.bsh
+// ROI values if the camera is moved, run Show_roi_coordinates.bsh
 default_camera = mmc.getProperty("Core", "Camera");
 mmc.setProperty("Core", "Camera", " sCMOS");
 mmc.waitForSystem();

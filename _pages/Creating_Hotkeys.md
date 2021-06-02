@@ -28,7 +28,7 @@ describes the process for setting up a new hotkey.
     has an action of "Snap" and a corresponding command key of "space".
     Click on the space icon; it should turn red. Hit 1, to change the
     hotkey to trigger when you type 1. Click on "Snap" and a menu will
-    come up; at the bottom should be our media/Exposure.bsh script. Select it.
+    come up; at the bottom should be our Exposure.bsh script. Select it.
     ![](media/Hotkey4.png "media/Hotkey4.png")
 6.  Close the hotkeys dialog. Now, whenever you type 1 in the program
     and you aren't modifying a text field, the exposure time will be set

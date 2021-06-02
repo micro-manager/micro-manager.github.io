@@ -162,7 +162,7 @@ autofocus system
 In both, the user can cycle of several states states (laser idle, laser
 on, calibrate, lock/unlock, laser off) by pressing the middle "@" button
 on the controller for 6 seconds (see the CRIFF manual
-[5](http://www.asiimaging.com/ftp2asi/Manuals/CRIFF%media/20Manual.pdf)). Most
+[5](http://www.asiimaging.com/ftp2asi/Manuals/CRIFF%20Manual.pdf)). Most
 of these state changes are implemented in the CRIFF and CRISP adapters.
 In general, it is easiest to first calibrate the CRIFF/CRISP by hand and
 then use Micro-manager to lock and unlock the CRIFF/CRISP.

@@ -125,7 +125,7 @@ version of your plugin to the `mmplugins` folder.
 
 
 You can also dynamically load your plugin by including a line in the
-`media/MMStartup.bsh` file. (This file should reside in the root directory of
+`MMStartup.bsh` file. (This file should reside in the root directory of
 your Micro-Manager installation; if there isn't one yet, you can create
 it with any text editor program.) For example:
 

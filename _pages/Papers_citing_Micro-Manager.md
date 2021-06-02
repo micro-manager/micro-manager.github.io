@@ -3405,7 +3405,7 @@ controls eisosome assembly and shape. **J. Cell Biol.** 198:405-420,
 John Oreopoulos (2012). A comparison of sCMOS and EMCCD digital camera
 technlogies for spinning disk confocal microscopy. (white paper,
 not-peer reviewed).
-[pdf](http://www.spectral.ca/_files/file.php?fileid=fileWFBaXTDIaW&filename=media/File_4_CSU_Camera_Comparison__sCMOSvsEMCCD.pdf)
+[pdf](http://www.spectral.ca/_files/file.php?fileid=fileWFBaXTDIaW&filename=File_4_CSU_Camera_Comparison__sCMOSvsEMCCD.pdf)
 
 Sung Hee Ko1, Yong-Ak Song, Sung Jae Kim, Myungji Kim, Jongyoon Han,and
 Kwan Hyoung Kang (2012). Nanofluidic Preconcentration Device in a
@@ -3743,7 +3743,7 @@ heterocyts - forming Cyanobacterium and quantification of its
 biotechnological potential with respect to redox properties at single
 cell level. **Romanian Biotechnological Letters** Vol. 16, No.6, 2011,
 Supplement [DOI: PDF
-file](http://www.rombio.eu/rbl6vol16Supplement/1%20Iris%20Sarchizian%media/20Ardelean.pdf)
+file](http://www.rombio.eu/rbl6vol16Supplement/1%20Iris%20Sarchizian%20Ardelean.pdf)
 
 Shawna C. O. Reed, Alisa W. Serio, Matthew D. Welch (2011), Rickettsia
 parkeri invasion of diverse host cells involves an Arp2/3 complex, WAVE
@@ -3781,7 +3781,7 @@ for single-cell analysis. **Analytical and Bioanalytical Chemistry**
 Danny A. Stark, Rowan M. Karvas, Ashley L. Siegel, and D. D. W.
 Cornelison (2011), Eph/ephrin interactions modulate muscle satellite
 cell motility and patterning. **Development** [DOI:
-10.1242/dev.068411](http://dev.biologists.org/content/early/2011/11/09/dev.068411.media/Full.pdf)
+10.1242/dev.068411](http://dev.biologists.org/content/early/2011/11/09/dev.068411.Full.pdf)
 
 Leavesley, S. J., Annamdevula, N., Boni, J., Stocker, S., Grant, K.,
 Troyanovsky, B., Rich, T. C. and Alvarez, D. F. (2011), Hyperspectral

@@ -213,7 +213,7 @@ C:\imgs\img_?{1}?_?{2}[x-Axis]_?[y-Axis].png
 <td markdown="1">
 
 ```
-C:\imgs\img_7.4_3.media/52_-1.png
+C:\imgs\img_7.4_3.52_-1.png
 ```
 
 </td>
@@ -236,8 +236,8 @@ need to be adapted as follows (tested on Ubuntu 16):
         {% endhighlight %}
     -   Download code & extract it
         {% highlight shell %}
-        wget https://github.com/opencv/opencv/archive/2.4.8.3.media/Tar.gz
-        tar -xvf 2.4.8.3.media/Tar.gz
+        wget https://github.com/opencv/opencv/archive/2.4.8.3.Tar.gz
+        tar -xvf 2.4.8.3.Tar.gz
         {% endhighlight %}
     -   Build & install it
         {% highlight shell %}

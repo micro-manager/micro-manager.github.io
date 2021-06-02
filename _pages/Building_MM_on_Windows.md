@@ -391,7 +391,7 @@ This will construct a near-complete Micro-Manager installation in the
 `stage\Release\Win32` directory. The only thing lacking is the Java
 Runtime; you will need to copy over the `jre` folder from inside your
 JDK installation before launching `ImageJ.exe`. (Note that the
-`media/ImageJ.cfg` file determines where the JRE is searched for.)
+`ImageJ.cfg` file determines where the JRE is searched for.)
 
 To recap, the steps to build everything available with the default
 architecture are:
