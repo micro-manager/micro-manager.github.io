@@ -58,7 +58,7 @@ There are 2 behaviors of the plugin unique to the Micropoint:
     2.  Extend the Projector plugin to handle line and 2D regions
         natively using the above logic.
 
-![](media/Micropoint-calibration.png "fig:media/Micropoint-calibration.png") Figure:
+![](media/Micropoint-calibration.png "Micropoint-calibration.png") Figure:
 The calibration process completes two steps. First, it fires a crosshair
 pattern to determine the camera orientation (left image), and then fires
 a grid pattern across the range of the phototargeting device (right

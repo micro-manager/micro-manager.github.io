@@ -155,8 +155,8 @@ For single LED excitation, two groups are required:
 -   "Global Intensity" to control the light output intensity (this
     affects all 7 LEDs).
 
-![](media/Niji_group_channel_label.png "fig:media/Niji_group_channel_label.png")
-![](media/Niji_group_global_intensity.png "fig:media/Niji_group_global_intensity.png")
+![](media/Niji_group_channel_label.png "Niji_group_channel_label.png")
+![](media/Niji_group_global_intensity.png "Niji_group_global_intensity.png")
 
 By default, the individual LED intensities are set to 100%, but a
 different value can be set through MmStartup.bsh. For example, to set
@@ -199,8 +199,8 @@ allowed for the preset, multiplied by the global intensity given to the
 user as an additional group setting as in the "single LED presets"
 section above.
 
-![](media/Niji_group_multiled_intensity_preset1.png "fig:media/Niji_group_multiled_intensity_preset1.png")
-![](media/Niji_group_multiled_intensity_preset2.png "fig:media/Niji_group_multiled_intensity_preset2.png")
+![](media/Niji_group_multiled_intensity_preset1.png "Niji_group_multiled_intensity_preset1.png")
+![](media/Niji_group_multiled_intensity_preset2.png "Niji_group_multiled_intensity_preset2.png")
 
 ## Bi-directional communication
 

@@ -6,7 +6,7 @@ section: Downloads
 ---
 
 
- ![](media/NewLogo.png "fig:media/NewLogo.png")
+ ![](media/NewLogo.png "NewLogo.png")
 
 <span style="font-size:75%">μManager™ is a trademark of The Regents of
 the University of California. Used with Permission.</span>

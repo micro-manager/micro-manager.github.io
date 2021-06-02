@@ -155,7 +155,7 @@ noise causes a slope of 0.5, and fixed pattern noise causes a slope of
 1. To find the area on the Photon Transfer Curve where shot noise is
 dominant, one needs to find the area where the slope is close to 0.5.
 
-￼![](media/PhotonTC.gif "fig:media/PhotonTC.gif")
+￼![](media/PhotonTC.gif "PhotonTC.gif")
 
 Photon Transfer Curve from: James R. Janesick, Photon Transfer, DN -&gt;
 λ. SPIE Press, 2007

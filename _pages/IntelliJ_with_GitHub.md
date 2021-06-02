@@ -22,7 +22,7 @@ Install Adopt OpenJDK 8
 Fork Micromanager 2.0 Repository into your own GitHub Account and name it.  
 <https://github.com/micro-manager/micro-manager>
 
-<img src="media/Annotation_2020-04-15_104551.png" title="fig:media/Annotation_2020-04-15_104551.png" width="300" alt="Annotation_2020-04-15_104551.png" />
+<img src="media/Annotation_2020-04-15_104551.png" title="Annotation_2020-04-15_104551.png" width="300" alt="Annotation_2020-04-15_104551.png" />
 
 <!-- -->
 

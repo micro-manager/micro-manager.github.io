@@ -75,7 +75,7 @@ steps for Netbeans:
     newer Mac OS. Using JDK 7 may cause plugins to fail to load.
 2.  Select New &gt; New Project... &gt; Java &gt; **Java Class
     Library**.
-    <img src="media/Netbeans8_new_project.png" title="fig:media/Netbeans8_new_project.png" width="450" alt="Netbeans8_new_project.png" />
+    <img src="media/Netbeans8_new_project.png" title="Netbeans8_new_project.png" width="450" alt="Netbeans8_new_project.png" />
 3.  Name your plugin project and press Finish.
 4.  Under the Projects tab, right-click your plugin project and choose
     Properties.
@@ -85,11 +85,11 @@ steps for Netbeans:
         choose all jars in that directory.
     2.  Click Add JAR/Folder again and add
         `C:\Program Files\Micro-Manager-1.4\ij.jar`
-        <img src="media/Netbeans8_library_tab.png" title="fig:media/Netbeans8_library_tab.png" width="450" alt="Netbeans8_library_tab.png" />
+        <img src="media/Netbeans8_library_tab.png" title="Netbeans8_library_tab.png" width="450" alt="Netbeans8_library_tab.png" />
     3.  Click Categories &gt; Run and set Main Class to `ij.ImageJ`,
         working directory to `C:\Program Files\Micro-Manager-1.4\` .
         Click OK.
-        <img src="media/Netbeans8_run_tab.png" title="fig:media/Netbeans8_run_tab.png" width="450" alt="Netbeans8_run_tab.png" />
+        <img src="media/Netbeans8_run_tab.png" title="Netbeans8_run_tab.png" width="450" alt="Netbeans8_run_tab.png" />
 6.  Now choose Debug &gt; Debug Project from the Menu and
     ImageJ/Micro-Manager should launch. Close it for now.
 7.  Right-click your Source Packages in your project, under the Projects

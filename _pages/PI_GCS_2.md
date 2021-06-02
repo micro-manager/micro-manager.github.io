@@ -245,7 +245,7 @@ the controller with the "Assign Stages" dialog window, you can
 afterwards call "Save parameters to non-volatile memory" in the
 corresponding controller menu (see figure below). The password used is
 usually "100". Please see the user manual of the controller for details.
-![](media/PI_GCS2_PIMikroMove_Save_Params.png "fig:media/PI_GCS2_PIMikroMove_Save_Params.png")
+![](media/PI_GCS2_PIMikroMove_Save_Params.png "PI_GCS2_PIMikroMove_Save_Params.png")
 
 ### Homing of the stages
 
@@ -265,8 +265,8 @@ workaround. The stage may take several seconds to reach the target. Most
 likely this will result in an error message "device times out". Please
 close this error message AFTER the stage has finished. Then you should
 be able to continue using this ZStage.
-![](media/PI_GCS2_PropertyGroupHomeConfig.png "fig:media/PI_GCS2_PropertyGroupHomeConfig.png")
-![](media/PI_GCS2_PropertyGroupHome.png "fig:media/PI_GCS2_PropertyGroupHome.png")
+![](media/PI_GCS2_PropertyGroupHomeConfig.png "PI_GCS2_PropertyGroupHomeConfig.png")
+![](media/PI_GCS2_PropertyGroupHome.png "PI_GCS2_PropertyGroupHome.png")
 
 ### Changing velocity
 
@@ -274,7 +274,7 @@ To change the velocity of the stage you can create an additional
 configuration group and select the property “Velocity” of the stage.
 Then you can change the velocity of the stage at any time in the
 corresponding GUI element.
-![](media/PI_GCS2_PropertyGroupVelocity.png "fig:media/PI_GCS2_PropertyGroupVelocity.png")
+![](media/PI_GCS2_PropertyGroupVelocity.png "PI_GCS2_PropertyGroupVelocity.png")
 
 ### Controller Joystick
 
@@ -286,7 +286,7 @@ field, and select the “Joystick 1” or “Joystick 2” property of the
 controller. Afterwards you can activate the joystick by entering “1” and
 deactivating the joystick by entering “0” in the corresponding GUI
 element.
-![](media/PI_GCS2_PropertyGroupJoystickConfig.png "fig:media/PI_GCS2_PropertyGroupJoystickConfig.png")
+![](media/PI_GCS2_PropertyGroupJoystickConfig.png "PI_GCS2_PropertyGroupJoystickConfig.png")
 
 With presets defined a dropdown box can be created which allows
 activating (ON) / deactivating (OFF) the joystick with a simple action
@@ -308,4 +308,4 @@ and “JAX 3 2 2” to control stage axis 1 with joystick 3 axis 1 and stage
 axis 2 with joystick 3 axis 2. Since all changes will be lost when
 rebooting the controller, this procedure can be automated using an auto
 start macro in PIMikroMove:
-![](media/PIMikroMove_Joystick_Startup_Makro.jpg "fig:media/PIMikroMove_Joystick_Startup_Makro.jpg")
+![](media/PIMikroMove_Joystick_Startup_Makro.jpg "PIMikroMove_Joystick_Startup_Makro.jpg")

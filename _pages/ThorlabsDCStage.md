@@ -98,7 +98,7 @@ Controller](http://www.thorlabs.com/NewGroupPage9.cfm?ObjectGroup_ID=2419).
 
 Before using this adapter install the software provided by Thorlabs and
 follow the configuration process. Moreover the APT.dll file should be
-copied on the Micro-manager folder. ![](media/APT.zip "fig:media/APT.zip")
+copied on the Micro-manager folder. ![](media/APT.zip "APT.zip")
 
 Each time you power-up this stage needs to be "homed" before sending any
 commands. To do that, create a Group with the "Home" property. Then set

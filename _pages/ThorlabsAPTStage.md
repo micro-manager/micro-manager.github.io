@@ -31,7 +31,7 @@ the Thorlabs APT stages.
 
 Support for 64-bit APT device control is now integrated into the main
 Micromanager build. However, you still need to download the 64-bit
-APT.dll file from here: ![](media/APT_x64.zip "fig:media/APT_x64.zip") and place it
+APT.dll file from here: ![](media/APT_x64.zip "APT_x64.zip") and place it
 in the main Micromanager folder.
 
 Do not forget to install the 64 bit APT drivers from Thorlabs as per the
@@ -49,7 +49,7 @@ First you will need to download and install the APT software from the
 [Thorlabs
 website](http://www.thorlabs.co.uk/software_pages/ViewSoftwarePage.cfm?Code=apt).
 
-Then download the ![](media/APT.zip "fig:media/APT.zip") file and decompress the
+Then download the ![](media/APT.zip "APT.zip") file and decompress the
 APT.dll file into your Micro-manager folder. As of 2014-07-04, the
 APT.dll version which works with the current Thorlabs drivers is
 v1.0.0.3. The file is 1.71MB decompressed and its MD5 checksum is

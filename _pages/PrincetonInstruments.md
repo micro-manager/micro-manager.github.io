@@ -95,7 +95,7 @@ PVCAM](http://www.princetoninstruments.com/support/software.aspx). If
 you had previously installed the Photometrics version of PVCAM, then you
 need to manually complete de-installation using the following
 instructions:
-![](media/PhotometricsUninstall.zip "fig:media/PhotometricsUninstall.zip")
+![](media/PhotometricsUninstall.zip "PhotometricsUninstall.zip")
 
 If you encounter the following error message on startup: *Error code:
 39  
