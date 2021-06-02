@@ -86,7 +86,7 @@ XYStage
 </td>
 <td markdown="1">
 
-[Example Config File](Media:media/MMConfig_MCL_MicroDrive.cfg "wikilink")
+[Example Config File](media/MMConfig_MCL_MicroDrive.cfg "wikilink")
 (Sets up the Micro-Drive™ with the DemoCamera.)
 
 </td>

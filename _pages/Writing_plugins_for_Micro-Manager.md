@@ -46,7 +46,7 @@ The source code for a number of Micro-Manager plugins is publicly
 available
 [here](https://valelab4.ucsf.edu/trac/micromanager/browser/plugins). You
 may also find this [Hello World Example
-plugin](Media:media/HelloWorldPlugin.zip "wikilink") useful as a template for
+plugin](media/HelloWorldPlugin.zip "wikilink") useful as a template for
 getting started.
 
 The use of two common IDEs for plugin development, **Netbeans** and

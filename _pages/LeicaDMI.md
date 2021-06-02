@@ -129,7 +129,7 @@ with other DMI models as well.
 
 To use this adapter when your microscope only has a USB connector,
 install the drivers provided by Leica
-[Media:media/Leica-USBDriver.zip](Media:media/Leica-USBDriver.zip "wikilink") (for
+[Media:media/Leica-USBDriver.zip](media/Leica-USBDriver.zip "wikilink") (for
 Windows), or the drivers from
 [FTDI](http://www.ftdichip.com/FTDrivers.htm) (for Mac OS X and Linux)
 to drive the USB to serial interface inside the microscope (no other

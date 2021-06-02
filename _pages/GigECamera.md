@@ -18,7 +18,7 @@ Tool](http://www.jai.com/EN/CameraSolutions/Download/Pages/JAI_SDK_and_control_t
 **Devices:** Many GigE Vision- and GenICam-compliant cameras
 
 **Example Config File:**
-[Media:media/GigE-test-config.cfg](Media:media/GigE-test-config.cfg "wikilink")
+[Media:media/GigE-test-config.cfg](media/GigE-test-config.cfg "wikilink")
 
 ## About
 

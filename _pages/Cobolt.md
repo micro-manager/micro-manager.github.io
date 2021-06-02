@@ -85,7 +85,7 @@ All
 </td>
 <td markdown="1">
 
-[Media:media/Cobolt.cfg](Media:media/Cobolt.cfg "wikilink")
+[Media:media/Cobolt.cfg](media/Cobolt.cfg "wikilink")
 
 </td>
 </tr>
@@ -165,5 +165,5 @@ shutter devices:
     Arduino](Control_laser_shutters_with_Arduino "wikilink") by Rocco
     D'Antuono
 -   [GUI panel for Cobolt laser
-    control](Media:media/GUI_panel_for_Cobolt_laser_control.bsh "wikilink") by
+    control](media/GUI_panel_for_Cobolt_laser_control.bsh "wikilink") by
     Rocco D'Antuono
