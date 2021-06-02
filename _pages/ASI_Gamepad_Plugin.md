@@ -175,7 +175,7 @@ gui.setRelativeXYStagePosition(0,1000);
 gui.setRelativeXYStagePosition(0,-1000);
 
 Find some example scripts
-[here](https://www.dropbox.com/s/pfbsw8pgpasrzwk/media/Dpad_beanscripts.zip?dl=0).
+[here](https://www.dropbox.com/s/pfbsw8pgpasrzwk/Dpad_beanscripts.zip?dl=0).
 
 ## Controller Layout
 

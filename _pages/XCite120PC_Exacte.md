@@ -117,7 +117,7 @@ Serial port settings:
 
 When using the Exacte with a Mac download the FTDI drivers for the
 USB-Serial adapter
-[here](https://valelab.ucsf.edu/~nico/MMwiki/images/4/49/media/FTDIUSBSerialDriver_v2_2_8.zip)
+[here](https://valelab.ucsf.edu/~nico/MMwiki/images/4/49/FTDIUSBSerialDriver_v2_2_8.zip)
 
 On windows, ensure that you have installed both the USB and virtual COM
 port drivers. To do this, follow these steps:

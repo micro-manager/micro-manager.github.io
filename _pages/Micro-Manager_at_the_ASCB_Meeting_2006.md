@@ -16,6 +16,6 @@ response both from the user community and from the industry. Thanks
 everyone for stopping by our booth!
 
 [Micro-Manager
-flyer](https://valelab.ucsf.edu/~MM/MMweb/content/doc/pdf/media/Micro-Manager-Brochure-1.pdf)
+flyer](https://valelab.ucsf.edu/~MM/MMweb/content/doc/pdf/Micro-Manager-Brochure-1.pdf)
 (PDF)
 

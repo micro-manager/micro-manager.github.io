@@ -155,7 +155,7 @@ need to look there as well.
 
 Please refer to the following Installation Guide for further help:
 [Installation
-Guide](File:%5Bhttps://www.pco.de/fileadmin/user_upload/pco-manuals/media/MA_MICROMANAGER_200.pdf)\]
+Guide](File:%5Bhttps://www.pco.de/fileadmin/user_upload/pco-manuals/MA_MICROMANAGER_200.pdf)\]
 
 Please be informed that starting with nightly build of 23rd of August
 2020 pco stopped software support for SensiCam (also DiCam) and

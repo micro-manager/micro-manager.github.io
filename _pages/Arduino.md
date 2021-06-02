@@ -201,7 +201,7 @@ will be kept at zero as long as the TTL is inactive.
 <tr class="odd">
 <td><p>Switch-Sequence</p></td>
 <td><p><strong>Off</strong> operates the Arduino in normal "switching" mode.<br />
-<strong>On</strong> enables triggered "sequencing" mode. One defines and upload multiple pattern states to the Arduino <a href="https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/media/SequencePropTest.bsh">using a Beanshell script</a>. Then the digital input signal to pin 2 switches between the sets of patterns. Typically, one would connect the camera exposure signal to pin 2.</p></td>
+<strong>On</strong> enables triggered "sequencing" mode. One defines and upload multiple pattern states to the Arduino <a href="https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/SequencePropTest.bsh">using a Beanshell script</a>. Then the digital input signal to pin 2 switches between the sets of patterns. Typically, one would connect the camera exposure signal to pin 2.</p></td>
 </tr>
 <tr class="even">
 <td><p>Switch-State</p></td>

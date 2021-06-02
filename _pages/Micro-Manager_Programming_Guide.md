@@ -770,7 +770,7 @@ core.loadSystemConfiguration("MMConfig.cfg");
 
 
 In this case
-[MMConfig.cfg](http://valelab.ucsf.edu/~MM/files/media/MMConfig_demo.cfg) is a
+[MMConfig.cfg](http://valelab.ucsf.edu/~MM/files/MMConfig_demo.cfg) is a
 text file in containing a list of simple commands to build the desired
 system state: devices, labels, equipment, properties, and
 configurations. The format of this file and other topics related to

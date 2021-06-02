@@ -88,7 +88,7 @@ work on Linux.
 
 To use this adapter, first download and install the [drivers and control
 software from
-Pololu](http://www.pololu.com/file/download/media/Maestro_windows_100506.zip?file_id=0J266).
+Pololu](http://www.pololu.com/file/download/Maestro_windows_100506.zip?file_id=0J266).
 Make sure that your servo works with the Pololu software, using their
 excellent [documentation](http://www.pololu.com/docs/0J40/all) as a
 guide. in the Pololu software, under the "Serial Settings" tab, select

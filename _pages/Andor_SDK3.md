@@ -200,7 +200,7 @@ which details the steps above, shows how to add a device in the property
 browser, etc.
 
 See Andor's [Software
-Guide](http://www.andor.com/pdfs/manuals/media/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf%7CMicro-Manager)
+Guide](http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf%7CMicro-Manager)
 which details the steps above, shows how to add a device in the property
 browser, etc.
 

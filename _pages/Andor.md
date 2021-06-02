@@ -254,7 +254,7 @@ plugged into the computer to be its own USB bus:
 ##### Windows USB Bus
 
 You need to use a utility like
-[UVCview](http://www.ftdichip.com/Resources/Utilities/media/Usbview.zip) to
+[UVCview](http://www.ftdichip.com/Resources/Utilities/Usbview.zip) to
 inspect the USB bus. Try different USB slot positions on the computer
 until the camera is on its own USB bus.
 

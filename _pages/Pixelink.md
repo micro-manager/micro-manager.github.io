@@ -81,7 +81,7 @@ Pixelink PL-D and M series cameras now support Micro-Manager. To
 download the Micro-Manager device adapter follow the link below:
 
 [Download Pixelink Micro-Manager Device
-Adapter](https://storage.googleapis.com/files.pixelink.com/latest/media/Micro-Manager.zip)
+Adapter](https://storage.googleapis.com/files.pixelink.com/latest/Micro-Manager.zip)
 
 This adapter has been tested with Micro-Manager version 2.0.0\_20210304.
 We recommend using this version, although later versions have also been

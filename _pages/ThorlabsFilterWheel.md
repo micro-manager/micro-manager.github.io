@@ -87,7 +87,7 @@ Windows (depends on USB to serial port driver)
 
 This adapter controls the Thorlabs FilterWheel FW102B and FW212B. A
 manual can be found
-[here](http://www.thorlabs.com/Thorcat/16600/media/16667-D02.pdf). Note that
+[here](http://www.thorlabs.com/Thorcat/16600/16667-D02.pdf). Note that
 the filter wheel has a USB connection. The software that comes with the
 filterwheel will install a driver for USB to serial converter that
 appears as a serial port in Micro-Manager. If such a driver can be found

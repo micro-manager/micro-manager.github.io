@@ -81,7 +81,7 @@ circumstances the device would share a bus with a low-bandwidth device
 (i.e. a device known not to require much communication).
 
 You need to use a utility like
-[UVCview](http://www.ftdichip.com/Resources/Utilities/media/Usbview.zip) to
+[UVCview](http://www.ftdichip.com/Resources/Utilities/Usbview.zip) to
 inspect the USB bus. The physical layout of computer USB ports is often
 misleading, as devices connected to the front and back USB slots of the
 computer can actually be on the same USB bus. Using UVCview, try

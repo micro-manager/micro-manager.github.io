@@ -97,7 +97,7 @@ DeVaney, TTJ; Sax, W; Platzer, F
 
 Correction of optical refraction artefacts in multiwell plates for live
 cell imaging. Focus on Microscopy 2008
-<http://www.focusonmicroscopy.org/2008/PDF/media/164_DeVaney.pdf> 2008;
+<http://www.focusonmicroscopy.org/2008/PDF/164_DeVaney.pdf> 2008;
 152.-Focus on Microscopy 2008. ; April 13-16, 2008; Osaka, Japan. \[Oral
 Communication\]
 

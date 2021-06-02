@@ -41,7 +41,7 @@ making use of hardware triggering whenever possible.
 
 Many microscope hardware components have inputs and outputs for TTL
 signals (see our Micro-Manager
-[tutorial](http://valelab.ucsf.edu/publications/media/2010EdelsteinCurrProt.pdf))
+[tutorial](http://valelab.ucsf.edu/publications/2010EdelsteinCurrProt.pdf))
 that can be used for synchronization. These TTLs are usually physically
 connected by [BNC
 connectors](http://en.wikipedia.org/wiki/BNC_connector).

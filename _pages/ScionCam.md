@@ -176,7 +176,7 @@ want that delay as it will slow down full frame capture.
 
 Martin Wessendorf made available a copy of [the installation CD that
 came with his
-camera](http://valelab.ucsf.edu/~nico/Scion/media/Scioninfodrivers.zip).
+camera](http://valelab.ucsf.edu/~nico/Scion/Scioninfodrivers.zip).
 
 {% include Listserv_Search text="Scion" %}
 

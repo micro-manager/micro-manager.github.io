@@ -2589,7 +2589,7 @@ Biology and Medicine. '''
 de Chaumont, F., Dallongeville, S., Provosst, T., L:ecomte, T., Dufour,
 A., J-C Olivo-Marin. 2013. ICY: A user-friendly environment for
 algorithm development and deployment.
-[pdf](http://www.eurasip.org/Proceedings/Eusipco/Eusipco2013/papers/media/1569745207.pdf)
+[pdf](http://www.eurasip.org/Proceedings/Eusipco/Eusipco2013/papers/1569745207.pdf)
 
 Stevenson, N.L., B. Martin-Martin, J. Freeman, J. Kriston-Vizi, R.
 Ketteler, and D.F. Cutler. 2013. GRK2 moderates recruitment of THP-1
@@ -2605,7 +2605,7 @@ Membrane Science.**
 Holden, S.J., Pengo, T., and S. Manley. 2013. Optimisation and control
 of sampling rate in localisation microscopy. **Proceedings of the 10th
 Int. Confe. on Sampling Theory and Applications**
-[pdf](http://www.eurasip.org/Proceedings/Ext/SampTA2013/papers/media/P281-holden.pdf)
+[pdf](http://www.eurasip.org/Proceedings/Ext/SampTA2013/papers/P281-holden.pdf)
 
 Pietrosimone, K.M., S. Bhandari, M.G. Lemieux, D.A. Knecht, and M.A.
 Lynes. 2013. In Vitro Assays of Chemotaxis as a Window into Mechanisms
@@ -2626,7 +2626,7 @@ mechanobiological studies. **Nat. Protocols.** 8:2516–2530.
 
 Unser, M., Sage, D., and R. Delgado-Gonzalo. Advanced image processing
 for biology, and the Open Bio Image Alliance (OBIA). EUSIPCO 2013
-1569744383. [pdf](http://bigwww.epfl.ch/publications/media/Unser1302.pdf)
+1569744383. [pdf](http://bigwww.epfl.ch/publications/Unser1302.pdf)
 
 Dirks, M.L., B.T. Wall, T. Snijders, C.L.P. Ottenbros, L.B. Verdijk, and
 L.J.C. van Loon. 2013. Neuromuscular electrical stimulation prevents
@@ -3226,7 +3226,7 @@ microtubules with Drosophila XMAP215, EB1, and Sentin. **J Cell Biol**
 Donald Fu (2012). Development of novel approach for in situ generation
 of oxidative stress using KillerRed in C. elegans. Master Thesis,
 Science Department of Physiology, University of Toronto.
-[thesis](http://scholar.google.com/scholar_url?hl=en&q=https://tspace.library.utoronto.ca/bitstream/1807/33423/6/media/Fu_Donald_WB_201211_MSc_Thesis.pdf&sa=X&scisig=AAGBfm0uXAH6BWFEv4CK7Q912snyrNaXlw&oi=scholaralrt)
+[thesis](http://scholar.google.com/scholar_url?hl=en&q=https://tspace.library.utoronto.ca/bitstream/1807/33423/6/Fu_Donald_WB_201211_MSc_Thesis.pdf&sa=X&scisig=AAGBfm0uXAH6BWFEv4CK7Q912snyrNaXlw&oi=scholaralrt)
 
 Maik Hadorn, Eva Boenzli, Kristian T. Sørensen, Harold Fellermann, Peter
 Eggenberger Hotz, and Martin M. Hanczyc (2012). Specific and reversible
@@ -3657,7 +3657,7 @@ amyotrophic lateral sclerosis. **PNAS** [DOI:
 Stefanie Kaech, Chun-Fang Huang, and Gary Banker (2012). General
 Considerations for Live Imaging of Developing Hippocampal Neurons in
 Culture. **Cold Spring Harb Protocols** [DOI:
-10.1101/pdb.ip068221](http://media/Cshprotocols.cshlp.org/content/2012/3/pdb.ip068221.full#cited-by)
+10.1101/pdb.ip068221](http://Cshprotocols.cshlp.org/content/2012/3/pdb.ip068221.full#cited-by)
 
 Andrew J. Ewald, Robert J. Huebner, Hildur Palsdottir, Jessie K. Lee,
 Melissa J. Perez, Danielle M. Jorgens, Andrew N. Tauscher, Kevin J.
@@ -3800,7 +3800,7 @@ Yinglang Wan, William M Ash, Lusheng Fan, Huaiqin Hao, Myung K Kim and
 Jinxing Lin (2011). Variable-angle total internal reflection
 fluorescence microscopy of intact cells of Arabidopsis thaliana. **Plant
 Methods** 7:27.
-[<DOI:10.1186/1746-4811-7-27>](http://www.plantmethods.com/content/pdf/media/1746-4811-7-27.pdf)
+[<DOI:10.1186/1746-4811-7-27>](http://www.plantmethods.com/content/pdf/1746-4811-7-27.pdf)
 
 Jared E Toettcher, Delquin Gong, Wendell A Lim & Orion D Weiner (2011).
 Light-based feedback for controlling intracellular signaling dynamics.
@@ -4696,7 +4696,7 @@ Olivier Debeir, Ivan Adanja, Robert Kiss & Christine Decaestecker
 analysis. Chapter 5 of *The motile actin system in health and disease.*
 Edited by: Lambrechts A, Ampe C. Kerala: Transworld Research Network, pp
 123-156.
-[PDF](http://lisa.ulb.ac.be/publifiles/207/media/Lambrechts5_last.pdf)
+[PDF](http://lisa.ulb.ac.be/publifiles/207/Lambrechts5_last.pdf)
 
 Bashkirov, P.V. et al (2008). GTPase Cycle of Dynamin Is Coupled to
 Membrane Squeeze and Release, Leading to Spontaneous Fission. **Cell**.
@@ -4778,7 +4778,7 @@ PMID 18248749.
 Stuurman, N., Amodaj N., Vale, R.D. (2007). Micro-Manager: Open Source
 software for light microscope imaging. **Microscopy Today**.
 15(3):42-43. [Full Issue
-(pdf)](http://microscopy-today.com/PDFFiles/media/MT-2007-03-small.pdf)
+(pdf)](http://microscopy-today.com/PDFFiles/MT-2007-03-small.pdf)
 
 Kevin C. Slep and Ronald D. Vale (2007). Structural Basis of Microtubule
 Plus End Tracking by XMAP215, CLIP-170, and EB1. **Molecular Cell**

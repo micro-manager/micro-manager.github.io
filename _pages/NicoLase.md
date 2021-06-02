@@ -116,11 +116,11 @@ PCB Order: [OSH Park](https://oshpark.com/shared_projects/hJnjgjDZ)
 
 ### Example Configurations
 
-[NicoLaseShutter.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/media/DemoNicoLaseShutter.cfg)
+[NicoLaseShutter.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/DemoNicoLaseShutter.cfg)
 
-[NicoLaseShutterAndSwitcher.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/media/DemoNicoLaseShutterAndSwitcher.cfg)
+[NicoLaseShutterAndSwitcher.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/DemoNicoLaseShutterAndSwitcher.cfg)
 
-[NicoLaseSwitcher.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/media/DemoNicoLaseSwitcher.cfg)
+[NicoLaseSwitcher.cfg](https://github.com/PRNicovich/NicoLase/blob/master/Software/BasicController/Micro-MangerDemo/StateDevices/DemoNicoLaseSwitcher.cfg)
 
 [Click here to search for NicoLase on the Micro-Manager mailing list
 archive.](http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query=Cobolt)
