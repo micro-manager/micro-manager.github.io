@@ -8,7 +8,7 @@ layout: page
 
 Illustration of camera parts  
 The [wikipedia e2v
-architecture](http://en.wikipedia.org/wiki/File:media/EMCCD2_color_en.svg) is
+architecture](https://en.wikipedia.org/wiki/File:EMCCD2_color_en.svg) is
 a good start, but needs to include the A2D
 
 ## Major Improvements

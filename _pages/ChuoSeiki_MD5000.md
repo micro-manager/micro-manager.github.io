@@ -110,9 +110,9 @@ that can not be changed in Micro-Manager (such as acceleration time,
 motor current, sensor settings, home-search settings, etc.).
 
 Please click here
-[1](https://micro-manager.org/wiki/File:media/MD5000USBdriver.zip) to download
+[1](media/MD5000USBdriver.zip) to download
 the <b>MD5000 USB driver</b> and here
-[2](https://micro-manager.org/wiki/File:media/MD51_52OPTOOL.zip) for the
+[2](media/MD51_52OPTOOL.zip) for the
 <b>MD51\_52OPTOOL</b> software.
 
 To download the <b>MD5000 user manual</b>, please follow this link
