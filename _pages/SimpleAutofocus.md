@@ -20,7 +20,7 @@ Refer to Pakpoom Subsoontorn's write-up for an explanation of the
 Threshold and Crop Ratio parameters, as those function exactly as
 described there.
 
-![](media/SimpleAutofocusPropertyBrowser.png "media/SimpleAutofocusPropertyBrowser.png")
+![](media/SimpleAutofocusPropertyBrowser.png "SimpleAutofocusPropertyBrowser.png")
 
 Binning: If this value is not 0, Simple Autofocus will acquire images
 binned (down-sampled) per the specified setting.

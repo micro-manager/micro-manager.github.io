@@ -11,7 +11,7 @@ Overview of alignment process:
 2.  Focus camera on pinholes with transmitted light
 3.  Position camera using uniformity slide
 
-![](media/Overview_of_csu_alignment.png "media/Overview_of_csu_alignment.png")
+![](media/Overview_of_csu_alignment.png "Overview_of_csu_alignment.png")
 
 ## Laser Excitation Path Alignment
 
@@ -59,7 +59,7 @@ Overview of alignment process:
     camera flange screws will be locked after adjusting the "horizontal
     tilt" of the camera)
 
-![](media/Pinholes_in_focus.png "media/Pinholes_in_focus.png")
+![](media/Pinholes_in_focus.png "Pinholes_in_focus.png")
 
 ## Emission Uniformity
 
@@ -77,5 +77,5 @@ Overview of alignment process:
     of intensity
 3.  Lock down the camera feet, filterwheel, and camera flange
 
-![](media/Center_emission.png "media/Center_emission.png")
+![](media/Center_emission.png "Center_emission.png")
 

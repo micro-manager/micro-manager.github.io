@@ -9,7 +9,7 @@ layout: page
 <tr>
 <td markdown="1">
 
-![](media/NewLogo.png "media/NewLogo.png")
+![](media/NewLogo.png "NewLogo.png")
 
 </td>
 <td markdown="1">

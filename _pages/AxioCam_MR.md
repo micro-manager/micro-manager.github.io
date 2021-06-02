@@ -110,7 +110,7 @@ trigger signal when performing a triggered acquisition. An acquisition
 request is sent out at each **T**, the acquisition takes place at an
 **A**: ![](media/AxioCamFig1a.png "fig:media/AxioCamFig1a.png")
 
-![](media/AxioCamFig1b.png "media/AxioCamFig1b.png")
+![](media/AxioCamFig1b.png "AxioCamFig1b.png")
 
 NOTE: The trigger OUT of the AxioCam HR / MR expects a TTL signal.
 
@@ -157,7 +157,7 @@ acquisition using trigger IN and OUT:
 </tr>
 </table>
 
-![](media/AxioCamFig2.png "media/AxioCamFig2.png")
+![](media/AxioCamFig2.png "AxioCamFig2.png")
 
 <table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
        style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
@@ -226,7 +226,7 @@ the exposition is invoked.
 </tr>
 </table>
 
-![](media/AxioCamFig3.png "media/AxioCamFig3.png")
+![](media/AxioCamFig3.png "AxioCamFig3.png")
 
 <table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
        style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
@@ -250,7 +250,7 @@ the trigger OUT signal to achieve the desired trigger OUT delay.
 </tr>
 </table>
 
-![](media/AxioCamFig4.png "media/AxioCamFig4.png")
+![](media/AxioCamFig4.png "AxioCamFig4.png")
 
 <table border=1 bordercolor=#999999 cellpadding=5 cellspacing=0
        style='margin:10pt 20pt 10pt; font-family:sans-serif; font-size:9pt'>
@@ -275,7 +275,7 @@ the trigger OUT signal to achieve the desired trigger OUT delay.
 </tr>
 </table>
 
-![](media/AxioCamFig5.png "media/AxioCamFig5.png")
+![](media/AxioCamFig5.png "AxioCamFig5.png")
 
 --[Henry Pinkard](User:Henry_Pinkard "wikilink") 10:58, 1st October 2012
 (PDT)

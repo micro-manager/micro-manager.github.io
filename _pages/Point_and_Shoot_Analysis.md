@@ -13,7 +13,7 @@ between time points), and bleach objects as you please. Bleach positions
 and time points are stored in a file in the "Log Directory". Copy this
 file to a safe place to be used in this analysis plugin.
 
-![](media/_PointAndShoot.png "media/_PointAndShoot.png")
+![](media/_PointAndShoot.png "_PointAndShoot.png")
 
 {% include Listserv_Search text="Point_and_Shoot_Analysis" %}
 

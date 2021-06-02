@@ -126,13 +126,13 @@ Micro-Manager Device/Property Manager will restore laser emission.
 
 Below is a screenshot of a properly configured Stradus Laser:
 
-![](media/UMgrStradus.JPG "media/UMgrStradus.JPG")
+![](media/UMgrStradus.JPG "UMgrStradus.JPG")
 
 The Stradus GUI software, shown below, which is included on the software
 CD shipped with Stradus lasers may be helpful for initial configuration
 and testing of lasers in a Micro-Manager controlled system.
 
-![](media/UMgrStradusSW.jpg "media/UMgrStradusSW.jpg")
+![](media/UMgrStradusSW.jpg "UMgrStradusSW.jpg")
 
 Questions regarding the Stradus Micro-Manager device driver may be
 directed to: [Vortran uManager Driver

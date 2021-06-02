@@ -36,7 +36,7 @@ control). These settings can be found in the manual to your device.
 Also, the Micro-Manager web site's Device Adapter pages sometimes
 contain some of this information. Click 'OK'.
 
-![](media/Hyperterminal.gif "media/Hyperterminal.gif")
+![](media/Hyperterminal.gif "Hyperterminal.gif")
 
 9\. From the Menu, select File&gt;Properties. Click on the 'Settings'
 tab and the ASCII Setup button. In that dialog, check 'Send line ends

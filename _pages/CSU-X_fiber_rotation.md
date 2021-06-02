@@ -14,7 +14,7 @@ connector at the scanhead itself.
 
 The image below shows the fiber connector:
 
-![](media/CSUX.jpg "media/CSUX.jpg")
+![](media/CSUX.jpg "CSUX.jpg")
 
 Unscrew the four screws just around the connector with a 1.5 mm allen
 wrench (make sure that you do not loose the screws when they fall out!).
