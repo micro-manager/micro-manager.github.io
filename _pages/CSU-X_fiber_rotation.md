@@ -28,9 +28,9 @@ Check alignment using a homogenous sample. Here, I used a highlighter
 marker pen and scribbled on a coverslip.
 
 Image before rotation:
-![](media/SpDiskFiberAllignment-1.jpg‎ "fig:media/SpDiskFiberAllignment-1.jpg‎")
+![](media/SpDiskFiberAllignment-1.jpg‎ "SpDiskFiberAllignment-1.jpg‎")
 
 Image after rotation (I used a considerably lower laser power for this
 image):
-![](media/SpDiskFiberAllignment-2.jpg‎ "fig:media/SpDiskFiberAllignment-2.jpg‎")
+![](media/SpDiskFiberAllignment-2.jpg‎ "SpDiskFiberAllignment-2.jpg‎")
 

@@ -108,7 +108,7 @@ to be sent from an external device until it invokes the exposure. The
 following graphic demonstrates the two camera models' reaction to the
 trigger signal when performing a triggered acquisition. An acquisition
 request is sent out at each **T**, the acquisition takes place at an
-**A**: ![](media/AxioCamFig1a.png "fig:media/AxioCamFig1a.png")
+**A**: ![](media/AxioCamFig1a.png "AxioCamFig1a.png")
 
 ![](media/AxioCamFig1b.png "AxioCamFig1b.png")
 

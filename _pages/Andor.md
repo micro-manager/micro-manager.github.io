@@ -261,7 +261,7 @@ until the camera is on its own USB bus.
 Screenshot below of UVCview on Windows showing the Camera device (in
 this example Clara) by itself on the USB bus, i.e. with no other devices
 sharing it:
-![](media/Good_Clara_USB_Connection_cropped.JPG "fig:media/Good_Clara_USB_Connection_cropped.JPG")
+![](media/Good_Clara_USB_Connection_cropped.JPG "Good_Clara_USB_Connection_cropped.JPG")
 
 ##### Linux USB Bus
 

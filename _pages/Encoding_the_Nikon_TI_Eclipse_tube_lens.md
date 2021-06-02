@@ -44,24 +44,24 @@ To put everything together, I also used:
 You can exchange these for anything else that works.
 
 I connected the Hall effect sensor to the telehone wire using crimp
-connectors: ![](media/Sensorb.jpg "fig:media/Sensorb.jpg")
+connectors: ![](media/Sensorb.jpg "Sensorb.jpg")
 
 Then hooked up the telephone wire to the Arduino using the same crimp
 connectors and M/M jumper wires. Note, the Hall effect sensor needs 5V
 power (red wire) and ground (white/black cables), all provided by the
 Arduino and its output (green wire) can be connected to the A0 pin on
 the Arduino. I used a knot in the telephone wire to protect against
-problems arising from cable pull. ![](media/Arduinob.jpg "fig:media/Arduinob.jpg")
+problems arising from cable pull. ![](media/Arduinob.jpg "Arduinob.jpg")
 
 Close the box (you do not need to put the stickers on):
-![](media/Boxb.jpg "fig:media/Boxb.jpg")
+![](media/Boxb.jpg "Boxb.jpg")
 
 Now put the Buckeyball magnet in the screw hole in the tube lens changer
 and position the Hall effect sensor right underneath. Fasten the sensor
 using thick double sticky foam (put some souble sticky foam over the
 sensor as well to make sure it does not break loose). Turning the know
 will bring the magnet out of reach of the Hall effect sensor.
-![](media/Swictherb.jpg "fig:media/Swictherb.jpg")
+![](media/Swictherb.jpg "Swictherb.jpg")
 
 Load the AOTF firmware into the Arduino board. Configure Micro-Manager
 to use the Arduino-Input device. Set the pull up resistor property to
