@@ -17,7 +17,7 @@ supply HIGH/LOW voltage state to TTL devices.
 The software GUI panel for control easily laser power and shutter can be
 found in [Cobolt](Cobolt "wikilink") laser subsection [GUI panel for
 Cobolt laser
-control](Media:media/GUI_panel_for_Cobolt_laser_control.bsh "wikilink").
+control](media/GUI_panel_for_Cobolt_laser_control.bsh "wikilink").
 
 For circuit, the following materials are required:
 

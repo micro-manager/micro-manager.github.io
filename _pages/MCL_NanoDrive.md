@@ -10,7 +10,7 @@ layout: page
 | License:             | BSD                                                                                                               |
 | Platforms:           | Windows 7/8/10 (32 bit and 64 bit)                                                                                |
 | Devices:             | XY Stage, Z Stage                                                                                                 |
-| Example Config File: | [Example Config File](Media:media/MMConfig_MCL_NanoDrive.cfg "wikilink") (Sets up the Nano-Drive® with the DemoCamera.) |
+| Example Config File: | [Example Config File](media/MMConfig_MCL_NanoDrive.cfg "wikilink") (Sets up the Nano-Drive® with the DemoCamera.) |
 | Since version        | 1.2.36                                                                                                            |
 
 ------------------------------------------------------------------------
