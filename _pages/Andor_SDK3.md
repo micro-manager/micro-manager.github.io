@@ -199,8 +199,8 @@ Video](https://andor.oxinst.com/learning/view/article/setting-up-and-using-andor
 which details the steps above, shows how to add a device in the property
 browser, etc.
 
-See Andor's [Software
-Guide](http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf%7CMicro-Manager)
+See Andor's [Micro-Manager Software
+Guide](http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf)
 which details the steps above, shows how to add a device in the property
 browser, etc.
 
