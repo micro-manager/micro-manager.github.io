@@ -181,7 +181,7 @@ C:\imgs\img_??.png
 <td markdown="1">
 
 ```
-C:\imgs\media/Img_7.png
+C:\imgs\Img_7.png
 ```
 
 </td>
@@ -197,7 +197,7 @@ C:\imgs\img_??_?[x-Axis]_?[y-Axis].png
 <td markdown="1">
 
 ```
-C:\imgs\media/Img_7_3_-1.png
+C:\imgs\Img_7_3_-1.png
 ```
 
 </td>

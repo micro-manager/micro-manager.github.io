@@ -11,7 +11,7 @@ layout: page
 | **License:**             | LGPL                                                                 |
 | **Platforms:**           | MacOSX, linux                                                        |
 | **Devices:**             | PTP and MTP cameras connected via USB.                               |
-| **Example Config File:** | [MMConfig\media/_GPhoto.cfg](Media:media/MMConfig_GPhoto.cfg "wikilink")         |
+| **Example Config File:** | [MMConfig_GPhoto.cfg](media/MMConfig_GPhoto.cfg "wikilink")         |
 
 ## Description
 

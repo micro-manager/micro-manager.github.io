@@ -144,7 +144,7 @@ following content:
 
 ### Windows dll driver
 
-[itc\media/_vista.zip](http://www.heka.com/download/windows/media/Itc_vista.zip)
+[Itc_vista.zip](http://www.heka.com/download/windows/media/Itc_vista.zip)
 
 or
 
