@@ -17,14 +17,14 @@ links). Please also include a compatible license for your software (most
 of the code uses either a BSD or LGPL license, it is not possible for us
 to include GPL code).
 
-### For 1.4
+## For 1.4
 
 Please email the source code to <info@micro-manager.org>. After addition
 of your code to our repository, we will send you a username and password
 that you can use for future changes to the code (using a
 [subversion](http://subversion.tigris.org/) client).
 
-### For 2.0
+## For 2.0
 
 1.  Create a “fork” of the
     [“mmCoreAndDevices”](https://github.com/micro-manager/mmCoreAndDevices)
@@ -38,7 +38,7 @@ that you can use for future changes to the code (using a
 5.  For more information about pull requests see the [GitHub
     Docs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
-### Provide end-user documentation on this website
+## Provide end-user documentation on this website
 
 Also, please do request an account for this website (click on the Log In
 button), and create a page in the [Device
@@ -46,7 +46,7 @@ Support](Device_Support "wikilink") section. Use this page to provide
 information for users of your equipment to configure and use your device
 in Micro-Manager (i.e., please do not use this for marketing purposes).
 
-### Closed Source device adapters
+## Closed Source device adapters
 
 In the past, several closed-source device adapters have been included in
 µManager. Open Imaging's current policy is to only accept new device
@@ -55,4 +55,3 @@ parties can distribute their device adapters as binaries, although this
 is not encouraged because it complicates installation by the user and
 causes version compatibility issues. Existing closed-source device
 adapters in the official release will generally be maintained.
-

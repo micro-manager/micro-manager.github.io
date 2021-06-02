@@ -8,7 +8,7 @@ section: Version 2.0
 This page documents the various events that the 2.0 API exposes, and
 what you need to subscribe to to access those events.
 
-### Global events
+## Global events
 
 These events are posted to the `EventManager`. You can subscribe to them
 via `mm.events().registerForEvents()`. The full list of Events can be
@@ -42,7 +42,7 @@ still present:
 -   SLMExposureChangedEvent: the exposure time of an SLM device has
     changed.
 
-### Display events
+## Display events
 
 These events are specific to a single DisplayWindow, and can be accessed
 via `DisplayWindow.registerForEvents`. If you do register for a
@@ -58,7 +58,7 @@ it. DisplayWindow events can be found
 -   DisplaySettingsChangedEvent: Display settings (such as
     brightness/contrast) were changed
 
-### Datastore events
+## Datastore events
 
 These events are specific to a single Datastore, and can be accessed via
 `Datastore.registerForEvents`. As with DisplayWindows, if you have an
@@ -80,4 +80,3 @@ Datastores can be found
     Datastore.
 -   ImageOverwrittenEvent: Signals that an image in the Datastore has
     been overwritten.
-

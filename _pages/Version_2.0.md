@@ -15,7 +15,7 @@ with images and image metadata.
 This page serves as a "hub" for various other pages related to Version
 2.0.
 
-### Downloads
+## Downloads
 
 2.0 development now takes place in the "master" branch on github.
 
@@ -26,12 +26,12 @@ X](http://valelab.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
 Source code [in master branch on
 github](http://github.com/micro-manager/micro-manager/tree/master)
 
-### Contributing to MM2.0
+## Contributing to MM2.0
 
 [How to debug and develop
 MM2.0](How_to_debug_and_develop_MM2.0 "wikilink")
 
-### API
+## API
 
 If you want to write a new plugin or script, you will need to
 familiarize yourself with the new API.
@@ -58,14 +58,14 @@ API](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/),
 and [display](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/)
 packages should prove useful.
 
-### API Events
+## API Events
 
 Version 2.0 provides greater access to the event publication and
 subscription system initially introduced in 1.4.
 [Version\_2.0\_API\_Events](Version_2.0_API_Events "wikilink") has more
 information on what events are available.
 
-### Other Documentation
+## Other Documentation
 
 For some examples of writing Beanshell scripts for 2.0, see
 [Version\_2.0\_Scripts](Version_2.0_Scripts "wikilink")
@@ -73,4 +73,3 @@ For some examples of writing Beanshell scripts for 2.0, see
 Version 2.0 includes a new User Profile system; see
 [Version\_2.0\_Profiles](Version_2.0_Profiles "wikilink") for more
 information.
-

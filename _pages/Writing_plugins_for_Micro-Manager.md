@@ -4,7 +4,7 @@ title: Writing plugins for Micro-Manager
 layout: page
 section: Programming
 ---
-
+## Getting Started
 {% include Note text="This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [[Version_2.0_Plugins]]. " %}
 
 Micro-Manager has a Java-based plugin system similar to ImageJ's. To
@@ -200,4 +200,3 @@ Style and select "Swing Layout Extensions Library".
     3.  Point JAR export location to
         `C:\Program Files\Micro-Manager-1.4\mmplugins\`<plugin name>
     4.  Click "Finish"
-
