@@ -63,7 +63,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_AOTF.cfg](Media:media/MMConfig_AOTF.cfg "wikilink")
+[MMConfig_AOTF.cfg](media/MMConfig_AOTF.cfg "wikilink")
 
 </td>
 </tr>

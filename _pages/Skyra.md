@@ -85,7 +85,7 @@ April 6, 2020
 </td>
 <td markdown="1">
 
-[Media:Skyra\media/_NicoLase.cfg](Media:media/Skyra_NicoLase.cfg "wikilink")
+[Skyra_NicoLase.cfg](media/Skyra_NicoLase.cfg "wikilink")
 
 </td>
 </tr>

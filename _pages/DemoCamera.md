@@ -76,7 +76,7 @@ Shutter
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_Demo.cfg](Media:media/MMConfig_Demo.cfg "wikilink")
+[MMConfig_Demo.cfg](media/MMConfig_Demo.cfg "wikilink")
 
 </td>
 </tr>

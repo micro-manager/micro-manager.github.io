@@ -88,7 +88,7 @@ All monochrome QImaging cameras
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_QCam.cfg](Media:media/MMConfig_QCam.cfg "wikilink")
+[MMConfig_QCam.cfg](media/MMConfig_QCam.cfg "wikilink")
 
 </td>
 </tr>

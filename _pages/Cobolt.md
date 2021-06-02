@@ -97,7 +97,7 @@ All
 </td>
 <td markdown="1">
 
-[Media:Cobolt\media/_NicoLase.cfg](Media:media/Cobolt_NicoLase.cfg "wikilink")
+[Cobolt_NicoLase.cfg](media/Cobolt_NicoLase.cfg "wikilink")
 
 </td>
 </tr>

@@ -98,9 +98,9 @@ and/or rapidly changing.
         synchronization](http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start) -
         A Micro-Manager plugin by Alex Hodge synchronizing multi-color
         LED illumination with a Firewire camera
-    -   [Media:RatiometricImaging\media/_main.bsh](Media:media/RatiometricImaging_main.bsh "wikilink") -
+    -   [RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh "wikilink") -
         Beanshell for ratiometric Imaging (J. Husson).
-    -   [Media:RatiometricImaging\media/_singleImage.bsh](Media:media/RatiometricImaging_singleImage.bsh "wikilink") -
+    -   [RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh "wikilink") -
         Beanshell for ratiometric Imaging.  
         Takes only one image, can be useful as a control before starting
         a whole acquisition with main beanshell above (J. Husson).

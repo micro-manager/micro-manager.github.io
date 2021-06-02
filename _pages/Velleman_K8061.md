@@ -73,7 +73,7 @@ Mac/Linux/Windows
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_K8061.cfg](Media:media/MMConfig_K8061.cfg "wikilink")
+[MMConfig_K8061.cfg](media/MMConfig_K8061.cfg "wikilink")
 
 </td>
 </tr>

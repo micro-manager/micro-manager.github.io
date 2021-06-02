@@ -74,7 +74,7 @@ K8055/VM110](http://www.velleman.be/ot/en/product/view/?id=351346)
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_K8055.cfg](Media:media/MMConfig_K8055.cfg "wikilink")
+[MMConfig_K8055.cfg](media/MMConfig_K8055.cfg "wikilink")
 
 </td>
 </tr>
