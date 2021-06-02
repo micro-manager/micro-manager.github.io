@@ -120,7 +120,7 @@ enable/disable Autostart is now supported. There is also direct serial
 communication supported via **Serial Command**
 
 <figure>
-<img src="media/Skyra_proporties.png" title="media/Skyra_proporties.png" width="400" alt="media/Skyra_proporties.png" /><figcaption aria-hidden="true">Skyra_proporties.png</figcaption>
+<img src="media/Skyra_proporties.png" title="Skyra_proporties.png" width="400" alt="Skyra_proporties.png" /><figcaption aria-hidden="true">Skyra_proporties.png</figcaption>
 </figure>
 
 [Click here to search for Skyra on the Micro-Manager mailing list

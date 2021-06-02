@@ -216,7 +216,7 @@ A Windows tablet or small factor PC with a touch screen (such as the
 as a useful interface to control the niji manually:
 
 <figure>
-<img src="media/Niji_pipo.jpg" title="media/Niji_pipo.jpg" width="500" alt="media/Niji_pipo.jpg" /><figcaption aria-hidden="true">Niji_pipo.jpg</figcaption>
+<img src="media/Niji_pipo.jpg" title="Niji_pipo.jpg" width="500" alt="Niji_pipo.jpg" /><figcaption aria-hidden="true">Niji_pipo.jpg</figcaption>
 </figure>
 
 The micro-manager niji adapter listens to changes effected via the
