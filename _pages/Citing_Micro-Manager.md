@@ -20,7 +20,7 @@ following papers:
     control using μManager software. **Journal of Biological Methods**
     2014 1(2):e11
     [<doi:10.14440/jbm.2014.36>](http://dx.doi.org/10.14440/jbm.2014.36)
--   ([PDF](http://valelab.ucsf.edu/publications/media/2010EdelsteinCurrProt.pdf))
+-   ([PDF](http://valelab.ucsf.edu/publications/2010EdelsteinCurrProt.pdf))
     Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico
     Stuurman (2010), Computer Control of Microscopes Using μManager.
     **Current Protocols in Molecular Biology** 14.20.1-14.20.17

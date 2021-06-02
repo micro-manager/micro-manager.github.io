@@ -48,7 +48,7 @@ the camera is exposing), and to run a sequence of events using the
 build-in clock of the Arduino. We also added a 2-channel DA chip so that
 we could control light intensity of the AOTF. Acquisition in
 Micro-Manager is run from a Beanshell
-[script](http://valelab.ucsf.edu/~nico/MMwiki/images/3/3f/media/MultiFastZStackASI.bsh)
+[script](http://valelab.ucsf.edu/~nico/MMwiki/images/3/3f/MultiFastZStackASI.bsh)
 that puts the incoming images in the correct order in the Image5D viewer
 
 |     |                                                                                                                                                             |

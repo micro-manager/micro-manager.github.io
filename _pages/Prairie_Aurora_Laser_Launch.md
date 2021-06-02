@@ -22,7 +22,7 @@ the LASER launch with Micro-Manager, starting from hardware setup to
 There are a few things worth knowing about the integration before you
 get started. The Laser launch is designed to interface with other
 devices using a Gooch and Housego RF driver with DB-25 pin connector
-[4](http://www.goochandhousego.com/sites/default/files/documents/media/56A19539C.pdf).
+[4](http://www.goochandhousego.com/sites/default/files/documents/56A19539C.pdf).
 You should find out the pins that connect to individual laser lines and
 control them as shown in the pin diagram below. The DB-25 pin will not
 connect to a parallel port on your computer directly. *Never attempt to

@@ -116,7 +116,7 @@ the <b>MD5000 USB driver</b> and here
 <b>MD51\_52OPTOOL</b> software.
 
 To download the <b>MD5000 user manual</b>, please follow this link
-[3](http://www.novaelec.co.jp/eng/down/file/media/Md515230de.pdf)
+[3](http://www.novaelec.co.jp/eng/down/file/Md515230de.pdf)
 
 The <b>ChuoSeiki MD5000</b> device adapter can control one or more
 MD-controllers. You can register multi adapters in <em>Hardware

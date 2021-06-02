@@ -100,7 +100,7 @@ the controller connected to the Oko-Touch will answer to USB
 commands😎"&gt;
 
 {% include Note text="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
-If, after the installation, the ''okolib'' folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/media/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
+If, after the installation, the ''okolib'' folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
 
 ## Configuration
 

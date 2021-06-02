@@ -82,7 +82,7 @@ possibly others
 This adapter controls the [Vincent](http://www.uniblitz.com) shutter
 controllers [D1, T1,
 D3](http://www.uniblitz.com/departments/Shutter%20Control.aspx) and
-[D122](http://www.uniblitz.com/resources_filelibrary/media/T132_d122_user_manual_1_3.pdf)
+[D122](http://www.uniblitz.com/resources_filelibrary/T132_d122_user_manual_1_3.pdf)
 (not available anymore). Connect the controller through a serial port
 and configure the port as specified in the manual to your controller
 (the D122 uses a baudrate of 300, others are 9600, for the D122 set

@@ -92,7 +92,7 @@ AZ100Hub, Nosepiece, Focus, Zoom
 
 This adapter communicates to the AZ100 through its own driver. On
 Windows, you will need to install the driver provided in this [Nikon
-AZ100 Driver](http://valelab.ucsf.edu/~MM/drivers/media/NikonAZ100.zip) folder
+AZ100 Driver](http://valelab.ucsf.edu/~MM/drivers/NikonAZ100.zip) folder
 (Caution: virus scanners detected viruses in these drivers but there is
 no confirmation of actual viruses as of yet, please download at your own
 risk). When installing in windows you will likely replace the driver

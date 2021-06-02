@@ -118,7 +118,7 @@ The shutter will switch the active channels on and off.
 {% include Note text="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Ground pins on the K8061 board." %}
 
 On Windows, you will need to install the driver provided in this [K8061
-Driver](http://valelab.ucsf.edu/~MM/drivers/media/K8061Driver.zip) folder.
+Driver](http://valelab.ucsf.edu/~MM/drivers/K8061Driver.zip) folder.
 
 Also see Austin Blanco's [blog](http://austinblanco.com/blog/?p=209).
 

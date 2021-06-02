@@ -28,7 +28,7 @@ driver. On the Mac and Linux you will not have to do anything.
 
 On Windows, you will need to install the driver provided in this [Nikon
 Eclipse 90i
-Driver](http://valelab.ucsf.edu/~MM/drivers/media/NikonEclipse90i.zip) folder
+Driver](http://valelab.ucsf.edu/~MM/drivers/NikonEclipse90i.zip) folder
 (Caution: virus scanners \*may have\* detected viruses in these drivers
 but there is no confirmation of actual viruses as of yet, please
 download at your own risk. Do let us know if this is happening to you).

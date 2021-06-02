@@ -25,7 +25,7 @@ that supports VS2010 (currently, v2.0, 2.1, 2.2, and 2.3; 2.3 is
 recommended).
 
 Follow the instructions in this [pdf on the CAIRN
-website](https://www.cairn-research.co.uk/wp-content/uploads/2019/05/media/READ-ME-INSTALLATION.pdf).
+website](https://www.cairn-research.co.uk/wp-content/uploads/2019/05/READ-ME-INSTALLATION.pdf).
 Note that it is not needed to download 2.0-beta3-20181129, newer
 versions of Micro-Manager (1.4 and 2.0) work as well, and already
 include the file mmgr\_dal\_Spinnaker.dll.

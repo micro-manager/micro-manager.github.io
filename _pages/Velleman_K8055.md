@@ -106,7 +106,7 @@ commands below, and reboot:
 
 On Windows you will need to 'replace' the HID driver with the driver
 provided in this [K8055
-Driver](http://valelab.ucsf.edu/~MM/drivers/media/K8055.zip) folder. To find
+Driver](http://valelab.ucsf.edu/~MM/drivers/K8055.zip) folder. To find
 out which device is the K8055, open the Device Manager, open the tab
 "Human Interface Devices" and plug in the K8055. Two devices should
 appear, one named "HID-compliant device", the other called "USB Human

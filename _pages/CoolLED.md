@@ -46,7 +46,7 @@ pE-Integrator</p></td>
 ------------------------------------------------------------------------
 
 Note: CoolLED now has a new [closed-source device
-adapter](http://www.coolled.com/wp-content/uploads/2014/04/media/MicroManager-Software-Summary-Sheet-R3.pdf)
+adapter](http://www.coolled.com/wp-content/uploads/2014/04/MicroManager-Software-Summary-Sheet-R3.pdf)
 for the pE-300 and pE-4000.
 
 ## Installation

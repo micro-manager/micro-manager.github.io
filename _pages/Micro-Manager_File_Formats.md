@@ -175,7 +175,7 @@ written.
 # Image file stack specification
 
 Micro-Manager Image file stacks conform to both the [TIFF
-Specification](http://partners.adobe.com/public/developer/en/tiff/media/TIFF6.pdf)
+Specification](http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf)
 and [OME TIFF
 Specification](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff),
 contain data allowing them to be easily imported into ImageJ, store
