@@ -150,8 +150,8 @@ property , the stage will move +3 mm/sec to -3 mm/sec.
 
 ### Button Assignment Table
 
-![](media/Asi_gamepad_button_table.jpg
-"Asi_gamepad_button_table.jpg")
+![](media/Asi_gamepad_button_table.jpeg
+"Asi_gamepad_button_table.jpeg")
 
 Unlike the axes controls, buttons have only two states, pressed or
 unpressed. The Action column of the Button assignment table lets user
