@@ -146,7 +146,7 @@ of `0.0` since a fast AOTF gates the laser output.
 <tr class="even">
 <td><p>Workaround</p></td>
 <td><ol>
-<li>Install Prolific driver <a href=":File:media/PL2303_DriverInstaller_v1413_20110219.gz" title="wikilink">version 2.0.13.130</a></li>
+<li>Install Prolific driver <a href="media/PL2303_DriverInstaller_v1413_20110219.gz" title="wikilink">version 2.0.13.130</a></li>
 <li>Disable Microsoft server driver installation. When Windows says it's searching for drivers, it fetches them from the Microsoft server. Turn off this driver updating behavior because if e.g. the USB bus glitches for whatever reason it will try to reinstall the buggy version 3 drivers (you have to do this step even if you have Windows updates disabled) via the Start menu &gt; (Type in the "Search programs and files" box) change dev &gt; Change device installation settings &gt; No, Let me choose what to do &gt; Never install driver from Windows Update</li>
 <li>In your Device Manager, right-click on the Prolific ports and check the driver version. The good version is 2.0.13.130. Most likely you will see something like 3.4.48.272. Right-click on the Prolfic entry in the Device Manager &gt; Uninstall &gt; Delete the driver software for this device &gt; OK. Repeat for all Prolific COM20x ports. Then to pick up the next available driver in Windows, in the Device Manager click Action &gt; Scan for hardware changes). Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver. You will then need to reassign the COM ports to 20x which is detailed in <a href="AndorLaserCombiner#Configure_ALC_SDK_dependencies" title="wikilink">AndorLaserCombiner#Configure_ALC_SDK_dependencies</a>.</li>
 </ol>
@@ -231,7 +231,7 @@ Install them from:
 
 | OS version | DeVaSys                                                                                                   | Prolific                                                                         | Measurement Computing                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| 32-bit     | [UsbI2cIo 5.00 (32-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x86.msi) | [Prolific 2.0.13.130](:File:media/PL2303_DriverInstaller_v1413_20110219.gz "wikilink") | [InstaCal 6.10](ftp://ftp.mccdaq.com/Archive/InstaCal/Archive_6.10/icalsetup.exe) |
+| 32-bit     | [UsbI2cIo 5.00 (32-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x86.msi) | [Prolific 2.0.13.130](media/PL2303_DriverInstaller_v1413_20110219.gz "wikilink") | [InstaCal 6.10](ftp://ftp.mccdaq.com/Archive/InstaCal/Archive_6.10/icalsetup.exe) |
 | 64-bit     | [UsbI2cIo 5.00 (64-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x64.msi) |                                                                                  |                                                                                   |
 
 -   The devices will be detected in the Device Manager as:
