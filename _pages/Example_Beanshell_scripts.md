@@ -14,12 +14,12 @@ Most of these scripts can be translated with minimal modification to the
 Python programming language (see
 [Pycro-manager](https://github.com/micro-manager/pycro-manager))
 
-[Media:media/Sdemo1.bsh](media/Sdemo1.bsh "wikilink") - Hello World
+[Sdemo1.bsh](media/Sdemo1.bsh "wikilink") - Hello World
 
-[Media:media/Sdemo2.bsh](media/Sdemo2.bsh "wikilink") - Shows how to use
+[Sdemo2.bsh](media/Sdemo2.bsh "wikilink") - Shows how to use
 ImageJ functionality within the Beanshell environment
 
-[Media:media/SetZoom.bsh](media/SetZoom.bsh "wikilink") - Utility that sets
+[SetZoom.bsh](media/SetZoom.bsh "wikilink") - Utility that sets
 the zoom level of the current ImageJ image window
 
 [Camera_test.bsh](media/Camera_test.bsh "wikilink") - Example
@@ -32,7 +32,7 @@ camera test.
 - Shows how to snap and display an image. The image window must already
 be open (Snap an image once manually before running the plugin).
 
-[Media:media/SnapAndMeasure.bsh](media/SnapAndMeasure.bsh "wikilink") - Shows
+[SnapAndMeasure.bsh](media/SnapAndMeasure.bsh "wikilink") - Shows
 how to use the ImageJ 'Measure' command that updates with every new
 image snapped.
 
@@ -40,34 +40,34 @@ image snapped.
 process an image during acquisition. Needs the DemoStreamingCamera to
 work.
 
-[Media:media/Burst.bsh](media/Burst.bsh "wikilink") - Shows how to start burst
+[Burst.bsh](media/Burst.bsh "wikilink") - Shows how to start burst
 mode from a script. Also shows how to save to file during acquisition.
 Needs burst mode capable camera. May not work.
 
-[Media:media/BurstExample.bsh](media/BurstExample.bsh "wikilink") - Shows how
+[BurstExample.bsh](media/BurstExample.bsh "wikilink") - Shows how
 to run a sequence acquisition (used to be "burst mode") from a script
 including setting up and starting the acquisition, grabbing the images
 from the circular buffer, and filing them into the acquisition object.
 
-[Media:media/TestAcq.bsh](media/TestAcq.bsh "wikilink") - Demonstrates how to
+[TestAcq.bsh](media/TestAcq.bsh "wikilink") - Demonstrates how to
 perform 5D image acquisition using the gui object.
 
-[Media:media/ManualAcq.bsh](media/ManualAcq.bsh "wikilink") - Executes 5D
+[ManualAcq.bsh](media/ManualAcq.bsh "wikilink") - Executes 5D
 acquisition, prompting the user to change the filters/dichroics between
 channel changes
 
-[Media:media/AcqLC.bsh](media/AcqLC.bsh "wikilink") - Example of a complicated
+[AcqLC.bsh](media/AcqLC.bsh "wikilink") - Example of a complicated
 MD acquisition including visiting multiple positions as defined in the
 position list, acquiring time-lapse data in individual channels.
 
-[Media:media/MultiFastZStackASI.bsh](media/MultiFastZStackASI.bsh "wikilink")
+[MultiFastZStackASI.bsh](media/MultiFastZStackASI.bsh "wikilink")
 - Script used at the ASCB meeting 2008 to synchronize Arduino, camera,
 AOTF and piezo stage to do fast multi-channel Z-stack acquistion
 
-[Media:media/PositionList.bsh](media/PositionList.bsh "wikilink") - Shows how
+[PositionList.bsh](media/PositionList.bsh "wikilink") - Shows how
 to build a positionList programmatically
 
-[Media:media/Init.bsh](media/Init.bsh "wikilink") - Shows how to configure the
+[Init.bsh](media/Init.bsh "wikilink") - Shows how to configure the
 sytem programmatically, i.e. without using configuration files. The GUI
 changes will not be visible until you manually run the command 'Rebuild
 GUI' or 'Refresh GUI' (Tools menu).

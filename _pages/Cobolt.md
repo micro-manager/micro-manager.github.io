@@ -85,7 +85,7 @@ All
 </td>
 <td markdown="1">
 
-[Media:media/Cobolt.cfg](media/Cobolt.cfg "wikilink")
+[Cobolt.cfg](media/Cobolt.cfg "wikilink")
 
 </td>
 </tr>
