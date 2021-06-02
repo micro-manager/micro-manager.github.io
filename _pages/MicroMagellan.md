@@ -135,13 +135,13 @@ Left clicking on the image screen with an active surface adds points.
 Right clicking on a point will remove it.
 
 ![media/ExploreSurfacesDrawTop.jpg](media/ExploreSurfacesDrawTop.jpg
-"media/ExploreSurfacesDrawTop.jpg")
+"ExploreSurfacesDrawTop.jpg")
 
 The Z-slider is then moved down further into the sample to specify an
 additional 2D slice of interpolation points.
 
 ![media/ExploreSurfacesDrawBottom.jpg](media/ExploreSurfacesDrawBottom.jpg
-"media/ExploreSurfacesDrawBottom.jpg")
+"ExploreSurfacesDrawBottom.jpg")
 
 The following video shows how to use an explore acquisition to explore
 cells on a slide that is tilted relative to Z axis, find the correct
@@ -157,7 +157,7 @@ the "grids" and "surfaces" tabs at the top of the Micro-Magellan main
 window, next to the Device status/control tab.
 
 ![media/AcquireGridSurfaces.jpg](media/AcquireGridSurfaces.jpg
-"media/AcquireGridSurfaces.jpg")
+"AcquireGridSurfaces.jpg")
 
 Below the Explore mode settings, there are a series of tabs to manage
 acquisition setup.
@@ -240,7 +240,7 @@ beginning the second time lapse in another area), select “In parallel”
 and then “Run all”
 
 ![media/AcquireMultiAcqInterleave.jpg](media/AcquireMultiAcqInterleave.jpg
-"media/AcquireMultiAcqInterleave.jpg")
+"AcquireMultiAcqInterleave.jpg")
 
 ### Changing settings during acquisitions
 
