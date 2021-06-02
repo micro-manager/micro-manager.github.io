@@ -4,7 +4,7 @@ title: ASI Gamepad Plugin
 layout: page
 ---
 
-# ASI Gamepad Plugin
+
 
 <table>
 
@@ -85,7 +85,7 @@ Windows only
 
 Xbox One controller (tested) or XBox 360 controller (not tested)
 
-<td markdown="1">
+</td>
 
 </tr>
 
