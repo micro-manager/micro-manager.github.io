@@ -767,7 +767,7 @@ can be executed with a single command:
 
 
 ```
-core.loadSystemConfiguration("media/MMConfig.cfg");
+core.loadSystemConfiguration("MMConfig.cfg");
 ```
 
 
