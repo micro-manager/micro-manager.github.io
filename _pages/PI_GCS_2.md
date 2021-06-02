@@ -292,7 +292,7 @@ With presets defined a dropdown box can be created which allows
 activating (ON) / deactivating (OFF) the joystick with a simple action
 by the user:
 
-![](media/PI_GCS_2_JoystickWithPreset.png "media/PI_GCS_2_JoystickWithPreset.png")
+![](media/PI_GCS_2_JoystickWithPreset.png "PI_GCS_2_JoystickWithPreset.png")
 
 To use a joystick that is not activated in the standard configuration of
 the controller, please use the “JAX” command to reconfigure the joystick

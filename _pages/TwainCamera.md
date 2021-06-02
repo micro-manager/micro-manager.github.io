@@ -100,7 +100,7 @@ twain.org's "Twain2 Sample App" program select your camera, press
 "Connect to Data Source" Your camera must report CAP\_UICONTROLLABLE =
 true.
 
-![](media/TWAIN_CAP_UICONTROLLABLE.GIF "media/TWAIN_CAP_UICONTROLLABLE.GIF")
+![](media/TWAIN_CAP_UICONTROLLABLE.GIF "TWAIN_CAP_UICONTROLLABLE.GIF")
 
 Changes in 1.3.41:  
 • Initial release. Leica DFC cameras are operational  

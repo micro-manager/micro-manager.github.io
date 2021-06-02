@@ -20,7 +20,7 @@ ROIs, and Setup. How to operate each tab is described in detail below.
 
 ## Setup tab
 
-![](media/ProjectorSetup.png "media/ProjectorSetup.png")
+![](media/ProjectorSetup.png "ProjectorSetup.png")
 
 The Setup tab lets you test the phototargeting device and relate its
 coordinates to that of your camera (calibrate). You will need a thin
@@ -63,7 +63,7 @@ coordinates to the camera's pixel coordinates. This calibration allows
 the Projector plugin to convert mouse clicks or ROIs drawn on the live
 camera image into precisely directed phototargeting events.
 
-![](media/ProjectorCalibration.png "media/ProjectorCalibration.png")
+![](media/ProjectorCalibration.png "ProjectorCalibration.png")
 
 The calibration procedure starts by illuminating a few spots near the
 center of the phototargeter range. This gives the Projector plugin an
@@ -92,7 +92,7 @@ different calibration mappings, e.g. for two different objectives.
 
 ## Point and Shoot tab
 
-![](media/ProjectorPAS.png "media/ProjectorPAS.png")
+![](media/ProjectorPAS.png "ProjectorPAS.png")
 
 Point and Shoot lets you phototarget a small region instantaneously, by
 clicking on a live image of the specimen. Galvo-based devices fire a
@@ -119,7 +119,7 @@ click in image (pixel coordinates). Example:
 
 ## ROIs tab
 
-![](media/ProjectorROIs.png "media/ProjectorROIs.png")
+![](media/ProjectorROIs.png "ProjectorROIs.png")
 
 The Regions of Interest (ROIs) tab lets you specify regions on the image
 to be phototargeted. Phototargeting of an ROI can be carried out

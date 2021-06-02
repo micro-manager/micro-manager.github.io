@@ -18,7 +18,7 @@ This image (from Grant Harris) shows the flow of TaggedImages through
 Micro-Manager during multi-dimensional acquisition. The most important
 interfaces and classes are described below.
 
-![](media/MMImageFlow.png "media/MMImageFlow.png")
+![](media/MMImageFlow.png "MMImageFlow.png")
 
 **JSONObject**: All metadata is stored in JSONObjects. Summary metadata
 refers to the metadata for a particular multi-dimensional acquisition,

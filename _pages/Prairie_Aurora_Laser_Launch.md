@@ -61,7 +61,7 @@ grounding purposes Make sure that you *understand* the Analog and
 Digital outputs on the Velleman board before you proceed. For your
 reference, use the figure of the board below to attach cables correctly.
 
-![](media/Velleman_VM140_Board.jpg "media/Velleman_VM140_Board.jpg")
+![](media/Velleman_VM140_Board.jpg "Velleman_VM140_Board.jpg")
 
 The Velleman extended USB interface board has two types of outputs (See
 Figure above). The output male pins on the right are Analog outputs
@@ -79,7 +79,7 @@ connections up. Here is a reference figure for understanding the
 connections between the ribbon cable and the Digital/ Analog Female
 pins.
 
-![](media/Circuit_Connection.jpg "media/Circuit_Connection.jpg")
+![](media/Circuit_Connection.jpg "Circuit_Connection.jpg")
 
 ## Setting up the Analog Connections
 
@@ -139,7 +139,7 @@ to set up the pre-initialization settings for the selected devices.
 Click on the value boxes in the third column and set up the values as
 follows:
 
-![](media/Device_Property.jpg "media/Device_Property.jpg")
+![](media/Device_Property.jpg "Device_Property.jpg")
 
 After this step just go through the next steps as directed and finish
 the setup by testing and saving the file. Make sure that you save this

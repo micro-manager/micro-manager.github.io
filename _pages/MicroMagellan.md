@@ -42,7 +42,7 @@ In order for Micro-Magellan to operate, it needs to know the direction
 of Z movement (if your system is equipped with a motorized z drive).
 This is defined in the Hardware Configuration Wizard.
 
-![media/Zdirection.jpg](media/Zdirection.jpg "media/Zdirection.jpg")
+![media/Zdirection.jpg](media/Zdirection.jpg "Zdirection.jpg")
 
 In order for Micro-Magellan to acquire tiled images and assemble them,
 it must have an accurate pixel size calibration for the objective in
@@ -67,11 +67,11 @@ Acquisition and will be pre-populated with the configurations groups you
 have created. Select the settings group that contains your channel
 configurations.
 
-![media/ExploreSettings.jpg](media/ExploreSettings.jpg "media/ExploreSettings.jpg")
+![media/ExploreSettings.jpg](media/ExploreSettings.jpg "ExploreSettings.jpg")
 
 Pressing “Explore\!” will open a new window:
 
-![media/ExploreWindow.jpg](media/ExploreWindow.jpg "media/ExploreWindow.jpg")
+![media/ExploreWindow.jpg](media/ExploreWindow.jpg "ExploreWindow.jpg")
 
 On the left side is your image area; a field of view will highlight blue
 as you hover over it. On the right, are look-up tables (LUTs) for each
@@ -83,7 +83,7 @@ view to be imaged. The "Z limits" scroll bars below the image window
 control which Z locations will be imaged, and will adjust automatically
 to the selected Z-step size.
 
-![media/ExploreZ.jpg](media/ExploreZ.jpg "media/ExploreZ.jpg")
+![media/ExploreZ.jpg](media/ExploreZ.jpg "ExploreZ.jpg")
 
 Once you have begun to image, the Z-plane currently being displayed will
 appear dark green in the Z-limits scroll bars. Other acquired Z-planes
@@ -109,9 +109,9 @@ over the area you would like to image. You may generate multiple grids
 of different sizes by pressing “New Grid”, and then move them to
 different areas.
 
-![media/ExploreGrids.jpg](media/ExploreGrids.jpg "media/ExploreGrids.jpg")
+![media/ExploreGrids.jpg](media/ExploreGrids.jpg "ExploreGrids.jpg")
 
-![media/ExploreGridsImage.jpg](media/ExploreGridsImage.jpg "media/ExploreGridsImage.jpg")
+![media/ExploreGridsImage.jpg](media/ExploreGridsImage.jpg "ExploreGridsImage.jpg")
 
 All of the grids generated in explore mode will populate the “grids” tab
 at the top of the Micro-Magellan main window, next to the Device
@@ -173,7 +173,7 @@ acquisition, enter a name fore the file.
 In the "Time" tab, you can enter a time interval between image
 acquisition and the total number of time points to acquire
 
-![media/AcquireTime.jpg](media/AcquireTime.jpg "media/AcquireTime.jpg")
+![media/AcquireTime.jpg](media/AcquireTime.jpg "AcquireTime.jpg")
 
 ### Space
 
@@ -183,12 +183,12 @@ and either the grid or surface to define XY location and positions. If
 you have created surfaces, you can also elect to image the area between
 two defined surfaces with a buffer on either side.
 
-![](media/AcquireSpaceVolbtwnSurf.jpg "media/AcquireSpaceVolbtwnSurf.jpg")
+![](media/AcquireSpaceVolbtwnSurf.jpg "AcquireSpaceVolbtwnSurf.jpg")
 
 XY footprints can be either grids or surfaces, and define the XY
 positions that are used for a given acquisition.
 
-![](media/SurfacesNonCube.jpg "media/SurfacesNonCube.jpg")
+![](media/SurfacesNonCube.jpg "SurfacesNonCube.jpg")
 
 The Z slices that are collected for a given acquisition can be defined
 in several ways:
@@ -226,7 +226,7 @@ To acquire more than a single grid or surface at a time, select the
 the name currently entered in the “Saving” tab below. Enter the
 parameters for this acquisition in the other acquisition settings tabs.
 
-![media/AcquireMultiAcq.jpg](media/AcquireMultiAcq.jpg "media/AcquireMultiAcq.jpg")
+![media/AcquireMultiAcq.jpg](media/AcquireMultiAcq.jpg "AcquireMultiAcq.jpg")
 
 Clicking “+” again will add another line, it will appear with the same
 name. Highlight the second (new) acquisition and change its name in the

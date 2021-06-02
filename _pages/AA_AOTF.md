@@ -75,7 +75,7 @@ AAAOTF and multiAAAOTF
 </td>
 <td markdown="1">
 
-![](media/All.cfg "media/All.cfg")
+![](media/All.cfg "All.cfg")
 
 </td>
 </tr>

@@ -19,7 +19,7 @@ on data-sets of fitting results.
 <tr  valign=top>
 <td markdown="1">
 
-![](media/_Main_LMPlugin.PNG "media/_Main_LMPlugin.PNG")
+![](media/_Main_LMPlugin.PNG "_Main_LMPlugin.PNG")
 
 </td>
 <td markdown="1">
@@ -50,7 +50,7 @@ is set to 8x. Press **Render**.
 <tr  valign=top>
 <td markdown="1">
 
-![](media/_Image-Prams.JPG "media/_Image-Prams.JPG")
+![](media/_Image-Prams.JPG "_Image-Prams.JPG")
 
 </td>
 <td markdown="1">
@@ -74,7 +74,7 @@ actual number of photons detected in signal and background.
 <tr valign=top>
 <td markdown="1">
 
-![](media/_Max-settings.JPG "media/_Max-settings.JPG")
+![](media/_Max-settings.JPG "_Max-settings.JPG")
 
 </td>
 <td markdown="1">
@@ -96,7 +96,7 @@ frontmost window what objects will be recognized as spots.
 <tr valign=top>
 <td markdown="1">
 
-![](media/_Fit-prams.JPG "media/_Fit-prams.JPG")
+![](media/_Fit-prams.JPG "_Fit-prams.JPG")
 
 </td>
 <td markdown="1">
@@ -127,7 +127,7 @@ will speed up analysis considerably.
 <tr valign=top>
 <td markdown="1">
 
-![](media/_Filter-data.JPG "media/_Filter-data.JPG")
+![](media/_Filter-data.JPG "_Filter-data.JPG")
 
 </td>
 <td markdown="1">
@@ -147,7 +147,7 @@ to search in consecutive frames for a qualifying spot.
 <table cellspacing=15>
 <td markdown="1">
 
-![](media/_Data-processing.JPG "media/_Data-processing.JPG")
+![](media/_Data-processing.JPG "_Data-processing.JPG")
 
 </td>
 <td markdown="1">
@@ -176,12 +176,12 @@ number of frames with a spot for a track) will be shown. Tracks will
 also show the standard deviation of X and Y positions as well as the
 total number of photons measured.
 
-![](media/_DataProc_LMPlugin.PNG "media/_DataProc_LMPlugin.PNG")
+![](media/_DataProc_LMPlugin.PNG "_DataProc_LMPlugin.PNG")
 
 <table cellspacing=15>
 <td markdown="1">
 
-![](media/_DataProc_general.png "media/_DataProc_general.png")
+![](media/_DataProc_general.png "_DataProc_general.png")
 
 </td>
 <td markdown="1">
@@ -211,7 +211,7 @@ was derived from, box size, original image size, pixel size, etc..).
 <table cellspacing=15>
 <td markdown="1">
 
-![](media/_DataProc_2-color.png "media/_DataProc_2-color.png")
+![](media/_DataProc_2-color.png "_DataProc_2-color.png")
 
 </td>
 <td markdown="1">
@@ -223,7 +223,7 @@ was derived from, box size, original image size, pixel size, etc..).
 <table cellspacing=15>
 <td markdown="1">
 
-![](media/_DataProc_tracks.png "media/_DataProc_tracks.png")
+![](media/_DataProc_tracks.png "_DataProc_tracks.png")
 
 </td>
 <td markdown="1">
@@ -235,7 +235,7 @@ was derived from, box size, original image size, pixel size, etc..).
 <table cellspacing=15>
 <td markdown="1">
 
-![](media/_DataProc_reconstruction.png "media/_DataProc_reconstruction.png")
+![](media/_DataProc_reconstruction.png "_DataProc_reconstruction.png")
 
 </td>
 <td markdown="1">

@@ -13,7 +13,7 @@ was based on the code for the BFCorrector plugin).
 
 The plugin appears as follows:
 
-![](media/Flatfield.png "media/Flatfield.png")
+![](media/Flatfield.png "Flatfield.png")
 
 First, using the normal Micro-Manager tools, create a Configuration
 group that incorporates most things that influences what a flatfield

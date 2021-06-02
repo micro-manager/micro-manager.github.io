@@ -82,7 +82,7 @@ You can now use the camera in Micro-Manager.
 
 ## Properties
 
-![](media/TetheredCam_settings.png "media/TetheredCam_settings.png")
+![](media/TetheredCam_settings.png "TetheredCam_settings.png")
 
 The following properties are currently implemented:
 

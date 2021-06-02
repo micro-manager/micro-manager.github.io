@@ -128,14 +128,14 @@ Below is a screenshot of a properly configured Stradus VersaLase: (Some
 property entries for Laser C and Laser D have been truncated in the
 photo)
 
-![](media/UMgrVersaLase.jpg "media/UMgrVersaLase.jpg")
+![](media/UMgrVersaLase.jpg "UMgrVersaLase.jpg")
 
 The Stradus VersaLase GUI software, shown below, which is included on
 the software CD shipped with systems may be helpful for initial
 configuration and testing of lasers in a Micro-Manager controlled
 system.
 
-![](media/UMgrVersaLaseSW.jpg "media/UMgrVersaLaseSW.jpg")
+![](media/UMgrVersaLaseSW.jpg "UMgrVersaLaseSW.jpg")
 
 Questions regarding the VersaLase Micro-Manager device driver may be
 directed to: [Vortran uManager Driver

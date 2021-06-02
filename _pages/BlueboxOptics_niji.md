@@ -149,7 +149,7 @@ To view or edit the niji properties, open the "Tools" menu and select
 
 For single LED excitation, two groups are required:
 
-![](media/Niji_configuration_settings.png "media/Niji_configuration_settings.png")
+![](media/Niji_configuration_settings.png "Niji_configuration_settings.png")
 
 -   "Channel Label" for selecting the LED channel
 -   "Global Intensity" to control the light output intensity (this
@@ -181,18 +181,18 @@ visual inspection.
 
 This can be achieved by adding all 7 channel states in a group:
 
-![](media/Niji_group_multiled.png "media/Niji_group_multiled.png")
+![](media/Niji_group_multiled.png "Niji_group_multiled.png")
 
 and creating presets of interest using a combination of any (multiple or
 single) channels:
 
-![](media/Niji_group_multiled_preset.png "media/Niji_group_multiled_preset.png")
+![](media/Niji_group_multiled_preset.png "Niji_group_multiled_preset.png")
 
 For completeness and maximum flexibility, it is possible to also add all
 7 intensities to the group if different max output intensities are
 required for each preset.
 
-![](media/Niji_group_multiled_intensity.png "media/Niji_group_multiled_intensity.png")
+![](media/Niji_group_multiled_intensity.png "Niji_group_multiled_intensity.png")
 
 In that case, the output of each LED is defined by the maximum output
 allowed for the preset, multiplied by the global intensity given to the
