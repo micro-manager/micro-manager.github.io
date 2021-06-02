@@ -5,8 +5,6 @@ layout: page
 section: Programming
 ---
 
-# Micro-Manager Programming Guide
-
 <span>*Created on November 16, 2005 by Nenad Amodaj  
 Updated for release 1.0.37(beta) on July 28, 2006*</span>  
 {% include Note text="Micro-Manager 1 and 2 use the same C++ layer, hence this guide is applicable to both versions.  However, the Java interfaces are different.   Please use the version 2 api unless you have very good reasons not to." %}
