@@ -63,7 +63,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[Media:MMConfig\media/_DTOL.cfg](Media:media/MMConfig_DTOL.cfg "wikilink")
+[MMConfig_DTOL.cfg](media/MMConfig_DTOL.cfg "wikilink")
 
 </td>
 </tr>

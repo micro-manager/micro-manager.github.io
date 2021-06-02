@@ -22,13 +22,13 @@ ImageJ functionality within the Beanshell environment
 [Media:media/SetZoom.bsh](Media:media/SetZoom.bsh "wikilink") - Utility that sets
 the zoom level of the current ImageJ image window
 
-[Media:camera\media/_test.bsh](Media:media/Camera_test.bsh "wikilink") - Example
+[Camera_test.bsh](media/Camera_test.bsh "wikilink") - Example
 camera test.
 
-[Media:image\_snap\media/_example.bsh](Media:media/Image_snap_example.bsh "wikilink")
+[Image_snap_example.bsh](media/Image_snap_example.bsh "wikilink")
 - Shows how to snap (but not display) an image
 
-[Media:image\_snap\_example\media/_2.bsh](Media:media/Image_snap_example_2.bsh "wikilink")
+[Image_snap_example_2.bsh](media/Image_snap_example_2.bsh "wikilink")
 - Shows how to snap and display an image. The image window must already
 be open (Snap an image once manually before running the plugin).
 
@@ -36,7 +36,7 @@ be open (Snap an image once manually before running the plugin).
 how to use the ImageJ 'Measure' command that updates with every new
 image snapped.
 
-[Media:live\media/_demo.bsh](Media:media/Live_demo.bsh "wikilink") - Shows how to
+[Live_demo.bsh](media/Live_demo.bsh "wikilink") - Shows how to
 process an image during acquisition. Needs the DemoStreamingCamera to
 work.
 
@@ -72,22 +72,22 @@ sytem programmatically, i.e. without using configuration files. The GUI
 changes will not be visible until you manually run the command 'Rebuild
 GUI' or 'Refresh GUI' (Tools menu).
 
-[Media:config\media/_test.bsh](Media:media/Config_test.bsh "wikilink") - Shows how
+[Config_test.bsh](media/Config_test.bsh "wikilink") - Shows how
 to define config groups programmatically. Will work with the
 demo-configuration.
 
-[Media:Roi\media/_copy.bsh](Media:media/Roi_copy.bsh "wikilink") - Demonstrates
+[Roi_copy.bsh](media/Roi_copy.bsh "wikilink") - Demonstrates
 copying of ROI from one camera to another.
 
-[Media:RatiometricImaging\media/_main.bsh](Media:media/RatiometricImaging_main.bsh "wikilink")
+[RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh "wikilink")
 - Beanshell for ratiometric Imaging (J. Husson).
 
-[Media:RatiometricImaging\media/_singleImage.bsh](Media:media/RatiometricImaging_singleImage.bsh "wikilink")
+[RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh "wikilink")
 - Beanshell for ratiometric Imaging. Takes only one image, can be useful
 as a control before starting a whole acquisition with main beanshell
 above (J. Husson).
 
-[Media:simplest\_mosaic\media/_experiment.bsh](Media:media/Simplest_mosaic_experiment.bsh "wikilink")
+[Simplest_mosaic_experiment.bsh](media/Simplest_mosaic_experiment.bsh "wikilink")
 - Control Andor Mosaic via iQ 2.7
 
 The source code repository contains many more [example

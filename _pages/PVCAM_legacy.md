@@ -103,7 +103,7 @@ PVCAM compatible cameras
 
 <td markdown="1">
 
-[Media:MMConfig\_pvcam\media/_simple.cfg](Media:media/MMConfig_pvcam_simple.cfg "wikilink")
+[MMConfig_pvcam_simple.cfg](media/MMConfig_pvcam_simple.cfg "wikilink")
 
 </td>
 

@@ -148,7 +148,7 @@ following content:
 
 or
 
-[Media:itc\media/_vista.zip](Media:media/Itc_vista.zip "wikilink")
+[Itc_vista.zip](media/Itc_vista.zip "wikilink")
 
 ### Windows and Linux ITC18 driver source code
 
