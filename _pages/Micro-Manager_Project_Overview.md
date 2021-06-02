@@ -15,7 +15,7 @@ experiments. µManager runs as a plugin to
 an NIH grant R01-EB007187 from the National Institute of Biomedical
 Imaging and Bioengineering (NBIB).
 
-**µManager serves a double purpose:**
+## µManager serves a double purpose:
 
 -   It is a complete image acquisition and microscope control package,
     available for Windows, Mac and Linux, easy to install and configure
@@ -27,7 +27,7 @@ Imaging and Bioengineering (NBIB).
     development of specialized imaging applications.
 
 
-**The main features of the µManager application are:**  
+## The main features of the µManager application are:
 
 -   Cross-platform code-base (Windows, Mac and Linux).
 -   Full integration with [ImageJ](http://rsb.info.nih.gov/ij/), a
@@ -78,7 +78,7 @@ following components:**
 -   Scripting environment for writing automated procedures and executing
     command-line control commands
 
-### Core Services
+## Core Services
 
 The central component is the Core Services Module (MMCore) - a hardware
 abstraction layer providing services common to all automated
@@ -92,7 +92,7 @@ entire applications that are essentially hardware independent. The
 support particular devices with a minimal amount of coding effort and
 minimal understanding of how the entire system works.
 
-**MMCore provides the following device-independent services:**
+## MMCore provides the following device-independent services:
 
 -   Flexible hardware configuration facilities to support defining,
     naming and adding new devices
@@ -113,7 +113,7 @@ block-diagram](media/Core_module.gif "fig:Core module block-diagram")
 Figure 2, MMCore module block diagram  
 
 
-## General design features
+### General design features
 
 The most important design guidelines in our project were modularity and
 extensibility. By following these broad principles we tried to
@@ -200,4 +200,3 @@ initialized, the command set can be easily customized using device
 management features in the User Interface. For example, the user can
 configure simultaneous actions on multiple devices to be executed
 following a single command.  
-

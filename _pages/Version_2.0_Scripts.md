@@ -11,7 +11,7 @@ API](https://micro-manager.org/wiki/Version_2.0_API).
 More 2.0 scripts can be found [in the 2.0 repository on
 github](https://github.com/micro-manager/micro-manager/tree/mm2/scripts).
 
-### Manual acquisition with display
+## Manual acquisition with display
 
 This script creates a Datastore, adds a DisplayWindow to it, manually
 snaps a few images, converts them from TaggedImage to Image, changes
@@ -44,7 +44,7 @@ store.putImage(image2);
 store.save(Datastore.SaveMode.MULTIPAGE_TIFF, display);
 ```
 
-### Snap an image, process with the default pipeline and get it as an ImageJ ImagePlus
+## Snap an image, process with the default pipeline and get it as an ImageJ ImagePlus
 
 ```
 import ij.ImagePlus;
@@ -67,4 +67,3 @@ iProcessor = mm.data().ij().createProcessor(processedImg);
 // duplicate if you want to store the original images
 ip = (new ImagePlus("tmp", iProcessor)).duplicate();   
 ```
-

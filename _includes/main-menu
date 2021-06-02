@@ -28,7 +28,7 @@
 
 <!-- Overview -->
 {% include menu-section title="Overview" link="/Micro-Manager_Project_Overview" %}
-  {% include menu-item title="Why MicroManager?" link="/Why_Micro-Manager%3F" %}
+  {% include menu-item title="Why MicroManager?" link="/why_MicroManager" %}
   {% include menu-item title="Who should use MicroManager" link="/Who_should_use_Micro-Manager" %}
 {% include menu-section-end %}
 
@@ -39,7 +39,7 @@
   {% include menu-item title="Plugins" link="/Plugins" %}
   {% include menu-item title="Tutorial (PDF)" link="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf" %}
   {% include menu-item title="Advanced Methods" link="http://www.jbmethods.org/jbm/article/view/36/29" %}
-  {% include menu-item title="FAQ" link="/Micro-Manager_FAQ" %}
+  {% include menu-item title="FAQ" link="/Micro-Manager_FAQ-new" %}
   {% include menu-item title="More Help Topics" link="/More_Help_Topics" %}
   {% include menu-item title="Video Screencasts" link="/Screencasts" %}
 {% include menu-section-end %}

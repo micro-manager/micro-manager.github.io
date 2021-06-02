@@ -5,7 +5,7 @@ layout: page
 section: Programming
 ---
 
-### General
+## General
 
 -   [Micro-Manager Coding Style and
     Conventions](Micro-Manager_Coding_Style_and_Conventions "wikilink")
@@ -23,7 +23,7 @@ section: Programming
 -   [Using IntelliJ](Using_IntelliJ "wikilink") - to compile and debug
     the Micro-Manager Java layer
 
-### Windows
+## Windows
 
 -   [Building MM on Windows](Building_MM_on_Windows "wikilink")
 -   [Visual Studio project settings for device
@@ -32,7 +32,7 @@ section: Programming
     Windows](Viewing_crash_dumps_on_Windows "wikilink") - For C++
     programmers, when all else fails
 
-### Mac OS X and Linux
+## Mac OS X and Linux
 
 -   [Configuration options](Configuration_options "wikilink") - Build
     options on Mac OS X and Linux
@@ -40,7 +40,7 @@ section: Programming
     Unix](Debugging_MM_on_MacOSX_and_Unix "wikilink") - Using gdb or
     Netbeans to debug the Micro-Manager C++ core
 
-### Mac OS X
+## Mac OS X
 
 -   [Build on MacOS X](Build_on_MacOS_X "wikilink")
 -   [Building Boost on MacOS X](Building_Boost_on_MacOS_X "wikilink")
@@ -52,7 +52,7 @@ section: Programming
 -   [Building Universal Binaries on Mac OS
     X](Building_Universal_Binaries_on_Mac_OS_X "wikilink") (obsolete)
 
-### Linux
+## Linux
 
 -   [ArchLinux AUR
     package](https://aur.archlinux.org/packages/micromanager-git/) and
@@ -213,8 +213,7 @@ Yes (Official)</p></td>
 </tbody>
 </table>
 
-### Miscellaneous
+## Miscellaneous
 
 -   [Free third-party tools for testing communications with
     hardware](Free_third-party_tools_for_testing_communications_with_hardware "wikilink")
-
