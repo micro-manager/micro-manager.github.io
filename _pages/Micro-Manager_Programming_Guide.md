@@ -109,7 +109,7 @@ several Java IDEs are available:
     recommended IDE ([see previous
     instructions](Writing_plugins_for_Micro-Manager "wikilink"))
 -   [Eclipse](Using_Eclipse "wikilink")
-    ([see previous instructions](Writing_plugins_for_Micro-Manager#configure-eclipse-to-edit-a-plugin "wikilink"))
+    ([see previous instructions](Writing_plugins_for_Micro-Manager#using-eclipse "wikilink"))
 
 ### Creating the CMMCore object
 

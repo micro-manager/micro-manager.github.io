@@ -196,7 +196,7 @@ will be kept at zero as long as the TTL is inactive.
 </tr>
 <tr class="even">
 <td><p>Switch-Label</p></td>
-<td><p>Set the digital output pattern across pins 8 to 13. Allows values 0-63. See usage in <a href="#Digital_IO" title="wikilink">#Digital IO</a></p></td>
+<td><p>Set the digital output pattern across pins 8 to 13. Allows values 0-63. See usage in <a href="#digital-io" title="wikilink">Digital IO</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Switch-Sequence</p></td>
@@ -205,7 +205,7 @@ will be kept at zero as long as the TTL is inactive.
 </tr>
 <tr class="even">
 <td><p>Switch-State</p></td>
-<td><p>Set the digital output pattern across pins 8 to 13. Allows values 0-63. See usage in <a href="#Digital_IO" title="wikilink">#Digital IO</a></p></td>
+<td><p>Set the digital output pattern across pins 8 to 13. Allows values 0-63. See usage in <a href="#digital-io" title="wikilink">Digital IO</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Input-AnalogInput{0:5}</p></td>

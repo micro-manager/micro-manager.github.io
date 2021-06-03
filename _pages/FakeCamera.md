@@ -65,6 +65,7 @@ Windows, 32 & 64-bit, Linux (see [below](#building-on-linux "wikilink"))
 1.4.23, 1. November 2017
 
 </td>
+</tr>
 </table>
 
 This camera adapter adds a virtual camera that can be configured to load
@@ -101,6 +102,7 @@ following placeholders:
 Position of focus stage
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -114,6 +116,7 @@ Position of focus stage
 Position of focus stage, with precision <prec>
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -127,6 +130,7 @@ Position of focus stage, with precision <prec>
 Position of stage <stage>
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -140,6 +144,7 @@ Position of stage <stage>
 Position of stage <stage> with precision <prec>
 
 </td>
+</tr>
 </table>
 
 The positions are rounded according to the specified precision (default
