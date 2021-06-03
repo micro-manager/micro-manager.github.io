@@ -68,7 +68,7 @@ Test System Setup
 
 ### Scripting
 
-Ran [Arthur's mask projection script](Mosaic3#Scripting "wikilink")
+Ran [Arthur's mask projection script](Mosaic3#scripting "wikilink")
 verbatim to project a drawn image without doing any calibration - works
 OK.
 
@@ -82,7 +82,7 @@ OK.
 | {% include Key text="Off" %}                    | {% include Key text="Reset" %} under Settings tab | {% include Key text="Activate Black" %}                                               |
 | {% include Key text="Show Center Spot" %}       | \-                                             | {% include Key text="Activate Test Mask" %} + {% include Key text="Pulse Latest Mask" %} |
 | {% include Key text="All Pixels" %}             | \-                                             | {% include Key text="Activate White" %} + {% include Key text="Pulse Latest Mask" %}     |
-| (use [script](Mosaic3#Scripting "wikilink")) | {% include Key text="Test Mask" %}                | {% include Key text="Activate Test Mask" %}                                           |
+| (use [script](Mosaic3#scripting "wikilink")) | {% include Key text="Test Mask" %}                | {% include Key text="Activate Test Mask" %}                                           |
 | \-                                           | {% include Key text="White Mask" %}               | {% include Key text="Activate White" %}                                               |
 | \-                                           | \-                                             | {% include Key text="Activate Latest Mask" %}                                         |
 
@@ -126,7 +126,7 @@ circle ROI and the size and shape cannot be customized.
         -   Other models need a mask slide placed at the Mosaic epi port
             mouth and focused with e.g. the Mosaic flashlight.
     -   Adjust the DMD lens focus. Using [Arthur's mask projection
-        script](Mosaic3#Scripting "wikilink") is especially helpful
+        script](Mosaic3#scripting "wikilink") is especially helpful
         here, with a quadrant mask image (Figure D).
 
 ![(A, B) Using {% include Key text="All Pixels" %} and

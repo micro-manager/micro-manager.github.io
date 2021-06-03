@@ -357,7 +357,7 @@ Figure 7. Acquisition control dialog.
 After defining channels, slices and frames by using controls in the
 dialog, press the "Acquire" button. The acquisition starts immediately
 and an [Image
-Viewer](Micro-Manager_User's_Guide#Image5D_Viewer "wikilink") window
+Viewer](Micro-Manager_User's_Guide#image5d-viewer "wikilink") window
 will open displaying the progress. During and after acquisition you can
 use buttons at the bottom of the Image5D window to play-back the
 sequence, browse channels, slices or frames, display metadata or save
@@ -379,7 +379,7 @@ reduce photo-toxicity and to save disk space. Clicking inside the
 'Color' column will open up a Color selector that lets you select the
 color to be used for that channel in the Image5D Viewer. (You can also
 change colors later on in the [Image
-Viewer](Micro-Manager_User's_Guide#Image5D_Viewer "wikilink").)
+Viewer](Micro-Manager_User's_Guide#image5d-viewer "wikilink").)
 
 **Z Slices** can either be set as relative to the current position (you
 will need to type in the start and end position) or as absolute
@@ -397,8 +397,8 @@ lapse mode will open Image5D viewers for each position
 
 Checking the **Use XY list** option will cause the acquisition to be
 executed at each position defined in the [Position
-List](Micro-Manager_User's_Guide#Position_List_Dialog "wikilink").
-[Autofocus](Micro-Manager_User's_Guide#Autofocus "wikilink") options are
+List](Micro-Manager_User's_Guide#position-list-dialog "wikilink").
+[Autofocus](Micro-Manager_User's_Guide#autofocus "wikilink") options are
 described below. In the acquisition dialog, if the **Save files to
 acquisition directory** option is selected, images will be saved to disk
 continuously during the acquisition. If this option is not selected,
@@ -415,7 +415,7 @@ the Image 5D viewer (all others can be found on disk).
 ## Burst Mode (Fast Imaging)
 
 Time lapse sequences can be acquired using the [Multi-dimensional
-acquisition](#Multi-dimensional_acquisition "wikilink") dialog. However,
+acquisition](#multi-dimensional-acquisition "wikilink") dialog. However,
 this causes the software to 'snap' images at each consecutive time
 point. Most cameras will not operate at their top speed in this mode, so
 if you would like to acquire fast 'streams' of images, you will need to
@@ -429,7 +429,7 @@ Figure 7. Burst Mode Acquisition dialog.
 Set up the camera (exposure time, binning, etc..) in the main
 Micro-Manager window. Specifiy the number of images you would like to
 collect. The resulting sequence can either be saved to disk or displayed
-in the [Image5D Viewer](#Image5D_Viewer "wikilink"). When saving to disk
+in the [Image5D Viewer](#image5d-viewer "wikilink"). When saving to disk
 it is possible to acquire sequences larger than the RAM available in
 your computer (provided that the images are saved to disk fast enough).
 Specify the *' Directory Root*' and **Name Prefix** when saving to disk.
@@ -518,7 +518,7 @@ skipped between autofocus events.
 
 The Position List dialog can be reached from the menu (**Tools \| XY
 List**), and from the [Multi-dimensional
-Acquisition](Micro-Manager_User's_Guide#Multi-dimensional_acquisition "wikilink")
+Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition "wikilink")
 window (button next to 'Use XY list'). The Position List is used to
 record the positions of stages in your system. At the bottom of the
 dialog is a list of available stage axes, any of which you can select to
@@ -559,7 +559,7 @@ of the corners of the object that you are interested in. Pressing **OK**
 will generate a Position List that covers a bounding box around the
 corners that you set. To do this correctly, the dialog needs to know the
 correct **Pixel Size**. If your system is
-[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink"),
+[calibrated](Micro-Manager_Configuration_Guide#pixel-size-calibration "wikilink"),
 the correct pixel size will appear here automatically; otherwise you
 will have to enter the correct number. It is also possible to specify an
 **overlap** between the images generated from this position list (to
@@ -571,7 +571,7 @@ It can be cumbersome to exactly position a microscope stage.
 Micro-Manager has an option (**Tools \| Mouse Moves Stage**) that might
 make this easier. To use this tools, your Micro-Manager configuration
 must be
-[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink").
+[calibrated](Micro-Manager_Configuration_Guide#pixel-size-calibration "wikilink").
 When **Mouse Moves Stage** is enabled, double-clicking in the "Live"
 window (the window in which the "Snap" and "Live" buttons display
 images) will move the stage such that the place you double-clicked will
@@ -631,7 +631,7 @@ channels. Make channels visible/unvisible using the checkboxes, switch
 the 'active' channel using the radio buttons). Buttons on the bottom of
 the window (left to right): **Save**, **Stop** the currently running
 acquisition, **Pause** acquisition, display
-**[Metadata](#Metadata "wikilink")**, open **Brightness/Contrast** tool
+**[Metadata](#metadata "wikilink")**, open **Brightness/Contrast** tool
 to adjust the currently selected channel, start/stop **Playback** of the
 time series. Adjust the Playback speed using the text box (set in
 frames/second). The bottom bar will also display the time point at which
@@ -663,7 +663,7 @@ The **Metadata** button at the bottom of the Image5D viewer will bring
 up a window displaying all Metadata. Initially, the window shows the
 **Comment** tab. This will contain the comments you typed in beforehand
 in the Comment field in the [Multi-dimensional
-Acquisition](#Multi-dimensional_acquisition "wikilink") window. You can
+Acquisition](#multi-dimensional-acquisition "wikilink") window. You can
 make changes to the Comments here. Pressing the **Save** button will
 save your changes to the comments, along with changes you might have
 made to Brightness/Contrast of the image (pixel data will not be

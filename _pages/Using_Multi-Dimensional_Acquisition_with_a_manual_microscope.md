@@ -13,7 +13,7 @@ use the Multi-Dimensional Acquisition and its facilities. To do so,
     includes the DemoCamera-Dichroic device (or any other demo state
     device).
 -   Make a [Channel
-    Configuration](Micro-Manager_Configuration_Guide#Configuration_Presets "wikilink")
+    Configuration](Micro-Manager_Configuration_Guide#configuration-presets "wikilink")
     group that represents the filters/dichroics that you have and name
     them accordingly.
 -   Start the Script Panel (under the Tools menu). Click the top-left

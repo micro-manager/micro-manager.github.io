@@ -50,7 +50,7 @@ Apache License, Version 2.0
 </td>
 <td markdown="1">
 
-Windows, 32 & 64-bit, Linux (see [below](#Building_on_Linux "wikilink"))
+Windows, 32 & 64-bit, Linux (see [below](#building-on-linux "wikilink"))
 
 </td>
 </tr>

@@ -52,7 +52,7 @@ sudo apt install git-all subversion build-essential autoconf automake libtool \
 
 You may also need to install additional packages (for cameras and
 special hardware). See the full list in
-[Dependencies](#Dependencies "wikilink")
+[Dependencies](#dependencies "wikilink")
 
 ## Fetch Source Repositories
 

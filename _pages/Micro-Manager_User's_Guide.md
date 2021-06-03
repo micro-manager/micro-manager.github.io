@@ -134,7 +134,7 @@ any problems.
 
 It is often necessary to adjust memory settings in order to optimize
 Micro-Manager performance and prevent errors. See the [Configuration
-Guide](Micro-Manager_Configuration_Guide#MemorySettings "wikilink") for
+Guide](Micro-Manager_Configuration_Guide#memorysettings "wikilink") for
 guidelines.
 
 # Getting started
@@ -398,7 +398,7 @@ Figure 8. Acquisition control dialog.
 After defining channels, slices and frames by using controls in the
 dialog, press the "Acquire" button. The acquisition starts immediately
 and an [Image
-Viewer](Micro-Manager_User's_Guide#5D-Image_Viewer "wikilink") window
+Viewer](Micro-Manager_User's_Guide#5d-image-viewer "wikilink") window
 will open displaying the progress. During and after acquisition you can
 use controls at the bottom of the 5D-Image window to play-back the
 sequence, browse channels, slices, frames, or positions, or save the
@@ -434,7 +434,7 @@ sampling rates, to reduce photo-toxicity and to save disk space.
 Clicking inside the 'Color' column will open up a Color selector that
 lets you select the color to be used for that channel in the 5D-Image
 Viewer. (You can also change colors later on in the [Image
-Viewer](Micro-Manager_User's_Guide#5D-Image_Viewer "wikilink").)
+Viewer](Micro-Manager_User's_Guide#5d-image-viewer "wikilink").)
 
 **Acquisition Order** lets you choose between carrying out z-stacks with
 each channel (Slices first) or switching channels at each z-position
@@ -445,8 +445,8 @@ point, in effect acquiring time lapse sequences at all positions.
 
 Checking the **Use XY list** option will cause the acquisition to be
 executed at each position defined in the [Position
-List](Micro-Manager_User's_Guide#Position_List_Dialog "wikilink").
-[Autofocus](Micro-Manager_User's_Guide#Autofocus "wikilink") options are
+List](Micro-Manager_User's_Guide#position-list-dialog "wikilink").
+[Autofocus](Micro-Manager_User's_Guide#autofocus "wikilink") options are
 described below. If the **Save images** option is selected, images will
 be saved to disk continuously during the acquisition. If this option is
 not selected, images are accumulated only in the 5D-Image window, and
@@ -532,7 +532,7 @@ you start the acquisition.
 
 The Position List dialog can be reached from the menu (**Tools \| XY
 List**), and from the [Multi-dimensional
-Acquisition](Micro-Manager_User's_Guide#Multi-dimensional_acquisition "wikilink")
+Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition "wikilink")
 window (button next to 'Use XY list'). The Position List is used to
 record the positions of stages in your system. At the bottom of the
 dialog is a list of available stage axes, any of which you can select to
@@ -583,7 +583,7 @@ the size of an N-by-N grid, then press **Center Here**. Then press
 
 For either method, the dialog needs to know the correct **Pixel Size**.
 If your system is
-[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink"),
+[calibrated](Micro-Manager_Configuration_Guide#pixel-size-calibration "wikilink"),
 the correct pixel size will appear here automatically; otherwise you
 will have to enter the correct number. It is also possible to specify an
 **overlap** between the images generated from this position list (to
@@ -595,7 +595,7 @@ It can be cumbersome to exactly position a microscope stage.
 Micro-Manager has an option (**Tools \| Mouse Moves Stage**) that might
 make this easier. To use this tools, your Micro-Manager configuration
 must be
-[calibrated](Micro-Manager_Configuration_Guide#Pixel_Size_Calibration "wikilink").
+[calibrated](Micro-Manager_Configuration_Guide#pixel-size-calibration "wikilink").
 When **Mouse Moves Stage** is enabled, double-clicking in the "Live"
 window (the window in which the "Snap" and "Live" buttons display
 images) will move the stage such that the place you double-clicked will

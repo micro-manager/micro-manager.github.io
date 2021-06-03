@@ -182,7 +182,7 @@ directly to disk. The default is None.
 
 These images cannot be displayed during acquisition, however, ImageJ
 will easily read this file format back in again. See [Opening .raw data
-files](#Opening_.raw_Data_files "wikilink") section.
+files](#opening-.raw-data-files "wikilink") section.
 
 The images are placed in a Date and Time stamped folder to prevent
 overwriting  
@@ -295,7 +295,7 @@ An example script is shown below:
     option is found in the ImageJ window under Edit/Options/Memory &
     Threads. (you can find more information on this parameter and its
     limitations
-    [here](Micro-Manager_Configuration_Guide#Memory_Settings "wikilink"))
+    [here](Micro-Manager_Configuration_Guide#memory-settings "wikilink"))
 -   SRRF computation time increases with frame size therefore the larger
     the camera frame and the higher the radiality magnification are, the
     more time will be required for the computer to process the SRRF

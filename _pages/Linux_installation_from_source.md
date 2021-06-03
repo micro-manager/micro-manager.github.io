@@ -5,4 +5,4 @@ layout: page
 ---
 
 1.  REDIRECT
-    [Building\_and\_debugging\_Micro-Manager\_source\_code\#Linux](Building_and_debugging_Micro-Manager_source_code#Linux "wikilink")
+    [Building\_and\_debugging\_Micro-Manager\_source\_code\#Linux](Building_and_debugging_Micro-Manager_source_code#linux "wikilink")

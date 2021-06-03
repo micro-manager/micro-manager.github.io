@@ -312,12 +312,12 @@ to see this change).
 The **XXX Intensity** properies control the intensity of the specified
 laser (e.g., **470 Intensity** controls the intensity of the 470 nm
 laser). Attempting to set an **XXX Intensity** setting when the
-[Intensity Control](89NorthLDI#Intensity_Control "wikilink") property is
+[Intensity Control](89NorthLDI#intensity-control "wikilink") property is
 set to **EXT** will result in an error. Intensity is expressed as a
 percentage of the maximum output of the laser diode, i.e., an intensity
 of 15 on a laser diode with a maximum output of 1000 mW, corresponds to
 an output of 150 mW. There is a [known
-bug](89NorthLDI#Intensity_Sliders "wikilink") when controlling diode
+bug](89NorthLDI#intensity-sliders "wikilink") when controlling diode
 intensity via the property slider.
 
 -----
@@ -329,27 +329,27 @@ shutters on each of the diodes. Setting the property to **OPEN** will
 open the shutter and allow the diode to emit, setting it to **CLOSED**
 will close the shutter and prevent the diode from emitting. Only 4
 diodes may be emitting simultaneously. Diodes will not emit if their
-[Intensity](89NorthLDI#XXX_Intensity "wikilink") is set to 0, even if
+[Intensity](89NorthLDI#xxx-intensity "wikilink") is set to 0, even if
 the **Shutter** property is set to **OPEN**. Attempting to set an **XXX
 Shutter** setting when the [Shutter
-Control](89NorthLDI#Shutter_Control "wikilink") property is set to
+Control](89NorthLDI#shutter-control "wikilink") property is set to
 **EXT** will result in an error. Diodes will not emit unless the
-[Functional Mode](89NorthLDI#Functional_Mode "wikilink") setting is set
+[Functional Mode](89NorthLDI#functional-mode "wikilink") setting is set
 to **RUN**. For use with MicroManager's auto-shutter feature see the
 [Auto Shutter Wavelength
-X](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink") properties.
+X](89NorthLDI#auto-shutter-wavelength-x "wikilink") properties.
 
 If setting the **XXX Shutter** property to **OPEN** does not cause the
 diode to emit, ensure that:
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink") is set to
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink") is set to
     **RUN**
-  - The corresponding [Intensity](89NorthLDI#XXX_Intensity "wikilink")
+  - The corresponding [Intensity](89NorthLDI#xxx-intensity "wikilink")
     setting is **not** 0
-  - The [Shutter Control](89NorthLDI#Shutter_Control "wikilink")
+  - The [Shutter Control](89NorthLDI#shutter-control "wikilink")
     property is set to **PC**
   - Fewer than 4 other diodes are currently emitting
-  - There is no LDI [Fault](89NorthLDI#Fault "wikilink") detected
+  - There is no LDI [Fault](89NorthLDI#fault "wikilink") detected
 
 -----
 
@@ -358,7 +358,7 @@ diode to emit, ensure that:
 If set to **OFF**, a TTL high signal will open a diode's electronic
 shutter and TTL low will close it. If set to **ON**, TTL low will open
 the shutter and TTL high will close it. Has no effect if [Shutter
-Control](89NorthLDI#Shutter_Control "wikilink") is set to **PC**.
+Control](89NorthLDI#shutter-control "wikilink") is set to **PC**.
 
 -----
 
@@ -396,7 +396,7 @@ all toggled at the same time.
 
 Determines if the laser intensity should be controlled via MicroManager
 properties (**PC**) or analogue voltage (**EXT**). If set to **EXT**
-attempting to change an [Intensity](89NorthLDI#XXX_Intensity "wikilink")
+attempting to change an [Intensity](89NorthLDI#xxx-intensity "wikilink")
 property will result in an error.
 
 -----
@@ -405,7 +405,7 @@ property will result in an error.
 
 Determines if the TTL shutter should be controlled via MicroManager
 properties (**PC**) or TTL voltage (**EXT**). If set to **EXT**
-attempting to change a [Shutter](89NorthLDI#XXX_Shutter "wikilink")
+attempting to change a [Shutter](89NorthLDI#xxx-shutter "wikilink")
 property will result in an error.
 
 -----
@@ -449,43 +449,43 @@ respond to the auto shutter commands and to assign this as the channel
 group. To enable this it is recommended that you create a group with the
 following settings:
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink")
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink")
   - [Auto Shutter Wavelength
-    1](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink")
+    1](89NorthLDI#auto-shutter-wavelength-x "wikilink")
 
 With the following presets:
 
 **XXX nm** (where XXX is a desired wavelength):
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink") : **RUN**
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink") : **RUN**
   - [Auto Shutter Wavelength
-    1](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink") : **XXX**
+    1](89NorthLDI#auto-shutter-wavelength-x "wikilink") : **XXX**
 
 **Off** :
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink") : **IDLE**
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink") : **IDLE**
   - [Auto Shutter Wavelength
-    1](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink") : **NONE**
+    1](89NorthLDI#auto-shutter-wavelength-x "wikilink") : **NONE**
 
 **Warmup** :
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink") :
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink") :
     **WARMUP**
   - [Auto Shutter Wavelength
-    1](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink") : **NONE**
+    1](89NorthLDI#auto-shutter-wavelength-x "wikilink") : **NONE**
 
 **Manual** :
 
-  - [Functional Mode](89NorthLDI#Functional_Mode "wikilink") : **RUN**
+  - [Functional Mode](89NorthLDI#functional-mode "wikilink") : **RUN**
   - [Auto Shutter Wavelength
-    1](89NorthLDI#Auto_Shutter_Wavelength_X "wikilink") : **NONE**
+    1](89NorthLDI#auto-shutter-wavelength-x "wikilink") : **NONE**
 
 The first preset is repeated for each of the desired wavelengths. The
 **Off** and **Warmup** presets are optional but will provide an
 indication of the state of the LDI when starting MicroManager. The
 **Manual** preset is also optional. It keeps the LDI running but
 disables auto-shutter, allowing for manual control via the
-[Shutter](89NorthLDI#XXX_Shutter "wikilink") properties.
+[Shutter](89NorthLDI#xxx-shutter "wikilink") properties.
 
 ## Known Bugs
 

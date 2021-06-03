@@ -68,7 +68,7 @@ work).
     properties in the "System" group's "Startup" preset, to set them
     automatically upon loading the configuration file as described in
     the [ Configuration
-    Guide](Micro-Manager_Configuration_Guide#Startup_Presets "wikilink").
+    Guide](Micro-Manager_Configuration_Guide#startup-presets "wikilink").
 4.  Synchronizing cameras requires wiring the exposure digital output of
     one camera (namely, the "Master" camera) to the trigger input of
     other cameras (the "Slave" camera(s)).

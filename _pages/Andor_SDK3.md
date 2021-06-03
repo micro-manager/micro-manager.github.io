@@ -82,9 +82,9 @@ Files\\Micro-Manager-1.4\\), replacing the 64-bit DLLs.
 ### Disable computer power savings
 
 Disable C-states power saving in the
-[BIOS](Personal_computer_setup#BIOS "wikilink"). For Windows Vista and
+[BIOS](Personal_computer_setup#bios "wikilink"). For Windows Vista and
 later, also disable PCI Express &gt; Link State Power Management in
-[Power Options](Personal_computer_setup#Power_Options "wikilink").
+[Power Options](Personal_computer_setup#power-options "wikilink").
 
 ## Configuration
 

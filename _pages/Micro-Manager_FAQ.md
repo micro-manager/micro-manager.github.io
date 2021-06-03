@@ -71,7 +71,7 @@ In the Device/Property browser, set the property: "Core-TimoutMs" to a
 value higher than 5000ms (just a bit longer than it takes your device to
 do whatever it is doing). To make this setting persist through
 Micro-Manager restarts, add it to the System - Startup group (see
-[Micro-Manager\_Configuration\_Guide\#Startup\_Presets](Micro-Manager_Configuration_Guide#Startup_Presets "wikilink"))
+[Micro-Manager\_Configuration\_Guide\#Startup\_Presets](Micro-Manager_Configuration_Guide#startup-presets "wikilink"))
 
 ### Something does not work. What do I do?
 
