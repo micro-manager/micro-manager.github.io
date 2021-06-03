@@ -1378,7 +1378,7 @@ The Help Menu provides access to support resources.
 Problem Reports are a way for you to send detailed information about
 malfunctions or errors in your system to the maintainers of µManager.
 See [the
-FAQ](Micro-Manager_FAQ#something-does-not-work.-what-do-i-do? "wikilink")
+FAQ](Micro-Manager_FAQ#something-does-not-work-what-do-i-do "wikilink")
 for more information. Please note that the µManager maintainers cannot
 promise to provide assistance to users who are not subscribed to their
 support services.

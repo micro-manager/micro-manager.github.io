@@ -87,7 +87,7 @@ Figure 3. Example of Configuration Presets in the Main Micro-Manager
 window  
 Before setting up Configuration Presets, you should familiarize yourself
 with the [Device/Property
-Browser](Micro-Manager_User's_Guide#exploring-devices:-device/property-browser "wikilink").
+Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink").
 It is also worthwhile to experiment with the Configuration Presets in
 the demo configuration.
 
@@ -139,7 +139,7 @@ the new Property.
 ## Core Properties
 
 In the [Device/Property
-Browser](Micro-Manager_User's_Guide#exploring-devices:-device/property-browser "wikilink")
+Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink")
 you will find a list of properties of the Micro-Manager Core, such as
 core-camera, core-shutter etc. Micro-Manager can work with multiple
 cameras, shutters etc., however, commands will work only on the 'active'

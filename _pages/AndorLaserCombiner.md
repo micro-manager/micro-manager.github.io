@@ -55,7 +55,7 @@ But if you're setting up a brand new computer, continue on to
 dependencies](#configure-alc-sdk-dependencies "wikilink"), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the
 [Library installation for MM 1.4.15 and
-earlier](#library-installation-for-mm-1.4.15-and-earlier "wikilink").
+earlier](#library-installation-for-mm-1415-and-earlier "wikilink").
 
 ## Hardware-based Synchronization
 
