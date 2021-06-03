@@ -6,6 +6,9 @@
 {%- endif -%}
 <h3>μManager Documentation</h3>
 <ul>
+<!-- News -->
+{% include menu-section title="News" link="/news/index" %}
+{% include menu-section-end %}
 <!-- Downloads -->
 {% include menu-section title="Downloads" link="/Download_Micro-Manager_Latest_Release" %}
   {% include menu-item title="Nightly Builds" link="/Micro-Manager_Nightly_Builds" %}
@@ -74,11 +77,6 @@
     {% include menu-item title="Core API Reference (C++)" link="https://valelab4.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html" %}
     {% include menu-item title="Device API Reference (C++)" link="https://valelab4.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html" %}
   {% include menu-section-end %}
-{% include menu-section-end %}
-
-<!-- News -->
-{% include menu-section title="News" link="/news/index" %}
-  {% include listnews %}
 {% include menu-section-end %}
 
 <!-- Support -->
