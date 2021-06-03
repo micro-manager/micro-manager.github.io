@@ -880,5 +880,3 @@ the second one is a short description.
 
 See:
 [Policies\_for\_inclusion\_of\_source\_code](Policies_for_inclusion_of_source_code "wikilink")
-
-{% include Devices_Sidebar text="" %}

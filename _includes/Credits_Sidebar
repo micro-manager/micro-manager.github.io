@@ -1,7 +1,0 @@
-{% include Sidebar title='Credits' content="
-
-* [Micro-Manager Developers](Credits)
-* [Papers citing Micro&#x2011;Manager](Papers_citing_Micro-Manager)
-* [How to cite Micro&#x2011;Manager](Citing_Micro-Manager)
-
-" %}

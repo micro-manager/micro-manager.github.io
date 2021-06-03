@@ -5,7 +5,7 @@ layout: page
 section: Downloads
 ---
 
-{% include Downloads_Sidebar text="" %} The Micro-Manager application is
+The Micro-Manager application is
 built automatically every night (if changes were made) on Windows and
 Mac. You can download those builds from the link below. Please be
 advised that these nightly builds are not fully tested, so only use them

@@ -195,5 +195,3 @@ Find some example scripts
 11. Y,B,A,X buttons
 
 {% include Listserv_Search text="AcquireMultipleRegions" %}
-
-{% include Documentation_Sidebar text="" %}

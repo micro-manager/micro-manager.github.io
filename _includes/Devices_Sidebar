@@ -1,7 +1,0 @@
-{% include Sidebar title='devices' content="
-
-* [Device Support](Device_Support)
-* [Building Micro&#x2011;Manager device adapters](Building_Micro-Manager_Device_Adapters)
-* [Free third-party tools for testing communications with hardware](Free_third-party_tools_for_testing_communications_with_hardware)
-
-" %}

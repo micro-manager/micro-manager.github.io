@@ -79,5 +79,3 @@ accomplish tasks that can not be executed within the GUI. Lastly, the
 μManager programming interface can be used from many different
 environments (including Matlab) to develop new applications, all using
 the same μManager microscope device control.
-
-{% include Main_Page_Sidebar text="" %}

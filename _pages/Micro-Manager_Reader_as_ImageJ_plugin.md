@@ -4,7 +4,7 @@ title: Micro-Manager Reader as ImageJ plugin
 layout: page
 ---
 
-{% include Downloads_Sidebar text="" %} With this ImageJ plugin you can
+With this ImageJ plugin you can
 read Micro-Manager acquistion files without the need to install
 Micro-Manager software. Copy the jar file below to your ImageJ plugins
 directory.

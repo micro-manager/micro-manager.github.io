@@ -47,5 +47,3 @@ The Github repository contains:
     [Python](https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Py)
 
 {% include Note text="For use with Micro-Manager 1.4, the baudrate must be changed within the firmware ([https://github.com/jdeschamps/MicroFPGA/blob/master/tutorials/changing_baudrate.md see tutorial]) as the default value is bigger than what the Micro-manager Hardware Wizard Configuration menu allows." %}
-
-{% include Devices_Sidebar text="" %}

@@ -71,7 +71,7 @@ svn co https://valelab4.ucsf.edu/svn/3rdpartypublic/
 
 This creates 2 new folders in the `mm` directory:
 
-``` 
+```
     ~/mm/micro-manager
     ~/mm/3rdpartypublic
 ```
@@ -84,7 +84,7 @@ Also, when retrieving large repository (like the 3rdpartypublic/
 repository), svn can hung in the middle of the process, with an error
 message:
 
-    svn: REPORT de '/svn/3rdpartypublic/!svn/vcc/default': 
+    svn: REPORT de '/svn/3rdpartypublic/!svn/vcc/default':
     Could not read chunk delimiter: Secure connection truncated (https://valelab4.ucsf.edu)
 
 This can be
@@ -172,5 +172,3 @@ start simply as:
 | Andor SDK 2/3                                 | N/A - request from Andor website |
 
 You need the following packages:
-
-{% include Programming_Sidebar text="" %}

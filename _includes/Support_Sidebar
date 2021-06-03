@@ -1,8 +1,0 @@
-{% include Sidebar title='support' content="
-
-* [Micro-Manager Community](Micro-Manager_Community)
-* [Contact](Contact)
-* [System Integrators](System_Integrators)
-* [Programming Services](Programming_Services)
-
-" %}
