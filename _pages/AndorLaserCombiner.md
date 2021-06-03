@@ -51,10 +51,10 @@ Pedro Almada, documentation fixes</p></td>
 In most cases the ALC will work "out of the box".
 
 But if you're setting up a brand new computer, continue on to
-[\#Configure ALC\_SDK
+[Configure ALC\_SDK
 dependencies](#Configure_ALC_SDK_dependencies "wikilink"), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the
-[\#Library installation for MM 1.4.15 and
+[Library installation for MM 1.4.15 and
 earlier](#Library_installation_for_MM_1.4.15_and_earlier "wikilink").
 
 ## Hardware-based Synchronization
@@ -213,7 +213,7 @@ Nanda.
 
 -   If you already have control of your ALC in another software, your
     ALC\_SDK installation is complete because all the Windows device
-    drivers would be installed. Otherwise continue on to [\#Configure
+    drivers would be installed. Otherwise continue on to [Configure
     ALC\_SDK dependencies](#Configure_ALC_SDK_dependencies "wikilink").
 
 ### Configure ALC\_SDK dependencies

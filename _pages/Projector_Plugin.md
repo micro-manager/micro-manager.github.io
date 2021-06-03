@@ -150,7 +150,7 @@ It's also possible to run multiple ROIs:
 
 1.  Click the ROI Manager button to display ImageJ's ROI Manager.
 2.  Draw an ROI, and press "Add." The ROI will be included in the list.
-    This is further detailed in [\#Drawing Multiple ImageJ
+    This is further detailed in [Drawing Multiple ImageJ
     ROIs](#Drawing_Multiple_ImageJ_ROIs "wikilink").
 3.  Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
 
@@ -191,7 +191,7 @@ other software packages, some differences are:
     drawing another ROI.
 2.  To change a ROI that has already been added to the ROI Manager list:
     -   Select the ROI. The easiest way to select a ROI is clicking on
-        the label as explained in the [\#tips](#tips "wikilink");
+        the label as explained in the [tips](#tips "wikilink");
         alternatively, select the entry in the ROI Manager list.
     -   Reshape the ROI with the square white handles, or to change the
         type of ROI, draw the new ROI.
