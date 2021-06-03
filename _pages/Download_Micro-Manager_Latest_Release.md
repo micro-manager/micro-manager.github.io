@@ -47,7 +47,7 @@ release.
 
 ## Micro-Manager 1.4.22 (August 14, 2015)
 
-Read the [Known Issues](#Known_issues_in_1.4.22 "wikilink").
+Read the [Known Issues](#known-issues-in-1.4.22 "wikilink").
 
 -   [Windows
     32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe),

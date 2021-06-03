@@ -130,7 +130,7 @@ CCDs appear as a single image in Micro-Manager. Use the
 [SplitView](SplitView "wikilink") plugin to display the two CCD images
 as an overlay. In the future, it will be possible to automatically apply
 the SplitView transformation to images acquired using [Multi-Dimensional
-Acquisition](Micro-Manager_User's_Guide#Multi-dimensional_acquisition "wikilink").
+Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition "wikilink").
 If you do not want the images to be acquired simultaneously, use
 property "ACTIVE VIEW INDEX" of the adapter. A setting of "0" will give
 you both images, setting "1" will give you only the image from one CCD,

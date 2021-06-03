@@ -36,7 +36,7 @@ Wizard (<span>**Tools \| Hardware Configuration Wizard**</span>), which
 will guide you, step-by-step, through the configuration process and
 generate a configuration file for you. The wizard will generate a text
 file that can be edited in a text editor. The syntax of this file is
-described [below](#Configuration_file_syntax "wikilink").
+described [below](#configuration-file-syntax "wikilink").
 
 
 
@@ -87,7 +87,7 @@ Figure 3. Example of Configuration Presets in the Main Micro-Manager
 window  
 Before setting up Configuration Presets, you should familiarize yourself
 with the [Device/Property
-Browser](Micro-Manager_User's_Guide#Exploring_devices:_Device/Property_Browser "wikilink").
+Browser](Micro-Manager_User's_Guide#exploring-devices:-device/property-browser "wikilink").
 It is also worthwhile to experiment with the Configuration Presets in
 the demo configuration.
 
@@ -139,7 +139,7 @@ the new Property.
 ## Core Properties
 
 In the [Device/Property
-Browser](Micro-Manager_User's_Guide#Exploring_devices:_Device/Property_Browser "wikilink")
+Browser](Micro-Manager_User's_Guide#exploring-devices:-device/property-browser "wikilink")
 you will find a list of properties of the Micro-Manager Core, such as
 core-camera, core-shutter etc. Micro-Manager can work with multiple
 cameras, shutters etc., however, commands will work only on the 'active'

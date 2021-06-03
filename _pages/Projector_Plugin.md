@@ -151,7 +151,7 @@ It's also possible to run multiple ROIs:
 1.  Click the ROI Manager button to display ImageJ's ROI Manager.
 2.  Draw an ROI, and press "Add." The ROI will be included in the list.
     This is further detailed in [Drawing Multiple ImageJ
-    ROIs](#Drawing_Multiple_ImageJ_ROIs "wikilink").
+    ROIs](#drawing-multiple-imagej-rois "wikilink").
 3.  Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
 
 Pressing "Run ROIs now!" is a good way to phototarget the specimen

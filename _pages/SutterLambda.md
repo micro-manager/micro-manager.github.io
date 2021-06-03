@@ -56,7 +56,7 @@ found [here](http://www.sutter.com/SOFTWARE/imaging.html))
 only works with an empty wheel). If speed `#1` does not work you can try
 the slowest (speed `#7` IIRC). Best practice is to [set the desired
 wheel speed during
-startup](Micro-Manager_Configuration_Guide#Startup_Presets "wikilink"),
+startup](Micro-Manager_Configuration_Guide#startup-presets "wikilink"),
 i.e. in your `Startup` Preset of the `System` Group.
 
 ### Lambda SC

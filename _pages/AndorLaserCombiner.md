@@ -52,10 +52,10 @@ In most cases the ALC will work "out of the box".
 
 But if you're setting up a brand new computer, continue on to
 [Configure ALC\_SDK
-dependencies](#Configure_ALC_SDK_dependencies "wikilink"), and for
+dependencies](#configure-alc-sdk-dependencies "wikilink"), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the
 [Library installation for MM 1.4.15 and
-earlier](#Library_installation_for_MM_1.4.15_and_earlier "wikilink").
+earlier](#library-installation-for-mm-1.4.15-and-earlier "wikilink").
 
 ## Hardware-based Synchronization
 
@@ -122,7 +122,7 @@ of `0.0` since a fast AOTF gates the laser output.
 | Description | Micro-Manager hangs during acquisition.                                                                 |
 |-------------|---------------------------------------------------------------------------------------------------------|
 | Cause       | Windows Vista and newer enable USB power saving, even in the "High Performance" power plan, by default. |
-| Fix         | [Disable Windows "USB selective suspend setting"](Personal_computer_setup#Power_Options "wikilink").    |
+| Fix         | [Disable Windows "USB selective suspend setting"](Personal_computer_setup#power-options "wikilink").    |
 
 ### Hang due to incorrect Prolific USB-Serial driver
 
@@ -205,7 +205,7 @@ Nanda.
 
 -   Unzip the `ALC_SDK Libraries` to a new folder and [add it to the
     Windows
-    PATH](Personal_computer_setup#Add_device_libraries_to_Windows_PATH "wikilink"):
+    PATH](Personal_computer_setup#add-device-libraries-to-windows-path "wikilink"):
 
 ```
          C:\ProgramData\Andor_ALC_library\
@@ -214,7 +214,7 @@ Nanda.
 -   If you already have control of your ALC in another software, your
     ALC\_SDK installation is complete because all the Windows device
     drivers would be installed. Otherwise continue on to [Configure
-    ALC\_SDK dependencies](#Configure_ALC_SDK_dependencies "wikilink").
+    ALC\_SDK dependencies](#configure-alc-sdk-dependencies "wikilink").
 
 ### Configure ALC\_SDK dependencies
 
