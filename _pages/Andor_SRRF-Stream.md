@@ -182,7 +182,7 @@ directly to disk. The default is None.
 
 These images cannot be displayed during acquisition, however, ImageJ
 will easily read this file format back in again. See [Opening .raw data
-files](#opening-.raw-data-files "wikilink") section.
+files](#opening-raw-data-files "wikilink") section.
 
 The images are placed in a Date and Time stamped folder to prevent
 overwriting  

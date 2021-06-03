@@ -357,7 +357,7 @@ Micro-manager supports the concept of the "parent" device (Hub) which
 exactly fits the description of the MyController. Designing and
 implementing multi-device libraries with Hub controller is described at
 lenngth in section [Complex device management: writing Hub
-adapters](#complex-device-management:-writing-hub-adapters "wikilink").
+adapters](#complex-device-management-writing-hub-adapters "wikilink").
 
 ### Application Layer Services (Core Callbacks)
 

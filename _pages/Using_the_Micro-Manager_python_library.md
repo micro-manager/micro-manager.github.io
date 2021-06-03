@@ -142,7 +142,7 @@ devices, suitable for learning purposes. Load DemoCamera:
 ### Property discovery
 
 Every device has
-[properties](Micro-Manager_User's_Guide#exploring-devices:-device.2fproperty-browser "wikilink")
+[properties](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink")
 - settings that let you control the device more precisely. Default
 values should be fine, but if you need something sophisticated, [this
 example](https://github.com/radioxoma/micromanager-samples/blob/master/mm_print_properties.py)

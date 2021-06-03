@@ -634,7 +634,7 @@ When you add your Andor camera in the Hardware Configuration Wizard, you
 should see a drop-down menu that allows you to select the camera serial
 number. If you do not see more than 1 serial number in the drop-down you
 should [make sure all your cameras are present in the Device
-Manager](#install-pci.2fe-driver "wikilink"). The screenshot below shows
+Manager](#install-pcie-driver "wikilink"). The screenshot below shows
 2 iXon USB cameras:
 
 ![Screenshot: Device Manager showing 2 iXon Ultra cameras
