@@ -3,7 +3,7 @@
       <div class="menu dockable">
         <div class="drag-handle"></div>
           {%- else -%}
-          <div id="main-menu" class="menu">
+          <div class="menu">
           {%- endif -%}
             <h3>μManager Documentation</h3>
             <ul>
