@@ -1,115 +1,126 @@
-{%- if include.dockable -%}
-<div id="main-menu" class="menu dockable">
-<div class="drag-handle"></div>
-{%- else -%}
-<div id="main-menu" class="menu">
-{%- endif -%}
-<h3>μManager Documentation</h3>
-<ul>
-<!-- News -->
-{% include menu-section title="News" link="/news/index" %}
-{% include menu-section-end %}
+{%- capture main-menu -%}
+      {%- if include.dockable -%}
+      <div class="menu dockable">
+        <div class="drag-handle"></div>
+          {%- else -%}
+          <div id="main-menu" class="menu">
+          {%- endif -%}
+            <h3>μManager Documentation</h3>
+            <ul>
+              <li><a href="/news/index">News</a></li>
+
 <!-- Downloads -->
 {% include menu-section title="Downloads" link="/Download_Micro-Manager_Latest_Release" %}
-  {% include menu-item title="Nightly Builds" link="/Micro-Manager_Nightly_Builds" %}
-  {% include menu-item title="Old Releases" link="/Micro-Manager_Version_Archive" %}
-  {% include menu-item title="Installation Notes" link="/Micro-Manager_Installation_Notes" %}
-  {% include menu-item title="Source Code" link="/Micro-Manager_Source_Code" %}
+  <li><a href="/Micro-Manager_Nightly_Builds">Nightly Builds</a></li>
+  <li><a href="/Micro-Manager_Version_Archive">Old Releases</a></li>
+  <li><a href="/Micro-Manager_Installation_Notes">Installation Notes</a></li>
+  <li><a href="/Micro-Manager_Source_Code">Source Code</a></li>
 {% include menu-section-end %}
 
 <!-- Version 2.0 -->
 {% include menu-section title="Version 2.0" link="/Version_2.0" %}
-  {% include menu-item title="User Guide" link="/Version_2.0_Users_Guide" %}
-  {% include menu-item title="API" link="/Version_2.0_API" %}
-  {% include menu-item title="API Transition Guide" link="/Version_2.0_API_Transition_Guide" %}
-  {% include menu-item title="API, How do I?" link="Version_2.0_API_How_do_I" %}
-  {% include menu-item title="Javadoc" link="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/" %}
-  {% include menu-item title="API Events" link="/Version_2.0_API_Events" %}
-  {% include menu-item title="Plugins" link="/Version_2.0_Plugins" %}
-  {% include menu-item title="Scripts" link="/Version_2.0_Scripts" %}
+  <li><a href="/Version_2.0_Users_Guide">User Guide</a></li>
+  <li><a href="/Version_2.0_API">API</a></li>
+  <li><a href="/Version_2.0_API_Transition_Guide">API Transition Guide</a></li>
+  <li><a href="Version_2.0_API_How_do_I">API, How do I?</a></li>
+  <li><a href="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/">Javadoc</a></li>
+  <li><a href="/Version_2.0_API_Events">API Events</a></li>
+  <li><a href="/Version_2.0_Plugins">Plugins</a></li>
+  <li><a href="/Version_2.0_Scripts">Scripts</a></li>
 {% include menu-section-end %}
 
 <!-- Overview -->
 {% include menu-section title="Overview" link="/Micro-Manager_Project_Overview" %}
-  {% include menu-item title="Why MicroManager?" link="/why_MicroManager" %}
-  {% include menu-item title="Who should use MicroManager" link="/Who_should_use_Micro-Manager" %}
+  <li><a href="/why_MicroManager">Why MicroManager?</a></li>
+  <li><a href="/Who_should_use_Micro-Manager">Who should use MicroManager</a></li>
 {% include menu-section-end %}
 
 <!-- User Documentation -->
 {% include menu-section title="User Documentation" link="/Overview_of_the_documentation" %}
-  {% include menu-item title="User Guide" link="/Micro-Manager_User's_Guide" %}
-  {% include menu-item title="Hardware Configuration Guide" link="/Micro-Manager_Configuration_Guide" %}
-  {% include menu-item title="Plugins" link="/Plugins" %}
-  {% include menu-item title="Tutorial (PDF)" link="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf" %}
-  {% include menu-item title="Advanced Methods" link="http://www.jbmethods.org/jbm/article/view/36/29" %}
-  {% include menu-item title="FAQ" link="/Micro-Manager_FAQ-new" %}
-  {% include menu-item title="More Help Topics" link="/More_Help_Topics" %}
-  {% include menu-item title="Video Screencasts" link="/Screencasts" %}
+  <li><a href="/Micro-Manager_User's_Guide">User Guide</a></li>
+  <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
+  <li><a href="/Plugins">Plugins</a></li>
+  <li><a href="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf">Tutorial (PDF)</a></li>
+  <li><a href="http://www.jbmethods.org/jbm/article/view/36/29">Advanced Methods</a></li>
+  <li><a href="/Micro-Manager_FAQ-new">FAQ</a></li>
+  <li><a href="/More_Help_Topics">More Help Topics</a></li>
+  <li><a href="/Screencasts">Video Screencasts</a></li>
 {% include menu-section-end %}
 
 <!-- Devices -->
 {% include menu-section title="Devices" link="/Device_Support" %}
-  {% include menu-item title="Building Micro&#x2011;Manager device adapters" link="/Building_Micro-Manager_Device_Adapters" %}
-  {% include menu-item title="Free third-party tools for testing communications with hardware" link="/Free_third-party_tools_for_testing_communications_with_hardware" %}
+  <li><a href="/Building_Micro-Manager_Device_Adapters">Building Micro&#x2011;Manager device adapters</a></li>
+  <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Free third-party tools for testing communications with hardware</a></li>
 {% include menu-section-end %}
 
 <!-- Programming -->
 {% include menu-section title="Programming" link="/Micro-Manager_Programming_Guide" %}
-  {% include menu-item title="Scripting (Beanshell)" link="/Script_Panel_GUI" %}
-  {% include menu-item title="Example Beanshell scripts" link="/Example_Beanshell_scripts" %}
-  {% include menu-item title="Writing Plugins" link="/Writing_plugins_for_Micro-Manager" %}
-  {% include menu-item title="Clojure" link="/Clojure" %}
-  {% include menu-item title="Python" link="/Using_the_Micro-Manager_python_library" %}
-  {% include menu-item title="Matlab" link="/Matlab" %}
-  {% include menu-item title="File Formats" link="/Micro-Manager_File_Formats" %}
-  {% include menu-item title="Search Paths" link="/Search_Paths" %}
-  {% include menu-item title="Writing Device Adapters" link="/Building_Micro-Manager_Device_Adapters" %}
-  {% include menu-item title="Building and Debugging Micro-Manager" link="/Building_and_debugging_Micro-Manager_source_code" %}
-  {% include menu-item title="Multi-D Acq. Programming" link="/Multi-Dimensional_Acquisition_Programming" %}
-  {% include menu-item title="Policies for inclusion of source code" link="/Policies_for_inclusion_of_source_code" %}
-  {% include menu-item title="Source code repository history and tickets" link="https://valelab.ucsf.edu/trac/micromanager/timeline" %}
-  {% include menu-item title="Clojure" link="/Clojure" %}
+  <li><a href="/Script_Panel_GUI">Scripting (Beanshell)</a></li>
+  <li><a href="/Example_Beanshell_scripts">Example Beanshell scripts</a></li>
+  <li><a href="/Writing_plugins_for_Micro-Manager">Writing Plugins</a></li>
+  <li><a href="/Clojure">Clojure</a></li>
+  <li><a href="/Using_the_Micro-Manager_python_library">Python</a></li>
+  <li><a href="/Matlab">Matlab</a></li>
+  <li><a href="/Micro-Manager_File_Formats">File Formats</a></li>
+  <li><a href="/Search_Paths">Search Paths</a></li>
+  <li><a href="/Building_Micro-Manager_Device_Adapters">Writing Device Adapters</a></li>
+  <li><a href="/Building_and_debugging_Micro-Manager_source_code">Building and Debugging Micro-Manager</a></li>
+  <li><a href="/Multi-Dimensional_Acquisition_Programming">Multi-D Acq. Programming</a></li>
+  <li><a href="/Policies_for_inclusion_of_source_code">Policies for inclusion of source code</a></li>
+  <li><a href="https://valelab.ucsf.edu/trac/micromanager/timeline">Source code repository history and tickets</a></li>
+  <li><a href="/Clojure">Clojure</a></li>
   {% include menu-section title="APIs" %}
-    {% include menu-item title="1.4 GUI API Java Reference (Java/Beanshell)" link="https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html" %}
-    {% include menu-item title="1.4 Core API Reference (Java/Beanshell/Matlab)" link="https://valelab4.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html" %}
-    {% include menu-item title="2.0-&gamma; GUI API Java Reference (Java/Beanshell)" link="https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html" %}
-    {% include menu-item title="2.0-&gamma;  Core API Reference (Java/Beanshell/Matlab" link="https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html" %}
-    {% include menu-item title="Core API Reference (C++)" link="https://valelab4.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html" %}
-    {% include menu-item title="Device API Reference (C++)" link="https://valelab4.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html" %}
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html">1.4 GUI API Java Reference (Java/Beanshell)</a></li>
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html">1.4 Core API Reference (Java/Beanshell/Matlab)</a></li>
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html">2.0-&gamma; GUI API Java Reference (Java/Beanshell)</a></li>
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html">2.0-&gamma;  Core API Reference (Java/Beanshell/Matlab</a></li>
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html">Core API Reference (C++)</a></li>
+    <li><a href="https://valelab4.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html">Device API Reference (C++)</a></li>
   {% include menu-section-end %}
 {% include menu-section-end %}
 
 <!-- Support -->
 {% include menu-section title="Support" link="/Micro-Manager_Community" %}
-  {% include menu-item title="Contact" link="/Contact" %}
-  {% include menu-item title="System Integrators" link="/System_Integrators" %}
-  {% include menu-item title="Programming Services" link="/Programming_Services" %}
+  <li><a href="/Contact">Contact</a></li>
+  <li><a href="/System_Integrators">System Integrators</a></li>
+  <li><a href="/Programming_Services">Programming Services</a></li>
   {% include menu-section title="Editing the Wiki" link="/editing/" %}
-    {% include menu-item title="Advanced editing" link="/editing/advanced" %}
-    {% include menu-item title="Citations" link="help/editing/citations" %}
-    {% include menu-item title="Source Code" link="/editing/code" %}
-    {% include menu-item title="Headers" link="/editing/headers" %}
-    {% include menu-item title="Icons" link="/editing/icons" %}
-    {% include menu-item title="Images" link="/editing/images" %}
-    {% include menu-item title="Keyboard Shortcuts" link="/editing/keys" %}
-    {% include menu-item title="Linking" link="/editing/linking" %}
-    {% include menu-item title="Math Expressions" link="/editing/math" %}
-    {% include menu-item title="Notices" link="/editing/notices" %}
-    {% include menu-item title="People" link="/editing/people" %}
-    {% include menu-item title="Pitfalls" link="/editing/pitfalls" %}
-    {% include menu-item title="Symbols" link="/editing/symbols" %}
-    {% include menu-item title="Tables" link="/editing/tables" %}
-    {% include menu-item title="Timelines" link="/editing/timelines" %}
-    {% include menu-item title="Videos" link="/editing/videos" %}
-    {% include menu-item title="Whitespace" link="/editing/whitespace" %}
+    <li><a href="/editing/advanced">Advanced editing</a></li>
+    <li><a href="help/editing/citations">Citations</a></li>
+    <li><a href="/editing/code">Source Code</a></li>
+    <li><a href="/editing/headers">Headers</a></li>
+    <li><a href="/editing/icons">Icons</a></li>
+    <li><a href="/editing/images">Images</a></li>
+    <li><a href="/editing/keys">Keyboard Shortcuts</a></li>
+    <li><a href="/editing/linking">Linking</a></li>
+    <li><a href="/editing/math">Math Expressions</a></li>
+    <li><a href="/editing/notices">Notices</a></li>
+    <li><a href="/editing/people">People</a></li>
+    <li><a href="/editing/pitfalls">Pitfalls</a></li>
+    <li><a href="/editing/symbols">Symbols</a></li>
+    <li><a href="/editing/tables">Tables</a></li>
+    <li><a href="/editing/timelines">Timelines</a></li>
+    <li><a href="/editing/videos">Videos</a></li>
+    <li><a href="/editing/whitespace">Whitespace</a></li>
     {% include menu-section-end %} <!-- Help/Editing the Wiki -->
 {% include menu-section-end %}
 
 <!-- Credits -->
 {% include menu-section title="Credits" link="/Credits" %}
-  {% include menu-item title="Papers citing MicroManager" link="/Papers_citing_Micro-Manager" %}
-  {% include menu-item title="How to cite MicroManager" link="/Citing_Micro-Manager" %}
+  <li><a href="/Papers_citing_Micro-Manager">Papers citing MicroManager</a></li>
+  <li><a href="/Citing_Micro-Manager">How to cite MicroManager</a></li>
 {% include menu-section-end %}
 
 </ul>
 </div>
+
+{%- endcapture -%}
+
+{%- capture page-link -%} <a href="{{page.url}}"> {%- endcapture -%}
+{%- assign page-link = page-link | replace: "/index", "" -%}
+{%- capture current-page -%} <a class="current-page"> {%- endcapture -%}
+{{ main-menu | replace: page-link, current-page }}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}
