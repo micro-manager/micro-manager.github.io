@@ -27,7 +27,7 @@ layout: home
             <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fas fa-wrench">Extend</a></li>
             <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fas fa-download">Download</a></li>
           </ul>
-          <h1>Why µMicromanager?</h1>
+          <h1>Why µManager?</h1>
         </header>
         </div>
     </div>
