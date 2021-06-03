@@ -409,9 +409,6 @@ PixelSize\_um,10x,1.0
 
 # Memory Settings
 
-<div id="MemorySettings">
-</div>
-
 It is often necessary to adjust memory settings in order to optimize
 Micro-Manager performance and prevent errors. Different parts of
 Micro-Manager use different types of memory that can be individually

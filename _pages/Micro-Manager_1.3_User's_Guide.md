@@ -356,8 +356,7 @@ Figure 7. Acquisition control dialog.
 
 After defining channels, slices and frames by using controls in the
 dialog, press the "Acquire" button. The acquisition starts immediately
-and an [Image
-Viewer](Micro-Manager_User's_Guide#image5d-viewer "wikilink") window
+and an [Image Viewer](#image5d-viewer "wikilink") window
 will open displaying the progress. During and after acquisition you can
 use buttons at the bottom of the Image5D window to play-back the
 sequence, browse channels, slices or frames, display metadata or save
@@ -378,8 +377,7 @@ be desirable to acquire certain channels at lower sampling rates, to
 reduce photo-toxicity and to save disk space. Clicking inside the
 'Color' column will open up a Color selector that lets you select the
 color to be used for that channel in the Image5D Viewer. (You can also
-change colors later on in the [Image
-Viewer](Micro-Manager_User's_Guide#image5d-viewer "wikilink").)
+change colors later on in the [Image Viewer](#image5d-viewer "wikilink").)
 
 **Z Slices** can either be set as relative to the current position (you
 will need to type in the start and end position) or as absolute
@@ -397,8 +395,8 @@ lapse mode will open Image5D viewers for each position
 
 Checking the **Use XY list** option will cause the acquisition to be
 executed at each position defined in the [Position
-List](Micro-Manager_User's_Guide#position-list-dialog "wikilink").
-[Autofocus](Micro-Manager_User's_Guide#autofocus "wikilink") options are
+List](#position-list-dialog "wikilink").
+[Autofocus](#autofocus "wikilink") options are
 described below. In the acquisition dialog, if the **Save files to
 acquisition directory** option is selected, images will be saved to disk
 continuously during the acquisition. If this option is not selected,
@@ -518,7 +516,7 @@ skipped between autofocus events.
 
 The Position List dialog can be reached from the menu (**Tools \| XY
 List**), and from the [Multi-dimensional
-Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition "wikilink")
+Acquisition](#multi-dimensional-acquisition "wikilink")
 window (button next to 'Use XY list'). The Position List is used to
 record the positions of stages in your system. At the bottom of the
 dialog is a list of available stage axes, any of which you can select to

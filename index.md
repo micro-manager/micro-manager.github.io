@@ -93,7 +93,7 @@ layout: home
               <li><a href="/Contact" class="button icon solid fas fa-bullhorn">Report a Bug</a></li>
           </ul>
           <ul class="actions special">
-              <li><a href="/Micro-Manager_Programming_Guide#APIs" class="button icon solid fas fa-terminal">Programming Guide</a></li>
+              <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fas fa-terminal">Programming Guide</a></li>
               <li><a href="https://javadoc.scijava.org/Micro-Manager-Studio/org/micromanager/api/MMPlugin.html" class="button icon solid fas fa-terminal">uManager API</a></li>
           </ul>
 

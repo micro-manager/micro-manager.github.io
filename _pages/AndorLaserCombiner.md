@@ -52,7 +52,7 @@ In most cases the ALC will work "out of the box".
 
 But if you're setting up a brand new computer, continue on to
 [Configure ALC\_SDK
-dependencies](#configure-alc-sdk-dependencies "wikilink"), and for
+dependencies](#configure-alc_sdk-dependencies "wikilink"), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the
 [Library installation for MM 1.4.15 and
 earlier](#library-installation-for-mm-1415-and-earlier "wikilink").
@@ -148,7 +148,7 @@ of `0.0` since a fast AOTF gates the laser output.
 <td><ol>
 <li>Install Prolific driver <a href="media/PL2303_DriverInstaller_v1413_20110219.gz" title="wikilink">version 2.0.13.130</a></li>
 <li>Disable Microsoft server driver installation. When Windows says it's searching for drivers, it fetches them from the Microsoft server. Turn off this driver updating behavior because if e.g. the USB bus glitches for whatever reason it will try to reinstall the buggy version 3 drivers (you have to do this step even if you have Windows updates disabled) via the Start menu &gt; (Type in the "Search programs and files" box) change dev &gt; Change device installation settings &gt; No, Let me choose what to do &gt; Never install driver from Windows Update</li>
-<li>In your Device Manager, right-click on the Prolific ports and check the driver version. The good version is 2.0.13.130. Most likely you will see something like 3.4.48.272. Right-click on the Prolfic entry in the Device Manager &gt; Uninstall &gt; Delete the driver software for this device &gt; OK. Repeat for all Prolific COM20x ports. Then to pick up the next available driver in Windows, in the Device Manager click Action &gt; Scan for hardware changes). Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver. You will then need to reassign the COM ports to 20x which is detailed in <a href="AndorLaserCombiner#Configure_ALC_SDK_dependencies" title="wikilink">AndorLaserCombiner#Configure_ALC_SDK_dependencies</a>.</li>
+<li>In your Device Manager, right-click on the Prolific ports and check the driver version. The good version is 2.0.13.130. Most likely you will see something like 3.4.48.272. Right-click on the Prolfic entry in the Device Manager &gt; Uninstall &gt; Delete the driver software for this device &gt; OK. Repeat for all Prolific COM20x ports. Then to pick up the next available driver in Windows, in the Device Manager click Action &gt; Scan for hardware changes). Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver. You will then need to reassign the COM ports to 20x which is detailed in <a href="#configure-alc_sdk-dependencies" title="wikilink">Configure ALC_SDK dependencies</a>.</li>
 </ol>
 <p>{% include Note text="Andor's ALCs have since switched to using FTDI USB-serial convertors because Prolific considers the PL-2303 an obsolete product and Prolific won't fix the issue with Microsoft distributing faulty drivers." %}</p></td>
 </tr>
@@ -214,7 +214,7 @@ Nanda.
 -   If you already have control of your ALC in another software, your
     ALC\_SDK installation is complete because all the Windows device
     drivers would be installed. Otherwise continue on to [Configure
-    ALC\_SDK dependencies](#configure-alc-sdk-dependencies "wikilink").
+    ALC\_SDK dependencies](#configure-alc_sdk-dependencies "wikilink").
 
 ### Configure ALC\_SDK dependencies
 

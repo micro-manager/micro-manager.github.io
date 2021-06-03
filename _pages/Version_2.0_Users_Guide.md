@@ -98,7 +98,7 @@ Please see [Linux installation from source
 
 It is often necessary to adjust memory settings in order to optimize
 Micro-Manager performance and prevent errors. See the [Configuration
-Guide](Micro-Manager_Configuration_Guide#memorysettings "wikilink") for
+Guide](Micro-Manager_Configuration_Guide#memory-settings "wikilink") for
 guidelines.
 
 ## Getting Started
@@ -142,8 +142,7 @@ lists all of the contributors and licenses that went into making
 
 ### The µManager Main Window
 
-<div id="Main Window">
-</div>
+#### Main Window
 
 The main window in µManager provides access to many important
 capabilities.
@@ -375,8 +374,7 @@ Both window types have the following generic buttons:
 3.  Save: Save this dataset to disk
 4.  Settings: access miscellaneous settings:
 
-<div id="Image Window Settings">
-</div>
+### Image Window Settings
 
 ![Image Window
 Settings](media/UsersGuide_imageWindowSettings.png "Image Window Settings")
@@ -496,8 +494,7 @@ channel.
 
 #### Global Histogram Controls
 
-<div id="Histogram Gear Menu">
-</div>
+##### Histogram Gear Menu
 
 -   Gear menu (located in the "Histograms and Settings" header):
 
@@ -579,8 +576,7 @@ subtle variations in image intensities.
 In addition to these abilities, the histogram provides the following
 other details:
 
-<div id="Channel Colors">
-</div>
+#### Channel Colors
 
 ![Single histogram name and
 color](media/UsersGuide_histogramName.png "Single histogram name and color")
@@ -609,8 +605,7 @@ of intensities. The "Camera Depth" option (usually selected by default)
 will automatically set the scale to cover from 0 to the maximum
 intensity that your camera is capable of providing.
 
-<div id="Image Statistics">
-</div>
+#### Image Statistics
 
 ![Histogram
 statistics](media/UsersGuide_histogramStats.png "Histogram statistics")
@@ -638,8 +633,7 @@ checkbox.
 
 ### Comments
 
-<div id="Comments Panel">
-</div>
+#### Comments Panel
 
 ![Comments Panel](media/UsersGuide_commentsPanel.png "Comments Panel")
 
@@ -794,8 +788,7 @@ bleaching.
 
 ### Multiple Positions (XY)
 
-<div id="MDA Stage Positions">
-</div>
+#### MDA Stage Positions
 
 ![MDA Positions](media/UsersGuide_mdaPositions.png "MDA Positions")
 
@@ -972,8 +965,7 @@ certain to click on the "Save" button at the top-right of the config
 group panel, so that your config groups will be available the next time
 you run µManager.
 
-<div id="LabelState">
-</div>
+### LabelState
 
 A special note: many filter devices have both a "State" and a "Label"
 property. Typically the "State" is a numerical value indicating the
@@ -1272,7 +1264,7 @@ allows you to configure various aspects of µManager.
 -   The Sequence Buffer Size determines how much RAM is allocated to
     transient image storage when performing acquisitions. See the
     [Configuration
-    Guide](Micro-Manager_Configuration_Guide#memorysettings "wikilink")
+    Guide](Micro-Manager_Configuration_Guide#memory-settings "wikilink")
     for more information.
 
 <!-- -->
