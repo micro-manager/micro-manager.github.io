@@ -1,0 +1,536 @@
+// Multi-Region Multi-Dimensional acquisition script
+//5D Acquisition * 4 Fields of View 
+//20D Acquisition
+// Saumya Saurabh, 11 October 2010
+//Ph.D. Student (Chemistry), Bruchez Lab, 
+//Molecular Biosensor and Imaging Center, Carnegie Mellon University
+//e-mail: ssaurabh@andrew.cmu.edu
+
+//This script will help you capture 4 different fields of view on the same sample, seuentially
+//You will need a piezo stage for moving the sample across
+//The movement parameters are in microns
+
+import org.micromanager.api.AcquisitionOptions;
+
+// clear all previous acquisitions
+
+gui.closeAllAcquisitions();
+gui.clearMessageWindow();
+
+
+gui.message("Program For Multi-Dimensional Acquisition with 4 different fields of view");
+gui.message("Region 1 is control Region which is acquired once in Tasks 0, 2, 4 and 6");
+gui.message("Region 2 is acquired in Task1, Region 3 in Task 3 and Region 4 in Task5");
+gui.message("You have the flexibilty to change the number of frames or acquisition channels ");
+
+
+//Initiating Task 0
+// file locations
+
+acqName = "test-acq-col-0";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+double initXpos = 0.000;
+double initYpos = 0.000;
+double initZpos = 0.000;
+
+
+gui.message(xyStage);
+gui.message(zStage);
+
+mmc.setXYPosition(xyStage,initXpos,initYpos);
+mmc.setPosition(zStage,initZpos);
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 1;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task0:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task0
+
+
+//
+//Initiating Task 1
+// file locations
+
+acqName = "test-acq-col-1";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos1;
+double ypos1;
+
+xpos1 = initXpos + 0 ;
+ypos1 = initYpos + 10 ;
+
+  mmc.setXYPosition(xyStage,xpos1,ypos1);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task1 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 600;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task1:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task1
+
+
+
+//Initiating Task 2
+// file locations
+
+acqName = "test-acq-col-2";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos2;
+double ypos2;
+
+xpos2 = initXpos + 0 ;
+ypos2 = initYpos + 0 ;
+
+  mmc.setXYPosition(xyStage,xpos2,ypos2);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task2 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 600;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task2:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task2
+
+//
+
+//Initiating Task 3
+// file locations
+
+acqName = "test-acq-col-3";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos3;
+double ypos3;
+
+xpos3 = initXpos + 10 ;
+ypos3 = initYpos + 10 ;
+
+  mmc.setXYPosition(xyStage,xpos3,ypos3);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task3 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 600;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task3:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task3
+
+//
+//
+//Initiating Task 4
+// file locations
+
+acqName = "test-acq-col-4";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos4;
+double ypos4;
+
+xpos4 = initXpos + 0 ;
+ypos4 = initYpos + 0 ;
+
+  mmc.setXYPosition(xyStage,xpos4,ypos4);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task4 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 1;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task4:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task4
+
+//
+//
+//
+//Initiating Task 5
+// file locations
+
+acqName = "test-acq-col-5";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos5;
+double ypos5;
+
+xpos5 = initXpos + 10 ;
+ypos5 = initYpos + 0 ;
+
+  mmc.setXYPosition(xyStage,xpos5,ypos5);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task5 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 600;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task5:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task5
+
+//
+//
+//
+//Initiating Task 6
+// file locations
+
+acqName = "test-acq-col-6";
+rootDirName = "C:/acquisitionData";
+
+// parameters for stage movement
+
+xyStage = mmc.getXYStageDevice();
+zStage = mmc.getFocusDevice();
+
+
+gui.message(xyStage);
+gui.message(zStage);
+double xpos6;
+double ypos6;
+
+xpos6 = initXpos + 0 ;
+ypos6 = initYpos + 0 ;
+
+  mmc.setXYPosition(xyStage,xpos6,ypos6);
+
+
+ XmPos = mmc.getXPosition(xyStage);
+ YmPos = mmc.getYPosition(xyStage);
+ ZmPos = mmc.getPosition(zStage);
+
+// gui.message("Measured Coordinate (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+
+
+XmPos = mmc.getXPosition(xyStage);
+YmPos = mmc.getYPosition(xyStage);
+ZmPos = mmc.getPosition(zStage);
+
+gui.message("Initial measured Coordinate before Task6 (X,Y,Z):("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+
+// parameters for acquisition
+numFrames = 1;
+String[] channels = {"DAPI", "GFP", "Cy5"};
+Color[] colors = {Color.BLUE, Color.GREEN, Color.RED};
+int[] exposures = {100, 100, 100};
+numSlices = 1;
+intervalMs = 1000;
+channelGroup = "Channel";
+
+// create acquisition and set options
+gui.openAcquisition(acqName, rootDirName, numFrames, channels.length, numSlices);
+for (int i=0; i<colors.length; i++)
+   gui.setChannelColor(acqName, i, colors[i]);
+for (int i=0; i<channels.length; i++)
+   gui.setChannelName(acqName, i, channels[i]);
+
+j=2;
+
+for (int i=0; i<numFrames; i++) {
+      gui.message("Acquiring frame " + i + ", channel " + channels[j] + ".");
+      mmc.setExposure(exposures[j]);
+      mmc.setConfig(channelGroup, channels[j]);
+      mmc.waitForConfig(channelGroup, channels[j]);
+      gui.snapAndAddImage(acqName, i, j, 0);
+   }
+   
+   // set channel contrast based on the first frame
+   if (i==0) {
+      gui.setContrastBasedOnFrame(acqName, i, 0);
+   }
+   gui.sleep(intervalMs);
+
+gui.message("Measured Coordinate (X,Y,Z)at the end of Task6:("+XmPos +" , "+YmPos + " , " +ZmPos +" )");
+//End of Task6

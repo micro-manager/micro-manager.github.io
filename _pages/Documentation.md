@@ -105,10 +105,10 @@ and/or rapidly changing.
         Takes only one image, can be useful as a control before starting
         a whole acquisition with main beanshell above (J. Husson).
 
-![](MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh "fig:MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh")
+[MultiROI_MultiD_Acquisition](media/MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh)
 - Beanshell script for acquiring stacks in 3 different channels and at 4
-different fields of view. COntributed by Saumya
-Saurabh<http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya>
+different fields of view. Contributed by [Saumya
+Saurabh](http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya)
 
 -   *Building and Coding Micro-Manager (for developers)*
     -   [Building Boost on MacOS
