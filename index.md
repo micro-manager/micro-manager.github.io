@@ -7,7 +7,7 @@ layout: home
 {::nomarkdown}
     <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
-            <img src="images/logo/umanager-logo.png" alt="MicroManager Logo">
+            <img src="media/logo/umanager-logo.png" alt="MicroManager Logo">
             <ul class="actions special">
             <li><a href="#one" class="button scrolly">Get Started</a></li>
         </ul>
