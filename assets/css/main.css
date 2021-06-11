@@ -1376,7 +1376,7 @@ button:disabled,
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("../../images/site/overlay6.png");
+			background-image: url("../../media/site/overlay6.png");
 			background-size: auto,							cover;
 			width: 50%;
 			position: relative;
@@ -1467,7 +1467,7 @@ button:disabled,
 				background-color: #2f7286;
 				color: rgba(255, 255, 255, 0.75);
 				background-attachment: fixed,							fixed;
-				background-image: url("../../images/site/overlay9.png");
+				background-image: url("../../media/site/overlay9.png");
 				background-size: auto,							cover;
 				width: 50%;
 				position: relative;
