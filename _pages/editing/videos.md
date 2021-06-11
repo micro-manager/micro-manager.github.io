@@ -1,7 +1,7 @@
 ---
 title: Videos
 layout: page
-section: Help:Editing the Wiki
+section: Support:Editing the Wiki
 description: This page demonstrates how to embed videos on a page.
 nav-links: true
 ---

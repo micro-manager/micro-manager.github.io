@@ -1,7 +1,7 @@
 ---
 title: Whitespace
 layout: page
-section: Help:Editing the Wiki
+section: Support:Editing the Wiki
 nav-links: true
 ---
 
