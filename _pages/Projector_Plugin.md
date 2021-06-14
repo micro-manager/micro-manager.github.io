@@ -187,7 +187,7 @@ other software packages, some differences are:
 
 1.  Only a single ROI can be drawn at a time. Drawing another ROI erases
     the current drawing, and so one must click the
-    {% include Key text="Add [t]" %} button in the ROI Manager before
+    {% include key key="Add [t]" %} button in the ROI Manager before
     drawing another ROI.
 2.  To change a ROI that has already been added to the ROI Manager list:
     -   Select the ROI. The easiest way to select a ROI is clicking on
@@ -195,11 +195,11 @@ other software packages, some differences are:
         alternatively, select the entry in the ROI Manager list.
     -   Reshape the ROI with the square white handles, or to change the
         type of ROI, draw the new ROI.
-    -   Click {% include Key text="Update" %}.
+    -   Click {% include key key="Update" %}.
 
 ### Tips
 
-1.  Delete all ROIs by double-clicking the {% include Key text="Delete" %}
+1.  Delete all ROIs by double-clicking the {% include key key="Delete" %}
     button.
 2.  Visually select a ROI by clicking the ROI's center label number in
     the image. You will need to enable both the "Show All" and "Labels"
