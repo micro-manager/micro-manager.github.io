@@ -2,19 +2,19 @@
 <html>
 	<head>
 		<title>{{page.title}}</title>
-		{% include html-head %}
+		{% include layout/html-head %}
 		<link rel="stylesheet" href="/assets/css/page.css" />
 	</head>
 	<body class="is-preload">
 		<!-- Top bar -->
-		{% include top-bar %}
+		{% include layout/top-bar %}
 
 		<!-- Page-info -->
-		{% include page-info %}
+		{% include layout/page-info %}
 
 		<section id="left-column" class="sidebar dock">
 			<!-- Menu -->
-			{% include main-menu dockable=true %}
+			{% include layout/menu dockable=true %}
 		</section>
 
 		<!-- Page title -->
@@ -47,19 +47,19 @@
 		</section>
 
 		<!-- Footer -->
-		{% include footer %}
+		{% include layout/footer %}
 
 		<!-- Hamburger menu -->
-		{% include hamburger-menu %}
+		{% include layout/hamburger-menu %}
 
 		<div id="dock-overlay-left" class="dock-overlay" data-dock-target="left-column"></div>
 		<div id="dock-overlay-right" class="dock-overlay" data-dock-target="right-column"></div>
 
 		<!-- Search results -->
-		{% include search-results %}
+		{% include layout/search-results %}
 
 		<!-- Scripts -->
-		{% include base-scripts %}
+		{% include layout/scripts %}
 
 	</body>
 </html>
