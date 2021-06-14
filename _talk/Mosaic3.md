@@ -78,13 +78,13 @@ OK.
 
 | Micro-Manager                                | Andor iQ                                       | MDC MetaMorph                                                                      |
 |----------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------|
-| {% include Key text="On" %}                     | \-                                             | {% include Key text="Pulse Latest Mask" %}                                            |
-| {% include Key text="Off" %}                    | {% include Key text="Reset" %} under Settings tab | {% include Key text="Activate Black" %}                                               |
-| {% include Key text="Show Center Spot" %}       | \-                                             | {% include Key text="Activate Test Mask" %} + {% include Key text="Pulse Latest Mask" %} |
-| {% include Key text="All Pixels" %}             | \-                                             | {% include Key text="Activate White" %} + {% include Key text="Pulse Latest Mask" %}     |
-| (use [script](Mosaic3#scripting "wikilink")) | {% include Key text="Test Mask" %}                | {% include Key text="Activate Test Mask" %}                                           |
-| \-                                           | {% include Key text="White Mask" %}               | {% include Key text="Activate White" %}                                               |
-| \-                                           | \-                                             | {% include Key text="Activate Latest Mask" %}                                         |
+| {% include key key="On" %}                     | \-                                             | {% include key key="Pulse Latest Mask" %}                                            |
+| {% include key key="Off" %}                    | {% include key key="Reset" %} under Settings tab | {% include key key="Activate Black" %}                                               |
+| {% include key key="Show Center Spot" %}       | \-                                             | {% include key key="Activate Test Mask" %} + {% include key key="Pulse Latest Mask" %} |
+| {% include key key="All Pixels" %}             | \-                                             | {% include key key="Activate White" %} + {% include key key="Pulse Latest Mask" %}     |
+| (use [script](Mosaic3#scripting "wikilink")) | {% include key key="Test Mask" %}                | {% include key key="Activate Test Mask" %}                                           |
+| \-                                           | {% include key key="White Mask" %}               | {% include key key="Activate White" %}                                               |
+| \-                                           | \-                                             | {% include key key="Activate Latest Mask" %}                                         |
 
 Button nomenclature used in Projector plugin compared to other software
 
@@ -105,18 +105,18 @@ circle ROI and the size and shape cannot be customized.
     checkboxes in the `ROI Manager`.
 -   When saving ROIs using `More > Save...`, the highlight selections
     are important; only those ROIs that are highlighted are saved. So to
-    save all, one must first {% include Key text="Ctrl" %}+ or
-    {% include Key text="Shift" %}+select all ROIs. Individual ROIs get
+    save all, one must first {% include key key="Ctrl" %}+ or
+    {% include key key="Shift" %}+select all ROIs. Individual ROIs get
     saved as .roi files and multiple rois as .zip files.
 
 ### Mosaic Alignment
 
 -   To focus the Mosaic epi port focus and DMD lenses:
     -   Set a very long exposure time (say, the maximum, 200 seconds),
-        and click on {% include Key text="All Pixels" %} (see Figure A).
+        and click on {% include key key="All Pixels" %} (see Figure A).
         The long exposure time is needed since there does not appear to
         be a way to leave a Mask image continuously on; even the
-        {% include Key text="On" %} button pulses the image for the
+        {% include key key="On" %} button pulses the image for the
         duration of `Mosaic3-Exposure`.
     -   Close down the Mosaic field diaphram (Figure C) and focus the
         Mosaic epi port lens:
@@ -129,8 +129,8 @@ circle ROI and the size and shape cannot be customized.
         script](Mosaic3#scripting "wikilink") is especially helpful
         here, with a quadrant mask image (Figure D).
 
-![(A, B) Using {% include Key text="All Pixels" %} and
-{% include Key text="Center Sport" %} buttons, respectively, in Setup tab
+![(A, B) Using {% include key key="All Pixels" %} and
+{% include key key="Center Sport" %} buttons, respectively, in Setup tab
 of Projector plugin. (C) Epi port focused by closing field diaphram. (D)
 DMD focus using test
 mask.](media/FullResolution_fig_mosic3_cal.png "(A, B) Using  and  buttons, respectively, in Setup tab of Projector plugin. (C) Epi port focused by closing field diaphram. (D) DMD focus using test mask.")
