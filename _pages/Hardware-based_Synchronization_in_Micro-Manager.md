@@ -121,12 +121,10 @@ images, or 2 channels x 5 slices) was 500 msec. To produce a youtube
 movie, a maximum intensity projection in each channel was carried out in
 post-processing:
 
-&lt;INCLUDE \#ev:youtubehd text="O8zdsyNoOg8\|500\|center😎"&gt;
-
+{% include video platform="youtube" id="O8zdsyNoOg8" %}
 ### Tutorials
 
 -   [Step-by-step to controlling multiple light sources and a z-stage
     piezo for sequenceable
     MDA](https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md)
     by Guillaume Witz & Thomas Julou.
-
