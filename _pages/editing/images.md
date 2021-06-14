@@ -1,13 +1,12 @@
 ---
 title: Images
-layout: page
-section: Support:Editing the Wiki
+section: Contribute:Editing the Wiki
 nav-links: true
 ---
 
-This page explains how to add images to your page.
+This page explains how to use the `img` include tag.
 
-# Images
+We encourage the uploading of images used in your pages to assure the future integrity of the wiki. For external images (e.g. if the file is too large for GitHub) we recommend using [markdown](/editing/#markdown).
 
 ## Uploading an Image
 
@@ -19,85 +18,54 @@ Once your image has been uploaded, you can follow the usage instructions below t
 
 Images can be added to your page by including `img` and the path to your image. Optionally a name can be specified as well. For example :
 
-{% raw %}
-```
-{% include img name="spirals" src="/media/help/spirals.png" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img name="spirals" src="/media/spirals.png" %}
+{% endraw %}{% endhighlight %}
 
-{% include img name="spirals" src="/media/help/spirals.png" %}
+{% include img name="spirals" src="/media/spirals.png" %}
 
 **N.B.** for any file in `/media`, the prefix is optional:
 
-{% raw %}
-```
-{% include img name="spirals" src="help/spirals.png" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img name="spirals" src="spirals" %}
+{% endraw %}{% endhighlight %}
 
-{% include img name="spirals" src="help/spirals.png" %}
+{% include img name="spirals" src="spirals" %}
+
+The file extension is also optional if the filename ends in .svg, .png, .gif, or .jpg.
 
 ## Options
 
 ### Classes
 
-CSS classes can be explicitly specified with the `classes` parameter:
+CSS classes can be explicitly specified with the `class` parameter:
 
-{% raw %}
-```
-{% include img name="spirals" src="/media/help/spirals.png" classes="thumbnail" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img name="spirals" src="spirals" class="box" %}
+{% endraw %}{% endhighlight %}
 
-{% include img name="spirals" src="/media/help/spirals.png" classes="thumbnail" %}
-
-Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
-
-Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
-
-Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
-
-Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
+{% include img name="spirals" src="spirals" class="box" %}
 
 ### Width
 
 Image width can be manually controlled with the `width` parameter:
 
-{% raw %}
-```
-{% include img name="spirals" src="/media/help/spirals.png" width="50px" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img name="spirals" src="spirals" width="50px" %}
+{% endraw %}{% endhighlight %}
 
-{% include img name="spirals" src="/media/help/spirals.png" width="50px" %}
+{% include img name="spirals" src="spirals" width="50px" %}
 
 ### Alignment
 
-Optionally, an alignment specification can be added (_i.e._ `align="left"`, `align="right"`, `align="center"` or `align="fit"`)
+Optionally, an alignment specification can be added with
+`align="left"`, `align="right"`, `align="center"` or `align="fit"`.
 
-{% raw %}
-```
-{% include img align="left" name="spirals" src="/media/help/spirals.png" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img align="left" name="spirals" src="spirals" %}
+{% endraw %}{% endhighlight %}
 
-{% include img align="left" name="spirals" src="/media/help/spirals.png" %}
-
-Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
-
-Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
-
-Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
-
-Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
-
-{% raw %}
-```
-{% include img align="right" name="spirals" src="/media/help/spirals.png" %}
-```
-{% endraw %}
-
-{% include img align="right" name="spirals" src="/media/help/spirals.png" %}
+{% include img align="left" name="spirals" src="spirals" %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -107,23 +75,33 @@ Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no
 
 Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
 
-{% raw %}
-```
-{% include img align="center" name="spirals" src="/media/help/spirals.png" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img align="right" name="spirals" src="spirals" %}
+{% endraw %}{% endhighlight %}
 
-{% include img align="center" name="spirals" src="/media/help/spirals.png" %}
+{% include img align="right" name="spirals" src="spirals" %}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+Aliquam gravida maximus quam. Cras eu ornare sapien, ac tempor orci.
+
+{% highlight liquid %}{% raw %}
+{% include img align="center" name="spirals" src="spirals" %}
+{% endraw %}{% endhighlight %}
+
+{% include img align="center" name="spirals" src="spirals" %}
 
 Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
 
-{% raw %}
-```
-{% include img align="fit" name="spirals" src="/media/help/spirals.png" %}
-```
-{% endraw %}
+{% highlight liquid %}{% raw %}
+{% include img align="fit" name="spirals" src="spirals" %}
+{% endraw %}{% endhighlight %}
 
-{% include img align="fit" name="spirals" src="/media/help/spirals.png" %}
+{% include img align="fit" name="spirals" src="spirals" %}
 
 Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
 
@@ -137,19 +115,11 @@ Images can be added with an accompanying legend text by including `figure` follo
 
 ## Example 1
 
-{% raw %}
-```
-{% include img align="left" name="spiral left" src="/media/help/spirals.png" caption="**Figure 1**: This is a left figure." %}
+{% highlight liquid %}{% raw %}
+{% include img align="left" name="spiral left" src="spirals" caption="**Figure 1**: This is a left figure." %}
+{% endraw %}{% endhighlight %}
 
-```
-{% endraw %}
-
-<figure style="float: left">
-{% include img name="spiral" src="help/spirals" %}
-<figcaption markdown=1>
-**Figure 1**: This is a left figure.
-</figcaption>
-</figure>
+{% include img align="left" name="spiral left" src="spirals" caption="**Figure 1**: This is a left figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -167,11 +137,11 @@ Or to the right of the text.
 
 {% raw %}
 ```
-{% include img align="right" name="spiral right" src="/media/help/spirals.png" caption="**Figure 2** : This is a right figure." %}
+{% include img align="right" name="spiral right" src="spirals" caption="**Figure 2** : This is a right figure." %}
 ```
 {% endraw %}
 
-{% include img align="right" name="spiral right" src="/media/help/spirals.png" caption="**Figure 2** : This is a right figure." %}
+{% include img align="right" name="spiral right" src="spirals" caption="**Figure 2** : This is a right figure." %}
 
 Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
 
@@ -189,12 +159,12 @@ Or centered.
 
 {% raw %}
 ```
-{% include img align="center" name="spiral center" src="/media/help/spirals.png" caption="**Figure 1**: This is a centered figure." %}
+{% include img align="center" name="spiral center" src="spirals" caption="**Figure 1**: This is a centered figure." %}
 
 ```
 {% endraw %}
 
-{% include img align="center" name="spiral center" src="/media/help/spirals.png" caption="**Figure 1**: This is a centered figure." %}
+{% include img align="center" name="spiral center" src="spirals" caption="**Figure 1**: This is a centered figure." %}
 
 # Image Galleries
 
@@ -204,10 +174,10 @@ Or centered.
 ```
 {% include gallery content=
 "
-/media/site/pic01.jpg | Example 1
-/media/site/pic02.jpg | Example 2
-/media/site/pic03.jpg | Example 3
-/media/site/pic04.jpg | Example 4
+/media/editing/pic01.jpg | Example 1
+/media/editing/pic02.jpg | Example 2
+/media/editing/pic03.jpg | Example 3
+/media/editing/pic04.jpg | Example 4
 /media/icons/imagej.png | ImageJ!
 "
 %}
@@ -216,10 +186,10 @@ Or centered.
 
 {% include gallery content=
 "
-/media/site/pic01.jpg | Example 1
-/media/site/pic02.jpg | Example 2
-/media/site/pic03.jpg | Example 3
-/media/site/pic04.jpg | Example 4
+/media/editing/pic01.jpg | Example 1
+/media/editing/pic02.jpg | Example 2
+/media/editing/pic03.jpg | Example 3
+/media/editing/pic04.jpg | Example 4
 /media/icons/imagej.png | ImageJ!
 "
 %}
