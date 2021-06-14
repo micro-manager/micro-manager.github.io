@@ -7,21 +7,21 @@ section: User Documentation
 
 # Getting Started With Micro-Manager
 
-{% include youtube.html id="y-R9WmhzPdI" %}
+{% include video platform="youtube" id="y-R9WmhzPdI" %}
 
 
 
 # Multi-Dimensional Acquisition
 
-{% include youtube.html id="6LoKX6Eect0" %}
+{% include video platform="youtube" id="6LoKX6Eect0" %}
 
 
 
 # Setting Groups and Presets
 
-{% include youtube.html id="FGDAktrCMZw" %}
+{% include video platform="youtube" id="FGDAktrCMZw" %}
 
 # Hardware Configuration Wizard
 
-{% include youtube.html id="fcqgQGi1kCk" %}
+{% include video platform="youtube" id="fcqgQGi1kCk" %}
 

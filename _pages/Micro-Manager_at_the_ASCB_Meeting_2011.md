@@ -50,7 +50,7 @@ Explorer plugin.
 
 |                                                                 |                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| &lt;INCLUDE \#ev:youtubehd text="O8zdsyNoOg8\|300\|center😎"&gt; | <font size=-1>Movie acquired during the ASCB meeting. Drosophila S2 cell expressing GFP-histone 2B and Cherry-tubulin. Images were taken at 15 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 50 msec, total time to acquire a single time point (10 images) was 500 msec. </font> |
+| {% include video platform="youtube" id="O8zdsyNoOg8" %} | <font size=-1>Movie acquired during the ASCB meeting. Drosophila S2 cell expressing GFP-histone 2B and Cherry-tubulin. Images were taken at 15 second intervals. At each time point, a z-stack of 5 slices (with 2 micron intervals) was acquired. Exposure time was 50 msec, total time to acquire a single time point (10 images) was 500 msec. </font> |
 
 We were very encouraged by the interest and very positive responses both
 from the user community and from the industry. On the ASCB exhibit floor
@@ -71,4 +71,3 @@ and take down.
 `text="url=`[`http://valelab.ucsf.edu/~MM/flashgallery/flashgallery.html`](http://valelab.ucsf.edu/~MM/flashgallery/flashgallery.html)
 
 \|width=633\|height=430 \|border=8 😎"&gt;
-
