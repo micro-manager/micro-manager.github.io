@@ -4,7 +4,7 @@ layout: home
 ---
 
 <!-- Header -->
-{::nomarkdown}
+
     <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
             <img src="media/logo/umanager-logo.png" alt="MicroManager Logo">
@@ -12,7 +12,7 @@ layout: home
             <li><a href="#one" class="button scrolly">Get Started</a></li>
         </ul>
     </section>
-{:/}
+
 
 <!--ImageJ Introduction -->
 <section id="one" class="main">
@@ -59,44 +59,33 @@ layout: home
   </div>
 </header>
 
-<div class="resources">
+<!-- Calls to Action -->
+<section id="resources" class="main style3 special">
+  <header class="minor">
+    <table><tbody><tr>
+      <td>Users &#9660;</td>
+      <td class="dots"></td>
+      <td>&#9660; Developers</td>
+    </tr></tbody></table>
+  </header>
+  <ul class="userdev actions special">
+    <li><a href="/downloads" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
+    <li><a href="/learn" class="button icon solid"><span class="fas fa-graduation-cap"></span> Learn</a></li>
+    <li><a href="/plugins" class="button icon solid"><span class="fas fa-wrench"></span> Extend</a></li>
+    <li><a href="/scripting" class="button icon solid"><span class="fas fa-industry"></span> Automate</a></li>
+    <li><a href="/develop" class="button icon solid"> <span class="fas fa-terminal"></span> Develop</a></li>
+  </ul>
+  <ul class="community actions special">
+    <li><a href="/contribute/citing" class="button icon solid"><span class="fas fa-quote-left"></span> Cite</a></li>
+    <li><a href="/discuss" class="button icon solid"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Discuss</a></li>
+    <li><a href="/contribute" class="button icon solid"><span class="fas fa-hard-hat"></span> Contribute</a></li>
+  </ul>
+  <header class="minor"> &#9650; Community &#9650; </header>
+</section>
 
-<!-- User resources -->
-  <section id="dev_resources" class="main style3 special">
-  <br>
-          <header class="major">
-              <h2>User Resources</h2>
-          </header>
-          <p>Looking for user resources?</p>
-          <ul class="actions special">
-              <li><a href="/Device_Support" class="button icon solid fas fa-plug">Device Support</a></li>
-              <li><a href="/Micro-Manager_Community" class="button icon solid fas fa-hands-helping">Help</a></li>
-          </ul>
-          <ul class="actions special">
-              <li><a href="https://image.sc" class="button icon solid fas fa-external-link-alt">image.sc Forums</a></li>
-              <li><a href="/FAQ" class="button icon solid fas fa-quote-left">FAQ</a></li>
-          </ul>
-  </section>
+<div style="clear: both"></div>
 
-
-  <!-- Developer resources -->
-  <section id="dev_resources" class="main style2 special">
-  <br>
-          <header class="major">
-              <h2>Developer Resources</h2>
-          </header>
-          <p>Looking for developer resources?</p>
-          <ul class="actions special">
-              <li><a href="https://github.com/micro-manager" class="button icon solid fas fa-code">Source Code</a></li>
-              <li><a href="/Contact" class="button icon solid fas fa-bullhorn">Report a Bug</a></li>
-          </ul>
-          <ul class="actions special">
-              <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fas fa-terminal">Programming Guide</a></li>
-              <li><a href="https://javadoc.scijava.org/Micro-Manager-Studio/org/micromanager/api/MMPlugin.html" class="button icon solid fas fa-terminal">uManager API</a></li>
-          </ul>
-
-  </section>
-
+<!--Twitter Feed--->
 
 </div>
 
