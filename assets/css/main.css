@@ -1579,33 +1579,12 @@ ul.major-icons li .icon {
   padding: 0.5em 3em 3em 3em;
 }
 
-/* Header */
-
-#header {
-  padding: 8em 3em 8em 3em;
-}
-
-/* Footer */
-
-#footer {
-  padding: 1.5em 3em 1.5em 3em;
-}
-
-/* One */
-
-#one {
-  text-align: center;
-}
-
 /* Two */
 
 #two {
   text-align: center;
 }
 
-.resources {
-  width: 100%;
-}
 
 /* Page information */
 
@@ -1821,12 +1800,12 @@ margin: 2em 0 0.4em 0;
   }
 
   .twitter-feed {
-  	width:90%;
+  	width: 90%;
   	margin: 0 auto 0 auto;
   }
 
   .info-twitter {
-    height:340vh;
+    height: 340vh;
   }
 }
 
