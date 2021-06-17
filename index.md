@@ -4,7 +4,7 @@ layout: home
 ---
 
 <!-- Header -->
-
+{::nomarkdown}
     <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
             <img src="media/logo/umanager-logo.png" alt="MicroManager Logo">
@@ -12,7 +12,7 @@ layout: home
             <li><a href="#one" class="button scrolly">Get Started</a></li>
         </ul>
     </section>
-
+{:/}
 
 <!--ImageJ Introduction -->
 <section id="one" class="main">
@@ -20,11 +20,6 @@ layout: home
     <div class="row gtr-150">
       <div class="col-12 col-12-medium">
         <header class="major">
-          <ul class = "actions special">
-            <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fas fa-cogs">Use</a></li>
-            <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid fas fa-wrench">Extend</a></li>
-            <li><a href="Download_Micro-Manager_Latest_Release" class="button icon solid fas fa-download">Download</a></li>
-          </ul>
           <h1>Why µManager?</h1>
         </header>
         </div>
@@ -44,7 +39,7 @@ layout: home
         </div>
         <div class="col-4">
         <div class=" fa-5x text-primary"><span class="fas fa-random"></span></div>
-        <h2>Versatile</h2>
+        <h2>Adaptable</h2>
         <p>
         μManager works with microscopes from all four major manufacturers (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and many peripherals used in microscope imaging.
         </p>
@@ -69,23 +64,23 @@ layout: home
     </tr></tbody></table>
   </header>
   <ul class="userdev actions special">
-    <li><a href="/downloads" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
-    <li><a href="/learn" class="button icon solid"><span class="fas fa-graduation-cap"></span> Learn</a></li>
-    <li><a href="/plugins" class="button icon solid"><span class="fas fa-wrench"></span> Extend</a></li>
-    <li><a href="/scripting" class="button icon solid"><span class="fas fa-industry"></span> Automate</a></li>
-    <li><a href="/develop" class="button icon solid"> <span class="fas fa-terminal"></span> Develop</a></li>
+    <li><a href="/Download_Micro-Manager_Latest_Release" class="button solid icon"><span class="fas fa-download"></span> Download</a></li>
+    <li><a href="/Micro-Manager_User's_Guide" class="button icon solid fas fa-cogs">Learn</a></li>
+    <li><a href="/Device_Support" class="button icon solid"><span class="fas fa-wrench"></span> Devices</a></li>
+    <li><a href="/Script_Panel_GUI" class="button icon solid"><span class="fas fa-industry"></span> Automate</a></li>
+    <li><a href="/Micro-Manager_Programming_Guide" class="button icon solid"> <span class="fas fa-terminal"></span> Develop</a></li>
   </ul>
   <ul class="community actions special">
-    <li><a href="/contribute/citing" class="button icon solid"><span class="fas fa-quote-left"></span> Cite</a></li>
-    <li><a href="/discuss" class="button icon solid"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Discuss</a></li>
-    <li><a href="/contribute" class="button icon solid"><span class="fas fa-hard-hat"></span> Contribute</a></li>
+    <li><a href="/Citing_Micro-Manager" class="button icon solid"><span class="fas fa-quote-left"></span> Cite</a></li>
+    <li><a href="https://forum.image.sc/" class="button icon solid"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -5px"> Discuss</a></li>
+    <li><a href="https://github.com/micro-manager" class="button icon solid"><span class="fas fa-hard-hat"></span> Contribute</a></li>
   </ul>
   <header class="minor"> &#9650; Community &#9650; </header>
 </section>
 
 <div style="clear: both"></div>
 
-<!--Twitter Feed--->
+<!--Twitter--->
 
 </div>
 
