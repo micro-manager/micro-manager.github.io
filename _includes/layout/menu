@@ -10,20 +10,6 @@
             <ul>
               <li><a href="/news/index">News</a></li>
 
-<!-- News -->
-<!-- Downloads -->
-<!-- Learn -->
-  <!-- Overview -->
-  <!-- Version 2.0 -->
-  <!-- Version 1.4 renamed from user documentation) -->
-<!-- Extend -->
-  <!-- Scripting -->
-  <!-- Development -->
-<!-- Devices -->
-  <!-- Device Support -->
-  <!-- Configure -->
-<!-- Support -->
-
 <!-- Downloads -->
 {% include menu-section title="Downloads" link="/Download_Micro-Manager_Latest_Release" %}
   <li><a href="/Micro-Manager_Nightly_Builds">Nightly Builds</a></li>
