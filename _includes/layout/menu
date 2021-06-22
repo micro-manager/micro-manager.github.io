@@ -32,7 +32,7 @@
     <li><a href="/Version_2.0_API">API</a></li>
     <li><a href="/Version_2.0_API_Transition_Guide">API Transition Guide</a></li>
     <li><a href="Version_2.0_API_How_do_I">API, How do I?</a></li>
-    <li><a href="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/">Javadoc</a></li>
+    <li><a href="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html">Javadoc</a></li>
     <li><a href="/Version_2.0_API_Events">API Events</a></li>
     <li><a href="/Version_2.0_Plugins">Plugins</a></li>
     <li><a href="/Version_2.0_Scripts">Scripts</a></li>
@@ -65,7 +65,7 @@
   <li><a href="/Building_and_debugging_Micro-Manager_source_code">Building and Debugging Micro-Manager</a></li>
   <li><a href="/Multi-Dimensional_Acquisition_Programming">Multi-D Acq. Programming</a></li>
   <li><a href="/Policies_for_inclusion_of_source_code">Policies for inclusion of source code</a></li>
-  <li><a href="https://valelab.ucsf.edu/trac/micromanager/timeline">Source code repository history and tickets</a></li>
+  <li><a href="https://github.com/micro-manager">Source code repository history and tickets</a></li>
   <li><a href="/Clojure">Clojure</a></li>
   {% include menu-section title="APIs" %}
     <li><a href="https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html">1.4 GUI API Java Reference (Java/Beanshell)</a></li>
