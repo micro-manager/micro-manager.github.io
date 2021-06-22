@@ -1,5 +1,0 @@
-<div style="clear: {{include.content | default: "both"}};"></div>
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}
