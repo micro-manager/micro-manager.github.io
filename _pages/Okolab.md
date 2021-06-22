@@ -92,7 +92,7 @@ using a standard mini-USB cable. Please consider that you may need an
 USB Male-to Male cable, depending on the hardware revision of your
 control unit.
 
-{% include Important text="If you have more than one controller, please
+{% include notice icon="note" content="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
 becomes the master and the other is acting as a `slave device`, so only
@@ -180,7 +180,7 @@ using a standard mini-USB cable. Please consider that you may need an
 USB Male-to Male cable, depending on the hardware revision of your
 control unit.
 
-{% include Important text="If you have more than one controller, please
+{% include notice icon="note" content="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
 becomes the master and the other is acting as a `slave device`, so only

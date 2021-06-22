@@ -105,7 +105,7 @@ FINE and digital modulation (if the option is present).
 Upon quitting Micro-manager, the device adapter switches back the laser
 to **normal control mode**.
 
-{% include Important text=" If the laser is in '''CW mode''', it will no longer be controllable by the Topas software from Toptica. '''This can happen when Micro-Manager crashes unexpectedly and the device adapter is not properly unloaded'''. Before using Topas, load the device adapter in Micro-manager and quit the software. The laser will then be usable with Toptica's software." %}
+{% include notice icon="note" content=" If the laser is in '''CW mode''', it will no longer be controllable by the Topas software from Toptica. '''This can happen when Micro-Manager crashes unexpectedly and the device adapter is not properly unloaded'''. Before using Topas, load the device adapter in Micro-manager and quit the software. The laser will then be usable with Toptica's software." %}
 
 In order to switch faster to normal mode, another device is available in
 the device adapter: **iBeamSmartNormal**. This device **does not** allow
