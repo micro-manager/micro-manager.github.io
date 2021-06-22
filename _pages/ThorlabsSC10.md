@@ -98,5 +98,5 @@ commands to the controller (see the SC10 documentation). Note that the
 above mentioned serial port settings are the default but that they can
 be changed through software commands.
 
-{% include Note text="The Thorlabs TSC001 shutter driver is different from the SC10 and is not supported." %}
+{% include notice icon="info" content="The Thorlabs TSC001 shutter driver is different from the SC10 and is not supported." %}
 

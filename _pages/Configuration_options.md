@@ -4,7 +4,7 @@ title: Configuration options
 layout: page
 ---
 
-{% include Note text="The following is obsolete. See <code>doc/how-to-build.md</code> in the source tree (available since r13210)." %}
+{% include notice icon="info" content="The following is obsolete. See <code>doc/how-to-build.md</code> in the source tree (available since r13210)." %}
 
 As of Micro-Manager version 1.3 the following config options are
 available:

@@ -131,7 +131,7 @@ firmware and the AxioPlan2+ and Axiovert200m have the ZM firmware) use
 the ZeissShutterMFFirmware instead of the ZeissShutter. There are three
 types of the ZeissShutterMFFirmware shutter: 1 = incident light, 2=
 condenser front lens, 3 = external motorized Mirror with two lamps.
-{% include Note text="With ZM firmware, the external motorized mirror is a different device (Excitation Lamp Switcher)." %}
+{% include notice icon="info" content="With ZM firmware, the external motorized mirror is a different device (Excitation Lamp Switcher)." %}
 
 --[Nico](User:Nico "wikilink") 17:23, 8 September 2007 (PDT)
 

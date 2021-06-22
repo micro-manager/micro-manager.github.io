@@ -83,14 +83,14 @@ Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)
 </tr>
 </table>
 
-{% include Note text="Windows users should use [[HamamatsuHam]]" %}
+{% include notice icon="info" content="Windows users should use [[HamamatsuHam]]" %}
 
 This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu
 cameras. You will need to download and install a recent version of the
 [DCAM driver](http://www.dcamapi.com/). Make sure to read and follow the
 camera-specific instructions in the DCAM-API Compatibility Note provided
 on the same page.
-{% include Note text="DCAM version dated March 2011 does not work with Micro-Manager.  The August 2011 release works fine." %}
+{% include notice icon="info" content="DCAM version dated March 2011 does not work with Micro-Manager.  The August 2011 release works fine." %}
 
 In the case of ORCA Flash 4.0, please read the page on [High Speed
 Acquisition in
@@ -139,7 +139,7 @@ and setting "2" will give you the image from the other CCD.
 --[Nico](User:Nico "wikilink") 12:38, 15 July 2008 (PDT), last updated
 --[Nico](User:Nico "wikilink") 17:09, 26 August 2009 (UTC)
 
-{% include Note text="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
+{% include notice icon="info" content="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
 
 {% include Listserv_Search text="Hamamatsu" %}
 

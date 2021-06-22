@@ -4,7 +4,7 @@ title: Using Eclipse
 layout: page
 ---
 
-{% include Note text="These instructions are not up to date. If you are just looking for a way to use a Java IDE, see the instructions for [[Using Netbeans]]." %}
+{% include notice icon="info" content="These instructions are not up to date. If you are just looking for a way to use a Java IDE, see the instructions for [[Using Netbeans]]." %}
 
 1.  Download and install [Eclipse Kepler](http://www.eclipse.org/). It
     was formerly claimed that ne can't use the newer Luna, Mars, etc

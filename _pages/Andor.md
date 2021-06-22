@@ -422,7 +422,7 @@ the driver and choose:
 
     1x = High capacity mode
 
-&lt;INCLUDE Note text="For EMCCDs, Andor's nomenclature of PAG is
+&lt;include notice icon="info" content="For EMCCDs, Andor's nomenclature of PAG is
 confusing since one may think this "pre-" amplification happens before
 EM gain amplification. In reality, EM amplification happens on sensor,
 and PAG happens after readout of your sensor and before
@@ -516,7 +516,7 @@ Selecting "On" will force the acquisition mode into Run till abort. This
 prevents the sdk from trying to lock the full size of the acquistion in
 memeory (for large number of Time points this is too much memory). The
 sdk uses an internal circular buffer to acquire the images.
-{% include Note text="When forcing the acquisition mode into Run till abort it is expected that there will be an incorrect number of Fire Pulses generated." %}
+{% include notice icon="info" content="When forcing the acquisition mode into Run till abort it is expected that there will be an incorrect number of Fire Pulses generated." %}
 
 #### Frame Transfer (should actually be called "overlap")
 

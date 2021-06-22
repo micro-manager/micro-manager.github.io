@@ -94,7 +94,7 @@ safety interlocks would shut off the laser.
 Controlling the Mosaic, like other SLM and Galvo devices, is done by the
 Projector plugin (**Plugins \| Device Control \| Projector**).
 
-{% include Note text="Many functions of the generically designed Projector plugin are not useful for the Mosaic.  For normal use, one would just open the Projector plugin to go to the ROIs tab and open the Sequencing window." %}
+{% include notice icon="info" content="Many functions of the generically designed Projector plugin are not useful for the Mosaic.  For normal use, one would just open the Projector plugin to go to the ROIs tab and open the Sequencing window." %}
 
 Before you begin the calibration:
 
@@ -176,7 +176,7 @@ across and down and spacing between lattice points.
 
 ### Sequence table
 
-&lt;INCLUDE Note text="It's often better to use [Create
+&lt;include notice icon="info" content="It's often better to use [Create
 Sequence](#create-sequence "wikilink") to populate the sequence table
 instead of hand-filling an empty Sequence table. The Sequence table is
 being described first to introduce the nomenclature (particularly the

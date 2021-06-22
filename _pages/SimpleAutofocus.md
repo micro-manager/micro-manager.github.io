@@ -6,7 +6,7 @@ layout: page
 
 ## SimpleAutofocus Manual
 
-{% include Note text="The SimpleAutofocus device adapter is deprecated. Please use the modern [[Autofocus manual|autofocus]] interface instead." %}
+{% include notice icon="info" content="The SimpleAutofocus device adapter is deprecated. Please use the modern [[Autofocus manual|autofocus]] interface instead." %}
 
 The C++ SimpleAutofocus Device Adapter, written by Karl Hoover, is a
 higher-performance version of the image-based autofocus function. It

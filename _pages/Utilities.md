@@ -73,7 +73,7 @@ work).
     one camera (namely, the "Master" camera) to the trigger input of
     other cameras (the "Slave" camera(s)).
       
-    &lt;INCLUDE Note text="The "Master" must be the last numbered
+    &lt;include notice icon="info" content="The "Master" must be the last numbered
     "Physical Camera", since several frames can be acquired by one
     camera before the next camera starts acquiring. e.g. Set "Physical
     Camera 1" to Slave, and "Physical Camera 2" to Master.😎"&gt;

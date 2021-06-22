@@ -195,7 +195,7 @@ C:\\Users\\username\\AppData\\Local\\VirtualStore\\Windows\\PVCAM.ini
 C:\\Program Files\\Micro-Manager1.3
 
 where you should replace 'username' with your username.
-{% include Note text="The directory 'Appdata' is not visible to the Windows file explorer." %}
+{% include notice icon="info" content="The directory 'Appdata' is not visible to the Windows file explorer." %}
 
 \--[Nico](User:Nico "wikilink") 11:33, 31 August 2007 (PDT)
 

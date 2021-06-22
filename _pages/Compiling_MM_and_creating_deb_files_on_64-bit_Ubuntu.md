@@ -4,7 +4,7 @@ title: Compiling MM and creating deb files on 64-bit Ubuntu
 layout: page
 ---
 
-{% include Note text="These instructions refer to very old versions of Micro-Manager source code." %}
+{% include notice icon="info" content="These instructions refer to very old versions of Micro-Manager source code." %}
 
 This note was written using Revision: 2580
 (https://valelab.ucsf.edu/trac/micromanager/timeline) that contained

@@ -104,7 +104,7 @@ is an 8-bit word (1..255). In other words 1 means channel 1 open, the
 rest closed; 2 means channel 2 open, rest closed; 5 channel 1 and 3
 open, rest closed; etc.
 
-&lt;INCLUDE Note text="Some, but not all, of these devices may have
+&lt;include notice icon="info" content="Some, but not all, of these devices may have
 trouble rapidly switching multiple channels using the multiAOTF device
 (only the first channel will switch). In such cases, setting the "Delay
 between channels (ms)" property to greater than 25 ms might help.😎"&gt;

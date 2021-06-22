@@ -380,7 +380,7 @@ native, platform specific thread functions.
 
 ## Complex device management: writing Hub adapters
 
-{% include Note text="This is an advanced topic and is generally not relevant for implementation of single device libraries." %}
+{% include notice icon="info" content="This is an advanced topic and is generally not relevant for implementation of single device libraries." %}
 
 ### Introduction
 

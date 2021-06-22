@@ -175,7 +175,7 @@ Serial port settings, and Axis name (or controller channel name).
 <em>Preset settings</em> in Micro-Manager. Or you can load the setting
 from a saved .cfg file.</em>
 
-{% include Note text="'''Axis Name Registration'''" %}
+{% include notice icon="info" content="'''Axis Name Registration'''" %}
 
 The "ChuoSeiki MD 2-Axis\|\|XY stages" supports only the 2-axis
 controller (MD5230D). In this device adapter, the 2 stages names are
@@ -188,7 +188,7 @@ defined when initializing the device adapter. For MD5130D, the axis name
 must be set as default ("X"). For MD5230D, the axis name can be defined
 as "X" or "Y", depends on which channel is connected to the Z-stage.
 
-{% include Note text="'''Acceleration Pattern'''" %}
+{% include notice icon="info" content="'''Acceleration Pattern'''" %}
 
 In Device adapter, the Acceleration pattern (include acceleration and
 deceleration times) can be changed from "1", "2", "3" and "4". They
@@ -207,7 +207,7 @@ Default Acceleration pattern:
 | "3"     | 500 (ms)          | 0 (ms)            |
 | "4"     | 500 (ms)          | 0 (ms)            |
 
-{% include Note text="'''Step Resolution'''" %}
+{% include notice icon="info" content="'''Step Resolution'''" %}
 
 The default step resolution registered in MD51\_52OPTOOL is 20 um,
 please change this parameter in the first use.

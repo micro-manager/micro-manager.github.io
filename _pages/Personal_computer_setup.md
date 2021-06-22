@@ -25,7 +25,7 @@ You will see 3 plans listed:
 -   Power saver
 -   High performance
 
-{% include Note text="The <code>High performance</code> plan actually does not disable all power saving features." %}
+{% include notice icon="info" content="The <code>High performance</code> plan actually does not disable all power saving features." %}
 
 Click on "Create a Power Plan", select the "High performance" plan as
 the one closest to your new plan and call it something like "My high

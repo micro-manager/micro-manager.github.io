@@ -115,7 +115,7 @@ More information about the ITC18 can be found here:
 2.  Run that protocol inside Micromanager with
     [TESM.bsh](media/TESM.bsh "wikilink")
 
-{% include Note text="The above protocols are very complicated and are designed for a very specific microscope. You need to modify them to suit your needs." %}
+{% include notice icon="info" content="The above protocols are very complicated and are designed for a very specific microscope. You need to modify them to suit your needs." %}
 
 The ITC18.csh script was written for a very specific microscope
 developed by the Biomedical Imaging Group at the University of

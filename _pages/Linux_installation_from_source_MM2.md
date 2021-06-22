@@ -9,9 +9,9 @@ systems. These instructions are expected to work without modifications
 for installations on [Debian systems](http://debian.org) (tested on
 Debian Wheezy and Debian Jessy).
 
-{% include Note text="This page is a work in progress and may not be accurate" %}
+{% include notice icon="info" content="This page is a work in progress and may not be accurate" %}
 
-{% include Note text="This page has been based off of experience building using Ubuntu 18.04" %}
+{% include notice icon="info" content="This page has been based off of experience building using Ubuntu 18.04" %}
 
 # Preparation
 
@@ -48,7 +48,7 @@ sudo apt install git-all subversion build-essential autoconf automake libtool \
                      libboost-all-dev zlib1g-dev swig ant
 {% endhighlight %}
 
-{% include Note text="As of 3/16/2021 Swig 4 will not work with Micro-Manager. Please make sure to install Swig 3. This issue will hopefully be resolved in the future" %}
+{% include notice icon="info" content="As of 3/16/2021 Swig 4 will not work with Micro-Manager. Please make sure to install Swig 3. This issue will hopefully be resolved in the future" %}
 
 You may also need to install additional packages (for cameras and
 special hardware). See the full list in

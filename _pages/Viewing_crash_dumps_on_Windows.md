@@ -30,7 +30,7 @@ handler fails, you will usually see Windows display a message saying
 
 ### Generating Windows application crash dumps
 
-{% include Note text="The crash dumps saved by this method are binary files. You need a Microsoft debugger (e.g. windbg.exe) to view them." %}
+{% include notice icon="info" content="The crash dumps saved by this method are binary files. You need a Microsoft debugger (e.g. windbg.exe) to view them." %}
 
 Windows crash dumps are disabled by default (to be precise, saving them
 locally is disabled by default; there is a mechanism to allow sending

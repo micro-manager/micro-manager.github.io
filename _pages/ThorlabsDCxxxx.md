@@ -105,5 +105,5 @@ package](https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=DC220
 has to be installed. In general, if this adapter is greyed out in the
 Hardware Configuration Wizard, try installing the DC2200 software.
 
-{% include Note text="The above mentioned serial port settings are the default, but they are recommended to communicate with the device." %}
+{% include notice icon="info" content="The above mentioned serial port settings are the default, but they are recommended to communicate with the device." %}
 

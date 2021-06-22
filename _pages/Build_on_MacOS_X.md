@@ -4,7 +4,7 @@ title: Build on MacOS X
 layout: page
 ---
 
-{% include Note text="This page is up to date for SVN r13224." %}
+{% include notice icon="info" content="This page is up to date for SVN r13224." %}
 
 ## Getting the required tools
 

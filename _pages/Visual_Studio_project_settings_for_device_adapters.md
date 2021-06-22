@@ -4,7 +4,7 @@ title: Visual Studio project settings for device adapters
 layout: page
 ---
 
-{% include Note text="This page applies to SVN r12232 and later." %}
+{% include notice icon="info" content="This page applies to SVN r12232 and later." %}
 
 Here are instructions for how to set up a Visual Studio project for a
 new device adapter. For more details on how to write device adapters for

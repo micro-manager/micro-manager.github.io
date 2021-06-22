@@ -94,7 +94,7 @@ switch is a single byte, each bit in this byte sets the corresponding
 channel (for instance, the value '3' will set channels 1 and 2). The
 shutter will switch the active channels on and off.
 
-{% include Note text="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board." %}
+{% include notice icon="info" content="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board." %}
 
 On Mac OS X you will need to download and unpack
 [Media:k8055-utbm-osx-kext.Tar.gz](Media:k8055-utbm-osx-kext.Tar.gz "wikilink"),

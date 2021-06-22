@@ -99,7 +99,7 @@ becomes the master and the other is acting as a "slave device", so only
 the controller connected to the Oko-Touch will answer to USB
 commands😎"&gt;
 
-{% include Note text="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
+{% include notice icon="info" content="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
 If, after the installation, the ''okolib'' folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
 
 ## Configuration
@@ -111,7 +111,7 @@ If, after the installation, the ''okolib'' folder is missing in your Micro-Manag
     it or clicking the *Add* button when selected.
 4.  Select the right COM Port or select Auto and press OK.
 
-{% include Note text="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
 
 ## Usage
 
@@ -209,7 +209,7 @@ The installation is straightforward, default settings can be used.
     writing the whole COM string into Value field of Property COM Port
     (eg. *COM1*).
 
-{% include Note text="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
 
 ### Usage
 

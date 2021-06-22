@@ -54,7 +54,7 @@ Three types of signals for each channel and one ground signal make this
 pin control up to 8 channels. The job of the TTL blanking signal is to
 turn a particular channel on or off. The positive input channel can
 control the voltage being sent to a channel (0-10 V).
-{% include Note text="Here for the Prairie Aurora laser launch, we only need a maximum voltage of 5 volts" %}
+{% include notice icon="info" content="Here for the Prairie Aurora laser launch, we only need a maximum voltage of 5 volts" %}
 The negative input channel can serve as a Ground connector for a
 channel. However, you may also use the master Ground at pin \#1 for
 grounding purposes Make sure that you *understand* the Analog and

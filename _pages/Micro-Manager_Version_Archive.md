@@ -1750,7 +1750,7 @@ MB
     -   Image Processor Chain - provides sequencing of C++-based image
         processors in the Micro-Manager core
 
-&lt;INCLUDE Note text="Burst acquisition (formerly a separate utility in
+&lt;include notice icon="info" content="Burst acquisition (formerly a separate utility in
 1.3) has been merged with multi-dimensional acquisition -- if you want
 to do a burst, simply select "Time Points" only and set the time
 interval to 0.😎"&gt;

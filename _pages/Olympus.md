@@ -125,7 +125,7 @@ need to set two properties: the ObjectiveTypeSetting and the SearchRange
 offset, and then running autofocus will return the focus drive to that
 offset.
 
-{% include Note text="For the BX61, currently only one filter wheel is supported, which is connected to FW1 port on the controller." %}
+{% include notice icon="info" content="For the BX61, currently only one filter wheel is supported, which is connected to FW1 port on the controller." %}
 
 {% include Listserv_Search text="Olympus" %}
 

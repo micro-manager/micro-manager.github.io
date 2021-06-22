@@ -88,7 +88,7 @@ Windows
 </tr>
 </table>
 
-{% include Note text="See also: [[ThorlabsAPTStage]]" %}
+{% include notice icon="info" content="See also: [[ThorlabsAPTStage]]" %}
 
 The ThorlabsDCStage adapter operates the Motorized Translational Stages
 (50 mm)
@@ -104,5 +104,5 @@ Each time you power-up this stage needs to be "homed" before sending any
 commands. To do that, create a Group with the "Home" property. Then set
 the value to 1.
 
-{% include Note text=" The controller TDC001  only works on 32 bits Micro-manager as explained in the Thorlabs webpage." %}
+{% include notice icon="info" content=" The controller TDC001  only works on 32 bits Micro-manager as explained in the Thorlabs webpage." %}
 

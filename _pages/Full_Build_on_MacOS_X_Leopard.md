@@ -4,7 +4,7 @@ title: Full Build on MacOS X Leopard
 layout: page
 ---
 
-{% include Note text="See [[Build on MacOS X]] for up-to-date instructions on building on OS X." %}
+{% include notice icon="info" content="See [[Build on MacOS X]] for up-to-date instructions on building on OS X." %}
 
 Building micro-manager 1.2 from SVN on MacOSX Leopard MacIntel. This is
 the complete sequence that I used to build on 10.5.2 on 2008-04-18. In

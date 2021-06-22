@@ -69,7 +69,7 @@ Hamamatsu DCAM compatible cameras
 </tr>
 </table>
 
-&lt;INCLUDE Note text="Formerly (up to Micro-Manager 1.4.16) there was a
+&lt;include notice icon="info" content="Formerly (up to Micro-Manager 1.4.16) there was a
 legacy [Hamamatsu](Hamamatsu "wikilink") adapter (developed at UCSF) in
 addition to the "HamamatsuHam". That adapter will be retired in 1.4.17.
 It is still included in the OS X version, because HamamatsuHam is not
@@ -82,7 +82,7 @@ recent version of [DCAM-API](http://www.dcamapi.com/). Make sure to read
 and follow the camera-specific instructions in the DCAM-API
 Compatibility Note provided on the same page.
 
-{% include Note text="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
+{% include notice icon="info" content="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
 
 ## Property Notes for Flash4v2
 

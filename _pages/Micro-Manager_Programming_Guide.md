@@ -7,7 +7,7 @@ section: Programming
 
 <span>*Created on November 16, 2005 by Nenad Amodaj  
 Updated for release 1.0.37(beta) on July 28, 2006*</span>  
-{% include Note text="Micro-Manager 1 and 2 use the same C++ layer, hence this guide is applicable to both versions.  However, the Java interfaces are different.   Please use the version 2 api unless you have very good reasons not to." %}
+{% include notice icon="info" content="Micro-Manager 1 and 2 use the same C++ layer, hence this guide is applicable to both versions.  However, the Java interfaces are different.   Please use the version 2 api unless you have very good reasons not to." %}
 
 ## Introduction
 
@@ -494,7 +494,7 @@ mmc.initializeAllDevices();
 
 The code above looks fairly straightforward, but there are a couple of
 important points to consider here.
-{% include Note text="Micro-Manager device adapters do not take control of serial ports directly." %}
+{% include notice icon="info" content="Micro-Manager device adapters do not take control of serial ports directly." %}
 We first loaded serial port device "P1" on COM1 and then we just
 supplied the filter wheel devices "WA" and "WB" with the port label.
 Devices will use port labels through MMCore internal mechanisms to

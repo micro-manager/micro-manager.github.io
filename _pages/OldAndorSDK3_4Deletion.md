@@ -4,4 +4,4 @@ title: OldAndorSDK3 4Deletion
 layout: page
 ---
 
-{% include Note text=" Should have moved old Andor3" %}
+{% include notice icon="info" content=" Should have moved old Andor3" %}
