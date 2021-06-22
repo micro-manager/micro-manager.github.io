@@ -5,8 +5,6 @@ layout: page
 section: User Documentation
 ---
 
-# Micro-Manager User's Guide
-
 # Introduction
 
 Imaging cells has become an essential technology in many laboratories
