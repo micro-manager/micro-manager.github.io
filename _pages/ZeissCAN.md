@@ -133,7 +133,7 @@ types of the ZeissShutterMFFirmware shutter: 1 = incident light, 2=
 condenser front lens, 3 = external motorized Mirror with two lamps.
 {% include notice icon="info" content="With ZM firmware, the external motorized mirror is a different device (Excitation Lamp Switcher)." %}
 
---[Nico](User:Nico "wikilink") 17:23, 8 September 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 17:23, 8 September 2007 (PDT)
 
 An XY stage controlled via an MCU 28 controller can be control either
 through the microscope stand (if the stand and MCU 28 are connected with

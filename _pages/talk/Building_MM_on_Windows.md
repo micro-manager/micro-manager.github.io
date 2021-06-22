@@ -39,4 +39,4 @@ will be a set of libraries with the library type and threading model
 encoded in the library name, all headers will be in
 &lt;root&gt;\\projects\\3rdparty\\boost\\boost and the libraries will be
 in &lt;root&gt;\\projects\\3rdparty\\boost\\stage\\lib [Tim D.
-Smith](User:Tim_D._Smith "wikilink") 18:51, 1 December 2012 (PST)
+Smith](/users/Tim_D._Smith "wikilink") 18:51, 1 December 2012 (PST)

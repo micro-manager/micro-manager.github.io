@@ -7,7 +7,7 @@ layout: page
 **Camera characterization - Measuring the electron conversion factor,
 read-noise and offset using Photon Transfer Curves**
 
---[Nico](User:Nico "wikilink") 12:23, 30 September 2011 (PDT)
+--[Nico](/users/Nico "wikilink") 12:23, 30 September 2011 (PDT)
 
 Based on a handout for the Bangalore Microscopy Course, 2011
 

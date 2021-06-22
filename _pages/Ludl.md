@@ -134,12 +134,12 @@ figure it out, open the file "Corelog.txt" in your Micro-Manager
 directory. It contains some output from the Ludl controller that you can
 use to deduce the drive letter.
 
---[Nico](User:Nico "wikilink") 13:43, 25 August 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 13:43, 25 August 2007 (PDT)
 
 If using an actual serial cable, ensure that the cable is of the ["null
 modem"](http://en.wikipedia.org/wiki/Null_modem) type.
 
---[oreopoj](User:oreopoj "wikilink") 14:19, 8 September 2010 (EST)
+--[oreopoj](/users/oreopoj "wikilink") 14:19, 8 September 2010 (EST)
 
 The Ludl MAC6000's USB port can be configured to act as a virtual COM
 port. If you have the original CD that came with your Ludl equipment,

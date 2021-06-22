@@ -155,5 +155,5 @@ or
 [ITC18.zip](media/ITC18.zip "wikilink")
 
 --[Karl Bellve, Biomedical Imaging Group, University of
-Massachusetts](User:Kdb "wikilink") 17:15, 10 November 2009 (UTC)
+Massachusetts](/users/Kdb "wikilink") 17:15, 10 November 2009 (UTC)
 

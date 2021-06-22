@@ -153,15 +153,15 @@ software or a terminal application to do this once after power on. (This
 does not affect E-816 based controllers (E-665, E-621, E-625) which do
 not need to be referenced)
 
---[Steffen](User:Steffen "wikilink") 15 January 2009
+--[Steffen](/users/Steffen "wikilink") 15 January 2009
 
 This driver does not work with the E-750. The E-750 uses a special
 binary protocol over the serial line.
 
 --[Karl Bellve, Biomedical Imaging Group, University of
-Massachusetts](User:Kdb "wikilink") 16:48, 1 July 2009 (UTC)
+Massachusetts](/users/Kdb "wikilink") 16:48, 1 July 2009 (UTC)
 
 Successfully configured with a C-867 controller and a PILine Piezomotor.
 
---[Julou](User:Julou "wikilink") 16:33, 30 November 2010 (UTC)
+--[Julou](/users/Julou "wikilink") 16:33, 30 November 2010 (UTC)
 

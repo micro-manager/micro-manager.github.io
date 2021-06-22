@@ -120,5 +120,5 @@ make a system configuration group called 'System' and in the group make
 a preset called 'Startup'. In this group, set the 'DA device' property
 to the desired DA device.
 
---[Nico](User:Nico "wikilink") 13:26, 29 March 2008 (PDT)
+--[Nico](/users/Nico "wikilink") 13:26, 29 March 2008 (PDT)
 

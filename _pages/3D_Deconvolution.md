@@ -317,4 +317,4 @@ image for the PSF.
     print ("Finished");
 
 --[Karl Bellve, Biomedical Imaging Group, University of
-Massachusetts](User:Kdb "wikilink") 10:36, 22 April 2011 (PDT)
+Massachusetts](/users/Kdb "wikilink") 10:36, 22 April 2011 (PDT)

@@ -142,10 +142,10 @@ performing simple camera capabilities discovery.
 
 ### Changelog
 
--   Made to work again by [Nico Stuurman](user:Nico "wikilink"), Feb.
+-   Made to work again by [Nico Stuurman](/users/Nico "wikilink"), Feb.
     2012
 -   Fixed CPU overload, ROI and binning in continuous acquisition mode
-    by [Eugene Dvoretsky](user:radioxoma "wikilink") (VSMU, BY), Jul.
+    by [Eugene Dvoretsky](/users/radioxoma "wikilink") (VSMU, BY), Jul.
     2014
 
 {% include Listserv_Search text="Leica" %}

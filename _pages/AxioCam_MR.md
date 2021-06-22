@@ -277,7 +277,7 @@ the trigger OUT signal to achieve the desired trigger OUT delay.
 
 ![](media/AxioCamFig5.png "AxioCamFig5.png")
 
---[Henry Pinkard](User:Henry_Pinkard "wikilink") 10:58, 1st October 2012
+--[Henry Pinkard](/users/Henry_Pinkard "wikilink") 10:58, 1st October 2012
 (PDT)
 
 {% include Listserv_Search text="AxioCam" %}

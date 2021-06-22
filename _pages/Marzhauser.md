@@ -109,5 +109,5 @@ Märzhäuser components.
 
 **See also:** Märzhäuser [Corvus](Corvus "wikilink") device adapter.
 
---[Dettmar](User:Dettmar "wikilink") 24:24, 19 February 2010 (PDT)
+--[Dettmar](/users/Dettmar "wikilink") 24:24, 19 February 2010 (PDT)
 

@@ -84,5 +84,5 @@ Camera, Noise Processor, Signal Generator
 This adapter creates a virtual camera capable of 'burst' mode. It also
 demonstrates how an adapter can process images before they reach the UI.
 
---[Nico](User:Nico "wikilink") 11:34, 25 August 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 11:34, 25 August 2007 (PDT)
 

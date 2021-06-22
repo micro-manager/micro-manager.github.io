@@ -75,4 +75,4 @@ prior to setting up in Micro-Manager.
 
 <https://www.baslerweb.com/en/sales-support/downloads/software-downloads/#type=pylonsoftware;series=baslerace>
 
---[Henry Pinkard](User:Henry_Pinkard "wikilink"), 20th March 2018 (PDT)
+--[Henry Pinkard](/users/Henry_Pinkard "wikilink"), 20th March 2018 (PDT)

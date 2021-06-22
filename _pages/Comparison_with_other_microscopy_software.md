@@ -179,5 +179,5 @@ transition between ordinary and custom work.
 | **Authors:** | Austin Blanco (formerly with Technical Instruments) |
 |              | Pariksheet Nanda (Andor)                            |
 
-[P.nanda](User:P.nanda "wikilink") 18:33, 18 September 2012 (PDT)
+[P.nanda](/users/P.nanda "wikilink") 18:33, 18 September 2012 (PDT)
 

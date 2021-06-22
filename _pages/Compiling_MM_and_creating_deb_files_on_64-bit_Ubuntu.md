@@ -18,7 +18,7 @@ overall process.
 
 OS was Ubuntu jaunty.
 
---[Shalin](User:Sanguine "wikilink") 12:44, 2 June 2009 (UTC)
+--[Shalin](/users/Sanguine "wikilink") 12:44, 2 June 2009 (UTC)
 
 ## Pre-requisite packages
 

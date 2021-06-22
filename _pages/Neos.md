@@ -86,6 +86,6 @@ This adapter uses the
 [inpout.dll](http://www.logix4u.net/inpout32.htm)to talk to the parallel
 port.
 
---[Nico](User:Nico "wikilink") 15:34, 15 August 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 15:34, 15 August 2007 (PDT)
 
 {% include ParallelPort_Warning text="" %}

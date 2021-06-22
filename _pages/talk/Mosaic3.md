@@ -8,7 +8,7 @@ layout: page
 
 ### Setup
 
-[P.nanda](User:P.nanda "wikilink")
+[P.nanda](/users/P.nanda "wikilink")
 ([talk](User_talk:P.nanda "wikilink")) 07:22, 23 May 2014 (PDT)
 
 <table>
@@ -95,7 +95,7 @@ circle ROI and the size and shape cannot be customized.
 
 #### ROIs tab
 
-[P.nanda](User:P.nanda "wikilink")
+[P.nanda](/users/P.nanda "wikilink")
 ([talk](User_talk:P.nanda "wikilink")) 11:17, 27 May 2014 (PDT)
 
 ##### ROI Manager

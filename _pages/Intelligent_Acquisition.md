@@ -47,5 +47,5 @@ integration of other programming environments. Extensions such as
 continuous searching of the given area (i.e. do not stop after the first
 round) are also possible.
 
---[Nico](User:Nico "wikilink") 16:54, 14 October 2012 (PDT)
+--[Nico](/users/Nico "wikilink") 16:54, 14 October 2012 (PDT)
 
