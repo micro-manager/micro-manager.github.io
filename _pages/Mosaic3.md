@@ -47,7 +47,7 @@ MM-820*-SUB-COMP<br />
 -   Download the Andor Mosaic Driver 3 Pack from
     [here](http://www.andor.com/downloads?src=micro).
 
-  
+
 Install the Driver Pack and when prompted for the destination location
 enter the path where Micro-Manager is installed as shown in the example
 below.
@@ -176,11 +176,11 @@ across and down and spacing between lattice points.
 
 ### Sequence table
 
-&lt;include notice icon="info" content="It's often better to use [Create
-Sequence](#create-sequence "wikilink") to populate the sequence table
+{% include notice icon="info" content="It's often better to use [Create
+Sequence](#create-sequence wikilink) to populate the sequence table
 instead of hand-filling an empty Sequence table. The Sequence table is
 being described first to introduce the nomenclature (particularly the
-"Time Slot") of the Create Sequence generator.😎"&gt;
+Time Slot) of the Create Sequence generator." %}
 
 | Column            | Description                                                                                                                                                                                              |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -348,4 +348,3 @@ change `Image > Type` to `8-bit` instead of the default `32-bit`
 (opening as 32-bit is possibly a bug in ImageJ?).
 
 {% include Listserv_Search text="Mosaic" %}
-

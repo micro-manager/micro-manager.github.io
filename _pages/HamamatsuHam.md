@@ -69,13 +69,13 @@ Hamamatsu DCAM compatible cameras
 </tr>
 </table>
 
-&lt;include notice icon="info" content="Formerly (up to Micro-Manager 1.4.16) there was a
-legacy [Hamamatsu](Hamamatsu "wikilink") adapter (developed at UCSF) in
-addition to the "HamamatsuHam". That adapter will be retired in 1.4.17.
+{% include notice icon="info" content="Formerly (up to Micro-Manager 1.4.16) there was a
+legacy [Hamamatsu](Hamamatsu wikilink) adapter (developed at UCSF) in
+addition to the `HamamatsuHam`. That adapter will be retired in 1.4.17.
 It is still included in the OS X version, because HamamatsuHam is not
 supported on OS X. On Windows, if you have a hardware configuration
 using Hamamatsu, you will need to create a new hardware configuration
-using HamamatsuHam.😎"&gt;
+using HamamatsuHam." %}
 
 Before configuring the camera, you will need to download and install a
 recent version of [DCAM-API](http://www.dcamapi.com/). Make sure to read
@@ -107,4 +107,3 @@ Micro-Manager and also because the scroll bar for the exposure time can
 change the exposure quite dramatically.
 
 {% include Listserv_Search text="Hamamatsu" %}
-

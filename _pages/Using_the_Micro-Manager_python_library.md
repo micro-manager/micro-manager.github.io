@@ -103,10 +103,10 @@ your hardware by MMStudio GUI.
 
 ### First steps
 
-&lt;include notice icon="info" content="Next code snippets aims to be most generic. We
-use numpy and matplotlib "as is" from pure python interactive shell, but
+{% include notice icon="info" content="Next code snippets aims to be most generic. We
+use numpy and matplotlib **as is** from pure python interactive shell, but
 it's convenient to use IPython with nice autocompletion
-capabilities.😎"&gt;
+capabilities." %}
 
 Start python interactive session. Import \`MMCorePy\` and make sure
 everything is working properly.

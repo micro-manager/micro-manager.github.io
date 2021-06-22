@@ -115,16 +115,16 @@ installed API Package)
     the μManager root folder.
 
 {% include notice icon="info" content="As of nightly builds starting 20180404, no longer rename xiapi64.dll.  Just copy that file to the Micro-Manager directory." %}
-&lt;include notice icon="info" content="As of nightly builds starting 20180404, the
+{% include notice icon="info" content="As of nightly builds starting 20180404, the
 naming scheme of the camera has been changed. If your configuration file
 stops working, you may need to open it in a text editor, find a line
-that looks like: "Device,FastCam,XIMEACamera, 9652450", and replace the
-space in front of the camera number with a "0", resulting in:
-"Device,FastCam,XIMEACamera,09652450".😎"&gt; &lt;include notice icon="info" content="As
+that looks like: `Device,FastCam,XIMEACamera, 9652450`, and replace the
+space in front of the camera number with a `0`, resulting in:
+`Device,FastCam,XIMEACamera,09652450`." %} {% include notice icon="info" content="As
 of nightly builds starting 20180404, changes were made to property
 names. Your configuration file may stop working, but can probably be
-easily fixed. For instance, I had to change "Mono 12" to "Mono16" to get
-my configuration file to work again.😎"&gt;
+easily fixed. For instance, I had to change `Mono 12` to `Mono16` to get
+my configuration file to work again." %}
 
 -   Connect the camera to the computer
 
@@ -228,4 +228,3 @@ For contacting XIMEA product support regarding any questions or issues,
 visit [online support](http://www.ximea.com/support/).
 
 {% include Listserv_Search text="XIMEA" %}
-

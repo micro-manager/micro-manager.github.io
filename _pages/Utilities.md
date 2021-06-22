@@ -72,11 +72,11 @@ work).
 4.  Synchronizing cameras requires wiring the exposure digital output of
     one camera (namely, the "Master" camera) to the trigger input of
     other cameras (the "Slave" camera(s)).
-      
-    &lt;include notice icon="info" content="The "Master" must be the last numbered
-    "Physical Camera", since several frames can be acquired by one
-    camera before the next camera starts acquiring. e.g. Set "Physical
-    Camera 1" to Slave, and "Physical Camera 2" to Master.😎"&gt;
+
+    {% include notice icon="info" content="The Master must be the last numbered
+    `Physical Camera`, since several frames can be acquired by one
+    camera before the next camera starts acquiring. e.g. Set `Physical
+    Camera 1` to Slave, and `Physical Camera 2` to Master." %}
 5.  To rotate or mirror images, launch the [Image Flipper
     plugin](Image_Flipper "wikilink"). The plugin only works while it is
     open. Also after restarting Micro-Manager, to apply mirror and flip
@@ -155,4 +155,3 @@ property to the desired state device. The state device should have a
 property that sets the "closed" position.
 
 {% include Listserv_Search text="Utilities" %}
-

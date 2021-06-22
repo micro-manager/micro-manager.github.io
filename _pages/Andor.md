@@ -272,19 +272,19 @@ been correctly plugged into its own USB bus (Bus\# 1):
 ```
 $ lsusb -t
 Bus#  5
- -Dev#   1 Vendor 0x1d6b Product 0x0001 
+ -Dev#   1 Vendor 0x1d6b Product 0x0001
 Bus#  4
- -Dev#   1 Vendor 0x1d6b Product 0x0001 
+ -Dev#   1 Vendor 0x1d6b Product 0x0001
   |-Dev#   2 Vendor 0x046d Product 0xc045
-   -Dev#   3 Vendor 0x2341 Product 0x0001 
+   -Dev#   3 Vendor 0x2341 Product 0x0001
 Bus#  3
- -Dev#   1 Vendor 0x1d6b Product 0x0001 
-   -Dev#   2 Vendor 0x03f9 Product 0x0100 
+ -Dev#   1 Vendor 0x1d6b Product 0x0001
+   -Dev#   2 Vendor 0x03f9 Product 0x0100
 Bus#  2
- -Dev#   1 Vendor 0x1d6b Product 0x0001 
+ -Dev#   1 Vendor 0x1d6b Product 0x0001
 Bus#  1
- -Dev#   1 Vendor 0x1d6b Product 0x0002 
-   -Dev#   6 Vendor 0x136e Product 0x000e 
+ -Dev#   1 Vendor 0x1d6b Product 0x0002
+   -Dev#   6 Vendor 0x136e Product 0x000e
 
 $ lsusb
 Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
@@ -396,7 +396,7 @@ the driver and choose:
     -   The following Microsoft guide explains who to do this, but there
         is no need to physically remove the card as described in step 6
         of the Uninstall section:
-          
+
         <http://technet.microsoft.com/en-us/library/cc725782.aspx#bkmk_2>
     -   When uninstalling, make sure to select
         `Delete the driver software for this device`.
@@ -415,18 +415,18 @@ the driver and choose:
 #### Pre-Amplifier Gain (PAG)
 
 -   It's best to think of Pre-Amplifier Gain as follows:
-      
+
     4x = High sensitivity mode (use for EM gain)
 
     2x = Intermediate sensitivity / capacity mode
 
     1x = High capacity mode
 
-&lt;include notice icon="info" content="For EMCCDs, Andor's nomenclature of PAG is
-confusing since one may think this "pre-" amplification happens before
+{% include notice icon="info" content="For EMCCDs, Andor's nomenclature of PAG is
+confusing since one may think this pre- amplification happens before
 EM gain amplification. In reality, EM amplification happens on sensor,
 and PAG happens after readout of your sensor and before
-digitization.😎"&gt;
+digitization." %}
 
 -   PAG multipliers like 1x, 2x, 4x can vary between cameras since they
     are tuned for each sensor, e.g. for a particular camera the values
@@ -437,9 +437,9 @@ digitization.😎"&gt;
     (Electrons/pixel)" by the "CCD Sensitivity (Electrons/A2D count)" to
     get saturation signal in digital counts.
 
-&lt;INCLUDE MessageBox text="Warning\|Always set PAG to maximum "High
-sensitivity mode" when using EM gain. Lower settings of PAG is useful in
-Life Sciences only in Conventional (non-EM) mode😎"&gt;
+{% include MessageBox text="Warning\|Always set PAG to maximum High
+sensitivity mode when using EM gain. Lower settings of PAG is useful in
+Life Sciences only in Conventional (non-EM) mode" %}
 
 #### Electron Multiplying Gain (EM Gain)
 
@@ -690,4 +690,3 @@ overlayed in your preview window.
 
 ![Screenshot: Snapped image using Mutli Camera
 device.](media/Mm-snapped-image-multicam.png "Screenshot: Snapped image using Mutli Camera device.")
-

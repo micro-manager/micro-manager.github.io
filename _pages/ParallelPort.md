@@ -89,9 +89,9 @@ For instance:
 6 (0110000000) will set pins 2 and 3 high and all others low.  
 {% include notice icon="info" content="This adapter does not provide a shutter device.  The [[AOTF]] adapter provides a shutter that can set pins of the parallel port." %}
 
-&lt;include notice icon="info" content="On Windows Vista and later, you may need to run
-Micro-Manager as administrator (right-click and choose "Run as
-administrator" from an admin account) the first time you access the
-parallel port.😎"&gt;
+{% include notice icon="info" content="On Windows Vista and later, you may need to run
+Micro-Manager as administrator (right-click and choose` Run as
+administrator` from an admin account) the first time you access the
+parallel port." %}
 
 {% include ParallelPort_Warning text="" %}

@@ -66,8 +66,8 @@ A special Thanks to George Peeters
 ([Solamere](http://www.solameretech.com/)) for all the help in set up
 and take down.
 
-&lt;INCLUDE \#widget:Iframe
+ include \#widget:Iframe
 
 `text="url=`[`http://valelab.ucsf.edu/~MM/flashgallery/flashgallery.html`](http://valelab.ucsf.edu/~MM/flashgallery/flashgallery.html)
 
-\|width=633\|height=430 \|border=8 😎"&gt;
+\|width=633\|height=430 \|border=8 "
