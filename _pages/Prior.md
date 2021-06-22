@@ -146,6 +146,6 @@ stationary until the stage reaches the full acceleration set by
 </tr>
 </table>
 
---[GrahamBartlettPrior](User:GrahamBartlettPrior "wikilink") 13:14, 17
+--[GrahamBartlettPrior](/users/GrahamBartlettPrior "wikilink") 13:14, 17
 Oct 2019 (GMT)
 

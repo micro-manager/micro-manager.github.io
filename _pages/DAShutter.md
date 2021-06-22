@@ -122,5 +122,5 @@ output by setting the output voltage. You can then shutter the light
 with the DA Shutter device. If you change the voltage while the shutter
 is closed, the light will come on again (which is counter-intuitive).
 
---[Nico](User:Nico "wikilink") 16:02, 30 September 2008 (PDT)
+--[Nico](/users/Nico "wikilink") 16:02, 30 September 2008 (PDT)
 

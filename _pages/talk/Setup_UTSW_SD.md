@@ -6,4 +6,4 @@ layout: page
 
 Published with permission in [Setup\_UTSW\_SD](Setup_UTSW_SD "wikilink")
 
-[P.nanda](User:P.nanda "wikilink") 15:23, 2 April 2013 (PDT)
+[P.nanda](/users/P.nanda "wikilink") 15:23, 2 April 2013 (PDT)

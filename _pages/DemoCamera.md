@@ -86,5 +86,5 @@ This adapter is useful to 'test-drive' Micro-Manager without attached
 hardware, and is also extremely important for developers (since it lets
 us develop without attached hardware).
 
---[Nico](User:Nico "wikilink") 11:30, 25 August 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 11:30, 25 August 2007 (PDT)
 

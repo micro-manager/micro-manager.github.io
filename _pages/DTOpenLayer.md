@@ -80,5 +80,5 @@ with things that make sense to you (for instance, ' 488 nm'), make sure
 to prepend the value with a space, or otherwise it will not appear in
 the top of the list of choices in the drop-down menu in the MM UI.
 
---[Nico](User:Nico "wikilink") 11:22, 25 August 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 11:22, 25 August 2007 (PDT)
 

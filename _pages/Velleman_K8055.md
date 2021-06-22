@@ -143,5 +143,5 @@ your Device Manager should look as follows:
 
 ![](media/DeviceManagerFinal.png "DeviceManagerFinal.png")
 
---[Nico](User:Nico "wikilink") 18:21, 15 December 2007 (PST)
+--[Nico](/users/Nico "wikilink") 18:21, 15 December 2007 (PST)
 

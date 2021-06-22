@@ -328,6 +328,6 @@ the next 4 contain the length of the string to follow. The acquisition
 comments are written as a UTF-8 JSON string. This string is rewritten
 whenever acquisition or image comments are changed.
 
---[Henry Pinkard](User:Henry_Pinkard "wikilink") 7:35, 20th March 2013
+--[Henry Pinkard](/users/Henry_Pinkard "wikilink") 7:35, 20th March 2013
 (PDT)
 

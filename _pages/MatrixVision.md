@@ -87,6 +87,6 @@ GmbH devices, please visit the
 
 {% include Listserv_Search text="MATRIX VISION" %}
 
---[StefanB](User:StefanB "wikilink")
+--[StefanB](/users/StefanB "wikilink")
 ([talk](User_talk:StefanB "wikilink")) 02:23, 15 December 2016 (PST)
 

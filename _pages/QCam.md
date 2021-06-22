@@ -112,7 +112,7 @@ The Rolera MGi-Plus is an EM CCD camera that does not use the QImaging
 driver but interfaces with PVCAM instead. Use the
 [PVCAM](PVCAM "wikilink") adapter for that camera.
 
---[Nico](User:Nico "wikilink") 21:29, 1 September 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 21:29, 1 September 2007 (PDT)
 
 Note: As of 11/25/08 the link provided above does not give the right
 driver version. You need to download the
@@ -127,7 +127,7 @@ from the site but can still be obtained by pointing your browser
 here](http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe_here "wikilink")
 (Tested on 25th Feb 2009).
 
---[Prashanth](User:Prashanth "wikilink")
+--[Prashanth](/users/Prashanth "wikilink")
 
 Note: QCam 2.0.8 and above require the firewire card's driver to be
 upgraded from the generic microsoft driver to the newer thesycon driver.
@@ -139,7 +139,7 @@ FW card should be recognized as a 'T1394bus OHCI' device.
 Basic support for multiple cameras was added in the 20130718 nightly
 build (expected to be in release 1.4.15). You can select each camera
 when adding the QCam device in the Hardware Configuration Wizard.
---[Mark Tsuchida](User:Mark_Tsuchida "wikilink") 18:28, 18 July 2013
+--[Mark Tsuchida](/users/Mark_Tsuchida "wikilink") 18:28, 18 July 2013
 (PDT)
 
 The Qcam driver works with OS X up to Yosemite as long as you use the 32

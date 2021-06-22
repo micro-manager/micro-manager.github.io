@@ -77,5 +77,5 @@ of adapter needs to be improved. Often, when error message pops up,
 resending of the command solves the problem. Plugins for ImageJ for
 recording incubation values to a file are planned for near future.
 
---[Peter](User:Peto "wikilink") 16:41, 11 June 2008 (CET)
+--[Peter](/users/Peto "wikilink") 16:41, 11 June 2008 (CET)
 

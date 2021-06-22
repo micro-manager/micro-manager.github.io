@@ -93,5 +93,5 @@ above (J. Husson).
 The source code repository contains many more [example
 scripts](https://valelab.ucsf.edu/trac/micromanager/browser/scripts)
 
---[Nico](User:Nico "wikilink") 21:04, 15 December 2007 (PST)
+--[Nico](/users/Nico "wikilink") 21:04, 15 December 2007 (PST)
 

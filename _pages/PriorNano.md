@@ -102,6 +102,6 @@ the controller through the serial port so that no further software is
 needed. It works with Prior/Queensgate nanopositioning Z stages. No
 'hub' device is defined in this adapter.
 
---[GrahamBartlettPrior](User:GrahamBartlettPrior "wikilink") 13:14, 17
+--[GrahamBartlettPrior](/users/GrahamBartlettPrior "wikilink") 13:14, 17
 Oct 2019 (GMT)
 

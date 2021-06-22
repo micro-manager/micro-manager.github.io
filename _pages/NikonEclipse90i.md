@@ -96,7 +96,7 @@ configuration guide\] for more information.
 The lamp voltage can only be changed when the lamp is on. You will get a
 communication if you try to change the lamp intensity when it's off.
 
---[Egor Zindy](User:Zindy "wikilink") 21:00, 29 July 2014 (GMT)
+--[Egor Zindy](/users/Zindy "wikilink") 21:00, 29 July 2014 (GMT)
 
 {% include Listserv_Search text="Nikon" %}
 

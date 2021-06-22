@@ -96,10 +96,10 @@ The Vincent D3 controls up to 3 shutters. For each shutter, make a
 separate Vincent-D3 device, and set the "Channel \#" pre-initialization
 property to the desired shutter number.
 
---[Nico](User:Nico "wikilink") 09:36, 8 September 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 09:36, 8 September 2007 (PDT)
 
 If using an actual serial cable, ensure that the cable is of the ["null
 modem"](http://en.wikipedia.org/wiki/Null_modem) type.
 
---[oreopoj](User:oreopoj "wikilink") 14:06, 8 September 2010 (EST)
+--[oreopoj](/users/oreopoj "wikilink") 14:06, 8 September 2010 (EST)
 

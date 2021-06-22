@@ -136,8 +136,8 @@ property "ACTIVE VIEW INDEX" of the adapter. A setting of "0" will give
 you both images, setting "1" will give you only the image from one CCD,
 and setting "2" will give you the image from the other CCD.
 
---[Nico](User:Nico "wikilink") 12:38, 15 July 2008 (PDT), last updated
---[Nico](User:Nico "wikilink") 17:09, 26 August 2009 (UTC)
+--[Nico](/users/Nico "wikilink") 12:38, 15 July 2008 (PDT), last updated
+--[Nico](/users/Nico "wikilink") 17:09, 26 August 2009 (UTC)
 
 {% include notice icon="info" content="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
 

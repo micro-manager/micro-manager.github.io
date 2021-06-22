@@ -197,7 +197,7 @@ C:\\Program Files\\Micro-Manager1.3
 where you should replace 'username' with your username.
 {% include notice icon="info" content="The directory 'Appdata' is not visible to the Windows file explorer." %}
 
-\--[Nico](User:Nico "wikilink") 11:33, 31 August 2007 (PDT)
+\--[Nico](/users/Nico "wikilink") 11:33, 31 August 2007 (PDT)
 
 ## Notable changes
 

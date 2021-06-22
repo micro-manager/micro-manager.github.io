@@ -88,5 +88,5 @@ port settings are standard (9600 baud, 8 data bits, 1 stop bit, no
 parity, no handshaking, AnswerTimeout 6000 msec). You will need to
 defined the *Hub* device, and assign the right serial port to it.
 
---[Nico](User:Nico "wikilink") 17:10, 8 September 2007 (PDT)
+--[Nico](/users/Nico "wikilink") 17:10, 8 September 2007 (PDT)
 
