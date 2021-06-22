@@ -1,5 +1,6 @@
 ---
 title: Debugging
+layout: page
 section: Contribute:Editing the Wiki
 nav-links: true
 ---
@@ -19,7 +20,7 @@ Note that liquid allows the passing of [arbitrary arguments](https://jekyllrb.co
 
 ### What's in a `page`?
 
-{% include notice icon="tech" content="Ever wonder what all is part of the `page` data structure? Let's find out! 
+{% include notice icon="tech" content="Ever wonder what all is part of the `page` data structure? Let's find out!
 
 (You can also do this with the `site` data structure, but be warned: the output will include every page body across the whole site!)" %}
 

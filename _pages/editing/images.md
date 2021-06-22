@@ -1,6 +1,7 @@
 ---
 title: Images
-section: Contribute:Editing the Wiki
+layout: page
+section: Support:Editing the Wiki
 nav-links: true
 ---
 

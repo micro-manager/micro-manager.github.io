@@ -1,5 +1,6 @@
 ---
 title: Menu Paths
+layout: page
 section: Contribute:Editing the Wiki
 nav-links: true
 ---
@@ -37,4 +38,3 @@ You can optionally change the style of the path separators:
 {% include bc path="File|Save As|New Microscope" style='hollow' %}
 {% endcapture %}
 {% include editing/example code=bc-hollow-code result=bc-hollow-result %}
-
