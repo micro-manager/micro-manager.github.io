@@ -9,7 +9,7 @@ layout: page
 ### Setup
 
 [P.nanda](/users/P.nanda "wikilink")
-([talk](User_talk:P.nanda "wikilink")) 07:22, 23 May 2014 (PDT)
+07:22, 23 May 2014 (PDT)
 
 <table>
 <caption>Test System Setup</caption>
@@ -96,7 +96,7 @@ circle ROI and the size and shape cannot be customized.
 #### ROIs tab
 
 [P.nanda](/users/P.nanda "wikilink")
-([talk](User_talk:P.nanda "wikilink")) 11:17, 27 May 2014 (PDT)
+11:17, 27 May 2014 (PDT)
 
 ##### ROI Manager
 

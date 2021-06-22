@@ -270,4 +270,4 @@ acquisition, property discovery etc).
     Tutorials](http://docs.opencv.org/trunk/doc/py_tutorials/py_tutorials.html)
 
 Written by Eugene Dvoretsky -- [Radioxoma](/users/Radioxoma "wikilink")
-([talk](User_talk:Radioxoma "wikilink")) 09:19, 14 June 2014 (PDT)
+09:19, 14 June 2014 (PDT)

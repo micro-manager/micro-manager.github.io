@@ -95,7 +95,7 @@ It has been reported that an XY stage error ("Is the device is connected
 to the port") can be prevented by setting the controller (and
 Micro-Manager) to 115200 baud and setting DelayBetweenChars to 25 ms.
 --[Mark Tsuchida](/users/Mark_Tsuchida "wikilink")
-([talk](User_talk:Mark_Tsuchida "wikilink")) 15:35, 9 January 2015 (PST)
+15:35, 9 January 2015 (PST)
 
 **See also:** [Marzhauser](Marzhauser "wikilink") (TANGO) device adapter
 
