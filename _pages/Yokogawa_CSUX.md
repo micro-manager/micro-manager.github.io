@@ -112,9 +112,9 @@ milliseconds) you are using. The scanhead will then calculate a disk
 speed at which you will get a integral number of disk rotations during
 that exposure. This can help reduce artefacts in your image. If you
 change the disk speed using other controls, the value for this property
-will go back to 0. &lt;include notice icon="info" content="After changing drive speed,
+will go back to 0. {% include notice icon="info" content="After changing drive speed,
 the software will wait until the speed is within \~5% of its final
-target. Use the "Refresh" button to get the correct speed.😎"&gt;
+target. Use the `Refresh` button to get the correct speed." %}
 
 As of version 1.3.38, MIcro-Manager supports the bright field bypass
 option. There is no support for the second camera port option (although
@@ -126,4 +126,3 @@ please check out
 [CSU-X\_fiber\_rotation](CSU-X_fiber_rotation "wikilink") page.
 
 The CSU-X1 requires a null modem cable.
-

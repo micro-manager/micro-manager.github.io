@@ -104,11 +104,11 @@ and step-sizes down to 95nm. The MicroStage series can be used in
 conjunction with [Mad City Labs](http://www.madcitylabs.com)
 Nanopositioning systems for a complete positioning solution.
 
-&lt;include notice icon="info" content="To correctly use the XY List feature, including
-the "Calibrate" button, the positioning type must be set to "Absolute"
-on the Device/Property Browser. However, "Calibrate" on the
+{% include notice icon="info" content="To correctly use the XY List feature, including
+the `Calibrate` button, the positioning type must be set to `Absolute`
+on the Device/Property Browser. However, `Calibrate` on the
 Device/Property Browser (see below) calibrates correctly using either
-absolute or relative positioning.😎"&gt;
+absolute or relative positioning." %}
 
 The following properties are currently implemented in the Micro-Manager
 MCL Micro-Drive&trade adapter:
@@ -181,4 +181,3 @@ allows for calibration when positioning type is selected as relative.
 </td>
 </tr>
 </table>
-

@@ -95,12 +95,12 @@ controlled with either an AOTF, or shutters and ND filters, however, the
 LMM5 provides a uniform interface in all these situations.
 
 The LMM5 comes with either a serial or USB interface port (newer models
-will have both). &lt;include notice icon="info" content="As of Micro-Manager version
+will have both). {% include notice icon="info" content="As of Micro-Manager version
 1.4.15 (9/6/2013), you can use the USB interface. No driver installation
 is needed. In the Hardware Configuration Wizard, select the LMM5-Hub
-device. The drop-down menu in the "Value" column next to the "Port"
-pre-initialization property should contain the value "LMM5-HID". Select
-this port and you should be good to go.😎"&gt;
+device. The drop-down menu in the `Value` column next to the `Port`
+pre-initialization property should contain the value `LMM5-HID.` Select
+this port and you should be good to go." %}
 
 If this does not work, you can also connect to the device using a serial
 cable. Set the port to 19200 baud, no flow control, one stop bit, no
@@ -125,4 +125,3 @@ lines, and has some provisions for trigger out configurations (not well
 tested).
 
 --[Nico](User:Nico "wikilink") 11:05, 12 February 2008 (PST)
-

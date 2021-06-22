@@ -55,14 +55,14 @@ Pariksheet Nanda (Andor)</p></td>
 {% include MessageBox text="Support Advisory|Images may start to scroll to the center of the field after each snap, shifting one line at a time. Restarting the camera and uManager fixes the issue" %}
 {% include MessageBox text="Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue" %}
 
-&lt;INCLUDE MessageBox text="Support Advisory\|Zyla cameras running
-DriverPack3 / SDK3 3.7.30004.0 can cause a "blue screen of death" upon
+{% include MessageBox text="Support Advisory\|Zyla cameras running
+DriverPack3 / SDK3 3.7.30004.0 can cause a blue-screen-of deathn upon
 PC shutdown when certain other devices are installed (e.g. Arduino).
 This is not a serious problem, just annoying. The solution is to fully
 uninstall the SDK3 and Bitflow driver (and even run a registry cleaning
 software for good measure). Then install Andor SDK 3.8.30007.0 to the
 Micro-Manager install directory. Restart the PC and power cycle the
-camera before starting Micro-Manager.😎"&gt;
+camera before starting Micro-Manager." %}
 
 Install the Andor Driver Pack 3 (sCMOS) to the working Micro-Manager
 Directory e.g.
@@ -217,4 +217,3 @@ software team
     support](http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS)
 -   [Phone support](http://www.andor.com/contact_us/)
 -   [Email support](mailto:3rdpartysupport@andor.com)
-

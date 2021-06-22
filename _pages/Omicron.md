@@ -57,9 +57,9 @@ and/or monitored through µ-manager device/property browser:
     \[ %\])
 -   Reset
 
-{% include notice icon="info" content="Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the “Laser Operation Select” property." %}
+{% include notice icon="info" content="Laser emission will be automatically shut off at µ-Manager start up. Laser emission can be turned back on as desired by the `Laser Operation Select` property." %}
 
-{% include notice icon="info" content="Laser properties show the values of the last polling, simply click the “Refresh” button of the device/property browser to get the actual values. Adhoc communication of the laser is automatically disabled at µ-Manager start up." %}
+{% include notice icon="info" content="Laser properties show the values of the last polling, simply click the `Refresh` button of the device/property browser to get the actual values. Adhoc communication of the laser is automatically disabled at µ-Manager start up." %}
 
 {% include notice icon="info" content="Laser emission will automatically shut off when µ-manager is shut down." %}
 
@@ -94,16 +94,16 @@ following settings:
 
 -   Port Properties: Set up the properties as shown in the picture above
 
-{% include notice icon="info" content="Use a BaudRate of '''115200''' - a BaudRate of 19200 (as noted in the description of the Cobold device adapter) will not work!" %}
+{% include notice icon="info" content="Use a BaudRate of `115200` - a BaudRate of 19200 (as noted in the description of the Cobold device adapter) will not work!" %}
 
 After you have done this settings Micro Manager will connect to your
 cobolt laser and you can control the laser by the device/property
 browser.
 
-&lt;include notice icon="info" content="If your Cobolt laser is CDRH configured it will
-not start using the Cobolt-Laser--&gt;"ON" property - please first
+{% include notice icon="info" content="If your Cobolt laser is CDRH configured it will
+not start using the Cobolt-Laser--&gt;`ON` property - please first
 toggle the key switch - now the laser will turn ON after sending the
-command!😎"&gt;
+command!" %}
 
 For support on using the Cobol device adaptor please contact:
 mail@omicron-laser.de

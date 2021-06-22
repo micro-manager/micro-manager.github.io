@@ -1750,10 +1750,10 @@ MB
     -   Image Processor Chain - provides sequencing of C++-based image
         processors in the Micro-Manager core
 
-&lt;include notice icon="info" content="Burst acquisition (formerly a separate utility in
+{% include notice icon="info" content="Burst acquisition (formerly a separate utility in
 1.3) has been merged with multi-dimensional acquisition -- if you want
-to do a burst, simply select "Time Points" only and set the time
-interval to 0.😎"&gt;
+to do a burst, simply select `Time Points` only and set the time
+interval to 0." %}
 
 ## Micro-Manager 1.3
 
@@ -2143,4 +2143,3 @@ This new release includes:
 Old!)](Micro-Manager_1.2_Windows_(Very_Old!) "wikilink") \|
 [Micro-Manager 1.2 Mac (Very
 Old!)](Micro-Manager_1.2_Mac_(Very_Old!) "wikilink")
-

@@ -92,15 +92,15 @@ using a standard mini-USB cable. Please consider that you may need an
 USB Male-to Male cable, depending on the hardware revision of your
 control unit.
 
-&lt;INCLUDE Important text="If you have more than one controller, please
+{% include Important text="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
-becomes the master and the other is acting as a "slave device", so only
+becomes the master and the other is acting as a `slave device`, so only
 the controller connected to the Oko-Touch will answer to USB
-commands😎"&gt;
+commands" %}
 
 {% include notice icon="info" content="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
-If, after the installation, the ''okolib'' folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
+If, after the installation, the `okolib` folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
 
 ## Configuration
 
@@ -111,7 +111,7 @@ If, after the installation, the ''okolib'' folder is missing in your Micro-Manag
     it or clicking the *Add* button when selected.
 4.  Select the right COM Port or select Auto and press OK.
 
-{% include notice icon="info" content="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the `Okolab` node if `Available Devices` list is ordered by vendor or in the `Generic Device` node if list is ordered by type." %}
 
 ## Usage
 
@@ -180,12 +180,12 @@ using a standard mini-USB cable. Please consider that you may need an
 USB Male-to Male cable, depending on the hardware revision of your
 control unit.
 
-&lt;INCLUDE Important text="If you have more than one controller, please
+{% include Important text="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
-becomes the master and the other is acting as a "slave device", so only
+becomes the master and the other is acting as a `slave device`, so only
 the controller connected to the Oko-Touch will answer to USB
-commands😎"&gt;
+commands" %}
 
 To use this adapter, you must manually install OKO-Control Server
 software which can be downloaded
@@ -209,11 +209,10 @@ The installation is straightforward, default settings can be used.
     writing the whole COM string into Value field of Property COM Port
     (eg. *COM1*).
 
-{% include notice icon="info" content="Okolab devices can be found in the ''Okolab'' node if ''Available Devices'' list is ordered by vendor or in the ''Generic Device'' node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the `Okolab` node if `Available Devices` list is ordered by vendor or in the `Generic Device` node if list is ordered by type." %}
 
 ### Usage
 
 See current version
 
 {% include Listserv_Search text="Okolab" %}
-

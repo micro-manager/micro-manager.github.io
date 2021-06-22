@@ -94,12 +94,12 @@ to your computer. Test that the camera works with the software provided
 by Thorlabs. Run MM and make a config file that uses the device adapter
 "ThorlabsUSBCamera".
 
-&lt;include notice icon="info" content="If you see ThorlabsUSBCamera listed as
-"(unavailable)" in the Hardware Configuration Wizard, try removing the
+{% include notice icon="info" content="If you see ThorlabsUSBCamera listed as
+`(unavailable)` in the Hardware Configuration Wizard, try removing the
 file mmgr\_dal\_IDS\_uEye.dll from your Micro-Manager installation and
 restarting Micro-Manager. (The two device adapters will conflict with
 each other until a fix to Micro-Manager itself addressing this issue is
-available.)😎"&gt;
+available.)" %}
 
 **Notes:** Besides USB2 and USB3 cameras, this adapter should also
 support GigE cameras of the same DCx family (but never tested).

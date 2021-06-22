@@ -14,10 +14,10 @@ layout: page
 
 </object></includeonly>
 
-&lt;INCLUDE \#widget:FlickrShow
+ include \#widget:FlickrShow
 
 ```
 text="query=flowers
 ```
 
-\|width=580 \|height=350 😎"&gt;
+\|width=580 \|height=350 " 
