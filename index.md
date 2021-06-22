@@ -14,18 +14,8 @@ layout: home
     </section>
 {:/}
 
-<!--ImageJ Introduction -->
-<section id="one" class="main">
-  <div class="container">
-    <div class="row gtr-150">
-      <div class="col-12 col-12-medium">
-        <header class="major">
-          <h1>Why µManager?</h1>
-        </header>
-        </div>
-    </div>
-  </div>
-</section>
+<!--MicroManager Introduction -->
+<section id="one">
 <div class="text-center">
 <header class="container-whyij">
     <div class="row-whyij">
@@ -53,6 +43,8 @@ layout: home
     </div>
   </div>
 </header>
+</div>
+</section>
 
 <!-- Calls to Action -->
 <section id="resources" class="main style3 special">
@@ -81,9 +73,6 @@ layout: home
 <div style="clear: both"></div>
 
 <!--Twitter--->
-
-</div>
-
 <div class="info-twitter">
 <div class="info-block">
 <h3><a href="/Why_Micro-Manager?">HOW IS μMANAGER DIFFERENT?</a></h3>
