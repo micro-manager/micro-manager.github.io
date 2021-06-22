@@ -279,3 +279,5 @@ Install them from:
         `Port_#0002, Port_#0003` as COM 205 and 206, respectively
 -   Restart the computer to apply the COM port changes
 
+
+[Discussion page](/talk/AndorLaserCombiner) for AndorLaserCombiner imported from old wiki

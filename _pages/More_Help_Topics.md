@@ -42,3 +42,5 @@ Hardware Setup Examples:
 -   [ Spinning-disk Laser Confocal (software installation
     report)](Setup_UTSW_SD "wikilink")
 
+
+[Discussion page](/talk/More_Help_Topics) for More_Help_Topics imported from old wiki

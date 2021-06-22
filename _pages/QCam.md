@@ -149,3 +149,5 @@ to a QiClick camera. --David Knecht 1-12-16
 
 {% include Listserv_Search text="QImaging" %}
 
+
+[Discussion page](/talk/QCam) for QCam imported from old wiki

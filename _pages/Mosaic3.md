@@ -348,3 +348,5 @@ change `Image > Type` to `8-bit` instead of the default `32-bit`
 (opening as 32-bit is possibly a bug in ImageJ?).
 
 {% include Listserv_Search text="Mosaic" %}
+
+[Discussion page](/talk/Mosaic3) for Mosaic3 imported from old wiki
