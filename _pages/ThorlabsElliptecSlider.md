@@ -103,4 +103,4 @@ channel 0. The channel can be easily read out from the Elliptec software
 on the same COMport, different channels must be set for the individual
 devices.
 
-{% include Important text=" The ELL9 can be slow to get to a new position, it will therefore give a '''TimeOut error''' if the time out of the COMport is set too low (e.g. the default 500 ms). We advise using a TimeOut of 2s for the ELL9, and potentially for the ELL17/ELL20 as well." %}
+{% include notice icon="note" content=" The ELL9 can be slow to get to a new position, it will therefore give a '''TimeOut error''' if the time out of the COMport is set too low (e.g. the default 500 ms). We advise using a TimeOut of 2s for the ELL9, and potentially for the ELL17/ELL20 as well." %}
