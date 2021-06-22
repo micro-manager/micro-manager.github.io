@@ -1,5 +1,6 @@
 ---
 title: Buttons
+layout: page
 section: Contribute:Editing the Wiki
 nav-links: true
 ---
