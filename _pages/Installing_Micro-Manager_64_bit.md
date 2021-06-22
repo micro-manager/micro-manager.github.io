@@ -9,7 +9,7 @@ x64**
 Christian Hentrich, 9/2011  
 hentrich@molbio.mgh.harvard.edu
 
-{% include Note text="This page is more about the specific devices mentioned below than Micro-Manager itself, and may be out of date even when concerning those devices. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 16:02, 17 September 2013 (PDT)" %}
+{% include notice icon="info" content="This page is more about the specific devices mentioned below than Micro-Manager itself, and may be out of date even when concerning those devices. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 16:02, 17 September 2013 (PDT)" %}
 
 The obvious advantage for using 64 bit in Micro-Manager is the larger
 amount of memory one can assign to ImageJ/Micro-Manager, as the 2GB per

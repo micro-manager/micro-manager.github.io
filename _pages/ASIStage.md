@@ -167,7 +167,7 @@ of these state changes are implemented in the CRIFF and CRISP adapters.
 In general, it is easiest to first calibrate the CRIFF/CRISP by hand and
 then use Micro-manager to lock and unlock the CRIFF/CRISP.
 
-{% include Note text="For the CRISP focus curve to work correctly, you need to increase the serial port timeout to approximately 1500 ms." %}
+{% include notice icon="info" content="For the CRISP focus curve to work correctly, you need to increase the serial port timeout to approximately 1500 ms." %}
 
 As of ASI controller version 8.0 (called the 'WK Whizkid'), the built-in
 USB connection is actually a USB to serial converter. You can find

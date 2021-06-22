@@ -93,7 +93,7 @@ All
 | **StopBits:**            | 1        |
 | **Verbose:**             | 0        |
 
-{% include Note text=" The SerialSequenceUploader.ino firmware sets serial speed to 9600. One might try 57600 or 115200 if you plan on using Micromanager to drive the NicoLase directly, instead of using a Camera trigger signal to trigger the NicoLase" %}
+{% include notice icon="info" content=" The SerialSequenceUploader.ino firmware sets serial speed to 9600. One might try 57600 or 115200 if you plan on using Micromanager to drive the NicoLase directly, instead of using a Camera trigger signal to trigger the NicoLase" %}
 
 The NicoLase is an Arduino shield and Firmware that expands the number
 of TTL outputs and inputs compared to the original Micromanager's

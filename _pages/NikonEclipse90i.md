@@ -57,7 +57,7 @@ and 'Next'.
 verify the publisher of this driver
 software](media/Driver_warning_90i.png "|thumb|center|upright=2.5|alt=Device Manager.|Windows can't verify the publisher of this driver software")
 
-{% include Note text="The wizard will warn you that 'Windows can't verify the publisher of this driver software'. If you click 'Install this driver software anyway', the driver for the 90i should be successfully installed." %}
+{% include notice icon="info" content="The wizard will warn you that 'Windows can't verify the publisher of this driver software'. If you click 'Install this driver software anyway', the driver for the 90i should be successfully installed." %}
 
 ## Hardware Configuration Wizard
 
@@ -85,7 +85,7 @@ should be set to go.
 Wizard.\|Hardware configuration wizard. Add any additional
 hardware](media/Hardware_wizard_90i_3.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware configuration wizard. Add any additional hardware")
 
-{% include Note text="If you provide magnification information to the system for each of your objectives, MicroManager will automatically calculate the correct pixel size based on the current zoom settings." %}
+{% include notice icon="info" content="If you provide magnification information to the system for each of your objectives, MicroManager will automatically calculate the correct pixel size based on the current zoom settings." %}
 
 See
 \[//micro-manager.org/documentation.php?object=Configguide\#Calibration:See

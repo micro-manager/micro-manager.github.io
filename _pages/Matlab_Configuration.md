@@ -83,7 +83,7 @@ hopefully):**
 1\. Install Micro-Manager in a path without any spaces (for instance:
 C:\\Micro-Manager1.4.6).
 
-{% include Note text="At least with recent versions of MATLAB, there is no need to install in a path without spaces (tested with MATLAB R2013a)." %}
+{% include notice icon="info" content="At least with recent versions of MATLAB, there is no need to install in a path without spaces (tested with MATLAB R2013a)." %}
 
 2\. In Matlab command prompt
 
@@ -111,7 +111,7 @@ C:/Micro-Manager-1.4/plugins/Micro-Manager/scifio.jar
 C:/Micro-Manager-1.4/plugins/Micro-Manager/guava-17.0.jar
 ```
 
-{% include Note text="At least in recent versions of MATLAB (tested with R2013a), the file classpath.txt is automatically generated and should not be edited manually, lest it be overwritten. If classpath.txt contains a comment to that effect, use instead this command:
+{% include notice icon="info" content="At least in recent versions of MATLAB (tested with R2013a), the file classpath.txt is automatically generated and should not be edited manually, lest it be overwritten. If classpath.txt contains a comment to that effect, use instead this command:
  >> edit([prefdir '/javaclasspath.txt']);
 The first time you edit the file, it will have to be created. After restarting MATLAB, you can check that the paths have been included in the MATLAB classpath by typing
  >> javaclasspath
@@ -163,7 +163,7 @@ end
 
 **A function to help MATLAB recognize Micro-Manager**
 
-{% include Note text="As of uManager version 1.4.18 there is a conflict between deprecated java classes used by MATLAB and the Google Guava library, specifically the google-collect.jar. One work around is to load the uManager specific libraries before the MATLAB default libraries. This gives uManager libraries priority in the java class path. This can be done by adding the text ''<before>'' at the top of the javaclasspath.txt file. However, this may lead to unforeseen consequences in other software that rely upon the default MATLAB libraries. The ''<before>'' statement has been added to the code below, so please keep this in mind. This has been verified to work in MATLAB ver 2014a 32-bit. If you are only using the Core (no uManager GUI), the Guava library is not needed and there is no conflict." %}
+{% include notice icon="info" content="As of uManager version 1.4.18 there is a conflict between deprecated java classes used by MATLAB and the Google Guava library, specifically the google-collect.jar. One work around is to load the uManager specific libraries before the MATLAB default libraries. This gives uManager libraries priority in the java class path. This can be done by adding the text ''<before>'' at the top of the javaclasspath.txt file. However, this may lead to unforeseen consequences in other software that rely upon the default MATLAB libraries. The ''<before>'' statement has been added to the code below, so please keep this in mind. This has been verified to work in MATLAB ver 2014a 32-bit. If you are only using the Core (no uManager GUI), the Guava library is not needed and there is no conflict." %}
 
 The following code, when saved and used as a function will scan the
 Micro-Manager folder and create a text file, with all the jar

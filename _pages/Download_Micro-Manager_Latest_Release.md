@@ -34,7 +34,7 @@ Micro-Manager, it is recommended to use the latest nightly build of
 
 [(Previous releases)](Micro-Manager_Version_Archive "wikilink")
 
-{% include Note text=" Due to security issues on OSX 10.12 and later, Micro-Manager does not start when opening ImageJ. To circumvent this, within the Micro-Manager folder in Applications, hold command and drag ImageJ onto the desktop. Then hold command and drag it back in. Then try running again.  See [Installation Notes](Micro-Manager_Installation_Notes)." %}
+{% include notice icon="info" content=" Due to security issues on OSX 10.12 and later, Micro-Manager does not start when opening ImageJ. To circumvent this, within the Micro-Manager folder in Applications, hold command and drag ImageJ onto the desktop. Then hold command and drag it back in. Then try running again.  See [Installation Notes](Micro-Manager_Installation_Notes)." %}
 
 ## Nightly Builds
 

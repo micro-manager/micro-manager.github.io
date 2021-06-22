@@ -61,10 +61,10 @@ Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
 
 1.  You should now be able to Run and Debug the code.
 
-{% include Note text="Explanation of the `Dforce.annotation.index` option: Micro-Manager uses Scijava plugins for many of its internal components. In order for plugins to be detected at runtime it is important that the annotation processor is enabled. The `Dforce.annotation.index` option will attempt to force to processor to be enabled. Optionally, you could also go to `settings->Build,Execution,Deployment > Annotation
+{% include notice icon="info" content="Explanation of the `Dforce.annotation.index` option: Micro-Manager uses Scijava plugins for many of its internal components. In order for plugins to be detected at runtime it is important that the annotation processor is enabled. The `Dforce.annotation.index` option will attempt to force to processor to be enabled. Optionally, you could also go to `settings->Build,Execution,Deployment > Annotation
 Processors` and make sure that `Enable annotation processing` is
 checked. If you find that the program crashes with a
 `NullPointerException` on startup you may have forgotten to enable
 annotation processing." %}
 
-{% include Note text="The components from the installed Micro-Manager can get out of sync with the source code. If you encounter unexpected errors, update to the latest nightly build and the latest source revision." %}
+{% include notice icon="info" content="The components from the installed Micro-Manager can get out of sync with the source code. If you encounter unexpected errors, update to the latest nightly build and the latest source revision." %}

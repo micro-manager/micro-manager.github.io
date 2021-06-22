@@ -70,13 +70,13 @@ client](http://subversion.tigris.org/).
 <https://valelab4.ucsf.edu/svn/micromanager2/trunk/> - Release 1.4  
 <https://valelab4.ucsf.edu/svn/3rdpartypublic/> - 3rd party files needed
 for Release 1.4  
-{% include Note text='There is a bug in the Subversion 1.8 client that
+{% include notice icon="info" content='There is a bug in the Subversion 1.8 client that
 prevents you from checking out our public repositories without a
 username. If Subversion asks you for a username and password, you can
 use the username "guest" (password "guest") as a workaround. Subversion
 1.7.x clients should not experience this problem.' %}
 
-{% include Note text="Sometimes, a fresh checkout of the 3rdpartypublic
+{% include notice icon="info" content="Sometimes, a fresh checkout of the 3rdpartypublic
 repository will fail (possibly due to the subversion server timeout
 settings) with
 `ra_surf: The server sent a truncated HTTP response body`. To work

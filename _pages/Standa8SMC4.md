@@ -120,7 +120,7 @@ not tested yet.
     to flash*. For additional information check [User
     guide](https://en.xisupport.com/projects/enxisupport/wiki/XILab_application_User's_guide).
 
-{% include Note text="64-bit version is supported too. Do not forget to use libraries from <code>ximc-2.7.6/ximc/win64/</code> directory instead of <code>win32</code>.
+{% include notice icon="info" content="64-bit version is supported too. Do not forget to use libraries from <code>ximc-2.7.6/ximc/win64/</code> directory instead of <code>win32</code>.
 " %}
 
 <figure>
@@ -131,7 +131,7 @@ not tested yet.
 
 ### Run Micro-Manager
 
-{% include Note text="
+{% include notice icon="info" content="
 Note. When installing the Micro-Manager in <code>C:\Program Files</code> access to configuration files is limited and you need to have administrator privileges. To start an application as administrator right click by its icon and choose <code>Run as administrator</code>. 
 " %}
 
@@ -224,10 +224,10 @@ and drag it in the desired direction. Stage will move in the same
 direction. Double click will allow you to center the view on the chosen
 point in the image.
 
-{% include Note text="
+{% include notice icon="info" content="
 For example you set the pixel size is equal to 1um. And ''UnitMultiplierX/Y'' is equals to 1.0000. With 8MTF stage table one pixel shift corresponds to 12.5um. If we will set ''UnitMultiplierX/Y'' to 12.5 than movement at one pixel will corresponds to 1um.
 " %}
 
-{% include Note text="
+{% include notice icon="info" content="
 You may decrease ''UnitMultiplier'' if the stage speed is low and increase it if the stage speed is very high. 
 " %}

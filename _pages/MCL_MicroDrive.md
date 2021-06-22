@@ -104,7 +104,7 @@ and step-sizes down to 95nm. The MicroStage series can be used in
 conjunction with [Mad City Labs](http://www.madcitylabs.com)
 Nanopositioning systems for a complete positioning solution.
 
-&lt;INCLUDE Note text="To correctly use the XY List feature, including
+&lt;include notice icon="info" content="To correctly use the XY List feature, including
 the "Calibrate" button, the positioning type must be set to "Absolute"
 on the Device/Property Browser. However, "Calibrate" on the
 Device/Property Browser (see below) calibrates correctly using either

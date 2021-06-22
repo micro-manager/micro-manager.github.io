@@ -5,12 +5,12 @@ layout: page
 section: Programming
 ---
 ## Getting Started
-{% include Note text="This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [[Version_2.0_Plugins]]. " %}
+{% include notice icon="info" content="This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [[Version_2.0_Plugins]]. " %}
 
 Micro-Manager has a Java-based plugin system similar to ImageJ's. To
 write a Micro-Manager plugin, simply implement the [`MMPlugin`
 interface](https://valelab4.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/MMPlugin.java).
-{% include Note text="The static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu." %}
+{% include notice icon="info" content="The static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu." %}
 
 Micro-Manager's classpath is set up so that Micro-Manager plugins can
 import classes from:
@@ -56,7 +56,7 @@ IntelliJ](http://trtwn.de/intellij-micro-manager/).)
 
 ## Using Netbeans
 
-{% include Note text="Here, the text assumes that MicroManager is installed in the <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> directory. However, in the screenshots, the location is <code>/home/maxime/code/mm/builds/ImageJ</code>." %}
+{% include notice icon="info" content="Here, the text assumes that MicroManager is installed in the <code>C:\Program Files\Micro-Manager-1.4\plugins\Micro-Manager</code> directory. However, in the screenshots, the location is <code>/home/maxime/code/mm/builds/ImageJ</code>." %}
 The dynamic loading feature (described above) is useful if you are
 developing your plugin using an IDE such as Eclipse or Netbeans. (The
 Micro-Manager distribution includes `swing-layout-*.*.jar` so that you

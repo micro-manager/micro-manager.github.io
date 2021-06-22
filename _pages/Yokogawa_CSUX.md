@@ -112,7 +112,7 @@ milliseconds) you are using. The scanhead will then calculate a disk
 speed at which you will get a integral number of disk rotations during
 that exposure. This can help reduce artefacts in your image. If you
 change the disk speed using other controls, the value for this property
-will go back to 0. &lt;INCLUDE Note text="After changing drive speed,
+will go back to 0. &lt;include notice icon="info" content="After changing drive speed,
 the software will wait until the speed is within \~5% of its final
 target. Use the "Refresh" button to get the correct speed.😎"&gt;
 

@@ -4,7 +4,7 @@ title: Building Universal Binaries on Mac OS X
 layout: page
 ---
 
-{% include Note text="See [[Build on MacOS X]] for up-to-date instructions on building on OS X. If you really need to build universal binaries, look at the scripts in <code>buildscripts/nightly/nightlybuild_OSX_*.sh</code> for how to do it. It is no longer necessary to build for separate architectures and merge the binaries afterwards." %}
+{% include notice icon="info" content="See [[Build on MacOS X]] for up-to-date instructions on building on OS X. If you really need to build universal binaries, look at the scripts in <code>buildscripts/nightly/nightlybuild_OSX_*.sh</code> for how to do it. It is no longer necessary to build for separate architectures and merge the binaries afterwards." %}
 
 We found the least painful way to build Universal Binaries (32-bit ppc,
 32-bit intel, 64-bit intel) to be to build code for each platform

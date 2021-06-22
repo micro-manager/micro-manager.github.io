@@ -38,7 +38,7 @@ camera first in the JAI Control Tool. You may need to turn off auto
 exposure and auto gain in order to change the exposure and gain in
 Micro-Manager (otherwise those properties will appear as read-only).
 
-{% include Note text="Version mismatch between Micro-Manager and the JAI SDK can lead to subtle/intermittent/camera-dependent issues. If you are using MM 1.4.15 or earlier (or nightly build 20131002 or earlier), use JAI SDK 1.3.0; if you are using nightly build 20131003 or later, use JAI SDK 1.4.1." %}
+{% include notice icon="info" content="Version mismatch between Micro-Manager and the JAI SDK can lead to subtle/intermittent/camera-dependent issues. If you are using MM 1.4.15 or earlier (or nightly build 20131002 or earlier), use JAI SDK 1.3.0; if you are using nightly build 20131003 or later, use JAI SDK 1.4.1." %}
 
 ## Notes
 

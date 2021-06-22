@@ -4,7 +4,7 @@ title: Building MM on Windows
 layout: page
 ---
 
-{% include Note text="Updated for Visual Studio 2010. The following applies since SVN r11946. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 11:15, 10 October 2013 (PDT)" %}
+{% include notice icon="info" content="Updated for Visual Studio 2010. The following applies since SVN r11946. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 11:15, 10 October 2013 (PDT)" %}
 
 ## Before you start
 
@@ -25,7 +25,7 @@ such as [TortoiseSVN](http://tortoisesvn.net/) also work well.
 
 ### Microsoft Visual Studio 2010 SP1 Express
 
-{% include Note text="The official binaries are, for the time being, still built with VS 2010. However, it is possible to build device adapters using any newer version of VisualStudio, and this may be preferred for newer systems where VS 2010 binaries are hard to come by. Device adapters are '''not''' required to be built by the same version of VS as MMCore.  See [http://micro-manager.3463995.n2.nabble.com/Building-Device-Adapters-on-Windows-10-with-Visual-Studio-2015-Community-tp7587098.html this thread] in the mailing list archives about using VS 2015." %}
+{% include notice icon="info" content="The official binaries are, for the time being, still built with VS 2010. However, it is possible to build device adapters using any newer version of VisualStudio, and this may be preferred for newer systems where VS 2010 binaries are hard to come by. Device adapters are '''not''' required to be built by the same version of VS as MMCore.  See [http://micro-manager.3463995.n2.nabble.com/Building-Device-Adapters-on-Windows-10-with-Visual-Studio-2015-Community-tp7587098.html this thread] in the mailing list archives about using VS 2015." %}
 
 Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device
 adapters) are currently built using Visual Studio 2010 Express. To
@@ -47,7 +47,7 @@ free downloads):
     installing this package:
     <http://www.microsoft.com/en-us/download/details.aspx?id=4422>
 
-{% include Note text='The **order if installation is important**. In
+{% include notice icon="info" content='The **order if installation is important**. In
 particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed
 first. If you are in that situation, the only way out that I have found
 is to go to Control Panel > "Uninstall a program", uninstall
@@ -55,9 +55,9 @@ everything with "Microsoft Visual ... 2010" in its name
 (Redistributable, Runtime, Express, Compilers, Service Pack, Tools for
 Office Runtime), and start over.' %}
 
-{% include Note text="It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). " %}
+{% include notice icon="info" content="It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). " %}
 
-{% include Note text='If the SDK installation fails with **Fatal error
+{% include notice icon="info" content='If the SDK installation fails with **Fatal error
 during installation**, you may need to first uninstall the VS2010
 redistributables (x86 and x64), uninstall the broken 7.1 SDK install,
 reinstall the 7.1 SDK and untick "Visual C++ compilers" from the list as

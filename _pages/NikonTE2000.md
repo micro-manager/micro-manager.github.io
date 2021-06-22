@@ -92,7 +92,7 @@ This adapter communicates to all the devices in the TE2000 through the
 hub device. Thus, to use any of these devices, you will need to first
 define the hub device (and the serial port behind which the hub lives).
 
-{% include Note text="This adapter sends commands one by one (i.e., it sends a command and waits for an answer before it will send the next command). Performance can be improved by sending commands without waiting for an answer and the source code has some facilities to do this.  Volunteers to work on this will be highly appreciated by all users of the adapter!" %}
+{% include notice icon="info" content="This adapter sends commands one by one (i.e., it sends a command and waits for an answer before it will send the next command). Performance can be improved by sending commands without waiting for an answer and the source code has some facilities to do this.  Volunteers to work on this will be highly appreciated by all users of the adapter!" %}
 
 {% include Listserv_Search text="Nikon" %}
 

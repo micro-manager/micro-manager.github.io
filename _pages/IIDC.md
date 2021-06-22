@@ -147,7 +147,7 @@ you what the values for *A* and *B* are, or how to compute them. In IIDC
 1.x terminology, exposure/integration time is called the "Shutter"
 feature, so you may want to search for terms like "manual shutter".
 
-{% include Note text="With some cameras, the value of ''A'' depends on the image width. This is not yet supported by the IIDC device adapter." %}
+{% include notice icon="info" content="With some cameras, the value of ''A'' depends on the image width. This is not yet supported by the IIDC device adapter." %}
 
 Once you know the values for A and B, go back to the Hardware
 Configuration Wizard, edit the IIDCCamera device, and set the values for

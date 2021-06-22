@@ -4,7 +4,7 @@ title: How To Build Micro Manager From Source On Ubuntu 13.10
 layout: page
 ---
 
-{% include Note text="This page has been updated to reflect the build system changes of r13120 and r13223, but the updated script has not been tested. Ask on the mailing list if you run into issues." %}
+{% include notice icon="info" content="This page has been updated to reflect the build system changes of r13120 and r13223, but the updated script has not been tested. Ask on the mailing list if you run into issues." %}
 
 Here is a small script I use to build MM on Linux to be able to test new
 features and develop plugins with DemoAdaptaters. I can provide help to

@@ -4,7 +4,7 @@ title: Building Firewire camera support on Linux
 layout: page
 ---
 
-{% include Note text="The following content no longer applies to current Micro-Manager source code." %}
+{% include notice icon="info" content="The following content no longer applies to current Micro-Manager source code." %}
 
 Contributed by Nicos Pavlov, 9/26/2010
 

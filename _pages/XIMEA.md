@@ -108,19 +108,19 @@ drivers](http://www.ximea.com/support/wiki/apis/XIMEA_API_Software_Package/)
 (if you have previous installations of drivers for the XM-10 or XC-10
 you might need to manually update the driver to the version in the
 installed API Package)
-{% include Note text="As of Micro-Manager nightly build 20140908 (pre-1.4.19), XIMEA API (beta) 4.01.76 is required.<br />As of Micro-Manager 1.4.21, XIMEA API 4.04.00 is required.<br />As of nightly build 20151015 (pre-1.4.23), XIMEA API (beta) 4.05.58 is required." %}
+{% include notice icon="info" content="As of Micro-Manager nightly build 20140908 (pre-1.4.19), XIMEA API (beta) 4.01.76 is required.<br />As of Micro-Manager 1.4.21, XIMEA API 4.04.00 is required.<br />As of nightly build 20151015 (pre-1.4.23), XIMEA API (beta) 4.05.58 is required." %}
 
 -   Copy XIMEA\\API\\x64\\m3apiX64.dll (just take xiapi64.dll and rename
     it to m3apiX64.dll)from the installed XIMEA API Software Package to
     the μManager root folder.
 
-{% include Note text="As of nightly builds starting 20180404, no longer rename xiapi64.dll.  Just copy that file to the Micro-Manager directory." %}
-&lt;INCLUDE Note text="As of nightly builds starting 20180404, the
+{% include notice icon="info" content="As of nightly builds starting 20180404, no longer rename xiapi64.dll.  Just copy that file to the Micro-Manager directory." %}
+&lt;include notice icon="info" content="As of nightly builds starting 20180404, the
 naming scheme of the camera has been changed. If your configuration file
 stops working, you may need to open it in a text editor, find a line
 that looks like: "Device,FastCam,XIMEACamera, 9652450", and replace the
 space in front of the camera number with a "0", resulting in:
-"Device,FastCam,XIMEACamera,09652450".😎"&gt; &lt;INCLUDE Note text="As
+"Device,FastCam,XIMEACamera,09652450".😎"&gt; &lt;include notice icon="info" content="As
 of nightly builds starting 20180404, changes were made to property
 names. Your configuration file may stop working, but can probably be
 easily fixed. For instance, I had to change "Mono 12" to "Mono16" to get

@@ -6,7 +6,7 @@ layout: page
 
 ## Twain Camera adapter
 
-{% include Note text="The TwainCamera device adapter is broken in recent versions of Micro-Manager." %}
+{% include notice icon="info" content="The TwainCamera device adapter is broken in recent versions of Micro-Manager." %}
 
 <table>
 <tr>

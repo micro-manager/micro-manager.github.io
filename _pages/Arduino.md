@@ -110,7 +110,7 @@ queries the Arduino every second).
 | StopBits            | 1     |
 | Verbose             | 0     |
 
-{% include Note text="If you get the following error message when trying to *Add* the Arduino device in the Wizard: <code>There are no unused ports available!</code>, first check that the Arduino is connected to the computer. Also, under GNU/Linux systems,make sure that your user is in the <code>dialout</code> system group ([http://micro-manager.3463995.n2.nabble.com/Contol-Leica-DMI6000B-using-MM-on-Linux-td7582998.html see details]). 
+{% include notice icon="info" content="If you get the following error message when trying to *Add* the Arduino device in the Wizard: <code>There are no unused ports available!</code>, first check that the Arduino is connected to the computer. Also, under GNU/Linux systems,make sure that your user is in the <code>dialout</code> system group ([http://micro-manager.3463995.n2.nabble.com/Contol-Leica-DMI6000B-using-MM-on-Linux-td7582998.html see details]). 
 " %}
 
 ### Peripheral Devices Setup

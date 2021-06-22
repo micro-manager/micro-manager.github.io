@@ -119,7 +119,7 @@ will need to first add the TIScope device.
 
 ## Installation
 
-{% include Note text="Do not plug the Ti microscope into a USB 3 port (usually colored blue). The scope may not report its status correctly to the PC after manual operations (observed at least with firmware 5.00, driver 4.3.2.622 or 4.4.1.714). Use a USB 2 port." %}
+{% include notice icon="info" content="Do not plug the Ti microscope into a USB 3 port (usually colored blue). The scope may not report its status correctly to the PC after manual operations (observed at least with firmware 5.00, driver 4.3.2.622 or 4.4.1.714). Use a USB 2 port." %}
 
 This adapter uses the driver and API supplied by Nikon. The latest
 version of Ti Setup Tool (which includes drivers for the Ti microscope
@@ -213,7 +213,7 @@ point).
 
 ## Device-specific notes
 
-{% include Note text="There has been a major update to the NikonTI device adapter in version 1.4.15 (nightly build of 20130719). The notes below apply to the new version, unless otherwise noted." %}
+{% include notice icon="info" content="There has been a major update to the NikonTI device adapter in version 1.4.15 (nightly build of 20130719). The notes below apply to the new version, unless otherwise noted." %}
 
 ### Turret devices
 

@@ -29,7 +29,7 @@ Micro-Manager script panel:
 mmc.setRelativeXYPosition(mmc.getXYStageDevice(), 1000, 1000);  
 This should move the stage by 1 mm to the left and 1 mm to the top, away
 from the observer.
-{% include Note text="Check that the 'pitch' of the stage is correct, i.e., the stage really moves by 1 mm." %}
+{% include notice icon="info" content="Check that the 'pitch' of the stage is correct, i.e., the stage really moves by 1 mm." %}
 
 **Z-Stages** (Focus stages) will have their lowest values away from the
 sample (at the lowest point for inverted scopes and the highest point of
@@ -53,7 +53,7 @@ properties up correctly. It is easiest to first ensure correct
 directionality of the XY stage and use a one line script as above to
 move the stage in a defined orientation and observer the movement of an
 object in the image.
-{% include Note text="Some changes in camera properties (for instance, the choice of readout port for some EM cameras) can change image orientation.  Camera adapters can also carry out these transformations on the image (generating an image in the 'correct' orientation).  Whether or not the adapter carries out these transformations is indicated with the property 'TransposeCorrection'.  There are not yet any adapters that carry out such corrections." %}
+{% include notice icon="info" content="Some changes in camera properties (for instance, the choice of readout port for some EM cameras) can change image orientation.  Camera adapters can also carry out these transformations on the image (generating an image in the 'correct' orientation).  Whether or not the adapter carries out these transformations is indicated with the property 'TransposeCorrection'.  There are not yet any adapters that carry out such corrections." %}
 
 **Store settings**: It is highly desirable to have the camera Transpose
 settings as well as other configuration settings describing

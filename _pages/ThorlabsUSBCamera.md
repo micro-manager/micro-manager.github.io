@@ -94,7 +94,7 @@ to your computer. Test that the camera works with the software provided
 by Thorlabs. Run MM and make a config file that uses the device adapter
 "ThorlabsUSBCamera".
 
-&lt;INCLUDE Note text="If you see ThorlabsUSBCamera listed as
+&lt;include notice icon="info" content="If you see ThorlabsUSBCamera listed as
 "(unavailable)" in the Hardware Configuration Wizard, try removing the
 file mmgr\_dal\_IDS\_uEye.dll from your Micro-Manager installation and
 restarting Micro-Manager. (The two device adapters will conflict with
@@ -108,4 +108,4 @@ Built with the SDK version 4\_20.
 
 Hardware ROI function currently not supported.
 
-{% include Note text="As of May 10th, 2018, the pixelClockMHz property is set to the lowest value possible on startup.  This change was made to avoid hard to pinpoint errors while acquiring images. To make the camera operate faster, experiment with the pixelClockMHz property and set it to the highest value where the camera still works reliably, then add the pixelClockMHz property to the System-Startup group.  Thanks to the AQLM 2018 students for figuring this out!)" %}
+{% include notice icon="info" content="As of May 10th, 2018, the pixelClockMHz property is set to the lowest value possible on startup.  This change was made to avoid hard to pinpoint errors while acquiring images. To make the camera operate faster, experiment with the pixelClockMHz property and set it to the highest value where the camera still works reliably, then add the pixelClockMHz property to the System-Startup group.  Thanks to the AQLM 2018 students for figuring this out!)" %}

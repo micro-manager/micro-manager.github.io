@@ -92,7 +92,7 @@ None
 </tr>
 </table>
 
-{% include Note text="In order to enable RS232 communication with the controller, the user must request from SmarAct a new firmware for the corresponding controller (*Ua.fmw) and upload it using the manufacturer's tool. " %}
+{% include notice icon="info" content="In order to enable RS232 communication with the controller, the user must request from SmarAct a new firmware for the corresponding controller (*Ua.fmw) and upload it using the manufacturer's tool. " %}
 
 This adapter has been written to communicate with a HCU-3D controller
 from SmarAct using the manufacturer SCU (simple control unit) RS232

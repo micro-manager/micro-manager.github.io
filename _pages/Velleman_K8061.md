@@ -115,7 +115,7 @@ instance, the value '3' will set channels 1 and 2). On my board the
 logic was somehow inverted, causing the number '1' to switch channel 8.
 The shutter will switch the active channels on and off.
 
-{% include Note text="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Ground pins on the K8061 board." %}
+{% include notice icon="info" content="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Ground pins on the K8061 board." %}
 
 On Windows, you will need to install the driver provided in this [K8061
 Driver](http://valelab.ucsf.edu/~MM/drivers/K8061Driver.zip) folder.

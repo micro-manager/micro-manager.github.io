@@ -156,7 +156,7 @@ port, Serial port settings, and Axis name (or stage channel).
 </tr>
 </table>
 
-{% include Note text="Register the correct serial port that connects to the corresponding QT controller. If using 3-axis controller, the above two device adapters should be registered to one single serial port (see <i>Note on Axis name</i>)." %}
+{% include notice icon="info" content="Register the correct serial port that connects to the corresponding QT controller. If using 3-axis controller, the above two device adapters should be registered to one single serial port (see <i>Note on Axis name</i>)." %}
 
 ''' Serial port settings '''
 
@@ -182,7 +182,7 @@ port, Serial port settings, and Axis name (or stage channel).
 <em>Please customize your stage settings using Group and Preset in
 Micro-Manager. Or you can load the settings from a saved .cfg file.</em>
 
-{% include Note text="'''Axis Name Registration'''" %}
+{% include notice icon="info" content="'''Axis Name Registration'''" %}
 
 The "ChuoSeiki QT 2-Axis" supports the 2-axis controllers or control AB
 channels of the 3-axis controllers. In this device adapter, the two

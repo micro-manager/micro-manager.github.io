@@ -108,9 +108,9 @@ This driver supports **automatic serial port detection**.
 
 ### Notes
 
-{% include Note text="Lasers will ignore the power setting for a few minutes while they start up. Re-set power/current after warm up is over" %}
+{% include notice icon="info" content="Lasers will ignore the power setting for a few minutes while they start up. Re-set power/current after warm up is over" %}
 
-{% include Note text="If the Laser has '''aborted''', you could issue a '''restart''' command via the Serial Command property, followed by a key cycle to restart the laser." %}
+{% include notice icon="info" content="If the Laser has '''aborted''', you could issue a '''restart''' command via the Serial Command property, followed by a key cycle to restart the laser." %}
 
 ### Device Properties
 

@@ -392,7 +392,7 @@ documentation for a description of the error codes.
   
 **ScopeLED-G**  
 ScopeLED Fiber Guide Illuminators
-{% include Note text="The ProductID for G-Series illuminators is 4867 (0x1303)." %}
+{% include notice icon="info" content="The ProductID for G-Series illuminators is 4867 (0x1303)." %}
 
 <table>
 <tr>
@@ -439,7 +439,7 @@ until the shutter is next opened.
   
 **ScopeLED-B**  
 ScopeLED Brightfield Microscope Illuminators
-{% include Note text="The ProductID for B-Series illuminators is 4874 (0x130A)." %}
+{% include notice icon="info" content="The ProductID for B-Series illuminators is 4874 (0x130A)." %}
 
 <table width=100%>
 <tr>
@@ -577,7 +577,7 @@ in order to make active PresetMode4Brightness, ActivePresetMode must be
   
 **ScopeLED-F**  
 ScopeLED Fluorescence Microscope Illuminators
-{% include Note text="The ProductID for F-Series illuminators is 4869 (0x1305)." %}
+{% include notice icon="info" content="The ProductID for F-Series illuminators is 4869 (0x1305)." %}
 
 <table width=100%>
 <tr>

@@ -105,8 +105,8 @@ As of Micro-Manager version 1.3.47, you should use the QCam driver
 version 2.0.9 or higher (older Micro-Manager version work with QCam
 driver 2.0.4 or higher). Use the example config file (or use the
 hardware config wizard to make one yourself) to get the camera to work.
-{% include Note text="QImaging cameras have a default value of 0 for the gray-scale value offset.  This will result in many pixels with a value of zero (indicating clipping of negative values).  It is best to set this value to something like 100." %}
-{% include Note text="The camera will start up in 8-bit, if your camera is capable, you will want to set this to 12-bit.  You can do so by making a Configuration Preset Group called 'System' and making a Configuration Preset called 'Startup' in which you set these camera parameters." %}
+{% include notice icon="info" content="QImaging cameras have a default value of 0 for the gray-scale value offset.  This will result in many pixels with a value of zero (indicating clipping of negative values).  It is best to set this value to something like 100." %}
+{% include notice icon="info" content="The camera will start up in 8-bit, if your camera is capable, you will want to set this to 12-bit.  You can do so by making a Configuration Preset Group called 'System' and making a Configuration Preset called 'Startup' in which you set these camera parameters." %}
 
 The Rolera MGi-Plus is an EM CCD camera that does not use the QImaging
 driver but interfaces with PVCAM instead. Use the

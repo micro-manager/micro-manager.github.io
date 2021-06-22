@@ -1,1 +1,0 @@
-{% include MessageBox title='Note' text=include.text color='#1C879D' %}

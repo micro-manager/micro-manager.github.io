@@ -132,5 +132,5 @@ with this device adapter:
 -   Head ID (Read Only)
 -   External Power Control (Read/Write)
 
-{% include Note text="Lasers will automatically be shut off when Micro-Manager closes but power remains on." %}
+{% include notice icon="info" content="Lasers will automatically be shut off when Micro-Manager closes but power remains on." %}
 

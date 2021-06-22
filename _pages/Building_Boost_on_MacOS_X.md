@@ -4,7 +4,7 @@ title: Building Boost on MacOS X
 layout: page
 ---
 
-{% include Note text="The following content is obsolete. Micro-Manager now requires a newer version of Boost, and it is easiest to install Boost from Homebrew." %}
+{% include notice icon="info" content="The following content is obsolete. Micro-Manager now requires a newer version of Boost, and it is easiest to install Boost from Homebrew." %}
 
 As of this writing, MM is using the Boost 1.40 release. There are
 reasonably complete instructions here:

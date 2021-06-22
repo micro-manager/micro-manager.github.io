@@ -111,7 +111,7 @@ and/or monitored for each laser housed in the Stradus VersaLase chassis:
 -   Laser Diode Power \[x.LP = \#\#\#\]
 -   Laser Diode Power Setting \[x.?LPS\]
 
-{% include Note text="When switching Laser Emission to “ON”, laser power and laser current information may not be immediately available." %}
+{% include notice icon="info" content="When switching Laser Emission to “ON”, laser power and laser current information may not be immediately available." %}
 The cause for this is the laser's default 5 second delay between
 initiating laser emission with a serial command and the actual turn-on
 of laser emission. If using the Device/Property Browser, simply click
@@ -120,7 +120,7 @@ disabled. To disable the delay, use a terminal program and type
 “x.delay=0” followed by Enter at the Stradus prompt. This setting will
 be remembered by the laser until changed.
 
-{% include Note text="Lasers will automatically be shut off when Micro-Manager closes but power remains on." %}
+{% include notice icon="info" content="Lasers will automatically be shut off when Micro-Manager closes but power remains on." %}
 Switching power off and on or turning laser emission ON within the
 Micro-Manager Device/Property Manager will restore laser emission.
 
