@@ -1,1 +1,0 @@
-{% include MessageBox title='Warning' text=include.text color='#A40000' %}

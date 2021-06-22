@@ -1,5 +1,0 @@
-<div style="display:none;" markdown="1"><div align="center" class="sidebar_title">{{include.title}}</div>
-
-{{include.content}}
-
-</div>

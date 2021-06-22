@@ -1,1 +1,0 @@
-<includeonly><iframe src="<!--{$url|validate:url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>

@@ -6,7 +6,7 @@ layout: page
 
 # Micro-Manager previous versions: Downloads for Windows XP
 
-{% include Warning text="Unfortunately, these builds are no longer available." %}
+{% include notice icon="warning" content="Unfortunately, these builds are no longer available." %}
 
 Windows installer includes ImageJ and Java run-time.  
 
@@ -262,7 +262,7 @@ changes with respect to version 1.0\], also see the
 changes with respect to version 1.0\], also see the
 \[documentation.php?object=NewGuide Guide to new features in version
 1.1\]  
-  
+
 
 -   Ludl low-level command support added
 -   Bug fixes: ImageJ "quit" handling, error logging
@@ -275,7 +275,7 @@ changes with respect to version 1.0\], also see the
 changes with respect to version 1.0\], also see the
 \[documentation.php?object=NewGuide Guide to new features in version
 1.1\]  
-  
+
 
 -   3D volume viewer added
 -   Post-acquisition comment editing and brightness and contrast
@@ -336,11 +336,11 @@ changes with respect to version 1.0\], also see the
 [<span>**Micro-Manager 1.1.34 beta, (August 19, 2007), size
 23MB**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_1_34.exe)  
 Initial public 1.1 (beta) release  
-  
-  
+
+
 [<span>**Micro-Manager 1.0.69, (May 1, 2007), size
 23MB**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_69.exe)  
-  
+
 <font color="rgb(255, 0, 0)"></font><span><font color="rgb(255, 0, 0)">This
 is the last 1.0 release - all new development and bug fixes are now
 taking place in version 1.1 </font></span>  
@@ -364,7 +364,7 @@ taking place in version 1.1 </font></span>
 
 [<span>**Micro-Manager 1.0.62, (February 6, 2007), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_62.exe)  
-  
+
 
 -   Bug fix: multi-dimensional image display (grayscale and color)
     broken in releases 1.60 and 1.61
@@ -372,7 +372,7 @@ taking place in version 1.1 </font></span>
 
 [<span>**Micro-Manager 1.0.61, (February 1, 2007), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_61.exe)  
-  
+
 Official 1.0 release. Except for some small changes in the copyright
 notices, the same as previous beta version 1.0.60.  
 [<span>**Micro-Manager 1.0.60 (beta), (January 17, 2007), size
@@ -398,7 +398,7 @@ efforts.
 
 [<span>**Micro-Manager 1.0.59 (beta), (January 4, 2007), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_59.exe)  
-  
+
 
 -   Updated Sutter Lambda driver to support Lambda 10-3 features
 -   Acquisition protocol now allows generalized setting of "channels" to
@@ -408,7 +408,7 @@ efforts.
 
 [<span>**Micro-Manager 1.0.58 (beta), (December 18, 2006), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_58.exe)  
-  
+
 
 -   Hamamatsu driver updated to support Gamma settings
 -   Micro-Manager now has an option or running the initialization script
@@ -427,7 +427,7 @@ efforts.
 
 [<span>**Micro-Manager 1.0.53 (beta), (December 1, 2006), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_53.exe)  
-  
+
 Allows acquisition of multiple channels with different image sizes. All
 images are re-scaled during acquisition based on the phyiscal dimensions
 of the first image in the frame.  
@@ -445,7 +445,7 @@ of the first image in the frame.
 
 [<span>**Micro-Manager 1.0.50 (beta), (November 28, 2006), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_50.exe)  
-  
+
 
 -   Improved hardware configuration wizard
 -   New user interface to edit and manage configuration presets
@@ -453,7 +453,7 @@ of the first image in the frame.
 
 [<span>**Micro-Manager 1.0.47 (beta), (November 8, 2006), size
 21MB<span></span>**</span>](http://valelab.ucsf.edu/%7Enenad/micro-manager/distribution/MMSetup_1_0_47.exe)  
-  
+
 NOTE: this is a major update and we recommend that you uninstall any
 older version of Micro-Manager before installing release 1.0.47. Make
 sure you save your configuration files before uninstalling.  
@@ -492,25 +492,25 @@ sure you save your configuration files before uninstalling.
 ***' - Save prompt displayed on closing of ImageJ.  
 - Only a single instance of MicroManage plugin window is allowed  
 - Bug fix: acquisition window re-display  
-  
+
 <span>**ÂµManager 1.0.35 (beta), Windows XP/2000, (June 19, 2006), size
 20MB**</span>  
 ***' - Save prompt displayed on closing Image5D window  
 - Closing of the Image5D window disabled during acquisition  
 - Log scale histogram  
 - Bug fix: playback during acquisition  
-  
+
 <span>***'</span><span>**ÂµManager 1.0.33 (beta), Windows XP/2000, (June
 15, 2006), size 20MB**</span>  
 ***' - Automatic contrast stretch function  
 - Variable histogram depth selection  
 - Enable/disable slice scanning in the acquisition window  
-  
+
 <span>**ÂµManager 1.0.32 (beta), Windows XP/2000, (June 13, 2006), size
 20MB**</span>  
 ***' - Contrast button added to Image5D acquisition window  
 - Image5D processing added to Image5D menu in the main panel  
-  
+
 <span>**ÂµManager 1.0.30 (beta), Windows XP/2000, (June 10, 2006), size
 20MB**</span>  
 ***' - Image5D acquisition window auto-scales contrast based on the
@@ -518,7 +518,7 @@ first frame
 - Bug fix: auto-shutter control logic during acquisition  
 - Bug fix: acquisition aborted at image5D window closing  
 - Hamamatsu driver updated to support older cameras  
-  
+
 <span>**MicroManage 1.0.27 (beta), Windows XP/2000, (June 7, 2006), size
 20MB**</span>  
 ***' - Z-stack acquisition supports relative and absolute
@@ -526,7 +526,7 @@ specifications
 - Acquisition saves files to disk and opens Image5D window  
 - Acquisition countdown displayed  
 - Metadata stored during acquisition  
-  
+
 <span>**MicroManage 1.0.19 (beta), Windows XP/2000, (May 23, 2006), size
 20MB**</span>  
 ***' - Z-stage bug fixed (for Zeiss MTB)  
@@ -537,27 +537,27 @@ closed
 - Time units expanded in Acquisition-dialog  
 - Nikon TE2000 driver adapter added  
 - Z-stack bug fixed.  
-  
+
 <span>**MicroManage 1.0.16 (beta), Windows XP/2000, (April 25, 2006),
 size 20MB**</span>  
 ***' - Sutter Lambda10 adapter bug fix: set position returns error for
 the current position.  
 - Contrast control user interface redesigned to support both acquisition
 and Image5D windows.  
-  
+
 <span>**MicroManage 1.0.15 (beta), Windows XP/2000, (April 20, 2006),
 size 20MB**</span>  
 ***' - Redesigned user interface  
-  
+
 <span>**MicroManage 1.0.14 (beta), Windows XP/2000, (April 11,
 2006)**</span>  
 ***' - Shutter synchronization bug fixed  
 - Sensicam camera fully supported  
-  
+
 <span>**MicroManage 1.0.11 (beta) ), Windows XP/2000, (March 28,
 2006)**</span>  
 ***' -MTB initialization bug fixed  
-  
+
 <span>**MicroManage 1.0.10 (beta) ), Windows XP/2000, (March 23,
 2006)**</span>  
 '''''' -Hamamatsu driver bugs fixed  

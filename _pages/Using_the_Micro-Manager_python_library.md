@@ -237,7 +237,7 @@ BGR order (replace slice to `[..., :3]` for that).
 
 ### Continuous acquisition
 
-{% include Warning text="'''Don't run this code directly.''' It's a partial sample." %}
+{% include notice icon="warning" content="'''Don't run this code directly.''' It's a partial sample." %}
 
 ```
 mmc.startContinuousSequenceAcquisition(1)
@@ -271,4 +271,3 @@ acquisition, property discovery etc).
 
 Written by Eugene Dvoretsky -- [Radioxoma](User:Radioxoma "wikilink")
 ([talk](User_talk:Radioxoma "wikilink")) 09:19, 14 June 2014 (PDT)
-
