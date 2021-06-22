@@ -126,3 +126,5 @@ please check out
 [CSU-X\_fiber\_rotation](CSU-X_fiber_rotation "wikilink") page.
 
 The CSU-X1 requires a null modem cable.
+
+[Discussion page](/talk/Yokogawa_CSUX) for Yokogawa_CSUX imported from old wiki

@@ -405,3 +405,5 @@ ant stage-only
 
 The `stage`, `run` and `package` targets are not yet fully implemented
 for general use (they expect files to be present at specific paths).
+
+[Discussion page](/talk/Building_MM_on_Windows) for Building_MM_on_Windows imported from old wiki

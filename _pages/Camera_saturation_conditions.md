@@ -54,3 +54,5 @@ selected.
     system).
 2.  [Pre-amplifier gain
     settings](http://www.andor.com/learning/digital_cameras/?docid=328)
+
+[Discussion page](/talk/Camera_saturation_conditions) for Camera_saturation_conditions imported from old wiki

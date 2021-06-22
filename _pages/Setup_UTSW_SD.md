@@ -490,3 +490,5 @@ gui.refreshGUI();  // Shows above selected channel.
    # PixelSize settings
 ```
 
+
+[Discussion page](/talk/Setup_UTSW_SD) for Setup_UTSW_SD imported from old wiki

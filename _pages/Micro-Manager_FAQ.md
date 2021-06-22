@@ -122,3 +122,5 @@ Also, please update "[Papers citing
 Micro-Manager](Papers_citing_Micro-Manager "wikilink")" with a reference
 to your paper. We will need this information to secure future funding.
 
+
+[Discussion page](/talk/Micro-Manager_FAQ) for Micro-Manager_FAQ imported from old wiki

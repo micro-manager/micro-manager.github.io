@@ -76,3 +76,5 @@ java.lang.System.clearProperty('java.util.prefs.PreferencesFactory')
 (Reported by Paul Andrews, work around suggested by The Mathworks
 support).
 
+
+[Discussion page](/talk/Matlab_and_the_Micro-Manager_GUI) for Matlab_and_the_Micro-Manager_GUI imported from old wiki
