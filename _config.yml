@@ -5,6 +5,7 @@ kramdown:
 plugins:
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-redirect-from
 collections:
   pages:
     output: true

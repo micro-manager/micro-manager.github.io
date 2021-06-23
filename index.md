@@ -1,5 +1,6 @@
 ---
 title: µManager (Experimental)
+redirect_from: /wiki/
 layout: home
 ---
 
