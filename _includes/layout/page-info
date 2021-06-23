@@ -1,7 +1,7 @@
 <div class="page-info">
 
-    <a href="{{"https://github.com/micro-manager/micro-manager.org/edit/master/_pages"}}{{page.url | replace: ".html", ""}}.md">Edit page</a>
-    <a href="{{"https://github.com/micro-manager/micro-manager.org/commits/master/_pages"}}{{page.url | replace: ".html", ""}}.md">History</a>
+    <a href="{{"https://github.com/micro-manager/micro-manager.github.io/edit/main/_pages"}}{{page.url | replace: ".html", ""}}.md">Edit page</a>
+    <a href="{{"https://github.com/micro-manager/micro-manager.github.io/commits/main/_pages"}}{{page.url | replace: ".html", ""}}.md">History</a>
     <a href="/editing">How do I edit this website?</a>
 
 </div>
