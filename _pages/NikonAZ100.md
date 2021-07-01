@@ -69,7 +69,7 @@ AZ100Hub, Nosepiece, Focus, Zoom
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Example Config File:**
 
@@ -78,7 +78,7 @@ AZ100Hub, Nosepiece, Focus, Zoom
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Since version**
 
@@ -131,4 +131,3 @@ on the current zoom settings.
 --[Nico](/users/Nico "wikilink") 16:42, 10 June 2008 (PDT)
 
 {% include Listserv_Search text="Nikon" %}
-

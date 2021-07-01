@@ -14,7 +14,7 @@ layout: page
 **Summary:**
 
 </td>
-<td markdown="1" valign="top">
+<td valign="top">
 
 Controls Leica DMI and DM microscopes
 
@@ -75,8 +75,6 @@ DIC-turret, AFC
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
-</td>
 <td markdown="1">
 </td>
 </tr>
@@ -122,8 +120,8 @@ Supported
 
 </td>
 </tr>
-</table>
 
+<div markdown="1">
 This adapter controls Leica DMI microscopes through a direct serial
 interface. It was build for and tested with a DMI600B, but might work
 with other DMI models as well.
@@ -150,4 +148,4 @@ objectives, sideport) will be read from the controller, so you do not
 need to set those in the Hardware Configuration Wizard.
 
 {% include Listserv_Search text="DMI" %}
-
+</div>
