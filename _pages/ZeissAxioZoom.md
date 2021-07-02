@@ -80,7 +80,7 @@ Microscope stand, MotorFocus, XYStage, OpricsUnit, FluoTube, DL450
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1" valign=top>
 
 **Default serial port settings:**
@@ -97,8 +97,9 @@ Microscope stand, MotorFocus, XYStage, OpricsUnit, FluoTube, DL450
 | Parity              | None  |
 | StopBits            | 1     |
 
+</td>
 </table>
-
+<div markdown="1">
 This adapter is a modification of the more comprehensive ZeissCAN29
 adapter, specific to AxioZoom microscope. The same as ZeissCAN29 it uses
 CAN29 bus interface. The adapter directly communicates to the microscope
@@ -116,4 +117,4 @@ to define the 'ZeissScope' device as this defines the serial port to
 which the scope is attached.
 
 {% include Listserv_Search text="Zeiss" %}
-
+</div>

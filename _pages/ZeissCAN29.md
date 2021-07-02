@@ -72,7 +72,7 @@ Definite Focus, Colibri.
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1" valign=top>
 
 **Default serial port settings:**
@@ -89,7 +89,7 @@ Definite Focus, Colibri.
 | Parity              | None  |
 | StopBits            | 1     |
 
-</table>
+
 
 This adapter controls Zeiss microscopes that use the CAN29 bus
 interface. The adapter directly communicates to the microscope through
@@ -147,4 +147,3 @@ is directly connected to the computer using a serial cable (only XY
 stage is supported).
 
 {% include Listserv_Search text="Zeiss" %}
-

@@ -6,7 +6,6 @@ layout: page
 ---
 
 ## Olympus IX81/IX71/BX61/BX51 adapter
-
 <table cellspacing=3>
 <tr>
 <td markdown="1">
@@ -86,8 +85,8 @@ Windows, Mac OS X (through serial port)
 
 </td>
 </tr>
-</table>
 
+<div markdown="1">
 ## Installation
 
 ### Cabling and DIP switches
@@ -129,4 +128,4 @@ offset.
 {% include notice icon="info" content="For the BX61, currently only one filter wheel is supported, which is connected to FW1 port on the controller." %}
 
 {% include Listserv_Search text="Olympus" %}
-
+</div>

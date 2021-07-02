@@ -18,7 +18,6 @@ layout: page
 
 ------------------------------------------------------------------------
 
-\_\_TOC\_\_
 
 ## Introduction
 
@@ -100,4 +99,3 @@ communication if you try to change the lamp intensity when it's off.
 --[Egor Zindy](/users/Zindy "wikilink") 21:00, 29 July 2014 (GMT)
 
 {% include Listserv_Search text="Nikon" %}
-

@@ -67,6 +67,7 @@ Windows
 1.4.16
 
 </td>
+</tr>
 </table>
 
 Before configuring for use with Micro-Manager, it's necessary to install
@@ -86,4 +87,3 @@ Micro-Manager application directory. Micro-Manager needs
 "OlympusIX3Control/OlympusIX3Control.exe" to be present.
 
 {% include Listserv_Search text="OlympusIX83" %}
-

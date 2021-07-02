@@ -72,7 +72,7 @@ stage via MCU 28
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Serial Port settings:**
 
@@ -152,4 +152,3 @@ microscope requires. Specifically, pins 2 and 3 must be crossed and pins
 7 and 8 must be crossed.
 
 {% include Listserv_Search text="Zeiss" %}
-

@@ -89,7 +89,7 @@ attachment (TITIRF)
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Since version**
 
@@ -310,4 +310,3 @@ The Nikon software version is typically the version of the file
 C:\\Program Files\\Nikon\\Shared\\Bin\\NikonTi.dll.
 
 {% include Listserv_Search text="Nikon" %}
-

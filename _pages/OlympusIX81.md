@@ -86,13 +86,13 @@ Windows, Mac OS X (through serial port)
 
 </td>
 </tr>
-</table>
 
-  
+
+<div markdown="1">
 These serial port settings require all DIP switches on the front of the
 "Frame Control Unit" (the box connected to the serial cable) to be in
 their default position: off (zero).
 
 BX61 specific notes: Currently only one filter wheel is supported
 (connected to FW1 port on the controller).
-
+</div>
