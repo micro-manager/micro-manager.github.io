@@ -81,6 +81,7 @@ Leica DFC, and other Baumer-compatible cameras
 1.3.45 20100218
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -92,7 +93,9 @@ Leica DFC, and other Baumer-compatible cameras
 1.4.8 20120224
 
 </td>
+</tr>
 </table>
+
 
 This device adapter was written by Karl Hoover and will provide higher
 performance than the TWAIN interface and supports fast continuous
@@ -150,3 +153,4 @@ performing simple camera capabilities discovery.
     2014
 
 {% include Listserv_Search text="Leica" %}
+</div>

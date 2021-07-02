@@ -82,7 +82,7 @@ Camera Link HS interface, Lightsheet mode
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -101,7 +101,7 @@ This adapter has been developed for all pco.sdk based camera systems
 Installation:  
 a) download and install latest Micro-Manager Nightly build version  
 b) add PCO camera specific dll files to your Micro-Manager directory  
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 Files needed for all pco.sdk based cameras:
 
@@ -152,7 +152,7 @@ Looking for 32bit dlls:
 If you are not administrator when installing the PCO camera software, it
 may install to C:\\Users\\(Your username)\\AppData\\Roaming, so you may
 need to look there as well.
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 Please refer to the following Installation Guide for further help:
 [Installation
@@ -166,5 +166,3 @@ camera types.
 --FRE / pco ag 26th of August 2020
 
 {% include Listserv_Search text="PCO" %}
-
-

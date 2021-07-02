@@ -69,7 +69,7 @@ ABS cameras
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -81,27 +81,27 @@ ABS cameras
 
 </td>
 </table>
-
+<div markdown="1">
 The code for this adapter was written by Michael Himmelreich and donated
 to the Micro-Manager source code repository.
 
 Changes in 1.3.40:  
 • Support of API version 31  
-• Property: „ColorMode“ added, valid values „Color“ and „Grayscale“  
-• Property: „Pixeltype“ changed, valid values „8Bit“, „10Bit“ and
-„12Bit“ (10/12 Bit will be dynamically available if supported by camera
+• Property: `ColorMode` added, valid values `Color` and `Grayscale`  
+• Property: `Pixeltype` changed, valid values `8Bit`, `10Bit` and
+`12Bit` (10/12 Bit will be dynamically available if supported by camera
 =&gt; result in 16Bit images)
 
-# &gt; to setup the old pixeltype „32Bit\_RGB“: select „Color“ and „8Bit“ • Streaming support added • Hardwaresupport of properties „TransposeMirrorX“ and „TransposeMirrorY“ • CamUSB\_Api.dll is no longer necessary to avoid a chrash 
+ &gt; to setup the old pixeltype `32Bit\_RGB`: select `Color` and `8Bit` • Streaming support added • Hardwaresupport of properties `TransposeMirrorX` and `TransposeMirrorY` • CamUSB\_Api.dll is no longer necessary to avoid a chrash
 
 &gt; mmgr\_dal\_ABSCamera.dll device description will be automatically
-changed to „CamUSB\_Api.dll not found or wrong version!“  
+changed to `CamUSB\_Api.dll not found or wrong version!`  
 • Dynamically support of multiple ABS Camera Devices  
-„ABSCam“ is base device name and the name of the first available
+`ABSCam` is base device name and the name of the first available
 device  
-=&gt; „ABSCam00“ also the first device  
-=&gt; „ABSCam01“ second device and so on  
-The „Hardware Configuration Wizard...“ will show all available ABS
+=&gt; `ABSCam00` also the first device  
+=&gt; `ABSCam01` second device and so on  
+The `Hardware Configuration Wizard...` will show all available ABS
 devices.  
 {% include Listserv_Search text="ABS" %}
-
+</div>

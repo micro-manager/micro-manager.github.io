@@ -72,7 +72,7 @@ control API
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**

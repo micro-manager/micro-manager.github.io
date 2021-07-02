@@ -68,7 +68,7 @@ Veroptics cameras
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -86,4 +86,3 @@ for Micro-Manager. Until this is accomplished, please [contact
 Veroptics](mailto:sales@Veroptics.com) for the device adapter.
 
 {% include Listserv_Search text="Veroptics" %}
-

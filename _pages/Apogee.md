@@ -68,7 +68,6 @@ Apogee cameras
 
 </td>
 </tr>
-<tr>
 <td markdown="1">
 
 **Recommended MM version:**
@@ -77,9 +76,9 @@ Apogee cameras
 <td markdown="1">
 
 1.4.5
-
 </td>
 </table>
+<div markdown="1">
 
 To use Apogee cameras with Micro-Manager, you will need to download the
 [Windows driver](http://www.ccd.com/downloads.html) (v. 3.10 or above)
@@ -92,4 +91,4 @@ is nonnegative, then the driver should find the Camera without
 displaying its device search window.
 
 {% include Listserv_Search text="Apogee" %}
-
+</div>

@@ -84,7 +84,7 @@ Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)
 </tr>
 </table>
 
-{% include notice icon="info" content="Windows users should use [[HamamatsuHam]]" %}
+{% include notice icon="info" content="Windows users should use [HamamatsuHam](HamamatsuHam)." %}
 
 This adapter makes Micro-Manager work with DCAM-compatible Hamamatsu
 cameras. You will need to download and install a recent version of the

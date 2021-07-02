@@ -69,12 +69,12 @@ DC3240M
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 </td>
 <td markdown="1">
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**

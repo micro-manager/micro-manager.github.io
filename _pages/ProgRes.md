@@ -68,7 +68,7 @@ Jenoptik ProGres
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -93,4 +93,3 @@ Changes in 1.3.47:
 • Jenoptik is providing an updated device adapter version 1.5.0 at
 <http://www.jenoptik.com/progres>  
 {% include Listserv_Search text="Jenoptik" %}
-

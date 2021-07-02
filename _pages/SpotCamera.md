@@ -69,7 +69,7 @@ Spot cameras
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -96,4 +96,3 @@ Changes in 1.3.41:
 • Initial implementation tested with Flex 15.2, Idea 28.2, and RT Slider
 2.3.0 cameras on Windows XP SP3  
 {% include Listserv_Search text="SPOT" %}
-

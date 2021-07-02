@@ -69,7 +69,7 @@ See <http://www.tucsen.com> [2](http://www.tucsen.com/)
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -81,7 +81,7 @@ See <http://www.tucsen.com> [2](http://www.tucsen.com/)
 
 </td>
 </table>
-
+<div markdown="1">
 ### Getting started
 
 You need to install the driver that came with the camera. Some software
@@ -93,3 +93,4 @@ or
 TUCam dll to your micro-manager directory.
 
 {% include Listserv_Search text="Dhyana" %}
+</div>
