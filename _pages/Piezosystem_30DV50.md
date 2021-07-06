@@ -86,7 +86,7 @@ Mac
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -107,4 +107,3 @@ Micro-Manager source code repository.
 • All commands are support as Property  
 
 {% include Listserv_Search text="Piezosystem" %}
-

@@ -63,6 +63,7 @@ All (uses serial interface)
 **Devices:**
 
 </td>
+
 <td markdown="1">
 
 Controller, Shutter, Lamps, XY Stage, Z Axis, and ADC
@@ -106,9 +107,7 @@ Märzhäuser components.
 
 </td>
 </tr>
-</table>
 
 **See also:** Märzhäuser [Corvus](Corvus "wikilink") device adapter.
 
 --[Dettmar](/users/Dettmar "wikilink") 24:24, 19 February 2010 (PDT)
-

@@ -67,6 +67,7 @@ Windows
 1.4.22
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -78,6 +79,7 @@ Windows
 [en.xisupport.com](http://en.xisupport.com)
 
 </td>
+</tr>
 </table>
 
 ## Differences between Standa adapters
@@ -133,7 +135,7 @@ not tested yet.
 ### Run Micro-Manager
 
 {% include notice icon="info" content="
-Note. When installing the Micro-Manager in <code>C:\Program Files</code> access to configuration files is limited and you need to have administrator privileges. To start an application as administrator right click by its icon and choose <code>Run as administrator</code>. 
+Note. When installing the Micro-Manager in <code>C:\Program Files</code> access to configuration files is limited and you need to have administrator privileges. To start an application as administrator right click by its icon and choose <code>Run as administrator</code>.
 " %}
 
 -   Run Micro-Manager from the shortcut at your desktop or start
@@ -230,5 +232,5 @@ For example you set the pixel size is equal to 1um. And ''UnitMultiplierX/Y'' is
 " %}
 
 {% include notice icon="info" content="
-You may decrease ''UnitMultiplier'' if the stage speed is low and increase it if the stage speed is very high. 
+You may decrease ''UnitMultiplier'' if the stage speed is low and increase it if the stage speed is very high.
 " %}

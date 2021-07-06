@@ -69,7 +69,7 @@ Windows
 
 </td>
 <tr>
-<td markdown="1" valign=top>
+<td markdown="1">
 
 **Default serial port settings:**
 
@@ -85,9 +85,7 @@ Windows
 | Parity              | None   |
 | StopBits            | 1      |
 
-</td>
-</tr>
-</table>
+
 
 {% include notice icon="info" content="See also: [[ThorlabsAPTStage]]" %}
 
@@ -106,4 +104,3 @@ commands. To do that, create a Group with the "Home" property. Then set
 the value to 1.
 
 {% include notice icon="info" content=" The controller TDC001  only works on 32 bits Micro-manager as explained in the Thorlabs webpage." %}
-

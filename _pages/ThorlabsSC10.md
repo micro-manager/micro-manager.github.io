@@ -85,9 +85,7 @@ Windows, Mac OS X, Linux
 | Parity              | None |
 | StopBits            | 1    |
 
-</td>
-</tr>
-</table>
+
 
 The [Thorlabs SC10 shutter
 controller](http://www.thorlabs.com/newgrouppage9.cfm?objectGroup_ID=927)
@@ -100,4 +98,3 @@ above mentioned serial port settings are the default but that they can
 be changed through software commands.
 
 {% include notice icon="info" content="The Thorlabs TSC001 shutter driver is different from the SC10 and is not supported." %}
-

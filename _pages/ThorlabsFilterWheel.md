@@ -82,9 +82,7 @@ Windows (depends on USB to serial port driver)
 | Parity              | None    |
 | StopBits            | 1       |
 
-</td>
-</tr>
-</table>
+
 
 This adapter controls the Thorlabs FilterWheel FW102B and FW212B. A
 manual can be found
@@ -94,4 +92,3 @@ filterwheel will install a driver for USB to serial converter that
 appears as a serial port in Micro-Manager. If such a driver can be found
 on Mac or Linux, this adapter will work on those platforms too (please
 share experiences here).
-

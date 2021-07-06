@@ -68,7 +68,7 @@ XYStage
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Since version**
 

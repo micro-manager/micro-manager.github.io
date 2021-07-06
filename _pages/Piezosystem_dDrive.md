@@ -88,7 +88,7 @@ d-Drive
 </td>
 </tr>
 <tr>
-<td markdown="1" width=20%>
+<td markdown="1">
 
 **Serial Port settings:**
 
@@ -123,7 +123,7 @@ Supported
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -144,4 +144,3 @@ Micro-Manager source code repository.
 • All commands are support as Property  
 
 {% include Listserv_Search text="Piezosystem" %}
-

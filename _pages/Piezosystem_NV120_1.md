@@ -87,7 +87,7 @@ NV120/1, NV120/1CLE
 
 </td>
 </tr>
-<tr>
+
 <td markdown="1">
 
 **Available since version:**
@@ -99,4 +99,3 @@ NV120/1, NV120/1CLE
 
 </td>
 </table>
-

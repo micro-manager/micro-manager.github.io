@@ -85,9 +85,7 @@ Windows
 | Parity              | None   |
 | StopBits            | 1      |
 
-</td>
-</tr>
-</table>
+
 
 The Thorlabs DCxxxx adapter operates the [DC2100 - High Power LED
 Driver](http://www.thorlabs.de/NewGroupPage9.cfm?ObjectGroup_ID=4003&pn=DC2100&CFID=709850&CFTOKEN=40518309),
@@ -107,4 +105,3 @@ has to be installed. In general, if this adapter is greyed out in the
 Hardware Configuration Wizard, try installing the DC2200 software.
 
 {% include notice icon="info" content="The above mentioned serial port settings are the default, but they are recommended to communicate with the device." %}
-
