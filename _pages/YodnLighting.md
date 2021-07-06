@@ -27,7 +27,8 @@ Device adapter for the YODN Lighting lamp E600
 <td markdown="1">
 
 maobaoqi (mbaoqi@outlook.com)
-
+</td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -90,7 +91,6 @@ None
 </tr>
 </table>
 
-------------------------------------------------------------------------
 
 ## Installation
 

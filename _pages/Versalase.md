@@ -67,7 +67,7 @@ All platforms (uses serial port)
 [Vortran Stradus VersaLase](http://www.vortranlaser.com)
 
 </td>
-</tr>
+
 <tr>
 <td markdown="1" valign=top>
 
@@ -143,4 +143,3 @@ directed to: [Vortran uManager Driver
 Support](mailto:sales@vortranlaser.com)
 
 {% include Listserv_Search text="Vortran" %}
-
