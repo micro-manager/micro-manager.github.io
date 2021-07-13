@@ -30,7 +30,7 @@ Older nightly builds:
 * [https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_64bit_2.0.0.exe Windows 64-bit], 148 MB<br />
 Requires Windows7-10. Windows 10 recommended. Device drivers may have other requirements.<br />
 
-* [https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager2.0.0.dmg Mac OS X (Universal Binary)], 111 MB<br />
+* [https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager-2.0.0.dmg Mac OS X (Universal Binary)], 111 MB<br />
 Requires Mac OS X 10.5 or greater. Device drivers may have other requirements.<br />
 (if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
 
