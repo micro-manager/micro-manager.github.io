@@ -14,10 +14,27 @@ Currently, there are 2 usable versions of Micro-Manager: 1.4 and 2.0-gamma.  The
 
 Although there has been no official release for quite some time, further development and multiple bug fixes have occurred in the 1.4 branch in parallel with development of 2.0.  Nightly builds are almost always stable and a better choice for most users than the latest official release.
 
-* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ '''Version 2.0-gamma (Windows)'''] (you most likely want the 64-bit version)
-* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ '''Version 2.0-gamma (Mac)''']
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/ '''Version 2.0 (Windows)'''] (you most likely want the 64-bit version)
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/ '''Version 2.0 (Mac)''']
 * [https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows '''Version 1.4 (Windows)'''] (pay attention to 32-bit or 64-bit, both are listed but you need the one matching your Windows OS)
 * [https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac '''Version 1.4 (Mac)''']
+
+
+Older nightly builds:
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/ '''Version 2.0-gamma (Windows)'''] (you most likely want the 64-bit version)
+* [https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/ '''Version 2.0-gamma (Mac)''']
+
+== Micro-Manager 2.0.0 (July 13, 2021) ==
+
+* [https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/32bit/MMSetup_32bit_2.0.0.exe Windows 32-bit], 143 MB<br />
+* [https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/64bit/MMSetup_64bit_2.0.0.exe Windows 64-bit], 148 MB<br />
+Requires Windows7-10. Windows 10 recommended. Device drivers may have other requirements.<br />
+
+* [https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager2.0.0.dmg Mac OS X (Universal Binary)], 111 MB<br />
+Requires Mac OS X 10.5 or greater. Device drivers may have other requirements.<br />
+(if the application does not open when double-clicked for the first time, try ctrl-click or right click, then select "Open".)
+
+* Under GNU/Linux platforms, you should [[Linux_installation_from_source_(Ubuntu)|compile micro-manager from source]].
 
 == Micro-Manager 1.4.23 (June 30, 2021) ==
 
