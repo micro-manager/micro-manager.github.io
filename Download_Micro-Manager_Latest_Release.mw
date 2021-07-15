@@ -20,6 +20,16 @@ Requires Mac OS X 10.5 or greater. Device drivers may have other requirements.<b
 
 * Under GNU/Linux platforms, you should [[Linux_installation_from_source_(Ubuntu)|compile micro-manager from source]].
 
+=== Partial list of differences with 1.4 ===
+
+* Completely re-designed API
+* Better looking User Interface with Day/Night skins
+* [https://github.com/micro-manager/pycro-manager Pycro-Manager]
+* User Profiles (settings can be saved per user)
+* Image Inspector with overlays (time stamps, Size bar)
+* Versatile viewer with build-in Projection
+* ClearVolume 3D viewer integration
+* Export as displayed to ImageJ
 
 == Nightly Builds ==
 
