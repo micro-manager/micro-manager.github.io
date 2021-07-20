@@ -17,15 +17,9 @@ nav-links:
   url: /Micro-Manager_Source_Code
 ---
 
-
- ![](media/NewLogo.png "NewLogo.png")
-
-<span style="font-size:75%">μManager™ is a trademark of The Regents of
-the University of California. Used with Permission.</span>
-
 ## Micro-Manager versions
 
-Micro-Manager 2.0 is the actively developed, current, version of
+**Micro-Manager 2.0** is the actively developed, current, version of
 Micro-Manager that you should use unless there is functionality in 1.4
 that you need. 1.4 is no longer developed (except for the ASI diSPIM
 plugin). Nightly builds are usually fine to use, and have the latest
@@ -33,28 +27,30 @@ features and bug fixes. If you encounter a bug in a release version,
 always test with the latest nightly build to see if the bug has been
 fixed already.
 
-{% include notice icon="info" content=" Due to security issues on OSX 10.12 and later, Micro-Manager does not start when opening ImageJ. To circumvent this, within the Micro-Manager folder in Applications, hold command and drag ImageJ onto the desktop. Then hold command and drag it back in. Then try running again.  See [Installation Notes](Micro-Manager_Installation_Notes)." %}
-
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
   - [Windows 64-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_64bit_2.0.0.exe),
     148 MB  
   - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_32bit_2.0.0.exe),
     143 MB  
-
-Requires Windows7-10. Windows 10 recommended. Device drivers may have
-other requirements.  
+Requires Windows 7-10. Windows 10 recommended. Device drivers may have
+other requirements.
 
   - [Mac OS X (Universal
     Binary)](https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager-2.0.0.dmg),
     111 MB  
-
 Requires Mac OS X 10.5 or greater. Device drivers may have other
-requirements.  
-(if the application does not open when double-clicked for the first
-time, try ctrl-click or right click, then select "Open".)
+requirements.
 
-  - Under GNU/Linux platforms, you should [compile micro-manager from
+{% include notice icon="info" content="Due to security features of macOS 10.12
+and later, Micro-Manager may not start when opening ImageJ.app. To circumvent
+this, within the Micro-Manager folder in Applications, hold command and drag
+ImageJ onto the desktop. Then hold command and drag it back in. Then try
+running again. In addition, you need to CTRL-click or right-click and select
+Open (instead of simply double-clicking) the first time you open it.  See
+[Installation Notes](Micro-Manager_Installation_Notes)." %}
+
+  - Under GNU/Linux platforms, you will need to [compile micro-manager from
     source](Linux_installation_from_source_\(Ubuntu\) "wikilink").
 
 ### Partial list of differences with 1.4
@@ -76,25 +72,25 @@ parallel with development of 2.0. Nightly builds are almost always
 stable and a better choice for most users than the latest official
 release.
 
-  - [**Version 2.0
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/)
+  - [Version 2.0
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/)
     (you most likely want the 64-bit version)
-  - [**Version 2.0
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/)
-  - [**Version 1.4
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
+  - [Version 2.0
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/)
+  - [Version 1.4
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
     (pay attention to 32-bit or 64-bit, both are listed but you need the
     one matching your Windows OS)
-  - [**Version 1.4
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
+  - [Version 1.4
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
 
 Older nightly builds:
 
-  - [**Version 2.0-gamma
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/)
+  - [Version 2.0-gamma
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/)
     (you most likely want the 64-bit version)
-  - [**Version 2.0-gamma
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
+  - [Version 2.0-gamma
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
@@ -103,7 +99,7 @@ Older nightly builds:
   - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.23.exe),
     84 MB  
 
-Requires Windows7-10. Windows 10 recommended. Device drivers may have
+Requires Windows 7-10. Windows 10 recommended. Device drivers may have
 other requirements.  
 
   - [Mac OS X (Universal
