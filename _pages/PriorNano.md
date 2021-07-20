@@ -95,6 +95,8 @@ NanoZStage
 | Parity              | None |
 | StopBits            | 1    |
 
+</td>
+</tr>
 </table>
 
 This adapter interfaces with nanopositioning stages through the Prior

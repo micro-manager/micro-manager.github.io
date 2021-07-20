@@ -85,6 +85,9 @@ Cross-platform (serial port)
 | Parity              | ?   |
 | StopBits            | ?   |
 
+</td>
+</tr>
+</table>
 
 [CrestOptics](http://crestopt.com/)
 

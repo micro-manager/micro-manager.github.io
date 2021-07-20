@@ -5,8 +5,9 @@ redirect_from: /wiki/MicroFPGA
 layout: page
 ---
 
-| Summary:                     | Adapter for [MicroFPGA](https://github.com/jdeschamps/MicroFPGA) |
+|                              |                                                                  |
 | ---------------------------- | ---------------------------------------------------------------- |
+| Summary:                     | Adapter for [MicroFPGA](https://github.com/jdeschamps/MicroFPGA) |
 | Author:                      | Joran Deschamps                                                  |
 | License:                     | LGPL                                                             |
 | Platforms:                   | Linux, Mac, and Windows                                          |

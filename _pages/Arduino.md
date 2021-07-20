@@ -6,44 +6,40 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Adapter for the <a href="http://www.arduino.cc/">Arduino electronics prototyping platform</a></p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Adapter for the <a href="http://www.arduino.cc/">Arduino electronics prototyping platform</a></p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Author:</p></td>
 <td><p>Nico Stuurman</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>License:</p></td>
 <td><p>LGPL</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Linux, Mac, and Windows</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Since version:</p></td>
 <td><p>1.3.18</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Automated Serial Port Setup:</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Peripheral device discovery:</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Wiki page:</p></td>
 <td><p>Nico Stuurman<br />
 Pariksheet Nanda<br />
 Roy Wollman</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

@@ -68,6 +68,7 @@ Windows, Mac OS X, Linux
 1.3.40
 
 </td>
+</tr>
 <tr>
 <td markdown="1" valign=top>
 
@@ -85,6 +86,9 @@ Windows, Mac OS X, Linux
 | Parity              | None |
 | StopBits            | 1    |
 
+</td>
+</tr>
+</table>
 
 
 The [Thorlabs SC10 shutter

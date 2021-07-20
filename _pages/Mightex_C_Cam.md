@@ -67,6 +67,7 @@ Windows only
 1.4.20
 
 </td>
+</tr>
 </table>
 
 [Mightex C-Series

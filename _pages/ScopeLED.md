@@ -83,9 +83,9 @@ here.](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/
 
 **All ScopeLED Illuminators**
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -123,11 +123,11 @@ must be set before the device is instantiated.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -165,11 +165,11 @@ property must be set before the device is instantiated.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -215,11 +215,11 @@ ProductID.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -261,11 +261,11 @@ device.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -277,7 +277,7 @@ Version
 </td>
 </tr>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Type
 
@@ -289,7 +289,7 @@ Numeric
 </td>
 </tr>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Function
 
@@ -306,11 +306,11 @@ hexadecimal notation) indicates a version of 2.3.1.0.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -348,11 +348,11 @@ Appendix A for a description of the error codes.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -390,14 +390,15 @@ documentation for a description of the error codes.
 </tr>
 </table>
 
-  
+<p />
+
 **ScopeLED-G**  
 ScopeLED Fiber Guide Illuminators
 {% include notice icon="info" content="The ProductID for G-Series illuminators is 4867 (0x1303)." %}
 
 <table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -437,14 +438,15 @@ until the shutter is next opened.
 </tr>
 </table>
 
-  
+<p />
+
 **ScopeLED-B**  
 ScopeLED Brightfield Microscope Illuminators
 {% include notice icon="info" content="The ProductID for B-Series illuminators is 4874 (0x130A)." %}
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -485,11 +487,11 @@ Channel3Brightness, and Channel4Brightness.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -529,11 +531,11 @@ ActivePresetMode is set to 0.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -575,14 +577,15 @@ in order to make active PresetMode4Brightness, ActivePresetMode must be
 </tr>
 </table>
 
-  
+<p />
+
 **ScopeLED-F**  
 ScopeLED Fluorescence Microscope Illuminators
 {% include notice icon="info" content="The ProductID for F-Series illuminators is 4869 (0x1305)." %}
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -619,11 +622,11 @@ Gets or sets the active LED group.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -663,11 +666,11 @@ brightness is affected immediately.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -705,11 +708,11 @@ Gets the wavelength of the indicated channel in nanometers.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -749,11 +752,11 @@ indicated LED group.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -792,11 +795,11 @@ number.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" valign=top width=10%>
+<td markdown="1" valign=top>
 
 Property
 
@@ -834,11 +837,11 @@ LED group.
 </tr>
 </table>
 
-  
+<p />
 
-<table width=100%>
+<table>
 <tr>
-<td markdown="1" width=10%>
+<td markdown="1">
 
 Property
 
@@ -876,7 +879,7 @@ active LED group.
 </tr>
 </table>
 
-  
+<p />
 
 **Appendix A: USB Error Codes**
 
@@ -1044,12 +1047,6 @@ An HID API function failed.
 
 Queue error.
 
-</td>
-</tr>
-<tr>
-<td markdown="1" valign=top>
-</td>
-<td markdown="1">
 </td>
 </tr>
 </table>

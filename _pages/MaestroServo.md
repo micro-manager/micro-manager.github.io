@@ -68,6 +68,7 @@ Windows, Linux
 1.3.46
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -78,6 +79,8 @@ Windows, Linux
 
 Irrelevant, but set the controller to "USB dual port" first
 
+</td>
+</tr>
 </table>
 
 This adapter lets you use servos together with your microscope

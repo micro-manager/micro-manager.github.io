@@ -96,6 +96,8 @@ Quad filter changer
 | Handshaking         | Off                                   |
 | StopBits            | 1                                     |
 
+</td>
+</tr>
 </table>
 
 Controls quad filter changer from

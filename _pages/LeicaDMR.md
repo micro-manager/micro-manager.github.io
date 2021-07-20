@@ -70,11 +70,6 @@ Nosepiece, Z-drive, Aperture diaphragm, Field diaphragm
 </td>
 </tr>
 <tr>
-
-<td markdown="1">
-</td>
-</tr>
-<tr>
 <td markdown="1">
 
 **Available since version:**
@@ -85,6 +80,7 @@ Nosepiece, Z-drive, Aperture diaphragm, Field diaphragm
 1.3.40
 
 </td>
+</tr>
 <tr>
 <td markdown="1" valign=top>
 
@@ -102,7 +98,9 @@ Nosepiece, Z-drive, Aperture diaphragm, Field diaphragm
 | Parity              | None     |
 | StopBits            | 1        |
 
-<div markdown="1">
+</td>
+</tr>
+</table>
 
 This adapter controls Leica DMR microscopes through a direct serial
 interface. It was build for and tested with a DMRXA, but likely works
@@ -120,4 +118,3 @@ the Hardware Configuration Wizard (i.e., Micro-Manager does not query
 the microscope itself for devices present).
 
 {% include Listserv_Search text="DMR" %}
-</div>

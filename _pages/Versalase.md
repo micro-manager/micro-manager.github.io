@@ -67,7 +67,7 @@ All platforms (uses serial port)
 [Vortran Stradus VersaLase](http://www.vortranlaser.com)
 
 </td>
-
+</tr>
 <tr>
 <td markdown="1" valign=top>
 

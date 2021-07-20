@@ -68,6 +68,7 @@ Windows
 1.3.41
 
 </td>
+</tr>
 <tr>
 <td markdown="1" valign=top>
 
@@ -85,6 +86,9 @@ Windows
 | Parity              | None   |
 | StopBits            | 1      |
 
+</td>
+</tr>
+</table>
 
 
 The Thorlabs DCxxxx adapter operates the [DC2100 - High Power LED

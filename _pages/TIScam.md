@@ -5,8 +5,9 @@ redirect_from: /wiki/TIScam
 layout: page
 ---
 
-| Summary:                | Interfaces with [The Imaging Source](http://www.theimagingsource.com) Cameras |
+|                         |                                                                               |
 |-------------------------|-------------------------------------------------------------------------------|
+| Summary:                | Interfaces with [The Imaging Source](http://www.theimagingsource.com) Cameras |
 | Author:                 | Falk Dettmar                                                                  |
 | License:                | GNU LGPL                                                                      |
 | Platforms:              | Windows and Linux (No Mac driver available)                                   |

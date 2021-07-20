@@ -5,8 +5,9 @@ redirect_from: /wiki/MightexPolygon
 layout: page
 ---
 
-| Summary:       | Interfaces with [Mightex Polygon400](http://www.mightexsystems.com/family_info.php?cPath=245_243&categories_id=243) multiwavelength patterned illuminators. |
+|                |                                                                                                                                                             |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Summary:       | Interfaces with [Mightex Polygon400](http://www.mightexsystems.com/family_info.php?cPath=245_243&categories_id=243) multiwavelength patterned illuminators. |
 | Author:        |                                                                                                                                                             |
 | Documentation: |                                                                                                                                                             |
 | License:       | Proprietary/closed source, Copyright Mightex Systems, 2015                                                                                                  |

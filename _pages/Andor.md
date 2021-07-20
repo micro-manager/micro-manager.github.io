@@ -6,20 +6,17 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Interfaces with Andor CCD and EMCCD cameras. For sCMOS models such as Zyla, Neo and Sona refer to <a href="AndorSDK3" title="wikilink">AndorSDK3</a>.</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Interfaces with Andor CCD and EMCCD cameras. For sCMOS models such as Zyla, Neo and Sona refer to <a href="AndorSDK3" title="wikilink">AndorSDK3</a>.</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Authors:</p></td>
 <td><p>Nenad Amodaj (Windows)<br />
 Karl Bellvé (Linux port)<br />
 Jizhen Zhao, Daigang Wen, Francis McCloy (Andor contributors)</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Maintainers:</p></td>
 <td><p>Alan Mullan (Andor)<br />
 Niall Flanagan (Andor)<br />
@@ -27,22 +24,21 @@ Arthur Edelstein<br />
 Karl Bellvé (Linux port)<br />
 Pariksheet Nanda (Andor) this document</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>License:</p></td>
 <td><p>BSD</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows and Linux (No Mac driver available)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Devices:</p></td>
 <td><p>iXon Life, iXon Ultra, iXon3, iXon+, iXon<br />
 Luca-S, Luca-R<br />
 Clara, Clara-E<br />
 Newton</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

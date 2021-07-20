@@ -65,6 +65,8 @@ All
 
 [github](https://github.com/PRNicovich/NicoLase)
 
+</td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -77,14 +79,16 @@ All
 
 </td>
 </tr>
+</table>
 
 
 ------------------------------------------------------------------------
 
 <span style="font-size:90%">**Serial Port Settings**</span>
 
-| **AnswerTimeout:**       | 500.0000 |
+|                          |          |
 |--------------------------|----------|
+| **AnswerTimeout:**       | 500.0000 |
 | **BaudRate**             | 9600     |
 | **DataBits:**            | 8        |
 | **DelayBetweenCharsMs:** | 0.0000   |

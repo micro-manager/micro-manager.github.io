@@ -5,8 +5,9 @@ redirect_from: /wiki/MicroPoint
 layout: page
 ---
 
-| Summary:   | Interfaces with Andor MicroPoint pulse laser targeting device                                                          |
+|            |                                                                                                                        |
 |------------|------------------------------------------------------------------------------------------------------------------------|
+| Summary:   | Interfaces with Andor MicroPoint pulse laser targeting device                                                          |
 | Author:    | Arthur Edelstein                                                                                                       |
 | License:   | 3-clause BSD                                                                                                           |
 | Platforms: | Windows, (Linux and Mac [FTDI VCP drivers](http://www.ftdichip.com/Drivers/VCP.htm) are available, but yet not tested) |

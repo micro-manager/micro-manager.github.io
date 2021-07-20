@@ -6,43 +6,39 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Interfaces with Andor laser combiner</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Interfaces with Andor laser combiner</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Author:</p></td>
 <td><p>Karl Hoover, UCSF - µManager device adapter</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Maintainer:</p></td>
 <td><p>Pariksheet Nanda, Andor - this documentation and µManager device adapter</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Contributors:</p></td>
 <td><p>Ed Simmons, ES Imaging - patch for GUI TTL outputs<br />
 Pedro Almada, documentation fixes</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>License:</p></td>
 <td><p>BSD</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows (No Mac or Linux driver available)</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Devices:</p></td>
 <td><p>LC-401, LC-501, LC-601 (only 4 laser LC-601 systems supported; 5 and 6 line support possible but not yet implemented)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Since version</p></td>
 <td><p>1.3.47</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

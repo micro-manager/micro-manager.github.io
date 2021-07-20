@@ -9,8 +9,9 @@ layout: page
 
 ------------------------------------------------------------------------
 
-| Summary:      | Interfaces with Cobolt lasers.                                                                                                 |
+|               |                                                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Summary:      | Interfaces with Cobolt lasers.                                                                                                 |
 | Author:       | Lukas Kalinski, Cobolt AB [1](http://www.coboltlasers.com)                                                                     |
 | Contributors: | Melissa Haahr, Cobolt AB [2](http://www.coboltlasers.com)                                                                      |
 | License:      |                                                                                                                                |

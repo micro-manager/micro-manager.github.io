@@ -99,6 +99,8 @@ disk slider, disk spin motor, prism (light path) slider, touchscreen
 | Parity              | None |
 | StopBits            | 1    |
 
+</td>
+</tr>
 </table>
 
 This adapter interfaces to the [CrEST](http://www.crestopt.com)

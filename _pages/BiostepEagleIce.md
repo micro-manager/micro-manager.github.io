@@ -5,8 +5,9 @@ redirect_from: /wiki/BiostepEagleIce
 layout: page
 ---
 
-| Summary:   | biostep EagleIce camera adapter |
+|            |                                 |
 |------------|---------------------------------|
+| Summary:   | biostep EagleIce camera adapter |
 | Author     | Jens Gläser (biostep GmbH)      |
 | License:   | LGPL                            |
 | Platforms: | Windows 32-bit                  |

@@ -5,8 +5,9 @@ redirect_from: /wiki/TriggerScope
 layout: page
 ---
 
-| Summary:       | Adapter for the [TriggerScope device controller](http://www.triggerscope.com/) |
+|                |                                                                                |
 |----------------|--------------------------------------------------------------------------------|
+| Summary:       | Adapter for the [TriggerScope device controller](http://www.triggerscope.com/) |
 | Author:        | Austin Blanco                                                                  |
 | License:       | LGPL                                                                           |
 | Platforms:     | Linux, Mac, and Windows                                                        |

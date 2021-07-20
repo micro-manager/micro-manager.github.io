@@ -64,9 +64,7 @@ Windows
 </td>
 <td markdown="1">
 
-```
-          pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000
-```
+pco.panda, pco.edge, pco.dimax S/HD/HS, pco.dimax cs, pco.ultraviolet, pco.pixelfly usb, pco.flim, pco.1200/1300/1400/1600/2000/4000
 
 </td>
 </tr>
@@ -82,7 +80,7 @@ Camera Link HS interface, Lightsheet mode
 
 </td>
 </tr>
-
+<tr>
 <td markdown="1">
 
 **Available since version:**
@@ -93,6 +91,7 @@ Camera Link HS interface, Lightsheet mode
 1.3.24
 
 </td>
+</tr>
 </table>
 
 This adapter has been developed for all pco.sdk based camera systems

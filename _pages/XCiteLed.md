@@ -5,8 +5,9 @@ redirect_from: /wiki/XCiteLed
 layout: page
 ---
 
-| Summary:   | Interfaces with [X-Cite XLED1](http://www.ldgi.com/x-cite/xled1/) device. |
+|            |                                                                           |
 |------------|---------------------------------------------------------------------------|
+| Summary:   | Interfaces with [X-Cite XLED1](http://www.ldgi.com/x-cite/xled1/) device. |
 | Author:    | Lon Chu                                                                   |
 | License:   | BSD                                                                       |
 | Platforms: | Windows                                                                   |

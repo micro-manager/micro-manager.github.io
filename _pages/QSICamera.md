@@ -79,6 +79,7 @@ QSI cameras
 1.4.15
 
 </td>
+</tr>
 </table>
 
 The code for this device adapter has not yet been merged with the source

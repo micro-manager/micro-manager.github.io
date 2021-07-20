@@ -81,8 +81,6 @@ with the Märzhäuser Tango you need to do the following:
 <table>
 <tr>
 <td markdown="1">
-<tr>
-<td markdown="1">
 
 1\.
 
@@ -107,6 +105,7 @@ Märzhäuser components.
 
 </td>
 </tr>
+</table>
 
 **See also:** Märzhäuser [Corvus](Corvus "wikilink") device adapter.
 

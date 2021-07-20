@@ -5,8 +5,9 @@ redirect_from: /wiki/Point_Grey_Research
 layout: page
 ---
 
-| Summary:         | Device Adapter for Point Grey Research cameras                 |
+|                  |                                                                |
 |------------------|----------------------------------------------------------------|
+| Summary:         | Device Adapter for Point Grey Research cameras                 |
 | Author:          | Nico Stuurman                                                  |
 |                  |                                                                |
 | License:         | BSD                                                            |

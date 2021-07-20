@@ -28,6 +28,8 @@ Device adapter for the SouthPort MicroZ
 
 maobaoqi (mbaoqi@outlook.com)
 
+</td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -88,6 +90,7 @@ None
 
 </td>
 </tr>
+</table>
 
 
 ------------------------------------------------------------------------

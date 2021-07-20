@@ -70,12 +70,6 @@ DC3240M
 </tr>
 <tr>
 <td markdown="1">
-</td>
-<td markdown="1">
-</td>
-</tr>
-
-<td markdown="1">
 
 **Available since version:**
 
@@ -85,6 +79,7 @@ DC3240M
 1.4.14 nightly build of 02/06/2013
 
 </td>
+</tr>
 </table>
 
 **Procedure:** Install latest version of Micromanager (this device

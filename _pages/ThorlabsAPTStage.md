@@ -5,8 +5,9 @@ redirect_from: /wiki/ThorlabsAPTStage
 layout: page
 ---
 
-| Summary:     | Interfaces with Thorlabs APT devices and controllers. |
+|              |                                                       |
 |--------------|-------------------------------------------------------|
+| Summary:     | Interfaces with Thorlabs APT devices and controllers. |
 | Authors:     | Emilio J. Gualda and Egor Zindy                       |
 | Maintainers: | Egor Zindy                                            |
 | License:     | BSD                                                   |

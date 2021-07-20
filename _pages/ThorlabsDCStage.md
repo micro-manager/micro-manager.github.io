@@ -7,7 +7,7 @@ layout: page
 
 ## ThorlabsDCStage adapter
 
-<table cellspacing=3>
+<table>
 <tr>
 <td markdown="1">
 
@@ -68,6 +68,7 @@ Windows
 1.4.14
 
 </td>
+</tr>
 <tr>
 <td markdown="1">
 
@@ -85,9 +86,13 @@ Windows
 | Parity              | None   |
 | StopBits            | 1      |
 
+</td>
+</tr>
+</table>
 
 
-{% include notice icon="info" content="See also: [[ThorlabsAPTStage]]" %}
+
+{% include notice icon="info" content="See also: [ThorlabsAPTStage](ThorlabsAPTStage)" %}
 
 The ThorlabsDCStage adapter operates the Motorized Translational Stages
 (50 mm)

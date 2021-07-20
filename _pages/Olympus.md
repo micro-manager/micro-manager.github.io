@@ -6,7 +6,7 @@ layout: page
 ---
 
 ## Olympus IX81/IX71/BX61/BX51 adapter
-<table cellspacing=3>
+<table>
 <tr>
 <td markdown="1">
 
@@ -66,6 +66,7 @@ Windows, Mac OS X (through serial port)
 1.3.22
 
 </td>
+</tr>
 <tr>
 <td markdown="1" valign=top>
 
@@ -85,6 +86,7 @@ Windows, Mac OS X (through serial port)
 
 </td>
 </tr>
+</table>
 
 <div markdown="1">
 ## Installation

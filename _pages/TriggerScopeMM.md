@@ -5,8 +5,9 @@ redirect_from: /wiki/TriggerScopeMM
 layout: page
 ---
 
-| Summary:       | Adapter for the [TriggerScope](http://www.triggerscope.com/) using Micro-Manager firmware |
+|                |                                                                                           |
 |----------------|-------------------------------------------------------------------------------------------|
+| Summary:       | Adapter for the [TriggerScope](http://www.triggerscope.com/) using Micro-Manager firmware |
 | Author:        | Nico Stuurman, based on code by Austin Blanco                                             |
 | License:       | LGPL                                                                                      |
 | Platforms:     | Linux, Mac, and Windows                                                                   |

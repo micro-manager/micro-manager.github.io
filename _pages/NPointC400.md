@@ -72,6 +72,8 @@ All platforms (serial interface)
 | Handshaking         |          |
 | StopBits            |          |
 
+</td>
+</tr>
 </table>
 
 (Content to be added.)

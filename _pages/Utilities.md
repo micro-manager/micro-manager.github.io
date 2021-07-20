@@ -6,33 +6,29 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Various abstract devices</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Various abstract devices</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Author:</p></td>
 <td><p>Nico Stuurman</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>License:</p></td>
 <td><p>LGPL</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Linux, Mac, and Windows</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Devices:</p></td>
 <td><p>Multi-Shutter, Multi-Camera<br />
 DA-Shutter, DA-Z-Stage, DA--XY-Stage<br />
 Autofocus-Stage<br />
 State-Device-Shutter</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

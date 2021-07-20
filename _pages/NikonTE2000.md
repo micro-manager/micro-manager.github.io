@@ -86,6 +86,9 @@ Path, Analyzer, FilterBlock, Lamp, Focus (z-drive), PerfectFocus
 | Parity              | None |
 | StopBits            | 1    |
 
+</td>
+</tr>
+</table>
 
 
 This adapter communicates to all the devices in the TE2000 through the

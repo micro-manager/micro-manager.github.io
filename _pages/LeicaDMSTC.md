@@ -97,6 +97,8 @@ Hub, XY stage
 | Parity              | None  |
 | StopBits            | 1     |
 
+</td>
+</tr>
 </table>
 
 This adapter interfaces to the Leica DMSTC XY stage. Connect the DMSTC

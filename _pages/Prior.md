@@ -95,6 +95,8 @@ shutter, TTL, LumenPro
 | Parity              | None |
 | StopBits            | 1    |
 
+</td>
+</tr>
 </table>
 
 This adapter interfaces with Prior hardware through the ProScan or

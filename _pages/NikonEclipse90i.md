@@ -7,8 +7,9 @@ layout: page
 
 ## Nikon Eclipse 90i motorized microscope
 
-| Summary:      | Adapter for Nikon Eclipse 90i motorized microscope.                                                                                                                                      |
+|               |                                                                                                                                                                                          |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Summary:      | Adapter for Nikon Eclipse 90i motorized microscope.                                                                                                                                      |
 | Authors:      | Nico Stuurman, Egor Zindy                                                                                                                                                                |
 | Maintainers:  | Egor Zindy                                                                                                                                                                               |
 | License:      | Source code cannot be made available                                                                                                                                                     |

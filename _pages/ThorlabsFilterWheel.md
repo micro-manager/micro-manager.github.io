@@ -65,6 +65,7 @@ Windows (depends on USB to serial port driver)
 1.3.38
 
 </td>
+</tr>
 <tr>
 <td markdown="1" valign=top>
 
@@ -82,6 +83,9 @@ Windows (depends on USB to serial port driver)
 | Parity              | None    |
 | StopBits            | 1       |
 
+</td>
+</tr>
+</table>
 
 
 This adapter controls the Thorlabs FilterWheel FW102B and FW212B. A

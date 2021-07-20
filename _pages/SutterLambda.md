@@ -6,30 +6,27 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Interfaces to Sutter Lambda 10 controllers, Lambda SC controller, and DG4</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Interfaces to Sutter Lambda 10 controllers, Lambda SC controller, and DG4</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Authors:</p></td>
 <td><p>Nenad Amodaj</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Maintainers:</p></td>
 <td><p>Arthur Edelstein</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>License:</p></td>
 <td><p>BSD</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows, Mac OS X and Linux (only serial port, no parallel port or USB)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Devices:</p></td>
 <td><p><a href="http://sutter.com/IMAGING/lambdasc.html">Lambda SC</a><br />
 <a href="http://sutter.com/IMAGING/lambda10b.html">Lambda 10-B</a><br />
@@ -37,7 +34,6 @@ layout: page
 <a href="http://sutter.com/IMAGING/lambda103.html">Lambda 10-3</a><br />
 <a href="http://sutter.com/IMAGING/lambdadg4.html">Lambda DG-4</a></p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

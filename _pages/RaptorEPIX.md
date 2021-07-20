@@ -5,10 +5,10 @@ redirect_from: /wiki/RaptorEPIX
 layout: page
 ---
 
-| Summary:   | Interfaces with Raptor Photonics cameras using EPIX cameralink board |
-|------------|----------------------------------------------------------------------|
-| Authors:   | David Biggs                                                          |
 |            |                                                                      |
+|------------|----------------------------------------------------------------------|
+| Summary:   | Interfaces with Raptor Photonics cameras using EPIX cameralink board |
+| Authors:   | David Biggs                                                          |
 | Copyright: | Raptor Photonics Ltd                                                 |
 | License:   | BSD                                                                  |
 | Platforms: | Windows 32-bit and 64-bit                                            |

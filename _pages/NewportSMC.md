@@ -93,6 +93,8 @@ All platforms (serial interface)
 | Handshaking         | Software (not sure if this is needed) |
 | StopBits            | 1                                     |
 
+</td>
+</tr>
 <tr>
 <td markdown="1">
 

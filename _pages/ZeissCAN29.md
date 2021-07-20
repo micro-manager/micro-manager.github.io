@@ -72,6 +72,7 @@ Definite Focus, Colibri.
 
 </td>
 </tr>
+<tr>
 
 <td markdown="1" valign=top>
 
@@ -89,6 +90,9 @@ Definite Focus, Colibri.
 | Parity              | None  |
 | StopBits            | 1     |
 
+</td>
+</tr>
+</table>
 
 
 This adapter controls Zeiss microscopes that use the CAN29 bus

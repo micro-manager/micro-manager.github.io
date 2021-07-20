@@ -5,8 +5,9 @@ redirect_from: /wiki/Rapp
 layout: page
 ---
 
-| Summary:   | Rapp Phototargeting Unit |
+|            |                          |
 |------------|--------------------------|
+| Summary:   | Rapp Phototargeting Unit |
 | Author:    | Arthur Edelstein         |
 | License:   | LGPL                     |
 | Platforms: | Windows                  |

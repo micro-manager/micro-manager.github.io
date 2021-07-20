@@ -5,8 +5,9 @@ redirect_from: /wiki/MatrixVision
 layout: page
 ---
 
-| Summary:         | Device adapter to control [MATRIX VISION GmbH](http://www.matrix-vision.com) devices                                                      |
+|                  |                                                                                                                                           |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Summary:         | Device adapter to control [MATRIX VISION GmbH](http://www.matrix-vision.com) devices                                                      |
 | Author:          | Stefan Battmer                                                                                                                            |
 |                  |                                                                                                                                           |
 | License:         | BSD                                                                                                                                       |

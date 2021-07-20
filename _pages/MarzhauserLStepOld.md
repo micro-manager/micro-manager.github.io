@@ -84,6 +84,8 @@ Should work on all platforms (serial interface)
 | Handshaking         |          |
 | StopBits            |          |
 
+</td>
+</tr>
 </table>
 
 See also: [MarzhauserLStep](MarzhauserLStep "wikilink") for newer L-Step

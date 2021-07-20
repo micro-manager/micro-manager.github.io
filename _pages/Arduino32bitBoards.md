@@ -6,43 +6,39 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Adapter for <a href="http://www.arduino.cc/">32bit Arduino boards</a></p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Adapter for <a href="http://www.arduino.cc/">32bit Arduino boards</a></p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Author:</p></td>
 <td><p>Bonno Meddens</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>License:</p></td>
 <td><p>LGPL</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Linux, Mac, and Windows</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Since version:</p></td>
 <td><p>1.4.23 - 20190731</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Automated Serial Port Setup:</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Peripheral device discovery:</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Wiki page:</p></td>
 <td><p>Bonno Meddens<br />
 Nico Stuurman</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

@@ -5,8 +5,9 @@ redirect_from: /wiki/Spinnaker
 layout: page
 ---
 
-| Summary:         | Device Adapter for FLIR cameras that use the Spinnaker interface |
+|                  |                                                                  |
 |------------------|------------------------------------------------------------------|
+| Summary:         | Device Adapter for FLIR cameras that use the Spinnaker interface |
 | Available since: | 2019                                                             |
 
 ------------------------------------------------------------------------

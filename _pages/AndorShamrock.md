@@ -6,40 +6,36 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Interfaces with Andor Smamrock Spectrograph</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Interfaces with Andor Smamrock Spectrograph</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Authors:</p></td>
 <td><p>Francis McCloy(Andor)<br />
 Cary McPoland (Andor)</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Maintainers:</p></td>
 <td><p>Francis McCloy(Andor)<br />
 Cary McPoland (Andor)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>License:</p></td>
 <td><p>LGPL</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Devices:</p></td>
 <td><p>Andor Shamrock 193i, 300, 500 &amp; 750</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Since version</p></td>
 <td><p>1.4.20</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------

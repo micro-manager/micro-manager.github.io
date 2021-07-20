@@ -87,7 +87,7 @@ NV40/1, NV40/1CLE
 
 </td>
 </tr>
-
+<tr>
 <td markdown="1">
 
 **Available since version:**
@@ -98,4 +98,5 @@ NV40/1, NV40/1CLE
 1.4.16(nightly build)
 
 </td>
+</tr>
 </table>

@@ -6,37 +6,33 @@ layout: page
 ---
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Summary:</p></th>
-<th><p>Interfaces with <a href="http://www.andor.com/microscopy-systems/active-illumination/mosaic">Andor Mosaic 3</a> Digital Mirror Device (DMD). The Andor Mosaic3 device allows phototargeting of microscope specimens.</p></th>
+<tr>
+<td><p>Summary:</p></td>
+<td><p>Interfaces with <a href="http://www.andor.com/microscopy-systems/active-illumination/mosaic">Andor Mosaic 3</a> Digital Mirror Device (DMD). The Andor Mosaic3 device allows phototargeting of microscope specimens.</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Author:</p></td>
 <td><p>Arthur Edelstein</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Documentation:</p></td>
 <td><p>Arthur Edelstein<br />
 Pariksheet Nanda</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>License:</p></td>
 <td><p>Properietary, closed source, Copyright Andor Technology 2014</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Devices:</p></td>
 <td><p>MM-820*-SUB<br />
 MM-820*-SUB-COMP<br />
 (MM-720* products, i.e. Mosaic I and II devices, are not supported)</p></td>
 </tr>
-</tbody>
 </table>
 
 ------------------------------------------------------------------------
@@ -330,14 +326,12 @@ Open the [Script Panel GUI](Script_Panel_GUI "wikilink") and paste the
 following code:
 
 ```
-```
   import ij.IJ; // Allows access to basic ImageJ utilities.
   proc = IJ.getImage().getProcessor().duplicate(); // Read the current image.
   pixels = proc.getPixels(); // Extract pixels from ImageJ ImageProcessor object.
   mosaic = mmc.getSLMDevice(); // Get the installed name of the Mosaic device.
   mmc.setSLMImage(mosaic, pixels); // Upload the image to the Mosaic.
   mmc.displaySLMImage(mosaic); // Display the Mosaic.
-```
 ```
 
 Running this script will result in projecting the image you have just

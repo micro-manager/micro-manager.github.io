@@ -123,7 +123,7 @@ Supported
 
 </td>
 </tr>
-
+<tr>
 <td markdown="1">
 
 **Available since version:**
@@ -134,6 +134,7 @@ Supported
 1.4.15
 
 </td>
+</tr>
 </table>
 
 The code for this adapter was written by Chris Belter and donated to the

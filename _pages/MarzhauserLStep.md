@@ -96,6 +96,8 @@ Controller, XYStage
 | Handshaking         | Off      |
 | StopBits            | 2        |
 
+</td>
+</tr>
 </table>
 
 To drive a stage, you will have to define the 'LStep Controller' device.
