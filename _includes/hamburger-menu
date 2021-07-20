@@ -1,0 +1,11 @@
+		<nav role="navigation">
+      <div id="ham-toggle">
+        <input type="checkbox" />
+        <span></span> <!-- top bun -->
+        <span></span> <!-- hamburger -->
+        <span></span> <!-- bottom bun -->
+        <ul id="ham-menu">
+          {% include main-menu %}
+        </ul>
+      </div>
+    </nav>

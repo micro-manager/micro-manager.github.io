@@ -1,7 +1,7 @@
-{{sidebar
-|title=overview
-|content=
-* [[Micro-Manager Project Overview]]
-* [[Why Micro-Manager?|Why Micro&#x2011;Manager?]]
-* [[Who_should_use_Micro-Manager|Who should use Micro&#x2011;Manager]]
-}}
+{% include Sidebar title='overview' content="
+
+* [Micro-Manager Project Overview](Micro-Manager_Project_Overview)
+* [Why Micro&#x2011;Manager?](Why_Micro-Manager%3F)
+* [Who should use Micro&#x2011;Manager](Who_should_use_Micro-Manager)
+
+" %}

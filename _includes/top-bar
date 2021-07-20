@@ -1,0 +1,6 @@
+<section id="top-bar">
+  <a href="/"><img id="site-logo" src="/images/logo/logo-web.png"></a>
+  <div id="search-panel">
+    <div id="search-box"></div>
+  </div>
+</section>

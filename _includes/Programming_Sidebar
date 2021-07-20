@@ -1,26 +1,27 @@
-{{sidebar
-|title=programming
-|content=
-* [[Micro-Manager Programming Guide|Programming Guide]]
-* [[Script Panel GUI|Scripting (Beanshell)]]
-* [[Example Beanshell scripts]] 
-* [[Writing plugins for Micro-Manager]]
-* [[Clojure]]
-* [[Using_the_Micro-Manager_python_library|Python]]
-* [[Matlab]]
-* [[Micro-Manager File Formats | File Formats]]
-* [[Search Paths]]
-* [[Building Micro-Manager Device Adapters|Writing Device Adapters]]
-* [[Building and debugging Micro-Manager source code|Building and Debugging Micro-Manager]]
-* [[Multi-Dimensional_Acquisition_Programming|Multi-D Acq. Programming]]
-* [[Policies for inclusion of source code]]
-* [https://valelab.ucsf.edu/trac/micromanager/timeline Source code repository history and tickets]
+{% include Sidebar title='programming' content="
+
+* [Programming Guide](Micro-Manager_Programming_Guide)
+* [Scripting (Beanshell)](Script_Panel_GUI)
+* [Example Beanshell scripts](Example_Beanshell_scripts)
+* [Writing plugins for Micro-Manager](Writing_plugins_for_Micro-Manager)
+* [Clojure](Clojure)
+* [Python](Using_the_Micro-Manager_python_library)
+* [Matlab](Matlab)
+* [ File Formats](Micro-Manager_File_Formats)
+* [Search Paths](Search_Paths)
+* [Writing Device Adapters](Building_Micro-Manager_Device_Adapters)
+* [Building and Debugging Micro-Manager](Building_and_debugging_Micro-Manager_source_code)
+* [Multi-D Acq. Programming](Multi-Dimensional_Acquisition_Programming)
+* [Policies for inclusion of source code](Policies_for_inclusion_of_source_code)
+* [Source code repository history and tickets](https://valelab.ucsf.edu/trac/micromanager/timeline)
 
 <center><h3>APIs</h3></center>
-* [https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html 1.4 GUI API Java Reference (Java/Beanshell)]
-* [https://valelab4.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html 1.4 Core API Reference (Java/Beanshell/Matlab)]
-* [https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html 2.0-&gamma; GUI API Java Reference (Java/Beanshell)]
-* [https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html 2.0-&gamma;  Core API Reference (Java/Beanshell/Matlab)]
-* [https://valelab4.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html Core API Reference (C++)]
-* [https://valelab4.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html Device API Reference (C++)]
-}}
+
+* [1.4 GUI API Java Reference (Java/Beanshell)](https://valelab4.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html)
+* [1.4 Core API Reference (Java/Beanshell/Matlab)](https://valelab4.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)
+* [2.0-&gamma; GUI API Java Reference (Java/Beanshell)](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html)
+* [2.0-&gamma;  Core API Reference (Java/Beanshell/Matlab)](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html)
+* [Core API Reference (C++)](https://valelab4.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html)
+* [Device API Reference (C++)](https://valelab4.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html)
+
+" %}
