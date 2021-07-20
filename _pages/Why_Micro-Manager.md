@@ -5,6 +5,7 @@ redirect_from:
   - /wiki/Why_Micro-Manager
   - /wiki/Why_Micro-Manager?
 layout: page
+section: Learn:Overview
 ---
 
 <span>**Nenad Amodaj, August 10, 2006**</span>  

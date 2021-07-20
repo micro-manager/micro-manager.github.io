@@ -1,7 +1,7 @@
 ---
 title: Menu Paths
 layout: page
-section: Contribute:Editing the Wiki
+section: Support:Editing the Wiki
 nav-links: true
 ---
 

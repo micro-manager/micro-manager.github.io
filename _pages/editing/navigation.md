@@ -1,6 +1,6 @@
 ---
 title: Navigation
-section: Contribute:Editing the Wiki
+section: Support:Editing the Wiki
 nav-links: true
 ---
 
@@ -69,6 +69,6 @@ In the linked page itself, we add a `section` entry in the front matter to indic
 ```
 ---
 title: Navigation
-section: Contribute:Editing the Wiki
+section: Support:Editing the Wiki
 ---
 ```
