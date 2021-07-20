@@ -76,7 +76,7 @@ layout: home
 <!--Twitter--->
 <div class="info-twitter">
 <div class="info-block">
-<h3><a href="/Why_Micro-Manager?">HOW IS μMANAGER DIFFERENT?</a></h3>
+<h3><a href="/Why_Micro-Manager">HOW IS μMANAGER DIFFERENT?</a></h3>
 You have a choice of many commercial packages available, too many, perhaps. Some are produced by microscope or camera manufacturers, others by third parties but they all suffer from the same problems: lack of flexibility and limited device support...
 
 <h3><a href="/Who_should_use_Micro-Manager">IS μMANAGER FOR ME?</a></h3>

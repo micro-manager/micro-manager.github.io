@@ -49,7 +49,7 @@ hardware](Device_Support "wikilink")).**
 </tr>
 </table>
 
-### [ HOW IS μMANAGER DIFFERENT?](Why_Micro-Manager%3F "wikilink")
+### [ HOW IS μMANAGER DIFFERENT?](Why_Micro-Manager "wikilink")
 
 You have a choice of many commercial packages available, too many,
 perhaps. Some are produced by microscope or camera manufacturers, others

@@ -22,8 +22,8 @@
 {% include menu-section title="Learn" link="/Micro-Manager_Project_Overview" %}
   <!-- Overview -->
   {% include menu-section title="Overview" link="/Micro-Manager_Project_Overview" %}
-    <li><a href="/why_MicroManager">Why MicroManager?</a></li>
-    <li><a href="/Who_should_use_Micro-Manager">Who should use MicroManager</a></li>
+    <li><a href="/Why_Micro-Manager">Why Micro-Manager?</a></li>
+    <li><a href="/Who_should_use_Micro-Manager">Who should use Micro-Manager</a></li>
   {% include menu-section-end %}
 
   <!-- Version 2.0 -->
