@@ -90,7 +90,7 @@
   <li><a href="/Programming_Services">Programming Services</a></li>
   {% include menu-section title="Editing the Wiki" link="/editing/" %}
     <li><a href="/editing/advanced">Advanced editing</a></li>
-    <li><a href="help/editing/citations">Citations</a></li>
+    <li><a href="/editing/citations">Citations</a></li>
     <li><a href="/editing/code">Source Code</a></li>
     <li><a href="/editing/headers">Headers</a></li>
     <li><a href="/editing/icons">Icons</a></li>
