@@ -27,8 +27,8 @@ software for the specific hardware components that are part of your
 setup.  
 
 The configuration process includes editing configuration files and is
-described in the \[documentation.php?object=Configguide Configuration
-Guide\]. Installation includes a number of sample hardware configuration
+described in the [Configuration Guide](Micro-Manager_Configuration_Guide).
+Installation includes a number of sample hardware configuration
 files (with extension \*.cfg) provided only as an example or starting
 point - they need to be edited in order to use the system with any
 particular hardware setup.  
@@ -94,11 +94,15 @@ device adapter to tell gatekeeper that you really do want to run them…)
 
 There is a better solution: open a terminal and run
 
+```
 sudo xattr -r -d com.apple.quarantine <Path to Micromanager Install>
+```
 
 for instance:
 
+```
 sudo xattr -r -d com.apple.quarantine /Applications/Micro-Manager-2.0.0
+```
 
 By default, after the first installation Micro-Manager starts with the
 Demo configuration which loads software simulators for a number of
