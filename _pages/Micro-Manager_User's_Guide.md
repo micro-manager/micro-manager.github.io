@@ -59,19 +59,26 @@ create a configuration file specific to your system.
 
 ## Installation on Windows
 
-Run the installer `MM\_Setup\_1\_x\_yy.exe` and follow the prompts. The
+Run the installer (MM\_Setup\_x\_y\_zz.exe) and follow the prompts. The
 package includes a copy of ImageJ; it may be necessary to install or
 update [Java](http://java.com) on your computer. Besides the
 manufacturer's low-level drivers for your camera and possibly other
 equipment, no other software is required to fully use Micro-Manager.
-Micro-Manager will be installed in `C:\\Program Files\\Micro-Manager1.x`.
+Micro-Manager will be installed in C:\\Program Files\\Micro-Manager-x.y.
 
-There are no particular hardware or software requirements. However, for
-practical use we recommend Windows XP, 1.7 GHz or better processor and
-at least 512 MB of RAM. Micro-Manager works on Window 7 running as
-either 32-bit or 64-bit. However, some devices will only work using
-32-bit drivers. Micro-Manager has also been reported to work with
-Windows Vista.
+There are no particular hardware or software requirements. Micro-Manager
+works on Window 7 or 10 running as either 32-bit or 64-bit. However,
+some devices will only work using 32-bit drivers. Micro-Manager has also
+been reported to work with Windows Vista.
+
+Currently, the Micro-Manager installer is not signed. This can cause
+issues with Windows not trusting the software. If you see the blue
+"Windows Protected your PC" dialog, click on "More Info", which will
+unveil the "Run Anyway" button. If the "Windows Protected your PC"
+dialog is red, you have multiple options. You can go to Windows
+Settings, Update & Security, Windows Security, App & Browser control,
+Reputation based Protection Settings, switch off "Check apps and files".
+Or, you can right click on the installer and select "Unblock".
 
 ## Installation on Mac OS X
 

@@ -264,10 +264,13 @@ release](Download_Micro-Manager_Latest_Release "wikilink").
     [ThorlabsAPTStage](ThorlabsAPTStage "wikilink"))
 -   [ThorlabsDCxxxx](ThorlabsDCxxxx "wikilink") - Thorlabs LED
     controllers
-  - [ThorlabsElliptecSlider](ThorlabsElliptecSlider "wikilink") -
+-   [ThorlabsElliptecSlider](ThorlabsElliptecSlider "wikilink") -
     Thorlabs Elliptec sliders ELL6, ELL9, ELL17 and ELL20.
-  - [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink") - Thorlabs
+-   [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink") - Thorlabs
     Filter Wheel
+-   **ThorlabsKinesis** - Thorlabs Kinesis motor controllers ([separate
+    download and
+    instructions](https://github.com/micro-manager/mmdev-ThorlabsKinesis))
 -   [ThorlabsMFC1](ThorlabsMFC1 "wikilink") - Thorlabs MFC1 Motorized
     Microscope Focus Controller
 -   [ThorlabsSC10](ThorlabsSC10 "wikilink") - Thorlabs shutter

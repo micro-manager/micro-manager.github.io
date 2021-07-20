@@ -195,4 +195,4 @@ Find some example scripts
 10. Right shoulder button
 11. Y,B,A,X buttons
 
-{% include Listserv_Search text="AcquireMultipleRegions" %}
+{% include Listserv_Search text="Gamepad" %}

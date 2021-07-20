@@ -5,12 +5,6 @@ redirect_from: /wiki/User:David_F._Luecke
 layout: page
 ---
 
-I am a microscopist working for the Lyme Disease Research Group, part of
-the Cell and Molecular Biology Department of the University of New
-Haven. I work mostly with optical and atomic force microscopy. I have a
-strong interest in adapting Micro-Manager to our work. Some of my
-microscopy work may be seen in our PLoS ONE paper:
-
-Sapi E, Bastian SL, Mpoy CM, Scott S, Rattelle A, et al. (2012)
-Characterization of Biofilm Formation by Borrelia burgdorferi In Vitro.
-PLoS ONE 7(10): e48277. <doi:10.1371/journal.pone.0048277>
+I was a microscopist working with the Lyme Disease Research Group, part
+of the Cell and Molecular Biology Department of the University of New
+Haven. I worked mostly with optical and atomic force microscopy.

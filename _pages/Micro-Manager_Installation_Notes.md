@@ -36,19 +36,26 @@ particular hardware setup.
 
 ## Windows
 
-Run the installer (MMSetup\_xxxx.exe) and follow the prompts. The
-package includes a copy of ImageJ and Java. You might need to install
-drivers for your cameras and possibly other equipment (see our [Device
-Support](Device_Support "wikilink") page).
+Run the installer (MM\_Setup\_x\_y\_zz.exe) and follow the prompts. The
+package includes a copy of ImageJ; it may be necessary to install or
+update [Java](http://java.com) on your computer. Besides the
+manufacturer's low-level drivers for your camera and possibly other
+equipment, no other software is required to fully use Micro-Manager.
+Micro-Manager will be installed in C:\\Program Files\\Micro-Manager-x.y.
 
-Micro-Manager is intended for Windows XP and later. Some versions may
-work on Windows 2000 (by installing some additional components), but
-this is untested and unsupported.
+There are no particular hardware or software requirements. Micro-Manager
+works on Window 7 or 10 running as either 32-bit or 64-bit. However,
+some devices will only work using 32-bit drivers. Micro-Manager has also
+been reported to work with Windows Vista.
 
-There are no particular hardware requirements. However, for practical
-use we recommend a 1.7-GHz or better processor and at least 512 MB of
-RAM. Depending on your camera (image size) and imaging speed, you may
-want to have a lot more RAM.
+Currently, the Micro-Manager installer is not signed. This can cause
+issues with Windows not trusting the software. If you see the blue
+"Windows Protected your PC" dialog, click on "More Info", which will
+unveil the "Run Anyway" button. If the "Windows Protected your PC"
+dialog is red, you have multiple options. You can go to Windows
+Settings, Update & Security, Windows Security, App & Browser control,
+Reputation based Protection Settings, switch off "Check apps and files".
+Or, you can right click on the installer and select "Unblock".
 
 ## Mac OS X
 
@@ -79,6 +86,19 @@ you can get this from multiple sources, I like
 [adoptopenjdk](http://adoptopenjdk.net). Download and install the latest
 version. If ImageJ still picks Java 6, try copying the "jre" directory
 of the adoptopenjdk installation into the Micro-Manager directory.
+
+On MacOS Catalina 10.15.7, and later, the gatekeeper then complains that
+nothing is signed by a verified developer. The solution to that involves
+a very large amount of clicking (you have to click several buttons per
+device adapter to tell gatekeeper that you really do want to run them…)
+
+There is a better solution: open a terminal and run
+
+sudo xattr -r -d com.apple.quarantine <Path to Micromanager Install>
+
+for instance:
+
+sudo xattr -r -d com.apple.quarantine /Applications/Micro-Manager-2.0.0
 
 By default, after the first installation Micro-Manager starts with the
 Demo configuration which loads software simulators for a number of
