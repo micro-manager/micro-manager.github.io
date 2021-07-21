@@ -31,7 +31,7 @@
     <li><a href="/Version_2.0_Users_Guide">User Guide</a></li>
     <li><a href="/Version_2.0_API">API</a></li>
     <li><a href="/Version_2.0_API_Transition_Guide">API Transition Guide</a></li>
-    <li><a href="Version_2.0_API_How_do_I">API, How do I?</a></li>
+    <li><a href="/Version_2.0_API_How_do_I">API, How do I?</a></li>
     <li><a href="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html">Javadoc</a></li>
     <li><a href="/Version_2.0_API_Events">API Events</a></li>
     <li><a href="/Version_2.0_Plugins">Plugins</a></li>
