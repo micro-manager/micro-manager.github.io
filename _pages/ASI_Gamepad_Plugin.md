@@ -96,8 +96,7 @@ Xbox One controller (tested) or XBox 360 controller (not tested)
 
 ### Gamepad Status
 
-![](media/Asi_gamepad_status.jpg
-"Asi_gamepad_status.jpg")
+![](media/Asi_gamepad_status.jpg "Asi_gamepad_status.jpg")
 
 The controller/gamepad isn't added thru the hardware config wizard,
 instead the plugin when launched looks for it. Then it displays the
@@ -114,8 +113,7 @@ glows solid. Moments later the plugin will update the status to
 
 ### Save and Load Buttons
 
-![](media/Asi_gamepad_save_load.jpg
-"Asi_gamepad_save_load.jpg")
+![](media/Asi_gamepad_save_load.jpg "Asi_gamepad_save_load.jpg")
 
 The button and joystick assignments aren't automatically saved by the
 plugin between session (Note: they are in the 2.0 version of the
@@ -125,8 +123,7 @@ used in 2.0.
 
 ### Axis Assignment Table
 
-![](media/Asi_gamepad_axis_table.jpg
-"Asi_gamepad_axis_table.jpg")
+![](media/Asi_gamepad_axis_table.jpg "Asi_gamepad_axis_table.jpg")
 
 Axes are analog controls on the gamepad.
 
@@ -151,8 +148,7 @@ property , the stage will move +3 mm/sec to -3 mm/sec.
 
 ### Button Assignment Table
 
-![](media/Asi_gamepad_button_table.jpeg
-"Asi_gamepad_button_table.jpeg")
+![](media/Asi_gamepad_button_table.jpeg "Asi_gamepad_button_table.jpeg")
 
 Unlike the axes controls, buttons have only two states, pressed or
 unpressed. The Action column of the Button assignment table lets user
@@ -180,8 +176,7 @@ Find some example scripts
 
 ## Controller Layout
 
-![](media/Xbox_controller_layout_crop.png
-"Xbox_controller_layout_crop.png")
+![](media/Xbox_controller_layout_crop.png "Xbox_controller_layout_crop.png")
 
 1.  Right Thumbstick X/Y
 2.  Directional pad or DPAD
