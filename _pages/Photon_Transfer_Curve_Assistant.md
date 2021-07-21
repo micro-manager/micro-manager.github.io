@@ -13,7 +13,7 @@ This plugin will take series of images with varying exposure times, and
 present you with the mean and standard deviation image obtained at each
 exposure.
 
-![](media/_PTCTools.png "_PTCTools.png")
+![](/media/PTCTools.png)
 
 Provide even, continuous illumination of your camera. Establish the
 lowest exposure time possible with your camera, and establish the
@@ -26,12 +26,12 @@ The plugin will then ask you to close the shutter, or prevent light of
 reaching the sensor in any other way possible so that it can obtain a
 true dark image.
 
-![](media/_PTCToolsDark.png "_PTCToolsDark.png")
+![](/media/PTCToolsDark.png)
 
 After the plugin collected dark images, it will ask you to switch the
 light back on.
 
-![](media/_PTCToolsLight.png "_PTCToolsLight.png")
+![](/media/PTCToolsLight.png)
 
 After all images are collected (which may take a while), an ImageJ stack
 with two channels, one the mean, the other channel the std.dev. at each

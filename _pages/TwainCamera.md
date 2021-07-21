@@ -94,14 +94,14 @@ Sourceforge: [2](http://sourceforge.net/projects/twain-dsm/files/) As of
 configuration wizard will show you the following message upon selecting
 the Twain camera device:
 
-![](Twain_TWAINDSM.DLL_MISSING.GIF "Twain_TWAINDSM.DLL_MISSING.GIF")
+![](/media/Twain_TWAINDSM.DLL_MISSING.GIF)
 
 Also please double check that the camera has a 'controllable' UI. Use
 twain.org's "Twain2 Sample App" program select your camera, press
 "Connect to Data Source" Your camera must report CAP\_UICONTROLLABLE =
 true.
 
-![](media/TWAIN_CAP_UICONTROLLABLE.GIF "TWAIN_CAP_UICONTROLLABLE.GIF")
+![](/media/TWAIN_CAP_UICONTROLLABLE.GIF)
 
 Changes in 1.3.41:  
 • Initial release. Leica DFC cameras are operational  

@@ -17,7 +17,7 @@ To use this plugin effectively, you will need to calibrate the relation
 in your system. The plugin will use this information to overlay the
 images precisely.
 
-![](media/_AssembleData.png "_AssembleData.png")
+![](/media/AssembleData.png)
 
 Open the two data sets you would like to combine. They can be
 multi-dimensional acquisitions, and can even contain data from multiple
@@ -30,7 +30,7 @@ and error. The "Test" button will assemble only the first channel and
 first time point of both datasets. Once things look good, press the
 "Assemble" button to obtained the complete, overlayed data.
 
-![](media/_AssmbleResult.jpg "_AssmbleResult.jpg")
+![](/media/AssmbleResult.jpg)
 
 {% include Listserv_Search text="AssembleData" %}
 
