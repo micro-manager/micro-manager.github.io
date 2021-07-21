@@ -128,7 +128,7 @@ from the site but can still be obtained by pointing your browser
 here](http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe_here "wikilink")
 (Tested on 25th Feb 2009).
 
---[Prashanth](/users/Prashanth "wikilink")
+--Prashanth
 
 Note: QCam 2.0.8 and above require the firewire card's driver to be
 upgraded from the generic microsoft driver to the newer thesycon driver.

@@ -120,6 +120,6 @@ hardware handshake. Use a null-modem cable.
 This driver does not work with the E-750. The E-750 uses a special
 binary protocol over the serial line.
 
---[Karl Bellve, Biomedical Imaging Group, University of
-Massachusetts](/users/Kdb "wikilink") 16:49, 1 July 2009 (UTC)
+--Karl Bellve, Biomedical Imaging Group, University of
+Massachusetts 16:49, 1 July 2009 (UTC)
 

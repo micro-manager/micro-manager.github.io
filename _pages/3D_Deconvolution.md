@@ -317,5 +317,5 @@ image for the PSF.
     restoration = null; 
     print ("Finished");
 
---[Karl Bellve, Biomedical Imaging Group, University of
-Massachusetts](/users/Kdb "wikilink") 10:36, 22 April 2011 (PDT)
+--Karl Bellve, Biomedical Imaging Group, University of
+Massachusetts 10:36, 22 April 2011 (PDT)

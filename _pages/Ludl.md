@@ -140,7 +140,7 @@ use to deduce the drive letter.
 If using an actual serial cable, ensure that the cable is of the ["null
 modem"](http://en.wikipedia.org/wiki/Null_modem) type.
 
---[oreopoj](/users/oreopoj "wikilink") 14:19, 8 September 2010 (EST)
+--oreopoj 14:19, 8 September 2010 (EST)
 
 The Ludl MAC6000's USB port can be configured to act as a virtual COM
 port. If you have the original CD that came with your Ludl equipment,

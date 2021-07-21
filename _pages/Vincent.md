@@ -102,5 +102,5 @@ property to the desired shutter number.
 If using an actual serial cable, ensure that the cable is of the ["null
 modem"](http://en.wikipedia.org/wiki/Null_modem) type.
 
---[oreopoj](/users/oreopoj "wikilink") 14:06, 8 September 2010 (EST)
+--oreopoj 14:06, 8 September 2010 (EST)
 
