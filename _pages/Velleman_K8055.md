@@ -101,7 +101,7 @@ shutter will switch the active channels on and off.
 {% include notice icon="info" content="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board." %}
 
 On Mac OS X you will need to download and unpack
-[Media:k8055-utbm-osx-kext.Tar.gz](Media:k8055-utbm-osx-kext.Tar.gz),
+[K8055-utbm-osx-kext.tar.gz](/media/K8055-utbm-osx-kext.tar.gz),
 open a terminal, cd into the directory k8055-utbm-osx-kext, issue the
 commands below, and reboot:
 
