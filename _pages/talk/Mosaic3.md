@@ -130,8 +130,11 @@ circle ROI and the size and shape cannot be customized.
         script](Mosaic3#scripting) is especially helpful
         here, with a quadrant mask image (Figure D).
 
-![(A, B) Using {% include key key="All Pixels" %} and
+{% capture caption %}
+(A, B) Using {% include key key="All Pixels" %} and
 {% include key key="Center Sport" %} buttons, respectively, in Setup tab
 of Projector plugin. (C) Epi port focused by closing field diaphram. (D)
-DMD focus using test
-mask.](media/FullResolution_fig_mosic3_cal.png "(A, B) Using  and  buttons, respectively, in Setup tab of Projector plugin. (C) Epi port focused by closing field diaphram. (D) DMD focus using test mask.")
+DMD focus using test mask.
+{% endcapture %}
+
+{% include img src="/media/FullResolution_fig_mosic3_cal.png" caption=caption %}
