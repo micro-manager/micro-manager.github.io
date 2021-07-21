@@ -1985,7 +1985,7 @@ Chemical Physics. 140:214901.
 Heureaux, J., D. Chen, V.L. Murray, C.X. Deng, and A.P. Liu. 2014.
 Activation of a Bacterial Mechanosensitive Channel in Mammalian Cells by
 Cytoskeletal Stress. Cel. Mol. Bioeng. 1–13.
-[<doi:10.1007/s12195-014-0337-8>](http:/dx.doi.org/10.1007/s12195-014-0337-8).
+[<doi:10.1007/s12195-014-0337-8>](http://dx.doi.org/10.1007/s12195-014-0337-8).
 
 Nakano, A., J. Luo, and A. Ros. 2014. Temporal and Spatial Temperature
 Measurement in Insulator-based Dielectrophoretic Devices. Anal. Chem.
