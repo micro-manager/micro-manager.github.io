@@ -76,7 +76,7 @@ Camera, Noise Processor, Signal Generator
 </td>
 <td markdown="1">
 
-[MMConfig_demo_stream_proc.cfg](media/MMConfig_demo_stream_proc.cfg "wikilink")
+[MMConfig_demo_stream_proc.cfg](media/MMConfig_demo_stream_proc.cfg)
 
 </td>
 </tr>
@@ -85,5 +85,5 @@ Camera, Noise Processor, Signal Generator
 This adapter creates a virtual camera capable of 'burst' mode. It also
 demonstrates how an adapter can process images before they reach the UI.
 
---[Nico](/users/Nico "wikilink") 11:34, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 11:34, 25 August 2007 (PDT)
 

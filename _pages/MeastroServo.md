@@ -5,4 +5,4 @@ redirect_from: /wiki/MeastroServo
 layout: page
 ---
 
-1.  REDIRECT [MaestroServo](MaestroServo "wikilink")
+1.  REDIRECT [MaestroServo](MaestroServo)

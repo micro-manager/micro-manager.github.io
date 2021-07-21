@@ -43,7 +43,7 @@ that you can use for future changes to the code (using a
 
 Also, please do request an account for this website (click on the Log In
 button), and create a page in the [Device
-Support](Device_Support "wikilink") section. Use this page to provide
+Support](Device_Support) section. Use this page to provide
 information for users of your equipment to configure and use your device
 in Micro-Manager (i.e., please do not use this for marketing purposes).
 

@@ -63,10 +63,10 @@ like this:
 
 Before doing anything else we should check out the latest version of
 Micro-Manager from the Subversion repository (see [Micro-Manager Source
-Code](Micro-Manager_Source_Code "wikilink")) to an appropriate base
+Code](Micro-Manager_Source_Code)) to an appropriate base
 directory on our computer. The checkout process is outlined in the next
 few steps. [Building and debugging Micro-Manager source
-code](Building_and_debugging_Micro-Manager_source_code "wikilink") has
+code](Building_and_debugging_Micro-Manager_source_code) has
 more specific advice on building Micro-Manager for each platform.
 
 First we check out Micro-Manager source code from:
@@ -139,7 +139,7 @@ prefix `mmgr_dal`. In our case our new adapter (once we are finished
 with it) should build as `mmgr_dal_mydevice.dll`.
 
 See [Visual Studio project settings for device
-adapters](Visual_Studio_project_settings_for_device_adapters "wikilink")
+adapters](Visual_Studio_project_settings_for_device_adapters)
 for how to set up a project in Visual Studio to build a device adapter.
 
 ## Device Adapter design
@@ -156,7 +156,7 @@ directory:
 Device adapters incorporate code from this directory via a static
 library called MMDevice-SharedRuntime.lib. See [Visual Studio project
 settings for device
-adapters](Visual_Studio_project_settings_for_device_adapters "wikilink")
+adapters](Visual_Studio_project_settings_for_device_adapters)
 for details on how this works.
 
 A device adapter is a C++ class for controlling one specific device,
@@ -358,7 +358,7 @@ Micro-manager supports the concept of the "parent" device (Hub) which
 exactly fits the description of the MyController. Designing and
 implementing multi-device libraries with Hub controller is described at
 lenngth in section [Complex device management: writing Hub
-adapters](#complex-device-management-writing-hub-adapters "wikilink").
+adapters](#complex-device-management-writing-hub-adapters).
 
 ### Application Layer Services (Core Callbacks)
 
@@ -611,8 +611,8 @@ if (mmc.getBytesPerPixel() == 1) {
 ```
 
 If you plan to actively use scripting you may want to look at the
-[Micro-Manager\_Programming\_Guide](Micro-Manager_Programming_Guide "wikilink")
-as well as at the [Scripting Guide](Script_Panel_GUI "wikilink").
+[Micro-Manager\_Programming\_Guide](Micro-Manager_Programming_Guide)
+as well as at the [Scripting Guide](Script_Panel_GUI).
 
 ## Changes from the previous releases
 
@@ -880,4 +880,4 @@ the second one is a short description.
 ## Contributing Device Adapter Source code to Micro-Manager
 
 See:
-[Policies\_for\_inclusion\_of\_source\_code](Policies_for_inclusion_of_source_code "wikilink")
+[Policies\_for\_inclusion\_of\_source\_code](Policies_for_inclusion_of_source_code)

@@ -29,13 +29,13 @@ triggered MDA is exactly the same as that for non-triggered MDA.
 
 ### Controller devices that currently support triggered sequences
 
--   [AgilentLaserCombiner](AgilentLaserCombiner "wikilink") -- Laser
+-   [AgilentLaserCombiner](AgilentLaserCombiner) -- Laser
     channel switching
--   [Arduino](Arduino "wikilink") -- TTL and DAC output states
--   [ASIStage](ASIStage "wikilink") -- ASI piezo focus drives
--   [ESIOImagingControllers](ESIOImagingControllers "wikilink") -- AOTFs
+-   [Arduino](Arduino) -- TTL and DAC output states
+-   [ASIStage](ASIStage) -- ASI piezo focus drives
+-   [ESIOImagingControllers](ESIOImagingControllers) -- AOTFs
     (laser combiners) and piezo focus drives
--   [MCL NanoDrive](MCL_NanoDrive "wikilink") -- MadCityLabs piezo XY
+-   [MCL NanoDrive](MCL_NanoDrive) -- MadCityLabs piezo XY
     and Z drives
--   [Marzhauser](Marzhauser "wikilink") (TANGO controller) -- Märzhäuser
+-   [Marzhauser](Marzhauser) (TANGO controller) -- Märzhäuser
     piezo focus drive

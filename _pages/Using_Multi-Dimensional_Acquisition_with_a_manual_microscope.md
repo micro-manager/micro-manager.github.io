@@ -10,11 +10,11 @@ to switch filters between taking images in Micro-Manager, you can still
 use the Multi-Dimensional Acquisition and its facilities. To do so,
 
 -   Make a [hardware
-    configuration](Micro-Manager_Configuration_Guide "wikilink") that
+    configuration](Micro-Manager_Configuration_Guide) that
     includes the DemoCamera-Dichroic device (or any other demo state
     device).
 -   Make a [Channel
-    Configuration](Micro-Manager_Configuration_Guide#configuration-presets "wikilink")
+    Configuration](Micro-Manager_Configuration_Guide#configuration-presets)
     group that represents the filters/dichroics that you have and name
     them accordingly.
 -   Start the Script Panel (under the Tools menu). Click the top-left

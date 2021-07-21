@@ -5,4 +5,4 @@ redirect_from: /wiki/AxioCam_MR%2FHR
 layout: page
 ---
 
-1.  REDIRECT [AxioCam](AxioCam "wikilink")
+1.  REDIRECT [AxioCam](AxioCam)

@@ -40,7 +40,7 @@ NetBeans are intended to work on Windows or Mac. This is largely
 identical to the instructions for developing the Java code in 1.4.
 
 (See also: [Writing plugins for
-Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
+Micro-Manager](Writing_plugins_for_Micro-Manager))
 
 1.  Download and install the latest Micro-Manager nightly build. We will
     refer to the installed Micro-Manager directory as `$INSTALLDIR`

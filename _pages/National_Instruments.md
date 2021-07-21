@@ -175,7 +175,7 @@ Once you have set a valid input line, and assuming the card is capable
 of doing hardware triggering, the "SupportsTriggering" property should
 be set to 1. This indicates that the card is capable of performing
 hardware triggering. See
-[Hardware-based\_Synchronization\_in\_Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager "wikilink")
+[Hardware-based\_Synchronization\_in\_Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager)
 for more information on setting up triggering with the rest of your
 system.
 

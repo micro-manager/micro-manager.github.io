@@ -52,7 +52,7 @@ Source code cannot be made available
 </td>
 <td markdown="1">
 
-Windows (see [Hamamatsu](Hamamatsu "wikilink") for Mac OS X)
+Windows (see [Hamamatsu](Hamamatsu) for Mac OS X)
 
 </td>
 </tr>

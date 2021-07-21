@@ -135,7 +135,7 @@ Both of these classes (and the
 and
 [DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplaySettings.html)
 classes, discussed later) use a "Builder" pattern to create new
-instances. See [Using\_Builders](Using_Builders "wikilink") for more
+instances. See [Using\_Builders](Using_Builders) for more
 information.
 
 If you have extra fields that you wish to include in the metadata or

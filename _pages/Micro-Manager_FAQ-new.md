@@ -9,7 +9,7 @@ layout: page
 ### Something does not work. What do I do?
 
 1\) Try downloading and installing the latest [Nightly
-Build](Micro-Manager_Nightly_Builds "wikilink") and check if the problem
+Build](Micro-Manager_Nightly_Builds) and check if the problem
 still persists.
 
 2\) If the issue still remains click 'Help' on the main window -&gt;
@@ -39,7 +39,7 @@ then click 'Report Problem'.
 ### Something does not work. What do I do?
 
 Download and install the latest [Nightly
-Build](Micro-Manager_Nightly_Builds "wikilink") and check if the problem
+Build](Micro-Manager_Nightly_Builds) and check if the problem
 still persists. Send an email describing your problem to the
 [Micro-Manager mailing
 list](https://lists.sourceforge.net/lists/listinfo/micro-manager-general).

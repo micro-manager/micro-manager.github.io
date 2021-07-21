@@ -101,7 +101,7 @@ the GCS command set, so this adapter will only work with older
 controllers. It has been tested with the E-662 controller but should
 work with all PI controllers that support SCPI and can be connected via
 a serial interface. For current PI controller use the
-[PI\_GCS](PI_GCS "wikilink") adapter instead.
+[PI\_GCS](PI_GCS) adapter instead.
 
 The PI adapter is available since version 1.2.10.
 

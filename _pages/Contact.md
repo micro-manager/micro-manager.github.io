@@ -13,6 +13,6 @@ posts.
 **Important:** Please do not contact the developers using their personal
 email addresses or phone numbers with Micro-Manager support questions.
 For commercial support for Micro-Manager, please contact one of the
-[System Integrators](System_Integrators "wikilink") or [Programming
-Services](Programming_Services "wikilink") supporting Micro-Manager.
+[System Integrators](System_Integrators) or [Programming
+Services](Programming_Services) supporting Micro-Manager.
 

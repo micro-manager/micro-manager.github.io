@@ -9,49 +9,49 @@ section: Extend
 ## General
 
 -   [Micro-Manager Coding Style and
-    Conventions](Micro-Manager_Coding_Style_and_Conventions "wikilink")
+    Conventions](Micro-Manager_Coding_Style_and_Conventions)
 
 <!-- -->
 
--   [Micro-Manager Source Code](Micro-Manager_Source_Code "wikilink")
+-   [Micro-Manager Source Code](Micro-Manager_Source_Code)
 
 <!-- -->
 
--   [Using Netbeans](Using_Netbeans "wikilink") - to compile and debug
+-   [Using Netbeans](Using_Netbeans) - to compile and debug
     the Micro-Manager Java layer.
--   [Using Eclipse](Using_Eclipse "wikilink") - to compile and debug the
+-   [Using Eclipse](Using_Eclipse) - to compile and debug the
     Micro-Manager Java layer.
--   [Using IntelliJ](Using_IntelliJ "wikilink") - to compile and debug
+-   [Using IntelliJ](Using_IntelliJ) - to compile and debug
     the Micro-Manager Java layer
 
 ## Windows
 
--   [Building MM on Windows](Building_MM_on_Windows "wikilink")
+-   [Building MM on Windows](Building_MM_on_Windows)
 -   [Visual Studio project settings for device
-    adapters](Visual_Studio_project_settings_for_device_adapters "wikilink")
+    adapters](Visual_Studio_project_settings_for_device_adapters)
 -   [Viewing crash dumps on
-    Windows](Viewing_crash_dumps_on_Windows "wikilink") - For C++
+    Windows](Viewing_crash_dumps_on_Windows) - For C++
     programmers, when all else fails
 
 ## Mac OS X and Linux
 
--   [Configuration options](Configuration_options "wikilink") - Build
+-   [Configuration options](Configuration_options) - Build
     options on Mac OS X and Linux
 -   [Debugging MM on MacOSX and
-    Unix](Debugging_MM_on_MacOSX_and_Unix "wikilink") - Using gdb or
+    Unix](Debugging_MM_on_MacOSX_and_Unix) - Using gdb or
     Netbeans to debug the Micro-Manager C++ core
 
 ## Mac OS X
 
--   [Build on MacOS X](Build_on_MacOS_X "wikilink")
--   [Building Boost on MacOS X](Building_Boost_on_MacOS_X "wikilink")
+-   [Build on MacOS X](Build_on_MacOS_X)
+-   [Building Boost on MacOS X](Building_Boost_on_MacOS_X)
     (obsolete)
 -   [Full Build on MacOS X
-    Leopard](Full_Build_on_MacOS_X_Leopard "wikilink") - How to install
+    Leopard](Full_Build_on_MacOS_X_Leopard) - How to install
     and build Micromanager 1.2 and dependencies (tested on MacOS X
     10.5.2) (obsolete)
 -   [Building Universal Binaries on Mac OS
-    X](Building_Universal_Binaries_on_Mac_OS_X "wikilink") (obsolete)
+    X](Building_Universal_Binaries_on_Mac_OS_X) (obsolete)
 
 ## Linux
 
@@ -60,16 +60,16 @@ section: Extend
     [build
     script](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=micromanager-git&id=4b0150680d48734a8b5d7fc4cacb361caf51c64c).
 -   [How To Build Micro Manager From Source On Ubuntu
-    13.10](How_To_Build_Micro_Manager_From_Source_On_Ubuntu_13.10 "wikilink")
+    13.10](How_To_Build_Micro_Manager_From_Source_On_Ubuntu_13.10)
 -   [Linux installation from source
-    (Ubuntu)](Linux_installation_from_source_(Ubuntu) "wikilink")
+    (Ubuntu)](Linux_installation_from_source_(Ubuntu))
 -   [Linux installation from source
-    (Gentoo)](Linux_installation_from_source_(Gentoo) "wikilink")
+    (Gentoo)](Linux_installation_from_source_(Gentoo))
 -   [Building Firewire camera support on
-    Linux](Building_Firewire_camera_support_on_Linux "wikilink")
+    Linux](Building_Firewire_camera_support_on_Linux)
     (obsolete)
 -   [Compiling MM and creating deb files on 64-bit
-    Ubuntu](Compiling_MM_and_creating_deb_files_on_64-bit_Ubuntu "wikilink")
+    Ubuntu](Compiling_MM_and_creating_deb_files_on_64-bit_Ubuntu)
     (obsolete)
 
 The following DeviceAdapters require dependencies to run on GNU/Linux,
@@ -217,4 +217,4 @@ Yes (Official)</p></td>
 ## Miscellaneous
 
 -   [Free third-party tools for testing communications with
-    hardware](Free_third-party_tools_for_testing_communications_with_hardware "wikilink")
+    hardware](Free_third-party_tools_for_testing_communications_with_hardware)

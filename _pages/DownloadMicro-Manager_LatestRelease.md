@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT
-    [Download\_Micro-Manager\_Latest\_Release](Download_Micro-Manager_Latest_Release "wikilink")
+    [Download\_Micro-Manager\_Latest\_Release](Download_Micro-Manager_Latest_Release)

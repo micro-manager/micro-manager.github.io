@@ -5,4 +5,4 @@ redirect_from: /wiki/Main_Page
 layout: page
 ---
 
-1.  REDIRECT [Micro-Manager](Micro-Manager "wikilink")
+1.  REDIRECT [Micro-Manager](Micro-Manager)

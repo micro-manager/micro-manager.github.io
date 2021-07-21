@@ -100,7 +100,7 @@ Micro-Manager's memory usage should fall back to the level before
 acquisition was started.
 
 Micro-Manager's high-speed [hardware triggering
-capabilities](Hardware-based_synchronization "wikilink") can be combined
+capabilities](Hardware-based_synchronization) can be combined
 with high-speed cameras to produce fast multi-dimensional image sets. A
 microcontroller compatible with Micro-Manager can pass trigger signals
 from the camera to an AOTF- or LED-based illuminator to produce

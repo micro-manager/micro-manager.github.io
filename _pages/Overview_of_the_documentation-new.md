@@ -7,21 +7,21 @@ layout: page
 
 For a tutorial introduction for using Micro-Manager software you've just
 downloaded, or to get an overview of its basic capabilities, the [User's
-Guide](Micro-Manager_User's_Guide "wikilink") is the best starting
+Guide](Micro-Manager_User's_Guide) is the best starting
 point. Here you'll find out how to navigate through the application's
 menus and dialogs and how to perform basic instrument control and
-acquisition. The [User's Guide](Micro-Manager_User's_Guide "wikilink")
+acquisition. The [User's Guide](Micro-Manager_User's_Guide)
 assumes you are running the software either in the "demo" mode
 (installation default), or that you are working with a previously
 configured hardware setup.
 
 Configuring Micro-Manager software to work with your particular hardware
 setup is a separate topic, covered in detail in the [Configuration
-Guide](Micro-Manager_Configuration_Guide "wikilink"). Micro-Manager uses
+Guide](Micro-Manager_Configuration_Guide). Micro-Manager uses
 configuration files in textual, human-readable form to load appropriate
 device drivers and to adapt user interface to particular properties of
 your hardware setup. The [Configuration
-Guide](Micro-Manager_Configuration_Guide "wikilink") explains how to
+Guide](Micro-Manager_Configuration_Guide) explains how to
 write new configuration files, how to edit existing ones, and how to
 troubleshoot configuration-related run-time errors.
 
@@ -32,7 +32,7 @@ commands from any Java program or Java-enabled scripting environment,
 such as Matlab. In other words, you can bypass Micro-Manager's default,
 user interface and create your own, either in C++ or Java, or just write
 scripts in Matlab, or some other compatible environment. The
-[Programming Guide](Micro-Manager_Programming_Guide "wikilink")
+[Programming Guide](Micro-Manager_Programming_Guide)
 describes how to use the Micro-Manager programmatic interface (API) and
 demonstrates how to control the microscope setup from Java/C++ program
 or from the scripting environment. The entire API is listed in the [API

@@ -64,7 +64,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[MMConfig_DTOL.cfg](media/MMConfig_DTOL.cfg "wikilink")
+[MMConfig_DTOL.cfg](media/MMConfig_DTOL.cfg)
 
 </td>
 </tr>
@@ -81,5 +81,5 @@ with things that make sense to you (for instance, ' 488 nm'), make sure
 to prepend the value with a space, or otherwise it will not appear in
 the top of the list of choices in the drop-down menu in the MM UI.
 
---[Nico](/users/Nico "wikilink") 11:22, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 11:22, 25 August 2007 (PDT)
 

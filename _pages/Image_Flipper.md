@@ -17,7 +17,7 @@ letter "R" to make sure you get what you need). All subsequent images
 acquired by this camera will be transformed as specified.
 
 Note that this plugin can be especially useful in combination with the
-[Multi-Camera device](Utilities#multi-camera "wikilink"), in cases where
+[Multi-Camera device](Utilities#multi-camera), in cases where
 one of the two cameras used provides a mirrored image.
 
 {% include Listserv_Search text="ImageFlipper" %}

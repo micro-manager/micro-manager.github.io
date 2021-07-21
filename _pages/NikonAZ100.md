@@ -128,6 +128,6 @@ on the current zoom settings.
 
 {% include notice icon="info" content="The AZ100 has two modes: 'mouse' control, and computer control.  To switch to computer control mode, the Focus drive will re-initialize which causes it to go all the way to the top and back down where it was.  Currently, there is nothing that can be done about this." %}
 
---[Nico](/users/Nico "wikilink") 16:42, 10 June 2008 (PDT)
+--[Nico](/users/Nico) 16:42, 10 June 2008 (PDT)
 
 {% include Listserv_Search text="Nikon" %}

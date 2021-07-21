@@ -14,7 +14,7 @@ object of interest, Micro-Manager switches to *Imaging* settings and
 acquires data of the object of interest. Optionally, the plugin can move
 the object of interest to the center of the image and set a camera ROI
 (you will need to run the [Pixel Calibrator
-Plugin](Pixel_Calibrator_Plugin "wikilink") for this to succeed). When
+Plugin](Pixel_Calibrator_Plugin) for this to succeed). When
 the *Imaging* phase ends, the plugin will continue *exploring*.
 
 ![Screen Shot of Intelligent Acquisition
@@ -48,5 +48,5 @@ integration of other programming environments. Extensions such as
 continuous searching of the given area (i.e. do not stop after the first
 round) are also possible.
 
---[Nico](/users/Nico "wikilink") 16:54, 14 October 2012 (PDT)
+--[Nico](/users/Nico) 16:54, 14 October 2012 (PDT)
 

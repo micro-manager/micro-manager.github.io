@@ -5,4 +5,4 @@ redirect_from: /wiki/MCL-NanoDrive
 layout: page
 ---
 
-1.  REDIRECT [MCL NanoDrive](MCL_NanoDrive "wikilink")
+1.  REDIRECT [MCL NanoDrive](MCL_NanoDrive)

@@ -37,7 +37,7 @@ Wizard (<span>**Tools \| Hardware Configuration Wizard**</span>), which
 will guide you, step-by-step, through the configuration process and
 generate a configuration file for you. The wizard will generate a text
 file that can be edited in a text editor. The syntax of this file is
-described [below](#configuration-file-syntax "wikilink").
+described [below](#configuration-file-syntax).
 
 
 
@@ -51,7 +51,7 @@ instance, you should know which serial ports of your computer are
 attached to what hardware. Preferably, you should test the functionality
 of the hardware with software provided by the vendor. Information and
 helpful advice about specific devices can be found in the [Device
-Support](Device_Support "wikilink") page. When you get stuck, you can
+Support](Device_Support) page. When you get stuck, you can
 get support through the [Micro-Manager mailing
 list](https://lists.sourceforge.net/lists/listinfo/micro-manager-general).
 Remember, this is the most important part in getting Micro-Manager to be
@@ -88,7 +88,7 @@ Figure 3. Example of Configuration Presets in the Main Micro-Manager
 window  
 Before setting up Configuration Presets, you should familiarize yourself
 with the [Device/Property
-Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink").
+Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser).
 It is also worthwhile to experiment with the Configuration Presets in
 the demo configuration.
 
@@ -140,7 +140,7 @@ the new Property.
 ## Core Properties
 
 In the [Device/Property
-Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink")
+Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser)
 you will find a list of properties of the Micro-Manager Core, such as
 core-camera, core-shutter etc. Micro-Manager can work with multiple
 cameras, shutters etc., however, commands will work only on the 'active'

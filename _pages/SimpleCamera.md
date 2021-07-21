@@ -5,4 +5,4 @@ redirect_from: /wiki/SimpleCamera
 layout: page
 ---
 
-1.  REDIRECT [GPhoto](GPhoto "wikilink")
+1.  REDIRECT [GPhoto](GPhoto)

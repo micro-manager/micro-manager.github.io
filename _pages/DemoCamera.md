@@ -77,7 +77,7 @@ Shutter
 </td>
 <td markdown="1">
 
-[MMConfig_Demo.cfg](media/MMConfig_Demo.cfg "wikilink")
+[MMConfig_Demo.cfg](media/MMConfig_Demo.cfg)
 
 </td>
 </tr>
@@ -87,5 +87,5 @@ This adapter is useful to 'test-drive' Micro-Manager without attached
 hardware, and is also extremely important for developers (since it lets
 us develop without attached hardware).
 
---[Nico](/users/Nico "wikilink") 11:30, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 11:30, 25 August 2007 (PDT)
 

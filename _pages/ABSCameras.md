@@ -5,4 +5,4 @@ redirect_from: /wiki/ABSCameras
 layout: page
 ---
 
-1.  REDIRECT [ABSCamera](ABSCamera "wikilink")
+1.  REDIRECT [ABSCamera](ABSCamera)

@@ -5,4 +5,4 @@ redirect_from: /wiki/ASIGamepad_Plugin
 layout: page
 ---
 
-1.  REDIRECT [ASI Gamepad Plugin](ASI_Gamepad_Plugin "wikilink")
+1.  REDIRECT [ASI Gamepad Plugin](ASI_Gamepad_Plugin)

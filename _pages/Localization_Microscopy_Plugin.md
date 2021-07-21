@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Localization
-    Microscopy](Localization_Microscopy "wikilink")
+    Microscopy](Localization_Microscopy)

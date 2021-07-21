@@ -44,7 +44,7 @@ allows for relatively low level access to Micro-Manager functionality,
 whereas the [gui
 object](https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html)
 makes it easy to accomplish more complicated tasks. A number of [Example
-Beanshell scripts](Example_Beanshell_scripts "wikilink") is available.
+Beanshell scripts](Example_Beanshell_scripts) is available.
 
 An extensive user's guide for Beanshell is [available on the Beanshell
 website.](http://beanshell.org/manual/bshmanual.html#Table_of_Contents)

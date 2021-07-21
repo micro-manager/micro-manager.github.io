@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [How to debug and develop
-    MM2.0](How_to_debug_and_develop_MM2.0 "wikilink")
+    MM2.0](How_to_debug_and_develop_MM2.0)

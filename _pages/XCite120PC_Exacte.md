@@ -153,5 +153,5 @@ For X-Cite® device support please contact Lumen Dynamics: Email:
 For bug reports please contact: [Mission Bay
 Imaging](http://www.missionbayimaging.com/mbimaging2010/Welcome.html)
 
---[Jbutler mb](/users/Jbutler_mb "wikilink") 22:11, 31 January 2011 (UTC)
+--[Jbutler mb](/users/Jbutler_mb) 22:11, 31 January 2011 (UTC)
 

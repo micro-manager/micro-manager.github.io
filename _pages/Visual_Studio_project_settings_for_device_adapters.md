@@ -10,17 +10,17 @@ layout: page
 Here are instructions for how to set up a Visual Studio project for a
 new device adapter. For more details on how to write device adapters for
 Micro-Manager, see [Building Micro-Manager Device
-Adapters](Building_Micro-Manager_Device_Adapters "wikilink"). For
+Adapters](Building_Micro-Manager_Device_Adapters). For
 instructions on how to build existing device adapters in the
 Micro-Manager subversion repository, see the page on [Building MM on
-Windows](Building_MM_on_Windows "wikilink").
+Windows](Building_MM_on_Windows).
 
 # Setting up a new device adapter project
 
 ## Prerequisites
 
 See the page on [Building MM on
-Windows](Building_MM_on_Windows "wikilink") for how to set up a
+Windows](Building_MM_on_Windows) for how to set up a
 development environment for Micro-Manager, including Microsoft Visual
 Studio 2010 Express SP1 and Microsoft Windows SDK 7.1. The following
 assumes that those instructions were followed.

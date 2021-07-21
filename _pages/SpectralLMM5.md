@@ -127,4 +127,4 @@ The adapter also lets you set the intensity of the individual laser
 lines, and has some provisions for trigger out configurations (not well
 tested).
 
---[Nico](/users/Nico "wikilink") 11:05, 12 February 2008 (PST)
+--[Nico](/users/Nico) 11:05, 12 February 2008 (PST)

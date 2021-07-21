@@ -5,4 +5,4 @@ redirect_from: /wiki/Andor3
 layout: page
 ---
 
-1.  REDIRECT [Andor SDK3](Andor_SDK3 "wikilink")
+1.  REDIRECT [Andor SDK3](Andor_SDK3)

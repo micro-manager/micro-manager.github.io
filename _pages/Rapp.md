@@ -18,7 +18,7 @@ layout: page
 The Rapp UGA-40 uses galvos to bounce lasers through the microscope
 objective and target particular spots on the specimen in the image
 plane. The galvos can also be rastered to illuminate a region of
-interest. Micro-Manager [Projector Plugin](Projector_Plugin "wikilink")
+interest. Micro-Manager [Projector Plugin](Projector_Plugin)
 allows users to draw one or more spots or regions of interest on an
 image of the specimen, and phototarget these areas using the UGA-40.
 (The Projector Plugin permits both ad hoc phototargeting and planning

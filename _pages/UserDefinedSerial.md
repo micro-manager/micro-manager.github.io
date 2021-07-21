@@ -162,7 +162,7 @@ now.
 Now, to cause the SetPosition commands to be remembered in your hardware
 configuration file, add (or append to) the *System-Startup*
 configuration preset (see [Micro-Manager Configuration
-Guide](Micro-Manager_Configuration_Guide "wikilink")). In this case, you
+Guide](Micro-Manager_Configuration_Guide)). In this case, you
 will want to include all the *SetPosition-command-n* properties in the
 *System* configuration group's *Startup* preset.
 

@@ -5,4 +5,4 @@ redirect_from: /wiki/AOTF
 layout: page
 ---
 
-1.  REDIRECT [Neos](Neos "wikilink")
+1.  REDIRECT [Neos](Neos)

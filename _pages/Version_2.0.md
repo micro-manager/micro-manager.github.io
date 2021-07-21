@@ -30,23 +30,23 @@ github](http://github.com/micro-manager/micro-manager/tree/master)
 ## Contributing to MM2.0
 
 [How to debug and develop
-MM2.0](How_to_debug_and_develop_MM2.0 "wikilink")
+MM2.0](How_to_debug_and_develop_MM2.0)
 
 ## API
 
 If you want to write a new plugin or script, you will need to
 familiarize yourself with the new API.
-[Version\_2.0\_API](Version_2.0_API "wikilink") has an overview of the
+[Version\_2.0\_API](Version_2.0_API) has an overview of the
 API's capabilities. Plugin authors should also read
-[Version\_2.0\_Plugins](Version_2.0_Plugins "wikilink").
+[Version\_2.0\_Plugins](Version_2.0_Plugins).
 
-[Version\_2.0\_API\_How\_do\_I](Version_2.0_API_How_do_I "wikilink") is
+[Version\_2.0\_API\_How\_do\_I](Version_2.0_API_How_do_I) is
 a demonstration of how to accomplish various common tasks using the new
 API. If you have a task that you want to perform that is not covered,
 then please ask us on the mailing list and we can update the
 documentation.
 
-[Version\_2.0\_API\_Transition\_Guide](Version_2.0_API_Transition_Guide "wikilink")
+[Version\_2.0\_API\_Transition\_Guide](Version_2.0_API_Transition_Guide)
 is a transition guide to help people who are familiar with the 1.4 API
 and need to port their code to the 2.0 API. It breaks down where old API
 methods have gone and how to replace deprecated methods.
@@ -63,14 +63,14 @@ packages should prove useful.
 
 Version 2.0 provides greater access to the event publication and
 subscription system initially introduced in 1.4.
-[Version\_2.0\_API\_Events](Version_2.0_API_Events "wikilink") has more
+[Version\_2.0\_API\_Events](Version_2.0_API_Events) has more
 information on what events are available.
 
 ## Other Documentation
 
 For some examples of writing Beanshell scripts for 2.0, see
-[Version\_2.0\_Scripts](Version_2.0_Scripts "wikilink")
+[Version\_2.0\_Scripts](Version_2.0_Scripts)
 
 Version 2.0 includes a new User Profile system; see
-[Version\_2.0\_Profiles](Version_2.0_Profiles "wikilink") for more
+[Version\_2.0\_Profiles](Version_2.0_Profiles) for more
 information.

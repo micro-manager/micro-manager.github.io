@@ -53,7 +53,7 @@ source)
 </td>
 <td markdown="1">
 
-Mac OS X, 32-bit only (see [HamamatsuHam](HamamatsuHam "wikilink") for
+Mac OS X, 32-bit only (see [HamamatsuHam](HamamatsuHam) for
 Windows)
 
 </td>
@@ -78,7 +78,7 @@ Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)
 </td>
 <td markdown="1">
 
-[MMConfig_ham.cfg](media/MMConfig_ham.cfg "wikilink")
+[MMConfig_ham.cfg](media/MMConfig_ham.cfg)
 
 </td>
 </tr>
@@ -95,7 +95,7 @@ on the same page.
 
 In the case of ORCA Flash 4.0, please read the page on [High Speed
 Acquisition in
-Micro-Manager](High_Speed_Acquisition_in_Micro-Manager "wikilink"). For
+Micro-Manager](High_Speed_Acquisition_in_Micro-Manager). For
 the ORCA Flash 4.0, trying Hamamatsu adapter first will not only get the
 error message but also prevent the correct communication for trying
 HamamatsuHam afterwards. Rebooting the computer reset such a case. Also,
@@ -128,17 +128,17 @@ buy, and please provide feedback here about successes and failures.
 The **ORCA-D2** was tested by us December 2011. It works well with the
 HamamatsuHam adapter and the August 2011 DCAM driver. Images from both
 CCDs appear as a single image in Micro-Manager. Use the
-[SplitView](SplitView "wikilink") plugin to display the two CCD images
+[SplitView](SplitView) plugin to display the two CCD images
 as an overlay. In the future, it will be possible to automatically apply
 the SplitView transformation to images acquired using [Multi-Dimensional
-Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition "wikilink").
+Acquisition](Micro-Manager_User's_Guide#multi-dimensional-acquisition).
 If you do not want the images to be acquired simultaneously, use
 property "ACTIVE VIEW INDEX" of the adapter. A setting of "0" will give
 you both images, setting "1" will give you only the image from one CCD,
 and setting "2" will give you the image from the other CCD.
 
---[Nico](/users/Nico "wikilink") 12:38, 15 July 2008 (PDT), last updated
---[Nico](/users/Nico "wikilink") 17:09, 26 August 2009 (UTC)
+--[Nico](/users/Nico) 12:38, 15 July 2008 (PDT), last updated
+--[Nico](/users/Nico) 17:09, 26 August 2009 (UTC)
 
 {% include notice icon="info" content="Make sure you read the DCAM-API Compatibility Notes (available on the website), and in particular follow the instructions for computer power management settings, if it is applicable to your camera." %}
 

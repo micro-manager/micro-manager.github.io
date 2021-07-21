@@ -28,7 +28,7 @@ Controls PeCon Series 2000 Incubation System Devices
 </td>
 <td markdown="1">
 
-[Christian Sachs](/users/Csachs "wikilink")
+[Christian Sachs](/users/Csachs)
 ([@csachs](https://github.com/csachs))
 
 </td>

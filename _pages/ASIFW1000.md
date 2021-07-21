@@ -123,5 +123,5 @@ correctly, that I decided just to use a user-defined time-out. Make sure
 the time-out is correct (look up the specs for your shutter to estimate
 how long it will take to open/close the shutter).
 
---[Nico](/users/Nico "wikilink") 21:48, 15 August 2007 (PDT)
+--[Nico](/users/Nico) 21:48, 15 August 2007 (PDT)
 

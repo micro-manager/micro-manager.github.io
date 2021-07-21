@@ -12,7 +12,7 @@ layout: page
 | License:             | BSD                                                                                                               |
 | Platforms:           | Windows 7/8/10 (32 bit and 64 bit)                                                                                |
 | Devices:             | XY Stage, Z Stage                                                                                                 |
-| Example Config File: | [Example Config File](media/MMConfig_MCL_NanoDrive.cfg "wikilink") (Sets up the Nano-Drive® with the DemoCamera.) |
+| Example Config File: | [Example Config File](media/MMConfig_MCL_NanoDrive.cfg) (Sets up the Nano-Drive® with the DemoCamera.) |
 | Since version        | 1.2.36                                                                                                            |
 
 ------------------------------------------------------------------------
@@ -27,7 +27,7 @@ controllers are closed-loop feedback enabled, which is essential for
 high-repeatability and sub-nanometer resolution for a nanopositioner.
 
 For fast acquisition using
-[Hardware-based\_synchronization](Hardware-based_synchronization "wikilink"),
+[Hardware-based\_synchronization](Hardware-based_synchronization),
 custom versions of MCL's controllers are available (NanoDrive-x or
 NanoDrive85-x equipped with a USB board **and** the OP-ISS programmable
 port); they feature a sequence buffer with 1000 positions. Read more on

@@ -92,7 +92,7 @@ Controller has various cards that can be added as needed for any
 particular configuration, so the device adapter is a hub with peripheral
 devices.
 
-NB: there is a separate device adapter, [ASIStage](ASIStage "wikilink"),
+NB: there is a separate device adapter, [ASIStage](ASIStage),
 for stand-alone MS-2000 controllers or older rack-mount controllers.
 
 Serial port settings are 115200 baud, no parity, 1 stop bit, no
@@ -122,7 +122,7 @@ Property Notes
 
 The Z stage can be set up to receive trigger signals from many cameras
 (see documentation on Micro-Manager's
-[Hardware-based\_synchronization](Hardware-based_synchronization "wikilink")
+[Hardware-based\_synchronization](Hardware-based_synchronization)
 feature). A BNC cable is connected from the camera's TTL output to the
 controller's trigger input on the corresponding card's front panel of
 the Tiger controller. By synchronizing Z slices with camera exposures,

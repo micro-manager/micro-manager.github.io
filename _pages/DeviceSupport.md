@@ -5,4 +5,4 @@ redirect_from: /wiki/DeviceSupport
 layout: page
 ---
 
-1.  REDIRECT [Device\_Support](Device_Support "wikilink")
+1.  REDIRECT [Device\_Support](Device_Support)

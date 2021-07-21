@@ -12,39 +12,39 @@ manual](http://micro-manager.org/documentation.php), we maintain here
 documentation for those aspects of Micro-Manager that are still in flux
 and/or rapidly changing.
 
--   *[Files and Metadata](Files_and_Metadata "wikilink")*
+-   *[Files and Metadata](Files_and_Metadata)*
 
 <!-- -->
 
--   *[Device Adapters](Device_Support "wikilink")*
+-   *[Device Adapters](Device_Support)*
 
 <!-- -->
 
--   *[Plugins](Plugins "wikilink")*
+-   *[Plugins](Plugins)*
 
 <!-- -->
 
--   *[High Speed Acquisition](High_Speed_Acquisition "wikilink")*
+-   *[High Speed Acquisition](High_Speed_Acquisition)*
 
 <!-- -->
 
--   *[Display troubleshooting](Display_troubleshooting "wikilink")*
+-   *[Display troubleshooting](Display_troubleshooting)*
 
 <!-- -->
 
 -   *Autofocus configuration*
-    -   [Autofocus setup](Autofocus_setup "wikilink") - Making
+    -   [Autofocus setup](Autofocus_setup) - Making
         Micro-Manager use image-based autofocus
-    -   [Autofocus manual](Autofocus_manual "wikilink") - Configure the
+    -   [Autofocus manual](Autofocus_manual) - Configure the
         image-based autofocus implemented in Java
     -   [SimpleAutofocus Device
-        Adapter](Autofocus_Device_Adapter "wikilink") - Configure the
+        Adapter](Autofocus_Device_Adapter) - Configure the
         image-based autofocus 'device' implemented in C++
 
 <!-- -->
 
 -   *Scripting in Micro-Manager*
-    -   [Script Panel GUI](Script_Panel_GUI "wikilink") - Introduction
+    -   [Script Panel GUI](Script_Panel_GUI) - Introduction
         to the Script Panel GUI
     -   [gui
         object](http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/ScriptInterface.html) -
@@ -56,37 +56,37 @@ and/or rapidly changing.
         object](http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/AcquisitionEngine.html) -
         Documentation on the Multi-Dimensional Acquisition object
     -   [example Beanshell
-        scripts](example_Beanshell_scripts "wikilink") - A few example
+        scripts](example_Beanshell_scripts) - A few example
         scripts with minimal annotation
 
 <!-- -->
 
 -   *Matlab and Micro-Manager*
     -   [Matlab and the Micro-Manager
-        core](Matlab_Configuration "wikilink") - Setting up Matlab to
+        core](Matlab_Configuration) - Setting up Matlab to
         control hardware through the Micro-Manager core.
     -   [Matlab and the Micro-Manager
-        GUI](Matlab_and_the_Micro-Manager_GUI "wikilink") - Controlling
+        GUI](Matlab_and_the_Micro-Manager_GUI) - Controlling
         the Micro-Manager graphical user interface with Matlab.
-    -   [Roboscope project](Roboscope_project "wikilink") - Roy
+    -   [Roboscope project](Roboscope_project) - Roy
         Wollman's Roboscope project
 
 <!-- -->
 
 -   *Python and Micro-Manager*
     -   [Using the Micro-Manager python
-        library](Using_the_Micro-Manager_python_library "wikilink")
+        library](Using_the_Micro-Manager_python_library)
 
 <!-- -->
 
 -   *Communicating through serial ports using a terminal application*
-    -   [Windows](Windows "wikilink") - Configuring HyperTerminal
+    -   [Windows](Windows) - Configuring HyperTerminal
     -   Useful terminal applications for Windows and Mac
 
 <!-- -->
 
 -   *Coordinates and Directionality in Micro-Manager*
-    -   [Overview](Overview "wikilink") -
+    -   [Overview](Overview) -
 
 <!-- -->
 
@@ -98,9 +98,9 @@ and/or rapidly changing.
         synchronization](http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start) -
         A Micro-Manager plugin by Alex Hodge synchronizing multi-color
         LED illumination with a Firewire camera
-    -   [RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh "wikilink") -
+    -   [RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh) -
         Beanshell for ratiometric Imaging (J. Husson).
-    -   [RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh "wikilink") -
+    -   [RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh) -
         Beanshell for ratiometric Imaging.  
         Takes only one image, can be useful as a control before starting
         a whole acquisition with main beanshell above (J. Husson).
@@ -112,45 +112,45 @@ Saurabh](http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya)
 
 -   *Building and Coding Micro-Manager (for developers)*
     -   [Building Boost on MacOS
-        X](Building_Boost_on_MacOS_X "wikilink")
+        X](Building_Boost_on_MacOS_X)
     -   [Full Build on MacOS X
-        Leopard](Full_Build_on_MacOS_X_Leopard "wikilink") - How to
+        Leopard](Full_Build_on_MacOS_X_Leopard) - How to
         install and build Micromanager 1.2 and dependencies (tested on
         MacOS X 10.5.2)
     -   [Building Universal Binaries on Mac OS
-        X](Building_Universal_Binaries_on_Mac_OS_X "wikilink")
-    -   [Configuration options](Configuration_options "wikilink") -
+        X](Building_Universal_Binaries_on_Mac_OS_X)
+    -   [Configuration options](Configuration_options) -
         Build options on Mac OS X and Linux
-    -   [Building ACE on the Mac](Building_ACE_on_the_Mac "wikilink") -
+    -   [Building ACE on the Mac](Building_ACE_on_the_Mac) -
         How to build ACE on the Mac (only for MicroManager versions
         before 1.3.42)
     -   [Linux installation from source
-        (Ubuntu)](Linux_installation_from_source_(Ubuntu) "wikilink")
+        (Ubuntu)](Linux_installation_from_source_(Ubuntu))
     -   [Building Firewire camera support on
-        Linux](Building_Firewire_camera_support_on_Linux "wikilink")
-    -   [Building MM on Windows](Building_MM_on_Windows "wikilink") -
+        Linux](Building_Firewire_camera_support_on_Linux)
+    -   [Building MM on Windows](Building_MM_on_Windows) -
         Different environments and options
     -   [Compiling MM and creating deb files on 64-bit
-        Ubuntu](Compiling_MM_and_creating_deb_files_on_64-bit_Ubuntu "wikilink") -
+        Ubuntu](Compiling_MM_and_creating_deb_files_on_64-bit_Ubuntu) -
         A log of things I needed to do to build 64-bit version of MM.
-    -   [Using Eclipse](Using_Eclipse "wikilink") - How to configure
+    -   [Using Eclipse](Using_Eclipse) - How to configure
         Eclipse to compile and debug the Micro-Manager GUI.
-    -   [Using Netbeans](Using_Netbeans "wikilink") - How to configure
+    -   [Using Netbeans](Using_Netbeans) - How to configure
         Netbeans to compile and debug the Micro-Manager GUI.
     -   [Debugging MM on MacOSX and
-        Unix](Debugging_MM_on_MacOSX_and_Unix "wikilink") - How to use
+        Unix](Debugging_MM_on_MacOSX_and_Unix) - How to use
         gdb or Netbeans to debug the Micro-Manager C++ core.
     -   [Micro-Manager Coding Style and
-        Conventions](Micro-Manager_Coding_Style_and_Conventions "wikilink")
+        Conventions](Micro-Manager_Coding_Style_and_Conventions)
     -   [Writing plugins for
-        Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink")
+        Micro-Manager](Writing_plugins_for_Micro-Manager)
     -   [(Windows) tools useful for Device Adapter
-        Developers]((Windows)_tools_useful_for_Device_Adapter_Developers "wikilink")
+        Developers]((Windows)_tools_useful_for_Device_Adapter_Developers)
 
 <!-- -->
 
 -   *Papers citing and/or acknowledging the use of Micro-Manager*
     -   [Papers citing
-        Micro-Manager](Papers_citing_Micro-Manager "wikilink") - Add
+        Micro-Manager](Papers_citing_Micro-Manager) - Add
         your own paper to the list!
 

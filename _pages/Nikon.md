@@ -95,5 +95,5 @@ IntensiLight are supported as of Micro-Manager version 1.3.43. Make sure
 that the timeout for the serial port to the Intensilight is at least as
 long as the longest ND filter switch time (2500 msec or so).
 
---[Nico](/users/Nico "wikilink") 14:33, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 14:33, 25 August 2007 (PDT)
 

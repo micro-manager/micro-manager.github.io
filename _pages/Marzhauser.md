@@ -107,6 +107,6 @@ Märzhäuser components.
 </tr>
 </table>
 
-**See also:** Märzhäuser [Corvus](Corvus "wikilink") device adapter.
+**See also:** Märzhäuser [Corvus](Corvus) device adapter.
 
 --Dettmar 24:24, 19 February 2010 (PDT)

@@ -61,7 +61,7 @@ Values entered in this section will be used in subsequent calculations.
 Press the **read** button to deduce some of these values from the
 meta-data contained in Micro-Manager datasets. You will need to measure
 the [Photon-conversion factor
-(pcf)](Photon-conversion_factor_(pcf) "wikilink") or use the pcf
+(pcf)](Photon-conversion_factor_(pcf)) or use the pcf
 provided on the camera data-sheet. If you do not use EM gain, enter '1'
 in the field **linear EM gain** (to calculate the number of photons,
 digital numbers will be multiplied by pcf / linear EM gain. The **Camera
@@ -192,7 +192,7 @@ Data can be saved in binary or text mode using the **Save** button. The
 binary form is called 'Tagged Spot Format (TSF)' and is based on the
 Google Protocl Format. A full description of the TSF format can be found
 here:
-[Tagged\_Spot\_File\_(tsf)\_format](Tagged_Spot_File_(tsf)_format "wikilink")
+[Tagged\_Spot\_File\_(tsf)\_format](Tagged_Spot_File_(tsf)_format)
 
 Previously saved data can be loaded using the **Load** button. For text
 data to be recognized, they should resemble the text format saved by the

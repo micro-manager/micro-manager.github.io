@@ -93,58 +93,58 @@ select "Open".)
     -   **StandaStage**: An alternative adapter for Standa Microsctep
         Driver; allows use as an XY stage (Ed Simmons)
 -   Updated device adapters
-    -   [AndorSDK3](AndorSDK3 "wikilink"): Add ExternalTriggerDelay
+    -   [AndorSDK3](AndorSDK3): Add ExternalTriggerDelay
         feature for LightScanPlus cameras (Matthew Milford, Andor)
-    -   [ASIStage](ASIStage "wikilink"): Improve behavior when moving
+    -   [ASIStage](ASIStage): Improve behavior when moving
         parallel to X or Y axis; fix issue with old firmware versions
         (Jon Daniels, ASI)
-    -   [ASITiger](ASITiger "wikilink"): Numerous improvements and
+    -   [ASITiger](ASITiger): Numerous improvements and
         fixes; add several features to PLogic support (Jon Daniels, ASI)
-    -   [CSUW1](CSUW1 "wikilink"): Fix issue with Disk switching; add
+    -   [CSUW1](CSUW1): Fix issue with Disk switching; add
         Label property to Disk (Nico Stuurman)
-    -   [DemoCamera](DemoCamera "wikilink"): Handle ROI correctly when
+    -   [DemoCamera](DemoCamera): Handle ROI correctly when
         binning is enabled; add demo galvo device; add
         Gaussian-distributed noise mode for demo camera (Nico Stuurman)
-    -   [IIDC](IIDC "wikilink"): Correctly handle autoshutter in
+    -   [IIDC](IIDC): Correctly handle autoshutter in
         sequence acquisition (Mark Tsuchida)
-    -   [Mightex\_C\_Cam](Mightex_C_Cam "wikilink"): Add "Snap" support
+    -   [Mightex\_C\_Cam](Mightex_C_Cam): Add "Snap" support
         (Mightex Systems)
-    -   [NI100X](NI100X "wikilink"): Prevent State property from getting
+    -   [NI100X](NI100X): Prevent State property from getting
         stuck when using state device shutter with NI digital output
         (Mark Tsuchida)
-    -   [PicardStage](PicardStage "wikilink"): Update Picard SDK
-    -   [PVCAM](PVCAM "wikilink"): Prevent timeouts with very slow
+    -   [PicardStage](PicardStage): Update Picard SDK
+    -   [PVCAM](PVCAM): Prevent timeouts with very slow
         readout speeds; improve color camera support (add debeyering,
         white balancing); minimize lost frames under high CPU load
         (Andrej Bencur and Lubomir Walder, Photometrics); prevent an
         occasional crash when configuring the camera (Mark Tsuchida)
-    -   [QCam](QCam "wikilink"): Fix issue when configuring a Rolera
+    -   [QCam](QCam): Fix issue when configuring a Rolera
         Bolt; fix trigger output in snap mode (Andrej Bencur, QImaging);
         *Windows users should update their QCam SDK installation*
-    -   [ScopeLED](ScopeLED "wikilink"): Add shutter channel properties
+    -   [ScopeLED](ScopeLED): Add shutter channel properties
         (ScopeLED)
-    -   [Thorlabs](Thorlabs "wikilink"): Fix issues with motor stage
+    -   [Thorlabs](Thorlabs): Fix issues with motor stage
         movement and XY stage initialization (Stephen Getliffe,
         Thorlabs)
-    -   [XCite120PC\_Exacte](XCite120PC_Exacte "wikilink"): Power-Factor
+    -   [XCite120PC\_Exacte](XCite120PC_Exacte): Power-Factor
         property is now read-only and Output-Power limits are set
         correctly (Mark Tsuchida)
-    -   [XIMEACamera](XIMEACamera "wikilink"): Fix timestamp generation
+    -   [XIMEACamera](XIMEACamera): Fix timestamp generation
         for acquired images, reset timestamp at start of sequence
         acquisition (Marian Zajko, XIMEA); *Users should update to XIMEA
         API 4.04.00*
-    -   [Zaber](Zaber "wikilink"): Fix handling of communication errors
+    -   [Zaber](Zaber): Fix handling of communication errors
         (Athabasca Witschi, Zaber Technologies)
-    -   [ZeissCAN](ZeissCAN "wikilink"): Allow selection of upper prism
+    -   [ZeissCAN](ZeissCAN): Allow selection of upper prism
         position for PhotoModule (Nico Stuurman)
-    -   [ZeissCAN29](ZeissCAN29 "wikilink"): Correct options for XY
+    -   [ZeissCAN29](ZeissCAN29): Correct options for XY
         stage Velocity-Acceleration; add trajectory
         velocity/acceleration settings (Nico Stuurman)
 -   New closed-source device adapters
     -   **Usb3CamHS**: World Precision Instruments USB3-CAM-HS (Ed
         Simmons)
 -   Updated closed-source device adapters
-    -   [HamamatsuHam](HamamatsuHam "wikilink"): Allow setting exposure
+    -   [HamamatsuHam](HamamatsuHam): Allow setting exposure
         time in different units, add fix to support some older cameras
         (Patrick Gregorio); Fix ROI handling when binning is enabled
         (Nico Stuurman); *Users should update their DCAM-API
@@ -268,63 +268,63 @@ select "Open".)
         Stuurman)
     -   PatternOverlay: bug fixes and UI tweaks (Nico Stuurman)
 -   New device adapters
-    -   [AndorShamrock](AndorShamrock "wikilink") Andor Shamrock
+    -   [AndorShamrock](AndorShamrock) Andor Shamrock
         Spectrograph Series (Andor)
-    -   [Mightex\_C\_Cam](Mightex_C_Cam "wikilink") Mightex C-series USB
+    -   [Mightex\_C\_Cam](Mightex_C_Cam) Mightex C-series USB
         cameras (Mightex)
-    -   [OVP\_ECS2](OVP_ECS2 "wikilink") Optic Valley Photonics ECS-2
+    -   [OVP\_ECS2](OVP_ECS2) Optic Valley Photonics ECS-2
         environmental controller (Jon Daniels, ASI)
-    -   [TriggerScope](TriggerScope "wikilink") TriggerScope digital and
+    -   [TriggerScope](TriggerScope) TriggerScope digital and
         analog controller (Austin Blanco)
 -   Changes in device adapters
-    -   [ASIStage](ASIStage "wikilink"): Add motor control properties
+    -   [ASIStage](ASIStage): Add motor control properties
         for the Z axis; add LogAmpACG property for CRISP (Jon Daniels,
         ASI)
-    -   [ASITiger](ASITiger "wikilink"): Add support for PLogic card;
+    -   [ASITiger](ASITiger): Add support for PLogic card;
         many other enhancements and fixes (Jon Daniels, ASI)
-    -   [Andor](Andor "wikilink"): Add FVB mode; fix ActualInterval when
+    -   [Andor](Andor): Add FVB mode; fix ActualInterval when
         ROI is set; add hardware timestamps when available (Matthew
         Milford, Andor)
-    -   [Corvus](Corvus "wikilink"): Add joystick toggle property (Doug
+    -   [Corvus](Corvus): Add joystick toggle property (Doug
         Kelly)
-    -   [Ludl](Ludl "wikilink"): Add preliminary support for multiple
+    -   [Ludl](Ludl): Add preliminary support for multiple
         controllers (Russell Taylor, Mark Tsuchida)
-    -   [MCCDAQ](MCCDAQ "wikilink"): Make analog voltage range
+    -   [MCCDAQ](MCCDAQ): Make analog voltage range
         configurable (Chris Weisiger)
-    -   [MCL\_MicroDrive](MCL_MicroDrive "wikilink"): Fix an issue where
+    -   [MCL\_MicroDrive](MCL_MicroDrive): Fix an issue where
         velocity was incorrect for multi-axis movement (Greg
         Sawyer, MCL)
-    -   [Nikon](Nikon "wikilink"): Add support for TiTIRF shutter (Nico
+    -   [Nikon](Nikon): Add support for TiTIRF shutter (Nico
         Stuurman)
-    -   [PCO\_Camera](PCO_Camera "wikilink"): Fix issues with ROI
+    -   [PCO\_Camera](PCO_Camera): Fix issues with ROI
         setting on startup (Franz Reitner, PCO)
-    -   [PICAM](PICAM "wikilink"): Fix crash when setting Port property
+    -   [PICAM](PICAM): Fix crash when setting Port property
         (Mark Tsuchida); Fix EM gain property (Toshio Suzuki)
-    -   [PVCAM](PVCAM "wikilink"): Fix ColorMode property; improve error
+    -   [PVCAM](PVCAM): Fix ColorMode property; improve error
         handling (Lubomir Walder, Photometrics/QImaging)
-    -   [PrecisExcite](PrecisExcite "wikilink"): Fix issue where invalid
+    -   [PrecisExcite](PrecisExcite): Fix issue where invalid
         configuration file could be generated (Mark Tsuchida)
-    -   [SerialManager](SerialManager "wikilink"): Remove "GetAnswer
+    -   [SerialManager](SerialManager): Remove "GetAnswer
         retry \#" logging (Mark Tsuchida)
-    -   [TISCam](TISCam "wikilink"): Fix a crash (Johannes Schindelin)
-    -   [Tofra](Tofra "wikilink"): Add a device to control RGB LED as a
+    -   [TISCam](TISCam): Fix a crash (Johannes Schindelin)
+    -   [Tofra](Tofra): Add a device to control RGB LED as a
         shutter (Mark Tsuchida)
-    -   [UserDefinedSerial](UserDefinedSerial "wikilink"): Fix issue
+    -   [UserDefinedSerial](UserDefinedSerial): Fix issue
         causing errors when more than 10 positions are used with the
         state device (Mark Tsuchida)
-    -   [VariLC](VariLC "wikilink"): Fix handling of error responses
+    -   [VariLC](VariLC): Fix handling of error responses
         (Amitabh Verma)
-    -   [Versalase](Versalase "wikilink"): Add properties to select
+    -   [Versalase](Versalase): Add properties to select
         lasers to shutter individually (David Sweeney, Vortran)
-    -   Yokogawa [CSUX](CSUX "wikilink"): Add retry logic for setting
+    -   Yokogawa [CSUX](CSUX): Add retry logic for setting
         dichroic (Doug Kelly, Chris Weisiger)
-    -   [Zaber](Zaber "wikilink"): Improve XY stage support and add
+    -   [Zaber](Zaber): Improve XY stage support and add
         uniaxial stage support; improve error handling (Athabasca
         Witschi, Zaber)
-    -   [ZeissCAN](ZeissCAN "wikilink"): Add support for AxioPhot
+    -   [ZeissCAN](ZeissCAN): Add support for AxioPhot
         PhotoModule (Nico Stuurman)
 -   Changes in closed-source device adapters
-    -   [HamamatsuHam](HamamatsuHam "wikilink"): Fix an issue that could
+    -   [HamamatsuHam](HamamatsuHam): Fix an issue that could
         result in dropped frames when using external triggering on
         certain systems. Also fix a crash and a hang that could occur
         under certain circumstances. (Patrick Gregorio, Hamamatsu)
@@ -450,57 +450,57 @@ select "Open".)
 <!-- -->
 
 -   New Device Adapters
-    -   [UserDefinedSerial](UserDefinedSerial "wikilink"): Control
+    -   [UserDefinedSerial](UserDefinedSerial): Control
         arbitrary serial-based shutters and state devices (Mark
         Tsuchida)
 
 <!-- -->
 
 -   Updated Device Adapters
-    -   [ABSCamera](ABSCamera "wikilink"): Minor bugfix and internal
+    -   [ABSCamera](ABSCamera): Minor bugfix and internal
         cleanup (ABS GmbH Jena)
-    -   [AndorSDK3](AndorSDK3 "wikilink"): Fix metadata for USB3 Zyla
+    -   [AndorSDK3](AndorSDK3): Fix metadata for USB3 Zyla
         (Matthew Milford, Andor)
-    -   [Arduino](Arduino "wikilink"): Bugfix for switch state handling
+    -   [Arduino](Arduino): Bugfix for switch state handling
         (Nico Stuurman)
-    -   [ASIStage](ASIStage "wikilink"): Add "T" axis support,
+    -   [ASIStage](ASIStage): Add "T" axis support,
         properties for sending serial commands, and "Fast Sequence" mode
         (Jon Daniels, ASI)
-    -   [ASITiger](ASITiger "wikilink"): CRISP property names now match
+    -   [ASITiger](ASITiger): CRISP property names now match
         ASIStage; support ring buffer and scanner in firmware v2.89+
         (Jon Daniels, ASI)
-    -   [BaumerOptronic](BaumerOptronic "wikilink"): Prevent timeout
+    -   [BaumerOptronic](BaumerOptronic): Prevent timeout
         errors during acquisition (Mark Tsuchida)
-    -   [DemoCamera](DemoCamera "wikilink"): Additional test image
+    -   [DemoCamera](DemoCamera): Additional test image
         parameters including sequential number display (Chris Weisiger)
-    -   [GigECamera](GigECamera "wikilink"): RGB image and raw Bayer
+    -   [GigECamera](GigECamera): RGB image and raw Bayer
         image support (Peter Innerhofer)
-    -   [MCL\_MicroDrive](MCL_MicroDrive "wikilink"): Fix a crash during
+    -   [MCL\_MicroDrive](MCL_MicroDrive): Fix a crash during
         shutdown (Greg Sawyer, MCL)
-    -   [NewportCONEX](NewportCONEX "wikilink"): Fix serial
+    -   [NewportCONEX](NewportCONEX): Fix serial
         communication bugs, add homing support (Marco Furchi, Mark
         Tsuchida)
-    -   [PCO\_Camera](PCO_Camera "wikilink"): Fix ROI handling for
+    -   [PCO\_Camera](PCO_Camera): Fix ROI handling for
         cameras without ROI support; add support for acquire mode; other
         bugfixes (Franz Reitner, PCO)
-    -   [pgFocus](pgFocus "wikilink"): Fix a potential crash (Mark
+    -   [pgFocus](pgFocus): Fix a potential crash (Mark
         Tsuchida)
-    -   [PI\_GCS\_2](PI_GCS_2 "wikilink"): Allow inversion of Z
+    -   [PI\_GCS\_2](PI_GCS_2): Allow inversion of Z
         direction (Steffen Rau, PI)
-    -   [PVCAM](PVCAM "wikilink"): Initial support for SMART Streaming
+    -   [PVCAM](PVCAM): Initial support for SMART Streaming
         (Andrej Bencur, Photometrics/QImaging)
-    -   [SerialManager](SerialManager "wikilink"): Allow nonstandard
+    -   [SerialManager](SerialManager): Allow nonstandard
         baudrates on OS X (Marco Furchi, Mark Tsuchida)
-    -   [Thorlabs](Thorlabs "wikilink"): Bugfixes; add support for
+    -   [Thorlabs](Thorlabs): Bugfixes; add support for
         MLS203 stage, TDC001 and all multichannel BBD controllers
         (Thorlabs)
-    -   [Utilities](Utilities "wikilink"): Allow setting position range
+    -   [Utilities](Utilities): Allow setting position range
         for DAXYStage (Ed Simmons)
-    -   [XIMEA](XIMEA "wikilink"): Add support for padded data transfer
+    -   [XIMEA](XIMEA): Add support for padded data transfer
         from MD USB3 cameras, image formats for new camera models, FPGA
         and MCU version description, sensor tap control parameter, new
         GPO modes; other updates and fixes (Marian Zajko, XIMEA)
-    -   [ZeissCAN29](ZeissCAN29 "wikilink"): Fix issue that could
+    -   [ZeissCAN29](ZeissCAN29): Fix issue that could
         occasionally cause xy stage to remain busy (Mark Tsuchida)
 
 <!-- -->
@@ -512,14 +512,14 @@ select "Open".)
 <!-- -->
 
 -   Updated Closed-Source Device Adapters
-    -   [HamamatsuHam](HamamatsuHam "wikilink"): Prevent silent dropped
+    -   [HamamatsuHam](HamamatsuHam): Prevent silent dropped
         frames (Mark Tsuchida); Correct exposure time limits for ROI;
         add support for setting OUTPUT TRIGGER SOURCE, INTERNAL LINE
         SPEED UNITS, OUTPUT TRIGGER PERIOD UNITS, and OUTPUT TRIGGER
         DELAY UNITS; other bugfixes (Patrick Gregorio, Hamamatsu)
-    -   [NikonEclipse90i](NikonEclipse90i "wikilink"): Fix OpticalPath
+    -   [NikonEclipse90i](NikonEclipse90i): Fix OpticalPath
         positions for Front and Rear ports (Egor Zindy)
-    -   [Olympus](Olympus "wikilink"): Fix issue that could cause
+    -   [Olympus](Olympus): Fix issue that could cause
         devices to remain busy (Mark Tsuchida)
     -   **RaptorEPIX**: Various updates and bugfixes (David Biggs,
         Raptor Photonics)
@@ -683,108 +683,108 @@ select "Open".)
 <!-- -->
 
 -   Updated plugins
-    -   [Acquire Multiple Regions](AcquireMultipleRegions "wikilink"):
+    -   [Acquire Multiple Regions](AcquireMultipleRegions):
         Allow radially weighted interpolation between different Z
         coordinates in a region (Kurt Thorn)
-    -   [ASI diSPIM](ASIdiSPIM_Plugin "wikilink"): Numerous engancements
+    -   [ASI diSPIM](ASIdiSPIM_Plugin): Numerous engancements
         and fixes (Jon Daniels, ASI; Nico Stuurman)
     -   **ASI CRISP**: Support TG-1000 "Tiger" CRISP (Jon Daniels, ASI)
-    -   [Pixel Calibrator](Pixel_Calibrator_Plugin "wikilink"): Return
+    -   [Pixel Calibrator](Pixel_Calibrator_Plugin): Return
         to original position and re-acquire image after calibration
         (Falk Dettmar)
-    -   [Projector](Projector "wikilink"): Enhancements and fixes for
+    -   [Projector](Projector): Enhancements and fixes for
         SLM ROI support (Arthur Edelstein for Andor)
 
 <!-- -->
 
 -   New device adapters
-    -   [CoherentOBIS](CoherentOBIS "wikilink"): Coherent OBIS laser
+    -   [CoherentOBIS](CoherentOBIS): Coherent OBIS laser
         controllers (Forrest Collman)
-    -   [NewportSMC](NewportSMC "wikilink"): Newport SMC100 motor
+    -   [NewportSMC](NewportSMC): Newport SMC100 motor
         controller (Liisa Hirvonen, submitted by Newport)
-    -   [PicardStage](PicardStage "wikilink"): Picard Industries USB 4D
+    -   [PicardStage](PicardStage): Picard Industries USB 4D
         stage (Johannes Schindelin and Luke Stuyvenberg)
 
 <!-- -->
 
 -   Updated device adapters
-    -   [Andor](Andor "wikilink"): Update to use latest Andor driver,
+    -   [Andor](Andor): Update to use latest Andor driver,
         add iXon 888 isolated crop ROIs (Matthew Milford, Andor)
-    -   [AndorSDK3](AndorSDK3 "wikilink"): Fix a crash or hang that
+    -   [AndorSDK3](AndorSDK3): Fix a crash or hang that
         could occur when rapidly stopping and restarting a sequence
         acquisition (Norman Glasgow, Andor)
-    -   [Arduino](Arduino "wikilink"): Fix an issue when using multiple
+    -   [Arduino](Arduino): Fix an issue when using multiple
         Arduinos (Nico Stuurman)
-    -   [ASIStage](ASIStage "wikilink"): Add acceleration and firmware
+    -   [ASIStage](ASIStage): Add acceleration and firmware
         version properties, add support for turrets and sliders,
         correctly detect stage when using 115200 baud, improve wait
         cycles handling (Jon Daniels, ASI); fix CRISP gain setting (Nico
         Stuurman)
-    -   [ASITiger](ASITiger "wikilink"): Add support for LED
+    -   [ASITiger](ASITiger): Add support for LED
         illuminators, add stage wheel speed (firmware 2.87+) property,
         allow XY stage to be split across two cards, support for
         firmware 2.88 features, various fixes (Jon Daniels, ASI)
-    -   [BaumerOptronic](BaumerOptronic "wikilink"): Prevent high CPU
+    -   [BaumerOptronic](BaumerOptronic): Prevent high CPU
         usage, fix issue with sequence acquisition following ROI change
         (Eugene Dvoretsky); prevent stale images from being returned and
         avoid constantly running camera (Mark Tsuchida)
-    -   [dc1394](dc1394 "wikilink"): On windows, update to libdc1394
+    -   [dc1394](dc1394): On windows, update to libdc1394
         2.2.1 and support 64-bit (Mark Tsuchida)
-    -   [DemoCamera](DemoCamera "wikilink"): Add "rotate image" mode
+    -   [DemoCamera](DemoCamera): Add "rotate image" mode
         (Chris Weisiger); remove some hard-to-correctly-use
         testing-related features (Mark Tsuchida)
-    -   [IIDC](IIDC "wikilink"): Do not reject 1394A cameras, do not
+    -   [IIDC](IIDC): Do not reject 1394A cameras, do not
         skip by default in Linux build (Mark Tsuchida)
-    -   [Ludl](Ludl "wikilink"): Allow setting of XY step sizes
+    -   [Ludl](Ludl): Allow setting of XY step sizes
         independently (Nico Stuurman)
-    -   [MCL\_MicroDrive](MCL_MicroDrive "wikilink"): Add support for
+    -   [MCL\_MicroDrive](MCL_MicroDrive): Add support for
         MicroDrive3 and MicroDrive1 (Greg Sawyer, MCL)
-    -   [NewportCONEX](NewportCONEX "wikilink"): Renamed from CONEX.
-    -   [Okolab](Okolab "wikilink"): Fix issue with port selection, add
+    -   [NewportCONEX](NewportCONEX): Renamed from CONEX.
+    -   [Okolab](Okolab): Fix issue with port selection, add
         active humidifier device support (Marco Di Pasqua, Okolab)
-    -   [PCO\_Camera](PCO_Camera "wikilink"): Fix ROI ROI handling
+    -   [PCO\_Camera](PCO_Camera): Fix ROI ROI handling
         issues, add support for external triggering, various fixes
         (Franz Reitner, PCO)
-    -   [pgFocus](pgFocus "wikilink"): Add Windows support, bugfixes
+    -   [pgFocus](pgFocus): Add Windows support, bugfixes
         (Karl Bellvé)
-    -   [Piezosystem\_NV40\_1](Piezosystem_NV40_1 "wikilink"),
-        [Piezosystem\_NV40\_3](Piezosystem_NV40_3 "wikilink"),
-        [Piezosystem\_NV120\_1](Piezosystem_NV120_1 "wikilink"): Prevent
+    -   [Piezosystem\_NV40\_1](Piezosystem_NV40_1),
+        [Piezosystem\_NV40\_3](Piezosystem_NV40_3),
+        [Piezosystem\_NV120\_1](Piezosystem_NV120_1): Prevent
         error during MDA (Mark Tsuchida)
-    -   [PVCAM](PVCAM "wikilink"): Limit range of ClearCycles property,
+    -   [PVCAM](PVCAM): Limit range of ClearCycles property,
         fix handling of property settings, bugfixes (Lubomir Walder,
         Photometrics)
-    -   [SerialManager](SerialManager "wikilink"): Prevent a crash or
+    -   [SerialManager](SerialManager): Prevent a crash or
         error when connecting to certain USB-serial interfaces that use
         Silicon Labs chips (e.g. ASI controllers) on certain Windows
         systems (Mark Tsuchida)
-    -   [Tofra](Tofra "wikilink"): Fix state device State and Label
+    -   [Tofra](Tofra): Fix state device State and Label
         properties and channel intensity properties (Mark Tsuchida); fix
         issue with filter wheel positioning (Ilya Ravkin, Tofra)
     -   **VariLC**: Fix a "property name contains reserved chars" error,
         add properties for absolute retardance and variable time delay
         (Amitabh Verma)
-    -   [VersaLase](Versalase "wikilink"): Add support for VersaLase
+    -   [VersaLase](Versalase): Add support for VersaLase
         devices with up to 4 lasers (David Sweeney, Vortran)
 
 <!-- -->
 
 -   New closed-source device adapters
-    -   [NikonEclipse90i](NikonEclipse90i "wikilink"): Nikon Eclipse 90i
+    -   [NikonEclipse90i](NikonEclipse90i): Nikon Eclipse 90i
         motorized microscope (Egor Zindy)
 
 <!-- -->
 
 -   Updated closed-source device adapters
-    -   [AxioCam](AxioCam "wikilink"): Prevent spurious ROI change after
+    -   [AxioCam](AxioCam): Prevent spurious ROI change after
         changing binning (Mark Tsuchida)
-    -   [HamamatsuHam](HamamatsuHam "wikilink"): Added new properties
+    -   [HamamatsuHam](HamamatsuHam): Added new properties
         for trigger and line speed control (Patrick Gregorio,
         Hamamatsu); fixed an issue that caused hardware-triggered MDA to
         fail (Nico Stuurman)
-    -   [Hamamatsu](Hamamatsu "wikilink") (OS X): Removed 64-bit
+    -   [Hamamatsu](Hamamatsu) (OS X): Removed 64-bit
         version, which was not functional (Mark Tsuchida)
-    -   [Mosaic3](Mosaic3 "wikilink"): Bugfixes (Arthur Edelstein for
+    -   [Mosaic3](Mosaic3): Bugfixes (Arthur Edelstein for
         Andor)
 
 <!-- -->
@@ -943,124 +943,124 @@ select "Open".)
 <!-- -->
 
 -   New plugins
-    -   [Acquire Multiple Regions](AcquireMultipleRegions "wikilink")
+    -   [Acquire Multiple Regions](AcquireMultipleRegions)
         Automatically acquire multiple regions of a sample (Kurt Thorn)
-    -   [AutoLase](AutoLase "wikilink"): Real-time closed-loop control
+    -   [AutoLase](AutoLase): Real-time closed-loop control
         of density of photoactivated molecules during PALM measurement
         (Thomas Pengo, Seamus Holden)
     -   Live Tracking (revived): Use image
         correlation to countersteer the XY stage (Nico Stuurman, Mark
         Tsuchida)
-    -   [pgFocus](pgFocus "wikilink"): Control the pgFocus open-source
+    -   [pgFocus](pgFocus): Control the pgFocus open-source
         software/hardware focus stabilization device (Karl Bellve)
 
 <!-- -->
 
 -   Updated plugins
-    -   [ASIdiSPIM](ASIdiSPIM_Plugin "wikilink"): Numerous enhancements
+    -   [ASIdiSPIM](ASIdiSPIM_Plugin): Numerous enhancements
         (Jon Daniels, ASI; Nico Stuurman)
     -   BFCorrector: Fix handling of 16-bit pixels; marked BFCorrector
         as obsolete as it is superseded by MultiChannelShading
-    -   [Multi-Channel Shading](MultiChannelShading "wikilink"): Fix
+    -   [Multi-Channel Shading](MultiChannelShading): Fix
         crash when defining new groups (Kurt Thorn)
-    -   [Projector](Projector "wikilink"): Enhancements to ROI support
+    -   [Projector](Projector): Enhancements to ROI support
         (Arthur Edelstein)
-    -   [Stage Control](Stage_Control "wikilink"): Wait for device to
+    -   [Stage Control](Stage_Control): Wait for device to
         finish movement before updating displayed position (Nico
         Stuurman)
 
 <!-- -->
 
 -   New device adapters
-    -   [CONEX](CONEX "wikilink"): Newport CONEX-CC DC-Servo Controller
+    -   [CONEX](CONEX): Newport CONEX-CC DC-Servo Controller
         (Newport)
-    -   [IIDC](IIDC "wikilink"): IIDC 1394 cameras (future replacement
-        for [dc1394](dc1394 "wikilink"), currently monochrome only)
+    -   [IIDC](IIDC): IIDC 1394 cameras (future replacement
+        for [dc1394](dc1394), currently monochrome only)
         (Mark Tsuchida)
-    -   [MoticCamera](MoticCamera "wikilink") (new on OS X): Motic
+    -   [MoticCamera](MoticCamera) (new on OS X): Motic
         cameras (Motic)
-    -   [ObjectiveImaging](ObjectiveImaging "wikilink"): Objective
+    -   [ObjectiveImaging](ObjectiveImaging): Objective
         Imaging OASIS controller (Egor Zindy)
-    -   [pgFocus](pgFocus "wikilink"): pgFocus (open-source
+    -   [pgFocus](pgFocus): pgFocus (open-source
         software/hardware focus stabilization device) (Karl Bellve)
-    -   [PICAM](PICAM "wikilink"): Princeton Instruments cameras, using
+    -   [PICAM](PICAM): Princeton Instruments cameras, using
         the PICAM SDK (Toshio Suzuki)
-    -   [ThorlabsAPTStage](ThorlabsAPTStage "wikilink"): Thorlabs APT
+    -   [ThorlabsAPTStage](ThorlabsAPTStage): Thorlabs APT
         family linear stages (a newly extended version of
         ThorlabsDCStage) (Egor Zindy)
-    -   [ThorlabsMFC1](ThorlabsMFC1 "wikilink"): Thorlabs MFC1 Motorized
+    -   [ThorlabsMFC1](ThorlabsMFC1): Thorlabs MFC1 Motorized
         Microscope Focus Controller (Thomas Zangle)
 
 <!-- -->
 
 -   New closed-source device adapters
-    -   [Mosaic3](Mosaic3 "wikilink"): Andor Mosaic 3 Digital Mirror
+    -   [Mosaic3](Mosaic3): Andor Mosaic 3 Digital Mirror
         Device (Arthur Edelstein for Andor)
 
 <!-- -->
 
 -   Updated device adapters
-    -   [Andor](Andor "wikilink"): Fix actual interval property and
+    -   [Andor](Andor): Fix actual interval property and
         error during external trigger; Fix spurious noise filter control
         (Matthew Milford, Andor)
-    -   [AndorLaserCombiner](AndorLaserCombiner "wikilink"): Add
+    -   [AndorLaserCombiner](AndorLaserCombiner): Add
         SaveLifetime and IsLinear properties; allow TTL option in Enable
         property (Pariksheet Nanda)
-    -   [AndorSDK3](AndorSDK3 "wikilink"): Add support for Auxiliary Out
+    -   [AndorSDK3](AndorSDK3): Add support for Auxiliary Out
         TTL I/O pin; Linux support; various bugfixes (Norman Glasgow,
         Andor; Erik Hvatum)
-    -   [ASITiger](ASITiger "wikilink"): Add property to reverse axis
+    -   [ASITiger](ASITiger): Add property to reverse axis
         directions and interchange X and Y; various fixes and minor
         enhancements (Jon Daniels, ASI)
-    -   [IDS\_uEye](IDS_uEye "wikilink"): Add color support, bit depth
+    -   [IDS\_uEye](IDS_uEye): Add color support, bit depth
         selection, and external trigger; improve binning support
         (Wenjamin Rosenfeld)
-    -   [NikonTE2000](NikonTE2000 "wikilink"): Fix Uniblitz shutter
+    -   [NikonTE2000](NikonTE2000): Fix Uniblitz shutter
         support (Mark Tsuchida)
-    -   [PCO\_Camera](PCO_Camera "wikilink"): Fixed time setting, ROI,
+    -   [PCO\_Camera](PCO_Camera): Fixed time setting, ROI,
         and binning issues; tested simultaneous full-fps acquisition
         with two pco.edge\_4.2 using Multi Camera; various bugfixes
         (Franz Reitner, PCO)
-    -   [PI\_GCS\_2](PI_GCS_2 "wikilink"): Add support for C-865 and
+    -   [PI\_GCS\_2](PI_GCS_2): Add support for C-865 and
         E-816 (E-665, E-625, E-621) with firmware &lt; 2.11; added E-709
         and C-884 as preconfigured controller; default axis names are
         now "1" and "2"; fixed hang with C-867.262; other fixes and
         enhancements (Steffen Rau, Physik Instrumente)
-    -   [Piper](Piper "wikilink"): Reinstated (was missing from 1.4.16
+    -   [Piper](Piper): Reinstated (was missing from 1.4.16
         due to build compatibility issues); improved handling of
         property updates (Terry Sprout for Stanford Photonics)
-    -   [PVCAM](PVCAM "wikilink"): Add ExposeOutMode property; support
+    -   [PVCAM](PVCAM): Add ExposeOutMode property; support
         new trigger modes for OptiMos; various fixes; OptiMos users
         should update to PVCAM 3.0.1.2 (Lubomir Walder, Photometrics)
-    -   [ThorlabsDCStage](ThorlabsDCStage "wikilink"): See new
-        [ThorlabsAPTStage](ThorlabsAPTStage "wikilink")
-    -   [TISCam](TISCam "wikilink"): Support Y16 mode; add white balance
+    -   [ThorlabsDCStage](ThorlabsDCStage): See new
+        [ThorlabsAPTStage](ThorlabsAPTStage)
+    -   [TISCam](TISCam): Support Y16 mode; add white balance
         red/blue properties (Falk Dettmer)
-    -   [XCiteLed](XCiteLed "wikilink"): Fix issue caused by comma in
+    -   [XCiteLed](XCiteLed): Fix issue caused by comma in
         property name (Mark Tsuchida)
-    -   [XIMEA](XIMEA "wikilink"): Fix bit depth reported by camera
+    -   [XIMEA](XIMEA): Fix bit depth reported by camera
         (Egor Zindy)
-    -   [XLight](XLight "wikilink"): Fixes and enhancements (Enzo
+    -   [XLight](XLight): Fixes and enhancements (Enzo
         Chiarappa, Crestoptics)
-    -   [ZeissCAN](ZeissCAN "wikilink"): Add StepSize property to
+    -   [ZeissCAN](ZeissCAN): Add StepSize property to
         XYStage (Nico Stuurman)
-    -   [ZeissCAN29](ZeissCAN29 "wikilink"): Add ND filter wheel
+    -   [ZeissCAN29](ZeissCAN29): Add ND filter wheel
         support; change condenser position limit from 7 to 8 (Nico
         Stuurman)
 
 <!-- -->
 
 -   Updated closed-source device adapters
-    -   [HamamatsuHam](HamamatsuHam "wikilink"): Added support for
+    -   [HamamatsuHam](HamamatsuHam): Added support for
         Defect Correct Mode (Patrick Gregorio, Hamamatsu)
-    -   [NikonTI](NikonTI "wikilink"): No longer crash when loading
+    -   [NikonTI](NikonTI): No longer crash when loading
         DiaLamp (remaining bug: config may need to be loaded twice)
         (Mark Tsuchida)
 
 <!-- -->
 
 -   Retired device adapters
-    -   [Hamamatsu](Hamamatsu "wikilink") on Windows: Please use
+    -   [Hamamatsu](Hamamatsu) on Windows: Please use
         HamamatsuHam instead
 
 <!-- -->
@@ -1151,9 +1151,9 @@ Binary)](http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.16.dmg),
 <!-- -->
 
 -   New plugins
-    -   [ASI diSPIM](ASIdiSPIM_Plugin "wikilink") - Control the ASI
+    -   [ASI diSPIM](ASIdiSPIM_Plugin) - Control the ASI
         iSPIM and diSPIM (Jon Daniels, ASI, and Nico Stuurman)
-    -   [MultiChannelShading](MultiChannelShading "wikilink") -
+    -   [MultiChannelShading](MultiChannelShading) -
         Independent shading correction (flat-fielding) of multiple
         channels (Kurt Thorn)
 
@@ -1275,7 +1275,7 @@ Binary)](http://valelab.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.15.dmg),
 
 -   New in the Main Application
     -   [High speed
-        acquisition](High_Speed_Acquisition_in_Micro-Manager "wikilink")
+        acquisition](High_Speed_Acquisition_in_Micro-Manager)
         implemented, to allow up to 1.1 GB/s acquisition, with storage
         to RAM or to (high-speed) disk (Arthur Edelstein)
     -   New High Content Screen plugin added (Nenad Amodaj)
@@ -1777,7 +1777,7 @@ Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
     -   ABS Camera
 -   Thorlabs BBD102 xy stage
 
-\- [Previous releases](Micro-Manager_Version_Archive "wikilink")
+\- [Previous releases](Micro-Manager_Version_Archive)
 
 ### Micro-Manager 1.3.48 (March 2, 2011)
 
@@ -2141,6 +2141,6 @@ This new release includes:
 ## Even earlier releases
 
 [Micro-Manager 1.2 Windows (Very
-Old!)](Micro-Manager_1.2_Windows_(Very_Old!) "wikilink") \|
+Old!)](Micro-Manager_1.2_Windows_(Very_Old!)) \|
 [Micro-Manager 1.2 Mac (Very
-Old!)](Micro-Manager_1.2_Mac_(Very_Old!) "wikilink")
+Old!)](Micro-Manager_1.2_Mac_(Very_Old!))

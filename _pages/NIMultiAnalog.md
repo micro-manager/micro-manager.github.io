@@ -59,7 +59,7 @@ Windows only
 </tr>
 </table>
 
-See also: [NI100X](NI100X "wikilink").
+See also: [NI100X](NI100X).
 
 This device adapter is intended for use with National Instruments DAQ
 boards/boxes that have multiple analog output ports (e.g. Analog Output
@@ -72,7 +72,7 @@ not too big).
 The hardware triggering support is flexible enough that you can use the
 same DAQ to control a piezo Z stage, the illumination channel (possibly
 using analog output ports as TTL outputs, with the DATTLStateDevice
-available in [Utilities](Utilities "wikilink")), and illumination
+available in [Utilities](Utilities)), and illumination
 intensities simultaneously. In such a configuration, both the Z stage
 and the illumination channel can be sequenced by hardware triggering at
 the same time in an MDA.

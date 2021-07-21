@@ -96,9 +96,9 @@ None
 </table>
 
 '' **Please Note**: This adapter is limited to Z Stages and serial
-communication. Please see [PI\_GCS\_2](PI_GCS_2 "wikilink") for an
+communication. Please see [PI\_GCS\_2](PI_GCS_2) for an
 updated driver for X/Y and Z stages with more features. Further
-development will focus on the [PI\_GCS\_2](PI_GCS_2 "wikilink") adapter
+development will focus on the [PI\_GCS\_2](PI_GCS_2) adapter
 only (Steffen Rau, PI)''
 
 PI GCS driver is designed for high speed piezo Z motion and is
@@ -154,7 +154,7 @@ software or a terminal application to do this once after power on. (This
 does not affect E-816 based controllers (E-665, E-621, E-625) which do
 not need to be referenced)
 
---[Steffen](/users/Steffen "wikilink") 15 January 2009
+--[Steffen](/users/Steffen) 15 January 2009
 
 This driver does not work with the E-750. The E-750 uses a special
 binary protocol over the serial line.
@@ -164,5 +164,5 @@ Massachusetts 16:48, 1 July 2009 (UTC)
 
 Successfully configured with a C-867 controller and a PILine Piezomotor.
 
---[Julou](/users/Julou "wikilink") 16:33, 30 November 2010 (UTC)
+--[Julou](/users/Julou) 16:33, 30 November 2010 (UTC)
 

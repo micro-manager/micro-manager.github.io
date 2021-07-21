@@ -5,4 +5,4 @@ redirect_from: /wiki/Jenoptik
 layout: page
 ---
 
-1.  REDIRECT [ProgRes](ProgRes "wikilink")
+1.  REDIRECT [ProgRes](ProgRes)

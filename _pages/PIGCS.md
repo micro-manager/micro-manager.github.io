@@ -5,4 +5,4 @@ redirect_from: /wiki/PIGCS
 layout: page
 ---
 
-1.  REDIRECT [PI\_GCS](PI_GCS "wikilink")
+1.  REDIRECT [PI\_GCS](PI_GCS)

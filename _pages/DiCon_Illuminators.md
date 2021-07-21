@@ -5,4 +5,4 @@ redirect_from: /wiki/DiCon_Illuminators
 layout: page
 ---
 
-1.  REDIRECT [DiConIlluminator](DiConIlluminator "wikilink")
+1.  REDIRECT [DiConIlluminator](DiConIlluminator)

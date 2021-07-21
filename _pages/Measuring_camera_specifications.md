@@ -8,7 +8,7 @@ layout: page
 **Camera characterization - Measuring the electron conversion factor,
 read-noise and offset using Photon Transfer Curves**
 
---[Nico](/users/Nico "wikilink") 12:23, 30 September 2011 (PDT)
+--[Nico](/users/Nico) 12:23, 30 September 2011 (PDT)
 
 Based on a handout for the Bangalore Microscopy Course, 2011
 
@@ -39,7 +39,7 @@ numbers on the data-sheet of the camera!
 
 For these measurements, you will make extensive use of the Micro-Manager
 scripting facilities. Please have a look at the [Script Panel
-GUI](Script_Panel_GUI "wikilink") (you will find it under the “Tools”
+GUI](Script_Panel_GUI) (you will find it under the “Tools”
 menu)
 
 # Constant/Even Illumination

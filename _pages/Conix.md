@@ -103,5 +103,5 @@ Quad filter changer
 Controls quad filter changer from
 [Conix](http://www.conixresearch.com/products/index.html)
 
---[Nico](/users/Nico "wikilink") 10:18, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 10:18, 25 August 2007 (PDT)
 

@@ -6,43 +6,43 @@ section: Learn:Version 1.4
 layout: page
 ---
 
--   [Autofocus manual](Autofocus_manual "wikilink")
--   [Characterizing cameras](Measuring_camera_specifications "wikilink")
+-   [Autofocus manual](Autofocus_manual)
+-   [Characterizing cameras](Measuring_camera_specifications)
 -   [Camera saturation
-    conditions](Camera_saturation_conditions "wikilink")
+    conditions](Camera_saturation_conditions)
 -   [Coordinates and
-    Directionality](Coordinates_and_Directionality "wikilink")
--   [Files and Metadata](Files_and_Metadata "wikilink")
+    Directionality](Coordinates_and_Directionality)
+-   [Files and Metadata](Files_and_Metadata)
 -   [Comparison with other microscopy
-    software](Comparison_with_other_microscopy_software "wikilink")
+    software](Comparison_with_other_microscopy_software)
 -   [Hardware-based
-    synchronization](Hardware-based_synchronization "wikilink")
+    synchronization](Hardware-based_synchronization)
 -   [High Speed Acquisition in
-    Micro-Manager](High_Speed_Acquisition_in_Micro-Manager "wikilink")
--   [ pgFocus: Focus Stabilization](PgFocus "wikilink")
+    Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)
+-   [ pgFocus: Focus Stabilization](PgFocus)
 -   [Tagged Spot File (tsf)
-    format](Tagged_Spot_File_(tsf)_format "wikilink")
+    format](Tagged_Spot_File_(tsf)_format)
 -   [Stitching Micro-Manager
-    Images](Stitching_Micro-Manager_Images "wikilink")
+    Images](Stitching_Micro-Manager_Images)
 -   [Using Multi-Dimensional Acquisition with a manual
-    microscope](Using_Multi-Dimensional_Acquisition_with_a_manual_microscope "wikilink")
+    microscope](Using_Multi-Dimensional_Acquisition_with_a_manual_microscope)
 
 Computer Setup
 
--   [Personal Computer](Personal_computer_setup "wikilink")
+-   [Personal Computer](Personal_computer_setup)
 -   Mac OS X
 
 Yokogawa Spinning Disk:
 
--   [CSU-X fiber rotation](CSU-X_fiber_rotation "wikilink")
--   [CSU Alignment](CSU_Alignment "wikilink")
+-   [CSU-X fiber rotation](CSU-X_fiber_rotation)
+-   [CSU Alignment](CSU_Alignment)
 
 Hardware Setup Examples:
 
 -   [Encoding the Nikon TI Eclipse tube
-    lens](Encoding_the_Nikon_TI_Eclipse_tube_lens "wikilink")
+    lens](Encoding_the_Nikon_TI_Eclipse_tube_lens)
 -   [ Spinning-disk Laser Confocal (software installation
-    report)](Setup_UTSW_SD "wikilink")
+    report)](Setup_UTSW_SD)
 
 
 [Discussion page](/talk/More_Help_Topics) for More_Help_Topics imported from old wiki

@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Hardware Triggered Sequences in
-    Micro-Manager](Hardware_Triggered_Sequences_in_Micro-Manager "wikilink")
+    Micro-Manager](Hardware_Triggered_Sequences_in_Micro-Manager)

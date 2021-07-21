@@ -239,5 +239,5 @@ contain the length of String version of the
 to store acquisition comments. This String is rewritten whenever
 acquisition or image comments are changed.
 
---[Henry Pinkard](/users/Henry_Pinkard "wikilink") 7:35, 20th March 2013
+--[Henry Pinkard](/users/Henry_Pinkard) 7:35, 20th March 2013
 (PDT)

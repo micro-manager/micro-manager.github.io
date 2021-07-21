@@ -16,7 +16,7 @@ With this plugin you can:
 
 The Slide Explorer is available in Micro-Manager 1.3.46 or later. Before
 using the Slide Explorer, you will need to run the [Pixel Calibrator
-plugin](Pixel_Calibrator_Plugin "wikilink"). The size and orientation of
+plugin](Pixel_Calibrator_Plugin). The size and orientation of
 pixels measured by the Pixel Calibrator will be used to ensure that the
 tiles in the Slide Explorer are properly positioned.
 

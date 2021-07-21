@@ -279,7 +279,7 @@ the trigger OUT signal to achieve the desired trigger OUT delay.
 
 ![](media/AxioCamFig5.png "AxioCamFig5.png")
 
---[Henry Pinkard](/users/Henry_Pinkard "wikilink") 10:58, 2nd January 2013
+--[Henry Pinkard](/users/Henry_Pinkard) 10:58, 2nd January 2013
 (PDT)
 
 ## IEEE 1394 driver on Windows 7
@@ -295,7 +295,7 @@ Using the Legacy driver may also help with cases where the message
 "(0)McamAcquisition error 22" pops up and Micro-Manager becomes
 unresponsive.
 
---[Mark Tsuchida](/users/Mark_Tsuchida "wikilink")
+--[Mark Tsuchida](/users/Mark_Tsuchida)
 
 {% include Listserv_Search text="AxioCam" %}
 

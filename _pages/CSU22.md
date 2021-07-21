@@ -5,4 +5,4 @@ redirect_from: /wiki/CSU22
 layout: page
 ---
 
-1.  REDIRECT [Yokogawa](Yokogawa "wikilink")
+1.  REDIRECT [Yokogawa](Yokogawa)

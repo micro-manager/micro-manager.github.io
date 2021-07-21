@@ -23,7 +23,7 @@ Micromanager's main parts:
 -   Device adapters - various libraries that allow support for various
     hardware. If you want to built one and extend MM devise support,
     follow [this
-    guide](Building_Micro-Manager_Device_Adapters "wikilink").
+    guide](Building_Micro-Manager_Device_Adapters).
 -   MMCorePy - python wrapper. MM build scripts are support both python
     2 and 3, but windows version still ships with python 2 bindings
     only.
@@ -72,7 +72,7 @@ request free academic license.
 
 ### Windows & Mac
 
-[Download](Download_Micro-Manager_Latest_Release "wikilink") and install
+[Download](Download_Micro-Manager_Latest_Release) and install
 Micro-Manager on your computer. Add Micromanager installation folder to
 [PYTHONPATH](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH)
 (i.e. "*C:\\Program Files\\Micro-Manager-1.4*", it should contain
@@ -92,13 +92,13 @@ dependency. In normal way, you don't need changing any system variable.
 Familiarize yourself with Micro-Manager and learn how to connect it to
 your hardware by MMStudio GUI.
 
--   Find your device on [this page](Device_Support "wikilink") and
+-   Find your device on [this page](Device_Support) and
     figure out what adapter you need.
 -   [Micro-Manager Configuration
-    Guide](Micro-Manager_Configuration_Guide "wikilink") help you to
+    Guide](Micro-Manager_Configuration_Guide) help you to
     understand how properties work.
 -   Read the general [Micro-Manager Programming
-    Guide](Micro-Manager_Programming_Guide "wikilink")
+    Guide](Micro-Manager_Programming_Guide)
 -   Use
     [API](https://valelab.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html).
 
@@ -143,7 +143,7 @@ devices, suitable for learning purposes. Load DemoCamera:
 ### Property discovery
 
 Every device has
-[properties](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser "wikilink")
+[properties](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser)
 - settings that let you control the device more precisely. Default
 values should be fine, but if you need something sophisticated, [this
 example](https://github.com/radioxoma/micromanager-samples/blob/master/mm_print_properties.py)
@@ -270,5 +270,5 @@ acquisition, property discovery etc).
 -   [OpenCV-Python
     Tutorials](http://docs.opencv.org/trunk/doc/py_tutorials/py_tutorials.html)
 
-Written by Eugene Dvoretsky -- [Radioxoma](/users/Radioxoma "wikilink")
+Written by Eugene Dvoretsky -- [Radioxoma](/users/Radioxoma)
 09:19, 14 June 2014 (PDT)

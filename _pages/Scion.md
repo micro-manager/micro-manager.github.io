@@ -5,4 +5,4 @@ redirect_from: /wiki/Scion
 layout: page
 ---
 
-1.  REDIRECT [ScionCam](ScionCam "wikilink")
+1.  REDIRECT [ScionCam](ScionCam)

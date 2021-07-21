@@ -14,7 +14,7 @@ layout: page
 
 ------------------------------------------------------------------------
 
-(See also: the [MightexPolygon](MightexPolygon "wikilink") device
+(See also: the [MightexPolygon](MightexPolygon) device
 adapter.)
 
 (Documentation to be written.)

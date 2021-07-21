@@ -65,7 +65,7 @@ work).
     properties in the "System" group's "Startup" preset, to set them
     automatically upon loading the configuration file as described in
     the [ Configuration
-    Guide](Micro-Manager_Configuration_Guide#startup-presets "wikilink").
+    Guide](Micro-Manager_Configuration_Guide#startup-presets).
 4.  Synchronizing cameras requires wiring the exposure digital output of
     one camera (namely, the "Master" camera) to the trigger input of
     other cameras (the "Slave" camera(s)).
@@ -75,7 +75,7 @@ work).
     camera before the next camera starts acquiring. e.g. Set `Physical
     Camera 1` to Slave, and `Physical Camera 2` to Master." %}
 5.  To rotate or mirror images, launch the [Image Flipper
-    plugin](Image_Flipper "wikilink"). The plugin only works while it is
+    plugin](Image_Flipper). The plugin only works while it is
     open. Also after restarting Micro-Manager, to apply mirror and flip
     settings, one has to click through the top listbox of the plugin and
     select each camera that has flip and/or rotate settings enabled to

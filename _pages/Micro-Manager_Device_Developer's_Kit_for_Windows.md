@@ -19,7 +19,7 @@ user interface source code.
 As well as downloading and installing the Device Developer's Kit
 (installer downloads below), you will need to read the instruction
 manual: [Building Micro-Manager Device
-Adapters](Building_Micro-Manager_Device_Adapters "wikilink").
+Adapters](Building_Micro-Manager_Device_Adapters).
 
 ## Latest release
 
@@ -28,7 +28,7 @@ part of the source code and there is no need to download and install
 stand-alone libraries and executables. All development tools and
 libraries can be built directly from the main source code base following
 a simple process described in [Building Micro-Manager Device
-Adapters](Building_Micro-Manager_Device_Adapters "wikilink").
+Adapters](Building_Micro-Manager_Device_Adapters).
 Distribution of separate Device Kit installers is therefore
 discontinued.
 

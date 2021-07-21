@@ -17,7 +17,7 @@ layout: page
 <td markdown="1">
 
 Controls [http://www.qimaging.com/
-QImaging](http://www.qimaging.com/_QImaging "wikilink") camera
+QImaging](http://www.qimaging.com/_QImaging) camera
 
 </td>
 </tr>
@@ -89,7 +89,7 @@ All monochrome QImaging cameras
 </td>
 <td markdown="1">
 
-[MMConfig_QCam.cfg](media/MMConfig_QCam.cfg "wikilink")
+[MMConfig_QCam.cfg](media/MMConfig_QCam.cfg)
 
 </td>
 </tr>
@@ -111,21 +111,21 @@ hardware config wizard to make one yourself) to get the camera to work.
 
 The Rolera MGi-Plus is an EM CCD camera that does not use the QImaging
 driver but interfaces with PVCAM instead. Use the
-[PVCAM](PVCAM "wikilink") adapter for that camera.
+[PVCAM](PVCAM) adapter for that camera.
 
---[Nico](/users/Nico "wikilink") 21:29, 1 September 2007 (PDT)
+--[Nico](/users/Nico) 21:29, 1 September 2007 (PDT)
 
 Note: As of 11/25/08 the link provided above does not give the right
 driver version. You need to download the
 [http://www.qimaging.com/support/downloads/legacy\_qcamdriver.php legacy
-drivers](http://www.qimaging.com/support/downloads/legacy_qcamdriver.php_legacy_drivers "wikilink").
+drivers](http://www.qimaging.com/support/downloads/legacy_qcamdriver.php_legacy_drivers).
 
 --Hernan Garcia
 
 Note: The 2.0.4 version of the driver does not appear to be linked to
 from the site but can still be obtained by pointing your browser
 [http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe
-here](http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe_here "wikilink")
+here](http://www.qimaging.com/support/downloads/software/windows/QCamDriver2004.exe_here)
 (Tested on 25th Feb 2009).
 
 --Prashanth
@@ -140,7 +140,7 @@ FW card should be recognized as a 'T1394bus OHCI' device.
 Basic support for multiple cameras was added in the 20130718 nightly
 build (expected to be in release 1.4.15). You can select each camera
 when adding the QCam device in the Hardware Configuration Wizard.
---[Mark Tsuchida](/users/Mark_Tsuchida "wikilink") 18:28, 18 July 2013
+--[Mark Tsuchida](/users/Mark_Tsuchida) 18:28, 18 July 2013
 (PDT)
 
 The Qcam driver works with OS X up to Yosemite as long as you use the 32

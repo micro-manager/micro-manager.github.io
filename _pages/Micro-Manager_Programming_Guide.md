@@ -14,9 +14,9 @@ Updated for release 1.0.37(beta) on July 28, 2006*</span>
 
 Before diving into Programming within Micro-Manager, it is useful to
 review the general [overview of the
-documentation](Overview_of_the_documentation "wikilink") as well as the
+documentation](Overview_of_the_documentation) as well as the
 [overview of the software
-architecture](Micro-Manager_Project_Overview "wikilink").  
+architecture](Micro-Manager_Project_Overview).  
 
 
 <div>
@@ -60,7 +60,7 @@ neutral. But, in practice <span>*MMCore*</span> component is intended to
 run only on Windows, Mac OS X and Linux, and to be used from C++, Java,
 Matlab and Python programs. Setting up the environment is somewhat
 different for each language/OS combination.  
-See also: [Search Paths](Search_Paths "wikilink")
+See also: [Search Paths](Search_Paths)
 
 ### Java
 
@@ -106,11 +106,11 @@ from this guide. Java run-time should be version 1.6 or higher (for MM
 version 2, it should be Java 1.8 or higher). Instructions to work with
 several Java IDEs are available:
 
--   [Netbeans](Using_Netbeans "wikilink"), which seems to be the
+-   [Netbeans](Using_Netbeans), which seems to be the
     recommended IDE ([see previous
-    instructions](Writing_plugins_for_Micro-Manager "wikilink"))
--   [Eclipse](Using_Eclipse "wikilink")
-    ([see previous instructions](Writing_plugins_for_Micro-Manager#using-eclipse "wikilink"))
+    instructions](Writing_plugins_for_Micro-Manager))
+-   [Eclipse](Using_Eclipse)
+    ([see previous instructions](Writing_plugins_for_Micro-Manager#using-eclipse))
 
 ### Creating the CMMCore object
 
@@ -776,7 +776,7 @@ text file in containing a list of simple commands to build the desired
 system state: devices, labels, equipment, properties, and
 configurations. The format of this file and other topics related to
 configuring the system are covered in [ Configuration
-Guide](Micro-Manager_Configuration_Guide "wikilink").  
+Guide](Micro-Manager_Configuration_Guide).  
 
 The current system configuration can be saved by the complementary
 saveConfiguration() command. For example you can build-up the system by

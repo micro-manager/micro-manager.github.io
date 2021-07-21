@@ -5,4 +5,4 @@ redirect_from: /wiki/XCite_120PC_&_Exacte
 layout: page
 ---
 
-1.  REDIRECT [XCite120PC Exacte](XCite120PC_Exacte "wikilink")
+1.  REDIRECT [XCite120PC Exacte](XCite120PC_Exacte)

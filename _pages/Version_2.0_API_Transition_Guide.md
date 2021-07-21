@@ -660,7 +660,7 @@ color via its
 [setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
-See [Using\_Builders](Using_Builders "wikilink") for more information.
+See [Using\_Builders](Using_Builders) for more information.
 
 ### setChannelContrast
 
@@ -686,7 +686,7 @@ color via its
 [setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
-See [Using\_Builders](Using_Builders "wikilink") for more information.
+See [Using\_Builders](Using_Builders) for more information.
 
 ### setChannelName
 
@@ -708,7 +708,7 @@ Datastore to use the new summary metadata using the
 [setSummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
-See [Using\_Builders](Using_Builders "wikilink") for more information.
+See [Using\_Builders](Using_Builders) for more information.
 
 ### setContrastBasedOnFrame
 

@@ -5,4 +5,4 @@ redirect_from: /wiki/Moticam
 layout: page
 ---
 
-1.  REDIRECT [MoticCamera](MoticCamera "wikilink")
+1.  REDIRECT [MoticCamera](MoticCamera)

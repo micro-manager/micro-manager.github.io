@@ -85,7 +85,7 @@ PVCAM](http://www.princetoninstruments.com/support/software.aspx)
 </tr>
 </table>
 
-See also: [PICAM](PICAM "wikilink") for recent Princeton Instruments
+See also: [PICAM](PICAM) for recent Princeton Instruments
 cameras on 64-bit Windows
 
 ## Installation

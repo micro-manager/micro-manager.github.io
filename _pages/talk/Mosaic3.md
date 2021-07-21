@@ -9,7 +9,7 @@ layout: page
 
 ### Setup
 
-[P.nanda](/users/P.nanda "wikilink")
+[P.nanda](/users/P.nanda)
 07:22, 23 May 2014 (PDT)
 
 <table>
@@ -69,7 +69,7 @@ Test System Setup
 
 ### Scripting
 
-Ran [Arthur's mask projection script](Mosaic3#scripting "wikilink")
+Ran [Arthur's mask projection script](Mosaic3#scripting)
 verbatim to project a drawn image without doing any calibration - works
 OK.
 
@@ -83,7 +83,7 @@ OK.
 | {% include key key="Off" %}                    | {% include key key="Reset" %} under Settings tab | {% include key key="Activate Black" %}                                               |
 | {% include key key="Show Center Spot" %}       | \-                                             | {% include key key="Activate Test Mask" %} + {% include key key="Pulse Latest Mask" %} |
 | {% include key key="All Pixels" %}             | \-                                             | {% include key key="Activate White" %} + {% include key key="Pulse Latest Mask" %}     |
-| (use [script](Mosaic3#scripting "wikilink")) | {% include key key="Test Mask" %}                | {% include key key="Activate Test Mask" %}                                           |
+| (use [script](Mosaic3#scripting)) | {% include key key="Test Mask" %}                | {% include key key="Activate Test Mask" %}                                           |
 | \-                                           | {% include key key="White Mask" %}               | {% include key key="Activate White" %}                                               |
 | \-                                           | \-                                             | {% include key key="Activate Latest Mask" %}                                         |
 
@@ -96,7 +96,7 @@ circle ROI and the size and shape cannot be customized.
 
 #### ROIs tab
 
-[P.nanda](/users/P.nanda "wikilink")
+[P.nanda](/users/P.nanda)
 11:17, 27 May 2014 (PDT)
 
 ##### ROI Manager
@@ -127,7 +127,7 @@ circle ROI and the size and shape cannot be customized.
         -   Other models need a mask slide placed at the Mosaic epi port
             mouth and focused with e.g. the Mosaic flashlight.
     -   Adjust the DMD lens focus. Using [Arthur's mask projection
-        script](Mosaic3#scripting "wikilink") is especially helpful
+        script](Mosaic3#scripting) is especially helpful
         here, with a quadrant mask image (Figure D).
 
 ![(A, B) Using {% include key key="All Pixels" %} and

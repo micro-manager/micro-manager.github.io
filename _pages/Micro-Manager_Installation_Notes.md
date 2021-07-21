@@ -61,7 +61,7 @@ Or, you can right click on the installer and select "Unblock".
 
 Double click the file Micro-Manager1.x.x that you just downloaded (see
 [Download Micro-Manager Latest
-Release](Download_Micro-Manager_Latest_Release "wikilink")). This will
+Release](Download_Micro-Manager_Latest_Release)). This will
 open a drive called 'Micro-Manager'. The drive is on the desktop and in
 every Finder Window. Open the drive (by double-clicking). In the drive
 there is a folder called Micro-Manager1.x. You can install the
@@ -118,9 +118,9 @@ Ubuntu, Fedora, Gentoo). However, no pre-compiled version is provided,
 and you need to compile and install it from source. See:
 
 -   [Linux installation from source
-    (Ubuntu)](Linux_installation_from_source_(Ubuntu) "wikilink")
+    (Ubuntu)](Linux_installation_from_source_(Ubuntu))
 -   [Linux installation from source
-    (Gentoo)](Linux_installation_from_source_(Gentoo) "wikilink")
+    (Gentoo)](Linux_installation_from_source_(Gentoo))
 
 ## If you already use ImageJ
 

@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Communication tools useful for Device Adapter
-    Developers](Communication_tools_useful_for_Device_Adapter_Developers "wikilink")
+    Developers](Communication_tools_useful_for_Device_Adapter_Developers)

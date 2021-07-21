@@ -5,7 +5,7 @@ redirect_from: /wiki/ChuoSeiki_MD5000
 layout: page
 ---
 
-## [ChuoSeiki](ChuoSeiki "wikilink") MD5000
+## [ChuoSeiki](ChuoSeiki) MD5000
 
 <table>
 <tr>
@@ -96,7 +96,7 @@ All (uses virtual serial via USB interface)
 </td>
 <td markdown="1">
 
-1.4.23 20181215 ([Nightly Builds](Nightly_Builds "wikilink"))
+1.4.23 20181215 ([Nightly Builds](Nightly_Builds))
 
 </td>
 </tr>

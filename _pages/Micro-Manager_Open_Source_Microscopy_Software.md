@@ -24,7 +24,7 @@ comprehensive, freely available, imaging solution.**
 </tr>
 </table>
 
-### [Download](Download_Micro-Manager_Latest_Release "wikilink") the most recent version (2.0-gamma) from our website. Also check out our [ ScreenCast](Screencasts "wikilink") for a quick tour on getting started.
+### [Download](Download_Micro-Manager_Latest_Release) the most recent version (2.0-gamma) from our website. Also check out our [ ScreenCast](Screencasts) for a quick tour on getting started.
 
 <table cellspacing=15>
 <tr>
@@ -43,33 +43,33 @@ time-lapses, multi-channel imaging, z-stacks, and combinations thereof.
 (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and
 many peripherals (stages, filter wheels, shutters, etc.) used in
 microscope imaging (check the [list of supported
-hardware](Device_Support "wikilink")).**
+hardware](Device_Support)).**
 
 </td>
 </tr>
 </table>
 
-### [ HOW IS μMANAGER DIFFERENT?](Why_Micro-Manager "wikilink")
+### [ HOW IS μMANAGER DIFFERENT?](Why_Micro-Manager)
 
 You have a choice of many commercial packages available, too many,
 perhaps. Some are produced by microscope or camera manufacturers, others
 by third parties but they all suffer from the same problems: lack of
 flexibility and limited device support...
 
-### [ IS μMANAGER FOR ME?](Who_should_use_Micro-Manager "wikilink")
+### [ IS μMANAGER FOR ME?](Who_should_use_Micro-Manager)
 
 With the help of users world-wide μManager has been developed into a
 professional Microscopy software able to connect to a huge list of [
-devices](Device_Support "wikilink") and effortlessly perform laborious
+devices](Device_Support) and effortlessly perform laborious
 acquisitions.
 
-### [ HARDWARE DEVICE SUPPORT](Device_Support "wikilink")
+### [ HARDWARE DEVICE SUPPORT](Device_Support)
 
 Whether you can use μManager right away or not depends on whether your
 particular hardware is supported. If not, contact us and express your
-desire. [Check the current hardware list.](Device_Support "wikilink")
+desire. [Check the current hardware list.](Device_Support)
 
-### [ EXTENDING μMANAGER](Micro-Manager_Programming_Guide "wikilink")
+### [ EXTENDING μMANAGER](Micro-Manager_Programming_Guide)
 
 Even if you are not interested in writing software code for your
 microscope, the open software architecture of μManager will benefit you.

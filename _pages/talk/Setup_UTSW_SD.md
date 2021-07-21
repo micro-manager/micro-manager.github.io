@@ -5,6 +5,6 @@ redirect_from: /wiki/Talk:Setup_UTSW_SD
 layout: page
 ---
 
-Published with permission in [Setup\_UTSW\_SD](Setup_UTSW_SD "wikilink")
+Published with permission in [Setup\_UTSW\_SD](Setup_UTSW_SD)
 
-[P.nanda](/users/P.nanda "wikilink") 15:23, 2 April 2013 (PDT)
+[P.nanda](/users/P.nanda) 15:23, 2 April 2013 (PDT)

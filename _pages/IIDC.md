@@ -87,7 +87,7 @@ version 1.x
 </table>
 
 This is a new device adapter intended to eventually replace the
-[dc1394](dc1394 "wikilink") device adapter.
+[dc1394](dc1394) device adapter.
 
 ## How to configure
 

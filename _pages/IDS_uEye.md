@@ -99,7 +99,7 @@ EO-xxxxM/C USB with IDS hardware
 </td>
 <td markdown="1">
 
-[MMConfig_uEye.cfg](media/MMConfig_uEye.cfg "wikilink")
+[MMConfig_uEye.cfg](media/MMConfig_uEye.cfg)
 
 </td>
 </tr>

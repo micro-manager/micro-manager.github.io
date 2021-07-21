@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Version 2.0 API Transition
-    Guide](Version_2.0_API_Transition_Guide "wikilink")
+    Guide](Version_2.0_API_Transition_Guide)

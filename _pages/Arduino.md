@@ -60,7 +60,7 @@ connection of a DA chip and requires constructions of a
 
 ![Figure: Functional pinout set by firmware version
 2](media/Micro-manager_bb.png "fig:Figure: Functional pinout set by firmware version 2")
-([Image source .svg file](:File:media/Micro-manager_bb.svg.Tar.gz "wikilink"))
+([Image source .svg file](:File:media/Micro-manager_bb.svg.Tar.gz))
 
 ## Installation
 
@@ -114,10 +114,10 @@ queries the Arduino every second).
 
 | Name             | Description                                                                                                                                                                                                                                                                              |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arduino-Switch   | Digital output pattern set across pins 8 to 13. See usage in [Digital IO](#digital-io "wikilink").                                                                                                                                                                                     |
+| Arduino-Switch   | Digital output pattern set across pins 8 to 13. See usage in [Digital IO](#digital-io).                                                                                                                                                                                     |
 | Arduino-Shutter  | Toggles the digital outputs pattern across pins 8 to 13. Set all pins off when the shutter is closed, and restores the value set in `Switch-State` when the shutter is opened.                                                                                                           |
 | Arduino-Input    | Reports, both, the digital and analog (0-1023) state of the analog input pins 0 to 5.                                                                                                                                                                                                    |
-| Arduino-DAC{1,2} | (Not usually used) Reserved for TLV5618 AOTF Peripheral. TLV5618 is a chip acting as a DAC (digital-to-analog converter) that can be added as a shield to the Arduino. This way, the Arduino can be used to control analog devices such as AOTF or stages. See [DAC](#dac "wikilink"). |
+| Arduino-DAC{1,2} | (Not usually used) Reserved for TLV5618 AOTF Peripheral. TLV5618 is a chip acting as a DAC (digital-to-analog converter) that can be added as a shield to the Arduino. This way, the Arduino can be used to control analog devices such as AOTF or stages. See [DAC](#dac). |
 
 | Initialization Properties | Description                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -330,13 +330,13 @@ image below). Note that the y scale is arbitrary and the x scale is ms.
 <!-- -->
 
 -   [Detect tube lens
-    position](Encoding_the_Nikon_TI_Eclipse_tube_lens "wikilink") of
+    position](Encoding_the_Nikon_TI_Eclipse_tube_lens) of
     Nikon Ti Eclipse
 
 <!-- -->
 
 -   [ Control laser shutter with
-    Arduino](Control_laser_shutters_with_Arduino "wikilink") by Rocco
+    Arduino](Control_laser_shutters_with_Arduino) by Rocco
     D'Antuono.
 
 <!-- -->

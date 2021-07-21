@@ -49,16 +49,16 @@ In most cases the ALC will work "out of the box".
 
 But if you're setting up a brand new computer, continue on to
 [Configure ALC\_SDK
-dependencies](#configure-alc_sdk-dependencies "wikilink"), and for
+dependencies](#configure-alc_sdk-dependencies), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the
 [Library installation for MM 1.4.15 and
-earlier](#library-installation-for-mm-1415-and-earlier "wikilink").
+earlier](#library-installation-for-mm-1415-and-earlier).
 
 ## Hardware-based Synchronization
 
-[ESIOImagingControllers](ESIOImagingControllers "wikilink") can be used
+[ESIOImagingControllers](ESIOImagingControllers) can be used
 with an ESio adapter cable for the ALC to run [hardware-based
-synchronization](hardware-based_synchronization "wikilink"). The ALC
+synchronization](hardware-based_synchronization). The ALC
 lacks the onboard programming to allow the camera TTL synchronization
 used by the Micro-Manager architecture, thus another supported
 triggering device is needed.
@@ -119,7 +119,7 @@ of `0.0` since a fast AOTF gates the laser output.
 | Description | Micro-Manager hangs during acquisition.                                                                 |
 |-------------|---------------------------------------------------------------------------------------------------------|
 | Cause       | Windows Vista and newer enable USB power saving, even in the "High Performance" power plan, by default. |
-| Fix         | [Disable Windows "USB selective suspend setting"](Personal_computer_setup#power-options "wikilink").    |
+| Fix         | [Disable Windows "USB selective suspend setting"](Personal_computer_setup#power-options).    |
 
 ### Hang due to incorrect Prolific USB-Serial driver
 
@@ -166,7 +166,7 @@ link](http://www.andor.com/contact_us/support_request/documentation/default.aspx
 
 This driver is not actively maintained by the Andor software team. For
 feature requests or bug reports, please liaison with µManager developers
-on [the mailing list](Micro-Manager_Community "wikilink") and Pariksheet
+on [the mailing list](Micro-Manager_Community) and Pariksheet
 Nanda.
 
 ## Appendix
@@ -202,7 +202,7 @@ Nanda.
 
 -   Unzip the `ALC_SDK Libraries` to a new folder and [add it to the
     Windows
-    PATH](Personal_computer_setup#add-device-libraries-to-windows-path "wikilink"):
+    PATH](Personal_computer_setup#add-device-libraries-to-windows-path):
 
 ```
          C:\ProgramData\Andor_ALC_library\
@@ -211,7 +211,7 @@ Nanda.
 -   If you already have control of your ALC in another software, your
     ALC\_SDK installation is complete because all the Windows device
     drivers would be installed. Otherwise continue on to [Configure
-    ALC\_SDK dependencies](#configure-alc_sdk-dependencies "wikilink").
+    ALC\_SDK dependencies](#configure-alc_sdk-dependencies).
 
 ### Configure ALC\_SDK dependencies
 
@@ -228,7 +228,7 @@ Install them from:
 
 | OS version | DeVaSys                                                                                                   | Prolific                                                                         | Measurement Computing                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| 32-bit     | [UsbI2cIo 5.00 (32-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x86.msi) | [Prolific 2.0.13.130](:File:media/PL2303_DriverInstaller_v1413_20110219.gz "wikilink") | [InstaCal 6.10](ftp://ftp.mccdaq.com/Archive/InstaCal/Archive_6.10/icalsetup.exe) |
+| 32-bit     | [UsbI2cIo 5.00 (32-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x86.msi) | [Prolific 2.0.13.130](:File:media/PL2303_DriverInstaller_v1413_20110219.gz) | [InstaCal 6.10](ftp://ftp.mccdaq.com/Archive/InstaCal/Archive_6.10/icalsetup.exe) |
 | 64-bit     | [UsbI2cIo 5.00 (64-bit)](http://devasys.net/support/current/usbi2cio/software/UsbI2cIoDrivers0500x64.msi) |                                                                                  |                                                                                   |
 
 -   The devices will be detected in the Device Manager as:

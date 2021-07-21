@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT
-    [Measuring\_camera\_specifications](Measuring_camera_specifications "wikilink")
+    [Measuring\_camera\_specifications](Measuring_camera_specifications)

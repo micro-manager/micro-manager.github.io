@@ -5,4 +5,4 @@ redirect_from: /wiki/Princeton_Instruments
 layout: page
 ---
 
-1.  REDIRECT [PrincetonInstruments](PrincetonInstruments "wikilink")
+1.  REDIRECT [PrincetonInstruments](PrincetonInstruments)

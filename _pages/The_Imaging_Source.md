@@ -5,4 +5,4 @@ redirect_from: /wiki/The_Imaging_Source
 layout: page
 ---
 
-1.  REDIRECT [TISCam](TISCam "wikilink")
+1.  REDIRECT [TISCam](TISCam)

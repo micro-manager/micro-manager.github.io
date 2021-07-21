@@ -5,4 +5,4 @@ redirect_from: /wiki/DiConIlluminator
 layout: page
 ---
 
-1.  REDIRECT [ScopeLED](ScopeLED "wikilink")
+1.  REDIRECT [ScopeLED](ScopeLED)

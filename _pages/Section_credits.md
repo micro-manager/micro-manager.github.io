@@ -5,4 +5,4 @@ redirect_from: /wiki/Section_credits
 layout: page
 ---
 
-1.  REDIRECT [Credits](Credits "wikilink")
+1.  REDIRECT [Credits](Credits)

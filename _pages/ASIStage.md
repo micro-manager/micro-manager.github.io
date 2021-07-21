@@ -87,7 +87,7 @@ None
 </table>
 
 NB: there is a separate device adapter for modular TG1000 "Tiger"
-controllers [ASITiger](ASITiger "wikilink").
+controllers [ASITiger](ASITiger).
 
 Controls ASI's stage controllers such as the MS2000
 [1](http://www.asiimaging.com/products/controllers/ms-2000-wk-multi-axis-stage-controller/),
@@ -109,7 +109,7 @@ pre-initialization property 'Axis' that can be set to either "Z" or "F"
 
 The piezo Z stage can be set up to receive trigger signals from many
 cameras (see documentation on Micro-Manager's
-[Hardware-based\_synchronization](Hardware-based_synchronization "wikilink")
+[Hardware-based\_synchronization](Hardware-based_synchronization)
 feature). A BNC cable is connected from the camera's TTL output to the
 MS2000 controller's piezo trigger input. By synchronizing Z slices with
 camera exposures, you can acquire very fast Z stacks. Most ASI firmware

@@ -77,7 +77,7 @@ layout: page
 ## Experience gained
 
 -   Should not use &gt; 4GB circular buffer for
-    [AndorSDK3](AndorSDK3 "wikilink") camera with MM version 1.4.13
+    [AndorSDK3](AndorSDK3) camera with MM version 1.4.13
     (issue fixed in nightly build).
 -   During setup, it's useful to occasionally backup the configuration
     file with `Tools > Save Configuration Settings as`.

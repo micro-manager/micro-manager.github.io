@@ -146,7 +146,7 @@ Acquisition, set the "Focus Method" to "Apply".
 
 An MCU 28 controller connected to the microscope stand cannot currently
 be controlled by the ZeissCAN29 device adapter. See the
-[ZeissCAN](ZeissCAN "wikilink") adapter for controlling an MCU 28 that
+[ZeissCAN](ZeissCAN) adapter for controlling an MCU 28 that
 is directly connected to the computer using a serial cable (only XY
 stage is supported).
 

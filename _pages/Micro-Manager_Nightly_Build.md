@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Micro-Manager Nightly
-    Builds](Micro-Manager_Nightly_Builds "wikilink")
+    Builds](Micro-Manager_Nightly_Builds)

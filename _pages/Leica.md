@@ -5,4 +5,4 @@ redirect_from: /wiki/Leica
 layout: page
 ---
 
-1.  REDIRECT [BaumerOptronic](BaumerOptronic "wikilink")
+1.  REDIRECT [BaumerOptronic](BaumerOptronic)

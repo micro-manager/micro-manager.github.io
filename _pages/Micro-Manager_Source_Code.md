@@ -22,9 +22,9 @@ includes all Micro-Manager files (Java and C++) and all supporting files
 (project files, build scripts, etc.). However, to build the entire
 project a number of Open Source libraries and device SDKs must be
 installed. Instructions for building Micro-Manager are available for
-[Mac](Full_Build_on_MacOS_X_Leopard "wikilink"),
-[Windows](Building_MM_on_Windows "wikilink"), and
-[Linux](Linux_installation_from_source_(Ubuntu) "wikilink").
+[Mac](Full_Build_on_MacOS_X_Leopard),
+[Windows](Building_MM_on_Windows), and
+[Linux](Linux_installation_from_source_(Ubuntu)).
 
 ## Note about the source code licensing terms
 
@@ -100,9 +100,9 @@ svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic
 More information on how to build Micro-Manager can be found here:
 
 -   [Building Micro-Manager Device
-    Adapters](Building_Micro-Manager_Device_Adapters "wikilink")
+    Adapters](Building_Micro-Manager_Device_Adapters)
 -   [Building and debugging Micro-Manager source
-    code](Building_and_debugging_Micro-Manager_source_code "wikilink")
+    code](Building_and_debugging_Micro-Manager_source_code)
 
 ## Source code for previous releases
 

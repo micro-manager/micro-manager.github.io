@@ -65,7 +65,7 @@ Now you have
 and
 [acq](http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/AcquisitionEngine.html)
 objects that you can control from Matlab, very similar to how you would
-in [Beanshell scripts](Example_Beanshell_scripts "wikilink").
+in [Beanshell scripts](Example_Beanshell_scripts).
 
 On Mac OS X, current versions of Matlab have a bug that causes
 Micro-Manager to fail on startup. To work around this bug, issue the

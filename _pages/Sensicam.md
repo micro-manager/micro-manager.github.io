@@ -83,7 +83,7 @@ This adapter was developed for the original Sensicam camera (but might
 work with the QE as well). You will need to have the [Sensicam
 driver](http://www.pco.de/drivers/sensicam-qe/) to be installed.
 
---[Nico](/users/Nico "wikilink") 11:52, 3 September 2007 (PDT)
+--[Nico](/users/Nico) 11:52, 3 September 2007 (PDT)
 
 {% include Listserv_Search text="Sensicam" %}
 

@@ -72,7 +72,7 @@ controlled via the device/property browser:
 For support on using the Omicron Laser Controller device adaptor please
 contact: mail@omicron-laser.de
 
-[Jan-Erik Herche](/users/Jan-Erik_Herche "wikilink") 02:07, 15 February
+[Jan-Erik Herche](/users/Jan-Erik_Herche) 02:07, 15 February
 2012 (PST)
 
 ## Cobolt Laser Controller
@@ -109,5 +109,5 @@ command!" %}
 For support on using the Cobol device adaptor please contact:
 mail@omicron-laser.de
 
-[Jan-Erik Herche](/users/Jan-Erik_Herche "wikilink") 04:43, 27 Octobre
+[Jan-Erik Herche](/users/Jan-Erik_Herche) 04:43, 27 Octobre
 2014 (PST)

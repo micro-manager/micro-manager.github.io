@@ -51,7 +51,7 @@ Open (instead of simply double-clicking) the first time you open it.  See
 [Installation Notes](Micro-Manager_Installation_Notes)." %}
 
   - Under GNU/Linux platforms, you will need to [compile micro-manager from
-    source](Linux_installation_from_source_(Ubuntu) "wikilink").
+    source](Linux_installation_from_source_(Ubuntu)).
 
 ### Partial list of differences with 1.4
 
@@ -112,11 +112,11 @@ requirements.
 time, try ctrl-click or right click, then select "Open".)
 
   - Under GNU/Linux platforms, you should [compile micro-manager from
-    source](Linux_installation_from_source_(Ubuntu) "wikilink").
+    source](Linux_installation_from_source_(Ubuntu)).
 
 ## Micro-Manager 1.4.22 (August 14, 2015)
 
-Read the [Known Issues](#known-issues-in-1422 "wikilink").
+Read the [Known Issues](#known-issues-in-1422).
 
 -   [Windows
     32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe),
@@ -139,7 +139,7 @@ double-clicked for the first time, try ctrl-click or right click, then
 select "Open".)
 
 -   Under GNU/Linux platforms, you should [compile micro-manager from
-    source](Linux_installation_from_source_(Ubuntu) "wikilink").
+    source](Linux_installation_from_source_(Ubuntu)).
 
 ### Known issues in 1.4.22
 
@@ -299,4 +299,4 @@ select "Open".)
     -   Added a MATLAB script, `StartMMStudio.m` that configures and
         starts MMStudio (Windows only) (Mark Tsuchida)
 
-[(Previous releases)](Micro-Manager_Version_Archive "wikilink")
+[(Previous releases)](Micro-Manager_Version_Archive)

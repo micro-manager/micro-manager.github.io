@@ -5,4 +5,4 @@ redirect_from: /wiki/Projector
 layout: page
 ---
 
-1.  REDIRECT [Projector Plugin](Projector_Plugin "wikilink")
+1.  REDIRECT [Projector Plugin](Projector_Plugin)

@@ -77,7 +77,7 @@ Mac/Linux/Windows
 </td>
 <td markdown="1">
 
-[MMConfig_K8061.cfg](media/MMConfig_K8061.cfg "wikilink")
+[MMConfig_K8061.cfg](media/MMConfig_K8061.cfg)
 
 </td>
 </tr>
@@ -126,5 +126,5 @@ Driver](http://valelab.ucsf.edu/~MM/drivers/K8061Driver.zip) folder.
 
 Also see Austin Blanco's [blog](http://austinblanco.com/blog/?p=209).
 
---[Nico](/users/Nico "wikilink") 18:21, 2 March 2008 (PST)
+--[Nico](/users/Nico) 18:21, 2 March 2008 (PST)
 

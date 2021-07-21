@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Building and debugging Micro-Manager source
-    code](Building_and_debugging_Micro-Manager_source_code "wikilink")
+    code](Building_and_debugging_Micro-Manager_source_code)

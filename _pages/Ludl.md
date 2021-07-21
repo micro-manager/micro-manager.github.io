@@ -135,7 +135,7 @@ figure it out, open the file "Corelog.txt" in your Micro-Manager
 directory. It contains some output from the Ludl controller that you can
 use to deduce the drive letter.
 
---[Nico](/users/Nico "wikilink") 13:43, 25 August 2007 (PDT)
+--[Nico](/users/Nico) 13:43, 25 August 2007 (PDT)
 
 If using an actual serial cable, ensure that the cable is of the ["null
 modem"](http://en.wikipedia.org/wiki/Null_modem) type.

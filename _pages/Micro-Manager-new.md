@@ -15,11 +15,11 @@ time-lapses, multi-channel imaging, z-stacks, and combinations thereof.
 (Leica, Nikon, Olympus and Zeiss), most scientific-grade cameras and
 many peripherals (stages, filter wheels, shutters, etc.) used in
 microscope imaging (check the [list of supported
-hardware](Device_Support "wikilink")). Since μManager runs as a plugin
+hardware](Device_Support)). Since μManager runs as a plugin
 to [ImageJ](http://rsb.info.nih.gov/ij/), image analysis routines are
 available within the application. μManager software is available for
 multiple platforms (Windows, Mac, and Linux) and is free.
-[Download](Download_Micro-Manager_Latest_Release "wikilink") the most
+[Download](Download_Micro-Manager_Latest_Release) the most
 recent version (1.4) from our website.
 
 ### ANOTHER MICROSCOPY SOFTWARE PACKAGE? WHY?

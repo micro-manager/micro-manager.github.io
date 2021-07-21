@@ -53,7 +53,7 @@ found [here](http://www.sutter.com/SOFTWARE/imaging.html))
 only works with an empty wheel). If speed `#1` does not work you can try
 the slowest (speed `#7` IIRC). Best practice is to [set the desired
 wheel speed during
-startup](Micro-Manager_Configuration_Guide#startup-presets "wikilink"),
+startup](Micro-Manager_Configuration_Guide#startup-presets),
 i.e. in your `Startup` Preset of the `System` Group.
 
 ### Lambda SC
@@ -78,7 +78,7 @@ See the Operation Manual (available at <http://www.sutter.com/>) section
 ### Note
 
 Newer devices from Sutter are supported in the
-[SutterLambda2](SutterLambda2 "wikilink") adapter. If you would like to
+[SutterLambda2](SutterLambda2) adapter. If you would like to
 add support for a Sutter device that is currently unsupported please add
 your code to the newer adapter.
 

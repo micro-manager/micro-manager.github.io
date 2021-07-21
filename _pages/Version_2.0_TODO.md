@@ -6,7 +6,7 @@ layout: page
 ---
 
 TODO list for 2.0. These are considered release blockers, unlike the
-items in the [Version\_2.0\_Wishlist](Version_2.0_Wishlist "wikilink").
+items in the [Version\_2.0\_Wishlist](Version_2.0_Wishlist).
 
 #### Data API
 

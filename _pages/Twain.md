@@ -5,4 +5,4 @@ redirect_from: /wiki/Twain
 layout: page
 ---
 
-1.  REDIRECT [TwainCamera](TwainCamera "wikilink")
+1.  REDIRECT [TwainCamera](TwainCamera)

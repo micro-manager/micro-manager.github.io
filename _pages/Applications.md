@@ -8,5 +8,5 @@ layout: page
 Micro-Manager enables specialized microscopy applications. Here, you
 will find documentation about such applications:
 
--   [Camera Measurements](Measuring_camera_specifications "wikilink")
+-   [Camera Measurements](Measuring_camera_specifications)
 

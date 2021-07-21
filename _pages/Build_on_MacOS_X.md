@@ -51,7 +51,7 @@ or using Homebrew (Python 2 is also preinstalled in OS X).
 ## Getting Micro-Manager source code
 
 Check out [Micro-Manager Source
-Code](Micro-Manager_Source_Code "wikilink") using Subversion. Place the
+Code](Micro-Manager_Source_Code) using Subversion. Place the
 main source tree (from micromanager2) and the 3rdpartypublic directory
 in the same parent directory.
 

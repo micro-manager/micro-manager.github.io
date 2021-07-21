@@ -78,7 +78,7 @@ XYStage, PiezoZStage, FilterWheel
 </td>
 <td markdown="1">
 
-[MMConfig_Thorlabs.cfg](media/MMConfig_Thorlabs.cfg "wikilink")
+[MMConfig_Thorlabs.cfg](media/MMConfig_Thorlabs.cfg)
 
 </td>
 </tr>
@@ -220,7 +220,7 @@ more information.
 
 For verification and testing of the stage we can load test configuration
 file
-[MMConfig_Thorlabs.cfg](media/MMConfig_Thorlabs.cfg "wikilink").
+[MMConfig_Thorlabs.cfg](media/MMConfig_Thorlabs.cfg).
 This configuration file contains XYStage tied to the com port and a
 couple of device simulators (demo adapters) acting as demo camera and
 focus stage. The configuration probably won't work right away because

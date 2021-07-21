@@ -7,7 +7,7 @@ section: Learn:Version 2.0
 ---
 
 This page provides an overview of how to write new plugins in
-[Version\_2.0](Version_2.0 "wikilink"). While the basic concepts are
+[Version\_2.0](Version_2.0). While the basic concepts are
 similar to how they worked in previous versions, important details have
 changed.
 
@@ -211,7 +211,7 @@ which draws overlays on the currently-displayed image.
 
 [QuickAccessPlugin](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/quickaccess/QuickAccessPlugin.html)
 plugins create tools that can be embedded into the [Quick Access
-Panel](Version_2.0_Users_Guide#quick-access-panel "wikilink"). They
+Panel](Version_2.0_Users_Guide#quick-access-panel). They
 allow easy access to custom controls, so if your plugin has some simple
 controls that you want users to always be able to access (and that don't
 warrant a more fully-fledged GUI), you can use a QuickAccessPlugin to

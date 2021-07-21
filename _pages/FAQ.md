@@ -5,4 +5,4 @@ redirect_from: /wiki/FAQ
 layout: page
 ---
 
-1.  REDIRECT [Micro-Manager FAQ](Micro-Manager_FAQ "wikilink")
+1.  REDIRECT [Micro-Manager FAQ](Micro-Manager_FAQ)

@@ -78,7 +78,7 @@ series cameras, with USB interface and eBUS drivers
 </td>
 <td markdown="1">
 
-[Contact](#contact "wikilink")
+[Contact](#contact)
 
 </td>
 </tr>

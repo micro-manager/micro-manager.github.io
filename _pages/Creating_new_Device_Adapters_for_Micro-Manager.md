@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [(Windows) tools useful for Device Adapter
-    Developers]((Windows)_tools_useful_for_Device_Adapter_Developers "wikilink")
+    Developers]((Windows)_tools_useful_for_Device_Adapter_Developers)

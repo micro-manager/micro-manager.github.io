@@ -5,4 +5,4 @@ redirect_from: /wiki/OlympusIX81%2FBX61
 layout: page
 ---
 
-1.  REDIRECT [Olympus](Olympus "wikilink")
+1.  REDIRECT [Olympus](Olympus)

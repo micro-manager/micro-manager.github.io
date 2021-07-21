@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT
-    [Micro-Manager\_Project\_Overview](Micro-Manager_Project_Overview "wikilink")
+    [Micro-Manager\_Project\_Overview](Micro-Manager_Project_Overview)

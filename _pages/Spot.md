@@ -5,4 +5,4 @@ redirect_from: /wiki/Spot
 layout: page
 ---
 
-1.  REDIRECT [SpotCamera](SpotCamera "wikilink")
+1.  REDIRECT [SpotCamera](SpotCamera)

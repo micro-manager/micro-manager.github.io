@@ -88,6 +88,6 @@ Should work on all platforms (serial interface)
 </tr>
 </table>
 
-See also: [MarzhauserLStep](MarzhauserLStep "wikilink") for newer L-Step
+See also: [MarzhauserLStep](MarzhauserLStep) for newer L-Step
 controllers.
 

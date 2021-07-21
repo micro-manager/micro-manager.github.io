@@ -78,6 +78,6 @@ Windows
 </table>
 
 This adapter has been depreciated in Micro-Manager version 1.1. Use the
-[ Zeiss CAN](ZeissCAN "wikilink") adapter instead.
+[ Zeiss CAN](ZeissCAN) adapter instead.
 
---[Nico](/users/Nico "wikilink") 17:29, 8 September 2007 (PDT)
+--[Nico](/users/Nico) 17:29, 8 September 2007 (PDT)

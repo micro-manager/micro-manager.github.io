@@ -6,4 +6,4 @@ layout: page
 ---
 
 1.  REDIRECT [Hardware-based Synchronization in
-    Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager "wikilink")
+    Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager)

@@ -44,7 +44,7 @@ Nico Stuurman</p></td>
 ------------------------------------------------------------------------
 
 The Arduino32bitBoards device adapter contains extra features compared
-to the regular [Arduino](Arduino "wikilink") device adapter.
+to the regular [Arduino](Arduino) device adapter.
 
 Currently the Teensy 3.5 is the recommended board to be used with this
 device adapter, bur there is also firmware available for the teensy 3.2,

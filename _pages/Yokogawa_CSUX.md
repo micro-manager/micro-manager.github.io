@@ -131,7 +131,7 @@ scan-head).
 
 If you experience a very uneven field of illumination in the CSUX,
 please check out
-[CSU-X\_fiber\_rotation](CSU-X_fiber_rotation "wikilink") page.
+[CSU-X\_fiber\_rotation](CSU-X_fiber_rotation) page.
 
 The CSU-X1 requires a null modem cable.
 

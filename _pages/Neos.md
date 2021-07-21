@@ -64,7 +64,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[MMConfig_AOTF.cfg](media/MMConfig_AOTF.cfg "wikilink")
+[MMConfig_AOTF.cfg](media/MMConfig_AOTF.cfg)
 
 </td>
 </tr>
@@ -75,7 +75,7 @@ other shutter devices that can be controlled with a TTL) as a shutter
 using just your PCs parallel port. The pins on the parallel port are
 addressed using a binary mask with a maximum value of 1024 (so that you
 can address the first 10 pins of the parallel port, see the
-[ParallelPort](ParallelPort "wikilink") for examples). Each pin (or a
+[ParallelPort](ParallelPort) for examples). Each pin (or a
 combination thereof) can be declared to be a shutter.
 
 In general, it is a better approach to use a DAQ board to control an
@@ -87,6 +87,6 @@ This adapter uses the
 [inpout.dll](http://www.logix4u.net/inpout32.htm)to talk to the parallel
 port.
 
---[Nico](/users/Nico "wikilink") 15:34, 15 August 2007 (PDT)
+--[Nico](/users/Nico) 15:34, 15 August 2007 (PDT)
 
 {% include ParallelPort_Warning text="" %}

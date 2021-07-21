@@ -217,7 +217,7 @@ When set, rotates image. Allowable values are 0 and 1.
 <!-- -->
 
 -   This driver is Windows only. To use Canon and Nikon cameras on MacOS
-    X and Linux systems see [GPhoto](GPhoto "wikilink").
+    X and Linux systems see [GPhoto](GPhoto).
 
 {% include Listserv_Search text="TetheredCam" %}
 

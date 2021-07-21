@@ -9,7 +9,7 @@ The following instructions for debugging Micro-Manager's Java code with
 IntelliJ are intended to work on Windows or Mac. Updated for 2.0-gamma
 
 (See also: [Writing plugins for
-Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink"))
+Micro-Manager](Writing_plugins_for_Micro-Manager))
 
 1.  Download and install a recent Micro-Manager nightly build. We will
     refer to the installed Micro-Manager directory as `$INSTALLDIR`

@@ -17,7 +17,7 @@ layout: page
 ------------------------------------------------------------------------
 
 (See also: the [Mightex Polygon
-Plugin](Mightex_Polygon_Plugin "wikilink").)
+Plugin](Mightex_Polygon_Plugin).)
 
 (Documentation to be written.)
 

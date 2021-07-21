@@ -7,9 +7,9 @@ section: Extend
 ---
 
 -   [Matlab and the Micro-Manager
-    core](Matlab_Configuration "wikilink") - Setting up Matlab to
+    core](Matlab_Configuration) - Setting up Matlab to
     control hardware through the Micro-Manager core.
 -   [Matlab and the Micro-Manager
-    GUI](Matlab_and_the_Micro-Manager_GUI "wikilink") - Controlling the
+    GUI](Matlab_and_the_Micro-Manager_GUI) - Controlling the
     Micro-Manager graphical user interface with Matlab.
 

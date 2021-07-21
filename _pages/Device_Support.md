@@ -19,427 +19,427 @@ that the authors of the device adapters will maintain this information,
 but please feel free to update the information here with your own
 experiences. The information here will refer to the [most recent
 Micro-Manager
-release](Download_Micro-Manager_Latest_Release "wikilink").
+release](Download_Micro-Manager_Latest_Release).
 
 ## Motorized Microscopes
 
--   [LeicaDMI](LeicaDMI "wikilink") - Leica DMI and DM microscopes
--   [LeicaDMR](LeicaDMR "wikilink") - Leica DMR microscopes (and DMIRBE)
--   [MoticMicroscope](MoticMicroscope "wikilink") - Motic BA600
+-   [LeicaDMI](LeicaDMI) - Leica DMI and DM microscopes
+-   [LeicaDMR](LeicaDMR) - Leica DMR microscopes (and DMIRBE)
+-   [MoticMicroscope](MoticMicroscope) - Motic BA600
     microscopes
--   [NikonAZ100](NikonAZ100 "wikilink") - Nikon AZ100 Zoom microscope
--   [NikonEclipse90i](NikonEclipse90i "wikilink") - Nikon Eclipse 90i
+-   [NikonAZ100](NikonAZ100) - Nikon AZ100 Zoom microscope
+-   [NikonEclipse90i](NikonEclipse90i) - Nikon Eclipse 90i
     motorized microscope
--   [NikonTE2000](NikonTE2000 "wikilink") - Nikon TE2000 motorized
+-   [NikonTE2000](NikonTE2000) - Nikon TE2000 motorized
     microscope
--   [NikonTI](NikonTI "wikilink") - Nikon Ti microscope
--   [NikonTi2](NikonTi2 "wikilink") - Nikon Ti2 microscope
--   [Olympus](Olympus "wikilink") - Olympus IX81 (Inverted)/BX61
+-   [NikonTI](NikonTI) - Nikon Ti microscope
+-   [NikonTi2](NikonTi2) - Nikon Ti2 microscope
+-   [Olympus](Olympus) - Olympus IX81 (Inverted)/BX61
     (Upright)
--   [OlympusIX83](OlympusIX83 "wikilink") - Olympus IX83 motorized
+-   [OlympusIX83](OlympusIX83) - Olympus IX83 motorized
     microscope
--   [ZeissCAN](ZeissCAN "wikilink") - Zeiss CAN-bus (not CAN29)
+-   [ZeissCAN](ZeissCAN) - Zeiss CAN-bus (not CAN29)
     compatible microscopes (Axiovert 200m, Axioplan2)
--   [ZeissCAN29](ZeissCAN29 "wikilink") - Zeiss CAN29-bus compatible
+-   [ZeissCAN29](ZeissCAN29) - Zeiss CAN29-bus compatible
     microscopes (AxioObserver)
--   [ZeissAxioZoom](ZeissAxioZoom "wikilink") - Zeiss AxioZoom
+-   [ZeissAxioZoom](ZeissAxioZoom) - Zeiss AxioZoom
     microscope (CAN29)
 
 ## Cameras
 
--   [ABSCamera](ABSCamera "wikilink") - Cameras from ABS Gesellschaft
+-   [ABSCamera](ABSCamera) - Cameras from ABS Gesellschaft
     für Automatisierung, Bildverarbeitung, Software GmbH Jena
--   [AmScope](AmScope "wikilink") - AmScope MU series cameras (Windows)
--   [Andor](Andor "wikilink") - Andor cameras (CCD and EMCCD)
--   [AndorSDK3](AndorSDK3 "wikilink") - New model Andor cameras (sCMOS)
--   [Apogee](Apogee "wikilink") - Apogee cameras
--   [AxioCam](AxioCam "wikilink") - Zeiss AxioCam medium resolution and
+-   [AmScope](AmScope) - AmScope MU series cameras (Windows)
+-   [Andor](Andor) - Andor cameras (CCD and EMCCD)
+-   [AndorSDK3](AndorSDK3) - New model Andor cameras (sCMOS)
+-   [Apogee](Apogee) - Apogee cameras
+-   [AxioCam](AxioCam) - Zeiss AxioCam medium resolution and
     high resolution models (Windows)
--   [BaslerAce](BaslerAce "wikilink") - Basler Ace USB Cameras
--   [BaslerCameras](BaslerCameras "wikilink") - All Basler cameras that
+-   [BaslerAce](BaslerAce) - Basler Ace USB Cameras
+-   [BaslerCameras](BaslerCameras) - All Basler cameras that
     are supported by pylon SDK
--   [BaumerOptronic](BaumerOptronic "wikilink") - Leica DFC camera
+-   [BaumerOptronic](BaumerOptronic) - Leica DFC camera
     (through BaumerOptronic FXLib)
--   [BiostepEagleIce](BiostepEagleIce "wikilink") - biostep EagleIce
+-   [BiostepEagleIce](BiostepEagleIce) - biostep EagleIce
     camera
--   [dc1394](dc1394 "wikilink") - Firewire cameras that adhere to the
-    iidc1394 specs (see also [IIDC](IIDC "wikilink"))
--   [DECamera](DECamera "wikilink") - Direct Electron Cameras
--   [DemoCamera](DemoCamera "wikilink") - Virtual, emulated equipment
+-   [dc1394](dc1394) - Firewire cameras that adhere to the
+    iidc1394 specs (see also [IIDC](IIDC))
+-   [DECamera](DECamera) - Direct Electron Cameras
+-   [DemoCamera](DemoCamera) - Virtual, emulated equipment
     for testing
--   [Dhyana](Dhyana "wikilink") - Dhyana/Tucsen cameras
--   [DSLRRemoteCamera](DSLRRemoteCamera "wikilink") - Canon DSLR cameras
+-   [Dhyana](Dhyana) - Dhyana/Tucsen cameras
+-   [DSLRRemoteCamera](DSLRRemoteCamera) - Canon DSLR cameras
     (Windows)
--   [FakeCamera](FakeCamera "wikilink") - Virtual camera that loads
+-   [FakeCamera](FakeCamera) - Virtual camera that loads
     images from disk (Windows, Linux)
--   [FirstLightImagingCamera](FirstLightImagingCamera "wikilink") -
+-   [FirstLightImagingCamera](FirstLightImagingCamera) -
     First Light Imaging Cameras
--   [FLICamera](FLICamera "wikilink") - Finger Lakes Instrumentation
+-   [FLICamera](FLICamera) - Finger Lakes Instrumentation
     Cameras
--   [GigECamera](GigECamera "wikilink") - GigE Vision- and
+-   [GigECamera](GigECamera) - GigE Vision- and
     GenICam-compliant cameras
--   [GPhoto](GPhoto "wikilink") - Canon and Nikon DSLR cameras (Mac,
+-   [GPhoto](GPhoto) - Canon and Nikon DSLR cameras (Mac,
     Linux)
--   [Hamamatsu](Hamamatsu "wikilink") - Legacy adapter for Hamamatsu
+-   [Hamamatsu](Hamamatsu) - Legacy adapter for Hamamatsu
     cameras (via DCAM-API); now Mac only
--   [HamamatsuHam](HamamatsuHam "wikilink") - Hamamatsu cameras (via
+-   [HamamatsuHam](HamamatsuHam) - Hamamatsu cameras (via
     DCAM-API)
--   [IDS\_uEye](IDS_uEye "wikilink") - IDS uEye USB cameras (also
+-   [IDS\_uEye](IDS_uEye) - IDS uEye USB cameras (also
     Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
--   [IIDC](IIDC "wikilink") - Firewire (and USB) cameras compatible with
-    the IIDC specification (see also [dc1394](dc1394 "wikilink"))
--   [JAI](JAI "wikilink") - JAI Cameras (eBUS)
--   [Leica Cameras](BaumerOptronic "wikilink") - These use the
-    [BaumerOptronic](BaumerOptronic "wikilink") adapter
--   [Lumenera](Lumenera "wikilink") - Lumenera cameras
--   [MATRIX VISION devices](MatrixVision "wikilink") - MATRIX VISION
+-   [IIDC](IIDC) - Firewire (and USB) cameras compatible with
+    the IIDC specification (see also [dc1394](dc1394))
+-   [JAI](JAI) - JAI Cameras (eBUS)
+-   [Leica Cameras](BaumerOptronic) - These use the
+    [BaumerOptronic](BaumerOptronic) adapter
+-   [Lumenera](Lumenera) - Lumenera cameras
+-   [MATRIX VISION devices](MatrixVision) - MATRIX VISION
     GmbH USB3 Vision, GigE Vision and USB2 cameras as well as various
     frame grabber boards
--   [Micropix](Micropix "wikilink") - Cameras from Micropix
--   [Mightex\_C\_Cam](Mightex_C_Cam "wikilink") - Mightex C-series USB
+-   [Micropix](Micropix) - Cameras from Micropix
+-   [Mightex\_C\_Cam](Mightex_C_Cam) - Mightex C-series USB
     cameras
--   [MoticCamera](MoticCamera "wikilink") - Motic cameras
--   [NKRemoteCamera](NKRemoteCamera "wikilink") - Nikon Digital SLR
+-   [MoticCamera](MoticCamera) - Motic cameras
+-   [NKRemoteCamera](NKRemoteCamera) - Nikon Digital SLR
     (Windows)
--   [OpenCVgrabber](OpenCVgrabber "wikilink") - Supports numerous USB
+-   [OpenCVgrabber](OpenCVgrabber) - Supports numerous USB
     cameras and frame grabbers (those using a DirectShow or WDM class
     driver). (Windows)
--   [PCO\_Camera](PCO_Camera "wikilink") - Supports all pco.sdk based
+-   [PCO\_Camera](PCO_Camera) - Supports all pco.sdk based
     cameras (pco.edge, pco.panda and others)
--   [Photometrics](Photometrics "wikilink") - A.k.a.
-    [PVCAM](PVCAM "wikilink")
--   [PICAM](PICAM "wikilink") - Princeton Instruments cameras using the
+-   [Photometrics](Photometrics) - A.k.a.
+    [PVCAM](PVCAM)
+-   [PICAM](PICAM) - Princeton Instruments cameras using the
     PICam interface
--   [Piper](Piper "wikilink") - Stanford Photonics cameras
--   [Pixelink](Pixelink "wikilink") - Pixelink Cameras
--   [Point Grey Research](Point_Grey_Research "wikilink") - Point Grey
+-   [Piper](Piper) - Stanford Photonics cameras
+-   [Pixelink](Pixelink) - Pixelink Cameras
+-   [Point Grey Research](Point_Grey_Research) - Point Grey
     (now FLIR) cameras through the Flycap2 interface, also see
-    [Spinnaker](Spinnaker "wikilink")
--   [PrincetonInstruments](PrincetonInstruments "wikilink") - Princeton
+    [Spinnaker](Spinnaker)
+-   [PrincetonInstruments](PrincetonInstruments) - Princeton
     Instruments cameras
--   [ProgRes](ProgRes "wikilink") - Jenoptik cameras (ProgRes series)
--   [PSRemoteCamera](PSRemoteCamera "wikilink") - Canon PowerShot camera
+-   [ProgRes](ProgRes) - Jenoptik cameras (ProgRes series)
+-   [PSRemoteCamera](PSRemoteCamera) - Canon PowerShot camera
     (Windows)
--   [PVCAM](PVCAM "wikilink") - Roper/Photometrics cameras (not for
+-   [PVCAM](PVCAM) - Roper/Photometrics cameras (not for
     Princeton Instruments)
-  - [PVCAM legacy](PVCAM_legacy "wikilink") - pre-2021 documentation for
+  - [PVCAM legacy](PVCAM_legacy) - pre-2021 documentation for
     Roper/Photometrics cameras
-  - [QCam](QCam "wikilink") - QImaging cameras
-  - [QSICamera](QSICamera "wikilink") - QSI cameras (Windows)
-  - [RaptorEPIX](RaptorEPIX "wikilink") - Raptor Photonics cameras using
+  - [QCam](QCam) - QImaging cameras
+  - [QSICamera](QSICamera) - QSI cameras (Windows)
+  - [RaptorEPIX](RaptorEPIX) - Raptor Photonics cameras using
     EPIX cameralink board
--   [ScionCam](ScionCam "wikilink") - Scion cameras
--   [Sensicam](Sensicam "wikilink") - PCO/Cooke Sensicam camera
--   [SigmaKoki](SigmaKoki "wikilink") - Sigma Koki camera
--   [Spinnaker](Spinnaker "wikilink") - FLIR (formally Point Grey)
+-   [ScionCam](ScionCam) - Scion cameras
+-   [Sensicam](Sensicam) - PCO/Cooke Sensicam camera
+-   [SigmaKoki](SigmaKoki) - Sigma Koki camera
+-   [Spinnaker](Spinnaker) - FLIR (formally Point Grey)
     cameras though the Spinnaker interface
--   [SpotCamera](SpotCamera "wikilink") - Diagnostic Instruments Spot
+-   [SpotCamera](SpotCamera) - Diagnostic Instruments Spot
     cameras
--   [TetheredCam](TetheredCam "wikilink") - Canon and Nikon DSLR cameras
+-   [TetheredCam](TetheredCam) - Canon and Nikon DSLR cameras
     (Windows)
--   [ThorlabsUSBCamera](ThorlabsUSBCamera "wikilink") - Thorlabs cameras
+-   [ThorlabsUSBCamera](ThorlabsUSBCamera) - Thorlabs cameras
     (Windows)
--   [TIScam](TIScam "wikilink") - The Imaging Source cameras (tested on
+-   [TIScam](TIScam) - The Imaging Source cameras (tested on
     USB/CCD models) and video frame grabbers
--   [TSI](TSI "wikilink") - Thorlabs Scientific Imaging Cameras
--   [TwainCamera](TwainCamera "wikilink") - Cameras fully implementing
+-   [TSI](TSI) - Thorlabs Scientific Imaging Cameras
+-   [TwainCamera](TwainCamera) - Cameras fully implementing
     Twain Imaging Standard
--   [Veroptics](Veroptics "wikilink") - Veroptics cameras
--   [Video4Linux](Video4Linux "wikilink") - Video4Linux compatible
+-   [Veroptics](Veroptics) - Veroptics cameras
+-   [Video4Linux](Video4Linux) - Video4Linux compatible
     cameras
--   [XIMEACamera](XIMEACamera "wikilink") - XIMEA cameras (and some
+-   [XIMEACamera](XIMEACamera) - XIMEA cameras (and some
     Olympus Soft Imaging cameras)
 
 
 
 ## Stages, filter wheels, shutters
 
--   [ArduinoNeoPixel](ArduinoNeoPixel "wikilink") - Adafruit NeoPixel
+-   [ArduinoNeoPixel](ArduinoNeoPixel) - Adafruit NeoPixel
     RGB LEDs controlled through an Arduino
--   [ASIFW1000](ASIFW1000 "wikilink") - ASI Shutter and Filter Wheel
+-   [ASIFW1000](ASIFW1000) - ASI Shutter and Filter Wheel
     controller
--   [ASIStage](ASIStage "wikilink") - ASI XY (and Z) stage and CRIF
--   [ASITiger](ASITiger "wikilink") - ASI TG-1000 "Tiger" Controller
+-   [ASIStage](ASIStage) - ASI XY (and Z) stage and CRIF
+-   [ASITiger](ASITiger) - ASI TG-1000 "Tiger" Controller
     (hub device, peripherals include multiple stage types, filter wheel,
     shutters, micro-mirrors, etc.)
--   [ChuoSeiki\_MD5000](ChuoSeiki_MD5000 "wikilink") - ChuoSeiki MD5000
+-   [ChuoSeiki\_MD5000](ChuoSeiki_MD5000) - ChuoSeiki MD5000
     series controller: 2-axis, single axis
--   [ChuoSeiki\_QT](ChuoSeiki_QT "wikilink") - ChuoSeiki QT series
+-   [ChuoSeiki\_QT](ChuoSeiki_QT) - ChuoSeiki QT series
     controller: 3-axis, 2-axis, single axis
--   [CoolLED](CoolLED "wikilink") - LED illuminator (usable as a shutter
+-   [CoolLED](CoolLED) - LED illuminator (usable as a shutter
     device)
--   [CONEX](CONEX "wikilink") - See NewportCONEX
--   [Conix](Conix "wikilink") - Conix Filter Changer, XY and Z stage
--   [Corvus](Corvus "wikilink") - Märzhäuser XY stages with Corvus
+-   [CONEX](CONEX) - See NewportCONEX
+-   [Conix](Conix) - Conix Filter Changer, XY and Z stage
+-   [Corvus](Corvus) - Märzhäuser XY stages with Corvus
     driver.
--   [DA-Z-Stage](DA-Z-Stage "wikilink") - For stages that can be
+-   [DA-Z-Stage](DA-Z-Stage) - For stages that can be
     controlled with analogue voltage. Needs a DA device
--   [DAShutter](DAShutter "wikilink") - Treats a DA output as a shutter.
+-   [DAShutter](DAShutter) - Treats a DA output as a shutter.
     Useful (for instance) for diode lasers
--   [IntelLiDrive](IntelLiDrive "wikilink") - IntelLiDrive stages are
+-   [IntelLiDrive](IntelLiDrive) - IntelLiDrive stages are
     support through 3d party adapters
--   [KDV](KDV "wikilink") - kdvelectronics focus drive (z-stage) for
+-   [KDV](KDV) - kdvelectronics focus drive (z-stage) for
     Meiji Techno
--   [LeicaDMSTC](LeicaDMSTC "wikilink") - Leica DMSTC XY stage
--   [LMT200-V3](LMT200-V3 "wikilink") - ITK Dr. Kassen LMT200-V3 HYDRA
+-   [LeicaDMSTC](LeicaDMSTC) - Leica DMSTC XY stage
+-   [LMT200-V3](LMT200-V3) - ITK Dr. Kassen LMT200-V3 HYDRA
     Controller and XY stage
--   [Ludl](Ludl "wikilink") - Ludl stages, shutters and filter wheels
--   [LudlLow](LudlLow "wikilink") - Ludl stages, shutters and filter
+-   [Ludl](Ludl) - Ludl stages, shutters and filter wheels
+-   [LudlLow](LudlLow) - Ludl stages, shutters and filter
     wheels (other)
--   [Marzhauser](Marzhauser "wikilink") - Märzhäuser XY stages and Z
+-   [Marzhauser](Marzhauser) - Märzhäuser XY stages and Z
     (uses TANGO controller)
--   [MarzhauserLStep](MarzhauserLStep "wikilink") - Märzhäuser LStep
+-   [MarzhauserLStep](MarzhauserLStep) - Märzhäuser LStep
     stage controller
--   [MarzhauserLStepOld](MarzhauserLStepOld "wikilink") - Old version
+-   [MarzhauserLStepOld](MarzhauserLStepOld) - Old version
     (1.2) of Märzhäuser LStep stage controller
--   [MCL\_MicroDrive](MCL_MicroDrive "wikilink") - Mad City Labs
+-   [MCL\_MicroDrive](MCL_MicroDrive) - Mad City Labs
     MicroDrive
--   [MCL\_NanoDrive](MCL_NanoDrive "wikilink") - Mad City Labs NanoDrive
--   [MT20](MT20 "wikilink") - Olympus MT20 illumination source
+-   [MCL\_NanoDrive](MCL_NanoDrive) - Mad City Labs NanoDrive
+-   [MT20](MT20) - Olympus MT20 illumination source
     (Lamp/shutter/filter wheel)
--   [MP285](MP285 "wikilink") - Sutter Micro-Manipulator
--   [NewportCONEX](NewportCONEX "wikilink") - Newport CONEX-CC servo
+-   [MP285](MP285) - Sutter Micro-Manipulator
+-   [NewportCONEX](NewportCONEX) - Newport CONEX-CC servo
     controller
--   [NewportSMC](NewportSMC "wikilink") - Newport SMC100 single-axis
+-   [NewportSMC](NewportSMC) - Newport SMC100 single-axis
     motor controller
--   [Nikon](Nikon "wikilink") - Nikon Z-drive, TIRF shutter and
+-   [Nikon](Nikon) - Nikon Z-drive, TIRF shutter and
     IntensiLight shutter
--   [NIMotionStage](NIMotionStage "wikilink") - National Instruments
+-   [NIMotionStage](NIMotionStage) - National Instruments
     FlexMotion stage controls
--   [NPointC400](NPointC400 "wikilink") - nPoint C.400 and LC.400 axis
+-   [NPointC400](NPointC400) - nPoint C.400 and LC.400 axis
     controllers
--   [ObjectiveImaging](ObjectiveImaging "wikilink") - Objective Imaging
+-   [ObjectiveImaging](ObjectiveImaging) - Objective Imaging
     OASIS controller
--   [PI\_GCS\_2](PI_GCS_2 "wikilink") - Physik Instrumente (PI) GCS2
+-   [PI\_GCS\_2](PI_GCS_2) - Physik Instrumente (PI) GCS2
     adapter
--   [PI\_GCS](PI_GCS "wikilink") - Physik Instrumente (PI) GCS adapter -
+-   [PI\_GCS](PI_GCS) - Physik Instrumente (PI) GCS adapter -
     Z Stage connected to PI GCS controller (E-665, E-621, E-625, E-753,
     ...)
--   [PI](PI "wikilink") - Other (older) Physik Instrumente devices.
+-   [PI](PI) - Other (older) Physik Instrumente devices.
     Includes the E-662 controller
--   [PicardStage](PicardStage "wikilink") - Picard Industries USB Slide
+-   [PicardStage](PicardStage) - Picard Industries USB Slide
     I/II and USB Twister
--   [PIEZOCONCEPT](PIEZOCONCEPT "wikilink") - PIEZOCONCEPT
+-   [PIEZOCONCEPT](PIEZOCONCEPT) - PIEZOCONCEPT
     nanopositioners
--   [Piezosystem\_30DV50](Piezosystem_30DV50 "wikilink") - Piezosystem
+-   [Piezosystem\_30DV50](Piezosystem_30DV50) - Piezosystem
     Jena. digital one channel controller
--   [Piezosystem\_dDrive](Piezosystem_dDrive "wikilink") - Piezosystem
+-   [Piezosystem\_dDrive](Piezosystem_dDrive) - Piezosystem
     Jena. digital 6 channel controller with display
--   [Piezosystem\_NV40\_1](Piezosystem_NV40_1 "wikilink") - Piezosystem
+-   [Piezosystem\_NV40\_1](Piezosystem_NV40_1) - Piezosystem
     Jena. one channel controller for older stages
--   [Piezosystem\_NV40\_3](Piezosystem_NV40_3 "wikilink") - Piezosystem
+-   [Piezosystem\_NV40\_3](Piezosystem_NV40_3) - Piezosystem
     Jena. 3 channel controller with USB
--   [Piezosystem\_NV120\_1](Piezosystem_NV120_1 "wikilink") -
+-   [Piezosystem\_NV120\_1](Piezosystem_NV120_1) -
     Piezosystem Jena. 1 channel controller with USB
--   [PrecisExcite](PrecisExcite "wikilink") - LED illuminator (usable as
+-   [PrecisExcite](PrecisExcite) - LED illuminator (usable as
     a shutter device)
--   [Prior](Prior "wikilink") - Prior stages, shutters, and filter
+-   [Prior](Prior) - Prior stages, shutters, and filter
     wheels
--   [PriorNano](PriorNano "wikilink") - Prior/Queensgate nanopositioning
+-   [PriorNano](PriorNano) - Prior/Queensgate nanopositioning
     stages
--   [RAMPS](RAMPS "wikilink") - RepRap RAMPS board as a stage controller
--   [Scientifica](Scientifica "wikilink") - Scientifica stages
--   [ScopeLED](ScopeLED "wikilink") - DiCon LED-powered brightfield and
+-   [RAMPS](RAMPS) - RepRap RAMPS board as a stage controller
+-   [Scientifica](Scientifica) - Scientifica stages
+-   [ScopeLED](ScopeLED) - DiCon LED-powered brightfield and
     fluorescence microscopy illuminators, implemented as shutters.
--   [SigmaKoki](SigmaKoki "wikilink") - Sigma Koki stages and shutters
--   [SmarActHCU-3D](SmarActHCU-3D "wikilink") - HCU and CU SmarAct
+-   [SigmaKoki](SigmaKoki) - Sigma Koki stages and shutters
+-   [SmarActHCU-3D](SmarActHCU-3D) - HCU and CU SmarAct
     controllers adapter (XY and Z)
--   [SouthPort\_MicroZ](SouthPort_MicroZ "wikilink") - SouthPort MicroZ
+-   [SouthPort\_MicroZ](SouthPort_MicroZ) - SouthPort MicroZ
     stage controller
--   [Standa](Standa "wikilink") - Standa Microstep Driver
--   [StandaStage](StandaStage "wikilink") - Standa Microstep Driver
--   [Standa8SMC4](Standa8SMC4 "wikilink") - Standa Microstep Driver
+-   [Standa](Standa) - Standa Microstep Driver
+-   [StandaStage](StandaStage) - Standa Microstep Driver
+-   [Standa8SMC4](Standa8SMC4) - Standa Microstep Driver
     (using XIMC interface)
--   [SutterLambda](SutterLambda "wikilink") - Sutter Shutters, filter
+-   [SutterLambda](SutterLambda) - Sutter Shutters, filter
     wheels, light sources, etc..
--   [SutterLambda2](SutterLambda2 "wikilink") - Sutter Lambda 10-3
+-   [SutterLambda2](SutterLambda2) - Sutter Lambda 10-3
     controller, shutters, filter wheels, and VF5 tunable filter
--   [SutterStage](SutterStage "wikilink") - Sutter XY Stage
--   [Thorlabs](Thorlabs "wikilink") - Thorlabs XY Stage (brushless DC
+-   [SutterStage](SutterStage) - Sutter XY Stage
+-   [Thorlabs](Thorlabs) - Thorlabs XY Stage (brushless DC
     motor), Piezo Z Stage and Integrated Filter Wheel
--   [ThorlabsAPTStage](ThorlabsAPTStage "wikilink") - Thorlabs APT
+-   [ThorlabsAPTStage](ThorlabsAPTStage) - Thorlabs APT
     family linear stages
--   [ThorlabsDCStage](ThorlabsDCStage "wikilink") - Thorlabs Linear
+-   [ThorlabsDCStage](ThorlabsDCStage) - Thorlabs Linear
     Stages using the TDC001 Controller (see also:
-    [ThorlabsAPTStage](ThorlabsAPTStage "wikilink"))
--   [ThorlabsDCxxxx](ThorlabsDCxxxx "wikilink") - Thorlabs LED
+    [ThorlabsAPTStage](ThorlabsAPTStage))
+-   [ThorlabsDCxxxx](ThorlabsDCxxxx) - Thorlabs LED
     controllers
--   [ThorlabsElliptecSlider](ThorlabsElliptecSlider "wikilink") -
+-   [ThorlabsElliptecSlider](ThorlabsElliptecSlider) -
     Thorlabs Elliptec sliders ELL6, ELL9, ELL17 and ELL20.
--   [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink") - Thorlabs
+-   [ThorlabsFilterWheel](ThorlabsFilterWheel) - Thorlabs
     Filter Wheel
 -   **ThorlabsKinesis** - Thorlabs Kinesis motor controllers ([separate
     download and
     instructions](https://github.com/micro-manager/mmdev-ThorlabsKinesis))
--   [ThorlabsMFC1](ThorlabsMFC1 "wikilink") - Thorlabs MFC1 Motorized
+-   [ThorlabsMFC1](ThorlabsMFC1) - Thorlabs MFC1 Motorized
     Microscope Focus Controller
--   [ThorlabsSC10](ThorlabsSC10 "wikilink") - Thorlabs shutter
+-   [ThorlabsSC10](ThorlabsSC10) - Thorlabs shutter
     controller
--   [Tofra](Tofra "wikilink") - XY and Z stages, filter wheel, motorized
+-   [Tofra](Tofra) - XY and Z stages, filter wheel, motorized
     filter cube slider, and LED illuminator
--   [UserDefinedSerial](UserDefinedSerial "wikilink") - Shutters and
+-   [UserDefinedSerial](UserDefinedSerial) - Shutters and
     state devices that can be controlled with simple serial commands
--   [Vincent](Vincent "wikilink") - Vincent Uniblitz controllers
--   [WieneckeSinske](WieneckeSinske "wikilink") - WSB PiezoDrive CAN XY
+-   [Vincent](Vincent) - Vincent Uniblitz controllers
+-   [WieneckeSinske](WieneckeSinske) - WSB PiezoDrive CAN XY
     stage
--   [Xcite](Xcite "wikilink") - EXFO X-Cite 120 PC Fluorescent Lamp /
+-   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
     Shutter
--   [XCite120PC\_Exacte](XCite120PC_Exacte "wikilink") - Lumen Dynamics
+-   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
     X-Cite 120PC and *exacte* adapter
--   [XCiteLed](XCiteLed "wikilink") - LED controller
--   [XCiteXT600](XCiteXT600 "wikilink") - X-Cite TURBO and XT600 series
--   [Zaber](Zaber "wikilink") - Zaber linear and XY stages, filter
+-   [XCiteLed](XCiteLed) - LED controller
+-   [XCiteXT600](XCiteXT600) - X-Cite TURBO and XT600 series
+-   [Zaber](Zaber) - Zaber linear and XY stages, filter
     wheels
 
 ## Communication ports, TTLs, DAQs, etc.
 
--   [Arduino](Arduino "wikilink") - Open Source Programmable
+-   [Arduino](Arduino) - Open Source Programmable
     Digital/Analogue IO board
--   [Arduino32bitBoards](Arduino32bitBoards "wikilink") - 32bit Open
+-   [Arduino32bitBoards](Arduino32bitBoards) - 32bit Open
     Source Programmable Digital/Analogue IO boards
--   [CustomArduino](CustomArduino "wikilink") - Arduino-based devices
+-   [CustomArduino](CustomArduino) - Arduino-based devices
     matching existing device adapters
--   [DTOpenLayer](DTOpenLayer "wikilink") - DT OpenLayer Digital IO
+-   [DTOpenLayer](DTOpenLayer) - DT OpenLayer Digital IO
     boards
--   [ESIOImagingControllers](ESIOImagingControllers "wikilink") -
+-   [ESIOImagingControllers](ESIOImagingControllers) -
     Microcontrollers for hardware triggering and synchronization
--   [FreeSerialPort](FreeSerialPort "wikilink") - Communicate directly
+-   [FreeSerialPort](FreeSerialPort) - Communicate directly
     through a serial port
--   [ITC18](ITC18 "wikilink") - controls shutters, cameras, pifocs,
+-   [ITC18](ITC18) - controls shutters, cameras, pifocs,
     anything that can use either a TTL signal or a ±10 V signal
--   [K8055](K8055 "wikilink") - Velleman Digital IO board (all
+-   [K8055](K8055) - Velleman Digital IO board (all
     platforms)
--   [K8061](K8061 "wikilink") - Velleman Digital IO board (all
+-   [K8061](K8061) - Velleman Digital IO board (all
     platforms)
-  - [MCCDAQ](MCCDAQ "wikilink") - Measurement Computing PCI-DDA08/16
-  - [MicroFPGA](MicroFPGA "wikilink") - Open source FPGA platform for
+  - [MCCDAQ](MCCDAQ) - Measurement Computing PCI-DDA08/16
+  - [MicroFPGA](MicroFPGA) - Open source FPGA platform for
     hardware triggering and control
-  - [National Instruments](National_Instruments "wikilink") - See NI100X
+  - [National Instruments](National_Instruments) - See NI100X
     and NIMultiAnalog
--   [NicoLase](NicoLase "wikilink") An open-source diode laser combiner,
+-   [NicoLase](NicoLase) An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
--   [NI100X](NI100X "wikilink") - NI I/O boards - DAQmx interface
--   [NIMultiAnalog](NIMultiAnalog "wikilink") - NI boards with multiple
+-   [NI100X](NI100X) - NI I/O boards - DAQmx interface
+-   [NIMultiAnalog](NIMultiAnalog) - NI boards with multiple
     analog outputs
--   [SerialManager](SerialManager "wikilink") - Serial Ports on Windows
--   [SerialManagerUnix](SerialManagerUnix "wikilink") - Serial Ports on
+-   [SerialManager](SerialManager) - Serial Ports on Windows
+-   [SerialManagerUnix](SerialManagerUnix) - Serial Ports on
     Mac and Linux
--   [TriggerScope](TriggerScope "wikilink") - TriggerScope digital and
+-   [TriggerScope](TriggerScope) - TriggerScope digital and
     analog controller
--   [TriggerScopeMM](TriggerScopeMM "wikilink") - TriggerScope v3 with
+-   [TriggerScopeMM](TriggerScopeMM) - TriggerScope v3 with
     Micro-Manager firmware
--   [ParallelPort](ParallelPort "wikilink") - TTLs on parallel port
+-   [ParallelPort](ParallelPort) - TTLs on parallel port
     (Windows only)
--   [USBManager](USBManager "wikilink") - Micro-Manager internal USB
+-   [USBManager](USBManager) - Micro-Manager internal USB
     communications driver
 
 ## Light sources
 
-  - [89NorthLDI](89NorthLDI "wikilink") - Laser Diode Illuminator from
+  - [89NorthLDI](89NorthLDI) - Laser Diode Illuminator from
     89 North
-  - [AgilentLaserCombiner](AgilentLaserCombiner "wikilink") - Agilent
+  - [AgilentLaserCombiner](AgilentLaserCombiner) - Agilent
     MLC
--   [AndorLaserCombiner](AndorLaserCombiner "wikilink") - Andor laser
+-   [AndorLaserCombiner](AndorLaserCombiner) - Andor laser
     launch
--   [BlueboxOptics\_niji](BlueboxOptics_niji "wikilink") - Bluebox
+-   [BlueboxOptics\_niji](BlueboxOptics_niji) - Bluebox
     Optics niji 7 channel LED light source
--   [CoboltOfficial](CoboltOfficial "wikilink") - Cobolt lasers 06-01
+-   [CoboltOfficial](CoboltOfficial) - Cobolt lasers 06-01
     Series, Cobolt Skyra
--   [Cobolt](Cobolt "wikilink") - Cobolt laser controller
--   [CoherentCube](CoherentCube "wikilink") - Coherent CUBE laser
+-   [Cobolt](Cobolt) - Cobolt laser controller
+-   [CoherentCube](CoherentCube) - Coherent CUBE laser
     controller
--   [CoherentOBIS](CoherentOBIS "wikilink") - Coherent OBIS laser
+-   [CoherentOBIS](CoherentOBIS) - Coherent OBIS laser
     controller (Single Laser Remote)
 -   [Coherent Scientific
-    Remote](Coherent_Scientific_Remote "wikilink") - Coherent OBIS laser
+    Remote](Coherent_Scientific_Remote) - Coherent OBIS laser
     controller (Scientific Remote and Single Laser Remote)
--   [LaserQuantumLaser](LaserQuantumLaser "wikilink") -
+-   [LaserQuantumLaser](LaserQuantumLaser) -
     gem/ventus/opus/axiom series from LaserQuantum
--   [Lumencor Light Engine](Lumencor_Light_Engine "wikilink") - All
+-   [Lumencor Light Engine](Lumencor_Light_Engine) - All
     Lumencor Light Engine models
--   [LumencorSpectra](LumencorSpectra "wikilink") - Solid state
+-   [LumencorSpectra](LumencorSpectra) - Solid state
     illuminator from Lumencor
--   [Mightex](Mightex "wikilink") - LED driver/controllers
--   [Mightex\_BLS](Mightex_BLS "wikilink") - BLS Control Modules
--   [MightexPolygon](MightexPolygon "wikilink") - Mightex Polygon
+-   [Mightex](Mightex) - LED driver/controllers
+-   [Mightex\_BLS](Mightex_BLS) - BLS Control Modules
+-   [MightexPolygon](MightexPolygon) - Mightex Polygon
     multiwavelength patterned illuminators
--   [Omicron](Omicron "wikilink") - Omicron Laser Controller
--   [Oxxius](Oxxius "wikilink") - Oxxius Laser Controller
--   [Oxxius\_combiner](Oxxius_combiner "wikilink") - Oxxius combiner;
+-   [Omicron](Omicron) - Omicron Laser Controller
+-   [Oxxius](Oxxius) - Oxxius Laser Controller
+-   [Oxxius\_combiner](Oxxius_combiner) - Oxxius combiner;
     hub for multiple laser sources
--   [PolychromeV](PolychromeV "wikilink") - Illumination system from
+-   [PolychromeV](PolychromeV) - Illumination system from
     Till Photonics
 -   [Prairie Aurora Laser
-    Launch](Prairie_Aurora_Laser_Launch "wikilink") - Prairie Aurora
+    Launch](Prairie_Aurora_Laser_Launch) - Prairie Aurora
     Laser Launch Interfacing using a [Velleman
-    K8061](Velleman_K8061 "wikilink")
--   [Sapphire](Sapphire "wikilink") - Lasers from Coherent
--   [Skyra](Skyra "wikilink") - Skyra laser controller
--   [Stradus](Stradus "wikilink") - Vortran Stradus laser driver
--   [Toptica\_iBeamSmartCW](Toptica_iBeamSmartCW "wikilink") - Toptica
+    K8061](Velleman_K8061)
+-   [Sapphire](Sapphire) - Lasers from Coherent
+-   [Skyra](Skyra) - Skyra laser controller
+-   [Stradus](Stradus) - Vortran Stradus laser driver
+-   [Toptica\_iBeamSmartCW](Toptica_iBeamSmartCW) - Toptica
     iBeamSmart laser series
--   [Toptica\_iChrome\_MLE](Toptica_iChrome_MLE "wikilink") - Toptica
+-   [Toptica\_iChrome\_MLE](Toptica_iChrome_MLE) - Toptica
     iChrome Multi Laser Engine
--   [Toptica\_iChrome\_MLE\_TCP](Toptica_iChrome_MLE_TCP "wikilink") -
+-   [Toptica\_iChrome\_MLE\_TCP](Toptica_iChrome_MLE_TCP) -
     Toptica iChrome Multi Laser Engine over TCP link
--   [USB\_Viper\_QPL](USB_Viper_QPL "wikilink") - Excelitas/Qioptiq
+-   [USB\_Viper\_QPL](USB_Viper_QPL) - Excelitas/Qioptiq
     iFLEX-Viper Laser Engine
--   [Versalase](Versalase "wikilink") - Vortran Versalase laser driver
--   [YodnLighting](YodnLighting "wikilink") - YODN Lighting lamp device
+-   [Versalase](Versalase) - Vortran Versalase laser driver
+-   [YodnLighting](YodnLighting) - YODN Lighting lamp device
     adapter for E600 serial products
 
 ## Other devices
 
--   [AAAOTF](AAAOTF "wikilink") - AOTF controller from AA
+-   [AAAOTF](AAAOTF) - AOTF controller from AA
     Optoelectronics
--   [Aladdin](Aladdin "wikilink") - Syring pump controller from Aladdin
--   [AndorShamrock](AndorShamrock "wikilink") - Andor Shamrock
+-   [Aladdin](Aladdin) - Syring pump controller from Aladdin
+-   [AndorShamrock](AndorShamrock) - Andor Shamrock
     Spectrographs
--   [Aquinas](Aquinas "wikilink") - Aquinas Microfluidics Controller
--   [AOTF](Neos "wikilink") - NEOS AOTF control through parallel port.
+-   [Aquinas](Aquinas) - Aquinas Microfluidics Controller
+-   [AOTF](Neos) - NEOS AOTF control through parallel port.
     Can be used for any TTL-controllable shutter
--   [ASIwptr](ASIwptr "wikilink") - ASI well-plate transfer robot
--   [CARVII](CARVII "wikilink") - BD/CrEST CARV II spinning disk
+-   [ASIwptr](ASIwptr) - ASI well-plate transfer robot
+-   [CARVII](CARVII) - BD/CrEST CARV II spinning disk
     confocal
--   [Diskovery](Diskovery "wikilink") - Spectral/Andor spinning disk
+-   [Diskovery](Diskovery) - Spectral/Andor spinning disk
     confocal/TIRF module
--   [DLP4000](DLP4000 "wikilink") - Digital Mirror Device
--   [GenericSLM](GenericSLM "wikilink") - Any spatial light modulator
+-   [DLP4000](DLP4000) - Digital Mirror Device
+-   [GenericSLM](GenericSLM) - Any spatial light modulator
     that can be controlled via computer video output port.
--   [ImageProcessorChain](ImageProcessorChain "wikilink") - Virtual
+-   [ImageProcessorChain](ImageProcessorChain) - Virtual
     device driver for processing images in C++
--   [LumencorCIA](LumencorCIA "wikilink") - Camera synchronization for
+-   [LumencorCIA](LumencorCIA) - Camera synchronization for
     the Lumencor Spectra
--   [MaestroServo](MaestroServo "wikilink") - Pololu Maestro Servo
+-   [MaestroServo](MaestroServo) - Pololu Maestro Servo
     controller
--   [MicroPoint](MicroPoint "wikilink") - Galvo-based phototargeting
+-   [MicroPoint](MicroPoint) - Galvo-based phototargeting
     device from Andor
--   [Mosaic3](Mosaic3 "wikilink") - Andor Mosaic DMD Projection Device
--   [Okolab](Okolab "wikilink") - Okolab Microscope Incubators and Gas
+-   [Mosaic3](Mosaic3) - Andor Mosaic DMD Projection Device
+-   [Okolab](Okolab) - Okolab Microscope Incubators and Gas
     Controllers
--   [OVP\_ECS2](OVP_ECS2 "wikilink") - Optic Valley Photonics ECS-2
+-   [OVP\_ECS2](OVP_ECS2) - Optic Valley Photonics ECS-2
     environmental controller
--   [Pecon](Pecon "wikilink") - Pecon Incubation System
--   [PeCon2000](PeCon2000 "wikilink") - PeCon 2000 Incubation
+-   [Pecon](Pecon) - Pecon Incubation System
+-   [PeCon2000](PeCon2000) - PeCon 2000 Incubation
     Controllers (USB-connected)
--   [pgFocus](pgFocus "wikilink") - Open Software/Hardware Focus
+-   [pgFocus](pgFocus) - Open Software/Hardware Focus
     Stabilization from [BIG](http://big.umassmed.edu)
--   [Rapp](Rapp "wikilink") - Rapp UGA40 photobleaching/photoactivation
+-   [Rapp](Rapp) - Rapp UGA40 photobleaching/photoactivation
     unit
--   [SimpleAutofocus](SimpleAutofocus "wikilink") - Image-based
+-   [SimpleAutofocus](SimpleAutofocus) - Image-based
     autofocus software 'device'.
--   [SpectralLMM5](SpectralLMM5 "wikilink") - Spectral laser line
+-   [SpectralLMM5](SpectralLMM5) - Spectral laser line
     controller
--   [SutterMPC](SutterMPC "wikilink") - Multi manipulator controller
--   [Utilities](Utilities "wikilink") - Virtual devices providing extra
+-   [SutterMPC](SutterMPC) - Multi manipulator controller
+-   [Utilities](Utilities) - Virtual devices providing extra
     functionality to Micro-Manager
--   [VariLC](VariLC "wikilink") - Tunable liquid crystal polarization
+-   [VariLC](VariLC) - Tunable liquid crystal polarization
     modulators from CRi
--   [VisiTech\_iSIM](VisiTech_iSIM "wikilink") - VisiTech iSIM
--   [Yokogawa](Yokogawa "wikilink") - Yokogawa CSU22
--   Yokogawa [CSUW1](CSUW1 "wikilink") - Yokogawa CSUW1
--   Yokogawa [CSUX](CSUX "wikilink") - Yokogawa CSUX
--   [XLight](XLight "wikilink") - CrestOptics X-Light spinning disc
+-   [VisiTech\_iSIM](VisiTech_iSIM) - VisiTech iSIM
+-   [Yokogawa](Yokogawa) - Yokogawa CSU22
+-   Yokogawa [CSUW1](CSUW1) - Yokogawa CSUW1
+-   Yokogawa [CSUX](CSUX) - Yokogawa CSUX
+-   [XLight](XLight) - CrestOptics X-Light spinning disc
     confocal system
 -   The [HSi-300 Hyperspectral
     Imager](http://goochandhousego.com/product/hsi-300-hyperspectral-imaging-system/)

@@ -287,7 +287,7 @@ Note that you will not be able to control the ND filters this way.
 The manual tube lens switcher of the Nikon Ti is not encoded (the
 computer has no way of knowing its state). You can encode the tube lens
 switcher yourself following these instructions:
-[Encoding\_the\_Nikon\_TI\_Eclipse\_tube\_lens](Encoding_the_Nikon_TI_Eclipse_tube_lens "wikilink").
+[Encoding\_the\_Nikon\_TI\_Eclipse\_tube\_lens](Encoding_the_Nikon_TI_Eclipse_tube_lens).
 
 ## How to report problems
 

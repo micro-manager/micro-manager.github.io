@@ -82,9 +82,9 @@ Files\\Micro-Manager-1.4\\), replacing the 64-bit DLLs.
 ### Disable computer power savings
 
 Disable C-states power saving in the
-[BIOS](Personal_computer_setup#bios "wikilink"). For Windows Vista and
+[BIOS](Personal_computer_setup#bios). For Windows Vista and
 later, also disable PCI Express &gt; Link State Power Management in
-[Power Options](Personal_computer_setup#power-options "wikilink").
+[Power Options](Personal_computer_setup#power-options).
 
 ## Configuration
 
@@ -150,7 +150,7 @@ Reboot the machine.
 ### Zyla support in Micro-Manager
 
 Please read the section on [High Speed Acquisition in
-Micro-Manager](High_Speed_Acquisition_in_Micro-Manager "wikilink"). The
+Micro-Manager](High_Speed_Acquisition_in_Micro-Manager). The
 minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but
 1.4.16 or later is strongly recommended. Consider trying the latest
 nightly build from

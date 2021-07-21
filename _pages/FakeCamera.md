@@ -51,7 +51,7 @@ Apache License, Version 2.0
 </td>
 <td markdown="1">
 
-Windows, 32 & 64-bit, Linux (see [below](#building-on-linux "wikilink"))
+Windows, 32 & 64-bit, Linux (see [below](#building-on-linux))
 
 </td>
 </tr>
@@ -151,7 +151,7 @@ Position of stage <stage> with precision <prec>
 The positions are rounded according to the specified precision (default
 is 0, i.e. integers). The resolved path (i.e. the path with the current
 positions inserted) is shown in the "Resolved path" property. Demo
-stages provided by the [DemoCamera](DemoCamera "wikilink") device
+stages provided by the [DemoCamera](DemoCamera) device
 adapter can be used in place of physical stages to fully work without
 hardware (to add multiple stages, add multiple DHub devices)
 
@@ -230,7 +230,7 @@ C:\imgs\img_7.4_3.52_-1.png
 
 The device adapter can be used on Linux (RGB mode currently does not
 work). To build it, the instructions in
-[Linux\_installation\_from\_source\_(Ubuntu)](Linux_installation_from_source_(Ubuntu) "wikilink")
+[Linux\_installation\_from\_source\_(Ubuntu)](Linux_installation_from_source_(Ubuntu))
 need to be adapted as follows (tested on Ubuntu 16):
 
 -   During "Install Build programs & libraries", also install OpenCV

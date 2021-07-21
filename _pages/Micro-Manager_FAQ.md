@@ -9,7 +9,7 @@ layout: page
 
 ### Does Micro-Manager work with ... camera/microscope/etc?
 
-Check the list of [supported hardware](Device_Support "wikilink"). If
+Check the list of [supported hardware](Device_Support). If
 you are unsure, post your question to the [Mailing
 List](https://lists.sourceforge.net/lists/listinfo/micro-manager-general)
 
@@ -24,7 +24,7 @@ there is an ImageJ driver for a device has no bearing on it working with
 Micro-Manager. In technical terms, to make a camera work in
 Micro-Manager, you will need a Micro-Manager device adapter (written in
 C++), which is very different from an ImageJ camera driver. Check the
-list of [supported hardware](Device_Support "wikilink") to see if there
+list of [supported hardware](Device_Support) to see if there
 is a Micro-Manager device adapter for your camera.
 
 ### Why are my images being displayed incorrectly on screen?
@@ -53,7 +53,7 @@ Alternatively, you can write the adapter yourself, or find a friend with
 experience writing code in C++ (there are quite a few examples so it
 will not be extremely difficult). There is a [Micro-Manager Device
 Developer's Kit for
-Windows](Micro-Manager_Device_Developer's_Kit_for_Windows "wikilink"),
+Windows](Micro-Manager_Device_Developer's_Kit_for_Windows),
 and providing support to people writing device adapters is one of our
 top priorities. Lastly, post your request to the [Micro-Manager mailing
 list](https://lists.sourceforge.net/lists/listinfo/micro-manager-general).
@@ -63,7 +63,7 @@ need it.
 ### Does Micro-Manager work with my Axiocam camera?
 
 **Update:** As of Micro-Manager version 1.4.13 or so, the [AxioCam
-MR](AxioCam_MR "wikilink") is supported. If you need support for other
+MR](AxioCam_MR) is supported. If you need support for other
 models, please let us know.
 
 ### When I do something on my system that takes more than a few seconds, I get the error: "Wait for device X timed out after 5000ms". How do I fix this?
@@ -72,12 +72,12 @@ In the Device/Property browser, set the property: "Core-TimoutMs" to a
 value higher than 5000ms (just a bit longer than it takes your device to
 do whatever it is doing). To make this setting persist through
 Micro-Manager restarts, add it to the System - Startup group (see
-[Micro-Manager\_Configuration\_Guide\#Startup\_Presets](Micro-Manager_Configuration_Guide#startup-presets "wikilink"))
+[Micro-Manager\_Configuration\_Guide\#Startup\_Presets](Micro-Manager_Configuration_Guide#startup-presets))
 
 ### Something does not work. What do I do?
 
 1\) Try downloading and installing the latest [Nightly
-Build](Micro-Manager_Nightly_Builds "wikilink") and check if the problem
+Build](Micro-Manager_Nightly_Builds) and check if the problem
 still persists.
 
 2\) If the issue still remains click 'Help' on the main window -&gt;
@@ -105,7 +105,7 @@ then click 'Report Problem'.
 ### How do I get Micro-Manager to prompt me to manually put specific filters in place?
 
 See
-[Using\_Multi-Dimensional\_Acquisition\_with\_a\_manual\_microscope](Using_Multi-Dimensional_Acquisition_with_a_manual_microscope "wikilink")
+[Using\_Multi-Dimensional\_Acquisition\_with\_a\_manual\_microscope](Using_Multi-Dimensional_Acquisition_with_a_manual_microscope)
 
 ### Citing Micro-Manager
 
@@ -120,7 +120,7 @@ and/or the website:
 \* µManager (http://www.micro-manager.org)
 
 Also, please update "[Papers citing
-Micro-Manager](Papers_citing_Micro-Manager "wikilink")" with a reference
+Micro-Manager](Papers_citing_Micro-Manager)" with a reference
 to your paper. We will need this information to secure future funding.
 
 

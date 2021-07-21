@@ -5,4 +5,4 @@ redirect_from: /wiki/New_Zaber_adapter
 layout: page
 ---
 
-1.  REDIRECT [Zaber](Zaber "wikilink")
+1.  REDIRECT [Zaber](Zaber)

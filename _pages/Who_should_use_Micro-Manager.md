@@ -50,7 +50,7 @@ whether they are already in the works. You can also consider extending
 the Micro-Manager on your own.  
 
 Second, you should check whether your hardware is already
-[supported](Device_Support "wikilink"). If not, contact us and express
+[supported](Device_Support). If not, contact us and express
 your desire and we'll let you know if we plan to support it. If your
 hardware is supported, you will still need to spend some time and effort
 to configure Î¼Manager for your system. To get an idea of what it takes

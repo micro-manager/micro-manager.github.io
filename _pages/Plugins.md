@@ -9,41 +9,41 @@ section: Learn:Version 1.4
 Micro-Manager offers a number of built-in Plugins for special
 applications in microscopy:
 
-  - [AcquireMultipleRegions](AcquireMultipleRegions "wikilink")
-  - [ASIdiSPIM Plugin](ASIdiSPIM_Plugin "wikilink")
-  - [ASI Gamepad Plugin](ASI_Gamepad_Plugin "wikilink")
-  - [AssembleData](AssembleData "wikilink")
-  - [AutoLase](AutoLase "wikilink")
-  - [DLLAutoReloader](DLLAutoReloader "wikilink")
-  - [EMU](EMU "wikilink")
-  - [Flat-Field Correction](Flat-Field_Correction "wikilink")
-  - [FrameProcessor](FrameProcessor "wikilink") : Perform live frames
+  - [AcquireMultipleRegions](AcquireMultipleRegions)
+  - [ASIdiSPIM Plugin](ASIdiSPIM_Plugin)
+  - [ASI Gamepad Plugin](ASI_Gamepad_Plugin)
+  - [AssembleData](AssembleData)
+  - [AutoLase](AutoLase)
+  - [DLLAutoReloader](DLLAutoReloader)
+  - [EMU](EMU)
+  - [Flat-Field Correction](Flat-Field_Correction)
+  - [FrameProcessor](FrameProcessor) : Perform live frames
     image processing.
--   [HCS Site Generator](HCS_Site_Generator "wikilink")
--   [Intelligent Acquisition](Intelligent_Acquisition "wikilink")
--   [Image Flipper](Image_Flipper "wikilink")
--   [Live Replay](Live_Replay "wikilink")
--   [Localization Microscopy](Localization_Microscopy "wikilink")
--   [MicroMagellan](MicroMagellan "wikilink")
--   [Mightex Polygon](Mightex_Polygon_Plugin "wikilink")
+-   [HCS Site Generator](HCS_Site_Generator)
+-   [Intelligent Acquisition](Intelligent_Acquisition)
+-   [Image Flipper](Image_Flipper)
+-   [Live Replay](Live_Replay)
+-   [Localization Microscopy](Localization_Microscopy)
+-   [MicroMagellan](MicroMagellan)
+-   [Mightex Polygon](Mightex_Polygon_Plugin)
 -   Multi-Andor Control
--   [MultiChannelShading](MultiChannelShading "wikilink")
--   [Pixel Calibrator](Pixel_Calibrator_Plugin "wikilink")
--   [Point and Shoot Analysis](Point_and_Shoot_Analysis "wikilink")
+-   [MultiChannelShading](MultiChannelShading)
+-   [Pixel Calibrator](Pixel_Calibrator_Plugin)
+-   [Point and Shoot Analysis](Point_and_Shoot_Analysis)
 -   PM/QI Auto White Balance
 -   [Photon Transfer Curve
-    Assistant](Photon_Transfer_Curve_Assistant "wikilink")
--   [Projector](Projector "wikilink")
--   [Slide Explorer](Slide_Explorer_Plugin "wikilink")
--   [SplitView](SplitView "wikilink")
--   [Stage Control](Stage_Control "wikilink")
+    Assistant](Photon_Transfer_Curve_Assistant)
+-   [Projector](Projector)
+-   [Slide Explorer](Slide_Explorer_Plugin)
+-   [SplitView](SplitView)
+-   [Stage Control](Stage_Control)
 -   Live Tracking
 
 In addition, plugins are available from third parties:
 
 -   [Biomedical Imaging Group](http://big.umassmed.edu)
-    -   [Multiwell Plate Class](Well_Plate_Plugin "wikilink")
-    -   [3D Deconvolution](3D_Deconvolution "wikilink")
+    -   [Multiwell Plate Class](Well_Plate_Plugin)
+    -   [3D Deconvolution](3D_Deconvolution)
     -   [Remote interfacing (REST
         server)](https://github.com/kbellve/MMrestServer)
 -   [Firewire camera/LED synchronization, by Alex Hodge,
@@ -52,7 +52,7 @@ In addition, plugins are available from third parties:
     Image-Pro](http://www.mediacy.com/index.aspx?page=IP_MicroManager_plugin)
 
 See also [Writing plugins for
-Micro-Manager](Writing_plugins_for_Micro-Manager "wikilink")
+Micro-Manager](Writing_plugins_for_Micro-Manager)
 
 And also look at our
 [paper](http://www.jbmethods.org/jbm/article/view/36/28) describing

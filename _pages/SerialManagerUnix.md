@@ -88,5 +88,5 @@ the serial device. Set this low (0) for newer fast devices. You might
 need to increase the value for older devices that cannot buffer serial
 input adequately.
 
---[Nico](/users/Nico "wikilink") 16:21, 3 September 2007 (PDT)
+--[Nico](/users/Nico) 16:21, 3 September 2007 (PDT)
 

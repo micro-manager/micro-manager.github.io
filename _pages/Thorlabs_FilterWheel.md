@@ -5,4 +5,4 @@ redirect_from: /wiki/Thorlabs_FilterWheel
 layout: page
 ---
 
-1.  REDIRECT [ThorlabsFilterWheel](ThorlabsFilterWheel "wikilink")
+1.  REDIRECT [ThorlabsFilterWheel](ThorlabsFilterWheel)

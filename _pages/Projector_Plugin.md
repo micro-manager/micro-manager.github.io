@@ -6,15 +6,15 @@ layout: page
 ---
 
 This page describes the Projector Plugin in Micro-Manager 2.0(gamma).
-For 1.4, see [Projector-1.4](Projector-1.4 "wikilink").
+For 1.4, see [Projector-1.4](Projector-1.4).
 
 The Projector plugin provides a single graphical user interface for
 controlling SLMs (spatial light modulators), such as DMDs (digital
 mirror devices), LCOS (liquid crystal on silicon) modulators or even
 digital computer projectors, and also for controlling steerable-mirror
 (e.g. galvo-based) phototargeting devices, including the [Rapp
-UGA-40](Rapp "wikilink"), the [Andor MicroPoint](MicroPoint "wikilink"),
-and the [ASI scanner](ASITiger "wikilink").
+UGA-40](Rapp), the [Andor MicroPoint](MicroPoint),
+and the [ASI scanner](ASITiger).
 
 The Projector plugin's interface shows three tabs: Point and Shoot,
 ROIs, and Setup. How to operate each tab is described in detail below.
@@ -152,7 +152,7 @@ It's also possible to run multiple ROIs:
 1.  Click the ROI Manager button to display ImageJ's ROI Manager.
 2.  Draw an ROI, and press "Add." The ROI will be included in the list.
     This is further detailed in [Drawing Multiple ImageJ
-    ROIs](#drawing-multiple-imagej-rois "wikilink").
+    ROIs](#drawing-multiple-imagej-rois).
 3.  Press "Set ROI(s)", turn on Live mode, and then "Run Rois now!"
 
 Pressing "Run ROIs now!" is a good way to phototarget the specimen
@@ -192,7 +192,7 @@ other software packages, some differences are:
     drawing another ROI.
 2.  To change a ROI that has already been added to the ROI Manager list:
     -   Select the ROI. The easiest way to select a ROI is clicking on
-        the label as explained in the [tips](#tips "wikilink");
+        the label as explained in the [tips](#tips);
         alternatively, select the entry in the ROI Manager list.
     -   Reshape the ROI with the square white handles, or to change the
         type of ROI, draw the new ROI.

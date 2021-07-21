@@ -84,7 +84,7 @@ PVCAM compatible cameras
 </td>
 <td markdown="1">
 
-[MMConfig_pvcam_simple.cfg](media/MMConfig_pvcam_simple.cfg "wikilink")
+[MMConfig_pvcam_simple.cfg](media/MMConfig_pvcam_simple.cfg)
 
 </td>
 </tr>
@@ -171,7 +171,7 @@ C:\\Program Files\\Micro-Manager1.3
 where you should replace 'username' with your username.
 {% include notice icon="info" content="The directory 'Appdata' is not visible to the Windows file explorer." %}
 
---[Nico](/users/Nico "wikilink") 11:33, 31 August 2007 (PDT)
+--[Nico](/users/Nico) 11:33, 31 August 2007 (PDT)
 
 ## Notable changes
 

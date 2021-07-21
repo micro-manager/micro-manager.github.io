@@ -34,26 +34,26 @@ academic research community at a microscopy development lab.
 These are the wiki pages I contribute to and maintain:
 
 -   DeviceAdapters
-    -   [Andor EM/CCD cameras](/Andor "wikilink")
-    -   [Andor sCMOS cameras](/AndorSDK3 "wikilink")
-    -   [Andor Laser Combiner](/AndorLaserCombiner "wikilink")
-    -   [Andor MicroPoint](/MicroPoint "wikilink")
-    -   [Andor Mosaic](/Mosaic3 "wikilink")
-    -   [Arduino](/Arduino "wikilink")
+    -   [Andor EM/CCD cameras](/Andor)
+    -   [Andor sCMOS cameras](/AndorSDK3)
+    -   [Andor Laser Combiner](/AndorLaserCombiner)
+    -   [Andor MicroPoint](/MicroPoint)
+    -   [Andor Mosaic](/Mosaic3)
+    -   [Arduino](/Arduino)
 -   Plugins
-    -   [Projector plugin](/Projector "wikilink")
+    -   [Projector plugin](/Projector)
 -   General Documentation
     -   [Article comparing µManager with other microscopy
-        software](/Comparison_with_other_microscopy_software "wikilink")
-    -   [Alignment of Yokogawa spinning disk](/CSU_Alignment "wikilink")
+        software](/Comparison_with_other_microscopy_software)
+    -   [Alignment of Yokogawa spinning disk](/CSU_Alignment)
     -   [Installation report of UT Southwestern
-        Confocal](/Setup_UTSW_SD "wikilink")
+        Confocal](/Setup_UTSW_SD)
 -   Operating Systems
-    -   [Personal computer setup](/Personal_computer_setup "wikilink")
+    -   [Personal computer setup](/Personal_computer_setup)
     -   [Linux installation from source
-        (Gentoo)](/Linux_installation_from_source_(Gentoo) "wikilink")
+        (Gentoo)](/Linux_installation_from_source_(Gentoo))
     -   [Linux installation from source
-        (Ubuntu)](/Linux_installation_from_source_(Ubuntu) "wikilink")
+        (Ubuntu)](/Linux_installation_from_source_(Ubuntu))
 
 ## Systems Setup
 

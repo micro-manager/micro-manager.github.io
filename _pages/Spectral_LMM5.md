@@ -5,4 +5,4 @@ redirect_from: /wiki/Spectral_LMM5
 layout: page
 ---
 
-1.  REDIRECT [SpectralLMM5](SpectralLMM5 "wikilink")
+1.  REDIRECT [SpectralLMM5](SpectralLMM5)

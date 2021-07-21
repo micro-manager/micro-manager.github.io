@@ -5,7 +5,7 @@ redirect_from: /wiki/ChuoSeiki_QT
 layout: page
 ---
 
-## [ChuoSeiki](ChuoSeiki "wikilink") QT
+## [ChuoSeiki](ChuoSeiki) QT
 
 <table>
 <tr>
@@ -105,7 +105,7 @@ All (uses serial interface)
 </td>
 <td markdown="1">
 
-1.4.23 20181220 ([Nightly Builds](Nightly_Builds "wikilink"))
+1.4.23 20181220 ([Nightly Builds](Nightly_Builds))
 
 </td>
 </tr>

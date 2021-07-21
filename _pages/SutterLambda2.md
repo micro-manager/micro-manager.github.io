@@ -51,7 +51,7 @@ converter, drivers can be found
 only works with an empty wheel). If speed `#1` does not work you can try
 the slowest (speed `#7` IIRC). Best practice is to [set the desired
 wheel speed during
-startup](Micro-Manager_Configuration_Guide#startup-presets "wikilink"),
+startup](Micro-Manager_Configuration_Guide#startup-presets),
 i.e. in your `Startup` Preset of the `System` Group.
 
 ### Lambda VF5

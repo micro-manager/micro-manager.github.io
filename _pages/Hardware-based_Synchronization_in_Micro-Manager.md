@@ -60,17 +60,17 @@ any device to support triggering, as well as Z stages and XY-stages
 (although most XY stages will be too slow for this approach). Currently,
 the device adapters that have been written to support triggering are:
 
--   [AgilentLaserCombiner](AgilentLaserCombiner "wikilink") -- Laser
+-   [AgilentLaserCombiner](AgilentLaserCombiner) -- Laser
     channel switching
--   [Arduino](Arduino "wikilink") -- TTL and DAC output states
--   [ASIStage](ASIStage "wikilink") -- ASI piezo focus drives
--   [ESIOImagingControllers](ESIOImagingControllers "wikilink") -- AOTFs
+-   [Arduino](Arduino) -- TTL and DAC output states
+-   [ASIStage](ASIStage) -- ASI piezo focus drives
+-   [ESIOImagingControllers](ESIOImagingControllers) -- AOTFs
     (laser combiners) and piezo focus drives
--   [MCL NanoDrive](MCL_NanoDrive "wikilink") -- MadCityLabs piezo XY
+-   [MCL NanoDrive](MCL_NanoDrive) -- MadCityLabs piezo XY
     and Z drives
--   [Märzhäuser](Marzhauser "wikilink") (TANGO controller) -- Märzhäuser
+-   [Märzhäuser](Marzhauser) (TANGO controller) -- Märzhäuser
     piezo focus drive
--   [National\_Instruments](National_Instruments "wikilink") -- TTL
+-   [National\_Instruments](National_Instruments) -- TTL
     output states (1.4.22 and later)
 
 Each of these devices has a property through which the user can turn on

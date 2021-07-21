@@ -5,4 +5,4 @@ redirect_from: /wiki/Thorlabs_DCxxxx
 layout: page
 ---
 
-1.  REDIRECT [ThorlabsDCxxxx](ThorlabsDCxxxx "wikilink")
+1.  REDIRECT [ThorlabsDCxxxx](ThorlabsDCxxxx)

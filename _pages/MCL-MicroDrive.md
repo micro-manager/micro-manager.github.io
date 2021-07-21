@@ -5,4 +5,4 @@ redirect_from: /wiki/MCL-MicroDrive
 layout: page
 ---
 
-1.  REDIRECT [MCL MicroDrive](MCL_MicroDrive "wikilink")
+1.  REDIRECT [MCL MicroDrive](MCL_MicroDrive)

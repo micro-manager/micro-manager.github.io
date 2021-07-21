@@ -64,5 +64,5 @@ group called 'Startup' that sets these parameters (and anything else you
 want to be set on startup). Likewise, the preset 'Shutdown' will be set
 when Micro-Manager shuts down.
 
---[Nico](/users/Nico "wikilink") 17:52, 31 May 2008 (PDT)
+--[Nico](/users/Nico) 17:52, 31 May 2008 (PDT)
 

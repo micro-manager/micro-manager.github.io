@@ -5,4 +5,4 @@ redirect_from: /wiki/Autofocus_Device_Adapter
 layout: page
 ---
 
-1.  REDIRECT [SimpleAutofocus](SimpleAutofocus "wikilink")
+1.  REDIRECT [SimpleAutofocus](SimpleAutofocus)

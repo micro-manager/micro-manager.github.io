@@ -58,9 +58,9 @@ to confirm that you do want to install to that folder.
 ### Disable computer power savings
 
 Disable power saving in the
-[BIOS](Personal_computer_setup#bios "wikilink"). For Windows Vista and
+[BIOS](Personal_computer_setup#bios). For Windows Vista and
 later, also disable in PCI/e power management and USB suspend saving in
-[Power Options](Personal_computer_setup#power-options "wikilink").
+[Power Options](Personal_computer_setup#power-options).
 
 ### (USB only) Finding a dedicated USB bus
 
@@ -68,13 +68,13 @@ High-bandwidth USB cameras like iXon Life and iXon Ultra (Note Ultra and
 Life 888 models are USB 3.0, 897 models are USB 2.0)may lose
 communication during imaging if they share a USB bus with another high
 bandwidth USB device (like the Nikon Ti-E, some USB memory keys, etc).
-Plug the camera into it's own [USB bus](#windows-usb-bus "wikilink") on
+Plug the camera into it's own [USB bus](#windows-usb-bus) on
 the computer.
 
 ## Andor SRRF-Stream
 
 <font style="color: blue; background: yellow"> ***New*** </font> [Andor
-SRRF-Stream](Andor_SRRF-Stream "wikilink") for iXon Ultra and Life
+SRRF-Stream](Andor_SRRF-Stream) for iXon Ultra and Life
 models.
 
 ## Device Configuration
@@ -623,7 +623,7 @@ External), exposure time shorter than the triggering interval
 ### Dual camera setup
 
 The main resource for setting up multiple cameras is discussed on the
-[Utility &gt; Multi-Camera](Utilities#multi-camera "wikilink")
+[Utility &gt; Multi-Camera](Utilities#multi-camera)
 DeviceAdapter page. This section supplements that information with
 Andor-specific screenshots and instructions.
 
@@ -631,7 +631,7 @@ When you add your Andor camera in the Hardware Configuration Wizard, you
 should see a drop-down menu that allows you to select the camera serial
 number. If you do not see more than 1 serial number in the drop-down you
 should [make sure all your cameras are present in the Device
-Manager](#install-pcie-driver "wikilink"). The screenshot below shows
+Manager](#install-pcie-driver). The screenshot below shows
 2 iXon USB cameras:
 
 ![Screenshot: Device Manager showing 2 iXon Ultra cameras

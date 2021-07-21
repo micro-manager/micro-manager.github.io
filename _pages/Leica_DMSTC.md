@@ -5,4 +5,4 @@ redirect_from: /wiki/Leica_DMSTC
 layout: page
 ---
 
-1.  REDIRECT [LeicaDMSTC](LeicaDMSTC "wikilink")
+1.  REDIRECT [LeicaDMSTC](LeicaDMSTC)

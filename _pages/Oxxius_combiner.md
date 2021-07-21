@@ -98,7 +98,7 @@ None
 
 Foreword: This Device Adapter relates to laser combiners and to BTC-AOM
 controllers. For stand-alone LaserBoxx sources, refer to the Device
-Adapter named [Oxxius](Oxxius "wikilink").
+Adapter named [Oxxius](Oxxius).
 
 ## Installation
 

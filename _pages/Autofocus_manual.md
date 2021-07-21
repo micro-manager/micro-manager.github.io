@@ -10,7 +10,7 @@ layout: page
 Micro-Manager needs to be told which autofocus device or plugin to use.
 To do so, click on the Autofocus Options button on the main window.
 
-See also [Simple Autofocus Manual](SimpleAutofocus "wikilink").
+See also [Simple Autofocus Manual](SimpleAutofocus).
 
 The following are autofocus plugins available in Micro-Manager:
 

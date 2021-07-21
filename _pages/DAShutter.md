@@ -99,9 +99,9 @@ adapter
 Some diode lasers can be controlled with an analogue voltage, i.e. the
 lightoutput is equivalent to the applied voltage. Digital Analogue (DA)
 devices supported by Micro-manager (currently
-[DTOpenLayer](DTOpenLayer "wikilink"), the [Velleman
-K8055](Velleman_K8055 "wikilink") and the [Velleman
-K8061](Velleman_K8061 "wikilink")) can provide computer control of
+[DTOpenLayer](DTOpenLayer), the [Velleman
+K8055](Velleman_K8055) and the [Velleman
+K8061](Velleman_K8061)) can provide computer control of
 lightoutput. However, to make the DA device appear as a shutter in
 Micro-Manager you will need this adapter. .
 
@@ -123,5 +123,5 @@ output by setting the output voltage. You can then shutter the light
 with the DA Shutter device. If you change the voltage while the shutter
 is closed, the light will come on again (which is counter-intuitive).
 
---[Nico](/users/Nico "wikilink") 16:02, 30 September 2008 (PDT)
+--[Nico](/users/Nico) 16:02, 30 September 2008 (PDT)
 

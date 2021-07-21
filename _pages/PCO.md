@@ -5,4 +5,4 @@ redirect_from: /wiki/PCO
 layout: page
 ---
 
-1.  REDIRECT [PCO Camera](PCO_Camera "wikilink")
+1.  REDIRECT [PCO Camera](PCO_Camera)
