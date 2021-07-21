@@ -118,7 +118,7 @@ layout: page
 
 ## Appendix
 
-### Startup Script (media/MMStartup.bsh)
+### Startup Script (MMStartup.bsh)
 
 ```
 // Set FRAPPA galvo position to 6.5 degrees for this system's light
@@ -162,7 +162,7 @@ gui.refreshGUI();  // Shows above selected channel.
 -   [FRAPPA bypass](https://gist.github.com/omsai/5214107)
 -   [Laser shutter](https://gist.github.com/omsai/1872080)
 
-### Configuration File (media/Spinning-disk.cfg)
+### Configuration File (Spinning-disk.cfg)
 
 ```
    # Generated by Configurator on Wed Mar 20 18:52:39 CDT 2013
