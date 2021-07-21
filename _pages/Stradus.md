@@ -127,7 +127,7 @@ Micro-Manager Device/Property Manager will restore laser emission.
 
 Below is a screenshot of a properly configured Stradus Laser:
 
-![](media/UMgrStradus.JPG "UMgrStradus.JPG")
+![](media/UMgrStradus2.jpg "UMgrStradus2.jpg")
 
 The Stradus GUI software, shown below, which is included on the software
 CD shipped with Stradus lasers may be helpful for initial configuration
