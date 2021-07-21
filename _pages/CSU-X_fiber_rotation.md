@@ -15,7 +15,7 @@ connector at the scanhead itself.
 
 The image below shows the fiber connector:
 
-![](media/CSUX.jpg "CSUX.jpg")
+![](/media/CSUX.jpg)
 
 Unscrew the four screws just around the connector with a 1.5 mm allen
 wrench (make sure that you do not loose the screws when they fall out!).
@@ -29,9 +29,9 @@ Check alignment using a homogenous sample. Here, I used a highlighter
 marker pen and scribbled on a coverslip.
 
 Image before rotation:
-![](media/SpDiskFiberAllignment-1.jpg "SpDiskFiberAllignment-1.jpg")
+![](/media/SpDiskFiberAllignment-1.jpg)
 
 Image after rotation (I used a considerably lower laser power for this
 image):
-![](media/SpDiskFiberAllignment-2.jpg "SpDiskFiberAllignment-2.jpg")
+![](/media/SpDiskFiberAllignment-2.jpg)
 

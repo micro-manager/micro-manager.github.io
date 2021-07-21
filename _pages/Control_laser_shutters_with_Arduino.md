@@ -60,7 +60,7 @@ In order to build the cicuit:
 
 This is the picture of circuit.
 
-![](media/Control_laser_shutters_with_Arduino-Scheme.jpg "Control_laser_shutters_with_Arduino-Scheme.jpg")
+![](/media/Control_laser_shutters_with_Arduino-Scheme.jpg)
 
 Finally connect Arduino to pc with USB cable and include it in hardware
 configuration wizard.

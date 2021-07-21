@@ -116,7 +116,7 @@ out which device is the K8055, open the Device Manager, open the tab
 appear, one named "HID-compliant device", the other called "USB Human
 Interface Device".
 
-![](media/DeviceManager.png "DeviceManager.png")
+![](/media/DeviceManager.png)
 
 Double click on the "USB Human Interface Device", select the "Driver"
 tab and click on "Update Driver". (On Windows 7 we found that we needed
@@ -126,26 +126,26 @@ Configuration Wizard, do not let Windows connect to Windows Update. On
 the next page, select "Install from a list or sepcific
 location(Advanced)".
 
-![](media/HardwareUpdate2.png "HardwareUpdate2.png")
+![](/media/HardwareUpdate2.png)
 
 On the next page, select "Don't search. I will choose the driver to
 install".
 
-![](media/HardwareUpdate3.png "HardwareUpdate3.png")
+![](/media/HardwareUpdate3.png)
 
 Click on the "Have Disk" button.
 
-![](media/HwarderUpdate4.png "HwarderUpdate4.png")
+![](/media/HwarderUpdate4.png)
 
 Click "Browse" and go to the directory which contains the downloaded
 K8055 Driver (link above) files. Select the file "K8055\_libusb.inf".
 
-![](media/K8055-instruct1.jpg "K8055-instruct1.jpg")
+![](/media/K8055-instruct1.jpg)
 
 This should install the appropriate driver. After finalizing the wizard,
 your Device Manager should look as follows:
 
-![](media/DeviceManagerFinal.png "DeviceManagerFinal.png")
+![](/media/DeviceManagerFinal.png)
 
 --[Nico](/users/Nico) 18:21, 15 December 2007 (PST)
 

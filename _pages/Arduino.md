@@ -271,7 +271,7 @@ require a few additional components:
 
 Those should be wired as follow:
 
-![](media/TLV5618_wiring.png "TLV5618_wiring.png")
+![](/media/TLV5618_wiring.png)
 
 Notes:
 
@@ -308,11 +308,11 @@ Additional information is available on those websites:
 is properly set, the response to a ramp command is fairly linear (see
 image below). Note that the y scale is arbitrary and the x scale is ms.
 
-![](media/TLV5618-linearity.png "TLV5618-linearity.png")
+![](/media/TLV5618-linearity.png)
 
 **Response time**:
 
-![](media/TLV5618_response.png "TLV5618_response.png")
+![](/media/TLV5618_response.png)
 
 ## Project Tutorials
 

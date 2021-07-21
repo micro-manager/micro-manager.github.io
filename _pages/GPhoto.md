@@ -78,7 +78,7 @@ You can now use the camera in Micro-Manager.
 
 ## Properties
 
-![](media/SimpleCamera-Settings.png "SimpleCamera-Settings.png")
+![](/media/SimpleCamera-Settings.png)
 
 To access configuration settings, open the "Tools" menu and select
 "Device/Property Browser". The following settings are available:

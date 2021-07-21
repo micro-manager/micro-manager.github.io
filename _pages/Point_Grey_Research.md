@@ -96,7 +96,7 @@ Blackfly BFLY-U3-23S6M-C
 
 Histograms of the per pixel variance of a Hamamatsu ORCA-Flash4.0 v2
 camera and 4 different Point Grey GS3-U3-51S5M-C
-cameras.![](media/Gs3_u3_51s5m_c_variance_hist.png "Gs3_u3_51s5m_c_variance_hist.png")
+cameras.![](/media/Gs3_u3_51s5m_c_variance_hist.png)
 The data was acquired at 50Hz in a 512x512 pixel ROI centered on the
 camera chip. Median values are 0.84e-^2 for the ORCA-Flash4.0 and
 2.6e-^2 for the GS3-U3-51S5M-C cameras.

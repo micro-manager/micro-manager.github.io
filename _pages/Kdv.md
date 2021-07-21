@@ -57,7 +57,7 @@ You can now use the focus drive in Micro-Manager.
 
 ## Properties
 
-![](media/Kdv_focus_drive_settings.png "Kdv_focus_drive_settings.png")
+![](/media/Kdv_focus_drive_settings.png)
 
 The following properties are currently implemented:
 

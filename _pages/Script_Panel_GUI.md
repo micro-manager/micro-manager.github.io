@@ -19,7 +19,7 @@ Tutorials for scripting in Beanshell and pycro-manager can be found
 
 Scripts are edited and run from the ScriptPanel (in the Tools menu):
 
-![](media/ScriptPanel.png "ScriptPanel.png")
+![](/media/ScriptPanel.png)
 
 Scripts (files) can be added to the Script-Button Panel. They can be run
 with the 'Run' button or by double-clicking the script name. The latter

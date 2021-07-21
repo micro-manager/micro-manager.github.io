@@ -8,7 +8,7 @@ layout: page
 The image flipper plugin lets you rotate and/or mirror images acquired
 by the camera.
 
-![](media/ImageFlipper.png "ImageFlipper.png")
+![](/media/ImageFlipper.png)
 
 Select the camera that the image transformation should apply to in the
 top-most dropdown menu. Use the "Mirror" checkbox and "Rotate" dropdown

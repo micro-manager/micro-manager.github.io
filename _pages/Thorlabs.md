@@ -114,7 +114,7 @@ micro-manager will load the stage adapter at startup. In Device Property
 Browser (menu: Tools \| Device Property Browser...) the stage appears
 as:
 
-![](media/Property_Browser_2011-03-25_16-03-56.png "Property_Browser_2011-03-25_16-03-56.png")
+![](/media/Property_Browser_2011-03-25_16-03-56.png)
 
 ### Using the XY stage
 

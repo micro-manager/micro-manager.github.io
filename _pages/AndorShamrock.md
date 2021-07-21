@@ -62,7 +62,7 @@ Micro-Manager (i.e. Tools-&gt;Hardware Configuration Wizard). Providing
 all dlls are in the right place and the device is on and connected to
 the computer, it should appear in the list of available devices to add.
 
-![](media/AddingSR.JPG "AddingSR.JPG")
+![](/media/AddingSR.JPG)
 
 Continue with addition of other devices such as cameras, microscopes,
 stage devices and save the configuration file that is generated.

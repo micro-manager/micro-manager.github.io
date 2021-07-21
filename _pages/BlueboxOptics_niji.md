@@ -150,14 +150,14 @@ To view or edit the niji properties, open the "Tools" menu and select
 
 For single LED excitation, two groups are required:
 
-![](media/Niji_configuration_settings.png "Niji_configuration_settings.png")
+![](/media/Niji_configuration_settings.png)
 
 -   "Channel Label" for selecting the LED channel
 -   "Global Intensity" to control the light output intensity (this
     affects all 7 LEDs).
 
-![](media/Niji_group_channel_label.png "Niji_group_channel_label.png")
-![](media/Niji_group_global_intensity.png "Niji_group_global_intensity.png")
+![](/media/Niji_group_channel_label.png)
+![](/media/Niji_group_global_intensity.png)
 
 By default, the individual LED intensities are set to 100%, but a
 different value can be set through MmStartup.bsh. For example, to set
@@ -182,26 +182,26 @@ visual inspection.
 
 This can be achieved by adding all 7 channel states in a group:
 
-![](media/Niji_group_multiled.png "Niji_group_multiled.png")
+![](/media/Niji_group_multiled.png)
 
 and creating presets of interest using a combination of any (multiple or
 single) channels:
 
-![](media/Niji_group_multiled_preset.png "Niji_group_multiled_preset.png")
+![](/media/Niji_group_multiled_preset.png)
 
 For completeness and maximum flexibility, it is possible to also add all
 7 intensities to the group if different max output intensities are
 required for each preset.
 
-![](media/Niji_group_multiled_intensity.png "Niji_group_multiled_intensity.png")
+![](/media/Niji_group_multiled_intensity.png)
 
 In that case, the output of each LED is defined by the maximum output
 allowed for the preset, multiplied by the global intensity given to the
 user as an additional group setting as in the "single LED presets"
 section above.
 
-![](media/Niji_group_multiled_intensity_preset1.png "Niji_group_multiled_intensity_preset1.png")
-![](media/Niji_group_multiled_intensity_preset2.png "Niji_group_multiled_intensity_preset2.png")
+![](/media/Niji_group_multiled_intensity_preset1.png)
+![](/media/Niji_group_multiled_intensity_preset2.png)
 
 ## Bi-directional communication
 

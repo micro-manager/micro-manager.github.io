@@ -148,7 +148,7 @@ Note. When installing the Micro-Manager in <code>C:\Program Files</code> access 
 
 In the main window choose *Tools -&gt; Hardware configuration wizard*.
 
-![](media/UM_HCW.png "UM_HCW.png")
+![](/media/UM_HCW.png)
 
 The process of hardware configuration consists of 6 steps:
 

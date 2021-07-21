@@ -51,7 +51,7 @@ menu:
 Pakpoom (Tom) Substoontorn provided the following explanation of the
 various settings in the autofocus dialog:
 
-![](media/AutoFocusDialog.gif "AutoFocusDialog.gif")
+![](/media/AutoFocusDialog.gif)
 
 Auto Focus Channel is the channel with which the autofocussing will be
 carried out. Currently, the plugin uses the configuration preset group

@@ -67,7 +67,7 @@ and/or monitored through µ-manager device/property browser:
 Below you can see a screenshot of an Omicron “…xX”-Laser Series module
 controlled via the device/property browser:
 
-![](media/Omicronproperties.jpg "Omicronproperties.jpg")
+![](/media/Omicronproperties.jpg)
 
 For support on using the Omicron Laser Controller device adaptor please
 contact: mail@omicron-laser.de
@@ -86,7 +86,7 @@ COM Port the Cobolt laser is connected to. After that please add an
 Cobolt device adaptor in the hardware configuration wizard and make the
 following settings:
 
-![](media/Omicron2.png "Omicron2.png")
+![](/media/Omicron2.png)
 
 -   Max Power: Fill in the Max Power of your Cobolt laser (mW)
 -   Port: Select the Virtual COM Port of your Cobolt laser

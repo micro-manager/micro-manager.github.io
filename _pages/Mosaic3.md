@@ -49,7 +49,7 @@ Install the Driver Pack and when prompted for the destination location
 enter the path where Micro-Manager is installed as shown in the example
 below.
 
-![](media/Installation_Destination.png "Installation_Destination.png")
+![](/media/Installation_Destination.png)
 
 -   Check that the driver for the PCIe card is recognized in the Device
     Manager as `PLDA > PLDA Windows Driver`.

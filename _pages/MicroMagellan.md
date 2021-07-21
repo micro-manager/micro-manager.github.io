@@ -184,12 +184,12 @@ and either the grid or surface to define XY location and positions. If
 you have created surfaces, you can also elect to image the area between
 two defined surfaces with a buffer on either side.
 
-![](media/AcquireSpaceVolbtwnSurf.jpg "AcquireSpaceVolbtwnSurf.jpg")
+![](/media/AcquireSpaceVolbtwnSurf.jpg)
 
 XY footprints can be either grids or surfaces, and define the XY
 positions that are used for a given acquisition.
 
-![](media/SurfacesNonCube.jpg "SurfacesNonCube.jpg")
+![](/media/SurfacesNonCube.jpg)
 
 The Z slices that are collected for a given acquisition can be defined
 in several ways:

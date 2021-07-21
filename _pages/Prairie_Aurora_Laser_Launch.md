@@ -33,7 +33,7 @@ Velleman VM
 will interface with the AOTF and your computer. Thankfully, there is a
 Micro-Manager adapter available for the
 [Velleman\_K8061](Velleman_K8061) that makes life easier for
-this integration. ![](media/DB-25Pin_Diagram.jpg "DB-25Pin_Diagram.jpg")
+this integration. ![](/media/DB-25Pin_Diagram.jpg)
 
 ## What will you need to get started
 
@@ -62,7 +62,7 @@ grounding purposes Make sure that you *understand* the Analog and
 Digital outputs on the Velleman board before you proceed. For your
 reference, use the figure of the board below to attach cables correctly.
 
-![](media/Velleman_VM140_Board.jpg "Velleman_VM140_Board.jpg")
+![](/media/Velleman_VM140_Board.jpg)
 
 The Velleman extended USB interface board has two types of outputs (See
 Figure above). The output male pins on the right are Analog outputs
@@ -80,7 +80,7 @@ connections up. Here is a reference figure for understanding the
 connections between the ribbon cable and the Digital/ Analog Female
 pins.
 
-![](media/Circuit_Connection.jpg "Circuit_Connection.jpg")
+![](/media/Circuit_Connection.jpg)
 
 ## Setting up the Analog Connections
 
@@ -140,7 +140,7 @@ to set up the pre-initialization settings for the selected devices.
 Click on the value boxes in the third column and set up the values as
 follows:
 
-![](media/Device_Property.jpg "Device_Property.jpg")
+![](/media/Device_Property.jpg)
 
 After this step just go through the next steps as directed and finish
 the setup by testing and saving the file. Make sure that you save this

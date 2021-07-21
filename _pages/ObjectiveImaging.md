@@ -127,8 +127,8 @@ file.
 
 Add the Objective Imaging Oasis Controller Hub. This change was
 introduced in v1.4.23. In versions prior, only XY control was provided,
-so a hub was not necessary. ![](media/Oasis1.png "Oasis1.png")
+so a hub was not necessary. ![](/media/Oasis1.png)
 
 Then select whichever hardware the OASIS board controls. E.g.,
 OasisXYStage, OasisZStage, OasisShutter\_1...
-![](media/Oasis2.png "Oasis2.png")
+![](/media/Oasis2.png)

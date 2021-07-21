@@ -10,7 +10,7 @@ The MultiChannelShading allows independent shading correction
 replaced by the Flat-Fiedl Correction plugin as of Micro-Manager version
 1.4.20.2014118. The plugin dialog looks like this:
 
-![](media/MCS_screenshot.jpg "MCS_screenshot.jpg")
+![](/media/MCS_screenshot.jpg)
 
 To use it, you first must select the group in which the channels you
 will be applying shading corrections to are defined.

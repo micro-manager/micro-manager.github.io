@@ -18,7 +18,7 @@ ROIs, and Setup. How to operate each tab is described in detail below.
 
 ## Setup tab
 
-![](media/Plugin_projector-setup.png "Plugin_projector-setup.png")
+![](/media/Plugin_projector-setup.png)
 
 The Setup tab allows you to test the phototargeting device and perform
 initial calibration. Press On and Off buttons to turn the light on and
@@ -62,7 +62,7 @@ different objectives.
 
 ## Point and Shoot tab
 
-![](media/Plugin_projector-point_and_shoot.png "Plugin_projector-point_and_shoot.png")
+![](/media/Plugin_projector-point_and_shoot.png)
 
 Point and Shoot lets you phototarget a small region instantaneously, by
 clicking on a live image of the specimen. Galvo-based devices fire a
@@ -77,7 +77,7 @@ clicked pixel. The procedure is very simple:
 
 ## ROIs tab
 
-![](media/Plugin_projector-rois.png "Plugin_projector-rois.png")
+![](/media/Plugin_projector-rois.png)
 
 The Regions of Interest (ROIs) tab lets you specify regions on the image
 to be phototargeted. Phototargeting of an ROI can be carried out

@@ -10,7 +10,7 @@ section: Events
 <tr>
 <td markdown="1">
 
-![](media/ASCB_2011_logo.JPG "ASCB_2011_logo.JPG")
+![](/media/ASCB_2011_logo.JPG)
 
 </td>
 <td markdown="1">

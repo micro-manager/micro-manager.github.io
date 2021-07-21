@@ -17,20 +17,20 @@ describes the process for setting up a new hotkey.
     this screenshot, we have created a script "Exposure.bsh" that sets
     the exposure time to 50ms, and then refreshes the GUI so it shows
     the new exposure time.
-    ![](media/Hotkey1.png "Hotkey1.png")
+    ![](/media/Hotkey1.png)
 3.  In the upper-left corner of the scripting panel, click the "Add"
     button. This will add the script to the list of scripts that can be
     used for shortcuts.
-    ![](media/Hotkey2.png "Hotkey2.png")
+    ![](/media/Hotkey2.png)
 4.  Go to the Tools menu and select "Shortcuts" to bring up the hotkeys
     menu.
-    ![](media/Hotkey3.png "Hotkey3.png")
+    ![](/media/Hotkey3.png)
 5.  Click the "Add" button. This will add a new row that, by default,
     has an action of "Snap" and a corresponding command key of "space".
     Click on the space icon; it should turn red. Hit 1, to change the
     hotkey to trigger when you type 1. Click on "Snap" and a menu will
     come up; at the bottom should be our Exposure.bsh script. Select it.
-    ![](media/Hotkey4.png "Hotkey4.png")
+    ![](/media/Hotkey4.png)
 6.  Close the hotkeys dialog. Now, whenever you type 1 in the program
     and you aren't modifying a text field, the exposure time will be set
     to 50ms.
