@@ -9,56 +9,55 @@ layout: page
 
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th><p>Version</p></th>
 <th><p>1.4.13 (64-bit)</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Operating System</p></td>
 <td><p>Windows 7 Professional 64-bit</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Facility</p></td>
 <td><p>UT Southwestern Live Cell Imaging Facility (Prof. Kate Luby-Phelps, Abhijit Bugde)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>End User</p></td>
 <td><p>Salman Banani, et al</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Vendor</p></td>
 <td><p>Micro-Manager setup by Pariksheet Nanda (Andor)</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Dates Setup</p></td>
 <td><p>2013-03-19 to 2013-03-21</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Total Time Spent</p></td>
 <td><p>8 hours (4 of those hours on external Python scripts)</p></td>
 </tr>
-<tr class="odd">
-<td><p>Comments</p></td>
-<td><p>Green Flags</p></td>
-</tr>
-<tr class="even">
+<tr>
+<td><p>Comments: Green Flags</p></td>
 <td><ul>
 <li>Searching nabble (mailing list) answered most questions.</li>
 <li>Beanshell scripting is powerful- less time hunting; more time coding.</li>
 </ul></td>
+</tr>
+<tr>
+<td><p>Comments: Red Flags</p></td>
 <td><ul>
 <li>Not enough time left over to optimize system- jitter when streaming in MDA.</li>
 </ul></td>
 </tr>
-<tr class="odd">
-<td><figure>
+<tr>
+<td colspan="2"><figure>
 <img src="media/UTSW_SD_FigureJ.jpg" title="(A) Optical train of spinning disk system (B) Full system (C) Microscope" alt="(A) Optical train of spinning disk system (B) Full system (C) Microscope" /><figcaption aria-hidden="true">(A) Optical train of spinning disk system (B) Full system (C) Microscope</figcaption>
 </figure></td>
-<td></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Components</p></td>
 <td><ul>
 <li><a href="NikonTI"> Ti-E Microscope with TIRF and Intensilight (Nikon)</a></li>
