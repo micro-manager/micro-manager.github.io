@@ -663,7 +663,7 @@ brightness and contrast.
 While using the 5D-Image Viewer the 'Histogram' section on the Main
 Window has three tabs for Channels, Metadata and Comments.
 
-![5D image window](media/5D-ImageViewer2.PNG‎ "fig:5D image window")  
+![5D image window](media/5D-ImageViewer2.PNG "fig:5D image window")  
 Figure 13. Channels and Metadata tabs for 5D-Image View in Main
 Window.  
 

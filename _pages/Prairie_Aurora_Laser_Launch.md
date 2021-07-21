@@ -33,7 +33,7 @@ Velleman VM
 will interface with the AOTF and your computer. Thankfully, there is a
 Micro-Manager adapter available for the
 [Velleman\_K8061](Velleman_K8061) that makes life easier for
-this integration. ![](media/DB-25Pin_Diagram.jpg‎ "DB-25Pin_Diagram.jpg‎")
+this integration. ![](media/DB-25Pin_Diagram.jpg "DB-25Pin_Diagram.jpg")
 
 ## What will you need to get started
 

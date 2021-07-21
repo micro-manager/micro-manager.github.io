@@ -26,11 +26,11 @@ with a 60x objective using a Confocal spinning disk and 488nm laser:
 
 ### Condition 2: pixel wells saturated, vertical blooming
 
-![](media/Pixel_wells_saturated_vert_blooming.PNG‎ "Pixel_wells_saturated_vert_blooming.PNG‎")
+![](media/Pixel_wells_saturated_vert_blooming.PNG "Pixel_wells_saturated_vert_blooming.PNG")
 
 ### Condition 3: EM register saturated, horizontal blooming
 
-![](media/Em_register_saturated_horiz_blooming.PNG‎ "Em_register_saturated_horiz_blooming.PNG‎")
+![](media/Em_register_saturated_horiz_blooming.PNG "Em_register_saturated_horiz_blooming.PNG")
 
 ## Conclusion
 
