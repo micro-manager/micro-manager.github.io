@@ -11,7 +11,7 @@ layout: page
 <th><p>Device<br />
 <br />
 </p></th>
-<th><p><a href="Device_Support" title="wikilink">Micro-Manager</a><br />
+<th><p><a href="Device_Support">Micro-Manager</a><br />
 <br />
 </p></th>
 <th><p><a href="http://support.meta.moleculardevices.com/hardware/supported-hardware.php">Meta Imaging (Molecular Devices)</a><br />

@@ -61,12 +61,12 @@ layout: page
 <tr class="even">
 <td><p>Components</p></td>
 <td><ul>
-<li><a href="NikonTI" title="wikilink"> Ti-E Microscope with TIRF and Intensilight (Nikon)</a></li>
-<li><a href="Prior" title="wikilink"> XY + NanoScanZ stage (Prior)</a></li>
-<li><a href="Yokogawa" title="wikilink"> CSUX1 Spinning Disk Confocal head (Yokogawa)</a></li>
-<li><a href="SutterLambda" title="wikilink"> Filterwheel and smart shutter (Sutter)</a></li>
-<li><a href="Andor" title="wikilink"> iXon EMCCD camera (Andor)</a></li>
-<li><a href="AndorSDK3" title="wikilink"> Neo sCMOS Camera (Andor)</a></li>
+<li><a href="NikonTI"> Ti-E Microscope with TIRF and Intensilight (Nikon)</a></li>
+<li><a href="Prior"> XY + NanoScanZ stage (Prior)</a></li>
+<li><a href="Yokogawa"> CSUX1 Spinning Disk Confocal head (Yokogawa)</a></li>
+<li><a href="SutterLambda"> Filterwheel and smart shutter (Sutter)</a></li>
+<li><a href="Andor"> iXon EMCCD camera (Andor)</a></li>
+<li><a href="AndorSDK3"> Neo sCMOS Camera (Andor)</a></li>
 <li>(No DeviceAdapter) FRAPPA (Andor)</li>
 <li>Dell T3600 PC</li>
 </ul></td>

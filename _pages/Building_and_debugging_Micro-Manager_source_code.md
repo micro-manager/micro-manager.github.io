@@ -87,7 +87,7 @@ some of which are packaged:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="Andor" title="wikilink">Andor</a></p></td>
+<td><p><a href="Andor">Andor</a></p></td>
 <td><p>Andor SDK 2</p></td>
 <td><p>? (binary library),<br />
 GPL-3 (PCI driver)</p></td>
@@ -95,7 +95,7 @@ GPL-3 (PCI driver)</p></td>
 <td><p>Registration required</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="AndorSDK3" title="wikilink">AndorSDK3</a></p></td>
+<td><p><a href="AndorSDK3">AndorSDK3</a></p></td>
 <td><p>Andor SDK 3</p></td>
 <td><p>? (binary library),<br />
 ? (modified BitFlow library)</p></td>
@@ -103,42 +103,42 @@ GPL-3 (PCI driver)</p></td>
 <td><p>Registration required</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="dc1394" title="wikilink">dc1394</a></p></td>
+<td><p><a href="dc1394">dc1394</a></p></td>
 <td><p>libdc1394</p></td>
 <td><p>LGPL-2.1</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="GPhoto" title="wikilink">GPhoto</a></p></td>
+<td><p><a href="GPhoto">GPhoto</a></p></td>
 <td><p>gphoto2</p></td>
 <td><p>GPL-2</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="IDS_uEye" title="wikilink">IDS_uEye</a></p></td>
+<td><p><a href="IDS_uEye">IDS_uEye</a></p></td>
 <td><p><a href="http://en.ids-imaging.com/download-ueye.html">IDS 4.30</a></p></td>
 <td><p>?</p></td>
 <td><p>.run installer</p></td>
 <td><p>Registration required</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="OpenCVgrabber" title="wikilink">OpenCVgrabber</a></p></td>
+<td><p><a href="OpenCVgrabber">OpenCVgrabber</a></p></td>
 <td><p>opencv</p></td>
 <td><p>BSD</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="PrincetonInstruments" title="wikilink">PrincetonInstruments</a></p></td>
+<td><p><a href="PrincetonInstruments">PrincetonInstruments</a></p></td>
 <td><p>libvpcam-2.7.4.2</p></td>
 <td><p>? (binary library)</p></td>
 <td><p>Shell script</p></td>
 <td><p><a href="ftp://ftp.princetoninstruments.com/public/Software/Official/Linux/">Yes</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="PVCAM" title="wikilink">PVCAM</a></p></td>
+<td><p><a href="PVCAM">PVCAM</a></p></td>
 <td><p>libpvcam-2.7.0.0</p></td>
 <td><p>? (binary library),<br />
 GPL-2 (USB-2 driver),<br />
@@ -148,21 +148,21 @@ Shell script (PCI)</p></td>
 <td><p><a href="ftp://ftp.princetoninstruments.com/public/Software/Official/Drivers/Linux/">Yes</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="RaptorEPIX" title="wikilink">RaptorEPIX</a></p></td>
+<td><p><a href="RaptorEPIX">RaptorEPIX</a></p></td>
 <td><p>? (XCLIB or XCAP)</p></td>
 <td><p>? (<a href="http://www.epixinc.com/support/files.php">XCLIB "requires ID code"</a>)</p></td>
 <td><p>.bin installer</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="SpotCamera" title="wikilink">SpotCamera</a></p></td>
+<td><p><a href="SpotCamera">SpotCamera</a></p></td>
 <td><p>SPOT SDK</p></td>
 <td><p>?</p></td>
 <td><p>?</p></td>
 <td><p><a href="http://www.spotimaging.com/downloads.php">By request</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="TISCam" title="wikilink">TISCam</a></p></td>
+<td><p><a href="TISCam">TISCam</a></p></td>
 <td><p>uvc Kernel driver (USB)<br />
 <a href="https://github.com/GNOME/aravis">aravis</a> (Gig-E)</p></td>
 <td><p>GPL-2<br />
@@ -173,28 +173,28 @@ Yes</p></td>
 Yes</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="Video4Linux" title="wikilink">Video4Linux</a></p></td>
+<td><p><a href="Video4Linux">Video4Linux</a></p></td>
 <td><p>v4l2 Kernel driver</p></td>
 <td><p>GPL-2</p></td>
 <td><p>N/A</p></td>
 <td><p>N/A</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="ITC18" title="wikilink">ITC18</a></p></td>
+<td><p><a href="ITC18">ITC18</a></p></td>
 <td><p>ITC Driver</p></td>
 <td><p>?</p></td>
 <td><p>?</p></td>
 <td><p>By request</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="K8055" title="wikilink">K8055</a></p></td>
+<td><p><a href="K8055">K8055</a></p></td>
 <td><p><a href="http://libk8055.sourceforge.net/">libk8055</a></p></td>
 <td><p>GPL-2</p></td>
 <td><p>Source tarball only</p></td>
 <td><p>Not officially supported?</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="MCCDAQ" title="wikilink">MCCDAQ</a></p></td>
+<td><p><a href="MCCDAQ">MCCDAQ</a></p></td>
 <td><p>Unofficial <a href="ftp://lx10.tx.ncsu.edu/pub/Linux/drivers/PCI/">PCI</a> and <a href="ftp://lx10.tx.ncsu.edu/pub/Linux/drivers/USB/">USB HID</a>,<br />
 Official <a href="ftp://ftp.mccdaq.com/downloads/DAQFlex/Linux/">DAQFlex USB driver</a></p></td>
 <td><p>GPL-2 (Unofficial),<br />
@@ -205,7 +205,7 @@ Source tarball (Official)</p></td>
 Yes (Official)</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="MaestroServo" title="wikilink">MaestroServo</a></p></td>
+<td><p><a href="MaestroServo">MaestroServo</a></p></td>
 <td><p><a href="http://www.pololu.com/catalog/product/1356/resources">UscCmd</a></p></td>
 <td><p>?</p></td>
 <td><p>Commandline utility</p></td>

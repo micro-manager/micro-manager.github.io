@@ -166,19 +166,19 @@ using our own installer:
 </tr>
 <tr class="even">
 <td><p>4.4.1.672</p></td>
-<td><p><a href="Media:TiSDKRedist32-4.4.1.672.zip" title="wikilink">32-bit 4.4.1.672</a><br />
+<td><p><a href="Media:TiSDKRedist32-4.4.1.672.zip">32-bit 4.4.1.672</a><br />
 (updated July 3, 2013)</p></td>
 <td><p>2.0.2.1</p></td>
-<td><p><a href="Media:TiSDKRedist64-4.4.1.672.zip" title="wikilink">64-bit 4.4.1.672</a><br />
+<td><p><a href="Media:TiSDKRedist64-4.4.1.672.zip">64-bit 4.4.1.672</a><br />
 (updated July 3, 2013)</p></td>
 <td><p>2.0.5.1</p></td>
 </tr>
 <tr class="odd">
 <td><p>4.4.1.714</p></td>
-<td><p><a href="Media:TiSDKRedist32-4.4.1.714.zip" title="wikilink">32-bit 4.4.1.714</a><br />
+<td><p><a href="Media:TiSDKRedist32-4.4.1.714.zip">32-bit 4.4.1.714</a><br />
 (uploaded July 16, 2013)</p></td>
 <td><p>2.0.5.1</p></td>
-<td><p><a href="Media:TiSDKRedist64-4.4.1.714.zip" title="wikilink">64-bit 4.4.1.714</a><br />
+<td><p><a href="Media:TiSDKRedist64-4.4.1.714.zip">64-bit 4.4.1.714</a><br />
 (uploaded July 16, 2013)</p></td>
 <td><p>2.0.5.1</p></td>
 </tr>

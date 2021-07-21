@@ -12,7 +12,7 @@ layout: page
 </tr>
 <tr>
 <td><p>Authors:</p></td>
-<td><p>Nick Anthony. Based off of the <a href="SutterLambda" title="wikilink">SutterLambda</a> adapter</p></td>
+<td><p>Nick Anthony. Based off of the <a href="SutterLambda">SutterLambda</a> adapter</p></td>
 </tr>
 <tr>
 <td></td>

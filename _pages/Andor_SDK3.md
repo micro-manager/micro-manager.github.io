@@ -12,7 +12,7 @@ layout: page
 <tr>
 <td><p>Summary:</p></td>
 <td><p>Interfaces with Andor sCMOS cameras<br />
-(Use <a href="Andor" title="wikilink">Andor</a> DeviceAdapter instead for other Andor CCD and EMCCD cameras)</p></td>
+(Use <a href="Andor">Andor</a> DeviceAdapter instead for other Andor CCD and EMCCD cameras)</p></td>
 </tr>
 <tr>
 <td><p>Author</p></td>

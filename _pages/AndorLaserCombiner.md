@@ -143,9 +143,9 @@ of `0.0` since a fast AOTF gates the laser output.
 <tr class="even">
 <td><p>Workaround</p></td>
 <td><ol>
-<li>Install Prolific driver <a href=":File:media/PL2303_DriverInstaller_v1413_20110219.gz" title="wikilink">version 2.0.13.130</a></li>
+<li>Install Prolific driver <a href=":File:media/PL2303_DriverInstaller_v1413_20110219.gz">version 2.0.13.130</a></li>
 <li>Disable Microsoft server driver installation. When Windows says it's searching for drivers, it fetches them from the Microsoft server. Turn off this driver updating behavior because if e.g. the USB bus glitches for whatever reason it will try to reinstall the buggy version 3 drivers (you have to do this step even if you have Windows updates disabled) via the Start menu &gt; (Type in the "Search programs and files" box) change dev &gt; Change device installation settings &gt; No, Let me choose what to do &gt; Never install driver from Windows Update</li>
-<li>In your Device Manager, right-click on the Prolific ports and check the driver version. The good version is 2.0.13.130. Most likely you will see something like 3.4.48.272. Right-click on the Prolfic entry in the Device Manager &gt; Uninstall &gt; Delete the driver software for this device &gt; OK. Repeat for all Prolific COM20x ports. Then to pick up the next available driver in Windows, in the Device Manager click Action &gt; Scan for hardware changes). Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver. You will then need to reassign the COM ports to 20x which is detailed in <a href="#configure-alc_sdk-dependencies" title="wikilink">Configure ALC_SDK dependencies</a>.</li>
+<li>In your Device Manager, right-click on the Prolific ports and check the driver version. The good version is 2.0.13.130. Most likely you will see something like 3.4.48.272. Right-click on the Prolfic entry in the Device Manager &gt; Uninstall &gt; Delete the driver software for this device &gt; OK. Repeat for all Prolific COM20x ports. Then to pick up the next available driver in Windows, in the Device Manager click Action &gt; Scan for hardware changes). Until you get 2.0.13.130, repeat the above of uninstall+deleting the driver. You will then need to reassign the COM ports to 20x which is detailed in <a href="#configure-alc_sdk-dependencies">Configure ALC_SDK dependencies</a>.</li>
 </ol>
 <p>{% include notice icon="info" content="Andor's ALCs have since switched to using FTDI USB-serial convertors because Prolific considers the PL-2303 an obsolete product and Prolific won't fix the issue with Microsoft distributing faulty drivers." %}</p></td>
 </tr>
@@ -189,12 +189,12 @@ Nanda.
 <tbody>
 <tr class="odd">
 <td><p>32-bit</p></td>
-<td><p><a href=":File:libalc_x86.Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (32-bit)</a></p></td>
+<td><p><a href=":File:libalc_x86.Tar.gz">ALC_SDK Libraries 2.0 (32-bit)</a></p></td>
 <td><p><a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895">vcredist_x86.exe</a></p></td>
 </tr>
 <tr class="even">
 <td><p>64-bit</p></td>
-<td><p><a href=":File:libalc_x64.Tar.gz" title="wikilink">ALC_SDK Libraries 2.0 (64-bit)</a></p></td>
+<td><p><a href=":File:libalc_x64.Tar.gz">ALC_SDK Libraries 2.0 (64-bit)</a></p></td>
 <td><p><a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895">vcredist_x64.exe</a></p></td>
 </tr>
 </tbody>
