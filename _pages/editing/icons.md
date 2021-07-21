@@ -31,21 +31,21 @@ Optionally, override the icon size (default is `48px`):
 
 {% raw %}
 ```
-{% include icon name='SciJava' size='96px' %}
+{% include icon name='ImageJ' size='96px' %}
 ```
 {% endraw %}
 
-{% include icon name='SciJava' size='96px' %}
+{% include icon name='ImageJ' size='96px' %}
 
 Use `size=x96px` to set the height instead of the width:
 
 {% raw %}
 ```
-{% include icon name='Bio-Formats' size='x96px' %}
+{% include icon name='ImageJ' size='x96px' %}
 ```
 {% endraw %}
 
-{% include icon name='Bio-Formats' size='x96px' %}
+{% include icon name='ImageJ' size='x96px' %}
 
 You can also override the horizontal alignment:
 

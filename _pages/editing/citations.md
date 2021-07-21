@@ -7,11 +7,7 @@ nav-links: true
 
 This page demonstrates how to add a citation to your page.
 
-## Citation Options
-
-There are currently two options to include citations on your page:
-`include citation`: allows you to create a single-use citation, or footnote
-`include publication`: pulls a pre-formatted citation from a [list of frequently cited publications](/about/citing).
+`include citation` allows you to create a single-use citation, or footnote.
 
 ## Include Citations
 
@@ -42,24 +38,6 @@ doi='10.1371/journal.pone.0038011' %}
 *produces:*
 
 {% include cite content='journal' author='Albert Cardona, Stephan Saalfeld, Johannes Schindelin, Ignacio Arganda-Carreras, Stephan Preibisch, Mark Longair, Pavel Tomancak, Volker Hartenstein and Rodney J. Douglas' year='2012' title='TrakEM2 software for neural circuit reconstruction' journal='PLoS ONE' url='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038011' doi='10.1371/journal.pone.0038011' %}
-
-## Include Publication
-
-### Usage
-This include is primarily used to reference ImageJ/Fiji related plugins, and pulls from a list of already created citations. The list can be found [here](/about/citing).
-This include uses the following field:<br><br>
-**content** the input for this field must match the plugin/tool/package name listed on the [Citations page](/about/citing).
-
-### Example
-*The following liquid code:*
-```
-{% raw %}
-{% include publication content='3D Viewer' %}
-{% endraw %}
-```
-*produces:*
-
-{% include publication content='3D Viewer' %}
 
 ## Creating footnotes
 

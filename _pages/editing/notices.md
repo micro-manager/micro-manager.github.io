@@ -122,10 +122,10 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="bonej"
-  content="BoneJ includes a lot of useful plugins." %}{% endraw %}{% endhighlight %}
-{% include notice icon="bonej"
-  content="BoneJ includes a lot of useful plugins." %}
+{% highlight liquid %}{% raw %}{% include notice icon="fiji"
+  content="Fiji includes a lot of useful plugins." %}{% endraw %}{% endhighlight %}
+{% include notice icon="fiji"
+  content="Fiji includes a lot of useful plugins." %}
 
 ### Operating-system-specific commentary
 
@@ -136,9 +136,9 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="apple"
+{% highlight liquid %}{% raw %}{% include notice icon="macos"
   content="Some people really love macOS!" %}{% endraw %}{% endhighlight %}
-{% include notice icon="apple"
+{% include notice icon="macos"
   content="Some people really love macOS!" %}
 
 --------------

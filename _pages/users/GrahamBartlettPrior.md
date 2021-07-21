@@ -15,7 +15,7 @@ Now working at Prior Scientific, mainly focussed on Queensgate
 nanopositioning products.
 
 For questions about Prior device adapters, please use the [mailing
-list](Micro-Manager_Community "wikilink"). For any other questions,
+list](/Micro-Manager_Community "wikilink"). For any other questions,
 please go to [Prior.com](https://www.prior.com) and email our UK
 enquiries contact, who will forward any relevant enquiries to me. (Or if
 you're reading this at some point in the future, potentially to my

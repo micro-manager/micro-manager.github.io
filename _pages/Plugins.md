@@ -26,18 +26,18 @@ applications in microscopy:
 -   [Localization Microscopy](Localization_Microscopy "wikilink")
 -   [MicroMagellan](MicroMagellan "wikilink")
 -   [Mightex Polygon](Mightex_Polygon_Plugin "wikilink")
--   [Multi-Andor Control](Multi-Andor_Control "wikilink")
+-   Multi-Andor Control
 -   [MultiChannelShading](MultiChannelShading "wikilink")
 -   [Pixel Calibrator](Pixel_Calibrator_Plugin "wikilink")
 -   [Point and Shoot Analysis](Point_and_Shoot_Analysis "wikilink")
--   [PM/QI Auto White Balance](PM/QI_Auto_White_Balance "wikilink")
+-   PM/QI Auto White Balance
 -   [Photon Transfer Curve
     Assistant](Photon_Transfer_Curve_Assistant "wikilink")
 -   [Projector](Projector "wikilink")
 -   [Slide Explorer](Slide_Explorer_Plugin "wikilink")
 -   [SplitView](SplitView "wikilink")
 -   [Stage Control](Stage_Control "wikilink")
--   [Live Tracking](Tracker_Plugin "wikilink")
+-   Live Tracking
 
 In addition, plugins are available from third parties:
 

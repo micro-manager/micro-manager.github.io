@@ -948,7 +948,7 @@ select "Open".)
     -   [AutoLase](AutoLase "wikilink"): Real-time closed-loop control
         of density of photoactivated molecules during PALM measurement
         (Thomas Pengo, Seamus Holden)
-    -   [Live Tracking](Tracker_Plugin "wikilink") (revived): Use image
+    -   Live Tracking (revived): Use image
         correlation to countersteer the XY stage (Nico Stuurman, Mark
         Tsuchida)
     -   [pgFocus](pgFocus "wikilink"): Control the pgFocus open-source

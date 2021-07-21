@@ -51,7 +51,7 @@ Open (instead of simply double-clicking) the first time you open it.  See
 [Installation Notes](Micro-Manager_Installation_Notes)." %}
 
   - Under GNU/Linux platforms, you will need to [compile micro-manager from
-    source](Linux_installation_from_source_\(Ubuntu\) "wikilink").
+    source](Linux_installation_from_source_(Ubuntu) "wikilink").
 
 ### Partial list of differences with 1.4
 
@@ -112,7 +112,7 @@ requirements.
 time, try ctrl-click or right click, then select "Open".)
 
   - Under GNU/Linux platforms, you should [compile micro-manager from
-    source](Linux_installation_from_source_\(Ubuntu\) "wikilink").
+    source](Linux_installation_from_source_(Ubuntu) "wikilink").
 
 ## Micro-Manager 1.4.22 (August 14, 2015)
 

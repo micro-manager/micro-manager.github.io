@@ -30,7 +30,7 @@ layout: page
 Computer Setup
 
 -   [Personal Computer](Personal_computer_setup "wikilink")
--   [Mac OS X](OS_X_setup "wikilink")
+-   Mac OS X
 
 Yokogawa Spinning Disk:
 

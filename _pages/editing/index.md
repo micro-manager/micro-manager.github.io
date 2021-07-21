@@ -134,21 +134,19 @@ The following tables list all of this site's general-purpose includes:
 |--------------------------------------|----------------------------|
 | [citation](citations)                | Insert a citation          |
 | [cite](citations)                    | Insert a citation          |
-| [publication](TODO)                  | Insert a citation by name  |
-| [testimonial](TODO)                  | Insert a personal quote    |
+|  publication (TODO)                  | Insert a citation by name  |
+|  testimonial (TODO)                  | Insert a personal quote    |
 
 #### Linking
 
 | Include                           | Purpose                              |
 |-----------------------------------|--------------------------------------|
-| [link-banner](TODO)               | Insert a large, obvious link         |
+|  link-banner (TODO)               | Insert a large, obvious link         |
 | [github](linking#github)          | Link to a resource on GitHub         |
 | [javadoc](linking#javadoc)        | Link to a javadoc resource           |
-| [matlab](TODO)                    | Link to MATLAB documentation         |
+|  matlab (TODO)                    | Link to MATLAB documentation         |
 | [maven](linking#maven)            | Link to Maven artifacts              |
-| [person](people)                  | Link to a person's user page         |
-| [person-list](people#lists)       | Link to a list of user pages         |
-| [scholar](TODO)                   | Link to an article on Google Scholar |
+|  scholar (TODO)                   | Link to an article on Google Scholar |
 | [wikipedia](linking#wikipedia)    | Link to a Wikipedia page             |
 
 #### Symbols
@@ -159,14 +157,14 @@ The following tables list all of this site's general-purpose includes:
 | [button](buttons)                 | Insert a button            |
 | [key](keys)                       | Insert a keyboard shortcut |
 | [icon](icons)                     | Insert icons               |
-| [yes](TODO)                       | Insert a checkmark icon    |
-| [no](TODO)                        | Insert an X icon           |
+|  yes (TODO)                       | Insert a checkmark icon    |
+|  no (TODO)                        | Insert an X icon           |
 
 #### Media
 
 | Include                                      | Purpose                    |
 |----------------------------------------------|----------------------------|
-| [img](images#images)                         | Insert an image            |
+| [img](images)                                | Insert an image            |
 | [gallery](images#image-galleries)            | Insert an image gallery    |
 | [video](videos)                              | Embed a video              |
 
@@ -175,30 +173,32 @@ The following tables list all of this site's general-purpose includes:
 | Include                              | Purpose                               |
 |--------------------------------------|---------------------------------------|
 | [notice](notices)                    | Insert an informational notice banner |
-| [aside](TODO)                        | Float a right sidebar with commentary |
+|  aside (TODO)                        | Float a right sidebar with commentary |
 
 #### Source code
 
 | Include                              | Purpose                          |
 |--------------------------------------|----------------------------------|
-| [github-embed](TODO)                 | Embed a code snippet from GitHub |
-| [code-example](TODO)                 | Side-by-side code + result       |
+|  github-embed (TODO)                 | Embed a code snippet from GitHub |
+|  code-example (TODO)                 | Side-by-side code + result       |
 
 #### Miscellaneous
 
 | Include                              | Purpose                              |
 |--------------------------------------|--------------------------------------|
-| [quiz](TODO)                         | Insert a Q&A with hidden answer      |
-| [timeline](TODO)                     | Insert a horizontal timeline         |
-| [tooltip](TODO)                      | Add a tooltip appearing on mouseover |
-| [echo](TODO)                         | For debugging                        |
+|  quiz (TODO)                         | Insert a Q&A with hidden answer      |
+|  timeline (TODO)                     | Insert a horizontal timeline         |
+|  tooltip (TODO)                      | Add a tooltip appearing on mouseover |
+|  echo (TODO)                         | For debugging                        |
 
 #### TO CHANGE
 
 | Include                                      | What needs to happen               |
 |----------------------------------------------|------------------------------------|
-| [thumbnail](TODO)                            | Merge with img include             |
-| [thumbnail-link](TODO)                       | Merge with img include             |
-| [info-box](notices#info-box)                 | Delete after migrating to statbox  |
-| [clear](TODO)                                | Delete after purging all floats    |
-| [project](TODO)                              | Delete after improving statbox     |
+|  thumbnail (TODO)                            | Merge with img include             |
+|  thumbnail-link (TODO)                       | Merge with img include             |
+|  info-box                                    | Delete after migrating to statbox  |
+|  clear (TODO)                                | Delete after purging all floats    |
+|  project (TODO)                              | Delete after improving statbox     |
+|  person                  | Person pages not yet formalized         |
+|  person-list       | Person pages not yet formalized         |

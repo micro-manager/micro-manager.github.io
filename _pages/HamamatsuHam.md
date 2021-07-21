@@ -71,7 +71,7 @@ Hamamatsu DCAM compatible cameras
 </table>
 
 {% include notice icon="info" content="Formerly (up to Micro-Manager 1.4.16) there was a
-legacy [Hamamatsu](Hamamatsu wikilink) adapter (developed at UCSF) in
+legacy [Hamamatsu](Hamamatsu) adapter (developed at UCSF) in
 addition to the `HamamatsuHam`. That adapter will be retired in 1.4.17.
 It is still included in the OS X version, because HamamatsuHam is not
 supported on OS X. On Windows, if you have a hardware configuration

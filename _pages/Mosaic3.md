@@ -174,7 +174,7 @@ across and down and spacing between lattice points.
 ### Sequence table
 
 {% include notice icon="info" content="It's often better to use [Create
-Sequence](#create-sequence wikilink) to populate the sequence table
+Sequence](#create-sequence) to populate the sequence table
 instead of hand-filling an empty Sequence table. The Sequence table is
 being described first to introduce the nomenclature (particularly the
 Time Slot) of the Create Sequence generator." %}

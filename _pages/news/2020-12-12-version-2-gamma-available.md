@@ -11,4 +11,4 @@ been completely reworked, allowing for more powerful scripts and
 plugins. This was all enabled by a new internal data model for working
 with images and image metadata.
 
-Please visit the [Version 2.0](Version_2.0) homepage for more information.
+Please visit the [Version 2.0](/Version_2.0) homepage for more information.

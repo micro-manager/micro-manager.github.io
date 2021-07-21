@@ -81,8 +81,7 @@ and/or rapidly changing.
 
 -   *Communicating through serial ports using a terminal application*
     -   [Windows](Windows "wikilink") - Configuring HyperTerminal
-    -   [Useful terminal applications for Windows and
-        Mac](Useful_terminal_applications_for_Windows_and_Mac "wikilink")
+    -   Useful terminal applications for Windows and Mac
 
 <!-- -->
 
