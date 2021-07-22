@@ -4,7 +4,6 @@ title: BaumerOptronic
 redirect_from:
   - /wiki/BaumerOptronic
   - /wiki/Leica
-  - Leica
 layout: page
 ---
 
@@ -155,5 +154,5 @@ performing simple camera capabilities discovery.
     by [Eugene Dvoretsky](/users/radioxoma) (VSMU, BY), Jul.
     2014
 
-{% include Listserv_Search text="Leica" %}
+{% include Listserv_Search text="BaumerOptronic" %}
 </div>
