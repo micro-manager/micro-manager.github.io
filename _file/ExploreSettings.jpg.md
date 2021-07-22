@@ -7,3 +7,5 @@ redirect_from: /wiki/File:ExploreSettings.jpg
 
 Explore mode important settings include Z-step size, Channel group, and
 tile overlap
+
+{% include img src="ExploreSettings.jpg" %}

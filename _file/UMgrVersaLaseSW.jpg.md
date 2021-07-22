@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UMgrVersaLaseSW.jpg
 ---
 
 Pic of Stradus VersaLase GUI Software
+
+{% include img src="UMgrVersaLaseSW.jpg" %}

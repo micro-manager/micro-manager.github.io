@@ -6,3 +6,5 @@ redirect_from: /wiki/File:GigE-test-config.cfg
 ---
 
 A sample config file for GigE cameras.
+
+[GigE-test-config.cfg](/media/files/GigE-test-config.cfg)

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UM_set.png
 ---
 
 Standa8SMC4 UM\_set
+
+{% include img src="UM_set.png" %}

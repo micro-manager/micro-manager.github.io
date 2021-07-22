@@ -7,3 +7,5 @@ redirect_from: /wiki/File:SaveJVMCrashDumps.zip
 
 Windows registry file (.reg) to enable crash dump saving for java.exe
 and javaw.exe.
+
+[SaveJVMCrashDumps.zip](/media/files/SaveJVMCrashDumps.zip)

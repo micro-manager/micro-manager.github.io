@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Hardwarewiz.png
 
 Micro-manager's hardware configuration wizard showing a single
 ThorlabsAPTStage controller.
+
+{% include img src="Hardwarewiz.png" %}

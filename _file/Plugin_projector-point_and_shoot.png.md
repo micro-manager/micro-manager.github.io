@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Plugin_projector-point_and_shoot.png
 ---
 
 Projector Plugin: Tab 1 of 3: Point and Shoot
+
+{% include img src="Plugin_projector-point_and_shoot.png" %}

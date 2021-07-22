@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Micropoint-calibration.png
 ---
 
 Intermediary calibration images of MicroPoint using Projector plugin.
+
+{% include img src="Micropoint-calibration.png" %}

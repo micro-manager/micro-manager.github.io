@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Boxb.jpg
 ---
 
 Enclosed Arduino
+
+{% include img src="Boxb.jpg" %}

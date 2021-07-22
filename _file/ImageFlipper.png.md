@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ImageFlipper.png
 ---
 
 Screen shot of Image Flipper plugin
+
+{% include img src="ImageFlipper.png" %}

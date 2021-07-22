@@ -6,3 +6,5 @@ redirect_from: /wiki/File:CSUX.jpg
 ---
 
 Fiber connector of the CSUX scanhead
+
+{% include img src="CSUX.jpg" %}

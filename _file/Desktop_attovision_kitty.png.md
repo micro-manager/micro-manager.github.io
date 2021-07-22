@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Desktop_attovision_kitty.png
 
 A desktop showing a BDPathway being controlled by AttoVision over RDP
 and the serial commands being logged through Kitty / Putty
+
+{% include img src="Desktop_attovision_kitty.png" %}

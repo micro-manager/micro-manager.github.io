@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Aptconfig.png
 ---
 
 APT Configuration Utility v2.0.23388, Stage tab is open
+
+{% include img src="Aptconfig.png" %}

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_pipo.jpg
 ---
 
 PiPO X8 sitting next a niji lightsource
+
+{% include img src="Niji_pipo.jpg" %}

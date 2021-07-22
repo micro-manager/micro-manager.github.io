@@ -9,3 +9,5 @@ Microsoft's free utility, UVCview, showing the Andor Clara on it's own
 USB bus (not sharing the bus with other devices). This is essential to
 prevent USB buffer overflow errors since the USB stack does not
 discriminate priority of one device over another.
+
+{% include img src="Good_Clara_USB_Connection_cropped.JPG" %}

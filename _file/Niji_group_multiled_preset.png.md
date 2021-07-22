@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_group_multiled_preset.png
 ---
 
 White light Multi-LED preset for the niji
+
+{% include img src="Niji_group_multiled_preset.png" %}

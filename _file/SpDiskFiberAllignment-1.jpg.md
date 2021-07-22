@@ -6,3 +6,5 @@ redirect_from: /wiki/File:SpDiskFiberAllignment-1.jpg
 ---
 
 Flatfield image before rotation fiber in CSUX scanhead
+
+{% include img src="SpDiskFiberAllignment-1.jpg" %}

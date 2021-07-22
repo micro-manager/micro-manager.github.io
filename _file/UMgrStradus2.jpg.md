@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UMgrStradus2.jpg
 ---
 
 Screenshot of Vortran Stradus Property Browser
+
+{% include img src="UMgrStradus2.jpg" %}

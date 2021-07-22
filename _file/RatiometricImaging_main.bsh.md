@@ -6,3 +6,5 @@ redirect_from: /wiki/File:RatiometricImaging_main.bsh
 ---
 
 Beanshell for Ratiometric Imaging by Julien Husson. Main code.
+
+[RatiometricImaging_main.bsh](/media/files/RatiometricImaging_main.bsh)

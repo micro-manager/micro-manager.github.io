@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UMgrStradusSW.jpg
 ---
 
 Pic of Vortran Stradus SW
+
+{% include img src="UMgrStradusSW.jpg" %}

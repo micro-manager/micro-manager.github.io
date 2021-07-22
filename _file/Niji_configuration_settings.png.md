@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Niji_configuration_settings.png
 
 Configuration settings showing the two groups "Channel Label" and
 "Global Intensity"
+
+{% include img src="Niji_configuration_settings.png" %}

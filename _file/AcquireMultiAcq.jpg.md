@@ -6,3 +6,5 @@ redirect_from: /wiki/File:AcquireMultiAcq.jpg
 ---
 
 Run several acquisitions automatically
+
+{% include img src="AcquireMultiAcq.jpg" %}

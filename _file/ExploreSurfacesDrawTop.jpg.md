@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ExploreSurfacesDrawTop.jpg
 ---
 
 Example of outline of the footprint at the top of a lymph node sample
+
+{% include img src="ExploreSurfacesDrawTop.jpg" %}

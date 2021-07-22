@@ -7,3 +7,5 @@ redirect_from: /wiki/File:TLV5618_wiring.png
 
 Schematic of the wiring of the TLV5618 Texas Instruments DAC to an
 Arduino.
+
+{% include img src="TLV5618_wiring.png" %}

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Mm_aptstages.png
 ---
 
 Homing property groups shown in the Micro-manager main window.
+
+{% include img src="Mm_aptstages.png" %}

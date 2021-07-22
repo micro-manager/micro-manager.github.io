@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Kdv_focus_drive_settings.png
 ---
 
 Settings of kdv focus drive (z-stage)
+
+{% include img src="Kdv_focus_drive_settings.png" %}

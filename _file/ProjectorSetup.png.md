@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ProjectorSetup.png
 ---
 
 Screenshot of Projector plugin Setup tab in MM 2.0-gamma
+
+{% include img src="ProjectorSetup.png" %}

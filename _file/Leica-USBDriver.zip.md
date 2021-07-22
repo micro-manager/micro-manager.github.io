@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Leica-USBDriver.zip
 ---
 
 FTDI drivers for Leica microscopes
+
+[Leica-USBDriver.zip](/media/files/Leica-USBDriver.zip)

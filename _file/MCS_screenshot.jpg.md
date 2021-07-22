@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MCS_screenshot.jpg
 ---
 
 Screenshot of MultiChannelShading dialog box.
+
+{% include img src="MCS_screenshot.jpg" %}

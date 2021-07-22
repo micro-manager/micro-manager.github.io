@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_group_multiled_intensity_preset2.png
 ---
 
 Multi-LED group with intensities, white light high intensity preset
+
+{% include img src="Niji_group_multiled_intensity_preset2.png" %}

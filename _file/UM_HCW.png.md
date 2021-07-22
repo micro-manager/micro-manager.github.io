@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UM_HCW.png
 ---
 
 Standa8SMC4 UM\_set\_OpenCV
+
+{% include img src="UM_HCW.png" %}

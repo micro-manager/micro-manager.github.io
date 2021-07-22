@@ -6,3 +6,5 @@ redirect_from: /wiki/File:PgFocus_Realtime.png
 ---
 
 Streaming data is continuously graphed
+
+{% include img src="PgFocus_Realtime.png" %}

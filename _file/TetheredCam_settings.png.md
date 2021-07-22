@@ -6,3 +6,5 @@ redirect_from: /wiki/File:TetheredCam_settings.png
 ---
 
 Settings window of camera driver
+
+{% include img src="TetheredCam_settings.png" %}

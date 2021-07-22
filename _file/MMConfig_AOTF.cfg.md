@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_AOTF.cfg
 ---
 
 Example config file for the AOTF adapter
+
+[MMConfig_AOTF.cfg](/media/files/MMConfig_AOTF.cfg)

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_MCL_MicroDrive.cfg
 ---
 
 Mad City Labs Micro-Drive example configuration file
+
+[MMConfig_MCL_MicroDrive.cfg](/media/files/MMConfig_MCL_MicroDrive.cfg)

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_uEye.cfg
 ---
 
 Configuration file for IDS uEye cameras.
+
+[MMConfig_uEye.cfg](/media/files/MMConfig_uEye.cfg)

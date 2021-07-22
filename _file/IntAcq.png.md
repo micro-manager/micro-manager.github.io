@@ -6,3 +6,5 @@ redirect_from: /wiki/File:IntAcq.png
 ---
 
 Screenshot of Inteligent Acquisition plugin
+
+{% include img src="IntAcq.png" %}

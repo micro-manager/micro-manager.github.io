@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Ypipe_principal.gif
 ---
 
 Project Y-Pipe
+
+{% include img src="Ypipe_principal.gif" %}

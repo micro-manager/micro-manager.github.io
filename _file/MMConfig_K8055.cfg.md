@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_K8055.cfg
 ---
 
 Example configuration file to use a Velleman K8055 with Micro-Manager
+
+[MMConfig_K8055.cfg](/media/files/MMConfig_K8055.cfg)

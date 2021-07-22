@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_group_multiled.png
 ---
 
 Multi-LED group for the niji
+
+{% include img src="Niji_group_multiled.png" %}

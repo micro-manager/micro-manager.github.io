@@ -7,3 +7,5 @@ redirect_from: /wiki/File:AcquireGridSurfaces.jpg
 
 Grids and surfaces set up in Explore mode will populate the tabs at the
 top of the main Micro-Magellan window
+
+{% include img src="AcquireGridSurfaces.jpg" %}

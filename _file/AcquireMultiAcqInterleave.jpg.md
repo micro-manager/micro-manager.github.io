@@ -6,3 +6,5 @@ redirect_from: /wiki/File:AcquireMultiAcqInterleave.jpg
 ---
 
 Interleave timepoints from several acquisitions and run all
+
+{% include img src="AcquireMultiAcqInterleave.jpg" %}

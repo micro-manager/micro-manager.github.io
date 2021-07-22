@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_Firewire.cfg
 ---
 
 Simple config file for Firewire cameras
+
+[MMConfig_Firewire.cfg](/media/files/MMConfig_Firewire.cfg)

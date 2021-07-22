@@ -8,3 +8,5 @@ redirect_from: /wiki/File:TESM.bsh
 This is an example bean script that the Biomedical Imaging Group uses to
 drive the Instrutech ITC18. This is for our set up and for use with an
 Andor iXon camera but it can serve as an example.
+
+[TESM.bsh](/media/files/TESM.bsh)

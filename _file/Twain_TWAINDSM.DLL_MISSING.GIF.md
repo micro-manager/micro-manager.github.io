@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Twain_TWAINDSM.DLL_MISSING.GIF
 ---
 
 Error message when Twain.org TWAINDSM.DLL is not installed.
+
+{% include img src="Twain_TWAINDSM.DLL_MISSING.GIF" %}

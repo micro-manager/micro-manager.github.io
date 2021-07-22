@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_GPhoto.cfg
 ---
 
 Example GPhoto camera driver configuration file.
+
+[MMConfig_GPhoto.cfg](/media/files/MMConfig_GPhoto.cfg)

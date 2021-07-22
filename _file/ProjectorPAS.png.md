@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ProjectorPAS.png
 ---
 
 Screenshot of Projector Plugin tab Point and Shoot in MMM 2.0-gamma
+
+{% include img src="ProjectorPAS.png" %}

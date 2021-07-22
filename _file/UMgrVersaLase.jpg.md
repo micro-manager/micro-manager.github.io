@@ -6,3 +6,5 @@ redirect_from: /wiki/File:UMgrVersaLase.jpg
 ---
 
 Pic of Stradus VersaLase in the Property Browser
+
+{% include img src="UMgrVersaLase.jpg" %}

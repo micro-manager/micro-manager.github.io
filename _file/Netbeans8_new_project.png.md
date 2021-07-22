@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Netbeans8_new_project.png
 ---
 
 Creating a new project with Netbeans
+
+{% include img src="Netbeans8_new_project.png" %}

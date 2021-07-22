@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_MCL_NanoDrive.cfg
 ---
 
 Mad City Labs Nano-Drive configuration file
+
+[MMConfig_MCL_NanoDrive.cfg](/media/files/MMConfig_MCL_NanoDrive.cfg)

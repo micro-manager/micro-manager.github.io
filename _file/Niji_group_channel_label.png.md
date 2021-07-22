@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_group_channel_label.png
 ---
 
 Channel Label group for the niji
+
+{% include img src="Niji_group_channel_label.png" %}

@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Driver_warning_90i.png
 
 Libusb-win32 driver warning: Windows can't verify the publisher of this
 driver software
+
+{% include img src="Driver_warning_90i.png" %}

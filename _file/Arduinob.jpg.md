@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Arduinob.jpg
 ---
 
 Arduino in enclosure
+
+{% include img src="Arduinob.jpg" %}

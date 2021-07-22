@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Device_manager_unkown.png
 
 When connected for the first time, Windows 7's device manager displays
 the Nikon Eclipse 90i microscope as an unknown device
+
+{% include img src="Device_manager_unkown.png" %}

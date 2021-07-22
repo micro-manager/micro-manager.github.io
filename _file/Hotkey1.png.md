@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Hotkey1.png
 ---
 
 Setting up a new hotkey, part 1.
+
+{% include img src="Hotkey1.png" %}

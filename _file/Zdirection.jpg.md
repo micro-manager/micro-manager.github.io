@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Zdirection.jpg
 
 Hardware cofiguration wizard, step 3 of 6 defines the direction of Z
 movement
+
+{% include img src="Zdirection.jpg" %}

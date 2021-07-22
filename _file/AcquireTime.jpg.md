@@ -6,3 +6,5 @@ redirect_from: /wiki/File:AcquireTime.jpg
 ---
 
 Time tab allows you to set time intervals
+
+{% include img src="AcquireTime.jpg" %}

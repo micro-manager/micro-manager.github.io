@@ -7,3 +7,5 @@ redirect_from: /wiki/File:TWAIN_CAP_UICONTROLLABLE.GIF
 
 Show users the 'UI controllable' capability needed to integrate twain
 camera into microManager
+
+{% include img src="TWAIN_CAP_UICONTROLLABLE.GIF" %}

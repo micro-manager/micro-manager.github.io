@@ -6,3 +6,5 @@ redirect_from: /wiki/File:HCS.png
 ---
 
 Screen shot of High Content Screening plugin for Micro-Manager
+
+{% include img src="HCS.png" %}

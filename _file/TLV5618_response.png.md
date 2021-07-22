@@ -6,3 +6,5 @@ redirect_from: /wiki/File:TLV5618_response.png
 ---
 
 Response time of the TLV5618.
+
+{% include img src="TLV5618_response.png" %}

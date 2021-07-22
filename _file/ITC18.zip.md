@@ -7,3 +7,5 @@ redirect_from: /wiki/File:ITC18.zip
 
 Includes the necessary linux and windows files needed to compile the
 ITC18 Device Adapter for Micromanager.
+
+[ITC18.zip](/media/files/ITC18.zip)

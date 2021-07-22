@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Niji_group_multiled_intensity.png
 ---
 
 Multi-LED group with individual intensities
+
+{% include img src="Niji_group_multiled_intensity.png" %}

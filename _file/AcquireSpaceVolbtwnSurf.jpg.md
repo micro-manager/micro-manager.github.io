@@ -7,3 +7,5 @@ redirect_from: /wiki/File:AcquireSpaceVolbtwnSurf.jpg
 
 Space allows you to image between two defined surfaces with a buffer on
 either side
+
+{% include img src="AcquireSpaceVolbtwnSurf.jpg" %}

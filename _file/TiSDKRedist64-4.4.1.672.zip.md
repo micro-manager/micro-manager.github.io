@@ -7,3 +7,5 @@ redirect_from: /wiki/File:TiSDKRedist64-4.4.1.672.zip
 
 Micro-Manager's installer for the redistributable drivers and libraries
 from the Nikon Ti SDK.
+
+[TiSDKRedist64-4.4.1.672.zip](/media/files/TiSDKRedist64-4.4.1.672.zip)

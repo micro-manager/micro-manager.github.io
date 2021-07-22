@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Cobolt_NicoLase.cfg
 ---
 
 Cobolt Lasers driven by a NicoLase
+
+[Cobolt_NicoLase.cfg](/media/files/Cobolt_NicoLase.cfg)

@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Circuit_Connection.jpg
 ---
 
 Circuit Connection
+
+{% include img src="Circuit_Connection.jpg" %}

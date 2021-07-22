@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Device_Property.jpg
 ---
 
 Device property settings for Micro-Manager
+
+{% include img src="Device_Property.jpg" %}

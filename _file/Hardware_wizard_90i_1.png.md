@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Hardware_wizard_90i_1.png
 ---
 
 Hardware Configuration Wizard. Open the Nikon 90i folder
+
+{% include img src="Hardware_wizard_90i_1.png" %}

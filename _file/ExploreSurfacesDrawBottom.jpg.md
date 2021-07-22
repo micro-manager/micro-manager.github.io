@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ExploreSurfacesDrawBottom.jpg
 ---
 
 Footprint at center of same lymph node sample
+
+{% include img src="ExploreSurfacesDrawBottom.jpg" %}

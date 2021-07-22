@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Plugin-projector-header.png
 ---
 
 Summary screenshot of Projector plugin showing all 3 tabs.
+
+{% include img src="Plugin-projector-header.png" %}

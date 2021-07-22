@@ -6,3 +6,5 @@ redirect_from: /wiki/File:ExploreGrids.jpg
 ---
 
 Grid tab allows you to choose the size of a grid
+
+{% include img src="ExploreGrids.jpg" %}

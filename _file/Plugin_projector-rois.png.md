@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Plugin_projector-rois.png
 ---
 
 Projector Plugin: Tab 2 of 3: ROIs
+
+{% include img src="Plugin_projector-rois.png" %}

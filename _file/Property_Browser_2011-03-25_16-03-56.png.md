@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Property_Browser_2011-03-25_16-03-56.png
 ---
 
 Thorlabs XYStage property browser view
+
+{% include img src="Property_Browser_2011-03-25_16-03-56.png" %}

@@ -7,3 +7,5 @@ redirect_from: /wiki/File:SurfacesNonCube.jpg
 
 Using surfaces to define the "space" allows you to collect non-cuboidal
 volumes
+
+{% include img src="SurfacesNonCube.jpg" %}

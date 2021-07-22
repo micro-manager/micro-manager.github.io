@@ -35,3 +35,5 @@ redirect_from: /wiki/File:Simplest_mosaic_experiment.bsh
 `*`  
 `* Pariksheet Nanda <p.nanda@andor.com> September 2012`  
 `*/`
+
+[Simplest_mosaic_experiment.bsh](/media/files/Simplest_mosaic_experiment.bsh)

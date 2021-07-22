@@ -7,3 +7,5 @@ redirect_from: /wiki/File:MMConfig_Firewire_Sony.cfg
 
 More comples config for Sony Firewire cameras. Includes integration
 presets
+
+[MMConfig_Firewire_Sony.cfg](/media/files/MMConfig_Firewire_Sony.cfg)

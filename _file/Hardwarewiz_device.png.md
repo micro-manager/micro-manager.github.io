@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Hardwarewiz_device.png
 
 Creating a stage device by giving it a unique name and selecting its
 Serial Number.
+
+{% include img src="Hardwarewiz_device.png" %}

@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Alc_mscv_error.jpg
 
 Error in Micro-Manager caused by internal ALC setting of laser exceeding
 rated power.
+
+{% include img src="Alc_mscv_error.jpg" %}

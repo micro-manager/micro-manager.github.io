@@ -6,3 +6,5 @@ redirect_from: /wiki/File:AxioCamFig2.png
 ---
 
 AxioCam Triggering Figure 2
+
+{% include img src="AxioCamFig2.png" %}

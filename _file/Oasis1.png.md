@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Oasis1.png
 ---
 
 Objective Imaging Hub device
+
+{% include img src="Oasis1.png" %}

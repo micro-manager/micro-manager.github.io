@@ -15,3 +15,5 @@ are for a Sutter 10-2, using TTL outputs 8-15 found on the back of the
 ITC18.
 
 This script is for a very advanced user.
+
+[ITC18.csh](/media/files/ITC18.csh)

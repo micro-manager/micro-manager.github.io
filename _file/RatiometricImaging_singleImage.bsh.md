@@ -7,3 +7,5 @@ redirect_from: /wiki/File:RatiometricImaging_singleImage.bsh
 
 Beanshell for Ratiometric Imaging by Julien Husson. Code for single
 image acquisition.
+
+[RatiometricImaging_singleImage.bsh](/media/files/RatiometricImaging_singleImage.bsh)

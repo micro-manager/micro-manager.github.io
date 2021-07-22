@@ -6,3 +6,5 @@ redirect_from: /wiki/File:DB-25Pin_Diagram.jpg
 ---
 
 Pin Diagram for DB-25 connector on teh Prairie Aurora Laser Launch
+
+{% include img src="DB-25Pin_Diagram.jpg" %}

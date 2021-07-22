@@ -7,3 +7,5 @@ redirect_from: /wiki/File:K8055-utbm-osx-kext.tar.gz
 
 Kernel extension for Mac OS X to make the Velleman K8055 work with
 libusb
+
+[K8055-utbm-osx-kext.tar.gz](/media/files/K8055-utbm-osx-kext.tar.gz)

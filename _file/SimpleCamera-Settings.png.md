@@ -6,3 +6,5 @@ redirect_from: /wiki/File:SimpleCamera-Settings.png
 ---
 
 Property window of SimpleCamera driver.
+
+{% include img src="SimpleCamera-Settings.png" %}

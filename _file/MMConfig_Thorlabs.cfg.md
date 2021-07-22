@@ -6,3 +6,5 @@ redirect_from: /wiki/File:MMConfig_Thorlabs.cfg
 ---
 
 Configuration file for testing Thorlabs XY stage
+
+[MMConfig_Thorlabs.cfg](/media/files/MMConfig_Thorlabs.cfg)

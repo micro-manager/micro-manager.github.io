@@ -7,3 +7,5 @@ redirect_from: /wiki/File:Installation_Destination.png
 
 Screenshot of the destination location page in the Andor Mosaic 3 Driver
 Pack
+
+{% include img src="Installation_Destination.png" %}

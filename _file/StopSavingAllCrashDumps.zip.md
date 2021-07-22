@@ -6,3 +6,5 @@ redirect_from: /wiki/File:StopSavingAllCrashDumps.zip
 ---
 
 Registry file to turn off local crash dump saving entirely.
+
+[StopSavingAllCrashDumps.zip](/media/files/StopSavingAllCrashDumps.zip)

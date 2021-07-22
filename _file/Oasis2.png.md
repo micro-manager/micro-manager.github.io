@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Oasis2.png
 ---
 
 Available devices on the OASIS-Blue controller
+
+{% include img src="Oasis2.png" %}

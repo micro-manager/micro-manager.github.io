@@ -6,3 +6,5 @@ redirect_from: /wiki/File:HelloWorldPlugin.zip
 ---
 
 Demonstration plugin for Micro-Manager.
+
+[HelloWorldPlugin.zip](/media/files/HelloWorldPlugin.zip)

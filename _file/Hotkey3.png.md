@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Hotkey3.png
 ---
 
 Setting up scripted hotkeys, part 3
+
+{% include img src="Hotkey3.png" %}

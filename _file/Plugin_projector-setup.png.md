@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Plugin_projector-setup.png
 ---
 
 Projector Plugin: Tab 3 of 3: Setup
+
+{% include img src="Plugin_projector-setup.png" %}

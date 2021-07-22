@@ -6,3 +6,5 @@ redirect_from: /wiki/File:Sequencing.png
 ---
 
 Mosaic3 Sequencing window.
+
+{% include img src="Sequencing.png" %}

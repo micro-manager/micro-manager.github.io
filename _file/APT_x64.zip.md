@@ -6,3 +6,5 @@ redirect_from: /wiki/File:APT_x64.zip
 ---
 
 The 64 bit APT dll, lib and prototype file.
+
+[APT_x64.zip](/media/files/APT_x64.zip)
