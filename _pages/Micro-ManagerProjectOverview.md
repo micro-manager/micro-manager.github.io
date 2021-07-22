@@ -5,5 +5,4 @@ redirect_from: /wiki/Micro-ManagerProjectOverview
 layout: page
 ---
 
-1.  REDIRECT
-    [Micro-Manager\_Project\_Overview](Micro-Manager_Project_Overview)
+1.  REDIRECT    [Micro-Manager\_Project\_Overview](Micro-Manager_Project_Overview)

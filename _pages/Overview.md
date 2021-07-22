@@ -5,5 +5,4 @@ redirect_from: /wiki/Overview
 layout: page
 ---
 
-1.  REDIRECT [Coordinates and
-    Directionality](Coordinates_and_Directionality)
+1.  REDIRECT [Coordinates and    Directionality](Coordinates_and_Directionality)

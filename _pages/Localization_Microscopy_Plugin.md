@@ -5,5 +5,4 @@ redirect_from: /wiki/Localization_Microscopy_Plugin
 layout: page
 ---
 
-1.  REDIRECT [Localization
-    Microscopy](Localization_Microscopy)
+1.  REDIRECT [Localization    Microscopy](Localization_Microscopy)

@@ -5,5 +5,4 @@ redirect_from: /wiki/Communication_tools_useful_for_Device_Adapter_Developers
 layout: page
 ---
 
-1.  REDIRECT [Free third-party tools for testing communications with
-    hardware](Free_third-party_tools_for_testing_communications_with_hardware)
+1.  REDIRECT [Free third-party tools for testing communications with    hardware](Free_third-party_tools_for_testing_communications_with_hardware)

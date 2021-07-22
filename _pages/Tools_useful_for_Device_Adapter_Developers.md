@@ -5,5 +5,4 @@ redirect_from: /wiki/Tools_useful_for_Device_Adapter_Developers
 layout: page
 ---
 
-1.  REDIRECT [Communication tools useful for Device Adapter
-    Developers](Communication_tools_useful_for_Device_Adapter_Developers)
+1.  REDIRECT [Communication tools useful for Device Adapter    Developers](Communication_tools_useful_for_Device_Adapter_Developers)

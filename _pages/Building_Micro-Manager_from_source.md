@@ -5,5 +5,4 @@ redirect_from: /wiki/Building_Micro-Manager_from_source
 layout: page
 ---
 
-1.  REDIRECT [Building and debugging Micro-Manager source
-    code](Building_and_debugging_Micro-Manager_source_code)
+1.  REDIRECT [Building and debugging Micro-Manager source    code](Building_and_debugging_Micro-Manager_source_code)

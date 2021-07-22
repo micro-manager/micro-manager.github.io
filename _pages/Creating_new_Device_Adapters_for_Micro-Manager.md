@@ -5,5 +5,4 @@ redirect_from: /wiki/Creating_new_Device_Adapters_for_Micro-Manager
 layout: page
 ---
 
-1.  REDIRECT [(Windows) tools useful for Device Adapter
-    Developers]((Windows)_tools_useful_for_Device_Adapter_Developers)
+1.  REDIRECT [(Windows) tools useful for Device Adapter    Developers]((Windows)_tools_useful_for_Device_Adapter_Developers)

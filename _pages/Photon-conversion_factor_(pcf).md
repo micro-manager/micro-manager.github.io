@@ -5,5 +5,4 @@ redirect_from: /wiki/Photon-conversion_factor_(pcf)
 layout: page
 ---
 
-1.  REDIRECT
-    [Measuring\_camera\_specifications](Measuring_camera_specifications)
+1.  REDIRECT    [Measuring\_camera\_specifications](Measuring_camera_specifications)

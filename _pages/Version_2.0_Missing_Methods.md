@@ -5,5 +5,4 @@ redirect_from: /wiki/Version_2.0_Missing_Methods
 layout: page
 ---
 
-1.  REDIRECT [Version 2.0 API Transition
-    Guide](Version_2.0_API_Transition_Guide)
+1.  REDIRECT [Version 2.0 API Transition    Guide](Version_2.0_API_Transition_Guide)

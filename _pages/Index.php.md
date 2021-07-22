@@ -5,5 +5,4 @@ redirect_from: /wiki/Index.php
 layout: page
 ---
 
-1.  REDIRECT
-    [High\_Speed\_Acquisition\_in\_Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)
+1.  REDIRECT    [High\_Speed\_Acquisition\_in\_Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)

@@ -5,5 +5,4 @@ redirect_from: /wiki/Hardware-based_synchronization
 layout: page
 ---
 
-1.  REDIRECT [Hardware-based Synchronization in
-    Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager)
+1.  REDIRECT [Hardware-based Synchronization in    Micro-Manager](Hardware-based_Synchronization_in_Micro-Manager)

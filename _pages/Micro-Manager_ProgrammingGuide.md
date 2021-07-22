@@ -5,5 +5,4 @@ redirect_from: /wiki/Micro-Manager_ProgrammingGuide
 layout: page
 ---
 
-1.  REDIRECT
-    [Micro-Manager\_Programming\_Guide](Micro-Manager_Programming_Guide)
+1.  REDIRECT    [Micro-Manager\_Programming\_Guide](Micro-Manager_Programming_Guide)

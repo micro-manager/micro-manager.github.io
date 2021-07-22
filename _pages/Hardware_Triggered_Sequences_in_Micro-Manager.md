@@ -5,5 +5,4 @@ redirect_from: /wiki/Hardware_Triggered_Sequences_in_Micro-Manager
 layout: page
 ---
 
-1.  REDIRECT [Hardware-Triggered Sequences in
-    Micro-Manager](Hardware-Triggered_Sequences_in_Micro-Manager)
+1.  REDIRECT [Hardware-Triggered Sequences in    Micro-Manager](Hardware-Triggered_Sequences_in_Micro-Manager)

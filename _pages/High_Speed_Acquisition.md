@@ -5,5 +5,4 @@ redirect_from: /wiki/High_Speed_Acquisition
 layout: page
 ---
 
-1.  REDIRECT [High Speed Acquisition in
-    Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)
+1.  REDIRECT [High Speed Acquisition in    Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)

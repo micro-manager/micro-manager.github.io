@@ -5,5 +5,4 @@ redirect_from: /wiki/Micro-Manager_Nightly_Build
 layout: page
 ---
 
-1.  REDIRECT [Micro-Manager Nightly
-    Builds](Micro-Manager_Nightly_Builds)
+1.  REDIRECT [Micro-Manager Nightly    Builds](Micro-Manager_Nightly_Builds)

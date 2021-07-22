@@ -5,5 +5,4 @@ redirect_from: /wiki/(Windows)_tools_useful_for_Device_Adapter_Developers
 layout: page
 ---
 
-1.  REDIRECT [Tools useful for Device Adapter
-    Developers](Tools_useful_for_Device_Adapter_Developers)
+1.  REDIRECT [Tools useful for Device Adapter    Developers](Tools_useful_for_Device_Adapter_Developers)
