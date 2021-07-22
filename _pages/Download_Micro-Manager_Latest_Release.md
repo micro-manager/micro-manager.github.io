@@ -4,7 +4,6 @@ title: Download Micro-Manager Latest Release
 redirect_from:
   - /wiki/Download_Micro-Manager_Latest_Release
   - /wiki/DownloadMicro-Manager_LatestRelease
-  - DownloadMicro-Manager_LatestRelease
 layout: page
 section: Downloads
 nav-links:

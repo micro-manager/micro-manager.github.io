@@ -4,7 +4,6 @@ title: LeicaDMSTC
 redirect_from:
   - /wiki/LeicaDMSTC
   - /wiki/Leica_DMSTC
-  - Leica_DMSTC
 layout: page
 ---
 

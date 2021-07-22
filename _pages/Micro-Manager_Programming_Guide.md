@@ -4,7 +4,6 @@ title: Micro-Manager Programming Guide
 redirect_from:
   - /wiki/Micro-Manager_Programming_Guide
   - /wiki/Micro-Manager_ProgrammingGuide
-  - Micro-Manager_ProgrammingGuide
 layout: page
 section: Extend
 ---

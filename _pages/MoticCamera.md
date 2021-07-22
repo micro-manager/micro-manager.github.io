@@ -4,7 +4,6 @@ title: MoticCamera
 redirect_from:
   - /wiki/MoticCamera
   - /wiki/Moticam
-  - Moticam
 layout: page
 ---
 

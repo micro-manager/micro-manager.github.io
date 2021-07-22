@@ -4,7 +4,6 @@ title: AxioCam
 redirect_from:
   - /wiki/AxioCam
   - /wiki/AxioCam_MR%2FHR
-  - AxioCam_MR%2FHR
 layout: page
 ---
 

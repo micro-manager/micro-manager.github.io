@@ -4,7 +4,6 @@ title: ThorlabsSC10
 redirect_from:
   - /wiki/ThorlabsSC10
   - /wiki/Thorlabs_SC10
-  - /Thorlabs_SC10
 layout: page
 ---
 

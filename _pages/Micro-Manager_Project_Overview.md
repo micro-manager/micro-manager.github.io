@@ -4,7 +4,6 @@ title: Micro-Manager Project Overview
 redirect_from:
   - /wiki/Micro-Manager_Project_Overview
   - /wiki/Micro-ManagerProjectOverview
-  - Micro-ManagerProjectOverview
 layout: page
 section: Learn:Overview
 ---

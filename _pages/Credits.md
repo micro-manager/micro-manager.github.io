@@ -4,7 +4,6 @@ title: Credits
 redirect_from:
   - /wiki/Credits
   - /wiki/Section_credits
-  - Section_credits
 layout: page
 section: Credits
 ---

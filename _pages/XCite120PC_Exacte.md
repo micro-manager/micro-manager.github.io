@@ -4,7 +4,6 @@ title: XCite120PC Exacte
 redirect_from:
   - /wiki/XCite120PC_Exacte
   - /wiki/XCite_120PC_&_Exacte
-  - XCite_120PC_&_Exacte
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: Version 2.0 API Transition Guide
 redirect_from:
   - /wiki/Version_2.0_API_Transition_Guide
   - /wiki/Version_2.0_Missing_Methods
-  - Version_2.0_Missing_Methods
 layout: page
 section: Learn:Version 2.0
 ---

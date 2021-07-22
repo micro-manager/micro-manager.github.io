@@ -4,7 +4,6 @@ title: Zaber
 redirect_from:
   - /wiki/Zaber
   - /wiki/New_Zaber_adapter
-  - New_Zaber_adapter
 layout: page
 ---
 

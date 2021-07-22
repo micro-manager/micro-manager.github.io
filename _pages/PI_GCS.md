@@ -4,7 +4,6 @@ title: PI GCS
 redirect_from:
   - /wiki/PI_GCS
   - /wiki/PIGCS
-  - PIGCS
 layout: page
 ---
 

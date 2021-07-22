@@ -4,7 +4,6 @@ title: MoticMicroscope
 redirect_from:
   - /wiki/MoticMicroscope
   - /wiki/MoticBA600
-  - MoticBA600
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: Device Support
 redirect_from:
   - /wiki/Device_Support
   - /wiki/DeviceSupport
-  - DeviceSupport
 layout: page
 section: Devices
 ---

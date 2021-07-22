@@ -4,7 +4,6 @@ title: TwainCamera
 redirect_from:
   - /wiki/TwainCamera
   - /wiki/Twain
-  - Twain
 layout: page
 ---
 

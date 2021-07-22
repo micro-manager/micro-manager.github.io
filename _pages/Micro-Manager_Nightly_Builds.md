@@ -4,7 +4,6 @@ title: Micro-Manager Nightly Builds
 redirect_from:
   - /wiki/Micro-Manager_Nightly_Builds
   - /wiki/Micro-Manager_Nightly_Build
-  - Micro-Manager_Nightly_Build
 layout: page
 section: Downloads
 nav-links:

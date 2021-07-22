@@ -4,7 +4,6 @@ title: MCL MicroDrive
 redirect_from:
   - /wiki/MCL_MicroDrive
   - /wiki/MCL-MicroDrive
-  - MCL-MicroDrive
 layout: page
 ---
 

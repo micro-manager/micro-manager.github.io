@@ -4,7 +4,6 @@ title: SpectralLMM5
 redirect_from:
   - /wiki/SpectralLMM5
   - /wiki/Spectral_LMM5
-  - Spectral_LMM5
 layout: page
 ---
 

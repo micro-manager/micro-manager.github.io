@@ -4,7 +4,6 @@ title: ABSCamera
 redirect_from:
   - /wiki/ABSCamera
   - /wiki/ABSCameras
-  - ABSCameras
 layout: page
 ---
 

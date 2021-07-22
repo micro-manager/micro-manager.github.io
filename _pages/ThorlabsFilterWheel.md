@@ -4,7 +4,6 @@ title: ThorlabsFilterWheel
 redirect_from:
   - /wiki/ThorlabsFilterWheel
   - /wiki/Thorlabs_FilterWheel
-  - Thorlabs_FilterWheel
 layout: page
 ---
 

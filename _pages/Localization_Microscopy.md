@@ -4,7 +4,6 @@ title: Localization Microscopy
 redirect_from:
   - /wiki/Localization_Microscopy
   - /wiki/Localization_Microscopy_Plugin
-  - Localization_Microscopy_Plugin
 layout: page
 ---
 

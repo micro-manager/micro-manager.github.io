@@ -4,7 +4,6 @@ title: Olympus
 redirect_from:
   - /wiki/Olympus
   - /wiki/OlympusIX81%2FBX61
-  - OlympusIX81%2FBX61
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: TIScam
 redirect_from:
   - /wiki/TIScam
   - /wiki/The_Imaging_Source
-  - The_Imaging_Source
 layout: page
 ---
 

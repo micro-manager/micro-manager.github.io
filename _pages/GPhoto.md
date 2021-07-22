@@ -4,9 +4,7 @@ title: GPhoto
 redirect_from:
   - /wiki/GPhoto
   - /wiki/SimpleCam
-  - SimpleCam
   - /wiki/SimpleCamera
-  - SimpleCamera
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: Yokogawa
 redirect_from:
   - /wiki/Yokogawa
   - /wiki/CSU22
-  - CSU22
 layout: page
 ---
 

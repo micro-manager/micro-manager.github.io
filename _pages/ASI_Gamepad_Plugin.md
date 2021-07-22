@@ -4,7 +4,6 @@ title: ASI Gamepad Plugin
 redirect_from:
   - /wiki/ASI_Gamepad_Plugin
   - /wiki/ASIGamepad_Plugin
-  - ASIGamepad_Plugin
 layout: page
 ---
 

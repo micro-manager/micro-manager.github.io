@@ -4,7 +4,6 @@ title: PrincetonInstruments
 redirect_from:
   - /wiki/PrincetonInstruments
   - /wiki/Princeton_Instruments
-  - Princeton_Instruments
 layout: page
 ---
 

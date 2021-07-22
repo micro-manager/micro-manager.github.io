@@ -4,7 +4,6 @@ title: ThorlabsDCxxxx
 redirect_from:
   - /wiki/ThorlabsDCxxxx
   - /wiki/Thorlabs_DCxxxx
-  - Thorlabs_DCxxxx
 layout: page
 ---
 
