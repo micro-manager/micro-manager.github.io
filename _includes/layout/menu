@@ -41,7 +41,6 @@
   <!-- Version 1.4 -->
   {% include menu-section title="Version 1.4" link="/Overview_of_the_documentation" %}
     <li><a href="/Micro-Manager_User's_Guide">User Guide</a></li>
-    <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
     <li><a href="/Plugins">Plugins</a></li>
     <li><a href="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf">Tutorial (PDF)</a></li>
     <li><a href="http://www.jbmethods.org/jbm/article/view/36/29">Advanced Methods</a></li>
@@ -62,6 +61,7 @@
   <li><a href="/Micro-Manager_File_Formats">File Formats</a></li>
   <li><a href="/Search_Paths">Search Paths</a></li>
   <li><a href="/Building_Micro-Manager_Device_Adapters">Writing Device Adapters</a></li>
+  <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Testing communication with hardware</a></li>
   <li><a href="/Building_and_debugging_Micro-Manager_source_code">Building and Debugging Micro-Manager</a></li>
   <li><a href="/Multi-Dimensional_Acquisition_Programming">Multi-D Acq. Programming</a></li>
   <li><a href="/Policies_for_inclusion_of_source_code">Policies for inclusion of source code</a></li>
@@ -79,8 +79,7 @@
 
 <!-- Devices -->
 {% include menu-section title="Devices" link="/Device_Support" %}
-  <li><a href="/Building_Micro-Manager_Device_Adapters">Building Micro&#x2011;Manager device adapters</a></li>
-  <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Free third-party tools for testing communications with hardware</a></li>
+  <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
 {% include menu-section-end %}
 
 <!-- Support -->
