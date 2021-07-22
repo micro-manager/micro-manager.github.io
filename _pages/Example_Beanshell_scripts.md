@@ -15,80 +15,80 @@ Most of these scripts can be translated with minimal modification to the
 Python programming language (see
 [Pycro-manager](https://github.com/micro-manager/pycro-manager))
 
-[Sdemo1.bsh](media/Sdemo1.bsh) - Hello World
+[Sdemo1.bsh](/media/files/Sdemo1.bsh) - Hello World
 
-[Sdemo2.bsh](media/Sdemo2.bsh) - Shows how to use
+[Sdemo2.bsh](/media/files/Sdemo2.bsh) - Shows how to use
 ImageJ functionality within the Beanshell environment
 
-[SetZoom.bsh](media/SetZoom.bsh) - Utility that sets
+[SetZoom.bsh](/media/files/SetZoom.bsh) - Utility that sets
 the zoom level of the current ImageJ image window
 
-[Camera_test.bsh](media/Camera_test.bsh) - Example
+[Camera_test.bsh](/media/files/Camera_test.bsh) - Example
 camera test.
 
-[Image_snap_example.bsh](media/Image_snap_example.bsh)
+[Image_snap_example.bsh](/media/files/Image_snap_example.bsh)
 - Shows how to snap (but not display) an image
 
-[Image_snap_example_2.bsh](media/Image_snap_example_2.bsh)
+[Image_snap_example_2.bsh](/media/files/Image_snap_example_2.bsh)
 - Shows how to snap and display an image. The image window must already
 be open (Snap an image once manually before running the plugin).
 
-[SnapAndMeasure.bsh](media/SnapAndMeasure.bsh) - Shows
+[SnapAndMeasure.bsh](/media/files/SnapAndMeasure.bsh) - Shows
 how to use the ImageJ 'Measure' command that updates with every new
 image snapped.
 
-[Live_demo.bsh](media/Live_demo.bsh) - Shows how to
+[Live_demo.bsh](/media/files/Live_demo.bsh) - Shows how to
 process an image during acquisition. Needs the DemoStreamingCamera to
 work.
 
-[Burst.bsh](media/Burst.bsh) - Shows how to start burst
+[Burst.bsh](/media/files/Burst.bsh) - Shows how to start burst
 mode from a script. Also shows how to save to file during acquisition.
 Needs burst mode capable camera. May not work.
 
-[BurstExample.bsh](media/BurstExample.bsh) - Shows how
+[BurstExample.bsh](/media/files/BurstExample.bsh) - Shows how
 to run a sequence acquisition (used to be "burst mode") from a script
 including setting up and starting the acquisition, grabbing the images
 from the circular buffer, and filing them into the acquisition object.
 
-[TestAcq.bsh](media/TestAcq.bsh) - Demonstrates how to
+[TestAcq.bsh](/media/files/TestAcq.bsh) - Demonstrates how to
 perform 5D image acquisition using the gui object.
 
-[ManualAcq.bsh](media/ManualAcq.bsh) - Executes 5D
+[ManualAcq.bsh](/media/files/ManualAcq.bsh) - Executes 5D
 acquisition, prompting the user to change the filters/dichroics between
 channel changes
 
-[AcqLC.bsh](media/AcqLC.bsh) - Example of a complicated
+[AcqLC.bsh](/media/files/AcqLC.bsh) - Example of a complicated
 MD acquisition including visiting multiple positions as defined in the
 position list, acquiring time-lapse data in individual channels.
 
-[MultiFastZStackASI.bsh](media/MultiFastZStackASI.bsh)
+[MultiFastZStackASI.bsh](/media/files/MultiFastZStackASI.bsh)
 - Script used at the ASCB meeting 2008 to synchronize Arduino, camera,
 AOTF and piezo stage to do fast multi-channel Z-stack acquistion
 
-[PositionList.bsh](media/PositionList.bsh) - Shows how
+[PositionList.bsh](/media/files/PositionList.bsh) - Shows how
 to build a positionList programmatically
 
-[Init.bsh](media/Init.bsh) - Shows how to configure the
+[Init.bsh](/media/files/Init.bsh) - Shows how to configure the
 sytem programmatically, i.e. without using configuration files. The GUI
 changes will not be visible until you manually run the command 'Rebuild
 GUI' or 'Refresh GUI' (Tools menu).
 
-[Config_test.bsh](media/Config_test.bsh) - Shows how
+[Config_test.bsh](/media/files/Config_test.bsh) - Shows how
 to define config groups programmatically. Will work with the
 demo-configuration.
 
-[Roi_copy.bsh](media/Roi_copy.bsh) - Demonstrates
+[Roi_copy.bsh](/media/files/Roi_copy.bsh) - Demonstrates
 copying of ROI from one camera to another.
 
-[RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh)
+[RatiometricImaging_main.bsh](/media/files/RatiometricImaging_main.bsh)
 - Beanshell for ratiometric Imaging (J. Husson).
 
-[RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh)
+[RatiometricImaging_singleImage.bsh](/media/files/RatiometricImaging_singleImage.bsh)
 - Beanshell for ratiometric Imaging. Takes only one image, can be useful
 as a control before starting a whole acquisition with main beanshell
 above (J. Husson).
 
-[Simplest_mosaic_experiment.bsh](media/Simplest_mosaic_experiment.bsh)
+[Simplest_mosaic_experiment.bsh](/media/files/Simplest_mosaic_experiment.bsh)
 - Control Andor Mosaic via iQ 2.7
 
 The source code repository contains many more [example

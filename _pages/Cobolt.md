@@ -86,7 +86,7 @@ All
 </td>
 <td markdown="1">
 
-[Cobolt.cfg](media/Cobolt.cfg)
+[Cobolt.cfg](/media/files/Cobolt.cfg)
 
 </td>
 </tr>
@@ -98,7 +98,7 @@ All
 </td>
 <td markdown="1">
 
-[Cobolt_NicoLase.cfg](media/Cobolt_NicoLase.cfg)
+[Cobolt_NicoLase.cfg](/media/files/Cobolt_NicoLase.cfg)
 
 </td>
 </tr>
@@ -162,9 +162,7 @@ A useful device for control of additional laser shutter can be an
 software may be build a GUI panel to control easily laser power and
 shutter devices:
 
--   [ Control laser shutter with
-    Arduino](Control_laser_shutters_with_Arduino) by Rocco
-    D'Antuono
--   [GUI panel for Cobolt laser
-    control](media/GUI_panel_for_Cobolt_laser_control.bsh) by
-    Rocco D'Antuono
+-   [Control laser shutter with Arduino](Control_laser_shutters_with_Arduino)
+    by Rocco D'Antuono
+-   [GUI panel for Cobolt laser control](/media/files/GUI_panel_for_Cobolt_laser_control.bsh)
+    by Rocco D'Antuono

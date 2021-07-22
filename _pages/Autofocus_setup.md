@@ -9,5 +9,5 @@ layout: page
 
 Micro-Manager needs to be told which image-based autofocus mechanism to
 use (even though there is currently only one;). To do so, save the file
-media/MMStartup.bsh [MMStartup.bsh](media/MMStartup.bsh) in
+media/MMStartup.bsh [MMStartup.bsh](/media/files/MMStartup.bsh) in
 your Micro-Manager folder:

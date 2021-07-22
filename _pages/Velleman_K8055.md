@@ -78,7 +78,7 @@ K8055/VM110](http://www.velleman.be/ot/en/product/view/?id=351346)
 </td>
 <td markdown="1">
 
-[MMConfig_K8055.cfg](media/MMConfig_K8055.cfg)
+[MMConfig_K8055.cfg](/media/files/MMConfig_K8055.cfg)
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ shutter will switch the active channels on and off.
 {% include notice icon="info" content="To use the digital outs, one needs to provide input voltage (5-30V) to the Clamp and Grnd pins on the K8055 board." %}
 
 On Mac OS X you will need to download and unpack
-[K8055-utbm-osx-kext.tar.gz](/media/K8055-utbm-osx-kext.tar.gz),
+[K8055-utbm-osx-kext.tar.gz](/media/files/K8055-utbm-osx-kext.tar.gz),
 open a terminal, cd into the directory k8055-utbm-osx-kext, issue the
 commands below, and reboot:
 

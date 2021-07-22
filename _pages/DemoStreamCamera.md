@@ -76,7 +76,7 @@ Camera, Noise Processor, Signal Generator
 </td>
 <td markdown="1">
 
-[MMConfig_demo_stream_proc.cfg](media/MMConfig_demo_stream_proc.cfg)
+[MMConfig_demo_stream_proc.cfg](/media/files/MMConfig_demo_stream_proc.cfg)
 
 </td>
 </tr>

@@ -105,7 +105,7 @@ PVCAM compatible cameras
 
 <td markdown="1">
 
-[MMConfig_pvcam_simple.cfg](media/MMConfig_pvcam_simple.cfg)
+[MMConfig_pvcam_simple.cfg](/media/files/MMConfig_pvcam_simple.cfg)
 
 </td>
 

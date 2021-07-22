@@ -77,7 +77,7 @@ Mac/Linux/Windows
 </td>
 <td markdown="1">
 
-[MMConfig_K8061.cfg](media/MMConfig_K8061.cfg)
+[MMConfig_K8061.cfg](/media/files/MMConfig_K8061.cfg)
 
 </td>
 </tr>

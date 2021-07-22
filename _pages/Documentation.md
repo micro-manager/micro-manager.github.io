@@ -98,14 +98,14 @@ and/or rapidly changing.
         synchronization](http://flybrain.mrc-lmb.cam.ac.uk/dokuwiki/doku.php?id=alex:projects:fluorescent_imaging:start) -
         A Micro-Manager plugin by Alex Hodge synchronizing multi-color
         LED illumination with a Firewire camera
-    -   [RatiometricImaging_main.bsh](media/RatiometricImaging_main.bsh) -
+    -   [RatiometricImaging_main.bsh](/media/files/RatiometricImaging_main.bsh) -
         Beanshell for ratiometric Imaging (J. Husson).
-    -   [RatiometricImaging_singleImage.bsh](media/RatiometricImaging_singleImage.bsh) -
+    -   [RatiometricImaging_singleImage.bsh](/media/files/RatiometricImaging_singleImage.bsh) -
         Beanshell for ratiometric Imaging.  
         Takes only one image, can be useful as a control before starting
         a whole acquisition with main beanshell above (J. Husson).
 
-[MultiROI_MultiD_Acquisition](media/MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh)
+[MultiROI_MultiD_Acquisition](/media/files/MultiROI_MultiD_Acquisition_V1.7_10122010_(2).bsh)
 - Beanshell script for acquiring stacks in 3 different channels and at 4
 different fields of view. Contributed by [Saumya
 Saurabh](http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya)

@@ -64,7 +64,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[MMConfig_AOTF.cfg](media/MMConfig_AOTF.cfg)
+[MMConfig_AOTF.cfg](/media/files/MMConfig_AOTF.cfg)
 
 </td>
 </tr>

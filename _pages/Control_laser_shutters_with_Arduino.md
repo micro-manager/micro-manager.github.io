@@ -16,9 +16,8 @@ generally useful to build a circuit with two BNC connectors, in order to
 supply HIGH/LOW voltage state to TTL devices.
 
 The software GUI panel for control easily laser power and shutter can be
-found in [Cobolt](Cobolt) laser subsection [GUI panel for
-Cobolt laser
-control](media/GUI_panel_for_Cobolt_laser_control.bsh).
+found in [Cobolt](Cobolt) laser subsection [GUI panel for Cobolt laser
+control](/media/files/GUI_panel_for_Cobolt_laser_control.bsh).
 
 For circuit, the following materials are required:
 

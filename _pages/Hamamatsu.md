@@ -78,7 +78,7 @@ Hamamatsu DCAM compatible cameras (only tested with Firewire cameras)
 </td>
 <td markdown="1">
 
-[MMConfig_ham.cfg](media/MMConfig_ham.cfg)
+[MMConfig_ham.cfg](/media/files/MMConfig_ham.cfg)
 
 </td>
 </tr>

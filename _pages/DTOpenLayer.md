@@ -64,7 +64,7 @@ Windows only
 </td>
 <td markdown="1">
 
-[MMConfig_DTOL.cfg](media/MMConfig_DTOL.cfg)
+[MMConfig_DTOL.cfg](/media/files/MMConfig_DTOL.cfg)
 
 </td>
 </tr>

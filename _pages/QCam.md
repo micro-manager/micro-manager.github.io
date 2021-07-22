@@ -89,7 +89,7 @@ All monochrome QImaging cameras
 </td>
 <td markdown="1">
 
-[MMConfig_QCam.cfg](media/MMConfig_QCam.cfg)
+[MMConfig_QCam.cfg](/media/files/MMConfig_QCam.cfg)
 
 </td>
 </tr>

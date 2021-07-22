@@ -86,7 +86,7 @@ April 6, 2020
 </td>
 <td markdown="1">
 
-[Skyra_NicoLase.cfg](media/Skyra_NicoLase.cfg)
+[Skyra_NicoLase.cfg](/media/files/Skyra_NicoLase.cfg)
 
 </td>
 </tr>

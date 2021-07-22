@@ -77,7 +77,7 @@ Shutter
 </td>
 <td markdown="1">
 
-[MMConfig_Demo.cfg](media/MMConfig_Demo.cfg)
+[MMConfig_Demo.cfg](/media/files/MMConfig_Demo.cfg)
 
 </td>
 </tr>

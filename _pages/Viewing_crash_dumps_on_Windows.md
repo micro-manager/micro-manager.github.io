@@ -37,7 +37,7 @@ Windows crash dumps are disabled by default (to be precise, saving them
 locally is disabled by default; there is a mechanism to allow sending
 the dumps to Microsoft, but that is not helpful for our purpose). To
 **enable** local saving of crash dumps on **Windows Vista, 7, or
-later**, download [this file](media/SaveJVMCrashDumps.zip),
+later**, download [this file](/media/files/SaveJVMCrashDumps.zip),
 extract the .reg file, and open it (administrator permission will be
 required), which will add the necessary settings to the Windows
 registry. (See [Microsoft's
@@ -69,7 +69,7 @@ open a Command Prompt and type
 Note that crash dump files can get quite large (especially if the
 application is using a lot of memory).
 
-[This file](media/StopSavingAllCrashDumps.zip) will
+[This file](/media/files/StopSavingAllCrashDumps.zip) will
 **disable** the saving of all Windows application crash dumps.
 
 If you are running **Windows XP**, the method described on [this

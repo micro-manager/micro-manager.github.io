@@ -60,7 +60,7 @@ connection of a DA chip and requires constructions of a
 
 ![Figure: Functional pinout set by firmware version
 2](media/Micro-manager_bb.png "fig:Figure: Functional pinout set by firmware version 2")
-([Image source .svg file](/media/Micro-manager_bb.svg.tar.gz))
+([Image source .svg file](/media/files/Micro-manager_bb.svg.tar.gz))
 
 ## Installation
 

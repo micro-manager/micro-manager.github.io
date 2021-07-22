@@ -87,7 +87,7 @@ XYStage
 </td>
 <td markdown="1">
 
-[Example Config File](media/MMConfig_MCL_MicroDrive.cfg)
+[Example Config File](/media/files/MMConfig_MCL_MicroDrive.cfg)
 (Sets up the Micro-Drive™ with the DemoCamera.)
 
 </td>
