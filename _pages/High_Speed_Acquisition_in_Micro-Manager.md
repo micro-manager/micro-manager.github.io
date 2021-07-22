@@ -5,8 +5,6 @@ redirect_from:
   - /wiki/High_Speed_Acquisition_in_Micro-Manager
   - /wiki/High_Speed_Acquisition
   - High_Speed_Acquisition
-  - /wiki/Index.php
-  - Index.php
 layout: page
 ---
 

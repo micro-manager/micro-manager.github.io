@@ -86,7 +86,7 @@ and/or rapidly changing.
 <!-- -->
 
 -   *Coordinates and Directionality in Micro-Manager*
-    -   [Overview](Overview) -
+    -   [Overview](Coordinates_and_Directionality)
 
 <!-- -->
 
