@@ -144,8 +144,8 @@ Saurabh](http://valelab.ucsf.edu/~nico/MMwiki/index.php/User:Saumya)
         Conventions](Micro-Manager_Coding_Style_and_Conventions)
     -   [Writing plugins for
         Micro-Manager](Writing_plugins_for_Micro-Manager)
-    -   [(Windows) tools useful for Device Adapter
-        Developers]((Windows)_tools_useful_for_Device_Adapter_Developers)
+    -   [Tools useful for Device Adapter
+        Developers](Free_third-party_tools_for_testing_communications_with_hardware)
 
 <!-- -->
 
