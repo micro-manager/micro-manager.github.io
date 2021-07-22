@@ -9,5 +9,9 @@ redirect_from:
   - /wiki/ΜManager
   - /wiki/µicro-Manager
   - /wiki/Μicro-Manager
+  - /wiki/Home
+  - Home
+  - /wiki/Main_Page
+  - Main_Page
 layout: page
 ---
