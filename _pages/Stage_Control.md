@@ -12,5 +12,5 @@ window lets you set the distance that will be traveled and there are
 buttons that will set these values to 1 pixel, 10% of the field and the
 whole field.
 
-![Stage Control plugin](media/StageControl.png "Stage Control plugin")
+![Stage Control plugin](/media/StageControl.png "Stage Control plugin")
 

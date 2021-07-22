@@ -90,7 +90,7 @@ launch the APT Configuration Utility.
 
 ![\|thumb\|center\|upright=2.5\|alt=APTConfig.\|The Thorlabs APT
 Configuration Utility displaying 4
-controllers.](media/Aptconfig.png "|thumb|center|upright=2.5|alt=APTConfig.|The Thorlabs APT Configuration Utility displaying 4 controllers.")
+controllers.](/media/Aptconfig.png "|thumb|center|upright=2.5|alt=APTConfig.|The Thorlabs APT Configuration Utility displaying 4 controllers.")
 
 Note: In order for APTConfig to display the list of available stages,
 Micro-manager must be closed. Make sure you do not run both at the same
@@ -102,7 +102,7 @@ ThorlabsAPTStage. Each unique controller only appears once.
 ![\|thumb\|center\|upright=2.5\|alt=Hardware config
 wizard.\|Micro-manager's Hardware Configuration Wizard displays a single
 TDC001
-controller.](media/Hardwarewiz.png "|thumb|center|upright=2.5|alt=Hardware config wizard.|Micro-manager's Hardware Configuration Wizard displays a single TDC001 controller.")
+controller.](/media/Hardwarewiz.png "|thumb|center|upright=2.5|alt=Hardware config wizard.|Micro-manager's Hardware Configuration Wizard displays a single TDC001 controller.")
 
 To add a stage, click the APT controller and give it a unique name. Then
 select its Serial Number from the drop-down menu. This number is
@@ -119,7 +119,7 @@ may not initialize properly.
 
 ![\|thumb\|center\|upright=2.0\|alt=Hardware config wizard.\|Adding a
 ThorlabsAPTStage device and selecting its Serial
-Number.](media/Hardwarewiz_device.png "|thumb|center|upright=2.0|alt=Hardware config wizard.|Adding a ThorlabsAPTStage device and selecting its Serial Number.")
+Number.](/media/Hardwarewiz_device.png "|thumb|center|upright=2.0|alt=Hardware config wizard.|Adding a ThorlabsAPTStage device and selecting its Serial Number.")
 
 ## Homing procedure (preliminary)
 
@@ -129,14 +129,14 @@ sent.
 For each of the stages defined in micro-manager, create a Group with the
 "Home" property. ![\|thumb\|center\|upright=2.5\|alt="Go Home" group
 property.\|Adding Initialisation groups, one for each
-stage.](media/Apt_zhome.png "fig:|thumb|center|upright=2.5|alt="Go Home" group property.|Adding Initialisation groups, one for each stage.")
+stage.](/media/Apt_zhome.png "fig:|thumb|center|upright=2.5|alt="Go Home" group property.|Adding Initialisation groups, one for each stage.")
 
 Then when you want one of the stages initialised, simply set the group
 value to 1.
 
 ![\|thumb\|center\|upright=2.5\|alt=Micromanager APT initialisation
 groups.\|Set the Preset value to 1 to initialise the stages
-individually.](media/Mm_aptstages.png "|thumb|center|upright=2.5|alt=Micromanager APT initialisation groups.|Set the Preset value to 1 to initialise the stages individually.")
+individually.](/media/Mm_aptstages.png "|thumb|center|upright=2.5|alt=Micromanager APT initialisation groups.|Set the Preset value to 1 to initialise the stages individually.")
 
 
 ## Compilation notes, 64-bit device adaptor

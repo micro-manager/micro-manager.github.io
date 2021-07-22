@@ -43,7 +43,7 @@ In order for Micro-Magellan to operate, it needs to know the direction
 of Z movement (if your system is equipped with a motorized z drive).
 This is defined in the Hardware Configuration Wizard.
 
-![Zdirection.jpg](media/Zdirection.jpg "Zdirection.jpg")
+![Zdirection.jpg](/media/Zdirection.jpg "Zdirection.jpg")
 
 In order for Micro-Magellan to acquire tiled images and assemble them,
 it must have an accurate pixel size calibration for the objective in
@@ -68,11 +68,11 @@ Acquisition and will be pre-populated with the configurations groups you
 have created. Select the settings group that contains your channel
 configurations.
 
-![ExploreSettings.jpg](media/ExploreSettings.jpg "ExploreSettings.jpg")
+![ExploreSettings.jpg](/media/ExploreSettings.jpg "ExploreSettings.jpg")
 
 Pressing “Explore\!” will open a new window:
 
-![ExploreWindow.jpg](media/ExploreWindow.jpg "ExploreWindow.jpg")
+![ExploreWindow.jpg](/media/ExploreWindow.jpg "ExploreWindow.jpg")
 
 On the left side is your image area; a field of view will highlight blue
 as you hover over it. On the right, are look-up tables (LUTs) for each
@@ -84,7 +84,7 @@ view to be imaged. The "Z limits" scroll bars below the image window
 control which Z locations will be imaged, and will adjust automatically
 to the selected Z-step size.
 
-![ExploreZ.jpg](media/ExploreZ.jpg "ExploreZ.jpg")
+![ExploreZ.jpg](/media/ExploreZ.jpg "ExploreZ.jpg")
 
 Once you have begun to image, the Z-plane currently being displayed will
 appear dark green in the Z-limits scroll bars. Other acquired Z-planes
@@ -110,9 +110,9 @@ over the area you would like to image. You may generate multiple grids
 of different sizes by pressing “New Grid”, and then move them to
 different areas.
 
-![ExploreGrids.jpg](media/ExploreGrids.jpg "ExploreGrids.jpg")
+![ExploreGrids.jpg](/media/ExploreGrids.jpg "ExploreGrids.jpg")
 
-![ExploreGridsImage.jpg](media/ExploreGridsImage.jpg "ExploreGridsImage.jpg")
+![ExploreGridsImage.jpg](/media/ExploreGridsImage.jpg "ExploreGridsImage.jpg")
 
 All of the grids generated in explore mode will populate the “grids” tab
 at the top of the Micro-Magellan main window, next to the Device
@@ -135,13 +135,13 @@ A new surface can be created by clicking on the "New Surface" button.
 Left clicking on the image screen with an active surface adds points.
 Right clicking on a point will remove it.
 
-![ExploreSurfacesDrawTop.jpg](media/ExploreSurfacesDrawTop.jpg
+![ExploreSurfacesDrawTop.jpg](/media/ExploreSurfacesDrawTop.jpg
 "ExploreSurfacesDrawTop.jpg")
 
 The Z-slider is then moved down further into the sample to specify an
 additional 2D slice of interpolation points.
 
-![ExploreSurfacesDrawBottom.jpg](media/ExploreSurfacesDrawBottom.jpg
+![ExploreSurfacesDrawBottom.jpg](/media/ExploreSurfacesDrawBottom.jpg
 "ExploreSurfacesDrawBottom.jpg")
 
 The following video shows how to use an explore acquisition to explore
@@ -157,7 +157,7 @@ All of the grids and surfaces generated in Explore mode will populate
 the "grids" and "surfaces" tabs at the top of the Micro-Magellan main
 window, next to the Device status/control tab.
 
-![AcquireGridSurfaces.jpg](media/AcquireGridSurfaces.jpg
+![AcquireGridSurfaces.jpg](/media/AcquireGridSurfaces.jpg
 "AcquireGridSurfaces.jpg")
 
 Below the Explore mode settings, there are a series of tabs to manage
@@ -174,7 +174,7 @@ acquisition, enter a name fore the file.
 In the "Time" tab, you can enter a time interval between image
 acquisition and the total number of time points to acquire
 
-![AcquireTime.jpg](media/AcquireTime.jpg "AcquireTime.jpg")
+![AcquireTime.jpg](/media/AcquireTime.jpg "AcquireTime.jpg")
 
 ### Space
 
@@ -227,7 +227,7 @@ To acquire more than a single grid or surface at a time, select the
 the name currently entered in the “Saving” tab below. Enter the
 parameters for this acquisition in the other acquisition settings tabs.
 
-![AcquireMultiAcq.jpg](media/AcquireMultiAcq.jpg "AcquireMultiAcq.jpg")
+![AcquireMultiAcq.jpg](/media/AcquireMultiAcq.jpg "AcquireMultiAcq.jpg")
 
 Clicking “+” again will add another line, it will appear with the same
 name. Highlight the second (new) acquisition and change its name in the
@@ -240,7 +240,7 @@ parallel (rather than completing a time lapse in one area, and then
 beginning the second time lapse in another area), select “In parallel”
 and then “Run all”
 
-![AcquireMultiAcqInterleave.jpg](media/AcquireMultiAcqInterleave.jpg
+![AcquireMultiAcqInterleave.jpg](/media/AcquireMultiAcqInterleave.jpg
 "AcquireMultiAcqInterleave.jpg")
 
 ### Changing settings during acquisitions

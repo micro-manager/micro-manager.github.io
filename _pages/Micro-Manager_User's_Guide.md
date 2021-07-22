@@ -164,7 +164,7 @@ get familiarized with the program. All examples in this guide refer to
 the Demo configuration.
 
 
-![Startup screen](media/Intro.gif "fig:Startup screen")  
+![Startup screen](/media/Intro.gif "fig:Startup screen")  
 Figure 1. Startup screen: selection of the configuration file.
 
 
@@ -185,7 +185,7 @@ Micro-Manager and ImageJ windows appear differently on different
 computer systems; examples from multiple systems are used in this
 manual.
 
-![Startup screen](media/MM_controlpanel.png "fig:Startup screen")  
+![Startup screen](/media/MM_controlpanel.png "fig:Startup screen")  
 Figure 2. Main Window displaying device controls and image histogram
 
 After the configuration file is loaded, the Main Window displays the
@@ -200,7 +200,7 @@ addition, at the bottom of the window there are shortcut buttons to save
 the image, enter live mode or send images to album.
 
 ![Image acquisition
-window](media/MM_snap-live.png "fig:Image acquisition window")  
+window](/media/MM_snap-live.png "fig:Image acquisition window")  
 Figure 3. Display window for Snap and Live mode.
 
 Each time you press the Snap button, the image in the display window
@@ -229,7 +229,7 @@ images in the series window to disk.
 ## Histogram, Brightness and Contrast
 
 ![Image acquisition
-window](media/MM_histogram.png "fig:Image acquisition window")  
+window](/media/MM_histogram.png "fig:Image acquisition window")  
 Figure 4. Histogram in Main Window. Brightness and contrast controls are
 shown in red and blue. Histogram range adjustment shown in green.
 
@@ -319,7 +319,7 @@ new image is displayed in the Live window. The profile is computed from
 the currently active line drawn over the image. To draw a line, use the
 standard line tool from the ImageJ toolbar.
 
-![Line profile window](media/Profile.jpg "fig:Line profile window")  
+![Line profile window](/media/Profile.jpg "fig:Line profile window")  
 Figure 5. Line Profile window.
 
 ## Camera Settings
@@ -357,7 +357,7 @@ by clicking the mouse elsewhere in the window.
 
 
 ![Device/Property Browser
-Window](media/Device_manager.gif "fig:Device/Property Browser Window")  
+Window](/media/Device_manager.gif "fig:Device/Property Browser Window")  
 Figure 6. Device/Property Browser window.
 
 
@@ -375,7 +375,7 @@ devices will be affected by the command. In the example in the
 configuration guide, choosing the "DAPI" channel preset command will
 move three filter wheels to the appropriate positions.
 
-![Presets Panel](media/Presets.gif "fig:Presets Panel")  
+![Presets Panel](/media/Presets.gif "fig:Presets Panel")  
 Figure 7. Detail of the main control window: configuration preset.
 
 There is no limit to the number of devices or number of different
@@ -398,7 +398,7 @@ the <span>''' Tools \| Acquisition '''</span> menu entry). Micro-Manager
 allows you to create a stack as multi-channel (wavelength coordinate),
 multi-frame (time coordinate), multi-slice (Z coordinate),
 multi-position (XY coordinate), or any combination of these.  
-![Acquisition Dialog](media/MM_multid.jpg "fig:Acquisition Dialog")  
+![Acquisition Dialog](/media/MM_multid.jpg "fig:Acquisition Dialog")  
 Figure 8. Acquisition control dialog.
 
 After defining channels, slices and frames by using controls in the
@@ -544,7 +544,7 @@ record the positions of stages in your system. At the bottom of the
 dialog is a list of available stage axes, any of which you can select to
 use for recording positions.
 
-<img src="media/Position_list.png" title="fig:Position List Dialog" width="600" alt="Position List Dialog" />  
+<img src="/media/Position_list.png" title="fig:Position List Dialog" width="600" alt="Position List Dialog" />  
 Figure 10. Position List dialog.
 
 
@@ -574,7 +574,7 @@ Tile Creator Dialog. The purpose of this dialog is to quickly create a
 position list covering the area of an object (larger than a single
 image) in the microscope specimen.
 
-![Tile Creator Dialog](media/Tile_creator2.png "fig:Tile Creator Dialog")  
+![Tile Creator Dialog](/media/Tile_creator2.png "fig:Tile Creator Dialog")  
 Figure 11. Tile Creator dialog.
 
 
@@ -645,7 +645,7 @@ The Multi-Dimensional Image Viewer is an extension of the ImageJ
 HyperStack. Therefore, most ImageJ commands will work as expected on
 this window.
 
-![5D image window](media/5D-ImageViewer.PNG "fig:5D image window")  
+![5D image window](/media/5D-ImageViewer.PNG "fig:5D image window")  
 Figure 12. Acquisition data displayed in the 5D image window.  
 The viewer has sliders for all the dimensions you choose on the Multi-D
 Acq. which include: Channels, Z-slices, XY-Positions and Time points of
@@ -663,7 +663,7 @@ brightness and contrast.
 While using the 5D-Image Viewer the 'Histogram' section on the Main
 Window has three tabs for Channels, Metadata and Comments.
 
-![5D image window](media/5D-ImageViewer2.PNG "fig:5D image window")  
+![5D image window](/media/5D-ImageViewer2.PNG "fig:5D image window")  
 Figure 13. Channels and Metadata tabs for 5D-Image View in Main
 Window.  
 

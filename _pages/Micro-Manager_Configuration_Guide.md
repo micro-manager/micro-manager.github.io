@@ -16,7 +16,7 @@ Micro-Manager application loads a configuration file containing commands
 configuring all aspects of the system. To start using Micro-Manager, you
 will first need to create a configuration file specific for your system
 
-![Startup screen](media/Startup.gif "fig:Startup screen")  
+![Startup screen](/media/Startup.gif "fig:Startup screen")  
 Figure 1. Startup screen: selection of the configuration file  
 Upon Micro-Manager startup an introductory splash screen pops-up
 displaying the configuration file that is about to be loaded. By
@@ -58,7 +58,7 @@ Remember, this is the most important part in getting Micro-Manager to be
 fully functional.
 
 ![Hardware wizard step
-2](media/Wizardstep2.png "fig:Hardware wizard step 2")  
+2](/media/Wizardstep2.png "fig:Hardware wizard step 2")  
 Figure 2. Step 2 of the hardware configuration wizard: selection of
 devices.  
 You can exit the wizard at any step by closing the wizard window. You
@@ -83,7 +83,7 @@ is a very important part of configuring Micro-Manager. Configuration
 Presets also let you modify the User Interface of Micro-Manager to suit
 your needs.
 
-![Configuration Presets](media/Presets.gif "fig:Configuration Presets")  
+![Configuration Presets](/media/Presets.gif "fig:Configuration Presets")  
 Figure 3. Example of Configuration Presets in the Main Micro-Manager
 window  
 Before setting up Configuration Presets, you should familiarize yourself
@@ -92,7 +92,7 @@ Browser](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser).
 It is also worthwhile to experiment with the Configuration Presets in
 the demo configuration.
 
-![Preset Editor](media/GroupEditor.png "fig:Preset Editor")  
+![Preset Editor](/media/GroupEditor.png "fig:Preset Editor")  
 Figure 4. Initial Screen of the Preset Editor  
 To make a new configuration group (a new row in the table with
 **Configuration settings**), press the Group '+' button at the bottom
@@ -176,7 +176,7 @@ the Pixel Size Calibration 'Presets', Micro-Manager will apply that
 pixel size to the metadata of the images you take.
 
 ![Pixel Size Calibration
-Editor](media/Calibration.gif "fig:Pixel Size Calibration Editor")  
+Editor](/media/Calibration.gif "fig:Pixel Size Calibration Editor")  
 Figure 5. Pixel Size Calibration Editor  
 To set up Pixel Size Calibrations, start the Pixel Size Calibration
 editor (<span>**Tools \| Pixel Size Calibration**</span>). Click the

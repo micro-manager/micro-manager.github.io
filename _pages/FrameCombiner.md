@@ -46,7 +46,7 @@ Please report any issue to
 # Screenshot
 
 <figure>
-<img src="media/FrameProcessor_Screenshot.png" title="FrameProcessor_Screenshot.png" width="600" alt="FrameProcessor_Screenshot.png" /><figcaption aria-hidden="true">FrameProcessor_Screenshot.png</figcaption>
+<img src="/media/FrameProcessor_Screenshot.png" title="FrameProcessor_Screenshot.png" width="600" alt="FrameProcessor_Screenshot.png" /><figcaption aria-hidden="true">FrameProcessor_Screenshot.png</figcaption>
 </figure>
 
 # Authors

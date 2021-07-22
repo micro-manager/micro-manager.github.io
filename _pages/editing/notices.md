@@ -66,7 +66,7 @@ What do these cities have in common?
 
 You can specify any icon from the
 {% include github org="imagej" repo="imagej.github.io"
-  path="media/icons" label="media/icons folder" %}
+  path="/media/icons" label="/media/icons folder" %}
 by name, sans file extension.
 
 ### Informational

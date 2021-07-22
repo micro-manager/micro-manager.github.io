@@ -54,7 +54,7 @@ layout: page
 </tr>
 <tr>
 <td colspan="2"><figure>
-<img src="media/UTSW_SD_FigureJ.jpg" title="(A) Optical train of spinning disk system (B) Full system (C) Microscope" alt="(A) Optical train of spinning disk system (B) Full system (C) Microscope" /><figcaption aria-hidden="true">(A) Optical train of spinning disk system (B) Full system (C) Microscope</figcaption>
+<img src="/media/UTSW_SD_FigureJ.jpg" title="(A) Optical train of spinning disk system (B) Full system (C) Microscope" alt="(A) Optical train of spinning disk system (B) Full system (C) Microscope" /><figcaption aria-hidden="true">(A) Optical train of spinning disk system (B) Full system (C) Microscope</figcaption>
 </figure></td>
 </tr>
 <tr>

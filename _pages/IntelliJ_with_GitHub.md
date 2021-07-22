@@ -23,44 +23,44 @@ Install Adopt OpenJDK 8
 Fork Micromanager 2.0 Repository into your own GitHub Account and name it.  
 <https://github.com/micro-manager/micro-manager>
 
-<img src="media/Annotation_2020-04-15_104551.png" title="Annotation_2020-04-15_104551.png" width="300" alt="Annotation_2020-04-15_104551.png" />
+<img src="/media/Annotation_2020-04-15_104551.png" title="Annotation_2020-04-15_104551.png" width="300" alt="Annotation_2020-04-15_104551.png" />
 
 <!-- -->
 
 From IntelliJ menu, select **New** -&gt; **Project from Version Control**.  
 
 <figure>
-<img src="media/Annotation_2020-04-15_104651.png" title="Annotation_2020-04-15_104651.png" width="300" alt="Annotation_2020-04-15_104651.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_104651.png</figcaption>
+<img src="/media/Annotation_2020-04-15_104651.png" title="Annotation_2020-04-15_104651.png" width="300" alt="Annotation_2020-04-15_104651.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_104651.png</figcaption>
 </figure>
 
 Select the new github repository that was forked earlier  
 
 <figure>
-<img src="media/Annotation_2020-04-15_105034.png" title="Annotation_2020-04-15_105034.png" width="300" alt="Annotation_2020-04-15_105034.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_105034.png</figcaption>
+<img src="/media/Annotation_2020-04-15_105034.png" title="Annotation_2020-04-15_105034.png" width="300" alt="Annotation_2020-04-15_105034.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_105034.png</figcaption>
 </figure>
 
 Right click on your projects name, and select **Open Module Settings**  
 
 <figure>
-<img src="media/Annotation_2020-04-15_115545.png" title="Annotation_2020-04-15_115545.png" width="300" alt="Annotation_2020-04-15_115545.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_115545.png</figcaption>
+<img src="/media/Annotation_2020-04-15_115545.png" title="Annotation_2020-04-15_115545.png" width="300" alt="Annotation_2020-04-15_115545.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_115545.png</figcaption>
 </figure>
 
 Add ImageJ ij.jar and other jars from Micromanager's install directory  
 
 <figure>
-<img src="media/Annotation_2020-04-15_113304.png" title="Annotation_2020-04-15_113304.png" width="300" alt="Annotation_2020-04-15_113304.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_113304.png</figcaption>
+<img src="/media/Annotation_2020-04-15_113304.png" title="Annotation_2020-04-15_113304.png" width="300" alt="Annotation_2020-04-15_113304.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_113304.png</figcaption>
 </figure>
 
 Confirm that you have 1.8 JDK configured  
 
 <figure>
-<img src="media/Annotation_2020-04-15_111428.png" title="Annotation_2020-04-15_111428.png" width="300" alt="Annotation_2020-04-15_111428.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_111428.png</figcaption>
+<img src="/media/Annotation_2020-04-15_111428.png" title="Annotation_2020-04-15_111428.png" width="300" alt="Annotation_2020-04-15_111428.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_111428.png</figcaption>
 </figure>
 
 Create a new Run/Debug Configuration  
 
 <figure>
-<img src="media/Annotation_2020-04-15_105409.png" title="Annotation_2020-04-15_105409.png" width="300" alt="Annotation_2020-04-15_105409.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_105409.png</figcaption>
+<img src="/media/Annotation_2020-04-15_105409.png" title="Annotation_2020-04-15_105409.png" width="300" alt="Annotation_2020-04-15_105409.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_105409.png</figcaption>
 </figure>
 
 Select an Application Template, and then the **+** Sign  
@@ -73,6 +73,6 @@ Select an Application Template, and then the **+** Sign
 **JRE: 1.8**
 
 <figure>
-<img src="media/Annotation_2020-04-15_110259.png" title="Annotation_2020-04-15_110259.png" width="300" alt="Annotation_2020-04-15_110259.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_110259.png</figcaption>
+<img src="/media/Annotation_2020-04-15_110259.png" title="Annotation_2020-04-15_110259.png" width="300" alt="Annotation_2020-04-15_110259.png" /><figcaption aria-hidden="true">Annotation_2020-04-15_110259.png</figcaption>
 </figure>
 

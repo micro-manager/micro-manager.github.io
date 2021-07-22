@@ -15,7 +15,7 @@ will display the acquired images as a two channel Image in the 5D-Image
 viewer. You can set the color of each channel and use either a
 left-right or top-bottom split.
 
-![Split View Dialog](media/Split_view.gif "fig:Split View Dialog")  
+![Split View Dialog](/media/Split_view.gif "fig:Split View Dialog")  
 Split View dialog.
 
   

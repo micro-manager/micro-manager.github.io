@@ -127,7 +127,7 @@ not tested yet.
 " %}
 
 <figure>
-<img src="media/UM_set_XiLab.png" title="UM_set_XiLab.png" width="600" alt="UM_set_XiLab.png" /><figcaption aria-hidden="true">UM_set_XiLab.png</figcaption>
+<img src="/media/UM_set_XiLab.png" title="UM_set_XiLab.png" width="600" alt="UM_set_XiLab.png" /><figcaption aria-hidden="true">UM_set_XiLab.png</figcaption>
 </figure>
 
 ## Getting started with Micro-Manager
@@ -155,7 +155,7 @@ The process of hardware configuration consists of 6 steps:
 1\. At start, choose *Create new configuration* and click *Next*.
 
 <figure>
-<img src="media/UM_newconf.png" title="UM_newconf.png" width="600" alt="UM_newconf.png" /><figcaption aria-hidden="true">UM_newconf.png</figcaption>
+<img src="/media/UM_newconf.png" title="UM_newconf.png" width="600" alt="UM_newconf.png" /><figcaption aria-hidden="true">UM_newconf.png</figcaption>
 </figure>
 
 2\. At the second step Micro-Manager prompts you to add hardware. If you
@@ -166,7 +166,7 @@ two drivers: *Standa8SMC4Z* for motor controller with one axis and
 a dialog box with properties will appear.
 
 <figure>
-<img src="media/UM_set.png" title="UM_set.png" width="600" alt="UM_set.png" /><figcaption aria-hidden="true">UM_set.png</figcaption>
+<img src="/media/UM_set.png" title="UM_set.png" width="600" alt="UM_set.png" /><figcaption aria-hidden="true">UM_set.png</figcaption>
 </figure>
 
 3\. In the *Value* column type the COM port number for motor controller
@@ -187,7 +187,7 @@ used for any USB camera. Choose OpenCVGrabber folder in Available
 Devices. The next window will appear. Click *Ok*.
 
 <figure>
-<img src="media/UM_set_OpenCV.png" title="UM_set_OpenCV.png" width="600" alt="UM_set_OpenCV.png" /><figcaption aria-hidden="true">UM_set_OpenCV.png</figcaption>
+<img src="/media/UM_set_OpenCV.png" title="UM_set_OpenCV.png" width="600" alt="UM_set_OpenCV.png" /><figcaption aria-hidden="true">UM_set_OpenCV.png</figcaption>
 </figure>
 
 6\. Click *Next* and *Finish* in the last step.

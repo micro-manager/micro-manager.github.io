@@ -18,7 +18,7 @@ Plugin](Pixel_Calibrator_Plugin) for this to succeed). When
 the *Imaging* phase ends, the plugin will continue *exploring*.
 
 ![Screen Shot of Intelligent Acquisition
-plugin](media/IntAcq.png "Screen Shot of Intelligent Acquisition plugin")
+plugin](/media/IntAcq.png "Screen Shot of Intelligent Acquisition plugin")
 
 You will need to define the *Exploration* and *Imaging* settings. Set up
 the [MDA

@@ -64,7 +64,7 @@ that can be accessed from many different programming environments (C++,
 Java, Matlab, Python, Perl and others).
 
 ![Micro-Manage Block
-Diagram](media/Block_diagram.gif "Micro-Manage Block Diagram")
+Diagram](/media/Block_diagram.gif "Micro-Manage Block Diagram")
 
 Figure 1, Block diagram of the software architecture
 
@@ -109,7 +109,7 @@ MMCore provides the following device-independent services:
     and time-lapse
 
 ![Core module
-block-diagram](media/Core_module.gif "fig:Core module block-diagram")  
+block-diagram](/media/Core_module.gif "fig:Core module block-diagram")  
 Figure 2, MMCore module block diagram  
   
 

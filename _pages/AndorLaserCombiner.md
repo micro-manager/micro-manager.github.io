@@ -109,7 +109,7 @@ of `0.0` since a fast AOTF gates the laser output.
 
 ### Microsoft Visual C++ error(s) opening HCW
 
-| Description | Opening the `Hardware Configuration Wizard` shows one or more of the following error windows, and closing the window immediately crashes µManager: ![Figure: Error due to incorrect internal laser power setting](media/Alc_mscv_error.jpg "fig:Figure: Error due to incorrect internal laser power setting") |
+| Description | Opening the `Hardware Configuration Wizard` shows one or more of the following error windows, and closing the window immediately crashes µManager: ![Figure: Error due to incorrect internal laser power setting](/media/Alc_mscv_error.jpg "fig:Figure: Error due to incorrect internal laser power setting") |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cause       | Bug in ALC\_SDK (Laser power setting exceeding rated value)                                                                                                                                                                                                                                             |
 | Workaround  | Request Andor support to remotely connect to each laser head and adjust the "set power" (using the `p=` serial command) to the rated value of the laser head.                                                                                                                                           |

@@ -31,7 +31,7 @@ comprehensive, freely available, imaging solution.**
 <td markdown="1">
 
 ![ Micro-Manager Screen
-Shot](media/MM_screenshot.png " Micro-Manager Screen Shot")
+Shot](/media/MM_screenshot.png " Micro-Manager Screen Shot")
 
 </td>
 <td markdown="1">

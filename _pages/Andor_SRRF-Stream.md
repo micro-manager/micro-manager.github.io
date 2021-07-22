@@ -76,7 +76,7 @@ Configuration Wizard...
 
 You will see the SRRF properties in the device property browser as shown
 below  
-<img src="media/AndorSRRFPropertiesSona.jpeg" title="AndorSRRFPropertiesSona.jpeg" width="600" alt="AndorSRRFPropertiesSona.jpeg" />  
+<img src="/media/AndorSRRFPropertiesSona.jpeg" title="AndorSRRFPropertiesSona.jpeg" width="600" alt="AndorSRRFPropertiesSona.jpeg" />  
 If there are no SRRF properties in the device property browser, please
 check you have installed the SRRF-Stream to the correct location, and
 you are running that version of Micro-Manager. Ensure this is 64-bit.  

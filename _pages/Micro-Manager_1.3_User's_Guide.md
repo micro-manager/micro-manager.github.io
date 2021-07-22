@@ -154,7 +154,7 @@ configuration for a while before attempting to set-up and control a real
 microscope. All examples in this guide refer to the Demo configuration.
 
   
-![Startup screen](media/Intro.gif "fig:Startup screen")  
+![Startup screen](/media/Intro.gif "fig:Startup screen")  
 Figure 1. Startup screen: selection of the configuration file
 
   
@@ -179,7 +179,7 @@ Micro-Manager and ImageJ windows appear differently on different
 computer systems; examples from multiple systems are used in this
 manual.
 
-![Startup screen](media/Main_panel.gif "fig:Startup screen")  
+![Startup screen](/media/Main_panel.gif "fig:Startup screen")  
 Figure 2. Main control panel displaying device controls and image
 histogram
 
@@ -195,7 +195,7 @@ image. In addition, at the bottom of the window there are shortcut
 buttons to save the image.
 
 ![Image acquisition
-window](media/Image_window3.jpg "fig:Image acquisition window")  
+window](/media/Image_window3.jpg "fig:Image acquisition window")  
 Figure 3. "Live" window.
 
 Each time you press the Snap button, the image in the "Live" window will
@@ -274,7 +274,7 @@ new image is displayed in the Live window. The profile is computed from
 the currently active line drawn over the image. To draw a line profile a
 region, use standard line tool from the ImageJ toolbar.
 
-![Line profile window](media/Profile.jpg "fig:Line profile window")  
+![Line profile window](/media/Profile.jpg "fig:Line profile window")  
 Figure 4. Line Profile window.
 
 ## Camera Settings
@@ -310,7 +310,7 @@ window.
 
   
 ![Device/Property Browser
-Window](media/Device_manager.gif "fig:Device/Property Browser Window")  
+Window](/media/Device_manager.gif "fig:Device/Property Browser Window")  
 Figure 5. Device/Property Browser window.
 
   
@@ -328,7 +328,7 @@ devices will be affected by the command. In the example in the
 configuration guide, choosing the "DAPI" channel preset command will
 move three filter wheels to the appropriate positions.
 
-![Presets Panel](media/Presets.gif "fig:Presets Panel")  
+![Presets Panel](/media/Presets.gif "fig:Presets Panel")  
 Figure 6. Detail of the main control window: configuration preset.
 
 There is no limit to the number of devices or number of different
@@ -352,7 +352,7 @@ allows you to create a stack as multi-channel (wavelength coordinate),
 multi-frame (time coordinate), multi-slice (Z coordinate), or any
 combination of the above. Such stacks will be referred to as "5D image".
 In addition, 5D Images can be acquired at multiple positions.  
-![Acquisition Dialog](media/Acq_dialog.png "fig:Acquisition Dialog")  
+![Acquisition Dialog](/media/Acq_dialog.png "fig:Acquisition Dialog")  
 Figure 7. Acquisition control dialog.
 
 After defining channels, slices and frames by using controls in the
@@ -422,7 +422,7 @@ use the Burst mode, which can be accessed by pressing the "Burst" button
 in the main control window.
 
 ![Burst Acquisition
-Dialog](media/Burst_mode.gif "fig:Burst Acquisition Dialog")  
+Dialog](/media/Burst_mode.gif "fig:Burst Acquisition Dialog")  
 Figure 7. Burst Mode Acquisition dialog.
 
 Set up the camera (exposure time, binning, etc..) in the main
@@ -461,7 +461,7 @@ display the acquired images as a two channel Image in the Image5D
 viewer. You can set the color of each channel and use either a
 left-right or top-bottom split.
 
-![Split View Dialog](media/Split_view.gif "fig:Split View Dialog")  
+![Split View Dialog](/media/Split_view.gif "fig:Split View Dialog")  
 Figure 8. Split View dialog.
 
   
@@ -523,7 +523,7 @@ record the positions of stages in your system. At the bottom of the
 dialog is a list of available stage axes, any of which you can select to
 use for recording positions.
 
-![Position List Dialog](media/Position_list.png "fig:Position List Dialog")  
+![Position List Dialog](/media/Position_list.png "fig:Position List Dialog")  
 Figure 9. Position List dialog.
 
   
@@ -549,7 +549,7 @@ Tile Creator Dialog. The purpose of this dialog is to quickly create a
 position list covering the area of an object (larger than a single
 image) in the microscope specimen.
 
-![Tile Creator Dialog](media/Tile_creator.gif "fig:Tile Creator Dialog")  
+![Tile Creator Dialog](/media/Tile_creator.gif "fig:Tile Creator Dialog")  
 Figure 10. Tile Creator dialog.
 
   
@@ -617,7 +617,7 @@ Micro-Manager uses an image viewer derived from Joachim Walter's
 plugin. The viewer has sliders for both the z and t dimensions, and can
 display channels as an overlay.
 
-![5D image window](media/Image_5d.gif "fig:5D image window")  
+![5D image window](/media/Image_5d.gif "fig:5D image window")  
 Figure 11. Acquisition data displayed in the 5D image window.
 
   

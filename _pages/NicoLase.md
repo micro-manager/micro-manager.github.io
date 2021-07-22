@@ -105,7 +105,7 @@ of TTL outputs and inputs compared to the original Micromanager's
 Arduino Firmware.
 
 <figure>
-<img src="media/NicoLase.jpg" title="Karl Bellve&#39;s NicoLase" width="300" alt="Karl Bellve&#39;s NicoLase" /><figcaption aria-hidden="true">Karl Bellve's NicoLase</figcaption>
+<img src="/media/NicoLase.jpg" title="Karl Bellve&#39;s NicoLase" width="300" alt="Karl Bellve&#39;s NicoLase" /><figcaption aria-hidden="true">Karl Bellve's NicoLase</figcaption>
 </figure>
 
 ### Printed Circuit Board

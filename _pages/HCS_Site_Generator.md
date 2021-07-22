@@ -12,6 +12,6 @@ standard multi-well plates that can be used in Micro-Manager to perform
 multi-dimensional acquisition.
 
 <figure>
-<img src="media/HCS.png" title="HCS.png" width="650" alt="HCS.png" /><figcaption aria-hidden="true">HCS.png</figcaption>
+<img src="/media/HCS.png" title="HCS.png" width="650" alt="HCS.png" /><figcaption aria-hidden="true">HCS.png</figcaption>
 </figure>
 

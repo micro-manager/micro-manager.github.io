@@ -46,7 +46,7 @@ Nikon driver was previously installed, or under Unknown devices if not.
 
 ![\|thumb\|center\|upright=2.5\|alt=Device Manager.\|Windows 7's device
 manager is displaying the Nikon 90i as an unknown
-device](media/Device_manager_unkown.png "|thumb|center|upright=2.5|alt=Device Manager.|Windows 7's device manager is displaying the Nikon 90i as an unknown device")
+device](/media/Device_manager_unkown.png "|thumb|center|upright=2.5|alt=Device Manager.|Windows 7's device manager is displaying the Nikon 90i as an unknown device")
 
 Right click and select 'Update Driver'. Select 'Install from specific
 location' and click 'Next'. Select 'Don't search. I will choose the
@@ -56,7 +56,7 @@ and 'Next'.
 
 ![\|thumb\|center\|upright=2.5\|alt=Device Manager.\|Windows can't
 verify the publisher of this driver
-software](media/Driver_warning_90i.png "|thumb|center|upright=2.5|alt=Device Manager.|Windows can't verify the publisher of this driver software")
+software](/media/Driver_warning_90i.png "|thumb|center|upright=2.5|alt=Device Manager.|Windows can't verify the publisher of this driver software")
 
 {% include notice icon="info" content="The wizard will warn you that 'Windows can't verify the publisher of this driver software'. If you click 'Install this driver software anyway', the driver for the 90i should be successfully installed." %}
 
@@ -68,14 +68,14 @@ the correct driver installed) and select 'Eclipse90i' under the
 
 ![\|thumb\|center\|upright=2.5\|alt=Hardware Configuration
 Wizard.\|Hardware Configuration Wizard. Open the Nikon 90i
-folder](media/Hardware_wizard_90i_1.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware Configuration Wizard. Open the Nikon 90i folder")
+folder](/media/Hardware_wizard_90i_1.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware Configuration Wizard. Open the Nikon 90i folder")
 
 Under the 'Initialization properties' on page 2 of the wizard, the Nikon
 90i port value should appear as 'Nikon ECLIPSE 90i'. Selected this port.
 
 ![\|thumb\|center\|upright=2.5\|alt=Hardware Configuration
 Wizard.\|Hardware configuration wizard. Select the Nikon ECLIPSE 90i
-port](media/Hardware_wizard_90i_2.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware configuration wizard. Select the Nikon ECLIPSE 90i port")
+port](/media/Hardware_wizard_90i_2.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware configuration wizard. Select the Nikon ECLIPSE 90i port")
 
 Then add any additional hardware your particular microscope is fitted
 with. This could include the nosepiece, Z-stage, optical path, filter
@@ -84,7 +84,7 @@ should be set to go.
 
 ![\|thumb\|center\|upright=2.5\|alt=Hardware Configuration
 Wizard.\|Hardware configuration wizard. Add any additional
-hardware](media/Hardware_wizard_90i_3.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware configuration wizard. Add any additional hardware")
+hardware](/media/Hardware_wizard_90i_3.png "|thumb|center|upright=2.5|alt=Hardware Configuration Wizard.|Hardware configuration wizard. Add any additional hardware")
 
 {% include notice icon="info" content="If you provide magnification information to the system for each of your objectives, MicroManager will automatically calculate the correct pixel size based on the current zoom settings." %}
 

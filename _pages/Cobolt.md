@@ -136,7 +136,7 @@ enable/disable Autostart is now supported. There is also direct serial
 communication supported via **Serial Command**
 
 <figure>
-<img src="media/Cobolt_properties.png" title="Cobolt_properties.png" width="400" alt="Cobolt_properties.png" /><figcaption aria-hidden="true">Cobolt_properties.png</figcaption>
+<img src="/media/Cobolt_properties.png" title="Cobolt_properties.png" width="400" alt="Cobolt_properties.png" /><figcaption aria-hidden="true">Cobolt_properties.png</figcaption>
 </figure>
 
 ### Linux udev Rule

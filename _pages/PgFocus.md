@@ -69,7 +69,7 @@ following content:
 The pgFocus plugin graphs incoming data from the pgFocus hardware.
 
 <figure>
-<img src="media/PgFocus_Realtime.png" title="PgFocus_Realtime.png" width="500" alt="PgFocus_Realtime.png" /><figcaption aria-hidden="true">PgFocus_Realtime.png</figcaption>
+<img src="/media/PgFocus_Realtime.png" title="PgFocus_Realtime.png" width="500" alt="PgFocus_Realtime.png" /><figcaption aria-hidden="true">PgFocus_Realtime.png</figcaption>
 </figure>
 
 Top graph shows the current focus offset.
@@ -91,7 +91,7 @@ The light profile graph can be used to center the reflected laser beam
 onto pgFocus' sensor.
 
 <figure>
-<img src="media/PgFovus_Lightprofile.png" title="PgFovus_Lightprofile.png" width="500" alt="PgFovus_Lightprofile.png" /><figcaption aria-hidden="true">PgFovus_Lightprofile.png</figcaption>
+<img src="/media/PgFovus_Lightprofile.png" title="PgFovus_Lightprofile.png" width="500" alt="PgFovus_Lightprofile.png" /><figcaption aria-hidden="true">PgFovus_Lightprofile.png</figcaption>
 </figure>
 
 The refresh rate can be adjusted in the settings panel.
@@ -99,7 +99,7 @@ The refresh rate can be adjusted in the settings panel.
 ### Calibration Panel
 
 <figure>
-<img src="media/PgFocus_Calibration.png" title="PgFocus_Calibration.png" width="500" alt="PgFocus_Calibration.png" /><figcaption aria-hidden="true">PgFocus_Calibration.png</figcaption>
+<img src="/media/PgFocus_Calibration.png" title="PgFocus_Calibration.png" width="500" alt="PgFocus_Calibration.png" /><figcaption aria-hidden="true">PgFocus_Calibration.png</figcaption>
 </figure>
 
 Calibration should be performed after setting up pgFocus, and after any
@@ -109,7 +109,7 @@ focus.
 ### Settings Panel
 
 <figure>
-<img src="media/PgFocus_Settings.png" title="PgFocus_Settings.png" width="500" alt="PgFocus_Settings.png" /><figcaption aria-hidden="true">PgFocus_Settings.png</figcaption>
+<img src="/media/PgFocus_Settings.png" title="PgFocus_Settings.png" width="500" alt="PgFocus_Settings.png" /><figcaption aria-hidden="true">PgFocus_Settings.png</figcaption>
 </figure>
 
 Most of the important parameters can be changed on this panel.
@@ -119,5 +119,5 @@ Browser window for pgFocus.
 ### Device/Property Browser
 
 <figure>
-<img src="media/PgFocus_DeviceAdapter.png" title="PgFocus_DeviceAdapter.png" width="500" alt="PgFocus_DeviceAdapter.png" />
+<img src="/media/PgFocus_DeviceAdapter.png" title="PgFocus_DeviceAdapter.png" width="500" alt="PgFocus_DeviceAdapter.png" />
 </figure>

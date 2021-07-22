@@ -143,7 +143,7 @@ ImageJ ROI Manager.
 ![Figure: Sequencing window showing (1) ROI list (2) Create ROI Grid
 panel (3) Sequence table editor (4) Create Sequence panel (5) Control
 buttons on
-bottom](media/Sequencing.png "Figure: Sequencing window showing (1) ROI list (2) Create ROI Grid panel (3) Sequence table editor (4) Create Sequence panel (5) Control buttons on bottom")
+bottom](/media/Sequencing.png "Figure: Sequencing window showing (1) ROI list (2) Create ROI Grid panel (3) Sequence table editor (4) Create Sequence panel (5) Control buttons on bottom")
 
 ### ROI list
 
