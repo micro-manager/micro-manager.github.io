@@ -122,10 +122,10 @@ The ITC18.csh script was written for a very specific microscope
 developed by the Biomedical Imaging Group at the University of
 Massachusetts. That microscope has 2 VMM-D3 shutter controllers (5 total
 shutters), a Sutter 10-2 filter wheel, 3 Lasers, and two pifocs. The
-media/ITC18.csh script is designed to control everything but the two pifocs.
+ITC18.csh script is designed to control everything but the two pifocs.
 An additional script controls the two pifocs. ITC18.csh assumes TTL Out
 0 is triggering a camera, TTL Out 1-5 are controlling shutters. The
-media/ITC18.csh also controls a Sutter 10-2 connected to the ITC18 via TTL Out
+ITC18.csh also controls a Sutter 10-2 connected to the ITC18 via TTL Out
 8-15 to its parallel port.
 
 The TESM.bsh is a bean shell script that is loaded into micromanager. It
