@@ -4,7 +4,6 @@ title: Velleman K8055
 redirect_from:
   - /wiki/Velleman_K8055
   - /wiki/K8055
-  - /K8055
 layout: page
 ---
 

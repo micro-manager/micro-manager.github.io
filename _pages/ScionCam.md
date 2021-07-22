@@ -4,7 +4,6 @@ title: ScionCam
 redirect_from:
   - /wiki/ScionCam
   - /wiki/Scion
-  - Scion
 layout: page
 ---
 

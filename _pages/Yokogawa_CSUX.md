@@ -4,7 +4,6 @@ title: Yokogawa CSUX
 redirect_from:
   - /wiki/Yokogawa_CSUX
   - /wiki/CSUX
-  - /CSUX
 layout: page
 ---
 

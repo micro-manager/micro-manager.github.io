@@ -122,7 +122,7 @@ Property Notes
 
 The Z stage can be set up to receive trigger signals from many cameras
 (see documentation on Micro-Manager's
-[Hardware-based\_synchronization](Hardware-based_synchronization)
+[Hardware-based\_synchronization](Hardware-based_Synchronization_in_Micro-Manager)
 feature). A BNC cable is connected from the camera's TTL output to the
 controller's trigger input on the corresponding card's front panel of
 the Tiger controller. By synchronizing Z slices with camera exposures,

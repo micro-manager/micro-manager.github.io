@@ -81,8 +81,8 @@ This adapter provides an interface to certain USB devices. It makes
 these devices visible to other device adapters as if they were behind a
 normal (RS232) serial port. Currently, this only works with the Velleman
 K8055, K8061 and Nikon Eclipse 90i or AZ100. On Windows, the user needs
-to install the appropriate driver (see [K8055](K8055),
-[K8061](K8061), [NikonAZ100](NikonAZ100), or
+to install the appropriate driver (see [K8055](Velleman_K8055),
+[K8061](Velleman_K8061), [NikonAZ100](NikonAZ100), or
 [NikonEclipse90i](NikonEclipse90i) ). On other platforms,
 this may not be the case.
 

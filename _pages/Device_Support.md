@@ -53,7 +53,7 @@ release](Download_Micro-Manager_Latest_Release).
     für Automatisierung, Bildverarbeitung, Software GmbH Jena
 -   [AmScope](AmScope) - AmScope MU series cameras (Windows)
 -   [Andor](Andor) - Andor cameras (CCD and EMCCD)
--   [AndorSDK3](AndorSDK3) - New model Andor cameras (sCMOS)
+-   [AndorSDK3](Andor_SDK3) - New model Andor cameras (sCMOS)
 -   [Apogee](Apogee) - Apogee cameras
 -   [AxioCam](AxioCam) - Zeiss AxioCam medium resolution and
     high resolution models (Windows)
@@ -70,7 +70,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [DemoCamera](DemoCamera) - Virtual, emulated equipment
     for testing
 -   [Dhyana](Dhyana) - Dhyana/Tucsen cameras
--   [DSLRRemoteCamera](DSLRRemoteCamera) - Canon DSLR cameras
+-   [DSLRRemoteCamera](TetheredCam) - Canon DSLR cameras
     (Windows)
 -   [FakeCamera](FakeCamera) - Virtual camera that loads
     images from disk (Windows, Linux)
@@ -101,14 +101,14 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Mightex\_C\_Cam](Mightex_C_Cam) - Mightex C-series USB
     cameras
 -   [MoticCamera](MoticCamera) - Motic cameras
--   [NKRemoteCamera](NKRemoteCamera) - Nikon Digital SLR
+-   [NKRemoteCamera](TetheredCam) - Nikon Digital SLR
     (Windows)
 -   [OpenCVgrabber](OpenCVgrabber) - Supports numerous USB
     cameras and frame grabbers (those using a DirectShow or WDM class
     driver). (Windows)
 -   [PCO\_Camera](PCO_Camera) - Supports all pco.sdk based
     cameras (pco.edge, pco.panda and others)
--   [Photometrics](Photometrics) - A.k.a.
+-   [Photometrics](PVCAM) - A.k.a.
     [PVCAM](PVCAM)
 -   [PICAM](PICAM) - Princeton Instruments cameras using the
     PICam interface
@@ -120,7 +120,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [PrincetonInstruments](PrincetonInstruments) - Princeton
     Instruments cameras
 -   [ProgRes](ProgRes) - Jenoptik cameras (ProgRes series)
--   [PSRemoteCamera](PSRemoteCamera) - Canon PowerShot camera
+-   [PSRemoteCamera](TetheredCam) - Canon PowerShot camera
     (Windows)
 -   [PVCAM](PVCAM) - Roper/Photometrics cameras (not for
     Princeton Instruments)
@@ -149,7 +149,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Veroptics](Veroptics) - Veroptics cameras
 -   [Video4Linux](Video4Linux) - Video4Linux compatible
     cameras
--   [XIMEACamera](XIMEACamera) - XIMEA cameras (and some
+-   [XIMEACamera](XIMEA) - XIMEA cameras (and some
     Olympus Soft Imaging cameras)
 
 
@@ -170,7 +170,7 @@ release](Download_Micro-Manager_Latest_Release).
     controller: 3-axis, 2-axis, single axis
 -   [CoolLED](CoolLED) - LED illuminator (usable as a shutter
     device)
--   [CONEX](CONEX) - See NewportCONEX
+-   [CONEX](NewportCONEX) - See NewportCONEX
 -   [Conix](Conix) - Conix Filter Changer, XY and Z stage
 -   [Corvus](Corvus) - Märzhäuser XY stages with Corvus
     driver.
@@ -233,7 +233,7 @@ release](Download_Micro-Manager_Latest_Release).
     Jena. 3 channel controller with USB
 -   [Piezosystem\_NV120\_1](Piezosystem_NV120_1) -
     Piezosystem Jena. 1 channel controller with USB
--   [PrecisExcite](PrecisExcite) - LED illuminator (usable as
+-   [PrecisExcite](CoolLED) - LED illuminator (usable as
     a shutter device)
 -   [Prior](Prior) - Prior stages, shutters, and filter
     wheels
@@ -309,9 +309,9 @@ release](Download_Micro-Manager_Latest_Release).
     through a serial port
 -   [ITC18](ITC18) - controls shutters, cameras, pifocs,
     anything that can use either a TTL signal or a ±10 V signal
--   [K8055](K8055) - Velleman Digital IO board (all
+-   [K8055](Velleman_K8055) - Velleman Digital IO board (all
     platforms)
--   [K8061](K8061) - Velleman Digital IO board (all
+-   [K8061](Velleman_K8061) - Velleman Digital IO board (all
     platforms)
   - [MCCDAQ](MCCDAQ) - Measurement Computing PCI-DDA08/16
   - [MicroFPGA](MicroFPGA) - Open source FPGA platform for
@@ -320,7 +320,7 @@ release](Download_Micro-Manager_Latest_Release).
     and NIMultiAnalog
 -   [NicoLase](NicoLase) An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
--   [NI100X](NI100X) - NI I/O boards - DAQmx interface
+-   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface
 -   [NIMultiAnalog](NIMultiAnalog) - NI boards with multiple
     analog outputs
 -   [SerialManager](SerialManager) - Serial Ports on Windows
@@ -348,7 +348,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [CoboltOfficial](CoboltOfficial) - Cobolt lasers 06-01
     Series, Cobolt Skyra
 -   [Cobolt](Cobolt) - Cobolt laser controller
--   [CoherentCube](CoherentCube) - Coherent CUBE laser
+-   [CoherentCube](Coherent_Cube) - Coherent CUBE laser
     controller
 -   [CoherentOBIS](CoherentOBIS) - Coherent OBIS laser
     controller (Single Laser Remote)
@@ -392,7 +392,7 @@ release](Download_Micro-Manager_Latest_Release).
 
 ## Other devices
 
--   [AAAOTF](AAAOTF) - AOTF controller from AA
+-   [AAAOTF](AA_AOTF) - AOTF controller from AA
     Optoelectronics
 -   [Aladdin](Aladdin) - Syring pump controller from Aladdin
 -   [AndorShamrock](AndorShamrock) - Andor Shamrock
@@ -439,8 +439,8 @@ release](Download_Micro-Manager_Latest_Release).
     modulators from CRi
 -   [VisiTech\_iSIM](VisiTech_iSIM) - VisiTech iSIM
 -   [Yokogawa](Yokogawa) - Yokogawa CSU22
--   Yokogawa [CSUW1](CSUW1) - Yokogawa CSUW1
--   Yokogawa [CSUX](CSUX) - Yokogawa CSUX
+-   Yokogawa [CSUW1](Yokogawa_CSUW1) - Yokogawa CSUW1
+-   Yokogawa [CSUX](Yokogawa_CSUX) - Yokogawa CSUX
 -   [XLight](XLight) - CrestOptics X-Light spinning disc
     confocal system
 -   The [HSi-300 Hyperspectral

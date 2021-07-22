@@ -29,7 +29,7 @@ controllers are closed-loop feedback enabled, which is essential for
 high-repeatability and sub-nanometer resolution for a nanopositioner.
 
 For fast acquisition using
-[Hardware-based\_synchronization](Hardware-based_synchronization),
+[Hardware-based\_synchronization](Hardware-based_Synchronization_in_Micro-Manager),
 custom versions of MCL's controllers are available (NanoDrive-x or
 NanoDrive85-x equipped with a USB board **and** the OP-ISS programmable
 port); they feature a sequence buffer with 1000 positions. Read more on

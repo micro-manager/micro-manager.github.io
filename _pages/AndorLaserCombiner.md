@@ -58,7 +58,7 @@ earlier](#library-installation-for-mm-1415-and-earlier).
 
 [ESIOImagingControllers](ESIOImagingControllers) can be used
 with an ESio adapter cable for the ALC to run [hardware-based
-synchronization](hardware-based_synchronization). The ALC
+synchronization](Hardware-based_Synchronization_in_Micro-Manager). The ALC
 lacks the onboard programming to allow the camera TTL synchronization
 used by the Micro-Manager architecture, thus another supported
 triggering device is needed.

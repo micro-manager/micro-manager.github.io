@@ -33,7 +33,7 @@ applications in microscopy:
 -   PM/QI Auto White Balance
 -   [Photon Transfer Curve
     Assistant](Photon_Transfer_Curve_Assistant)
--   [Projector](Projector)
+-   [Projector](Projector_Plugin)
 -   [Slide Explorer](Slide_Explorer_Plugin)
 -   [SplitView](SplitView)
 -   [Stage Control](Stage_Control)

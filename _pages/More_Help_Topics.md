@@ -16,7 +16,7 @@ layout: page
 -   [Comparison with other microscopy
     software](Comparison_with_other_microscopy_software)
 -   [Hardware-based
-    synchronization](Hardware-based_synchronization)
+    synchronization](Hardware-based_Synchronization_in_Micro-Manager)
 -   [High Speed Acquisition in
     Micro-Manager](High_Speed_Acquisition_in_Micro-Manager)
 -   [ pgFocus: Focus Stabilization](PgFocus)

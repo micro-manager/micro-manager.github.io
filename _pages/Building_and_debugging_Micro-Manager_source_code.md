@@ -97,7 +97,7 @@ GPL-3 (PCI driver)</p></td>
 <td><p>Registration required</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="AndorSDK3">AndorSDK3</a></p></td>
+<td><p><a href="/Andor_SDK3">AndorSDK3</a></p></td>
 <td><p>Andor SDK 3</p></td>
 <td><p>? (binary library),<br />
 ? (modified BitFlow library)</p></td>
@@ -189,7 +189,7 @@ Yes</p></td>
 <td><p>By request</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="K8055">K8055</a></p></td>
+<td><p><a href="Velleman_K8055">K8055</a></p></td>
 <td><p><a href="http://libk8055.sourceforge.net/">libk8055</a></p></td>
 <td><p>GPL-2</p></td>
 <td><p>Source tarball only</p></td>

@@ -4,7 +4,6 @@ title: SpotCamera
 redirect_from:
   - /wiki/SpotCamera
   - /wiki/Spot
-  - Spot
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: Yokogawa CSUW1
 redirect_from:
   - /wiki/Yokogawa_CSUW1
   - /wiki/CSUW1
-  - /CSUW1
 layout: page
 ---
 

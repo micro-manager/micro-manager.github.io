@@ -4,7 +4,6 @@ title: Micro-Manager FAQ
 redirect_from:
   - /wiki/Micro-Manager_FAQ
   - /wiki/FAQ
-  - FAQ
 layout: page
 ---
 

@@ -4,7 +4,6 @@ title: NewportCONEX
 redirect_from:
   - /wiki/NewportCONEX
   - /wiki/CONEX
-  - /CONEX
 layout: page
 ---
 

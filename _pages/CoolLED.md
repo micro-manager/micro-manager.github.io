@@ -4,7 +4,6 @@ title: CoolLED
 redirect_from:
   - /wiki/CoolLED
   - /wiki/PrecisExcite
-  - /PrecisExcite
 layout: page
 ---
 

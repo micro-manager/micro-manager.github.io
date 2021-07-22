@@ -4,7 +4,6 @@ title: Coherent Cube
 redirect_from:
   - /wiki/Coherent_Cube
   - /wiki/CoherentCube
-  - /CoherentCube
 layout: page
 ---
 

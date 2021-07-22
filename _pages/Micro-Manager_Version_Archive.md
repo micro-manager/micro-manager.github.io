@@ -93,14 +93,14 @@ select "Open".)
     -   **StandaStage**: An alternative adapter for Standa Microsctep
         Driver; allows use as an XY stage (Ed Simmons)
 -   Updated device adapters
-    -   [AndorSDK3](AndorSDK3): Add ExternalTriggerDelay
+    -   [AndorSDK3](Andor_SDK3): Add ExternalTriggerDelay
         feature for LightScanPlus cameras (Matthew Milford, Andor)
     -   [ASIStage](ASIStage): Improve behavior when moving
         parallel to X or Y axis; fix issue with old firmware versions
         (Jon Daniels, ASI)
     -   [ASITiger](ASITiger): Numerous improvements and
         fixes; add several features to PLogic support (Jon Daniels, ASI)
-    -   [CSUW1](CSUW1): Fix issue with Disk switching; add
+    -   [CSUW1](Yokogawa_CSUW1): Fix issue with Disk switching; add
         Label property to Disk (Nico Stuurman)
     -   [DemoCamera](DemoCamera): Handle ROI correctly when
         binning is enabled; add demo galvo device; add
@@ -109,7 +109,7 @@ select "Open".)
         sequence acquisition (Mark Tsuchida)
     -   [Mightex\_C\_Cam](Mightex_C_Cam): Add "Snap" support
         (Mightex Systems)
-    -   [NI100X](NI100X): Prevent State property from getting
+    -   [NI100X](National_Instruments): Prevent State property from getting
         stuck when using state device shutter with NI digital output
         (Mark Tsuchida)
     -   [PicardStage](PicardStage): Update Picard SDK
@@ -129,7 +129,7 @@ select "Open".)
     -   [XCite120PC\_Exacte](XCite120PC_Exacte): Power-Factor
         property is now read-only and Output-Power limits are set
         correctly (Mark Tsuchida)
-    -   [XIMEACamera](XIMEACamera): Fix timestamp generation
+    -   [XIMEACamera](XIMEA): Fix timestamp generation
         for acquired images, reset timestamp at start of sequence
         acquisition (Marian Zajko, XIMEA); *Users should update to XIMEA
         API 4.04.00*
@@ -302,7 +302,7 @@ select "Open".)
         (Mark Tsuchida); Fix EM gain property (Toshio Suzuki)
     -   [PVCAM](PVCAM): Fix ColorMode property; improve error
         handling (Lubomir Walder, Photometrics/QImaging)
-    -   [PrecisExcite](PrecisExcite): Fix issue where invalid
+    -   [PrecisExcite](CoolLED): Fix issue where invalid
         configuration file could be generated (Mark Tsuchida)
     -   [SerialManager](SerialManager): Remove "GetAnswer
         retry \#" logging (Mark Tsuchida)
@@ -316,7 +316,7 @@ select "Open".)
         (Amitabh Verma)
     -   [Versalase](Versalase): Add properties to select
         lasers to shutter individually (David Sweeney, Vortran)
-    -   Yokogawa [CSUX](CSUX): Add retry logic for setting
+    -   Yokogawa [CSUX](Yokogawa_CSUX): Add retry logic for setting
         dichroic (Doug Kelly, Chris Weisiger)
     -   [Zaber](Zaber): Improve XY stage support and add
         uniaxial stage support; improve error handling (Athabasca
@@ -459,7 +459,7 @@ select "Open".)
 -   Updated Device Adapters
     -   [ABSCamera](ABSCamera): Minor bugfix and internal
         cleanup (ABS GmbH Jena)
-    -   [AndorSDK3](AndorSDK3): Fix metadata for USB3 Zyla
+    -   [AndorSDK3](Andor_SDK3): Fix metadata for USB3 Zyla
         (Matthew Milford, Andor)
     -   [Arduino](Arduino): Bugfix for switch state handling
         (Nico Stuurman)
@@ -692,7 +692,7 @@ select "Open".)
     -   [Pixel Calibrator](Pixel_Calibrator_Plugin): Return
         to original position and re-acquire image after calibration
         (Falk Dettmar)
-    -   [Projector](Projector): Enhancements and fixes for
+    -   [Projector](Projector_Plugin): Enhancements and fixes for
         SLM ROI support (Arthur Edelstein for Andor)
 
 <!-- -->
@@ -710,7 +710,7 @@ select "Open".)
 -   Updated device adapters
     -   [Andor](Andor): Update to use latest Andor driver,
         add iXon 888 isolated crop ROIs (Matthew Milford, Andor)
-    -   [AndorSDK3](AndorSDK3): Fix a crash or hang that
+    -   [AndorSDK3](Andor_SDK3): Fix a crash or hang that
         could occur when rapidly stopping and restarting a sequence
         acquisition (Norman Glasgow, Andor)
     -   [Arduino](Arduino): Fix an issue when using multiple
@@ -963,7 +963,7 @@ select "Open".)
         as obsolete as it is superseded by MultiChannelShading
     -   [Multi-Channel Shading](MultiChannelShading): Fix
         crash when defining new groups (Kurt Thorn)
-    -   [Projector](Projector): Enhancements to ROI support
+    -   [Projector](Projector_Plugin): Enhancements to ROI support
         (Arthur Edelstein)
     -   [Stage Control](Stage_Control): Wait for device to
         finish movement before updating displayed position (Nico
@@ -972,7 +972,7 @@ select "Open".)
 <!-- -->
 
 -   New device adapters
-    -   [CONEX](CONEX): Newport CONEX-CC DC-Servo Controller
+    -   [CONEX](NewportCONEX): Newport CONEX-CC DC-Servo Controller
         (Newport)
     -   [IIDC](IIDC): IIDC 1394 cameras (future replacement
         for [dc1394](dc1394), currently monochrome only)
@@ -1006,7 +1006,7 @@ select "Open".)
     -   [AndorLaserCombiner](AndorLaserCombiner): Add
         SaveLifetime and IsLinear properties; allow TTL option in Enable
         property (Pariksheet Nanda)
-    -   [AndorSDK3](AndorSDK3): Add support for Auxiliary Out
+    -   [AndorSDK3](Andor_SDK3): Add support for Auxiliary Out
         TTL I/O pin; Linux support; various bugfixes (Norman Glasgow,
         Andor; Erik Hvatum)
     -   [ASITiger](ASITiger): Add property to reverse axis

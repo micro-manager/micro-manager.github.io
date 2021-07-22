@@ -59,7 +59,7 @@ Windows only
 </tr>
 </table>
 
-See also: [NI100X](NI100X).
+See also: [NI100X](National_Instruments).
 
 This device adapter is intended for use with National Instruments DAQ
 boards/boxes that have multiple analog output ports (e.g. Analog Output

@@ -35,13 +35,13 @@ These are the wiki pages I contribute to and maintain:
 
 -   DeviceAdapters
     -   [Andor EM/CCD cameras](/Andor)
-    -   [Andor sCMOS cameras](/AndorSDK3)
+    -   [Andor sCMOS cameras](/Andor_SDK3)
     -   [Andor Laser Combiner](/AndorLaserCombiner)
     -   [Andor MicroPoint](/MicroPoint)
     -   [Andor Mosaic](/Mosaic3)
     -   [Arduino](/Arduino)
 -   Plugins
-    -   [Projector plugin](/Projector)
+    -   [Projector plugin](/Projector_Plugin)
 -   General Documentation
     -   [Article comparing µManager with other microscopy
         software](/Comparison_with_other_microscopy_software)

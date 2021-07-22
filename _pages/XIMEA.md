@@ -4,7 +4,6 @@ title: XIMEA
 redirect_from:
   - /wiki/XIMEA
   - /wiki/XIMEACamera
-  - /XIMEACamera
 layout: page
 ---
 

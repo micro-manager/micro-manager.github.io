@@ -4,7 +4,6 @@ title: High Speed Acquisition in Micro-Manager
 redirect_from:
   - /wiki/High_Speed_Acquisition_in_Micro-Manager
   - /wiki/High_Speed_Acquisition
-  - High_Speed_Acquisition
 layout: page
 ---
 
@@ -103,7 +102,7 @@ Micro-Manager's memory usage should fall back to the level before
 acquisition was started.
 
 Micro-Manager's high-speed [hardware triggering
-capabilities](Hardware-based_synchronization) can be combined
+capabilities](Hardware-based_Synchronization_in_Micro-Manager) can be combined
 with high-speed cameras to produce fast multi-dimensional image sets. A
 microcontroller compatible with Micro-Manager can pass trigger signals
 from the camera to an AOTF- or LED-based illuminator to produce

@@ -44,7 +44,7 @@ and login to download the file.
 
 ## Device Configuration
 
-The [Projector plugin](Projector) operates the Micropoint.
+The [Projector plugin](Projector_Plugin) operates the Micropoint.
 There are 2 behaviors of the plugin unique to the Micropoint:
 
 1.  The dwell time setting has no effect. It exists because the plugin

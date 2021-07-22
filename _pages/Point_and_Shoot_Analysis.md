@@ -7,7 +7,7 @@ layout: page
 
 ## Point and Shoot Analysis plugin
 
-This plugin was made to analyze data acquired using the \[Projector\]
+This plugin was made to analyze data acquired using the [Projector](Projector_Plugin)
 plugin, specifically data acquired in the "Point and Shoot" mode of this
 plugin. To do so, start an MDA with a "live" time-lapse (i.e. 0 interval
 between time points), and bleach objects as you please. Bleach positions

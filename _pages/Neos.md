@@ -4,7 +4,6 @@ title: Neos
 redirect_from:
   - /wiki/Neos
   - /wiki/AOTF
-  - AOTF
 layout: page
 ---
 

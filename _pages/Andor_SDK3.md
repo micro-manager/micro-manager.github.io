@@ -4,9 +4,7 @@ title: Andor SDK3
 redirect_from:
   - /wiki/Andor_SDK3
   - /wiki/AndorSDK3
-  - /AndorSDK3
   - /wiki/Andor3
-  - Andor3
 layout: page
 ---
 

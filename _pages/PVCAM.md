@@ -4,7 +4,6 @@ title: PVCAM
 redirect_from:
   - /wiki/PVCAM
   - /wiki/Photometrics
-  - /Photometrics
 layout: page
 ---
 

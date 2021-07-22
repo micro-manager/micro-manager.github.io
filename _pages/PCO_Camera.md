@@ -4,7 +4,6 @@ title: PCO Camera
 redirect_from:
   - /wiki/PCO_Camera
   - /wiki/PCO
-  - PCO
 layout: page
 ---
 

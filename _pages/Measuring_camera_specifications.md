@@ -4,7 +4,6 @@ title: Measuring camera specifications
 redirect_from:
   - /wiki/Measuring_camera_specifications
   - /wiki/Photon-conversion_factor_(pcf)
-  - Photon-conversion_factor_(pcf)
 layout: page
 ---
 

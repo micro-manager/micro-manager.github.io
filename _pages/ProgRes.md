@@ -4,7 +4,6 @@ title: ProgRes
 redirect_from:
   - /wiki/ProgRes
   - /wiki/Jenoptik
-  - Jenoptik
 layout: page
 ---
 

@@ -63,7 +63,7 @@ Values entered in this section will be used in subsequent calculations.
 Press the **read** button to deduce some of these values from the
 meta-data contained in Micro-Manager datasets. You will need to measure
 the [Photon-conversion factor
-(pcf)](Photon-conversion_factor_(pcf)) or use the pcf
+(pcf)](Measuring_camera_specifications) or use the pcf
 provided on the camera data-sheet. If you do not use EM gain, enter '1'
 in the field **linear EM gain** (to calculate the number of photons,
 digital numbers will be multiplied by pcf / linear EM gain. The **Camera

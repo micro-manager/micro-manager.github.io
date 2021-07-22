@@ -4,7 +4,6 @@ title: AA AOTF
 redirect_from:
   - /wiki/AA_AOTF
   - /wiki/AAAOTF
-  - /AAAOTF
 layout: page
 ---
 

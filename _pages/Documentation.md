@@ -24,7 +24,7 @@ and/or rapidly changing.
 
 <!-- -->
 
--   *[High Speed Acquisition](High_Speed_Acquisition)*
+-   *[High Speed Acquisition](High_Speed_Acquisition_in_Micro-Manager)*
 
 <!-- -->
 
@@ -38,7 +38,7 @@ and/or rapidly changing.
     -   [Autofocus manual](Autofocus_manual) - Configure the
         image-based autofocus implemented in Java
     -   [SimpleAutofocus Device
-        Adapter](Autofocus_Device_Adapter) - Configure the
+        Adapter](SimpleAutofocus) - Configure the
         image-based autofocus 'device' implemented in C++
 
 <!-- -->

@@ -4,7 +4,6 @@ title: Hardware-based Synchronization in Micro-Manager
 redirect_from:
   - /wiki/Hardware-based_Synchronization_in_Micro-Manager
   - /wiki/Hardware-based_synchronization
-  - Hardware-based_synchronization
 layout: page
 ---
 

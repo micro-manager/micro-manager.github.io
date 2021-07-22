@@ -8,7 +8,7 @@ layout: page
 <table>
 <tr>
 <td><p>Summary:</p></td>
-<td><p>Interfaces with Andor CCD and EMCCD cameras. For sCMOS models such as Zyla, Neo and Sona refer to <a href="AndorSDK3">AndorSDK3</a>.</p></td>
+<td><p>Interfaces with Andor CCD and EMCCD cameras. For sCMOS models such as Zyla, Neo and Sona refer to <a href="/Andor_SDK3">AndorSDK3</a>.</p></td>
 </tr>
 <tr>
 <td><p>Authors:</p></td>

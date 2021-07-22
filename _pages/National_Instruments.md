@@ -4,7 +4,6 @@ title: National Instruments
 redirect_from:
   - /wiki/National_Instruments
   - /wiki/NI100X
-  - /NI100X
 layout: page
 ---
 

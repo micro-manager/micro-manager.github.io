@@ -4,7 +4,6 @@ title: SimpleAutofocus
 redirect_from:
   - /wiki/SimpleAutofocus
   - /wiki/Autofocus_Device_Adapter
-  - Autofocus_Device_Adapter
 layout: page
 ---
 

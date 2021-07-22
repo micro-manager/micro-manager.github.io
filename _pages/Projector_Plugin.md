@@ -4,7 +4,6 @@ title: Projector Plugin
 redirect_from:
   - /wiki/Projector_Plugin
   - /wiki/Projector
-  - Projector
 layout: page
 ---
 

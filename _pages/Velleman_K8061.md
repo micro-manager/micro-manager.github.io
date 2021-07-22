@@ -4,7 +4,6 @@ title: Velleman K8061
 redirect_from:
   - /wiki/Velleman_K8061
   - /wiki/K8061
-  - /K8061
 layout: page
 ---
 

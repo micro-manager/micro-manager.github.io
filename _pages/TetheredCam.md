@@ -6,9 +6,6 @@ redirect_from:
   - /wiki/DSLRRemoteCamera
   - /wiki/NKRemoteCamera
   - /wiki/PSRemoteCamera
-  - /DSLRRemoteCamera
-  - /NKRemoteCamera
-  - /PSRemoteCamera
 layout: page
 ---
 

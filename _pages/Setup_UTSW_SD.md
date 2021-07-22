@@ -65,7 +65,7 @@ layout: page
 <li><a href="Yokogawa"> CSUX1 Spinning Disk Confocal head (Yokogawa)</a></li>
 <li><a href="SutterLambda"> Filterwheel and smart shutter (Sutter)</a></li>
 <li><a href="Andor"> iXon EMCCD camera (Andor)</a></li>
-<li><a href="AndorSDK3"> Neo sCMOS Camera (Andor)</a></li>
+<li><a href="/Andor_SDK3"> Neo sCMOS Camera (Andor)</a></li>
 <li>(No DeviceAdapter) FRAPPA (Andor)</li>
 <li>Dell T3600 PC</li>
 </ul></td>
@@ -76,7 +76,7 @@ layout: page
 ## Experience gained
 
 -   Should not use &gt; 4GB circular buffer for
-    [AndorSDK3](AndorSDK3) camera with MM version 1.4.13
+    [AndorSDK3](Andor_SDK3) camera with MM version 1.4.13
     (issue fixed in nightly build).
 -   During setup, it's useful to occasionally backup the configuration
     file with `Tools > Save Configuration Settings as`.

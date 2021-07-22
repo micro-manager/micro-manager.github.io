@@ -4,7 +4,6 @@ title: GigECamera
 redirect_from:
   - /wiki/GigECamera
   - /wiki/GigE
-  - GigE
 layout: page
 ---
 
