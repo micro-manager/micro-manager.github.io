@@ -56,7 +56,9 @@ multiple edits more efficient and provides a more user-friendly interface.
 From here, the [front matter](/editing#front-matter) and
 content of the new page can be populated with a text editor of your choosing.
 
-* Images and other media should be stored in `/path/to/imagej.github.io/media`.
+* Images should be stored in `/path/to/micro-manager.github.io/media`.
+  Non-image files, such as scripts, should be stored in
+  `/path/to/micro-manager.github.io/media/files`.
 
 * Regularly save your progress with commits. The process of commiting your
   changes pushes your edits to the main branch of the repository hosted on
