@@ -1,5 +1,5 @@
 ---
-title: µManager (Experimental)
+title: Micro-Manager
 redirect_from: /wiki/
 layout: home
 ---
