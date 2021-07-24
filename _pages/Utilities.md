@@ -136,7 +136,16 @@ Y-stage.
 Given 1 to 8 analog output (DA) devices, the DATTLStateDevice will
 provide a virtual device that combines the DA devices into a single 1-
 to 8-bit digital (TTL) output device. Each DA device works as a 1-bit
-digital output line.
+digital output line. When using this device, the DA device itself will
+no longer report the "real" analog output, so you should ignore those settings, 
+and only use the DA-TTL-State-Device.  Also, do not combine this with the 
+DA-Shutter or DA-Z-stage (this will easily lead to unexpected outcomes).
+You will need to set which DA devices are controlled by the DA-TTL-State-Device
+(best done in the System-Startup group).  Other options are the "high" voltgae
+(3.3 or 5.0 V), and whether to invert the output (it can happen that a device 
+is actived when the TTL is low, in principle you could configure the "state: to 
+reflect this correctly, but the mental gymnastics are extreme, so it is often 
+easier to use the "invert" property.
 
 ## Autofocus Stage
 
