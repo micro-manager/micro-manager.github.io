@@ -71,7 +71,7 @@ Directory e.g.
 
 and ensure you restart the computer.
 
-Andor Driver Pack 3 is publicy available [here](https://andor.oxinst.com/downloads/).
+Andor Driver Pack 3 is publicly available [here](https://andor.oxinst.com/downloads/).
 
 On a 32-bit Windows OS, the 32-bit DLLs will be installed to a subfolder
 of the MicroManager directory (e.g. C:\\Program
