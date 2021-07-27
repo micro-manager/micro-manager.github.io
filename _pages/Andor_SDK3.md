@@ -48,8 +48,6 @@ Pariksheet Nanda (Andor)</p></td>
 
 ### Andor Driver Pack 3 (sCMOS)
 
-{% include MessageBox text="Required Driver Limited availability notice|You will need the Andor Driver Pack 3 (sCMOS).  This driver pack is currently not publicly available.  Please contact Andor and ask them to provide you with the latest version of this Driver Pack.  Public access will be restored soon." %}
-
 {% include MessageBox text="Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2" %}
 {% include MessageBox text="Support Advisory|Snapping an imaging may use the oldest image, and not the latest image, possibly due to pulling the wrong image from a double buffer" %}
 {% include MessageBox text="Support Advisory|Images may start to scroll to the center of the field after each snap, shifting one line at a time. Restarting the camera and uManager fixes the issue" %}
@@ -72,6 +70,8 @@ Directory e.g.
 ```
 
 and ensure you restart the computer.
+
+Andor Driver Pack 3 is publicly available [here](https://andor.oxinst.com/downloads/).
 
 On a 32-bit Windows OS, the 32-bit DLLs will be installed to a subfolder
 of the MicroManager directory (e.g. C:\\Program
