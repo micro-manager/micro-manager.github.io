@@ -55,7 +55,6 @@ import org.micromanager.util.ReportingUtils;
 
 class MyProcessor implements DataProcessor {
 
-```
   public void process() {
      try {
         TaggedImage image = poll();
@@ -72,8 +71,7 @@ class MyProcessor implements DataProcessor {
         ReportingUtils.logError(ex);
      }  
   }
-```
-
+  
 }
 ```
 
