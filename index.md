@@ -9,7 +9,7 @@ layout: home
     <section id="header" style="padding: 0; height: calc(100vh - 48px)">
         <div class="inner">
             <img src="/media/logo/umanager-logo.png" alt="MicroManager Logo">
-            <header class="fa-2x">
+            <header class="fa-2x" style="line-height:1.2;">
               Open Source Software for Control and Automation of Microscope Hardware
             </header>
             <ul class="actions special">
