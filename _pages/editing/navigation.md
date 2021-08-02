@@ -2,6 +2,7 @@
 title: Navigation
 section: Support:Editing the Wiki
 nav-links: true
+layout: page
 ---
 
 This page explains the mechanisms for linking navigation between pages.
