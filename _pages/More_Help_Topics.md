@@ -43,7 +43,7 @@ Hardware Setup Examples:
     lens](Encoding_the_Nikon_TI_Eclipse_tube_lens)
 -   [ Spinning-disk Laser Confocal (software installation
     report)](Setup_UTSW_SD)
--   [https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md](Hardware-triggering with Micro-Manager: a case study by Thomas Julou & Guillaume Witz)
-
+-   [Hardware-triggering with Micro-Manager: a case study by Thomas Julou & Guillaume Witz]
+(https://github.com/vanNimwegenLab/MiM_NikonTi/blob/master/Docs/NikonTi_hardware_triggering.md)
 
 [Discussion page](/talk/More_Help_Topics) for More_Help_Topics imported from old wiki
