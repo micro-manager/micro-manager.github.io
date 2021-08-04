@@ -88,7 +88,7 @@ hardware](/media/Hardware_wizard_90i_3.png "|thumb|center|upright=2.5|alt=Hardwa
 
 {% include notice icon="info" content="If you provide magnification information to the system for each of your objectives, MicroManager will automatically calculate the correct pixel size based on the current zoom settings." %}
 
-See the [https://micro-manager.org/Micro-Manager_Configuration_Guide](Configuration Guide) for more information.
+See the [Configuration Guide](https://micro-manager.org/Micro-Manager_Configuration_Guide) for more information.
 
 ## Gotchas
 
