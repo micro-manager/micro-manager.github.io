@@ -57,5 +57,5 @@ in Micro-Manager to make scripting more efficient:
 
 A very handy Beanshell function is:
 
-      unset("y"); // Removes the function "y" from the current namespace
+      unset("y"); // Removes the variable "y" from the current namespace
 
