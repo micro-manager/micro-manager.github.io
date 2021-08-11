@@ -30,7 +30,7 @@
   {% include menu-section title="Version 2.0" link="/Version_2.0" %}
     <li><a href="/Version_2.0_Users_Guide">User Guide</a></li>
     <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
-    <li><a href="/Version_2.0_Plugin_Docs">Plugins</a></li>
+    <li><a href="/Version_2.0_Plugins">Plugins</a></li>
     <li><a href="/Version_2.0_FAQ">FAQ</a></li>
     <li><a href="/Version_2.0_More_Help_Topics">More Help Topics</a></li>
     <li><a href="/Version_2.0_API">API</a></li>
