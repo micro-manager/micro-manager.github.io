@@ -29,13 +29,16 @@
   <!-- Version 2.0 -->
   {% include menu-section title="Version 2.0" link="/Version_2.0" %}
     <li><a href="/Version_2.0_Users_Guide">User Guide</a></li>
+    <li><a href="/Version_2.0_Plugin_Docs">Plugins</a></li>
+    <li><a href="/Version_2.0_FAQ">FAQ</a></li>
+    <li><a href="/Version_2.0_More_Help_Topics">More Help Topics</a></li>
     <li><a href="/Version_2.0_API">API</a></li>
     <li><a href="/Version_2.0_API_Transition_Guide">API Transition Guide</a></li>
     <li><a href="/Version_2.0_API_How_do_I">API, How do I?</a></li>
     <li><a href="http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html">Javadoc</a></li>
     <li><a href="/Version_2.0_API_Events">API Events</a></li>
-    <li><a href="/Version_2.0_Plugins">Plugins</a></li>
-    <li><a href="/Version_2.0_Scripts">Scripts</a></li>
+    <li><a href="/Version_2.0_Plugins">Writing Plugins</a></li>
+    <li><a href="/Version_2.0_Scripts">Scripting</a></li>
   {% include menu-section-end %}
 
   <!-- Version 1.4 -->
