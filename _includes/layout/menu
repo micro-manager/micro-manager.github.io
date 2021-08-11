@@ -29,6 +29,7 @@
   <!-- Version 2.0 -->
   {% include menu-section title="Version 2.0" link="/Version_2.0" %}
     <li><a href="/Version_2.0_Users_Guide">User Guide</a></li>
+    <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
     <li><a href="/Version_2.0_Plugin_Docs">Plugins</a></li>
     <li><a href="/Version_2.0_FAQ">FAQ</a></li>
     <li><a href="/Version_2.0_More_Help_Topics">More Help Topics</a></li>
@@ -44,6 +45,7 @@
   <!-- Version 1.4 -->
   {% include menu-section title="Version 1.4" link="/Overview_of_the_documentation" %}
     <li><a href="/Micro-Manager_User's_Guide">User Guide</a></li>
+    <li><a href="/Micro-Manager_Configuration_Guide">Hardware Configuration Guide</a></li>
     <li><a href="/Plugins">Plugins</a></li>
     <li><a href="http://valelab4.ucsf.edu/publications/2010EdelsteinCurrProt.pdf">Tutorial (PDF)</a></li>
     <li><a href="http://www.jbmethods.org/jbm/article/view/36/29">Advanced Methods</a></li>
