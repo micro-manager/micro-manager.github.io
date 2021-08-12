@@ -11,7 +11,7 @@ configure, and support microscope systems) will deliver complete systems
 equipped with Micro-Manager:
 
 -   [Solamere](http://solameretech.com) USA
--   [Technical Instruments](http://www.techinst.com/) USA
+-   [Live Cell Solutions](mailto:info@livcellsol.com) USA
 -   [Veroptics](https://www.veroptics.com/) USA
 -   [DSS](http://dssimage.com) India
 -   [MicroPix](http://www.micropiximaging.com) UK
