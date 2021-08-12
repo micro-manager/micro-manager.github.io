@@ -28,22 +28,20 @@ modules contain many old methods from ScriptInterface, unmodified. These
 methods work as they did in 1.4, and include the following:
 
 -   CompatibilityInterface
-    -   getVersion
-    -   versionLessThan
-    -   getCameraTransform
-    -   setCameraTransform
+    -   [getVersion](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/CompatibilityInterface.html#getVersion-)
+    -   [versionLessThan](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/CompatibilityInterface.html#versionLessThan-java.lang.String-)
+    -   getCameraTransform (deprecated, instead use: [core.getPixelSizeAffineByID(config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#getPixelSizeAffineByID-java.lang.String-)
+    -   setCameraTransform )deprecated, instead use: [core.setPixelSizeAffine(transform, config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#setPixelSizeAffine-java.lang.String-mmcorej.DoubleVector-)
 -   AcquisitionManager
-    -   attachRunnable
-    -   clearRunnables
-    -   getHideMDADisplayOption
-    -   getPositionList
-    -   isAcquisitionRunning
-    -   isPaused
-    -   loadAcquisition
-    -   runAcquisition
-    -   setAcquisitionSettings
-    -   setPause
--   Application
+    -   [attachRunnable](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#attachRunnable-int-int-int-int-java.lang.Runnable-)
+    -   [clearRunnables](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#clearRunnables--)
+    -   [isAcquisitionRunning](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#isAcquisitionRunning--)
+    -   [isPaused](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#isPaused--)
+    -   [loadAcquisition](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#loadAcquisition-java.lang.String-)
+    -   [runAcquisition](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#runAcquisition--)
+    -   [setAcquisitionSettings](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#setAcquisitionSettings-org.micromanager.acquisition.SequenceSettings-)
+    -   [setPause](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#setPause-boolean-)
+-   [Application](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Application.html)
     -   refreshGUI
     -   refreshGUIFromCache
     -   setExposure
@@ -55,9 +53,9 @@ methods work as they did in 1.4, and include the following:
     -   makeActive
     -   getHideMDADisplayOption
     -   getMainWindow
--   PositionListManager
+-   [PositionListManager](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/PositionListManager.html)
     -   getPositionList
-    -   markCurrentPosition
+    -   markCurrentPosition (deprecated)
     -   setPositionList
 
 You can access the CompatibilityInterface by calling the
