@@ -33,7 +33,7 @@ Cameras, ASI, Andor, Lumencor, Mad City Labs, Motic, Physik Instrumente,
 Stanford Photonics, PCO, QImaging, ScopeLED, Karl Bellve, Peter Topor,
 Ji Yu, Brian Ashcroft, Jeffrey Kuhn, Karl Hoover, and Roy Wollman. The
 project was initially funded by grants from the Sandler Foundation,
-grant 5R01EB007187 from the NIH, and is now funded by the [CZI's Open
+grant 5R01EB007187 from the NIH, and by [CZI's Open
 source
 Initiative](https://chanzuckerberg.com/newsroom/chan-zuckerberg-initiative-awards-5-million-for-open-source-software-projects-essential-to-science/).
 
@@ -71,5 +71,5 @@ information, and/or use of equipment) from many microscope hardware
 vendors, including ASI, Andor, DVC, Stanford Photonics, Hamamatsu,
 Prior, Solamer, Nikon, and Zeiss.
 
-And of course, many thanks Ron for making it all happen.
+And many thanks to Ron Vale for making it all happen.
 
