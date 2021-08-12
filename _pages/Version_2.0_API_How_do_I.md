@@ -72,20 +72,20 @@ If you have data in an open window that you want to access, you can
 readily do that through the `DisplayManager` interface:
 
 ```
-Datastore store = mm.displays().getCurrentWindow().getDatastore();
+DataProvider dp = mm.displays().getActiveDataViewer().getDataProvider();
 ```
 
 The above code will retrieve the topmost `DisplayWindow` and then
-extract the `Datastore` that contains the data that the `DisplayWindow`
+extract the `DataProvider` that contains the data that the `DisplayWindow`
 presents.
 
 From there, you can request images via their `Coords`:
 
 ```
 Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
-builder = builder.z(2).time(5).channel(1).stagePosition(0);
+builder = builder.z(2).time(5).channel(1).stagePosition(2);
 Coords coords = builder.build();
-Image image = store.getImage(coords);
+Image image = dp.getImage(coords);
 ```
 
 You can access the image's `Metadata`:
@@ -103,17 +103,6 @@ You can access the dataset's `SummaryMetadata` as a whole:
 import org.micromanager.data.SummaryMetadata;
 SummaryMetadata summary = store.getSummaryMetadata();
 String[] channels = summary.getChannelNames();
-```
-
-If the dataset has not been frozen, then you can modify it, for example
-by adding new images:
-
-```
-import java.util.List;
-List newImages = mm.live().snap(false);
-Image newImage = newImages.get(0);
-newImage = newImage.copyAtCoords(coords.copy().time(6).build());
-store.putImage(newImage);
 ```
 
 ## Control live mode?
@@ -208,7 +197,7 @@ Image image = images.get(0);
 // Set the time and channel indices for this image. Coordinate axes that you
 // don't care about can be left alone.
 Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
-builder = builder.time(0).channel(0);
+builder = builder.time(0).channel(0); // note, you actually do not need to set any axes to zero, as that is the default
 image = image.copyAtCoords(builder.build());
 store.putImage(image);
 
