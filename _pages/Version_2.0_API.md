@@ -44,15 +44,20 @@ instead you make a copy that is different in the relevant ways.
 Immutability provides many advantages for ensuring coherency of data in
 complex workflows. However, it can take some getting used to.
 
-### The Datastore class
+### The DataProvider and Datastore classes
 
-[org.micromanager.data.Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html)
+[org.micromanager.data.DataProvider](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataProvider.html)
 is a new class that holds the image data and summary metadata of an
-acquisition. Every acquisition has an associated Datastore, and you can
+acquisition. Whereas data can only be read from a DataProvider 
+(i.e. you can not write data to a DataProvider), data can be added to a 
+[org.micromanager.data.Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html)
+(which otherwise has the same functionality as a DataProvider).  
+Every acquisition has an associated Datastore, and you can
 create your own Datastores to perform custom acquisitions (see the
 section on the
 [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html),
-below).
+below). A [RewriteableDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/RewritableDatastore.html)
+lets you replace already present images with new ones, whereas a Datastore will not let you do that.
 
 The primary functions you will likely be interested in are:
 
@@ -91,6 +96,14 @@ public class MyClass {
    }
 }
 ```
+The following events can appear through the DataProvider eventbus:
+
+- [org.micromanager.data.DataProviderHasNewImageEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataProviderHasNewImageEvent.html)
+- [org.micromanager.data.DataProviderHasNewNameEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataProviderHasNewNameEvent.html) 
+- [org.micromanager.data.DataProviderHasNewSummaryMetadataEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataProviderHasNewSummaryMetadataEvent.html)
+- [org.micromanager.data.DataStoreFrozenEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataStoreFrozenEvent.html)
+- [org.micromanager.data.ImageDeletedEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/ImageDeletedEvent.html)
+- [org.micromanager.data.ImageOverwrittenEvent](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/ImageOverwrittenEvent.html)
 
 ### The Image class
 
@@ -140,7 +153,7 @@ information.
 
 If you have extra fields that you wish to include in the metadata or
 summary metadata, there is a `userData` field with the type of
-[PropertyMap](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/PropertyMap.html),
+[PropertyMap](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/PropertyMap.html),
 which allows for storing semi-arbitrary key-value pairs. You can add
 whatever fields you like to this object. Micro-Manager itself (the
 "first-party" code) will not pay any attention to values in that object,
@@ -150,16 +163,17 @@ that does.
 ### Coords
 
 A
-[Coords](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Coords.html)
-is a location in N-dimensional space. It includes an arbitrary list of
+[Coords](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Coords.html)
+is a zero-based location in N-dimensional space. It includes an arbitrary list of
 axes (represented by strings like "time", "channel", etc.), and a
 position along each axis. Every
-[Image](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Image.html)
+[Image](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Image.html)
 has a Coords denoting its position in the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html),
+[Datastore](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html),
 and every Image's coordinates must be unique. If you attempt to add an
 Image to a Datastore whose Coords match those of an image that is
-already in the Datastore, then the old image is replaced by the new one.
+already in the Datastore, an error will occur (whereas you can replace
+existing images with the same Coords in a RewritableDatastore).
 
 You are not restricted to the classic 4 axes of channel, time, z slice,
 and stage position. You can freely add additional axes and call them
@@ -167,7 +181,9 @@ whatever you like. The only axis that Micro-Manager treats specially is
 the channel axis, and then only in the display code. Additionally, you
 are not required to provide a position along any given axis. If you ask
 a Coords what its position is for an axis it does not have, it will
-return -1.
+return 0. Note that this is not a useful way to figure out if a DataProvider
+contains images for the given axis, since it will also return 0 for the 
+first image along each axis.
 
 However, please note that Micro-Manager's savefile formats do not
 support extra axes at this time. Consequently, use of arbitrary axes
@@ -180,16 +196,16 @@ As with the `Metadata` and `SummaryMetadat` classes, `Coords` are
 generated using a builder.
 
 ```
-Coords.CoordsBuilder builder = mm.data().getCoordsBuilder();
+Coords.CoordsBuilder builder = mm.data().coordsBuilder();
 // Convenience functions to set the standard axes
 builder.time(4); // 5th timepoint
-builder.channel(0); // 1st channel
+builder.channel(1); // 2nd channel
 builder.position("polarization", 2); // Example custom axis
 
 Coords coords = builder.build();
 int timepoint = coords.getPositionAt(Coords.TIME); // 4
 int polarization = coords.getPositionAt("polarization"); // 2
-int zSlice = coords.getPositionAt(Coords.Z) // -1
+int zSlice = coords.getPositionAt(Coords.Z) // 0
 ```
 
 ### The [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html)
@@ -200,11 +216,11 @@ directly create new instances of the Datastore, Image, Coords, Metadata,
 and SummaryMetadata classes. The DataManager provides that functionality
 for you (via e.g.
 [()
-getCoordsBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#getCoordsBuilder),
+coordsBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#coordsBuilder),
 [()
-getMetadataBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#getMetadataBuilder), and
+metadataBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#metadataBuilder), and
 [()
-getSummaryMetadataBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#getSummaryMetadataBuilder)), and also implements some useful utility
+summaryMetadataBuilder](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#summaryMetadataBuilder)), and also implements some useful utility
 methods (like
 [convertTaggedImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#convertTaggedImage(mmcorej.TaggedImage)), mentioned earlier, and
 [loadData](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) to load data from disk). The DataManager can be accessed via
@@ -222,17 +238,17 @@ windows, programatically control them (including both adjusting the
 parameters used to draw the image, and the ability to draw overlays),
 and listen to certain events they generate when interacted with.
 
-### DisplayWindow
+### DataViewer
 
-[DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html)
+[DataViewer](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DataViewer.html)
 is the class that all Micro-Manager image display windows implement.
-Every DisplayWindow is associated with a single
+Each DataViewer is associated with a single
 [Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html),
 and displays the images in that store. However, there may be multiple
-DisplayWindows for a single Datastore. The DisplayWindow class exposes a
+DataViewers for a single Datastore. The DataViewer class exposes a
 large number of methods for selecting which images are displayed and
 controlling how they are displayed. For example, the
-[setDisplayedImageTo](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method takes a
+[setDisplayedImageTo](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DataViewer.html#setDisplayPosition(org.micromanager.data.Coords)) method takes a
 [Coords](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Coords.html)
 object (described above) and changes the displayed image to be the one
 at the specified coordinates.
@@ -242,39 +258,28 @@ settings, and magnification, are encompassed by the
 [DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplaySettings.html)
 object (see below). This object can be accessed with
 [()
-getDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#getDisplaySettings) and changed with
-[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)).
+getDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DataViewer.html#getDisplaySettings) and changed with
+[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DataViewer.html#setDisplaySettings(org.micromanager.display.DisplaySettings)).
 
-If you need to perform ImageJ operations on the display, use the
-[()
-getImagePlus](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#getImagePlus) method to retrieve the ImagePlus object used for
-displaying images. Some properties of the image, like contrast and
-magnification, can potentially be manipulated both through the ImagePlus
-and through the DisplaySettings. Where redundancy like this exists, you
-should always use the DisplaySettings. Micro-Manager will handle
-ensuring that ImageJ's knowledge of the display is accurate, but ImageJ
-will not do the same for Micro-Manager; thus changing state via ImageJ
-can result in an inconsistent program state.
-
-An important caveat for ImageJ operations: Micro-Manager's DisplayWindow
+An important caveat for ImageJ operations: Micro-Manager's DataViewer
 is not an ImageJ
 [ij.gui.StackWindow](http://rsb.info.nih.gov/ij/developer/api/ij/gui/StackWindow.html)
 as it was in the 1.x versions. Micro-Manager strives to maintain
 backwards compatibility by creating a hidden StackWindow that
-transparently redirects most calls to the DisplayWindow; this allows
+transparently redirects most calls to the DataViewer; this allows
 ImageJ plugins and tools to still largely operate as expected. However,
 direct window manipulations (e.g. changing the window size or position),
 and possibly other operations, could behave unexpectedly. If you need to
-find a DisplayWindow (i.e. you do not have a reference to it handy), use
+find a DataViewer (i.e. you do not have a reference to it handy), use
 the
 [()
-DisplayManager.getCurrentWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayManager.html#getCurrentWindow) method or the
+DisplayManager.getActiveDataViewer](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayManager.html#getactiveDataViewer) method or the
 [()
-DisplayManager.getAllImageWindows](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayManager.html#getAllImageWindows) method. If you need to manipulate a
-DisplayWindow as a Java window (for example to change its position
+DisplayManager.getAllDataViewers](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayManager.html#getAllDataViewers) method. If you need to manipulate a
+DataViewer as a Java window (for example to change its position
 onscreen), use the
 [()
-DisplayWindow.getAsWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#getAsWindow) method.
+DataViewer.getWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DataViewer.html#getWindow) method.
 
 As with
 [Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/Datastore.html),
@@ -349,8 +354,7 @@ By default, newly-created Datastores from the
 [DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/DataManager.html)'s
 Datastore-creation methods are *not* managed; thus, you are responsible
 for ensuring that they are saved, if so desired, as well as calling the
-[()
-forceClosed](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#forceClosed) method of windows that are no longer needed. If you want
+[forceClosed](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayWindow.html#forceClosed) method of windows that are no longer needed. If you want
 to transfer this responsibility to Micro-Manager, call the
 [manage](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/DisplayManager.html#manage(org.micromanager.data.Datastore)) method of DisplayManager. It will automatically find all
 DisplayWindows associated with the Datastore, and register on their
@@ -393,7 +397,7 @@ Studio.compat](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/microman
 
 ### MMCore
 
-The Micro-Manager Core is unchaged compared to 1.4. You can access it
+The Micro-Manager Core is unchanged compared to 1.4. You can access it
 using
 [()
 Studio.core](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html#core).
