@@ -30,8 +30,8 @@ methods work as they did in 1.4, and include the following:
 -   CompatibilityInterface
     -   [getVersion](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/CompatibilityInterface.html#getVersion-)
     -   [versionLessThan](https://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/CompatibilityInterface.html#versionLessThan-java.lang.String-)
-    -   getCameraTransform (deprecated, instead use: [core.getPixelSizeAffineByID(config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#getPixelSizeAffineByID-java.lang.String-)
-    -   setCameraTransform )deprecated, instead use: [core.setPixelSizeAffine(transform, config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#setPixelSizeAffine-java.lang.String-mmcorej.DoubleVector-)
+    -   getCameraTransform (deprecated, instead use: [core.getPixelSizeAffineByID(config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#getPixelSizeAffineByID-java.lang.String-))
+    -   setCameraTransform (deprecated, instead use: [core.setPixelSizeAffine(transform, config](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html#setPixelSizeAffine-java.lang.String-mmcorej.DoubleVector-))
 -   AcquisitionManager
     -   [attachRunnable](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#attachRunnable-int-int-int-int-java.lang.Runnable-)
     -   [clearRunnables](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#clearRunnables--)
@@ -88,11 +88,10 @@ the windows that show images from the Datastore. You can ask the
 [DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)
 for a list of all DisplayWindows, and ask each DisplayWindow for its
 Datastore using the
-[()
-getDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method. However, remember that Datastores are not
+[getDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method. However, remember that Datastores are not
 required to have any DisplayWindows (and also that it is possible to
 have multiple DisplayWindows for a single Datastore). If you really need
-for your code to find a Datastore created by someone else's code, then
+your code to find a Datastore created by someone else's code, then
 you should find a better way for the two components to talk to each
 other.
 
@@ -487,13 +486,11 @@ a plugin after µManager's initialization has completed.
 ### isLiveModeOn
 
 This method has been replaced by the
-[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[()
-getIsLiveModeOn](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getIsLiveModeOn) method. The SnapLiveManager in turn can be accessed
-via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-[()
-live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
+[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[isLiveModeOn](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/SnapLiveManager.html#isLiveModeOn) method. The SnapLiveManager in turn can be accessed
+via
+[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html)'s
+[live](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html#live) method.
 
 Note that if you just want to temporarily suspend live mode, to resume
 it later, then you can make use of the SnapLiveManager's
