@@ -19,7 +19,7 @@ perform the equivalent task in 2.0.
 ### CompatibilityInterface, AcquisitionManager, Application, and PositionListManager
 
 First, note that the
-[CompatibilityInterface](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/CompatibilityInterface.html),
+[CompatibilityInterface]({% include link = 2.0API %} /mmstudio/org/micromanager/CompatibilityInterface.html),
 [AcquisitionManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/AcquisitionManager.html),
 [Application](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Application.html),
 and
