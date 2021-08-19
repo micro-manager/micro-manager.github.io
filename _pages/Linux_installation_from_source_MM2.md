@@ -46,6 +46,7 @@ several libraries, and build tools. Install them with:
 
 {% highlight shell %}
 sudo apt install git-all subversion build-essential autoconf automake libtool \
+                     autoconf-archive pkg-config \
                      libboost-all-dev zlib1g-dev swig ant
 {% endhighlight %}
 
