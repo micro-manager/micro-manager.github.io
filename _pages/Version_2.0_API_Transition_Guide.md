@@ -10,7 +10,7 @@ section: Learn:Version 2.0
 
 One of the major changes in 2.0 is a restructuring of the API. In 1.4,
 most of the functionality of the API was in a single module,
-[ScriptInterface](https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html).
+[ScriptInterface]({% include link url='2.0API' %}https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html).
 In 2.0, the API has been subdivided, and some methods have been replaced
 by new techniques for accomplishing similar tasks. This page runs down
 the list of methods in 1.4's ScriptInterface and tells you how to
@@ -259,131 +259,131 @@ for an Image by asking for its
 [Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
 (via the
 [()
-getMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getMetadata) method) and then calling the Metadata's
+getMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getMetadata) method) and then calling the Metadata's
 [()
-getBitDepth](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getBitDepth) method.
+getBitDepth]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html#getBitDepth) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageByteDepth
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image byte depth is now a property of the
-[Image](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html)
+[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying byte depths to work right now). You can get the byte
 depth for a single image by calling its
 [()
-getBytesPerPixel](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel) method.
+getBytesPerPixel]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageCache
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 The Datastore functions as the equivalent of 1.4's image cache. You can
 ask it for images using its
-[getImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
+[getImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionImageHeight
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image height is now a property of the
-[Image](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html)
+[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image heights to work right now). You can get the height
 for a single image by calling its
 [()
-getHeight](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getHeight) method.
+getHeight]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getHeight) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageWidth
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image width is now a property of the
-[Image](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html)
+[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image widths to work right now). You can get the width
 for a single image by calling its
 [()
-getWidth](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Image.html#getWidth) method.
+getWidth]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getWidth) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionMultiCamNumChannels
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 In 2.0 this method is not available. You may try to replicate it by
 comparing the number of channels in the Datastore (via its
-[getAxisLength](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String)) method) to the number of unique cameras declared by the
-[Metadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html)s
+[getAxisLength]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String)) method) to the number of unique cameras declared by the
+[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)s
 of the various images (see
 [()
-Metadata.getCamera](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html#getCamera)). You can iterate over all images in the Datastore
+Metadata.getCamera]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html#getCamera)). You can iterate over all images in the Datastore
 via the
 [()
-getUnorderedImageCoords](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getUnorderedImageCoords) method combined with the
-[getImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
+getUnorderedImageCoords]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getUnorderedImageCoords) method combined with the
+[getImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionPath
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 The path of a Datastore's saved location on disk is accessible via its
 [()
-getSavePath](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
+getSavePath]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
 
 ### getAutofocus
 
 Use
-[AutofocusManager.getAutofocusMethod](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/AutofocusManager.html#getAutofocusMethod)
+[AutofocusManager.getAutofocusMethod]({% include link url='2.0API' %}/mmstudio/org/micromanager/AutofocusManager.html#getAutofocusMethod)
 instead.
 
 ### getAutofocusManager
 
 Use
-[Studio.getAutofocusManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio#getAutofocusManager)
+[Studio.getAutofocusManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio#getAutofocusManager)
 instead.
 
 ### getBackgroundColor
@@ -393,52 +393,52 @@ color selection is now handled automatically. Thus this method is no
 longer needed. However, if you need to manually set colors for the few
 edge cases where colors are not handled automatically, you should
 investigate the
-[ApplicationSkin](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html)
+[ApplicationSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html)
 module.
 
 ### getBackgroundStyle
 
 This method was replaced by the
-[ApplicationSkin.getSkin](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html#getSkin)
+[ApplicationSkin.getSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html#getSkin)
 method.
 
 ### getCacheForWindow
 
 This has been replaced by the
-[DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)'s
+[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)'s
 [()
-getDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method.
+getDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method.
 
 ### getCurrentAlbum
 
 The Album Datastore can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-album](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#album) method.
+album]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#album) method.
 
 ### getMMCore
 
 The Micro-Manager Core object can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### getROI
 
 Use the
-[Core's](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html)
+[Core's]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html)
 [()
-getROI](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmcorej/mmcorej/CMMCore.html#getROI) method.
+getROI]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html#getROI) method.
 
 ### getSnapLiveWin
 
 This has been replaced by the
-[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
 [()
-getDisplay](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay) method. You can access the SnapLiveManager via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+getDisplay]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay) method. You can access the SnapLiveManager via the
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
+live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
 
 Please note that the snap/live display is prone to being destroyed and
 recreated. It is not recommended that you keep references to the
@@ -449,7 +449,7 @@ snap/live window in memory; request it anew each time you need it.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Consequently, there is no need to generate unique acquisition names.
@@ -461,12 +461,12 @@ This method was deprecated in 1.4 and has been removed in 2.0
 ### getXYStageName
 
 This information can be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core]({% include link url='2.0API' %}mcorej/CMMCore.html)'s
 [()
-getXYStageDevice](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#getXYStageDevice) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+getXYStageDevice]({% include link url='2.0API' %}mcorej/CMMCore.html#getXYStageDevice) method. The Core in turn can be accessed via the
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### initializeAcquisition
 
@@ -477,7 +477,7 @@ are saved; consequently, it is no longer needed.
 
 AutofocusPlugins should now be compiled and annotated with the @Plugin
 annotation (as described in
-[MMPlugin](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/MMPlugin.html)).
+[MMPlugin]({% include link url='2.0API' %}/mmstudio/org/micromanager/MMPlugin.html)).
 If this is done and the resulting jar file is included in the
 mmautofocus directory of your ImageJ installation, then the plugin will
 automatically be detected at runtime. There is no mechanism for loading
@@ -486,31 +486,31 @@ a plugin after µManager's initialization has completed.
 ### isLiveModeOn
 
 This method has been replaced by the
-[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[isLiveModeOn](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/SnapLiveManager.html#isLiveModeOn) method. The SnapLiveManager in turn can be accessed
+[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[isLiveModeOn]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#isLiveModeOn) method. The SnapLiveManager in turn can be accessed
 via
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html)'s
-[live](http://valelab.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/Studio.html#live) method.
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
 
 Note that if you just want to temporarily suspend live mode, to resume
 it later, then you can make use of the SnapLiveManager's
-[setSuspended](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
+[setSuspended]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
 method.
 
 ### logError
 
 Replaced by the
-[LogManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html)'s
-[logError](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logError(java.lang.Exception)) method (and similarly for the variants on this method). The
+[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)'s
+[logError]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html#logError(java.lang.Exception)) method (and similarly for the variants on this method). The
 LogManager can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-logs](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#logs) method.
+logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#logs) method.
 
 ### logMessage
 
 As with `logError`, replaced by the LogManager's
-[logMessage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String)) method.
+[logMessage]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String)) method.
 
 ### logStartupProperties
 
@@ -519,41 +519,41 @@ This method was removed as it is unused by all known third-party code.
 ### message
 
 Replaced by the
-[ScriptController](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html)'s
-[message](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ScriptController.html#message(java.lang.String)) method. The ScriptController in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[ScriptController]({% include link url='2.0API' %}/mmstudio/org/micromanager/ScriptController.html)'s
+[message]({% include link url='2.0API' %}/mmstudio/org/micromanager/ScriptController.html#message(java.lang.String)) method. The ScriptController in turn can be accessed via the
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-scripter](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#scripter) method.
+scripter]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#scripter) method.
 
 ### openAcquisition
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 You can request new Datastores via the
-[DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html)'s
+[DataManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html)'s
 various "createDatastore" methods (e.g.
 [()
-createRAMDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
-[createMultipageTIFFDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
-[createSinglePlaneTIFFSeriesDatastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))). If you use a file-backed
+createRAMDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
+[createMultipageTIFFDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
+[createSinglePlaneTIFFSeriesDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))). If you use a file-backed
 Datastore, then images will automatically be saved to disk as you add
 them to the Datastore, though you should make certain to call the
 Datastore's
 [()
-freeze](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#freeze) method when you are done to ensure that saving completes
+freeze]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#freeze) method when you are done to ensure that saving completes
 successfully.
 
 If you wish to view the images in the Datastore, use the
-[DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[createDisplay](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore)) method. The DisplayManager in turn can be accessed via
+[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
+[createDisplay]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore)) method. The DisplayManager in turn can be accessed via
 the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-displays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#displays) method.
+displays]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#displays) method.
 
 In any case, there is no need to specify the dimensionality of the
 dataset ahead of time as was the case with `openAcquisition`
@@ -561,33 +561,32 @@ dataset ahead of time as was the case with `openAcquisition`
 ### openAcquisitionData
 
 Replaced by
-[DataManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html)'s
-[loadData](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) method. The DataManager in turn can be accessed via the
-<http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html>
-Studio\]'s
+[DataManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html)'s
+[loadData]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) method. The DataManager in turn can be accessed via the
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-data](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#data) method.
+data]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#data) method.
 
 ### promptToSaveAcquisition
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Replaced by the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)'s
-[save](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window)) method.
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)'s
+[save]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window)) method.
 
 ### registerForEvents
 
 Moved to the
-[EventManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/events/EventManager.html),
+[EventManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/EventManager.html),
 which can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-events](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events) method.
+events]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#events) method.
 
 ### removeMMBackgroundListener
 
@@ -597,7 +596,7 @@ happen automatically, so this method is obsolete.
 ### saveConfigPresets
 
 While this method still exists (as part of the
-[Application](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Application.html)
+[Application]({% include link url='2.0API' %}/mmstudio/org/micromanager/Application.html)
 module), it now two parameters: a path string to save the config to, and
 a boolean for whether to allow overwriting of existing files. The old
 functionality that displayed a save dialog has been removed.
@@ -607,7 +606,7 @@ functionality that displayed a save dialog has been removed.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 As you now have complete control over adding images to your Datastores,
@@ -618,19 +617,19 @@ it is up to you to implement asynchronous image-adding if you need it.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Arbitrary metadata storage is available for both
-[SummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
 and individual image
-[Metadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html)
+[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
 via their respective `userData` fields.
 
 ### setBackgroundStyle
 
 This method was replaced by the
-[ApplicationSkin.setSkin](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/ApplicationSkin.html#setSkin)
+[ApplicationSkin.setSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html#setSkin)
 method.
 
 ### setChannelColor
@@ -638,23 +637,23 @@ method.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
+[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel color is a property of the
-[DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html)
+[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted channel colors (e.g. by using the
 [()
-copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
+copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
+[setDisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -664,23 +663,23 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
+[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel contrast settings are properties of the
-[DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html)
+[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted contrast (e.g. by using the
 [()
-copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
+copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-[setDisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
+[setDisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -690,19 +689,19 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Channel names are a property of the
-[SummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
 associated with a given Datastore. You can access the SummaryMetadata
 using the Datastore's
 [()
-getSummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#getSummaryMetadata) method, make a copy with the
+getSummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getSummaryMetadata) method, make a copy with the
 [()
-copy](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html#copy) method, adjust the channel names to suit, and then cause the
+copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html#copy) method, adjust the channel names to suit, and then cause the
 Datastore to use the new summary metadata using the
-[setSummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
+[setSummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -712,20 +711,20 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
+[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 This method is not available in 2.0. However, you can replicate its
 functionality for a given DisplayWindow by combining the
-[SetDisplayedImageTo](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method of DisplayWindow and the
+[SetDisplayedImageTo]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method of DisplayWindow and the
 `shouldAutostretch` field of the
-[DisplaySettings](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/display/DisplaySettings.html).
+[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html).
 
 ### setConfigChanged
 
@@ -736,21 +735,21 @@ This method was removed as it is unused by all known third-party code.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Arbitrary metadata storage is available for both
-[SummaryMetadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
 and individual image
-[Metadata](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Metadata.html)
+[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
 via their respective `userData` fields.
 
 ### setImageSavingFormat
 
 When saving the contents of a
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html),
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html),
 you must specify the format you want to use in the form of a
-[Datastore.SaveMode](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.SaveMode.html).
+[Datastore.SaveMode]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.SaveMode.html).
 Alternately, if you want to show the user a save-file dialog, then that
 dialog will include a file format dropdown menu that they can use to
 decide which format to use. The dropdown menu (and the MDA dialog's
@@ -763,19 +762,19 @@ This functionality be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
 [()
 setRelativePosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativePosition) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setRelativeXYStagePosition
 
 This functionality can be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core]({% include link url='2.0API' %}mcorej/CMMCore.html)'s
 [()
 setRelativeXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativeXYPosition) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setStagePosition
 
@@ -783,9 +782,9 @@ This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
 [()
 setPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setPosition) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setXYOrigin
 
@@ -793,9 +792,9 @@ This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
 [()
 setOriginXY](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setOriginXY) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### setXYStagePosition
 
@@ -803,39 +802,39 @@ This functionality can be accessed via the
 [Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
 [()
 setXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setXYPosition) method. The Core in turn can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-core](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#core) method.
+core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
 
 ### showError
 
 Moved to the
-[LogManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html)
+[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)
 object, which can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-[logs](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
 method.
 
 ### showMessage
 
 Moved to the
-[LogManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/LogManager.html)
+[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)
 object, which can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
-[logs](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
 method.
 
 ### showXYPositionList
 
 For consistency, this method was renamed to
 [()
-showPositionList](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html#showPositionList) in
-[PositionListManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/PositionListManager.html).
+showPositionList]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html#showPositionList) in
+[PositionListManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html).
 
 ### sleep
 
 This method has been removed. Use
-[Thread.sleep](http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#sleep%28long%29)
+[Thread.sleep]({% include link url='2.0API' %}http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#sleep%28long%29)
 instead.
 
 ### snapAndAddImage
@@ -843,31 +842,31 @@ instead.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
 that your data is in.
 
 You can replicate the functionality of this method through a combination
 of the
-[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[snap](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
+[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[snap]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
 method and the Datastore's
-[putImage](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method. The SnapLiveManager can be accessed from the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[putImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method. The SnapLiveManager can be accessed from the
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-live](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#live) method.
+live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
 
 ### snapSingleImage
 
 Replaced by the
-[SnapLiveManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[snap](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
+[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[snap]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
 method.
 
 ### unregisterForEvents
 
 Moved to the
-[EventManager](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/events/EventManager.html)
+[EventManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/EventManager.html)
 object, which can be accessed via the
-[Studio](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)'s
+[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
 [()
-events](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html#events) method.
+events]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#events) method.
