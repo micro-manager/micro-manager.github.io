@@ -157,13 +157,13 @@ need to look there as well.
 
 Please refer to the following Installation Guide for further help:
 [Installation
-Guide](File:%5Bhttps://www.pco.de/fileadmin/user_upload/pco-manuals/MA_MICROMANAGER_200.pdf)\]
+Guide](https://www.pco.de/fileadmin/user_upload/pco-manuals/MA_MICROMANAGER.pdf)
 
 Please be informed that starting with nightly build of 23rd of August
 2020 pco stopped software support for SensiCam (also DiCam) and
 PixelFly. Nightly builds up to this date will still work with these
 camera types.
 
---FRE / pco ag 26th of August 2020
+--FRE / pco ag 24th of August 2021
 
 {% include Listserv_Search text="PCO" %}
