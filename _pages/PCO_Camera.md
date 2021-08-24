@@ -164,6 +164,6 @@ Please be informed that starting with nightly build of 23rd of August
 PixelFly. Nightly builds up to this date will still work with these
 camera types.
 
---FRE / pco ag 26th of August 2020
+--FRE / pco ag 26th of August 2021
 
 {% include Listserv_Search text="PCO" %}
