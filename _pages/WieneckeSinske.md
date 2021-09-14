@@ -5,21 +5,21 @@ redirect_from: /wiki/WieneckeSinske
 layout: page
 ---
 
-## WSB PiezoDrive CAN adapter
+## WSB PiezoDrive CAN, WSB ZPiezo CAN and WSB ZPiezo adapters
 
 <table>
 <tr>
 <td markdown="1">
 
-**Summary:**
+  **Summary:**
 
-</td>
+  </td>
 <td markdown="1">
 
-Interfaces [Wienecke & Sinske GmbH](http://www.wienecke-sinske.de) piezo
-stage controller
+  Interfaces [Wienecke & Sinske GmbH](http://www.wienecke-sinske.de) piezo
+stage controllers for x,y and z axes
 
-</td>
+  </td>
 </tr>
 <tr>
 <td markdown="1">
@@ -65,11 +65,14 @@ All Platforms (serial port)
 </td>
 <td markdown="1">
 
-XYStage
+- XYStage: **WSB PiezoDrive CAN** 
+- ZStage:  **WSB ZPiezo CAN** and **WSB ZPiezo**
 
 </td>
 </tr>
 </table>
+
+### WSB PiezoDrive CAN ###
 
 This adapter interfaces piezo xy stages driven by [Wienecke &
 Sinske](http://www.wienecke-sinske.de) WSB PiezoDrive CAN controller. It
@@ -108,16 +111,46 @@ Sets the acceleration of the XY stage
 </tr>
 </table>
 
-COM Settings:  
+### WSB ZPiezo CAN / WSB ZPiezo ###
+
+These adapters interface piezo z stages driven by [Wienecke &
+Sinske](http://www.wienecke-sinske.de). Please note that there are 2 types 
+of WSB ZPiezo controllers using different protocols: select either 
+WSB ZPiezo or WSB ZPiezo CAN according to the imprint. 
+Communicate with the controller is using the serial port so that no
+further software is needed.  
+
+### COM Settings: ###
 
 <table valign='left'>
+  
+<tr>
+  <td markdown="1">
+    
+  </td>
+  <td markdown="1" align="center">
+   
+**WSB PiezoDrive CAN**
+    
+  </td>
+  <td markdown="1"  align="center">
+    
+**WSB ZPiezo CAN**
+    
+  </td>
+  <td markdown="1" align="center">
+    
+**WSB ZPiezo**
+    
+  </td>
+</tr>  
 <tr>
 <td markdown="1">
 
 **Answer Timeout**
 
 </td>
-<td markdown="1">
+<td markdown="1" colspan="3" align="center">
 
 Long enough for stage to complete moves
 
@@ -129,19 +162,55 @@ Long enough for stage to complete moves
 **Baud Rate**
 
 </td>
-<td markdown="1">
+<td markdown="1" align="center">
 
 57600
 
 </td>
+<td markdown="1" align="center">
+
+57600
+
+</td>
+<td markdown="1" align="center">
+
+115200
+
+</td>
 </tr>
+  <tr>
+<td markdown="1">
+
+**DTR**
+
+</td>
+<td markdown="1"  colspan="3" align="center">
+
+Disable
+
+</td>
+</tr>
+
+<tr>
+<td markdown="1">
+
+**Data Bits**
+
+</td>
+<td markdown="1"  colspan="3" align="center">
+
+8
+
+</td>
+</tr>
+
 <tr>
 <td markdown="1">
 
 **Delay Between Chars Ms**
 
 </td>
-<td markdown="1">
+<td markdown="1"  colspan="3" align="center">
 
 0
 
@@ -153,7 +222,7 @@ Long enough for stage to complete moves
 **Handshaking**
 
 </td>
-<td markdown="1">
+<td markdown="1"  colspan="3" align="center">
 
 Off
 
@@ -165,7 +234,7 @@ Off
 **Parity**
 
 </td>
-<td markdown="1">
+<td markdown="1"  colspan="3" align="center">
 
 None
 
@@ -177,7 +246,7 @@ None
 **Stop Bits**
 
 </td>
-<td markdown="1">
+<td markdown="1"  colspan="3" align="center">
 
 1
 
