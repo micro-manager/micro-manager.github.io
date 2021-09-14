@@ -283,7 +283,7 @@ release](Download_Micro-Manager_Latest_Release).
     state devices that can be controlled with simple serial commands
 -   [Vincent](Vincent) - Vincent Uniblitz controllers
 -   [WieneckeSinske](WieneckeSinske) - WSB PiezoDrive CAN XY
-    stage
+    stage and WSB ZPiezo Z stage
 -   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
     Shutter
 -   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
