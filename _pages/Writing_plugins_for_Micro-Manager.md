@@ -6,7 +6,7 @@ layout: page
 section: Extend
 ---
 ## Getting Started
-{% include notice icon="info" content="This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [Version\_2.0\_Plugins](Version_2.0_Plugis). " %}
+{% include notice icon="info" content="This documentation is specific for Micro-Manager 1.4. For Micro-Manager 2.0 plugins, please see [Version\_2.0\_Plugins](Version_2.0_Plugins). " %}
 
 Micro-Manager has a Java-based plugin system similar to ImageJ's. To
 write a Micro-Manager plugin, simply implement the [`MMPlugin`
