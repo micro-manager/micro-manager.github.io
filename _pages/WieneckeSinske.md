@@ -117,7 +117,7 @@ These adapters interface piezo z stages driven by [Wienecke &
 Sinske](http://www.wienecke-sinske.de). Please note that there are 2 types 
 of WSB ZPiezo controllers using different protocols: select either 
 WSB ZPiezo or WSB ZPiezo CAN according to the imprint. 
-Communicate with the controller is using the serial port so that no
+Communication with the controller is using the serial port so that no
 further software is needed.  
 
 ### COM Settings: ###
@@ -169,7 +169,8 @@ Long enough for stage to complete moves
 </td>
 <td markdown="1" align="center">
 
-57600
+57600 (for PartNo 432339)<br>
+480600 (for PartNo 2261-178)
 
 </td>
 <td markdown="1" align="center">
