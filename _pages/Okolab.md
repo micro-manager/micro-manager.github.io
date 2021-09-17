@@ -96,12 +96,12 @@ control unit.
 {% include notice icon="note" content="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
-becomes the master and the other is acting as a `slave device`, so only
+becomes the master and the other is acting as a &apos;slave device&apos;, so only
 the controller connected to the Oko-Touch will answer to USB
 commands" %}
 
 {% include notice icon="info" content="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
-If, after the installation, the `okolib` folder is missing in your Micro-Manager installation folder, please download the following file [http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip Okolib db folder] and un-compress it in Micro-Manager installation folder." %}
+If, after the installation, the &apos;okolib&apos; folder is missing in your Micro-Manager installation folder, please download the following file [Okolib db folder](http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip) and un-compress it in Micro-Manager installation folder." %}
 
 ## Configuration
 
@@ -112,7 +112,7 @@ If, after the installation, the `okolib` folder is missing in your Micro-Manager
     it or clicking the *Add* button when selected.
 4.  Select the right COM Port or select Auto and press OK.
 
-{% include notice icon="info" content="Okolab devices can be found in the `Okolab` node if `Available Devices` list is ordered by vendor or in the `Generic Device` node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the &apos;Okolab&apos; node if &apos;Available Devices&apos; list is ordered by vendor or in the &apos;Generic Device&apos; node if list is ordered by type." %}
 
 ## Usage
 
@@ -133,40 +133,38 @@ automatically refreshed in the *Metadata* tab.
 ### Logging
 
 To log data acquired from Okolab devices, an experiment must be started
-(*Tools* &gt; *Multi-Dimensional Acquisition*). Data are logged in the
+(*Tools* -&gt; *Multi-Dimensional Acquisition*). Data are logged in the
 metadata.txt file if *Separate images files* is selected or in the image
 file itself if *Image stack file* is selected.
 
 ## Support
 
--   [Okolab website](http://www.oko-lab.com)
--   [Online Support](http://www.oko-lab.com/support#contact)
+-   [Okolab website](https://www.oko-lab.com)
+-   [Online Support](https://www.oko-lab.com/support#contact)
 -   [Email Support](mailto:software.support@oko-lab.com)
 
 ## Legacy version
 
 ### Compatible devices
 
--   [Microscope Incubators](http://www.oko-lab.com/live-cell-imaging)
+-   [Microscope Incubators](https://www.oko-lab.com/live-cell-imaging)
     -   [Bold Line Cage Incubator
-        (H201)](http://www.oko-lab.com/live-cell-imaging/cage-incubator)
+        (H201)](https://www.oko-lab.com/live-cell-imaging/cage-incubator)
     -   [Bold Line Top Stage Incubator
-        (H301)](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas)
+        (H301)](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas)
 
 <!-- -->
 
 -   [Bold Line Gas
-    Controllers](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#gas_controller)
+    Controllers](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#gas_controller)
     -   [CO2
-        Unit-BL](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-unit-bl)
-    -   [O2 Unit-BL
-        \[1-20\]](http://www.oko-lab.com/live-cell-imaging/cage-incubator/co2-o2/o2-unit-bl-1-20)
+        Unit-BL](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-unit-bl)
     -   [CO2-O2 Unit-BL
-        \[0-10;1-18\]](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-1-18)
+        \[0-10;1-18\]](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-1-18)
     -   [CO2-O2 Unit-BL
-        \[0-20;1-95\]](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-20-1-95)
+        \[0-20;1-95\]](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-20-1-95)
     -   [CO2-O2 Unit-BL
-        \[0-10;0-1\]](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-0-1)
+        \[0-10;0-1\]](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas/co2-o2/co2-o2-unit-bl-0-10-0-1)
 
 <!-- -->
 
@@ -184,13 +182,13 @@ control unit.
 {% include notice icon="note" content="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
 to the Oko-Touch. When two (or more) units are connected in a stack, one
-becomes the master and the other is acting as a `slave device`, so only
+becomes the master and the other is acting as a &apos;slave device&apos;, so only
 the controller connected to the Oko-Touch will answer to USB
 commands" %}
 
 To use this adapter, you must manually install OKO-Control Server
 software which can be downloaded
-[here](https://dl.dropboxusercontent.com/u/29705430/OCS/last/OKO-Control%20Server.zip).
+[here](https://www.oko-lab.com/public/OCS/OKO-Control%20Server%203.0.0.zip).
 The installation is straightforward, default settings can be used.
 
 ### Configuration
@@ -210,7 +208,7 @@ The installation is straightforward, default settings can be used.
     writing the whole COM string into Value field of Property COM Port
     (eg. *COM1*).
 
-{% include notice icon="info" content="Okolab devices can be found in the `Okolab` node if `Available Devices` list is ordered by vendor or in the `Generic Device` node if list is ordered by type." %}
+{% include notice icon="info" content="Okolab devices can be found in the &apos;Okolab&apos; node if &apos;Available Devices&apos; list is ordered by vendor or in the &apos;Generic Device&apos; node if list is ordered by type." %}
 
 ### Usage
 
