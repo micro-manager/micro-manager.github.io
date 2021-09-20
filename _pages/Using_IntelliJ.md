@@ -48,7 +48,7 @@ Micro-Manager](Writing_plugins_for_Micro-Manager))
     try adding the plugins/micro-manager directory of your micro-manager
     installation. You will also need to supply MMAcqEngine.jar and
     MMCoreJ.jar, which you either build yourself, or that can be found
-    in `$INSTALLDIR/polugins/micro-manager`. Click "OK"
+    in `$INSTALLDIR/plugins/micro-manager`. Click "OK"
 
 1.  in the IntelliJ menu, select Run &gt; Edit Configurations. Add new
     Configuration, type "Application".
