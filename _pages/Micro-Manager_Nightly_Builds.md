@@ -27,10 +27,11 @@ if you absolutely need changes that were made since the last release.
 
 ## Nightly Builds
 
--   [**Version 2.0-gamma
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows)
--   [**Version 2.0-gamma
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac)
+  - [**Version 2.0
+    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/)
+    (you most likely want the 64-bit version)
+  - [**Version 2.0
+    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/)
 -   [**Version 1.4
     (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
 -   [**Version 1.4
@@ -38,6 +39,10 @@ if you absolutely need changes that were made since the last release.
 
 Older nightly builds:
 
+-   [**Version 2.0-gamma
+    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows)
+-   [**Version 2.0-gamma
+    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac)
 -   [**Version 2.0-beta
     (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows)
 -   [**Version 2.0-beta
