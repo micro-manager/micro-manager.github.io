@@ -323,6 +323,8 @@ release](Download_Micro-Manager_Latest_Release).
 -   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface
 -   [NIMultiAnalog](NIMultiAnalog) - NI boards with multiple
     analog outputs
+-   [ParallelPort](ParallelPort) - TTLs on parallel port
+    (Windows only)
 -   [SerialManager](SerialManager) - Serial Ports on Windows
 -   [SerialManagerUnix](SerialManagerUnix) - Serial Ports on
     Mac and Linux
@@ -330,8 +332,7 @@ release](Download_Micro-Manager_Latest_Release).
     analog controller
 -   [TriggerScopeMM](TriggerScopeMM) - TriggerScope v3 with
     Micro-Manager firmware
--   [ParallelPort](ParallelPort) - TTLs on parallel port
-    (Windows only)
+-   [UniversalSerialHub](universalserialhub) - A universal adapter for a user-defined hardware controller
 -   [USBManager](USBManager) - Micro-Manager internal USB
     communications driver
 
