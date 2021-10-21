@@ -48,7 +48,7 @@ Pariksheet Nanda (Andor)</p></td>
 
 ### Andor Driver Pack 3 (sCMOS)
 
-{% include MessageBox text="Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2" %}
+{% include MessageBox text="Support Advisory|Andor Linux SDK3 reportedly supports up to kernel 3.18.2. But usb driver can work with latest linux kernel comparing with camera link driver" %}
 {% include MessageBox text="Support Advisory|Snapping an imaging may use the oldest image, and not the latest image, possibly due to pulling the wrong image from a double buffer" %}
 {% include MessageBox text="Support Advisory|Images may start to scroll to the center of the field after each snap, shifting one line at a time. Restarting the camera and uManager fixes the issue" %}
 {% include MessageBox text="Support Advisory|Linux 32-bit users should install Andor SDK 3.4.30007.0 until Bitflow fixes a 32-bit issue" %}
