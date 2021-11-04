@@ -68,9 +68,8 @@ VC-Compiler-KB2519277.exe patch afterwards.' %}
 ### Java Development Kit (JDK) for Java Standard Edition (Java SE)
 
 Download and install from
-[Oracle](http://java.sun.com/javase/downloads/index.jsp). Version 6 or
-later is required. The official Micro-Manager build currently uses JDK
-6.
+[Oracle](http://java.sun.com/javase/downloads/index.jsp), or [Adoptium](https://adoptium.net/). Micro-Manager 1.4 is 
+build with Version 6, whereas 2.0 is build with JDK8. 
 
 You do not need the JDK if you are only building device adapters or
 other C++ components.
