@@ -22,7 +22,7 @@ For Micro-Manager versions prior to 2021-03-08, download and install the
 website](https://www.cairn-research.co.uk/wp-content/uploads/2019/05/SpinnakerSDK_FULL_1.20.0.15_x64.exe).
 For later Micro-Manager versions (both 1.4 and 2.0-gamma builds),
 download and install a [Spinnaker V2
-driver](https://meta.box.lenovo.com/v/link/view/a1995795ffba47dbbe45771477319cc3)
+driver](https://flir.app.boxcn.net/v/SpinnakerSDK)
 that supports VS2010 (currently, v2.0, 2.1, 2.2, and 2.3; 2.3 is
 recommended). UPDATE: though it was expected that Micro-Manager would
 work with all version 2 of Spinnaker, this does not appear to be the
