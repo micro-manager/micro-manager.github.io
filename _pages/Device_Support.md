@@ -290,6 +290,7 @@ release](Download_Micro-Manager_Latest_Release).
     X-Cite 120PC and *exacte* adapter
 -   [XCiteLed](XCiteLed) - LED controller
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO and XT600 series
+-   [XCiteXT900](XCiteXT900Device) - X-Cite NOVEM/XT900 series
 -   [Zaber](Zaber) - Zaber linear and XY stages, filter
     wheels
 
@@ -388,6 +389,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [USB\_Viper\_QPL](USB_Viper_QPL) - Excelitas/Qioptiq
     iFLEX-Viper Laser Engine
 -   [Versalase](Versalase) - Vortran Versalase laser driver
+-   [XCiteXT900](XCiteXT900Device) - X-Cite NOVEM/XT900 series
 -   [YodnLighting](YodnLighting) - YODN Lighting lamp device
     adapter for E600 serial products
 
