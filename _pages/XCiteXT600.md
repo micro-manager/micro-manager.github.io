@@ -5,7 +5,7 @@ redirect_from: /wiki/XCiteXT600
 layout: page
 ---
 
-## Excelitas X-Cite TURBO and XT600
+## Excelitas X-Cite TURBO/XT600 and X-Cite NOVEM/XT900
 
 <table>
 <tr>
@@ -16,7 +16,7 @@ layout: page
 </td>
 <td markdown="1">
 
-Adapter for the X-Cite TURBO and XT600 series light sources
+Adapter for the X-Cite TURBO/XT600 series and X-Cite NOVEM/XT900 series light sources
 
 </td>
 </tr>
@@ -28,7 +28,8 @@ Adapter for the X-Cite TURBO and XT600 series light sources
 </td>
 <td markdown="1">
 
-Tom Porter (Excelitas) based on the XCiteLed device adapter
+- Tom Porter (Excelitas) based on the XCiteLed device adapter
+- [S3L GmbH](http://www.s3l.de/home/index/en) added X-Cite NOVEM/XT900 series
 
 </td>
 </tr>
@@ -64,7 +65,8 @@ Windows
 </td>
 <td markdown="1">
 
-Turbo, XT600 Series
+- X-Cite Turbo, XT600 Series
+- X-Cite NOVEM, XT900 Series
 
 </td>
 </tr>
