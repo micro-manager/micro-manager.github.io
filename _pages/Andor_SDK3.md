@@ -20,8 +20,7 @@ layout: page
 </tr>
 <tr>
 <td><p>Maintainers</p></td>
-<td><p>Alan Mullan (Andor)<br />
-Niall Flanagan (Andor)</p></td>
+<td><p>Alan Mullan (Andor)</p></td>
 </tr>
 <tr>
 <td><p>Documentation:</p></td>
