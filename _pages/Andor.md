@@ -251,7 +251,7 @@ plugged into the computer to be its own USB bus:
 ##### Windows USB Bus
 
 You need to use a utility like
-[UVCview](http://www.ftdichip.com/Resources/Utilities/Usbview.zip) to
+[USBview](https://ftdichip.com/wp-content/uploads/2020/07/usbview.zip) to
 inspect the USB bus. Try different USB slot positions on the computer
 until the camera is on its own USB bus.
 
@@ -557,7 +557,7 @@ So Software is for snaps separated by time and Internal is for a
 continuous sequence of exposures. For Snap, Software trigger is used by
 default. Internal is used for Live and MDA. (All other modes use the
 same for Snap and Live/MDA.)
-<http://micro-manager.3463995.n2.nabble.com/Multi-D-Acq-External-Trigger-Issues-tp7581206p7581320.html>
+<https://sourceforge.net/p/micro-manager/mailman/micro-manager-general/thread/B890316D-D8B1-4712-8E37-A2116C867036%40ucsf.edu/>
 
 #### External vs. Fast External
 

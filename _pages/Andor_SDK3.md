@@ -20,8 +20,7 @@ layout: page
 </tr>
 <tr>
 <td><p>Maintainers</p></td>
-<td><p>Alan Mullan (Andor)<br />
-Niall Flanagan (Andor)</p></td>
+<td><p>Alan Mullan (Andor)</p></td>
 </tr>
 <tr>
 <td><p>Documentation:</p></td>
@@ -200,7 +199,7 @@ which details the steps above, shows how to add a device in the property
 browser, etc.
 
 See Andor's [Micro-Manager Software
-Guide](http://www.andor.com/pdfs/manuals/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf)
+Guide](https://andor.oxinst.com/downloads/uploads/Andor_MicroManager_Guide_For_Neo_and_Zyla.pdf)
 which details the steps above, shows how to add a device in the property
 browser, etc.
 
@@ -214,6 +213,6 @@ software team
 ### Andor support
 
 -   [Web
-    support](http://www.andor.com/contact_us/support_request/documentation/default.aspx?product=Neo%20sCMOS)
--   [Phone support](http://www.andor.com/contact_us/)
+    support](https://andor.oxinst.com/support/)
+-   [Phone support](https://andor.oxinst.com/contact)
 -   [Email support](mailto:3rdpartysupport@andor.com)
