@@ -148,7 +148,7 @@ select "Open".)
     please upgrade to the 20150820 nightly build ([Windows
     64-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_64bit_1.4.23_20150820.exe),
     [Windows
-    32-bit](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_32bit_1.4.23_20150820.exe))
+    32-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_32bit_1.4.23_20150820.exe))
 -   Olympus IX83 users: please use 1.4.21 instead.
 
 ### Changes in 1.4.22 (since 1.4.21)

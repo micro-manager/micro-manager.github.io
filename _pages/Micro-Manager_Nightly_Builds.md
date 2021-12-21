@@ -29,33 +29,33 @@ if you absolutely need changes that were made since the last release.
 
 ## Nightly Builds
 
-  - [**Version 2.0
-    (Windows)**](https://download.micro-manager.org/nightly/2.0/Windows/)
+  - [Version 2.0
+    (Windows)](https://download.micro-manager.org/nightly/2.0/Windows/)
     (you most likely want the 64-bit version; 32-bit has been discontinued)
-  - [**Version 2.0
-    (Mac Intel 64-bit)**](https://download.micro-manager.org/nightly/2.0/Mac/)
-  - [**Version 1.4
-    (Windows)**](http://download.micro-manager.org/nightly/1.4/Windows/)
+  - [Version 2.0
+    (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
+  - [Version 1.4
+    (Windows)](https://download.micro-manager.org/nightly/1.4/Windows/)
     (pay attention to 32-bit or 64-bit, both are listed but you need the
     one matching your Windows OS)
 
 Older nightly builds:
 
--   [**Version 2.0-gamma
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows)
--   [**Version 2.0-gamma
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac)
--   [**Version 2.0-beta
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows)
--   [**Version 2.0-beta
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac)
--   [**Version 1.4 2016-2021
-    (Mac)**](http://download.micro-manager.org/nightly/1.4/Mac/)
--   [**Version 1.4 2010-2015
-    (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows)
--   [**Version 1.4 2010-2015
-    (Mac)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Mac)
--   [**Version 1.3
-    (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.3/Windows)
--   [**Version 1.3
-    (Mac)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.3/Mac)
+-   [Version 2.0-gamma
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows)
+-   [Version 2.0-gamma
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac)
+-   [Version 2.0-beta
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows)
+-   [Version 2.0-beta
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac)
+-   [Version 1.4 2016-2021
+    (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
+-   [Version 1.4 2010-2015
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows)
+-   [Version 1.4 2010-2015
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Mac)
+-   [Version 1.3
+    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.3/Windows)
+-   [Version 1.3
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.3/Mac)
