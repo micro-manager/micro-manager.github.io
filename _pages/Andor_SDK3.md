@@ -152,8 +152,7 @@ Please read the section on [High Speed Acquisition in
 Micro-Manager](High_Speed_Acquisition_in_Micro-Manager). The
 minimum version of Micro-Manager required is 1.4.11 (Nov 8th, 2012), but
 1.4.16 or later is strongly recommended. Consider trying the latest
-nightly build from
-[here.](http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/)
+[nightly build](Micro-Manager_Nightly_Builds).
 
 ### DeviceCreate function failed
 

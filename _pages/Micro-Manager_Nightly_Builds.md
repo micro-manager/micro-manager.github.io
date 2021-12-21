@@ -4,6 +4,8 @@ title: Micro-Manager Nightly Builds
 redirect_from:
   - /wiki/Micro-Manager_Nightly_Builds
   - /wiki/Micro-Manager_Nightly_Build
+  - /wiki/Nightly_Builds
+  - /Nightly_Builds
 layout: page
 section: Downloads
 nav-links:
@@ -33,7 +35,7 @@ if you absolutely need changes that were made since the last release.
   - [**Version 2.0
     (Mac Intel 64-bit)**](https://download.micro-manager.org/nightly/2.0/Mac/)
   - [**Version 1.4
-    (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
+    (Windows)**](http://download.micro-manager.org/nightly/1.4/Windows/)
     (pay attention to 32-bit or 64-bit, both are listed but you need the
     one matching your Windows OS)
 
@@ -47,8 +49,8 @@ Older nightly builds:
     (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows)
 -   [**Version 2.0-beta
     (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac)
--   [**Version 1.4
-    (Mac)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
+-   [**Version 1.4 2016-2021
+    (Mac)**](http://download.micro-manager.org/nightly/1.4/Mac/)
 -   [**Version 1.4 2010-2015
     (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows)
 -   [**Version 1.4 2010-2015

@@ -78,7 +78,7 @@ the latest official release.
   - [Version 2.0
     (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
   - [Version 1.4
-    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
+    (Windows)](https://download.micro-manager.org/nightly/1.4/Windows/)
     (pay attention to 32-bit or 64-bit, both are listed but you need the
     one matching your Windows OS)
 
@@ -89,8 +89,8 @@ Older nightly builds:
     (you most likely want the 64-bit version)
   - [Version 2.0-gamma
     (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
-  - [Version 1.4
-    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
+  - [Version 1.4 2016-2021
+    (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
@@ -146,9 +146,9 @@ select "Open".)
 -   If you use AndorSDK3 (Andor sCMOS cameras) and experience a crash
     upon starting Micro-Manager (or loading a hardware configuration),
     please upgrade to the 20150820 nightly build ([Windows
-    64-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_64bit_1.4.23_20150820.exe),
+    64-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_64bit_1.4.23_20150820.exe),
     [Windows
-    32-bit](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMSetup_32bit_1.4.23_20150820.exe))
+    32-bit](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_32bit_1.4.23_20150820.exe))
 -   Olympus IX83 users: please use 1.4.21 instead.
 
 ### Changes in 1.4.22 (since 1.4.21)

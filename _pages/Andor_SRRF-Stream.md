@@ -23,8 +23,7 @@ Communications. A short talk describing the algorithm can also be found
 
 ## Minimum Requirements
 
--   x64 [Nightly
-    Build](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/)
+-   x64 [nightly build](Micro-Manager_Nightly_Builds)
     MMSetup\_64bit\_1.4.23\_20170825.exe or later
 -   A NEW iXon Life, iXon Ultra EMCCD or Sona camera
 -   Andor Driver Pack (public download available
