@@ -28,14 +28,14 @@ if you absolutely need changes that were made since the last release.
 ## Nightly Builds
 
   - [**Version 2.0
-    (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/)
-    (you most likely want the 64-bit version)
+    (Windows)**](https://download.micro-manager.org/nightly/2.0/Windows/)
+    (you most likely want the 64-bit version; 32-bit has been discontinued)
   - [**Version 2.0
-    (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/)
--   [**Version 1.4
+    (Mac Intel 64-bit)**](https://download.micro-manager.org/nightly/2.0/Mac/)
+  - [**Version 1.4
     (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
--   [**Version 1.4
-    (Mac)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
+    (pay attention to 32-bit or 64-bit, both are listed but you need the
+    one matching your Windows OS)
 
 Older nightly builds:
 
@@ -47,6 +47,8 @@ Older nightly builds:
     (Windows)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Windows)
 -   [**Version 2.0-beta
     (Mac)**](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-beta/Mac)
+-   [**Version 1.4
+    (Mac)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
 -   [**Version 1.4 2010-2015
     (Windows)**](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows)
 -   [**Version 1.4 2010-2015

@@ -69,23 +69,18 @@ Open (instead of simply double-clicking) the first time you open it.  See
 
 ## Nightly Builds
 
-Although there has been no official release for quite some time, further
-development and multiple bug fixes have occurred in the 1.4 branch in
-parallel with development of 2.0. Nightly builds are almost always
-stable and a better choice for most users than the latest official
-release.
+Nightly builds are almost always stable and a better choice for most users than
+the latest official release.
 
   - [Version 2.0
-    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Windows/)
-    (you most likely want the 64-bit version)
+    (Windows)](https://download.micro-manager.org/nightly/2.0/Windows/)
+    (you most likely want the 64-bit version; 32-bit has been discontinued)
   - [Version 2.0
-    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0/Mac/)
+    (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
   - [Version 1.4
     (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Windows)
     (pay attention to 32-bit or 64-bit, both are listed but you need the
     one matching your Windows OS)
-  - [Version 1.4
-    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
 
 Older nightly builds:
 
@@ -94,6 +89,8 @@ Older nightly builds:
     (you most likely want the 64-bit version)
   - [Version 2.0-gamma
     (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
+  - [Version 1.4
+    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4/Mac)
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
