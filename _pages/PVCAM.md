@@ -107,7 +107,7 @@ PVCAM](http://www.photomet.com/support/downloads/index.php)
 Make sure you have the latest version of the Photometrics [PVCAM
 Driver](https://www.photometrics.com/support/software/) supporting your
 camera. You might need to update PVCAM after you upgrade Micro-Manager
-(if you get an error, of PVCAM becomes "unavailable").
+(if you get an error, or PVCAM becomes "unavailable").
 
 ### Photometrics
 
