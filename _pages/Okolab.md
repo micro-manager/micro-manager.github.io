@@ -85,13 +85,17 @@ Supported
 ## Compatible devices
 
 Any Okolab device.
+This means all control units present in our catalog list from January 2017
+until current date (January 2022).
 
 ## Installation
 
-Connect the port named USB on the rear of the Unit to the PC USB port,
-using a standard mini-USB cable. Please consider that you may need an
-USB Male-to Male cable, depending on the hardware revision of your
-control unit.
+Okolab control units have a port named USB, usually on the rear of the unit.
+USB port type can be different based on the control unit: Mini-USB, Micro-USB, USB type C.
+Connect the control unit USB port to the PC USB port, selecting the proper USB cable.
+Windows PC should detect the device as a Virtual COM port (COMnn).
+If this is not the case, Drivers can be downloaded from 
+[here](https://www.oko-lab.com/public/okolib/drivers/Okolab%20Drivers%20Setup.exe).
 
 {% include notice icon="note" content="If you have more than one controller, please
 make sure to plug the USB cable to the unit which is directly connected
@@ -100,8 +104,12 @@ becomes the master and the other is acting as a &apos;slave device&apos;, so onl
 the controller connected to the Oko-Touch will answer to USB
 commands" %}
 
-{% include notice icon="info" content="The Nightly Build version of Micro-Manager 2.0-gamma may not install a required folder.
-If, after the installation, the &apos;okolib&apos; folder is missing in your Micro-Manager installation folder, please download the following file [Okolib db folder](http://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip) and un-compress it in Micro-Manager installation folder." %}
+{% include notice icon="info" content="The Nightly Build version of Micro-Manager 2.0-gamma
+may not install a required folder.
+If, after the installation, the &apos;okolib&apos; folder is missing in your Micro-Manager
+installation folder, please download the following file
+[Okolib db folder](https://www.oko-lab.com/public/micro-manager-2.0/Okolib.zip) 
+and un-compress it in Micro-Manager installation folder." %}
 
 ## Configuration
 
@@ -145,6 +153,9 @@ file itself if *Image stack file* is selected.
 
 ## Legacy version
 
+Driver version distributed with Micro-Manager 1.4.15 has limited support for the control units.
+Only some devices are supported.
+
 ### Compatible devices
 
 -   [Microscope Incubators](https://www.oko-lab.com/live-cell-imaging)
@@ -169,8 +180,8 @@ file itself if *Image stack file* is selected.
 <!-- -->
 
 -   [Humidity
-    controllers](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage)
-    -   [HM-ACTIVE](http://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage)
+    controllers](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage)
+    -   [HM-ACTIVE](https://www.oko-lab.com/live-cell-imaging/stage-top-digital-gas#humid_controller_stage)
 
 ### Installation
 
