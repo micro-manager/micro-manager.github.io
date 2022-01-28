@@ -30,7 +30,7 @@ Controls [PCO Cameras](http://www.pco.de/)
 </td>
 <td markdown="1">
 
-Franz Reitner PCO AG (adapter), Thomas Bauersachs PCO AG (comments)
+Franz Reitner EXCELITAS PCO GmbH (adapter, comments)
 
 </td>
 </tr>
@@ -164,6 +164,6 @@ Please be informed that starting with nightly build of 23rd of August
 PixelFly. Nightly builds up to this date will still work with these
 camera types.
 
---FRE / pco ag 24th of August 2021
+--FRE / excelitas pco gmbh 28th of January 2022
 
 {% include Listserv_Search text="PCO" %}
