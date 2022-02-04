@@ -75,6 +75,14 @@ Rev. 3); MRc5
 </tr>
 </table>
 
+<h2>Installation</h2>
+
+You must install the
+[Microsoft Visual C++ 2005 Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2005-vc-80-sp1-no-longer-supported)
+for this device adapter to work.
+
+<h2>Caveats</h2>
+
 Because of built in delays in the AxioCam's image acquisition, there is
 a delay of approximately 200ms between when Micro-Manager sends the
 command to open the shutter and when the AxioCam's exposure begins. If
