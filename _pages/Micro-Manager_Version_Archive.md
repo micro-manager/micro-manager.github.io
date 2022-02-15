@@ -1678,10 +1678,10 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.2.dmg),
 ### Micro-Manager 1.4.0 BETA (February 28, 2011)
 
 - [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup32BIT_1.4.0_20110227.exe),
+32-bit](http://download.micro-manager.org/nightly/1.4-old/Windows/MMSetup32BIT_1.4.0_20110227.exe),
 17 MB  
 - [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup64BIT_1.4.0_20110227.exe),
+64-bit](http://download.micro-manager.org/nightly/1.4-old/Windows/MMSetup64BIT_1.4.0_20110227.exe),
 34 MB  
 - [Mac OS X (Universal
 Binary)](http://valelab.ucsf.edu/~arthur/Micro-Manager1.4.0.dmg), 31
