@@ -38,7 +38,7 @@ java 1.5 or higher, which is available on the Mac only as of OS X
 20MB</span>  
 <span>Micro-Manager 1.2.17 beta, PPC (June, 3, 2008), size 30MB</span>  
 [<span>Micro-Manager 1.2.08 beta, Intel (March, 3, 2008), size
-35MB</span>](http://valelab4.ucsf.edu/~MM/builds/1.2/Micro-Manager_Mac(Intel)_1.2.08.dmg)  
+35MB</span>](http://download.micro-manager.org/release/1.2/Mac/Micro-Manager_Mac(Intel)_1.2.08.dmg)  
 <span>Micro-Manager 1.2.08 beta, PPC (March, 3, 2008), size
 70MB</span>  
   
@@ -49,7 +49,7 @@ java 1.5 or higher, which is available on the Mac only as of OS X
 
 <span>Micro-Manager 1.1.47, PPC (January 23, 2008), size 60MB</span>  
 [<span>Micro-Manager 1.1.47, Intel (January 23, 2007), size
-50MB</span>](http://valelab4.ucsf.edu/~MM/builds/1.1/Micro-Manager_Mac(Intel)_1.1.47.dmg)  
+50MB</span>](http://download.micro-manager.org/release/1.1/Mac/Micro-Manager_Mac(Intel)_1.1.47.dmg)  
 
 ### Beta versions
 
@@ -78,7 +78,7 @@ also see the [Guide to new features in version
 <span>Micro-Manager 1.0.63, PPC (February 12, 2007), size 40MB</span>  
 <span>Micro-Manager 1.0.61, Intel (February 1, 2007), size 40MB</span>  
 [<span>Micro-Manager 1.0.61, PPC (February 1, 2007), size
-52MB</span>](http://valelab4.ucsf.edu/~MM/builds/1.0/Micro-Manager_Mac(PPC)_1_0_61.dmg)  
+52MB</span>](http://download.micro-manager.org/release/1.0/Mac/Micro-Manager_Mac(PPC)_1_0_61.dmg)  
   
 <span>Micro-Manager 1.0.60 (beta), Intel (January 17, 2006), size
 40MB</span>  
@@ -86,9 +86,9 @@ also see the [Guide to new features in version
 40MB</span>  
   
 [<span>Micro-Manager 1.0.57 (beta), Intel (December 18, 2006), size
-40MB</span>](http://valelab4.ucsf.edu/~MM/builds/1.0/Micro-Manager_Mac(Intel)_1_057.dmg)  
+40MB</span>](http://download.micro-manager.org/release/1.0/Mac/Micro-Manager_Mac(Intel)_1_057.dmg)  
 [<span>Micro-Manager 1.0.57 (beta), PPC (December 18, 2006), size
-40MB</span>](http://valelab4.ucsf.edu/~MM/builds/1.0/Micro-Manager_Mac(PPC)_1_0_57.dmg)  
+40MB</span>](http://download.micro-manager.org/release/1.0/Mac/Micro-Manager_Mac(PPC)_1_0_57.dmg)  
   
   
 <span>Micro-Manager 1.0.54 (beta), Intel (December 7, 2006), size

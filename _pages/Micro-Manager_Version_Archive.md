@@ -21,13 +21,13 @@ nav-links:
 ## Micro-Manager 1.4.21 (April 30, 2015)
 
 [Windows
-32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.21.exe),
+32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.21.exe),
 61 MB  
 [Windows
-64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.21.exe),
+64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.21.exe),
 62 MB  
 [Mac OS X (Universal
-Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.21.dmg),
+Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.21.dmg),
 48 MB  
 (OS X 10.8 and later: if the application does not open when
 double-clicked for the first time, try ctrl-click or right click, then
@@ -168,13 +168,13 @@ select "Open".)
 ## Micro-Manager 1.4.20 (January 30, 2015)
 
 [Windows
-32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.20.exe),
+32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.20.exe),
 60 MB  
 [Windows
-64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.20.exe),
+64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.20.exe),
 62 MB  
 [Mac OS X (Universal
-Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.20.dmg),
+Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.20.dmg),
 48 MB  
 (OS X 10.8 and later: if the application does not open when
 double-clicked for the first time, try ctrl-click or right click, then
@@ -348,13 +348,13 @@ select "Open".)
 ## Micro-Manager 1.4.19 (November 7, 2014)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.19.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.19.exe),
 60 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.19.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.19.exe),
 61 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.19.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.19.dmg),
 47 MB  
 (OS X 10.8 or later: if the application does not open when
 double-clicked for the first time, try ctrl-click or right click, then
@@ -575,13 +575,13 @@ select "Open".)
 ## Micro-Manager 1.4.18 (July 31, 2014)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.18.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.18.exe),
 57 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.18.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.18.exe),
 59 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.18.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.18.dmg),
 44 MB  
 (OS X 10.8 or later: if the application does not open when
 double-clicked for the first time, try ctrl-click or right click, then
@@ -594,9 +594,9 @@ select "Open".)
     pco.1300 solar, pco.1400, pco.ultraviolet). If you are affected,
     replace the mmgr\_dal\_PCO\_Camera.dll file in the Micro-Manager
     folder with the version available [here (for
-    32-bit MM)](https://valelab4.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/32bit/mmgr_dal_PCO_Camera.dll)
+    32-bit MM)](https://download.micro-manager.org/release/hotfix/1.4.18/20140806/Windows/32bit/mmgr_dal_PCO_Camera.dll)
     or [here (for
-    64-bit MM)](https://valelab4.ucsf.edu/~MM/builds/hotfix/1.4.18/20140806/Windows/64bit/mmgr_dal_PCO_Camera.dll).
+    64-bit MM)](https://download.micro-manager.org/release/hotfix/1.4.18/20140806/Windows/64bit/mmgr_dal_PCO_Camera.dll).
     The issue is also fixed in nightly builds since 20140801.
 
 <!-- -->
@@ -881,13 +881,13 @@ select "Open".)
 ## Micro-Manager 1.4.17 (April 30, 2014)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.17.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.17.exe),
 55 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.17.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.17.exe),
 57 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.17.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.17.dmg),
 43 MB  
 (Note for OS X 10.8 or later: if the application does not open when
 double-clicked for the first time, try ctrl-click or right click, then
@@ -901,9 +901,9 @@ select "Open".)
     USB-serial adapters. If you experience this, replace the
     mmgr\_dal\_SerialManager.dll file in the Micro-Manager folder with
     the version available [here (for
-    32-bit MM)](https://valelab4.ucsf.edu/~MM/builds/hotfix/1.4.17/20140715/Windows/32bit/mmgr_dal_SerialManager.dll)
+    32-bit MM)](https://download.micro-manager.org/release/hotfix/1.4.17/20140715/Windows/32bit/mmgr_dal_SerialManager.dll)
     or [here (for
-    64-bit MM)](https://valelab4.ucsf.edu/~MM/builds/hotfix/1.4.17/20140715/Windows/64bit/mmgr_dal_SerialManager.dll).
+    64-bit MM)](https://download.micro-manager.org/release/hotfix/1.4.17/20140715/Windows/64bit/mmgr_dal_SerialManager.dll).
 
 <!-- -->
 
@@ -1117,13 +1117,13 @@ select "Open".)
 ## Micro-Manager 1.4.16 (January 31, 2014)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.16.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.16.exe),
 50 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.16.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.16.exe),
 50 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.16.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.16.dmg),
 46 MB  
 
 ### Changes in 1.4.16 (since 1.4.15)
@@ -1262,13 +1262,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.16.dmg),
 ## Micro-Manager 1.4.15 (September 23, 2013)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.15.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.15.exe),
 50 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.15.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.15.exe),
 50 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.15.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.15.dmg),
 46 MB  
 
 ### New in 1.4.15
@@ -1419,37 +1419,37 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.15.dmg),
 ## Micro-Manager 1.4.14 (March 20, 2013)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.14.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.14.exe),
 46 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.14.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.14.exe),
 45 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.14.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.14.dmg),
 49 MB  
 
 ## Micro-Manager 1.4.13 (November 30, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.13.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.13.exe),
 45 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.13.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.13.exe),
 45 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.13.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.13.dmg),
 48 MB  
 
 ## Micro-Manager 1.4.12 (November 17, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.12.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.12.exe),
 45 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.12.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.12.exe),
 45 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.12.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.12.dmg),
 48 MB  
 
 #### New in 1.4.12
@@ -1462,13 +1462,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.12.dmg),
 ## Micro-Manager 1.4.11 (November 8, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.11.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.11.exe),
 45 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.11.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.11.exe),
 45 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.11.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.11.dmg),
 48 MB  
 
 #### New in 1.4.11
@@ -1498,13 +1498,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.11.dmg),
 ## Micro-Manager 1.4.10 (April 19, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.10.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.10.exe),
 40 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.10.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.10.exe),
 39 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.10.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.10.dmg),
 47 MB  
 
 #### New in 1.4.10
@@ -1521,13 +1521,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.10.dmg),
 ## Micro-Manager 1.4.9 (March 22, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.9.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.9.exe),
 40 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.9.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.9.exe),
 39 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.8.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.8.dmg),
 47 MB  
 
 #### New in 1.4.9
@@ -1539,13 +1539,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.8.dmg),
 ## Micro-Manager 1.4.8 (March 21, 2012)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.8.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.8.exe),
 40 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.8.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.8.exe),
 39 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.8.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.8.dmg),
 47 MB  
 
 #### New in 1.4.8
@@ -1573,13 +1573,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.8.dmg),
 ### Micro-Manager 1.4.7 (November 17, 2011)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.7.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.7.exe),
 39 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.7.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.7.exe),
 37 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.7.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.7.dmg),
 39 MB  
 
 #### New in 1.4.7
@@ -1603,13 +1603,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.7.dmg),
 ### Micro-Manager 1.4.6 (September 2, 2011)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.6.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.6.exe),
 17 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.6.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.6.exe),
 35 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.6.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.6.dmg),
 39 MB  
 
 #### New in 1.4.6
@@ -1629,25 +1629,25 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.6.dmg),
 ### Micro-Manager 1.4.5 (June 13, 2011)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.5.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.5.exe),
 17 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.5.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.5.exe),
 35 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.5.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.5.dmg),
 31 MB  
 
 ### Micro-Manager 1.4.4 BETA (April 7, 2011)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.4.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.4.exe),
 17 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.4.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.4.exe),
 34 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.4.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.4.dmg),
 31 MB  
 
 #### New in 1.4.4
@@ -1665,13 +1665,13 @@ Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.4.dmg),
 ### Micro-Manager 1.4.2 BETA (March 2, 2011)
 
 [Windows
-32-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup32BIT_1.4.2.exe),
+32-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup32BIT_1.4.2.exe),
 17 MB  
 [Windows
-64-bit](http://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup64BIT_1.4.2.exe),
+64-bit](http://download.micro-manager.org/release/1.4/Windows/MMSetup64BIT_1.4.2.exe),
 34 MB  
 [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.2.dmg),
+Binary)](http://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.2.dmg),
 31 MB  
 
 
@@ -1761,9 +1761,9 @@ interval to 0." %}
 ### Micro-Manager 1.3.49 (June 13, 2011)
 
 \- [32 bit Windows XP, Windows
-7](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1.3.49.exe), 14 MB  
+7](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1.3.49.exe), 14 MB  
 - [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.49.dmg),
+Binary)](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager1.3.49.dmg),
 34 MB  
 - [Debian/Ubuntu
 Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
@@ -1782,9 +1782,9 @@ Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
 ### Micro-Manager 1.3.48 (March 2, 2011)
 
 \- [32 bit Windows XP, Windows
-7](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1.3.48.exe), 13 MB  
+7](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1.3.48.exe), 13 MB  
 - [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.48.dmg),
+Binary)](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager1.3.48.dmg),
 34 MB  
 - [Debian/Ubuntu
 Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
@@ -1844,9 +1844,9 @@ Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
 ### Micro-Manager 1.3.47 (November 1, 2010)
 
 \- [Windows
-XP](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1.3.47.exe), 13 MB  
+XP](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1.3.47.exe), 13 MB  
 - [Mac OS X (Universal
-Binary)](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.47.dmg),
+Binary)](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager1.3.47.dmg),
 34 MB  
 - [Debian/Ubuntu
 Linux](http://www.endrov.net/index.php?title=Installing_Micromanager_on_Linux)
@@ -1882,9 +1882,9 @@ New features in Micro-Manager will be introduced in version 1.4.
 ### Micro-Manager 1.3.43 (December 23, 2009)
 
 \- [Windows XP, 9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_43.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_43.exe)  
 - [Mac OS X(Universal Binary), 34
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.43.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager1.3.43.dmg)  
 
 -   Newly supported devices
     -   SLM/Projector support
@@ -1925,7 +1925,7 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager1.3.43.dmg)
 ### Micro-Manager 1.3.41 beta, (October 12, 2009)
 
 \- [Windows XP, 9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_41c.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_41c.exe)  
 - [Mac OS X(Intel), 18
 MB](http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.41a.dmg)  
 
@@ -1974,9 +1974,9 @@ MB](http://valelab.ucsf.edu/~arthur/builds/Micro-Manager_Mac(Intel)_1.3.40.dmg)
 ### Micro-Manager 1.3.39 beta, (May 15, 2009)
 
 \- [Windows XP, 8
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_39.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_39.exe)  
 - [Mac OS X(Intel), 16
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.39.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.39.dmg)  
 
 -   Fixed build bugs
 -   Drag stage with hand tool
@@ -1990,9 +1990,9 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.39.dmg)
 ### Micro-Manager 1.3.38 beta, (April 29, 2009)
 
 \- [Windows XP, 8
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_38.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_38.exe)  
 - [Mac OS X(Intel), 16
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.38.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.38.dmg)  
 - [Debian package](http://endrov.net/downloadPublic/debs/micromanager/)
 (maintained by Johan Henriksson)
 
@@ -2008,9 +2008,9 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.38.dmg)
 ### Micro-Manager 1.3.37 beta, (April 9, 2009)
 
 \- [Windows XP, 8
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_37.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_37.exe)  
 - [Mac OS X(Intel), 16
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.37.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.37.dmg)  
 
 -   Fixed mouse moving the stage in live mode
 -   Physical ROI now visible in Image5D Snap
@@ -2025,9 +2025,9 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.37.dmg)
 ### Micro-Manager 1.3.36 beta, (April 3, 2009)
 
 \- [Windows XP, 8
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_36.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_36.exe)  
 - [Mac OS X(Intel), 16
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.36.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.36.dmg)  
 
 -   Olympus focusing (z stage) bug fixed
 -   QCam Mac live mode hanging bug fixed
@@ -2042,16 +2042,16 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.36.dmg)
 ### Micro-Manager 1.3.34 beta, (March 18, 2009)
 
 \- [Windows XP, 5.4
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_34.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_34.exe)  
 
 -   PrecisExcite bug fix
 
 ### Micro-Manager 1.3.33 beta, (March 16, 2009)
 
 \- [Windows XP, 5.4
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/MMSetup_1_3_33.exe)  
+MB](http://download.micro-manager.org/release/1.3/Windows/MMSetup_1_3_33.exe)  
 - [Mac OS X(Intel), 14.9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.33.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.33.dmg)  
 
 -   PrecisExcite adapter
 -   Made OS X 10.4 compatible again
@@ -2059,7 +2059,7 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.33.dmg)
 ### Micro-Manager 1.3.32 beta, (March 13, 2009)
 
 \- [Mac OS X(Intel), 14.9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.32.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.32.dmg)  
 
 
 ### Micro-Manager 1.3.31 beta, (March 11, 2009)
@@ -2067,7 +2067,7 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.32.dmg)
 \- [Windows XP, 5.4
 MB](http://valelab.ucsf.edu/%7EMM/builds/1.3/MMSetup_1_3_31.exe)  
 - [Mac OS X(PPC), 26
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(PPC)_1_3_31.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(PPC)_1_3_31.dmg)  
 
 
 ### Micro-Manager 1.3.30 beta, (March 4, 2009)
@@ -2075,7 +2075,7 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(PPC)_1_3_31.dmg)
 \- [Windows XP, 5.4
 MB](http://valelab.ucsf.edu/%7EMM/builds/1.3/MMSetup_1_3_30.exe)  
 - [Mac OS X(Intel), 14.9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.30.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.30.dmg)  
 
 **Bugs are seen in some PVCAM cameras in this release:**  
 
@@ -2093,7 +2093,7 @@ MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.30.dmg)
 ### Micro-Manager 1.3.24 beta, (February 24, 2009)
 
 \- [Mac OS X(Intel), 14.9
-MB](http://valelab4.ucsf.edu/~MM/builds/1.3/Micro-Manager_Mac(Intel)_1.3.24.dmg)  
+MB](http://download.micro-manager.org/release/1.3/Mac/Micro-Manager_Mac(Intel)_1.3.24.dmg)  
 
 -   Corrected driver complement
 

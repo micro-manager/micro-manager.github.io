@@ -32,15 +32,15 @@ fixed already.
 
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
-  - [Windows 64-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_64bit_2.0.0.exe),
+  - [Windows 64-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_64bit_2.0.0.exe),
     148 MB  
-  - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_32bit_2.0.0.exe),
+  - [Windows 32-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_32bit_2.0.0.exe),
     143 MB  
 Requires Windows 7-10. Windows 10 recommended. Device drivers may have
 other requirements.
 
   - [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager-2.0.0.dmg),
+    Binary)](https://download.micro-manager.org/release/2.0/Mac/Micro-Manager-2.0.0.dmg),
     111 MB  
 Requires Mac OS X 10.5 or greater. Device drivers may have other
 requirements.
@@ -94,16 +94,16 @@ Older nightly builds:
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
-  - [Windows 64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe),
+  - [Windows 64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.22.exe),
     87 MB  
-  - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.23.exe),
+  - [Windows 32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.23.exe),
     84 MB  
 
 Requires Windows 7-10. Windows 10 recommended. Device drivers may have
 other requirements.  
 
   - [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.23.dmg),
+    Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.23.dmg),
     76 MB  
 
 Requires Mac OS X 10.5 or greater. Device drivers may have other
@@ -119,17 +119,17 @@ time, try ctrl-click or right click, then select "Open".)
 Read the [Known Issues](#known-issues-in-1422).
 
 -   [Windows
-    32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe),
+    32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.22.exe),
     63.4 MB  
 -   [Windows
-    64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe),
+    64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.22.exe),
     65.1 MB  
 
 Requires Windows XP, or 7-10. Windows 7 recommended. Device drivers may
 have other requirements.  
 
 -   [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.22.dmg),
+    Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.22.dmg),
     54.0 MB  
 
 Requires Mac OS X 10.5-10.10. 10.11 (El Capitan) is not yet supported.
