@@ -21,9 +21,9 @@ This page serves as a "hub" for various other pages related to Version
 2.0 development now takes place in the "master" branch on github.
 
 Nightly builds:
-[Windows](http://download.micro-manager.org/nightly/2.0/Windows/)
+[Windows](https://download.micro-manager.org/nightly/2.0/Windows/)
 \| [Mac OS
-X](http://download.micro-manager.org/nightly/2.0/Mac/)  
+X](https://download.micro-manager.org/nightly/2.0/Mac/)  
 Source code [in master branch on
 github](http://github.com/micro-manager/micro-manager/tree/master)
 
