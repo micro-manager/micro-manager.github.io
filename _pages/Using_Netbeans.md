@@ -53,7 +53,7 @@ Micro-Manager](Writing_plugins_for_Micro-Manager))
     64-bit JDK 1.8 - but using a newer Java Platform in NetBeans than
     the one shipped with Micro-Manager is usually okay).
 
-10.  Under **Compile** &gt; **Compile-time Libraries**, click **Add
+10.  Under **Compile** &gt; **Compile-time Libraries** &gt; **Classpath**, click the plus sign, choose **Add
     Jar/Folder** and add `$INSTALLDIR/ij.jar`, as well as all jars in
     `$INSTALLDIR/plugins/Micro-Manager` *except for* `MMJ_.jar`.
 
