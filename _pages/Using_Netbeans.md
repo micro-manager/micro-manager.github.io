@@ -21,7 +21,7 @@ Micro-Manager](Writing_plugins_for_Micro-Manager))
     `git clone https://github.com/micro-manager/micro-manager`
     * Initialize all submodules:  
     `cd micro-manager`  
-    `git submodule update –init –recursive`
+    `git submodule update -–init -–recursive`
     
     * We'll refer to the root source directory as `$SRCDIR` below.
     
