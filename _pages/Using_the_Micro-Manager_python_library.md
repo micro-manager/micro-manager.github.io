@@ -9,7 +9,11 @@ section: Extend
 There are three main Python libraries for interfaces with microscopes
 through Micro-Manager/micr
 
-1. [pymmcore](https://github.com/micro-manager/pymmcore#pymmcore-python-bindings-for-mmcore)
+1. [Pycro-manager](https://github.com/micro-manager/pycro-manager) provides a bridge between Python
+   and the Micro-Manager java runtime. This not only allows you to continue to use the Micro-Manager
+   GUI in parallel with Python scripting it also gives you access to leverage existing Micro-Manager
+   plugins.
+2. [pymmcore](https://github.com/micro-manager/pymmcore#pymmcore-python-bindings-for-mmcore)
     provides a Python bindings of the underlying C++ library
     [mmCoreAndDevices](https://github.com/micro-manager/mmCoreAndDevices#mmcoreanddevices) that
     Micro-Manager uses. This option does not require you to launch Micro-Manager, or
@@ -19,12 +23,8 @@ through Micro-Manager/micr
     - [pymmcore-plus](https://github.com/tlambert03/pymmcore-plus#pymmcore-plus) is a thin wrapper
       of `pymmcore` that extends the core object, adding additional methods, docstrings, type hints,
       as well as better support for integration into a GUI event loop.
-2. [Pycro-manager](https://github.com/micro-manager/pycro-manager) provides a bridge between Python
-   and the Micro-Manager java runtime. This not only allows you to continue to use the Micro-Manager
-   GUI in parallel with Python scripting it also gives you access to leverage existing Micro-Manager
-   plugins.
-3. **MMCorePy** was formerlly included in Micro-Manager. It has been deprecated and superceded by
-  `pymmcore`.
+    - `MMCorePy` was formerly included in Micro-Manager. It has been deprecated and superceded by `pymmcore`.
+
 
 The instructions below are for an alternative mechanism in which you
 compile the micro-manager core yourself with python bindings.
@@ -50,6 +50,12 @@ the downloads [here](https://github.com/conda-forge/miniforge#mambaforge).
 ```
 conda create -n micro -c conda-forge python matplotlib pymmcore
 conda activate micro
+```
+
+alternatively you can install using pip:
+
+```
+pip install pymmcore #or pip install pymmcore-plus
 ```
 
 
@@ -103,7 +109,7 @@ capabilities." %}
 Install `pymmcore`:
 
 ```bash
-pip install pymmcore
+pip install pymmcore # or pip install pymmcore-plus
 ```
 
 Start python interactive session. Import \`pymmcore\` and make sure
@@ -114,6 +120,12 @@ import pymmcore
 mmc = pymmcore.CMMCore()  # Instance micromanager core
 mmc.getVersionInfo() # gives: 'MMCore version 2.3.2'
 mmc.getAPIVersionInfo() # gives: 'Device API version 59, Module API version 10'
+```
+For this tutorial you may also use `pymmcore-plus`. To do this replace the first two lines with:
+
+```python
+import pymmcore_plus
+mmc = pymmcore_plus.CMMCore.instance()  # Instance micromanager core
 ```
 
 We just get some basic information about current Micromanager
