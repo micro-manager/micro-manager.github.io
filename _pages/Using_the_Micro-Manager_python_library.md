@@ -6,15 +6,29 @@ layout: page
 section: Extend
 ---
 
-The easiest way to control Micro-Manager through Python is the
-[Pycro-manager](https://github.com/micro-manager/pycro-manager) library.
+There are three main Python libraries for interfaces with microscopes
+through Micro-Manager/micr
+
+1. [pymmcore](https://github.com/micro-manager/pymmcore#pymmcore-python-bindings-for-mmcore)
+    provides a Python bindings of the underlying C++ library
+    [mmCoreAndDevices](https://github.com/micro-manager/mmCoreAndDevices#mmcoreanddevices) that
+    Micro-Manager uses. This option does not require you to launch Micro-Manager, or
+    even to have Java installed. However, it does not come with a GUI. If you want a GUI
+    that integrates with pymmcore you can use the community developed
+    [napari-micromanager](https://github.com/tlambert03/napari-micromanager#napari-micromanager).
+    - [pymmcore-plus](https://github.com/tlambert03/pymmcore-plus#pymmcore-plus) is a thin wrapper
+      of `pymmcore` that extends the core object, adding additional methods, docstrings, type hints,
+      as well as better support for integration into a GUI event loop.
+2. [Pycro-manager](https://github.com/micro-manager/pycro-manager) provides a bridge between Python
+   and the Micro-Manager java runtime. This not only allows you to continue to use the Micro-Manager
+   GUI in parallel with Python scripting it also gives you access to leverage existing Micro-Manager
+   plugins.
+3. **MMCorePy** was formerlly included in Micro-Manager. It has been deprecated and superceded by
+  `pymmcore`.
 
 The instructions below are for an alternative mechanism in which you
 compile the micro-manager core yourself with python bindings.
 
-**MMCorePy** is a wrapper that allows you to control microscope hardware
-from python interactive session or script. It's support Windows, Mac and
-Linux.
 
 Micromanager's main parts:
 
@@ -24,9 +38,6 @@ Micromanager's main parts:
     hardware. If you want to built one and extend MM devise support,
     follow [this
     guide](Building_Micro-Manager_Device_Adapters).
--   MMCorePy - python wrapper. MM build scripts are support both python
-    2 and 3, but windows version still ships with python 2 bindings
-    only.
 -   MMCoreJ - java wrapper
 -   MMStudio - Micromanager GUI (technically it is ImageJ plugin).
 
