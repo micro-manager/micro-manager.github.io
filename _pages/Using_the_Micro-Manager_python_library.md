@@ -32,8 +32,7 @@ compile the micro-manager core yourself with python bindings.
 
 Micromanager's main parts:
 
--   CMMCore - basic module, written in C++. Script languages like python
-    just wrap it by [swig](http://www.swig.org).
+-   CMMCore - basic module, written in C++.
 -   Device adapters - various libraries that allow support for various
     hardware. If you want to built one and extend MM devise support,
     follow [this
@@ -43,27 +42,23 @@ Micromanager's main parts:
 
 ## Environment setup
 
-You must install python2 and numpy. Windows users may prefer using an
-python distribution instead manual separate installation.
+You must install python and numpy. An easy way to do this is through the `conda`
+package manager. The easiest way to install `conda` (or the faster `mamba`) is by
+the downloads [here](https://github.com/conda-forge/miniforge#mambaforge).
 
-### Manual
 
--   [python 2.7.x](http://python.org/) (python2 is default for windows
-    now)
--   [numpy 1.7.x](http://scipy.org/) Micromanager represent imaging data
-    as multidimensional numpy arrays.
+```
+conda create -n micro -c conda-forge python matplotlib pymmcore
+conda activate micro
+```
 
-### Using python distributions
 
-It's convenient to install a distribution which includes Python, numpy,
-scientific libraries, GUI frameworks and IDEs. All distributions have a
-free version, some of them have extended paid version, and you can
-request free academic license.
-
+### Other python distributions
+Other python distributions you may find useful in place of `conda` include:
 -   [Enthought's python distribution
     (EPD)](https://www.enthought.com/products/epd/free/)
--   [Anaconda](http://continuum.io/downloads), has package manager.
 -   [PythonXY](https://code.google.com/p/pythonxy) totally free.
+
 
 ### Useful libraries
 
@@ -79,39 +74,24 @@ request free academic license.
 -   [IPython](http://ipython.org/) - improved interactive python
     environment
 
-## Micromanager installation
+## Getting Device Adapters
+To use these Python options you minimally need to have installed the Device Adapters. The easiest way
+to get these is to install Micro-Manager, however you can also install only the Core and Adapters
+by following the instructions in the [mmCoreAndDevices README](https://github.com/micro-manager/mmCoreAndDevices#mmcoreanddevices)
+(this will be the best option for Linux users).
 
-### Windows & Mac
+If you are using Pycro-Manager then just `mmCoreAndDevices` is insufficient, you will need a complete Micro-Manager installation.
 
-[Download](Download_Micro-Manager_Latest_Release) and install
-Micro-Manager on your computer. Add Micromanager installation folder to
-[PYTHONPATH](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH)
-(i.e. "*C:\\Program Files\\Micro-Manager-1.4*", it should contain
-<small>*MMCorePy.py*</small> and <small>*\_MMCorePy.pyd*</small> files).
-Create variable if it not exist. At now you can import MMCorePy without
-an error.
-
-### Linux
-
-MM package from your distribution repository, in most cases, ships with
-CMMCore, MMCorePy (python 2 or 3 wrapper) and MMCoreJ, but without GUI.
-Python and Numpy would be installed by your package manager as
-dependency. In normal way, you don't need changing any system variable.
 
 ## Using Python API
+The primary API you will interact with is the `MMCore` object. You can read it's
+API documentation [here](https://micro-manager.org/apidoc/MMCore/latest/class_c_m_m_core.html).
 
-Familiarize yourself with Micro-Manager and learn how to connect it to
-your hardware by MMStudio GUI.
-
--   Find your device on [this page](Device_Support) and
-    figure out what adapter you need.
+Other useful pages to read are:
 -   [Micro-Manager Configuration
-    Guide](Micro-Manager_Configuration_Guide) help you to
-    understand how properties work.
--   Read the general [Micro-Manager Programming
+    Guide](Micro-Manager_Configuration_Guide) to help understand how properties work.
+-   The general [Micro-Manager Programming
     Guide](Micro-Manager_Programming_Guide)
--   Use
-    [API](https://valelab.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html).
 
 ### First steps
 
@@ -120,42 +100,71 @@ use numpy and matplotlib **as is** from pure python interactive shell, but
 it's convenient to use IPython with nice autocompletion
 capabilities." %}
 
-Start python interactive session. Import \`MMCorePy\` and make sure
+Install `pymmcore`:
+
+```bash
+pip install pymmcore
+```
+
+Start python interactive session. Import \`pymmcore\` and make sure
 everything is working properly.
 
-```
-   >>> import MMCorePy
-   >>> mmc = MMCorePy.CMMCore()  # Instance micromanager core
-   >>> mmc.getVersionInfo()
-   'MMCore version 2.3.2'
-   >>> mmc.getAPIVersionInfo()
-   'Device API version 59, Module API version 10'
+```python
+import pymmcore
+mmc = pymmcore.CMMCore()  # Instance micromanager core
+mmc.getVersionInfo() # gives: 'MMCore version 2.3.2'
+mmc.getAPIVersionInfo() # gives: 'Device API version 59, Module API version 10'
 ```
 
 We just get some basic information about current Micromanager
-installation. If there an \`ImportError\`, check your PYTHONPATH
+installation. If there an `ImportError`, check your PYTHONPATH
 variable. If output is too verbose, run
-<small>mmc.enableStderrLog(False); mmc.enableDebugLog(False)</small>.
+`mmc.enableStderrLog(False); mmc.enableDebugLog(False)`.
 
 ### Device loading
 
-{% include notice icon="info" content="You can get all needed parameter's names from Micromanager configuration file, generated by MMStudio." %}
+{% include notice icon="info" content="pymmcore-plus automatically sets the device adapter search paths for you." %}
 
-Let's take step closer to hardware. Micromanager have couple of dummy
-devices, suitable for learning purposes. Load DemoCamera:
+There are two approaches to loading devices: loading a `.cfg` file and manually loading the devices one by one.
+For this example we will use the Demo Devices distributed with the Device Adapters.
+
+For both of these examples you will need to point `pymmcore` to the folder with the device adapters. You can do this with
+the `setDeviceAdapterSearchPaths` function. The standard folder is the `micro-manager` folder which is installed into
+these folders by default:
+
+
+- Linux: `/usr/local/lib/micro-manager`
+- Mac: `/Applications/Micro-Manager`
+- Windows: `C:/Program Files/Micro-Manager`
+        
+
+
+**System Configuration**
+The recommended way to load devices is to use a Micro-Manager config file. For example to load the
+[Demo Config](https://github.com/micro-manager/micro-manager/blob/main/bindist/any-platform/MMConfig_demo.cfg) on windows
+you would run:
+
+```python
+mmc.loadSystemConfiguration("C:/Program Files/Micro-Manager/MMConfig_demo.cfg")
+```
+
+and then see the loaded devices with:
+```python
+mmc.getLoadedDevices()
+```
+**Individual Devices**
+If you want more fine grained control over device loading then you can manually do so:
 
 ```
-   # Demo camera example, continuation of previous listing
-   >>> mmc.loadDevice('Camera', 'DemoCamera', 'DCam')
-   >>> mmc.initializeAllDevices()
-   >>> mmc.setCameraDevice('Camera')
+mmc.loadDevice('Camera', 'DemoCamera', 'DCam')
+mmc.initializeAllDevices()
+mmc.setCameraDevice('Camera')
 ```
 
 ### Property discovery
 
-Every device has
-[properties](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser)
-- settings that let you control the device more precisely. Default
+Every device has [properties](Micro-Manager_User's_Guide#exploring-devices-deviceproperty-browser)
+settings that let you control the device more precisely. Default
 values should be fine, but if you need something sophisticated, [this
 example](https://github.com/radioxoma/micromanager-samples/blob/master/mm_print_properties.py)
 help you figure out how to explore it.
@@ -164,7 +173,7 @@ help you figure out how to explore it.
 
 Images returned as numpy array by calls to an instance of the pythonized
 Micro-Manager
-[CMMCore](https://valelab.ucsf.edu/~MM/doc/MMCore/html/class_c_m_m_core.html)
+[CMMCore](https://micro-manager.org/apidoc/MMCore/latest/class_c_m_m_core.html)
 class. The array <small>dtype</small> depends on property named
 *PixelType* (see below).
 
