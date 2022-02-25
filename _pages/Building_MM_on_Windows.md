@@ -5,8 +5,6 @@ redirect_from: /wiki/Building_MM_on_Windows
 layout: page
 ---
 
-{% include notice icon="info" content="Updated for Visual Studio 2010. The following applies since SVN r11946. --[[User:Mark Tsuchida|Mark Tsuchida]] ([[User talk:Mark Tsuchida|talk]]) 11:15, 10 October 2013 (PDT)" %}
-
 ## Before you start
 
 First make sure you have enough hard disk space. 15 GB is probably
@@ -14,62 +12,30 @@ enough.
 
 ## Setting up the required tools
 
-Note that many people do not need to build MM at all, e.g. if you are
-only using MMCore and not editing it nor the device adapters then most
-of this doesn't apply to you.
+### Git and Subversion clients
 
-### Subversion client
+- [Git for Windows](https://git-scm.com/download/win)
+- A [Subversion client](http://subversion.apache.org/packages.html#windows),
+  such as [SlikSVN](https://sliksvn.com/download/).
+  GUI clients such as [TortoiseSVN](http://tortoisesvn.net/) also work well.
 
-You will need a [Subversion
-client](http://subversion.apache.org/packages.html#windows). GUI clients
-such as [TortoiseSVN](http://tortoisesvn.net/) also work well.
+### Microsoft Visual Studio 2019
 
-### Microsoft Visual Studio 2010 SP1 Express
+You need to install one of the following:
 
-{% include notice icon="info" content="The official binaries are, for the time being, still built with VS 2010. However, it is possible to build device adapters using any newer version of VisualStudio, and this may be preferred for newer systems where VS 2010 binaries are hard to come by. Device adapters are '''not''' required to be built by the same version of VS as MMCore.  See [http://micro-manager.3463995.n2.nabble.com/Building-Device-Adapters-on-Windows-10-with-Visual-Studio-2015-Community-tp7587098.html this thread] in the mailing list archives about using VS 2015." %}
+- Visual Studio Community 2019, with the "Desktop development with C++" workload
+- Visual Studio Community 2022, with the "Desktop development with C++" workload, plus "MSVC v142 - VS 2019 C++ x64/x86 build tools"
 
-Micro-Manager's C++ components (Core, MMCoreJ, MMCorePy, and device
-adapters) are currently built using Visual Studio 2010 Express. To
-install a complete build environment, follow these instructions (all are
-free downloads):
+The checkbox for the MSVC v142 build tools is located under "Desktop development with C++".
 
-1.  Open Control Panel &gt; "Uninstall a program". If there are any
-    items named **Microsoft Visual C++ 2010 Redistributable** with
-    version number greater than 10.0.30319, ***uninstall*** them (see
-    the note below for why).
-2.  Install **Microsoft Windows SDK 7.1 and .NET Framework 4**
-    <http://www.microsoft.com/en-us/download/details.aspx?id=8279>. If
-    installation of the .NET fails, see the notes below.
-3.  Install **Visual C++ 2010 Express** from
-    <https://www.visualstudio.com/vs/older-downloads/>.
-4.  Upgrade to **Visual Studio 2010 SP1**
-    <https://www.visualstudio.com/vs/older-downloads>.
-5.  **Repair the compilers** that come with Windows SDK 7.1 by
-    installing this package:
-    <http://www.microsoft.com/en-us/download/details.aspx?id=4422>
+### Java Development Kit (JDK) 8
 
-{% include notice icon="info" content='The **order if installation is important**. In
-particular, the SDK 7.1 installer will fail if VS2010 SP1 is installed
-first. If you are in that situation, the only way out that I have found
-is to go to Control Panel > "Uninstall a program", uninstall
-everything with "Microsoft Visual ... 2010" in its name
-(Redistributable, Runtime, Express, Compilers, Service Pack, Tools for
-Office Runtime), and start over.' %}
+Micro-Manager currently uses Java 8.
+You can also build with a later JDK version, but your code must
+compile with Java 8 if you are contributing to our codebase.
 
-{% include notice icon="info" content="It is also possible that installation of the Windows SDK can fail (even if you don't have VS2010 installed) if you have a newer version of '''Microsoft Visual C++ 2010 Redistributable''' than the version that the SDK installer tries to install (which is 10.0.30319). The VC++ Redistributable is installed by various programs, including Micro-Manager). " %}
-
-{% include notice icon="info" content='If the SDK installation fails with **Fatal error
-during installation**, you may need to first uninstall the VS2010
-redistributables (x86 and x64), uninstall the broken 7.1 SDK install,
-reinstall the 7.1 SDK and untick "Visual C++ compilers" from the list as
-mentioned in KB KB2519277. If you are successful, install the
-VC-Compiler-KB2519277.exe patch afterwards.' %}
-
-### Java Development Kit (JDK) for Java Standard Edition (Java SE)
-
-Download and install from
-[Oracle](http://java.sun.com/javase/downloads/index.jsp), or [Adoptium](https://adoptium.net/). Micro-Manager 1.4 is 
-build with Version 6, whereas 2.0 is build with JDK8. 
+You can use either Adoptium [Temurin](https://adoptium.net/index.html?variant=openjdk8&jvmVariant=hotspot)
+or Azul [Zulu](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk).
 
 You do not need the JDK if you are only building device adapters or
 other C++ components.
@@ -78,7 +44,7 @@ other C++ components.
 
 [Apache Ant](http://ant.apache.org/) is the build tool used to automate
 the full Windows build of Micro-Manager. Version 1.8.1 or later is
-required (tested with 1.9.2).
+required (tested with 1.10.12).
 
 Download the [binary package](http://ant.apache.org/bindownload.cgi).
 
@@ -93,11 +59,11 @@ Control Panel &gt; System and Security &gt; System &gt; "Advanced system
 settings" &gt; "Environment variables...".
 
 -   `JAVA_HOME`: set to the path to your JDK installation, e.g.
-    `C:\Program Files\Java\jdk1.6.0_45`. Do not add quotes to the value,
-    even if it contains spaces.
+    `C:\Program Files\Eclipse Adoptium\jdk-8.0.312.7-hotspot\`.
+    Do not add quotes to the value, even if it contains spaces.
 -   `ANT_HOME`: set to the path to your Ant installation (whereever you
-    placed the extracted binary package), e.g. `C:\apache-ant-1.9.1`. Do
-    not add quotes to the value, even if it contains spaces.
+    placed the extracted binary package), e.g. `C:\apache-ant-1.10.12`.
+    Do not add quotes to the value, even if it contains spaces.
 -   `PATH`: It is convenient to add Ant to the command search path. You
     can append `;%ANT_HOME%\bin` to the end of the System `PATH`
     varialbe, or add a User variable named `PATH` and set its value to
@@ -110,21 +76,22 @@ settings" &gt; "Environment variables...".
 Create a directory named `projects` (the name is not important, but we
 will refer to this name below). The `projects` directory may reside
 anywhere you like (but paths containing spaces and special characters
-should be avoided) and will contain the subdirectories `micromanager`,
+should be avoided) and will contain the subdirectories `micro-manager`,
 `3rdpartypublic`, and (optionally) `3rdparty`.
 
 All directories mentioned below that don't start with `project` are
-relative to `projects\micromanager`.
+relative to `projects\micro-manager`.
 
 ### Obtaining the source code
 
 Checkout the [Micro-Manager Source
 Code](Micro-Manager_Source_Code) inside the `projects`
-directory, using your Subversion client (use git for the 2.0
-micromanager source). This should result in the following directories:
+directory, using `git` and `svn`.
+This should result in the following directories:
 
 ```
-projects\micromanager
+projects\micro-manager
+projects\micro-manager\mmCoreAndDevices
 projects\3rdpartypublic
 ```
 
@@ -150,12 +117,11 @@ have to edit the path.)
 
 ### Building the C++ components
 
-Open `micromanager.sln` (in the root of `projects\micromanager`). Visual
+Open `micromanager.sln` (in the root of `mmCoreAndDevices`). Visual
 Studio will warn you that some projects are missing (they are the
 closed-source device adapters), but you can ignore that message. Choose
-the correct configuration (try Release if Debug fails) and platform
-(Win32 or x64). Then simply right-click the desired projects and select
-Build.
+the correct configuration (try Release if Debug fails).
+Then simply right-click the desired projects and select Build.
 
 DeviceAdapters that depend on code in the 3rdparty directory will only
 build if you download the correct libraries yourself and place them in
@@ -165,7 +131,7 @@ simply ignore DeviceAdapters that do not build because you do not have
 the correct dependencies.
 
 Note that the built binaries are placed under the directory `build` at
-the root of `projects\micromanager`.
+the root of `mmCoreAndDevices`.
 
 If you build MMCoreJ, `MMCoreJ_wrap.dll` will be generated.
 Additionally, Java source files are generated in
@@ -207,8 +173,8 @@ necessary because Visual Studio does not correctly update its internal
 state when you add projects that theoretically know their
 interdependencies.)
 
-Now select the Debug or Release configuration and the Win32 or x64
-platform from the drop-down menus (for various reasons, the Debug
+Now select the Debug or Release configuration from the drop-down menus
+(for various reasons, the Debug
 configuration does not work for all device adapters). If everything is
 configured correctly as described above, you should now be able to
 simply select Build.
@@ -223,7 +189,7 @@ Reload the solution file, and you should be ready to build.
 In Visual Studio 2010 and later, the solution is little more than a list
 of project files to be built together, so our policy is not to include
 solution files for each project in the repository (but see below about
-the master `micromanager.sln` file).
+the main `micromanager.sln` file).
 
 The build binaries are placed under the directory `build`, within the
 device adapter directory (actually, relative to where you saved the
@@ -232,37 +198,6 @@ solution file).
 Some device adapters (those made up of more than one project) may not
 build correctly by this method. In that case, build it from
 `micromanager.sln` as described above.
-
-### Building MMCorePy
-
-First, you need to install Python 2.7 and Numpy 1.7 (different versions,
-such as Python 2.6, may work if the project settings are appropriately
-edited).
-
-**Note for Visual Studio 2010:** If you are using Visual Studio 10, then
-MMCorePy must be compiled with a compatible version of the Python27.dll,
-otherwise importing MMCorePy will crash Python. You will either need to
-compile Python from source using VS2010, or download an already compiled
-and compatible Python distribution. The [p-nand-q.com
-website](http://www.p-nand-q.com/python/building-python-27-with-visual_studio.html)
-has instructions for doing both.
-
-To tell Visual Studio where to find the Python installation, open
-`MMCorePy_wrap\Python.props` in a text editor (these settings can be
-edited in Visual Studio, but it's simpler to explain how to manually
-edit this file). Find the block that starts with
-`PropertyGroup Label="UserMacros"`, which contains a line for
-`PythonDir`. Set its value to the path to your Python installation. If
-you installed Python 2.7 in the default location, you probably just need
-to remove the `-$(Platform)` part.
-
-Once this is done, you should be able to build MMCorePy from
-`micromanager.sln` by the steps described above. Make sure to select the
-Release configuration and the platform that matches your Python
-binaries.
-
-The build will generate `_MMCorePy.pyd` (the extension module) and
-`MMCorePy.py` (the Python wrapper module).
 
 ### Building individual Java components
 
@@ -318,13 +253,7 @@ in Visual Studio as described above, or using Ant as described below)
 before running Ant.
 
 Building Clojure components (acqEngine and some of the plugins) requires
-a loadable `MMCoreJ_wrap.dll`. "Loadable", in this context, means that
-it is built for the same architecture (32-bit vs 64-bit) as your Java
-runtime (on which Ant is running). If you are using a 32-bit JDK but
-have built MMCoreJ for 64-bit, you will also need to build the 32-bit
-MMCoreJ\_wrap.dll (and vice versa). The MMCoreJ\_wrap.dll for the two
-architectures go in different directories, so there is no harm in
-building both in the same source tree.
+a loadable `MMCoreJ_wrap.dll`.
 
 It is possible for the build to drop into an inconsistent state when the
 source code is updated. The following might fix it (at the root of the
@@ -357,7 +286,7 @@ To build all C++ components (similar to building the `micromanager.sln`
 Solution in Visual Studio), type
 
 ```
- ant build-cpp -Dmm.build.failonerror=false -Dmm.architecture=Win32
+ ant build-cpp -Dmm.build.failonerror=false
 ```
 
 Setting the `mm.build.failonerror` property to `false` allows the build
@@ -365,14 +294,10 @@ to continue even if some of the projects (e.g. device adapters that
 depend on libraries you don't have) fail to build. (But you will want to
 check that the ones you want did build. Look in the `build` directory.)
 
-The architecture (what Visual Studio calls 'platform' - but we reserve
-that term for Windows vs OS X vs Linux) can be set to `Win32` or `x64`.
-By default, it is `x64` on 64-bit Windows and `Win32` otherwise.
-
 The command
 
 ```
- ant build -Dmm.build.failonerror=false -Dmm.architecture=Win32
+ ant build -Dmm.build.failonerror=false
 ```
 
 will build everything (all C++, Java, and Clojure compoenets).
@@ -384,11 +309,11 @@ components).
 You can then type
 
 ```
- ant stage-only -Dmm.architecture=Win32
+ ant stage-only
 ```
 
 This will construct a near-complete Micro-Manager installation in the
-`stage\Release\Win32` directory. The only thing lacking is the Java
+`stage\Release\x64` directory. The only thing lacking is the Java
 Runtime; you will need to copy over the `jre` folder from inside your
 JDK installation before launching `ImageJ.exe`. (Note that the
 `ImageJ.cfg` file determines where the JRE is searched for.)
@@ -405,5 +330,3 @@ ant stage-only
 
 The `stage`, `run` and `package` targets are not yet fully implemented
 for general use (they expect files to be present at specific paths).
-
-[Discussion page](/talk/Building_MM_on_Windows) for Building_MM_on_Windows imported from old wiki
