@@ -20,7 +20,7 @@ through Micro-Manager/micr
     even to have Java installed. However, it does not come with a GUI. If you want a GUI
     that integrates with pymmcore you can use the community developed
     [napari-micromanager](https://github.com/tlambert03/napari-micromanager#napari-micromanager).
-    - [pymmcore-plus](https://github.com/tlambert03/pymmcore-plus#pymmcore-plus) is a thin wrapper
+    - [pymmcore-plus](https://pymmcore-plus.readthedocs.io/) is a thin wrapper
       of `pymmcore` that extends the core object, adding additional methods, docstrings, type hints,
       as well as better support for integration into a GUI event loop.
     - `MMCorePy` was formerly included in Micro-Manager. It has been deprecated and superceded by `pymmcore`.
