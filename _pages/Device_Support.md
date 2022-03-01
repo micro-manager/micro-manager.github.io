@@ -316,8 +316,7 @@ release](Download_Micro-Manager_Latest_Release).
   - [MCCDAQ](MCCDAQ) - Measurement Computing PCI-DDA08/16
   - [MicroFPGA](MicroFPGA) - Open source FPGA platform for
     hardware triggering and control
-  - [National Instruments](National_Instruments) - See NI100X
-    and NIMultiAnalog. Superseded by [NIDAQ](NIDAQ).
+  - [National Instruments](NIDAQ) - National Instruments DA IO boards adapter.
 -   [NicoLase](NicoLase) An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
 -   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface. 
