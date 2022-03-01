@@ -317,12 +317,15 @@ release](Download_Micro-Manager_Latest_Release).
   - [MicroFPGA](MicroFPGA) - Open source FPGA platform for
     hardware triggering and control
   - [National Instruments](National_Instruments) - See NI100X
-    and NIMultiAnalog
+    and NIMultiAnalog. Superseded by [NIDAQ](NIDAQ).
 -   [NicoLase](NicoLase) An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
--   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface
+-   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface. 
+    Superseded by [NIDAQ](NIDAQ).
 -   [NIMultiAnalog](NIMultiAnalog) - NI boards with multiple
-    analog outputs
+    analog outputs. Superseded by [NIDAQ](NIDAQ).
+-   [NIDAQ](NIDAQ) - NI DAQ boards with multiple analog and digital 
+    output ports.      
 -   [ParallelPort](ParallelPort) - TTLs on parallel port
     (Windows only)
 -   [SerialManager](SerialManager) - Serial Ports on Windows
