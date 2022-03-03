@@ -5,12 +5,12 @@ redirect_from: /wiki/Linux_installation_from_source_(Ubuntu)
 layout: page
 ---
 
+{% include notice icon="info" content="These instructions are for Micro-Manager 1.4 rather than Micro-Manager 2.0 (which uses JDK 8 and has source code on [GitHub](https://github.com/micro-manager/micro-manager) rather than in a subversion repository). Instructions for building Micro-Manager 2.0 can be found at [Linux installation from source MM2](Linux_installation_from_source_MM2)." %}
+
 Intallation notes to install micro-manager from source on Ubuntu
 systems. These instructions can also be used without modifications for
 installations on [Debian systems](http://debian.org) (tested on Debian
 Wheezy and Debian Jessy).
-
-{% include notice icon="info" content="These instructions are for Micro-Manager 1.4 rather than Micro-Manager 2.0 (which uses JDK 8 and has source code on [https://github.com/micro-manager/micro-manager github] rather than in a subversion repository. Instructions for building Micro-Manager 2.0 can be found [[Linux installation from source MM2 | here]]" %}
 
 {% include notice icon="info" content="This page has been updated for the build system changes of r13120, based on testing on Ubuntu 12.04 LTS." %}
 
