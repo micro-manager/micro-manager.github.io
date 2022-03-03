@@ -64,9 +64,14 @@ Supported since the 20180220 nightly builds (1.4 and 2.0beta).
 
 First, install Nikon's [Ti2
 Control](http://nikon.com/products/microscope-solutions/support/download/software/biological/index.htm)
-software. Make sure it can control your microscope. (Some have reported
-that ver. 2.1.0 does not work with Micro-Manager on Windows 10. Try
-Nikon Ti2 Control for Windows Ver. 1.2.0.55.)
+software. Make sure it can control your microscope.
+
+If you are running Micro-Manager release 2.0.0 or a 2.0 series nightly
+build dated 2022-03-02 or earlier, or any MM 1.4 (release or nightly),
+you probably need Ti2 Control 1.2.0.
+
+If you are running anything newer, please try the latest Ti2 Control
+2.x first.
 
 Next, copy the file `Ti2_Mic_Driver.dll` into the Micro-Manager folder.
 The file is located at `C:\Program Files\Nikon\Ti2-SDK\bin`.
