@@ -6,7 +6,7 @@ layout: page
 ---
 
 
-{% include notice icon="info" content="This page is obsolete. Please see [[Building Micro-Manager Device Adapters]] and [[Building and debugging Micro-Manager source code]]." %}
+{% include notice icon="info" content="This page is obsolete. Please see [Building Micro-Manager Device Adapters](Building_Micro-Manager_Device_Adapters) and [Building and debugging Micro-Manager source code](Building_and_debugging_Micro-Manager_source_code)." %}
 
 The Device Developer's Kit contains all source code and instructions
 required for building Micro-Manager device adapters. The major version
