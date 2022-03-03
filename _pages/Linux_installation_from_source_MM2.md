@@ -5,6 +5,8 @@ redirect_from: /wiki/Linux_installation_from_source_MM2
 layout: page
 ---
 
+{% include notice icon="info" content="For up-to-date instructions for building on Linux, please see the [`doc/how-to-build.md` file](https://github.com/micro-manager/micro-manager/blob/main/doc/how-to-build.md) in the source code repository. However, some of the device dependency information below may still be useful." %}
+
 Installation notes to install micro-manager from source on Ubuntu
 systems. These instructions are expected to work without modifications
 for installations on [Debian systems](http://debian.org) (tested on
