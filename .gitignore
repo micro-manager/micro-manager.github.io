@@ -5,3 +5,6 @@
 /.jekyll-metadata
 /.jekyll-cache/
 .DS_Store
+
+# locally installed bundler files
+vendor/
