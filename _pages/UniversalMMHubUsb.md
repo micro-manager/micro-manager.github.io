@@ -4,7 +4,7 @@ description: An adapter for a Universal MM Hub communicating via USB protocol
 layout: page
 ---
 
-## ummhUsb
+## UniversalMMHubUsb
 
 <table>
 <tr>
