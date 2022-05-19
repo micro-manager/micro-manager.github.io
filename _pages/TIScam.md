@@ -18,16 +18,13 @@ layout: page
 
 ## Installation
 
-The camera will work out of the box if the driver is installed (either
+The camera will (we hope!) work out of the box if the driver is installed (either
 by the [Device Driver
-installer](http://www.theimagingsource.com/en_US/support/downloads/) or
+installer](https://www.theimagingsource.com/support/downloads-for-windows/) or
 the [IC Capture
-software](http://www.theimagingsource.com/en_US/support/downloads/details/iccapture/))
-since Micro-Manager 1.4.15 and later bundle the required libraries.
+software](https://www.theimagingsource.com/products/software/end-user-software/).
 
-## Support
 
-{% include Listserv_Search text="The Imaging Source" %}
 
 ### Snap error "Camera is not initialized"
 
@@ -72,10 +69,12 @@ now works.
         **TIS\_UDSHL09\_vc9\_x64.dll** (which in turn requires
         **TIS\_DShowLib09\_x64.dll**)
 
-### Problems as of early 2018
+### Issues with USB 3.0 cameras
 
-As of early 2018, I (and others) have had difficulty using a USB 3.0 TIS
-camera with MM. The driver is not currently supported by TIS. See the
-following mailing list post for more details:
-<http://micro-manager.3463995.n2.nabble.com/problem-with-TIScam-td7589042.html#a7589354>
+Early 2018, people reported that USB 3.0 cameras did not work.  Apparently, 
+TIS had not yet updated their drivers.  Currently (2022), USB 3.0 cameras 
+work fine after installation of the TIS drivers.  There does seem to be an 
+incompatibility with drivers installed by Nikon Elements (Nikon includes a TIS
+camera in some of their systems).   It is not yet clear to me (Nico) if installing
+the TIS drivers after Nikon installs their drivers works with both MM and Elements.
 
