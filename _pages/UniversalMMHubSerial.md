@@ -97,76 +97,76 @@ Each device implemented in the controller should be described by a sequence of s
 
 **Here is an example description of two shutter device:**
 
-Name|Shutter-A
+`Name|Shutter-A`
 
-Description|An example shutter
+`Description|An example shutter`
 
-Timeout|1000
+`Timeout|1000`
 
-Command|SetOpen|SO
+`Command|SetOpen|SO`
 
-Command|GetOpen|cashed
+`Command|GetOpen|cashed`
 
-Command|Fire|not supported
+`Command|Fire|not supported`
 
-PropertyStringAction|Pin|5|false|PIN|false|1:2:3:4:5:6:7:8
+`PropertyStringAction|Pin|5|false|PIN|false|1:2:3:4:5:6:7:8`
 
-PropertyFloatAction|Power|0.0|false|PW|false|0.0:2.5
+`PropertyFloatAction|Power|0.0|false|PW|false|0.0:2.5`
 
-Name|Shutter-B
+`Name|Shutter-B`
 
-Description|An example shutter
+`Description|An example shutter`
 
-Timeout|1000
+`Timeout|1000`
 
-Command|SetOpen|SO
+`Command|SetOpen|SO`
 
-Command|GetOpen|cashed
+`Command|GetOpen|cashed`
 
-Command|Fire|not supported
+`Command|Fire|not supported`
 
-PropertyStringAction|Pin|5|false|PIN|false|9:10:11:12:13:14:15:16
+`PropertyStringAction|Pin|5|false|PIN|false|9:10:11:12:13:14:15:16`
 
-PropertyFloatAction|Power|0.0|false|PW|false|1.0:5.3
+`PropertyFloatAction|Power|0.0|false|PW|false|1.0:5.3`
 
 **The initial exchange between the adapter and the controller will look like this:**
 
-OUT:	Start;
+`OUT: Start`
 
-IN:	Name|Shutter-A
+`IN: Name|Shutter-A`
 
-OUT:	Next
+`OUT: Next`
 
-IN:	Description|An example shutter
+`IN: Description|An example shutter`
 
-OUT:	Next
+`OUT: Next`
 
-IN:	Command|SetOpen|SO
-
-*etc*
-
-OUT:	Next
-
-IN:	PropertyFloatAction|Power|0.0|false|PW|false|0.0:2.5
-
-OUT:	Next
-
-IN:	Name|Shutter-B
+`IN: Command|SetOpen|SO`
 
 *etc*
 
-OUT:	Next
+`OUT: Next`
 
-IN:	PropertyFloatAction|Power|0.0|false|PW|false|1.0:5.3
+`IN: PropertyFloatAction|Power|0.0|false|PW|false|0.0:2.5`
 
-OUT:	Next
+`OUT: Next`
 
-IN:	End
+`IN: Name|Shutter-B`
+
+*etc*
+
+`OUT: Next`
+
+`IN: PropertyFloatAction|Power|0.0|false|PW|false|1.0:5.3`
+
+`OUT: Next`
+
+`IN: End`
 
 A device description must start with the *Name* string. In addition, the name of the device must begin with the device type recognized by MM (for example, “Shutter-1” or “Stage focus” are legitimate names while “Example-Shutter” is not). The next line is optional and provides device description. It is followed by definitions of commands required by the adapter for this device (SetOpen, GetOpen, and Fire in the case of a Shutter device). The last field in each definition is the short-hand command notation that will be recognized by the controller (two expressions, ‘not supported’ and ‘cashed’, have special meaning and are explained below).
 Command definitions are followed by property definitions. Any number of properties can be defined in the following format:
 
-PropertyType | Name | defaultValue | isReadOnly | Shorthand | isPreinitialization | ListOrRange
+`PropertyType | Name | defaultValue | isReadOnly | Shorthand | isPreinitialization | ListOrRange`
 
 ## Principles of communication
 
