@@ -47,7 +47,7 @@ assumes that those instructions were followed.
     **Edit...**. Delete the x86 platform from the solution.
 8.  Additionally, we want to remove the "x86" settings from the project
     as well. Still in the Configuration Manager, find your project in the
-    list. From its Platform dropdown, select **Edit...**. Delete "Win32".
+    list. From its Platform dropdown, select **Edit...**. Delete "x86 (which may instead show up as Win32)".
 9.  Notice the tabs at the bottom of the
     **Solution Explorer**. Click **Property Manager**.
     Find your project in the **Property Manager** list. Right-click on
