@@ -334,7 +334,8 @@ release](Download_Micro-Manager_Latest_Release).
     analog controller
 -   [TriggerScopeMM](TriggerScopeMM) - TriggerScope v3 with
     Micro-Manager firmware
--   [UniversalSerialHub](universalserialhub) - A universal adapter for a user-defined hardware controller
+-   [UniversalMMHubSerial](UniversalMMHubSerial) - A universal adapter for a user-defined hardware controller (serial communication)
+-   [UniversalMMHubUsb](UniversalMMHubUsb) - A universal adapter for a user-defined hardware controller (USB communication)
 -   [USBManager](USBManager) - Micro-Manager internal USB
     communications driver
 
