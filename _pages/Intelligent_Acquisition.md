@@ -26,7 +26,7 @@ window](http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_User%27s_Guid
 as you desire and save the settings to a file. You will also need to
 provide the location of the ImageJ macro (*Analysis macro*). An example
 macro
-([IA.ijm](https://valelab.ucsf.edu/trac/micromanager/browser/scripts/IA.ijm))
+([IA.ijm]([https://valelab.ucsf.edu/trac/micromanager/browser/scripts/IA.ijm](https://valelab4.ucsf.edu/svn/micromanager2/trunk/scripts/IA.ijm)))
 is provided in the *scripts* directory of Micro-Manager. The script will
 analyze the current image and when it detects an object of interest, it
 should provide its X and Y coordinates through the ImageJ Results Window
