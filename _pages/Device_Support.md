@@ -443,6 +443,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [SpectralLMM5](SpectralLMM5) - Spectral laser line
     controller
 -   [SutterMPC](SutterMPC) - Multi manipulator controller
+-   [Thorlabs Power Meter](ThorlabsPM) - Thorlabs PM100D (and likely other) power meters
 -   [Utilities](Utilities) - Virtual devices providing extra
     functionality to Micro-Manager
 -   [VariLC](VariLC) - Tunable liquid crystal polarization
