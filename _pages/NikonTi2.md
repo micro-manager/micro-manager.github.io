@@ -62,9 +62,10 @@ Supported since the 20180220 nightly builds (1.4 and 2.0beta).
 
 ### Installation
 
-First, install Nikon's [Ti2
-Control](http://nikon.com/products/microscope-solutions/support/download/software/biological/index.htm)
-software. Make sure it can control your microscope.
+First, install Nikon's **Ti2 Control** Windows software from the [Nikon
+Healthcare's Software Developer Toolkit
+site](https://nisdk.recollective.com/microscopes) (registration required).
+Make sure it can control your microscope.
 
 If you are running Micro-Manager release 2.0.0 or a 2.0 series nightly
 build dated 2022-03-02 or earlier, or any MM 1.4 (release or nightly),

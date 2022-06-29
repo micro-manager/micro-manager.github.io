@@ -123,14 +123,14 @@ will need to first add the TIScope device.
 {% include notice icon="info" content="Do not plug the Ti microscope into a USB 3 port (usually colored blue). The scope may not report its status correctly to the PC after manual operations (observed at least with firmware 5.00, driver 4.3.2.622 or 4.4.1.714). Use a USB 2 port." %}
 
 This adapter uses the driver and API supplied by Nikon. The latest
-version of Ti Setup Tool (which includes drivers for the Ti microscope
+version of **Ti Setup Tool** (which includes drivers for the Ti microscope
 and TiControl, a control and configuration utility) can be downloaded
-from the [Nikon
-website](http://nikon.com/products/microscope-solutions/support/download/software/biological/index.htm#toc02).
+from the [Nikon Healthcare's Software Developer Toolkit
+site](https://nisdk.recollective.com/microscopes) (registration required).
 
 The required Nikon driver and interface libraries (a.k.a. the
 redistributable components of the Nikon Ti SDK) can also be installed
-using our own installer:
+using our own installer (**These are obsolete**):
 
 <table>
 <thead>
@@ -144,27 +144,6 @@ using our own installer:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>4.2.3.572</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.1</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.1</p></td>
-</tr>
-<tr class="even">
-<td><p>4.3.2.622</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.1</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.2</p></td>
-</tr>
-<tr class="odd">
-<td><p>4.3.3.628</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.1</p></td>
-<td><p>N/A</p></td>
-<td><p>2.0.2.2</p></td>
-</tr>
-<tr class="even">
 <td><p>4.4.1.672</p></td>
 <td><p><a href="/media/files/TiSDKRedist32-4.4.1.672.zip">32-bit 4.4.1.672</a><br />
 (updated July 3, 2013)</p></td>
@@ -173,7 +152,7 @@ using our own installer:
 (updated July 3, 2013)</p></td>
 <td><p>2.0.5.1</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>4.4.1.714</p></td>
 <td><p><a href="/media/files/TiSDKRedist32-4.4.1.714.zip">32-bit 4.4.1.714</a><br />
 (uploaded July 16, 2013)</p></td>
