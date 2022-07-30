@@ -279,8 +279,6 @@ release](Download_Micro-Manager_Latest_Release).
     controller
 -   [Tofra](Tofra) - XY and Z stages, filter wheel, motorized
     filter cube slider, and LED illuminator
--   [UserDefinedSerial](UserDefinedSerial) - Shutters and
-    state devices that can be controlled with simple serial commands
 -   [Vincent](Vincent) - Vincent Uniblitz controllers
 -   [WieneckeSinske](WieneckeSinske) - WSB PiezoDrive CAN XY
     stage and WSB ZPiezo Z stage
@@ -334,6 +332,8 @@ release](Download_Micro-Manager_Latest_Release).
     analog controller
 -   [TriggerScopeMM](TriggerScopeMM) - TriggerScope v3 with
     Micro-Manager firmware
+-   [UserDefinedSerial](UserDefinedSerial) - Shutters and
+    state devices that can be controlled with simple serial commands
 -   [UniversalMMHubSerial](UniversalMMHubSerial) - A universal adapter for a user-defined hardware controller (serial communication)
 -   [UniversalMMHubUsb](UniversalMMHubUsb) - A universal adapter for a user-defined hardware controller (USB communication)
 -   [USBManager](USBManager) - Micro-Manager internal USB
