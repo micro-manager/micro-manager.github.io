@@ -6,10 +6,32 @@ layout: page
 section: Extend
 ---
 
-Micro-Manager can save files in two formats, which referred to as
-"separate image files" and "Image file stack".
+Micro-Manager can save files in three formats: "separate image files", "Image file stack" and "[NDTiff](https://github.com/henrypinkard/NDTiffStorage)". These formats differ in flexibility, performance, and ability to be used with downstream applications. Since all formats are Tiffs, image data can be read by any appliation that can read TIFFs. However, not every application can read all of the format's metadata and can load image data/metadata at high speed.
 
-# Separate image files
+**Seperate image file datsets** are a directory full of many TIFF files, each of which contains a single image.
+
+**Image file stack datasets** embed multiple images into one or more multipage TIFF, each of which can be up to 4GB in size. They also implement the [OME-Tiff](https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/) specification, which enables them to be imported into many downstream applications.
+
+**NDTiff datasets** also embed multiple images into a single file. This format contains many performance optimizations compared to Image stack datasets to enable high speed reading and writing and the ability, unlike the other formats, to organize images along arbitrary axes (not just channel/slice/frame/position). NDTiff is the default format of [Pycro-Manager]([url](https://pycro-manager.readthedocs.io/en/latest/))
+
+
+The appropriate choice of format varies depending on the downstream use case. Important parameters are outlined in the table below.
+
+| Format       | Read/Write speed     | Save images along axes | Metadata | Reccomended python reader | Customize which images go in which files |
+|------------|---------|------------|--------|---------|-------|
+| **Seperate TIFFs**     | Slow    |   channel/slice/frame/position only  | Seperate text file | [Tifffile](https://pypi.org/project/tifffile/) | ❌|
+| **Image stack file**    | Medium   |   channel/slice/frame/position only  |  embedded in TIFF (with optinal seperate text file) | [Tifffile](https://pypi.org/project/tifffile/) | ✅ |
+| **NDTiff**              | 🔥Fast🔥|    arbitrary  |   embedded in TIFF     | [Pycro-Manager](https://pycro-manager.readthedocs.io/en/latest/read_data.html) | ❌ |
+
+
+
+
+# Format details
+
+More information about the features and internal structure of Seperate image files and Image file stacks is written below. A similar description for NDTiffs can be found [here](https://github.com/micro-manager/NDTiffStorage).
+
+
+## Separate image files
 
 Acquired images are saved to disk as separate TIFF files, each
 containing a single grayscale image. The file naming convention is "img"
@@ -17,14 +39,16 @@ prefix followed by frame number, channel name and slice number
 (img\_00000000t\_channel\_00z.tif). In addition, the folder will contain
 a file named "metadata.txt" that contains the metadata in JSON format.
 
-# Image file stack (in brief)
+
+## Image file stack 
 
 A TIFF file or group of TIFF files that contain multiple acquired images
 per a single file. These files conform to the
 [OME-TIFF](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff)
 specification, allowing them to be easily imported into a variety of
 analysis applications including anything that utilizes the [Bio-Formats
-library](http://loci.wisc.edu/software/bio-formats).
+library](http://loci.wisc.edu/software/bio-formats). They also store an index map of the
+byte offsets of images within a file to improve reading performance.
 
 Image file stacks are designed to be easily imported into ImageJ without
 the need for a special reader plugin. A stack file can be dragged onto
@@ -48,145 +72,15 @@ Writing to these files results in faster performance than writing to
 **Seperate Image Files**, in part because it minizes the number of
 system calls to create new files. This can be advantageous in situations
 where disk write speed is a limiting factor (i.e. writing to a server or
-collecting data at a high rate).
+collecting data at a high rate). However, these files cannot be written as fast as **NDTIFF** files, which contain several additonal optimizations.
 
-# Programming using Image file stacks
+### Internal structure
 
-## Reading Images
+#### Header
 
-Existing Micro-Manager libraries can be used to easily read these files.
-in order to do so a java project must use **MMCoreJ.jar** and
-**MMJ\_.jar** as libraries. These JARs can be found in the
-**Micro-Manager-1.4/plugins/Micro-Manager/** directory. Both file
-formats sit behind a common interface for reading and writing,
-[org/micromanager/api/TaggedImage.java](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/TaggedImageStorage.java).
-Image file stacks are implement by
-[org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/acquisition/TaggedImageStorageMultipageTiff.java).
-To create an instance of this class, capable of reading an existing
-Image file stack data set, use:
-
-```java
-TaggedImageStorageMultipageTiff stackReader = new
-  TaggedImageStorageMultipageTiff("C:\\Data\\Directory where data set is",
-  false, null, false, false);
-```
-
-Important methods for utilizing this class are:
-
-```java
-public TaggedImage getImage(int channelIndex, int
-  sliceIndex, int frameIndex, int positionIndex)
-public JSONObject getSummaryMetadata()
-public Set<String> imageKeys()
-public void close()
-```
-
-**imageKeys()** returns a
-[java.util.Set<String>](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html)
-containing the image labels for each image present in the data set. An
-image label is simply the image's channel, slice, frame, and position
-indices separated by underscores. For example, the label for the image
-of channel 1, slice 2, frame 3, position 4 would be "1\_2\_3\_4".
-
-**close()** should be called to release the connection the files when
-they are no longer needed.
-
-A **TaggedImage** simply consists of two public fields. TaggedImage.tags
-is a reference to the image metadata, stored in a
-[JSONObject](http://www.json.org/). TaggedImage.pix is a pointer to the
-image pixels, stored in a `byte[]`, `short[]`, or `int[]`
-depending on the image type.
-
-## Writing Images
-
-In addition to the `MMCoreJ.jar` and `MMJ_.jar` libraries that are
-required for reading Image File Stacks, writing to these files requires
-4 more libraries, which can also be found in
-`Micro-Manager-1.4/plugins/Micro-Manager/`: `loci-common.jar`,
-`ome-xml.jar`, `scifio.jar`, and `slf4j-api-1.7.1.jar`.
-
-Writing images into the Image File Stack format uses the same class as
-reading one of these datasets, but requires a different parameters be
-passed to the constructor. When writing an Image File Stack, you will
-need to pass a [JSONObject](http://www.json.org/) containing a minimal
-amount of summary metadata to the constructor. Code for creating this
-summary metadata with the minimal amount of tags needed for saving is
-listed below. In this example, a data set of 512x512 16 bit monochrome
-images is created with 10 time points, 8 z slices, 2 channels, and 3
-positions.
-
-```java
-summary = new JSONObject();  
-summary.put("Slices", 18;  
-summary.put("Positions", 1);  
-summary.put("Channels", 2);  
-summary.put("Frames", 10);  
-summary.put("Positions",3);  
-summary.put("SlicesFirst",true);  
-summary.put("TimeFirst",false);  
-summary.put("PixelType", "GRAY16");  
-summary.put("Width",512);  
-summary.put("Height",512);  
-summary.put("Prefix","Put the desired base filename here");  
-//these are used to create display settings  
-summary.put("ChColors", new org.json.JSONArray("[1,1]"));  
-summary.put("ChNames", new org.json.JSONArray("["DAPI","FITC"]"));  
-summary.put("ChMins", new org.json.JSONArray("[0,0]"));  
-summary.put("ChMaxes", new org.json.JSONArray("[65535,65535]"));  
-```
-
-`SlicesFirst` and `TimeFirst` tell the image storage what order to
-expect images to arrive in. If the full complement of expected images
-does not arrive by the time the image closes, but all images up to that
-point have come in the expected order, the storage will automatically
-complete the current frame with blank images (this behavior is useful
-for correctly opening aborted acquisitions in ImageJ). `SlicesFirst`
-being true means a whole set of z slice images arrive before moving on
-to another channel. `TimeFirst` being false means all positions are
-collected at a given time point before moving on to the next time point,
-rather than running successive time lapses at each position.
-
-Next, create the MultipageTiffWriter. The fourth argument is a boolean
-specifying whether separate `metadata.txt` files should also be
-written (does not affect functionality, merely an easy extra way to view
-metadata). The fifth argument is a boolean flag for whether XY positions
-should be placed in separate files or combined into a single one. In
-this case we don't create `metadata.txt`, and we create seperate files
-for XY positions:
-
-```java
-TaggedImageStorageMultipageTiff storage = new
-  TaggedImageStorageMultipageTiff("C:/Data/Directory where you want to
-  save",true,summary,false,true);  
-```
-
-Important methods for writing images are:
-```java
-public void putImage(TaggedImage taggedImage)  
-public void finished()  
-public void close()  
-```
-
-`finished()` should be called after no more image are going to be
-added. The storage becomes read only after this call
-
-`close()` should be called after images are done being both read and
-written.
-
-# Image file stack specification
-
-Micro-Manager Image file stacks conform to both the [TIFF
-Specification](http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf)
-and [OME TIFF
-Specification](http://www.openmicroscopy.org/site/support/file-formats/ome-tiff),
-contain data allowing them to be easily imported into ImageJ, store
-acquisition comments and display settings, and store an index map of the
-byte offsets of images within a file to allow for optimal reading
-performance.
-
-## Header
-
-| Bytes 0-7 (0x0-0x7) | Standard TIFF Header                                    |
+| Bytes        |  Content                          |
+|------------|--------------------------------------|
+| 0-7 (0x0-0x7) | Standard TIFF Header                                    |
 | 8-11 (0x8-0xb)      | Index map offset header (54773648 = 0x0343C790)         |
 | 12-15 (0xc-0xf)     | Index map offset                                        |
 | 16-19 (0x10-0x13)   | Display settings offset header (483765892 = 0x1CD5AE84) |
@@ -197,7 +91,7 @@ performance.
 | 36-39 (0x24-0x27)   | Summary metadata length                                 |
 | 40- (0x28-)         | summary metadata (UTF-8 JSON)                           |
 
-## Image File Directories
+#### Image File Directories
 
 The first IFD starts immediately after the summary metadata. Each IFD
 will contain the same set of TIFF tags, except for the first one in each
@@ -247,47 +141,35 @@ ImageJ file opening information
 **MicroManagerMetadata** (51123 = 0xc7b3)
 
 Immediately after these tags are written:
-
--4 bytes containg the offset of the next IFD (per the TIFF
+- 4 bytes containg the offset of the next IFD (per the TIFF
 specification)
-
--The pixel data
-
--In RGB files only, 6 bytes containing the values of the
+- The pixel data
+- In RGB files only, 6 bytes containing the values of the
 **BitsPerSample** tag Pixel values
-
--16 bytes containing the values of the **XResolution** and
+- 16 bytes containing the values of the **XResolution** and
 **YResolution** tags
-
--The value of the **MicroManagerMetadata** tag: image metadata (UTF-8
+- The value of the **MicroManagerMetadata** tag: image metadata (UTF-8
 JSON)
 
-## End of file
 
-After the last IFD, the following constructs are written:
+#### Index map
 
-### Index map
-
-A listing of all the images contained in the file and their byte
-offsets. This allows a specific image to be quickly accessed without
-having to parse the entire file and read in image metadata. It consists
+As the files are being written, an "Index map" describing where each image is located in the file is written as well. This allows a specific image to be quickly accessed without having to parse the entire file and read in image metadata. It consists
 of the following:
 
--A 4 byte header (3453623 = 0x0034b2b7)
-
--4 bytes containing the number of entries in the index map
-
--20 bytes for each entry, with 4 bytes each allocated to the image’s
+- A 4 byte header (3453623 = 0x0034b2b7)
+- 4 bytes containing the number of entries in the index map
+- 20 bytes for each entry, with 4 bytes each allocated to the image’s
 channel index, slice index, frame index, position index, and byte offset
 of the image’s IFD within the file
 
-If for some reason a file fails to write out its index map (i.e. the
-application crashes during file writing), opening this file will present
-a dialog asking if you would like to "fix" the data set. This fixing
-process consists of reading through all the IFDs present in the file to
-reconstruct the index map and then writing it to the end of the file.
 
-### ImageJ Metadata
+
+#### End of file
+
+After the last IFD, the following constructs are written:
+
+#### ImageJ Metadata
 
 A subset of the metadata used by the ImageJ TIFF writer
 [(ij.io.TiffEncoder.java)](http://imagej.nih.gov/ij/source/ij/io/TextEncoder.java),
@@ -295,7 +177,7 @@ which allows contrast settings and acquisition comments to propagate
 into ImageJ. The position and size of this metadata is specified by the
 **IJMetadataCounts** and **IJMetadata** tags in the first IFD.
 
-### OME XML Metadata
+#### OME XML Metadata
 
 A string containing the OME XML metadata for this data set. This String
 is referenced by the first of the two **ImageDescription** tags in the
@@ -305,30 +187,17 @@ Since this String must be identical for all files in a data set, it is
 not written for any file until the entire data set is closed at the
 conclusion of an acquisition.
 
-### ImageJ Image Description String
+#### ImageJ Image Description String
 
 The ImageJ image description String that allows these files to opened
 correctly as hyperstacks in ImageJ. This String is referenced by the
 second of the two **ImageDescription** tags in the first IFD of the
 file.
 
-### Image display settings
-
-Image display settings (channel contrast and colors), which are
-automatically rewritten whenever these are changed in an open data set.
-The first 4 bytes of this block contain the **Display Settings Header**
-(347834724 = 0x14BB8964), and the next 4 contain the number of
-subsequent bytes reserved for display settings. A UTF-8 JSON string
-containing display settings is written.
-
-### Acquisition and Image comments
-
-A String containing acquisition and Image comments. The first 4 bytes of
-this block contain the **Comments Header** (84720485 = 0x050CBB65), and
-the next 4 contain the length of the string to follow. The acquisition
-comments are written as a UTF-8 JSON string. This string is rewritten
-whenever acquisition or image comments are changed.
 
 --[Henry Pinkard](/users/Henry_Pinkard) 7:35, 20th March 2013
+(PDT)
+
+-- Updated [Henry Pinkard](/users/Henry_Pinkard) 11:05, 23rd August 2022
 (PDT)
 
