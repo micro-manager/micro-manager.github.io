@@ -6,11 +6,17 @@ layout: page
 section: Extend
 ---
 
-Micro-Manager can save files in three formats: "separate image files", "Image file stack" and "[NDTiff](https://github.com/henrypinkard/NDTiffStorage)". These formats differ in flexibility, performance, and ability to be used with downstream applications. Since all formats are Tiffs, image data can be read by any appliation that can read TIFFs. However, not every application can read all of the format's metadata and can load image data/metadata at high speed.
+Micro-Manager can save files in three formats: **separate image files**, **Image file stack** (OME-Tiffs) and **[NDTiff](https://github.com/henrypinkard/NDTiffStorage)**. These formats differ in flexibility, performance, and ability to be used with downstream applications. Since all formats are Tiffs, image data can be read by any appliation that can read TIFFs. However, not every application can read all of the format's metadata and can load image data/metadata at high speed. Below is a comparison of the different formats.
+
+# TL;DR
+
+Image file stacks will likely have the most widespread downstream compatibility due to implementation of the [OME-Tiff](https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/) standard which can be opened by many different programs. However, for high speed or large (> 10GB ish) datasets, NDTiff is superior. It is also likely the better choice if you are writing your own analysis code, especially if it is in Python. If you are performing a customized or non-standard experiment NDTiff is the most useful due to its flexible model for organizing data. For this reason, NDTiff is the default format of [Pycro-Manager](https://pycro-manager.readthedocs.io/en/latest/). Only use seperate image files if you absolutely must save one image per file.
+
+# Details
 
 **Seperate image file datsets** are a directory full of many TIFF files, each of which contains a single image.
 
-**Image file stack datasets** embed multiple images into one or more multipage TIFF, each of which can be up to 4GB in size. They also implement the [OME-Tiff](https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/) specification, which enables them to be imported into many downstream applications.
+**Image file stack datasets** embed multiple images into one or more multipage TIFF, each of which can be up to 4GB in size. They also implement the OME-Tiff specification, which enables them to be imported into many downstream applications.
 
 **NDTiff datasets** also embed multiple images into a single file. This format contains many performance optimizations compared to Image stack datasets to enable high speed reading and writing and the ability, unlike the other formats, to organize images along arbitrary axes (not just channel/slice/frame/position). NDTiff is the default format of [Pycro-Manager]([url](https://pycro-manager.readthedocs.io/en/latest/))
 
@@ -26,7 +32,6 @@ The appropriate choice of format varies depending on the downstream use case. Im
 
 
 
-# Format details
 
 More information about the features and internal structure of Seperate image files and Image file stacks is written below. A similar description for NDTiffs can be found [here](https://github.com/micro-manager/NDTiffStorage).
 
