@@ -282,10 +282,9 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Vincent](Vincent) - Vincent Uniblitz controllers
 -   [WieneckeSinske](WieneckeSinske) - WSB PiezoDrive CAN XY
     stage and WSB ZPiezo Z stage
--   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
-    Shutter
--   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
-    X-Cite 120PC and *exacte* adapter
+-   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+-   [XCite120PC\_Exacte](XCite120PC_Exacte) - Excelitas (Lumen Dynamics)
+    X-Cite 120PC, exacte, and XYLIS illuminators
 -   [XCiteLed](XCiteLed) - LED controller
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO / XT600 series and NOVEM / XT900 series
 -   [Zaber](Zaber) - Zaber linear and XY stages, filter
@@ -391,10 +390,9 @@ release](Download_Micro-Manager_Latest_Release).
 -   [USB\_Viper\_QPL](USB_Viper_QPL) - Excelitas/Qioptiq
     iFLEX-Viper Laser Engine
 -   [Versalase](Versalase) - Vortran Versalase laser driver
--   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
-    Shutter
--   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
-    X-Cite 120PC and *exacte* adapter
+-   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+-   [XCite120PC\_Exacte](XCite120PC_Exacte) - Excelitas (Lumen Dynamics)
+    X-Cite 120PC, exacte, and XYLIS illuminators
 -   [XCiteLed](XCiteLed) - LED controller
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO / XT600 series and NOVEM / XT900 series
 -   [YodnLighting](YodnLighting) - YODN Lighting lamp device
