@@ -51,12 +51,12 @@ is a transition guide to help people who are familiar with the 1.4 API
 and need to port their code to the 2.0 API. It breaks down where old API
 methods have gone and how to replace deprecated methods.
 
-The [Javadocs](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/)
+The [Javadocs](/apidoc/mmstudio/latest/)
 will likely also prove useful. All packages whose names do \_not\_
 include "internal" are part of the API in 2.0. In particular, the [root
-API](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/),
-[data](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/org/micromanager/data/package-summary.html),
-and [display](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta2/mmstudio/)
+API](/apidoc/mmstudio/latest/),
+[data](/apidoc/mmstudio/latest/org/micromanager/data/package-summary.html),
+and [display](/apidoc/mmstudio/latest/)
 packages should prove useful.
 
 ## API Events

@@ -310,7 +310,7 @@ and thus the "upload bitmap mask" example script detailed below would
 work on any SLM device. The example script makes use of `setSLMImage()`
 and `displaySLMImage()`, but there are several more SLM functions which
 one can find by reading through the [core
-documentation](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)
+documentation](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)
 and searching for the word "SLM" in the javadoc page.
 
 ### Upload bitmap mask

@@ -60,8 +60,8 @@ C:/Program Files/Micro-Manager-1.4
 ```
 
 Now you have
-[gui](https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html),
-[mmc](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html),
+[gui](/apidoc/mmstudio/1.4/org/micromanager/api/ScriptInterface.html),
+[mmc](/apidoc/mmcorej/latest/mmcorej/CMMCore.html),
 and
 [acq](http://micro-manager.org/content/doc/mmstudio/org/micromanager/api/AcquisitionEngine.html)
 objects that you can control from Matlab, very similar to how you would
