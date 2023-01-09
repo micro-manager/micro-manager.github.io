@@ -171,14 +171,6 @@ and then see the loaded devices with:
 ```python
 mmc.getLoadedDevices()
 ```
-**Individual Devices**
-If you want more fine grained control over device loading then you can manually do so:
-
-```
-mmc.loadDevice('Camera', 'DemoCamera', 'DCam')
-mmc.initializeAllDevices()
-mmc.setCameraDevice('Camera')
-```
 
 ### Property discovery
 
