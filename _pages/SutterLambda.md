@@ -45,7 +45,7 @@ layout: page
 Sutter devices use a straight through (i.e., not null modem) DB9 serial
 cable. The default baud rates are 9600 for serial ports and 128000 for
 USB ports (which use a build-in USB-serial converter, drivers can be
-found [here](http://www.sutter.com/SOFTWARE/imaging.html))
+found [here](https://www.sutter.com/SOFTWARE/software_index.html)
 
 ### Wheel speed
 
