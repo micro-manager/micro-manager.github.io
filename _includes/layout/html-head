@@ -9,6 +9,16 @@
 		<link rel="stylesheet" href="/assets/css/dock.css"/>
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMY108DBBS"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-CMY108DBBS');
+                </script>
+
 {%- comment -%}
 # vi:syntax=liquid
 {%- endcomment -%}
