@@ -7,318 +7,715 @@ layout: page
 
 ## SigmaKoki device adapter
 
-| <div style="font-size: 20px"> **Summary:** | <div style="font-size: 16px"> Interfaces with Sigma Koki controllers and associated hardware|
-| --------------------------------------- | ------------------------------------- |
-| <div style="font-size: 20px">**Author:**|<div style="font-size: 16px"> Sigma Koki |
-|<div style="font-size: 20px">**License:**|<div style="font-size: 16px"> BSD License  |
-|<div style="font-size: 20px">**Platform**|<div style="font-size: 16px">Windows  |
-|<div style="font-size: 20px">**Devices**|<div style="font-size: 16px"> XYStage, ZStage, Shutter and Camera |
+<table>
+  <tr>
+    <td style="font-size: 20px"><strong>Summary</strong></td>
+    <td style="font-size: 16px"> Interfaces with Sigma Koki controllers and associated hardware </td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px"><strong>Author</strong></td>
+    <td style="font-size: 16px"> Sigma Koki</td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px"><strong>License</strong></td>
+    <td style="font-size: 16px"> BSD License</td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px"><strong>Platform</strong></td>
+    <td style="font-size: 16px"> Windows</td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px"><strong>Devices</strong></td>
+    <td style="font-size: 16px"> XYStage, ZStage, Shutter and Camera</td>
+  </tr>
+</table>
 
 ## XYStage
 
 - **Device Name**
 
-  - XYStage | XYStage (Advanced System)
+  <ul class="b">
+      <li><strong>XYStage/XY steages (Advanced System)</strong></li>
+  </ul>
 
 - **Supported Models**
 
-  - **SHOT-Series**
-    - SHOT-302GS, SHOT-304GS, SHOT-702/702H
-  - **HIT-Series**
-    - SHRC-203, HSC-103
-  - **FC-Series**
-    - **Current model**: FC-111/114, FC-411/414, FC-511/514, FC-611, FC-911
-    - **Old model**: FC/SC-101G, FC-401G, FC-501G
-<br>
+  <ul class="b">
+      <li><strong>Shot-Series</strong></li>
+       <ul class="c">
+        <li>SHOT-302GS, SHOT-304GS, SHOT-702/702H</li>
+       </ul>
+      <li><strong>Hit-Series</strong></li>
+       <ul class="c">
+        <li>SHRC-203, HSC-103</li>
+       </ul>
+      <li><strong>FC-Series</strong></li>
+       <ul class="c">
+        <li>Current model: FC-111/114, FC-411/414, FC-511/514, FC-611, FC-911</li>
+        <li>Old model: FC/SC-101G, FC-401G, FC-501G</li>
+       </ul>
+  </ul>
 
 - **Communication Settings (XY Stages)**
 
-|Devices|SHOT-702/702H|SHOT-302/304GS|FC-SERIES(Current) <br> SHRC-203|FC-SERIES (Old)|HSC-103|
-|:------|:-----:|:------:|:------:|:-----:|:------:|
-|BAUDRATE   |38400   |4800 ・9600 ・19200 ・38400   |4800 ・9600 ・19200 ・38400 |9600|38400 |
-|DATABITS| 8 Bits|
-|PARITY   |None  |
-|STOPBITS   | 1  |
-|FLOW CONTROL   |RTS/CTS ・NONE|RTS/CTS|>| NONE  |RTS/CTS|
-|DELIMITER   |CRLF   |
-
-- >**Communication notes**
-  - Select correctly the COM port (PC side) to which the device is connected.
-  - Be sure to select the Baud Rate setting according to the controller memory switch setting.
-  - Be sure to set the controller to Host mode (a state that accepts commands from the PC).
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Devices</th>
+<th style="text-align:center">SHOT-702/702H</th>
+<th style="text-align:center">SHOT-302/304GS</th>
+<th style="text-align:center">FC-SERIES(Current) <br> SHRC-203</th>
+<th style="text-align:center">FC-SERIES (Old)</th>
+<th style="text-align:center">HSC-103</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BAUDRATE</td>
+<td style="text-align:center">38400</td>
+<td style="text-align:center">4800 ・9600 ・19200 ・38400</td>
+<td style="text-align:center">4800 ・9600 ・19200 ・38400</td>
+<td style="text-align:center">9600</td>
+<td style="text-align:center">38400</td>
+</tr>
+<tr>
+<td style="text-align:left">DATABITS</td>
+<td colspan="5" style="text-align:center">8 Bits</td>
+</tr>
+<tr>
+<td style="text-align:left">PARITY</td>
+<td colspan="5" style="text-align:center">None</td>
+</tr>
+<tr>
+<td style="text-align:left">STOPBITS</td>
+<td colspan="5" style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:left">FLOW CONTROL</td>
+<td style="text-align:center">RTS/CTS ・NONE</td>
+<td colspan="2" style="text-align:center">RTS/CTS</td>
+<td style="text-align:center">NONE</td>
+<td style="text-align:center">RTS/CTS</td>
+</tr>
+<tr>
+<td style="text-align:left">DELIMITER</td>
+<td colspan="5" style="text-align:center">CRLF</td>
+</tr>
+</tbody>
+</table>
 <br>
+
+- **Communication notes**
+    <ul class="b">
+      <li>Select correctly the COM port (PC side) to which the device is connected.</li>
+      <li>Be sure to select the Baud Rate setting according to the controller memory switch setting.</li>
+      <li>Be sure to set the controller to Host mode (a state that accepts commands from the PC).</li>
+    </ul>
 
 - **Preset Parameters (XY Stages)**
 
-|Devices|SHOT-302GS/702/702H|SHOT-304GS|FC-SERIES(Current)|FC-SERIES (Old)|HSC-103|SHRC-203|
-|:------|:-----:|:------:|:------:|:-----:|:------:|:------:|
-|CHANNELS  |1, 2 |1, 2, 3, 4|>|1, 2  |>|1, 2, 3 |
-|CONTROLLER INFORMATION|Controller Information (Division, Resolution, Pulse rate etc. )  |
-|DIVISION  |>|1 , 2 , 3, 4, 5, 6, 8, 10, 12, 20 , 25, 30, 40 , 50, 60, 80 , 100, 120, 125, 200 , 250|NONE|NONE|40|1, 2, 3, 4, 5, 6, 8, 10, 12, 20, 25, 30, 40, 50, 60, 80, 100, 120, 125, 200, 250, 300, 400, 600, 800, 1000, 2000, 4000, 8000
-|FULL STEP   |1,2,4,20 |
-|STEP SIZE   |> |Variable (Up to 0.08µm)| NONE | NONE |0.01| Variable (Up to 0.00025µm)
-|SPEED   |10~5000  |
-<br>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Devices</th>
+<th style="text-align:center">SHOT-302GS/702/702H</th>
+<th style="text-align:center">SHOT-304GS</th>
+<th style="text-align:center">FC-SERIES(Current)</th>
+<th style="text-align:center">FC-SERIES (Old)</th>
+<th style="text-align:center">HSC-103</th>
+<th style="text-align:center">SHRC-203</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CHANNELS</td>
+<td style="text-align:center">1, 2</td>
+<td colspan= 2 style="text-align:center">1, 2, 3, 4</td>
+<td colspan= 2 style="text-align:center">1, 2</td>
+<td style="text-align:center">1, 2, 3</td>
+</tr>
+<tr>
+<td style="text-align:left">CONTROLLER INFORMATION</td>
+<td colspan= 6 style="text-align:center">Controller Information (Division, Resolution, Pulse rate etc. )</td>
+</tr>
+<tr>
+<td style="text-align:left">DIVISION</td>
+<td colspan= 2 style="text-align:center">1 , 2 , 3, 4, 5, 6, 8, 10, 12, 20 , 25, 30, 40 , 50, 60, 80 , 100, 120, 125, 200 , 250</td>
+<td colspan= 2 style="text-align:center">NONE</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">1, 2, 3, 4, 5, 6, 8, 10, 12, 20, 25, 30, 40, 50, 60, 80, 100, 120, 125, 200, 250, 300, 400, 600, 800, 1000, 2000, 4000, 8000</td>
+</tr>
+<tr>
+<td style="text-align:left">FULL STEP</td>
+<td colspan= 6 style="text-align:center">1,2,4,20</td>
+</tr>
+<tr>
+<td style="text-align:left">STEP SIZE</td>
+<td colspan= 2 style="text-align:center">Variable (Up to 0.08µm)</td>
+<td style="text-align:center">NONE</td>
+<td style="text-align:center">NONE</td>
+<td style="text-align:center">0.01</td>
+<td style="text-align:center">Variable (Up to 0.00025µm)</td>
+</tr>
+<tr>
+<td style="text-align:left">SPEED</td>
+<td colspan= 6 style="text-align:center">10~5000</td>
+</tr>
+</tbody>
+</table>
 
 - **Channel X,Y**
-  - Initial value (X-axis: 1, Y-axis: 2)
-  - Set the connection channel for the XY axes.
+    <ul class="b">
+      <li>XInitial value (X-axis: 1, Y-axis: 2)</li>
+      <li>Set the connection channel for the XY axes.</li>
+    </ul>
 - **Speed micron**
-  - Initial value (3000 µm / sec)
-  - Set the speed for both X, Y axes.
+    <ul class="b">
+      <li>Initial value (3000 µm / sec)</li>
+      <li>Set the speed for both X, Y axes.</li>
+    </ul>
 - **Divisions**
-  - Default: Div:2
-  - Set the number of divisions for full step movement.
+    <ul class="b">
+      <li>Default: Div:2</li>
+      <li>Set the number of divisions for full step movement.</li>
+    </ul>
 - **Full Step (micron)**
-  - Default: 1
-  - Set the full step movement amount (µm) (see catalog value).
+    <ul class="b">
+      <li>Default: 1</li>
+      <li>Set the full step movement amount (µm) (see catalog value).</li>
+    </ul>
 - **Controller Information**
-  - ***Description***
-    - Display the vendor's device adapter name.
-  - ***Name***
-    - Display device name.
-  - ***StepSize X,Y***
-    - Display the amount of movement (resolution) per pulse.
-    - :warning: ***HSC-103*** controller is **0.010µm** fixed.
-  - ***XY Division Information***
-    - Display the division number setting method for each controller model.
-
+    <ul class="b">
+      <li><strong>Description</strong></li>
+       <ul class="c">
+          <li>Display the vendor's device adapter name.</li>
+       </ul>
+      <li><strong>Name</strong></li>
+       <ul class="c">
+          <li>Display device name.</li>
+       </ul>
+      <li><strong>StepSize X,Y</strong></li>
+       <ul class="c">
+          <li>Display the amount of movement (resolution) per pulse.</li>
+          <li>⚠️ <strong>HSC-103</strong> controller is <strong>0.010µm</strong> fixed.</li>
+       </ul>
+      <li><strong>XY Division Information</strong></li>
+       <ul class="c">
+          <li>Display the division number setting method for each controller model.</li>
+       </ul>
+    </ul>
 - **Others**
-  - :warning: SHRC-203 and SHOT-Series do not work when the number of divisions exceeds the [MIM](https://jp.optosigma.com/en_jp/category__mc__mc01) of the stage.
-  - :warning:When using HSC-103, set the "PLSRATE" of the controller memory switch correctly.
-    - Calculation method: ***PLSRATE = (FullStep / Division) x 1000 / 0.1***
-  - :warning: FC-Series is a feedback (Close-Loop) controller stage.
+  <ul class="b">
+      <li>⚠️ SHRC-203 and SHOT-Series do not work when the number of divisions exceeds the <a href="https://jp.optosigma.com/en_jp/category__mc__mc01"> [MIM]</a> of the stage.</li>
+      <li>⚠️ FC-Series is a feedback (Close-Loop) controller stage.</li>
+      <li>⚠️When using HSC-103, set the "PLSRATE" of the controller memory switch correctly.</li>
+    </ul>
+
+ > **Pulse Rate calculation method**:
+<span class="math block">$$PLSRATE = {FullStep \over Division} * 1000 / 0.1$$</span>
 
 ## ZStage
 
 - **Device Name**
-  - ZStage | XYStage (Focusing actuator)
 
-- **Supported models**
+  <ul class="b">
+      <li><strong>ZStage / ZStage (Focusing actuator)</strong></li>
+  </ul>
 
-  - **SHOT-Series**
-    - SHOT-302GS, SHOT-304GS, SHOT-702/702H, FINE-01γ/503, TAF-C01
-  - **HIT-Series**
-    - SHRC-203, HSC-103
-<br>
+- **Supported Models**
+
+  <ul class="b">
+      <li><strong>SHOT-Series</strong></li>
+       <ul class="c">
+        <li>SHOT-302GS, SHOT-304GS, SHOT-702/702H, FINE-01γ/503, TAF-C01</li>
+       </ul>
+      <li><strong>HIT-Series</strong></li>
+       <ul class="c">
+        <li>SHRC-203, HSC-103</li>
+       </ul>
+  </ul>
 
 - **Communication settings (Z Stages)**
 
-|Devices|TAF C01 |  GIP-101 | FINE 01 γ /503 | SHRC-203 |
-|:------|:-----:|:------:|:------:|:-----:|
-|BAUDRATE   |38400 | 4800 ・9600 ・19200 ・38400 |4800 ・9600 ・19200 ・38400 |4800 ・9600 ・19200 ・38400  |
-|DATABITS| 8 Bits  |
-|PARITY   |None  |
-|STOPBITS   | 1  |
-|FLOW CONTROL   |>|NONE|RTS/CTS| NONE・RTS/CTS|
-|DELIMITER   |CRLF   |
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Devices</th>
+<th style="text-align:center">TAF C01</th>
+<th style="text-align:center">GIP-101</th>
+<th style="text-align:center">FINE 01 γ /503</th>
+<th style="text-align:center">SHRC-203</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BAUDRATE</td>
+<td style="text-align:center">38400</td>
+<td colspan= 3 style="text-align:center">4800 ・9600 ・19200 ・38400</td>
+</tr>
+<tr>
+<td style="text-align:left">DATABITS</td>
+<td colspan= 4 style="text-align:center">8 Bits</td>
+</tr>
+<tr>
+<td style="text-align:left">PARITY</td>
+<td colspan= 4 style="text-align:center">None</td>
+</tr>
+<tr>
+<td style="text-align:left">STOPBITS</td>
+<td colspan= 4 style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:left">FLOW CONTROL</td>
+<td colspan= 2 style="text-align:center">NONE</td>
+<td style="text-align:center">RTS/CTS</td>
+<td style="text-align:center">NONE・RTS/CTS</td>
+</tr>
+<tr>
+<td style="text-align:left">DELIMITER</td>
+<td colspan= 4 style="text-align:center">CRLF</td>
+</tr>
+</tbody>
+</table>
 <br>
 
-- >**Communication notes**
-  - For the settings of SHOT-302GS / 702 / 304GS and HSC-103, refer to the communication settings of XYStage.
-  - Select correctly the COM port (PC side) to which the device is connected.
-  - Be sure to select the Baud Rate setting according to the controller memory switch setting.
-  - Be sure to set the controller to Host mode (a state that accepts commands from the PC).
-<br>
+- **Communication notes**
+    <ul class="b">
+      <li>For the settings of SHOT-302GS / 702 / 304GS and HSC-103, refer to the communication settings of XYStage.</li>
+      <li>Select correctly the COM port (PC side) to which the device is connected.</li>
+      <li>Be sure to select the Baud Rate setting according to the controller memory switch setting.</li>
+      <li>Be sure to set the controller to Host mode (a state that accepts commands from the PC).</li>
+    </ul>
+
 - **Preset Parameters (Z Stages)**
 
-|Devices| TAF-C01|SHOT-302GS/702/702H |SHOT-304GS |HSC-103|FINE 503|SHRC-203|FINE 01 γ |
-|:------|:-----:|:------:|:------:|:-----:|:------:|:------:|:------:|
-|CHANNELS |1 |1, 2 |1, 2, 3, 4 |>|1, 2, 3 ||1|
-|CONTROLLER INFORMATION|・Controller Information (Division, Resolution, Pulse rat etc.  |
-|DIVISION  |>|1 , 2 , 3, 4, 5, 6, 8, 10, 12, 20 , 25, 30, 40 , 50, 60, 80 , 100, 120, 125, 200 , 250||40|NONE|1, 2, 3, 4, 5, 6, 8, 10, 12, 20, 25, 30, 40, 50, 60, 80, 100, 120, 125, 200, 250, 300, 400, 600, 800, 1000, 2000, 4000, 8000|NONE|
-|FULL STEP   | 0.2, 1, 2, 4, 20 |
-|STEP SIZE   |> |Variable (Up to 0.08µm)| | 0.01|NONE| Variable (Up to 0.00025µm)|NONE
-|SPEED   |10~5000  |
-<br>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Devices</th>
+<th style="text-align:center">TAF-C01</th>
+<th style="text-align:center">SHOT-302GS/702/702H</th>
+<th style="text-align:center">SHOT-304GS</th>
+<th style="text-align:center">HSC-103</th>
+<th style="text-align:center">FINE-503</th>
+<th style="text-align:center">SHRC-203</th>
+<th style="text-align:center">FINE-01 γ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CHANNELS</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1, 2</td>
+<td style="text-align:center">1, 2, 3, 4</td>
+<td colspan = 3 style="text-align:center">1, 2, 3</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:left">CONTROLLER INFORMATION</td>
+<td colspan= 7 style="text-align:center">・Controller Information (Division, Resolution, Pulse rat etc.</td>
+</tr>
+<tr>
+<td style="text-align:left">DIVISION</td>
+<td colspan= 3 style="text-align:center">1 , 2 , 3, 4, 5, 6, 8, 10, 12, 20 , 25, 30, 40 , 50, 60, 80 , 100, 120, 125, 200 , 250</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">NONE</td>
+<td style="text-align:center">1, 2, 3, 4, 5, 6, 8, 10, 12, 20, 25, 30, 40, 50, 60, 80, 100, 120, 125, 200, 250, 300, 400, 600, 800, 1000, 2000, 4000, 8000</td>
+<td style="text-align:center">NONE</td>
+</tr>
+<tr>
+<td style="text-align:left">FULL STEP</td>
+<td colspan= 7 style="text-align:center">0.2, 1, 2, 4, 20</td>
+</tr>
+<tr>
+<td style="text-align:left">STEP SIZE</td>
+<td colspan= 3 style="text-align:center">Variable (Up to 0.08µm)</td>
+<td style="text-align:center">0.01</td>
+<td style="text-align:center">NONE</td>
+<td style="text-align:center">Variable (Up to 0.00025µm)</td>
+<td style="text-align:center">NONE</td>
+</tr>
+<tr>
+<td style="text-align:left">SPEED</td>
+<td colspan= 7 style="text-align:center">10~5000</td>
+</tr>
+</tbody>
+</table>
+<br />
 
 - **Channels**
-  - Initial value: 1
-  - Set connection channel.
+    <ul class="b">
+      <li>Initial value: 1</li>
+      <li>Set connection channel.</li>
+    </ul>
 - **Control Mode**
-  - Initial value: OPEN
-  - :warning: Switch the control method. When using the automatic Z stage with built-in glass scale on SHOT-302GS/304GS, switch the control method of the connection channel to "CLOSE" with the memory switch on the main unit. Please note that if the preset setting and the memory switch setting on the main unit side are not the same, you will not be able to use it correctly. Please use SHOT-702 only with "OPEN" on the Preset.
+    <ul class="b">
+      <li>Initial value: OPEN</li>
+      <li>⚠️ Switch the control method. When using the automatic Z stage with built-in glass scale on SHOT-302GS/304GS, switch the control method of the connection channel to "CLOSE" with the memory switch on the main unit. Please note that if the preset setting and the memory switch setting on the main unit side are not the same, you will not be able to use it correctly. Please use SHOT-702 only with "OPEN" on the Preset.</li>
+    </ul>
 - **Speed ​​(micron/sec)**
-  - Initial value (3000 µm / sec)
-  - Speed setting.
+    <ul class="b">
+      <li>Initial value (3000 µm / sec)</li>
+      <li>Speed setting.</li>
+    </ul>
 - **Divisions**
-  - Initial value (Default): 2
-  - Set the number of divisions for full step movement (µm).
+    <ul class="b">
+      <li>Initial value (Default): 2</li>
+      <li>Set the number of divisions for full step movement (µm).</li>
+    </ul>
 - **Full Step (micron)**
-  - Initial value: 1
-  - Set the full step movement amount (µm) (see catalog value).
+    <ul class="b">
+      <li>Initial value: 1</li>
+      <li>Set the full step movement amount (µm) (see catalog value).</li>
+    </ul>
 - **Controller Information**
-  - ***Description***
-    - Display the vendor's device adapter name.
-  - ***Name***
-    - Display device name.
-  - ***StepSize Z***
-    - Display the amount of movement (resolution) per pulse.
-    - :warning: ***HSC-103*** controller is **0.010µm** fixed.
-  - ***XY Division Information***
-    - Display the division number setting method for each controller model.
+    <ul class="b">
+      <li><strong>Description</strong></li>
+       <ul class="c">
+          <li>Display the vendor's device adapter name.</li>
+       </ul>
+      <li><strong>Name</strong></li>
+       <ul class="c">
+          <li>Display device name.</li>
+       </ul>
+      <li><strong>StepSize X,Y</strong></li>
+       <ul class="c">
+          <li>Display the amount of movement (resolution) per pulse.</li>
+          <li>⚠️ <strong>HSC-103</strong> controller is <strong>0.010µm</strong> fixed.</li>
+       </ul>
+      <li><strong>XY Division Information</strong></li>
+       <ul class="c">
+          <li>Display the division number setting method for each controller model.</li>
+       </ul>
+    </ul>
 - **Others**
-  - :warning: SHRC-203 and SHOT-Series do not work when the number of divisions exceeds the [MIM](https://jp.optosigma.com/en_jp/category__mc__mc01) of the stage.
-  - :warning: When using HSC-103, set the "PLSRATE" of the controller memory switch correctly.
-    - Calculation method: ***PLSRATE = (FullStep / Division) x 1000 / 0.1***
-  - :warning: FC-Series is a feedback (Close-Loop) controller stage.
+  <ul class="b">
+      <li>⚠️ SHRC-203 and SHOT-Series do not work when the number of divisions exceeds the <a href="https://jp.optosigma.com/en_jp/category__mc__mc01"> [MIM]</a> of the stage.</li>
+      <li>⚠️ FC-Series is a feedback (Close-Loop) controller stage.</li>
+      <li>⚠️When using HSC-103, set the "PLSRATE" of the controller memory switch correctly.</li>
+  </ul>
 
-<div style="page-break-after: always"
-></div>
+ > **Pulse Rate calculation method**:
+<span class="math block">$$PLSRATE = {FullStep \over Division} * 1000 / 0.1$$</span>
 
 ## Shutter
 
 - **Device Name**
-
-  - C4B 1~4 | SSH-C4B CH1~4
-  - C2B 1~2 | SSH-C2B CH1~2
+  <ul class="b">
+      <li><strong>C4B 1~4 / SSH-C4B CH1~4</strong></li>
+      <li><strong>C2B 1~2 / SSH-C2B CH1~2</strong></li>
+  </ul>
 
 - **Supported models**
+  <ul class="b">
+      <li>SSH-C2B, SSH-C4B.</li>
+  </ul>
 
-  - SSH-C2B, SSH-C4B.
-<br>
 - **Communication settings (Shutter)**
 
-|DEVICE|SSH-C2B|SSH-C4B|
-|:-----|:-----:|:-----:|
-|BAUD RATE|9600, 19200, 38400|9600|
-|DATABITS|8||
-|PARITY|NONE||
-|STOPBITS|1||
-|FLOW CONTROL|STS/CTS||
-|DELIMITER|CRLF||
+<table>
+<thead>
+<tr>
+<th style="text-align:left">DEVICE</th>
+<th style="text-align:center">SSH-C2B</th>
+<th style="text-align:center">SSH-C4B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BAUD RATE</td>
+<td style="text-align:center">9600, 19200, 38400</td>
+<td style="text-align:center">9600</td>
+</tr>
+<tr>
+<td style="text-align:left">DATABITS</td>
+<td colspan= 2 style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:left">PARITY</td>
+<td colspan= 2 style="text-align:center">NONE</td>
+</tr>
+<tr>
+<td style="text-align:left">STOPBITS</td>
+<td colspan= 2 style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:left">FLOW CONTROL</td>
+<td colspan= 2 style="text-align:center">STS/CTS</td>
+</tr>
+<tr>
+<td style="text-align:left">DELIMITER</td>
+<td colspan= 2 style="text-align:center">CRLF</td>
+</tr>
+</tbody>
+</table>
 <br>
 
-- >**Communication Notes**
-  - Select correctly the COM port (PC side) to which the device is connected.
-  - Be sure to select the BaudRate setting according to the controller memory switch setting.
-<br>
+- **Communication Notes**
+    <ul class="b">
+      <li>Select correctly the COM port (PC side) to which the device is connected.</li>
+      <li>Be sure to select the BaudRate setting according to the controller memory switch setting.</li>
+    </ul>
 
 - **Preset Parameters (Shutter)**
 
-|DEVICE|SSH-C2B|SSH-C4B|
-|:-----|:-----:|:-----:|
-|STATE|"1" ➡Open, "0" ➡Close|
-|SHUTTER MODEL|SSH-R, SSH-S, SHPS, SSH-25RA, USER DEFINE1~3, BSH2| SSH-R, SSH-S, BSH|
-<br>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">DEVICE</th>
+<th style="text-align:center">SSH-C2B</th>
+<th style="text-align:center">SSH-C4B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">STATE</td>
+<td colspan= 2 style="text-align:center">&quot;1&quot; ➡Open, &quot;0&quot; ➡Close</td>
+</tr>
+<tr>
+<td style="text-align:left">SHUTTER MODEL</td>
+<td style="text-align:center">SSH-R, SSH-S, SHPS, SSH-25RA <br> USER DEFINE1~3, BSH2</td>
+<td style="text-align:center">SSH-R, SSH-S, BSH</td>
+</tr>
+</tbody>
+</table>
+<br />
 
-- **STATE** ...Initial value (0:Close)
-  - Open/Close  the shutter.
+- **STATE**
+    <ul class="b">
+      <li>Initial value (0:Close).</li>
+      <li>Open/Close  the shutter.</li>
+    </ul>  
 - **SHUTTER MODEL**
-  - Select the shutter model.
-  - :warning: For SSH-C2B, you can select a user-defined shutter in addition to the specified model.
- Refer to the SSH-C2B operation manual for the definition contents (settings are made on the main unit).
-
-<div style="page-break-after: always"
-></div>
+    <ul class="b">
+      <li>Select the shutter model.</li>
+      <li>⚠️ For SSH-C2B, you can select a user-defined shutter in addition to the specified model. Refer to the SSH-C2B operation manual for the definition contents (settings are made on the main unit).</li>
+    </ul>  
 
 ## Camera
 
 - **Device Name**
-  - SKCam: SKCam
+    <ul class="b">
+      <li><strong>SKCam: SKCam</strong></li>
+    </ul>
 
 - **Environmental Setting**
-  - In order to run Sentech Camera install the [DRIVER](http://sentech.co.jp/en/products/USB/software.html#cnt2ndof) camera in advance
-
-  - Driver for USB camera made by SENTECH (require StCamSWare v3.17)
+    <ul class="b">
+      <li>In order to run Sentech Camera install the <a href="https://sentech.co.jp/en/data/#cnt2ndof"> DRIVER</a> camera in advance</li>
+      <li>Driver for USB camera made by SENTECH (require StCamSWare v3.17)</li>
+    </ul>
 
 - **Supported Models**
-  - All USB2.0/USB3.0 cameras
-<br>
+    <ul class="b">
+      <li>All USB2.0/USB3.0 cameras</li>
+    </ul>
 
 - **Preset Parameters (Camera)**
 
-|DEVICE|USB2, USB3 model|
-|:-----|:-----:|
-|ALC_Mode|Auto Shutter / AGC,Auto Shutter / Manual Gain,Fixed Shutter / AGC,Fixed Shutter / Manual Gain|
-|Binning| 1, 2|
-|Scan Mode|Normal Mode / Roi Mode|
-|ClockSpeed|Reference, 1/2, 1/4 (Only USB2 Camera)|
-|Exposure|Exposure time (msec)|
-|FPS|Display frame per sec|
-|ImageDeviceSize_H(pixel)|Horizontal display of image (H)|
-|ImageDeviceSize_V(pixel)|Vertical display of image (V)|
-|Mirror Mode|MIRROR HORIZONTAL/ MIRROR VERTICAL/ MIRROR HORIZONTAL VERTICAL/ MIRROR OFF|
-|PixelType|Color= 32bit_BGR/ Monochrome= 8bit_MONO|
-|ProductName|Display name of product|
-|Shutter Gain|gain|
-|Shutter Gain Auto Max|AGC Gain Max|
-|Shutter Gain Auto Min|AGC Gain Min|
-|Shutter Gain Mode|Analog All/ Digital All|
-|WhiteBalance_GainR|Display white balance gain R|
-|WhiteBalance_GainGr|Display white balance gain Gr|
-|WhiteBalance_GainGb|Display white balance gain Gb|
-|WhiteBalance_GainB|Display white balance gain B|
-|WhiteBalance_Mode|Auto, Manual, Off, OneShot|
-<br>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">DEVICE</th>
+<th style="text-align:center">USB2, USB3 model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ALC_Mode</td>
+<td style="text-align:center">Auto Shutter / AGC,Auto Shutter / Manual Gain,Fixed Shutter / AGC,Fixed Shutter / Manual Gain</td>
+</tr>
+<tr>
+<td style="text-align:left">Binning</td>
+<td style="text-align:center">1, 2</td>
+</tr>
+<tr>
+<td style="text-align:left">Scan Mode</td>
+<td style="text-align:center">Normal Mode / Roi Mode</td>
+</tr>
+<tr>
+<td style="text-align:left">ClockSpeed</td>
+<td style="text-align:center">Reference, 1/2, 1/4 (Only USB2 Camera)</td>
+</tr>
+<tr>
+<td style="text-align:left">Exposure</td>
+<td style="text-align:center">Exposure time (msec)</td>
+</tr>
+<tr>
+<td style="text-align:left">FPS</td>
+<td style="text-align:center">Display frame per sec</td>
+</tr>
+<tr>
+<td style="text-align:left">ImageDeviceSize_H(pixel)</td>
+<td style="text-align:center">Horizontal display of image (H)</td>
+</tr>
+<tr>
+<td style="text-align:left">ImageDeviceSize_V(pixel)</td>
+<td style="text-align:center">Vertical display of image (V)</td>
+</tr>
+<tr>
+<td style="text-align:left">Mirror Mode</td>
+<td style="text-align:center">MIRROR HORIZONTAL/ MIRROR VERTICAL/ MIRROR HORIZONTAL VERTICAL/ MIRROR OFF</td>
+</tr>
+<tr>
+<td style="text-align:left">PixelType</td>
+<td style="text-align:center">Color= 32bit_BGR/ Monochrome= 8bit_MONO</td>
+</tr>
+<tr>
+<td style="text-align:left">ProductName</td>
+<td style="text-align:center">Display name of product</td>
+</tr>
+<tr>
+<td style="text-align:left">Shutter Gain</td>
+<td style="text-align:center">gain</td>
+</tr>
+<tr>
+<td style="text-align:left">Shutter Gain Auto Max</td>
+<td style="text-align:center">AGC Gain Max</td>
+</tr>
+<tr>
+<td style="text-align:left">Shutter Gain Auto Min</td>
+<td style="text-align:center">AGC Gain Min</td>
+</tr>
+<tr>
+<td style="text-align:left">Shutter Gain Mode</td>
+<td style="text-align:center">Analog All/ Digital All</td>
+</tr>
+<tr>
+<td style="text-align:left">WhiteBalance_GainR</td>
+<td style="text-align:center">Display white balance gain R</td>
+</tr>
+<tr>
+<td style="text-align:left">WhiteBalance_GainGr</td>
+<td style="text-align:center">Display white balance gain Gr</td>
+</tr>
+<tr>
+<td style="text-align:left">WhiteBalance_GainGb</td>
+<td style="text-align:center">Display white balance gain Gb</td>
+</tr>
+<tr>
+<td style="text-align:left">WhiteBalance_GainB</td>
+<td style="text-align:center">Display white balance gain B</td>
+</tr>
+<tr>
+<td style="text-align:left">WhiteBalance_Mode</td>
+<td style="text-align:center">Auto, Manual, Off, OneShot</td>
+</tr>
+</tbody>
+</table>
+<br />
 
 - **ALC (Auto Luminance Control)_Mode**
-  - Initial value: Camera setting value at the time of connection
-  - Set the electronic shutter gain and exposure time control mode.
-    - ***Auto Shutter / AGC***:                         Auto Shutter Auto Gain
-    - ***Auto Shutter / Manual Gain***:            Auto Shutter Fixed Gain
-    - ***Fixed Shutter / AGC***:                        Fixed Shutter Automatic Gain
-    - ***Fixed Shutter / Manual Gain***:           Fixed Shutter Fixed Gain
-  - :warning: In automatic mode ("Auto Shutter" or "AGC"), the setting value cannot be adjusted.
+    <ul class="b">
+      <li>Initial value: Camera setting value at the time of connection.</li>
+      <li>Set the electronic shutter gain and exposure time control mode.</li>
+      <ul class = "c">
+          <li><strong>Auto Shutter / AGC </strong> ➡[Auto Shutter Auto Gain]</li>
+          <li><strong>Auto Shutter / Manual Gain </strong> ➡[Auto Shutter Fixed Gain]</li>
+          <li><strong>Fixed Shutter / AGC </strong> ➡[Fixed Shutter Automatic Gain]</li>
+          <li><strong>Fixed Shutter / Manual Gain </strong> ➡[Fixed Shutter Fixed Gain]</li>
+          ⚠️ In automatic mode ("Auto Shutter" or "AGC"), the setting value cannot be adjusted.
+      </ul>
+    </ul>
 - **Binning**
-  - Initial value: 1.
-  - Set binning scan value.
-  - :warning: Some cameras do not support **Binning** setting.
+    <ul class="b">
+      <li>Initial value: 1.</li>
+      <li>Set binning scan value.</li>
+    ⚠️ Some cameras do not support <strong>Binning</strong> setting.
+    </ul>
 - **Scan Mode**
-  - Initial value: ROI Mode.
-  - Specify camera scan mode.
-    - ***ROI Mode***
-      - Setting the ROI mode will affect the binning settings, vertical (pixels) and horizontal.(pixels) size.
-      - µManager's "SetRoi", "QuadRoi" and "ClearRoi" buttons are enabled.
-      - :warning: Some USB2.0 cameras do not support ROI mode.
-    - ***Normal Scan Mode***
-      - :warning: Setting normal mode disables all activities of ROI mode.
+    <ul class="b">
+      <li>Initial value: ROI Mode.</li>
+      <li>Specify camera scan mode.</li>
+        <ul class="c">
+          <li><strong>ROI Mode </strong> Auto Shutter Auto Gain </li>
+            <ul class="d">
+              <li>Setting the ROI mode will affect the binning settings, vertical (pixels) and horizontal.(pixels) size.</li>
+              <li>µManager's "SetRoi", "QuadRoi" and "ClearRoi" buttons are enabled.</li>
+              <li>⚠️ Some USB2.0 cameras do not support ROI mode.</li>
+            </ul>
+              <li><strong>Normal Scan Mode </strong>Auto Shutter Fixed Gain</li>
+            <ul class="d">
+              <li>⚠️ Setting normal mode disables all activities of ROI mode.</li>
+            </ul>
+        </ul>
+    </ul>
 - **Clock Speed**
-  - Initial value: Reference clock.
-  - Set the electronic shutter clock.
-  :warning: As the brightness changes by switching, you need to reset "**Exposure(msec)**" and "**ShutterGain**".
-  - :warning: Cannot be used with USB3.0 cameras.
+    <ul class="b">
+      <li>Initial value: Reference clock.</li>
+      <li>Set the electronic shutter clock.</li>
+      ⚠️ As the brightness changes by switching, you need to reset "<strong>Exposure(msec)</strong>" and "<strong>ShutterGain</strong>".
+      <li>⚠️ Cannot be used with USB3.0 cameras.</li>
+    </ul>
 - **Exposure ms**
-  - Initial value (camera setting value at the time of connection).
-  - Set the exposure time of the electronic shutter.
+    <ul class="b">
+      <li>Initial value (camera setting value at the time of connection).</li>
+      <li>Set the exposure time of the electronic shutter.</li>
+    </ul>
 - **FPS**
-  - Initial value (camera setting value at the time of connection).
+    <ul class="b">
+      <li>Initial value (camera setting value at the time of connection).</li>
+    </ul>
 - **Mirror Mode**
-  - Default: MIRROR OFF
-    - Can be set to VERTICAL MIRROR, HORIZONTAL MIRROR, HORIZONTAL VERTICAL MIRROR AND MIRROR OFF.
+    <ul class="b">
+      <li>Default: MIRROR OFF.</li>
+  Mode can be set to VERTICAL MIRROR, HORIZONTAL MIRROR, HORIZONTAL VERTICAL MIRROR AND MIRROR OFF.
+    </ul>
 - **Pixel Type**
-  - Default: 32bit BGR.
-  - Get and display camera pixel format.
+    <ul class="b">
+      <li>Default: 32bit BGR.</li>
+      <li>Get and display camera pixel format.</li>
+    </ul>
 - **Shutter Gain**
-  - Initial value (setting value on the camera side when connecting).
-  - **Shutter Gain Mode** can be switched.
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connecting).</li>
+      <li><strong>Shutter Gain Mode</strong> can be switched.</li>
+    </ul>
 - **Shutter Gain Auto Max**
-  - Initial value (setting value on the camera side when connecting).
-  - :warning: Works only in AGC mode.
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connecting).</li>
+      <li>⚠️ Works only in AGC mode.</li>
+    </ul>
 - **Shutter Gain Auto Min**
-  - Initial value (setting value on the camera side when connecting).
-  - :warning: Works only in AGC mode.
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connecting).</li>
+      <li>⚠️ Works only in AGC mode.</li>
+    </ul>
 - **Shutter Gain Mode**
-  - Initial value (setting value on the camera side when connecting).
-    - ***Analog All***: Amplifies the charge during photoelectric conversion.
-    - ***Digital All***: Amplifies the brightness value by soft operation.
-  :warning: It all depends on the camera model, some camera does not support Digital mode or Analog mode while others support both, for this, the mode will be displayed according to the camera.
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connecting).</li>
+      <li><strong>Analog All</strong>: Amplifies the charge during photoelectric conversion.</li>
+      <li><strong>Digital All</strong>: Amplifies the brightness value by soft operation.</li>
+    ⚠️ It all depends on the camera model, some camera does not support Digital mode or Analog mode while others support both, for this, the mode will be displayed according to the camera.
+    </ul>
 - **White Balance Gain**
-  - Initial value (setting value on the camera side when connected).
-  - Set each white balance gain (***R/Gr/Gb/B***).
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connected).</li>
+      <li>Set each white balance gain (<strong>R/Gr/Gb/B</strong>).</li>
+    </ul>
 - **White Balance Mode**
-  - Initial value (setting value on the camera side when connected).
-  - Set the white balance control mode.
-    - ***Auto***: Performs automatic white balance control (***Gr/Gb*** can be set).
-    - ***Manual***: Each gain (***R/Gr/Gb/B***) can be set.
-    - ***Off***: Turns off the white balance control (no gain adjustment).
-    - ***OneShot***: Converge as "***Manual***" after automatic adjustment (***Gr/Gb*** can be set).
+    <ul class="b">
+      <li>Initial value (setting value on the camera side when connected).</li>
+      <li>Set the white balance control mode.</li>
+        <ul class="c">
+          <li><strong>Auto</strong>: Performs automatic white balance control (<strong>Gr/Gb</strong> can be set).</li>
+          <li><strong>Manual</strong>: Each gain (<strong>R/Gr/Gb/B</strong>) can be set.</li>
+          <li><strong>Off</strong>: Turns off the white balance control (no gain adjustment).</li>
+          <li><strong>OneShot</strong>: Converge as "<strong>Manual</strong>" after automatic adjustment (<strong>Gr/Gb</strong> can be set).</li>
+        </ul>
+    </ul>
 
-<style
->
-    th, td {
-      font-size: 12px;
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+      font-size: 11px;
       border-collapse: collapse;
-      border-width:3px
+      border-width:1px
     }
-    </style>
+ul.a {list-style-type: disc;}
+ul.b {list-style-type: circle;}
+ul.c {list-style-type: square;}
+ul.d {list-style-type: lower-alpha;}
+</style>
