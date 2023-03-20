@@ -97,7 +97,12 @@ None
 </tr>
 </table>
 
-The “PI GCS 2” adapter is compatible with most current PI controllers. PI piezo controllers can also be controlled with analog input (via analog DAC board driver in micro-manager). PI GCS 2 provides the same features as the previous “PI GCS” adapter. If you are using a PI device for the first time, please do not use the PI GCS adapter but use “PI GCS 2”.
+The “PI GCS 2” adapter is compatible with most current PI controllers.
+PI piezo controllers can also be controlled with analog input (via
+analog DAC board driver in Micro-Manager). PI GCS 2 provides the same
+features as the previous “PI GCS” adapter. If you are using a PI device
+for the first time, please do not use the PI GCS adapter but use “PI GCS
+2”.
 																  
 																	 
 																		   
@@ -106,7 +111,7 @@ The “PI GCS 2” adapter is compatible with most current PI controllers. PI pi
 
 The adapter uses two different connection modes:
 
--   serial connection of micro-manager, thus being platform independent
+-   serial connection of Micro-Manager, thus being platform independent
 -   PI GCS modules (DLL or shared-object) for Linux and Windows
 
 The PI GCS modules are needed if controllers are used where the GCS
@@ -140,7 +145,7 @@ provided. Here some of the values are already pre-set:
 
 The controller devices handle the communication with the PI controller.
 The two “stage” devices are the XYStage and ZStage devices used inside
-micro-manager and represent the axes connected to the PI controller.
+Micro-Manager and represent the axes connected to the PI controller.
 Each stage device needs a controller device to communicate. So you
 always have to add at least two devices (see examples below).
 
@@ -151,20 +156,20 @@ hardware handshake and if the cable has these lines connected.
 ### Configuration
 
 First you have to add a controller device for each PI controller you
-want to control by micro-manager. Give it a meaningful name, since the
+want to control by Micro-Manager. Give it a meaningful name, since the
 stages need this name to call the controller. After this you add the
-stages you want to use in micro-manager. Note that each controller can
+stages you want to use in Micro-Manager. Note that each controller can
 have as many stage devices as there are physical axes connected. E.g.
 one C-843.41 controller with 3 motorized stages can be used as one
-XYStage and one ZStage inside micro-manager, or you can use a 3-axis
+XYStage and one ZStage inside Micro-Manager, or you can use a 3-axis
 piezo stage connected to an E-712/710 as XYStage and ZStage. You can
 also use two single axis controllers to control one XY stage.
 
 Communication with the devices is implemented in two different ways:
 
--   using the built-in serial (RS-232) communication of micro-manager -
+-   using the built-in serial (RS-232) communication of Micro-Manager -
     no other software modules are required. This is possible for all
-    platforms supported by micro-manager. Implemented by
+    platforms supported by Micro-Manager. Implemented by
     “PI\_GCSController”.
 -   using PI’s modules (DLLs) - this allows connecting to RS-232 and PCI
     but is limited to Windows. Implemented by “PI\_GCSControllerDLL”.
@@ -178,12 +183,12 @@ PI\_GCSControllerDLL:
 -   **DLL Name**: file name of DLL or shared object. On Windows you can
     find this e.g. in the version information of PIMikroMove. In most
     cases this is "PI\_GCS2\_DLL.dll" if you use 32bit version of
-    micro-manager or "PI\_GCS2\_DLL\_x64.dll" if you use 64bit version.
-    The DLL must be copied to micro-manager's installation directory.
+    Micro-Manager or "PI\_GCS2\_DLL\_x64.dll" if you use 64bit version.
+    The DLL must be copied to Micro-Manager's installation directory.
 -   **Interface Type**: Type of interface used for connection. Currently
     "PCI", "RS-232", "USB", and "TCP/IP" are implemented. NOTE: If you
 	select "RS-232" you must not configure this serial device in
-	micro-manager, since the PI DLL/shared object needs exclusive
+	Micro-Manager, since the PI DLL/shared object needs exclusive
 	access.
 -   **Interface Parameter**: This is a string where the single values
     are separated by ";". For "RS-232" this is “<port nr>;<baudrate>”.
@@ -191,7 +196,7 @@ PI\_GCSControllerDLL:
     baud, type "1;57600". On Linux, "1" is mapped to "/dev/ttyS0", "2"
     to "/dev/ttyS1", and so on. For "PCI" this is a single integer with
     the board ID. For "USB" this is a description of the device, e.g.
-    the serial number as displayed in PIMikroMove's connection window. 
+    the serial number as displayed in PIMikroMove's connection window.
     For "TCP/IP" this is the IP number of the controller, followed by
 	":", followed by the port number, e.g. "192.168.0.25:50000".
 
@@ -201,7 +206,7 @@ PI\_GCSController:
     use the VCOM driver you can use PITerminal or PIMikroMove to find
     out which COM port to use.
 -   **um in default unit**: Since PI controllers either work in mm/deg
-    or µm/µrad and micro-manager uses µm, you need to define the factor
+    or µm/µrad and Micro-Manager uses µm, you need to define the factor
     to get µm from the default unit of the controller. For piezo
     controllers using µm this is typically 1, for motor controllers with
     mm this is "0.001".
@@ -210,7 +215,7 @@ PIZStage:
 
 -   **Axis**: Name of axis
 -   **Controller Name**: Name of the controller as defined in the
-    hardware configuration wizard of micro-manager
+    hardware configuration wizard of Micro-Manager
 -   **Limit\_um**: define a limit for the Z stage in µm. Range is
     0...<Limit_um>
 -   **Stage**: stage type (see notes below)
@@ -229,7 +234,7 @@ PIXYStage:
 -   **Axis Y: Stage**: Stage type for Y axis (see notes below)
 -   **Axis Y: Homing Mode**: See "Axis X: Homing Mode"
 -   **Controller Name**: Name of the controller as defined in the
-    hardware configuration wizard of micro-manager
+    hardware configuration wizard of Micro-Manager
 -   **Controller Name for Y axis**: If the Y axis is connected to a
     different controller, you need to enter its name here. If this is
     empty, the same controller is used for X and Y.
@@ -253,7 +258,7 @@ usually "100". Please see the user manual of the controller for details.
 
 ### Homing of the stages
 
-For XYStages micro-manager supports the homing of the stages in the Axes
+For XYStages Micro-Manager supports the homing of the stages in the Axes
 list.
 
 Since ZStages currently do not support homing, but stages with
@@ -346,4 +351,3 @@ This flag can be used to enable or disable the axes for a PI stage. In fact, the
 
 #### Axis in error state
 Under certain conditions a stage can enter an error state. When this happens, the property “Axis in error state” will be set to 1. To reset the error state, change this value back to 0. The value cannot be set to 1 manually.
-
