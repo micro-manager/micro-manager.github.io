@@ -254,6 +254,7 @@ the controller with the "Assign Stages" dialog window, you can
 afterwards call "Save parameters to non-volatile memory" in the
 corresponding controller menu (see figure below). The password used is
 usually "100". Please see the user manual of the controller for details.
+
 ![](/media/PI_GCS2_PIMikroMove_Save_Params.png)
 
 ### Homing of the stages
@@ -274,6 +275,7 @@ workaround. The stage may take several seconds to reach the target. Most
 likely this will result in an error message "device times out". Please
 close this error message AFTER the stage has finished. Then you should
 be able to continue using this ZStage.
+
 ![](/media/PI_GCS2_PropertyGroupHomeConfig.png)
 ![](/media/PI_GCS2_PropertyGroupHome.png)
 
@@ -304,6 +306,7 @@ field, and select the “Joystick 1” or “Joystick 2” property of the
 controller. Afterwards you can activate the joystick by entering “1” and
 deactivating the joystick by entering “0” in the corresponding GUI
 element.
+
 ![](/media/PI_GCS2_PropertyGroupJoystickConfig.png)
 
 With presets defined a dropdown box can be created which allows
@@ -326,6 +329,7 @@ and “JAX 3 2 2” to control stage axis 1 with joystick 3 axis 1 and stage
 axis 2 with joystick 3 axis 2. Since all changes will be lost when
 rebooting the controller, this procedure can be automated using an auto
 start macro in PIMikroMove:
+
 ![](/media/PIMikroMove_Joystick_Startup_Makro.jpg)
 
 #### Stage Axis Configuration
@@ -351,3 +355,4 @@ This flag can be used to enable or disable the axes for a PI stage. In fact, the
 
 #### Axis in error state
 Under certain conditions a stage can enter an error state. When this happens, the property “Axis in error state” will be set to 1. To reset the error state, change this value back to 0. The value cannot be set to 1 manually.
+
