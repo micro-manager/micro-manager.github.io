@@ -456,3 +456,4 @@ release](Download_Micro-Manager_Latest_Release).
     Imager](http://goochandhousego.com/product/hsi-300-hyperspectral-imaging-system/)
     can be controlled with Micro-Manager (not yet included in the
     distribution, contact Gouch & Housego for details)
+-   [MeadowlarkLC](MeadowlarkLC) - Meadowlark Optics D5020 liquid crystal device controller
