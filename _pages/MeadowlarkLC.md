@@ -7,7 +7,7 @@ layout: page
 
 |  |  |
 |---|---|
-| Summary: | Adapter for the [ Meadowlark Optics ]( https://www.meadowlark.com/ ) [ D5020 ]( https://www.meadowlark.com/liquid-crystal-digital-interface-controller/ ) liquid crystal controller |
+| Summary: | Adapter for the [Meadowlark Optics]( https://www.meadowlark.com/ ) [D5020]( https://www.meadowlark.com/liquid-crystal-digital-interface-controller/ ) liquid crystal controller |
 | Author: | Amitabh Verma and Ivan Ivanov |
 | License: | BSD |
 | Platforms: | Windows |
@@ -17,9 +17,9 @@ layout: page
 
 ### Overview
 
-This is a Micro-Manager device adapter for the [ Meadowlark Optics ]( https://www.meadowlark.com/ ) [ D5020 ]( https://www.meadowlark.com/liquid-crystal-digital-interface-controller/ ) liquid crystal (LC) controller. It enables setting the voltage or retardance of a liquid crystal device. Multiple LCs per controller are supported. LC-specific voltage-to-retardance calibration curves at multiple wavelengths can be supplied for accurate conversion between voltage and retardance. A number of palette elements can be defined which support defining and switching the state of multiple LCs.
+This is a Micro-Manager device adapter for the [Meadowlark Optics](https://www.meadowlark.com/) [D5020](https://www.meadowlark.com/liquid-crystal-digital-interface-controller/) liquid crystal (LC) controller. It enables setting the voltage or retardance of a liquid crystal device. Multiple LCs per controller are supported. LC-specific voltage-to-retardance calibration curves at multiple wavelengths can be supplied for accurate conversion between voltage and retardance. A number of palette elements can be defined which support defining and switching the state of multiple LCs.
 
-This device adapter can be used with the [ recOrder ]( https://github.com/mehta-lab/recOrder ) plugin for [ napari ]( https://napari.org/ ) to assist in LC calibration for microscopy measurements.
+This device adapter can be used with the [recOrder](https://github.com/mehta-lab/recOrder) plugin for [napari](https://napari.org/) to assist in LC calibration for microscopy measurements.
 
 ### Installation
 
