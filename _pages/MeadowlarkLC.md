@@ -27,7 +27,7 @@ Install the Meadowlark Optics USB driver and CellDRIVE application following the
 
 Copy the Meadowlark Optics `usbdrvd.dll` into the Micro-Manager installation folder. The file can be found in the `\C++ Example\64 bit\` directory on the installation drive supplied by the manufacturer.
 
-Optionally, also copy the `mmgr_dal_MeadowlarkLC.csv` file into the Micro-Manager installation folder. This file contains voltage versus retardance calibration data at several wavelengths for up to two LCs connected to the controller. The file may be updated with calibration data provided by the manufacturer. If the `mmgr_dal_MeadowlarkLC.csv` file is omitted, a generic internal voltage vs retardance curve will be used which can provide approximate results.
+The device adapter is supplied with a `mmgr_dal_MeadowlarkLC.csv` file which contains voltage versus retardance calibration data at three wavelengths for two LCs. It enables approximate conversion between voltage and retardance. The file may be updated with calibration data provided by the manufacturer.
 
 ### Supported devices
 
