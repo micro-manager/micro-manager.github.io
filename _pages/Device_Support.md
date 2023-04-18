@@ -422,6 +422,7 @@ release](Download_Micro-Manager_Latest_Release).
     the Lumencor Spectra
 -   [MaestroServo](MaestroServo) - Pololu Maestro Servo
     controller
+-   [MeadowlarkLC](MeadowlarkLC) - Meadowlark Optics D5020 liquid crystal device controller
 -   [MicroPoint](MicroPoint) - Galvo-based phototargeting
     device from Andor
 -   [Mosaic3](Mosaic3) - Andor Mosaic DMD Projection Device
