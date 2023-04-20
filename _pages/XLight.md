@@ -64,7 +64,7 @@ Cross-platform (serial port)
 </td>
 <td markdown="1">
 
-1.4.16
+>= 1.4.16
 
 </td>
 </tr>
@@ -78,12 +78,12 @@ Cross-platform (serial port)
 
 |                     |     |
 |---------------------|-----|
-| AnswerTimeout       | ?   |
-| BaudRate            | ?   |
+| AnswerTimeout       | 30000  |
+| BaudRate            | 115200   |
 | DelayBetweenCharsMs | 0   |
-| Handshaking         | ?   |
-| Parity              | ?   |
-| StopBits            | ?   |
+| Handshaking         | Off   |
+| Parity              | None  |
+| StopBits            | 1   |
 
 </td>
 </tr>
@@ -91,4 +91,4 @@ Cross-platform (serial port)
 
 [CrestOptics](http://crestopt.com/)
 
-(To be written.)
+Newer Micro-Manager versions (since ~ 20230101), have the XLightMM device adapter. First add the XLightMMHub.  This should give you access to a Dicrhoic Wheel, and Emission Wheel, an Excitation Wheel, Spinning Slider, Camera Slider, Spinning Motor, emission Iris and Illumination Iris device. 
