@@ -409,6 +409,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [AOTF](Neos) - NEOS AOTF control through parallel port.
     Can be used for any TTL-controllable shutter
 -   [ASIwptr](ASIwptr) - ASI well-plate transfer robot
+-   [BH\_DCC\_DCU](BH_DCC_DCU) - Becker & Hickl DCC-100 detector control card and DCU USB detector control unit
 -   [CARVII](CARVII) - BD/CrEST CARV II spinning disk
     confocal
 -   [Diskovery](Diskovery) - Spectral/Andor spinning disk
