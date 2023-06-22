@@ -14,8 +14,7 @@ layout: page
 </tr>
 <tr>
 <td><p>Authors:</p></td>
-<td><p>Arthur Edelstein<br />
-Gordon Scott</p></td>
+<td><p>Isabel Goodhand</p></td>
 </tr>
 <tr>
 <td><p>Documentation:</p></td>
