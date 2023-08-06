@@ -94,7 +94,7 @@ Older nightly builds:
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
-  - [Windows 64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.22.exe),
+  - [Windows 64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.23.exe),
     87 MB  
   - [Windows 32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.23.exe),
     84 MB  
