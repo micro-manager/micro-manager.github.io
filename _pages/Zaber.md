@@ -67,7 +67,7 @@ All platforms (uses serial port)
 </td>
 <td markdown="1">
 
-Stage, XYStage, FilterWheel, FilterCubeTurret, Illuminator
+Stage, XYStage, FilterWheel, FilterCubeTurret, Objective Changer, Illuminator
 
 </td>
 </tr>
@@ -81,8 +81,8 @@ configuration.
 ## Compatibility
 
 Currently Micro-Manager has five kinds of drivers for controlling Zaber
-devices: Stage, XYStage, Filter Wheel, Filter Cube Turret and
-Illuminator. These drivers require Zaber devices to have firmware 6.06
+devices: Stage, XYStage, Filter Wheel, Filter Cube Turret, Objective Changer and
+Illuminator. These drivers require Zaber devices to have firmware 6.14
 or higher (unless otherwise noted) and be set to use the Zaber ASCII
 protocol. The individual drivers each have specific device requirements:
 
@@ -93,7 +93,10 @@ protocol. The individual drivers each have specific device requirements:
     wheel](http://www.zaber.com/products/product_group.php?group=X-FWRX-FWR)
     is connected.
 -   The Filter Cube Turret driver requires that an X-FCR is connected.
-    The -FCR is a component of the [MVR
+    The X-FCR is a component of the [MVR
+    microscope](https://www.zaber.com/products/microscopes/MVR).
+-   The Objective Changer driver requires that an [X-MOR](https://www.zaber.com/products/microscopes/X-MOR-E) is
+    connected. The X-MOR is a component of the [MVR
     microscope](https://www.zaber.com/products/microscopes/MVR).
 -   The Illuminator driver requires that an [X-LCA series LED
     controller](https://www.zaber.com/products/microscopes/X-LCA4) is
@@ -133,6 +136,9 @@ Wheel](https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Whee
 
 [Setting Up A Filter Cube
 Turret](https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Cube_Turret)
+
+[Setting Up An
+Objective Changer](https://www.zaber.com/w/Software/MicroManager#Setting_Up_An_Objective_Changer)
 
 [Setting Up An
 Illuminator](https://www.zaber.com/w/Software/MicroManager#Setting_Up_An_Illuminator)
