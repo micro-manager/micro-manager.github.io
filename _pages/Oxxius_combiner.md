@@ -78,19 +78,7 @@ All (requires a USB port or access to an Ethernet network)
 </td>
 <td markdown="1">
 
-1.4.23
-
-</td>
-</tr>
-<tr>
-<td markdown="1">
-
-**Example Config File:**
-
-</td>
-<td markdown="1">
-
-None
+1.4.23; major update in nightly build of 20231003
 
 </td>
 </tr>
@@ -99,6 +87,8 @@ None
 Foreword: This Device Adapter relates to laser combiners and to BTC-AOM
 controllers. For stand-alone LaserBoxx sources, refer to the Device
 Adapter named [Oxxius](Oxxius).
+
+A major update was made in the 20231003 nightly build; config file may need to be updated.
 
 ## Installation
 
