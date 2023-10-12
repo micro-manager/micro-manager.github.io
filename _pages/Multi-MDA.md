@@ -17,7 +17,7 @@ or using the Multi MDA button in the Multi-D Acq. window.
 
 The UI look as follows: 
 
-![](media/Multi-MDA.png)
+![](media/MultiMDA.png)
 
 
 Use "Number of different settings" to set how many different settings 
