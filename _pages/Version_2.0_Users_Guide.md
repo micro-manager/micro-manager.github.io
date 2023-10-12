@@ -890,6 +890,10 @@ Panel](#comments-panel) in the image window.
     with the [Run Saved
     Acquisition](#run-saved-acquisition) button in the
     [Quick Access Panel](#quick-access-panel).
+-   from Image: When a dataset is loaded that contains MDA settings in its
+    metadata, pressing this button will load this metadata into the MDA window.
+-   [Multi MDA](Multi-MDA): Makes it possible to combine multiple MDA
+    settings in one experiment.  
 
 ## Config Groups
 
