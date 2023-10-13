@@ -31,10 +31,11 @@ This device adapter does not work for Micro-Manager versions from
 Install the [FlyCap2 viewer
 software](https://www.ptgrey.com/support/downloads) for your OS. Make
 sure that the FlyCapture2 software works with your camera. Copy
-libiomp5md.dll and FlyCapture2\_v100.dll (from the bin or bin64
-directory in the FlyCap2 directory) to the Micro-Manager directory
+libiomp5md.dll and FlyCapture2\_v140.dll (from the bin or bin64
+directory in the FlyCap2 directory, you may need to install the full
+SDK to find these files) to the Micro-Manager directory
 (default: C:\\Program Files\\Micro-Manager). Since we are not allowed
-to re-distribute FlyCapture2\_v100.dll, it may well be that 2.13.3.61
+to re-distribute FlyCapture2\_v140.dll, it may well be that 2.13.3.61
 is no longer available (in which case you should ask Point Grey for a
 copy of 2.13.3.61 or re-build the Micro-Manager Point Grey Device
 adapter against the then available SDK).
