@@ -141,7 +141,7 @@ driver on a Windows 7 system.
 ```
 
 The Micro-Manager Core API is described here:
-<http://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html>
+</apidoc/mmcorej/latest/mmcorej/CMMCore.html>
 
 The following simple script will snap an image from an up-to-16-bit
 monochrome camera and display it in MATLAB:

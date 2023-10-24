@@ -19,9 +19,9 @@ import classes from:
 1.  the [Java 2 SE 6.0
     Libraries](http://java.sun.com/j2se/1.6.0/docs/api/)
 2.  [Micro-Manager
-    Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/index.html)
+    Core](/apidoc/mmcorej/latest/index.html)
 3.  [Micro-Manager
-    GUI](https://valelab.ucsf.edu/~MM/doc/mmstudio/index.html)
+    GUI](/apidoc/mmstudio/1.4/index.html)
 4.  [ImageJ](http://rsbweb.nih.gov/ij/developer/api/)
 5.  [Apache Commons
     Math](http://commons.apache.org/math/userguide/overview.html)

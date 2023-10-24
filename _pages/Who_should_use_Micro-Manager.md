@@ -42,8 +42,7 @@ We think you should definitely try Micro-Manager if:
 
 To determine if Micro-Manager can be useful to you right away, you
 should first check if it has all the features you need by quickly going
-through the [User's
-Guide](http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_User%27s_Guide).
+through the [User's Guide](Version_2.0_Users_Guide).
 If it looks like it doesn't do exactly what you need out-of-the-box, you
 can let us know what features you would like to see in future or check
 whether they are already in the works. You can also consider extending
@@ -53,7 +52,6 @@ Second, you should check whether your hardware is already
 [supported](Device_Support). If not, contact us and express
 your desire and we'll let you know if we plan to support it. If your
 hardware is supported, you will still need to spend some time and effort
-to configure Î¼Manager for your system. To get an idea of what it takes
+to configure Micro-Manager for your system. To get an idea of what it takes
 to configure the Micro-Manager for your hardware setup, have a look at
-the [Configuration
-Guide](http://valelab.ucsf.edu/~MM/MMwiki/index.php/Micro-Manager_Configuration_Guide).  
+the [Configuration Guide](Micro-Manager_Configuration_Guide).  

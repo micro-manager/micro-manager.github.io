@@ -16,7 +16,7 @@ layout: page
 </td>
 <td markdown="1">
 
-Adapter for cameras from [Lumenera](http://www.lumenera.com/)
+Adapter for INFINITY camera models from [Teledyne Lumenera](http://www.lumenera.com/)
 
 </td>
 </tr>
@@ -28,7 +28,7 @@ Adapter for cameras from [Lumenera](http://www.lumenera.com/)
 </td>
 <td markdown="1">
 
-Lumenera Corporation
+Teledyne Lumenera
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ TBD
 </td>
 <td markdown="1">
 
-Windows, 32 and 64-bit
+Windows, 64-bit
 
 </td>
 </tr>
@@ -64,16 +64,14 @@ Windows, 32 and 64-bit
 </td>
 <td markdown="1">
 
-Lumenera cameras
+INFINITY camera models
 
 </td>
 </tr>
 </table>
 
-The code for this device adapter has not yet been merged with the source
-for Micro-Manager. Until this is accomplished, please see Lumenera's
-[page](http://www.lumenera.com/support/microscopy/drivers-downloads/micro-manager-plug-in.html)
-for information.
+The Lumenera camera adapter has dependencies on the INFINITY ANALYZE v7.1.1 (or higher).   Please see [Teledyne Lumenera’s Micro-Manager Plug-in page](http://www.lumenera.com/support/microscopy/drivers-downloads/micro-manager-plug-in.html) for instructions and setup.
+
 
 {% include Listserv_Search text="Lumenera" %}
 

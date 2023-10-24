@@ -71,9 +71,11 @@ monochrome USB versions and could be adapted to RGB cameras as well
 </tr>
 </table>
 
-Download and install the Basler Pylon software and verify that it works
-prior to setting up in Micro-Manager.
+Download and install **version 7.1** of the Basler Pylon software and verify that it works
+prior to setting up in Micro-Manager. The device adapter is know not to work with version 7.2.
 
 <https://www.baslerweb.com/en/sales-support/downloads/software-downloads/#type=pylonsoftware;series=baslerace>
 
 --[Henry Pinkard](/users/Henry_Pinkard), 20th March 2018 (PDT)
+--[Henry Pinkard](/users/Henry_Pinkard), Updated 23rd February 2023 (PDT)
+

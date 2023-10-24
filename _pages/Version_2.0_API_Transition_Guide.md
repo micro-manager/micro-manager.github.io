@@ -10,7 +10,7 @@ section: Learn:Version 2.0
 
 One of the major changes in 2.0 is a restructuring of the API. In 1.4,
 most of the functionality of the API was in a single module,
-[ScriptInterface]({% include link url='2.0API' %}https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html).
+[ScriptInterface](/apidoc/mmstudio/1.4/org/micromanager/api/ScriptInterface.html).
 In 2.0, the API has been subdivided, and some methods have been replaced
 by new techniques for accomplishing similar tasks. This page runs down
 the list of methods in 1.4's ScriptInterface and tells you how to
@@ -19,29 +19,29 @@ perform the equivalent task in 2.0.
 ### CompatibilityInterface, AcquisitionManager, Application, and PositionListManager
 
 First, note that the
-[CompatibilityInterface]({% include link url='2.0API' %}/mmstudio/org/micromanager/CompatibilityInterface.html),
-[AcquisitionManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/AcquisitionManager.html),
-[Application]({% include link url='2.0API' %}/mmstudio/org/micromanager/Application.html),
+[CompatibilityInterface](/apidoc/mmstudio/latest/org/micromanager/CompatibilityInterface.html),
+[AcquisitionManager](/apidoc/mmstudio/latest/org/micromanager/AcquisitionManager.html),
+[Application](/apidoc/mmstudio/latest/org/micromanager/Application.html),
 and
-[PositionListManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html)
+[PositionListManager](/apidoc/mmstudio/latest/org/micromanager/PositionListManager.html)
 modules contain many old methods from ScriptInterface, unmodified. These
 methods work as they did in 1.4, and include the following:
 
 -   CompatibilityInterface
-    -   [getVersion]({% include link url='2.0API' %}/mmstudio/org/micromanager/CompatibilityInterface.html#getVersion-)
-    -   [versionLessThan]({% include link url='2.0API' %}/mmstudio/org/micromanager/CompatibilityInterface.html#versionLessThan-java.lang.String-)
-    -   getCameraTransform (deprecated, instead use: [core.getPixelSizeAffineByID(config]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html#getPixelSizeAffineByID-java.lang.String-))
-    -   setCameraTransform (deprecated, instead use: [core.setPixelSizeAffine(transform, config]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html#setPixelSizeAffine-java.lang.String-mmcorej.DoubleVector-))
+    -   [getVersion](/apidoc/mmstudio/latest/org/micromanager/CompatibilityInterface.html#getVersion-)
+    -   [versionLessThan](/apidoc/mmstudio/latest/org/micromanager/CompatibilityInterface.html#versionLessThan-java.lang.String-)
+    -   getCameraTransform (deprecated, instead use: [core.getPixelSizeAffineByID(config](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#getPixelSizeAffineByID-java.lang.String-))
+    -   setCameraTransform (deprecated, instead use: [core.setPixelSizeAffine(transform, config](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setPixelSizeAffine-java.lang.String-mmcorej.DoubleVector-))
 -   AcquisitionManager
-    -   [attachRunnable]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#attachRunnable-int-int-int-int-java.lang.Runnable-)
-    -   [clearRunnables]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#clearRunnables--)
-    -   [isAcquisitionRunning]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#isAcquisitionRunning--)
-    -   [isPaused]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#isPaused--)
-    -   [loadAcquisition]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#loadAcquisition-java.lang.String-)
-    -   [runAcquisition]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#runAcquisition--)
-    -   [setAcquisitionSettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#setAcquisitionSettings-org.micromanager.acquisition.SequenceSettings-)
-    -   [setPause]({% include link url='2.0API' %}/mmstudio/org/micromanager/acquisition/AcquisitionManager.html#setPause-boolean-)
--   [Application]({% include link url='2.0API' %}/mmstudio/org/micromanager/Application.html)
+    -   [attachRunnable](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#attachRunnable-int-int-int-int-java.lang.Runnable-)
+    -   [clearRunnables](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#clearRunnables--)
+    -   [isAcquisitionRunning](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#isAcquisitionRunning--)
+    -   [isPaused](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#isPaused--)
+    -   [loadAcquisition](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#loadAcquisition-java.lang.String-)
+    -   [runAcquisition](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#runAcquisition--)
+    -   [setAcquisitionSettings](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#setAcquisitionSettings-org.micromanager.acquisition.SequenceSettings-)
+    -   [setPause](/apidoc/mmstudio/latest/org/micromanager/acquisition/AcquisitionManager.html#setPause-boolean-)
+-   [Application](/apidoc/mmstudio/latest/org/micromanager/Application.html)
     -   refreshGUI
     -   refreshGUIFromCache
     -   setExposure
@@ -53,24 +53,24 @@ methods work as they did in 1.4, and include the following:
     -   makeActive
     -   getHideMDADisplayOption
     -   getMainWindow
--   [PositionListManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html)
+-   [PositionListManager](/apidoc/mmstudio/latest/org/micromanager/PositionListManager.html)
     -   getPositionList
     -   markCurrentPosition (deprecated)
     -   setPositionList
 
 You can access the CompatibilityInterface by calling the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-compat]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#compat) method, the AcquisitionManager by calling the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+compat](/apidoc/mmstudio/latest/org/micromanager/Studio.html#compat) method, the AcquisitionManager by calling the
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-acquisitions]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#acquisitions) method, the Application by calling the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+acquisitions](/apidoc/mmstudio/latest/org/micromanager/Studio.html#acquisitions) method, the Application by calling the
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-app]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#app) method, and the PositionListManager by calling the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+app](/apidoc/mmstudio/latest/org/micromanager/Studio.html#app) method, and the PositionListManager by calling the
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-positions]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#positions) method. The Studio in turn is available in the BeanShell
+positions](/apidoc/mmstudio/latest/org/micromanager/Studio.html#positions) method. The Studio in turn is available in the BeanShell
 window as "mm", and is provided to plugins when they are initialized.
 
 ### acquisitionExists
@@ -78,17 +78,17 @@ window as "mm", and is provided to plugins when they are initialized.
 In 1.4, Micro-Manager maintained a registry of all "open" datasets
 (a.k.a. acquisitions), using a unique string key for each one. In 2.0,
 such a registry no longer exists. Any code that creates a new
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 (the 2.0 equivalent to a 1.4 acquisition) is responsible for holding
 onto references to it, destroying it, recreating it, etc.
 
 It is theoretically possible to find Datastores by way of their
-[DisplayWindows]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html),
+[DisplayWindows](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html),
 the windows that show images from the Datastore. You can ask the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)
 for a list of all DisplayWindows, and ask each DisplayWindow for its
 Datastore using the
-[getDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method. However, remember that Datastores are not
+[getDatastore](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html#getDatastore) method. However, remember that Datastores are not
 required to have any DisplayWindows (and also that it is possible to
 have multiple DisplayWindows for a single Datastore). If you really need
 your code to find a Datastore created by someone else's code, then
@@ -98,10 +98,10 @@ other.
 ### addImageToAcquisition
 
 In 2.0, third-party code is responsible for maintaining its own
-[Datastores]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastores](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 (the rough equivalent of 1.4 acquisitions), and can freely add images to
 Datastores themselves using the
-[putImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method.
+[putImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method.
 
 ### addMMBackgroundListener
 
@@ -117,56 +117,56 @@ These methods allowed code to listener for code event callbacks by
 implementing the MMListener interface, which is no longer in the API in
 2.0. Instead, you can listen for events that correspond to each of the
 callbacks (for example,
-[PropertyChangedEvent]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/PropertyChangedEvent.html)
+[PropertyChangedEvent](/apidoc/mmstudio/latest/org/micromanager/events/PropertyChangedEvent.html)
 instead of the old propertyChangedAlert method), by using 2.0's event
 publishing system. Remember to annotate the method that listens to the
 event, with a [Subscribe
 annotation](https://github.com/google/guava/wiki/EventBusExplained), and
 to register your object for event notifications via the
-[EventManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/EventManager.html)
+[EventManager](/apidoc/mmstudio/latest/org/micromanager/events/EventManager.html)
 accessible via
 [()
-Studio.events()](h{% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#events).
+Studio.events()](h/apidoc/mmstudio/latest/org/micromanager/Studio.html#events).
 
 ### addToAlbum
 
 The "album"
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 is now available via the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-album]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#album) method, and you can freely add images to it yourself (see the
+album](/apidoc/mmstudio/latest/org/micromanager/Studio.html#album) method, and you can freely add images to it yourself (see the
 `addImageToAcquisition` notes above)
 
 ### autostretchCurrentWindow
 
 You can now autostretch individual
-[DisplayWindows]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)
+[DisplayWindows](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)
 using their `autostretch` method. Thus this method can be replaced by
 calling `displays().getCurrentWindow().autostretch()`.
 
 ### clearMessageWindow
 
 This method was moved to the
-[ScriptController]({% include link url='2.0API' %}/mmstudio/org/micromanager/ScriptController.html)
+[ScriptController](/apidoc/mmstudio/latest/org/micromanager/ScriptController.html)
 object accessible via the
-[Studio's]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+[Studio's](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 [()
-scripter]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#scripter) method.
+scripter](/apidoc/mmstudio/latest/org/micromanager/Studio.html#scripter) method.
 
 ### closeAcquisition
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains responsibility for all open datasets. If you want to
 clean up a
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html),
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html),
 you must remove all references to that Datastore from memory.
 Micro-Manager will not maintain open references itself except via any
-[DisplayWindows]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)
+[DisplayWindows](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)
 you may have requested be created. You can close all open DisplayWindows
 for a given Datastore via the
-[DisplayManager's]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)
-[closeDisplaysFor]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#closeDisplaysFor(org.micromanager.data.Datastore)) method.
+[DisplayManager's](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)
+[closeDisplaysFor](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#closeDisplaysFor(org.micromanager.data.Datastore)) method.
 
 ### closeAcquisitionWindow
 
@@ -177,44 +177,44 @@ See the notes on `closeAcquisition`, above.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains a listing of all "acquisitions". Third-party code
 can freely create new
-[Datastores]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastores](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 and Micro-Manager will not be able to "see" them. Thus this method is
 impossible to implement in 2.0.
 
 However, if you just want to clean up the UI, then the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)
 has a
-[closeAllDisplayWindows]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#closeAllDisplayWindows(boolean))
+[closeAllDisplayWindows](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#closeAllDisplayWindows(boolean))
 method.
 
 ### createAcquisition
 
 You can request your own new
-[Datastores]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastores](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 (the rough equivalent of 1.4 acquisition objects) via the
-[DataManager's]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html)
+[DataManager's](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html)
 various "createDatastore" methods (e.g.
 [()
-createRAMDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
-[createMultipageTIFFDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
-[createSinglePlaneTIFFSeriesDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))).
+createRAMDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createRAMDatastore),
+[createMultipageTIFFDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
+[createSinglePlaneTIFFSeriesDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))).
 
 ### displayImage
 
 This has been replaced by
-[DisplayManager's]({% include link url='2.0API' %}mmstudio/org/micromanager/display/DisplayWindow.html)
-[show]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#show(org.micromanager.data.Image)) method. Note that this method creates a new
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[DisplayManager's](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)
+[show](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#show(org.micromanager.data.Image)) method. Note that this method creates a new
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 to store the image in. The old behavior of showing images in the
 Snap/Live Window is no longer possible.
 
 ### enableLiveMode
 
 This has been replaced by
-[SnapLiveManager's]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)
-[setLiveMode]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#setLiveMode(boolean))
+[SnapLiveManager's](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html)
+[setLiveMode](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#setLiveMode(boolean))
 method. You should also be aware of the
-[setSuspended]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
+[setSuspended](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
 method if you need to briefly stop live mode, only to resume it later.
 
 ### enableRoiButtons
@@ -235,155 +235,155 @@ This method was deprecated in 1.4 and has been removed in 2.0.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 You can access the save path for a Datastore via its
 [()
-getSavePath]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
+getSavePath](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getSavePath) method.
 
 ### getAcquisitionImageBitDepth
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image bit depth is now a property of the
-[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
+[Image](/apidoc/mmstudio/latest/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying bit depths to work right now). You can get the bit depth
 for an Image by asking for its
-[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
+[Metadata](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html)
 (via the
 [()
-getMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getMetadata) method) and then calling the Metadata's
+getMetadata](/apidoc/mmstudio/latest/org/micromanager/data/Image.html#getMetadata) method) and then calling the Metadata's
 [()
-getBitDepth]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html#getBitDepth) method.
+getBitDepth](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html#getBitDepth) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageByteDepth
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image byte depth is now a property of the
-[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
+[Image](/apidoc/mmstudio/latest/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying byte depths to work right now). You can get the byte
 depth for a single image by calling its
 [()
-getBytesPerPixel]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getBytesPerPixel) method.
+getBytesPerPixel](/apidoc/mmstudio/latest/org/micromanager/data/Image.html#getBytesPerPixel) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageCache
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 The Datastore functions as the equivalent of 1.4's image cache. You can
 ask it for images using its
-[getImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
+[getImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionImageHeight
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image height is now a property of the
-[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
+[Image](/apidoc/mmstudio/latest/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image heights to work right now). You can get the height
 for a single image by calling its
 [()
-getHeight]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getHeight) method.
+getHeight](/apidoc/mmstudio/latest/org/micromanager/data/Image.html#getHeight) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionImageWidth
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Image width is now a property of the
-[Image]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html)
+[Image](/apidoc/mmstudio/latest/org/micromanager/data/Image.html)
 objects in the Datastore, and is theoretically not required to be the
 same for all Images in that Datastore (though in practice we do not
 expect varying image widths to work right now). You can get the width
 for a single image by calling its
 [()
-getWidth]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Image.html#getWidth) method.
+getWidth](/apidoc/mmstudio/latest/org/micromanager/data/Image.html#getWidth) method.
 
 If you need to get a single image out of a Datastore, you can call its
 [()
-getAnyImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAnyImage) method.
+getAnyImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getAnyImage) method.
 
 ### getAcquisitionMultiCamNumChannels
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 In 2.0 this method is not available. You may try to replicate it by
 comparing the number of channels in the Datastore (via its
-[getAxisLength]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String)) method) to the number of unique cameras declared by the
-[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)s
+[getAxisLength](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getAxisLength(java.lang.String)) method) to the number of unique cameras declared by the
+[Metadata](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html)s
 of the various images (see
 [()
-Metadata.getCamera]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html#getCamera)). You can iterate over all images in the Datastore
+Metadata.getCamera](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html#getCamera)). You can iterate over all images in the Datastore
 via the
 [()
-getUnorderedImageCoords]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getUnorderedImageCoords) method combined with the
-[getImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
+getUnorderedImageCoords](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getUnorderedImageCoords) method combined with the
+[getImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getImage(org.micromanager.data.Coords)) method.
 
 ### getAcquisitionPath
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 The path of a Datastore's saved location on disk is accessible via its
 [()
-getSavePath]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getSavePath) method.
+getSavePath](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getSavePath) method.
 
 ### getAutofocus
 
 Use
-[AutofocusManager.getAutofocusMethod]({% include link url='2.0API' %}/mmstudio/org/micromanager/AutofocusManager.html#getAutofocusMethod)
+[AutofocusManager.getAutofocusMethod](/apidoc/mmstudio/latest/org/micromanager/AutofocusManager.html#getAutofocusMethod)
 instead.
 
 ### getAutofocusManager
 
 Use
-[Studio.getAutofocusManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio#getAutofocusManager)
+[Studio.getAutofocusManager](/apidoc/mmstudio/latest/org/micromanager/Studio#getAutofocusManager)
 instead.
 
 ### getBackgroundColor
@@ -393,52 +393,52 @@ color selection is now handled automatically. Thus this method is no
 longer needed. However, if you need to manually set colors for the few
 edge cases where colors are not handled automatically, you should
 investigate the
-[ApplicationSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html)
+[ApplicationSkin](/apidoc/mmstudio/latest/org/micromanager/ApplicationSkin.html)
 module.
 
 ### getBackgroundStyle
 
 This method was replaced by the
-[ApplicationSkin.getSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html#getSkin)
+[ApplicationSkin.getSkin](/apidoc/mmstudio/latest/org/micromanager/ApplicationSkin.html#getSkin)
 method.
 
 ### getCacheForWindow
 
 This has been replaced by the
-[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)'s
+[DisplayWindow](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)'s
 [()
-getDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#getDatastore) method.
+getDatastore](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html#getDatastore) method.
 
 ### getCurrentAlbum
 
 The Album Datastore can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-album]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#album) method.
+album](/apidoc/mmstudio/latest/org/micromanager/Studio.html#album) method.
 
 ### getMMCore
 
 The Micro-Manager Core object can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### getROI
 
 Use the
-[Core's]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html)
+[Core's](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)
 [()
-getROI]({% include link url='2.0API' %}/mmcorej/mmcorej/CMMCore.html#getROI) method.
+getROI](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#getROI) method.
 
 ### getSnapLiveWin
 
 This has been replaced by the
-[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
+[SnapLiveManager](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html)'s
 [()
-getDisplay]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#getDisplay) method. You can access the SnapLiveManager via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+getDisplay](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#getDisplay) method. You can access the SnapLiveManager via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
+live](/apidoc/mmstudio/latest/org/micromanager/Studio.html#live) method.
 
 Please note that the snap/live display is prone to being destroyed and
 recreated. It is not recommended that you keep references to the
@@ -449,7 +449,7 @@ snap/live window in memory; request it anew each time you need it.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Consequently, there is no need to generate unique acquisition names.
@@ -461,12 +461,12 @@ This method was deprecated in 1.4 and has been removed in 2.0
 ### getXYStageName
 
 This information can be accessed via the
-[Core]({% include link url='2.0API' %}mcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-getXYStageDevice]({% include link url='2.0API' %}mcorej/CMMCore.html#getXYStageDevice) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+getXYStageDevice](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#getXYStageDevice) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### initializeAcquisition
 
@@ -477,7 +477,7 @@ are saved; consequently, it is no longer needed.
 
 AutofocusPlugins should now be compiled and annotated with the @Plugin
 annotation (as described in
-[MMPlugin]({% include link url='2.0API' %}/mmstudio/org/micromanager/MMPlugin.html)).
+[MMPlugin](/apidoc/mmstudio/latest/org/micromanager/MMPlugin.html)).
 If this is done and the resulting jar file is included in the
 mmautofocus directory of your ImageJ installation, then the plugin will
 automatically be detected at runtime. There is no mechanism for loading
@@ -486,31 +486,31 @@ a plugin after µManager's initialization has completed.
 ### isLiveModeOn
 
 This method has been replaced by the
-[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[isLiveModeOn]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#isLiveModeOn) method. The SnapLiveManager in turn can be accessed
+[SnapLiveManager](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html)'s
+[isLiveModeOn](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#isLiveModeOn) method. The SnapLiveManager in turn can be accessed
 via
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
-[live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
+[live](/apidoc/mmstudio/latest/org/micromanager/Studio.html#live) method.
 
 Note that if you just want to temporarily suspend live mode, to resume
 it later, then you can make use of the SnapLiveManager's
-[setSuspended]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
+[setSuspended](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#setSuspended(boolean))
 method.
 
 ### logError
 
 Replaced by the
-[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)'s
-[logError]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html#logError(java.lang.Exception)) method (and similarly for the variants on this method). The
+[LogManager](/apidoc/mmstudio/latest/org/micromanager/LogManager.html)'s
+[logError](/apidoc/mmstudio/latest/org/micromanager/LogManager.html#logError(java.lang.Exception)) method (and similarly for the variants on this method). The
 LogManager can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#logs) method.
+logs](/apidoc/mmstudio/latest/org/micromanager/Studio.html#logs) method.
 
 ### logMessage
 
 As with `logError`, replaced by the LogManager's
-[logMessage]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html#logMessage(java.lang.String)) method.
+[logMessage](/apidoc/mmstudio/latest/org/micromanager/LogManager.html#logMessage(java.lang.String)) method.
 
 ### logStartupProperties
 
@@ -519,41 +519,41 @@ This method was removed as it is unused by all known third-party code.
 ### message
 
 Replaced by the
-[ScriptController]({% include link url='2.0API' %}/mmstudio/org/micromanager/ScriptController.html)'s
-[message]({% include link url='2.0API' %}/mmstudio/org/micromanager/ScriptController.html#message(java.lang.String)) method. The ScriptController in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[ScriptController](/apidoc/mmstudio/latest/org/micromanager/ScriptController.html)'s
+[message](/apidoc/mmstudio/latest/org/micromanager/ScriptController.html#message(java.lang.String)) method. The ScriptController in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-scripter]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#scripter) method.
+scripter](/apidoc/mmstudio/latest/org/micromanager/Studio.html#scripter) method.
 
 ### openAcquisition
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 You can request new Datastores via the
-[DataManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html)'s
+[DataManager](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html)'s
 various "createDatastore" methods (e.g.
 [()
-createRAMDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createRAMDatastore),
-[createMultipageTIFFDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
-[createSinglePlaneTIFFSeriesDatastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))). If you use a file-backed
+createRAMDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createRAMDatastore),
+[createMultipageTIFFDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createMultipageTIFFDatastore(java.lang.String,%20boolean,%20boolean)), and
+[createSinglePlaneTIFFSeriesDatastore](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#createSinglePlaneTIFFSeriesDatastore(java.lang.String))). If you use a file-backed
 Datastore, then images will automatically be saved to disk as you add
 them to the Datastore, though you should make certain to call the
 Datastore's
 [()
-freeze]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#freeze) method when you are done to ensure that saving completes
+freeze](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#freeze) method when you are done to ensure that saving completes
 successfully.
 
 If you wish to view the images in the Datastore, use the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[createDisplay]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore)) method. The DisplayManager in turn can be accessed via
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)'s
+[createDisplay](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#createDisplay(org.micromanager.data.Datastore)) method. The DisplayManager in turn can be accessed via
 the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-displays]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#displays) method.
+displays](/apidoc/mmstudio/latest/org/micromanager/Studio.html#displays) method.
 
 In any case, there is no need to specify the dimensionality of the
 dataset ahead of time as was the case with `openAcquisition`
@@ -561,32 +561,32 @@ dataset ahead of time as was the case with `openAcquisition`
 ### openAcquisitionData
 
 Replaced by
-[DataManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html)'s
-[loadData]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) method. The DataManager in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[DataManager](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html)'s
+[loadData](/apidoc/mmstudio/latest/org/micromanager/data/DataManager.html#loadData(java.lang.String,%20boolean)) method. The DataManager in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-data]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#data) method.
+data](/apidoc/mmstudio/latest/org/micromanager/Studio.html#data) method.
 
 ### promptToSaveAcquisition
 
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Replaced by the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)'s
-[save]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window)) method.
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)'s
+[save](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#save(org.micromanager.data.Datastore.SaveMode,%20java.awt.Window)) method.
 
 ### registerForEvents
 
 Moved to the
-[EventManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/EventManager.html),
+[EventManager](/apidoc/mmstudio/latest/org/micromanager/events/EventManager.html),
 which can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-events]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#events) method.
+events](/apidoc/mmstudio/latest/org/micromanager/Studio.html#events) method.
 
 ### removeMMBackgroundListener
 
@@ -596,7 +596,7 @@ happen automatically, so this method is obsolete.
 ### saveConfigPresets
 
 While this method still exists (as part of the
-[Application]({% include link url='2.0API' %}/mmstudio/org/micromanager/Application.html)
+[Application](/apidoc/mmstudio/latest/org/micromanager/Application.html)
 module), it now two parameters: a path string to save the config to, and
 a boolean for whether to allow overwriting of existing files. The old
 functionality that displayed a save dialog has been removed.
@@ -606,7 +606,7 @@ functionality that displayed a save dialog has been removed.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 As you now have complete control over adding images to your Datastores,
@@ -617,19 +617,19 @@ it is up to you to implement asynchronous image-adding if you need it.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Arbitrary metadata storage is available for both
-[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata](/apidoc/mmstudio/latest/org/micromanager/data/SummaryMetadata.html)
 and individual image
-[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
+[Metadata](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html)
 via their respective `userData` fields.
 
 ### setBackgroundStyle
 
 This method was replaced by the
-[ApplicationSkin.setSkin]({% include link url='2.0API' %}/mmstudio/org/micromanager/ApplicationSkin.html#setSkin)
+[ApplicationSkin.setSkin](/apidoc/mmstudio/latest/org/micromanager/ApplicationSkin.html#setSkin)
 method.
 
 ### setChannelColor
@@ -637,23 +637,23 @@ method.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)'s
+[getDisplays](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel color is a property of the
-[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html)
+[DisplaySettings](/apidoc/mmstudio/latest/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted channel colors (e.g. by using the
 [()
-copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
+copy](/apidoc/mmstudio/latest/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-[setDisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
+[setDisplaySettings](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -663,23 +663,23 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)'s
+[getDisplays](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 Channel contrast settings are properties of the
-[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html)
+[DisplaySettings](/apidoc/mmstudio/latest/org/micromanager/display/DisplaySettings.html)
 for a given DisplayWindow. You can create a new DisplaySettings with
 adjusted contrast (e.g. by using the
 [()
-copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
+copy](/apidoc/mmstudio/latest/org/micromanager/display/DisplaySettings.html#copy) method), and then cause a DisplayWindow to use the new channel
 color via its
-[setDisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
+[setDisplaySettings](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html#setDisplaySettings(org.micromanager.display.DisplaySettings)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -689,19 +689,19 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Channel names are a property of the
-[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata](/apidoc/mmstudio/latest/org/micromanager/data/SummaryMetadata.html)
 associated with a given Datastore. You can access the SummaryMetadata
 using the Datastore's
 [()
-getSummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#getSummaryMetadata) method, make a copy with the
+getSummaryMetadata](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#getSummaryMetadata) method, make a copy with the
 [()
-copy]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html#copy) method, adjust the channel names to suit, and then cause the
+copy](/apidoc/mmstudio/latest/org/micromanager/data/SummaryMetadata.html#copy) method, adjust the channel names to suit, and then cause the
 Datastore to use the new summary metadata using the
-[setSummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
+[setSummaryMetadata](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#setSummaryMetadata(org.micromanager.data.SummaryMetadata)) method.
 
 The above logic relies on you understanding the use of Builder patterns.
 See [Using\_Builders](Using_Builders) for more information.
@@ -711,20 +711,20 @@ See [Using\_Builders](Using_Builders) for more information.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in. Likewise, you are responsible for keeping track of
 any associated
-[DisplayWindow]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html)s
+[DisplayWindow](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html)s
 open for a given Datastore. However, for managed Datastores, you can
 request all open DisplayWindows via the
-[DisplayManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html)'s
-[getDisplays]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
+[DisplayManager](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html)'s
+[getDisplays](/apidoc/mmstudio/latest/org/micromanager/display/DisplayManager.html#getDisplays(org.micromanager.data.Datastore)) method.
 
 This method is not available in 2.0. However, you can replicate its
 functionality for a given DisplayWindow by combining the
-[SetDisplayedImageTo]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method of DisplayWindow and the
+[SetDisplayedImageTo](/apidoc/mmstudio/latest/org/micromanager/display/DisplayWindow.html#setDisplayedImageTo(org.micromanager.data.Coords)) method of DisplayWindow and the
 `shouldAutostretch` field of the
-[DisplaySettings]({% include link url='2.0API' %}/mmstudio/org/micromanager/display/DisplaySettings.html).
+[DisplaySettings](/apidoc/mmstudio/latest/org/micromanager/display/DisplaySettings.html).
 
 ### setConfigChanged
 
@@ -735,21 +735,21 @@ This method was removed as it is unused by all known third-party code.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 Arbitrary metadata storage is available for both
-[SummaryMetadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/SummaryMetadata.html)
+[SummaryMetadata](/apidoc/mmstudio/latest/org/micromanager/data/SummaryMetadata.html)
 and individual image
-[Metadata]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Metadata.html)
+[Metadata](/apidoc/mmstudio/latest/org/micromanager/data/Metadata.html)
 via their respective `userData` fields.
 
 ### setImageSavingFormat
 
 When saving the contents of a
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html),
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html),
 you must specify the format you want to use in the form of a
-[Datastore.SaveMode]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.SaveMode.html).
+[Datastore.SaveMode](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.SaveMode.html).
 Alternately, if you want to show the user a save-file dialog, then that
 dialog will include a file format dropdown menu that they can use to
 decide which format to use. The dropdown menu (and the MDA dialog's
@@ -759,82 +759,82 @@ last used to save files.
 ### setRelativeStagePosition
 
 This functionality be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-setRelativePosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativePosition) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+setRelativePosition](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setRelativePosition) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### setRelativeXYStagePosition
 
 This functionality can be accessed via the
-[Core]({% include link url='2.0API' %}mcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-setRelativeXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setRelativeXYPosition) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+setRelativeXYPosition](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setRelativeXYPosition) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### setStagePosition
 
 This functionality can be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-setPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setPosition) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+setPosition](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setPosition) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### setXYOrigin
 
 This functionality can be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-setOriginXY](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setOriginXY) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+setOriginXY](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setOriginXY) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### setXYStagePosition
 
 This functionality can be accessed via the
-[Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)'s
+[Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)'s
 [()
-setXYPosition](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html#setXYPosition) method. The Core in turn can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+setXYPosition](/apidoc/mmcorej/latest/mmcorej/CMMCore.html#setXYPosition) method. The Core in turn can be accessed via the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-core]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#core) method.
+core](/apidoc/mmstudio/latest/org/micromanager/Studio.html#core) method.
 
 ### showError
 
 Moved to the
-[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)
+[LogManager](/apidoc/mmstudio/latest/org/micromanager/LogManager.html)
 object, which can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
-[logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
+[logs](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 method.
 
 ### showMessage
 
 Moved to the
-[LogManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/LogManager.html)
+[LogManager](/apidoc/mmstudio/latest/org/micromanager/LogManager.html)
 object, which can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
-[logs]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
+[logs](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 method.
 
 ### showXYPositionList
 
 For consistency, this method was renamed to
 [()
-showPositionList]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html#showPositionList) in
-[PositionListManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/PositionListManager.html).
+showPositionList](/apidoc/mmstudio/latest/org/micromanager/PositionListManager.html#showPositionList) in
+[PositionListManager](/apidoc/mmstudio/latest/org/micromanager/PositionListManager.html).
 
 ### sleep
 
 This method has been removed. Use
-[Thread.sleep]({% include link url='2.0API' %}http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#sleep%28long%29)
+[Thread.sleep](http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#sleep%28long%29)
 instead.
 
 ### snapAndAddImage
@@ -842,31 +842,31 @@ instead.
 As discussed in the notes on `acquisitionExists`, above, Micro-Manager
 no longer maintains records on any acquisition objects; you are
 responsible for maintaining your own references to the
-[Datastore]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html)
+[Datastore](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html)
 that your data is in.
 
 You can replicate the functionality of this method through a combination
 of the
-[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[snap]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
+[SnapLiveManager](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html)'s
+[snap](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#snap(boolean))
 method and the Datastore's
-[putImage]({% include link url='2.0API' %}/mmstudio/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method. The SnapLiveManager can be accessed from the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[putImage](/apidoc/mmstudio/latest/org/micromanager/data/Datastore.html#putImage(org.micromanager.data.Image)) method. The SnapLiveManager can be accessed from the
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-live]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#live) method.
+live](/apidoc/mmstudio/latest/org/micromanager/Studio.html#live) method.
 
 ### snapSingleImage
 
 Replaced by the
-[SnapLiveManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html)'s
-[snap]({% include link url='2.0API' %}/mmstudio/org/micromanager/SnapLiveManager.html#snap(boolean))
+[SnapLiveManager](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html)'s
+[snap](/apidoc/mmstudio/latest/org/micromanager/SnapLiveManager.html#snap(boolean))
 method.
 
 ### unregisterForEvents
 
 Moved to the
-[EventManager]({% include link url='2.0API' %}/mmstudio/org/micromanager/events/EventManager.html)
+[EventManager](/apidoc/mmstudio/latest/org/micromanager/events/EventManager.html)
 object, which can be accessed via the
-[Studio]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html)'s
+[Studio](/apidoc/mmstudio/latest/org/micromanager/Studio.html)'s
 [()
-events]({% include link url='2.0API' %}/mmstudio/org/micromanager/Studio.html#events) method.
+events](/apidoc/mmstudio/latest/org/micromanager/Studio.html#events) method.

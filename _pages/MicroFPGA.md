@@ -9,9 +9,9 @@ layout: page
 | ---------------------------- | ---------------------------------------------------------------- |
 | Summary:                     | Adapter for [MicroFPGA](https://github.com/jdeschamps/MicroFPGA) |
 | Author:                      | Joran Deschamps                                                  |
-| License:                     | LGPL                                                             |
+| License:                     | LGPL, MIT                                                        |
 | Platforms:                   | Linux, Mac, and Windows                                          |
-| Since version:               | 2.0.0-gamma                                                      |
+| Since version:               | 2.0.1                                                            |
 | Automated Serial Port Setup: | Yes                                                              |
 | Peripheral device discovery: | Yes                                                              |
 |                              |                                                                  |
@@ -29,23 +29,24 @@ signals or producing analog voltages (with the help of a complimentary
 electronics board).
 
 In order to use MicroFPGA, you need to set-up the FPGA board and upload
-the MicroFPGA firmware. For more information, refer to the [Github
-repository](https://github.com/jdeschamps/MicroFPGA).
+the MicroFPGA firmware. For more information, refer to the [guide]([https://github.com/jdeschamps/MicroFPGA](https://mufpga.github.io/).
 
-The Github repository contains:
+The guide contains:
 
-  - [Guide and
-    tutorials](https://github.com/jdeschamps/MicroFPGA/blob/master/tutorials/README.md)
-  - Firmware for the
-    [Au](https://github.com/jdeschamps/MicroFPGA/tree/master/Au_firmware)
-    and
-    [Cu](https://github.com/jdeschamps/MicroFPGA/tree/master/Cu_firmware)
-    FPGA boards.
-  - [Complimentary
-    electronics](https://github.com/jdeschamps/MicroFPGA/tree/master/Electronics)
-  - Librairies for
-    [Java](https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Java)
-    and
-    [Python](https://github.com/jdeschamps/MicroFPGA/tree/master/MicroFPGA-Py)
+1. [Principle]([principle.md](https://mufpga.github.io/principle.html))
+2. [Installation guide](https://mufpga.github.io/installation.html)
+3. [Resources]([resources.md](https://mufpga.github.io/resources.html))
+4. [Tutorials]([tutorials.md](https://mufpga.github.io/tutorials.html))
+
+
+{% include notice icon="info" content="Important: the default baud-rate is 57600." %}
+
 
 {% include notice icon="info" content="For use with Micro-Manager 1.4, the baudrate must be changed within the firmware ([https://github.com/jdeschamps/MicroFPGA/blob/master/tutorials/changing_baudrate.md see tutorial]) as the default value is bigger than what the Micro-manager Hardware Wizard Configuration menu allows." %}
+
+{% include notice icon="info" content="The project also includes [complementary elecronics](https://github.com/mufpga/MicroFPGA-electronics)." %}
+
+
+## Cite us
+Joran Deschamps, Christian Kieser, Philipp Hoess, Takahiro Deguchi, Jonas Ries, "MicroFPGA: An affordable FPGA platform for microscope control",
+HardwareX 2023 (13): e00407, doi:[10.1016/j.ohx.2023.e00407](https://doi.org/10.1016/j.ohx.2023.e00407).

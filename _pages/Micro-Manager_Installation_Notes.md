@@ -57,6 +57,12 @@ Settings, Update & Security, Windows Security, App & Browser control,
 Reputation based Protection Settings, switch off "Check apps and files".
 Or, you can right click on the installer and select "Unblock".
 
+If the application looks too small, use the Windows File Explorer
+and locate the installation directory (such as C:\Program Files\Micro-Manager).
+Right click on ImageJ.exe, select Properties, select the Compatibility tab,
+ensure that "Use this setting to fix scaling problems..." is checked and click 
+OK or Apply (you may want to do this "for all users").
+
 ## Mac OS X
 
 Double click the file Micro-Manager1.x.x that you just downloaded (see

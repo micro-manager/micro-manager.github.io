@@ -39,10 +39,10 @@ copy-paste capabilities.
 Scripts have access to three Micro-Manager specific objects: the
 Micro-Manager Core (mmc), the Micro-Manager GUI (gui), and the
 Micro-Manager Acquisition Engine (acq). The [mmc
-object](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)
+object](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)
 allows for relatively low level access to Micro-Manager functionality,
 whereas the [gui
-object](https://valelab.ucsf.edu/~MM/doc/mmstudio/org/micromanager/api/ScriptInterface.html)
+object](/apidoc/mmstudio/1.4/org/micromanager/api/ScriptInterface.html)
 makes it easy to accomplish more complicated tasks. A number of [Example
 Beanshell scripts](Example_Beanshell_scripts) is available.
 

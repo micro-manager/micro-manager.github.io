@@ -9,7 +9,7 @@ Install Community Edition of IntelliJ : <https://www.jetbrains.com/idea/download
 
 <!-- -->
 
-Install the latest Micromanager 2.0 nightly : <https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/>  
+Install the latest Micromanager 2.0 nightly : <https://download.micro-manager.org/nightly/2.0/Windows/>  
 
 The location of where you have micromanager 2.0 Gamma installed will be
 used for **Working directory** later and for including the location of

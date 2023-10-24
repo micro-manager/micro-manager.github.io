@@ -18,8 +18,7 @@ layout: page
 </td>
 <td markdown="1">
 
-Device adapters for Zaber Technologies linear stages, XY stages, filter
-wheels and microscope components
+Device adapters for Zaber Technologies linear stages, XY stages, and microscope components
 
 </td>
 </tr>
@@ -67,7 +66,7 @@ All platforms (uses serial port)
 </td>
 <td markdown="1">
 
-Stage, XYStage, FilterWheel, FilterCubeTurret, Illuminator
+Stage, XYStage, FilterWheel, FilterCubeTurret, Objective Changer, Illuminator
 
 </td>
 </tr>
@@ -81,19 +80,19 @@ configuration.
 ## Compatibility
 
 Currently Micro-Manager has five kinds of drivers for controlling Zaber
-devices: Stage, XYStage, Filter Wheel, Filter Cube Turret and
-Illuminator. These drivers require Zaber devices to have firmware 6.06
+devices: Stage, XYStage, Filter Wheel, Filter Cube Turret, Objective Changer and
+Illuminator. These drivers require Zaber devices to have firmware 6.14
 or higher (unless otherwise noted) and be set to use the Zaber ASCII
 protocol. The individual drivers each have specific device requirements:
 
 -   The Stage driver requires any Zaber motion stage.
--   The XYStage driver requires that at least two devices are connected
-    to a port
--   The Filter Wheel driver requires that a [filter
-    wheel](http://www.zaber.com/products/product_group.php?group=X-FWRX-FWR)
-    is connected.
+-   The XYStage driver requires either one controller with at least two axes or a two separate integrated controllers.
+-   The Filter Wheel driver requires X-FWR that is connected.
 -   The Filter Cube Turret driver requires that an X-FCR is connected.
-    The -FCR is a component of the [MVR
+    The X-FCR is a component of the [MVR
+    microscope](https://www.zaber.com/products/microscopes/MVR).
+-   The Objective Changer driver requires that an [X-MOR](https://www.zaber.com/products/microscopes/X-MOR-E) is
+    connected. The X-MOR is a component of the [MVR
     microscope](https://www.zaber.com/products/microscopes/MVR).
 -   The Illuminator driver requires that an [X-LCA series LED
     controller](https://www.zaber.com/products/microscopes/X-LCA4) is
@@ -104,17 +103,18 @@ mode](https://www.zaber.com/protocol-manual#topic_command_lockstep),
 where multiple physical axes can move in concert as a single logical
 axis.
 
+## Installation
+
+Micro-Manager on Windows requires additional files installed by [Zaber Motion for Micro-manager](https://www.zaber.com/support/software-downloads.php?product=zaber_motion_micro_manager_win64&version=latest) installer.
+Please run the installer after installing Micro-Manager.
+
 ## Set Up
 
 ### Zaber Device
 
 If you're using Zaber stand-alone controllers, first ensure that they
-are configured by following the easy set-up page here: [X-MCB2 Easy
-Set-Up](http://www.zaber.com/products/product_group.php?group=X-MCB2&tab=Easy%20Set-up).
-In particular, ensure the controller has optimized settings by setting
-the correct *peripheralid* setting. You can find more information on how
-to set the peripheral ID in Zaber’s Protocol Manuals
-([ASCII](https://www.zaber.com/wiki/Manuals/ASCII_Protocol_Manual#peripheralid)).
+are configured by following the easy set-up page here: [X-MCC Easy
+Set-Up](https://www.zaber.com/products/controllers-joysticks/X-MCC/easy-set-up).
 
 If you're using Zaber devices with built-in controllers, follow the easy
 set-up page here: [Built-In Controller Easy
@@ -135,6 +135,9 @@ Wheel](https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Whee
 Turret](https://www.zaber.com/wiki/Software/MicroManager#Setting_Up_A_Filter_Cube_Turret)
 
 [Setting Up An
+Objective Changer](https://www.zaber.com/w/Software/MicroManager#Setting_Up_An_Objective_Changer)
+
+[Setting Up An
 Illuminator](https://www.zaber.com/w/Software/MicroManager#Setting_Up_An_Illuminator)
 
 ## Control
@@ -142,8 +145,8 @@ Illuminator](https://www.zaber.com/w/Software/MicroManager#Setting_Up_An_Illumin
 There are several ways to control the position of the stage:
 
 -   Stage Control Plugin
--   Mouse Movement (click and drag in Snap/Live Window)
--   Filter Wheel Presets
+-   Mouse movement (click and drag in Snap/Live Window)
+-   Property presets
 -   Using the manual adjustment knobs on the controller
 
 Adjust the speed and acceleration of each device through the *Tools &gt;

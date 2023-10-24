@@ -45,6 +45,9 @@ section: Extend
 
 ## Mac OS X
 
+-   Official build instructions are in
+    [`doc/how-to-build.md`](https://github.com/micro-manager/micro-manager/blob/main/doc/how-to-build.md)
+    in the source repository
 -   [Build on MacOS X](Build_on_MacOS_X)
 -   [Building Boost on MacOS X](Building_Boost_on_MacOS_X)
     (obsolete)
@@ -57,6 +60,9 @@ section: Extend
 
 ## Linux
 
+-   Official build instructions are in
+    [`doc/how-to-build.md`](https://github.com/micro-manager/micro-manager/blob/main/doc/how-to-build.md)
+    in the source repository
 -   [ArchLinux AUR
     package](https://aur.archlinux.org/packages/micromanager-git/) and
     [build

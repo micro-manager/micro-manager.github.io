@@ -7,7 +7,7 @@ redirect_from:
 layout: page
 ---
 
-## Lumen Dynamics XCite Adapter
+## Excelitas (Lumen Dynamics) X-Cite Adapter
 
 <table>
 <tr>
@@ -18,8 +18,7 @@ layout: page
 </td>
 <td markdown="1">
 
-Adapter for the [Lumen Dynamics](http://www.ldgi-xcite.com/index.php)
-X-Cite® Light Sources
+Adapter for the [Excelitas](https://www.excelitas.com/) X-Cite® Light Sources
 
 </td>
 </tr>
@@ -69,7 +68,7 @@ Windows, Mac OS X and Linux
 </td>
 <td markdown="1">
 
-X-Cite® 120PC, 120PC Q and X-Cite® exacte
+X-Cite® 120PC, 120PC Q, X-Cite® exacte, and X-Cite® XYLIS
 
 </td>
 </tr>
@@ -84,7 +83,7 @@ X-Cite® 120PC, 120PC Q and X-Cite® exacte
 </tr>
 </table>
 
-The Lumen Dynamics X-Cite® 120PC and *exacte* are computer controlled,
+The Excelitas X-Cite® 120PC and *exacte* are computer controlled,
 remotely positioned (liquid light guide) light sources for UV/Visible
 microscopy applications.
 
@@ -118,9 +117,8 @@ Serial port settings:
 
 ### Exacte
 
-When using the Exacte with a Mac download the FTDI drivers for the
-USB-Serial adapter
-[here](https://valelab.ucsf.edu/~nico/MMwiki/images/4/49/FTDIUSBSerialDriver_v2_2_8.zip)
+When using the Exacte with a Mac download the FTDI drivers for the USB-Serial
+adapter.
 
 On windows, ensure that you have installed both the USB and virtual COM
 port drivers. To do this, follow these steps:
@@ -144,13 +142,10 @@ port drivers. To do this, follow these steps:
 
 ## Support
 
-For questions or issues related to Micro-Manager and this adapter please
-check the Micro-Manager listserv:
+For questions or issues related to Micro-Manager and this adapter please check
+the [Image.sc forum](https://image.sc/).
 
-[<http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general>](http://sourceforge.net/mailarchive/forum.php?forum_name=micro-manager-general)
-
-For X-Cite® device support please contact Lumen Dynamics: Email:
-<Techsupport@LDGI.com> Ph: +1 800 668-8752 (USA and Canada)
+For X-Cite® device support please contact [Excelitas](https://www.excelitas.com/omnicure-x-cite-inquiries).
 
 For bug reports please contact: [Mission Bay
 Imaging](http://www.missionbayimaging.com/mbimaging2010/Welcome.html)

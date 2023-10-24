@@ -17,26 +17,34 @@ layout: page
 
 ------------------------------------------------------------------------
 
+## Versions
+
+**FlyCap2 version 2.13.3.61 is required.** Micro-Manager versions older
+than the 2 February 2022 nigthly build require FlyCap2 version
+2.10.3.266. Still older versions like 2.9.3.43 do not work.
+
+This device adapter does not work for Micro-Manager versions from
+2022-02-02 to 2023-08-10.
+
 ## Installation
 
 Install the [FlyCap2 viewer
 software](https://www.ptgrey.com/support/downloads) for your OS. Make
 sure that the FlyCapture2 software works with your camera. Copy
-libiomp5md.dll and FlyCapture2\_v100.dll (from the bin or bin64
-directory in the FlyCap2 directory) to the Micro-Manager directory
-(default: C:\\Program Files\\Micro-Manager). Make sure that your are
-using version 2.10.3.266 of the FlyCapture software (older versions like
-2.9.3.43 do not work). Since we are not allowed to re-distribute
-FlyCapture2\_v100.dll, it may well be that 2.10.3.266 is no longer
-available (in which case you should ask Point Grey for a copy of
-2.10.3.266 or re-build the Micro-Manager Point Grey Device adapter
-against the then available SDK).
+libiomp5md.dll and FlyCapture2\_v140.dll (from the bin or bin64
+directory in the FlyCap2 directory, you may need to install the full
+SDK to find these files) to the Micro-Manager directory
+(default: C:\\Program Files\\Micro-Manager). Since we are not allowed
+to re-distribute FlyCapture2\_v140.dll, it may well be that 2.13.3.61
+is no longer available (in which case you should ask Point Grey for a
+copy of 2.13.3.61 or re-build the Micro-Manager Point Grey Device
+adapter against the then available SDK).
 
 You will need an account with PT Grey before you can access the
 downloads:
 
-[2.10.3.266 32/64
-bit](https://flir.app.boxcn.net/v/Flycapture2SDK/folder/80977586241)
+https://www.flir.com/products/flycapture-sdk/
+
 
 ## Device Configuration
 
@@ -73,6 +81,7 @@ Chameleon3 CM3-U3-31S4M
 Flea3 FL3-U3-13S2M-CS
 Scorpion CCD SCOR-14SO
 Blackfly BFLY-U3-23S6M-C
+Grasshopper3 GS3-U3-23S6M-C
 ```
 
 ## Various

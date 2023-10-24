@@ -34,8 +34,8 @@ That means that you can use its comprehensive set of microscope control
 and image acquisition commands from any Java program or Java-enabled
 scripting environment, such as Matlab. The entire API is listed in the
 [API
-Reference](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html)
+Reference](/apidoc/mmcorej/latest/mmcorej/CMMCore.html)
 in auto-generated Doxygen format. Device adapter authors will be
 interested in the [Device-API
-reference](https://valelab.ucsf.edu/~MM/doc/MMDevice/html/class_m_m_1_1_device.html).
+reference](/apidoc/MMDevice/latest/class_m_m_1_1_device.html).
 

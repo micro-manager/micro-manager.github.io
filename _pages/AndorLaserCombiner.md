@@ -45,9 +45,12 @@ Pedro Almada, documentation fixes</p></td>
 
 ## Installation
 
-In most cases the ALC will work "out of the box".
+You must install the
+[Microsoft Visual C++ 2008 Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2008-vc-90-sp1-no-longer-supported)
+for this device adapter to work (versions of Micro-Manager from
+late 2013 to early 2022 came with this, but future versions will not).
 
-But if you're setting up a brand new computer, continue on to
+If you're setting up a brand new computer, continue on to
 [Configure ALC\_SDK
 dependencies](#configure-alc_sdk-dependencies), and for
 Micro-Manager versions than nightly build 1.4.16\_20131025 follow the

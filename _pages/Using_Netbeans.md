@@ -5,68 +5,76 @@ redirect_from: /wiki/Using_Netbeans
 layout: page
 ---
 
-The following instructions for debugging Micro-Manager's Java code with
-NetBeans are intended to work on Windows or Mac. Updated for 2.0.0
+The following instructions, for debugging Micro-Manager's Java code with
+NetBeans, are intended to work on Windows or Mac. These instructions apply
+to both the Java layer of Micro-Manager itself and to plugins. 
+
+Updated 4/25/2022 for Micro-Manager version 2.0.1 and NetBeans version 13.
 
 (See also: [Writing plugins for
 Micro-Manager](Writing_plugins_for_Micro-Manager))
 
-1.  Download and install a recent Micro-Manager nightly build. We will
+## Installation
+
+-  Download and install a recent Micro-Manager nightly build. We will
     refer to the installed Micro-Manager directory as `$INSTALLDIR`
     below.
     
-2.  Download a copy of the latest [Micro-Manager
+-  Download a copy of the latest [Micro-Manager
     source](http://micro-manager.org/wiki/Micro-Manager_Source_Code).
     * Clone the main repository:  
     `git clone https://github.com/micro-manager/micro-manager`
     * Initialize all submodules:  
     `cd micro-manager`  
-    `git submodule update –init –recursive`
+    `git submodule update -–init -–recursive`
     
     * We'll refer to the root source directory as `$SRCDIR` below.
     
-3.  Download, install and run [NetBeans](http://netbeans.org). The Java
+-  Download, install and run [NetBeans](http://netbeans.org). The Java
     SE Bundle is sufficient if you already have the JDK (Java
     Development Kit) installed on your computer. Otherwise, download a
     JDK from [AdoptOpenJDK](https://adoptopenjdk.net/) . Micro-Manager
     is currently developed with JDK 8.
     
-4.  Choose **File** &gt; **New Project...** &gt; \[Categories\]
-    **Java** &gt; \[Projects\] **Java Project with Existing Sources**.
-    Press **Next**.
+## Setting up the IDE
     
-5.  Give your project a name. The **Project Folder** is best saved
+-  Launch NetBeans. The first time you run it, you may need to browse to the location of the JDK that you installed above. 
+
+-  Choose **File** &gt; **New Project...**. Under \[Categories\] in the left pane, choose 
+    **Java with Ant**. Then, choose a project type in the right pane. For beginners, it is easiest to start by modifying the code for an existing plugin, so choose **Java Project with Existing Sources**. If you want to start with a blank slate, choose **Java Class Library** instead. Press **Next**.
+    
+-   Give your project a name, and optionally change the location where it is saved. The **Project Folder** is best saved
     outside of the Micro-Manager source directory. Press **Next**.
-6.  Under **Source Package Folders**, click **Add Folder** at right and
-    browse to `$SRCDIR/mmstudio/src/main/java`, as well as
-    `$SRCDIR/mmstudio/src/main/resources`. If you want to develop a
-    plugin, you can also add `$SRCDIR/plugins/*/src/main/java` at this
-    time. You can also add plugins later. Press **Next**.
+    
+-   Under **Source Package Folders**, click **Add Folder**. 
+    * If you want to edit the source code for Micro-Manager itself, select `$SRCDIR/mmstudio/src/main/java`, as well as
+    `$SRCDIR/mmstudio/src/main/resources`. 
+    * If you want to develop a plugin, select 'SRCDIR/micro-manager/plugins/Example' (or choose another existing plugin to modify). 
+    * Press **OK**, then **Next**.
 
-7.  Include all files (**\*\***). Press **Finish**.
+-   Include all files (**\*\***). Press **Finish**.
 
-8.  Right-click your project in the **Projects** tab (probably at left)
-    and select **Properties**.
+-   Your project should now appear in the left-hand pane of the main window, under the **Projects** tab. 
+    Right-click the project and select **Properties**.
 
-9.  Select **Libraries** under **Categories**. Make sure the **Java
-    Platform** matches the version of Micro-Manager you are using (e.g.,
-    64-bit JDK 1.8 - but using a newer Java Platform in NetBeans than
-    the one shipped with Micro-Manager is usually okay).
-
-10.  Under **Compile** &gt; **Compile-time Libraries**, click **Add
-    Jar/Folder** and add `$INSTALLDIR/ij.jar`, as well as all jars in
-    `$INSTALLDIR/plugins/Micro-Manager` *except for* `MMJ_.jar`.
-
-11.  Select **Run** under **Categories**. For the `<default config>`, set the following parameters:
+-   In the left-hand navigation pane of the resulting window, choose **Libraries**. 
+   * Click the (+) sign next to **Classpath** and choose **Add JAR/Folder**. Navigate to `$INSTALLDIR` and select `ij.jar`. Click **Choose**. 
+   * Now click the (+) sign and choose 'Add JAR/Folder' once more. Back inside the micro-manager installation directory, navigate to 'plugins/Micro-Manager' 
+        - If you are builiding the Micro-Manager source code, select all jars in `$INSTALLDIR/plugins/Micro-Manager` *except for* `MMJ_.jar`.
+        - If you are building a plugin, select the following four files: `AcqEngJ-X.X.X.jar`, `MMCoreJ.jar`, `MMJ_.jar` and `scijava-common-X.X.X.jar` (here X.X.X indicate version numbers which can vary depending on your Micro-Manager installation). 
+   * You can optionally add additional dependencies if you are building a plugin that requires them. 
+   * Click **Choose**. 
+  
+-   In the left-hand navigation pane, choose **Run** and set the following parameters:
      * **Main Class:** type in `ij.ImageJ`
      * **Working Directory:** type in your `$INSTALLDIR`
      * **VM options:** for 64 bit systems, type in `-Xmx3000M`, otherwise
 use `-Xmx600M`. This sets the maximum memory (megabytes) used by Java.  
 If running Micro-Manager 2.0, you also need to supply `-Dforce.annotation.index=true`.
 
-12.  Click **OK**, and then right-click your project and choose
-    **Debug**. If all is well, then Micro-Manager should launch inside
-    ImageJ.
+-   Click **OK**. The project should now be set up. You can edit your code as desired. 
 
-> The components from the installed Micro-Manager can get out of sync with the source. If you encounter unexpected errors, update to the latest nightly build and the latest source revision.
+To debug, choose **Debug** &gt; **Debug Project** from the menu. This should launch Micro-Manager, and after selecting the demo configuration, you'll be able to run your plugin from the Plugins menu. You can set breakpoints and view variable values from within the IDE. 
+
+You can also Run>Build Project from the menu to produce a .jar file.  If you copy this .jar file into the `mmplugins` directory of your Micro-Manager installation, your plugin should be available when you run your local copy of Micro-Manager. If you only intend to ever use your plugin on the computer where you developed it, this is fine. However, if you want to use the plugin on multiple computers or distribute it to others, you need to follow [these instructions](Writing_plugins_for_Micro-Manager) to build a redistributable .jar file using Apache Ant. 
 

@@ -5,8 +5,6 @@ redirect_from: /wiki/Visual_Studio_project_settings_for_device_adapters
 layout: page
 ---
 
-{% include notice icon="info" content="This page applies to SVN r12232 and later." %}
-
 Here are instructions for how to set up a Visual Studio project for a
 new device adapter. For more details on how to write device adapters for
 Micro-Manager, see [Building Micro-Manager Device
@@ -22,131 +20,96 @@ Windows](Building_MM_on_Windows).
 See the page on [Building MM on
 Windows](Building_MM_on_Windows) for how to set up a
 development environment for Micro-Manager, including Microsoft Visual
-Studio 2010 Express SP1 and Microsoft Windows SDK 7.1. The following
+Studio 2019. The following
 assumes that those instructions were followed.
 
-## Method 1: Building using micromanager.sln
+## Adding the project
 
-1.  Open `micromanager.sln` (at the root of the `micromanager` source
+1.  Open `micromanager.sln` (at the root of the `mmCoreAndDevices` source
     tree) in Visual Studio.
 2.  In the **Solution Explorer** (usually at the left of the window),
     right-click on the **Solution** (at the top of the list), and choose
     **Add &gt; New Project...**.
-3.  Choose **Win32 Project** (under Visual C++ &gt; Win32). Give your
+3.  Choose the **Dynamic-Link Library (DLL)** template. Click **Next**.
+4.  Give your
     project a **Name** (this will be your device adapter's name, so
     avoid spaces and use alphanumeric characters, dashes, and
     underscores only). Set the **Location** to either `DeviceAdapters/`
     or `TestDeviceAdapters/` (in theory, it does not matter where you
-    set this). Click **OK**.
-4.  The **Win32 Application Wizard** will open. Click **Next**.
-5.  For **Application type**, select **DLL**. Make sure to check **Empty
-    Project**. Click **Finish**.
-6.  Your new project should show up in the **Solution Explorer**.
-7.  From the menu bar, select **Tools &gt; Settings &gt; Expert
-    Settings**. Notice that three tabs appear at the bottom of the
-    **Solution Explorer**. Click **Property Manager** (the rightmost
-    tab).
-8.  Find your project in the **Property Manager** list. Right-click on
+    set this). Click **Create**.
+5.  Your new project should show up in the **Solution Explorer**.
+6.  Delete the headers and source files created by the template; they
+    are not useful for device adapters.
+7.  By adding a new project, the solution gained settings for the "x86"
+    platform. Micro-Manager is 64-bit only, so we don't want this.
+    From the platform drowdown in the toolbar, select **Configuration
+    Manager...**. From the "Active solution platform:" dropdown, select
+    **Edit...**. Delete the x86 platform from the solution.
+8.  Additionally, we want to remove the "x86" settings from the project
+    as well. Still in the Configuration Manager, find your project in the
+    list. From its Platform dropdown, select **Edit...**. Delete "x86 (which may instead show up as Win32)".
+9.  Notice the tabs at the bottom of the
+    **Solution Explorer**. Click **Property Manager**.
+    Find your project in the **Property Manager** list. Right-click on
     the project and select **Add Existing Property Sheet...**. Choose
     `buildscripts/VisualStudio/MMCommon.props`.
-9.  Repeat the previous step, this time choosing
+    Repeat the same command, this time choosing
     `buildscripts/VisualStudio/MMDeviceAdapter.props`. Make sure that
     the two added property sheets are displayed under each configuration
-    (Debug\|Win32 and Release\|Win32), with MMDeviceAdapter at the top
+    (Debug\|x64 and Release\|x64), with MMDeviceAdapter at the top
     (= downstream). These property sheets provide various project
     settings common to all Micro-Manager device adapters.
 10. Now return to the **Solution Explorer** by clicking on the leftmost
     tab at the bottom of the **Property Manager**.
 11. Lets add our first source files to the project. Right-click the
-    project, and choose **Add &gt; Class...**, then **C++ Class**.
+    project, and choose **Add &gt; New Item...**, then **C++ Class**.
 12. Enter a class name for your first device, e.g. `MyCamera`. Leave the
-    **Base class** empty for now. After adding the class, close the
-    **Add Class** window which reappears.
-13. In my testing, the `MyCamera.h` and `MyCamera.cpp` files created in
-    the previous step were blank - although I think they are supposed to
-    contain a skeleton class implementation. In any case, how to
+    **Base class** empty for now.
+13. You can delete the line in `MyCamera.cpp` that `#include`s `pch.h`
+    (which we deleted above). How to
     actually code device adapters is beyond the scope of this particular
     page, so lets continue with the project settings.
-14. Right-click on your project, and choose **Properties**. This will
-    open the **Property Pages**. There are lots of settings here; we
-    will first make the minimal changes to get a working device adapter.
-    A later section of this page will describe some more settings in the
-    context of a Micro-Manager device adapter.
-15. Under **Common Properties &gt; Framework and References**, click on
-    **Add New Reference...**. Scroll down and select
+14. Expand your project in the Solution Explorer and right click on
+    **References**; choose **Add Reference...**.
+    Scroll down and select
     **MMDevice-SharedRuntime** (not to be confused with
-    MMDevice-StaticRuntime). Click **OK**. A list of True/False settings
-    will show up on the right-hand-side of the window; the default
-    settings are fine. This setting causes your device adapter to be
+    MMDevice-StaticRuntime). Click **OK**.
+    This reference causes your device adapter to be
     linked to the common Micro-Manager device adapter library (built
     from the code in the `MMDevice/` directory).
-16. Now we will edit some settings under **Configuration Properties**.
-    When we do so, the settings are only applied to the build
+16. Right-click your project and choose **Properties**. This shows the
+    project's Property Pages. In this window,
+    the settings are only applied to the build
     configuration and platform selected at the top of the **Property
-    Pages** window. We only have one platform (Win32) so far, but we
+    Pages** window. We only have one platform (x64), but we
     want the settings to apply to both configurations (Debug and
     Release), so choose **All Configurations** from the
     **Configuration:** popup menu (make sure you do this again if you
     close and reopen the **Property Pages**).
 17. Under **Configuration Properties &gt; General**, set **Platform
-    Toolset** to **Windows7.1SDK**.
+    Toolset** to **Visual Studio 2019 (v142)**.
 18. Under **Configuration Properties &gt; C/C++ &gt; General**, set
-    **Warning Level** to **<inherit from parent or project defaults>**
+    **Warning Level** to **inherit from parent or project defaults**
     (which should display **Level4** after clicking **Apply**).
 19. Under **Configuration Properties &gt; C/C++ &gt; Precompiled
     Headers**, set **Precompiled Header** to
-    **<inherit from parent or project defaults>** (which should display
+    **inherit from parent or project defaults** (which should display
     **Not Using Precompiled Headers** after clicking **Apply**).
-20. By default, the device adapter project will only compile for 32-bit
-    (the Win32 platform). To add the settings for 64-bit (x64 platform),
-    click on **Configuration Manager...** at the top-left of the
-    **Property Pages**. Select **x64** from the **Active solution
-    platform** popup. Find your new project in the list. Click on the
-    triangle next to the cell that says Win32, and choose
-    **&lt;New...&gt;**. Choose **x64** for the **New platform**, and
-    **Win32** for **Copy settings from**. Click **OK**. Now, in the
-    **Configuration Manager** table, click the **Build** checkbox for
-    your project.
 21. That's it! Write the code for your device class, and right-click
     your project and select **Build**. If all goes well, your device
     adapter DLL should be built as
     `build/Release/Win32/mmgr_dal_Example.dll` (or in the directory
     corresponding to the selected configuration and platform).
 
-## Method 2: Building using a custom solution file
-
-This option may be convenient if you are only working on a single device
-adapter and want to avoid seeing a long list of projects (and waiting
-for Visual Studio to process them). It also has the advantage that you
-don't need to locally modify the `micromanager.sln` file, and can place
-all of your device adapter files outside of the `micromanager` source
-tree, if you wish.
-
-The steps are basically the same as Method 1 (using `micromanager.sln`),
-except that you will start by choosing **File &gt; New &gt; Project...**
-instead of adding a new project to the existing solution.
-
-Just before the step of adding a reference to
-**MMDevice-SharedRuntime**, you will need to perform the following
-steps:
-
-1.  Right-click on the **Solution** at the top of the **Solution
-    Explorer** and choose **Add &gt; Existing Project...**). (Make sure
-    to right-click the solution, not the project. The solution contains
-    the project. Alternatively, you can use **File &gt; Add &gt;
-    Existing Project...**.)
-2.  Select `MMDevice/MMDevice-SharedRuntime.vcxproj`.
-3.  When adding the reference, if MMDevice-SharedRuntime does not show
-    up in the **Add Reference** list, cancel the adding, right-click on
-    your device adapter project, and choose **Unload Project**, followed
-    by **Reload Project**. Then try again to add the reference.
-
-At some point (usually the first time you build or close Visual Studio),
-you will be prompted to save the solution file (`.sln`). Saving to the
-default location (next to the `.vcxproj` file) usually works well when
-developing a device adapter. Note that the build products are placed in
-a `build` directory in the same directory as the solution file.
-
+Advanced note: If, for some reason, your device adapter needs to be
+built against the static version of Microsoft's C Runtime (known as
+compiler option `/MT`), rather than the default DLL version (`/MD`), you
+need to use MMDevice-StaticRuntime instead of MMDevice-SharedRuntime.
+This is the case if you are linking against a third-party static library
+(not a DLL import library, but a real static library) that was built
+against the static C Runtime. See the **Runtime Library** property below
+under **C/C++ &gt; Code Generation**.
+    
 # Visual Studio project properties for Micro-Manager device adapters
 
 Here are some notes on how project properties should be set for
@@ -158,47 +121,31 @@ Note that the following assumes that you have correctly added the
 order, so that MMCommon is upstream) to your project (see the earlier
 section on setting up new projects).
 
-## Common Properties
-
-**Framework and References**: There should be a single reference, to
-MMDevice-SharedRuntime (the static library containing the common device
-adapter code in `MMDevice/`). The properties for this reference should
-be as follows (they are the default settings):
-
--   Copy Local = True
--   Copy Local Satellite Assemblies = False
--   Reference Assembly Output = True
--   Link Library Dependencies = True (this causes the static library to
-    be linked)
--   Use Library Dependency Inputs = False (True would link to the
-    MMDevice object files instead of the library)
-
-Advanced note: If, for some reason, your device adapter needs to be
-built against the static version of Microsoft's C Runtime (known as
-compiler option `/MT`), rather than the default DLL version (`/MD`), you
-need to use MMDevice-StaticRuntime instead of MMDevice-SharedRuntime.
-This is the case if you are linking against a third-party static library
-(not a DLL import library, but a real static library) that was built
-against the static C Runtime. See the **Runtime Library** property below
-under **C/C++ &gt; Code Generation**.
-
 ## Configuration Properties
+
+The options in this section cannot be set in common property sheets and
+must be set correctly in each project.
 
 ### General
 
 **Output Directory**, **Intermediate Directory**, **Target Name**,
 **Target Extension**: These are set by the common property sheets. Make
 sure your project does not override the defaults.
+    
+**Windows SDK Version**: 10.0 (latest installed version).
 
-**Platform Toolset**: To compile 64-bit code with the free (Express)
-edition of Visual Studio 2010, this must be set to **Windows7.1SDK**.
-This is what the Micro-Manager codebase uses.
+**Platform Toolset**: Currently must be **Visual Studio 2019 (v142)**
+(even if you are using Visual Studio 2022).
+    
+**C++ Language Standard**: Default (ISO C++ 14 Standard).
 
-**Use of MFC**, **Use of ATL**: Device adapters in the official
-Micro-Manager repository do not make use of MFC or ATL, as it is not
-available with the free edition of Visual Studio.
-
-**Character Set**: This should not affect most device adapter projects.
+### Advanced
+    
+**Character Set**: For new projects, leave default (**Use Unicode
+Character Set**). However, do not change this setting for existing
+projects unless you know what you are doing.
+    
+This should not affect most device adapter projects.
 For those device adapters that use the Windows Win32 API (discouraged
 unless strictly necessary), it will determine whether the Win32
 functions operate on char strings (**Use Multi-Byte Character Set** =
@@ -206,14 +153,10 @@ use ASCII and old-fashioned non-Unicode encodings) or wide char strings
 (**Use Unicode Character Set** = use UTF-16). If it is necessary to use
 Win32 API calls, it is encourage that the device adapter use the
 versions of the functions with a "A" or "W" suffix, so that build
-settings do not affect code behavior. Alternatively, the TCHAR mechanism
-can be used to keep the code neutral with respect to this setting, if
-care is taken when strings are converted to and from C or C++ strings
-(char\* or std::string). We do not currently have any explicit support
+settings do not affect code behavior. (See also the
+[official docs](https://docs.microsoft.com/en-us/windows/win32/learnwin32/working-with-strings).)
+We do not currently have any explicit support
 for non-ASCII strings.
-
-The options in this section cannot be set in common property sheets and
-must be set correctly in each project.
 
 ### Debugging
 
@@ -221,7 +164,7 @@ Default settings should be fine.
 
 ### VC++ Directories
 
-It is best to leave these at their default values, as modifying them
+Leave these at their default values, as modifying them
 will just be confusing in most cases. Use the settings under **C/C++**
 and **Linker** for setting include and library directories.
 
@@ -234,33 +177,29 @@ header files, add the directory containing them here. Note that the
 Boost C++ library (not all modules) is made available by default.
 
 **Warning Level**: We prefer **Level4**. Choose
-**<inherit from parent or project defaults>**.
+**inherit from parent or project defaults**.
 
 #### C/C++ &gt; Optimization
 
-**Whole Program Optimization**: **No** is recommended. Turning this on
-can make it more difficult to interpret crash logs (hs\_err logs) or
-crash dumps.
+Default settings should be fine.
 
 #### C/C++ &gt; Preprocessor
 
 **Preprocessor Definitions**: The necessary **MODULE\_EXPORTS** macro is
-now provided by the `MMDeviceAdapter.props` property sheet, so no
+provided by the `MMDeviceAdapter.props` property sheet, so no
 special settings are necessary for most device adapters.
 
 #### C/C++ &gt; Code Generation
 
 **Enable C++ Exceptions**: **Yes (/EHsc)** (the default) is recommended.
 Do not turn on SEH Exceptions; see [this
-page](http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx)
+page](https://web.archive.org/web/20150906223040/http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx)
 for why.
 
 **Runtime Library**: Use the DLL variants (the default). If you need to
 link against a third-party static library that uses the static (non-DLL)
 variant, you will need to choose the non-DLL variants here. Avoid this
-unless actually necessary, because there is a small limit (128) for the
-number of DLLs built against the static C Runtime that can be
-simultaneously loaded. Make sure to use the corresponding variant of
+unless actually necessary. Make sure to use the corresponding variant of
 MMDevice if making the switch (see above under **Framework and
 References**).
 
@@ -268,8 +207,8 @@ References**).
 
 **Precompiled Header**: We avoid using precompiled headers to keep the
 project organization simple. Select
-**<inherit from parent or project defaults>** (which is **Not Using
-Precompiled Headers**), and remove any `stdafx.*` files from your
+**inherit from parent or project defaults** (which is **Not Using
+Precompiled Headers**), and remove any `stdafx.*` or `pch.h` files from your
 project.
 
 ### Linker
@@ -283,13 +222,13 @@ prefix if the common property sheets are included correctly.
 you will need to add the directory containing the `.lib` files here.
 
 **Link Library Dependencies**: Must be set to **Yes** (=
-**<inherit from parent or project defaults>**) for the reference to
+**inherit from parent or project defaults**) for the reference to
 MMDevice to work correctly.
 
 #### Linker &gt; Input
 
 **Additional Dependencies**: If linking to a third-party library, add
-the filenames (`.lib`) here.
+the filenames (`*.lib`) here.
 
 #### Linker &gt; Debugging
 
@@ -298,6 +237,4 @@ release builds.
 
 ### Build Events
 
-No settings required. In the past we used a post-build event to copy the
-product (DLL file) to a different destination, but this is no longer the
-case with the current build files.
+No settings required. Use is discouraged.

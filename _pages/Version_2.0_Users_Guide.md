@@ -890,6 +890,10 @@ Panel](#comments-panel) in the image window.
     with the [Run Saved
     Acquisition](#run-saved-acquisition) button in the
     [Quick Access Panel](#quick-access-panel).
+-   from Image: When a dataset is loaded that contains MDA settings in its
+    metadata, pressing this button will load this metadata into the MDA window.
+-   [Multi MDA](Multi-MDA): Makes it possible to combine multiple MDA
+    settings in one experiment.  
 
 ## Config Groups
 
@@ -1586,10 +1590,10 @@ If you want to write your own scripts, you should read the API, plugins
 and other documentation at [the µManager 2.0
 index](Version_2.0). In particular, you can access the
 [Studio
-object](http://valelab.ucsf.edu/~MM/doc-2.0.0-beta/mmstudio/org/micromanager/Studio.html)
+object](/apidoc/mmstudio/latest/org/micromanager/Studio.html)
 via the pre-set variable "mm" (for example, "mm.displays().show(image)"
 to display an image), and you can access the [MM
-Core](https://valelab.ucsf.edu/~MM/doc/mmcorej/mmcorej/CMMCore.html) via
+Core](/apidoc/mmcorej/latest/mmcorej/CMMCore.html) via
 the "mmc" variable (for example, "mmc.getChannelGroup()"). These two
 objects are your primary access points for controlling µManager.
 

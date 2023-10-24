@@ -6,6 +6,11 @@ layout: page
 section: Extend
 ---
 
+<strong>Note: these example Beanshell scripts were written for the Micro-Manager 1.x 
+API.  These will not work in Micro-Manager 2.0 and greater. For a tutorial with 
+  examplea scripting 2.x, see: [https://nicost.github.io/I2K-MM/](https://nicost.github.io/I2K-MM/)
+</strong>
+
 These beanshell scripts can be run from the '[Script
 Panel](Script_Panel_GUI)' (in the 'Tools' menu). Either load
 the script in the Script Button Panel (using the 'add' button), or open

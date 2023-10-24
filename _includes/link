@@ -1,3 +1,0 @@
-{%- if include.url == "2.0API" -%}
-https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma
-{%- endif -%}

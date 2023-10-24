@@ -6,7 +6,7 @@ layout: page
 ---
 
 
-{% include notice icon="info" content="This page is obsolete. Please see [[Building Micro-Manager Device Adapters]] and [[Building and debugging Micro-Manager source code]]." %}
+{% include notice icon="info" content="This page is obsolete. Please see [Building Micro-Manager Device Adapters](Building_Micro-Manager_Device_Adapters) and [Building and debugging Micro-Manager source code](Building_and_debugging_Micro-Manager_source_code)." %}
 
 The Device Developer's Kit contains all source code and instructions
 required for building Micro-Manager device adapters. The major version
@@ -50,13 +50,13 @@ developed Device Adapters should be easier than before.
 ## Previous releases
 
 [**Micro-Manager Device Developer's Kit, version 45.06a, (July 22,
-2011)**](http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMDeviceKit-win-x86-x64-Dev45-Mod6a.exe)  
+2011)**](https://download.micro-manager.org/nightly/1.4-DeviceKit/Windows/MMDeviceKit-win-x86-x64-Dev45-Mod6a.exe)  
 [**Micro-Manager Device Developer's Kit, version 40.06, (June 13,
-2011)**](http://valelab.ucsf.edu/~MM/nightlyBuilds/1.4/Windows/MMDeviceKit-win-x86-x64-Dev40-Mod6a.exe)  
+2011)**](https://download.micro-manager.org/nightly/1.4-DeviceKit/Windows/MMDeviceKit-win-x86-x64-Dev40-Mod6a.exe)  
 For Micro-Manager releases 1.4.5 and up.  
 [<span>**Micro-Manager Device Developer's Kit, version 31.03, (January
 19,
-2010)**</span>](http://valelab.ucsf.edu/~MM/nightlyBuilds/1.3/Windows/MMDeviceKit-win-34-01-20100119.exe)  
+2010)**</span>](https://download.micro-manager.org/nightly/1.3-DeviceKit/Windows/MMDeviceKit-win-34-01-20100119.exe)  
 For Micro-Manager releases 1.3.44 and up.  
 [<span>**Micro-Manager Device Developer's Kit, version 31.02, (June 11,
 2009)**</span>](http://valelab.ucsf.edu/~arthur/builds/MMDeviceKit-win-31-02.exe)  

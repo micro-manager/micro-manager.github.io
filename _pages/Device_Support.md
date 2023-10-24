@@ -279,15 +279,12 @@ release](Download_Micro-Manager_Latest_Release).
     controller
 -   [Tofra](Tofra) - XY and Z stages, filter wheel, motorized
     filter cube slider, and LED illuminator
--   [UserDefinedSerial](UserDefinedSerial) - Shutters and
-    state devices that can be controlled with simple serial commands
 -   [Vincent](Vincent) - Vincent Uniblitz controllers
 -   [WieneckeSinske](WieneckeSinske) - WSB PiezoDrive CAN XY
     stage and WSB ZPiezo Z stage
--   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
-    Shutter
--   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
-    X-Cite 120PC and *exacte* adapter
+-   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+-   [XCite120PC\_Exacte](XCite120PC_Exacte) - Excelitas (Lumen Dynamics)
+    X-Cite 120PC, exacte, and XYLIS illuminators
 -   [XCiteLed](XCiteLed) - LED controller
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO / XT600 series and NOVEM / XT900 series
 -   [Zaber](Zaber) - Zaber linear and XY stages, filter
@@ -316,13 +313,15 @@ release](Download_Micro-Manager_Latest_Release).
   - [MCCDAQ](MCCDAQ) - Measurement Computing PCI-DDA08/16
   - [MicroFPGA](MicroFPGA) - Open source FPGA platform for
     hardware triggering and control
-  - [National Instruments](National_Instruments) - See NI100X
-    and NIMultiAnalog
+  - [National Instruments](NIDAQ) - National Instruments DA IO boards adapter.
 -   [NicoLase](NicoLase) An open-source diode laser combiner,
     fiber launch, and sequencing controller for fluorescence microscopy
--   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface
+-   [NI100X](National_Instruments) - NI I/O boards - DAQmx interface. 
+    Superseded by [NIDAQ](NIDAQ).
 -   [NIMultiAnalog](NIMultiAnalog) - NI boards with multiple
-    analog outputs
+    analog outputs. Superseded by [NIDAQ](NIDAQ).
+-   [NIDAQ](NIDAQ) - NI DAQ boards with multiple analog and digital 
+    output ports.      
 -   [ParallelPort](ParallelPort) - TTLs on parallel port
     (Windows only)
 -   [SerialManager](SerialManager) - Serial Ports on Windows
@@ -332,7 +331,10 @@ release](Download_Micro-Manager_Latest_Release).
     analog controller
 -   [TriggerScopeMM](TriggerScopeMM) - TriggerScope v3 with
     Micro-Manager firmware
--   [UniversalSerialHub](universalserialhub) - A universal adapter for a user-defined hardware controller
+-   [UserDefinedSerial](UserDefinedSerial) - Shutters and
+    state devices that can be controlled with simple serial commands
+-   [UniversalMMHubSerial](UniversalMMHubSerial) - A universal adapter for a user-defined hardware controller (serial communication)
+-   [UniversalMMHubUsb](UniversalMMHubUsb) - A universal adapter for a user-defined hardware controller (USB communication)
 -   [USBManager](USBManager) - Micro-Manager internal USB
     communications driver
 
@@ -388,10 +390,9 @@ release](Download_Micro-Manager_Latest_Release).
 -   [USB\_Viper\_QPL](USB_Viper_QPL) - Excelitas/Qioptiq
     iFLEX-Viper Laser Engine
 -   [Versalase](Versalase) - Vortran Versalase laser driver
--   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp /
-    Shutter
--   [XCite120PC\_Exacte](XCite120PC_Exacte) - Lumen Dynamics
-    X-Cite 120PC and *exacte* adapter
+-   [Xcite](Xcite) - EXFO X-Cite 120 PC Fluorescent Lamp / Shutter
+-   [XCite120PC\_Exacte](XCite120PC_Exacte) - Excelitas (Lumen Dynamics)
+    X-Cite 120PC, exacte, and XYLIS illuminators
 -   [XCiteLed](XCiteLed) - LED controller
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO / XT600 series and NOVEM / XT900 series
 -   [YodnLighting](YodnLighting) - YODN Lighting lamp device
@@ -408,6 +409,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [AOTF](Neos) - NEOS AOTF control through parallel port.
     Can be used for any TTL-controllable shutter
 -   [ASIwptr](ASIwptr) - ASI well-plate transfer robot
+-   [BH\_DCC\_DCU](BH_DCC_DCU) - Becker & Hickl DCC-100 detector control card and DCU USB detector control unit
 -   [CARVII](CARVII) - BD/CrEST CARV II spinning disk
     confocal
 -   [Diskovery](Diskovery) - Spectral/Andor spinning disk
@@ -421,6 +423,7 @@ release](Download_Micro-Manager_Latest_Release).
     the Lumencor Spectra
 -   [MaestroServo](MaestroServo) - Pololu Maestro Servo
     controller
+-   [MeadowlarkLC](MeadowlarkLC) - Meadowlark Optics D5020 liquid crystal device controller
 -   [MicroPoint](MicroPoint) - Galvo-based phototargeting
     device from Andor
 -   [Mosaic3](Mosaic3) - Andor Mosaic DMD Projection Device
@@ -440,6 +443,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [SpectralLMM5](SpectralLMM5) - Spectral laser line
     controller
 -   [SutterMPC](SutterMPC) - Multi manipulator controller
+-   [Thorlabs Power Meter](ThorlabsPM) - Thorlabs PM100D (and likely other) power meters
 -   [Utilities](Utilities) - Virtual devices providing extra
     functionality to Micro-Manager
 -   [VariLC](VariLC) - Tunable liquid crystal polarization

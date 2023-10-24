@@ -32,15 +32,15 @@ fixed already.
 
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
-  - [Windows 64-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_64bit_2.0.0.exe),
+  - [Windows 64-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_64bit_2.0.0.exe),
     148 MB  
-  - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/2.0/Windows/MMSetup_32bit_2.0.0.exe),
+  - [Windows 32-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_32bit_2.0.0.exe),
     143 MB  
 Requires Windows 7-10. Windows 10 recommended. Device drivers may have
 other requirements.
 
   - [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/2.0/Mac/Micro-Manager-2.0.0.dmg),
+    Binary)](https://download.micro-manager.org/release/2.0/Mac/Micro-Manager-2.0.0.dmg),
     111 MB  
 Requires Mac OS X 10.5 or greater. Device drivers may have other
 requirements.
@@ -85,25 +85,25 @@ the latest official release.
 Older nightly builds:
 
   - [Version 2.0-gamma
-    (Windows)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Windows/)
+    (Windows)](https://download.micro-manager.org/nightly/2.0.0-gamma/Windows/)
     (you most likely want the 64-bit version)
   - [Version 2.0-gamma
-    (Mac)](https://valelab4.ucsf.edu/~MM/nightlyBuilds/2.0.0-gamma/Mac/)
+    (Mac)](https://download.micro-manager.org/nightly/2.0.0-gamma/Mac/)
   - [Version 1.4 2016-2021
     (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
 
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
-  - [Windows 64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe),
+  - [Windows 64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.23.exe),
     87 MB  
-  - [Windows 32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.23.exe),
+  - [Windows 32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.23.exe),
     84 MB  
 
 Requires Windows 7-10. Windows 10 recommended. Device drivers may have
 other requirements.  
 
   - [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.23.dmg),
+    Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.23.dmg),
     76 MB  
 
 Requires Mac OS X 10.5 or greater. Device drivers may have other
@@ -119,17 +119,17 @@ time, try ctrl-click or right click, then select "Open".)
 Read the [Known Issues](#known-issues-in-1422).
 
 -   [Windows
-    32-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/32bit/MMSetup_32bit_1.4.22.exe),
+    32-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_32bit_1.4.22.exe),
     63.4 MB  
 -   [Windows
-    64-bit](https://valelab4.ucsf.edu/~MM/builds/1.4/Windows/64bit/MMSetup_64bit_1.4.22.exe),
+    64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.22.exe),
     65.1 MB  
 
 Requires Windows XP, or 7-10. Windows 7 recommended. Device drivers may
 have other requirements.  
 
 -   [Mac OS X (Universal
-    Binary)](https://valelab4.ucsf.edu/~MM/builds/1.4/Mac/Micro-Manager1.4.22.dmg),
+    Binary)](https://download.micro-manager.org/release/1.4/Mac/Micro-Manager1.4.22.dmg),
     54.0 MB  
 
 Requires Mac OS X 10.5-10.10. 10.11 (El Capitan) is not yet supported.
@@ -146,9 +146,9 @@ select "Open".)
 -   If you use AndorSDK3 (Andor sCMOS cameras) and experience a crash
     upon starting Micro-Manager (or loading a hardware configuration),
     please upgrade to the 20150820 nightly build ([Windows
-    64-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_64bit_1.4.23_20150820.exe),
+    64-bit](https://download.micro-manager.org/nightly/1.4-old/Windows/MMSetup_64bit_1.4.23_20150820.exe),
     [Windows
-    32-bit](https://valelab4.ucsf.edu/~MM/nightlyBuilds/1.4-old/Windows/MMSetup_32bit_1.4.23_20150820.exe))
+    32-bit](https://download.micro-manager.org/nightly/1.4-old/Windows/MMSetup_32bit_1.4.23_20150820.exe))
 -   Olympus IX83 users: please use 1.4.21 instead.
 
 ### Changes in 1.4.22 (since 1.4.21)

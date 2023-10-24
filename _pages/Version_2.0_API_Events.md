@@ -14,7 +14,7 @@ what you need to subscribe to to access those events.
 These events are posted to the `EventManager`. You can subscribe to them
 via `mm.events().registerForEvents()`. The full list of Events can be
 found
-[here](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/events/package-tree.html).
+[here](/apidoc/mmstudio/latest/org/micromanager/events/package-tree.html).
 Some examples:
 
 -   DatastoreClosingEvent: a Datastore was closed.
@@ -52,7 +52,7 @@ DisplayWindow's events, then you should remember to call
 discarded; otherwise, the DisplayWindow will keep a reference to your
 object, and errors may occur when the window attempts to send events to
 it. DisplayWindow events can be found
-[here](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/display/package-tree.html).
+[here](/apidoc/mmstudio/latest/org/micromanager/display/package-tree.html).
 
 -   DisplayDidShowImageEvent: A new image was shown in this display
 -   DisplayPositionChangedEvent: ?
@@ -66,7 +66,7 @@ These events are specific to a single Datastore, and can be accessed via
 object listening to Datastore events, and that object is discarded, you
 should make certain to unregister it first. Javadoc for events posted by
 Datastores can be found
-[here](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmstudio/org/micromanager/data/package-summary.html).
+[here](/apidoc/mmstudio/latest/org/micromanager/data/package-summary.html).
 
 -   DataProviderHasNewImageEvent: Signifies that an image has been added
     to a DataProvider.
