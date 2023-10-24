@@ -18,7 +18,7 @@ layout: page
 </td>
 <td markdown="1">
 
-Controls [PCO Cameras](http://www.pco.de/)
+Controls [PCO Cameras](https://www.excelitas.com/product-category/cameras/)
 
 </td>
 </tr>
@@ -156,14 +156,13 @@ need to look there as well.
 
 
 Please refer to the following Installation Guide for further help:
-[Installation
-Guide](https://www.pco.de/fileadmin/user_upload/pco-manuals/MA_MICROMANAGER.pdf)
+[Installation Guide](https://www.excelitas.com/file-download/download/public/101691?filename=pco_micromanager_Manual.pdf)
 
 Please be informed that starting with nightly build of 23rd of August
 2020 pco stopped software support for SensiCam (also DiCam) and
 PixelFly. Nightly builds up to this date will still work with these
 camera types.
 
---FRE / excelitas pco gmbh 28th of January 2022
+--FRE / excelitas pco gmbh 24th of October 2023
 
 {% include Listserv_Search text="PCO" %}
