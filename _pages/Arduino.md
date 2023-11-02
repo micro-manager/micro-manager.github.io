@@ -77,7 +77,7 @@ Arduino.
 ### Firmware
 
 For the Arduino Uno and similar boards, download the [firmware source
-code](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.ino).
+code](https://github.com/micro-manager/mmCoreAndDevices/blob/main/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.ino).
 Bonno Meddens wrote compatible firmware for the ESP32, ItsyBitsy M4, and
 Teensy 3.x boards that can be found
 [here](https://github.com/bonnom/Micro-manager-Arduino). Copy the
@@ -198,7 +198,9 @@ will be kept at zero as long as the TTL is inactive.
 <tr class="odd">
 <td><p>Switch-Sequence</p></td>
 <td><p><strong>Off</strong> operates the Arduino in normal "switching" mode.<br />
-<strong>On</strong> enables triggered "sequencing" mode. One defines and upload multiple pattern states to the Arduino <a href="https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/SequencePropTest.bsh">using a Beanshell script</a>. Then the digital input signal to pin 2 switches between the sets of patterns. Typically, one would connect the camera exposure signal to pin 2.</p></td>
+<strong>On</strong> enables triggered "sequencing" mode.
+The digital input signal to pin 2 switches between the uploaded patterns.
+Typically, one would connect the camera exposure signal to pin 2.</p></td>
 </tr>
 <tr class="even">
 <td><p>Switch-State</p></td>
