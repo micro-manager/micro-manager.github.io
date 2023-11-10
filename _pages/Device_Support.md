@@ -152,6 +152,7 @@ release](Download_Micro-Manager_Latest_Release).
     cameras
 -   [XIMEACamera](XIMEA) - XIMEA cameras (and some
     Olympus Soft Imaging cameras)
+-   [ZWO](ZWO) - ZWO "ASI" cameras and "EFW" filter wheel
 
 
 
@@ -290,6 +291,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [XCiteXT600](XCiteXT600) - X-Cite TURBO / XT600 series and NOVEM / XT900 series
 -   [Zaber](Zaber) - Zaber linear and XY stages, filter
     wheels
+-   [ZWO](ZWO) - ZWO "ASI" cameras and "EFW" filter wheel
 
 ## Communication ports, TTLs, DAQs, etc.
 
