@@ -51,6 +51,7 @@ release](Download_Micro-Manager_Latest_Release).
 
 -   [ABSCamera](ABSCamera) - Cameras from ABS Gesellschaft
     für Automatisierung, Bildverarbeitung, Software GmbH Jena
+-   [AlliedVisionCamera](AlliedVisionCamera) - Allied Vision cameras
 -   [AmScope](AmScope) - AmScope MU series cameras (Windows)
 -   [Andor](Andor) - Andor cameras (CCD and EMCCD)
 -   [AndorSDK3](Andor_SDK3) - New model Andor cameras (sCMOS)
