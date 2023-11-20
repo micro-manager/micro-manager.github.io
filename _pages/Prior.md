@@ -52,7 +52,7 @@ BSD
 </td>
 <td markdown="1">
 
-Windows, Mac OS X, :inux (serial port)
+Windows, Mac OS X, linux (serial port)
 
 </td>
 </tr>
