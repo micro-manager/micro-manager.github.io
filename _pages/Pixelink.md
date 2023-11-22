@@ -80,4 +80,6 @@ specific needs.
 
 Pixelink PL-D and M series cameras now support Micro-Manager. The Pixelink
 Micromanager adapter is included in the Micromanager nightly build and will
-be automatically installed when installing Micromanager.
+be automatically installed when installing Micromanager. The Pixelink
+Micromanager Adapter requires the installation of either Pixelink Capture or
+the Pixelink SDK to function.
