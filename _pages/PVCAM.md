@@ -58,8 +58,8 @@ BSD
 </td>
 <td markdown="1">
 
-Windows and Mac OS X (linux possible but not tested), for Windows 7 see
-issue below
+Windows, Mac OS X, Linux (for Windows 7 see
+issue below)
 
 </td>
 </tr>
