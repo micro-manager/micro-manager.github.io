@@ -23,7 +23,7 @@ It is recommended to test the CHROLIS with the Thorlabs application before contr
 
 1. In the Hardware Configuration Wizard, add **ThorlabsCHROLIS > Thorlabs CHROLIS Hub**.
 
-2. Set the serial number property on the **Initialization Properties** window for the Hub. The drop-down list is auto-populated with all detected CHROLIS devices available on the PC.Selecting the DEFAULT option will instruct the software to connect to the first available device. If you do not see your device serial number in the list, please refer to the Troubleshooting section of this guide.
+2. Set the serial number property on the **Initialization Properties** window for the Hub. The drop-down list is auto-populated with all detected CHROLIS devices available on the PC. Selecting the DEFAULT option will instruct the software to connect to the first available device. If you do not see your device serial number in the list, please refer to the [Troubleshooting section](#Troubleshooting) of this guide.
 
 3. When the list of peripherals is shown, check the box for each available device. 
 
@@ -44,7 +44,7 @@ LED Enable and Brightness states are set through the Device Property browser.
 ### Editable Properties
 - LED Power (1 for each LED): The brightness of the LED. This is a relative value from 0 to 1000. 
 - LED Enable State (1 for each LED): The on/off state of the LED. This is an integer value equal to 0 or 1. 
-- Led Control State: The combined LED state of the system. This is an integer value formed from the binary mask of each LED. For example, if the LED states are 
+- Led Control State: The combined LED state of the system. This is an integer value formed from the binary representation of each LED enable state. For example, if the LED states are 
  
   __1: On - 2: Off - 3: Off - 4: On - 5: Off - 6: On__
 
@@ -53,16 +53,16 @@ LED Enable and Brightness states are set through the Device Property browser.
 
 ## Troubleshooting 
 ### Insufficient location information of the device...
-This error is returned when the requested resource cannot be found on the system. When this happens it is recommended to close down all other applications that are accessing the device. If problems persist, re-check the device connections and power cycle the device.
+This error is returned when the requested resource cannot be found on the system. When this happens it is recommended to close down all other applications that are accessing the device. If problems persist, re-check the device connections and power cycle the hardware.
 
 ### Possible Status Messages and Recommended Action
 - Box is Open: Fully close the side panel of the device. This status will prevent the LED's from being enabled
-- LLG not Connected: Reconnect the liquid light guide to the device. This status will prevent the LED's from being enabled
+- LLG not Connected: Reconnect the liquid light guide to the device and ensure that it is fully seated in the port. This status will prevent the LED's from being enabled
 - Interlock is Open: Insert the interlock pin into the back of the device or close the interlock safety circuit. This status will prevent the LED's from being enabled
 - Using Default Adjustment: No action needed.
-- Box Overheated: Please power down the device and wait for it to cooldown. If the problem persists, please contact your local Thorlabs Support team.
-- LED Overheated: Please power down the device and wait for it to cool down. If the problem persists, please contact your local Thorlabs Support team.
-- Invalid Box Setup: Please contact your local Thorlabs Support team.
+- Box Overheated: Please power down the device and wait for it to cool down. If the problem persists, please contact your local [Thorlabs Support Team](https://www.thorlabs.com/locations.cfm).
+- LED Overheated: Please power down the device and wait for it to cool down. If the problem persists, please contact your local [Thorlabs Support Team](https://www.thorlabs.com/locations.cfm).
+- Invalid Box Setup: Please contact your local [Thorlabs Support Team](https://www.thorlabs.com/locations.cfm).
 
 If any of these statuses are received and they do not represent the actual state of the device, please contact your local [Thorlabs Support Team](https://www.thorlabs.com/locations.cfm).
 
