@@ -62,19 +62,21 @@ Supported since the 20180220 nightly builds (1.4 and 2.0beta).
 
 ### Installation
 
-First, install Nikon's **Ti2 Control** Windows software from the [Nikon
+1. Download and install Nikon's **Ti2 Control** Windows software from the [Nikon
 Healthcare's Software Developer Toolkit
 site](https://nisdk.recollective.com/microscopes) (registration required).
-Make sure it can control your microscope.
-
-If you are running Micro-Manager release 2.0.0 or a 2.0 series nightly
+   - If you are running Micro-Manager release 2.0.0 or a 2.0 series nightly
 build dated 2022-03-02 or earlier, or any MM 1.4 (release or nightly),
 you probably need Ti2 Control 1.2.0.
-
-If you are running anything newer, please try the latest Ti2 Control
+   - If you are running anything newer, please try the latest Ti2 Control
 2.x first.
+2. Copy the file `C:\Program Files\Nikon\Ti2-SDK\bin\Ti2_Mic_Driver.dll` into the Micro-Manager folder.
+3. The NikonTi2 should then appear as an available device in the Hardware Configuration Wizard.
 
-Next, copy the file `Ti2_Mic_Driver.dll` into the Micro-Manager folder.
-The file is located at `C:\Program Files\Nikon\Ti2-SDK\bin`.
+### Troubleshooting
 
-NikonTi2 should then appear in the Hardware Configuration Wizard.
+- If `NikonTi2` only shows as `NikonTi2 (unavailable)` in the config wizard, ensure that you have moved the `Ti2_Mic_Driver.dll` into the same directory as the `mmgr_dal_NikonTi2.dll` library and have *not* renamed `Ti2_Mic_Driver.dll`.
+- If the `NikonTi2` folder is available in the config wizard, but you only see the `*Ti2-Simulator` device available:
+   - Make sure that your microscope is powered on and connected to the computer (you may have to restart micro-manager if you powered it on after starting micro-manager).
+   - Make sure the SDK can control your microscope *without* going through micro-manager, for example by running `C:\Program Files\Nikon\Ti2-SDK\bin\Ti2Sample.exe` and confirming that your microscope responds to button presses.
+   - If all goes well, you should see one or more devices in addition to the Ti2-Simulator, for example a Ti2-Eclipse microscope may appear as `*Ti2-E__0: Nikon Ti2 microscope`.
