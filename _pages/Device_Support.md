@@ -461,3 +461,10 @@ release](Download_Micro-Manager_Latest_Release).
     Imager](http://goochandhousego.com/product/hsi-300-hyperspectral-imaging-system/)
     can be controlled with Micro-Manager (not yet included in the
     distribution, contact Gouch & Housego for details)
+
+## Mock devices for software testing
+
+- [NotificationTester](NotificationTester) - simulate device event
+  notifications (or lack thereof)
+- SequenceTester (docs to be written) - capture device state and control
+  history and report in produced images
