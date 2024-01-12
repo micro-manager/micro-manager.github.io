@@ -89,10 +89,14 @@ CS505MUP, CS895MU, and CS895CU), please follow these directions:
 that came with a camera or download an installer from the appropriate
 product page at Thorlabs.com.
 
-2\. On 64-bit Windows, install 64-bit MicroManager. On 32-bit Windows,
+2\. The latest stable release (Micro-Manager 2.0.0 (July 13, 2021)) is
+unfortunately not working with some of the above listed cameras but 
+will most certanly work with one of the latest nightly builds.
+Alternatively, you can try installing Micro-Manager nightly build dated
+July 15, 2019 or later (1.4 or 2.0). 
+On 64-bit Windows, install 64-bit MicroManager. On 32-bit Windows,
 install 32-bit MicroManager. (Thorlabs cameras do not currently support
-32-bit MicroManager on 64-bit Windows). Please install a Micro-Manager
-nightly build dated July 15, 2019 or later (1.4 or 2.0).
+32-bit MicroManager on 64-bit Windows). 
 
 3\. From the Thorcam installation folder (usually C:\\Program
 Files\\Thorlabs\\Scientific Imaging\\Scientific Camera Support\\), copy
