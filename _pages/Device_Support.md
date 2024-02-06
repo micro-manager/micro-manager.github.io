@@ -384,6 +384,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Sapphire](Sapphire) - Lasers from Coherent
 -   [Skyra](Skyra) - Skyra laser controller
 -   [Stradus](Stradus) - Vortran Stradus laser driver
+-   [ThorlabsCHROLIS](ThorlabsCHROLIS) - Thorlabs CHROLIS LED Source
 -   [Toptica\_iBeamSmartCW](Toptica_iBeamSmartCW) - Toptica
     iBeamSmart laser series
 -   [Toptica\_iChrome\_MLE](Toptica_iChrome_MLE) - Toptica
