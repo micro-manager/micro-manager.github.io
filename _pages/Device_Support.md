@@ -467,5 +467,5 @@ release](Download_Micro-Manager_Latest_Release).
 
 - [NotificationTester](NotificationTester) - simulate device event
   notifications (or lack thereof)
-- SequenceTester (docs to be written) - capture device state and control
+- [SequenceTester](SequenceTester) - capture device state and control
   history and report in produced images
