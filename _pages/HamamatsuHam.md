@@ -28,7 +28,7 @@ Interfaces with Hamamatsu cameras
 </td>
 <td markdown="1">
 
-Patrick Gregorio (Hamamatsu)
+[HCRDG (Hamamatsu)](mailto:hcrdg@hamamatsu.com?subject=[Micro-Manager]%20)
 
 </td>
 </tr>
