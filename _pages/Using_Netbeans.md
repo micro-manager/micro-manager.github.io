@@ -59,9 +59,9 @@ Micro-Manager](Writing_plugins_for_Micro-Manager))
 
 -   In the left-hand navigation pane of the resulting window, choose **Libraries**. 
    * Click the (+) sign next to **Classpath** and choose **Add JAR/Folder**. Navigate to `$INSTALLDIR` and select `ij.jar`. Click **Choose**. 
-   * Now click the (+) sign and choose 'Add JAR/Folder' once more. Back inside the micro-manager installation directory, navigate to 'plugins/Micro-Manager' 
+   * Now click the (+) sign and choose 'Add JAR/Folder' once more. Back inside the micro-manager installation directory, navigate to 'plugins/Micro-Manager'
+        - If you are builiding a plugin, select all jars in `$INSTALLDIR/plugins/Micro-Manager`. 
         - If you are builiding the Micro-Manager source code, select all jars in `$INSTALLDIR/plugins/Micro-Manager` *except for* `MMJ_.jar`.
-        - If you are building a plugin, select the following four files: `AcqEngJ-X.X.X.jar`, `MMCoreJ.jar`, `MMJ_.jar` and `scijava-common-X.X.X.jar` (here X.X.X indicate version numbers which can vary depending on your Micro-Manager installation). 
    * You can optionally add additional dependencies if you are building a plugin that requires them. 
    * Click **Choose**. 
   
