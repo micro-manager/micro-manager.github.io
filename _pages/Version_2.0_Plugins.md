@@ -24,6 +24,7 @@ applications in microscopy:
 -   [Localization Microscopy](Localization_Microscopy)
 -   [MicroMagellan](MicroMagellan)
 -   [Mightex Polygon](Mightex_Polygon_Plugin)
+-   [Mist Stitching](MistData)
 -   Multi-Andor Control
 -   [MultiChannelShading](MultiChannelShading)
 -   [Point and Shoot Analysis](Point_and_Shoot_Analysis)
