@@ -87,6 +87,7 @@ release](Download_Micro-Manager_Latest_Release).
     cameras (via DCAM-API); now Mac only
 -   [HamamatsuHam](HamamatsuHam) - Hamamatsu cameras (via
     DCAM-API)
+-   [IDSPeak](IDSPeak) - IDS Peak cameras (Windows, Linux)
 -   [IDS\_uEye](IDS_uEye) - IDS uEye USB cameras (also
     Thorlabs DCUxxxx, Edmund EO-xxxxM) (Linux, Windows)
 -   [IIDC](IIDC) - Firewire (and USB) cameras compatible with
