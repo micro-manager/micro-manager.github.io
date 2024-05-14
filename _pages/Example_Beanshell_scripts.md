@@ -9,6 +9,7 @@ section: Extend
 <strong>Note: these example Beanshell scripts were written for the Micro-Manager 1.x 
 API.  These will not work in Micro-Manager 2.0 and greater. For a tutorial with 
   examplea scripting 2.x, see: [https://nicost.github.io/I2K-MM/](https://nicost.github.io/I2K-MM/)
+  2.0 compatible example scripts can be found here: https://github.com/micro-manager/micro-manager/tree/main/scripts.
 </strong>
 
 These beanshell scripts can be run from the '[Script
@@ -97,7 +98,7 @@ above (J. Husson).
 - Control Andor Mosaic via iQ 2.7
 
 The source code repository contains many more [example
-scripts](https://valelab.ucsf.edu/trac/micromanager/browser/scripts)
+scripts](https://github.com/micro-manager/micro-manager/tree/main/scripts)
 
 --[Nico](/users/Nico) 21:04, 15 December 2007 (PST)
 
