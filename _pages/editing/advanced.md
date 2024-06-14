@@ -14,14 +14,13 @@ The jekyll static site generator can be installed on Linux, MacOS and Windows.
 To install a local version of jekyll follow the instructions for your
 respective operating system [here](https://jekyllrb.com/docs/installation/).
 
+## Fork the repository
+It is not possible to modify the micro-manager wiki directly. Instead you create your own version (called a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)). You can then ask authorized maintainers to incorporate your changes into the main micro-manager wiki using a [pull-request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), also called PR.
+
 ## Clone the repository
 
 Once jekyll has been installed,
-[clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository)
-the repository. Navigate to the cloned repository and run `bundle install` to
-install the specific ruby gems necessary to run jekyll and serve the site.
-Once installation is complete, it is a good idea to run `bundle update`
-(it is a good idea to `bundle update` every so often to stay up to date).
+[clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository) the forked repository. Navigate to the cloned repository and run `bundle install` to install the specific ruby gems necessary to run jekyll and serve the site. Once installation is complete, it is a good idea to run `bundle update` (it is a good idea to `bundle update` every so often to stay up to date).
 
 ## Serve a local version of the site
 
@@ -73,7 +72,8 @@ like:
 1. `git add path/to/your-page-name.md` This step stages your changes to be commited.
 2. `git commit path/to/your-page-name.md` Note: you will not be prompted to enter a commit message. Our usership uses imperative tense, i.e. "Add new page xzy"
 3. `git push` Your new page or edits will not be pushed to the main branch of the repository.
+4. Create a pull request from your fork, see [this guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 [This guide](https://rogerdudler.github.io/git-guide/) provides further
 explanations on the above steps, as well as how to keep your local repository
-up-to-date with the remote with `git pull`.
+up-to-date with the remote with `git pull`. Furthermore, don't forget to keep your fork up-to-date with the main repository, see [this guide](https://gist.github.com/CristinaSolana/1885435).
