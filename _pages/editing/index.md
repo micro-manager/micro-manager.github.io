@@ -185,7 +185,6 @@ The following tables list all of this site's general-purpose includes:
 | Include                              | Purpose                              |
 |--------------------------------------|--------------------------------------|
 |  quiz (TODO)                         | Insert a Q&A with hidden answer      |
-|  timeline (TODO)                     | Insert a horizontal timeline         |
 |  tooltip (TODO)                      | Add a tooltip appearing on mouseover |
 |  echo (TODO)                         | For debugging                        |
 
