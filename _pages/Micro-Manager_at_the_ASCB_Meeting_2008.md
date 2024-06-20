@@ -39,7 +39,7 @@ patterns on the Arduino micro-controller. Thus, the TTL of the camera is
 connected to an input port of the micro-controller. The micro-controller
 is then instructed to cycle through a sequence of digital output
 patterns. To this end, we wrote [a
-program](https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde)
+program](https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde)
 that runs on the Arduino and a Micro-Manager device adapter that
 interacts with this program (available in Micro-Manager version 1.3). A
 few other useful modes are included in this Arduino program, including a

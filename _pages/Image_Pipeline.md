@@ -11,12 +11,12 @@ provide code to analyze images as they are acquired.
 To take advantage of this, you will need to write a class (in a Java
 Micro-Manager plugin or Beanshell script) that overrides the "analyze"
 method in the
-[org.micromanager.api.TaggedImageAnalyzer](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/TaggedImageAnalyzer.java)
+[org.micromanager.api.TaggedImageAnalyzer](https://valelab4.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/TaggedImageAnalyzer.java)
 abstract class.
 
 The analyze method takes a TaggedImage as it arrives from acquisition.
 Each
-[TaggedImage](https://valelab.ucsf.edu/svn/micromanager2/trunk/MMCoreJ_wrap/TaggedImage.java)
+[TaggedImage](https://valelab4.ucsf.edu/svn/micromanager2/trunk/MMCoreJ_wrap/TaggedImage.java)
 consists of raw pixels (either an array of bytes or shorts, depending on
 the pixel bit depth) and a JSON Object of Metadata.
 

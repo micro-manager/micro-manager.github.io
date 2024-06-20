@@ -57,7 +57,7 @@ install.
 ## After all is setup, cd to directory of choice and get SVN copy of micro-manager
 
 ```
-$ svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3
+$ svn co https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3
 ```
 
 I received Revision 2580.

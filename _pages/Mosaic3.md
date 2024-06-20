@@ -301,7 +301,7 @@ If using <code>FrameIndexSource</code> as <strong>Hardware</strong>, set to <str
 
 Neither the Projector plugin, nor the Sequencing window, exposes any
 API. Since they are written in Java, one could edit the [Java
-code](https://valelab.ucsf.edu/svn/micromanager2/trunk/plugins/Projector/src/org/micromanager/projector/)
+code](https://valelab4.ucsf.edu/svn/micromanager2/trunk/plugins/Projector/src/org/micromanager/projector/)
 itself to add desired functionality. See [writing plugins for
 Micro-Manager](writing_plugins_for_Micro-Manager)
 

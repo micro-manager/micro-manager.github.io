@@ -65,7 +65,7 @@ make
 sudo make install
 
 # Micro-Manager from SVN
-svn co https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
+svn co https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3/
 cd micromanager1.3
 
 ./mmUnixBuild.sh

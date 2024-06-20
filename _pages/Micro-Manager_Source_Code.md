@@ -93,8 +93,8 @@ and 3rdpartypublic repositories in the same directory. For example, run
 the following from your projects directory:
 
 ```
-svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
-svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic
+svn checkout https://valelab4.ucsf.edu/svn/micromanager2/trunk micromanager
+svn checkout https://valelab4.ucsf.edu/svn/3rdpartypublic
 ```
 
 More information on how to build Micro-Manager can be found here:
@@ -106,7 +106,7 @@ More information on how to build Micro-Manager can be found here:
 
 ## Source code for previous releases
 
-<https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3> -
+<https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3> -
 Release 1.3  
-<https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2> -
+<https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.2> -
 Release 1.2  

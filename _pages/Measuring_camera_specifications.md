@@ -169,10 +169,10 @@ calculate the noise after subtracting one image from the other.
 
 -   To create a Photon Transfer Curve we will take a series of images,
     using the Micro-Manager script
-    ‘[CameraLabs.bsh](https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/CameraLabs.bsh)’.
+    ‘[CameraLabs.bsh](https://valelab4.ucsf.edu/svn/micromanager2/trunk/scripts/CameraLabs.bsh)’.
     This script takes images at increasing exposure times (two images at
     each exposure time). We will then use the Micro-Manager script
-    [CameraAnalysis.bsh](https://valelab.ucsf.edu/svn/micromanager2/trunk/scripts/CameraAnalysis.bsh)
+    [CameraAnalysis.bsh](https://valelab4.ucsf.edu/svn/micromanager2/trunk/scripts/CameraAnalysis.bsh)
     to calculate the mean and standard deviation for each of these
     images. The script will calculate the mean intensity from one image
     and calculate the standard deviation by subtracting one of the two

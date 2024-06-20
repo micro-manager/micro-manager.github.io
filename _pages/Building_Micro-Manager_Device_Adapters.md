@@ -71,12 +71,12 @@ more specific advice on building Micro-Manager for each platform.
 
 First we check out Micro-Manager source code from:
 
-<https://valelab.ucsf.edu/svn/micromanager2/trunk/>
+<https://valelab4.ucsf.edu/svn/micromanager2/trunk/>
 
 into directory `/projects/micro-manager1.4` on our computer. Then we
 check out required 3rd-party libraries from:
 
-<https://valelab.ucsf.edu/svn/3rdpartypublic/>
+<https://valelab4.ucsf.edu/svn/3rdpartypublic/>
 
 into directory `/projects/3rdpartypublic` on our computer.
 
@@ -522,7 +522,7 @@ Arduino library is a good example of the Hub implementation and the
 relationship with its child devices. It would be a good idea to have a
 look at the source code before attempting to write a new Hub class from
 scratch: [Arduino device adapter
-library](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/).
+library](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/).
 
 Especially important are implementations of the following methods from
 the MM::Hub device API:
@@ -542,7 +542,7 @@ hardware devices.
 Before writing a new device adapter, you may find it worthwhile to
 examine the source code of some of the numerous open source device
 adapters already written, [available in our subversion
-repository](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/).
+repository](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/).
 
 ### DemoCamera
 

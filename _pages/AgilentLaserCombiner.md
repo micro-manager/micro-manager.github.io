@@ -99,9 +99,9 @@ wavelength of the light output at very high speeds, synchronized with
 camera exposures.
 
 To use the adapter, you will need to copy the dll named
-"[LaserCombinerSDK.dll](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/AgilentLaserCombiner/lib/LaserCombinerSDK.dll)"
+"[LaserCombinerSDK.dll](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/AgilentLaserCombiner/lib/LaserCombinerSDK.dll)"
 (for 32 bit Windows) or
-"[LaserCombinerSDK64.dll](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/AgilentLaserCombiner/lib/LaserCombinerSDK64.dll)"
+"[LaserCombinerSDK64.dll](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/AgilentLaserCombiner/lib/LaserCombinerSDK64.dll)"
 (for 64 bit Windows) into the Micro-Manager directory. Select the
 LC-Shutter and LC-SafetyShutter devices. It is most practical to add the
 LC-SafetyShutter-State property to your System-Startup group and open it

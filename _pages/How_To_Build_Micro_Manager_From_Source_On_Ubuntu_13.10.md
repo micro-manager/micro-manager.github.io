@@ -33,8 +33,8 @@ wget http://imagej.nih.gov/ij/download/zips/Ij148.zip
 unzip Ij148.zip
 
 # Retrieve MM source code (can be long)
-svn co https://valelab.ucsf.edu/svn/micromanager2/trunk micro-manager
-svn co https://valelab.ucsf.edu/svn/3rdpartypublic
+svn co https://valelab4.ucsf.edu/svn/micromanager2/trunk micro-manager
+svn co https://valelab4.ucsf.edu/svn/3rdpartypublic
 
 # Build MM
 cd micro-manager/

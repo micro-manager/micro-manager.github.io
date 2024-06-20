@@ -37,7 +37,7 @@ below);
 For info about board working specifications read
 [Arduino](Arduino) page. It's only necessary to load the
 [firmware source
-code](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde)
+code](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.pde)
 in Arduino board and this will let set different state to set pins from
 8 to 13 in HIGH/LOW state.
 
