@@ -10,7 +10,7 @@ section: Extend
 
 Micro-Manager has a Java-based plugin system similar to ImageJ's. To
 write a Micro-Manager plugin, simply implement the [`MMPlugin`
-interface](https://valelab4.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/MMPlugin.java).
+interface](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/MMPlugin.java).
 {% include notice icon="info" content="The static String <code>menuName</code> lets you control the name of the plugin that appears in the Micro-Manager Plugins menu." %}
 
 Micro-Manager's classpath is set up so that Micro-Manager plugins can
@@ -45,7 +45,7 @@ be loaded at startup.
 
 The source code for a number of Micro-Manager plugins is publicly
 available
-[here](https://valelab4.ucsf.edu/trac/micromanager/browser/plugins). You
+[here](https://github.com/micro-manager/micro-manager/tree/svn-mirror/plugins). You
 may also find this [Hello World Example
 plugin](/media/files/HelloWorldPlugin.zip) useful as a template for
 getting started.

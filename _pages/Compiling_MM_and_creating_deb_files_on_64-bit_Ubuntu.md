@@ -7,8 +7,7 @@ layout: page
 
 {% include notice icon="info" content="These instructions refer to very old versions of Micro-Manager source code." %}
 
-This note was written using Revision: 2580
-(https://valelab.ucsf.edu/trac/micromanager/timeline) that contained
+This note was written using Revision: 2580 that contained
 fixes to linux build by Nico and debian-specific scripts by Johan.
 Following notes are a log of things I needed to do for building the deb
 packages successfully and running micro-manager. Suggestions were

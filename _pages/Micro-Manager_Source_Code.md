@@ -110,12 +110,3 @@ More information on how to build Micro-Manager can be found here:
 Release 1.3  
 <https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2> -
 Release 1.2  
-
-## Code Timeline and Source Browser
-
-If you just want to take a look at the source code and recent
-development activity check without needing an SVN client see the
-[timeline of recent code
-submissions](https://valelab.ucsf.edu/trac/micromanager/timeline) and
-the [source code
-browser](https://valelab.ucsf.edu/trac/micromanager/browser).
