@@ -68,7 +68,7 @@ All platforms (uses serial port)
 
 ASI "Tiger" TG-1000 controller with appropriate cards installed
 
-<td markdown="1">
+</td>
 </tr>
 </table>
 
