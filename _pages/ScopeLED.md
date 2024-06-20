@@ -82,7 +82,7 @@ available for free at <http://www.scopeled.com/resources/downloads.php>.
 ### Properties Documentation
 
 (This documentation is also [available
-here.](https://valelab4.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/ScopeLED/Properties.doc))
+here.](https://github.com/micro-manager/mmCoreAndDevices/tree/main/DeviceAdapters/ScopeLED/Properties.doc))
 
 **All ScopeLED Illuminators**
 

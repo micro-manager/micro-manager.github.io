@@ -169,10 +169,10 @@ calculate the noise after subtracting one image from the other.
 
 -   To create a Photon Transfer Curve we will take a series of images,
     using the Micro-Manager script
-    ‘[CameraLabs.bsh](https://valelab4.ucsf.edu/svn/micromanager2/trunk/scripts/CameraLabs.bsh)’.
+    ‘[CameraLabs.bsh](https://github.com/micro-manager/micro-manager/tree/main/scripts/CameraLabs/CameraLabs.bsh)’.
     This script takes images at increasing exposure times (two images at
     each exposure time). We will then use the Micro-Manager script
-    [CameraAnalysis.bsh](https://valelab4.ucsf.edu/svn/micromanager2/trunk/scripts/CameraAnalysis.bsh)
+    [CameraAnalysis.bsh](https://github.com/micro-manager/micro-manager/tree/main/scripts/CameraLabs/CameraAnalysis.bsh)
     to calculate the mean and standard deviation for each of these
     images. The script will calculate the mean intensity from one image
     and calculate the standard deviation by subtracting one of the two
@@ -181,9 +181,9 @@ calculate the noise after subtracting one image from the other.
     Transfer Curve.
 -   In Micro-Manager, open the Script Panel (Tools-&gt;Script Panel).
     Press the ‘Add’ button in the upper left corner and locate the file
-    ‘CameraLabs.bsh’ in C:\\Program Files\\Micro-Manager1.4\\scripts.
-    Likewise, “add” the scripts: “Plot.bsh”, “CameraAnalysis.bsh”, and
-    “FPN.bsh”. Run the script “Plot.bsh” (you will see no output, it
+    ‘CameraLabs.bsh’ in `C:\Program Files\Micro-Manager-2.0\scripts\CameraLabs`.
+    Likewise, “add” the scripts: “plotData.bsh”, “CameraAnalysis.bsh”, and
+    “FPN.bsh”. Run the script “plotData.bsh” (you will see no output, it
     simply loads the plotting code, you need to run this only once).
     -   Use a smartphone display for even illumination as described
         above. Determine the maximum exposure time at which the image

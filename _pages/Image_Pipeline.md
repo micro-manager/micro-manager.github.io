@@ -5,18 +5,21 @@ redirect_from: /wiki/Image_Pipeline
 layout: page
 ---
 
+{% include notice icon="warning"
+  content="This page describes Micro-Manager 1.4 usage. Micro-Manager 2.0 and later APIs differ." %}
+
 The Micro-Manager image pipeline is designed to allow programmers to
 provide code to analyze images as they are acquired.
 
 To take advantage of this, you will need to write a class (in a Java
 Micro-Manager plugin or Beanshell script) that overrides the "analyze"
 method in the
-[org.micromanager.api.TaggedImageAnalyzer](https://valelab4.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/TaggedImageAnalyzer.java)
+[org.micromanager.api.TaggedImageAnalyzer](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/TaggedImageAnalyzer.java)
 abstract class.
 
 The analyze method takes a TaggedImage as it arrives from acquisition.
 Each
-[TaggedImage](https://valelab4.ucsf.edu/svn/micromanager2/trunk/MMCoreJ_wrap/TaggedImage.java)
+[TaggedImage](https://github.com/micro-manager/micro-manager/tree/svn-mirror/MMCoreJ_wrap/TaggedImage.java)
 consists of raw pixels (either an array of bytes or shorts, depending on
 the pixel bit depth) and a JSON Object of Metadata.
 

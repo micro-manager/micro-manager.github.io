@@ -65,6 +65,9 @@ all submodules are also up to date.
 
 ## Subversion repository for 1.4
 
+Hint: You can also access the Micro-Manager 1.4 code on branch `svn-mirror` at
+https://github.com/micro-manager/micro-manager.
+
 To access the subversion repository you will need a [subversion
 client](http://subversion.tigris.org/).
 
