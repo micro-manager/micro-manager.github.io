@@ -106,7 +106,6 @@
     <li><a href="/editing/pitfalls">Pitfalls</a></li>
     <li><a href="/editing/symbols">Symbols</a></li>
     <li><a href="/editing/tables">Tables</a></li>
-    <li><a href="/editing/timelines">Timelines</a></li>
     <li><a href="/editing/videos">Videos</a></li>
     <li><a href="/editing/whitespace">Whitespace</a></li>
     {% include menu-section-end %} <!-- Help/Editing the Wiki -->

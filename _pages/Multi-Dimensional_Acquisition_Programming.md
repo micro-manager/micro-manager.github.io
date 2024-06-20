@@ -11,6 +11,9 @@ Micro-Manager. The newest and most powerful tool for this type of
 programming is
 [Pycro-manager](https://github.com/micro-manager/pycro-manager).
 
+{% include notice icon="warning"
+  content="This page describes Micro-Manager 1.4 usage. Micro-Manager 2.0 and later has equivalent APIs but they differ in detail." %}
+
 The info below describes capabilities developed in 2010-2012.
 
 # Architecture
@@ -88,7 +91,7 @@ scripts before they are added to a Multi-Dimensional image window:
 -   a random, unique UUID (a unique universal ID number)
 -   WaitInterval (the requested delay between successive time points)
 
-**[SequenceSettings](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/SequenceSettings.java)**:
+**[SequenceSettings](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/SequenceSettings.java)**:
 A pure data object set up by the Multi-Dimensional Acquisition setup
 dialog (AcqControlDialog). The settings within this object include the
 size of and parameters for each dimension (frames, positions, slices,
@@ -97,7 +100,7 @@ for saving and autofocus. The SequenceSettings object fully specifies a
 desired acquisition sequence as carried out by an
 IAcquisitionEngine2010.
 
-**[IAcquisitionEngine2010](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/IAcquisitionEngine2010.java)**:
+**[IAcquisitionEngine2010](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/IAcquisitionEngine2010.java)**:
 This interface (created in 2010) is concerned solely with sequencing of
 hardware events and acquisition of images. Its most important method,
 run(...), accepts a single argument of type SequenceSettings and returns
@@ -119,7 +122,7 @@ hardware events (Runnables) to be attached to particular points in the
 MDA sequence (for example, allowing photobleaching events at a
 particular time point).
 
-**[DataProcessor<TaggedImage>](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/DataProcessor.java)**
+**[DataProcessor<TaggedImage>](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/DataProcessor.java)**
 (abstract class): Plugins and scripts can implement their own
 DataProcessors. Each DataProcessor runs on its own thread and has an
 input and output queue: one or more TaggedImages can be received on the
@@ -129,18 +132,13 @@ ChannelIndex) should be adjusted by the DataProcessor to ensure that
 each TaggedImage is display in the right place in the MDA data set. The
 ImageFlipper plugin shows a simple example.
 
-**[ProcessorStack](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/ProcessorStack.java)**:
+**[ProcessorStack](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/acquisition/ProcessorStack.java)**:
 This object connects up a list of active DataProcessors. It is designed
 to received images from the queue returned by
 IAcquisitionEngine2010.run(...) and produces an output queue that yields
 processed TaggedImages.
 
-**[LiveAcq](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/LiveAcq.java)**:
-This object has a loop running on its own thread that receives
-TaggedImages from the ProcessorStack output queue, and pumps them into
-the ImageCache.
-
-**[MMImageCache](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/MMImageCache.java)**
+**[MMImageCache](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/acquisition/MMImageCache.java)**
 (interface ImageCache): An object that provides a way to store images
 either in RAM or on disk. The MMImageCache has a pluggable saving
 mechanism that allows different file formats to be saved (currently two
@@ -155,7 +153,7 @@ existing data set, it is loaded into a new MMImageCache. When a
 disk-based ImageCache is attached to a VirtualAcquisitionDisplay, it
 essentially operates in "virtual" mode.
 
-**[TaggedImageStorage](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/TaggedImageStorage.java)**:
+**[TaggedImageStorage](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/TaggedImageStorage.java)**:
 An interface for code to store images and metadata in a
 multi-dimensional data set, in RAM or on disk (or potentially in a
 database). Currently there are three implementations:
@@ -167,7 +165,7 @@ images in one or a very few multipage TIFF files, and reads and writes
 data substantially faster than the default saving method. The
 MMImageCache internally uses TaggedImageStorage instances.
 
-**[VirtualAcquisitionDisplay](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/VirtualAcquisitionDisplay.java)**:
+**[VirtualAcquisitionDisplay](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/imagedisplay/VirtualAcquisitionDisplay.java)**:
 The default display class for Micro-Manager. This display module uses
 ImageJ windows to display multi-dimensional data sets stored in a given
 ImageCache. The VirtualAcquisitionDisplay object is also connected to
@@ -180,15 +178,7 @@ detected, the VirtualAcquisitionDisplay will adapt to show the full
 range of these dimensions. It expects a single height, width, and pixel
 type, however.
 
-**[DefaultTaggedImagePipeline](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/DefaultTaggedImagePipeline.java)**:
-A small class that provides Micro-Manager's default behavior for
-multi-dimensional acquisition. It instantiates and connects the various
-components in the TaggedImage pipeline: namely the
-AcquisitionEngine2010, the ProcessorStack, the LiveAcq and (through the
-MMAcquisition interface) the VirtualAcquisitionDisplay and the
-MMImageCache.
-
-**[AcquisitionWrapperEngine](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/AcquisitionWrapperEngine.java)**
+**[AcquisitionWrapperEngine](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/acquisition/AcquisitionWrapperEngine.java)**
 (interface AcquisitionEngine): the traditional "acquisition engine,"
 available in the script panel as **acq** or by calling
 gui.getAcquisitionEngine(). This wrapper uses a
@@ -212,15 +202,15 @@ protocols.
 There are three main components involved in running acquisition
 protocols:
 
-**[SequenceSettings](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/acquisition/SequenceSettings.java)**:
+**[SequenceSettings](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/SequenceSettings.java)**:
 protocol specification corresponding to the settings in the
 Multi-dimensional Acqusition Window in the GUI
 
-**[PositionList](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/navigation/PositionList.java)**:
+**[PositionList](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/PositionList.java)**:
 an array of stage positions (XY or XYZ) that acquisition protocol is
 going to be applied to
 
-**[IAcquisitionEngine2010](https://valelab.ucsf.edu/svn/micromanager2/trunk/mmstudio/src/org/micromanager/api/IAcquisitionEngine2010.java)**:
+**[IAcquisitionEngine2010](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/IAcquisitionEngine2010.java)**:
 the actual acquisition engine component defined as an interface. The
 implementation used in micro-manager is written in Clojure and can be
 imported as org.micromanager.AcqusitionEngine2010

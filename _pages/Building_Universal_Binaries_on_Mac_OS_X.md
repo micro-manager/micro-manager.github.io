@@ -12,9 +12,9 @@ We found the least painful way to build Universal Binaries (32-bit ppc,
 individually and then use the lipo tool to combine these libraries into
 Universal Binaries. The Micro-Manager repository contains scripts that
 will execute cross-compilation for the three platforms (see
-[nightlyBuildMMac.sh](https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/nightlyBuildMMMac.sh)
+[nightlyBuildMMac.sh](https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/nightlyBuildMMMac.sh)
 and
-[buildMMMac.sh](https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/buildMMMac.sh)),
+[buildMMMac.sh](https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3/MacInstaller/buildMMMac.sh)),
 however, the supporting libraries (currently, boost, libdc1394, libusb,
 and for 1.4 also libtiff and zlib) need to be build for each platform
 independently. Below are some notes on how this can be accomplished:

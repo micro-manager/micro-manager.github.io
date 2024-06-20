@@ -81,7 +81,7 @@ pages for specific instructions on how to use properties to activate
 hardware synchronization. (Examples for device adapter developers how to
 write code for sequencable devices can be found in the [Arduino device
 adapter source
-code](https://valelab.ucsf.edu/trac/micromanager/browser/DeviceAdapters/Arduino).)
+code](https://github.com/micro-manager/mmCoreAndDevices/tree/main/DeviceAdapters/Arduino).)
 
 When executing a multi-dimensional acquisition, Micro-Manager's
 acquisition engine opportunistically and transparently uses hardware

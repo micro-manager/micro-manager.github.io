@@ -68,7 +68,7 @@ All platforms (uses serial port)
 
 ASI "Tiger" TG-1000 controller with appropriate cards installed
 
-<td markdown="1">
+</td>
 </tr>
 </table>
 
@@ -140,11 +140,6 @@ The feature was fully implemented as of the nightly build listed.
 -   (1.4.19 release)
 -   first included with 1.4.16 release Jan 2014
 
-You can view all changes to the diSPIM plugin code by [searching the
-Micro-Manager timeline for
-"ASIdiSPIM"](https://valelab.ucsf.edu/trac/micromanager/search?q=asidispim).
-You can also [browse the plugin source
-code](https://valelab4.ucsf.edu/trac/micromanager/browser/plugins/ASIdiSPIM/src/org/micromanager/asidispim).
 
 ## Known Issues
 

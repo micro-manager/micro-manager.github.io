@@ -65,6 +65,9 @@ all submodules are also up to date.
 
 ## Subversion repository for 1.4
 
+Hint: You can also access the Micro-Manager 1.4 code on branch `svn-mirror` at
+https://github.com/micro-manager/micro-manager.
+
 To access the subversion repository you will need a [subversion
 client](http://subversion.tigris.org/).
 
@@ -93,8 +96,8 @@ and 3rdpartypublic repositories in the same directory. For example, run
 the following from your projects directory:
 
 ```
-svn checkout https://valelab.ucsf.edu/svn/micromanager2/trunk micromanager
-svn checkout https://valelab.ucsf.edu/svn/3rdpartypublic
+svn checkout https://valelab4.ucsf.edu/svn/micromanager2/trunk micromanager
+svn checkout https://valelab4.ucsf.edu/svn/3rdpartypublic
 ```
 
 More information on how to build Micro-Manager can be found here:
@@ -106,16 +109,7 @@ More information on how to build Micro-Manager can be found here:
 
 ## Source code for previous releases
 
-<https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.3> -
+<https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.3> -
 Release 1.3  
-<https://valelab.ucsf.edu/svn/micromanager2/branches/micromanager1.2> -
+<https://valelab4.ucsf.edu/svn/micromanager2/branches/micromanager1.2> -
 Release 1.2  
-
-## Code Timeline and Source Browser
-
-If you just want to take a look at the source code and recent
-development activity check without needing an SVN client see the
-[timeline of recent code
-submissions](https://valelab.ucsf.edu/trac/micromanager/timeline) and
-the [source code
-browser](https://valelab.ucsf.edu/trac/micromanager/browser).

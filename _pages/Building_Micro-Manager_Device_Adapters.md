@@ -27,8 +27,7 @@ Let's assume that we are writing a device adapter, for a device called
 “MyDevice.” The workflow for development of the new adapter should look
 like this:
 
--   Check out the latest source code from the Micro-Manger Subversion
-    repository
+-   Check out the latest source code from the Micro-Manger repository
 -   If required, install device manufacturer’s drivers, SDK and any
     other software/hardware required for the particular device we are
     working with.
@@ -62,7 +61,7 @@ like this:
 ## Directory layout
 
 Before doing anything else we should check out the latest version of
-Micro-Manager from the Subversion repository (see [Micro-Manager Source
+Micro-Manager from the repository (see [Micro-Manager Source
 Code](Micro-Manager_Source_Code)) to an appropriate base
 directory on our computer. The checkout process is outlined in the next
 few steps. [Building and debugging Micro-Manager source
@@ -71,12 +70,14 @@ more specific advice on building Micro-Manager for each platform.
 
 First we check out Micro-Manager source code from:
 
-<https://valelab.ucsf.edu/svn/micromanager2/trunk/>
+<https://github.com/micro-manager/micro-manager>
 
-into directory `/projects/micro-manager1.4` on our computer. Then we
+(and, as a Git submodule, <https://github.com/micro-manager/mmCoreAndDevices>)
+
+into directory `/projects/micro-manager` on our computer. Then we
 check out required 3rd-party libraries from:
 
-<https://valelab.ucsf.edu/svn/3rdpartypublic/>
+<https://valelab4.ucsf.edu/svn/3rdpartypublic/>
 
 into directory `/projects/3rdpartypublic` on our computer.
 
@@ -98,7 +99,7 @@ The top-level directory can be called something other than “projects”,
 but within our top-level directory we must have three parallel
 sub-directories with fixed names:
 
-* `/micro-manager1.4` (development source code)
+* `/micro-manager` (development source code)
 * `/3rdpartypublic` (required open source third-party libraries)
 * `/3rdparty` (optional proprietary libraries that may be required for our
 hardware)
@@ -108,7 +109,7 @@ hardware)
 The place designated for development of our new adapter is:
 
 ```
-/projects/micro-manager1.4/TestDeviceAdapters
+/projects/micro-manager/mmCoreAndDevices/TestDeviceAdapters
 ```
 
 In this directory we will find a very simple “skeleton” camera adapter
@@ -120,7 +121,7 @@ MMCamera. In our case we will create a new directory for our new Device
 Adapter:
 
 ```
-/projects/micro-manager1.4/TestDeviceAdapters/MyDevice
+/projects/micro-manager/mmCoreAndDevices/TestDeviceAdapters/MyDevice
 ```
 
 ## Project settings (Windows)
@@ -522,7 +523,7 @@ Arduino library is a good example of the Hub implementation and the
 relationship with its child devices. It would be a good idea to have a
 look at the source code before attempting to write a new Hub class from
 scratch: [Arduino device adapter
-library](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/Arduino/).
+library](https://github.com/micro-manager/mmCoreAndDevices/tree/main/DeviceAdapters/Arduino/).
 
 Especially important are implementations of the following methods from
 the MM::Hub device API:
@@ -541,8 +542,8 @@ hardware devices.
 
 Before writing a new device adapter, you may find it worthwhile to
 examine the source code of some of the numerous open source device
-adapters already written, [available in our subversion
-repository](https://valelab.ucsf.edu/svn/micromanager2/trunk/DeviceAdapters/).
+adapters already written, [available in our
+repository](https://github.com/micro-manager/mmCoreAndDevices/tree/main/DeviceAdapters/).
 
 ### DemoCamera
 

@@ -5,6 +5,9 @@ redirect_from: /wiki/Writing_image_processors_for_Micro-Manager
 layout: page
 ---
 
+{% include notice icon="warning"
+  content="This page describes Micro-Manager 1.4 usage. Micro-Manager 2.0 and later APIs differ." %}
+
 Micro-Manager has an image processing pipeline. Every time the program
 receives an image from a camera, it is run through this pipeline, and
 the DataProcessors in the pipeline make modifications to the image. For
@@ -20,7 +23,7 @@ et cetera. An image goes in, the DataProcessor does some work, a
 different image comes out.
 
 New DataProcessors must implement the [`DataProcessor`
-interface](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/DataProcessor.java).
+interface](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/DataProcessor.java).
 This interface specifies three functions: process(),
 makeConfigurationGUI(), and dispose(). The first function is what does
 the actual modification of image data (and is required to be
@@ -37,7 +40,7 @@ re-ordered. To add a DataProcessor to this list, it must be
 
 There are two primary ways to register a new DataProcessor. The first is
 to call the `registerProcessorClass` function on the [`gui`
-object](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/ScriptInterface.java).
+object](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/ScriptInterface.java).
 This function takes as arguments the "class" of your DataProcessor and a
 `String` that names it (it is this string that is displayed in the Image
 Pipeline's list of known processors). The class is what you get if you
@@ -88,11 +91,11 @@ Once this is done, the new DataProcessor will show up in the Image
 Pipeline dialog, where the user can add and remove it from the pipeline.
 
 Alternately, you can create an [`MMProcessorPlugin`
-object](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/MMProcessorPlugin.java).
+object](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/MMProcessorPlugin.java).
 These are plugins that specifically create DataProcessors when selected
 from Micro-Manager's "Plugins" menu. MMProcessorPlugins are similar to
 MMPlugins (they both inherit from the same [`MMBasePlugin`
-interface](https://valelab.ucsf.edu/trac/micromanager/browser/mmstudio/src/org/micromanager/api/MMBasePlugin.java)).
+interface](https://github.com/micro-manager/micro-manager/tree/svn-mirror/mmstudio/src/org/micromanager/api/MMBasePlugin.java)).
 However, because the DataProcessor is responsible for providing its own
 GUI via `makeConfigurationGUI`, MMProcessorPlugins do not have the
 `show()` and `dispose()` methods that MMPlugins do. Instead, they must

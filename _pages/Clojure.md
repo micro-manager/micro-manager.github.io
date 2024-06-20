@@ -6,14 +6,8 @@ layout: page
 section: Extend
 ---
 
-The Micro-Manager acquisition engine, and the Data Browser plugin, are
-both written in the Clojure programming language. You can write your own
-Clojure scripts or Micro-Manager plugins using the Clojure Editor
-(described [here](https://github.com/arthuredelstein/clooj)), available
-under the Plugins menu .
+The Micro-Manager acquisition engine is written in the Clojure programming
+language.
 
-Micro-Manager includes jars for the Clojure Core and Clojure Contrib on
-the class path. The [Data Browser source
-code](https://valelab.ucsf.edu/trac/micromanager/browser/plugins/DataBrowser/src/org/micromanager/browser)
-shows an example of a Micro-Manager plugin in written Clojure.
-
+Micro-Manager includes jars for (old versions of) the Clojure Core and Clojure
+Contrib on the class path.
