@@ -75,7 +75,7 @@ you probably need Ti2 Control 1.2.0.
 
 ### Troubleshooting
 
-- If `NikonTi2` only shows as `NikonTi2 (unavailable)` in the config wizard, ensure that you have moved the `Ti2_Mic_Driver.dll` into the same directory as the `mmgr_dal_NikonTi2.dll` library and have *not* renamed `Ti2_Mic_Driver.dll`.
+- If `NikonTi2` only shows as `NikonTi2 (unavailable)` in the config wizard, ensure that you have copied the `Ti2_Mic_Driver.dll` into the same directory as the `mmgr_dal_NikonTi2.dll` library and have *not* renamed `Ti2_Mic_Driver.dll` (and that it is from the currently installed version of the Nikon software).
 - If the `NikonTi2` folder is available in the config wizard, but you only see the `*Ti2-Simulator` device available:
    - Make sure that your microscope is powered on and connected to the computer (you may have to restart micro-manager if you powered it on after starting micro-manager).
    - Make sure the SDK can control your microscope *without* going through micro-manager, for example by running `C:\Program Files\Nikon\Ti2-SDK\bin\Ti2Sample.exe` and confirming that your microscope responds to button presses.
