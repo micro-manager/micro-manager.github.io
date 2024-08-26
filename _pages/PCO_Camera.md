@@ -126,6 +126,19 @@ In case of Camera Link (CL) interface you also need:
  Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
  National Instruments: sc2_cl_nat.dll
 ```
+For a Genicam interface based camera like pco.swir you also need:
+
+```
+ Genicam interface dll: sc2_genicam.dll
+ Genicam dll folder : ./genicam
+ Including:
+ GCBase_MD_VC141_v3_3.dll
+ GenApi_MD_VC141_v3_3.dll
+ Log_MD_VC141_v3_3.dll
+ MathParser_MD_VC141_v3_3.dll
+ NodeMapData_MD_VC141_v3_3.dll
+ XmlParser_MD_VC141_v3_3.dll
+```
 
 The files are part of the pco.camware, pco.sdk or pco.runtime
 installation. Please install at least one of these software packages.
