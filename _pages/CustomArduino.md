@@ -72,7 +72,7 @@ Many
 <tr>
 <td markdown="1">
 
-**Example Config File:**
+**Location of source files:**
 
 </td>
 <td markdown="1">
