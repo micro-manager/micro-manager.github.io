@@ -32,6 +32,12 @@ fixed already.
 
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
+It is highly, highly recommended to use the latest 
+[nightly build](https://micro-manager.org/Micro-Manager_Nightly_Builds) 
+instead of the release build.  These have 3 more years of development and 
+bug fixes and have proven to be very stable. For historic purposes we leave
+the release build up here.
+
   - [Windows 64-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_64bit_2.0.0.exe),
     148 MB  
   - [Windows 32-bit](https://download.micro-manager.org/release/2.0/Windows/MMSetup_32bit_2.0.0.exe),
