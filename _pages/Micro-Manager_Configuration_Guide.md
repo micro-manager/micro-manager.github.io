@@ -61,6 +61,10 @@ fully functional.
 2](/media/Wizardstep2.png "fig:Hardware wizard step 2")  
 Figure 2. Step 2 of the hardware configuration wizard: selection of
 devices.  
+If the device adapter you need shows up as "Unavailable", you can check if 
+any of the dependecies for that device adapter are missing using one of the 
+[Dependency Walker](Free_third-party_tools_for_testing_communications_with_hardware.md) 
+alternatives (Windows only).  
 You can exit the wizard at any step by closing the wizard window. You
 will be prompted to save the configuration file. Doing so (even when
 something did not work) will be helpful in trouble shooting potential
