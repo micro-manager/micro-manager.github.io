@@ -301,6 +301,9 @@ release](Download_Micro-Manager_Latest_Release).
     Digital/Analogue IO board
 -   [Arduino32bitBoards](Arduino32bitBoards) - 32bit Open
     Source Programmable Digital/Analogue IO boards
+-   [ArduinoCounter](Arduino_Counter) - Virtual camera that 
+    ensures the number of hardware triggers (TTL pulses) from 
+    the real camera is correct.
 -   [CustomArduino](CustomArduino) - Arduino-based devices
     matching existing device adapters
 -   [DTOpenLayer](DTOpenLayer) - DT OpenLayer Digital IO
