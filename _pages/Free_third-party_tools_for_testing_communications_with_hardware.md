@@ -78,6 +78,9 @@ available for this purpose:
     and works amazingly well! Windows only.
 -   [**Dependency Walker**](http://www.dependencywalker.com/) (Windows)
     lets you inspect DLLs and other binary code for function names and
-    function calls. A similar program is [**Nirsoft DLL Export
-    Viewer**](http://www.nirsoft.net/utils/dll_export_viewer.html).
+    function calls. Dependency Walker has been reported not to work
+    well under Windows 10 and up.  Newer alternatives are:
+    - [**Nirsoft DLL Export Viewer**](http://www.nirsoft.net/utils/dll_export_viewer.html)
+    - [**Windepends**](https://github.com/hfiref0x/Windepends)
+    - [**Dependencies**](https://github.com/lucasg/Dependencies)
 
