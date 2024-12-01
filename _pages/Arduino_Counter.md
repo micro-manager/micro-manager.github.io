@@ -12,7 +12,7 @@ section: Extend
 Adapter for the ArduinoCounter device 
 
 <table>
-<tr><td>Author:</td><td>Nico Stuurman</td></tr>
+<tr><td>Author:</td><td>Nico Stuurman, Tanner Fadero</td></tr>
 <tr><td>License:</td><td>LGPL</td></tr>
 <tr><td>Platforms:</td><td>Linux, Mac, and Windows</td></tr>
 <tr><td>Since version: </td><td> 2.0.1</td></tr>
@@ -63,21 +63,31 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
 ## Assembly 
 
 
-    1. Connect the two BNC ground pins from the BNCB1 bracket by soldering a wire between the two pins. 
+    1. Connect the two BNC ground pins from the BNCB1 bracket by soldering a wire 
+    between the two pins. 
 
-    2. Connect the two ground pins from the BNCB1 bracket to the GND (ground) pin of the Teensy 4.0 board by soldering a wire from either BNC ground pin to the Teensy 4.0 GND pin. 
+    2. Connect the two ground pins from the BNCB1 bracket to the GND (ground) pin 
+    of the Teensy 4.0 board by soldering a wire from either BNC ground pin to the 
+    Teensy 4.0 GND pin. 
 
-    3. Connect pin 2 on the Teensy 4.0 to the positive pin on the left BNC connector on BNCB1 by soldering a wire between the two pins.  
+    3. Connect pin 2 on the Teensy 4.0 to the positive pin on the left BNC connector 
+    on BNCB1 by soldering a wire between the two pins.  
 
-    4. Connect pin 4 on the Teensy 4.0 to the positive pin on the right BNC connector on BNCB1 by soldering a wire between the two pins. This is the “IN” pin, which will receive a TTL from your camera. 
+    4. Connect pin 4 on the Teensy 4.0 to the positive pin on the right BNC connector 
+    on BNCB1 by soldering a wire between the two pins. This is the “IN” pin, which 
+    will receive a TTL from your camera. 
 
-    5. Insert the Teensy 4.0 board gently into the 3D printed enclosure. Fold up any excess wiring inside the enclosure. This is the “OUT” pin, which will send a TTL to your sequencing devices.  
+    5. Insert the Teensy 4.0 board gently into the 3D printed enclosure. Fold up any 
+    excess wiring inside the enclosure. This is the “OUT” pin, which will send a TTL 
+    to your sequencing devices.  
 
     6. Insert the BNCB1 into the front of the 3D printed enclosure.  
 
-    7. Attach the bottom of the 3D printed enclosure to your optical table with an M6 or ¼-20” bolt.  
+    7. Attach the bottom of the 3D printed enclosure to your optical table with an 
+    M6 or ¼-20” bolt.  
 
-    8. Attach the top of the enclosure with 4 x M4x0.7, 10 mm long bolts and 4 x M4 washers. 
+    8. Attach the top of the enclosure with 4 x M4x0.7, 10 mm long bolts and 
+    4 x M4 washers. 
 
     10. Insert the micro-USB cable into your Teensy 4.0 and connect it to your CPU. 
 
@@ -89,11 +99,14 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
 
 ## Software Configuration 
 
-    1. Download and install Arduino IDE, then install Teensy on Arduino IDE 2.x, following PJRC’s instructions.  
+    1. Download and install Arduino IDE, then install Teensy on Arduino IDE 2.x, 
+    following PJRC’s instructions.  
 
-    2. Download a copy of the ArduinoCounter.ino firmware. Upload the firmware to the Teensy 4.0 via Arduino IDE. 
+    2. Download a copy of the ArduinoCounter.ino firmware. Upload the firmware 
+    to the Teensy 4.0 via Arduino IDE. 
 
-    3. In the Micro-Manager Hardware Configuration Wizard, add the ArduinoCounter device to your list of devices. Be sure to choose the correct COM port. 
+    3. In the Micro-Manager Hardware Configuration Wizard, add the ArduinoCounter d
+    evice to your list of devices. Be sure to choose the correct COM port. 
 
   <table>
     <tr><td>AnswerTimeout</td><td>500</td></tr>
@@ -107,11 +120,15 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
  
     4. Set your Core Camera to your ArduinoCamera. Save your hardware configuration.  
 
-    5. In your Device Property Browser, set your ArduinoCamera-PhysicalCamera to your normal camera. It is very helpful to add this device property to your System-Startup configuration group.  
+    5. In your Device Property Browser, set your ArduinoCamera-PhysicalCamera to 
+    your normal camera. It is very helpful to add this device property to your 
+    System-Startup configuration group.  
 
  
 
 ## Usage Notes 
  
 
-The ArduinoCounter can invert the TTL signal coming out of the camera via the Logic device property. This is useful if your sequencing device expects a certain type of edge (rising or falling).  
+The ArduinoCounter can invert the TTL signal coming out of the camera via the Logic 
+device property. This is useful if your sequencing device expects a certain type of 
+edge (rising or falling).  
