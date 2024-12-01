@@ -577,7 +577,9 @@ to enable Debug Logging (in Tools &gt; Options).
 To debug DLL loading issues (such as when your device adapter is labeled
 "(unavailable)" in the Hardware Configuration Wizard), examine the
 CoreLog section from when you opened the Hardware Configuration Wizard.
-It should log the error causing the failure.
+It should log the error causing the failure. On Windows, you may want to 
+test if any dependencies are missing by using one of the [Dependency Walker
+alternatives](Free_third-party_tools_for_testing_communications_with_hardware.md).
 
 ### Scripting environment
 
