@@ -112,10 +112,10 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
     <tr><td>AnswerTimeout</td><td>500</td></tr>
     <tr><td>BaudRate</td><td>115200</td></tr>
     <tr><td>DelayBetweenCharsMs</td><td>0</td></tr>
-    <tr><td>Handshaking</td><td>Off </td</tr>>
-    <tr><td>Parity</td><td>None </td></tr>
-    <tr><td>StopBits</td<td>1 </td></tr>
-    <tr><td>Verbose/td><td>0</td></tr> 
+    <tr><td>Handshaking</td><td>Off</td></tr>
+    <tr><td>Parity</td><td>None</td></tr>
+    <tr><td>StopBits</td><td>1</td></tr>
+    <tr><td>Verbose</td><td>0</td></tr> 
     </table>
  
     4. Set your Core Camera to your ArduinoCamera. Save your hardware configuration.  
