@@ -15,8 +15,14 @@ title: News
 </style>
 
 This page shows the latest announcements and updates about µManager.
+<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 
 <div class="news-grid" markdown="1">
    {% include listnews %}
-   <a class="twitter-timeline" href="https://twitter.com/manager_micro?ref_src=twsrc%5Etfw">Tweets by µManager</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <bsky-embed
+    username="micro-manager.bsky.social"
+    mode="dark"
+    limit="5"
+  >
+  </bsky-embed>
 </div>
