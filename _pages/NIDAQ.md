@@ -143,12 +143,26 @@ the port on and off.
 
 Download and install the [NIDAQmx](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html) software.  This will include an application called "NI MAX".
 
-Start "NI MAX". Right click on "Device and Interface" (open "My System" first if you do not see it), and select "Create New". ![Create New](media/NIMAX_CreateNew.png "NIMAX Create New")
+Start "NI MAX". Right click on "Device and Interface" (open "My System" first if you do not see it), and select "Create New". 
 
-Select the card that you are interested in. ![Select card](media/NIMAX_CardSelection.png "Select card")
+![Create New](media/NIMAX_CreateNew.png "NIMAX Create New")
 
-Under "Devices and interfaces", select the newly created (virtual) device.  In the bottom of the right pane, click on "Device Routse". ![Device Routes](media/NIMAX_DeviceRoutes.png "Device Routes")
 
-Now look for the intersection of Dev/DI/ChangeDetectionEvent and Dev/DI/SampleClock. If the intersection is white, this means there is no internal wiring between the two, and Micro-Manager can not use this card to synchronize digital output with digital input. ![Bad Card](media/NIMAX_BadCard.png "Bad Card")
+Select the card that you are interested in. 
 
-If the intersection is green, you are good to go.  ![Good Card](media/NIMAX_GoodCard.png "Good Card")
+
+![Select card](media/NIMAX_CardSelection.png "Select card")
+
+Under "Devices and interfaces", select the newly created (virtual) device.  In the bottom of the right pane, click on "Device Routse". 
+
+![Device Routes](media/NIMAX_DeviceRoutes.png "Device Routes")
+
+
+Now look for the intersection of Dev/DI/ChangeDetectionEvent and Dev/DI/SampleClock. If the intersection is white, this means there is no internal wiring between the two, and Micro-Manager can not use this card to synchronize digital output with digital input. 
+
+![Bad Card](media/NIMAX_BadCard.png "Bad Card")
+
+
+If the intersection is green, you are good to go.  
+
+![Good Card](media/NIMAX_GoodCard.png "Good Card")
