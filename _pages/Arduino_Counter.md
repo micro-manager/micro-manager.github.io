@@ -105,8 +105,8 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
     2. Download a copy of the ArduinoCounter.ino firmware. Upload the firmware 
     to the Teensy 4.0 via Arduino IDE. 
 
-    3. In the Micro-Manager Hardware Configuration Wizard, add the ArduinoCounter d
-    evice to your list of devices. Be sure to choose the correct COM port. 
+    3. In the Micro-Manager Hardware Configuration Wizard, add the ArduinoCounter 
+    device to your list of devices. Be sure to choose the correct COM port. 
 
   <table>
     <tr><td>AnswerTimeout</td><td>500</td></tr>
@@ -115,7 +115,7 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
     <tr><td>Handshaking</td><td>Off </td</tr>>
     <tr><td>Parity</td><td>None </td></tr>
     <tr><td>StopBits</td<td>1 </td></tr>
-    <tr<td>Verbose/td><td>0</td></tr> 
+    <tr><td>Verbose/td><td>0</td></tr> 
     </table>
  
     4. Set your Core Camera to your ArduinoCamera. Save your hardware configuration.  
