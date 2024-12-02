@@ -71,7 +71,7 @@ as well as blanking of digital outputs.  However, it does so through
 different mechanisms, and uses capabilities that are not present on all
 NIDAQ equipment.  Digital output sequencing (and blanking) uses a feature 
 named `ChangeDetection`.  A list of NIDAQ devics that support ChangeDetection
-can be found [here](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000PAqXSAW&l=en-US).
+can be found [here](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000PAqXSAW&l=en-US). In addition, the card needs to have internal wiring of the CHangeDetectionEvent to the di/SampleClock.  Instructions how to check if a card supports this (preferably before you purchase) are below.
 
 ### Configuration
 
@@ -99,8 +99,10 @@ Device/Property Browser.
 To use ChangeDetection (see above), the input pin needs to be part of the port 
 that it controls.  Therefore, if a port supports ChangeDetection, this
 Micro-Manager device adapter reserves the last pin of that port (i.e. 
-p0.7 for the first 8 pin port of a given Dev) for input. To hardware 
-trigger an analog output port, however, the input pin needs to be 
+p0.7 for the first 8 pin port of a given Dev) for input. You can change 
+the pin used as the trigger source (it is a pre-initialization property 
+of the device), but you can not use any pins above the input pin for output.
+To hardware trigger an analog output port, however, the input pin needs to be 
 one of the PFI pins (selectable in the hub device).  Therefore, if you 
 want to control both analog and digital outputs with the same input
 trigger, you will need to physicall connect these two pins (for instance,
@@ -137,4 +139,16 @@ Since the digital output port is a state device, you can also use the
 the port on and off.  
 
 
+### Check if a card supports ChangeDetection and if ChangeDetection is internally wired to the SampleClock.
 
+Download and install the [NIDAQmx](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html) software.  This will include an application called "NI MAX".
+
+Start "NI MAX". Right click on "Device and Interface" (open "My System" first if you do not see it), and select "Create New". ![Create New](media/NIMAX_CreateNew.png "NIMAX Create New")
+
+Select the card that you are interested in. ![Select card](media/NIMAX_CardSelection.png "Select card")
+
+Under "Devices and interfaces", select the newly created (virtual) device.  In the bottom of the right pane, click on "Device Routse". ![Device Routes](media/NIMAX_DeviceRoutes.png "Device Routes")
+
+Now look for the intersection of Dev/DI/ChangeDetectionEvent and Dev/DI/SampleClock. If the intersection is white, this means there is no internal wiring between the two, and Micro-Manager can not use this card to synchronize digital output with digital input. ![Bad Card](media/NIMAX_BadCard.png "Bad Card")
+
+If the intersection is green, you are good to go.  ![Good Card](media/NIMAX_GoodCard.png "Good Card")
