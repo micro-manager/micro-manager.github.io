@@ -20,6 +20,7 @@ applications in microscopy:
 -   [HCS Site Generator](HCS_Site_Generator)
 -   [Intelligent Acquisition](Intelligent_Acquisition)
 -   [Image Flipper](Image_Flipper)
+-   [LightSheetControl](LightSheetControl)
 -   [Live Replay](Live_Replay)
 -   [Localization Microscopy](Localization_Microscopy)
 -   [MicroMagellan](MicroMagellan)

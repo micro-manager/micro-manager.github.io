@@ -89,8 +89,17 @@ Improvements to the core have fixed this issue.
 
 Combines two physical 1D stages into a single logical 1D stage. The
 scale factor and offset for both physical stages are specified as
-properties. Make sure to specify the properties "PhysicalStage-1" and
+properties. When setting a position, all know stages will be moved
+using the formula: 
+
+<code>
+physicalPos = stageScalings_[i] * position + stageTranslations_[i];
+stage->SetPositionUm(physicalPos);
+</code>
+
+Make sure to specify the properties "PhysicalStage-1" and
 "PhysicalStage-2" (e.g. in System-&gt;Startup group preset).
+
 
 ## Combo XY Stage
 
