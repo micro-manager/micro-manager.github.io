@@ -94,7 +94,11 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
 
     12. Connect the “OUT” pin from your BNCB1 bracket into your sequencing device. 
 
+
+<img src="media/ArduinoCounter_1.jpg" alt="Assembled Arduino Counter"  width="640" height="480">
  
+
+<img src="media/ArduinoCounter_2.jpg" alt="Assembled Arduino Counter"  width="640" height="480">
 
 ## Software Configuration 
 
