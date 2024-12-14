@@ -20,7 +20,6 @@ applications in microscopy:
 -   [HCS Site Generator](HCS_Site_Generator)
 -   [Intelligent Acquisition](Intelligent_Acquisition)
 -   [Image Flipper](Image_Flipper)
--   [LightSheetControl](LightSheetControl)
 -   [Live Replay](Live_Replay)
 -   [Localization Microscopy](Localization_Microscopy)
 -   [MicroMagellan](MicroMagellan)
@@ -28,6 +27,7 @@ applications in microscopy:
 -   [Mist Stitching](MistData)
 -   Multi-Andor Control
 -   [MultiChannelShading](MultiChannelShading)
+-   [PairedStageControl](PairedStageControl)
 -   [Point and Shoot Analysis](Point_and_Shoot_Analysis)
 -   PM/QI Auto White Balance
 -   [Photon Transfer Curve
