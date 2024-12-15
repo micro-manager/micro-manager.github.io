@@ -68,6 +68,7 @@ release](Download_Micro-Manager_Latest_Release).
     camera
 -   [dc1394](dc1394) - Firewire cameras that adhere to the
     iidc1394 specs (see also [IIDC](IIDC))
+-   [Daheng](Daheng) - Daheng Galaxy Cameras
 -   [DECamera](DECamera) - Direct Electron Cameras
 -   [DemoCamera](DemoCamera) - Virtual, emulated equipment
     for testing
