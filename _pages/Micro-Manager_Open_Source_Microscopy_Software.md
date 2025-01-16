@@ -10,21 +10,19 @@ layout: page
 <tr>
 <td markdown="1">
 
-![](/media/NewLogo.png)
+![](/media/logo/TrademarkThumbnail.png)
 
 </td>
-<td markdown="1">
-
+<td markdown="1" style="vertical-align:top">
 **μManager is a software package for control of automated microscopes.
 Together with the image processing application
 [ImageJ](http://rsb.info.nih.gov/ij/), μManager provides a
 comprehensive, freely available, imaging solution.**
-
 </td>
 </tr>
 </table>
 
-### [Download](Download_Micro-Manager_Latest_Release) the most recent version (2.0-gamma) from our website. Also check out our [ ScreenCast](Screencasts) for a quick tour on getting started.
+### [Download](Download_Micro-Manager_Latest_Release) the most recent version (2.0) from our website. Also check out our [ ScreenCast](Screencasts) for a quick tour on getting started.
 
 <table cellspacing=15>
 <tr>
@@ -34,7 +32,7 @@ comprehensive, freely available, imaging solution.**
 Shot](/media/MM_screenshot.png " Micro-Manager Screen Shot")
 
 </td>
-<td markdown="1">
+<td markdown="1" style="vertical-align:top">
 
 **μManager has a simple and clean user interface, through which it lets
 you execute common microscope image acquisition tasks such as
