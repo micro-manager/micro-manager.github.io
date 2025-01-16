@@ -20,8 +20,10 @@ nav-links:
   url: /Micro-Manager_Source_Code
 ---
 
+<table cellspacing=15 style="background-color:White">
+<tr>
+<td markdown="1" style="vertical-align:top">
 ## Micro-Manager versions
-
 **Micro-Manager 2.0** is the actively developed, current, version of
 Micro-Manager that you should use unless there is functionality in 1.4
 that you need. 1.4 is no longer developed (except for the ASI diSPIM
@@ -29,6 +31,15 @@ plugin). Nightly builds are usually fine to use, and have the latest
 features and bug fixes. If you encounter a bug in a release version,
 always test with the latest nightly build to see if the bug has been
 fixed already.
+</td>
+<td markdown="1" stil="vertical-align:bottom">
+
+![](/media/logo/TrademarkThumbnail.png)
+
+</td>
+</tr>
+</table>
+
 
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
