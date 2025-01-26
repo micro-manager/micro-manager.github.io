@@ -35,7 +35,7 @@ Don Laferty, 4/9/12
 <tr>
 <td markdown="1">
 
-**Maintenainer:**
+**Maintainer:**
 
 </td>
 <td markdown="1">
@@ -85,6 +85,14 @@ Windows
 Requires the [OASIS
 Software](http://www.objectiveimaging.com/download/software.php) package
 from Objective Imaging.
+
+Here is the direct link to
+[OASIS V511 (6b)](http://objectiveimaging.com/download/files/OASIS_V511_(6b).zip)
+with drivers compatible with Windows 10.
+
+If the zip package is not available from Objective Imaging anymore, it
+may still be available from
+[archive.org](https://web.archive.org/web/20220208040412/http://objectiveimaging.com/download/files/OASIS_V511_(6b).zip).
 
 
 ## Objective Imaging OASIS-4i / OASIS-Blue controller board
