@@ -86,7 +86,7 @@ Supported
 
 Any Okolab device.
 This means all control units present in our catalog list from January 2017
-until current date (January 2022).
+until current date (January 2025).
 
 ## Installation
 
@@ -153,6 +153,7 @@ file itself if *Image stack file* is selected.
 
 ## Legacy version
 
+Please read the instruction in this chapter only if you are still using Micro-Manager 1.4.15.
 Driver version distributed with Micro-Manager 1.4.15 has limited support for the control units.
 Only some devices are supported.
 
