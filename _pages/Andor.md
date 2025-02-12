@@ -49,7 +49,7 @@ Newton</p></td>
 
 To recognize the camera in the Windows Device Manager, install the
 latest [Driver
-Pack](https://andor.oxinst.com/products/spectrographs-solutions#software).
+Pack](https://andor.oxinst.com/downloads/).
 
 On the **Select Destination Location** dialog, click browse and choose
 the current Micro-Manager installation directory. Then click ***Yes***
