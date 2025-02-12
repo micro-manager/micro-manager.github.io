@@ -69,6 +69,7 @@ If you want to communicate with the device without using already implemeneted me
    - The response should start with a `>`.
 
 For exemple, you coud send the following command to an OB1 MK4 pressure controller : `<PRESS!:0:100\n`. It would change the pressure of the first channel to 100 mbar.
+
 ---
 
 ## 2️⃣ OB1 MK4+ Pressure Controller  
