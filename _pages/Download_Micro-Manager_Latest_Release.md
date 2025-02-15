@@ -71,7 +71,7 @@ Open (instead of simply double-clicking) the first time you open it.  See
 [Installation Notes](Micro-Manager_Installation_Notes)." %}
 
   - Under GNU/Linux platforms, you will need to [compile micro-manager from
-    source](Linux_installation_from_source_(Ubuntu)).
+    source](/Building_and_debugging_Micro-Manager_source_code).
 
 ### Partial list of differences with 1.4
 

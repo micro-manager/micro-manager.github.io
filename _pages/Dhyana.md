@@ -87,9 +87,9 @@ See <http://www.tucsen.com> [2](http://www.tucsen.com/)
 You need to install the driver that came with the camera. Some software
 is available
 [online](http://www.tucsen.com/Home/Wiki/index/dataid/22.html). Copy the
-[32-bit](https://valelab4.ucsf.edu/svn/3rdpartypublic/TUCam/TUCam_SDK_C++_v1.0.0.9/bin/x86/TUCam.dll)
+[32-bit](https://svn.micro-manager.org/3rdpartypublic/TUCam/TUCam_SDK_C++_v1.0.0.9/bin/x86/TUCam.dll)
 or
-[64-bit](https://valelab4.ucsf.edu/svn/3rdpartypublic/TUCam/TUCam_SDK_C++_v1.0.0.9/bin/x64/TUCam.dll)
+[64-bit](https://svn.micro-manager.org/3rdpartypublic/TUCam/TUCam_SDK_C++_v1.0.0.9/bin/x64/TUCam.dll)
 TUCam dll to your micro-manager directory.
 
 {% include Listserv_Search text="Dhyana" %}
