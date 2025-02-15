@@ -77,9 +77,11 @@ First we check out Micro-Manager source code from:
 into directory `/projects/micro-manager` on our computer. Then we
 check out required 3rd-party libraries from:
 
-<https://valelab4.ucsf.edu/svn/3rdpartypublic/>
+<https://svn.micro-manager.org/3rdpartypublic/>
 
 into directory `/projects/3rdpartypublic` on our computer.
+
+(See [Source Code](/Micro-Manager_Source_Code) for details on the repositories.)
 
 At this point we can install any proprietary drivers or SDKs that may be
 required by the manufacturer of our hardware. Devices that we intend to

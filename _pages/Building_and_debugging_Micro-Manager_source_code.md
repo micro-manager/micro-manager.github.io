@@ -4,6 +4,13 @@ title: Building and debugging Micro-Manager source code
 redirect_from:
   - /wiki/Building_and_debugging_Micro-Manager_source_code
   - /wiki/Building_Micro-Manager_from_source
+  # Obsolete Linux build instruction pages
+  - /How_To_Build_Micro_Manager_From_Source_On_Ubuntu_13.10
+  - /wiki/How_To_Build_Micro_Manager_From_Source_On_Ubuntu_13.10
+  - /Linux_installation_from_source_(Ubuntu)
+  - /wiki/Linux_installation_from_source_(Ubuntu)
+  - /Linux_installation_from_source_MM2
+  - /wiki/Linux_installation_from_source_MM2
 layout: page
 section: Extend
 ---
@@ -67,10 +74,6 @@ section: Extend
     package](https://aur.archlinux.org/packages/micromanager-git/) and
     [build
     script](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=micromanager-git&id=4b0150680d48734a8b5d7fc4cacb361caf51c64c).
--   [How To Build Micro Manager From Source On Ubuntu
-    13.10](How_To_Build_Micro_Manager_From_Source_On_Ubuntu_13.10)
--   [Linux installation from source
-    (Ubuntu)](Linux_installation_from_source_(Ubuntu))
 -   [Linux installation from source
     (Gentoo)](Linux_installation_from_source_(Gentoo))
 -   [Building Firewire camera support on
