@@ -50,16 +50,16 @@ All devices communicate via **UART** with the following settings:
 | **Parity**    | N           | N            | N               |
 | **Stop Bits** | 1           | 1            | 1               |
 
-If you want to communicate with the device without using already implemeneted method :  
+If you want to communicate with the device without using an already implemeneted method :  
 
 1. **Command Header**
    - Commands are started with this character `<`
 2. **Command Type**
-   - Using the device UART documentation as reference, select one of the 5 character long key word that correspond to a specific command.
+   - Using the device's UART documentation as a reference, select one of the 5 character long key word that correspond to a specific command.
 3. **Command Formatting**  
-   - The command type is always accompagnied by a following character,  either `?` (GET) or `!` (SET) suffixes.  
+   - The command type is always accompanied by a following character,  either `?` (GET) or `!` (SET) suffixes.  
 4. **Parameters**
-   - Some commands needs parameters following the command formatting.
+   - Some commands need parameters following the command formatting.
    - Written as `:1:2:3:`, each number corresponding to a parameter.
    - Refer to UART documentation delivered with your device.
 5. **Sending Commands**  
@@ -68,7 +68,7 @@ If you want to communicate with the device without using already implemeneted me
    - Reads serial input and updates the `Response` property.
    - The response should start with a `>`.
 
-For exemple, you coud send the following command to an OB1 MK4 pressure controller : `<PRESS!:0:100\n`. It would change the pressure of the first channel to 100 mbar.
+For example, you coud send the following command to an OB1 MK4 pressure controller : `<PRESS!:0:100\n`. It would change the pressure of the first channel to 100 mbar.
 
 ---
 
@@ -78,7 +78,7 @@ For exemple, you coud send the following command to an OB1 MK4 pressure controll
 
 ### 📝 Overview
 
-The **OB1 MK4+ Pressure Controller** by **Elveflow** is the most advanced pressure controller for microfluidics. It provides **ultra-fast, high-precision pressure control**, making it ideal for **droplet generation, cell biology, and microfluidic research applications**.
+The **OB1 MK4+ Pressure Controller** by **Elveflow** is the most advanced pressure controller for microfluidics. It provides **ultra-fast, high-precision pressure control**, making it ideal for **droplet generation, cell biology research, and other microfluidic applications**.
 
 ### ✨ Key Features
 
@@ -145,27 +145,27 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 ### 🛠 **Micro-Manager Properties**
 
-| Property            | Description                                            |
-|---------------------|--------------------------------------------------------|
-| `IsGet`             | Boolean to send a command in set or get mode           |
-| `Command`           | Key word defining the type of command                  |
-| `Parameters`        | Parameter(s) set in the command                        |
-| `Response`          | Stock response of device after a command has been sent |
-| `RegulatorValue0`   | Pressure read by regulator of 1st channel              |
-| `RegulatorValue1`   | Pressure read by regulator of 2nd channel              |
-| `RegulatorValue2`   | Pressure read by regulator of 3rd channel              |
-| `RegulatorValue3`   | Pressure read by regulator of 4th channel              |
-| `SensorValue0`      | Pressure read by sensor connected to 1st channel       |
-| `SensorValue1`      | Pressure read by sensor connected 2nd channel          |
-| `SensorValue2`      | Pressure read by sensor connected 3rd channel          |
-| `SensorValue3`      | Pressure read by sensor connected 4th channel          |
-| `PressureSetpoint0` | Target pressure of regulator of 1st channel            |
-| `PressureSetpoint1` | Target pressure of regulator of 2nd channel            |
-| `PressureSetpoint2` | Target pressure of regulator of 3rd channel            |
-| `PressureSetpoint3` | Target pressure of regulator of 4th channel            |
-| `TriggerIn`         | Current value of input trigger (logical state 0-1)     |
-| `TriggerOut`        | Current value of output trigger (logical state 0-1)    |
-| `TimerOn`           | Flag to enable or disable timer looping on every value |
+| Property            | Description                                                   |
+|---------------------|---------------------------------------------------------------|
+| `IsGet`             | Boolean to send a command in set or get mode                  |
+| `Command`           | Key word defining the type of command                         |
+| `Parameters`        | Parameter(s) set in the command                               |
+| `Response`          | Stored response from the device after a command has been sent |
+| `RegulatorValue0`   | Pressure read by regulator of 1st channel                     |
+| `RegulatorValue1`   | Pressure read by regulator of 2nd channel                     |
+| `RegulatorValue2`   | Pressure read by regulator of 3rd channel                     |
+| `RegulatorValue3`   | Pressure read by regulator of 4th channel                     |
+| `SensorValue0`      | Pressure read by sensor connected to 1st channel              |
+| `SensorValue1`      | Pressure read by sensor connected 2nd channel                 |
+| `SensorValue2`      | Pressure read by sensor connected 3rd channel                 |
+| `SensorValue3`      | Pressure read by sensor connected 4th channel                 |
+| `PressureSetpoint0` | Target pressure of regulator of 1st channel                   |
+| `PressureSetpoint1` | Target pressure of regulator of 2nd channel                   |
+| `PressureSetpoint2` | Target pressure of regulator of 3rd channel                   |
+| `PressureSetpoint3` | Target pressure of regulator of 4th channel                   |
+| `TriggerIn`         | Current value of input trigger (logical state 0-1)            |
+| `TriggerOut`        | Current value of output trigger (logical state 0-1)           |
+| `TimerOn`           | Flag to enable or disable timer looping on every value        |
 
 ### 🛠 **Micro-Manager Available Method**
 
@@ -225,20 +225,20 @@ The **Valve Controller** by **Elveflow** is a **high-speed microfluidic valve co
 
 - **High-Speed Valve Switching**: Optimized for rapid and precise fluid control.  
 - **Multiple Valve Control**: Can operate multiple microfluidic valves simultaneously.  
-- **Compatible with Various Fluids**: Works with aqueous solutions, organic solvents, and cell suspensions.  
+- **Compatible with Various Fluids**: Compatible with aqueous solutions, organic solvents, and cell suspensions.  
 - **Software-Controlled Operation**: Integrates seamlessly with **Elveflow Smart Interface** and third-party software.  
 - **Compact & Modular Design**: Easily integrates into microfluidic setups.
 
 ### ⚙️ Technical Specifications
 
-| **Specification**           | **Details**                                        |
-|-----------------------------|--------------------------------------------------|
-| **Number of Valves**        | Up to 16 (depending on the model)               |
-| **Valve Actuation**         | Electrical (solenoid-based)                     |
-| **Response Time**           | < 50 ms                                         |
-| **Compatible Fluids**       | Aqueous, organic solvents, cell suspensions     |
-| **Control Options**         | Software-controlled or manual actuation        |
-| **Power Supply**            | External power adapter                         |
+| **Specification**           | **Details**                                 |
+|-----------------------------|---------------------------------------------|
+| **Number of Valves**        | 8                                           |
+| **Valve Actuation**         | Electrical (solenoid-based)                 |
+| **Response Time**           | < 50 ms                                     |
+| **Compatible Fluids**       | Aqueous, organic solvents, cell suspensions |
+| **Control Options**         | Software-controlled or manual actuation     |
+| **Power Supply**            | External power adapter                      |
 
 ### 🔄 Firmware Compatibility
 
@@ -275,15 +275,46 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 ### 🛠 **Micro-Manager Properties**
 
-| Property     | Description                                            |
-|--------------|--------------------------------------------------------|
-| `IsGet`      | Boolean to send a command in set or get mode           |
-| `Command`    | Key word defining the type of command                  |
-| `Parameters` | Parameter(s) set in the command                        |
-| `Response`   | Stock response of device after a command has been sent |
-| `TriggerIn`  | Current value of input trigger (logical state 0-1)     |
-| `TriggerOut` | Current value of output trigger (logical state 0-1)    |
-| `TimerOn`    | Flag to enable or disable timer looping on every value |
+| Property     | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| `IsGet`      | Boolean to send a command in set or get mode                  |
+| `Command`    | Key word defining the type of command                         |
+| `Parameters` | Parameter(s) set in the command                               |
+| `Response`   | Stored response from the device after a command has been sent |
+| `Type0"`     | Type of valve on 1st channel                                  |
+| `Type1"`     | Type of valve on 2st channel                                  |
+| `Type2"`     | Type of valve on 3st channel                                  |
+| `Type3"`     | Type of valve on 4st channel                                  |
+| `Type4"`     | Type of valve on 5st channel                                  |
+| `Type5"`     | Type of valve on 6st channel                                  |
+| `Type6"`     | Type of valve on 7st channel                                  |
+| `Type7"`     | Type of valve on 8st channel                                  |
+| `Status0"`     | Status of valve on 1st channel                              |
+| `Status1"`     | Status of valve on 2st channel                              |
+| `Status2"`     | Status of valve on 3st channel                              |
+| `Status3"`     | Status of valve on 4st channel                              |
+| `Status4"`     | Status of valve on 5st channel                              |
+| `Status5"`     | Status of valve on 6st channel                              |
+| `Status6"`     | Status of valve on 7st channel                              |
+| `Status7"`     | Status of valve on 8st channel                              |
+| `Master0"`     | Control mode of valve on 1st channel                        |
+| `Master1"`     | Control mode of valve on 2st channel                        |
+| `Master2"`     | Control mode of valve on 3st channel                        |
+| `Master3"`     | Control mode of valve on 4st channel                        |
+| `Master4"`     | Control mode of valve on 5st channel                        |
+| `Master5"`     | Control mode of valve on 6st channel                        |
+| `Master6"`     | Control mode of valve on 7st channel                        |
+| `Master7"`     | Control mode of valve on 8st channel                        |
+| `TriggerIn`  | Current value of input trigger (logical state 0-1)            |
+| `TriggerOut` | Current value of output trigger (logical state 0-1)           |
+| `TimerOn`    | Flag to enable or disable timer looping on every value        |
+
+📌 **Notes:**
+Master variabes pprovide information about the valve's usage mode :
+
+- Master = 0 : valve state to 0, not activated and not blocked
+- Master = 1 : valve manually activated with push button
+- Master = 2 : valve activated with ESI
 
 ### 🛠 **Micro-Manager Available Method**
 
@@ -335,7 +366,7 @@ print("Device answer : " + response);
 
 ### 📝 Overview
 
-The **MUX DISTRIB** by **Elveflow** is a **microfluidic multiplexer** that allows precise and automated fluid switching. It is used to distribute multiple fluids into a single outlet or direct a single fluid to multiple outlets, making it an essential component in **automated microfluidic experiments**.
+The **MUX DISTRIB** by **Elveflow** is a **microfluidic multiplexer** that allows precise and automated fluid switching. It is used to distribute multiple fluids into a single outlet or direct a single fluid to multiple outlets, making it essential for **automated microfluidic experiments**.
 
 ### ✨ Key Features
 
@@ -383,7 +414,7 @@ The **MUX DISTRIB** is widely used in:
 ### ✔️ Advantages
 
 - Ideal for handling multiple samples **without contamination**  
-- Can be used **in both directions** for maximum flexibility  
+- Can operate **in both directions** for maximum flexibility  
 - Compatible with **continuous or pulsed flow rates**
 
 📌 **Notes:**
@@ -391,55 +422,18 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 ### 🛠 **Micro-Manager Properties**
 
-| Property     | Description                                            |
-|--------------|--------------------------------------------------------|
-| `IsGet`      | Boolean to send a command in set or get mode           |
-| `Command`    | Key word defining the type of command                  |
-| `Parameters` | Parameter(s) set in the command                        |
-| `Response`   | Stock response of device after a command has been sent |
-| `Type0"`     | Type of valve on 1st channel              |
-| `Type1"`     | Type of valve on 2st channel              |
-| `Type2"`     | Type of valve on 3st channel              |
-| `Type3"`     | Type of valve on 4st channel              |
-| `Type4"`     | Type of valve on 5st channel              |
-| `Type5"`     | Type of valve on 6st channel              |
-| `Type6"`     | Type of valve on 7st channel              |
-| `Type7"`     | Type of valve on 8st channel              |
-| `Status0"`     | Status of valve on 1st channel              |
-| `Status1"`     | Status of valve on 2st channel              |
-| `Status2"`     | Status of valve on 3st channel              |
-| `Status3"`     | Status of valve on 4st channel              |
-| `Status4"`     | Status of valve on 5st channel              |
-| `Status5"`     | Status of valve on 6st channel              |
-| `Status6"`     | Status of valve on 7st channel              |
-| `Status7"`     | Status of valve on 8st channel              |
-| `Master0"`     | Control mode of valve on 1st channel              |
-| `Master1"`     | Control mode of valve on 2st channel              |
-| `Master2"`     | Control mode of valve on 3st channel              |
-| `Master3"`     | Control mode of valve on 4st channel              |
-| `Master4"`     | Control mode of valve on 5st channel              |
-| `Master5"`     | Control mode of valve on 6st channel              |
-| `Master6"`     | Control mode of valve on 7st channel              |
-| `Master7"`     | Control mode of valve on 8st channel              |
-| `TriggerIn`  | Current value of input trigger (logical state 0-1)     |
-| `TriggerOut` | Current value of output trigger (logical state 0-1)    |
-| `TimerOn`    | Flag to enable or disable timer looping on every value |
+| Property     | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| `Command`    | Key word defining the type of command                         |
+| `Parameters` | Parameter(s) set in the command                               |
+| `Response`   | Stored response from the device after a command has been sent |
 
-📌 **Notes:**
-Master variabes gives info about the type of use of the valve :
-
-- master = 0 : valve state to 0, not activated and not blocked
-- master = 1 : valve manually activated with push button
-- master = 2 : valve activated with ESI
 
 ### 🛠 **Micro-Manager Available Method**
 
 | Available method      | Trigger                   | Description                         |
 |-----------------------|:-------------------------:|-------------------------------------|
-| `OnIsGet`             | IsGet             (bool)  | Set next command sent to set or get |
 | `OnCommand`           | Command           (str)   | Construct and send UART cmd         |
-| `OnTrigger`           | TriggerOut        (bool)  | Set value of output trigger         |
-| `OnStart`             | TimerOn           (bool)  | Set pressure of target 2nd channel  |
 
 ---
 
