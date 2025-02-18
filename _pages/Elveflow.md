@@ -128,11 +128,11 @@ The **OB1 MK4+** is widely used in:
 
 ### 🔗 Associated Products
 
-- Elveflow Flow Sensors (MFS, MPS, BFS)
-- Microfluidic Valves
-- Bubble Detectors
+- Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
+- [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
+- [Bubble Detectors](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-bubble-detector-inline-liquid-sensor/)
 - Pressure Chambers
-- Reservoirs and Tubing Accessories
+- [Reservoirs and Tubing Accessories](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/reservoirs/)
 
 ### ✔️ Advantages
 
@@ -258,10 +258,10 @@ The **Valve Controller** is widely used in:
 
 ### 🔗 Associated Products
 
-- OB1 MK4+ Pressure Controller
-- MUX DISTRIB (Fluidic Multiplexer)
-- Microfluidic Flow Sensors (MFS, MPS, BFS)
-- Elveflow Smart Interface Software
+- [OB1 MK4+ - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
+- [Mux Distribution - Fluidic Multiplexer](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/mux-distrib/)
+- Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
+- [Elveflow Smart Interface Software](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/)
 - Custom Microfluidic Chips & Accessories
   
 ### ✔️ Advantages
@@ -405,10 +405,10 @@ The **MUX DISTRIB** is widely used in:
 
 ### 🔗 Associated Products
 
-- OB1 MK4+ Pressure Controller
-- Microfluidic Flow Sensors (MFS, MPS, BFS)
-- Microfluidic Valves
-- Elveflow Smart Interface Software
+- [OB1 MK4+ - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
+- Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
+- [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
+- [Elveflow Smart Interface Software](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/)
 - Custom Microfluidic Chips & Accessories
 
 ### ✔️ Advantages
