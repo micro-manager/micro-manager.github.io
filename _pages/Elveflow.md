@@ -37,18 +37,18 @@ layout: page
 
 ![Elveflow Microfluidic Devices](/media/elveflow_banner.png)
 
-This document describes the configuration and operation of the **OB1 MK4**, **MUX Wire**, and **MUX Distribution** devices for Micro-Manager.  
+This document describes the configuration and operation of the [OB1 MK4](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/), [MUX Wire](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/valve-controller/), and [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/mux-distrib/) devices for Micro-Manager.  
 
 ## 1️⃣ General UART Configuration and Communication Workflow
 
 All devices communicate via **UART** with the following settings:  
 
-| Parameter     | **OB1 MK4** | **MUX Wire** | **MUX Distrib** |
-|---------------|:-----------:|:------------:|:---------------:|
-| **Baudrate**  | `115200`    | `115200`     | `9600`          |
-| **Byte Size** | 8           | 8            | 8               |
-| **Parity**    | N           | N            | N               |
-| **Stop Bits** | 1           | 1            | 1               |
+| Parameter     | **OB1 MK4** | **MUX Wire** | **MUX Distribution** |
+|---------------|:-----------:|:------------:|:--------------------:|
+| **Baudrate**  | `115200`    | `115200`     | `9600`               |
+| **Byte Size** | 8           | 8            | 8                    |
+| **Parity**    | N           | N            | N                    |
+| **Stop Bits** | 1           | 1            | 1                    |
 
 If you want to communicate with the device without using an already implemeneted method :  
 
@@ -68,17 +68,17 @@ If you want to communicate with the device without using an already implemeneted
    - Reads serial input and updates the `Response` property.
    - The response should start with a `>`.
 
-For example, you coud send the following command to an OB1 MK4 pressure controller : `<PRESS!:0:100\n`. It would change the pressure of the first channel to 100 mbar.
+For example, you coud send the following command to an [OB1 MK4 pressure controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) : `<PRESS!:0:100\n`. It would change the pressure of the first channel to 100 mbar.
 
 ---
 
-## 2️⃣ OB1 MK4+ Pressure Controller  
+## 2️⃣ OB1 MK4 Pressure Controller  
 
-![OB1 MK4+](/media/elveflow_ob1mk4.jpg)
+![OB1 MK4](/media/elveflow_ob1mk4.jpg)
 
 ### 📝 Overview
 
-The **OB1 MK4+ Pressure Controller** by **Elveflow** is the most advanced pressure controller for microfluidics. It provides **ultra-fast, high-precision pressure control**, making it ideal for **droplet generation, cell biology research, and other microfluidic applications**.
+The [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) by **Elveflow** is the most advanced pressure controller for microfluidics. It provides **ultra-fast, high-precision pressure control**, making it ideal for **droplet generation, cell biology research, and other microfluidic applications**.
 
 ### ✨ Key Features
 
@@ -99,7 +99,7 @@ The **OB1 MK4+ Pressure Controller** by **Elveflow** is the most advanced pressu
 | **Vacuum Support**              | Yes                                |
 | **Flow Rate Stability**         | Optimized for ultra-low flow rates |
 
-The **OB1 MK4+** can be configured with different **pressure modules**, depending on your needs:
+The [OB1 MK4](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) can be configured with different **pressure modules**, depending on your needs:
 
 | **Module**        | **Pressure Range** |
 |:-----------------:|:------------------:|
@@ -117,7 +117,7 @@ The **OB1 MK4+** can be configured with different **pressure modules**, dependin
 
 ### 🔬 Applications
 
-The **OB1 MK4+** is widely used in:
+The [OB1 MK4](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) is widely used in:
 
 - Microfluidic flow control
 - Droplet generation
@@ -131,7 +131,6 @@ The **OB1 MK4+** is widely used in:
 - Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
 - [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
 - [Bubble Detectors](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-bubble-detector-inline-liquid-sensor/)
-- Pressure Chambers
 - [Reservoirs and Tubing Accessories](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/reservoirs/)
 
 ### ✔️ Advantages
@@ -219,14 +218,14 @@ print("Device answer : " + response);
 
 ### 📝 Overview
 
-The **Valve Controller** by **Elveflow** is a **high-speed microfluidic valve control system** designed for precise and automated fluid control in microfluidic experiments. It enables fast switching between fluidic pathways, making it an essential tool for **dynamic fluid regulation**.
+The [Valve Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/valve-controller/) by **Elveflow** is a **high-speed microfluidic valve control system** designed for precise and automated fluid control in microfluidic experiments. It enables fast switching between fluidic pathways, making it an essential tool for **dynamic fluid regulation**.
 
 ### ✨ Key Features
 
 - **High-Speed Valve Switching**: Optimized for rapid and precise fluid control.  
 - **Multiple Valve Control**: Can operate multiple microfluidic valves simultaneously.  
 - **Compatible with Various Fluids**: Compatible with aqueous solutions, organic solvents, and cell suspensions.  
-- **Software-Controlled Operation**: Integrates seamlessly with **Elveflow Smart Interface** and third-party software.  
+- **Software-Controlled Operation**: Integrates with [Elveflow Smart Interface](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/) and third-party software.  
 - **Compact & Modular Design**: Easily integrates into microfluidic setups.
 
 ### ⚙️ Technical Specifications
@@ -240,12 +239,6 @@ The **Valve Controller** by **Elveflow** is a **high-speed microfluidic valve co
 | **Control Options**         | Software-controlled or manual actuation     |
 | **Power Supply**            | External power adapter                      |
 
-### 🔄 Firmware Compatibility
-
-| **Parameter**              | **Value**  |
-|----------------------------|------------|
-| **OLDEST_COMPATIBILITY**   | 0.0.0      |
-
 ### 🔬 Applications 
 
 The **Valve Controller** is widely used in:
@@ -258,7 +251,7 @@ The **Valve Controller** is widely used in:
 
 ### 🔗 Associated Products
 
-- [OB1 MK4+ - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
+- [OB1 MK4 - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
 - [Mux Distribution - Fluidic Multiplexer](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/mux-distrib/)
 - Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
 - [Elveflow Smart Interface Software](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/)
@@ -366,36 +359,30 @@ print("Device answer : " + response);
 
 ### 📝 Overview
 
-The **MUX DISTRIB** by **Elveflow** is a **microfluidic multiplexer** that allows precise and automated fluid switching. It is used to distribute multiple fluids into a single outlet or direct a single fluid to multiple outlets, making it essential for **automated microfluidic experiments**.
+The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/mux-distrib/) by **Elveflow** is a **microfluidic multiplexer** that allows precise and automated fluid switching. It is used to distribute multiple fluids into a single outlet or direct a single fluid to multiple outlets, making it essential for **automated microfluidic experiments**.
 
 ### ✨ Key Features
 
-- **Automated Fluid Distribution**: Seamless switching between multiple fluid sources.  
+- **Automated Fluid Distribution**: Switching between multiple fluid sources.  
 - **High Precision & Low Dead Volume**: Designed for microfluidic applications.  
 - **Remote Control via Software**: Compatible with **Elveflow Smart Interface** and third-party software.  
-- **Multiple Configurations**: Available in **1-to-10 or 1-to-16 distribution setups**.  
-- **Compatible with OB1 & Other Controllers**: Works seamlessly with the **OB1 MK4+ Pressure Controller** and other fluidic devices.
+- **Multiple Configurations**: Available in **1-to-12 distribution setups**.  
+- **Compatible with OB1 & Other Controllers**: Works with the [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) and other fluidic devices.
 
 ### ⚙️ Technical Specifications
 
 | **Specification**            | **Details**                                  |
 |------------------------------|----------------------------------------------|
-| **Number of Channels**       | 10 or 16 (depending on the model)            |
+| **Number of Channels**       | 13 (1 to 12)                                 |
 | **Actuation**                | Solenoid-based switching                     |
 | **Dead Volume**              | Minimal (< 1 µL)                             |
 | **Compatible Fluids**        | Aqueous & organic solvents, cell suspensions |
 | **Control Options**          | Software-controlled or manual actuation      |
 | **Power Supply**             | External power adapter                       |
 
-### 🔄 Firmware Compatibility
-
-| **Parameter**              | **Value**  |
-|----------------------------|------------|
-| **OLDEST_COMPATIBILITY**   | 0.0.0      |
-
 ### 🔬 Applications 
 
-The **MUX DISTRIB** is widely used in:
+The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/mux-distrib/) is widely used in:
 
 - Automated fluid injections
 - Chemical and biological assays
@@ -405,7 +392,7 @@ The **MUX DISTRIB** is widely used in:
 
 ### 🔗 Associated Products
 
-- [OB1 MK4+ - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
+- [OB1 MK4 - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
 - Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
 - [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
 - [Elveflow Smart Interface Software](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/)
@@ -424,8 +411,8 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 | Property     | Description                                                   |
 |--------------|---------------------------------------------------------------|
-| `Command`    | Key word defining the type of command                         |
-| `Parameters` | Parameter(s) set in the command                               |
+| `Pos`        | Store target position                                         |
+| `Direction`  | Set direction of rotation to go to target position            |
 | `Response`   | Stored response from the device after a command has been sent |
 
 
@@ -433,7 +420,7 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 | Available method      | Trigger                   | Description                         |
 |-----------------------|:-------------------------:|-------------------------------------|
-| `OnCommand`           | Command           (str)   | Construct and send UART cmd         |
+| `GoToPos`             | Direction           (str) | Construct and send UART cmd         |
 
 ---
 
@@ -451,34 +438,16 @@ for (int i = 0; i < devices.size(); i++) {
 }
 
 // Setup UART command
-int is_get_cmd = 1; //"To set : 0 / To get : 1"
 String device_name = "MUX_DISTRIB";
-String command = "<PING_";
-String parameters = ""; // "" if no parameter needed
+int target_pos = 10;
+int target_direction = 0; // 0 : left / 1 : right
 
 // Send UART command
 // -- First set IsGet and Parameters
-mmc.setProperty(device_name, "IsGet", is_get_cmd);
-mmc.setProperty(device_name, "Parameters", parameters);
+mmc.setProperty(device_name, "Pos", target_pos);
+mmc.setProperty(device_name, "Direction", target_direction); // It will trigger the function (GoToPos) to send completed UART command that move device to the target position with the selected direction
 // -- Then specify the command
-mmc.setProperty(device_name, "Command", command); // It will send the completed UART command right after
-
-// Display answer
-String response = mmc.getProperty(device_name, "Response");
-print("Device answer : " + response);
 ```
-
----
-
-## 6️⃣ Summary  
-
-| Device          | Function            |
-|-----------------|---------------------|
-| **OB1 MK4**     | Pressure controller |
-| **MUX Wire**    | Valve controller    |
-| **MUX Distrib** | Fluidic distributor |
-
-Each device is controlled via the **Micro-Manager** interface using **UART communication**, ensuring real-time response and robust error handling.  
 
 ---
 For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elveflow.com/microfluidic-products/).
