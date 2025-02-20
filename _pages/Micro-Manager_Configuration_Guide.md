@@ -182,22 +182,36 @@ pixel size to the metadata of the images you take.
 ![Pixel Size Calibration
 Editor](/media/Calibration.gif "fig:Pixel Size Calibration Editor")  
 Figure 5. Pixel Size Calibration Editor  
+
 To set up Pixel Size Calibrations, start the Pixel Size Calibration
 editor (<span>**Tools \| Pixel Size Calibration**</span>). Click the
-'New' button. A window, very similar to the window you saw when setting
-up new Configuration Preset Groups will appear. Check the boxes in the
+'New' button. 
+
+![Pixel Config editor](/media/PixelConfigEditor.png "fig:Pixel Config Editor")
+
+The section at the bottom determines which properties will be part 
+of the pixel size configurations.  After defining the first pixel configuration
+only the selected properties will be shown.  Check the boxes in the
 'Use' column for those properties that affect the pixel size i.e
 objectives, auxiliary magnification (Optovar) etc. Do not check the
 camera 'Binning'property (binning is automatically taken into account by
 Micro-Manager). Some other properties might not appear in the list since
 they are automatically taken into account (so called 'Magnifier'
 devices, these automatically tell Micro-Manager how they affect pixel
-size). Give this Pixel Size Calibration a label (the name is
+size). Give this Pixel Size Calibration a name (the name is
 unimportant, it should be unique and might help you to remember the
 settings) and enter the pixel size. When you press 'New' again, only the
 previously selected properties will appear. Set these to the appropriate
 settings, give a label and the pixel size. The Pixel Size can also be
 edited inside the 'Pixel Size calibration' window.
+
+The Affine Transform section determines the relationship between stage movement and the image on the camera.  This will be affected by things like camera rotation and pixel size.  It is very importanto for certain plugins, like Micro-Magellan. The affine transform is only useful when you have a motorized stage.  The 'Calculate' button will calculate the affine transform based on the given pixel size.  Use the 'Measure' button in the Affine Transform section of the Pixel Preset Editor to measure the affine transform and pixel size.  Use a sample with strong contrast in the middle of the image.  Follow the instructions in the Pixel Calibrator dialog.
+
+![Pixel Calibrator](/media/PixelCalibrator.png "fig:PixelCalibrator")
+
+Light Sheet settings are used to indicate the angle between the camera's x and y axes and the axis of the z drive.  This angle is dimensionless (i.e. the ratio of translation in x or y caused by a translation in z).  This angle can be different for different z drives (if this is the case, please add the Core-Focus device to your pixel size configuration). Safe to ignore if you do not have a light sheet microscope. 
+
+Optimal Z step is used to guide microscope operators into using an appropriate Z step size.  If you do not know what to set this to, try 3 x the pixel size.  This value is displayed in the Multi-Dimensional Acquisition Dialog.
 
 If a non-motorized device affects the pixel size calibration (for
 instance: your objective turret is non-motorized) you can add a device
@@ -207,7 +221,7 @@ manually change the setting of the non-motorized device you should also
 change the setting of the demo device and Micro-Manager will select the
 correct pixel size calibration.
 
-Again, do not forget to save the configurations after editing pizel size
+Do not forget to save the configurations after editing pizel size
 calibrations (you can use the 'Save' button next to Configuration
 Presets in the main window to this end). These settings are saved in the
 same file to describe the hardware and configuration presets (your
