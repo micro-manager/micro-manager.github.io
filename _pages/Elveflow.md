@@ -95,7 +95,7 @@ The [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products
 | **Number of Pressure Channels** | Up to 4                            |
 | **Pressure Control Resolution** | 0.005% of the full scale           |
 | **Pressure Stability**          | < 0.005%                           |
-| **Max Pressure**                | 2000 mbar (configurable)           |
+| **Max Pressure**                | 8000 mbar (configurable)           |
 | **Vacuum Support**              | Yes                                |
 | **Flow Rate Stability**         | Optimized for ultra-low flow rates |
 
@@ -177,7 +177,7 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 | `OnPressureSetpoint2` | PressureSetpoint2 (int)   | Set pressure of target 3rd channel  |
 | `OnPressureSetpoint3` | PressureSetpoint3 (int)   | Set pressure of target 4th channel  |
 | `OnTrigger`           | TriggerOut        (bool)  | Set value of output trigger         |
-| `OnStart`             | TimerOn           (bool)  | Set pressure of target 2nd channel  |
+| `OnStart`             | TimerOn           (bool)  | Enable timer to start               |
 
 ---
 
@@ -366,7 +366,6 @@ The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluid
 - **Automated Fluid Distribution**: Switching between multiple fluid sources.  
 - **High Precision & Low Dead Volume**: Designed for microfluidic applications.  
 - **Remote Control via Software**: Compatible with **Elveflow Smart Interface** and third-party software.  
-- **Multiple Configurations**: Available in **1-to-12 distribution setups**.  
 - **Compatible with OB1 & Other Controllers**: Works with the [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) and other fluidic devices.
 
 ### ⚙️ Technical Specifications
@@ -374,7 +373,7 @@ The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluid
 | **Specification**            | **Details**                                  |
 |------------------------------|----------------------------------------------|
 | **Number of Channels**       | 13 (1 to 12)                                 |
-| **Actuation**                | Solenoid-based switching                     |
+| **Actuation**                | Rotary Valve                                 |
 | **Dead Volume**              | Minimal (< 1 µL)                             |
 | **Compatible Fluids**        | Aqueous & organic solvents, cell suspensions |
 | **Control Options**          | Software-controlled or manual actuation      |
