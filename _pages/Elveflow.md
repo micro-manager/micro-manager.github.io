@@ -316,7 +316,7 @@ Master variabes pprovide information about the valve's usage mode :
 | `OnIsGet`             | IsGet             (bool)  | Set next command sent to set or get |
 | `OnCommand`           | Command           (str)   | Construct and send UART cmd         |
 | `OnTrigger`           | TriggerOut        (bool)  | Set value of output trigger         |
-| `OnStart`             | TimerOn           (bool)  | Set pressure of target 2nd channel  |
+| `OnStart`             | TimerOn           (bool)  | Enable timer to start               |
 
 ---
 
