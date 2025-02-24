@@ -50,17 +50,17 @@ All devices communicate via **UART** with the following settings:
 | **Parity**    | N           | N            | N                    |
 | **Stop Bits** | 1           | 1            | 1                    |
 
-If you want to communicate with the device without using an already implemeneted method :  
+If you want to communicate with the device without using an already implemented method :  
 
 1. **Command Header**
-   - Commands are started with this character `<`
+   - Commands starts with this character `<`
 2. **Command Type**
-   - Using the device's UART documentation as a reference, select one of the 5 character long key word that correspond to a specific command.
+   - Using the device's UART documentation as a reference, select one of the 5 character long key words that corresponds to a specific command.
 3. **Command Formatting**  
    - The command type is always accompanied by a following character,  either `?` (GET) or `!` (SET) suffixes.  
 4. **Parameters**
    - Some commands need parameters following the command formatting.
-   - Written as `:1:2:3:`, each number corresponding to a parameter.
+   - Written as `:1:2:3:`, each number corresponds to a parameter.
    - Refer to UART documentation delivered with your device.
 5. **Sending Commands**  
    - Sent via UART with a newline (`\n`) termination.  
@@ -82,7 +82,6 @@ The [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products
 
 ### ✨ Key Features
 
-- **High-Precision Pressure Control**: Regulates pressure down to **0.005% of the full scale**.
 - **Fast Response Time**: Pressure is adjusted in **milliseconds**.
 - **Multi-Channel Configuration**: Up to **four independent pressure channels**.
 - **Vacuum & Pressure Control**: Supports positive and negative pressure.
@@ -93,8 +92,7 @@ The [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products
 | **Specification**               | **Details**                        |
 |---------------------------------|------------------------------------|
 | **Number of Pressure Channels** | Up to 4                            |
-| **Pressure Control Resolution** | 0.005% of the full scale           |
-| **Pressure Stability**          | < 0.005%                           |
+| **Pressure Stability**          | Depends on the pressure range of each selected channel. See [table of specifications.](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)  |
 | **Max Pressure**                | 8000 mbar (configurable)           |
 | **Vacuum Support**              | Yes                                |
 | **Flow Rate Stability**         | Optimized for ultra-low flow rates |
@@ -124,12 +122,10 @@ The [OB1 MK4](https://www.elveflow.com/microfluidic-products/microfluidics-flow-
 - Lab-on-a-chip experiments
 - Cell sorting and manipulation
 - Biomedical research
-- Microfabrication and soft lithography
 
 ### 🔗 Associated Products
 
 - Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
-- [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
 - [Bubble Detectors](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-bubble-detector-inline-liquid-sensor/)
 - [Reservoirs and Tubing Accessories](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/reservoirs/)
 
@@ -137,7 +133,7 @@ The [OB1 MK4](https://www.elveflow.com/microfluidic-products/microfluidics-flow-
 
 - Precise pressure and flow control  
 - Ultra-fast response, ideal for **droplet generation**  
-- Compatible with other **Elveflow modules**
+- Compatible with other **Elveflow instruments**
 
 📌 **Notes:**
 For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elveflow.com/microfluidic-products/).
@@ -154,10 +150,10 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 | `RegulatorValue1`   | Pressure read by regulator of 2nd channel                     |
 | `RegulatorValue2`   | Pressure read by regulator of 3rd channel                     |
 | `RegulatorValue3`   | Pressure read by regulator of 4th channel                     |
-| `SensorValue0`      | Pressure read by sensor connected to 1st channel              |
-| `SensorValue1`      | Pressure read by sensor connected 2nd channel                 |
-| `SensorValue2`      | Pressure read by sensor connected 3rd channel                 |
-| `SensorValue3`      | Pressure read by sensor connected 4th channel                 |
+| `SensorValue0`      | Pressure/Flow rate read by sensor connected to 1st channel    |
+| `SensorValue1`      | Pressure/Flow rate read by sensor connected to 2nd channel    |
+| `SensorValue2`      | Pressure/Flow rate read by sensor connected to 3rd channel    |
+| `SensorValue3`      | Pressure/Flow rate read by sensor connected to 4th channel    |
 | `PressureSetpoint0` | Target pressure of regulator of 1st channel                   |
 | `PressureSetpoint1` | Target pressure of regulator of 2nd channel                   |
 | `PressureSetpoint2` | Target pressure of regulator of 3rd channel                   |
@@ -172,10 +168,10 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 |-----------------------|:-------------------------:|-------------------------------------|
 | `OnIsGet`             | IsGet             (bool)  | Set next command sent to set or get |
 | `OnCommand`           | Command           (str)   | Construct and send UART cmd         |
-| `OnPressureSetpoint0` | PressureSetpoint0 (int)   | Set pressure of target 1st channel  |
-| `OnPressureSetpoint1` | PressureSetpoint1 (int)   | Set pressure of target 2nd channel  |
-| `OnPressureSetpoint2` | PressureSetpoint2 (int)   | Set pressure of target 3rd channel  |
-| `OnPressureSetpoint3` | PressureSetpoint3 (int)   | Set pressure of target 4th channel  |
+| `OnPressureSetpoint0` | PressureSetpoint0 (int)   | Set target pressure of 1st channel  |
+| `OnPressureSetpoint1` | PressureSetpoint1 (int)   | Set target pressure of 2nd channel  |
+| `OnPressureSetpoint2` | PressureSetpoint2 (int)   | Set target pressure of 3rd channel  |
+| `OnPressureSetpoint3` | PressureSetpoint3 (int)   | Set target pressure of 4th channel  |
 | `OnTrigger`           | TriggerOut        (bool)  | Set value of output trigger         |
 | `OnStart`             | TimerOn           (bool)  | Enable timer to start               |
 
@@ -223,8 +219,7 @@ The [Valve Controller](https://www.elveflow.com/microfluidic-products/microfluid
 ### ✨ Key Features
 
 - **High-Speed Valve Switching**: Optimized for rapid and precise fluid control.  
-- **Multiple Valve Control**: Can operate multiple microfluidic valves simultaneously.  
-- **Compatible with Various Fluids**: Compatible with aqueous solutions, organic solvents, and cell suspensions.  
+- **Multiple Valve Control**: Can operate multiple microfluidic valves simultaneously.
 - **Software-Controlled Operation**: Integrates with [Elveflow Smart Interface](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/) and third-party software.  
 - **Compact & Modular Design**: Easily integrates into microfluidic setups.
 
@@ -234,9 +229,7 @@ The [Valve Controller](https://www.elveflow.com/microfluidic-products/microfluid
 |-----------------------------|---------------------------------------------|
 | **Number of Valves**        | 8                                           |
 | **Valve Actuation**         | Electrical (solenoid-based)                 |
-| **Response Time**           | < 50 ms                                     |
-| **Compatible Fluids**       | Aqueous, organic solvents, cell suspensions |
-| **Control Options**         | Software-controlled or manual actuation     |
+| **Control Options**         | Software-controlled                         |
 | **Power Supply**            | External power adapter                      |
 
 ### 🔬 Applications 
@@ -247,7 +240,6 @@ The **Valve Controller** is widely used in:
 - Lab-on-a-chip experiments
 - Droplet microfluidics
 - Automated fluidic assays
-- Tissue engineering & drug delivery
 
 ### 🔗 Associated Products
 
@@ -260,7 +252,8 @@ The **Valve Controller** is widely used in:
 ### ✔️ Advantages
 
 - Individual or simultaneous valve control  
-- No cross-contamination due to low internal volume  
+- No cross-contamination due to low internal volume and **no dead volume**
+- Easy control via computer for automation
 - Works with **advanced microfluidic setups**  
 
 📌 **Notes:**
@@ -268,42 +261,42 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 
 ### 🛠 **Micro-Manager Properties**
 
-| Property     | Description                                                   |
-|--------------|---------------------------------------------------------------|
-| `IsGet`      | Boolean to send a command in set or get mode                  |
-| `Command`    | Key word defining the type of command                         |
-| `Parameters` | Parameter(s) set in the command                               |
-| `Response`   | Stored response from the device after a command has been sent |
-| `Type0"`     | Type of valve on 1st channel                                  |
-| `Type1"`     | Type of valve on 2st channel                                  |
-| `Type2"`     | Type of valve on 3st channel                                  |
-| `Type3"`     | Type of valve on 4st channel                                  |
-| `Type4"`     | Type of valve on 5st channel                                  |
-| `Type5"`     | Type of valve on 6st channel                                  |
-| `Type6"`     | Type of valve on 7st channel                                  |
-| `Type7"`     | Type of valve on 8st channel                                  |
-| `Status0"`     | Status of valve on 1st channel                              |
-| `Status1"`     | Status of valve on 2st channel                              |
-| `Status2"`     | Status of valve on 3st channel                              |
-| `Status3"`     | Status of valve on 4st channel                              |
-| `Status4"`     | Status of valve on 5st channel                              |
-| `Status5"`     | Status of valve on 6st channel                              |
-| `Status6"`     | Status of valve on 7st channel                              |
-| `Status7"`     | Status of valve on 8st channel                              |
-| `Master0"`     | Control mode of valve on 1st channel                        |
-| `Master1"`     | Control mode of valve on 2st channel                        |
-| `Master2"`     | Control mode of valve on 3st channel                        |
-| `Master3"`     | Control mode of valve on 4st channel                        |
-| `Master4"`     | Control mode of valve on 5st channel                        |
-| `Master5"`     | Control mode of valve on 6st channel                        |
-| `Master6"`     | Control mode of valve on 7st channel                        |
-| `Master7"`     | Control mode of valve on 8st channel                        |
-| `TriggerIn`  | Current value of input trigger (logical state 0-1)            |
-| `TriggerOut` | Current value of output trigger (logical state 0-1)           |
-| `TimerOn`    | Flag to enable or disable timer looping on every value        |
+| Property       | Description                                                   |
+|----------------|---------------------------------------------------------------|
+| `IsGet`        | Boolean to send a command in set or get mode                  |
+| `Command`      | Key word defining the type of command                         |
+| `Parameters`   | Parameter(s) set in the command                               |
+| `Response`     | Stored response from the device after a command has been sent |
+| `Type0`       | Type of valve on 1st channel                                  |
+| `Type1`       | Type of valve on 2st channel                                  |
+| `Type2`       | Type of valve on 3st channel                                  |
+| `Type3`       | Type of valve on 4st channel                                  |
+| `Type4`       | Type of valve on 5st channel                                  |
+| `Type5`       | Type of valve on 6st channel                                  |
+| `Type6`       | Type of valve on 7st channel                                  |
+| `Type7`       | Type of valve on 8st channel                                  |
+| `Status0`     | Status of valve on 1st channel                                |
+| `Status1`     | Status of valve on 2st channel                                |
+| `Status2`     | Status of valve on 3st channel                                |
+| `Status3`     | Status of valve on 4st channel                                |
+| `Status4`     | Status of valve on 5st channel                                |
+| `Status5`     | Status of valve on 6st channel                                |
+| `Status6`     | Status of valve on 7st channel                                |
+| `Status7`     | Status of valve on 8st channel                                |
+| `Master0`     | Control mode of valve on 1st channel                          |
+| `Master1`     | Control mode of valve on 2st channel                          |
+| `Master2`     | Control mode of valve on 3st channel                          |
+| `Master3`     | Control mode of valve on 4st channel                          |
+| `Master4`     | Control mode of valve on 5st channel                          |
+| `Master5`     | Control mode of valve on 6st channel                          |
+| `Master6`     | Control mode of valve on 7st channel                          |
+| `Master7`     | Control mode of valve on 8st channel                          |
+| `TriggerIn`    | Current value of input trigger (logical state 0-1)            |
+| `TriggerOut`   | Current value of output trigger (logical state 0-1)           |
+| `TimerOn`      | Flag to enable or disable timer looping on every value        |
 
 📌 **Notes:**
-Master variabes pprovide information about the valve's usage mode :
+Master variabes provide information about the valve's usage mode:
 
 - Master = 0 : valve state to 0, not activated and not blocked
 - Master = 1 : valve manually activated with push button
@@ -364,7 +357,7 @@ The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluid
 ### ✨ Key Features
 
 - **Automated Fluid Distribution**: Switching between multiple fluid sources.  
-- **High Precision & Low Dead Volume**: Designed for microfluidic applications.  
+- **High Precision & No Dead Volume**: Designed for microfluidic applications.  
 - **Remote Control via Software**: Compatible with **Elveflow Smart Interface** and third-party software.  
 - **Compatible with OB1 & Other Controllers**: Works with the [OB1 MK4 Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/) and other fluidic devices.
 
@@ -374,9 +367,8 @@ The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluid
 |------------------------------|----------------------------------------------|
 | **Number of Channels**       | 13 (1 to 12)                                 |
 | **Actuation**                | Rotary Valve                                 |
-| **Dead Volume**              | Minimal (< 1 µL)                             |
-| **Compatible Fluids**        | Aqueous & organic solvents, cell suspensions |
-| **Control Options**          | Software-controlled or manual actuation      |
+| **Internal Volume**          | 3.5 µL at minimal                            |
+| **Control Options**          | Software-controlled                          |
 | **Power Supply**             | External power adapter                       |
 
 ### 🔬 Applications 
@@ -393,15 +385,14 @@ The [MUX Distribution](https://www.elveflow.com/microfluidic-products/microfluid
 
 - [OB1 MK4 - Pressure Controller](https://www.elveflow.com/microfluidic-products/microfluidics-flow-control-systems/ob1-pressure-controller/)
 - Elveflow Flow Sensors ([MFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-liquid-mass-flow-sensor/), [MPS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/pressure-sensor/), [BFS](https://www.elveflow.com/microfluidic-products/microfluidics-flow-measurement-sensors/microfluidic-flow-sensor-coriolis/))
-- [Microfluidic Valves](https://www.elveflow.com/microfluidic-products/microfluidics-accessories/microfluidics-valves/)
 - [Elveflow Smart Interface Software](https://www.elveflow.com/microfluidic-products/microfluidics-software/elveflow-software-sdk/)
 - Custom Microfluidic Chips & Accessories
 
 ### ✔️ Advantages
 
-- Ideal for handling multiple samples **without contamination**  
 - Can operate **in both directions** for maximum flexibility  
 - Compatible with **continuous or pulsed flow rates**
+- Minimal internal volume and no dead volume
 
 📌 **Notes:**
 For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elveflow.com/microfluidic-products/).
@@ -412,7 +403,7 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 |--------------|---------------------------------------------------------------|
 | `Pos`        | Store target position                                         |
 | `Direction`  | Set direction of rotation to go to target position            |
-| `Response`   | Stored response from the device after a command has been sent |
+| `Response`   | Store response from the device after a command has been sent |
 
 
 ### 🛠 **Micro-Manager Available Method**
