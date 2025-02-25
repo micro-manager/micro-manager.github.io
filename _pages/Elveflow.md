@@ -150,10 +150,10 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 | `RegulatorValue1`   | Pressure read by regulator of 2nd channel                     |
 | `RegulatorValue2`   | Pressure read by regulator of 3rd channel                     |
 | `RegulatorValue3`   | Pressure read by regulator of 4th channel                     |
-| `SensorValue0`      | Pressure/Flow rate read by sensor connected to 1st channel    |
-| `SensorValue1`      | Pressure/Flow rate read by sensor connected to 2nd channel    |
-| `SensorValue2`      | Pressure/Flow rate read by sensor connected to 3rd channel    |
-| `SensorValue3`      | Pressure/Flow rate read by sensor connected to 4th channel    |
+| `SensorValue0`      | Sensor measurement on 1st channel                             |
+| `SensorValue1`      | Sensor measurement on 2nd channel                             |
+| `SensorValue2`      | Sensor measurement on 3rd channel                             |
+| `SensorValue3`      | Sensor measurement on 4th channel                             |
 | `PressureSetpoint0` | Target pressure of regulator of 1st channel                   |
 | `PressureSetpoint1` | Target pressure of regulator of 2nd channel                   |
 | `PressureSetpoint2` | Target pressure of regulator of 3rd channel                   |
@@ -268,32 +268,32 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 | `Parameters`   | Parameter(s) set in the command                               |
 | `Response`     | Stored response from the device after a command has been sent |
 | `Type0`       | Type of valve on 1st channel                                  |
-| `Type1`       | Type of valve on 2st channel                                  |
-| `Type2`       | Type of valve on 3st channel                                  |
-| `Type3`       | Type of valve on 4st channel                                  |
-| `Type4`       | Type of valve on 5st channel                                  |
-| `Type5`       | Type of valve on 6st channel                                  |
-| `Type6`       | Type of valve on 7st channel                                  |
-| `Type7`       | Type of valve on 8st channel                                  |
+| `Type1`       | Type of valve on 2nd channel                                  |
+| `Type2`       | Type of valve on 3rd channel                                  |
+| `Type3`       | Type of valve on 4th channel                                  |
+| `Type4`       | Type of valve on 5th channel                                  |
+| `Type5`       | Type of valve on 6th channel                                  |
+| `Type6`       | Type of valve on 7th channel                                  |
+| `Type7`       | Type of valve on 8th channel                                  |
 | `Status0`     | Status of valve on 1st channel                                |
-| `Status1`     | Status of valve on 2st channel                                |
-| `Status2`     | Status of valve on 3st channel                                |
-| `Status3`     | Status of valve on 4st channel                                |
-| `Status4`     | Status of valve on 5st channel                                |
-| `Status5`     | Status of valve on 6st channel                                |
-| `Status6`     | Status of valve on 7st channel                                |
-| `Status7`     | Status of valve on 8st channel                                |
+| `Status1`     | Status of valve on 2nd channel                                |
+| `Status2`     | Status of valve on 3rd channel                                |
+| `Status3`     | Status of valve on 4th channel                                |
+| `Status4`     | Status of valve on 5th channel                                |
+| `Status5`     | Status of valve on 6th channel                                |
+| `Status6`     | Status of valve on 7th channel                                |
+| `Status7`     | Status of valve on 8th channel                                |
 | `Master0`     | Control mode of valve on 1st channel                          |
-| `Master1`     | Control mode of valve on 2st channel                          |
-| `Master2`     | Control mode of valve on 3st channel                          |
-| `Master3`     | Control mode of valve on 4st channel                          |
-| `Master4`     | Control mode of valve on 5st channel                          |
-| `Master5`     | Control mode of valve on 6st channel                          |
-| `Master6`     | Control mode of valve on 7st channel                          |
-| `Master7`     | Control mode of valve on 8st channel                          |
-| `TriggerIn`    | Current value of input trigger (logical state 0-1)            |
-| `TriggerOut`   | Current value of output trigger (logical state 0-1)           |
-| `TimerOn`      | Flag to enable or disable timer looping on every value        |
+| `Master1`     | Control mode of valve on 2nd channel                          |
+| `Master2`     | Control mode of valve on 3rd channel                          |
+| `Master3`     | Control mode of valve on 4th channel                          |
+| `Master4`     | Control mode of valve on 5th channel                          |
+| `Master5`     | Control mode of valve on 6th channel                          |
+| `Master6`     | Control mode of valve on 7th channel                          |
+| `Master7`     | Control mode of valve on 8th channel                          |
+| `TriggerIn`    | Current value of input trigger (logical state 0-1)           |
+| `TriggerOut`   | Current value of output trigger (logical state 0-1)          |
+| `TimerOn`      | Flag to enable or disable timer looping on every value       |
 
 📌 **Notes:**
 Master variabes provide information about the valve's usage mode:
