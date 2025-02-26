@@ -100,3 +100,9 @@ supported on Windows)
 </tr>
 </table>
 
+After first start, the CONEX-CC controller needs to be initialized by setting the Property "Search for Home" to "Search for HOME now".  
+
+You may want to make the Core Timeout property more than the usual 5 seconds, since Homing and moving to positions can take much longer.
+
+Properties for position, lower and upper limits, speed and accelaration were added on Feb. 25, 2025.
+
