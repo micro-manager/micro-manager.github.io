@@ -94,10 +94,6 @@ the latest official release.
     (you most likely want the 64-bit version; 32-bit has been discontinued)
   - [Version 2.0
     (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
-  - [Version 1.4
-    (Windows)](https://download.micro-manager.org/nightly/1.4/Windows/)
-    (pay attention to 32-bit or 64-bit, both are listed but you need the
-    one matching your Windows OS)
 
 Older nightly builds:
 
@@ -106,6 +102,10 @@ Older nightly builds:
     (you most likely want the 64-bit version)
   - [Version 2.0-gamma
     (Mac)](https://download.micro-manager.org/nightly/2.0.0-gamma/Mac/)
+  - [Version 1.4 (Windows)
+    2021-2025](https://download.micro-manager.org/nightly/1.4/Windows/) (pay
+    attention to 32-bit or 64-bit, both are listed but you need the one
+    matching your Windows OS)
   - [Version 1.4 2016-2021
     (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
 
