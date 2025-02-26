@@ -17,11 +17,9 @@ Windows](Building_MM_on_Windows).
 
 ## Prerequisites
 
-See the page on [Building MM on
-Windows](Building_MM_on_Windows) for how to set up a
-development environment for Micro-Manager, including Microsoft Visual
-Studio 2019. The following
-assumes that those instructions were followed.
+See the page on [Building MM on Windows](Building_MM_on_Windows) for how to set
+up a development environment for Micro-Manager, including Microsoft Visual
+Studio. The following assumes that those instructions were followed.
 
 ## Adding the project
 

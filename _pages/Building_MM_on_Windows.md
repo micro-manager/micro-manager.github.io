@@ -19,14 +19,22 @@ enough.
   such as [SlikSVN](https://sliksvn.com/download/).
   GUI clients such as [TortoiseSVN](http://tortoisesvn.net/) also work well.
 
-### Microsoft Visual Studio 2019
+### Microsoft Visual Studio
 
-You need to install one of the following:
+You need to install the following:
 
-- Visual Studio Community 2019, with the "Desktop development with C++" workload
-- Visual Studio Community 2022, with the "Desktop development with C++" workload, plus "MSVC v142 - VS 2019 C++ x64/x86 build tools"
+- Visual Studio Community 2022, with the `Desktop development with C++`
+  workload, plus
+  - `MSVC v142 - VS 2019 C++ x64/x86 build tools`,
+  - `Windows 10 SDK 10.0.19041`, and
+  - `Windows 10 SDK 10.0.20348`
 
-The checkbox for the MSVC v142 build tools is located under "Desktop development with C++".
+The checkbox for the MSVC v142 build tools and the Windows 10 SDKs is located
+under `Desktop development with C++` in the right sidebar titled "Installation
+details".
+
+(Both versions of the Windows 10 SDK are actually needed for all parts of the
+build to work correctly.)
 
 ### Java Development Kit (JDK) 8
 
