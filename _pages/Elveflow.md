@@ -433,10 +433,8 @@ int target_pos = 10;
 int target_direction = 0; // 0 : left / 1 : right
 
 // Send UART command
-// -- First set IsGet and Parameters
 mmc.setProperty(device_name, "Pos", target_pos);
 mmc.setProperty(device_name, "Direction", target_direction); // It will trigger the function (GoToPos) to send completed UART command that move device to the target position with the selected direction
-// -- Then specify the command
 ```
 
 ---
