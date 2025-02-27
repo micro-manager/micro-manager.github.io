@@ -402,9 +402,7 @@ For more details, visit 🌐[Elveflow – Microfluidic Products](https://www.elv
 | Property     | Description                                                   |
 |--------------|---------------------------------------------------------------|
 | `Pos`        | Store target position                                         |
-| `Direction`  | Set direction of rotation to go to target position            |
 | `Response`   | Store response from the device after a command has been sent |
-
 
 ### 🛠 **Micro-Manager Available Method**
 
@@ -429,12 +427,10 @@ for (int i = 0; i < devices.size(); i++) {
 
 // Setup UART command
 String device_name = "MUX_DISTRIB";
-int target_pos = 10;
-int target_direction = 0; // 0 : left / 1 : right
+int target_pos = 10; //[1 to 12]
 
 // Send UART command
-mmc.setProperty(device_name, "Pos", target_pos);
-mmc.setProperty(device_name, "Direction", target_direction); // It will trigger the function (GoToPos) to send completed UART command that move device to the target position with the selected direction
+mmc.setProperty(device_name, "Pos", target_pos); // It will trigger the function (GoToPos) to send completed UART command that move device to the target position using the shortest path
 ```
 
 ---
