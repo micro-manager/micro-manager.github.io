@@ -28,7 +28,6 @@ layout: page
 <td><p>Currently available devices:</p></td>
 <td><p>Ob1 MK4, Mux Wire, Mux Distribution </p></td>
 </tr>
-<tr>
 </table>
 
 # Elveflow - Micro-Manager
