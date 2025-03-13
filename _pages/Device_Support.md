@@ -424,6 +424,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Diskovery](Diskovery) - Spectral/Andor spinning disk
     confocal/TIRF module
 -   [DLP4000](DLP4000) - Digital Mirror Device
+-   [Elveflow](Elveflow) - Elveflow microfluidic devices
 -   [GenericSLM](GenericSLM) - Any spatial light modulator
     that can be controlled via computer video output port.
 -   [ImageProcessorChain](ImageProcessorChain) - Virtual
