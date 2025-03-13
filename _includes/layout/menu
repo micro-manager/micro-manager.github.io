@@ -57,19 +57,38 @@
 
 <!-- Extend -->
 {% include menu-section title="Extend" link="/Micro-Manager_Programming_Guide" %}
-  <li><a href="/Script_Panel_GUI">Scripting (Beanshell)</a></li>
-  <li><a href="/Example_Beanshell_scripts">Example Beanshell scripts</a></li>
-  <li><a href="/Writing_plugins_for_Micro-Manager">Writing Plugins</a></li>
-  <li><a href="/Using_the_Micro-Manager_python_library">Python</a></li>
-  <li><a href="/Matlab">Matlab</a></li>
-  <li><a href="/Micro-Manager_File_Formats">File Formats</a></li>
-  <li><a href="/Search_Paths">Search Paths</a></li>
-  <li><a href="/Building_Micro-Manager_Device_Adapters">Writing Device Adapters</a></li>
-  <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Testing communication with hardware</a></li>
+
+  {% include menu-section title="Scripting" %}
+    <li><a href="/Script_Panel_GUI">Beanshell</a></li>
+    <li><a href="/Example_Beanshell_scripts">Example Beanshell scripts</a></li>
+
+    <li><a href="/Using_the_Micro-Manager_python_library">Python</a></li>
+    <li><a href="/Matlab">Matlab</a></li>
+    <li><a href="/Multi-Dimensional_Acquisition_Programming">Multi-D Acq. Programming</a></li>
+  {% include menu-section-end %}
+  
+
+  {% include menu-section title="Source code" %}
+    <li><a href="/Policies_for_inclusion_of_source_code">Policies for inclusion of source code</a></li>
+    <li><a href="https://github.com/micro-manager">Source code repository history and tickets</a></li>
+  {% include menu-section-end %}
+
+
   <li><a href="/Building_and_debugging_Micro-Manager_source_code">Building and Debugging Micro-Manager</a></li>
-  <li><a href="/Multi-Dimensional_Acquisition_Programming">Multi-D Acq. Programming</a></li>
-  <li><a href="/Policies_for_inclusion_of_source_code">Policies for inclusion of source code</a></li>
-  <li><a href="https://github.com/micro-manager">Source code repository history and tickets</a></li>
+
+  {% include menu-section title="Devices" %}
+    <li><a href="/Search_Paths">Search Paths</a></li>
+    <li><a href="/Building_Micro-Manager_Device_Adapters">Writing Device Adapters</a></li>
+    <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Testing communication with hardware</a></li>
+  {% include menu-section-end %}
+
+
+
+  <li><a href="/Writing_plugins_for_Micro-Manager">Writing Plugins</a></li>
+  <li><a href="/Micro-Manager_File_Formats">File Formats</a></li>
+
+
+
   {% include menu-section title="APIs" %}
     <li><a href="/apidoc/mmstudio/latest/org/micromanager/Studio.html">2.0 MMStudio API Reference (Java/Beanshell)</a></li>
     <li><a href="/apidoc/mmstudio/1.4/org/micromanager/api/ScriptInterface.html">1.4 MMStudio API Reference (Java/Beanshell)</a></li>
