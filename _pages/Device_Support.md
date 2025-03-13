@@ -59,8 +59,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Apogee](Apogee) - Apogee cameras
 -   [AxioCam](AxioCam) - Zeiss AxioCam medium resolution and
     high resolution models (Windows)
--   [BaslerAce](BaslerAce) - Basler Ace USB Cameras
--   [BaslerCameras](BaslerCameras) - All Basler cameras that
+-   [BaslerPylon](BaslerPylon) - All Basler cameras that
     are supported by pylon SDK
 -   [BaumerOptronic](BaumerOptronic) - Leica DFC camera
     (through BaumerOptronic FXLib)
