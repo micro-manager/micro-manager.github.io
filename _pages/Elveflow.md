@@ -22,7 +22,7 @@ layout: page
 </tr>
 <tr>
 <td><p>Since version:</p></td>
-<td><p>1.3.18</p></td>
+<td><p>Nightly build 2025-01-31</p></td>
 </tr>
 <tr>
 <td><p>Currently available devices:</p></td>
