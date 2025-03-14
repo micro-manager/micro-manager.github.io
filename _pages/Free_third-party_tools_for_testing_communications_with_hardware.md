@@ -8,7 +8,7 @@ redirect_from:
   - /wiki/(Windows)_tools_useful_for_Device_Adapter_Developers
   - /wiki/Creating_new_Device_Adapters_for_Micro-Manager
 layout: page
-section: Extend:Devices
+section: Extend:Device Adapters
 ---
 
 
