@@ -76,12 +76,26 @@
 
   <li><a href="/Building_and_debugging_Micro-Manager_source_code">Building and Debugging Micro-Manager</a></li>
 
-  {% include menu-section title="Devices" %}
-    <li><a href="/Search_Paths">Search Paths</a></li>
-    <li><a href="/Building_Micro-Manager_Device_Adapters">Writing Device Adapters</a></li>
-    <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Testing communication with hardware</a></li>
-  {% include menu-section-end %}
+  {% include menu-section title="Device Adapters"  %}
 
+    <!-- {% include menu-section title="Overview" link="/Device_Adapters_Overview" %}
+    {% include menu-section-end %} -->
+    <li><a href="/Device_Adapters_Overview">Overview</a></li>
+    <li><a href="/DevEnvironmentSetup">Development Environment Setup</a></li>
+    <li><a href="/Visual_Studio_project_settings_for_device_adapters">Visual Studio project settings</a></li>
+
+    <li><a href="/DeviceAdapterTutorial">Writing device adapters</a></li>
+
+    <li><a href="/Hub_Device_Adapters">Hub Device Adapters</a></li>
+
+    <li><a href="/Device_Codebase_Design">Device Codebase Design</a></li>
+
+    <li><a href="/Free_third-party_tools_for_testing_communications_with_hardware">Testing communication with hardware</a></li>
+    <li><a href="/Device_change_log">Change log</a></li>
+
+    {% include menu-section-end %}
+
+  <li><a href="/Search_Paths">Search Paths</a></li>
 
 
   <li><a href="/Writing_plugins_for_Micro-Manager">Writing Plugins</a></li>

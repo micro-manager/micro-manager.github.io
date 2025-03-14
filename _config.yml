@@ -1,7 +1,8 @@
 name: Micro-Manager
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rogue
+  syntax_highlighter: rouge
+  input: GFM
 plugins:
   - jekyll-sitemap
   - jekyll-gist

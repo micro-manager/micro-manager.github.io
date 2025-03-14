@@ -17,28 +17,13 @@ nav-links:
 ---
 
 The source code includes all Micro-Manager files (Java and C++) and all
-supporting files (project files, build scripts, etc.). However, to build the
+supporting files (project files, build scripts, etc.). To build the
 entire project a number of Open Source libraries and device SDKs must be
 installed. See the [build
-instructions](/Building_and_debugging_Micro-Manager_source_code).
+instructions](/Building_and_debugging_Micro-Manager_source_code). However, many taskes (creating a plugin or device adapter can be accomplished without having to build the full project from scratch).
 
-## Note about the source code licensing terms
 
-Micro-Manager is structured in three distinct layers: Graphical User
-Interface (GUI), Device Adapters and MMCore. All source files, except
-ones carrying a different license notice in the header, are copyright of
-University of California. GUI and Device adapters are distributed under
-the "[BSD](http://www.opensource.org/licenses/bsd-license.php)" license,
-while MMCore is distributed under "[Lesser
-GPL](http://www.opensource.org/licenses/lgpl-license.php)" license.
-License text files are included in the source package, and each file
-should have a header stating the exact type of license. A good starting
-point to learn more about the Open Source Code licensing is
-<http://www.opensource.org/>. If you have any questions or need some
-clarification regarding our licensing terms please let us know:
-<info@micro-manager.org>
-
-## Git repository
+## Current source code
 
 The source code for Micro-Manager 2.x is located on GitHub at
 https://github.com/micro-manager/micro-manager in the `main` branch.
@@ -92,5 +77,19 @@ parent directory as the `micro-manager` directory from Git.
 - The Micro-Manager 1.4 source code is in the `mm1.4` branch of the [GitHub
   repository](https://github.com/micro-manager/micro-manager).
 
-- The Micro-Manager 1.2 and 1.3 source code is temporarily unavailable; it will
-  be imported into Git branches shortly.
+
+## Note about the source code licensing terms
+
+Micro-Manager is structured in three distinct layers: Graphical User
+Interface (GUI), Device Adapters and MMCore. All source files, except
+ones carrying a different license notice in the header, are copyright of
+University of California. GUI and Device adapters are distributed under
+the "[BSD](http://www.opensource.org/licenses/bsd-license.php)" license,
+while MMCore is distributed under "[Lesser
+GPL](http://www.opensource.org/licenses/lgpl-license.php)" license.
+License text files are included in the source package, and each file
+should have a header stating the exact type of license. A good starting
+point to learn more about the Open Source Code licensing is
+<http://www.opensource.org/>. If you have any questions or need some
+clarification regarding our licensing terms please let us know:
+<info@micro-manager.org>

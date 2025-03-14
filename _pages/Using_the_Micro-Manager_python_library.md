@@ -12,12 +12,10 @@ through Micro-Manager:
 1. [Pycro-manager](https://pycro-manager.readthedocs.io/en/latest/) is a multi-purpose python package for the control of microscope hardware and the acquisition of data. It is capable of performing in demanding, data-intensive applications where large datasets at mutiple GB/s for hours at a time, while also providing a concise yet flexible API that can be adapted to many different modailities of microscopy. It can be used:
     - Alongside the Micro-manager GUI to support additional automation and customization
     - As a standalone library for acquiring data from a Python environment
-    - As a backend data acquisition system with [Napari](https://napari.org/) as an image viewer,
-      or a custom image viewer
+    - As a backend data acquisition system with [Napari](https://napari.org/) as an image viewer, or a custom image viewer
     - With no GUI at all in a server environment (on a single computer or across a network)
-    - Pycro-manager contains a translation layer that dynamically translates Java code into
-      Python, which allows for any Micro-Manager APIs/plugins written in Java to be controlled
-      as if they had been writtin in Python
+
+Pycro-manager contains a translation layer that dynamically translates Java code into Python, which allows for any Micro-Manager APIs/plugins written in Java to be controlled as if they had been writtin in Python. It also contains a pure python backend that uses `pymmcore`.
 
 2. [pymmcore](https://github.com/micro-manager/pymmcore#pymmcore-python-bindings-for-mmcore)
     provides a Python bindings of the underlying C++ library
