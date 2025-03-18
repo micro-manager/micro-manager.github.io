@@ -1,6 +1,8 @@
 ---
 title: Building Micro-Manager Device Adapters
-redirect_from: /wiki/Building_Micro-Manager_Device_Adapters
+redirect_from:
+  - /wiki/Building_Micro-Manager_Device_Adapters
+  - /Building_Micro-Manager_Device_Adapters
 layout: page
 section: Extend:Device Adapters:Overview
 ---
