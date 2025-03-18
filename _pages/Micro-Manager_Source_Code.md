@@ -20,7 +20,9 @@ The source code includes all Micro-Manager files (Java and C++) and all
 supporting files (project files, build scripts, etc.). To build the
 entire project a number of Open Source libraries and device SDKs must be
 installed. See the [build
-instructions](/Building_and_debugging_Micro-Manager_source_code). However, many taskes (creating a plugin or device adapter can be accomplished without having to build the full project from scratch).
+instructions](/Building_and_debugging_Micro-Manager_source_code). However, many
+tasks (creating a plugin or device adapter) can be accomplished without having
+to build the full project from scratch.
 
 
 ## Current source code

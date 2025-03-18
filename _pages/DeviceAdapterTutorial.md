@@ -16,19 +16,7 @@ Micro-Manager device adapters allow you to add support for new hardware by writi
 
 1. Download the necessary [source code and dependencies](/DevEnvironmentSetup) 
 
-2. Download and install Micro-Manager, either by downloading a [nightly build](https://micro-manager.org/Micro-Manager_Nightly_Builds), or automatically using python:
-
-To install using python, first download the `mmpycorex` library:
-```
-pip install mmpycorex
-```
-
-Then run the following python code:
-
-```python
-from mmpycorex import download_and_install_mm
-download_and_install_mm()
-```
+2. Download and install Micro-Manager, either by downloading a [nightly build](/Micro-Manager_Nightly_Builds)
 
 #### C++ development environment
 
@@ -47,8 +35,7 @@ Same thing with a .h header file, name it `MyNewDevice.h`. Paste in the followin
 
 #pragma once
 
-#include "../../MMDevice/DeviceBase.h"
-#include "../../MMDevice/ModuleInterface.h"
+#include "DeviceBase.h"
 
 const char* g_MyNewDeviceName = "NewDevice";
 
@@ -72,8 +59,10 @@ public:
 // MyNewDevice.cpp: A minimal device adapter
 
 #include "MyNewDevice.h"
-#include "../../MMDevice/ModuleInterface.h"
-#include <string>
+
+#include "ModuleInterface.h"
+
+#include <cstring>
 
 MODULE_API void InitializeModuleData()
 {
@@ -85,7 +74,7 @@ MODULE_API MM::Device* CreateDevice(const char* deviceName)
     if (deviceName == 0)
         return 0;
 
-    if (strcmp(deviceName, g_MyNewDeviceName) == 0)
+    if (std::strcmp(deviceName, g_MyNewDeviceName) == 0)
     {
         return new MyNewDevice();
     }
@@ -202,7 +191,7 @@ MODULE_API MM::Device* CreateDevice(const char* deviceName)
         return 0;
 
     // Create the appropriate device based on the requested name
-    if (strcmp(deviceName, g_MyNewDeviceName) == 0)
+    if (std::strcmp(deviceName, g_MyNewDeviceName) == 0)
     {
         return new MyNewDevice();
     }
@@ -356,7 +345,7 @@ Many properties are only allowed to take certain values. These values can be spe
 
 ```cpp
 // SetAllowedValues(propertyName, allowedValuesList)
-vector<string> binningValues;
+std::vector<std::string> binningValues;
 binningValues.push_back("1");
 binningValues.push_back("2");
 binningValues.push_back("4");
@@ -435,13 +424,14 @@ When implementing constructors and destructors for Micro-Manager device adapters
 
 The `Initialize()` and `Shutdown()` methods are critical for proper device adapter behavior within Micro-Manager. Follow these key rules:
 
-- No hardware communication should occur before Initialize() is called
+- No hardware communication should occur before `Initialize()` is called
 - Use `Initialize()` to establish the connection to hardware and prepare the device for commands
 - Use `Shutdown()` to disconnect from the hardware, reversing the effects of `Initialize()`
-- Repeated calls to `Initialize()` after successful initialization should have no effect
-- Repeated calls to `Shutdown()` after successful shutdown should have no effect
-- Calling `Shutdown()` without prior initialization should have no effect
-- After `Shutdown()`, the device adapter should never communicate with hardware until `Initialize()` is called again
+- MMCore guarantees that `Initialize()` is called at most once during the device object's lifetime
+- MMCore guarantees that `Shutdown()` is called before the device object is destroyed if `Initialize()` was called
+- Calling `Shutdown()` without prior initialization must have no effect
+- `Shutdown()` must perform the correct cleanup whether or not the call to `Initialize()` was successful
+- After `Shutdown()`, the device adapter should never communicate with hardware
 
 
 ## Instance management
@@ -465,7 +455,7 @@ A more complicated scenario occurs when multiple device adapters need to share a
 
 ## Core Callbacks
 
-[Certain functionality](https://micro-manager.org/apidoc/MMDevice/latest/class_m_m_1_1_core.html) requires devices to interact their parent application, the Micro-Manager core. For example, camera devices must send the data they capture to the core. Device adapters can obtain a pointer to the Core via the `GetCoreCallback()` method
+[Certain functionality](https://micro-manager.org/apidoc/MMDevice/latest/class_m_m_1_1_core.html) requires devices to interact with the Micro-Manager Core. For example, camera devices must send the data they capture to the core. Device adapters can obtain a pointer to the Core via the `GetCoreCallback()` method
 
 
 
