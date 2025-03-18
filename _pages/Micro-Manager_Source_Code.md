@@ -77,6 +77,8 @@ parent directory as the `micro-manager` directory from Git.
 - The Micro-Manager 1.4 source code is in the `mm1.4` branch of the [GitHub
   repository](https://github.com/micro-manager/micro-manager).
 
+- Feb 2025: The Micro-Manager 1.2 and 1.3 source code is temporarily
+  unavailable; it will be imported into Git branches shortly.
 
 ## Note about the source code licensing terms
 
