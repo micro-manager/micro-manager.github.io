@@ -9,7 +9,7 @@ layout: page
 | Platforms | Windows (64-bit), Linux (64-bit) |
 | Devices | Daheng cameras supported by Daheng SDK|
 
-## Allied Vision Camera Adapter
+## Daheng Camera Adapter
 Download and install the [Daheng SDK](https://va-imaging.com/pages/customerdownloads)
 
 Unpack the zip and execute the .exe inside.
