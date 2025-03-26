@@ -117,6 +117,7 @@ release](Download_Micro-Manager_Latest_Release).
     PICam interface
 -   [Piper](Piper) - Stanford Photonics cameras
 -   [Pixelink](Pixelink) - Pixelink Cameras
+-   [PlayerOne](PlayerOne) - PlayerOne Cameras (made for astronomy, low read-noise cameras with cooling).
 -   [Point Grey Research](Point_Grey_Research) - Point Grey
     (now FLIR) cameras through the Flycap2 interface, also see
     [Spinnaker](Spinnaker)
