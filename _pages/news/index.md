@@ -21,7 +21,7 @@ This page shows the latest announcements and updates about µManager.
    {% include listnews %}
   <bsky-embed
     username="micro-manager.bsky.social"
-    mode="dark"
+    mode=""
     limit="5"
   >
   </bsky-embed>
