@@ -37,5 +37,16 @@ You may also want to make a preset group with the property "Cooler".  You only n
 
 [ARES-M Pro](https://player-one-astronomy.com/product/ares-m-pro-usb3-0-mono-camera-imx533/), tested 2025-03-26
 
+### Speed data
+
+PlayerOne ARES-M Pro speeds (RAW16, 0 ms exposure), ran live mode in MM and recorded fps shown in display
+| Full frame | 25fps |
+| 3008 x 1502 | 44fps |
+| 3008 x 1000 | 64 fps |
+| 3008 x 500 | 117fps |
+| 3008 x 250 | 214 fps |
+
+| 3008 x 250, 5 ms exposures |  206 fps |
+
 
 
