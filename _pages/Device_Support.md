@@ -104,6 +104,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Mightex\_C\_Cam](Mightex_C_Cam) - Mightex C-series USB
     cameras
 -   [MoticCamera](MoticCamera) - Motic cameras
+-   [NikonKS](NikonKS) - Nikon DS-Ri2 and DS-Qi2 cameras
 -   [NKRemoteCamera](TetheredCam) - Nikon Digital SLR
     (Windows)
 -   [OpenCVgrabber](OpenCVgrabber) - Supports numerous USB
