@@ -1,7 +1,7 @@
 ---
 title: Hub Device Adapters
 layout: page
-section: Extend:Device Adapters
+section: Programming:Device Adapters
 ---
 
 

@@ -4,7 +4,7 @@ redirect_from:
   - /wiki/Building_Micro-Manager_Device_Adapters
   - /Building_Micro-Manager_Device_Adapters
 layout: page
-section: Extend:Device Adapters:Overview
+section: Programming:Device Adapters:Overview
 ---
 
 Device adapters are the bridge between Micro-Manager and hardware devices like cameras, stages, and filter wheels. They translate Micro-Manager's standardized API calls into device-specific commands. This section will walk you through the process of creating a device adapter for your hardware, from setting up your development environment to implementing the required interfaces.

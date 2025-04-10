@@ -55,8 +55,8 @@
   {% include menu-section-end %}
 {% include menu-section-end %}
 
-<!-- Extend -->
-{% include menu-section title="Extend" link="/Micro-Manager_Programming_Guide" %}
+<!-- Programming -->
+{% include menu-section title="Programming" link="/Micro-Manager_Programming_Guide" %}
 
   {% include menu-section title="Scripting" %}
     <li><a href="/Script_Panel_GUI">Beanshell</a></li>

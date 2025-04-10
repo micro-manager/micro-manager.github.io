@@ -1,7 +1,7 @@
 ---
 title: Creating a Micro-Manager Device Adapter
 layout: page
-section: Extend:Device Adapters
+section: Programming:Device Adapters
 ---
 
 ## Introduction
