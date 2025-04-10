@@ -12,7 +12,7 @@ redirect_from:
   - /Linux_installation_from_source_MM2
   - /wiki/Linux_installation_from_source_MM2
 layout: page
-section: Extend
+section: Programming
 ---
 
 ## General
