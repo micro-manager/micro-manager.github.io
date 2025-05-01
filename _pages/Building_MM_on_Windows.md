@@ -226,6 +226,7 @@ script):
  MMCoreJ_wrap\build.xml
  mmstudio\build.xml
  acqEngine\build.xml
+ librariers\build.xml
  plugins\*\build.xml
  autofocus\build.xml
 ```
