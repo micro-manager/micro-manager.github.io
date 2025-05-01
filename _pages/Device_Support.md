@@ -101,8 +101,8 @@ release](Download_Micro-Manager_Latest_Release).
     GmbH USB3 Vision, GigE Vision and USB2 cameras as well as various
     frame grabber boards
 -   [Micropix](Micropix) - Cameras from Micropix
--   [Mightex\_C\_Cam](Mightex_C_Cam) - Mightex C-series USB
-    cameras
+-   [Mightex\_C\_Cam](Mightex_C_Cam) - Mightex C-series USB cameras
+-   [Mightex\_SB\_Cam](Mightex_SB_Cam) - Mightex SB-series USB3 cameras
 -   [MoticCamera](MoticCamera) - Motic cameras
 -   [NikonKS](NikonKS) - Nikon DS-Ri2 and DS-Qi2 cameras
 -   [NKRemoteCamera](TetheredCam) - Nikon Digital SLR
