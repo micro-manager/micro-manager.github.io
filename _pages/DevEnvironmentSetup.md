@@ -1,7 +1,7 @@
 ---
 title: Device Adapter Development Environment Setup
 layout: page
-section: Extend:Device Adapters
+section: Programming:Device Adapters
 ---
 
 #### Overview

@@ -1,7 +1,7 @@
 ---
 title: Writing plugins for Micro-Manager
 layout: page
-section: Extend
+section: Programming
 ---
 {% include notice icon="info" content="This documentation is for the current version of Micro-Manager (2.0). For Micro-Manager 1.4 plugins, please see [Writing plugins for Micro-Manager-1.4](writing_plugins_for_Micro-Manager-1.4). " %}
 

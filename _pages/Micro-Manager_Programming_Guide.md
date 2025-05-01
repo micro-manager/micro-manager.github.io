@@ -5,7 +5,7 @@ redirect_from:
   - /wiki/Micro-Manager_Programming_Guide
   - /wiki/Micro-Manager_ProgrammingGuide
 layout: page
-section: Extend
+section: Programming
 ---
 
 <span>*Created on November 16, 2005 by Nenad Amodaj  

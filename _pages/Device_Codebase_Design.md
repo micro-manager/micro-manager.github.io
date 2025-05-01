@@ -1,7 +1,7 @@
 ---
 title: MMDevice codebase architecture
 layout: page
-section: Extend:Device Adapters
+section: Programming:Device Adapters
 ---
 
 ## Terminology
