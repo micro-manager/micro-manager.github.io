@@ -25,16 +25,11 @@ You need to install the following:
 
 - Visual Studio Community 2022, with the `Desktop development with C++`
   workload, plus
-  - `MSVC v142 - VS 2019 C++ x64/x86 build tools`,
-  - `Windows 10 SDK 10.0.19041`, and
-  - `Windows 10 SDK 10.0.20348`
+  - `MSVC v142 - VS 2019 C++ x64/x86 build tools` (now optional; only needed
+    for work on some outstanding pull requests)
 
-The checkbox for the MSVC v142 build tools and the Windows 10 SDKs is located
-under `Desktop development with C++` in the right sidebar titled "Installation
-details".
-
-(Both versions of the Windows 10 SDK are actually needed for all parts of the
-build to work correctly.)
+The checkbox for the MSVC v142 build tools is located under `Desktop development
+with C++` in the right sidebar titled "Installation details".
 
 ### Java Development Kit (JDK) 8
 

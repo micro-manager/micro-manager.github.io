@@ -85,8 +85,8 @@ Studio. The following assumes that those instructions were followed.
     Release), so choose **All Configurations** from the
     **Configuration:** popup menu (make sure you do this again if you
     close and reopen the **Property Pages**).
-17. Under **Configuration Properties &gt; General**, set **Platform
-    Toolset** to **Visual Studio 2019 (v142)**.
+17. Under **Configuration Properties &gt; General**, make sure **Platform
+    Toolset** is set to **Visual Studio 2022 (v143)**.
 18. Under **Configuration Properties &gt; C/C++ &gt; General**, set
     **Warning Level** to **inherit from parent or project defaults**
     (which should display **Level4** after clicking **Apply**).
@@ -133,8 +133,7 @@ sure your project does not override the defaults.
     
 **Windows SDK Version**: 10.0 (latest installed version).
 
-**Platform Toolset**: Currently must be **Visual Studio 2019 (v142)**
-(even if you are using Visual Studio 2022).
+**Platform Toolset**: Currently we use **Visual Studio 2022 (v143)**.
     
 **C++ Language Standard**: Default (ISO C++ 14 Standard).
 
