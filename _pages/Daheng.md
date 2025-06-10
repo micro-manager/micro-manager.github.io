@@ -22,7 +22,6 @@ Note that you do not need to download the Micro-Manager dll from the Daheng webs
 
 In the Micro-Manager Hardware Configuration Wizard, select `DahengGalaxy`.  If your camera is connected and recognized by the Daheng software, it will appear in the list.  The serial number of the Daheng camera is used to recognize the specific camera.
 
-Tested models: MER-160-227U3M, 
-
-
+Tested models: MER-160-227U3M, MER2-301-125U3M
+ 
 
