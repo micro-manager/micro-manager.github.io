@@ -1,0 +1,21 @@
+
+This folder contains the Micro Manager files for all Scion CFW Series Cameras.
+
+SFW_Library.exe		
+Newest library update.  Required for MicroManager.  Install after camera driver is installed.
+Windows 2000 - Windows 7 32-Bit 	Version 2.3
+
+
+SFW_MM_13.exe		
+Installs Camera support for Micro-Manager 1.3.40 Beta.  Note: Existing Micro-Manager 1.3.40 installation required.
+Windows 2000 - Windows 7 32-Bit		Version 1.3.3
+
+
+sfwlibraries.pkg.tar.gz
+Newest library update.  Required for MicroManager.  Install after camera driver is installed.
+Mac OS 10.4 or higher 	Version 2.4
+
+
+SFMM_Intel_12.dmg
+Installs Version 1.2 Micro-Manager and Scion CFW Camera camera support.
+Mac OS 10.4 or higher (Intel only)	Version 1.2

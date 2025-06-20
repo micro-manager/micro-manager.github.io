@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+   <TITLE>Scion Corporation Technical Note</TITLE>
+<link rel="icon" href="http://www.scioncorp.com/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.scioncorp.com/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Language" content="en-us">
+	<style>
+<!--
+li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#000080" ALINK="#000080" VLINK="#800080">
+<div align="center">
+<table border="0" width="82%">
+	<tr>
+		<td valign="top" colspan="3">
+<img border="0" src="./images/technical_support.gif" width="320" height="50"><p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="3">
+<TABLE BORDER=0 CELLPADDING=0>
+   <TR>
+      <TD>
+         <IMG SRC="./images/bullet.gif" WIDTH=22 HEIGHT=18 ALIGN=bottom></TD>
+      <TD>
+         <IMG SRC="./images/technical_note.gif" WIDTH=250 HEIGHT=16 ALIGN=bottom></TD>
+   </TR>
+</TABLE>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="3">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="136" valign="top">
+		<table border="0" width="100%">
+			<tr>
+				<td>
+				Windows 7 Support for Scion FireWire Cameras</td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td width="4" valign="top" style="border-left-style: solid; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px">
+		&nbsp;</td>
+		<td>
+		<table border="0" width="100%">
+			<tr>
+				<td>All Scion FireWire (IEEE-1394) cameras support the Windows 7 
+				Operating System.&nbsp; However, it is currently necessary to 
+				downgrade the Windows FireWire drivers to the Legacy version.&nbsp;
+         
+         		<p>These steps are not necessary if the following is true:&nbsp;
+				<br>
+				CFW-1000 Series cameras with serial numbers higher than 10000012<br>
+				CFW-1300 Series cameras with serial numbers higher than 13006722&nbsp;
+				<br>
+				CFW-1600 Series cameras with serial numbers higher than 16000161</p>
+				<ol>
+					<li><span style="font-family: Times New Roman">Download and 
+					install the Windows Vista drivers located on the Scion 
+					website.</span></li>
+					<li>Disconnect the camera from the computer. </li>
+					<li>Click the Start button and right-click the &#8220;Computer&#8221; 
+					entry.&nbsp; On the menu select &#8220;Manage&#8221;.&nbsp; The Computer 
+					Management window will appear. </li>
+					<li>On the left pane select the &#8220;Device Manager&#8221; entry. </li>
+					<li>In the center pane find the &#8220;IEEE 1394 Bus host 
+					controllers&#8221; entry and click the arrow to the left.&nbsp; The 
+					controller will appear below. </li>
+					<li>Right click the controller and select &#8220;Update Driver 
+					Software&#8221;. </li>
+				</ol>
+				<p>
+				<img border="0" src="./images/Device_Manager.jpg" width="550" height="400"></p>
+				<ol>
+					<li value="7">Select the &#8220;Browse my computer for driver 
+					software&#8221; button in the new window. </li>
+					<li>Next select the &#8220;Let me pick from a list of device 
+					drivers on my computer&#8221; button. </li>
+					<li>In the list that appears select the &#8220;1394 OHCI Compliant 
+					Host controller (Legacy)&#8221; and click the Next button. </li>
+				</ol>
+				<p>
+				<img border="0" src="./images/1394_Legacy.jpg" width="550" height="400"></p>
+				<ol>
+					<li value="10">The wizard should show a successful 
+					installation of the driver.&nbsp; Click the Close button. </li>
+					<li>Now connect the Scion camera.&nbsp; The Device Manager will 
+					automatically update showing the Scion camera model just 
+					below &#8220;Other Devices&#8221;. </li>
+					<li>Right click the camera model just under the &#8220;Other 
+					Devices&#8221; and select &#8220;Update Driver Software&#8221;. </li>
+					<li>In the new window select &#8220;Browse my computer for driver 
+					software&#8221;. </li>
+					<li>On this new page click the Browse button.&nbsp; Browse out to 
+					&#8220;C:\Program Files\Scion Corporation\1394 Drivers&#8221; and click 
+					the OK button.&nbsp; Click Next to continue. </li>
+					<li>A window will appear alerting the user that it cannot 
+					verify the publisher of the software.&nbsp; Select &#8220;Install this 
+					driver software anyway&#8221;. </li>
+					<li>
+					<span style="font-size: 12.0pt; font-family: Times New Roman">
+					A new window will appear after a short time showing that the 
+					driver was installed successfully.&nbsp; Click the Close button 
+					to finish the driver installation.</span></li>
+				</ol>
+      			</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="3">
+		<p align="center"><br>
+		<FONT SIZE="-1"><A HREF="http://www.scioncorp.com/pages/product_prices.htm">
+		Products</A>
+         | </FONT><A HREF="http://www.scioncorp.com/pages/technical_support.htm"><FONT SIZE="-1">
+		Support</FONT></A><FONT SIZE="-1">
+         | </FONT><A HREF="http://www.scioncorp.com/pages/contact_us.htm"><FONT SIZE="-1">
+		Contact Us</FONT></A><FONT SIZE="-1"> | </FONT><A HREF="http://www.scioncorp.com/pages/about_us.htm"><FONT SIZE="-1">
+		About Us</FONT></A><FONT SIZE="-1"> | </FONT><A HREF="http://www.scioncorp.com/pages/whats_new.htm"><FONT SIZE="-1">
+		What's New</FONT></A><FONT SIZE="-1"> | </FONT><A HREF="http://www.scioncorp.com/pages/image_gallery.htm"><FONT SIZE="-1">
+		Gallery</FONT></A><FONT SIZE="-1">
+         | </FONT><A HREF="http://www.scioncorp.com/index.htm" TARGET="_top"><FONT SIZE="-1">
+		Home</FONT></A><FONT SIZE="-1">
+         </FONT>
+		</td>
+	</tr>
+</table>
+	</div>
+</BODY>
+</HTML>

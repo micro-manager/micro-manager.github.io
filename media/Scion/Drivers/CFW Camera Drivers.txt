@@ -1,0 +1,16 @@
+This folder contains the drivers for all Scion CFW series cameras.
+
+FireWireDrivers.exe	Windows 2000 - XP 				Version 1.1
+SFWDrivers32.exe	Windows Vista 32 bit - Windows 7 32-Bit		Version 1.1
+SFWDrivers64.exe	Windows Vista 64 Bit - Windows 7 64 Bit		Version	2.1
+sfwdist.pkg.tar.gz	Mac OS 10.4 or higher				Version 2.4
+
+
+All Scion FireWire (IEEE-1394) cameras support the Windows 7 Operating System.  However, it is currently necessary to downgrade the Windows FireWire drivers to the Legacy version. 
+
+These steps are not necessary if the following is true: 
+CFW-1000 Series cameras with serial numbers higher than 10000012
+CFW-1300 Series cameras with serial numbers higher than 13006722 
+CFW-1600 Series cameras with serial numbers higher than 16000161
+
+Please see the technical_note_2.htm in this folder for the full instructions.

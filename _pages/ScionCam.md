@@ -90,7 +90,7 @@ Install the drivers for your platform:
 </td>
 <td markdown="1">
 
-[1.6MB](http://valelab.ucsf.edu/~nico/Scion/Drivers/SFWDrivers32.exe)
+[1.6MB](media/Scion/Drivers/SFWDrivers32.exe)
 
 </td>
 </tr>
@@ -102,7 +102,7 @@ Install the drivers for your platform:
 </td>
 <td markdown="1">
 
-[2MB](http://valelab.ucsf.edu/~nico/Scion/Drivers/SFWDrivers64.exe)
+[2MB](media/Scion/Drivers/SFWDrivers64.exe)
 
 </td>
 </tr>
@@ -114,16 +114,16 @@ Install the drivers for your platform:
 </td>
 <td markdown="1">
 
-[300kB](http://valelab.ucsf.edu/~nico/Scion/Drivers/sfwdist.pkg.Tar.gz)
+[300kB](media/Scion/Drivers/sfwdist.pkg.Tar.gz)
 
 </td>
 </tr>
 </table>
 
 If you are using Windows 7, please read this [technical
-note](http://valelab.ucsf.edu/~nico/Scion/Drivers/technical_note_2.htm).
+note](media/Scion/Drivers/technical_note_2.htm).
 You may need to download the [FireWire
-Drivers](http://valelab.ucsf.edu/~nico/Scion/Drivers/FireWireDrivers.exe).
+Drivers](media/Scion/Drivers/FireWireDrivers.exe).
 
 After installing the drivers, install the shared library for your
 platform:
@@ -138,7 +138,7 @@ platform:
 <td markdown="1">
 
 [Version
-2.3](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/SFW_Library.exe)
+2.3](media/Scion/Micro-Manager/SFW_Library.exe)
 
 </td>
 </tr>
@@ -151,19 +151,19 @@ platform:
 <td markdown="1">
 
 [Version
-2.4](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/sfwlibraries.pkg.Tar.gz)
+2.4](media/Scion/Micro-Manager/sfwlibraries.pkg.Tar.gz)
 
 </td>
 </tr>
 </table>
 
 The following files were also provided by Scion:
-[SFW\_MM\_13.exe](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/SFW_MM_13.exe)
+[SFW\_MM\_13.exe](media/Scion/Micro-Manager/SFW_MM_13.exe)
 Installs Camera support for Micro-Manager 1.3.40 Beta. Note: Existing
 Micro-Manager 1.3.40 installation required. Windows 2000 - Windows 7
 32-Bit Version 1.3.3
 
-[SFWMM\_Intel\_12.dmg](http://valelab.ucsf.edu/~nico/Scion/Micro-Manager/SFWMM_Intel_12.dmg)
+[SFWMM\_Intel\_12.dmg](media/Scion/Micro-Manager/SFWMM_Intel_12.dmg)
 Installs Version 1.2 Micro-Manager and Scion CFW Camera camera support.
 Mac OS 10.4 or higher (Intel only) Version 1.2
 
@@ -179,7 +179,7 @@ want that delay as it will slow down full frame capture.
 
 Martin Wessendorf made available a copy of [the installation CD that
 came with his
-camera](http://valelab.ucsf.edu/~nico/Scion/Scioninfodrivers.zip).
+camera](media/Scion/Scioninfodrivers.zip).
 
 {% include Listserv_Search text="Scion" %}
 
