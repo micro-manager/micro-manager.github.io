@@ -20,5 +20,12 @@ Laser**.
 19200 bps**. Anything else and you will not be able to communicate with
 it. The terminating characters are either CR or LF.
 
-{% include Listserv_Search text="Sapphire" %}
+
+Notes from Ernest van der Wee (2025):
+
+\- When using the Sapphire OEM USB controller, set the DelayBetweenCharsMs 
+to 500. If not, the readback of the power of the laser will be faulty. 
+This command interval is advised in the manual.
+See also: https://forum.image.sc/t/power-setting-readback-issue-sapphire-laser/115005?u=evdwee
+
 
