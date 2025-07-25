@@ -448,6 +448,7 @@ release](Download_Micro-Manager_Latest_Release).
     Controllers (USB-connected)
 -   [pgFocus](pgFocus) - Open Software/Hardware Focus
     Stabilization from [BIG](http://big.umassmed.edu)
+-   [PriorPureFocus](PriorPureFocus) - Hardware autofocus device from Prior
 -   [PyDevice](PyDevice) (Experimental) - Devices controlled by Python scripts
 -   [Rapp](Rapp) - Rapp UGA40 photobleaching/photoactivation
     unit
