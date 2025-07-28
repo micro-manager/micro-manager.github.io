@@ -23,9 +23,6 @@ it. The terminating characters are either CR or LF.
 
 Notes from Ernest van der Wee (2025):
 
-\- When using the Sapphire OEM USB controller, set the DelayBetweenCharsMs 
-to 500. If not, the readback of the power of the laser will be faulty. 
-This command interval is advised in the manual.
-See also: https://forum.image.sc/t/power-setting-readback-issue-sapphire-laser/115005?u=evdwee
+\- When using the Sapphire OEM USB controller, this adapter works fine. There is only one small problem: the readback of the power of the laser is faulty. The advised command interval (500 ms) has not been implemented (yet) in the device adapter. See also: https://forum.image.sc/t/power-setting-readback-issue-sapphire-laser/115005?u=evdwee
 
 
