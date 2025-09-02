@@ -14,17 +14,35 @@ layout: page
 
 ### Installation
 
-Download and install the [PlayerOne Camera Driver](https://player-one-astronomy.com/service/software/).
+1. Download and install the [PlayerOne Camera
+   Driver](https://player-one-astronomy.com/service/software/).
 
-Unpack the zip file and execute the .exe inside.
+   Unpack the zip file and execute the .exe inside.
 
-Connect the power adpater to the camera and the USB 3.0 to the computer.
+   Connect the power adpater to the camera and the USB 3.0 to the computer.
 
-The camera appears under "Imaging Devices" in the Windows Device Manager.
+   The camera appears under "Imaging Devices" in the Windows Device Manager.
 
-Copy the files [PlayerOneCamera.dll](https://svn.micro-manager.org/3rdpartypublic/PlayerOne/CameraSDK/lib/Win/x64/PlayerOneCamera.dll) and [PlayerOnePW.dll](https://svn.micro-manager.org/3rdpartypublic/PlayerOne/FilterWheelSDK/lib/Win/x64/PlayerOnePW.dll) to the Micro-Manager directory (usually C:\Program Files\Micro-Manager-2.0).  You can either download these files from the Micro-Manager svn repository using the links above, or you can install the Camera SDK and Filter Wheel SDK downloaded from the PlayerOne software site](https://player-one-astronomy.com/service/software/) and locate these files in the SDK installation.
+2. Download the PlayerOne Camera SDK and Filter Wheel SDK, also from the
+   [PlayerOne Software](https://player-one-astronomy.com/service/software/)
+   page.
 
-In the Micro-Manager Hardware Configuration Wizard, select `PlayerOne`.  If PlayerOne is listed as unavailable, it is likely that the dll files listed above are missing or that the camera is not connected. 
+   Unpack each, and copy the files `PlayerOneCamera.dll` and `PlayerOnePW.dll`
+   to the Micro-Manager directory (usually `C:\Program
+   Files\Micro-Manager-2.0`). The files are in the `lib\x64` folders within
+   each of the packages.
+
+   Note that you need both DLLs even if you are only going to use one or the
+   other device.
+
+3. In the Micro-Manager Hardware Configuration Wizard, select `PlayerOne`. If
+   PlayerOne is listed as unavailable, it is likely that the dll files listed
+   above are missing or that the camera is not connected.
+
+{% include notice icon="info" content="Since the Micro-Manager nightly build of
+**2025-09-02**, the camera's serial number will be displayed in the Hardware
+Configuration Wizard. **If you have an older configuration file, you will need
+to redo the configuration.**" %}
 
 
 ### Configuration
@@ -35,7 +53,9 @@ You may also want to make a preset group with the property "Cooler".  You only n
 
 ### Tested Models
 
-[ARES-M Pro](https://player-one-astronomy.com/product/ares-m-pro-usb3-0-mono-camera-imx533/), tested 2025-03-26
+- [Ares-M Pro](https://player-one-astronomy.com/product/ares-m-pro-usb3-0-mono-camera-imx533/), tested 2025-03-26
+- [Uranus-M Pro](https://player-one-astronomy.com/product/uranus-m-pro-usb3-0-mono-cooled-camera-imx585/)
+- [Uranus-C Pro](https://player-one-astronomy.com/product/uranus-c-pro-usb3-0-color-camera-imx585/)
 
 ### Speed data
 
@@ -47,6 +67,3 @@ PlayerOne ARES-M Pro speeds (RAW16, 0 ms exposure), ran live mode in MM and reco
 | 3008 x 500 | 117fps |
 | 3008 x 250 | 214 fps |
 | 3008 x 250, 5 ms exposures |  206 fps |
-
-
-
