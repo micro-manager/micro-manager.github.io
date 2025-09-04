@@ -18,7 +18,7 @@ Image file stacks will likely have the most widespread downstream compatibility 
 
 **Image file stack datasets** embed multiple images into one or more multipage TIFF, each of which can be up to 4GB in size. They also implement the OME-Tiff specification, which enables them to be imported into many downstream applications.
 
-**NDTiff datasets** also embed multiple images into a single file. This format contains many performance optimizations compared to Image stack datasets to enable high speed reading and writing and the ability, unlike the other formats, to organize images along arbitrary axes (not just channel/slice/frame/position). NDTiff is the default format of [Pycro-Manager]([url](https://pycro-manager.readthedocs.io/en/latest/))
+**NDTiff datasets** also embed multiple images into a single file. This format contains many performance optimizations compared to Image stack datasets to enable high speed reading and writing and the ability, unlike the other formats, to organize images along arbitrary axes (not just channel/slice/frame/position). NDTiff is the default format of [Pycro-Manager]([url](https://pycro-manager.readthedocs.io/en/latest/)). NDTiffs can also be easily loaded into MATLAB for analysis using a [MATLAB reader](https://github.com/dickinson-lab/NDTiff_MATLAB).
 
 
 The appropriate choice of format varies depending on the downstream use case. Important parameters are outlined in the table below.
