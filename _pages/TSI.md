@@ -137,6 +137,10 @@ available devices to find TSI-&gt;TSICam.
 After adding the TSICam device, proceed to next steps of the Hardware
 Configuration Wizard as described in the micro-manager documentation.
 
+As of 20250910, this device adapter supports multiple cameras.  In the Hardware Confirguation Wizard,
+add a TSI camera for each one you have.  Specify the serial number (zero will select the first one),
+making sure not to select the same serial number twice.
+
 ### Legacy Camera Support
 
 If you have one of the legacy camera models (consult Thorlabs support if
