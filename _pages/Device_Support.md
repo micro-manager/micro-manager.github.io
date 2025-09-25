@@ -170,6 +170,8 @@ release](Download_Micro-Manager_Latest_Release).
 -   [ASITiger](ASITiger) - ASI TG-1000 "Tiger" Controller
     (hub device, peripherals include multiple stage types, filter wheel,
     shutters, micro-mirrors, etc.)
+-   [Cairn Optospin UCSF](CairnOptospinUCSF) - Device adapter for the Cairn
+    Optospin filter wheel controller, written at UCSF.
 -   [ChuoSeiki\_MD5000](ChuoSeiki_MD5000) - ChuoSeiki MD5000
     series controller: 2-axis, single axis
 -   [ChuoSeiki\_QT](ChuoSeiki_QT) - ChuoSeiki QT series
