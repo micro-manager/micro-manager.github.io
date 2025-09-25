@@ -298,6 +298,14 @@ to continue even if some of the projects (e.g. device adapters that
 depend on libraries you don't have) fail to build. (But you will want to
 check that the ones you want did build. Look in the `build` directory.)
 
+Note that some terminals (like Windows Powershell based ones), will
+split the `-Dmm.build.failonerror` property, causing the build to fail
+on the first missing library. It is safer to surround the property with
+quotes to ensure proper working:
+```
+ant build "-Dmm.build.failonerror=false"
+```
+
 The command
 
 ```
