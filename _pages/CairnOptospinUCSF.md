@@ -83,13 +83,15 @@ Cairn Optospin filter wheel controller
 [Cairn](https://cairn-research.co.uk/)  makes filter wheel controllers sold under the name Optospin.  They have both [25mm](https://cairn-research.co.uk/product/optospin25/) and [32mm](https://cairn-research.co.uk/product/optospin32/) versions of 6 position filter wheels.  
 
 
-Cairn [has provided micro-manager device adapters in the past](https://cairn-research.co.uk/support-software/), however, they have so far not shared the source code for their device adapters and have been extremely slow to update their device adpater binaries for newer device API versions.  I therefore wrote a device adapter for their filter wheel controller from scratch so that it can be included in the Micro-Manager source code repository and included in the normal Micro-Manager installler.  
+Cairn [has provided micro-manager device adapters in the past](https://cairn-research.co.uk/support-software/), however, they have so far not shared the source code for their device adapters and have been extremely slow to update their device adapter binaries for newer device API versions.  I therefore wrote a device adapter for their filter wheel controller from scratch so that it can be included in the Micro-Manager source code repository and included in the normal Micro-Manager installler.  
 
 To use this device adapter, you will need to install the driver provided by Cairn and test your filter wheel using the Cairn Desktop application.
 
-In the Hardware Configuration Wizard, select the CairnOptospinUCSF (only available if the Windows OptoSpin Driver has been installed).  Select the serial number of the controller from the drop down box (you may need to click on the empty space in the dialog).  Although cumbersome once, this lets you work with multiple contorllers.  The Hardware Conifguration Wizard will detect how many filter wheels are available in your controller Select the serial number of the controller from the drop down box (you may need to click on the empty space in the dialog).  Although cumbersome once, this lets you work with multiple contorllers.  The Hardware Conifguration Wizard will detect how many filter wheels are available in your controller.  Select the ones you want to use (most likely all).
+In the Hardware Configuration Wizard, select the CairnOptospinUCSF (only available if the Windows OptoSpin Driver has been installed).  Select the serial number of the controller from the drop down box (you may need to click on the empty space in the dialog). The Hardware Conifguration Wizard will detect how many filter wheels are available in your controller Select the serial number of the controller from the drop down box (you may need to click on the empty space in the dialog).  Select the ones you want to use (most likely all).
 
 This device adapter only lets you switch the position of the filter wheel and does not support spinning or other stuff (but you can ask the author if you think you need that).
+
+Device and property names are identical to those used in the device adapter provided by Cairn, so you only need to change the name of the device adapter in the #devices section of your configuration file (using a text editor) and things should just work.
 
 
 --[Nico](/users/Nico) 10:18, 25 September 2025 (PDT)
