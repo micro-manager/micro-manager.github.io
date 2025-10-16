@@ -268,6 +268,16 @@ computer has no way of knowing its state). You can encode the tube lens
 switcher yourself following these instructions:
 [Encoding\_the\_Nikon\_TI\_Eclipse\_tube\_lens](Encoding_the_Nikon_TI_Eclipse_tube_lens).
 
+### TIRF
+
+As of 20251016, the TIRF device is a stage device rather than a generic
+device.  Previous configuration files should work without a problem,
+but you can now add the TIRF position to the Stage Control window
+allowing for easier manipulation of the position of the TIRF angle.
+Hint: I like adding the TIRF position to the System-Startup configuration
+and also like making presets with the left, middle and right position 
+to give everyone nice starting points.  
+
 ## How to report problems
 
 It is not unusual for bugs to depend on the version of Nikon software
