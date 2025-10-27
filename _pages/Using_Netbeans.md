@@ -78,3 +78,7 @@ To debug, choose **Debug** &gt; **Debug Project** from the menu. This should lau
 
 You can also Run>Build Project from the menu to produce a .jar file.  If you copy this .jar file into the `mmplugins` directory of your Micro-Manager installation, your plugin should be available when you run your local copy of Micro-Manager. If you only intend to ever use your plugin on the computer where you developed it, this is fine. However, if you want to use the plugin on multiple computers or distribute it to others, you need to follow [these instructions](Writing_plugins_for_Micro-Manager) to build a redistributable .jar file using Apache Ant. 
 
+**Troubleshooting note:** If you are running Windows 11, you may see an error in the Java Runtime Environment that begins with "EXCEPTION_ACCESS_VIOLATION". This is caused by an incompatibility between Windows 11 and a version of C++ runtime that ships with Java 8.  To fix it, do the following: 
+-   Navigate to your Java installation directory (e.g., C:\Program Files\Java\jdk1.8.0_202\bin)
+-   Look for the file MSVCP140.dll. Rename it to  MSVCP140.dll.bak.  This forces Java to use the system-installed version instead.
+-   Do the same for VCRUNTIME140.dll, if present. 
