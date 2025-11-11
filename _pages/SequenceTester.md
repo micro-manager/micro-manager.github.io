@@ -168,9 +168,42 @@ of the device.
 
 ## Autofocus simulation
 
-(To be documented.) Caveat: the autofocus (actually hardware focus-maintenance)
-behavior simulated may not represent all possible behaviors of real devices.
-More work may be needed.
+The `TAutofocus-{0,1}` devices simulate "autofocus" devices, which model devices
+that provide hardware-based focus maintenance.
+
+The TAFStage devices (`TAFStage-{0,1}`) are Z-stages that return `true` from
+MMCore's `isContinuousFocusDrive()` query. These are useful for testing code
+that needs to distinguish between regular Z-stages and focus-maintenance
+"offset" stages. (BUG: These should be linked to the current focus offset of the
+corresponding `TAutofocus-{0,1}` device, but they aren't as of this writing).
+
+Caveat: the autofocus behavior simulated does not represent all possible
+behaviors of real hardware focus maintenance devices. This is an area in which
+we do not have good abstraction between vendor specific behavior.
+
+The autofocus device (`TAutofocus-{0,1}`) provides the following user-accessible
+properties:
+
+- `ContinuousFocus` (On/Off): Enable or disable continuous focus operation.
+  Equivalent to MMCore's `enableContinuousFocus()` and
+  `isContinuousFocusEnabled()`.
+- `LinkedZStage`: Specifies the device name (N.B., not label) of a Z-stage to
+  _link_ to (typically `TZStage-0` or `TZStage-1`).
+- `SetZDisablesContinuousFocus` (Yes/No): When set to `Yes`, any call to move
+  the _linked_ Z-stage will automatically disable continuous focus. This
+  simulates the behavior of some microscopes that turn off focus maintenance
+  when the user or acquisition code manually moves the focus.
+
+In addition to the device properties, the following internal parameters are
+recorded in the test output:
+
+- `Offset`: The autofocus offset value, accessed via MMCore's
+  `setAutoFocusOffset()` and `getAutoFocusOffset()`.
+- `ContinuousFocusEnabled`: Records the continuous focus on/off state.
+- `FullFocus`: A one-shot parameter that records when MMCore's `fullFocus()`
+  function is called on the autofocus device.
+- `IncrementalFocus`: A one-shot parameter that records when MMCore's
+  `incrementalFocus()` function is called on the autofocus device.
 
 ## Format of the MsgPack test data
 
