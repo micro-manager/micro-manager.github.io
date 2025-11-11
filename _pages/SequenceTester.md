@@ -83,12 +83,12 @@ separate section below for the machine-readable format.
 
 ## Recorded parameters
 
-The parameters recorded in the `State` and `history` section correspond to the
+The parameters recorded in the `State` and `History` section correspond to the
 state modeled by each device type. Device name (N.B., not device label) and
 parameter name are separated by a comma (`,`).
 
 Some parameters (such as `TCamera-0,Binning` or `TShutter-0,ShutterState`) map
-to Micro-Manager properties, but some (such as `TSwitcher-0,GeteOpen` or
+to Micro-Manager properties, but some (such as `TSwitcher-0,GateOpen` or
 `TZStage-0,ZPositionUm`) do not.
 
 ### The `Busy` parameter
@@ -116,7 +116,7 @@ completion, the device's `Busy` parameter will have a non-zero value in the
 move but not waiting for the stage device before acquiring an image.
 
 (Note that such bugs are often hard to find when testing with real hardware or
-DemoCamera, because not all devices become busy on every action begin
+DemoCamera, because not all devices become busy on every action being
 initiated---and even if they did, it's not always obvious from the resulting
 images that the action had not fully completed: for example, failure to wait
 for focus movement to finish during a Z stack may not always be obvious in the
@@ -124,7 +124,7 @@ images.)
 
 ## Real (wall clock) time is not simulated
 
-The SequenceTester devices intentially do **not** simulate real time behavior.
+The SequenceTester devices intentionally do **not** simulate real time behavior.
 That is, actions that would take significant time in real devices take almost
 no time, and the devices never sleep to simulate the passage of time.
 
