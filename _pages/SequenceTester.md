@@ -83,12 +83,12 @@ separate section below for the machine-readable format.
 
 ## Recorded parameters
 
-The parameters recorded in the `State` and `history` section correspond to the
+The parameters recorded in the `State` and `History` section correspond to the
 state modeled by each device type. Device name (N.B., not device label) and
 parameter name are separated by a comma (`,`).
 
 Some parameters (such as `TCamera-0,Binning` or `TShutter-0,ShutterState`) map
-to Micro-Manager properties, but some (such as `TSwitcher-0,GeteOpen` or
+to Micro-Manager properties, but some (such as `TSwitcher-0,GateOpen` or
 `TZStage-0,ZPositionUm`) do not.
 
 ### The `Busy` parameter
@@ -116,7 +116,7 @@ completion, the device's `Busy` parameter will have a non-zero value in the
 move but not waiting for the stage device before acquiring an image.
 
 (Note that such bugs are often hard to find when testing with real hardware or
-DemoCamera, because not all devices become busy on every action begin
+DemoCamera, because not all devices become busy on every action being
 initiated---and even if they did, it's not always obvious from the resulting
 images that the action had not fully completed: for example, failure to wait
 for focus movement to finish during a Z stack may not always be obvious in the
@@ -124,7 +124,7 @@ images.)
 
 ## Real (wall clock) time is not simulated
 
-The SequenceTester devices intentially do **not** simulate real time behavior.
+The SequenceTester devices intentionally do **not** simulate real time behavior.
 That is, actions that would take significant time in real devices take almost
 no time, and the devices never sleep to simulate the passage of time.
 
@@ -168,9 +168,42 @@ of the device.
 
 ## Autofocus simulation
 
-(To be documented.) Caveat: the autofocus (actually hardware focus-maintenance)
-behavior simulated may not represent all possible behaviors of real devices.
-More work may be needed.
+The `TAutofocus-{0,1}` devices simulate "autofocus" devices, which model devices
+that provide hardware-based focus maintenance.
+
+The TAFStage devices (`TAFStage-{0,1}`) are Z-stages that return `true` from
+MMCore's `isContinuousFocusDrive()` query. These are useful for testing code
+that needs to distinguish between regular Z-stages and focus-maintenance
+"offset" stages. (BUG: These should be linked to the current focus offset of the
+corresponding `TAutofocus-{0,1}` device, but they aren't as of this writing).
+
+Caveat: the autofocus behavior simulated does not represent all possible
+behaviors of real hardware focus maintenance devices. This is an area in which
+we do not have good abstraction between vendor specific behavior.
+
+The autofocus device (`TAutofocus-{0,1}`) provides the following user-accessible
+properties:
+
+- `ContinuousFocus` (On/Off): Enable or disable continuous focus operation.
+  Equivalent to MMCore's `enableContinuousFocus()` and
+  `isContinuousFocusEnabled()`.
+- `LinkedZStage`: Specifies the device name (N.B., not label) of a Z-stage to
+  _link_ to (typically `TZStage-0` or `TZStage-1`).
+- `SetZDisablesContinuousFocus` (Yes/No): When set to `Yes`, any call to move
+  the _linked_ Z-stage will automatically disable continuous focus. This
+  simulates the behavior of some microscopes that turn off focus maintenance
+  when the user or acquisition code manually moves the focus.
+
+In addition to the device properties, the following internal parameters are
+recorded in the test output:
+
+- `Offset`: The autofocus offset value, accessed via MMCore's
+  `setAutoFocusOffset()` and `getAutoFocusOffset()`.
+- `ContinuousFocusEnabled`: Records the continuous focus on/off state.
+- `FullFocus`: A one-shot parameter that records when MMCore's `fullFocus()`
+  function is called on the autofocus device.
+- `IncrementalFocus`: A one-shot parameter that records when MMCore's
+  `incrementalFocus()` function is called on the autofocus device.
 
 ## Format of the MsgPack test data
 
