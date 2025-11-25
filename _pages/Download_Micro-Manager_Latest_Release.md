@@ -40,12 +40,41 @@ fixed already.
 </tr>
 </table>
 
+## Micro-Manager 2.0 Nightly Builds (Recommended)
+
+> **These are the versions most users should download.**  
+> Nightly builds are almost always stable and include the newest features and bug fixes.
+
+### Windows
+- [Download Micro-Manager 2.0 (Windows)](https://download.micro-manager.org/nightly/2.0/Windows/)
+
+### Mac
+- [Download Micro-Manager 2.0 (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
+
+{% include notice icon="info" content="Due to security features of macOS 10.12
+and later, Micro-Manager may not start when opening ImageJ.app. To circumvent
+this, within the Micro-Manager folder in Applications, hold command and drag
+ImageJ onto the desktop. Then hold command and drag it back in. Then try
+running again. In addition, you need to CTRL-click or right-click and select
+Open (instead of simply double-clicking) the first time you open it.  See
+[Installation Notes](Micro-Manager_Installation_Notes)." %}
+
+### Linux
+- Under GNU/Linux platforms, you will need to [compile Micro-Manager from source](/Building_and_debugging_Micro-Manager_source_code).
+
+### Older nightly builds
+
+  - [Version 2.0-gamma
+    (Windows)](https://download.micro-manager.org/nightly/2.0.0-gamma/Windows/)
+    (you most likely want the 64-bit version)
+  - [Version 2.0-gamma
+    (Mac)](https://download.micro-manager.org/nightly/2.0.0-gamma/Mac/)
 
 ## Micro-Manager 2.0.0 (July 13, 2021)
 
 It is highly, highly recommended to use the latest 
 [nightly build](https://micro-manager.org/Micro-Manager_Nightly_Builds) 
-instead of the release build.  These have 3 more years of development and 
+instead of the release build.  These have many more years of development and 
 bug fixes and have proven to be very stable. For historic purposes we leave
 the release build up here.
 
@@ -62,17 +91,6 @@ other requirements.
 Requires Mac OS X 10.5 or greater. Device drivers may have other
 requirements.
 
-{% include notice icon="info" content="Due to security features of macOS 10.12
-and later, Micro-Manager may not start when opening ImageJ.app. To circumvent
-this, within the Micro-Manager folder in Applications, hold command and drag
-ImageJ onto the desktop. Then hold command and drag it back in. Then try
-running again. In addition, you need to CTRL-click or right-click and select
-Open (instead of simply double-clicking) the first time you open it.  See
-[Installation Notes](Micro-Manager_Installation_Notes)." %}
-
-  - Under GNU/Linux platforms, you will need to [compile micro-manager from
-    source](/Building_and_debugging_Micro-Manager_source_code).
-
 ### Partial list of differences with 1.4
 
   - Completely re-designed API
@@ -84,31 +102,16 @@ Open (instead of simply double-clicking) the first time you open it.  See
   - ClearVolume 3D viewer integration
   - Export as displayed to ImageJ
 
-## Nightly Builds
+## Micro-Manager 1.4 Nightly Builds
 
-Nightly builds are almost always stable and a better choice for most users than
-the latest official release.
-
-  - [Version 2.0
-    (Windows)](https://download.micro-manager.org/nightly/2.0/Windows/)
-    (you most likely want the 64-bit version; 32-bit has been discontinued)
-  - [Version 2.0
-    (Mac Intel 64-bit)](https://download.micro-manager.org/nightly/2.0/Mac/)
-
-Older nightly builds:
-
-  - [Version 2.0-gamma
-    (Windows)](https://download.micro-manager.org/nightly/2.0.0-gamma/Windows/)
-    (you most likely want the 64-bit version)
-  - [Version 2.0-gamma
-    (Mac)](https://download.micro-manager.org/nightly/2.0.0-gamma/Mac/)
-  - [Version 1.4 (Windows)
-    2021-2025](https://download.micro-manager.org/nightly/1.4/Windows/) (pay
+### Windows
+- [Download Micro-Manager 1.4 2021-2025 (Windows)](https://download.micro-manager.org/nightly/1.4/Windows/) (pay
     attention to 32-bit or 64-bit, both are listed but you need the one
     matching your Windows OS)
-  - [Version 1.4 2016-2021
-    (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
 
+### Mac
+- [Download Micro-Manager 1.4 2016-2021 (Mac)](https://download.micro-manager.org/nightly/1.4/Mac/)
+    
 ## Micro-Manager 1.4.23 (June 30, 2021)
 
   - [Windows 64-bit](https://download.micro-manager.org/release/1.4/Windows/MMSetup_64bit_1.4.23.exe),
