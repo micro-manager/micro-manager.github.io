@@ -40,6 +40,8 @@ release](Download_Micro-Manager_Latest_Release).
     (Upright)
 -   [OlympusIX83](OlympusIX83) - Olympus IX83 motorized
     microscope
+-   [EvidentIX85](EvidentIX85) - Evident (Olympus) IX85 motorized
+    microscope (three adapters: EvidentIX85, EvidentIX85Win, EvidentIX85XYStage)
 -   [OpenFlexure](OpenFlexure) - OpenFlexure Low-cost microscope
 -   [ZeissCAN](ZeissCAN) - Zeiss CAN-bus (not CAN29)
     compatible microscopes (Axiovert 200m, Axioplan2)

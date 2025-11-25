@@ -14,7 +14,7 @@ title: News
 }
 </style>
 
-This page shows the latest announcements and updates about µManager.
+The latest announcements and updates about µManager.
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 
 <div class="news-grid" markdown="1">
