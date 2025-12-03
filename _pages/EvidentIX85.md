@@ -113,7 +113,7 @@ BSD
 </td>
 <td markdown="1">
 
-2025-12-??
+Will be available soon...
 
 </td>
 </tr>
@@ -166,14 +166,13 @@ The EvidentIX85Win adapter provides full functionality including ZDC autofocus s
 
 **Obtaining the SDK:**
 
-Contact Evident (formerly Olympus) to request the IX85 SDK files (IX5_SDK). The SDK is not publicly available and must be obtained directly from Evident.
+Download the SDK zip file from [here](https://svn.micro-manager.org/3rdpartypublic/Evident/IX5_SDK_v1/IX5_Library.zip).  
 
 **SDK Installation:**
 
-1. Extract the SDK files to a location on your computer (e.g., `C:\Evident\IX5_SDK_v1`)
-2. In the Hardware Configuration Wizard, set the "SDK_DLL_Path" property to point to the SDK DLL file (e.g., `C:\Evident\IX5_SDK_v1\IX-Library\msl_pm_ix85.dll`)
+1. Extract the zip file in your micro-manager installation directory.  This should result in a directory "IX5_Library" that contains the SDK files.
+2. In the Hardware Configuration Wizard, "SDK_DLL_Path" property should already to point to the SDK DLL file (`IX5_Library\msl_pm_ix85.dll`). If you decide to place the SDk elsewher, adjust the path (e.g., `C:\Evident\IX5_SDK_v1\IX-Library\msl_pm_ix85.dll`)
 
-The adapter will automatically detect available COM ports when creating a configuration.
 
 ## Configuration
 
@@ -226,7 +225,7 @@ The EvidentIX85Win adapter provides full support for the ZDC (Zero Drift Compens
 
 **Workflow Modes:**
 
-1. **Measure Offset** - Measures the Z-offset between current focus position and ZDC focus
+1. **Measure Offset** - Measures the Z-offset between current focus position and ZDC focus.  This will also update the position of the "ZDCVirtualOffset".
 2. **Find Focus with Offset** - Finds focus and applies a measured offset
 3. **Continuous Focus** - Maintains continuous focus tracking
 
@@ -237,6 +236,10 @@ The ZDC system requires initialization for each objective. The adapter automatic
 **Offset Lens:**
 
 The ZDC offset lens can be controlled independently as a stage device, allowing fine adjustment of the ZDC focal plane.
+
+**ZDC Virtual Offset:**
+
+This virtual Z-drive can be used to record the offset at various locations.  Record the ZDCVirtualOffset mode using the AF-Workflow-Mode setting "Find-Focus-With-Offset", and make sure to record the position of the ZDCVirtualOffset in the posiiom list.
 
 ### Nosepiece
 
