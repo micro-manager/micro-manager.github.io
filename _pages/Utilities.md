@@ -27,7 +27,8 @@ layout: page
 <td><p>Multi-Shutter, Multi-Camera<br />
 DA-Shutter, DA-Z-Stage, DA--XY-Stage<br />
 Autofocus-Stage<br />
-State-Device-Shutter</p></td>
+State-Device-Shutter<br />
+Autofocus (controls hardware autofocus)</p></td>
 </tr>
 </table>
 
@@ -67,19 +68,16 @@ work).
     the [ Configuration
     Guide](Micro-Manager_Configuration_Guide#startup-presets).
 4.  Synchronizing cameras requires wiring the exposure digital output of
-    one camera (namely, the "Master" camera) to the trigger input of
-    other cameras (the "Slave" camera(s)).
-
-    {% include notice icon="info" content="The Master must be the last numbered
-    `Physical Camera`, since several frames can be acquired by one
-    camera before the next camera starts acquiring. e.g. Set `Physical
-    Camera 1` to Slave, and `Physical Camera 2` to Master." %}
+    one camera (namely, the "Main" camera) to the trigger input of
+    other cameras (the "Follower" camera(s)).
 5.  To rotate or mirror images, launch the [Image Flipper
     plugin](Image_Flipper). The plugin only works while it is
     open. Also after restarting Micro-Manager, to apply mirror and flip
     settings, one has to click through the top listbox of the plugin and
     select each camera that has flip and/or rotate settings enabled to
     load its settings.
+
+{% include notice icon="info" content="The Main camera must be the last numbered `Physical Camera`, since several frames can be acquired by one camera before the next camera starts acquiring. e.g. Set `Physical Camera 1` to Follower, and `Physical Camera 2` to Main." %}
 
 Going "Live" using the Multi-Camera adapter controlling large sensor
 cameras can crash Micro-Manager in versions earlier than 1.4.16.
@@ -161,6 +159,22 @@ easier to use the "invert" property.
 Can be used to operate the 'offset' function of a hardware autofocus
 device (such as the Nikon Perfect Focus and Zeiss Definite Focus) as a
 Z-drive.
+
+## Autofocus
+
+Combines a Shutter, camera and Z-Stage into a hardware autofocus.  For this to work, the shutter must control a light source (such as an infra-red LED or laser) that reflects of the sample carrier and causes a reflection on the camera image that changes position when the Z-stage moves.  Configuring this device involves multiple steps:
+
+1. Define the "Devices" (Devices-Camera, Devices_Shutter, Devices_FocusDrive). Add these properties to your System-Startup configuration as these will need to be set every time.
+
+2. Before you can use the autofocus it needs to be calibrated.  First determine what Camera_ settings you want to use (ROI-X, ROI_Y, ROI_Height, ROI_Width, Binning, Exposure_Ms).  You can do so by taking images with the autofocus camera and shutter while you are roughly in focus with the objective that you want to use and experimenting with these settings in the normal MM UI.  Then, set the desired cliabration properties, such as Precision (distance in microns away from the ideal focus point that will be accepted as in focus), SpotSelection (Bottom: bottom of the sample vessel, Top: top of the sample vessel), Max_Z (maximum Z position of the ZStage, beyond which the autofocus will not venture).  Select a number for "Settings" (you can have many calibrations, and switch between them, for instance when you switch objectives), and "SettingsDescription" which will provide a name for your to remember what these Settings were.  Then, from the property "Calibrate", select "Start".
+
+3. Calibrations are stored in a file "Util-Autofocus.json".
+
+4. The autofcous will operate in one-shot mode  and in continuous focus mode, in which case it will update the status property of the autofocus automatically.
+
+5. You can use the Utilities-Autofcous-Offset device to set offsets from the in focus position.  
+
+6. You can use the property "MeasureOffset" to measure the offset between the current position and the position that is in focus according to your calibration.
 
 ## State-Device-Shutter
 
