@@ -52,7 +52,7 @@ Freeware. Source code cannot be made available, sorry.
 </td>
 <td markdown="1">
 
-Windows 32-bit and 64-bit
+Windows
 
 </td>
 </tr>
@@ -75,8 +75,52 @@ you probably need Ti2 Control 1.2.0.
 
 ### Troubleshooting
 
+- Make sure you power on the microscope stand _before_ you power on the
+  controller box.
 - If `NikonTi2` only shows as `NikonTi2 (unavailable)` in the config wizard, ensure that you have copied the `Ti2_Mic_Driver.dll` into the same directory as the `mmgr_dal_NikonTi2.dll` library and have *not* renamed `Ti2_Mic_Driver.dll` (and that it is from the currently installed version of the Nikon software).
 - If the `NikonTi2` folder is available in the config wizard, but you only see the `*Ti2-Simulator` device available:
    - Make sure that your microscope is powered on and connected to the computer (you may have to restart micro-manager if you powered it on after starting micro-manager).
    - Make sure the SDK can control your microscope *without* going through micro-manager, for example by running `C:\Program Files\Nikon\Ti2-SDK\bin\Ti2Sample.exe` and confirming that your microscope responds to button presses.
    - If all goes well, you should see one or more devices in addition to the Ti2-Simulator, for example a Ti2-Eclipse microscope may appear as `*Ti2-E__0: Nikon Ti2 microscope`.
+
+### D-LEDI fluorescence illuminator
+
+(Not to be confused with the older C-LEDFI, called EpiLED in Micro-Manager.)
+
+A D-LEDI can be controlled (since nightly build 2025-12-23). It must be plugged
+into the Ti2-E controller (TI2-CTRE). A direct USB cable from the D-LEDI to the
+computer will _not_ work.
+
+Make sure to power on the D-LEDI _before_ you power on the Ti2-E controller;
+otherwise the device will not be recognized.
+
+The D-LEDI shows up as "DLED" in Micro-Manager.
+
+Micro-Manager always puts the D-LEDI into the so-called "async" mode, which
+means that the on/off of the 4 wavelength channels are controlled
+independently.
+
+It is recommended not to use the remote control pad while contrlling from
+Micro-Manager. Micro-Manager does not have a way to immediately know of changes
+made on the control pad. (Currently Micro-Manager will overwrite changes made
+on the control pad on the next command, but this behavior may change in the
+future.)
+
+External trigger mode can be turned on from Micro-Manager. When in trigger
+mode, commands that turn on/off the LEDs will not work (they will return an
+error). Intensity control remains available.
+
+The pinout for the D-Sub 15 pin trigger (TTL) connector is in the D-LEDI
+manual:
+
+- Pins 1-4 (input): turn LEDs 1-4 on (H) or off (L).
+
+- Pin 5 (input): turn on all LEDs.
+
+- Pins 6, 7: ground.
+
+- Pins 8-10: do not connect.
+
+- Pins 11-14 (output): reports on (H) or off (L) for LEDs 1.4.
+
+- Pin 15 (output): H if any LED is on; L if all are off.
