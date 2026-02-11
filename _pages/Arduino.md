@@ -62,6 +62,41 @@ connection of a DA chip and requires constructions of a
 2](/media/Micro-manager_bb.png "fig:Figure: Functional pinout set by firmware version 2")
 ([Image source .svg file](/media/files/Micro-manager_bb.svg.tar.gz))
 
+## Pin Assignments
+
+Each firmware version maps functions to different physical pins. The
+Teensy boards offer more channels (8 analog outputs, 8 digital outputs)
+compared to the original Arduino (up to 4 analog outputs, 6 digital
+outputs).
+
+### Arduino Uno
+
+| Function | Pins | Notes |
+|---|---|---|
+| Trigger input | 2 | TTL input for blanking/sequencing |
+| Digital outputs | 8-13 | 6 pins, directly mapped to PORTB |
+| Analog outputs | 3 (data), 4 (clock), 5-6 (CS) | Directly mapped to the TLV5618/TLV56x8 chip |
+| Analog inputs | A0-A5 | 6 channels, 10-bit ADC |
+
+### Teensy 3.5/3.6
+
+| Function | Pins | Notes |
+|---|---|---|
+| Trigger input | 2 | TTL input for blanking/sequencing |
+| Analog outputs | A21, A22 (channels 0-1) | True 12-bit DAC |
+| Analog outputs | 3-8 (channels 2-7) | 12-bit PWM |
+| Digital outputs | 9-16 | 8 pins |
+| Analog inputs | 17-22 | 6 channels (A3-A8), 10-bit ADC |
+
+### Teensy 4.0/4.1
+
+| Function | Pins | Notes |
+|---|---|---|
+| Trigger input | 0 | TTL input for blanking/sequencing |
+| Analog outputs | 1-8 | 8 channels, all 12-bit PWM |
+| Digital outputs | 9-16 | 8 pins |
+| Analog inputs | 17-22 | 6 channels (A3-A8), 10-bit ADC |
+
 ## Installation
 
 ### Arduino Software (IDE)
@@ -76,13 +111,30 @@ Arduino.
 
 ### Firmware
 
-For the Arduino Uno and similar boards, download the [firmware source
-code](https://github.com/micro-manager/mmCoreAndDevices/blob/main/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.ino).
-Bonno Meddens wrote compatible firmware for the ESP32, ItsyBitsy M4, and
-Teensy 3.x boards that can be found
-[here](https://github.com/bonnom/Micro-manager-Arduino). Copy the
-firmware into a blank Arduino Sketch window. Send to the Arduino, and
-your Arduino is programmed to work with Micro-Manager.
+Firmware source code is available for three board families:
+
+- **Arduino Uno** and similar ATmega328-based boards: [AOTFcontroller.ino](https://github.com/micro-manager/mmCoreAndDevices/blob/main/DeviceAdapters/Arduino/AOTFcontroller/AOTFcontroller.ino)
+- **Teensy 3.5/3.6**: [AOTFController_Teensy35_36.ino](https://github.com/micro-manager/mmCoreAndDevices/blob/main/DeviceAdapters/Arduino/AOTFController_Teensy35_36/AOTFController_Teensy35_36.ino)
+- **Teensy 4.0/4.1**: [AOTFController_Teensy40_41.ino](https://github.com/micro-manager/mmCoreAndDevices/blob/main/DeviceAdapters/Arduino/AOTFController_Teensy40_41/AOTFController_Teensy40_41.ino)
+
+Copy the appropriate firmware into a blank Arduino/Teensyduino Sketch
+window. Send to the board, and it is programmed to work with
+Micro-Manager.
+
+#### Arduino Uno DAC support
+
+The Arduino Uno firmware supports optional external DAC chips for true
+analog output. To enable DAC support, uncomment the appropriate
+`#define` near the top of the firmware source:
+
+- `#define TLV5618` -- for a single TLV5618 (2 channels, using pin 5
+  as chip select)
+- `#define TLV56x8` -- for dual TLV56x8 chips (4 channels, using pins
+  5 and 6 as chip selects)
+
+If neither is defined, the firmware reports 0 DA channels and the
+DAC devices will not appear in Micro-Manager. See [DAC](#dac) below
+for wiring details.
 
 ## Hardware Configuration Wizard
 
@@ -118,7 +170,7 @@ queries the Arduino every second).
 | Arduino-Shutter  | Toggles the digital outputs pattern across pins 8 to 13. Set all pins off when the shutter is closed, and restores the value set in `Switch-State` when the shutter is opened.                                                                                                           |
 | Arduino-Input    | Reports, both, the digital and analog (0-1023) state of the analog input pins 0 to 5.                                                                                                                                                                                                    |
 | Arduino-Magnifier    | Used to couple a change in the digital input to a change in magnification.  Required Arduino-Input.  Provide the magnification for each digital state in the Syste,-Startup group.                                                                                                                                                                                                    |
-| Arduino-DAC{1,2} | (Not usually used) Reserved for TLV5618 AOTF Peripheral. TLV5618 is a chip acting as a DAC (digital-to-analog converter) that can be added as a shield to the Arduino. This way, the Arduino can be used to control analog devices such as AOTF or stages. See [DAC](#dac). |
+| Arduino-DAC{1-8} | Analog output channels. On Arduino Uno, requires an external DAC chip (TLV5618 or TLV56x8) and the corresponding `#define` in the firmware; see [DAC](#dac). On Teensy boards, all 8 channels are available using built-in DAC and/or PWM. The firmware reports the number of available channels, and only those will appear in Micro-Manager. |
 
 | Initialization Properties | Description                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------|
