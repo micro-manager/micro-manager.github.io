@@ -87,6 +87,7 @@
     <li><a href="/DeviceAdapterTutorial">Writing device adapters</a></li>
 
     <li><a href="/Hub_Device_Adapters">Hub Device Adapters</a></li>
+    <li><a href="/Camera_Device_Adapters">Camera Device Adapters</a></li>
 
     <li><a href="/Device_Codebase_Design">Device Codebase Design</a></li>
 
