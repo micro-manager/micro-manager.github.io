@@ -404,8 +404,33 @@ int MyNewCameraDevice::OnGain(MM::PropertyBase* pProp, MM::ActionType eAct)
 ```
 
 
+### Standard Properties
 
+Micro-Manager includes a system of "standard properties" which ensures consistent property naming and behavior across different device adapters. These properties are prefixed with `"api//"` to distinguish them from regular properties.
 
+Benefits of standard properties include:
+- Consistent naming and behavior across different device adapters
+- Automatic validation of property types and allowed values
+- Standardized access for applications using the API
+
+For device adapter developers, standard properties work like regular properties but with specialized creation methods for each standard property.
+
+#### Implementing Standard Properties
+To implement a standard property in your device adapter:
+
+1. Determine if your device type supports the standard property (each property is linked to specific device types). An up to date list of standard properties can be found in [MMDevice.h](https://github.com/micro-manager/mmCoreAndDevices/blob/main/MMDevice/MMDevice.h)
+2. Use the dedicated creation method for that standard property
+
+For example, a camera device adapter supporting trigger functionality would use:
+
+```cpp
+// In Initialize() method
+int ret = CreateTriggerTypeStandardProperty("Internal", pAct);
+if (ret != DEVICE_OK)
+   return ret;
+```
+
+When implementing standard properties, consider whether your device's functionality truly matches the standardized definition. If it doesn't, it's better to create a custom property instead of using a standard property in a non-standard way.
 
 
 ## Constructor and destructor
