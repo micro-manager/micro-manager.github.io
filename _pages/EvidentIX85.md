@@ -113,7 +113,7 @@ BSD
 </td>
 <td markdown="1">
 
-Will be available soon...
+20260218 (Feb. 18th, 2026)
 
 </td>
 </tr>
