@@ -53,7 +53,7 @@ using the UGA-42.
 
 ## Installation
 
-The UGA-42 requires the files "obsTools.dll" and "ROE UGA-42 SDK.DLL" in the micro-manager installation directory.  The code was build agains UGA-42 SDK_1139, and it can not be guaranteed that other versions will work.  If you do not have these files, please contact Rapp support and request them.  The Rapp UGA42 should be auto-detected.  Leave the debug property set to false (setting it to true will dramatizally slow down communication with the device).  This device adapter currently only supports one UGA42.
+The UGA-42 requires the files "obsTools.dll" and "ROE UGA-42 SDK.DLL" in the micro-manager installation directory.  The code was build agains UGA-42 SDK_1139, and it can not be guaranteed that other versions will work.  You can download these files from our [svn repository](https://svn.micro-manager.org/3rdpartypublic/Rapp/UGA42_dlls.zip).  The Rapp UGA42 should be auto-detected.  Leave the debug property set to false (setting it to true will dramatizally slow down communication with the device).  This device adapter currently only supports one UGA42.
 
 
 ## See Also
