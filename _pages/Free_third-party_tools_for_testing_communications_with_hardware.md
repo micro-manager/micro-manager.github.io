@@ -23,7 +23,7 @@ section: Programming:Device Adapters
 -   [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
     is mainly intended for ssh communication, but can also be used to
     communicate through serial ports. (Works on Windows 7.)
--   [TeraTerm](http://ttssh2.sourceforge.jp/index.html.en) is another
+-   [TeraTerm](https://teratermproject.github.io/index-en.html) is another
     serial terminal.
 -   [Realterm](http://realterm.sourceforge.net/) is designed for testing
     and is therefore good for debugging hardware, particularly if the

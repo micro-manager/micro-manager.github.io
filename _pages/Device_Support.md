@@ -386,6 +386,7 @@ release](Download_Micro-Manager_Latest_Release).
 -   [Oxxius](Oxxius) - Oxxius Laser Controller
 -   [Oxxius\_combiner](Oxxius_combiner) - Oxxius combiner;
     hub for multiple laser sources
+-   [RappLasers](RappLasers) - Rapp laser controllers
 -   [PolychromeV](PolychromeV) - Illumination system from
     Till Photonics
 -   [Prairie Aurora Laser
@@ -455,8 +456,10 @@ release](Download_Micro-Manager_Latest_Release).
 -   [PriorPureFocus](PriorPureFocus) - Hardware autofocus device from Prior
 -   [PyDevice](PyDevice) (Experimental) - Devices controlled by Python scripts
 -   [ReflectorFocus](ReflectorFocus) - Hardware autofocus combining shutter, camera, and Z-stage
--   [Rapp](Rapp) - Rapp UGA40 photobleaching/photoactivation
+-   [Rapp](Rapp) - Rapp UGA-40 photobleaching/photoactivation
     unit
+-   [Rapp_UGA42](Rapp_UGA42) - Rapp UGA-42 galvo scanner for
+    phototargeting
 -   [SimpleAutofocus](SimpleAutofocus) - Image-based
     autofocus software 'device'.
 -   [SpectralLMM5](SpectralLMM5) - Spectral laser line
