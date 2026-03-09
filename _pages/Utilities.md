@@ -27,7 +27,8 @@ layout: page
 <td><p>Multi-Shutter, Multi-Camera<br />
 DA-Shutter, DA-Z-Stage, DA--XY-Stage<br />
 Autofocus-Stage<br />
-State-Device-Shutter</p></td>
+State-Device-Shutter<br />
+Stage-State-Device</p></td>
 </tr>
 </table>
 
@@ -166,4 +167,37 @@ shutter. To use it you will need to set the "State Device Shutter"
 property to the desired state device. The state device should have a
 property that sets the "closed" position.
 
-{% include Listserv_Search text="Utilities" %}
+## Stage-State-Device
+
+Converts a (single-axis) stage device into a discrete state (switcher) device.
+For example, a linear stage that moves a mirror in and out, or a filter wheel
+controlled by a generic motion controller.
+
+**Pre-initialization properties:**
+
+- **NumberOfPositions** — the number of engaged positions (2–64).
+- **Position Mode** — choose `Equally Spaced` or `Individual` to determine
+  how stage coordinates are specified.
+
+**Setup:**
+
+Set the `PhysicalStage` property to a loaded stage device.
+
+In `Equally Spaced` mode, set `Position0(um)` (the coordinate for position 0)
+and `PositionSpacing(um)` (the distance between consecutive positions). In
+`Individual` mode, set `Position-0(um)`, `Position-1(um)`, etc. to specify the
+coordinate for each position independently.
+
+All of these settings are best added to the `System`-`Startup` group preset.
+
+**Disengaged position:**
+
+In addition to the configured positions, there is an extra position labeled
+`Disengaged`. This is the initial state after initialization. While in the
+Disengaged position, no stage movement occurs, which prevents unintended moves
+during setup or before the stage has been homed.
+
+Changing position settings (coordinates or spacing) while in an engaged
+position will immediately move the stage, which is convenient for finding the
+correct values. To adjust position settings without causing stage movements,
+first switch to the Disengaged position.
