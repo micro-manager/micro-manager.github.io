@@ -43,3 +43,6 @@ include the file mmgr\_dal\_Spinnaker.dll.
 RGB8 mode results in RGB images as of build 2021-03-08. BGRa8 mode
 (preferred for RGB if your camera has it) is supported as of 2021-03-09.
 
+See also [SpinnakerC](SpinnakerC), which is a rewrite using the Spinnaker
+C API and works with newer Spinnaker SDK versions.
+
