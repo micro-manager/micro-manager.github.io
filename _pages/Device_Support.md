@@ -142,6 +142,8 @@ release](Download_Micro-Manager_Latest_Release).
 -   [SigmaKoki](SigmaKoki) - Sigma Koki camera
 -   [Spinnaker](Spinnaker) - FLIR (formally Point Grey)
     cameras though the Spinnaker interface
+-   [SpinnakerC](SpinnakerC) - FLIR cameras using the
+    Spinnaker C API (works with newer SDK versions)
 -   [SpotCamera](SpotCamera) - Diagnostic Instruments Spot
     cameras
 -   [TetheredCam](TetheredCam) - Canon and Nikon DSLR cameras
