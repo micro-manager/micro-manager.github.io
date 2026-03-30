@@ -86,6 +86,10 @@ The best method to provide even illumination is by using an
     side, look for regular patterns).
 -   Repeat steps above using other readout speeds and/or gain (if available on your
     camera).
+-   Now set the exposure time to 1 second.  Repeat the above (in the interest
+    of time, reduce the number of exposuyres to 10).  The noise you now may
+    observe is called temporal read-noise and often show "hot pixels".
+
 
 ## Visual inspection for fixed pattern noise in bright images
 
