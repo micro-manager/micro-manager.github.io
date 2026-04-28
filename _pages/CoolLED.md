@@ -8,33 +8,41 @@ layout: page
 ---
 
 <table>
+  
 <tr>
 <td><p>Summary:</p></td>
 <td><p>Device adapter for <a href="http://www.CoolLED.com">CoolLED</a> pE LED Illumination Systems</p></td>
 </tr>
+
 <tr>
 <td><p>Authors:</p></td>
 <td><p>Isabel Goodhand</p></td>
 </tr>
+
 <tr>
 </tr>
+
 <tr>
 <td><p>License:</p></td>
 <td><p>BSD</p></td>
 </tr>
+
 <tr>
 <td><p>Platforms:</p></td>
 <td><p>Windows, Mac OS X, Linux (uses virtual serial interface over USB)</p></td>
 </tr>
+
 <tr>
 <td><p>Devices:</p></td>
 <td><p>(pE-1, pE-2), pE-4000, pE-300<sup>white</sup>, pE-300<sup>ultra</sup>, pE-340<sup>fura</sup>, pE-800 Series, pE-400, pE-400<sup>max</sup>
 </tr>
+
 </table>
+
+
+
 ------------------------------------------------------------------------
-<br>
 <strong>Please see CoolLED resources for the most up-to-date information:</strong>
-</br>
 
 
 
