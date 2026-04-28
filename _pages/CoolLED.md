@@ -34,7 +34,7 @@ layout: page
 
 <tr>
 <td><p>Devices:</p></td>
-<td><p>(pE-1, pE-2), pE-4000, pE-300<sup>white</sup>, pE-300<sup>ultra</sup>, pE-340<sup>fura</sup>, pE-800 Series, pE-400, pE-400<sup>max</sup>
+<td><p>(pE-1, pE-2), pE-4000, pE-300<sup>white</sup>, pE-300<sup>ultra</sup>, pE-340<sup>fura</sup>, pE-800 Series, pE-400, pE-400<sup>max</sup></p></td>
 </tr>
 
 </table>
