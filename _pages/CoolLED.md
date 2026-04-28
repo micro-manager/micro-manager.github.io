@@ -35,13 +35,16 @@ layout: page
 <br>
 <strong>Please see CoolLED resources for the most up-to-date information:</strong>
 </br>
-<br>
+
+
+
+
 Compatibility details and dll adapter files: [Software Summary Sheet](https://www.coolled.com/wp-content/uploads/2020/12/uManager-Software-Summary-Sheet.pdf).
-</br>
-<br>
+
+
 Installation and configuration instructions: [Quick Start Guide](https://www.coolled.com/wp-content/uploads/2020/12/IQS006-Quick-Start-for-Micro-Manager.pdf).
-</br>
-<br>
+
+
 For µManager 2.0 only:
 Pre-defined configuration files to control LED channel switching and intensity: [Download files](https://www.coolled.com/wp-content/uploads/2023/06/Micro-Manager-2.0-CoolLED-config-files.zip).
-</br>
+
