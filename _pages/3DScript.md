@@ -1,6 +1,5 @@
 ---
 title: 3D Animation Script
-redirect_from: /wiki/3DScript
 layout: page
 ---
 
