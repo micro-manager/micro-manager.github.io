@@ -314,4 +314,3 @@ ffmpeg must be installed and locatable on your system.
 On the first export the plugin will prompt you to locate the ffmpeg
 binary if it cannot find it automatically.
 
-{% include Listserv_Search text="ClearVolume 3DScript animation" %}

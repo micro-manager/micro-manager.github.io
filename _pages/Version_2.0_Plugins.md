@@ -13,6 +13,7 @@ applications in microscopy:
   - [ASI Gamepad Plugin](ASI_Gamepad_Plugin)
   - [AssembleData](AssembleData)
   - [AutoLase](AutoLase)
+  - [ClearVolume](ClearVolume)
   - [EMU](EMU)
   - [Flat-Field Correction](Flat-Field_Correction)
   - [FrameProcessor](FrameProcessor) : Perform live frames
