@@ -356,6 +356,7 @@ release](Download_Micro-Manager_Latest_Release).
 
 ## Light sources
 
+  - [3Z_Optics](3Z_Optics) - 3Z Optics LED light sources
   - [89NorthLDI](89NorthLDI) - Laser Diode Illuminator from
     89 North
   - [AgilentLaserCombiner](AgilentLaserCombiner) - Agilent
