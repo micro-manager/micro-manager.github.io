@@ -70,7 +70,7 @@ The holes in the bottom of the holder can be tapped with an M4x0.7 threaded tap.
     3. Connect pin 2 on the Teensy 4.0 to the positive pin on the left BNC connector 
     on BNCB1 by soldering a wire between the two pins.  
 
-    4. Connect pin 4 on the Teensy 4.0 to the positive pin on the right BNC connector 
+    4. Connect pin 8 on the Teensy 4.0 to the positive pin on the right BNC connector 
     on BNCB1 by soldering a wire between the two pins. This is the “IN” pin, which 
     will receive a TTL from your camera. 
 
