@@ -135,7 +135,7 @@ sure your project does not override the defaults.
 
 **Platform Toolset**: Currently we use **Visual Studio 2022 (v143)**.
     
-**C++ Language Standard**: Default (ISO C++ 14 Standard).
+**C++ Language Standard**: Default (ISO C++ 17 Standard).
 
 ### Advanced
     
