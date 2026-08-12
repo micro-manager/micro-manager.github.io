@@ -1,0 +1,60 @@
+---
+title: 3Z_Optics
+layout: page
+---
+
+# 3Z Optics Light Source
+
+<table>
+<tr>
+<td markdown="1">
+Summary:
+</td>
+<td markdown="1">
+Adapter for 3Z Optics multi-channel LED light source
+</td>
+</tr>
+<tr>
+<td markdown="1">
+Author:
+</td>
+<td markdown="1">
+3Z Optics: FlyInTheSky 
+</td>
+</tr>
+<tr>
+<td markdown="1">
+License:
+</td>
+<td markdown="1">
+BSD
+</td>
+</tr>
+<tr>
+<td markdown="1">
+Platforms:
+</td>
+<td markdown="1">
+Windows
+</td>
+</tr>
+<tr>
+<td markdown="1">
+Devices:
+</td>
+<td markdown="1">
+3Z Optics Light Source/IRIS-600 Series/IRIS-400S Series/IRIS-300S Series
+</td>
+</tr>
+</table>
+
+## Overview
+3Z Optics is a Modbus RTU controlled multi-channel LED light source. It supports Global mode, Independent mode, and TTL mode.
+
+## Device Configuration
+- Add **"3Z Optics Light Source"** as a **Shutter** device in the Hardware Configuration Wizard.
+- Select the correct serial port, default serial port baudrate is 115200
+- The adapter will automatically detect the device model and create corresponding channel properties.
+
+## More informations
+- Contact 3Z (https://www.3zoptics.com)
