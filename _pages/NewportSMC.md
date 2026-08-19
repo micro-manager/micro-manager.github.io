@@ -112,7 +112,7 @@ pin on the other end worked fine.
 </tr>
 </table>
 
-Please follow the SMC manual and instructions to conifigure the SMC
+Please follow the SMC manual and instructions to configure the SMC
 controller(s) first. As of the 1.4.23 August 18 nightly build, the
 adapter can work with multiple SMC controllers. Set the RS485 address
 using the tools provided by Newport, and enter the RS485 as a
