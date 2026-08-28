@@ -10,10 +10,9 @@ section: Credits
 
 Micro-Manager is being developed by Mark Tsuchida at the [Laboratory for
 Optical and Computational Instrumentation at the University of
-Wisconsin, Madison](https://eliceirilab.org/) with help from [Nico
-Stuurman](http://valelab.ucsf.edu/external/people/directory.html) in the
-[laboratory](http://valelab.ucsf.edu) of [Ron
-Vale](http://valelab.ucsf.edu/external/people/directory.html) at [the
+Wisconsin, Madison](https://eliceirilab.org/) together with [Nico
+Stuurman](https://calm.ucsf.edu/people), who is Director of the [Center
+for Advanced Light Microscopy](https://calm.ucsf.edu) at [the
 University of California San Francisco](http://www.ucsf.edu).
 
 Initial software development and architecture was by [Nenad
