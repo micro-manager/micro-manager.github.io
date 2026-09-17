@@ -126,7 +126,7 @@ In case of Camera Link (CL) interface you also need:
  Matrox: sc2_cl_mtx.dll, clsermtx.dll, mtxclsermil.dll
  National Instruments: sc2_cl_nat.dll
 ```
-For a Genicam interface based camera like pco.swir you also need:
+For a Genicam interface based camera (like pco.swir, or gige interface, clhs interface) you also need:
 
 ```
  Genicam interface dll: sc2_genicam.dll
