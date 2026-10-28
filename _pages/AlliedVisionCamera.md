@@ -13,4 +13,4 @@ layout: page
 -  Allied Vision adapter for nightly builds as of 2023-10-26 or later
 -  Compatible with all cameras supported by Vimba X SDK
 -  Additionally required: Vimba X
--  Detailed information is available in the [User Guide](https://cdn.alliedvision.com/fileadmin/content/documents/products/software/software/micro-manager/Micro-Manager-Adapter_User-Guide.pdf).
+-  Detailed information is available in the [User Guide](https://www.alliedvision.com/assets/documents/products/software/micro-manager/Micro-Manager-Adapter_User-Guide.pdf).
