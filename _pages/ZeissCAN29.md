@@ -131,9 +131,9 @@ will be used.
 
 #### Single Offset for Multiple Positions
 
-The following procedure will configure a multi-dimensional acquistion to
-use the Definite Focus to automatically refocus to the same axial plane
-when acquiring multiple XY positions.
+The following procedure will configure a multi-dimensional acquisition
+to use the Definite Focus to automatically refocus to the same axial
+plane when acquiring multiple XY positions.
 
 1. Focus on your sample
 1. Select the `Set autofocus options` button on the main Micro-Manager
