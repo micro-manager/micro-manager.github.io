@@ -127,6 +127,45 @@ configuration presets with different (combinations of) LEDs. The Colibri
 "Shutter" property determines whether the LEDs or the external shutter
 will be used.
 
+### Definite Focus
+
+#### Single Offset for Multiple Positions
+
+The following procedure will configure a multi-dimensional acquisition
+to use the Definite Focus to automatically refocus to the same axial
+plane when acquiring multiple XY positions.
+
+1. Focus on your sample
+1. Select the `Set autofocus options` button on the main Micro-Manager
+   control panel
+1. Select `ZeissDefiniteFocus` from the dropdown list of autofocus
+   options
+1. Select `Measure` in the `ZeissDefiniteFocus-Focus Method` property
+   selector
+1. Select `Autofocus now` on the main Micro-Manager control panel to
+   train the Definite Focus on this axial position
+1. Select `Show the Stage Position List diaglog` button on the main
+   Micro-Manager control panel to open the Stage Position List
+1. Ensure that `ZeissFocusAxis` and `ZeissDefiniteFocusOffset` **are**
+   **not checked** in the property selectors at the bottom of the dialog
+1. Ensure that `ZeissXYStage` **is checked** in the property selectors
+1. Add positions to the list
+1. Open the `Multi-D Acq.` dialog from the main Micro-Manager control
+   panel
+1. Ensure that the `Multiple Positions (XY)` and `Autofocus` checkboxes
+   are checked
+1. Click the `Options...` button in the `Autofocus` configuration section
+1. Select `Last Position` in the `ZeissDefiniteFocus-Focus Method`
+   property selector
+1. Set the number of `Skip frame(s)` to zero back in the MDA window
+
+You may now proceed with the acquisition. If you suspect that refocusing
+occurs too soon after stage repositioning, then add a small delay after
+stage moves to your Micro-Manager configuration to allow the stage to
+settle.
+
+#### Per-position Offsets
+
 The <b>Definite Focus</b> adapter has the important property "Focus
 Method". Set this to "Measure" and pressing the autofocus button in the
 front panel will train the Definite Focus to find this specific focal
